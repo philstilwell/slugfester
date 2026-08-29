@@ -1,3 +1,5 @@
+import { addMissingAiContributions } from "./ai-contributions.js";
+
 const fallacy = (slug) => `https://logfall.com/fallacies/${slug}/`;
 const bias = (slug) => `https://cogbias.site/biases/${slug}/`;
 
@@ -13,8 +15,8 @@ export const debates = [
     "duration": "1 hr 49 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TAW6-_L4z9M",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 ee8413c2fd9dcaae71cc2db0478d8c4dc5ac1a66b6896d16542815db2e0c272f). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig presented a cumulative Christian case, while O'Connor's calibrated challenges concerning fine-tuning, animal suffering, and Christian specificity proved especially effective.",
     "quotes": {
       "pro": {
@@ -390,8 +392,8 @@ export const debates = [
     "duration": "2 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0tYm41hb48o",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, suffering, and religion's record make Christian theism more plausible than atheism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 1d923ce9e0d9e52d3e114621c7456b78975351aeffddb3dfc29b11ed422df570). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig advances a cumulative Christian case; Hitchens presses evidential burdens, inferential gaps, suffering, religious authority, and secular alternatives with greater consistency.",
     "quotes": {
       "pro": {
@@ -830,8 +832,8 @@ export const debates = [
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9V85OykSDT8",
     "motion": "Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 91f3389991e4626c581bcafeb5da95f52ac5fbd2b3c646c15c7f45da6b425c79). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hitchens challenged revelation, supernatural explanation, and religious authority; D'Souza defended theism through comparative explanation, design, morality, purpose, and human agency.",
     "quotes": {
       "pro": {
@@ -1262,8 +1264,8 @@ export const debates = [
     "duration": "1 hr 38 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=fSYwCaFkYno",
     "motion": "Can science explain everything worth explaining, or do rationality, miracles, purpose, origins, morality, and meaning require a different kind of explanation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 75f073cd00302d207f5386663ddf50d9517659dc38e587ac03d5c930322cd302). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox defended explanatory pluralism across purpose, rationality, miracles, origins, and ethics, while Atkins pressed public evidence, natural sufficiency, and scientific progress.",
     "quotes": {
       "pro": {
@@ -1657,8 +1659,8 @@ export const debates = [
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OL8LREmbDi0",
     "motion": "Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 bd430d54672142640c78efaf3630dcbbfd15e833732058f53bd5df60b3b92a17). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dillahunty’s fallibilist evidential method consistently outperformed Ten Bruggencate’s presuppositional case, whose challenges identified foundational problems but rarely demonstrated Christianity’s exclusive necessity.",
     "quotes": {
       "pro": {
@@ -2083,8 +2085,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=mEM1AhlH9eI",
     "motion": "Should beliefs about God, gender, politics, and social welfare be guided by faith-informed inference, empirical evidence, or secular-humanist consequences?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 951a29806ec790e9a7e13c87f250016adba192248574fe2f73f984ba478afdca). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "D'Souza defended faith-informed inference, biological institutions, and market incentives; Dillahunty answered with evidential burdens, institutional neutrality, and consequence-focused social welfare.",
     "quotes": {
       "pro": {
@@ -2468,8 +2470,8 @@ export const debates = [
     "duration": "2 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_hrN4Mn8m1w",
     "motion": "Did Jesus personally claim divine identity, or do the relevant texts better show delegated authority, divine name-bearing, and later high christology?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a796f595cadb72d8b1d674e01ba5cc6d40af9644c2582f0940c6c40bbecc1962). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Wood built a cumulative divine-identity case, while O'Connor more consistently showed that agency, delegation, and later devotion underdetermine Jesus's personal self-claim.",
     "quotes": {
       "pro": {
@@ -2862,8 +2864,8 @@ export const debates = [
     "duration": "2 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
     "motion": "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 cce3f28a76f92c36937d25e575d9a83e68d3952cd610663451e226ea1bcf08f8). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Wood defended theism through intelligibility, moral grounding, and wider eschatological context; Shermer prevailed through empirical discrimination, natural mechanisms, secular morality, and suffering.",
     "quotes": {
       "pro": {
@@ -3247,8 +3249,8 @@ export const debates = [
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9nQUg4QeI_Y",
     "motion": "Does God-language name a real supernatural being, or does it function mainly as a religious, moral, and psychological substrate for meaning?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 758b383c5cfec1112f6a4c4a549fb67b7dc76f827307db9ad4c6e6fc896f7309). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Peterson defended religious experience, narrative, and ultimate value as meaning-bearing realities; Dillahunty separated those functions from warranted belief in supernatural agency.",
     "quotes": {
       "pro": {
@@ -3647,8 +3649,8 @@ export const debates = [
     "duration": "2 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yqaHXKLRKzg",
     "motion": "Are the foundations of moral values and duties natural or supernatural?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 770e077e18b2b63b21049c2a6a4937e0de68d44b00c8ba2a161793aec858baee). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defended divine nature and commands as morality's foundation; Harris grounded value in conscious well-being, producing evenly matched strengths and unresolved explanatory burdens.",
     "quotes": {
       "pro": {
@@ -4037,8 +4039,8 @@ export const debates = [
     "duration": "1 hr 35 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=XtWjEjdYvLA",
     "motion": "Can belief in a loving, powerful God survive the scale of suffering and evil in the world?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 446d6e0f8c20c0ab51759a7f479ee0e06266ded13aadba702a5b4728ad6a05e2). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "D'Souza defended theistic compatibility through epistemic limits, freedom, and natural order; Ehrman pressed suffering's scale, preventability, and unexplained intervention gap.",
     "quotes": {
       "pro": {
@@ -4407,8 +4409,8 @@ export const debates = [
     "duration": "1 hr 05 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=XLcRd3RjdjA",
     "motion": "Does evidence for God exist, or are logic, mathematics, and intelligibility better explained without Christian theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a67873e1fd6bf024ba07a25763792fe4205172a0709ff743eab4c411b3719c5a). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Settecase exposed gaps between self-certainty and universal necessity, while Jump effectively separated objective relations from descriptions and challenged divine sustenance.",
     "quotes": {
       "pro": {
@@ -4779,8 +4781,8 @@ export const debates = [
     "duration": "51 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EN5Jqu2-2P8",
     "motion": "Can Christianity's claims about forgiveness, morality, divine judgment, conquest, and slavery withstand skeptical objections?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 0f5d4d35c8f8ed3ebabdef20b0361ec49989e2d9b96fb7d7a53596d86d029462). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Knechtle presents Christianity as redemptive and context-sensitive, while O'Connor presses evidential, moral, slavery, and gender objections through specific scriptural counterexamples.",
     "quotes": {
       "pro": {
@@ -5089,8 +5091,8 @@ export const debates = [
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ht_SVm0GWBs",
     "motion": "Does the evidence from consciousness, emergence, morality, and cosmology make theism more plausible than naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 065a86c006ba2a304e2581dde95b8fa3fc7f67f2f60a6c35bd953dd9391b8911). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones and Carrier closely contest whether consciousness, cosmic structure, morality, and origins comparatively favor theistic idealism or secular naturalism.",
     "quotes": {
       "pro": {
@@ -5490,8 +5492,8 @@ export const debates = [
     "duration": "1 hr 53 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=5OXPlUCGScY",
     "motion": "Is God great, and does Christian theism better explain science, morality, dignity, and hope than Hitchens's anti-theistic critique?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 25c0292c6b88e875c06732d1ea8df16c090f9b2cb427f53c7366a46368833eb4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox defended Christian explanatory foundations and redemptive hope; Hitchens pressed stronger challenges concerning revelation, secular value, suffering, authority, and historical complicity.",
     "quotes": {
       "pro": {
@@ -5931,8 +5933,8 @@ export const debates = [
     "duration": "1 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=DBsHdHMvucs",
     "motion": "Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 7426fd84775533c0e67dd0674ac48f4b2e0dbe27392c0118f49a5096eea74af6). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hirsi Ali defended Christian renewal through personal transformation and civilizational need; Dawkins separated those benefits from supernatural truth and challenged religious moral authority.",
     "quotes": {
       "pro": {
@@ -6295,8 +6297,8 @@ export const debates = [
     "duration": "1 hr 47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=fXBGvNc2mvU",
     "motion": "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 ecd1f180635870a64e8f324bb2ea556f040c235ba745369e73856bd3d5222a3e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Collins builds a cumulative Christian case from fine-tuning, morality, resurrection, revelation, and beauty, while answering suffering through orderly creation and noncoercive evidence.",
     "quotes": {
       "pro": {
@@ -6721,9 +6723,9 @@ export const debates = [
     summary:
       "Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.",
     sourceNote:
-      "Based on YouTube captions and YouTube chapter timing. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "God wants to love us",
@@ -7052,8 +7054,8 @@ export const debates = [
     "duration": "14 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_pprQXq1eCA",
     "motion": "Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c6dfc1d5caa074a08eb70d5280fee6deae5efadbd32f9706728753a2820a4cc7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Harris grounds evaluative direction in conscious experience, while O'Connor distinguishes subjective destinations from objective means and denies that flourishing requires moral truth.",
     "quotes": {
       "pro": {
@@ -7358,8 +7360,8 @@ export const debates = [
     "duration": "2 hr 02 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ngjQs_QjSwc",
     "motion": "Was the invasion of Iraq defensible, and does religion supply or corrupt moral authority?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 87b6e2cfd1de3dc37f34bb1461fe39ab8cbe4f0efdfc4ab124fddb54e886816f). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Christopher Hitchens defends intervention and secular morality; Peter Hitchens challenges Iraq's consequences and argues that binding moral authority requires transcendence.",
     "quotes": {
       "pro": {
@@ -7813,8 +7815,8 @@ export const debates = [
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2kZRAOXEFPI",
     "motion": "Does religious faith reveal God, moral meaning, and human freedom, or does it replace reason with projection, authority, and harmful consolation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 dd66c6325eb30a6a30524ec15eef1a9b04e7e20dd4197b66f19ee6dd390cd22a). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hitchens challenges faith through natural explanation, secular morality, scriptural harm, and natural transcendence, while granting uncertainty where atheism cannot conclusively disprove theological possibilities.",
     "quotes": {
       "pro": {
@@ -8215,8 +8217,8 @@ export const debates = [
     "duration": "2 hr 12 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=S7WBEJJlYWU",
     "motion": "Does God exist, and do cosmology, design, morality, consciousness, and Christian claims outweigh the anti-theist critique of religion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 797d1a1a18256a1aa239aa5b9d3ca74107526faffbac0da309a75c0ec23d1363). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Turek advances cumulative theistic explanations, while Hitchens more consistently enforces evidential burdens, challenges Christian specificity, and defends secular moral autonomy.",
     "quotes": {
       "pro": {
@@ -8606,8 +8608,8 @@ export const debates = [
     "duration": "1 hr 33 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=A4JGJRmldQE",
     "motion": "Is morality objectively grounded in the factual requirements of human life, or are moral claims expressions of emotion without truth value?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 ea6de72e813cec04c62419a835da021853191c0550f2aedb7bac497e12073bf7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Biddle grounds objective morality in life and flourishing; O'Connor argues that conditional valuation cannot establish objective duties, especially toward other people and animals.",
     "quotes": {
       "pro": {
@@ -8998,8 +9000,8 @@ export const debates = [
     "duration": "1 hr 37 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=lcHMSNiI97w",
     "motion": "Does religion poison everything, or does Christianity provide grace, charity, moral transformation, and historical credibility that defeat that charge?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d11cf3db576f4b633734e73076112c51b9d18b7ed88825a6a970fdbd3b5902f8). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hitchens attacks supernatural authority and religious morality; Olasky counters through Christianity's grace, charitable fruits, historical credibility, and challenges to universal condemnation.",
     "quotes": {
       "pro": {
@@ -9382,8 +9384,8 @@ export const debates = [
     "duration": "1 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=mMraxhd9Z9Q",
     "motion": "Is Islam a religion of peace, or do its claims, institutions, and enforcement patterns make that description untenable?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 9154b58636f0c7dbdf6f24d30156dcb05cef82bc732fb99d94dc9ec9d37dfea7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hitchens foregrounds coercive institutions and secular equality; Ramadan answers through interpretive plurality, peace-oriented ethics, political causation, internal reform, and constitutional citizenship.",
     "quotes": {
       "pro": {
@@ -9798,8 +9800,8 @@ export const debates = [
     "duration": "2 hr 6 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=uDCDTaKfzXU",
     "motion": "What best explains reality: theism, with a personal creator and revelation, or atheism, with no supernatural dimension?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 1a9f4911928cf2c4ac3e673ea195a581fc8a1eda3d63deb44082c1b65ebcc394). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Turek advances a cumulative theistic explanation, while Hitchens more consistently supplies calibrated naturalistic alternatives and challenges the inferential bridges to design and revelation.",
     "quotes": {
       "pro": {
@@ -10209,8 +10211,8 @@ export const debates = [
     "duration": "58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=b5a3MxIqZOs",
     "motion": "Does evil and objective morality point to God, or can agnostic atheism explain moral experience without accepting a divine moral ground?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c498b2e8d82ee11879cb1f0fa38c59209242e5aef4b444d8f3903374f853da76). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Turek grounds objective obligation in God; O'Connor distinguishes compelling moral experience from objectivity and offers evolutionary, psychological, and conditional explanations.",
     "quotes": {
       "pro": {
@@ -10686,8 +10688,8 @@ export const debates = [
     "duration": "2 hr 4 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8aZn7XUFSmA",
     "motion": "What best explains reality: theism grounded in God as the cause of creation, reason, information, morality, evil, and science, or skeptical naturalism grounded in evidence and scientific inquiry?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a455395707cca2f28fcb5ea108b17957195f839dda8f3a6167238888f47f506d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Turek advances a cumulative theistic explanation, while Shermer's calibrated skepticism, natural mechanisms, and evidential challenges more completely answer the debate's central burdens.",
     "quotes": {
       "pro": {
@@ -11151,8 +11153,8 @@ export const debates = [
     "duration": "2 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=RzP07nEwNP8",
     "motion": "Which better explains reality: theism, with God as the ground of creation, reason, information, morality, evil, and science, or atheism, with natural inquiry and human responsibility?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 aa2a12536648d958323841c1cda14fdefe32c07ed03d3f6a171693bc2ab97d88). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Turek advances cumulative theistic explanations, while Silverman emphasizes natural processes, evidential restraint, human responsibility, and tensions between divine attributes and suffering.",
     "quotes": {
       "pro": {
@@ -11554,8 +11556,8 @@ export const debates = [
     "duration": "2 hr 12 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ENZYEPpR2Jc",
     "motion": "What better explains reality: naturalism, where the physical explains the mental, or theism, where God grounds creation, reason, information, morality, evil, and science?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 57c77f162289e998552abd0fe1eb236e303c543d1e914883782808b7ae1795dd). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lowder's calibrated comparative case consistently outperformed Turek's cumulative theistic inferences, especially concerning embodied minds, suffering, hiddenness, and naturalistic cognitive reliability.",
     "quotes": {
       "pro": {
@@ -12017,8 +12019,8 @@ export const debates = [
     "duration": "1 hr 5 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=WsUwyC2cwNg",
     "motion": "Does the historical evidence make Jesus' resurrection the best explanation of the facts, or should skeptical alternatives and evidential caution prevent that conclusion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d4118b9dd27102a71fb38da95b1f575e2c75f41c3503ad8c2f36298973355e6d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defended resurrection through comparative explanation and early testimony, while O'Connor pressed source reliability, natural alternatives, prior probability, and evidential expectations.",
     "quotes": {
       "pro": {
@@ -12346,9 +12348,9 @@ export const debates = [
     summary:
       "The Knechtles argue that morality, creation, Jesus, resurrection, and lived experience point to the biblical God; O'Connor and Halper argue that animal suffering, biblical errors, divine violence, and hiddenness count strongly against that God.",
     sourceNote:
-      "Based on YouTube captions for the Alex O'Connor upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "what is most reasonable, what is most plausible",
@@ -12695,8 +12697,8 @@ export const debates = [
     "duration": "2 hr 16 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=X0qKZqPy9T8",
     "motion": "Does contemporary cosmology make God's existence more probable, or do naturalistic cosmological models better explain the universe without theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 6c42c1f5c963872256e3a4c1e208af2a8ff39c5669cd648d96d7e2e2468420ab). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig argued that cosmic beginnings and fine-tuning favor theism; Carroll countered that self-contained models, measure sensitivity, and predictive discipline favor naturalism.",
     "quotes": {
       "pro": {
@@ -13088,8 +13090,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=rCPCyri1rXU",
     "motion": "Is consciousness a fundamental feature of reality, or can physicalism explain conscious experience through higher-level descriptions of the physical world?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 bbc9a6ad1f61f7ad057aa019ebf502db05b153ce053a362b00e612591a02415d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Goff defended consciousness-first metaphysics from private experience and explanatory gaps; Carroll answered through multilevel emergence, empirical constraints, and comparative challenges.",
     "quotes": {
       "pro": {
@@ -13480,9 +13482,9 @@ export const debates = [
     summary:
       "Carroll and Shermer argue that naturalism and scientific explanations have displaced religious claims; Hutchinson and D'Souza argue that science has not refuted religion because it cannot settle every religious, historical, moral, or existential claim.",
     sourceNote:
-      "Based on YouTube captions for the Skeptic upload. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "naturalism has won",
@@ -13813,8 +13815,8 @@ export const debates = [
     "duration": "1 hr 33 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ku6tLuEjmTY",
     "motion": "How should scientific knowledge be integrated into naturalist and theistic worldviews, and do cosmology, fine-tuning, quantum mechanics, consciousness, morality, and meaning favor either metaphysical picture?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d6861a95f99b46c6a4b9d748d0bfdeca37f8aea0110547e1bcabecc0b40d1f45). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Carroll defends revisable naturalism across science and value, while Halvorson argues scientific completeness underdetermines theism and offers qualified moral and existential alternatives.",
     "quotes": {
       "pro": {
@@ -14200,8 +14202,8 @@ export const debates = [
     "duration": "1 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=LVUQAVQS1-U",
     "motion": "Did Jesus of Nazareth historically rise from the dead, and do the early resurrection appearances, the unexpected messianic claim, Christianity's spread, and later visions make that explanation plausible?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 48bce8888ac0558f769b49ff020c9b771d3006fab4dc0942b67ea203a7f2330b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Bass builds a cumulative resurrection case from appearances, unexpected belief, expansion, and visions; Ehrman answers through source criticism, ordinary alternatives, and comparative evidence.",
     "quotes": {
       "pro": {
@@ -14569,8 +14571,8 @@ export const debates = [
     "duration": "1 hr 04 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Cz57BuQOCmQ",
     "motion": "Do Jesus' teachings and the West's moral transformation point to objective moral truths grounded beyond human preference, or can morality be explained as historically shaped human inclination without divine grounding?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 74522a2503187a75f206f46c97fdad22e1110f1f115a85778c7bfe63129192d9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "McDowell presses objective obligation and progress; Ehrman explains universal charity historically while separating human moral experience from mind-independent grounding.",
     "quotes": {
       "pro": {
@@ -14949,8 +14951,8 @@ export const debates = [
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=SEZu7Ej2SzU",
     "motion": "Can Christian belief be rationally sustained amid skeptical challenges about faith, hell, resurrection evidence, biblical reliability, religious experience, the Exodus, and parallels with other ancient traditions?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 eb43de886944ec03c2a717b5a076cd76c7661165921b07921db4dbfcef4a1afe). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones defended Christianity through cumulative evidence and qualified theology; Lambert pressed disclosure, comparative testimony, scriptural development, sincere nonbelief, and historical insufficiency.",
     "quotes": {
       "pro": {
@@ -15384,8 +15386,8 @@ export const debates = [
     "duration": "1 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=UWZuHxO4WcA",
     "motion": "Are there objective moral truths, and does moral realism or global normative anti-realism better explain ordinary moral judgment, deliberation, language, and disagreement?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a6db7b0ca58006c793bf1207c55a907c9a66e0692b3bd14d5b4a849f3be90aa0). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Enoch defends mind-independent normativity through justified appearances and comparative explanation; Bush contests realist priority through neutral language, causal genealogy, pragmatism, and parsimony.",
     "quotes": {
       "pro": {
@@ -15774,8 +15776,8 @@ export const debates = [
     "duration": "2 hr 09 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Cc16nceSWiU",
     "motion": "Do objective moral facts exist, and can ethical intuitionism establish moral realism against anti-realist quietism, folk metaethical indeterminacy, and language-use objections?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 ba69580b847ec553ee6b4d2dab0615adb4333b313ebe09eda8018646f37c53fd). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Huemer defended attitude-independent morality through semantic tests and intellectual appearances; Bush countered with contextual quietism, folk indeterminacy, and challenges to intuition’s public authority.",
     "quotes": {
       "pro": {
@@ -16170,8 +16172,8 @@ export const debates = [
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=rX6di0Au5Kg",
     "motion": "Is divine simplicity, understood as God's absence of real intrinsic parts or composition, coherent with classical theism, Trinitarian doctrine, divine freedom, and omniscient knowledge of contingent reality?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d4fb52ad45a4db1fd8d6bf176c2604736c7fceb016eb43b143a1a94fdc443930). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Schmid presses simplicity through composition, Trinitarian asymmetry, and contingent knowledge; Tomaszewski answers through aseity, analogical predication, subsistent relations, and extrinsic differentiation.",
     "quotes": {
       "pro": {
@@ -16507,8 +16509,8 @@ export const debates = [
     "duration": "2 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EsrfL58iLlE",
     "motion": "Does modern cosmology, especially Big Bang evidence and cosmic fine-tuning, make theism or intelligent design a better explanation than naturalistic early-universe models?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 15e5b6cc00f3c23e96ed505d788644c714a7494ecec29cd8df48f67ae5fbc1a9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Meyer defended cosmic beginnings and fine-tuning as design evidence; Halper more successfully emphasized theorem limits, unknown probabilities, testability, and underdetermined divine intentions.",
     "quotes": {
       "pro": {
@@ -16894,8 +16896,8 @@ export const debates = [
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=G17N2CgrXXU",
     "motion": "Do human beings have free will, either as ultimate control over action or as a volitional capacity to focus and use reason?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 cdb58c638e151a5139ecf249a0cafa01d0d6a74ce6ed6079bb473fdfe65f7860). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Biddle locates freedom in regulating rational attention; O'Connor argues that introspection, desire, and agent causation never escape determination or randomness.",
     "quotes": {
       "pro": {
@@ -17292,9 +17294,9 @@ export const debates = [
     summary:
       "Singer, Frazier, and Swinburne offer divergent realist accounts of morality; O'Connor defends ethical emotivism and treats moral language as expressive rather than truth-apt.",
     sourceNote:
-      "Based on YouTube captions for the Alex O'Connor upload. This is a panel-style discussion; speaker roles are inferred from the hosted sequence and chapter titles. Analytical summaries are condensed and lightly cleaned; direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "ethics and goodness as real",
@@ -17650,8 +17652,8 @@ export const debates = [
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yspPYcJHI3k",
     "motion": "Does atheism depend on borrowed religious or extra-natural assumptions about free will, morality, reason, and social order, or can secular life face the truth without religious scaffolding?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 de01eaac6d4c4bb75d54f20dea1aa40370bd82db621a3135ad1ee98df5499d8e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Shapiro defends religious foundations for agency, morality, science, and cohesion; O'Connor counters with determinism, revisability, historical resistance, scriptural counterexamples, and epistemic honesty.",
     "quotes": {
       "pro": {
@@ -18029,8 +18031,8 @@ export const debates = [
     "duration": "2 hr 23 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yef-BFukQWg",
     "motion": "Which is better for society: Christianity, understood as a Christian-value society with a largely Christian population, or secular ethics?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 18fdc49b647b954f7db705fa22c8f8618eafa64e55767d8628f15d018383b562). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Christianity's institutional and moral arguments narrowly outperformed secular ethics, while secular challenges concerning heterogeneity, fallibilism, causation, and equal standing remained substantial.",
     "quotes": {
       "pro": {
@@ -18420,8 +18422,8 @@ export const debates = [
     "duration": "1 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=6BzHMdTeQww",
     "motion": "Does Christian theism better account for hiddenness, evil, consciousness, morality, and moral progress than agnostic or naturalistic alternatives?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 2e24c6a348b1afcbda41cdb12f175c05dbcf8277ed752d1387d1275a6076da6a). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Folley pressed cumulative evidential and methodological objections, while Scrivener offered an integrated Christian narrative whose strongest replies remained partly underdeveloped.",
     "quotes": {
       "pro": {
@@ -18770,8 +18772,8 @@ export const debates = [
     "duration": "2 hr 46 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=AajJBhdRpDA",
     "motion": "Does the transcendental argument show that Orthodox Christian theism is needed to ground logic, truth, induction, ethics, and knowledge?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 76c62ef28ac0cedb47a3f0194aba1d48bd2519935e1ca602231b15b52eb9b581). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dyer argues Orthodox theism uniquely grounds transcendental categories; Dillahunty counters that fallible reliability permits rational inquiry without an unproved divine guarantor.",
     "quotes": {
       "pro": {
@@ -19215,8 +19217,8 @@ export const debates = [
     "duration": "2 hr 37 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=aAg3H1LU1Yw",
     "motion": "Is Christianity true, and do the Gospels, resurrection claims, moral meaning, and human value give sufficient warrant for Christian faith?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 72bb0246fe0a6cd33f330d606073b9db0705466c459378bef9e652f4d0caa6f5). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Knechtle offered cumulative historical, moral, and relational warrant for Christianity; Dillahunty consistently pressed whether those methods distinguish supernatural truth from preservation, fiction, and alternatives.",
     "quotes": {
       "pro": {
@@ -19626,8 +19628,8 @@ export const debates = [
     "duration": "2 hr 57 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=5gMS7WTHnho",
     "motion": "Do science, design, DNA, natural law, morality, and human experience point toward Christian theism or toward an atheistic naturalist account?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 027e38095fb1ed8f13ce471c0527b458b16e4ae31027a1713af13e0aeae9bc58). Required below-high-confidence audio checks were completed before adjudication; representative quotations are exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox pressed cumulative explanatory gaps and Christian evidence, while Atkins defended methodological economy, emergent natural processes, evolved morality, and evidential restraint.",
     "quotes": {
       "pro": {
@@ -20074,8 +20076,8 @@ export const debates = [
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=7V6UNSvHVDM",
     "motion": "Is it reasonable to believe Jesus of Nazareth rose from the dead, given historical testimony, expected evidence, background knowledge, and standards for unusual claims?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 64097b702db32ced23363716ed92613138cb064628a0da0b8fa25b0b082265f3). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Horn defended resurrection belief through testimony and comparative explanation; Dillahunty narrowly prevailed by separating sincerity from accuracy and emphasizing ordinary error.",
     "quotes": {
       "pro": {
@@ -20511,8 +20513,8 @@ export const debates = [
     "duration": "1 hr 56 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=UMKkX8qRHsw",
     "motion": "Is the Bible true in historical, moral, allegorical, theological, and revelatory senses, or do contradictions and morally troubling texts undermine its truth claims?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 37c7f623340f7de14e1c23ac9ae897d13b0092e1a89147d49f06345b7a6e1e7f). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "O'Connor pressed concrete historical and moral counterexamples, while D'Souza defended genre-sensitive revelation, cumulative testimony, moral development, and Christianity's beneficial interpretive traditions.",
     "quotes": {
       "pro": {
@@ -20933,8 +20935,8 @@ export const debates = [
     "duration": "1 hr 34 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_UOwOCGIPzQ",
     "motion": "Does Christianity or humanism offer a brighter future for humanity, especially for moral formation, social health, human rights, truth, and pluralistic freedom?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4733985924c6c2d82979a7aa2e431a48e0f48455c3a0433d21eafae9617dd697). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Law’s comparative, neutrality, and evidential challenges outweighed Jones’s stronger pluralism case and qualified historical, social, scientific, and theological defenses.",
     "quotes": {
       "pro": {
@@ -21328,8 +21330,8 @@ export const debates = [
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=zQBY5K-Ns2Y",
     "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 305d9eacbd581a9aac9f5f246f63097deef6e6020af7a8031e14ca9cfbba66c2). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defended causal necessity, finite-past paradoxes, and personal agency; Malpass more successfully exposed categorical causal gaps, coherent infinities, and underdetermined creator attributes.",
     "quotes": {
       "pro": {
@@ -21718,8 +21720,8 @@ export const debates = [
     "duration": "1 hr 42 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=-w2auo-Y5Wg",
     "motion": "Are there objective moral facts, and can moral knowledge be justified by appearances rather than only by best-explanation evidence?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 eda32a7b9194d6d745b7341bac6470c6bab5b699ee3e7bce7a3f672d10b74d06). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Huemer defends objective morality through evaluative judgment and defeasible appearances; Lutz counters with desire-based reasons, projectivism, and explanationist standards for knowledge.",
     "quotes": {
       "pro": {
@@ -22102,8 +22104,8 @@ export const debates = [
     "duration": "1 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=B3-sjyDYO2I",
     "motion": "Can atheism or secular humanism provide a better moral foundation for society than Christianity?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 6b5c816624fe110fdc2a593929bb8ebbfddd248e5f806bdfa464c87490d5b748). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Scrivener grounds dignity and obligation in Christianity; Dillahunty distinguishes atheism from secular humanism and advances a corrigible, human-centered moral foundation.",
     "quotes": {
       "pro": {
@@ -22496,8 +22498,8 @@ export const debates = [
     "duration": "2 hr 43 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EKlycI9ZKsY",
     "motion": "Is secular humanism superior to Christianity at achieving human flourishing, rational decision-making, moral reasoning, and conflict resolution?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 1c2fb5df7186d08f545ae9f69aed2be7c10b3610cbc71b2619a4cb2050e0481d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dillahunty’s revisable, welfare-centered humanism outperformed Slick’s foundational Christian critique, whose serious grounding objections remained insufficiently connected to comparative practical superiority.",
     "quotes": {
       "pro": {
@@ -22881,8 +22883,8 @@ export const debates = [
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=oeYze2psUpw",
     "motion": "Do cosmology, fine-tuning, origin-of-life research, biblical claims, and suffering make the Christian God more or less plausible?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 0708fb6f1fd7d2245f41ef59e9538c131a8c243c0acfe1c2872ea7db8c9753ac). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Scientific skepticism prevailed by exposing cosmological underdetermination, alternative fine-tuning explanations, ancient biblical cosmology, and insufficient answers to extensive animal suffering.",
     "quotes": {
       "pro": {
@@ -23327,8 +23329,8 @@ export const debates = [
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Bu-7IHp3oGQ",
     "motion": "Did Jesus physically rise from the dead, and do early Christian testimony, rival miracle claims, martyrdom, and the empty tomb make that conclusion historically reasonable?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 86d621eddda36c51d2aad36adc336a1d5d7c8860f2c6819b27ebc2cca7a7aa84). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Horn defended bodily continuity, appearances, sincerity, and the empty tomb, while O'Connor pressed source ambiguity, rival-testimony parity, corroboration deficits, and natural alternatives.",
     "quotes": {
       "pro": {
@@ -23730,8 +23732,8 @@ export const debates = [
     "duration": "2 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=-ZnVNM8lkGw",
     "motion": "Did Christian faith give the modern West its beliefs in kindness, equality, freedom, consent, and abolition, or are those values better explained by mixed traditions, social struggle, and secular moral development?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 20279e3858bcd09e3a8f6b7591abe87a88606d8f43d01f61b17cb6fd099efa57). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Scrivener traces Western morality through Christian narratives and institutions, while O'Connor argues that mixed traditions, material struggle, and internal counterevidence better explain it.",
     "quotes": {
       "pro": {
@@ -24136,8 +24138,8 @@ export const debates = [
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=fJ05WWnyj2g",
     "motion": "Do patterns, symbolism, Genesis, resurrection, worship, and social meaning point toward God as Logos, or can they be explained by human cognition, pragmatic abstraction, and bottom-up social life?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 179a89a9d3ffde116ca3baf8bdd0c575df7936cb680700213dfd036b19ab7aa3). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Pageau connected purposive patterns, scripture, resurrection, and worship to Logos; Folley consistently separated their usefulness and structural reality from supernatural conclusions.",
     "quotes": {
       "pro": {
@@ -24559,8 +24561,8 @@ export const debates = [
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Z1TgI3cfeM8",
     "motion": "Does the God of the Bible exist, and do causation, design, morality, Jesus, religious diversity, suffering, and evidential standards support or undermine that claim?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d9e2cb6e04406bbc5589889655865f50f69d354494eb19a8704129ad7b064025). Required below-high-confidence audio checks were completed before adjudication; representative quotations are exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Shermer’s calibrated skepticism and natural alternatives consistently challenged Butt’s ambitious causal, design, moral, historical, and suffering-based case for the biblical God.",
     "quotes": {
       "pro": {
@@ -25020,8 +25022,8 @@ export const debates = [
     "duration": "2 hr 12 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0QMwHUijmqo",
     "motion": "Does God exist, and do Thomistic arguments from being, act and potency, divine simplicity, revelation, evil, freedom, and changing knowledge support or undermine classical theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 00ff60099048ee434a037d320c9119a369586cb2004f187e49e2730614ea6ecf). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Pine defends classical theism through Thomistic metaphysics, while Watkins presses identification gaps, divine-attribute tensions, evolutionary suffering, hiddenness, and religious disagreement.",
     "quotes": {
       "pro": {
@@ -25383,8 +25385,8 @@ export const debates = [
     "duration": "1 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2UtMbB_gazg",
     "motion": "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4081ce49489ec7a77a96c02695cd6efd9cfe60c9c1e114a306a0c97df4f29b39). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Donahue defended a theistic likelihood advantage from fine-tuning, while Malpass pressed naturalistic aggregation, uncertain divine psychology, prior ambiguity, and theory-relative alternatives.",
     "quotes": {
       "pro": {
@@ -25742,8 +25744,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=jOYiPLT41wM",
     "motion": "Do philosophical arguments, biblical beauty, religious experience, and resurrection evidence make Christianity credible, or do evil, disagreement, expert dissent, and Christian moral failure make it unlikely?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 dcf71c97596aaa8580d73aee81891442419e8aad60cc552eb652cc45fbe35339). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Donahue defended Christianity cumulatively, while Fodor pressed comparative objections from divine psychology, suffering, religious confusion, informed dissent, and observable moral outcomes.",
     "quotes": {
       "pro": {
@@ -26121,8 +26123,8 @@ export const debates = [
     "duration": "2 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=b2HZu6BcxHU",
     "motion": "Does digital physics, emergent spacetime, quantum information, and idealist metaphysics make God the best explanation of reality, or is a materialist ontology simpler and better disciplined?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d19191f9eacd1a68e3260bdc6ea71a0a184e059eb0e333f110cac00d7ae7c1f3). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones links emergent spacetime and structural physics to theistic idealism; Fodor counters that the science permits nonmental foundations and better constrains explanation.",
     "quotes": {
       "pro": {
@@ -26516,8 +26518,8 @@ export const debates = [
     "duration": "22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=6CLpuRu7R9o",
     "motion": "Does quantum mechanics and idealism provide good reason to treat consciousness or a divine mind as fundamental, or does the claim fail public demonstrability and physical-interaction tests?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b238e88a003280a22a15e48ec66e911ecbbea4e3b7f073c602ca796b67b68c64). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones offered an informational idealist account of quantum observation, while Dillahunty pressed stronger public-demonstrability, causal-interaction, preconscious-development, and discriminating-testability objections.",
     "quotes": {
       "pro": {
@@ -26836,8 +26838,8 @@ export const debates = [
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Z2FGgkubhZM",
     "motion": "Is belief in Jesus' resurrection reasonable given the historical claims, testimonial sources, rival explanations, and evidential burden for supernatural causation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 7d1e6eadea23cdf2ba29a36698557e56cf88f1e250db71b1b94de5a09a71c236). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Winger builds a cumulative historical case for resurrection, while Dillahunty argues that transmitted reports and unresolved causal gaps justify withholding belief.",
     "quotes": {
       "pro": {
@@ -27298,8 +27300,8 @@ export const debates = [
     "duration": "1 hr 28 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=4qpwVLLebng",
     "motion": "Does the existence of necessary truths or laws of logic support a necessarily existing divine mind, or can propositions be explained without God?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b387842f471264fa56528be51b82a687005b4a12f0d4727f4904bb53fdd84fa1). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Anderson argues necessary propositions are best grounded in divine thoughts; Malpass defends nonmental propositions while challenging conceptualism's coherence and comparative advantage.",
     "quotes": {
       "pro": {
@@ -27683,9 +27685,9 @@ export const debates = [
     summary:
       "Kushner and Gomes defend religion as moral aspiration, resilience, and community; Hitchens argues that secular ethics survives while religion adds dangerous authority claims.",
     sourceNote:
-      "Based on YouTube captions. The upload runs 3:04:03 and appears to repeat a large partial segment after the first complete Connecticut Forum sequence; this assessment scores the first complete 0:00-1:37:51 forum sequence. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "religion is an aspiration not an achievement",
@@ -28034,8 +28036,8 @@ export const debates = [
     "duration": "1 hr 41 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=gK-rwG392Uc",
     "motion": "Does the transcendental argument show that logic, induction, knowledge, and ethics require the Orthodox Christian God, or can those preconditions be understood without that presupposition?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 228da01b19e281c9abf23c250bfcbbb1584d81e7f2e3b1c9fbcd4b2307faeaa1). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Malpass consistently exposed necessity, parity, and scope gaps, while Dyer offered substantive Orthodox grounding but left several decisive comparative bridges underdeveloped.",
     "quotes": {
       "pro": {
@@ -28409,8 +28411,8 @@ export const debates = [
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=I5uYVxLdaO0",
     "motion": "Does human freedom require libertarian alternative possibilities and sourcehood, or can compatibilist notions of will, responsibility, and practical agency survive determinism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 fcb2053c1f1c12de8941b1e8e6dd300069fdb0260d05a9f372a685980b0f7952). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hawkins defended alternative-capable self-formation through constrained indeterminacy; Folley more consistently grounded practical agency and responsibility in distinctions surviving determinism.",
     "quotes": {
       "pro": {
@@ -28788,8 +28790,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=MfCQBynjgnw",
     "motion": "Do Grim Reaper-style paradoxes support causal finitism, and does the existence and distribution of suffering favor theism or the hypothesis of indifference?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 88721d75da20612089e12a3de192e6e406293be51f7a65b950c0c69cef48862e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Rasmussen defends causal finitude and theistic expectations; Malpass challenges modal recombination and argues that suffering's severity and distribution favor indifference.",
     "quotes": {
       "pro": {
@@ -29192,8 +29194,8 @@ export const debates = [
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=WgiWkE1lhII",
     "motion": "Is the argument from contingency persuasive in moving from contingent reality to a necessary or automatically actual foundation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 3d08f7e723706c6fd1072ced3a0f1467a515fac5e6d3c11a40e9317a8f43da4d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Rasmussen defends global explanatory inquiry and a noncontingent foundation; Clifton challenges its scope, modal bridge, and advantage over a brute contingent endpoint.",
     "quotes": {
       "pro": {
@@ -29587,8 +29589,8 @@ export const debates = [
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8WE1y00bwCU",
     "motion": "Does the surprising applicability of mathematics to the physical world support theism better than naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 1b465ca4362385b921563caf433a7e600173310922fe8631ac15eac3625eef89). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig argues that mathematics’ predictive applicability favors intentional divine ordering; Oppy challenges the datum and offers naturalistic necessity, structural, and selection-based alternatives.",
     "quotes": {
       "pro": {
@@ -29996,8 +29998,8 @@ export const debates = [
     "duration": "2 hr 01 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=m-80lQOlNOs",
     "motion": "Are there good arguments for God, and does Feser's Aristotelian proof survive Oppy's theory-comparison and persistence objections?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f8f4082fb9995148f1b5d027412283b252b3968d3123bcca24a6f4a0f998dbb9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Feser defends audience-sensitive argument, contemporaneous actualization, and a divine terminus; Oppy emphasizes global theory comparison, default persistence, and a physical explanatory bottom.",
     "quotes": {
       "pro": {
@@ -30360,8 +30362,8 @@ export const debates = [
     "duration": "1 hr 03 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=YzvidaGO3m4",
     "motion": "Do Paul's letters, Gospel transmission, hostile witnesses, and early church structures make the bodily resurrection and Catholic continuity historically credible?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 086b9df618f82e6242fb4a819cbf5615b2447a400ebcf4fb77553027239c115a). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Albrecht builds cumulative resurrection and ecclesial-continuity arguments, while Oppy presses visionary alternatives, transmission uncertainty, selective preservation, and early Christian plurality.",
     "quotes": {
       "pro": {
@@ -30725,8 +30727,8 @@ export const debates = [
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=hKw3d3qOYSo",
     "motion": "Is theism more probable than naturalism when judged by simplicity, explanatory scope, fine-tuning, consciousness, and modality?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 cd345a9a9eaa5756bce7fbd34ef0f86dff07f50c7ff29db27470de8f34770ee4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Swinburne advances a cumulative theistic explanation, while Oppy answers with economical naturalistic alternatives and sharper comparative, anthropocentric, consciousness, and modal challenges.",
     "quotes": {
       "pro": {
@@ -31104,8 +31106,8 @@ export const debates = [
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Lt1wN10yOY4",
     "motion": "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 2271ce3f673275dc7588c8beb9cc2b757f336a2c4e68b0fcc4c8a027da3da0d5). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Rasmussen develops arbitrary limits into qualified perfection; Schmid’s holistic, axiological, symmetry, and necessity objections leave the God-like conclusion substantially underdetermined.",
     "quotes": {
       "pro": {
@@ -31499,8 +31501,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=YhqFdIb13bk",
     "motion": "Is a theistic supreme foundation or a naturalistic initial reality the better account of ultimate reality, mind, and worldview simplicity?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Rasmussen develops unified theistic foundations from unlimitedness and consciousness; Oppy answers with naturalistic continuity, neural identity, and disciplined whole-worldview comparison.",
     "quotes": {
       "pro": {
@@ -31886,8 +31888,8 @@ export const debates = [
     "duration": "1 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ya02MOhQMV8",
     "motion": "Does moral realism have a common-sense, historical, or semantic advantage over moral anti-realism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 59157c64dd34a4413272ae2fa05e2708491b312c258a42470daea82dbb6f1706). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Bush systematically challenges realist presumptions from common sense, history, and semantics, while McAllister offers competent but insufficiently documented convergence and perspectival-collapse arguments.",
     "quotes": {
       "pro": {
@@ -32258,8 +32260,8 @@ export const debates = [
     "duration": "2 hr 28 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=a8NrTv-Durc",
     "motion": "Does Loke's reformulated Kalam cosmological argument successfully establish a beginningless personal creator of the universe?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a678d9a2e941cf830ae06d08ca1a6548fb48fccaf161eedd511c5e34e3587165). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Loke builds a first-cause route toward personal agency, while Oppy challenges its modal bridges and develops a comparatively economical necessary-natural-state alternative.",
     "quotes": {
       "pro": {
@@ -32674,9 +32676,9 @@ export const debates = [
     summary:
       "Krauss argues science needs no God; Meyer argues information and fine-tuning point to design; Lamoureux defends evolutionary creation while rejecting ID interventionism.",
     sourceNote:
-      "Based on YouTube captions for the Wycliffe College at the University of Toronto upload. The upload is a three-perspective panel rather than a two-person debate; Slugfester compresses it into two columns, with cards naming whether Meyer or Lamoureux is carrying the theistic-side point. The video has no topical chapter map, so section ranges are inferred from transcript flow. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "lack of understanding is not evidence for God",
@@ -33025,8 +33027,8 @@ export const debates = [
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2pDEBRG_9_Q",
     "motion": "Do science, evolution, and future technology make God unnecessary, or do value, personhood, origins, and hope point beyond scientific materialism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 fbf4fc2199bcab18618ee517d50e396e2b2b76541aaad8700f287f4b81dba34c). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Atkins defended scientific materialism and finite purpose; Fox more consistently distinguished mechanism from metaphysics while grounding morality, personhood, hope, and technological restraint.",
     "quotes": {
       "pro": {
@@ -33404,8 +33406,8 @@ export const debates = [
     "duration": "2 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yahf0t5mK5g",
     "motion": "Does God exist, and do Thomistic proofs, moral law, and natural theology meet the burden of proof against skeptical atheism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 3fb2f66cdf171853b6933a88ed9a20a7bf1124ce7f3802e54eae63c1d98fae84). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Egnor developed cumulative Thomistic, natural-order, and moral arguments, while Dillahunty more effectively defended evidential restraint and exposed unsupported transitions to God.",
     "quotes": {
       "pro": {
@@ -33800,8 +33802,8 @@ export const debates = [
     "duration": "2 hr 34 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OSQWIWY9gYg",
     "motion": "Does the historical evidence make Jesus' resurrection more probable than competing hypotheses?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 3df21bd2a939628959ba159727213ed4d05b28dbcd67c6c9972631a15814dc88). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Christopoulos presented a cumulative probabilistic resurrection case, while Dillahunty’s source challenges and distinctions between sincerity, likelihood, and warranted belief preserved rational uncertainty.",
     "quotes": {
       "pro": {
@@ -34201,8 +34203,8 @@ export const debates = [
     "duration": "1 hr 32 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=FUPOouj5jNg",
     "motion": "Did a perfect mind create the universe, and do simplicity, moral agents, beauty, fine-tuning, meaning, and purpose favor that hypothesis over non-theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a5be58d0749c2b8a88f113c19c59c66879e936e8ce7b25aa63aac9f5767e4e99). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Sechler presents a cumulative perfect-mind inference; Dillahunty answers that unspecified hypotheses, missing likelihood baselines, hiddenness, and rival agent explanations limit its force.",
     "quotes": {
       "pro": {
@@ -34594,8 +34596,8 @@ export const debates = [
     "duration": "1 hr 18 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=4KCJXMeM9WQ",
     "motion": "Can Bignon's conversion story, religious experience, and supporting arguments rationally support Christian belief, or do rival experiences and naturalist explanations undercut their evidential force?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 8614a98bf30e65b929e54576a27d1f3b4b13aa8ec5cd7a7b20b6ea44446e7464). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Bignon presents experience, providential convergence, and historical considerations for Christian belief; Oppy counters with symmetry, cultural variation, naturalistic explanation, hiddenness, and evidential caution.",
     "quotes": {
       "pro": {
@@ -34972,8 +34974,8 @@ export const debates = [
     "duration": "2 hr 13 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Zn7lmu0pek0",
     "motion": "Are the canonical Gospels historically reliable despite alleged contradictions in the birth narratives, resurrection accounts, and Jesus' self-presentation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 126bb7d14da1d52f590a07c4265114bee1ed9fb968aef1212b7338f958b269db). Required below-high-confidence audio checks were completed before adjudication; representative quotations are exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Akin defended cumulative Gospel reliability through ancient conventions and possible harmonizations; Ehrman pressed consequential narrative conflicts, compositional reshaping, and discontinuous self-presentation.",
     "quotes": {
       "pro": {
@@ -35371,8 +35373,8 @@ export const debates = [
     "duration": "1 hr 51 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=dmTLjiGWgpE",
     "motion": "Does psychophysical harmony, the apparent fit between conscious states and physical or functional states, provide evidence for God over naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d949da4d5ef249c511f05b67d8bd03ae170d65edccc22c2d0ece8605b03a34c7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Cutter argues psychophysical harmony favors divine goodness; Oppy counters that identity theory and unresolved probability measures undermine the proposed evidential comparison.",
     "quotes": {
       "pro": {
@@ -35743,8 +35745,8 @@ export const debates = [
     "duration": "2 hr 5 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=uWo9qU2dhpQ",
     "motion": "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 865a1d39ff9f96bcb5724cf25ddfa8fb5700437179b10594491342572f9bc334). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defended actual-infinity, temporal-asymmetry, and successive-addition arguments; Malpass more effectively challenged their modal warrant, tense symmetry, quantification, and paradox-based support.",
     "quotes": {
       "pro": {
@@ -36157,8 +36159,8 @@ export const debates = [
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Y9Uktg9nLx8",
     "motion": "Does the Christian God exist, and do libertarian freedom, the Kalam argument, resurrection evidence, hiddenness, and inconsistent revelation make Christian theism more reasonable than skepticism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 595b4c3f03eceabd466de097e81a6d68717dfa5efba278faa518cd2656dcf6e2). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hunter builds a cumulative Christian case from freedom, causation, and resurrection; Dillahunty presses underdetermination, evidential discrimination, hiddenness, and revelation inconsistency.",
     "quotes": {
       "pro": {
@@ -36561,8 +36563,8 @@ export const debates = [
     "duration": "55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=1IkAU6zAYLU",
     "motion": "Is theism coherent, especially if God is described as omnipotent, omniscient, perfectly good, and infinite in power or knowledge?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 dd546d7db5aeccd9b6bfb56408a0d4dbb999310db8ae94f2c1dc4247d879f83b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Swinburne defends coherent maximal attributes through logical possibility and doctrinal distinctions; Huemer presses quantitative infinity, residual knowledge, temporal conflict, and supertask objections.",
     "quotes": {
       "pro": {
@@ -36933,9 +36935,9 @@ export const debates = [
     summary:
       "Craig defends classical Christian theism as the best explanation of reality and objective meaning; Frazier, Goff, and Folley press Hindu, mystical, and agnostic alternatives that complicate God, value, experience, and morality.",
     sourceNote:
-      "Based on YouTube captions for the Premier Unbelievable? upload. This was a live four-person panel hosted by Jack Symes rather than a strict two-person timed debate. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "God is the best explanation.",
@@ -37286,9 +37288,9 @@ export const debates = [
     summary:
       "The Knechtles defend Jesus through Gospel reliability, resurrection, grace, love, and worldview fit; Aron Ra and TJump challenge miracle testimony, biblical contradictions, religious borrowing, and evidential standards.",
     sourceNote:
-      "Based on YouTube captions for the TJump/Modern Day Debate upload. The upload includes a long post-debate channel hangout; this assessment focuses on the formal openings, moderated dialogue, and audience Q&A. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "Is Jesus Christ true?",
@@ -37691,8 +37693,8 @@ export const debates = [
     "duration": "1 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=7eSyz3BaVK8",
     "motion": "Did Christianity give the modern West its human values, or do dignity, equality, humanism, science, and moral concern owe more to classical, Axial Age, Enlightenment, and secular sources?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 8f8bfe442428894847f758d50d522b0487b318d58ff83b013dabbb15ce7aff25). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Holland traces Western dignity and reform through Christian transformation, while Grayling argues that classical, cross-cultural, Enlightenment, and secular traditions provide stronger plural genealogies.",
     "quotes": {
       "pro": {
@@ -38061,8 +38063,8 @@ export const debates = [
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Vs7ArUMuQyg",
     "motion": "Is belief in God reasonable in light of tsunamis, childhood cancer, moral evil, and the apparent harshness of the natural world?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 65a12e70a66800ec441b5db26ac55eb81a6c6fcb583c77d685819198657ca114). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defends theistic reasonableness through freedom, epistemic restraint, and total evidence; Grayling presses suffering, better-world feasibility, ordinary moral knowledge, and secular morality.",
     "quotes": {
       "pro": {
@@ -38457,8 +38459,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=UWCvKiWjV0g",
     "motion": "Does God exist, and do emergent spacetime, quantum consciousness, idealism, and the limits of metaphysical knowledge make theism more reasonable than naturalistic alternatives?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 7879d4dd4bf2196aeac22043891809bebde896233fb012cd163b0c96756f357a). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones defended theistic idealism through consciousness and emergent spacetime; Jump pressed underdetermination, epistemic limits, natural alternatives, and the explanatory cost of divine attributes.",
     "quotes": {
       "pro": {
@@ -38851,8 +38853,8 @@ export const debates = [
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yGxSf4zJAso",
     "motion": "Do digital physics, cosmic consciousness, and introspective idealism provide good reasons to believe in a necessary immaterial mind, or do those arguments fail demonstrability, probability, and burden-of-proof standards?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 371b1a060969f8604106443c50a6b7fc679b5d2aa566a6c0b36ec94081ae07c1). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones assembled a cumulative idealist explanation, while Dillahunty’s sharper probability, underdetermination, and burden challenges exposed substantial gaps between suggestive evidence and theism.",
     "quotes": {
       "pro": {
@@ -39254,8 +39256,8 @@ export const debates = [
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8J-WOwrq6bE",
     "motion": "Does religion poison everything by adding doctrine, dogma, revelation, and moral harm to human decency, or does Christianity supply the sacred ideals and institutions that made modern compassion possible?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 fedc5fd56d7a56c4ff83ef1607edf6cb3d45549d4d0d5dddf8e7f9a41fbcb70e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Woodford pressed doctrinal harm and non-Christian moral goods; Scrivener answered through Christian anthropology, reforming institutions, sacred equality, and nonviolent interpretation.",
     "quotes": {
       "pro": {
@@ -39681,8 +39683,8 @@ export const debates = [
     "duration": "1 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EfAWALcKf2w",
     "motion": "Is Christianity rational, and do its claims about God, morality, reason, and resurrection meet proportionate evidential standards?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 0586751d6e27491811d666b085379ffd7aa744e614b0839085fad5c605af37af). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Woodford pressed consistent evidence, naturalistic alternatives, and inference gaps; Brierley defended cumulative Christian warrant through experience, explanation, morality, reason, and testimony.",
     "quotes": {
       "pro": {
@@ -40073,8 +40075,8 @@ export const debates = [
     "duration": "51 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=g1TlLCSn_5o",
     "motion": "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f852392592bdbaf149c1816fe93fb76e84b65577b4c6d85c52a50bb2db95be29). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Woodford presses suffering, revelation, and evidential gaps; Edwards answers through a cumulative theistic case grounded in reason, order, morality, and purpose.",
     "quotes": {
       "pro": {
@@ -40447,8 +40449,8 @@ export const debates = [
     "duration": "1 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=kI5j2b7ZtXw",
     "motion": "Does rationality undermine naturalism and make a theistic or otherwise non-naturalist account of mind more probable?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 43fc269da3831aaaabac195af1b893d095fafb11305ba0ce18f70b6fb050fe8f). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Baker-Hytch argues rationality and consciousness favor fundamental mentality, while O'Connor defends evolutionary, physical realization and challenges the proposed comparative advantage.",
     "quotes": {
       "pro": {
@@ -40827,9 +40829,9 @@ export const debates = [
     summary:
       "Craig and Williams defend Christian theism through arguments, experience, practice, and human meaning; Hossenfelder and Žižek press scientific restraint, religious plurality, and a Christian-atheist reading of God as a communal or symbolic force.",
     sourceNote:
-      "Based on YouTube captions for the Premier Unbelievable? upload. This was a live four-person panel at London's Royal Institution hosted by Jack Symes rather than a strict two-person timed debate, so speaker sides are grouped by broad theistic and skeptical or Christian-atheist posture. Captions are lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "God truly does make sense of the world",
@@ -41178,8 +41180,8 @@ export const debates = [
     "duration": "47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=syP-OtdCIho",
     "motion": "Do humans need God, religious stories, or religiously inherited values to make sense of life, meaning, morality, suffering, and action?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b21279cda82aac5f84e301abdc9cc195d4ccee839f8c1cd67e6a3c8bd14853c4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Peterson grounds meaning in enacted religious inheritance, while Blackmore offers evolutionary, contemplative, and social counterexamples to claims of religious necessity.",
     "quotes": {
       "pro": {
@@ -41566,8 +41568,8 @@ export const debates = [
     "duration": "58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yrnXdzQRISM",
     "motion": "Do science, mathematics, miracle claims, moral experience, and the problem of evil support an evidence-based Christian faith or a more cautious agnostic naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c0789c956bf239fd79b1ecb000b66dee8791c216287cc5e0e7078150d1e05381). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox defended cumulative Christian evidence, while Ruse separated faith from inference and pressed a particularly effective challenge from innocent suffering.",
     "quotes": {
       "pro": {
@@ -41912,8 +41914,8 @@ export const debates = [
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=nOy29aP7wDc",
     "motion": "Does human consciousness, religious and moral experience, and free agency make best sense within a God-centered mind-first reality, or can agnostic naturalism absorb those mysteries without theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 05db2206d5fa855e9a1ad6671129f2bb0e380e3c7fa7ad4abbf26070636ee78d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Ward presents a cumulative mind-first theism, while Ruse argues that shared mysteries and experiences remain naturally explicable and metaphysically underdetermined.",
     "quotes": {
       "pro": {
@@ -42262,8 +42264,8 @@ export const debates = [
     "duration": "2 hr 25 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=rnIQFI1pYLM",
     "motion": "Theism or naturalism: which provides a better account of reality, including biological information, resurrection testimony, divine hiddenness, religious geography, and suffering?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 29ab709e3808973a66e583116451e4772054c19999a6f3e5f143ae144bfb8113). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "McLatchie advances biological-design and resurrection arguments while answering hiddenness and suffering objections through adequate evidence, moral probation, epistemic limits, and lawful regularity.",
     "quotes": {
       "pro": {
@@ -42660,8 +42662,8 @@ export const debates = [
     "duration": "1 hr 13 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=cqfPJQg8m5U",
     "motion": "Can Christian faith be reconciled with evolutionary theory by emphasizing agency, cognition, and natural genetic engineering, or do unresolved mechanisms in origins, body plans, fossils, and human uniqueness make evolutionary confidence overreach?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 e033b685544b92d6e6a02651003c69d024794cce6ea3ef2c0cda79cc37eff9b0). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Tour demands mechanisms for major transitions, while Garte defends a bounded evolutionary framework compatible with Christian unity, agency research, and acknowledged uncertainty.",
     "quotes": {
       "pro": {
@@ -43030,8 +43032,8 @@ export const debates = [
     "duration": "2 hr 00 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=KvGdllx9pJU",
     "motion": "Are scientists currently clueless about the origin of life, or do prebiotic chemistry, ribozyme research, and systems chemistry already provide viable pathways toward abiogenesis?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 221865bd15220d07ac1f74ea557a5c6ff1e36c79e412e082901d159c5e375346). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Tour pressed unresolved selectivity, replication, information, and integration barriers; Farina answered with experimental component mechanisms while distinguishing incomplete reconstruction from scientific cluelessness.",
     "quotes": {
       "pro": {
@@ -43455,8 +43457,8 @@ export const debates = [
     "duration": "1 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=qQda8Cywqvo",
     "motion": "Is belief in God reasonable, given cosmology, fine-tuning, consciousness, rationality, morality, evil, religious history, and the record of scientific explanation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 52aafeed1117ff4bfcc8ef5ccd6a86a2e7918cdd7d70c2a14995b43eaf50dabe). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Copan’s cumulative theistic explanation connected cosmology, consciousness, morality, and reform, but underdeveloped rival comparisons and the evidential challenge from suffering.",
     "quotes": {
       "pro": {
@@ -43901,8 +43903,8 @@ export const debates = [
     "duration": "1 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=PQetkofYXvI",
     "motion": "Does the reality of suffering make belief in an all-powerful, all-loving God unreasonable, or does the Christian framework of a broken world, divine presence, justice, and future healing make better sense of it?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 e1dc4eead5ca58e19ea6e3606c1b85e7a5d55fabf1b063a8df65fbc54192fbcc). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dirckx defended broken creation, objective dignity, divine solidarity, and restoration; Woodford pressed evidential challenges about permitted suffering, selective healing, and salvation.",
     "quotes": {
       "pro": {
@@ -44267,8 +44269,8 @@ export const debates = [
     "duration": "1 hr 04 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ef2vvT5GfoE",
     "motion": "Does consciousness point beyond materialism to God, or can a non-theistic panpsychist framework explain conscious experience without adding theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 89d67055d7998165fc3c45fa591c82a5dae645b90927df4a86d9c8f94a96af4e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dirckx argues consciousness fits a divine personal ground, while Goff presents panpsychism as a parsimonious alternative and challenges the specifically theistic inference.",
     "quotes": {
       "pro": {
@@ -44650,9 +44652,9 @@ export const debates = [
     summary:
       "Horn and Bertuzzi defend theodicy and Christian hope; O'Connor and Schmid press evidential evil, animal suffering, and the cost of skeptical replies.",
     sourceNote:
-      "Based on the YouTube transcript for the Alex O'Connor upload. This is a panel-style discussion rather than a formal two-person debate; the side labels group the Catholic/Protestant and atheist/agnostic positions. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "certain goods you can't have them without a concomitant evil",
@@ -45157,8 +45159,8 @@ export const debates = [
     "duration": "1 hr 05 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=huOwbSrl-xw",
     "motion": "Do facts about pain, pleasure, languishing, and horrendous evil count as evidence for naturalism over theism, or can soul-building and skeptical theism neutralize that evidential force?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 34a10ce656e6f6f6516b9beb00039d5d0bf53872056a5514ca25145d3e5d8ace). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Schieber's comparative suffering case prevailed overall, while Bertuzzi's likelihood objection and limited-information defense exposed a serious weakness in the final skeptical-theism reply.",
     "quotes": {
       "pro": {
@@ -45548,8 +45550,8 @@ export const debates = [
     "duration": "1 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=DGpkGRoLBQ8",
     "motion": "Does the contingency argument show that contingent reality requires a necessary foundation identifiable as God, or can determinism, composition worries, and a necessary-universe option block the inference?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 0f3f9239ce10166641c1aa88b71f5ba86eedd3a83db3776681fe2d71de6ccf43). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Bertuzzi defends an external necessary foundation, while O'Connor presses modal, compositional, symmetry, and underdetermination objections against identifying that foundation as God.",
     "quotes": {
       "pro": {
@@ -45935,8 +45937,8 @@ export const debates = [
     "duration": "2 hr 18 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=sy1lUHGIQCQ",
     "motion": "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c1aae59e4251c4458d4a8a1c1229868e90d84a4981d96156c5b925adee3f247b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hernandez defended theistic grounds for morality, reason, and consciousness; Schieber pressed stronger naturalistic alternatives and evidential challenges from suffering, hostility, and hiddenness.",
     "quotes": {
       "pro": {
@@ -46345,8 +46347,8 @@ export const debates = [
     "duration": "1 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=kOzmwGmiDHQ",
     "motion": "Can the Christian doctrine of hell be morally justified as self-chosen exile, sanctifying grace, and possible annihilation rather than external torture?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 55f777de7ee9687846e33c0316ae1ec11f674fe0bd2032ec9c325c747b6b07f9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Jones defends hell through self-chosen degeneration, corrective grace, open escape, and possible annihilation; O'Connor challenges agency, proportionality, misinformation, universalism, and atonement.",
     "quotes": {
       "pro": {
@@ -46739,8 +46741,8 @@ export const debates = [
     "duration": "1 hr 19 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=woqy13ZkeqM",
     "motion": "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f5d0835a447af6196421c14a1985fd4e034bfdfe07f2865e126c7bf6f46d22f7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "McLatchie defended Christianity through resurrection testimony and contextual reconciliation; O'Connor challenged source sufficiency, theological inference, biblical morality, and animal-suffering explanations.",
     "quotes": {
       "pro": {
@@ -47133,8 +47135,8 @@ export const debates = [
     "duration": "1 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OVEuQg_Mglw",
     "motion": "Has science buried God, or can Christian theism still explain rationality, design, miracles, morality, and fine-tuning?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 472f6a87d2cf526a794a26d33d1dcad69f4cc2231d52700734154eb97e42b133). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox defended theism's explanatory compatibility and Christian implications; Dawkins more consistently pressed evolutionary alternatives, creator complexity, anthropic selection, and independent evidential burdens.",
     "quotes": {
       "pro": {
@@ -47503,8 +47505,8 @@ export const debates = [
     "duration": "2 hr 06 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=5PF1JgXOKDQ",
     "motion": "Does God exist, and do contingency, sufficient reason, moral realism, evil, animal suffering, and quantum randomness support or undermine theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 6b1be218542091ff043355eaca9f804b2a07de19c6551e05f81e628e735931bc). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Horn develops a cumulative classical-theist case, while O'Connor's quantum, metaethical, personal-explanation, and animal-suffering challenges expose consequential gaps in its foundations and identification.",
     "quotes": {
       "pro": {
@@ -47881,8 +47883,8 @@ export const debates = [
     "duration": "1 hr 41 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8k9A7d2Wnjk",
     "motion": "Does divine hiddenness, uneven religious geography, sincere nonbelief, hell, and original sin count against Catholic theism, or can grace, providence, and creaturely agency explain them?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 101756caa31fa6e6f0b1379ed6a2b7dbc1d3e60bcabfc35c8ae5f6de8e8542b3). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "O'Connor presses sincere nonbelief, unequal access, culpability, and inherited deprivation; Pine answers through universal grace, temporal formation, providence, and recoverable gratuitous gifts.",
     "quotes": {
       "pro": {
@@ -48280,8 +48282,8 @@ export const debates = [
     "duration": "2 hr 06 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=jey_CzIOfYE",
     "motion": "Can religious stories, God-language, and biblical tradition ground moral truth and meaning, or should moral realism, well-being, and open inquiry replace dogmatic religious frameworks?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 83d4309183a7ac03f8c1c36e67734745b0674b894f21ee89c191e029db2cc3cc). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Peterson defends religious narrative as moral mediation and embodied guidance; Harris argues that well-being, causal inquiry, and revisability provide clearer secular foundations.",
     "quotes": {
       "pro": {
@@ -48746,9 +48748,9 @@ export const debates = [
     summary:
       "The Knechtles defend Christianity as a coherent gospel of grace, meaning, value, and divine justice; O'Connor presses the hardest biblical and doctrinal cases against that moral portrait.",
     sourceNote:
-      "Based on the YouTube transcript for the Alex O'Connor upload. This is a long-form discussion rather than a strict formal debate; the transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates by GPT 5.5 Extra High based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "God created us to love him",
@@ -49179,8 +49181,8 @@ export const debates = [
     "duration": "1 hr 00 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TmYCwjU_5Wc",
     "motion": "Does the Kalam causal premise justify a transcendent cause of the universe, or is ordinary causation too bound to space, time, and material conditions to support that inference?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c1462d95d15799e64e38e6377fdb4b4c22a1985c27abe7502a26d46506e5dfab). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defends metaphysical causation beyond spacetime, while Clifton argues ordinary causal evidence supports narrower principles and leaves transcendent creation insufficiently warranted.",
     "quotes": {
       "pro": {
@@ -49566,8 +49568,8 @@ export const debates = [
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=uJeKS705aXs",
     "motion": "Does objective morality require God as its necessary foundation, or can secular moral reasoning explain the relevant moral truths and obligations?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 cc36cf5a24922e2f24e360f2e5d27e24b104c182f13a45feaa122f3cbc32faa5). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Slick grounds universal morality in God's immutable character, while Clifton's secular alternatives and circularity objections more completely address objectivity, obligation, and impartial justification.",
     "quotes": {
       "pro": {
@@ -50013,8 +50015,8 @@ export const debates = [
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=APfd7B3CEhI",
     "motion": "Does God exist, and do Craig's cumulative arguments overcome Law's evidential problem of evil and evil-God symmetry challenge?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 6ef17f6e86a8e63f34888dde8f17057bcad975d90d6ffa8010b8e3aa3006a9bb). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig’s cumulative creator, morality, and resurrection case met Law’s stronger suffering evidence and evil-God symmetry challenge, which remained insufficiently distinguished by providential skepticism.",
     "quotes": {
       "pro": {
@@ -50425,8 +50427,8 @@ export const debates = [
     "duration": "1 hr 09 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=vAJHkRkWCm0",
     "motion": "Is the evolutionary argument against naturalism successful at showing that naturalism plus evolution gives its believers a defeater for trusting their cognitive faculties?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 7187052aba2de7eded77bcd036ba715925dc5a3b51c84a88ca352536d8b4f3a0). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Plantinga develops a self-defeat argument from evolutionary reliability doubts, while Law counters with adaptive truth-tracking, content constraints, and skeptical parity.",
     "quotes": {
       "pro": {
@@ -50780,8 +50782,8 @@ export const debates = [
     "duration": "2 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0IpKHdVLZb4",
     "motion": "Did Jesus rise from the dead, and does the resurrection hypothesis better explain early Christian testimony than naturalistic alternatives?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Licona argued resurrection best explains early testimony; Carrier countered that prior probability, visionary mechanisms, and source limitations preserve stronger natural explanations.",
     "quotes": {
       "pro": {
@@ -51130,8 +51132,8 @@ export const debates = [
     "duration": "2 hr 54 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=bC-Uj92Cpvg",
     "motion": "Did Jesus exist as a historical person, or did early Christian belief begin with a celestial or mythic Christ later placed in history?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 639ae30e4c37496786398c44d6bd7ae4b888b323aeac6e89fa3f931665edb169). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Boyce defended an earthly historical Jesus through Paul, kinship, and corroboration; Carrier pressed celestial compatibility, source dependence, ambiguity, and alternative appearance explanations.",
     "quotes": {
       "pro": {
@@ -51542,8 +51544,8 @@ export const debates = [
     "duration": "1 hr 23 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=HCcq8G-WzJM",
     "motion": "Did Paul understand Jesus as an earthly historical person, or as a celestial figure whose death and resurrection occurred in a mythic heavenly realm?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 9123a4118612acda8c318c397d5824f8f45c8798e884bb6d2b563768ab7035b9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Carrier narrowly prevailed by pressing Pauline ambiguity and source dependence, while McLatchie answered most forcefully through contextual analysis of the crucifying rulers.",
     "quotes": {
       "pro": {
@@ -51937,8 +51939,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OSXawgwSZQs",
     "motion": "Can libertarian free will and Bradleyan idealism answer determinist and naturalist pressure better than compatibilist pragmatism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 983dfe6da87ddc08124eec2f136b7822b786e544d8bdb6d961eb477cd770bcfa). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hawkins defended libertarian idealism through normativity and experiential completeness, while Folley’s modal distinctions and disciplined pragmatism applied stronger comparative pressure.",
     "quotes": {
       "pro": {
@@ -52317,8 +52319,8 @@ export const debates = [
     "duration": "2 hr 04 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=a2sBEFE3etc",
     "motion": "Did Jesus exist as a historical Jewish teacher later mythologized, or did early Christianity begin with a revelatory Christ only later placed in history?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b785e9bbd558c9b4fd3899849b8f54041e366ef808edaf2e71f0fc3018b5a793). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "MacDonald defended a mortal Jewish teacher later mythologized; Carrier’s revelatory-origin model and challenges to literary and Josephian evidence narrowly prevailed.",
     "quotes": {
       "pro": {
@@ -52701,8 +52703,8 @@ export const debates = [
     "duration": "2 hr 34 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=GzjYmpwbHEA",
     "motion": "Did a first-century Jewish preacher named Jesus exist behind the Christian traditions, or did Christianity develop from mythic and scriptural materials without such a person?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 6ef1c455e378cc1edb2dc687b3cfbdcc64814c9ed0f46f6a5ca73b12e6545017). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Ehrman advances convergent historical evidence for Jesus; Price challenges source independence, terrestrial Pauline readings, chronology, and whether an ordinary founder explains Christianity.",
     "quotes": {
       "pro": {
@@ -53144,8 +53146,8 @@ export const debates = [
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=V7EwdZ0Z_gc",
     "motion": "How much historical confidence should readers place in the Gospels and resurrection accounts: reliable witness traces or later traditions shaped by memory, theology, and debate?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 3d020d64f239c7ecdfd6f1abcd9720980beed14294407bae3ef3fa4ef0aa88a4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Douthat pressed witness continuity and resurrection strangeness; Ehrman narrowly prevailed through source criticism, calibrated historical method, and a multistage visionary reconstruction.",
     "quotes": {
       "pro": {
@@ -53532,8 +53534,8 @@ export const debates = [
     "duration": "2 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Pba-YNVWaa0",
     "motion": "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 5c6b0c10e33d95fe6f6ef67ab716e565349bc0534bbddd62f55ac7c69e5f3079). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig built a cumulative resurrection case from early sources; Price challenged its historical foundations through analogy, literary criticism, and ordinary belief-forming mechanisms.",
     "quotes": {
       "pro": {
@@ -53906,8 +53908,8 @@ export const debates = [
     "duration": "1 hr 53 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=CqpFmw4pwrY",
     "motion": "Did Jesus Christ bodily rise from the dead, as early Christian sources claim?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 18d66ecfdaa13ca600d39484006aeed24d906444b2768ddb348089189126e1d9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Albrecht defended bodily continuity through early testimony and textual distinctions; Price narrowly prevailed by pressing historical method, provenance uncertainty, and ordinary alternative explanations.",
     "quotes": {
       "pro": {
@@ -54282,8 +54284,8 @@ export const debates = [
     "duration": "1 hr 54 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=vHxAw5-RXIw",
     "motion": "Should we believe in an all-knowing, all-powerful, morally perfect being?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c15db9cb46afed3c4fef0a368baf300e6d2b86d37f13f4a35b918cbce1186a5d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Adelstein presented a cumulative Bayesian case for theism, while Dillahunty more consistently exposed underdetermined likelihoods, divine motives, and omnimax identification.",
     "quotes": {
       "pro": {
@@ -54673,8 +54675,8 @@ export const debates = [
     "duration": "3 hr 01 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=i0Q_KMN64bk",
     "motion": "Is there good evidence for the existence of the God of classical theism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f87cef5fc6a6ce8b83c92b181ad5f6ceee5ef91e869f9dce675d55fb69f4dd21). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Rhodes defended a metaphysical route from finite composition to classical theism; Dillahunty pressed evidential, ontological, agency, identification, and hiddenness objections.",
     "quotes": {
       "pro": {
@@ -55090,8 +55092,8 @@ export const debates = [
     "duration": "2 hr 41 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=KByryLId3dQ",
     "motion": "Is there good evidence for God, rather than merely an asserted epistemic starting point?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a946f564db7a37a31bb2408335a7df459bc387a2f656f7087a5709312860452e). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Fischer defended axiomatic theism, causal agency, and testimony; Dillahunty pressed discriminating evidence, modal justification, consistent standards, and identifiable divine attribution.",
     "quotes": {
       "pro": {
@@ -55496,8 +55498,8 @@ export const debates = [
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=cRCbvfyiu0s",
     "motion": "Does the Christian gospel's account of sin, atonement, and salvation make moral and explanatory sense?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 179212ef351162ce58165a0643a09d9a3d94d8f4105f002cc5fc895788317592). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Comfort defended guilt, substitution, and faith-based salvation; Dillahunty pressed stronger challenges concerning responsibility, atonement, evidential method, and testability.",
     "quotes": {
       "pro": {
@@ -55933,8 +55935,8 @@ export const debates = [
     "duration": "2 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=kf0Us__r9SQ",
     "motion": "Do laws of logic and other transcendental facts provide good evidence for a necessary personal God?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 022de1b9585e10e30bea1ad5067dc0e57bc82e22caad2b2697ab2c49a4bde06f). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Vela grounds transcendental facts in a necessary personal mind; Dillahunty argues that the inference remains underspecified, comparatively unsupported, and evidentially nondiscriminating.",
     "quotes": {
       "pro": {
@@ -56352,8 +56354,8 @@ export const debates = [
     "duration": "1 hr 47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=f06J2R4MwGA",
     "motion": "Are evolutionary science and theistic religion compatible, and does naturalism plus evolution undercut trust in human cognition?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 09519d0eec83946db3c8acd922d9a836c7bd35e7474c5e367aec8eb3edd465b4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Plantinga establishes evolutionary compatibility with divine guidance, while Dennett separates possibility from evidence and offers a narrowly stronger naturalistic account of cognitive reliability.",
     "quotes": {
       "pro": {
@@ -56733,8 +56735,8 @@ export const debates = [
     "duration": "2 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ocZh8vhz_Hs",
     "motion": "Is God a human invention, or do cosmological fine-tuning, morality, consciousness, and religious experience provide rational support for a real divine creator?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 56cdc0474e9feebece154804df2a698dd092a212a6a29c073fc8059d80202de7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dennett advances naturalistic explanations of religion, cosmos, mind, and morality, while D'Souza defends divine reality through conceptual, cosmological, experiential, and moral arguments.",
     "quotes": {
       "pro": {
@@ -57124,8 +57126,8 @@ export const debates = [
     "duration": "1 hr 35 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_J_9DKIAn48",
     "motion": "Does determinism or indeterminism undermine free will and moral responsibility, or can reasons-responsive agency provide a compatibilist form of freedom worth preserving?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 e13c75a666e81720dbe2d222ac1b81314745d23de16666d6416a4420fd67c75c). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Harris challenges ultimate authorship under causation, while Dennett defends graded, reasons-responsive control and pragmatic responsibility without metaphysical self-creation.",
     "quotes": {
       "pro": {
@@ -57509,8 +57511,8 @@ export const debates = [
     "duration": "1 hr 06 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=h-I_9e5qxnc",
     "motion": "Does naturalism fully explain mind, intentionality, morality, and reality, or does a religious account of ultimate reality offer an additional explanatory framework?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 66e0597e7e73f496bc0734d20c54df96ad026ec4ad3755088060d801fcbf86c0). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Dennett defends naturalistic explanations and epistemic accountability, while Clayton argues for subjective realism, religious integration, and a deeper ultimate reality.",
     "quotes": {
       "pro": {
@@ -57873,8 +57875,8 @@ export const debates = [
     "duration": "2 hr 02 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=YWeOWtmCoCs",
     "motion": "Do objective moral facts, moral knowledge, moral transformation, and moral rationality make theism a better explanation than secular ethical theories?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 5d69508a8a3fdc0882d237de846649be40586c341df1740db510618791d2d4da). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Baggett’s qualified theistic explanation meets Dillahunty’s secular mechanisms, candidacy constraints, access objections, and hiddenness challenge across moral authority, knowledge, transformation, and flourishing.",
     "quotes": {
       "pro": {
@@ -58294,9 +58296,9 @@ export const debates = [
     summary:
       "Alexander and Moody argue that near-death and shared-death experiences reveal consciousness beyond the brain; Carroll and Novella argue that vivid experience and testimony do not outweigh evidence that minds depend on brains.",
     sourceNote:
-      "Based on the YouTube transcript for the Intelligence Squared debate upload. The transcript is lightly cleaned, analytical summaries are condensed, and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "It was a very real experience that had no way of occurring in my physical brain.",
@@ -58573,8 +58575,8 @@ export const debates = [
     "duration": "2 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=IW9w6c2RWmA",
     "motion": "Did Jesus rise from the dead, and can historical evidence plus allegedly supernatural phenomena justify that conclusion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f24ccb20690144ccfcecff41f4b274f6d9f285d10f7d190cdb998398c4554fbd). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Licona defended resurrection through historical and comparative inference; Dillahunty more effectively separated reported events, unexplained anomalies, supernatural classification, and justified causal attribution.",
     "quotes": {
       "pro": {
@@ -58941,8 +58943,8 @@ export const debates = [
     "duration": "2 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=u2SjOn8arv8",
     "motion": "Which gives a better foundation for ethics: God or secular humanism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 5732abec025b423e6b2bbf339e470a3fefa89d3835a94bd013e2fc290a51e9ce). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Wood pressed categorical obligation and transcendent worth, while Dillahunty more effectively defended revisable secular ethics and exposed gaps in divine grounding.",
     "quotes": {
       "pro": {
@@ -59325,8 +59327,8 @@ export const debates = [
     "duration": "3 hr 01 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9r_XAIksLdI",
     "motion": "Does God exist, and do design, morality, logic, and experience support that conclusion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 afb9789743fdea882d2d18591b2504f773f9b0c08df226c2bcbda5de47ec2ed7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Knechtle advances cumulative theistic arguments from order, reason, morality, and Jesus; Aron Ra counters through evidential standards, natural explanations, and religious unreliability.",
     "quotes": {
       "pro": {
@@ -59768,8 +59770,8 @@ export const debates = [
     "duration": "1 hr 09 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=CRpsJgYVl-8",
     "motion": "Do determinism and unchosen desires eliminate free will, or can determined agents be free when acting voluntarily and without coercion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d7cfdbb4415899971b8dafc4ee42926393cc1645635888e594dbdb6f695cea5f). Required below-high-confidence audio checks were completed before adjudication; representative quotations are exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "O'Connor pressed ultimate-source objections and practical compassion; Carter more strongly defended graded, attributable agency while preserving interpersonal and normative dimensions.",
     "quotes": {
       "pro": {
@@ -60163,9 +60165,9 @@ export const debates = [
     summary:
       "Koukl defends Christian theism as the objective basis for purpose and morality; O'Connor and Alok Kanojia distinguish truth claims from subjective purpose while offering philosophical, clinical, and spiritual alternatives.",
     sourceNote:
-      "Based on public YouTube English-original automatic captions for the Diary Of A CEO upload. This is a wide-ranging three-person discussion rather than a formal timed debate; the two columns group Koukl's Christian-theist case and the distinct secular and spiritual responses. The transcript is lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "God has made us for a purpose.",
@@ -60476,8 +60478,8 @@ export const debates = [
     "duration": "2 hr 6 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=HKKofNwvt1k",
     "motion": "Is objective morality better explained by God as its personal ground, or by science, evolution, and human flourishing?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c42ab19234ce157e2017a0a53ad396b541db1eae602a4747bf18e0397caeab54). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Turek pressed divine grounding and the is-ought gap; Shermer answered through sentient flourishing, autonomy, evolved capacities, and challenges about religious reliability.",
     "quotes": {
       "pro": {
@@ -60863,8 +60865,8 @@ export const debates = [
     "duration": "50 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=elMi_IzlD40",
     "motion": "Does religious belief better ground moral knowledge and identify social evil, or can secular ethical realism guide moral progress without sacred texts?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4baa3a7255c6b9ffb9a1fb0446f816bd18ab84cbd311c46580c66f225a21f2ed). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Prager defends divine authority through moral durability and historical performance; Harris advances conscious wellbeing, open inquiry, and cooperation while challenging scriptural reliability.",
     "quotes": {
       "pro": {
@@ -61195,8 +61197,8 @@ export const debates = [
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=13PnL6QyMEw",
     "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b764ef00b320fcfb77f79008de9cd0d0b74015a973628e9576f9b253740810d7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Howitt develops a necessary Logos and Trinitarian metaphysics; Dillahunty challenges its evidential standards, Christian specificity, divine coherence, and treatment of classical logic.",
     "quotes": {
       "pro": {
@@ -61630,8 +61632,8 @@ export const debates = [
     "duration": "2 hr 35 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=a-wIaCRIdOA",
     "motion": "Is there strong historical evidence that Jesus rose from the dead, or are the surviving Christian reports too indirect and insufficiently testable to establish a resurrection?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d53322488b4f6c760e32fc0b837b17d2e1b059859866b11f536a20d6cb76dc4f). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "McLatchie built a cumulative resurrection case from early testimony; Dillahunty prevailed by challenging source independence, testability, alternative explanations, and evidential thresholds.",
     "quotes": {
       "pro": {
@@ -62024,8 +62026,8 @@ export const debates = [
     "duration": "1 hr 52 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=dto5DQ7GBEQ",
     "motion": "Is naturalism true, or does an evolutionary naturalist account of human cognition undermine the rational confidence required to affirm naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 8373539ba45cf996f7c8b9237627a5287df64c6a99afd50f32f296f51622a996). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Wood challenges naturalism's warrant for abstract cognition; Aron Ra defends provisional, publicly corrected inquiry while requiring objective evidence for supernatural additions.",
     "quotes": {
       "pro": {
@@ -62402,8 +62404,8 @@ export const debates = [
     "duration": "0 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=3jWCLONu7DM",
     "motion": "Are people and societies better off with belief in God, or can secular reason and institutions provide morality, purpose, and social cooperation more effectively?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 f8157f92111be5a6f01df90a0135f91fe39a0aac92b600dedd2d30a28313cd33). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Douthat defended transcendent foundations for morality and meaning, while Pinker argued that secular reason, reciprocity, and institutions adequately support flourishing and progress.",
     "quotes": {
       "pro": {
@@ -62766,8 +62768,8 @@ export const debates = [
     "duration": "2 hr 19 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9JVRy7bR7zI",
     "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 9de6853aa2dd4eaf8e0d669f895b719b7fbc15ab55a7f8eab271c92974771b78). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig presented a cumulative Christian case; Millican’s calibrated challenges stressed underdetermination, alternative explanations, evidential reliability, suffering, and sincere nonbelief.",
     "quotes": {
       "pro": {
@@ -63206,8 +63208,8 @@ export const debates = [
     "duration": "1 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Rm2wShHJ2iA",
     "motion": "Is God necessary for objective moral values, duties, human significance, and accountability, or can a secular moral realism provide an adequate foundation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 3e91a919471fc0046c773db84fa293487e022f32b8f0d9e34005617c2b432828). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Kagan's secular realism answers Craig's grounding challenge most effectively on finite significance and prudential conflict, while Craig presses a substantial explanatory-value objection.",
     "quotes": {
       "pro": {
@@ -63630,8 +63632,8 @@ export const debates = [
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=lK3jVNbG2-s",
     "motion": "Does the total evidence concerning the universe, life, morality, Jesus, religious experience, suffering, and hiddenness favor theism over naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 2e3fbd6ad00ad5102eac1a5b8cab3d6bc5dc868a39eefe8f3b85c0f4e6ed0272). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig advances a cumulative Christian case, while Draper’s disciplined comparative-likelihood framework more effectively integrates evolution, suffering, hiddenness, and qualified replies.",
     "quotes": {
       "pro": {
@@ -64038,8 +64040,8 @@ export const debates = [
     "duration": "2 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=xHhmuqBW6Dw",
     "motion": "What is the best account of objective moral values and duties: the nature and commands of God or godless normative realism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 e90834c6ae62fb6f2e2d416a17fbb82a173d1321e71eec816e92be1905729c1c). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defended divine nature and commands as morality’s foundation; Wielenberg answered with irreducible normativity, explanatory parity, and sharper replies on agency.",
     "quotes": {
       "pro": {
@@ -64416,8 +64418,8 @@ export const debates = [
     "duration": "2 hr 47 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=bhfkhq-CM84",
     "motion": "Is belief in the personal God of classical theism intellectually reasonable?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 d0b6902b27ef1c4c0a62791e49cd37868411c28a700452fdf47c1b72e7a47348). Required below-high-confidence audio checks were completed before adjudication; representative quotations are exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig’s strongest replies preserved several theistic inferences, while Rosenberg effectively separated atheism from eliminativism and exposed unresolved explanatory and moral-grounding assumptions.",
     "quotes": {
       "pro": {
@@ -64856,8 +64858,8 @@ export const debates = [
     "duration": "1 hr 53 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ssq-S5M8wsY",
     "motion": "Does God exist as the transcendent personal cause and moral foundation of reality?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 a4eba568aee28f30ecb0e9789501154a464107eb4666cde4fe519060f61989e1). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig advances cumulative cosmological, moral, and resurrection arguments, then answers naturalistic objections concerning causality, evolution, suffering, miracles, and scientific method.",
     "quotes": {
       "pro": {
@@ -65228,8 +65230,8 @@ export const debates = [
     "duration": "2 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=L3FOgiASYY0",
     "motion": "Does the available philosophical, scientific, moral, historical, and experiential evidence support God's existence?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig presented cumulative theistic arguments; Shook's disciplined evidential restraint and targeted alternative explanations more consistently exposed unresolved bridges from nature to God.",
     "quotes": {
       "pro": {
@@ -65651,8 +65653,8 @@ export const debates = [
     "duration": "2 hr 14 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TqANWuXQ3Z0",
     "motion": "Does the greater weight of philosophical, scientific, moral, and historical evidence support God's existence?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 bdf8a3981a997ea2b3fbaa5cf1f38ad360abe2021f083bedca3674c6cca2bf97). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig advances a cumulative theistic inference; Krauss counters that natural alternatives, evidential uncertainty, secular morality, and ordinary history prevent decisive discrimination.",
     "quotes": {
       "pro": {
@@ -66102,8 +66104,8 @@ export const debates = [
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yotpTOKLZ00",
     "motion": "Do modern cosmology, fine-tuning, and the universe's existence support a divine mind or a self-contained natural account?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 be5d6b13f6ecad27b61a330d5162492b0d0cb79ed4fda88e9c81e231263aa0f9). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox argues that intelligibility, fine-tuning, and existence favor divine mind; Krauss counters with physical explanations, selection effects, and demanding evidential standards.",
     "quotes": {
       "pro": {
@@ -66481,8 +66483,8 @@ export const debates = [
     "duration": "1 hr 46 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=HoTILnpd3q8",
     "motion": "Given science, human rationality, morality, suffering, and the historical claims about Jesus, is belief in the biblical God rational?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b70a84685d781395e648e678944934fb13b5a89a04c93588280290aa10e5f276). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Lennox presents a cumulative Christian explanation of reason, value, hope, and Jesus; Singer answers with naturalistic alternatives, evidential demands, and suffering.",
     "quotes": {
       "pro": {
@@ -66877,8 +66879,8 @@ export const debates = [
     "duration": "1 hr 45 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=nbEyhU-L3iE",
     "motion": "On balance, is religion a force for good in the world?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 e1702a902444eb7f31ee92676ad35030854ecfb06c9bff737ce94a167b3ece87). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Blair emphasized faith-inspired service, reconciliation, pluralism, and purpose; Hitchens countered with doctrinal harm, sacred conflict, secular alternatives, and stricter causal comparison.",
     "quotes": {
       "pro": {
@@ -67242,7 +67244,7 @@ export const debates = [
             ]
           },
           {
-            "text": "The asserted scale of deaths caused by condom teaching was not substantiated within the locked source span.",
+            "text": "The asserted scale of deaths caused by condom teaching was not substantiated during the debate.",
             "links": []
           }
         ]
@@ -67308,8 +67310,8 @@ export const debates = [
     "duration": "1 hr 40 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Xc0kbM4tBYE",
     "motion": "Is religious belief in the modern world intellectually credible and morally constructive, or is it an evidentially unsupported source of coercion and harm?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 0da83d0291ca9099270603555dc2cb3d99d543cf210bff796481747e907c9c48). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Hitchens pressed evidential, coercive, and secular-moral objections; McGrath defended interpretive openness, transcendent morality, restorative doctrine, and Christianity's nonviolent norms.",
     "quotes": {
       "pro": {
@@ -67709,9 +67711,9 @@ export const debates = [
     summary:
       "Onaiyekan and Widdecombe emphasize global welfare, spiritual hope, and reform within a fallible institution; Fry and Hitchens argue that those benefits do not outweigh institutional abuse, sexual control, public-health obstruction, and unaccountable authority.",
     sourceNote:
-      "Built from the English-original YouTube caption track supplied with the Intelligence Squared recording. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "the Catholic Church is doing far more than its numbers and its population would probably suggest",
@@ -67970,9 +67972,9 @@ export const debates = [
     summary:
       "Williams presents humanity as the universe becoming linguistically and morally self-aware within a divine relation; Dawkins argues that natural selection explains apparent purpose without design; Kenny presses both accounts from an explicitly agnostic philosophical position.",
     sourceNote:
-      "Built from the English-original YouTube caption track supplied with the University of Oxford recording. Captions were checked against the recorded exchange; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "a universe in which there are subjects",
@@ -68246,8 +68248,8 @@ export const debates = [
     "duration": "1 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=SyhMlwsQuqc",
     "motion": "Does theism offer a better overall explanation of reality than naturalism?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 bb1856b40150e05b3073d9a4efa74ce87b4ca2f3e32e69384b6ae53a6236a7c8). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Pearce develops theistic grounding and experiential arguments, while Oppy presses symmetrical naturalistic alternatives, epistemic calibration, and religious diversity as stronger comparative explanations.",
     "quotes": {
       "pro": {
@@ -68624,8 +68626,8 @@ export const debates = [
     "duration": "1 hr 29 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=foLI3KGbMnk",
     "motion": "Are the canonical Gospels historically reliable accounts of Jesus' life, teaching, death, and resurrection?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4f4ae2672ca207a99552ca58db9f6ac037e5a0618badf1459d55aacec615a0f7). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Williams defended cumulative contextual and theological continuity, while Ehrman more successfully separated informed settings from reliable events, highlighting provenance gaps and narrative conflicts.",
     "quotes": {
       "pro": {
@@ -69019,8 +69021,8 @@ export const debates = [
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=WRHjZCKRIu4",
     "motion": "Can textual criticism recover the wording of the original New Testament with enough confidence for the text to be trusted?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 72f9074ca0e9393e177b1a78504e1f75e5dd87aaf1eed9e59614aa5450ea5db4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Wallace defended probabilistic textual recovery through abundant branching witnesses; Ehrman conceded broad continuity but showed that reconstructing their ancestor does not establish autographic identity.",
     "quotes": {
       "pro": {
@@ -69446,8 +69448,8 @@ export const debates = [
     "duration": "2 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=xTCPigOQabY",
     "motion": "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 fa5c936c4dfaeb55945ec642dd411730c7fd20647b0ee432b0b4620c0642c4dc). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Licona defended traditional Gospel authority through convergent testimony and collaboration; Ehrman prevailed by separating compatibility and reliability from identity-specific authorship evidence.",
     "quotes": {
       "pro": {
@@ -69833,8 +69835,8 @@ export const debates = [
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=MW5_nJYSKyk",
     "motion": "Does the historical evidence make Jesus' bodily resurrection the best explanation of what followed his crucifixion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 93a6bd6b8a2459d76383ef81f5d5a7e0d1fcd5b3c6a58257defa1b973e3efe23). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Craig defended resurrection through cumulative explanatory comparison; Ehrman challenged source reliability, supernatural inference, and whether historical standards can distinguish bodily resurrection from alternatives.",
     "quotes": {
       "pro": {
@@ -70246,8 +70248,8 @@ export const debates = [
     "duration": "2 hr 36 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=eoiScvG3Emo",
     "motion": "Does the historical evidence establish that Jesus physically rose from the dead?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 c77cda9d022e7801ee5be774178c006f323a398c0049b9de1b4de84b5fe8e5c2). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Licona presented a cumulative bodily-resurrection inference; Ally narrowly prevailed by sustaining uncertainty about death, physical appearances, empty-tomb implications, and narrative development.",
     "quotes": {
       "pro": {
@@ -70622,8 +70624,8 @@ export const debates = [
     "duration": "1 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ksa8uGe21rw",
     "motion": "Does the historical evidence make Jesus' bodily resurrection a rational conclusion?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 080b0ac0df237588fdd5b50841c073ee2fb0c504261fb198e4d5960ec04068f4). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Habermas assembled convergent historical and bodily evidence, while Flew pressed source limitations, natural underdetermination, and the need for justified theological priors.",
     "quotes": {
       "pro": {
@@ -71043,8 +71045,8 @@ export const debates = [
     "duration": "2 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=ee9c45dSHiY",
     "motion": "Which account of sin and salvation—the Qur'an's direct forgiveness and moral accounting or the Bible's grace through Christ's atonement—is more coherent and scripturally grounded?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 3b24593eeddaa140ff5f18658d71c0774682f1d2b6c7bf21d1e0a25b85fdef44). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "White grounds forgiveness in Christ’s law-satisfying atonement; Ally defends direct, equitable mercy and accountable deeds while challenging inherited guilt and biblical continuity.",
     "quotes": {
       "pro": {
@@ -71434,8 +71436,8 @@ export const debates = [
     "duration": "1 hr 10 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2WrywAaDvvw",
     "motion": "Can stance-independent moral facts genuinely vindicate normative objectivity by settling what agents should do?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b5a77384b189d82e591ed73af99e17bb094587f78aae3fb845e7f0be4d44f0cc). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Enoch grounds moral objectivity in stance-independent facts and ordinary deliberation, while confronting rival-package, noncognitivist, and reflective-anomaly challenges to action guidance.",
     "quotes": {
       "pro": {
@@ -71821,9 +71823,9 @@ export const debates = [
     summary:
       "Enoch and Sampson defend robust moral realism through Moorean cases and rational reflection; Loeb and Lutz argue that desire-relative reasons and a naturalistic explanation of moral experience make such facts unnecessary.",
     sourceNote:
-      "Built from the English-original YouTube caption track. Captions were checked against the recording and lightly cleaned; analytical summaries are condensed and direct quotes are kept short.",
+      "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
     scoringNote:
-      "Scores are AI-generated estimates based on conventional notions of logical coherence, relevance to the motion, evidential support, rebuttal quality, and absence of logical fallacies or cognitive-bias-driven overreach.",
+      "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     quotes: {
       pro: {
         text: "the moral truths are not invented; they're discovered",
@@ -72101,8 +72103,8 @@ export const debates = [
     "duration": "2 hr 6 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=AxhA7S3q49o",
     "motion": "Does the natural human capacity for reasons-responsive control justify free will, moral desert, and responsibility practices?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Caruso’s carefully delimited desert skepticism and forward-looking alternatives outperform Dennett’s practical compatibilism, whose institutional strengths leave ultimate sourcehood and desert’s independent role unresolved.",
     "quotes": {
       "pro": {
@@ -72487,8 +72489,8 @@ export const debates = [
     "duration": "1 hr 26 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=FjAYvhv1-Lg",
     "motion": "Do people sometimes control which of multiple genuinely available actions occurs, and does that freedom justify responsibility?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 0f95a8e51821706d410371c4ce48befdab385fba5690e1e2543d4bb88cb965f2). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Huemer challenges the leap from pervasive causal influence to determination, while Sapolsky explains mechanistic change and presses a humane rejection of retributive desert.",
     "quotes": {
       "pro": {
@@ -72878,8 +72880,8 @@ export const debates = [
     "duration": "1 hr 23 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=mongL_2KMGg",
     "motion": "Are consciousness, personal identity, purpose, value, and free agency irreducible to the physical world?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 b96548a0ebacc82e318b58ec0851c90668838ccf3b6cdd47fe749740c83a29fb). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Ward defends irreducible consciousness, value, identity, and agency; Dennett answers through evolved computation, higher-level explanation, emergent purpose, and compatibilist control.",
     "quotes": {
       "pro": {
@@ -73336,8 +73338,8 @@ export const debates = [
     "duration": "59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=X4YVgM2HPMk",
     "motion": "Is consciousness the ontological foundation of reality rather than an emergent property of matter?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 2cdbd056c9b83904fe880ed5bd343e511b5ab1d6f7184d215f1a550cf187c363). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Kastrup grounds reality in consciousness, while Blackmore argues that neutral representation better exposes idealism's unresolved structure, boundaries, and causal differentiation.",
     "quotes": {
       "pro": {
@@ -73704,8 +73706,8 @@ export const debates = [
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=3DHvNRK452c",
     "motion": "Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 57fdb4178e04382fa8699406f9da3b649540d763ee639090325f9576983a189d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Tour pressed unresolved cellular thresholds and evidential overstatement; Cronin defended experimentally testable chemical organization while carefully conceding uncertainty about historical sequence.",
     "quotes": {
       "pro": {
@@ -74089,8 +74091,8 @@ export const debates = [
     "duration": "2 hr 5 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=gxSi0htNihk",
     "motion": "Do conscious persons possess nonphysical mental substances that can survive bodily death?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 8ad124154675eef151672bd438520af0a514ddea61f822ee18534959957cee3d). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Huemer argues that irreducible mentality requires a surviving soul, while Oppy offers multiscale naturalism, brain dependence, and cosmological objections to that inference.",
     "quotes": {
       "pro": {
@@ -74485,8 +74487,8 @@ export const debates = [
     "duration": "2 hr 28 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2CnZ3n8I5b8",
     "motion": "Are natural processes sufficient to explain the origin of life and the complexity of the cell?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 11a58bbe8b83604a69d4335c44f7128eb59a8820b3a07d41fd89917d2e0a0b7b). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Ruse defended cumulative chemical and evolutionary explanations, while Rana pressed chemical constraints, cellular integration, testability, and positive indicators of intelligent agency.",
     "quotes": {
       "pro": {
@@ -74870,8 +74872,8 @@ export const debates = [
     "duration": "59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yJgr38h_3H0",
     "motion": "Has science come meaningfully close to explaining how life first arose from nonliving chemistry?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 122f85b698196a7e20ec97623066c0592dac5388b35b8a9a211ae206640026af). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Tour demands an integrated chemical pathway to first life, while Swamidass defends limited clues, probabilistic uncertainty, empirical testing, and scientific agnosticism.",
     "quotes": {
       "pro": {
@@ -75223,8 +75225,8 @@ export const debates = [
     "duration": "2 hr 10 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=p_7bQlh8uWc",
     "motion": "What can historians verify about Jesus, and do the sources support his divine identity and bodily resurrection?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 7de20c823c86d5c1d841985e4d2a27ac1d1ff0cad1669073e669924137696b14). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Crossan defended a kingdom-centered, metaphorical resurrection account, while Licona pressed early-source, divine-identity, and bodily-transformation evidence through disciplined historical distinctions.",
     "quotes": {
       "pro": {
@@ -75607,8 +75609,8 @@ export const debates = [
     "duration": "1 hr 8 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=FcNR4vJdcE4",
     "motion": "Is God the simplest and most probable explanation of the universe and its general features?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 4997805a766a635cef97ec4abdec0ef9153bad46a4fbd27624a135a5d41e86eb). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Swinburne defended personal explanation, simplicity, freedom, and compensation; Millican pressed predictive specificity, scientific background, divine coherence, embodiment, and victim-centered suffering.",
     "quotes": {
       "pro": {
@@ -75984,8 +75986,8 @@ export const debates = [
     "duration": "56 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=wMsbD1L5IlQ",
     "motion": "Can God's existence be established through contingency, religious experience, or moral obligation?",
-    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 9a4ddeb3026eac8559d1d18e842b79fb63413206d1c37f4c1e0efa174664e4fc). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
-    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "summary": "Copleston develops contingency, religious-experience, and moral arguments for God; Russell narrowly prevails by exposing modal, evidential, and normative explanatory gaps.",
     "quotes": {
       "pro": {
@@ -76380,8 +76382,8 @@ export const debates = [
     "topicCategory": "god-theism-atheism",
     "motion": "Does God exist?",
     "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses finite-creator, multiverse, infinity, and suffering objections.",
-    "sourceNote": "This assessment uses the complete locally cached transcript at .assessment-cache/captions/0-8n2SGFSL8/transcript.txt, SHA-256 5e84e9d4aae8f0fdd8e572b4082609ddbfd6ba2f83df53b43204a4c90eba0f37. Zero below-high-attribution audio checks were required, and representative quotes are source-exact.",
-    "scoringNote": "Scores are AI-generated; repository code calculated them once after isolated judgments and adjudication produced the frozen final ledger used for publication.",
+    "sourceNote": "Based on the complete debate transcript. Summaries are condensed for clarity, and quotations are kept brief and faithful to the source.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance and are intended as transparent, revisable judgments rather than final verdicts.",
     "sides": {
       "pro": {
         "name": "God exists",
@@ -76761,6 +76763,8 @@ export const debates = [
     }
   },
 ];
+
+addMissingAiContributions(debates);
 
 export const publishedDebates = debates.filter(
   (debate) => !debate.draft && !debate.sections?.some((section) => section.__draft)

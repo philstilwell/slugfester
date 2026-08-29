@@ -20,6 +20,12 @@ for (const argument of process.argv.slice(2)) {
 }
 const bytes = (file) => readFileSync(path.join(root, file));
 const json = (file) => JSON.parse(bytes(file));
+const publicationComparable = (debate) => {
+  const comparable = structuredClone(debate);
+  delete comparable.sourceNote;
+  delete comparable.scoringNote;
+  return comparable;
+};
 const assertLock = (record) => {
   assert.equal(existsSync(path.join(root, record.path)), true, `${record.path}: missing`);
   assert.equal(sha256(bytes(record.path)), record.sha256, `${record.path}: SHA-256 changed`);
@@ -49,7 +55,11 @@ for (const record of manifest.debates) {
     assertLock(sourceLock);
   }
   const production = productionByNumber.get(record.debateNumber);
-  assert.deepEqual(production, candidate, `${record.debateNumber}: production differs from promoted candidate`);
+  assert.deepEqual(
+    publicationComparable(production),
+    publicationComparable(candidate),
+    `${record.debateNumber}: production differs from promoted candidate outside reader-facing note cleanup`
+  );
   assert.equal(sha256(bytes(record.productionLedgerPath)), record.stagedLedger.sha256, `${record.debateNumber}: production ledger differs from staging`);
   const result = validateCalibrationPromotionSiteLedgerAdapter({ adapter, candidate, expectedSourceLocks: packet.sourceLocks });
   moves += result.moves;

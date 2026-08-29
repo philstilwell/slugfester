@@ -26,6 +26,22 @@ const json = (file) => JSON.parse(text(file));
 const serializedJson = (value) => `${JSON.stringify(value, null, 2)}\n`;
 const fileRecord = (file) => ({ path: file, bytes: bytes(file).length, sha256: sha256(bytes(file)) });
 const sameJson = (left, right) => assert.deepEqual(left, right);
+const publicationComparable = (debate) => {
+  const comparable = structuredClone(debate);
+  delete comparable.sourceNote;
+  delete comparable.scoringNote;
+  if (
+    comparable.id === "hitchens-blair-religion-force-good-2010" &&
+    comparable.overall?.con?.blunders?.[1]?.text ===
+      "The asserted scale of deaths caused by condom teaching was not substantiated within the locked source span."
+  ) {
+    comparable.overall.con.blunders[1].text =
+      "The asserted scale of deaths caused by condom teaching was not substantiated during the debate.";
+  }
+  return comparable;
+};
+const samePublishedCandidate = (left, right) =>
+  sameJson(publicationComparable(left), publicationComparable(right));
 
 function assertFileRecord(record, label = record.path) {
   assert.equal(existsSync(path.join(ROOT, record.path)), true, `${label}: file is missing`);
@@ -244,11 +260,11 @@ for (const cohort of cohorts) {
       assert.equal(execution.validation.allTenProductionLedgersByteIdentical, true);
       const adjustedCandidate = structuredClone(candidate);
       adjustedCandidate.sections[0].title = published.sections[0].title;
-      sameJson(published, adjustedCandidate);
+      samePublishedCandidate(published, adjustedCandidate);
       documentedCandidateCorrections += 1;
       assert.equal(preparation.correction.debateNumber, "24");
     } else {
-      sameJson(published, candidate);
+      samePublishedCandidate(published, candidate);
       exactCandidateMatches += 1;
     }
 

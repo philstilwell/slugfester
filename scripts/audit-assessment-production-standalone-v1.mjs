@@ -58,6 +58,12 @@ const paths = {
 const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
+const publicationComparable = (debate) => {
+  const comparable = structuredClone(debate);
+  delete comparable.sourceNote;
+  delete comparable.scoringNote;
+  return comparable;
+};
 const writeNewJson = (relative, value) => {
   assert.equal(existsSync(absolute(relative)), false, `${relative}: refusing to overwrite`);
   mkdirSync(path.dirname(absolute(relative)), { recursive: true });
@@ -386,7 +392,11 @@ function audit({ repositoryOnly = false } = {}) {
   }
   const candidateAudit = validateStandaloneCandidate(publication.candidate, scores);
   const production = debates.find((debate) => debate.number === "196");
-  assert.deepEqual(production, publication.candidate, "production debate differs from frozen publication candidate");
+  assert.deepEqual(
+    publicationComparable(production),
+    publicationComparable(publication.candidate),
+    "production debate differs from frozen publication candidate outside reader-facing note cleanup"
+  );
   const adapter = json(paths.productionLedger);
   validateStandaloneSiteLedgerAdapter({
     adapter,

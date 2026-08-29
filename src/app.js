@@ -2625,14 +2625,12 @@ function renderOverallSide(side, overall, tone, debateId) {
 function renderLogicalExtension(debate) {
   if (!debate.logicalExtension) return "";
 
-  const model = assessmentModelFor(debate);
-
   return `
-    <section class="logical-extension" aria-labelledby="ai-extension-heading">
+    <section class="logical-extension" aria-labelledby="ai-contribution-heading">
       <div class="section-heading logical-extension-heading">
         <div>
           <p class="eyebrow">AI contribution</p>
-          <h2 id="ai-extension-heading">AI Extension</h2>
+          <h2 id="ai-contribution-heading">AI Contribution</h2>
         </div>
         <p class="section-summary">An AI-generated steelman of where each case could go next.</p>
       </div>
@@ -2646,7 +2644,7 @@ function renderLogicalExtension(debate) {
         </summary>
         <div class="ai-extension-accordion-content">
           <p class="logical-extension-intro">
-            This section is an AI-generated contribution from ${escapeHtml(model)} for Slugfester—not a transcript summary, a quotation, or a claim that either speaker made these arguments in this form. The AI independently extends and strengthens both positions against the clearest objections raised in the exchange.
+            This section is an AI-generated contribution for Slugfester—not a transcript summary, a quotation, or a claim that any speaker made these arguments in this form. The AI independently extends and strengthens both positions against the clearest objections raised in the exchange. It does not affect the debate scores.
           </p>
           <div class="logical-extension-grid">
             ${renderLogicalExtensionSide(debate.sides.pro, debate.logicalExtension.pro, "teal")}

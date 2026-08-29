@@ -114,6 +114,8 @@ const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const debateNumberPattern = /^\d{2,}$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
+const internalDebateMetadataPattern =
+  /(?:SHA-?256|\.assessment-cache|locally cached|timestamped events|below-high-confidence|audio checks?|adjudicated-consensus|disputed-field adjudication|quote-eligible|locked source spans?|repository code|isolated judgments?|source-exact|manifest\.json|transcript\.txt|events\.json)/i;
 const legacyAssessmentModel = "GPT 5.5 Extra High";
 const currentAssessmentModel = "5.6 Terra Extra High";
 const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC]);
@@ -197,6 +199,28 @@ function requireArray(object, key, path, options = {}) {
   }
 
   return value;
+}
+
+function validateNoInternalDebateMetadata(value, path) {
+  if (typeof value === "string") {
+    if (internalDebateMetadataPattern.test(value)) {
+      addError(path, "must use reader-facing language without internal workflow data");
+    }
+    return;
+  }
+
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => {
+      validateNoInternalDebateMetadata(item, [...path, String(index)]);
+    });
+    return;
+  }
+
+  if (isPlainObject(value)) {
+    Object.entries(value).forEach(([key, item]) => {
+      validateNoInternalDebateMetadata(item, [...path, key]);
+    });
+  }
 }
 
 export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
@@ -2391,6 +2415,8 @@ function validateDebate(debate, index) {
     return;
   }
 
+  validateNoInternalDebateMetadata(debate, path);
+
   requireString(debate, "id", path, {
     pattern: slugPattern,
     patternMessage: "must be a lowercase URL slug"
@@ -2478,7 +2504,9 @@ function validateDebate(debate, index) {
     });
   });
 
-  if (debate.logicalExtension !== undefined) {
+  if (debate.logicalExtension === undefined) {
+    addError([...path, "logicalExtension"], "must provide an AI Contribution for both sides");
+  } else {
     validateLogicalExtension(debate.logicalExtension, [...path, "logicalExtension"]);
   }
 
