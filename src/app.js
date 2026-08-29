@@ -1980,7 +1980,7 @@ function renderBackend() {
   setSeo(backendSeo());
 
   app.innerHTML = renderShell(`
-    <main class="assessment-page">
+    <main class="assessment-page backend-page">
       <section class="assessment-hero">
         <div>
           <p class="eyebrow">Backend</p>
