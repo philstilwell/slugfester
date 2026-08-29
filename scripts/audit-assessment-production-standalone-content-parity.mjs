@@ -178,7 +178,7 @@ function referenceRanges(referenceDebates) {
   );
 }
 
-function validateHardContract(debate) {
+function validateHardContract(debate, ranges) {
   const labels = [
     "Strongest feature:",
     "Principal limitation:",
@@ -186,6 +186,16 @@ function validateHardContract(debate) {
     "Locked score:"
   ];
   const moves = publishedMoves(debate);
+  const argumentWordCounts = moves.map((move) => wordCount(move.words));
+  const argumentWordsMean = roundedMean(argumentWordCounts);
+  const minimumMean = Number(
+    Math.max(20, ranges.argumentWordsMean.median - 1).toFixed(1)
+  );
+  const shortCardThresholdWords = 20;
+  const shortCardCount = argumentWordCounts.filter(
+    (count) => count < shortCardThresholdWords
+  ).length;
+  const shortCardShare = Number((shortCardCount / moves.length).toFixed(3));
   assert.ok(wordCount(debate.summary) >= 8 && wordCount(debate.summary) <= 35);
   assert.ok(debate.sections.length >= 4 && debate.sections.length <= 7);
   for (const move of moves) {
@@ -207,6 +217,16 @@ function validateHardContract(debate) {
     assert.equal((move.critique.match(/[.!?](?=\s|$)/g) ?? []).length, 4);
     assert.equal(/[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(move.critique), false);
   }
+  assert.ok(
+    argumentWordsMean >= minimumMean,
+    `argument-card descriptions average ${argumentWordsMean} words; ` +
+      `the independent benchmark requires at least ${minimumMean}`
+  );
+  assert.ok(
+    shortCardShare <= 0.25,
+    `${shortCardCount} of ${moves.length} argument-card descriptions are under ` +
+      `${shortCardThresholdWords} words; at most one quarter may remain that short`
+  );
   for (const side of ["pro", "con"]) {
     assert.ok(wordCount(debate.quotes[side].text) >= 3);
     assert.ok(wordCount(debate.quotes[side].text) <= 18);
@@ -239,6 +259,17 @@ function validateHardContract(debate) {
     status: "passed",
     summaryAndSectionLengths: true,
     argumentAndCritiqueLengths: true,
+    argumentDescriptionDepth: {
+      targetWords: [22, 28],
+      actualMean: argumentWordsMean,
+      independentReferenceMeanMedian: ranges.argumentWordsMean.median,
+      minimumMean,
+      shortCardThresholdWords,
+      shortCardCount,
+      shortCardShare,
+      maximumShortCardShare: 0.25,
+      status: "passed"
+    },
     critiqueStructureAndCharacters: true,
     quotationLengths: true,
     overallCommentaryDepth: true,
@@ -280,7 +311,7 @@ for (const record of selectedRecords) {
     }
     return [];
   });
-  const hardContract = validateHardContract(debate);
+  const hardContract = validateHardContract(debate, ranges);
   const template = {
     schemaVersion: "1.0-standalone-content-parity-audit",
     status: "passed-content-parity-audit",

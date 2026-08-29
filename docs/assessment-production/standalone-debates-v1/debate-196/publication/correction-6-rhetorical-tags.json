@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "appliedAt": "2026-08-29T14:06:00Z",
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "authorization": "User-requested second fallacy and cognitive-bias rigor audit on 2026-08-29.",
+  "reason": "Two fresh blind move-complete reviews, anonymous candidate adjudication, and a conservative final catalog check retained the two earlier tags and identified two additional scope defects already explicit in the frozen critiques.",
+  "supersedesForLivingAudit": "docs/assessment-production/standalone-debates-v1/debate-196/publication/correction-4-rhetorical-tags.json",
+  "immutableFields": [
+    "identity",
+    "motion",
+    "source spans",
+    "move selection and order",
+    "judgments",
+    "adjudication",
+    "scores",
+    "argument descriptions",
+    "critique prose"
+  ],
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-196/publication/preserved-output-before-rhetorical-tag-review-2.json",
+    "sha256": "6da054b7fd9a63f9ef9bedb29502c352e54e50dbdafe48c56c129d045c8118c3",
+    "bytes": 40013,
+    "note": "The exact score-neutral card-depth publication bytes immediately before this tag correction are preserved at the named path."
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/publication/output.json",
+      "sha256": "12820cf5a0eeb8e7f0b60d39b7991256a575a8088263fbcd3a7e282ab761e064",
+      "bytes": 40643
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/publication/rhetorical-tag-audit.json",
+      "sha256": "2e471ff68a5dcce25f511af050aac0b820eb461eb49e2941684b592ae9095684",
+      "bytes": 14485
+    },
+    "reviewExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/publication/rhetorical-tag-review-2/execution.json",
+      "sha256": "9415990053892074ed2ec75c761516a8285f25f970aa0f8f7c86347c19dfe4f7",
+      "bytes": 3230
+    }
+  },
+  "acceptedTagChanges": [
+    {
+      "moveId": "m05",
+      "label": "Scope neglect",
+      "type": "bias"
+    },
+    {
+      "moveId": "m19",
+      "label": "Scope neglect",
+      "type": "bias"
+    }
+  ],
+  "writableShards": [
+    {
+      "shard": 1,
+      "fields": [
+        "candidate.sections.tags.m05",
+        "candidate.sections.tags.m19"
+      ]
+    },
+    {
+      "shard": 2,
+      "fields": [
+        "candidate.overall.pro.blunders[0].links"
+      ]
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 2,
+    "acceptedTagCount": 4,
+    "overallLinkChanges": 1,
+    "maximumWritableFieldsPerShard": 2
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-targeting-failure",
+  "status": "preserved-before-correction",
+  "detectedAt": "2026-08-29T14:04:00Z",
+  "baselineCommit": "29b4be8e3ec1fc9f346f1e1953803c2457f9559b",
+  "rejectedProduction": {
+    "path": "src/data/debates.js",
+    "sha256": "5aa0ae7fb629d1513a509afc72ddf9924268b1024d7cf7940f9ee91860890750",
+    "bytes": 7835692,
+    "reconstructionPatch": {
+      "path": "docs/assessment-production/standalone-debates-v1/failures/2026-08-29-rhetorical-tag-targeting/rejected-production.patch",
+      "sha256": "73354404e47a1c334a5b71a64f69b6949468a9fc60aa87c65021ad1521817126",
+      "bytes": 81060
+    }
+  },
+  "validatorOutput": {
+    "expectedDebate196NewTagMoveIds": ["m05", "m19"],
+    "observedDebate196NewTagMoveIds": ["m05", "m09"],
+    "expectedDebate197NewTagMoveIds": ["brain-permits-consciousness", "cosmic-directionality"],
+    "observedDebate197NewTagMoveIds": ["phases-same-entity", "cosmic-directionality"]
+  },
+  "cause": "A broad patch matched the first later empty tag array instead of anchoring each change to its ledger move ID.",
+  "recovery": "Apply the smallest ledger-ID-anchored correction and then compare every production tag with the frozen publication candidate and move-complete audit."
+}

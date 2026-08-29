@@ -4,7 +4,7 @@
   "status": "passed",
   "debateNumber": "197",
   "debateId": "mcgilchrist-seth-consciousness-god-2026",
-  "completedAt": "2026-08-29T05:46:05Z",
+  "completedAt": "2026-08-29T14:28:24Z",
   "source": {
     "videoId": "hdhTpkGggK0",
     "method": "complete public YouTube auto-caption track normalized locally",
@@ -54,16 +54,26 @@
     "overallStrengthsPerSide": 3,
     "overallBlundersPerSide": 2,
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "e3ca3813994df9d9e9ba2637d1ac0aa12b4aa83572b96be7664645899616d345",
+    "productionLedgerSha256": "4884f754317995135fcce24558cb1759a602d62c946d49b9bf2a2e04f7740d53",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-197/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
+    "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-197/publication/card-depth-repair-1/execution.json",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 23,
+      "mean": 25.5,
+      "maximum": 28,
+      "cardsBelow20": 0
+    },
     "critiqueCharacterRange": [895, 979],
     "critiqueBoilerplateMeanCoveredRatio": 0,
     "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-audit.json",
     "rhetoricalTagCorrection": "applied-once-and-score-neutral",
     "movesReviewedForFallaciesAndBiases": 30,
-    "acceptedRhetoricalTags": 5,
-    "rejectedRhetoricalTagCandidates": 6
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 24,
+    "acceptedRhetoricalTags": 7,
+    "rejectedRhetoricalTagCandidates": 17
   },
   "rendering": {
     "status": "passed-standalone-production-rendering",
@@ -78,7 +88,8 @@
     "profileNavigationTests": 2,
     "mobileCritiquePointerInterceptionFixed": true,
     "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-197/rendering/post-rhetorical-tag-audit.json",
-    "rhetoricalTagsVisuallyVerified": 5,
+    "postRhetoricalTagScreenshots": 3,
+    "rhetoricalTagsVisuallyVerified": 7,
     "desktopEvidenceSha256": "015b00cde1f0e9cf320aaba3c4947211e3eaa2a6335b61ef539820aadfba563a",
     "mobileEvidenceSha256": "8fa8ed99bbe737b602dc351b3821f922748ebf4ebf5fbcbca325618e79afbc33"
   },
@@ -127,7 +138,7 @@
       "name": "complete rhetorical-tag review",
       "command": "npm run assessment:standalone:rhetorical-tags:check",
       "status": "passed",
-      "result": "30 moves reviewed; 5 tags accepted; 6 plausible candidates rejected"
+      "result": "30 moves reviewed in 2 blind passes; 24 candidates adjudicated; 7 tags accepted; 17 rejected"
     },
     {
       "name": "complete repository suite",

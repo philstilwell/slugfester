@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "197",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "method": "fresh ephemeral codex exec context with API keys removed",
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "scoresUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/reference-definitions.json",
+    "sha256": "a2d77b0cf2f5ed0e657b32ff1d79f73ef2d61ea55a9081a6b81021e88fc460c0",
+    "bytes": 3827
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/packet.json",
+    "sha256": "78baf8547d06bd2562a215dd38236d27dcf2d509f7895961e518b1f29bd82dfc",
+    "bytes": 65434
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/pass-a-output.json",
+        "sha256": "061b508040c67f29d0b9416e6fbff278b37b8717a133789e0a1f3c0728a209a9",
+        "bytes": 8379
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/pass-b-output.json",
+        "sha256": "301fb6fb76b56f5ec0b468593edf48f3649296564e124b862598a54ad4265bea",
+        "bytes": 12650
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-candidate-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/adjudication-packet.json",
+        "sha256": "824321a6bb7243c7396eca4c221715946e5c6467224b59e718eb5e470d1289cb",
+        "bytes": 57925
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/adjudication-output.json",
+        "sha256": "3a78db0472e0f5a6880021f83182401646e276ee66bde5298373a88960897c5e",
+        "bytes": 9709
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "finalDefinitionCheck": {
+    "catalog": "src/data/references.js",
+    "reviewedEveryCandidate": true,
+    "requireCritiqueLevelMaterialWeakness": true,
+    "underargumentAloneRejected": true,
+    "duplicateDefectLabelsRejected": true,
+    "overruledOverbroadAdjudicatorAcceptances": 2
+  },
+  "audit": {
+    "movesReviewed": 30,
+    "blindReviews": 2,
+    "adjudications": 24,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

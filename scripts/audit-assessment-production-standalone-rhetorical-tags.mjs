@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -22,6 +23,14 @@ const registry = JSON.parse(
 
 const json = (relativePath) =>
   JSON.parse(readFileSync(path.join(ROOT, relativePath), "utf8"));
+const bytes = (relativePath) => readFileSync(path.join(ROOT, relativePath));
+const sha256 = (value) =>
+  createHash("sha256").update(value).digest("hex");
+const verifyFileRecord = (record) => {
+  const value = bytes(record.path);
+  assert.equal(record.sha256, sha256(value), `${record.path}: SHA-256 changed`);
+  assert.equal(record.bytes, value.length, `${record.path}: byte count changed`);
+};
 
 const wordCount = (value) =>
   String(value ?? "")
@@ -95,12 +104,39 @@ for (const record of registry.debates) {
   );
   assert.ok(production, `Debate ${record.debateNumber}: production record missing`);
   const audit = json(record.rhetoricalTagReview.auditPath);
+  const execution = json(record.rhetoricalTagReview.executionPath);
   const publicationMoves = moves(publication);
   const productionMoves = moves(production);
 
   assert.equal(audit.status, "passed-rhetorical-tag-review");
   assert.equal(audit.debateNumber, record.debateNumber);
   assert.equal(audit.debateId, record.debateId);
+  assert.equal(
+    execution.status,
+    "passed-two-blind-reviews-adjudication-and-final-definition-check"
+  );
+  assert.equal(execution.debateNumber, record.debateNumber);
+  assert.equal(execution.model.label, "5.6 Sol");
+  assert.equal(execution.model.slug, "gpt-5.6-sol");
+  assert.equal(execution.model.reasoningEffort, "low");
+  assert.equal(execution.audit.blindReviews, 2);
+  assert.equal(execution.audit.retries, 0);
+  assert.equal(execution.isolation.existingTagsUnavailable, true);
+  assert.equal(execution.isolation.reviewerOutputsUnavailableToOtherReviewer, true);
+  assert.equal(execution.isolation.scoresUnavailable, true);
+  verifyFileRecord(execution.catalogSnapshot);
+  verifyFileRecord(execution.sourcePacket);
+  execution.contexts.forEach((context) => {
+    if (context.input) verifyFileRecord(context.input);
+    verifyFileRecord(context.output);
+    assert.equal(context.attempts, 1);
+    assert.equal(context.retries, 0);
+  });
+  assert.equal(audit.independentReview.executionPath, record.rhetoricalTagReview.executionPath);
+  assert.equal(
+    audit.independentReview.executionSha256,
+    sha256(bytes(record.rhetoricalTagReview.executionPath))
+  );
   assert.deepEqual(audit.baselineComparison, expectedBaseline);
   assert.deepEqual(
     audit.reviewedMoveIds,
@@ -108,6 +144,43 @@ for (const record of registry.debates) {
     `Debate ${record.debateNumber}: rhetorical-tag review is not move-complete`
   );
   assert.equal(new Set(audit.reviewedMoveIds).size, publicationMoves.length);
+  const blindPacket = json(execution.sourcePacket.path);
+  assert.deepEqual(
+    blindPacket.moves.map((move) => move.moveId),
+    audit.reviewedMoveIds,
+    `Debate ${record.debateNumber}: blind-review packet is not move-complete`
+  );
+  blindPacket.moves.forEach((move) => {
+    assert.equal("tags" in move, false);
+    assert.equal("references" in move, false);
+  });
+  const blindReviews = execution.contexts
+    .filter((context) => context.role.startsWith("blind-review-"))
+    .map((context) => json(context.output.path));
+  assert.equal(blindReviews.length, 2);
+  blindReviews.forEach((review) =>
+    assert.deepEqual(review.reviewedMoveIds, audit.reviewedMoveIds)
+  );
+  const candidateUnion = new Set(
+    blindReviews.flatMap((review) =>
+      review.candidateReviews.map(
+        (candidate) =>
+          `${candidate.moveId}\u0000${candidate.type}\u0000${candidate.label}`
+      )
+    )
+  );
+  const auditedCandidates = new Set(
+    audit.candidateReviews.map(
+      (candidate) =>
+        `${candidate.moveId}\u0000${candidate.type}\u0000${candidate.label}`
+    )
+  );
+  assert.equal(auditedCandidates.size, audit.candidateReviews.length);
+  assert.deepEqual(
+    [...auditedCandidates].sort(),
+    [...candidateUnion].sort(),
+    `Debate ${record.debateNumber}: final definition check omitted a blind-review candidate`
+  );
 
   const publishedTags = publicationMoves.flatMap((move) =>
     move.tags.map((tag) => publicTag(move, tag))

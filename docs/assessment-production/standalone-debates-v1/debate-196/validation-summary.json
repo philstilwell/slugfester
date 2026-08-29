@@ -4,7 +4,7 @@
   "status": "passed",
   "debateNumber": "196",
   "debateId": "huemer-rasmussen-god-existence-2026",
-  "completedAt": "2026-08-29T01:43:26Z",
+  "completedAt": "2026-08-29T14:28:24Z",
   "source": {
     "videoId": "0-8n2SGFSL8",
     "method": "complete public YouTube auto-caption track normalized locally",
@@ -49,16 +49,26 @@
     "publicMotionMatchesFrozenQuestion": true,
     "overallBlundersPerSide": 2,
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "68e9abfd755a50a1d29c2abecd46ea1df04c131fb0def73513e59d0ede19b27f",
+    "productionLedgerSha256": "b789581086b86fb81d1d6ae428713c2474a0463e4bbde8573a7c60cf7448345c",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-196/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
+    "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-196/publication/card-depth-repair-1/execution.json",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 25,
+      "mean": 25.6,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
     "critiqueCharacterRange": [896, 944],
     "critiqueBoilerplateMeanCoveredRatio": 0.012,
     "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-196/publication/rhetorical-tag-audit.json",
     "rhetoricalTagCorrection": "applied-once-and-score-neutral",
     "movesReviewedForFallaciesAndBiases": 20,
-    "acceptedRhetoricalTags": 2,
-    "rejectedRhetoricalTagCandidates": 5
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 21,
+    "acceptedRhetoricalTags": 4,
+    "rejectedRhetoricalTagCandidates": 17
   },
   "rendering": {
     "status": "passed-standalone-production-rendering",
@@ -77,31 +87,32 @@
     "postPublicationScreenshots": 4,
     "visibleCorrectionsVerified": 3,
     "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-196/rendering/post-rhetorical-tag-audit.json",
-    "rhetoricalTagsVisuallyVerified": 2
+    "postRhetoricalTagScreenshots": 3,
+    "rhetoricalTagsVisuallyVerified": 4
   },
   "checks": [
     {
       "name": "production debate validator",
       "command": "node scripts/validate-debates.mjs",
       "status": "passed",
-      "result": "196 debates"
+      "result": "197 debates"
     },
     {
       "name": "corpus transcript replay",
       "command": "node scripts/validate-corpus-transcripts.mjs",
       "status": "passed",
-      "result": "196 of 196 available; 196 local hashes checked"
+      "result": "197 of 197 available; 197 local hashes checked"
     },
     {
       "name": "SEO generation and replay",
       "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
       "status": "passed",
-      "result": "381 files"
+      "result": "384 files"
     },
     {
       "name": "complete repository suite",
       "command": "npm run check",
-      "status": "passed-after-summary-freeze"
+      "status": "passed"
     },
     {
       "name": "historical campaign closure full and repository-only replay",
@@ -113,7 +124,7 @@
       "name": "calibration promotion full and repository-only replay",
       "command": "npm run assessment:calibration-promotion:check and npm run assessment:calibration-promotion:repository:check",
       "status": "passed",
-      "result": "179 historical ledgers plus 1 authenticated standalone ledger"
+      "result": "179 historical ledgers plus 2 authenticated standalone ledgers"
     },
     {
       "name": "standalone full and repository-only replay",
@@ -124,7 +135,7 @@
       "name": "complete rhetorical-tag review",
       "command": "npm run assessment:standalone:rhetorical-tags:check",
       "status": "passed",
-      "result": "20 moves reviewed; 2 tags accepted; 5 plausible candidates rejected"
+      "result": "20 moves reviewed in 2 blind passes; 21 candidates adjudicated; 4 tags accepted; 17 rejected"
     },
     {
       "name": "patch whitespace check",

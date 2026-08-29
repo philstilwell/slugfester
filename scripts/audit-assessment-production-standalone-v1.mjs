@@ -75,10 +75,14 @@ const paths = {
   publicationBeforeContentParityRepair:
     selectedRegistryRecord.contentParity?.preservedOutputPath,
   publicationContentParityAudit: selectedRegistryRecord.contentParity?.auditPath,
+  publicationContentParityExecution:
+    selectedRegistryRecord.contentParity?.executionPath,
   publicationRhetoricalTagCorrection:
     selectedRegistryRecord.rhetoricalTagReview?.correctionPath,
   publicationRhetoricalTagAudit:
     selectedRegistryRecord.rhetoricalTagReview?.auditPath,
+  publicationRhetoricalTagExecution:
+    selectedRegistryRecord.rhetoricalTagReview?.executionPath,
   postRhetoricalTagRendering:
     selectedRegistryRecord.rhetoricalTagReview?.renderingAuditPath,
   rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
@@ -778,8 +782,10 @@ function buildProductionAdapter() {
     ["publicationContentParityCorrection", paths.publicationContentParityCorrection],
     ["publicationBeforeContentParityRepair", paths.publicationBeforeContentParityRepair],
     ["publicationContentParityAudit", paths.publicationContentParityAudit],
+    ["publicationContentParityExecution", paths.publicationContentParityExecution],
     ["publicationRhetoricalTagCorrection", paths.publicationRhetoricalTagCorrection],
     ["publicationRhetoricalTagAudit", paths.publicationRhetoricalTagAudit],
+    ["publicationRhetoricalTagExecution", paths.publicationRhetoricalTagExecution],
     ["postRhetoricalTagRendering", paths.postRhetoricalTagRendering]
   ]) {
     if (value && existsSync(absolute(value))) evidencePaths[key] = value;
@@ -906,6 +912,27 @@ function audit({ repositoryOnly = false } = {}) {
       contentParityCorrection.evidence.contentParityAudit.sha256,
       sha256(bytes(paths.publicationContentParityAudit))
     );
+    if (paths.publicationContentParityExecution) {
+      const execution = json(paths.publicationContentParityExecution);
+      assert.equal(execution.status, "passed-isolated-card-depth-repair");
+      assert.equal(execution.debateNumber, DEBATE_NUMBER);
+      assert.equal(execution.model.label, "5.6 Sol");
+      assert.equal(execution.model.slug, "gpt-5.6-sol");
+      assert.equal(execution.model.reasoningEffort, "low");
+      assert.equal(execution.audit.judgmentChanges, 0);
+      assert.equal(execution.audit.scoreChanges, 0);
+      assert.equal(execution.audit.moveChanges, 0);
+      assert.equal(
+        Math.max(...execution.shards.map((shard) => shard.writableFieldCount)) <= 2,
+        true
+      );
+      for (const shard of execution.shards) {
+        assert.equal(shard.input.sha256, sha256(bytes(shard.input.path)));
+        assert.equal(shard.output.sha256, sha256(bytes(shard.output.path)));
+        assert.equal(shard.attempts, 1);
+        assert.equal(shard.retries, 0);
+      }
+    }
     assert.equal(contentParityAudit.status, "passed-content-parity-audit");
     assert.equal(contentParityAudit.debateNumber, DEBATE_NUMBER);
   }
@@ -913,20 +940,31 @@ function audit({ repositoryOnly = false } = {}) {
     const correction = json(paths.publicationRhetoricalTagCorrection);
     const tagAudit = json(paths.publicationRhetoricalTagAudit);
     const prior = correction.preservedPriorOutput;
-    const priorBytes = gitBytes(prior.gitCommit, prior.path);
+    const priorBytes = prior.gitCommit
+      ? gitBytes(prior.gitCommit, prior.path)
+      : bytes(prior.path);
     assert.equal(correction.status, "applied-once-and-frozen");
     assert.equal(correction.audit.judgmentChanges, 0);
     assert.equal(correction.audit.scoreChanges, 0);
     assert.equal(correction.audit.moveChanges, 0);
     assert.equal(correction.audit.tagChanges > 0, true);
     assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
-    assert.equal(
-      prior.gitCommit,
-      selectedRegistryRecord.rhetoricalTagReview.priorPublicationGitCommit
-    );
+    if (prior.gitCommit) {
+      assert.equal(
+        prior.gitCommit,
+        selectedRegistryRecord.rhetoricalTagReview.priorPublicationGitCommit
+      );
+    } else {
+      assert.equal(
+        prior.path,
+        selectedRegistryRecord.rhetoricalTagReview.priorPublicationPath
+      );
+    }
     assert.equal(prior.sha256, sha256(priorBytes));
     assert.equal(prior.bytes, priorBytes.length);
-    assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    if (prior.gitCommit) {
+      assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    }
     assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
     assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
     assert.equal(
@@ -939,7 +977,22 @@ function audit({ repositoryOnly = false } = {}) {
     );
     assert.equal(tagAudit.status, "passed-rhetorical-tag-review");
     assert.equal(tagAudit.debateNumber, DEBATE_NUMBER);
-    assert.equal(tagAudit.audit.acceptedTagCount, correction.audit.tagChanges);
+    const acceptedTagCount =
+      correction.audit.acceptedTagCount ?? correction.audit.tagChanges;
+    assert.equal(tagAudit.audit.acceptedTagCount, acceptedTagCount);
+    if (paths.publicationRhetoricalTagExecution) {
+      const execution = json(paths.publicationRhetoricalTagExecution);
+      assert.equal(
+        execution.status,
+        "passed-two-blind-reviews-adjudication-and-final-definition-check"
+      );
+      assert.equal(execution.debateNumber, DEBATE_NUMBER);
+      assert.equal(execution.model.label, "5.6 Sol");
+      assert.equal(execution.model.slug, "gpt-5.6-sol");
+      assert.equal(execution.model.reasoningEffort, "low");
+      assert.equal(execution.audit.blindReviews, 2);
+      assert.equal(execution.audit.retries, 0);
+    }
     const renderingAudit = json(paths.postRhetoricalTagRendering);
     assert.equal(
       renderingAudit.status,
@@ -948,7 +1001,7 @@ function audit({ repositoryOnly = false } = {}) {
     assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
     assert.equal(
       renderingAudit.audit.acceptedTagsRendered,
-      correction.audit.tagChanges
+      acceptedTagCount
     );
     assert.equal(renderingAudit.audit.runtimeFailures, 0);
     assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);

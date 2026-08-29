@@ -76425,7 +76425,7 @@ export const debates = [
               "ledgerMoveId": "m01",
               "time": "00:00:49",
               "role": "Cumulative case",
-              "words": "Theism raises the probability of consciousness, life-permitting order, moral awareness, and other large-scale features together.",
+              "words": "Theism provides a deep, unifying explanation by making consciousness, life-permitting order, moral awareness, and other surprising large-scale features jointly more probable than they otherwise would be.",
               "score": 78,
               "critique": "Strongest feature: The move states a clear comparative strategy, asking which worldview jointly makes several striking features of reality more likely instead of treating each datum in isolation. Principal limitation: It announces that theism raises these probabilities without yet supplying sufficiently sharp likelihoods, independent evidence, or a disciplined comparison class for the alternatives. Live burden: Rasmussen must show that the proposed mental foundation predicts the whole package better than finite creators, multiverses, brute foundations, or unknown explanations, while avoiding flexible after-the-fact accommodation. Locked score: The strong motion relevance, unifying ambition, and accessible framing earn substantial credit, but the evidential warrant remains less developed than the confident comparative conclusion, so the frozen score is 78 Stronger comparative likelihood evidence would be required for the next band.",
               "tags": []
@@ -76434,7 +76434,7 @@ export const debates = [
               "ledgerMoveId": "m06",
               "time": "00:17:25",
               "role": "Alternative hypotheses",
-              "words": "Finite creators, multiverses, and unknown explanations remain reasonable competitors to the proposed infinite perfect creator.",
+              "words": "Finite creators and a multiverse remain reasonable explanations of fine-tuning and consciousness, both likelier than an infinite creator, while an undiscovered explanation may be likelier still.",
               "score": 76,
               "critique": "Strongest feature: Huemer immediately broadens the comparison class, correctly observing that evidence for design would not by itself select an infinite and perfect creator over finite or impersonal alternatives. Principal limitation: The move largely asserts relative plausibility and appeals to an unknown explanation without presenting positive probability estimates or a developed mechanism for that unknown rival. Live burden: He must do more than multiply possibilities; he needs to show that at least one competitor explains the cited data as well as theism or exposes a decisive weakness in Rasmussen's comparison. Locked score: The objection is highly relevant, charitable, and strategically important, yet its evidential development is modest at this stage, supporting the frozen score of 76 A developed competitor with independently motivated probabilities would be required for stronger credit.",
               "tags": []
@@ -76445,7 +76445,7 @@ export const debates = [
               "ledgerMoveId": "m02",
               "time": "00:07:02",
               "role": "Mental foundation",
-              "words": "A mindless foundation predicts neither consciousness nor meaningful narrative, while a supreme mental foundation makes mentality and order likelier.",
+              "words": "A mindless foundation predicts neither consciousness nor meaningful narratives, whereas a supreme mental foundation makes mentality and order likelier, favoring theism as the better explanatory theory.",
               "score": 77,
               "critique": "Strongest feature: Rasmussen identifies a specific comparative advantage rather than merely naming unexplained data: a fundamentally mental source appears less surprised by minds than a wholly mindless foundation. Principal limitation: The claim moves too quickly from conceptual affinity to probabilistic support, and it does not establish how a supreme mind generates embodied consciousness, causal efficacy, or meaningful narratives. Live burden: He must justify the relevant prior probabilities and explain why mentality at the foundation predicts our particular mental world better than emergent consciousness within a naturalistic framework. Locked score: The move is clear, central, and responsive to the explanatory contest, but its bridge from likeness to likelihood remains underargued, which fits the frozen score of 77 Direct evidence connecting fundamental mentality to embodied consciousness remains necessary.",
               "tags": []
@@ -76454,7 +76454,7 @@ export const debates = [
               "ledgerMoveId": "m16",
               "time": "01:11:44",
               "role": "Prediction challenge",
-              "words": "Broad design predictions lack the precision needed to establish intelligent design over multiverse or unknown alternatives.",
+              "words": "Intelligent design cannot prevail over multiverse or unknown alternatives because its broad predictions lack the precise quantitative fit that made Newton’s gravitational explanation scientifically compelling.",
               "score": 86,
               "critique": "Strongest feature: Huemer pinpoints the central inference gap by distinguishing a hypothesis that merely raises a probability from one that raises it enough to warrant belief over live competitors. Principal limitation: His analogy with precise scientific prediction can set an overly demanding standard for broad metaphysical comparison, where exact numerical forecasts may be unavailable to every theory. Live burden: He must articulate a fair comparative threshold and show that theism's predictions are especially elastic, rather than simply less quantitative than mature physical theories. Locked score: This is a lucid, direct, and powerful attack on the motion-level burden, integrating the multiverse and unknown-alternative objections while preserving appropriate qualification, and those virtues justify the frozen score of 86 Its comparative threshold nevertheless remains insufficiently operationalized.",
               "tags": []
@@ -76476,7 +76476,7 @@ export const debates = [
               "ledgerMoveId": "m03",
               "time": "00:11:24",
               "role": "Dependence argument",
-              "words": "A total composed only of dependent things remains dependent and therefore requires a non-dependent basis beyond its members.",
+              "words": "Adding dependent things, even infinitely many, never yields an independent total, as dominoes still need a supporting table, so their collective existence requires a foundational reality.",
               "score": 81,
               "critique": "Strongest feature: The argument clearly separates the number of dependent members from their modal status, using accessible analogies to explain why adding dependents does not produce an independent total. Principal limitation: The inference assumes that dependence distributes from every member to the total and that every dependent total must have an external basis, neither of which is demonstrated conclusively. Live burden: Rasmussen must defend the relevant principle of sufficient reason without circularity and show that the resulting foundation is a mind, rather than an impersonal or plural ultimate reality. Locked score: The move is structured, intelligible, and directly advances a foundational conclusion, with better warrant than several neighboring claims, so its strengths support the frozen score of 81 The distribution principle and mental identification both remain materially contestable.",
               "tags": []
@@ -76485,7 +76485,7 @@ export const debates = [
               "ledgerMoveId": "m11",
               "time": "00:31:10",
               "role": "Explanation scope",
-              "words": "Expectations about contingent arrangements need not extend to underlying reality, and calling something necessary does not explain its existence.",
+              "words": "Explanations warranted for temporary, improbable arrangements like a blue ball do not automatically extend to underlying reality, while merely calling something necessary leaves its existence unexplained.",
               "score": 80,
               "critique": "Strongest feature: Huemer draws a useful distinction between explaining arrangements within reality and demanding a further explanation of the underlying reality itself, directly targeting the argument's scope. Principal limitation: The objection permits a brute stopping point but offers limited independent reason for locating that stopping point in a contingent whole rather than in a necessary foundation. Live burden: He must explain why the successful search for deeper causes loses force at the ultimate level and whether his alternative is genuinely less arbitrary than Rasmussen's terminus. Locked score: The move is philosophically focused, responsive, and clearly expressed, while remaining cautious about what necessity language accomplishes; its unresolved defense of brute ultimacy keeps the frozen score at 80 A nonarbitrary stopping rule for brute ultimacy remains insufficiently defended.",
               "tags": []
@@ -76497,7 +76497,7 @@ export const debates = [
               "ledgerMoveId": "m15",
               "time": "01:03:54",
               "role": "Brute foundation",
-              "words": "Fundamental reality may be eternal, impersonal, or plural, while the complete contingent world may simply lack further explanation.",
+              "words": "Fundamental reality may be eternal yet neither a single consciousness nor necessary, because contingent possible worlds cannot be explained by necessary truths without eliminating contingency.",
               "score": 75,
               "critique": "Strongest feature: Huemer supplies a concrete alternative stopping point, separating an eternal fundamental reality from the stronger claim that the foundation must be one conscious necessary being. Principal limitation: Saying the complete contingent world may have no explanation establishes possibility more readily than plausibility, leaving the arbitrariness concern largely intact. Live burden: He must show why a brute or plural foundation should receive comparable prior weight and how it handles the dependence intuition that motivated the search for a basis. Locked score: The move usefully blocks an invalid leap from foundation to theism and maintains a restrained critical burden, but its own positive account is intentionally thin and only partly answers the explanatory challenge, yielding the frozen score of 75 Its alternative remains deliberately possible rather than comparatively probable.",
               "tags": []
@@ -76519,7 +76519,7 @@ export const debates = [
               "ledgerMoveId": "m04",
               "time": "00:13:13",
               "role": "Limit uniformity",
-              "words": "Uniformly seeking explanations for arbitrary foundational limits favors a qualitatively supreme nature without finite parameters.",
+              "words": "Because arbitrary limits of power or awareness uniformly invite deeper explanation regardless of their shape or size, foundational reality without such limits has a qualitatively supreme nature.",
               "score": 73,
               "critique": "Strongest feature: Rasmussen offers an intuitive uniformity principle: if one finite parameter invites explanation, changing its size does not remove that invitation, so a non-arbitrary terminus should differ qualitatively. Principal limitation: The argument treats absence of finite limits as a coherent maximal property and assumes that leaving the scale explains more than choosing a point upon it. Live burden: He must define supreme power and awareness without illicit infinite quantities, show that maximality is possible, and explain why the maximal option itself is not arbitrary. Locked score: The move is central and imaginative, with helpful concrete illustrations, but the decisive transition from unexplained limits to a supreme foundation remains conceptually vulnerable, which supports the frozen score of 73 Coherence and uniqueness of qualitative supremacy remain independently unestablished.",
               "tags": []
@@ -76528,7 +76528,7 @@ export const debates = [
               "ledgerMoveId": "m07",
               "time": "00:18:37",
               "role": "Infinity objection",
-              "words": "Infinite non-extensive quantities are impossible because infinity is not a number exceeding every finite number.",
+              "words": "Infinite non-extensive quantities are impossible because infinity is not a number greater than every finite number, ruling out purported infinite knowledge, power, velocity, and distance.",
               "score": 76,
               "critique": "Strongest feature: Huemer carefully distinguishes an unending number line from a largest number called infinity and illustrates why several completed infinite magnitudes generate apparent impossibilities. Principal limitation: The numerical critique may not reach qualitative accounts of omnipotence or omniscience defined modally, such as ability to do every possible act, rather than as possessing an infinite scalar amount. Live burden: He must demonstrate that Rasmussen's supreme properties require the disputed numerical interpretation and cannot be reconstructed coherently without a maximum magnitude. Locked score: The objection is detailed, relevant, and understandable, but its reach depends on a contested translation from theological attributes into quantities, leaving a significant escape route and fixing the score at 76 A modal reconstruction of divine attributes therefore remains a serious live alternative.",
               "tags": []
@@ -76539,7 +76539,7 @@ export const debates = [
               "ledgerMoveId": "m13",
               "time": "00:35:42",
               "role": "Qualitative maximum",
-              "words": "Maximality differs qualitatively from every finite point, so leaving the scale supplies a principled stopping contrast.",
+              "words": "Maximality is qualitatively different from any quantitative point, so getting off the scale supplies a relevant stopping contrast and grounds explanation in a supreme foundation.",
               "score": 77,
               "critique": "Strongest feature: Rasmussen directly answers the arbitrariness challenge by distinguishing a merely larger finite value from a qualitatively different condition that is no longer positioned at an unexplained point on the scale. Principal limitation: Calling the terminus off-scale does not itself prove that such a property is coherent, instantiated, explanatory, or uniquely connected to a personal God. Live burden: He must specify the modal structure of this qualitative supremacy and show why it avoids Huemer's no-maximum argument rather than redescribing unlimitedness. Locked score: The reply is concise, responsive, and charitable toward the objection, and it preserves a meaningful conceptual contrast, but several metaphysical steps remain asserted rather than established, supporting the frozen score of 77 The off-scale terminus still lacks independent modal and explanatory support.",
               "tags": []
@@ -76548,7 +76548,7 @@ export const debates = [
               "ledgerMoveId": "m08",
               "time": "00:23:18",
               "role": "Supertask challenge",
-              "words": "Unlimited power would permit impossible supertasks such as Thomson's lamp, counting against an unlimited-power being.",
+              "words": "An unlimited-power being could complete Thomson’s lamp without exhausting energy or breaking the switch, realizing an impossible infinite supertask and thereby counting against such a being.",
               "score": 72,
               "critique": "Strongest feature: Huemer converts an abstract concern about infinite power into a vivid operational test, asking whether an unlimited agent could complete a paradoxical sequence no finite agent can finish. Principal limitation: The inference assumes omnipotence includes performing logically or metaphysically impossible tasks, whereas traditional formulations usually restrict power to coherent possibilities. Live burden: He must show that the supertask is genuinely possible for any unlimited agent or that inability to perform it conflicts with Rasmussen's actual concept of supremacy. Locked score: The example is memorable and presses for precision, but its force depends heavily on a disputed definition and may confuse failure of a scenario with limitation in an agent, warranting the frozen score of 72 The metaphysical possibility of the proposed supertask remains insufficiently demonstrated.",
               "tags": [
@@ -76567,7 +76567,7 @@ export const debates = [
               "ledgerMoveId": "m12",
               "time": "00:35:08",
               "role": "Maximality arbitrariness",
-              "words": "Selecting maximality does not remove arbitrariness because the maximal option still needs a reason over finite alternatives.",
+              "words": "Choosing the maximal endpoint does not escape arbitrariness, because it remains one option among many finite alternatives and still requires a reason for being preferred.",
               "score": 79,
               "critique": "Strongest feature: Huemer exposes a potential symmetry in the explanation demand: if every finite setting needs a reason, choosing the supposed maximal setting also appears to require a reason for that selection. Principal limitation: The objection understates Rasmussen's proposed qualitative contrast, since a boundaryless or nonparametric property might avoid the very feature that makes finite points arbitrary. Live burden: He must show that maximality is one option among commensurable values rather than a structurally privileged terminus, and that requesting its explanation is not question-begging. Locked score: The move is compact, directly responsive, and locates the critical issue with precision; although it does not settle whether qualitative supremacy is privileged, it materially shifts the explanatory burden and earns 79 The symmetry objection remains forceful but not conclusively established.",
               "tags": []
@@ -76579,7 +76579,7 @@ export const debates = [
               "ledgerMoveId": "m14",
               "time": "00:59:36",
               "role": "No power maximum",
-              "words": "For any proposed stopping point, a more powerful being could perform one additional act, so no maximum exists.",
+              "words": "Because possible power continues without limit, any being stopped after finitely many lamp flips could be surpassed by another able to flip it once more.",
               "score": 81,
               "critique": "Strongest feature: Huemer supplies a simple generative argument against maximum power: for any candidate capacity, another coherent capacity can apparently be added, preventing a greatest point. Principal limitation: The reasoning assumes powers aggregate along one open-ended scale and does not fully engage modal definitions on which omnipotence covers every possible act without constituting a numerical maximum. Live burden: He must demonstrate that the additional-act construction remains coherent for a being already able to actualize every possible state of affairs and that no qualitative endpoint blocks iteration. Locked score: The argument is clear, forceful, and highly relevant to Rasmussen's central maximality inference; its remaining dependence on the correct model of power prevents decisiveness but supports the strong frozen score of 81 The modal endpoint remains a viable response.",
               "tags": []
@@ -76601,7 +76601,7 @@ export const debates = [
               "ledgerMoveId": "m18",
               "time": "01:22:38",
               "role": "Multiverse limits",
-              "words": "A mindless multiverse still needs a life-producing distribution and does not explain consciousness, mental causation, or moral awareness.",
+              "words": "A mindless multiverse requires a suitably life-producing range, and even complex life does not guarantee consciousness, mental causation, or moral awareness, leaving those phenomena unexplained.",
               "score": 79,
               "critique": "Strongest feature: Rasmussen separates mere cosmic variety from the demanding distribution needed for life and then notes that observer selection does not automatically explain consciousness, mental causation, or morality. Principal limitation: The move sometimes treats an underspecified multiverse as though it were the only naturalistic option and overstates the weakness of alternatives before fully comparing their priors. Live burden: He must show that the required distribution is less expected under credible multiverse models and that a supreme mind predicts the mental data without parallel tuning assumptions. Locked score: The response directly engages the strongest rival and identifies two distinct explanatory gaps, but its comparative confidence outruns the developed evidence and remains somewhat dismissive, supporting the frozen score of 79 Independent model comparison remains necessary.",
               "tags": []
@@ -76610,7 +76610,7 @@ export const debates = [
               "ledgerMoveId": "m10",
               "time": "00:30:17",
               "role": "Observer selection",
-              "words": "A multiverse explains why observers occupy life-permitting universes without predicting away the world's extensive suffering.",
+              "words": "A multiverse with many mostly lifeless universes explains why observers occupy a life-permitting world without implying that the world's enormous amount of suffering should be absent.",
               "score": 77,
               "critique": "Strongest feature: Huemer introduces the essential observer-selection point: observers can only find themselves where life is possible, so life-permitting conditions need not be typical across all universes. Principal limitation: The move does not specify the multiverse's distribution or measure, and selection effects explain conditional observation more readily than they explain why any observer-supporting universes exist. Live burden: He must provide a sufficiently varied, independently motivated ensemble and show that it assigns substantial probability to observers with evidence like ours. Locked score: The argument is relevant, economical, and preserves the suffering objection better than a benevolent-design account, yet its mechanism remains schematic and inherits difficult distribution assumptions, so the frozen score is 77 The ensemble's probability measure remains the decisive unfulfilled requirement.",
               "tags": []
@@ -76622,7 +76622,7 @@ export const debates = [
               "ledgerMoveId": "m17",
               "time": "01:19:39",
               "role": "Indexical evidence",
-              "words": "In a sufficiently varied multiverse, observers necessarily occupy life-permitting worlds, making this observer's evidence more likely.",
+              "words": "Because evidence concerns this consciousness having these experiences, a sufficiently varied multiverse makes them likelier by producing some life-permitting universes whose conscious beings include the observer.",
               "score": 75,
               "critique": "Strongest feature: Huemer sharpens the multiverse reply into an indexical claim about this observer's evidence, directly answering the demand that other universes raise the probability of what we actually see. Principal limitation: He shifts between a suitably distributed multiverse and arbitrary infinite collections, while neither logical possibility nor physicists' interest establishes the required distribution. Live burden: He must define the reference class and measure, demonstrate that conscious observers arise with adequate frequency, and address Rasmussen's separate concern about mentality itself. Locked score: The core conditional-observation point is intelligible and responsive, but the later examples blur the probability claim and leave the life-producing ensemble unsupported, producing the frozen score of 75 A specified measure and observer reference class remain necessary for higher confidence.",
               "tags": []
@@ -76644,7 +76644,7 @@ export const debates = [
               "ledgerMoveId": "m05",
               "time": "00:15:15",
               "role": "Developmental narrative",
-              "words": "Suffering occurs within developmental narratives where conscious beings gain self-standing, expansion, and other valuable forms of growth.",
+              "words": "Suffering can occur within developmental narratives where conscious beings gain self-standing and expansion, making such suffering unsurprising if a supreme foundation produces valuable, great stories.",
               "score": 66,
               "critique": "Strongest feature: Rasmussen does not ignore evil; he proposes a positive connection between risky development, valuable agency, meaningful narrative, and some forms of suffering. Principal limitation: The claim that observed evils generally fit great stories is sweeping, weakly evidenced, and insensitive to suffering that destroys agency, character, or every apparent developmental good. Live burden: He must connect the amount, distribution, intensity, and apparently pointless cases of suffering to benefits a supreme good foundation would reasonably permit. Locked score: The move is relevant and candidly introduced as a sketch, but possibility does most of the work and the broad evidential reversal is poorly supported, making this the pro side's weakest locked move at 66 A distribution-sensitive comparison with naturalistic expectations remains necessary before suffering can support theism.",
               "tags": [
@@ -76653,6 +76653,12 @@ export const debates = [
                   "type": "bias",
                   "url": bias("confirmation-bias"),
                   "context": "The narrative reading selects suffering compatible with growth while discounting severe cases that destroy agency, character, or any apparent developmental good."
+                },
+                {
+                  "label": "Scope neglect",
+                  "type": "bias",
+                  "url": bias("scope-neglect"),
+                  "context": "The evidential reversal treats suffering generically without adjusting for the amount, distribution, intensity, or prevalence of cases that frustrate developmental goods."
                 }
               ]
             },
@@ -76660,7 +76666,7 @@ export const debates = [
               "ledgerMoveId": "m09",
               "time": "00:28:10",
               "role": "Evil symmetry",
-              "words": "If design predicts a creator values life, parallel reasoning predicts that a good powerful creator opposes extensive suffering.",
+              "words": "If design reasoning predicts that a good creator values life, parallel reasoning predicts opposition to suffering, yet this world contains enormous suffering and other bad things.",
               "score": 84,
               "critique": "Strongest feature: Huemer identifies a strong symmetry: anyone using assumptions about divine values to predict life must also allow assumptions about divine goodness to predict less suffering. Principal limitation: The argument establishes evidential tension more clearly than a contradiction, since unknown goods, freedom, regular laws, or tradeoffs could affect the expected world. Live burden: He must show that the observed scale and pattern of suffering remain substantially less likely under a powerful good creator even after plausible countervailing reasons are included. Locked score: The move is clear, well calibrated, directly connected to design reasoning, and difficult to evade through total skepticism without sacrificing the original case, so its considerable argumentative force earns 84 The probabilistic comparison still requires a defended distribution of suffering and divine purposes.",
               "tags": []
@@ -76671,7 +76677,7 @@ export const debates = [
               "ledgerMoveId": "m20",
               "time": "01:31:10",
               "role": "Narrowed suffering defense",
-              "words": "Not every suffering serves story value; broader risk and exploration reasons may matter, while total skepticism undercuts design.",
+              "words": "Not every instance of suffering is designed for story value; arenas involving risk and exploration may explain some, while total skeptical theism would undercut design arguments.",
               "score": 75,
               "critique": "Strongest feature: Rasmussen narrows his earlier claim, distinguishes individual purposes from broader risk structures, and explicitly concedes that extreme skeptical theism would undermine design reasoning. Principal limitation: The newly offered possibilities remain largely undeveloped and do not connect the actual distribution of severe suffering to the proposed arena of exploration or eventual good. Live burden: He must provide a principled, testable middle position that allows some predictions about divine action while explaining why apparently gratuitous suffering is not strongly unexpected. Locked score: The reply is responsive, unusually charitable, and improves the calibration of the defense, but it restores compatibility more than positive evidential support and therefore receives the frozen score of 75 The proposed middle position needs testable constraints rather than additional compatibility possibilities.",
               "tags": []
@@ -76680,10 +76686,17 @@ export const debates = [
               "ledgerMoveId": "m19",
               "time": "01:30:09",
               "role": "Narrative counterexamples",
-              "words": "Much suffering corrupts character or yields no worthwhile narrative, so the developmental-story account poorly fits observed cases.",
+              "words": "Actual suffering often corrupts character or produces boring rather than worthwhile stories, so the developmental-story proposal poorly fits much of the suffering observed in the world.",
               "score": 83,
               "critique": "Strongest feature: Huemer tests the story defense against recognizable counterexamples, emphasizing suffering that worsens character, ends development, or appears disconnected from any worthwhile narrative payoff. Principal limitation: Counterexamples to an overly broad claim do not establish that suffering never contributes to development, nor do they exclude goods located beyond an individual's visible life. Live burden: He must show that the problematic cases are sufficiently numerous and severe to lower the probability of this world under a supreme good mind relative to alternatives. Locked score: The move is concrete, highly responsive, and effectively forces Rasmussen to narrow his original evidential claim; although it cannot eliminate every possible hidden reason, its grounded fit challenge warrants 83 A population-level likelihood comparison would be required to establish the broader conclusion.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Scope neglect",
+                  "type": "bias",
+                  "url": bias("scope-neglect"),
+                  "context": "Examples of corrupting or narratively empty suffering support a broad fit claim without establishing how frequent, severe, or representative those cases are."
+                }
+              ]
             }
           }
         ]
@@ -76704,6 +76717,10 @@ export const debates = [
               {
                 "label": "Confirmation bias",
                 "url": bias("confirmation-bias")
+              },
+              {
+                "label": "Scope neglect",
+                "url": bias("scope-neglect")
               }
             ]
           },
@@ -76842,7 +76859,7 @@ export const debates = [
               "ledgerMoveId": "phases-same-entity",
               "time": "23:50",
               "role": "Constructive",
-              "words": "Consciousness and matter are phenomenologically different phases of one underlying entity, while consciousness is the one directly known term.",
+              "words": "Consciousness and matter are phenomenologically different phases of one underlying entity, with consciousness uniquely known directly, so their apparent dissimilarity does not require either to produce the other.",
               "score": 75,
               "critique": "Strongest feature: McGilchrist distinguishes directly known experience from inferred material description and offers a unified ontology rather than leaving two unrelated substances, which makes the proposal philosophically economical and relevant to the motion. Principal limitation: Epistemic priority does not establish that consciousness and matter are phases of one entity, and the label leaves idealist, neutral-monist, and dual-aspect versions unresolved. Live burden: The case needs an independently warranted bridge from acquaintance to ontology, plus evidence that selects this unification over rivals and explains how apparently separate subjects arise. Locked score: The 75-point result credits a coherent, intelligible constructive move while withholding a higher band because its central identity claim remains underdetermined and comparatively untested The unresolved individuation problem remains materially important.",
               "tags": []
@@ -76851,7 +76868,7 @@ export const debates = [
               "ledgerMoveId": "evolved-biological-consciousness",
               "time": "32:37",
               "role": "Reply",
-              "words": "Consciousness most plausibly emerged after life as an evolution-shaped biological property, though the metaphysical intuition is held lightly.",
+              "words": "Consciousness most plausibly emerged after life as a biological property shaped by evolution because it is useful, though whether its raw material existed from the beginning remains open.",
               "score": 81,
               "critique": "Strongest feature: Seth ties consciousness to evolutionary history and biological organization while explicitly treating his metaphysical preference as revisable, combining empirical relevance with commendable calibration. Principal limitation: Selection can shape an existing capacity without explaining how phenomenal subjectivity originates from nonexperiential processes, so evolutionary lineage alone does not establish ontological emergence. Live burden: The biological account must identify evidence that favors production over constraint, state which findings would disfavor emergence, and connect adaptive function to felt experience rather than only reportable behavior. Locked score: The 81-point assessment recognizes a strong, well-calibrated framework with substantial scientific contact, moderated by the still-missing bridge from organized living activity to first-person presence A causal genesis of phenomenality is still required.",
               "tags": []
@@ -76862,7 +76879,7 @@ export const debates = [
               "ledgerMoveId": "panentheist-consciousness-field",
               "time": "28:20",
               "role": "Constructive",
-              "words": "Panentheism places God in everything and everything in God, with material reality existing within a field of consciousness.",
+              "words": "Panentheism places God in everything and everything in God, while consciousness belongs to matter throughout the cosmos, so material reality exists within a field of consciousness.",
               "score": 69,
               "critique": "Strongest feature: McGilchrist states a definite panentheistic picture in which material reality is situated within pervasive consciousness, thereby connecting his ontology directly to the debate's theological question. Principal limitation: Neither the existence of a consciousness field nor its identification with a relational God receives discriminating evidence, and impersonal cosmopsychism could accommodate the same description. Live burden: The proposal must explain individuation, causal interaction, and divine attributes while producing observations more expected under panentheism than under other consciousness-first theories. Locked score: The 69-point mixed result reflects clear motion contact and metaphysical integration, but the decisive field and God inferences remain asserted, weakly testable, and insufficiently distinguished from nearby alternatives Its claimed divine attributes also remain insufficiently derived.",
               "tags": []
@@ -76871,7 +76888,7 @@ export const debates = [
               "ledgerMoveId": "constructed-perception",
               "time": "34:52",
               "role": "Constructive",
-              "words": "Perceptual consciousness is the brain's constrained construction rather than direct access to things as they are.",
+              "words": "Perceptual consciousness is the brain's constrained construction: sensory signals shape its best guess about the world, so experience reflects perceivers rather than things as they are.",
               "score": 80,
               "critique": "Strongest feature: Seth invokes constrained perceptual construction to show concretely that conscious contents need not mirror mind-independent reality, grounding his view in an active research program rather than bare metaphysical preference. Principal limitation: Explaining how brains construct representational content does not explain why that processing is accompanied by experience, so the move risks sliding from perception to consciousness without argument. Live burden: The account must connect predictive construction to phenomenal presence, distinguish content errors from the existence of subjectivity, and identify evidence favoring production over filtering models. Locked score: The 80-point score rewards empirical specificity, clarity, and relevance while reserving stronger credit until the model explains consciousness itself rather than the organization and reliability of perceptual contents.",
               "tags": []
@@ -76893,7 +76910,7 @@ export const debates = [
               "ledgerMoveId": "correlation-not-production",
               "time": "47:25",
               "role": "Reply",
-              "words": "Brain-consciousness accompaniment does not itself establish the productive relationship between them.",
+              "words": "Brain-consciousness accompaniment does not itself establish a productive relationship, because their apparent correlation reveals only that they occur together, not how they are related.",
               "score": 83,
               "critique": "Strongest feature: McGilchrist correctly isolates an inference often concealed in neural evidence: systematic dependence and covariation do not by themselves decide whether brains produce, transmit, constrain, or permit consciousness. Principal limitation: Demonstrating underdetermination only blocks a quick production inference and supplies no affirmative evidence for a wider field, whose interaction with manipulable neural systems remains unspecified. Live burden: He must identify observations that permission predicts better than production and articulate how neural organization selects, limits, or localizes field consciousness without ad hoc accommodation. Locked score: The 83-point result reflects an unusually precise and responsive objection, tempered because its skeptical success exceeds the positive support it provides for McGilchrist's preferred ontology The proposed causal architecture remains equally underdeveloped.",
               "tags": []
@@ -76902,7 +76919,7 @@ export const debates = [
               "ledgerMoveId": "life-not-computation",
               "time": "37:05",
               "role": "Constructive",
-              "words": "Conscious experience arises along a biological line from metabolism and self-maintenance rather than from computation alone.",
+              "words": "Conscious experience arises along a biological line from metabolism and self-maintenance rather than computation alone, because prediction enables bodily control and living systems regenerate themselves.",
               "score": 82,
               "critique": "Strongest feature: Seth narrows the naturalistic proposal from generic computation to metabolism, self-maintenance, and evolutionary life, yielding a more biologically specific hypothesis with testable comparative implications. Principal limitation: Biological continuity establishes where consciousness may occur without yet explaining why self-preserving chemistry becomes experiential, and it leaves uncertain whether life is necessary or merely historically associated. Live burden: The proposal needs a causal route from organismic regulation to phenomenality, criteria separating living from artificial candidates, and evidence that would differentiate biological from computational accounts. Locked score: The 82-point evaluation rewards substantive mechanism-oriented framing and disciplined scope, while the absence of an experience-generating bridge prevents the move from entering the very-strong explanatory range The causal transition remains incompletely explained.",
               "tags": []
@@ -76913,16 +76930,23 @@ export const debates = [
               "ledgerMoveId": "brain-permits-consciousness",
               "time": "48:10",
               "role": "Constructive",
-              "words": "The brain permits and shapes a wider field of consciousness rather than emitting or merely transmitting it.",
+              "words": "The brain permits and shapes a wider field of consciousness rather than emitting or merely transmitting it, as riverbanks contain and shape water without explaining it away.",
               "score": 74,
               "critique": "Strongest feature: McGilchrist offers a genuine alternative to both production and simple transmission by proposing that brains enable and shape access to a wider conscious field, directly answering the dependence evidence. Principal limitation: Without a mechanism or risky prediction, permission can redescribe any neural-consciousness correlation after observation and therefore lacks discriminatory power. Live burden: The model must specify what is selected, how neural architecture constrains content and subject boundaries, and which anesthesia, injury, or altered-state findings would contradict it. Locked score: The 74-point mixed assessment credits relevance and conceptual responsiveness but reflects substantial evidential flexibility, missing causal detail, and failure to show why permission outperforms the better-developed production account It also lacks comparable explanatory precision and predictive risk.",
-              "tags": []
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": fallacy("argument-from-ignorance"),
+                  "context": "The lack of a compelling material-production mechanism is used to favor a permitting consciousness field without independent positive evidence for that alternative."
+                }
+              ]
             },
             "con": {
               "ledgerMoveId": "anesthesia-brain-dependence",
               "time": "45:45",
               "role": "Constructive",
-              "words": "General anesthesia causally changes the brain and removes personal consciousness, demonstrating intimate brain dependence.",
+              "words": "General anesthesia causally changes the brain and removes personal consciousness, demonstrating intimate brain dependence and defeating the idea that human consciousness can be separated from brain function.",
               "score": 86,
               "critique": "Strongest feature: Seth uses general anesthesia as intervention evidence rather than mere correlation, making the dependence of personal consciousness on organized neural activity concrete, replicable, and closely connected to the competing accounts. Principal limitation: Behavioral unresponsiveness and later amnesia do not guarantee absent experience, while a constraint model can also predict disrupted access when the brain is altered. Live burden: The argument must identify neural changes that track phenomenal loss independently of report and explain why their causal pattern supports production rather than interruption of access. Locked score: The 86-point very-strong result reflects excellent empirical contact and burden relevance, with bounded reservations about measurement, residual awareness, and the inference from dependence to ontological production Greater explanatory discrimination is still required.",
               "tags": []
@@ -76933,7 +76957,7 @@ export const debates = [
               "ledgerMoveId": "wetness-analogy-fails",
               "time": "52:57",
               "role": "Reply",
-              "words": "Liquidity is structurally predictable from molecules, whereas interior experience is wholly novel unless matter already has an experiential aspect.",
+              "words": "Unlike liquidity, whose molecular structure explains how water molecules move and freeze, consciousness is wholly unpredictable from matter unless matter itself has an experiential aspect.",
               "score": 84,
               "critique": "Strongest feature: McGilchrist pinpoints why ordinary emergence analogies may be insufficient: liquidity remains structurally characterizable from molecular relations, whereas first-person presence is absent from the public physical vocabulary being invoked. Principal limitation: Present explanatory discontinuity does not prove permanent derivational impossibility or show that experiential properties were already fundamental, and the alternative inherits combination and individuation problems. Live burden: He must establish a principled barrier rather than a temporary research gap, then demonstrate how consciousness-first ontology explains bounded subjects more successfully. Locked score: The 84-point assessment rewards a forceful, precise challenge to the analogy while stopping below very strong because its negative diagnosis does not yet validate the proposed fundamental-consciousness solution The alternative's own causal account remains unfinished.",
               "tags": [
@@ -76949,7 +76973,7 @@ export const debates = [
               "ledgerMoveId": "phase-emergence",
               "time": "52:01",
               "role": "Reply",
-              "words": "Organized matter can unproblematically acquire new phase properties, with consciousness among those properties of the brain.",
+              "words": "Just as liquidity, ice, and gas exhibit phase-dependent properties through emergence, organized brain matter can acquire consciousness in certain phases without creating any necessary tension.",
               "score": 78,
               "critique": "Strongest feature: Seth appeals to familiar phase transitions to defend the general intelligibility of novel system-level properties, thereby resisting the claim that emergence is automatically miraculous or incoherent. Principal limitation: Structural novelty such as liquidity does not establish that subjective presence follows from organization in the same way, so the analogy risks assuming the distinctive point in dispute. Live burden: The account needs a phenomenality-specific bridge that predicts when a subject appears and explains why functional organization is accompanied by experience rather than only new behavior. Locked score: The 78-point strong result credits a relevant and comprehensible reply, moderated by incomplete analogy, limited evidential discrimination, and insufficient engagement with the first-person feature McGilchrist emphasized The first-person analogy remains the decisive weakness.",
               "tags": []
@@ -76971,7 +76995,7 @@ export const debates = [
               "ledgerMoveId": "fundamental-consciousness-avoids-miracle",
               "time": "60:31",
               "role": "Reply",
-              "words": "Treating consciousness as a basic cosmic element fits observation without the unexplained abracadabra of emergence.",
+              "words": "Treating consciousness as a basic cosmic element fits observation and avoids emergentism’s unexplained leap from material complexity to conscious experience, while remaining observationally undisproved.",
               "score": 77,
               "critique": "Strongest feature: McGilchrist exposes the explanatory cost of deriving experience from wholly nonexperiential premises and proposes fundamentality as a direct way to avoid an unexplained ontological discontinuity. Principal limitation: Declaring consciousness basic relocates rather than resolves the mystery, especially because bounded, brain-dependent subjects still require combination, localization, and causal-interface accounts. Live burden: The view must compare its unresolved primitives with materialism's, solve individuation, and derive distinctive observations rather than gaining support solely from the rival's incompleteness. Locked score: The 77-point assessment recognizes an important explanatory challenge and coherent alternative, but the replacement theory remains too underspecified and prediction-poor to earn stronger comparative support A secure comparative inference to God also remains unavailable.",
               "tags": [
@@ -76987,7 +77011,7 @@ export const debates = [
               "ledgerMoveId": "modest-emergent-materialism",
               "time": "56:22",
               "role": "Constructive",
-              "words": "Emergence from matter remains the preferred view, but metaphysical positions should be held lightly and judged partly by explanatory usefulness.",
+              "words": "Consciousness is still provisionally preferred as an emergent property of matter, but metaphysical positions merit light commitment because evidence rarely decides them and their explanatory consequences matter.",
               "score": 83,
               "critique": "Strongest feature: Seth presents emergence as a productive, revisable working hypothesis rather than a completed dogma, aligning metaphysical confidence with empirical progress and preserving room for correction. Principal limitation: Practical usefulness cannot establish ontological emergence, and the transition from organized neural function to felt experience remains unspecified despite the methodological modesty. Live burden: The position must identify positive bridge evidence, define measurable intermediate achievements, and name observations that would require abandoning rather than indefinitely refining materialism. Locked score: The 83-point result credits excellent calibration, scientific orientation, and responsiveness, while withholding a higher band because the central phenomenal explanation remains promissory rather than presently demonstrated No decisive prediction presently closes that explanatory gap.",
               "tags": []
@@ -76998,7 +77022,7 @@ export const debates = [
               "ledgerMoveId": "no-priority-for-matter",
               "time": "64:52",
               "role": "Reply",
-              "words": "Matter has no epistemic priority over directly experienced consciousness, so research cannot assume nonconscious matter as the starting point.",
+              "words": "Because consciousness is directly experienced while matter is encountered only indirectly within consciousness, matter has no epistemic priority and cannot be assumed as research’s nonconscious starting point.",
               "score": 78,
               "critique": "Strongest feature: McGilchrist correctly notes that consciousness is epistemically immediate whereas matter is theoretically represented, challenging any method that treats nonconscious material ontology as an unquestioned starting assumption. Principal limitation: Removing matter's priority establishes methodological neutrality, not positive support for cosmic consciousness, and several idealist, dual-aspect, or neutral alternatives remain equally compatible. Live burden: He must justify extrapolation from personal acquaintance to universal ontology and provide comparative evidence that selects his field view rather than merely reopening the metaphysical options. Locked score: The 78-point evaluation rewards a clear and consequential epistemic correction, tempered because the move undercuts one presumption without carrying the additional evidential burden of establishing McGilchrist's preferred account Independent cosmological evidence remains necessary.",
               "tags": []
@@ -77007,7 +77031,7 @@ export const debates = [
               "ledgerMoveId": "promissory-ignorance-challenge",
               "time": "58:05",
               "role": "Reply",
-              "words": "Declaring the explanatory gap permanently unbridgeable projects present ignorance into a future state of much greater understanding.",
+              "words": "Because future understanding may change whether the mystery persists, declaring the explanatory gap permanently unbridgeable projects present ignorance forward and diverts inquiry toward the real problem.",
               "score": 84,
               "critique": "Strongest feature: Seth accurately warns that today's explanatory gap cannot establish permanent impossibility, protecting inquiry from converting limited current knowledge into a premature metaphysical conclusion. Principal limitation: Future possibility is not present explanation, and unrestricted confidence in eventual progress can mirror the promissory reasoning being criticized if no intermediate bridge is supplied. Live burden: He must identify concrete neural-to-phenomenal advances, specify milestones that reduce the gap, and state what persistent failures would count against emergence. Locked score: The 84-point assessment reflects a strong, well-calibrated rebuttal to an overclaim, with the remaining deduction attached to its own incomplete positive mechanism and dependence on prospective scientific success An independently specified current mechanism remains necessary for that confidence.",
               "tags": []
@@ -77018,7 +77042,7 @@ export const debates = [
               "ledgerMoveId": "science-excludes-subjectivity",
               "time": "68:49",
               "role": "Constructive",
-              "words": "Science's success depends on excluding the subjective perspective, so its method cannot by itself explain consciousness, love, or God.",
+              "words": "Science’s methodological success comes from excluding subjective perspective, leaving consciousness, love, God, and creativity outside its chosen realm and therefore beyond what science alone can explain.",
               "score": 74,
               "critique": "Strongest feature: McGilchrist identifies a real methodological tension: objective science abstracts from first-person perspective even though consciousness is constituted by subjective presence, so standard measurement may omit what requires explanation. Principal limitation: Methodological abstraction does not entail permanent exclusion, because reports, phenomenal structure, interventions, and disciplined first-person data can be studied jointly. Live burden: He must distinguish practical measurement limits from principled incapacity and show that mixed first-person and neural methods cannot progressively explain the target. Locked score: The 74-point mixed result credits an important warning about explanatory scope but reflects an overstated inference from science's public methods to categorical inability, alongside limited engagement with existing consciousness research The strongest mixed-method evidence also requires direct engagement.",
               "tags": []
@@ -77027,7 +77051,7 @@ export const debates = [
               "ledgerMoveId": "neural-explanatory-bridges",
               "time": "61:20",
               "role": "Reply",
-              "words": "The genuine research frontier is to replace vague emergence with precise neural explanatory bridges.",
+              "words": "The genuine research frontier is to replace vague emergence claims with precise explanatory bridges showing why material brain processes are intimately related to, perhaps inseparable from, consciousness.",
               "score": 87,
               "critique": "Strongest feature: Seth replaces vague appeals to emergence with a concrete research burden: progressively precise bridges between neural organization, conscious content, report, and experience that can be empirically challenged. Principal limitation: Even exact mappings of content and access may leave unanswered why any organized mechanism has phenomenal character, so correlation can become increasingly detailed without becoming ontological explanation. Live burden: The program must distinguish explanatory derivation from prediction, identify phenomenality-specific milestones, and state what evidence would expose a principled shortfall. Locked score: The 87-point very-strong assessment recognizes exceptional methodological clarity and productive burden placement, retaining a focused reservation about whether the proposed bridges reach experience itself rather than its functional and reportable correlates.",
               "tags": []
@@ -77049,7 +77073,7 @@ export const debates = [
               "ledgerMoveId": "responsiveness-continuum",
               "time": "79:13",
               "role": "Constructive",
-              "words": "The inanimate world and life form a continuum of responsiveness, with life greatly increasing the speed and extent of response.",
+              "words": "Inanimate matter and life occupy a continuum of responsiveness, because life vastly accelerates and expands responses to environmental change rather than introducing an absolute divide.",
               "score": 69,
               "critique": "Strongest feature: McGilchrist situates life within a broad continuum of environmental responsiveness, avoiding a crude inert-matter-versus-living-mind dichotomy and identifying a potentially informative developmental pattern. Principal limitation: Increasingly rapid or complex response does not entail consciousness, value, or purpose, since nonexperiential control systems also register conditions and alter behavior. Live burden: The argument must define consciousness-relevant responsiveness, establish a threshold or continuity relation with interiority, and distinguish purposive interpretation from increasingly elaborate causation. Locked score: The 69-point mixed result reflects genuine conceptual relevance and breadth, outweighed by an underdefended transition from response dynamics to experience and by weak discrimination against mechanistic alternatives The evidence discussed here does not yet exclude increasingly elaborate mechanistic causation.",
               "tags": []
@@ -77058,7 +77082,7 @@ export const debates = [
               "ledgerMoveId": "bioelectric-development",
               "time": "73:46",
               "role": "Constructive",
-              "words": "Developmental biology shows matter using bioelectric organization and inherited form in ways not reducible to a simple genetic blueprint.",
+              "words": "Developmental biology shows that organismal form is not a simple genetic blueprint, because bioelectric fields can redirect embryonic development in ways persisting across generations.",
               "score": 79,
               "critique": "Strongest feature: Seth uses bioelectric patterning and inherited form to present matter as dynamically organized rather than genetically mechanical, supplying a substantive scientific account of developmental coordination. Principal limitation: Complex control architecture challenges simplistic reductionism but does not itself establish phenomenal consciousness, intrinsic purpose, or a complete material explanation of form. Live burden: He must connect bioelectric regulation to subjective experience and show how the mechanism bears on the metaphysical dispute beyond demonstrating biological complexity. Locked score: The 79-point strong assessment credits empirical specificity, explanatory productivity, and correction of a weak mechanical picture, while reserving higher credit because the cited mechanism does not yet reach consciousness or normativity The claimed cosmic implications therefore remain unsupported.",
               "tags": []
@@ -77069,7 +77093,7 @@ export const debates = [
               "ledgerMoveId": "conscious-cosmos-creates-other",
               "time": "80:43",
               "role": "Constructive",
-              "words": "Life's energetic cost and suffering make sense as a conscious cosmos creating an other in reciprocal development with a divine source.",
+              "words": "Life’s energetic cost and suffering suggest a conscious cosmos creates an other whose reciprocal development with the divine source actualizes potential and transforms cosmic possibilities.",
               "score": 64,
               "critique": "Strongest feature: McGilchrist offers an integrated interpretation of energetic cost, suffering, novelty, and reciprocal development rather than treating cosmic purpose as static engineering, giving his theology a distinctive relational form. Principal limitation: Indifferent evolution also predicts cost and suffering, which may count against benevolent cosmic agency, while reciprocal divine creation is introduced without independent evidence. Live burden: The view must generate observations that differentiate creative relationship from natural selection and explain why severe suffering is more expected under its divine hypothesis. Locked score: The 64-point weak-to-mixed result acknowledges imaginative coherence and motion contact but reflects speculative warrant, adverse evidential pressure, and a theological conclusion substantially stronger than the presented data support That evidential mismatch remains substantial.",
               "tags": []
@@ -77078,7 +77102,7 @@ export const debates = [
               "ledgerMoveId": "dissipative-life-consciousness",
               "time": "86:01",
               "role": "Constructive",
-              "words": "Living systems exploit thermodynamics as open dissipative systems, providing a physical link between life and consciousness.",
+              "words": "Living systems exploit the second law as open dissipative systems, converting low-entropy fuel into waste to remake themselves, linking life’s distinctive process with brain-based consciousness.",
               "score": 88,
               "critique": "Strongest feature: Seth connects life to open thermodynamic systems and sustained dissipation, providing a concrete physical basis for self-maintenance and directional organization rather than invoking emergence without intermediate structure. Principal limitation: Energy flow explains organization and persistence but not why some dissipative systems possess experience, leaving the central phenomenal transition unresolved. Live burden: The account must trace additional steps from gradients through regulation to subjectivity and identify organizational conditions sufficient for consciousness rather than life alone. Locked score: The 88-point very-strong result rewards mechanistic detail, scientific warrant, and direct relevance to directionality, with a narrow but fundamental deduction for the missing link between organized self-maintenance and felt awareness Individual subject boundaries also remain unexplained.",
               "tags": []
@@ -77089,7 +77113,7 @@ export const debates = [
               "ledgerMoveId": "prehuman-objective-beauty",
               "time": "82:17",
               "role": "Constructive",
-              "words": "Beauty, truth, and goodness preexist human invention, as shown by beautiful forms that arose before human observers.",
+              "words": "Beauty, truth, and goodness preexist human invention because beautiful creatures arose before human observers, suggesting these values belong to the cosmos despite modest cultural variation.",
               "score": 69,
               "critique": "Strongest feature: McGilchrist distinguishes the existence of valued forms from human manufacture and uses prehuman natural order to challenge accounts that reduce beauty, truth, and goodness to arbitrary invention. Principal limitation: Forms can predate observers while beauty remains a later evaluative relation shaped by perceivers, so temporal priority does not establish observer-independent value. Live burden: He must define objective beauty, distinguish it from evolved preference or structural regularity, and connect its existence specifically to a divine conscious ground. Locked score: The 69-point mixed assessment credits a clear and relevant value argument but reflects substantial equivocation between prehuman form and prehuman beauty, along with an unsupported theological bridge Evolutionary accounts of aesthetic response also require substantially fuller and more symmetrical comparative treatment.",
               "tags": [
@@ -77105,7 +77129,7 @@ export const debates = [
               "ledgerMoveId": "novel-material-properties",
               "time": "89:36",
               "role": "Reply",
-              "words": "Showing how systems acquire novel properties from their material constitution remains productive and need not be impossible for consciousness.",
+              "words": "Systems can acquire novel properties through their material constitution, making that approach productive for explaining consciousness despite its return toward subjectivity and particular difficulty.",
               "score": 85,
               "critique": "Strongest feature: Seth correctly observes that material systems repeatedly exhibit novel higher-level properties and frames consciousness as a legitimate research target rather than an a priori exception to productive explanation. Principal limitation: Functional or structural novelty does not answer the distinctive first-person character of experience, so general emergence examples cannot carry the full inferential load. Live burden: He must supply a phenomenality-specific mechanism, distinguish derivation of experience from prediction of behavior, and identify evidence that materially favors this account over consciousness-first rivals. Locked score: The 85-point very-strong result recognizes methodological force, calibration, and scientific relevance, with the residual deduction concentrated on the uncompleted bridge from material organization to subjective presence The present evidence does not complete that bridge.",
               "tags": []
@@ -77116,7 +77140,7 @@ export const debates = [
               "ledgerMoveId": "cosmic-directionality",
               "time": "90:19",
               "role": "Constructive",
-              "words": "Biology and the wider cosmos exhibit directionality toward complexity, diversity, value, and purpose that is not merely invented by humans.",
+              "words": "Biology and the cosmos display directionality toward growing complexity and beautiful diversity, making value and purpose crucial features of reality rather than inventions imposed by humans.",
               "score": 69,
               "critique": "Strongest feature: McGilchrist links biological complexity, diversity, value, and wider cosmic development into a cumulative directionality claim, offering more than a single isolated example of apparent purpose. Principal limitation: The pattern selection underweights extinction, simplification, entropy, and observer effects, while increasing complexity in some lineages does not establish a universe-wide goal. Live burden: He must define a measurable directional baseline, include countertrends symmetrically, and show why purposeful explanation predicts the resulting distribution better than selection and retrospective recognition. Locked score: The 69-point mixed assessment reflects broad motion relevance and integrative ambition, offset by selective evidence, ambiguous scale, and an inference to purpose that exceeds the demonstrated trend Its uneven distribution also remains insufficiently explained.",
               "tags": [
@@ -77125,6 +77149,12 @@ export const debates = [
                   "type": "bias",
                   "url": bias("confirmation-bias"),
                   "context": "The directionality claim selects complexity and diversity while discounting extinction, simplification, entropy, and observer-selection effects that cut against a universal trend."
+                },
+                {
+                  "label": "Scope neglect",
+                  "type": "bias",
+                  "url": bias("scope-neglect"),
+                  "context": "Growth in complexity within selected lineages is generalized to the cosmos without proportionate attention to its uneven distribution and vastly larger scale."
                 }
               ]
             }
@@ -77145,7 +77175,7 @@ export const debates = [
               "ledgerMoveId": "relational-creative-ground",
               "time": "97:14",
               "role": "Constructive",
-              "words": "Open-ended teleology points not to a divine engineer but to an infinitely creative relational ground from which things emerge.",
+              "words": "Open-ended teleology points beyond a tinkering divine engineer to an infinitely creative relational ground, where relations precede things and things emerge from those relations.",
               "score": 73,
               "critique": "Strongest feature: McGilchrist avoids a simplistic divine engineer and articulates open-ended teleology through an infinitely creative relational ground, integrating novelty and participation within his broader metaphysics. Principal limitation: Calling the source creative and relational does not establish agency, consciousness, goodness, infinity, or divinity, and impersonal generative laws could receive similar language. Live burden: The inference must derive those properties from independently supported evidence and state what observations distinguish a divine ground from natural or consciousness-first alternatives. Locked score: The 73-point mixed result credits conceptual sophistication and direct theological relevance, while the number and importance of unsupported attribute transitions keep the conclusion below the strong band Interpretive elegance cannot replace those missing evidential bridges.",
               "tags": []
@@ -77154,7 +77184,7 @@ export const debates = [
               "ledgerMoveId": "values-constructed-from-life",
               "time": "92:59",
               "role": "Constructive",
-              "words": "Meaning, purpose, and value begin in living self-maintenance and can unfold through evolution into complex human systems.",
+              "words": "Meaning, purpose, and value begin in living self-maintenance, then unfold through reproduction and evolution from persistence into the complex moral, aesthetic, and ethical systems of human culture.",
               "score": 85,
               "critique": "Strongest feature: Seth offers a layered genealogy from organismic self-maintenance through evolution to human meaning and purpose, showing how sophisticated values can arise without being dismissed as unreal or trivial. Principal limitation: Explaining the origins of valuing does not determine whether some judgments are objectively valid, so genealogy alone cannot replace a normative account. Live burden: The position must connect biological regulation to reasons, explain correction of maladaptive preferences, and show why developmental origins undercut rather than merely enable access to objective value. Locked score: The 85-point very-strong assessment rewards explanatory continuity, nuance, and direct engagement, with the remaining deduction attached to the unresolved transition from adaptive valuation to reflective normativity Universally binding reasons remain unaccounted for.",
               "tags": []
@@ -77165,7 +77195,7 @@ export const debates = [
               "ledgerMoveId": "shaping-points-to-god",
               "time": "104:34",
               "role": "Constructive",
-              "words": "Real shaping, directionality, and values together imply something recognizably like an involved God.",
+              "words": "Real shaping, directionality, and values together imply something recognizably like an involved God: an underlying presence that gives the process direction rather than remaining remotely Olympian.",
               "score": 65,
               "critique": "Strongest feature: McGilchrist combines shaping, directionality, and value into an explicitly theological cumulative inference, making clear how the preceding observations are intended to support an involved relational God. Principal limitation: Direction and value do not uniquely imply agency, and even agency would not establish the specific divine attributes claimed, leaving several major bridges compressed. Live burden: He must exclude thermodynamic, evolutionary, and impersonal teleological explanations while deriving consciousness, relation, and goodness without circularly embedding them in the premises. Locked score: The 65-point mixed result acknowledges motion contact and cumulative structure but reflects weak comparative discrimination, underdeveloped warrants, and a conclusion substantially more specific than the evidence presented The theology remains independently underwarranted.",
               "tags": []
@@ -77174,7 +77204,7 @@ export const debates = [
               "ledgerMoveId": "entropy-arrow-direction",
               "time": "100:26",
               "role": "Reply",
-              "words": "The low-entropy beginning and thermodynamic arrow of time supply a physical account of cosmic directionality.",
+              "words": "The universe’s low-entropy beginning, gradual expansion, and movement toward higher entropy explain temporality and directionality through thermodynamics, like a broken egg proceeding only one way.",
               "score": 85,
               "critique": "Strongest feature: Seth supplies a physically grounded alternative for cosmic directionality through the low-entropy boundary and thermodynamic arrow, directly answering the suggestion that temporal development itself implies purpose. Principal limitation: Temporal asymmetry does not independently explain the initial boundary, biological complexity, consciousness, or normativity, so its explanatory scope is narrower than the whole cumulative claim. Live burden: He must connect entropy gradients through self-organization and selection to the observed trends while distinguishing physical direction from purpose without assuming the conclusion. Locked score: The 85-point very-strong result reflects scientific specificity and decisive rebuttal value, moderated by bounded incompleteness concerning initial conditions and higher-level phenomena Its relationship to phenomenal experience and normativity also remains unresolved.",
               "tags": []
@@ -77196,7 +77226,7 @@ export const debates = [
               "ledgerMoveId": "ritual-embodied-metaphor",
               "time": "111:48",
               "role": "Constructive",
-              "words": "Nature, music, poetry, and ritual disclose reality through embodied metaphors whose power is lost in explicit reduction.",
+              "words": "Nature, music, poetry, and ritual disclose reality through embodied metaphors, conveying what explicit statements cannot express without diminishing the power that shaped his worldview.",
               "score": 76,
               "critique": "Strongest feature: McGilchrist explains how nature, music, poetry, and ritual can disclose significance through embodied participation that explicit paraphrase cannot preserve, giving experiential evidence a clear phenomenological role. Principal limitation: Transformative depth and resistance to reduction do not establish mind-independent spiritual disclosure, especially when incompatible traditions generate comparably powerful experiences. Live burden: The case must distinguish revelation from psychological transformation, compare conflicting interpretations, and provide public criteria connecting metaphorical resonance to external reality. Locked score: The 76-point strong assessment credits subtle phenomenology, relevance, and clarity, while evidential privacy, interpretive plurality, and the unproved move from meaning to ontology prevent a higher band No externally verifiable theological conclusion follows from that phenomenology alone.",
               "tags": [
@@ -77212,7 +77242,7 @@ export const debates = [
               "ledgerMoveId": "human-spiritual-need",
               "time": "106:50",
               "role": "Constructive",
-              "words": "Human beings and contemporary society have a genuine need for spiritual renewal even without a theological inference.",
+              "words": "Society needs spiritual renewal because a world stripped of spirituality is proving unfit for how humans are and for raising children, without requiring theological inference.",
               "score": 75,
               "critique": "Strongest feature: Seth concedes a genuine human need for spiritual renewal without treating that need as evidence for God, separating existential value from metaphysical truth with useful precision. Principal limitation: The broad diagnosis of contemporary society receives little evidence, and therapeutic usefulness alone cannot show which practices are beneficial or which worldview is accurate. Live burden: He must define spiritual renewal, substantiate the claimed social deficit, and explain how naturalistic practices sustain durable meaning without borrowing unsupported metaphysical assumptions. Locked score: The 75-point strong assessment recognizes careful burden control and constructive common ground, tempered by an underdeveloped cultural generalization and limited evidential connection to the debate's central question The motion-level evidential burden remains largely untouched.",
               "tags": []
@@ -77223,7 +77253,7 @@ export const debates = [
               "ledgerMoveId": "ego-attenuation-spirituality",
               "time": "111:05",
               "role": "Constructive",
-              "words": "Reduced autonomy and a felt merging with others can constitute a meaningful spiritual experience without establishing God.",
+              "words": "Reduced autonomy and going with the flow can dissolve the self into surrounding others, making the experience spiritually meaningful without thereby establishing God.",
               "score": 77,
               "critique": "Strongest feature: Seth uses reduced autonomy and felt interpersonal merging to show how a meaningful spiritual episode can occur without requiring a theological interpretation, offering a concrete naturalistic possibility. Principal limitation: One autobiographical experience has limited general force, and identifying plausible natural causes does not independently exclude transcendent significance or settle competing interpretations. Live burden: The account must separate phenomenology from ontology, compare causal explanations symmetrically, and provide evidence beyond subjective resonance for its preferred naturalistic reading. Locked score: The 77-point strong result credits candor, calibration, and relevant counterexample value, while anecdotal scope and unresolved interpretive underdetermination constrain its contribution to the motion A generalized naturalistic theory would require substantially broader comparative evidence.",
               "tags": []
@@ -77255,6 +77285,10 @@ export const debates = [
               {
                 "label": "Confirmation bias",
                 "url": bias("confirmation-bias")
+              },
+              {
+                "label": "Scope neglect",
+                "url": bias("scope-neglect")
               }
             ]
           }

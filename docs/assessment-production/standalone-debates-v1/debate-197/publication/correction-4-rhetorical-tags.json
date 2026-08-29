@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "appliedAt": "2026-08-29T14:06:00Z",
+  "debateNumber": "197",
+  "debateId": "mcgilchrist-seth-consciousness-god-2026",
+  "authorization": "User-requested second fallacy and cognitive-bias rigor audit on 2026-08-29.",
+  "reason": "Two fresh blind move-complete reviews, anonymous candidate adjudication, and a conservative final catalog check retained the five earlier tags and identified an additional ignorance inference and an independent scale defect already explicit in the frozen critiques.",
+  "supersedesForLivingAudit": "docs/assessment-production/standalone-debates-v1/debate-197/publication/correction-2-rhetorical-tags.json",
+  "immutableFields": [
+    "identity",
+    "motion",
+    "source spans",
+    "move selection and order",
+    "judgments",
+    "adjudication",
+    "scores",
+    "argument descriptions",
+    "critique prose"
+  ],
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/preserved-output-before-rhetorical-tag-review-2.json",
+    "sha256": "9063a336c0c432d056bb3f86caa6ea2a82d6b0f476f4cee3a9ef4e1cb4590eba",
+    "bytes": 62328,
+    "note": "The exact score-neutral card-depth publication bytes immediately before this tag correction are preserved at the named path."
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/output.json",
+      "sha256": "5e921809afcac4ea25b544c7107aff6d2672cbe3f744cca00d970bf9ba3b15d2",
+      "bytes": 63272
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-audit.json",
+      "sha256": "932b6ea31c071310b4a4695b3656f1f92e019c2a82d9e3391ad22e8f23c5195e",
+      "bytes": 16551
+    },
+    "reviewExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-197/publication/rhetorical-tag-review-2/execution.json",
+      "sha256": "f353b1245e33f1dd254e1dd810a7b14f5cdcb9f59ac1e7c8dd6e6f75de9b5fc1",
+      "bytes": 3231
+    }
+  },
+  "acceptedTagChanges": [
+    {
+      "moveId": "brain-permits-consciousness",
+      "label": "Argument from ignorance",
+      "type": "fallacy"
+    },
+    {
+      "moveId": "cosmic-directionality",
+      "label": "Scope neglect",
+      "type": "bias"
+    }
+  ],
+  "writableShards": [
+    {
+      "shard": 1,
+      "fields": [
+        "candidate.sections.tags.brain-permits-consciousness",
+        "candidate.sections.tags.cosmic-directionality"
+      ]
+    },
+    {
+      "shard": 2,
+      "fields": [
+        "candidate.overall.pro.blunders[1].links"
+      ]
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 2,
+    "acceptedTagCount": 7,
+    "overallLinkChanges": 1,
+    "maximumWritableFieldsPerShard": 2
+  }
+}
