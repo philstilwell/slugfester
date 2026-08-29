@@ -2068,6 +2068,12 @@ function renderBackend() {
                 <p>Each section score is multiplied by the section's previously locked share of the debate, and those weighted results are combined. The default final adjustment is zero. A change from −5 to +5 is allowed only for a debate-wide success or failure that affects a stated burden and has not already influenced any move, section, importance value, or other score. The software calculates the final number; it is never manually nudged to select a winner.</p>
               </li>
               <li>
+                <h3>Treat debates with three or more speakers as team assessments</h3>
+                <p><strong>Short answer: yes.</strong> The current public scorecard format stores one comprehensive score for each side. When several interlocutors are grouped on a side, each named teammate currently receives that shared side score in profile and ranking calculations. It is a score for the combined case, not evidence that every teammate contributed equally or personally earned the same result.</p>
+                <p>Individual argument cards remain attached to the person who actually made the move. A teammate's argument is not credited to someone else merely because they share a side, unless the other speaker explicitly adopts it. This preserves speaker ownership within the analysis even though the final number is still side-level.</p>
+                <p>Slugfester identified 16 team or panel debates that could not be reassessed safely under the ordinary two-person workflow. The newer multi-speaker method therefore treats their results as approximate, checks speaker handoffs and selected passages against the audio, and tests whether the leading side changes when contributions are rebalanced or one teammate is removed. Its policy is to keep participant-contribution figures diagnostic and exclude these debates from individual rankings once they are republished under that method. Until then, their shared scores should be read strictly as team scores.</p>
+              </li>
+              <li>
                 <h3>Review fallacies and cognitive biases separately</h3>
                 <p>These labels are checked apart from the numerical totals. Every locked move is reviewed against the available definitions in two blind passes, with old tags and the other review hidden. A separate reviewer considers the anonymized candidates, followed by a conservative source check.</p>
                 <ul>

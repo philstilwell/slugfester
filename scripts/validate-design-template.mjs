@@ -107,6 +107,8 @@ requireIncludes("app backend technical detail", app, 'class="backend-technical"'
 requireIncludes("app backend objectivity accordion", app, '<details class="backend-objectivity-accordion">');
 requireIncludes("app backend section score explanation", app, "multiplied by its previously locked importance");
 requireIncludes("app backend comprehensive score explanation", app, "The default final adjustment is zero");
+requireIncludes("app backend multi-speaker score disclosure", app, "each named teammate currently receives that shared side score");
+requireIncludes("app backend multi-speaker ranking policy", app, "exclude these debates from individual rankings once they are republished");
 requireIncludes("app backend fallacy and bias explanation", app, "Review fallacies and cognitive biases separately");
 requireExcludes("app backend objectivity accordion default", app, '<details class="backend-objectivity-accordion" open>');
 requireIncludes("app backend current section scoring", app, "importance-weighted mean of the selected moves");
