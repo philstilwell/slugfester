@@ -69,6 +69,7 @@ requireIncludes("app rankings page", app, "rankingDebates");
 requireIncludes("app rankings page", app, 'class="ranking-tool"');
 requireIncludes("app rankings page", app, 'class="ranking-topic"');
 requireIncludes("app rankings page", app, 'class="ranking-method"');
+requireIncludes("app rankings page", app, "Group debate scores are not factored into interlocutors' 1-on-1 debate scorecard averages.");
 requireIncludes("app rankings analytics", app, "reasoningTagDistribution");
 requireIncludes("app rankings analytics", app, 'class="reasoning-distribution"');
 requireExcludes("app rankings analytics", app, "data-reasoning-topic-select");

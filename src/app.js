@@ -1404,7 +1404,10 @@ function renderRankings() {
             <p class="eyebrow">Overall score leaderboard</p>
             <h2 id="rankings-list-heading">${escapeHtml(rankingHeading(state.sort))}</h2>
           </div>
-          <p class="rankings-note">${rankings.length ? `Showing ${rankings.length} interlocutors from ${filteredDebates.length} matching scorecards.` : "No interlocutors meet the current minimum."}</p>
+          <div class="rankings-notes">
+            <p class="rankings-note">${rankings.length ? `Showing ${rankings.length} interlocutors from ${filteredDebates.length} matching scorecards.` : "No interlocutors meet the current minimum."}</p>
+            <p class="rankings-context-note">Group debate scores are not factored into interlocutors' 1-on-1 debate scorecard averages.</p>
+          </div>
         </div>
         <section class="ranking-tool" aria-label="Ranking controls">
           <form class="ranking-form">
