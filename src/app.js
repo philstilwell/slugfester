@@ -2011,18 +2011,18 @@ function renderBackend() {
           <div class="backend-summary-stats" aria-label="Assessment campaign summary">
             <article>
               <span>Published catalogue</span>
-              <strong>195</strong>
-              <p>debate assessments currently on Slugfester</p>
+              <strong>Growing</strong>
+              <p>new assessments are added as eligible debates are processed</p>
             </article>
             <article>
-              <span>Full v2 reassessments</span>
-              <strong>179</strong>
-              <p>all one-speaker-per-side debates; 16 team or panel formats remain outside this workflow</p>
+              <span>Current v2 coverage</span>
+              <strong>Dyadic</strong>
+              <p>the completed campaign covered eligible one-speaker-per-side debates; team and panel formats require separate handling</p>
             </article>
             <article>
               <span>Recorded model work</span>
               <strong>≈83 hr</strong>
-              <p>conservative aggregate compute estimate for the 174-debate campaign</p>
+              <p>conservative aggregate compute estimate for the completed reassessment campaign</p>
             </article>
           </div>
         </div>
