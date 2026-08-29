@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "completedAt": "2026-08-29T01:43:26Z",
+  "source": {
+    "videoId": "0-8n2SGFSL8",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 21052,
+    "events": 2732,
+    "transcriptSha256": "5e84e9d4aae8f0fdd8e572b4082609ddbfd6ba2f83df53b43204a4c90eba0f37",
+    "eventsSha256": "70698408a10d801bb2bef1d84609af77fb6c86e1ef4bf6fcc0e23540654f65ba",
+    "requiredAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 20,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 9,
+    "adjudicatedDisputes": 9,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 77,
+      "con": 79,
+      "winner": "con",
+      "margin": 2
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "argumentCards": 20,
+    "uniqueLockedMovesMapped": 20,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "431cf35ef9dec4613dc7e101b1e9093a30d89bdcb5495222a2550788413ae20b"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 4,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 2,
+    "desktopEvidenceSha256": "cfb7f591dd5610264356cd7218e83ba83509889b81cb5a4b67100958372500b4",
+    "mobileEvidenceSha256": "3f4f9a3e7c9c5633cf98373ca1abcdbd6cd69ff6d3a88f783981f9558a9ad469"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "196 debates"
+    },
+    {
+      "name": "corpus transcript replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "196 of 196 available; 196 local hashes checked"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "381 files"
+    },
+    {
+      "name": "complete repository suite",
+      "command": "npm run check",
+      "status": "passed-after-summary-freeze"
+    },
+    {
+      "name": "historical campaign closure full and repository-only replay",
+      "command": "npm run assessment:campaign:closure:check and npm run assessment:campaign:closure:repository:check",
+      "status": "passed",
+      "result": "174 historical reassessments remain closed"
+    },
+    {
+      "name": "calibration promotion full and repository-only replay",
+      "command": "npm run assessment:calibration-promotion:check and npm run assessment:calibration-promotion:repository:check",
+      "status": "passed",
+      "result": "179 historical ledgers plus 1 authenticated standalone ledger"
+    },
+    {
+      "name": "standalone full and repository-only replay",
+      "command": "npm run assessment:standalone:check and npm run assessment:standalone:repository:check",
+      "status": "passed-by-final-replay"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "inventoryTierCorrection": 1,
+    "publicationLayoutException": 1,
+    "integrationSyntaxCorrection": 1,
+    "browserControllerCorrections": 3,
+    "validationBookkeepingCorrections": 3,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "directCostUsd": 0
+}

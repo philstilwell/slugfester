@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/0-8n2SGFSL8/captions.srv3.xml",
+      "sha256": "e771ca17b4d2658f98ac1231b20f3415593dd4d6c1d73c5b67f5052ef3e29408"
+    },
+    "events": {
+      "path": ".assessment-cache/captions/0-8n2SGFSL8/events.json",
+      "sha256": "70698408a10d801bb2bef1d84609af77fb6c86e1ef4bf6fcc0e23540654f65ba"
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/0-8n2SGFSL8/transcript.txt",
+      "sha256": "5e84e9d4aae8f0fdd8e572b4082609ddbfd6ba2f83df53b43204a4c90eba0f37"
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/0-8n2SGFSL8/manifest.json",
+      "sha256": "2ceb1c8598afb8d88568939079b8cbba316425f43e23f2600fcf9a0961179a32"
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/authorization.json",
+      "sha256": "5cfcec8ec0cc2b6da9531039f111bbf7fedee968a322b972687106e62548d1fa",
+      "bytes": 3079
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/manifest.json",
+      "sha256": "dcfe042c4fe7fa08be6ae52e530acdd480d034dda717776678598cc050581701",
+      "bytes": 3205
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/source/source-lock.json",
+      "sha256": "c916617a7173e3c80f9278c4bd15692e66a080cc22a5cee0828b9c1f439cb284",
+      "bytes": 2185
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/inventory/inventory.json",
+      "sha256": "c57cfe3e8191c4df5a44b593f8c1fc086fe2e0a1eab2a85069d26ff6eb9604a5",
+      "bytes": 61136
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/judgments/judgment-packet.json",
+      "sha256": "15812cf2f7ceab0b859916a1bff5265b51dbb9cf32726e7b7d84397544f6b66b",
+      "bytes": 4758
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/judgments/pass-a/output.json",
+      "sha256": "ef81f6f134e3da300eed8a6a967a6db6024a9190fb975649e75ece92c3ce4314",
+      "bytes": 29883
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/judgments/pass-b/output.json",
+      "sha256": "cfeccdc6b08f441a9c43df181038629ac655b73db796641086392b16c27b9d82",
+      "bytes": 27844
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/disagreements/disagreements.json",
+      "sha256": "94d36b0621ac154af2a6ae21a98ffd7e02c66795cf470b5cb60a79c6613d5bf3",
+      "bytes": 12755
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/audio/audio-verification.json",
+      "sha256": "ac0f6a4bae4cd19807b50263edf1d50f35534975b99df2a0048222ce428ecc83",
+      "bytes": 1032
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/adjudication/packet.json",
+      "sha256": "d4e448dbf3cc8d29211d57fa1ed35c0ae0b9e44b46733f0f5781f8b40ce93947",
+      "bytes": 32838
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/adjudication/output.json",
+      "sha256": "3c59347f58169615f00386cc22ccdcc3401c68223935b2215016348ee18b1d52",
+      "bytes": 3595
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/final-ledger/final-ledger.json",
+      "sha256": "3cd3d6215a0dac08a81af76249a497972cd513818bfabf03faa872193fbe1b44",
+      "bytes": 158934
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/score-pass/input.json",
+      "sha256": "3afb7f0ff4b294258f0d8500a8db3cf0c7d16f8302541f487796f159f57086a9",
+      "bytes": 954
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/score-pass/output.json",
+      "sha256": "dfcbff15b7d320a95aa5e5e43d85a8cf4914c840082c7bc293d5dad0d400a9a3",
+      "bytes": 10595
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/score-pass/attestation.json",
+      "sha256": "39750dcac2b0ec021ff406bc6d894198dc3e661f6e5a565c547398d841681b63",
+      "bytes": 822
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-196/publication/output.json",
+      "sha256": "0afcc1eb108d4e8ba110396364c3df35dcb8383842cb32e18efdd6f30b69d8e5",
+      "bytes": 34683
+    },
+    "events": {
+      "path": ".assessment-cache/captions/0-8n2SGFSL8/events.json",
+      "sha256": "70698408a10d801bb2bef1d84609af77fb6c86e1ef4bf6fcc0e23540654f65ba",
+      "bytes": 293496
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/0-8n2SGFSL8/transcript.txt",
+      "sha256": "5e84e9d4aae8f0fdd8e572b4082609ddbfd6ba2f83df53b43204a4c90eba0f37",
+      "bytes": 124034
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "196",
+    "debateId": "huemer-rasmussen-god-existence-2026",
+    "sections": [
+      {
+        "sectionId": "s1",
+        "title": "Comparative explanatory case and motion threshold",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "m01",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 84,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 76
+                },
+                "score": 78
+              },
+              {
+                "moveId": "m02",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 83,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 73
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "m06",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 84,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 82
+                },
+                "score": 76
+              },
+              {
+                "moveId": "m16",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 87
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "s2",
+        "title": "Dependence, foundation, and ultimate explanation",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "m03",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 84,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 80
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "m11",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 82,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 80
+                },
+                "score": 80
+              },
+              {
+                "moveId": "m15",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 81,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 80
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "s3",
+        "title": "Arbitrary limits, infinity, and maximal power",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "m04",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 82,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 69
+                },
+                "score": 73
+              },
+              {
+                "moveId": "m13",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 86,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 84
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "m07",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 82,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 71
+                },
+                "score": 76
+              },
+              {
+                "moveId": "m08",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 80,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              },
+              {
+                "moveId": "m12",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 77
+                },
+                "score": 79
+              },
+              {
+                "moveId": "m14",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 87,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 82
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "s4",
+        "title": "Multiverse and observer selection",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "m18",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 88,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 68
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "m10",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 81,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 80
+                },
+                "score": 77
+              },
+              {
+                "moveId": "m17",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 76
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "s5",
+        "title": "Evil, suffering, and design expectations",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "m05",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 76,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 63
+                },
+                "score": 66
+              },
+              {
+                "moveId": "m20",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 84,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 89
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "m09",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 83
+                },
+                "score": 84
+              },
+              {
+                "moveId": "m19",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 90,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 80
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 76.95,
+        "burdenCompletionAdjustment": 0,
+        "score": 77
+      },
+      "con": {
+        "weightedSectionMean": 79.1,
+        "burdenCompletionAdjustment": 0,
+        "score": 79
+      }
+    },
+    "winner": "con",
+    "winningMargin": 2,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 20,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

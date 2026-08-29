@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-standalone-integration-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-and-corrected",
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "stage": "production-candidate-insertion",
+  "failure": "The generated patch emitted a second closing brace after the complete candidate object, so src/data/debates.js did not parse.",
+  "diagnostic": "SyntaxError: Unexpected token '}' at src/data/debates.js:76755",
+  "boundedCorrection": "Removed only the duplicate closing brace and retained the candidate byte-for-byte.",
+  "frozenEvidenceChanged": false,
+  "frozenScoresChanged": false,
+  "candidateProseChanged": false
+}

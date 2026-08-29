@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-standalone-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-and-corrected",
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "failures": [
+    {
+      "command": "npm run check",
+      "message": "The living corpus transcript audit still declared 195 debates and therefore rejected the new 196-debate catalog.",
+      "correction": "Added Debate 196's canonical caption paths, metadata, and frozen transcript/event hashes; the audit now verifies 196 of 196 local transcript chains."
+    },
+    {
+      "command": "npm run assessment:campaign:closure:check",
+      "message": "The historical Batch 1-17 campaign report accidentally counted the standalone debate and its recovery files as campaign material.",
+      "correction": "Excluded the standalone registry root and Debate 196 only from the frozen historical report census while retaining separate authentication of its production ledger."
+    },
+    {
+      "command": "npm run check (postcheck lifecycle)",
+      "message": "The standalone repository replay was reached before validation-summary.json had been frozen.",
+      "correction": "Created the validation summary after all prerequisite source, score, publication, rendering, corpus, and historical-campaign checks completed."
+    }
+  ],
+  "debateEvidenceChanged": false,
+  "scoresChanged": false,
+  "publicationProseChanged": false,
+  "historicalCampaignEvidenceChanged": false
+}

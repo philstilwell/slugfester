@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-08-29T01:09:26Z",
+  "repositoryBaseline": {
+    "branch": "main",
+    "head": "a4f142d5c47e9cc8d8f8408fcd81244e5894e147",
+    "localMain": "a4f142d5c47e9cc8d8f8408fcd81244e5894e147",
+    "originMain": "a4f142d5c47e9cc8d8f8408fcd81244e5894e147",
+    "clean": true
+  },
+  "identity": {
+    "debateNumber": "196",
+    "debateId": "huemer-rasmussen-god-existence-2026",
+    "label": "God, infinity, and explanatory comparison",
+    "canonicalUrl": "https://www.youtube.com/watch?v=0-8n2SGFSL8",
+    "videoId": "0-8n2SGFSL8",
+    "sourceTitle": "Does God Exist? | Michael Huemer vs. Joshua Rasmussen",
+    "eventYear": 2026,
+    "motion": "Does God exist?",
+    "topicCategory": "god-theism-atheism",
+    "pro": {
+      "speaker": "Joshua Rasmussen",
+      "position": "God exists"
+    },
+    "con": {
+      "speaker": "Michael Huemer",
+      "position": "The presented case does not establish that God exists"
+    },
+    "moderator": "Miles K. Donahue",
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidOpenAiTranscriptionCapUsd": 1,
+    "otherPaidServicesPermitted": false,
+    "estimateRequiredBeforeFirstPaidCall": true,
+    "paidCallsMade": 0
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/",
+    "docs/assessment-ledgers/huemer-rasmussen-god-existence-2026.json",
+    "src/data/debates.js",
+    "src/data/interlocutors.js",
+    "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+    "scripts/audit-assessment-production-standalone-v1.mjs",
+    "scripts/validate-debates.mjs",
+    "scripts/audit-assessment-production-campaign-closure.mjs",
+    "scripts/audit-assessment-production-calibration-promotion-v1.mjs",
+    "package.json",
+    "index.html",
+    "sitemap.xml",
+    "robots.txt",
+    "search/",
+    "debate/",
+    "topic/",
+    "interlocutor/"
+  ]
+}

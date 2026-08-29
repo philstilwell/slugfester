@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-standalone-rendering-controller-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-and-corrected",
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "failures": [
+    {
+      "stage": "artifact-directory-startup",
+      "message": "The first browser command used the artifact directory as its working directory before that directory existed.",
+      "correction": "Created the exact repository-local artifact directory, then started the browser from it."
+    },
+    {
+      "stage": "desktop-metrics-evaluation",
+      "message": "The first run-code expression was not wrapped in the function form required by playwright-cli and produced SyntaxError: Unexpected token 'const'.",
+      "correction": "Reissued the same read-only evaluation as an async page function; it passed."
+    },
+    {
+      "stage": "desktop-pointer-control",
+      "message": "The first click reused a stale element reference after page reload.",
+      "correction": "Captured a fresh snapshot and used its new summary reference."
+    }
+  ],
+  "pageDataChanged": false,
+  "browserChecksWeakened": false,
+  "retriesCharged": 0,
+  "directIncrementalCostUsd": 0
+}

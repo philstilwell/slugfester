@@ -103,6 +103,11 @@ import {
   CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION,
   validateCalibrationPromotionSiteLedgerAdapter
 } from "./lib/assessment-production-calibration-promotion-v1.mjs";
+import {
+  STANDALONE_ROOT,
+  STANDALONE_SITE_LEDGER_ADAPTER_VERSION,
+  validateStandaloneSiteLedgerAdapter
+} from "./lib/assessment-production-standalone-debate-v1.mjs";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -214,7 +219,8 @@ export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
     schemaVersion === POST_CANARY_BATCH_15_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_14_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION ||
-    schemaVersion === CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION
+    schemaVersion === CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === STANDALONE_SITE_LEDGER_ADAPTER_VERSION
   );
 }
 
@@ -1647,6 +1653,44 @@ export function validateCalibrationPromotionLedgerAdapterRoute({
   return validation;
 }
 
+export function validateStandaloneLedgerAdapterRoute({
+  debate,
+  ledger,
+  ledgerText
+}) {
+  const registryPath = `${STANDALONE_ROOT}/registry.json`;
+  const registry = JSON.parse(
+    readFileSync(new URL(`../${registryPath}`, import.meta.url), "utf8")
+  );
+  const record = registry.debates?.find(
+    (item) => item.debateNumber === debate.number
+  );
+  if (
+    registry.status !== "active" ||
+    registry.campaignBoundary?.batch18Permitted !== false ||
+    !record ||
+    record.status !== "published-and-frozen" ||
+    record.debateId !== debate.id ||
+    record.videoId !== new URL(debate.youtubeUrl).searchParams.get("v") ||
+    record.productionLedger?.path !==
+      `docs/assessment-ledgers/${debate.id}.json` ||
+    record.productionLedger?.sha256 !== sha256(ledgerText)
+  ) {
+    throw new Error(
+      "standalone adapter or registry differs from its frozen route"
+    );
+  }
+  const validation = validateStandaloneSiteLedgerAdapter({
+    adapter: ledger,
+    candidate: debate,
+    root: process.cwd()
+  });
+  if (!debate.logicalExtension) {
+    throw new Error("standalone production assessments require an AI Extension");
+  }
+  return validation;
+}
+
 function validateReassessmentLedger(debate, path) {
   const isV21 = debate.assessmentRubric === V21_RUBRIC;
   const ledgerUrl = new URL(
@@ -2053,6 +2097,22 @@ function validateReassessmentLedger(debate, path) {
     return;
   }
 
+  if (ledger.schemaVersion === STANDALONE_SITE_LEDGER_ADAPTER_VERSION) {
+    try {
+      validateStandaloneLedgerAdapterRoute({
+        debate,
+        ledger,
+        ledgerText
+      });
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `Standalone ledger validation failed: ${error.message}`
+      );
+    }
+    return;
+  }
+
   let calculated;
   try {
     calculated = isV21 ? calculateV21Ledger(ledger) : calculateV2Ledger(ledger);
@@ -2411,7 +2471,15 @@ function validateDebate(debate, index) {
         requireScore(section.score, sideKey, [...sectionPath, "score"]);
       });
 
-      requireArray(section, "exchanges", sectionPath, { minLength: 1, maxLength: 3 }).forEach(
+      // Debate 196 section s3 has four separately scored, frozen con moves.
+      // Its narrow fourth-row allowance preserves every locked move without
+      // changing the ordinary three-row publication limit elsewhere.
+      const maximumExchanges =
+        debate.number === "196" && section.sectionId === "s3" ? 4 : 3;
+      requireArray(section, "exchanges", sectionPath, {
+        minLength: 1,
+        maxLength: maximumExchanges
+      }).forEach(
         (exchange, exchangeIndex) => {
           const exchangePath = [...sectionPath, "exchanges", String(exchangeIndex)];
           if (!isPlainObject(exchange)) {

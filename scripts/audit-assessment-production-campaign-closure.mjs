@@ -328,16 +328,37 @@ const allProductionLedgerFiles = readdirSync(path.join(ROOT, "docs/assessment-le
 const selectedIdSet = new Set(selectedIds);
 const productionLedgerFiles = allProductionLedgerFiles.filter((file) => selectedIdSet.has(file.replace(/\.json$/, "")));
 const supplementalLedgerFiles = allProductionLedgerFiles.filter((file) => !selectedIdSet.has(file.replace(/\.json$/, "")));
+const standaloneRegistry = json(
+  "docs/assessment-production/standalone-debates-v1/registry.json"
+);
+assert.equal(standaloneRegistry.status, "active");
+assert.equal(standaloneRegistry.campaignBoundary.batch18Permitted, false);
+const standaloneRecords = standaloneRegistry.debates.filter(
+  (item) => item.status === "published-and-frozen"
+);
+const standaloneNumbers = new Set(
+  standaloneRecords.map((item) => item.debateNumber)
+);
 assert.equal(productionLedgerFiles.length, 174, "campaign production-ledger count differs from verified campaign population");
 assert.deepEqual(new Set(productionLedgerFiles.map((file) => file.replace(/\.json$/, ""))), selectedIdSet, "campaign production-ledger identities differ from selections");
 if (supplementalLedgerFiles.length > 0) {
   const promotionManifest = json("docs/assessment-production/calibration-promotion-v1/manifest.json");
   assert.equal(promotionManifest.status, "frozen-calibration-promotion-manifest");
   assert.equal(promotionManifest.batch18Selected, false);
+  const promotedLedgerFiles = promotionManifest.debates.map(
+    (item) => `${item.debateId}.json`
+  );
+  const standaloneLedgerFiles = standaloneRecords
+    .map((item) => `${item.debateId}.json`);
+  assert.equal(
+    new Set([...promotedLedgerFiles, ...standaloneLedgerFiles]).size,
+    promotedLedgerFiles.length + standaloneLedgerFiles.length,
+    "calibration-promotion and standalone ledger identities overlap"
+  );
   assert.deepEqual(
     new Set(supplementalLedgerFiles),
-    new Set(promotionManifest.debates.map((item) => `${item.debateId}.json`)),
-    "non-campaign production ledgers are not authenticated by the calibration-promotion supplement"
+    new Set([...promotedLedgerFiles, ...standaloneLedgerFiles]),
+    "non-campaign production ledgers are not authenticated by a calibration-promotion or standalone record"
   );
 }
 
@@ -475,7 +496,12 @@ assert.equal(audioAttempts, 101);
 assert.equal(audioCompleted, 100);
 assert.ok(Math.abs(audioEstimateUsd - 3.6544575) < 1e-12);
 
-const assessmentProductionFiles = walk("docs/assessment-production");
+// The campaign closure report is a frozen historical audit through Batch 17.
+// Standalone post-campaign debates are authenticated separately and must not
+// change its recovery-file census or its historical production population.
+const assessmentProductionFiles = walk("docs/assessment-production").filter(
+  (file) => !file.startsWith("docs/assessment-production/standalone-debates-v1/")
+);
 const explicitFailureOrDiagnosisRecords = assessmentProductionFiles.filter((file) => /(failure|diagnosis)/i.test(path.basename(file)));
 const preservedFailurePathArtifacts = assessmentProductionFiles.filter((file) => /(failure|diagnosis)/i.test(file));
 const recoveryExecutionRecords = assessmentProductionFiles.filter((file) => file.endsWith("model-execution.json") && /(recovery|repair|resumption|correction)/i.test(file));
@@ -515,7 +541,9 @@ const closureManifest = {
     acceptedPublicationProseChanged: false,
   },
   population: {
-    repositoryDebates: debates.length,
+    repositoryDebates: debates.filter(
+      (debate) => !standaloneNumbers.has(debate.number)
+    ).length,
     checkpointDebates: 10,
     frozenContinuationPool: rankedPool.length,
     continuationBatches: 17,
@@ -543,7 +571,9 @@ const closureManifest = {
     scorePassRerunsPerformedByClosureAudit: 0,
   },
   production: {
-    productionDebates: debates.length,
+    productionDebates: debates.filter(
+      (debate) => !standaloneNumbers.has(debate.number)
+    ).length,
     expectedProductionLedgersHypothesis: 174,
     verifiedProductionLedgers: productionLedgerFiles.length,
     exactCandidateMatches,

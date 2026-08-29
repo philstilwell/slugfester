@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-validator-failure",
+  "stage": "score-blind-inventory",
+  "failedArtifact": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-196/inventory/inventory.json",
+    "sha256BeforeCorrection": "c0bcb88f094c19baa93e0b3c448a55eb643cf657a5ff48ab096828112c2977c2"
+  },
+  "validator": "scripts/lib/assessment-production-standalone-debate-v1.mjs#validateStandaloneInventory",
+  "diagnosis": "Four moves referenced subsidiary burden bridges while declaring their burdenContact tier as central. The move identities, source spans, propositions, importance values, route bridge definitions, and response topology were otherwise unchanged by this finding.",
+  "affectedFields": [
+    "moves[m09].burdenContact.tier",
+    "moves[m11].burdenContact.tier",
+    "moves[m18].burdenContact.tier",
+    "moves[m19].burdenContact.tier"
+  ],
+  "expectedBridgeTier": "subsidiary",
+  "recordedMoveTier": "central",
+  "authorizedCorrection": {
+    "kind": "deterministic-derived-field-normalization-before-judgment",
+    "writableFields": [
+      "moves[m09].burdenContact.tier",
+      "moves[m11].burdenContact.tier",
+      "moves[m18].burdenContact.tier",
+      "moves[m19].burdenContact.tier"
+    ],
+    "moveSelectionChangesPermitted": false,
+    "sourceEvidenceChangesPermitted": false,
+    "importanceChangesPermitted": false,
+    "routeBridgeChangesPermitted": false,
+    "ratingOrScoreChangesPermitted": false
+  }
+}

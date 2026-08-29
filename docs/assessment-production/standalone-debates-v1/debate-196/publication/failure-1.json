@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0-standalone-publication-layout-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-bounded-recovery",
+  "debateNumber": "196",
+  "debateId": "huemer-rasmussen-god-existence-2026",
+  "detectedAt": "2026-08-29T01:34:00Z",
+  "failure": {
+    "sectionId": "s3",
+    "sectionTitle": "Arbitrary limits, infinity, and maximal power",
+    "lockedConMoveIds": [
+      "m07",
+      "m08",
+      "m12",
+      "m14"
+    ],
+    "lockedConMoveScores": [76, 72, 79, 81],
+    "ordinaryMaximumExchanges": 3,
+    "requiredMinimumExchanges": 4,
+    "message": "Four distinct locked con moves cannot each appear exactly once with their own score in only three exchange rows."
+  },
+  "rejectedAlternatives": [
+    "Omitting a locked move would make the publication incomplete.",
+    "Combining two moves into one card would erase a distinct ledger move and its locked score.",
+    "Changing the frozen inventory or rerunning the single score pass would violate the evidence and score locks."
+  ],
+  "boundedRecovery": {
+    "description": "Permit exactly four exchange rows for Debate 196 section s3 while retaining the ordinary three-row maximum everywhere else.",
+    "changesFrozenEvidence": false,
+    "changesScores": false,
+    "changesWinner": false,
+    "addsOrRemovesMoves": false
+  }
+}

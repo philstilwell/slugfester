@@ -8756,5 +8756,50 @@ export const debateSummaries = [
         "title": "Moral obligation, variation, and its explanatory ground"
       }
     ]
+  },
+  {
+    "id": "huemer-rasmussen-god-existence-2026",
+    "number": "196",
+    "title": "Michael Huemer vs Joshua Rasmussen: Does God Exist?",
+    "label": "God, infinity, and explanatory comparison",
+    "date": "2026-08-28",
+    "duration": "1 hr 39 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0-8n2SGFSL8",
+    "motion": "God exists and provides the best overall explanation of the major features of reality discussed in this debate.",
+    "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses finite-creator, multiverse, infinity, and suffering objections.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "Josh Rasmussen",
+        "color": "teal"
+      },
+      "con": {
+        "name": "God's existence is not established",
+        "speaker": "Michael Huemer",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 79
+    },
+    "sections": [
+      {
+        "title": "Comparative explanatory case and motion threshold"
+      },
+      {
+        "title": "Dependence, foundation, and ultimate explanation"
+      },
+      {
+        "title": "Arbitrary limits, infinity, and maximal power"
+      },
+      {
+        "title": "Multiverse and observer selection"
+      },
+      {
+        "title": "Evil, suffering, and design expectations"
+      }
+    ]
   }
 ];

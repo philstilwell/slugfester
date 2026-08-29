@@ -56,7 +56,21 @@ for (const record of manifest.debates) {
 }
 assert.equal(moves, 100);
 const ledgerNames = readdirSync(path.join(root, "docs/assessment-ledgers")).filter((name) => name.endsWith(".json"));
-assert.equal(ledgerNames.length, 179, "expected 179 production ledgers after promotion");
+const standaloneRegistry = json("docs/assessment-production/standalone-debates-v1/registry.json");
+assert.equal(standaloneRegistry.status, "active");
+assert.equal(standaloneRegistry.campaignBoundary.batch18Permitted, false);
+const publishedStandalone = standaloneRegistry.debates.filter(
+  (item) => item.status === "published-and-frozen"
+);
+for (const item of publishedStandalone) {
+  assert.equal(item.productionLedger?.path, `docs/assessment-ledgers/${item.debateId}.json`);
+  assertLock(item.productionLedger);
+}
+assert.equal(
+  ledgerNames.length,
+  179 + publishedStandalone.length,
+  "expected 179 historical production ledgers plus authenticated standalone ledgers"
+);
 assert.equal(existsSync(path.join(root, "docs/assessment-production/post-canary-continuation-v1/batch-18")), false, "Batch 18 exists");
 
 const renderingPath = `${CALIBRATION_PROMOTION_ROOT}/rendering/rendering-audit.json`;
@@ -75,4 +89,4 @@ for (const result of rendering.results) {
   for (const screenshot of Object.values(evidence.screenshots)) assertLock(screenshot);
 }
 
-console.log(`Calibration promotion audit passed: 5 debates, ${moves} moves, 179 production ledgers, 10 viewports, 20 screenshots, $0 direct incremental cost (${repositoryOnly ? "repository-only frozen-hash replay" : "full replay including local event bytes"}).`);
+console.log(`Calibration promotion audit passed: 5 promoted debates, ${moves} promoted moves, 179 historical production ledgers plus ${publishedStandalone.length} authenticated standalone ledger${publishedStandalone.length === 1 ? "" : "s"}, 10 promoted viewports, 20 promoted screenshots, $0 direct incremental cost (${repositoryOnly ? "repository-only frozen-hash replay" : "full replay including local event bytes"}).`);
