@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "201",
+  "debateId": "hernandez-dillahunty-soul-existence-2015",
+  "completedAt": "2026-08-29T22:07:32.071Z",
+  "source": {
+    "videoId": "xgPSRVLMjEk",
+    "method": "complete public YouTube caption track normalized locally",
+    "transcriptWords": 25747,
+    "events": 3443,
+    "transcriptSha256": "1aafb4a47a6b2e047d4099011b7f295b95c9d18bbfa407557039ca98cdeef683",
+    "eventsSha256": "6aa721e72e33330a75b47a0aed2da33684d24aeadb2c1710f4a54536b6114985",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 45,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 15,
+    "adjudicatedDisputes": 15,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 68,
+      "con": 82,
+      "winner": "con",
+      "margin": 14
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "argumentCards": 45,
+    "uniqueLockedMovesMapped": 45,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "0009aa844ae8a9988ea7f9ca0b2d47c6f37419903afbe6779961e61f14c719d7",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-201/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "atomicProseRepair": "docs/assessment-production/standalone-debates-v1/debate-201/publication/correction-1-atomic-prose.json",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.2,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 112,
+      "mean": 117.3,
+      "maximum": 124
+    },
+    "critiqueCharacterRange": [
+      880,
+      940
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "minimum": 22,
+      "mean": 24,
+      "maximum": 29
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-201/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 45,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 585,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 23,
+    "acceptedRhetoricalTags": 4,
+    "rejectedRhetoricalTagCandidates": 19,
+    "overruledOverbroadAdjudicatorAcceptances": 1,
+    "aiContributionPunctuationCorrection": "not-required",
+    "aiContributionWords": 644,
+    "aiContributionCommas": 45
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 7,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-201/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 7,
+    "rhetoricalTagsVisuallyVerified": 4,
+    "desktopEvidenceSha256": "bf74fbfafd049ce6ce4c940422f599900814e95d1cd668bc160b0ea2f1ebc08a",
+    "mobileEvidenceSha256": "02142b1b97deb4bbd020298487a8c073201ae6962e08c91187140cd51a12e157"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "201 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "391 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "command": "node scripts/audit-assessment-production-standalone-content-parity.mjs --debate 201",
+      "status": "passed",
+      "result": "45 moves; description mean 23.2 words; critique mean 117.3 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "command": "node scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "status": "passed",
+      "result": "45 moves reviewed against 13 definitions in 2 blind passes; 23 candidates adjudicated; 4 tags accepted; 19 rejected"
+    },
+    {
+      "name": "standalone full and repository-only replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 201 with and without --repository-only",
+      "status": "passed"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check && npm run postcheck",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 1,
+    "preservedInvalidInventoryAttempts": 2,
+    "rejectedPublicationDrafts": 1,
+    "isolatedAtomicProseRepairs": 14,
+    "sourceQuoteCorrections": 1,
+    "overbroadRhetoricalAcceptancesOverruled": 1,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 21,
+    "con": 24,
+    "disposition": "All 45 frozen moves are mapped exactly once. The three-move asymmetry reflects the source's argument structure; no empty placeholder cards were introduced."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

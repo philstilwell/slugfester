@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-standalone-content-parity-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "201",
+  "debateId": "hernandez-dillahunty-soul-existence-2015",
+  "reason": "The initial score-locked publication draft required nine description, three overall-strength, and two extension-premise depth repairs before satisfying the independent Debates 171–195 benchmark and current hard publication contract.",
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/raw-prose-output-1.json",
+      "sha256": "a4e9c7cd09496c5d653853d15e38ec8c69e368a902df8dbeb415f731e3f9ec99",
+      "bytes": 70827
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "25601976a8a848b8107abdb5ff201f38b37602f2452751564beeea38fe22a680",
+      "bytes": 81504
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/content-parity-audit.json",
+      "sha256": "921e7b5c26b9bd06c1b7e412c84e9848cf51bdd37fb822b2834973ac91df638f",
+      "bytes": 6781
+    }
+  },
+  "repairEvidence": {
+    "atomicRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/correction-1-atomic-prose.json",
+      "sha256": "c5b1af6eb127da03b8026c605f3047f4f2ac533d8f16a5c3daff96bb8d8a3a54",
+      "bytes": 11393
+    },
+    "quoteCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/correction-2-source-quote.json",
+      "sha256": "b27c68ae341b3b2748c489fe4836159fe2b27833ae444e4f5275885fb8ba412e",
+      "bytes": 1264
+    },
+    "schemaNormalization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/schema-normalization-1.json",
+      "sha256": "0d3f0bb11e550a0216e5374523648848809c9ce766128148515f2a5e04eb41f7",
+      "bytes": 1046
+    }
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "repairedLeafFields": 14,
+    "maximumWritableFieldsPerShard": 2
+  }
+}

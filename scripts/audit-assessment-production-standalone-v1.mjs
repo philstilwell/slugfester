@@ -1130,7 +1130,11 @@ function audit({ repositoryOnly = false } = {}) {
       bytes(paths.publicationAiContributionPunctuationAudit).length
     );
     assert.equal(punctuationAudit.status, "passed-ai-contribution-punctuation-audit");
-    assert.equal(punctuationAudit.debatesReviewed, debates.length);
+    assert.equal(
+      punctuationAudit.debatesReviewed,
+      200,
+      "frozen Debate 198 punctuation audit should retain its historical 200-debate scope"
+    );
     assert.deepEqual(punctuationAudit.corpus.flaggedBefore, [DEBATE_NUMBER]);
     assert.deepEqual(punctuationAudit.corpus.flaggedAfter, []);
     assert.equal(

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-deterministic-inventory-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "201",
+  "status": "complete",
+  "sourceInventorySha256": "2e925be1df69e9632391295d6be235375e8a0c4cd2d1ea5ff4245210a6e25445",
+  "outputInventorySha256": "986bfa418a1e3f42b34a503959c95092447608e3b4b478d2498bccbe57bbe1a6",
+  "trigger": "The repository source-exact validator found one whitespace-normalization mismatch in the identity-is-a-changing-label excerpt.",
+  "changes": [
+    {
+      "path": "moves[identity-is-a-changing-label].sourceSpan.excerpt",
+      "reason": "Recomputed mechanically from the already-selected startEvent and endEvent using the repository's single-space event-join rule."
+    }
+  ],
+  "unchanged": [
+    "all event indices",
+    "all move IDs and selected moves",
+    "all propositions and rationales",
+    "all importance weights and burden contacts",
+    "all response links and section assignments",
+    "all route and section definitions",
+    "selectionBalanceAudit",
+    "all score-blind substantive judgments"
+  ]
+}

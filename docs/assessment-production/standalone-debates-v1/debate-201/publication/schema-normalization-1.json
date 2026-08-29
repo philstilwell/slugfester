@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0-standalone-publication-schema-normalization",
+  "debateNumber": "201",
+  "debateId": "hernandez-dillahunty-soul-existence-2015",
+  "status": "complete-deterministic-transport-normalization",
+  "reason": "The strict structured-output transport required explicit nulls for absent row sides; production cards omit absent sides.",
+  "removedNullFields": [
+    "candidate.sections[2].exchanges[2].pro",
+    "candidate.sections[3].exchanges[3].pro",
+    "candidate.sections[4].exchanges[3].pro"
+  ],
+  "valueFieldsChanged": 0,
+  "scoreFieldsChanged": 0,
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/preserved-output-before-schema-normalization.json",
+      "sha256": "ce8a5511a6cfe719d6785133eb8d33d0febab79258f997c78632ea1c01395e7d"
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/output.json",
+      "sha256": "25601976a8a848b8107abdb5ff201f38b37602f2452751564beeea38fe22a680"
+    }
+  }
+}

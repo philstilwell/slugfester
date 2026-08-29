@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "201",
+  "status": "rejected-before-inventory-lock",
+  "preservedArtifact": "docs/assessment-production/standalone-debates-v1/debate-201/inventory/preserved-invalid-inventory-2.json",
+  "violations": [
+    "moves[18] contained the correct frozen event indices and endpoint timestamps but its stored excerpt did not byte-match the deterministic whitespace-normalized event join"
+  ],
+  "judgmentStarted": false,
+  "scoresPresent": false,
+  "recoveryAuthorized": "A score-blind deterministic normalization of every sourceSpan excerpt and timestamp endpoint from the already-selected event indices; no move selection or proposition may change."
+}

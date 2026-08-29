@@ -1,0 +1,911 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "201",
+  "debateId": "hernandez-dillahunty-soul-existence-2015",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/xgPSRVLMjEk/captions.srv3.xml",
+      "sha256": "4f215a94381acb4ea39821bdb53111316507dec6db41ebf43cb7a7051c434bc9"
+    },
+    "events": {
+      "path": ".assessment-cache/captions/xgPSRVLMjEk/events.json",
+      "sha256": "6aa721e72e33330a75b47a0aed2da33684d24aeadb2c1710f4a54536b6114985"
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/xgPSRVLMjEk/transcript.txt",
+      "sha256": "1aafb4a47a6b2e047d4099011b7f295b95c9d18bbfa407557039ca98cdeef683"
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/xgPSRVLMjEk/manifest.json",
+      "sha256": "03ee4ec4acec51140c95470c5cddc928fa3ff57fe135dd38d46e23208de77d45"
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/authorization.json",
+      "sha256": "f98297008401f28396e7999b020ac19600cd81a9525a4f6caaeb6b7e8394bac5",
+      "bytes": 2891
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/manifest.json",
+      "sha256": "79b07560a9a041906f1861c504ba0812aa6ac585df232e5d7b4209b1865f6c53",
+      "bytes": 3831
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/source/source-lock.json",
+      "sha256": "bfae4e89aed62920c3a227a0122a7cc1ef530e2fe681f86481883015b79626d9",
+      "bytes": 2467
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/inventory/inventory.json",
+      "sha256": "4d6af6c98a53c856c9b74805087c7d177b2191bce34f04edde1ae1e266b71107",
+      "bytes": 104756
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/judgments/judgment-packet.json",
+      "sha256": "1345c021ef5e8bd7ae735ca38c3a5a63581eccd7abbf43b9f6b5d7603b43feeb",
+      "bytes": 4885
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/judgments/execution.json",
+      "sha256": "438cebbd491dba47fa311b41ae76956ddde5906a54e731fdacde3d5bda29da75",
+      "bytes": 1562
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/judgments/pass-a/output.json",
+      "sha256": "559074b886bc4a72ae03dd0839ad03ee7380ce638177d33d8c6c77682a51b684",
+      "bytes": 48824
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/judgments/pass-b/output.json",
+      "sha256": "5eb02d9bb7cd80e29dec622b157ddfb77a36209e96e37476b6a49a402c6a3c1f",
+      "bytes": 53932
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/disagreements/disagreements.json",
+      "sha256": "8392c14278cd19fe52b9f437fe29118bc4ec8438e04ae2653cdadef51e76869f",
+      "bytes": 16468
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/audio/audio-verification.json",
+      "sha256": "809f510ca7924a15ee650c906f71bf61c79fc349bb5f0573a6a9dfb1517f79c9",
+      "bytes": 1116
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/adjudication/packet.json",
+      "sha256": "8cb6396bb596b479ce19175a6f44e6a3502040ea661ebd1563779d9ba1bd7e23",
+      "bytes": 42694
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/adjudication/output.json",
+      "sha256": "0fc4c0fc0f9347ac06dade0719cfc9c7f9d9ba5740046c555e04cfe91202cd08",
+      "bytes": 4094
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/final-ledger/final-ledger.json",
+      "sha256": "17f1b4bf9994ff3571999e22a69044e12e408aa43a0a9126dbf1fe73a3732e60",
+      "bytes": 309082
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/score-pass/input.json",
+      "sha256": "560f1d360fbbf974f055f4ccafd564b49a30482fd169bcf0d14e7f6445fa53f5",
+      "bytes": 959
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/score-pass/output.json",
+      "sha256": "2f0b9b6f8e223ee4cf89093e2a4eb7e94f6de90a61b04fe1ae527915c4fc16d3",
+      "bytes": 22841
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/score-pass/attestation.json",
+      "sha256": "9b97ac732d33657471a6442f0e95b1e7d24c0b159b186e15a82ce084c205a30b",
+      "bytes": 827
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/output.json",
+      "sha256": "19b7cb33845fce7a2e60ca8571ec62a869806854e89bad867f94cdf5c463bb2f",
+      "bytes": 83359
+    },
+    "events": {
+      "path": ".assessment-cache/captions/xgPSRVLMjEk/events.json",
+      "sha256": "6aa721e72e33330a75b47a0aed2da33684d24aeadb2c1710f4a54536b6114985",
+      "bytes": 364892
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/xgPSRVLMjEk/transcript.txt",
+      "sha256": "1aafb4a47a6b2e047d4099011b7f295b95c9d18bbfa407557039ca98cdeef683",
+      "bytes": 151949
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/correction-4-content-parity.json",
+      "sha256": "45b4d02863ad4e412cab874b3c01ce1c68efa698edf3644a1b5f0bc25095176a",
+      "bytes": 2254
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/raw-prose-output-1.json",
+      "sha256": "a4e9c7cd09496c5d653853d15e38ec8c69e368a902df8dbeb415f731e3f9ec99",
+      "bytes": 70827
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/content-parity-audit.json",
+      "sha256": "921e7b5c26b9bd06c1b7e412c84e9848cf51bdd37fb822b2834973ac91df638f",
+      "bytes": 6781
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/correction-3-rhetorical-tags.json",
+      "sha256": "e1ebe439a903e6e2ad570132933cd396e433fff23cec88c33549d8a298aba213",
+      "bytes": 2875
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/rhetorical-tag-audit.json",
+      "sha256": "d539848dd2b9d907e4d6e272cfc08d45f14115f90b9bd019f52cbf38a6c1e05b",
+      "bytes": 19612
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-201/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "fab86cfc0f167b74abf507f5c8a1d2005d7686c9d2a3d18a237b8b4e024cf203",
+      "bytes": 3672
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "201",
+    "debateId": "hernandez-dillahunty-soul-existence-2015",
+    "sections": [
+      {
+        "sectionId": "mental-properties-explanation-and-testability",
+        "title": "Mental Properties, Explanation, and Testability",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "mental-and-brain-properties-differ",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 88,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 75
+                },
+                "score": 79
+              },
+              {
+                "moveId": "consciousness-is-irreducible",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 83,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 57
+                },
+                "score": 68
+              },
+              {
+                "moveId": "intentionality-is-nonphysical",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 60
+                },
+                "score": 71
+              },
+              {
+                "moveId": "correlations-still-require-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 75,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "anecdote-does-not-show-necessity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 87,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 72
+                },
+                "score": 81
+              },
+              {
+                "moveId": "soul-manifestations-are-investigable",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 89,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 84
+                },
+                "score": 83
+              },
+              {
+                "moveId": "soul-is-circular-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 66
+                },
+                "score": 81
+              },
+              {
+                "moveId": "interaction-must-be-detectable",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 78
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "unity-personhood-and-brain-dependence",
+        "title": "Unity, Personhood, and Brain Dependence",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "unified-visual-field-requires-subject",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 86,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 60
+                },
+                "score": 73
+              },
+              {
+                "moveId": "personhood-is-indivisible",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 59,
+                  "evidenceWarrant": 51,
+                  "responsiveness": 83,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 57
+                },
+                "score": 67
+              },
+              {
+                "moveId": "identity-persists-through-change",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 60
+                },
+                "score": 71
+              },
+              {
+                "moveId": "brain-is-retrieval-instrument",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 80,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 63
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "split-brain-produces-independent-personalities",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 88,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 70
+                },
+                "score": 81
+              },
+              {
+                "moveId": "brain-damage-alters-soul-attributes",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 76
+                },
+                "score": 83
+              },
+              {
+                "moveId": "identity-is-a-changing-label",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 83,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 75
+                },
+                "score": 76
+              },
+              {
+                "moveId": "split-persons-remain-whole",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 74
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "emergence-neuroplasticity-and-physicalism",
+        "title": "Emergence, Neuroplasticity, and Physicalism",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 67,
+            "moves": [
+              {
+                "moveId": "neuroplasticity-shows-two-way-causation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 77,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 61
+                },
+                "score": 70
+              },
+              {
+                "moveId": "physicalism-undermines-self-and-freedom",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 59,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 69,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 53
+                },
+                "score": 63
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "an-explanation-is-not-made-true-by-default",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 91,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 86
+                },
+                "score": 87
+              },
+              {
+                "moveId": "consciousness-may-emerge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 88
+                },
+                "score": 81
+              },
+              {
+                "moveId": "reliable-method-is-required",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 89
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "free-will-determinism-and-rationality",
+        "title": "Free Will, Determinism, and Rationality",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 63,
+            "moves": [
+              {
+                "moveId": "free-will-requires-soul",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 85,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 55
+                },
+                "score": 67
+              },
+              {
+                "moveId": "determinism-undermines-rational-belief",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 56,
+                  "evidenceWarrant": 51,
+                  "responsiveness": 78,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 55
+                },
+                "score": 64
+              },
+              {
+                "moveId": "raised-hands-demonstrate-freedom",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 44,
+                  "evidenceWarrant": 42,
+                  "responsiveness": 70,
+                  "relevanceBurden": 65,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 49
+                },
+                "score": 56
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "compatibilist-agency-distinguishes-coercion",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 83,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 80
+                },
+                "score": 76
+              },
+              {
+                "moveId": "belief-truth-is-independent-of-choice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 91,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 86
+                },
+                "score": 86
+              },
+              {
+                "moveId": "computer-can-mimic-response",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 94,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 87
+                },
+                "score": 89
+              },
+              {
+                "moveId": "causality-supports-rationality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 80,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 64
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "mind-identity-and-entity-verification",
+        "title": "Mind, Identity, and Entity Verification",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 67,
+            "moves": [
+              {
+                "moveId": "seven-arguments-set-change-standard",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 71,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 60
+                },
+                "score": 67
+              },
+              {
+                "moveId": "felt-pain-exceeds-brain-description",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 75,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 62
+                },
+                "score": 67
+              },
+              {
+                "moveId": "soul-grounds-latent-capacities",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 71,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 61
+                },
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "mind-is-produced-by-brain",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 83,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 82
+                },
+                "score": 76
+              },
+              {
+                "moveId": "split-brain-supports-two-individuals",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 89,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 75
+                },
+                "score": 82
+              },
+              {
+                "moveId": "why-one-soul-package",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 90,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 85
+                },
+                "score": 83
+              },
+              {
+                "moveId": "qualities-do-not-demonstrate-entity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 92,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "interaction-brain-injury-and-survival-evidence",
+        "title": "Interaction, Brain Injury, and Survival Evidence",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 69,
+            "moves": [
+              {
+                "moveId": "soul-case-is-not-gap-reasoning",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 82,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 68
+                },
+                "score": 75
+              },
+              {
+                "moveId": "interaction-is-ontologically-basic",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 70,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 63
+                },
+                "score": 67
+              },
+              {
+                "moveId": "brain-damage-disrupts-instrument",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 82,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 71
+                },
+                "score": 74
+              },
+              {
+                "moveId": "determined-brain-cannot-ground-trust",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 53,
+                  "evidenceWarrant": 49,
+                  "responsiveness": 57,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 52
+                },
+                "score": 56
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "methodological-not-philosophical-naturalism",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 86,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 88
+                },
+                "score": 81
+              },
+              {
+                "moveId": "interaction-remains-unconfirmed",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 86,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 84
+                },
+                "score": 80
+              },
+              {
+                "moveId": "disabled-soul-is-explanatorily-unneeded",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 74
+                },
+                "score": 81
+              },
+              {
+                "moveId": "near-death-claims-have-tests",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 85
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "closing-burdens-and-summations",
+        "title": "Closing Burdens and Summations",
+        "weightPercent": 6,
+        "sides": {
+          "pro": {
+            "score": 68,
+            "moves": [
+              {
+                "moveId": "affirmative-closing-case-stands",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 69,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 59
+                },
+                "score": 68
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "negative-closing-demands-demonstration",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 92,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 88
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 68.36,
+        "burdenCompletionAdjustment": 0,
+        "score": 68
+      },
+      "con": {
+        "weightedSectionMean": 82.29,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
+    },
+    "winner": "con",
+    "winningMargin": 14,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 45,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

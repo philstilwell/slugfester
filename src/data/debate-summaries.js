@@ -8988,5 +8988,57 @@ export const debateSummaries = [
         "title": "Personal Experience and Competing Proof Burdens"
       }
     ]
+  },
+  {
+    "id": "hernandez-dillahunty-soul-existence-2015",
+    "number": "201",
+    "title": "Does the Soul Exist? Eric Hernandez vs. Matt Dillahunty (2015)",
+    "label": "Soul, mind, and physical personhood",
+    "date": "2026-08-29",
+    "duration": "1 hr 55 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=xgPSRVLMjEk",
+    "motion": "Does the soul exist?",
+    "summary": "Dillahunty prevailed through verification demands, brain dependence, and physical alternatives, while Hernandez offered a broad metaphysical case whose central necessity inferences remained under-supported.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Substance dualism",
+        "speaker": "Eric Hernandez",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Evidential skepticism",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 68,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Mental Properties, Explanation, and Testability"
+      },
+      {
+        "title": "Unity, Personhood, and Brain Dependence"
+      },
+      {
+        "title": "Emergence, Neuroplasticity, and Physicalism"
+      },
+      {
+        "title": "Free Will, Determinism, and Rationality"
+      },
+      {
+        "title": "Mind, Identity, and Entity Verification"
+      },
+      {
+        "title": "Interaction, Brain Injury, and Survival Evidence"
+      },
+      {
+        "title": "Closing Burdens and Summations"
+      }
+    ]
   }
 ];

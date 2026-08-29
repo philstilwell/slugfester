@@ -1,0 +1,1855 @@
+{
+  "schemaVersion": "1.1-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "201",
+  "debateId": "hernandez-dillahunty-soul-existence-2015",
+  "motion": "Does the soul exist?",
+  "assessmentModel": "5.6 Sol",
+  "isolation": {
+    "scoreBlind": true,
+    "forbiddenMaterialUnavailable": true,
+    "forbiddenMaterialConsulted": false,
+    "noLegacyAssessmentsScoresPublicationProseRankingsOrJudgmentsSeen": true,
+    "contaminationDetected": false,
+    "allowedInputsExhaustivelyLimitedToAuthorizedPacket": true,
+    "statement": "Source review was limited to authorization.json, source-lock.json, events.json, and transcript.txt, with inventory-output-schema.json consulted only as a format contract. The schema was not treated as substantive material."
+  },
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "position": "A soul exists",
+      "bridges": [
+        {
+          "bridgeId": "pro-soul-exists",
+          "tier": "motion",
+          "statement": "An immaterial soul exists."
+        },
+        {
+          "bridgeId": "pro-consciousness-nonphysical",
+          "tier": "central",
+          "statement": "Mental properties cannot be identical with or reduced to physical brain properties."
+        },
+        {
+          "bridgeId": "pro-unified-person",
+          "tier": "central",
+          "statement": "A soul best grounds unified consciousness, indivisible personhood, and identity through change."
+        },
+        {
+          "bridgeId": "pro-free-agency",
+          "tier": "central",
+          "statement": "Libertarian agency requires a nonphysical personal originator."
+        },
+        {
+          "bridgeId": "pro-body-instrument",
+          "tier": "subsidiary",
+          "statement": "Brain dependence is compatible with a soul using the brain as an instrument."
+        },
+        {
+          "bridgeId": "pro-metaphysical-method",
+          "tier": "subsidiary",
+          "statement": "Metaphysical reasoning can establish truths that empirical science alone cannot establish."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "position": "No soul has been shown to exist",
+      "bridges": [
+        {
+          "bridgeId": "con-soul-not-shown",
+          "tier": "motion",
+          "statement": "No soul has been reliably demonstrated."
+        },
+        {
+          "bridgeId": "con-brain-dependence",
+          "tier": "central",
+          "statement": "Split-brain and brain-damage observations support dependence of attributed soul functions on brains."
+        },
+        {
+          "bridgeId": "con-verification-burden",
+          "tier": "central",
+          "statement": "A proposed soul explanation needs a reliable method and evidence of necessity, not mere compatibility."
+        },
+        {
+          "bridgeId": "con-physical-alternatives",
+          "tier": "central",
+          "statement": "Physical and emergent accounts remain viable alternatives to a soul."
+        },
+        {
+          "bridgeId": "con-detectable-interaction",
+          "tier": "subsidiary",
+          "statement": "Any soul that affects material reality should produce detectable manifestations."
+        },
+        {
+          "bridgeId": "con-identity-labels",
+          "tier": "subsidiary",
+          "statement": "Continuing identity can be understood through practical labels applied to changing physical persons."
+        },
+        {
+          "bridgeId": "con-compatibilist-agency",
+          "tier": "subsidiary",
+          "statement": "Agency and rational belief do not require libertarian freedom."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "independent-opening-cases",
+      "title": "Independent Opening Cases",
+      "weightPercent": 24,
+      "rationale": "Covers Hernandez's seven announced independent arguments and Dillahunty's distinct opening standards, neurological evidence, interaction claim, and explanatory objection."
+    },
+    {
+      "sectionId": "direct-rebuttals",
+      "title": "Direct Rebuttals",
+      "weightPercent": 23,
+      "rationale": "Covers each speaker's principal rebuttal to the other's opening case, including instrumentality, neuroplasticity, identity labeling, and emergence."
+    },
+    {
+      "sectionId": "free-will-cross-examination",
+      "title": "Free-Will Cross-Examination",
+      "weightPercent": 15,
+      "rationale": "Covers the first sustained cross-examination exchange over compatibilism, determinism, rationality, and purported demonstrations of freedom."
+    },
+    {
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "title": "Mind, Identity, and Verification Cross-Examination",
+      "weightPercent": 18,
+      "rationale": "Covers the later cross-examination on verification, mental states, qualia, split-brain identity, and whether soul attributes form a demonstrated entity."
+    },
+    {
+      "sectionId": "moderated-and-audience-questions",
+      "title": "Moderated and Audience Questions",
+      "weightPercent": 14,
+      "rationale": "Covers major moderated and audience challenges concerning explanatory gaps, interaction, brain damage, and near-death experiences."
+    },
+    {
+      "sectionId": "closing-summations",
+      "title": "Closing Summations",
+      "weightPercent": 6,
+      "rationale": "Covers both final statements of the parties' central burdens and conclusions."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "mental-and-brain-properties-differ",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 88,
+        "endEvent": 94,
+        "startMs": 216319,
+        "endMs": 235599,
+        "excerpt": "First is the argument from identity. Now we know that conscious states such as a sensation of pain is correlated with certain brain states like C fibers firing in my brain. And we know there's a correlation. But I want to make one thing clear and that's just because we"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator formally handed the affirmative opening to Hernandez, and this span occurs within that uninterrupted opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-consciousness-nonphysical",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Correlation between conscious and brain states does not establish identity between them because mental states have properties not shared by brain states.",
+      "inventoryRationale": "This is the first of Hernandez's explicitly announced independent arguments."
+    },
+    {
+      "moveId": "consciousness-is-irreducible",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 172,
+        "endEvent": 183,
+        "startMs": 425120,
+        "endMs": 456960,
+        "excerpt": "fix the problem. It's not like at 9,999 neurons there are no beliefs. But when you add one more, boom, you've got beliefs. Why not? Well, because if a single court cannot contain things like beliefs, then putting more together and rearranging them does not give you beliefs. And it's not that we can't see how it happens. And I'm not saying that science doesn't yet know how it happens. That would be to miss the point. Rather, it is that trying to understand how it"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-consciousness-nonphysical",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Physical components that individually lack beliefs cannot acquire beliefs merely through aggregation or rearrangement.",
+      "inventoryRationale": "This separately carries Hernandez's announced irreducibility argument."
+    },
+    {
+      "moveId": "intentionality-is-nonphysical",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 194,
+        "endEvent": 201,
+        "startMs": 477440,
+        "endMs": 499280,
+        "excerpt": "conscious states have intentionality. Meaning beliefs are about things. Take my belief that seven is a prime number. The belief is about the number seven. So again, the problem is that by simply rearranging neurons in a different group or structure will not make them about the number seven. Now, let me pause just"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-consciousness-nonphysical",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Beliefs possess aboutness, and rearranging neurons cannot make physical components be about an object or proposition.",
+      "inventoryRationale": "This is Hernandez's separately announced intentionality argument."
+    },
+    {
+      "moveId": "unified-visual-field-requires-subject",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 229,
+        "endEvent": 249,
+        "startMs": 564480,
+        "endMs": 623600,
+        "excerpt": "puts the object back together into a unified hole. Now, why is that? Well, because for this you need something that grounds all of your experiences into one single substantial subject that owns these experiences in order to have a unified visual field. Eric Lacro, philosopher Eric Lacrot gives the example of five chefs in five separate kitchens and each of these five chefs is only working on one part of a single recipe. Now even if all five chefs were working on the recipe at the same time, it does not follow that there is any one single chef working on the whole recipe. In a syllergistic format, it goes as follows. One, I am either an aggregate, a collection of parts, or a soul. Two, aggregates cannot have a unified visual field. Three, I do have a unified visual field. Four. Therefore, I am not an"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-unified-person",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "A unified visual field requires one substantial subject and cannot belong merely to an aggregate of separately processing parts.",
+      "inventoryRationale": "This is the separately announced unified-visual-field argument."
+    },
+    {
+      "moveId": "personhood-is-indivisible",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 253,
+        "endEvent": 260,
+        "startMs": 629040,
+        "endMs": 651920,
+        "excerpt": "first argument is the indivisibility of personhood. One, a physical object can be divided and come in percentages or degrees. Two, I cannot be divided. I am an all or nothing kind of thing. Three, therefore, I am not a purely physical object. I am a soul. Let me"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-unified-person",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Because physical objects are divisible while personhood is all-or-nothing, a person is not purely physical.",
+      "inventoryRationale": "This is the separately announced indivisibility/personhood argument."
+    },
+    {
+      "moveId": "identity-persists-through-change",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 285,
+        "endEvent": 295,
+        "startMs": 703200,
+        "endMs": 734240,
+        "excerpt": "soul. The second argument, identity through change. If something is a physical object composed of parts, it does not survive over time as the same object if it comes to have different parts. My body and brain are constantly changing, losing, and gaining new parts. Three, if I am to survive over time, I must be more than my brain and body. Four, I do survive over time. Conclusion, therefore, I am not my brain"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-unified-person",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "A persisting self cannot be identical to a brain and body whose physical parts change over time.",
+      "inventoryRationale": "This is the separately announced personal-identity-through-change argument."
+    },
+    {
+      "moveId": "free-will-requires-soul",
+      "sectionId": "independent-opening-cases",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 327,
+        "endEvent": 334,
+        "startMs": 800880,
+        "endMs": 827279,
+        "excerpt": "will. One, I am either a soul or a physical object. Two, if I am a purely physical object, then I do not have free will. Four, but I do have free will. I freely came to this debate tonight. For therefore I am not a purely physical object. I am a soul. Aristotle used this illustration. He said if I move a rock"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-free-agency",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Human free will exists, purely physical objects lack it, and therefore a human agent is a soul rather than a purely physical object.",
+      "inventoryRationale": "This is the seventh separately announced opening argument."
+    },
+    {
+      "moveId": "anecdote-does-not-show-necessity",
+      "sectionId": "independent-opening-cases",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 426,
+        "endEvent": 438,
+        "startMs": 1035600,
+        "endMs": 1066880,
+        "excerpt": "And all these explanations were based on biases and rationalizations. uh they were looking for an explanation that was sufficient to explain their observations, but they didn't really care whether or not it was necessary. Anytime you come up with something as a proposed explanation for an observation, in order to say that this is the case, you need to demonstrate that it is both sufficient and necessary. And so when we talk about why is there something rather than nothing, well, the gods that may"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The formal negative opening began after the affirmative opening and continued uninterrupted.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-verification-burden",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "An anecdote may be compatible with a soul explanation without demonstrating that a soul is the necessary explanation.",
+      "inventoryRationale": "This captures Dillahunty's distinct anecdote and necessity standard."
+    },
+    {
+      "moveId": "split-brain-produces-independent-personalities",
+      "sectionId": "independent-opening-cases",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 551,
+        "endEvent": 568,
+        "startMs": 1311039,
+        "endMs": 1348400,
+        "excerpt": "split brain patients are those who had the corpus colosum separate so that the two hemispheres of the brain can't communicate with each other. And in one of the studies and one of the cases where he did this, essentially what happens despite assertions to the contrary is you end up with two people, two distinct personalities that identify individually and communicate independently who can have knowledge that the other half of the brain does not have. The right hemisphere can't talk, but it can communicate using the left arm because the right hemisphere controls the left side of the body. The left hemisphere can talk because that's where the vocal centers are at. And so"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-brain-dependence",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Split-brain cases exhibit independently communicating personalities with different knowledge, linking personal mental organization to brain organization.",
+      "inventoryRationale": "This is the negative's distinct split-brain evidence."
+    },
+    {
+      "moveId": "soul-manifestations-are-investigable",
+      "sectionId": "independent-opening-cases",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 619,
+        "endEvent": 632,
+        "startMs": 1447360,
+        "endMs": 1484080,
+        "excerpt": "But we can investigate the claims of manifesting phenomena within reality but not supernatural causes or explanations. So because I don't think that was really clear. If somebody claims that this phenomenon that we observe is caused by something supernatural, science can't investigate the cause until you give us a mechanism by which we can investigate the supernatural. But it can investigate the manifestation. And this is what we must be talking about in all cases are manifestations in reality. And if there's a soul"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-detectable-interaction",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Even if a supernatural cause itself is inaccessible, its alleged manifestations in material reality can be investigated.",
+      "inventoryRationale": "This separately states the negative's detectable-manifestation claim."
+    },
+    {
+      "moveId": "brain-damage-alters-soul-attributes",
+      "sectionId": "independent-opening-cases",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 651,
+        "endEvent": 664,
+        "startMs": 1520000,
+        "endMs": 1554480,
+        "excerpt": "You can go to the really brain damaged individuals whose personalities have been entirely reset, whose memories have been entirely reset. All of their wants and desires have been reset. Now, what happens in that scenario? If there's a soul in my body and I suffer great brain damage to the point where I have a different personality, I don't have my memories. I have different wants and desires. What now is the relationship between the brain and the soul? Surely the soul's not damaged, too. But now there's a soul that's a godless heathen"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-brain-dependence",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Brain damage can reset memory, personality, wants, and desires, creating difficulty for treating those attributes as properties of an undamaged soul.",
+      "inventoryRationale": "This is the negative's distinct brain-damage evidence."
+    },
+    {
+      "moveId": "soul-is-circular-explanation",
+      "sectionId": "independent-opening-cases",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 691,
+        "endEvent": 707,
+        "startMs": 1623039,
+        "endMs": 1662880,
+        "excerpt": "So what happens when we die? It's a mystery with countless attempts for by religions to answer this. And none of them have any explanation because their answers don't have any explanatory power. They're attempting to solve a mystery by appealing to a bigger mystery. What is it that makes me move? Oh, it's a soul. What's that? It's the thing that makes you move. What is it that gives me this desire? What is it that makes me think this or like this? Oh, that's your soul. How does it do that? What's a soul? Oh, the soul is the thing that does these things. It's an explanation. It's a fiction that we seem to have invented to explain things that"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-soul-not-shown",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Defining the soul as the thing that produces unexplained mental functions merely redescribes the mystery without explanatory power.",
+      "inventoryRationale": "This is a distinct opening objection to the soul as an explanatory posit."
+    },
+    {
+      "moveId": "interaction-must-be-detectable",
+      "sectionId": "independent-opening-cases",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 747,
+        "endEvent": 762,
+        "startMs": 1744000,
+        "endMs": 1780080,
+        "excerpt": "Consciousness is a is a big mystery. Daniel Denner wrote a book called Consciousness Explained and the critics said consciousness explained away was the was the criticism they gave of his book. But the fact that we don't necessarily have a good answer or an answer that appeals to everybody doesn't mean that we should just accept an answer that's coming from philosophical realms and theological realms. It is a scientific question. If there's a soul that interacts in any way with reality, then by definition that interaction is detectable and identifiable. And from what I can see, all we've done"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-detectable-interaction",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "A soul that interacts with reality would have detectable effects, and lack of a complete consciousness theory does not warrant accepting a philosophical soul explanation.",
+      "inventoryRationale": "This develops the interaction claim into a direct evidential burden."
+    },
+    {
+      "moveId": "correlations-still-require-explanation",
+      "sectionId": "direct-rebuttals",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 796,
+        "endEvent": 805,
+        "startMs": 1859760,
+        "endMs": 1884399,
+        "excerpt": "Now, it seems all Matt did was point out some interesting phenomenon, give us correlations. But you'll recall that in my opening, I already addressed that correlations are not explanations, but are in fact the very thing that need explaining which Matt failed to do. So, let's explain these phenomena and correlations in light of my view given substance doism."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The formal affirmative rebuttal follows the negative opening.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-brain-dependence",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "split-brain-produces-independent-personalities",
+        "brain-damage-alters-soul-attributes"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "correlation-not-explanation",
+          "targetMoveId": "split-brain-produces-independent-personalities",
+          "text": "The observed split-brain correlation still needs an explanation and does not itself establish physical identity.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "damage-correlation-not-explanation",
+          "targetMoveId": "brain-damage-alters-soul-attributes",
+          "text": "Brain-damage correlations do not by themselves show that the brain is the complete subject of mental properties.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The negative supplied correlations rather than explanations, while substance dualism can interpret those correlations.",
+      "inventoryRationale": "This is Hernandez's umbrella reply to the neurological opening evidence."
+    },
+    {
+      "moveId": "brain-is-retrieval-instrument",
+      "sectionId": "direct-rebuttals",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 830,
+        "endEvent": 845,
+        "startMs": 1934960,
+        "endMs": 1975600,
+        "excerpt": "interdependence. The leading expert in the world is his name is Stanley Klene who is a non-believer said it is ridiculous to think that memories are in the brain. He says they have to be in the soul. He says the brain is like a CD and when it has grooves in it and when placed in the right retrieval system you'll get your music. However, if the CD is broken or scratched much like if I have a defective brain with ali Alzheimer's then you won't have access to the music. But clearly a broken CD doesn't mean broken music and it doesn't mean that new songs emerge. See, change"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-body-instrument",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "brain-damage-alters-soul-attributes"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "damaged-retrieval-system",
+          "targetMoveId": "brain-damage-alters-soul-attributes",
+          "text": "Damage to a retrieval instrument can block access to memory without showing that the memory itself is destroyed.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "A damaged brain may block a soul's access or expression just as a damaged medium blocks music without destroying the music.",
+      "inventoryRationale": "This is the affirmative's distinct instrumentality answer to brain damage."
+    },
+    {
+      "moveId": "neuroplasticity-shows-two-way-causation",
+      "sectionId": "direct-rebuttals",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 871,
+        "endEvent": 888,
+        "startMs": 2033919,
+        "endMs": 2080159,
+        "excerpt": "B, you would expect two-way causation. As philosopher John Sorrow said, consciousness has a real effect in the world. If there is a soul, then we would expect to see causal power over the brain and body. Now this brings us into the fields of neuroplasticity and cognitive behavior therapy. Jeffrey Schwarz who is a leading neuroscientist has done tremendous work for patients with mental disorders such as OCD, anxiety and depression. He specializes in what is called cognitive behavioral therapy. Now what this means is that you can literally change your brain chemistry simply by changing the way you think. As Dr. Kurt Thompson puts it, nothing in"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-body-instrument",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "interaction-must-be-detectable"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "mental-causation-manifestation",
+          "targetMoveId": "interaction-must-be-detectable",
+          "text": "Cognitive change that alters brain chemistry is offered as the expected detectable manifestation of mind-to-brain causation.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Neuroplasticity and cognitive therapy display mind-to-brain causation expected under substance dualism.",
+      "inventoryRationale": "This separately answers the negative's interaction demand with Hernandez's positive causal claim."
+    },
+    {
+      "moveId": "physicalism-undermines-self-and-freedom",
+      "sectionId": "direct-rebuttals",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 928,
+        "endEvent": 942,
+        "startMs": 2174079,
+        "endMs": 2212000,
+        "excerpt": "this view, A, you don't exist from one moment to the next. B, there is no enduring self who was, is, and will be the owner of all your experiences fully present at each moment of time. However, if you are the same person that walked into this debate tonight, then physicalism is false. So, if physicalism were true, there is no free will. Take neuroplasticity for example, which we just talked about. It would be obvious that it would require you to go have the ability to go against your habitual way of thinking. This is known as libertarian free will. However,"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted affirmative rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-free-agency",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "soul-is-circular-explanation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "dualism-explains-enduring-agent",
+          "targetMoveId": "soul-is-circular-explanation",
+          "text": "The soul is presented as grounding an enduring self and libertarian agency rather than merely naming unexplained functions.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Physicalism eliminates an enduring self and libertarian freedom, whereas the soul grounds both.",
+      "inventoryRationale": "This is a distinct rebuttal consequence concerning rational agency."
+    },
+    {
+      "moveId": "an-explanation-is-not-made-true-by-default",
+      "sectionId": "direct-rebuttals",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 972,
+        "endEvent": 990,
+        "startMs": 2283200,
+        "endMs": 2319640,
+        "excerpt": "There's a lot of stuff that we got to I'm not going to do an entire debate on free will uh other than to point out that there are a lot of people who don't think we have it and even some of the people who do definitely don't think that we have libertarian free will. Maybe we can have some questions about that. Uh but he pointed out that I failed to explain I failed to offer an explanation for for these observations that he explains by appealing to the soul. And I don't think that's completely true because as I pointed out, there may not be an explanation yet. Saying you have an explanation and that your explanation stands until somebody can give a better one doesn't make your explanation true"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The formal negative rebuttal follows Hernandez's rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-verification-burden",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "correlations-still-require-explanation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "default-explanation-rejected",
+          "targetMoveId": "correlations-still-require-explanation",
+          "text": "Lack of a complete alternative does not make the proposed soul explanation true or rational by default.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "An asserted explanation does not become true merely because no better explanation has yet been supplied.",
+      "inventoryRationale": "This is Dillahunty's direct answer to the correlation-versus-explanation challenge."
+    },
+    {
+      "moveId": "identity-is-a-changing-label",
+      "sectionId": "direct-rebuttals",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 992,
+        "endEvent": 1024,
+        "startMs": 2323839,
+        "endMs": 2389839,
+        "excerpt": "He said that the science that demonstrated that there were two people there functioning independently with different likes and preferences, one of them a theist, one of them an atheist, was absurd. And yet he appeals to all experts. But the big question was if you're the same person that walked into this debate, then physicalism is false. And I would argue that what we're really talking about over and over again is a matter of identity. And there's a lot of run really good examples. He used one about a car. Um, and the problem is the labels that we put on things is how we identify them. But we're not necessarily good at doing that. I would argue that you're not the same person that walked into the debate tonight. As a matter of fact, I would argue that whether physicalism is true or not, it is absolutely impossible that you are the same person who walked in because you've had experiences here that you didn't have before. Set aside whether or not how many atoms have changed in your body or anything else, you have clearly had some experience that has changed you. Now, whether or not it changed a soul, I can't say because I don't know anything about a soul. I don't have any way of investigating it. But your brains are"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-identity-labels",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "identity-persists-through-change",
+        "physicalism-undermines-self-and-freedom"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "continuity-does-not-require-sameness",
+          "targetMoveId": "identity-persists-through-change",
+          "text": "A person changes through new experiences, while continuing use of an identity label need not imply an unchanging soul.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "enduring-self-premise-denied",
+          "targetMoveId": "physicalism-undermines-self-and-freedom",
+          "text": "The premise that the audience members are literally unchanged enduring selves is denied.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Personal identity is a practical label applied across physical and experiential change, not evidence of a static soul.",
+      "inventoryRationale": "This is the negative's distinct identity-labeling answer."
+    },
+    {
+      "moveId": "consciousness-may-emerge",
+      "sectionId": "direct-rebuttals",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1065,
+        "endEvent": 1086,
+        "startMs": 2472560,
+        "endMs": 2523880,
+        "excerpt": "all red bricks are red. You're only looking at one facet of it. Neurons are not like that. You mentioned neuroplasticity. We understand that the brain is not like a red brick and neurons don't just produce neuronic or neuron thoughts and thoughts about neurons. Consciousness, one of the most common explanations for it is that it's an emergent property of the brain much that wa wetness is an emergent property of water. A single uh molecule of water isn't wet. But as you get more and more molecules and I don't know how many you produce this quality of wetness which doesn't exist in any single molecule that emergent property is how the consciousness has often been explained as a product of the brain but even if it's wrong"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-physical-alternatives",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "consciousness-is-irreducible",
+        "intentionality-is-nonphysical"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "aggregate-can-have-new-property",
+          "targetMoveId": "consciousness-is-irreducible",
+          "text": "An aggregate may possess an emergent property absent from each individual component.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "neuron-brick-analogy-denied",
+          "targetMoveId": "intentionality-is-nonphysical",
+          "text": "Neurons are not relevantly like bricks whose only pertinent property remains fixed under combination.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Consciousness may be an emergent property of organized brains, and even failure of that account would not establish a soul.",
+      "inventoryRationale": "This is the requested distinct emergent-account alternative."
+    },
+    {
+      "moveId": "split-persons-remain-whole",
+      "sectionId": "direct-rebuttals",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1088,
+        "endEvent": 1111,
+        "startMs": 2524880,
+        "endMs": 2582400,
+        "excerpt": "can't divide a person 50% of a person well I think we dealt a little bit with dividing it I would say that Each of the personalities left in those splitbrain patients are whole persons because person can't be quantified. But you're not the same person. You don't have the same thoughts, the same interests. This labeling of identity. Oh, you're not the same. You change all the time. Yes. And so does the label. So there's this problem of how do I know I wasn't abducted last night and that I'm actually a clone that aliens left? I don't I can't prove it I was asleep. Maybe we could have had a camera, whatever. Maybe they found a way to foil it. But this whether it's me or a car where we're constantly replacing parts, every time we replace a part, it's not the same car. If we're looking back at the"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted negative rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-unified-person",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "personhood-is-indivisible",
+        "unified-visual-field-requires-subject"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "division-yields-whole-personalities",
+          "targetMoveId": "personhood-is-indivisible",
+          "text": "Split-brain division can yield whole personalities rather than fractional persons.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "unity-tracks-brain-organization",
+          "targetMoveId": "unified-visual-field-requires-subject",
+          "text": "Distinct post-split subjects are treated as tracking divided brain organization rather than one indivisible soul.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Split-brain personalities can each be whole persons while differing in thoughts and interests, undermining the inference from indivisibility to a soul.",
+      "inventoryRationale": "This directly answers both indivisibility and unity using the opening split-brain evidence."
+    },
+    {
+      "moveId": "compatibilist-agency-distinguishes-coercion",
+      "sectionId": "free-will-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1172,
+        "endEvent": 1200,
+        "startMs": 2720400,
+        "endMs": 2790960,
+        "excerpt": "I don't believe libertarian free will exists. I'm a compatibilist and I'll dand. Uh I I think I think libertarian free will doesn't exist. And did you freely come to believe that under the compatibleist version of free will? Uh I may or may not have. It appears that I was able to assess things as a thinking agent. Um and that's good enough. Uh it's so what what Dennett basically argues for is the varieties of free will worth wanting. I have the freest will I could imagine. Libertarian free will tends to go further implying that the the decider essentially uh is not bound by constraints. Let let me press a different way then if I can. Sure. Um according to compatibilism it simply means that you have the freedom to freely choose what you are already determined to do. at least according to compatibilism. Um for example there even if I let's say a mad scientist for whatever reason has put some kind of electrode in my arm to make me punch the person in front of me. Now I may"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator handed questioning to Hernandez, and the stable question-answer exchange clearly identifies Dillahunty's answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-compatibilist-agency",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "free-will-requires-soul"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "libertarian-freedom-denied",
+          "targetMoveId": "free-will-requires-soul",
+          "text": "Libertarian freedom is denied while compatibilist thinking agency is retained.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Meaningful agency can consist in a thinking agent acting without undue external direction even if libertarian freedom does not exist.",
+      "inventoryRationale": "This is the requested distinct compatibilist answer."
+    },
+    {
+      "moveId": "determinism-undermines-rational-belief",
+      "sectionId": "free-will-cross-examination",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1227,
+        "endEvent": 1259,
+        "startMs": 2847359,
+        "endMs": 2909839,
+        "excerpt": "Well, well, I disagree. Um according to compatibilism, you are already determined to do something, but you can't will to do anything else. And and that's the the very point of free will. It's called dual ability. You have to be able to either at least will to do it or refrain from willing. So for example, even if someone did drag me out, I could still will to not be dragged out. So libertarian freedom or any kind of freedom all differ on the point, do you have the ability to at least refrain from willing or willing? So if I let me just ask it again then. Do you think that everybody here could have not come to this debate tonight without anything else being different? Without anything else being different? Absolutely not. under libertarian free will or anything. If nothing else was different, then whether they willed it or not, they were going to come. So they were determined to come here if everything was the same. Sure. Okay. So then you do So then you what you just said is is something you were determined to say, you couldn't have said otherwise or even believed otherwise, which means you have no way to prove whether your beliefs are true or false because no matter what you're determined to believe them, you you"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable cross-examination exchange with Hernandez posing the challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-compatibilist-agency",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "compatibilist-agency-distinguishes-coercion"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "dual-ability-required",
+          "targetMoveId": "compatibilist-agency-distinguishes-coercion",
+          "text": "Compatibilism lacks the ability to will otherwise that Hernandez treats as necessary for freedom and rational evaluation.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "If beliefs and utterances are determined and could not be otherwise, a person lacks the freedom needed to rationally assess their truth.",
+      "inventoryRationale": "This is Hernandez's central cross-examination pressure on compatibilism."
+    },
+    {
+      "moveId": "belief-truth-is-independent-of-choice",
+      "sectionId": "free-will-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1260,
+        "endEvent": 1289,
+        "startMs": 2909200,
+        "endMs": 2959839,
+        "excerpt": "would admit that. I have plenty of ways to prove whether or not my beliefs are consistent with reality, which is the only thing that matters. Well, not if you're determined. You just you have to believe it. They have no choice. Whether or not I chose to believe it or not is independent from whether or not my beliefs are accurate. Just as you being forced to punch somebody is independent from your will. My belief could be true. Whether I was destined to believe it or whether I willingly believed it. But but again, but you're assuming my position and now you're thinking that you could see if it's true freely and that you're not determined to believe whether it's true or not. In other words, you have to. No, I'm saying that I believe X is independent from whether or not X is true. Right. Sure. So it doesn't matter whether I was determined to believe X or whether I willingly opted to believe X. That is a separate issue from whether or not my belief is true."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable alternating cross-examination; the asserted answer belongs to Dillahunty.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-compatibilist-agency",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "determinism-undermines-rational-belief"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "truth-choice-separation",
+          "targetMoveId": "determinism-undermines-rational-belief",
+          "text": "Whether a belief matches reality is independent of whether it was freely chosen or determined.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Determination of a belief does not prevent that belief from being accurate or testable against reality.",
+      "inventoryRationale": "This is the negative's direct rationality answer."
+    },
+    {
+      "moveId": "raised-hands-demonstrate-freedom",
+      "sectionId": "free-will-cross-examination",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1359,
+        "endEvent": 1371,
+        "startMs": 3075839,
+        "endMs": 3100559,
+        "excerpt": "Let's try a demonstration. Uh, if you're here today and you don't believe in free will, could you please freely raise your hand? Oh, you do. I had a Now, if you notice the way I worded that, I don't I don't think you caught that. I said, if you don't believe in free will, please freely raise your hand. And some people actually did that. That alone would prove that at least I that there's some type of free will. Nothing determined"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hernandez explicitly introduces and interprets his demonstration during his questioning period.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-free-agency",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "compatibilist-agency-distinguishes-coercion"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "performative-demonstration",
+          "targetMoveId": "compatibilist-agency-distinguishes-coercion",
+          "text": "Voluntarily responding to a request is presented as a direct exercise of freedom.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Audience members freely raising their hands in response to a request demonstrates at least some form of free will.",
+      "inventoryRationale": "This is a distinct attempted demonstration in cross-examination."
+    },
+    {
+      "moveId": "computer-can-mimic-response",
+      "sectionId": "free-will-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1372,
+        "endEvent": 1408,
+        "startMs": 3100160,
+        "endMs": 3160319,
+        "excerpt": "them. No, it wouldn't. How would it not? So, that stimulus response, you haven't demonstrated that it was free will. How did I not? I said if you freely believe to raise your hand. How is that? So So they were determined to I could program a computer to respond to if you freely believe you have free will, turn the screen white and tell a computer that it would do that. It doesn't demonstrate it had free will. But now you're begging the question. You're actually giving me an example where there is no free will. And that's the very question. I don't know that there's not free will there yet. I'm just saying that this particular example demonstrates the problem with your example. You're assuming that an a response to an action necess necessarily means there's free will. And I just gave you a counter example that doesn't require free will, which is is a defeater for your example because that counter example begs the question. That's the very thing that we're trying to ask. Well, you okay. No, it doesn't beg the question. It's a counter example. It's saying this doesn't have free will and could still do what you just said was required free will. If you say this response requires free will and I show you an example where that response doesn't require free will, that's not question begging. It's"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable exchange immediately answers Hernandez's hand-raising demonstration.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-free-agency",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "raised-hands-demonstrate-freedom"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "stimulus-response-counterexample",
+          "targetMoveId": "raised-hands-demonstrate-freedom",
+          "text": "A programmed computer could make the requested response without freedom, so the observed response does not establish free will.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "A stimulus-response performance can be produced without free will, so hand raising does not demonstrate freedom.",
+      "inventoryRationale": "This is the negative's specific counterexample to the proposed demonstration."
+    },
+    {
+      "moveId": "causality-supports-rationality",
+      "sectionId": "free-will-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1442,
+        "endEvent": 1451,
+        "startMs": 3214240,
+        "endMs": 3235520,
+        "excerpt": "certain thing. And I would say that the opposite's true. Your claim, your position is that you can violate the causal explanation. You can violate causality. You can willingly violate causality and that puts an end to rationality. It in a dynamic universe, it is causality that gets us to rationality, not violations of causality."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable cross-examination exchange and explicit contrast with Hernandez's position.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-compatibilist-agency",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "determinism-undermines-rational-belief"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "causal-rationality",
+          "targetMoveId": "determinism-undermines-rational-belief",
+          "text": "Reliable causal relations enable rational inference; exemption from causality would undermine rather than secure rationality.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Causality is what enables rationality in a dynamic universe, while an ability to violate causality would undermine it.",
+      "inventoryRationale": "This is a separately load-bearing compatibilist response about rationality."
+    },
+    {
+      "moveId": "seven-arguments-set-change-standard",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1701,
+        "endEvent": 1720,
+        "startMs": 3649040,
+        "endMs": 3690799,
+        "excerpt": "Uh well first if you can show me why my seven arguments weren't are wrong and where they're false which you haven't done. Um if you could show that well well first of all you got identity over time. If there is no soul, then you don't say the same. If there's no soul, there's no free will. So technically, there's nothing that could change anybody's mind about the existence of the soul. Uh there are things that that physical stuff can't explain. See, earlier you talked about science answering the question, but that that scientism is a well-refuted view of knowledge. I mean, there's a lot of things science can't prove. There's a lot of things science assumes. You can't prove scientifically the existence of truth because first of all, science"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty explicitly asks what would change Hernandez's mind, and Hernandez gives this stable answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-metaphysical-method",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "an-explanation-is-not-made-true-by-default"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "arguments-must-be-refuted",
+          "targetMoveId": "an-explanation-is-not-made-true-by-default",
+          "text": "Hernandez says change would require showing where his seven arguments are false, rather than merely withholding an alternative explanation.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The case should be displaced by identifying failures in the seven arguments, while scientific method cannot exhaust the relevant truths.",
+      "inventoryRationale": "This captures the affirmative's answer to the cross-examination verification challenge."
+    },
+    {
+      "moveId": "reliable-method-is-required",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1772,
+        "endEvent": 1793,
+        "startMs": 3768160,
+        "endMs": 3808160,
+        "excerpt": "I agree with you that it's the wrong tool. The problem is that nobody's given us the right tool. Nobody's demonstrated any tool that can reliably examine or confirm the existence of anything supernatural. Okay. Right. And that and see now we're no longer talking about the soul. Now we're talking about the method. I could equally say no one has given us a tool that shows us that we can't have tools to demonstrate this. I mean it's then we just go in a circle. Yeah. The difference is I'm not making an assertion that we can and you are. which is why you have to demonstrate that you have a method that is reliable. I don't simply saying that nobody's shown us a method that's not reliable doesn't mean that all of a sudden whatever anybody asserts without a method gets to be assumed as rational."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable cross-examination exchange over method and burden.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-verification-burden",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "seven-arguments-set-change-standard",
+        "mental-and-brain-properties-differ"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "claimant-must-show-method",
+          "targetMoveId": "seven-arguments-set-change-standard",
+          "text": "The person asserting access to a supernatural conclusion must demonstrate a reliable method.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "argument-needs-verification",
+          "targetMoveId": "mental-and-brain-properties-differ",
+          "text": "Philosophical distinctions alone do not supply a demonstrated method for confirming a soul.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "No reliable tool for confirming a supernatural soul has been demonstrated, and that burden belongs to the claimant.",
+      "inventoryRationale": "This is the negative's requested verification standard."
+    },
+    {
+      "moveId": "mind-is-produced-by-brain",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1898,
+        "endEvent": 1935,
+        "startMs": 3986000,
+        "endMs": 4055039,
+        "excerpt": "I don't know what the difference is. I I gave an argument earlier. I said that they have different properties. I don't think that they do. I'm convinced that the mind is produced by the brain. And I am okay with a reductionist view that we're talking about brain states. It's just that they present in a way that is different much the same much the same way that uh with the water wet analogy. Well, well, there's a problem with that, but but we can get there later. Yeah. No analogies perfect. So, so you so you're saying that so you take Dennis view that there is no consciousness that consciousness is just just the it's not there. No. Well, you said you gave you took a reductionist position. So, it's just whatever the brain does. So, no. So, so saying that the mind is something that the brain does, that this is produced, it's a phenomena that's produced by the mind doesn't anyway deny that we're conscious. Okay. So you said so you identify a brain state by what kind of pattern it has in the brain. I mean a mental state right? So we correlate with a physical component and the assertion is not the physical brain is all that there is. Okay. The position is the physical brain is all that I can identify and the assertions that there are more can't be"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hernandez asks how a mental state is identified; the stable exchange clearly attributes the reductionist answer to Dillahunty.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-physical-alternatives",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "mental-and-brain-properties-differ",
+        "consciousness-is-irreducible"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "property-difference-denied",
+          "targetMoveId": "mental-and-brain-properties-differ",
+          "text": "The alleged difference is treated as a difference in presentation of brain-produced states, not evidence of two substances.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "consciousness-not-denied",
+          "targetMoveId": "consciousness-is-irreducible",
+          "text": "A reductionist account can affirm consciousness as something the brain does.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The mind is a phenomenon produced by the brain, and reductionism need not deny conscious awareness.",
+      "inventoryRationale": "This is the negative's identity/reduction answer during the second cross-examination."
+    },
+    {
+      "moveId": "felt-pain-exceeds-brain-description",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1937,
+        "endEvent": 1953,
+        "startMs": 4055039,
+        "endMs": 4086400,
+        "excerpt": "So so how do you so in order to know you're in pain you have to look at your brain. Is that what you're I know I'm in pain because my brain experiences pain. There are pain receptors in the brain and and so but you said you have to look at it in order to know what what kind of state you're in. I don't have to look at it on an MRI. So you feel it is what you're saying. My brain feels it. I am my brain. Right. So so you you agree with qualia then there's what I said earlier. There's a feeling to pain. So I disagree with the idea of qualia. I'm talking about exactly what you're describing."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable question-answer exchange; Hernandez explicitly presses the felt-quality inference.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-consciousness-nonphysical",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "mind-is-produced-by-brain"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "first-person-feeling",
+          "targetMoveId": "mind-is-produced-by-brain",
+          "text": "Immediate knowledge of pain includes its felt quality and is not obtained by inspecting a brain state.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The felt quality of pain is directly known and cannot be reduced to merely observing or labeling a brain state.",
+      "inventoryRationale": "This is a substantive qualia reply to the reductionist answer."
+    },
+    {
+      "moveId": "split-brain-supports-two-individuals",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2210,
+        "endEvent": 2237,
+        "startMs": 4513199,
+        "endMs": 4567520,
+        "excerpt": "I don't you didn't rebut it. I talked I talked about a split brain patient, right? And you just flatly asserted that that can't be two people. You called it absurd. The scientists disagree with you and and and what we label as a person, individual experiences, information, interactions that all of the things that we label as a person apart from the meat sack that they're in. No, I'm I disagree. Personhood is not a scientific question. To define a person, you don't look at the physics because I can lose functioning and still be a person. So again, you're assuming that it's all physical. You're assuming that we define personhood by scientists when this is not a scientific question. You don't ask a scientist a metaphysical question. These are philosophical questions. Personhood is not defined by what I do or by science. Not I'm not talking about personhood. I'm talking about how we tend No, I'm not. I'm talking about not a philosophical personhood. I'm talking about how we tend to label individuals,"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable exchange revisiting Dillahunty's split-brain argument.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-brain-dependence",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "correlations-still-require-explanation",
+        "personhood-is-indivisible"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "independent-features-contact",
+          "targetMoveId": "correlations-still-require-explanation",
+          "text": "Different knowledge, information, and interactions are offered as grounds for identifying two individuals, not a bare unexplained correlation.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "indivisible-person-rechallenged",
+          "targetMoveId": "personhood-is-indivisible",
+          "text": "The split-brain evidence is said to conflict with simply asserting that division cannot yield distinct people.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Independent experiences, information, and interactions justify identifying split-brain hemispheres as distinct individuals.",
+      "inventoryRationale": "This is a major later cross-examination return to split-brain evidence."
+    },
+    {
+      "moveId": "soul-grounds-latent-capacities",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2288,
+        "endEvent": 2313,
+        "startMs": 4657360,
+        "endMs": 4706640,
+        "excerpt": "how I I'm debating your position, not you already said you weren't God. I'd debate him if he'd ever show up. Well, that's that's completely irrelevant because you're debating me right now. But the point is the arguments I gave led to the capacities that I mentioned. A soul has a soul is an set of ultimate capacities that I have even if I don't actualize them. When you're asleep, you still have the capacity to speak English even if you're not speaking English. So, a soul is what grounds all your capacities. That was one of the argument I gave. I gave the argument from identity. It keeps you the same through through change. Otherwise, we're not the same person. I gave uh arguments concerning free will. We already talked about that. We gave arguments on um indivisibility of personhood. Uh we talked about the unified visual field. The only reason I can see things as a unity is because I have a soul that grounds and puts it all"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty asks how soul characteristics were identified, and Hernandez gives this sustained answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-unified-person",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "split-brain-supports-two-individuals",
+        "soul-is-circular-explanation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "capacities-persist",
+          "targetMoveId": "split-brain-supports-two-individuals",
+          "text": "Personhood is grounded in ultimate capacities that can remain even when not currently expressed through functioning.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "soul-has-grounding-role",
+          "targetMoveId": "soul-is-circular-explanation",
+          "text": "The soul is assigned the substantive role of grounding capacities, identity, freedom, and unified experience.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "A soul grounds a person's latent capacities, continuing identity, freedom, and unified experience even when particular functions are not actualized.",
+      "inventoryRationale": "This is Hernandez's major cross-examination account of what unifies the attributed capacities."
+    },
+    {
+      "moveId": "why-one-soul-package",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2314,
+        "endEvent": 2336,
+        "startMs": 4706000,
+        "endMs": 4740400,
+        "excerpt": "back together. You you attribute all those things to a soul. Well, I arguments for why I attribute that. I understand that. Let me just get into this question. Okay. You attribute all those characteristics to a soul. Mhm. Why didn't you attribute it to a couple of different things? because it's metaphysically impossible for something like a quark to hold a belief just like it's impossible for the color blue to have weight. I don't I don't see how that remotely addressed the question. So there's a number of characteristics of the soul that you attribute to a soul. What we call capacities, right? Sure. Why is it that you get to say that"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty is the designated questioner and repeatedly states the challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-verification-burden",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "soul-grounds-latent-capacities"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "unity-of-package-questioned",
+          "targetMoveId": "soul-grounds-latent-capacities",
+          "text": "Attributing several capacities to one soul requires justification for one entity rather than multiple independent features.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The affirmative has not shown why the listed capacities belong to one soul rather than several independent things.",
+      "inventoryRationale": "This is a distinct cross-examination challenge to the unity of the proposed soul entity."
+    },
+    {
+      "moveId": "qualities-do-not-demonstrate-entity",
+      "sectionId": "mind-identity-and-verification-cross-examination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2481,
+        "endEvent": 2510,
+        "startMs": 4996000,
+        "endMs": 5050800,
+        "excerpt": "I honestly view it as philosophical dancing because what you're basically doing at every single turn is saying that there are qualities, right, which necessitate this thing that I'm going to call the soul. There's no demonstration there of the reality of it. It could just be it could just be that there are qualities which you are labeling as a soul as a package and that is completely separate from whether or not there is actually a soul that that is an extent thing that trans trans uh transcends the body. Right? And all you're doing is giving the possibility that I'm wrong. But that that's the weakest argument rebuttal you can give just because it's a strong enough rebuttal when it's just up against an unfounded assertion that I'm going to label. Let me tell you why that's not a good a good rebuttal. Because if you're saying it's possible that I could be wrong, then I could equally say, well, it's also possible that I could be wrong about being wrong, which would make me right again. And then we'd go in circles. So that's actually wouldn't actually make you"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Stable exchange during Dillahunty's questioning period.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-soul-not-shown",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "soul-grounds-latent-capacities"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "label-versus-entity",
+          "targetMoveId": "soul-grounds-latent-capacities",
+          "text": "Collecting observed qualities under the word soul does not demonstrate a transcendent entity that possesses them.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Observed qualities can be packaged under a label without demonstrating that a real transcendent soul exists.",
+      "inventoryRationale": "This is the negative's culminating cross-examination verification reply."
+    },
+    {
+      "moveId": "soul-case-is-not-gap-reasoning",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2767,
+        "endEvent": 2788,
+        "startMs": 5542239,
+        "endMs": 5589280,
+        "excerpt": "believe in the soul of the gaps? No. What? A lot of my Yeah, I thought I thought you'd might bring that up. A lot of my arguments weren't I don't know how this works, therefore a soul. My arguments were physical stuff can't do this, so you need something non-physical. For example, um I I could have easily said, well, you're saying that I could have said, well, Matt's saying there is no soul because of a naturalism of the gaps. We don't know how to investigate it. Therefore, I can't believe that it's not physical. So, the soul of the gaps, which is would essentially be that I'm arguing from ignorance, but I'm not arguing from ignorance. There are some fundamental phenomena about ourselves. Unified visual field, identity through time, all these things that need explaining and"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the soul-of-the-gaps question to Hernandez.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-consciousness-nonphysical",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "an-explanation-is-not-made-true-by-default",
+        "qualities-do-not-demonstrate-entity"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "impossibility-not-ignorance",
+          "targetMoveId": "an-explanation-is-not-made-true-by-default",
+          "text": "The inference is presented as resting on the claimed impossibility of physical production, not merely the absence of a current explanation.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "phenomena-require-ground",
+          "targetMoveId": "qualities-do-not-demonstrate-entity",
+          "text": "Unified experience and identity through time are said to require a nonphysical ground rather than an arbitrary package label.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The soul inference is not offered to fill temporary ignorance but to answer phenomena that physical matter allegedly cannot produce.",
+      "inventoryRationale": "This captures a major moderated question and Hernandez's answer."
+    },
+    {
+      "moveId": "methodological-not-philosophical-naturalism",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2800,
+        "endEvent": 2827,
+        "startMs": 5607520,
+        "endMs": 5660560,
+        "excerpt": "It's strange that he accu he said you said you could have accused me of believing naturalism of the gaps. Yeah. Which is exactly what you said when you said that I refused you think that I refused to believe because of a prior commitment to naturalism which is absolutely false because not only was I not a naturalist. I was a fundamentalist Christian for more than 25 years. Uh but I had no commitment to naturalism. I became convinced of it. And by the way, I'm only supporting methodological naturalism and not philosophical naturalism. I have never defended that. uh because that's an assertion that I don't think you can actually make a case for. So, okay, I'm going to move into to y'all's questions. And again, same same rules. I'm going to try to go fast. Matt, it's your turn. U and and I'm not I haven't had time to proof these very much. So, if uh say something I shouldn't, forgive me. Uh there's very solid evidence in the field of neuroscience. What are your thoughts"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator grants Dillahunty a response immediately after Hernandez's answer.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-verification-burden",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "soul-case-is-not-gap-reasoning"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "prior-commitment-denied",
+          "targetMoveId": "soul-case-is-not-gap-reasoning",
+          "text": "Dillahunty denies that his evidential standard arises from an a priori commitment to philosophical naturalism.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The negative relies on methodological naturalism rather than asserting philosophical naturalism or rejecting the soul by prior commitment.",
+      "inventoryRationale": "This is the major immediate reply to the soul-of-the-gaps answer."
+    },
+    {
+      "moveId": "interaction-is-ontologically-basic",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2907,
+        "endEvent": 2916,
+        "startMs": 5817119,
+        "endMs": 5839679,
+        "excerpt": "you say what does that mean? Well, at one point we have to stop and not ask why is it even, but what does it mean to be even? So the question would be what does it mean for the soul to interact with the body? And the answer would be it's a basic action and you can't assume that there is an intermediate link because that would lead to an infinite regress. So if there is a soul, it's an"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "An audience question is explicitly directed to Hernandez about immaterial-material interaction.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-body-instrument",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "interaction-must-be-detectable",
+        "reliable-method-is-required"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "basic-causal-action",
+          "targetMoveId": "interaction-must-be-detectable",
+          "text": "Soul-body causation is treated as a basic action that need not operate through a further intervening mechanism.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "regress-stopping-answer",
+          "targetMoveId": "reliable-method-is-required",
+          "text": "Demanding a further mechanism at every stage would generate an infinite regress, so explanation must terminate in basics.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Soul-body interaction is an ontologically basic action for which no intermediate mechanism is required.",
+      "inventoryRationale": "This is the affirmative's direct audience-question answer to the interaction problem."
+    },
+    {
+      "moveId": "interaction-remains-unconfirmed",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2918,
+        "endEvent": 2929,
+        "startMs": 5839679,
+        "endMs": 5860960,
+        "excerpt": "The benches aren't uncomfortable. They make you uncomfortable. You don't need a soul for that. All you need is a brain attached to nerve endings and gravity that pulls your weight down. uh questioning certain what's that question I said just question begging the thing that we've been saying I can't answer the other question of what attaches the soul to the body because I don't think it does and I don't know how you could confirm that."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator grants Dillahunty the response to the same interaction question.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-detectable-interaction",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "interaction-is-ontologically-basic"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "basic-label-does-not-confirm",
+          "targetMoveId": "interaction-is-ontologically-basic",
+          "text": "Calling the interaction basic supplies no way to confirm that a soul attaches to or affects the body.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "No soul is needed to explain the cited bodily experience, and the asserted soul-body connection remains unconfirmed.",
+      "inventoryRationale": "This is the negative's immediate audience-question reply."
+    },
+    {
+      "moveId": "brain-damage-disrupts-instrument",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 3145,
+        "endEvent": 3164,
+        "startMs": 6320159,
+        "endMs": 6361520,
+        "excerpt": "Right. and and which is actually what I already went over earlier when I talked about and I gave the analogy. Yes, it's analogy that you pop a guitar string and and you lose functioning. You you may even you untune a guitar and you get different kind of music because if you mess with the physical then yeah you affect the ability of the soul to be able to interact. So these kind of cases are are essentially cases where you are messing with a thing that the soul uses much like a a musician would not be able to play even if he's the best musician in the world with an untuned or badly tuned or pop string guitar. So the inter interaction with the soul and body is such a deep unity that yeah if you mess you mess with one you could affect the"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the multiple-personality and brain-injury question to Hernandez.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-body-instrument",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "brain-damage-alters-soul-attributes"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "injured-instrument-explains-output",
+          "targetMoveId": "brain-damage-alters-soul-attributes",
+          "text": "Brain injury changes the soul's available instrument and therefore its expressed functioning without damaging the soul itself.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Brain injury can alter expressed personality and ability by damaging the soul's physical instrument rather than the soul.",
+      "inventoryRationale": "This is the major audience-question restatement of the instrument reply."
+    },
+    {
+      "moveId": "disabled-soul-is-explanatorily-unneeded",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 3176,
+        "endEvent": 3193,
+        "startMs": 6381920,
+        "endMs": 6414960,
+        "excerpt": "this view that the physical prevents the soul from working is something I addressed early on which demonstrates that the soul isn't needed for the brain to actually do work and do all the things that we identify with it. It it's actually kind of weird to me that you could have this idea that there's a soul sitting out there frustrated that it can't do the things that it wants to do because the body is doing the things that it wants to do or is destined to do whatever. Not only multiple personality disorders, I'm I hope there's a question. If not, maybe we can talk about it later. I'm interested in your take on on demonic possession or claims of demonic possession, I suppose, I"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator grants Dillahunty the response to Hernandez's brain-damage answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-brain-dependence",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "brain-damage-disrupts-instrument"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "brain-works-without-soul-input",
+          "targetMoveId": "brain-damage-disrupts-instrument",
+          "text": "If the body continues the relevant work while the soul is prevented from acting, the soul is not required to explain that work.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "If brain damage prevents a soul from directing behavior while the brain continues producing behavior, the soul is explanatorily unnecessary.",
+      "inventoryRationale": "This is the negative's major reply to the instrument analogy."
+    },
+    {
+      "moveId": "near-death-claims-have-tests",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 3216,
+        "endEvent": 3238,
+        "startMs": 6461280,
+        "endMs": 6511840,
+        "excerpt": "Yeah. So, like I said up there, we keep getting the how do you explain this if not for that? Uh the answer may be that we don't. But the thing is near-death experiences have been tested and investigated pretty thoroughly. Uh one thing to remember is they're neardeath experiences and not death. Although there are people who claim to have gone to heaven and come back or had past lives. And the thing is none of those things are consistent. So Eric has a number of views about what the soul can and can't do. Uh reincarnation isn't within his model. So past lives are out. And yet the evidence for the past life stuff is on a par with the NDE stuff. The nice thing is that we've been able to test it like in environments where you're uh under undergoing a surgical procedure because you can put a note for example on the top of a surface that nobody down below could uh see. You"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the near-death-experience question to Dillahunty.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-verification-burden",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "soul-case-is-not-gap-reasoning"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "anecdotes-can-be-tested",
+          "targetMoveId": "soul-case-is-not-gap-reasoning",
+          "text": "Near-death claims can be tested for information unavailable through ordinary perception rather than accepted because no alternative explanation is complete.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Near-death experiences are not death, conflict with related claims, and can be tested using hidden targets rather than treated as automatic soul evidence.",
+      "inventoryRationale": "This captures a major audience question and the negative's evidential answer."
+    },
+    {
+      "moveId": "determined-brain-cannot-ground-trust",
+      "sectionId": "moderated-and-audience-questions",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 3256,
+        "endEvent": 3274,
+        "startMs": 6542320,
+        "endMs": 6579679,
+        "excerpt": "Well, on Matt's view, if it's your brain that does everything, the more important question would be that if my brain tells me everything, why should I trust my brain at all? especially if it doesn't have free will and it's determined to believe what it does. Um it's it's it seems again we're back to the mechanism how do you know kind of question but just asserting that science doesn't have a mechanism so you can't know and it could be this or that is like saying science can't demonstrate that the color blue doesn't have weight but that doesn't mean it can't have weight. There are simply some things that are metaphysically impossible as far as near-death experiences. Yeah, I believe yeah I believe it happened."
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator grants Hernandez a response immediately after Dillahunty's near-death answer.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-metaphysical-method",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "near-death-claims-have-tests",
+        "belief-truth-is-independent-of-choice"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "brain-trust-challenge",
+          "targetMoveId": "near-death-claims-have-tests",
+          "text": "A method implemented by a wholly determined brain is challenged as lacking a basis for trust.",
+          "contacted": true,
+          "decisive": false
+        },
+        {
+          "componentId": "determination-revisited",
+          "targetMoveId": "belief-truth-is-independent-of-choice",
+          "text": "Hernandez reiterates that determined belief formation cannot secure rational trust in the brain's conclusions.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "If a determined brain produces every belief, the negative lacks grounds for trusting its judgments, while some impossibilities are established metaphysically rather than experimentally.",
+      "inventoryRationale": "This is the affirmative's major reply to the near-death and verification answer."
+    },
+    {
+      "moveId": "affirmative-closing-case-stands",
+      "sectionId": "closing-summations",
+      "side": "pro",
+      "speaker": "Eric Hernandez",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 3331,
+        "endEvent": 3356,
+        "startMs": 6676719,
+        "endMs": 6723119,
+        "excerpt": "Uh well well basically again I mean it really comes down to a lot of things like our view of truth, our view of knowledge, our view of what can be determined as true. Uh I think you can have truth outside of science and if you believe that there is no truth outside of science and you're believing something that's not a scientific statement. So it's self-defeating. Uh, I gave seven arguments for the existence of the soul. It said that correlations were not explanations. I said, in order to explain this, you need something to ground these things. Matt simply said, well, you could be wrong. That, well, that's not a reputation. So in the end, I still think what I said in the beginning is that without any good defeaters, we're still justified in believing that there's a soul based on the metaphysical implications of what it would mean for something, the predictability that we have and the way that we can explain the things that we do that is literally impossible to be"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites final closing remarks and gives Hernandez the first closing.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-soul-exists",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "qualities-do-not-demonstrate-entity",
+        "reliable-method-is-required",
+        "consciousness-may-emerge"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "label-objection-rejected",
+          "targetMoveId": "qualities-do-not-demonstrate-entity",
+          "text": "The seven arguments are said to supply grounding implications rather than a mere package label.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "science-not-exclusive",
+          "targetMoveId": "reliable-method-is-required",
+          "text": "Truth can be established outside empirical science, so the negative's verification demand is treated as too restrictive.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "physical-explanation-impossible",
+          "targetMoveId": "consciousness-may-emerge",
+          "text": "The physical alternative is rejected as metaphysically incapable of producing the relevant phenomena.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The seven metaphysical arguments remain undefeated, correlations are not explanations, and belief in a soul remains justified.",
+      "inventoryRationale": "This inventories Hernandez's final synthesis without evaluating it."
+    },
+    {
+      "moveId": "negative-closing-demands-demonstration",
+      "sectionId": "closing-summations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 3378,
+        "endEvent": 3402,
+        "startMs": 6764239,
+        "endMs": 6817679,
+        "excerpt": "whether or not the color blue I'm sorry go ahead no whether or not the color blue has weight is a matter of definition just like there's no uh married bachelors um it's not a scientific question it's a question of reason it's founded on the foundations of reason identity non-contradiction excluded middle which I take as a presupposition of practicality when it comes to a soul science and me doesn't say oh there is no soul or there is nothing supernatural it says, \"We need something more than assertions. We need something more than this seems to fit the experience or we're going to label this collection of mysteries as the soul.\" And when we talked about, you know, I I think that there were just a number of assertions. Physicalism can't do this. Where's the demonstration of this? Where's the demonstration that physicalism is forever barred from confirming or"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Dillahunty the final closing after Hernandez finishes.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-soul-not-shown",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "affirmative-closing-case-stands",
+        "soul-case-is-not-gap-reasoning",
+        "interaction-is-ontologically-basic"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "assertions-insufficient",
+          "targetMoveId": "affirmative-closing-case-stands",
+          "text": "The closing seven-argument synthesis is answered by demanding more than assertions that physicalism cannot account for the phenomena.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "gap-distinction-denied",
+          "targetMoveId": "soul-case-is-not-gap-reasoning",
+          "text": "Claiming metaphysical impossibility still requires a demonstration that physical accounts are barred.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "interaction-remains-testable",
+          "targetMoveId": "interaction-is-ontologically-basic",
+          "text": "An immaterial cause affecting material reality would manifest detectably even if described as basic.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The soul remains an undemonstrated label for mysteries because the affirmative has not shown that physical accounts are impossible or identified the required interaction.",
+      "inventoryRationale": "This inventories Dillahunty's final synthesis without evaluating it."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {
+      "totalAbsoluteDifference": 3,
+      "sectionAbsoluteDifference": 2
+    },
+    "totals": {
+      "pro": 21,
+      "con": 24,
+      "absoluteDifference": 3
+    },
+    "sections": [
+      {
+        "sectionId": "independent-opening-cases",
+        "pro": 7,
+        "con": 6,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "direct-rebuttals",
+        "pro": 4,
+        "con": 4,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "free-will-cross-examination",
+        "pro": 2,
+        "con": 4,
+        "absoluteDifference": 2
+      },
+      {
+        "sectionId": "mind-identity-and-verification-cross-examination",
+        "pro": 3,
+        "con": 5,
+        "absoluteDifference": 2
+      },
+      {
+        "sectionId": "moderated-and-audience-questions",
+        "pro": 4,
+        "con": 4,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "closing-summations",
+        "pro": 1,
+        "con": 1,
+        "absoluteDifference": 0
+      }
+    ],
+    "rationaleRequired": true,
+    "rationale": "The overall absolute difference is 3 because the complete source contains more separately load-bearing negative replies in the two cross-examination sections. In free-will cross-examination, Hernandez advances two selected substantive moves—the determinism/rationality challenge and the hand-raising demonstration—while Dillahunty supplies four distinct answers: compatibilist agency, truth independent of choice, the programmed-computer counterexample, and causality as the basis of rationality. Combining those answers would erase independently asserted reasoning. In mind, identity, and verification cross-examination, Hernandez supplies three selected moves—the standard for changing his mind, the qualia challenge, and the account of latent capacities—while Dillahunty supplies five distinct moves: the reliable-method standard, the brain-produced-mind answer, the renewed split-brain-individuals claim, the one-package challenge, and the culminating distinction between labeling qualities and demonstrating an entity. These asymmetries arise from the actual sequence and density of distinct answers rather than forced side parity. All seven expressly announced affirmative opening arguments are retained separately; none was omitted."
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "completeEventsReviewed": true,
+    "allSpansSourceExact": true,
+    "allQuoteSpansSourceExact": true,
+    "movesChronological": true,
+    "responseTargetsEarlierOnly": true,
+    "scoreBlind": true
+  }
+}

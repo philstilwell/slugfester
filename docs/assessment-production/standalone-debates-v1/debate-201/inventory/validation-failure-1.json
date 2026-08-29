@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "201",
+  "status": "rejected-before-inventory-lock",
+  "preservedArtifact": "docs/assessment-production/standalone-debates-v1/debate-201/inventory/preserved-invalid-inventory-1.json",
+  "violations": [
+    "debateNumber was numeric rather than the required string",
+    "route bridge objects used claim instead of statement",
+    "section objects nested moves and used weight instead of weightPercent",
+    "the required top-level moves array was absent",
+    "move records used summary, speakerAttribution, and top-level span fields instead of the locked move schema",
+    "the selection was mechanically symmetric and omitted separately load-bearing arguments explicitly enumerated in the opening"
+  ],
+  "judgmentStarted": false,
+  "scoresPresent": false,
+  "recoveryAuthorized": "One fresh score-blind inventory pass using the same immutable source with a machine-enforced schema and an explicit completeness check."
+}

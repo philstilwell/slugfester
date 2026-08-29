@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-deterministic-inventory-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "201",
+  "status": "complete",
+  "sourceInventorySha256": "986bfa418a1e3f42b34a503959c95092447608e3b4b478d2498bccbe57bbe1a6",
+  "outputInventorySha256": "4d6af6c98a53c856c9b74805087c7d177b2191bce34f04edde1ae1e266b71107",
+  "trigger": "Publication capacity preflight found seven pro and six con moves in one section, exceeding the general four-card-per-side ceiling.",
+  "changes": [
+    {
+      "path": "sections",
+      "from": "Six sections with one 7/6 opening section",
+      "to": "Seven semantic sections with no side above four moves",
+      "reason": "The regrouping preserves all selected moves while making one-to-one publication possible under the general row rule."
+    },
+    {
+      "path": "moves[*].sectionId",
+      "reason": "Moves were reassigned only by their already-locked semantic content; chronology, source evidence, and response links were unchanged."
+    },
+    {
+      "path": "selectionBalanceAudit",
+      "reason": "Per-section counts and the evidence-led rationale were recomputed for the seven-section grouping."
+    }
+  ],
+  "unchanged": [
+    "all 45 selected moves and their chronological order",
+    "source spans and quote-eligible spans",
+    "move IDs, propositions, and inventory rationales",
+    "importance weights and burden contacts",
+    "response targets and response components",
+    "speaker attribution",
+    "route definitions"
+  ],
+  "downstreamDisposition": "The first judgments, adjudication, final ledger, and score pass were preserved under restarts/restart-1 and are not reused. Every active downstream stage restarts from this hash-locked inventory."
+}

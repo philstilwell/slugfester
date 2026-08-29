@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-standalone-post-rhetorical-tag-rendering-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-post-rhetorical-tag-rendering-audit",
+  "debateNumber": "201",
+  "debateId": "hernandez-dillahunty-soul-existence-2015",
+  "completedAt": "2026-08-29T22:05:52.006Z",
+  "url": "http://127.0.0.1:4174/debate/hernandez-dillahunty-soul-existence-2015/",
+  "browser": {
+    "controller": "playwright-cli",
+    "family": "Chromium"
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "scrollWidth": 1440,
+      "referenceLinks": 6,
+      "screenshot": {
+        "path": "output/playwright/standalone-debate-v1/debate-201/desktop-1440x1000.png",
+        "sha256": "f16f22bd0112d7a5e649907d0b87c86f3db0ce56cd3dd03483a91048c52ce9a9",
+        "bytes": 2036886
+      }
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "referenceLinks": 6,
+      "screenshot": {
+        "path": "output/playwright/standalone-debate-v1/debate-201/mobile-390x844.png",
+        "sha256": "f512b0004817bbf89106c4abc6f5602de71f18d254fb1e3bd2c19dbfd9bcfab8",
+        "bytes": 1814314
+      }
+    }
+  ],
+  "checks": {
+    "argumentTagLinksVisible": 4,
+    "overallReferenceLinksVisible": 2,
+    "tagPopoversContainDefinitionAndContext": true,
+    "critiquePointerAndKeyboardControlsPassed": true,
+    "aiExtensionPointerAndKeyboardControlsPassed": true,
+    "mobileCritiqueThenDistantTapPassed": true,
+    "noHorizontalOverflow": true,
+    "noConsoleErrorsOrWarnings": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "viewports": 2,
+    "screenshots": 7,
+    "acceptedTagsRendered": 4,
+    "desktopCritiqueOpenScreenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-201/desktop-critique-open.png",
+      "sha256": "22c430f3d243a49f76279a2016faacda1ec9ceca24d77ce70578010481771e2d",
+      "bytes": 342707
+    },
+    "desktopTagPopoverScreenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-201/desktop-tag-popover.png",
+      "sha256": "92f9939849723d48e006f07bacd6c9366cb6ced6b1cf07f3fae209a7fddcb715",
+      "bytes": 283062
+    },
+    "mobileCritiqueOpenScreenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-201/mobile-critique-open.png",
+      "sha256": "0aaf37f11cb9795999903e88708d5f4af87f9daae1942db4e6a6266eaf594296",
+      "bytes": 111270
+    },
+    "mobileAiOpenScreenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-201/mobile-ai-open.png",
+      "sha256": "471cabad4fe2eb3c2f1537727c8754bf1bc7909a2d31d0c50e9764a4fc1cfe4e",
+      "bytes": 136034
+    },
+    "runtimeFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "temporaryControllerDirectoriesRemaining": 0,
+    "directIncrementalCostUsd": 0
+  }
+}
