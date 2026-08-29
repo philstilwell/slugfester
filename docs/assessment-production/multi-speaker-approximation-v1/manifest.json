@@ -1,0 +1,1159 @@
+{
+  "schemaVersion": "1.0-multi-speaker-approximation-manifest",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "status": "process-and-source-census-frozen-awaiting-checkpoint-execution",
+  "frozenOn": "2026-08-28",
+  "authorization": {
+    "userInstruction": "Let's try again to create a comparable assessment process for these. They do not need to be perfect, but just approximate the assessments and scores.",
+    "preparationAuthorized": true,
+    "modelExecutionAuthorizedByThisManifest": false,
+    "paidTranscriptionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "rankingMutationAuthorized": false
+  },
+  "method": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "rubric": "Slugfester Reassessment Rubric v2 — Multi-Speaker Approximation",
+    "primaryJudgmentsPerDebate": 2,
+    "disputeAdjudication": "isolated-existing-option-only",
+    "sideScoreFormula": "same move, section, and overall aggregation as active v2.1 production",
+    "speakerContributionScores": "diagnostic-only-not-ranking-eligible",
+    "directIncrementalModelCostUsd": 0,
+    "expectedPaidTranscriptionCostUsd": 0,
+    "estimatedAggregateModelContextHours": {
+      "minimum": 7,
+      "maximum": 10
+    }
+  },
+  "controls": {
+    "scoreBlind": true,
+    "legacyBlind": true,
+    "completeTranscriptRequired": true,
+    "sourceHashReplayRequired": true,
+    "actualSpeakerOwnsEveryMove": true,
+    "teammateCreditTransferProhibited": true,
+    "explicitAdoptionEvidenceRequired": true,
+    "belowHighAttributionRequiresAudio": true,
+    "repositoryAuthoredTotalsOnly": true,
+    "scorePassesMaximumPerDebate": 1,
+    "ordinaryV2AttributionProhibited": true,
+    "approximationDisclosureRequired": true
+  },
+  "scoreStability": {
+    "meanAbsoluteDistanceAtMost": 4,
+    "maximumDistanceAtMost": 8,
+    "maximumExcursionAtMost": 3,
+    "sharedInitialWinnerCannotReverse": true
+  },
+  "executionOrder": {
+    "checkpoint": {
+      "debateNumbers": [
+        "71",
+        "84",
+        "154"
+      ],
+      "rationale": "Covers two-versus-one, one-versus-two, and mixed inquiry-panel structures. This is a production checkpoint, not a held-out reliability gate."
+    },
+    "batches": [
+      {
+        "batch": 1,
+        "debateNumbers": [
+          "18",
+          "32",
+          "35",
+          "45"
+        ]
+      },
+      {
+        "batch": 2,
+        "debateNumbers": [
+          "95",
+          "96",
+          "105",
+          "115"
+        ]
+      },
+      {
+        "batch": 3,
+        "debateNumbers": [
+          "125",
+          "149",
+          "173",
+          "174",
+          "184"
+        ]
+      }
+    ],
+    "replacementSelectionAllowed": false,
+    "concurrentBatchesAllowed": false
+  },
+  "sourceSummary": {
+    "debates": 16,
+    "completeChains": 16,
+    "transcriptFiles": 16,
+    "eventFiles": 16,
+    "sourceManifests": 16,
+    "paidTranscriptionExpected": false
+  },
+  "implementationLocks": {
+    "workflow": {
+      "path": "docs/assessment-multi-speaker-approximation-workflow-v1.md",
+      "bytes": 7835,
+      "sha256": "13db427c331dac999548f91dffc00eef26a8a46b69535f6d3b3d8dbc3de52b2a"
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "bytes": 6634,
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    },
+    "contractLibrary": {
+      "path": "scripts/lib/assessment-production-multi-speaker-approximation-v1.mjs",
+      "bytes": 35675,
+      "sha256": "607796c082302f40e30d43d7bf938ac4646198dbdaa1131e353c6d28eb4c1c63"
+    },
+    "contractTest": {
+      "path": "scripts/test-assessment-production-multi-speaker-approximation-v1.mjs",
+      "bytes": 10889,
+      "sha256": "6a7f957ec32d387f844f32abf5613f03b66237d21d9d0e6aaf6e3348e5b044bd"
+    },
+    "primaryJudgmentSchema": {
+      "path": "docs/assessment-production/multi-speaker-approximation-v1/schemas/primary-judgment.schema.json",
+      "bytes": 4981,
+      "sha256": "f81e94005b2d49845f44785559d2b9e63b4bafa79d413f264b4087a9ab9a3ebd"
+    },
+    "adjudicationSchema": {
+      "path": "docs/assessment-production/multi-speaker-approximation-v1/schemas/adjudication.schema.json",
+      "bytes": 2130,
+      "sha256": "71ec1d83d92d67b08908cb9422bc63ae5f36a67f434cda58580f6ec9b9a9b6c7"
+    },
+    "activeScorePolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "bytes": 4896,
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666"
+    }
+  },
+  "debates": [
+    {
+      "debateNumber": "18",
+      "debateId": "williams-goff-oldfield-oconnor-between-god-atheism-2024",
+      "title": "Rowan Williams, Philip Goff, Elizabeth Oldfield, and Alex O'Connor: Between God and Atheism",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9WnOYHi5k4g",
+      "videoId": "9WnOYHi5k4g",
+      "format": "panel-3v1",
+      "sides": {
+        "pro": {
+          "label": "Christian and God-ish",
+          "speakers": [
+            "Rowan Williams",
+            "Philip Goff",
+            "Elizabeth Oldfield"
+          ]
+        },
+        "con": {
+          "label": "Atheist and skeptical",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/9WnOYHi5k4g/transcript.txt",
+          "bytes": 95569,
+          "sha256": "5dbdd505b11be1dd055f11ef204588cc0ecc940a41d0820dc233991bf1a669d7"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/9WnOYHi5k4g/events.json",
+          "bytes": 228639,
+          "sha256": "09c3e52fc85938681b094723db839ac9cace611104db92d64877b92804c0409d"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/9WnOYHi5k4g/manifest.json",
+          "bytes": 1010,
+          "sha256": "3abdd7cfdf701030c3898cd5a7fc65b2885ec1a8dd4924989258e43db0ab818f"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 5077,
+        "eventCount": 2139,
+        "wordCount": 16781,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "32",
+      "debateId": "knechtle-oconnor-halper-biblical-god-2024",
+      "title": "Cliffe and Stuart Knechtle vs Alex O'Connor and Phil Halper: Does the Biblical God Exist?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ypRtARVG1BA",
+      "videoId": "ypRtARVG1BA",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Biblical theism",
+          "speakers": [
+            "Cliffe Knechtle",
+            "Stuart Knechtle"
+          ]
+        },
+        "con": {
+          "label": "Skeptical critique",
+          "speakers": [
+            "Alex O'Connor",
+            "Phil Halper"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/ypRtARVG1BA/transcript.txt",
+          "bytes": 204459,
+          "sha256": "504b1d377b5ad06b8bd04ec9952a769e57b0c6fc923874f0db2e047b8ddc4327"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/ypRtARVG1BA/events.json",
+          "bytes": 474836,
+          "sha256": "854106976925135e21c9a662f8b1934e07db3057045208a48af2fd83283f32da"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/ypRtARVG1BA/manifest.json",
+          "bytes": 999,
+          "sha256": "fbe6cabbe6de5cea66f79507f6726ca58cc97faa9405fb427b77f5a101237912"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 9820,
+        "eventCount": 4387,
+        "wordCount": 35311,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "35",
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "title": "Sean Carroll and Michael Shermer vs Ian Hutchinson and Dinesh D'Souza: Has Science Refuted Religion?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ulykALV2FQ8",
+      "videoId": "ulykALV2FQ8",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Science refuted religion",
+          "speakers": [
+            "Sean Carroll",
+            "Michael Shermer"
+          ]
+        },
+        "con": {
+          "label": "Religion not refuted",
+          "speakers": [
+            "Ian Hutchinson",
+            "Dinesh D'Souza"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/ulykALV2FQ8/transcript.txt",
+          "bytes": 141204,
+          "sha256": "51e43ff9453eda91fbb7a6816c1adbb2c3b7e8361f31fd7f2568c6de34251d16"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/ulykALV2FQ8/events.json",
+          "bytes": 331646,
+          "sha256": "eb553642477116561edeb0a6f946fd31b3f9cd0062ab8f9d8fe683add1a76aee"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/ulykALV2FQ8/manifest.json",
+          "bytes": 972,
+          "sha256": "028f8fe555ce43955d69694bba626e04bc4997d1402451a21525dc657a832dde"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 7517,
+        "eventCount": 3081,
+        "wordCount": 23301,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "45",
+      "debateId": "singer-frazier-swinburne-oconnor-morality-2025",
+      "title": "Peter Singer, Jessica Frazier, Richard Swinburne, and Alex O'Connor: The Mystery of Morality",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rI1OevN2FDI",
+      "videoId": "rI1OevN2FDI",
+      "format": "panel-3v1",
+      "sides": {
+        "pro": {
+          "label": "Moral-realist accounts",
+          "speakers": [
+            "Peter Singer",
+            "Jessica Frazier",
+            "Richard Swinburne"
+          ]
+        },
+        "con": {
+          "label": "Emotivist critique",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/rI1OevN2FDI/transcript.txt",
+          "bytes": 123225,
+          "sha256": "199f8b43f1cb6e13a4ec9ac7eae9405f54d7ee647e8e8c45c6aad854461a4078"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/rI1OevN2FDI/events.json",
+          "bytes": 290676,
+          "sha256": "e23dc76c338196f8c77bbeb7875b0c07aeba22d67e7f4f22656227402a941cfe"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/rI1OevN2FDI/manifest.json",
+          "bytes": 971,
+          "sha256": "d91c990a7f5614dd7748db88c53f52f45c8a982b62a1d0109aca76c47e5e42a8"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 6067,
+        "eventCount": 2700,
+        "wordCount": 21263,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "71",
+      "debateId": "hitchens-kushner-gomes-god-religion-morality-2009",
+      "title": "Christopher Hitchens vs Harold Kushner and Peter Gomes: God, Religion, and Morality",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZxhOh75jn4Q",
+      "videoId": "ZxhOh75jn4Q",
+      "format": "team-2v1",
+      "sides": {
+        "pro": {
+          "label": "Religious humanism",
+          "speakers": [
+            "Harold Kushner",
+            "Peter Gomes"
+          ]
+        },
+        "con": {
+          "label": "Secular anti-theism",
+          "speakers": [
+            "Christopher Hitchens"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 3,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/ZxhOh75jn4Q/transcript.txt",
+          "bytes": 190168,
+          "sha256": "0cf2ca16cbe4e462b6303449ddb096f58f6183792229ec2d89919a1ddfe62a7f"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/ZxhOh75jn4Q/events.json",
+          "bytes": 449188,
+          "sha256": "42f50cdf634d660f8153a20aee55852a326e515f30da5987adda3f22beaa9fb5"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/ZxhOh75jn4Q/manifest.json",
+          "bytes": 1006,
+          "sha256": "e9fec0a1a7646bbfa5e606c06c2f01638dee13dc366907b00b7e70ad75933816"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 11043,
+        "eventCount": 4202,
+        "wordCount": 33341,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "84",
+      "debateId": "krauss-meyer-lamoureux-god-science-universe-2016",
+      "title": "Lawrence Krauss vs Stephen Meyer and Denis Lamoureux: God, Science, and the Universe",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mMuy58DaqOk",
+      "videoId": "mMuy58DaqOk",
+      "format": "team-1v2",
+      "sides": {
+        "pro": {
+          "label": "Scientific naturalism",
+          "speakers": [
+            "Lawrence Krauss"
+          ]
+        },
+        "con": {
+          "label": "Theistic interpretations",
+          "speakers": [
+            "Stephen Meyer",
+            "Denis Lamoureux"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 3,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/mMuy58DaqOk/transcript.txt",
+          "bytes": 166104,
+          "sha256": "11381198f8dab41f13af207e7cce79684081b27f0db256ad16c710cd14cffe1f"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/mMuy58DaqOk/events.json",
+          "bytes": 397542,
+          "sha256": "82dc776ab1ae526749eb5d7bbad99002252ab379278df718d6d82b0db071ff9a"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/mMuy58DaqOk/manifest.json",
+          "bytes": 1039,
+          "sha256": "eb110eb45d29e4e73e7abe3e50764ba08adf337c75d345e8a9fdc1afce6ab2a7"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 8807,
+        "eventCount": 3750,
+        "wordCount": 27912,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "95",
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "title": "William Lane Craig, Jessica Frazier, Philip Goff, and Joe Folley: Did God Create Reality?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZVMMO_kgtDQ",
+      "videoId": "ZVMMO_kgtDQ",
+      "format": "panel-1v3",
+      "sides": {
+        "pro": {
+          "label": "Classical theism",
+          "speakers": [
+            "William Lane Craig"
+          ]
+        },
+        "con": {
+          "label": "Pluralist alternatives",
+          "speakers": [
+            "Jessica Frazier",
+            "Philip Goff",
+            "Joe Folley"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/ZVMMO_kgtDQ/transcript.txt",
+          "bytes": 132230,
+          "sha256": "1358b685c8e4a587861a363af58028b37cb4531bccba2e7a86f0df26b362826a"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/ZVMMO_kgtDQ/events.json",
+          "bytes": 324896,
+          "sha256": "00f71b96a5433a6e1b6da9812c3db464e4a0fcd0752aaa91fef0d9764a1631d1"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/ZVMMO_kgtDQ/manifest.json",
+          "bytes": 1029,
+          "sha256": "29ebed11fb56830d9d1be6239635664a994d5a7f7cdf6d6f0971fd34ba512d45"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 6340,
+        "eventCount": 3108,
+        "wordCount": 22408,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "96",
+      "debateId": "knechtle-aronra-tjump-christianity-true-2023",
+      "title": "Cliffe and Stuart Knechtle vs Aron Ra and TJump: Is Christianity True?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4nK7NmDAfkA",
+      "videoId": "4nK7NmDAfkA",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Christianity true",
+          "speakers": [
+            "Cliffe Knechtle",
+            "Stuart Knechtle"
+          ]
+        },
+        "con": {
+          "label": "Skeptical naturalism",
+          "speakers": [
+            "Aron Ra",
+            "Tom Jump"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/4nK7NmDAfkA/transcript.txt",
+          "bytes": 227903,
+          "sha256": "606791e4dd45eeeb96d2a84fc24742267bd1f129885521f7ba18ce34027f52b5"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/4nK7NmDAfkA/events.json",
+          "bytes": 534683,
+          "sha256": "51cc20531c75f40cfdfdebe95ededcbbad58af9112ab4ba0e6af91628653471d"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/4nK7NmDAfkA/manifest.json",
+          "bytes": 995,
+          "sha256": "fa4990d89c057523e0d254ae7016d9823b53d7cbab756eebd92086e59715811b"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 11961,
+        "eventCount": 4971,
+        "wordCount": 39703,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "105",
+      "debateId": "craig-williams-hossenfelder-zizek-god-reality-2026",
+      "title": "William Lane Craig and Rowan Williams vs Sabine Hossenfelder and Slavoj Žižek: Does God Exist?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=spiiYYgi9Wg",
+      "videoId": "spiiYYgi9Wg",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Christian theism",
+          "speakers": [
+            "William Lane Craig",
+            "Rowan Williams"
+          ]
+        },
+        "con": {
+          "label": "Skeptical and Christian-atheist critique",
+          "speakers": [
+            "Sabine Hossenfelder",
+            "Slavoj Žižek"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/spiiYYgi9Wg/transcript.txt",
+          "bytes": 98167,
+          "sha256": "2aeb169cb3ecb494dd238b67c43e063bf80327c10f78f75f381706ac5783be02"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/spiiYYgi9Wg/events.json",
+          "bytes": 247470,
+          "sha256": "0024586f3f179c450c2160c127c70073f257b9c7d15cefa142534cacaae4a1ad"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/spiiYYgi9Wg/manifest.json",
+          "bytes": 1034,
+          "sha256": "67c6c9bdaf8da01abef5b60b957b9dc868ea395b13ad8b2c70f56191fbfc4e98"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 5557,
+        "eventCount": 2404,
+        "wordCount": 16533,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "115",
+      "debateId": "horn-bertuzzi-oconnor-schmid-problem-evil-2022",
+      "title": "Trent Horn and Cameron Bertuzzi vs Alex O'Connor and Joe Schmid: Problem of Evil",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hxUgziZ4vro",
+      "videoId": "hxUgziZ4vro",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Catholic-Protestant theodicy",
+          "speakers": [
+            "Trent Horn",
+            "Cameron Bertuzzi"
+          ]
+        },
+        "con": {
+          "label": "Atheist-agnostic evil critique",
+          "speakers": [
+            "Alex O'Connor",
+            "Joe Schmid"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/hxUgziZ4vro/transcript.txt",
+          "bytes": 99039,
+          "sha256": "3ac2f3edd02fb8c624981040f012068c8e5c4e2f20b7009b27d7f9e77421572a"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/hxUgziZ4vro/events.json",
+          "bytes": 244606,
+          "sha256": "b4353dced3e3f4ce3dfa86404af205758c6477e51f93bf7ebc7dc84ca219edf0"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/hxUgziZ4vro/manifest.json",
+          "bytes": 999,
+          "sha256": "68d39f12194bd5d83b8c217ec4ddccafbaabc855a73bc5927d4e6e676b3f73dd"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 4493,
+        "eventCount": 2334,
+        "wordCount": 17368,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "125",
+      "debateId": "knechtles-oconnor-bible-ethics-grace-2024",
+      "title": "Cliffe and Stuart Knechtle vs Alex O'Connor: Bible Slavery, Women, and Forgiveness",
+      "youtubeUrl": "https://www.youtube.com/watch?v=r8RZarGC8B4",
+      "videoId": "r8RZarGC8B4",
+      "format": "team-2v1",
+      "sides": {
+        "pro": {
+          "label": "Christian apologia",
+          "speakers": [
+            "Cliffe Knechtle",
+            "Stuart Knechtle"
+          ]
+        },
+        "con": {
+          "label": "Skeptical critique",
+          "speakers": [
+            "Alex O'Connor"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 3,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/r8RZarGC8B4/transcript.txt",
+          "bytes": 215477,
+          "sha256": "2c01c178ac88ef957b652871774c97fa918d2de124b5022e86ec81db79d26b00"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/r8RZarGC8B4/events.json",
+          "bytes": 500436,
+          "sha256": "a4dbc8c06750003d2c54071ae955e4863a34b9493d804def72ec01a596eacb50"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/r8RZarGC8B4/manifest.json",
+          "bytes": 1012,
+          "sha256": "1674d9dcd682e4a320639ac006f33eca4bcf7356a5aa508944c22df88a56c4c0"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 9994,
+        "eventCount": 4625,
+        "wordCount": 37763,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "149",
+      "debateId": "alexander-moody-carroll-novella-death-2014",
+      "title": "Eben Alexander and Raymond Moody vs Sean Carroll and Steven Novella: Is Death Final?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=07EYacr3rBg",
+      "videoId": "07EYacr3rBg",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Conscious survival",
+          "speakers": [
+            "Eben Alexander",
+            "Raymond Moody"
+          ]
+        },
+        "con": {
+          "label": "Brain-based finality",
+          "speakers": [
+            "Sean Carroll",
+            "Steven Novella"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/07EYacr3rBg/transcript.txt",
+          "bytes": 207633,
+          "sha256": "125fdd309d498f6bf2560388d2cae5811a7ad657244eb511052df390e1f38c00"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/07EYacr3rBg/events.json",
+          "bytes": 481871,
+          "sha256": "33e8488c4ca6214123e72aff81a13c743d37509ae1f25e9de80fa154b5823d7f"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/07EYacr3rBg/manifest.json",
+          "bytes": 1024,
+          "sha256": "4c364ab0df5622b85d336df4e2ad6e291bc1334269f7a76c6250f8995ed86a55"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 10415,
+        "eventCount": 4450,
+        "wordCount": 35163,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "154",
+      "debateId": "koukl-oconnor-kanojia-nonbelief-harm-2025",
+      "title": "Greg Koukl, Alex O'Connor, and Alok Kanojia: Does Nonbelief Cause More Harm Than Good?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Esu8BXLBmZ4",
+      "videoId": "Esu8BXLBmZ4",
+      "format": "panel-1v2",
+      "sides": {
+        "pro": {
+          "label": "Christian purpose",
+          "speakers": [
+            "Greg Koukl"
+          ]
+        },
+        "con": {
+          "label": "Secular and spiritual inquiry",
+          "speakers": [
+            "Alex O'Connor",
+            "Alok Kanojia"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 3,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/Esu8BXLBmZ4/transcript.txt",
+          "bytes": 280875,
+          "sha256": "7ee69301250617e3c9ff2116c668d4887ceb0c112bc373ded281cbe63f8542b1"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/Esu8BXLBmZ4/events.json",
+          "bytes": 684091,
+          "sha256": "0b143e18682e794f7d330a83f1fd84c4433043509a3573475da9e9400a04e2a8"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/Esu8BXLBmZ4/manifest.json",
+          "bytes": 1029,
+          "sha256": "3fa5fc85e7389218329a46777ed724b1fb9f92b6d9c868061f06c1f4cd853095"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 12064,
+        "eventCount": 6536,
+        "wordCount": 47486,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "173",
+      "debateId": "onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009",
+      "title": "John Onaiyekan & Ann Widdecombe vs Stephen Fry & Christopher Hitchens: The Catholic Church Is a Force for Good in the World",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JZRcYaAYWg4",
+      "videoId": "JZRcYaAYWg4",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "The Church is a force for good",
+          "speakers": [
+            "John Onaiyekan",
+            "Ann Widdecombe"
+          ]
+        },
+        "con": {
+          "label": "The Church is not a force for good",
+          "speakers": [
+            "Stephen Fry",
+            "Christopher Hitchens"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/JZRcYaAYWg4/transcript.txt",
+          "bytes": 124604,
+          "sha256": "45f945b11260356c72a96cb621ed3190a26cb86cdcf4ed08e6168d47a60888e3"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/JZRcYaAYWg4/events.json",
+          "bytes": 312232,
+          "sha256": "6f7d3f3d825bcb392ba325384ca85be0af78e0c908e79748a2d671c72ef771dc"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/JZRcYaAYWg4/manifest.json",
+          "bytes": 1001,
+          "sha256": "f1d5c798300f861ae29def1cb430b3eeacb293a4fb3d984c8f5386b590599220"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 7152,
+        "eventCount": 3033,
+        "wordCount": 20792,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "174",
+      "debateId": "dawkins-williams-kenny-humanity-ultimate-origins-2012",
+      "title": "Richard Dawkins, Rowan Williams & Anthony Kenny: Humanity's Ultimate Origins",
+      "youtubeUrl": "https://www.youtube.com/watch?v=zruhc7XqSxo",
+      "videoId": "zruhc7XqSxo",
+      "format": "panel-1v2",
+      "sides": {
+        "pro": {
+          "label": "Theistic and purposive account",
+          "speakers": [
+            "Rowan Williams"
+          ]
+        },
+        "con": {
+          "label": "Naturalistic and agnostic accounts",
+          "speakers": [
+            "Richard Dawkins",
+            "Anthony Kenny"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 3,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/zruhc7XqSxo/transcript.txt",
+          "bytes": 94190,
+          "sha256": "7b2300d959c90666c2ad7fb68ee06fe542732a1e78ac6248c1b450379a57e6c7"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/zruhc7XqSxo/events.json",
+          "bytes": 241930,
+          "sha256": "4ae463e60eef91e6a091cd1cc232b877f7a0cc38fc6135617b0a2e65dcb6c68c"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/zruhc7XqSxo/manifest.json",
+          "bytes": 1000,
+          "sha256": "b70c3bf24a36318d5a548328cb2286faab499f3716ba6fa3fcc6e168053311ee"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 5288,
+        "eventCount": 2375,
+        "wordCount": 15807,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    },
+    {
+      "debateNumber": "184",
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "title": "David Enoch & Eric Sampson vs Don Loeb & Matthew Lutz: Is Moral Realism True?",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6Uw9szL-3MA",
+      "videoId": "6Uw9szL-3MA",
+      "format": "team-2v2",
+      "sides": {
+        "pro": {
+          "label": "Stance-independent moral facts exist",
+          "speakers": [
+            "David Enoch",
+            "Eric Sampson"
+          ]
+        },
+        "con": {
+          "label": "Moral realism lacks adequate evidence",
+          "speakers": [
+            "Don Loeb",
+            "Matthew Lutz"
+          ]
+        }
+      },
+      "substantiveSpeakerCount": 4,
+      "source": {
+        "status": "complete-and-hash-valid",
+        "transcript": {
+          "path": ".assessment-cache/captions/6Uw9szL-3MA/transcript.txt",
+          "bytes": 124451,
+          "sha256": "b856ac8642eb744f11cf4d77bbbf3776430a2907f2341caf242b24291323e1d4"
+        },
+        "events": {
+          "path": ".assessment-cache/captions/6Uw9szL-3MA/events.json",
+          "bytes": 291457,
+          "sha256": "ce6e3b0249def2172eab06f3db03b765c5c8ea7bfabcfc4386d6203a440f3542"
+        },
+        "manifest": {
+          "path": ".assessment-cache/captions/6Uw9szL-3MA/manifest.json",
+          "bytes": 1016,
+          "sha256": "24783e957f4244dd72101df8e4975054f81704b3948639fd0516a06e268f9f56"
+        },
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+        "durationSeconds": 6155,
+        "eventCount": 2695,
+        "wordCount": 21908,
+        "captionKind": "asr",
+        "languageCode": "en"
+      },
+      "legacyAssessmentBoundary": {
+        "identityFieldsReadDuringPreparation": [
+          "number",
+          "id",
+          "title",
+          "youtubeUrl",
+          "sides.pro.name",
+          "sides.con.name"
+        ],
+        "legacyScoresRead": false,
+        "legacyProseRead": false,
+        "legacyWinnerRead": false,
+        "legacyTagsRead": false,
+        "legacyMaterialAllowedInModelPackets": false
+      }
+    }
+  ],
+  "nextAuthorizedAction": "Review this preparation record, then separately authorize the three-debate checkpoint model execution."
+}
