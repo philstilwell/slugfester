@@ -1,0 +1,310 @@
+{
+  "schemaVersion": "1.0-standalone-overall-depth-repair-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-isolated-overall-depth-repair",
+  "debateNumber": "198",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "method": "fresh ephemeral codex exec context per shard with user configuration and project rules disabled",
+    "scoresUnavailable": true,
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "target": {
+    "words": [
+      22,
+      28
+    ],
+    "acceptedWords": [
+      20,
+      30
+    ],
+    "oneSentence": true,
+    "sourceGrounded": true,
+    "scoreNeutral": true
+  },
+  "benchmark": {
+    "debate17StrengthWordsMean": 24.1,
+    "debate17BlunderWordsMean": 24.8
+  },
+  "shards": [
+    {
+      "shard": 1,
+      "writableFields": [
+        "candidate.overall.pro.strengths.0",
+        "candidate.overall.pro.strengths.1"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-01-input.json",
+        "sha256": "4ac1607891623b84fc4e43fdafcb6d2b0a1bdb0afbecc4a339131ecea8948904",
+        "bytes": 4691
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-01-output.json",
+        "sha256": "74e32b6ee22560283af352a537410192d3ef8b4383aab824dc49bf0b467a2824",
+        "bytes": 535
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.pro.strengths.0",
+          "before": 11,
+          "after": 24
+        },
+        {
+          "field": "candidate.overall.pro.strengths.1",
+          "before": 11,
+          "after": 23
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 2,
+      "writableFields": [
+        "candidate.overall.pro.strengths.2",
+        "candidate.overall.pro.strengths.3"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-02-input.json",
+        "sha256": "28abe996697bdff3bd2bdbd8279620cf94a225e04439ae7151706ffc191d9e71",
+        "bytes": 5206
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-02-output.json",
+        "sha256": "80085f089c1b85db7082a05a0607cdffc5ca43f53e005099d1da86f93016a71f",
+        "bytes": 505
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.pro.strengths.2",
+          "before": 12,
+          "after": 23
+        },
+        {
+          "field": "candidate.overall.pro.strengths.3",
+          "before": 12,
+          "after": 25
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 3,
+      "writableFields": [
+        "candidate.overall.pro.blunders.0.text",
+        "candidate.overall.pro.blunders.1.text"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-03-input.json",
+        "sha256": "afc46995c1b252273f3805153c10efea206c65cf0fdc2174a68cdab61c4b60a6",
+        "bytes": 4134
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-03-output.json",
+        "sha256": "ca18ca49123b092af3bfb73e17d9f63d9baad6dfdc25fcf5715b5ca3ab04ea81",
+        "bytes": 579
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.pro.blunders.0.text",
+          "before": 15,
+          "after": 23
+        },
+        {
+          "field": "candidate.overall.pro.blunders.1.text",
+          "before": 11,
+          "after": 26
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 4,
+      "writableFields": [
+        "candidate.overall.pro.blunders.2.text",
+        "candidate.overall.con.strengths.0"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-04-input.json",
+        "sha256": "b1d79a8c65d2d7bf230f7dee819dbba1e16e35a5a4bfb7b6901aecf4d77d5b91",
+        "bytes": 4157
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-04-output.json",
+        "sha256": "0325daab3d0769c877152e15133b07afb7192d3d3efa6600008cad142211b577",
+        "bytes": 531
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.pro.blunders.2.text",
+          "before": 16,
+          "after": 24
+        },
+        {
+          "field": "candidate.overall.con.strengths.0",
+          "before": 10,
+          "after": 24
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 5,
+      "writableFields": [
+        "candidate.overall.con.strengths.1",
+        "candidate.overall.con.strengths.2"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-05-input.json",
+        "sha256": "07b9d18a13b5f0444ffd106f89fd2d2321ad5bfa042952a254e4d2b4b42164e7",
+        "bytes": 6143
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-05-output.json",
+        "sha256": "ea17fcbebe4ade567a50a6762aacb51b2a441df029e1795eb1f40668989c9727",
+        "bytes": 539
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.con.strengths.1",
+          "before": 10,
+          "after": 23
+        },
+        {
+          "field": "candidate.overall.con.strengths.2",
+          "before": 10,
+          "after": 23
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 6,
+      "writableFields": [
+        "candidate.overall.con.strengths.3",
+        "candidate.overall.con.strengths.4"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-06-input.json",
+        "sha256": "b7b75a8bca2c1ee2fcb98f8a4d42d79ada0b8028d7279795c80f88a251017759",
+        "bytes": 7468
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-06-output.json",
+        "sha256": "7a6345338bd5dfb543817637601d8dc23249e8e8a824f744b8f8f96e06cc5a56",
+        "bytes": 525
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.con.strengths.3",
+          "before": 13,
+          "after": 24
+        },
+        {
+          "field": "candidate.overall.con.strengths.4",
+          "before": 12,
+          "after": 22
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 7,
+      "writableFields": [
+        "candidate.overall.con.blunders.0.text",
+        "candidate.overall.con.blunders.1.text"
+      ],
+      "writableFieldCount": 2,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-07-input.json",
+        "sha256": "52b3881549cf9fae9ba26c3a4e4b0d464199239f2b9c30e36e8392bda8965937",
+        "bytes": 4829
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-07-output.json",
+        "sha256": "1602cd7ad0b411263791946423b683141dec847fba177047f4af5d0c4cf217a2",
+        "bytes": 507
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.con.blunders.0.text",
+          "before": 13,
+          "after": 22
+        },
+        {
+          "field": "candidate.overall.con.blunders.1.text",
+          "before": 14,
+          "after": 23
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "shard": 8,
+      "writableFields": [
+        "candidate.overall.con.blunders.2.text"
+      ],
+      "writableFieldCount": 1,
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-08-input.json",
+        "sha256": "8576cd1df48bdf7f665775c45736a82b6d8f550921e2eb657ec87744f260ed03",
+        "bytes": 2998
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/shard-08-output.json",
+        "sha256": "42db6ffd3caea93982dd8d67a64a5b8b9ef05e078119490b3e3a811d9a9e771b",
+        "bytes": 281
+      },
+      "wordCounts": [
+        {
+          "field": "candidate.overall.con.blunders.2.text",
+          "before": 13,
+          "after": 26
+        }
+      ],
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "audit": {
+    "overallFieldsChanged": 15,
+    "strengthWordsMeanBefore": 11.2,
+    "strengthWordsMeanAfter": 23.4,
+    "blunderWordsMeanBefore": 13.7,
+    "blunderWordsMeanAfter": 24,
+    "isolatedRepairShards": 8,
+    "maximumWritableFieldsPerShard": 2,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

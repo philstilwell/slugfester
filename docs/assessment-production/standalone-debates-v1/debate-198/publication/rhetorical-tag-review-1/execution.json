@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "198",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "method": "fresh ephemeral codex exec context with user configuration and project rules disabled",
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "scoresUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "4cc168a1f2f315f3e7b70583a2088664bf46c8b0530b3a71e91d7425f5bf6869",
+    "bytes": 4256
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "d6ef32ad9dbaa004d2d59e41ed619e17f198addee875798dca00bf73212675ca",
+    "bytes": 70236
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "932ca93460e22a5adf944825e10781c5cfc498041a5be293eb9fed875555051c",
+        "bytes": 9841
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "a710424a86dc534b6578b233983aadf541f36a7af7629dc31a4dee1fc2a4c1fe",
+        "bytes": 11728
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-candidate-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "765e34ecaadbc1e3a83ae9ac39381656e0795e5296d3589bff27badd5d952636",
+        "bytes": 77587
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "c0bc532a83e665f209e949cd8897e8e0fbd5b410b6478f4e96bec967b7535e80",
+        "bytes": 10715
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "operationalPreflights": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/operational-preflight-failure-1.json",
+      "sha256": "19af88f434e6a2507631fd35320a0774cccb78afb41730e03d8f416a33d06cc8",
+      "bytes": 606
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/operational-preflight-failure-2.json",
+      "sha256": "65750397636a488e988fbd3e57e49ab67f3537a3ac7f2ac93493c6cd50205c16",
+      "bytes": 553
+    }
+  ],
+  "finalDefinitionCheck": {
+    "catalog": "src/data/references.js",
+    "reviewedEveryCandidate": true,
+    "requireCritiqueLevelMaterialWeakness": true,
+    "underargumentAloneRejected": true,
+    "duplicateDefectLabelsRejected": true,
+    "overruledOverbroadAdjudicatorAcceptances": 6,
+    "finalAcceptedTagCount": 7,
+    "evidence": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "b9e4ceffb59c73708545f258b3290212e9e794740408f025bd1c44358c94820a",
+      "bytes": 16373
+    }
+  },
+  "audit": {
+    "movesReviewed": 27,
+    "blindReviews": 2,
+    "adjudications": 27,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

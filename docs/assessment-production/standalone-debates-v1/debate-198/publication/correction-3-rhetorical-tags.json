@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "appliedAt": "2026-08-29T16:18:00Z",
+  "debateNumber": "198",
+  "debateId": "ferrer-dillahunty-god-morality-2018",
+  "authorization": "The refreshed skill requires two move-complete blind fallacy and cognitive-bias reviews, anonymous adjudication, and a conservative final definition check.",
+  "reason": "The rigorous review retained four initial labels, removed one overbroad label, and added three source-supported labels. Six overbroad adjudicator acceptances were rejected because underargument alone is not a named fallacy or bias.",
+  "immutableFields": [
+    "identity",
+    "motion",
+    "source spans",
+    "move selection and order",
+    "judgments",
+    "adjudication",
+    "scores",
+    "argument descriptions",
+    "critique prose",
+    "overall summary prose"
+  ],
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "3bf78ffcc91241e5fb9fb12e442f26ba3b2ce5c56da280e57cba4f7760b910f1",
+    "bytes": 59880,
+    "note": "The exact score-neutral, depth-aligned publication bytes immediately before the rhetorical-tag correction are preserved at the named path."
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/output.json",
+      "sha256": "23065ef639bc1719c577fb6b47fbe40a7b60a2527dc46434c63a42b55c1e87ed",
+      "bytes": 60327
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-audit.json",
+      "sha256": "d36672c4023bde9279668f8b3779e58117a66300b9604b5fc7a2ecffd995ccde",
+      "bytes": 20013
+    },
+    "reviewExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "43093156db17d172803bdec0036fd67efcdf0275da0308b5dc31d0b0951e5556",
+      "bytes": 4129
+    }
+  },
+  "acceptedTagChanges": [
+    {
+      "moveId": "conditional-goals-are-not-morality",
+      "label": "Begging the question",
+      "type": "fallacy",
+      "change": "added"
+    },
+    {
+      "moveId": "scripture-guides-nonabolitionist-societies",
+      "label": "Equivocation",
+      "type": "fallacy",
+      "change": "added"
+    },
+    {
+      "moveId": "scripture-guides-nonabolitionist-societies",
+      "label": "Argument from ignorance",
+      "type": "fallacy",
+      "change": "added"
+    },
+    {
+      "moveId": "naturalistic-brain-circularity",
+      "label": "Begging the question",
+      "type": "fallacy",
+      "change": "removed-as-overbroad"
+    }
+  ],
+  "writableShards": [
+    {
+      "shard": 1,
+      "fields": [
+        "candidate.sections.tags.naturalistic-brain-circularity",
+        "candidate.sections.tags.conditional-goals-are-not-morality"
+      ]
+    },
+    {
+      "shard": 2,
+      "fields": [
+        "candidate.sections.tags.scripture-guides-nonabolitionist-societies"
+      ]
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 3,
+    "acceptedTagCount": 7,
+    "overallLinkChanges": 0,
+    "maximumWritableFieldsPerShard": 2
+  }
+}

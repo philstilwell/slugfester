@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0-standalone-stage-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "198",
+  "stage": "inventory-preparation",
+  "recordedAt": "2026-08-29T15:23:00Z",
+  "status": "rejected-without-use",
+  "reason": "The isolated inventory context read a local skill file outside the exhaustively authorized input list. The run was interrupted, produced no accepted inventory, and none of its substantive work is carried forward.",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsd": 0,
+    "sessionPersisted": false,
+    "outputAccepted": false
+  },
+  "recovery": "Run a fresh isolated context in an input-only copied packet that contains no project rules, skills, other debates, scores, judgments, or publication prose."
+}

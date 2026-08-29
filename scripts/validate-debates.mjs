@@ -2577,9 +2577,10 @@ function validateDebate(debate, index) {
       });
 
       // Three rows remain the ordinary display limit. A fourth is permitted
-      // generically only when one side has four distinct locked cards and the
-      // other side has fewer, so evidence-led asymmetry is not forced into a
-      // debate-number-specific exception.
+      // for evidence-led asymmetry, or for a standalone source-locked section
+      // in which both sides have four distinct cards. The standalone adapter
+      // separately proves move uniqueness and complete ledger mapping, so the
+      // balanced case does not need a debate-number-specific exception.
       const maximumExchanges = hasAdjudicatedConsensusLedgerAdapter ? 4 : 3;
       const exchanges = requireArray(section, "exchanges", sectionPath, {
         minLength: 1,
@@ -2589,10 +2590,14 @@ function validateDebate(debate, index) {
         const sideCounts = ["pro", "con"].map(
           (sideKey) => exchanges.filter((exchange) => exchange?.[sideKey]).length
         );
-        if (sideCounts.filter((count) => count === 4).length !== 1) {
+        const sidesWithFourCards = sideCounts.filter((count) => count === 4).length;
+        const isEvidenceLedAsymmetry = sidesWithFourCards === 1;
+        const isBalancedStandaloneOverflow =
+          hasStandaloneLedgerAdapter && sidesWithFourCards === 2;
+        if (!isEvidenceLedAsymmetry && !isBalancedStandaloneOverflow) {
           addError(
             [...sectionPath, "exchanges"],
-            "may use a fourth row only when exactly one side has a locked card in all four rows"
+            "may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow"
           );
         }
       }

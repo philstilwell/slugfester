@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0-standalone-stage-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "198",
+  "stage": "publication-reconstruction",
+  "recordedAt": "2026-08-29T15:49:15Z",
+  "status": "failed-without-output",
+  "reason": "The isolated publication context invoked an interactive local Node process while attempting preflight generation, stalled without producing its requested final JSON, and was interrupted. No prose or tags from the failed run were accepted or reused.",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsd": 0,
+    "sessionPersisted": false,
+    "outputAccepted": false
+  },
+  "immutableEvidenceConfirmed": {
+    "finalLedgerSha256": "65112ffb78fb61511199523fc5b2d3b9f076a9a07f9891784e1f399613ba1e79",
+    "scoreOutputSha256": "8fbcb82872c2a7401776f77e834f847702cc3990bc6dfbdfd22dfd424a2d60b1",
+    "scorePassOrdinal": 1,
+    "scorePassRerun": false
+  },
+  "recovery": "Run one fresh isolated publication context from the unchanged packet, omit executable validator code, and prohibit interactive commands or script-generated prose."
+}

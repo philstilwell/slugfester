@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "198",
+  "debateId": "ferrer-dillahunty-god-morality-2018",
+  "completedAt": "2026-08-29T16:36:00Z",
+  "source": {
+    "videoId": "EigYzeXngq4",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 23896,
+    "events": 3008,
+    "transcriptSha256": "200902f18981f77da02f380237c43810847e93c261ef2d9e64be6c739ab84964",
+    "eventsSha256": "61d2bae06c35d6b52054e9070726347ddbdb7883f112d471005ea3f32aaf6782",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 27,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 31,
+    "adjudicatedDisputes": 31,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 67,
+      "con": 83,
+      "winner": "con",
+      "margin": 16
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 4,
+    "argumentCards": 27,
+    "uniqueLockedMovesMapped": 27,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 5
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "0dcc06a601a586e14b0a9519b7a5a87ce663eb7372e02eb9054c9bbfe4895fa3",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-198/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-198/publication/card-depth-repair-1/execution.json",
+    "overallDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-198/publication/overall-depth-repair-1/execution.json",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 24,
+      "mean": 25.1,
+      "maximum": 28,
+      "cardsBelow20": 0
+    },
+    "critiqueCharacterRange": [
+      890,
+      1014
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0.08,
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-198/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 27,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 27,
+    "acceptedRhetoricalTags": 7,
+    "rejectedRhetoricalTagCandidates": 20,
+    "overruledOverbroadAdjudicatorAcceptances": 6
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-198/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 7,
+    "desktopEvidenceSha256": "3865a4b78e8bcb6373c07140ee15bc16718704c6673bf89111b07c07a698a5a7",
+    "mobileEvidenceSha256": "54c9f83cc7c7db204d1e8b1fc2af5473b6d535b86455cd053efe8498f2794cdd"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "198 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "386 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "command": "node scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "status": "passed",
+      "result": "27 moves; description mean 25.1 words; overall strength mean 23.4 and blunder mean 24.0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "command": "node scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "status": "passed",
+      "result": "27 moves reviewed in 2 blind passes; 27 candidates adjudicated; 7 tags accepted; 20 rejected"
+    },
+    {
+      "name": "standalone full and repository-only replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 198 with and without --repository-only",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "publicationWriterOperationalFailures": 1,
+    "critiqueDepthRepairs": 8,
+    "argumentDescriptionRepairs": 27,
+    "overallSummaryRepairs": 15,
+    "rhetoricalAdjudicationPreflightFailures": 2,
+    "balancedFourthRowProtocolClarifications": 1,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 13,
+    "con": 14,
+    "maximumSectionDifference": 1,
+    "balancedFourthRowSection": "moral-foundations",
+    "asymmetricFourthRowSection": "motivation-and-application",
+    "disposition": "Balanced overall; the first section preserves four distinct locked moves per side, while the final section preserves one additional locked con move without an empty pro placeholder."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

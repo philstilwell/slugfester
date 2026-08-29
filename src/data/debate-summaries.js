@@ -8849,5 +8849,47 @@ export const debateSummaries = [
         "title": "Spiritual experience and human meaning"
       }
     ]
+  },
+  {
+    "id": "ferrer-dillahunty-god-morality-2018",
+    "number": "198",
+    "title": "John Ferrer vs Matt Dillahunty: Do We Need God for Morality?",
+    "label": "God and the foundations of morality",
+    "date": "2026-08-29",
+    "duration": "2 hr 1 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=EigYzeXngq4",
+    "motion": "Do we need God for morality?",
+    "summary": "Ferrer grounds categorical morality and knowledge in God while Dillahunty defends publicly correctable wellbeing judgments and challenges scripture as divine guidance.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Divine grounding",
+        "speaker": "John Ferrer",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Secular morality",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 67,
+      "con": 83
+    },
+    "sections": [
+      {
+        "title": "Moral foundations, facts, and oughts"
+      },
+      {
+        "title": "Moral knowledge, reason, and revelation"
+      },
+      {
+        "title": "Scripture, slavery, and historical practice"
+      },
+      {
+        "title": "Motivation, fairness, and practical application"
+      }
+    ]
   }
 ];

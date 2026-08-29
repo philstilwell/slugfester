@@ -839,7 +839,7 @@ function audit({ repositoryOnly = false } = {}) {
   assert.equal(audio.audit.unresolvedAttributionChecks, 0);
   assert.deepEqual(
     audio.triggeredMoveIds,
-    inventory.audit.belowHighAttributionMoveIds,
+    inventoryValidation.belowHighAttributionMoveIds,
     "audio verification triggers differ from the locked inventory"
   );
   assert.equal(audio.inventory.sha256, sha256(bytes(paths.inventory)));
