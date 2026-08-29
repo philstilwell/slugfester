@@ -16,6 +16,12 @@ Two fresh, isolated 5.6 Sol judgments assessed every move; a separate identity-b
 
 Publication maps all 27 locked moves to visible evidence cards, preserves exact source quotations, supplies four or five concrete strengths and three material weaknesses per side, and keeps the separately labeled AI Extension outside the participant scores.
 
+## AI Contribution punctuation repair
+
+A corpus-wide review found Debate 198 was the only published debate whose AI Contribution showed the signature of stripped punctuation. It had just four commas in 699 words; the next-lowest unaffected debate had 17 commas in 700 words. The repair restored 47 missing commas across 13 leaf fields, bringing Debate 198 to 51 commas while preserving the same 699 word tokens, object structure, arguments, judgments, scores, and winner. All 198 published debates now pass the corpus-relative punctuation check.
+
+The pre-repair publication remains recoverable from Git, and the correction record names every writable field and authenticates the before/after files. A fresh desktop and mobile rendering review confirmed that all 13 corrected fields display properly with no clipping, horizontal overflow, browser errors, warnings, or blocked controls.
+
 ## Comparison with recent debates
 
 The production record was compared with the independent Debates 171–195 window and the richer Debate 17 example. The first draft's 27 argument descriptions averaged only 19.7 words and frequently compressed away the speaker's supporting reason, comparison, or intended consequence. The eight critiques also needed fuller accounts of each move's inference, evidence, limitation, and unresolved burden; the Overall Commentary was materially thinner than the established style.
@@ -36,7 +42,7 @@ The generated debate page passed Chromium checks at 1440×1100 and 390×844. Six
 
 The production validator, 198-transcript corpus replay, 386-file generated-page replay, historical campaign and calibration audits, all-record standalone audit, content-parity audit, rhetorical-tag audit, and full repository suite passed. The full Debate 198 replay also authenticated the local transcript bytes, while the repository-only replay authenticated the committed hash chain without depending on ignored source files.
 
-The shared validator and `add-slugfester-youtube-debate` Skill now express the fourth-row rule generically: three rows remain ordinary, while a fourth may preserve either one-sided locked overflow or a balanced standalone section whose eight cards are distinct, independently scored, non-mergeable, and completely mapped to the final ledger. The Skill also now requires direct argument-card depth measurement, richer Overall Commentary, and two blind move-complete fallacy/bias reviews with full-union adjudication.
+The shared validator now detects corpus-relative punctuation loss in substantial AI Contributions. The rewritten `add-slugfester-youtube-debate` Skill is shorter and routes detail into its runbook; it now treats the latest accepted standalone controls as authoritative, preserves punctuation across publication transport, requires direct prose review in addition to the automated drift detector, and retains the existing depth, one-to-one mapping, and two-pass rhetorical-review safeguards.
 
 Direct incremental cost: **$0**.
 

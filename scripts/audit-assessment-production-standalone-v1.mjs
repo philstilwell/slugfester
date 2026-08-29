@@ -85,6 +85,12 @@ const paths = {
     selectedRegistryRecord.rhetoricalTagReview?.executionPath,
   postRhetoricalTagRendering:
     selectedRegistryRecord.rhetoricalTagReview?.renderingAuditPath,
+  publicationAiContributionPunctuationCorrection:
+    selectedRegistryRecord.aiContributionPunctuation?.correctionPath,
+  publicationAiContributionPunctuationAudit:
+    selectedRegistryRecord.aiContributionPunctuation?.auditPath,
+  postAiContributionPunctuationRendering:
+    selectedRegistryRecord.aiContributionPunctuation?.renderingAuditPath,
   rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
   postPublicationRendering: `${DEBATE_ROOT}/rendering/post-publication-audit-1.json`,
   validation: `${DEBATE_ROOT}/validation-summary.json`,
@@ -122,6 +128,37 @@ const publicationWordCount = (value) =>
     .trim()
     .split(/\s+/)
     .filter(Boolean).length;
+const textTokenShape = (value) => {
+  if (typeof value === "string") {
+    return value.match(/[\p{L}\p{N}]+(?:[’'][\p{L}\p{N}]+)*/gu) ?? [];
+  }
+  if (Array.isArray(value)) return value.map(textTokenShape);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, textTokenShape(item)]));
+  }
+  return value;
+};
+const changedLeafPaths = (before, after, prefix = "candidate.logicalExtension") => {
+  if (typeof before === "string" || typeof after === "string") {
+    return before === after ? [] : [prefix];
+  }
+  if (Array.isArray(before) && Array.isArray(after)) {
+    assert.equal(before.length, after.length, `${prefix}: array length changed`);
+    return before.flatMap((item, index) =>
+      changedLeafPaths(item, after[index], `${prefix}[${index}]`)
+    );
+  }
+  assert.equal(
+    Boolean(before && typeof before === "object"),
+    Boolean(after && typeof after === "object"),
+    `${prefix}: value type changed`
+  );
+  if (!before || typeof before !== "object") return before === after ? [] : [prefix];
+  assert.deepEqual(Object.keys(before), Object.keys(after), `${prefix}: object shape changed`);
+  return Object.keys(before).flatMap((key) =>
+    changedLeafPaths(before[key], after[key], `${prefix}.${key}`)
+  );
+};
 const validatePublicationIdentity = (candidate, authorization) => {
   for (const side of ["pro", "con"]) {
     const productionSide = candidate.sides?.[side];
@@ -786,7 +823,19 @@ function buildProductionAdapter() {
     ["publicationRhetoricalTagCorrection", paths.publicationRhetoricalTagCorrection],
     ["publicationRhetoricalTagAudit", paths.publicationRhetoricalTagAudit],
     ["publicationRhetoricalTagExecution", paths.publicationRhetoricalTagExecution],
-    ["postRhetoricalTagRendering", paths.postRhetoricalTagRendering]
+    ["postRhetoricalTagRendering", paths.postRhetoricalTagRendering],
+    [
+      "publicationAiContributionPunctuationCorrection",
+      paths.publicationAiContributionPunctuationCorrection
+    ],
+    [
+      "publicationAiContributionPunctuationAudit",
+      paths.publicationAiContributionPunctuationAudit
+    ],
+    [
+      "postAiContributionPunctuationRendering",
+      paths.postAiContributionPunctuationRendering
+    ]
   ]) {
     if (value && existsSync(absolute(value))) evidencePaths[key] = value;
   }
@@ -965,8 +1014,17 @@ function audit({ repositoryOnly = false } = {}) {
     if (prior.gitCommit) {
       assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
     }
-    assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
-    assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
+    const nextCorrection = paths.publicationAiContributionPunctuationCorrection
+      ? json(paths.publicationAiContributionPunctuationCorrection)
+      : null;
+    const tagCorrectedBytes = nextCorrection?.preservedPriorOutput?.gitCommit
+      ? gitBytes(
+          nextCorrection.preservedPriorOutput.gitCommit,
+          nextCorrection.preservedPriorOutput.path
+        )
+      : bytes(paths.publication);
+    assert.equal(correction.evidence.after.sha256, sha256(tagCorrectedBytes));
+    assert.equal(correction.evidence.after.bytes, tagCorrectedBytes.length);
     assert.equal(
       correction.evidence.rhetoricalTagAudit.sha256,
       sha256(bytes(paths.publicationRhetoricalTagAudit))
@@ -1007,6 +1065,102 @@ function audit({ repositoryOnly = false } = {}) {
     assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
     assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
     assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+  }
+  if (paths.publicationAiContributionPunctuationCorrection) {
+    const correction = json(paths.publicationAiContributionPunctuationCorrection);
+    const punctuationAudit = json(paths.publicationAiContributionPunctuationAudit);
+    const prior = correction.preservedPriorOutput;
+    const priorBytes = prior.gitCommit
+      ? gitBytes(prior.gitCommit, prior.path)
+      : bytes(prior.path);
+    const priorPublication = JSON.parse(priorBytes.toString("utf8"));
+    const currentPublication = publication;
+    const priorOutsideExtension = structuredClone(priorPublication);
+    const currentOutsideExtension = structuredClone(currentPublication);
+    delete priorOutsideExtension.candidate.logicalExtension;
+    delete currentOutsideExtension.candidate.logicalExtension;
+    const changedPaths = changedLeafPaths(
+      priorPublication.candidate.logicalExtension,
+      currentPublication.candidate.logicalExtension
+    );
+    const declaredPaths = correction.writableShards.flatMap((shard) => shard.fields);
+
+    assert.equal(correction.status, "applied-once-and-frozen");
+    assert.equal(correction.audit.judgmentChanges, 0);
+    assert.equal(correction.audit.scoreChanges, 0);
+    assert.equal(correction.audit.moveChanges, 0);
+    assert.equal(correction.audit.tagChanges, 0);
+    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
+    assert.equal(correction.audit.punctuationOnly, true);
+    assert.equal(
+      prior.gitCommit,
+      selectedRegistryRecord.aiContributionPunctuation.priorPublicationGitCommit
+    );
+    assert.equal(
+      prior.path,
+      selectedRegistryRecord.aiContributionPunctuation.priorPublicationPath
+    );
+    assert.equal(prior.sha256, sha256(priorBytes));
+    assert.equal(prior.bytes, priorBytes.length);
+    assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    assert.deepEqual(
+      currentOutsideExtension,
+      priorOutsideExtension,
+      "AI Contribution punctuation repair changed another publication field"
+    );
+    assert.equal(
+      canonicalJson(textTokenShape(currentPublication.candidate.logicalExtension)),
+      canonicalJson(textTokenShape(priorPublication.candidate.logicalExtension)),
+      "AI Contribution punctuation repair changed words or structure"
+    );
+    assert.deepEqual(
+      [...changedPaths].sort(),
+      [...declaredPaths].sort(),
+      "AI Contribution punctuation repair differs from its declared writable fields"
+    );
+    assert.equal(changedPaths.length, correction.audit.changedLeafFields);
+    assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
+    assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
+    assert.equal(
+      correction.evidence.punctuationAudit.sha256,
+      sha256(bytes(paths.publicationAiContributionPunctuationAudit))
+    );
+    assert.equal(
+      correction.evidence.punctuationAudit.bytes,
+      bytes(paths.publicationAiContributionPunctuationAudit).length
+    );
+    assert.equal(punctuationAudit.status, "passed-ai-contribution-punctuation-audit");
+    assert.equal(punctuationAudit.debatesReviewed, debates.length);
+    assert.deepEqual(punctuationAudit.corpus.flaggedBefore, [DEBATE_NUMBER]);
+    assert.deepEqual(punctuationAudit.corpus.flaggedAfter, []);
+    assert.equal(
+      punctuationAudit.debate198.wordsBefore,
+      punctuationAudit.debate198.wordsAfter
+    );
+    assert.equal(
+      punctuationAudit.debate198.commasAfter >
+        punctuationAudit.debate198.commasBefore,
+      true
+    );
+    assert.equal(punctuationAudit.debate198.changedLeafFields, changedPaths.length);
+    assert.equal(punctuationAudit.debate198.wordTokensChanged, 0);
+    assert.equal(punctuationAudit.debate198.structureChanged, false);
+    assert.equal(punctuationAudit.debate198.assessmentSubstanceChanged, false);
+    const renderingAudit = json(paths.postAiContributionPunctuationRendering);
+    assert.equal(
+      renderingAudit.status,
+      "passed-post-ai-contribution-punctuation-rendering-audit"
+    );
+    assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
+    assert.equal(renderingAudit.audit.visibleCorrectionsVerified, changedPaths.length);
+    for (const viewport of renderingAudit.viewports) {
+      assert.equal(viewport.screenshot.sha256, sha256(bytes(viewport.screenshot.path)));
+    }
+    assert.equal(renderingAudit.audit.runtimeFailures, 0);
+    assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
+    assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
+    assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+    assert.equal(renderingAudit.audit.temporaryControllerDirectoriesRemaining, 0);
   }
   assert.equal(publication.candidate.motion, inventory.motion);
   assert.equal(publication.candidate.motion, authorization.identity.motion);

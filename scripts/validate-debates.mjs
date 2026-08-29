@@ -2445,6 +2445,43 @@ function validateLogicalExtension(extension, path) {
   });
 }
 
+function logicalExtensionText(extension) {
+  if (typeof extension === "string") return extension;
+  if (Array.isArray(extension)) return extension.map(logicalExtensionText).join(" ");
+  if (isPlainObject(extension)) {
+    return Object.values(extension).map(logicalExtensionText).join(" ");
+  }
+  return "";
+}
+
+function validateAiContributionPunctuationCorpus(records) {
+  const audited = records
+    .map((debate, index) => {
+      const text = logicalExtensionText(debate?.logicalExtension);
+      const words = wordCount(text);
+      const commas = (text.match(/,/g) ?? []).length;
+      return { debate, index, words, commas, commaDensity: words ? commas / words : 0 };
+    })
+    .filter(({ debate, words }) =>
+      !debate?.draft && !debate?.sections?.some((section) => section?.__draft) && words >= 300
+    );
+
+  if (audited.length < 5) return;
+
+  const densities = audited.map(({ commaDensity }) => commaDensity).sort((a, b) => a - b);
+  const corpusMedian = densities[Math.floor(densities.length / 2)];
+  const strippedPunctuationThreshold = corpusMedian / 4;
+
+  audited.forEach(({ index, words, commas, commaDensity }) => {
+    if (commaDensity < strippedPunctuationThreshold) {
+      addError(
+        ["debates", String(index), "logicalExtension"],
+        `appears to have stripped internal punctuation (${commas} commas across ${words} words; corpus median density ${corpusMedian.toFixed(4)})`
+      );
+    }
+  });
+}
+
 function validateDebate(debate, index) {
   const path = ["debates", String(index)];
   if (!isPlainObject(debate)) {
@@ -2683,6 +2720,7 @@ if (!Array.isArray(debates) || debates.length === 0) {
       labels.add(debate.label);
     }
   });
+  validateAiContributionPunctuationCorpus(debates);
 }
 
 if (errors.length > 0) {

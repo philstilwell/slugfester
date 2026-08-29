@@ -4,7 +4,7 @@
   "status": "passed",
   "debateNumber": "198",
   "debateId": "ferrer-dillahunty-god-morality-2018",
-  "completedAt": "2026-08-29T16:36:00Z",
+  "completedAt": "2026-08-29T17:23:03Z",
   "source": {
     "videoId": "EigYzeXngq4",
     "method": "complete public YouTube auto-caption track normalized locally",
@@ -60,7 +60,7 @@
       "con": 3
     },
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "0dcc06a601a586e14b0a9519b7a5a87ce663eb7372e02eb9054c9bbfe4895fa3",
+    "productionLedgerSha256": "9edbf9102c7e6017c58377fa62bcbf380aa79343eddb4200bd796614c594772e",
     "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-198/publication/content-parity-audit.json",
     "contentParityCorrection": "applied-once-and-score-neutral",
     "cardDepthRepair": "docs/assessment-production/standalone-debates-v1/debate-198/publication/card-depth-repair-1/execution.json",
@@ -87,7 +87,14 @@
     "adjudicatedRhetoricalTagCandidates": 27,
     "acceptedRhetoricalTags": 7,
     "rejectedRhetoricalTagCandidates": 20,
-    "overruledOverbroadAdjudicatorAcceptances": 6
+    "overruledOverbroadAdjudicatorAcceptances": 6,
+    "aiContributionPunctuationAudit": "docs/assessment-production/standalone-debates-v1/debate-198/publication/ai-contribution-punctuation-audit.json",
+    "aiContributionPunctuationCorrection": "applied-once-and-score-neutral",
+    "aiContributionWords": 699,
+    "aiContributionCommasBefore": 4,
+    "aiContributionCommasAfter": 51,
+    "aiContributionLeafFieldsRepaired": 13,
+    "aiContributionWordTokenChanges": 0
   },
   "rendering": {
     "status": "passed-standalone-production-rendering",
@@ -103,6 +110,11 @@
     "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-198/rendering/post-rhetorical-tag-audit.json",
     "postRhetoricalTagScreenshots": 6,
     "rhetoricalTagsVisuallyVerified": 7,
+    "postAiContributionPunctuationAudit": "docs/assessment-production/standalone-debates-v1/debate-198/rendering/post-ai-contribution-punctuation-audit.json",
+    "postAiContributionPunctuationScreenshots": 2,
+    "aiContributionCorrectionsVisuallyVerified": 13,
+    "aiContributionDesktopEvidenceSha256": "84a4d20a13d3894a86a660a1b3a357dfc5ce399e80adddd45725b796066eaf80",
+    "aiContributionMobileEvidenceSha256": "998d3a9d5908075d0e9114f8ab724b7b72d1a69021cba82213a18288996f1e35",
     "desktopEvidenceSha256": "3865a4b78e8bcb6373c07140ee15bc16718704c6673bf89111b07c07a698a5a7",
     "mobileEvidenceSha256": "54c9f83cc7c7db204d1e8b1fc2af5473b6d535b86455cd053efe8498f2794cdd"
   },
@@ -111,7 +123,13 @@
       "name": "production debate validator",
       "command": "node scripts/validate-debates.mjs",
       "status": "passed",
-      "result": "198 debates"
+      "result": "198 debates; AI Contribution punctuation corpus gate passed"
+    },
+    {
+      "name": "AI Contribution punctuation corpus audit",
+      "command": "node scripts/validate-debates.mjs plus preserved before/after publication replay",
+      "status": "passed",
+      "result": "198 debates reviewed; Debate 198 was the sole pre-repair outlier; no post-repair outliers; 13 comma-only leaf-field repairs; zero word-token, structure, judgment, or score changes"
     },
     {
       "name": "SEO generation and replay",
@@ -147,6 +165,7 @@
     "critiqueDepthRepairs": 8,
     "argumentDescriptionRepairs": 27,
     "overallSummaryRepairs": 15,
+    "aiContributionPunctuationRepairs": 13,
     "rhetoricalAdjudicationPreflightFailures": 2,
     "balancedFourthRowProtocolClarifications": 1,
     "failuresPreserved": true,

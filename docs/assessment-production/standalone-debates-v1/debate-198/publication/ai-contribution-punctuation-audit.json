@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-ai-contribution-punctuation-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-ai-contribution-punctuation-audit",
+  "completedAt": "2026-08-29T17:07:18Z",
+  "debatesReviewed": 198,
+  "scope": "Every published AI Contribution in src/data/debates.js",
+  "method": {
+    "textIncluded": "disclosure, thesis, premises, conclusion, reinforcing-argument titles, and reinforcing-argument text",
+    "metric": "commas divided by words across the complete AI Contribution",
+    "outlierRule": "flag an entry below one quarter of the published-corpus median, then inspect its prose directly",
+    "substantiveJudgmentRule": "The density check is a drift detector, not a writing quota; direct review decides whether punctuation is actually missing."
+  },
+  "corpus": {
+    "medianCommaDensityBefore": 0.06924315619967794,
+    "outlierThresholdBefore": 0.017310789049919485,
+    "flaggedBefore": [
+      "198"
+    ],
+    "medianCommaDensityAfter": 0.06954102920723226,
+    "outlierThresholdAfter": 0.017385257301808066,
+    "flaggedAfter": [],
+    "nextLowestUnaffectedDebate": {
+      "debateNumber": "184",
+      "words": 700,
+      "commas": 17,
+      "commaDensity": 0.024285714285714285
+    }
+  },
+  "debate198": {
+    "wordsBefore": 699,
+    "wordsAfter": 699,
+    "commasBefore": 4,
+    "commasAfter": 51,
+    "commaDensityBefore": 0.005722460658082976,
+    "commaDensityAfter": 0.07296137339055794,
+    "changedLeafFields": 13,
+    "wordTokensChanged": 0,
+    "structureChanged": false,
+    "assessmentSubstanceChanged": false
+  },
+  "result": "Debate 198 was the sole confirmed stripped-punctuation case. All 198 AI Contributions pass the post-repair corpus audit, and direct review found no second affected debate."
+}

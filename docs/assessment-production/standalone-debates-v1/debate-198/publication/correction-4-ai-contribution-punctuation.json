@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-standalone-ai-contribution-punctuation-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "appliedAt": "2026-08-29T17:07:18Z",
+  "debateNumber": "198",
+  "debateId": "ferrer-dillahunty-god-morality-2018",
+  "authorization": "The user requested restoration of the essential punctuation stripped from Debate 198's AI Contribution and a check of every other debate for the same defect.",
+  "reason": "The publication artifact contained only four commas across 699 AI Contribution words, uniquely below one quarter of the corpus median. Thirteen score-neutral leaf strings contained unpunctuated lists or clauses. The correction restores commas without changing a word token, structure, assessment judgment, score, move, critique, rhetorical tag, or winner.",
+  "immutableFields": [
+    "identity",
+    "motion",
+    "source evidence",
+    "move inventory and order",
+    "judgments",
+    "adjudication",
+    "scores",
+    "argument descriptions",
+    "critique prose",
+    "overall commentary",
+    "rhetorical tags",
+    "AI Contribution word tokens and structure"
+  ],
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/output.json",
+    "gitCommit": "89f07854e7b8cddd1e62271eb0a9228de7d168af",
+    "gitBlob": "2ddde1a1981a1e47a6290a7d767dbede0c64c8e8",
+    "sha256": "23065ef639bc1719c577fb6b47fbe40a7b60a2527dc46434c63a42b55c1e87ed",
+    "bytes": 60327,
+    "note": "The exact publication bytes immediately before this punctuation-only repair remain immutable in Git."
+  },
+  "writableShards": [
+    {
+      "shard": 1,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.premises[1]",
+        "candidate.logicalExtension.pro.finalArgument.premises[3]"
+      ]
+    },
+    {
+      "shard": 2,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.premises[4]",
+        "candidate.logicalExtension.pro.finalArgument.conclusion"
+      ]
+    },
+    {
+      "shard": 3,
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[0].text",
+        "candidate.logicalExtension.pro.newArguments[1].text"
+      ]
+    },
+    {
+      "shard": 4,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.premises[0]",
+        "candidate.logicalExtension.con.finalArgument.premises[1]"
+      ]
+    },
+    {
+      "shard": 5,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.premises[3]",
+        "candidate.logicalExtension.con.finalArgument.premises[4]"
+      ]
+    },
+    {
+      "shard": 6,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.conclusion",
+        "candidate.logicalExtension.con.newArguments[0].text"
+      ]
+    },
+    {
+      "shard": 7,
+      "fields": [
+        "candidate.logicalExtension.con.newArguments[1].text"
+      ]
+    }
+  ],
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/output.json",
+      "sha256": "fefd77c86fc5c6468f88e5ba6682d17d3f4d28e8d1e522240d1333b23be34d83",
+      "bytes": 60374
+    },
+    "punctuationAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-198/publication/ai-contribution-punctuation-audit.json",
+      "sha256": "3e356e393613d525347e403081f24c8c95d637d107aaaf887789491296bd2f02",
+      "bytes": 1782
+    }
+  },
+  "audit": {
+    "debatesReviewed": 198,
+    "confirmedAffectedDebates": 1,
+    "changedLeafFields": 13,
+    "punctuationOnly": true,
+    "wordTokenChanges": 0,
+    "structureChanges": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 0,
+    "maximumWritableFieldsPerShard": 2
+  }
+}
