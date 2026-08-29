@@ -70,6 +70,11 @@ const paths = {
   publication: `${DEBATE_ROOT}/publication/output.json`,
   publicationMotionCorrection: `${DEBATE_ROOT}/publication/correction-1-motion.json`,
   publicationCommentaryCorrection: `${DEBATE_ROOT}/publication/correction-2-overall-commentary.json`,
+  publicationContentParityCorrection:
+    selectedRegistryRecord.contentParity?.correctionPath,
+  publicationBeforeContentParityRepair:
+    selectedRegistryRecord.contentParity?.preservedOutputPath,
+  publicationContentParityAudit: selectedRegistryRecord.contentParity?.auditPath,
   rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
   postPublicationRendering: `${DEBATE_ROOT}/rendering/post-publication-audit-1.json`,
   validation: `${DEBATE_ROOT}/validation-summary.json`,
@@ -157,6 +162,47 @@ const validatePublicationIdentity = (candidate, authorization) => {
       )
     )
   );
+  const critiqueLabels = [
+    "Strongest feature:",
+    "Principal limitation:",
+    "Live burden:",
+    "Locked score:"
+  ];
+  for (const critique of critiques) {
+    assert.equal(
+      publicationWordCount(critique) >= 105 &&
+        publicationWordCount(critique) <= 130,
+      true,
+      "publication critique must contain 105-130 words"
+    );
+    assert.equal(
+      critique.length >= 880,
+      true,
+      "publication critique must contain at least 880 characters"
+    );
+    const parts = critique
+      .split(/(?=Principal limitation:|Live burden:|Locked score:)/)
+      .map((part) => part.trim());
+    assert.equal(parts.length, 4, "publication critique must contain four labeled sentences");
+    assert.equal(
+      parts.every(
+        (part, index) =>
+          part.startsWith(critiqueLabels[index]) && /[.!?]$/.test(part)
+      ),
+      true,
+      "publication critique labels or terminal punctuation are invalid"
+    );
+    assert.equal(
+      (critique.match(/[.!?](?=\s|$)/g) ?? []).length,
+      4,
+      "publication critique must contain exactly four sentences"
+    );
+    assert.equal(
+      /[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(critique),
+      false,
+      "publication critique contains unexpected script or replacement characters"
+    );
+  }
   const critiqueComponents = critiques.flatMap((critique) =>
     critique.split(
       /(?=Principal limitation:|Live burden:|Locked score:)/
@@ -166,6 +212,49 @@ const validatePublicationIdentity = (candidate, authorization) => {
     new Set(critiqueComponents).size >= Math.ceil(critiqueComponents.length * 0.8),
     true,
     "publication critiques are excessively templated across locked moves"
+  );
+  const tokenizedCritiques = critiques.map((critique) =>
+    critique
+      .toLowerCase()
+      .replace(/[^a-z0-9/]+/g, " ")
+      .trim()
+      .split(/\s+/)
+  );
+  const ngramSize = 6;
+  const minimumDocuments = Math.max(3, Math.ceil(critiques.length * 0.25));
+  const documentCounts = new Map();
+  for (const tokens of tokenizedCritiques) {
+    const seen = new Set();
+    for (let index = 0; index <= tokens.length - ngramSize; index += 1) {
+      seen.add(tokens.slice(index, index + ngramSize).join(" "));
+    }
+    for (const value of seen) {
+      documentCounts.set(value, (documentCounts.get(value) ?? 0) + 1);
+    }
+  }
+  const commonNgrams = new Set(
+    [...documentCounts]
+      .filter(([, count]) => count >= minimumDocuments)
+      .map(([value]) => value)
+  );
+  const repeatedRatios = tokenizedCritiques.map((tokens) => {
+    const covered = new Set();
+    for (let index = 0; index <= tokens.length - ngramSize; index += 1) {
+      if (!commonNgrams.has(tokens.slice(index, index + ngramSize).join(" "))) {
+        continue;
+      }
+      for (let offset = 0; offset < ngramSize; offset += 1) {
+        covered.add(index + offset);
+      }
+    }
+    return covered.size / tokens.length;
+  });
+  assert.equal(
+    repeatedRatios.reduce((sum, value) => sum + value, 0) /
+        repeatedRatios.length <=
+      0.15 && Math.max(...repeatedRatios) <= 0.25,
+    true,
+    "publication critiques repeat too much shared six-word boilerplate"
   );
 };
 const writeNewJson = (relative, value) => {
@@ -214,6 +303,15 @@ function validateFrozenInputBoundary({
       "docs/assessment-ledgers",
       `Debate ${record.debateNumber}: production ledger is outside its allowed directory`
     );
+    if (record.contentParity) {
+      for (const value of Object.values(record.contentParity)) {
+        assert.equal(
+          value.startsWith(`${record.root}/publication/`),
+          true,
+          `Debate ${record.debateNumber}: content-parity evidence is outside its publication directory`
+        );
+      }
+    }
   }
   assert.equal(selectedRegistryRecord.root, DEBATE_ROOT);
   assert.equal(
@@ -636,6 +734,13 @@ function buildProductionAdapter() {
   ]) {
     if (existsSync(absolute(value))) evidencePaths[key] = value;
   }
+  for (const [key, value] of [
+    ["publicationContentParityCorrection", paths.publicationContentParityCorrection],
+    ["publicationBeforeContentParityRepair", paths.publicationBeforeContentParityRepair],
+    ["publicationContentParityAudit", paths.publicationContentParityAudit]
+  ]) {
+    if (value && existsSync(absolute(value))) evidencePaths[key] = value;
+  }
   const evidenceLocks = Object.fromEntries(
     Object.entries(evidencePaths).map(([key, value]) => [key, fileRecord(value, ROOT)])
   );
@@ -737,6 +842,29 @@ function audit({ repositoryOnly = false } = {}) {
       json(paths.publicationCommentaryCorrection).status,
       "applied-once-and-frozen"
     );
+  }
+  if (paths.publicationContentParityCorrection) {
+    const contentParityCorrection = json(paths.publicationContentParityCorrection);
+    const contentParityAudit = json(paths.publicationContentParityAudit);
+    assert.equal(contentParityCorrection.status, "applied-once-and-frozen");
+    assert.equal(contentParityCorrection.audit.judgmentChanges, 0);
+    assert.equal(contentParityCorrection.audit.scoreChanges, 0);
+    assert.equal(contentParityCorrection.audit.moveChanges, 0);
+    assert.equal(contentParityCorrection.audit.tagChanges, 0);
+    assert.equal(
+      contentParityCorrection.evidence.before.sha256,
+      sha256(bytes(paths.publicationBeforeContentParityRepair))
+    );
+    assert.equal(
+      contentParityCorrection.evidence.after.sha256,
+      sha256(bytes(paths.publication))
+    );
+    assert.equal(
+      contentParityCorrection.evidence.contentParityAudit.sha256,
+      sha256(bytes(paths.publicationContentParityAudit))
+    );
+    assert.equal(contentParityAudit.status, "passed-content-parity-audit");
+    assert.equal(contentParityAudit.debateNumber, DEBATE_NUMBER);
   }
   assert.equal(publication.candidate.motion, inventory.motion);
   assert.equal(publication.candidate.motion, authorization.identity.motion);

@@ -8766,7 +8766,7 @@ export const debateSummaries = [
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0-8n2SGFSL8",
     "motion": "Does God exist?",
-    "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses finite-creator, multiverse, infinity, and suffering objections.",
+    "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses competing finite-creator, multiverse, infinity, and evidential suffering objections.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {

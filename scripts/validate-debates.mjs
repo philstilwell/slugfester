@@ -2271,7 +2271,11 @@ function validateTag(tag, path) {
   }
 }
 
-function validateArgument(argument, path, { requireLedgerMoveId = false } = {}) {
+function validateArgument(
+  argument,
+  path,
+  { requireLedgerMoveId = false, requirePublicationContract = false } = {}
+) {
   if (!isPlainObject(argument)) {
     addError(path, "must be an object");
     return;
@@ -2287,6 +2291,43 @@ function validateArgument(argument, path, { requireLedgerMoveId = false } = {}) 
   const critiqueWords = wordCount(critique);
   if (critiqueWords < 105 || critiqueWords > 130) {
     addError([...path, "critique"], `should be 105-130 words; found ${critiqueWords}`);
+  }
+  if (requirePublicationContract) {
+    if (critique.length < 880) {
+      addError(
+        [...path, "critique"],
+        `should contain at least 880 characters; found ${critique.length}`
+      );
+    }
+    const critiqueLabels = [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ];
+    const critiqueParts = critique
+      .split(/(?=Principal limitation:|Live burden:|Locked score:)/)
+      .map((part) => part.trim());
+    const sentenceEnds = critique.match(/[.!?](?=\s|$)/g) || [];
+    if (
+      critiqueParts.length !== critiqueLabels.length ||
+      !critiqueParts.every(
+        (part, index) =>
+          part.startsWith(critiqueLabels[index]) && /[.!?]$/.test(part)
+      ) ||
+      sentenceEnds.length !== critiqueLabels.length
+    ) {
+      addError(
+        [...path, "critique"],
+        "must contain exactly four terminally punctuated sentences with the ordered publication labels"
+      );
+    }
+    if (/[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(critique)) {
+      addError(
+        [...path, "critique"],
+        "must not contain unexpected CJK, Hangul, or replacement characters"
+      );
+    }
   }
 
   requireArray(argument, "tags", path).forEach((tag, index) => {
@@ -2577,12 +2618,14 @@ function validateDebate(debate, index) {
             }
             if (exchange.pro) {
               validateArgument(exchange.pro, [...exchangePath, "pro"], {
-                requireLedgerMoveId: true
+                requireLedgerMoveId: true,
+                requirePublicationContract: true
               });
             }
             if (exchange.con) {
               validateArgument(exchange.con, [...exchangePath, "con"], {
-                requireLedgerMoveId: true
+                requireLedgerMoveId: true,
+                requirePublicationContract: true
               });
             }
           } else {
