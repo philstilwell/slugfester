@@ -9040,5 +9040,54 @@ export const debateSummaries = [
         "title": "Closing Burdens and Summations"
       }
     ]
+  },
+  {
+    "id": "dawkins-lennox-god-delusion-2007",
+    "number": "202",
+    "title": "Is Belief in God a Delusion? Richard Dawkins vs. John Lennox (2007)",
+    "label": "The God Delusion and Christian theism",
+    "date": "2026-08-29",
+    "duration": "1 hr 47 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zF5bPI92-5o",
+    "motion": "Is belief in the Christian God a delusion?",
+    "summary": "Dawkins prevailed narrowly by pressing natural explanations, evidential scrutiny, and secular accounts of morality, while Lennox answered strongly on evidential faith, science's limits, and Christian distinctiveness.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Atheistic naturalism",
+        "speaker": "Richard Dawkins",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian theism",
+        "speaker": "John Lennox",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 72,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Worldviews, faith, and inquiry"
+      },
+      {
+        "title": "Science, rationality, and theism"
+      },
+      {
+        "title": "Design, complexity, and explanation"
+      },
+      {
+        "title": "Religion, atheism, and harm"
+      },
+      {
+        "title": "Morality without God"
+      },
+      {
+        "title": "Jesus, miracles, and closing cases"
+      }
+    ]
   }
 ];

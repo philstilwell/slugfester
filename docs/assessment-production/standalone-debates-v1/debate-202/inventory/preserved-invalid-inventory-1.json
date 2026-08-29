@@ -1,0 +1,1643 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "202",
+  "debateId": "dawkins-lennox-god-delusion-2007",
+  "motion": "Is belief in the Christian God a delusion?",
+  "assessmentModel": "5.6 Sol",
+  "isolation": {
+    "scoreBlind": true,
+    "forbiddenMaterialUnavailable": true,
+    "forbiddenMaterialConsulted": false,
+    "noLegacyAssessmentsScoresPublicationProseRankingsOrJudgmentsSeen": true,
+    "contaminationDetected": false,
+    "allowedInputsExhaustivelyLimitedToAuthorizedPacket": true,
+    "statement": "The analysis used only authorization.json, source-lock.json, events.json, and transcript.txt."
+  },
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "position": "Belief in the Christian God is a delusion",
+      "bridges": [
+        {
+          "bridgeId": "pro-motion-delusion",
+          "tier": "motion",
+          "statement": "Christian God-belief is a delusion rather than an evidence-based account of reality."
+        },
+        {
+          "bridgeId": "pro-natural-explanation",
+          "tier": "central",
+          "statement": "Natural and scientific explanations remove the explanatory need for a supernatural creator."
+        },
+        {
+          "bridgeId": "pro-evidence-standard",
+          "tier": "central",
+          "statement": "Religious claims require evidence and should not receive protection from empirical scrutiny."
+        },
+        {
+          "bridgeId": "pro-religious-harm",
+          "tier": "subsidiary",
+          "statement": "Unquestioned religious faith can license harmful conduct."
+        },
+        {
+          "bridgeId": "pro-secular-morality",
+          "tier": "subsidiary",
+          "statement": "Human morality does not require divine commands or belief in God."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "John Lennox",
+      "position": "Christian belief in God is evidence-based and not a delusion",
+      "bridges": [
+        {
+          "bridgeId": "con-motion-not-delusion",
+          "tier": "motion",
+          "statement": "Christian belief in God is evidence-based and not a delusion."
+        },
+        {
+          "bridgeId": "con-theistic-explanation",
+          "tier": "central",
+          "statement": "Theism explains the universe, its intelligibility, and its apparent order better than atheism."
+        },
+        {
+          "bridgeId": "con-rational-faith",
+          "tier": "central",
+          "statement": "Christian faith is rational trust grounded in scientific, historical, and experiential evidence."
+        },
+        {
+          "bridgeId": "con-moral-foundation",
+          "tier": "subsidiary",
+          "statement": "God provides an objective foundation for moral categories and justice."
+        },
+        {
+          "bridgeId": "con-christian-distinctiveness",
+          "tier": "subsidiary",
+          "statement": "Christian teaching and evidence about Jesus must be distinguished from generic or violent religion."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "worldviews-faith-and-inquiry",
+      "title": "Worldviews, faith, and inquiry",
+      "weightPercent": 16,
+      "rationale": "The autobiographical openings and first thesis establish whether Christianity impedes inquiry and whether faith can be evidential."
+    },
+    {
+      "sectionId": "science-rationality-and-theism",
+      "title": "Science, rationality, and theism",
+      "weightPercent": 17,
+      "rationale": "The second exchange tests whether scientific reasoning favors atheism or depends more naturally on theism."
+    },
+    {
+      "sectionId": "design-complexity-and-explanation",
+      "title": "Design, complexity, and explanation",
+      "weightPercent": 18,
+      "rationale": "The third exchange addresses fine-tuning, multiverse reasoning, biological complexity, and the demand to explain a designer."
+    },
+    {
+      "sectionId": "religion-atheism-and-harm",
+      "title": "Religion, atheism, and harm",
+      "weightPercent": 17,
+      "rationale": "The fourth exchange compares proposed paths from religious or atheistic ideologies to violence and oppression."
+    },
+    {
+      "sectionId": "morality-without-god",
+      "title": "Morality without God",
+      "weightPercent": 16,
+      "rationale": "The fifth exchange contrasts evolutionary and cultural accounts of morality with a claimed divine moral foundation."
+    },
+    {
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "title": "Jesus, miracles, and closing cases",
+      "weightPercent": 16,
+      "rationale": "The final exchange and closings address scripture, Jesus, miracles, resurrection, and the debate's competing explanatory conclusions."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "darwinism-ended-youthful-faith",
+      "sectionId": "worldviews-faith-and-inquiry",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 204,
+        "endEvent": 213,
+        "startMs": 629279,
+        "endMs": 659040,
+        "excerpt": "having lost my faith for good at the age of about 15 or 16. Um, uh, that was because I discovered Darwinism. I recognized that there was no, uh, good reason to believe in any kind of supernatural creator. And my final vestage, last vestage of religious faith disappeared when I finally understood uh the Darwinian explanation for life."
+      },
+      "quoteEligibleExactSpans": [
+        "there was no, uh, good reason to believe",
+        "religious faith disappeared when I finally understood"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins's formal autobiographical opening follows the moderator's explicit handoff.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Understanding the Darwinian explanation of life removed Dawkins's reason to believe in a supernatural creator.",
+      "inventoryRationale": "The autobiography advances a causal argument from natural explanation to loss of creator-belief."
+    },
+    {
+      "moveId": "christian-upbringing-encouraged-inquiry",
+      "sectionId": "worldviews-faith-and-inquiry",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 283,
+        "endEvent": 294,
+        "startMs": 840720,
+        "endMs": 871760,
+        "excerpt": "In the book, The God Delusion, Richard, you say that religion teaches us that it is a virtue to be satisfied with not understanding. Well, whatever other religion this may apply to, it certainly did not apply to the Christianity my parents taught me from the Bible. They encouraged me to be intellectually inquisitive because they were like that themselves. Not in spite of their Christian faith, but because of it. and I owe them an immense debt for setting"
+      },
+      "quoteEligibleExactSpans": [
+        "They encouraged me to be intellectually inquisitive",
+        "Not in spite of their Christian faith, but because of it."
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox's formal autobiographical opening follows the moderator's handoff.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-evidence-standard",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "darwinism-ended-youthful-faith"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "inquisitive-christian-counterexample",
+          "targetMoveId": "darwinism-ended-youthful-faith",
+          "text": "Lennox offers his Christian formation as a counterexample to the suggestion that Christianity displaces intellectual inquiry.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Biblical Christianity can motivate intellectual inquiry rather than satisfaction with ignorance.",
+      "inventoryRationale": "The autobiographical material supplies a substantive counterexample about Christianity's intellectual effects."
+    },
+    {
+      "moveId": "science-uses-evidence",
+      "sectionId": "worldviews-faith-and-inquiry",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 422,
+        "endEvent": 428,
+        "startMs": 1223360,
+        "endMs": 1247559,
+        "excerpt": "Science uses evidence to discover the truth about the universe. It's been getting better at it over the centuries in the teeth of opposition from religion. Although it has to be admitted that of course science grew out of uh a religious tradition."
+      },
+      "quoteEligibleExactSpans": [
+        "Science uses evidence to discover the truth about the universe."
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Dawkins to elaborate the first thesis.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-evidence-standard",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Science progressively discovers truth through evidence, despite religious opposition.",
+      "inventoryRationale": "This states Dawkins's governing contrast between evidence-led science and religion."
+    },
+    {
+      "moveId": "god-answers-stifle-investigation",
+      "sectionId": "worldviews-faith-and-inquiry",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 505,
+        "endEvent": 516,
+        "startMs": 1474640,
+        "endMs": 1509600,
+        "excerpt": "But religion teaches us to be satisfied with not really understanding. Every one of these difficult questions that comes up, science says, \"Right, let's roll up our sleeves and work on it.\" Religion says, \"Oh, God did it.\" We don't need to work on it. God did it. It's as simple as that. We have no thrusting force pushing us on to try to understand. Religion startifies the impulse to understand because religion"
+      },
+      "quoteEligibleExactSpans": [
+        "religion teaches us to be satisfied with not really understanding",
+        "We don't need to work on it. God did it."
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins response in the first moderated thesis.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Invoking God as an easy answer removes the incentive to investigate difficult questions.",
+      "inventoryRationale": "This is a distinct practical inference about how religious explanation allegedly arrests inquiry."
+    },
+    {
+      "moveId": "faith-strength-tracks-evidence",
+      "sectionId": "worldviews-faith-and-inquiry",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 535,
+        "endEvent": 547,
+        "startMs": 1564320,
+        "endMs": 1604960,
+        "excerpt": "But not all faith is blind faith because faith itself carries with it the ideas of belief, trust, commitment and is therefore only as robust as the evidence for it. Faith in the flying spaghetti monster, much beloved of Richard Dawkins, a delightful idea, is blind because there's no evidence for the flying spaghetti uh monster. But faith in relativity theory is not blind because there is evidence supporting it. I can't speak authoritatively for other religions. But faith in the Christian"
+      },
+      "quoteEligibleExactSpans": [
+        "not all faith is blind faith",
+        "only as robust as the evidence for it"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the first-thesis response to Lennox.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-rational-faith",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "science-uses-evidence",
+        "god-answers-stifle-investigation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "evidential-faith-distinction",
+          "targetMoveId": "science-uses-evidence",
+          "text": "Lennox distinguishes unsupported belief from trust whose robustness varies with supporting evidence.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "faith-need-not-stop-inquiry",
+          "targetMoveId": "god-answers-stifle-investigation",
+          "text": "The distinction denies that faith as such substitutes an unsupported answer for investigation.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Faith is not intrinsically blind; rational trust is proportionate to its evidence.",
+      "inventoryRationale": "This directly contests the thesis's definition of faith and supplies an evidence-sensitive alternative."
+    },
+    {
+      "moveId": "science-has-rational-limits",
+      "sectionId": "worldviews-faith-and-inquiry",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 568,
+        "endEvent": 579,
+        "startMs": 1656559,
+        "endMs": 1684159,
+        "excerpt": "I think it's important in this context to emphasize that science is limited because there seems to me a creeping danger of equating science with rationality. But what is beyond science is not necessarily irrational. Science cannot tell us for instance whether a poem, a work of literature or a work of art or music is good or beautiful. Science can tell us that if you put stricken into your grandmother's tea, it will kill"
+      },
+      "quoteEligibleExactSpans": [
+        "what is beyond science is not necessarily irrational",
+        "science is limited"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous formal Lennox response in the first exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-rational-faith",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Science is not coextensive with rationality because meaningful aesthetic and moral questions exceed its methods.",
+      "inventoryRationale": "This independently limits the inference from scientific method to the irrationality of religion."
+    },
+    {
+      "moveId": "theism-supported-rise-of-science",
+      "sectionId": "science-rationality-and-theism",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 613,
+        "endEvent": 623,
+        "startMs": 1767120,
+        "endMs": 1794960,
+        "excerpt": "and it arose out of a theistic background. And many philosophers of science have studied this and come to the conclusion that's now called Whitehead's thesis that human beings became scientific because they expected law in nature and they expected law in nature because they believed in a lawgiver. I think that is profoundly important because it means far from religion hindering science it was the"
+      },
+      "quoteEligibleExactSpans": [
+        "they expected law in nature because they believed in a lawgiver",
+        "far from religion hindering science"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox response to Dawkins's first-thesis case.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "god-answers-stifle-investigation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "theistic-science-origin-counterexample",
+          "targetMoveId": "god-answers-stifle-investigation",
+          "text": "Lennox argues that belief in a lawgiver encouraged expectations of natural law and therefore scientific investigation.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Theistic belief in a lawgiver historically encouraged the expectation of discoverable natural laws.",
+      "inventoryRationale": "This is a distinct counterargument to the claim that religion suppresses scientific inquiry."
+    },
+    {
+      "moveId": "evidence-makes-faith-label-redundant",
+      "sectionId": "science-rationality-and-theism",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 680,
+        "endEvent": 692,
+        "startMs": 1944480,
+        "endMs": 1980159,
+        "excerpt": "I mean, if that were true, it wouldn't need to be faith, would it? I mean, if that if there were evidence for it, uh why would you need to call it faith? You'd say just evidence. And when you said that we that that faith in relativity in in Einstein's theory of of relativity is is evidence-based that of course it is but um the but the evidence is is all important. I mean Einstein's predictions fit in with um with uh observed fact and and with a whole body of theory. Whereas we only need to use"
+      },
+      "quoteEligibleExactSpans": [
+        "if there were evidence for it",
+        "the evidence is is all important"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins explicitly responds to Lennox before addressing the second thesis.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-rational-faith",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "faith-strength-tracks-evidence"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "faith-evidence-terminology-challenge",
+          "targetMoveId": "faith-strength-tracks-evidence",
+          "text": "Dawkins argues that evidence-supported assent should simply be called evidence, reserving faith for cases without evidence.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Where adequate evidence exists, calling the resulting belief faith is unnecessary and obscures evidence's decisive role.",
+      "inventoryRationale": "This directly challenges Lennox's evidence-based definition of faith."
+    },
+    {
+      "moveId": "god-claims-are-scientific-claims",
+      "sectionId": "science-rationality-and-theism",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 786,
+        "endEvent": 797,
+        "startMs": 2206640,
+        "endMs": 2238160,
+        "excerpt": "I don't think that for a moment. I think that religion really is in a sense about science. I think that religious claims about the universe are scientific claims. I suspect that John may agree with me about this. claims about the universe are scientific claims. A universe with a god would be a very different kind of universe from a universe without a god. Scientific methods are the appropriate methods or"
+      },
+      "quoteEligibleExactSpans": [
+        "religious claims about the universe are scientific claims",
+        "A universe with a god would be a very different kind of universe"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins's uninterrupted second-thesis response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-evidence-standard",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "God's existence changes what kind of universe exists, so religious claims are properly subject to scientific modes of reasoning.",
+      "inventoryRationale": "This establishes the evidential jurisdiction under which Dawkins evaluates the God hypothesis."
+    },
+    {
+      "moveId": "science-presupposes-rational-intelligibility",
+      "sectionId": "science-rationality-and-theism",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 850,
+        "endEvent": 861,
+        "startMs": 2355599,
+        "endMs": 2387839,
+        "excerpt": "that science supports atheism not Christianity. I think atheism under undermine science very seriously because if you think of the basic assumption that all of us who are scientists have that is we believe in the rational intelligibility of the universe. And it's interesting to me that scientists of the eminence of Eugene Vner and Albert Einstein use the word faith. They cannot imagine a scientist without this faith because of course they point out"
+      },
+      "quoteEligibleExactSpans": [
+        "we believe in the rational intelligibility of the universe",
+        "atheism under undermine science very seriously"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Lennox the second-thesis response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Scientific practice presupposes faith in the rational intelligibility of the universe, which science itself does not establish.",
+      "inventoryRationale": "This supplies Lennox's foundational argument about the worldview presupposed by science."
+    },
+    {
+      "moveId": "materialism-undercuts-trust-in-reason",
+      "sectionId": "science-rationality-and-theism",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 876,
+        "endEvent": 890,
+        "startMs": 2420640,
+        "endMs": 2461760,
+        "excerpt": "you must be as a materialist, reducing beliefs to the physics and chemistry of neurological structures, then it raises a very big question, ladies and gentlemen. If in the end my beliefs, my theories, my scientific theories are the results ultimately of the motions of atoms in my brain produced by an unguided random mindless process. Why should I believe them? In other words, it's like someone sitting on the branch of a tree cutting off the branch on which they're sitting. And it seems to me that therefore atheism actually undercuts the scientific endeavor very"
+      },
+      "quoteEligibleExactSpans": [
+        "Why should I believe them?",
+        "atheism actually undercuts the scientific endeavor"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox response in the second exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "If beliefs reduce to unguided atomic motions, atheism undermines confidence in the reasoning used to support scientific theories.",
+      "inventoryRationale": "This is an independently assessable self-trust objection to materialism."
+    },
+    {
+      "moveId": "fine-tuning-points-beyond-multiverse",
+      "sectionId": "science-rationality-and-theism",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 905,
+        "endEvent": 916,
+        "startMs": 2498000,
+        "endMs": 2531359,
+        "excerpt": "at science itself, we have the finetuning of the universe. the fact that the basic constants of nature have got to be very accurate in order to have a universe just like this one. Now I know that some people prefer and that's the word that Sir Martin Ree uses an explanation in terms of a multiverse which actually doesn't in my opinion solve the logical problems. But I'm very interested in the verdict of Arnold Penszas who won the Nobel Prize for"
+      },
+      "quoteEligibleExactSpans": [
+        "we have the finetuning of the universe",
+        "a multiverse which actually doesn't in my opinion solve the logical problems"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox second-thesis response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Life-permitting constants require fine adjustment, and appealing to a multiverse does not resolve the relevant explanatory problem.",
+      "inventoryRationale": "Fine-tuning is a distinct empirical-explanatory strand of Lennox's case."
+    },
+    {
+      "moveId": "designer-postulate-explains-nothing",
+      "sectionId": "design-complexity-and-explanation",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1042,
+        "endEvent": 1056,
+        "startMs": 2846160,
+        "endMs": 2884560,
+        "excerpt": "It's tempting once again to to import the easy fasile idea of a designer and to say that the designer twiddled the knobs of the universe at the big bang and got them exactly right. Got the gravitational constant right, got the strong force right, the weak force right, and so on. But it seems to me to be manifestly obvious that that is a futile kind of explanation because as the quotation says, who designed the designer? you have explained precisely nothing because instead of just saying oh knobs were tuned to the right values anyway"
+      },
+      "quoteEligibleExactSpans": [
+        "who designed the designer?",
+        "you have explained precisely nothing"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Dawkins to address the design thesis and Lennox's fine-tuning point.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "fine-tuning-points-beyond-multiverse"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "fine-tuner-regress-objection",
+          "targetMoveId": "fine-tuning-points-beyond-multiverse",
+          "text": "Dawkins argues that adding a knob-tuning designer merely relocates the explanatory problem to the designer.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "A designer who fine-tunes constants explains nothing unless the designer's own complexity is explained.",
+      "inventoryRationale": "This is Dawkins's central objection to the theistic interpretation of fine-tuning."
+    },
+    {
+      "moveId": "multiverse-anthropic-interim-explanation",
+      "sectionId": "design-complexity-and-explanation",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1090,
+        "endEvent": 1100,
+        "startMs": 2968160,
+        "endMs": 2999200,
+        "excerpt": "because here we are. The anthropic principle, the principle that we have to be in a universe capable of giving rise to us plus the principle of the multiverse provides at least an interim satisfying explanation in a way that a creator couldn't possibly be a satisfying explanation for the reason that I've given. Then having got ourselves into a universe which is capable of generating"
+      },
+      "quoteEligibleExactSpans": [
+        "provides at least an interim satisfying explanation",
+        "a creator couldn't possibly be a satisfying explanation"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins response in the design exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "fine-tuning-points-beyond-multiverse"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "anthropic-multiverse-alternative",
+          "targetMoveId": "fine-tuning-points-beyond-multiverse",
+          "text": "Dawkins offers observer selection across multiple universes as an interim alternative explanation of life-permitting constants.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The anthropic principle combined with a multiverse provides an interim natural explanation unavailable from a creator hypothesis.",
+      "inventoryRationale": "This supplies Dawkins's positive alternative rather than merely criticizing design."
+    },
+    {
+      "moveId": "anthropic-principle-is-truism",
+      "sectionId": "design-complexity-and-explanation",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1127,
+        "endEvent": 1141,
+        "startMs": 3063680,
+        "endMs": 3102960,
+        "excerpt": "Dr. Lin, the anthropic principle, as you stated, Richard, I think is a complete truism. Of course, we have to be on such and such a kind of planet of the kind that we could appear on. That does not answer the question how we came to exist on it. And I fear I have to disagree with you on Darwinism. Darwinism does not explain life. It may explain certain things about what happens when you've got life. But evolution uh assuming assumes the existence of a mutating replicator. It does not explain how that replicator came to exist in the first place. Now that's a major discussion. I"
+      },
+      "quoteEligibleExactSpans": [
+        "the anthropic principle, as you stated, Richard, I think is a complete truism",
+        "It does not explain how that replicator came to exist"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the design response to Lennox.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "multiverse-anthropic-interim-explanation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "anthropic-existence-question-unanswered",
+          "targetMoveId": "multiverse-anthropic-interim-explanation",
+          "text": "Lennox argues that observer compatibility is a truism that does not explain how observers or their life-bearing setting arose.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Anthropic selection does not explain existence, and Darwinian evolution presupposes rather than explains the first replicator.",
+      "inventoryRationale": "The compact passage advances two linked limits on Dawkins's proposed natural explanatory sequence."
+    },
+    {
+      "moveId": "uncreated-god-escapes-created-regress",
+      "sectionId": "design-complexity-and-explanation",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1142,
+        "endEvent": 1152,
+        "startMs": 3100000,
+        "endMs": 3130800,
+        "excerpt": "want to address the who designed the designer question because it's the old school boy question. Who created God? I I'm actually very surprised to find it as a central argument in your book because it assumes that God is created. And I'm not surprised therefore that you call the book the God delusion because created gods are by definition a delusion. Now I know and I ought to explain that"
+      },
+      "quoteEligibleExactSpans": [
+        "it assumes that God is created",
+        "created gods are by definition a delusion"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox design response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "designer-postulate-explains-nothing"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "created-designer-premise-denied",
+          "targetMoveId": "designer-postulate-explains-nothing",
+          "text": "Lennox denies that the Christian God is a created entity to which the proposed regress applies.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The 'who created God' objection targets created gods, not the eternal uncreated God affirmed by Christianity.",
+      "inventoryRationale": "This is Lennox's direct answer to the designer-regress objection."
+    },
+    {
+      "moveId": "complex-explanations-can-explain-simple-events",
+      "sectionId": "design-complexity-and-explanation",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1199,
+        "endEvent": 1211,
+        "startMs": 3234000,
+        "endMs": 3269359,
+        "excerpt": "he suggested that introducing God would mean an end of science. God is no explanation since by definition God is more complex than the thing you are explaining. Now this he states as the central argument of his book. I would not have expected an argument like this from a scientist because explanations in science themselves are usually in terms of increasing complexity. An apple falling is a simple event. The explanation in terms of Newton's law of gravitation is already stretching the"
+      },
+      "quoteEligibleExactSpans": [
+        "explanations in science themselves are usually in terms of increasing complexity"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox design response.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-natural-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "designer-postulate-explains-nothing"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "complexity-not-disqualifying",
+          "targetMoveId": "designer-postulate-explains-nothing",
+          "text": "Lennox argues that an explanation is not invalid merely because its explanatory structure is more complex than the event explained.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Greater complexity in an explanation does not by itself disqualify it, since scientific explanations often increase in complexity.",
+      "inventoryRationale": "This independently challenges the simplicity premise of Dawkins's designer objection."
+    },
+    {
+      "moveId": "complexity-must-arise-from-simplicity",
+      "sectionId": "design-complexity-and-explanation",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1313,
+        "endEvent": 1325,
+        "startMs": 3549760,
+        "endMs": 3581599,
+        "excerpt": "created God? I mean the word created was smuggled in by somebody else. I didn't. Or maybe I did say who created God. That's not the point. The the the point is not whether God is a created thing or not. The point is this issue of simplicity which you rightly went on to to uh talk about in order to understand the existence of complexity we can't just postulate complexity we have to go back to simplicity now John used the illustration of an archaeologist wasn't"
+      },
+      "quoteEligibleExactSpans": [
+        "in order to understand the existence of complexity we can't just postulate complexity"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins explicitly interrupts the fourth topic to answer Lennox's designer response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "uncreated-god-escapes-created-regress",
+        "complex-explanations-can-explain-simple-events"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "eternity-does-not-explain-complexity",
+          "targetMoveId": "uncreated-god-escapes-created-regress",
+          "text": "Dawkins says the objection concerns unexplained complexity, not whether the complex God is labeled created.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "ultimate-versus-local-explanation",
+          "targetMoveId": "complex-explanations-can-explain-simple-events",
+          "text": "He distinguishes a local complex explanation from the need for an ultimate account of complexity arising from simplicity.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "An ultimate explanation of complexity must trace it to simpler beginnings rather than merely postulate eternal complexity.",
+      "inventoryRationale": "This clarifies and preserves Dawkins's central inference after Lennox's two objections."
+    },
+    {
+      "moveId": "unquestionable-faith-removes-justification",
+      "sectionId": "religion-atheism-and-harm",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1398,
+        "endEvent": 1410,
+        "startMs": 3753280,
+        "endMs": 3792319,
+        "excerpt": "point about teaching children that faith is a virtue is that you're teaching them that you don't have to justify what you do. You can simply shelter behind the statement that's my faith and you're not to question that. What I'm objecting to is the convention that we have all of us bought into whether we are religious or not. That religious faith is something to be respected, something not to be questioned. And if somebody says that's my faith, then you simply have to respect it, tiptoe gently away, and say"
+      },
+      "quoteEligibleExactSpans": [
+        "you're teaching them that you don't have to justify what you do",
+        "religious faith is something to be respected, something not to be questioned"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins's formal response to the fourth thesis.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Teaching children that faith is unquestionable trains them to act without evidential justification.",
+      "inventoryRationale": "This provides the mechanism connecting faith education to potential harm."
+    },
+    {
+      "moveId": "christian-violence-disobeys-christ",
+      "sectionId": "religion-atheism-and-harm",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1467,
+        "endEvent": 1480,
+        "startMs": 3938880,
+        "endMs": 3978480,
+        "excerpt": "Christianity been dangerous and I want to agree very largely with a lot of what you say the danger of fanatical religion that fans the flames of violence and quite frankly I'm ashamed as a Christian of the reputation particularly in the Middle Ages the crusades and so on that they're associated with Christianity. But I'd like to point out that the perpetrators of that kind of atrocity were not following Christ, but they were actually disobeying his explicit command because he prohibited very famously, as you know, his followers from using"
+      },
+      "quoteEligibleExactSpans": [
+        "the danger of fanatical religion that fans the flames of violence",
+        "the perpetrators of that kind of atrocity were not following Christ"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the danger-thesis response to Lennox.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "unquestionable-faith-removes-justification"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "christ-command-distinction",
+          "targetMoveId": "unquestionable-faith-removes-justification",
+          "text": "Lennox concedes fanatical religion's danger but argues that Christian violence violates rather than follows Christ's explicit teaching.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Violence associated with Christianity cannot be attributed to following Christ when it disobeys his prohibition on physical force.",
+      "inventoryRationale": "This distinguishes Christianity's asserted content from violence committed under its label."
+    },
+    {
+      "moveId": "atheist-states-also-produced-atrocities",
+      "sectionId": "religion-atheism-and-harm",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1503,
+        "endEvent": 1513,
+        "startMs": 4035920,
+        "endMs": 4069119,
+        "excerpt": "a world without atheism, with no Stalin, with no Mau, with no Paul Pot to name the heads of the three officially atheistic states. A world with no goolag, no cultural revolution, no killing fields. I think that would be a world worth imagining, too. And I must say I I I am very disturbed in your book by what seems to me to be an attempt to airbrush out the atrocities of the communist world. I have spent a lot of"
+      },
+      "quoteEligibleExactSpans": [
+        "a world without atheism",
+        "an attempt to airbrush out the atrocities of the communist world"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox response in the fourth exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Officially atheistic regimes and their atrocities prevent a one-sided comparison that assigns ideological danger only to religion.",
+      "inventoryRationale": "This introduces Lennox's parallel historical challenge to Dawkins's danger thesis."
+    },
+    {
+      "moveId": "religious-premises-create-logical-path-to-harm",
+      "sectionId": "religion-atheism-and-harm",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1597,
+        "endEvent": 1612,
+        "startMs": 4278719,
+        "endMs": 4325920,
+        "excerpt": "in the God Delusion. I very deliberately uh made very little of all the individual evils of religion. I mention them occasionally but I didn't go on about the crusades, the concistadors, anything like that. I am not trying to say that religion that that that religious people do bad things. I agree fully that Stalin and Hitler and Palpot and Mao did terribly bad things. It may even be that atheism was an integral part of the Marxism which led them to do terrible bad things. If indeed it was their Marxism that led them to do bad things. What interests me is that I think that there is a logical path"
+      },
+      "quoteEligibleExactSpans": [
+        "I am not trying to say that religion that that that religious people do bad things",
+        "there is a logical path"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator permits Dawkins a direct reply to Lennox's historical challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "atheist-states-also-produced-atrocities"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "causal-path-versus-coincidence",
+          "targetMoveId": "atheist-states-also-produced-atrocities",
+          "text": "Dawkins accepts atheist perpetrators' atrocities but distinguishes correlation from a logical path supplied by an ideology's premises.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The relevant issue is not whether religious or atheist people commit evil, but whether their defining beliefs logically motivate it.",
+      "inventoryRationale": "This reframes the historical comparison around ideological entailment."
+    },
+    {
+      "moveId": "promised-paradise-can-rationalize-violence",
+      "sectionId": "religion-atheism-and-harm",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1613,
+        "endEvent": 1625,
+        "startMs": 4322560,
+        "endMs": 4362480,
+        "excerpt": "from religion to doing terrible things. And I kind of touched on it in the last in the last answer uh when I was talking about um faith leading you to do to do things. There's a logical path that says if you really really really believe that your god Allah whoever it is wants you to do something you'll go to heaven. You'll go to paradise if you do it then it's possible for an entirely logical rational person to do hideous things. I cannot conceive of a logical path that would lead one to say because I am an"
+      },
+      "quoteEligibleExactSpans": [
+        "it's possible for an entirely logical rational person to do hideous things"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins direct response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Belief that God commands an act and rewards it with paradise can make hideous violence rational relative to religious premises.",
+      "inventoryRationale": "This states the specific inferential mechanism behind Dawkins's danger claim."
+    },
+    {
+      "moveId": "fanatical-ideology-not-religion-alone",
+      "sectionId": "religion-atheism-and-harm",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1698,
+        "endEvent": 1704,
+        "startMs": 4528239,
+        "endMs": 4544400,
+        "excerpt": "Well, I would want to argue that there's a logical path from any ideology that from any ideology that's fanatical and oppressive to the kind of behavior you say whether it's um religion or atheistic because atheism is a faith of course as well."
+      },
+      "quoteEligibleExactSpans": [
+        "there's a logical path from any ideology that from any ideology that's fanatical and oppressive"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly invites Lennox's brief response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "religious-premises-create-logical-path-to-harm",
+        "promised-paradise-can-rationalize-violence"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "fanaticism-generalizes-causal-path",
+          "targetMoveId": "religious-premises-create-logical-path-to-harm",
+          "text": "Lennox generalizes the proposed logical path from religion to any fanatical and oppressive ideology.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "atheistic-ideology-can-motivate",
+          "targetMoveId": "promised-paradise-can-rationalize-violence",
+          "text": "He denies that only religious premises can ideologically motivate oppressive conduct.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "The logical route to oppressive behavior arises from fanatical ideology generally, whether religious or atheistic.",
+      "inventoryRationale": "This directly contests the claimed asymmetry between religious and atheistic harm."
+    },
+    {
+      "moveId": "scripture-requires-independent-moral-selection",
+      "sectionId": "morality-without-god",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1750,
+        "endEvent": 1760,
+        "startMs": 4657199,
+        "endMs": 4691000,
+        "excerpt": "If you think about why you might need God in order to be moral, I can only think of two reasons how that might come about. You might say you need a book to tell you what's moral. Well, as for that, I sincerely hope that nobody in this room bases their morals on the Christian Bible or the Quran because if they do, then their morals are likely to be hideous. Needless to say, you can find some decent verses."
+      },
+      "quoteEligibleExactSpans": [
+        "You might say you need a book to tell you what's moral"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins's formal response to the fifth thesis.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-secular-morality",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Scripture cannot independently ground morality because readers must distinguish acceptable verses from unacceptable ones.",
+      "inventoryRationale": "The passage begins Dawkins's independent-standard objection to scriptural morality."
+    },
+    {
+      "moveId": "evolution-built-prosocial-dispositions",
+      "sectionId": "morality-without-god",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1811,
+        "endEvent": 1825,
+        "startMs": 4810000,
+        "endMs": 4856000,
+        "excerpt": "that. Now, as an evolutionist, I think that it comes partly from our evolutionary past. I think that there was a time in our history when we lived in small kin groups and we lived in small groups where good deeds could be expected to be reciprocated. And under those conditions we developed a kind of lust to be good which was parallel to the lust for sex uh which has obvious Darwinian advantages. Now we no longer live in small villages in small clans and so the Darwinian pressure to be good is no longer so strong. Nor is the Darwinian pressure"
+      },
+      "quoteEligibleExactSpans": [
+        "good deeds could be expected to be reciprocated",
+        "we developed a kind of lust to be good"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins response in the morality exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-secular-morality",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Reciprocity in ancestral groups can naturally select enduring dispositions toward cooperation and goodness.",
+      "inventoryRationale": "This is Dawkins's positive evolutionary account of moral motivation."
+    },
+    {
+      "moveId": "moral-zeitgeist-changes-without-scripture",
+      "sectionId": "morality-without-god",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1840,
+        "endEvent": 1851,
+        "startMs": 4890239,
+        "endMs": 4927600,
+        "excerpt": "something less easy to define but which which is clearly there because I call it the shifting moral zeitgeist. It's something that changes from decade to decade. Uh living as we do in 2007, there will be a broad consensus of what's right and wrong. Racism is wrong. Um sexual discrimination is wrong. Uh cruelty is wrong, which characterize we who live in the early 21st century, which would not necessarily have characterized our"
+      },
+      "quoteEligibleExactSpans": [
+        "the shifting moral zeitgeist",
+        "It's something that changes from decade to decade."
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins morality response.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-secular-morality",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Changing moral consensus shows a social moral force that does not track unchanging scripture.",
+      "inventoryRationale": "This cultural-change explanation is distinct from the preceding evolutionary-origin account."
+    },
+    {
+      "moveId": "common-morality-reflects-gods-image",
+      "sectionId": "morality-without-god",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1874,
+        "endEvent": 1887,
+        "startMs": 4983840,
+        "endMs": 5035600,
+        "excerpt": "moral. If we formulate it as can an atheist be good? Of course. Because as I see it, the very fact that human beings all around the world show a common core of morality is evidence for the truth of the biblical claim that we are moral beings made in the image of God. So what I would want to say is this. Of course, we can be good without God in the sense of our personal behavior. But I'm not sure whether we can find foundations for the concept of being good without God."
+      },
+      "quoteEligibleExactSpans": [
+        "can an atheist be good? Of course.",
+        "we can be good without God in the sense of our personal behavior"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the fifth-thesis response to Lennox.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-moral-foundation",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [
+        "moral-zeitgeist-changes-without-scripture"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "shared-morality-theistic-interpretation",
+          "targetMoveId": "moral-zeitgeist-changes-without-scripture",
+          "text": "Lennox accepts widespread moral agreement but interprets its common core as evidence of humans bearing God's image.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Atheists can behave well, but the common moral core is evidence of God's image and requires God for its foundation.",
+      "inventoryRationale": "This carefully distinguishes moral behavior from the ontological foundation Lennox claims is necessary."
+    },
+    {
+      "moveId": "naturalism-removes-moral-criteria",
+      "sectionId": "morality-without-god",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1909,
+        "endEvent": 1923,
+        "startMs": 5090080,
+        "endMs": 5129600,
+        "excerpt": "Now, that seems to me to be saying that good and evil don't exist. So I don't even know where you get the moral criteria to discuss it. If a rock falls off a mountain onto your head and kills you, it makes no sense calling the rock evil. It just exists. If Paul Pop chooses to eliminate a million intellectuals, or the 9/11 terrorists choose to fly hundreds of people to their deaths into the Twin Towers, how could you call them evil if they were simply dancing to their DNA? Now, that strikes me as a hideous world you're delivering us into. That is no"
+      },
+      "quoteEligibleExactSpans": [
+        "I don't even know where you get the moral criteria",
+        "how could you call them evil if they were simply dancing to their DNA?"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox morality response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-secular-morality",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "evolution-built-prosocial-dispositions"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "evolution-description-lacks-condemnation",
+          "targetMoveId": "evolution-built-prosocial-dispositions",
+          "text": "Lennox argues that causal description in terms of DNA cannot supply the normative criterion needed to condemn human acts as evil.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "A universe of blind physical forces supplies no criterion by which genetically caused human actions can be called evil.",
+      "inventoryRationale": "This is Lennox's central normativity objection to the evolutionary account."
+    },
+    {
+      "moveId": "rebellion-against-genes-seems-incoherent",
+      "sectionId": "morality-without-god",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1932,
+        "endEvent": 1945,
+        "startMs": 5147440,
+        "endMs": 5187360,
+        "excerpt": "Now I know that you suggest elsewhere that we have to rebel against our genes but that creates to my mind an immense problem with what you say because if we are nothing but our genes and dancing to the tune of our DNA, what part of us can rebel against them. So I want to suggest this that far from atheism delivering an adequate explanation for morality, it dissolves it. And it's a problem that's been around for centuries. How can something mindless and impersonal like the universe impose a sense of morality upon"
+      },
+      "quoteEligibleExactSpans": [
+        "what part of us can rebel against them",
+        "far from atheism delivering an adequate explanation for morality, it dissolves it"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox response in the morality exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-secular-morality",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "evolution-built-prosocial-dispositions"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "gene-rebellion-agent-problem",
+          "targetMoveId": "evolution-built-prosocial-dispositions",
+          "text": "Lennox asks what independent agency can resist genetic imperatives if persons are nothing beyond their genes.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "If humans are nothing but genetic processes, the proposed capacity to rebel against those processes lacks an explanation.",
+      "inventoryRationale": "This is separate from the moral-foundation objection because it challenges agency within Dawkins's account."
+    },
+    {
+      "moveId": "unpleasant-world-can-still-be-true",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2011,
+        "endEvent": 2022,
+        "startMs": 5360080,
+        "endMs": 5392000,
+        "excerpt": "Well, maybe the world is a hideous world. Doesn't make it not true. That's the the fundamental point that I would wish to to leave with you. That you can talk till you're blue in the face about how it would be nice if such and such were true. It would be nice if if the world were friendly to us. It would be nice if uh the world was not such a hideous one. But I see it as first it it tells you nothing about whe whether it's true or or not. We have to"
+      },
+      "quoteEligibleExactSpans": [
+        "maybe the world is a hideous world. Doesn't make it not true.",
+        "it tells you nothing about whe whether it's true"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins explicitly answers Lennox before the final thesis proceeds.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-moral-foundation",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "naturalism-removes-moral-criteria"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "truth-independent-of-desirability",
+          "targetMoveId": "naturalism-removes-moral-criteria",
+          "text": "Dawkins argues that an account's bleak moral implications do not count against its truth.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "The undesirability of a morally indifferent universe provides no evidence that the universe is otherwise.",
+      "inventoryRationale": "This preserves Dawkins's evidential standard against an appeal to the unattractiveness of naturalism."
+    },
+    {
+      "moveId": "contraception-shows-gene-rebellion",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2034,
+        "endEvent": 2045,
+        "startMs": 5416000,
+        "endMs": 5453760,
+        "excerpt": "Every time you use a contraceptive, you are defying the Darwinian imperative to reproduce. You're enjoying sex using the Darwinian the pleasure that was built into you into your brains by Darwinism because normally sex leads to reproduction. You're cutting off that link and you're using sex for pure enjoyment without reproduction. That's defying. That's rebelling against uh the selfish genes. And we can do a grand job of rebelling against the hideous blind"
+      },
+      "quoteEligibleExactSpans": [
+        "you are defying the Darwinian imperative to reproduce",
+        "That's rebelling against uh the selfish genes."
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins direct answer to Lennox's gene-rebellion challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-moral-foundation",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "rebellion-against-genes-seems-incoherent"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "contraception-counterexample-to-determinism",
+          "targetMoveId": "rebellion-against-genes-seems-incoherent",
+          "text": "Dawkins offers contraception as an observed case where evolved desires are used while their reproductive function is deliberately defeated.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Humans demonstrably resist evolved imperatives, as contraception separates sexual pleasure from reproduction.",
+      "inventoryRationale": "This is a concrete, direct response to Lennox's agency objection."
+    },
+    {
+      "moveId": "luke-supports-scriptural-historicity",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2100,
+        "endEvent": 2112,
+        "startMs": 5563199,
+        "endMs": 5605520,
+        "excerpt": "let me say something about this thesis about the person of Jesus and so on. Uh again I have concerns about the God delusion in its uh treatment of the authority and reliability of scripture because those who've studied it in detailed I see reference to very few scholars in his book have come to the conclusion that say for example the historian Luke is one of the most authoritative historians um of all ancient history and Sherwin White of Oxford a Roman historian Ian says that"
+      },
+      "quoteEligibleExactSpans": [
+        "concerns about the God delusion in its uh treatment of the authority and reliability of scripture",
+        "the historian Luke is one of the most authoritative historians"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Lennox the remaining final-thesis response.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-christian-distinctiveness",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Scholarly assessments of Luke's historical authority support treating Christian scripture as historically reliable evidence.",
+      "inventoryRationale": "This is Lennox's distinct historical-evidence answer concerning Jesus."
+    },
+    {
+      "moveId": "neighbor-command-includes-stranger",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2127,
+        "endEvent": 2140,
+        "startMs": 5635840,
+        "endMs": 5671760,
+        "excerpt": "because in Leviticus which quotes love your neighbor as yourself. Just a bit further down it says when a stranger sojourns you with you in your land you shall not do him wrong. You shall treat the stranger who lives with you as the native among you and you shall love him as yourself because you were strangers in Egypt. So in point of historicity you are totally wrong about the attitude of Jesus. In fact, I would have thought you'd have been very familiar with the parable of the good Samaritan. And in that parable, it was a Samaritan, one of"
+      },
+      "quoteEligibleExactSpans": [
+        "you shall love him as yourself because you were strangers in Egypt",
+        "the parable of the good Samaritan"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox response to the moderator's quotation of Dawkins's claim about Jesus.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-religious-harm",
+        "tier": "subsidiary",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "promised-paradise-can-rationalize-violence"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "jesus-outgroup-ethic-counterexample",
+          "targetMoveId": "promised-paradise-can-rationalize-violence",
+          "text": "Lennox cites commands to love strangers and the Good Samaritan to show that Jesus's ethic crosses group boundaries rather than licensing hostility.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Biblical commands concerning strangers and Jesus's Good Samaritan teaching contradict the characterization of his ethic as out-group hostility.",
+      "inventoryRationale": "This locally answers the final thesis's specific portrayal of Jesus's morality."
+    },
+    {
+      "moveId": "miracles-need-not-violate-natural-law",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2152,
+        "endEvent": 2165,
+        "startMs": 5698800,
+        "endMs": 5737679,
+        "excerpt": "about miracles. This is a massive subject. You claim with David Hume that miracles violate the laws of nature. Well, David Hume's a very curious person to quote on this topic because David Hume didn't believe really in the laws of cause and effect on which laws of nature are founded. He didn't believe in causality and he didn't appear to believe in the principle of induction and so that he's not a very good authority to quote. Secondly, I do not think that miracles are violations of the laws of nature"
+      },
+      "quoteEligibleExactSpans": [
+        "I do not think that miracles are violations of the laws of nature"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Lennox response in the final thesis.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-christian-distinctiveness",
+        "tier": "subsidiary",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Miracles need not violate natural laws, and Hume's own doubts about causation weaken his authority for that objection.",
+      "inventoryRationale": "This directly addresses the moderated thesis concerning miracles and natural law."
+    },
+    {
+      "moveId": "garden-order-indicates-owner",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2220,
+        "endEvent": 2235,
+        "startMs": 5864400,
+        "endMs": 5905600,
+        "excerpt": "you're doing in your book, I think, is presenting us with an obviously full silt of alternatives. Either we take gardens on their own or the garden plus fairies, but they don't appear on their own. They have gardeners and owners. So does the universe. You say there's no evidence of God. And yet your very description of the universe as a garden bears witness that the evidence is all around you. Atheism, ladies and gentlemen, is not only false. It contains no message that deals with the central problem of human rebellion against God. History is littered with attempts to build a godless utopia. Each"
+      },
+      "quoteEligibleExactSpans": [
+        "They have gardeners and owners. So does the universe.",
+        "the evidence is all around you"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox's formal closing statement.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "The ordered beauty compared to a garden is evidence of intelligence and ownership rather than a reason to exclude God.",
+      "inventoryRationale": "The closing restates Lennox's design inference in a compact analogy."
+    },
+    {
+      "moveId": "resurrection-is-central-evidence",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "con",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2250,
+        "endEvent": 2263,
+        "startMs": 5937679,
+        "endMs": 5976320,
+        "excerpt": "the world by the man that he had appointed, Jesus Christ, and that he'd give an assurance to all people by raising him from the dead. And the resurrection of Jesus Christ, a miracle, something supernatural for me constitutes the central evidence upon which I base my faith. Not only that atheism is a delusion, but that justice is real and our sense of morality does not mock us. Because if there is no resurrection, if there is nothing after death, in the end the terrorists and the fanatics have got away with it."
+      },
+      "quoteEligibleExactSpans": [
+        "constitutes the central evidence upon which I base my faith",
+        "justice is real and our sense of morality does not mock us"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox's uninterrupted formal closing.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion-not-delusion",
+        "tier": "motion",
+        "polarity": "support"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Jesus's resurrection is Lennox's central evidence for Christian faith and for ultimate moral justice.",
+      "inventoryRationale": "This is the explicit evidential foundation of Lennox's closing case on the motion."
+    },
+    {
+      "moveId": "resurrection-too-local-for-cosmic-theism",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2268,
+        "endEvent": 2290,
+        "startMs": 5991840,
+        "endMs": 6049840,
+        "excerpt": "Yes. Well, that concluding bit rather gives the game away, doesn't it? All that stuff about science and physics and the complications of physics and things, it all what it really comes down to is the resurrection of Jesus. I mean there's a fundamental incompatibility between the sort of sophisticated scientists which we hear part of the time from John Lennox and it's impressive and we and we are we are interested in the in the argument about multiverses and things and then having produced some sort of a case for a kind of theistic god perhaps some god what the great physicist who who who adjusted the laws and constants of the universe and that's all very grand and wonderful and And then suddenly we come down to the resurrection of Jesus. It's so petty. It's so trivial. It's so local. It's so earthbound. It's so unworthy of the universe."
+      },
+      "quoteEligibleExactSpans": [
+        "it all what it really comes down to is the resurrection of Jesus",
+        "It's so petty. It's so trivial. It's so local."
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Dawkins the final closing immediately after Lennox.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion-not-delusion",
+        "tier": "motion",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "resurrection-is-central-evidence"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "cosmic-to-local-incompatibility",
+          "targetMoveId": "resurrection-is-central-evidence",
+          "text": "Dawkins argues that moving from sophisticated cosmic theism to a local resurrection claim is an incongruous narrowing rather than adequate support for Christianity.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "A local resurrection claim is too parochial to complete a sophisticated cosmic argument for the Christian God.",
+      "inventoryRationale": "This directly attacks the central evidence identified in Lennox's closing."
+    },
+    {
+      "moveId": "darwin-removes-gardener-inference",
+      "sectionId": "jesus-miracles-and-closing-cases",
+      "side": "pro",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2291,
+        "endEvent": 2310,
+        "startMs": 6046560,
+        "endMs": 6100080,
+        "excerpt": "When we go into a garden and we see how beautiful it is and we see colored flowers and we see the butterflies and the bees, of course, it's natural to think there must be a gardener. Any fool is likely to think there must be a gardener. The huge achievement of Darwin was to show that that didn't have to be true. Of course, it's difficult. Of course, it had to wait until the mid-9th century before anybody thought of it. It seems so obvious that if you've got a garden, there must be a gardener who created it and all that goes with that. What Darwin did was to show the staggeringly counterintuitive fact that this not only can be explained by a undirected process. It's not chance by the way entirely wrong to say it's"
+      },
+      "quoteEligibleExactSpans": [
+        "The huge achievement of Darwin was to show that that didn't have to be true",
+        "can be explained by a undirected process"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous Dawkins formal closing.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-theistic-explanation",
+        "tier": "central",
+        "polarity": "attack"
+      },
+      "respondsToIds": [
+        "garden-order-indicates-owner"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "natural-selection-defeats-garden-analogy",
+          "targetMoveId": "garden-order-indicates-owner",
+          "text": "Dawkins answers the garden analogy by arguing that Darwin supplied an undirected explanation for organized biological complexity.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Darwinian natural selection shows that garden-like living complexity need not imply a gardener and is not mere chance.",
+      "inventoryRationale": "This is Dawkins's final direct answer to Lennox's closing design analogy."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {
+      "totalAbsoluteDifference": 3,
+      "sectionAbsoluteDifference": 2
+    },
+    "totals": {
+      "pro": 18,
+      "con": 19,
+      "absoluteDifference": 1
+    },
+    "sections": [
+      {
+        "sectionId": "worldviews-faith-and-inquiry",
+        "pro": 3,
+        "con": 3,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "science-rationality-and-theism",
+        "pro": 2,
+        "con": 4,
+        "absoluteDifference": 2
+      },
+      {
+        "sectionId": "design-complexity-and-explanation",
+        "pro": 3,
+        "con": 3,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "religion-atheism-and-harm",
+        "pro": 3,
+        "con": 3,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "morality-without-god",
+        "pro": 3,
+        "con": 3,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "jesus-miracles-and-closing-cases",
+        "pro": 4,
+        "con": 3,
+        "absoluteDifference": 1
+      }
+    ],
+    "rationaleRequired": true,
+    "rationale": "The science section contains four independently load-bearing Lennox arguments—science's theistic origins, rational intelligibility, materialist self-trust, and fine-tuning—against two distinct Dawkins moves on faith terminology and empirical jurisdiction. The overall inventory remains nearly even at 18 pro and 19 con moves."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {
+        "sectionId": "worldviews-faith-and-inquiry",
+        "pro": 3,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "Three moves per side cover the autobiographical and first-thesis arguments without requiring a fourth row."
+      },
+      {
+        "sectionId": "science-rationality-and-theism",
+        "pro": 2,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "The four con moves are independently assessable and non-mergeable: historical motivation for science, the presupposition of intelligibility, materialism's effect on trust in reason, and empirical fine-tuning."
+      },
+      {
+        "sectionId": "design-complexity-and-explanation",
+        "pro": 3,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "Three moves per side preserve the distinct regress, multiverse, first-replicator, uncreated-God, and explanatory-complexity arguments."
+      },
+      {
+        "sectionId": "religion-atheism-and-harm",
+        "pro": 3,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "Three moves per side capture the distinct causal-path, Christian-distinctiveness, and ideological-comparison arguments."
+      },
+      {
+        "sectionId": "morality-without-god",
+        "pro": 3,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "Three moves per side cover scriptural selection, evolutionary and cultural accounts, divine foundation, normativity, and agency."
+      },
+      {
+        "sectionId": "jesus-miracles-and-closing-cases",
+        "pro": 4,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "The four pro moves are distinct and non-mergeable: truth versus desirability, observed resistance to genes, the local-resurrection objection, and Darwin's direct answer to the closing garden analogy."
+      }
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "completeEventsReviewed": true,
+    "allSpansSourceExact": true,
+    "allQuoteSpansSourceExact": true,
+    "movesChronological": true,
+    "responseTargetsEarlierOnly": true,
+    "scoreBlind": true
+  }
+}

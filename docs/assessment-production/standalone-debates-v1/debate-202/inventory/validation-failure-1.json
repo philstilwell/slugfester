@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "202",
+  "status": "rejected-before-inventory-lock",
+  "preservedArtifact": "docs/assessment-production/standalone-debates-v1/debate-202/inventory/preserved-invalid-inventory-1.json",
+  "preservedArtifactSha256": "a8eeb349d0892015490d857d732a3a306f34d45f54981443071c35f0a6f48306",
+  "violations": [
+    "The stored balance totals reported 18 pro and 19 con moves, while the selected inventory actually contained 18 pro and 21 con moves.",
+    "The Jesus, miracles, and closing section stored 4 pro and 3 con moves, while it actually contained 4 pro and 5 con moves.",
+    "Five con moves in one section exceeded the locked publication capacity of four moves per side per section."
+  ],
+  "judgmentStarted": false,
+  "scoresPresent": false,
+  "recoveryAuthorized": "Apply a pre-judgment source-semantic section repair without deleting or changing any selected move, then rerun every inventory validator."
+}

@@ -119,7 +119,8 @@ export function validateStandaloneInventory(
   const events = repositoryOnly ? null : normalizeEvents(eventsDocument);
   const inventorySchemaVersions = new Set([
     "1.0-standalone-score-blind-inventory",
-    "1.1-standalone-score-blind-inventory"
+    "1.1-standalone-score-blind-inventory",
+    "1.2-standalone-score-blind-inventory"
   ]);
   assertStandalone(
     inventorySchemaVersions.has(inventory?.schemaVersion) &&
@@ -182,7 +183,7 @@ export function validateStandaloneInventory(
   let weightTotal = 0;
   for (const section of inventory.sections) {
     assertString(section.sectionId, "section.sectionId");
-    if (inventory.schemaVersion === "1.1-standalone-score-blind-inventory") {
+    if (inventory.schemaVersion !== "1.0-standalone-score-blind-inventory") {
       assertStandalone(
         semanticSectionIdPattern.test(section.sectionId) &&
           !/^s\d+$/.test(section.sectionId),
@@ -213,7 +214,7 @@ export function validateStandaloneInventory(
     moveIds.size === inventory.moves.length,
     "inventory: move IDs must be unique"
   );
-  if (inventory.schemaVersion === "1.1-standalone-score-blind-inventory") {
+  if (inventory.schemaVersion !== "1.0-standalone-score-blind-inventory") {
     assertStandalone(
       inventory.moves.every(
         (move) =>
@@ -332,7 +333,7 @@ export function validateStandaloneInventory(
       );
     }
   }
-  if (inventory.schemaVersion === "1.1-standalone-score-blind-inventory") {
+  if (inventory.schemaVersion !== "1.0-standalone-score-blind-inventory") {
     const balance = inventory.selectionBalanceAudit;
     const actualTotals = Object.fromEntries(
       ["pro", "con"].map((side) => [
@@ -386,6 +387,53 @@ export function validateStandaloneInventory(
         typeof balance.rationale === "string" &&
         (!rationaleRequired || balance.rationale.trim().length >= 40),
       "inventory: selectionBalanceAudit rationale requirement differs"
+    );
+  }
+  if (inventory.schemaVersion === "1.2-standalone-score-blind-inventory") {
+    const capacity = inventory.publicationCapacityAudit;
+    assertStandalone(
+      capacity?.maximumSelectedMovesPerSidePerSection === 4 &&
+        Array.isArray(capacity.sections) &&
+        capacity.sections.length === inventory.sections.length,
+      "inventory: publicationCapacityAudit controls differ"
+    );
+    let allWithinCapacity = true;
+    let allFourthRowsPreauthorized = true;
+    for (const [index, section] of inventory.sections.entries()) {
+      const counts = Object.fromEntries(
+        ["pro", "con"].map((side) => [
+          side,
+          inventory.moves.filter(
+            (move) => move.sectionId === section.sectionId && move.side === side
+          ).length
+        ])
+      );
+      const stored = capacity.sections[index];
+      const fourthRowRequired = counts.pro === 4 || counts.con === 4;
+      const withinCapacity = counts.pro <= 4 && counts.con <= 4;
+      const fourthRowAuthorized =
+        !fourthRowRequired ||
+        (stored?.fourthRowAuthorized === true &&
+          typeof stored?.rationale === "string" &&
+          stored.rationale.trim().length >= 40);
+      assertStandalone(
+        stored?.sectionId === section.sectionId &&
+          stored.pro === counts.pro &&
+          stored.con === counts.con &&
+          stored.withinCapacity === withinCapacity &&
+          stored.fourthRowRequired === fourthRowRequired &&
+          stored.fourthRowAuthorized === fourthRowAuthorized,
+        `${section.sectionId}: publicationCapacityAudit differs from the locked inventory`
+      );
+      allWithinCapacity &&= withinCapacity;
+      allFourthRowsPreauthorized &&= fourthRowAuthorized;
+    }
+    assertStandalone(
+      capacity.allSectionsWithinCapacity === allWithinCapacity &&
+        capacity.allFourthRowsPreauthorized === allFourthRowsPreauthorized &&
+        allWithinCapacity &&
+        allFourthRowsPreauthorized,
+      "inventory: publication capacity or fourth-row authorization failed"
     );
   }
   assertStandalone(

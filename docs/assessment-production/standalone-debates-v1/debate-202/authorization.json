@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-08-29T22:17:58Z",
+  "repositoryBaseline": {
+    "branch": "main",
+    "head": "fb65b8de0e5d4b05ed52afbfef77b1fc24238d16",
+    "localMain": "fb65b8de0e5d4b05ed52afbfef77b1fc24238d16",
+    "originMain": "fb65b8de0e5d4b05ed52afbfef77b1fc24238d16",
+    "clean": true
+  },
+  "identity": {
+    "debateNumber": "202",
+    "debateId": "dawkins-lennox-god-delusion-2007",
+    "label": "The God Delusion and Christian theism",
+    "canonicalUrl": "https://www.youtube.com/watch?v=zF5bPI92-5o",
+    "videoId": "zF5bPI92-5o",
+    "sourceTitle": "Richard Dawkins vs John Lennox | The God Delusion Debate",
+    "eventYear": 2007,
+    "motion": "Is belief in the Christian God a delusion?",
+    "topicCategory": "god-theism-atheism",
+    "pro": {
+      "speaker": "Richard Dawkins",
+      "position": "Belief in the Christian God is a delusion"
+    },
+    "con": {
+      "speaker": "John Lennox",
+      "position": "Christian belief in God is evidence-based and not a delusion"
+    },
+    "moderator": "Bill Pryor",
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "frozenFullDebateTranscriptionEstimateUsd": 0,
+    "paidOpenAiTranscriptionCapUsd": 1,
+    "otherPaidServicesPermitted": false,
+    "estimateRequiredBeforeFirstPaidCall": true,
+    "paidCallsMade": 0
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/",
+    "docs/assessment-ledgers/dawkins-lennox-god-delusion-2007.json",
+    "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+    "scripts/audit-assessment-production-standalone-v1.mjs",
+    "src/data/debates.js",
+    "src/data/interlocutors.js",
+    "src/data/debate-summaries.js",
+    "index.html",
+    "rankings/",
+    "search/",
+    "sitemap.xml",
+    "topics/",
+    "debate/",
+    "interlocutor/",
+    "output/playwright/standalone-debate-v1/debate-202/"
+  ]
+}

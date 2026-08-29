@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "202",
+  "debateId": "dawkins-lennox-god-delusion-2007",
+  "completedAt": "2026-08-29T23:28:18.000Z",
+  "source": {
+    "videoId": "zF5bPI92-5o",
+    "method": "complete public YouTube caption track normalized locally",
+    "transcriptWords": 17637,
+    "events": 2367,
+    "transcriptSha256": "e9b831e191eab7fb5ec4d4d293ed849570c253b8f820746c1d99031d9abc880f",
+    "eventsSha256": "e4a579d5b65b8bd801c9cb2c824bd12eb2878a8a57b28cd038921ae57eaf804e",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 39,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 15,
+    "adjudicatedDisputes": 15,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 76,
+      "con": 72,
+      "winner": "pro",
+      "margin": 4
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "argumentCards": 39,
+    "uniqueLockedMovesMapped": 39,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "a334eaf1c19e5d36e65fb57aa83f7be97f024d90f051593239ce3aa7ca3ffe08",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-202/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 22,
+      "mean": 22.8,
+      "maximum": 25,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 115,
+      "mean": 121,
+      "maximum": 127
+    },
+    "critiqueCharacterRange": [881, 975],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "minimum": 23,
+      "mean": 24.3,
+      "maximum": 26
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-202/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 39,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 507,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 28,
+    "acceptedRhetoricalTags": 5,
+    "acceptedFallacyTags": 5,
+    "acceptedBiasTags": 0,
+    "rejectedRhetoricalTagCandidates": 23,
+    "overruledOverbroadAdjudicatorAcceptances": 4,
+    "aiContributionWords": 708,
+    "aiContributionCommas": 78
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 7,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-202/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 7,
+    "rhetoricalTagsVisuallyVerified": 5,
+    "desktopEvidenceSha256": "f3cb1cda35b877a1cad80662666e14e4f2faaf36fbd317732a5ed5c5ce4361b4",
+    "mobileEvidenceSha256": "aa381cfde8e0d06b4b81887bbffda3989465abb890f7e09b519a89c9a10bc0f0"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "202 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "392 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "39 moves; description mean 22.8 words; critique mean 121 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "39 moves reviewed against 13 definitions in 2 blind passes; 28 candidates adjudicated; 5 fallacies accepted; 23 candidates rejected"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "39 populated cards and 5 accepted tags at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 202 with and without --repository-only",
+      "status": "passed",
+      "result": "39 moves; 6 sections; 15 disputes; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "202 of 202 transcripts available; all 202 local hash chains checked"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check (including the postcheck lifecycle)",
+      "status": "passed",
+      "result": "syntax, debate, corpus, SEO, campaign, calibration, standalone, content-parity, rhetorical-tag, and multi-speaker compatibility checks passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInvalidInventoryAttempts": 1,
+    "semanticCapacityRemediations": 1,
+    "rejectedPublicationDrafts": 0,
+    "isolatedAtomicProseRepairs": 2,
+    "topicCategoryNormalizations": 1,
+    "overbroadRhetoricalAcceptancesOverruled": 4,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 18,
+    "con": 21,
+    "disposition": "All 39 frozen moves are mapped exactly once. The three-move asymmetry and three authorized fourth rows reflect distinct source arguments; no scored move was deleted, merged, or padded."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

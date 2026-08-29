@@ -162,7 +162,7 @@ const changedLeafPaths = (before, after, prefix = "candidate.logicalExtension") 
 const validatePublicationIdentity = (candidate, authorization) => {
   for (const side of ["pro", "con"]) {
     const productionSide = candidate.sides?.[side];
-    if (selectedRegistryRecord.validationProfile === "semantic-balanced-v1") {
+    if (selectedRegistryRecord.validationProfile !== "frozen-legacy-v1") {
       assert.equal(
         productionSide?.speaker,
         authorization.identity[side].speaker,
@@ -352,7 +352,11 @@ function validateFrozenInputBoundary({
   for (const record of registry.debates) {
     assert.match(record.debateNumber, /^\d{2,}$/);
     assert.ok(
-      ["frozen-legacy-v1", "semantic-balanced-v1"].includes(
+      [
+        "frozen-legacy-v1",
+        "semantic-balanced-v1",
+        "semantic-balanced-capacity-v2"
+      ].includes(
         record.validationProfile
       ),
       `Debate ${record.debateNumber}: unknown validation profile`
@@ -438,9 +442,11 @@ function validateFrozenInputBoundary({
   assert.equal(inventory.debateId, selectedRegistryRecord.debateId);
   assert.equal(
     inventory.schemaVersion,
-    selectedRegistryRecord.validationProfile === "semantic-balanced-v1"
-      ? "1.1-standalone-score-blind-inventory"
-      : "1.0-standalone-score-blind-inventory"
+    selectedRegistryRecord.validationProfile === "semantic-balanced-capacity-v2"
+      ? "1.2-standalone-score-blind-inventory"
+      : selectedRegistryRecord.validationProfile === "semantic-balanced-v1"
+        ? "1.1-standalone-score-blind-inventory"
+        : "1.0-standalone-score-blind-inventory"
   );
   for (const side of ["pro", "con"]) {
     assert.equal(
