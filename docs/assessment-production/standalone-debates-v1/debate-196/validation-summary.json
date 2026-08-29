@@ -46,8 +46,10 @@
     "uniqueLockedMovesMapped": 20,
     "sourceExactQuotes": 2,
     "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "overallBlundersPerSide": 2,
     "productionCandidateMatchesFrozenPublication": true,
-    "productionLedgerSha256": "431cf35ef9dec4613dc7e101b1e9093a30d89bdcb5495222a2550788413ae20b"
+    "productionLedgerSha256": "99843a6ff926cacad63d6b2ed02f214752b927d801bb3e4f71e01c03b4aafe96"
   },
   "rendering": {
     "status": "passed-standalone-production-rendering",
@@ -61,7 +63,10 @@
     "keyboardSpaceTests": 2,
     "profileNavigationTests": 2,
     "desktopEvidenceSha256": "cfb7f591dd5610264356cd7218e83ba83509889b81cb5a4b67100958372500b4",
-    "mobileEvidenceSha256": "3f4f9a3e7c9c5633cf98373ca1abcdbd6cd69ff6d3a88f783981f9558a9ad469"
+    "mobileEvidenceSha256": "3f4f9a3e7c9c5633cf98373ca1abcdbd6cd69ff6d3a88f783981f9558a9ad469",
+    "postPublicationAudit": "docs/assessment-production/standalone-debates-v1/debate-196/rendering/post-publication-audit-1.json",
+    "postPublicationScreenshots": 4,
+    "visibleCorrectionsVerified": 3
   },
   "checks": [
     {
@@ -116,9 +121,18 @@
     "integrationSyntaxCorrection": 1,
     "browserControllerCorrections": 3,
     "validationBookkeepingCorrections": 3,
+    "postPublicationAuditCorrections": 2,
     "failuresPreserved": true,
     "frozenScoresChanged": false,
     "winnerChanged": false
+  },
+  "intentionalFrozenOutliers": {
+    "sectionIds": "s1-s5 preserved because they are frozen inventory and score keys",
+    "selectedMoveCounts": {
+      "pro": 8,
+      "con": 12
+    },
+    "disposition": "Evidence-led structure retained; future additions require semantic IDs and a documented pre-lock asymmetry review."
   },
   "directCostUsd": 0
 }

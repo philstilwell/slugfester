@@ -8765,7 +8765,7 @@ export const debateSummaries = [
     "date": "2026-08-28",
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0-8n2SGFSL8",
-    "motion": "God exists and provides the best overall explanation of the major features of reality discussed in this debate.",
+    "motion": "Does God exist?",
     "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses finite-creator, multiverse, infinity, and suffering objections.",
     "topicCategory": "god-theism-atheism",
     "sides": {

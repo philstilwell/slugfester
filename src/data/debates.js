@@ -76378,7 +76378,7 @@ export const debates = [
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0-8n2SGFSL8",
     "topicCategory": "god-theism-atheism",
-    "motion": "God exists and provides the best overall explanation of the major features of reality discussed in this debate.",
+    "motion": "Does God exist?",
     "summary": "Rasmussen advances a cumulative explanatory case for God, while Huemer presses finite-creator, multiverse, infinity, and suffering objections.",
     "sourceNote": "This assessment uses the complete locally cached transcript at .assessment-cache/captions/0-8n2SGFSL8/transcript.txt, SHA-256 5e84e9d4aae8f0fdd8e572b4082609ddbfd6ba2f83df53b43204a4c90eba0f37. Zero below-high-attribution audio checks were required, and representative quotes are source-exact.",
     "scoringNote": "Scores are AI-generated; repository code calculated them once after isolated judgments and adjudication produced the frozen final ledger used for publication.",
@@ -76685,6 +76685,10 @@ export const debates = [
           {
             "text": "The early claim that suffering generally supports great developmental stories was substantially broader than the evidence supplied.",
             "links": []
+          },
+          {
+            "text": "The move from avoiding arbitrary finite limits to a qualitatively supreme foundation was asserted without establishing that such maximality is coherent or uniquely explanatory.",
+            "links": []
           }
         ]
       },
@@ -76698,6 +76702,10 @@ export const debates = [
         "blunders": [
           {
             "text": "The supertask objection relies too heavily on defining unlimited power as including metaphysically impossible performances.",
+            "links": []
+          },
+          {
+            "text": "The multiverse defense relied on a suitably life-producing distribution without independently motivating or specifying that distribution and its probability measure.",
             "links": []
           }
         ]

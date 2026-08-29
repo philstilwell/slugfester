@@ -110,8 +110,12 @@ function allMoveIds(inventory) {
   return new Set(inventory.moves.map((move) => move.moveId));
 }
 
-export function validateStandaloneInventory(inventory, eventsDocument) {
-  const events = normalizeEvents(eventsDocument);
+export function validateStandaloneInventory(
+  inventory,
+  eventsDocument,
+  { repositoryOnly = false } = {}
+) {
+  const events = repositoryOnly ? null : normalizeEvents(eventsDocument);
   assertStandalone(
     inventory?.schemaVersion === "1.0-standalone-score-blind-inventory" &&
       inventory.protocolId === STANDALONE_PROTOCOL_ID &&
@@ -208,7 +212,7 @@ export function validateStandaloneInventory(inventory, eventsDocument) {
         Number.isInteger(endEvent) &&
         startEvent >= 0 &&
         startEvent <= endEvent &&
-        endEvent < events.length,
+        (repositoryOnly || endEvent < events.length),
       `${label}: invalid event span`
     );
     assertStandalone(
@@ -216,15 +220,17 @@ export function validateStandaloneInventory(inventory, eventsDocument) {
       `${label}: moves are not chronological`
     );
     previousStartEvent = startEvent;
-    const expectedStart = events[startEvent].startMs;
-    const expectedEnd =
-      events[endEvent].startMs + events[endEvent].durationMs;
-    assertStandalone(
-      startMs === expectedStart && endMs === expectedEnd,
-      `${label}: timestamp endpoints do not match events`
-    );
-    const expectedExcerpt = spanText(events, startEvent, endEvent);
-    assertStandalone(excerpt === expectedExcerpt, `${label}: excerpt is not source-exact`);
+    if (!repositoryOnly) {
+      const expectedStart = events[startEvent].startMs;
+      const expectedEnd =
+        events[endEvent].startMs + events[endEvent].durationMs;
+      assertStandalone(
+        startMs === expectedStart && endMs === expectedEnd,
+        `${label}: timestamp endpoints do not match events`
+      );
+      const expectedExcerpt = spanText(events, startEvent, endEvent);
+      assertStandalone(excerpt === expectedExcerpt, `${label}: excerpt is not source-exact`);
+    }
     assertStandalone(
       Array.isArray(move.quoteEligibleExactSpans),
       `${label}: quoteEligibleExactSpans must be an array`

@@ -240,6 +240,21 @@ function usesAdjudicatedConsensusLedgerAdapter(debate) {
   }
 }
 
+function usesStandaloneLedgerAdapter(debate) {
+  if (!debate?.id) return false;
+  const ledgerUrl = new URL(
+    `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
+    import.meta.url
+  );
+  if (!existsSync(ledgerUrl)) return false;
+  try {
+    return JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion ===
+      STANDALONE_SITE_LEDGER_ADAPTER_VERSION;
+  } catch {
+    return false;
+  }
+}
+
 export function validatePostCanaryBatch01LedgerAdapterRouteLocks({
   debate,
   ledgerText,
@@ -1683,6 +1698,7 @@ export function validateStandaloneLedgerAdapterRoute({
   const validation = validateStandaloneSiteLedgerAdapter({
     adapter: ledger,
     candidate: debate,
+    repositoryOnly: true,
     root: process.cwd()
   });
   if (!debate.logicalExtension) {
@@ -2274,7 +2290,7 @@ function validateSide(side, path) {
   requireString(side, "speaker", path);
 }
 
-function validateOverall(overall, path) {
+function validateOverall(overall, path, { minimumBlunders = 1 } = {}) {
   if (!isPlainObject(overall)) {
     addError(path, "must be an object");
     return;
@@ -2287,7 +2303,7 @@ function validateOverall(overall, path) {
     }
   });
 
-  requireArray(overall, "blunders", path, { minLength: 1 }).forEach((blunder, index) => {
+  requireArray(overall, "blunders", path, { minLength: minimumBlunders }).forEach((blunder, index) => {
     const blunderPath = [...path, "blunders", String(index)];
     if (!isPlainObject(blunder)) {
       addError(blunderPath, "must be an object");
@@ -2387,6 +2403,7 @@ function validateDebate(debate, index) {
   const hasReassessmentRubric = debate.assessmentRubric !== undefined;
   const hasAdjudicatedConsensusLedgerAdapter =
     usesAdjudicatedConsensusLedgerAdapter(debate);
+  const hasStandaloneLedgerAdapter = usesStandaloneLedgerAdapter(debate);
   if (hasReassessmentRubric) {
     const rubric = requireString(debate, "assessmentRubric", path);
     requireString(debate, "assessmentModel", path);
@@ -2438,7 +2455,13 @@ function validateDebate(debate, index) {
     pattern: youtubePattern,
     patternMessage: "must be a YouTube watch URL"
   });
-  requireString(debate, "motion", path, { minWords: 10 });
+  const motion = requireString(debate, "motion", path, { minWords: 3, maxWords: 35 });
+  if (hasStandaloneLedgerAdapter && !motion.trim().endsWith("?")) {
+    addError(
+      [...path, "motion"],
+      "must preserve the neutral central-question format used by standalone debates"
+    );
+  }
   requireString(debate, "summary", path, { minWords: 8, maxWords: 35 });
   requireString(debate, "sourceNote", path, { minWords: 10 });
   const scoringNote = requireString(debate, "scoringNote", path, { minWords: 18 });
@@ -2450,13 +2473,16 @@ function validateDebate(debate, index) {
     requireScore(debate.score, sideKey, [...path, "score"]);
     validateSide(debate.sides?.[sideKey], [...path, "sides", sideKey]);
     validateQuote(debate.quotes?.[sideKey], [...path, "quotes", sideKey]);
-    validateOverall(debate.overall?.[sideKey], [...path, "overall", sideKey]);
+    validateOverall(debate.overall?.[sideKey], [...path, "overall", sideKey], {
+      minimumBlunders: hasStandaloneLedgerAdapter ? 2 : 1
+    });
   });
 
   if (debate.logicalExtension !== undefined) {
     validateLogicalExtension(debate.logicalExtension, [...path, "logicalExtension"]);
   }
 
+  const publishedSectionIds = new Set();
   requireArray(debate, "sections", path, { minLength: 4, maxLength: 7 }).forEach(
     (section, sectionIndex) => {
       const sectionPath = [...path, "sections", String(sectionIndex)];
@@ -2465,21 +2491,43 @@ function validateDebate(debate, index) {
         return;
       }
 
+      if (hasStandaloneLedgerAdapter) {
+        const sectionId = requireString(section, "sectionId", sectionPath, {
+          pattern: slugPattern,
+          patternMessage: "must be a lowercase slug"
+        });
+        if (publishedSectionIds.has(sectionId)) {
+          addError([...sectionPath, "sectionId"], "must be unique within the debate");
+        }
+        publishedSectionIds.add(sectionId);
+      }
       requireString(section, "title", sectionPath, { minWords: 2, maxWords: 10 });
       requireString(section, "timebox", sectionPath);
       ["pro", "con"].forEach((sideKey) => {
         requireScore(section.score, sideKey, [...sectionPath, "score"]);
       });
 
-      // Debate 196 section s3 has four separately scored, frozen con moves.
-      // Its narrow fourth-row allowance preserves every locked move without
-      // changing the ordinary three-row publication limit elsewhere.
-      const maximumExchanges =
-        debate.number === "196" && section.sectionId === "s3" ? 4 : 3;
-      requireArray(section, "exchanges", sectionPath, {
+      // Three rows remain the ordinary display limit. A fourth is permitted
+      // generically only when one side has four distinct locked cards and the
+      // other side has fewer, so evidence-led asymmetry is not forced into a
+      // debate-number-specific exception.
+      const maximumExchanges = hasAdjudicatedConsensusLedgerAdapter ? 4 : 3;
+      const exchanges = requireArray(section, "exchanges", sectionPath, {
         minLength: 1,
         maxLength: maximumExchanges
-      }).forEach(
+      });
+      if (exchanges.length === 4) {
+        const sideCounts = ["pro", "con"].map(
+          (sideKey) => exchanges.filter((exchange) => exchange?.[sideKey]).length
+        );
+        if (sideCounts.filter((count) => count === 4).length !== 1) {
+          addError(
+            [...sectionPath, "exchanges"],
+            "may use a fourth row only when exactly one side has a locked card in all four rows"
+          );
+        }
+      }
+      exchanges.forEach(
         (exchange, exchangeIndex) => {
           const exchangePath = [...sectionPath, "exchanges", String(exchangeIndex)];
           if (!isPlainObject(exchange)) {

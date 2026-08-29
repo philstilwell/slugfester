@@ -46,7 +46,10 @@ const paths = {
   scoreOutput: `${DEBATE_ROOT}/score-pass/output.json`,
   scoreAttestation: `${DEBATE_ROOT}/score-pass/attestation.json`,
   publication: `${DEBATE_ROOT}/publication/output.json`,
+  publicationMotionCorrection: `${DEBATE_ROOT}/publication/correction-1-motion.json`,
+  publicationCommentaryCorrection: `${DEBATE_ROOT}/publication/correction-2-overall-commentary.json`,
   rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
+  postPublicationRendering: `${DEBATE_ROOT}/rendering/post-publication-audit-1.json`,
   validation: `${DEBATE_ROOT}/validation-summary.json`,
   productionLedger:
     "docs/assessment-ledgers/huemer-rasmussen-god-existence-2026.json"
@@ -61,7 +64,10 @@ const writeNewJson = (relative, value) => {
   writeFileSync(absolute(relative), serializedJson(value));
 };
 
-function validateFrozenInputBoundary({ requirePasses = false } = {}) {
+function validateFrozenInputBoundary({
+  requirePasses = false,
+  repositoryOnly = false
+} = {}) {
   const registry = json(paths.registry);
   const authorization = json(paths.authorization);
   const manifest = json(paths.manifest);
@@ -80,6 +86,7 @@ function validateFrozenInputBoundary({ requirePasses = false } = {}) {
   assert.equal(sourceLock.participants.dyadicGatePassed, true);
   assert.equal(sourceLock.duplicateAudit.identityDuplicateFound, false);
   for (const record of Object.values(manifest.sourceLocks)) {
+    if (repositoryOnly && record.path.startsWith(".assessment-cache/")) continue;
     assert.equal(existsSync(absolute(record.path)), true, `${record.path}: missing`);
     assert.equal(sha256(bytes(record.path)), record.sha256, `${record.path}: source hash changed`);
   }
@@ -88,8 +95,15 @@ function validateFrozenInputBoundary({ requirePasses = false } = {}) {
     assert.equal(sha256(bytes(record.path)), record.sha256, `${record.path}: control hash changed`);
   }
   const inventory = json(paths.inventory);
-  const events = json(paths.events);
-  const inventoryValidation = validateStandaloneInventory(inventory, events);
+  const events = repositoryOnly ? null : json(paths.events);
+  assert.equal(
+    authorization.identity.motion,
+    inventory.motion,
+    "authorization and inventory motions differ"
+  );
+  const inventoryValidation = validateStandaloneInventory(inventory, events, {
+    repositoryOnly
+  });
   if (!requirePasses) return { inventory, events, inventoryValidation };
   const inventorySha256 = sha256(bytes(paths.inventory));
   const passA = json(paths.passA);
@@ -263,6 +277,11 @@ function buildProductionAdapter() {
   const scoreOutput = json(paths.scoreOutput);
   const attestation = json(paths.scoreAttestation);
   const publication = json(paths.publication);
+  assert.equal(
+    publication.candidate.motion,
+    json(paths.inventory).motion,
+    "publication motion differs from the frozen central question"
+  );
   assert.equal(attestation.ordinal, 1);
   assert.equal(attestation.maximumPermitted, 1);
   const replayed = deriveStandaloneScores(finalLedger);
@@ -286,6 +305,9 @@ function buildProductionAdapter() {
     scoreOutput: paths.scoreOutput,
     scoreAttestation: paths.scoreAttestation,
     publication: paths.publication,
+    publicationMotionCorrection: paths.publicationMotionCorrection,
+    publicationCommentaryCorrection: paths.publicationCommentaryCorrection,
+    postPublicationRendering: paths.postPublicationRendering,
     events: paths.events,
     transcript: ".assessment-cache/captions/0-8n2SGFSL8/transcript.txt"
   };
@@ -328,7 +350,7 @@ function buildProductionAdapter() {
 
 function audit({ repositoryOnly = false } = {}) {
   const { inventory, inventoryValidation, passA, passB } =
-    validateFrozenInputBoundary({ requirePasses: true });
+    validateFrozenInputBoundary({ requirePasses: true, repositoryOnly });
   const disagreements = json(paths.disagreements);
   const adjudication = json(paths.adjudication);
   validateStandaloneAdjudication(adjudication, disagreements);
@@ -350,6 +372,18 @@ function audit({ repositoryOnly = false } = {}) {
     finalScores: scores
   });
   const publication = json(paths.publication);
+  const motionCorrection = json(paths.publicationMotionCorrection);
+  const commentaryCorrection = json(paths.publicationCommentaryCorrection);
+  assert.equal(motionCorrection.status, "applied-once-and-frozen");
+  assert.equal(commentaryCorrection.status, "applied-once-and-frozen");
+  assert.equal(publication.candidate.motion, inventory.motion);
+  for (const side of ["pro", "con"]) {
+    assert.equal(
+      publication.candidate.overall[side].blunders.length >= 2,
+      true,
+      `${side}: corrected Overall Commentary must contain at least two material blunders`
+    );
+  }
   const candidateAudit = validateStandaloneCandidate(publication.candidate, scores);
   const production = debates.find((debate) => debate.number === "196");
   assert.deepEqual(production, publication.candidate, "production debate differs from frozen publication candidate");
@@ -367,6 +401,12 @@ function audit({ repositoryOnly = false } = {}) {
   assert.equal(rendering.audit.emptyArgumentCards, 0);
   assert.equal(rendering.audit.viewports, 2);
   assert.equal(rendering.audit.screenshots >= 4, true);
+  const postPublicationRendering = json(paths.postPublicationRendering);
+  assert.equal(postPublicationRendering.status, "passed-post-publication-rendering-audit");
+  assert.equal(postPublicationRendering.audit.runtimeFailures, 0);
+  assert.equal(postPublicationRendering.audit.horizontalOverflowFailures, 0);
+  assert.equal(postPublicationRendering.audit.visibleCorrectionsVerified, 3);
+  assert.equal(postPublicationRendering.audit.temporaryBrowsersRemaining, 0);
   const validation = json(paths.validation);
   assert.equal(validation.status, "passed");
   assert.equal(validation.debateNumber, "196");
