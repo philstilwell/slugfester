@@ -482,19 +482,20 @@ export function interlocutorSeo(person, appearances = 0) {
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester turns YouTube debate transcripts into quote-grounded scorecards, critique popovers, fallacy notes, bias notes, and topic indexes.";
+    "How Slugfester uses complete transcripts, independent AI judgments, deterministic scoring, audio checks, and repository validation to build debate scorecards.";
+  const updatedDate = "2026-08-28";
 
   return {
     title: pageTitle("Backend"),
     description,
     canonicalPath: backendPath(),
     robots: legacy ? "noindex,follow" : DEFAULT_ROBOTS,
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: updatedDate,
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester backend process for debate argument scorecards.",
     type: "article",
     articleSection: "Methodology",
-    modifiedTime: SITE_UPDATED_DATETIME,
+    modifiedTime: seoDateTime(updatedDate),
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -504,7 +505,7 @@ export function backendSeo({ legacy = false } = {}) {
         headline: "Backend",
         name: "Backend",
         description,
-        dateModified: SITE_UPDATED_DATETIME,
+        dateModified: seoDateTime(updatedDate),
         mainEntityOfPage: absoluteUrl(backendPath()),
         url: absoluteUrl(backendPath()),
         image: imageObject(),

@@ -38,7 +38,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260828-ai-editorial-blue-sitewide";
+const assetVersion = "20260828-backend-methodology-update";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -295,7 +295,7 @@ addPage(
 addPage(
   backendPath(),
   backendSeo(),
-  "Backend explains how Slugfester turns YouTube debate transcripts into quote-grounded scorecards, critiques, and reference links."
+  "Backend explains Slugfester's full-transcript review, independent judgments, deterministic scoring, validation controls, update plans, and campaign compute estimate."
 );
 
 addPage(

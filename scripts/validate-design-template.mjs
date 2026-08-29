@@ -96,6 +96,14 @@ requireIncludes("app backend route", app, "backendPathRoutePattern");
 requireIncludes("app backend route", app, "assessmentPathRoutePattern");
 requireIncludes("app backend route", app, "backendSeo");
 requireIncludes("app backend page", app, "<h1>Backend</h1>");
+requireIncludes("app backend update date", app, "Updated August 28, 2026");
+requireIncludes("app backend review cadence", app, "approximately twice a year");
+requireIncludes("app backend compute disclosure", app, "82.5 aggregate model-compute hours");
+requireIncludes("app backend technical detail", app, 'class="backend-technical"');
+requireIncludes("app backend current section scoring", app, "importance-weighted mean of the selected moves");
+requireIncludes("app backend current overall scoring", app, "prelocked section-weighted mean + −5…+5 burden adjustment");
+requireExcludes("app backend retired section scoring", app, ".70 move mean + .10 coverage");
+requireExcludes("app backend retired overall scoring", app, ".70 centrality-weighted sections");
 requireIncludes("app backend page", app, "Account personalization and private conversation history are not inputs");
 requireIncludes("app search filters", app, 'class="person-filter');
 requireIncludes("app search filters", app, 'class="filter-section filter-accordion"');
@@ -251,6 +259,8 @@ requireExcludes("retired Debate 14 AI color sample", styles, "logical-extension-
 requireIncludes("accessibility", styles, ".skip-link");
 requireIncludes("accessibility", styles, "@media (prefers-reduced-motion: reduce)");
 requireIncludes("performance", styles, "content-visibility: auto;");
+requireIncludes("backend technical detail", styles, ".backend-technical {");
+requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");
 
 requireExcludes("sticky header", styles, ".brand-gloves");

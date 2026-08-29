@@ -1984,13 +1984,85 @@ function renderBackend() {
         <div>
           <p class="eyebrow">Backend</p>
           <h1>Backend</h1>
-          <p class="assessment-lede">This is the machinery behind Slugfester: transcripts are cleaned, quotes are anchored, arguments are paired by issue, and each move is scored against ordinary standards of logical coherence, evidential support, responsiveness, and fallacy avoidance.</p>
+          <p class="assessment-lede">This is the machinery behind Slugfester: complete debate transcripts are converted into auditable argument maps, independently reviewed, scored under one published rubric, and checked before publication.</p>
         </div>
         <aside class="assessment-stamp" aria-label="Backend model">
-          <span>Historical production default</span>
-          <strong>${escapeHtml(currentAssessmentModel)}</strong>
-          <p>Debates 01-130 were originally assessed with ${escapeHtml(legacyAssessmentModel)}; Debate 131 began the ${escapeHtml(currentAssessmentModel)} series. A full v2 reassessment names the model that actually rebuilt it, so Debate 01 now identifies 5.6 Sol without relabeling untouched scorecards.</p>
+          <span>Latest full reassessment workflow</span>
+          <strong>5.6 Sol · low</strong>
+          <p>Two fresh, isolated, score-blind judgments were made for each eligible debate. Disagreements were adjudicated separately, and repository code—not the model—calculated the published totals.</p>
         </aside>
+      </section>
+
+      <section class="backend-summary" aria-labelledby="backend-summary-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Assessment update</p>
+            <h2 id="backend-summary-heading">A careful attempt at objective scoring</h2>
+          </div>
+          <p class="section-summary">Updated August 28, 2026</p>
+        </div>
+        <div class="backend-summary-panel">
+          <div class="backend-summary-copy">
+            <p><strong>Objectivity here means disciplined consistency, not infallibility.</strong> Slugfester applies the same evidential and logical standards to both sides, excludes applause, reputation, charisma, and agreement with a conclusion, and treats every score as an AI-assisted estimate of the argument actually presented.</p>
+            <p>The recent campaign reviewed the complete transcript chain, hid prior scores and prose from new judgments, used two independent reviews, isolated disagreements, verified uncertain audio, calculated totals mechanically, and preserved the evidence needed to audit the result. Failed attempts were retained rather than quietly replaced.</p>
+            <p>The intention is to review the full debate catalogue approximately twice a year, when sources and quality controls permit. Future reviews may correct or refine assessments, but they should use a frozen method, preserve earlier records, and never change scores merely to produce a preferred winner.</p>
+          </div>
+          <div class="backend-summary-stats" aria-label="Assessment campaign summary">
+            <article>
+              <span>Published catalogue</span>
+              <strong>195</strong>
+              <p>debate assessments currently on Slugfester</p>
+            </article>
+            <article>
+              <span>Current v2 records</span>
+              <strong>179</strong>
+              <p>174 campaign reassessments plus 5 promoted calibration debates</p>
+            </article>
+            <article>
+              <span>Recorded model work</span>
+              <strong>≈83 hr</strong>
+              <p>conservative aggregate compute estimate for the 174-debate campaign</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="backend-technical" aria-labelledby="backend-technical-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Technical detail</p>
+            <h2 id="backend-technical-heading">Controls behind the current assessments</h2>
+          </div>
+          <p class="section-summary">For readers who want the implementation details</p>
+        </div>
+        <p class="backend-technical-intro">The production campaign used the promoted adjudicated-consensus workflow for eligible two-person debates. The controls below reduce avoidable bias and inconsistency; they cannot turn a model judgment into ground truth.</p>
+        <div class="backend-technical-grid">
+          <article>
+            <h3>Locked source chain</h3>
+            <p>Each debate required a complete local transcript, timestamped caption events, and a source manifest. SHA-256 content hashes—a digital fingerprint used to detect any change—were checked before semantic work. Debates with more than two substantive speakers were not forced through the two-sided workflow.</p>
+          </article>
+          <article>
+            <h3>Score-blind construction</h3>
+            <p>Prior scores, critiques, winners, tags, Overall Commentary, and AI Extension prose were kept outside the judgment context. The argument inventory, source spans, section membership, response links, and importance weights were frozen before either scoring judgment began.</p>
+          </article>
+          <article>
+            <h3>Independent judgments</h3>
+            <p>Two fresh 5.6 Sol contexts at low reasoning effort reviewed the same locked packet in isolation through the ChatGPT subscription. Neither saw the other judgment. Execution records retained the actual model label, authentication method, copied-input size, output hashes, elapsed time, and validation result.</p>
+          </article>
+          <article>
+            <h3>Disagreement and audio gates</h3>
+            <p>Code extracted categorical and numerical disagreements using fixed rules. Every move below high speaker-attribution confidence required audio verification. A third isolated context saw only disputed evidence and anonymous alternatives; no unresolved required check could enter a final ledger.</p>
+          </article>
+          <article>
+            <h3>Mechanical scoring</h3>
+            <p>The two judgments and any adjudicated fields were merged into a resolved ledger. Repository code then ran one deterministic score pass using fixed dimension weights, importance-weighted section means, prelocked section weights, and a bounded −5 to +5 burden-completion adjustment. Models did not author totals, and scores were not manually tuned.</p>
+          </article>
+          <article>
+            <h3>Publication and replay</h3>
+            <p>Readable summaries and critiques were reconstructed only after scores were locked. Exact-quote rules, field-level repair limits, semantic checks, generated-page comparison, desktop and mobile rendering, keyboard operation, and repository-wide validation all had to pass before publication.</p>
+          </article>
+        </div>
+        <p class="backend-technical-note"><strong>Compute-accounting note.</strong> The public estimate rounds a directly recoverable lower bound of 82.5 aggregate model-compute hours to about 83 hours. It sums available model-context runtimes across the production checkpoint and Batches 1–17, including retained failed and recovery attempts. It excludes debate-video duration, human waiting, local code and browser runtime, and paid transcription processing; three small recovery records lacked a usable elapsed-time field, so the figure is conservative rather than exact.</p>
       </section>
 
       <section class="assessment-principles" aria-labelledby="assessment-principles-heading">
@@ -2012,12 +2084,12 @@ function renderBackend() {
           <h2 id="assessment-flow-heading">How a debate becomes a scorecard</h2>
         </div>
         <ol class="process-steps">
-          <li><span>01</span><strong>Ingest the source.</strong><p>YouTube captions or supplied transcripts are cleaned lightly, timestamped, and marked with source notes so readers know what material was assessed.</p></li>
-          <li><span>02</span><strong>Map the debate.</strong><p>The backend identifies the motion, recurring topics, speaker roles, side labels, and representative quotes that best encapsulate each position.</p></li>
-          <li><span>03</span><strong>Pair the exchanges.</strong><p>Sections are organized around argumentative movement: one side's claim, the other side's answer, and the issue that connects them.</p></li>
-          <li><span>04</span><strong>Score the reasoning.</strong><p>Rubric v2 scores six weighted dimensions first, then calculates move, section, and centrality-weighted overall results from a saved ledger.</p></li>
-          <li><span>05</span><strong>Attach critiques.</strong><p>The ◉ popovers give the fuller diagnosis: what was strong, what was missing, and how any fallacy or bias affected the score.</p></li>
-          <li><span>06</span><strong>Publish indexes.</strong><p>The same data powers clean debate pages, timestamped YouTube links, search filters, topic cards, and fallacy or bias reference pages.</p></li>
+          <li><span>01</span><strong>Lock the source.</strong><p>Complete timestamped transcripts and their content hashes are checked before analysis begins.</p></li>
+          <li><span>02</span><strong>Map without prior scores.</strong><p>The motion, burdens, argument units, replies, sections, and importance values are frozen without exposing legacy assessments.</p></li>
+          <li><span>03</span><strong>Review twice.</strong><p>Two isolated judgments apply the same six-dimension rubric to the same score-blind packet without seeing one another.</p></li>
+          <li><span>04</span><strong>Resolve disagreements.</strong><p>Code extracts disputed fields, uncertain speaker attribution triggers audio checks, and a separate judgment adjudicates only what remains disputed.</p></li>
+          <li><span>05</span><strong>Calculate once.</strong><p>A fully resolved ledger enters one deterministic score pass. The model never supplies the published move, section, or overall totals.</p></li>
+          <li><span>06</span><strong>Reconstruct and audit.</strong><p>Readable prose, exact quotations, generated pages, desktop and mobile layouts, and the complete repository are validated before publication.</p></li>
         </ol>
       </section>
 
@@ -2037,8 +2109,8 @@ function renderBackend() {
         </div>
         <div class="rubric-formulas" aria-label="Rubric score formulas">
           <article><strong>Move</strong><code>.25L + .20E + .20R + .15B + .10P + .10C</code></article>
-          <article><strong>Section</strong><code>.70 move mean + .10 coverage + .10 burden progress + .10 coherence</code></article>
-          <article><strong>Overall</strong><code>.70 centrality-weighted sections + .12 case completion + .10 resilience + .08 calibration</code></article>
+          <article><strong>Section</strong><code>importance-weighted mean of the selected moves</code></article>
+          <article><strong>Overall</strong><code>prelocked section-weighted mean + −5…+5 burden adjustment</code></article>
         </div>
         <h3 class="score-bands-heading">Score bands</h3>
         <div class="score-band-list">
