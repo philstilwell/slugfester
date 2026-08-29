@@ -2014,9 +2014,9 @@ function renderBackend() {
               <p>debate assessments currently on Slugfester</p>
             </article>
             <article>
-              <span>Current v2 records</span>
+              <span>Full v2 reassessments</span>
               <strong>179</strong>
-              <p>174 campaign reassessments plus 5 promoted calibration debates</p>
+              <p>all one-speaker-per-side debates; 16 team or panel formats remain outside this workflow</p>
             </article>
             <article>
               <span>Recorded model work</span>

@@ -99,6 +99,8 @@ requireIncludes("app backend page", app, "<h1>Backend</h1>");
 requireIncludes("app backend update date", app, "Updated August 28, 2026");
 requireIncludes("app backend review cadence", app, "approximately twice a year");
 requireIncludes("app backend compute disclosure", app, "82.5 aggregate model-compute hours");
+requireIncludes("app backend corpus disposition", app, "16 team or panel formats remain outside this workflow");
+requireExcludes("app backend calibration distinction", app, "promoted calibration debates");
 requireIncludes("app backend technical detail", app, 'class="backend-technical"');
 requireIncludes("app backend current section scoring", app, "importance-weighted mean of the selected moves");
 requireIncludes("app backend current overall scoring", app, "prelocked section-weighted mean + −5…+5 burden adjustment");
