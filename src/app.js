@@ -958,6 +958,106 @@ function renderReasoningDistribution(topics) {
   `;
 }
 
+function sectionScoreDistribution() {
+  const scores = debates.flatMap((debate) =>
+    debate.sections.flatMap((section) =>
+      [section.score?.pro, section.score?.con].filter(Number.isFinite)
+    )
+  );
+
+  if (!scores.length) {
+    return { buckets: [], highest: 0, lowest: 0, maximumCount: 0, total: 0 };
+  }
+
+  const lowest = Math.min(...scores);
+  const highest = Math.max(...scores);
+  const firstBucket = Math.floor(lowest / 2) * 2;
+  const lastBucket = Math.floor(highest / 2) * 2;
+  const bucketCounts = new Map();
+
+  scores.forEach((score) => {
+    const bucket = Math.floor(score / 2) * 2;
+    bucketCounts.set(bucket, (bucketCounts.get(bucket) || 0) + 1);
+  });
+
+  const buckets = Array.from(
+    { length: (lastBucket - firstBucket) / 2 + 1 },
+    (_, index) => {
+      const start = firstBucket + index * 2;
+      return {
+        start,
+        end: Math.min(start + 1, 100),
+        count: bucketCounts.get(start) || 0
+      };
+    }
+  );
+
+  return {
+    buckets,
+    highest,
+    lowest,
+    maximumCount: Math.max(...buckets.map((bucket) => bucket.count)),
+    total: scores.length
+  };
+}
+
+function renderSectionScoreDistribution(distribution) {
+  if (!distribution.total) return "";
+
+  const middleCount = Math.round(distribution.maximumCount / 2);
+  const bars = distribution.buckets
+    .map((bucket) => {
+      const height = distribution.maximumCount
+        ? (bucket.count / distribution.maximumCount) * 100
+        : 0;
+      const range = `${bucket.start}–${bucket.end}`;
+      const countLabel = `${bucket.count.toLocaleString("en-US")} ${bucket.count === 1 ? "section-side score" : "section-side scores"}`;
+
+      return `
+        <li class="section-score-bucket${bucket.count ? " populated" : ""}" aria-label="${range} percent: ${countLabel}" title="${range}%: ${countLabel}">
+          <span class="section-score-bar-column" style="--bar-height: ${height.toFixed(2)}%" aria-hidden="true">
+            <span>${bucket.count.toLocaleString("en-US")}</span>
+            <i></i>
+          </span>
+          <strong aria-hidden="true">${range}</strong>
+        </li>
+      `;
+    })
+    .join("");
+
+  return `
+    <section class="section-score-distribution" aria-labelledby="section-score-distribution-heading">
+      <div class="section-score-distribution-heading">
+        <div>
+          <p class="eyebrow">Section-score distribution</p>
+          <h2 id="section-score-distribution-heading">How individual debate sections score</h2>
+          <p>This chart counts the two side scores assigned within each debate section—not overall debate scores or interlocutor averages. Each vertical bar covers a two-percentage-point range and uses all currently published scorecards, independent of the Rankings filters above.</p>
+        </div>
+        <dl class="section-score-distribution-summary">
+          <div><dt>Section-side scores</dt><dd>${distribution.total.toLocaleString("en-US")}</dd></div>
+          <div><dt>Observed range</dt><dd>${distribution.lowest}–${distribution.highest}</dd></div>
+          <div><dt>Bucket width</dt><dd>2 points</dd></div>
+        </dl>
+      </div>
+      <figure class="section-score-chart-figure">
+        <div class="section-score-chart-frame">
+          <div class="section-score-y-axis" aria-hidden="true">
+            <span>${distribution.maximumCount.toLocaleString("en-US")}</span>
+            <span>${middleCount.toLocaleString("en-US")}</span>
+            <span>0</span>
+          </div>
+          <div class="section-score-chart-scroll" tabindex="0" aria-label="Scrollable vertical bar chart of section-side score counts">
+            <ol class="section-score-chart" style="--bucket-count: ${distribution.buckets.length}">
+              ${bars}
+            </ol>
+          </div>
+        </div>
+        <figcaption>Vertical axis: number of section-side scores. Horizontal axis: section score range (%). Numbers above the bars are counts.</figcaption>
+      </figure>
+    </section>
+  `;
+}
+
 function uniqueInterlocutorsForDebate(debate) {
   const avatars = [
     ...avatarsForSpeakerText(debate.sides.pro.speaker),
@@ -1369,6 +1469,7 @@ function renderRankings() {
   const filteredDebates = rankingDebates(state);
   const rankings = rankedInterlocutors(state);
   const reasoningTopics = reasoningTagDistribution();
+  const sectionScores = sectionScoreDistribution();
   const rankingTagMaximum = Math.max(
     1,
     ...rankings.flatMap((person) => [person.tagSummary.fallacyRate, person.tagSummary.biasRate])
@@ -1452,6 +1553,8 @@ function renderRankings() {
       </section>
 
       ${renderReasoningDistribution(reasoningTopics)}
+
+      ${renderSectionScoreDistribution(sectionScores)}
     </main>
   `);
 
