@@ -81,6 +81,7 @@ requireIncludes("app rankings analytics", app, 'class="ranking-comparison"');
 requireIncludes("app rankings comparison histogram", app, 'className: "comparison-score-histogram"');
 requireIncludes("app rankings comparison alphabetization", app, 'first.name.localeCompare(second.name, "en", { sensitivity: "base" })');
 requireIncludes("app backend rubric evidence", app, "sectionScoreDistribution");
+requireIncludes("app backend rubric data loading", app, "interlocutorMatch || backendMatch || referenceMatch");
 requireIncludes("app backend rubric evidence", app, "The rubric distinguishes stronger from weaker sections");
 requireIncludes("app backend rubric evidence", app, "two-percentage-point score ranges");
 requireIncludes("app backend rubric evidence", app, "not overall debate scores or interlocutor averages");

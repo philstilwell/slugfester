@@ -3288,7 +3288,7 @@ async function route() {
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
   const needsDetailedData = Boolean(
-    debateMatch || rankingsMatch || interlocutorMatch || referenceMatch
+    debateMatch || rankingsMatch || interlocutorMatch || backendMatch || referenceMatch
   );
 
   if (needsDetailedData && debates === debateSummaries) {

@@ -41,7 +41,7 @@ const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260830-profile-score-no-median-highlight";
 const rankingsAssetVersion = "20260830-ranking-comparison-histograms-v2";
 const debateAssetVersion = "20260830-debate-position-histograms-v3";
-const backendAssetVersion = "20260830-backend-rubric-distribution";
+const backendAssetVersion = "20260830-backend-rubric-distribution-v2";
 
 function escapeHtml(value = "") {
   return String(value)
