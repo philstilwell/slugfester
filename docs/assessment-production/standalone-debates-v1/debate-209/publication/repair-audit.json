@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-one-field-disjoint-shard",
+  "debateNumber": "209",
+  "debateId": "oconnor-ruegger-divine-hiddenness-loving-god-2022",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-209/publication/preserved-invalid-output-1.json",
+    "sha256": "f501910d5ad98ed086e6404eb49558d062fe3ecfab5f542daec0baf20a72b092",
+    "bytes": 62038
+  },
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-209/publication/output.json",
+    "sha256": "c9941616434bdc7eb109b611c259febb09f0cfeb86a1497a1d5510854c04fb32",
+    "bytes": 61988
+  },
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.summary"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-209/publication/repair-1/execution.json",
+        "sha256": "145805ddb55ec81cbcc06d8cc568a0cb83f2ccb421119c2b6a2799c66fdab09e",
+        "bytes": 1515
+      }
+    }
+  ],
+  "changedLeafRoots": [
+    "candidate.summary"
+  ],
+  "allShardsWithinTwoFieldLimit": true,
+  "allShardsSingleAttempt": true,
+  "assessmentSubstanceChanged": false,
+  "scoresChanged": false
+}

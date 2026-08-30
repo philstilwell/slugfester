@@ -9377,5 +9377,54 @@ export const debateSummaries = [
         "title": "Audience Clarifications on Hiddenness"
       }
     ]
+  },
+  {
+    "id": "oconnor-ruegger-divine-hiddenness-loving-god-2022",
+    "number": "209",
+    "title": "Divine Hiddenness and a Loving God: Alex O'Connor vs. Lukas Ruegger (2022)",
+    "label": "Divine hiddenness and a loving God",
+    "date": "2026-08-30",
+    "duration": "1 hr 29 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=1Vc1AiY_0Ts",
+    "motion": "Does divine hiddenness make the existence of a perfectly loving God unlikely?",
+    "summary": "Alex O'Connor prevailed by separating public arguments from personally accessible revelation and pressing nonresistant seeking and delayed disclosure, while Lukas Ruegger countered with cumulative evidence, fallible introspection, individualized pathways, and delay's possible goods.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Divine-hiddenness critique",
+        "speaker": "Alex O'Connor",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian hiddenness defense",
+        "speaker": "Lukas Ruegger",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 75,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Perfect love and nonresistant nonbelief"
+      },
+      {
+        "title": "Natural theology, personal revelation, and epistemic access"
+      },
+      {
+        "title": "Temporal disclosure, salvation, and scriptural consistency"
+      },
+      {
+        "title": "Resistance, self-knowledge, and changing attitudes"
+      },
+      {
+        "title": "Belief, relationship, trust, and practical cost"
+      },
+      {
+        "title": "Possible divine reasons and rival worldview explanations"
+      }
+    ]
   }
 ];

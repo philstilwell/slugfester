@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "1.0-standalone-content-parity-audit",
+  "status": "passed-content-parity-audit",
+  "debateNumber": "209",
+  "debateId": "oconnor-ruegger-divine-hiddenness-loving-god-2022",
+  "referenceWindow": {
+    "count": 25,
+    "debateNumbers": [
+      "171",
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195"
+    ]
+  },
+  "metrics": {
+    "summaryWords": 33,
+    "motionWords": 12,
+    "sections": 6,
+    "rows": 18,
+    "moves": 29,
+    "argumentWordsMean": 23.8,
+    "critiqueWordsMean": 119.8,
+    "critiqueCharactersMean": 924.1,
+    "quoteWordsMean": 10,
+    "quoteContextWordsMean": 22.5,
+    "strengthWordsMean": 26,
+    "blunderWordsMean": 27.3,
+    "extensionThesisWordsMean": 25,
+    "extensionPremiseWordsMean": 25.4,
+    "extensionConclusionWordsMean": 28,
+    "extensionNewArgumentWordsMean": 90.8,
+    "boilerplate": {
+      "ngramSize": 6,
+      "minimumDocuments": 8,
+      "commonNgrams": 0,
+      "meanCoveredRatio": 0,
+      "maximumCoveredRatio": 0
+    }
+  },
+  "referenceRanges": {
+    "summaryWords": {
+      "minimum": 19,
+      "median": 21,
+      "maximum": 35
+    },
+    "motionWords": {
+      "minimum": 11,
+      "median": 16,
+      "maximum": 24
+    },
+    "sections": {
+      "minimum": 5,
+      "median": 5,
+      "maximum": 6
+    },
+    "rows": {
+      "minimum": 5,
+      "median": 10,
+      "maximum": 12
+    },
+    "moves": {
+      "minimum": 10,
+      "median": 19,
+      "maximum": 23
+    },
+    "argumentWordsMean": {
+      "minimum": 16.4,
+      "median": 21.9,
+      "maximum": 26.3
+    },
+    "critiqueWordsMean": {
+      "minimum": 110.3,
+      "median": 120.7,
+      "maximum": 127.8
+    },
+    "critiqueCharactersMean": {
+      "minimum": 903.1,
+      "median": 976.2,
+      "maximum": 1042.8
+    },
+    "quoteWordsMean": {
+      "minimum": 6.5,
+      "median": 9,
+      "maximum": 13.5
+    },
+    "quoteContextWordsMean": {
+      "minimum": 13,
+      "median": 17.5,
+      "maximum": 21
+    },
+    "strengthWordsMean": {
+      "minimum": 12.6,
+      "median": 16.2,
+      "maximum": 20.9
+    },
+    "blunderWordsMean": {
+      "minimum": 16.2,
+      "median": 19,
+      "maximum": 24.3
+    },
+    "extensionThesisWordsMean": {
+      "minimum": 24,
+      "median": 32,
+      "maximum": 38.5
+    },
+    "extensionPremiseWordsMean": {
+      "minimum": 21.8,
+      "median": 26,
+      "maximum": 33.1
+    },
+    "extensionConclusionWordsMean": {
+      "minimum": 24,
+      "median": 28.5,
+      "maximum": 37
+    },
+    "extensionNewArgumentWordsMean": {
+      "minimum": 63.5,
+      "median": 85.8,
+      "maximum": 97
+    }
+  },
+  "relativeOutliers": [
+    {
+      "metric": "rows",
+      "direction": "above",
+      "value": 18,
+      "minimum": 5,
+      "median": 10,
+      "maximum": 12,
+      "rationale": "The six-part discussion contains several asymmetrical reply chains, so eighteen rows preserve the locked chronology and keep each distinct burden contact visible without merging moves."
+    },
+    {
+      "metric": "moves",
+      "direction": "above",
+      "value": 29,
+      "minimum": 10,
+      "median": 19,
+      "maximum": 23,
+      "rationale": "All twenty-nine moves are distinct, load-bearing contributions from the complete scored debate window; retaining them prevents substantive replies from disappearing merely to match an older median."
+    },
+    {
+      "metric": "quoteContextWordsMean",
+      "direction": "above",
+      "value": 22.5,
+      "minimum": 13,
+      "median": 17.5,
+      "maximum": 21,
+      "rationale": "Each context sentence explains how short exact source language functions in its argument, meeting the richer standard without altering or embellishing the quotation."
+    },
+    {
+      "metric": "strengthWordsMean",
+      "direction": "above",
+      "value": 26,
+      "minimum": 12.6,
+      "median": 16.2,
+      "maximum": 20.9,
+      "rationale": "Each strength identifies a specific argumentative achievement and explains why it matters to the speaker's burden under the richer current commentary standard."
+    },
+    {
+      "metric": "blunderWordsMean",
+      "direction": "above",
+      "value": 27.3,
+      "minimum": 16.2,
+      "median": 19,
+      "maximum": 24.3,
+      "rationale": "Each blunder names a concrete weakness and states its argumentative consequence, preserving useful detail rather than shortening analysis to match older entries."
+    }
+  ],
+  "hardContract": {
+    "status": "passed",
+    "summaryAndSectionLengths": true,
+    "argumentAndCritiqueLengths": true,
+    "argumentDescriptionDepth": {
+      "targetWords": [
+        22,
+        28
+      ],
+      "actualMean": 23.8,
+      "independentReferenceMeanMedian": 21.9,
+      "minimumMean": 20.9,
+      "shortCardThresholdWords": 20,
+      "shortCardCount": 0,
+      "shortCardShare": 0,
+      "maximumShortCardShare": 0.25,
+      "status": "passed"
+    },
+    "critiqueStructureAndCharacters": true,
+    "quotationLengths": true,
+    "overallCommentaryDepth": true,
+    "aiExtensionDepth": true,
+    "boilerplateGate": true
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0
+  }
+}

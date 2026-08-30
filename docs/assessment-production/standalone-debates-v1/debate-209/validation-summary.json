@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "209",
+  "debateId": "oconnor-ruegger-divine-hiddenness-loving-god-2022",
+  "completedAt": "2026-08-30T12:15:43.364Z",
+  "source": {
+    "videoId": "1Vc1AiY_0Ts",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 20930,
+    "events": 2746,
+    "transcriptSha256": "d565cd17ec06ce171dc8797efa08b1007a691b15637da52cd4060d161d8310fe",
+    "eventsSha256": "0027db5055870b449eedd132def5516a407f0b782d674bc07b3773836e749cf9",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 29,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 8,
+    "adjudicatedDisputes": 8,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 85,
+      "con": 75,
+      "winner": "pro",
+      "margin": 10
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 1,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "argumentCards": 29,
+    "uniqueLockedMovesMapped": 29,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "fd57c29ba801a1935aff3d09d1bc89eb864af31a43b6f97c41e051346909a489",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-209/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.8,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 114,
+      "mean": 119.8,
+      "maximum": 126
+    },
+    "critiqueCharacterRange": [
+      884,
+      972
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "minimum": 24,
+      "mean": 26.6,
+      "maximum": 29
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-209/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 29,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 377,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 22,
+    "acceptedRhetoricalTags": 6,
+    "acceptedFallacyTags": 3,
+    "acceptedBiasTags": 3,
+    "biasCandidatesExplicitlyRejected": 5,
+    "rejectedRhetoricalTagCandidates": 16,
+    "overruledOverbroadAdjudicatorAcceptances": 0,
+    "restoredAdjudicatorRejections": 0,
+    "aiContributionWords": 742,
+    "aiContributionCommas": 57,
+    "aiContributionPunctuationAudit": "docs/assessment-production/standalone-debates-v1/debate-209/publication/ai-contribution-punctuation-audit.json"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-209/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 6,
+    "desktopEvidenceSha256": "c065aa0966eada8fb6d27e6a5451a36dfd4970541292521b7b64691843fef42d",
+    "mobileEvidenceSha256": "ae944a809adafbfe765e16bef68749d471f831adac26589b05479b589195ffdd"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "209 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "400 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "29 moves; description mean 23.8 words; critique mean 119.8 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "29 moves reviewed against 13 definitions in 2 blind passes; 22 candidates adjudicated; 3 fallacies and 3 biases accepted"
+    },
+    {
+      "name": "AI contribution punctuation review",
+      "status": "passed",
+      "result": "18 reader-facing fields reviewed; no punctuation repair required"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "29 populated cards and 6 accepted tags at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 209 with and without --repository-only",
+      "status": "passed",
+      "result": "29 moves; 6 sections; 8 disputes; 0 audio checks; score stability mean 0.5, maximum 1, excursion 1"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "209 of 209 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInvalidInventoryAttempts": 1,
+    "deterministicInventoryBookkeepingRepairs": 1,
+    "audioSpanCorrectionsBeforeJudgment": 0,
+    "rejectedPublicationDrafts": 1,
+    "atomicPublicationRepairFields": 1,
+    "transportRetries": 1,
+    "overbroadRhetoricalAcceptancesOverruled": 0,
+    "rhetoricalRejectionDecisionsRestored": 0,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 16,
+    "con": 13,
+    "disposition": "All twenty-nine frozen moves are mapped exactly once. O'Connor has three additional moves because several distinct temporal and evidential replies answer separate Ruegger defenses; no move was deleted, merged, or added merely to force numerical balance."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

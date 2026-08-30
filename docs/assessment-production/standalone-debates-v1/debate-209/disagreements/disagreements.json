@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "209",
+  "debateId": "oconnor-ruegger-divine-hiddenness-loving-god-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "evidence-need-not-control-action:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "evidence-need-not-control-action",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 9,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The smoking analogy validly separates adequate evidence from action, but belief formation is not equivalent to chosen conduct."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "The evidence-action distinction is valid, but the smoking analogy conflates voluntary conduct with involuntary belief."
+        }
+      }
+    },
+    {
+      "disputeId": "evidence-need-not-control-action:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "evidence-need-not-control-action",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 9,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The familiar smoking example provides concrete support for evidence failing to govern behavior despite acknowledged credibility."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "Smoking is a familiar counterexample to evidence controlling action, though not closely matched to belief formation."
+        }
+      }
+    },
+    {
+      "disputeId": "evidence-need-not-control-action:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "evidence-need-not-control-action",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 9,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "It challenges the phrase 'move me' directly, yet only partly engages Alex's concern about involuntary belief and relationship."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "It contacts Alex's word 'move' but only partially addresses personal revelation and belief acquisition."
+        }
+      }
+    },
+    {
+      "disputeId": "evidence-need-not-control-action:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "evidence-need-not-control-action",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 9,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "Human response variability matters to the defense, though the analogy does not fully explain divine relational non-disclosure."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "Human uptake matters, yet the analogy does not establish that the available divine evidence is adequate."
+        }
+      }
+    },
+    {
+      "disputeId": "evidence-need-not-control-action:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "evidence-need-not-control-action",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 9,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The question about what evidential movement means is clear, but action, assent, and experience sometimes blur together."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "The question is understandable, but 'move' shifts between belief, emotion, and practical action."
+        }
+      }
+    },
+    {
+      "disputeId": "evidence-need-not-control-action:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "evidence-need-not-control-action",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 9,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "Lukas frames the point as a diagnostic question and explicitly avoids imputing bad motives or trickery."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Lukas presents the point as a diagnostic question and explicitly avoids imputing bad motives."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence changes completion of a named pro burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent completion criterion remains outside the locked move-level evaluation.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence was identified beyond the argumentative performance in the locked moves.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links",
+              "section weights"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion independently of the existing scoring mechanisms."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden consequence remains outside the locked move ratings and response structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion beyond the rated locked moves was established.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct unscored debate-wide consequence was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global effect would not change burden completion independently of the move ratings."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence changes completion of a named con burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent completion criterion remains outside the locked move-level evaluation.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence was identified beyond the argumentative performance in the locked moves.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links",
+              "section weights"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion independently of the existing scoring mechanisms."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden consequence remains outside the locked move ratings and response structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion beyond the rated locked moves was established.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct unscored debate-wide consequence was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global effect would not change burden completion independently of the move ratings."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 29,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

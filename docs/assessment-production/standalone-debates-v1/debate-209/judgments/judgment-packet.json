@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-08-30T11:49:17.707Z",
+  "debateNumber": "209",
+  "debateId": "oconnor-ruegger-divine-hiddenness-loving-god-2022",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does divine hiddenness make the existence of a perfectly loving God unlikely?",
+  "sides": {
+    "pro": {
+      "speaker": "Alex O'Connor",
+      "position": "Divine-hiddenness critique"
+    },
+    "con": {
+      "speaker": "Lukas Ruegger",
+      "position": "Christian hiddenness defense"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-209/inventory/inventory.json",
+      "sha256": "850a3d6bbfe074eab7157be5517226ab684cf62edafc5e7762e25bf8bcc259b7",
+      "bytes": 99504
+    },
+    "events": {
+      "path": ".assessment-cache/captions/1Vc1AiY_0Ts/events.json",
+      "sha256": "0027db5055870b449eedd132def5516a407f0b782d674bc07b3773836e749cf9",
+      "bytes": 288311
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/1Vc1AiY_0Ts/transcript.txt",
+      "sha256": "d565cd17ec06ce171dc8797efa08b1007a691b15637da52cd4060d161d8310fe",
+      "bytes": 117630
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-209/audio/audio-verification.json",
+      "sha256": "06647e16fd5ef1bde534e307f8e7437129468ec4b3034a76400511fd89ee6210",
+      "bytes": 1125
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df",
+      "bytes": 41775
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "850a3d6bbfe074eab7157be5517226ab684cf62edafc5e7762e25bf8bcc259b7",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  }
+}
