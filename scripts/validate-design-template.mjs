@@ -190,6 +190,7 @@ requireIncludes("primary nav", styles, "color: #ffffff;");
 requireIncludes("landing actions", styles, ".landing-actions");
 requireIncludes("landing summary", styles, ".landing-stats");
 requireIncludes("landing topics", styles, ".landing-topic-link");
+requireIncludes("backend objectivity single column", styles, ".backend-objectivity-steps {\n  display: grid;\n  grid-template-columns: 1fr;");
 requireIncludes("pagination", styles, ".pagination");
 requireIncludes("landing card links", styles, ".debate-title-link");
 requireIncludes("landing card links", styles, ".card-interlocutor");
