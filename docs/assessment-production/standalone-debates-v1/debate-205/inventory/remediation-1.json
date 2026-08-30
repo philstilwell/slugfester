@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-remediation",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "deterministic-controller-remediation-complete-and-frozen",
+  "debateNumber": "205",
+  "invalidInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-205/inventory/preserved-invalid-inventory-1.json",
+    "sha256": "58db67bdeb61629bb346a2a9926bd3fe15e0b49817bc185045d42282c3f06621"
+  },
+  "finalInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-205/inventory/inventory.json",
+    "sha256": "e41d365caf66cc46e28e85b93d7775dafa4b4b56b047aad02aa5982b77e77cea"
+  },
+  "changes": [
+    "Restored the locked selection-balance thresholds and recomputed every total and section count from the move array.",
+    "Set rationaleRequired from the recomputed section imbalance and supplied a source-based explanation for the asymmetric cosmological section.",
+    "Recomputed every publication-capacity flag and treated sections without a fourth row as already satisfying the authorization condition."
+  ],
+  "moveIdsUnchanged": true,
+  "sourceSpansUnchanged": true,
+  "sectionsAndWeightsUnchanged": true,
+  "assessmentSubstanceUnchanged": true,
+  "scoreBlind": true,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "205",
+    "sections": 6,
+    "moves": 26,
+    "belowHighAttributionMoveIds": []
+  }
+}

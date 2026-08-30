@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "205",
+  "debateId": "horn-watkins-god-existence-2021",
+  "status": "rejected-and-preserved",
+  "rejectedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-205/publication/preserved-invalid-output-1.json",
+    "sha256": "99eb9935f2853732de5676943647141382feb33f74c96c385b6a8db6f44d9ab3",
+    "bytes": 58136
+  },
+  "transport": {
+    "automaticSameCommandRetryCount": 1,
+    "firstStreamFailure": "WebSocket connection reset without a closing handshake",
+    "finalCommandExitCode": 0
+  },
+  "diagnosis": {
+    "expectedLockedMoves": 26,
+    "reportedCards": 36,
+    "unknownMoveIds": 36,
+    "expectedSections": 6,
+    "unknownSectionIds": 4,
+    "immutableSectionScoresChanged": true,
+    "immutableMoveScoresChanged": true,
+    "lockedWithinSideOrderChanged": true,
+    "descriptionWordRangeObserved": [19, 24],
+    "critiqueWordRangeObserved": [114, 125],
+    "critiqueCharacterRangeObserved": [881, 977],
+    "invalidCritiques": 0,
+    "aiExtensionDisclosureMissing": true,
+    "noveltyMoveIdsInvalid": true
+  },
+  "disposition": "No invented move, section, timestamp, role, or score is reusable. Recovery is field-scoped: isolated section writers may author only each locked move's description and critique, while the controller copies every immutable field from the frozen packet. Separate bounded repairs cover only unavailable publication-frame fields."
+}

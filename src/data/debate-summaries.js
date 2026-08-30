@@ -9184,5 +9184,54 @@ export const debateSummaries = [
         "title": "Evil, Suffering, and a Lawful Universe"
       }
     ]
+  },
+  {
+    "id": "horn-watkins-god-existence-2021",
+    "number": "205",
+    "title": "Does God Exist? Trent Horn vs. Ben Watkins (2021)",
+    "label": "Cumulative theism and divine imperfection",
+    "date": "2026-08-29",
+    "duration": "2 hr 18 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=GTPwaU3JAU8",
+    "motion": "Does God exist?",
+    "summary": "Horn argued from a first actualizer, finite past, divine attributes, and moral value; Watkins countered with sustaining-causation objections, naturalism’s simpler prior, evolutionary evil, hiddenness, and secular moral realism.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Classical theism",
+        "speaker": "Trent Horn",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Metaphysical naturalism",
+        "speaker": "Ben Watkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 71,
+      "con": 75,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Change, causal finitude, and ultimate explanation"
+      },
+      {
+        "title": "Divine attributes, freedom, and the gap problem"
+      },
+      {
+        "title": "Simplicity and comparative prior probability"
+      },
+      {
+        "title": "Perfect creation, evil, and evolutionary suffering"
+      },
+      {
+        "title": "Nonresistant nonbelief and divine love"
+      },
+      {
+        "title": "Moral reality, privation, and human value"
+      }
+    ]
   }
 ];

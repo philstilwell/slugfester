@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-deterministic-controller-remediation",
+  "debateNumber": "205",
+  "invalidInventorySha256": "58db67bdeb61629bb346a2a9926bd3fe15e0b49817bc185045d42282c3f06621",
+  "failures": [
+    "selectionBalanceAudit.sectionAbsoluteDifference was 3 instead of the locked value 2",
+    "selectionBalanceAudit.rationaleRequired was false despite a section difference of 3",
+    "publicationCapacityAudit marked non-fourth-row sections as fourthRowAuthorized=false, while the controller rule treats authorization as satisfied when no fourth row is required"
+  ],
+  "assessmentSubstanceAffected": false,
+  "movesChangedByRemediation": false,
+  "scoresAvailableAtRemediation": false
+}

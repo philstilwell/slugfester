@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-standalone-judgment-transport-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "205",
+  "debateId": "horn-watkins-god-existence-2021",
+  "pass": "pass-a",
+  "status": "preserved-transport-failure-metadata",
+  "attempt": 1,
+  "failure": {
+    "kind": "stream-disconnected-before-completion",
+    "reason": "max_output_tokens",
+    "automaticSamplingRetry": true,
+    "automaticRetryOrdinal": 1,
+    "automaticRetryLimit": 5
+  },
+  "invalidDraftSignalsObservedBeforeDisconnect": {
+    "contaminationDetected": true,
+    "completeLockedInventoryReviewed": false,
+    "allMovesJudgedOnce": false,
+    "draftClaimedPacketUnavailable": true,
+    "excessiveWhitespaceBeforeJudgments": true
+  },
+  "preservation": {
+    "completeInvalidBytesAvailable": false,
+    "reason": "The subscription command streamed the incomplete draft to its process output but did not commit it to the requested output file before the connection ended. The command wrapper retained only a truncated display chunk. This record preserves every recoverable failure signal without reconstructing or inventing missing bytes.",
+    "finalOutputWrittenOnlyAfterAutomaticRetry": true
+  },
+  "disposition": "The incomplete draft was rejected. The same still-running command automatically retried its interrupted sampling request, read the frozen packet, and wrote a separate schema-valid final output that passed the repository validator."
+}

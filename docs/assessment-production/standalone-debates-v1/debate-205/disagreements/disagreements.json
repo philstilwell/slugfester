@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "205",
+  "debateId": "horn-watkins-god-existence-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "theism-human-value-responsibility:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "theism-human-value-responsibility",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "Equal value and responsibility are relevant theistic evidence, though explanatory superiority is not fully established."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "It offers subsidiary support for theism, but compatibility with moral experience does not establish comparative superiority."
+        }
+      }
+    },
+    {
+      "disputeId": "goods-compensation-and-background-evidence:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "goods-compensation-and-background-evidence",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 63,
+          "rationale": "Horn often presents these points as possibilities, though the treatment understates the evidential weight of prolonged suffering."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The move appropriately stresses incomplete background evidence, but some analogies understate the moral force of divine permission."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence changes completion of a named pro burden beyond consequences already represented in the individual move ratings and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the locked move-level scoring mechanics.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was established.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "responsiveness",
+              "relevanceBurden",
+              "burdenContact",
+              "importance",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not change any independently established burden-completion fact."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence independently changes completion of an identified pro burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No completion criterion remains that is both debate-wide and separate from the rated moves and locked burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None identified beyond consequences represented in move ratings, response links, importance, and section structure.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "responsiveness",
+              "relevanceBurden",
+              "burden contact",
+              "importance",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not change any independently established pro burden-completion determination."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence changes completion of a named con burden beyond consequences already represented in the individual move ratings and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the locked move-level scoring mechanics.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was established.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "responsiveness",
+              "relevanceBurden",
+              "burdenContact",
+              "importance",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not change any independently established burden-completion fact."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence independently changes completion of an identified con burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No completion criterion remains that is both debate-wide and separate from the rated moves and locked burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None identified beyond consequences represented in move ratings, response links, importance, and section structure.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "responsiveness",
+              "relevanceBurden",
+              "burden contact",
+              "importance",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not change any independently established con burden-completion determination."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 26,
+    "disputesExtracted": 4,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}
