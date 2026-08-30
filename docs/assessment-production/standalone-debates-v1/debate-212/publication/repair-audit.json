@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-one-field-disjoint-shard",
+  "debateNumber": "212",
+  "debateId": "craig-carrier-resurrection-2009",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-212/publication/preserved-invalid-output-1.json",
+    "sha256": "ea6c458c6031898a7ebab30c64f8cbdfea9c987bffa2bb51052c1d64af42f7d8",
+    "bytes": 45745
+  },
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-212/publication/output.json",
+    "sha256": "3b8ad5eaee250daf0a7a4f3fdab95e6c13278156c2f6d3f41f0b435f659b1f8c",
+    "bytes": 52304
+  },
+  "repairShards": [
+    {
+      "shardId": "repair-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].con.critique",
+        "candidate.sections[0].exchanges[1].con.critique"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-212/publication/repair-1/execution.json",
+        "sha256": "4f10952f3263f737adbf06d1a9024b1fbe26284b045d96d5edb7f065f68a1a42",
+        "bytes": 1713
+      }
+    }
+  ],
+  "changedLeafRoots": [
+    "candidate.sections[0].exchanges[0].con.critique",
+    "candidate.sections[0].exchanges[1].con.critique"
+  ],
+  "allShardsWithinTwoFieldLimit": true,
+  "allShardsSingleAttempt": true,
+  "assessmentSubstanceChanged": false,
+  "scoresChanged": false
+}

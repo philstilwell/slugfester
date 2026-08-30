@@ -9518,5 +9518,51 @@ export const debateSummaries = [
         "title": "Pluralism, experiential diversity, judgment, and the cumulative case"
       }
     ]
+  },
+  {
+    "id": "craig-carrier-resurrection-2009",
+    "number": "212",
+    "title": "Resurrection Evidence and Naturalistic Alternatives: William Lane Craig vs. Richard Carrier (2009)",
+    "label": "Resurrection evidence, Gospel sources, and natural explanations",
+    "date": "2026-08-30",
+    "duration": "1 hr 41 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=akd6qzFYzX8",
+    "motion": "Did Jesus rise from the dead?",
+    "summary": "Craig organized burial, appearances, and belief into a cumulative resurrection case, while Carrier challenged Gospel independence and preserved ordinary alternatives; their contrasting strengths produced a tie.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Historical resurrection case",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalistic resurrection critique",
+        "speaker": "Richard Carrier",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 80,
+      "winner": "tie"
+    },
+    "sections": [
+      {
+        "title": "Historical Framework and Comparative Explanation"
+      },
+      {
+        "title": "Burial and the Empty Tomb"
+      },
+      {
+        "title": "Gospel Sources and Literary Construction"
+      },
+      {
+        "title": "Pauline Evidence and Postmortem Appearances"
+      },
+      {
+        "title": "Resurrection Belief and Prior Probability"
+      }
+    ]
   }
 ];

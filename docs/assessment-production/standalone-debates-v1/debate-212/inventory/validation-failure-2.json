@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-controller-rejection-of-out-of-scope-recovery-edits",
+  "debateNumber": "212",
+  "recoveryOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-212/inventory/recovery-output.json",
+    "sha256": "d3826a1aa115d61730c647e741a9a963e1b82bbc9a01c1b7d8a8d8253b036ffb"
+  },
+  "validatorError": "The field-limited recovery altered six frozen attribution or response-component fields and retained stale mechanical side counts.",
+  "diagnosis": "The controller rejected every out-of-scope edit, restored all substantive fields byte-for-byte from the raw inventory, adopted only source-span and quotation proposals, and recomputed mechanical audits from the unchanged move list.",
+  "rejectedFrozenFieldEdits": [
+    {
+      "moveId": "multiple-natural-causes-and-vision-science",
+      "field": "attributionBasis"
+    },
+    {
+      "moveId": "multiple-natural-causes-and-vision-science",
+      "field": "responseComponents"
+    },
+    {
+      "moveId": "epistles-visions-no-missing-body",
+      "field": "attributionBasis"
+    },
+    {
+      "moveId": "epistles-visions-no-missing-body",
+      "field": "responseComponents"
+    },
+    {
+      "moveId": "psalm-orphic-dependence-rebuttal",
+      "field": "attributionBasis"
+    },
+    {
+      "moveId": "psalm-orphic-dependence-rebuttal",
+      "field": "responseComponents"
+    }
+  ],
+  "moveSelectionUnchanged": true,
+  "scoreBlind": true
+}

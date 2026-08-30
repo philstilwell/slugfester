@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-field-disjoint-repair",
+  "debateNumber": "212",
+  "debateId": "craig-carrier-resurrection-2009",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-212/publication/preserved-invalid-output-1.json",
+    "sha256": "ea6c458c6031898a7ebab30c64f8cbdfea9c987bffa2bb51052c1d64af42f7d8",
+    "bytes": 45745
+  },
+  "failures": [
+    "Two otherwise valid critique fields contained 131 words, one word above the accepted 105–130-word range."
+  ],
+  "writableLeafFields": [
+    "candidate.sections[0].exchanges[0].con.critique",
+    "candidate.sections[0].exchanges[1].con.critique"
+  ],
+  "repairShards": [
+    {
+      "shardId": "repair-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].con.critique",
+        "candidate.sections[0].exchanges[1].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    }
+  ],
+  "frozenFieldsUnaffected": [
+    "identity",
+    "source evidence",
+    "inventory",
+    "judgments",
+    "adjudication",
+    "scores",
+    "all unlisted publication fields"
+  ]
+}

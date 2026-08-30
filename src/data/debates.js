@@ -85116,6 +85116,495 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "212",
+    "id": "craig-carrier-resurrection-2009",
+    "date": "2026-08-30",
+    "title": "Resurrection Evidence and Naturalistic Alternatives: William Lane Craig vs. Richard Carrier (2009)",
+    "label": "Resurrection evidence, Gospel sources, and natural explanations",
+    "topicCategory": "scripture-jesus-resurrection",
+    "youtubeUrl": "https://www.youtube.com/watch?v=akd6qzFYzX8",
+    "duration": "1 hr 41 min",
+    "summary": "Craig organized burial, appearances, and belief into a cumulative resurrection case, while Carrier challenged Gospel independence and preserved ordinary alternatives; their contrasting strengths produced a tie.",
+    "motion": "Did Jesus rise from the dead?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "Publication wording is confined to the supplied Debate 212 packet, including its excerpts, move propositions, response contacts, dimension judgments, and locked adjudication.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance. All move, section, and overall scores were locked before publication writing; the repository-owned calculation produced an 80–80 tie between William Lane Craig’s historical resurrection case and Richard Carrier’s naturalistic critique without rescoring or editorial override.",
+    "sides": {
+      "pro": {
+        "name": "Historical resurrection case",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalistic resurrection critique",
+        "speaker": "Richard Carrier",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 80,
+      "winner": "tie"
+    },
+    "quotes": {
+      "pro": {
+        "text": "there are four historical facts which must be explained",
+        "context": "Craig introduces the evidential architecture linking burial, an empty tomb, reported appearances, and the disciples' resurrection belief to his proposed divine explanation."
+      },
+      "con": {
+        "text": "we can't rule them out",
+        "context": "Carrier summarizes his motion-level burden: if the supplied evidence leaves relevant natural explanations available, resurrection has not been established over those alternatives."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "historical-framework",
+        "title": "Historical Framework and Comparative Explanation",
+        "timebox": "7:52 to 1:00:39",
+        "score": {
+          "pro": 77,
+          "con": 79
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "god-history-four-facts-framework",
+              "time": "7:52",
+              "role": "Constructive",
+              "words": "Craig conditions historical comparison on God's existence and a historical Jesus, then identifies burial, empty tomb, appearances, and resurrection belief as facts requiring one adequate explanation.",
+              "score": 76,
+              "critique": "Strongest feature: Craig supplies a lucid motion-level architecture by identifying four alleged facts and explaining why a divine-resurrection hypothesis would unify burial, vacancy, appearances, and emergent belief under one historical comparison. Principal limitation: the architecture presupposes God's existence and treats the four items as sufficiently established before their source warrants are demonstrated, so the inference begins with substantial disputed background knowledge and shows limited charity toward Carrier's skepticism. Live burden: Craig must independently substantiate each proposed fact and show that granting divine agency does not simply relocate explanatory difficulty while also answering natural underdetermination. Locked score: The 76 reflects excellent relevance and clarity, useful responsiveness, and coherent organization, constrained by substantially weaker evidential warrant and calibration because the framework announces more than this move itself establishes.",
+              "tags": [
+                {
+                  "label": "Appeal to authority",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Craig calls his historical background safe because it is mainstream and dismisses the contrary position as outside contemporary scholarship."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "natural-explanations-remain-available",
+              "time": "46:00",
+              "role": "Constructive",
+              "words": "Carrier argues that available natural explanations retain priority because Craig's evidence has not excluded them, converting unresolved alternatives into a direct challenge to the resurrection conclusion.",
+              "score": 76,
+              "critique": "Strongest feature: Carrier directly contests Craig's motion-level inference by arguing that evidential compatibility with natural explanations prevents the observations from selecting supernatural resurrection, thereby placing comparative exclusion at the center of adjudication. Principal limitation: this compact formulation asserts that fairly good alternatives exist without specifying their mechanisms, probabilities, or complete fit to burial, vacancy, appearances, and belief, leaving its evidential warrant materially thinner than its burden contact. Live burden: Carrier must develop the available explanations sufficiently to show more than logical possibility and demonstrate why a collection of ordinary causes compares favorably with Craig's proposed unified account. Locked score: The 76 rewards strong relevance, responsiveness, balanced calibration, and clear burden placement, while the notably lower evidence score reflects the move's reliance on alternatives argued elsewhere rather than substantiated here.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Carrier says natural explanations should be preferred because no evidence refutes them and they cannot be ruled out."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "resurrection-passes-explanatory-tests",
+              "time": "25:18",
+              "role": "Constructive",
+              "words": "Craig applies six historical tests, claiming resurrection uniquely combines broad scope, explanatory power, contextual plausibility, simplicity, accepted-belief compatibility, and superiority over natural rivals.",
+              "score": 76,
+              "critique": "Strongest feature: Craig converts his conclusion into an explicit comparative test, evaluating resurrection through explanatory scope, power, plausibility, noncontrivance, compatibility with accepted beliefs, and performance against rival hypotheses rather than merely asserting miraculous causation. Principal limitation: several favorable verdicts depend on disputed inputs, especially established theism, reliable facts, and the historical meaning of Jesus' claims, while the dismissal of scholarly natural alternatives does not itself demonstrate comparative superiority. Live burden: Craig must supply criterion-by-criterion evidence showing that resurrection earns these advantages without counting theological assumptions both as background support and explanatory machinery. Locked score: The 76 preserves high relevance, responsiveness, and precision because the criteria are clearly stated, but substantially lower warrant, coherence, and calibration register that their application is asserted more confidently than this move's evidence licenses.",
+              "tags": [
+                {
+                  "label": "Appeal to authority",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Craig says resurrection outstrips naturalistic rivals and supports this by noting that no rival has attracted many scholars."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "ordinary-causes-more-common-reply",
+              "time": "1:00:39",
+              "role": "Direct reply",
+              "words": "Carrier denies excluding miracles beforehand and argues that common missing-body and visionary causes remain comparatively preferable until case-specific evidence overcomes their frequency advantage.",
+              "score": 81,
+              "critique": "Strongest feature: Carrier answers Craig's accusation of prior miracle exclusion by distinguishing logical possibility from comparative frequency, then connects ordinary body loss and visionary experience directly to the observations that resurrection is offered to explain. Principal limitation: background commonness alone cannot settle a case conditioned on specific evidence, and the move does not quantify how the ordinary causes combine or whether they reproduce the complete evidential pattern. Live burden: Carrier must show that his frequency comparison survives Craig's case-specific conditioning and that multiple ordinary mechanisms remain jointly more plausible after the alleged tomb, appearance, and belief evidence is assessed. Locked score: The 81 reflects strong coherence, direct response contact, relevance, clarity, and charitable calibration, with evidential warrant remaining the bounded weakness because comparative frequencies are invoked more than demonstrated.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "natural-theories-fail-comparative-criteria",
+              "time": "56:32",
+              "role": "Direct reply",
+              "words": "Craig argues natural theories fragment the evidence, face specific plausibility problems, and cannot explain why visions would generate bodily-resurrection belief rather than death or assumption.",
+              "score": 78,
+              "critique": "Strongest feature: Craig makes sustained response contact by comparing named ordinary accounts on scope, power, plausibility, and contrivance, while specifically arguing that visions of dead persons would not naturally generate the distinct conclusion of bodily resurrection. Principal limitation: the reply substitutes discrete theft, wrong-tomb, relocation, and hallucination theories for Carrier's broader underdetermination and multiple-cause position, so its strongest refutations do not exhaust the actual opposing route. Live burden: Craig must confront combinations of ordinary causes and establish that the reported diversity and Jewish categories truly exclude visionary reinterpretation rather than merely making it less straightforward. Locked score: The 78 rewards exceptional responsiveness, relevance, clarity, and coherent comparative structure, while moderate warrant and especially low calibration preserve the adjudicated penalty for answering weaker alternatives more completely than Carrier's central formulation.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Craig refutes several isolated natural theories while leaving Carrier’s broader underdetermination and combined-cause position substantially unanswered."
+                }
+              ]
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "burial-empty-tomb",
+        "title": "Burial and the Empty Tomb",
+        "timebox": "10:27 to 1:06:40",
+        "score": {
+          "pro": 82,
+          "con": 82
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "joseph-burial-early-attestation",
+              "time": "10:27",
+              "role": "Constructive",
+              "words": "Craig infers Joseph's burial is historical from early multiple attestation and the improbability that Christians would invent a helpful Sanhedrist after condemning that council.",
+              "score": 82,
+              "critique": "Strongest feature: Craig combines early source placement, alleged multiple attestation, and an adverse-invention consideration into a cumulative inference that Joseph's burial is more likely historical than a convenient Christian creation. Principal limitation: source dependence can reduce the force of multiple attestation, and the claim that a favorable council member would be embarrassing or improbable requires a more developed account of the narrative incentives for creating Joseph. Live burden: Craig must establish meaningful independence among the burial traditions and show that literary usefulness does not outweigh the proposed reluctance to credit a Sanhedrist. Locked score: The 82 reflects strong coherence, relevance, clarity, responsiveness, and a concrete evidential route, while lower warrant and calibration appropriately preserve uncertainty about source independence and the psychological assumptions embedded in the invention argument.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "missing-body-underdetermined",
+              "time": "43:18",
+              "role": "Constructive",
+              "words": "Carrier separates two questions: whether the sources establish a missing body and, if they do, whether ordinary removal or loss has been adequately excluded.",
+              "score": 83,
+              "critique": "Strongest feature: Carrier cleanly separates evidential establishment of a missing corpse from causal interpretation of any disappearance, preventing an empty-tomb concession from functioning automatically as evidence for resurrection over ordinary possibilities. Principal limitation: underdetermination identifies a genuine inferential gap but does not itself provide source-specific reasons for doubting vacancy or a developed ordinary mechanism that explains the surrounding appearances and belief. Live burden: Carrier must connect his two-stage challenge to the particular Pauline and Gospel evidence and show that relevant ordinary causes remain plausible after Craig's burial and tomb indicators are considered cumulatively. Locked score: The 83 rewards excellent coherence, relevance, responsiveness, precision, and charitable calibration in locating the decisive gap, while somewhat lower warrant reflects that this move establishes a burden structure more securely than a complete competing history.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "five-empty-tomb-indicators",
+              "time": "12:37",
+              "role": "Constructive",
+              "words": "Craig combines known burial, early and multiple attestation, women discoverers, narrative simplicity, and hostile theft polemic to infer that Jesus' tomb was empty.",
+              "score": 81,
+              "critique": "Strongest feature: Craig presents five distinct considerations whose intended convergence moves beyond reliance on any single Gospel detail, linking known burial, early tradition, women witnesses, primitive narration, and hostile polemic to tomb vacancy. Principal limitation: several indicators depend on contested source independence and assumptions about women's testimonial status, narrative embellishment, and whether Matthew preserves opposition rather than constructing it, making the cumulative force sensitive to correlated weaknesses. Live burden: Craig must defend each indicator against Carrier's literary explanations and show that their evidential contributions remain substantially independent rather than multiple expressions of the same inherited narrative. Locked score: The 81 reflects outstanding relevance, precision, responsiveness, and cumulative organization, with lower warrant and calibration recording that the most important premises remain disputed despite the argument's strong burden contact.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "women-polemic-paul-empty-tomb-replies",
+              "time": "1:06:40",
+              "role": "Direct reply",
+              "words": "Carrier answers three indicators: Paul reports no discovery, women serve Markan literary purposes, and Matthew's isolated theft polemic cannot independently establish an empty tomb.",
+              "score": 80,
+              "critique": "Strongest feature: Carrier addresses concrete evidential components by separating Paul's appearances from tomb discovery, assigning the women literary functions within Mark, and challenging Matthew's isolated theft polemic through its absence from other proceedings. Principal limitation: the clustered reply moves quickly among textual claims, and literary purpose does not by itself exclude historical memory, while silence in Paul or Acts can underdetermine rather than disprove an empty tomb. Live burden: Carrier must demonstrate that the proposed Markan functions better explain the women than historical recollection and that the polemic's limited attestation positively favors invention. Locked score: The 80 rewards very strong responsiveness and relevance with coherent multi-point contact, but lower evidence, precision, and calibration capture the compressed presentation and the tendency to treat alternative literary explanations as more decisive than demonstrated.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Carrier concludes Matthew invented the theft polemic because Acts and surviving Jewish sources contain no corresponding accusation."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "gospel-sources",
+        "title": "Gospel Sources and Literary Construction",
+        "timebox": "36:30 to 1:32:08",
+        "score": {
+          "pro": 79,
+          "con": 76
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "gospels-ancient-biography-response",
+              "time": "48:09",
+              "role": "Direct reply",
+              "words": "Craig invokes ancient biography, careful source use, and a plausible Barabbas setting to argue that symbolism does not eliminate the Gospels' recoverable historical core.",
+              "score": 73,
+              "critique": "Strongest feature: Craig offers a relevant categorical answer to Carrier by distinguishing historically interested ancient biography from unrestricted mythology and supplementing genre with claimed source care and a plausible setting for Barabbas. Principal limitation: classification as biography cannot establish the disputed resurrection episodes, and the brief Barabbas defense contacts only a narrow example while leaving Carrier's broader network of scriptural and mythic construction substantially unanswered. Live burden: Craig must connect genre and checkable source use to the specific burial, vacancy, and appearance passages and explain why pervasive symbolism does not undermine their historical extraction. Locked score: The 73 retains solid clarity, relevance, and evidential engagement, but its notably weak responsiveness and calibration reflect incomplete contact with Carrier's cumulative literary case rather than a developed defense of the crucial narratives.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "gospels-symbolic-myth-not-history",
+              "time": "36:30",
+              "role": "Constructive",
+              "words": "Carrier infers from extensive Jewish-scriptural and pagan-mythic patterning that Gospel tomb and appearance narratives are literary constructions unsuitable as independent historical evidence.",
+              "score": 76,
+              "critique": "Strongest feature: Carrier supplies a source-directed alternative to straightforward historical reading by treating recurring scriptural and mythic correspondences as evidence that Gospel authors constructed symbolically meaningful tomb and appearance narratives. Principal limitation: resemblance and authorial symbolism do not necessarily entail fabrication, and the argument permits substantial flexibility in which details are retained, changed, or omitted, weakening discriminating power and charitable calibration. Live burden: Carrier must identify correspondences specific enough to distinguish literary creation from historical events narrated through scripture and demonstrate why no recoverable historical core survives the evident theological shaping. Locked score: The 76 rewards high relevance and responsiveness with a substantial evidential program, while lower coherence, warrant, precision, and especially calibration reflect the inferential distance from symbolic patterning to wholesale historical unreliability.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "scripture-adapted-to-events-response",
+              "time": "51:39",
+              "role": "Direct reply",
+              "words": "Craig argues scriptural echoes may interpret prior events rather than invent them, while unmatched occurrences and omitted obvious motifs reduce the fabrication inference.",
+              "score": 81,
+              "critique": "Strongest feature: Craig directly exposes the key inferential gap between scriptural adaptation and historical invention, using unmatched events and omitted motifs to argue that theological patterning can follow rather than generate remembered occurrences. Principal limitation: showing that adaptation is possible does not independently establish which events preceded the texts, and selected mismatches may coexist with substantial authorial construction elsewhere in the passion narratives. Live burden: Craig must provide criteria for distinguishing interpretive proof-texting from narrative creation and apply them consistently to the specific empty-tomb and appearance details carrying his historical case. Locked score: The 81 reflects strong coherence, warrant, responsiveness, clarity, relevance, and comparatively balanced calibration because it contacts Carrier's inference precisely, while bounded uncertainty remains over whether the rebuttal verifies historical events rather than merely preserving their possibility.",
+              "tags": []
+            },
+            "con": null
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "psalm-orphic-dependence-rebuttal",
+              "time": "1:32:08",
+              "role": "Direct reply",
+              "words": "Craig uses unused details, contrary themes, wording differences, and independent Jewish imagery to argue Carrier's Psalm and Orphic dependence claims lack discriminating constraints.",
+              "score": 84,
+              "critique": "Strongest feature: Craig tests Carrier's literary hypothesis against textual mismatches, unused Psalm material, contrary themes, grammatical differences, and an independent Jewish source for right-side imagery, thereby demanding discriminating constraints rather than superficial resemblance. Principal limitation: imperfect correspondence does not exclude creative adaptation, and some rebuttal force depends on expecting dependence to preserve details that a literary author could deliberately transform or omit. Live burden: Craig must show that the identified mismatches are improbable under Carrier's construction model and relevant to the resurrection narratives, not merely examples of ordinary adaptive freedom. Locked score: The 84 follows exceptionally strong responsiveness, coherence, precision, relevance, and substantial evidential warrant, with lower calibration preserving the bounded concern that the rebuttal sometimes treats flexibility as vacuity before specifying a fair dependence threshold.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "pauline-appearances",
+        "title": "Pauline Evidence and Postmortem Appearances",
+        "timebox": "18:45 to 1:21:57",
+        "score": {
+          "pro": 82,
+          "con": 80
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "paul-same-body-transformation",
+              "time": "18:45",
+              "role": "Constructive",
+              "words": "Craig interprets Paul's spiritual body as the mortal body intrinsically transformed rather than exchanged, inferring bodily continuity and therefore no corpse remaining after resurrection.",
+              "score": 82,
+              "critique": "Strongest feature: Craig offers a precise exegetical inference from Paul's contrast between mortal and spiritual embodiment to intrinsic transformation of the same body, directly connecting Pauline anthropology with the absence of a remaining corpse. Principal limitation: semantic continuity between bodies does not itself establish that anyone discovered an empty grave, and the move's conclusion depends on Craig's contested interpretation rather than independent tomb evidence. Live burden: Craig must show that Paul's language excludes replacement or visionary alternatives and explain how theological embodiment claims warrant a historical inference about the corpse's physical location. Locked score: The 82 reflects excellent coherence, evidential engagement, clarity, relevance, and responsive burden contact, while lower calibration and bounded relevance to actual tomb discovery preserve the distinction between a strong interpretation and direct historical attestation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "pauline-revelation-likely-hallucination",
+              "time": "38:34",
+              "role": "Constructive",
+              "words": "Carrier classifies Paul's experience as revelation and compares contradictory religious visions, inferring hallucination is likelier than resurrection unless unusually strong corroborating evidence exists.",
+              "score": 77,
+              "critique": "Strongest feature: Carrier focuses on the epistemic type of Pauline evidence, arguing that revelation and widespread contradictory religious visions provide a recognizable natural category whose frequency matters absent exceptional independent corroboration. Principal limitation: the move moves from general visionary phenomena to Paul's particular experience without detailed case evidence, and its characterization risks pathologizing participants while leaving group reports and bodily language insufficiently explained. Live burden: Carrier must demonstrate that hallucination plausibly accounts for the diversity, content, and social transmission of the reported appearances and remains preferable after Craig's Pauline continuity argument. Locked score: The 77 recognizes strong relevance, responsiveness, and clear burden placement, but moderate coherence and warrant plus weak calibration constrain the result because the natural classification is plausible without being specifically established for the individuals involved.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Carrier infers Christian visions were probably hallucinations because no evidence confirms that they differed from other religious visions."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "individual-group-appearance-attestation",
+              "time": "22:03",
+              "role": "Constructive",
+              "words": "Craig combines early Pauline tradition with Gospel material to establish reported experiences by Peter, the Twelve, five hundred, James, other apostles, and Paul.",
+              "score": 81,
+              "critique": "Strongest feature: Craig identifies a varied appearance inventory across early Pauline and Gospel traditions, including named individuals and groups, so the evidential claim is broader than dependence on one witness or experiential setting. Principal limitation: attestation that experiences were reported does not determine their perceptual character or supernatural cause, and the five hundred and group claims receive limited independent access within this move. Live burden: Craig must establish source independence, clarify what each recipient experienced, and show why collective or transmitted reports resist visionary, legendary, or mixed explanations. Locked score: The 81 rewards strong evidence contact, responsiveness, relevance, organization, and clarity in documenting the breadth of claims, while lower calibration and bounded warrant preserve the gap between early reporting of appearances and verification of bodily resurrection.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "multiple-natural-causes-and-vision-science",
+              "time": "1:10:56",
+              "role": "Direct reply",
+              "words": "Carrier argues visionary experience can transform failed movements, ordinary explanations may combine across facts, and general cognitive patterns answer Craig without speculative individual psychoanalysis.",
+              "score": 81,
+              "critique": "Strongest feature: Carrier directly answers Craig's unity and psychoanalysis objections by permitting several ordinary causes and grounding transformative visions in general cognitive and anthropological patterns rather than retrospective diagnosis of named individuals. Principal limitation: combining mechanisms increases flexibility and can reduce simplicity, while the invoked background science remains generalized and does not specifically establish the experiences, group dynamics, or corpse history at issue. Live burden: Carrier must constrain the multi-cause account enough to generate testable expectations and show that its aggregate probability and explanatory coverage exceed Craig's single resurrection hypothesis. Locked score: The 81 reflects excellent responsiveness, strong coherence, relevance, precision, and fair calibration, but its evidence score remains materially lower because broad vision science and methodological permission do not yet supply a case-specific reconstruction.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "epistles-visions-no-missing-body",
+              "time": "1:21:57",
+              "role": "Direct reply",
+              "words": "Carrier argues that Pauline visions and spiritual-body language never report tomb discovery, so the Epistles cannot determine whether transformation occurred or what happened to Jesus' corpse.",
+              "score": 83,
+              "critique": "Strongest feature: Carrier narrows the documentary claim with precision: whatever spiritual body means, the Epistles report appearances without narrating a tomb visit or discovered absence, leaving physical corpse history evidentially underdetermined. Principal limitation: silence about discovery does not negate bodily continuity implied by Craig's reading, and the move does not resolve whether Paul's resurrection language independently entails transformation of the deceased body. Live burden: Carrier must show that epistolary silence is expected to bear evidential weight and provide an interpretation of Pauline embodiment compatible with a body remaining somewhere. Locked score: The 83 reflects excellent coherence, warrant, responsiveness, relevance, precision, and balanced calibration because it corrects overreach without claiming disproof, while the remaining limitation concerns what Paul's positive language may imply despite absent narrative detail.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "belief-priors",
+        "title": "Resurrection Belief and Prior Probability",
+        "timebox": "24:02 to 1:35:44",
+        "score": {
+          "pro": 81,
+          "con": 81
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "unexpected-resurrection-belief",
+              "time": "24:02",
+              "role": "Constructive",
+              "words": "Craig argues a crucified messiah and isolated pre-end resurrection contradicted contemporary expectations, making the disciples' sudden specific belief evidence for an unusually powerful cause.",
+              "score": 78,
+              "critique": "Strongest feature: Craig connects the content of earliest belief to its proposed cause, reasoning that a crucified messiah and one person's resurrection before the general end were sufficiently counterexpected to demand more than routine doctrinal development. Principal limitation: unexpected beliefs can arise through reinterpretation, visionary experience, and scriptural synthesis, while the move states Jewish expectations broadly and affords limited space to potentially relevant minority resources. Live burden: Craig must show that available scriptures and eschatology could not naturally generate this specific revision and that the disciples' belief emerged suddenly in the asserted form. Locked score: The 78 rewards strong relevance, responsiveness, clarity, and a coherent origin inference, while moderate warrant and low calibration register overstatement of expectation uniformity and incomplete exclusion of Carrier's natural belief-formation route.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "scripture-eschatology-origin-explanation",
+              "time": "1:01:34",
+              "role": "Direct reply",
+              "words": "Carrier combines Daniel, Isaiah, Wisdom, Gabriel, hidden-scripture interpretation, and imminent general resurrection to explain how Jesus' followers could naturally form resurrection belief.",
+              "score": 81,
+              "critique": "Strongest feature: Carrier supplies a content-specific answer to Craig's origin challenge by combining dying, exaltation, resurrection, hidden-scripture, and imminent-end motifs into resources through which followers could reinterpret Jesus' death. Principal limitation: assembling textual possibilities does not show that the earliest believers actually used each source before forming their conviction, and disputed readings may be retrospective rather than live expectations. Live burden: Carrier must establish historical availability and causal uptake of the cited motifs and explain why they generated belief in Jesus' completed resurrection rather than another form of exaltation or future vindication. Locked score: The 81 reflects strong coherence, responsiveness, relevance, precision, evidential engagement, and reasonable calibration, with lower warrant preserving the difference between a plausible scriptural pathway and a documented reconstruction of belief formation.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "daniel-expectation-and-specific-evidence",
+              "time": "1:34:08",
+              "role": "Direct reply",
+              "words": "Craig answers that Daniel concerned other figures for contemporary readers and distinguishes resurrection's general rarity from its probability conditioned on the case-specific evidence.",
+              "score": 83,
+              "critique": "Strongest feature: Craig makes two precise replies by contesting Daniel as a live dying-messiah expectation and distinguishing low general frequency from probability conditioned on the alleged empty tomb, appearances, and belief-origin evidence. Principal limitation: the conditional-probability point inherits every dispute over that evidence, while showing a dominant Daniel reading does not exclude creative reinterpretation after Jesus' death or less prominent scriptural resources. Live burden: Craig must justify the reliability and likelihood contribution of each conditioning fact and demonstrate that postfailure reinterpretation remains less probable than resurrection. Locked score: The 83 reflects excellent responsiveness, coherence, relevance, precision, and strong evidential engagement across both replies, while lower warrant and calibration preserve uncertainty about contested conditioning evidence and the range of available Jewish interpretation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "exceptional-evidence-not-established",
+              "time": "1:35:44",
+              "role": "Direct reply",
+              "words": "Carrier concludes that dependent literary Gospels and vision-reporting Epistles cannot overcome ordinary alternatives, integrating replies about women, multiple versions, Daniel, and evidential rarity.",
+              "score": 80,
+              "critique": "Strongest feature: Carrier integrates his source criticism, Pauline vision argument, ordinary-cause comparison, and direct replies about women, multiple versions, and Daniel into a clear motion-level claim that exceptional evidence remains absent. Principal limitation: the closing sometimes converts contested literary dependence and generalized hallucination claims into categorical unreliability, while its dismissive characterization of believers materially weakens calibration despite extensive response contact. Live burden: Carrier must show that Craig's strongest source and conditional-evidence arguments fail cumulatively, not merely that each admits some ordinary possibility, and must specify the comparative threshold being applied. Locked score: The 80 reflects outstanding responsiveness and relevance with substantial coherence and clear integration, while lower evidence, precision, and especially calibration prevent the forceful synthesis from outrunning its disputed premises.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Carrier concludes nothing unnatural occurred because Craig has not proved evidence exceptional enough to exclude ordinary possibilities."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 80,
+        "strengths": [
+          "Craig organized four alleged facts into a unified explanatory framework and repeatedly connected burial, appearances, and belief origins to the motion rather than treating them as isolated curiosities.",
+          "His Joseph burial and five-indicator empty-tomb cases offered cumulative, source-oriented reasons, earning strong relevance and clarity even though independence and literary alternatives remained disputed.",
+          "Craig's most effective replies distinguished scriptural interpretation from fabrication and challenged flexible Psalm and Orphic parallels through textual mismatches, omitted motifs, and independent Jewish imagery.",
+          "His Daniel and probability reply directly separated general resurrection rarity from probability conditioned on case-specific evidence, while contesting whether a dying messiah was genuinely expected."
+        ],
+        "blunders": [
+          {
+            "text": "The initial framework presupposed both theism and a largely settled four-fact base, leaving evidential warrant and calibration substantially behind its otherwise strong clarity and motion relevance.",
+            "links": []
+          },
+          {
+            "text": "The comparative rejection of natural theories concentrated on discrete theft, wrong-tomb, relocation, and hallucination accounts, incompletely contacting Carrier's broader multiple-cause and underdetermination position.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          },
+          {
+            "text": "Genre classification and a plausible Barabbas setting did not answer Carrier's cumulative literary-construction case, producing Craig's weakest move through limited responsiveness and incomplete source-specific defense.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 80,
+        "strengths": [
+          "Carrier consistently separated establishing a missing body from explaining one, preventing an empty-tomb concession from automatically selecting resurrection over ordinary removal, loss, or literary construction.",
+          "His strongest Pauline reply precisely noted that the Epistles report appearances without tomb discovery, preserving underdetermination about corpse history regardless of competing interpretations of spiritual embodiment.",
+          "Carrier directly defended multi-cause historical explanation and distinguished general cognitive patterns from retrospective individual psychoanalysis, effectively answering Craig's unity and methodological objections.",
+          "The closing integrated source dependence, visionary evidence, ordinary frequencies, women witnesses, and scriptural reinterpretation into a highly responsive argument that Craig had not met an exceptional-evidence burden."
+        ],
+        "blunders": [
+          {
+            "text": "The broad Gospel construction thesis moved too quickly from symbolic and intertextual patterning to historical unreliability, without consistently distinguishing literary shaping from invention of underlying events.",
+            "links": []
+          },
+          {
+            "text": "The initial natural-alternatives claim asserted availability and preference more clearly than it supplied developed mechanisms, probabilities, or complete explanatory coverage for the four alleged facts.",
+            "links": [
+              {
+                "label": "Argument from ignorance",
+                "url": "https://logfall.com/fallacies/argument-from-ignorance/"
+              }
+            ]
+          },
+          {
+            "text": "Carrier's hallucination language and categorical treatment of believers weakened calibration, while generalized vision comparisons did not specifically establish the experiences of Paul or reported groups.",
+            "links": [
+              {
+                "label": "Argument from ignorance",
+                "url": "https://logfall.com/fallacies/argument-from-ignorance/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "label": "AI-generated extension; not transcript content or wording attributable to either speaker.",
+      "pro": {
+        "finalArgument": {
+          "thesis": "A resurrection conclusion becomes comparatively warranted if independently supported burial, vacancy, appearances, and unexpected belief jointly fit divine action better than constrained combinations of ordinary causes.",
+          "premises": [
+            "Joseph's burial and early tomb traditions provide a location-sensitive evidential base, provided their sources retain meaningful independence and their literary functions do not fully explain them.",
+            "Pauline bodily-transformation language and early appearance lists jointly support continuity and reported encounters, although each requires careful separation between testimony, experience, and causal interpretation.",
+            "The emergence of belief in a crucified messiah's pre-end resurrection carries evidential weight when assessed against dominant expectations and after accounting for scriptural reinterpretation resources.",
+            "A successful natural alternative must explain not only each observation separately but also why those observations converged into one early resurrection proclamation without excessive unconstrained auxiliary assumptions.",
+            "If theism is admitted as supported background knowledge, divine resurrection is not internally inconsistent with ordinary mortality and may compete as an intentional cause rather than a natural regularity."
+          ],
+          "conclusion": "Therefore, if the historical inputs withstand source criticism and the natural combinations remain comparatively fragmented or weak, divine resurrection can be the best explanation without changing the locked debate score."
+        },
+        "newArguments": [
+          {
+            "title": "Constraint-Sensitive Cumulative Comparison",
+            "text": "A stronger pro analysis would specify beforehand which observations each hypothesis predicts, which auxiliary assumptions it requires, and which findings would count against it. Resurrection would then be compared with bounded natural combinations rather than a series of isolated caricatures. This structure reinforces Craig's explanatory-criteria route while repairing its weakest contact point: Carrier's permission to combine ordinary causes. The case improves only if one divine action predicts the joint pattern more economically than a constrained, historically plausible natural package."
+          },
+          {
+            "title": "Source-Dependence Robustness Test",
+            "text": "The pro case can be tested under progressively stricter source assumptions. First assess all Gospel and Pauline materials, then remove potentially dependent Gospel strands, and finally retain only the earliest independently defensible claims. If burial, bodily continuity, appearances, and unexpected belief still preserve a meaningful likelihood advantage at each stage, the conclusion becomes less vulnerable to Carrier's literary-dependence critique. This argument adds a transparent robustness procedure without claiming that the transcript already performed the test or changing any locked evaluation."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "Resurrection is not historically established when the source base remains dependent or literary, Pauline evidence remains visionary, and constrained ordinary combinations continue fitting the observations.",
+          "premises": [
+            "A missing corpse must first be established from sources independent enough to carry historical weight before any causal comparison between resurrection and ordinary disappearance can begin.",
+            "Symbolic construction and inter-Gospel dependence reduce the number of independent observations, even when they do not prove that every narrated event was invented.",
+            "Pauline appearance reports establish early experiences and convictions more directly than they establish a transformed corpse, discovered vacancy, or uniquely supernatural external cause.",
+            "Scriptural reinterpretation, imminent eschatology, visionary experience, and ordinary body loss can operate together, so no single natural mechanism must reproduce every claimed fact alone.",
+            "Because resurrection is exceptionally unusual relative to ordinary experience, the case-specific evidence must overcome source uncertainty and natural underdetermination rather than merely remain compatible with divine action."
+          ],
+          "conclusion": "Therefore, unless independent evidence securely establishes the physical and experiential claims while discriminating against constrained ordinary combinations, the historical record does not warrant affirming resurrection over natural explanations."
+        },
+        "newArguments": [
+          {
+            "title": "Correlated-Evidence Discount",
+            "text": "A stronger con analysis would distinguish the number of narratives from the number of independent information channels. When later accounts inherit a common story, shared burial, women, or appearance details should not be multiplied as separate confirmations without evidence of independent access. The method does not assume fabrication and therefore repairs Carrier's occasional overstatement. It simply discounts correlated testimony before comparing resurrection with ordinary alternatives, directly targeting the cumulative force of Craig's attestation and empty-tomb indicators."
+          },
+          {
+            "title": "Explanatory Flexibility Control",
+            "text": "Carrier's multi-cause route becomes stronger if its flexibility is constrained in advance. Each proposed natural mechanism should be tied to a particular observation, supported by evidence already in the packet, and denied unlimited adjustment after objections arise. A package that explains source development, visionary conviction, and possible body loss with bounded assumptions can then be compared fairly with resurrection. This reinforces natural underdetermination while answering Craig's legitimate concern that unconstrained combinations may become ad hoc or explanatorily vacuous."
+          }
+        ]
+      }
+    }
   }
 
 ];

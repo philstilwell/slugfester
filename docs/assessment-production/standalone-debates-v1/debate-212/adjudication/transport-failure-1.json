@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0-standalone-model-transport-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-corrected-command-retry",
+  "debateNumber": "212",
+  "stage": "anonymous-dispute-adjudication",
+  "attempt": 1,
+  "modelTurnReached": false,
+  "usableOutputProduced": false,
+  "directIncrementalCostUsd": 0,
+  "cause": "The local controller supplied the reasoning-effort setting with an extra pair of literal quote characters, so the API rejected the request before evidence review or model generation.",
+  "repair": "Repeat the identical frozen adjudication packet once in a fresh isolated context with the valid low reasoning-effort value.",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-212/adjudication/transport-failure-1.log",
+    "sha256": "8d69e21d104ea056d31ce38699a12e4400dabfd3052c5825755c97c33e655de5"
+  }
+}

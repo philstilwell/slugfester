@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-score-blind-field-limited-recovery",
+  "debateNumber": "212",
+  "rawWorkerOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-212/inventory/raw-worker-output.json",
+    "sha256": "1efdda30ced08b19f31712d115261163440447848c0988af742217e4f4a634fe"
+  },
+  "validatorError": "moves[10]: timestamp endpoints do not match events",
+  "additionalControllerFindings": [
+    "Non-applicable fourth-row authorization fields used false, while the active validator represents satisfied non-applicability as true.",
+    "The worker-reported balance counts were 11 pro and 9 con, while the selected move array mechanically contains 12 pro and 10 con moves.",
+    "Most source spans include hundreds of words of neighboring exposition rather than the smallest complete passage needed to establish the frozen proposition and inference."
+  ],
+  "frozenSubstance": "Move selection, order, semantic sections, section weights, speakers, sides, propositions, importance, burden links, response targets, and response components are immutable during recovery."
+}
