@@ -1,0 +1,281 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Visitor-interest opportunities in the SLUGFESTER data",
+    "description": "Evidence-backed ideas for making the site's 211-debate dataset more useful and engaging to visitors.",
+    "generatedAt": "2026-08-30T12:00:00Z",
+    "cards": [
+      {
+        "id": "headline_metrics",
+        "description": "Headline measures from the published corpus.",
+        "dataset": "summary",
+        "sourceId": "summary_source",
+        "metrics": [
+          { "label": "Published debates", "field": "debates", "format": "number" },
+          { "label": "Within 5 points", "field": "within_five_share", "format": "percent" },
+          { "label": "Both sides win a section", "field": "mixed_section_share", "format": "percent" },
+          { "label": "Moves carrying a flag", "field": "tagged_move_share", "format": "percent" }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "margin_distribution",
+        "title": "Debates by overall score margin",
+        "subtitle": "Nearly half of all published scorecards finish within five points.",
+        "type": "bar",
+        "dataset": "margin_bands",
+        "sourceId": "margin_source",
+        "valueFormat": "number",
+        "encodings": {
+          "x": { "field": "band", "type": "nominal", "label": "Overall score margin" },
+          "y": { "field": "debates", "type": "quantitative", "label": "Debates" },
+          "tooltip": [
+            { "field": "share", "type": "quantitative", "label": "Share", "format": "percent" }
+          ]
+        }
+      },
+      {
+        "id": "appearance_distribution",
+        "title": "Interlocutors by number of one-to-one scorecards",
+        "subtitle": "Three quarters of recognized interlocutors have fewer than three ranking-eligible appearances.",
+        "type": "bar",
+        "dataset": "appearance_bands",
+        "sourceId": "appearance_source",
+        "valueFormat": "number",
+        "encodings": {
+          "x": { "field": "band", "type": "nominal", "label": "One-to-one scorecards" },
+          "y": { "field": "interlocutors", "type": "quantitative", "label": "Interlocutors" },
+          "tooltip": [
+            { "field": "share", "type": "quantitative", "label": "Share", "format": "percent" }
+          ]
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "recommended_modules",
+        "title": "Recommended visitor-facing additions",
+        "subtitle": "Ordered by likely visitor value and ease of explanation.",
+        "dataset": "recommendations",
+        "sourceId": "recommendations_source",
+        "defaultSort": { "field": "priority", "direction": "asc" },
+        "columns": [
+          { "field": "priority", "label": "Priority", "type": "number" },
+          { "field": "module", "label": "Addition", "type": "text" },
+          { "field": "evidence", "label": "Why it is interesting", "type": "text" },
+          { "field": "placement", "label": "Best location", "type": "text" }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "summary_source",
+        "label": "Corpus summary from the reproducible analysis output",
+        "path": "docs/analysis/visitor-insights/analysis-result.json",
+        "query": {
+          "language": "SQL",
+          "engine": "SQLite",
+          "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc) SELECT json_extract(doc, '$.corpus.debates') AS debates, json_extract(doc, '$.corpus.sections') AS sections, json_extract(doc, '$.corpus.moves') AS moves, json_extract(doc, '$.competitiveness.medianOverallMargin') AS median_overall_margin, json_extract(doc, '$.competitiveness.ties') AS ties, json_extract(doc, '$.competitiveness.withinFive') AS within_five, json_extract(doc, '$.competitiveness.withinFiveShare') / 100.0 AS within_five_share, json_extract(doc, '$.competitiveness.withinTen') AS within_ten, json_extract(doc, '$.competitiveness.bothSidesWinASection') AS mixed_sections, json_extract(doc, '$.competitiveness.bothSidesWinASectionShare') / 100.0 AS mixed_section_share, json_extract(doc, '$.competitiveness.nonTiedDebates') AS non_tied_debates, json_extract(doc, '$.competitiveness.overallWinnerLostASection') AS winners_losing_a_section, json_extract(doc, '$.competitiveness.overallWinnerLostASectionShare') / 100.0 AS winners_losing_a_section_share, json_extract(doc, '$.selectivity.taggedMoves') AS tagged_moves, json_extract(doc, '$.selectivity.taggedMoveShare') / 100.0 AS tagged_move_share, json_extract(doc, '$.selectivity.fallacyTags') AS fallacy_tags, json_extract(doc, '$.selectivity.biasTags') AS bias_tags, json_extract(doc, '$.rankings.excludedMultiSpeakerDebates') AS excluded_multi_speaker_debates, json_extract(doc, '$.rankings.eligibleOneToOneDebates') AS eligible_one_to_one_debates, json_extract(doc, '$.rankings.recognizedInterlocutors') AS recognized_interlocutors, json_extract(doc, '$.rankings.belowThreeAppearances') AS below_three_appearances, json_extract(doc, '$.rankings.belowThreeShare') / 100.0 AS below_three_share, json_extract(doc, '$.sideLabelAudit.proAverage') AS pro_average, json_extract(doc, '$.sideLabelAudit.conAverage') AS con_average, json_extract(doc, '$.sideLabelAudit.conMinusPro') AS con_minus_pro, json_extract(doc, '$.sideLabelAudit.proWins') AS pro_wins, json_extract(doc, '$.sideLabelAudit.conWins') AS con_wins FROM source;",
+          "description": "Reads the checked-in analysis output and returns the report's corpus-wide measures.",
+          "tables_used": [
+            "docs/analysis/visitor-insights/analysis-result.json"
+          ],
+          "executed_at": "2026-08-30T12:00:00Z"
+        }
+      },
+      {
+        "id": "margin_source",
+        "label": "Overall score-margin bands",
+        "path": "docs/analysis/visitor-insights/analysis-result.json",
+        "query": {
+          "language": "SQL",
+          "engine": "SQLite",
+          "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc), rows AS (SELECT value FROM source, json_each(json_extract(doc, '$.marginBands'))) SELECT json_extract(value, '$.band') AS band, json_extract(value, '$.debates') AS debates, json_extract(value, '$.share') AS share FROM rows;",
+          "description": "Returns the mutually exclusive overall score-margin bands used in the chart.",
+          "tables_used": ["docs/analysis/visitor-insights/analysis-result.json"],
+          "executed_at": "2026-08-30T12:00:00Z"
+        }
+      },
+      {
+        "id": "appearance_source",
+        "label": "One-to-one interlocutor appearance bands",
+        "path": "docs/analysis/visitor-insights/analysis-result.json",
+        "query": {
+          "language": "SQL",
+          "engine": "SQLite",
+          "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc), rows AS (SELECT value FROM source, json_each(json_extract(doc, '$.appearanceBands'))) SELECT json_extract(value, '$.band') AS band, json_extract(value, '$.interlocutors') AS interlocutors, json_extract(value, '$.share') AS share FROM rows;",
+          "description": "Returns appearance bands after removing debates listed in the multi-speaker exclusion manifest.",
+          "tables_used": ["docs/analysis/visitor-insights/analysis-result.json"],
+          "executed_at": "2026-08-30T12:00:00Z"
+        }
+      },
+      {
+        "id": "recommendations_source",
+        "label": "Visitor-facing recommendation rows",
+        "path": "docs/analysis/visitor-insights/analysis-result.json",
+        "query": {
+          "language": "SQL",
+          "engine": "SQLite",
+          "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc), rows AS (SELECT value FROM source, json_each(json_extract(doc, '$.recommendations'))) SELECT json_extract(value, '$.priority') AS priority, json_extract(value, '$.module') AS module, json_extract(value, '$.evidence') AS evidence, json_extract(value, '$.placement') AS placement FROM rows ORDER BY priority;",
+          "description": "Returns the recommendation table recorded alongside the reproducible analysis.",
+          "tables_used": ["docs/analysis/visitor-insights/analysis-result.json"],
+          "executed_at": "2026-08-30T12:00:00Z"
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "# Visitor-interest opportunities in the SLUGFESTER data\n\nAnalysis of the current 211 published debate scorecards, 1,110 sections, and 4,095 scored moves."
+      },
+      {
+        "id": "executive_summary",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## Executive summary\n\nThe strongest visitor-facing story is not who has the single highest average. It is how often debates remain genuinely contested: 47% finish within five points, 56% give at least one section to each side, and in 55% of non-tied scorecards the eventual winner still loses at least one section.\n\nA second strong story is methodological: fallacy and bias labels are used sparingly, appearing on only 5.7% of scored moves. Rankings need more caution because 75% of recognized participants have fewer than three eligible one-to-one scorecards."
+      },
+      { "id": "headline", "type": "metric-strip", "cardIds": ["headline_metrics"] },
+      {
+        "id": "competitive_finding",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## 1. Most scorecards are competitive\n\nThe median overall margin is six points. Seven debates are tied, 99 of 211 finish within five points, and 167 finish within ten. A compact ‘Closest scorecards’ or ‘Nail-biters’ module would be both accurate and easy to understand."
+      },
+      { "id": "margin_chart", "type": "chart", "chartId": "margin_distribution" },
+      {
+        "id": "mixed_sections_finding",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## 2. Debate-level winners rarely tell the whole story\n\nBoth sides win at least one section in 119 scorecards. Among the 204 non-tied debates, the eventual overall winner loses at least one section in 112. This supports a ‘Most back-and-forth debates’ list and makes the existing section breakdown a central part of the site's value rather than a supporting detail."
+      },
+      {
+        "id": "ranking_finding",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## 3. Ranking confidence varies sharply\n\nAfter excluding the 16 identified group and panel debates, the dataset contains 150 recognized interlocutors across 195 one-to-one scorecards. Of those people, 112 have only one or two appearances. The ranking page's three-debate minimum is defensible, but the site could make the sample-size difference more visible with tiers such as emerging, established, and extensive."
+      },
+      { "id": "appearance_chart", "type": "chart", "chartId": "appearance_distribution" },
+      {
+        "id": "selectivity_finding",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## 4. Reasoning flags are selective, not blanket labels\n\nOnly 232 of 4,095 scored moves carry any fallacy or cognitive-bias flag: 5.7%. The corpus contains 167 fallacy tags and 71 bias tags. A small Backend statistic explaining this selectivity would reassure readers that a tag is meant to identify a specific passage, not characterize an entire person or side."
+      },
+      {
+        "id": "side_audit_finding",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## 5. The pro/con column asymmetry deserves a transparent audit\n\nThe con column averages 83.5 versus 78.6 for the pro column and wins 158 scorecards versus 46, with seven ties. This does not establish that arguing ‘con’ is inherently advantageous: topics, motions, speakers, and side assignment were not randomized. It is still worth publishing as a Backend audit and investigating whether the labeling convention or corpus selection contributes to the pattern."
+      },
+      { "id": "recommendations", "type": "table", "tableId": "recommended_modules" },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## Questions worth exploring next\n\n- Which topics produce the closest scorecards after requiring a sensible minimum sample?\n- Which debates have the largest disagreement between their section-by-section story and final margin?\n- Which fallacies and biases recur most often, and in which kinds of moves?\n- Do assessment scores change materially by debate length, number of sections, or publication batch?"
+      },
+      {
+        "id": "caveats",
+        "type": "markdown",
+        "sourceId": "summary_source",
+        "body": "## Caveats and assumptions\n\nThis is a descriptive analysis of SLUGFESTER's selected corpus, not a representative sample of public debates. It cannot establish causal advantages for a position, speaker, topic, or column. Interlocutor counts use the site's name-to-profile registry and exclude the 16 debates in the multi-speaker manifest; corpus-wide statistics retain all 211 published scorecards. Scores are model-generated estimates under the site's stated process, not ground truth."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-30T12:00:00Z",
+    "status": "ready",
+    "datasets": {
+      "summary": [
+        {
+          "debates": 211,
+          "within_five_share": 0.469,
+          "mixed_section_share": 0.564,
+          "tagged_move_share": 0.057
+        }
+      ],
+      "margin_bands": [
+        { "band": "Tie", "debates": 7, "share": 0.033 },
+        { "band": "1–3 points", "debates": 62, "share": 0.294 },
+        { "band": "4–5 points", "debates": 30, "share": 0.142 },
+        { "band": "6–10 points", "debates": 68, "share": 0.322 },
+        { "band": "11+ points", "debates": 44, "share": 0.209 }
+      ],
+      "appearance_bands": [
+        { "band": "1 scorecard", "interlocutors": 83, "share": 0.553 },
+        { "band": "2 scorecards", "interlocutors": 29, "share": 0.193 },
+        { "band": "3–4 scorecards", "interlocutors": 19, "share": 0.127 },
+        { "band": "5–9 scorecards", "interlocutors": 12, "share": 0.080 },
+        { "band": "10+ scorecards", "interlocutors": 7, "share": 0.047 }
+      ],
+      "recommendations": [
+        { "priority": 1, "module": "Closest scorecards", "evidence": "99 of 211 finish within five points", "placement": "Landing page or Rankings" },
+        { "priority": 2, "module": "Most back-and-forth debates", "evidence": "119 scorecards give sections to both sides", "placement": "Topics or Rankings" },
+        { "priority": 3, "module": "Ranking sample-size tiers", "evidence": "112 of 150 people have fewer than three eligible appearances", "placement": "Rankings" },
+        { "priority": 4, "module": "Reasoning-flag selectivity", "evidence": "Only 5.7% of moves carry a flag", "placement": "Backend" },
+        { "priority": 5, "module": "Pro/con column audit", "evidence": "Con averages 4.9 points higher in this non-random corpus", "placement": "Backend" }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "summary_source",
+      "label": "Corpus summary from the reproducible analysis output",
+      "path": "docs/analysis/visitor-insights/analysis-result.json",
+      "query": {
+        "language": "SQL",
+        "engine": "SQLite",
+        "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc) SELECT json_extract(doc, '$.corpus.debates') AS debates, json_extract(doc, '$.corpus.sections') AS sections, json_extract(doc, '$.corpus.moves') AS moves, json_extract(doc, '$.competitiveness.medianOverallMargin') AS median_overall_margin, json_extract(doc, '$.competitiveness.ties') AS ties, json_extract(doc, '$.competitiveness.withinFive') AS within_five, json_extract(doc, '$.competitiveness.withinFiveShare') / 100.0 AS within_five_share, json_extract(doc, '$.competitiveness.withinTen') AS within_ten, json_extract(doc, '$.competitiveness.bothSidesWinASection') AS mixed_sections, json_extract(doc, '$.competitiveness.bothSidesWinASectionShare') / 100.0 AS mixed_section_share, json_extract(doc, '$.competitiveness.nonTiedDebates') AS non_tied_debates, json_extract(doc, '$.competitiveness.overallWinnerLostASection') AS winners_losing_a_section, json_extract(doc, '$.competitiveness.overallWinnerLostASectionShare') / 100.0 AS winners_losing_a_section_share, json_extract(doc, '$.selectivity.taggedMoves') AS tagged_moves, json_extract(doc, '$.selectivity.taggedMoveShare') / 100.0 AS tagged_move_share, json_extract(doc, '$.selectivity.fallacyTags') AS fallacy_tags, json_extract(doc, '$.selectivity.biasTags') AS bias_tags, json_extract(doc, '$.rankings.excludedMultiSpeakerDebates') AS excluded_multi_speaker_debates, json_extract(doc, '$.rankings.eligibleOneToOneDebates') AS eligible_one_to_one_debates, json_extract(doc, '$.rankings.recognizedInterlocutors') AS recognized_interlocutors, json_extract(doc, '$.rankings.belowThreeAppearances') AS below_three_appearances, json_extract(doc, '$.rankings.belowThreeShare') / 100.0 AS below_three_share, json_extract(doc, '$.sideLabelAudit.proAverage') AS pro_average, json_extract(doc, '$.sideLabelAudit.conAverage') AS con_average, json_extract(doc, '$.sideLabelAudit.conMinusPro') AS con_minus_pro, json_extract(doc, '$.sideLabelAudit.proWins') AS pro_wins, json_extract(doc, '$.sideLabelAudit.conWins') AS con_wins FROM source;",
+        "description": "Reads the checked-in analysis output and returns the report's corpus-wide measures.",
+        "tables_used": [
+          "docs/analysis/visitor-insights/analysis-result.json"
+        ],
+        "executed_at": "2026-08-30T12:00:00Z"
+      }
+    },
+    {
+      "id": "margin_source",
+      "label": "Overall score-margin bands",
+      "path": "docs/analysis/visitor-insights/analysis-result.json",
+      "query": {
+        "language": "SQL",
+        "engine": "SQLite",
+        "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc), rows AS (SELECT value FROM source, json_each(json_extract(doc, '$.marginBands'))) SELECT json_extract(value, '$.band') AS band, json_extract(value, '$.debates') AS debates, json_extract(value, '$.share') AS share FROM rows;",
+        "description": "Returns the mutually exclusive overall score-margin bands used in the chart.",
+        "tables_used": ["docs/analysis/visitor-insights/analysis-result.json"],
+        "executed_at": "2026-08-30T12:00:00Z"
+      }
+    },
+    {
+      "id": "appearance_source",
+      "label": "One-to-one interlocutor appearance bands",
+      "path": "docs/analysis/visitor-insights/analysis-result.json",
+      "query": {
+        "language": "SQL",
+        "engine": "SQLite",
+        "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc), rows AS (SELECT value FROM source, json_each(json_extract(doc, '$.appearanceBands'))) SELECT json_extract(value, '$.band') AS band, json_extract(value, '$.interlocutors') AS interlocutors, json_extract(value, '$.share') AS share FROM rows;",
+        "description": "Returns appearance bands after removing debates listed in the multi-speaker exclusion manifest.",
+        "tables_used": ["docs/analysis/visitor-insights/analysis-result.json"],
+        "executed_at": "2026-08-30T12:00:00Z"
+      }
+    },
+    {
+      "id": "recommendations_source",
+      "label": "Visitor-facing recommendation rows",
+      "path": "docs/analysis/visitor-insights/analysis-result.json",
+      "query": {
+        "language": "SQL",
+        "engine": "SQLite",
+        "sql": "WITH source AS (SELECT CAST(readfile('docs/analysis/visitor-insights/analysis-result.json') AS TEXT) AS doc), rows AS (SELECT value FROM source, json_each(json_extract(doc, '$.recommendations'))) SELECT json_extract(value, '$.priority') AS priority, json_extract(value, '$.module') AS module, json_extract(value, '$.evidence') AS evidence, json_extract(value, '$.placement') AS placement FROM rows ORDER BY priority;",
+        "description": "Returns the recommendation table recorded alongside the reproducible analysis.",
+        "tables_used": ["docs/analysis/visitor-insights/analysis-result.json"],
+        "executed_at": "2026-08-30T12:00:00Z"
+      }
+    }
+  ]
+}

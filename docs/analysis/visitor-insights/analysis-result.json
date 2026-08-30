@@ -1,0 +1,222 @@
+{
+  "generatedAt": "2026-08-30",
+  "source": "SLUGFESTER production dataset in src/data/debates.js",
+  "corpus": {
+    "debates": 211,
+    "sections": 1110,
+    "sectionSideScores": 2220,
+    "moves": 4095,
+    "sectionsPerDebateMedian": 5,
+    "movesPerDebateMedian": 19
+  },
+  "competitiveness": {
+    "medianOverallMargin": 6,
+    "ties": 7,
+    "withinFive": 99,
+    "withinFiveShare": 46.9,
+    "withinTen": 167,
+    "withinTenShare": 79.1,
+    "bothSidesWinASection": 119,
+    "bothSidesWinASectionShare": 56.4,
+    "nonTiedDebates": 204,
+    "overallWinnerLostASection": 112,
+    "overallWinnerLostASectionShare": 54.9
+  },
+  "selectivity": {
+    "taggedMoves": 232,
+    "taggedMoveShare": 5.7,
+    "fallacyTags": 167,
+    "biasTags": 71
+  },
+  "rankings": {
+    "excludedMultiSpeakerDebates": 16,
+    "eligibleOneToOneDebates": 195,
+    "recognizedInterlocutors": 150,
+    "belowThreeAppearances": 112,
+    "belowThreeShare": 74.7
+  },
+  "sideLabelAudit": {
+    "proAverage": 78.6,
+    "conAverage": 83.5,
+    "conMinusPro": 4.9,
+    "proWins": 46,
+    "conWins": 158,
+    "ties": 7
+  },
+  "marginBands": [
+    {
+      "band": "Tie",
+      "debates": 7,
+      "share": 0.033
+    },
+    {
+      "band": "1–3 points",
+      "debates": 62,
+      "share": 0.294
+    },
+    {
+      "band": "4–5 points",
+      "debates": 30,
+      "share": 0.142
+    },
+    {
+      "band": "6–10 points",
+      "debates": 68,
+      "share": 0.322
+    },
+    {
+      "band": "11+ points",
+      "debates": 44,
+      "share": 0.209
+    }
+  ],
+  "appearanceBands": [
+    {
+      "band": "1 scorecard",
+      "interlocutors": 83,
+      "share": 0.553
+    },
+    {
+      "band": "2 scorecards",
+      "interlocutors": 29,
+      "share": 0.193
+    },
+    {
+      "band": "3–4 scorecards",
+      "interlocutors": 19,
+      "share": 0.127
+    },
+    {
+      "band": "5–9 scorecards",
+      "interlocutors": 12,
+      "share": 0.08
+    },
+    {
+      "band": "10+ scorecards",
+      "interlocutors": 7,
+      "share": 0.047
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "module": "Closest scorecards",
+      "evidence": "99 of 211 finish within five points",
+      "placement": "Landing page or Rankings"
+    },
+    {
+      "priority": 2,
+      "module": "Most back-and-forth debates",
+      "evidence": "119 scorecards give sections to both sides",
+      "placement": "Topics or Rankings"
+    },
+    {
+      "priority": 3,
+      "module": "Ranking sample-size tiers",
+      "evidence": "112 of 150 people have fewer than three eligible appearances",
+      "placement": "Rankings"
+    },
+    {
+      "priority": 4,
+      "module": "Reasoning-flag selectivity",
+      "evidence": "Only 5.7% of moves carry a flag",
+      "placement": "Backend"
+    },
+    {
+      "priority": 5,
+      "module": "Pro/con column audit",
+      "evidence": "Con averages 4.9 points higher in this non-random corpus",
+      "placement": "Backend"
+    }
+  ],
+  "leadChangeExamples": [
+    {
+      "number": "184",
+      "id": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "title": "David Enoch & Eric Sampson vs Don Loeb & Matthew Lutz: Is Moral Realism True?",
+      "leadChanges": 5,
+      "proScore": 92,
+      "conScore": 91,
+      "margin": 1,
+      "multiSpeaker": true
+    },
+    {
+      "number": "105",
+      "id": "craig-williams-hossenfelder-zizek-god-reality-2026",
+      "title": "William Lane Craig and Rowan Williams vs Sabine Hossenfelder and Slavoj Žižek: Does God Exist?",
+      "leadChanges": 4,
+      "proScore": 82,
+      "conScore": 81,
+      "margin": 1,
+      "multiSpeaker": true
+    },
+    {
+      "number": "148",
+      "id": "baggett-dillahunty-moral-argument-2018",
+      "title": "David Baggett vs Matt Dillahunty: The Moral Argument for God",
+      "leadChanges": 4,
+      "proScore": 85,
+      "conScore": 86,
+      "margin": 1,
+      "multiSpeaker": false
+    },
+    {
+      "number": "45",
+      "id": "singer-frazier-swinburne-oconnor-morality-2025",
+      "title": "Peter Singer, Jessica Frazier, Richard Swinburne, and Alex O'Connor: The Mystery of Morality",
+      "leadChanges": 4,
+      "proScore": 82,
+      "conScore": 80,
+      "margin": 2,
+      "multiSpeaker": true
+    },
+    {
+      "number": "138",
+      "id": "albrecht-price-bodily-resurrection-2022",
+      "title": "William Albrecht vs Robert Price: Did Jesus Bodily Rise from the Dead?",
+      "leadChanges": 4,
+      "proScore": 78,
+      "conScore": 80,
+      "margin": 2,
+      "multiSpeaker": false
+    },
+    {
+      "number": "171",
+      "id": "hitchens-blair-religion-force-good-2010",
+      "title": "Christopher Hitchens vs Tony Blair: Is Religion a Force for Good in the World?",
+      "leadChanges": 4,
+      "proScore": 83,
+      "conScore": 85,
+      "margin": 2,
+      "multiSpeaker": false
+    },
+    {
+      "number": "196",
+      "id": "huemer-rasmussen-god-existence-2026",
+      "title": "Michael Huemer vs Joshua Rasmussen: Does God Exist?",
+      "leadChanges": 4,
+      "proScore": 77,
+      "conScore": 79,
+      "margin": 2,
+      "multiSpeaker": false
+    },
+    {
+      "number": "164",
+      "id": "craig-wielenberg-god-morality-2018",
+      "title": "William Lane Craig vs Erik Wielenberg: God and Morality",
+      "leadChanges": 4,
+      "proScore": 80,
+      "conScore": 84,
+      "margin": 4,
+      "multiSpeaker": false
+    }
+  ],
+  "validation": {
+    "uniqueDebateIds": true,
+    "uniqueDebateNumbers": true,
+    "everyDebateHasNumericOverallScores": true,
+    "everySectionHasNumericSideScores": true,
+    "marginBandsSumToCorpus": true,
+    "appearanceBandsSumToPeople": true
+  }
+}
