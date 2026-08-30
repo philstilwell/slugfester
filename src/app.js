@@ -40,6 +40,9 @@ const SEARCH_PAGE_SIZE = 24;
 const REFERENCE_CONTEXT_PAGE_SIZE = 16;
 const MIN_RANKED_DEBATE_APPEARANCES = 3;
 const rankingMinimumOptions = [3, 5, 10];
+const PROFILE_SCORE_MINIMUM = 50;
+const PROFILE_SCORE_MAXIMUM = 100;
+const PROFILE_SCORE_BUCKET_SIZE = 5;
 const rankingSortOptions = [
   { value: "average", label: "Highest average" },
   { value: "opponents", label: "Highest Opponents' Avg." },
@@ -1192,23 +1195,47 @@ function profileScoreDistribution(records) {
   const lowest = Math.min(...scores);
   const highest = Math.max(...scores);
   const spread = highest - lowest;
+  const median = scoreMedian(scores);
   const consistency =
     spread <= 7
       ? "Tight score spread"
       : spread <= 15
         ? "Moderate score spread"
         : "Wide score spread";
+  const bands = Array.from(
+    {
+      length:
+        (PROFILE_SCORE_MAXIMUM - PROFILE_SCORE_MINIMUM) /
+        PROFILE_SCORE_BUCKET_SIZE
+    },
+    (_, index) => {
+      const minimum = PROFILE_SCORE_MINIMUM + index * PROFILE_SCORE_BUCKET_SIZE;
+      const maximum =
+        minimum + PROFILE_SCORE_BUCKET_SIZE === PROFILE_SCORE_MAXIMUM
+          ? PROFILE_SCORE_MAXIMUM
+          : minimum + PROFILE_SCORE_BUCKET_SIZE - 1;
+
+      return {
+        count: scores.filter(
+          (score) =>
+            score >= minimum &&
+            (maximum === PROFILE_SCORE_MAXIMUM ? score <= maximum : score < minimum + PROFILE_SCORE_BUCKET_SIZE)
+        ).length,
+        containsMedian:
+          median >= minimum &&
+          (maximum === PROFILE_SCORE_MAXIMUM ? median <= maximum : median < minimum + PROFILE_SCORE_BUCKET_SIZE),
+        label: `${minimum}–${maximum}`
+      };
+    }
+  );
 
   return {
-    median: scoreMedian(scores),
+    median,
     lowest,
     highest,
     consistency,
-    bands: [
-      { label: "80-100", tone: "strong", count: scores.filter((score) => score >= 80).length },
-      { label: "65-79", tone: "mixed", count: scores.filter((score) => score >= 65 && score < 80).length },
-      { label: "Below 65", tone: "weak", count: scores.filter((score) => score < 65).length }
-    ]
+    maximumBandCount: Math.max(1, ...bands.map((band) => band.count)),
+    bands
   };
 }
 
@@ -1741,20 +1768,33 @@ function renderProfileDistribution(distribution, appearances) {
           <p class="eyebrow">Score profile</p>
           <h2 id="profile-distribution-heading">Distribution, not a sequence</h2>
         </div>
-        <p>Scorecards are grouped by published score bands rather than presented as a chronological trend.</p>
+        <p>Overall scores are grouped into fixed five-point buckets so every interlocutor uses the same 50–100 scale.</p>
       </div>
       <div class="profile-distribution-overview">
         <strong>${escapeHtml(distribution.consistency)}</strong>
-        <span>Median ${formatAverageScore(distribution.median)} · Range ${distribution.lowest}-${distribution.highest}</span>
+        <span>Median ${formatAverageScore(distribution.median)} · Range ${distribution.lowest}–${distribution.highest} · ${appearances} ${appearances === 1 ? "scorecard" : "scorecards"}</span>
       </div>
-      <ol class="profile-score-bands">
-        ${distribution.bands
-          .map((band) => {
-            const width = appearances ? (band.count / appearances) * 100 : 0;
-            return `<li class="${band.tone}"><span>${band.label}</span><i aria-hidden="true"><b style="--bar-width: ${width.toFixed(2)}%"></b></i><strong>${band.count}</strong></li>`;
-          })
-          .join("")}
-      </ol>
+      <figure class="profile-score-histogram">
+        <div class="profile-score-chart">
+          <span class="profile-score-y-label" aria-hidden="true">Scorecards</span>
+          <ol class="profile-score-bars" aria-label="Overall score distribution from 50 to 100">
+            ${distribution.bands
+              .map((band) => {
+                const height = (band.count / distribution.maximumBandCount) * 100;
+                const medianNote = band.containsMedian ? "; contains the median score" : "";
+                return `
+                  <li class="${band.count ? "has-score" : "is-empty"}${band.containsMedian ? " is-median" : ""}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}${medianNote}">
+                    <strong class="profile-score-bar-count" aria-hidden="true">${band.count || ""}</strong>
+                    <span class="profile-score-bar" aria-hidden="true"><i style="--bar-height: ${height.toFixed(2)}%"></i></span>
+                    <span class="profile-score-bucket-label" aria-hidden="true">${escapeHtml(band.label)}</span>
+                  </li>
+                `;
+              })
+              .join("")}
+          </ol>
+        </div>
+        <figcaption>Bar height shows the number of published scorecards in each range. The red bar contains the median.</figcaption>
+      </figure>
     </section>
   `;
 }
