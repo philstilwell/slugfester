@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "status": "preserved-before-score-blind-resection",
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/inventory/raw-worker-output.json",
+    "sha256": "c53b29f61f1e42898148966b97a8b1225efccdba3909641c6764a2fce95bcfbe"
+  },
+  "validatorError": "inventory: selectionBalanceAudit totals or thresholds differ",
+  "deterministicFindings": [
+    "The move array contains 12 pro and 14 con moves, not the worker-reported 12 pro and 13 con moves.",
+    "collective-risks-and-governance contains one pro and five con moves, exceeding the four-move per-side publication capacity."
+  ],
+  "remedyAuthorizedBeforeJudgment": "Preserve all 26 moves and their evidence, create a coherent commons-and-ecology section, reassign a governance-relevant later pro reply, and recompute weights and all count audits before judgment."
+}

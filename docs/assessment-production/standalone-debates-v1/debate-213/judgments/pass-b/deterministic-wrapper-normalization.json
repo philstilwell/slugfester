@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-wrapper-normalization",
+  "status": "complete-and-schema-valid",
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/judgments/pass-b/preserved-invalid-output.json",
+    "sha256": "4d28c57ec7b367fb40a5da1eda0b9dc2035f1cc21d7ff4f4b961df667367b92a"
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/judgments/pass-b/output.json",
+    "sha256": "3e66ba497640ed8b5b3f7374536be160ee875d1c423e87b1ea5509de339bb9aa"
+  },
+  "changes": [
+    "Replaced the wrong isolation wrapper with the exact required judgment-isolation booleans.",
+    "Copied the worker's single zero adjustment object unchanged beneath both required side keys."
+  ],
+  "preservedByteEquivalentJson": {
+    "judgments": true,
+    "identity": true,
+    "audit": true,
+    "burdenAdjustmentContent": true
+  },
+  "validation": {
+    "status": "passed",
+    "pass": "pass-b",
+    "moves": 26
+  }
+}

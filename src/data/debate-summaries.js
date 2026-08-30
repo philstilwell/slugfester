@@ -9564,5 +9564,53 @@ export const debateSummaries = [
         "title": "Resurrection Belief and Prior Probability"
       }
     ]
+  },
+  {
+    "id": "peterson-zizek-capitalism-marxism-happiness-2019",
+    "number": "213",
+    "title": "Capitalism, Marxism, and Human Happiness: Jordan Peterson vs. Slavoj Žižek (2019)",
+    "label": "Capitalism, Marxism, and human happiness",
+    "date": "2026-08-30",
+    "duration": "2 hr 46 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lsWndfzuOc4",
+    "motion": "Does capitalism provide a greater opportunity for human happiness than Marxism?",
+    "summary": "Žižek prevailed 78–75 by separating capitalist prosperity from happiness and democratic freedom, while Peterson strongly defended poverty reduction, material security, responsibility, and meaning.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Capitalist progress and individual responsibility",
+        "speaker": "Jordan Peterson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Systemic critique beyond capitalist triumphalism",
+        "speaker": "Slavoj Žižek",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 78
+    },
+    "sections": [
+      {
+        "title": "Marxist and Capitalist Systemic Frameworks"
+      },
+      {
+        "title": "Hierarchy, Class, and Inequality"
+      },
+      {
+        "title": "Markets, Material Prosperity, and Political Economy"
+      },
+      {
+        "title": "Collective Risks, Regulation, and Governance"
+      },
+      {
+        "title": "Ecological Commons and International Coordination"
+      },
+      {
+        "title": "Happiness, Meaning, and Personal Responsibility"
+      }
+    ]
   }
 ];

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-inventory-normalization",
+  "status": "complete-and-validated-before-judgment",
+  "rawWorkerOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/inventory/raw-worker-output.json",
+    "sha256": "c53b29f61f1e42898148966b97a8b1225efccdba3909641c6764a2fce95bcfbe"
+  },
+  "normalizedInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/inventory/inventory.json",
+    "sha256": "9be84082642be58401cb97ffe4c1cb1e26d99675b594031478b24c977f16c698"
+  },
+  "allowedChanges": [
+    "Split the over-capacity governance section into governance and ecological-commons sections.",
+    "Moved the three-move ecology exchange together and the later local-repair reply into governance.",
+    "Split the original 20% governance weight into 11% governance and 9% ecological commons while preserving the total 100% weight.",
+    "Recomputed every balance and capacity count from the unchanged 26-move array."
+  ],
+  "frozenSubstancePreserved": {
+    "movePopulation": true,
+    "moveOrder": true,
+    "sourceSpans": true,
+    "propositions": true,
+    "burdenLinks": true,
+    "replyLinks": true,
+    "scoresIntroduced": false
+  },
+  "validation": {
+    "status": "passed",
+    "debateNumber": "213",
+    "sections": 6,
+    "moves": 26,
+    "belowHighAttributionMoveIds": []
+  }
+}

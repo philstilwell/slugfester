@@ -1,0 +1,213 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "213",
+  "debateId": "peterson-zizek-capitalism-marxism-happiness-2019",
+  "completedAt": "2026-08-30T21:04:45.344Z",
+  "source": {
+    "videoId": "lsWndfzuOc4",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 25699,
+    "events": 3340,
+    "transcriptSha256": "33c5f151a5123d68fd813fbbc46f1d00dee5f6da533e7d31c69fe356dcd6a6f9",
+    "eventsSha256": "3025b6ee90337cc3bc0a371f8bf116c9cff9ab74ff91b39747e34321908d9639",
+    "assessedWindow": "00:14:59-02:44:20",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 26,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 7,
+    "adjudicatedDisputes": 7,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 75,
+      "con": 78,
+      "winner": "con",
+      "margin": 3
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "displayRows": 16,
+    "argumentCards": 26,
+    "uniqueLockedMovesMapped": 26,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "39e118baf92eea6f5899e53a500a4e2a3809ff901ae341c7e74a9cd894a880f9",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-213/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-two-field-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.5,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 116,
+      "mean": 120.6,
+      "maximum": 126
+    },
+    "critiqueCharacterRange": [
+      934,
+      1066
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "minimum": 24,
+      "mean": 26.6,
+      "maximum": 29
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-213/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 26,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 338,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 35,
+    "acceptedRhetoricalTags": 5,
+    "acceptedFallacyTags": 5,
+    "acceptedBiasTags": 0,
+    "biasCandidatesExplicitlyRejected": 13,
+    "rejectedRhetoricalTagCandidates": 30,
+    "overruledOverbroadAdjudicatorAcceptances": 0,
+    "restoredAdjudicatorRejections": 0,
+    "aiContributionWords": 782,
+    "aiContributionCommas": 81,
+    "aiContributionPunctuationAudit": "docs/assessment-production/standalone-debates-v1/debate-213/publication/ai-contribution-punctuation-audit.json"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-213/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 5,
+    "desktopEvidenceSha256": "f78a0746d5758897582d4be105a565fcdc92b6ddef4a0150c19fb1a1b4601f3b",
+    "mobileEvidenceSha256": "6cc69d8ab427082bb5b845646f4932c78ec61eadf882a5ea7056e202e551cc52"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "213 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "406 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "26 moves; description mean 23.5 words; critique mean 120.6 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "26 moves reviewed against 13 definitions in 2 blind passes; 35 candidates adjudicated; 5 fallacies and 0 biases accepted"
+    },
+    {
+      "name": "AI contribution punctuation review",
+      "status": "passed",
+      "result": "18 reader-facing fields reviewed; no punctuation repair required"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "26 populated cards and 5 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 213 with and without --repository-only",
+      "status": "passed",
+      "result": "26 moves; 6 sections; 7 disputes; 0 audio checks; score stability mean 0.75, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "213 of 213 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInvalidInventoryAttempts": 1,
+    "deterministicInventoryCorrections": 1,
+    "judgmentWrapperNormalizations": 1,
+    "adjudicationIdentityNormalizations": 1,
+    "audioSpanCorrectionsBeforeJudgment": 0,
+    "rejectedPublicationDrafts": 1,
+    "atomicPublicationRepairFields": 2,
+    "transportRetries": 1,
+    "overbroadRhetoricalAcceptancesOverruled": 0,
+    "rhetoricalRejectionDecisionsRestored": 0,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 12,
+    "con": 14,
+    "disposition": "All twenty-six frozen moves are mapped exactly once. The twelve-to-fourteen split reflects the source’s distinct load-bearing contributions; no move was deleted, merged, or added merely to force numerical equality."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

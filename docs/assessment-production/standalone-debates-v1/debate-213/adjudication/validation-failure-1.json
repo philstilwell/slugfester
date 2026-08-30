@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-validation-failure",
+  "status": "preserved-before-mechanical-identity-normalization",
+  "invalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/adjudication/preserved-invalid-output.json",
+    "sha256": "8d7890acde983763c6e1b6730655564a5e2cf9955fef5a644280407aa62b9c16"
+  },
+  "error": "adjudication: identity mismatch",
+  "cause": "The worker returned numeric debateNumber 213 instead of the frozen string \"213\".",
+  "authorizedChange": "Normalize only the JSON scalar type of debateNumber; preserve every resolution and rationale byte-equivalently."
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "status": "preserved-before-production-contract-normalization",
+  "invalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-213/publication/preserved-invalid-output-1.json",
+    "sha256": "c4023a8e709aaee16f29e39045096959dda378b8143fcc3a33054d219f4682b8"
+  },
+  "findings": [
+    "All six frozen sectionId fields were omitted although section order, titles, timeboxes, scores, and move mappings were preserved.",
+    "sourceQuoteAudit used an array keyed by side values instead of the established pro/con object wrapper.",
+    "Two argument descriptions contain 21 words, one below the frozen 22-word minimum."
+  ],
+  "scoreOrJudgmentChangeAuthorized": false
+}
