@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "215",
+  "debateId": "horn-oconnor-christian-belief-2022",
+  "completedAt": "2026-08-30T23:05:00.000Z",
+  "source": {
+    "videoId": "dFYrfKHSV2k",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 27540,
+    "events": 3797,
+    "transcriptSha256": "d8580aca316912fe373230b91a63a231fab711ae3d60d4a25e167fb966c70bf1",
+    "eventsSha256": "e59fe29ce4c3e23603ac3941abcbb4e6a4acf8bf7e160a844dfec64087b314c8",
+    "assessedWindow": "00:02:42-02:00:42",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 28,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 12,
+    "adjudicatedDisputes": 12,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 74,
+      "con": 84,
+      "winner": "con",
+      "margin": 10
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "displayRows": 14,
+    "argumentCards": 28,
+    "uniqueLockedMovesMapped": 28,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "d901ba9a3db42c6b0d334e56828deb968775ad674632c70d7179e644991842cf",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-215/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-two-field-per-shard-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 20,
+      "mean": 22.8,
+      "maximum": 24,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 116,
+      "mean": 121.7,
+      "maximum": 128
+    },
+    "critiqueCharacterRange": [
+      887,
+      986
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "mean": 21.9
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-215/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 28,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 364,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 15,
+    "acceptedRhetoricalTags": 3,
+    "acceptedFallacyTags": 2,
+    "acceptedBiasTags": 1,
+    "biasCandidatesExplicitlyRejected": 6,
+    "rejectedRhetoricalTagCandidates": 12,
+    "aiContributionWords": 718,
+    "aiContributionPunctuationReview": "passed-by-production-validator-and-direct-inspection"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-215/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 3,
+    "desktopEvidenceSha256": "bd5efb4850d7049dc219962eed043f62dbe5d71e176e87f45c17046fa33b05b2",
+    "mobileEvidenceSha256": "7d57b0aeae71beda9c8b102ab70defcc1f951866a7a07cf34bbcc45b2d081721"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "215 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "408 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "28 moves; description mean 22.8 words; critique mean 121.7 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "28 moves reviewed against 13 definitions in 2 blind passes; 15 candidates adjudicated; 2 fallacies and 1 bias accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "28 populated cards and 3 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 215 with and without --repository-only",
+      "status": "passed",
+      "result": "28 moves; 6 sections; 12 disputes; 0 audio checks; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "215 of 215 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "deterministicInventoryCorrections": 1,
+    "judgmentRetries": 0,
+    "rejectedPublicationDrafts": 1,
+    "publicationValidationFailures": 2,
+    "atomicPublicationRepairFields": 3,
+    "publicationRepairShards": 2,
+    "preservedOverlongRepairOutputs": 2,
+    "rhetoricalTagFieldsAdded": 3,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 14,
+    "con": 14,
+    "disposition": "All twenty-eight frozen moves are mapped exactly once. The balanced total arose from the complete source inventory; no move was deleted, merged, added, or reassigned to manufacture symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

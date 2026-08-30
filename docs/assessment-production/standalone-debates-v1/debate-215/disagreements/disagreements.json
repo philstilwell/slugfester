@@ -1,0 +1,333 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "215",
+  "debateId": "horn-oconnor-christian-belief-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "contingency-points-to-necessary-creator:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "contingency-points-to-necessary-creator",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "immaterial-first-cause-points-to-divinity:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "immaterial-first-cause-points-to-divinity",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "dignity-and-resurrection-support-christianity:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "dignity-and-resurrection-support-christianity",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "moral-creator-identified-through-christ:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "moral-creator-identified-through-christ",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "honest-nonbelief-complicates-divine-judgment:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "honest-nonbelief-complicates-divine-judgment",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "The fairness concern follows if honest inquiry both should lead to God and can instead end in punishable rejection, but Horn had just denied that sincere error is automatically damnable."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "The fairness concern is coherent conditionally, but Horn had just denied that blameless disbelief necessarily brings damnation."
+        }
+      }
+    },
+    {
+      "disputeId": "honest-nonbelief-complicates-divine-judgment:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "honest-nonbelief-complicates-divine-judgment",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "The existence of honest unbelief is plausible in the exchange, yet the adverse eternal consequence is framed conditionally and not shown to apply under Horn's stated view."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "The possibility of honest nonbelief is established in the exchange, while the adverse-judgment premise remains qualified and disputed."
+        }
+      }
+    },
+    {
+      "disputeId": "honest-nonbelief-complicates-divine-judgment:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "honest-nonbelief-complicates-divine-judgment",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "O'Connor preserves the hiddenness concern but only partially incorporates Horn's culpability answer, which expressly allows sincere seekers to be saved."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "It preserves the hiddenness prediction but only partially engages Horn's explicit culpability-based protection for sincere seekers."
+        }
+      }
+    },
+    {
+      "disputeId": "honest-nonbelief-complicates-divine-judgment:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "honest-nonbelief-complicates-divine-judgment",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The issue bears on divine love and fairness, though its force against Horn's position depends on establishing culpable punishment for the honest seeker."
+        },
+        "option-b": {
+          "value": 76,
+          "rationale": "The move remains relevant to divine fairness, although its hell scenario does not follow from Horn's stated Catholic account."
+        }
+      }
+    },
+    {
+      "disputeId": "honest-nonbelief-complicates-divine-judgment:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "honest-nonbelief-complicates-divine-judgment",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 81,
+          "rationale": "The proposed case—proper reading, honest engagement, continued disbelief, and possible hell—is clear, with the unfairness conclusion stated as a concern."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "The concern is readily understood, but phrases such as might end up in hell leave the applicable conditions unclear."
+        }
+      }
+    },
+    {
+      "disputeId": "honest-nonbelief-complicates-divine-judgment:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "honest-nonbelief-complicates-divine-judgment",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "O'Connor says the punishment concern 'might' arise and frames it as clarification, but he does not fully credit Horn's explicit culpability qualification."
+        },
+        "option-b": {
+          "value": 70,
+          "rationale": "O'Connor presents the consequence tentatively, yet understates Horn's answer that sincere, nonculpable seekers can be saved."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured: the cumulative bridge, hiddenness replies, greater-good defenses, moral case, Christian identification, and defeasibility were all rated within their locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require a separate debate-wide effect on completion of the cumulative Christian evidential burden that is not reflected in any move rating.",
+            "relatedMoveIds": [
+              "dignity-and-resurrection-support-christianity",
+              "epistemic-distance-preserves-freedom",
+              "divine-knowledge-permits-unknown-justifications",
+              "moral-creator-identified-through-christ",
+              "christianity-exposes-historical-and-philosophical-defeaters"
+            ],
+            "distinctConsequence": "None; the pro side's coverage and residual gaps are already represented in the ratings of the corresponding constructive and reply moves.",
+            "alreadyCapturedBy": [
+              "relevanceBurden",
+              "responsiveness",
+              "evidenceWarrant",
+              "logicalCoherence"
+            ],
+            "counterfactual": "Without those move-level ratings, cumulative burden completion would be underdescribed; because they already capture it, an additional adjustment would duplicate scoring."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured; the pro route's bridges and gaps are reflected in the individual move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require an additional debate-wide pro burden consequence beyond the rated moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No qualifying consequence was identified outside the assessed pro moves and their locked response links.",
+            "alreadyCapturedBy": [
+              "contingency-points-to-necessary-creator",
+              "immaterial-first-cause-points-to-divinity",
+              "dignity-and-resurrection-support-christianity",
+              "epistemic-distance-preserves-freedom",
+              "divine-knowledge-permits-unknown-justifications",
+              "developing-world-enables-moral-goods",
+              "moral-realism-and-dignity-favor-theism",
+              "moral-creator-identified-through-christ",
+              "christianity-exposes-historical-and-philosophical-defeaters"
+            ],
+            "counterfactual": "Without the move-level ratings, route completion would need separate assessment; here those consequences are already captured."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured: suffering, hiddenness, internal critique, Christian specificity, and the incremental-evidence threshold were each assessed in their locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require a separate debate-wide effect on completion of the skeptical evidential burden that is not reflected in any move rating.",
+            "relatedMoveIds": [
+              "suffering-more-expected-under-atheism",
+              "loving-god-should-correct-blameless-error",
+              "evil-argument-is-an-internal-critique",
+              "evil-undermines-christian-loving-god",
+              "resurrection-evidence-does-not-yet-warrant-belief"
+            ],
+            "distinctConsequence": "None; the con side's integrated evidential objections, concessions, and remaining gaps are already captured by the individual move assessments.",
+            "alreadyCapturedBy": [
+              "relevanceBurden",
+              "responsiveness",
+              "evidenceWarrant",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move ratings, the skeptical route's debate-wide completion would be unclear; adding an adjustment now would count the same consequences twice."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured; the con route's challenges and limitations are reflected in the individual move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require an additional debate-wide con burden consequence beyond the rated moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No qualifying consequence was identified outside the assessed con moves and their locked response links.",
+            "alreadyCapturedBy": [
+              "suffering-more-expected-under-atheism",
+              "nonresistant-nonbelief-conflicts-with-divine-love",
+              "loving-god-should-correct-blameless-error",
+              "known-goods-do-not-explain-extreme-suffering",
+              "needless-evil-cannot-be-justified-by-response-goods",
+              "evil-argument-is-an-internal-critique",
+              "evil-undermines-christian-loving-god",
+              "incremental-evidence-may-remain-insufficient",
+              "resurrection-evidence-does-not-yet-warrant-belief"
+            ],
+            "counterfactual": "Without the move-level ratings, route completion would need separate assessment; here those consequences are already captured."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 28,
+    "disputesExtracted": 12,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

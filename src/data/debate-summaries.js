@@ -9660,5 +9660,53 @@ export const debateSummaries = [
         "title": "Tradition, external criticism, and organic reform"
       }
     ]
+  },
+  {
+    "id": "horn-oconnor-christian-belief-2022",
+    "number": "215",
+    "title": "Why Be a Christian? Trent Horn vs. Alex O'Connor (2022)",
+    "label": "Christian belief and skeptical objections",
+    "date": "2026-08-30",
+    "duration": "2 hr 2 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=dFYrfKHSV2k",
+    "motion": "Does the available evidence warrant Christian belief?",
+    "summary": "Alex O'Connor wins 84-74 by pressing suffering and hiddenness more precisely than Trent Horn warrants Christianity's cumulative explanatory bridges.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Cumulative Christian evidential case",
+        "speaker": "Trent Horn",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Skeptical evidential objections",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 84
+    },
+    "sections": [
+      {
+        "title": "Opening cumulative cases"
+      },
+      {
+        "title": "Divine hiddenness and epistemic distance"
+      },
+      {
+        "title": "Evil, suffering, and greater goods"
+      },
+      {
+        "title": "Moral realism, dignity, and emotivism"
+      },
+      {
+        "title": "Christian specificity and judgment"
+      },
+      {
+        "title": "Falsifiability and cumulative evidence"
+      }
+    ]
   }
 ];

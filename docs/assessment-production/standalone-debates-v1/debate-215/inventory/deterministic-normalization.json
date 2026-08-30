@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "215",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-215/inventory/raw-worker-output.json",
+    "sha256": "85368263b24e597c6f8883e60089624ab319e60f9938873bf1de864d2f1294db"
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-215/inventory/inventory.json",
+    "sha256": "2cb191202676adb1f11126a40ae53fb26fe89c7148d164ee87ccf1c47858e613"
+  },
+  "transformations": [
+    "Replaced positional section IDs with semantic lowercase slugs without changing titles, weights, or membership.",
+    "Replaced positional move IDs with semantic lowercase slugs and updated response references without changing any source span, proposition, rationale, attribution, burden contact, or response substance.",
+    "Recomputed each selected span's timestamps and exact excerpt directly from its unchanged event endpoints; discarded only quote candidates that were not exact substrings and supplied one exact eight-word substring where necessary.",
+    "Normalized fourthRowAuthorized to true when no fourth row exists, matching the protocol's vacuous preauthorization convention.",
+    "Sorted the same 28 selected moves by locked source start event and set the corresponding chronology audit claim to true."
+  ],
+  "substantiveJudgmentChanged": false,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "215",
+    "sections": 6,
+    "moves": 28,
+    "belowHighAttributionMoveIds": []
+  }
+}
