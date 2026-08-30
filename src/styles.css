@@ -1942,7 +1942,8 @@ a {
 }
 
 .profile-score-histogram {
-  margin: 0;
+  width: min(52%, 640px);
+  margin: 0 auto;
 }
 
 .profile-score-chart {
@@ -1979,6 +1980,46 @@ a {
   min-width: 0;
 }
 
+.profile-score-bars li:nth-child(1) {
+  --profile-score-bar-color: var(--coral);
+}
+
+.profile-score-bars li:nth-child(2) {
+  --profile-score-bar-color: color-mix(in srgb, var(--coral) 78%, var(--gold));
+}
+
+.profile-score-bars li:nth-child(3) {
+  --profile-score-bar-color: color-mix(in srgb, var(--coral) 55%, var(--gold));
+}
+
+.profile-score-bars li:nth-child(4) {
+  --profile-score-bar-color: color-mix(in srgb, var(--coral) 30%, var(--gold));
+}
+
+.profile-score-bars li:nth-child(5) {
+  --profile-score-bar-color: var(--gold);
+}
+
+.profile-score-bars li:nth-child(6) {
+  --profile-score-bar-color: color-mix(in srgb, var(--gold) 80%, var(--teal));
+}
+
+.profile-score-bars li:nth-child(7) {
+  --profile-score-bar-color: color-mix(in srgb, var(--gold) 60%, var(--teal));
+}
+
+.profile-score-bars li:nth-child(8) {
+  --profile-score-bar-color: color-mix(in srgb, var(--gold) 40%, var(--teal));
+}
+
+.profile-score-bars li:nth-child(9) {
+  --profile-score-bar-color: color-mix(in srgb, var(--gold) 20%, var(--teal));
+}
+
+.profile-score-bars li:nth-child(10) {
+  --profile-score-bar-color: var(--teal);
+}
+
 .profile-score-bar-count {
   align-self: center;
   color: #40524f;
@@ -2007,9 +2048,9 @@ a {
 .profile-score-bar i {
   width: min(72%, 42px);
   height: var(--bar-height);
-  background: var(--teal);
+  background: var(--profile-score-bar-color, var(--teal));
   border-radius: 5px 5px 0 0;
-  box-shadow: 0 4px 10px rgba(47, 143, 133, 0.12);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--profile-score-bar-color, var(--teal)) 28%, transparent);
 }
 
 .profile-score-bars li.has-score .profile-score-bar i {
@@ -2017,8 +2058,8 @@ a {
 }
 
 .profile-score-bars li.is-median .profile-score-bar i {
-  background: var(--coral);
-  box-shadow: 0 4px 12px rgba(211, 93, 71, 0.22);
+  outline: 2px solid color-mix(in srgb, var(--ink) 82%, transparent);
+  outline-offset: 2px;
 }
 
 .profile-score-bucket-label {
@@ -2043,6 +2084,10 @@ a {
 }
 
 @media (max-width: 520px) {
+  .profile-score-histogram {
+    width: 100%;
+  }
+
   .profile-score-chart {
     padding-left: 23px;
   }

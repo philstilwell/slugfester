@@ -1793,7 +1793,7 @@ function renderProfileDistribution(distribution, appearances) {
               .join("")}
           </ol>
         </div>
-        <figcaption>Bar height shows the number of published scorecards in each range. The red bar contains the median.</figcaption>
+        <figcaption>Bar height shows the number of published scorecards in each range. The outlined bar contains the median.</figcaption>
       </figure>
     </section>
   `;
