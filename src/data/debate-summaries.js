@@ -9328,5 +9328,54 @@ export const debateSummaries = [
         "title": "Dragons, natural selection, and Baldwin effects"
       }
     ]
+  },
+  {
+    "id": "vela-jones-divine-hiddenness-christian-love-2023",
+    "number": "208",
+    "title": "Divine Hiddenness and Christian Love: Tyler Vela vs. Michael Jones (2023)",
+    "label": "Divine hiddenness and Christian love",
+    "date": "2026-08-30",
+    "duration": "2 hr 3 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=PZZkFfvfHb0",
+    "motion": "Is divine hiddenness compatible with Christianity’s claim that God is perfectly loving?",
+    "summary": "Tyler Vela’s hiddenness critique wins by pressing loving availability, avoidable world design, and less-hidden alternatives more consistently than Michael Jones establishes sanctification, soul formation, and individualized disclosure.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Divine-hiddenness critique",
+        "speaker": "Tyler Vela",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian hiddenness defense",
+        "speaker": "Michael Jones",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 78,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Perfect Love and the Christian Hiddenness Problem"
+      },
+      {
+        "title": "Fatherhood and Experienced Absence"
+      },
+      {
+        "title": "Sanctification, Motives, and Evidence"
+      },
+      {
+        "title": "Suffering, Soul Formation, and Triumphant Good"
+      },
+      {
+        "title": "Salvation, Nonbelief, and Judgment"
+      },
+      {
+        "title": "Audience Clarifications on Hiddenness"
+      }
+    ]
   }
 ];

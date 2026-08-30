@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-one-attempt-with-deterministic-word-normalization",
+  "debateNumber": "208",
+  "debateId": "vela-jones-divine-hiddenness-christian-love-2023",
+  "shardId": "shard-1",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "billingSurface": "ChatGPT subscription",
+  "sessionId": "01a051ca-c7cd-7100-8bcf-ff430118541b",
+  "freshIsolatedContext": true,
+  "attemptCount": 1,
+  "retryCount": 0,
+  "writableFields": [
+    "candidate.sections[0].exchanges[0].pro.critique",
+    "candidate.sections[0].exchanges[0].con.critique"
+  ],
+  "changedFields": [
+    "candidate.sections[0].exchanges[0].pro.critique",
+    "candidate.sections[0].exchanges[0].con.critique"
+  ],
+  "maximumWritableFields": 2,
+  "evidence": {
+    "preservedInvalidOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/preserved-invalid-output-1.json",
+      "sha256": "d3f4cdc1aa93b69f7a1685e41f73df0c3c277f4084ff299e519fdec7d5c01a9a",
+      "bytes": 45442
+    },
+    "repairPacket": {
+      "path": ".assessment-cache/debate-208-publication-repairs/shard-1/packet.json",
+      "sha256": "eb32615075a6f83023cfcbbdf982bd3bfd9aeeebd911fdd46ba6d0bd561d1fb5",
+      "bytes": 9644
+    },
+    "repairOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/repair-1/output.json",
+      "sha256": "585a4a13b937d52f2348b1786603f1e6336252d04a90c27776b6e15f47c7b5e3",
+      "bytes": 2245
+    }
+  },
+  "deterministicNormalization": {
+    "applied": true,
+    "reason": "The single model attempt retained the required structure and substance but exceeded the word ceiling; the controller removed only redundant modifiers from the same two authorized fields.",
+    "removedWords": 11,
+    "claimsChanged": 0,
+    "scoresChanged": 0
+  },
+  "identityMovesJudgmentsScoresAndAllUnlistedFieldsUnchanged": true,
+  "directIncrementalCostUsd": 0
+}

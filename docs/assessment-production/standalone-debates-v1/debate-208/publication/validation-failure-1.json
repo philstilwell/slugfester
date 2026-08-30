@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-field-disjoint-repair",
+  "debateNumber": "208",
+  "debateId": "vela-jones-divine-hiddenness-christian-love-2023",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/preserved-invalid-output-1.json",
+    "sha256": "d3f4cdc1aa93b69f7a1685e41f73df0c3c277f4084ff299e519fdec7d5c01a9a",
+    "bytes": 45442
+  },
+  "failures": [
+    "Seven critique fields exceeded the 130-word ceiling by one to three words while retaining valid four-sentence structure and the 880-character floor.",
+    "Each AI-extension side supplied six premises instead of exactly five."
+  ],
+  "writableLeafFields": [
+    "candidate.sections[0].exchanges[0].pro.critique",
+    "candidate.sections[0].exchanges[0].con.critique",
+    "candidate.sections[1].exchanges[0].con.critique",
+    "candidate.sections[2].exchanges[1].con.critique",
+    "candidate.sections[3].exchanges[0].con.critique",
+    "candidate.sections[3].exchanges[1].pro.critique",
+    "candidate.sections[3].exchanges[1].con.critique",
+    "candidate.logicalExtension.pro.finalArgument.premises",
+    "candidate.logicalExtension.con.finalArgument.premises"
+  ],
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].pro.critique",
+        "candidate.sections[0].exchanges[0].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[1].exchanges[0].con.critique",
+        "candidate.sections[2].exchanges[1].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.sections[3].exchanges[0].con.critique",
+        "candidate.sections[3].exchanges[1].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.sections[3].exchanges[1].con.critique",
+        "candidate.logicalExtension.pro.finalArgument.premises"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-5",
+      "writableFields": [
+        "candidate.logicalExtension.con.finalArgument.premises"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    }
+  ],
+  "frozenFieldsUnaffected": [
+    "identity",
+    "source evidence",
+    "inventory",
+    "judgments",
+    "adjudication",
+    "scores",
+    "all unlisted publication fields"
+  ]
+}

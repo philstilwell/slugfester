@@ -83061,6 +83061,480 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "208",
+    "id": "vela-jones-divine-hiddenness-christian-love-2023",
+    "date": "2026-08-30",
+    "title": "Divine Hiddenness and Christian Love: Tyler Vela vs. Michael Jones (2023)",
+    "label": "Divine hiddenness and Christian love",
+    "topicCategory": "god-theism-atheism",
+    "youtubeUrl": "https://www.youtube.com/watch?v=PZZkFfvfHb0",
+    "duration": "2 hr 3 min",
+    "summary": "Tyler Vela’s hiddenness critique wins by pressing loving availability, avoidable world design, and less-hidden alternatives more consistently than Michael Jones establishes sanctification, soul formation, and individualized disclosure.",
+    "motion": "Is divine hiddenness compatible with Christianity’s claim that God is perfectly loving?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "Publication prose uses only the frozen packet’s transcript excerpts, propositions, response mappings, dimension judgments, and locked scores. No prior publication, outside evidence, or rhetorical-tag assessment was consulted.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance. All move, section, and overall scores were locked before publication writing; the prose explains why Tyler Vela’s divine-hiddenness critique prevailed 83–78 without rescoring or overriding the repository-owned result.",
+    "sides": {
+      "pro": {
+        "name": "Divine-hiddenness critique",
+        "speaker": "Tyler Vela",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian hiddenness defense",
+        "speaker": "Michael Jones",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 78,
+      "winner": "pro"
+    },
+    "quotes": {
+      "pro": {
+        "text": "God is by nature love",
+        "context": "Vela makes Christianity’s essential-love claim, joined to God’s desired redemptive relationship, the internal standard against which observed divine hiddenness must be evaluated."
+      },
+      "con": {
+        "text": "God wants cognitively robust theism",
+        "context": "Jones uses this formulation to distinguish morally transformative, rightly motivated relationship from bare assent, supporting his contention that additional evidence may sometimes frustrate divine purposes."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "perfect-love-and-christian-hiddenness",
+        "title": "Perfect Love and the Christian Hiddenness Problem",
+        "timebox": "20%",
+        "score": {
+          "pro": 83,
+          "con": 82
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "perfect-love-intensifies-christian-hiddenness",
+              "time": "10:09",
+              "role": "Constructive",
+              "words": "Christianity identifies God with perfect love and redemptive relationship, so experienced divine absence creates a sharper internal conflict than hiddenness presents for generic theism.",
+              "score": 83,
+              "critique": "Strongest feature: Vela tightly derives a Christian hiddenness problem from divine love and God's desire for redemptive relationship, achieving exceptional motion relevance, precision, internal coherence, and charitable calibration without attacking generic theism. Principal limitation: The excerpt supports expected divine availability more firmly than it supports moving from observed ambiguity to incompatibility, so evidential warrant remains materially weaker than responsiveness and burden contact despite the argument's disciplined formulation. Live burden: He must define how much recognizable presence perfect love requires, show that apparently sincere absence crosses that threshold, and answer Jones's reply that calibrated concealment protects sanctification without forsaking relationship. Locked score: Eighty-three preserves outstanding relevance, strong responsiveness, clarity, coherence, and charity across the six dimensions, while recognizing thinner evidence and an incompletely defended bridge from loving purpose to required manifestation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "manifest-presence-fails-to-produce-sanctified-love",
+              "time": "16:36",
+              "role": "Constructive",
+              "words": "Exodus and Jesus’s ministry show overt presence eliciting exploitation, rebellion, and violence rather than agape love, so perfect love may prioritize sanctification over visibility.",
+              "score": 82,
+              "critique": "Strongest feature: Jones turns manifestations into a counterexample to the assumption that visibility reliably creates loving relationship, giving his sanctification defense strong motion contact, evidence, direct responsiveness, and a distinction between assent and agape. Principal limitation: The Exodus and Jesus examples show that manifestation is insufficient for sanctified love, but they do not show that greater hiddenness is necessary, beneficial, or appropriately imposed upon sincere nonrebellious seekers. Live burden: He must connect calibrated concealment to improved motives across individuals and answer why divine omniscience could not provide stronger evidence selectively while preserving freedom, moral transformation, and resistance. Locked score: Eighty-two rewards high relevance, responsiveness, organization, clarity, charity, and developed warrant across six dimensions, while the unsupported move from failed manifestations to justified contemporary hiddenness limits logical completeness and explanatory reach.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "fatherhood-and-experienced-absence",
+        "title": "Fatherhood and Experienced Absence",
+        "timebox": "15%",
+        "score": {
+          "pro": 83,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "loving-father-analogy-requires-availability",
+              "time": "11:25",
+              "role": "Constructive",
+              "words": "Biblical fatherhood must retain recognizable parental availability even analogically, yet Christians experience unexpected divine absence, placing that hiddenness in tension with proclaimed fatherly love.",
+              "score": 80,
+              "critique": "Strongest feature: Vela grounds the availability expectation in Christianity’s own fatherhood language and personal parental comparison, creating clear central-burden contact and an intuitively powerful standard against which experienced absence can be assessed. Principal limitation: The analogy remains underdeveloped regarding divine embodiment, temporal perspective, governance, and the difference between a human parent’s silence and a creator’s potentially indirect presence, while experiential evidence receives limited independent corroboration. Live burden: He must identify which features of ordinary fatherly availability survive analogical qualification and show that Christian hiddenness violates those features rather than merely differing from familiar human interaction. Locked score: Eighty reflects strong relevance, responsiveness, clarity, and charitable framing, but lower logical specification and evidential warrant accurately register the analogy’s unresolved transfer conditions and its dependence upon generalized experience.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "eternal-perspective-and-fallen-agents-change-father-analogy",
+              "time": "55:10",
+              "role": "Direct reply",
+              "words": "God’s eternal perspective, fallen human motives, and possible postmortem formation weaken ordinary father comparisons, allowing apparent absence to function as preparation rather than abandonment.",
+              "score": 77,
+              "critique": "Strongest feature: Jones qualifies both fatherhood moves through three disanalogies, arguing that God sees death within eternity, fallen humans may misuse manifest power, and God may continue drawing nonresistant people after death, so apparent absence can serve loving formation. Principal limitation: The Inception comparison and postmortem possibility have limited warrant, and the excerpt never establishes that eternal perspective, fallen agency, or continued formation preserves recognizable fatherly love rather than shielding troubling conduct from ordinary evaluation. Live burden: Jones must connect eternal goods and fallen motives proportionately to nonresistant people’s opacity, while supporting continued opportunity from the debate’s Christian materials. Locked score: Seventy-seven preserves strongest responsiveness and relevance, middling calibration, coherence, and clarity, and weakest warrant across six dimensions, rewarding contact with both replies while marking the defense incomplete.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "fatherly-love-analogy-cannot-invert-love",
+              "time": "52:43",
+              "role": "Direct reply",
+              "words": "Creator-creature differences cannot transform conduct deemed unloving in human fathers into divine love, because biblical commands to imitate God require stable analogical content.",
+              "score": 86,
+              "critique": "Strongest feature: Vela grants legitimate creator-creature differences and rejects inflammatory characterization before arguing that analogical love cannot reverse its evaluative content, producing exceptionally charitable, precise, and decisive contact with Jones’s sanctification and right-motive defenses. Principal limitation: The argument powerfully protects semantic continuity but does not independently determine how much presence divine fatherhood requires, because qualified analogies can preserve love’s core while permitting materially different parental methods and timescales. Live burden: He must convert the anti-inversion principle into a positive threshold for availability and demonstrate that Jones’s eternal or formative qualifications cross from permissible difference into recognizable abandonment. Locked score: Eighty-six reflects the section’s strongest logical coherence, responsiveness, relevance, precision, and calibration, with the comparatively lower evidential warrant and unresolved threshold question preventing an even higher evaluation.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "sanctification-motives-and-evidence",
+        "title": "Sanctification, Motives, and Evidence",
+        "timebox": "20%",
+        "score": {
+          "pro": 84,
+          "con": 76
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "sanctification-defense-starts-after-avoidable-fall",
+              "time": "27:59",
+              "role": "Direct reply",
+              "words": "Even if manifestation cannot guarantee proper relationship, God could have prevented fallen conditions requiring remedial hiddenness without eliminating freedom, robust belief, or responsible support.",
+              "score": 83,
+              "critique": "Strongest feature: Vela concedes that manifestation does not guarantee relationship, then relocates evaluation to God’s alleged responsibility for avoidable fallen conditions, combining charitable engagement with decisive replies to both sanctification and right-motive reasoning. Principal limitation: The possible-world claim assumes that freedom, robust belief, and prevention of the fall are jointly feasible without fully defending that conjunction, while its movement toward world design broadens beyond hiddenness’s immediate explanatory domain. Live burden: He must establish the feasibility of an unfallen yet significantly free order and explain why an internal hiddenness critique may legitimately assess the upstream conditions invoked to make concealment necessary. Locked score: Eighty-three reflects excellent responsiveness, strong coherence, burden relevance, clarity, and calibration, moderated by comparatively limited warrant for the proposed world and an unresolved scope objection.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "He says he sees no reason freedom and robust belief could not persist if God had prevented the fall."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "right-motive-cognitively-robust-theism",
+              "time": "18:25",
+              "role": "Constructive",
+              "words": "God may withhold evidence yielding only bare assent because perfect love seeks morally transformative, rightly motivated theism, while psychologically mixed motives complicate claims of nonresistance.",
+              "score": 76,
+              "critique": "Strongest feature: Jones supplies a principled divine aim beyond mere belief, linking right motives and moral transformation to calibrated evidence while identifying the psychologically demanding nonresistance premise that Vela’s challenge ultimately requires. Principal limitation: The move offers limited evidence that increased disclosure actually produces wrong-motive theism, and its sweeping suspicion about human emotional mixtures threatens to collapse meaningful nonresistance into an inaccessible psychological category. Live burden: He must distinguish evidence that supports honest recognition from evidence that distorts motivation, specify how omniscient calibration operates, and permit credible criteria by which sincere nonresistance could ever be established. Locked score: Seventy-six reflects strong relevance and useful responsiveness but only moderate coherence and precision, comparatively weak evidential warrant, and notably reduced charitable calibration in treating nonresistant belief as psychologically doubtful.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "universal-revelation-would-strengthen-resurrection-evidence",
+              "time": "1:11:23",
+              "role": "Direct reply",
+              "words": "If resurrection testimony rationally supports Christianity, periodic universal manifestations would strengthen robust belief and salvation without compelling love, exposing tension in Jones’s evidence defense.",
+              "score": 85,
+              "critique": "Strongest feature: Vela applies Christianity’s reliance on resurrection evidence as a consistency test and offers periodic, independently corroborated manifestation as a concrete alternative, generating exceptional responsiveness, burden relevance, clarity, and logical pressure against blanket evidential restraint. Principal limitation: The hypothetical predicts stronger belief and salvation without fully analyzing how universal manifestations might alter motives, institutional incentives, dependency, or the distinctive evidential significance Jones assigns to calibrated disclosure. Live burden: He must show that the proposed revelation would remain noncoercive and spiritually constructive across heterogeneous agents, while explaining why its expected gains outweigh any right-motive costs acknowledged elsewhere. Locked score: Eighty-five rewards the debate’s sharpest evidential comparison, decisive reply contact, coherent inference, and concrete alternative, with lower warrant than responsiveness and remaining behavioral uncertainty appropriately limiting the score.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "world-design-objection-relocates-to-suffering",
+              "time": "30:36",
+              "role": "Direct reply",
+              "words": "Vela’s avoidable-world objection shifts into suffering rather than hiddenness, while contrary personal experiences cannot alone defeat hiddenness’s internal sanctification role within Christianity’s fallen world.",
+              "score": 68,
+              "critique": "Strongest feature: Jones distinguishes hiddenness within Christianity’s fallen world from why that world exists, classifying the design objection as a problem of evil, while comparing personal reports of revelation and absence, offering a symmetry reply to the seeking apostate. Principal limitation: Calling avoidable fallen conditions a different problem does not answer Vela’s charge that sanctification depends on them, while treating contrary experiences alike overlooks their argumentative roles and cumulative consequences. Live burden: Jones must justify holding background conditions fixed for internal coherence and show why absence supplies no evidence beyond private justification when salvation and fatherly availability remain disputed. Locked score: Sixty-eight preserves strongest precision, middling coherence, responsiveness, and relevance, weaker calibration, and weakest warrant across six dimensions, because classification replaces engagement and experiential symmetry remains insufficiently defended.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "He labels avoidable fallen conditions a different problem of evil without answering their role in his hiddenness defense."
+                }
+              ]
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "more-evidence-can-entrench-wrong-motives",
+              "time": "1:14:06",
+              "role": "Direct reply",
+              "words": "Miracles can be reinterpreted through resistant commitments or exploited instrumentally, so omniscient individualized disclosure may foster robust theism better than universally increased evidence.",
+              "score": 82,
+              "critique": "Strongest feature: Jones answers Vela’s universal-revelation proposal with varied examples of agents reinterpreting miracles, exploiting religious authority, or becoming dependent, thereby supplying concrete mechanisms through which more evidence can entrench defective motives. Principal limitation: The examples show that additional evidence sometimes fails, not that calibrated hiddenness better serves every sincere seeker, and several analogies concern already resistant communities rather than people experiencing unwanted nonbelief. Live burden: He must justify the move from heterogeneous failures to individualized divine withholding, explain how omniscience selects proportionate disclosure, and address Vela’s narrower proposal for less rather than exhaustive revelation. Locked score: Eighty-two rewards strong responsiveness, logical development, relevant counterexamples, and careful acknowledgment that individuals differ, while moderate evidence, some diffuse presentation, and incomplete contact with nonresistant cases constrain the defense.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "suffering-soul-formation-and-triumphant-good",
+        "title": "Suffering, Soul Formation, and Triumphant Good",
+        "timebox": "20%",
+        "score": {
+          "pro": 82,
+          "con": 74
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "hiddenness-and-suffering-bump-in-rug",
+              "time": "31:52",
+              "role": "Direct reply",
+              "words": "Explaining hiddenness through fallen suffering merely relocates the difficulty unless suffering’s necessity and proportionality are established, leaving perfect love’s world-design burden unanswered.",
+              "score": 82,
+              "critique": "Strongest feature: Vela exposes the explanatory dependence between Jones’s sanctification defense and the suffering conditions that supposedly necessitate it, preventing a scope boundary from concealing the unresolved perfect-love burden behind a separate label. Principal limitation: The relocation criticism identifies an unfinished explanation but provides limited positive warrant that no proportionate soul-forming rationale exists, and it risks expanding one debate into a complete account of evil. Live burden: He must show that hiddenness and suffering are sufficiently integrated for the upstream challenge to remain motion-relevant, then compare Jones’s proposed formative goods against feasible, less harmful alternatives. Locked score: Eighty-two reflects excellent responsiveness, strong coherence, clear burden tracking, and careful framing, while modest evidential development and an incompletely specified proportionality standard keep the objection forceful but not decisive.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "triumphant-good-requires-evil-overcome",
+              "time": "33:44",
+              "role": "Direct reply",
+              "words": "Real evil permits the distinctive good of freely overcoming adversity, allowing suffering and qualified hiddenness to become instruments of sanctification rather than pointless divine abandonment.",
+              "score": 70,
+              "critique": "Strongest feature: Jones answers the challenged conditions by arguing that real evil and suffering enable triumphant good, while overcome suffering can become part of sanctification rather than unexplained damage, contacting both hiddenness-and-suffering and avoidable-fall objections. Principal limitation: Choosing stories about triumph does not establish that suffering or divine hiddenness is necessary or proportionate, and he compares neither milder adversity nor alternative formative histories and leaves harms’ distribution undefended. Live burden: He must show that triumphant good is sufficiently valuable, unavailable through less harmful means, fairly distributed, and specifically connected to divine concealment rather than suffering generally. Locked score: Seventy reflects strong responsiveness and relevance, but weaker logical development, evidential warrant, precision about proportionality, and calibration leave a recognizable good without the comparative defense required to justify these conditions.",
+              "tags": [
+                {
+                  "label": "Belief bias",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/belief-bias/",
+                  "context": "People prefer stories where good triumphs over evil, so he concludes a world containing evil is maximally good."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "god-could-have-created-agents-with-faces",
+              "time": "1:00:02",
+              "role": "Direct reply",
+              "words": "If present agents require painful formation to perceive God, God could instead create free righteous agents already capable of relationship, avoiding the broken conditions Jones invokes.",
+              "score": 81,
+              "critique": "Strongest feature: Vela turns Jones’s face and formation imagery into a possible-world challenge, arguing that image-bearers need not resemble an evil creator’s beings and asking why God could not create free, righteous agents already capable of divine relationship, avoiding broken conditions and remedial suffering. Principal limitation: Claiming such worlds logically possible or feasible does not establish creaturely freedom, authentic virtue, equivalent relational history, or preserved goods of struggle, while the broken-code imagery sometimes replaces a developed account of created character. Live burden: He must explain how righteous agents retain meaningful freedom and virtue, preserve Jones’s goods, and remain available under the Christian premises examined. Locked score: Eighty-one rewards responsiveness, relevance, coherent counterfactual pressure, clarity, and charitable calibration, while limited modal warrant and underdeveloped earned-character comparisons constrain the objection.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "earned-virtue-requires-formative-process",
+              "time": "1:02:55",
+              "role": "Direct reply",
+              "words": "Installed virtue lacks the authentic history of freely formed character, whereas struggle can generate robust theism and triumphant good even though divine presence permits rebellion.",
+              "score": 78,
+              "critique": "Strongest feature: Jones distinguishes installed righteousness from virtue acquired through free history, answers Vela’s proposed righteous agents, notes that manifest divine presence does not guarantee loyalty, and links formation to robust theism and triumphant good. Principal limitation: His examples of rebellion establish compatibility with freedom, not hiddenness’s necessity, while he assumes rather than demonstrates that earned character is better than created righteousness to justify severe struggle and suffering. Live burden: He must define authentic earned character, show why God could not create agents freely developing it under clearer relational conditions, and establish that formative goods require proportionate opacity and suffering. Locked score: Seventy-eight reflects strong responsiveness, burden relevance, and logical organization, plus respectable precision and calibration, but weaker evidential warrant and incomplete comparative justification prevent a conclusive defense.",
+              "tags": [
+                {
+                  "label": "Belief bias",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/belief-bias/",
+                  "context": "He calls process-formed virtue authentic, grassroots, unique, and cool without establishing its superiority over created righteousness."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "salvation-nonbelief-and-judgment",
+        "title": "Salvation, Nonbelief, and Judgment",
+        "timebox": "15%",
+        "score": {
+          "pro": 83,
+          "con": 82
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "seeking-apostate-left-without-presence",
+              "time": "12:44",
+              "role": "Constructive",
+              "words": "Vela presents prolonged sincere seeking followed by experienced divine absence and apostasy, making easy reassurance and potentially grave salvation consequences central burdens for perfect love.",
+              "score": 83,
+              "critique": "Strongest feature: Vela supplies the debate’s concrete case of apparently nonresistant loss, connecting prolonged seeking, experienced silence, apostasy, and possible eschatological consequences directly to Christianity’s claim of loving redemptive relationship. Principal limitation: Personal testimony strongly illustrates the challenge but cannot alone verify complete nonresistance, establish the absence of every indirect divine response, or determine the disputed theology of final judgment. Live burden: He must support the reliability and representativeness of sincere-seeker evidence while showing that a perfectly loving God had easy, noncoercive means of reassurance whose omission foreseeably endangered relationship. Locked score: Eighty-three reflects exceptional motion relevance, responsiveness, clarity, and substantial experiential warrant, moderated by unavoidable first-person evidential limits and unresolved inferences concerning divine action, inner motives, and salvation.",
+              "tags": [
+                {
+                  "label": "Subjective validation",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/subjective-validation/",
+                  "context": "His decades of prayer, ministry, and scripture study followed by experienced silence are treated as evidence of nonresistant divine absence."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "just-judgment-accommodates-excusable-nonbelief",
+              "time": "24:16",
+              "role": "Constructive",
+              "words": "Christian judgment can account for available knowledge, excuse genuine nonresistance, and permit continued saving opportunity, so hiddenness need not condemn sincere seekers unjustly.",
+              "score": 81,
+              "critique": "Strongest feature: Jones separates hiddenness from unjust damnation by grounding judgment in available knowledge, allowing genuine excuses, and preserving possible saving opportunity, directly addressing the gravest consequence in Vela’s personal case. Principal limitation: The scriptural interpretation and postmortem possibility remain insufficiently specified, while avoiding condemnation does not itself answer the antecedent relational complaint that perfect love permits sincere seekers to experience abandonment. Live burden: He must establish the textual and theological basis for continued opportunity, clarify who qualifies as excusable, and explain why delayed relationship remains loving even when eventual judgment is just. Locked score: Eighty-one rewards strong relevance, responsiveness, comparatively substantial warrant, and charitable accommodation of genuine nonresistance, but moderate precision and incomplete contact with present relational loss limit the defense’s reach.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "soul-building-leaves-collateral-unsanctified",
+              "time": "38:25",
+              "role": "Direct reply",
+              "words": "Soul-building cannot justify hiddenness while billions remain unformed or lost, particularly when broader revelation might reduce nonbelief without compelling love or corrupting motives.",
+              "score": 82,
+              "critique": "Strongest feature: Vela scales the objection from one seeker to extensive collateral exclusion, presses whether soul-building reaches those who die without its benefits, and reconnects the challenge to less-hidden alternatives that preserve freedom. Principal limitation: The population claim and projected salvation effects receive limited transcript warrant, while the objection partly assumes that Jones’s theology condemns or permanently excludes people whom his judgment account explicitly treats as potentially excusable. Live burden: He must establish the scope of unsanctified loss, defeat the proposed postmortem opportunity, and show that broader revelation would improve formation without producing the motivational distortions Jones identifies. Locked score: Eighty-two reflects strong coherence, excellent responsiveness, high relevance, and clear comparative pressure, tempered by weaker evidential support and unresolved theological assumptions about judgment, salvation, and alternative disclosure.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "excusable-nonbelief-is-not-condemned",
+              "time": "42:20",
+              "role": "Direct reply",
+              "words": "Nonresistant people lacking adequate evidence possess an excuse and need not be condemned as knowing rejecters, preventing hiddenness from entailing unjust salvation loss.",
+              "score": 83,
+              "critique": "Strongest feature: Jones gives his clearest direct answer to Vela’s salvation concern by distinguishing honest evidential rejection from knowing rebellion and tying culpability to available knowledge rather than mere nonbelief. Principal limitation: The move successfully blocks an inference to condemnation but leaves experienced relational deprivation untouched, and the cited principles do not fully specify salvation, postmortem opportunity, or the treatment of every sincere apostate. Live burden: He must show that excuse entails adequate redemptive provision rather than only reduced guilt and explain how perfect love remains relationally available before any final judgment occurs. Locked score: Eighty-three reflects excellent responsiveness, strong relevance, good coherence, substantial scriptural warrant, and unusually charitable treatment of nonresistance, while residual precision and consequence gaps prevent the reply from resolving the broader hiddenness objection.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "audience-clarifications-on-hiddenness",
+        "title": "Audience Clarifications on Hiddenness",
+        "timebox": "10%",
+        "score": {
+          "pro": 83,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "less-hidden-not-fully-disclosed",
+              "time": "1:33:23",
+              "role": "Direct reply",
+              "words": "The critique requires neither exhaustive revelation nor irresistible proof, only modest reductions in hiddenness that better promote divine love, salvation, and soul formation.",
+              "score": 83,
+              "critique": "Strongest feature: Vela precisely narrows his proposal from exhaustive disclosure to modestly reduced hiddenness, directly answering Jones’s strongest resistance examples while preserving freedom and aligning the alternative with Christianity’s own relational and salvific purposes. Principal limitation: The negative clarification is sharper than the positive policy because neither the degree, frequency, nor distribution of lesser disclosure is operationalized, and its predicted improvement remains insufficiently demonstrated. Live burden: He must identify a feasible revelation pattern, explain why it would outperform individualized calibration across differing motives, and show that it would preserve the soul-forming goods granted for argument. Locked score: Eighty-three reflects exceptional responsiveness and charitable calibration, strong coherence, relevance, and precision, with the notably lower evidential warrant and underspecified alternative correctly limiting its otherwise persuasive narrowing.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "human-motives-are-individual-and-complex",
+              "time": "1:44:35",
+              "role": "Direct reply",
+              "words": "Because agents possess complex and partly opaque motives, resistant rebellion and excusable nonresistance require individualized disclosure rather than Vela’s universal evidential prescription.",
+              "score": 77,
+              "critique": "Strongest feature: Jones refuses to reduce every unbeliever to rebellion, distinguishes excusable nonresistance from resistance, and uses individual psychological complexity to challenge Vela’s proposed general rule for lesser divine disclosure. Principal limitation: Complexity establishes uncertainty but does not positively show that existing hiddenness is optimally individualized, and anecdotal introspection cannot support confident claims about other seekers or divine providential calibration. Live burden: He must provide a principled connection between opaque motives and differentiated revelation, explain how the view remains testable, and address modest universal measures that need not ignore individual variation. Locked score: Seventy-seven reflects strong charity, respectable clarity, and relevant responsiveness, but lower coherence and evidential warrant, together with only partial contact against Vela’s narrowed alternative, leave the providential conclusion under-supported.",
+              "tags": [
+                {
+                  "label": "Subjective validation",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/subjective-validation/",
+                  "context": "He projects his retrospective recognition of youthful narcissism onto other seekers whose professed reasons may supposedly conceal selfish motives."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 83,
+        "strengths": [
+          "The motion-level case connects essential divine love and desired redemptive relationship directly to expected availability, making hiddenness a specifically Christian internal problem rather than a generic objection.",
+          "Vela’s strongest fatherhood reply grants creator-creature differences yet preserves stable analogical meaning, sharply preventing alleged divine love from becoming discontinuous with the love Christians are commanded to imitate.",
+          "His resurrection comparison offers a concrete consistency test: evidence welcomed as support for Christianity should not become spiritually objectionable merely when broader manifestations would strengthen belief.",
+          "The less-hidden clarification narrows his burden intelligently, requiring modest relational improvement rather than exhaustive revelation and thereby preserving freedom while pressuring Jones’s strongest wrong-motive examples."
+        ],
+        "blunders": [
+          {
+            "text": "The father analogy never yields a sufficiently operational threshold of divine availability, allowing Jones to accept analogical continuity while disputing whether eternal, indirect, or formative presence resembles human parenting.",
+            "links": []
+          },
+          {
+            "text": "Possible unfallen worlds and already righteous agents are treated as jointly feasible with meaningful freedom, although Vela does not establish that installed character preserves the historical goods Jones values.",
+            "links": [
+              {
+                "label": "Argument from ignorance",
+                "url": "https://logfall.com/fallacies/argument-from-ignorance/"
+              }
+            ]
+          },
+          {
+            "text": "Population-scale collateral loss receives limited packet support and sometimes assumes condemnation, even though Jones explicitly distinguishes excusable nonbelief from culpable rejection and proposes continued saving possibility.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 78,
+        "strengths": [
+          "Jones consistently distinguishes bare assent from morally transformative, rightly motivated relationship, giving calibrated hiddenness a positive sanctification purpose instead of defending divine absence as intrinsically valuable.",
+          "His historical manifestation examples directly challenge any simple inference from greater visibility to agape, because overt divine action can coexist with exploitation, rebellion, institutional resistance, and violence.",
+          "The judgment defense charitably grants possible nonresistance and separates honest evidential rejection from culpable rebellion, substantially weakening Vela’s inference from hiddenness to inevitable unjust condemnation.",
+          "His earned-virtue reply identifies a genuine comparative good that Vela’s created-righteousness alternative neglects: freely formed character possesses a history that merely installed dispositions may lack."
+        ],
+        "blunders": [
+          {
+            "text": "The world-design response largely classifies Vela’s objection as a suffering problem without answering why avoidable background conditions may legitimately support an internal justification of hiddenness.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          },
+          {
+            "text": "Triumphant good is asserted without demonstrating that actual suffering is necessary, proportionate, fairly distributed, or unavailable through milder conditions, producing Jones’s weakest evidential and logical profile.",
+            "links": [
+              {
+                "label": "Belief bias",
+                "url": "https://cogbias.site/biases/belief-bias/"
+              }
+            ]
+          },
+          {
+            "text": "Appeals to complex motives support epistemic caution but do not establish that current hiddenness is individually calibrated, creating a difficult gap between psychological opacity and providential optimization.",
+            "links": [
+              {
+                "label": "Subjective validation",
+                "url": "https://cogbias.site/biases/subjective-validation/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "label": "AI-generated extension; not transcript content or wording attributable to either speaker.",
+      "pro": {
+        "finalArgument": {
+          "thesis": "Perfect Christian love creates a defeasible expectation of recognizable relational availability, and persistent hiddenness conflicts with that expectation when modestly clearer alternatives would preserve freedom and formation.",
+          "premises": [
+            "Christianity presents God as essentially loving and seeking redemptive relationship, so recognizable divine availability is not optional evidence external to the worldview, but part of its own relational commitment.",
+            "Recognizable awareness of another person does not compel love, loyalty, or obedience, so clearer divine evidence can preserve morally significant freedom and right-motive transformation while reducing prolonged absence, apostasy, and possible salvation risk for sincere seekers.",
+            "Jones’s sanctification and soul-formation rationales begin within damaged conditions whose necessity remains disputed, and they do not show that comparable goods require either hiddenness itself or its observed degree.",
+            "Periodic or modestly broader corroborated revelation could strengthen robust belief without exhaustive disclosure, preserving freedom and formation, so the defense must explain why this more relationally inclusive alternative is infeasible.",
+            "When divine policy creates grave relational risks, perfect love should prefer an equally freedom-preserving policy with fewer predictable failures unless some distinctive good requires opacity, yet the defense does not establish existing hiddenness as necessary or better."
+          ],
+          "conclusion": "Because the defense does not establish that existing hiddenness is necessary or better than modestly clearer alternatives, observed relational absence remains in tension with Christianity’s perfect-love claim."
+        },
+        "newArguments": [
+          {
+            "title": "Reciprocal-address condition",
+            "text": "A redemptive relationship requires more than objectively available clues because the intended person must reasonably recognize that a personal address is occurring. Ambiguous evidence may permit generic theism while failing to communicate invitation, concern, or responsiveness. Perfect love would therefore calibrate revelation not merely to avoid coercion but to secure minimally recognizable reciprocal address for willing seekers. This principle strengthens the critique without demanding universal certainty, since it requires only enough personal intelligibility for a sincere person to understand that relationship is genuinely being offered."
+          },
+          {
+            "title": "Correctable-distribution argument",
+            "text": "Even if hiddenness benefits some resistant or dependent agents, individualized providence creates a reason for greater disclosure to people for whom ambiguity instead causes unwanted estrangement. An omniscient God would know which seekers require reassurance and which would misuse it, while omnipotence supplies varied, noncoercive means of response. Consequently, heterogeneous motives weaken a uniform hiddenness defense unless the observed distribution tracks those differences. The remaining burden is not to prove that every person needs maximal evidence, but to explain persistent nonbelief among precisely those agents allegedly receptive to relationship."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "Perfect love can permit calibrated hiddenness when unmistakable manifestation would predictably distort motives, bypass formative goods, or fail to produce the freely sanctified relationship Christianity values.",
+          "premises": [
+            "The divine aim is not mere acknowledgment but morally transformative relationship, and the manifestation examples show that abundant awareness can coexist with exploitation, rebellion, and violence rather than automatically producing greater loving communion.",
+            "Human motives differ and remain partly opaque even to agents themselves, allowing additional evidence to become dependency, institutional resistance, strategic allegiance, or reinterpretation through prior commitments instead of freely sanctified relationship.",
+            "Struggle can contribute distinctive goods, including freely formed character and triumphant good, that differ meaningfully from dispositions installed without an authentic history of responsible development and therefore may justify calibrated hiddenness.",
+            "Just judgment can distinguish excusable nonbelief from knowing rejection, so honest evidential limitation need not bring condemnation or irreversible redemptive exclusion when disclosure is calibrated to available knowledge and sufficient opportunity.",
+            "Perfect love may vary revelation’s timing, intensity, and form by person, seeking eventual relationship rather than identical evidence or immediate recognition, while individualized, formative disclosure remains compatible with perfect love despite unresolved experiences of absence."
+          ],
+          "conclusion": "If disclosure can be individualized, formative, and joined to judgment according to available knowledge, divine hiddenness remains compatible with perfect love despite unresolved cases of experienced absence."
+        },
+        "newArguments": [
+          {
+            "title": "Developmental sequencing defense",
+            "text": "Relational goods may depend not only upon how much evidence a person receives but upon when that evidence arrives within a developing moral history. Immediate unmistakability could prematurely settle a practical question whose honest pursuit cultivates humility, self-knowledge, and responsibility, while later clarification could preserve eventual relationship. A perfectly loving God might therefore sequence evidence rather than permanently withhold it. This defense gains force if hiddenness is understood as temporary pedagogical timing coupled with reliable future opportunity, not as indefinite abandonment or universal evidential scarcity."
+          },
+          {
+            "title": "Noncondemnatory risk allocation",
+            "text": "Any revelation policy risks different relational failures: excessive clarity may encourage strategic compliance or dependency, while restraint may delay recognition among sincere seekers. If divine judgment excuses honest nonbelief and continued opportunity remains available, the ultimate cost of delayed recognition can be limited without eliminating the formative benefits of calibrated evidence. Perfect love could then accept temporary epistemic risk while refusing final injustice. The defense must still explain present suffering, but compatibility no longer requires every willing person to achieve explicit belief on an identical earthly timetable."
+          }
+        ]
+      }
+    }
   }
 
 ];

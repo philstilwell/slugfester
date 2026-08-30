@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "208",
+  "debateId": "vela-jones-divine-hiddenness-christian-love-2023",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "fatherly-love-analogy-cannot-invert-love:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "fatherly-love-analogy-cannot-invert-love",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "Vela allows that divine love need not look identical to human fatherhood while insisting that some positive continuity remain."
+        },
+        "option-b": {
+          "value": 91,
+          "rationale": "Vela disclaims inflammatory deadbeat-father rhetoric and expressly accepts legitimate creator-creature differences before pressing the narrower semantic objection."
+        }
+      }
+    },
+    {
+      "disputeId": "eternal-perspective-and-fallen-agents-change-father-analogy:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "eternal-perspective-and-fallen-agents-change-father-analogy",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "less-hidden-not-fully-disclosed:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "less-hidden-not-fully-disclosed",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "The negative clarification is precise, although less hidden and accomplish those ends better still need operational detail."
+        },
+        "option-b": {
+          "value": 91,
+          "rationale": "Vela clearly distinguishes total disclosure from incremental reduction in hiddenness and names love, salvation, and soul-building as comparison criteria."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence warrants an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No named burden has a distinct completion change beyond the locked move ratings and response structure.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "section weights",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion independently of the existing scoring mechanisms."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence independently changes completion of a named pro burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists beyond the locked moves, burden contacts, and response structure.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence outside the move-level argumentative record was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden contacts",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not alter burden completion independently of the recorded move ratings."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence warrants an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No named burden has a distinct completion change beyond the locked move ratings and response structure.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "section weights",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion independently of the existing scoring mechanisms."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence independently changes completion of a named con burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists beyond the locked moves, burden contacts, and response structure.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence outside the move-level argumentative record was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden contacts",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not alter burden completion independently of the recorded move ratings."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 20,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

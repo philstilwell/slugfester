@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-five-field-disjoint-shards",
+  "debateNumber": "208",
+  "debateId": "vela-jones-divine-hiddenness-christian-love-2023",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/preserved-invalid-output-1.json",
+    "sha256": "d3f4cdc1aa93b69f7a1685e41f73df0c3c277f4084ff299e519fdec7d5c01a9a",
+    "bytes": 45442
+  },
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/output.json",
+    "sha256": "5acbc452528ea0f7251719bd66cdd7e75f3cfb5dc648d74f3dcd55fd8155329e",
+    "bytes": 51594
+  },
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].pro.critique",
+        "candidate.sections[0].exchanges[0].con.critique"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/repair-1/execution.json",
+        "sha256": "58d0ebee11c85f4376410036bb8f8e17162bd40408ff15565e909e8167e0de0f",
+        "bytes": 2059
+      }
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[1].exchanges[0].con.critique",
+        "candidate.sections[2].exchanges[1].con.critique"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/repair-2/execution.json",
+        "sha256": "1307ab10ecaa1986f54180f800ec19a4a9fdd9c3729c5a3088d2d8397637e03d",
+        "bytes": 1762
+      }
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.sections[3].exchanges[0].con.critique",
+        "candidate.sections[3].exchanges[1].pro.critique"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/repair-3/execution.json",
+        "sha256": "d9d8767f25df5132cf4a2eae969620022bcd4830b2ab8336576900f5f32d04a9",
+        "bytes": 1762
+      }
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.sections[3].exchanges[1].con.critique",
+        "candidate.logicalExtension.pro.finalArgument.premises"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/repair-4/execution.json",
+        "sha256": "8254c381d51c10bc84ea5b0aa28670477f623a59c91ba496f39888133c12440e",
+        "bytes": 1773
+      }
+    },
+    {
+      "shardId": "shard-5",
+      "writableFields": [
+        "candidate.logicalExtension.con.finalArgument.premises"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-208/publication/repair-5/execution.json",
+        "sha256": "46d060de31a15bc10240abdc316687a13d677fa21f3aec7d3bedf59832cc4d6c",
+        "bytes": 1663
+      }
+    }
+  ],
+  "changedLeafRoots": [
+    "candidate.sections[0].exchanges[0].pro.critique",
+    "candidate.sections[0].exchanges[0].con.critique",
+    "candidate.sections[1].exchanges[0].con.critique",
+    "candidate.sections[2].exchanges[1].con.critique",
+    "candidate.sections[3].exchanges[0].con.critique",
+    "candidate.sections[3].exchanges[1].pro.critique",
+    "candidate.sections[3].exchanges[1].con.critique",
+    "candidate.logicalExtension.pro.finalArgument.premises",
+    "candidate.logicalExtension.con.finalArgument.premises"
+  ],
+  "allShardsWithinTwoFieldLimit": true,
+  "allShardsSingleAttempt": true,
+  "assessmentSubstanceChanged": false,
+  "scoresChanged": false
+}

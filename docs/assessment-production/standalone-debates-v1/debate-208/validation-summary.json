@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "208",
+  "debateId": "vela-jones-divine-hiddenness-christian-love-2023",
+  "completedAt": "2026-08-30T08:47:42.066Z",
+  "source": {
+    "videoId": "PZZkFfvfHb0",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 27299,
+    "events": 3491,
+    "transcriptSha256": "ffab2a5827337e31be133242e8d88afd9510038ffb7e3a6917213f7e424ad663",
+    "eventsSha256": "e072d20b3d49c0c005a614e42d2d0e9dc303f0f3ec5d40b81eaf8efcb2fe92b0",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 20,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 5,
+    "adjudicatedDisputes": 5,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 83,
+      "con": 78,
+      "winner": "pro",
+      "margin": 5
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "argumentCards": 20,
+    "uniqueLockedMovesMapped": 20,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "f19bdc37b95824988b32f421bbf96eab2c04841a5575271868db72266b25fab6",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-208/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.8,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 119,
+      "mean": 126.3,
+      "maximum": 130
+    },
+    "critiqueCharacterRange": [
+      984,
+      1082
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "minimum": 25,
+      "mean": 26.5,
+      "maximum": 29
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-208/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 20,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 260,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 26,
+    "acceptedRhetoricalTags": 6,
+    "acceptedFallacyTags": 2,
+    "acceptedBiasTags": 4,
+    "biasCandidatesExplicitlyRejected": 9,
+    "rejectedRhetoricalTagCandidates": 20,
+    "overruledOverbroadAdjudicatorAcceptances": 0,
+    "restoredAdjudicatorRejections": 0,
+    "aiContributionWords": 796,
+    "aiContributionCommas": 49,
+    "aiContributionPunctuationAudit": "docs/assessment-production/standalone-debates-v1/debate-208/publication/ai-contribution-punctuation-audit.json"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-208/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 6,
+    "desktopEvidenceSha256": "5c6d7c550612218067938b479694d10e726e7db582eab2b9b2e73f6d9a5e9723",
+    "mobileEvidenceSha256": "f0a393e230230b777550f254ee8f45d027b84442e9c455d6f034b905ed41a28c"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "208 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "398 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "20 moves; description mean 23.8 words; critique mean 126.3 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "20 moves reviewed against 13 definitions in 2 blind passes; 26 candidates adjudicated; 2 fallacies and 4 biases accepted"
+    },
+    {
+      "name": "AI contribution punctuation review",
+      "status": "passed",
+      "result": "18 reader-facing fields reviewed; no punctuation repair required"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "20 populated cards and 6 accepted tags at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 208 with and without --repository-only",
+      "status": "passed",
+      "result": "20 moves; 6 sections; 5 disputes; 0 audio checks; score stability mean 0.25, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "208 of 208 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInvalidInventoryAttempts": 1,
+    "deterministicInventoryBookkeepingRepairs": 1,
+    "audioSpanCorrectionsBeforeJudgment": 0,
+    "rejectedPublicationDrafts": 1,
+    "atomicPublicationRepairFields": 9,
+    "transportRetries": 0,
+    "overbroadRhetoricalAcceptancesOverruled": 0,
+    "rhetoricalRejectionDecisionsRestored": 0,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 10,
+    "con": 10,
+    "disposition": "All twenty frozen moves are mapped exactly once, with ten source-selected moves for each side; no move was deleted, merged, or added to force the balance."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}
