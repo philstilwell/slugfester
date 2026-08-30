@@ -386,13 +386,22 @@ a {
 }
 
 .landing-topic-link {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 9px;
+  display: grid;
+  gap: 4px;
   margin-top: 14px;
   color: var(--muted);
   font-size: 0.84rem;
   font-weight: 700;
+}
+
+.landing-topic-browse {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 9px;
+}
+
+.landing-topic-link p {
+  margin: 0;
 }
 
 .landing-topic-link a {
@@ -2455,7 +2464,7 @@ a {
 .backend-summary-stats article {
   display: grid;
   gap: 8px;
-  padding: clamp(22px, 4vw, 30px);
+  padding: clamp(14px, 2.2vw, 18px) clamp(22px, 4vw, 30px);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(255, 250, 233, 0.92));
   border: 1px solid rgba(38, 91, 105, 0.18);
   border-left: 5px solid var(--gold);
@@ -2482,6 +2491,11 @@ a {
   color: #4b6268;
   font-size: 0.82rem;
   line-height: 1.45;
+}
+
+.backend-summary-stats .backend-summary-stat-note {
+  padding-top: 8px;
+  border-top: 1px solid rgba(38, 91, 105, 0.16);
 }
 
 .backend-objectivity-accordion {

@@ -489,8 +489,11 @@ function renderLanding() {
             <div><dt>Topic clusters</dt><dd>${topicCount}</dd></div>
           </dl>
           <div class="landing-topic-link">
-            <span>Looking for a subject?</span>
-            <a href="${topicsPath()}">Browse all debates by topic</a>
+            <div class="landing-topic-browse">
+              <span>Looking for a subject?</span>
+              <a href="${topicsPath()}">Browse all debates by topic</a>
+            </div>
+            <p>We plan to add new debate assessments every month.</p>
           </div>
         </div>
         <figure class="logo-showcase">
@@ -2016,6 +2019,7 @@ function renderBackend() {
               <span>Recorded model work</span>
               <strong>≈83 hr</strong>
               <p>conservative aggregate compute estimate for the completed reassessment campaign</p>
+              <p class="backend-summary-stat-note">New debates require about 1.5 hours each to process and add.</p>
             </article>
           </div>
         </div>
