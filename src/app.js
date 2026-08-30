@@ -2585,6 +2585,8 @@ function renderDebateObject(
         ${renderSideHeading(debate.sides.con, "coral")}
       </section>
 
+      ${renderDebateScoreProfileGrid(debate)}
+
       ${debate.sections.map((section) => renderSection(section, debate)).join("")}
       ${renderOverall(debate)}
       ${renderLogicalExtension(debate)}
@@ -2670,17 +2672,6 @@ function renderScoringNote(debate) {
 function renderQuoteCards(debate) {
   if (!debate.quotes) return "";
 
-  const profilesByName = new Map(
-    rankedInterlocutors({ topic: "all", minimum: 1, sort: "name" }).map((person) => [person.name, person])
-  );
-  const proHistories = debateScoreHistoriesForSide(debate.sides.pro, profilesByName);
-  const conHistories = debateScoreHistoriesForSide(debate.sides.con, profilesByName);
-  const maximumBandCount = Math.max(
-    1,
-    ...[...proHistories, ...conHistories]
-      .map((history) => history.distribution?.maximumBandCount || 0)
-  );
-
   return `
     <section class="quote-panel" aria-label="Position quotes">
       <div class="quote-panel-head">
@@ -2690,9 +2681,33 @@ function renderQuoteCards(debate) {
         </div>
       </div>
       <div class="quote-grid">
-        ${renderQuoteCard(debate.sides.pro, debate.quotes.pro, "teal", proHistories, maximumBandCount)}
-        ${renderQuoteCard(debate.sides.con, debate.quotes.con, "coral", conHistories, maximumBandCount)}
+        ${renderQuoteCard(debate.sides.pro, debate.quotes.pro, "teal")}
+        ${renderQuoteCard(debate.sides.con, debate.quotes.con, "coral")}
       </div>
+    </section>
+  `;
+}
+
+function renderDebateScoreProfileGrid(debate) {
+  const profilesByName = new Map(
+    rankedInterlocutors({ topic: "all", minimum: 1, sort: "name" }).map((person) => [person.name, person])
+  );
+  const proHistories = debateScoreHistoriesForSide(debate.sides.pro, profilesByName);
+  const conHistories = debateScoreHistoriesForSide(debate.sides.con, profilesByName);
+  const proHistory = proHistories.length === 1 ? proHistories : [];
+  const conHistory = conHistories.length === 1 ? conHistories : [];
+  if (!proHistory.length && !conHistory.length) return "";
+
+  const maximumBandCount = Math.max(
+    1,
+    ...[...proHistory, ...conHistory]
+      .map((history) => history.distribution?.maximumBandCount || 0)
+  );
+
+  return `
+    <section class="debate-score-profile-grid" aria-label="Interlocutor score profiles">
+      <div class="debate-score-profile-slot">${renderDebateScoreHistories(proHistory, maximumBandCount, "teal")}</div>
+      <div class="debate-score-profile-slot">${renderDebateScoreHistories(conHistory, maximumBandCount, "coral")}</div>
     </section>
   `;
 }
@@ -2714,11 +2729,11 @@ function debateScoreHistoriesForSide(side, profilesByName) {
   });
 }
 
-function renderDebateScoreHistories(histories, maximumBandCount) {
+function renderDebateScoreHistories(histories, maximumBandCount, tone) {
   if (!histories.length) return "";
 
   return `
-    <div class="debate-score-profiles" aria-label="Interlocutor score profiles">
+    <div class="debate-score-profiles ${escapeHtml(tone)}">
       ${histories
         .map(
           ({ person, appearances, distribution }) => `
@@ -2747,7 +2762,7 @@ function renderDebateScoreHistories(histories, maximumBandCount) {
   `;
 }
 
-function renderQuoteCard(side, quote, tone, histories, maximumBandCount) {
+function renderQuoteCard(side, quote, tone) {
   if (!quote) return "";
 
   return `
@@ -2755,7 +2770,6 @@ function renderQuoteCard(side, quote, tone, histories, maximumBandCount) {
       <span class="quote-side">${escapeHtml(side.name)} · ${escapeHtml(side.speaker)}</span>
       <blockquote>"${escapeHtml(quote.text)}"</blockquote>
       <p>${escapeHtml(quote.context)}</p>
-      ${renderDebateScoreHistories(histories, maximumBandCount)}
     </article>
   `;
 }

@@ -40,7 +40,7 @@ const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)))
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260830-profile-score-no-median-highlight";
 const rankingsAssetVersion = "20260830-ranking-comparison-histograms";
-const debateAssetVersion = "20260830-debate-position-histograms";
+const debateAssetVersion = "20260830-debate-position-histograms-v2";
 
 function escapeHtml(value = "") {
   return String(value)
