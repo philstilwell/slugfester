@@ -1891,7 +1891,7 @@ function renderProfileTopics(topics) {
   `;
 }
 
-function renderProfileOpponents(opponents) {
+function renderProfileOpponents(opponents, person) {
   return `
     <section class="profile-breakdown profile-opponents" aria-labelledby="profile-opponents-heading">
       <div class="profile-section-heading">
@@ -1899,7 +1899,7 @@ function renderProfileOpponents(opponents) {
           <p class="eyebrow">Opponents faced</p>
           <h2 id="profile-opponents-heading">Debate opponents</h2>
         </div>
-        <p>Right-hand values are each opponent’s published score for one meeting, or their average across repeat meetings.</p>
+        <p>Right-hand values are matchup scores against ${escapeHtml(person.name)}—not opponents’ overall profile averages.</p>
       </div>
       <ol class="profile-opponent-list">
         ${opponents
@@ -1908,7 +1908,7 @@ function renderProfileOpponents(opponents) {
               <li>
                 <a href="${escapeHtml(interlocutorPath(opponent))}">
                   <img src="${escapeHtml(opponent.src)}" alt="${escapeHtml(opponent.name)}" width="512" height="512" loading="lazy" decoding="async">
-                  <span><strong>${escapeHtml(opponent.name)}</strong><small>${opponent.appearances} ${opponent.appearances === 1 ? "meeting" : "meetings"}</small></span>
+                  <span><strong>${escapeHtml(opponent.name)}</strong><small>${opponent.appearances} ${opponent.appearances === 1 ? "meeting · matchup score" : "meetings · matchup average"}</small></span>
                 </a>
                 <b class="${scoreTone(Math.round(opponent.averageOpponentScore))}">${formatOpponentBreakdownScore(opponent)}</b>
               </li>
@@ -2052,7 +2052,7 @@ function renderInterlocutorProfile(slug) {
 
       <section class="profile-detail-grid">
         ${renderProfileTopics(topics)}
-        ${renderProfileOpponents(opponents)}
+        ${renderProfileOpponents(opponents, person)}
       </section>
 
       <section class="profile-scorecards" aria-labelledby="profile-scorecards-heading">

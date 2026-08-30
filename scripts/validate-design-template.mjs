@@ -82,7 +82,9 @@ requireIncludes("app rankings comparison histogram", app, 'className: "compariso
 requireIncludes("app rankings comparison alphabetization", app, 'first.name.localeCompare(second.name, "en", { sensitivity: "base" })');
 requireIncludes("app rankings one-on-one eligibility", app, "if (!isOneOnOneDebate(debate)) return false;");
 requireIncludes("app profile opponent score formatting", app, "formatOpponentBreakdownScore(opponent)");
-requireIncludes("app profile opponent score explanation", app, "Right-hand values are each opponent’s published score");
+requireIncludes("app profile opponent score explanation", app, "Right-hand values are matchup scores against");
+requireIncludes("app profile opponent score distinction", app, "not opponents’ overall profile averages");
+requireIncludes("app profile opponent matchup label", app, "meeting · matchup score");
 requireIncludes("app profile opponent spacing hook", app, 'class="profile-breakdown profile-opponents"');
 requireIncludes("app profile team score exclusion", app, "Shared side score excluded from the individual record.");
 requireIncludes("app profile group-only state", app, "No eligible one-on-one scorecards yet.");

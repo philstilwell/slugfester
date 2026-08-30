@@ -39,7 +39,7 @@ import {
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260830-profile-score-no-median-highlight";
-const interlocutorAssetVersion = "20260830-profile-opponent-spacing";
+const interlocutorAssetVersion = "20260830-profile-matchup-labels";
 const rankingsAssetVersion = "20260830-ranking-comparison-histograms-v3";
 const debateAssetVersion = "20260830-debate-position-histograms-v3";
 const backendAssetVersion = "20260830-backend-rubric-distribution-v3";
