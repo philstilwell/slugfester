@@ -78,6 +78,7 @@ requireExcludes("app rankings analytics", app, "data-reasoning-topic-select");
 requireIncludes("app rankings analytics", app, "rankingTagSummary");
 requireIncludes("app rankings analytics", app, 'class="ranking-tag-bars"');
 requireIncludes("app rankings analytics", app, 'class="ranking-comparison"');
+requireIncludes("app rankings comparison alphabetization", app, 'first.name.localeCompare(second.name, "en", { sensitivity: "base" })');
 requireIncludes("app rankings analytics", app, 'class="sample-confidence');
 requireIncludes("app interlocutor profile", app, 'class="interlocutor-profile-page"');
 requireIncludes("app interlocutor profile", app, 'class="profile-score-bands"');

@@ -1515,7 +1515,9 @@ function renderComparisonPerson(person) {
 }
 
 function renderRankingComparison(state) {
-  const allPeople = searchFacets().people;
+  const allPeople = [...searchFacets().people].sort((first, second) =>
+    first.name.localeCompare(second.name, "en", { sensitivity: "base" })
+  );
   const comparisonRankings = rankedInterlocutors({ ...state, minimum: 1, sort: "name" });
   const first = comparisonRankings.find((person) => person.name === state.comparisonA);
   const second = comparisonRankings.find((person) => person.name === state.comparisonB);
