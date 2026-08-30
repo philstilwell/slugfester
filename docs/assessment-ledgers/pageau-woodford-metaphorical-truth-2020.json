@@ -1,0 +1,673 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "214",
+  "debateId": "pageau-woodford-metaphorical-truth-2020",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/CsqVRauiAn4/captions.srv3.xml",
+      "sha256": "39645a637bdc7373127ef79e70d9097452147a634994a0e952cde781d9a62a7b",
+      "bytes": 467741
+    },
+    "events": {
+      "path": ".assessment-cache/captions/CsqVRauiAn4/events.json",
+      "sha256": "a080ef253fb2e319b782f836e9161b4335955da6ac287ef24f084897917f2626",
+      "bytes": 240790
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/CsqVRauiAn4/transcript.txt",
+      "sha256": "b30fe18a9b70535b80d6a40e6d3d2b140516ed78d84b4c95aa86aad4b1f5efff",
+      "bytes": 99527
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/CsqVRauiAn4/manifest.json",
+      "sha256": "45a2d760048b051b053394b1cc0c5c95b7c453e7bdb09cd8d02808d4778a531a",
+      "bytes": 988
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/authorization.json",
+      "sha256": "eb01406fe487ed45ad8ec3c42b6bc074893eb43d5ac5665668e37289a081ddc5",
+      "bytes": 3076
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/manifest.json",
+      "sha256": "66960a8c42ecc3bc9313943e4e430183f3b2631c4cdb34834a84bd00a60ada20",
+      "bytes": 5569
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/source/source-lock.json",
+      "sha256": "ef68f2b4d68a417a7025f9688d63c667df621fc285dab432a87d6c68b8997dc9",
+      "bytes": 2898
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/inventory/inventory.json",
+      "sha256": "d22f507319841a484b36150544de0da7bd195ab3eac81ac461ea1e614ad8d211",
+      "bytes": 98335
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/judgments/judgment-packet.json",
+      "sha256": "71a89a5ff402e7382bcc354398364d8f7e145fa248a14db721e9c792c78b8ce4",
+      "bytes": 4998
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/judgments/execution.json",
+      "sha256": "9092f41f2d3f3e1212067873c0f339cfcbf66c8dc594a312f299947c5a3da474",
+      "bytes": 1937
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/judgments/pass-a/output.json",
+      "sha256": "a5c73286c5b27d1401403d045ea3f71b8dac45955e546753e750a73c6d69bb8d",
+      "bytes": 39424
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/judgments/pass-b/output.json",
+      "sha256": "b13345b1e75d90b61b100fa18eccd6963f5bab9d54de93def22733e19175272c",
+      "bytes": 42342
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/disagreements/disagreements.json",
+      "sha256": "7e9729491168e7f83c20fee60dd922dcc896a80f859ec26018905ee27035bbe8",
+      "bytes": 29002
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/audio/audio-verification.json",
+      "sha256": "d3e6ab12a0878f2dc2efe332ba9976b76910bbda585987ede972c4185519f89b",
+      "bytes": 1115
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/adjudication/packet.json",
+      "sha256": "f402aa83f1a48a3df67c7eb430cda22bc286750048524df3fdf1bb1063f34cbc",
+      "bytes": 93822
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/adjudication/output.json",
+      "sha256": "5e16fc38084fcd0f335b32dba22bc59798d5cb7a7e7d2426b6c618e044649887",
+      "bytes": 7201
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/final-ledger/final-ledger.json",
+      "sha256": "d34da34eb2b99c70392282d9d2f8cb9fe7569f56826d1b885da06ebd7c2031d8",
+      "bytes": 247656
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/score-pass/input.json",
+      "sha256": "fb3672fe973da79f832a6623b580b88f05dc1b279caf5e68373855308bcfae15",
+      "bytes": 958
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/score-pass/output.json",
+      "sha256": "a47a8dfcfa35f47535157d417566fdd9cd384aca5c86e348203422d94da4f4df",
+      "bytes": 16330
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/score-pass/attestation.json",
+      "sha256": "50b0dc8253f8209160d68750237417d5fb35b993b6827c97df3ecd9b6109231a",
+      "bytes": 826
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/publication/output.json",
+      "sha256": "3dedb2c1a4c07d20a6fab18ce1688a6e08e33e5e69c87512c7352ad36b2509cf",
+      "bytes": 66707
+    },
+    "events": {
+      "path": ".assessment-cache/captions/CsqVRauiAn4/events.json",
+      "sha256": "a080ef253fb2e319b782f836e9161b4335955da6ac287ef24f084897917f2626",
+      "bytes": 240790
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/CsqVRauiAn4/transcript.txt",
+      "sha256": "b30fe18a9b70535b80d6a40e6d3d2b140516ed78d84b4c95aa86aad4b1f5efff",
+      "bytes": 99527
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "214",
+    "debateId": "pageau-woodford-metaphorical-truth-2020",
+    "sections": [
+      {
+        "sectionId": "metaphorical-truth",
+        "title": "Metaphorical truth and religious prescription",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "religion-describes-participatory-patterns-not-mechanics",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 78
+                },
+                "score": 78
+              },
+              {
+                "moveId": "census-rule-encodes-limits-on-total-control",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 81,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 65
+                },
+                "score": 70
+              },
+              {
+                "moveId": "genesis-contains-heaven-earth-pattern",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 83,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 67
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "metaphorical-truth-preserves-useful-falsehoods",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 84
+                },
+                "score": 80
+              },
+              {
+                "moveId": "literal-errors-and-prescriptions-require-distinction",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 89,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 86
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "patterns-and-experience",
+        "title": "Evolution, experience, and universal patterns",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "scripture-describes-lived-experience",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 75,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 68
+                },
+                "score": 74
+              },
+              {
+                "moveId": "creation-balances-order-and-potential",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 61
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "evolution-serves-survival-not-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 81,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 59
+                },
+                "score": 71
+              },
+              {
+                "moveId": "evolved-stories-must-be-retested-for-new-environments",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 88,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 84
+                },
+                "score": 83
+              },
+              {
+                "moveId": "nonarbitrariness-entails-evolutionary-process",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 81,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 59
+                },
+                "score": 70
+              },
+              {
+                "moveId": "some-patterns-endure-without-starting-from-scratch",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 86,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 91
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "revision-and-standpoint",
+        "title": "Contextual revision and standards of judgment",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "tradition-is-embodied-participation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 79,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 70
+                },
+                "score": 74
+              },
+              {
+                "moveId": "external-judgment-needs-a-goal-and-standpoint",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 83
+                },
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "patriarchal-traits-may-now-be-dangerous",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 71
+                },
+                "score": 75
+              },
+              {
+                "moveId": "retain-loving-motifs-discard-obsolete-patterns",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 87
+                },
+                "score": 79
+              },
+              {
+                "moveId": "goals-and-evolved-values-guide-comparison",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 85
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "god-and-religious-authority",
+        "title": "God, dogma, and layered religious understanding",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "god-transcends-being-and-grounds-pattern",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 48,
+                  "responsiveness": 77,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 58,
+                  "calibrationCharity": 70
+                },
+                "score": 65
+              },
+              {
+                "moveId": "religious-language-scales-and-christianity-needs-renewal",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 89
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 65,
+            "moves": [
+              {
+                "moveId": "dogma-blocks-archetype-criticism",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 75,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 65,
+                  "calibrationCharity": 49
+                },
+                "score": 65
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "sexual-ethics-and-hierarchy",
+        "title": "Hierarchy, sexual ethics, and human treatment",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "christian-hierarchy-is-love-not-the-sexual-application",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 72,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 68
+                },
+                "score": 68
+              },
+              {
+                "moveId": "scripture-condemns-behavior-not-identity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 68,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 62
+                },
+                "score": 69
+              },
+              {
+                "moveId": "love-enemies-humanizes-without-erasing-boundaries",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 89
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "obsolete-patterns-deny-lived-homosexual-experience",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 80
+                },
+                "score": 82
+              },
+              {
+                "moveId": "tribal-scripture-shows-obsolete-moral-patterns",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 80
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "tradition-and-reform",
+        "title": "Tradition, external criticism, and organic reform",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "christianity-improves-through-christian-participation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 72,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 60
+                },
+                "score": 67
+              },
+              {
+                "moveId": "reform-must-occur-organically-from-within",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 82,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 86
+                },
+                "score": 77
+              },
+              {
+                "moveId": "final-patterns-of-reality-ground-evolution",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 86,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 63,
+                  "calibrationCharity": 72
+                },
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "plural-traditions-require-cross-tradition-navigation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 88,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 82
+                },
+                "score": 82
+              },
+              {
+                "moveId": "evolutionary-substrate-enables-critical-revision",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 91,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 86
+                },
+                "score": 83
+              },
+              {
+                "moveId": "final-evolutionary-level-allows-christian-critique",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 92,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 88
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 73.78,
+        "burdenCompletionAdjustment": 0,
+        "score": 74
+      },
+      "con": {
+        "weightedSectionMean": 78.03,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      }
+    },
+    "winner": "con",
+    "winningMargin": 4,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 30,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

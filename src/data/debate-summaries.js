@@ -9612,5 +9612,53 @@ export const debateSummaries = [
         "title": "Happiness, Meaning, and Personal Responsibility"
       }
     ]
+  },
+  {
+    "id": "pageau-woodford-metaphorical-truth-2020",
+    "number": "214",
+    "title": "Metaphorical Truth and Religious Patterns: Jonathan Pageau vs. Stephen Woodford (2020)",
+    "label": "Metaphorical truth and religious patterns",
+    "date": "2026-08-30",
+    "duration": "1 hr 15 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=CsqVRauiAn4",
+    "motion": "Do religious patterns disclose enduring truths that should guide contemporary life?",
+    "summary": "Woodford won 78–74 by combining charitable preservation of religious insights with stronger contextual scrutiny, cross-tradition comparison, and concrete ethical challenges; Pageau’s embedded-reform case landed powerfully but left key metaphysical and practical warrants incomplete.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Participatory religious patterns as enduring truth",
+        "speaker": "Jonathan Pageau",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Evolutionary scrutiny and contextual revision",
+        "speaker": "Stephen Woodford",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 78
+    },
+    "sections": [
+      {
+        "title": "Metaphorical truth and religious prescription"
+      },
+      {
+        "title": "Evolution, experience, and universal patterns"
+      },
+      {
+        "title": "Contextual revision and standards of judgment"
+      },
+      {
+        "title": "God, dogma, and layered religious understanding"
+      },
+      {
+        "title": "Hierarchy, sexual ethics, and human treatment"
+      },
+      {
+        "title": "Tradition, external criticism, and organic reform"
+      }
+    ]
   }
 ];

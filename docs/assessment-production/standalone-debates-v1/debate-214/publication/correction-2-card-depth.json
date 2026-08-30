@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0-standalone-publication-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "214",
+  "debateId": "pageau-woodford-metaphorical-truth-2020",
+  "correction": "bounded-two-field-per-shard-card-richness-repair",
+  "changedFields": [
+    "candidate.sections[].exchanges[].pro.words",
+    "candidate.sections[].exchanges[].con.words",
+    "candidate.sections[].exchanges[].pro.critique",
+    "candidate.sections[].exchanges[].con.critique"
+  ],
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/publication/preserved-output-before-description-repair.json",
+      "sha256": "b9c7ab3a640c8d79feb82dd3897f159932616004776633c431c02af4036748aa",
+      "bytes": 54662
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "6812256f2e27f43062c6217ceb35b7e85851ffe3737b6dd4b1db5638776ea063",
+      "bytes": 64633
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-214/publication/content-parity-audit.json",
+      "sha256": "53613429b62c532a3632e67372d11d666c83ad480f2f042940bffd33b54ca4c2",
+      "bytes": 5350
+    }
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "maximumWritableFieldsPerShard": 2,
+    "descriptionRepairShards": 3,
+    "critiqueRepairShards": 5
+  }
+}

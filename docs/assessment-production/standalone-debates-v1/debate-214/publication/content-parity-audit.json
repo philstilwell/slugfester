@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "1.0-standalone-content-parity-audit",
+  "status": "passed-content-parity-audit",
+  "debateNumber": "214",
+  "debateId": "pageau-woodford-metaphorical-truth-2020",
+  "referenceWindow": {
+    "count": 25,
+    "debateNumbers": [
+      "171",
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195"
+    ]
+  },
+  "metrics": {
+    "summaryWords": 33,
+    "motionWords": 11,
+    "sections": 6,
+    "rows": 18,
+    "moves": 30,
+    "argumentWordsMean": 22.7,
+    "critiqueWordsMean": 117,
+    "critiqueCharactersMean": 909.9,
+    "quoteWordsMean": 9.5,
+    "quoteContextWordsMean": 23,
+    "strengthWordsMean": 25.9,
+    "blunderWordsMean": 26.5,
+    "extensionThesisWordsMean": 29,
+    "extensionPremiseWordsMean": 23.6,
+    "extensionConclusionWordsMean": 31.5,
+    "extensionNewArgumentWordsMean": 84.5,
+    "boilerplate": {
+      "ngramSize": 6,
+      "minimumDocuments": 8,
+      "commonNgrams": 0,
+      "meanCoveredRatio": 0,
+      "maximumCoveredRatio": 0
+    }
+  },
+  "referenceRanges": {
+    "summaryWords": {
+      "minimum": 19,
+      "median": 21,
+      "maximum": 35
+    },
+    "motionWords": {
+      "minimum": 11,
+      "median": 16,
+      "maximum": 24
+    },
+    "sections": {
+      "minimum": 5,
+      "median": 5,
+      "maximum": 6
+    },
+    "rows": {
+      "minimum": 5,
+      "median": 10,
+      "maximum": 12
+    },
+    "moves": {
+      "minimum": 10,
+      "median": 19,
+      "maximum": 23
+    },
+    "argumentWordsMean": {
+      "minimum": 16.4,
+      "median": 21.9,
+      "maximum": 26.3
+    },
+    "critiqueWordsMean": {
+      "minimum": 110.3,
+      "median": 120.7,
+      "maximum": 127.8
+    },
+    "critiqueCharactersMean": {
+      "minimum": 903.1,
+      "median": 976.2,
+      "maximum": 1042.8
+    },
+    "quoteWordsMean": {
+      "minimum": 6.5,
+      "median": 9,
+      "maximum": 13.5
+    },
+    "quoteContextWordsMean": {
+      "minimum": 13,
+      "median": 17.5,
+      "maximum": 21
+    },
+    "strengthWordsMean": {
+      "minimum": 12.6,
+      "median": 16.2,
+      "maximum": 20.9
+    },
+    "blunderWordsMean": {
+      "minimum": 16.2,
+      "median": 19,
+      "maximum": 24.3
+    },
+    "extensionThesisWordsMean": {
+      "minimum": 24,
+      "median": 32,
+      "maximum": 38.5
+    },
+    "extensionPremiseWordsMean": {
+      "minimum": 21.8,
+      "median": 26,
+      "maximum": 33.1
+    },
+    "extensionConclusionWordsMean": {
+      "minimum": 24,
+      "median": 28.5,
+      "maximum": 37
+    },
+    "extensionNewArgumentWordsMean": {
+      "minimum": 63.5,
+      "median": 85.8,
+      "maximum": 97
+    }
+  },
+  "relativeOutliers": [
+    {
+      "metric": "rows",
+      "direction": "above",
+      "value": 18,
+      "minimum": 5,
+      "median": 10,
+      "maximum": 12,
+      "rationale": "The complete source yielded thirty distinct load-bearing moves across six topics, requiring eighteen rows while remaining within the preauthorized per-section capacity."
+    },
+    {
+      "metric": "moves",
+      "direction": "above",
+      "value": 30,
+      "minimum": 10,
+      "median": 19,
+      "maximum": 23,
+      "rationale": "The longer dyadic discussion contains thirty independently scored, non-mergeable moves; preserving complete argumentative coverage justifies exceeding the historical move maximum."
+    },
+    {
+      "metric": "quoteContextWordsMean",
+      "direction": "above",
+      "value": 23,
+      "minimum": 13,
+      "median": 17.5,
+      "maximum": 21,
+      "rationale": "Both contexts briefly explain each exact quotation’s argumentative function and still remain comfortably inside the formal twelve-to-fifty-five-word publication range."
+    },
+    {
+      "metric": "strengthWordsMean",
+      "direction": "above",
+      "value": 25.9,
+      "minimum": 12.6,
+      "median": 16.2,
+      "maximum": 20.9,
+      "rationale": "Concrete strengths identify the relevant inference, concession, or burden rather than using thin praise, matching the requested richer established-debate style."
+    },
+    {
+      "metric": "blunderWordsMean",
+      "direction": "above",
+      "value": 26.5,
+      "minimum": 16.2,
+      "median": 19,
+      "maximum": 24.3,
+      "rationale": "Concrete blunders specify the failed inference and remaining consequence rather than generic criticism, matching the requested richer established-debate style."
+    }
+  ],
+  "hardContract": {
+    "status": "passed",
+    "summaryAndSectionLengths": true,
+    "argumentAndCritiqueLengths": true,
+    "argumentDescriptionDepth": {
+      "targetWords": [
+        22,
+        28
+      ],
+      "actualMean": 22.7,
+      "independentReferenceMeanMedian": 21.9,
+      "minimumMean": 20.9,
+      "shortCardThresholdWords": 20,
+      "shortCardCount": 0,
+      "shortCardShare": 0,
+      "maximumShortCardShare": 0.25,
+      "status": "passed"
+    },
+    "critiqueStructureAndCharacters": true,
+    "quotationLengths": true,
+    "overallCommentaryDepth": true,
+    "aiExtensionDepth": true,
+    "boilerplateGate": true
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0
+  }
+}

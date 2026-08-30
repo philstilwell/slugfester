@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-transport-failure",
+  "status": "preserved-pre-model-schema-transport-failure",
+  "debateNumber": "214",
+  "debateId": "pageau-woodford-metaphorical-truth-2020",
+  "affectedShardCount": 3,
+  "modelRequestsStarted": 0,
+  "directIncrementalCostUsd": 0,
+  "error": {
+    "code": "invalid_json_schema",
+    "message": "Invalid schema for response_format 'codex_output_schema': In context=('properties', 'corrections'), array schema items is not an object."
+  },
+  "diagnosis": "The tuple schema used items:false, which the response-format validator rejects. The recovery uses a conventional object-valued items schema and retains the same six writable fields, two per shard."
+}

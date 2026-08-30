@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "214",
+  "debateId": "pageau-woodford-metaphorical-truth-2020",
+  "completedAt": "2026-08-30T22:20:00.000Z",
+  "source": {
+    "videoId": "CsqVRauiAn4",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 17276,
+    "events": 2265,
+    "transcriptSha256": "b30fe18a9b70535b80d6a40e6d3d2b140516ed78d84b4c95aa86aad4b1f5efff",
+    "eventsSha256": "a080ef253fb2e319b782f836e9161b4335955da6ac287ef24f084897917f2626",
+    "assessedWindow": "00:02:19-01:14:36",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 30,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 25,
+    "adjudicatedDisputes": 25,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 74,
+      "con": 78,
+      "winner": "con",
+      "margin": 4
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "displayRows": 18,
+    "argumentCards": 30,
+    "uniqueLockedMovesMapped": 30,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "fbdfe8ccac37a54f2746e56ee130b8378193f3e6d83f3675a8cb9b18d0d5665c",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-214/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-two-field-per-shard-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 22.7,
+      "maximum": 25,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 112,
+      "mean": 117,
+      "maximum": 123
+    },
+    "critiqueCharacterRange": [
+      882,
+      1009
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "strengthMean": 25.9,
+      "blunderMean": 26.5
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-214/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 30,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 390,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 19,
+    "acceptedRhetoricalTags": 4,
+    "acceptedFallacyTags": 4,
+    "acceptedBiasTags": 0,
+    "biasCandidatesExplicitlyRejected": 2,
+    "rejectedRhetoricalTagCandidates": 15,
+    "aiContributionWords": 684,
+    "aiContributionPunctuationReview": "passed-by-production-validator-and-direct-inspection"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-214/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 4,
+    "desktopEvidenceSha256": "bbebcb148cee4aaa95a17e598fffa533b7fc537b8ff7b13c0435a2f550d798f9",
+    "mobileEvidenceSha256": "97a24b9f03e008ac49bc3d04af368ab671d314f071de43d80fdcb324db3caf6e"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "214 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "407 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "30 moves; description mean 22.7 words; critique mean 117 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "30 moves reviewed against 13 definitions in 2 blind passes; 19 candidates adjudicated; 4 fallacies and 0 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "30 populated cards and 4 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 214 with and without --repository-only",
+      "status": "passed",
+      "result": "30 moves; 6 sections; 25 disputes; 0 audio checks; score stability mean 0.75, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "214 of 214 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInventoryTransportFailures": 1,
+    "preservedInventoryValidationFailures": 3,
+    "deterministicInventoryCorrections": 1,
+    "judgmentRetries": 0,
+    "rejectedPublicationDrafts": 1,
+    "publicationValidationFailures": 2,
+    "atomicPublicationRepairFields": 16,
+    "publicationRepairShards": 8,
+    "rhetoricalContextRepairFields": 4,
+    "rhetoricalContextRepairShards": 2,
+    "preservedTransportOrStallRecords": 3,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 15,
+    "con": 15,
+    "disposition": "All thirty frozen moves are mapped exactly once. The balanced total arose from the complete source inventory; no move was deleted, merged, added, or reassigned to manufacture symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}
