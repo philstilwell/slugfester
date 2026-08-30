@@ -442,8 +442,10 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
 
 export function interlocutorSeo(person, appearances = 0) {
   const profilePath = interlocutorPath(person);
-  const appearanceLabel = `${appearances} ${appearances === 1 ? "debate scorecard" : "debate scorecards"}`;
-  const description = `${person.name}'s Slugfester debate profile, including published score averages, opponents faced, topic performance, and ${appearanceLabel}.`;
+  const appearanceLabel = `${appearances} eligible 1-on-1 ${appearances === 1 ? "debate scorecard" : "debate scorecards"}`;
+  const description = appearances
+    ? `${person.name}'s Slugfester debate profile, including published score averages, opponents faced, topic performance, and ${appearanceLabel}.`
+    : `${person.name}'s Slugfester debate profile links team or panel appearances; shared side scores are excluded from individual averages.`;
 
   return {
     title: pageTitle(`${person.name} debate profile`),

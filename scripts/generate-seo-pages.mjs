@@ -39,9 +39,10 @@ import {
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260830-profile-score-no-median-highlight";
-const rankingsAssetVersion = "20260830-ranking-comparison-histograms-v2";
+const interlocutorAssetVersion = "20260830-one-on-one-profile-fix";
+const rankingsAssetVersion = "20260830-ranking-comparison-histograms-v3";
 const debateAssetVersion = "20260830-debate-position-histograms-v3";
-const backendAssetVersion = "20260830-backend-rubric-distribution-v2";
+const backendAssetVersion = "20260830-backend-rubric-distribution-v3";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -244,10 +245,15 @@ pageOutputs.set(
 const interlocutorProfiles = new Map();
 
 debates.forEach((debate) => {
+  const isOneOnOne = ["pro", "con"].every(
+    (sideKey) => avatarsForSpeakerText(debate.sides[sideKey].speaker).length === 1
+  );
   ["pro", "con"].forEach((sideKey) => {
     avatarsForSpeakerText(debate.sides[sideKey].speaker).forEach((person) => {
       const profile = interlocutorProfiles.get(person.name) || { person, appearances: 0 };
-      profile.appearances += 1;
+      if (isOneOnOne && debate.interlocutorRankingEligible !== false) {
+        profile.appearances += 1;
+      }
       interlocutorProfiles.set(person.name, profile);
     });
   });
@@ -257,11 +263,13 @@ function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
   const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
   const pageAssetVersion = pathname.startsWith("/debate/")
     ? debateAssetVersion
-    : pathname === backendPath()
-      ? backendAssetVersion
-      : pathname === rankingsPath()
-        ? rankingsAssetVersion
-        : assetVersion;
+    : pathname.startsWith("/interlocutor/")
+      ? interlocutorAssetVersion
+      : pathname === backendPath()
+        ? backendAssetVersion
+        : pathname === rankingsPath()
+          ? rankingsAssetVersion
+          : assetVersion;
   pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText, pageAssetVersion));
   if (seo.robots !== "noindex,follow") {
     sitemapUrls.push({ loc: absoluteUrl(pathname), lastmod });

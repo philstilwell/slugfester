@@ -1123,9 +1123,16 @@ function rankingUrl(state) {
   return `${rankingsPath()}${query ? `?${query}` : ""}`;
 }
 
+function isOneOnOneDebate(debate) {
+  return ["pro", "con"].every(
+    (sideKey) => avatarsForSpeakerText(debate.sides[sideKey].speaker).length === 1
+  );
+}
+
 function rankingDebates(state) {
   return debates.filter((debate) => {
     if (debate.interlocutorRankingEligible === false) return false;
+    if (!isOneOnOneDebate(debate)) return false;
     const matchesTopic =
       state.topic === "all" ||
       topicCategoriesForDebate(debate).some((category) => category.id === state.topic);
@@ -1372,6 +1379,14 @@ function rankedInterlocutors(state) {
 
 function formatAverageScore(score) {
   return Number(score).toFixed(1);
+}
+
+function formatOpponentBreakdownScore(opponent) {
+  if (Number.isInteger(opponent.averageOpponentScore)) {
+    return String(opponent.averageOpponentScore);
+  }
+
+  return formatAverageScore(opponent.averageOpponentScore);
 }
 
 function searchState() {
@@ -1801,6 +1816,33 @@ function profileForSlug(slug) {
   );
 }
 
+function profileAvatarForSlug(slug) {
+  for (const debate of debates) {
+    for (const sideKey of ["pro", "con"]) {
+      const avatar = avatarsForSpeakerText(debate.sides[sideKey].speaker).find(
+        (person) => interlocutorSlug(person.name) === slug
+      );
+      if (avatar) return avatar;
+    }
+  }
+
+  return null;
+}
+
+function profileTeamRecords(personName) {
+  return debates.flatMap((debate) => {
+    if (isOneOnOneDebate(debate)) return [];
+
+    return ["pro", "con"]
+      .filter((sideKey) =>
+        avatarsForSpeakerText(debate.sides[sideKey].speaker).some(
+          (person) => person.name === personName
+        )
+      )
+      .map((sideKey) => ({ debate, sideKey }));
+  });
+}
+
 function renderProfileMetric(label, value, tone = "") {
   return `<div class="profile-metric${tone ? ` ${tone}` : ""}"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`;
 }
@@ -1857,6 +1899,7 @@ function renderProfileOpponents(opponents) {
           <p class="eyebrow">Opponents faced</p>
           <h2 id="profile-opponents-heading">Debate opponents</h2>
         </div>
+        <p>Right-hand values are each opponent’s published score for one meeting, or their average across repeat meetings.</p>
       </div>
       <ol class="profile-opponent-list">
         ${opponents
@@ -1867,7 +1910,7 @@ function renderProfileOpponents(opponents) {
                   <img src="${escapeHtml(opponent.src)}" alt="${escapeHtml(opponent.name)}" width="512" height="512" loading="lazy" decoding="async">
                   <span><strong>${escapeHtml(opponent.name)}</strong><small>${opponent.appearances} ${opponent.appearances === 1 ? "meeting" : "meetings"}</small></span>
                 </a>
-                <b class="${scoreTone(Math.round(opponent.averageOpponentScore))}">${formatAverageScore(opponent.averageOpponentScore)}</b>
+                <b class="${scoreTone(Math.round(opponent.averageOpponentScore))}">${formatOpponentBreakdownScore(opponent)}</b>
               </li>
             `
           )
@@ -1895,8 +1938,40 @@ function renderProfileDebateCard(record, person) {
   `;
 }
 
+function renderProfileTeamScorecards(records) {
+  if (!records.length) return "";
+
+  return `
+    <section class="profile-scorecards" aria-labelledby="profile-team-scorecards-heading">
+      <div class="profile-section-heading">
+        <div>
+          <p class="eyebrow">Team record</p>
+          <h2 id="profile-team-scorecards-heading">Team and panel appearances</h2>
+        </div>
+        <p>These scorecards assess a combined side. They remain available to read but do not affect this interlocutor’s individual averages, distribution, or opponent record.</p>
+      </div>
+      <div class="profile-debate-grid">
+        ${records
+          .map(
+            ({ debate, sideKey }) => `
+              <article class="profile-debate-card">
+                <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))}</p>
+                <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+                <p>${escapeHtml(debate.label)}</p>
+                <span class="profile-debate-opponent">Side: ${escapeHtml(debate.sides[sideKey].speaker)}</span>
+                <p>Shared side score excluded from the individual record.</p>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderInterlocutorProfile(slug) {
-  const person = profileForSlug(slug);
+  const eligibleProfile = profileForSlug(slug);
+  const person = eligibleProfile || profileAvatarForSlug(slug);
 
   if (!person) {
     setSeo(notFoundSeo());
@@ -1905,6 +1980,38 @@ function renderInterlocutorProfile(slug) {
         <p class="eyebrow">No profile</p>
         <h1>Interlocutor not found</h1>
         <a class="button primary" href="${rankingsPath()}">Back to Rankings</a>
+      </main>
+    `);
+    return;
+  }
+
+  const teamScorecards = profileTeamRecords(person.name).sort(
+    (a, b) => Number.parseInt(a.debate.number, 10) - Number.parseInt(b.debate.number, 10)
+  );
+
+  if (!eligibleProfile) {
+    setSeo(interlocutorSeo(person, 0));
+    app.innerHTML = renderShell(`
+      <main class="interlocutor-profile-page">
+        <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
+
+        <section class="profile-hero">
+          <div class="profile-identity">
+            <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" decoding="async">
+            <div>
+              <p class="eyebrow">Interlocutor profile</p>
+              <h1>${escapeHtml(person.name)}</h1>
+              <p>No eligible one-on-one scorecards yet. Team and panel appearances are listed separately below.</p>
+              <span class="sample-confidence limited"><i aria-hidden="true"></i>No 1-on-1 sample</span>
+            </div>
+          </div>
+          <dl class="profile-hero-scores">
+            ${renderProfileMetric("1-on-1 scorecards", "0")}
+            ${renderProfileMetric("Team appearances", String(teamScorecards.length))}
+          </dl>
+        </section>
+
+        ${renderProfileTeamScorecards(teamScorecards)}
       </main>
     `);
     return;
@@ -1929,7 +2036,7 @@ function renderInterlocutorProfile(slug) {
           <div>
             <p class="eyebrow">Interlocutor profile</p>
             <h1>${escapeHtml(person.name)}</h1>
-            <p>${person.appearances} published ${person.appearances === 1 ? "scorecard" : "scorecards"} across ${topics.length} ${topics.length === 1 ? "topic" : "topics"}.</p>
+            <p>${person.appearances} published 1-on-1 ${person.appearances === 1 ? "scorecard" : "scorecards"} across ${topics.length} ${topics.length === 1 ? "topic" : "topics"}.${teamScorecards.length ? ` ${teamScorecards.length} ${teamScorecards.length === 1 ? "team appearance is" : "team appearances are"} listed separately.` : ""}</p>
             <span class="sample-confidence ${confidence.tone}" title="${escapeHtml(confidence.description)}"><i aria-hidden="true"></i>${escapeHtml(confidence.label)}</span>
           </div>
         </div>
@@ -1952,7 +2059,7 @@ function renderInterlocutorProfile(slug) {
         <div class="profile-section-heading">
           <div>
             <p class="eyebrow">Linked record</p>
-            <h2 id="profile-scorecards-heading">Debate scorecards</h2>
+            <h2 id="profile-scorecards-heading">1-on-1 debate scorecards</h2>
           </div>
           <p>Open a scorecard to read the transcript-grounded assessment behind its published score.</p>
         </div>
@@ -1960,6 +2067,8 @@ function renderInterlocutorProfile(slug) {
           ${scorecards.map((record) => renderProfileDebateCard(record, person)).join("")}
         </div>
       </section>
+
+      ${renderProfileTeamScorecards(teamScorecards)}
     </main>
   `);
 }
@@ -2247,9 +2356,9 @@ function renderBackend() {
               </li>
               <li>
                 <h3>Treat debates with three or more speakers as team assessments</h3>
-                <p><strong>Short answer: yes.</strong> The current public scorecard format stores one comprehensive score for each side. When several interlocutors are grouped on a side, each named teammate currently receives that shared side score in profile and ranking calculations. It is a score for the combined case, not evidence that every teammate contributed equally or personally earned the same result.</p>
+                <p><strong>Short answer: no individual score is inferred.</strong> The current public scorecard format stores one comprehensive score for each side. When several interlocutors are grouped on a side, that number describes the combined case; it is not treated as evidence that every teammate contributed equally or personally earned the same result.</p>
                 <p>Individual argument cards remain attached to the person who actually made the move. A teammate's argument is not credited to someone else merely because they share a side, unless the other speaker explicitly adopts it. This preserves speaker ownership within the analysis even though the final number is still side-level.</p>
-                <p>Slugfester identified 16 team or panel debates that could not be reassessed safely under the ordinary two-person workflow. The newer multi-speaker method therefore treats their results as approximate, checks speaker handoffs and selected passages against the audio, and tests whether the leading side changes when contributions are rebalanced or one teammate is removed. Its policy is to keep participant-contribution figures diagnostic and exclude these debates from individual rankings once they are republished under that method. Until then, their shared scores should be read strictly as team scores.</p>
+                <p>Team and panel scorecards remain available as assessments of their two sides, but they are excluded from individual rankings, profile averages, score distributions, and opponent records. The newer multi-speaker method treats their results as approximate, checks speaker handoffs and selected passages against the audio, and tests whether the leading side changes when contributions are rebalanced or one teammate is removed.</p>
               </li>
               <li>
                 <h3>Review fallacies and cognitive biases separately</h3>
