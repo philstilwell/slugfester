@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "211",
+  "debateId": "baggini-baker-hytch-divine-hiddenness-2025",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "religious-goods-do-not-require-creedal-litmus:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "religious-goods-do-not-require-creedal-litmus",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "The goods attributed to religion are plausible but offered impressionistically, without evidence about prevalence or causal effects."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "Examples of communal and ethical goods are plausible, but their prevalence and independence from doctrine are not examined."
+        }
+      }
+    },
+    {
+      "disputeId": "religious-goods-do-not-require-creedal-litmus:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "religious-goods-do-not-require-creedal-litmus",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 16,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "It follows the psychology discussion but does not directly answer the distinction between causal origin and evidential truth."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "It agrees with the anti-reduction point and redirects it toward the role of doctrine rather than disputing truth directly."
+        }
+      }
+    },
+    {
+      "disputeId": "religious-goods-do-not-require-creedal-litmus:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "religious-goods-do-not-require-creedal-litmus",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 66,
+          "rationale": "It supports the recognition-contingency theme, yet remains peripheral to whether hiddenness evidentially bears on existence."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "The move advances the recognition critique, though its ethical appraisal is partly peripheral to existence evidence."
+        }
+      }
+    },
+    {
+      "disputeId": "religious-goods-do-not-require-creedal-litmus:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "religious-goods-do-not-require-creedal-litmus",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "The contrast between creedal tests and ethical or communal goods is clear despite broad talk about religion."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "The contrast between valuable practices and belief as a litmus test is clearly and accessibly stated."
+        }
+      }
+    },
+    {
+      "disputeId": "religious-goods-do-not-require-creedal-litmus:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "religious-goods-do-not-require-creedal-litmus",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 89,
+          "rationale": "The atheist speaker gives substantial credit to religious practices and limits criticism to specific creedal uses."
+        },
+        "option-b": {
+          "value": 92,
+          "rationale": "The speaker credits religion with substantial goods and criticizes only a bounded doctrinal practice."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence alters completion of a named pro burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion beyond the locked move and burden record was met.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains outside the move ratings and locked response structure.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion independently of existing scoring mechanisms."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence changes completion of a named pro burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No named pro burden has an uncaptured debate-wide completion change.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains beyond the locked move-level assessment.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not independently change pro burden completion."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence alters completion of a named con burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion beyond the locked move and burden record was met.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains outside the move ratings and locked response structure.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion independently of existing scoring mechanisms."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence changes completion of a named con burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No named con burden has an uncaptured debate-wide completion change.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence remains beyond the locked move-level assessment.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not independently change con burden completion."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 25,
+    "disputesExtracted": 7,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-field-disjoint-repair",
+  "debateNumber": "211",
+  "debateId": "baggini-baker-hytch-divine-hiddenness-2025",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/preserved-invalid-output-1.json",
+    "sha256": "ecd5bcd0adfb1cbb4e54f8c9c9d9ee8c4fc2b8ebe68c5f77e34895afce294852",
+    "bytes": 49325
+  },
+  "failures": [
+    "Four card descriptions contained 21 words instead of the required 22–28 words.",
+    "The first strength for each side contained 20 words instead of the required 22–36 words.",
+    "The displayed con quotation and its audit copy omitted a captioned filler word, so neither was a source-exact substring.",
+    "The con quotation context contained 20 words instead of the required 22–38 words."
+  ],
+  "writableLeafFields": [
+    "candidate.sections[0].exchanges[0].con.words",
+    "candidate.sections[4].exchanges[0].pro.words",
+    "candidate.sections[4].exchanges[0].con.words",
+    "candidate.sections[4].exchanges[3].con.words",
+    "candidate.overall.pro.strengths[0]",
+    "candidate.overall.con.strengths[0]",
+    "candidate.quotes.con.text",
+    "sourceQuoteAudit.con.quote",
+    "candidate.quotes.con.context"
+  ],
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].con.words",
+        "candidate.sections[4].exchanges[0].pro.words"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[4].exchanges[0].con.words",
+        "candidate.sections[4].exchanges[3].con.words"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.overall.pro.strengths[0]",
+        "candidate.overall.con.strengths[0]"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.quotes.con.text",
+        "sourceQuoteAudit.con.quote"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-5",
+      "writableFields": [
+        "candidate.quotes.con.context"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    }
+  ],
+  "frozenFieldsUnaffected": [
+    "identity",
+    "source evidence",
+    "inventory",
+    "judgments",
+    "adjudication",
+    "scores",
+    "all unlisted publication fields"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-five-field-disjoint-shards",
+  "debateNumber": "211",
+  "debateId": "baggini-baker-hytch-divine-hiddenness-2025",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/preserved-invalid-output-1.json",
+    "sha256": "ecd5bcd0adfb1cbb4e54f8c9c9d9ee8c4fc2b8ebe68c5f77e34895afce294852",
+    "bytes": 49325
+  },
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/output.json",
+    "sha256": "826bda4698877749c3f81925bff43493a47e1dae70ae39c75e8b54b76468b252",
+    "bytes": 56567
+  },
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].con.words",
+        "candidate.sections[4].exchanges[0].pro.words"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/repair-1/execution.json",
+        "sha256": "03af04a197090dd27c9b7f41d099b26a80b359fbb5ff14e7576d5d00f81263b9",
+        "bytes": 1717
+      }
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[4].exchanges[0].con.words",
+        "candidate.sections[4].exchanges[3].con.words"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/repair-2/execution.json",
+        "sha256": "59bb274f59f5c4c86718965b52bac1e111772444e2f5bc2a2a2175b04024e7ea",
+        "bytes": 1717
+      }
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.overall.pro.strengths[0]",
+        "candidate.overall.con.strengths[0]"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/repair-3/execution.json",
+        "sha256": "4eb27a43f3691fed64e9cd9e3d7c6010e621686d38f9da4bdf1847f45f607835",
+        "bytes": 1677
+      }
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.quotes.con.text",
+        "sourceQuoteAudit.con.quote"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/repair-4/execution.json",
+        "sha256": "73b074b20f42b47d2fb1c594ef477f9d30bf0e878a97bf242b8806447162343e",
+        "bytes": 1643
+      }
+    },
+    {
+      "shardId": "shard-5",
+      "writableFields": [
+        "candidate.quotes.con.context"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-211/publication/repair-5/execution.json",
+        "sha256": "66c5fb87a6cdca92778f9b0218b4759256b81df54cbc7c13f13651ff0932b7cc",
+        "bytes": 1580
+      }
+    }
+  ],
+  "changedLeafRoots": [
+    "candidate.quotes.con.text",
+    "candidate.quotes.con.context",
+    "candidate.sections[0].exchanges[0].con.words",
+    "candidate.sections[4].exchanges[0].pro.words",
+    "candidate.sections[4].exchanges[0].con.words",
+    "candidate.sections[4].exchanges[3].con.words",
+    "candidate.overall.pro.strengths[0]",
+    "candidate.overall.con.strengths[0]",
+    "sourceQuoteAudit.con.quote"
+  ],
+  "allShardsWithinTwoFieldLimit": true,
+  "allShardsSingleAttempt": true,
+  "assessmentSubstanceChanged": false,
+  "scoresChanged": false
+}

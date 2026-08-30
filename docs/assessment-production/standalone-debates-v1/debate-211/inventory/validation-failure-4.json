@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-score-blind-bridge-normalization",
+  "debateNumber": "211",
+  "validatorError": "Three moves named one of two undeclared narrow burden bridges, and one declared bridge contact carried a mismatched tier.",
+  "diagnosis": "The controller mapped each undeclared narrow label to its declared semantic parent and synchronized every affected tier. Move propositions, response links, polarity, and assessment evidence remain unchanged.",
+  "burdenLinkChanges": [
+    {
+      "moveId": "concedes-experience-often-grounds-faith",
+      "originalBridgeId": "experience-can-rationally-contribute",
+      "mappedBridgeId": "experience-is-culturally-mediated",
+      "mappedTier": "subsidiary"
+    },
+    {
+      "moveId": "historical-jesus-secure-divinity-not-obvious",
+      "originalBridgeId": "historical-jesus-contributes-to-case",
+      "mappedBridgeId": "historical-jesus-contributes-to-case",
+      "originalTier": "subsidiary",
+      "mappedTier": "central"
+    },
+    {
+      "moveId": "loving-god-would-not-punish-honest-error",
+      "originalBridgeId": "honest-error-not-condemned",
+      "mappedBridgeId": "personal-god-recognition-tension",
+      "mappedTier": "central"
+    },
+    {
+      "moveId": "experiential-diversity-is-not-decisive",
+      "originalBridgeId": "experience-can-rationally-contribute",
+      "mappedBridgeId": "experience-is-culturally-mediated",
+      "mappedTier": "subsidiary"
+    }
+  ],
+  "moveSelectionUnchanged": true,
+  "scoreBlind": true
+}

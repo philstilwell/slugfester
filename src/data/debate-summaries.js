@@ -9472,5 +9472,51 @@ export const debateSummaries = [
         "title": "Silence, suffering, and comparative explanation"
       }
     ]
+  },
+  {
+    "id": "baggini-baker-hytch-divine-hiddenness-2025",
+    "number": "211",
+    "title": "Divine Hiddenness and Evidential Ambiguity: Julian Baggini vs. Max Baker-Hytch (2025)",
+    "label": "Divine hiddenness, evidential ambiguity, and belief",
+    "date": "2025-02-21",
+    "duration": "1 hr 2 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=djyjKuN9o98",
+    "motion": "Does divine hiddenness provide good evidence against God's existence?",
+    "summary": "Baker-Hytch narrowly prevailed by probabilistically integrating hiddenness with relational and cumulative evidence, while Baggini pressed cultural contingency, geographic luck, and experiential mediation.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Atheistic hiddenness critique",
+        "speaker": "Julian Baggini",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian evidential-ambiguity defense",
+        "speaker": "Max Baker-Hytch",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Hiddenness, cultural contingency, and religious diversity"
+      },
+      {
+        "title": "Probabilistic hiddenness, coercion, and relational goods"
+      },
+      {
+        "title": "Personal experience and sincere seeking"
+      },
+      {
+        "title": "Historical evidence, psychology, and rational inquiry"
+      },
+      {
+        "title": "Pluralism, experiential diversity, judgment, and the cumulative case"
+      }
+    ]
   }
 ];
