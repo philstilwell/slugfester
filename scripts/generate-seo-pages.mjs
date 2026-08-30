@@ -39,6 +39,7 @@ import {
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260830-profile-score-no-median-highlight";
+const rankingsAssetVersion = "20260830-ranking-comparison-histograms";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -58,7 +59,7 @@ function sentence(value = "") {
   return /[.!?]$/.test(text) ? text : `${text}.`;
 }
 
-function renderHtml(seo, noscriptText) {
+function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const canonicalUrl = seo.canonicalPath === null ? "" : absoluteUrl(seo.canonicalPath || "/");
   const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
   const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
@@ -123,13 +124,13 @@ ${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl
     <link rel="mask-icon" href="/assets/favicon.svg" color="#d35d47">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="stylesheet" href="/src/styles.css?v=${assetVersion}">
+    <link rel="stylesheet" href="/src/styles.css?v=${pageAssetVersion}">
     ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
   </head>
   <body>
     <div id="app"></div>
     <noscript>${escapeHtml(noscriptText)}</noscript>
-    <script type="module" src="/src/app.js?v=${assetVersion}"></script>
+    <script type="module" src="/src/app.js?v=${pageAssetVersion}"></script>
   </body>
 </html>
 `;
@@ -252,7 +253,8 @@ debates.forEach((debate) => {
 
 function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
   const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
-  pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText));
+  const pageAssetVersion = pathname === rankingsPath() ? rankingsAssetVersion : assetVersion;
+  pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText, pageAssetVersion));
   if (seo.robots !== "noindex,follow") {
     sitemapUrls.push({ loc: absoluteUrl(pathname), lastmod });
   }

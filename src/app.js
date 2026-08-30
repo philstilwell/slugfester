@@ -1621,7 +1621,46 @@ function renderComparisonOptions(people, selectedName, placeholder) {
   ].join("");
 }
 
-function renderComparisonPerson(person) {
+function renderScoreHistogram(
+  distribution,
+  {
+    className = "",
+    ariaLabel = "Overall score distribution from 50 to 100",
+    caption = "Bar height shows the number of published scorecards in each range."
+  } = {}
+) {
+  const figureClass = ["profile-score-histogram", className].filter(Boolean).join(" ");
+
+  return `
+    <figure class="${escapeHtml(figureClass)}">
+      <div class="profile-score-chart">
+        <span class="profile-score-y-label" aria-hidden="true">Scorecards</span>
+        <ol class="profile-score-bars" aria-label="${escapeHtml(ariaLabel)}">
+          ${distribution.bands
+            .map((band) => {
+              const height = (band.count / distribution.maximumBandCount) * 100;
+              return `
+                <li class="${band.count ? "has-score" : "is-empty"}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}">
+                  <strong class="profile-score-bar-count" aria-hidden="true">${band.count || ""}</strong>
+                  <span class="profile-score-bar" aria-hidden="true"><i style="--bar-height: ${height.toFixed(2)}%"></i></span>
+                  <span class="profile-score-bucket-label" aria-hidden="true">${escapeHtml(band.label)}</span>
+                </li>
+              `;
+            })
+            .join("")}
+        </ol>
+      </div>
+      <figcaption>${escapeHtml(caption)}</figcaption>
+    </figure>
+  `;
+}
+
+function renderComparisonPerson(person, maximumBandCount) {
+  const distribution = {
+    ...profileScoreDistribution(person.records),
+    maximumBandCount
+  };
+
   return `
     <article class="comparison-person">
       <a class="comparison-person-identity" href="${escapeHtml(interlocutorPath(person))}">
@@ -1637,6 +1676,11 @@ function renderComparisonPerson(person) {
         <div><dt>Fallacies</dt><dd class="fallacy">${formatTagRate(person.tagSummary.fallacyRate)}</dd></div>
         <div><dt>Biases</dt><dd class="bias">${formatTagRate(person.tagSummary.biasRate)}</dd></div>
       </dl>
+      ${renderScoreHistogram(distribution, {
+        className: "comparison-score-histogram",
+        ariaLabel: `${person.name} overall score distribution from 50 to 100`,
+        caption: "Overall scores by five-point range; both graphs use the same vertical scale."
+      })}
     </article>
   `;
 }
@@ -1649,9 +1693,16 @@ function renderRankingComparison(state) {
   const first = comparisonRankings.find((person) => person.name === state.comparisonA);
   const second = comparisonRankings.find((person) => person.name === state.comparisonB);
   const selectedBoth = state.comparisonA && state.comparisonB;
+  const maximumBandCount =
+    first && second
+      ? Math.max(
+          profileScoreDistribution(first.records).maximumBandCount,
+          profileScoreDistribution(second.records).maximumBandCount
+        )
+      : 1;
   const comparisonContent =
     first && second
-      ? `<div class="comparison-results">${renderComparisonPerson(first)}${renderComparisonPerson(second)}</div>`
+      ? `<div class="comparison-results">${renderComparisonPerson(first, maximumBandCount)}${renderComparisonPerson(second, maximumBandCount)}</div>`
       : `<p class="comparison-empty">${selectedBoth ? "One selected interlocutor has no qualifying scorecards in the current topic focus." : "Choose two interlocutors to compare their score averages, opponents faced, and named reasoning-tag rates."}</p>`;
 
   return `
@@ -1771,26 +1822,7 @@ function renderProfileDistribution(distribution, appearances) {
         <strong>${escapeHtml(distribution.consistency)}</strong>
         <span>Median ${formatAverageScore(distribution.median)} · Range ${distribution.lowest}–${distribution.highest} · ${appearances} ${appearances === 1 ? "scorecard" : "scorecards"}</span>
       </div>
-      <figure class="profile-score-histogram">
-        <div class="profile-score-chart">
-          <span class="profile-score-y-label" aria-hidden="true">Scorecards</span>
-          <ol class="profile-score-bars" aria-label="Overall score distribution from 50 to 100">
-            ${distribution.bands
-              .map((band) => {
-                const height = (band.count / distribution.maximumBandCount) * 100;
-                return `
-                  <li class="${band.count ? "has-score" : "is-empty"}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}">
-                    <strong class="profile-score-bar-count" aria-hidden="true">${band.count || ""}</strong>
-                    <span class="profile-score-bar" aria-hidden="true"><i style="--bar-height: ${height.toFixed(2)}%"></i></span>
-                    <span class="profile-score-bucket-label" aria-hidden="true">${escapeHtml(band.label)}</span>
-                  </li>
-                `;
-              })
-              .join("")}
-          </ol>
-        </div>
-        <figcaption>Bar height shows the number of published scorecards in each range.</figcaption>
-      </figure>
+      ${renderScoreHistogram(distribution)}
     </section>
   `;
 }

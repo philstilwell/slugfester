@@ -2078,6 +2078,32 @@ a {
   line-height: 1.4;
 }
 
+.profile-score-histogram.comparison-score-histogram {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 3px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(47, 143, 133, 0.18);
+}
+
+.comparison-score-histogram .profile-score-chart {
+  padding-left: 28px;
+}
+
+.comparison-score-histogram .profile-score-bars {
+  gap: clamp(3px, 0.55vw, 7px);
+  height: clamp(135px, 14vw, 170px);
+}
+
+.comparison-score-histogram .profile-score-y-label {
+  font-size: 0.54rem;
+}
+
+.comparison-score-histogram figcaption {
+  margin: 8px 0 0 28px;
+  font-size: 0.66rem;
+}
+
 @media (max-width: 520px) {
   .profile-score-histogram {
     width: 100%;
