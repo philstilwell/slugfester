@@ -9233,5 +9233,54 @@ export const debateSummaries = [
         "title": "Moral reality, privation, and human value"
       }
     ]
+  },
+  {
+    "id": "williams-dawkins-god-science-reality-2026",
+    "number": "206",
+    "title": "God, Science and the Poetry of Reality: Rowan Williams vs. Richard Dawkins (2026)",
+    "label": "God, science, and the poetry of reality",
+    "date": "2026-08-30",
+    "duration": "1 hr 39 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=udxloyjbtIE",
+    "motion": "What best explains the poetry of reality: God or science?",
+    "summary": "Scientific naturalism wins by one point: Dawkins leads on consciousness, creative by-products, and evolutionary suffering, while Williams answers more precisely on allegorical Genesis, noncompetitive divine action, and classical simplicity.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "Rowan Williams",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 77,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Genesis, Evolution, and Human Fallibility"
+      },
+      {
+        "title": "Scientific Explanation and Divine Creativity"
+      },
+      {
+        "title": "Consciousness, Soul, and Survival After Death"
+      },
+      {
+        "title": "Art, Creative Excess, and Evolution"
+      },
+      {
+        "title": "Suffering, Incarnation, and the Character of Reality"
+      },
+      {
+        "title": "Divine Action, Simplicity, and Reconsideration Evidence"
+      }
+    ]
   }
 ];

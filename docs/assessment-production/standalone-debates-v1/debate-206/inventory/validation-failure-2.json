@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-deterministic-controller-remediation",
+  "debateNumber": "206",
+  "invalidInventorySha256": "8d340c5e62e0127714f2b7e89ee31b84301f0c3512ab0b5727ef0094e822893a",
+  "failures": [
+    "The recovered inventory used serial move IDs m01 through m25 instead of required semantic lowercase slugs",
+    "The recovered reply component IDs inherited the same serial naming pattern instead of describing the specific response contact",
+    "Move m17 omitted a repeated source word from one quote-eligible span, so the string was not source-exact",
+    "Move m21 omitted the source's repeated phrase from one quote-eligible span, so the string was not source-exact",
+    "Moves m24 and m25 named evidence bridges that were absent from their routes, while each route had already reached the seven-bridge maximum"
+  ],
+  "assessmentSubstanceAffected": false,
+  "movesChangedByRemediation": false,
+  "scoresAvailableAtRemediation": false,
+  "permittedRemediation": "Rename identifiers and every internal reference; restore the two quote strings to exact substrings of their unchanged source spans; consolidate two redundant central bridges into broader existing bridges so the intended evidence bridges fit within the seven-bridge maximum; preserve sections, speakers, source spans, propositions, importance, and selection"
+}

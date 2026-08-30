@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-audio-span-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-validated-and-frozen-before-judgment",
+  "debateNumber": "206",
+  "trigger": "Local source-audio voice comparison identified two mixed-speaker spans despite correct propositions and speaker assignments.",
+  "before": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-206/inventory/preserved-inventory-before-audio-span-correction.json",
+    "sha256": "c969ccb79c06108f6d1c3d7f1f78aff9a66601124321e75624071ee07004c6a6"
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-206/inventory/inventory.json",
+    "sha256": "92af9ab5a8f2cd9aee88d6c7be787f5759be5e509224250dbef46d36d89c7234"
+  },
+  "corrections": [
+    {
+      "moveId": "divine-action-complements-complete-causal-process",
+      "oldEvents": [
+        1988,
+        2020
+      ],
+      "correctedEvents": [
+        2007,
+        2019
+      ],
+      "resolvedSpeaker": "Rowan Williams",
+      "propositionUnchanged": true,
+      "responseComponentsUnchanged": true,
+      "quoteStringsUnchanged": true
+    },
+    {
+      "moveId": "god-as-ground-not-finite-entity",
+      "oldEvents": [
+        2268,
+        2289
+      ],
+      "correctedEvents": [
+        2275,
+        2280
+      ],
+      "resolvedSpeaker": "Rowan Williams",
+      "propositionUnchanged": true,
+      "responseComponentsUnchanged": true,
+      "removedMixedSpeakerQuote": "We're obviously always reaching for the metaphor"
+    }
+  ],
+  "selectedMovesUnchanged": true,
+  "sectionsWeightsImportanceAndBurdenLinksUnchanged": true,
+  "scoresAvailableAtCorrection": false,
+  "scoreBlind": true,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "206",
+    "sections": 6,
+    "moves": 25,
+    "belowHighAttributionMoveIds": [
+      "natural-composer-explains-sublime-art",
+      "divine-fidelity-sustains-consciousness",
+      "prehistoric-art-exceeds-survival-needs",
+      "creation-as-continuous-divine-sustaining",
+      "scientific-processes-make-divine-creativity-superfluous",
+      "incarnation-too-parochial-for-cosmos",
+      "designer-hypothesis-undermines-scientific-explanation",
+      "divine-action-complements-complete-causal-process",
+      "prayer-hearing-conflicts-with-simplicity",
+      "divine-tasks-require-organized-complexity",
+      "god-as-ground-not-finite-entity",
+      "god-as-testable-scientific-hypothesis",
+      "faith-change-as-cumulative-lived-process"
+    ]
+  }
+}

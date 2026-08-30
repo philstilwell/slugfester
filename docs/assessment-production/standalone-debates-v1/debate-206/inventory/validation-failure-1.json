@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-fresh-score-blind-recovery",
+  "debateNumber": "206",
+  "invalidInventorySha256": "a74b4dcf1febd204cb175f291b5d5e60283a18b97f22fe916e2cb7ea7042d88e",
+  "failures": [
+    "moves[2] contained a quote-eligible span that was not an exact 3-18 word substring of the locked source span",
+    "selectionBalanceAudit.sectionAbsoluteDifference was 3 instead of the controller-locked threshold 2",
+    "publicationCapacityAudit reported fourthRowAuthorized=false for every section even though sections without a required fourth row already satisfy the authorization condition",
+    "The 99-minute source was materially underrepresented by an exactly one-move-per-side pattern in every section, combining source-distinct arguments and direct replies that require separate burden and response evaluation"
+  ],
+  "scoresAvailableAtFailure": false,
+  "priorOutputAvailableToRecoveryWorker": false,
+  "recoveryScope": "fresh complete source-only score-blind inventory"
+}
