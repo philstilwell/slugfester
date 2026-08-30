@@ -1221,9 +1221,6 @@ function profileScoreDistribution(records) {
             score >= minimum &&
             (maximum === PROFILE_SCORE_MAXIMUM ? score <= maximum : score < minimum + PROFILE_SCORE_BUCKET_SIZE)
         ).length,
-        containsMedian:
-          median >= minimum &&
-          (maximum === PROFILE_SCORE_MAXIMUM ? median <= maximum : median < minimum + PROFILE_SCORE_BUCKET_SIZE),
         label: `${minimum}–${maximum}`
       };
     }
@@ -1781,9 +1778,8 @@ function renderProfileDistribution(distribution, appearances) {
             ${distribution.bands
               .map((band) => {
                 const height = (band.count / distribution.maximumBandCount) * 100;
-                const medianNote = band.containsMedian ? "; contains the median score" : "";
                 return `
-                  <li class="${band.count ? "has-score" : "is-empty"}${band.containsMedian ? " is-median" : ""}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}${medianNote}">
+                  <li class="${band.count ? "has-score" : "is-empty"}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}">
                     <strong class="profile-score-bar-count" aria-hidden="true">${band.count || ""}</strong>
                     <span class="profile-score-bar" aria-hidden="true"><i style="--bar-height: ${height.toFixed(2)}%"></i></span>
                     <span class="profile-score-bucket-label" aria-hidden="true">${escapeHtml(band.label)}</span>
@@ -1793,7 +1789,7 @@ function renderProfileDistribution(distribution, appearances) {
               .join("")}
           </ol>
         </div>
-        <figcaption>Bar height shows the number of published scorecards in each range. The outlined bar contains the median.</figcaption>
+        <figcaption>Bar height shows the number of published scorecards in each range.</figcaption>
       </figure>
     </section>
   `;
