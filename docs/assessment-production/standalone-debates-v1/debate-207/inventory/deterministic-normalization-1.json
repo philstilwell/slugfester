@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "207",
+  "priorInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-207/inventory/preserved-invalid-inventory-1.json",
+    "sha256": "2a726287fb39ae7298b0c02aeba5dff78d6e098a6b12d0acbd56a8b51cd3162a"
+  },
+  "finalInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-207/inventory/inventory.json",
+    "sha256": "052ed01f32d874e648eb47ea212482a0acffb5d0558a87bb5b183440f682af51"
+  },
+  "changes": [
+    "Reconstructed every source excerpt and timestamp endpoint directly from the locked events.",
+    "Corrected two quote strings to exact source substrings without changing their meanings.",
+    "Mapped two Baldwin-effect moves from an omitted bridge ID to the existing archetypal-action bridge that states their intended burden contact.",
+    "Recomputed selection-balance counts and the frozen thresholds from the selected moves.",
+    "Normalized publication-capacity booleans so sections without a fourth row are correctly authorized by default."
+  ],
+  "moveSelectionUnchanged": true,
+  "sourceSpansUnchanged": true,
+  "sectionsAndWeightsUnchanged": true,
+  "propositionsUnchanged": true,
+  "burdenLinksUnchanged": true,
+  "importanceUnchanged": true,
+  "scoreBlind": true,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "207",
+    "sections": 5,
+    "moves": 24,
+    "belowHighAttributionMoveIds": []
+  }
+}

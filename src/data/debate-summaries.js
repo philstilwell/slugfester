@@ -9282,5 +9282,51 @@ export const debateSummaries = [
         "title": "Divine Action, Simplicity, and Reconsideration Evidence"
       }
     ]
+  },
+  {
+    "id": "peterson-dawkins-memes-archetypes-truth-2024",
+    "number": "207",
+    "title": "Memes, Archetypes, and Religious Truth: Jordan Peterson vs. Richard Dawkins (2024)",
+    "label": "Memes, archetypes, and religious truth",
+    "date": "2026-08-30",
+    "duration": "1 hr 32 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8wBtFNj_o5k",
+    "motion": "Do archetypes and religious narratives convey truths that factual naturalism misses?",
+    "summary": "Scientific naturalism wins 86–74 by separating symbolic usefulness from factual warrant, demanding traceable evidence, and explaining cultural transmission naturally, while symbolic realism remains strongest on narrative prioritization and action-guiding compression.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Symbolic religious realism",
+        "speaker": "Jordan Peterson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 86,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Memes, archetypes, and the story-shaped prioritization of facts"
+      },
+      {
+        "title": "Biblical textual evolution, sacrifice, and inspiration"
+      },
+      {
+        "title": "Christianity’s factual claims and symbolic truth"
+      },
+      {
+        "title": "Scientific achievement, value selection, and religious grounding"
+      },
+      {
+        "title": "Dragons, natural selection, and Baldwin effects"
+      }
+    ]
   }
 ];
