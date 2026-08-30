@@ -1029,12 +1029,12 @@ function renderSectionScoreDistribution(distribution) {
     .join("");
 
   return `
-    <section class="section-score-distribution" aria-labelledby="section-score-distribution-heading">
+    <section class="section-score-distribution backend-rubric-evidence" aria-labelledby="section-score-distribution-heading">
       <div class="section-score-distribution-heading">
         <div>
-          <p class="eyebrow">Section-score distribution</p>
-          <h2 id="section-score-distribution-heading">How individual debate sections score</h2>
-          <p>This chart counts the two side scores assigned within each debate section—not overall debate scores or interlocutor averages. Each vertical bar covers a two-percentage-point range and uses all currently published scorecards, independent of the Rankings filters above.</p>
+          <p class="eyebrow">Rubric quality check</p>
+          <h2 id="section-score-distribution-heading">The rubric distinguishes stronger from weaker sections</h2>
+          <p>A useful assessment rubric should separate different levels of argumentative performance rather than repeatedly returning one narrow score. Across the published corpus, these section-side results occupy a meaningful range instead of collapsing into a single band. That is evidence that the six dimensions and importance weights are doing discriminating work—not proof that every individual judgment is correct.</p>
         </div>
         <dl class="section-score-distribution-summary">
           <div><dt>Section-side scores</dt><dd>${distribution.total.toLocaleString("en-US")}</dd></div>
@@ -1055,7 +1055,7 @@ function renderSectionScoreDistribution(distribution) {
             </ol>
           </div>
         </div>
-        <figcaption>Vertical axis: number of section-side scores. Horizontal axis: section score range (%). Numbers above the bars are counts.</figcaption>
+        <figcaption>This chart includes the two side scores assigned within every published debate section—not overall debate scores or interlocutor averages. Vertical axis: number of scores. Horizontal axis: two-percentage-point score ranges. Numbers above the bars are counts.</figcaption>
       </figure>
     </section>
   `;
@@ -1493,7 +1493,6 @@ function renderRankings() {
   const filteredDebates = rankingDebates(state);
   const rankings = rankedInterlocutors(state);
   const reasoningTopics = reasoningTagDistribution();
-  const sectionScores = sectionScoreDistribution();
   const rankingTagMaximum = Math.max(
     1,
     ...rankings.flatMap((person) => [person.tagSummary.fallacyRate, person.tagSummary.biasRate])
@@ -1577,8 +1576,6 @@ function renderRankings() {
       </section>
 
       ${renderReasoningDistribution(reasoningTopics)}
-
-      ${renderSectionScoreDistribution(sectionScores)}
     </main>
   `);
 
@@ -2156,6 +2153,7 @@ function renderResultPerson(person) {
 }
 
 function renderBackend() {
+  const sectionScores = sectionScoreDistribution();
   setSeo(backendSeo());
 
   app.innerHTML = renderShell(`
@@ -2368,6 +2366,8 @@ function renderBackend() {
           ${renderScoreBand("<50", "Defective", "A move that is irrelevant, circular, self-undermining, or fallacious at the point where the argument needs support.", 42)}
         </div>
       </section>
+
+      ${renderSectionScoreDistribution(sectionScores)}
 
       <section class="assessment-examples" aria-labelledby="assessment-examples-heading">
         <div class="section-heading">

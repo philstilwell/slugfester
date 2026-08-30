@@ -39,8 +39,9 @@ import {
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260830-profile-score-no-median-highlight";
-const rankingsAssetVersion = "20260830-ranking-comparison-histograms";
+const rankingsAssetVersion = "20260830-ranking-comparison-histograms-v2";
 const debateAssetVersion = "20260830-debate-position-histograms-v3";
+const backendAssetVersion = "20260830-backend-rubric-distribution";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -256,9 +257,11 @@ function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
   const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
   const pageAssetVersion = pathname.startsWith("/debate/")
     ? debateAssetVersion
-    : pathname === rankingsPath()
-      ? rankingsAssetVersion
-      : assetVersion;
+    : pathname === backendPath()
+      ? backendAssetVersion
+      : pathname === rankingsPath()
+        ? rankingsAssetVersion
+        : assetVersion;
   pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText, pageAssetVersion));
   if (seo.robots !== "noindex,follow") {
     sitemapUrls.push({ loc: absoluteUrl(pathname), lastmod });
