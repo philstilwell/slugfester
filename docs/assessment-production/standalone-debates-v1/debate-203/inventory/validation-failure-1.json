@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-and-remediated-before-judgment",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-203/inventory/preserved-invalid-inventory-1.json",
+    "sha256": "a49fa8db0f17ba1564f290b7c4f4ed2b6f8782532fdc089c145b0fe45a669f94"
+  },
+  "validatorFailure": "inventory: exactly two routes required",
+  "additionalControllerFindings": [
+    "The worker wrote sideRoutes instead of the required routes array.",
+    "The worker wrote section weight instead of weightPercent.",
+    "The worker used generic mNN move identifiers rather than semantic lowercase slugs.",
+    "The worker used greater-than rather than greater-than-or-equal threshold logic for its balance rationale flag.",
+    "Eight source spans were broader than the smallest complete passage needed to establish the selected proposition."
+  ],
+  "judgmentWorkStarted": false,
+  "scoreWorkStarted": false
+}

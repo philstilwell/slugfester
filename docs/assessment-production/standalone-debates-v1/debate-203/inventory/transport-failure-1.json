@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-transport-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-pre-inference-schema-failure",
+  "failedAt": "2026-08-29T23:43:00Z",
+  "stage": "score-blind-inventory",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "sessionId": "01a04fe7-aa87-7933-9996-29bc5ec3c322",
+  "modelInferenceStarted": false,
+  "outputProduced": false,
+  "errorCode": "invalid_json_schema",
+  "error": "Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.",
+  "diagnosis": "The wrapper schema allowed additional properties, which the structured-output endpoint rejects. The recovery removes the response-format wrapper and retains the same score-blind substantive instructions in a fresh isolated context.",
+  "directIncrementalCostUsd": 0
+}

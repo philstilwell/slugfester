@@ -9089,5 +9089,51 @@ export const debateSummaries = [
         "title": "Jesus, miracles, and closing cases"
       }
     ]
+  },
+  {
+    "id": "craig-flew-god-existence-1998",
+    "number": "203",
+    "title": "Does God Exist? William Lane Craig vs. Antony Flew (1998)",
+    "label": "Evidence for and against God's existence",
+    "date": "2026-08-29",
+    "duration": "1 hr 34 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NixhL0CoH2s",
+    "motion": "Does God exist?",
+    "summary": "Flew narrowly prevailed because his disciplined evidential burden and domain objections exposed unresolved causal and probabilistic leaps across Craig's cumulative case.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Theism",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheistic skepticism",
+        "speaker": "Antony Flew",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 77,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Cosmological causation and the universe’s beginning"
+      },
+      {
+        "title": "Fine-tuning and design inference"
+      },
+      {
+        "title": "Morality, freedom, hell, and divine goodness"
+      },
+      {
+        "title": "Historical evidence for Jesus’s resurrection"
+      },
+      {
+        "title": "Religious experience, personhood, and epistemic burden"
+      }
+    ]
   }
 ];

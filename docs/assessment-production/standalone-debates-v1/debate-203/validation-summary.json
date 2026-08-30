@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "203",
+  "debateId": "craig-flew-god-existence-1998",
+  "completedAt": "2026-08-30T00:48:13.000Z",
+  "source": {
+    "videoId": "NixhL0CoH2s",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 14608,
+    "events": 1899,
+    "transcriptSha256": "887ee0f5c25d16b84e7045128d780d3e9e93c91e7bf6e432a5b9b72e9b6075df",
+    "eventsSha256": "15a8135b72bba9bd3b7ef4c7561bcf62b8e3cd66d5e05ccf99d65e6e9cf9f59b",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 35,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 40,
+    "adjudicatedDisputes": 40,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 74,
+      "con": 77,
+      "winner": "con",
+      "margin": 3
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "argumentCards": 35,
+    "uniqueLockedMovesMapped": 35,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "805ece392c596c24bad6785793f599214cdce3c71a12431538d245a702587cb9",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-203/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 22,
+      "mean": 23,
+      "maximum": 25,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 121,
+      "mean": 124.4,
+      "maximum": 125
+    },
+    "critiqueCharacterRange": [887, 1043],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "minimum": 22,
+      "mean": 22.5,
+      "maximum": 23
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-203/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 35,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 455,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 29,
+    "acceptedRhetoricalTags": 7,
+    "acceptedFallacyTags": 5,
+    "acceptedBiasTags": 2,
+    "rejectedRhetoricalTagCandidates": 22,
+    "overruledOverbroadAdjudicatorAcceptances": 5,
+    "restoredAdjudicatorRejections": 1,
+    "aiContributionWords": 661,
+    "aiContributionCommas": 53
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 7,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-203/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 7,
+    "rhetoricalTagsVisuallyVerified": 7,
+    "desktopEvidenceSha256": "6b5290095eef804cf7cdb435d803972b294cd199217c0b433f9e1d7621f34391",
+    "mobileEvidenceSha256": "96a819c9207ea53f21db96e48515759880fe9850e87ed3972c1a285159beeb5e"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "203 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "393 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "35 moves; description mean 23 words; critique mean 124.4 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "35 moves reviewed against 13 definitions in 2 blind passes; 29 candidates adjudicated; 5 fallacies and 2 biases accepted; 22 candidates rejected"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "35 populated cards and 7 accepted tags at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 203 with and without --repository-only",
+      "status": "passed",
+      "result": "35 moves; 5 sections; 40 disputes; score stability mean 1, maximum 2, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "203 of 203 transcripts available; all 203 local hash chains checked"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check (including the postcheck lifecycle)",
+      "status": "passed",
+      "result": "syntax, debate, corpus, SEO, campaign, calibration, standalone, content-parity, rhetorical-tag, and multi-speaker compatibility checks passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInvalidInventoryAttempts": 1,
+    "semanticCapacityRemediations": 1,
+    "rejectedPublicationDrafts": 1,
+    "isolatedAtomicProseRepairs": 18,
+    "wrapperOnlyNormalizations": 3,
+    "manifestHashTypoCorrections": 1,
+    "overbroadRhetoricalAcceptancesOverruled": 5,
+    "rhetoricalRejectionDecisionsRestored": 1,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 19,
+    "con": 16,
+    "disposition": "All 35 frozen moves are mapped exactly once. Craig's three-move surplus reflects distinct constructive fine-tuning and resurrection arguments plus replies; no scored move was deleted, merged, or padded."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

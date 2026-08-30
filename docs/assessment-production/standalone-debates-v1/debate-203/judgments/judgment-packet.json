@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-08-29T23:56:27Z",
+  "debateNumber": "203",
+  "debateId": "craig-flew-god-existence-1998",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does God exist?",
+  "sides": {
+    "pro": { "speaker": "William Lane Craig", "position": "Theism" },
+    "con": { "speaker": "Antony Flew", "position": "Atheistic skepticism" }
+  },
+  "evidenceLocks": {
+    "inventory": { "path": "docs/assessment-production/standalone-debates-v1/debate-203/inventory/inventory.json", "sha256": "e94493ac40ab30ea1fac99e7a3dc84862d9325df867764dcab26c6567020d789", "bytes": 73336 },
+    "events": { "path": ".assessment-cache/captions/NixhL0CoH2s/events.json", "sha256": "15a8135b72bba9bd3b7ef4c7561bcf62b8e3cd66d5e05ccf99d65e6e9cf9f59b", "bytes": 203895 },
+    "transcript": { "path": ".assessment-cache/captions/NixhL0CoH2s/transcript.txt", "sha256": "887ee0f5c25d16b84e7045128d780d3e9e93c91e7bf6e432a5b9b72e9b6075df", "bytes": 85993 },
+    "workflow": { "path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee", "bytes": 6705 },
+    "rubric": { "path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c", "bytes": 6634 },
+    "validator": { "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df", "bytes": 41775 }
+  },
+  "isolationBoundary": { "legacyAssessmentsUnavailable": true, "calculatedTotalsUnavailable": true, "winnerLabelsUnavailable": true, "otherJudgmentUnavailable": true, "publicationProseUnavailable": true, "otherDebatesUnavailable": true, "aggregateRankingsUnavailable": true, "priorScoresUnavailable": true, "aiExtensionsUnavailable": true },
+  "instructions": { "reviewCompleteLockedInventory": true, "judgeEveryMoveExactlyOnce": true, "preserveInventoryStructure": true, "doNotAddDropMergeOrSplitMoves": true, "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true, "scoreTranscriptPerformanceNotWorldviewTruth": true, "supplyRatingsAndRationalesOnly": true, "calculatedMoveSectionAndOverallScoresForbidden": true, "winnerForbidden": true, "publicationProseForbidden": true },
+  "dimensionKeys": ["logicalCoherence", "evidenceWarrant", "responsiveness", "relevanceBurden", "precisionClarity", "calibrationCharity"],
+  "ratingControls": { "minimum": 0, "maximum": 100, "integerOnly": true, "rationaleMinimumCharacters": 40, "bands": { "95-100": "Exceptional and unusually complete", "85-94": "Very strong", "75-84": "Strong or competent", "65-74": "Mixed", "50-64": "Weak", "25-49": "Very weak", "0-24": "Non-performance" } },
+  "burdenAdjustmentControls": { "minimum": -5, "maximum": 5, "integerOnly": true, "nonzeroRequiresDistinctDebateWideConsequence": true, "nonzeroRequiresBurdenCompletionEffect": true, "nonzeroRequiresNotAlreadyScored": true, "duplicateCaptureForcesZero": true },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "e94493ac40ab30ea1fac99e7a3dc84862d9325df867764dcab26c6567020d789",
+    "judgmentFields": { "moveId": "exact locked move ID in inventory order", "assessmentConfidence": "high, medium, or low", "dimensions": "exactly the six named dimension objects, each with integer value and rationale" },
+    "burdenCompletionAdjustmentFields": { "value": "integer -5 through 5", "rationale": "source-grounded explanation", "eligibility": ["distinctDebateWideConsequence", "affectsBurdenCompletion", "notAlreadyScored", "affectedBurdenIds", "completionCriterion", "relatedMoveIds", "distinctConsequence", "alreadyCapturedBy", "counterfactual"] },
+    "requiredAuditBooleans": ["completeLockedInventoryReviewed", "allMovesJudgedOnce", "ratingsOnlyNoCalculatedScores", "publicationBlind", "scoreBlind"]
+  }
+}
