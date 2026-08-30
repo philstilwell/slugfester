@@ -1930,6 +1930,12 @@ a {
   line-height: 1.38;
 }
 
+@media (min-width: 641px) {
+  .profile-opponents .profile-section-heading {
+    gap: clamp(38px, 6vw, 72px);
+  }
+}
+
 .profile-distribution-overview {
   display: flex;
   flex-wrap: wrap;

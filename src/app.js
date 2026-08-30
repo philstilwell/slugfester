@@ -1893,7 +1893,7 @@ function renderProfileTopics(topics) {
 
 function renderProfileOpponents(opponents) {
   return `
-    <section class="profile-breakdown" aria-labelledby="profile-opponents-heading">
+    <section class="profile-breakdown profile-opponents" aria-labelledby="profile-opponents-heading">
       <div class="profile-section-heading">
         <div>
           <p class="eyebrow">Opponents faced</p>
