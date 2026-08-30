@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-score-blind-source-normalization",
+  "debateNumber": "210",
+  "rawWorkerOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-210/inventory/raw-worker-output.json",
+    "sha256": "a08f797389cee14a24c755a114fe461248e8d5ce09294d30fd4c62eafc2b4a3f"
+  },
+  "validatorError": "moves[10]: quote is not an exact 3-18 word source substring",
+  "diagnosis": "One quote candidate differed from the source-exact caption text. Deterministic normalization reconstructs every span and retains only exact-length source substrings without changing move selection, propositions, importance, or argumentative links."
+}

@@ -9426,5 +9426,51 @@ export const debateSummaries = [
         "title": "Possible divine reasons and rival worldview explanations"
       }
     ]
+  },
+  {
+    "id": "paterson-schmid-divine-hiddenness-relationship-2026",
+    "number": "210",
+    "title": "Divine Hiddenness and Religious Evidence: Joe Schmid vs. Dan Paterson (2026)",
+    "label": "Divine hiddenness, relationship, and religious evidence",
+    "date": "2026-08-30",
+    "duration": "1 hr 14 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ed8Gb7zaLIM",
+    "motion": "Does divine hiddenness provide significant evidence against a perfectly loving God?",
+    "summary": "Schmid won by arguing that nonculpable nonbelief, demographic clustering, and silence amid tragedy fit naturalism better, while Paterson's temporary-redemption defenses remained comparatively under-supported.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Evidential divine-hiddenness critique",
+        "speaker": "Joe Schmid",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian hiddenness defense",
+        "speaker": "Dan Paterson",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 88,
+      "con": 83,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Formulations and nonresistant nonbelief"
+      },
+      {
+        "title": "Relationship, development, and revelation"
+      },
+      {
+        "title": "Distribution, salvation, and earthly costs"
+      },
+      {
+        "title": "Timing, freedom, and skeptical theism"
+      },
+      {
+        "title": "Silence, suffering, and comparative explanation"
+      }
+    ]
   }
 ];

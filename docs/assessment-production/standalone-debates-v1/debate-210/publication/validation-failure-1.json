@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-field-disjoint-repair",
+  "debateNumber": "210",
+  "debateId": "paterson-schmid-divine-hiddenness-relationship-2026",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/preserved-invalid-output-1.json",
+    "sha256": "b8a8fc7c9d126983a90a62159c0e810738fac0dc687a111b587c74c31c7efb95",
+    "bytes": 51946
+  },
+  "failures": [
+    "Three critique fields exceeded the 130-word ceiling by one or two words while retaining valid four-sentence structure and the 880-character floor.",
+    "Two card descriptions contained 21 words instead of the required 22–28 words.",
+    "The pro and con quote contexts contained 19 and 20 words instead of the required 22–38 words."
+  ],
+  "writableLeafFields": [
+    "candidate.sections[1].exchanges[1].pro.critique",
+    "candidate.sections[1].exchanges[2].con.critique",
+    "candidate.sections[2].exchanges[0].pro.words",
+    "candidate.sections[2].exchanges[0].con.critique",
+    "candidate.sections[4].exchanges[1].pro.words",
+    "candidate.quotes.pro.context",
+    "candidate.quotes.con.context"
+  ],
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[1].exchanges[1].pro.critique",
+        "candidate.sections[1].exchanges[2].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[2].exchanges[0].pro.words",
+        "candidate.sections[2].exchanges[0].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.sections[4].exchanges[1].pro.words",
+        "candidate.quotes.pro.context"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.quotes.con.context"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    }
+  ],
+  "frozenFieldsUnaffected": [
+    "identity",
+    "source evidence",
+    "inventory",
+    "judgments",
+    "adjudication",
+    "scores",
+    "all unlisted publication fields"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-four-field-disjoint-shards",
+  "debateNumber": "210",
+  "debateId": "paterson-schmid-divine-hiddenness-relationship-2026",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/preserved-invalid-output-1.json",
+    "sha256": "b8a8fc7c9d126983a90a62159c0e810738fac0dc687a111b587c74c31c7efb95",
+    "bytes": 51946
+  },
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/output.json",
+    "sha256": "e0fdeb94dfbcd4356a535c8fc2934f28b3852a0934b8d148aba7ddc61606a523",
+    "bytes": 59285
+  },
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[1].exchanges[1].pro.critique",
+        "candidate.sections[1].exchanges[2].con.critique"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/repair-1/execution.json",
+        "sha256": "51294c3fb4fe92004d3a13a34ab3fe25300d20dfc58d886419e6716e7ef345ac",
+        "bytes": 1765
+      }
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[2].exchanges[0].pro.words",
+        "candidate.sections[2].exchanges[0].con.critique"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/repair-2/execution.json",
+        "sha256": "ec01af5a0e7be6a4a7dc0021245ad8124d10da823b211c0ee2b0c84cf440fa1a",
+        "bytes": 1759
+      }
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.sections[4].exchanges[1].pro.words",
+        "candidate.quotes.pro.context"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/repair-3/execution.json",
+        "sha256": "b809a84225ea667311d012fb021a6131bf5d13680c0d347789e2f797d2eb9581",
+        "bytes": 1719
+      }
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.quotes.con.context"
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-210/publication/repair-4/execution.json",
+        "sha256": "56788d1268b4c7baef82dde5851c857e6615eb9bd5bc3120881c1945d9290508",
+        "bytes": 1615
+      }
+    }
+  ],
+  "changedLeafRoots": [
+    "candidate.quotes.pro.context",
+    "candidate.quotes.con.context",
+    "candidate.sections[1].exchanges[1].pro.critique",
+    "candidate.sections[1].exchanges[2].con.critique",
+    "candidate.sections[2].exchanges[0].pro.words",
+    "candidate.sections[2].exchanges[0].con.critique",
+    "candidate.sections[4].exchanges[1].pro.words"
+  ],
+  "allShardsWithinTwoFieldLimit": true,
+  "allShardsSingleAttempt": true,
+  "assessmentSubstanceChanged": false,
+  "scoresChanged": false
+}

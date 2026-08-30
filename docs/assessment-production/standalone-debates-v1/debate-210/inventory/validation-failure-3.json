@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-score-blind-capacity-normalization",
+  "debateNumber": "210",
+  "rawWorkerOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-210/inventory/raw-worker-output.json",
+    "sha256": "a08f797389cee14a24c755a114fe461248e8d5ce09294d30fd4c62eafc2b4a3f"
+  },
+  "validatorError": "formulations-and-nonresistant-nonbelief: publicationCapacityAudit differs from the locked inventory",
+  "diagnosis": "The worker marked fourth-row authorization false when no fourth row was required, while the validator represents satisfied non-applicability as true. The deterministic recount changes only this bookkeeping convention."
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "210",
+  "debateId": "paterson-schmid-divine-hiddenness-relationship-2026",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "paterson-hiddenness-may-be-redemptive-mercy:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "paterson-hiddenness-may-be-redemptive-mercy",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 0,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 89,
+          "rationale": "Paterson frames these as possible Christian reasons and does not claim that every hidden case has been explained."
+        },
+        "option-b": {
+          "value": 76,
+          "rationale": "The account risks extending examples of hardened or sinful resistance to cases stipulated as genuinely nonculpable."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence changes completion of a named pro burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists beyond the locked move ratings and burden links.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence was established outside the locked scoring mechanisms.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "section weights",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any proposed adjustment would not change burden completion independently of the locked ratings and links."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence warrants an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No named pro burden has a distinct completion consequence outside the locked move assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing the proposed adjustment changes no burden completion because the relevant performance is already captured."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence changes completion of a named con burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists beyond the locked move ratings and burden links.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence was established outside the locked scoring mechanisms.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "section weights",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing any proposed adjustment would not change burden completion independently of the locked ratings and links."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence warrants an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No named con burden has a distinct completion consequence outside the locked move assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified.",
+            "alreadyCapturedBy": [
+              "dimension ratings",
+              "importance values",
+              "burden links",
+              "response links"
+            ],
+            "counterfactual": "Removing the proposed adjustment changes no burden completion because the relevant performance is already captured."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 26,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}
