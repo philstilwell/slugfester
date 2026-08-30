@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-and-remediated-before-judgment",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-204/inventory/preserved-invalid-inventory-1.json",
+    "sha256": "9d0dc1d276f78636f73b569d19b0cf1231a9c22e81cd01912eef7198bed0154d"
+  },
+  "validatorFailure": "moves[0]: unknown burden bridge",
+  "additionalControllerFindings": [
+    "The con route omitted the con-problem-of-suffering bridge used by two selected moves while retaining a separate secular-motivation bridge used by only one motion-level move.",
+    "The selection-balance section threshold was recorded as 3 instead of the protocol-locked value 2.",
+    "Five source-span endpoint fields did not equal the locked final event endpoint.",
+    "Five excerpts included either part of the next event or omitted text from the declared final event, and one quote-eligible span consequently ceased to be source-exact.",
+    "All six no-fourth-row capacity entries recorded fourthRowAuthorized as false although the validator defines unused fourth-row authorization as satisfied."
+  ],
+  "judgmentWorkStarted": false,
+  "scoreWorkStarted": false
+}

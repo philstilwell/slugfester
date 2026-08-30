@@ -9135,5 +9135,54 @@ export const debateSummaries = [
         "title": "Religious experience, personhood, and epistemic burden"
       }
     ]
+  },
+  {
+    "id": "singer-dsouza-morality-without-god-2008",
+    "number": "204",
+    "title": "Can There Be Morality Without God? Dinesh D'Souza vs. Peter Singer (2008)",
+    "label": "Morality without God",
+    "date": "2026-08-29",
+    "duration": "1 hr 55 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jcwWliq8PDI",
+    "motion": "Can there be morality without God?",
+    "summary": "Dinesh D'Souza and Peter Singer dispute whether moral obligations require God. D'Souza presses conscience, equality, sacrifice, history, and duty's authority, while Singer answers through reason, universal consideration, ethical progress, and Euthyphro.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Morality requires God",
+        "speaker": "Dinesh D'Souza",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Morality without God",
+        "speaker": "Peter Singer",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 71,
+      "con": 81,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "The Foundation and Authority of Moral Law"
+      },
+      {
+        "title": "Divine Command, Moral Knowledge, and Motivation"
+      },
+      {
+        "title": "Evolution, Reason, and Altruism"
+      },
+      {
+        "title": "Equality, Suffering, and Moral Standing"
+      },
+      {
+        "title": "Historical and Practical Evidence"
+      },
+      {
+        "title": "Evil, Suffering, and a Lawful Universe"
+      }
+    ]
   }
 ];

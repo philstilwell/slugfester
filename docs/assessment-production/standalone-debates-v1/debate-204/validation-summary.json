@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "204",
+  "debateId": "singer-dsouza-morality-without-god-2008",
+  "completedAt": "2026-08-30T03:17:04.728Z",
+  "source": {
+    "videoId": "jcwWliq8PDI",
+    "method": "complete public YouTube auto-caption track normalized locally",
+    "transcriptWords": 20530,
+    "events": 2606,
+    "transcriptSha256": "17eb9e883e01ef37bcb1e49eb436c38925f1373fd9ed8f3b9ddb153060b9ea4d",
+    "eventsSha256": "52a95f31b64b1d9217ceaf8c57987596c7681fb8714d28c33219f68c86e9afb4",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 29,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 16,
+    "adjudicatedDisputes": 16,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 71,
+      "con": 81,
+      "winner": "con",
+      "margin": 10
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "argumentCards": 29,
+    "uniqueLockedMovesMapped": 29,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "12a761bd13a97ff1d575dec91984f906fffbf0df048d7f0550d4308158dd72ab",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-204/publication/content-parity-audit.json",
+    "contentParityCorrection": "applied-once-and-score-neutral",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.4,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 121,
+      "mean": 123.6,
+      "maximum": 125
+    },
+    "critiqueCharacterRange": [
+      913,
+      1097
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0.016,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.048,
+    "overallItemWords": {
+      "minimum": 23,
+      "mean": 24.5,
+      "maximum": 27
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-204/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 29,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 377,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 31,
+    "acceptedRhetoricalTags": 6,
+    "acceptedFallacyTags": 3,
+    "acceptedBiasTags": 3,
+    "rejectedRhetoricalTagCandidates": 25,
+    "overruledOverbroadAdjudicatorAcceptances": 0,
+    "restoredAdjudicatorRejections": 0,
+    "aiContributionWords": 646,
+    "aiContributionCommas": 52
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "profileNavigationTests": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-204/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 6,
+    "desktopEvidenceSha256": "1aa88a29ec84b5154796c115673d499692873c90d1a41def6de4a6a73480a369",
+    "mobileEvidenceSha256": "501fc76f4991f895f2018b43f22e25fa7cdd3371eb53ecb337836f4a658325f0"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "204 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "394 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "29 moves; description mean 23.4 words; critique mean 123.6 words; boilerplate coverage mean 0.016"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "29 moves reviewed against 13 definitions in 2 blind passes; 31 candidates adjudicated; 3 fallacies and 3 biases accepted; 25 candidates rejected"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "29 populated cards and 6 accepted tags at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 204 with and without --repository-only",
+      "status": "passed",
+      "result": "29 moves; 6 sections; 16 disputes; score stability mean 0.75, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "204 of 204 transcripts available; all 204 local hash chains checked"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check (including the postcheck lifecycle)",
+      "status": "passed",
+      "result": "syntax, debate, corpus, SEO, campaign, calibration, standalone, content-parity, rhetorical-tag, and multi-speaker compatibility checks passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "preservedInvalidInventoryAttempts": 1,
+    "semanticCapacityRemediations": 1,
+    "rejectedPublicationDrafts": 1,
+    "isolatedSectionProseRepairs": 6,
+    "deterministicTransportRepairs": 1,
+    "overbroadRhetoricalAcceptancesOverruled": 0,
+    "rhetoricalRejectionDecisionsRestored": 0,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 14,
+    "con": 15,
+    "disposition": "All twenty-nine frozen moves are mapped exactly once. Singer's one-move surplus reflects a distinct additional secular reply; no scored move was deleted, merged, or padded."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0
+}

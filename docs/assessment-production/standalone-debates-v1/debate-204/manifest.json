@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-standalone-debate-manifest",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "inputs-frozen-before-judgment",
+  "debateNumber": "204",
+  "debateId": "singer-dsouza-morality-without-god-2008",
+  "videoId": "jcwWliq8PDI",
+  "sourceLocks": {
+    "rawCaptions": { "path": ".assessment-cache/captions/jcwWliq8PDI/captions.srv3.xml", "sha256": "2bfc4b22a45b8facb5116829f8c39fbcf56e18b6f12c022e0d75c4a764cedd6f" },
+    "events": { "path": ".assessment-cache/captions/jcwWliq8PDI/events.json", "sha256": "52a95f31b64b1d9217ceaf8c57987596c7681fb8714d28c33219f68c86e9afb4" },
+    "transcript": { "path": ".assessment-cache/captions/jcwWliq8PDI/transcript.txt", "sha256": "17eb9e883e01ef37bcb1e49eb436c38925f1373fd9ed8f3b9ddb153060b9ea4d" },
+    "captionManifest": { "path": ".assessment-cache/captions/jcwWliq8PDI/manifest.json", "sha256": "da43eeb5a224635efb06e0de647b97e0cecc2bc089f62c17dc77a959b6a342ba" }
+  },
+  "controlLocks": {
+    "productionWorkflow": { "path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee" },
+    "rubric": { "path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c" },
+    "publicationReadiness": { "path": "docs/assessment-workflow-v4.2.21.17.41.md", "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315" },
+    "scoreStabilityPolicy": { "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json", "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666" },
+    "scoreCalculator": { "path": "scripts/lib/v4-lean-production.mjs", "sha256": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd" },
+    "scoreDimensions": { "path": "scripts/lib/reassessment-scoring.mjs", "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d" },
+    "sourceRenderer": { "path": "scripts/lib/v4220-source-span-rendering.mjs", "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6" },
+    "standaloneProtocolLibrary": { "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df" },
+    "standaloneProtocolAuditor": { "path": "scripts/audit-assessment-production-standalone-v1.mjs", "sha256": "a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81" }
+  },
+  "inventoryLock": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-204/inventory/inventory.json",
+    "sha256": "aae1719380f6ceb2771a14fed9ba5e7b4967facd4ee6154e7d7d225a38afcbb8",
+    "moves": 29,
+    "sections": 6,
+    "belowHighAttributionMoveIds": []
+  },
+  "modelSettings": { "model": "gpt-5.6-sol", "displayLabel": "5.6 Sol", "reasoningEffort": "low", "authentication": "ChatGPT subscription" },
+  "scoringControls": { "dimensionDisagreementThreshold": 8, "moveScoreDisagreementThreshold": 4, "burdenAdjustmentDisagreementThreshold": 2, "oneScorePass": true, "scoreProtocolId": "standalone-v1-single-deterministic-score-pass" },
+  "inventoryControls": { "schemaVersion": "1.2-standalone-score-blind-inventory", "uniqueSemanticSectionIdsRequired": true, "selectionBalanceAuditRequired": true, "totalDifferenceRequiringRationale": 3, "sectionDifferenceRequiringRationale": 2, "publicationCapacityAuditRequired": true, "maximumSelectedMovesPerSidePerSection": 4, "fourthRowPreauthorizationRequired": true },
+  "expectedArtifacts": [
+    "source/source-lock.json", "inventory/inventory.json", "judgments/judgment-packet.json", "judgments/pass-a/output.json", "judgments/pass-b/output.json", "disagreements/disagreements.json", "audio/audio-verification.json", "adjudication/packet.json", "adjudication/output.json", "final-ledger/final-ledger.json", "score-pass/input.json", "score-pass/output.json", "score-pass/attestation.json", "publication/output.json", "publication/rhetorical-tag-review-1/final-definition-check.json", "publication/content-parity-audit.json", "rendering/rendering-audit.json", "validation-summary.json", "report.md"
+  ]
+}
