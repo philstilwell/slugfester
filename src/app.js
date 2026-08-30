@@ -2696,7 +2696,7 @@ function renderDebateScoreProfileGrid(debate) {
   const conHistories = debateScoreHistoriesForSide(debate.sides.con, profilesByName);
   const proHistory = proHistories.length === 1 ? proHistories : [];
   const conHistory = conHistories.length === 1 ? conHistories : [];
-  if (!proHistory.length && !conHistory.length) return "";
+  if (!proHistories.length && !conHistories.length) return "";
 
   const maximumBandCount = Math.max(
     1,
@@ -2706,9 +2706,28 @@ function renderDebateScoreProfileGrid(debate) {
 
   return `
     <section class="debate-score-profile-grid" aria-label="Interlocutor score profiles">
-      <div class="debate-score-profile-slot">${renderDebateScoreHistories(proHistory, maximumBandCount, "teal")}</div>
-      <div class="debate-score-profile-slot">${renderDebateScoreHistories(conHistory, maximumBandCount, "coral")}</div>
+      <div class="debate-score-profile-slot">${
+        proHistory.length
+          ? renderDebateScoreHistories(proHistory, maximumBandCount, "teal")
+          : renderMultiInterlocutorRecordNote(proHistories, "teal")
+      }</div>
+      <div class="debate-score-profile-slot">${
+        conHistory.length
+          ? renderDebateScoreHistories(conHistory, maximumBandCount, "coral")
+          : renderMultiInterlocutorRecordNote(conHistories, "coral")
+      }</div>
     </section>
+  `;
+}
+
+function renderMultiInterlocutorRecordNote(histories, tone) {
+  if (histories.length <= 1) return "";
+
+  return `
+    <p class="debate-multi-interlocutor-note ${escapeHtml(tone)}">
+      <strong>Individual records</strong>
+      <span>Click a specific avatar above to view that interlocutor’s individual record.</span>
+    </p>
   `;
 }
 
