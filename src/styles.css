@@ -2104,6 +2104,90 @@ a {
   font-size: 0.66rem;
 }
 
+.debate-score-profiles {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 18px;
+  margin-top: 2px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(47, 143, 133, 0.2);
+}
+
+.debate-score-profile {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.debate-score-profile + .debate-score-profile {
+  padding-top: 18px;
+  border-top: 1px solid rgba(47, 143, 133, 0.16);
+}
+
+.debate-score-profile-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.debate-score-profile-heading h3 {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.1;
+}
+
+.debate-score-profile-heading a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.debate-score-profile-heading a:hover,
+.debate-score-profile-heading a:focus-visible {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.debate-score-profile-heading span {
+  color: var(--muted);
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.profile-score-histogram.debate-score-histogram {
+  width: 100%;
+  margin: 0;
+}
+
+.debate-score-histogram .profile-score-chart {
+  padding-left: 28px;
+}
+
+.debate-score-histogram .profile-score-bars {
+  gap: clamp(3px, 0.55vw, 7px);
+  height: clamp(135px, 14vw, 170px);
+}
+
+.debate-score-histogram .profile-score-y-label {
+  font-size: 0.54rem;
+}
+
+.debate-score-histogram figcaption {
+  margin: 8px 0 0 28px;
+  font-size: 0.66rem;
+}
+
+.quote-card p.debate-score-empty {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
 @media (max-width: 520px) {
   .profile-score-histogram {
     width: 100%;

@@ -2670,6 +2670,17 @@ function renderScoringNote(debate) {
 function renderQuoteCards(debate) {
   if (!debate.quotes) return "";
 
+  const profilesByName = new Map(
+    rankedInterlocutors({ topic: "all", minimum: 1, sort: "name" }).map((person) => [person.name, person])
+  );
+  const proHistories = debateScoreHistoriesForSide(debate.sides.pro, profilesByName);
+  const conHistories = debateScoreHistoriesForSide(debate.sides.con, profilesByName);
+  const maximumBandCount = Math.max(
+    1,
+    ...[...proHistories, ...conHistories]
+      .map((history) => history.distribution?.maximumBandCount || 0)
+  );
+
   return `
     <section class="quote-panel" aria-label="Position quotes">
       <div class="quote-panel-head">
@@ -2679,14 +2690,64 @@ function renderQuoteCards(debate) {
         </div>
       </div>
       <div class="quote-grid">
-        ${renderQuoteCard(debate.sides.pro, debate.quotes.pro, "teal")}
-        ${renderQuoteCard(debate.sides.con, debate.quotes.con, "coral")}
+        ${renderQuoteCard(debate.sides.pro, debate.quotes.pro, "teal", proHistories, maximumBandCount)}
+        ${renderQuoteCard(debate.sides.con, debate.quotes.con, "coral", conHistories, maximumBandCount)}
       </div>
     </section>
   `;
 }
 
-function renderQuoteCard(side, quote, tone) {
+function debateScoreHistoriesForSide(side, profilesByName) {
+  const interlocutors = [
+    ...new Map(
+      avatarsForSpeakerText(side.speaker).map((avatar) => [avatar.name, avatar])
+    ).values()
+  ];
+
+  return interlocutors.map((avatar) => {
+    const person = profilesByName.get(avatar.name);
+    return {
+      person: person || avatar,
+      appearances: person?.appearances || 0,
+      distribution: person ? profileScoreDistribution(person.records) : null
+    };
+  });
+}
+
+function renderDebateScoreHistories(histories, maximumBandCount) {
+  if (!histories.length) return "";
+
+  return `
+    <div class="debate-score-profiles" aria-label="Interlocutor score profiles">
+      ${histories
+        .map(
+          ({ person, appearances, distribution }) => `
+            <section class="debate-score-profile">
+              <div class="debate-score-profile-heading">
+                <h3><a href="${escapeHtml(interlocutorPath(person))}">${escapeHtml(person.name)}</a></h3>
+                <span>${appearances} eligible 1-on-1 ${appearances === 1 ? "scorecard" : "scorecards"}</span>
+              </div>
+              ${
+                distribution
+                  ? renderScoreHistogram(
+                      { ...distribution, maximumBandCount },
+                      {
+                        className: "debate-score-histogram",
+                        ariaLabel: `${person.name} published 1-on-1 overall score distribution from 50 to 100`,
+                        caption: "Published 1-on-1 overall scores in five-point ranges. Every graph on this page uses the same vertical scale."
+                      }
+                    )
+                  : '<p class="debate-score-empty">No eligible 1-on-1 scorecards yet.</p>'
+              }
+            </section>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderQuoteCard(side, quote, tone, histories, maximumBandCount) {
   if (!quote) return "";
 
   return `
@@ -2694,6 +2755,7 @@ function renderQuoteCard(side, quote, tone) {
       <span class="quote-side">${escapeHtml(side.name)} · ${escapeHtml(side.speaker)}</span>
       <blockquote>"${escapeHtml(quote.text)}"</blockquote>
       <p>${escapeHtml(quote.context)}</p>
+      ${renderDebateScoreHistories(histories, maximumBandCount)}
     </article>
   `;
 }

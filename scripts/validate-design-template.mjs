@@ -87,6 +87,8 @@ requireIncludes("app rankings section score chart", app, "not overall debate sco
 requireIncludes("app rankings analytics", app, 'class="sample-confidence');
 requireIncludes("app interlocutor profile", app, 'class="interlocutor-profile-page"');
 requireIncludes("app interlocutor profile", app, 'class="profile-score-bars"');
+requireIncludes("app debate score histograms", app, 'className: "debate-score-histogram"');
+requireIncludes("app debate score histogram eligibility", app, "eligible 1-on-1");
 requireIncludes("app interlocutor score range", app, "const PROFILE_SCORE_MINIMUM = 50;");
 requireIncludes("app interlocutor score range", app, "const PROFILE_SCORE_MAXIMUM = 100;");
 requireIncludes("app interlocutor score bucket", app, "const PROFILE_SCORE_BUCKET_SIZE = 5;");
@@ -246,6 +248,7 @@ requireIncludes("rankings analytics", styles, ".sample-confidence");
 requireIncludes("interlocutor profile", styles, ".interlocutor-profile-page");
 requireIncludes("interlocutor profile", styles, ".profile-score-bars");
 requireIncludes("interlocutor profile", styles, ".profile-score-bar");
+requireIncludes("debate score histograms", styles, ".profile-score-histogram.debate-score-histogram");
 requireIncludes("interlocutor profile gradient", styles, ".profile-score-bars li:nth-child(1)");
 requireIncludes("interlocutor profile gradient", styles, ".profile-score-bars li:nth-child(10)");
 requireIncludes("interlocutor profile width", styles, "width: min(52%, 640px);");
