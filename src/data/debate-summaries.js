@@ -9708,5 +9708,53 @@ export const debateSummaries = [
         "title": "Falsifiability and cumulative evidence"
       }
     ]
+  },
+  {
+    "id": "harris-wolpe-religion-science-2007",
+    "number": "216",
+    "title": "Religion, Science, and Meaning: Sam Harris vs. David Wolpe (2007)",
+    "label": "Religious faith and secular naturalism",
+    "date": "2026-08-31",
+    "duration": "1 hr 44 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=OSBaAT6WPmk",
+    "motion": "Does religion provide justified knowledge and meaning beyond science?",
+    "summary": "Sam Harris wins for scientific naturalism and evidential skepticism, defeating David Wolpe’s religious meaning and transcendent faith position by the locked 83-68 score.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Religious meaning and transcendent faith",
+        "speaker": "David Wolpe",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism and evidential skepticism",
+        "speaker": "Sam Harris",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 68,
+      "con": 83
+    },
+    "sections": [
+      {
+        "title": "Can science explain value, meaning, and the good life?"
+      },
+      {
+        "title": "Religious experience, transcendence, and the mind"
+      },
+      {
+        "title": "Religion, morality, violence, and historical comparison"
+      },
+      {
+        "title": "Religious truth, practical utility, and moral order"
+      },
+      {
+        "title": "Scripture, interpretation, and moral development"
+      },
+      {
+        "title": "Scientific compatibility and the final competing frameworks"
+      }
+    ]
   }
 ];

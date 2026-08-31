@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "216",
+  "debateId": "harris-wolpe-religion-science-2007",
+  "completedAt": "2026-08-31T22:15:00.000Z",
+  "source": {
+    "videoId": "OSBaAT6WPmk",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 20365,
+    "events": 2535,
+    "transcriptSha256": "6d0a952b14ec4ad04f79ef7035521f1eddd583d072a24b842f1bf00201a381f8",
+    "eventsSha256": "404fc343acc27c0adf2435a430a71182bada95790903df7b2fc99fe2409df56c",
+    "assessedWindow": "00:00:35-01:43:02",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 28,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 30,
+    "adjudicatedDisputes": 30,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 68,
+      "con": 83,
+      "winner": "con",
+      "margin": 15
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "displayRows": 16,
+    "argumentCards": 28,
+    "uniqueLockedMovesMapped": 28,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "6ee3c4a5bfaa13b5603f619935ec8e2858752f2751e2ee8f9ffd72948aef1fb7",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-216/publication/content-parity-audit.json",
+    "contentParityCorrection": "not-required-original-publication-passed",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 24.4,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 113,
+      "mean": 120.8,
+      "maximum": 125
+    },
+    "critiqueCharacterRange": [
+      904,
+      1016
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0.065,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.07,
+    "overallItemWords": {
+      "mean": 24.1
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 28,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 364,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 30,
+    "acceptedRhetoricalTags": 4,
+    "acceptedFallacyTags": 4,
+    "acceptedBiasTags": 0,
+    "biasCandidatesExplicitlyRejected": 14,
+    "rejectedRhetoricalTagCandidates": 26,
+    "aiContributionWords": 650,
+    "aiContributionPunctuationReview": "passed-by-production-validator-and-direct-inspection"
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-216/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 4,
+    "desktopEvidenceSha256": "63c2ef1b49faeb2387017f23a7107dbfd0a009cf3ad5365c6be481a1a6a7f665",
+    "mobileEvidenceSha256": "87fe89342b59d665ed814ef535a19f3e3f8daabd9f984f89995061bc5fd324de"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "216 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "642 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "28 moves; description mean 24.4 words; critique mean 120.8 words; boilerplate coverage mean 0.065"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "28 moves reviewed against 13 definitions in 2 blind passes; 30 candidates adjudicated; 4 fallacies and 0 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "28 populated cards and 4 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 216 with and without --repository-only",
+      "status": "passed",
+      "result": "28 moves; 6 sections; 30 disputes; 0 audio checks; score stability mean 0.25, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "216 of 216 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "deterministicInventoryCorrections": 1,
+    "judgmentRetries": 0,
+    "rejectedPublicationDrafts": 0,
+    "publicationValidationFailures": 1,
+    "atomicPublicationRepairFields": 1,
+    "publicationRepairShards": 1,
+    "preservedInvalidRhetoricalRuns": 3,
+    "rhetoricalTagFieldsAdded": 4,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 14,
+    "con": 14,
+    "disposition": "All twenty-eight frozen moves are mapped exactly once. The balanced total arose from the complete source inventory; no move was deleted, merged, added, or reassigned to manufacture symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-08-31T20:41:39.000Z",
+  "repositoryBaseline": {
+    "branch": "main",
+    "head": "ab4888959411955dbed9507441fc109d91758ef6",
+    "localMain": "ab4888959411955dbed9507441fc109d91758ef6",
+    "originMain": "ab4888959411955dbed9507441fc109d91758ef6",
+    "clean": true
+  },
+  "identity": {
+    "debateNumber": "216",
+    "debateId": "harris-wolpe-religion-science-2007",
+    "label": "Religious faith and secular naturalism",
+    "canonicalUrl": "https://www.youtube.com/watch?v=OSBaAT6WPmk",
+    "videoId": "OSBaAT6WPmk",
+    "sourceTitle": "Dr. Sam Harris Vs. David Wolpe   FULL DEBATE",
+    "eventYear": 2007,
+    "eventDate": "2007-11-06",
+    "motion": "Does religion provide justified knowledge and meaning beyond science?",
+    "topicCategory": "religion-society-public-reason",
+    "pro": {
+      "speaker": "David Wolpe",
+      "position": "Religious meaning and transcendent faith"
+    },
+    "con": {
+      "speaker": "Sam Harris",
+      "position": "Scientific naturalism and evidential skepticism"
+    },
+    "moderator": "Steve Padilla (questions and logistics only)",
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "frozenFullDebateTranscriptionEstimateUsd": 0,
+    "paidOpenAiTranscriptionCapUsd": 1,
+    "otherPaidServicesPermitted": false,
+    "estimateRequiredBeforeFirstPaidCall": true,
+    "paidCallsMade": 0
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-216/",
+    "docs/assessment-ledgers/harris-wolpe-religion-science-2007.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "src/data/debates.js",
+    "src/data/debate-summaries.js",
+    "src/data/interlocutors.js",
+    "src/generated/",
+    "public/sitemap.xml",
+    "output/playwright/standalone-debate-v1/debate-216/"
+  ]
+}

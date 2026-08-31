@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "216",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "method": "fresh ephemeral read-only contexts containing only each field-scoped packet and catalog snapshot",
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "scoresUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "4cc168a1f2f315f3e7b70583a2088664bf46c8b0530b3a71e91d7425f5bf6869",
+    "bytes": 4256
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "96d81da2eea1aeededeea203c1f0cd731f102716c657f2ea35580a4ca2908cc3",
+    "bytes": 79022
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "sessionId": "01a059ca-4dcd-7a91-96e0-65343f966923",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "b2f5185bc00c888a4a9d5d56527e519654cb4de48c239a4e4d0f162d1f1cad50",
+        "bytes": 18113
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "sessionId": "ephemeral-rhetorical-review-b-2026-08-31",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "3d6afcb25e00f009b0c7103aa7783014e926de7dcda9faa6ad915edf8de5a2c1",
+        "bytes": 14322
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-candidate-adjudication",
+      "sessionId": "01a059cf-25bb-7053-a3bf-734501f564ef",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "d573e2d34b61fe43e8fbbc7f8cc98825b8b4e8368ddde846b49e665673ecc8f3",
+        "bytes": 96640
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "0bdef4c1ab36dbaff08ddfce3fea0b226456f4367c506f6d4b7dd46c3effc561",
+        "bytes": 13445
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "excludedInvalidRuns": {
+    "reason": "initial rhetorical packet used inventory chronology rather than final publication order; outputs were quarantined before publication",
+    "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/invalid-inventory-order",
+    "affectedPublishedTags": 0
+  },
+  "finalDefinitionCheck": {
+    "catalog": "src/data/references.js",
+    "reviewedEveryCandidate": true,
+    "requireCritiqueLevelMaterialWeakness": true,
+    "underargumentAloneRejected": true,
+    "duplicateDefectLabelsRejected": true,
+    "overruledOverbroadAdjudicatorAcceptances": 0,
+    "overruledOverbroadAdjudicatorRejections": 0,
+    "finalAcceptedTagCount": 4,
+    "evidence": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-216/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "d012432fc9872d7d6ddaf21ad3f91f80b9933c504d081a6385514fb7fca5c2ac",
+      "bytes": 16978
+    }
+  },
+  "audit": {
+    "movesReviewed": 28,
+    "definitionsPerMove": 13,
+    "definitionComparisonsPerBlindPass": 364,
+    "blindReviews": 2,
+    "adjudications": 30,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completedAt": "2026-08-31T22:21:08.385Z"
+}

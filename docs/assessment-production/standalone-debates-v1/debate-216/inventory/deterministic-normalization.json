@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "216",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-216/inventory/raw-worker-output.json",
+    "sha256": "61812f85fe37077957979b9a0464978af4bc7e404004412889f243deb4ced3c1"
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-216/inventory/inventory.json",
+    "sha256": "5135c2ff64c8df7e77f8143807e8bb6eb2a060b2b5024d99bda2185d670f3fb7"
+  },
+  "transformations": [
+    "Sorted the same 28 selected moves by locked source start event and preserved every selected section, route, burden link, importance level, and response link.",
+    "Recomputed every timestamp and excerpt directly from the locked events array.",
+    "Tightened selected event endpoints where a raw span included moderator wording, the other speaker's next turn, or rapid interjections; the selected argumentative substance and side attribution were preserved.",
+    "Stored empty quote-candidate arrays rather than manufacture quotations; all later publication prose remains grounded in the complete locked transcript and exact source spans.",
+    "Computed the selection-balance and publication-capacity audits from the frozen selections."
+  ],
+  "substantiveJudgmentChanged": false,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "216",
+    "sections": 6,
+    "moves": 28,
+    "belowHighAttributionMoveIds": []
+  }
+}
