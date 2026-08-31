@@ -863,9 +863,8 @@ export const interlocutorAvatars = [
   },
   {
     name: "Alex Carter",
-    src: "/assets/debate-gloves.png",
+    src: `${avatarBasePath}/alex-carter.webp`,
     aliases: ["Alex Carter", "Dr Alex Carter", "Dr. Alex Carter"],
-    placeholder: true
   }
 ];
 
