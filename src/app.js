@@ -2431,7 +2431,7 @@ function renderBackend() {
             <h3>Recommend a debate</h3>
             <p>Send a public debate link for consideration. Both fields are required.</p>
           </div>
-          ${recommendationSent ? '<p class="backend-recommendation-success" role="status"><strong>Recommendation sent.</strong> Thank you—the debate is now in the review queue.</p>' : ""}
+          ${recommendationSent ? '<p class="backend-recommendation-success" role="status"><strong>Recommendation sent.</strong> Thank you—we’ll review the debate for possible inclusion.</p>' : ""}
           <form class="backend-recommendation-form" action="https://formsubmit.co/44a747882839a1240511c0b4bca3bd95" method="post" accept-charset="UTF-8">
             <input type="hidden" name="_subject" value="Slugfester debate recommendation">
             <input type="hidden" name="_template" value="table">

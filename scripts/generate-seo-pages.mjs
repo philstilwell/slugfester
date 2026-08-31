@@ -41,11 +41,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260831-debate-recommendations-v2";
-const interlocutorAssetVersion = "20260831-debate-recommendations-v2";
-const rankingsAssetVersion = "20260831-debate-recommendations-v2";
-const debateAssetVersion = "20260831-debate-recommendations-v2";
-const backendAssetVersion = "20260831-debate-recommendations-v2";
+const assetVersion = "20260831-debate-recommendations-v3";
+const interlocutorAssetVersion = "20260831-debate-recommendations-v3";
+const rankingsAssetVersion = "20260831-debate-recommendations-v3";
+const debateAssetVersion = "20260831-debate-recommendations-v3";
+const backendAssetVersion = "20260831-debate-recommendations-v3";
 
 function escapeHtml(value = "") {
   return String(value)
