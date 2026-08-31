@@ -9,6 +9,7 @@ const representativeRoutes = [
   "/debate/craig-oconnor-god-debate-2026/",
   "/debate/horn-bertuzzi-oconnor-schmid-problem-evil-2022/",
   "/backend/",
+  "/corrections/",
   "/reference/fallacy/equivocation/"
 ];
 
@@ -31,7 +32,8 @@ for (const route of [
   "/rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig",
   "/interlocutor/alex-carter/",
   "/debate/craig-oconnor-god-debate-2026/",
-  "/backend/"
+  "/backend/",
+  "/corrections/"
 ]) {
   test(`fits a narrow phone viewport: ${route}`, async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
@@ -91,4 +93,53 @@ test("applies the generated content security policy without blocking site code",
   await openRenderedPage(page, "/debate/craig-oconnor-god-debate-2026/");
   await expect(page.locator("meta[http-equiv='Content-Security-Policy']")).toHaveCount(1);
   expect(securityErrors).toEqual([]);
+});
+
+test("serves every URL advertised in the sitemap", async ({ request }) => {
+  test.setTimeout(120_000);
+  const sitemapResponse = await request.get("/sitemap.xml");
+  expect(sitemapResponse.ok()).toBe(true);
+  const sitemap = await sitemapResponse.text();
+  const paths = [...sitemap.matchAll(/<loc>https:\/\/slugfester\.com([^<]+)<\/loc>/g)].map(
+    (match) => match[1]
+  );
+
+  expect(paths.length).toBeGreaterThan(400);
+  for (const path of paths) {
+    const response = await request.get(path);
+    expect(response.status(), path).toBe(200);
+  }
+
+  for (const path of ["/feed.xml", "/robots.txt", "/site.webmanifest"]) {
+    const response = await request.get(path);
+    expect(response.status(), path).toBe(200);
+  }
+});
+
+test("keyboard users can skip directly to the main content", async ({ page }) => {
+  await openRenderedPage(page, "/");
+  await page.keyboard.press("Tab");
+  await expect(page.locator(".skip-link")).toBeFocused();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#main-content")).toBeFocused();
+});
+
+for (const route of ["/", "/rankings/", "/interlocutor/alex-o-connor/", "/corrections/"]) {
+  test(`remains usable with text enlarged to 200 percent: ${route}`, async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await openRenderedPage(page, route);
+    await page.addStyleTag({ content: "html { font-size: 200% !important; }" });
+    const widths = await page.evaluate(() => ({
+      client: document.documentElement.clientWidth,
+      scroll: document.documentElement.scrollWidth
+    }));
+    expect(widths.scroll).toBeLessThanOrEqual(widths.client + 1);
+  });
+}
+
+test("core navigation remains available in forced-colors mode", async ({ page }) => {
+  await page.emulateMedia({ forcedColors: "active", reducedMotion: "reduce" });
+  await openRenderedPage(page, "/corrections/");
+  await expect(page.getByRole("link", { name: "Debates", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Report a possible correction" })).toBeVisible();
 });

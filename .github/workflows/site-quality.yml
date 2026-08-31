@@ -11,7 +11,7 @@ permissions:
 jobs:
   accessibility-and-performance:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -21,4 +21,5 @@ jobs:
         run: npm install --no-save --no-package-lock @playwright/test@1.62.1 @axe-core/playwright@4.13.0
       - run: npx playwright install --with-deps chromium
       - run: npm run seo
+      - run: node scripts/validate-public-site.mjs
       - run: npx playwright test

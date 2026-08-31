@@ -1,0 +1,51 @@
+name: Report a possible scorecard correction
+description: Flag a possible score, quotation, attribution, source, or display problem.
+title: "Possible scorecard issue: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Slugfester. A report does not change an assessment automatically; it creates a traceable item that can be checked against the transcript, source data, and site calculations.
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Paste the exact Slugfester page where you noticed the issue.
+      placeholder: https://slugfester.com/debate/example/
+    validations:
+      required: true
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of issue
+      options:
+        - Displayed calculation or average
+        - Score or section weighting
+        - Quotation or transcript wording
+        - Speaker attribution
+        - Source or timestamp link
+        - Fallacy or bias label
+        - Other presentation or accessibility issue
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What looks wrong?
+      description: Identify the exact value, passage, label, or behavior in question.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Include the relevant timestamp, transcript excerpt, calculation, screenshot, or source link when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Suggested correction
+      description: Explain what you think the page should show and why.
+    validations:
+      required: false

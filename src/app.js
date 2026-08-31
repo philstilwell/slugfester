@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260830-performance-security-quality-v2";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-performance-security-quality-v2";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-performance-security-quality-v2";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260830-discovery-integrity-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-discovery-integrity-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-discovery-integrity-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -13,6 +13,8 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
+  correctionsPath,
+  correctionsSeo,
   debateNumberLabel,
   debatePath,
   debateSeo,
@@ -29,7 +31,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260830-performance-security-quality-v2";
+} from "./seo.js?v=20260830-discovery-integrity-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -66,12 +68,13 @@ const topicsPathRoutePattern = /^\/topics\/?$/;
 const rankingsPathRoutePattern = /^\/rankings\/?$/;
 const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
+const correctionsPathRoutePattern = /^\/corrections\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260830-performance-security-quality-v2")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260830-discovery-integrity-v1")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -90,7 +93,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260830-performance-security-quality-v2`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260830-discovery-integrity-v1`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -105,7 +108,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260830-performance-security-quality-v2`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260830-discovery-integrity-v1`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -343,6 +346,7 @@ function currentPrimaryNavKey() {
     hash.match(backendHashRoutePattern) ||
     hash.match(assessmentHashRoutePattern) ||
     pathname.match(backendPathRoutePattern) ||
+    pathname.match(correctionsPathRoutePattern) ||
     pathname.match(assessmentPathRoutePattern)
   ) {
     return "backend";
@@ -416,6 +420,8 @@ function renderShell(content) {
         <a href="${topicsPath()}">Topics</a>
         <a href="${rankingsPath()}">Rankings</a>
         <a href="${backendPath()}">Method</a>
+        <a href="${correctionsPath()}">Corrections</a>
+        <a href="/feed.xml">Updates feed</a>
         <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer">LogFall</a>
         <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer">CogBias</a>
       </nav>
@@ -510,6 +516,9 @@ function renderLanding() {
   const landingState = landingPaginationState();
   const landingPager = paginatedItems(debates, LANDING_PAGE_SIZE, landingState.page);
   const debateCards = landingPager.items.map(renderDebateCard).join("");
+  const recentDebates = [...debates]
+    .sort((first, second) => Number(second.number) - Number(first.number))
+    .slice(0, 4);
   const interlocutorCount = searchFacets().people.length;
   const topicCount = topicGroupsForDebates().length;
 
@@ -547,6 +556,8 @@ function renderLanding() {
         </figure>
       </section>
 
+      ${renderRecentAssessments(recentDebates)}
+
       <section class="debate-list" aria-labelledby="debates-heading">
         <div class="section-heading">
           <div>
@@ -573,6 +584,61 @@ function renderLanding() {
       </section>
     </main>
   `);
+}
+
+function formatDisplayDate(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(value))) return String(value || "");
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  }).format(new Date(`${value}T12:00:00`));
+}
+
+function renderRecentAssessments(recentDebates) {
+  return `
+    <section class="recent-assessments" aria-labelledby="recent-assessments-heading">
+      <div class="section-heading recent-assessments-heading">
+        <div>
+          <p class="eyebrow">New in the archive</p>
+          <h2 id="recent-assessments-heading">Recently added assessments</h2>
+        </div>
+        <div class="recent-assessments-actions">
+          <p>Start with the newest scorecard numbers, then follow future monthly additions in any feed reader.</p>
+          <a class="feed-link" href="/feed.xml">Subscribe to updates</a>
+        </div>
+      </div>
+      <div class="recent-assessment-grid">
+        ${recentDebates.map(renderRecentAssessmentCard).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderRecentAssessmentCard(debate) {
+  const people = uniqueInterlocutorsForDebate(debate);
+
+  return `
+    <article class="recent-assessment-card">
+      <div class="recent-assessment-meta">
+        ${renderDebateNumber(debate)}
+        <span>Published or updated ${escapeHtml(formatDisplayDate(debate.date))}</span>
+      </div>
+      <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+      <p>${escapeHtml(debate.label)}</p>
+      <div class="recent-assessment-footer">
+        <span class="recent-assessment-people" aria-label="Interlocutor profiles">
+          ${people.map(renderCardInterlocutor).join("")}
+        </span>
+        <span class="recent-assessment-scores" aria-label="Overall side scores">
+          <strong class="teal">${debate.score.pro}</strong>
+          <i aria-hidden="true">/</i>
+          <strong class="coral">${debate.score.con}</strong>
+        </span>
+      </div>
+    </article>
+  `;
 }
 
 function renderDebateCard(debate) {
@@ -1675,7 +1741,7 @@ function renderScoreHistogram(
             .map((band) => {
               const height = (band.count / distribution.maximumBandCount) * 100;
               return `
-                <li class="${band.count ? "has-score" : "is-empty"}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}">
+                <li class="${band.count ? "has-score" : "is-empty"}" data-score-bucket="${escapeHtml(band.label)}" data-score-count="${band.count}" aria-label="${escapeHtml(band.label)}: ${band.count} ${band.count === 1 ? "scorecard" : "scorecards"}">
                   <strong class="profile-score-bar-count" aria-hidden="true">${band.count || ""}</strong>
                   <span class="profile-score-bar" aria-hidden="true"><i style="--bar-height: ${height.toFixed(2)}%"></i></span>
                   <span class="profile-score-bucket-label" aria-hidden="true">${escapeHtml(band.label)}</span>
@@ -1697,7 +1763,7 @@ function renderComparisonPerson(person, maximumBandCount) {
   };
 
   return `
-    <article class="comparison-person">
+    <article class="comparison-person" data-comparison-person="${escapeHtml(person.name)}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}" data-appearances="${person.appearances}">
       <a class="comparison-person-identity" href="${escapeHtml(interlocutorPath(person))}">
         <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
         <span>
@@ -1783,7 +1849,7 @@ function renderRankingCard(person, maximumTagRate) {
 
   return `
     <li>
-      <article class="ranking-card">
+      <article class="ranking-card" data-ranking-person="${escapeHtml(person.name)}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}" data-appearances="${person.appearances}">
         <a class="ranking-card-main" href="${escapeHtml(profileHref)}" aria-label="Open ${escapeHtml(person.name)}'s debate profile">
           <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
           <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
@@ -1872,7 +1938,7 @@ function renderProfileMetric(label, value, tone = "") {
 
 function renderProfileDistribution(distribution, appearances) {
   return `
-    <section class="profile-distribution" aria-labelledby="profile-distribution-heading">
+    <section class="profile-distribution" data-score-median="${distribution.median}" data-score-lowest="${distribution.lowest}" data-score-highest="${distribution.highest}" aria-labelledby="profile-distribution-heading">
       <div class="profile-section-heading">
         <div>
           <p class="eyebrow">Score profile</p>
@@ -1902,7 +1968,7 @@ function renderProfileTopics(topics) {
         ${topics
           .map(
             (topic) => `
-              <li>
+              <li data-topic-name="${escapeHtml(topic.title)}" data-topic-average="${topic.averageScore}" data-topic-appearances="${topic.appearances}">
                 <span><strong>${escapeHtml(topic.title)}</strong><small>${topic.appearances} ${topic.appearances === 1 ? "scorecard" : "scorecards"}</small></span>
                 <b class="${scoreTone(Math.round(topic.averageScore))}">${formatAverageScore(topic.averageScore)}</b>
               </li>
@@ -1928,7 +1994,7 @@ function renderProfileOpponents(opponents, person) {
         ${opponents
           .map(
             (opponent) => `
-              <li>
+              <li data-opponent-name="${escapeHtml(opponent.name)}" data-opponent-average="${opponent.averageOpponentScore}" data-opponent-meetings="${opponent.appearances}">
                 <a href="${escapeHtml(interlocutorPath(opponent))}">
                   <img src="${escapeHtml(opponent.src)}" alt="${escapeHtml(opponent.name)}" width="512" height="512" loading="lazy" decoding="async">
                   <span><strong>${escapeHtml(opponent.name)}</strong><small>${opponent.appearances} ${opponent.appearances === 1 ? "meeting · matchup score" : "meetings · matchup average"}</small></span>
@@ -1948,7 +2014,7 @@ function renderProfileDebateCard(record, person) {
   const opponentNames = record.opponents.map((opponent) => opponent.name).join(", ");
 
   return `
-    <article class="profile-debate-card">
+    <article class="profile-debate-card" data-debate-record="${escapeHtml(debate.id)}" data-person-score="${record.score}" data-opponent-score="${record.opponentScore}">
       <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))}</p>
       <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
       <p>${escapeHtml(debate.label)}</p>
@@ -2016,7 +2082,7 @@ function renderInterlocutorProfile(slug) {
   if (!eligibleProfile) {
     setSeo(interlocutorSeo(person, 0, teamProfileLastmod));
     app.innerHTML = renderShell(`
-      <main class="interlocutor-profile-page">
+      <main class="interlocutor-profile-page" data-profile-name="${escapeHtml(person.name)}" data-one-on-one-count="0" data-team-count="${teamScorecards.length}">
         <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
 
         <section class="profile-hero">
@@ -2055,7 +2121,7 @@ function renderInterlocutorProfile(slug) {
 
   setSeo(interlocutorSeo(person, person.appearances, profileLastmod));
   app.innerHTML = renderShell(`
-    <main class="interlocutor-profile-page">
+    <main class="interlocutor-profile-page" data-profile-name="${escapeHtml(person.name)}" data-one-on-one-count="${person.appearances}" data-team-count="${teamScorecards.length}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}">
       <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
 
       <section class="profile-hero">
@@ -2553,6 +2619,80 @@ function renderBackend() {
   `);
 }
 
+function correctionIssueUrl(debate = null) {
+  const url = new URL("https://github.com/philstilwell/slugfester/issues/new");
+  url.searchParams.set("template", "scorecard-correction.yml");
+  url.searchParams.set(
+    "title",
+    debate
+      ? `Possible scorecard issue: Debate ${debate.number}`
+      : "Possible Slugfester correction"
+  );
+  return url.href;
+}
+
+function renderCorrections() {
+  setSeo(correctionsSeo());
+
+  app.innerHTML = renderShell(`
+    <main class="corrections-page">
+      <section class="corrections-hero">
+        <div>
+          <p class="eyebrow">Accountability</p>
+          <h1>Corrections & revisions</h1>
+          <p class="corrections-lede">Slugfester assessments are intended to be transparent and revisable. If a score, quotation, speaker attribution, source link, or displayed calculation looks wrong, readers should have a direct way to flag it and see what changed afterward.</p>
+        </div>
+        <aside class="corrections-action-card">
+          <span>Found a possible problem?</span>
+          <strong>Send the exact page and evidence.</strong>
+          <p>A public issue creates a traceable report that can be checked against the transcript and site calculations.</p>
+          <a class="button primary" href="${escapeHtml(correctionIssueUrl())}" target="_blank" rel="noopener noreferrer">Report a possible correction</a>
+        </aside>
+      </section>
+
+      <section class="corrections-process" aria-labelledby="corrections-process-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Review standard</p>
+            <h2 id="corrections-process-heading">What happens after a report</h2>
+          </div>
+          <p class="section-summary">Reports do not change scores automatically.</p>
+        </div>
+        <ol class="corrections-process-list">
+          <li><span>01</span><div><strong>Reproduce the issue.</strong><p>The public page, source data, and relevant transcript passage are checked independently of the proposed fix.</p></div></li>
+          <li><span>02</span><div><strong>Classify the change.</strong><p>Presentation and calculation defects can be corrected directly. A substantive reassessment must follow the published assessment process rather than silently changing a judgment.</p></div></li>
+          <li><span>03</span><div><strong>Validate site-wide effects.</strong><p>Any change to shared calculations is checked across profiles, rankings, comparison graphs, topic summaries, and debate pages before release.</p></div></li>
+          <li><span>04</span><div><strong>Record material revisions.</strong><p>Changes that affect interpretation, eligibility, attribution, or displayed scores are added to the public record below.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="revision-log" aria-labelledby="revision-log-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Public record</p>
+            <h2 id="revision-log-heading">Recent material revisions</h2>
+          </div>
+          <p class="section-summary">This reader-facing log begins August 30, 2026. The complete technical history remains available in the linked changes.</p>
+        </div>
+        <ol class="revision-log-list">
+          <li>
+            <time datetime="2026-08-30">August 30, 2026</time>
+            <div><h3>Team scores removed from individual records</h3><p>Shared scores from team and panel debates were separated from individual profiles, rankings, score distributions, and opponent records. Those appearances remain readable as team assessments.</p><a href="https://github.com/philstilwell/slugfester/commit/60545ad3c" target="_blank" rel="noopener noreferrer">Review the recorded change</a></div>
+          </li>
+          <li>
+            <time datetime="2026-08-30">August 30, 2026</time>
+            <div><h3>Opponent values clarified as matchup scores</h3><p>Profile opponent rows were clarified so the right-hand value is visibly the opponent's score in that meeting, or the average of those matchup scores across repeat meetings—not the opponent's overall profile average.</p><a href="https://github.com/philstilwell/slugfester/commit/86c96b1cc" target="_blank" rel="noopener noreferrer">Review the recorded change</a></div>
+          </li>
+          <li>
+            <time datetime="2026-08-30">August 30, 2026</time>
+            <div><h3>Average-score presentation audited</h3><p>Whole-number averages no longer display a misleading trailing decimal, profile dates now reflect their underlying records, and site-wide profile calculations were checked for consistent one-on-one eligibility.</p><a href="https://github.com/philstilwell/slugfester/commit/8dda5229f" target="_blank" rel="noopener noreferrer">Review the recorded change</a></div>
+          </li>
+        </ol>
+      </section>
+    </main>
+  `);
+}
+
 function renderAssessmentPrinciple(title, text) {
   return `
     <article class="principle-card">
@@ -2712,6 +2852,7 @@ function renderDebateObject(
           ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
           <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Open YouTube source</a>
+          ${preview ? "" : `<a class="scorecard-correction-link" href="${escapeHtml(correctionIssueUrl(debate))}" target="_blank" rel="noopener noreferrer">Report a possible scorecard issue</a>`}
         </aside>
       </section>
 
@@ -3399,6 +3540,7 @@ async function route() {
     window.location.pathname.match(backendPathRoutePattern) ||
     hash.match(assessmentHashRoutePattern) ||
     window.location.pathname.match(assessmentPathRoutePattern);
+  const correctionsMatch = window.location.pathname.match(correctionsPathRoutePattern);
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
@@ -3461,6 +3603,8 @@ async function route() {
     renderInterlocutorProfile(decodeURIComponent(interlocutorMatch[1]));
   } else if (backendMatch) {
     renderBackend();
+  } else if (correctionsMatch) {
+    renderCorrections();
   } else if (referenceMatch) {
     const sourceDebateId =
       referenceMatch[3] || new URLSearchParams(window.location.search).get("debate") || "";
@@ -3506,6 +3650,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(rankingsPathRoutePattern) &&
     !url.pathname.match(interlocutorPathRoutePattern) &&
     !url.pathname.match(backendPathRoutePattern) &&
+    !url.pathname.match(correctionsPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
   ) {
@@ -3520,6 +3665,7 @@ function shouldHandleInternally(link) {
     rankingsPathRoutePattern.test(url.pathname) ||
     interlocutorPathRoutePattern.test(url.pathname) ||
     backendPathRoutePattern.test(url.pathname) ||
+    correctionsPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)
   );

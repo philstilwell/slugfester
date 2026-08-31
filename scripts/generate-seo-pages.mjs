@@ -19,6 +19,8 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
+  correctionsPath,
+  correctionsSeo,
   assessmentPath,
   assessmentSeo,
   debatePath,
@@ -39,11 +41,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260830-performance-security-quality-v2";
-const interlocutorAssetVersion = "20260830-performance-security-quality-v2";
-const rankingsAssetVersion = "20260830-performance-security-quality-v2";
-const debateAssetVersion = "20260830-performance-security-quality-v2";
-const backendAssetVersion = "20260830-performance-security-quality-v2";
+const assetVersion = "20260830-discovery-integrity-v1";
+const interlocutorAssetVersion = "20260830-discovery-integrity-v1";
+const rankingsAssetVersion = "20260830-discovery-integrity-v1";
+const debateAssetVersion = "20260830-discovery-integrity-v1";
+const backendAssetVersion = "20260830-discovery-integrity-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -151,6 +153,7 @@ ${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl
     <link rel="mask-icon" href="/assets/favicon.svg" color="#d35d47">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="alternate" type="application/atom+xml" title="Slugfester new debate assessments" href="/feed.xml">
     <link rel="stylesheet" href="/src/styles.css?v=${pageAssetVersion}">
     ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
   </head>
@@ -187,6 +190,46 @@ ${urls
   )
   .join("\n")}
 </urlset>
+`;
+}
+
+function escapeXml(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+}
+
+function atomFeed(debates) {
+  const recent = [...debates]
+    .sort((first, second) => Number(second.number) - Number(first.number))
+    .slice(0, 25);
+  const updated = `${latestDate()}T12:00:00-04:00`;
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Slugfester new debate assessments</title>
+  <subtitle>Recently published transcript-grounded debate scorecards.</subtitle>
+  <id>${escapeXml(absoluteUrl("/"))}</id>
+  <link href="${escapeXml(absoluteUrl("/feed.xml"))}" rel="self" type="application/atom+xml"/>
+  <link href="${escapeXml(absoluteUrl("/"))}" rel="alternate" type="text/html"/>
+  <updated>${escapeXml(updated)}</updated>
+${recent
+  .map((debate) => {
+    const url = absoluteUrl(debatePath(debate));
+    const entryUpdated = `${debate.date}T12:00:00-04:00`;
+    return `  <entry>
+    <title>${escapeXml(`Debate ${debate.number}: ${debate.title}`)}</title>
+    <id>${escapeXml(url)}</id>
+    <link href="${escapeXml(url)}" rel="alternate" type="text/html"/>
+    <updated>${escapeXml(entryUpdated)}</updated>
+    <summary>${escapeXml(debate.summary)}</summary>
+  </entry>`;
+  })
+  .join("\n")}
+</feed>
 `;
 }
 
@@ -452,6 +495,12 @@ addPage(
 );
 
 addPage(
+  correctionsPath(),
+  correctionsSeo(),
+  "Report a possible Slugfester scorecard issue and review the public correction record."
+);
+
+addPage(
   assessmentPath(),
   assessmentSeo(),
   "The old Assessment page name has been replaced by Backend."
@@ -488,6 +537,7 @@ Sitemap: ${absoluteUrl("/sitemap.xml")}
 `
 );
 pageOutputs.set(join(root, "sitemap.xml"), sitemapXml(sitemapUrls));
+pageOutputs.set(join(root, "feed.xml"), atomFeed(debates));
 pageOutputs.set(join(root, "site.webmanifest"), manifestJson());
 
 async function ensureMatches(file, expected) {
@@ -510,6 +560,7 @@ if (!checkOnly) {
   await rm(join(root, "rankings"), { recursive: true, force: true });
   await rm(join(root, "interlocutor"), { recursive: true, force: true });
   await rm(join(root, "backend"), { recursive: true, force: true });
+  await rm(join(root, "corrections"), { recursive: true, force: true });
   await rm(join(root, "assessment"), { recursive: true, force: true });
   await rm(join(root, "src/data/debate-details"), { recursive: true, force: true });
   await rm(join(root, "src/data/reference-appearances"), { recursive: true, force: true });

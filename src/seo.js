@@ -118,6 +118,10 @@ export function backendPath() {
   return "/backend/";
 }
 
+export function correctionsPath() {
+  return "/corrections/";
+}
+
 export function assessmentPath() {
   return "/assessment/";
 }
@@ -542,6 +546,40 @@ export function backendSeo({ legacy = false } = {}) {
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
         { name: "Backend", path: backendPath() }
+      ])
+    ]
+  };
+}
+
+export function correctionsSeo() {
+  const description =
+    "Report a possible Slugfester scorecard issue and review the public record of material scoring, attribution, and presentation corrections.";
+
+  return {
+    title: pageTitle("Corrections & revisions"),
+    description,
+    canonicalPath: correctionsPath(),
+    lastmod: SITE_UPDATED_DATE,
+    imagePath: DEFAULT_IMAGE,
+    imageAlt: "Slugfester corrections and revision record.",
+    type: "website",
+    jsonLd: [
+      organizationJsonLd(),
+      websiteJsonLd(),
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: "Slugfester corrections and revisions",
+        description,
+        url: absoluteUrl(correctionsPath()),
+        dateModified: seoDateTime(SITE_UPDATED_DATE),
+        isPartOf: {
+          "@id": WEBSITE_ID
+        }
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, path: "/" },
+        { name: "Corrections", path: correctionsPath() }
       ])
     ]
   };
