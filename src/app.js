@@ -2422,7 +2422,7 @@ function renderBackend() {
         <div class="backend-selection-copy">
           <p class="eyebrow">Catalogue scope</p>
           <h2 id="backend-selection-heading">How debates enter Slugfester</h2>
-          <p><strong>The selection process is somewhat arbitrary.</strong> Slugfester is a curated catalogue, not a random or representative sample of all public debates. Choices reflect available complete sources, topics likely to interest readers, recognizable or recurring interlocutors, and whether a debate can be processed reliably with the current workflow.</p>
+          <p><strong>The selection process is somewhat arbitrary.</strong> Slugfester is a curated catalogue, not a random or representative sample of all public debates. We favor videos that clearly fit within one of the ten topic categories listed on the site. Choices also reflect available complete sources, topics likely to interest readers, recognizable or recurring interlocutors, and whether a debate can be processed reliably with the current workflow.</p>
           <p>That means catalogue-wide patterns describe the debates published here; they should not be treated as a neutral sample of every topic, viewpoint, speaker, or debate format. Reader recommendations help broaden the pool considered for future additions, but a recommendation does not guarantee assessment.</p>
         </div>
         <div class="backend-recommendation-card">

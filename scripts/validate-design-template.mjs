@@ -157,6 +157,7 @@ requireIncludes("app backend update date", app, "Updated August 31, 2026");
 requireIncludes("app backend review cadence", app, "approximately twice a year");
 requireIncludes("app backend selection limitation", app, "The selection process is somewhat arbitrary.");
 requireIncludes("app backend selection sampling caveat", app, "not a random or representative sample");
+requireIncludes("app backend selection category preference", app, "clearly fit within one of the ten topic categories listed on the site");
 requireIncludes("app backend recommendation form", app, 'class="backend-recommendation-form"');
 requireIncludes("app backend recommendation URL", app, 'name="debate_url" type="url"');
 requireIncludes("app backend recommendation email", app, 'name="email" type="email"');
