@@ -612,8 +612,8 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester uses complete transcripts, independent AI judgments, deterministic scoring, audio checks, and repository validation to build debate scorecards.";
-  const updatedDate = "2026-08-28";
+    "How Slugfester selects debates and uses complete transcripts, independent AI reviews, deterministic scoring, audio checks, and validation to build scorecards.";
+  const updatedDate = "2026-08-31";
 
   return {
     title: pageTitle("How Slugfester scores debates"),
@@ -654,6 +654,8 @@ export function backendSeo({ legacy = false } = {}) {
         },
         about: [
           "AI debate scorecards",
+          "debate selection",
+          "debate recommendations",
           "argument analysis",
           "debate transcript backend",
           "logical coherence",

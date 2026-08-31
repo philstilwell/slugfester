@@ -41,11 +41,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260831-automatic-analytics-v1";
-const interlocutorAssetVersion = "20260831-automatic-analytics-v1";
-const rankingsAssetVersion = "20260831-automatic-analytics-v1";
-const debateAssetVersion = "20260831-automatic-analytics-v1";
-const backendAssetVersion = "20260831-automatic-analytics-v1";
+const assetVersion = "20260831-debate-recommendations-v1";
+const interlocutorAssetVersion = "20260831-debate-recommendations-v1";
+const rankingsAssetVersion = "20260831-debate-recommendations-v1";
+const debateAssetVersion = "20260831-debate-recommendations-v1";
+const backendAssetVersion = "20260831-debate-recommendations-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -60,7 +60,7 @@ function jsonScript(value) {
   return JSON.stringify(value).replaceAll("<", "\\u003c");
 }
 
-function contentSecurityPolicy(structuredData = "") {
+function contentSecurityPolicy(structuredData = "", allowRecommendationForm = false) {
   const structuredDataHash = structuredData
     ? ` 'sha256-${createHash("sha256").update(structuredData).digest("base64")}'`
     : "";
@@ -76,7 +76,7 @@ function contentSecurityPolicy(structuredData = "") {
     "object-src 'none'",
     "frame-src 'none'",
     "base-uri 'self'",
-    "form-action 'self'",
+    `form-action 'self'${allowRecommendationForm ? " https://formsubmit.co" : ""}`,
     "upgrade-insecure-requests"
   ].join("; ");
 }
@@ -130,7 +130,10 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const robots = seo.robots || DEFAULT_ROBOTS;
   const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
   const structuredData = jsonScript(seo.jsonLd);
-  const securityPolicy = contentSecurityPolicy(structuredData);
+  const securityPolicy = contentSecurityPolicy(
+    structuredData,
+    seo.canonicalPath === backendPath()
+  );
   const articleMeta = [
     seo.type === "article" && seo.articleSection
       ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`

@@ -95,6 +95,35 @@ test("applies the generated content security policy without blocking site code",
   expect(securityErrors).toEqual([]);
 });
 
+test("clearly limits the catalogue sample and provides a valid debate recommendation form", async ({ page }) => {
+  await openRenderedPage(page, "/backend/");
+
+  await expect(page.locator(".backend-selection-copy")).toContainText(
+    "not a random or representative sample"
+  );
+
+  const form = page.locator(".backend-recommendation-form");
+  await expect(form).toHaveAttribute("method", "post");
+  await expect(form).toHaveAttribute(
+    "action",
+    "https://formsubmit.co/philstilwell@yahoo.com"
+  );
+  await expect(form.locator("input[name='debate_url']")).toHaveAttribute("required", "");
+  await expect(form.locator("input[name='email']")).toHaveAttribute("required", "");
+
+  const backendPolicy = await page
+    .locator("meta[http-equiv='Content-Security-Policy']")
+    .getAttribute("content");
+  expect(backendPolicy).toContain("form-action 'self' https://formsubmit.co");
+
+  await openRenderedPage(page, "/");
+  const landingPolicy = await page
+    .locator("meta[http-equiv='Content-Security-Policy']")
+    .getAttribute("content");
+  expect(landingPolicy).toContain("form-action 'self'");
+  expect(landingPolicy).not.toContain("form-action 'self' https://formsubmit.co");
+});
+
 test("serves every URL advertised in the sitemap", async ({ request }) => {
   test.setTimeout(120_000);
   const sitemapResponse = await request.get("/sitemap.xml");

@@ -3105,6 +3105,7 @@ a {
 .assessment-examples,
 .assessment-detail,
 .backend-summary,
+.backend-selection,
 .backend-objectivity,
 .backend-technical {
   margin-top: clamp(34px, 6vw, 68px);
@@ -3193,6 +3194,134 @@ a {
 .backend-summary-stats .backend-summary-stat-note {
   padding-top: 8px;
   border-top: 1px solid rgba(38, 91, 105, 0.16);
+}
+
+.backend-selection {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: clamp(20px, 4vw, 44px);
+  align-items: start;
+  padding: clamp(22px, 4vw, 38px);
+  background:
+    radial-gradient(circle at bottom left, rgba(47, 143, 133, 0.12), transparent 38%),
+    #f7faf9;
+  border: 1px solid rgba(38, 91, 105, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(21, 57, 67, 0.08);
+  scroll-margin-top: 24px;
+}
+
+.backend-selection-copy h2,
+.backend-recommendation-card h3 {
+  margin: 0;
+  color: #173f4c;
+}
+
+.backend-selection-copy h2 {
+  margin-top: 5px;
+  font-size: clamp(1.7rem, 3.6vw, 2.65rem);
+  line-height: 1.02;
+}
+
+.backend-selection-copy > p:not(.eyebrow) {
+  margin: 16px 0 0;
+  color: #30413e;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.backend-selection-copy strong {
+  color: #173f4c;
+}
+
+.backend-recommendation-card {
+  display: grid;
+  gap: 16px;
+  padding: clamp(18px, 3vw, 26px);
+  background: #ffffff;
+  border: 1px solid rgba(38, 91, 105, 0.2);
+  border-top: 5px solid var(--coral);
+  border-radius: 11px;
+  box-shadow: 0 14px 30px rgba(21, 57, 67, 0.09);
+}
+
+.backend-recommendation-card h3 {
+  margin-top: 4px;
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+}
+
+.backend-recommendation-card > div > p:last-child,
+.backend-recommendation-privacy {
+  margin: 7px 0 0;
+  color: #4b6268;
+  line-height: 1.5;
+}
+
+.backend-recommendation-card > div > p:last-child {
+  font-size: 0.9rem;
+}
+
+.backend-recommendation-form {
+  display: grid;
+  gap: 8px;
+}
+
+.backend-recommendation-form label:not(.backend-recommendation-honey) {
+  margin-top: 5px;
+  color: #173f4c;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.backend-recommendation-form input:not([type="hidden"]) {
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 12px;
+  color: var(--ink);
+  background: #fbfdfc;
+  border: 1px solid rgba(38, 91, 105, 0.3);
+  border-radius: 7px;
+  font: inherit;
+}
+
+.backend-recommendation-form input:not([type="hidden"]):focus {
+  outline: 3px solid rgba(47, 143, 133, 0.25);
+  outline-offset: 1px;
+  border-color: var(--teal-text);
+}
+
+.backend-recommendation-form .button {
+  justify-self: start;
+  margin-top: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.backend-recommendation-honey {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.backend-recommendation-success {
+  margin: 0;
+  padding: 12px 14px;
+  color: #17594f;
+  background: #e8f6f1;
+  border: 1px solid rgba(47, 143, 133, 0.32);
+  border-radius: 7px;
+  line-height: 1.5;
+}
+
+.backend-recommendation-privacy {
+  padding-top: 12px;
+  border-top: 1px solid rgba(38, 91, 105, 0.15);
+  font-size: 0.76rem;
 }
 
 .backend-objectivity-accordion {
@@ -5446,7 +5575,8 @@ a {
 
   .assessment-hero,
   .assessment-detail,
-  .backend-summary-panel {
+  .backend-summary-panel,
+  .backend-selection {
     grid-template-columns: 1fr;
   }
 
