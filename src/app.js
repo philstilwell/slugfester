@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260830-site-audit-fixes-v2";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-site-audit-fixes-v2";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-site-audit-fixes-v2";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260830-alex-carter-avatar-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-alex-carter-avatar-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-alex-carter-avatar-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -29,7 +29,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260830-site-audit-fixes-v2";
+} from "./seo.js?v=20260830-alex-carter-avatar-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -68,7 +68,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDetailedDebates() {
   if (!detailedDebatesPromise) {
-    detailedDebatesPromise = import("./data/debates.js?v=20260830-site-audit-fixes-v2")
+    detailedDebatesPromise = import("./data/debates.js?v=20260830-alex-carter-avatar-v1")
       .then(({ publishedDebates }) => {
         debates = publishedDebates;
         return publishedDebates;
