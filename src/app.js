@@ -605,8 +605,7 @@ function renderRecentAssessments(recentDebates) {
           <h2 id="recent-assessments-heading">Recently added assessments</h2>
         </div>
         <div class="recent-assessments-actions">
-          <p>Start with the newest scorecard numbers, then follow future monthly additions in any feed reader.</p>
-          <a class="feed-link" href="/feed.xml">Subscribe to updates</a>
+          <p>Start with the newest scorecard numbers.</p>
         </div>
       </div>
       <div class="recent-assessment-grid">
