@@ -1,4 +1,7 @@
+import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
+import { publishedDebates as debates } from "../src/data/debates.js";
+import { avatarsForSpeakerText, interlocutorAvatars } from "../src/data/interlocutors.js";
 
 const [app, styles] = await Promise.all([
   readFile(new URL("../src/app.js", import.meta.url), "utf8"),
@@ -6,6 +9,34 @@ const [app, styles] = await Promise.all([
 ]);
 
 const errors = [];
+
+const avatarNames = new Set();
+for (const [index, avatar] of interlocutorAvatars.entries()) {
+  const label = `interlocutor avatar ${index + 1}`;
+  if (!avatar.name?.trim()) errors.push(`${label}: name must be a non-empty string`);
+  if (!Array.isArray(avatar.aliases) || avatar.aliases.some((alias) => !alias?.trim())) {
+    errors.push(`${label}: aliases must contain only non-empty strings`);
+  }
+  if (!/^\/assets\//.test(avatar.src || "")) {
+    errors.push(`${label}: src must use a root-relative /assets/ path`);
+  } else if (!existsSync(new URL(`..${avatar.src}`, import.meta.url))) {
+    errors.push(`${label}: ${avatar.src} does not exist`);
+  }
+
+  const normalizedName = avatar.name?.trim().toLowerCase();
+  if (normalizedName && avatarNames.has(normalizedName)) {
+    errors.push(`${label}: name must be unique (case-insensitive)`);
+  }
+  if (normalizedName) avatarNames.add(normalizedName);
+}
+
+for (const debate of debates) {
+  for (const side of [debate.sides?.pro, debate.sides?.con]) {
+    if (side?.speaker && avatarsForSpeakerText(side.speaker).length === 0) {
+      errors.push(`${debate.id}: ${side.speaker} must resolve to a registered interlocutor`);
+    }
+  }
+}
 
 function requireIncludes(label, source, expected) {
   if (!source.includes(expected)) {
@@ -89,7 +120,7 @@ requireIncludes("app profile opponent spacing hook", app, 'class="profile-breakd
 requireIncludes("app profile team score exclusion", app, "Shared side score excluded from the individual record.");
 requireIncludes("app profile group-only state", app, "No eligible one-on-one scorecards yet.");
 requireIncludes("app backend rubric evidence", app, "sectionScoreDistribution");
-requireIncludes("app backend rubric data loading", app, "interlocutorMatch || backendMatch || referenceMatch");
+requireIncludes("app backend rubric data loading", app, "rankingsMatch || interlocutorMatch || backendMatch");
 requireIncludes("app backend rubric evidence", app, "The rubric distinguishes stronger from weaker sections");
 requireIncludes("app backend rubric evidence", app, "two-percentage-point score ranges");
 requireIncludes("app backend rubric evidence", app, "not overall debate scores or interlocutor averages");
@@ -183,8 +214,11 @@ requireIncludes("app accessibility", app, 'class="skip-link"');
 requireIncludes("app accessibility", app, 'id="main-content"');
 requireIncludes("app accessibility", app, "argumentHelpId");
 requireIncludes("app accessibility", app, 'aria-describedby="${escapeHtml(tooltipId)}"');
-requireIncludes("app performance", app, 'import("./data/debates.js?v=');
+requireIncludes("app performance", app, 'import("./data/debate-analytics.js?v=');
+requireIncludes("app performance", app, 'import(`./data/debate-details/${id}.js?v=');
+requireIncludes("app performance", app, 'import(`./data/reference-appearances/${type}-${slug}.js?v=');
 requireIncludes("app performance", app, 'from "./data/debate-summaries.js?v=');
+requireExcludes("app performance", app, 'import("./data/debates.js');
 requireIncludes("app analytics", app, "loadCloudflareAnalytics");
 
 requireExcludes("app sticky header", app, "brand-gloves");

@@ -1,9 +1,10 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
-import { referenceDefinitions } from "../src/data/references.js";
+import { referenceDefinitions, referenceFromUrl } from "../src/data/references.js";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
@@ -38,11 +39,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260830-alex-carter-avatar-v1";
-const interlocutorAssetVersion = "20260830-alex-carter-avatar-v1";
-const rankingsAssetVersion = "20260830-alex-carter-avatar-v1";
-const debateAssetVersion = "20260830-alex-carter-avatar-v1";
-const backendAssetVersion = "20260830-alex-carter-avatar-v1";
+const assetVersion = "20260830-performance-security-quality-v1";
+const interlocutorAssetVersion = "20260830-performance-security-quality-v1";
+const rankingsAssetVersion = "20260830-performance-security-quality-v1";
+const debateAssetVersion = "20260830-performance-security-quality-v1";
+const backendAssetVersion = "20260830-performance-security-quality-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -55,6 +56,27 @@ function escapeHtml(value = "") {
 function jsonScript(value) {
   if (!value) return "";
   return JSON.stringify(value).replaceAll("<", "\\u003c");
+}
+
+function contentSecurityPolicy(structuredData = "") {
+  const structuredDataHash = structuredData
+    ? ` 'sha256-${createHash("sha256").update(structuredData).digest("base64")}'`
+    : "";
+
+  return [
+    "default-src 'self'",
+    `script-src 'self' https://static.cloudflareinsights.com${structuredDataHash}`,
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data:",
+    "font-src 'self'",
+    "connect-src 'self' https://cloudflareinsights.com",
+    "media-src 'none'",
+    "object-src 'none'",
+    "frame-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "upgrade-insecure-requests"
+  ].join("; ");
 }
 
 function sentence(value = "") {
@@ -72,6 +94,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const robots = seo.robots || DEFAULT_ROBOTS;
   const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
   const structuredData = jsonScript(seo.jsonLd);
+  const securityPolicy = contentSecurityPolicy(structuredData);
   const articleMeta = [
     seo.type === "article" && seo.articleSection
       ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`
@@ -94,6 +117,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="${escapeHtml(securityPolicy)}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="robots" content="${escapeHtml(robots)}">
@@ -237,10 +261,114 @@ function debateSummary(debate) {
   };
 }
 
+function tagSummaryForSide(debate, sideKey) {
+  return debate.sections.reduce(
+    (totals, section) =>
+      section.exchanges.reduce((sectionTotals, exchange) => {
+        const move = exchange[sideKey];
+        if (!move) return sectionTotals;
+
+        sectionTotals.scoredMoves += 1;
+        (move.tags || []).forEach((tag) => {
+          if (tag.type === "fallacy") sectionTotals.fallacies += 1;
+          if (tag.type === "bias") sectionTotals.biases += 1;
+        });
+        return sectionTotals;
+      }, totals),
+    { scoredMoves: 0, fallacies: 0, biases: 0 }
+  );
+}
+
+function debateAnalytics(debate) {
+  return {
+    ...(debate.interlocutorRankingEligible === false
+      ? { interlocutorRankingEligible: false }
+      : {}),
+    sectionScores: debate.sections.flatMap((section) =>
+      [section.score?.pro, section.score?.con].filter(Number.isFinite)
+    ),
+    tagSummary: {
+      pro: tagSummaryForSide(debate, "pro"),
+      con: tagSummaryForSide(debate, "con")
+    }
+  };
+}
+
+function referenceAppearance(debate, section, sideKey, argument, tag) {
+  return {
+    debate: {
+      id: debate.id,
+      number: debate.number,
+      title: debate.title,
+      label: debate.label,
+      youtubeUrl: debate.youtubeUrl,
+      sides: debate.sides
+    },
+    section: { title: section.title },
+    sideKey,
+    side: debate.sides[sideKey],
+    argument: {
+      time: argument.time,
+      role: argument.role,
+      words: argument.words
+    },
+    tag: {
+      type: tag.type,
+      label: tag.label,
+      url: tag.url,
+      context: tag.context
+    }
+  };
+}
+
 pageOutputs.set(
   join(root, "src/data/debate-summaries.js"),
   `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const debateSummaries = ${JSON.stringify(debates.map(debateSummary), null, 2)};\n`
 );
+
+pageOutputs.set(
+  join(root, "src/data/debate-analytics.js"),
+  `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const debateAnalytics = ${JSON.stringify(Object.fromEntries(debates.map((debate) => [debate.id, debateAnalytics(debate)])))};\n`
+);
+
+debates.forEach((debate) => {
+  pageOutputs.set(
+    join(root, "src/data/debate-details", `${debate.id}.js`),
+    `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const debate = ${JSON.stringify(debate)};\n`
+  );
+});
+
+const referenceAppearances = new Map();
+
+debates.forEach((debate) => {
+  debate.sections.forEach((section) => {
+    section.exchanges.forEach((exchange) => {
+      ["pro", "con"].forEach((sideKey) => {
+        const argument = exchange[sideKey];
+        if (!argument) return;
+
+        (argument.tags || []).forEach((tag) => {
+          const reference = referenceFromUrl(tag.url);
+          if (!reference) return;
+
+          const key = `${reference.type}/${reference.slug}`;
+          const appearances = referenceAppearances.get(key) || [];
+          appearances.push(referenceAppearance(debate, section, sideKey, argument, tag));
+          referenceAppearances.set(key, appearances);
+        });
+      });
+    });
+  });
+});
+
+Object.entries(referenceDefinitions).forEach(([type, definitions]) => {
+  Object.keys(definitions).forEach((slug) => {
+    pageOutputs.set(
+      join(root, "src/data/reference-appearances", `${type}-${slug}.js`),
+      `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const referenceAppearances = ${JSON.stringify(referenceAppearances.get(`${type}/${slug}`) || [])};\n`
+    );
+  });
+});
 
 const interlocutorProfiles = new Map();
 
@@ -383,6 +511,8 @@ if (!checkOnly) {
   await rm(join(root, "interlocutor"), { recursive: true, force: true });
   await rm(join(root, "backend"), { recursive: true, force: true });
   await rm(join(root, "assessment"), { recursive: true, force: true });
+  await rm(join(root, "src/data/debate-details"), { recursive: true, force: true });
+  await rm(join(root, "src/data/reference-appearances"), { recursive: true, force: true });
 }
 
 for (const [file, content] of pageOutputs) {

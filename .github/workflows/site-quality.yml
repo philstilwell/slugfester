@@ -1,0 +1,24 @@
+name: Site quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  accessibility-and-performance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install pinned browser-test tools without changing the assessment lockfile
+        run: npm install --no-save --no-package-lock @playwright/test@1.62.1 @axe-core/playwright@4.13.0
+      - run: npx playwright install --with-deps chromium
+      - run: npm run seo
+      - run: npx playwright test

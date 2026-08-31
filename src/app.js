@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260830-alex-carter-avatar-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-alex-carter-avatar-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-alex-carter-avatar-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260830-performance-security-quality-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-performance-security-quality-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-performance-security-quality-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -29,11 +29,14 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260830-alex-carter-avatar-v1";
+} from "./seo.js?v=20260830-performance-security-quality-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
-let detailedDebatesPromise;
+let debateAnalyticsPromise;
+const debateDetailPromises = new Map();
+const referenceAppearancePromises = new Map();
+const referenceAppearanceCache = new Map();
 let routeSequence = 0;
 const LANDING_PAGE_SIZE = 18;
 const SEARCH_PAGE_SIZE = 24;
@@ -66,20 +69,55 @@ const backendPathRoutePattern = /^\/backend\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
-async function loadDetailedDebates() {
-  if (!detailedDebatesPromise) {
-    detailedDebatesPromise = import("./data/debates.js?v=20260830-alex-carter-avatar-v1")
-      .then(({ publishedDebates }) => {
-        debates = publishedDebates;
-        return publishedDebates;
+async function loadDebateAnalytics() {
+  if (!debateAnalyticsPromise) {
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260830-performance-security-quality-v1")
+      .then(({ debateAnalytics }) => {
+        debates = debateSummaries.map((debate) => ({
+          ...debate,
+          ...(debateAnalytics[debate.id] || {})
+        }));
+        return debates;
       })
       .catch((error) => {
-        detailedDebatesPromise = undefined;
+        debateAnalyticsPromise = undefined;
         throw error;
       });
   }
 
-  return detailedDebatesPromise;
+  return debateAnalyticsPromise;
+}
+
+async function loadDebateDetail(id) {
+  if (!debateDetailPromises.has(id)) {
+    const promise = import(`./data/debate-details/${id}.js?v=20260830-performance-security-quality-v1`)
+      .then(({ debate }) => debate)
+      .catch((error) => {
+        debateDetailPromises.delete(id);
+        throw error;
+      });
+    debateDetailPromises.set(id, promise);
+  }
+
+  return debateDetailPromises.get(id);
+}
+
+async function loadReferenceAppearances(type, slug) {
+  const key = `${type}/${slug}`;
+  if (!referenceAppearancePromises.has(key)) {
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260830-performance-security-quality-v1`)
+      .then(({ referenceAppearances }) => {
+        referenceAppearanceCache.set(key, referenceAppearances);
+        return referenceAppearances;
+      })
+      .catch((error) => {
+        referenceAppearancePromises.delete(key);
+        throw error;
+      });
+    referenceAppearancePromises.set(key, promise);
+  }
+
+  return referenceAppearancePromises.get(key);
 }
 
 const escapeHtml = (value = "") =>
@@ -407,7 +445,7 @@ function paginatedItems(items, pageSize, requestedPage) {
   };
 }
 
-function renderPagination({ label, pager, itemLabel, hrefForPage }) {
+function renderPagination({ label, pager, itemLabel, hrefForPage, position }) {
   if (pager.totalPages <= 1) return "";
 
   const visiblePages = pager.totalPages <= 7
@@ -437,7 +475,7 @@ function renderPagination({ label, pager, itemLabel, hrefForPage }) {
     : `<span class="pagination-control disabled" aria-disabled="true">Next</span>`;
 
   return `
-    <nav class="pagination" aria-label="${escapeHtml(label)} pagination">
+    <nav class="pagination" aria-label="${escapeHtml(label)} ${escapeHtml(position)} pagination">
       <span class="pagination-summary">Showing ${pager.start + 1}-${pager.end} of ${pager.total} ${escapeHtml(itemLabel)}</span>
       <span class="pagination-controls">
         ${previous}
@@ -521,14 +559,16 @@ function renderLanding() {
           hrefForPage: (page) => landingUrl({ page }),
           itemLabel: "debates",
           label: "Landing debate cards",
-          pager: landingPager
+          pager: landingPager,
+          position: "above results"
         })}
         <div class="debate-grid">${debateCards}</div>
         ${renderPagination({
           hrefForPage: (page) => landingUrl({ page }),
           itemLabel: "debates",
           label: "Landing debate cards",
-          pager: landingPager
+          pager: landingPager,
+          position: "below results"
         })}
       </section>
     </main>
@@ -847,16 +887,12 @@ function reasoningTagDistribution() {
     };
 
     group.debates.forEach((debate) => {
-      debate.sections.forEach((section) => {
-        section.exchanges.forEach((exchange) => {
-          [exchange.pro, exchange.con].filter(Boolean).forEach((move) => {
-            totals.scoredMoves += 1;
-            (move.tags || []).forEach((tag) => {
-              if (tag.type === "fallacy") totals.fallacies += 1;
-              if (tag.type === "bias") totals.biases += 1;
-            });
-          });
-        });
+      ["pro", "con"].forEach((sideKey) => {
+        const summary = debate.tagSummary?.[sideKey];
+        if (!summary) return;
+        totals.scoredMoves += summary.scoredMoves;
+        totals.fallacies += summary.fallacies;
+        totals.biases += summary.biases;
       });
     });
 
@@ -962,11 +998,7 @@ function renderReasoningDistribution(topics) {
 }
 
 function sectionScoreDistribution() {
-  const scores = debates.flatMap((debate) =>
-    debate.sections.flatMap((section) =>
-      [section.score?.pro, section.score?.con].filter(Number.isFinite)
-    )
-  );
+  const scores = debates.flatMap((debate) => debate.sectionScores || []);
 
   if (!scores.length) {
     return { buckets: [], highest: 0, lowest: 0, maximumCount: 0, total: 0 };
@@ -1293,18 +1325,11 @@ function rankingTagSummary(records) {
   };
 
   records.forEach(({ debate, sideKey }) => {
-    debate.sections.forEach((section) => {
-      section.exchanges.forEach((exchange) => {
-        const move = exchange[sideKey];
-        if (!move) return;
-
-        totals.scoredMoves += 1;
-        (move.tags || []).forEach((tag) => {
-          if (tag.type === "fallacy") totals.fallacies += 1;
-          if (tag.type === "bias") totals.biases += 1;
-        });
-      });
-    });
+    const summary = debate.tagSummary?.[sideKey];
+    if (!summary) return;
+    totals.scoredMoves += summary.scoredMoves;
+    totals.fallacies += summary.fallacies;
+    totals.biases += summary.biases;
   });
 
   return {
@@ -2195,14 +2220,16 @@ function renderSearch() {
                 hrefForPage: (page) => searchUrl({ ...state, page }),
                 itemLabel: "debates",
                 label: "Search results",
-                pager: resultPager
+                pager: resultPager,
+                position: "above results"
               })}
               <div class="search-result-list">${resultPager.items.map(renderSearchResult).join("")}</div>
               ${renderPagination({
                 hrefForPage: (page) => searchUrl({ ...state, page }),
                 itemLabel: "debates",
                 label: "Search results",
-                pager: resultPager
+                pager: resultPager,
+                position: "below results"
               })}
             `
             : `<div class="empty-results"><strong>No debates matched.</strong><span>Try fewer people or a broader text search.</span></div>`
@@ -2624,8 +2651,8 @@ function bindRankingControls(state) {
   });
 }
 
-function renderDebate(id) {
-  const debate = debates.find((item) => item.id === id);
+function renderDebate(id, loadedDebate = null) {
+  const debate = loadedDebate || debates.find((item) => item.id === id);
 
   if (!debate) {
     setSeo(notFoundSeo());
@@ -3249,7 +3276,8 @@ function renderReference(type, slug, sourceDebateId = "") {
                 hrefForPage: (page) => referencePageUrl(type, slug, sourceDebateId, page),
                 itemLabel: "occurrences",
                 label: `${reference.label} debate contexts`,
-                pager: appearancePager
+                pager: appearancePager,
+                position: "above results"
               })}
               <div class="reference-context-list">
                 ${appearancePager.items.map(renderReferenceAppearance).join("")}
@@ -3258,7 +3286,8 @@ function renderReference(type, slug, sourceDebateId = "") {
                 hrefForPage: (page) => referencePageUrl(type, slug, sourceDebateId, page),
                 itemLabel: "occurrences",
                 label: `${reference.label} debate contexts`,
-                pager: appearancePager
+                pager: appearancePager,
+                position: "below results"
               })}
             </section>
           `
@@ -3296,34 +3325,7 @@ function findSourceDebate(sourceDebateId, appearances) {
 }
 
 function collectReferenceAppearances(type, slug) {
-  const appearances = [];
-
-  debates.forEach((debate) => {
-    debate.sections.forEach((section) => {
-      section.exchanges.forEach((exchange) => {
-        ["pro", "con"].forEach((sideKey) => {
-          const argument = exchange[sideKey];
-          if (!argument) return;
-
-          argument.tags.forEach((tag) => {
-            const reference = referenceFromUrl(tag.url);
-            if (reference?.type !== type || reference.slug !== slug) return;
-
-            appearances.push({
-              debate,
-              section,
-              sideKey,
-              side: debate.sides[sideKey],
-              argument,
-              tag
-            });
-          });
-        });
-      });
-    });
-  });
-
-  return appearances;
+  return referenceAppearanceCache.get(`${type}/${slug}`) || [];
 }
 
 function renderReferenceAppearance(appearance) {
@@ -3374,7 +3376,7 @@ function renderRouteLoading() {
   app.innerHTML = renderShell(`
     <main class="route-loading" aria-live="polite" aria-busy="true">
       <span class="route-loading-mark" aria-hidden="true">◉</span>
-      <p>Loading the full scorecard data…</p>
+      <p>Loading scorecard data…</p>
     </main>
   `);
 }
@@ -3400,15 +3402,36 @@ async function route() {
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
-  const needsDetailedData = Boolean(
-    debateMatch || rankingsMatch || interlocutorMatch || backendMatch || referenceMatch
+  const debateId = debateMatch ? decodeURIComponent(debateMatch[1]) : "";
+  const knownDebate = debateId
+    ? debateSummaries.some((debate) => debate.id === debateId)
+    : false;
+  const referenceType = referenceMatch?.[1] || "";
+  const referenceSlug = referenceMatch?.[2] || "";
+  const knownReference = referenceMatch
+    ? Boolean(getReferenceDefinition(referenceType, referenceSlug))
+    : false;
+  const needsAnalytics = Boolean(
+    rankingsMatch || interlocutorMatch || backendMatch || (debateMatch && knownDebate)
   );
+  const loaders = [];
 
-  if (needsDetailedData && debates === debateSummaries) {
+  if (needsAnalytics && debates === debateSummaries) {
+    loaders.push(loadDebateAnalytics());
+  }
+  if (debateMatch && knownDebate) {
+    loaders.push(loadDebateDetail(debateId));
+  }
+  if (referenceMatch && knownReference) {
+    loaders.push(loadReferenceAppearances(referenceType, referenceSlug));
+  }
+
+  let loadedData = [];
+  if (loaders.length) {
     renderRouteLoading();
 
     try {
-      await loadDetailedDebates();
+      loadedData = await Promise.all(loaders);
     } catch {
       if (sequence !== routeSequence) return;
       app.innerHTML = renderShell(`
@@ -3426,7 +3449,8 @@ async function route() {
   }
 
   if (debateMatch) {
-    renderDebate(decodeURIComponent(debateMatch[1]));
+    const loadedDebate = loadedData.find((value) => value?.id === debateId) || null;
+    renderDebate(debateId, loadedDebate);
   } else if (searchMatch) {
     renderSearch();
   } else if (topicsMatch) {
