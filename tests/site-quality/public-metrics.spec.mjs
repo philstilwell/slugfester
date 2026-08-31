@@ -76,11 +76,16 @@ function median(values) {
 
 const expectedProfiles = buildExpectedProfiles();
 
-async function expectOneDecimalDisplays(locator, label) {
+async function expectMeaningfulScoreDisplays(locator, label) {
   const values = (await locator.allTextContents()).map((value) => value.trim());
   expect(values.length, `${label} must include at least one displayed score`).toBeGreaterThan(0);
   values.forEach((value) => {
-    expect(value, `${label} value ${value}`).toMatch(/^\d+\.\d$/);
+    expect(value, `${label} value ${value}`).toMatch(/^\d+(?:\.\d)?$/);
+    if (Number.isInteger(Number(value))) {
+      expect(value, `${label} integer value ${value} must not show false decimal precision`).not.toContain(".");
+    } else {
+      expect(value, `${label} fractional value ${value} must retain one decimal place`).toMatch(/^\d+\.\d$/);
+    }
   });
 }
 
@@ -108,7 +113,7 @@ test("every interlocutor profile uses the same eligible one-on-one records", asy
       10
     );
 
-    await expectOneDecimalDisplays(
+    await expectMeaningfulScoreDisplays(
       page.locator(
         ".profile-hero-scores .profile-metric:nth-child(-n+2) dd, [data-topic-name] > b, [data-opponent-name] > b"
       ),
@@ -183,7 +188,7 @@ test("rankings and comparison cards use the same site-wide averages", async ({ p
       opponentsAverage: profile.averageOpponentScore
     }))
   );
-  await expectOneDecimalDisplays(page.locator(".ranking-score strong"), "ranking averages");
+  await expectMeaningfulScoreDisplays(page.locator(".ranking-score strong"), "ranking averages");
 
   const first = expectedProfiles.find((profile) => profile.name === "Alex O'Connor");
   const second = expectedProfiles.find((profile) => profile.name === "William Lane Craig");
@@ -214,7 +219,7 @@ test("rankings and comparison cards use the same site-wide averages", async ({ p
       bucketTotal: profile.appearances
     }))
   );
-  await expectOneDecimalDisplays(
+  await expectMeaningfulScoreDisplays(
     page.locator(".comparison-person-stats > div:nth-child(-n+2) dd"),
     "comparison averages"
   );

@@ -1469,7 +1469,7 @@ function rankedInterlocutors(state) {
 }
 
 function formatAverageScore(score) {
-  return Number(score).toFixed(1);
+  return Number(score).toFixed(1).replace(/\.0$/, "");
 }
 
 function formatOpponentBreakdownScore(opponent) {
