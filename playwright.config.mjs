@@ -7,7 +7,6 @@ export default defineConfig({
   retries: 0,
   reporter: "line",
   outputDir: ".playwright-results",
-  snapshotPathTemplate: "{testDir}/{testFilePath}-snapshots/{arg}{ext}",
   use: {
     baseURL: "http://127.0.0.1:4181",
     browserName: "chromium",
