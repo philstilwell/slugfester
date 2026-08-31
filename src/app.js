@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260831-debate-recommendations-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260831-debate-recommendations-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260831-debate-recommendations-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260831-debate-recommendations-v2";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260831-debate-recommendations-v2";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260831-debate-recommendations-v2";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -31,7 +31,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260831-debate-recommendations-v1";
+} from "./seo.js?v=20260831-debate-recommendations-v2";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -74,7 +74,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260831-debate-recommendations-v1")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260831-debate-recommendations-v2")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -93,7 +93,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260831-debate-recommendations-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260831-debate-recommendations-v2`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -108,7 +108,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260831-debate-recommendations-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260831-debate-recommendations-v2`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -2432,7 +2432,7 @@ function renderBackend() {
             <p>Send a public debate link for consideration. Both fields are required.</p>
           </div>
           ${recommendationSent ? '<p class="backend-recommendation-success" role="status"><strong>Recommendation sent.</strong> Thank you—the debate is now in the review queue.</p>' : ""}
-          <form class="backend-recommendation-form" action="https://formsubmit.co/philstilwell@yahoo.com" method="post" accept-charset="UTF-8">
+          <form class="backend-recommendation-form" action="https://formsubmit.co/44a747882839a1240511c0b4bca3bd95" method="post" accept-charset="UTF-8">
             <input type="hidden" name="_subject" value="Slugfester debate recommendation">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_next" value="https://slugfester.com/backend/?recommendation=sent#recommend-a-debate">
@@ -2446,7 +2446,7 @@ function renderBackend() {
             <input id="recommender-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
             <button class="button primary" type="submit">Send recommendation</button>
           </form>
-          <p class="backend-recommendation-privacy">Your URL and email are delivered to philstilwell@yahoo.com through FormSubmit. Your email will be used only if follow-up about the recommendation is needed.</p>
+          <p class="backend-recommendation-privacy">Your URL and email are delivered to the site administrator through FormSubmit. Your email will be used only if follow-up about the recommendation is needed.</p>
         </div>
       </section>
 

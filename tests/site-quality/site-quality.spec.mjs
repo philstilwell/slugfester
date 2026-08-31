@@ -106,7 +106,7 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
   await expect(form).toHaveAttribute("method", "post");
   await expect(form).toHaveAttribute(
     "action",
-    "https://formsubmit.co/philstilwell@yahoo.com"
+    "https://formsubmit.co/44a747882839a1240511c0b4bca3bd95"
   );
   await expect(form.locator("input[name='debate_url']")).toHaveAttribute("required", "");
   await expect(form.locator("input[name='email']")).toHaveAttribute("required", "");
