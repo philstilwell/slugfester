@@ -76,6 +76,14 @@ function median(values) {
 
 const expectedProfiles = buildExpectedProfiles();
 
+async function expectOneDecimalDisplays(locator, label) {
+  const values = (await locator.allTextContents()).map((value) => value.trim());
+  expect(values.length, `${label} must include at least one displayed score`).toBeGreaterThan(0);
+  values.forEach((value) => {
+    expect(value, `${label} value ${value}`).toMatch(/^\d+\.\d$/);
+  });
+}
+
 test("every interlocutor profile uses the same eligible one-on-one records", async ({ page }) => {
   test.setTimeout(240_000);
 
@@ -98,6 +106,13 @@ test("every interlocutor profile uses the same eligible one-on-one records", asy
     expect(Number(actual.opponentsAverage), `${expected.name} opponents' average`).toBeCloseTo(
       expected.averageOpponentScore,
       10
+    );
+
+    await expectOneDecimalDisplays(
+      page.locator(
+        ".profile-hero-scores .profile-metric:nth-child(-n+2) dd, [data-topic-name] > b, [data-opponent-name] > b"
+      ),
+      `${expected.name} profile averages`
     );
 
     const expectedOpponents = [...expected.opponents.entries()]
@@ -168,6 +183,7 @@ test("rankings and comparison cards use the same site-wide averages", async ({ p
       opponentsAverage: profile.averageOpponentScore
     }))
   );
+  await expectOneDecimalDisplays(page.locator(".ranking-score strong"), "ranking averages");
 
   const first = expectedProfiles.find((profile) => profile.name === "Alex O'Connor");
   const second = expectedProfiles.find((profile) => profile.name === "William Lane Craig");
@@ -197,5 +213,9 @@ test("rankings and comparison cards use the same site-wide averages", async ({ p
       opponentsAverage: profile.averageOpponentScore,
       bucketTotal: profile.appearances
     }))
+  );
+  await expectOneDecimalDisplays(
+    page.locator(".comparison-person-stats > div:nth-child(-n+2) dd"),
+    "comparison averages"
   );
 });
