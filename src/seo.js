@@ -49,25 +49,82 @@ function uniqueNames(values = [], limit = 48) {
   return names;
 }
 
-function speakerLabel(value = "") {
-  const names = String(value)
+function speakerNames(value = "") {
+  return String(value)
     .split(/\s*(?:,| and | & )\s*/i)
     .map((name) => name.trim())
+    .map((name) => name.replace(/^\(([^)]+)\)$/, "$1").replace(/\s+\([^)]*\)/g, "").trim())
     .filter(Boolean);
+}
+
+function speakerLabel(value = "") {
+  return speakerSummary(speakerNames(value));
+}
+
+function speakerSummary(names = []) {
   const labels = names.map((name) => {
-    const cleaned = name.replace(/^\(([^)]+)\)$/, "$1").replace(/\s+\([^)]*\)/g, "").trim();
-    const parts = cleaned.split(/\s+/).filter(Boolean);
-    return parts.at(-1) || cleaned || name;
+    const parts = name.split(/\s+/).filter(Boolean);
+    return parts.at(-1) || name;
   });
 
   if (labels.length > 1) return `${labels[0]} +${labels.length - 1}`;
   return labels.join(" & ");
 }
 
-function debateSearchTitle(debate) {
-  return `${debateNumberLabel(debate)}: ${speakerLabel(debate.sides.pro.speaker)} vs ${speakerLabel(
-    debate.sides.con.speaker
-  )}`;
+function debateTopicTitle(debate) {
+  const title = String(debate.title || "").replace(/\s*\(\d{4}\)\s*$/, "").trim();
+  const participantIndexes = [
+    ...speakerNames(debate.sides.pro.speaker),
+    ...speakerNames(debate.sides.con.speaker)
+  ]
+    .map((name) => title.toLocaleLowerCase().indexOf(name.toLocaleLowerCase()))
+    .filter((index) => index >= 0)
+    .sort((first, second) => first - second);
+  const firstParticipantIndex = participantIndexes[0];
+  let topic = "";
+
+  if (Number.isFinite(firstParticipantIndex)) {
+    if (firstParticipantIndex <= 4) {
+      const colonIndex = title.indexOf(":");
+      if (colonIndex >= 0) topic = title.slice(colonIndex + 1);
+    } else {
+      topic = title.slice(0, firstParticipantIndex);
+    }
+  }
+
+  return topic.replace(/\s*[:–—-]+\s*$/, "").trim() || debate.label;
+}
+
+function compactTitlePart(value, maxLength) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (text.length <= maxLength) return text;
+
+  const candidate = text.slice(0, Math.max(1, maxLength - 1));
+  const lastSpace = candidate.lastIndexOf(" ");
+  const cleanCut = candidate
+    .slice(0, lastSpace > 12 ? lastSpace : candidate.length)
+    .trim()
+    .replace(/[,:;]+$/, "");
+  return `${cleanCut}…`;
+}
+
+function debateSearchTitle(debate, participantsBySide = {}) {
+  const proNames = participantsBySide.pro?.map((person) => person.name).filter(Boolean) || [];
+  const conNames = participantsBySide.con?.map((person) => person.name).filter(Boolean) || [];
+  const speakers = `${proNames.length ? speakerSummary(proNames) : speakerLabel(debate.sides.pro.speaker)} vs ${conNames.length ? speakerSummary(conNames) : speakerLabel(debate.sides.con.speaker)}`;
+  const topicBudget = Math.max(16, 66 - speakers.length - 3);
+  return `${compactTitlePart(debateTopicTitle(debate), topicBudget)} — ${speakers}`;
+}
+
+function personIdentityJsonLd(name, imagePath = "") {
+  const url = absoluteUrl(interlocutorPath(name));
+  return {
+    "@type": "Person",
+    "@id": `${url}#person`,
+    name,
+    url,
+    ...(imagePath ? { image: absoluteUrl(imagePath) } : {})
+  };
 }
 
 function organizationIdentityJsonLd() {
@@ -222,15 +279,23 @@ export function breadcrumbJsonLd(items) {
 
 export function landingSeo(debates = []) {
   const topics = uniqueNames(debates.map((debate) => debate.label));
+  const recentDebates = [...debates]
+    .sort((first, second) => Number(second.number) - Number(first.number))
+    .slice(0, 12);
 
   return {
     title: DEFAULT_TITLE,
+    heading: "Slugfester debate scorecards",
     description: DEFAULT_DESCRIPTION,
     canonicalPath: "/",
     lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     type: "website",
+    relatedLinks: recentDebates.map((debate) => ({
+      href: debatePath(debate),
+      label: `${debateNumberLabel(debate)}: ${debate.title}`
+    })),
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(topics),
@@ -250,17 +315,41 @@ export function landingSeo(debates = []) {
   };
 }
 
-export function debateSeo(debate) {
+export function debateSeo(debate, participantsBySide = {}) {
   const modifiedDate = latestIsoDate(debate.date, SITE_UPDATED_DATE);
   const publishedTime = seoDateTime(debate.date);
   const modifiedTime = seoDateTime(modifiedDate);
+  const mappedParticipants = [
+    ...(participantsBySide.pro || []),
+    ...(participantsBySide.con || [])
+  ];
+  const participantNames = uniqueNames(
+    mappedParticipants.length
+      ? mappedParticipants.map((person) => person.name)
+      : [
+          ...speakerNames(debate.sides.pro.speaker),
+          ...speakerNames(debate.sides.con.speaker)
+        ]
+  );
+  const participantByName = new Map(mappedParticipants.map((person) => [person.name, person]));
+  const participants = participantNames.map((name) => {
+    const person = participantByName.get(name);
+    return person
+      ? personIdentityJsonLd(person.name, person.placeholder ? "" : person.src)
+      : { "@type": "Person", name };
+  });
+  const relatedLinks = [
+    ...mappedParticipants.map((person) => ({
+      href: interlocutorPath(person),
+      label: `${person.name} debate profile`
+    })),
+    { href: debate.youtubeUrl, label: "Original YouTube debate" }
+  ];
 
   return {
-    title: pageTitle(debateSearchTitle(debate)),
-    description: compactText(
-      `${debateNumberLabel(debate)} scorecard: ${debate.summary} Scores: ${debate.sides.pro.name} ${debate.score.pro}; ${debate.sides.con.name} ${debate.score.con}.`,
-      158
-    ),
+    title: pageTitle(debateSearchTitle(debate, participantsBySide)),
+    heading: debate.title,
+    description: `${debateSearchTitle(debate, participantsBySide)}. Compare transcript-grounded claims, rebuttals, scores, critiques, and YouTube timestamps.`,
     canonicalPath: debatePath(debate),
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${debateNumberLabel(debate)} scorecard: ${debate.title}`,
@@ -269,6 +358,7 @@ export function debateSeo(debate) {
     lastmod: modifiedDate,
     publishedTime,
     modifiedTime,
+    relatedLinks,
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -295,19 +385,14 @@ export function debateSeo(debate) {
           name: SITE_NAME,
           url: SITE_URL
         },
-        about: [
-          debate.label,
-          debate.motion,
-          debate.sides.pro.speaker,
-          debate.sides.con.speaker
-        ].map((name) => ({
+        about: [debate.label, debate.motion].map((name) => ({
           "@type": "Thing",
           name
         })),
+        mentions: participants,
         keywords: [
           debate.label,
-          debate.sides.pro.speaker,
-          debate.sides.con.speaker,
+          ...participantNames,
           debate.sides.pro.name,
           debate.sides.con.name,
           "debate scorecard",
@@ -325,13 +410,18 @@ export function debateSeo(debate) {
 
 export function searchSeo(debates = []) {
   return {
-    title: pageTitle("Search debate scorecards"),
+    title: pageTitle("Search debate transcripts & scorecards"),
+    heading: "Search debate scorecards",
     description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor and text.`,
     canonicalPath: searchPath(),
     lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester debate search with interlocutors.",
     type: "website",
+    relatedLinks: debates.slice(0, 12).map((debate) => ({
+      href: debatePath(debate),
+      label: `${debateNumberLabel(debate)}: ${debate.title}`
+    })),
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -369,13 +459,18 @@ export function topicsSeo(debates = []) {
   const description = `Browse ${debates.length} Slugfester debate scorecards grouped by recurring topics, with compact debate links and participant portraits.`;
 
   return {
-    title: pageTitle("Debates by topic"),
+    title: pageTitle("Debate topics & argument scorecards"),
+    heading: "Debates by topic",
     description,
     canonicalPath: topicsPath(),
     lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester topic index with compact debate cards.",
     type: "website",
+    relatedLinks: debates.slice(0, 12).map((debate) => ({
+      href: debatePath(debate),
+      label: `${debateNumberLabel(debate)}: ${debate.title}`
+    })),
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(topics),
@@ -416,7 +511,8 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
   const description = `Compare average overall debate scores for ${rankedInterlocutorCount || "qualifying"} Slugfester interlocutors and topic-level reasoning flags across ${debates.length} scorecards.`;
 
   return {
-    title: pageTitle("Rankings & Flags"),
+    title: pageTitle("Debate speaker rankings & score comparison"),
+    heading: "Rankings & Flags",
     description,
     canonicalPath: rankingsPath(),
     lastmod: latestDebateDate(debates),
@@ -448,37 +544,61 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
   };
 }
 
-export function interlocutorSeo(person, appearances = 0, updatedDate = SITE_UPDATED_DATE) {
+export function interlocutorSeo(
+  person,
+  appearances = 0,
+  updatedDate = SITE_UPDATED_DATE,
+  profileDebates = []
+) {
   const profilePath = interlocutorPath(person);
   const appearanceLabel = `${appearances} eligible 1-on-1 ${appearances === 1 ? "debate scorecard" : "debate scorecards"}`;
   const description = appearances
     ? `${person.name}'s Slugfester debate profile, including published score averages, opponents faced, topic performance, and ${appearanceLabel}.`
     : `${person.name}'s Slugfester debate profile links team or panel appearances; shared side scores are excluded from individual averages.`;
+  const uniqueDebates = [
+    ...new Map(profileDebates.filter(Boolean).map((debate) => [debate.id, debate])).values()
+  ];
+  const personEntity = personIdentityJsonLd(person.name, person.placeholder ? "" : person.src);
 
   return {
-    title: pageTitle(`${person.name} debate profile`),
+    title: pageTitle(
+      appearances ? `${person.name} debate record & scores` : `${person.name} debate appearances`
+    ),
+    heading: person.name,
     description,
     canonicalPath: profilePath,
     lastmod: updatedDate || SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${person.name}'s Slugfester debate profile.`,
     type: "website",
+    relatedLinks: uniqueDebates.slice(0, 20).map((debate) => ({
+      href: debatePath(debate),
+      label: `${debateNumberLabel(debate)}: ${debate.title}`
+    })),
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
       {
         "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        name: `${person.name} debate profile`,
+        "@type": "CollectionPage",
+        name: `${person.name} debate record and scorecards`,
         description,
         url: absoluteUrl(profilePath),
+        dateModified: seoDateTime(updatedDate || SITE_UPDATED_DATE),
         isPartOf: {
           "@id": WEBSITE_ID
         },
+        about: personEntity,
         mainEntity: {
-          "@type": "Person",
-          name: person.name,
-          ...(person.placeholder ? {} : { image: absoluteUrl(person.src) })
+          "@type": "ItemList",
+          name: `${person.name} debate scorecards and appearances`,
+          numberOfItems: uniqueDebates.length,
+          itemListElement: uniqueDebates.map((debate, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: absoluteUrl(debatePath(debate)),
+            name: `${debateNumberLabel(debate)}: ${debate.title}`
+          }))
         }
       },
       breadcrumbJsonLd([
@@ -496,7 +616,8 @@ export function backendSeo({ legacy = false } = {}) {
   const updatedDate = "2026-08-28";
 
   return {
-    title: pageTitle("Backend"),
+    title: pageTitle("How Slugfester scores debates"),
+    heading: "Backend",
     description,
     canonicalPath: backendPath(),
     robots: legacy ? "noindex,follow" : DEFAULT_ROBOTS,
@@ -556,7 +677,8 @@ export function correctionsSeo() {
     "Report a possible Slugfester scorecard issue and review the public record of material scoring, attribution, and presentation corrections.";
 
   return {
-    title: pageTitle("Corrections & revisions"),
+    title: pageTitle("Corrections & scorecard revisions"),
+    heading: "Corrections & revisions",
     description,
     canonicalPath: correctionsPath(),
     lastmod: SITE_UPDATED_DATE,
@@ -596,7 +718,8 @@ export function referenceSeo(type, slug, reference) {
     type === "fallacy" ? "https://logfall.com/fallacies/" : "https://cogbias.site/biases/";
 
   return {
-    title: pageTitle(`${reference.label} ${category.toLowerCase()}`),
+    title: pageTitle(`${reference.label}: ${category.toLowerCase()} in debates`),
+    heading: reference.label,
     description: compactText(`${reference.label}: ${reference.definition}`, 158),
     canonicalPath: referencePath(type, slug),
     lastmod: SITE_UPDATED_DATE,
@@ -605,6 +728,9 @@ export function referenceSeo(type, slug, reference) {
     type: "article",
     articleSection: category,
     modifiedTime: SITE_UPDATED_DATETIME,
+    relatedLinks: [
+      { href: reference.externalUrl, label: `Read the in-depth ${sourceName} entry` }
+    ],
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -634,6 +760,7 @@ export function referenceSeo(type, slug, reference) {
 export function notFoundSeo() {
   return {
     title: pageTitle("Page not found"),
+    heading: "Page not found",
     description: "This Slugfester page could not be found.",
     canonicalPath: null,
     imagePath: DEFAULT_IMAGE,

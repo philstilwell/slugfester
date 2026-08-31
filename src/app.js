@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260830-discovery-integrity-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-discovery-integrity-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-discovery-integrity-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260831-seo-discovery-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260831-seo-discovery-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260831-seo-discovery-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -31,7 +31,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260830-discovery-integrity-v1";
+} from "./seo.js?v=20260831-seo-discovery-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -74,7 +74,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260830-discovery-integrity-v1")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260831-seo-discovery-v1")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -93,7 +93,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260830-discovery-integrity-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260831-seo-discovery-v1`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -108,7 +108,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260830-discovery-integrity-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260831-seo-discovery-v1`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -2079,7 +2079,14 @@ function renderInterlocutorProfile(slug) {
   const teamProfileLastmod = teamScorecards.map(({ debate }) => debate.date).filter(Boolean).sort().at(-1);
 
   if (!eligibleProfile) {
-    setSeo(interlocutorSeo(person, 0, teamProfileLastmod));
+    setSeo(
+      interlocutorSeo(
+        person,
+        0,
+        teamProfileLastmod,
+        teamScorecards.map(({ debate }) => debate)
+      )
+    );
     app.innerHTML = renderShell(`
       <main class="interlocutor-profile-page" data-profile-name="${escapeHtml(person.name)}" data-one-on-one-count="0" data-team-count="${teamScorecards.length}">
         <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
@@ -2118,7 +2125,17 @@ function renderInterlocutorProfile(slug) {
     .sort()
     .at(-1);
 
-  setSeo(interlocutorSeo(person, person.appearances, profileLastmod));
+  setSeo(
+    interlocutorSeo(
+      person,
+      person.appearances,
+      profileLastmod,
+      [
+        ...scorecards.map(({ debate }) => debate),
+        ...teamScorecards.map(({ debate }) => debate)
+      ]
+    )
+  );
   app.innerHTML = renderShell(`
     <main class="interlocutor-profile-page" data-profile-name="${escapeHtml(person.name)}" data-one-on-one-count="${person.appearances}" data-team-count="${teamScorecards.length}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}">
       <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
@@ -2813,7 +2830,10 @@ function renderDebateObject(
   { calibrationPreview = false, publicationStagingPreview = false } = {}
 ) {
   const preview = calibrationPreview || publicationStagingPreview;
-  const seo = debateSeo(debate);
+  const seo = debateSeo(debate, {
+    pro: avatarsForSpeakerText(debate.sides.pro.speaker),
+    con: avatarsForSpeakerText(debate.sides.con.speaker)
+  });
   setSeo(preview
     ? {
         ...seo,

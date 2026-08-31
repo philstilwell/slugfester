@@ -84,6 +84,8 @@ if (sitemapSet.size !== expectedPaths.length) {
 }
 
 const canonicalOwners = new Map();
+const titleOwners = new Map();
+const descriptionOwners = new Map();
 sitemapUrls.forEach((urlString) => {
   const url = new URL(urlString);
   const file = fileForPathname(url.pathname);
@@ -93,6 +95,32 @@ sitemapUrls.forEach((urlString) => {
   }
 
   const html = readFileSync(file, "utf8");
+  const titleMatches = [...html.matchAll(/<title>([^<]+)<\/title>/g)];
+  const title = decodeAttribute(titleMatches[0]?.[1] || "");
+  if (titleMatches.length !== 1) {
+    fail(`${url.pathname} has ${titleMatches.length} title elements; expected 1`);
+  } else if (title.length < 20 || title.length > 90) {
+    fail(`${url.pathname} title has ${title.length} characters; expected 20–90`);
+  } else if (titleOwners.has(title)) {
+    fail(`Duplicate title "${title}" on ${titleOwners.get(title)} and ${url.pathname}`);
+  }
+  titleOwners.set(title, url.pathname);
+
+  const descriptionMatches = [
+    ...html.matchAll(/<meta name="description" content="([^"]+)">/g)
+  ];
+  const description = decodeAttribute(descriptionMatches[0]?.[1] || "");
+  if (descriptionMatches.length !== 1) {
+    fail(`${url.pathname} has ${descriptionMatches.length} meta descriptions; expected 1`);
+  } else if (description.length < 60 || description.length > 170) {
+    fail(`${url.pathname} meta description has ${description.length} characters; expected 60–170`);
+  } else if (descriptionOwners.has(description)) {
+    fail(
+      `Duplicate meta description on ${descriptionOwners.get(description)} and ${url.pathname}`
+    );
+  }
+  descriptionOwners.set(description, url.pathname);
+
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
   if (canonical !== url.href) {
     fail(`${url.pathname} canonical is ${canonical || "missing"}; expected ${url.href}`);
@@ -101,6 +129,82 @@ sitemapUrls.forEach((urlString) => {
     fail(`Duplicate canonical ${canonical} on ${canonicalOwners.get(canonical)} and ${url.pathname}`);
   }
   canonicalOwners.set(canonical, url.pathname);
+
+  const robots = html.match(/<meta name="robots" content="([^"]+)">/)?.[1] || "";
+  if (!robots.startsWith("index,follow")) {
+    fail(`${url.pathname} is in the sitemap but has robots content "${robots || "missing"}"`);
+  }
+
+  const ogUrl = html.match(/<meta property="og:url" content="([^"]+)">/)?.[1];
+  if (ogUrl !== canonical) fail(`${url.pathname} Open Graph URL does not match its canonical`);
+  for (const requiredMeta of [
+    'property="og:title"',
+    'property="og:description"',
+    'property="og:image"',
+    'name="twitter:card"',
+    'name="twitter:title"',
+    'name="twitter:description"',
+    'name="twitter:image"'
+  ]) {
+    if (!html.includes(`<meta ${requiredMeta}`)) {
+      fail(`${url.pathname} is missing ${requiredMeta}`);
+    }
+  }
+
+  if (html.includes('<div id="app"></div>')) {
+    fail(`${url.pathname} still ships an empty JavaScript-only app shell`);
+  }
+  const fallback = html.match(/<main class="seo-fallback"[\s\S]*?<\/main>/)?.[0] || "";
+  if (!fallback) {
+    fail(`${url.pathname} is missing pre-rendered fallback content`);
+  } else {
+    const heading = decodeAttribute(fallback.match(/<h1>([^<]+)<\/h1>/)?.[1] || "");
+    const summary = decodeAttribute(fallback.match(/<p>([^<]+)<\/p>/)?.[1] || "");
+    const links = [...fallback.matchAll(/<a href="([^"]+)">/g)];
+    if (heading.length < 2) fail(`${url.pathname} fallback is missing a useful H1`);
+    if (summary.length < 50) fail(`${url.pathname} fallback summary is too short`);
+    if (links.length < 5) fail(`${url.pathname} fallback has fewer than 5 crawlable links`);
+  }
+
+  const structuredDataText = html.match(
+    /<script type="application\/ld\+json" id="seo-structured-data">([\s\S]*?)<\/script>/
+  )?.[1];
+  let structuredData = [];
+  try {
+    structuredData = JSON.parse(structuredDataText || "null");
+  } catch (error) {
+    fail(`${url.pathname} has invalid JSON-LD: ${error.message}`);
+  }
+  if (!Array.isArray(structuredData)) {
+    fail(`${url.pathname} JSON-LD is not an array`);
+    structuredData = [];
+  }
+  const structuredTypes = new Set(structuredData.map((entry) => entry?.["@type"]));
+  for (const requiredType of ["Organization", "WebSite", "BreadcrumbList"]) {
+    if (!structuredTypes.has(requiredType) && url.pathname !== "/") {
+      fail(`${url.pathname} JSON-LD is missing ${requiredType}`);
+    }
+  }
+  if (url.pathname.startsWith("/debate/")) {
+    const article = structuredData.find((entry) => entry?.["@type"] === "Article");
+    if (!article) fail(`${url.pathname} JSON-LD is missing Article`);
+    if (!article?.mentions?.every((entry) => entry?.["@type"] === "Person")) {
+      fail(`${url.pathname} Article does not identify its interlocutors as people`);
+    }
+  }
+  if (url.pathname.startsWith("/interlocutor/")) {
+    const collection = structuredData.find((entry) => entry?.["@type"] === "CollectionPage");
+    if (!collection) fail(`${url.pathname} JSON-LD is missing CollectionPage`);
+    if (collection?.about?.["@type"] !== "Person") {
+      fail(`${url.pathname} CollectionPage is not linked to its interlocutor`);
+    }
+    if (collection?.mainEntity?.["@type"] !== "ItemList") {
+      fail(`${url.pathname} CollectionPage is missing its debate ItemList`);
+    }
+  }
+  if (url.pathname.startsWith("/reference/") && !structuredTypes.has("DefinedTerm")) {
+    fail(`${url.pathname} JSON-LD is missing DefinedTerm`);
+  }
 
   if (!html.includes('rel="alternate" type="application/atom+xml"')) {
     fail(`${url.pathname} does not advertise the updates feed`);

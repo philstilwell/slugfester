@@ -41,11 +41,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260830-discovery-integrity-v1";
-const interlocutorAssetVersion = "20260830-discovery-integrity-v1";
-const rankingsAssetVersion = "20260830-discovery-integrity-v1";
-const debateAssetVersion = "20260830-discovery-integrity-v1";
-const backendAssetVersion = "20260830-discovery-integrity-v1";
+const assetVersion = "20260831-seo-discovery-v1";
+const interlocutorAssetVersion = "20260831-seo-discovery-v1";
+const rankingsAssetVersion = "20260831-seo-discovery-v1";
+const debateAssetVersion = "20260831-seo-discovery-v1";
+const backendAssetVersion = "20260831-seo-discovery-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -86,6 +86,40 @@ function sentence(value = "") {
   return /[.!?]$/.test(text) ? text : `${text}.`;
 }
 
+function fallbackHeading(seo = {}) {
+  if (seo.heading) return seo.heading;
+  return String(seo.title || DEFAULT_TITLE).split(` | ${SITE_NAME}`)[0] || SITE_NAME;
+}
+
+function fallbackMarkup(seo, summary) {
+  const links = [
+    { href: "/", label: "Browse debates" },
+    { href: searchPath(), label: "Search scorecards" },
+    { href: topicsPath(), label: "Browse topics" },
+    { href: rankingsPath(), label: "Compare interlocutors" },
+    { href: backendPath(), label: "Read the assessment method" },
+    ...(seo.relatedLinks || [])
+  ];
+  const uniqueLinks = [
+    ...new Map(
+      links
+        .filter(({ href, label }) => href && label)
+        .map((link) => [String(link.href), link])
+    ).values()
+  ].slice(0, 25);
+
+  return `<main class="seo-fallback" id="main-content">
+      <p class="eyebrow">${escapeHtml(SITE_NAME)}</p>
+      <h1>${escapeHtml(fallbackHeading(seo))}</h1>
+      <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>
+      <nav aria-label="Explore Slugfester">
+        ${uniqueLinks
+          .map(({ href, label }) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
+          .join("\n        ")}
+      </nav>
+    </main>`;
+}
+
 function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const canonicalUrl = seo.canonicalPath === null ? "" : absoluteUrl(seo.canonicalPath || "/");
   const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
@@ -114,6 +148,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const updatedMeta = updatedTime
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
+  const fallback = fallbackMarkup(seo, noscriptText);
 
   return `<!doctype html>
 <html lang="en">
@@ -158,8 +193,10 @@ ${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl
     ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
   </head>
   <body>
-    <div id="app"></div>
-    <noscript>${escapeHtml(noscriptText)}</noscript>
+    <div id="app">
+      ${fallback}
+    </div>
+    <noscript><p class="seo-noscript">Interactive filters and detailed critique controls require JavaScript; the page summary and links above remain available.</p></noscript>
     <script type="module" src="/src/app.js?v=${pageAssetVersion}"></script>
   </body>
 </html>
@@ -304,6 +341,13 @@ function debateSummary(debate) {
   };
 }
 
+function debateParticipantsBySide(debate) {
+  return {
+    pro: avatarsForSpeakerText(debate.sides.pro.speaker),
+    con: avatarsForSpeakerText(debate.sides.con.speaker)
+  };
+}
+
 function tagSummaryForSide(debate, sideKey) {
   return debate.sections.reduce(
     (totals, section) =>
@@ -424,8 +468,12 @@ debates.forEach((debate) => {
       const profile = interlocutorProfiles.get(person.name) || {
         person,
         appearances: 0,
-        latestDate: debate.date
+        latestDate: debate.date,
+        debates: []
       };
+      if (!profile.debates.some((profileDebate) => profileDebate.id === debate.id)) {
+        profile.debates.push(debate);
+      }
       if (isOneOnOne && debate.interlocutorRankingEligible !== false) {
         profile.appearances += 1;
       }
@@ -480,10 +528,10 @@ addPage(
 
 [...interlocutorProfiles.values()]
   .sort((a, b) => a.person.name.localeCompare(b.person.name))
-  .forEach(({ person, appearances, latestDate }) => {
+  .forEach(({ person, appearances, latestDate, debates: profileDebates }) => {
     addPage(
       interlocutorPath(person),
-      interlocutorSeo(person, appearances, latestDate),
+      interlocutorSeo(person, appearances, latestDate, profileDebates),
       `${person.name}'s Slugfester profile includes score averages, opponents faced, topic performance, and linked debate scorecards.`
     );
   });
@@ -509,8 +557,8 @@ addPage(
 debates.forEach((debate) => {
   addPage(
     debatePath(debate),
-    debateSeo(debate),
-    `${sentence(debate.title)} Slugfester provides a side-by-side argument scorecard for this debate.`
+    debateSeo(debate, debateParticipantsBySide(debate)),
+    `${sentence(debate.summary)} Overall side scores: ${debate.sides.pro.name} ${debate.score.pro}; ${debate.sides.con.name} ${debate.score.con}. The full scorecard maps transcript-grounded claims, rebuttals, critiques, and timestamped sources.`
   );
 });
 
