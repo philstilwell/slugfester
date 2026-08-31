@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260830-performance-security-quality-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-performance-security-quality-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-performance-security-quality-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260830-performance-security-quality-v2";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-performance-security-quality-v2";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-performance-security-quality-v2";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -29,7 +29,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260830-performance-security-quality-v1";
+} from "./seo.js?v=20260830-performance-security-quality-v2";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -71,7 +71,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260830-performance-security-quality-v1")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260830-performance-security-quality-v2")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -90,7 +90,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260830-performance-security-quality-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260830-performance-security-quality-v2`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -105,7 +105,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260830-performance-security-quality-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260830-performance-security-quality-v2`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
