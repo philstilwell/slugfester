@@ -183,8 +183,8 @@ requireIncludes("app accessibility", app, 'class="skip-link"');
 requireIncludes("app accessibility", app, 'id="main-content"');
 requireIncludes("app accessibility", app, "argumentHelpId");
 requireIncludes("app accessibility", app, 'aria-describedby="${escapeHtml(tooltipId)}"');
-requireIncludes("app performance", app, 'import("./data/debates.js")');
-requireIncludes("app performance", app, 'from "./data/debate-summaries.js"');
+requireIncludes("app performance", app, 'import("./data/debates.js?v=');
+requireIncludes("app performance", app, 'from "./data/debate-summaries.js?v=');
 requireIncludes("app analytics", app, "loadCloudflareAnalytics");
 
 requireExcludes("app sticky header", app, "brand-gloves");

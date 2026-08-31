@@ -3,7 +3,7 @@ export const SITE_NAME = "Slugfester";
 export const SITE_LOCALE = "en_US";
 export const SITE_LANGUAGE = "en";
 export const SITE_THEME_COLOR = "#13201f";
-export const SITE_UPDATED_DATE = "2026-08-02";
+export const SITE_UPDATED_DATE = "2026-08-30";
 export const SITE_TIME_ZONE_OFFSET = "-04:00";
 export const SITE_UPDATED_DATETIME = `${SITE_UPDATED_DATE}T12:00:00${SITE_TIME_ZONE_OFFSET}`;
 export const DEFAULT_TITLE = "Slugfester | YouTube Debate Argument Scorecards";
@@ -23,6 +23,10 @@ const WEBSITE_ID = `${SITE_URL}/#website`;
 function latestIsoDate(...dates) {
   const values = dates.filter(Boolean);
   return values.length ? values.sort().at(-1) : SITE_UPDATED_DATE;
+}
+
+function latestDebateDate(debates = []) {
+  return latestIsoDate(...debates.map((debate) => debate?.date), SITE_UPDATED_DATE);
 }
 
 function seoDateTime(date = SITE_UPDATED_DATE) {
@@ -219,7 +223,7 @@ export function landingSeo(debates = []) {
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
     canonicalPath: "/",
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: DEFAULT_IMAGE_ALT,
     type: "website",
@@ -320,7 +324,7 @@ export function searchSeo(debates = []) {
     title: pageTitle("Search debate scorecards"),
     description: `Filter ${debates.length} Slugfester debate scorecards by interlocutor and text.`,
     canonicalPath: searchPath(),
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester debate search with interlocutors.",
     type: "website",
@@ -364,7 +368,7 @@ export function topicsSeo(debates = []) {
     title: pageTitle("Debates by topic"),
     description,
     canonicalPath: topicsPath(),
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester topic index with compact debate cards.",
     type: "website",
@@ -411,7 +415,7 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
     title: pageTitle("Rankings & Flags"),
     description,
     canonicalPath: rankingsPath(),
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: latestDebateDate(debates),
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester flags and rankings for debate scorecards.",
     type: "website",
@@ -440,7 +444,7 @@ export function rankingsSeo(debates = [], rankedInterlocutorCount = 0) {
   };
 }
 
-export function interlocutorSeo(person, appearances = 0) {
+export function interlocutorSeo(person, appearances = 0, updatedDate = SITE_UPDATED_DATE) {
   const profilePath = interlocutorPath(person);
   const appearanceLabel = `${appearances} eligible 1-on-1 ${appearances === 1 ? "debate scorecard" : "debate scorecards"}`;
   const description = appearances
@@ -451,7 +455,7 @@ export function interlocutorSeo(person, appearances = 0) {
     title: pageTitle(`${person.name} debate profile`),
     description,
     canonicalPath: profilePath,
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: updatedDate || SITE_UPDATED_DATE,
     imagePath: DEFAULT_IMAGE,
     imageAlt: `${person.name}'s Slugfester debate profile.`,
     type: "website",
@@ -470,7 +474,7 @@ export function interlocutorSeo(person, appearances = 0) {
         mainEntity: {
           "@type": "Person",
           name: person.name,
-          image: absoluteUrl(person.src)
+          ...(person.placeholder ? {} : { image: absoluteUrl(person.src) })
         }
       },
       breadcrumbJsonLd([

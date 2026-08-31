@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js";
-import { avatarsForSpeakerText } from "./data/interlocutors.js";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260830-site-audit-fixes-v2";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260830-site-audit-fixes-v2";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260830-site-audit-fixes-v2";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -29,7 +29,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js";
+} from "./seo.js?v=20260830-site-audit-fixes-v2";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -68,7 +68,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDetailedDebates() {
   if (!detailedDebatesPromise) {
-    detailedDebatesPromise = import("./data/debates.js")
+    detailedDebatesPromise = import("./data/debates.js?v=20260830-site-audit-fixes-v2")
       .then(({ publishedDebates }) => {
         debates = publishedDebates;
         return publishedDebates;
@@ -1169,10 +1169,11 @@ function rankingTopicSummary(appearances) {
 
 function sampleConfidence(appearances) {
   if (appearances <= 3) {
+    const scorecardLabel = appearances === 1 ? "One scorecard provides" : `${appearances} scorecards provide`;
     return {
       tone: "limited",
       label: "Limited sample",
-      description: "Three scorecards establish an early signal, not a settled ranking."
+      description: `${scorecardLabel} an early signal, not a settled ranking.`
     };
   }
 
@@ -1378,14 +1379,11 @@ function rankedInterlocutors(state) {
 }
 
 function formatAverageScore(score) {
-  return Number(score).toFixed(1);
+  const formattedScore = Number(score).toFixed(1);
+  return formattedScore.endsWith(".0") ? formattedScore.slice(0, -2) : formattedScore;
 }
 
 function formatOpponentBreakdownScore(opponent) {
-  if (Number.isInteger(opponent.averageOpponentScore)) {
-    return String(opponent.averageOpponentScore);
-  }
-
   return formatAverageScore(opponent.averageOpponentScore);
 }
 
@@ -1988,9 +1986,10 @@ function renderInterlocutorProfile(slug) {
   const teamScorecards = profileTeamRecords(person.name).sort(
     (a, b) => Number.parseInt(a.debate.number, 10) - Number.parseInt(b.debate.number, 10)
   );
+  const teamProfileLastmod = teamScorecards.map(({ debate }) => debate.date).filter(Boolean).sort().at(-1);
 
   if (!eligibleProfile) {
-    setSeo(interlocutorSeo(person, 0));
+    setSeo(interlocutorSeo(person, 0, teamProfileLastmod));
     app.innerHTML = renderShell(`
       <main class="interlocutor-profile-page">
         <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
@@ -2024,8 +2023,12 @@ function renderInterlocutorProfile(slug) {
   const scorecards = [...person.records].sort(
     (a, b) => Number.parseInt(a.debate.number, 10) - Number.parseInt(b.debate.number, 10)
   );
+  const profileLastmod = [...person.records.map(({ debate }) => debate.date), teamProfileLastmod]
+    .filter(Boolean)
+    .sort()
+    .at(-1);
 
-  setSeo(interlocutorSeo(person, person.appearances));
+  setSeo(interlocutorSeo(person, person.appearances, profileLastmod));
   app.innerHTML = renderShell(`
     <main class="interlocutor-profile-page">
       <a class="back-link profile-back-link" href="${rankingsPath()}">Back to Rankings & Flags</a>
@@ -2898,6 +2901,7 @@ function renderQuoteCard(side, quote, tone) {
       <span class="quote-side">${escapeHtml(side.name)} · ${escapeHtml(side.speaker)}</span>
       <blockquote>"${escapeHtml(quote.text)}"</blockquote>
       <p>${escapeHtml(quote.context)}</p>
+      <span class="quote-card-mark" aria-hidden="true">"</span>
     </article>
   `;
 }

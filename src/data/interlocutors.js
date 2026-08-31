@@ -860,6 +860,12 @@ export const interlocutorAvatars = [
     name: "Julian Baggini",
     src: `${avatarBasePath}/julian-baggini.webp`,
     aliases: ["Julian Baggini"]
+  },
+  {
+    name: "Alex Carter",
+    src: "/assets/debate-gloves.png",
+    aliases: ["Alex Carter", "Dr Alex Carter", "Dr. Alex Carter"],
+    placeholder: true
   }
 ];
 

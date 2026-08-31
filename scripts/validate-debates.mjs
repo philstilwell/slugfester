@@ -1,4 +1,5 @@
 import { debates } from "../src/data/debates.js";
+import { avatarsForSpeakerText, interlocutorAvatars } from "../src/data/interlocutors.js";
 import { getReferenceDefinition, referenceFromUrl } from "../src/data/references.js";
 import { existsSync, readFileSync } from "node:fs";
 import {
@@ -2352,7 +2353,13 @@ function validateSide(side, path) {
   }
 
   requireString(side, "name", path);
-  requireString(side, "speaker", path);
+  const speaker = requireString(side, "speaker", path);
+  if (speaker && avatarsForSpeakerText(speaker).length === 0) {
+    addError(
+      [...path, "speaker"],
+      "must resolve to at least one registered interlocutor so scorecard eligibility is calculated correctly"
+    );
+  }
 }
 
 function validateOverall(overall, path, { minimumBlunders = 1 } = {}) {
@@ -2722,6 +2729,30 @@ if (!Array.isArray(debates) || debates.length === 0) {
   });
   validateAiContributionPunctuationCorpus(debates);
 }
+
+const avatarNames = new Set();
+interlocutorAvatars.forEach((avatar, index) => {
+  const path = ["interlocutorAvatars", String(index)];
+  const name = requireString(avatar, "name", path);
+  const src = requireString(avatar, "src", path, {
+    pattern: /^\/assets\//,
+    patternMessage: "must use a root-relative /assets/ path"
+  });
+  requireArray(avatar, "aliases", path, { minLength: 1 }).forEach((alias, aliasIndex) => {
+    if (typeof alias !== "string" || !alias.trim()) {
+      addError([...path, "aliases", String(aliasIndex)], "must be a non-empty string");
+    }
+  });
+
+  if (name && avatarNames.has(name.toLowerCase())) {
+    addError([...path, "name"], "must be unique (case-insensitive)");
+  }
+  if (name) avatarNames.add(name.toLowerCase());
+
+  if (src && !existsSync(new URL(`..${src}`, import.meta.url))) {
+    addError([...path, "src"], "must point to an existing asset file");
+  }
+});
 
 if (errors.length > 0) {
   console.error(`Debate validation failed with ${errors.length} issue${errors.length === 1 ? "" : "s"}:`);

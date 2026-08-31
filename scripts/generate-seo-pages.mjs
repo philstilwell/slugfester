@@ -38,11 +38,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260830-profile-score-no-median-highlight";
-const interlocutorAssetVersion = "20260830-profile-matchup-labels";
-const rankingsAssetVersion = "20260830-ranking-comparison-histograms-v3";
-const debateAssetVersion = "20260830-debate-position-histograms-v3";
-const backendAssetVersion = "20260830-backend-rubric-distribution-v3";
+const assetVersion = "20260830-site-audit-fixes-v2";
+const interlocutorAssetVersion = "20260830-site-audit-fixes-v2";
+const rankingsAssetVersion = "20260830-site-audit-fixes-v2";
+const debateAssetVersion = "20260830-site-audit-fixes-v2";
+const backendAssetVersion = "20260830-site-audit-fixes-v2";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -250,9 +250,16 @@ debates.forEach((debate) => {
   );
   ["pro", "con"].forEach((sideKey) => {
     avatarsForSpeakerText(debate.sides[sideKey].speaker).forEach((person) => {
-      const profile = interlocutorProfiles.get(person.name) || { person, appearances: 0 };
+      const profile = interlocutorProfiles.get(person.name) || {
+        person,
+        appearances: 0,
+        latestDate: debate.date
+      };
       if (isOneOnOne && debate.interlocutorRankingEligible !== false) {
         profile.appearances += 1;
+      }
+      if (debate.date && (!profile.latestDate || debate.date > profile.latestDate)) {
+        profile.latestDate = debate.date;
       }
       interlocutorProfiles.set(person.name, profile);
     });
@@ -302,10 +309,10 @@ addPage(
 
 [...interlocutorProfiles.values()]
   .sort((a, b) => a.person.name.localeCompare(b.person.name))
-  .forEach(({ person, appearances }) => {
+  .forEach(({ person, appearances, latestDate }) => {
     addPage(
       interlocutorPath(person),
-      interlocutorSeo(person, appearances),
+      interlocutorSeo(person, appearances, latestDate),
       `${person.name}'s Slugfester profile includes score averages, opponents faced, topic performance, and linked debate scorecards.`
     );
   });

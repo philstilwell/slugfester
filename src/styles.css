@@ -6,12 +6,15 @@
   --surface: #ffffff;
   --surface-2: #f4f8f7;
   --teal: #2f8f85;
+  --teal-text: #24756d;
   --teal-soft: #e2f3f0;
   --coral: #d35d47;
+  --coral-text: #b04736;
   --coral-soft: #fae7e2;
   --glove-red: #b91f24;
   --title-shadow-brown: rgba(74, 42, 29, 0.72);
   --gold: #d0a31f;
+  --gold-text: #805908;
   --blue: #2d5f8b;
   --shadow: 0 18px 50px rgba(27, 43, 41, 0.12);
 }
@@ -1090,16 +1093,16 @@ a {
 
 .comparison-person-stats dd.strong,
 .comparison-person-stats dd.bias {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .comparison-person-stats dd.mixed {
-  color: #a4760c;
+  color: var(--gold-text);
 }
 
 .comparison-person-stats dd.weak,
 .comparison-person-stats dd.fallacy {
-  color: var(--coral);
+  color: var(--coral-text);
 }
 
 .reasoning-distribution {
@@ -1182,11 +1185,11 @@ a {
 }
 
 .reasoning-readout-stats .fallacy dd {
-  color: var(--coral);
+  color: var(--coral-text);
 }
 
 .reasoning-readout-stats .bias dd {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .reasoning-readout-stats dd small {
@@ -1745,15 +1748,15 @@ a {
 }
 
 .ranking-score.strong strong {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .ranking-score.mixed strong {
-  color: #a4760c;
+  color: var(--gold-text);
 }
 
 .ranking-score.weak strong {
-  color: var(--coral);
+  color: var(--coral-text);
 }
 
 .ranking-method summary {
@@ -1775,7 +1778,7 @@ a {
 
 .ranking-method summary::after {
   content: "+";
-  color: var(--teal);
+  color: var(--teal-text);
   font-size: 1.05rem;
   font-weight: 900;
 }
@@ -1887,16 +1890,16 @@ a {
 
 .profile-metric.strong dd,
 .profile-metric.bias dd {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .profile-metric.mixed dd {
-  color: #a4760c;
+  color: var(--gold-text);
 }
 
 .profile-metric.weak dd,
 .profile-metric.fallacy dd {
-  color: var(--coral);
+  color: var(--coral-text);
 }
 
 .profile-distribution,
@@ -2385,17 +2388,17 @@ a {
 
 .profile-breakdown-list b.strong,
 .profile-opponent-list b.strong {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .profile-breakdown-list b.mixed,
 .profile-opponent-list b.mixed {
-  color: #a4760c;
+  color: var(--gold-text);
 }
 
 .profile-breakdown-list b.weak,
 .profile-opponent-list b.weak {
-  color: var(--coral);
+  color: var(--coral-text);
 }
 
 .profile-opponent-list a {
@@ -2493,15 +2496,15 @@ a {
 }
 
 .profile-debate-card dd.strong {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .profile-debate-card dd.mixed {
-  color: #a4760c;
+  color: var(--gold-text);
 }
 
 .profile-debate-card dd.weak {
-  color: var(--coral);
+  color: var(--coral-text);
 }
 
 .empty-results {
@@ -3194,7 +3197,7 @@ a {
 }
 
 .backend-objectivity-steps li li::marker {
-  color: var(--teal);
+  color: var(--teal-text);
 }
 
 .backend-objectivity-limit {
@@ -3810,8 +3813,7 @@ a {
   font-size: 1.02rem;
 }
 
-.quote-card::after {
-  content: "\"";
+.quote-card-mark {
   position: absolute;
   right: 18px;
   bottom: -34px;
@@ -3821,7 +3823,7 @@ a {
   line-height: 1;
 }
 
-.quote-card.coral::after {
+.quote-card.coral .quote-card-mark {
   color: rgba(211, 93, 71, 0.1);
 }
 
