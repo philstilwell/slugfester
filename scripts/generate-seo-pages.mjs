@@ -41,11 +41,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260831-decimal-consistency-v1";
-const interlocutorAssetVersion = "20260831-decimal-consistency-v1";
-const rankingsAssetVersion = "20260831-decimal-consistency-v1";
-const debateAssetVersion = "20260831-decimal-consistency-v1";
-const backendAssetVersion = "20260831-decimal-consistency-v1";
+const assetVersion = "20260831-automatic-analytics-v1";
+const interlocutorAssetVersion = "20260831-automatic-analytics-v1";
+const rankingsAssetVersion = "20260831-automatic-analytics-v1";
+const debateAssetVersion = "20260831-automatic-analytics-v1";
+const backendAssetVersion = "20260831-automatic-analytics-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -71,7 +71,7 @@ function contentSecurityPolicy(structuredData = "") {
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data:",
     "font-src 'self'",
-    "connect-src 'self' https://cloudflareinsights.com",
+    "connect-src 'self'",
     "media-src 'none'",
     "object-src 'none'",
     "frame-src 'none'",

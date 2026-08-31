@@ -219,7 +219,8 @@ requireIncludes("app performance", app, 'import(`./data/debate-details/${id}.js?
 requireIncludes("app performance", app, 'import(`./data/reference-appearances/${type}-${slug}.js?v=');
 requireIncludes("app performance", app, 'from "./data/debate-summaries.js?v=');
 requireExcludes("app performance", app, 'import("./data/debates.js');
-requireIncludes("app analytics", app, "loadCloudflareAnalytics");
+requireExcludes("app analytics", app, "loadCloudflareAnalytics");
+requireExcludes("app analytics", app, "cloudflareinsights.com/beacon.min.js");
 
 requireExcludes("app sticky header", app, "brand-gloves");
 requireExcludes("app scorecard", app, "scoreboard-gloves");
