@@ -9756,5 +9756,53 @@ export const debateSummaries = [
         "title": "Scientific compatibility and the final competing frameworks"
       }
     ]
+  },
+  {
+    "id": "douthat-oconnor-religious-belief-obligation-2026",
+    "number": "217",
+    "title": "Religious Belief as an Obligation: Ross Douthat vs. Alex O'Connor (2026)",
+    "label": "Religious belief and evidential obligation",
+    "date": "2026-08-31",
+    "duration": "1 hr 49 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Zp4xlI6-dlY",
+    "motion": "Does the available evidence make religious belief an obligation?",
+    "summary": "O’Connor’s skeptical case won 84–69, chiefly by exposing underdetermination, hiddenness, and suffering while Douthat offered a substantive but incompletely warranted cumulative case.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Religious belief as rational obligation",
+        "speaker": "Ross Douthat",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Skeptical evidential challenge",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 69,
+      "con": 84
+    },
+    "sections": [
+      {
+        "title": "Obligation and the evidence from consciousness"
+      },
+      {
+        "title": "Fine-tuning and cosmic order"
+      },
+      {
+        "title": "Experience, hiddenness, and the atheist alternative"
+      },
+      {
+        "title": "Practice, pluralism, and uneven revelation"
+      },
+      {
+        "title": "Freedom, suffering, and animal pain"
+      },
+      {
+        "title": "Heaven, theosis, and final synthesis"
+      }
+    ]
   }
 ];

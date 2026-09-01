@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "217",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-217/inventory/raw-worker-output.json",
+    "sha256": "e57451e748537b8ff8abebeabb33c1f8cd6dfa36cb05a1f78f301a49257e89a1"
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-217/inventory/inventory.json",
+    "sha256": "2ae7bc75a46bcf61d1980c91aef4845412b736488288789d40633057864de322"
+  },
+  "transformations": [
+    "Sorted the same 38 selected moves by locked source start event and preserved every section, route, burden link, importance level, and response link.",
+    "Recomputed every timestamp and excerpt directly from the locked events array.",
+    "Tightened ten broad worker spans to the smallest contiguous passages proving the same selected propositions; two proposition summaries were narrowed to match the tightened evidence without changing the selected inference.",
+    "Stored empty quote-candidate arrays rather than manufacture quotations; publication quotations must be exact substrings of the locked spans.",
+    "Recomputed every selection-balance and publication-capacity count, rationale trigger, fourth-row flag, and authorization from the selected moves."
+  ],
+  "recoveredTransport": {
+    "occurred": true,
+    "runnerAutomaticNetworkRetryCount": 1,
+    "modelTurnRestartedByController": false,
+    "sourcePacketChanged": false
+  },
+  "schemaPreflightFailure": {
+    "occurred": true,
+    "reachedModel": false,
+    "reason": "Two const Boolean fields lacked explicit type declarations.",
+    "correctedBeforeFirstModelSampling": true
+  },
+  "substantiveJudgmentChanged": false,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "217",
+    "sections": 6,
+    "moves": 38,
+    "belowHighAttributionMoveIds": []
+  }
+}

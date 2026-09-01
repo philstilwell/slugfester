@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "217",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "method": "fresh ephemeral read-only contexts containing only each field-scoped packet and catalog snapshot",
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "scoresUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "4cc168a1f2f315f3e7b70583a2088664bf46c8b0530b3a71e91d7425f5bf6869",
+    "bytes": 4256
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "ab36d826142246f56e04b0b414b105df5f658ac7918cd07b0f4bfc3c2026892e",
+    "bytes": 101978
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "sessionId": "01a05aa5-3724-78e3-b35c-ee67ded13f9e",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "eb08bd6abacc4a1a8126be515213658ec20d586ab503a13ade24b5bf6023372e",
+        "bytes": 17351
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "sessionId": "01a05aa5-3726-7df3-9f8c-195ba1b239d4",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "18e53ea30aaa7364018fa6500cbc2c4d00a72531a741a77542d1689b5016d5dc",
+        "bytes": 14576
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-candidate-adjudication",
+      "sessionId": "01a05aa8-16e7-7823-a507-19be3b6d1586",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "6c2dc5a034c3980da876b78985b5f0e1e79eb0deb444aaca2f6e161c3dfabd6d",
+        "bytes": 52585
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "2d379ad2dd93d493757c3f1c0a397a3dbb33062b32b3cd61b22f3339d5bbe792",
+        "bytes": 10132
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "preflightRejectionsBeforeSampling": {
+    "blindReviewA": 1,
+    "blindReviewB": 1,
+    "affectedValidContexts": 0,
+    "affectedPublishedTags": 0
+  },
+  "finalDefinitionCheck": {
+    "catalog": "src/data/references.js",
+    "reviewedEveryCandidate": true,
+    "requireCritiqueLevelMaterialWeakness": true,
+    "underargumentAloneRejected": true,
+    "duplicateDefectLabelsRejected": true,
+    "overruledOverbroadAdjudicatorAcceptances": 0,
+    "overruledOverbroadAdjudicatorRejections": 0,
+    "finalAcceptedTagCount": 9,
+    "evidence": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-217/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "a25e27503a6507373a746ea3a882b784fb96aafee762a62a00c301efdb880d1e",
+      "bytes": 17412
+    }
+  },
+  "audit": {
+    "movesReviewed": 38,
+    "definitionsPerMove": 13,
+    "definitionComparisonsPerBlindPass": 494,
+    "blindReviews": 2,
+    "adjudications": 17,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completedAt": "2026-09-01T01:53:09.987Z"
+}
