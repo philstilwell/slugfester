@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "221",
+  "debateId": "huemer-loeb-moral-realism-2022",
+  "reviewerRole": "isolated-dispute-only-adjudicator",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "isolation": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "resolutions": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "selectedOption": "option-b",
+      "rationale": "Both options correctly require zero because no distinct, uncaptured debate-wide consequence is eligible. Option B is more internally consistent in leaving affectedBurdenIds empty when affectsBurdenCompletion is false."
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "selectedOption": "option-b",
+      "rationale": "Both options correctly require zero because the mixed-evidence case and its limitations are already captured at move level. Option B is more internally consistent in leaving affectedBurdenIds empty when no burden-completion consequence exists."
+    }
+  ]
+}

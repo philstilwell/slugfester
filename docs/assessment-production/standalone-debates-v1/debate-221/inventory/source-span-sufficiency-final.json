@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-standalone-source-span-sufficiency-final",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-after-bounded-repairs",
+  "debateNumber": "221",
+  "debateId": "huemer-loeb-moral-realism-2022",
+  "motion": "Is stance-independent moral realism better supported than moral anti-realism?",
+  "independentAudits": [
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-1.json",
+      "disposition": "failed: overlong spans, five overbroad propositions, and two duplicate summaries required repair"
+    },
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-2.json",
+      "disposition": "substance and selection passed; controller enforced the hard event-span character and word limits where caption-unit suggestions remained too wide"
+    }
+  ],
+  "finalChecks": {
+    "completeLoadBearingCoverage": true,
+    "duplicateMoveIds": [],
+    "duplicateArguments": [],
+    "sectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true,
+    "allSpansSourceExact": true,
+    "allSpansSpeakerIsolated": true,
+    "allPropositionsSupported": true,
+    "allSpansWithinTwelveToNinetyWords": true,
+    "allSpansWithinFourHundredFiftyCharacters": true,
+    "attributionBelowHigh": [],
+    "requiredAudioChecks": []
+  },
+  "finalIndependentFindings": {
+    "selectionComplete": true,
+    "duplicateArguments": [],
+    "capacityRepairRequired": false,
+    "propositionSupportFailures": 0,
+    "speakerIsolationFailures": 0,
+    "sourceLimitFailures": 0
+  },
+  "controllerDispositions": [
+    "Removed pro-10 and con-01 because the independent auditor found that they repeated pro-09 and con-20.",
+    "Narrowed every proposition that required a smaller caption span; no score or publication data was available during the repairs.",
+    "Applied deterministic word and character counts after the second audit and tightened twelve remaining caption-unit ranges without changing their supported inference."
+  ],
+  "finalMoveCount": 35,
+  "finalSectionCount": 7
+}

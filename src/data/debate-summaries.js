@@ -9950,5 +9950,57 @@ export const debateSummaries = [
         "title": "Political and cultural coherence"
       }
     ]
+  },
+  {
+    "id": "huemer-loeb-moral-realism-2022",
+    "number": "221",
+    "title": "Is Moral Realism Better Supported? Michael Huemer vs. Don Loeb (2022)",
+    "label": "Moral realism, intuition, and disagreement",
+    "date": "2026-09-01",
+    "duration": "1 hr 34 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=89cnR4pU_7k",
+    "motion": "Is stance-independent moral realism better supported than moral anti-realism?",
+    "summary": "Huemer’s intuitive and convergence-based realism met Loeb’s semantic, explanatory, and practical alternatives; mixed evidence narrowly left anti-realism at least equally plausible.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Stance-independent moral realism is better supported",
+        "speaker": "Michael Huemer",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Moral anti-realism remains at least as plausible",
+        "speaker": "Don Loeb",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Semantics, cognitivism, and Frege–Geach-style embedding"
+      },
+      {
+        "title": "Stance-independence, subjectivism, and error theory"
+      },
+      {
+        "title": "Moral practice, values, and reasons for action"
+      },
+      {
+        "title": "Intuitions and phenomenal conservatism"
+      },
+      {
+        "title": "Moral disagreement and epistemic peers"
+      },
+      {
+        "title": "Cultural, evolutionary, and causal debunking"
+      },
+      {
+        "title": "Convergence, moral progress, and comparative assessment"
+      }
+    ]
   }
 ];

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "221",
+  "debateId": "huemer-loeb-moral-realism-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured; strengths and gaps in realism's comparative case are represented in the individual move dimensions and burden contact.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-comparative-support",
+              "pro-central-objective-seemings",
+              "pro-central-anti-realist-costs",
+              "pro-subsidiary-disagreement-progress"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured debate-wide consequence materially changing completion of the pro comparative burden.",
+            "relatedMoveIds": [
+              "pro-01",
+              "pro-02",
+              "pro-03",
+              "pro-04",
+              "pro-05",
+              "pro-06",
+              "pro-07",
+              "pro-08",
+              "pro-09",
+              "pro-11",
+              "pro-12",
+              "pro-13",
+              "pro-14",
+              "pro-15",
+              "pro-16",
+              "pro-17"
+            ],
+            "distinctConsequence": "None beyond the move-level treatment of semantic costs, seemings, disagreement, debunking, and convergence.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without duplicate move-level capture, an uncaptured failure or completion of the overall comparative inference could justify a nonzero adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured; pro's strengths and gaps are represented in the individual move dimensions and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured debate-wide consequence changing completion of the comparative realist burden.",
+            "relatedMoveIds": [
+              "pro-01",
+              "pro-02",
+              "pro-03",
+              "pro-04",
+              "pro-05",
+              "pro-06",
+              "pro-07",
+              "pro-08",
+              "pro-09",
+              "pro-11",
+              "pro-12",
+              "pro-13",
+              "pro-14",
+              "pro-15",
+              "pro-16",
+              "pro-17"
+            ],
+            "distinctConsequence": "None beyond the already rated semantic, epistemic, disagreement, and convergence arguments.",
+            "alreadyCapturedBy": [
+              "move dimension ratings",
+              "importance weights",
+              "section weights",
+              "responsiveness links",
+              "burden contacts"
+            ],
+            "counterfactual": "Absent the existing move-level capture, an adjustment might duplicate the comparative-support gaps rather than identify a new consequence."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured; Loeb's deliberately mixed-evidence burden and its limitations are already reflected across the rated moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-mixed-evidence",
+              "con-central-seemings-underdetermined",
+              "con-central-language-practice",
+              "con-subsidiary-disagreement-explanation"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured debate-wide consequence materially changing completion of the con mixed-evidence burden.",
+            "relatedMoveIds": [
+              "con-02",
+              "con-03",
+              "con-04",
+              "con-05",
+              "con-06",
+              "con-07",
+              "con-08",
+              "con-09",
+              "con-10",
+              "con-11",
+              "con-12",
+              "con-13",
+              "con-14",
+              "con-15",
+              "con-16",
+              "con-17",
+              "con-18",
+              "con-19",
+              "con-20"
+            ],
+            "distinctConsequence": "None beyond the move-level treatment of underdetermination, practice, disagreement, causal explanation, and explicit caution.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without duplicate move-level capture, an uncaptured global success or failure in preserving comparative uncertainty could justify a nonzero adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured; con's mixed-evidence case and its limitations are already reflected move by move.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured debate-wide consequence changing completion of the mixed-evidence burden.",
+            "relatedMoveIds": [
+              "con-02",
+              "con-03",
+              "con-04",
+              "con-05",
+              "con-06",
+              "con-07",
+              "con-08",
+              "con-09",
+              "con-10",
+              "con-11",
+              "con-12",
+              "con-13",
+              "con-14",
+              "con-15",
+              "con-16",
+              "con-17",
+              "con-18",
+              "con-19",
+              "con-20"
+            ],
+            "distinctConsequence": "None beyond the already rated underdetermination, language-practice, disagreement, and alternative-explanation arguments.",
+            "alreadyCapturedBy": [
+              "move dimension ratings",
+              "importance weights",
+              "section weights",
+              "responsiveness links",
+              "burden contacts"
+            ],
+            "counterfactual": "Absent the existing move-level capture, an adjustment would duplicate Loeb's calibrated mixed-evidence stance rather than capture a new consequence."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 35,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-221/inventory/inventory.json",
+      "sha256": "b76dbeb1c3189e3dc96ceb1d68838e4d336815650a9357a955f8c5a92dae86bc"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-221/judgments/pass-a/output.json",
+      "sha256": "4fc5ecd3f6f34f6fc9a564733e6bd4eaba9441c71c92e6dd7a8788b05fd4eb6f"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-221/judgments/pass-b/output.json",
+      "sha256": "4f0da418593b9466031828f974109ba035d8cd8163ac5fd1c12adbd26d3d590a"
+    }
+  }
+}
