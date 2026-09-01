@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "226",
+  "debateId": "horn-white-purgatory-2024",
+  "completedAt": "2026-09-01T15:32:21.000Z",
+  "source": {
+    "videoId": "Zhm5_AXcqcA",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 25575,
+    "events": 3242,
+    "transcriptSha256": "766d0bbd28eb7234db5c7896661bc08dd1bf5846a9d14c6ff229ddbce9bf8fa2",
+    "eventsSha256": "b99199acfa61c7291036d98026bfdd260f76bf0b8efe0d36d2b3ed5525201c95",
+    "assessedWindow": "00:03:08-02:09:05",
+    "excludedMaterial": "the church welcome and participant introductions before the substantive debate, plus the closing farewells after the final answer",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 39,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 15,
+    "adjudicatedDisputes": 15,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 79,
+      "con": 80,
+      "winner": "con",
+      "margin": 1
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 22,
+    "argumentCards": 39,
+    "uniqueLockedMovesMapped": 39,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "5d34d6bd4504885aa799cddd1d241cdbd18d555a6f67382cdb223a4553971ff3",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-226/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-34-field-prose-repair-before-publication-freeze",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 24.1,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 122,
+      "mean": 127.1,
+      "maximum": 129
+    },
+    "critiqueCharacterRange": [
+      883,
+      1020
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "strengthMean": 23.5,
+      "blunderMean": 23.5
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-226/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral-zero-tag-definition-review-recorded-after-publication",
+    "movesReviewedForFallaciesAndBiases": 39,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 507,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 23,
+    "acceptedRhetoricalTags": 0,
+    "acceptedFallacyTags": 0,
+    "acceptedBiasTags": 0,
+    "rejectedRhetoricalTagCandidates": 23,
+    "controllerDefinitionOverrides": 5,
+    "aiContributionWords": 906,
+    "readerFacingScoringDisclosureCorrected": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-226/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 0,
+    "desktopEvidenceSha256": "c064c966d572afd6e5431af71b8abbb4caa00cd1c6450d1cd71b49f1790067dc",
+    "mobileEvidenceSha256": "ba9652799ecb8b250cfe4dafb0d73828d08b33de19612fd838d97649506bd86a"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "226 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "662 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "39 moves; description mean 24.1 words; critique mean 127.1 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "39 moves reviewed against 13 definitions in 2 blind passes; 23 candidates adjudicated; 0 fallacies and 0 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "39 populated cards at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 226 with and without --repository-only",
+      "status": "passed",
+      "result": "39 moves; 7 sections; 15 disputes; 0 audio checks; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "226 of 226 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 2,
+    "inventoryRepairCycles": 2,
+    "judgmentRetries": 0,
+    "publicationDescriptionFieldsRepaired": 0,
+    "publicationCritiqueFieldsRepaired": 32,
+    "publicationOverallFieldsRepaired": 2,
+    "publicationRepairShards": 17,
+    "publicationDerivedCountNormalizations": 5,
+    "scoringNoteRejectedAttemptsPreserved": 2,
+    "productionContractMetadataFieldsRepaired": 0,
+    "nullExchangeSlotsOmitted": 0,
+    "rhetoricalTagFieldsAdded": 0,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 5,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 21,
+    "con": 18,
+    "disposition": "All thirty-nine frozen moves are mapped exactly once. Horn supplies three more distinct moves because his affirmative case develops separate scriptural, disciplinary, timing, merit, and historical routes; every distinct White objection and reply remains represented without manufacturing numerical symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

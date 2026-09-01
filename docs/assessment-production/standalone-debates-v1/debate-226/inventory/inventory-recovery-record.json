@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-recovery-record",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen-after-two-score-blind-repair-cycles",
+  "debateNumber": "226",
+  "failures": [
+    {
+      "artifact": "docs/assessment-production/standalone-debates-v1/debate-226/inventory/raw-worker-output.json",
+      "sha256": "f6629587901d6d69597c9bbc6b5e75d803ea02d88e89602efc39c1e7a9353d6c",
+      "diagnosis": "The 23-move selection was materially incomplete, its balance audit omitted one selected con move, one source endpoint was invalid, and reply links lacked their initiating moves."
+    },
+    {
+      "artifact": "docs/assessment-production/standalone-debates-v1/debate-226/inventory/inventory-repair-output-1.json",
+      "sha256": "b1864b587bfb631b2d88af6551f278d0f065f09a9e25f254a73f373d8883a8d4",
+      "diagnosis": "The first reconstruction improved coverage to 33 moves but omitted six independently identified moves, its count audits omitted four selected moves, and twelve spans exceeded the 90-word ceiling."
+    },
+    {
+      "artifact": "docs/assessment-production/standalone-debates-v1/debate-226/inventory/inventory-repair-output-2.json",
+      "sha256": "728bcd4d9bc33988fbe3f17d8cc78efab7103ddcba20e2b1bb8c687d52028ff4",
+      "diagnosis": "The final 39-move reconstruction fixed selection and capacity but required deterministic event-derived normalization of source endpoints, excerpts, and exact quote case."
+    }
+  ],
+  "independentAuditArtifacts": [
+    "docs/assessment-production/standalone-debates-v1/debate-226/inventory/inventory-completeness-audit-a.json",
+    "docs/assessment-production/standalone-debates-v1/debate-226/inventory/inventory-completeness-audit-b.json"
+  ],
+  "finalInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-226/inventory/inventory.json",
+    "sha256": "32ef8781e4585f7f3c6b9603fd59ed2c7ba6ea4df00fb74bc0cf7525f40be90f",
+    "bytes": 78150
+  },
+  "deterministicChanges": [
+    {
+      "moveId": "temporal-atonement-definition",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        513,
+        520
+      ],
+      "exactWords": 53
+    },
+    {
+      "moveId": "seamless-imputed-righteousness",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        695,
+        700
+      ],
+      "exactWords": 47
+    },
+    {
+      "moveId": "late-doctrinal-development",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        708,
+        715
+      ],
+      "exactWords": 55
+    },
+    {
+      "moveId": "passive-satisfaction-clarification",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        868,
+        875
+      ],
+      "exactWords": 57
+    },
+    {
+      "moveId": "passive-satisfaction-clarification",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "matthew-prison-context",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1031,
+        1039
+      ],
+      "exactWords": 69
+    },
+    {
+      "moveId": "matthew-prison-context",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "treasury-merit-indulgence-reply",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1061,
+        1073
+      ],
+      "exactWords": 88
+    },
+    {
+      "moveId": "justification-sanctification-distinction",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1081,
+        1090
+      ],
+      "exactWords": 63
+    },
+    {
+      "moveId": "justification-sanctification-distinction",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "mortal-venial-defense",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1202,
+        1213
+      ],
+      "exactWords": 86
+    },
+    {
+      "moveId": "diverse-patristic-views",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1308,
+        1316
+      ],
+      "exactWords": 57
+    },
+    {
+      "moveId": "diverse-patristic-views",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "mortal-venial-unbiblical",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1342,
+        1354
+      ],
+      "exactWords": 88
+    },
+    {
+      "moveId": "postjudgment-regret-diagnostic",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1509,
+        1518
+      ],
+      "exactWords": 80
+    },
+    {
+      "moveId": "completion-before-heaven-concession",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1599,
+        1607
+      ],
+      "exactWords": 65
+    },
+    {
+      "moveId": "completion-before-heaven-concession",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "final-day-timing-challenge",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1814,
+        1825
+      ],
+      "exactWords": 85
+    },
+    {
+      "moveId": "final-judgment-before-beatific-vision",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1842,
+        1852
+      ],
+      "exactWords": 83
+    },
+    {
+      "moveId": "new-nature-direct-entrance",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1904,
+        1911
+      ],
+      "exactWords": 66
+    },
+    {
+      "moveId": "new-nature-direct-entrance",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "augustine-qualified-concession",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        1994,
+        2006
+      ],
+      "exactWords": 85
+    },
+    {
+      "moveId": "hebrews-limited-to-life",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        2072,
+        2080
+      ],
+      "exactWords": 69
+    },
+    {
+      "moveId": "hebrews-limited-to-life",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "thief-remission-answer",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        2440,
+        2451
+      ],
+      "exactWords": 85
+    },
+    {
+      "moveId": "corinthians-revelation-not-purification",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        2890,
+        2898
+      ],
+      "exactWords": 60
+    },
+    {
+      "moveId": "horn-closing-transforming-love",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        3051,
+        3062
+      ],
+      "exactWords": 87
+    },
+    {
+      "moveId": "white-closing-development",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        3080,
+        3091
+      ],
+      "exactWords": 87
+    },
+    {
+      "moveId": "white-closing-development",
+      "kind": "exact-quote-normalization"
+    },
+    {
+      "moveId": "white-closing-romans-burden",
+      "kind": "source-exact-event-reconstruction",
+      "eventRange": [
+        3137,
+        3148
+      ],
+      "exactWords": 84
+    },
+    {
+      "moveId": "white-closing-romans-burden",
+      "kind": "exact-quote-normalization"
+    }
+  ],
+  "moveSelectionChangedByDeterministicNormalization": false,
+  "propositionsChangedByDeterministicNormalization": false,
+  "sectionsWeightsImportanceOrLinksChangedByDeterministicNormalization": false,
+  "scoreBlind": true,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "226",
+    "sections": 7,
+    "moves": 39,
+    "belowHighAttributionMoveIds": []
+  }
+}

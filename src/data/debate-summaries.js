@@ -10210,5 +10210,57 @@ export const debateSummaries = [
         "title": "Parsimony, Burden of Proof, and the Shared World"
       }
     ]
+  },
+  {
+    "id": "horn-white-purgatory-2024",
+    "number": "226",
+    "title": "Is the Doctrine of Purgatory True? Trent Horn vs. James White (2024)",
+    "label": "Purgatory and postmortem purification",
+    "date": "2026-09-01",
+    "duration": "2 hr 12 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Zhm5_AXcqcA",
+    "motion": "Is the doctrine of purgatory true?",
+    "summary": "White wins by one point because his contextual exegesis and Romans argument slightly outweigh Horn's definitional clarification, purification syllogism, and historical continuity case.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The doctrine of purgatory is true",
+        "speaker": "Trent Horn",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The doctrine of purgatory is false",
+        "speaker": "James White",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Definition, satisfaction, and kinds of sin"
+      },
+      {
+        "title": "Postmortem purification and direct presence"
+      },
+      {
+        "title": "Fatherly discipline and temporal consequences"
+      },
+      {
+        "title": "Matthew 5 and First Corinthians 3"
+      },
+      {
+        "title": "Eschatological timing and counterexamples"
+      },
+      {
+        "title": "Justification, Christ's work, and merit"
+      },
+      {
+        "title": "Jewish precedent and historical development"
+      }
+    ]
   }
 ];
