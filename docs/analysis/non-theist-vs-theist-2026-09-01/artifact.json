@@ -1,0 +1,443 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Do Non-Theistic Arguments Score Better?",
+    "description": "A corpus-wide comparison of current-method SLUGFESTER debate assessments.",
+    "generatedAt": "2026-09-01T16:44:30Z",
+    "sources": [
+      {
+        "id": "published-debates",
+        "label": "Published SLUGFESTER debate assessments",
+        "path": "src/data/debates.js"
+      },
+      {
+        "id": "analysis-results",
+        "label": "Executed non-theist versus theist comparison",
+        "path": "docs/analysis/non-theist-vs-theist-2026-09-01/results.json",
+        "query": {
+          "engine": "DuckDB",
+          "language": "sql",
+          "description": "Classify current-method dyadic scorecards by published side position, then calculate paired overall margins, section outcomes, orientation checks, and speaker-concentration sensitivities.",
+          "executed_at": "2026-09-01T16:44:30Z",
+          "filters": [
+            "Published debates present in src/data/debates.js at commit 179605addbb65ebf36e61f84ef35017eded7c783",
+            "Assessment rubric equals Slugfester Reassessment Rubric v2",
+            "One published side presents a theistic/religious case and the other a non-theistic/skeptical case",
+            "Team and panel assessments excluded",
+            "Forty-one dyads without a clean position-level comparison excluded and listed in taxonomy.csv"
+          ],
+          "metric_definitions": [
+            "Mean margin = arithmetic mean of non-theistic side overall score minus theistic/religious side overall score across classified debates.",
+            "Higher-score share = debates in which the non-theistic side overall score is greater divided by all 169 classified debates; ties remain in the denominator.",
+            "Section higher share = sections in which the non-theistic side score is greater divided by all 889 sections nested within the classified debates.",
+            "Pair-balanced margin = arithmetic mean of each unique speaker pair's mean score margin."
+          ],
+          "tables_used": [
+            "src/data/debates.js"
+          ],
+          "sql": "SELECT * FROM read_json_auto('docs/analysis/non-theist-vs-theist-2026-09-01/results.json')"
+        }
+      },
+      {
+        "id": "classification-taxonomy",
+        "label": "Debate inclusion and orientation taxonomy",
+        "path": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv"
+      }
+    ],
+    "cards": [
+      {
+        "id": "mean-margin-card",
+        "description": "Average paired difference in published overall score; positive values favor the non-theistic side.",
+        "dataset": "headline_metrics",
+        "sourceId": "analysis-results",
+        "metrics": [
+          {
+            "label": "Mean score margin",
+            "field": "mean_margin",
+            "format": "number",
+            "signed": true
+          },
+          {
+            "label": "Median margin",
+            "field": "median_margin",
+            "format": "number",
+            "signed": true
+          }
+        ]
+      },
+      {
+        "id": "win-share-card",
+        "description": "Share of all 169 classified debates in which the non-theistic side receives the higher overall score; ties remain in the denominator.",
+        "dataset": "headline_metrics",
+        "sourceId": "analysis-results",
+        "metrics": [
+          {
+            "label": "Higher-score share",
+            "field": "win_share",
+            "format": "percent"
+          },
+          {
+            "label": "Outcomes",
+            "field": "outcome_summary"
+          }
+        ]
+      },
+      {
+        "id": "section-share-card",
+        "description": "Share of all 889 nested sections in which the non-theistic side receives the higher section score.",
+        "dataset": "headline_metrics",
+        "sourceId": "analysis-results",
+        "metrics": [
+          {
+            "label": "Sections scoring higher",
+            "field": "section_share",
+            "format": "percent"
+          },
+          {
+            "label": "Section outcomes",
+            "field": "section_summary"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "outcome-counts-chart",
+        "title": "Overall debate outcomes",
+        "subtitle": "All 169 classified current-method one-on-one debates; ties remain separate",
+        "showDescription": true,
+        "intent": "comparison",
+        "question": "How often does each side receive the higher published overall score?",
+        "rationale": "Three horizontal bars show the exhaustive win, tie, and loss categories more directly than a trend or distribution chart.",
+        "comparisonContext": {
+          "denominator": "169 classified debates",
+          "grain": "one published debate scorecard",
+          "normalization": "raw debate count; shares retained in tooltips",
+          "semanticFamily": "higher overall score",
+          "unit": "debates"
+        },
+        "type": "bar",
+        "dataset": "outcome_counts",
+        "sourceId": "analysis-results",
+        "encodings": {
+          "x": {
+            "field": "outcome",
+            "type": "nominal",
+            "label": "Outcome"
+          },
+          "y": {
+            "field": "debates",
+            "type": "quantitative",
+            "aggregate": "none",
+            "format": "number",
+            "label": "Debates"
+          },
+          "tooltip": [
+            {
+              "field": "share",
+              "type": "quantitative",
+              "format": "percent",
+              "label": "Share"
+            },
+            {
+              "field": "sort_order",
+              "type": "ordinal",
+              "label": "Reading order"
+            }
+          ]
+        },
+        "yAxisTitle": "Debates",
+        "valueFormat": "number",
+        "layout": "full",
+        "maxRows": 3,
+        "palette": {
+          "kind": "sequential",
+          "name": "blue"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "settings": {
+          "orientation": "horizontal",
+          "groupMode": "single",
+          "sort": "custom",
+          "showValues": true
+        },
+        "surface": {
+          "surface": "card",
+          "interactiveLegend": false,
+          "showControls": false,
+          "viewMode": "both"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "robustness-table",
+        "title": "Sensitivity checks",
+        "subtitle": "Positive mean margins favor the non-theistic side; each row changes the unit or comparison subset",
+        "showDescription": true,
+        "dataset": "robustness_checks",
+        "defaultSort": {
+          "field": "mean_margin",
+          "direction": "desc"
+        },
+        "density": "spacious",
+        "sourceId": "analysis-results",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "check",
+            "label": "Check",
+            "type": "text"
+          },
+          {
+            "field": "unit",
+            "label": "Unit",
+            "type": "text"
+          },
+          {
+            "field": "n",
+            "label": "N",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "mean_margin",
+            "label": "Mean margin",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "non_theist_wins",
+            "label": "Non-theist higher",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "ties",
+            "label": "Ties",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "theist_wins",
+            "label": "Theist higher",
+            "type": "number",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "report-title",
+        "type": "markdown",
+        "body": "# Do Non-Theistic Arguments Score Better?",
+        "layout": "full"
+      },
+      {
+        "id": "executive-summary",
+        "type": "markdown",
+        "body": "## Executive Summary\n\n- **Yes—within the published SLUGFESTER assessments, the pattern is large and consistent.** Across 169 comparable one-on-one debates, the non-theistic side averages 83.79 versus 77.46, a 6.34-point advantage.\n- **The result appears in outcomes, not just averages.** The non-theistic side receives the higher overall score in 144 debates, ties in 5, and scores lower in 20.\n- **Repeated speakers and side ordering do not erase the pattern.** The mean advantage remains 5.05 points after removing the four most frequent non-theist debaters and 3.26 points in the 19 debates where the theistic/religious side is stored as `con`.\n- **The conclusion is about these assessments, not worldview truth.** The catalogue is selected, speakers repeat, argumentative burdens differ, and the scores are AI-assisted judgments of transcript performance.",
+        "layout": "full",
+        "sourceId": "analysis-results"
+      },
+      {
+        "id": "headline-metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "mean-margin-card",
+          "win-share-card",
+          "section-share-card"
+        ],
+        "layout": "full"
+      },
+      {
+        "id": "comparison-definition",
+        "type": "markdown",
+        "body": "## What was compared\n\n**The unit is one published, current-method, one-on-one debate scorecard.** A debate enters the comparison when one side's published position presents a recognizable theistic or religious case and the other presents a recognizable non-theistic or skeptical case. This classifies the position argued in that scorecard—not a participant's private beliefs.\n\nThe source contains 226 published scorecards. Sixteen team or panel assessments are excluded because their scores use a different approximate combined-side method. Of the 210 current-method one-on-one debates, 169 meet the comparison definition; the remaining 41 exclusions and every included side orientation are preserved in the taxonomy.",
+        "layout": "full",
+        "sourceId": "analysis-results"
+      },
+      {
+        "id": "outcome-finding",
+        "type": "markdown",
+        "body": "## The gap is visible at both debate and section level\n\n**The non-theistic advantage is not an average created by a few extreme scorecards.** The non-theistic side scores higher in 85.2% of all 169 classified debates. It also scores higher in 674 of 889 nested sections (75.8%), compared with 182 sections favoring the theistic/religious side and 33 ties.\n\nThe chart shows the exact debate-level outcome count. Section results corroborate the direction but are not treated as 889 independent debates.",
+        "layout": "full",
+        "sourceId": "analysis-results"
+      },
+      {
+        "id": "outcome-chart-block",
+        "type": "chart",
+        "chartId": "outcome-counts-chart",
+        "layout": "full"
+      },
+      {
+        "id": "robustness-finding",
+        "type": "markdown",
+        "body": "## The advantage survives the main concentration checks\n\n**The headline does not depend entirely on Matt Dillahunty, Alex O'Connor, Christopher Hitchens, or Graham Oppy.** Removing every debate involving those four most frequent non-theist speakers leaves 101 debates and a 5.05-point mean advantage. Giving each unique speaker pair one equal-weighted mean yields a 6.22-point advantage across 160 pairs.\n\nSide orientation matters, but it does not reverse the conclusion: the gap is 6.73 points when the theistic/religious side is `pro` and 3.26 points when it is `con`.",
+        "layout": "full",
+        "sourceId": "analysis-results"
+      },
+      {
+        "id": "robustness-table-block",
+        "type": "table",
+        "tableId": "robustness-table",
+        "layout": "full"
+      },
+      {
+        "id": "meaning-and-limit",
+        "type": "markdown",
+        "body": "## What the result means—and does not mean\n\n**The data strongly support a corpus-specific claim:** SLUGFESTER's published assessments judge the non-theistic side to have argued better, on average and in a large majority of comparable debates.\n\n**The data do not isolate a pure worldview effect.** The theistic/religious side is stored as `pro` in 150 of 169 comparisons, so stance, affirmative burden, and side orientation are partly entangled. The 41 noncomparable one-on-one debates show a smaller 1.24-point average `con` advantage; using that only as a rough orientation baseline reduces the estimated stance gap from 6.34 to 5.37 points. Because positions were not randomly assigned, this is a sensitivity check rather than a causal correction.\n\nThe assessment rubric measures argumentative performance in a particular transcript. It explicitly does not measure whether a worldview is true.",
+        "layout": "full",
+        "sourceId": "analysis-results"
+      },
+      {
+        "id": "recommended-next-steps",
+        "type": "markdown",
+        "body": "## Recommended next steps\n\n1. **Run an orientation-blind audit.** Reassess a balanced subset with side order randomized and theist/non-theist labels hidden, then compare whether the gap changes.\n2. **Add explicit stance and burden metadata.** Store position type, affirmative versus critical burden, topic, and speaker stance separately so future comparisons do not rely on a manual taxonomy.\n3. **Build a matched comparison set.** Balance topics, repeat speakers, side orientation, and debate format before estimating a broader worldview-performance difference.\n4. **Add human calibration.** Have trained human raters independently score a stratified subset to test whether the AI-assisted pattern replicates.",
+        "layout": "full"
+      },
+      {
+        "id": "further-questions",
+        "type": "markdown",
+        "body": "## Further questions\n\n- Is the gap mainly a difference between constructive and critical burdens rather than theism and non-theism?\n- Does it persist within matched topics such as cosmology, morality, resurrection, evil, and religious experience?\n- How much of the result is attributable to catalogue selection—strong recurring skeptics, weaker recurring theists, or debate recommendations?\n- Would blind human judges reproduce the same score gap and debate outcome rate?",
+        "layout": "full"
+      },
+      {
+        "id": "caveats-and-assumptions",
+        "type": "markdown",
+        "body": "## Caveats and assumptions\n\n- The catalogue is selected rather than randomly sampled from all relevant debates or speakers.\n- Classification follows each published side's argument, not the participant's private belief.\n- Sixteen team or panel scorecards are excluded because they use an approximate combined-side method.\n- Repeated speakers and repeated pairings make scorecards statistically dependent.\n- Theistic/religious sides are usually `pro`, so burden and stance are not fully separable.\n- Scores are AI-assisted, transcript-grounded estimates under one rubric; they are revisable judgments, not measurements of truth.\n- Bootstrap and sign-test diagnostics in the supporting analysis describe stability inside this catalogue and should not be read as population inference.",
+        "layout": "full",
+        "sourceId": "analysis-results"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-01T16:44:30Z",
+    "status": "ready",
+    "datasets": {
+      "headline_metrics": [
+        {
+          "mean_margin": 6.337278106508876,
+          "median_margin": 6,
+          "win_share": 0.8520710059171598,
+          "outcome_summary": "144–5–20",
+          "section_share": 0.7581552305961755,
+          "section_summary": "674–33–182"
+        }
+      ],
+      "outcome_counts": [
+        {
+          "outcome": "Non-theistic side higher",
+          "debates": 144,
+          "share": 0.8520710059171598,
+          "sort_order": 1
+        },
+        {
+          "outcome": "Tie",
+          "debates": 5,
+          "share": 0.029585798816568046,
+          "sort_order": 2
+        },
+        {
+          "outcome": "Theistic/religious side higher",
+          "debates": 20,
+          "share": 0.11834319526627218,
+          "sort_order": 3
+        }
+      ],
+      "robustness_checks": [
+        {
+          "check": "Primary classified corpus",
+          "unit": "debates",
+          "n": 169,
+          "mean_margin": 6.337278106508876,
+          "non_theist_wins": 144,
+          "ties": 5,
+          "theist_wins": 20
+        },
+        {
+          "check": "One mean per unique speaker pair",
+          "unit": "speaker pairs",
+          "n": 160,
+          "mean_margin": 6.221875,
+          "non_theist_wins": 136,
+          "ties": 4,
+          "theist_wins": 20
+        },
+        {
+          "check": "Exclude four most frequent non-theist speakers",
+          "unit": "debates",
+          "n": 101,
+          "mean_margin": 5.0495049504950495,
+          "non_theist_wins": 83,
+          "ties": 2,
+          "theist_wins": 16
+        },
+        {
+          "check": "Theistic/religious side stored as pro",
+          "unit": "debates",
+          "n": 150,
+          "mean_margin": 6.726666666666667,
+          "non_theist_wins": 130,
+          "ties": 5,
+          "theist_wins": 15
+        },
+        {
+          "check": "Theistic/religious side stored as con",
+          "unit": "debates",
+          "n": 19,
+          "mean_margin": 3.263157894736842,
+          "non_theist_wins": 14,
+          "ties": 0,
+          "theist_wins": 5
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "published-debates",
+      "label": "Published SLUGFESTER debate assessments",
+      "path": "src/data/debates.js"
+    },
+    {
+      "id": "analysis-results",
+      "label": "Executed non-theist versus theist comparison",
+      "path": "docs/analysis/non-theist-vs-theist-2026-09-01/results.json",
+      "query": {
+        "engine": "DuckDB",
+        "language": "sql",
+        "description": "Classify current-method dyadic scorecards by published side position, then calculate paired overall margins, section outcomes, orientation checks, and speaker-concentration sensitivities.",
+        "executed_at": "2026-09-01T16:44:30Z",
+        "filters": [
+          "Published debates present in src/data/debates.js at commit 179605addbb65ebf36e61f84ef35017eded7c783",
+          "Assessment rubric equals Slugfester Reassessment Rubric v2",
+          "One published side presents a theistic/religious case and the other a non-theistic/skeptical case",
+          "Team and panel assessments excluded",
+          "Forty-one dyads without a clean position-level comparison excluded and listed in taxonomy.csv"
+        ],
+        "metric_definitions": [
+          "Mean margin = arithmetic mean of non-theistic side overall score minus theistic/religious side overall score across classified debates.",
+          "Higher-score share = debates in which the non-theistic side overall score is greater divided by all 169 classified debates; ties remain in the denominator.",
+          "Section higher share = sections in which the non-theistic side score is greater divided by all 889 sections nested within the classified debates.",
+          "Pair-balanced margin = arithmetic mean of each unique speaker pair's mean score margin."
+        ],
+        "tables_used": [
+          "src/data/debates.js"
+        ],
+        "sql": "SELECT * FROM read_json_auto('docs/analysis/non-theist-vs-theist-2026-09-01/results.json')"
+      }
+    },
+    {
+      "id": "classification-taxonomy",
+      "label": "Debate inclusion and orientation taxonomy",
+      "path": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv"
+    }
+  ]
+}
