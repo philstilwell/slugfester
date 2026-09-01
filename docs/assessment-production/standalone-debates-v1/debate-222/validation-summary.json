@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "222",
+  "debateId": "lennox-shermer-god-existence-2008",
+  "completedAt": "2026-09-01T10:45:38.351Z",
+  "source": {
+    "videoId": "y_OPWiXbSDA",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 17087,
+    "events": 2214,
+    "transcriptSha256": "aed7dd5ceedc62f043db002d8dc0945905e1dc1be98cd3aa5ba888a359c0a334",
+    "eventsSha256": "143750c8abe7ff7f2dba1c8b9632c9cb5d15cdaa14481388fc6a6b7aae05bf18",
+    "assessedWindow": "00:00:00-01:35:16",
+    "excludedMaterial": "host and audience prompts, procedural fragments, and final applause",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 41,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 6,
+    "adjudicatedDisputes": 6,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 76,
+      "con": 81,
+      "winner": "con",
+      "margin": 5
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 23,
+    "argumentCards": 41,
+    "uniqueLockedMovesMapped": 41,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "19287cb602c6eff6e9220bf7bf4c2b46e02d5345692bda0656c15ab03c270b2d",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-222/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-prose-repair-and-deterministic-production-contract-normalization-before-publication-freeze",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.6,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 113,
+      "mean": 119.3,
+      "maximum": 127
+    },
+    "critiqueCharacterRange": [
+      880,
+      957
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0.048,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.053,
+    "overallItemWords": {
+      "strengthMean": 26.4,
+      "blunderMean": 27.2
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-222/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-after-score-blind-review-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 41,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 533,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 24,
+    "acceptedRhetoricalTags": 11,
+    "acceptedFallacyTags": 10,
+    "acceptedBiasTags": 1,
+    "rejectedRhetoricalTagCandidates": 13,
+    "controllerDefinitionOverrides": 0,
+    "aiContributionWords": 1039
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 1,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-222/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 11,
+    "desktopEvidenceSha256": "37bc25e20805e1e1c4f5f048af16c301658ebcdcb359ae9451ec8905d63b4015",
+    "mobileEvidenceSha256": "b122691c9edf00cfddb77f5314563e13227b9ace8e41f55a4a5fdc30534e9667"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "222 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "654 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "41 moves; description mean 23.6 words; critique mean 119.3 words; boilerplate coverage mean 0.048"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "41 moves reviewed against 13 definitions in 2 blind passes; 24 candidates adjudicated; 10 fallacies and 1 bias accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "41 populated cards and 11 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 222 with and without --repository-only",
+      "status": "passed",
+      "result": "41 moves; 7 sections; 6 disputes; 0 audio checks; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "222 of 222 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 1,
+    "inventoryRepairCycles": 1,
+    "judgmentRetries": 0,
+    "publicationDescriptionFieldsRepaired": 4,
+    "publicationCritiqueFieldsRepaired": 1,
+    "productionContractMetadataFieldsRepaired": 1,
+    "nullExchangeSlotsOmitted": 5,
+    "rhetoricalTagFieldsAdded": 11,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 0,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 22,
+    "con": 19,
+    "disposition": "All forty-one frozen moves are mapped exactly once. Lennox has three more distinct moves because his cumulative case supplied more separately developed constructive strands and replies; no move was deleted, merged, added, or reassigned to manufacture symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

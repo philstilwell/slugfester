@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "222",
+  "debateId": "lennox-shermer-god-existence-2008",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-02:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-02",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "pro-04:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-04",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "pro-11:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-11",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-19:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-19",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured by the individual move ratings and locked burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-creation",
+              "pro-moral",
+              "pro-christ",
+              "pro-mind",
+              "pro-suffering",
+              "pro-agency"
+            ],
+            "completionCriterion": "A nonzero adjustment would require a separate global consequence changing completion of the cumulative pro burden.",
+            "relatedMoveIds": [
+              "pro-01",
+              "pro-02",
+              "pro-04",
+              "pro-05",
+              "pro-07",
+              "pro-09",
+              "pro-10",
+              "pro-12",
+              "pro-14",
+              "pro-15",
+              "pro-20",
+              "pro-21",
+              "pro-22"
+            ],
+            "distinctConsequence": "None; cumulative force, compatibility, historical inference, and unresolved bridges are represented in move-level ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level capture, a global synthesis effect might qualify, but here it would duplicate already rated consequences."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured; completion and gaps are represented in the individual motion, creation, moral, Christ, mind, suffering, and agency move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-creation",
+              "pro-moral",
+              "pro-christ",
+              "pro-mind",
+              "pro-suffering",
+              "pro-agency"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured consequence materially changing completion of the cumulative pro burden.",
+            "relatedMoveIds": [
+              "pro-01",
+              "pro-02",
+              "pro-04",
+              "pro-05",
+              "pro-07",
+              "pro-10",
+              "pro-12",
+              "pro-14",
+              "pro-20",
+              "pro-22"
+            ],
+            "distinctConsequence": "The cumulative structure has no additional consequence independent of the rated component inferences and closing synthesis.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without the existing move-level capture, an adjustment might reflect cumulative completion, but applying it here would duplicate those ratings."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured by the individual move ratings and locked burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-epistemic",
+              "con-natural",
+              "con-moral",
+              "con-suffering",
+              "con-mind",
+              "con-diversity"
+            ],
+            "completionCriterion": "A nonzero adjustment would require a separate global consequence changing completion of the critical con burden.",
+            "relatedMoveIds": [
+              "con-03",
+              "con-05",
+              "con-06",
+              "con-09",
+              "con-10",
+              "con-11",
+              "con-13",
+              "con-14",
+              "con-15",
+              "con-17",
+              "con-20"
+            ],
+            "distinctConsequence": "None; epistemic restraint, natural alternatives, underdetermination, and residual objections are already rated move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level capture, a global uncertainty effect might qualify, but here it would duplicate already rated consequences."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured; Shermer's uncertainty-tolerant critical burden and its coverage are already represented in the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-epistemic",
+              "con-natural",
+              "con-moral",
+              "con-suffering",
+              "con-mind",
+              "con-diversity"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured consequence materially changing completion of the critical evidential burden.",
+            "relatedMoveIds": [
+              "con-03",
+              "con-05",
+              "con-06",
+              "con-09",
+              "con-11",
+              "con-13",
+              "con-14",
+              "con-15",
+              "con-17",
+              "con-20"
+            ],
+            "distinctConsequence": "The critical stance and remaining uncertainty have no additional consequence independent of the rated objections and closing calibration.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without move-level capture of the critical burden, an adjustment might be justified, but doing so now would duplicate assessed performance."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 41,
+    "disputesExtracted": 6,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-222/inventory/inventory.json",
+      "sha256": "d4422094d9af246385cab70fb66c9ef57d1a50503ca6d2393bb4983ca3e33a97"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-222/judgments/pass-a/output.json",
+      "sha256": "c3a4c987fe35692f58255970b780f8ca79a9c97f05e0ff17e7b052b96e085636"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-222/judgments/pass-b/output.json",
+      "sha256": "02cb155f282301e810b9753a51345dff0f6d33e7e0c8179931064cb87568cb41"
+    }
+  }
+}

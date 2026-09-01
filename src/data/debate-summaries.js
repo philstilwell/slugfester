@@ -10002,5 +10002,57 @@ export const debateSummaries = [
         "title": "Convergence, moral progress, and comparative assessment"
       }
     ]
+  },
+  {
+    "id": "lennox-shermer-god-existence-2008",
+    "number": "222",
+    "title": "Does God Exist? John Lennox vs. Michael Shermer (2008)",
+    "label": "God, evidence, and scientific explanation",
+    "date": "2026-09-01",
+    "duration": "1 hr 35 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=y_OPWiXbSDA",
+    "motion": "Does God exist?",
+    "summary": "Shermer’s disciplined evidential restraint narrowly prevailed over Lennox’s wide-ranging cumulative case, chiefly through stronger replies on suffering, historical underdetermination, and uncertainty.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists",
+        "speaker": "John Lennox",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Evidence does not warrant belief in God",
+        "speaker": "Michael Shermer",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 81,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Belief, atheism, evidence, and falsifiability"
+      },
+      {
+        "title": "Cosmic origins, intelligibility, fine-tuning, and regress"
+      },
+      {
+        "title": "Mind, neuroscience, materialism, and rationality"
+      },
+      {
+        "title": "Miracles, prayer, suffering, and hope"
+      },
+      {
+        "title": "Morality, evolution, justice, and human dignity"
+      },
+      {
+        "title": "Historical Christianity, resurrection, revelation, and diversity"
+      },
+      {
+        "title": "Science, agency, worldview comparison, and closing positions"
+      }
+    ]
   }
 ];

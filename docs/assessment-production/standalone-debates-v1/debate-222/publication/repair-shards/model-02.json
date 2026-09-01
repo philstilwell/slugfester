@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-shard",
+  "kind": "isolated-model-field-repair",
+  "attemptCount": 1,
+  "writableLeafFields": [
+    {
+      "moveId": "pro-01",
+      "field": "words"
+    },
+    {
+      "moveId": "pro-06",
+      "field": "words"
+    }
+  ],
+  "output": {
+    "repairs": [
+      {
+        "key": "pro-01:words",
+        "text": "Because rational warrant need not come from pure deductive proof, Lennox argues that alleged divine self-revelation can be tested for coherence and correspondence with reality."
+      },
+      {
+        "key": "pro-06:words",
+        "text": "Because earthly death may let mass murderers escape punishment permanently, Lennox concludes that postmortem accountability is necessary for victims of atrocity to receive complete justice."
+      }
+    ]
+  }
+}
