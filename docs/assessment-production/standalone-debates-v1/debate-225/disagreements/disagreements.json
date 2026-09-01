@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "225",
+  "debateId": "kastrup-jump-analytic-idealism-materialism-2023",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-nonbiological-development-could-yield-consciousness:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-nonbiological-development-could-yield-consciousness",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains outside the move-level ratings and locked burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment requires a separate consequence changing completion of a locked pro burden.",
+            "relatedMoveIds": [
+              "pro-quantitative-brain-cannot-deduce-experience",
+              "pro-life-images-dissociated-mental-process",
+              "pro-shared-world-is-transpersonal-experience"
+            ],
+            "distinctConsequence": "The hard-problem, dissociation, and shared-world contributions are already represented move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Absent their move ratings and burden contacts, these themes could affect completion, but they are already captured."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the rated moves and their locked burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment requires an uncaptured consequence changing completion of a locked pro burden.",
+            "relatedMoveIds": [
+              "pro-quantitative-brain-cannot-deduce-experience",
+              "pro-life-images-dissociated-mental-process",
+              "pro-shared-world-is-transpersonal-experience"
+            ],
+            "distinctConsequence": "None; explanatory gaps, dissociation, empirical fit, and attribution limits are already move-rated.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without those move ratings and burden contacts, a separate completion adjustment might be needed."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains outside the move-level ratings and locked burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment requires a separate consequence changing completion of a locked con burden.",
+            "relatedMoveIds": [
+              "con-physics-does-not-exhaust-matter",
+              "con-idealism-bears-stronger-burden",
+              "con-physical-interventions-suggest-causal-asymmetry"
+            ],
+            "distinctConsequence": "Materialist viability, burden symmetry, and dependence evidence are already represented move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Absent their move ratings and burden contacts, these themes could affect completion, but they are already captured."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the rated moves and their locked burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment requires an uncaptured consequence changing completion of a locked con burden.",
+            "relatedMoveIds": [
+              "con-cd-analogy-supports-missing-framework",
+              "con-composition-still-needs-conscious-whole",
+              "con-physical-interventions-suggest-causal-asymmetry"
+            ],
+            "distinctConsequence": "None; possibility, symmetry, functional composition, and dependence are already move-rated.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without those move ratings and burden contacts, a separate completion adjustment might be needed."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 40,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-225/inventory/inventory.json",
+      "sha256": "e5ec96a8b516ed796929de534be62118cd4a2119c76e37c9a337e66c910abda6"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-225/judgments/pass-a/output.json",
+      "sha256": "f7e33b522046f409d3696e8885e9be50e11652af05971c3979016abcf6c41c6d"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-225/judgments/pass-b/output.json",
+      "sha256": "5b19d0804652fa1c3993033d3ab29924201f7c3a312bd21d28fe197ed2b25d99"
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "225",
+  "debateId": "kastrup-jump-analytic-idealism-materialism-2023",
+  "completedAt": "2026-09-01T13:45:52.349Z",
+  "source": {
+    "videoId": "57zkM-vviBA",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 17130,
+    "events": 2191,
+    "transcriptSha256": "223e50c6c2e467f691efbce9b2949cbd7877271972e40ca0c71b6443a7756bf7",
+    "eventsSha256": "7ac43daa186d0ac116a30f8a50df28267ba1c01e16b5a744bc6627c54ea73bdb",
+    "assessedWindow": "00:00:56-01:26:35",
+    "excludedMaterial": "the live setup and guest biography before the substantive exchange, plus the closing farewells",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 40,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 3,
+    "adjudicatedDisputes": 3,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 83,
+      "con": 80,
+      "winner": "pro",
+      "margin": 3
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1,
+      "maximumDistance": 1,
+      "maximumExcursion": 1,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 23,
+    "argumentCards": 40,
+    "uniqueLockedMovesMapped": 40,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "3a9c5189d4da5ccf90482f7677699033df8eb448dd28fb331f76d99fafde063f",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-225/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-three-description-prose-repair-before-publication-freeze",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.1,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 108,
+      "mean": 114.9,
+      "maximum": 121
+    },
+    "critiqueCharacterRange": [
+      880,
+      958
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0.051,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.054,
+    "overallItemWords": {
+      "strengthMean": 27.6,
+      "blunderMean": 27.5
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-225/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-after-score-blind-review-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 40,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 520,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 45,
+    "acceptedRhetoricalTags": 8,
+    "acceptedFallacyTags": 8,
+    "acceptedBiasTags": 0,
+    "rejectedRhetoricalTagCandidates": 37,
+    "controllerDefinitionOverrides": 8,
+    "aiContributionWords": 991
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-225/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 8,
+    "desktopEvidenceSha256": "154248adc1397b8e6c762f00139fac8d9da96297c795ef14890c5d8f6d250c32",
+    "mobileEvidenceSha256": "c08bd48856beea628fff2620ca2ccd6ba2e73ea2f28eeda40707cf52bab521db"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "225 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "660 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "40 moves; description mean 23.1 words; critique mean 114.8 words; boilerplate coverage mean 0.051"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "40 moves reviewed against 13 definitions in 2 blind passes; 45 candidates adjudicated; 8 fallacies and 0 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "40 populated cards and 8 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 225 with and without --repository-only",
+      "status": "passed",
+      "result": "40 moves; 7 sections; 3 disputes; 0 audio checks; score stability mean 1, maximum 1, excursion 1"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "225 of 225 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 2,
+    "inventoryRepairCycles": 2,
+    "judgmentRetries": 0,
+    "publicationDescriptionFieldsRepaired": 3,
+    "publicationCritiqueFieldsRepaired": 0,
+    "productionContractMetadataFieldsRepaired": 0,
+    "nullExchangeSlotsOmitted": 0,
+    "rhetoricalTagFieldsAdded": 8,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 8,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 22,
+    "con": 18,
+    "disposition": "All forty frozen moves are mapped exactly once. Kastrup supplies four more distinct moves because his affirmative ontology, dissociation account, neuroscience accommodation, and replies are developed separately; Jump's strongest alternatives and objections remain represented without manufacturing numerical symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

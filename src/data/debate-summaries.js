@@ -10158,5 +10158,57 @@ export const debateSummaries = [
         "title": "Evidential Standards for an Incomplete Research Program"
       }
     ]
+  },
+  {
+    "id": "kastrup-jump-analytic-idealism-materialism-2023",
+    "number": "225",
+    "title": "Does Analytic Idealism Explain Consciousness Better? Bernardo Kastrup vs. Tom Jump (2023)",
+    "label": "Analytic idealism and materialist explanation",
+    "date": "2026-09-01",
+    "duration": "1 hr 27 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=57zkM-vviBA",
+    "motion": "Does analytic idealism explain consciousness and reality better than materialism?",
+    "summary": "Kastrup narrowly wins by pressing materialism’s qualitative explanatory gap, while Jump preserves materialism’s viability through epistemic caution, composition challenges, and realization possibilities.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Analytic idealism better explains consciousness and reality",
+        "speaker": "Bernardo Kastrup",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Materialism remains a viable explanation of consciousness and reality",
+        "speaker": "Tom Jump",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 80,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "The Hard Problem, Emergence, and Missing Knowledge"
+      },
+      {
+        "title": "Matter, Scientific Description, and Ontological Starting Points"
+      },
+      {
+        "title": "Dissociation, Organisms, and Individual Minds"
+      },
+      {
+        "title": "Artificial Consciousness, Function, and Biological Analogy"
+      },
+      {
+        "title": "Other Minds and the Boundary of Consciousness"
+      },
+      {
+        "title": "Causal Dependence, Neuroscience, and Psychedelics"
+      },
+      {
+        "title": "Parsimony, Burden of Proof, and the Shared World"
+      }
+    ]
   }
 ];
