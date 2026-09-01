@@ -2670,7 +2670,7 @@ function renderBackend() {
           <summary>
             <span>
               <span class="backend-objectivity-kicker">Research library</span>
-              <strong id="backend-report-heading">Corpus-level analysis paper</strong>
+              <strong id="backend-report-heading">Corpus-level analysis papers</strong>
               <small>Open descriptions and PDF links for both corpus-wide studies</small>
             </span>
             <i aria-hidden="true"></i>
