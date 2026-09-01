@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "218",
+  "debateId": "mcgrath-oconnor-new-atheism-failure-2023",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-will-check-leviticus-claim:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "pro-will-check-leviticus-claim",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "Conceding the need to check is consistent, but retaining the broader ethos claim receives no supporting bridge."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Conceding the need to verify is coherent, but the broader ethos claim does not answer the specific contradiction."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-will-check-leviticus-claim:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "pro-will-check-leviticus-claim",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 43,
+          "rationale": "No evidence answers the quotation; the broader benevolent-ethos assertion is simply preserved for later."
+        },
+        "option-b": {
+          "value": 48,
+          "rationale": "No evidence defends the disputed wording, and the retained benevolent-ethos claim is merely restated."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-will-check-leviticus-claim:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-will-check-leviticus-claim",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 58,
+          "rationale": "It acknowledges the exact objection but does not defend, retract, or resolve the challenged wording."
+        },
+        "option-b": {
+          "value": 61,
+          "rationale": "It acknowledges the exact objection but postpones verification and does not defend or retract the claim."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-will-check-leviticus-claim:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "pro-will-check-leviticus-claim",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 60,
+          "rationale": "The reply responsibly contacts the challenge yet leaves Pro’s central intellectual claim materially weakened."
+        },
+        "option-b": {
+          "value": 62,
+          "rationale": "The concession responsibly updates the dispute but leaves Pro's central selective-reading challenge unsupported here."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-will-check-leviticus-claim:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "pro-will-check-leviticus-claim",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 79,
+          "rationale": "The concession and the narrower residual claim are clearly separated and easy to audit."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The need to check and the narrower retained claim are stated clearly enough to distinguish their statuses."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-will-check-leviticus-claim:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-will-check-leviticus-claim",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "Agreeing to verify the passage is properly cautious, though the broader claim remains insufficiently qualified."
+        },
+        "option-b": {
+          "value": 91,
+          "rationale": "The response candidly accepts possible error and treats the specific correction as helpful rather than evading it."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the ratings already assigned to Pro’s locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion is satisfied beyond move-level dimension performance.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None; Pro’s burden contact, gaps, and replies are represented in the move ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not alter burden completion beyond the existing ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "All debate-wide burden performance is already represented in the locked move dimensions, so no separate adjustment is eligible.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct unscored consequence beyond the rated motion, central, and subsidiary burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None; Pro's burden completion and omissions are captured by move-level ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level ratings, burden completion would require separate review, but those ratings already capture it."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the ratings already assigned to Con’s locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion is satisfied beyond move-level dimension performance.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None; Con’s burden contact, gaps, and replies are represented in the move ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not alter burden completion beyond the existing ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "All debate-wide burden performance is already represented in the locked move dimensions, so no separate adjustment is eligible.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct unscored consequence beyond the rated motion, central, and subsidiary burden contacts.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None; Con's burden completion and omissions are captured by move-level ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level ratings, burden completion would require separate review, but those ratings already capture it."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 28,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-218/inventory/inventory.json",
+      "sha256": "301b8e80d844abbcf665c1d62af83b445d876b8ece116392e198c5eccc49e303"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-218/judgments/pass-a/output.json",
+      "sha256": "527549a4c2f29d39e823160c3dd33900c65c71e8845d2e5e272559481bf1a753"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-218/judgments/pass-b/output.json",
+      "sha256": "256c97af1ce6ef405025b9c0cf63be4a76953076ec71f79045a9c3d64e00492c"
+    }
+  }
+}

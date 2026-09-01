@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-normalization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "218",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-218/inventory/raw-worker-output.json",
+    "sha256": "afa988d60b341993648982d730037f9e173719b2742ab9476cec4edc80c1c40f"
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-218/inventory/inventory.json",
+    "sha256": "301b8e80d844abbcf665c1d62af83b445d876b8ece116392e198c5eccc49e303"
+  },
+  "transformations": [
+    "Sorted the same 28 selected moves by locked source start event and preserved every route, burden link, importance level, response link, proposition, and selected inference.",
+    "Merged the one-sided religious-experience section into the adjacent conversion-narratives section, preserving its combined 28 percent weight, so every semantic section has evidence from both sides without adding, deleting, or reassigning a move.",
+    "Recomputed every timestamp and excerpt directly from the locked events array, normalized moveKind to reply whenever the worker supplied response links, and stored empty quote-candidate arrays rather than manufacture quotations.",
+    "Recomputed every selection-balance and publication-capacity count, rationale trigger, fourth-row flag, and authorization from the selected moves."
+  ],
+  "recoveredTransport": {
+    "occurred": false,
+    "runnerAutomaticNetworkRetryCount": 0,
+    "modelTurnRestartedByController": false,
+    "sourcePacketChanged": false
+  },
+  "schemaPreflightFailure": {
+    "occurred": false,
+    "reachedModel": false,
+    "reason": null,
+    "correctedBeforeFirstModelSampling": false
+  },
+  "substantiveJudgmentChanged": false,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "218",
+    "sections": 5,
+    "moves": 28,
+    "belowHighAttributionMoveIds": []
+  }
+}

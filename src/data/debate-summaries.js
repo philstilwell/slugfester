@@ -9804,5 +9804,50 @@ export const debateSummaries = [
         "title": "Heaven, theosis, and final synthesis"
       }
     ]
+  },
+  {
+    "id": "mcgrath-oconnor-new-atheism-failure-2023",
+    "number": "218",
+    "title": "Has New Atheism Failed? Alister McGrath vs. Alex O'Connor (2023)",
+    "label": "New Atheism and its legacy",
+    "date": "2026-08-31",
+    "duration": "1 hr 26 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=MNZaLudTSgg",
+    "motion": "Has New Atheism failed?",
+    "summary": "Con wins 83–73 by separating atheism from New Atheism’s defects and decisively exposing Pro’s unresolved covenant, slavery, and Leviticus problems.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "New Atheism has failed",
+        "speaker": "Alister McGrath",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Critical reassessment of New Atheism",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 83
+    },
+    "sections": [
+      {
+        "title": "Rise, goals, and competing measures of success"
+      },
+      {
+        "title": "Epistemic standards, evidence, and appeals to science"
+      },
+      {
+        "title": "Morality, scripture, and internal critique"
+      },
+      {
+        "title": "Social legacy, polemics, and religious harms"
+      },
+      {
+        "title": "Conversion narratives, religious experience, and hiddenness"
+      }
+    ]
   }
 ];
