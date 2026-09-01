@@ -612,8 +612,8 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester selects debates and uses complete transcripts, independent AI reviews, deterministic scoring, audio checks, and validation to build scorecards.";
-  const updatedDate = "2026-08-31";
+    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls and a linked corpus analysis of theist-side results.";
+  const updatedDate = "2026-09-01";
 
   return {
     title: pageTitle("How Slugfester scores debates"),
@@ -627,6 +627,12 @@ export function backendSeo({ legacy = false } = {}) {
     type: "article",
     articleSection: "Methodology",
     modifiedTime: seoDateTime(updatedDate),
+    relatedLinks: [
+      {
+        href: "/output/pdf/why-do-the-theist-sides-score-lower.pdf",
+        label: "PDF report: Why Do the Theist Sides Score Lower?"
+      }
+    ],
     jsonLd: [
       organizationJsonLd(),
       websiteJsonLd(),
@@ -657,6 +663,7 @@ export function backendSeo({ legacy = false } = {}) {
           "debate selection",
           "debate recommendations",
           "argument analysis",
+          "theist and non-theist corpus analysis",
           "debate transcript backend",
           "logical coherence",
           "fallacy detection",

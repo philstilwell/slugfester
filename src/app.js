@@ -31,7 +31,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260901-scorecard-reporting-v1";
+} from "./seo.js?v=20260901-theist-report-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -2663,6 +2663,50 @@ function renderBackend() {
           <p>Assessments are grounded in the debate transcript and Slugfester's published rubric. Account personalization and private conversation history are not inputs to the site's assessment data. Like any AI-assisted evaluation, the results remain open to revision and reader scrutiny.</p>
           <p>Named fallacies and biases are routed through Slugfester reference pages first. Those pages give the basic definition, explain the debate-specific occurrence, link back to the source debate, and then point to LogFall or CogBias for deeper external treatment.</p>
         </div>
+      </section>
+
+      <section class="backend-report" aria-labelledby="backend-report-heading">
+        <details class="backend-objectivity-accordion backend-report-accordion">
+          <summary>
+            <span>
+              <span class="backend-objectivity-kicker">Corpus-level analysis</span>
+              <strong id="backend-report-heading">Why do the theist sides score lower?</strong>
+              <small>Open a detailed overview and the complete 15-page PDF report</small>
+            </span>
+            <i aria-hidden="true"></i>
+          </summary>
+          <div class="backend-objectivity-content backend-report-content">
+            <div class="backend-report-copy">
+              <p class="eyebrow">Report published September 1, 2026</p>
+              <h3>A defense of the epistemic bleed-through hypothesis</h3>
+              <p>Published after the corrected position audit, this report examines the 169 assessed debates in the Slugfester corpus that support a relevant theist-versus-non-theist comparison. It analyzes 3,502 scored argumentative moves and decomposes the average score difference between the two sides instead of relying only on who won each scorecard.</p>
+              <p>The report finds that non-theist sides scored 6.35 points higher on average. The largest parts of that difference arose from logical coherence, evidence and warrant, and responsiveness. It also compares evidence thresholds, overstatement, reply contact, and treatment of alternatives, then checks whether the evidence gap persists within constructives, replies, load-bearing moves, and debates where the theist side argues con.</p>
+              <p>The interpretation defended is the <strong>epistemic bleed-through hypothesis</strong>: standards that permit religious commitment through revelation, testimony, experience, theological fit, or inherited authority may be carried into public argument, where the premises require independent warrant and explicit comparison with alternatives. The report argues that this mechanism best explains the observed cluster of under-substantiation, inferential overreach, overstatement, and incomplete engagement with opposing arguments.</p>
+              <p><strong>Scope and limits:</strong> this is a corpus-level explanatory argument, not experimental proof that faith caused any particular speaker's reasoning. Slugfester is a curated rather than random sample, speakers repeat, and the scores are AI-assisted transcript-grounded judgments under a fixed rubric. The classifications describe the position argued in each scorecard, not a speaker's intellectual worth, sincerity, or private psychology. The report states these limits, tests rival explanations, and proposes blind human replication and a direct falsification test.</p>
+            </div>
+            <aside class="backend-report-card" aria-label="Report at a glance">
+              <span>Report at a glance</span>
+              <strong>169 debates</strong>
+              <p>3,502 scored moves in the relevant theist-versus-non-theist assessment set</p>
+              <dl>
+                <div>
+                  <dt>Average score difference</dt>
+                  <dd>6.35 points</dd>
+                </div>
+                <div>
+                  <dt>Report length</dt>
+                  <dd>15 pages</dd>
+                </div>
+                <div>
+                  <dt>Figures</dt>
+                  <dd>5</dd>
+                </div>
+              </dl>
+              <a class="button primary backend-report-link" href="/output/pdf/why-do-the-theist-sides-score-lower.pdf" type="application/pdf" target="_blank" rel="noopener">Open the full PDF report</a>
+              <small>Includes the score-gap decomposition, burden controls, representative cases, rival explanations, methodology, caveats, and conclusion.</small>
+            </aside>
+          </div>
+        </details>
       </section>
     </main>
   `);
