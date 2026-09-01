@@ -1,0 +1,156 @@
+{
+  "snapshot": {
+    "report_date": "2026-09-01",
+    "ranking_eligible_debates": 212,
+    "appearances": 424,
+    "unique_speakers": 157,
+    "current_minimum": 3,
+    "ranked_speakers": 42,
+    "threshold_counts": {
+      "1": 157,
+      "3": 42,
+      "5": 22,
+      "10": 7
+    },
+    "appearance_count_distribution": {
+      "1": 83,
+      "2": 32,
+      "3": 14,
+      "4": 6,
+      "5": 3,
+      "6": 9,
+      "7": 2,
+      "9": 1,
+      "10": 2,
+      "11": 2,
+      "24": 1,
+      "26": 1,
+      "27": 1
+    },
+    "closed_appearances": 358,
+    "standalone_appearances": 66
+  },
+  "descriptive_stability": {
+    "eligible_appearances": 277,
+    "median_within_speaker_sd": 3.0726532901600496,
+    "mean_within_speaker_sd": 3.004594976841589,
+    "pooled_within_speaker_sd": 3.1284155735813863,
+    "median_observed_range": 7.0,
+    "speakers_with_range_at_least_10": 12,
+    "speakers_with_range_at_least_15": 1,
+    "rank_1_to_10_mean_gap": 3.5333333333333314,
+    "median_adjacent_mean_gap": 0.32727272727272805,
+    "adjacent_gaps_below_one_point": 38
+  },
+  "reliability": {
+    "speakers": 42,
+    "appearances": 277,
+    "grand_mean": 81.53429602888086,
+    "effective_group_size": 6.472307827771418,
+    "between_speaker_variance": 14.673081097509296,
+    "within_speaker_variance": 9.786984001026555,
+    "between_speaker_sd": 3.830545796294478,
+    "pooled_within_speaker_sd": 3.1284155735813863,
+    "single_score_icc": 0.5998790697571614,
+    "mean_reliability": {
+      "3": 0.8181068531783316,
+      "5": 0.8823006282655114,
+      "10": 0.9374704709932836
+    }
+  },
+  "split_half": {
+    "minimum_appearances": 6,
+    "speakers": 19,
+    "draws": 20000,
+    "median_spearman": 0.8328214930743484,
+    "mean_spearman": 0.829438631258038,
+    "spearman_ci_95": [
+      0.7360562853001884,
+      0.9058930767350452
+    ],
+    "mean_top_five_overlap": 4.51445,
+    "full_top_five_match_probability": 0.54395
+  },
+  "rank_uncertainty": {
+    "empirical_bootstrap": {
+      "draws": 20000,
+      "distinct_top_ten_sets": 338,
+      "modal_top_ten_set_probability": 0.3812,
+      "median_rank_interval_width": 11.5,
+      "speakers_with_rank_interval_width_at_least_10": 25,
+      "modal_top_ten_set": [
+        "Alex Malpass",
+        "Alex O'Connor",
+        "Bart Ehrman",
+        "Graham Oppy",
+        "Joe Folley",
+        "Joseph Schmid",
+        "Lance Bush",
+        "Matt Dillahunty",
+        "Scott Clifton",
+        "Sean Carroll"
+      ]
+    },
+    "hierarchical_model": {
+      "draws": 20000,
+      "distinct_top_ten_sets": 1340,
+      "modal_top_ten_set_probability": 0.2174,
+      "median_rank_interval_width": 17.5,
+      "speakers_with_rank_interval_width_at_least_10": 35,
+      "modal_top_ten_set": [
+        "Alex Malpass",
+        "Alex O'Connor",
+        "Bart Ehrman",
+        "Graham Oppy",
+        "Joe Folley",
+        "Joseph Schmid",
+        "Lance Bush",
+        "Matt Dillahunty",
+        "Scott Clifton",
+        "Sean Carroll"
+      ]
+    },
+    "median_leave_one_out_span": 4.0,
+    "speakers_with_leave_one_out_span_at_least_5": 19,
+    "three_appearance_speakers": 14,
+    "three_appearance_speakers_in_top_ten": 4,
+    "appearance_count_vs_hierarchical_width_spearman": -0.5894052504742847,
+    "hierarchical_width_by_sample_band": {
+      "3-4": {
+        "speakers": 20,
+        "median_width": 21.5,
+        "mean_width": 18.85
+      },
+      "5-9": {
+        "speakers": 15,
+        "median_width": 18.0,
+        "mean_width": 15.533333333333333
+      },
+      "10+": {
+        "speakers": 7,
+        "median_width": 10.0,
+        "mean_width": 10.0
+      }
+    },
+    "current_top_ten_with_at_least_90_percent_membership_probability": 6
+  },
+  "context_sensitivity": {
+    "cohort_means": {
+      "closed": 81.32402234636872,
+      "standalone": 78.16666666666667
+    },
+    "overall_mean": 80.83254716981132,
+    "raw_vs_margin_spearman": 0.8787240086664037,
+    "raw_vs_generation_adjusted_spearman": 0.9854908129822344,
+    "raw_vs_shrunken_spearman": 0.9980949300890966,
+    "raw_margin_top_ten_overlap": 7,
+    "raw_generation_adjusted_top_ten_overlap": 10,
+    "raw_shrunken_top_ten_overlap": 10
+  },
+  "interpretation": {
+    "headline": "The rankings contain a repeatable speaker signal, but exact ordinal positions are much less stable than the displayed one-decimal averages suggest.",
+    "stable_component": "Between-speaker differences persist across randomly split appearance sets, especially for speakers with broader samples.",
+    "fragile_component": "At the current three-debate threshold, sampling uncertainty, dense score clustering, opponent context, and assessment-generation drift can move many speakers several places.",
+    "recommended_reading": "Treat ranking bands and sample-qualified tiers as defensible; treat a one-place difference, especially among three- to five-debate speakers, as provisional."
+  }
+}

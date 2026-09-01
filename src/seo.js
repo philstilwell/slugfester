@@ -647,6 +647,10 @@ export function backendSeo({ legacy = false } = {}) {
       {
         href: "/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf",
         label: "PDF report: Debates Are Usually Lost Without a Named Fallacy"
+      },
+      {
+        href: "/output/pdf/do-slugfester-rankings-measure-stable-performance.pdf",
+        label: "PDF report: Do Slugfester Rankings Measure Stable Performance?"
       }
     ],
     jsonLd: [
