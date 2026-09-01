@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "227",
+  "debateId": "oldfield-marriott-meaning-without-god-2026",
+  "completedAt": "2026-09-01T17:21:43.217Z",
+  "source": {
+    "videoId": "z1cYq2X67PY",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 22363,
+    "events": 3158,
+    "transcriptSha256": "ef5ab2b2172011a2f4ece243e9bee3fa2d0f4e1ea8e643fbda8cb0483d8e9770",
+    "eventsSha256": "874b42be81ddac008b27703cda1c5104f2c8bd2c620b8268bb3e86390d6c43c4",
+    "assessedWindow": "00:02:43-01:40:20",
+    "excludedMaterial": "the opening montage, introductory logistics, 00:40:23-00:40:48 mid-roll promotion, and host outro",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 32,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 5,
+    "adjudicatedDisputes": 5,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 75,
+      "con": 78,
+      "winner": "con",
+      "margin": 3
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "displayRows": 16,
+    "argumentCards": 32,
+    "uniqueLockedMovesMapped": 32,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "39f4ef90ba5a05fd8be284fdfa62750262d637a5c0bce20bb38402dade54b39a",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-227/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-two-field-publication-repair-before-freeze",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 20,
+      "mean": 23.4,
+      "maximum": 25,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 111,
+      "mean": 118.2,
+      "maximum": 124
+    },
+    "critiqueCharacterRange": [
+      885,
+      989
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "strengthMean": 24.5,
+      "blunderMean": 25.2
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-227/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral-four-tag-exact-definition-review",
+    "movesReviewedForFallaciesAndBiases": 32,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 416,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 48,
+    "acceptedRhetoricalTags": 4,
+    "acceptedFallacyTags": 1,
+    "acceptedBiasTags": 3,
+    "rejectedRhetoricalTagCandidates": 44,
+    "controllerDefinitionOverrides": 6,
+    "readerFacingScoringDisclosureCorrected": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-227/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 4,
+    "desktopEvidenceSha256": "86e50eac8e43b7dd9ddd4085e749f2fad72cd7aa54d19c498acde292a7404c9b",
+    "mobileEvidenceSha256": "3d8d8d9e6eadc7506ca7dc620f4ab77edca8b2eddedf11cab1e1be24b5a80bd9"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "227 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "665 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "32 moves; description mean 23.4 words; critique mean 118.2 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "32 moves reviewed against 13 definitions in 2 blind passes; 48 candidates adjudicated; 1 fallacy and 3 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "32 populated cards and 4 rhetorical labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 227 with and without --repository-only",
+      "status": "passed",
+      "result": "32 moves; 5 sections; 5 disputes; 0 audio checks; score stability mean 0.75, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "227 of 227 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 0,
+    "inventoryRepairCycles": 1,
+    "judgmentRetries": 0,
+    "publicationDescriptionFieldsRepaired": 1,
+    "publicationCritiqueFieldsRepaired": 0,
+    "publicationScoringDisclosureFieldsRepaired": 1,
+    "publicationRepairShards": 1,
+    "publicationSchemaPreflightFailures": 2,
+    "nullExchangeSlotsOmitted": 1,
+    "rhetoricalTagFieldsAdded": 4,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 6,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 16,
+    "con": 16,
+    "disposition": "All thirty-two frozen moves are mapped exactly once. The balanced closing section uses its preauthorized fourth row to preserve both speakers' distinct final reflections; no numerical symmetry was manufactured."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

@@ -10262,5 +10262,51 @@ export const debateSummaries = [
         "title": "Jewish precedent and historical development"
       }
     ]
+  },
+  {
+    "id": "oldfield-marriott-meaning-without-god-2026",
+    "number": "227",
+    "title": "Is God the Answer to Our Meaning Crisis? Elizabeth Oldfield vs. James Marriott (2026)",
+    "label": "God, secular life, and meaning",
+    "date": "2026-09-01",
+    "duration": "1 hr 41 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=z1cYq2X67PY",
+    "motion": "Is life's meaning ultimately grounded in God or humanly generated within a meaningless universe?",
+    "summary": "Marriott prevailed by three points through a clearer ultimate-versus-proximate distinction, stronger scrutiny of spiritual intuition, and more consistent burden contact, despite Oldfield’s effective anti-reductionist replies.",
+    "topicCategory": "meaning-purpose",
+    "sides": {
+      "pro": {
+        "name": "Life has real relational and spiritual meaning ultimately grounded in God",
+        "speaker": "Elizabeth Oldfield",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The universe has no ultimate meaning, though humans generate meaningful purposes",
+        "speaker": "James Marriott",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 78,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Relational and naturalistic foundations"
+      },
+      {
+        "title": "Religion, community, and social grounding"
+      },
+      {
+        "title": "Ultimate purpose and proximate meaning"
+      },
+      {
+        "title": "Science, intuition, and ways of knowing"
+      },
+      {
+        "title": "Experience, consistency, and final reflections"
+      }
+    ]
   }
 ];
