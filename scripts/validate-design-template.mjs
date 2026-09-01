@@ -70,6 +70,8 @@ requireIncludes("app landing actions", app, 'class="landing-actions"');
 requireIncludes("app landing summary", app, 'class="landing-stats"');
 requireIncludes("app landing topics", app, "Browse all debates by topic");
 requireIncludes("app landing update cadence", app, "We plan to add new debate assessments every month.");
+requireIncludes("app recent assessment wording", app, "Start with the newest debate additions.");
+requireExcludes("app recent assessment wording", app, "Start with the newest scorecard numbers.");
 requireIncludes("app pagination", app, "const LANDING_PAGE_SIZE = 18");
 requireIncludes("app pagination", app, "const SEARCH_PAGE_SIZE = 24");
 requireIncludes("app pagination", app, "renderPagination");

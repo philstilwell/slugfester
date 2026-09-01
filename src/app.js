@@ -605,7 +605,7 @@ function renderRecentAssessments(recentDebates) {
           <h2 id="recent-assessments-heading">Recently added assessments</h2>
         </div>
         <div class="recent-assessments-actions">
-          <p>Start with the newest scorecard numbers.</p>
+          <p>Start with the newest debate additions.</p>
         </div>
       </div>
       <div class="recent-assessment-grid">
