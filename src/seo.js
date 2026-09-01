@@ -612,7 +612,7 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls and two linked corpus analyses of theist-side results.";
+    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls, two analyses of theist-side results, and a corpus-wide score-scale audit.";
   const updatedDate = "2026-09-01";
 
   return {
@@ -635,6 +635,10 @@ export function backendSeo({ legacy = false } = {}) {
       {
         href: "/output/pdf/are-theist-arguments-more-often-slogan-like.pdf",
         label: "PDF report: Are Theist Arguments More Often Slogan-Like?"
+      },
+      {
+        href: "/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf",
+        label: "PDF report: Are All Slugfester Assessments on the Same Scale?"
       }
     ],
     jsonLd: [

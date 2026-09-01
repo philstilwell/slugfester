@@ -2671,16 +2671,17 @@ function renderBackend() {
             <span>
               <span class="backend-objectivity-kicker">Research library</span>
               <strong id="backend-report-heading">Corpus-level analysis papers</strong>
-              <small>Open descriptions and PDF links for both corpus-wide studies</small>
+              <small>Open descriptions and PDF links for three corpus-wide studies</small>
             </span>
             <i aria-hidden="true"></i>
           </summary>
           <div class="backend-objectivity-content backend-report-content">
             <div class="backend-report-copy">
-              <p class="eyebrow">Two papers published September 1, 2026</p>
-              <h3>Corpus-wide explanations of the theist-side performance gap</h3>
-              <p>These companion papers examine the corrected set of 169 Slugfester debate assessments and 3,502 scored argumentative moves. The first asks why the theist sides receive lower overall scores. The second tests the more specific hypothesis that theist-side arguments more often take the form of weakly warranted, overstated, and difficult-to-falsify rhetorical affirmations.</p>
-              <p>Both papers use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side. They report their operational definitions, paired debate checks, speaker and burden controls, representative cases, counterexamples, rival explanations, limitations, and conditions that could weaken their conclusions.</p>
+              <p class="eyebrow">Three papers published September 1, 2026</p>
+              <h3>Corpus-wide findings and measurement audits</h3>
+              <p>These papers examine both what the Slugfester corpus appears to show and how confidently its assessments can be compared. The first two use the corrected set of 169 theist-versus-non-theist debates and 3,502 scored argumentative moves to explain the theist-side performance gap and test the prevalence of weakly warranted, overstated, difficult-to-falsify rhetorical affirmations.</p>
+              <p>The third paper broadens the scope to all 228 published assessments. It tests whether scores produced under two locked-ledger generations behave as one uniform measuring scale, then identifies which paired findings remain reliable and which absolute scores, dimension distributions, speaker averages, and rhetorical-tag frequencies require generation-aware calibration.</p>
+              <p>All three papers state their operational definitions, denominators, controls, uncertainty, rival explanations, limitations, and conditions that could weaken their conclusions. The theist-side studies use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side.</p>
             </div>
             <div class="backend-report-library" aria-label="Corpus-level analysis papers">
               <article class="backend-report-card">
@@ -2727,6 +2728,30 @@ function renderBackend() {
                 </dl>
                 <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
                 <small>Includes component comparisons, paired and speaker-balanced checks, fallacy and bias corroboration, explicit falsifiability diagnoses, counterexamples, rival explanations, and a decisive follow-up test.</small>
+              </article>
+
+              <article class="backend-report-card">
+                <span>Paper three · Measurement audit</span>
+                <h4>Are All Slugfester Assessments on the Same Scale?</h4>
+                <p>This paper tests whether the site's published scores and annotations can be compared as though they were produced by one uniform measuring instrument. The 179 earlier locked-ledger assessments average 81.32 points per side, while the 33 later standalone assessments average 78.17—a 3.16-point downward shift.</p>
+                <p>A repeated-speaker bridge preserves most of the difference: 26 of 31 speakers score lower in the later generation, by 2.81 points on average. The paper also finds stronger coupling among the six rubric dimensions and a 7.2-fold increase in rhetorical-tag coverage, while carefully separating measurement-generation risk from a causal claim about the production protocol.</p>
+                <p>Its practical conclusion is selective rather than destructive. Within-debate margins remain the safest comparisons because both sides share one assessment generation. Cross-generation absolute scores, speaker averages, dimension distributions, score trends, and raw tag rates should be stratified or calibrated. The report also defines a roughly twice-yearly reassessment cycle as AI judging becomes more accurate, consistent, and objective.</p>
+                <dl>
+                  <div>
+                    <dt>Coverage</dt>
+                    <dd>228 published · 212 locked ledgers</dd>
+                  </div>
+                  <div>
+                    <dt>Locked move analysis</dt>
+                    <dd>4,449 moves</dd>
+                  </div>
+                  <div>
+                    <dt>Length and figures</dt>
+                    <dd>16 pages · 6 figures</dd>
+                  </div>
+                </dl>
+                <a class="button primary backend-report-link" href="/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Are All Slugfester Assessments on the Same Scale?”</a>
+                <small>Includes the score-level discontinuity, assessment-sequence blocks, all 31 repeated speakers, dimension-level and correlation diagnostics, tag-coverage drift, robustness checks, policy implications, and the next bridge-rescoring design.</small>
               </article>
             </div>
           </div>

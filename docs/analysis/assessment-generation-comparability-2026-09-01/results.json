@@ -1,0 +1,757 @@
+{
+  "report_date": "2026-09-01",
+  "snapshot_commit": "75784aa6947e6798b71ab3117817217dace630ba",
+  "corpus": {
+    "published_assessments": 228,
+    "locked_ledgers": 212,
+    "public_without_locked_ledger": 16,
+    "locked_moves": 4449,
+    "public_moves": 4659,
+    "models": [
+      "5.6 Sol"
+    ],
+    "rubrics": [
+      "Slugfester Reassessment Rubric v2"
+    ]
+  },
+  "cohort_summary": [
+    {
+      "cohort": "closed",
+      "label": "Earlier closed-findings generation",
+      "debates": 179,
+      "side_scores": 358,
+      "moves": 3423,
+      "number_min": 1,
+      "number_max": 195,
+      "mean_side_score": 81.32402234636872,
+      "side_score_sd": 5.005434975465858,
+      "min_side_score": 64.0,
+      "max_side_score": 91.0,
+      "constructive_share": 0.23166812737364884,
+      "importance_3_share": 0.7356120362255332
+    },
+    {
+      "cohort": "standalone",
+      "label": "Later standalone generation",
+      "debates": 33,
+      "side_scores": 66,
+      "moves": 1026,
+      "number_min": 196,
+      "number_max": 228,
+      "mean_side_score": 78.16666666666667,
+      "side_score_sd": 5.009478195867489,
+      "min_side_score": 67.0,
+      "max_side_score": 88.0,
+      "constructive_share": 0.3654970760233918,
+      "importance_3_share": 0.732943469785575
+    }
+  ],
+  "score_difference": {
+    "iterations": 20000,
+    "estimate": -3.15735567970205,
+    "ci_95": [
+      -4.276963771796174,
+      -1.9930379211105516
+    ]
+  },
+  "dimension_summary": [
+    {
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "cohort": "closed",
+      "mean": 80.19894829097284,
+      "sd": 8.736039480326637,
+      "n_moves": 3423
+    },
+    {
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "cohort": "standalone",
+      "mean": 77.9307992202729,
+      "sd": 8.361589692749344,
+      "n_moves": 1026
+    },
+    {
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "cohort": "closed",
+      "mean": 71.57843996494303,
+      "sd": 9.331054729760591,
+      "n_moves": 3423
+    },
+    {
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "cohort": "standalone",
+      "mean": 67.8859649122807,
+      "sd": 9.738816369947024,
+      "n_moves": 1026
+    },
+    {
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "cohort": "closed",
+      "mean": 87.59100204498978,
+      "sd": 13.578778554058516,
+      "n_moves": 3423
+    },
+    {
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "cohort": "standalone",
+      "mean": 83.20175438596492,
+      "sd": 7.307412664271558,
+      "n_moves": 1026
+    },
+    {
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "cohort": "closed",
+      "mean": 84.28483786152498,
+      "sd": 9.03459943077935,
+      "n_moves": 3423
+    },
+    {
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "cohort": "standalone",
+      "mean": 81.49707602339181,
+      "sd": 6.603656875167464,
+      "n_moves": 1026
+    },
+    {
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "cohort": "closed",
+      "mean": 85.30966988022203,
+      "sd": 9.915212587565797,
+      "n_moves": 3423
+    },
+    {
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "cohort": "standalone",
+      "mean": 81.14912280701755,
+      "sd": 6.297826509358359,
+      "n_moves": 1026
+    },
+    {
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "cohort": "closed",
+      "mean": 78.52264095822377,
+      "sd": 11.5847195166179,
+      "n_moves": 3423
+    },
+    {
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "cohort": "standalone",
+      "mean": 77.62573099415205,
+      "sd": 11.24139912747408,
+      "n_moves": 1026
+    }
+  ],
+  "repeated_speakers": {
+    "count": 31,
+    "rows": [
+      {
+        "speaker": "Ross Douthat",
+        "closed_mean": 82.0,
+        "standalone_mean": 69.0,
+        "difference": -13.0,
+        "closed_debates": 2,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Antony Flew",
+        "closed_mean": 86.0,
+        "standalone_mean": 77.0,
+        "difference": -9.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Ben Watkins",
+        "closed_mean": 86.0,
+        "standalone_mean": 78.0,
+        "difference": -8.0,
+        "closed_debates": 1,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "Alister McGrath",
+        "closed_mean": 80.0,
+        "standalone_mean": 72.5,
+        "difference": -7.5,
+        "closed_debates": 1,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "Eric Hernandez",
+        "closed_mean": 74.0,
+        "standalone_mean": 68.0,
+        "difference": -6.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Dinesh D'Souza",
+        "closed_mean": 76.4,
+        "standalone_mean": 71.0,
+        "difference": -5.400000000000006,
+        "closed_debates": 5,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Peter Singer",
+        "closed_mean": 86.0,
+        "standalone_mean": 81.0,
+        "difference": -5.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Josh Rasmussen",
+        "closed_mean": 81.5,
+        "standalone_mean": 77.0,
+        "difference": -4.5,
+        "closed_debates": 4,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Trent Horn",
+        "closed_mean": 79.0,
+        "standalone_mean": 74.66666666666667,
+        "difference": -4.333333333333329,
+        "closed_debates": 3,
+        "standalone_debates": 3
+      },
+      {
+        "speaker": "John Lennox",
+        "closed_mean": 78.0,
+        "standalone_mean": 74.0,
+        "difference": -4.0,
+        "closed_debates": 7,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "Matt Dillahunty",
+        "closed_mean": 86.36,
+        "standalone_mean": 82.5,
+        "difference": -3.8599999999999994,
+        "closed_debates": 25,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "Stephen Woodford",
+        "closed_mean": 81.6,
+        "standalone_mean": 78.0,
+        "difference": -3.5999999999999943,
+        "closed_debates": 5,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Michael Huemer",
+        "closed_mean": 83.0,
+        "standalone_mean": 79.5,
+        "difference": -3.5,
+        "closed_debates": 5,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "William Lane Craig",
+        "closed_mean": 79.9047619047619,
+        "standalone_mean": 76.66666666666667,
+        "difference": -3.2380952380952266,
+        "closed_debates": 21,
+        "standalone_debates": 3
+      },
+      {
+        "speaker": "Ayaan Hirsi Ali",
+        "closed_mean": 74.0,
+        "standalone_mean": 71.0,
+        "difference": -3.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Francis Collins",
+        "closed_mean": 79.0,
+        "standalone_mean": 76.0,
+        "difference": -3.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Michael Shermer",
+        "closed_mean": 82.0,
+        "standalone_mean": 79.0,
+        "difference": -3.0,
+        "closed_debates": 4,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "Richard Dawkins",
+        "closed_mean": 83.0,
+        "standalone_mean": 80.5,
+        "difference": -2.5,
+        "closed_debates": 2,
+        "standalone_debates": 4
+      },
+      {
+        "speaker": "Alex O'Connor",
+        "closed_mean": 85.95238095238095,
+        "standalone_mean": 83.8,
+        "difference": -2.152380952380952,
+        "closed_debates": 21,
+        "standalone_debates": 5
+      },
+      {
+        "speaker": "Jonathan Pageau",
+        "closed_mean": 76.0,
+        "standalone_mean": 74.0,
+        "difference": -2.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Max Baker-Hytch",
+        "closed_mean": 84.0,
+        "standalone_mean": 82.0,
+        "difference": -2.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Bart Ehrman",
+        "closed_mean": 86.1,
+        "standalone_mean": 85.0,
+        "difference": -1.0999999999999943,
+        "closed_debates": 10,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Richard Carrier",
+        "closed_mean": 80.6,
+        "standalone_mean": 80.0,
+        "difference": -0.5999999999999943,
+        "closed_debates": 5,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Bernardo Kastrup",
+        "closed_mean": 83.0,
+        "standalone_mean": 82.5,
+        "difference": -0.5,
+        "closed_debates": 1,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "Joe Schmid",
+        "closed_mean": 88.5,
+        "standalone_mean": 88.0,
+        "difference": -0.5,
+        "closed_debates": 2,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Jordan Peterson",
+        "closed_mean": 75.0,
+        "standalone_mean": 74.5,
+        "difference": -0.5,
+        "closed_debates": 3,
+        "standalone_debates": 2
+      },
+      {
+        "speaker": "James White",
+        "closed_mean": 79.0,
+        "standalone_mean": 80.0,
+        "difference": 1.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Tom Jump",
+        "closed_mean": 79.0,
+        "standalone_mean": 80.0,
+        "difference": 1.0,
+        "closed_debates": 2,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Sam Harris",
+        "closed_mean": 80.6,
+        "standalone_mean": 83.0,
+        "difference": 2.4000000000000057,
+        "closed_debates": 5,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Michael Jones",
+        "closed_mean": 74.77777777777777,
+        "standalone_mean": 78.0,
+        "difference": 3.2222222222222285,
+        "closed_debates": 9,
+        "standalone_debates": 1
+      },
+      {
+        "speaker": "Tyler Vela",
+        "closed_mean": 76.0,
+        "standalone_mean": 83.0,
+        "difference": 7.0,
+        "closed_debates": 1,
+        "standalone_debates": 1
+      }
+    ],
+    "mean_difference": -2.811664106502815,
+    "median_difference": -3.0,
+    "negative": 26,
+    "positive": 5,
+    "zero": 0,
+    "exact_two_sided_sign_probability": 0.00019219517707824707
+  },
+  "correlations": [
+    {
+      "cohort": "closed",
+      "population": "all moves",
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "relevance_correlation": -0.007571543460233203
+    },
+    {
+      "cohort": "closed",
+      "population": "all moves",
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "relevance_correlation": 0.033565353966228846
+    },
+    {
+      "cohort": "closed",
+      "population": "all moves",
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "relevance_correlation": 0.1554185196195336
+    },
+    {
+      "cohort": "closed",
+      "population": "all moves",
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "relevance_correlation": 1.0
+    },
+    {
+      "cohort": "closed",
+      "population": "all moves",
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "relevance_correlation": -0.014506718162008284
+    },
+    {
+      "cohort": "closed",
+      "population": "all moves",
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "relevance_correlation": -0.03723938001734758
+    },
+    {
+      "cohort": "closed",
+      "population": "repeated-speaker moves",
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "relevance_correlation": 0.01836706080333009
+    },
+    {
+      "cohort": "closed",
+      "population": "repeated-speaker moves",
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "relevance_correlation": 0.07576322130990594
+    },
+    {
+      "cohort": "closed",
+      "population": "repeated-speaker moves",
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "relevance_correlation": 0.17631752227754133
+    },
+    {
+      "cohort": "closed",
+      "population": "repeated-speaker moves",
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "relevance_correlation": 1.0
+    },
+    {
+      "cohort": "closed",
+      "population": "repeated-speaker moves",
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "relevance_correlation": 0.01133122470139392
+    },
+    {
+      "cohort": "closed",
+      "population": "repeated-speaker moves",
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "relevance_correlation": -0.023430648948896588
+    },
+    {
+      "cohort": "standalone",
+      "population": "all moves",
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "relevance_correlation": 0.7021387024311987
+    },
+    {
+      "cohort": "standalone",
+      "population": "all moves",
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "relevance_correlation": 0.650613171639158
+    },
+    {
+      "cohort": "standalone",
+      "population": "all moves",
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "relevance_correlation": 0.7806614442910611
+    },
+    {
+      "cohort": "standalone",
+      "population": "all moves",
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "relevance_correlation": 0.9999999999999999
+    },
+    {
+      "cohort": "standalone",
+      "population": "all moves",
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "relevance_correlation": 0.5810902107223425
+    },
+    {
+      "cohort": "standalone",
+      "population": "all moves",
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "relevance_correlation": 0.40488626271072614
+    },
+    {
+      "cohort": "standalone",
+      "population": "repeated-speaker moves",
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "relevance_correlation": 0.6851291384648129
+    },
+    {
+      "cohort": "standalone",
+      "population": "repeated-speaker moves",
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "relevance_correlation": 0.6439706753857434
+    },
+    {
+      "cohort": "standalone",
+      "population": "repeated-speaker moves",
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "relevance_correlation": 0.7845109790035748
+    },
+    {
+      "cohort": "standalone",
+      "population": "repeated-speaker moves",
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "relevance_correlation": 1.0
+    },
+    {
+      "cohort": "standalone",
+      "population": "repeated-speaker moves",
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "relevance_correlation": 0.5545050418123038
+    },
+    {
+      "cohort": "standalone",
+      "population": "repeated-speaker moves",
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "relevance_correlation": 0.3695189597018107
+    }
+  ],
+  "pca": {
+    "closed": {
+      "variance_shares": [
+        0.56937793556989,
+        0.18138972678694554,
+        0.12036912058228964,
+        0.07487065258042923,
+        0.03646417231845755,
+        0.017528392161987975
+      ],
+      "first_component_share": 0.56937793556989
+    },
+    "standalone": {
+      "variance_shares": [
+        0.713825767846107,
+        0.11965153326711063,
+        0.06865543875944606,
+        0.044149462097967364,
+        0.03272188023501798,
+        0.02099591779435092
+      ],
+      "first_component_share": 0.713825767846107
+    }
+  },
+  "tag_summary": [
+    {
+      "cohort": "closed",
+      "label": "Earlier closed-findings generation",
+      "debates": 179,
+      "public_moves": 3423,
+      "tagged_moves": 87,
+      "tag_instances": 87,
+      "tagged_move_rate": 0.025416301489921123
+    },
+    {
+      "cohort": "standalone",
+      "label": "Later standalone generation",
+      "debates": 33,
+      "public_moves": 1026,
+      "tagged_moves": 187,
+      "tag_instances": 196,
+      "tagged_move_rate": 0.18226120857699804
+    },
+    {
+      "cohort": "no_ledger",
+      "label": "Published without locked ledger",
+      "debates": 16,
+      "public_moves": 210,
+      "tagged_moves": 62,
+      "tag_instances": 63,
+      "tagged_move_rate": 0.29523809523809524
+    }
+  ],
+  "tag_rate_ratio_standalone_to_closed": 7.1710358271156815,
+  "latest_28_tagged_move_rate": 0.1882750845546787,
+  "score_bins": [
+    {
+      "label": "1-25",
+      "lower": 1,
+      "upper": 25,
+      "mean_side_score": 80.25,
+      "side_scores": 48,
+      "debates": 24,
+      "generation": "closed"
+    },
+    {
+      "label": "26-50",
+      "lower": 26,
+      "upper": 50,
+      "mean_side_score": 81.86363636363636,
+      "side_scores": 44,
+      "debates": 22,
+      "generation": "closed"
+    },
+    {
+      "label": "51-75",
+      "lower": 51,
+      "upper": 75,
+      "mean_side_score": 81.47916666666667,
+      "side_scores": 48,
+      "debates": 24,
+      "generation": "closed"
+    },
+    {
+      "label": "76-100",
+      "lower": 76,
+      "upper": 100,
+      "mean_side_score": 82.04545454545455,
+      "side_scores": 44,
+      "debates": 22,
+      "generation": "closed"
+    },
+    {
+      "label": "101-125",
+      "lower": 101,
+      "upper": 125,
+      "mean_side_score": 80.72727272727273,
+      "side_scores": 44,
+      "debates": 22,
+      "generation": "closed"
+    },
+    {
+      "label": "126-150",
+      "lower": 126,
+      "upper": 150,
+      "mean_side_score": 81.5625,
+      "side_scores": 48,
+      "debates": 24,
+      "generation": "closed"
+    },
+    {
+      "label": "151-175",
+      "lower": 151,
+      "upper": 175,
+      "mean_side_score": 80.25,
+      "side_scores": 44,
+      "debates": 22,
+      "generation": "closed"
+    },
+    {
+      "label": "176-195",
+      "lower": 176,
+      "upper": 195,
+      "mean_side_score": 82.65789473684211,
+      "side_scores": 38,
+      "debates": 19,
+      "generation": "closed"
+    },
+    {
+      "label": "196-205",
+      "lower": 196,
+      "upper": 205,
+      "mean_side_score": 75.9,
+      "side_scores": 20,
+      "debates": 10,
+      "generation": "standalone"
+    },
+    {
+      "label": "206-215",
+      "lower": 206,
+      "upper": 215,
+      "mean_side_score": 79.5,
+      "side_scores": 20,
+      "debates": 10,
+      "generation": "standalone"
+    },
+    {
+      "label": "216-225",
+      "lower": 216,
+      "upper": 225,
+      "mean_side_score": 78.55,
+      "side_scores": 20,
+      "debates": 10,
+      "generation": "standalone"
+    },
+    {
+      "label": "226-228",
+      "lower": 226,
+      "upper": 228,
+      "mean_side_score": 80.0,
+      "side_scores": 6,
+      "debates": 3,
+      "generation": "standalone"
+    }
+  ],
+  "checks": {
+    "cohort_number_separation": {
+      "closed_max": 195,
+      "standalone_min": 196
+    },
+    "missing_dimension_values": 0,
+    "duplicate_move_ids_within_debate": 0
+  }
+}
