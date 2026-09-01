@@ -5,7 +5,7 @@
 - Question: Do the published debate assessments evidence consistently stronger non-theistic arguments than theistic arguments?
 - Audience: product stakeholders / general SLUGFESTER readers.
 - Decision-useful answer: distinguish a real corpus pattern from claims about worldview truth or a representative population.
-- Source snapshot: `src/data/debates.js` at commit `179605addbb65ebf36e61f84ef35017eded7c783`, reviewed September 1, 2026.
+- Source snapshot: `src/data/debates.js` at commit `32c4176bc3d755345200e09e230467eaa3224cb3`, reviewed September 1, 2026.
 - Unit: one current-method dyadic debate. Section comparisons are nested corroboration.
 - Comparison: non-theistic/skeptical side score minus theistic/religious side score.
 
@@ -24,7 +24,7 @@ No required role is omitted. Definitions are merged into the first findings sect
 
 - Report segment: “The gap is large at both debate and section level.”
 - Analytical question: How often does each side receive the higher overall debate score?
-- Takeaway: The non-theistic side scores higher in 144 of 169 classified debates.
+- Takeaway: The non-theistic side scores higher in 145 of 169 classified debates.
 - Family and variant: comparison and ranking; horizontal categorical bar.
 - Data sufficiency: 3 mutually exclusive outcome categories covering all 169 debates; exact counts and shares retained.
 - Artifact chart: native `bar`, nominal outcome on x, debate count on y, horizontal orientation, value labels enabled.

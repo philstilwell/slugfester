@@ -1,0 +1,477 @@
+{
+  "snapshot": {
+    "analysis_date": "2026-09-01",
+    "source_commit": "32c4176bc3d755345200e09e230467eaa3224cb3",
+    "taxonomy": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv",
+    "ledger_source": "docs/assessment-ledgers/*.json and their locked final-ledger evidence",
+    "unit": "One debate-side dimension mean is calculated by importance-weighting moves within sections and applying the locked section weights; paired differences are then averaged across debates."
+  },
+  "data_quality": {
+    "classified_debates": 169,
+    "adapter_ledgers": 169,
+    "legacy_closed_findings_debates": 146,
+    "standalone_final_dimension_debates": 23,
+    "scored_moves": 3502,
+    "theist_moves": 1746,
+    "non_theist_moves": 1756,
+    "move_score_checks": 3502,
+    "section_score_checks": 1778,
+    "official_score_checks": 338,
+    "missing_dimension_values": 0,
+    "nonzero_burden_completion_adjustments": 0
+  },
+  "primary": {
+    "n_debates": 169,
+    "theist_mean_score": 77.44970414201184,
+    "non_theist_mean_score": 83.79881656804734,
+    "mean_margin": 6.349112426035503,
+    "median_margin": 6.0,
+    "non_theist_higher": 145,
+    "ties": 5,
+    "theist_higher": 19
+  },
+  "dimension_decomposition": [
+    {
+      "dimension": "logicalCoherence",
+      "label": "Logical coherence",
+      "weight": 0.25,
+      "non_theist_mean": 83.3277801685494,
+      "theist_mean": 76.06850409206179,
+      "dimension_gap": 7.259276076487609,
+      "score_gap_contribution": 1.8148190191219038,
+      "share_of_official_gap": 0.2858382238877929
+    },
+    {
+      "dimension": "evidenceWarrant",
+      "label": "Evidence and warrant",
+      "weight": 0.2,
+      "non_theist_mean": 75.15162437562438,
+      "theist_mean": 66.59101960219269,
+      "dimension_gap": 8.560604773431692,
+      "score_gap_contribution": 1.7121209546863394,
+      "share_of_official_gap": 0.26966303946131537
+    },
+    {
+      "dimension": "responsiveness",
+      "label": "Responsiveness",
+      "weight": 0.2,
+      "non_theist_mean": 90.25951166781937,
+      "theist_mean": 83.76023037859576,
+      "dimension_gap": 6.499281289223603,
+      "score_gap_contribution": 1.2998562578447197,
+      "share_of_official_gap": 0.2047303891665961
+    },
+    {
+      "dimension": "relevanceBurden",
+      "label": "Relevance and burden",
+      "weight": 0.15,
+      "non_theist_mean": 85.32241305489383,
+      "theist_mean": 83.9112735277543,
+      "dimension_gap": 1.4111395271395253,
+      "score_gap_contribution": 0.21167092907092905,
+      "share_of_official_gap": 0.03333866450418174
+    },
+    {
+      "dimension": "precisionClarity",
+      "label": "Precision and clarity",
+      "weight": 0.1,
+      "non_theist_mean": 87.24087241604549,
+      "theist_mean": 81.99721743000589,
+      "dimension_gap": 5.243654986039601,
+      "score_gap_contribution": 0.5243654986039603,
+      "share_of_official_gap": 0.0825887877577533
+    },
+    {
+      "dimension": "calibrationCharity",
+      "label": "Calibration and charity",
+      "weight": 0.1,
+      "non_theist_mean": 82.22857023105101,
+      "theist_mean": 73.77454939291478,
+      "dimension_gap": 8.45402083813623,
+      "score_gap_contribution": 0.8454020838136223,
+      "share_of_official_gap": 0.13315279791659101
+    }
+  ],
+  "rounding_residual": -0.059122317105971774,
+  "burden_completion_adjustment_gap": 0.0,
+  "dimension_band_summaries": {
+    "theist": [
+      {
+        "dimension": "logicalCoherence",
+        "label": "Logical coherence",
+        "n_moves": 1746,
+        "mean": 75.9192439862543,
+        "below_70": 428,
+        "below_70_share": 0.24513172966781213,
+        "below_80": 1084,
+        "below_80_share": 0.6208476517754868
+      },
+      {
+        "dimension": "evidenceWarrant",
+        "label": "Evidence and warrant",
+        "n_moves": 1746,
+        "mean": 66.14662084765177,
+        "below_70": 1073,
+        "below_70_share": 0.6145475372279496,
+        "below_80": 1627,
+        "below_80_share": 0.93184421534937
+      },
+      {
+        "dimension": "responsiveness",
+        "label": "Responsiveness",
+        "n_moves": 1746,
+        "mean": 83.07331042382589,
+        "below_70": 174,
+        "below_70_share": 0.09965635738831616,
+        "below_80": 657,
+        "below_80_share": 0.37628865979381443
+      },
+      {
+        "dimension": "relevanceBurden",
+        "label": "Relevance and burden",
+        "n_moves": 1746,
+        "mean": 82.73424971363116,
+        "below_70": 323,
+        "below_70_share": 0.1849942726231386,
+        "below_80": 489,
+        "below_80_share": 0.2800687285223368
+      },
+      {
+        "dimension": "precisionClarity",
+        "label": "Precision and clarity",
+        "n_moves": 1746,
+        "mean": 81.7348224513173,
+        "below_70": 73,
+        "below_70_share": 0.0418098510882016,
+        "below_80": 928,
+        "below_80_share": 0.5315005727376861
+      },
+      {
+        "dimension": "calibrationCharity",
+        "label": "Calibration and charity",
+        "n_moves": 1746,
+        "mean": 73.88545246277205,
+        "below_70": 634,
+        "below_70_share": 0.3631156930126002,
+        "below_80": 1178,
+        "below_80_share": 0.6746849942726232
+      }
+    ],
+    "non_theist": [
+      {
+        "dimension": "logicalCoherence",
+        "label": "Logical coherence",
+        "n_moves": 1756,
+        "mean": 83.06662870159454,
+        "below_70": 122,
+        "below_70_share": 0.06947608200455581,
+        "below_80": 460,
+        "below_80_share": 0.2619589977220957
+      },
+      {
+        "dimension": "evidenceWarrant",
+        "label": "Evidence and warrant",
+        "n_moves": 1756,
+        "mean": 74.67425968109339,
+        "below_70": 410,
+        "below_70_share": 0.23348519362186787,
+        "below_80": 1225,
+        "below_80_share": 0.6976082004555809
+      },
+      {
+        "dimension": "responsiveness",
+        "label": "Responsiveness",
+        "n_moves": 1756,
+        "mean": 89.41856492027335,
+        "below_70": 108,
+        "below_70_share": 0.06150341685649203,
+        "below_80": 309,
+        "below_80_share": 0.17596810933940774
+      },
+      {
+        "dimension": "relevanceBurden",
+        "label": "Relevance and burden",
+        "n_moves": 1756,
+        "mean": 84.44476082004556,
+        "below_70": 263,
+        "below_70_share": 0.14977220956719817,
+        "below_80": 340,
+        "below_80_share": 0.19362186788154898
+      },
+      {
+        "dimension": "precisionClarity",
+        "label": "Precision and clarity",
+        "n_moves": 1756,
+        "mean": 86.85250569476082,
+        "below_70": 31,
+        "below_70_share": 0.01765375854214123,
+        "below_80": 516,
+        "below_80_share": 0.2938496583143508
+      },
+      {
+        "dimension": "calibrationCharity",
+        "label": "Calibration and charity",
+        "n_moves": 1756,
+        "mean": 81.88154897494306,
+        "below_70": 232,
+        "below_70_share": 0.13211845102505695,
+        "below_80": 612,
+        "below_80_share": 0.34851936218678814
+      }
+    ]
+  },
+  "evidence_bands": {
+    "theist": {
+      "n_moves": 1746,
+      "below_50": 74,
+      "below_50_share": 0.042382588774341354,
+      "below_70": 1073,
+      "below_70_share": 0.6145475372279496,
+      "below_80": 1627,
+      "below_80_share": 0.93184421534937,
+      "mean": 66.14662084765177
+    },
+    "non_theist": {
+      "n_moves": 1756,
+      "below_50": 11,
+      "below_50_share": 0.006264236902050114,
+      "below_70": 410,
+      "below_70_share": 0.23348519362186787,
+      "below_80": 1225,
+      "below_80_share": 0.6976082004555809,
+      "mean": 74.67425968109339
+    }
+  },
+  "subset_checks": [
+    {
+      "subset": "All scored moves",
+      "theist_moves": 1746,
+      "non_theist_moves": 1756,
+      "evidence_warrant_gap": 8.527638833441614,
+      "logical_coherence_gap": 7.1473847153402374,
+      "responsiveness_gap": 6.345254496447467,
+      "calibration_charity_gap": 7.9960965121710075,
+      "theist_evidence_below_70_share": 0.6145475372279496,
+      "non_theist_evidence_below_70_share": 0.23348519362186787
+    },
+    {
+      "subset": "Constructive moves only",
+      "theist_moves": 548,
+      "non_theist_moves": 375,
+      "evidence_warrant_gap": 8.162077858880778,
+      "logical_coherence_gap": 7.23431630170316,
+      "responsiveness_gap": 2.323270072992699,
+      "calibration_charity_gap": 7.919834549878345,
+      "theist_evidence_below_70_share": 0.6642335766423357,
+      "non_theist_evidence_below_70_share": 0.2826666666666667
+    },
+    {
+      "subset": "Replies only",
+      "theist_moves": 1198,
+      "non_theist_moves": 1381,
+      "evidence_warrant_gap": 8.450057965303017,
+      "logical_coherence_gap": 6.859282124806128,
+      "responsiveness_gap": 7.554022574433134,
+      "calibration_charity_gap": 7.513680174173956,
+      "theist_evidence_below_70_share": 0.5918196994991652,
+      "non_theist_evidence_below_70_share": 0.22013034033309195
+    },
+    {
+      "subset": "Load-bearing moves only",
+      "theist_moves": 1256,
+      "non_theist_moves": 1307,
+      "evidence_warrant_gap": 9.248751821402635,
+      "logical_coherence_gap": 7.866334631260386,
+      "responsiveness_gap": 6.579971759121634,
+      "calibration_charity_gap": 8.954359548535805,
+      "theist_evidence_below_70_share": 0.6114649681528662,
+      "non_theist_evidence_below_70_share": 0.18515684774292274
+    },
+    {
+      "subset": "Debates with theist side stored as con",
+      "theist_moves": 218,
+      "non_theist_moves": 223,
+      "evidence_warrant_gap": 5.06288312008887,
+      "logical_coherence_gap": 3.994034640227099,
+      "responsiveness_gap": 4.075883490352567,
+      "calibration_charity_gap": 1.3823795614432015,
+      "theist_evidence_below_70_share": 0.5825688073394495,
+      "non_theist_evidence_below_70_share": 0.3273542600896861
+    }
+  ],
+  "legacy_closed_findings": {
+    "coverage": {
+      "debates": 146,
+      "moves": 2800,
+      "theist_moves": 1393,
+      "non_theist_moves": 1407,
+      "note": "These closed calibration, response-class, precision, and charity findings are available for 146 of the 169 debates; the remaining 23 expose the same six final dimensions."
+    },
+    "calibration": {
+      "theist": {
+        "moves": 1393,
+        "any_overstatement": 1014,
+        "any_overstatement_share": 0.7279253409906676,
+        "material_or_radical_overstatement": 506,
+        "material_or_radical_overstatement_share": 0.36324479540559945,
+        "warrant_fit_counts": {
+          "slightly-overstated": 508,
+          "matched": 379,
+          "materially-overstated": 477,
+          "radically-overstated": 29
+        }
+      },
+      "non_theist": {
+        "moves": 1407,
+        "any_overstatement": 569,
+        "any_overstatement_share": 0.40440653873489696,
+        "material_or_radical_overstatement": 141,
+        "material_or_radical_overstatement_share": 0.10021321961620469,
+        "warrant_fit_counts": {
+          "matched": 838,
+          "slightly-overstated": 428,
+          "materially-overstated": 130,
+          "radically-overstated": 11
+        }
+      }
+    },
+    "response_contact": {
+      "theist": {
+        "replies": 971,
+        "full_diagnostic_or_justified_reframe": 541,
+        "full_diagnostic_or_justified_reframe_share": 0.557157569515963,
+        "partial_or_nonanswer": 430,
+        "partial_or_nonanswer_share": 0.4428424304840371,
+        "response_class_counts": {
+          "full-answer": 400,
+          "partial-answer": 312,
+          "relevant-nonanswer": 113,
+          "diagnostic-defeat": 93,
+          "justified-reframe": 48,
+          "nonanswer": 5
+        }
+      },
+      "non_theist": {
+        "replies": 1169,
+        "full_diagnostic_or_justified_reframe": 923,
+        "full_diagnostic_or_justified_reframe_share": 0.7895637296834902,
+        "partial_or_nonanswer": 246,
+        "partial_or_nonanswer_share": 0.21043627031650983,
+        "response_class_counts": {
+          "relevant-nonanswer": 87,
+          "full-answer": 523,
+          "diagnostic-defeat": 371,
+          "partial-answer": 157,
+          "justified-reframe": 29,
+          "nonanswer": 2
+        }
+      }
+    },
+    "charity": {
+      "theist": {
+        "tested_moves": 1143,
+        "below_70": 510,
+        "below_70_share": 0.4461942257217848
+      },
+      "non_theist": {
+        "tested_moves": 1284,
+        "below_70": 228,
+        "below_70_share": 0.17757009345794392
+      }
+    }
+  },
+  "examples": [
+    {
+      "number": "03",
+      "debate": "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?",
+      "speaker": "Dinesh D'Souza",
+      "move_id": "con-c201-prevalent-religious-experience",
+      "pattern": "Prevalence substituted for reliability",
+      "diagnostic": "The prevalence of diverse religious experiences is treated as evidence for a common divine object without establishing a shared reliable source or comparing live error explanations.",
+      "proposition": "The continuing prevalence of religious experience is better explained by a real divine object than by treating nearly all such experience as mass error or as an obsolete response to primitive ignorance.",
+      "importance": 3,
+      "logical_coherence": 58,
+      "evidence_warrant": 53,
+      "responsiveness": 76,
+      "calibration_charity": 42
+    },
+    {
+      "number": "03",
+      "debate": "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?",
+      "speaker": "Dinesh D'Souza",
+      "move_id": "con-c008-cell-origin-explanatory-gap",
+      "pattern": "Explanatory gap converted into positive agency evidence",
+      "diagnostic": "Difficulty explaining the first cell is used to raise intelligent causation without a comparative likelihood showing that agency predicts the evidence better.",
+      "proposition": "Evolution between existing life forms does not explain the origin of the first reproductive cell, whose immense complexity makes unguided chemical assembly implausible and supports considering intelligent causation.",
+      "importance": 3,
+      "logical_coherence": 68,
+      "evidence_warrant": 60,
+      "responsiveness": 95,
+      "calibration_charity": 61
+    },
+    {
+      "number": "112",
+      "debate": "Paul Copan vs Stephen Woodford: Is Belief in God Reasonable?",
+      "speaker": "Paul Copan",
+      "move_id": "pro-objective-morality-foundation",
+      "pattern": "Alternatives ruled out too quickly",
+      "diagnostic": "An evolutionary genealogy of moral belief is treated as excluding objective value on naturalism without examining representative naturalistic moral-realist accounts.",
+      "proposition": "If strict naturalism explains moral beliefs only as evolved feelings, it cannot thereby ground objective duties, value, agency, or human dignity.",
+      "importance": 3,
+      "logical_coherence": 70,
+      "evidence_warrant": 61,
+      "responsiveness": 87,
+      "calibration_charity": 58
+    },
+    {
+      "number": "191",
+      "debate": "Michael Ruse vs Fuz Rana: Evolution or Design at Life's Origin?",
+      "speaker": "Fuz Rana",
+      "move_id": "con-cellular-complexity-agency-thesis",
+      "pattern": "No discriminating test for the preferred explanation",
+      "diagnostic": "Current limits of natural origin accounts are turned into an agency inference before the argument states observations that would distinguish agency from difficult natural causation.",
+      "proposition": "Evidence concerning cellular organization indicates that natural processes are insufficient to explain the cell's complexity and instead points to intelligent agency.",
+      "importance": 3,
+      "logical_coherence": 77,
+      "evidence_warrant": 63,
+      "responsiveness": 81,
+      "calibration_charity": 75
+    },
+    {
+      "number": "219",
+      "debate": "Is God a Figment of Our Imagination? Michael Shermer vs. Alister McGrath (2017)",
+      "speaker": "Alister McGrath",
+      "move_id": "ultimate-beliefs-beyond-proof",
+      "pattern": "Epistemic exemption left undefended",
+      "diagnostic": "Meaning-conferring ultimate beliefs are placed beyond proof without a principle showing why significance changes evidential status or keeps the belief answerable to reality.",
+      "proposition": "The beliefs that confer meaning, purpose, and value lie beyond the kind of proof available for shallower truths.",
+      "importance": 3,
+      "logical_coherence": 60,
+      "evidence_warrant": 52,
+      "responsiveness": 77,
+      "calibration_charity": 60
+    }
+  ],
+  "causal_assessment": {
+    "verified": [
+      "Evidence and warrant is a large direct contributor to the observed score gap.",
+      "The evidence gap persists within constructive moves, replies, load-bearing moves, and debates where the theist side is stored as con.",
+      "Theist moves are more often scored below 70 on evidence and more often record overstated force relative to warrant in the closed-findings cohort.",
+      "Distinct logical-bridge and response-contact weaknesses contribute at least as much as direct evidence weakness."
+    ],
+    "not_established": "The records do not identify faith commitment as the cause of these weaknesses. They score transcript performance and do not measure each speaker's private epistemic norms, prior faith commitment, preparation, topic difficulty, or counterfactual performance under another worldview.",
+    "needed_for_causal_test": "Blind-code premise source and evidential standard before revealing side, match claims by topic and burden, and test whether faith-sourced premises predict lower warrant ratings after controlling for speaker, role, and debate."
+  },
+  "validation": {
+    "overall_assessment": "Share with caveats",
+    "reconciled": "The six mean dimension contributions, zero burden-adjustment gap, and the rounding residual sum exactly to the corrected 6.3491-point official mean margin.",
+    "required_caveats": [
+      "The corpus is selected rather than randomly sampled.",
+      "Debates and moves are not statistically independent because speakers repeat and moves are nested within debates.",
+      "The theist side is stored as pro in 149 of 169 debates, although role- and orientation-restricted checks preserve the evidence gap.",
+      "The 10% calibration/charity dimension combines overclaiming with representational fairness; its full-corpus contribution cannot be assigned wholly to substantiation.",
+      "The scores are AI-assisted judgments under a fixed rubric, not measurements of worldview truth or speaker sincerity."
+    ],
+    "claim_boundary": "The data support a descriptive claim that incomplete warrant, overextended inference, weaker response contact, and overstatement are concentrated on the theist side in this assessed corpus. They do not establish that faith caused the pattern."
+  }
+}

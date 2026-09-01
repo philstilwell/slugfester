@@ -1,0 +1,613 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Why Do the Theist Sides Score Lower?",
+    "description": "A move-level diagnosis of the SLUGFESTER theist/non-theist score gap.",
+    "generatedAt": "2026-09-01T17:19:00Z",
+    "sources": [
+      {
+        "id": "diagnostic-results",
+        "label": "Executed rubric-dimension diagnosis",
+        "path": "docs/analysis/theist-argument-weaknesses-2026-09-01/results.json",
+        "query": {
+          "engine": "DuckDB",
+          "language": "sql",
+          "description": "Join the corrected position taxonomy to every locked assessment ledger, reconstruct the six final move dimensions, validate the deterministic score path, and decompose the paired overall margin.",
+          "executed_at": "2026-09-01T17:19:00Z",
+          "filters": [
+            "The 169 position-level theist/religious versus non-theist/skeptical dyads in the corrected taxonomy",
+            "All scored moves in the locked ledgers for those debates",
+            "Team and panel scorecards excluded",
+            "Closed calibration and response-class subfields restricted to the 146 debates that expose them"
+          ],
+          "metric_definitions": [
+            "Dimension contribution = mean across debates of (non-theist section- and importance-weighted dimension mean minus theist mean) multiplied by the fixed rubric weight.",
+            "Evidence below-70 share = moves with evidence/warrant below 70 divided by all scored moves on that side.",
+            "Any overstatement = slightly-, materially-, or radically-overstated warrant fit in the locked calibration finding.",
+            "Strong reply contact = full answer, diagnostic defeat, or justified reframe among moves classified as replies."
+          ],
+          "tables_used": [
+            "docs/analysis/theist-argument-weaknesses-2026-09-01/results.json"
+          ],
+          "sql": "SELECT * FROM read_json_auto('docs/analysis/theist-argument-weaknesses-2026-09-01/results.json')"
+        }
+      },
+      {
+        "id": "scoring-rubric",
+        "label": "SLUGFESTER reassessment rubric",
+        "path": "docs/reassessment-rubric-v4.0.md"
+      },
+      {
+        "id": "corrected-taxonomy",
+        "label": "Corrected position taxonomy",
+        "path": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv"
+      }
+    ],
+    "cards": [
+      {
+        "id": "evidence-contribution-card",
+        "description": "Direct score-point contribution of evidence/warrant to the mean paired 6.35-point gap.",
+        "dataset": "headline_metrics",
+        "sourceId": "diagnostic-results",
+        "metrics": [
+          {
+            "label": "Evidence contribution",
+            "field": "evidence_contribution",
+            "format": "number",
+            "signed": true
+          },
+          {
+            "label": "Share of gap",
+            "field": "evidence_share",
+            "format": "percent"
+          }
+        ]
+      },
+      {
+        "id": "weak-evidence-card",
+        "description": "Share of all theist-side moves below the rubric's 70-point evidence threshold.",
+        "dataset": "headline_metrics",
+        "sourceId": "diagnostic-results",
+        "metrics": [
+          {
+            "label": "Theist moves below 70",
+            "field": "theist_below_70",
+            "format": "percent"
+          },
+          {
+            "label": "Non-theist comparison",
+            "field": "non_theist_below_70",
+            "format": "percent"
+          }
+        ]
+      },
+      {
+        "id": "overstatement-card",
+        "description": "Share of theist moves whose asserted force exceeds supplied warrant in the 146-debate closed-findings cohort.",
+        "dataset": "headline_metrics",
+        "sourceId": "diagnostic-results",
+        "metrics": [
+          {
+            "label": "Theist moves overstated",
+            "field": "theist_overstated",
+            "format": "percent"
+          },
+          {
+            "label": "Non-theist comparison",
+            "field": "non_theist_overstated",
+            "format": "percent"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "dimension-contribution-chart",
+        "title": "Where the 6.35-point gap comes from",
+        "subtitle": "Mean paired score-point contribution; positive values favor the non-theist side",
+        "showDescription": true,
+        "intent": "comparison",
+        "question": "How much does each fixed rubric dimension contribute to the overall score gap?",
+        "rationale": "Six labeled horizontal bars make the additive contribution and ordering of the fixed dimensions directly comparable.",
+        "comparisonContext": {
+          "denominator": "169 classified debates",
+          "grain": "one paired debate-side dimension mean",
+          "normalization": "section- and importance-weighted within debate; averaged across debates",
+          "semanticFamily": "contribution to non-theist minus theist overall score",
+          "unit": "score points"
+        },
+        "type": "bar",
+        "dataset": "dimension_contributions",
+        "sourceId": "diagnostic-results",
+        "encodings": {
+          "x": {
+            "field": "label",
+            "type": "nominal",
+            "label": "Rubric dimension"
+          },
+          "y": {
+            "field": "score_gap_contribution",
+            "type": "quantitative",
+            "aggregate": "none",
+            "format": "number",
+            "label": "Score-point contribution"
+          },
+          "tooltip": [
+            {
+              "field": "dimension_gap",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Raw dimension gap"
+            },
+            {
+              "field": "share_of_official_gap",
+              "type": "quantitative",
+              "format": "percent",
+              "label": "Share of official gap"
+            }
+          ]
+        },
+        "yAxisTitle": "Score-point contribution",
+        "valueFormat": "number",
+        "layout": "full",
+        "maxRows": 6,
+        "palette": {
+          "kind": "sequential",
+          "name": "blue"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "settings": {
+          "orientation": "horizontal",
+          "groupMode": "single",
+          "sort": "custom",
+          "showValues": true
+        },
+        "surface": {
+          "surface": "card",
+          "interactiveLegend": false,
+          "showControls": false,
+          "viewMode": "both"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "evidence-comparison-table",
+        "title": "Evidence and warrant by side",
+        "subtitle": "Below 70 means assertion, anecdote, authority, selective examples, or speculation carries substantial weight",
+        "showDescription": true,
+        "dataset": "evidence_comparison",
+        "defaultSort": {
+          "field": "below_70_share",
+          "direction": "desc"
+        },
+        "density": "spacious",
+        "sourceId": "diagnostic-results",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "side",
+            "label": "Side",
+            "type": "text"
+          },
+          {
+            "field": "moves",
+            "label": "Moves",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "mean_evidence",
+            "label": "Mean evidence",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "below_70_share",
+            "label": "Below 70",
+            "type": "number",
+            "format": "percent"
+          },
+          {
+            "field": "below_80_share",
+            "label": "Below 80",
+            "type": "number",
+            "format": "percent"
+          }
+        ]
+      },
+      {
+        "id": "structural-findings-table",
+        "title": "What the closed findings say",
+        "subtitle": "Subfield diagnostics available for 146 of the 169 debates",
+        "showDescription": true,
+        "dataset": "structural_findings",
+        "defaultSort": {
+          "field": "theist_share",
+          "direction": "desc"
+        },
+        "density": "spacious",
+        "sourceId": "diagnostic-results",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "diagnostic",
+            "label": "Diagnostic",
+            "type": "text"
+          },
+          {
+            "field": "theist_share",
+            "label": "Theist",
+            "type": "number",
+            "format": "percent"
+          },
+          {
+            "field": "non_theist_share",
+            "label": "Non-theist",
+            "type": "number",
+            "format": "percent"
+          },
+          {
+            "field": "coverage",
+            "label": "Coverage",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "examples-table",
+        "title": "Representative locations of the weakness",
+        "subtitle": "Illustrative load-bearing theist-side moves; examples diagnose patterns but do not determine prevalence",
+        "showDescription": true,
+        "dataset": "examples",
+        "defaultSort": {
+          "field": "evidence",
+          "direction": "asc"
+        },
+        "density": "spacious",
+        "sourceId": "diagnostic-results",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "pattern",
+            "label": "Pattern",
+            "type": "text"
+          },
+          {
+            "field": "example",
+            "label": "Example",
+            "type": "text"
+          },
+          {
+            "field": "diagnosis",
+            "label": "What is missing",
+            "type": "text"
+          },
+          {
+            "field": "evidence",
+            "label": "Evidence",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "logic",
+            "label": "Logic",
+            "type": "number",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "report-title",
+        "type": "markdown",
+        "body": "# Why Do the Theist Sides Score Lower?",
+        "layout": "full"
+      },
+      {
+        "id": "executive-summary",
+        "type": "markdown",
+        "body": "## Executive Summary\n\n- **Yes: incomplete substantiation is a major, directly measured weakness.** Evidence and warrant accounts for 1.71 points, or 27.0%, of the corrected 6.35-point mean gap.\n- **It is not the whole explanation, or quite the largest component.** Logical coherence contributes 1.81 points; responsiveness contributes 1.30. Together these show missing inferential bridges and weaker contact with objections in addition to thin evidence.\n- **The pattern is not just an affirmative-burden artifact.** The evidence gap remains in constructives, replies, load-bearing moves, and the 20 debates where the theist side is `con`.\n- **The causal claim about faith remains unproven.** The ledgers show where the arguments fail; they do not measure whether faith commitment caused those failures.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "headline-metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "evidence-contribution-card",
+          "weak-evidence-card",
+          "overstatement-card"
+        ],
+        "layout": "full"
+      },
+      {
+        "id": "method-definition",
+        "type": "markdown",
+        "body": "## What was measured\n\nThe diagnosis uses every scored move in the corrected 169-debate comparison: 1,746 theist-side moves and 1,756 non-theist-side moves. Within each debate, moves are weighted by their locked importance and sections by their locked share. The six fixed rubric dimensions are then decomposed so their contributions add back to the official score gap.\n\nA score below 70 for evidence/warrant has a specific rubric meaning: assertion, anecdote, authority, selective examples, or speculation carries substantial argumentative weight. This is therefore a direct operational test of incomplete substantiation, not a keyword count.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "decomposition-finding",
+        "type": "markdown",
+        "body": "## Where the score gap is created\n\n**Two weaknesses dominate.** Logical coherence contributes 1.81 points (28.6% of the gap) and evidence/warrant contributes 1.71 (27.0%). Responsiveness adds 1.30 (20.5%). Calibration/charity, precision, and relevance/burden contribute the remaining 1.58 points before the −0.06 rounding residual.\n\nThis matters for the hypothesis: direct substantiation explains about a quarter of the gap, while separate failures in the inference from premise to conclusion explain slightly more. The rubric explicitly keeps those defects separate.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "dimension-chart-block",
+        "type": "chart",
+        "chartId": "dimension-contribution-chart",
+        "layout": "full"
+      },
+      {
+        "id": "evidence-finding",
+        "type": "markdown",
+        "body": "## The substantiation deficit is broad and load-bearing\n\n**61.5% of theist moves fall below 70 on evidence/warrant, versus 23.3% of non-theist moves.** Among importance-3 moves—the most load-bearing—the corresponding shares are 61.1% and 18.5%.\n\nThe gap is nearly the same inside constructive moves (8.16 dimension points) and replies (8.45), and remains 5.06 points in the 20 debates where the theist side is `con`. This weakens the explanation that the evidence gap is merely the cost of usually arguing the affirmative.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "evidence-table-block",
+        "type": "table",
+        "tableId": "evidence-comparison-table",
+        "layout": "full"
+      },
+      {
+        "id": "structural-finding",
+        "type": "markdown",
+        "body": "## The exact weaknesses extend beyond missing evidence\n\n- **Inferential bridge:** the conclusion often outruns what the premises establish—possibility becomes probability, compatibility becomes explanation, or a difficulty for a natural account becomes positive evidence for a divine one.\n- **Rival comparison:** alternatives are dismissed without representative treatment, comparative likelihoods, base rates, independence checks, or a discriminating prediction.\n- **Response contact:** in the 146-debate closed-findings cohort, 55.7% of theist replies fully answer, diagnostically defeat, or justifiably reframe the target, versus 79.0% of non-theist replies.\n- **Calibration:** 72.8% of theist moves are rated at least slightly overstated relative to warrant, versus 40.4%; material or radical overstatement is 36.3% versus 10.0%.\n- **Precision and charity:** qualifications, scope, and stable terms are more often missing; when charity is tested, ratings below 70 occur in 44.6% of theist moves versus 17.8%.\n- **Not mainly topical drift:** relevance/burden contributes only 0.21 points. The theist moves are usually on the right subject; the larger problem is how the claim is supported, inferred, qualified, and defended.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "structural-table-block",
+        "type": "table",
+        "tableId": "structural-findings-table",
+        "layout": "full"
+      },
+      {
+        "id": "examples-finding",
+        "type": "markdown",
+        "body": "## Where these weaknesses appear in practice\n\nThe examples below show the recurring form of the problem: prevalence treated as reliability, explanatory gaps converted into positive agency evidence, live alternatives ruled out without comparison, and a class of meaningful beliefs placed beyond ordinary evidential demands. They are illustrative locations in the audited record, not a separate frequency estimate.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "examples-table-block",
+        "type": "table",
+        "tableId": "examples-table",
+        "layout": "full"
+      },
+      {
+        "id": "causal-boundary",
+        "type": "markdown",
+        "body": "## What the data say about the faith hypothesis\n\n**Supported:** theist-side transcript performances in this corpus contain substantially more incomplete warrant, overextended inference, partial reply contact, overstatement, and weak representation of alternatives. The pattern is especially strong in evidence/warrant and survives the main role and orientation checks.\n\n**Not established:** that faith-based ideology caused those defects. The assessments do not observe private epistemic standards, prior faith commitment, preparation, topic difficulty, or how the same person would reason under a different worldview. Calling the pattern a ‘bleed-over from faith’ is a plausible interpretation, but it remains a causal hypothesis rather than a result of this dataset.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      },
+      {
+        "id": "recommended-next-steps",
+        "type": "markdown",
+        "body": "## Recommended next steps\n\n1. **Blind-code premise source.** Before revealing side, classify whether a move rests on public evidence, testimony, religious experience, scripture, intuition, conceptual necessity, or inference to the best explanation.\n2. **Match claims by topic and burden.** Compare theist and non-theist constructives and replies within the same topic, importance, and burden tier.\n3. **Estimate the faith-source effect.** Test whether faith-sourced premises predict lower evidence and calibration after accounting for speaker and debate.\n4. **Add human calibration.** Have trained human judges repeat the blind coding and dimension ratings on a stratified subset.",
+        "layout": "full"
+      },
+      {
+        "id": "further-questions",
+        "type": "markdown",
+        "body": "## Further questions\n\n- Is the evidence gap concentrated in religious experience, resurrection history, morality, cosmology, or design arguments?\n- Do a few recurring speakers account for particular weakness types even if they do not account for the overall gap?\n- Are evidential standards applied symmetrically to testimony and historical claims on both sides?\n- Would blind human raters reproduce the same logic, evidence, response, and calibration decomposition?",
+        "layout": "full"
+      },
+      {
+        "id": "caveats-and-assumptions",
+        "type": "markdown",
+        "body": "## Caveats and assumptions\n\n- The corpus is selected rather than randomly sampled; speakers and moves repeat and are not independent.\n- The side classification describes the position argued in the scorecard, not private belief or sincerity.\n- The theist side is `pro` in 149 of 169 debates. Role- and orientation-restricted checks reduce this concern but do not create random assignment.\n- The calibration/charity dimension combines overclaiming with representational fairness, so its full-corpus 0.85-point contribution cannot be assigned wholly to substantiation.\n- Closed calibration and response-class subfields cover 146 debates; the other 23 provide the same six final dimensions but not those subfields.\n- These are AI-assisted, transcript-grounded judgments under a fixed rubric, not measurements of worldview truth or a speaker's character.\n- Debate 191 was corrected so the intelligent-design side is the theist side; the corrected headline is 145–5–19 and 6.35 points.",
+        "layout": "full",
+        "sourceId": "diagnostic-results"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-01T17:19:00Z",
+    "status": "ready",
+    "datasets": {
+      "headline_metrics": [
+        {
+          "evidence_contribution": 1.7121209546863394,
+          "evidence_share": 0.26966303946131537,
+          "theist_below_70": 0.6145475372279496,
+          "non_theist_below_70": 0.23348519362186787,
+          "theist_overstated": 0.7279253409906676,
+          "non_theist_overstated": 0.40440653873489696
+        }
+      ],
+      "dimension_contributions": [
+        {
+          "dimension": "logicalCoherence",
+          "label": "Logical coherence",
+          "weight": 0.25,
+          "non_theist_mean": 83.3277801685494,
+          "theist_mean": 76.06850409206179,
+          "dimension_gap": 7.259276076487609,
+          "score_gap_contribution": 1.8148190191219038,
+          "share_of_official_gap": 0.2858382238877929
+        },
+        {
+          "dimension": "evidenceWarrant",
+          "label": "Evidence and warrant",
+          "weight": 0.2,
+          "non_theist_mean": 75.15162437562438,
+          "theist_mean": 66.59101960219269,
+          "dimension_gap": 8.560604773431692,
+          "score_gap_contribution": 1.7121209546863394,
+          "share_of_official_gap": 0.26966303946131537
+        },
+        {
+          "dimension": "responsiveness",
+          "label": "Responsiveness",
+          "weight": 0.2,
+          "non_theist_mean": 90.25951166781937,
+          "theist_mean": 83.76023037859576,
+          "dimension_gap": 6.499281289223603,
+          "score_gap_contribution": 1.2998562578447197,
+          "share_of_official_gap": 0.2047303891665961
+        },
+        {
+          "dimension": "calibrationCharity",
+          "label": "Calibration and charity",
+          "weight": 0.1,
+          "non_theist_mean": 82.22857023105101,
+          "theist_mean": 73.77454939291478,
+          "dimension_gap": 8.45402083813623,
+          "score_gap_contribution": 0.8454020838136223,
+          "share_of_official_gap": 0.13315279791659101
+        },
+        {
+          "dimension": "precisionClarity",
+          "label": "Precision and clarity",
+          "weight": 0.1,
+          "non_theist_mean": 87.24087241604549,
+          "theist_mean": 81.99721743000589,
+          "dimension_gap": 5.243654986039601,
+          "score_gap_contribution": 0.5243654986039603,
+          "share_of_official_gap": 0.0825887877577533
+        },
+        {
+          "dimension": "relevanceBurden",
+          "label": "Relevance and burden",
+          "weight": 0.15,
+          "non_theist_mean": 85.32241305489383,
+          "theist_mean": 83.9112735277543,
+          "dimension_gap": 1.4111395271395253,
+          "score_gap_contribution": 0.21167092907092905,
+          "share_of_official_gap": 0.03333866450418174
+        }
+      ],
+      "evidence_comparison": [
+        {
+          "side": "Theist/religious",
+          "moves": 1746,
+          "mean_evidence": 66.14662084765177,
+          "below_70_share": 0.6145475372279496,
+          "below_80_share": 0.93184421534937
+        },
+        {
+          "side": "Non-theist/skeptical",
+          "moves": 1756,
+          "mean_evidence": 74.67425968109339,
+          "below_70_share": 0.23348519362186787,
+          "below_80_share": 0.6976082004555809
+        }
+      ],
+      "structural_findings": [
+        {
+          "diagnostic": "Any overstatement relative to warrant",
+          "theist_share": 0.7279253409906676,
+          "non_theist_share": 0.40440653873489696,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "diagnostic": "Material or radical overstatement",
+          "theist_share": 0.36324479540559945,
+          "non_theist_share": 0.10021321961620469,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "diagnostic": "Strong contact with the target in replies",
+          "theist_share": 0.557157569515963,
+          "non_theist_share": 0.7895637296834902,
+          "coverage": "2,140 replies / 146 debates"
+        },
+        {
+          "diagnostic": "Low charity when charity was tested",
+          "theist_share": 0.4461942257217848,
+          "non_theist_share": 0.17757009345794392,
+          "coverage": "2,427 tested moves / 146 debates"
+        }
+      ],
+      "examples": [
+        {
+          "pattern": "Prevalence substituted for reliability",
+          "example": "Debate 3: Dinesh D'Souza",
+          "diagnosis": "The prevalence of diverse religious experiences is treated as evidence for a common divine object without establishing a shared reliable source or comparing live error explanations.",
+          "evidence": 53,
+          "logic": 58
+        },
+        {
+          "pattern": "Explanatory gap converted into positive agency evidence",
+          "example": "Debate 3: Dinesh D'Souza",
+          "diagnosis": "Difficulty explaining the first cell is used to raise intelligent causation without a comparative likelihood showing that agency predicts the evidence better.",
+          "evidence": 60,
+          "logic": 68
+        },
+        {
+          "pattern": "Alternatives ruled out too quickly",
+          "example": "Debate 112: Paul Copan",
+          "diagnosis": "An evolutionary genealogy of moral belief is treated as excluding objective value on naturalism without examining representative naturalistic moral-realist accounts.",
+          "evidence": 61,
+          "logic": 70
+        },
+        {
+          "pattern": "No discriminating test for the preferred explanation",
+          "example": "Debate 191: Fuz Rana",
+          "diagnosis": "Current limits of natural origin accounts are turned into an agency inference before the argument states observations that would distinguish agency from difficult natural causation.",
+          "evidence": 63,
+          "logic": 77
+        },
+        {
+          "pattern": "Epistemic exemption left undefended",
+          "example": "Debate 219: Alister McGrath",
+          "diagnosis": "Meaning-conferring ultimate beliefs are placed beyond proof without a principle showing why significance changes evidential status or keeps the belief answerable to reality.",
+          "evidence": 52,
+          "logic": 60
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "diagnostic-results",
+      "label": "Executed rubric-dimension diagnosis",
+      "path": "docs/analysis/theist-argument-weaknesses-2026-09-01/results.json",
+      "query": {
+        "engine": "DuckDB",
+        "language": "sql",
+        "description": "Join the corrected position taxonomy to every locked assessment ledger, reconstruct the six final move dimensions, validate the deterministic score path, and decompose the paired overall margin.",
+        "executed_at": "2026-09-01T17:19:00Z",
+        "filters": [
+          "The 169 position-level theist/religious versus non-theist/skeptical dyads in the corrected taxonomy",
+          "All scored moves in the locked ledgers for those debates",
+          "Team and panel scorecards excluded",
+          "Closed calibration and response-class subfields restricted to the 146 debates that expose them"
+        ],
+        "metric_definitions": [
+          "Dimension contribution = mean across debates of (non-theist section- and importance-weighted dimension mean minus theist mean) multiplied by the fixed rubric weight.",
+          "Evidence below-70 share = moves with evidence/warrant below 70 divided by all scored moves on that side.",
+          "Any overstatement = slightly-, materially-, or radically-overstated warrant fit in the locked calibration finding.",
+          "Strong reply contact = full answer, diagnostic defeat, or justified reframe among moves classified as replies."
+        ],
+        "tables_used": [
+          "docs/analysis/theist-argument-weaknesses-2026-09-01/results.json"
+        ],
+        "sql": "SELECT * FROM read_json_auto('docs/analysis/theist-argument-weaknesses-2026-09-01/results.json')"
+      }
+    },
+    {
+      "id": "scoring-rubric",
+      "label": "SLUGFESTER reassessment rubric",
+      "path": "docs/reassessment-rubric-v4.0.md"
+    },
+    {
+      "id": "corrected-taxonomy",
+      "label": "Corrected position taxonomy",
+      "path": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv"
+    }
+  ]
+}

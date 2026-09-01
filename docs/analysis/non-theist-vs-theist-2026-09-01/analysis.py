@@ -41,10 +41,10 @@ BOTH_THEISTIC_NUMBERS = {"110", "180", "182", "193", "208", "226"}
 INDIRECT_RELIGION_ADJACENT_NUMBERS = {"04", "129", "159", "187", "199", "201"}
 
 # In most included scorecards the theistic/religious case is stored as `pro`.
-# These are the 19 cases where the published theistic/religious case is `con`.
+# These are the 20 cases where the published theistic/religious case is `con`.
 THEIST_CON_NUMBERS = {
     "03", "20", "21", "24", "25", "30", "36", "58", "85", "101",
-    "102", "103", "145", "147", "202", "209", "210", "211", "219",
+    "102", "103", "145", "147", "191", "202", "209", "210", "211", "219",
 }
 
 
@@ -226,7 +226,7 @@ def validate_source(debates: list[dict], included: list[dict], taxonomy: list[di
     assert len(included) == 169
     assert len(taxonomy) == 210
     assert len(EXCLUDED_NUMBERS) == 41
-    assert len(THEIST_CON_NUMBERS) == 19
+    assert len(THEIST_CON_NUMBERS) == 20
     assert len({debate["id"] for debate in debates}) == len(debates)
     assert len({debate["number"] for debate in debates}) == len(debates)
     assert all(0 <= debate["score"][side] <= 100 for debate in debates for side in ("pro", "con"))
@@ -451,7 +451,7 @@ def run_analysis() -> dict:
             "required_caveats": [
                 "The catalogue is selected, not a random sample of debates or speakers.",
                 "Published side position is used as the classification; this is not a claim about private belief.",
-                "Theistic/religious sides occupy pro in 150 of 169 comparisons, so argumentative burden and side orientation are partly entangled with stance.",
+                "Theistic/religious sides occupy pro in 149 of 169 comparisons, so argumentative burden and side orientation are partly entangled with stance.",
                 "The scores are AI-assisted judgments of transcript performance, not measurements of worldview truth.",
                 "Repeated speakers and repeated speaker pairings make debates non-independent.",
             ],
