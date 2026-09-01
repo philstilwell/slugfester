@@ -123,6 +123,15 @@ def styles() -> dict[str, ParagraphStyle]:
             textColor=BLUE_DARK,
             spaceAfter=18,
         ),
+        "cover_meta": ParagraphStyle(
+            "cover_meta",
+            parent=base["Normal"],
+            fontName="SLUGSans-Bold",
+            fontSize=8.1,
+            leading=10.8,
+            textColor=MUTED,
+            spaceAfter=12,
+        ),
         "cover_abstract": ParagraphStyle(
             "cover_abstract",
             parent=base["BodyText"],
@@ -324,7 +333,11 @@ def metric_card(value: str, label: str, st: dict[str, ParagraphStyle]) -> list[P
 def metric_grid(st: dict[str, ParagraphStyle]) -> Table:
     data = [
         [
-            metric_card("6.35", "mean non-theist score advantage", st),
+            metric_card(
+                "6.35 points",
+                "average overall score difference<br/>(non-theist score minus theist score; 169 debates)",
+                st,
+            ),
             metric_card("61.5%", "theist moves below 70 on evidence", st),
         ],
         [
@@ -572,9 +585,13 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
     story.extend(
         [
             Spacer(1, 0.34 * inch),
-            p("SLUGFESTER CORPUS DIAGNOSTIC | SEPTEMBER 2026", st["cover_kicker"]),
+            p("SLUGFESTER CORPUS DIAGNOSTIC", st["cover_kicker"]),
             p("Why Do the Theist Sides Score Lower?", st["cover_title"]),
             p("A Defense of the Epistemic Bleed-Through Hypothesis", st["cover_subtitle"]),
+            p(
+                "Report date: September 1, 2026 | Relevant debate assessments included: 169 | Scored moves: 3,502",
+                st["cover_meta"],
+            ),
             SectionRule(CONTENT_W, color=RUST, thickness=3.5),
             Spacer(1, 0.08 * inch),
             callout(
