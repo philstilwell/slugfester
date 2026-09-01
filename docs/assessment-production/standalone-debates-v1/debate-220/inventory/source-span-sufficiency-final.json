@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-standalone-source-span-sufficiency-final",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-after-bounded-repairs",
+  "debateNumber": "220",
+  "debateId": "hirsi-ali-oconnor-christian-conversion-2024",
+  "motion": "Do personal transformation and Christianity's cultural value justify belief that Christianity is true?",
+  "independentAudits": [
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-1.json",
+      "disposition": "failed: initial spans and one section exceeded frozen limits"
+    },
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-2.json",
+      "disposition": "failed: compound and unsupported local propositions remained"
+    },
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-3.json",
+      "disposition": "failed: developed voluntarism objection was missing and one chosen-faith move duplicated another"
+    },
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-4.json",
+      "disposition": "failed: six source boundaries or propositions required narrowing"
+    },
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-5.json",
+      "disposition": "failed: assurance and inquiry required separate cards plus four bounded repairs"
+    },
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-6.json",
+      "disposition": "substance passed; ten remaining suggestions concerned minimal caption boundaries only"
+    }
+  ],
+  "finalChecks": {
+    "completeLoadBearingCoverage": true,
+    "duplicateMoveIds": [],
+    "duplicateArguments": [],
+    "sectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true,
+    "allSpansSourceExact": true,
+    "allSpansSpeakerIsolated": true,
+    "allPropositionsSupported": true,
+    "allSpansWithinTwelveToNinetyWords": true,
+    "allSpansWithinFourHundredFiftyCharacters": true,
+    "attributionBelowHigh": [],
+    "requiredAudioChecks": []
+  },
+  "finalIndependentFindings": {
+    "selectionComplete": true,
+    "duplicateArguments": [],
+    "capacityRepairRequired": false,
+    "propositionSupportFailures": 0,
+    "speakerIsolationFailures": 0,
+    "minimalBoundarySuggestions": 10
+  },
+  "controllerDispositions": [
+    "Five boundary suggestions were adopted because they completed the same inference while retaining the hard span limits.",
+    "The remaining suggestions were not adopted where they would exceed 90 words or 450 characters, merge a separate inference, or add text not required by the already-supported proposition.",
+    "Auto-caption fragments at event boundaries were tolerated only when the exact selected text still contains the complete premise and inference represented by the narrowed proposition."
+  ],
+  "finalMoveCount": 37,
+  "finalSectionCount": 7
+}

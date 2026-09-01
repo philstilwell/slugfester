@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-dispute-only-packet",
+  "debateNumber": "220",
+  "debateId": "hirsi-ali-oconnor-christian-conversion-2024",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "evidenceBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/rEXymLAqqIs/captions.srv3.xml",
+      "sha256": "7bb382484fe1cba6a3c0c710e1b7907513d00593abe7f3c275474791ba7007f8",
+      "bytes": 371144
+    },
+    "events": {
+      "path": ".assessment-cache/captions/rEXymLAqqIs/events.json",
+      "sha256": "66ad879b72803c06075860a0aa8bdcf7790a45d219a396cb279f0ad57a201b39",
+      "bytes": 152621
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/rEXymLAqqIs/transcript.txt",
+      "sha256": "bc1dadaf647b560baa35d0b6973e18fa80eb0e0d897cf81ca33bf0acfc8618e3",
+      "bytes": 63033
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/rEXymLAqqIs/manifest.json",
+      "sha256": "6fb773dff28bc177740de4f5243032e8921e53f29045d1511658c5c40ca12a58",
+      "bytes": 976
+    }
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-12-theological-limit-concession:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-12-theological-limit-concession",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 17,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 69,
+          "rationale": "It honestly identifies nonresponse but supplies no substantive answer to the objection."
+        },
+        "option-b": {
+          "value": 52,
+          "rationale": "The concession recognizes the objection but supplies no substantive answer to its doctrinal core."
+        }
+      },
+      "moveEvidence": {
+        "moveId": "pro-12-theological-limit-concession",
+        "sectionId": "sin-freedom-and-moral-doctrine",
+        "side": "pro",
+        "speaker": "Ayaan Hirsi Ali",
+        "moveKind": "reply",
+        "sourceSpan": {
+          "startEvent": 609,
+          "endEvent": 614,
+          "startMs": 1591960,
+          "endMs": 1610880,
+          "excerpt": "so I'd say some of the more the complex layers of that I would leave to people who are much more um I'd say more immersed um theologians who who can make the point for them but again I go back"
+        },
+        "quoteEligibleExactSpans": [
+          "the complex layers"
+        ],
+        "attributionConfidence": "high",
+        "attributionBasis": "Events 609–614 contain only Ayaan's explicit concession.",
+        "importance": 2,
+        "burdenContact": {
+          "bridgeId": "pro-doctrinal-coherence",
+          "tier": "subsidiary",
+          "polarity": "qualifies"
+        },
+        "respondsToIds": [
+          "con-06-original-sin-and-atonement"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "con-06-original-sin-and-atonement",
+            "component": "She leaves the complex doctrinal layers to theologians more immersed in the subject."
+          }
+        ],
+        "proposition": "She lacks a developed answer to the complex atonement objection and defers it to more immersed theologians.",
+        "inventoryRationale": "Records an important limitation on her doctrinal defense."
+      }
+    },
+    {
+      "disputeId": "pro-19-explicit-resurrection-belief:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "pro-19-explicit-resurrection-belief",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 75,
+          "rationale": "Resurrection and redemptive meaning are consistently affirmed, though not inferred."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "Resurrection and redemptive meaning fit together, but choosing assent supplies no evidential inference."
+        }
+      },
+      "moveEvidence": {
+        "moveId": "pro-19-explicit-resurrection-belief",
+        "sectionId": "choice-experience-and-resurrection",
+        "side": "pro",
+        "speaker": "Ayaan Hirsi Ali",
+        "moveKind": "reply",
+        "sourceSpan": {
+          "startEvent": 999,
+          "endEvent": 1003,
+          "startMs": 2612880,
+          "endMs": 2628760,
+          "excerpt": "choose to believe in the resurrection yeah and also the the story itself and what it tells us um a God who died for our sins so that we are forgiven so that we can live and I"
+        },
+        "quoteEligibleExactSpans": [
+          "choose to believe in the resurrection",
+          "a God who died for our sins"
+        ],
+        "attributionConfidence": "high",
+        "attributionBasis": "Events 999–1006 contain only Ayaan's direct answer.",
+        "importance": 3,
+        "burdenContact": {
+          "bridgeId": "pro-motion-justification",
+          "tier": "motion",
+          "polarity": "supports"
+        },
+        "respondsToIds": [
+          "con-12-truth-claim-confirmation"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "con-12-truth-claim-confirmation",
+            "component": "She explicitly affirms resurrection belief and the redemptive account of God's death for human sins."
+          }
+        ],
+        "proposition": "She chooses to believe the resurrection and the account of God dying for human sins.",
+        "inventoryRationale": "Records her clearest assent to the specific Christian claim."
+      }
+    },
+    {
+      "disputeId": "pro-21-immigration-as-exploitation:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-21-immigration-as-exploitation",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 0,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 65,
+          "rationale": "The sweeping description of migration routes understates lawful and mixed cases."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Centering migrant vulnerability is constructive, though the opposing policy is recast mainly as deception."
+        }
+      },
+      "moveEvidence": {
+        "moveId": "pro-21-immigration-as-exploitation",
+        "sectionId": "political-and-cultural-coherence",
+        "side": "pro",
+        "speaker": "Ayaan Hirsi Ali",
+        "moveKind": "reply",
+        "sourceSpan": {
+          "startEvent": 1288,
+          "endEvent": 1297,
+          "startMs": 3411880,
+          "endMs": 3436520,
+          "excerpt": "Christ would oppose would be the commodification of the human being and what we are now calling immigration is not immigration it's deceiving poor people in poor countries into thinking that they're going to rich countries where they're welcome and they're going to have jobs and they're going to have shelter and health care and they can send money back to and that's not what"
+        },
+        "quoteEligibleExactSpans": [
+          "commodification of the human being",
+          "deceiving poor people"
+        ],
+        "attributionConfidence": "high",
+        "attributionBasis": "Events 1288–1303 contain only Ayaan's anti-exploitation response.",
+        "importance": 2,
+        "burdenContact": {
+          "bridgeId": "pro-doctrinal-coherence",
+          "tier": "subsidiary",
+          "polarity": "supports"
+        },
+        "respondsToIds": [
+          "con-14-immigration-universal-love-tension"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "con-14-immigration-universal-love-tension",
+            "component": "She argues that opposing routes which deceive and commodify vulnerable migrants can express Christian concern."
+          }
+        ],
+        "proposition": "Restricting current migration routes can cohere with Christianity because those routes commodify and deceive migrants with promises the system does not fulfill.",
+        "inventoryRationale": "Her principal moral-coherence response to the immigration objection."
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Any incompleteness in connecting transformation and cultural fruits to Christian truth is already captured in the relevant move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-justification"
+            ],
+            "completionCriterion": "Provide a warranted bridge from experiential and cultural benefits to Christianity's truth claims.",
+            "relatedMoveIds": [
+              "pro-05-explicit-truth-belief",
+              "pro-17-experience-reading-and-miracles",
+              "pro-18-fruits-as-empirical-testament",
+              "pro-19-explicit-resurrection-belief"
+            ],
+            "distinctConsequence": "The pro case repeatedly affirms truth but leaves the benefit-to-truth inference materially incomplete.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Without the move-level deductions for the missing truth bridge, a separate adjustment could represent incomplete motion-level justification."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incompleteness in connecting transformation and cultural fruits to Christian truth is already captured in the relevant move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-justification",
+              "pro-experiential-warrant",
+              "pro-cultural-fruits"
+            ],
+            "completionCriterion": "Provide a warranted bridge from personal and cultural benefits to Christianity's factual truth.",
+            "relatedMoveIds": [
+              "pro-01-peace-and-connection",
+              "pro-18-fruits-as-empirical-testament",
+              "pro-22-cultural-source-conclusion"
+            ],
+            "distinctConsequence": "The principal truth bridge remains incomplete, but this is not distinct from assessed move defects.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Without duplicate move-level capture, the missing truth bridge could reduce debate-wide burden completion."
+          }
+        }
+      },
+      "moveEvidence": null
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The con side's truth-gap, voluntarism, and doctrinal challenges are fully represented in the individual move ratings and burden contact.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-truth-gap",
+              "con-belief-voluntarism",
+              "con-doctrinal-objections"
+            ],
+            "completionCriterion": "Expose why transformation and utility do not establish truth while presenting the relevant doctrinal challenges.",
+            "relatedMoveIds": [
+              "con-03-politics-versus-doctrinal-truth",
+              "extraordinary-factual-assent",
+              "benefit-truth-gap",
+              "con-05-scriptural-moral-objections",
+              "con-06-original-sin-and-atonement"
+            ],
+            "distinctConsequence": "No additional debate-wide consequence appears beyond the burdens directly handled by the scored moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "A separate adjustment would be warranted only if an unscored omission independently changed completion of the con burden."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The con side's critical truth-gap burden and subsidiary objections are fully represented by the locked move ratings, leaving no distinct adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-truth-gap",
+              "con-belief-voluntarism"
+            ],
+            "completionCriterion": "Show that benefit or chosen commitment does not by itself establish factual assent or truth.",
+            "relatedMoveIds": [
+              "con-03-politics-versus-doctrinal-truth",
+              "extraordinary-factual-assent",
+              "benefit-truth-gap"
+            ],
+            "distinctConsequence": "No separate debate-wide consequence remains outside the assessed truth-gap and assent moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Removing the existing move ratings would create an unrepresented burden consequence, but they already capture it."
+          }
+        }
+      },
+      "moveEvidence": null
+    }
+  ],
+  "instructions": {
+    "selectExistingOptionOnly": true,
+    "permittedSelections": [
+      "option-a",
+      "option-b"
+    ],
+    "resolveEveryDisputeExactlyOnce": true,
+    "modelAuthoredTotalsForbidden": true
+  }
+}

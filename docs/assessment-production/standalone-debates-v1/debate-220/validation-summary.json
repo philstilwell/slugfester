@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "220",
+  "debateId": "hirsi-ali-oconnor-christian-conversion-2024",
+  "completedAt": "2026-09-01T08:18:34.000Z",
+  "source": {
+    "videoId": "rEXymLAqqIs",
+    "method": "complete public YouTube English caption track normalized locally",
+    "transcriptWords": 11258,
+    "events": 1431,
+    "transcriptSha256": "bc1dadaf647b560baa35d0b6973e18fa80eb0e0d897cf81ca33bf0acfc8618e3",
+    "eventsSha256": "66ad879b72803c06075860a0aa8bdcf7790a45d219a396cb279f0ad57a201b39",
+    "assessedWindow": "00:00:00-01:02:14",
+    "excludedMaterial": "sponsor and channel outro",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 37,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 5,
+    "adjudicatedDisputes": 5,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 71,
+      "con": 83,
+      "winner": "con",
+      "margin": 12
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 22,
+    "argumentCards": 37,
+    "uniqueLockedMovesMapped": 37,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": { "pro": 4, "con": 4 },
+    "overallBlunders": { "pro": 3, "con": 3 },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "88e51d7d2cc4026bfd9b4fc4b75bd6f9e516038339f87fc1f444155904ee5365",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-220/publication/content-parity-audit.json",
+    "contentParityCorrection": "not-required-original-publication-passed",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 22,
+      "mean": 22.9,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": { "minimum": 112, "mean": 119, "maximum": 124 },
+    "critiqueCharacterRange": [883, 981],
+    "critiqueBoilerplateMeanCoveredRatio": 0.049,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.052,
+    "overallItemWords": { "strengthMean": 20.5, "blunderMean": 23 },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-220/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-after-score-blind-review-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 37,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 481,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 38,
+    "acceptedRhetoricalTags": 13,
+    "acceptedFallacyTags": 6,
+    "acceptedBiasTags": 7,
+    "rejectedRhetoricalTagCandidates": 25,
+    "controllerDefinitionOverrides": 2,
+    "aiContributionWords": 879
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 1,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-220/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 13,
+    "desktopEvidenceSha256": "fe0bc8bc3197c8ef71df69594694854e2247beb4891d582989351addffadb6db",
+    "mobileEvidenceSha256": "7ca82b3a12e5690ae638efe7160b2ee6880dba1b1c6facbf3240bbe7e499b6e4"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "220 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "650 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "37 moves; description mean 22.9 words; critique mean 119 words; boilerplate coverage mean 0.049"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "37 moves reviewed against 13 definitions in 2 blind passes; 38 candidates adjudicated; 6 fallacies and 7 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "37 populated cards and 13 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 220 with and without --repository-only",
+      "status": "passed",
+      "result": "37 moves; 7 sections; 5 disputes; 0 audio checks; score stability mean 0.25, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "220 of 220 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 1,
+    "inventoryRepairCycles": 1,
+    "judgmentRetries": 0,
+    "publicationDescriptionFieldsRepaired": 11,
+    "rhetoricalTagFieldsAdded": 13,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 2,
+    "judgmentExecutionWrapperNormalizations": 1,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 22,
+    "con": 15,
+    "disposition": "All thirty-seven frozen moves are mapped exactly once. Hirsi Ali has seven more distinct moves because her affirmative conversion narrative and cultural case supplied more separately developed claims; no move was deleted, merged, added, or reassigned to manufacture symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

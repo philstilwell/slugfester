@@ -9898,5 +9898,57 @@ export const debateSummaries = [
         "title": "Moral grounding and closing syntheses"
       }
     ]
+  },
+  {
+    "id": "hirsi-ali-oconnor-christian-conversion-2024",
+    "number": "220",
+    "title": "Does Christian Conversion Establish Truth? Ayaan Hirsi Ali vs. Alex O'Connor (2024)",
+    "label": "Christian conversion, truth, and cultural value",
+    "date": "2026-09-01",
+    "duration": "1 hr 3 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=rEXymLAqqIs",
+    "motion": "Do personal transformation and Christianity's cultural value justify belief that Christianity is true?",
+    "summary": "Hirsi Ali established sincere transformation and cultural attraction, but O’Connor decisively separated those benefits from evidence for Christianity’s supernatural truth claims.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian belief is personally and rationally justified",
+        "speaker": "Ayaan Hirsi Ali",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Transformation and cultural value do not establish Christian truth",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 71,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Conversion and personal transformation"
+      },
+      {
+        "title": "Truth, faith, and the critique of atheism"
+      },
+      {
+        "title": "Scripture and differences among religions"
+      },
+      {
+        "title": "Sin, freedom, and moral doctrine"
+      },
+      {
+        "title": "Epistemic openness and dogmatism"
+      },
+      {
+        "title": "Choice, experience, and resurrection"
+      },
+      {
+        "title": "Political and cultural coherence"
+      }
+    ]
   }
 ];

@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "220",
+  "debateId": "hirsi-ali-oconnor-christian-conversion-2024",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-12-theological-limit-concession:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-12-theological-limit-concession",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 17,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 69,
+          "rationale": "It honestly identifies nonresponse but supplies no substantive answer to the objection."
+        },
+        "option-b": {
+          "value": 52,
+          "rationale": "The concession recognizes the objection but supplies no substantive answer to its doctrinal core."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-19-explicit-resurrection-belief:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "pro-19-explicit-resurrection-belief",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 75,
+          "rationale": "Resurrection and redemptive meaning are consistently affirmed, though not inferred."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "Resurrection and redemptive meaning fit together, but choosing assent supplies no evidential inference."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-21-immigration-as-exploitation:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-21-immigration-as-exploitation",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 0,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 65,
+          "rationale": "The sweeping description of migration routes understates lawful and mixed cases."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Centering migrant vulnerability is constructive, though the opposing policy is recast mainly as deception."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Any incompleteness in connecting transformation and cultural fruits to Christian truth is already captured in the relevant move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-justification"
+            ],
+            "completionCriterion": "Provide a warranted bridge from experiential and cultural benefits to Christianity's truth claims.",
+            "relatedMoveIds": [
+              "pro-05-explicit-truth-belief",
+              "pro-17-experience-reading-and-miracles",
+              "pro-18-fruits-as-empirical-testament",
+              "pro-19-explicit-resurrection-belief"
+            ],
+            "distinctConsequence": "The pro case repeatedly affirms truth but leaves the benefit-to-truth inference materially incomplete.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Without the move-level deductions for the missing truth bridge, a separate adjustment could represent incomplete motion-level justification."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incompleteness in connecting transformation and cultural fruits to Christian truth is already captured in the relevant move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-justification",
+              "pro-experiential-warrant",
+              "pro-cultural-fruits"
+            ],
+            "completionCriterion": "Provide a warranted bridge from personal and cultural benefits to Christianity's factual truth.",
+            "relatedMoveIds": [
+              "pro-01-peace-and-connection",
+              "pro-18-fruits-as-empirical-testament",
+              "pro-22-cultural-source-conclusion"
+            ],
+            "distinctConsequence": "The principal truth bridge remains incomplete, but this is not distinct from assessed move defects.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Without duplicate move-level capture, the missing truth bridge could reduce debate-wide burden completion."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The con side's truth-gap, voluntarism, and doctrinal challenges are fully represented in the individual move ratings and burden contact.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-truth-gap",
+              "con-belief-voluntarism",
+              "con-doctrinal-objections"
+            ],
+            "completionCriterion": "Expose why transformation and utility do not establish truth while presenting the relevant doctrinal challenges.",
+            "relatedMoveIds": [
+              "con-03-politics-versus-doctrinal-truth",
+              "extraordinary-factual-assent",
+              "benefit-truth-gap",
+              "con-05-scriptural-moral-objections",
+              "con-06-original-sin-and-atonement"
+            ],
+            "distinctConsequence": "No additional debate-wide consequence appears beyond the burdens directly handled by the scored moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "A separate adjustment would be warranted only if an unscored omission independently changed completion of the con burden."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The con side's critical truth-gap burden and subsidiary objections are fully represented by the locked move ratings, leaving no distinct adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-truth-gap",
+              "con-belief-voluntarism"
+            ],
+            "completionCriterion": "Show that benefit or chosen commitment does not by itself establish factual assent or truth.",
+            "relatedMoveIds": [
+              "con-03-politics-versus-doctrinal-truth",
+              "extraordinary-factual-assent",
+              "benefit-truth-gap"
+            ],
+            "distinctConsequence": "No separate debate-wide consequence remains outside the assessed truth-gap and assent moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Removing the existing move ratings would create an unrepresented burden consequence, but they already capture it."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 37,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}
