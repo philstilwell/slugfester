@@ -1,0 +1,711 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "219",
+  "debateId": "shermer-mcgrath-god-imagination-2017",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/eScykHWO4LY/captions.srv3.xml",
+      "sha256": "8ac7b62460461075b9d136c4982db55f93b06aaaa1a1e796e3c6c7c765720416",
+      "bytes": 808189
+    },
+    "events": {
+      "path": ".assessment-cache/captions/eScykHWO4LY/events.json",
+      "sha256": "c620eadb2b211dd5e9728c868c5c8342a67ed96a2ee9767707deb85e9ab31712",
+      "bytes": 318887
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/eScykHWO4LY/transcript.txt",
+      "sha256": "bb002d108187147028345a64bfe6c0685b55f177939b04153995c6153e4e4e1a",
+      "bytes": 134496
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/eScykHWO4LY/manifest.json",
+      "sha256": "38338724b56034b9fff3a6c632f6a9bba4c41544c7db0dc5b8f779c452c5b1cf",
+      "bytes": 1032
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/authorization.json",
+      "sha256": "60acb2ddab21c58cc57c71daf9e2236b6f65b95db3854210dfaa78f07ac73ac2",
+      "bytes": 3303
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/manifest.json",
+      "sha256": "deb6d7a003d05c0d836b5af46c6315b44e50a6b64bc773a5e46a5a035dc224b2",
+      "bytes": 5466
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/source/source-lock.json",
+      "sha256": "9d475d34d90bd1edb88c2365d79f0e5a8385d666a3cd02043164f628804e8fb5",
+      "bytes": 5239
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/inventory.json",
+      "sha256": "4749b792a3e5240736f55914516c25fd03fd2834da03f44602d8a6ec513477eb",
+      "bytes": 68313
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/judgments/judgment-packet.json",
+      "sha256": "7090d1ac32e189ea10cba3bd6da6c9df14003b1ceb1d89c004f47ead3ab0067c",
+      "bytes": 4907
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/judgments/execution.json",
+      "sha256": "2e6bac2097fc0f8c5993f666bb3bb576e6f271d6ecbf906cc58e90231c60b72b",
+      "bytes": 1984
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/judgments/pass-a/output.json",
+      "sha256": "9db13369f662c5ae44cf79446f14418f4dfd2f0e8bc6e1b5d0bd9feed397df29",
+      "bytes": 42493
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/judgments/pass-b/output.json",
+      "sha256": "08778018da3829c0ec9738830831da40568d5e186f317a3caff025e7efd75500",
+      "bytes": 32765
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/disagreements/disagreements.json",
+      "sha256": "f674b0914db8a299806504965c1bc00cf78d30a0bf380a94270e3f794afdf196",
+      "bytes": 11525
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/audio/audio-verification.json",
+      "sha256": "edcc260f7b06385e4617a13cd5abcd67755a05c8fd07fadc445b461ebafc7126",
+      "bytes": 1112
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/adjudication/packet.json",
+      "sha256": "2c6c1f10e121d1bbab47b2af179244a15e14dfc825a89674250940f9e11625be",
+      "bytes": 19812
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/adjudication/output.json",
+      "sha256": "9df3364fb9ae12bd90122f55fa658ddd0220d690283566aa42c4957062ae4744",
+      "bytes": 2504
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/final-ledger/final-ledger.json",
+      "sha256": "3b1cb0b089114cfc31d094586b90bd294acd2410d243c65aca94c2ac2b64441c",
+      "bytes": 203559
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/score-pass/input.json",
+      "sha256": "1723f131a7251bc479de83206d1bfa7fc4e30984a0e8b240c2adfe9cfe2cc85c",
+      "bytes": 955
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/score-pass/output.json",
+      "sha256": "61ef0f621f077e648af368f87df07b9567adb31490307d31baf9a6eb4aac1779",
+      "bytes": 16383
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/score-pass/attestation.json",
+      "sha256": "7ff40c909159e63a13e6514f393ef6abfd7558799f767e105ef49e4f5ba0570c",
+      "bytes": 823
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/output.json",
+      "sha256": "023ec1bfeac950f6daa67819382e69c16be65cc242b7eec82464e0bfc76242c9",
+      "bytes": 68572
+    },
+    "events": {
+      "path": ".assessment-cache/captions/eScykHWO4LY/events.json",
+      "sha256": "c620eadb2b211dd5e9728c868c5c8342a67ed96a2ee9767707deb85e9ab31712",
+      "bytes": 318887
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/eScykHWO4LY/transcript.txt",
+      "sha256": "bb002d108187147028345a64bfe6c0685b55f177939b04153995c6153e4e4e1a",
+      "bytes": 134496
+    },
+    "publicationMotionCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/correction-1-motion.json",
+      "sha256": "f103d14273bf77014411b59948ef225be8f6b8528b0e4f263087ca541bbd459d",
+      "bytes": 1253
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/correction-2-rhetorical-tags.json",
+      "sha256": "1f730db6b256ec57f89ee5704b9f1ecbfcea8774dbec50d3cdd87bf07cdb1a50",
+      "bytes": 1306
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/rhetorical-tag-audit.json",
+      "sha256": "7164114df4626fdaeae425eba30a10b8231791ca219da0f05a9e380a457da13c",
+      "bytes": 25637
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/rhetorical-tag-review-2/execution.json",
+      "sha256": "af3b6c0d92b66f1b34698fe93b8da6fbbe0b671daa3eae917e4ad67320452f0f",
+      "bytes": 3924
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "492f3f0ddf87c684798a5da5e2347a93f0596172caae9b9cb9493a2433674ec8",
+      "bytes": 2873
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "219",
+    "debateId": "shermer-mcgrath-god-imagination-2017",
+    "sections": [
+      {
+        "sectionId": "epistemic-burdens-and-limits",
+        "title": "Epistemic burdens, evidence, and human limits",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "expected-world-evidence-of-absence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 81,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 62,
+                  "calibrationCharity": 72
+                },
+                "score": 71
+              },
+              {
+                "moveId": "believer-bears-proof-burden",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 76
+                },
+                "score": 81
+              },
+              {
+                "moveId": "religion-as-internal-validation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 87
+                },
+                "score": 82
+              },
+              {
+                "moveId": "cumulative-evidence-stabilizes-science",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 87,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 90
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "shared-risk-of-wishful-belief",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 82,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 87
+                },
+                "score": 77
+              },
+              {
+                "moveId": "ultimate-beliefs-beyond-proof",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 77,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 65,
+                  "calibrationCharity": 60
+                },
+                "score": 65
+              },
+              {
+                "moveId": "scientific-theories-change",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 74,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 76
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "religious-diversity-and-construction",
+        "title": "Religious diversity and human construction",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "many-gods-one-further",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 65
+                },
+                "score": 73
+              },
+              {
+                "moveId": "recurring-resurrection-myths",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 82,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 67
+                },
+                "score": 72
+              },
+              {
+                "moveId": "storytelling-species-explains-parallels",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 75
+                },
+                "score": 77
+              },
+              {
+                "moveId": "comparative-worldviews-break-bubble",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 83,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 73
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "science-and-faith-enrich",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 76,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 81
+                },
+                "score": 70
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "meaning-value-and-naturalism",
+        "title": "Meaning, value, and naturalistic explanation",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "values-from-social-evolution",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 82
+                },
+                "score": 78
+              },
+              {
+                "moveId": "science-corrects-belief-distortion",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 74,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 81
+                },
+                "score": 76
+              },
+              {
+                "moveId": "meaning-available-without-religion",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 89
+                },
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "ungrounded-values-reflect-society",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 77,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 65,
+                  "calibrationCharity": 63
+                },
+                "score": 68
+              },
+              {
+                "moveId": "secular-values-risk-projection",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 89,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 87
+                },
+                "score": 81
+              },
+              {
+                "moveId": "science-does-not-answer-why",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 82,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 88
+                },
+                "score": 77
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "suffering-intervention-and-falsifiability",
+        "title": "Suffering, divine intervention, and falsifiability",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "evil-challenges-divine-power",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 87,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 66
+                },
+                "score": 76
+              },
+              {
+                "moveId": "selective-credit-defies-falsification",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 82,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 71
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "christianity-confronts-suffering-tension",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 85,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 92
+                },
+                "score": 80
+              },
+              {
+                "moveId": "faith-motivates-relief",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 63,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 86
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "jesus-resurrection-and-incarnation",
+        "title": "Jesus, resurrection, and incarnation",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "resurrection-needs-proportional-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 85,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 74
+                },
+                "score": 79
+              },
+              {
+                "moveId": "old-resurrection-story-insulated",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 80,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              },
+              {
+                "moveId": "meaning-without-jesus",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 83,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 87
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 69,
+            "moves": [
+              {
+                "moveId": "jesus-claimed-historically-reliable",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 43,
+                  "responsiveness": 59,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 83
+                },
+                "score": 62
+              },
+              {
+                "moveId": "incarnation-places-god-in-history",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 77,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 91
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-grounding-and-closing-syntheses",
+        "title": "Moral grounding and closing syntheses",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "sentient-flourishing-moral-standard",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 84
+                },
+                "score": 80
+              },
+              {
+                "moveId": "science-reason-closing-synthesis",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 81,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 73
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "morality-needs-beyond-us-framework",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 51,
+                  "responsiveness": 79,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 76
+                },
+                "score": 69
+              },
+              {
+                "moveId": "faith-motivates-good-closing",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 77,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 81
+                },
+                "score": 71
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 77.3,
+        "burdenCompletionAdjustment": 0,
+        "score": 77
+      },
+      "con": {
+        "weightedSectionMean": 71.88,
+        "burdenCompletionAdjustment": 0,
+        "score": 72
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 5,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 31,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

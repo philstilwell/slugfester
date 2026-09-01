@@ -9849,5 +9849,54 @@ export const debateSummaries = [
         "title": "Conversion narratives, religious experience, and hiddenness"
       }
     ]
+  },
+  {
+    "id": "shermer-mcgrath-god-imagination-2017",
+    "number": "219",
+    "title": "Is God a Figment of Our Imagination? Michael Shermer vs. Alister McGrath (2017)",
+    "label": "God, imagination, and explanatory evidence",
+    "date": "2026-09-01",
+    "duration": "1 hr 56 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=eScykHWO4LY",
+    "motion": "Is God a figment of our imagination?",
+    "summary": "Shermer prevailed by connecting religious diversity, evidential burdens, naturalistic morality, and unfalsifiability to human construction, while McGrath offered thoughtful but less evidentially complete defenses of faith.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God is a human construction",
+        "speaker": "Michael Shermer",
+        "color": "teal"
+      },
+      "con": {
+        "name": "God is not merely imaginary",
+        "speaker": "Alister McGrath",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 72,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Epistemic burdens, evidence, and human limits"
+      },
+      {
+        "title": "Religious diversity and human construction"
+      },
+      {
+        "title": "Meaning, value, and naturalistic explanation"
+      },
+      {
+        "title": "Suffering, divine intervention, and falsifiability"
+      },
+      {
+        "title": "Jesus, resurrection, and incarnation"
+      },
+      {
+        "title": "Moral grounding and closing syntheses"
+      }
+    ]
   }
 ];

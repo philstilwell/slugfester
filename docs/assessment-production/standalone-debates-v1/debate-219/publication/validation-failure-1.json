@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0-standalone-publication-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-before-field-disjoint-repair",
+  "debateNumber": "219",
+  "debateId": "shermer-mcgrath-god-imagination-2017",
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/preserved-invalid-output-1.json",
+    "sha256": "4f55c61ff65bade6ec62716e4e3b998dc48c0cd9a6cc67b4005b5df7eb2dc2a4",
+    "bytes": 60397
+  },
+  "failures": [
+    "Twenty-two critique fields exceeded the 130-word ceiling while retaining valid four-sentence structure and the 880-character floor.",
+    "The Pro representative-quote context contained 21 words instead of the required 22-to-38-word range."
+  ],
+  "writableLeafFields": [
+    "candidate.sections[0].exchanges[0].pro.critique",
+    "candidate.sections[0].exchanges[0].con.critique",
+    "candidate.sections[0].exchanges[1].pro.critique",
+    "candidate.sections[0].exchanges[1].con.critique",
+    "candidate.sections[0].exchanges[2].pro.critique",
+    "candidate.sections[0].exchanges[2].con.critique",
+    "candidate.sections[0].exchanges[3].pro.critique",
+    "candidate.sections[1].exchanges[0].pro.critique",
+    "candidate.sections[1].exchanges[0].con.critique",
+    "candidate.sections[1].exchanges[1].pro.critique",
+    "candidate.sections[1].exchanges[2].pro.critique",
+    "candidate.sections[1].exchanges[3].pro.critique",
+    "candidate.sections[2].exchanges[0].pro.critique",
+    "candidate.sections[2].exchanges[1].pro.critique",
+    "candidate.sections[2].exchanges[1].con.critique",
+    "candidate.sections[2].exchanges[2].pro.critique",
+    "candidate.sections[2].exchanges[2].con.critique",
+    "candidate.sections[3].exchanges[0].con.critique",
+    "candidate.sections[3].exchanges[1].pro.critique",
+    "candidate.sections[3].exchanges[1].con.critique",
+    "candidate.sections[5].exchanges[0].pro.critique",
+    "candidate.sections[5].exchanges[1].pro.critique",
+    "candidate.quotes.pro.context"
+  ],
+  "repairShards": [
+    {
+      "shardId": "shard-1",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].pro.critique",
+        "candidate.sections[0].exchanges[0].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-2",
+      "writableFields": [
+        "candidate.sections[0].exchanges[1].pro.critique",
+        "candidate.sections[0].exchanges[1].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-3",
+      "writableFields": [
+        "candidate.sections[0].exchanges[2].pro.critique",
+        "candidate.sections[0].exchanges[2].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-4",
+      "writableFields": [
+        "candidate.sections[0].exchanges[3].pro.critique",
+        "candidate.sections[1].exchanges[0].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-5",
+      "writableFields": [
+        "candidate.sections[1].exchanges[0].con.critique",
+        "candidate.sections[1].exchanges[1].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-6",
+      "writableFields": [
+        "candidate.sections[1].exchanges[2].pro.critique",
+        "candidate.sections[1].exchanges[3].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-7",
+      "writableFields": [
+        "candidate.sections[2].exchanges[0].pro.critique",
+        "candidate.sections[2].exchanges[1].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-8",
+      "writableFields": [
+        "candidate.sections[2].exchanges[1].con.critique",
+        "candidate.sections[2].exchanges[2].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-9",
+      "writableFields": [
+        "candidate.sections[2].exchanges[2].con.critique",
+        "candidate.sections[3].exchanges[0].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-10",
+      "writableFields": [
+        "candidate.sections[3].exchanges[1].pro.critique",
+        "candidate.sections[3].exchanges[1].con.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-11",
+      "writableFields": [
+        "candidate.sections[5].exchanges[0].pro.critique",
+        "candidate.sections[5].exchanges[1].pro.critique"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    },
+    {
+      "shardId": "shard-12",
+      "writableFields": [
+        "candidate.quotes.pro.context"
+      ],
+      "maximumWritableFields": 2,
+      "attemptMaximum": 1
+    }
+  ],
+  "frozenFieldsUnaffected": [
+    "identity",
+    "source evidence",
+    "inventory",
+    "judgments",
+    "adjudication",
+    "scores",
+    "moves",
+    "all unlisted publication fields"
+  ]
+}

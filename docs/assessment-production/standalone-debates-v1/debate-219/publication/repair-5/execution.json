@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-standalone-publication-repair-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-one-attempt-with-deterministic-word-normalization",
+  "debateNumber": "219",
+  "debateId": "shermer-mcgrath-god-imagination-2017",
+  "shardId": "shard-5",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "billingSurface": "ChatGPT subscription",
+  "sessionId": "01a05b8f-8336-7d71-b68f-7b6f7094f902",
+  "freshIsolatedContext": true,
+  "attemptCount": 1,
+  "retryCount": 0,
+  "writableFields": [
+    "candidate.sections[1].exchanges[0].con.critique",
+    "candidate.sections[1].exchanges[1].pro.critique"
+  ],
+  "changedFields": [
+    "candidate.sections[1].exchanges[0].con.critique",
+    "candidate.sections[1].exchanges[1].pro.critique"
+  ],
+  "maximumWritableFields": 2,
+  "evidence": {
+    "preservedInvalidOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/preserved-invalid-output-1.json",
+      "sha256": "4f55c61ff65bade6ec62716e4e3b998dc48c0cd9a6cc67b4005b5df7eb2dc2a4",
+      "bytes": 60397
+    },
+    "repairPacket": {
+      "path": ".assessment-cache/standalone-219-controller/publication-repairs/shard-5/packet.json",
+      "sha256": "02b82798cbe6193b55bacb94cbcd2c5ed9fb1ccdf0f5331d499851159b5177e4",
+      "bytes": 7770
+    },
+    "repairOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/publication/repair-5/output.json",
+      "sha256": "c3c549cc8a34b2381b3986beb85916e245b96144302382c7fc7736ea2b350f4c",
+      "bytes": 2074
+    }
+  },
+  "deterministicNormalization": {
+    "applied": true,
+    "reason": "The model preserved the required structure and substance but remained one to three words above the ceiling; the controller removed only redundant modifiers from the same authorized fields.",
+    "removedWords": [
+      "concrete"
+    ],
+    "claimsChanged": 0,
+    "scoresChanged": 0
+  },
+  "identityMovesJudgmentsScoresAndAllUnlistedFieldsUnchanged": true,
+  "directIncrementalCostUsd": 0
+}

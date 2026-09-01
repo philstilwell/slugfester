@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-inventory-recovery",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-before-scoring",
+  "debateNumber": "219",
+  "directIncrementalCostUsd": 0,
+  "sequence": [
+    {
+      "stage": "initial-full-source-inventory",
+      "sessionId": "01a05b4e-8b60-7df0-bea3-c633975eb3f4",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "rejected-before-scoring",
+      "reason": "An independent bounded-source review found 21 of 33 compound propositions not supportable by one valid source passage."
+    },
+    {
+      "stage": "initial-source-span-audit",
+      "sessionId": "01a05b56-3d92-7f40-abe8-4271b988ee08",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "12-supportable-21-not-supportable"
+    },
+    {
+      "stage": "fresh-full-source-inventory-restart",
+      "sessionId": "01a05b5b-9c43-7361-a381-5f5cfe3588f1",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "31-move-candidate",
+      "rawOutputPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/raw-worker-restart-output.json",
+      "rawOutputSha256": "245513191697d3e4ccea32d3fe2ce3f9e972055aee537e2fe3960e0ec53946e4"
+    },
+    {
+      "stage": "full-event-audit-attempt",
+      "sessionId": "01a05b61-6d32-7c20-87b1-b836d7e41946",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "controller-interrupted-after-20-minutes-with-no-model-output",
+      "substantiveOutputRecovered": false
+    },
+    {
+      "stage": "reduced-packet-independent-source-span-audit",
+      "sessionId": "01a05b75-1d56-7433-9d5a-51f6c0f287dc",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "27-supportable-4-not-supportable",
+      "auditPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/source-span-sufficiency-audit-2.json",
+      "auditSha256": "f56c3f8cf81df468e6f4bdc4edd7c242739a0b7d61fd4996210a7316d79b5b5a"
+    },
+    {
+      "stage": "four-move-score-blind-repair",
+      "sessionId": "01a05b77-7b36-7202-b33f-d3745047e273",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "four-minimal-source-faithful-repairs",
+      "repairPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/inventory-repair-output.json",
+      "repairSha256": "20e9f45553c917bf425eb4cc2c50f182e45545f47bc5557dd1133a1c8404070c"
+    },
+    {
+      "stage": "independent-repair-source-span-audit",
+      "sessionId": "01a05b7a-0f90-7593-8d14-cd76060f6fe6",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "outcome": "4-supportable-0-not-supportable",
+      "auditPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/source-span-sufficiency-audit-3.json",
+      "auditSha256": "017e8ada0a69c8e1fbc7274a39b2776381b1a5c2901e84f92358df2df8a2c9ba"
+    }
+  ],
+  "final": {
+    "rawInventoryPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/raw-worker-output.json",
+    "rawInventorySha256": "85f98ddad96883619f7fceb8fca2be51046af0c2966e4e6c08d00e18d512122f",
+    "inventoryPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/inventory.json",
+    "inventorySha256": "4749b792a3e5240736f55914516c25fd03fd2834da03f44602d8a6ec513477eb",
+    "finalAuditPath": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/source-span-sufficiency-final.json",
+    "finalAuditSha256": "a1972ff904a0ac92673d3ceb991ddddc11c96ca6d8af17da6c9b7c160f943aac",
+    "moveCount": 31,
+    "supportableMoveCount": 31,
+    "notSupportableMoveCount": 0,
+    "scoringHadBegunBeforeFinalFreeze": false
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "219",
+  "debateId": "shermer-mcgrath-god-imagination-2017",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "ultimate-beliefs-beyond-proof:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "ultimate-beliefs-beyond-proof",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 60,
+          "rationale": "The conclusion is intelligible, but the sharp division between provable shallow truths and meaningful greater beliefs is asserted as a dichotomy without a defended bridge."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "The shallow-greater contrast is intelligible but does not show why all ultimate beliefs evade justification."
+        }
+      }
+    },
+    {
+      "disputeId": "ultimate-beliefs-beyond-proof:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "ultimate-beliefs-beyond-proof",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 48,
+          "rationale": "No examples or argument establish that meaning-conferring beliefs must lie beyond proof, or that this status supports rather than merely insulates them."
+        },
+        "option-b": {
+          "value": 52,
+          "rationale": "No examples or defended epistemic principle establish the asserted boundary between proof domains."
+        }
+      }
+    },
+    {
+      "disputeId": "ultimate-beliefs-beyond-proof:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "ultimate-beliefs-beyond-proof",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "The constructive addresses the epistemic burden surrounding God by challenging proof as the proper standard, but it does not yet confront public evidential alternatives."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "It directly supplies an epistemic framework for resisting the inference from nonproof to imagination."
+        }
+      }
+    },
+    {
+      "disputeId": "ultimate-beliefs-beyond-proof:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "ultimate-beliefs-beyond-proof",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "It bears directly on epistemic modesty, yet placing commitments beyond proof does not positively establish that the God commitment responds to reality."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "The claim materially advances epistemic modesty but does not positively validate belief in God."
+        }
+      }
+    },
+    {
+      "disputeId": "ultimate-beliefs-beyond-proof:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "ultimate-beliefs-beyond-proof",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 65,
+          "rationale": "The central contrast is easy to recover, but “proof,” “shallow truths,” and “greater beliefs” lack definitions or a stable comparison class."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "Terms such as shallow, greater, and beyond proof lack defined criteria or a clear proof standard."
+        }
+      }
+    },
+    {
+      "disputeId": "ultimate-beliefs-beyond-proof:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "ultimate-beliefs-beyond-proof",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 60,
+          "rationale": "The categorical phrasing overstates what can be proved and risks treating evidentially supported ultimate commitments as though they share one epistemic status."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "The limited conclusion resists proof demands, though its categorical wording overstates the boundary."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence changes completion of an identified pro burden beyond effects already represented in the individual move ratings, responsiveness, burden contact, importance, and section weighting.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent completion criterion remains after the locked scoring mechanics represent the pro side's evidential, comparative-religion, naturalistic, and falsifiability arguments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate consequence exists that is both debate-wide and independent of the scored moves and locked aggregation mechanics.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "importance",
+              "section weights",
+              "responsiveness",
+              "burden contact"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not alter burden completion independently of the ordinary scoring mechanics, so a nonzero adjustment would duplicate existing capture."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence changes completion of a named pro burden beyond the locked move-level mechanics.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the rated moves, burden contact, responsiveness, importance, and section structure.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence eligible for a separate adjustment was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "importance",
+              "section weights",
+              "responsiveness",
+              "burden contact"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not alter any independently established pro burden-completion determination."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence changes completion of an identified con burden beyond effects already represented in the individual move ratings, responsiveness, burden contact, importance, and section weighting.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No independent completion criterion remains after the locked scoring mechanics represent the con side's worldview, epistemic, moral-grounding, incarnation, and suffering arguments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate consequence exists that is both debate-wide and independent of the scored moves and locked aggregation mechanics.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "importance",
+              "section weights",
+              "responsiveness",
+              "burden contact"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not alter burden completion independently of the ordinary scoring mechanics, so a nonzero adjustment would duplicate existing capture."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence changes completion of a named con burden beyond the locked move-level mechanics.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the rated moves, burden contact, responsiveness, importance, and section structure.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence eligible for a separate adjustment was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "importance",
+              "section weights",
+              "responsiveness",
+              "burden contact"
+            ],
+            "counterfactual": "Removing the proposed adjustment would not alter any independently established con burden-completion determination."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 31,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/inventory/inventory.json",
+      "sha256": "4749b792a3e5240736f55914516c25fd03fd2834da03f44602d8a6ec513477eb"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/judgments/pass-a/output.json",
+      "sha256": "9db13369f662c5ae44cf79446f14418f4dfd2f0e8bc6e1b5d0bd9feed397df29"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-219/judgments/pass-b/output.json",
+      "sha256": "08778018da3829c0ec9738830831da40568d5e186f317a3caff025e7efd75500"
+    }
+  }
+}
