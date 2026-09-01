@@ -3529,16 +3529,40 @@ a {
   border-top: 1px solid rgba(38, 91, 105, 0.18);
 }
 
-.backend-report-accordion summary {
+.backend-report-panel {
+  overflow: hidden;
+  background: rgba(251, 253, 252, 0.96);
+  border: 1px solid rgba(38, 91, 105, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(21, 57, 67, 0.09);
+}
+
+.backend-report-header {
+  display: grid;
+  gap: 6px;
+  padding: clamp(20px, 3vw, 28px);
   background:
     radial-gradient(circle at right center, rgba(211, 93, 71, 0.13), transparent 34%),
     linear-gradient(90deg, rgba(239, 246, 246, 0.94), rgba(255, 247, 239, 0.92));
+  border-bottom: 1px solid rgba(38, 91, 105, 0.2);
 }
 
-.backend-report-accordion summary:hover {
-  background:
-    radial-gradient(circle at right center, rgba(211, 93, 71, 0.19), transparent 36%),
-    linear-gradient(90deg, rgba(229, 241, 240, 0.97), rgba(255, 241, 229, 0.95));
+.backend-report-header h2,
+.backend-report-header p {
+  margin: 0;
+}
+
+.backend-report-header h2 {
+  color: #173f4c;
+  font-size: clamp(1.45rem, 2.8vw, 2rem);
+  line-height: 1.08;
+}
+
+.backend-report-header p {
+  color: #4b6268;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .backend-report-content {
@@ -3577,6 +3601,49 @@ a {
 }
 
 .backend-report-library {
+  display: grid;
+  gap: clamp(30px, 5vw, 48px);
+}
+
+.backend-report-group {
+  display: grid;
+  gap: 16px;
+}
+
+.backend-report-group-heading {
+  display: grid;
+  gap: 5px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(38, 91, 105, 0.2);
+}
+
+.backend-report-group-heading > span {
+  color: #b34835;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.backend-report-group-heading h3,
+.backend-report-group-heading p {
+  margin: 0;
+}
+
+.backend-report-group-heading h3 {
+  color: #173f4c;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  line-height: 1.15;
+}
+
+.backend-report-group-heading p {
+  max-width: 760px;
+  color: #4b6268;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.backend-report-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(18px, 3vw, 28px);
@@ -5866,7 +5933,7 @@ a {
   .backend-summary-panel,
   .backend-selection,
   .backend-report-content,
-  .backend-report-library {
+  .backend-report-grid {
     grid-template-columns: 1fr;
   }
 

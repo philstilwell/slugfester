@@ -633,20 +633,24 @@ export function backendSeo({ legacy = false } = {}) {
         label: "PDF report: Why Do the Theist Sides Score Lower?"
       },
       {
-        href: "/output/pdf/are-theist-arguments-more-often-slogan-like.pdf",
-        label: "PDF report: Are Theist Arguments More Often Slogan-Like?"
-      },
-      {
-        href: "/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf",
-        label: "PDF report: Are All Slugfester Assessments on the Same Scale?"
-      },
-      {
         href: "/output/pdf/where-is-the-theist-disadvantage-largest.pdf",
         label: "PDF report: Where Is the Theist Disadvantage Largest?"
       },
       {
+        href: "/output/pdf/are-theist-arguments-more-often-slogan-like.pdf",
+        label: "PDF report: Are Theist Arguments More Often Slogan-Like?"
+      },
+      {
+        href: "/output/pdf/does-the-con-side-have-an-inherent-advantage.pdf",
+        label: "PDF report: Does the CON Side Have an Inherent Advantage?"
+      },
+      {
         href: "/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf",
         label: "PDF report: Debates Are Usually Lost Without a Named Fallacy"
+      },
+      {
+        href: "/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf",
+        label: "PDF report: Are All Slugfester Assessments on the Same Scale?"
       },
       {
         href: "/output/pdf/do-slugfester-rankings-measure-stable-performance.pdf",
