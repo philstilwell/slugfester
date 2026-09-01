@@ -554,6 +554,18 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
     evidence = results["evidence_bands"]
     subsets = results["subset_checks"]
     legacy = results["legacy_closed_findings"]
+    epistemic_core_labels = {
+        "Logical coherence",
+        "Evidence and warrant",
+        "Responsiveness",
+        "Calibration and charity",
+    }
+    epistemic_core_points = sum(
+        row["score_gap_contribution"]
+        for row in dimensions
+        if row["label"] in epistemic_core_labels
+    )
+    epistemic_core_share = epistemic_core_points / primary["mean_margin"]
     story: list[Flowable] = []
 
     # Cover
@@ -620,10 +632,18 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         "The epistemic bleed-through hypothesis claims that faith is not contained within a private religious compartment. A permission structure learned inside faith - accepting testimony, experience, revelation, theological possibility, or inherited doctrine without the degree of public validation demanded elsewhere - can travel with the reasoner into a public debate. Once there, it appears as a lower threshold for treating a premise as established and a higher tolerance for gaps between premise and conclusion.",
         st["body"],
     ))
+    story.append(p(
+        "The relevant contrast is therefore not between people who use assumptions and people who do not. Every argument begins from some background commitments. The contrast concerns what must happen before those commitments may obligate an opponent. A private experience, sacred authority, or internally coherent doctrine can be a sincere reason for the believer while still failing as a public reason for someone who does not already accept the source. Bleed-through occurs when that difference is blurred and the personal license to believe is treated as though it were shared evidential entitlement.",
+        st["body"],
+    ))
     story.append(causal_chain_chart())
     story.append(p("Figure 2. The proposed causal chain. The score data directly measure public warrant, inference, calibration, response, and final performance. They do not directly measure the speaker's private faith psychology.", st["caption"]))
     story.append(p(
         "The hypothesis earns support only if the score disadvantage has the right internal structure. A generic worldview disadvantage could arise from topic selection, weak speakers, affirmative burdens, or evaluator preference. Epistemic bleed-through instead predicts a linked profile: claims will be relevant but under-supported; confidence will exceed warrant; alternatives will be treated incompletely; and negative difficulties for natural explanations will be converted too quickly into positive evidence for theism.",
+        st["body"],
+    ))
+    story.append(p(
+        "This makes the hypothesis more demanding than the loose observation that theists lose more often. It could have failed even if the overall score gap remained. For example, a gap concentrated in relevance would suggest misunderstanding of the motions; a gap confined to affirmative constructives would suggest burden asymmetry; and a gap produced by a few repeat speakers would suggest corpus composition. The evidential force comes from finding the specific pattern the mechanism predicts while those alternative patterns are weak or absent.",
         st["body"],
     ))
     story.append(p("Operational predictions", st["h2"]))
@@ -656,6 +676,14 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
     ]
     story.append(data_table(["Side", "Moves", "Mean evidence", "Below 70", "Below 80"], rows, [1.65 * inch, 0.68 * inch, 1.0 * inch, 0.86 * inch, 0.86 * inch], st, aligns={1: "RIGHT", 2: "RIGHT", 3: "RIGHT", 4: "RIGHT"}))
     story.append(Spacer(1, 7))
+    story.append(p(
+        "A score below 70 does not mean that a proposition is false. It means that the move has not supplied enough public warrant for the argumentative weight placed upon it. That distinction matters. The diagnosis is not that theists never cite facts, scholarship, or experience; it is that those materials more often remain one inferential step short of the conclusion. The missing step may be source independence, a likelihood comparison, a reason to exclude natural alternatives, or a justification for moving from possibility to probability.",
+        st["body"],
+    ))
+    story.append(p(
+        "The distribution also matters more than an isolated average. Nearly two thirds of theist moves fall below 70, compared with fewer than one quarter of non-theist moves. With almost identical move counts, this is not an artifact of one side having more arguments selected for analysis. It is a recurring difference in how much evidential work the chosen premises are able to perform.",
+        st["body"],
+    ))
     story.append(callout(
         "Why this supports bleed-through",
         "The pattern is not simply that theists lose more debates. Their moves repeatedly occupy the rubric bands reserved for conclusions carried by assertion, authority, anecdote, selective evidence, speculation, or a missing verification step. That is the empirical signature the hypothesis predicts.",
@@ -690,6 +718,10 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         "The load-bearing comparison is especially damaging to the rival explanation. Importance-3 moves produce a 9.25-point evidence gap, larger than the all-move gap, and 61.1% of theist load-bearing moves fall below 70 versus 18.5% of non-theist load-bearing moves. The weakness therefore intensifies where the worldview's central argumentative commitments are most exposed.",
         st["body"],
     ))
+    story.append(p(
+        "The reversed-orientation check is equally important. When the theist side is stored as con, it can often win by showing that the affirmative has not met its burden; it need not construct a complete alternative worldview. Yet the evidence gap remains 5.06 points. The smaller subset warrants caution about the exact size, but its direction shows that the deficit is not created solely by asking theists to prove more. Constructives, replies, central moves, and reversed side placement all point the same way.",
+        st["body"],
+    ))
     story.append(PageBreak())
 
     # Logic and calibration
@@ -715,6 +747,10 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
     ]
     story.append(paired_percent_chart(structural_items, "Calibration, response, and treatment of alternatives", height=250, note="Higher is worse except for strong reply contact, where higher is better."))
     story.append(p("Figure 5. Closed subfield findings from 146 debates and 2,800 moves; reply contact uses 2,140 replies and charity uses 2,427 tested moves.", st["caption"]))
+    story.append(p(
+        "These findings show why 'needs more citations' is too shallow a diagnosis. Under-substantiation changes the rest of the argument. When weak support is treated as sufficient, conclusions are stated too strongly; when confidence is already high, rival explanations are less likely to receive their strongest formulation; and replies more often answer a convenient fragment instead of the opponent's load-bearing point. The evidence, logic, calibration, and response deficits are therefore not four unrelated complaints. They are the expected downstream expressions of the same permissive epistemic threshold.",
+        st["body"],
+    ))
     story.append(PageBreak())
 
     # Interpretation of structural findings
@@ -739,6 +775,14 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         "Relevance and burden contributes only 0.21 points, or 3.3% of the gap. This is decisive for interpretation. The theist side is generally addressing the motion and its assigned burden. The disadvantage arises after contact with the right subject: in what is accepted as support, what is inferred from it, how confidently the result is stated, and whether the strongest alternatives are answered.",
         st["body"],
     ))
+    story.append(p(
+        f"The four dimensions most directly tied to epistemic discipline - evidence and warrant, logical coherence, responsiveness, and calibration and charity - contribute {epistemic_core_points:.2f} of the {primary['mean_margin']:.2f} points in the overall gap, or {epistemic_core_share:.1%}. That concentration gives the hypothesis explanatory specificity. It is not being rescued after the fact by counting every weakness as faith-related; the great majority of the measured disadvantage lies exactly where the proposed mechanism says it should lie.",
+        st["body"],
+    ))
+    story.append(p(
+        "Convergence is important because each measure constrains the interpretation of the others. Low evidence scores alone might reflect unusually difficult factual topics. Low response scores alone might reflect debate style. Overstatement alone might reflect rhetoric. Their repeated co-occurrence, together with a small relevance gap and persistence under role controls, identifies a more coherent pattern: the public standard of entitlement is too permissive, and the argument behaves accordingly at each later stage.",
+        st["body"],
+    ))
     story.append(callout(
         "The central inference",
         "A worldview-specific pattern concentrated in warrant, inference, calibration, and alternative handling - but not relevance - is more naturally explained by a difference in epistemic permission than by generic debating incompetence or topical mismatch.",
@@ -760,6 +804,15 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         if index == 2:
             story.append(PageBreak())
             story.extend(section_heading("6. Representative locations, continued", st))
+    story.append(p("What the cases jointly show", st["h2"]))
+    story.append(p(
+        "The subject matter changes across these examples - religious experience, origins, morality, cellular organization, and ultimate belief - but the argumentative defect is stable. In each case, the premise can make the theistic conclusion intelligible or compatible with what is observed. What it does not yet do is discriminate that conclusion from serious alternatives. The argument then treats intelligibility, compatibility, or an explanatory gap as though it supplied comparative confirmation.",
+        st["body"],
+    ))
+    story.append(p(
+        "That repeated substitution is the concrete form of bleed-through. A claim already regarded as permissible within the faith framework is not forced through the additional public tests that would show why an outsider should prefer it: independent verification, relative likelihood, risky prediction, exclusion of alternatives, or calibrated uncertainty. The result is not always an absurd argument. More often it is an incomplete argument presented with the confidence of a completed one.",
+        st["body"],
+    ))
     story.append(PageBreak())
 
     # Rival explanations
@@ -778,12 +831,24 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         "No single observational dataset eliminates every rival. The defense is cumulative: burden, role, relevance, inventory size, and repeated-speaker concentration each fail to explain the full pattern. Epistemic bleed-through accounts for both the direction and the internal structure of the difference with fewer auxiliary assumptions.",
         st["body"],
     ))
+    story.append(p(
+        "Some rivals may still contribute modestly. Theist motions may be harder on average, affirmative advocacy may impose costs, and the scoring system may retain preferences that blind human replication should test. But a contributing factor is not automatically the main explanation. To displace bleed-through, a rival must explain why the deficit is largest in warrant and inference, why it intensifies in load-bearing moves, why overstatement and weak reply contact accompany it, why relevance contributes so little, and why the gap survives the major role checks. None of the available rivals presently explains that full configuration.",
+        st["body"],
+    ))
+    story.append(p(
+        "The hypothesis is therefore supported comparatively, not merely because it can be made consistent with the observations. It earns preference because it anticipated the observations as a connected set. A lower public-validation threshold naturally produces weak substantiation, stronger-than-supported conclusions, less pressure to test alternatives, and replies that stop before the opponent's decisive route is fully met. One mechanism explains several otherwise separate score differences.",
+        st["body"],
+    ))
     story.append(PageBreak())
 
     # Causal status
     story.extend(section_heading("8. The causal status of the defense", st))
     story.append(p(
         "The score decomposition establishes a mechanical claim: theists score lower partly because the rubric assigns their moves lower evidence/warrant, logic, response, calibration/charity, and precision ratings. It also establishes a descriptive claim: the relevant defects are much more concentrated on the theist side. The final step - identifying faith-permissive standards as the source of those defects - is an inference to the best explanation.",
+        st["body"],
+    ))
+    story.append(p(
+        "An inference to the best explanation is not a guess inserted where direct measurement is absent. It compares candidate causes by asking which one predicted the observed pattern, fits the known mechanism, survives discriminating checks, and explains the most facts without special pleading. On those criteria, epistemic bleed-through is stronger than the alternatives currently available. The causal claim should remain revisable, but it is already evidentially asymmetric: the data fit it substantially better than they fit a neutral story in which worldview-specific standards play no role.",
         st["body"],
     ))
     story.append(callout(
@@ -812,6 +877,10 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
     story.append(Spacer(1, 10))
     story.append(p(
         "This limitation does not reduce the defense to neutrality. Observational explanations are often justified by prediction, convergence, mechanism, and failure of rivals. The proper conclusion is therefore neither 'faith causation has been experimentally proven' nor 'the data say nothing about faith.' It is that epistemic bleed-through is the best-supported current explanation of the observed score structure and merits targeted causal testing.",
+        st["body"],
+    ))
+    story.append(p(
+        "The claim is also about argumentative practice, not intellectual worth. It does not imply that every theist reasons poorly, that non-theists are uniformly rigorous, or that religious claims are false by definition. It says something narrower and testable: in this corpus, the standards used to license theistic conclusions more often fail to supply the common evidential ground required to make those conclusions rationally compelling to an opponent.",
         st["body"],
     ))
     story.append(PageBreak())
@@ -877,6 +946,11 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         ["Calibration and charity", "10%", "Confidence fits warrant and alternatives are represented fairly"],
     ]
     story.append(data_table(["Dimension", "Weight", "Operational focus"], rubric_rows, [1.65 * inch, 0.68 * inch, 3.82 * inch], st))
+    story.append(Spacer(1, 8))
+    story.append(p(
+        "The paired design matters because every debate supplies both sides of the comparison. The analysis is not comparing theists in one set of topics with non-theists in an unrelated set; it asks how the opposed sides performed inside the same debate, under the same motion, transcript, and scoring rules. The dimension decomposition then shows where the paired margin was produced. This does not solve speaker repetition or topic selection, but it sharply reduces the possibility that the headline gap is merely a by-product of unrelated debate conditions.",
+        st["body"],
+    ))
     story.append(PageBreak())
 
     # Caveats and sources
@@ -903,13 +977,46 @@ def build_story(results: dict, base_results: dict, st: dict[str, ParagraphStyle]
         ["Interactive HTML report", "docs/analysis/theist-argument-weaknesses-2026-09-01/report.html"],
     ]
     story.append(data_table(["Artifact", "Repository path"], source_rows, [1.5 * inch, 4.65 * inch], st))
-    story.append(Spacer(1, 9))
+    story.append(PageBreak())
+
+    # Conclusion
+    story.extend(section_heading("12. Conclusion: the public-evidence deficit is the point", st))
     story.append(callout(
-        "Conclusion",
-        "The score data do more than show that theists lost more often. They reveal a coherent epistemic profile: public warrant is thinner, inferential transitions are less disciplined, confidence more often outruns support, and alternatives receive weaker contact. Because this is the profile predicted by faith-permissive standards migrating into public reasoning, the epistemic bleed-through hypothesis is the best-supported current explanation of why the theist sides score lower in this corpus.",
+        "The finding in one sentence",
+        "In this corpus, theists do not score lower mainly because they address the wrong questions or happen to occupy the harder side; they score lower because they more often treat what faith permits them to believe as though it were what shared evidence compels an opponent to accept.",
         st,
         background=RUST_LIGHT,
         accent=RUST,
+    ))
+    story.append(Spacer(1, 9))
+    story.append(p(
+        f"The headline result is substantial: non-theists score higher in {primary['non_theist_higher']} of {primary['n_debates']} debates, with only {primary['theist_higher']} debates favoring the theist side and {primary['ties']} ties. The mean advantage is {primary['mean_margin']:.2f} points. But a win-loss count, by itself, would not defend the hypothesis. The defense comes from opening the score difference and asking exactly what produced it.",
+        st["body"],
+    ))
+    story.append(p("The structure of the deficit", st["h2"]))
+    story.append(p(
+        f"The answer is strikingly concentrated. Evidence and warrant, logical coherence, responsiveness, and calibration and charity together account for {epistemic_core_points:.2f} points, or {epistemic_core_share:.1%}, of the {primary['mean_margin']:.2f}-point gap. Relevance and burden accounts for only 0.21 points. Theists are generally debating the assigned issue; the loss occurs in whether their reasons publicly establish the claim, whether the conclusion follows at the stated strength, whether the strongest objection is actually answered, and whether confidence is proportioned to support.",
+        st["body"],
+    ))
+    story.append(p(
+        "The surrounding diagnostics reinforce that interpretation. Theist moves fall below 70 on evidence 61.5% of the time, compared with 23.3% for non-theist moves. Overstatement appears in 72.8% of theist moves, and material or radical overstatement in 36.3%. Strong reply contact is much less common. The evidence gap remains in constructives, replies, load-bearing moves, and the subset where the theist argues con. These are not random blemishes around an otherwise neutral result. They form the connected epistemic profile predicted by bleed-through.",
+        st["body"],
+    ))
+    story.append(p("The explanatory verdict", st["h2"]))
+    story.append(p(
+        "Faith traditions can rationally license commitment for insiders through revelation, testimony, religious experience, inherited authority, or a sense of theological fit. Public debate imposes a further demand: the reasons must be inspectable and weight-bearing for people who do not already grant those sources. The recurring defect in these debates is the failure to complete that translation. Compatibility is offered where comparative confirmation is needed; possibility stands in for probability; a gap in one natural account becomes evidence for agency; and a personally meaningful explanation is presented as a publicly established one.",
+        st["body"],
+    ))
+    story.append(p(
+        "Burden asymmetry, topic selection, repeated speakers, and evaluator effects remain legitimate qualifications, but they do not presently explain the pattern as well. They do not jointly predict the concentration in warrant and inference, the intensified deficit in load-bearing moves, the accompanying overstatement and weak reply contact, the small relevance contribution, and persistence under role controls. Epistemic bleed-through does. It unifies the findings with one mechanism and does so without claiming that every theist, every religious argument, or every act of faith exhibits the defect.",
+        st["body"],
+    ))
+    story.append(callout(
+        "Final conclusion",
+        "The best-supported reading of the SLUGFESTER data is that the theist-side disadvantage is substantially epistemic. Faith-permissive standards appear to carry into public reasoning, where they license premises too early, support inferential bridges too weakly, and sustain conclusions too confidently. The result is incomplete substantiation presented as completed argument. That is the precise weakness recorded by the scores, and it is why the epistemic bleed-through hypothesis presently offers the strongest explanation of why the theist sides score lower.",
+        st,
+        background=TEAL_LIGHT,
+        accent=TEAL,
     ))
     return story
 
