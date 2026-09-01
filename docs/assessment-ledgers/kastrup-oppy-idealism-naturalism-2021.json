@@ -1,0 +1,793 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "230",
+  "debateId": "kastrup-oppy-idealism-naturalism-2021",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/8WK-auo8Miw/captions.srv3.xml",
+      "sha256": "984dd6820aac2aa82b807745819bd02aca0d9cca70928821e423b885c8939448",
+      "bytes": 596445
+    },
+    "events": {
+      "path": ".assessment-cache/captions/8WK-auo8Miw/events.json",
+      "sha256": "fbab78d940b8b95379d1cd3d045066ee1623b1771ad80578b0bb6eb6c6f92846",
+      "bytes": 256139
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/8WK-auo8Miw/transcript.txt",
+      "sha256": "f49b3e31778e3c278b0f60605edb2c3e2d240d54b7da0a08531e62c27066d48f",
+      "bytes": 100970
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/8WK-auo8Miw/manifest.json",
+      "sha256": "75e4cf1e36221b691aa2bec8bce5f7a3ce57ef55e240640c888fca3cf407f6cd",
+      "bytes": 1019
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/authorization.json",
+      "sha256": "51acd1048b721253f2da4dd521411cbc86dc2a446aabc332712978d7ebc17b77",
+      "bytes": 5271
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/manifest.json",
+      "sha256": "978249ed1711b1e1ab753020a7a8a103dc928bd6abfd5cb4e7aa26d16c740099",
+      "bytes": 5467
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/source/source-lock.json",
+      "sha256": "cfea8ca365af14be71f369ba25a00f6e7332d50cac08cd715d54dacedd429d05",
+      "bytes": 5228
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/inventory/inventory.json",
+      "sha256": "fce3edc787269ae11e73c54824742b3e443d81c1e21df1da9ebbe04fac6722df",
+      "bytes": 73714
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/judgments/judgment-packet.json",
+      "sha256": "55985aa06638d84e821b3980b5e1cc94e1adb62ddc10988dd16e59e1122ba252",
+      "bytes": 4969
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/judgments/execution.json",
+      "sha256": "ce94a49dfc73fadee90ce285b8cf4a6a41e49671f5bae0317344f04511f368cd",
+      "bytes": 1985
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/judgments/pass-a/output.json",
+      "sha256": "bf963566a4ea62978c12ee67fc7546a9c4a55290d15a7630bc0dc4158709a06c",
+      "bytes": 42389
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/judgments/pass-b/output.json",
+      "sha256": "12bd6151a51982823769c28211a08f84aea0f65f1f1df76be23883db08bbc56a",
+      "bytes": 46525
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/disagreements/disagreements.json",
+      "sha256": "1f69374128f079057abdbec96e1f0d686e1b5604a475709b5be949409bc3d757",
+      "bytes": 11891
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/audio/audio-verification.json",
+      "sha256": "fe92ef882f9996e383c48201d9d0e315fe67dc23218aaf521d482baa44b74f0f",
+      "bytes": 1133
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/adjudication/packet.json",
+      "sha256": "0a8dce4406c080239e1feb101872bf9211b8603ef234c2f16e6fed032c3fc385",
+      "bytes": 21486
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/adjudication/output.json",
+      "sha256": "b47df7a4e11bfdb62a69575a07117c494cba0dd536be238d608f5811bb13ad4d",
+      "bytes": 3102
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/final-ledger/final-ledger.json",
+      "sha256": "033ab5640d2d39f53048690255772ddeed832ea712ac8a3ffad5bce2fe13e765",
+      "bytes": 210424
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/score-pass/input.json",
+      "sha256": "f97e06950065385cec7d7fc57264d3aec2218bf875b5128d2d821fef673c3f14",
+      "bytes": 956
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/score-pass/output.json",
+      "sha256": "9528a1ffd53d2c9bfefaeca8aac21be367cca6fb7388ff1910cd9ac5f072fabe",
+      "bytes": 17931
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/score-pass/attestation.json",
+      "sha256": "dd120ca49c1443b531c5313c1730178cec648a1c172fd08cfc1de8604f70a2a9",
+      "bytes": 824
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/publication/output.json",
+      "sha256": "73ae831368b41d793dbeb9e9f5539ecafab206b0e2e501c595fe68b3b51b32cd",
+      "bytes": 77640
+    },
+    "events": {
+      "path": ".assessment-cache/captions/8WK-auo8Miw/events.json",
+      "sha256": "fbab78d940b8b95379d1cd3d045066ee1623b1771ad80578b0bb6eb6c6f92846",
+      "bytes": 256139
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/8WK-auo8Miw/transcript.txt",
+      "sha256": "f49b3e31778e3c278b0f60605edb2c3e2d240d54b7da0a08531e62c27066d48f",
+      "bytes": 100970
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/publication/content-parity-audit.json",
+      "sha256": "959819d4e9bc3ad41c8834b9122bebb245ab164a826d6d9cd4c578d0f8a63841",
+      "bytes": 6909
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/publication/correction-2-rhetorical-tags.json",
+      "sha256": "52552d2f1ddf2e3838b828f7abf76bf0b77e12e7eb8fc5f0ea0158606695b8e2",
+      "bytes": 1429
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/publication/rhetorical-tag-audit.json",
+      "sha256": "321aea78fa857073916f591a57f14b8bc3e9c558af0ca0a4173276635403b597",
+      "bytes": 8226
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "5fea88069951fe5d7a5eab532a57cd2bb8482da2372d46ae1bc2bc7c5de6a0a9",
+      "bytes": 4613
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "ee4c451c37ef3ce3a774245231f45e67d9899f92229fd6a8a03534d612c5f0ac",
+      "bytes": 3027
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "230",
+    "debateId": "kastrup-oppy-idealism-naturalism-2021",
+    "sections": [
+      {
+        "sectionId": "positions-and-labels",
+        "title": "Positions, naturalism, and physicalism",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-01",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 83,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 81
+                },
+                "score": 79
+              },
+              {
+                "moveId": "pro-02",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 87,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 83
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pro-04",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 88,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 83
+                },
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-01",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 85
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-02",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 89
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-03",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 75
+                },
+                "score": 79
+              },
+              {
+                "moveId": "con-05",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 87
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "reduction-and-identity",
+        "title": "Reduction, explanatory vocabularies, and identity",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-05",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 77
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-04",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 91
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-06",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 85
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-07",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-09",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 90
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "qualities-and-knowledge",
+        "title": "Conscious qualities and knowledge",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-06",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 74
+                },
+                "score": 82
+              },
+              {
+                "moveId": "pro-17",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 82
+                },
+                "score": 87
+              },
+              {
+                "moveId": "pro-18",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 90,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 71
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "con-08",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-17",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 85
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-18",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 65,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 68
+                },
+                "score": 68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "perception-and-external-reality",
+        "title": "Perception, theoretical entities, and external reality",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "pro-03",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 86,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 91
+                },
+                "score": 83
+              },
+              {
+                "moveId": "pro-14",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 91,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 83
+                },
+                "score": 85
+              },
+              {
+                "moveId": "pro-15",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 84,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 71
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "con-12",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 79,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 71
+                },
+                "score": 73
+              },
+              {
+                "moveId": "con-13",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 67
+                },
+                "score": 76
+              },
+              {
+                "moveId": "con-14",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 79
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "dependence-and-dissociation",
+        "title": "Mind-brain dependence, dissociation, and altered states",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-08",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 84,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 84
+                },
+                "score": 79
+              },
+              {
+                "moveId": "pro-09",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 81
+                },
+                "score": 82
+              },
+              {
+                "moveId": "pro-10",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 79,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 74
+                },
+                "score": 76
+              },
+              {
+                "moveId": "pro-11",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 83,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 95
+                },
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-10",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 91
+                },
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "causal-structure-and-explanation",
+        "title": "Causal structure, regress, and explanation",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-07",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 83,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 81
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-12",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 79,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 83
+                },
+                "score": 74
+              },
+              {
+                "moveId": "pro-13",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 87
+                },
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-11",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 94
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "parsimony-and-theory-choice",
+        "title": "Parsimony and final theory comparison",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-16",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 89,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 94
+                },
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-15",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 90,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-16",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 87,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 92
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 81.46,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      },
+      "con": {
+        "weightedSectionMean": 82.36,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
+    },
+    "winner": "con",
+    "winningMargin": 1,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 36,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

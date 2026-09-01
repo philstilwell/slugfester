@@ -1,0 +1,404 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "debateNumber",
+    "reviewerPass",
+    "reviewedMoveIds",
+    "definitionReview",
+    "candidateReviewSemantics",
+    "candidateReviews",
+    "reviewedOverallBlunderIds",
+    "overallDefinitionReview",
+    "overallCandidateReviews"
+  ],
+  "properties": {
+    "debateNumber": {
+      "type": "string",
+      "const": "230"
+    },
+    "reviewerPass": {
+      "type": "string",
+      "const": "blind-review-a"
+    },
+    "reviewedMoveIds": {
+      "type": "array",
+      "minItems": 36,
+      "maxItems": 36,
+      "items": {
+        "type": "string",
+        "enum": [
+          "pro-01",
+          "con-01",
+          "pro-02",
+          "con-02",
+          "pro-04",
+          "con-03",
+          "con-05",
+          "pro-05",
+          "con-04",
+          "con-06",
+          "con-07",
+          "con-09",
+          "pro-06",
+          "con-08",
+          "pro-17",
+          "con-17",
+          "pro-18",
+          "con-18",
+          "pro-03",
+          "con-12",
+          "pro-14",
+          "con-13",
+          "pro-15",
+          "con-14",
+          "pro-08",
+          "con-10",
+          "pro-09",
+          "pro-10",
+          "pro-11",
+          "pro-07",
+          "con-11",
+          "pro-12",
+          "pro-13",
+          "pro-16",
+          "con-15",
+          "con-16"
+        ]
+      }
+    },
+    "definitionReview": {
+      "type": "array",
+      "minItems": 36,
+      "maxItems": 36,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "definitionsReviewed",
+          "seriousCandidateLabels"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-01",
+              "con-01",
+              "pro-02",
+              "con-02",
+              "pro-04",
+              "con-03",
+              "con-05",
+              "pro-05",
+              "con-04",
+              "con-06",
+              "con-07",
+              "con-09",
+              "pro-06",
+              "con-08",
+              "pro-17",
+              "con-17",
+              "pro-18",
+              "con-18",
+              "pro-03",
+              "con-12",
+              "pro-14",
+              "con-13",
+              "pro-15",
+              "con-14",
+              "pro-08",
+              "con-10",
+              "pro-09",
+              "pro-10",
+              "pro-11",
+              "pro-07",
+              "con-11",
+              "pro-12",
+              "pro-13",
+              "pro-16",
+              "con-15",
+              "con-16"
+            ]
+          },
+          "definitionsReviewed": {
+            "type": "integer",
+            "const": 13
+          },
+          "seriousCandidateLabels": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "Appeal to authority",
+                "Argument from ignorance",
+                "Begging the question",
+                "Equivocation",
+                "Red herring",
+                "Special pleading",
+                "Ambiguity effect",
+                "Authority bias",
+                "Base-rate neglect",
+                "Belief bias",
+                "Confirmation bias",
+                "Scope neglect",
+                "Subjective validation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "candidateReviewSemantics": {
+      "type": "string",
+      "const": "Complete table of every serious card candidate considered after testing all 13 definitions; accepted and rejected decisions are both preserved."
+    },
+    "candidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "label",
+          "type",
+          "decision",
+          "rationale",
+          "url",
+          "context"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-01",
+              "con-01",
+              "pro-02",
+              "con-02",
+              "pro-04",
+              "con-03",
+              "con-05",
+              "pro-05",
+              "con-04",
+              "con-06",
+              "con-07",
+              "con-09",
+              "pro-06",
+              "con-08",
+              "pro-17",
+              "con-17",
+              "pro-18",
+              "con-18",
+              "pro-03",
+              "con-12",
+              "pro-14",
+              "con-13",
+              "pro-15",
+              "con-14",
+              "pro-08",
+              "con-10",
+              "pro-09",
+              "pro-10",
+              "pro-11",
+              "pro-07",
+              "con-11",
+              "pro-12",
+              "pro-13",
+              "pro-16",
+              "con-15",
+              "con-16"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "reviewedOverallBlunderIds": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "enum": [
+          "overall-pro-1",
+          "overall-pro-2",
+          "overall-pro-3",
+          "overall-con-1",
+          "overall-con-2",
+          "overall-con-3"
+        ]
+      }
+    },
+    "overallDefinitionReview": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "definitionsReviewed",
+          "seriousCandidateLabels"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string",
+            "enum": [
+              "overall-pro-1",
+              "overall-pro-2",
+              "overall-pro-3",
+              "overall-con-1",
+              "overall-con-2",
+              "overall-con-3"
+            ]
+          },
+          "definitionsReviewed": {
+            "type": "integer",
+            "const": 13
+          },
+          "seriousCandidateLabels": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "Appeal to authority",
+                "Argument from ignorance",
+                "Begging the question",
+                "Equivocation",
+                "Red herring",
+                "Special pleading",
+                "Ambiguity effect",
+                "Authority bias",
+                "Base-rate neglect",
+                "Belief bias",
+                "Confirmation bias",
+                "Scope neglect",
+                "Subjective validation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "overallCandidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "label",
+          "type",
+          "decision",
+          "rationale",
+          "url"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string",
+            "enum": [
+              "overall-pro-1",
+              "overall-pro-2",
+              "overall-pro-3",
+              "overall-con-1",
+              "overall-con-2",
+              "overall-con-3"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

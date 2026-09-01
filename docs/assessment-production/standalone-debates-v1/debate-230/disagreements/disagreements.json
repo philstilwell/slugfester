@@ -1,0 +1,324 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "230",
+  "debateId": "kastrup-oppy-idealism-naturalism-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-18:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "con-18",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Universal descriptiveness rebuts one contrast but not the quality-exclusion claim."
+        },
+        "option-b": {
+          "value": 66,
+          "rationale": "All theories being descriptions does not answer the alleged quantitative-to-qualitative asymmetry."
+        }
+      }
+    },
+    {
+      "disputeId": "con-18:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "con-18",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "The general observation is true but does not supply the missing qualitative bridge."
+        },
+        "option-b": {
+          "value": 61,
+          "rationale": "The universal-description assertion is plausible but lacks the differentiating analysis required."
+        }
+      }
+    },
+    {
+      "disputeId": "con-18:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "con-18",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "It answers the map-description rhetoric while leaving the decisive argument untouched."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "It addresses the map-description language while leaving the central qualitative exclusion claim unanswered."
+        }
+      }
+    },
+    {
+      "disputeId": "con-18:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "con-18",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "The objection is relevant but too abbreviated to defend naturalist preference."
+        },
+        "option-b": {
+          "value": 71,
+          "rationale": "The objection is relevant but too compressed to restore the naturalist explanatory burden."
+        }
+      }
+    },
+    {
+      "disputeId": "con-18:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "con-18",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The claim is understandable despite its abrupt and incomplete delivery."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "The basic objection is recoverable, though the interrupted formulation remains materially incomplete."
+        }
+      }
+    },
+    {
+      "disputeId": "con-18:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "con-18",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "It identifies common theoretical description but understates Kastrup's distinction."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "The response treats Kastrup's asymmetric description claim as a merely generic observation."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Any incompleteness in deriving dissociation, qualities, or superiority is already represented in the relevant move-level ratings and burden contact.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-explanatory-superiority",
+              "pro-subsidiary-dissociation"
+            ],
+            "completionCriterion": "Show comparative explanatory superiority while connecting universal subjectivity to individual minds.",
+            "relatedMoveIds": [
+              "pro-09",
+              "pro-11",
+              "con-10",
+              "pro-15",
+              "pro-18"
+            ],
+            "distinctConsequence": "No additional consequence remains separate from the scored explanatory and comparative gaps.",
+            "alreadyCapturedBy": [
+              "pro-09.logicalCoherence",
+              "pro-11.relevanceBurden",
+              "con-10.relevanceBurden",
+              "pro-15.evidenceWarrant",
+              "pro-18.calibrationCharity"
+            ],
+            "counterfactual": "Without those move-level captures, unresolved dissociation and comparison could reduce debate-wide burden completion."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence remains beyond the move-level treatment of ontology, dissociation, qualities, physics, and theory choice.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-explanatory-superiority",
+              "pro-central-consciousness-primitive",
+              "pro-central-physical-description-limit",
+              "pro-subsidiary-dissociation",
+              "pro-subsidiary-empirical-parsimony"
+            ],
+            "completionCriterion": "A nonduplicative consequence must independently alter completion of the motion-level explanatory-superiority burden.",
+            "relatedMoveIds": [
+              "pro-02",
+              "pro-06",
+              "pro-09",
+              "pro-11",
+              "pro-14",
+              "pro-17",
+              "pro-18"
+            ],
+            "distinctConsequence": "None; the central achievements and residual gaps are represented in the locked move ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without the existing move ratings, the theory's explanatory-gap strength and dissociation limitations would require separate treatment."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Any incompleteness in warranting identity or offering a full comparative naturalist case is already captured by the pertinent move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-naturalist-preference",
+              "con-central-identity-theory"
+            ],
+            "completionCriterion": "Warrant mind-brain identity and show its overall theoretical balance exceeds analytic idealism.",
+            "relatedMoveIds": [
+              "con-06",
+              "con-08",
+              "con-15",
+              "con-17",
+              "con-18"
+            ],
+            "distinctConsequence": "No unscored debate-wide consequence remains beyond the rated warrant and response limitations.",
+            "alreadyCapturedBy": [
+              "con-06.evidenceWarrant",
+              "con-08.evidenceWarrant",
+              "con-15.relevanceBurden",
+              "con-17.logicalCoherence",
+              "con-18.responsiveness"
+            ],
+            "counterfactual": "Without those move-level captures, the underdeveloped identity warrant and final comparison could reduce burden completion."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence remains beyond the move-level treatment of pluralism, identity, underdetermination, and theory selection.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-naturalist-preference",
+              "con-central-identity-theory",
+              "con-central-scientific-pluralism",
+              "con-subsidiary-idealist-explanatory-cost",
+              "con-subsidiary-empirical-underdetermination"
+            ],
+            "completionCriterion": "A nonduplicative consequence must independently alter completion of the motion-level naturalist-preference burden.",
+            "relatedMoveIds": [
+              "con-02",
+              "con-07",
+              "con-09",
+              "con-10",
+              "con-14",
+              "con-15",
+              "con-17",
+              "con-18"
+            ],
+            "distinctConsequence": "None; the central achievements and residual gaps are represented in the locked move ratings.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity"
+            ],
+            "counterfactual": "Without the existing move ratings, identity clarification and empirical underdetermination would require separate burden treatment."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 36,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/inventory/inventory.json",
+      "sha256": "fce3edc787269ae11e73c54824742b3e443d81c1e21df1da9ebbe04fac6722df"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/judgments/pass-a/output.json",
+      "sha256": "bf963566a4ea62978c12ee67fc7546a9c4a55290d15a7630bc0dc4158709a06c"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-230/judgments/pass-b/output.json",
+      "sha256": "12bd6151a51982823769c28211a08f84aea0f65f1f1df76be23883db08bbc56a"
+    }
+  }
+}

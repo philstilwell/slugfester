@@ -96200,6 +96200,649 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "230",
+    "id": "kastrup-oppy-idealism-naturalism-2021",
+    "date": "2026-09-01",
+    "title": "Does Analytic Idealism Better Explain Reality? Bernardo Kastrup vs. Graham Oppy (2021)",
+    "label": "Idealism, naturalism, and explanation",
+    "topicCategory": "mind-consciousness-free-will",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8WK-auo8Miw",
+    "duration": "1 hr 33 min",
+    "summary": "Kastrup makes consciousness and qualitative experience the central explanatory test; Oppy narrowly prevails by clarifying pluralistic naturalism, identity, underdetermination, and balanced theory choice.",
+    "motion": "Does analytic idealism better explain reality than scientific naturalism?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "This assessment uses the complete public-caption record of the debate, excluding moderator framing, procedural prompts, and the outro; quotations were checked against the locked caption events.",
+    "scoringNote": "These AI-generated scores were computed once from a frozen 36-move ledger after two isolated primary judgments and anonymous adjudication of all eight extracted disagreements. The displayed 81–82 result is immutable; publication prose and the later rhetorical-tag review could not change it.",
+    "sides": {
+      "pro": {
+        "name": "Analytic idealism better explains reality",
+        "speaker": "Bernardo Kastrup",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism remains preferable",
+        "speaker": "Graham Oppy",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 81,
+      "con": 82,
+      "winner": "con"
+    },
+    "quotes": {
+      "pro": {
+        "text": "pull the territory out of the map",
+        "context": "Kastrup uses this exact image to argue that qualitative experience cannot be recovered merely by manipulating a quantitative description of neural or physical structure."
+      },
+      "con": {
+        "text": "it's not eliminating either half",
+        "context": "Oppy uses this clarification to explain that his theoretical identity preserves both mental and neural vocabularies instead of reducing one discourse away."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "positions-and-labels",
+        "title": "Positions, naturalism, and physicalism",
+        "timebox": "2:11–8:58",
+        "score": {
+          "pro": 81,
+          "con": 81
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-01",
+              "time": "3:58",
+              "role": "Constructive",
+              "words": "Since naturalism excludes supernatural intervention rather than idealism, Kastrup concludes that analytic idealism can describe nature as spontaneously unfolding according to physical regularities.",
+              "score": 79,
+              "critique": "Strongest feature: Kastrup clearly separates naturalism from physicalism, placing analytic idealism within a lawful, spontaneously unfolding nature and blocking the easy but inaccurate inference that his consciousness-first ontology invokes supernatural intervention. Principal limitation: His appeal to what naturalism means to most philosophers is informal, and the assertion that supernaturalism excludes no serious participant reaches beyond what the terminological clarification requires. Live burden: Kastrup must proceed from compatibility to superiority, showing not merely that idealism may count as naturalistic but that its ontology explains consciousness, external reality, and scientific findings more economically than Oppy’s pluralist naturalism. Locked score: The locked score of 79 reflects the move performs useful conceptual housekeeping with good coherence and responsiveness, yet offers limited public warrant and only indirect support for the motion’s comparative explanatory claim.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-01",
+              "time": "2:11",
+              "role": "Constructive",
+              "words": "Because natural reality includes physical, chemical, biological, and psychological domains, Oppy concludes that scientific naturalism need not collapse every explanation into physics.",
+              "score": 81,
+              "critique": "Strongest feature: Oppy distinguishes pluralistic naturalism from physics-only reduction by placing physical, chemical, biological, and psychological phenomena within natural reality, a clarification directly establishing his position. Principal limitation: This enumeration remains ontologically underexplained: it neither supplies a substantive criterion for natural stuff nor shows why these heterogeneous domains constitute one unified reality, possess explanatory autonomy, or outperform Kastrup’s consciousness-first account. Live burden: Oppy must justify the category without defining natural as whatever exists, explain the interrelations of its descriptive vocabularies, and reconcile psychological inclusion with his later identification of mental processes and environmentally embedded neural processes. Locked score: The locked score of 81 rewards coherence, responsiveness, charitable breadth, and strategic clarification while withholding stronger credit because evidential support, ontological unification, definitional precision, and comparative leverage remain materially undeveloped.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-02",
+              "time": "5:35",
+              "role": "Constructive",
+              "words": "Analytic idealism posits one fundamental field of simple subjectivity whose patterned excitations constitute experiences, making consciousness rather than matter the ontological primitive.",
+              "score": 81,
+              "critique": "Strongest feature: Kastrup states a positive ontology rather than relying solely on objections to physicalism, explicitly connecting a fundamental field of subjectivity, its excitations, and the experiences that comprise reality at the basic level. Principal limitation: The field vocabulary makes the proposal imaginable but does not independently warrant its existence, define simple subjectivity, or explain why experiential differentiation should literally be modeled as excitation. Live burden: Kastrup must derive individual subjects, stable external objects, causal regularities, and qualitative diversity from this primitive without importing unexplained structure equivalent to the commitments he criticizes in naturalism. Locked score: The locked score of 81 reflects the move is central, clear, coherent, and directly responsive to the constructive burden, while its evidence and mechanism remain postulatory rather than comparatively established.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-02",
+              "time": "2:47",
+              "role": "Constructive",
+              "words": "Since physics vocabulary cannot exhaustively describe reality, Oppy rejects the physicalist label and presents scientific naturalism as committed to principled explanatory pluralism.",
+              "score": 84,
+              "critique": "Strongest feature: Oppy explicitly denies that all reality can be described in fundamental-physics vocabulary, sharply preventing Kastrup’s objections to reductive physicalism from being treated automatically as objections to Oppy’s broader scientific naturalism. Principal limitation: The principled impossibility of exhaustive physical description is asserted rather than demonstrated, and the move does not yet specify whether irreducibility concerns definitions, explanations, concepts, laws, or ontology. Live burden: Oppy must preserve this distinction consistently when identifying experience with neural processing, because Kastrup can otherwise argue that a supposedly pluralist vocabulary conceals an unexplained privileging of physical constitution. Locked score: The locked score of 84 reflects the clarification is unusually precise, highly responsive to the motion’s proper comparison class, and commendably calibrated, while its central antireduction premise still receives only modest independent warrant.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-04",
+              "time": "7:38",
+              "role": "Direct reply",
+              "words": "Replying to Oppy’s framing, Kastrup distinguishes naturalism as a scientific outlook from physicalism as a philosophy-of-mind thesis, concluding that analytic idealism can consistently remain naturalistic.",
+              "score": 82,
+              "critique": "Strongest feature: Kastrup directly answers Oppy’s framing by separating a methodological or scientific outlook from a metaphysical thesis about mind, correctly preserving the possibility that analytic idealism may be lawful and naturalistic. Principal limitation: Terminological usage varies, and establishing compatibility between idealism and one broad sense of naturalism does not resolve the substantive dispute over what fundamentally exists or which theory explains it better. Live burden: Kastrup must keep the correction from becoming merely verbal by comparing his consciousness-first naturalism with Oppy’s pluralistic naturalism on shared standards of explanatory reach, empirical constraint, and commitment. Locked score: The locked score of 82 reflects the reply is exceptionally clear and responsive to both Oppy’s label choice and contrast class, but its warrant is largely stipulative and its motion-level consequence remains bounded.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-03",
+              "time": "3:10",
+              "role": "Constructive",
+              "words": "Because minds appear late and locally in natural history, Oppy contrasts scientific naturalism with idealism’s claim that mentality is fundamental to reality.",
+              "score": 79,
+              "critique": "Strongest feature: Oppy frames the disagreement by contrasting idealism’s claim that minds and ideas underlie reality with naturalism’s treatment of them as late and situated developments. Principal limitation: Although this chronology makes the opposition intelligible, it provides no bridge from the emergence of mentality to the stronger ontological conclusion that subjectivity cannot be fundamental. Live burden: Oppy must engage Kastrup’s distinction between individual minds and transpersonal subjectivity, since analytic idealism can accept that minds appeared late in natural history while maintaining that experience as such did not originate with them. Locked score: The locked score of 79 rewards coherent, responsive, economical, and precise framing while withholding stronger credit because the empirical warrant is compressed, naturalist superiority remains unestablished, and the generic description of idealism incompletely represents Kastrup’s explanatory architecture.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-05",
+              "time": "8:58",
+              "role": "Constructive",
+              "words": "Because cats cannot be defined in fundamental-physics vocabulary, Oppy distinguishes naturalism from reductive physicalism and concludes that fundamental description requires irreducible higher-level terms.",
+              "score": 81,
+              "critique": "Strongest feature: Oppy makes explanatory pluralism concrete by using cats to separate what ordinary entities are physically constituted by from the higher-level vocabulary required to identify, classify, and explain them. Principal limitation: The example supports a distinction between physical constitution and definitional reduction but does not demonstrate his stronger claim that a cat cannot in principle be defined through fundamental-physics vocabulary alone. Live burden: Oppy must explain why the indispensability of higher-level terms is metaphysical or explanatory rather than merely pragmatic, then connect that result to mind-brain identity without assuming that linguistic nonreduction by itself resolves consciousness. Locked score: The locked score of 81 appropriately credits a clear, useful bridge toward scientific pluralism while withholding more because the central principled irreducibility claim remains asserted rather than independently established.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "reduction-and-identity",
+        "title": "Reduction, explanatory vocabularies, and identity",
+        "timebox": "8:27–21:16",
+        "score": {
+          "pro": 78,
+          "con": 85
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-05",
+              "time": "11:07",
+              "role": "Direct reply",
+              "words": "Kastrup alleges tension between identifying experience with physical arrangements and denying a cat’s reduction to physical properties, asking Oppy to reconcile those commitments.",
+              "score": 78,
+              "critique": "Strongest feature: Kastrup juxtaposes Oppy’s identification of experience with physical arrangements against his refusal to reduce cat-talk to physical vocabulary, posing a focused reconciliation challenge. Principal limitation: The inconsistency depends on equating explanatory irreducibility with nonphysical constitution, although Oppy’s cat claim concerns vocabulary’s descriptive insufficiency whereas his experience claim concerns theoretical identity. Live burden: Kastrup must identify a tension surviving that distinction, perhaps by showing that indispensable mental descriptions supply explanatory content incompatible with, or inaccessible to, the asserted neural identity. Locked score: The locked score of 78 recognizes a clear, relevant, and strongly responsive question, while preserving a substantial deduction because its pivotal inference currently conflates distinct meanings of reduction and consequently needs material argumentative repair.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "experience is physical arrangements at the same time you said we can't reduce a cat to physical properties alone"
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "con-04",
+              "time": "8:27",
+              "role": "Direct reply",
+              "words": "Oppy identifies conscious and other mental processes with appropriately related neural processes, so he rejects Kastrup’s characterization of his position as an emergence theory.",
+              "score": 85,
+              "critique": "Strongest feature: Oppy promptly corrects a consequential characterization, explaining that consciousness is not a separately produced byproduct but is theoretically identical with certain neural states or processes within his naturalist account. Principal limitation: The move states the identity without yet supplying the empirical or explanatory considerations that distinguish genuine identity from correlation, constitution, or a convenient pairing of descriptions. Live burden: Oppy must show why the mental-neural identification is warranted, how environmental embedding enters its conditions, and why retaining both vocabularies does not leave qualitative experience unexplained under a new label. Locked score: The locked score of 85 reflects the correction is highly coherent, precise, charitable, and directly responsive at the center of the dispute, while the truth of the asserted identity still awaits substantive support.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-06",
+              "time": "11:46",
+              "role": "Direct reply",
+              "words": "Oppy answers that human and feline experience consists in the appropriate neural processing embedded within the relevant physical environment, supplying a relational identity condition.",
+              "score": 82,
+              "critique": "Strongest feature: Oppy advances beyond a bare identity formula by locating experience in organism-specific neural processing appropriately embedded in a physical environment, thereby giving his theory a relational rather than crudely intracranial shape. Principal limitation: The repeated phrase “right kind” leaves the sufficiency conditions unspecified, and nothing in this span establishes that embedded neural processing is identical with experience rather than reliably correlated with it. Live burden: Oppy must identify the evidence and explanatory virtues that select this identity, explain which environmental relations are constitutive, and answer Kastrup’s demand concerning qualitative character without retreating to mere dependence. Locked score: The locked score of 82 reflects the reply coherently and directly develops the naturalist account with useful precision, but its decisive identity warrant remains compressed and partly deferred.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-07",
+              "time": "12:35",
+              "role": "Direct reply",
+              "words": "Since theoretical identity unites rather than eliminates mental and neural descriptions, Oppy concludes that explanatory vocabulary can remain plural while the underlying state is one.",
+              "score": 87,
+              "critique": "Strongest feature: Oppy gives the clearest resolution of Kastrup’s alleged contradiction by symmetrically refusing to eliminate either mental or neural states and explaining theoretical identity as two descriptions of one reality. Principal limitation: Establishing that such a non-eliminative identity is conceptually coherent does not establish that this particular mental-neural identity is true or that both descriptions possess comparable explanatory completeness. Live burden: Oppy must supplement conceptual consistency with a posteriori reasons favoring identity over Kastrup’s appearance account and explain how qualitative content is retained rather than merely renamed by the neural description. Locked score: The locked score of 87 reflects the reply is exceptionally precise, charitable, coherent, and targeted to the live objection, with the remaining weakness confined mainly to evidential confirmation rather than internal structure.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-09",
+              "time": "21:16",
+              "role": "Direct reply",
+              "words": "Although a cat has physical constituents at sufficiently fine resolution, Oppy argues that constitution neither reduces its explanatory vocabulary nor diminishes the cat’s reality.",
+              "score": 86,
+              "critique": "Strongest feature: Oppy completes his answer to Kastrup by distinguishing physical constitution from explanatory reduction and by affirming that cats remain fully real rather than becoming dispensable shorthand for particles. Principal limitation: The resolution-level picture is conceptually helpful but leaves the supervenience or realization relation largely undefended, and its transfer from cats to conscious qualities still requires argument. Live burden: Oppy must show that the same distinction can accommodate first-person qualitative character, not merely ordinary objects, and that equal ontological reality under multiple descriptions supplies genuine explanation rather than coexistence. Locked score: The locked score of 86 reflects the clarification is highly coherent, precise, charitable, and exceptionally responsive to the alleged inconsistency, while the supporting metaphysics and consciousness-specific application remain bounded evidential gaps.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "qualities-and-knowledge",
+        "title": "Conscious qualities and knowledge",
+        "timebox": "13:43–1:30:06",
+        "score": {
+          "pro": 84,
+          "con": 79
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-06",
+              "time": "13:43",
+              "role": "Direct reply",
+              "words": "Because experiential qualities cannot be deduced from neuronal properties, Kastrup argues that identifying experience with neural firing remains arbitrary without a discriminator unavailable to the toe analogy.",
+              "score": 82,
+              "critique": "Strongest feature: Kastrup isolates the most important unresolved step in identity theory: a theoretical declaration of sameness needs some nonarbitrary basis, especially when qualitative nuances are not recoverable from the listed neural properties. Principal limitation: Failure of a priori deduction does not by itself defeat an a posteriori identity, and the toe comparison initially discounts obvious empirical differences between neural processing and peripheral movement. Live burden: Kastrup must show why explanatory non-deducibility remains a comparative defect after Oppy invokes empirical theory choice, while demonstrating that analytic idealism accounts for correlation without simply stipulating its own appearance relation. Locked score: The locked score of 82 reflects the objection is sharply responsive, relevant, and conceptually powerful, but its inference needs qualification and its characterization understates the relational and empirical resources Oppy claims.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-08",
+              "time": "14:09",
+              "role": "Direct reply",
+              "words": "Oppy replies that a priori deducibility is unnecessary: like other theoretical identities, mind-brain identity may be justified afterward through inference to the best explanation.",
+              "score": 83,
+              "critique": "Strongest feature: Oppy correctly separates a priori derivation from a posteriori theory choice, conceding non-deducibility while explaining why that epistemic limitation need not automatically count against an empirical theoretical identity. Principal limitation: The cat analogy establishes only that non-deducibility can coexist with justified belief; Oppy does not present the comparative evidence showing that identity explains consciousness better than dependence, realization, or idealist appearance. Live burden: Oppy must specify the data, rivals, and explanatory criteria supporting his best-explanation claim, particularly because qualitative experience differs from the ordinary higher-level entity used in the analogy. Locked score: The locked score of 83 reflects the reply directly and coherently defeats an excessive deduction requirement with commendable calibration, yet its crucial appeal to best explanation remains announced rather than demonstrated.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-17",
+              "time": "1:28:32",
+              "role": "Direct reply",
+              "words": "Because idealism also predicts mind-brain correlations as the appearance of experience, Kastrup concludes that correlation alone cannot discriminate identity theory from analytic idealism.",
+              "score": 87,
+              "critique": "Strongest feature: Kastrup answers Oppy’s strongest empirical point at its decisive inference, granting neural correlation while supplying a concrete rival explanation under which brain activity is what conscious processes look like externally. Principal limitation: Demonstrating underdetermination by correlation does not independently validate the appearance relation, and describing Oppy’s inference as already assuming its conclusion slightly overstates what an abductive argument claims. Live burden: Kastrup must show that his account explains the detailed structure and intervention sensitivity of neural dependence at least as well, with fewer unsupported commitments than embedded identity. Locked score: The locked score of 87 reflects the reply is exceptionally responsive, coherent, clear, evidentially pertinent, and central to the comparative burden, with only the independently assumed appearance model and sharpened rhetoric limiting it.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-17",
+              "time": "1:27:44",
+              "role": "Direct reply",
+              "words": "Empirical evidence connects experience closely with neural processing, so Oppy argues that locating consciousness in the brain is evidentially grounded unlike the arbitrary toe identity.",
+              "score": 83,
+              "critique": "Strongest feature: Oppy finally supplies the relevant discriminator requested by Kastrup’s analogy, pointing to multiple forms of observed mind-brain dependence and limiting his immediate conclusion to a close connection. Principal limitation: The data points remain unspecified, and evidence for dependence or correlation does not by itself establish the stronger theoretical identity Oppy ultimately defends. Live burden: Oppy must explain why neural interventions, lesions, development, and systematic covariation favor identity over idealism’s body-as-appearance account, rather than merely ruling out the deliberately implausible toe proposal. Locked score: The locked score of 83 reflects the reply is direct, empirically oriented, relevant, and reasonably calibrated, but the crucial movement from close connection to ontological identity remains compressed and open to Kastrup’s underdetermination response.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-18",
+              "time": "1:29:16",
+              "role": "Direct reply",
+              "words": "A quantitative neural description excludes qualitative character by construction, Kastrup argues, so extracting experience from it mistakes a map of reality for the territory.",
+              "score": 83,
+              "critique": "Strongest feature: Kastrup presents his most forceful explanatory challenge by distinguishing qualitative reality from quantitative description and illustrating the missing derivation through the memorable map-and-territory comparison. Principal limitation: The move treats Oppy’s broad pluralistic naturalism as though it were exhaustively quantitative physicalism, and a failure of derivation establishes an explanatory gap more readily than contradiction. Live burden: Kastrup must show that Oppy’s mental vocabulary cannot preserve qualities within a non-eliminative identity and that positing subjectivity as primitive explains, rather than simply assumes, their presence. Locked score: The locked score of 83 reflects the argument is clear, relevant, coherent, and sharply responsive to both correlation and a posteriori identity, but its overbroad target and categorical conclusion materially reduce calibration and comparative force.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-18",
+              "time": "1:30:06",
+              "role": "Direct reply",
+              "words": "Since every theory is a description, Oppy denies that Kastrup’s map–territory distinction uniquely disadvantages naturalism, but leaves the quantitative–qualitative asymmetry substantially unanswered.",
+              "score": 68,
+              "critique": "Strongest feature: Oppy identifies a potentially important commonality: analytic idealism, scientific naturalism, and every competing theory use descriptions rather than literally reproducing the reality they seek to explain. Principal limitation: This generic observation does not answer Kastrup’s asymmetric claim that a specifically quantitative description excludes qualitative character, and the interrupted formulation never supplies the missing bridge. Live burden: Oppy must explain how non-eliminative mental vocabulary and neural identity jointly accommodate qualities, or show why Kastrup’s demand for derivation imposes an inappropriate standard without merely repeating that all theories describe. Locked score: The locked score of 68 reflects the reply is relevant and reconstructable but materially incomplete, weakly responsive to the decisive distinction, and insufficiently developed to restore the naturalist explanatory case at the debate’s close.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "every theory is a description i didn't see the difference theories are descriptions physicalist theories"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "perception-and-external-reality",
+        "title": "Perception, theoretical entities, and external reality",
+        "timebox": "6:27–55:39",
+        "score": {
+          "pro": 82,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-03",
+              "time": "6:27",
+              "role": "Constructive",
+              "words": "Because objectivity requires independence from individual wishes rather than independence from all mentality, analytic idealism preserves an external world outside personal minds.",
+              "score": 83,
+              "critique": "Strongest feature: Kastrup sharply separates externally objective reality from absolute mind-independence, preserving a world beyond individual perspectives that remains unaffected by fantasy or preference and directly forestalling the objection that idealism collapses reality into private invention. Principal limitation: This compatibility claim supplies no mechanism explaining how transpersonal mentality yields one stable shared environment, nor a comparative reason to prefer that account over Oppy’s natural reality. Live burden: He must derive objectivity, intersubjective convergence, and stubborn resistance to personal wishes from universal subjectivity’s structure, rather than merely assigning those characteristics to an unexplained external order. Locked score: The locked score of 83 recognizes a coherent, precise, charitable clarification of common ground whose considerable relevance establishes comparative eligibility more securely than explanatory superiority.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-12",
+              "time": "45:23",
+              "role": "Constructive",
+              "words": "Because quantum theory should recover the ordinary material world through decoherence, Oppy judges interpretations preserving that continuity more plausible than idealistic alternatives.",
+              "score": 73,
+              "critique": "Strongest feature: Oppy identifies a legitimate adequacy constraint for quantum interpretation: a fundamental theory should recover the stable common-sense world in which experiments, apparatus, and observers operate. Principal limitation: He does not specify the favored interpretation or show that decoherence alone solves the measurement problem, and his comparative plausibility judgment receives almost no developed support against idealistic readings. Live burden: Oppy must explain how classicality emerges without presupposition, distinguish operational suppression of interference from a full interpretation, and show why recovering material appearances requires naturalist ontology rather than Kastrup’s objective experiential world. Locked score: The locked score of 73 reflects the recovery criterion is relevant and understandable, but the central quantum warrant is compressed, selectively comparative, and insufficient to establish the stated naturalist preference.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-14",
+              "time": "47:37",
+              "role": "Direct reply",
+              "words": "Since decoherence presupposes a classical environment rather than explaining its emergence, Kastrup concludes that it is operationally useful but does not solve the measurement problem.",
+              "score": 85,
+              "critique": "Strongest feature: Kastrup directly separates operational usefulness from interpretive explanation and identifies a specific circularity concern: decoherence cannot explain classicality if its practical application already assumes an effectively classical environment. Principal limitation: The quantum discussion is compressed, and the categorical statement that decoherence is no account at all risks overlooking interpretations in which it forms part of a broader solution. Live burden: Kastrup must show that Oppy’s preferred naturalistic family cannot supplement decoherence adequately and that the remaining measurement problem gives positive comparative support to analytic idealism rather than merely weakening one rival route. Locked score: The locked score of 85 reflects the reply is focused, technically discriminating, responsive, and fairly concedes operational value, with its residual weakness confined to limited formal development and somewhat categorical scope.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-13",
+              "time": "51:04",
+              "role": "Direct reply",
+              "words": "Oppy argues that metaphysical interpretation must preserve the material experimental standpoint supplying its evidence, lest it undermine the branch from which its conclusion was inferred.",
+              "score": 76,
+              "critique": "Strongest feature: Oppy raises an important epistemic constraint: a metaphysical interpretation should preserve the reliability of experimenters, apparatus, and observed objects that supply the evidence from which it reasons. Principal limitation: Kastrup explicitly accepts an objective external world as appearance, so reinterpretation of material ontology does not necessarily discard experiments or sever their evidential basis; the objection risks assuming the conclusion it seeks. Live burden: Oppy must demonstrate an actual incompatibility between analytic idealism and trustworthy experimentation rather than treating ontological materiality as required for empirical objectivity. Locked score: The locked score of 76 reflects the self-undermining concern is relevant, memorable, and directly responsive, but its warrant depends on an insufficiently charitable reconstruction of Kastrup’s external realism and therefore remains materially vulnerable.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "where we start is where we have to end up with a material world experimentalist doing experiments with material objects"
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-15",
+              "time": "49:06",
+              "role": "Constructive",
+              "words": "Physical entities are relational measurement appearances rather than standalone things in themselves; Kastrup therefore treats physical descriptions as representations of deeper experiential reality.",
+              "score": 79,
+              "critique": "Strongest feature: Kastrup clearly connects relational measurement, physical appearance, and the distinction between representation and intrinsic reality, thereby developing his central claim that physics describes how reality appears rather than what it is in itself. Principal limitation: Relationality does not by itself entail that measured entities lack standalone existence or that their intrinsic nature is experiential, and competing interpretations receive little comparison. Live burden: Kastrup must supply the missing premise from relational physics to consciousness-first metaphysics, explain why representation requires mentality at the fundamental level, and avoid presenting contested interpretation as experimental conclusion. Locked score: The locked score of 79 reflects the move is relevant, clear, and philosophically substantial, but its decisive metaphysical inference exceeds the evidence and is stated with less calibration than the underdetermined record supports.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-14",
+              "time": "55:39",
+              "role": "Direct reply",
+              "words": "Since experiments always require interpretation and unknown theories may remain, Oppy concludes that quantum evidence does not uniquely establish Kastrup’s relational-idealist metaphysics.",
+              "score": 81,
+              "critique": "Strongest feature: Oppy correctly emphasizes empirical underdetermination, separating experimental results from their metaphysical interpretation and identifying the possibility that presently missing theory could alter the comparison. Principal limitation: Merely invoking an unspecified missing possibility blocks entailment but does not justify Oppy’s stronger judgment that such a possibility is more plausible than the relational interpretation under discussion. Live burden: Oppy must offer concrete rival explanations or symmetric standards for comparing interpretations, while Kastrup retains the burden of showing that experiments do more than narrow the field and positively favor analytic idealism. Locked score: The locked score of 81 reflects the caution is coherent, directly responsive, and highly relevant to overextended empirical inference, yet its comparative plausibility claim lacks the warrant necessary for a stronger result.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "dependence-and-dissociation",
+        "title": "Mind-brain dependence, dissociation, and altered states",
+        "timebox": "24:13–29:43",
+        "score": {
+          "pro": 81,
+          "con": 85
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-08",
+              "time": "24:13",
+              "role": "Constructive",
+              "words": "A person is a personal mind whose body is the external appearance of mental processes across a dissociative boundary, preserving embodiment within idealism.",
+              "score": 79,
+              "critique": "Strongest feature: Kastrup integrates persons and bodies into analytic idealism by treating bodily processes as the cross-boundary appearance of personal mental activity, thereby preserving biological embodiment instead of dismissing it as unreal. Principal limitation: The perspective relation and dissociative boundary are asserted rather than mechanistically explained, so the account risks relocating rather than resolving the relation between private experience and public physiology. Live burden: Kastrup must specify how boundaries arise within one field, why their external appearances obey detailed neural and biological regularities, and what evidence distinguishes this appearance account from Oppy’s embedded identity theory. Locked score: The locked score of 79 reflects the proposal is internally coherent, relevant, and responsive to embodiment, yet its central mechanism has modest warrant and insufficient precision for the explanatory work assigned to it.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-10",
+              "time": "29:43",
+              "role": "Direct reply",
+              "words": "Oppy asks how one undifferentiated field contains real boundaries and how an individual subject relates to it, exposing the central missing bridge in dissociation.",
+              "score": 85,
+              "critique": "Strongest feature: Oppy isolates analytic idealism’s central explanatory tension by asking how an allegedly unified field can nevertheless contain genuine differentiation, internal boundaries, and individually situated subjects, while directly engaging Kastrup’s dissociation proposal. Principal limitation: His intervention remains primarily interrogative and characterizes the field as undifferentiated, although Kastrup’s excitation language may allow structured manifestations, so the challenge identifies underexplanation without yet demonstrating incoherence or comparative inferiority. Live burden: Oppy must establish that nonspatial individuation cannot coherently generate stable subject boundaries, or that specifying those boundaries introduces theoretical commitments more burdensome than neural identity, while preserving his appropriately charitable uncertainty. Locked score: The locked score of 85 rewards a precisely targeted, textually grounded, and consequential objection whose diagnostic force is substantial, while recognizing its modest overstatement and its incomplete comparative argument.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-09",
+              "time": "26:33",
+              "role": "Direct reply",
+              "words": "Clinical dissociation partitions an integrated mind into centers with distinct experiences, memories, and dispositions; Kastrup uses this as an empirical model for individual minds.",
+              "score": 82,
+              "critique": "Strongest feature: Kastrup supplies a recognizable empirical analogue for plurality within mentality, describing differentiated centers of awareness, memory, and disposition rather than invoking dissociation as an empty metaphor. Principal limitation: Evidence that one human mind can display partitioned functioning does not by itself show that a transpersonal field dissociates into organisms, and the scale-changing bridge remains unsupported. Live burden: Kastrup must identify structural similarities strong enough to justify extrapolation, explain the formation and maintenance of cosmic boundaries, and show why dissociation predicts the observed mind-brain relationship better than naturalistic alternatives. Locked score: The locked score of 82 reflects the move is specific, important, clear, and responsive to the late-local-minds objection, while its empirical warrant supports the clinical phenomenon more strongly than the metaphysical application.",
+              "tags": []
+            },
+            "con": null
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-10",
+              "time": "27:35",
+              "role": "Constructive",
+              "words": "A reported dissociative-identity case connected a blind alter’s executive control with disappearing visual-cortex activity despite open eyes, supporting dissociation’s capacity to organize perception physiologically.",
+              "score": 76,
+              "critique": "Strongest feature: Kastrup offers a concrete, testable case connecting dissociative state, reported blindness, open eyes, and altered visual-cortex activity, giving his mechanism more empirical substance than a purely conceptual analogy. Principal limitation: A single narrated EEG case arrives without methodological details, controls, representativeness, or consideration of alternative neurological explanations, and “disappear” may overstate the measurement. Live burden: Kastrup must establish what the study actually demonstrates, connect state-dependent neural changes to transpersonal dissociation, and show why the result favors body-as-appearance over ordinary mind-brain dependence. Locked score: The locked score of 76 reflects the example is relevant, memorable, and reasonably precise, but its documentation and metaphysical bridge are too limited to carry the broader conclusion suggested by its placement.",
+              "tags": []
+            },
+            "con": null
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-11",
+              "time": "28:42",
+              "role": "Constructive",
+              "words": "Because inferential and graph-theoretic models remain incomplete, Kastrup concedes that analytic idealism currently lacks a complete, unambiguous conceptual account of how dissociation occurs.",
+              "score": 84,
+              "critique": "Strongest feature: Kastrup makes an unusually explicit and consequential concession, acknowledging that neither cognitive-association language nor his own graph-theoretic work currently supplies a complete and unambiguous account of dissociation. Principal limitation: The candor accurately calibrates the theory but also confirms that a mechanism central to deriving individual minds from universal subjectivity remains unfinished. Live burden: Kastrup must explain why an incomplete dissociation account nevertheless compares favorably with Oppy’s incomplete identity warrant, and identify what the provisional model already explains beyond merely naming partition or inferential isolation. Locked score: The locked score of 84 reflects the move is exceptionally calibrated, precise, and intellectually responsible while materially clarifying burden status, though a concession cannot itself complete the explanatory task whose limitation it honestly records.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "causal-structure-and-explanation",
+        "title": "Causal structure, regress, and explanation",
+        "timebox": "22:58–39:49",
+        "score": {
+          "pro": 77,
+          "con": 83
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-07",
+              "time": "22:58",
+              "role": "Constructive",
+              "words": "One underlying subjectivity can generate nature’s diversity through different excitation patterns, so Kastrup presents plurality as structured variation within a single primitive.",
+              "score": 78,
+              "critique": "Strongest feature: Kastrup directly addresses the unity-to-diversity problem by proposing that one underlying reality can support many natural forms through differentiated patterns of excitation, paralleling a familiar structural strategy in physics. Principal limitation: The analogy demonstrates conceivability rather than actuality, while “thing,” “excitation,” and the individuation of patterns remain insufficiently specified for an explanatory mechanism. Live burden: Kastrup must show how experiential patterns yield distinct subjects, enduring bodies, laws, and causal organization, and why this pattern ontology is more economical than naturalism rather than merely redescribing comparable complexity. Locked score: The locked score of 78 reflects the move is coherent, central, and relevant to analytic idealism’s constructive burden, but limited warrant and underspecified structure prevent the proposed schema from yet explaining the diversity it names.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-11",
+              "time": "39:18",
+              "role": "Direct reply",
+              "words": "Oppy concedes that associative rather than causal links make Kastrup’s non-temporal structure intelligible, narrowing disagreement while leaving his broader explanatory concerns about idealism intact.",
+              "score": 83,
+              "critique": "Strongest feature: Oppy accurately recognizes what Kastrup’s analogy accomplishes, conceding that associative rather than causal linkage can make one part of the proposed nonspatiotemporal structure intelligible. Principal limitation: The brief concession does not examine whether the analogy explains boundaries, consciousness, or individuation, and it contributes little affirmative support for scientific naturalism. Live burden: Oppy must preserve the narrowed disagreement by focusing on explanatory adequacy rather than possibility, asking whether associative structure actually yields subjects and whether its commitments remain preferable under the shared theory-choice standard. Locked score: The locked score of 83 reflects the move is highly charitable, coherent, precise, and responsive to the successful portion of Kastrup’s reply, although its motion-level relevance is limited by being principally a fair concession.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-12",
+              "time": "37:16",
+              "role": "Direct reply",
+              "words": "Kastrup replies that database-like semantic associations can differentiate a fundamental subjective field without spatial or causal separation, making nonspatiotemporal existential structure intelligible.",
+              "score": 74,
+              "critique": "Strongest feature: Kastrup provides an accessible model showing how differentiated organization could exist without spatial extension, directly answering the demand that boundaries within one field need not be literal geometric partitions. Principal limitation: A database makes nonspatial structure conceivable but supplies neither evidence for such organization in fundamental subjectivity nor a mapping from associative links to distinct experiencing subjects. Live burden: Kastrup must specify the relevant relations, explain how they produce inferential isolation and first-person boundaries, and prevent the analogy from importing the very structured complexity his monistic economy was meant to reduce. Locked score: The locked score of 74 reflects the move is relevant, intelligible, and constructively responsive, but its illustrative analogy has limited warrant and leaves the individual-field relationship substantially unresolved.",
+              "tags": []
+            },
+            "con": null
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-13",
+              "time": "39:49",
+              "role": "Direct reply",
+              "words": "At the foundational level, Kastrup treats causality as an epistemic representation of deeper mind-independent associations, not as an irreducible feature of reality itself.",
+              "score": 80,
+              "critique": "Strongest feature: Kastrup clearly distinguishes fundamental associative structure from the causal language used in human explanation, offering a coherent account of how regularity can persist even if causation is not ontologically primitive. Principal limitation: The priority of association over causation is asserted rather than argued, and calling causality epistemic does not explain why deeper associations exhibit stable direction, counterfactual dependence, or lawlike organization. Live burden: Kastrup must demonstrate that this demotion retains the explanatory resources science requires and that the proposed associations are less costly or obscure than Oppy’s causal natural reality. Locked score: The locked score of 80 reflects the reply is clear, candid, coherent, and directly responsive to the foundational question, while evidential warrant and comparative payoff remain notably underdeveloped.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "parsimony-and-theory-choice",
+        "title": "Parsimony and final theory comparison",
+        "timebox": "1:01:53–1:04:26",
+        "score": {
+          "pro": 86,
+          "con": 86
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-16",
+              "time": "1:02:19",
+              "role": "Constructive",
+              "words": "Although metaphysical theories are not directly experimentally testable, experiments can contradict their assumptions and narrow viable options; Kastrup therefore advocates indirect empirical constraint.",
+              "score": 86,
+              "critique": "Strongest feature: Kastrup offers a carefully calibrated account of metaphysical evidence, distinguishing claims about what nature is from predictions about behavior while preserving experiments as constraints capable of excluding assumptions. Principal limitation: The general methodology does not identify which actual findings eliminate which naturalistic alternatives, nor does narrowing the field establish analytic idealism as the best remaining explanation. Live burden: Kastrup must apply this standard consistently to quantum interpretation, dissociation, and mind-brain dependence, acknowledging underdetermination while showing a genuine economy or adequacy advantage. Locked score: The locked score of 86 reflects the move is lucid, coherent, relevant, responsive to shared theory choice, and unusually restrained about experimental proof, with only its absent case-by-case application limiting a still stronger assessment.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-15",
+              "time": "1:01:53",
+              "role": "Constructive",
+              "words": "Oppy proposes choosing metaphysical theories by balancing minimal commitments against maximal explanatory coverage, making economy and reach the shared standard for comparing both positions.",
+              "score": 87,
+              "critique": "Strongest feature: Oppy states a neutral and motion-responsive theory-choice rule that balances ontological commitment against explanatory coverage, providing a clear framework applicable to naturalism and analytic idealism alike. Principal limitation: The move announces the standard without applying it in detail, specifying how competing commitments are counted, or demonstrating that scientific naturalism wins the resulting trade-off. Live burden: Oppy must inventory the costs of identity, causal structure, scientific pluralism, universal subjectivity, and dissociation, then compare their explanatory returns without granting familiarity an automatic advantage. Locked score: The locked score of 87 reflects the methodological principle is exceptionally coherent, precise, charitable, and relevant to “better explain,” while its evidential support and concrete comparative application remain the bounded work still needed.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-16",
+              "time": "1:04:26",
+              "role": "Direct reply",
+              "words": "Oppy concedes Kastrup’s evidential rule that belief should not outrun decent reasons, concluding that unsupported entities like the Flying Spaghetti Monster should not be believed in.",
+              "score": 81,
+              "critique": "Strongest feature: Oppy plainly accepts Kastrup’s evidential maxim, demonstrating methodological common ground and proportioning ontological belief to the reasons actually available rather than inflating disagreement. Principal limitation: The flying-spaghetti-monster illustration adds little analytical content, and the shared rule provides almost no comparative leverage unless either side shows which commitments lack decent support. Live burden: Oppy must apply the maxim to his own mind-brain identity and causal naturalism as rigorously as to universal subjectivity and dissociation, avoiding an asymmetric presumption in favor of familiar ontology. Locked score: The locked score of 81 reflects the concession is coherent, clear, responsive, and exceptionally charitable, but its low independent importance and failure to discriminate between theories appropriately cap its contribution to the con case.",
+              "tags": []
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 81,
+        "strengths": [
+          "Kastrup established analytic idealism as a lawful, external-realist position: individual wishes do not control the objective world, even though its intrinsic basis is transpersonal subjectivity rather than nonmental substance.",
+          "His decoherence reply precisely separated operational suppression of interference from an interpretation explaining classicality, directly weakening Oppy’s underdeveloped appeal from quantum mechanics to an ordinary material ontology.",
+          "Against neural identity, Kastrup granted mind-brain correlation but showed that his body-as-appearance account predicts correlation too, forcing the debate toward comparative explanation rather than mere empirical association.",
+          "The final map–territory argument clearly exposed the unresolved transition from quantitative neural structure to qualitative character, giving the pro side its strongest and most responsive challenge to Oppy’s theory."
+        ],
+        "blunders": [
+          {
+            "text": "The alleged contradiction between Oppy’s identity theory and his cat example conflated physical constitution with reduction of explanatory vocabulary, allowing Oppy to dissolve the challenge through two-description theoretical identity.",
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
+              }
+            ]
+          },
+          {
+            "text": "Kastrup moved too quickly from relational quantum descriptions to the conclusion that physical entities are merely representations, without supplying the additional premise that would select experiential intrinsic reality over rival interpretations.",
+            "links": []
+          },
+          {
+            "text": "Clinical dissociation and one reported blindness case were asked to support cosmic individuation without a defended scale bridge, while Kastrup’s candid concession confirmed that the boundary mechanism remains incomplete.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 82,
+        "strengths": [
+          "Oppy consistently defended broad scientific naturalism rather than reductive physicalism, preserving chemical, biological, psychological, and ordinary-object vocabularies while treating their subjects as constituents of one natural reality.",
+          "His strongest exchange distinguished theoretical identity from elimination: mental and neural descriptions can refer to one process without either vocabulary being discarded, directly answering Kastrup’s initial inconsistency charge.",
+          "Oppy’s underdetermination reply correctly separated quantum experiments from metaphysical interpretation, preventing Kastrup’s relational reading from being treated as uniquely established by empirical results.",
+          "The commitments-versus-explanatory-reach standard supplied the debate’s clearest neutral criterion for the motion and helped Oppy narrowly prevail despite leaving important warrant for mind-brain identity compressed."
+        ],
+        "blunders": [
+          {
+            "text": "Oppy’s appeal to decoherence asserted comparative plausibility without specifying a complete interpretation or answering whether classicality was presupposed, enabling Kastrup’s strongest rebuttal in the physics exchange.",
+            "links": []
+          },
+          {
+            "text": "The branch-cutting objection insufficiently respected Kastrup’s explicit external realism, treating an ontological reinterpretation of material objects as though it abolished experiments and their objective evidential role.",
+            "links": [
+              {
+                "label": "Begging the question",
+                "url": "https://logfall.com/fallacies/begging-the-question/"
+              }
+            ]
+          },
+          {
+            "text": "Oppy’s final statement that every theory is descriptive did not answer the claimed quantitative–qualitative asymmetry, leaving Kastrup’s central map–territory challenge substantially intact at the close.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "label": "AI-generated extension; not transcript content or wording attributable to either speaker.",
+      "pro": {
+        "finalArgument": {
+          "thesis": "AI steelman: Analytic idealism is preferable when consciousness is treated as the least avoidable primitive, physical structure as its publicly measurable appearance, and individuation as a constrained but revisable model rather than a completed mechanism.",
+          "premises": [
+            "First, qualitative experience is directly instantiated in every act of observation, whereas a wholly nonexperiential intrinsic reality is inferred; beginning ontology with experience therefore avoids adding an intrinsic category whose relation to qualities must later be explained.",
+            "Second, physics successfully captures relational, quantitative, and predictive structure, but those achievements need not determine the intrinsic nature realizing that structure; analytic idealism can accept the complete operational content of science without treating its mathematical descriptions as exhaustive ontology.",
+            "Third, objective externality requires independence from individual minds and preferences, not independence from all subjectivity, so a transpersonal experiential order can remain stable, shared, resistant, and scientifically investigable.",
+            "Fourth, dissociation should be presented as a research program constrained by clinical partition, informational isolation, embodiment, and neural covariation, not as a finished derivation from psychiatric cases to cosmic mentality.",
+            "Fifth, when neural evidence is compatible with both embedded identity and body-as-appearance, theory choice should compare total commitments, explanatory reach, and unresolved bridges rather than treating correlation alone as ontological adjudication."
+          ],
+          "conclusion": "Accordingly, analytic idealism merits preference only if its consciousness-first ontology can model individuation and public structure more economically than naturalism while preserving, rather than merely accommodating, the detailed successes of neuroscience and physics."
+        },
+        "newArguments": [
+          {
+            "title": "Structural Realization Without Ontological Duplication",
+            "text": "Suppose two theories preserve exactly the same physical relations, predictions, and intervention patterns, but one adds a nonexperiential intrinsic substrate while the other identifies intrinsic realization with experience already known to occur. The second theory need not deny physics; it denies only that relational equations settle what instantiates them. Its advantage is conditional but genuine: unless the additional nonexperiential category independently explains something, positing it creates a second ontological kind and a bridge to consciousness. Analytic idealism can therefore frame its economy argument as avoiding duplicated intrinsic categories, not as deriving metaphysics directly from quantum mechanics."
+          },
+          {
+            "title": "Constraint-Based Individuation Program",
+            "text": "A stronger dissociation model would define an individual subject through jointly necessary constraints: restricted informational access, internally integrated inference, asymmetric control of an organism, stable autobiographical memory, and a distinctive interface visible as bodily activity. None alone establishes a boundary, but their convergence could operationalize degrees of subject separation without spatial partitions. This turns dissociation from a loose clinical analogy into a comparative research program. Analytic idealism would then face a clear test: it must reproduce why biological boundaries dominate ordinary consciousness and why boundary disruption tracks anesthesia, injury, development, and altered states with systematic regularity."
+          },
+          {
+            "title": "Public Objectivity From Shared Constraints",
+            "text": "Idealism can strengthen its account of objectivity by grounding public objects in invariants across many partially isolated perspectives. An object is not whatever any observer imagines; it is a stable pattern that constrains multiple observers, supports counterfactual predictions, and resists unilateral alteration. Scientific measurement then extracts perspective-independent invariants from experiences produced by a common transpersonal process. This proposal does not prove that the common process is experiential, but it explains how idealism can distinguish hallucination, private imagery, and public reality without importing mind-independent matter as an additional primitive. The relevant comparison becomes which ontology best explains the invariants."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "AI steelman: Scientific naturalism remains preferable as a pluralistic, empirically constrained ontology in which mental processes are non-eliminatively identical with appropriately embedded neural processes and metaphysical commitment tracks comparative explanatory success.",
+          "premises": [
+            "First, successful sciences require multiple indispensable vocabularies because explanations at physical, chemical, biological, psychological, and social levels answer different questions even when their subjects belong to one continuous natural order.",
+            "Second, theoretical identity is not definitional reduction or elimination: mental and neural descriptions may retain distinct explanatory roles while referring to one environmentally embedded process.",
+            "Third, systematic neural intervention, impairment, development, stimulation, and dependence provide a principled basis for locating conscious processing in the brain, although correlation alone does not deductively prove identity.",
+            "Fourth, empirical findings constrain metaphysics through abductive comparison, but quantum experiments and mind-brain correlations do not uniquely entail any single ontology without interpretation and serious comparison with alternatives.",
+            "Fifth, analytic idealism inherits substantial explanatory obligations concerning field differentiation, subject boundaries, causal organization, and the exact mapping between private experience and public bodies, so beginning with consciousness does not automatically minimize total commitments."
+          ],
+          "conclusion": "Therefore scientific naturalism is proportionately preferable when its unified empirical research program and plural explanatory vocabularies achieve broader tested integration than analytic idealism, even though qualitative consciousness and the ultimate warrant for identity remain open explanatory burdens."
+        },
+        "newArguments": [
+          {
+            "title": "Intervention-Sensitive Identity Warrant",
+            "text": "The naturalist case should rely not on bare correlation but on structured intervention. Different alterations to neural organization predictably change visual fields, memory access, affect, agency, wakefulness, and unified awareness; the location, timing, and organization of intervention matter. A credible identity theory can argue that this fine-grained counterfactual profile is expected if experience is an embedded neural process, whereas an appearance theory must add rules explaining why changes to the appearance systematically govern the private process. This does not logically force identity, but it gives the abductive claim discriminating content beyond the weak assertion of a close connection."
+          },
+          {
+            "title": "No Free Primitive Principle",
+            "text": "Calling consciousness primitive avoids deriving experience from nonexperience, but it does not make the explanatory work disappear. A fundamental subjectivity must still possess or generate differentiation, memory, perspective, mathematical structure, stable laws, embodiment, and the enormous variety of conscious states. Each required organizing principle counts toward theoretical commitment even if it is described as a mode of one substance. Scientific naturalism can therefore challenge simple entity counting: parsimony should measure independent structure and governing assumptions, not merely the number of nouns in an ontology. One primitive with many unexplained capacities may be costlier than several tightly integrated natural levels."
+          },
+          {
+            "title": "Convergence Across Explanatory Levels",
+            "text": "Pluralistic naturalism gains support when independent levels converge on the same causal history. Evolution explains why organisms developed sensory and regulatory systems; neuroscience maps those systems to cognitive capacities; psychology characterizes the capacities; physics and chemistry constrain their implementation. The vocabularies are not interchangeable, yet their explanations intersect through shared predictions and interventions. This convergence provides a form of unity stronger than defining everything as natural stuff. Analytic idealism can reproduce the observations, but it must show comparable cross-level explanatory integration rather than interpreting the completed network afterward as appearances within subjectivity. Preference should track generative integration, not mere compatibility."
+          }
+        ]
+      }
+    }
   }
 ];
 

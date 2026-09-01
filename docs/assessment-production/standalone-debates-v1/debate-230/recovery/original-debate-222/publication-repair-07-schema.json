@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "repairs"
+  ],
+  "properties": {
+    "repairs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "text"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "enum": [
+              "con-16:words"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

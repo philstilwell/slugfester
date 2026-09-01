@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-standalone-publication-recovery-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "one-additional-bounded-attempt-authorized",
+  "authorizedAt": "2026-09-01T22:53:30Z",
+  "debateNumber": "230",
+  "debateId": "kastrup-oppy-idealism-naturalism-2021",
+  "userAuthorization": "One additional bounded repair attempt is approved; renumber the debate if necessary.",
+  "administrativeRenumbering": {
+    "from": "222",
+    "to": "230",
+    "reason": "The former number is occupied by a published debate.",
+    "allowedMutation": "debateNumber plus path and hash references mechanically derived from the renumbered artifact bytes; no substantive field"
+  },
+  "frozenScore": {
+    "pro": {
+      "speaker": "Bernardo Kastrup",
+      "score": 81
+    },
+    "con": {
+      "speaker": "Graham Oppy",
+      "score": 82
+    },
+    "winner": "con",
+    "margin": 1,
+    "recalculationPermitted": false
+  },
+  "repairBoundary": {
+    "maximumAdditionalAttempts": 1,
+    "maximumWritableFields": 2,
+    "writableFields": [
+      "publication.moves[con-01].critique",
+      "publication.moves[con-03].critique"
+    ],
+    "allOtherPublicationFieldsImmutable": true,
+    "evidenceJudgmentsAdjudicationAndScoresImmutable": true,
+    "recursiveRetryPermitted": false
+  },
+  "triggeringValidationErrors": [
+    "con-01: critique 141 words; maximum 130",
+    "con-03: critique 141 words; maximum 130"
+  ],
+  "recoveredHashes": {
+    "inventoryFinalSha256": "aae3a8cddbb93bb294d7d318ce93a2faa0d0e790ea707f48624b4c30a584bb66",
+    "judgmentPassARawSha256": "8de321a870639d1dfbcd536ea842b3fb00cfc3295a9411d5bdfee7990b279141",
+    "judgmentPassBRawSha256": "5462ef6c86c47d00ac5fef477a4d85f7a91d04b4829a13ff03bb859695150a41",
+    "adjudicationOutputSha256": "7add0be852f846919d932eaf4fafc66fbb5edf3f36b8a70b2143744b6eccd64b",
+    "scoreOutputSha256": "b8f978f8290b0f9b0536b609e0a0ecd422d26cec04370bbac24a59285ae09c07",
+    "failedMergedPublicationSha256": "84a9a98c849a771206492a2a71d69418ff473d73bb770aceee0fa0b6a284487d"
+  },
+  "cost": {
+    "directIncrementalCostUsd": 0,
+    "paidCallsPermitted": false
+  }
+}

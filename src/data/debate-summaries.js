@@ -10406,5 +10406,57 @@ export const debateSummaries = [
         "title": "Gospel allegory and historicization"
       }
     ]
+  },
+  {
+    "id": "kastrup-oppy-idealism-naturalism-2021",
+    "number": "230",
+    "title": "Does Analytic Idealism Better Explain Reality? Bernardo Kastrup vs. Graham Oppy (2021)",
+    "label": "Idealism, naturalism, and explanation",
+    "date": "2026-09-01",
+    "duration": "1 hr 33 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8WK-auo8Miw",
+    "motion": "Does analytic idealism better explain reality than scientific naturalism?",
+    "summary": "Kastrup makes consciousness and qualitative experience the central explanatory test; Oppy narrowly prevails by clarifying pluralistic naturalism, identity, underdetermination, and balanced theory choice.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Analytic idealism better explains reality",
+        "speaker": "Bernardo Kastrup",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism remains preferable",
+        "speaker": "Graham Oppy",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 81,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Positions, naturalism, and physicalism"
+      },
+      {
+        "title": "Reduction, explanatory vocabularies, and identity"
+      },
+      {
+        "title": "Conscious qualities and knowledge"
+      },
+      {
+        "title": "Perception, theoretical entities, and external reality"
+      },
+      {
+        "title": "Mind-brain dependence, dissociation, and altered states"
+      },
+      {
+        "title": "Causal structure, regress, and explanation"
+      },
+      {
+        "title": "Parsimony and final theory comparison"
+      }
+    ]
   }
 ];

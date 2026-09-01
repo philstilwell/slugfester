@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "debateNumber",
+    "decisions"
+  ],
+  "properties": {
+    "debateNumber": {
+      "type": "string",
+      "const": "230"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateKey",
+          "decision",
+          "rationale",
+          "context"
+        ],
+        "properties": {
+          "candidateKey": {
+            "type": "string",
+            "enum": [
+              "pro-01|fallacy|Appeal to authority",
+              "pro-05|fallacy|Equivocation",
+              "pro-17|fallacy|Begging the question",
+              "pro-18|fallacy|Equivocation",
+              "con-18|fallacy|Red herring",
+              "con-12|bias|Ambiguity effect",
+              "pro-14|fallacy|Begging the question",
+              "con-13|fallacy|Begging the question",
+              "con-14|fallacy|Argument from ignorance",
+              "pro-09|bias|Scope neglect",
+              "pro-10|bias|Base-rate neglect",
+              "con-16|fallacy|Special pleading",
+              "overall-pro-1|fallacy|Equivocation",
+              "overall-pro-2|fallacy|Begging the question",
+              "overall-pro-3|bias|Scope neglect",
+              "overall-con-1|fallacy|Begging the question",
+              "overall-con-2|fallacy|Begging the question",
+              "overall-con-3|fallacy|Red herring"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

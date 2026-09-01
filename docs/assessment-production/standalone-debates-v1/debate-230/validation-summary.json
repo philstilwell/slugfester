@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "230",
+  "debateId": "kastrup-oppy-idealism-naturalism-2021",
+  "completedAt": "2026-09-01T23:24:46.000Z",
+  "source": {
+    "videoId": "8WK-auo8Miw",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 16687,
+    "events": 2499,
+    "transcriptSha256": "f49b3e31778e3c278b0f60605edb2c3e2d240d54b7da0a08531e62c27066d48f",
+    "eventsSha256": "fbab78d940b8b95379d1cd3d045066ee1623b1771ad80578b0bb6eb6c6f92846",
+    "assessedWindow": "00:01:59–01:30:24",
+    "excludedMaterial": "opening introduction before 00:01:59, moderator administration as scored moves, closing program plugs, and the outro after 01:30:24",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 36,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 8,
+    "adjudicatedDisputes": 8,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 81,
+      "con": 82,
+      "winner": "con",
+      "margin": 1
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 23,
+    "argumentCards": 36,
+    "uniqueLockedMovesMapped": 36,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": { "pro": 4, "con": 4 },
+    "overallBlunders": { "pro": 3, "con": 3 },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "b844dcb7c533f741fd21bb8ec5c240ec2da44f5e59e9e9e1213b27693f72d18a",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-230/publication/content-parity-audit.json",
+    "contentParityDisposition": "passed without a further content repair after the authorized two-field critique repair",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 22,
+      "mean": 23.5,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": { "minimum": 117, "mean": 124.4, "maximum": 130 },
+    "critiqueCharacterRange": [911, 1115],
+    "critiqueBoilerplateMeanCoveredRatio": 0.047,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.05,
+    "overallItemWords": { "strengthMean": 26.9, "blunderMean": 27.7 },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-230/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral three-card tag and three-overall-link exact-definition review",
+    "movesReviewedForFallaciesAndBiases": 36,
+    "overallBlundersReviewedForFallaciesAndBiases": 6,
+    "definitionsCheckedPerItem": 13,
+    "definitionComparisonsPerBlindPass": 546,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 18,
+    "acceptedCardRhetoricalTags": 3,
+    "acceptedCardFallacyTags": 3,
+    "acceptedCardBiasTags": 0,
+    "acceptedOverallRhetoricalLinks": 3,
+    "totalAcceptedRhetoricalApplications": 6,
+    "rejectedCardRhetoricalTagCandidates": 9,
+    "controllerDefinitionOverrides": 1,
+    "readerFacingScoringDisclosureCorrect": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 8,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 1,
+    "keyboardSpaceTests": 1,
+    "mobileDistantTapTests": 1,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-230/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 8,
+    "rhetoricalTagsVisuallyVerified": 3,
+    "desktopEvidenceSha256": "5ae696c58fde58f8046babb45db4648fa49ed19fac96d015667af0ff31a0f024",
+    "mobileEvidenceSha256": "a955fb296fd368d8826721bfe15887d7261db10712cfc0b7ac829e15d61353e8"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "230 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "672 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "36 moves; description mean 23.5 words; critique mean 124.4 words; boilerplate coverage mean 0.047"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "36 cards and 6 overall blunders checked against 13 definitions in 2 blind passes; all 18 union candidates adjudicated; 3 card tags and 3 overall links accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "36 populated cards and 3 card-level rhetorical labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 230 with and without --repository-only",
+      "status": "passed",
+      "result": "36 moves; 7 sections; 8 disputes; 0 audio checks; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "230 of 230 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "recoveredOriginalDebateNumber": "222",
+    "publishedDebateNumber": "230",
+    "originalArtifactsPreserved": 55,
+    "completePipelineRestarts": 0,
+    "publicationInitialDraftsRejected": 1,
+    "originalPublicationRepairShards": 7,
+    "authorizedAdditionalRepairShards": 1,
+    "authorizedAdditionalRepairFields": 2,
+    "rhetoricalTagFieldsAdded": 3,
+    "rhetoricalOverallLinksAdded": 3,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 1,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 18,
+    "con": 18,
+    "disposition": "All thirty-six frozen moves are mapped exactly once across seven semantic sections; the numerical balance follows the complete source-derived inventory rather than a symmetry target."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}
