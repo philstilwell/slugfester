@@ -3541,7 +3541,7 @@ a {
 
 .backend-report-content {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(22px, 4vw, 42px);
   align-items: start;
 }
@@ -3549,6 +3549,7 @@ a {
 .backend-report-copy {
   display: grid;
   gap: 14px;
+  max-width: 920px;
 }
 
 .backend-report-copy .eyebrow,
@@ -3571,6 +3572,13 @@ a {
 
 .backend-report-copy strong {
   color: #173f4c;
+}
+
+.backend-report-library {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 28px);
+  align-items: stretch;
 }
 
 .backend-report-card {
@@ -3599,6 +3607,17 @@ a {
   color: #ffffff;
   font-size: clamp(2rem, 4vw, 2.8rem);
   line-height: 1;
+}
+
+.backend-report-card h4 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  line-height: 1.12;
+}
+
+.backend-report-card strong {
+  color: #ffffff;
 }
 
 .backend-report-card > p,
@@ -5844,7 +5863,8 @@ a {
   .assessment-detail,
   .backend-summary-panel,
   .backend-selection,
-  .backend-report-content {
+  .backend-report-content,
+  .backend-report-library {
     grid-template-columns: 1fr;
   }
 

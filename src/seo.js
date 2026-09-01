@@ -612,7 +612,7 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls and a linked corpus analysis of theist-side results.";
+    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls and two linked corpus analyses of theist-side results.";
   const updatedDate = "2026-09-01";
 
   return {
@@ -631,6 +631,10 @@ export function backendSeo({ legacy = false } = {}) {
       {
         href: "/output/pdf/why-do-the-theist-sides-score-lower.pdf",
         label: "PDF report: Why Do the Theist Sides Score Lower?"
+      },
+      {
+        href: "/output/pdf/are-theist-arguments-more-often-slogan-like.pdf",
+        label: "PDF report: Are Theist Arguments More Often Slogan-Like?"
       }
     ],
     jsonLd: [

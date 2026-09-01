@@ -2669,42 +2669,66 @@ function renderBackend() {
         <details class="backend-objectivity-accordion backend-report-accordion">
           <summary>
             <span>
-              <span class="backend-objectivity-kicker">Corpus-level analysis</span>
-              <strong id="backend-report-heading">Why do the theist sides score lower?</strong>
-              <small>Open a detailed overview and the complete 15-page PDF report</small>
+              <span class="backend-objectivity-kicker">Research library</span>
+              <strong id="backend-report-heading">Corpus-level analysis paper</strong>
+              <small>Open descriptions and PDF links for both corpus-wide studies</small>
             </span>
             <i aria-hidden="true"></i>
           </summary>
           <div class="backend-objectivity-content backend-report-content">
             <div class="backend-report-copy">
-              <p class="eyebrow">Report published September 1, 2026</p>
-              <h3>A defense of the epistemic bleed-through hypothesis</h3>
-              <p>Published after the corrected position audit, this report examines the 169 assessed debates in the Slugfester corpus that support a relevant theist-versus-non-theist comparison. It analyzes 3,502 scored argumentative moves and decomposes the average score difference between the two sides instead of relying only on who won each scorecard.</p>
-              <p>The report finds that non-theist sides scored 6.35 points higher on average. The largest parts of that difference arose from logical coherence, evidence and warrant, and responsiveness. It also compares evidence thresholds, overstatement, reply contact, and treatment of alternatives, then checks whether the evidence gap persists within constructives, replies, load-bearing moves, and debates where the theist side argues con.</p>
-              <p>The interpretation defended is the <strong>epistemic bleed-through hypothesis</strong>: standards that permit religious commitment through revelation, testimony, experience, theological fit, or inherited authority may be carried into public argument, where the premises require independent warrant and explicit comparison with alternatives. The report argues that this mechanism best explains the observed cluster of under-substantiation, inferential overreach, overstatement, and incomplete engagement with opposing arguments.</p>
-              <p><strong>Scope and limits:</strong> this is a corpus-level explanatory argument, not experimental proof that faith caused any particular speaker's reasoning. Slugfester is a curated rather than random sample, speakers repeat, and the scores are AI-assisted transcript-grounded judgments under a fixed rubric. The classifications describe the position argued in each scorecard, not a speaker's intellectual worth, sincerity, or private psychology. The report states these limits, tests rival explanations, and proposes blind human replication and a direct falsification test.</p>
+              <p class="eyebrow">Two papers published September 1, 2026</p>
+              <h3>Corpus-wide explanations of the theist-side performance gap</h3>
+              <p>These companion papers examine the corrected set of 169 Slugfester debate assessments and 3,502 scored argumentative moves. The first asks why the theist sides receive lower overall scores. The second tests the more specific hypothesis that theist-side arguments more often take the form of weakly warranted, overstated, and difficult-to-falsify rhetorical affirmations.</p>
+              <p>Both papers use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side. They report their operational definitions, paired debate checks, speaker and burden controls, representative cases, counterexamples, rival explanations, limitations, and conditions that could weaken their conclusions.</p>
             </div>
-            <aside class="backend-report-card" aria-label="Report at a glance">
-              <span>Report at a glance</span>
-              <strong>169 debates</strong>
-              <p>3,502 scored moves in the relevant theist-versus-non-theist assessment set</p>
-              <dl>
-                <div>
-                  <dt>Average score difference</dt>
-                  <dd>6.35 points</dd>
-                </div>
-                <div>
-                  <dt>Report length</dt>
-                  <dd>15 pages</dd>
-                </div>
-                <div>
-                  <dt>Figures</dt>
-                  <dd>5</dd>
-                </div>
-              </dl>
-              <a class="button primary backend-report-link" href="/output/pdf/why-do-the-theist-sides-score-lower.pdf" type="application/pdf" target="_blank" rel="noopener">Open the full PDF report</a>
-              <small>Includes the score-gap decomposition, burden controls, representative cases, rival explanations, methodology, caveats, and conclusion.</small>
-            </aside>
+            <div class="backend-report-library" aria-label="Corpus-level analysis papers">
+              <article class="backend-report-card">
+                <span>Paper one · Score-gap diagnosis</span>
+                <h4>Why Do the Theist Sides Score Lower?</h4>
+                <p>This paper decomposes the average score difference rather than relying only on debate winners. It finds a 6.35-point non-theist advantage, concentrated most strongly in logical coherence, evidence and warrant, and responsiveness.</p>
+                <p>It defends the <strong>epistemic bleed-through hypothesis</strong>: permissive standards used to sustain religious commitment through revelation, testimony, experience, theological fit, or inherited authority may carry into public argument, where independent substantiation and explicit comparison with alternatives are required.</p>
+                <dl>
+                  <div>
+                    <dt>Coverage</dt>
+                    <dd>169 debates · 3,502 moves</dd>
+                  </div>
+                  <div>
+                    <dt>Mean score advantage</dt>
+                    <dd>6.35 points</dd>
+                  </div>
+                  <div>
+                    <dt>Length and figures</dt>
+                    <dd>15 pages · 5 figures</dd>
+                  </div>
+                </dl>
+                <a class="button primary backend-report-link" href="/output/pdf/why-do-the-theist-sides-score-lower.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Why Do the Theist Sides Score Lower?”</a>
+                <small>Includes the score-gap decomposition, evidence thresholds, burden controls, representative cases, rival explanations, limitations, and a direct falsification test.</small>
+              </article>
+
+              <article class="backend-report-card">
+                <span>Paper two · Slogan-risk test</span>
+                <h4>Are Theist Arguments More Often Slogan-Like?</h4>
+                <p>This paper tests a stricter three-part pattern: weak public warrant, materially overstated force, and compressed or unstable qualification. The conjunction appears in 28.6% of eligible theist moves and 7.9% of eligible non-theist moves—a 3.62-fold relative rate.</p>
+                <p>It provides concrete examples of unfalsifiable slogan proffering, including several John Lennox cases, while separating the measured argumentative pattern from the stronger claims that every flagged move is literally non-falsifiable or that emotional reinforcement has been proven as its cause.</p>
+                <dl>
+                  <div>
+                    <dt>Primary test</dt>
+                    <dd>146 debates · 2,800 moves</dd>
+                  </div>
+                  <div>
+                    <dt>Mean paired difference</dt>
+                    <dd>20.6 percentage points</dd>
+                  </div>
+                  <div>
+                    <dt>Length and figures</dt>
+                    <dd>17 pages · 6 figures</dd>
+                  </div>
+                </dl>
+                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
+                <small>Includes component comparisons, paired and speaker-balanced checks, fallacy and bias corroboration, explicit falsifiability diagnoses, counterexamples, rival explanations, and a decisive follow-up test.</small>
+              </article>
+            </div>
           </div>
         </details>
       </section>
