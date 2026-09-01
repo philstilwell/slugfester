@@ -10308,5 +10308,51 @@ export const debateSummaries = [
         "title": "Experience, consistency, and final reflections"
       }
     ]
+  },
+  {
+    "id": "ehrman-evans-new-testament-misquote-jesus-2010",
+    "number": "228",
+    "title": "Does the New Testament Misquote Jesus? Bart Ehrman vs. Craig Evans (2010)",
+    "label": "New Testament reliability and Jesus",
+    "date": "2026-09-01",
+    "duration": "1 hr 28 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=L7gmgdk9qG8",
+    "motion": "Does the New Testament misquote Jesus?",
+    "summary": "Ehrman wins 85–83, chiefly through concrete contradictions and saying-level variants; Evans nearly matches him with historically secure cores, eyewitness-linked transmission, and contextual corroboration.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The New Testament contains historically unreliable and misquoted portrayals of Jesus",
+        "speaker": "Bart Ehrman",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The New Testament reliably preserves the essential portrait and teaching of Jesus",
+        "speaker": "Craig Evans",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 83,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Contradictions and the Standard of Gospel Reliability"
+      },
+      {
+        "title": "Preservation of Jesus's Sayings and Deeds"
+      },
+      {
+        "title": "Authorship, Eyewitnesses, and Oral Transmission"
+      },
+      {
+        "title": "Scribal Variants and Preservation of the Text"
+      },
+      {
+        "title": "Historical Corroboration and Closing Synthesis"
+      }
+    ]
   }
 ];

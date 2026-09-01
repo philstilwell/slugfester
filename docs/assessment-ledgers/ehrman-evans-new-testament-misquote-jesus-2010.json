@@ -1,0 +1,665 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "228",
+  "debateId": "ehrman-evans-new-testament-misquote-jesus-2010",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/L7gmgdk9qG8/captions.srv3.xml",
+      "sha256": "c6eb79183852a15e7613ff6f25ac2ab64d8396bc76f72ed0227e70a7d575d8e2",
+      "bytes": 521629
+    },
+    "events": {
+      "path": ".assessment-cache/captions/L7gmgdk9qG8/events.json",
+      "sha256": "08f2e756f522e081d909ae37d967f86dddf70502763573400d3ea7e3629ab079",
+      "bytes": 221268
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/L7gmgdk9qG8/transcript.txt",
+      "sha256": "662eeedafd6d23c08492d3e4854140300bae3084fe4a895a60753d3c84b4d061",
+      "bytes": 93086
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/L7gmgdk9qG8/manifest.json",
+      "sha256": "c73c58164dda37e3cbb10b2feeeb7792c431d90e3b6b5d17f73d4648137498f0",
+      "bytes": 1015
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/authorization.json",
+      "sha256": "de53a84753c553b17e99f5fa76bba301d53275f9b3bb7183fd282be0d6c09691",
+      "bytes": 3595
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/manifest.json",
+      "sha256": "8a39c54a39fc0d368e9a8eb013532d170daadcd2d79fe9ae1480832dccc07b85",
+      "bytes": 5476
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/source/source-lock.json",
+      "sha256": "75f5915928f0cc44816ae0ddff61338eb4cc6f1fffcbd57951a12b1156acea37",
+      "bytes": 2941
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/inventory/inventory.json",
+      "sha256": "5938ff2131020d28e3aed195361d7778fa664915b85baf476d76e934b9bbc559",
+      "bytes": 101325
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/judgments/judgment-packet.json",
+      "sha256": "7bfac56a6f2291ce61b82fde37708ea21f0db13e77b6b47f7064fe9925a96dba",
+      "bytes": 5022
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/judgments/execution.json",
+      "sha256": "08bf790650d147c9ec6e648527c146119e09a7763c39ff8ef9194353146bf403",
+      "bytes": 1842
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/judgments/pass-a/output.json",
+      "sha256": "77bf427ae288f147fe2030af4a5f150a2c6891e20edeabd06a26e4fb6616d7e7",
+      "bytes": 41019
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/judgments/pass-b/output.json",
+      "sha256": "6e8446aa4fdfdefd39ef537c3058779cf2a3b58b08ac372b949513c19bc5fc4e",
+      "bytes": 37716
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/disagreements/disagreements.json",
+      "sha256": "3a366955726ac8c7ddeb5ad9037d5dc18a08a6fa5389700cabc65ee283fd1649",
+      "bytes": 11911
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/audio/audio-verification.json",
+      "sha256": "f1d71d63af3e26e267b701cb0e409bc10517a52578ecb67db9c6e5a1c7f1ea30",
+      "bytes": 1143
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/adjudication/packet.json",
+      "sha256": "af275ce555ade7b029b877f99b84033badaa709d08c7c153cda7b4622679f67e",
+      "bytes": 40299
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/adjudication/output.json",
+      "sha256": "e4b776636599f2eaeb35476497950408de29d5e88b015124be2bf4e8f8789786",
+      "bytes": 3566
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/final-ledger/final-ledger.json",
+      "sha256": "13bef014e94b9cb32d833d61b988bbe0b8e70abbb6a415fc6b284457e5789ba8",
+      "bytes": 223499
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/score-pass/input.json",
+      "sha256": "436929495fd51631a7325ec930903b8866dd2634cb61ac41c576e0264051a241",
+      "bytes": 965
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/score-pass/output.json",
+      "sha256": "c66eee36a974159d01d1a841ebd5c1b4189098d6a93d7efe55033bd9f4797bba",
+      "bytes": 15170
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/score-pass/attestation.json",
+      "sha256": "5d7bba4da3d32496ec6049f1a10ab2bd0795ba60374fa3703aacb6401373c15a",
+      "bytes": 833
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/output.json",
+      "sha256": "9f0043a5b393e5c14848c3c4dd8c3661ca2702cac030ea18e899620df3a5df45",
+      "bytes": 72340
+    },
+    "events": {
+      "path": ".assessment-cache/captions/L7gmgdk9qG8/events.json",
+      "sha256": "08f2e756f522e081d909ae37d967f86dddf70502763573400d3ea7e3629ab079",
+      "bytes": 221268
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/L7gmgdk9qG8/transcript.txt",
+      "sha256": "662eeedafd6d23c08492d3e4854140300bae3084fe4a895a60753d3c84b4d061",
+      "bytes": 93086
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/correction-1-bounded-publication-repair.json",
+      "sha256": "28b2f4a6a89f545248b71bb678b97996e01c3b80560883fabf527b8471f79863",
+      "bytes": 29767
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/preserved-invalid-output-before-bounded-repair.json",
+      "sha256": "f9884429748ed167bcc11d25223e2446ae9ced659c70eea8df35ba6d1bc6613b",
+      "bytes": 66174
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/content-parity-audit.json",
+      "sha256": "5ebdef56e39a961e50674cbc4730bdc9cbe1fca2fa857ea1c906298a7978473e",
+      "bytes": 5783
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/correction-2-rhetorical-tags.json",
+      "sha256": "0d537a7b24d5f42a027423cc0d9f57d321aa150aa30add49c41a28b8d9083b6c",
+      "bytes": 1442
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/rhetorical-tag-audit.json",
+      "sha256": "63b34d10a7ccfaab57786b29c4c81a711aad8d4875d9f8943d85ba63377bae23",
+      "bytes": 50099
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "e21356c77be3b8842f234d595045cdc29f3d604fd35eb1cb55f3f7a19e59ba23",
+      "bytes": 3882
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-228/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "ab3043336e0e763ce91980e84b56b608252c17cf9ba06db46fa40cd69de25d0a",
+      "bytes": 2989
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "228",
+    "debateId": "ehrman-evans-new-testament-misquote-jesus-2010",
+    "sections": [
+      {
+        "sectionId": "reliability-standard",
+        "title": "Contradictions and the Standard of Gospel Reliability",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "ehrman-gospel-discrepancies-undermine-reliability",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 86
+                },
+                "score": 81
+              },
+              {
+                "moveId": "ehrman-passover-chronology-contradiction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 90,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 93,
+                  "calibrationCharity": 84
+                },
+                "score": 89
+              },
+              {
+                "moveId": "ehrman-cumulative-errors-defeat-reliability",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 75,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 66
+                },
+                "score": 73
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "evans-sufficient-core-not-exhaustive-detail",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 71,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 83
+                },
+                "score": 75
+              },
+              {
+                "moveId": "evans-early-sources-eyewitnesses-and-josephus",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 75,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 82
+                },
+                "score": 81
+              },
+              {
+                "moveId": "evans-faith-does-not-require-perfect-harmonization",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 74,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 87
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "sayings-and-deeds",
+        "title": "Preservation of Jesus's Sayings and Deeds",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "ehrman-john-revoices-jesus-theologically",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 92,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 71
+                },
+                "score": 87
+              },
+              {
+                "moveId": "ehrman-detail-changes-leave-substance-unguarded",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 91,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "score": 83
+              },
+              {
+                "moveId": "ehrman-mark-luke-passion-portrayals-conflict",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 91,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 82
+                },
+                "score": 89
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "evans-diverse-attestation-preserves-proclamation-core",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 70,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 84
+                },
+                "score": 82
+              },
+              {
+                "moveId": "evans-essential-preservation-allows-recontextualization",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 87
+                },
+                "score": 81
+              },
+              {
+                "moveId": "evans-historically-secure-core-of-jesus-activities",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 90,
+                  "responsiveness": 79,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 89
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "eyewitness-transmission",
+        "title": "Authorship, Eyewitnesses, and Oral Transmission",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "ehrman-gospels-anonymous-not-eyewitness-claims",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 89,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 77
+                },
+                "score": 84
+              },
+              {
+                "moveId": "ehrman-oral-transmission-changed-stories",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 90,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 75
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "evans-eyewitness-core-within-living-memory",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 88,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 81
+                },
+                "score": 84
+              },
+              {
+                "moveId": "evans-early-church-evidence-weighs-against-invention",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 89,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 88
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "textual-preservation",
+        "title": "Scribal Variants and Preservation of the Text",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "ehrman-lost-earliest-copies-block-certainty",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 93,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 84
+                },
+                "score": 89
+              },
+              {
+                "moveId": "ehrman-variants-change-attributed-sayings",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 89,
+                  "responsiveness": 95,
+                  "relevanceBurden": 94,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 87
+                },
+                "score": 92
+              },
+              {
+                "moveId": "ehrman-lost-copying-generations-block-preservation-claim",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 89,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 83
+                },
+                "score": 90
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "evans-manuscript-evidence-yields-stable-teaching",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 85
+                },
+                "score": 88
+              },
+              {
+                "moveId": "evans-trinitarian-interpolation-did-not-create-doctrine",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 90
+                },
+                "score": 89
+              },
+              {
+                "moveId": "evans-identifiable-interpolations-do-not-erase-teaching",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 89,
+                  "responsiveness": 69,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 91
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "historical-corroboration",
+        "title": "Historical Corroboration and Closing Synthesis",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "ehrman-independent-documentation-is-sparse",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 88,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 81
+                },
+                "score": 87
+              },
+              {
+                "moveId": "ehrman-expansion-defeated-universal-eyewitness-control",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 80
+                },
+                "score": 88
+              },
+              {
+                "moveId": "ehrman-complete-reliability-is-theological-not-historical",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 76,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 54
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "evans-specialists-use-new-testament-historically",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 72,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 80
+                },
+                "score": 78
+              },
+              {
+                "moveId": "evans-contextual-corroboration-supports-gospels",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 90,
+                  "responsiveness": 88,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 87
+              },
+              {
+                "moveId": "evans-facts-do-not-entail-skeptical-inference",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 83,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 93
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 84.98,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      },
+      "con": {
+        "weightedSectionMean": 83.44,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 2,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 28,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

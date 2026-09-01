@@ -94787,6 +94787,589 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "228",
+    "id": "ehrman-evans-new-testament-misquote-jesus-2010",
+    "date": "2026-09-01",
+    "title": "Does the New Testament Misquote Jesus? Bart Ehrman vs. Craig Evans (2010)",
+    "label": "New Testament reliability and Jesus",
+    "topicCategory": "scripture-jesus-resurrection",
+    "youtubeUrl": "https://www.youtube.com/watch?v=L7gmgdk9qG8",
+    "duration": "1 hr 28 min",
+    "motion": "Does the New Testament misquote Jesus?",
+    "summary": "Ehrman wins 85–83, chiefly through concrete contradictions and saying-level variants; Evans nearly matches him with historically secure cores, eyewitness-linked transmission, and contextual corroboration.",
+    "sides": {
+      "pro": {
+        "name": "The New Testament contains historically unreliable and misquoted portrayals of Jesus",
+        "speaker": "Bart Ehrman",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The New Testament reliably preserves the essential portrait and teaching of Jesus",
+        "speaker": "Craig Evans",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 83,
+      "winner": "pro"
+    },
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "Descriptions and quotes derive exclusively from the locked transcript inventory.",
+    "scoringNote": "Scores were computed once from the frozen 28-move ledger after two isolated primary judgments and anonymous adjudication of ten disagreements; AI-generated publication prose and subsequent rhetorical-tag review cannot change them.",
+    "overall": {
+      "pro": {
+        "score": 85,
+        "strengths": [
+          "The Passover comparison precisely contrasts John’s preparation-day crucifixion with Mark’s post-meal chronology, providing a publicly checkable example that directly establishes at least one inaccurate account.",
+          "The extended Mark–Luke Passion comparison connects differing words, conduct, and outlook to materially different portraits, while explaining why a harmonized composite belongs to no individual Gospel.",
+          "The textual case repeatedly targets the undocumented earliest copying generations, distinguishing abundant later manuscripts from evidence capable of establishing continuous preservation of original wording.",
+          "The adultery-passage reply redirects the significance test from doctrinal survival to accurate attribution, showing that a familiar saying placed on Jesus’s lips can be non-original."
+        ],
+        "blunders": [
+          {
+            "text": "The cumulative-error synthesis lists many defect categories without differentiating their frequency, significance, or threshold, leaving the leap from acknowledged problems to overall unreliability insufficiently argued.",
+            "links": [
+              {
+                "label": "Scope neglect",
+                "url": "https://cogbias.site/biases/scope-neglect/"
+              }
+            ]
+          },
+          {
+            "text": "The closing sociological attack treats complete-reliability conclusions as products of evangelical theology, inadequately engaging Evans’s expressly limited standard and relying on sweeping claims about institutions and scholars.",
+            "links": [
+              {
+                "label": "Appeal to authority",
+                "url": "https://logfall.com/fallacies/appeal-to-authority/"
+              },
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          },
+          {
+            "text": "The oral-transmission argument plausibly explains variation but sometimes treats change as inevitable distortion, without adequately considering localized oversight, conservative transmission, or independently recoverable stable material.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 83,
+        "strengths": [
+          "Evans develops a bounded reliability standard centered on recoverable essentials, consistently conceding incompleteness, editorial adaptation, textual variants, and uncertainty instead of defending exhaustive uniformity.",
+          "His historically secure activities argument supplies numerous concrete claims and applies attestation, embarrassment, contextual fit, and dissimilarity-style considerations to recover principal contours without requiring narrative identity.",
+          "The early-church argument tests invention empirically: Gospel sayings conspicuously fail to solve prominent church disputes, while Paul explicitly distinguishes Jesus’s teaching from his own judgment.",
+          "The contextual corroboration case combines first-century dating, named historical figures, Jewish conceptual correspondence, archaeology, institutions, language, geography, and customs into substantial cumulative support for historical usability."
+        ],
+        "blunders": [
+          {
+            "text": "The sufficient-core opening never defines which content is necessary or what degree of accuracy qualifies as sufficient, and it does not resolve Ehrman’s specific Passover chronology challenge.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          },
+          {
+            "text": "The identifiable-interpolation reply demonstrates that one removable gloss leaves broader teaching intact, but it scarcely contacts Ehrman’s decisive concern about inaccessible first-century copying generations.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          },
+          {
+            "text": "The faith-centered closing shows Christianity did not require perfectly harmonized written Gospels, yet that theological consequence does not answer the motion’s historical question about misattributed sayings.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "quotes": {
+      "pro": {
+        "text": "it was not in the original New Testament",
+        "context": "Ehrman uses the non-original adultery passage to distinguish preservation of doctrine from the motion’s narrower question: whether familiar words are accurately attributed to Jesus."
+      },
+      "con": {
+        "text": "an essential and sufficient core of major events and activities are present in the gospels",
+        "context": "Evans concludes his criteria-based survey by limiting historical confidence to principal contours of Jesus’s public activity rather than every reported narrative detail."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "reliability-standard",
+        "title": "Contradictions and the Standard of Gospel Reliability",
+        "timebox": "6:00–1:26:23",
+        "score": {
+          "pro": 81,
+          "con": 79
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-gospel-discrepancies-undermine-reliability",
+              "time": "6:00",
+              "role": "Constructive",
+              "words": "Ehrman concedes historically reliable Gospel material but argues that careful side-by-side reading exposes discrepancies, establishing that at least some reported information is historically inaccurate.",
+              "score": 81,
+              "critique": "Strongest feature: The governing test is lucidly proportional because Ehrman concedes reliable material while explaining that genuine discrepancies would nevertheless establish historical inaccuracy somewhere within the Gospel record. Principal limitation: This introductory span names side-by-side comparison without presenting a particular contradiction, so its evidentiary warrant depends substantially on specific examples supplied later and cannot independently establish breadth or seriousness. Live burden: He must demonstrate specific incompatibilities, distinguish contradiction from supplementation or perspective, and connect any established error to sayings, deeds, or portrayals material enough to answer the motion. Locked score: The 81 reflects excellent responsiveness, burden relevance, clarity, and charitable calibration, together with solid coherence, while the conspicuously lower 68 evidence warrant records the absence of a developed example inside this move.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-sufficient-core-not-exhaustive-detail",
+              "time": "10:29",
+              "role": "Direct reply",
+              "words": "Evans reframes reliability around sufficient content and accuracy, arguing that the Gospels need not provide exhaustive information to preserve what Christian faith historically requires.",
+              "score": 75,
+              "critique": "Strongest feature: Evans introduces a coherent limiting principle that separates sufficient historical content from exhaustive information, directly challenging the stronger reliability standard implicit in Ehrman’s discrepancy-based opening. Principal limitation: He neither specifies the necessary core nor establishes an accuracy threshold, and asserting sufficiency for faith does not answer whether John and Mark conflict about Passover chronology. Live burden: Evans must identify independently supported teachings and activities, justify why those elements constitute the relevant essence, and show that acknowledged discrepancies do not compromise that essence or the motion’s attribution question. Locked score: The 75 reflects strong relevance and charitable calibration but only moderate coherence and clarity, with 64-point evidence warrant and 71-point responsiveness marking an underdemonstrated standard and incomplete contact with the concrete contradiction.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Evans shifts from resolving John and Mark’s Passover chronology to whether the Gospels preserve enough content for Christian faith."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-passover-chronology-contradiction",
+              "time": "7:30",
+              "role": "Constructive",
+              "words": "Ehrman contrasts John’s preparation-day crucifixion with Mark’s placement after the Passover meal, arguing that their explicit respective chronologies cannot both accurately describe Jesus’s death.",
+              "score": 89,
+              "critique": "Strongest feature: The argument identifies the disputed event, names both Gospel chapters, and states two opposing temporal placements, making the claimed contradiction unusually precise, relevant, and publicly checkable. Principal limitation: The compressed presentation does not examine contextual terminology or any harmonizing interpretation, so the conclusion depends on accepting that each chronology is as explicit and mutually exclusive as described. Live burden: Evans must either reconcile the competing placements on historical and textual grounds or explain why an unresolved contradiction concerning Jesus’s death does not defeat his proposed reliability standard. Locked score: The 89 captures exceptional coherence, responsiveness, relevance, and especially 93-point precision, with strong 85-point warrant; only comparatively lower charitable calibration reflects the move’s failure to consider alternative readings before declaring contradiction.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-early-sources-eyewitnesses-and-josephus",
+              "time": "12:11",
+              "role": "Direct reply",
+              "words": "Evans argues that early composition, older underlying sources, surviving eyewitnesses, and Josephus’s parallel outline jointly support an authentic historical core concerning Jesus’s life and movement.",
+              "score": 81,
+              "critique": "Strongest feature: Evans combines several independent-looking considerations—first-century composition, older synoptic sources, living eyewitnesses, and Josephus’s corroborated outline—while proportioning his conclusion to a basic historical core rather than total harmonization. Principal limitation: The move compresses crucial questions about source identity, independence, eyewitness accessibility, and Josephus’s evidentiary relationship to Christian tradition, while leaving the Passover conflict substantially unresolved and its specific chronology unexplained. Live burden: He must demonstrate how these provenance considerations controlled particular Gospel reports and explain why broad corroboration of teacher, wonder worker, crucifixion, and continuing movement protects contested words or chronologies. Locked score: The 81 records balanced strength across coherence, warrant, relevance, clarity, and calibration, but the lower 75 responsiveness appropriately recognizes that positive core evidence answers generalized unreliability more effectively than Ehrman’s specific contradiction.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-cumulative-errors-defeat-reliability",
+              "time": "46:36",
+              "role": "Direct reply",
+              "words": "Ehrman synthesizes contradictions, factual errors, alterations, additions, omissions, and corruptions into a cumulative claim that the Gospels cannot properly be regarded as reliable as a whole.",
+              "score": 73,
+              "critique": "Strongest feature: The compact synthesis directly returns the debate to the motion and gathers Ehrman’s historical and textual categories into a single clear burden-level challenge to Gospel reliability. Principal limitation: The list provides no internal examples, comparative weighting, frequency, interaction, or threshold explaining why heterogeneous defects cumulatively defeat Evans’s narrower claim of an essential and sufficient core. Live burden: Ehrman must differentiate errors affecting attribution and portrait from inconsequential variants, then demonstrate why their combined significance exceeds the limited reliability standard Evans actually defends. Locked score: The 73 reflects strong 86-point burden relevance but substantially weaker coherence, warrant, responsiveness, precision, and calibration, because the conclusion remains categorical while relying on earlier evidence and insufficiently engaging the distinction between textual imperfection and core preservation.",
+              "tags": [
+                {
+                  "label": "Scope neglect",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/scope-neglect/",
+                  "context": "Ehrman infers whole-record unreliability from unweighted categories of defects without assessing their frequency, magnitude, interaction, or effect on the proposed core."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "evans-faith-does-not-require-perfect-harmonization",
+              "time": "1:25:38",
+              "role": "Direct reply",
+              "words": "Evans argues that Christianity grew from resurrection proclamation before written Gospels, so faith never historically depended on variant-free texts or perfectly harmonized sayings and narratives.",
+              "score": 81,
+              "critique": "Strongest feature: The chronology of proclamation, later composition, and early church growth coherently demonstrates that Christian faith did not historically originate from perfectly harmonized or variant-free written accounts. Principal limitation: Showing that faith can survive textual problems does not directly answer whether the New Testament attributes sayings to Jesus inaccurately, making the move subsidiary to the locked historical motion. Live burden: Evans must reconnect the pre-Gospel proclamation to evidence for preserved teaching and activity, while Ehrman must avoid treating religious consequence as necessary to his attribution case. Locked score: The 81 reflects strong coherence, evidence, precision, and charitable calibration, but the 74 responsiveness and 70 relevance scores correctly mark a clear, measured answer to theological necessity that only indirectly supports Gospel reliability.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Evans shifts from whether Gospel sayings are historically misattributed to whether early Christian faith flourished before written Gospels existed."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "sayings-and-deeds",
+        "title": "Preservation of Jesus's Sayings and Deeds",
+        "timebox": "16:08–33:44",
+        "score": {
+          "pro": 86,
+          "con": 83
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-john-revoices-jesus-theologically",
+              "time": "16:08",
+              "role": "Constructive",
+              "words": "Ehrman infers Johannine revoicing from unique divine self-claims, their synoptic absence, and the shared theological style of Jesus, John the Baptist, and the narrator.",
+              "score": 87,
+              "critique": "Strongest feature: Ehrman develops a cumulative textual inference from distinctive divine self-claims, their absence from earlier Synoptics, and stylistic uniformity among otherwise different Johannine speakers, directly addressing misattribution. Principal limitation: Absence and shared literary style do not conclusively establish invention, while his sweeping description of scholarly agreement and dismissal of conservative dissent weaken an otherwise carefully evidenced historical comparison. Live burden: Evans must explain why John’s unique content and pervasive authorial voice remain compatible with faithful preservation, preferably through specific historical criteria rather than merely appealing to an agreed synoptic core. Locked score: The 87 reflects outstanding evidence, responsiveness, relevance, precision, and coherence, with the markedly lower 71 charitable-calibration score isolating categorical claims about scholarship rather than diminishing the substantial textual argument.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-diverse-attestation-preserves-proclamation-core",
+              "time": "18:59",
+              "role": "Direct reply",
+              "words": "Evans cites broad scholarly agreement and diverse attestation for Jesus’s kingdom proclamation, repentance, faith, and neighbor-love, defending an historically recoverable essence despite Johannine differences.",
+              "score": 82,
+              "critique": "Strongest feature: Evans names a specific recoverable proclamation—God’s kingdom, repentance, faith, obedience, and love—and supplies both Sanders’s historical judgment and wide, diverse attestation as grounds for confidence in its authenticity. Principal limitation: This establishes a general teaching core without addressing Ehrman’s specific evidence that John places distinctive divine self-claims in Jesus’s mouth through a uniform authorial voice. Live burden: Evans must connect his attestation criterion directly to the disputed Johannine sayings or concede their uncertainty while explaining why that uncertainty does not materially impair the essential historical portrait and teaching he defends. Locked score: The 82 rests on strong coherence, evidence, relevance, clarity, and calibration, whereas the 70 responsiveness score accurately captures burden-level contact that leaves the central Johannine wording challenge substantially unanswered.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-detail-changes-leave-substance-unguarded",
+              "time": "24:51",
+              "role": "Direct reply",
+              "words": "Using Matthew and Luke’s reversed temptation sequence, Ehrman argues that admitted freedom to change narrative details leaves no demonstrated safeguard against altering substantive content.",
+              "score": 83,
+              "critique": "Strongest feature: Ehrman directly targets Evans’s decisive distinction by pairing a concrete reordered temptation with an epistemic question: what evidence prevents demonstrated editorial freedom from extending into substance? Principal limitation: A changed sequence establishes variation but not substantive distortion, and the possibility that substance changed cannot substitute for evidence that a particular essential teaching or activity actually changed. Live burden: Ehrman must show representative cases where editorial alteration affects meaning, portrayal, or attribution, while Evans must articulate an independently usable boundary between adaptable detail and preserved essence. Locked score: The 83 reflects exceptional responsiveness, strong relevance, precision, and calibration, with credible warrant, while the lower 80 coherence and 76 evidence scores preserve the important distinction between exposing an absent safeguard and proving substantive alteration.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "From one reversed temptation sequence, Ehrman asks how anyone knows evangelists did not also alter the story’s substance."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "evans-essential-preservation-allows-recontextualization",
+              "time": "22:23",
+              "role": "Constructive",
+              "words": "Evans concedes editing, adaptation, and recontextualization but argues that period pedagogy trained disciples to preserve Jesus’s essential message faithfully rather than reproduce tape-recorded wording verbatim in transmission.",
+              "score": 81,
+              "critique": "Strongest feature: The move candidly concedes editorial freedom and clearly distinguishes in practice verbatim reproduction from preservation of essence, providing a historically plausible standard suited to ancient teaching rather than modern recording. Principal limitation: Compatibility is not demonstration; invoking period pedagogy and capable learners supplies no concrete test showing that actual adaptations preserved substance instead of reshaping it materially. Live burden: Evans must identify controls, comparative attestations, or historical criteria that distinguish faithful recontextualization from substantive alteration, especially where Gospel voices, sequences, or Passion portrayals diverge. Locked score: The 81 reflects excellent responsiveness, burden relevance, precision, and charitable calibration, with sound coherence, while the substantially lower 68 evidence warrant records that transmission fidelity remains asserted more than empirically established in this span.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-mark-luke-passion-portrayals-conflict",
+              "time": "26:12",
+              "role": "Constructive",
+              "words": "Ehrman contrasts Mark’s anguished, largely silent Jesus with Luke’s composed, forgiving figure, arguing that harmonization creates a composite Passion portrait found in neither Gospel.",
+              "score": 89,
+              "critique": "Strongest feature: The extended comparison across accounts grounds its inference in specific speech, silence, mockery, forgiveness, dialogue, outlook, and final words, revealing materially different narrative portraits rather than isolated wording differences. Principal limitation: Distinct emphases and supplementary details are not automatically contradictions, and describing Mark’s Jesus as completely silent briefly overlooks the final cry that anchors Ehrman’s own comparison. Live burden: Evans must show that these portrayals preserve one historically adequate essence without simply combining every saying, while Ehrman must establish which differences are mutually exclusive rather than selectively narrated. Locked score: The 89 is supported by uniformly exceptional 88-to-91 scores for coherence, evidence, responsiveness, relevance, and clarity, with the lower 82 calibration score reflecting occasional overstatement of exclusivity and harmonization’s limitations.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-historically-secure-core-of-jesus-activities",
+              "time": "29:26",
+              "role": "Direct reply",
+              "words": "Evans enumerates historically secure activities and applies attestation, embarrassment, and contextual criteria, concluding that scholars can recover the principal contours of Jesus’s public life.",
+              "score": 86,
+              "critique": "Strongest feature: Evans supplies an unusually extensive evidentiary survey across several distinct narrative domains, enumerating activities and applying recognizable historical considerations to baptism, healings, meals, crucifixion, the placard, disciples, and continuing movement. Principal limitation: Establishing principal contours does not reconcile Mark’s and Luke’s competing Passion portrayals, and several criteria are presented rapidly without fully testing dependence or alternative explanations. Live burden: Evans must clarify how confidence in bounded activities bears on disputed sayings and outlook, while maintaining the careful distinction between recovering a core and validating each narrative presentation. Locked score: The 86 reflects outstanding 90-point evidence and relevance, strong coherence, clarity, and 89-point calibration, with the lower 79 responsiveness marking a persuasive core-level answer that leaves Ehrman’s detailed Passion contrasts unreconciled.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "eyewitness-transmission",
+        "title": "Authorship, Eyewitnesses, and Oral Transmission",
+        "timebox": "35:10–1:02:45",
+        "score": {
+          "pro": 85,
+          "con": 86
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-gospels-anonymous-not-eyewitness-claims",
+              "time": "35:10",
+              "role": "Constructive",
+              "words": "Ehrman argues that the internally anonymous Gospels claim neither eyewitness authorship nor their traditional names, which later editors and traditions attached to the texts.",
+              "score": 84,
+              "critique": "Strongest feature: Ehrman precisely separates with textual precision three propositions—textual anonymity, absence of explicit eyewitness claims, and later traditional naming—thereby weakening simplistic appeals to direct named apostolic authorship. Principal limitation: Anonymous composition does not establish that authors lacked eyewitness sources, and the move advances too quickly from absent authorial claims toward the stronger conclusion of no eyewitness connection. Live burden: Ehrman must provide a transmission account linking anonymous final authors to changing non-eyewitness traditions, while Evans must distinguish traditional authorship from the provenance of underlying testimony. Locked score: The 84 records excellent responsiveness, relevance, and 90-point clarity alongside strong coherence and evidence, while the lower 77 calibration score captures the insufficient separation between defeating explicit eyewitness authorship and excluding indirect eyewitness access.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Ehrman moves from anonymous texts and absent eyewitness claims to concluding their writers lacked eyewitness connections."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "evans-eyewitness-core-within-living-memory",
+              "time": "58:36",
+              "role": "Direct reply",
+              "words": "Evans distinguishes anonymous authorship from source provenance, arguing that identifiable witnesses and composition within living memory constrained fabrication and supplied a substantial eyewitness core.",
+              "score": 84,
+              "critique": "Strongest feature: Evans directly separates final authorship from underlying provenance and supports a limited eyewitness core through living-memory dating, named and unnamed informants, Bauckham, and Taylor’s criticism. Principal limitation: The continued existence of witnesses does not demonstrate their practical supervision of dispersed traditions, and particular Gospel materials are not traced to particular witnesses within the move. Live burden: Evans must explain mechanisms of access, correction, and geographical reach, while Ehrman must show that expanding oral networks escaped meaningful localized control rather than merely universal oversight. Locked score: The 84 reflects strong coherence, evidence, responsiveness, relevance, clarity, and calibration, with no severely weak dimension, yet its bounded conclusion remains better supported than the broader implication that eyewitness survival historically effectively constrained transmitted stories.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-oral-transmission-changed-stories",
+              "time": "37:28",
+              "role": "Direct reply",
+              "words": "Ehrman argues that decades of cross-language, cross-location oral transmission altered stories before Greek authors recorded them, explaining Gospel discrepancies and limiting recovery of historical details.",
+              "score": 85,
+              "critique": "Strongest feature: The move offers a clear causal mechanism connecting temporal distance, linguistic translation, geographical separation, oral circulation, and observed discrepancies, directly countering Evans’s early-source and living-witness claims. Principal limitation: Oral transmission can change without necessarily producing substantial distortion, and the span supplies no comparative evidence measuring stability, control, or the scale of alteration across particular traditions across the particular traditions cited here. Live burden: Ehrman must show why this transmission environment was insufficiently regulated and connect the mechanism to demonstrably altered substance, while Evans must identify practical controls rather than merely surviving eyewitnesses. Locked score: The 85 reflects excellent responsiveness, relevance, clarity, and strong coherence, with respectable 79-point warrant, while the lower 75 calibration score records categorical language that understates conservative transmission and localized correction.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-early-church-evidence-weighs-against-invention",
+              "time": "59:43",
+              "role": "Direct reply",
+              "words": "Evans argues against wholesale invention because Jesus never conveniently addresses major church disputes, Paul distinguishes Jesus’s words from his own, and early traditions remain eyewitness-linked.",
+              "score": 88,
+              "critique": "Strongest feature: Evans derives testable expectations from free invention, identifies conspicuously absent sayings addressing early controversies, and reinforces restraint through Paul’s explicit distinction between Jesus’s words and personal judgment with unusual empirical specificity. Principal limitation: Evidence against wholesale fabrication does not exclude gradual reshaping, selective preservation, or isolated invented sayings, while Papias’s precise Gospel links remain qualified and debatable. Live burden: Evans must show that these signs of restraint governed geographically dispersed transmission and protected contested material, whereas Ehrman must explain the missing dispute-tailored sayings under his change model. Locked score: The 88 rests on uniformly excellent coherence, evidence, responsiveness, relevance, clarity, and calibration, because the move supplies distinct empirical tests while candidly conceding editing, recontextualization, lost evidence, and uncertainty about Papias.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "textual-preservation",
+        "title": "Scribal Variants and Preservation of the Text",
+        "timebox": "41:28–1:18:10",
+        "score": {
+          "pro": 90,
+          "con": 87
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-lost-earliest-copies-block-certainty",
+              "time": "48:49",
+              "role": "Direct reply",
+              "words": "Ehrman argues that abundant late manuscripts cannot establish original wording because the undocumented earliest copying period precedes surviving witnesses, whose earliest representatives contain substantial variation.",
+              "score": 89,
+              "critique": "Strongest feature: Ehrman isolates the central unresolved epistemic gap between abundant later attestation and inaccessible earliest transmission, directly challenging the inferential engine of Evans’s manuscript-stability case. Principal limitation: Greater variation in early witnesses is asserted without precise quantification, and missing evidence establishes uncertainty more readily than it establishes extensive or consequential corruption. Live burden: Evans must explain how textual criticism can bridge the lost copying generations, while Ehrman must show why surviving genealogical agreement and identifiable variants cannot still support credible probabilistic reconstruction. Locked score: The 89 reflects exceptional coherence, evidence, 93-point responsiveness, relevance, precision, and good calibration; its careful conclusion is inability to know with certainty, not proof of wholesale corruption, although occasional rhetorical generalization keeps calibration below the other leading dimensions.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-manuscript-evidence-yields-stable-teaching",
+              "time": "41:28",
+              "role": "Constructive",
+              "words": "Evans argues that numerous ancient, verbally agreeing manuscripts produce a remarkably stable critical text whose variants do not significantly alter Jesus’s teaching or major Christian doctrine.",
+              "score": 88,
+              "critique": "Strongest feature: Evans supplies manuscript chronology, abundance, verbal agreement, older discoveries, and textual-critical estimates, while sensibly distinguishing academically interesting variants from changes affecting significant teachings. Principal limitation: Teaching-level stability is narrower than exact original wording, percentage estimates remain insufficiently explained with transparent methods and sensitivity to contested reconstructions, and agreement among surviving manuscripts may not illuminate undocumented earliest copying. Live burden: Evans must show why later manuscript convergence reliably reaches behind the first surviving witnesses and address cases where non-original passages place memorable sayings directly on Jesus’s lips. Locked score: The 88 reflects consistently excellent coherence, evidence, responsiveness, relevance, clarity, and calibration, particularly the direct engagement with variant significance, although the argument’s strongest conclusion concerns doctrinal continuity rather than certainty about every attributed saying.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-variants-change-attributed-sayings",
+              "time": "56:34",
+              "role": "Direct reply",
+              "words": "Ehrman invokes the non-original adultery passage to show that variants determine whether beloved sayings were spoken by Jesus, even when doctrine remains otherwise intact.",
+              "score": 92,
+              "critique": "Strongest feature: Ehrman precisely redirects the significance inquiry directly from whether doctrine survives to whether words placed in Jesus’s mouth were originally present, using two famous sayings from a conceded interpolation. Principal limitation: The large raw number of textual differences may exaggerate substantive uncertainty, and one prominent passage cannot independently establish the prevalence of saying-level misattribution. Live burden: Evans must explain why recoverable identification and removal answer the historical misquotation itself, while Ehrman must establish how representative such cases are of the New Testament’s portrayal. Locked score: The 92 reflects extraordinary coherence, warrant, 95-point responsiveness, 94-point relevance, 92-point precision, and strong calibration, making this the clearest motion-specific reply because it accepts shared textual premises and exposes doctrinal survival as an incomplete metric.",
+              "tags": [
+                {
+                  "label": "Scope neglect",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/scope-neglect/",
+                  "context": "Ehrman foregrounds enormous raw variant totals and one famous interpolation without establishing the proportion of substantively affected sayings."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "evans-trinitarian-interpolation-did-not-create-doctrine",
+              "time": "43:55",
+              "role": "Constructive",
+              "words": "Evans concedes scribal alteration of First John but argues that Trinitarian doctrine preceded the interpolation and that pre-council manuscripts retain the same substantive theology.",
+              "score": 89,
+              "critique": "Strongest feature: Evans openly concedes the theologically motivated interpolation, then reverses the causal direction through council chronology and earlier manuscript continuity, showing the variant followed rather than generated doctrine in the surviving evidence. Principal limitation: Demonstrating doctrinal independence from one gloss does not establish exact textual preservation or answer whether other variants materially change words attributed to Jesus. Live burden: Evans must connect pre-council theological continuity to the undocumented earlier transmission period and defend a significance standard responsive to misquotation rather than doctrine alone. Locked score: The 89 reflects exceptional coherence, evidence, responsiveness, relevance, precision, and especially 90-point calibration, because the concession is genuine and the conclusion carefully limited, while the remaining vulnerability concerns the distance between resilient theology and recoverable original wording.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-lost-copying-generations-block-preservation-claim",
+              "time": "1:14:49",
+              "role": "Direct reply",
+              "words": "Using Mark’s 150-year partial-witness gap and later complete copy, Ehrman argues that lost copying generations prevent later manuscript agreement from proving continuous accurate preservation.",
+              "score": 90,
+              "critique": "Strongest feature: Ehrman makes the missing transmission chain concrete, historically specific, and testable through dates for Mark’s first partial and complete surviving witnesses, sharply distinguishing later comparison from evidence of earliest continuity. Principal limitation: Universal variation among surviving copies does not specify consequential differences, and the autobiographical discussion of inspiration introduces a theological issue peripheral to the historical preservation inference. Live burden: Evans must explain how reconstruction reaches behind absent generations, while Ehrman must preserve his calibrated uncertainty claim rather than implying that undocumented transmission necessarily produced unrecoverable corruption. Locked score: The 90 reflects exceptional coherence, evidence, 94-point responsiveness, 92-point relevance, and 90-point clarity, with the lower 83 calibration score capturing repeated raw variant totals and theological asides without undermining the precise epistemic challenge.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-identifiable-interpolations-do-not-erase-teaching",
+              "time": "51:28",
+              "role": "Direct reply",
+              "words": "Evans accepts Luke’s bloody-sweat verses as a later gloss but argues that identifying and removing them leaves no significant Passion element or teaching about Jesus lost.",
+              "score": 83,
+              "critique": "Strongest feature: Evans presents a concrete worked example encompassing oldest-manuscript absence, Gospel comparison, critical bracketing, acceptance of interpolation, proposed omission, and a proportionate question about substantive consequence within this specific textual case. Principal limitation: One detectable gloss cannot establish whole-text accuracy, and teaching-level resilience does not answer Ehrman’s decisive concern that no surviving witnesses reveal the earliest copying period. Live burden: Evans must justify extrapolation from identifiable later interpolations to preservation across undocumented generations and address whether non-original sayings matter independently of doctrinal redundancy. Locked score: The 83 combines outstanding 89-point evidence, 91-point clarity, and 91-point calibration with good coherence, but the adjudicated 69 responsiveness and 80 relevance scores record incomplete contact with the missing-earliest-copies argument and only partial support for broader preservation.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Evans shifts from whether Luke contains non-original material to whether removing it costs a major Passion element or doctrine."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "historical-corroboration",
+        "title": "Historical Corroboration and Closing Synthesis",
+        "timebox": "1:03:07–1:25:02",
+        "score": {
+          "pro": 82,
+          "con": 82
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-independent-documentation-is-sparse",
+              "time": "1:03:07",
+              "role": "Constructive",
+              "words": "Ehrman surveys Pliny, Josephus, Paul, and absent Greco-Roman records, arguing that scarce independent evidence leaves historians reliant on Gospels already burdened by discrepancies and transmission problems.",
+              "score": 87,
+              "critique": "Strongest feature: Ehrman gives a detailed chronological survey of Greek, Roman, Jewish, Pauline, and Gospel sources, with concrete dates and intervals, clarifying how little independent material directly documents Jesus’s words and public deeds. Principal limitation: Scarcity increases dependence on the Gospels but does not itself make them unreliable, and emphatic descriptions of their discrepancies outrun what the external-source survey independently demonstrates. Live burden: Evans must show that contextual or external correspondence verifies more than background, while Ehrman must connect sparse corroboration to particular disputed sayings and portrayals without treating silence as disconfirmation. Locked score: The 87 reflects excellent evidence, responsiveness, relevance, clarity, coherence, and good calibration, with the modestly lower calibration score preserving the distinction between limited independent checking and affirmative evidence of unreliability.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-specialists-use-new-testament-historically",
+              "time": "1:07:55",
+              "role": "Direct reply",
+              "words": "Evans compares extensive New Testament citation with negligible use of later gospels in an archaeology volume, inferring that specialists find canonical writings historically useful for pre-70 research.",
+              "score": 78,
+              "critique": "Strongest feature: Evans offers unusually concrete bibliographic evidence—a named multidisciplinary volume, contributor totals, and comparative citation counts—showing that specialists repeatedly use canonical writings while neglecting later alternatives in research on archaeology and history. Principal limitation: Citation frequency demonstrates utility, not comprehensive reliability, and it answers whether historians use the Gospels more directly than Ehrman’s claim that independent documentation is sparse. Live burden: Evans must distinguish citations for background, criticism, and positive confirmation, then connect specialist usage to accurate preservation of Jesus’s particular sayings and activities rather than contextual usefulness alone. Locked score: The 78 combines strong 83-point evidence and 85-point clarity with moderate coherence, responsiveness, relevance, and calibration, appropriately treating professional usage as informative contextual evidence rather than decisive validation of Gospel content.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-expansion-defeated-universal-eyewitness-control",
+              "time": "1:06:01",
+              "role": "Direct reply",
+              "words": "Ehrman argues that rapid expansion from Jerusalem across the empire placed ordinary conversion chains beyond apostolic supervision, making universal eyewitness correction of changing stories impossible.",
+              "score": 88,
+              "critique": "Strongest feature: The conversion-chain illustration and named geographical centers concretely expose the practical difference between eyewitnesses remaining alive and eyewitnesses actually monitoring stories across a rapidly expanding transregional movement far from Jerusalem and other apostolic centers. Principal limitation: Defeating universal supervision does not exclude organized networks, traveling teachers, stable formulations, or effective localized checking, and the move establishes scale more clearly than actual alteration. Live burden: Evans must specify realistic transmission controls beyond witness survival, while Ehrman must connect geographical diffusion to demonstrable changes in consequential sayings or deeds. Locked score: The 88 reflects exceptional coherence, 93-point responsiveness, relevance, precision, strong warrant, and reasonable calibration; the lower 80 calibration score records occasional movement from disproving universal control toward discounting localized control too readily.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "evans-contextual-corroboration-supports-gospels",
+              "time": "1:10:55",
+              "role": "Direct reply",
+              "words": "Evans combines early dating, Josephus, Jewish parallels, archaeology, institutions, Semitic linguistic influence, and accurate geography to justify historians’ reliance on the canonical Gospels as historical sources.",
+              "score": 87,
+              "critique": "Strongest feature: Evans organizes a broad cumulative case across dating, external personalities, Jewish conceptual fit, archaeology, customs, institutions, language, topography, geography, and climate, supplying numerous specific, independently checkable examples. Principal limitation: Contextual accuracy can establish knowledgeable provenance and historical usability without verifying every narrated event or saying, and evidence from Acts is occasionally blended with evidence for the Gospels. Live burden: Evans must explain how environmental verisimilitude increases confidence in contested speech and portrayals, while Ehrman must show why such convergence cannot meaningfully constrain his alteration model. Locked score: The 87 reflects outstanding 90-point evidence, strong coherence, responsiveness, relevance, clarity, and calibration, with the comparatively lower 82 calibration score marking the tendency to let accurate setting imply broader content accuracy too readily.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ehrman-complete-reliability-is-theological-not-historical",
+              "time": "1:18:08",
+              "role": "Direct reply",
+              "words": "Ehrman concludes that complete Gospel reliability reflects prior theological commitments rather than historical evidence, while urging openness about disagreements among biblical authors and interpreters.",
+              "score": 71,
+              "critique": "Strongest feature: Ehrman clearly distinguishes historians’ important critical use of sources from a conclusion of complete historical reliability and directly reiterates his claim that the Gospels misrepresent some sayings and deeds. Principal limitation: Sweeping claims about institutions, scholarly motives, and evangelical exceptionalism substitute broad sociology for rebuttal, mischaracterize Evans’s limited sufficient-core standard, and substantially dilute relevance through extended ethical application. Live burden: Ehrman must answer Evans’s specific historical evidence on its merits and clearly establish unreliability without inferring causation from opponents’ affiliations; Evans must preserve his non-fundamentalist qualifications. Locked score: The 71 reflects direct motion contact and adequate responsiveness but weak overall 67-point coherence, 65-point warrant, and especially 54-point calibration, with modest overall clarity and adjudicated 84-point relevance unable to offset the uncharitable overgeneralization.",
+              "tags": [
+                {
+                  "label": "Appeal to authority",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Ehrman invokes virtually all non-evangelical institutions and discounts dissenters by affiliation instead of answering Evans’s limited historical evidence."
+                },
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Ehrman turns from historical attribution to abortion, gun control, gay rights, and a general appeal for nondogmatic biblical interpretation."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "evans-facts-do-not-entail-skeptical-inference",
+              "time": "1:21:44",
+              "role": "Direct reply",
+              "words": "Evans concedes textual variation, diversity, uncertainty, and fundamentalist oversimplification but argues that these phenomena alone do not themselves entail Ehrman’s conclusion of Gospel unreliability.",
+              "score": 80,
+              "critique": "Strongest feature: Evans generously accepts many disputed phenomena and explicitly rejects rigid fundamentalist categories, thereby isolating the genuine inferential disagreement instead of denying textual or historical complexity in this exchange. Principal limitation: The alternative inference remains underdeveloped, and general observations about scholarly correction and the Dead Sea Scrolls do little by themselves to resolve Ehrman’s specific earliest-copy uncertainty. Live burden: Evans must explicitly state what conclusion the conceded evidence positively warrants and reconnect it to his sufficient historical core; Ehrman must show why his negative inference follows rather than merely remains possible. Locked score: The 80 reflects sound coherence, responsiveness, relevance, and clarity alongside extraordinary 93-point calibration, but its 68-point evidence warrant records that admirable restraint and fair representation alone do not independently establish reliability.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Evans answers earliest-copy uncertainty with broad reflections on fundamentalism, fallible scholarship, and Dead Sea Scroll surprises, leaving his positive alternative underdeveloped."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "logicalExtension": {
+      "label": "AI Extension",
+      "pro": {
+        "finalArgument": {
+          "thesis": "The strongest historical conclusion is not wholesale Gospel falsehood, but that identifiable contradictions, editorial revoicing, and non-original sayings defeat confidence in uniformly accurate attribution.",
+          "premises": [
+            "John and Mark assign Jesus’s death to opposing sides of the Passover meal, so at least one explicit chronology cannot describe the event accurately.",
+            "John’s distinctive divine self-claims, synoptic silence, and uniform authorial idiom jointly make evangelistic revoicing more probable than verbatim preservation of Jesus’s speech.",
+            "Mark and Luke construct materially different Passion portraits through contrasting sayings, silences, emotional outlooks, and final words that a later harmonized composite cannot erase.",
+            "Anonymous Greek authors wrote after decades of multilingual, geographically expanding transmission, while living eyewitnesses could not realistically supervise every ordinary chain of conversion.",
+            "Lost earliest copies prevent certainty about original wording, and conceded interpolations demonstrate that transmission sometimes placed memorable, non-original sayings directly on Jesus’s lips."
+          ],
+          "conclusion": "Therefore, even granting recoverable historical cores and stable major teachings, the evidence warrants affirming that the New Testament contains some historically inaccurate portrayals and misattributed sayings of Jesus."
+        },
+        "newArguments": [
+          {
+            "title": "Attribution Has a Lower Threshold Than Doctrinal Collapse",
+            "text": "The motion asks whether Jesus is misquoted, not whether Christianity’s doctrines were invented by scribes. Consequently, one securely identified non-original saying attributed to Jesus establishes the proposition even if every major doctrine remains independently supported. Evans’s doctrinal-resilience test therefore sets a burden higher than the motion requires. The historically proportionate pro case can concede stable theology, substantial authentic tradition, and useful Gospel history while insisting that accurate attribution is a distinct property. Once textual criticism removes words formerly presented as Jesus’s speech, the narrower proposition has already received direct evidentiary support."
+          },
+          {
+            "title": "Genre-Level Reliability Cannot Settle Sentence-Level Attribution",
+            "text": "Evidence that a document accurately names rulers, roads, customs, climates, and institutions supports knowledgeable setting, but it does not transfer automatically to every reported sentence. Historical narratives can preserve excellent environmental detail while arranging speeches, compressing exchanges, or expressing an author’s interpretation through characters. The inferential distance matters especially in John, where style and theology remain consistent across narrator and speakers. Thus contextual corroboration should raise confidence in provenance and general historical location without cancelling independent linguistic or comparative evidence that a particular saying reflects evangelistic composition rather than Jesus’s recoverable voice."
+          },
+          {
+            "title": "Uncertainty Is Asymmetrical Under a Universal Reliability Claim",
+            "text": "If reliability means that the New Testament consistently preserves accurate sayings and portrayals, inaccessible early transmission creates an asymmetrical burden. Later agreement can show that a reading became stable, but without early witnesses it cannot by itself demonstrate that the stabilized reading reproduces the first text. This does not prove corruption throughout the tradition. It means that categorical preservation exceeds the available evidence, especially when known interpolations confirm that additions sometimes entered the stream. A calibrated historical judgment should therefore separate high confidence in many passages from unsupported universal confidence across every attribution."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The Gospels remain historically reliable in their essential portrait because multiple, differently situated evidentiary streams converge on Jesus’s proclamation, public activity, crucifixion, and movement.",
+          "premises": [
+            "Reliability need not mean exhaustive detail or verbatim identity; ancient pedagogical transmission can preserve substantive teaching while permitting selection, adaptation, translation, and recontextualization.",
+            "Wide and diverse attestation supports a stable proclamation centered on God’s kingdom, repentance, faith, obedience, and love, independently of disputed Johannine formulations.",
+            "Multiple historical criteria support Jesus’s baptism, preaching, healing, disciples, temple controversy, meals with marginalized people, Roman crucifixion, and the continuation of his followers.",
+            "Living-memory composition, identifiable witnesses, absent dispute-tailored sayings, and Paul’s distinction between Jesus’s words and his own weigh against uncontrolled or wholesale invention.",
+            "Abundant manuscripts expose rather than conceal variants, while recoverable interpolations leave the broader portrait and major teachings substantially continuous across earlier surviving witnesses."
+          ],
+          "conclusion": "Therefore, acknowledged discrepancies, editorial shaping, and textual variants justify critical discrimination but do not outweigh the convergent evidence for a reliably preserved essential portrait and teaching of Jesus."
+        },
+        "newArguments": [
+          {
+            "title": "Error Detection Is Evidence of Recoverability",
+            "text": "The same manuscript plurality that reveals variants also permits comparison across textual families, dates, and geographical lines. An interpolation’s identification is therefore not merely evidence that corruption occurred; it also demonstrates that corruption can become visible rather than permanently replacing every competing witness. Where older and diverse manuscripts converge against a later gloss, criticism can remove the addition and recover an earlier form. This does not guarantee every original word, but it supports a graded preservation claim: substantial recoverability can coexist with localized uncertainty, and known variants need not make the entire textual tradition epistemically opaque."
+          },
+          {
+            "title": "Adversarial Memory Can Constrain Public Claims",
+            "text": "Jesus’s activities were not remembered only within a friendly, isolated circle. Public preaching, controversies, healings, temple action, arrest, and execution involved followers, opponents, authorities, and communities with competing interests. Traditions about conspicuous public events therefore circulated in an environment containing potential correction from more than the Twelve. Such correction would not guarantee exact wording or universal supervision, but it raises the cost of wholesale invention concerning the movement’s central figure. This distributed social constraint strengthens the case for a stable public outline even when private sayings and narrative details remain less certain."
+          },
+          {
+            "title": "Convergence Across Evidence Types Limits Coincidence",
+            "text": "No single consideration—early dating, Jewish conceptual fit, Semitic influence, archaeology, named officials, geography, attestation, or later manuscript agreement—proves comprehensive reliability. Their evidentiary value increases when they converge on the same bounded portrait without depending on one identical inference. A source that repeatedly fits first-century language, institutions, disputes, locations, and external personalities is more plausibly rooted in that environment than a later free creation. The appropriate conclusion remains limited: convergence supports historical provenance and principal contours, while leaving room for editorial presentation, uncertain wording, and genuine discrepancies in secondary detail."
+          }
+        ]
+      }
+    }
   }
 ];
 

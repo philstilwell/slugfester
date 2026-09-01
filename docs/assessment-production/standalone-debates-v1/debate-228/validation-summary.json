@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "228",
+  "debateId": "ehrman-evans-new-testament-misquote-jesus-2010",
+  "completedAt": "2026-09-01T19:34:00.000Z",
+  "source": {
+    "videoId": "L7gmgdk9qG8",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 15631,
+    "events": 2062,
+    "transcriptSha256": "662eeedafd6d23c08492d3e4854140300bae3084fe4a895a60753d3c84b4d061",
+    "eventsSha256": "08f2e756f522e081d909ae37d967f86dddf70502763573400d3ea7e3629ab079",
+    "assessedWindow": "00:03:53-01:27:12",
+    "excludedMaterial": "opening introductions and logistics before 00:03:53, moderator logistics as scored moves, and the host outro after 01:27:12",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 28,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 10,
+    "adjudicatedDisputes": 10,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 85,
+      "con": 83,
+      "winner": "pro",
+      "margin": 2
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "displayRows": 14,
+    "argumentCards": 28,
+    "uniqueLockedMovesMapped": 28,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": { "pro": 4, "con": 4 },
+    "overallBlunders": { "pro": 3, "con": 3 },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "4011773dd4e2b3ec9d0a0ba2759a2d1b31302907b01a7b8f618b14002030c5f8",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-228/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-field-disjoint-publication-repair-before-freeze",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 24,
+      "mean": 24.8,
+      "maximum": 27,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": { "minimum": 122, "mean": 123, "maximum": 126 },
+    "critiqueCharacterRange": [918, 1101],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": { "strengthMean": 25.1, "blunderMean": 25.7 },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-228/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral-ten-tag-exact-definition-review",
+    "movesReviewedForFallaciesAndBiases": 28,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 364,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 38,
+    "acceptedRhetoricalTags": 10,
+    "acceptedFallacyTags": 8,
+    "acceptedBiasTags": 2,
+    "rejectedRhetoricalTagCandidates": 28,
+    "controllerDefinitionOverrides": 5,
+    "readerFacingScoringDisclosureCorrect": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 1,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-228/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 10,
+    "desktopEvidenceSha256": "375fef6421a5ce2f8568141cdac2b9df8f2adb6105f5ff3ec592471096f25412",
+    "mobileEvidenceSha256": "ec952872fbd2546aada3f9dcc44b44daa3d8afe111401d436d2134f42b885e9e"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "228 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "668 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "28 moves; description mean 24.8 words; critique mean 123 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "28 moves reviewed against 13 definitions in 2 blind passes; 38 candidates adjudicated; 8 fallacies and 2 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "28 populated cards and 10 rhetorical labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 228 with and without --repository-only",
+      "status": "passed",
+      "result": "28 moves; 5 sections; 10 disputes; 0 audio checks; score stability mean 1, maximum 2, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "228 of 228 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 0,
+    "inventoryRepairCycles": 1,
+    "judgmentRetries": 2,
+    "publicationDescriptionFieldsRepaired": 7,
+    "publicationCritiqueFieldsRepaired": 24,
+    "publicationRepairShards": 16,
+    "publicationSchemaPreflightFailures": 31,
+    "rhetoricalTagFieldsAdded": 10,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 5,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 14,
+    "con": 14,
+    "disposition": "All twenty-eight frozen moves are mapped exactly once across five semantic sections, with fourteen moves per side and no numerical symmetry imposed after judgment."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}
