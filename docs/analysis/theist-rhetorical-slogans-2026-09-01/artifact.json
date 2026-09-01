@@ -1,0 +1,948 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Are Theist Arguments More Often Slogan-Like?",
+    "description": "A corpus test of rhetorical overclaiming, epistemic compression, and non-falsifiability risk in SLUGFESTER debates.",
+    "generatedAt": "2026-09-01T18:56:38Z",
+    "sources": [
+      {
+        "id": "slogan-analysis-results",
+        "label": "Executed slogan-risk corpus analysis",
+        "path": "docs/analysis/theist-rhetorical-slogans-2026-09-01/results.json",
+        "query": {
+          "engine": "DuckDB",
+          "language": "sql",
+          "description": "Join the corrected position taxonomy to every locked assessment ledger; construct the side-blind slogan-risk proxy; compute whole-debate clustered intervals, speaker-equal sensitivity, and restricted tag corroboration.",
+          "executed_at": "2026-09-01T18:56:38Z",
+          "filters": [
+            "169 corrected theist/religious versus non-theist/skeptical debate assessments",
+            "Primary diagnostic cohort restricted to 146 debates with closed calibration and precision findings",
+            "Full-corpus evidence context uses all 169 debates",
+            "Published fallacy/bias corroboration restricted to 59 relevant tag-bearing debates"
+          ],
+          "metric_definitions": [
+            "Strict slogan-risk proxy = evidence/warrant below 70 AND materially or radically overstated force AND at least one unstable-term, unstable-scope, or missing/materially-misleading-qualification finding.",
+            "Pooled share = flagged moves divided by all moves on the stated side and cohort.",
+            "Paired difference = mean across debates of theist flagged share minus non-theist flagged share.",
+            "Debate-cluster interval = 2.5th and 97.5th percentiles from 20,000 deterministic resamples of whole debate differences.",
+            "Insulation tag cluster = argument from ignorance, special pleading, subjective validation, confirmation bias, or belief bias."
+          ],
+          "tables_used": [
+            "docs/analysis/theist-rhetorical-slogans-2026-09-01/results.json"
+          ],
+          "sql": "SELECT * FROM read_json_auto('docs/analysis/theist-rhetorical-slogans-2026-09-01/results.json')"
+        }
+      },
+      {
+        "id": "scoring-rubric",
+        "label": "SLUGFESTER reassessment rubric",
+        "path": "docs/reassessment-rubric-v4.0.md"
+      },
+      {
+        "id": "corrected-taxonomy",
+        "label": "Corrected position taxonomy",
+        "path": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv"
+      }
+    ],
+    "cards": [
+      {
+        "id": "theist-rate-card",
+        "description": "Share of theist moves meeting all three strict slogan-risk conditions.",
+        "dataset": "headline_metrics",
+        "sourceId": "slogan-analysis-results",
+        "metrics": [
+          {
+            "label": "Theist slogan-risk share",
+            "field": "theist_share",
+            "format": "percent"
+          },
+          {
+            "label": "Non-theist comparison",
+            "field": "non_theist_share",
+            "format": "percent"
+          }
+        ]
+      },
+      {
+        "id": "risk-ratio-card",
+        "description": "Pooled theist rate divided by pooled non-theist rate in the primary cohort.",
+        "dataset": "headline_metrics",
+        "sourceId": "slogan-analysis-results",
+        "metrics": [
+          {
+            "label": "Relative rate",
+            "field": "risk_ratio",
+            "format": "number",
+            "unit": "x"
+          },
+          {
+            "label": "Difference",
+            "field": "difference_pp",
+            "format": "number",
+            "unit": "pp",
+            "signed": true
+          }
+        ]
+      },
+      {
+        "id": "paired-card",
+        "description": "Mean within-debate rate difference and its whole-debate clustered interval.",
+        "dataset": "headline_metrics",
+        "sourceId": "slogan-analysis-results",
+        "metrics": [
+          {
+            "label": "Paired difference",
+            "field": "paired_difference",
+            "format": "percent",
+            "signed": true
+          },
+          {
+            "label": "95% interval low",
+            "field": "paired_ci_low",
+            "format": "percent",
+            "signed": true
+          },
+          {
+            "label": "95% interval high",
+            "field": "paired_ci_high",
+            "format": "percent",
+            "signed": true
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "component-chart",
+        "title": "Slogan-risk components by side",
+        "subtitle": "Closed evidence, calibration, and precision findings; 2,800 moves in 146 debates",
+        "showDescription": true,
+        "intent": "comparison",
+        "question": "Which diagnostic components and intersections differ between the two sides?",
+        "rationale": "Five grouped horizontal comparisons show that the strict intersection is not produced by one permissive component threshold.",
+        "comparisonContext": {
+          "denominator": "Moves in the named cohort",
+          "grain": "one scored argumentative move",
+          "normalization": "flagged moves divided by all moves on the stated side",
+          "semanticFamily": "slogan-like epistemic-risk diagnostics",
+          "unit": "share of moves"
+        },
+        "type": "bar",
+        "dataset": "component_rates",
+        "sourceId": "slogan-analysis-results",
+        "encodings": {
+          "x": {
+            "field": "metric",
+            "type": "nominal",
+            "label": "Diagnostic"
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative",
+            "aggregate": "none",
+            "format": "percent",
+            "label": "Move share"
+          },
+          "tooltip": [
+            {
+              "field": "count",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Flagged moves"
+            },
+            {
+              "field": "moves",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Moves"
+            },
+            {
+              "field": "coverage",
+              "type": "nominal",
+              "label": "Coverage"
+            }
+          ],
+          "color": {
+            "field": "side",
+            "type": "nominal",
+            "label": "Side"
+          }
+        },
+        "yAxisTitle": "Move share",
+        "valueFormat": "percent",
+        "layout": "full",
+        "maxRows": 10,
+        "palette": {
+          "kind": "categorical",
+          "name": "blue-orange"
+        },
+        "legend": {
+          "interactive": false,
+          "position": "bottom",
+          "sort": "spec",
+          "title": "Side"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "settings": {
+          "orientation": "horizontal",
+          "groupMode": "grouped",
+          "sort": "custom",
+          "showValues": true
+        },
+        "surface": {
+          "surface": "card",
+          "interactiveLegend": false,
+          "showControls": false,
+          "viewMode": "both"
+        }
+      },
+      {
+        "id": "robustness-chart",
+        "title": "Slogan-risk difference across robustness checks",
+        "subtitle": "Theist share minus non-theist share; percentage points, with 95% intervals retained in the source rows",
+        "showDescription": true,
+        "intent": "comparison",
+        "question": "Does the side difference remain under role, importance, orientation, and speaker checks?",
+        "rationale": "Six ordered bars compare the magnitude of the same rate difference across prespecified sensitivity cuts.",
+        "comparisonContext": {
+          "denominator": "Moves in the named cohort",
+          "grain": "one scored argumentative move",
+          "normalization": "flagged moves divided by all moves on the stated side",
+          "semanticFamily": "slogan-like epistemic-risk diagnostics",
+          "unit": "percentage points"
+        },
+        "type": "bar",
+        "dataset": "robustness_rates",
+        "sourceId": "slogan-analysis-results",
+        "encodings": {
+          "x": {
+            "field": "metric",
+            "type": "nominal",
+            "label": "Diagnostic"
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative",
+            "aggregate": "none",
+            "format": "number",
+            "label": "Percentage-point difference"
+          },
+          "tooltip": [
+            {
+              "field": "count",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Flagged moves"
+            },
+            {
+              "field": "moves",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Moves"
+            },
+            {
+              "field": "coverage",
+              "type": "nominal",
+              "label": "Coverage"
+            }
+          ]
+        },
+        "yAxisTitle": "Percentage points",
+        "valueFormat": "number",
+        "layout": "full",
+        "maxRows": 6,
+        "palette": {
+          "kind": "sequential",
+          "name": "blue"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "settings": {
+          "orientation": "horizontal",
+          "groupMode": "single",
+          "sort": "custom",
+          "showValues": true
+        },
+        "surface": {
+          "surface": "card",
+          "interactiveLegend": false,
+          "showControls": false,
+          "viewMode": "both"
+        }
+      },
+      {
+        "id": "tag-chart",
+        "title": "Published fallacy and bias tags by side",
+        "subtitle": "Secondary evidence only; 1,412 moves in 59 relevant tag-bearing debates",
+        "showDescription": true,
+        "intent": "comparison",
+        "question": "Do published fallacy/bias annotations corroborate the primary diagnostic pattern?",
+        "rationale": "Two grouped comparisons distinguish the broad tag rate from the narrower epistemic-insulation cluster.",
+        "comparisonContext": {
+          "denominator": "Moves in the named cohort",
+          "grain": "one scored argumentative move",
+          "normalization": "flagged moves divided by all moves on the stated side",
+          "semanticFamily": "slogan-like epistemic-risk diagnostics",
+          "unit": "share of moves"
+        },
+        "type": "bar",
+        "dataset": "tag_rates",
+        "sourceId": "slogan-analysis-results",
+        "encodings": {
+          "x": {
+            "field": "metric",
+            "type": "nominal",
+            "label": "Diagnostic"
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative",
+            "aggregate": "none",
+            "format": "percent",
+            "label": "Move share"
+          },
+          "tooltip": [
+            {
+              "field": "count",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Flagged moves"
+            },
+            {
+              "field": "moves",
+              "type": "quantitative",
+              "format": "number",
+              "label": "Moves"
+            },
+            {
+              "field": "coverage",
+              "type": "nominal",
+              "label": "Coverage"
+            }
+          ],
+          "color": {
+            "field": "side",
+            "type": "nominal",
+            "label": "Side"
+          }
+        },
+        "yAxisTitle": "Move share",
+        "valueFormat": "percent",
+        "layout": "full",
+        "maxRows": 4,
+        "palette": {
+          "kind": "categorical",
+          "name": "blue-orange"
+        },
+        "legend": {
+          "interactive": false,
+          "position": "bottom",
+          "sort": "spec",
+          "title": "Side"
+        },
+        "labels": {
+          "values": "all"
+        },
+        "settings": {
+          "orientation": "horizontal",
+          "groupMode": "grouped",
+          "sort": "custom",
+          "showValues": true
+        },
+        "surface": {
+          "surface": "card",
+          "interactiveLegend": false,
+          "showControls": false,
+          "viewMode": "both"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "robustness-table",
+        "title": "Robustness checks with debate-cluster intervals",
+        "subtitle": "Positive values mean the theist side has the higher slogan-risk rate",
+        "showDescription": true,
+        "dataset": "robustness_rates",
+        "defaultSort": {
+          "field": "value",
+          "direction": "desc"
+        },
+        "density": "spacious",
+        "sourceId": "slogan-analysis-results",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "metric",
+            "label": "Cohort",
+            "type": "text"
+          },
+          {
+            "field": "value",
+            "label": "Difference (pp)",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "ci_low",
+            "label": "95% low",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "ci_high",
+            "label": "95% high",
+            "type": "number",
+            "format": "number"
+          },
+          {
+            "field": "moves",
+            "label": "Debates",
+            "type": "number",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "examples-table",
+        "title": "Representative cases and counterexamples",
+        "subtitle": "Examples illustrate the coding logic; prevalence comes from the complete cohort, not these selected rows",
+        "showDescription": true,
+        "dataset": "examples",
+        "defaultSort": {
+          "field": "evidence",
+          "direction": "asc"
+        },
+        "density": "spacious",
+        "sourceId": "slogan-analysis-results",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "group",
+            "label": "Type",
+            "type": "text"
+          },
+          {
+            "field": "pattern",
+            "label": "Pattern",
+            "type": "text"
+          },
+          {
+            "field": "location",
+            "label": "Location",
+            "type": "text"
+          },
+          {
+            "field": "claim",
+            "label": "Claim",
+            "type": "text"
+          },
+          {
+            "field": "diagnosis",
+            "label": "Diagnosis",
+            "type": "text"
+          },
+          {
+            "field": "falsifiability_problem",
+            "label": "Falsifiability check",
+            "type": "text"
+          },
+          {
+            "field": "evidence",
+            "label": "Evidence",
+            "type": "number",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Are Theist Arguments More Often Slogan-Like?\n\n**Report date:** September 1, 2026  \n**Relevant debate assessments:** 169  \n**Scored argumentative moves:** 3,502",
+        "layout": "full"
+      },
+      {
+        "id": "technical-summary",
+        "type": "markdown",
+        "body": "## Technical summary\n\n**The operationalized hypothesis is strongly supported.** The strict slogan-risk proxy appears in **28.6%** of theist moves and **7.9%** of non-theist moves: a **20.7-percentage-point** difference and a **3.62x** relative rate. The within-debate estimate is 20.6%, with a 95% debate-cluster interval of 16.3% to 25.0%.\n\nThe result supports a narrower claim than the wording of the original hypothesis. It establishes that low-support, materially overstated, imprecisely qualified moves are substantially more common on the theist side. It does **not** by itself establish literal catchphrase form, strict philosophical non-falsifiability, or emotional enforcement as the cause.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "headline",
+        "type": "metric-strip",
+        "cardIds": [
+          "theist-rate-card",
+          "risk-ratio-card",
+          "paired-card"
+        ],
+        "layout": "full"
+      },
+      {
+        "id": "definition",
+        "type": "markdown",
+        "body": "## The strict proxy tests argumentative function, not a word list\n\nA move is flagged only when three independently recorded defects coincide: evidence/warrant below 70; materially or radically overstated force; and unstable terms, unstable scope, or a missing/materially misleading qualification. This intersection captures what a slogan does in argument—compresses a conclusion, projects more confidence than its support permits, and discourages the qualifications that would expose it to correction.\n\nThe definition is side-blind and uses locked rubric fields. It does not search for religious vocabulary, sentiment words, or familiar theological phrases.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "component-finding",
+        "type": "markdown",
+        "body": "## Every component of slogan risk is elevated\n\nTheist moves are more often below 70 on warrant (57.2% versus 19.7%), materially or radically overstated (36.3% versus 10.0%), and compressed or unstable (53.4% versus 29.9%). The strict intersection remains large at 28.6% versus 7.9%.\n\nBecause the composite requires all three conditions, the finding cannot be created by a single low threshold or by mere concision.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "component-chart-block",
+        "type": "chart",
+        "chartId": "component-chart",
+        "layout": "full"
+      },
+      {
+        "id": "robustness-finding",
+        "type": "markdown",
+        "body": "## The difference survives the main burden and speaker checks\n\nThe direction remains positive in constructives, replies, load-bearing moves, and after excluding William Lane Craig and Matt Dillahunty, the most frequent speaker on each side. Equal weighting across speakers also leaves a large difference: 28.3% for theist speakers versus 9.2% for non-theist speakers.\n\nThe role-reversal subset points the same way, but only 15 closed-findings debates store the theist side as `con`; its 95% interval crosses zero. It is supportive directionally, not a decisive standalone control.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "robustness-chart-block",
+        "type": "chart",
+        "chartId": "robustness-chart",
+        "layout": "full"
+      },
+      {
+        "id": "robustness-table-block",
+        "type": "table",
+        "tableId": "robustness-table",
+        "layout": "full"
+      },
+      {
+        "id": "tag-finding",
+        "type": "markdown",
+        "body": "## Published fallacy and bias tags corroborate the pattern\n\nIn the 59 relevant debates with at least one published tag, 23.5% of theist moves and 7.4% of non-theist moves carry a fallacy or bias tag. The narrower epistemic-insulation cluster—argument from ignorance, special pleading, subjective validation, confirmation bias, or belief bias—appears in 8.2% versus 1.0%.\n\nThis is secondary corroboration, not a full-corpus estimate, because published tag coverage is incomplete.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "tag-chart-block",
+        "type": "chart",
+        "chartId": "tag-chart",
+        "layout": "full"
+      },
+      {
+        "id": "examples-finding",
+        "type": "markdown",
+        "body": "## Concrete examples of unfalsifiable slogan proffering\n\nJohn Lennox supplies several clear cases: 15 of his 56 closed-field moves meet the same strict slogan-risk rule. Selected examples make miracle rejection evidence of prior bias, derive infinite worth from untestable createdness, or use postmortem compensation to absorb any present suffering. Other cases turn personal manifestation into public proof, explain disagreement as moral avoidance, invoke unknown divine reasons against counterevidence, treat unanswered questions as support for revelation, or convert a natural explanatory gap into positive agency evidence.\n\nThe falsifiability-check column states exactly what disconfirming route is absent. The table also includes non-theist moves meeting the same rule and high-quality theist counterexamples. The claim is a difference in frequency, not an essential property of either worldview.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "examples-table-block",
+        "type": "table",
+        "tableId": "examples-table",
+        "layout": "full"
+      },
+      {
+        "id": "mechanism",
+        "type": "markdown",
+        "body": "## Emotional affirmation is a plausible mechanism, not a measured cause\n\nThe observed pattern is consistent with a mechanism in which identity, hope, personal experience, inherited authority, and moralized descriptions of unbelief reduce pressure to name disconfirming conditions. Such devices can make a proposition feel settled before its public evidential burden is complete.\n\nBut the ledgers score argumentative performance; they do not measure audience emotion, social enforcement, private conviction, or persuasion psychology. The mechanism is therefore an inference suggested by the cases and component pattern, not a direct result of this dataset.",
+        "layout": "full"
+      },
+      {
+        "id": "method",
+        "type": "markdown",
+        "body": "## Scope and method\n\nThe corrected population contains 169 relevant debates and 3,502 scored moves. The primary test uses the 2,800 moves in 146 debates that expose closed evidence, calibration, and precision findings. Side labels come from the corrected position taxonomy, not from whether the public data store calls a side `pro` or `con`.\n\nPooled rates provide the descriptive magnitude. The main uncertainty check first calculates a paired theist-minus-non-theist rate inside each debate and then resamples whole debates 20,000 times. Speaker-equal means and prespecified role, importance, orientation, and speaker-exclusion cuts test concentration and burden alternatives.",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## What could change the conclusion\n\n- The corpus is curated, not a random sample of all theist and non-theist debates.\n- Speakers repeat and topics are not randomly assigned. Whole-debate and speaker checks reduce but do not eliminate that concern.\n- The strict proxy has strong face validity for slogan-like overclaiming, but construct validity for literal slogans and non-falsifiability remains incomplete.\n- The rubric judgments are AI-assisted and should be replicated by human coders blinded to side.\n- Published fallacy/bias tags cover only 59 relevant debates and are secondary evidence.\n- The result describes positions argued in scorecards, not a person's intelligence, sincerity, or private faith.",
+        "layout": "full"
+      },
+      {
+        "id": "next-test",
+        "type": "markdown",
+        "body": "## A direct falsification test\n\n1. Blind trained coders to speaker and side and give them the original transcript span.\n2. Code separately whether the wording is formulaic or slogan-like, whether a possible disconfirmation condition is stated, whether contrary outcomes can be absorbed without revision, and whether force exceeds public warrant.\n3. Match moves by topic, constructive/reply role, importance, and burden.\n4. Model repeated speakers and debates explicitly.\n5. Weaken or reject the hypothesis if the side difference disappears under those controls.",
+        "layout": "full"
+      },
+      {
+        "id": "further-questions",
+        "type": "markdown",
+        "body": "## Further questions\n\n- Is slogan risk concentrated in religious experience, morality, resurrection, cosmology, or design?\n- Do particular apologetic traditions differ after topic and speaker controls?\n- Does the same speaker's profile change between religious and nonreligious claims?\n- Do blinded human raters reproduce the 3.62x relative rate?",
+        "layout": "full"
+      },
+      {
+        "id": "conclusion",
+        "type": "markdown",
+        "body": "## Conclusion: the empirical core is strong; the psychological story remains open\n\nThe SLUGFESTER record strongly supports the claim that theist-side arguments more often function like slogans: they combine weak public warrant, force that outruns that warrant, and compressed or unstable qualification at more than three and a half times the non-theist rate. The pattern is broad, survives the main controls, and is corroborated by the partial fallacy/bias annotations.\n\nThe report should not pretend that this proves every flagged move is literally unfalsifiable or that emotional affirmation caused it. What the data establish is the epistemic profile that such rhetoric would predict. The next decisive step is blind human coding of literal slogan form and disconfirmation conditions. Until then, the most defensible verdict is: **strong support for more slogan-like overclaiming on the theist side; provisional support for the fuller non-falsifiability hypothesis; no direct proof yet of emotional enforcement as the cause.**",
+        "layout": "full",
+        "sourceId": "slogan-analysis-results"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-01T18:56:38Z",
+    "status": "ready",
+    "datasets": {
+      "headline_metrics": [
+        {
+          "theist_share": 0.2857142857142857,
+          "non_theist_share": 0.07889125799573561,
+          "risk_ratio": 3.621621621621621,
+          "difference_pp": 20.68230277185501,
+          "paired_difference": 0.20647275099329895,
+          "paired_ci_low": 0.16329612168653265,
+          "paired_ci_high": 0.2495485678704857
+        }
+      ],
+      "component_rates": [
+        {
+          "metric": "Evidence below 70",
+          "side": "Theist",
+          "value": 0.5721464465183058,
+          "count": 797,
+          "moves": 1393,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Evidence below 70",
+          "side": "Non-theist",
+          "value": 0.1968727789623312,
+          "count": 277,
+          "moves": 1407,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Material/radical overclaim",
+          "side": "Theist",
+          "value": 0.36324479540559945,
+          "count": 506,
+          "moves": 1393,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Material/radical overclaim",
+          "side": "Non-theist",
+          "value": 0.10021321961620469,
+          "count": 141,
+          "moves": 1407,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Compression deficit",
+          "side": "Theist",
+          "value": 0.5340990667623834,
+          "count": 744,
+          "moves": 1393,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Compression deficit",
+          "side": "Non-theist",
+          "value": 0.29850746268656714,
+          "count": 420,
+          "moves": 1407,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Missing qualification",
+          "side": "Theist",
+          "value": 0.19885139985642497,
+          "count": 277,
+          "moves": 1393,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Missing qualification",
+          "side": "Non-theist",
+          "value": 0.07746979388770434,
+          "count": 109,
+          "moves": 1407,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Strict slogan-risk intersection",
+          "side": "Theist",
+          "value": 0.2857142857142857,
+          "count": 398,
+          "moves": 1393,
+          "coverage": "2,800 moves / 146 debates"
+        },
+        {
+          "metric": "Strict slogan-risk intersection",
+          "side": "Non-theist",
+          "value": 0.07889125799573561,
+          "count": 111,
+          "moves": 1407,
+          "coverage": "2,800 moves / 146 debates"
+        }
+      ],
+      "robustness_rates": [
+        {
+          "metric": "All closed-findings moves",
+          "side": "Theist minus non-theist",
+          "value": 20.68230277185501,
+          "count": 103,
+          "moves": 146,
+          "coverage": "95% interval 16.3 to 25.0 pp",
+          "ci_low": 16.329612168653266,
+          "ci_high": 24.95485678704857
+        },
+        {
+          "metric": "Constructive moves",
+          "side": "Theist minus non-theist",
+          "value": 27.195427934206855,
+          "count": 43,
+          "moves": 78,
+          "coverage": "95% interval 17.2 to 36.9 pp",
+          "ci_low": 17.21916971916972,
+          "ci_high": 36.94444444444444
+        },
+        {
+          "metric": "Replies",
+          "side": "Theist minus non-theist",
+          "value": 17.635818549747643,
+          "count": 89,
+          "moves": 145,
+          "coverage": "95% interval 12.8 to 22.2 pp",
+          "ci_low": 12.813255709807434,
+          "ci_high": 22.2125192814848
+        },
+        {
+          "metric": "Load-bearing moves",
+          "side": "Theist minus non-theist",
+          "value": 22.238238039222185,
+          "count": 91,
+          "moves": 146,
+          "coverage": "95% interval 17.2 to 27.1 pp",
+          "ci_low": 17.23771472059143,
+          "ci_high": 27.063492063492063
+        },
+        {
+          "metric": "Debates with theist side stored as con",
+          "side": "Theist minus non-theist",
+          "value": 11.809163911195089,
+          "count": 9,
+          "moves": 15,
+          "coverage": "95% interval -4.7 to 25.7 pp",
+          "ci_low": -4.688552188552189,
+          "ci_high": 25.703703703703706
+        },
+        {
+          "metric": "Excluding the most frequent speaker on each side",
+          "side": "Theist minus non-theist",
+          "value": 21.685615422639643,
+          "count": 65,
+          "moves": 100,
+          "coverage": "95% interval 13.3 to 23.2 pp",
+          "ci_low": 13.301767676767676,
+          "ci_high": 23.229978354978353
+        }
+      ],
+      "tag_rates": [
+        {
+          "metric": "Any published fallacy/bias tag",
+          "side": "Theist",
+          "value": 0.2347949080622348,
+          "count": 166,
+          "moves": 707,
+          "coverage": "1,412 moves / 59 tag-bearing debates"
+        },
+        {
+          "metric": "Any published fallacy/bias tag",
+          "side": "Non-theist",
+          "value": 0.07375886524822695,
+          "count": 52,
+          "moves": 705,
+          "coverage": "1,412 moves / 59 tag-bearing debates"
+        },
+        {
+          "metric": "Epistemic-insulation tag cluster",
+          "side": "Theist",
+          "value": 0.08203677510608204,
+          "count": 58,
+          "moves": 707,
+          "coverage": "1,412 moves / 59 tag-bearing debates"
+        },
+        {
+          "metric": "Epistemic-insulation tag cluster",
+          "side": "Non-theist",
+          "value": 0.009929078014184398,
+          "count": 7,
+          "moves": 705,
+          "coverage": "1,412 moves / 59 tag-bearing debates"
+        }
+      ],
+      "examples": [
+        {
+          "group": "Theist example",
+          "pattern": "Miracle rejection becomes a prior-bias diagnosis",
+          "location": "Debate 169: John Lennox",
+          "claim": "Miracles are special divine actions within a universe of regularities, and their categorical rejection reflects an antecedent exclusion of the supernatural.",
+          "diagnosis": "Miracles are affirmed as special divine actions while categorical rejection is attributed to an antecedent exclusion of the supernatural, turning an evidential objection into a diagnosis of the critic's framework.",
+          "falsifiability_problem": "No public criterion distinguishes a genuine special divine action from mistake, legend, or anomaly; categorical nonacceptance can be explained as prior prejudice rather than allowed to reflect evidential failure.",
+          "evidence": 54
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Createdness becomes an affirmation of infinite worth",
+          "location": "Debate 170: John Lennox",
+          "claim": "A human person has infinite value and profound meaning because that person bears the creator's image and exists because God wanted that person to be.",
+          "diagnosis": "Infinite value and profound meaning are asserted directly from bearing God's image and being wanted by God, giving the metaphysical affirmation emotional force without independent public support.",
+          "falsifiability_problem": "God's wanting a person and the person's image-bearing are not connected to an observable condition that could count against the claim; every person's existence is defined as compatible with it.",
+          "evidence": 61
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Postmortem compensation absorbs present suffering",
+          "location": "Debate 170: John Lennox",
+          "claim": "Christian hope can transcend suffering because God can compensate victims after death, Christ entered suffering, and eternal life without pain is better than extinction.",
+          "diagnosis": "Christian hope is presented as transcending suffering because God can compensate victims after death, Christ shared suffering, and eternal life can outweigh extinction.",
+          "falsifiability_problem": "No earthly amount or distribution of suffering can defeat the response if any harm can be compensated after death, while the proposed compensation lies outside ordinary observation.",
+          "evidence": 64
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Personal manifestation becomes public proof",
+          "location": "Debate 142: Ray Comfort",
+          "claim": "The resurrection is warranted by personal manifestation of the living Christ, promised to those who repent, trust Christ as sin-bearer, and follow him.",
+          "diagnosis": "A private experience is offered as warrant for resurrection and made available only through repentance and commitment, leaving no independent success criterion for an outsider.",
+          "falsifiability_problem": "No publicly observable result is specified that would distinguish a genuine manifestation from expectation, suggestion, or error; access to the confirming experience is conditioned on prior repentance and trust.",
+          "evidence": 39
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Disagreement is converted into confirmation",
+          "location": "Debate 142: Ray Comfort",
+          "claim": "Rejection of God reflects a preference for avoiding exposure and moral accountability under divine law, analogous to wrongdoers avoiding law enforcement.",
+          "diagnosis": "Unbelief is explained as moral avoidance, so rejection of the claim is absorbed as evidence of the claimant's diagnosis rather than treated as possible counterevidence.",
+          "falsifiability_problem": "Denial does not count against the claim: it is reclassified as confirmation that the denier wishes to evade divine accountability.",
+          "evidence": 30
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Unknown reasons protect the preferred conclusion",
+          "location": "Debate 128: William Lane Craig",
+          "claim": "Observed suffering does not defeat God unless it is probable that God lacks morally sufficient reasons and that a better feasible world was available.",
+          "diagnosis": "A speculative salvation-maximizing reason is used to shift the burden while no comparative evidence establishes that such a world is probable or feasible.",
+          "falsifiability_problem": "Any observed suffering can remain compatible with theism by positing an inaccessible morally sufficient reason, while no suffering threshold or distribution is named that would lower confidence.",
+          "evidence": 57
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Unanswered questions license revelation",
+          "location": "Debate 53: Dinesh D'Souza",
+          "claim": "Revelation is needed because reason cannot answer ultimate questions such as purpose, life after death, and cosmic justice, so faith is not unreasonable when addressing matters beyond reason's limits.",
+          "diagnosis": "Reason's inability to settle ultimate questions is treated as support for revelation without an independent test of revelation's reliability.",
+          "falsifiability_problem": "The move supplies no independent condition under which a purported revelation would fail, nor a test that discriminates among incompatible revelations claiming to answer the same questions.",
+          "evidence": 66
+        },
+        {
+          "group": "Theist example",
+          "pattern": "Explanatory difficulty becomes affirmation",
+          "location": "Debate 59: Michel-Yves Bollore",
+          "claim": "The unresolved emergence of life from nonliving matter and the immense informational complexity attributed to cellular DNA provide additional evidence of extraordinary fine-tuning.",
+          "diagnosis": "Unresolved origin-of-life questions and an unsupported complexity comparison are used as positive evidence for extraordinary fine-tuning without a discriminating rival comparison.",
+          "falsifiability_problem": "Present explanatory difficulty is treated as confirmation, but no possible natural account or evidential outcome is stated that would count against the fine-tuning inference.",
+          "evidence": 50
+        },
+        {
+          "group": "Non-theist counterexample",
+          "pattern": "Science-versus-religion slogan",
+          "location": "Debate 85: Peter Atkins",
+          "claim": "Scientific practice and religious belief are intellectually incompatible because science distinguishes fact and evidence from the superstition and wishful thinking on which religion relies.",
+          "diagnosis": "Religion is compressed into superstition and wishful thinking, and categorical incompatibility is asserted beyond the supplied comparison.",
+          "falsifiability_problem": "The categorical wording supplies no boundary case or religious practice that could qualify the claimed incompatibility.",
+          "evidence": 40
+        },
+        {
+          "group": "Non-theist counterexample",
+          "pattern": "Unbounded simplicity claim",
+          "location": "Debate 14: Richard Carrier",
+          "claim": "A random selection from unrestricted possibilities overwhelmingly favors a vast godless multiverse, while an omniscient and omnipotent God has maximal specified complexity.",
+          "diagnosis": "An unrestricted possibility space is said to overwhelmingly favor a godless multiverse without a justified probability measure.",
+          "falsifiability_problem": "Without a defined measure over the unrestricted possibilities, no observation is connected to a specified probability shift that could defeat the asserted overwhelming preference.",
+          "evidence": 46
+        },
+        {
+          "group": "Theist high-quality counterexample",
+          "pattern": "Cumulative manuscript and contextual evidence",
+          "location": "Debate 137: William Lane Craig",
+          "claim": "First Corinthians 15:3–11 is authentic rather than interpolated because all manuscripts contain it, early writers cite it, its vocabulary and pronouns fit the context, and its removal damages Paul's argument.",
+          "diagnosis": "A theist-side counterexample that is well warranted, calibrated, and precisely qualified.",
+          "falsifiability_problem": "None identified in this selected counterexample; the move states evidence, comparison, or modal limits that expose it to correction.",
+          "evidence": 88
+        },
+        {
+          "group": "Theist high-quality counterexample",
+          "pattern": "Explicit Bayesian comparison",
+          "location": "Debate 139: Matthew Adelstein",
+          "claim": "Hypotheses should be assessed by both their prior probability and how much more strongly the observed evidence is predicted by them than by alternatives.",
+          "diagnosis": "A theist-side counterexample that is well warranted, calibrated, and precisely qualified.",
+          "falsifiability_problem": "None identified in this selected counterexample; the move states evidence, comparison, or modal limits that expose it to correction.",
+          "evidence": 87
+        },
+        {
+          "group": "Theist high-quality counterexample",
+          "pattern": "Careful modal qualification",
+          "location": "Debate 144: Alvin Plantinga",
+          "claim": "To establish compatibility between theism and Darwinism, it is enough to identify a possible supplementary proposition joining them; doing so does not assert that divine intervention actually occurred.",
+          "diagnosis": "A theist-side counterexample that is well warranted, calibrated, and precisely qualified.",
+          "falsifiability_problem": "None identified in this selected counterexample; the move states evidence, comparison, or modal limits that expose it to correction.",
+          "evidence": 86
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "slogan-analysis-results",
+      "label": "Executed slogan-risk corpus analysis",
+      "path": "docs/analysis/theist-rhetorical-slogans-2026-09-01/results.json",
+      "query": {
+        "engine": "DuckDB",
+        "language": "sql",
+        "description": "Join the corrected position taxonomy to every locked assessment ledger; construct the side-blind slogan-risk proxy; compute whole-debate clustered intervals, speaker-equal sensitivity, and restricted tag corroboration.",
+        "executed_at": "2026-09-01T18:56:38Z",
+        "filters": [
+          "169 corrected theist/religious versus non-theist/skeptical debate assessments",
+          "Primary diagnostic cohort restricted to 146 debates with closed calibration and precision findings",
+          "Full-corpus evidence context uses all 169 debates",
+          "Published fallacy/bias corroboration restricted to 59 relevant tag-bearing debates"
+        ],
+        "metric_definitions": [
+          "Strict slogan-risk proxy = evidence/warrant below 70 AND materially or radically overstated force AND at least one unstable-term, unstable-scope, or missing/materially-misleading-qualification finding.",
+          "Pooled share = flagged moves divided by all moves on the stated side and cohort.",
+          "Paired difference = mean across debates of theist flagged share minus non-theist flagged share.",
+          "Debate-cluster interval = 2.5th and 97.5th percentiles from 20,000 deterministic resamples of whole debate differences.",
+          "Insulation tag cluster = argument from ignorance, special pleading, subjective validation, confirmation bias, or belief bias."
+        ],
+        "tables_used": [
+          "docs/analysis/theist-rhetorical-slogans-2026-09-01/results.json"
+        ],
+        "sql": "SELECT * FROM read_json_auto('docs/analysis/theist-rhetorical-slogans-2026-09-01/results.json')"
+      }
+    },
+    {
+      "id": "scoring-rubric",
+      "label": "SLUGFESTER reassessment rubric",
+      "path": "docs/reassessment-rubric-v4.0.md"
+    },
+    {
+      "id": "corrected-taxonomy",
+      "label": "Corrected position taxonomy",
+      "path": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv"
+    }
+  ]
+}

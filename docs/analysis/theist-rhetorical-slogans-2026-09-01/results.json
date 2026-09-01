@@ -1,0 +1,699 @@
+{
+  "snapshot": {
+    "analysis_date": "2026-09-01",
+    "source_commit": "69f7e97a87c9f595b6525936f8a95c627fb39759",
+    "population": "169 corrected theist/religious versus non-theist/skeptical debate assessments",
+    "primary_unit": "scored argumentative move, with whole-debate clustered sensitivity checks",
+    "taxonomy": "docs/analysis/non-theist-vs-theist-2026-09-01/taxonomy.csv",
+    "ledger_source": "docs/assessment-ledgers/*.json and their locked final-ledger evidence"
+  },
+  "data_quality": {
+    "classified_debates": 169,
+    "scored_moves": 3502,
+    "theist_moves": 1746,
+    "non_theist_moves": 1756,
+    "closed_findings_debates": 146,
+    "closed_findings_moves": 2800,
+    "final_dimension_only_debates": 23,
+    "missing_side_labels": 0,
+    "missing_closed_diagnostic_fields": 0
+  },
+  "operational_definition": {
+    "name": "strict slogan-risk proxy",
+    "rule": "A move is flagged only when evidence/warrant is below 70, asserted force is materially or radically overstated relative to warrant, and at least one compression defect is present: unstable terms, unstable scope, or a missing/materially misleading qualification.",
+    "interpretation": "The proxy identifies low-support, high-force, compressed claims. It is not a literal linguistic detector of catchphrases and does not by itself prove strict philosophical non-falsifiability.",
+    "side_blind": true
+  },
+  "full_corpus_evidence": {
+    "theist": {
+      "count": 1073,
+      "moves": 1746,
+      "share": 0.6145475372279496,
+      "mean": 66.14662084765177
+    },
+    "non_theist": {
+      "count": 410,
+      "moves": 1756,
+      "share": 0.23348519362186787,
+      "mean": 74.67425968109339
+    }
+  },
+  "diagnostic_metrics": {
+    "low_warrant": {
+      "theist": {
+        "count": 797,
+        "moves": 1393,
+        "share": 0.5721464465183058
+      },
+      "non_theist": {
+        "count": 277,
+        "moves": 1407,
+        "share": 0.1968727789623312
+      },
+      "difference_pp": 37.527366755597455,
+      "risk_ratio": 2.9061734666110333
+    },
+    "material_overclaim": {
+      "theist": {
+        "count": 506,
+        "moves": 1393,
+        "share": 0.36324479540559945
+      },
+      "non_theist": {
+        "count": 141,
+        "moves": 1407,
+        "share": 0.10021321961620469
+      },
+      "difference_pp": 26.303157578939473,
+      "risk_ratio": 3.6247193413877903
+    },
+    "compression_deficit": {
+      "theist": {
+        "count": 744,
+        "moves": 1393,
+        "share": 0.5340990667623834
+      },
+      "non_theist": {
+        "count": 420,
+        "moves": 1407,
+        "share": 0.29850746268656714
+      },
+      "difference_pp": 23.559160407581626,
+      "risk_ratio": 1.7892318736539845
+    },
+    "missing_qualification": {
+      "theist": {
+        "count": 277,
+        "moves": 1393,
+        "share": 0.19885139985642497
+      },
+      "non_theist": {
+        "count": 109,
+        "moves": 1407,
+        "share": 0.07746979388770434
+      },
+      "difference_pp": 12.138160596872064,
+      "risk_ratio": 2.5668249504402745
+    },
+    "term_instability": {
+      "theist": {
+        "count": 407,
+        "moves": 1393,
+        "share": 0.2921751615218952
+      },
+      "non_theist": {
+        "count": 188,
+        "moves": 1407,
+        "share": 0.13361762615493958
+      },
+      "difference_pp": 15.855753536695563,
+      "risk_ratio": 2.1866513418154607
+    },
+    "scope_instability": {
+      "theist": {
+        "count": 508,
+        "moves": 1393,
+        "share": 0.3646805455850682
+      },
+      "non_theist": {
+        "count": 308,
+        "moves": 1407,
+        "share": 0.21890547263681592
+      },
+      "difference_pp": 14.577507294825226,
+      "risk_ratio": 1.6659270377863342
+    },
+    "strong_force_low_warrant": {
+      "theist": {
+        "count": 511,
+        "moves": 1393,
+        "share": 0.36683417085427134
+      },
+      "non_theist": {
+        "count": 163,
+        "moves": 1407,
+        "share": 0.11584932480454868
+      },
+      "difference_pp": 25.098484604972267,
+      "risk_ratio": 3.1664765545519007
+    },
+    "slogan_risk": {
+      "theist": {
+        "count": 398,
+        "moves": 1393,
+        "share": 0.2857142857142857
+      },
+      "non_theist": {
+        "count": 111,
+        "moves": 1407,
+        "share": 0.07889125799573561
+      },
+      "difference_pp": 20.68230277185501,
+      "risk_ratio": 3.621621621621621
+    }
+  },
+  "paired_primary": {
+    "estimate": 0.20647275099329895,
+    "ci_95_low": 0.16329612168653265,
+    "ci_95_high": 0.2495485678704857,
+    "positive": 103,
+    "ties": 26,
+    "negative": 17,
+    "n_debates": 146,
+    "method": "20,000 deterministic resamples of whole debates"
+  },
+  "subset_checks": [
+    {
+      "subset": "All closed-findings moves",
+      "theist": {
+        "count": 398,
+        "moves": 1393,
+        "share": 0.2857142857142857
+      },
+      "non_theist": {
+        "count": 111,
+        "moves": 1407,
+        "share": 0.07889125799573561
+      },
+      "difference_pp": 20.68230277185501,
+      "risk_ratio": 3.621621621621621,
+      "paired": {
+        "estimate": 0.20647275099329895,
+        "ci_95_low": 0.16329612168653265,
+        "ci_95_high": 0.2495485678704857,
+        "positive": 103,
+        "ties": 26,
+        "negative": 17,
+        "n_debates": 146,
+        "method": "20,000 deterministic resamples of whole debates"
+      }
+    },
+    {
+      "subset": "Constructive moves",
+      "theist": {
+        "count": 152,
+        "moves": 422,
+        "share": 0.36018957345971564
+      },
+      "non_theist": {
+        "count": 21,
+        "moves": 238,
+        "share": 0.08823529411764706
+      },
+      "difference_pp": 27.195427934206855,
+      "risk_ratio": 4.082148499210111,
+      "paired": {
+        "estimate": 0.271978021978022,
+        "ci_95_low": 0.1721916971916972,
+        "ci_95_high": 0.36944444444444446,
+        "positive": 43,
+        "ties": 28,
+        "negative": 7,
+        "n_debates": 78,
+        "method": "20,000 deterministic resamples of whole debates"
+      }
+    },
+    {
+      "subset": "Replies",
+      "theist": {
+        "count": 246,
+        "moves": 971,
+        "share": 0.2533470648815654
+      },
+      "non_theist": {
+        "count": 90,
+        "moves": 1169,
+        "share": 0.07698887938408897
+      },
+      "difference_pp": 17.635818549747643,
+      "risk_ratio": 3.290696876072777,
+      "paired": {
+        "estimate": 0.1747091605712295,
+        "ci_95_low": 0.12813255709807433,
+        "ci_95_high": 0.222125192814848,
+        "positive": 89,
+        "ties": 32,
+        "negative": 24,
+        "n_debates": 145,
+        "method": "20,000 deterministic resamples of whole debates"
+      }
+    },
+    {
+      "subset": "Load-bearing moves",
+      "theist": {
+        "count": 293,
+        "moves": 1023,
+        "share": 0.28641251221896386
+      },
+      "non_theist": {
+        "count": 68,
+        "moves": 1062,
+        "share": 0.064030131826742
+      },
+      "difference_pp": 22.238238039222185,
+      "risk_ratio": 4.473089529066759,
+      "paired": {
+        "estimate": 0.22093661665579475,
+        "ci_95_low": 0.17237714720591432,
+        "ci_95_high": 0.2706349206349206,
+        "positive": 91,
+        "ties": 42,
+        "negative": 13,
+        "n_debates": 146,
+        "method": "20,000 deterministic resamples of whole debates"
+      }
+    },
+    {
+      "subset": "Debates with theist side stored as con",
+      "theist": {
+        "count": 35,
+        "moves": 145,
+        "share": 0.2413793103448276
+      },
+      "non_theist": {
+        "count": 18,
+        "moves": 146,
+        "share": 0.1232876712328767
+      },
+      "difference_pp": 11.809163911195089,
+      "risk_ratio": 1.9578544061302683,
+      "paired": {
+        "estimate": 0.11,
+        "ci_95_low": -0.046885521885521884,
+        "ci_95_high": 0.25703703703703706,
+        "positive": 9,
+        "ties": 1,
+        "negative": 5,
+        "n_debates": 15,
+        "method": "20,000 deterministic resamples of whole debates"
+      }
+    },
+    {
+      "subset": "Excluding the most frequent speaker on each side",
+      "theist": {
+        "count": 361,
+        "moves": 1190,
+        "share": 0.3033613445378151
+      },
+      "non_theist": {
+        "count": 100,
+        "moves": 1156,
+        "share": 0.08650519031141868
+      },
+      "difference_pp": 21.685615422639643,
+      "risk_ratio": 3.5068571428571427,
+      "paired": {
+        "estimate": 0.1836345598845599,
+        "ci_95_low": 0.13301767676767676,
+        "ci_95_high": 0.23229978354978353,
+        "positive": 65,
+        "ties": 22,
+        "negative": 13,
+        "n_debates": 100,
+        "method": "20,000 deterministic resamples of whole debates"
+      }
+    }
+  ],
+  "speaker_equal_weight": {
+    "theist": {
+      "speakers": 78,
+      "equal_weight_mean": 0.28321152715397163,
+      "median": 0.2426470588235294
+    },
+    "non_theist": {
+      "speakers": 44,
+      "equal_weight_mean": 0.0924893763887849,
+      "median": 0.04020503352443883
+    }
+  },
+  "speaker_case_studies": {
+    "John Lennox": {
+      "flagged": 15,
+      "moves": 56,
+      "share": 0.26785714285714285
+    }
+  },
+  "tag_corroboration": {
+    "coverage": {
+      "debates": 59,
+      "moves": 1412,
+      "theist_moves": 707,
+      "non_theist_moves": 705,
+      "warning": "Only debates with at least one published fallacy/bias tag are included; tag coverage is not corpus-complete."
+    },
+    "pooled": {
+      "tagged_moves": {
+        "theist": {
+          "count": 166,
+          "moves": 707,
+          "share": 0.2347949080622348
+        },
+        "non_theist": {
+          "count": 52,
+          "moves": 705,
+          "share": 0.07375886524822695
+        },
+        "difference_pp": 16.103604281400784
+      },
+      "insulation_moves": {
+        "theist": {
+          "count": 58,
+          "moves": 707,
+          "share": 0.08203677510608204
+        },
+        "non_theist": {
+          "count": 7,
+          "moves": 705,
+          "share": 0.009929078014184398
+        },
+        "difference_pp": 7.210769709189764
+      }
+    },
+    "paired_insulation": {
+      "estimate": 0.06401934991364072,
+      "ci_95_low": 0.03520689588932229,
+      "ci_95_high": 0.09235952495319133,
+      "positive": 27,
+      "ties": 30,
+      "negative": 2,
+      "n_debates": 59,
+      "method": "20,000 deterministic resamples of whole debates"
+    },
+    "label_counts": {
+      "theist": {
+        "Equivocation": 31,
+        "Red herring": 27,
+        "Argument from ignorance": 21,
+        "Begging the question": 18,
+        "Scope neglect": 16,
+        "Appeal to authority": 16,
+        "Subjective validation": 15,
+        "Special pleading": 11,
+        "Confirmation bias": 10,
+        "Base-rate neglect": 6,
+        "Belief bias": 1,
+        "Authority bias": 1
+      },
+      "non_theist": {
+        "Equivocation": 12,
+        "Red herring": 11,
+        "Begging the question": 10,
+        "Scope neglect": 5,
+        "Argument from ignorance": 4,
+        "Base-rate neglect": 3,
+        "Appeal to authority": 3,
+        "Subjective validation": 2,
+        "Special pleading": 1,
+        "Ambiguity effect": 1
+      }
+    },
+    "insulation_labels": [
+      "Argument from ignorance",
+      "Belief bias",
+      "Confirmation bias",
+      "Special pleading",
+      "Subjective validation"
+    ]
+  },
+  "examples": {
+    "theist_slogan_risk": [
+      {
+        "number": "169",
+        "debate": "John Lennox vs Lawrence Krauss: Science, the Universe, and the God Question",
+        "speaker": "John Lennox",
+        "side_label": "theist",
+        "move_id": "pro-miracles-and-regular-nature",
+        "proposition": "Miracles are special divine actions within a universe of regularities, and their categorical rejection reflects an antecedent exclusion of the supernatural.",
+        "source_excerpt": "a copout. I think what we've got is a universe with built-in regularities created by God. And sometimes God draws attention to himself by doing something very special. Now science can deal with the regularities brilliantly. But science has nothing to say about singularities. I think though that behind all this is an a priori rejection of the possibility of the supernatural that",
+        "evidence_warrant": 54,
+        "asserted_force": "strong-probability",
+        "warrant_fit": "materially-overstated",
+        "qualification": "missing",
+        "term_stability": "partly-unstable",
+        "scope_stability": "stable",
+        "slogan_risk": true,
+        "pattern": "Miracle rejection becomes a prior-bias diagnosis",
+        "diagnostic": "Miracles are affirmed as special divine actions while categorical rejection is attributed to an antecedent exclusion of the supernatural, turning an evidential objection into a diagnosis of the critic's framework.",
+        "falsifiability_problem": "No public criterion distinguishes a genuine special divine action from mistake, legend, or anomaly; categorical nonacceptance can be explained as prior prejudice rather than allowed to reflect evidential failure."
+      },
+      {
+        "number": "170",
+        "debate": "Peter Singer vs John Lennox: Is There a God?",
+        "speaker": "John Lennox",
+        "side_label": "theist",
+        "move_id": "pro-created-human-worth-purpose",
+        "proposition": "A human person has infinite value and profound meaning because that person bears the creator's image and exists because God wanted that person to be.",
+        "source_excerpt": "infinite value because it bears the image of its creator and I think one of the most well for me one of the most moving things that stated in the whole of the Bible comes near the end of it of the book of Revelation where there is a scene in heaven in which I believe where God is being praised as creator and one of the elements in that praise is this that the whole of heaven so to speak is praising God and saying about human",
+        "evidence_warrant": 61,
+        "asserted_force": "certainty",
+        "warrant_fit": "materially-overstated",
+        "qualification": "implicit",
+        "term_stability": "partly-unstable",
+        "scope_stability": "stable",
+        "slogan_risk": true,
+        "pattern": "Createdness becomes an affirmation of infinite worth",
+        "diagnostic": "Infinite value and profound meaning are asserted directly from bearing God's image and being wanted by God, giving the metaphysical affirmation emotional force without independent public support.",
+        "falsifiability_problem": "God's wanting a person and the person's image-bearing are not connected to an observable condition that could count against the claim; every person's existence is defined as compatible with it."
+      },
+      {
+        "number": "170",
+        "debate": "Peter Singer vs John Lennox: Is There a God?",
+        "speaker": "John Lennox",
+        "side_label": "theist",
+        "move_id": "pro-divine-solidarity-eternal-compensation",
+        "proposition": "Christian hope can transcend suffering because God can compensate victims after death, Christ entered suffering, and eternal life without pain is better than extinction.",
+        "source_excerpt": "Christ talked about what happened to him after death he clearly been a friendless man and yet we are told that in that eternal world which is of course part and parcel of the hope of Christians and I unashamedly believe in it that man found himself in the company of Abraham who is one of the few people described in Scripture as the friend of God and it seems to me that that little cameo shows us that God can compensate",
+        "evidence_warrant": 64,
+        "asserted_force": "certainty",
+        "warrant_fit": "materially-overstated",
+        "qualification": "implicit",
+        "term_stability": "stable",
+        "scope_stability": "partly-unstable",
+        "slogan_risk": true,
+        "pattern": "Postmortem compensation absorbs present suffering",
+        "diagnostic": "Christian hope is presented as transcending suffering because God can compensate victims after death, Christ shared suffering, and eternal life can outweigh extinction.",
+        "falsifiability_problem": "No earthly amount or distribution of suffering can defeat the response if any harm can be compensated after death, while the proposed compensation lies outside ordinary observation."
+      },
+      {
+        "number": "142",
+        "debate": "Ray Comfort vs Matt Dillahunty: Does the Gospel Make Sense?",
+        "speaker": "Ray Comfort",
+        "side_label": "theist",
+        "move_id": "pro-experiential-resurrection-warrant",
+        "proposition": "The resurrection is warranted by personal manifestation of the living Christ, promised to those who repent, trust Christ as sin-bearer, and follow him.",
+        "source_excerpt": "resurrection took place because the risen living Christ manifested himself to me and to anyone who repent and trust the Savior. Let me share John 14:21. Jesus said, \"He that has my commandments and keeps them that loves me, and he that loves me will be loved by my father. I too will love him and will reveal myself to him.\" So there's the gauntlet. Just repent. Trust in the Savior. Confess and forsake your sins. Trust in him as your sin bearer",
+        "evidence_warrant": 39,
+        "asserted_force": "certainty",
+        "warrant_fit": "radically-overstated",
+        "qualification": "missing",
+        "term_stability": "partly-unstable",
+        "scope_stability": "stable",
+        "slogan_risk": true,
+        "pattern": "Personal manifestation becomes public proof",
+        "diagnostic": "A private experience is offered as warrant for resurrection and made available only through repentance and commitment, leaving no independent success criterion for an outsider.",
+        "falsifiability_problem": "No publicly observable result is specified that would distinguish a genuine manifestation from expectation, suggestion, or error; access to the confirming experience is conditioned on prior repentance and trust."
+      },
+      {
+        "number": "142",
+        "debate": "Ray Comfort vs Matt Dillahunty: Does the Gospel Make Sense?",
+        "speaker": "Ray Comfort",
+        "side_label": "theist",
+        "move_id": "pro-unbelief-avoids-accountability",
+        "proposition": "Rejection of God reflects a preference for avoiding exposure and moral accountability under divine law, analogous to wrongdoers avoiding law enforcement.",
+        "source_excerpt": "away from God as you can because God demands moral responsibility. That's what my instruction book tells me. It says you love darkness rather than light because your deeds are evil. Neither will you come to the light least your deeds be exposed. Atheism or atheists stay away from the gospel and hate the light for the same reason criminals hate the police. They'll call them pigs",
+        "evidence_warrant": 30,
+        "asserted_force": "certainty",
+        "warrant_fit": "radically-overstated",
+        "qualification": "materially-misleading",
+        "term_stability": "stable",
+        "scope_stability": "materially-unstable",
+        "slogan_risk": true,
+        "pattern": "Disagreement is converted into confirmation",
+        "diagnostic": "Unbelief is explained as moral avoidance, so rejection of the claim is absorbed as evidence of the claimant's diagnosis rather than treated as possible counterevidence.",
+        "falsifiability_problem": "Denial does not count against the claim: it is reclassified as confirmation that the denier wishes to evade divine accountability."
+      },
+      {
+        "number": "128",
+        "debate": "William Lane Craig vs Stephen Law: Does God Exist?",
+        "speaker": "William Lane Craig",
+        "side_label": "theist",
+        "move_id": "pro-suffering-feasible-world-burden",
+        "proposition": "Observed suffering does not defeat God unless it is probable that God lacks morally sufficient reasons and that a better feasible world was available.",
+        "source_excerpt": "would have to prove is that it's impossible or highly improbable that God has morally sufficient reasons for permitting the suffering in the world but how can the atheist possibly prove that maybe only in a world suffused with natural and moral evil would the maximum number of people come to freely know God and find eternal life you see on the Christian view the purpose of life",
+        "evidence_warrant": 57,
+        "asserted_force": "strong-probability",
+        "warrant_fit": "materially-overstated",
+        "qualification": "explicit",
+        "term_stability": "stable",
+        "scope_stability": "partly-unstable",
+        "slogan_risk": true,
+        "pattern": "Unknown reasons protect the preferred conclusion",
+        "diagnostic": "A speculative salvation-maximizing reason is used to shift the burden while no comparative evidence establishes that such a world is probable or feasible.",
+        "falsifiability_problem": "Any observed suffering can remain compatible with theism by positing an inaccessible morally sufficient reason, while no suffering threshold or distribution is named that would lower confidence."
+      },
+      {
+        "number": "53",
+        "debate": "Alex O'Connor vs Dinesh D'Souza: Is the Bible True?",
+        "speaker": "Dinesh D'Souza",
+        "side_label": "theist",
+        "move_id": "pro-revelation-beyond-reasons-limits",
+        "proposition": "Revelation is needed because reason cannot answer ultimate questions such as purpose, life after death, and cosmic justice, so faith is not unreasonable when addressing matters beyond reason's limits.",
+        "source_excerpt": "to date. Reason cannot answer. What are these questions? One. Why is there a world? Two. What is our purpose in it? Why are we here? Three. What happens after we die? Four. Is our passionate concern with justice, with morality, with goodness that is constantly betrayed in the actual life of the world ever cosmically vindicated after the world or beyond the world? So, I I'm just",
+        "evidence_warrant": 66,
+        "asserted_force": "necessity",
+        "warrant_fit": "materially-overstated",
+        "qualification": "implicit",
+        "term_stability": "stable",
+        "scope_stability": "partly-unstable",
+        "slogan_risk": true,
+        "pattern": "Unanswered questions license revelation",
+        "diagnostic": "Reason's inability to settle ultimate questions is treated as support for revelation without an independent test of revelation's reliability.",
+        "falsifiability_problem": "The move supplies no independent condition under which a purported revelation would fail, nor a test that discriminates among incompatible revelations claiming to answer the same questions."
+      },
+      {
+        "number": "59",
+        "debate": "Michel-Yves Bollore vs Phil Halper: Does Science Point to God?",
+        "speaker": "Michel-Yves Bollore",
+        "side_label": "theist",
+        "move_id": "pro-life-origin-information",
+        "proposition": "The unresolved emergence of life from nonliving matter and the immense informational complexity attributed to cellular DNA provide additional evidence of extraordinary fine-tuning.",
+        "source_excerpt": "there is no more idea of how how life appeared from inert matter because the density of information in for example in a in in the DNA of a cell is billion times billion time more dense than in a computer today. So it's immense the complexity of a single cell and a simple cell. So here again how is that happen? How could it happen except if there is some extraordinary finetuning",
+        "evidence_warrant": 50,
+        "asserted_force": "strong-probability",
+        "warrant_fit": "materially-overstated",
+        "qualification": "missing",
+        "term_stability": "partly-unstable",
+        "scope_stability": "partly-unstable",
+        "slogan_risk": true,
+        "pattern": "Explanatory difficulty becomes affirmation",
+        "diagnostic": "Unresolved origin-of-life questions and an unsupported complexity comparison are used as positive evidence for extraordinary fine-tuning without a discriminating rival comparison.",
+        "falsifiability_problem": "Present explanatory difficulty is treated as confirmation, but no possible natural account or evidential outcome is stated that would count against the fine-tuning inference."
+      }
+    ],
+    "non_theist_slogan_risk": [
+      {
+        "number": "85",
+        "debate": "Peter Atkins vs Keith Fox: God vs Science Debate",
+        "speaker": "Peter Atkins",
+        "side_label": "non_theist",
+        "move_id": "pro-science-religion-intellectual-incompatibility",
+        "proposition": "Scientific practice and religious belief are intellectually incompatible because science distinguishes fact and evidence from the superstition and wishful thinking on which religion relies.",
+        "source_excerpt": "religion in one and Science in the other that's fine so but you cannot be a scientist and believe in Superstition what do you say then to my to so many eminent scientists because they didn't think enough they stupid yeah they they noats stupid well in terms of not of being able to distinguish fact and evidence from wishful thinking religion is all about tyranny as I said at the",
+        "evidence_warrant": 40,
+        "asserted_force": "certainty",
+        "warrant_fit": "radically-overstated",
+        "qualification": "materially-misleading",
+        "term_stability": "partly-unstable",
+        "scope_stability": "materially-unstable",
+        "slogan_risk": true,
+        "pattern": "Science-versus-religion slogan",
+        "diagnostic": "Religion is compressed into superstition and wishful thinking, and categorical incompatibility is asserted beyond the supplied comparison.",
+        "falsifiability_problem": "The categorical wording supplies no boundary case or religious practice that could qualify the claimed incompatibility."
+      },
+      {
+        "number": "14",
+        "debate": "Michael Jones vs Richard Carrier: Does God Exist?",
+        "speaker": "Richard Carrier",
+        "side_label": "non_theist",
+        "move_id": "con-random-possibility-multiverse",
+        "proposition": "A random selection from unrestricted possibilities overwhelmingly favors a vast godless multiverse, while an omniscient and omnipotent God has maximal specified complexity.",
+        "source_excerpt": "multiverses to pick. So in fact, if you pick at random out of that hat, you are going to almost certainly pick a godless multiverse because of all the possible things that are in there, those that's the most common thing by far. There's infinitely more of those things and sim and more rare things like a god. Now god is has infinite specified complexity because he has absolutely",
+        "evidence_warrant": 46,
+        "asserted_force": "strong-probability",
+        "warrant_fit": "radically-overstated",
+        "qualification": "missing",
+        "term_stability": "partly-unstable",
+        "scope_stability": "materially-unstable",
+        "slogan_risk": true,
+        "pattern": "Unbounded simplicity claim",
+        "diagnostic": "An unrestricted possibility space is said to overwhelmingly favor a godless multiverse without a justified probability measure.",
+        "falsifiability_problem": "Without a defined measure over the unrestricted possibilities, no observation is connected to a specified probability shift that could defeat the asserted overwhelming preference."
+      }
+    ],
+    "theist_counterexamples": [
+      {
+        "number": "137",
+        "debate": "Robert Price vs William Lane Craig: Did Jesus Rise From the Dead?",
+        "speaker": "William Lane Craig",
+        "side_label": "theist",
+        "move_id": "pro-source-first-corinthians-authenticity",
+        "proposition": "First Corinthians 15:3–11 is authentic rather than interpolated because all manuscripts contain it, early writers cite it, its vocabulary and pronouns fit the context, and its removal damages Paul's argument.",
+        "source_excerpt": "interpolation of a fabrication of a quotation now why would we believe such a complicated uh contrived Theory as opposed to the simple universally accepted view that Paul himself wrote these sentences in terms of the external evidence not a single manuscript of First Corinthians lacks these verses they're all there moreover the situation is even worse than that because these supposedly interpolated",
+        "evidence_warrant": 88,
+        "asserted_force": "strong-probability",
+        "warrant_fit": "matched",
+        "qualification": "explicit",
+        "term_stability": "stable",
+        "scope_stability": "stable",
+        "slogan_risk": false,
+        "pattern": "Cumulative manuscript and contextual evidence",
+        "diagnostic": "A theist-side counterexample that is well warranted, calibrated, and precisely qualified.",
+        "falsifiability_problem": "None identified in this selected counterexample; the move states evidence, comparison, or modal limits that expose it to correction."
+      },
+      {
+        "number": "139",
+        "debate": "Matthew Adelstein vs Matt Dillahunty: Should We Believe in God?",
+        "speaker": "Matthew Adelstein",
+        "side_label": "theist",
+        "move_id": "pro-bayesian-priors-likelihoods",
+        "proposition": "Hypotheses should be assessed by both their prior probability and how much more strongly the observed evidence is predicted by them than by alternatives.",
+        "source_excerpt": "hypotheses about the world. First, one should look at the prior probability of a hypothesis, how likely it is before gathering any data. Even though the theory that I'm cheating in poker and the theories that fairies rigged a deck, that I'd get 10 royal flushes both explain the data of me getting 10 royal flushes, it's likelier that I'm cheating because it has a higher prior probability. Next, one should look at the evidence",
+        "evidence_warrant": 87,
+        "asserted_force": "necessity",
+        "warrant_fit": "matched",
+        "qualification": "explicit",
+        "term_stability": "stable",
+        "scope_stability": "stable",
+        "slogan_risk": false,
+        "pattern": "Explicit Bayesian comparison",
+        "diagnostic": "A theist-side counterexample that is well warranted, calibrated, and precisely qualified.",
+        "falsifiability_problem": "None identified in this selected counterexample; the move states evidence, comparison, or modal limits that expose it to correction."
+      },
+      {
+        "number": "144",
+        "debate": "Alvin Plantinga vs Daniel Dennett: Science, Religion, and Evolution",
+        "speaker": "Alvin Plantinga",
+        "side_label": "theist",
+        "move_id": "pro-compatibility-possibility-clarification",
+        "proposition": "To establish compatibility between theism and Darwinism, it is enough to identify a possible supplementary proposition joining them; doing so does not assert that divine intervention actually occurred.",
+        "source_excerpt": "thought that um, God guided and orchestrated or rather my claim that it's possible that God could have guided and orchestrated the course of evolution. I wanted to argue that uh, theism and Darwinism are compatible. I wanted to do so by providing some third proposition R such that it's pretty clear that uh, theism and Darwinism and R are all compatible for which it would follow",
+        "evidence_warrant": 86,
+        "asserted_force": "possibility",
+        "warrant_fit": "matched",
+        "qualification": "explicit",
+        "term_stability": "stable",
+        "scope_stability": "stable",
+        "slogan_risk": false,
+        "pattern": "Careful modal qualification",
+        "diagnostic": "A theist-side counterexample that is well warranted, calibrated, and precisely qualified.",
+        "falsifiability_problem": "None identified in this selected counterexample; the move states evidence, comparison, or modal limits that expose it to correction."
+      }
+    ]
+  },
+  "verdict": {
+    "hypothesis": "The theist side contains more rhetorical, non-falsifiable slogans than the non-theist side.",
+    "assessment": "Supported for the operationalized slogan-risk pattern; only provisionally supported for literal non-falsifiability.",
+    "supported": [
+      "Low-warrant, materially overstated, imprecisely qualified moves are much more common on the theist side.",
+      "The difference persists within constructives, replies, load-bearing moves, speaker balancing, and after excluding each side's most frequent speaker; the small role-reversal subset remains directionally positive but is imprecise.",
+      "In the 59 tag-bearing debates, fallacy/bias tags associated with epistemic insulation are also more common on the theist side."
+    ],
+    "not_established": [
+      "The locked rubric does not directly label literal slogans or strict Popperian non-falsifiability across the full corpus.",
+      "The data do not measure whether emotional affirmation enforces theism or caused the observed argumentative pattern.",
+      "The result does not imply that all theist moves are slogan-like or that non-theists never use the same devices."
+    ]
+  },
+  "validation": {
+    "overall_assessment": "Share with caveats",
+    "required_caveats": [
+      "The corpus is curated rather than randomly sampled.",
+      "Speakers repeat and moves are nested within debates; pooled move rates are descriptive rather than independent trials.",
+      "The strict proxy is constructed from AI-assisted rubric judgments and should be replicated with blinded human coding.",
+      "Closed precision and calibration fields cover 146 of 169 debates; full-corpus evidence scores cover all 169.",
+      "Published fallacy/bias tags appear in 59 relevant debates and are secondary evidence only.",
+      "The side label describes the position argued in a scorecard, not private belief, sincerity, or character."
+    ],
+    "recommended_falsification_test": "Blind trained coders to side and speaker, give them the original transcript span, and ask separately whether the move is formulaic or slogan-like, whether it states a possible disconfirmation condition, whether contrary outcomes can be absorbed without revision, and whether its force exceeds its public warrant. The hypothesis weakens if the side difference disappears after topic, role, speaker, and debate controls."
+  }
+}
