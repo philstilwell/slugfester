@@ -45,7 +45,7 @@ const assetVersion = "20260901-newest-debate-copy-v1";
 const interlocutorAssetVersion = "20260901-newest-debate-copy-v1";
 const rankingsAssetVersion = "20260901-newest-debate-copy-v1";
 const debateAssetVersion = "20260901-newest-debate-copy-v1";
-const backendAssetVersion = "20260901-newest-debate-copy-v1";
+const backendAssetVersion = "20260901-corpus-library-v1";
 
 function escapeHtml(value = "") {
   return String(value)
