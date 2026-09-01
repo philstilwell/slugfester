@@ -121,9 +121,10 @@ const playerResponse = JSON.parse(
 
 const tracks = playerResponse.captions?.playerCaptionsTracklistRenderer?.captionTracks || [];
 if (!tracks.length) throw new Error(`No public caption tracks were available for ${videoId}`);
+const isEnglishTrack = (candidate) => /^en(?:-|$)/i.test(candidate.languageCode || "");
 const track =
-  tracks.find((candidate) => candidate.languageCode === "en" && candidate.kind !== "asr") ||
-  tracks.find((candidate) => candidate.languageCode === "en") ||
+  tracks.find((candidate) => isEnglishTrack(candidate) && candidate.kind !== "asr") ||
+  tracks.find(isEnglishTrack) ||
   tracks[0];
 const captionUrl = new URL(track.baseUrl);
 captionUrl.searchParams.set("fmt", "srv3");
