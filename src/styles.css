@@ -502,6 +502,7 @@ a {
 
 .recent-assessment-card {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   align-content: start;
   gap: 10px;
   min-width: 0;
@@ -551,6 +552,7 @@ a {
   margin: 0;
   font-size: 1rem;
   line-height: 1.14;
+  overflow-wrap: anywhere;
 }
 
 .recent-assessment-card h3 a {
