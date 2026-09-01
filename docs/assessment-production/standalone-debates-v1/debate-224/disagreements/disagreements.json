@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "224",
+  "debateId": "hossenfelder-kastrup-superdeterminism-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-experiments-undermine-noncontextual-realism:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-experiments-undermine-noncontextual-realism",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-classical-carryover-selective:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-classical-carryover-selective",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-small-observers-support-contextuality:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-small-observers-support-contextuality",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "All class-versus-model, locality, protocol, and research-program consequences are already represented in the individual move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-route",
+              "pro-locality-tradeoff",
+              "pro-model-development",
+              "pro-detector-dynamics",
+              "pro-research-program"
+            ],
+            "completionCriterion": "A nonzero value requires a separate debate-wide completion effect absent from move ratings.",
+            "relatedMoveIds": [
+              "pro-models-not-class-are-falsifiable",
+              "pro-one-incomplete-model-not-entire-class",
+              "pro-earlier-paper-supplies-thresholds"
+            ],
+            "distinctConsequence": "No uncaptured debate-wide pro consequence remains after judging the locked moves.",
+            "alreadyCapturedBy": [
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without those move-level ratings, scope and protocol completion might require separate recognition; here they do not."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured by the locked move-level ratings and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-route",
+              "pro-locality-tradeoff",
+              "pro-model-development",
+              "pro-detector-dynamics",
+              "pro-research-program"
+            ],
+            "completionCriterion": "A separate unscored consequence must materially alter completion of the pro research-route burden.",
+            "relatedMoveIds": [
+              "pro-bell-locality-requires-si-violation",
+              "pro-models-not-class-are-falsifiable",
+              "pro-one-incomplete-model-not-entire-class",
+              "pro-earlier-paper-supplies-thresholds"
+            ],
+            "distinctConsequence": "None; locality, model specificity, incompleteness, and proposed tests are already represented move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without duplicate capture, an unscored program-wide consequence could justify a nonzero adjustment, but none appears."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The demands for independent motivation, specified causation, and operational testing are already captured by the relevant move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-insufficient",
+              "con-statistical-independence",
+              "con-model-underspecification",
+              "con-contextual-alternative",
+              "con-causal-objection"
+            ],
+            "completionCriterion": "A nonzero value requires a separate debate-wide completion effect absent from move ratings.",
+            "relatedMoveIds": [
+              "con-hidden-variables-lack-independent-need",
+              "con-complex-causal-chain-unsupported",
+              "con-protocol-operationally-under-specified"
+            ],
+            "distinctConsequence": "No uncaptured debate-wide con consequence remains after judging the locked moves.",
+            "alreadyCapturedBy": [
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without those move-level ratings, the cumulative specification demand might warrant adjustment; here it is duplicate capture."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured by the locked move-level ratings and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-insufficient",
+              "con-statistical-independence",
+              "con-model-underspecification",
+              "con-contextual-alternative",
+              "con-causal-objection"
+            ],
+            "completionCriterion": "A separate unscored consequence must materially alter completion of the con insufficiency burden.",
+            "relatedMoveIds": [
+              "con-si-violation-needs-strong-rationale",
+              "con-no-experimental-reason-yet",
+              "con-protocol-operationally-under-specified",
+              "con-complex-causal-chain-unsupported"
+            ],
+            "distinctConsequence": "None; evidential thresholds, causal gaps, and operational underspecification are already represented move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without duplicate capture, an unscored program-wide consequence could justify a nonzero adjustment, but none appears."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 39,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-224/inventory/inventory.json",
+      "sha256": "53c6e5553d3bd2a86700a87ff83074d15c1b5ee858b65acbddd9bda9a60bf6b0"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-224/judgments/pass-a/output.json",
+      "sha256": "d9ca3d6240e8e5c4756cfb95d1d9b2d246a156cc2442e692a9902b12c768a864"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-224/judgments/pass-b/output.json",
+      "sha256": "a192061659e142d7ae036354b47cbff7a30a6cfa706dc48ff1a79e4ec19ca31b"
+    }
+  }
+}

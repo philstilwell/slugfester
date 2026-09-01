@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "224",
+  "debateId": "hossenfelder-kastrup-superdeterminism-2022",
+  "completedAt": "2026-09-01T12:42:24.330Z",
+  "source": {
+    "videoId": "kJmBmopxc1k",
+    "method": "complete public YouTube English (United States) human-caption track normalized locally",
+    "transcriptWords": 12692,
+    "events": 775,
+    "transcriptSha256": "945f8da32462c72073821346362301e7a38db279ba59b84ac527471a2fdd0f6f",
+    "eventsSha256": "65ab78bafcb61a921b00d82d986e65684a7d4fcd9b8e224d28479329fff07b4e",
+    "assessedWindow": "00:04:24-01:02:22",
+    "excludedMaterial": "opening introduction and promotion, an off-motion audience question, closing material, the one-sided Kastrup postscript after Hossenfelder leaves, and the final promotion",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 39,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 5,
+    "adjudicatedDisputes": 5,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 85,
+      "con": 82,
+      "winner": "pro",
+      "margin": 3
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 24,
+    "argumentCards": 39,
+    "uniqueLockedMovesMapped": 39,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "0bcf2fcf3bb27d4f9ec62d47e5c555714c16ff9ee18b8f471b487cbd53e8726a",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-224/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-one-description-prose-repair-before-publication-freeze",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.7,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 114,
+      "mean": 119,
+      "maximum": 127
+    },
+    "critiqueCharacterRange": [
+      880,
+      945
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "strengthMean": 27.1,
+      "blunderMean": 27.2
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-224/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "applied-once-after-score-blind-review-and-score-neutral",
+    "movesReviewedForFallaciesAndBiases": 39,
+    "definitionsCheckedPerMove": 13,
+    "definitionComparisonsPerBlindPass": 507,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 20,
+    "acceptedRhetoricalTags": 6,
+    "acceptedFallacyTags": 4,
+    "acceptedBiasTags": 2,
+    "rejectedRhetoricalTagCandidates": 14,
+    "controllerDefinitionOverrides": 1,
+    "aiContributionWords": 1046
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 1,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-224/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 6,
+    "desktopEvidenceSha256": "36adb0694429c5f20f13e8e19b17cbd9280f7c5100f9cbfe64564e1390adb0de",
+    "mobileEvidenceSha256": "f1793d129a9cd74c88f1e1af464fbc1c0bd3932dceff78e9dba62065099785f6"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "224 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "658 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "39 moves; description mean 23.7 words; critique mean 119.0 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "39 moves reviewed against 13 definitions in 2 blind passes; 20 candidates adjudicated; 4 fallacies and 2 biases accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "39 populated cards and 6 accepted card labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 224 with and without --repository-only",
+      "status": "passed",
+      "result": "39 moves; 7 sections; 5 disputes; 0 audio checks; score stability mean 0.25, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "224 of 224 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 2,
+    "inventoryRepairCycles": 2,
+    "judgmentRetries": 0,
+    "publicationDescriptionFieldsRepaired": 1,
+    "publicationCritiqueFieldsRepaired": 0,
+    "productionContractMetadataFieldsRepaired": 0,
+    "nullExchangeSlotsOmitted": 9,
+    "rhetoricalTagFieldsAdded": 6,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 1,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 22,
+    "con": 17,
+    "disposition": "All thirty-nine frozen moves are mapped exactly once. Hossenfelder supplies five more distinct moves because her constructive case develops more separately stated premises, model distinctions, and experimental replies; no move was added, deleted, merged, or reassigned to manufacture symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

@@ -10106,5 +10106,57 @@ export const debateSummaries = [
         "title": "beauty, experience, and material explanation"
       }
     ]
+  },
+  {
+    "id": "hossenfelder-kastrup-superdeterminism-2022",
+    "number": "224",
+    "title": "Is Superdeterminism Scientifically Justified? Sabine Hossenfelder vs. Bernardo Kastrup (2022)",
+    "label": "Superdeterminism, statistical independence, and measurement",
+    "date": "2026-09-01",
+    "duration": "1 hr 16 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=kJmBmopxc1k",
+    "motion": "Does superdeterminism provide a scientifically justified route to resolving quantum mechanics’ measurement problem?",
+    "summary": "Hossenfelder narrowly prevails by defending model-specific, local, testable research, while Kastrup exposes unresolved mechanisms, evidential motivation, and operational specification.",
+    "topicCategory": "science-design",
+    "sides": {
+      "pro": {
+        "name": "Superdeterminism is a justified research route",
+        "speaker": "Sabine Hossenfelder",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Superdeterminism lacks sufficient scientific justification",
+        "speaker": "Bernardo Kastrup",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 82,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Measurement, Locality, and Physical Description"
+      },
+      {
+        "title": "Bell Inequalities and Statistical Independence"
+      },
+      {
+        "title": "Hidden Variables and Model Status"
+      },
+      {
+        "title": "Experiments and Falsifiability"
+      },
+      {
+        "title": "Detector Dynamics and Causal Influence"
+      },
+      {
+        "title": "Decoherence, Observers, and Contextuality"
+      },
+      {
+        "title": "Evidential Standards for an Incomplete Research Program"
+      }
+    ]
   }
 ];

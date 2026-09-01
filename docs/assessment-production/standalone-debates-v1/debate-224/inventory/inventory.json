@@ -1,0 +1,1969 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "224",
+  "debateId": "hossenfelder-kastrup-superdeterminism-2022",
+  "motion": "Does superdeterminism provide a scientifically justified route to resolving quantum mechanics’ measurement problem?",
+  "assessmentModel": "5.6 Sol",
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "position": "Superdeterminism is a justified research route.",
+      "bridges": [
+        {
+          "bridgeId": "pro-motion-route",
+          "tier": "motion",
+          "statement": "Superdeterminism is scientifically justified as a route toward a local, predictive resolution of the measurement problem."
+        },
+        {
+          "bridgeId": "pro-locality-tradeoff",
+          "tier": "central",
+          "statement": "Bell-type results leave violating statistical independence as a promising alternative to abandoning locality."
+        },
+        {
+          "bridgeId": "pro-model-development",
+          "tier": "central",
+          "statement": "Specific superdeterministic models can define hidden variables, generate predictions, and be empirically assessed even though the class itself is not one theory."
+        },
+        {
+          "bridgeId": "pro-detector-dynamics",
+          "tier": "subsidiary",
+          "statement": "Detector degrees of freedom and amplification may provide local variables and dynamics that select definite outcomes."
+        },
+        {
+          "bridgeId": "pro-research-program",
+          "tier": "subsidiary",
+          "statement": "An incomplete minority program merits experimental development because empirical guidance is needed to construct a satisfactory theory."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "position": "Superdeterminism lacks sufficient scientific justification.",
+      "bridges": [
+        {
+          "bridgeId": "con-motion-insufficient",
+          "tier": "motion",
+          "statement": "Superdeterminism currently lacks enough empirical and theoretical support to be a scientifically justified resolution route."
+        },
+        {
+          "bridgeId": "con-statistical-independence",
+          "tier": "central",
+          "statement": "Statistical independence is a deeply successful empirical regularity that should not be abandoned without unusually strong evidence."
+        },
+        {
+          "bridgeId": "con-model-underspecification",
+          "tier": "central",
+          "statement": "The proposed hidden variables, dynamics, and tests are insufficiently specified to support clear predictions or adverse interpretation."
+        },
+        {
+          "bridgeId": "con-contextual-alternative",
+          "tier": "subsidiary",
+          "statement": "Relational or contextual physical properties offer a less costly interpretation of quantum results than hidden variables."
+        },
+        {
+          "bridgeId": "con-causal-objection",
+          "tier": "subsidiary",
+          "statement": "Remote detector complexity lacks a clear local causal route to determining the microscopic measurement outcome."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "measurement-and-locality",
+      "title": "Measurement, Locality, and Physical Description",
+      "weightPercent": 16
+    },
+    {
+      "sectionId": "bell-and-statistical-independence",
+      "title": "Bell Inequalities and Statistical Independence",
+      "weightPercent": 18
+    },
+    {
+      "sectionId": "hidden-variables-and-model-status",
+      "title": "Hidden Variables and Model Status",
+      "weightPercent": 16
+    },
+    {
+      "sectionId": "experiments-and-falsifiability",
+      "title": "Experiments and Falsifiability",
+      "weightPercent": 17
+    },
+    {
+      "sectionId": "detectors-and-causal-dynamics",
+      "title": "Detector Dynamics and Causal Influence",
+      "weightPercent": 13
+    },
+    {
+      "sectionId": "decoherence-and-contextuality",
+      "title": "Decoherence, Observers, and Contextuality",
+      "weightPercent": 10
+    },
+    {
+      "sectionId": "evidential-standards-and-research",
+      "title": "Evidential Standards for an Incomplete Research Program",
+      "weightPercent": 10
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-class-addresses-measurement",
+      "sectionId": "measurement-and-locality",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 55,
+        "endEvent": 56,
+        "startMs": 280160,
+        "endMs": 293440,
+        "excerpt": "which you find in the foundations of quantum mechanics. And they are designed to solve a problem, which is the measurement problem in quantum mechanics. More precisely, the problem"
+      },
+      "quoteEligibleExactSpans": [
+        "the measurement problem in quantum mechanics"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the opening explanation to Hossenfelder, and the uninterrupted answer uses her project’s terminology.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion-route",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Superdeterminism characterizes a class of theories designed to solve quantum mechanics’ measurement problem.",
+      "inventoryRationale": "Defines the advocated route and identifies the foundational problem it is meant to solve."
+    },
+    {
+      "moveId": "pro-epistemic-update-lacks-physical-account",
+      "sectionId": "measurement-and-locality",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 64,
+        "endEvent": 66,
+        "startMs": 333840,
+        "endMs": 352400,
+        "excerpt": "starts. And that has its own problems. One of which is that it doesn't actually tell us what's happening physically. I mean, we have to put something there if we want to take the expectation value of something. So just what is it that locally happens so it's compatible with general"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder continues her uninterrupted opening explanation and explicitly identifies the first problem with an epistemic update account.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion-route",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Treating collapse as an update of knowledge does not explain what happens physically or supply a local process compatible with general relativity.",
+      "inventoryRationale": "This source-required argument states why an epistemic reading does not discharge the physical measurement burden that motivates Hossenfelder's research route."
+    },
+    {
+      "moveId": "pro-fundamental-theory-cannot-presuppose-observers",
+      "sectionId": "measurement-and-locality",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 68,
+        "endEvent": 70,
+        "startMs": 359760,
+        "endMs": 378800,
+        "excerpt": "we think of quantum mechanics as a fundamental theory that describes the constituents of nature. And that means that in its assumptions, there shouldn't be any macroscopic objects or other expressions like detector, observer, knowledge, and that kind of thing. Instead, it should follow"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "The same uninterrupted Hossenfelder turn states the second problem with treating collapse as an update of knowledge.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-motion-route",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "A fundamental quantum theory should derive macroscopic detectors, observers, and knowledge rather than include them among its primitive assumptions.",
+      "inventoryRationale": "This is a separate theoretical-architecture objection to epistemic collapse, not a repetition of the preceding demand for a physical local process."
+    },
+    {
+      "moveId": "pro-bell-locality-requires-si-violation",
+      "sectionId": "bell-and-statistical-independence",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 74,
+        "endEvent": 78,
+        "startMs": 397360,
+        "endMs": 426480,
+        "excerpt": "Well, the reason is that 50 years ago or something, they became convinced that this isn't possible, notably because of Bell's theorem. So Bell's theorem says basically, if you want a theory to make a long story short that describes our observations, which is local, like the way that we would want to have it, then it has to violate an assumption that's called statistical independence. And that's what's called superdeterminism."
+      },
+      "quoteEligibleExactSpans": [
+        "notably because of Bell's theorem",
+        "then it has to violate",
+        "an assumption that's called statistical independence"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Hossenfelder’s uninterrupted opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-locality-tradeoff",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Bell’s theorem implies that a theory reproducing the observations while remaining local must violate statistical independence.",
+      "inventoryRationale": "States the principal mathematical motivation for the superdeterministic route."
+    },
+    {
+      "moveId": "pro-hidden-information-may-be-observable",
+      "sectionId": "hidden-variables-and-model-status",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 88,
+        "endEvent": 91,
+        "startMs": 481200,
+        "endMs": 504240,
+        "excerpt": "quantum mechanics looks random, non-deterministic is because there's some information which we don't know. And those are the hidden variables. And as always, I have to add that they're only called hidden because of some historical quirk in the nomenclature. It doesn't mean that they are unobservable. They may at some point become observable. They're just not present in the"
+      },
+      "quoteEligibleExactSpans": [
+        "some information which we don't know",
+        "They may at some point become observable"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Hossenfelder’s opening answer before the moderator’s handoff.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Apparent quantum randomness may reflect information we do not know, while the historical term ‘hidden’ does not imply that the information is permanently unobservable.",
+      "inventoryRationale": "Clarifies both the predictive aim and the nonliteral meaning of “hidden.”"
+    },
+    {
+      "moveId": "con-unobserved-undefined-hidden-variables",
+      "sectionId": "hidden-variables-and-model-status",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 110,
+        "endEvent": 112,
+        "startMs": 614320,
+        "endMs": 630560,
+        "excerpt": "there is a good reason hidden variables are called hidden. Nobody has ever observed them. Now it's worse than that. Nobody has ever defined them. They are not even well-formed theoretical fantasies. Nobody said what they are and how they work. The only thing that he said is, well,"
+      },
+      "quoteEligibleExactSpans": [
+        "Nobody has ever observed them",
+        "Nobody has ever defined them",
+        "They are not even well-formed theoretical fantasies"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the response to Kastrup; the first-person criticism is uninterrupted.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-model-underspecification",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-hidden-information-may-be-observable"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-hidden-information-may-be-observable",
+          "component": "Challenges the claim that hidden variables are a meaningful physical supplement by arguing that they have neither been observed nor adequately defined."
+        }
+      ],
+      "proposition": "Hidden variables lack scientific standing because they have not been observed and, in the criticized proposal, have not even been adequately defined.",
+      "inventoryRationale": "Introduces Kastrup’s central under-specification objection."
+    },
+    {
+      "moveId": "con-experiments-undermine-noncontextual-realism",
+      "sectionId": "decoherence-and-contextuality",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 120,
+        "endEvent": 123,
+        "startMs": 674480,
+        "endMs": 697760,
+        "excerpt": "is not to reject what 40 years of experiments have been telling us, which is that a certain metaphysical assumption called physical realism is false. Physical realism is the notion that physical properties have standalone existence, that they were already there before you measured them, and that the act of measurement simply discloses what they already were immediately"
+      },
+      "quoteEligibleExactSpans": [
+        "physical realism is false",
+        "physical properties have standalone existence"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Uninterrupted continuation of Kastrup’s opening response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-contextual-alternative",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Decades of quantum experiments undermine physical realism—the claim that measured properties possessed standalone values before measurement.",
+      "inventoryRationale": "Presents Kastrup’s main alternative interpretation of the experimental record."
+    },
+    {
+      "moveId": "pro-experimental-inference-assumption-dependent",
+      "sectionId": "bell-and-statistical-independence",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 143,
+        "endEvent": 147,
+        "startMs": 802720,
+        "endMs": 829840,
+        "excerpt": "are telling us, but how do you know what experiments are telling us? Well, you need some mathematics that extracts information from the data. And in your interpretation, you strongly rely on certain assumptions that go into the derivation of certain inequalities. One of this assumption is statistical independence. So if you don't have this assumption of statistical independence, then those experiments tell you something entirely different."
+      },
+      "quoteEligibleExactSpans": [
+        "how do you know what experiments are telling us",
+        "certain assumptions that go into the derivation",
+        "those experiments tell you something entirely different"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly requests Hossenfelder’s response, followed by her uninterrupted answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-locality-tradeoff",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-experiments-undermine-noncontextual-realism"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-experiments-undermine-noncontextual-realism",
+          "component": "Argues that Kastrup’s reading of the experiments depends on mathematical inequalities whose conclusions change if statistical independence is not assumed."
+        }
+      ],
+      "proposition": "Experiments do not directly establish Kastrup’s interpretation because extracting that conclusion requires mathematical assumptions, including statistical independence.",
+      "inventoryRationale": "Directly contests the evidential basis of the contextuality inference."
+    },
+    {
+      "moveId": "pro-locality-tradeoff-favors-si-violation",
+      "sectionId": "bell-and-statistical-independence",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 155,
+        "endEvent": 158,
+        "startMs": 884160,
+        "endMs": 909440,
+        "excerpt": "If you, on the other hand, say, well, we want the theory to be local, then it follows statistical independence has to be violated. And in my mind, that's the more promising way to pursue, because, as I just said, locality is fulfilled in Einstein's theory of general relativity. And eventually, those two theories have to communicate with each other, which is kind of a big unsolved problem,"
+      },
+      "quoteEligibleExactSpans": [
+        "we want the theory to be local",
+        "that's the more promising way to pursue"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Hossenfelder’s clearly attributed response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-locality-tradeoff",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Preserving locality requires violating statistical independence, a route Hossenfelder favors because general relativity is local and must ultimately connect with quantum theory.",
+      "inventoryRationale": "Develops the comparative case for choosing statistical-independence violation."
+    },
+    {
+      "moveId": "con-quantumness-placeholder-not-theory",
+      "sectionId": "hidden-variables-and-model-status",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 170,
+        "endEvent": 173,
+        "startMs": 971440,
+        "endMs": 996960,
+        "excerpt": "path integral. The key term in your path integral, at least as of 2020, is quantumness, which is a placeholder for something you want to put there at some point. It's the key term, because that's what you want to minimize. Nature wants to minimize quantumness, according to you. This is not theory, Sabine. This is not even the outline of a theory. This is a philosophy."
+      },
+      "quoteEligibleExactSpans": [
+        "which is a placeholder",
+        "This is not even the outline of a theory"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn shifts to Kastrup after Hossenfelder’s answer, and he directly addresses her path-integral proposal.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-model-underspecification",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-hidden-information-may-be-observable"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-hidden-information-may-be-observable",
+          "component": "Contends that Hossenfelder’s own mathematical proposal contains a placeholder rather than specified hidden-variable dynamics."
+        }
+      ],
+      "proposition": "The key ‘quantumness’ term in Hossenfelder's path integral remains a placeholder to be minimized, so Kastrup regards the proposal as philosophy rather than a theory.",
+      "inventoryRationale": "Applies the general under-specification objection to a concrete publication."
+    },
+    {
+      "moveId": "pro-wrong-paper-model-exists",
+      "sectionId": "hidden-variables-and-model-status",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 175,
+        "endEvent": 178,
+        "startMs": 997920,
+        "endMs": 1021280,
+        "excerpt": "You're talking about the wrong paper. I hope we, if you excuse me for interrupting you, but this is indeed not a hidden variables theory, and nothing in the paper claims it is. You're looking at the wrong paper. The paper you should be looking at is called a local deterministic toy model, and it does have hidden variables. We explain exactly what they are and how you use them."
+      },
+      "quoteEligibleExactSpans": [
+        "You're talking about the wrong paper",
+        "it does have hidden variables",
+        "We explain exactly what they are"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder explicitly interrupts to correct which of her papers Kastrup is discussing.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-quantumness-placeholder-not-theory"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-quantumness-placeholder-not-theory",
+          "component": "Says the cited path-integral paper did not claim to be a hidden-variable theory and points to a different toy-model paper that explicitly defines such variables."
+        }
+      ],
+      "proposition": "Kastrup criticized the wrong paper: the relevant local deterministic toy model explicitly contains and explains hidden variables.",
+      "inventoryRationale": "A major direct correction central to whether any concrete model exists."
+    },
+    {
+      "moveId": "pro-toy-model-defines-variables",
+      "sectionId": "hidden-variables-and-model-status",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 187,
+        "endEvent": 190,
+        "startMs": 1049360,
+        "endMs": 1072320,
+        "excerpt": "the thing is called a toy model, because we made this up to prove a point, namely that those theories are not conspiratorial. You said there aren't any models. You don't know what the hidden variables are. I can tell you what they are. They are random variables that are uniformly distributed in the complex disk with radius one. So you want an answer to this question."
+      },
+      "quoteEligibleExactSpans": [
+        "uniformly distributed in the complex disk"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The short exchange clearly identifies Hossenfelder as answering Kastrup’s question about her variables.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-unobserved-undefined-hidden-variables",
+        "con-quantumness-placeholder-not-theory"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-unobserved-undefined-hidden-variables",
+          "component": "Supplies a concrete definition and distribution in response to the claim that hidden variables have never been defined."
+        },
+        {
+          "targetMoveId": "con-quantumness-placeholder-not-theory",
+          "component": "Clarifies that this is a deliberately limited toy model intended to establish possibility rather than a complete physical theory."
+        }
+      ],
+      "proposition": "Her toy model has the limited role of showing such theories need not be conspiratorial and defines its hidden variables as uniformly distributed random variables in the unit complex disk.",
+      "inventoryRationale": "Provides the debate’s most concrete hidden-variable specification and its scope limitation."
+    },
+    {
+      "moveId": "con-si-supported-by-scientific-practice",
+      "sectionId": "bell-and-statistical-independence",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 208,
+        "endEvent": 211,
+        "startMs": 1165040,
+        "endMs": 1189360,
+        "excerpt": "means. Is it an assumption? I don't think it is. I think the entire history of all of science tells us that this is how things work. Reality does not change based purely on the settings of what we use to measure it, what we use to photograph the moon. The moon doesn't change because I changed the aperture on my camera. Now, you say that we cannot carry what you call"
+      },
+      "quoteEligibleExactSpans": [
+        "the entire history of all of science",
+        "Reality does not change based purely on the settings"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup explicitly announces that he is addressing statistical independence and continues uninterrupted.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-statistical-independence",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-experimental-inference-assumption-dependent",
+        "pro-locality-tradeoff-favors-si-violation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-experimental-inference-assumption-dependent",
+          "component": "Rejects treating statistical independence as a dispensable formal premise by grounding it in broad empirical experience."
+        },
+        {
+          "targetMoveId": "pro-locality-tradeoff-favors-si-violation",
+          "component": "Argues that the proposed Bell tradeoff abandons an exceptionally well-supported regularity."
+        }
+      ],
+      "proposition": "Statistical independence is not a mere assumption but is supported by the history of science: changing an instrument’s settings does not thereby change the object.",
+      "inventoryRationale": "States Kastrup’s principal evidential defense of statistical independence."
+    },
+    {
+      "moveId": "con-classical-carryover-selective",
+      "sectionId": "decoherence-and-contextuality",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 220,
+        "endEvent": 223,
+        "startMs": 1233520,
+        "endMs": 1258000,
+        "excerpt": "of whether they are being measured. You want to carry that over from the classical world to the physical world. So I don't think you can have the cake and eat it too. Either you don't carry assumptions from the classical to the quantum, or you do carry them, and then you ought to carry a statistical independence, because it's one of nature's most self-evident givens. Now, hidden"
+      },
+      "quoteEligibleExactSpans": [
+        "you can have the cake and eat it too",
+        "one of nature's most self-evident givens"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Kastrup’s explicitly structured response.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-contextual-alternative",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-experimental-inference-assumption-dependent",
+        "pro-locality-tradeoff-favors-si-violation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-experimental-inference-assumption-dependent",
+          "component": "Argues that Hossenfelder cannot reject importing statistical independence from classical experience while importing standalone objecthood."
+        },
+        {
+          "targetMoveId": "pro-locality-tradeoff-favors-si-violation",
+          "component": "Claims the locality-based choice selectively preserves one classical intuition at the expense of a better-supported one."
+        }
+      ],
+      "proposition": "Hossenfelder cannot consistently carry standalone objecthood from classical to quantum physics while refusing to carry statistical independence.",
+      "inventoryRationale": "A distinct comparative-cost objection supporting contextuality."
+    },
+    {
+      "moveId": "con-protocol-cannot-reset-hidden-state",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 227,
+        "endEvent": 230,
+        "startMs": 1276560,
+        "endMs": 1298800,
+        "excerpt": "series of measurements on the quantum system. That's why you talk about having to cool everything down, having to reduce the degrees of freedom of the measurement apparatus, having to do the series of measurements very quickly in succession, because you're afraid that whatever state the hidden variables are in, they may drift. All that is based on the notion that you don't know what"
+      },
+      "quoteEligibleExactSpans": [
+        "whatever state the hidden variables are in"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup explicitly turns to Hossenfelder’s proposed experiment within his uninterrupted response.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-model-underspecification",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-wrong-paper-model-exists",
+        "pro-toy-model-defines-variables"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-wrong-paper-model-exists",
+          "component": "Argues that the proposed experimental protocol itself reveals that the relevant initial hidden-variable state cannot be restored."
+        },
+        {
+          "targetMoveId": "pro-toy-model-defines-variables",
+          "component": "Distinguishes a toy-model variable definition from operational knowledge of the variables in the proposed physical test."
+        }
+      ],
+      "proposition": "The protocol relies on cooling, reducing apparatus degrees of freedom, and rapid repeated measurements because the unknown hidden-variable state may drift.",
+      "inventoryRationale": "Connects model under-specification to experimental control."
+    },
+    {
+      "moveId": "con-hidden-variables-lack-independent-need",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 234,
+        "endEvent": 237,
+        "startMs": 1315760,
+        "endMs": 1339600,
+        "excerpt": "picture, we cannot account for any of the causal chains in nature, not only in a quantum experiment, anywhere. You take mass away, you cannot account for inertia. You take angular momentum away, you cannot account for magnetism. You take charge away, you cannot account for electricity. But you take the hidden variables away, nothing changes. We are still fine. So I think they are pure theoretical"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Kastrup’s same response before he yields the floor.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion-insufficient",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Unlike mass, charge, and angular momentum, hidden variables currently add no independently needed causal explanation: removing established variables breaks explanations, whereas removing hidden variables changes nothing.",
+      "inventoryRationale": "Draws the core negative scientific-justification inference."
+    },
+    {
+      "moveId": "pro-repeated-measurements-address-state-ignorance",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 247,
+        "endEvent": 248,
+        "startMs": 1388560,
+        "endMs": 1400560,
+        "excerpt": "circumvent this problem that you don't know how the hidden variables, the state of the hidden variables fall in the prepared state. You make repeated measurement on the same system."
+      },
+      "quoteEligibleExactSpans": [
+        "repeated measurement on the same system"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Hossenfelder the floor; she directly addresses Kastrup’s discussion of her papers.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-protocol-cannot-reset-hidden-state",
+        "con-hidden-variables-lack-independent-need"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-protocol-cannot-reset-hidden-state",
+          "component": "Says an earlier paper explains how repeated measurements on the same system circumvent ignorance of the prepared hidden-variable state."
+        },
+        {
+          "targetMoveId": "con-hidden-variables-lack-independent-need",
+          "component": "Argues that failure to perform the proposed test cannot establish that the proposal is empirically untestable."
+        }
+      ],
+      "proposition": "The 2011 protocol circumvents ignorance of the prepared hidden-variable state by repeatedly measuring the same system.",
+      "inventoryRationale": "Presents the pro side’s operational answer to the reset objection."
+    },
+    {
+      "moveId": "con-test-allows-drift-escape",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 285,
+        "endEvent": 288,
+        "startMs": 1586720,
+        "endMs": 1608160,
+        "excerpt": "one can always say, well, I didn't make enough measurements per series, so I don't know that they correlate, so it's inconclusive. Well, then you make more measurements per series, but then each series becomes longer, takes longer to make, so it will take longer for you to start the next series, and then one can say, well, it's just because the initial state has drifted,"
+      },
+      "quoteEligibleExactSpans": [
+        "I didn't make enough measurements per series",
+        "the initial state has drifted"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup receives permission to elaborate and gives a continuous explanation of his falsifiability objection.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-model-underspecification",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-repeated-measurements-address-state-ignorance"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-repeated-measurements-address-state-ignorance",
+          "component": "Argues that a Born-rule result can always be excused either as too few observations or as hidden-variable drift caused by making each series longer."
+        }
+      ],
+      "proposition": "Short series can be dismissed as statistically inconclusive, while longer series permit failure to be attributed to drift in the initial state.",
+      "inventoryRationale": "Gives the concrete dilemma underlying the unfalsifiability criticism."
+    },
+    {
+      "moveId": "pro-noncommuting-measurement-protocol",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 296,
+        "endEvent": 298,
+        "startMs": 1648720,
+        "endMs": 1667200,
+        "excerpt": "No, you were talking about a change in the initial conditions. I told you that the experiment you should be doing is repeated measurement of non-commuting variables on the same state. That alone is sufficient. In the 2019 paper, I was talking about a simplified experiment. I"
+      },
+      "quoteEligibleExactSpans": [
+        "repeated measurement of non-commuting variables",
+        "That alone is sufficient"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The dialogue marks Hossenfelder’s immediate response to Kastrup’s elaboration.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-test-allows-drift-escape"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-test-allows-drift-escape",
+          "component": "Says Kastrup has analyzed a simplified 2019 protocol rather than the sufficient same-state, noncommuting-variable protocol."
+        }
+      ],
+      "proposition": "Kastrup’s changing-initial-conditions objection targets the wrong protocol; repeated measurements of noncommuting variables on the same state are claimed to suffice.",
+      "inventoryRationale": "Preserves the debate’s second major source-identification correction."
+    },
+    {
+      "moveId": "pro-models-not-class-are-falsifiable",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 304,
+        "endEvent": 307,
+        "startMs": 1690720,
+        "endMs": 1713840,
+        "excerpt": "super-determinism. I totally agree with that because super-determinism is not a theory. It's a property of a class of theories. What you can falsify are specific models. And yes, you're entirely right. Those models would have to specify what the hidden variables are, or at least what their properties are. If you don't say anything about it, you can't make any predictions."
+      },
+      "quoteEligibleExactSpans": [
+        "super-determinism is not a theory",
+        "What you can falsify are specific models"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "After Kastrup indicates interest, Hossenfelder gives a clearly bounded general answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "con-hidden-variables-lack-independent-need",
+        "con-test-allows-drift-escape"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-hidden-variables-lack-independent-need",
+          "component": "Concedes that superdeterminism as a class property is not falsifiable, while distinguishing it from falsifiable specific models."
+        },
+        {
+          "targetMoveId": "con-test-allows-drift-escape",
+          "component": "Agrees that a model without specified hidden-variable properties makes no predictions, but denies that this applies to every specific model."
+        }
+      ],
+      "proposition": "Superdeterminism itself cannot be falsified because it is a class property, but specific models can be falsified only if they specify hidden variables or their relevant properties.",
+      "inventoryRationale": "An important concession and conceptual distinction about falsifiability."
+    },
+    {
+      "moveId": "pro-detector-degrees-as-hidden-variables",
+      "sectionId": "detectors-and-causal-dynamics",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 313,
+        "endEvent": 314,
+        "startMs": 1738160,
+        "endMs": 1752880,
+        "excerpt": "paper. The hidden variables are the degrees of freedom of the detector, which are not the measurement setting. Now I can explain to you why I think that makes sense, because I have a"
+      },
+      "quoteEligibleExactSpans": [
+        "the degrees of freedom of the detector"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder directly answers which variables her developing model uses.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-detector-dynamics",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Her developing model identifies hidden variables with detector degrees of freedom other than the measurement setting.",
+      "inventoryRationale": "States the proposed physical location and motivation for the hidden variables."
+    },
+    {
+      "moveId": "pro-evolution-law-still-incomplete",
+      "sectionId": "detectors-and-causal-dynamics",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 329,
+        "endEvent": 331,
+        "startMs": 1828160,
+        "endMs": 1846320,
+        "excerpt": "the thing that you are complaining about with the quantumness, and that's the discussion in the paper where I say this is the part which I haven't figured out is exactly how those degrees of freedom enter the evolution law. But this is the idea. So the degrees of freedom of the detector,"
+      },
+      "quoteEligibleExactSpans": [
+        "the part which I haven't figured out",
+        "enter the evolution law"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Hossenfelder’s explanation of her own model.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-detector-dynamics",
+        "tier": "subsidiary",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Hossenfelder has not yet determined exactly how the proposed detector degrees of freedom enter the evolution law.",
+      "inventoryRationale": "Preserves the key concession that the proposed dynamics are incomplete."
+    },
+    {
+      "moveId": "con-remote-detector-causation-unclear",
+      "sectionId": "measurement-and-locality",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 343,
+        "endEvent": 347,
+        "startMs": 1926320,
+        "endMs": 1958000,
+        "excerpt": "as an elementary particle. Everything else in the apparatus is about amplifying what's measured, say, photomultipliers, sending that signal and then displaying in a way that is cognitively amenable to a human being. But the measurement surface itself is tiny. So whatever is going on in the other degrees of freedom of the measurement apparatus shouldn't have a local causal effect on what happens on the point of interaction, right?"
+      },
+      "quoteEligibleExactSpans": [
+        "the measurement surface itself is tiny",
+        "shouldn't have a local causal effect"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup explicitly begins his response and develops one continuous local-causation objection.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-causal-objection",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-detector-degrees-as-hidden-variables",
+        "pro-evolution-law-still-incomplete"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-detector-degrees-as-hidden-variables",
+          "component": "Argues that most detector degrees of freedom never locally interact with the microscopic measured system."
+        },
+        {
+          "targetMoveId": "pro-evolution-law-still-incomplete",
+          "component": "Treats the missing evolution law as crucial because no local causal pathway from the broader apparatus has been supplied."
+        }
+      ],
+      "proposition": "Remote amplification degrees of freedom should not locally determine the microscopic interaction because the measurement surface is tiny and the rest of the apparatus only amplifies and displays its result.",
+      "inventoryRationale": "The central causal objection to detector-wide hidden variables."
+    },
+    {
+      "moveId": "pro-local-law-selects-detector-eigenstate",
+      "sectionId": "measurement-and-locality",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 356,
+        "endEvent": 358,
+        "startMs": 2019600,
+        "endMs": 2038720,
+        "excerpt": "the state happened to be a detector eigenstate already. So what superdeterminism does for you, what the violation of statistical independence allows you to do, is it allows you to write down a local evolution law that will bring the initial state into a detector eigenstate."
+      },
+      "quoteEligibleExactSpans": [
+        "a local evolution law"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder directly answers Kastrup’s detector-surface objection.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion-route",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-remote-detector-causation-unclear"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-remote-detector-causation-unclear",
+          "component": "Rejects locating measurement solely at a microscopic contact by treating amplification and many-particle decoherence as part of measurement."
+        }
+      ],
+      "proposition": "Violating statistical independence permits a local evolution law that brings the initial state into a detector eigenstate.",
+      "inventoryRationale": "Links detector dynamics directly to resolution of the measurement problem."
+    },
+    {
+      "moveId": "con-superdeterminism-does-not-invalidate-science",
+      "sectionId": "evidential-standards-and-research",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 359,
+        "endEvent": 360,
+        "startMs": 2040560,
+        "endMs": 2054800,
+        "excerpt": "I agree with what you often say that this notion that superdeterminism will invalidate the whole of science, that's nonsensical. I agree with you there. But what you just said, that the"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup explicitly attributes the view to Hossenfelder and twice states his agreement before resuming his detector-causation objection.",
+      "importance": 1,
+      "burdenContact": {
+        "bridgeId": "con-motion-insufficient",
+        "tier": "motion",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Kastrup agrees that violating statistical independence would not thereby invalidate the whole scientific enterprise.",
+      "inventoryRationale": "This explicit concession calibrates the scope of Kastrup's objection and prevents the con case from being reconstructed as a blanket science-invalidating charge."
+    },
+    {
+      "moveId": "con-amplification-may-distort-outcome",
+      "sectionId": "detectors-and-causal-dynamics",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 366,
+        "endEvent": 369,
+        "startMs": 2088160,
+        "endMs": 2109680,
+        "excerpt": "outcome of measurement, not the interaction on the measurement surface, but the amplification of that. It's like the photomultipliers to give me a different energy reading from my tile colorimeter. Now if that's the case then I have to throw away all my experiments because what I'm seeing is not the result of measurement, it's something the detector has done and distorted everything."
+      },
+      "quoteEligibleExactSpans": [
+        "the detector has done and distorted everything"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup explicitly responds to the amplification account in an uninterrupted turn.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-causal-objection",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-local-law-selects-detector-eigenstate"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-local-law-selects-detector-eigenstate",
+          "component": "Argues that making later amplification causally determine the outcome threatens the assumption that detectors faithfully report rather than manufacture or distort results."
+        }
+      ],
+      "proposition": "If amplification determines the outcome rather than merely transmitting it, detectors may manufacture or distort what experiments purport to measure.",
+      "inventoryRationale": "Develops the empirical-reliability consequence of the causal objection."
+    },
+    {
+      "moveId": "pro-detector-variables-preserve-born-mean",
+      "sectionId": "detectors-and-causal-dynamics",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 375,
+        "endEvent": 379,
+        "startMs": 2140400,
+        "endMs": 2173200,
+        "excerpt": "you measure the spin. You get a probability distribution that's the same as in quantum mechanics. Okay, so what those other degrees of freedom of the detector do for you is that they decide which the outcome is. So they don't change the mean value, the average, Born's rule, that's what you need the detector eigenstates for. They just, they're the random variables that decide what is the actual outcome."
+      },
+      "quoteEligibleExactSpans": [
+        "a probability distribution that's the same",
+        "they decide which the outcome is",
+        "They just, they're the random variables"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The dialogue marker and content identify Hossenfelder’s direct answer to Kastrup.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-detector-dynamics",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-amplification-may-distort-outcome"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-amplification-may-distort-outcome",
+          "component": "Denies distortion: detector variables select the individual outcome while preserving the quantum-mechanical probability distribution and Born-rule average."
+        }
+      ],
+      "proposition": "Detector degrees of freedom need not distort measurements because they select individual outcomes while leaving the quantum probability distribution and Born-rule average unchanged.",
+      "inventoryRationale": "Directly answers the detector-distortion objection."
+    },
+    {
+      "moveId": "pro-measurement-setting-enters-evolution-law",
+      "sectionId": "bell-and-statistical-independence",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 402,
+        "endEvent": 405,
+        "startMs": 2309280,
+        "endMs": 2330240,
+        "excerpt": "depends on what you measure. And what this refers to, what the particle does concretely, I'm referring to the evolution law. So if you look at, for example, if you had looked at my toy model paper, you would have seen that this is exactly what the evolution law does. The measurement setting is in the evolution law."
+      },
+      "quoteEligibleExactSpans": [
+        "what the particle does",
+        "The measurement setting is in the evolution law"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder continues her clarification of what hidden variables determine in Bell-type models.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-locality-tradeoff",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-remote-detector-causation-unclear",
+        "con-amplification-may-distort-outcome"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-remote-detector-causation-unclear",
+          "component": "Locates contextual dependence in the evolution law rather than in a backward change to intrinsic particle properties."
+        },
+        {
+          "targetMoveId": "con-amplification-may-distort-outcome",
+          "component": "Clarifies that the detector setting helps determine dynamics, not that amplification arbitrarily corrupts an already fixed result."
+        }
+      ],
+      "proposition": "In the toy model, what the particle does depends on the evolution law, and the measurement setting enters that law.",
+      "inventoryRationale": "Clarifies the precise mechanism by which measurement context is represented."
+    },
+    {
+      "moveId": "con-complex-causal-chain-unsupported",
+      "sectionId": "detectors-and-causal-dynamics",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 415,
+        "endEvent": 418,
+        "startMs": 2394160,
+        "endMs": 2424080,
+        "excerpt": "It's a very complex causal chain because the interaction between the moon and my camera is just the photons from the moon hitting the sensor on my camera. I think we are being asked to believe in something very non-trivial, even fantastical. If we do not have an account that tells us precisely how this happens, why this is possible, it stretches credulity,"
+      },
+      "quoteEligibleExactSpans": [
+        "something very non-trivial, even fantastical"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup explicitly accepts Hossenfelder’s terminology for discussion and restates his causal challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-causal-objection",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-measurement-setting-enters-evolution-law"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-measurement-setting-enters-evolution-law",
+          "component": "Argues that putting detector settings into the evolution law still requires a highly nontrivial local causal account connecting remote settings to the microscopic interaction."
+        }
+      ],
+      "proposition": "Dependence of microscopic behavior on remote detector settings posits a complex causal chain that strains credulity without a precise account of how it works.",
+      "inventoryRationale": "Refines the causal objection after Hossenfelder’s evolution-law clarification."
+    },
+    {
+      "moveId": "pro-one-incomplete-model-not-entire-class",
+      "sectionId": "evidential-standards-and-research",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 425,
+        "endEvent": 428,
+        "startMs": 2466400,
+        "endMs": 2487680,
+        "excerpt": "develop. I'm trying to figure out exactly how to write down the mathematics. Also, I should say that when you say that this is what it takes to break statistical independence, that's not true. That's my particular model. There are other people who are working on different models and they have different hidden variables and have completely different ideas. Even if you don't like what I've"
+      },
+      "quoteEligibleExactSpans": [
+        "trying to figure out exactly how",
+        "That's my particular model"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder explicitly answers whether she has the detailed theory Kastrup requests.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-research-program",
+        "tier": "subsidiary",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "con-complex-causal-chain-unsupported"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-complex-causal-chain-unsupported",
+          "component": "Concedes that her model’s detailed mathematics is unfinished while denying that objections to her detector proposal defeat other superdeterministic models."
+        }
+      ],
+      "proposition": "Hossenfelder has not completed the mathematics of her detector model, but that mechanism is particular to her model and other programs use different hidden variables.",
+      "inventoryRationale": "Important concession coupled to a limitation on the scope of Kastrup’s criticism."
+    },
+    {
+      "moveId": "con-incompleteness-alone-not-disqualifying",
+      "sectionId": "evidential-standards-and-research",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 432,
+        "endEvent": 433,
+        "startMs": 2505040,
+        "endMs": 2518880,
+        "excerpt": "with work in progress. Everything that has ever been created that's good and useful and proven was once a work in progress. There is nothing wrong with that whatsoever. I do feel that you"
+      },
+      "quoteEligibleExactSpans": [
+        "was once a work in progress"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup takes the next turn and explicitly qualifies his criticism of incomplete work.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-motion-insufficient",
+        "tier": "motion",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "pro-one-incomplete-model-not-entire-class"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-one-incomplete-model-not-entire-class",
+          "component": "Concedes that incompleteness alone is not an objection because all successful research begins as work in progress."
+        }
+      ],
+      "proposition": "There is nothing inherently scientifically wrong with an early-stage or incomplete research program.",
+      "inventoryRationale": "Preserves Kastrup’s important concession against outright dismissal."
+    },
+    {
+      "moveId": "con-small-observers-support-contextuality",
+      "sectionId": "decoherence-and-contextuality",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 457,
+        "endEvent": 461,
+        "startMs": 2675920,
+        "endMs": 2701440,
+        "excerpt": "So assuming that you don't do that, that you're not saying, you know, you have to have human consciousness to be an observer, I don't see why you would establish a distinction between a slightly more complex system capable of decoherence and a photon. I think both are valid observers, and the conclusions of those experiments are valid. Physical quantities are relational, they are contextual, they are not absolute."
+      },
+      "quoteEligibleExactSpans": [
+        "both are valid observers",
+        "Physical quantities are relational"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Kastrup’s clearly attributed argument about Wigner’s-friend-style experiments.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-contextual-alternative",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Without privileging consciousness, there is no principled observer boundary between a decohering small system and a photon; physical quantities are therefore relational and contextual rather than absolute.",
+      "inventoryRationale": "Connects observer status to Kastrup’s alternative interpretation."
+    },
+    {
+      "moveId": "pro-decoherence-scale-defines-detector",
+      "sectionId": "decoherence-and-contextuality",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 515,
+        "endEvent": 518,
+        "startMs": 3001440,
+        "endMs": 3023920,
+        "excerpt": "I think it's entirely sufficient when we talk about detectors. And as I already said, a detector is anything large enough to cause decoherence. That does not mean that I say decoherence is sufficient to explain what happens in a measurement. I'm just saying that it's roughly the size at which you would reasonably call the thing a detector."
+      },
+      "quoteEligibleExactSpans": [
+        "anything large enough to cause decoherence"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder directly answers repeated questions about her definition of an observer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-detector-dynamics",
+        "tier": "subsidiary",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "con-small-observers-support-contextuality"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-small-observers-support-contextuality",
+          "component": "Rejects defining every state-changing interaction as an observer and instead uses decoherence-scale apparatus as the practical boundary for a detector."
+        }
+      ],
+      "proposition": "A detector can pragmatically be identified as anything large enough to cause decoherence, although decoherence is not sufficient to explain measurement.",
+      "inventoryRationale": "Preserves Hossenfelder’s nuanced definition of detector and concession about decoherence."
+    },
+    {
+      "moveId": "con-si-violation-needs-strong-rationale",
+      "sectionId": "bell-and-statistical-independence",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 554,
+        "endEvent": 558,
+        "startMs": 3204560,
+        "endMs": 3234720,
+        "excerpt": "I don't think it should be thrown out. But to come out strongly and say it has to be thrown out because reality is that statistical independence doesn't hold, I think that's a very, very strong statement. And it shouldn't be made lightly because statistical independence is something we have learned throughout the history of science is applicable. And to now suddenly depart from that, there has to be a very good rationale for that. Very, very"
+      },
+      "quoteEligibleExactSpans": [
+        "I don't think it should be thrown out",
+        "shouldn't be made lightly",
+        "there has to be a very good rationale"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup directly answers Hossenfelder’s question about opposition to violating statistical independence.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-statistical-independence",
+        "tier": "central",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "pro-locality-tradeoff-favors-si-violation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-locality-tradeoff-favors-si-violation",
+          "component": "Concedes that violating statistical independence should remain under consideration but demands stronger substantiation before asserting that nature actually violates it."
+        }
+      ],
+      "proposition": "Superdeterminism should not be discarded outright, but departing from historically successful statistical independence requires a very strong rationale.",
+      "inventoryRationale": "Important concession combined with Kastrup’s core evidential threshold."
+    },
+    {
+      "moveId": "con-no-experimental-reason-yet",
+      "sectionId": "evidential-standards-and-research",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 585,
+        "endEvent": 588,
+        "startMs": 3378960,
+        "endMs": 3405040,
+        "excerpt": "reason to entertain them or no experimental reason to depart from statistical independence, which has held for 400 years of science literally everywhere. We do not have a good empirical reason to depart from that or a good empirical reason to postulate hidden fantastical entities that are completely counterintuitive and for which we do not have even an explicit theoretical account."
+      },
+      "quoteEligibleExactSpans": [
+        "held for 400 years of science"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Although the caption’s dialogue label is erroneous, the moderator explicitly redirects Kastrup to his substantive objection, and the content matches Kastrup’s stable position.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion-insufficient",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-one-incomplete-model-not-entire-class"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-one-incomplete-model-not-entire-class",
+          "component": "Argues that the absence of an explicit theory makes hidden-variable postulation insufficiently rigorous at this stage."
+        }
+      ],
+      "proposition": "There is presently neither experimental reason to posit hidden variables nor experimental reason to abandon statistical independence, especially without an explicit theoretical account.",
+      "inventoryRationale": "Kastrup’s distilled substantive case after the moderator excludes tone-focused criticism."
+    },
+    {
+      "moveId": "pro-locality-also-historically-successful",
+      "sectionId": "evidential-standards-and-research",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 591,
+        "endEvent": 594,
+        "startMs": 3416400,
+        "endMs": 3441760,
+        "excerpt": "which has been historically dramatically successful. Right? And also, I mean, about this, you're talking about statistical independence again. You're using a notion of statistical independence that we use in statistical mechanics and so on, which just has nothing to do with this notion of statistical independence that enters Bell's theorem. I don't even know why people"
+      },
+      "quoteEligibleExactSpans": [
+        "historically dramatically successful",
+        "nothing to do with this notion"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Despite erroneous caption initials, this is Hossenfelder’s characteristic direct defense of locality immediately following Kastrup’s objection.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-research-program",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-si-supported-by-scientific-practice",
+        "con-no-experimental-reason-yet"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-si-supported-by-scientific-practice",
+          "component": "Counters the appeal to historical success by noting that locality is also historically successful."
+        },
+        {
+          "targetMoveId": "con-no-experimental-reason-yet",
+          "component": "Argues that Kastrup equivocates between ordinary statistical independence and the distinct formal condition in Bell’s theorem."
+        }
+      ],
+      "proposition": "Rejecting locality is also costly given its historical success, and ordinary statistical-mechanical independence should not be conflated with Bell's statistical-independence condition.",
+      "inventoryRationale": "Major comparative rebuttal to Kastrup’s historical-evidence argument."
+    },
+    {
+      "moveId": "pro-experiments-must-guide-theory-building",
+      "sectionId": "evidential-standards-and-research",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 608,
+        "endEvent": 611,
+        "startMs": 3515120,
+        "endMs": 3540960,
+        "excerpt": "just doesn't work. You need experimental guidance. And so trying to fumble together all the details without any kind of experimental evidence that you can use to build the theory just isn't going to work. And this is why I've been going around for 12 years trying to convince experimentalists to please stop doing always the same Bell-type tests, which will always give the same result,"
+      },
+      "quoteEligibleExactSpans": [
+        "You need experimental guidance",
+        "just isn't going to work"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuation of Hossenfelder’s answer about why she advocates an incomplete theory.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-research-program",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-no-experimental-reason-yet"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-no-experimental-reason-yet",
+          "component": "Argues that demanding a complete theory before new experiments reverses productive theory development, which requires empirical guidance."
+        }
+      ],
+      "proposition": "Theory-building needs experimental guidance, which repeated Bell-type tests with already-known outcomes cannot provide.",
+      "inventoryRationale": "The pro side’s principal methodological justification for pursuing an incomplete program."
+    },
+    {
+      "moveId": "con-protocol-operationally-under-specified",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "con",
+      "speaker": "Bernardo Kastrup",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 626,
+        "endEvent": 629,
+        "startMs": 3614400,
+        "endMs": 3636560,
+        "excerpt": "you have to cool the detector down and you have to reduce the degrees of freedom of the detector, and you have to make enough measurements in rapid succession, the experimentalist will ask, how cool, how rapid is rapid enough? What exactly do I need to measurement? And what exactly are the degrees of freedom that I am allowed to have? If there aren't answers to that"
+      },
+      "quoteEligibleExactSpans": [
+        "how rapid is rapid enough",
+        "If there aren't answers"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Kastrup contrasts Bell’s precision with Hossenfelder’s protocol in a clearly alternating exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-model-underspecification",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "pro-repeated-measurements-address-state-ignorance",
+        "pro-experiments-must-guide-theory-building"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-repeated-measurements-address-state-ignorance",
+          "component": "Demands operational thresholds for temperature, repetition speed, allowed degrees of freedom, and the measured quantity."
+        },
+        {
+          "targetMoveId": "pro-experiments-must-guide-theory-building",
+          "component": "Argues that experiments can guide theory only when experimentalists are told precisely what conditions and outcomes discriminate the hypotheses."
+        }
+      ],
+      "proposition": "The proposed protocol appears not to specify how cold or rapid the experiment must be, what must be measured, or which detector degrees of freedom are permitted.",
+      "inventoryRationale": "The strongest operational-precision objection to the proposed research program."
+    },
+    {
+      "moveId": "pro-earlier-paper-supplies-thresholds",
+      "sectionId": "experiments-and-falsifiability",
+      "side": "pro",
+      "speaker": "Sabine Hossenfelder",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 631,
+        "endEvent": 633,
+        "startMs": 3640640,
+        "endMs": 3653440,
+        "excerpt": "paper that you didn't read from 2011. I've now said this a few times. There are numbers in the paper that actually count the degrees of freedom. I've estimated the temperature and the size of the thing and how quick do you have to repeat the measurements and so on."
+      },
+      "quoteEligibleExactSpans": [
+        "paper that you didn't read from 2011",
+        "actually count the degrees of freedom",
+        "estimated the temperature and the size"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Hossenfelder immediately answers the demand for numerical thresholds by referring to her earlier paper.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-model-development",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "con-protocol-operationally-under-specified"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-protocol-operationally-under-specified",
+          "component": "States that the 2011 paper supplies numerical counts, temperature and size estimates, and repetition timing."
+        }
+      ],
+      "proposition": "The earlier 2011 paper provides the requested quantitative estimates for degrees of freedom, temperature, system size, and measurement-repetition speed.",
+      "inventoryRationale": "The final substantive direct answer to the experimental under-specification charge."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {
+      "totalAbsoluteDifference": 3,
+      "sectionAbsoluteDifference": 2
+    },
+    "totals": {
+      "pro": 22,
+      "con": 17,
+      "absoluteDifference": 5
+    },
+    "sections": [
+      {
+        "sectionId": "measurement-and-locality",
+        "pro": 4,
+        "con": 1,
+        "absoluteDifference": 3
+      },
+      {
+        "sectionId": "bell-and-statistical-independence",
+        "pro": 4,
+        "con": 2,
+        "absoluteDifference": 2
+      },
+      {
+        "sectionId": "hidden-variables-and-model-status",
+        "pro": 3,
+        "con": 2,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "experiments-and-falsifiability",
+        "pro": 4,
+        "con": 4,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "detectors-and-causal-dynamics",
+        "pro": 3,
+        "con": 2,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "decoherence-and-contextuality",
+        "pro": 1,
+        "con": 3,
+        "absoluteDifference": 2
+      },
+      {
+        "sectionId": "evidential-standards-and-research",
+        "pro": 3,
+        "con": 3,
+        "absoluteDifference": 0
+      }
+    ],
+    "rationaleRequired": true,
+    "rationale": "The source gives Hossenfelder more independently necessary constructive burdens and technical replies than Kastrup: she defines the research class, supplies two distinct measurement-problem criteria, develops four separate Bell and locality inferences, and answers successive model and protocol challenges. Two duplicate pro moves were removed, Kastrup's omitted concession was restored, and no weak con fragment was added merely to equalize counts."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {
+        "sectionId": "measurement-and-locality",
+        "pro": 4,
+        "con": 1,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Four Hossenfelder cards separately define the research class, challenge an epistemic update's physical adequacy, reject primitive observer terms, and specify a local detector-eigenstate route; Kastrup supplies the source's direct locality objection."
+      },
+      {
+        "sectionId": "bell-and-statistical-independence",
+        "pro": 4,
+        "con": 2,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Four Hossenfelder cards separately state Bell's conditional result, expose assumption dependence, motivate the locality tradeoff, and explain how the setting enters a model; two Kastrup cards defend statistical independence and raise the classical-carryover objection."
+      },
+      {
+        "sectionId": "hidden-variables-and-model-status",
+        "pro": 3,
+        "con": 2,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      },
+      {
+        "sectionId": "experiments-and-falsifiability",
+        "pro": 4,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Four cards per side preserve the protocol's state-ignorance workaround, drift dilemma, noncommuting correction, model-versus-class distinction, missing-variable objection, and demands for operational thresholds without merging distinct exchanges."
+      },
+      {
+        "sectionId": "detectors-and-causal-dynamics",
+        "pro": 3,
+        "con": 2,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      },
+      {
+        "sectionId": "decoherence-and-contextuality",
+        "pro": 1,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      },
+      {
+        "sectionId": "evidential-standards-and-research",
+        "pro": 3,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      }
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "allSpansSourceExact": true,
+    "controllerRecomputedAllCounts": true,
+    "sourceSpanTighteningChangedSubstance": false,
+    "deterministicEvidenceRendering": {
+      "minimumTokens": 12,
+      "maximumTokens": 90,
+      "maximumCharacters": 450,
+      "method": "two fresh score-blind source audits plus deterministic controller replay against the locked caption events",
+      "records": [
+        {
+          "moveId": "pro-class-addresses-measurement",
+          "startEvent": 55,
+          "endEvent": 56,
+          "characterCount": 180,
+          "tokenCount": 29
+        },
+        {
+          "moveId": "pro-epistemic-update-lacks-physical-account",
+          "startEvent": 64,
+          "endEvent": 66,
+          "characterCount": 282,
+          "tokenCount": 51
+        },
+        {
+          "moveId": "pro-fundamental-theory-cannot-presuppose-observers",
+          "startEvent": 68,
+          "endEvent": 70,
+          "characterCount": 286,
+          "tokenCount": 44
+        },
+        {
+          "moveId": "pro-bell-locality-requires-si-violation",
+          "startEvent": 74,
+          "endEvent": 78,
+          "characterCount": 429,
+          "tokenCount": 71
+        },
+        {
+          "moveId": "pro-hidden-information-may-be-observable",
+          "startEvent": 88,
+          "endEvent": 91,
+          "characterCount": 375,
+          "tokenCount": 60
+        },
+        {
+          "moveId": "con-unobserved-undefined-hidden-variables",
+          "startEvent": 110,
+          "endEvent": 112,
+          "characterCount": 281,
+          "tokenCount": 49
+        },
+        {
+          "moveId": "con-experiments-undermine-noncontextual-realism",
+          "startEvent": 120,
+          "endEvent": 123,
+          "characterCount": 371,
+          "tokenCount": 58
+        },
+        {
+          "moveId": "pro-experimental-inference-assumption-dependent",
+          "startEvent": 143,
+          "endEvent": 147,
+          "characterCount": 443,
+          "tokenCount": 67
+        },
+        {
+          "moveId": "pro-locality-tradeoff-favors-si-violation",
+          "startEvent": 155,
+          "endEvent": 158,
+          "characterCount": 391,
+          "tokenCount": 68
+        },
+        {
+          "moveId": "con-quantumness-placeholder-not-theory",
+          "startEvent": 170,
+          "endEvent": 173,
+          "characterCount": 370,
+          "tokenCount": 67
+        },
+        {
+          "moveId": "pro-wrong-paper-model-exists",
+          "startEvent": 175,
+          "endEvent": 178,
+          "characterCount": 379,
+          "tokenCount": 70
+        },
+        {
+          "moveId": "pro-toy-model-defines-variables",
+          "startEvent": 187,
+          "endEvent": 190,
+          "characterCount": 369,
+          "tokenCount": 67
+        },
+        {
+          "moveId": "con-si-supported-by-scientific-practice",
+          "startEvent": 208,
+          "endEvent": 211,
+          "characterCount": 368,
+          "tokenCount": 72
+        },
+        {
+          "moveId": "con-classical-carryover-selective",
+          "startEvent": 220,
+          "endEvent": 223,
+          "characterCount": 381,
+          "tokenCount": 68
+        },
+        {
+          "moveId": "con-protocol-cannot-reset-hidden-state",
+          "startEvent": 227,
+          "endEvent": 230,
+          "characterCount": 385,
+          "tokenCount": 65
+        },
+        {
+          "moveId": "con-hidden-variables-lack-independent-need",
+          "startEvent": 234,
+          "endEvent": 237,
+          "characterCount": 399,
+          "tokenCount": 67
+        },
+        {
+          "moveId": "pro-repeated-measurements-address-state-ignorance",
+          "startEvent": 247,
+          "endEvent": 248,
+          "characterCount": 181,
+          "tokenCount": 30
+        },
+        {
+          "moveId": "con-test-allows-drift-escape",
+          "startEvent": 285,
+          "endEvent": 288,
+          "characterCount": 373,
+          "tokenCount": 66
+        },
+        {
+          "moveId": "pro-noncommuting-measurement-protocol",
+          "startEvent": 296,
+          "endEvent": 298,
+          "characterCount": 275,
+          "tokenCount": 47
+        },
+        {
+          "moveId": "pro-models-not-class-are-falsifiable",
+          "startEvent": 304,
+          "endEvent": 307,
+          "characterCount": 374,
+          "tokenCount": 62
+        },
+        {
+          "moveId": "pro-detector-degrees-as-hidden-variables",
+          "startEvent": 313,
+          "endEvent": 314,
+          "characterCount": 182,
+          "tokenCount": 34
+        },
+        {
+          "moveId": "pro-evolution-law-still-incomplete",
+          "startEvent": 329,
+          "endEvent": 331,
+          "characterCount": 288,
+          "tokenCount": 53
+        },
+        {
+          "moveId": "con-remote-detector-causation-unclear",
+          "startEvent": 343,
+          "endEvent": 347,
+          "characterCount": 433,
+          "tokenCount": 70
+        },
+        {
+          "moveId": "pro-local-law-selects-detector-eigenstate",
+          "startEvent": 356,
+          "endEvent": 358,
+          "characterCount": 274,
+          "tokenCount": 46
+        },
+        {
+          "moveId": "con-superdeterminism-does-not-invalidate-science",
+          "startEvent": 359,
+          "endEvent": 360,
+          "characterCount": 185,
+          "tokenCount": 32
+        },
+        {
+          "moveId": "con-amplification-may-distort-outcome",
+          "startEvent": 366,
+          "endEvent": 369,
+          "characterCount": 386,
+          "tokenCount": 63
+        },
+        {
+          "moveId": "pro-detector-variables-preserve-born-mean",
+          "startEvent": 375,
+          "endEvent": 379,
+          "characterCount": 405,
+          "tokenCount": 70
+        },
+        {
+          "moveId": "pro-measurement-setting-enters-evolution-law",
+          "startEvent": 402,
+          "endEvent": 405,
+          "characterCount": 316,
+          "tokenCount": 58
+        },
+        {
+          "moveId": "con-complex-causal-chain-unsupported",
+          "startEvent": 415,
+          "endEvent": 418,
+          "characterCount": 358,
+          "tokenCount": 63
+        },
+        {
+          "moveId": "pro-one-incomplete-model-not-entire-class",
+          "startEvent": 425,
+          "endEvent": 428,
+          "characterCount": 390,
+          "tokenCount": 66
+        },
+        {
+          "moveId": "con-incompleteness-alone-not-disqualifying",
+          "startEvent": 432,
+          "endEvent": 433,
+          "characterCount": 187,
+          "tokenCount": 34
+        },
+        {
+          "moveId": "con-small-observers-support-contextuality",
+          "startEvent": 457,
+          "endEvent": 461,
+          "characterCount": 417,
+          "tokenCount": 69
+        },
+        {
+          "moveId": "pro-decoherence-scale-defines-detector",
+          "startEvent": 515,
+          "endEvent": 518,
+          "characterCount": 341,
+          "tokenCount": 59
+        },
+        {
+          "moveId": "con-si-violation-needs-strong-rationale",
+          "startEvent": 554,
+          "endEvent": 558,
+          "characterCount": 445,
+          "tokenCount": 77
+        },
+        {
+          "moveId": "con-no-experimental-reason-yet",
+          "startEvent": 585,
+          "endEvent": 588,
+          "characterCount": 384,
+          "tokenCount": 61
+        },
+        {
+          "moveId": "pro-locality-also-historically-successful",
+          "startEvent": 591,
+          "endEvent": 594,
+          "characterCount": 371,
+          "tokenCount": 57
+        },
+        {
+          "moveId": "pro-experiments-must-guide-theory-building",
+          "startEvent": 608,
+          "endEvent": 611,
+          "characterCount": 386,
+          "tokenCount": 66
+        },
+        {
+          "moveId": "con-protocol-operationally-under-specified",
+          "startEvent": 626,
+          "endEvent": 629,
+          "characterCount": 368,
+          "tokenCount": 67
+        },
+        {
+          "moveId": "pro-earlier-paper-supplies-thresholds",
+          "startEvent": 631,
+          "endEvent": 633,
+          "characterCount": 265,
+          "tokenCount": 50
+        }
+      ]
+    }
+  },
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "recovery": {
+    "preservedInvalidInventory": "inventory/preserved-invalid-inventory-1.json",
+    "firstIndependentAudit": "inventory/source-span-audit-1.json",
+    "secondIndependentAudit": "inventory/source-span-audit-2.json",
+    "removedDuplicateMoveIds": [
+      "m19",
+      "m33"
+    ],
+    "narrowedMoveIds": [
+      "pro-epistemic-update-lacks-physical-account",
+      "pro-fundamental-theory-cannot-presuppose-observers",
+      "con-hidden-variables-lack-independent-need",
+      "pro-repeated-measurements-address-state-ignorance",
+      "pro-detector-degrees-as-hidden-variables",
+      "pro-evolution-law-still-incomplete",
+      "pro-experiments-must-guide-theory-building"
+    ],
+    "resectionedMoveIds": [
+      "con-remote-detector-causation-unclear"
+    ],
+    "addedSourceRequiredMoveIds": [
+      "pro-epistemic-update-lacks-physical-account",
+      "pro-fundamental-theory-cannot-presuppose-observers",
+      "con-superdeterminism-does-not-invalidate-science"
+    ],
+    "scoresExposed": false,
+    "publicationExposed": false,
+    "secondAuditRepairsApplied": [
+      "pro-epistemic-update-lacks-physical-account",
+      "pro-fundamental-theory-cannot-presuppose-observers",
+      "con-hidden-variables-lack-independent-need",
+      "pro-detector-degrees-as-hidden-variables",
+      "pro-evolution-law-still-incomplete",
+      "pro-experiments-must-guide-theory-building"
+    ],
+    "controllerConstraintOverride": {
+      "moveId": "pro-experiments-must-guide-theory-building",
+      "reason": "The second auditor recommended events 608–612 but that joined excerpt is 480 characters and violates the hard 450-character limit. The controller retained events 608–611 and narrowed the proposition to the complete experimental-guidance and repeated-Bell-test inference."
+    }
+  }
+}
