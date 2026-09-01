@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "229",
+  "debateId": "evans-carrier-did-jesus-exist-2016",
+  "completedAt": "2026-09-01T22:17:25.000Z",
+  "source": {
+    "videoId": "yRBBQrScpU8",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 33869,
+    "events": 4720,
+    "transcriptSha256": "6bab8f644551ab343ce440acf657dd2aacbea7e050351957ff22e6603b5823f8",
+    "eventsSha256": "e148953f6ebec3e7ca19b86e8815461b236577d3ef4dab31aeab07abcf2b41be",
+    "assessedWindow": "00:07:34-02:44:40",
+    "excludedMaterial": "opening introductions and logistics before 00:07:34, moderator administration as scored moves, and the moderator outro after 02:44:40",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 48,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 97,
+    "adjudicatedDisputes": 97,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 79,
+      "con": 80,
+      "winner": "con",
+      "margin": 1
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 26,
+    "argumentCards": 48,
+    "uniqueLockedMovesMapped": 48,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": { "pro": 4, "con": 4 },
+    "overallBlunders": { "pro": 3, "con": 3 },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "bed31d2023f3598233d43c22dce9482f313d7f7a63b5235e2edf592db303f605",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-229/publication/content-parity-audit.json",
+    "contentParityCorrection": "bounded-field-disjoint-publication-repair-before-freeze",
+    "descriptionFluencyCorrection": "nineteen mechanical tails rewritten into natural transcript-faithful sentences",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 24,
+      "mean": 24.7,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": { "minimum": 122, "mean": 127.3, "maximum": 130 },
+    "critiqueCharacterRange": [924, 1098],
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": { "strengthMean": 26, "blunderMean": 25.2 },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-229/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral-thirteen-card-tag-and-five-overall-link-exact-definition-review",
+    "movesReviewedForFallaciesAndBiases": 48,
+    "overallBlundersReviewedForFallaciesAndBiases": 6,
+    "definitionsCheckedPerCandidate": 13,
+    "definitionComparisonsPerBlindPass": 702,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 46,
+    "acceptedCardRhetoricalTags": 13,
+    "acceptedCardFallacyTags": 10,
+    "acceptedCardBiasTags": 3,
+    "acceptedOverallRhetoricalLinks": 5,
+    "totalAcceptedRhetoricalApplications": 18,
+    "rejectedRhetoricalTagCandidates": 28,
+    "controllerDefinitionOverrides": 2,
+    "readerFacingScoringDisclosureCorrect": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 6,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 1,
+    "mobileDistantTapTests": 1,
+    "responsiveLayoutRepairsVerified": 0,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-229/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 6,
+    "rhetoricalTagsVisuallyVerified": 13,
+    "desktopEvidenceSha256": "a87d02e0fe5e056907cb253b3afb65579a191b97dd9a0a37d95e1926006f121e",
+    "mobileEvidenceSha256": "a5a237bd9fddda1f22593df4ffb96751a672a96496ebb7167c90473970ca9652"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "229 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "670 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "48 moves; description mean 24.7 words; critique mean 127.3 words; boilerplate coverage mean 0"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "54 candidates reviewed against 13 definitions in 2 blind passes; 46 candidates adjudicated; 13 card tags and 5 overall links accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "48 populated cards and 13 card-level rhetorical labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 229 with and without --repository-only",
+      "status": "passed",
+      "result": "48 moves; 7 sections; 97 disputes; 0 audio checks; score stability mean 1, maximum 2, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "229 of 229 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "completePipelineRestarts": 0,
+    "inventoryAuditRestarts": 0,
+    "inventoryRepairCycles": 1,
+    "publicationInitialDraftsRejected": 1,
+    "publicationRepairShards": 24,
+    "publicationCorrectionShards": 6,
+    "publicationOriginalityRepairPackets": 5,
+    "publicationDescriptionFluencyFieldsRepaired": 19,
+    "rhetoricalTagFieldsAdded": 13,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 2,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 25,
+    "con": 23,
+    "disposition": "All forty-eight frozen moves are mapped exactly once across seven semantic sections; selection follows substantive coverage rather than numerical symmetry."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

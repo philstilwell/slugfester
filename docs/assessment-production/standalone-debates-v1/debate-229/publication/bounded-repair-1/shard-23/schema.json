@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "moves"
+  ],
+  "properties": {
+    "moves": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "critique"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "paul-historical-material-and-authority-check",
+              "physical-burial-before-visionary-appearances"
+            ]
+          },
+          "critique": {
+            "type": "string",
+            "minLength": 880
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-recovery",
+  "status": "complete-and-schema-valid",
+  "debateNumber": 229,
+  "debateId": "evans-carrier-did-jesus-exist-2016",
+  "reviewerRole": "isolated-score-blind-inventory-recovery-analyst",
+  "isolation": {
+    "scoreBlind": true,
+    "forbiddenMaterialUnavailable": true,
+    "forbiddenMaterialConsulted": false,
+    "contaminationDetected": false
+  },
+  "failedInitialOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-229/inventory/raw-worker-output.json",
+    "sha256": "dec8406ef31487db67e6b1e06e1a3f8bd01f8e9c1eb0fa730cf67830639339af",
+    "bytes": 6234,
+    "failure": "The isolated response exhausted its output budget and returned zero moves; it was preserved and rejected before judgment."
+  },
+  "recovery": {
+    "method": "A fresh isolated analyst wrote a deterministic local builder from the same four authorized source files, regenerated all excerpts and audits from events.json, and produced the proposed 40-move inventory.",
+    "proposedInventorySha256": "febba1e6a3608e6cc77d7af6b8079e33c82456f141664d13e93f22e1da15562f",
+    "proposedMoves": 40,
+    "proposedSections": 6
+  },
+  "independentCompletenessAudits": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-229/inventory/inventory-completeness-audit-a.json",
+      "sha256": "abd1bf8c345690e6695e7ed4d884a0af6b57c1daf5186fde518c4f724bbf3c28",
+      "status": "correction-required"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-229/inventory/inventory-completeness-audit-b.json",
+      "sha256": "4ffe54ac058268c7e5019a17a7cb4fece381034ad6dcfff536ee2199018820fd",
+      "status": "correction-required"
+    }
+  ],
+  "appliedCorrections": {
+    "addedMoves": 8,
+    "removedMoves": 0,
+    "finalMoves": 48,
+    "finalSections": 7,
+    "sourceSpanCorrections": 13,
+    "replyTargetCorrections": 4,
+    "sectionAssignmentsCorrected": 5,
+    "summary": "The repair added hostile external witnesses, the Nazareth reply, Evans's earthbound Last Supper and Irenaeus replies, Carrier's eyewitness-blackout argument, Evans's physical-burial reply, Carrier's final allegory/historicization mechanism, and the opening hostile-reception/best-explanation move. It also repaired every source-span and response-target defect identified by either auditor."
+  },
+  "finalConfirmation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-229/inventory/source-span-sufficiency-final.json",
+    "sha256": "a7b3b13d93476587c91df8952e78ff9e922770d2437d82c60d0c1fe8c1a36d39",
+    "priorFindingsReviewed": 35,
+    "priorFindingsResolved": 35,
+    "unresolvedFindings": 0
+  },
+  "finalInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-229/inventory/inventory.json",
+    "sha256": "fb82d45fee7c69d5f237c9235c06c93ecdf5dc2a8b072470a1f0cce294c41393",
+    "bytes": 150692,
+    "moves": 48,
+    "sections": 7,
+    "proMoves": 25,
+    "conMoves": 23
+  },
+  "audit": {
+    "consensusOnly": true,
+    "sourceExact": true,
+    "scoresUnavailable": true,
+    "allIdentifiedFindingsResolved": true,
+    "deterministicDoubleBuildMatched": true
+  }
+}

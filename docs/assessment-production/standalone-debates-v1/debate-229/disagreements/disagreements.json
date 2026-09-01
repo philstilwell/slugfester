@@ -1,0 +1,2110 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "229",
+  "debateId": "evans-carrier-did-jesus-exist-2016",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "ancient-biography-comparison:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "ancient-biography-comparison",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "tacitus-and-hostile-external-witnesses:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "tacitus-and-hostile-external-witnesses",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "ancient-doubt-threshold:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "ancient-doubt-threshold",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Unattainable certainty would be unreasonable, but denial analogies do not establish the disputed probability."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "Unattainable certainty is an improper standard, but denial analogies do not show that the opponent used that standard."
+        }
+      }
+    },
+    {
+      "disputeId": "ancient-doubt-threshold:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "ancient-doubt-threshold",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 58,
+          "rationale": "Holocaust and lunar-denial analogies illustrate skepticism but do not warrant the specific ancient inference."
+        },
+        "option-b": {
+          "value": 56,
+          "rationale": "Holocaust and lunar-landing denials illustrate excessive doubt but provide no evidence about this historical record."
+        }
+      }
+    },
+    {
+      "disputeId": "ancient-doubt-threshold:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "ancient-doubt-threshold",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 16,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The move addresses standards of proof applicable to the historicity question."
+        },
+        "option-b": {
+          "value": 62,
+          "rationale": "It addresses a possible skeptical method, though Carrier’s case is not accurately reduced to demanding certainty."
+        }
+      }
+    },
+    {
+      "disputeId": "ancient-doubt-threshold:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "ancient-doubt-threshold",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "A proper historical threshold matters, though criticizing excessive doubt cannot complete the affirmative burden."
+        },
+        "option-b": {
+          "value": 63,
+          "rationale": "Burden standards matter, but the move cannot substitute for establishing which explanation best fits the evidence."
+        }
+      }
+    },
+    {
+      "disputeId": "ancient-doubt-threshold:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "ancient-doubt-threshold",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 54,
+          "rationale": "Comparing the opposing case to Holocaust or moon-landing denial substantially weakens charitable representation."
+        },
+        "option-b": {
+          "value": 47,
+          "rationale": "Comparing mythicism with Holocaust or lunar-landing denial materially weakens the representation of the live alternative."
+        }
+      }
+    },
+    {
+      "disputeId": "ancient-doubt-threshold:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "ancient-doubt-threshold",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "rapid-legendary-founder-precedents:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "rapid-legendary-founder-precedents",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "savior-deity-reference-class:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "savior-deity-reference-class",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 74,
+          "rationale": "A shared savior pattern can inform priors, but class membership and probability require stronger bridges."
+        },
+        "option-b": {
+          "value": 66,
+          "rationale": "Membership in a class of fictional deities can affect a prior, but the proposed class may be selected too broadly."
+        }
+      }
+    },
+    {
+      "disputeId": "savior-deity-reference-class:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "savior-deity-reference-class",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 62,
+          "rationale": "The common attributes are asserted broadly without enough named cases or controls for important differences."
+        },
+        "option-b": {
+          "value": 57,
+          "rationale": "Shared traits are asserted across unnamed deities without detailed cases, dating, independence, or disconfirming examples."
+        }
+      }
+    },
+    {
+      "disputeId": "savior-deity-reference-class:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "savior-deity-reference-class",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 85,
+          "rationale": "The move constructively addresses whether a nonhistorical Jesus has contemporary religious analogues."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The reference class directly supports Carrier’s proposed prior against assuming a uniquely historical savior deity."
+        }
+      }
+    },
+    {
+      "disputeId": "savior-deity-reference-class:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "savior-deity-reference-class",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "A sound reference class would advance nonexistence, but the proposed class remains contestable."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "A defensible comparison class would materially advance the nonexistence model, though it cannot decide the evidence alone."
+        }
+      }
+    },
+    {
+      "disputeId": "savior-deity-reference-class:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "savior-deity-reference-class",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 79,
+          "rationale": "The listed attributes are clear, while all and unique make the comparison wider than demonstrated."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "Terms such as savior, passion, victory over death, and earthly story require sharper inclusion criteria."
+        }
+      }
+    },
+    {
+      "disputeId": "savior-deity-reference-class:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "savior-deity-reference-class",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 65,
+          "rationale": "Differences among cult figures are acknowledged but then substantially flattened by categorical commonality claims."
+        },
+        "option-b": {
+          "value": 59,
+          "rationale": "Saying all members share the listed features and none existed overstates an incompletely demonstrated comparison."
+        }
+      }
+    },
+    {
+      "disputeId": "preexistent-jewish-angel-model:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "preexistent-jewish-angel-model",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "epistles-before-literary-gospels:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "epistles-before-literary-gospels",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "Epistles, later gospels, and the proposed direction of development are plainly distinguished."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The chronology is clear, but “literary fiction” and “all later claims” combine several separable propositions."
+        }
+      }
+    },
+    {
+      "disputeId": "epistles-before-literary-gospels:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "epistles-before-literary-gospels",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Calling the gospels crafted history and the epistles celestial compresses live mixed-evidence interpretations."
+        },
+        "option-b": {
+          "value": 61,
+          "rationale": "The categorical description of Paul and all later attestation leaves insufficient room for ambiguous or independent evidence."
+        }
+      }
+    },
+    {
+      "disputeId": "epistles-before-literary-gospels:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "epistles-before-literary-gospels",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "paul-omits-earthly-locations:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "paul-omits-earthly-locations",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The omission pattern coherently reduces expected earthly anchoring without making silence logically decisive."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "Pauline omissions fit the celestial model, but silence alone does not determine where the events were believed to occur."
+        }
+      }
+    },
+    {
+      "disputeId": "paul-omits-earthly-locations:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "paul-omits-earthly-locations",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Specific missing locations and actors are identified, though expected-frequency and genre baselines are limited."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "Specific omissions, archons, interpolation, and vocabulary are cited, though several disputed readings are treated briskly."
+        }
+      }
+    },
+    {
+      "disputeId": "paul-omits-earthly-locations:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "paul-omits-earthly-locations",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 90,
+          "rationale": "The move squarely challenges the affirmative's earliest and most important documentary evidence."
+        },
+        "option-b": {
+          "value": 88,
+          "rationale": "The move directly examines whether the earliest letters unambiguously locate Jesus’s life and death on earth."
+        }
+      }
+    },
+    {
+      "disputeId": "paul-omits-earthly-locations:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "paul-omits-earthly-locations",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 87,
+          "rationale": "Systematic absence of expected earthly anchors materially advances Pauline ambiguity."
+        },
+        "option-b": {
+          "value": 85,
+          "rationale": "Ambiguity in Paul’s alleged earthly markers bears centrally on the surviving-evidence burden adopted by Carrier."
+        }
+      }
+    },
+    {
+      "disputeId": "paul-omits-earthly-locations:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "paul-omits-earthly-locations",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "The absent birth, killer, burial, and setting details are concrete and readily auditable."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Birth, killer, burial, location, archons, and vocabulary are separated into auditable textual claims."
+        }
+      }
+    },
+    {
+      "disputeId": "paul-omits-earthly-locations:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "paul-omits-earthly-locations",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "The move presents omission as evidentiary tension rather than treating silence alone as conclusive."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "The move identifies ambiguity but sometimes presents contested interpolation and demonic readings as more settled than shown."
+        }
+      }
+    },
+    {
+      "disputeId": "revelation-and-scripture-sources:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "revelation-and-scripture-sources",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "The inference is generally measured, although not eyewitness is stronger than the cited source claims alone."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "The textual pattern is fairly described, but it underplays the possibility of both revelation and human transmission."
+        }
+      }
+    },
+    {
+      "disputeId": "gospels-as-literary-parables:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "gospels-as-literary-parables",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "The move allows a literary inference but sometimes slides from constructed narrative toward wholesale fiction."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "The categorical conclusion that criteria cannot recover history is stronger than the summarized methodological critique establishes."
+        }
+      }
+    },
+    {
+      "disputeId": "gospels-as-literary-parables:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "gospels-as-literary-parables",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "outside-evidence-not-independent:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "outside-evidence-not-independent",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "crucifixion-explains-pauls-focus:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "crucifixion-explains-pauls-focus",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "The reply recognizes Paul's interests but understates that some missing anchors could still be expected."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The move offers a plausible alternative explanation without denying that Paul gives little biographical detail."
+        }
+      }
+    },
+    {
+      "disputeId": "dying-god-parallels-contested:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "dying-god-parallels-contested",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 11,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 71,
+          "rationale": "Specialist disagreement can flag a weak analogy but does not itself identify the decisive comparative defect."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "Showing material disanalogies coherently weakens the proposed reference class and derivation inference."
+        }
+      }
+    },
+    {
+      "disputeId": "dying-god-parallels-contested:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "dying-god-parallels-contested",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 17,
+        "moveScoreDelta": 11,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 58,
+          "rationale": "The move mainly invokes unnamed specialist judgment without presenting their source-specific reasons."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "Named specialists, publications, and concrete Attis and Osiris differences support the challenge, though mostly by authority."
+        }
+      }
+    },
+    {
+      "disputeId": "dying-god-parallels-contested:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "dying-god-parallels-contested",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 11,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "It directly contests Carrier's proposed savior-deity reference class and borrowing model."
+        },
+        "option-b": {
+          "value": 88,
+          "rationale": "The reply directly targets the decisive claim that contemporary savior deities shared a genuine death-resurrection pattern."
+        }
+      }
+    },
+    {
+      "disputeId": "dying-god-parallels-contested:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "dying-god-parallels-contested",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 11,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Defeating the parallels would protect the Jewish-context burden, but the rebuttal remains underdeveloped."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "Defeating the proposed comparative class materially protects the Jewish and historical explanation."
+        }
+      }
+    },
+    {
+      "disputeId": "dying-god-parallels-contested:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "dying-god-parallels-contested",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 11,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 75,
+          "rationale": "The target is identifiable, while true analogue and source are not carefully distinguished."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "The reply distinguishes reanimation, bodily resurrection, and Jewish eschatological resurrection with useful specificity."
+        }
+      }
+    },
+    {
+      "disputeId": "dying-god-parallels-contested:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "dying-god-parallels-contested",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 16,
+        "moveScoreDelta": 11,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 62,
+          "rationale": "The reply reports rejection without reconstructing the strongest specific parallels Carrier actually offered."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Evans concedes his limited expertise and cites contrary work, although the response centers only selected parallels."
+        }
+      }
+    },
+    {
+      "disputeId": "archaeology-makes-fiction-odd:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "archaeology-makes-fiction-odd",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 74,
+          "rationale": "Accurate correlations create some explanatory pressure, but historically situated fiction remains a live alternative."
+        },
+        "option-b": {
+          "value": 60,
+          "rationale": "Accurate research is not odd for historical fiction, so the asserted improbability does not follow without a base rate."
+        }
+      }
+    },
+    {
+      "disputeId": "archaeology-makes-fiction-odd:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "archaeology-makes-fiction-odd",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "Archaeological usefulness is relevant evidence, though the frequency and diagnostic character are not demonstrated."
+        },
+        "option-b": {
+          "value": 60,
+          "rationale": "Archaeological use is asserted generally without showing Jesus-specific discoveries or comparing historically situated fiction."
+        }
+      }
+    },
+    {
+      "disputeId": "archaeology-makes-fiction-odd:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "archaeology-makes-fiction-odd",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 87,
+          "rationale": "The move directly challenges the claim that the gospels are principally literary inventions."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The reply contacts Carrier’s literary-fiction claim by arguing that detailed historical fit needs explanation."
+        }
+      }
+    },
+    {
+      "disputeId": "archaeology-makes-fiction-odd:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "archaeology-makes-fiction-odd",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 79,
+          "rationale": "Historical correlation advances gospel credibility but cannot alone establish Jesus or particular events."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "Authorial competence is relevant to gospel evaluation but does not itself demonstrate the protagonist’s existence."
+        }
+      }
+    },
+    {
+      "disputeId": "archaeology-makes-fiction-odd:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "archaeology-makes-fiction-odd",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The explanatory challenge is clear, although person, events, and setting are insufficiently separated."
+        },
+        "option-b": {
+          "value": 76,
+          "rationale": "The core challenge is understandable, though “real people, events, and perhaps places” combines separable claims."
+        }
+      }
+    },
+    {
+      "disputeId": "archaeology-makes-fiction-odd:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "archaeology-makes-fiction-odd",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "Calling invention odd gives too little weight to ordinary historical-fiction and literary-color mechanisms."
+        },
+        "option-b": {
+          "value": 56,
+          "rationale": "The reply understates how readily fictional narratives can incorporate accurate people, places, and researched settings."
+        }
+      }
+    },
+    {
+      "disputeId": "josephus-may-repeat-christians:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "josephus-may-repeat-christians",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 79,
+          "rationale": "Even an authentic dependent notice would have reduced force, materially limiting external attestation."
+        },
+        "option-b": {
+          "value": 88,
+          "rationale": "The move attacks a central external-attestation bridge at the textual and source-dependence levels."
+        }
+      }
+    },
+    {
+      "disputeId": "josephus-may-repeat-christians:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "josephus-may-repeat-christians",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "The use of may is appropriately limited, but the cumulative presentation favors skeptical possibilities selectively."
+        },
+        "option-b": {
+          "value": 58,
+          "rationale": "Calling wholesale inauthenticity obvious overstates a position that the move itself says requires numerous disputed reasons."
+        }
+      }
+    },
+    {
+      "disputeId": "silence-alone-conceded-insufficient:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "silence-alone-conceded-insufficient",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "The ordinary scarcity of records for obscure ancient people appropriately warrants the limited concession."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The contrast with emperors and the structure of Carrier’s actual case are specific, though the latter remains contested."
+        }
+      }
+    },
+    {
+      "disputeId": "probability-not-certainty:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "probability-not-certainty",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "Choosing the most probable explanation is coherent, though this decision rule does not select an explanation itself."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "Choosing the best explanation is methodologically sound, but the move only briefly compares the competing explanations."
+        }
+      }
+    },
+    {
+      "disputeId": "probability-not-certainty:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "probability-not-certainty",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "The methodological claim is sensible but is asserted without applying explicit comparative probabilities here."
+        },
+        "option-b": {
+          "value": 63,
+          "rationale": "Fragments, interpolation, Pauline embarrassment, and Josephus are mentioned without a developed probability comparison."
+        }
+      }
+    },
+    {
+      "disputeId": "probability-not-certainty:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "probability-not-certainty",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 91,
+          "rationale": "The move directly clarifies the standard after Carrier's concession and ambiguity arguments."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "The reply accepts evidentiary defects and answers Carrier’s concession by restating the affirmative inferential standard."
+        }
+      }
+    },
+    {
+      "disputeId": "probability-not-certainty:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "probability-not-certainty",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 85,
+          "rationale": "The probability standard properly frames both sides' motion-level evidentiary burdens."
+        },
+        "option-b": {
+          "value": 83,
+          "rationale": "A probability-based best explanation directly describes what the affirmative must establish on the motion."
+        }
+      }
+    },
+    {
+      "disputeId": "probability-not-certainty:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "probability-not-certainty",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 87,
+          "rationale": "Certainty, possibility, and probability are distinctly and clearly contrasted."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "The certainty, possibility, and probability distinction is clear, though “very probable” is not quantitatively grounded."
+        }
+      }
+    },
+    {
+      "disputeId": "probability-not-certainty:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "probability-not-certainty",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 8,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 88,
+          "rationale": "The move adopts a proportionate historical standard without demanding certainty from either side."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Evans concedes bogus and interpolated evidence, but his high final confidence exceeds the comparison shown in this move."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 79,
+          "rationale": "Shared non-Markan material can imply another tradition, but early dating and historicity remain further steps."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Independent traditions could support early circulation, but occasional tradition appeals do not establish a specific early Q."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "The shared Matthew-Luke material is specific support, though independence and dating are incompletely defended."
+        },
+        "option-b": {
+          "value": 66,
+          "rationale": "Goodacre, Tuckett, shared verses, and Pauline echoes are cited, though no concrete contested passage is examined."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 88,
+          "rationale": "The move directly answers the claim that Q contributes no meaningful early tradition."
+        },
+        "option-b": {
+          "value": 76,
+          "rationale": "The reply engages gospel literary dependence but only indirectly answers the broader claim that the narratives are fictional."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 81,
+          "rationale": "Independent early teaching would materially support gospel roots, but does not alone establish factual content."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "A recoverable pre-gospel teaching stream would materially strengthen the affirmative’s source chain."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "The no-Q alternative and inference to independent tradition are stated in understandable terms."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Several versions of Q, independent tradition, and Pauline echoes are discussed, but their relationships remain compressed."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "The move fairly allows source-theory disagreement but moves too quickly from tradition to the 30s."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "Evans acknowledges Goodacre’s intelligence and minority view, yet leans too heavily on majority acceptance."
+        }
+      }
+    },
+    {
+      "disputeId": "independent-early-tradition-behind-q:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "independent-early-tradition-behind-q",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "q-cannot-be-dated-early:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "q-cannot-be-dated-early",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "Underdetermined dating and genre coherently block using hypothetical Q as early historical corroboration."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Even granting Q, lack of secure early dating blocks its use as demonstrated evidence from the 30s."
+        }
+      }
+    },
+    {
+      "disputeId": "q-cannot-be-dated-early:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "q-cannot-be-dated-early",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "The lack of a surviving document supports caution, though the strongest internal dating arguments are not examined."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "The dating objection is clear, but the claim that most Christian gospels were fictional does not establish Q’s genre."
+        }
+      }
+    },
+    {
+      "disputeId": "q-cannot-be-dated-early:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "q-cannot-be-dated-early",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 93,
+          "rationale": "The move directly answers both the early-date and historical-content inferences made for Q."
+        },
+        "option-b": {
+          "value": 89,
+          "rationale": "The reply directly addresses the inferred Q source and challenges both its date and presumed historical reliability."
+        }
+      }
+    },
+    {
+      "disputeId": "q-cannot-be-dated-early:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "q-cannot-be-dated-early",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 85,
+          "rationale": "It materially limits a proposed independent early source without demanding that Carrier prove a contrary date."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "The date and character of Q determine whether it supplies the early independent tradition Evans needs."
+        }
+      }
+    },
+    {
+      "disputeId": "q-cannot-be-dated-early:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "q-cannot-be-dated-early",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "Existence, date, independence, and fictional status are separated with good analytical clarity."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "Existence, prewar dating, and nonfictional status are presented as three distinct propositions requiring support."
+        }
+      }
+    },
+    {
+      "disputeId": "q-cannot-be-dated-early:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "q-cannot-be-dated-early",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "Carrier conditionally grants Q's existence while limiting only the unsupported conclusions drawn from it."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Carrier grants Q for argument’s sake but overextends from later fictional gospels to the disputed source."
+        }
+      }
+    },
+    {
+      "disputeId": "last-supper-earthbound-betrayal:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "last-supper-earthbound-betrayal",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "A supper on a betrayal night naturally suggests earthly history, though alternative readings are not excluded."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "A betrayal night and meal sound earthly, but the move largely asserts rather than demonstrates that cosmic readings are excluded."
+        }
+      }
+    },
+    {
+      "disputeId": "last-supper-earthbound-betrayal:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "last-supper-earthbound-betrayal",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 92,
+          "rationale": "The move directly answers the claim that Pauline markers remain wholly cosmic-compatible."
+        },
+        "option-b": {
+          "value": 89,
+          "rationale": "The reply directly returns to Carrier’s contention that Paul’s supper language remains cosmically compatible."
+        }
+      }
+    },
+    {
+      "disputeId": "last-supper-earthbound-betrayal:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "last-supper-earthbound-betrayal",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "The meal, night, betrayal, and earthbound implication are clearly connected."
+        },
+        "option-b": {
+          "value": 81,
+          "rationale": "The night, betrayal, bread, saying, and commemorative practice are stated clearly enough to assess."
+        }
+      }
+    },
+    {
+      "disputeId": "last-supper-earthbound-betrayal:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "last-supper-earthbound-betrayal",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The natural earthly reading is fairly stated, though the disputed delivery and revelation alternatives get little treatment."
+        },
+        "option-b": {
+          "value": 66,
+          "rationale": "“This is not in outer space” expresses confidence beyond the textual location evidence presented."
+        }
+      }
+    },
+    {
+      "disputeId": "irenaeus-opposes-later-gnostic-reading:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "irenaeus-opposes-later-gnostic-reading",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The move addresses Carrier's proposed celestial-to-historical developmental direction."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "The reply concerns celestial interpretation but only indirectly contacts Carrier’s first-century Pauline angel model."
+        }
+      }
+    },
+    {
+      "disputeId": "josephus-passage-contextual-interpolation:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "josephus-passage-contextual-interpolation",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 25,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "The move argues for a strong conclusion but grounds it in specific textual features rather than mere suspicion."
+        },
+        "option-b": {
+          "value": 57,
+          "rationale": "Calling interpolation obvious and preservation efforts desperate overstates a contested textual inference and imputes motive."
+        }
+      }
+    },
+    {
+      "disputeId": "josephus-passage-contextual-interpolation:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "josephus-passage-contextual-interpolation",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "accurate-fiction-still-not-historicity:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "accurate-fiction-still-not-historicity",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 89,
+          "rationale": "The Troy analogy clearly shows that verified setting does not logically verify a narrative protagonist."
+        },
+        "option-b": {
+          "value": 87,
+          "rationale": "The detective-fiction and Troy analogies validly show that accurate settings do not entail narrative historicity."
+        }
+      }
+    },
+    {
+      "disputeId": "accurate-fiction-still-not-historicity:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "accurate-fiction-still-not-historicity",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "Historically grounded fiction and archaeological Troy provide apt support for the limiting principle."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The analogies are apt, though the asserted dependence of Luke on Josephus remains contested and unnecessary."
+        }
+      }
+    },
+    {
+      "disputeId": "accurate-fiction-still-not-historicity:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "accurate-fiction-still-not-historicity",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 95,
+          "rationale": "The move precisely answers the revised claim that verisimilitude functions as a historical screen."
+        },
+        "option-b": {
+          "value": 90,
+          "rationale": "The reply directly tests the narrowed verisimilitude claim and preserves the distinction between competence and truth."
+        }
+      }
+    },
+    {
+      "disputeId": "accurate-fiction-still-not-historicity:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "accurate-fiction-still-not-historicity",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 88,
+          "rationale": "It decisively limits what geographical accuracy can contribute to the historicity burden."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "It correctly limits archaeological accuracy as evidence for Jesus, though it does not negate every use as a source screen."
+        }
+      }
+    },
+    {
+      "disputeId": "accurate-fiction-still-not-historicity:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "accurate-fiction-still-not-historicity",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 91,
+          "rationale": "Setting verification and character verification are sharply distinguished through a concrete comparison."
+        },
+        "option-b": {
+          "value": 87,
+          "rationale": "General historical facts and facts peculiar to Jesus or the apostles are clearly distinguished."
+        }
+      }
+    },
+    {
+      "disputeId": "accurate-fiction-still-not-historicity:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "accurate-fiction-still-not-historicity",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 91,
+          "rationale": "The move grants the accurate setting and challenges only the excess inference drawn from it."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "The central limitation is proportionate, but saying the evidence is wholly unusable understates its screening value."
+        }
+      }
+    },
+    {
+      "disputeId": "carrier-best-point-is-founder-precedent:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "carrier-best-point-is-founder-precedent",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "Granting theoretical precedent then appealing to specialist rejection is coherent but underexplains the rejection."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "Recognizing invented-founder precedents as the strongest route correctly identifies what a nonexistence case must explain."
+        }
+      }
+    },
+    {
+      "disputeId": "carrier-best-point-is-founder-precedent:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "carrier-best-point-is-founder-precedent",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 56,
+          "rationale": "The positive concession is grounded in Carrier's examples, while the rebuttal relies chiefly on secondhand authority."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "The assessment draws on Carrier’s examples but does not independently compare their mechanisms with Christianity in detail."
+        }
+      }
+    },
+    {
+      "disputeId": "carrier-best-point-is-founder-precedent:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "carrier-best-point-is-founder-precedent",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 88,
+          "rationale": "The move directly identifies and engages Carrier's strongest prior-plausibility argument."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "The move engages Carrier’s positive model rather than treating his position as merely an argument from silence."
+        }
+      }
+    },
+    {
+      "disputeId": "carrier-best-point-is-founder-precedent:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "carrier-best-point-is-founder-precedent",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "It limits the analogy's application but does not independently show why the proposed parallels fail."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Identifying a plausible founder-invention mechanism is important, although evaluating it does not alone satisfy historicity."
+        }
+      }
+    },
+    {
+      "disputeId": "carrier-best-point-is-founder-precedent:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "carrier-best-point-is-founder-precedent",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "Evans explicitly calls this Carrier's best point and acknowledges his own secondhand reliance."
+        },
+        "option-b": {
+          "value": 91,
+          "rationale": "Evans explicitly identifies Carrier’s strongest argument and treats it as a serious, intelligent starting point."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 85,
+          "rationale": "Lost correspondence and late composition coherently weaken arguments from unrecorded contemporary correction."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Late composition and missing correspondence weaken eyewitness checking, while accurate details remain compatible with fiction."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "Chronology, survival estimates, and known historical-fiction practice support the reply, with some compressed claims."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Carrier supplies dating, survival estimates, Philo, crucifixion customs, and literary-source examples, though some are disputed."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 93,
+          "rationale": "The move answers both the absence-of-gainsaying claim and the archaeological-detail objection."
+        },
+        "option-b": {
+          "value": 90,
+          "rationale": "The answer directly addresses both eyewitness control and why a fictional narrative would contain accurate historical details."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "It materially limits two affirmative corroboration routes while avoiding a claim that loss proves fiction."
+        },
+        "option-b": {
+          "value": 87,
+          "rationale": "The absence of recoverable eyewitness checks and nonexclusive historical color directly challenges gospel corroboration."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "Eyewitness attrition, documentary blackout, and literary color are distinct despite the move's breadth."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "Several distinct chronology, demography, source, and fiction arguments are clear but densely combined."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 85,
+          "rationale": "The reply frames lost correction as an evidentiary limit and historical detail as compatible with fiction."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Carrier acknowledges uncertainty about authorial motives, though his Luke-Josephus dependence is stated too confidently."
+        }
+      }
+    },
+    {
+      "disputeId": "eyewitness-blackout-and-historical-color:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "eyewitness-blackout-and-historical-color",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "luke-does-not-use-josephus:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "luke-does-not-use-josephus",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "physical-burial-before-visionary-appearances:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "physical-burial-before-visionary-appearances",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 15,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "Evans grants the visionary nature of appearances while defending a physical historical presupposition."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "Evans fairly concedes visionary appearances but asserts earthbound historical presupposition beyond what physical burial alone shows."
+        }
+      }
+    },
+    {
+      "disputeId": "cosmic-jesus-still-physical:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "cosmic-jesus-still-physical",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The clarification preserves the con model but provides limited reason to prefer it over an earthly reading."
+        },
+        "option-b": {
+          "value": 87,
+          "rationale": "Preserving cosmic compatibility in 1 Corinthians directly protects Carrier’s alternative explanation of the earliest evidence."
+        }
+      }
+    },
+    {
+      "disputeId": "cosmic-jesus-still-physical:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "cosmic-jesus-still-physical",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "public-allegory-and-historicization-mechanism:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "public-allegory-and-historicization-mechanism",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 75,
+          "rationale": "A demonstrated mechanism would advance nonexistence, though much of this account remains speculative."
+        },
+        "option-b": {
+          "value": 85,
+          "rationale": "A concrete historicization mechanism materially advances Carrier’s positive gospel-development burden."
+        }
+      }
+    },
+    {
+      "disputeId": "public-allegory-and-historicization-mechanism:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "public-allegory-and-historicization-mechanism",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 63,
+          "rationale": "Speculation about dupes, lies, and authorial motives assigns stronger intentional deception than the evidence warrants."
+        },
+        "option-b": {
+          "value": 52,
+          "rationale": "Carrier admits uncertainty about motives yet repeatedly describes gospel writers as producing fiction, duping readers, or lying."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "All affirmative burden-completion consequences are already captured by the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct unscored debate-wide burden-completion consequence was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None beyond consequences already represented in the locked move ratings.",
+            "alreadyCapturedBy": [
+              "all locked move dimension ratings"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion beyond move-level ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incomplete affirmative links concerning Pauline contact, gospel corroboration, and external independence are already represented in the individual move dimensions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional debate-wide affirmative completion consequence remains outside the locked move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None beyond the evidentiary, responsiveness, and calibration consequences already assessed move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing the already-rated defects would leave no separate record-wide adjustment warranted."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "All negative burden-completion consequences are already captured by the locked move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct unscored debate-wide burden-completion consequence was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None beyond consequences already represented in the locked move ratings.",
+            "alreadyCapturedBy": [
+              "all locked move dimension ratings"
+            ],
+            "counterfactual": "Removing any alleged global consequence would not change burden completion beyond move-level ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incomplete comparative, celestial, source-dependence, or historicization inference is already captured in the corresponding move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional debate-wide critical completion consequence remains outside the locked move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "None beyond the warrant, inference, relevance, and calibration consequences already assessed move by move.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing the already-rated defects would leave no separate record-wide adjustment warranted."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 48,
+    "disputesExtracted": 97,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-229/inventory/inventory.json",
+      "sha256": "fb82d45fee7c69d5f237c9235c06c93ecdf5dc2a8b072470a1f0cce294c41393"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-229/judgments/pass-a/output.json",
+      "sha256": "1a9d9658f46726bcba25bdbb665d23de70a40f08031b6c05274579bac7ff372d"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-229/judgments/pass-b/output.json",
+      "sha256": "8dae75fded922028be130a776996900342d61e3a059c5e53eccceaf1645c562f"
+    }
+  }
+}

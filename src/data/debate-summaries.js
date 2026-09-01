@@ -10354,5 +10354,57 @@ export const debateSummaries = [
         "title": "Historical Corroboration and Closing Synthesis"
       }
     ]
+  },
+  {
+    "id": "evans-carrier-did-jesus-exist-2016",
+    "number": "229",
+    "title": "Did Jesus Exist? Craig Evans vs. Richard Carrier (2016)",
+    "label": "Historicity of Jesus",
+    "date": "2026-09-01",
+    "duration": "2 hr 46 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=yRBBQrScpU8",
+    "motion": "Did Jesus exist?",
+    "summary": "Carrier prevailed 80–79 because Pauline ambiguity and limits on gospel corroboration narrowly outweighed Evans’s early letters, Josephus defense, and carefully qualified historical method.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Jesus existed as a historical person",
+        "speaker": "Craig Evans",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The surviving evidence does not establish a historical Jesus and favors nonexistence",
+        "speaker": "Richard Carrier",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Historical method and prior plausibility"
+      },
+      {
+        "title": "Pauline evidence and earthly reference"
+      },
+      {
+        "title": "Gospel sources and historical corroboration"
+      },
+      {
+        "title": "Josephus and other external attestation"
+      },
+      {
+        "title": "Comparative religion and savior models"
+      },
+      {
+        "title": "Eyewitnesses and later audience-answer clarifications"
+      },
+      {
+        "title": "Gospel allegory and historicization"
+      }
+    ]
   }
 ];

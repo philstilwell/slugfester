@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "moves"
+  ],
+  "properties": {
+    "moves": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "critique"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "luke-does-not-use-josephus",
+              "pagan-material-rewritten-as-jewish-superiority"
+            ]
+          },
+          "critique": {
+            "type": "string",
+            "minLength": 880
+          }
+        }
+      }
+    }
+  }
+}

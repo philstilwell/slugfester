@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "debateNumber",
+    "decisions"
+  ],
+  "properties": {
+    "debateNumber": {
+      "type": "string",
+      "const": "229"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateKey",
+          "decision",
+          "rationale",
+          "context"
+        ],
+        "properties": {
+          "candidateKey": {
+            "type": "string"
+          },
+          "decision": {
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
