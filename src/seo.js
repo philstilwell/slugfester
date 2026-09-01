@@ -612,7 +612,7 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls and four corpus-wide papers on theist-side results, score-scale comparability, and where performance gaps are largest.";
+    "How Slugfester selects, transcribes, reviews, and scores debates, with validation controls and corpus-wide research on scoring patterns and comparability.";
   const updatedDate = "2026-09-01";
 
   return {
