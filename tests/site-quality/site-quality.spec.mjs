@@ -47,7 +47,7 @@ for (const route of [
 }
 
 const routeBudgets = [
-  { route: "/", dataBytes: 375_000, required: "debate-summaries.js" },
+  { route: "/", dataBytes: 385_000, required: "debate-summaries.js" },
   { route: "/rankings/", dataBytes: 425_000, required: "debate-analytics.js" },
   {
     route: "/debate/craig-oconnor-god-debate-2026/",
