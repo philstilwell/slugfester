@@ -1,0 +1,2036 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "223",
+  "debateId": "collins-dawkins-science-belief-god-2022",
+  "motion": "Does scientific understanding leave rational grounds for belief in God?",
+  "assessmentModel": "5.6 Sol",
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "position": "Scientific understanding leaves rational grounds for belief in God.",
+      "bridges": [
+        {
+          "bridgeId": "pro-motion-rational-grounds",
+          "tier": "motion",
+          "statement": "Scientific findings do not prove God, but they remain consistent with and can contribute to a rational cumulative case for belief."
+        },
+        {
+          "bridgeId": "pro-central-compatibility",
+          "tier": "central",
+          "statement": "Evolutionary and other natural explanations can describe God's orderly means of creation rather than exclude divine purpose."
+        },
+        {
+          "bridgeId": "pro-central-cosmic-signposts",
+          "tier": "central",
+          "statement": "Lawful intelligibility, cosmic origins, and fine-tuning are evidential signposts that make a creator mind rationally defensible."
+        },
+        {
+          "bridgeId": "pro-subsidiary-order-suffering",
+          "tier": "subsidiary",
+          "statement": "A stable law-governed creation can entail natural suffering while permitting rare, purposive miracles without contradiction."
+        },
+        {
+          "bridgeId": "pro-subsidiary-moral-experience",
+          "tier": "subsidiary",
+          "statement": "Moral obligation, radical altruism, beauty, and transcendent experience add non-scientific but rational evidence to the cumulative case."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "position": "Scientific understanding provides no need for God.",
+      "bridges": [
+        {
+          "bridgeId": "con-motion-no-need",
+          "tier": "motion",
+          "statement": "Natural explanation removes the need to posit God and leaves belief without adequate explanatory support."
+        },
+        {
+          "bridgeId": "con-central-darwin-bottom-up",
+          "tier": "central",
+          "statement": "Darwinian evolution explains apparent biological design by a gradual bottom-up process from simplicity to complexity."
+        },
+        {
+          "bridgeId": "con-central-divine-complexity",
+          "tier": "central",
+          "statement": "A creator mind is explanatorily costly and does not solve origins or fine-tuning unless its own complexity is explained."
+        },
+        {
+          "bridgeId": "con-subsidiary-regularity-suffering",
+          "tier": "subsidiary",
+          "statement": "Natural suffering and selective miracles sit uneasily with a loving God committed to stable natural law."
+        },
+        {
+          "bridgeId": "con-subsidiary-naturalized-values",
+          "tier": "subsidiary",
+          "statement": "Morality, altruism, and beauty can be explained naturalistically without being demeaned or requiring divine grounding."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "routes-and-epistemic-scope",
+      "title": "personal routes and epistemic scope",
+      "weightPercent": 10
+    },
+    {
+      "sectionId": "evolution-and-design",
+      "title": "evolution and biological design",
+      "weightPercent": 19
+    },
+    {
+      "sectionId": "bottom-up-simplicity",
+      "title": "bottom-up simplicity and divine complexity",
+      "weightPercent": 11
+    },
+    {
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "title": "lawful intelligibility, cosmic origins, and fine-tuning",
+      "weightPercent": 18
+    },
+    {
+      "sectionId": "suffering-regularity-and-miracles",
+      "title": "suffering, natural regularity, and miracles",
+      "weightPercent": 17
+    },
+    {
+      "sectionId": "morality-and-altruism",
+      "title": "morality and radical altruism",
+      "weightPercent": 15
+    },
+    {
+      "sectionId": "beauty-experience-and-materialism",
+      "title": "beauty, experience, and material explanation",
+      "weightPercent": 10
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "m01",
+      "sectionId": "routes-and-epistemic-scope",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 249,
+        "endEvent": 258,
+        "startMs": 524080,
+        "endMs": 550080,
+        "excerpt": "and uh so i retained a belief in some kind of creator because i felt that that level of complexity needed a designer and then when i finally understood the full magnitude of the darwinian explanation then that dropped away and and i i decided that there was no need for that not only no need for it"
+      },
+      "quoteEligibleExactSpans": [
+        "that level of complexity needed a designer",
+        "when i finally understood the full magnitude of the darwinian explanation",
+        "no need for that"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley directly hands the question to Dawkins, whose first-person account continues throughout the span.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion-no-need",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Dawkins abandoned creator belief when Darwinian evolution explained biological complexity that had seemed to need a designer.",
+      "inventoryRationale": "This is Dawkins's principal personal and scientific route to disbelief and frames his later no-need argument."
+    },
+    {
+      "moveId": "m02",
+      "sectionId": "routes-and-epistemic-scope",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 339,
+        "endEvent": 348,
+        "startMs": 706959,
+        "endMs": 726560,
+        "excerpt": "and then i began to realize there were questions that science wasn't helping me with like why am i here anyway what happens after you die is there a god why is there something instead of nothing and i began to realize i was a bit impoverished in the ability to approach those things"
+      },
+      "quoteEligibleExactSpans": [
+        "questions that science wasn't helping me with",
+        "why is there something instead of nothing"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley explicitly hands the autobiographical question to Collins, and the first-person medical-school narrative is stable.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-motion-rational-grounds",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Collins found that science did not address existential questions such as purpose, death, God, and why anything exists.",
+      "inventoryRationale": "The move supplies the epistemic premise for Collins's claim that scientific understanding does not exhaust rational inquiry."
+    },
+    {
+      "moveId": "m03",
+      "sectionId": "routes-and-epistemic-scope",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 351,
+        "endEvent": 362,
+        "startMs": 728959,
+        "endMs": 754800,
+        "excerpt": "questions and quickly found myself in theological quarters and thought i would be able to shoot down all their arguments to my surprise and particularly influenced by the writings of c.s lewis i realized that my arguments were actually pretty superficial and ultimately over a two year period with a lot of kicking and screaming came to the conclusion that faith was more rational"
+      },
+      "quoteEligibleExactSpans": [
+        "thought i would be able to shoot down all their arguments"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person conversion account is clearly Collins's.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-motion-rational-grounds",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "After encountering theological arguments, especially C. S. Lewis's, Collins judged his objections superficial and eventually found faith more rational than atheism for him.",
+      "inventoryRationale": "This is evidential biography rather than mere background because Collins presents inquiry and comparative reasoning as premises for rational belief."
+    },
+    {
+      "moveId": "m04",
+      "sectionId": "evolution-and-design",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 540,
+        "endEvent": 548,
+        "startMs": 1123600,
+        "endMs": 1148000,
+        "excerpt": "but certainly uh evolution is incredibly powerful as an explanatory science to understand the amazing diversity of creatures that we see around us and that we know have lived in the past but i don't see how that in any way excludes the possibility that there was a plan it's just for me that steps further back"
+      },
+      "quoteEligibleExactSpans": [
+        "evolution is incredibly powerful as an explanatory science",
+        "i don't see how that in any way excludes the possibility"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley explicitly asks Collins to explain why evolution does not exclude God; this is Collins's uninterrupted answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-central-compatibility",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Evolution powerfully explains biological diversity, but that explanatory success does not itself exclude a divine plan; it moves the proposed plan to a deeper level.",
+      "inventoryRationale": "This is Collins's core compatibility claim and an explicit concession to evolutionary science."
+    },
+    {
+      "moveId": "m05",
+      "sectionId": "evolution-and-design",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 559,
+        "endEvent": 567,
+        "startMs": 1164799,
+        "endMs": 1190880,
+        "excerpt": "wouldn't evolution have been a very elegant way to do so and if god who's in my sense outside of space and time and therefore doesn't require a way to have been begun used this process and knew full well how it would happen because of this ability to be outside of time i think that's just an amazing concept"
+      },
+      "quoteEligibleExactSpans": [
+        "wouldn't evolution have been a very elegant way to do so",
+        "outside of time"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The same clearly attributed Collins turn continues.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-central-compatibility",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "If a timeless God intended conscious creatures, evolution could be an elegant means whose outcome God knew without intervening in each step.",
+      "inventoryRationale": "This independently states Collins's positive model of providence through evolution rather than merely denying incompatibility."
+    },
+    {
+      "moveId": "m06",
+      "sectionId": "evolution-and-design",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 603,
+        "endEvent": 616,
+        "startMs": 1263600,
+        "endMs": 1295360,
+        "excerpt": "i think i would not use such a a wasteful long drawn-out process i think i just go for it i mean why would you choose um why would you choose natural selection uh which has the possibly unfortunate property that it could have come about without you why would god have chosen a mechanism to unfold his design he chose the very mechanism which actually makes him superfluous"
+      },
+      "quoteEligibleExactSpans": [
+        "the very mechanism which actually makes him superfluous"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley asks Dawkins to respond to Collins while staying with evolution; the answer is clearly Dawkins's.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-central-darwin-bottom-up",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m05"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m05",
+          "component": "Challenges Collins's elegant-means proposal: an intentional creator would not need a wasteful process that can operate without the creator."
+        }
+      ],
+      "proposition": "Natural selection is an implausibly wasteful route for an intending creator and, because it could occur without God, makes God superfluous.",
+      "inventoryRationale": "This is a major direct objection to evolutionary creation, combining divine-method criticism with explanatory redundancy."
+    },
+    {
+      "moveId": "m07",
+      "sectionId": "evolution-and-design",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 639,
+        "endEvent": 649,
+        "startMs": 1341200,
+        "endMs": 1373200,
+        "excerpt": "we are human uh and and um the the the suffering which which comes from the fact that it's all about competition it's all about is evading starvation the ones that die are the ones who are starved to death or eaten by predators uh consumed by disease um it's it's it's not a benign process at all but that's not a very important argument i just was it"
+      },
+      "quoteEligibleExactSpans": [
+        "it's not a benign process at all"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The stable Dawkins turn continues until he explicitly minimizes this particular argument.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-regularity-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "From a human perspective, natural selection is non-benign: competition brings starvation, predation, disease, and suffering, though Dawkins calls this a less important argument.",
+      "inventoryRationale": "This introduces the biological suffering objection while preserving Dawkins's concession that he regards it as less important than his explanatory argument."
+    },
+    {
+      "moveId": "m08",
+      "sectionId": "evolution-and-design",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 697,
+        "endEvent": 705,
+        "startMs": 1472000,
+        "endMs": 1493520,
+        "excerpt": "one is that i don't think the fact that it took a long time should trouble us particularly from god's perspective uh yeah it's a long time for us but again in this view where god is pretty much outside of space and time it's a blink of an eye with a full knowledge of where the outcome would occur"
+      },
+      "quoteEligibleExactSpans": [
+        "the fact that it took a long time should trouble us",
+        "outside of space and time it's a blink of an eye"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "After the break Brierley expressly returns Dawkins's objection to Collins, who answers directly.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-central-compatibility",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m06"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m06",
+          "component": "Answers the long-duration objection by arguing that elapsed time is not a cost for a God outside time."
+        }
+      ],
+      "proposition": "Evolution's duration is not an objection from the perspective of a timeless God for whom the process is effectively instantaneous and its outcome known.",
+      "inventoryRationale": "This is Collins's distinct reply to the temporal-waste component of Dawkins's criticism."
+    },
+    {
+      "moveId": "m10",
+      "sectionId": "evolution-and-design",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 769,
+        "endEvent": 782,
+        "startMs": 1622400,
+        "endMs": 1656960,
+        "excerpt": "under really understand that the evolutionary process starts with with simplicity and builds up to complexity and elegance and beauty and uh strong illusion of design then to smuggle design in again at the beginning is to betray the entire enterprise which you've spent so long working out and building up the enterprise has been we now understand that you don't actually need a designer"
+      },
+      "quoteEligibleExactSpans": [
+        "you don't actually need a designer"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The dialogue switches clearly to Dawkins, who states his central Darwinian response at length.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-central-darwin-bottom-up",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m04",
+        "m05"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m04",
+          "component": "Argues that Darwinism does more than remain compatible with atheism: it removes the explanatory need for design."
+        },
+        {
+          "targetMoveId": "m05",
+          "component": "Rejects reintroducing intention behind a process whose achievement is explaining design from simplicity."
+        }
+      ],
+      "proposition": "Because evolution builds complexity and apparent design from simplicity, adding design at the beginning betrays the bottom-up explanation that made a designer unnecessary.",
+      "inventoryRationale": "This is Dawkins's fullest central argument for bottom-up explanation against theistic evolution."
+    },
+    {
+      "moveId": "m12",
+      "sectionId": "evolution-and-design",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 825,
+        "endEvent": 829,
+        "startMs": 1748799,
+        "endMs": 1759279,
+        "excerpt": "but you said that well it's happened just because of the laws of physics i want to take this back to that step where did those come from well"
+      },
+      "quoteEligibleExactSpans": [
+        "where did those come from"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins explicitly addresses Dawkins by name and distinguishes their agreement from his next question.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-central-cosmic-signposts",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m10"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m10",
+          "component": "Concedes completely that evolution can generate complexity, then redirects the dispute to the origin of the laws enabling it."
+        }
+      ],
+      "proposition": "Collins argues that explaining evolution through the laws of physics leaves unanswered where those laws came from.",
+      "inventoryRationale": "This is an important concession and the pivotal transition from biological design to cosmic explanation."
+    },
+    {
+      "moveId": "m13",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 864,
+        "startMs": 1817360,
+        "endMs": 1834240,
+        "excerpt": "when when you come on later to the um origin of the physical constants now that's getting on getting warm that getting close to a good argument i'm unlikely unlike the morality one um well"
+      },
+      "quoteEligibleExactSpans": [
+        "getting close to a good argument"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins responds immediately to Collins's question about the laws and explicitly contrasts physics with biology.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion-no-need",
+        "tier": "motion",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "m12"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m12",
+          "component": "Concedes that the origin of physical constants is where a case for God would be strongest, unlike biological or moral arguments."
+        }
+      ],
+      "proposition": "Dawkins says the origin of the physical constants comes close to being a good argument, unlike the moral argument.",
+      "inventoryRationale": "This is a major burden-relevant concession defining the strongest rational ground Dawkins recognizes."
+    },
+    {
+      "moveId": "m14",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 876,
+        "endEvent": 889,
+        "startMs": 1850720,
+        "endMs": 1883679,
+        "excerpt": "physicists agree most physicists agree that if you if you change any of those constants by even a very very small amount then we we we don't come into existence the universe doesn't come into existence they have to be like that in order for galaxies to form for stars to form for chemistry to form actually um and and then for um for the prerequisite for life to evolve uh needs that as well so"
+      },
+      "quoteEligibleExactSpans": [
+        "if you change any of those constants by even a very very small amount",
+        "we don't come into existence",
+        "they have to be like that"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins continues uninterrupted, identifying constants and their life-permitting sensitivity.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-motion-no-need",
+        "tier": "motion",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Dawkins says small changes to the physical constants would prevent galaxies, stars, chemistry, and the prerequisites for life.",
+      "inventoryRationale": "This records Dawkins's substantive concession to the fine-tuning datum rather than attributing the moderator's formulation to him."
+    },
+    {
+      "moveId": "m15",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 943,
+        "endEvent": 950,
+        "startMs": 1984399,
+        "endMs": 2001440,
+        "excerpt": "we need an explanation for the fine tuning and so we postulate a fine tuner um but you haven't explained anything i mean you simply invented you've magicked away the problem and this is"
+      },
+      "quoteEligibleExactSpans": [
+        "we postulate a fine tuner",
+        "you haven't explained anything"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "After Brierley frames the issue, Dawkins's answer begins at event 943 and states the inference in his own words.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-central-divine-complexity",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m12"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m12",
+          "component": "Answers the demand for an origin of laws by arguing that a fine-tuner merely relocates the unexplained complexity."
+        }
+      ],
+      "proposition": "Dawkins argues that postulating a fine-tuner merely invents away the fine-tuning problem rather than explaining it.",
+      "inventoryRationale": "This is Dawkins's principal regress and explanatory-cost objection to cosmic design."
+    },
+    {
+      "moveId": "m16",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1004,
+        "endEvent": 1015,
+        "startMs": 2110079,
+        "endMs": 2138079,
+        "excerpt": "alternative of course is to postulate that there are a infinite number of other universes that have different settings of those particular constants and we could only be in one where it happened to work so that's why we're observing it from here of course we don't expect there will ever be an experimental means of actually detecting the presence of those universes so that's a a bit of a leap of faith as well but i go a little beyond"
+      },
+      "quoteEligibleExactSpans": [
+        "a bit of a leap of faith as well"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley hands Dawkins's objection to Collins, who begins with an explicit agreement and alternative explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-central-cosmic-signposts",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "An infinite multiverse supplies an anthropic alternative to design, but Collins argues that its expected experimental inaccessibility also requires an evidential leap.",
+      "inventoryRationale": "This states Collins's comparison of the creator and multiverse hypotheses without treating fine-tuning as proof."
+    },
+    {
+      "moveId": "m17",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1027,
+        "endEvent": 1036,
+        "startMs": 2159520,
+        "endMs": 2181839,
+        "excerpt": "again i think of god as being outside space and time so all of our arguments about how you have to have a beginning and end don't apply anymore because if god is actually locked into space and time you've got an infinite regress problem but i don't think that's the case once you postulate a much broader sense of what the existence of god would be like"
+      },
+      "quoteEligibleExactSpans": [
+        "god as being outside space and time",
+        "you've got an infinite regress problem",
+        "a much broader sense of what the existence of god would be like"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins explicitly addresses Dawkins's regress argument in a continuous answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-central-cosmic-signposts",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m15"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m15",
+          "component": "Rejects the regress objection by defining the proposed creator as outside space-time and therefore not subject to temporal beginning conditions."
+        }
+      ],
+      "proposition": "A creator outside space and time need not have a temporal beginning, so Collins argues that the same infinite regress does not arise.",
+      "inventoryRationale": "This is Collins's direct answer to Dawkins's divine-complexity and regress objection."
+    },
+    {
+      "moveId": "m18",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1041,
+        "endEvent": 1047,
+        "startMs": 2187839,
+        "endMs": 2205359,
+        "excerpt": "there is anything at all that's entirely rational and defensible as a position to take it doesn't prove it of course and again i'll say as i did earlier i don't think we're going to discover a proof of god in this conversation but it's consistent and then richard as far as"
+      },
+      "quoteEligibleExactSpans": [
+        "entirely rational and defensible as a position",
+        "it doesn't prove it of course"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows a moderator clarification, but the selected span isolates Collins's own assessment and concession.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion-rational-grounds",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Using God to explain why anything exists is rationally defensible and consistent with the evidence, though it is not a proof.",
+      "inventoryRationale": "This precisely states Collins's motion-level epistemic conclusion and preserves his explicit limitation."
+    },
+    {
+      "moveId": "m19",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1106,
+        "endEvent": 1117,
+        "startMs": 2334640,
+        "endMs": 2362320,
+        "excerpt": "and and i don't i'm not a physicist enough to understand that but but i would be less convinced by the multiverse if it was just invented for the purpose of solving this problem of fine-tuning but my understanding is that that's not the case that it already was a prediction or is a prediction of other reputable aspects of physics i think especially the inflation theory i may bother that wrong"
+      },
+      "quoteEligibleExactSpans": [
+        "less convinced by the multiverse if it was just invented",
+        "a prediction of other reputable aspects of physics"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins explicitly qualifies his expertise while reporting the scientific basis he understands for multiverse proposals.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-motion-no-need",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m16"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m16",
+          "component": "Answers the charge that the multiverse is an ad hoc leap by saying it is independently motivated by inflationary physics."
+        }
+      ],
+      "proposition": "Dawkins tentatively understands the multiverse as a prediction of independently reputable inflationary physics rather than an invention solely for fine-tuning.",
+      "inventoryRationale": "This is Dawkins's main naturalistic alternative to cosmic design, with his uncertainty about physics preserved."
+    },
+    {
+      "moveId": "m20",
+      "sectionId": "cosmic-origins-and-fine-tuning",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1143,
+        "endEvent": 1152,
+        "startMs": 2411680,
+        "endMs": 2433200,
+        "excerpt": "and that makes it a uncomfortable place to place all one bet so if you've got these opportunities you have a creator god on the one hand and you have a theoretical prediction of multiverses that you will never be able to measure you know pick occam's razor here which of those is a more plausible explanation kind of depends on whether you have a prior"
+      },
+      "quoteEligibleExactSpans": [
+        "pick occam's razor here"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins clearly resumes after acknowledging inflationary theory and directly compares the hypotheses.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-central-cosmic-signposts",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m19"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m19",
+          "component": "Concedes inflationary motivation but argues that inaccessible universes remain experimentally untestable and therefore do not straightforwardly outrank a creator explanation."
+        }
+      ],
+      "proposition": "Because other universes may be impossible to measure, Collins argues that choosing between multiverse and creator explanations partly depends on one's prior probability for God.",
+      "inventoryRationale": "This preserves Collins's measured comparative conclusion and acknowledgement that priors affect the inference."
+    },
+    {
+      "moveId": "m21",
+      "sectionId": "routes-and-epistemic-scope",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1163,
+        "endEvent": 1181,
+        "startMs": 2453760,
+        "endMs": 2486400,
+        "excerpt": "part of it i i suppose um perhaps we both come at it from with a with with a bit of um emotional not emotionally the wrong word a bit a bit of presupposition um as a as somebody who's deeply steeped in evolution um i am kind of in love with the idea that it's possible to explain complex things in terms of simple things"
+      },
+      "quoteEligibleExactSpans": [
+        "perhaps we both come at it",
+        "a bit of presupposition",
+        "possible to explain complex things in terms of simple things"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins answers Brierley's question directly and explicitly describes his own prior orientation.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-central-divine-complexity",
+        "tier": "central",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Dawkins acknowledges that both speakers approach the issue with presuppositions and that his is shaped by attraction to explaining complex things through simpler ones.",
+      "inventoryRationale": "This is an important epistemic concession concerning priors, paired with his substantive simplicity principle."
+    },
+    {
+      "moveId": "m22",
+      "sectionId": "bottom-up-simplicity",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1191,
+        "endEvent": 1204,
+        "startMs": 2505119,
+        "endMs": 2540560,
+        "excerpt": "big complex things come into it can come into existence by an explicable understandable beautiful elegant process of gradual evolutionary change and that's such a beautiful idea that uh inventing a big complex thing which god must be if he exists throws a ruddy great spanner in the whole works of the beauty of that darwinian"
+      },
+      "quoteEligibleExactSpans": [
+        "a big complex thing which god must be",
+        "throws a ruddy great spanner"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted Dawkins turn continues and applies his simplicity orientation directly to God.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-central-divine-complexity",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Darwin's gradual explanation of complex things is elegant, whereas positing a necessarily complex God disrupts that explanatory structure.",
+      "inventoryRationale": "This is the compact positive form of Dawkins's complexity objection."
+    },
+    {
+      "moveId": "m23",
+      "sectionId": "bottom-up-simplicity",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1215,
+        "endEvent": 1229,
+        "startMs": 2560160,
+        "endMs": 2589440,
+        "excerpt": "god's got to be complex um i mean i i have come across the theologians who say the beautiful the beauty of god i think uh swinburne uh rich richard swinburne theologian says god is totally simple that's the beauty of it you don't need a complex god he is simple and that's ridiculous because if he is simple he couldn't invent the fundamental constants of the laws of physics and"
+      },
+      "quoteEligibleExactSpans": [
+        "god's got to be complex",
+        "god is totally simple",
+        "if he is simple he couldn't invent the fundamental constants"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Although a brief moderator prompt occurs later, the selected span is Dawkins's continuous criticism of divine simplicity.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-central-divine-complexity",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Theological claims that God is simple are implausible because a being capable of choosing the fundamental constants would require corresponding complexity.",
+      "inventoryRationale": "This independently targets the divine-simplicity response to Dawkins's explanatory-cost objection."
+    },
+    {
+      "moveId": "m24",
+      "sectionId": "bottom-up-simplicity",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1233,
+        "endEvent": 1240,
+        "startMs": 2592560,
+        "endMs": 2614960,
+        "excerpt": "ability we humans have to try to imagine what god is really like if god exists and i believe he does it's got to be so completely pathetic compared to the reality of that complexity and that um awesome capability as a physicist mathematician"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley explicitly asks Collins for his view, and Collins's answer is uninterrupted.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-central-cosmic-signposts",
+        "tier": "central",
+        "polarity": "qualifies"
+      },
+      "respondsToIds": [
+        "m22",
+        "m23"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m22",
+          "component": "Rejects treating divine reality as a familiar biological or engineered complex object subject to ordinary human modeling."
+        },
+        {
+          "targetMoveId": "m23",
+          "component": "Does not defend strict simplicity; instead concedes awesome capability while stressing the severe limits of human concepts of a transcendent mind."
+        }
+      ],
+      "proposition": "Collins argues that human attempts to imagine a transcendent divine mind would be radically inadequate relative to its capabilities.",
+      "inventoryRationale": "This is Collins's actual reply to divine complexity; it is preserved as a qualification rather than a complete explanatory solution."
+    },
+    {
+      "moveId": "m25",
+      "sectionId": "routes-and-epistemic-scope",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1261,
+        "endEvent": 1268,
+        "startMs": 2656560,
+        "endMs": 2675599,
+        "excerpt": "i don't think this is a trivial question i i think that whether or not there is a god is the biggest question you could ask biggest scientist actually it's a scientific question francis may disagree with that um i think of it as a scientific question"
+      },
+      "quoteEligibleExactSpans": [
+        "whether or not there is a god is the biggest question",
+        "it's a scientific question"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins clearly states his own concluding characterization before Collins is asked to disagree.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-motion-no-need",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Dawkins regards God's existence as the largest question one could ask and as a scientific question.",
+      "inventoryRationale": "This clarifies that Dawkins is not claiming logical meaninglessness or mere incompatibility; he treats the hypothesis as consequential and assessable."
+    },
+    {
+      "moveId": "m26",
+      "sectionId": "routes-and-epistemic-scope",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1274,
+        "endEvent": 1284,
+        "startMs": 2684640,
+        "endMs": 2711119,
+        "excerpt": "i think if there is something outside of nature and if god exists god is definitely outside of nature then the tools that we use to investigate nature which is science and it's really good at that may not be adequate for this so in that regard i don't think it is a scientific question i think you can explore possible bits of evidence but i don't think you can prove yes or no to the god question solely with the tools"
+      },
+      "quoteEligibleExactSpans": [
+        "if god exists god is definitely outside of nature",
+        "the tools that we use to investigate nature"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley asks Collins why he disagrees, and this is Collins's complete answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion-rational-grounds",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m25"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m25",
+          "component": "Distinguishes evidence bearing on God from proof by science, arguing that tools designed for nature may be inadequate for something outside nature."
+        }
+      ],
+      "proposition": "If God exists outside nature, science may provide pieces of evidence but cannot by itself prove or disprove God's existence.",
+      "inventoryRationale": "This states Collins's central epistemic boundary and prevents his case from being misrepresented as a scientific proof."
+    },
+    {
+      "moveId": "m27",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1349,
+        "endEvent": 1360,
+        "startMs": 2840079,
+        "endMs": 2867359,
+        "excerpt": "uh i would argue that the universe has exactly the properties you would expect if it was put there by god who desired creatures like us to exist who could be morally responsible who can love and care for each other who can appreciate beauty and who will know the difference between good and evil and will ultimately seek a relationship with god the universe has those properties"
+      },
+      "quoteEligibleExactSpans": [
+        "the universe has exactly the properties you would expect",
+        "who could be morally responsible",
+        "will ultimately seek a relationship with god"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins explicitly offers an alternative to Dawkins's quoted description of the universe.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion-rational-grounds",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "The universe is also interpretable as one intended to produce morally responsible, loving, beauty-appreciating creatures capable of seeking God.",
+      "inventoryRationale": "This states Collins's broad theistic interpretation before the suffering objection is raised."
+    },
+    {
+      "moveId": "m28",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1362,
+        "endEvent": 1364,
+        "startMs": 2867359,
+        "endMs": 2876880,
+        "excerpt": "then then what about all the horrible horrible parasites and predators and copper 19 and hurricanes"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins interrupts with a direct counterexample to Collins's characterization.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-regularity-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m27"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m27",
+          "component": "Counters the purposive, morally hospitable interpretation with parasites, predators, disease, hurricanes, and earthquakes."
+        }
+      ],
+      "proposition": "Dawkins challenges theistic interpretation with parasites, predators, COVID-19, and hurricanes.",
+      "inventoryRationale": "This is the concise statement of the natural-suffering challenge."
+    },
+    {
+      "moveId": "m29",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1373,
+        "endEvent": 1378,
+        "startMs": 2891760,
+        "endMs": 2907280,
+        "excerpt": "it to be if you're going to set natural laws in place including evolution to ultimately results in something amazing and beautiful creation it's going to also do other things along the way and god can't step in every whip"
+      },
+      "quoteEligibleExactSpans": [
+        "if you're going to set natural laws in place including evolution",
+        "it's going to also do other things along the way"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins directly answers Dawkins's examples with a natural-law account.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-order-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m28"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m28",
+          "component": "Argues that the same stable laws producing valuable creation necessarily have harmful side effects and cannot be selectively interrupted at every instance."
+        }
+      ],
+      "proposition": "A lawful evolutionary creation can produce both beautiful and harmful outcomes, so God cannot continually intervene to prevent every harmful byproduct.",
+      "inventoryRationale": "This is Collins's principal law-based response to natural suffering."
+    },
+    {
+      "moveId": "m30",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1381,
+        "endEvent": 1388,
+        "startMs": 2908880,
+        "endMs": 2925280,
+        "excerpt": "can't have it both ways you you you have it both ways when you believe in miracles i mean you you cannot have a god who does miracles on the one hand and yet who has this sort of let's let the laws of physics play themselves out without interference on the other you're having it both ways when you"
+      },
+      "quoteEligibleExactSpans": [
+        "a god who does miracles",
+        "let the laws of physics play themselves out without interference"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins directly addresses Collins by name and challenges the consistency of the preceding answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-regularity-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m29"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m29",
+          "component": "Argues that an appeal to noninterference and stable laws conflicts with simultaneous belief that God sometimes suspends those laws."
+        }
+      ],
+      "proposition": "Belief in miracles is inconsistent with defending suffering by saying God lets physical laws operate without interference.",
+      "inventoryRationale": "This is Dawkins's central internal-consistency objection to Collins's theodicy."
+    },
+    {
+      "moveId": "m31",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1390,
+        "endEvent": 1396,
+        "startMs": 2925280,
+        "endMs": 2945200,
+        "excerpt": "it both ways if god was the author of natural laws and in every instance except extreme exceptions where god has a message for people that he cares about then god chooses to interfere with his own natural laws and something like the resurrection happens i don't find that"
+      },
+      "quoteEligibleExactSpans": [
+        "except extreme exceptions where god has a message",
+        "god chooses to interfere with his own natural laws"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins immediately answers the miracle-consistency objection in his own uninterrupted turn.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-order-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m30"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m30",
+          "component": "Distinguishes ordinary commitment to stable law from rare purposive exceptions intended to convey a divine message."
+        }
+      ],
+      "proposition": "Stable natural law and miracles are consistent if divine intervention is an extreme, message-bearing exception such as the resurrection.",
+      "inventoryRationale": "This is Collins's explicit reconciliation of regularity and miracles."
+    },
+    {
+      "moveId": "m32",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1398,
+        "endEvent": 1409,
+        "startMs": 2945200,
+        "endMs": 2968559,
+        "excerpt": "it's because betraying his own principles then if his principle is i'm going to i'm going to give them free will i'm going to i'm going to let it all happen i'm not going to interfere when there's a hurricane i'm not going to save this child's life then on the other hand you're saying that sometimes he does step in so isn't that inconsistent those great"
+      },
+      "quoteEligibleExactSpans": [
+        "betraying his own principles",
+        "i'm not going to save this child's life",
+        "sometimes he does step in"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins immediately presses the selective-intervention implication of Collins's answer.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-regularity-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m31"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m31",
+          "component": "Argues that rare message-bearing intervention still leaves an unexplained and morally troubling selectivity between miracles and preventable suffering."
+        }
+      ],
+      "proposition": "Selective miracles appear to betray God's stated commitment to noninterference when God declines to prevent disasters or save suffering children yet intervenes elsewhere.",
+      "inventoryRationale": "This develops the miracle objection from logical consistency into morally selective intervention."
+    },
+    {
+      "moveId": "m33",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1410,
+        "endEvent": 1417,
+        "startMs": 2966160,
+        "endMs": 2987040,
+        "excerpt": "ganglions of history where something really critical needs to be conveyed to god's people yes as the author of natural laws i believe god is entirely able to decide to briefly suspend them but if he was doing that every time there was a hurricane think of the chaos around us how would we ever possibly"
+      },
+      "quoteEligibleExactSpans": [
+        "entirely able to decide to briefly suspend them"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins answers Dawkins directly before the moderator ends the segment.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-order-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m32"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m32",
+          "component": "Limits intervention to pivotal revelatory moments and argues that routine intervention would destroy the predictability required for life in the world."
+        }
+      ],
+      "proposition": "An author of natural law may suspend it at pivotal revelatory moments, whereas intervention at every hurricane would create unmanageable chaos.",
+      "inventoryRationale": "This is Collins's developed rare-miracle answer, including the practical value of regularity."
+    },
+    {
+      "moveId": "m34",
+      "sectionId": "suffering-regularity-and-miracles",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1812,
+        "endEvent": 1817,
+        "startMs": 3843039,
+        "endMs": 3860720,
+        "excerpt": "you don't intervene with earthquakes you don't do any other miracles no no miracles then suddenly uh during during a 30-year period um from from from naught a.d to 38 a.d a whole spate of miracles happen"
+      },
+      "quoteEligibleExactSpans": [
+        "you don't intervene with earthquakes",
+        "a whole spate of miracles happen"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "After Collins affirms Gospel miracles, Dawkins clearly resumes the direct objection.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-regularity-suffering",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m31",
+        "m33"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m31",
+          "component": "Challenges the evidential pattern in which ordinary nonintervention is followed by a concentrated period of reported miracles."
+        },
+        {
+          "targetMoveId": "m33",
+          "component": "Denies that labeling one era pivotal resolves the inconsistency between nonintervention in disasters and numerous interventions around Jesus."
+        }
+      ],
+      "proposition": "A concentrated cluster of miracles around Jesus does not fit convincingly with God's otherwise consistent refusal to intervene in natural disasters.",
+      "inventoryRationale": "This is Dawkins's later, historically focused restatement of the regularity objection."
+    },
+    {
+      "moveId": "m35",
+      "sectionId": "morality-and-altruism",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1915,
+        "endEvent": 1928,
+        "startMs": 4065599,
+        "endMs": 4099600,
+        "excerpt": "you're absolutely right that they don't explain things like caring for the elderly uh donating blood um donating to charity all that kind of thing this is something different and francis tries to make the case that um this is a uniquely or almost uniquely human characteristic which demands a divine explanation this moral sense that human humans have and the reason i find that unconvincing is let me give an analogy"
+      },
+      "quoteEligibleExactSpans": [
+        "they don't explain things like caring for the elderly",
+        "demands a divine explanation"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley hands the topic to Dawkins, who accurately sets out Collins's earlier argument before beginning his own analogy.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-naturalized-values",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Dawkins concedes that standard kinship and reciprocity accounts do not directly explain several modern altruistic acts, but rejects the inference that such conduct demands a divine explanation.",
+      "inventoryRationale": "This records the target and Dawkins's burden framing, including his concession about the limits of simple kin and reciprocity explanations."
+    },
+    {
+      "moveId": "m36",
+      "sectionId": "morality-and-altruism",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1964,
+        "endEvent": 1974,
+        "startMs": 4167239,
+        "endMs": 4190080,
+        "excerpt": "reciprocation and kin selection would have built into us built into our brains a rule of thumb not try to work out the coefficient of relationship to the person and then decide whether to be altruistic just be nice to everyone you know be nice to everyone you meet be nice to everyone in the village be nice to everyone"
+      },
+      "quoteEligibleExactSpans": [
+        "be nice to everyone you meet",
+        "reciprocation and kin selection"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins's uninterrupted analogy develops a distinct evolutionary inference.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-naturalized-values",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Reciprocation and kin selection could install a generalized psychological rule to be altruistic toward everyone rather than calculating genetic relationship.",
+      "inventoryRationale": "This is Dawkins's substantive evolutionary explanation of apparently disinterested altruism."
+    },
+    {
+      "moveId": "m37",
+      "sectionId": "morality-and-altruism",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2003,
+        "endEvent": 2009,
+        "startMs": 4245040,
+        "endMs": 4266320,
+        "excerpt": "richard i have i've heard you use the analogy to sex before and i kind of see where you're going but it bothers me a bit uh that one would basically discount uh the most noble kinds of acts of human radical altruism as a misfiring of some evolutionary mechanism that's gone awry"
+      },
+      "quoteEligibleExactSpans": [
+        "radical altruism as a misfiring"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Collins addresses Dawkins by name and applies the argument to medical workers during COVID.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-moral-experience",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m36"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m36",
+          "component": "Argues that describing sacrificial care as a misfiring fails to capture the apparent moral significance of radical altruism."
+        }
+      ],
+      "proposition": "Collins objects that describing radical altruism as a misfiring evolutionary mechanism discounts conduct humans recognize as especially noble.",
+      "inventoryRationale": "This is Collins's direct evaluative objection to Dawkins's rule-of-thumb explanation."
+    },
+    {
+      "moveId": "m38",
+      "sectionId": "morality-and-altruism",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2023,
+        "endEvent": 2029,
+        "startMs": 4293440,
+        "endMs": 4309280,
+        "excerpt": "no i'm not dismissing you see that's right i'm not dismissing it's it's i agree it's noble it's terribly noble i mean i i think it's i think it's wonderful and and i hugely admire it but i'm not dismissing it i'm explaining it well"
+      },
+      "quoteEligibleExactSpans": [
+        "i agree it's noble",
+        "i hugely admire it",
+        "i'm explaining it"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins immediately corrects Collins's characterization in a clear direct reply.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-naturalized-values",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m37"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m37",
+          "component": "Distinguishes explaining altruism's natural origin from dismissing its nobility or value."
+        }
+      ],
+      "proposition": "A natural evolutionary explanation of altruism neither dismisses nor devalues it; Dawkins can admire the conduct while explaining its origin.",
+      "inventoryRationale": "This is a crucial direct rebuttal preventing explanation from being conflated with moral debunking."
+    },
+    {
+      "moveId": "m40",
+      "sectionId": "morality-and-altruism",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2066,
+        "endEvent": 2072,
+        "startMs": 4395280,
+        "endMs": 4413920,
+        "excerpt": "isn't it enough to say good is what good people do and evil is what bad people do you do you you don't need to invoke kind of spirit of god or spirit of evil it's not something hanging out there in the air it's just"
+      },
+      "quoteEligibleExactSpans": [
+        "good is what good people do",
+        "you don't need to invoke kind of spirit of god"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins answers Collins's question about the significance of good and evil directly.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-naturalized-values",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Good and evil can describe what good and bad people do without positing a divine or independently existing moral spirit.",
+      "inventoryRationale": "This is Dawkins's concise naturalistic response to Collins's objective-morality inference."
+    },
+    {
+      "moveId": "m41",
+      "sectionId": "beauty-experience-and-materialism",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2082,
+        "endEvent": 2093,
+        "startMs": 4432400,
+        "endMs": 4459440,
+        "excerpt": "that's why i raise it i mean peahens have a sense of beauty which is why peacocks look the way they do um it's it's it's it's not uh i mean it's it's it's wonderful and and it requires explanation but it has an explanation and in the same way as beauty is something which we can understand uh um the same way pee hens have a sense of beauty we can too"
+      },
+      "quoteEligibleExactSpans": [
+        "peahens have a sense of beauty",
+        "it requires explanation but it has an explanation"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins continues uninterrupted, using beauty as a naturalistic analogy for moral perception.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-naturalized-values",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Beauty is wonderful and explanation-worthy, but analogous aesthetic preferences in peahens show that a sense of beauty can receive a natural explanation.",
+      "inventoryRationale": "This introduces Dawkins's naturalized account of beauty and connects it to his treatment of moral experience."
+    },
+    {
+      "moveId": "m42",
+      "sectionId": "morality-and-altruism",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2207,
+        "endEvent": 2217,
+        "startMs": 4688640,
+        "endMs": 4718560,
+        "excerpt": "we're supposed to avoid the evil i just have a big problem seeing that as a purely evolutionary consequence that has no deeper meaning and this is where i do get to the point of morality and richard i do see that if i was looking for a signpost of something that said that god might be interested in me and god might be the ultimate example of holiness here i find it and i'm puzzled by that"
+      },
+      "quoteEligibleExactSpans": [],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley expressly asks Collins whether morality is culturally delivered, and Collins answers with a cross-cultural claim.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-moral-experience",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m36",
+        "m40"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m36",
+          "component": "Accepts variation in moral content but argues that evolutionary description does not fully explain the universal felt obligation to pursue good."
+        },
+        {
+          "targetMoveId": "m40",
+          "component": "Rejects reducing good and evil to local descriptions because the underlying normative distinction recurs across cultures."
+        }
+      ],
+      "proposition": "The felt obligation to avoid evil resists a purely evolutionary account for Collins and serves as a possible signpost of a holy God.",
+      "inventoryRationale": "This is Collins's mature formulation of the moral signpost argument."
+    },
+    {
+      "moveId": "m43",
+      "sectionId": "beauty-experience-and-materialism",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2354,
+        "endEvent": 2363,
+        "startMs": 4999760,
+        "endMs": 5023120,
+        "excerpt": "beauty uh which we touched on and which i also think can't be dismissed as we're just pee hens we see beauty and equations we see beauty in music and in a pink in this in the in the western sky at sunset and it doesn't seem to have a whole lot of evolutionary benefit to us and yet it matters and it also lifts us in a"
+      },
+      "quoteEligibleExactSpans": [
+        "beauty in music",
+        "doesn't seem to have a whole lot of evolutionary benefit"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley explicitly hands the closing moral question to Collins, whose first-person reply continues through the truth, goodness, and beauty discussion.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-moral-experience",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m41"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m41",
+          "component": "Challenges the peahen analogy by emphasizing forms of mathematical, musical, and natural beauty whose significance lacks an obvious survival benefit."
+        }
+      ],
+      "proposition": "Mathematical, musical, and natural beauty lacks an obvious evolutionary benefit yet matters deeply, which Collins regards as resistant to a merely peahen-like account.",
+      "inventoryRationale": "This late reply supplies Collins's source-required positive beauty argument, which the initial inventory omitted despite creating a beauty section."
+    },
+    {
+      "moveId": "m44",
+      "sectionId": "beauty-experience-and-materialism",
+      "side": "pro",
+      "speaker": "Francis Collins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2363,
+        "endEvent": 2373,
+        "startMs": 5018320,
+        "endMs": 5046239,
+        "excerpt": "matters and it also lifts us in a certain way into a plane of something other than the sort of pure dailiness of our experience some glimpse of something what lewis calls joy where you have just a sense that there's something more if i could just grasp it and then as soon as you try it's gone and that feels to me like a real significant experience that should not be dismissed as a neurotransmitter"
+      },
+      "quoteEligibleExactSpans": [
+        "some glimpse of something",
+        "something more if i could just grasp it",
+        "should not be dismissed as a neurotransmitter"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted Collins turn explicitly invokes C. S. Lewis's joy and ends immediately before Dawkins objects to the word 'dismiss.'",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-moral-experience",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m41"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m41",
+          "component": "Argues that experiences of beauty and Lewisian joy present themselves as glimpses of transcendence rather than exhaustively as adaptive preference."
+        }
+      ],
+      "proposition": "Experiences of beauty can lift people beyond ordinary life into Lewisian joy—a fleeting sense of something more that Collins resists reducing to neurotransmission.",
+      "inventoryRationale": "This is a distinct phenomenological signpost rather than a repetition of the preceding claim about beauty's uncertain evolutionary benefit."
+    },
+    {
+      "moveId": "m45",
+      "sectionId": "beauty-experience-and-materialism",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2375,
+        "endEvent": 2387,
+        "startMs": 5046239,
+        "endMs": 5078560,
+        "excerpt": "i don't dismiss it it's i i i exalt in it i mean it's a it it's wonderful um it's it's beautiful and and the fact that you can give it an explanation is not to dismiss it or demean it or or reduce it in some way um yes i mean a sense of beauty the sense of the the enjoyment of beethoven it it is actually firing of synapses in your brain but that's not to demean it it's still wonderful"
+      },
+      "quoteEligibleExactSpans": [
+        "the fact that you can give it an explanation is not to dismiss it",
+        "firing of synapses in your brain"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins directly objects to Collins's repeated word 'dismiss,' then gives the Beethoven and synapse example in one uninterrupted turn.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-naturalized-values",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "m43",
+        "m44"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "m43",
+          "component": "Maintains that a natural explanation of beauty is compatible with fully valuing and exalting in it."
+        },
+        {
+          "targetMoveId": "m44",
+          "component": "Offers neural realization as an explanation of aesthetic experience without treating that explanation as reduction or dismissal."
+        }
+      ],
+      "proposition": "Explaining beauty through neural activity neither dismisses nor demeans it; Dawkins can regard Beethoven and aesthetic experience as wonderful while explaining them naturally.",
+      "inventoryRationale": "This is Dawkins's direct closing answer to both omitted Collins beauty-and-transcendence moves."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {
+      "totalAbsoluteDifference": 3,
+      "sectionAbsoluteDifference": 2
+    },
+    "totals": {
+      "pro": 20,
+      "con": 22,
+      "absoluteDifference": 2
+    },
+    "sections": [
+      {
+        "sectionId": "routes-and-epistemic-scope",
+        "pro": 3,
+        "con": 3,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "evolution-and-design",
+        "pro": 4,
+        "con": 3,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "bottom-up-simplicity",
+        "pro": 1,
+        "con": 2,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "cosmic-origins-and-fine-tuning",
+        "pro": 4,
+        "con": 4,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "suffering-regularity-and-miracles",
+        "pro": 4,
+        "con": 4,
+        "absoluteDifference": 0
+      },
+      {
+        "sectionId": "morality-and-altruism",
+        "pro": 2,
+        "con": 4,
+        "absoluteDifference": 2
+      },
+      {
+        "sectionId": "beauty-experience-and-materialism",
+        "pro": 2,
+        "con": 2,
+        "absoluteDifference": 0
+      }
+    ],
+    "rationaleRequired": true,
+    "rationale": "The two-card difference is below the total threshold. Morality and altruism has four Dawkins moves and two Collins moves because Dawkins distinctly concedes the apparent gap, supplies an ancestral mechanism, answers the dismissal charge, and naturalizes moral description; Collins supplies the two nonduplicative replies the source develops. No move was added or removed to manufacture symmetry."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {
+        "sectionId": "routes-and-epistemic-scope",
+        "pro": 3,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      },
+      {
+        "sectionId": "evolution-and-design",
+        "pro": 4,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Collins's four cards separately state compatibility, evolution as an elegant means, the timeless-duration reply, and the transition from evolved complexity to the origin of physical laws; Dawkins supplies three distinct objections."
+      },
+      {
+        "sectionId": "bottom-up-simplicity",
+        "pro": 1,
+        "con": 2,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      },
+      {
+        "sectionId": "cosmic-origins-and-fine-tuning",
+        "pro": 4,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Four independently assessable moves per side preserve the sensitivity concession, fine-tuner objection, multiverse comparison, regress reply, prior-probability issue, and no-proof qualification without merging distinct inferences."
+      },
+      {
+        "sectionId": "suffering-regularity-and-miracles",
+        "pro": 4,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Four moves per side are required to preserve the distinct suffering, lawfulness, selective-intervention, revelatory-exception, disaster, and historical-miracle exchanges."
+      },
+      {
+        "sectionId": "morality-and-altruism",
+        "pro": 2,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "Dawkins's four cards separately state the explanatory-gap concession, ancestral rule mechanism, explanation-versus-dismissal reply, and naturalistic account of moral terms; Collins supplies two distinct live replies."
+      },
+      {
+        "sectionId": "beauty-experience-and-materialism",
+        "pro": 2,
+        "con": 2,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "The section contains no more than three selected moves per side."
+      }
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "allSpansSourceExact": true,
+    "controllerRecomputedAllCounts": true,
+    "sourceSpanTighteningChangedSubstance": false,
+    "deterministicEvidenceRendering": {
+      "minimumTokens": 12,
+      "maximumTokens": 90,
+      "maximumCharacters": 450,
+      "method": "two fresh score-blind source audits plus deterministic controller replay against the locked event source",
+      "records": [
+        {
+          "moveId": "m01",
+          "startEvent": 249,
+          "endEvent": 258,
+          "characterCount": 298,
+          "tokenCount": 58
+        },
+        {
+          "moveId": "m02",
+          "startEvent": 339,
+          "endEvent": 348,
+          "characterCount": 282,
+          "tokenCount": 54
+        },
+        {
+          "moveId": "m03",
+          "startEvent": 351,
+          "endEvent": 362,
+          "characterCount": 380,
+          "tokenCount": 64
+        },
+        {
+          "moveId": "m04",
+          "startEvent": 540,
+          "endEvent": 548,
+          "characterCount": 310,
+          "tokenCount": 57
+        },
+        {
+          "moveId": "m05",
+          "startEvent": 559,
+          "endEvent": 567,
+          "characterCount": 308,
+          "tokenCount": 60
+        },
+        {
+          "moveId": "m06",
+          "startEvent": 603,
+          "endEvent": 616,
+          "characterCount": 372,
+          "tokenCount": 69
+        },
+        {
+          "moveId": "m07",
+          "startEvent": 639,
+          "endEvent": 649,
+          "characterCount": 351,
+          "tokenCount": 69
+        },
+        {
+          "moveId": "m08",
+          "startEvent": 697,
+          "endEvent": 705,
+          "characterCount": 297,
+          "tokenCount": 60
+        },
+        {
+          "moveId": "m10",
+          "startEvent": 769,
+          "endEvent": 782,
+          "characterCount": 387,
+          "tokenCount": 65
+        },
+        {
+          "moveId": "m12",
+          "startEvent": 825,
+          "endEvent": 829,
+          "characterCount": 141,
+          "tokenCount": 29
+        },
+        {
+          "moveId": "m13",
+          "startEvent": 860,
+          "endEvent": 864,
+          "characterCount": 188,
+          "tokenCount": 35
+        },
+        {
+          "moveId": "m14",
+          "startEvent": 876,
+          "endEvent": 889,
+          "characterCount": 394,
+          "tokenCount": 76
+        },
+        {
+          "moveId": "m15",
+          "startEvent": 943,
+          "endEvent": 950,
+          "characterCount": 185,
+          "tokenCount": 34
+        },
+        {
+          "moveId": "m16",
+          "startEvent": 1004,
+          "endEvent": 1015,
+          "characterCount": 436,
+          "tokenCount": 81
+        },
+        {
+          "moveId": "m17",
+          "startEvent": 1027,
+          "endEvent": 1036,
+          "characterCount": 353,
+          "tokenCount": 68
+        },
+        {
+          "moveId": "m18",
+          "startEvent": 1041,
+          "endEvent": 1047,
+          "characterCount": 273,
+          "tokenCount": 52
+        },
+        {
+          "moveId": "m19",
+          "startEvent": 1106,
+          "endEvent": 1117,
+          "characterCount": 395,
+          "tokenCount": 72
+        },
+        {
+          "moveId": "m20",
+          "startEvent": 1143,
+          "endEvent": 1152,
+          "characterCount": 352,
+          "tokenCount": 66
+        },
+        {
+          "moveId": "m21",
+          "startEvent": 1163,
+          "endEvent": 1181,
+          "characterCount": 320,
+          "tokenCount": 66
+        },
+        {
+          "moveId": "m22",
+          "startEvent": 1191,
+          "endEvent": 1204,
+          "characterCount": 326,
+          "tokenCount": 56
+        },
+        {
+          "moveId": "m23",
+          "startEvent": 1215,
+          "endEvent": 1229,
+          "characterCount": 379,
+          "tokenCount": 71
+        },
+        {
+          "moveId": "m24",
+          "startEvent": 1233,
+          "endEvent": 1240,
+          "characterCount": 241,
+          "tokenCount": 44
+        },
+        {
+          "moveId": "m25",
+          "startEvent": 1261,
+          "endEvent": 1268,
+          "characterCount": 250,
+          "tokenCount": 47
+        },
+        {
+          "moveId": "m26",
+          "startEvent": 1274,
+          "endEvent": 1284,
+          "characterCount": 419,
+          "tokenCount": 82
+        },
+        {
+          "moveId": "m27",
+          "startEvent": 1349,
+          "endEvent": 1360,
+          "characterCount": 378,
+          "tokenCount": 68
+        },
+        {
+          "moveId": "m28",
+          "startEvent": 1362,
+          "endEvent": 1364,
+          "characterCount": 99,
+          "tokenCount": 16
+        },
+        {
+          "moveId": "m29",
+          "startEvent": 1373,
+          "endEvent": 1378,
+          "characterCount": 221,
+          "tokenCount": 40
+        },
+        {
+          "moveId": "m30",
+          "startEvent": 1381,
+          "endEvent": 1388,
+          "characterCount": 298,
+          "tokenCount": 60
+        },
+        {
+          "moveId": "m31",
+          "startEvent": 1390,
+          "endEvent": 1396,
+          "characterCount": 271,
+          "tokenCount": 49
+        },
+        {
+          "moveId": "m32",
+          "startEvent": 1398,
+          "endEvent": 1409,
+          "characterCount": 355,
+          "tokenCount": 67
+        },
+        {
+          "moveId": "m33",
+          "startEvent": 1410,
+          "endEvent": 1417,
+          "characterCount": 302,
+          "tokenCount": 56
+        },
+        {
+          "moveId": "m34",
+          "startEvent": 1812,
+          "endEvent": 1817,
+          "characterCount": 203,
+          "tokenCount": 37
+        },
+        {
+          "moveId": "m35",
+          "startEvent": 1915,
+          "endEvent": 1928,
+          "characterCount": 417,
+          "tokenCount": 72
+        },
+        {
+          "moveId": "m36",
+          "startEvent": 1964,
+          "endEvent": 1974,
+          "characterCount": 319,
+          "tokenCount": 60
+        },
+        {
+          "moveId": "m37",
+          "startEvent": 2003,
+          "endEvent": 2009,
+          "characterCount": 278,
+          "tokenCount": 53
+        },
+        {
+          "moveId": "m38",
+          "startEvent": 2023,
+          "endEvent": 2029,
+          "characterCount": 231,
+          "tokenCount": 45
+        },
+        {
+          "moveId": "m40",
+          "startEvent": 2066,
+          "endEvent": 2072,
+          "characterCount": 215,
+          "tokenCount": 46
+        },
+        {
+          "moveId": "m41",
+          "startEvent": 2082,
+          "endEvent": 2093,
+          "characterCount": 351,
+          "tokenCount": 73
+        },
+        {
+          "moveId": "m42",
+          "startEvent": 2207,
+          "endEvent": 2217,
+          "characterCount": 391,
+          "tokenCount": 78
+        },
+        {
+          "moveId": "m43",
+          "startEvent": 2354,
+          "endEvent": 2363,
+          "characterCount": 318,
+          "tokenCount": 68
+        },
+        {
+          "moveId": "m44",
+          "startEvent": 2363,
+          "endEvent": 2373,
+          "characterCount": 400,
+          "tokenCount": 76
+        },
+        {
+          "moveId": "m45",
+          "startEvent": 2375,
+          "endEvent": 2387,
+          "characterCount": 387,
+          "tokenCount": 83
+        }
+      ]
+    }
+  },
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "recovery": {
+    "preservedInvalidInventory": "docs/assessment-production/standalone-debates-v1/debate-223/inventory/preserved-invalid-inventory-1.json",
+    "firstIndependentAudit": "source-span-audit.json",
+    "removedDuplicateOrOverbroadMoveIds": [
+      "m09",
+      "m11",
+      "m39"
+    ],
+    "addedSourceRequiredMoveIds": [
+      "m43",
+      "m44",
+      "m45"
+    ],
+    "scoresExposed": false,
+    "publicationExposed": false,
+    "secondIndependentAudit": "inventory/source-span-sufficiency-audit-2.json",
+    "secondAuditRepairsApplied": [
+      "m03",
+      "m12",
+      "m20",
+      "m24",
+      "m28",
+      "m29",
+      "m30",
+      "m31",
+      "m33",
+      "m34",
+      "m41",
+      "m43",
+      "m45"
+    ],
+    "controllerTightening": {
+      "moveId": "m33",
+      "reason": "The auditor's proposed terminal caption event combined Collins's last words with Dawkins's opening fragment; the controller ended at event 1417 and narrowed the proposition to the complete speaker-isolated chaos inference."
+    }
+  }
+}

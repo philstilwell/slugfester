@@ -10054,5 +10054,57 @@ export const debateSummaries = [
         "title": "Science, agency, worldview comparison, and closing positions"
       }
     ]
+  },
+  {
+    "id": "collins-dawkins-science-belief-god-2022",
+    "number": "223",
+    "title": "Science and Belief in God: Francis Collins vs. Richard Dawkins (2022)",
+    "label": "Scientific understanding and belief in God",
+    "date": "2026-09-01",
+    "duration": "1 hr 27 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=SQ3EU58AzFs",
+    "motion": "Does scientific understanding leave rational grounds for belief in God?",
+    "summary": "Collins preserves rational space through compatibility and cumulative signposts, but Dawkins wins by stronger natural explanations and sharper challenges concerning redundancy, suffering, and selective miracles.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Scientific understanding leaves rational grounds for belief in God",
+        "speaker": "Francis Collins",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific understanding provides no need for God",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "personal routes and epistemic scope"
+      },
+      {
+        "title": "evolution and biological design"
+      },
+      {
+        "title": "bottom-up simplicity and divine complexity"
+      },
+      {
+        "title": "lawful intelligibility, cosmic origins, and fine-tuning"
+      },
+      {
+        "title": "suffering, natural regularity, and miracles"
+      },
+      {
+        "title": "morality and radical altruism"
+      },
+      {
+        "title": "beauty, experience, and material explanation"
+      }
+    ]
   }
 ];

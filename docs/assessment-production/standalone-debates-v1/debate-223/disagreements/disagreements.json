@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "223",
+  "debateId": "collins-dawkins-science-belief-god-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-divine-simplicity-implausible:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "con-divine-simplicity-implausible",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "Calling divine simplicity ridiculous bypasses its metaphysical meaning and treats it as ordinary functional simplicity."
+        },
+        "option-b": {
+          "value": 59,
+          "rationale": "Dismissing simplicity as ridiculous bypasses possible distinctions between metaphysical simplicity and incapacity."
+        }
+      }
+    },
+    {
+      "disputeId": "con-god-as-scientific-question:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "con-god-as-scientific-question",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "Biggest question is clear rhetoric, but scientific question needs criteria concerning testability and scope."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "The claim is plainly repeated, although scientific question remains undefined and potentially broad."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-joy-suggests-transcendence:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-joy-suggests-transcendence",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "Collins says significant rather than proof, but should not be dismissed as neurotransmitter implies a false evaluative choice."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "Saying it should not be dismissed as neurotransmission conflates neural explanation with evaluative dismissal."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "All debate-wide strengths and limitations of the cumulative compatibility-and-signposts case are already captured in the individual move dimensions and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-rational-grounds",
+              "pro-central-compatibility",
+              "pro-central-cosmic-signposts",
+              "pro-subsidiary-order-suffering",
+              "pro-subsidiary-moral-experience"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured consequence changing completion of a locked pro burden.",
+            "relatedMoveIds": [
+              "pro-evolution-compatible-with-plan",
+              "pro-laws-remain-unexplained",
+              "pro-god-rational-not-proof",
+              "pro-morality-signposts-holy-god"
+            ],
+            "distinctConsequence": "No distinct unscored debate-wide consequence remains after judging the locked pro moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level capture of compatibility, comparative bridges, and express no-proof limits, an adjustment might be eligible."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured by the individual motion, compatibility, signpost, and reply ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-rational-grounds",
+              "pro-central-compatibility",
+              "pro-central-cosmic-signposts",
+              "pro-subsidiary-order-suffering",
+              "pro-subsidiary-moral-experience"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured consequence materially changing completion of the cumulative rational-grounds burden.",
+            "relatedMoveIds": [
+              "pro-evolution-compatible-with-plan",
+              "pro-laws-remain-unexplained",
+              "pro-god-rational-not-proof",
+              "pro-lawful-creation-entails-harms",
+              "pro-morality-signposts-holy-god"
+            ],
+            "distinctConsequence": "No additional consequence is distinct from the compatibility, comparative-signpost, regularity, and experiential inferences already rated.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level ratings, cumulative burden completion would be obscured; with them included, an adjustment would duplicate capture."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The debate-wide force and limits of natural explanatory redundancy, complexity objections, and naturalized-value replies are already reflected in move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-no-need",
+              "con-central-darwin-bottom-up",
+              "con-central-divine-complexity",
+              "con-subsidiary-regularity-suffering",
+              "con-subsidiary-naturalized-values"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured consequence changing completion of a locked con burden.",
+            "relatedMoveIds": [
+              "con-bottom-up-explanation-removes-design",
+              "con-fine-tuner-does-not-explain",
+              "con-miracles-conflict-with-nonintervention",
+              "con-neural-explanation-preserves-beauty"
+            ],
+            "distinctConsequence": "No distinct unscored debate-wide consequence remains after judging the locked con moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent move-level capture of no-need scope, concessions, and unresolved explanatory costs, an adjustment might be eligible."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured by the individual no-need, complexity, suffering, and naturalization ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-no-need",
+              "con-central-darwin-bottom-up",
+              "con-central-divine-complexity",
+              "con-subsidiary-regularity-suffering",
+              "con-subsidiary-naturalized-values"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an uncaptured consequence materially changing completion of the critical no-need burden.",
+            "relatedMoveIds": [
+              "con-bottom-up-explanation-removes-design",
+              "con-fine-tuner-does-not-explain",
+              "con-selective-miracles-inconsistent",
+              "con-explanation-does-not-dismiss-altruism",
+              "con-neural-explanation-preserves-beauty"
+            ],
+            "distinctConsequence": "No additional consequence is distinct from the explanatory redundancy, cost, consistency, and naturalization inferences already rated.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Absent the move-level ratings, critical burden completion would be obscured; with them included, an adjustment would duplicate capture."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 42,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/inventory/inventory.json",
+      "sha256": "c003b506a45c3762d09bde2288d3aa0c231546558787dbc9f73a01775d1fc76e"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/judgments/pass-a/output.json",
+      "sha256": "20f02bccfcaa34de96da4d065418fd5bd0c0437ef81ee84d09252fbb2e62cf53"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/judgments/pass-b/output.json",
+      "sha256": "dc69bb4b06e0cc9015b94615f5999ae3abd40d43a12ce03c41c9cec46c0504e9"
+    }
+  }
+}

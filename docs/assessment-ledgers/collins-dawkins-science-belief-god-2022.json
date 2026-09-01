@@ -1,0 +1,861 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "223",
+  "debateId": "collins-dawkins-science-belief-god-2022",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/SQ3EU58AzFs/captions.srv3.xml",
+      "sha256": "75cbcd37d75ce1b97a8608a78749ba00185cbf01c3be41c17b2ba86001954b73",
+      "bytes": 609156
+    },
+    "events": {
+      "path": ".assessment-cache/captions/SQ3EU58AzFs/events.json",
+      "sha256": "eb833c0f41b78385bd30092ab2ad0fa42e4ae32be8969994b8e3751eaf75fa4a",
+      "bytes": 251686
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/SQ3EU58AzFs/transcript.txt",
+      "sha256": "9de194fe23e7076bf65efbc985044baf0aa50d30479110b018e277edd95d2608",
+      "bytes": 99492
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/SQ3EU58AzFs/manifest.json",
+      "sha256": "f9e437ca2988f1dbbddb1fece177a7698d79c4b250050071ab010c8daa617cee",
+      "bytes": 995
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/authorization.json",
+      "sha256": "24c232f9cb54adad13b8c6d1e1c579dffd47f2932c3d9cf1b93e07b5aa589781",
+      "bytes": 3419
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/manifest.json",
+      "sha256": "c7c599403e6148d8615c04ff75cd5fce9404a1fc03f7e6eab85dd059a73af158",
+      "bytes": 5467
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/source/source-lock.json",
+      "sha256": "2b8679d30abfea047c6118c2f791073c1acc655656803384b7600dcd7518c01d",
+      "bytes": 5551
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/inventory/inventory.json",
+      "sha256": "c003b506a45c3762d09bde2288d3aa0c231546558787dbc9f73a01775d1fc76e",
+      "bytes": 91474
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/judgments/judgment-packet.json",
+      "sha256": "95dbd5d75a5c2e1c52dc316f36136881c9cf836834dc6f840029fef966cb7a34",
+      "bytes": 5005
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/judgments/execution.json",
+      "sha256": "2bff4f0742526653ac8543c7a6ea191313e23f245f889087d185ab870fe33bd2",
+      "bytes": 1987
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/judgments/pass-a/output.json",
+      "sha256": "20f02bccfcaa34de96da4d065418fd5bd0c0437ef81ee84d09252fbb2e62cf53",
+      "bytes": 60385
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/judgments/pass-b/output.json",
+      "sha256": "dc69bb4b06e0cc9015b94615f5999ae3abd40d43a12ce03c41c9cec46c0504e9",
+      "bytes": 58793
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/disagreements/disagreements.json",
+      "sha256": "477a80af63638fd04571ef5392f903b233e96014161919c6634402e7579275ad",
+      "bytes": 10808
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/audio/audio-verification.json",
+      "sha256": "d98abb067ae8c943d859e6da2227acc0f90b18e596e9ee997e61b9fe807cd93f",
+      "bytes": 1115
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/adjudication/packet.json",
+      "sha256": "2f707a6eac1a1acbc74edc79b53b52ce8508d2619e55977ff1e7e2975f0fa85f",
+      "bytes": 16615
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/adjudication/output.json",
+      "sha256": "7088a61e9c4af732478c68156fd4a74d12609e63ba856eeadab4cad0d39588a7",
+      "bytes": 2248
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/final-ledger/final-ledger.json",
+      "sha256": "e96fc3aa77c8229fd71e51be2db9e856c29e66787824190be4cd28bf2ba17ef3",
+      "bytes": 264539
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/score-pass/input.json",
+      "sha256": "400a1aa6d1b3aafc03fc8286ea4a8a4df6e4dd57b8d17fe5b78c96e6667a5b2a",
+      "bytes": 958
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/score-pass/output.json",
+      "sha256": "f6efb578f9172022502ff259c7faef8d045a96c98cc677ecae9604fad5117405",
+      "bytes": 21487
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/score-pass/attestation.json",
+      "sha256": "368b100c3d222ab482a6dadfc82899b7fcbaa4757f89b311bbe81f1de538e6a4",
+      "bytes": 826
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/publication/output.json",
+      "sha256": "189bce88318c3e2e70dfe352cf3a15eb84990a34decb5391922953494a0103db",
+      "bytes": 84992
+    },
+    "events": {
+      "path": ".assessment-cache/captions/SQ3EU58AzFs/events.json",
+      "sha256": "eb833c0f41b78385bd30092ab2ad0fa42e4ae32be8969994b8e3751eaf75fa4a",
+      "bytes": 251686
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/SQ3EU58AzFs/transcript.txt",
+      "sha256": "9de194fe23e7076bf65efbc985044baf0aa50d30479110b018e277edd95d2608",
+      "bytes": 99492
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/publication/correction-2-rhetorical-tags.json",
+      "sha256": "74b9a6ba359bf6931d716112124f4f70b38c581fd080d4dfc6e56212ecc0d48e",
+      "bytes": 1309
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/publication/rhetorical-tag-audit.json",
+      "sha256": "456db044d9e633ba97894ce35e9649e230236871a4710e06ffbf8eb0463c7d45",
+      "bytes": 33414
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-223/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "1f31cee6f99d7feba110eca17dfcba7f2892bf75e31d5dac783834d10d91df7e",
+      "bytes": 3924
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "223",
+    "debateId": "collins-dawkins-science-belief-god-2022",
+    "sections": [
+      {
+        "sectionId": "routes-and-epistemic-scope",
+        "title": "personal routes and epistemic scope",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-science-leaves-existential-questions",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 84,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 88
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-comparative-inquiry-supported-faith",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 77,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 85
+                },
+                "score": 73
+              },
+              {
+                "moveId": "pro-science-cannot-prove-transcendent",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 93
+                },
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-darwin-replaced-design",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 87,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 85
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-simple-to-complex-presupposition",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 83,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 95
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-god-as-scientific-question",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 82,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 84
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "evolution-and-design",
+        "title": "evolution and biological design",
+        "weightPercent": 19,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-evolution-compatible-with-plan",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 89,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 94
+                },
+                "score": 86
+              },
+              {
+                "moveId": "pro-evolution-as-divine-means",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 83,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 83
+                },
+                "score": 76
+              },
+              {
+                "moveId": "pro-timelessness-answers-duration",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 71,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 78
+                },
+                "score": 73
+              },
+              {
+                "moveId": "pro-laws-remain-unexplained",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 91
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-evolution-waste-and-redundancy",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 74
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-selection-suffering",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 79,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 93
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-bottom-up-explanation-removes-design",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 92,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 78
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "bottom-up-simplicity",
+        "title": "bottom-up simplicity and divine complexity",
+        "weightPercent": 11,
+        "sides": {
+          "pro": {
+            "score": 66,
+            "moves": [
+              {
+                "moveId": "pro-transcendent-mind-exceeds-concepts",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 63,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 82
+                },
+                "score": 66
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "con-complex-god-disrupts-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 84,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 70
+                },
+                "score": 77
+              },
+              {
+                "moveId": "con-divine-simplicity-implausible",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 59
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "cosmic-origins-and-fine-tuning",
+        "title": "lawful intelligibility, cosmic origins, and fine-tuning",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-multiverse-also-evidential-leap",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-timeless-god-stops-regress",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 74,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 76
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-god-rational-not-proof",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 88,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 95
+                },
+                "score": 83
+              },
+              {
+                "moveId": "pro-priors-mediate-explanations",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 91
+                },
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-constants-near-good-argument",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 90,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 96
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-constant-sensitivity",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 86,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 91
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-fine-tuner-does-not-explain",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 90,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 71
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-multiverse-not-ad-hoc",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 89,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 95
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "suffering-regularity-and-miracles",
+        "title": "suffering, natural regularity, and miracles",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-human-capacities-fit-purpose",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 81,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 71
+                },
+                "score": 75
+              },
+              {
+                "moveId": "pro-lawful-creation-entails-harms",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 79
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-rare-miracles-convey-message",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 88,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 80
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-constant-intervention-destroys-order",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 74,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 75
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-natural-harms-challenge-purpose",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 94,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 83
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-miracles-conflict-with-nonintervention",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 94,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 80
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-selective-miracles-inconsistent",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 94,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 83
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-jesus-miracle-cluster-inconsistent",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 78
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "morality-and-altruism",
+        "title": "morality and radical altruism",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "pro-nobility-exceeds-misfiring-description",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 73,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 63
+                },
+                "score": 67
+              },
+              {
+                "moveId": "pro-morality-signposts-holy-god",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 78,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 87
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-altruism-gap-does-not-imply-god",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 92
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-evolved-generalized-altruism-rule",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 87,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 84
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-explanation-does-not-dismiss-altruism",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 95,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 94,
+                  "calibrationCharity": 94
+                },
+                "score": 90
+              },
+              {
+                "moveId": "con-moral-terms-need-no-spirit",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 61,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 71,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 72
+                },
+                "score": 65
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "beauty-experience-and-materialism",
+        "title": "beauty, experience, and material explanation",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "pro-beauty-lacks-obvious-fitness-value",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 84,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 83
+                },
+                "score": 76
+              },
+              {
+                "moveId": "pro-joy-suggests-transcendence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 77,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 76
+                },
+                "score": 72
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-beauty-has-natural-analogy",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 80,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 87
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-neural-explanation-preserves-beauty",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 94,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 95
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 75.97,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "con": {
+        "weightedSectionMean": 82.96,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 42,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}
