@@ -2671,18 +2671,19 @@ function renderBackend() {
             <span>
               <span class="backend-objectivity-kicker">Research library</span>
               <strong id="backend-report-heading">Corpus-level analysis papers</strong>
-              <small>Open descriptions and PDF links for four corpus-wide studies</small>
+              <small>Open descriptions and PDF links for five corpus-wide studies</small>
             </span>
             <i aria-hidden="true"></i>
           </summary>
           <div class="backend-objectivity-content backend-report-content">
             <div class="backend-report-copy">
-              <p class="eyebrow">Four papers published September 1, 2026</p>
+              <p class="eyebrow">Five papers published September 1, 2026</p>
               <h3>Corpus-wide findings and measurement audits</h3>
               <p>These papers examine both what the Slugfester corpus appears to show and how confidently its assessments can be compared. The first two use the corrected set of 169 theist-versus-non-theist debates and 3,502 scored argumentative moves to explain the theist-side performance gap and test the prevalence of weakly warranted, overstated, difficult-to-falsify rhetorical affirmations.</p>
               <p>The third paper broadens the scope to all 228 published assessments. It tests whether scores produced under two locked-ledger generations behave as one uniform measuring scale, then identifies which paired findings remain reliable and which absolute scores, dimension distributions, speaker averages, and rhetorical-tag frequencies require generation-aware calibration.</p>
               <p>The fourth paper returns to the 169 relevant dyads and asks where the 6.35-point average theist disadvantage becomes largest. It maps the gap across eight primary topics, formal burden orientation, repeated speakers, assessment generation, rubric dimensions, and constructive, reply, and load-bearing moves.</p>
-              <p>All four papers state their operational definitions, denominators, controls, uncertainty, rival explanations, limitations, and conditions that could weaken their conclusions. The theist-side studies use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side.</p>
+              <p>The fifth paper asks whether debates usually turn on an identifiable named fallacy. It finds instead that most published losses are cumulative points defeats: the lower side can trail across warrant, coherence, responsiveness, calibration, precision, and burden completion without committing one accepted categorical error.</p>
+              <p>All five papers state their operational definitions, denominators, controls, uncertainty, rival explanations, limitations, and conditions that could weaken their conclusions. The theist-side studies use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side.</p>
             </div>
             <div class="backend-report-library" aria-label="Corpus-level analysis papers">
               <article class="backend-report-card">
@@ -2777,6 +2778,30 @@ function renderBackend() {
                 </dl>
                 <a class="button primary backend-report-link" href="/output/pdf/where-is-the-theist-disadvantage-largest.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Where Is the Theist Disadvantage Largest?”</a>
                 <small>Includes the eight-topic taxonomy, uncertainty intervals, direction counts, burden-orientation contrast, speaker and assessment-generation checks, topic-by-rubric decomposition, load-bearing and reply diagnostics, counterexamples, limitations, and pre-registration and rerun recommendations.</small>
+              </article>
+
+              <article class="backend-report-card">
+                <span>Paper five · Fallacy and cumulative-loss analysis</span>
+                <h4>Debates Are Usually Lost Without a Named Fallacy</h4>
+                <p>This paper tests whether the lower-scoring side in a decisive assessment normally commits at least one accepted named fallacy. In the current 228-assessment snapshot, 146 of 220 lower-scoring sides—66.4%—carry no named-fallacy tag, and 137 decisive debates contain no such tag on either side.</p>
+                <p>The absence of a tag does not imply valid or equally strong reasoning. Among 143 locked fallacy-free losses, the lower side trails on at least five of the six scoring dimensions in 75.5% of cases. The typical loss is therefore built from several ordinary deficits—under-supported premises, incomplete replies, excessive confidence, unstable terminology, or unfinished burdens—rather than one disqualifying error.</p>
+                <p>The paper also reports the strongest limitation. Fallacy-tag density differs sharply between assessment generations, so the exact 66.4% prevalence is not a uniform-protocol estimate. Even so, the structural result remains: named fallacies are informative local diagnoses when present, but neither necessary nor sufficient for a lower overall score.</p>
+                <dl>
+                  <div>
+                    <dt>Coverage</dt>
+                    <dd>228 assessments · 4,659 moves</dd>
+                  </div>
+                  <div>
+                    <dt>Fallacy-free losses</dt>
+                    <dd>146 of 220 · 66.4%</dd>
+                  </div>
+                  <div>
+                    <dt>Length and figures</dt>
+                    <dd>16 pages · 11 figures</dd>
+                  </div>
+                </dl>
+                <a class="button primary backend-report-link" href="/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Debates Are Usually Lost Without a Named Fallacy”</a>
+                <small>Includes the named-versus-formal-fallacy distinction, cohort sensitivity, move-score and margin comparisons, six-label inventory, score-dimension decomposition, large fallacy-free cases, uncertainty intervals, limitations, and a protocol-standardized follow-up test.</small>
               </article>
             </div>
           </div>

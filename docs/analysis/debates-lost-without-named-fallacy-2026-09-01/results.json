@@ -1,0 +1,620 @@
+{
+  "snapshot": {
+    "report_date": "2026-09-01",
+    "published_assessments": 228,
+    "decisive_assessments": 220,
+    "ties": 8,
+    "public_moves": 4659,
+    "locked_assessments": 212,
+    "locked_decisive_assessments": 204
+  },
+  "operational_definition": {
+    "named_fallacy": "At least one public move card on the side carries one of the six fallacy labels accepted by the site's separate annotation workflow.",
+    "not_claimed": "Absence of a tag is not proof of deductive validity, strong induction, or freedom from every formal or informal reasoning error.",
+    "score_independence": "Fallacy and bias labels are reviewed separately from the numerical scoring totals; they are explanations of specific weaknesses, not a direct point-deduction schedule."
+  },
+  "primary": {
+    "decisive_debates": 220,
+    "ties": 8,
+    "lower_side_without_fallacy": 146,
+    "lower_side_without_fallacy_share": 0.6636363636363637,
+    "lower_side_without_fallacy_ci_95": [
+      0.598870599456848,
+      0.7227856316065624
+    ],
+    "neither_side_with_fallacy": 137,
+    "neither_side_with_fallacy_share": 0.6227272727272727,
+    "only_lower_side_with_fallacy": 45,
+    "only_higher_side_with_fallacy": 9,
+    "both_sides_with_fallacy": 29,
+    "lower_side_without_fallacy_or_bias": 140,
+    "lower_side_without_fallacy_or_bias_share": 0.6363636363636364,
+    "lower_more_fallacy_tagged_moves": 62,
+    "equal_fallacy_tagged_moves": 145,
+    "lower_fewer_fallacy_tagged_moves": 13,
+    "fallacy_free_loss_mean_margin": 6.226027397260274,
+    "fallacy_free_loss_mean_margin_ci_95": [
+      5.554794520547945,
+      6.931506849315069
+    ],
+    "fallacy_free_loss_median_margin": 6.0,
+    "tagged_loss_mean_margin": 8.391891891891891,
+    "tagged_loss_mean_margin_ci_95": [
+      7.0675675675675675,
+      9.770608108108078
+    ],
+    "tagged_loss_median_margin": 7.5,
+    "tagged_minus_fallacy_free_margin": {
+      "estimate": 2.1658644946316175,
+      "ci_95": [
+        0.6599407626804892,
+        3.6938263606071815
+      ],
+      "draws": 20000
+    },
+    "equal_weight_locked_generation_share": 0.46656976744186046
+  },
+  "move_summary": {
+    "moves": 4659,
+    "fallacy_tagged_moves": 243,
+    "fallacy_instances": 249,
+    "fallacy_tagged_move_rate": 0.05215711526078558,
+    "fallacy_tagged_move_mean_score": 72.80658436213992,
+    "untagged_move_mean_score": 80.6569293478261,
+    "tagged_minus_untagged_score": -7.850344985686178
+  },
+  "cohort_summary": [
+    {
+      "cohort": "closed",
+      "label": "Earlier closed-findings",
+      "debates": 179,
+      "decisive_debates": 172,
+      "ties": 7,
+      "moves": 3423,
+      "fallacy_tagged_moves": 65,
+      "fallacy_instances": 65,
+      "fallacy_tagged_move_rate": 0.018989190768331873,
+      "fallacy_tagged_move_mean_score": 72.46153846153847,
+      "untagged_move_mean_score": 81.09410363311495,
+      "tagged_minus_untagged_score": -8.632565171576488,
+      "side_score_fallacy_rate_correlation": -0.2732741447249106,
+      "lower_side_without_fallacy": 139,
+      "lower_side_without_fallacy_share": 0.8081395348837209,
+      "lower_side_without_fallacy_ci_95": [
+        0.742819807420266,
+        0.8599959375747094
+      ],
+      "neither_side_with_fallacy": 135,
+      "lower_more_fallacies": 30,
+      "equal_fallacies": 138,
+      "lower_fewer_fallacies": 4,
+      "fallacy_free_loss_mean_margin": 6.438848920863309,
+      "fallacy_free_loss_mean_margin_ci_95": [
+        5.748201438848921,
+        7.144064748201423
+      ],
+      "fallacy_free_loss_median_margin": 6,
+      "tagged_loss_mean_margin": 9.545454545454545,
+      "tagged_loss_mean_margin_ci_95": [
+        7.454545454545454,
+        11.696969696969699
+      ],
+      "tagged_loss_median_margin": 9
+    },
+    {
+      "cohort": "standalone",
+      "label": "Later standalone",
+      "debates": 33,
+      "decisive_debates": 32,
+      "ties": 1,
+      "moves": 1026,
+      "fallacy_tagged_moves": 136,
+      "fallacy_instances": 141,
+      "fallacy_tagged_move_rate": 0.13255360623781676,
+      "fallacy_tagged_move_mean_score": 72.84558823529412,
+      "untagged_move_mean_score": 78.57078651685393,
+      "tagged_minus_untagged_score": -5.725198281559813,
+      "side_score_fallacy_rate_correlation": -0.44104376159371367,
+      "lower_side_without_fallacy": 4,
+      "lower_side_without_fallacy_share": 0.125,
+      "lower_side_without_fallacy_ci_95": [
+        0.04970134387480073,
+        0.2806830548165022
+      ],
+      "neither_side_with_fallacy": 1,
+      "lower_more_fallacies": 23,
+      "equal_fallacies": 2,
+      "lower_fewer_fallacies": 7,
+      "fallacy_free_loss_mean_margin": 1.75,
+      "fallacy_free_loss_mean_margin_ci_95": [
+        1.0,
+        2.5
+      ],
+      "fallacy_free_loss_median_margin": 1.5,
+      "tagged_loss_mean_margin": 7.071428571428571,
+      "tagged_loss_mean_margin_ci_95": [
+        5.464285714285714,
+        8.785714285714286
+      ],
+      "tagged_loss_median_margin": 5.0
+    },
+    {
+      "cohort": "no_ledger",
+      "label": "Published without locked ledger",
+      "debates": 16,
+      "decisive_debates": 16,
+      "ties": 0,
+      "moves": 210,
+      "fallacy_tagged_moves": 42,
+      "fallacy_instances": 43,
+      "fallacy_tagged_move_rate": 0.2,
+      "fallacy_tagged_move_mean_score": 73.21428571428571,
+      "untagged_move_mean_score": 82.9702380952381,
+      "tagged_minus_untagged_score": -9.755952380952394,
+      "side_score_fallacy_rate_correlation": -0.6504584617386208,
+      "lower_side_without_fallacy": 3,
+      "lower_side_without_fallacy_share": 0.1875,
+      "lower_side_without_fallacy_ci_95": [
+        0.06591599071428142,
+        0.4300888096197414
+      ],
+      "neither_side_with_fallacy": 1,
+      "lower_more_fallacies": 9,
+      "equal_fallacies": 5,
+      "lower_fewer_fallacies": 2,
+      "fallacy_free_loss_mean_margin": 2.3333333333333335,
+      "fallacy_free_loss_mean_margin_ci_95": [
+        1.0,
+        4.0
+      ],
+      "fallacy_free_loss_median_margin": 2,
+      "tagged_loss_mean_margin": 8.307692307692308,
+      "tagged_loss_mean_margin_ci_95": [
+        4.84423076923077,
+        12.538461538461538
+      ],
+      "tagged_loss_median_margin": 6
+    }
+  ],
+  "fallacy_labels": [
+    {
+      "label": "Equivocation",
+      "instances": 64,
+      "debates": 48,
+      "mean_move_score": 72.4375,
+      "closed_instances": 31,
+      "standalone_instances": 24,
+      "no_ledger_instances": 9
+    },
+    {
+      "label": "Red herring",
+      "instances": 55,
+      "debates": 30,
+      "mean_move_score": 71.6,
+      "closed_instances": 2,
+      "standalone_instances": 47,
+      "no_ledger_instances": 6
+    },
+    {
+      "label": "Argument from ignorance",
+      "instances": 43,
+      "debates": 31,
+      "mean_move_score": 74.20930232558139,
+      "closed_instances": 11,
+      "standalone_instances": 24,
+      "no_ledger_instances": 8
+    },
+    {
+      "label": "Begging the question",
+      "instances": 38,
+      "debates": 28,
+      "mean_move_score": 73.44736842105263,
+      "closed_instances": 13,
+      "standalone_instances": 19,
+      "no_ledger_instances": 6
+    },
+    {
+      "label": "Appeal to authority",
+      "instances": 27,
+      "debates": 17,
+      "mean_move_score": 73.66666666666667,
+      "closed_instances": 5,
+      "standalone_instances": 17,
+      "no_ledger_instances": 5
+    },
+    {
+      "label": "Special pleading",
+      "instances": 22,
+      "debates": 18,
+      "mean_move_score": 69.5909090909091,
+      "closed_instances": 3,
+      "standalone_instances": 10,
+      "no_ledger_instances": 9
+    }
+  ],
+  "margin_bands": [
+    {
+      "band": "1-2",
+      "margin_low": 1,
+      "margin_high": 2,
+      "decisive_debates": 48,
+      "lower_side_without_fallacy": 34,
+      "lower_side_without_fallacy_share": 0.7083333333333334,
+      "mean_lower_fallacy_instances": 0.5208333333333334
+    },
+    {
+      "band": "3-5",
+      "margin_low": 3,
+      "margin_high": 5,
+      "decisive_debates": 54,
+      "lower_side_without_fallacy": 38,
+      "lower_side_without_fallacy_share": 0.7037037037037037,
+      "mean_lower_fallacy_instances": 0.8518518518518519
+    },
+    {
+      "band": "6-9",
+      "margin_low": 6,
+      "margin_high": 9,
+      "decisive_debates": 59,
+      "lower_side_without_fallacy": 46,
+      "lower_side_without_fallacy_share": 0.7796610169491526,
+      "mean_lower_fallacy_instances": 0.3220338983050847
+    },
+    {
+      "band": "10-14",
+      "margin_low": 10,
+      "margin_high": 14,
+      "decisive_debates": 36,
+      "lower_side_without_fallacy": 18,
+      "lower_side_without_fallacy_share": 0.5,
+      "mean_lower_fallacy_instances": 1.5
+    },
+    {
+      "band": "15+",
+      "margin_low": 15,
+      "margin_high": 99,
+      "decisive_debates": 23,
+      "lower_side_without_fallacy": 10,
+      "lower_side_without_fallacy_share": 0.43478260869565216,
+      "mean_lower_fallacy_instances": 1.608695652173913
+    }
+  ],
+  "dimension_summary": {
+    "groups": [
+      {
+        "group": "Lower side has no named fallacy",
+        "debates": 143,
+        "mean_margin": 6.3076923076923075,
+        "logicalCoherence_contribution": 1.7742033269760542,
+        "logicalCoherence_positive": 137,
+        "logicalCoherence_label": "Logical coherence",
+        "evidenceWarrant_contribution": 1.5865520873066326,
+        "evidenceWarrant_positive": 135,
+        "evidenceWarrant_label": "Evidence and warrant",
+        "responsiveness_contribution": 1.377147870311507,
+        "responsiveness_positive": 129,
+        "responsiveness_label": "Responsiveness",
+        "relevanceBurden_contribution": 0.13570472027972033,
+        "relevanceBurden_positive": 89,
+        "relevanceBurden_label": "Relevance and burden",
+        "precisionClarity_contribution": 0.5833085823267643,
+        "precisionClarity_positive": 118,
+        "precisionClarity_label": "Precision and clarity",
+        "calibrationCharity_contribution": 0.8421735961008687,
+        "calibrationCharity_positive": 123,
+        "calibrationCharity_label": "Calibration and charity",
+        "adjustment_gap": 0.0,
+        "rounding_residual": 0.008602124390760532
+      },
+      {
+        "group": "Lower side has at least one named fallacy",
+        "debates": 61,
+        "mean_margin": 8.40983606557377,
+        "logicalCoherence_contribution": 2.555111360975091,
+        "logicalCoherence_positive": 60,
+        "logicalCoherence_label": "Logical coherence",
+        "evidenceWarrant_contribution": 2.204571339862324,
+        "evidenceWarrant_positive": 57,
+        "evidenceWarrant_label": "Evidence and warrant",
+        "responsiveness_contribution": 1.5414672734369461,
+        "responsiveness_positive": 53,
+        "responsiveness_label": "Responsiveness",
+        "relevanceBurden_contribution": 0.42176830955929295,
+        "relevanceBurden_positive": 46,
+        "relevanceBurden_label": "Relevance and burden",
+        "precisionClarity_contribution": 0.6658889716840539,
+        "precisionClarity_positive": 55,
+        "precisionClarity_label": "Precision and clarity",
+        "calibrationCharity_contribution": 1.0704126126605633,
+        "calibrationCharity_positive": 52,
+        "calibrationCharity_label": "Calibration and charity",
+        "adjustment_gap": 0.0,
+        "rounding_residual": -0.049383802604500544
+      }
+    ],
+    "cumulative": {
+      "locked_decisive_debates": 204,
+      "fallacy_free_lower_side_debates": 143,
+      "positive_dimension_count_distribution": {
+        "2": 1,
+        "3": 7,
+        "4": 27,
+        "5": 48,
+        "6": 60
+      },
+      "five_or_six_positive": 108,
+      "five_or_six_positive_share": 0.7552447552447552,
+      "all_six_positive": 60,
+      "all_six_positive_share": 0.4195804195804196
+    }
+  },
+  "largest_fallacy_free_losses": [
+    {
+      "number": 127,
+      "debate_id": "slick-clifton-objective-morality-god-2014",
+      "title": "Matt Slick vs Scott Clifton: Does Objective Morality Require God?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 89,
+      "lower_score": 70,
+      "margin": 19,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 141,
+      "debate_id": "fischer-dillahunty-axiomatic-evidence-god-2020",
+      "title": "Ben Fischer vs Matt Dillahunty: Is There Good Evidence for God?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 86,
+      "lower_score": 68,
+      "margin": 18,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 68,
+      "debate_id": "jones-dillahunty-quantum-idealism-demonstrability-2026",
+      "title": "Michael Jones vs Matt Dillahunty: Quantum Idealism and Demonstrability",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 86,
+      "lower_score": 69,
+      "margin": 17,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 72,
+      "debate_id": "dyer-malpass-tag-argument-2019",
+      "title": "Jay Dyer vs Alex Malpass: The TAG Argument",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 91,
+      "lower_score": 74,
+      "margin": 17,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 157,
+      "debate_id": "dillahunty-howitt-christianity-true-2023",
+      "title": "Matt Dillahunty vs Lewis Howitt: Is Christianity True?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 88,
+      "lower_score": 71,
+      "margin": 17,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 9,
+      "debate_id": "peterson-dillahunty-god-debate-2023",
+      "title": "Jordan Peterson vs Matt Dillahunty: The Greatest God Debate In History",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 89,
+      "lower_score": 73,
+      "margin": 16,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 46,
+      "debate_id": "shapiro-oconnor-atheist-delusion-society-2023",
+      "title": "Ben Shapiro vs Alex O'Connor: The Atheist Delusion, Free Will, and Society",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 87,
+      "lower_score": 71,
+      "margin": 16,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 67,
+      "debate_id": "jones-fodor-digital-physics-god-2021",
+      "title": "Michael Jones vs James Fodor: The Digital Physics Argument for God",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 87,
+      "lower_score": 71,
+      "margin": 16,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 63,
+      "debate_id": "butt-shermer-god-bible-2023",
+      "title": "Kyle Butt vs Michael Shermer: Does the God of the Bible Exist?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 86,
+      "lower_score": 71,
+      "margin": 15,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 85,
+      "debate_id": "atkins-fox-god-science-future-humanity-2024",
+      "title": "Peter Atkins vs Keith Fox: God vs Science Debate",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 85,
+      "lower_score": 70,
+      "margin": 15,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 82,
+      "debate_id": "bush-mcallister-moral-anti-realism-realism-2025",
+      "title": "Lance Bush vs Derek McAllister: Moral Anti-Realism vs Realism",
+      "cohort": "closed",
+      "higher_side": "pro",
+      "lower_side": "con",
+      "higher_score": 90,
+      "lower_score": 76,
+      "margin": 14,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 49,
+      "debate_id": "dyer-dillahunty-transcendental-theism-2019",
+      "title": "Jay Dyer vs Matt Dillahunty: Transcendental Argument for Theism",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 89,
+      "lower_score": 76,
+      "margin": 13,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 123,
+      "debate_id": "oconnor-pine-divine-hiddenness-2024",
+      "title": "Gregory Pine vs Alex O'Connor: The Divine Hiddenness Problem",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 87,
+      "lower_score": 74,
+      "margin": 13,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 83,
+      "debate_id": "loke-oppy-kalam-causal-principle-2020",
+      "title": "Andrew Loke vs Graham Oppy: Is the Kalam Sound?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 86,
+      "lower_score": 74,
+      "margin": 12,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 86,
+      "debate_id": "egnor-dillahunty-god-existence-2021",
+      "title": "Michael Egnor vs Matt Dillahunty: Does God Exist?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 83,
+      "lower_score": 71,
+      "margin": 12,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 161,
+      "debate_id": "craig-millican-does-god-exist-2011",
+      "title": "William Lane Craig vs Peter Millican: Does God Exist?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 87,
+      "lower_score": 75,
+      "margin": 12,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 13,
+      "debate_id": "knechtle-oconnor-christian-morality-2025",
+      "title": "Cliffe Knechtle vs Alex O'Connor: Christianity, Scripture, and Morality",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 87,
+      "lower_score": 76,
+      "margin": 11,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 19,
+      "debate_id": "harris-oconnor-objective-morality-2024",
+      "title": "Sam Harris vs Alex O'Connor: Objective Morality and Emotivism",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 88,
+      "lower_score": 77,
+      "margin": 11,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 43,
+      "debate_id": "meyer-halper-cosmology-fine-tuning-2026",
+      "title": "Stephen Meyer vs Phil Halper: The Big Bang and Fine-Tuning",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 90,
+      "lower_score": 79,
+      "margin": 11,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    },
+    {
+      "number": 118,
+      "debate_id": "hernandez-schieber-god-existence-2023",
+      "title": "Eric Hernandez vs Justin Schieber: Does God Exist?",
+      "cohort": "closed",
+      "higher_side": "con",
+      "lower_side": "pro",
+      "higher_score": 85,
+      "lower_score": 74,
+      "margin": 11,
+      "higher_fallacy_instances": 0,
+      "lower_fallacy_instances": 0
+    }
+  ],
+  "interpretation": {
+    "headline": "In the observed 228-assessment snapshot, 146 of 220 lower-scoring sides (66.4%) carry no named fallacy tag.",
+    "robust_result": "Among 143 locked fallacy-free losses, the lower side trails on at least five of six rubric dimensions in 75.5% of debates, showing that cumulative ordinary weakness is sufficient to produce a loss without a named fallacy.",
+    "annotation_limit": "The 66.4% headline is not stable across annotation cohorts: the fallacy-free-loss share is 80.8% in the earlier closed cohort but 12.5% in the later standalone cohort, where fallacy tagging is much denser.",
+    "balanced_result": "Equal-weighting the two locked assessment generations yields a 46.7% fallacy-free-loss share, so the word 'usually' describes the current corpus mix rather than an annotation-invariant law.",
+    "qualified_conclusion": "Named fallacies are neither necessary nor sufficient for a lower score. When present they identify weaker moves and larger average margins, but most scoring work is done by graded differences in coherence, warrant, responsiveness, precision, burden fit, and calibration."
+  }
+}

@@ -643,6 +643,10 @@ export function backendSeo({ legacy = false } = {}) {
       {
         href: "/output/pdf/where-is-the-theist-disadvantage-largest.pdf",
         label: "PDF report: Where Is the Theist Disadvantage Largest?"
+      },
+      {
+        href: "/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf",
+        label: "PDF report: Debates Are Usually Lost Without a Named Fallacy"
       }
     ],
     jsonLd: [
