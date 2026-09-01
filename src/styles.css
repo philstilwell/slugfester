@@ -3871,6 +3871,136 @@ a {
   font-size: 0.86rem;
 }
 
+.correction-report-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(420px, 1.28fr);
+  gap: clamp(24px, 5vw, 58px);
+  align-items: start;
+  padding: clamp(24px, 4vw, 40px);
+  background:
+    radial-gradient(circle at bottom left, rgba(47, 143, 133, 0.12), transparent 40%),
+    #f7faf9;
+  border: 1px solid rgba(38, 91, 105, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 18px 44px rgba(21, 57, 67, 0.08);
+  scroll-margin-top: 24px;
+}
+
+.correction-report-intro h2 {
+  margin: 5px 0 0;
+  color: #173f4c;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 0.98;
+}
+
+.correction-report-intro > p:not(.eyebrow) {
+  margin: 18px 0 0;
+  color: #30413e;
+  line-height: 1.6;
+}
+
+.correction-report-context {
+  padding: 13px 14px;
+  background: rgba(255, 255, 255, 0.86);
+  border-left: 4px solid var(--teal);
+  border-radius: 5px;
+  font-size: 0.88rem;
+}
+
+.correction-report-card {
+  display: grid;
+  gap: 16px;
+  padding: clamp(18px, 3vw, 28px);
+  background: #fff;
+  border: 1px solid rgba(38, 91, 105, 0.2);
+  border-top: 5px solid var(--coral);
+  border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(21, 57, 67, 0.09);
+}
+
+.correction-report-form {
+  display: grid;
+  gap: 8px;
+}
+
+.correction-report-form label:not(.correction-report-honey) {
+  margin-top: 6px;
+  color: #173f4c;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.correction-report-form label span {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.correction-report-form input:not([type="hidden"]),
+.correction-report-form select,
+.correction-report-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  color: var(--ink);
+  background: #fbfdfc;
+  border: 1px solid rgba(38, 91, 105, 0.3);
+  border-radius: 7px;
+  font: inherit;
+}
+
+.correction-report-form input:not([type="hidden"]),
+.correction-report-form select {
+  min-height: 46px;
+}
+
+.correction-report-form textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.correction-report-form input:not([type="hidden"]):focus,
+.correction-report-form select:focus,
+.correction-report-form textarea:focus {
+  outline: 3px solid rgba(47, 143, 133, 0.25);
+  outline-offset: 1px;
+  border-color: var(--teal-text);
+}
+
+.correction-report-form .button {
+  justify-self: start;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.correction-report-honey {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.correction-report-success {
+  margin: 0;
+  padding: 12px 14px;
+  color: #17594f;
+  background: #e8f6f1;
+  border: 1px solid rgba(47, 143, 133, 0.32);
+  border-radius: 7px;
+  line-height: 1.5;
+}
+
+.correction-report-privacy {
+  margin: 0;
+  padding-top: 14px;
+  color: #4b6268;
+  border-top: 1px solid rgba(38, 91, 105, 0.15);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
 .corrections-process-list,
 .revision-log-list {
   display: grid;
@@ -5360,7 +5490,8 @@ a {
   .overall-grid,
   .logical-extension-grid,
   .profile-hero,
-  .corrections-hero {
+  .corrections-hero,
+  .correction-report-section {
     grid-template-columns: 1fr;
   }
 

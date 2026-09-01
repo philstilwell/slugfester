@@ -163,6 +163,13 @@ requireIncludes("app backend recommendation URL", app, 'name="debate_url" type="
 requireIncludes("app backend recommendation email", app, 'name="email" type="email"');
 requireIncludes("app backend recommendation destination", app, "https://formsubmit.co/44a747882839a1240511c0b4bca3bd95");
 requireExcludes("app backend recommendation email privacy", app, "philstilwell@yahoo.com");
+requireIncludes("app scorecard report route", app, "correctionReportUrl");
+requireIncludes("app scorecard report form", app, 'class="correction-report-form"');
+requireIncludes("app scorecard report page URL", app, 'name="page_url" type="url"');
+requireIncludes("app scorecard report issue type", app, 'name="issue_type" required');
+requireIncludes("app scorecard report evidence", app, 'name="supporting_evidence"');
+requireIncludes("app scorecard report confirmation", app, "Report sent.");
+requireExcludes("app scorecard report email privacy", app, "philstilwell@yahoo.com");
 requireIncludes("app backend compute disclosure", app, "What ≈83 hours means.");
 requireIncludes("app backend new debate compute", app, "New debates require about 1.5 hours each to process and add.");
 requireExcludes("app backend published-catalogue card", app, "<span>Published catalogue</span>");

@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260831-debate-recommendations-v2";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260831-debate-recommendations-v2";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260831-debate-recommendations-v2";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260901-scorecard-reporting-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260901-scorecard-reporting-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260901-scorecard-reporting-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -31,7 +31,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260831-debate-recommendations-v2";
+} from "./seo.js?v=20260901-scorecard-reporting-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -74,7 +74,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260831-debate-recommendations-v2")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260901-scorecard-reporting-v1")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -93,7 +93,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260831-debate-recommendations-v2`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260901-scorecard-reporting-v1`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -108,7 +108,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260831-debate-recommendations-v2`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260901-scorecard-reporting-v1`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -2668,19 +2668,23 @@ function renderBackend() {
   `);
 }
 
-function correctionIssueUrl(debate = null) {
-  const url = new URL("https://github.com/philstilwell/slugfester/issues/new");
-  url.searchParams.set("template", "scorecard-correction.yml");
-  url.searchParams.set(
-    "title",
-    debate
-      ? `Possible scorecard issue: Debate ${debate.number}`
-      : "Possible Slugfester correction"
-  );
-  return url.href;
+function correctionReportUrl(debate = null) {
+  const params = new URLSearchParams();
+  if (debate?.id) params.set("debate", debate.id);
+  const query = params.toString();
+  return `${correctionsPath()}${query ? `?${query}` : ""}#report-scorecard-issue`;
 }
 
 function renderCorrections() {
+  const params = new URLSearchParams(window.location.search);
+  const reportSent = params.get("report") === "sent";
+  const selectedDebate = debates.find((debate) => debate.id === params.get("debate"));
+  const reportedPageUrl = selectedDebate
+    ? absoluteUrl(debatePath(selectedDebate))
+    : "";
+  const reportSubject = selectedDebate
+    ? `Slugfester scorecard issue: Debate ${selectedDebate.number}`
+    : "Slugfester scorecard issue";
   setSeo(correctionsSeo());
 
   app.innerHTML = renderShell(`
@@ -2694,9 +2698,61 @@ function renderCorrections() {
         <aside class="corrections-action-card">
           <span>Found a possible problem?</span>
           <strong>Send the exact page and evidence.</strong>
-          <p>A public issue creates a traceable report that can be checked against the transcript and site calculations.</p>
-          <a class="button primary" href="${escapeHtml(correctionIssueUrl())}" target="_blank" rel="noopener noreferrer">Report a possible correction</a>
+          <p>A private report goes directly to the site administrator for checking. Material corrections are recorded publicly below.</p>
+          <a class="button primary" href="#report-scorecard-issue">Report a possible correction</a>
         </aside>
+      </section>
+
+      <section class="correction-report-section" id="report-scorecard-issue" aria-labelledby="correction-report-heading">
+        <div class="correction-report-intro">
+          <p class="eyebrow">Reader report</p>
+          <h2 id="correction-report-heading">Report a possible scorecard issue</h2>
+          <p>Identify the exact page and explain what appears incorrect. A timestamp, transcript passage, calculation, screenshot link, or other evidence will make the report easier to check.</p>
+          ${selectedDebate ? `<p class="correction-report-context"><strong>Selected scorecard:</strong> Debate ${escapeHtml(selectedDebate.number)} · ${escapeHtml(selectedDebate.title)}</p>` : ""}
+        </div>
+        <div class="correction-report-card">
+          ${reportSent ? '<p class="correction-report-success" role="status"><strong>Report sent.</strong> Thank you—the possible issue has been delivered for review.</p>' : ""}
+          <form class="correction-report-form" action="https://formsubmit.co/44a747882839a1240511c0b4bca3bd95" method="post" accept-charset="UTF-8">
+            <input type="hidden" name="_subject" value="${escapeHtml(reportSubject)}">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://slugfester.com/corrections/?report=sent#report-scorecard-issue">
+            ${selectedDebate ? `<input type="hidden" name="debate_id" value="${escapeHtml(selectedDebate.id)}">` : ""}
+            <label class="correction-report-honey" aria-hidden="true">
+              Leave this field empty
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+            </label>
+
+            <label for="reported-page-url">Scorecard page URL</label>
+            <input id="reported-page-url" name="page_url" type="url" inputmode="url" autocomplete="url" placeholder="https://slugfester.com/debate/…" maxlength="500" value="${escapeHtml(reportedPageUrl)}" required>
+
+            <label for="scorecard-issue-type">Type of issue</label>
+            <select id="scorecard-issue-type" name="issue_type" required>
+              <option value="" selected disabled>Select the closest category</option>
+              <option>Displayed calculation or average</option>
+              <option>Score or section weighting</option>
+              <option>Quotation or transcript wording</option>
+              <option>Speaker attribution</option>
+              <option>Source or timestamp link</option>
+              <option>Fallacy or bias label</option>
+              <option>Other presentation or accessibility issue</option>
+            </select>
+
+            <label for="scorecard-observed-problem">What looks wrong?</label>
+            <textarea id="scorecard-observed-problem" name="observed_problem" rows="5" maxlength="4000" placeholder="Identify the exact score, passage, label, link, or behavior in question." required></textarea>
+
+            <label for="scorecard-supporting-evidence">Supporting evidence</label>
+            <textarea id="scorecard-supporting-evidence" name="supporting_evidence" rows="5" maxlength="4000" placeholder="Include a timestamp, transcript passage, calculation, screenshot link, or source when possible." required></textarea>
+
+            <label for="scorecard-suggested-correction">Suggested correction <span>(optional)</span></label>
+            <textarea id="scorecard-suggested-correction" name="suggested_correction" rows="3" maxlength="2500" placeholder="Explain what you think the page should show and why."></textarea>
+
+            <label for="scorecard-reporter-email">Your email address</label>
+            <input id="scorecard-reporter-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
+
+            <button class="button primary" type="submit">Send issue report</button>
+          </form>
+          <p class="correction-report-privacy">The report and your email are delivered privately to the site administrator through FormSubmit. Your email will be used only if clarification is needed. Any material correction will be summarized in the public revision log.</p>
+        </div>
       </section>
 
       <section class="corrections-process" aria-labelledby="corrections-process-heading">
@@ -2904,7 +2960,7 @@ function renderDebateObject(
           ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
           <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Open YouTube source</a>
-          ${preview ? "" : `<a class="scorecard-correction-link" href="${escapeHtml(correctionIssueUrl(debate))}" target="_blank" rel="noopener noreferrer">Report a possible scorecard issue</a>`}
+          ${preview ? "" : `<a class="scorecard-correction-link" href="${escapeHtml(correctionReportUrl(debate))}" data-document-navigation>Report a possible scorecard issue</a>`}
         </aside>
       </section>
 
@@ -3678,7 +3734,11 @@ async function route() {
 }
 
 function shouldHandleInternally(link) {
-  if (link.target || link.hasAttribute("download")) return false;
+  if (
+    link.target ||
+    link.hasAttribute("download") ||
+    link.hasAttribute("data-document-navigation")
+  ) return false;
 
   const url = new URL(link.href, window.location.href);
   if (url.origin !== window.location.origin) return false;

@@ -124,6 +124,47 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
   expect(landingPolicy).not.toContain("form-action 'self' https://formsubmit.co");
 });
 
+test("carries a scorecard into the issue-report form and confirms delivery", async ({ page }) => {
+  const debatePath = "/debate/craig-oconnor-god-debate-2026/";
+  await openRenderedPage(page, debatePath);
+
+  const reportLink = page.getByRole("link", { name: "Report a possible scorecard issue" });
+  await expect(reportLink).toHaveAttribute(
+    "href",
+    "/corrections/?debate=craig-oconnor-god-debate-2026#report-scorecard-issue"
+  );
+  await reportLink.click();
+  await expect(page).toHaveURL(/\/corrections\/\?debate=craig-oconnor-god-debate-2026#report-scorecard-issue$/);
+
+  const form = page.locator(".correction-report-form");
+  await expect(form).toHaveAttribute("method", "post");
+  await expect(form).toHaveAttribute(
+    "action",
+    "https://formsubmit.co/44a747882839a1240511c0b4bca3bd95"
+  );
+  await expect(form.locator("input[name='page_url']")).toHaveValue(
+    `https://slugfester.com${debatePath}`
+  );
+  await expect(form.locator("input[name='_subject']")).toHaveValue(
+    "Slugfester scorecard issue: Debate 01"
+  );
+  await expect(form.locator("input[name='debate_id']")).toHaveValue(
+    "craig-oconnor-god-debate-2026"
+  );
+
+  for (const field of ["page_url", "issue_type", "observed_problem", "supporting_evidence", "email"]) {
+    await expect(form.locator(`[name='${field}']`)).toHaveAttribute("required", "");
+  }
+
+  const correctionsPolicy = await page
+    .locator("meta[http-equiv='Content-Security-Policy']")
+    .getAttribute("content");
+  expect(correctionsPolicy).toContain("form-action 'self' https://formsubmit.co");
+
+  await openRenderedPage(page, "/corrections/?report=sent#report-scorecard-issue");
+  await expect(page.locator(".correction-report-success")).toContainText("Report sent");
+});
+
 test("serves every URL advertised in the sitemap", async ({ request }) => {
   test.setTimeout(120_000);
   const sitemapResponse = await request.get("/sitemap.xml");

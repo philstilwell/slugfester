@@ -41,11 +41,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260831-active-nav-border-v1";
-const interlocutorAssetVersion = "20260831-active-nav-border-v1";
-const rankingsAssetVersion = "20260831-active-nav-border-v1";
-const debateAssetVersion = "20260831-active-nav-border-v1";
-const backendAssetVersion = "20260831-active-nav-border-v1";
+const assetVersion = "20260901-scorecard-reporting-v1";
+const interlocutorAssetVersion = "20260901-scorecard-reporting-v1";
+const rankingsAssetVersion = "20260901-scorecard-reporting-v1";
+const debateAssetVersion = "20260901-scorecard-reporting-v1";
+const backendAssetVersion = "20260901-scorecard-reporting-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -60,7 +60,7 @@ function jsonScript(value) {
   return JSON.stringify(value).replaceAll("<", "\\u003c");
 }
 
-function contentSecurityPolicy(structuredData = "", allowRecommendationForm = false) {
+function contentSecurityPolicy(structuredData = "", allowExternalForm = false) {
   const structuredDataHash = structuredData
     ? ` 'sha256-${createHash("sha256").update(structuredData).digest("base64")}'`
     : "";
@@ -76,7 +76,7 @@ function contentSecurityPolicy(structuredData = "", allowRecommendationForm = fa
     "object-src 'none'",
     "frame-src 'none'",
     "base-uri 'self'",
-    `form-action 'self'${allowRecommendationForm ? " https://formsubmit.co" : ""}`,
+    `form-action 'self'${allowExternalForm ? " https://formsubmit.co" : ""}`,
     "upgrade-insecure-requests"
   ].join("; ");
 }
@@ -132,7 +132,7 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const structuredData = jsonScript(seo.jsonLd);
   const securityPolicy = contentSecurityPolicy(
     structuredData,
-    seo.canonicalPath === backendPath()
+    seo.canonicalPath === backendPath() || seo.canonicalPath === correctionsPath()
   );
   const articleMeta = [
     seo.type === "article" && seo.articleSection
