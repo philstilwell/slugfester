@@ -175,9 +175,11 @@ a {
 }
 
 .primary-nav-link {
+  border: 1px solid transparent;
   border-radius: 999px;
   transition:
     background-color 140ms ease,
+    border-color 140ms ease,
     box-shadow 140ms ease,
     color 140ms ease;
 }
@@ -188,6 +190,10 @@ a {
   color: #ffffff;
   background: var(--glove-red);
   box-shadow: 0 7px 7px rgba(185, 31, 36, 0.24);
+}
+
+.primary-nav-link.active {
+  border-color: #000000;
 }
 
 .primary-nav-link:focus-visible {

@@ -153,6 +153,14 @@ test("keyboard users can skip directly to the main content", async ({ page }) =>
   await expect(page.locator("#main-content")).toBeFocused();
 });
 
+test("the selected primary navigation item has a thin black border", async ({ page }) => {
+  await openRenderedPage(page, "/search/");
+  const selectedLink = page.locator('nav[aria-label="Primary"] [aria-current="page"]');
+  await expect(selectedLink).toHaveText("Search");
+  await expect(selectedLink).toHaveCSS("border-top-width", "1px");
+  await expect(selectedLink).toHaveCSS("border-top-color", "rgb(0, 0, 0)");
+});
+
 for (const route of ["/", "/rankings/", "/interlocutor/alex-o-connor/", "/corrections/"]) {
   test(`remains usable with text enlarged to 200 percent: ${route}`, async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
