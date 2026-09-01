@@ -2671,17 +2671,18 @@ function renderBackend() {
             <span>
               <span class="backend-objectivity-kicker">Research library</span>
               <strong id="backend-report-heading">Corpus-level analysis papers</strong>
-              <small>Open descriptions and PDF links for three corpus-wide studies</small>
+              <small>Open descriptions and PDF links for four corpus-wide studies</small>
             </span>
             <i aria-hidden="true"></i>
           </summary>
           <div class="backend-objectivity-content backend-report-content">
             <div class="backend-report-copy">
-              <p class="eyebrow">Three papers published September 1, 2026</p>
+              <p class="eyebrow">Four papers published September 1, 2026</p>
               <h3>Corpus-wide findings and measurement audits</h3>
               <p>These papers examine both what the Slugfester corpus appears to show and how confidently its assessments can be compared. The first two use the corrected set of 169 theist-versus-non-theist debates and 3,502 scored argumentative moves to explain the theist-side performance gap and test the prevalence of weakly warranted, overstated, difficult-to-falsify rhetorical affirmations.</p>
               <p>The third paper broadens the scope to all 228 published assessments. It tests whether scores produced under two locked-ledger generations behave as one uniform measuring scale, then identifies which paired findings remain reliable and which absolute scores, dimension distributions, speaker averages, and rhetorical-tag frequencies require generation-aware calibration.</p>
-              <p>All three papers state their operational definitions, denominators, controls, uncertainty, rival explanations, limitations, and conditions that could weaken their conclusions. The theist-side studies use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side.</p>
+              <p>The fourth paper returns to the 169 relevant dyads and asks where the 6.35-point average theist disadvantage becomes largest. It maps the gap across eight primary topics, formal burden orientation, repeated speakers, assessment generation, rubric dimensions, and constructive, reply, and load-bearing moves.</p>
+              <p>All four papers state their operational definitions, denominators, controls, uncertainty, rival explanations, limitations, and conditions that could weaken their conclusions. The theist-side studies use the position actually argued in each scorecard rather than assuming that the stored <em>pro</em> side is the theist side.</p>
             </div>
             <div class="backend-report-library" aria-label="Corpus-level analysis papers">
               <article class="backend-report-card">
@@ -2752,6 +2753,30 @@ function renderBackend() {
                 </dl>
                 <a class="button primary backend-report-link" href="/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Are All Slugfester Assessments on the Same Scale?”</a>
                 <small>Includes the score-level discontinuity, assessment-sequence blocks, all 31 repeated speakers, dimension-level and correlation diagnostics, tag-coverage drift, robustness checks, policy implications, and the next bridge-rescoring design.</small>
+              </article>
+
+              <article class="backend-report-card">
+                <span>Paper four · Topic, burden, and rubric map</span>
+                <h4>Where Is the Theist Disadvantage Largest?</h4>
+                <p>This paper locates the settings in which the corpus-wide theist score disadvantage becomes most pronounced. Religion, culture, and meaning debates show the largest observed mean gap—8.65 points—with the non-theist higher in 19 of 20 assessments. Scripture and revelation, mind and reason, and evil and hiddenness form a broader high-gap cluster.</p>
+                <p>The paper then tests whether that hierarchy is merely a product of burden orientation, prolific non-theist speakers, or the later assessment generation. The cultural-and-existential category remains highest when the analysis is restricted to theist-PRO debates, when the four most frequent non-theists are removed, and when only earlier-generation assessments are retained.</p>
+                <p>Its central diagnosis is more specific than a topic ranking. The gap is 6.78 points when the theist carries the affirmative side, versus 3.15 when the theist is CON. At the move level, the evidence-and-warrant difference reaches 9.25 dimension points among load-bearing claims, while reply responsiveness shows a separate weakness once objections must be answered.</p>
+                <dl>
+                  <div>
+                    <dt>Coverage</dt>
+                    <dd>169 debates · 3,502 moves</dd>
+                  </div>
+                  <div>
+                    <dt>Largest topic mean</dt>
+                    <dd>8.65 points · 19 of 20</dd>
+                  </div>
+                  <div>
+                    <dt>Length and figures</dt>
+                    <dd>16 pages · 8 figures</dd>
+                  </div>
+                </dl>
+                <a class="button primary backend-report-link" href="/output/pdf/where-is-the-theist-disadvantage-largest.pdf" type="application/pdf" target="_blank" rel="noopener">Read “Where Is the Theist Disadvantage Largest?”</a>
+                <small>Includes the eight-topic taxonomy, uncertainty intervals, direction counts, burden-orientation contrast, speaker and assessment-generation checks, topic-by-rubric decomposition, load-bearing and reply diagnostics, counterexamples, limitations, and pre-registration and rerun recommendations.</small>
               </article>
             </div>
           </div>

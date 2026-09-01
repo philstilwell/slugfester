@@ -612,7 +612,7 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls, two analyses of theist-side results, and a corpus-wide score-scale audit.";
+    "How Slugfester selects, transcribes, independently reviews, and scores debates, with validation controls and four corpus-wide papers on theist-side results, score-scale comparability, and where performance gaps are largest.";
   const updatedDate = "2026-09-01";
 
   return {
@@ -639,6 +639,10 @@ export function backendSeo({ legacy = false } = {}) {
       {
         href: "/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf",
         label: "PDF report: Are All Slugfester Assessments on the Same Scale?"
+      },
+      {
+        href: "/output/pdf/where-is-the-theist-disadvantage-largest.pdf",
+        label: "PDF report: Where Is the Theist Disadvantage Largest?"
       }
     ],
     jsonLd: [
