@@ -188,7 +188,7 @@ requireIncludes("app scorecard report evidence", app, 'name="supporting_evidence
 requireIncludes("app scorecard report confirmation", app, "Report sent.");
 requireExcludes("app scorecard report email privacy", app, "philstilwell@yahoo.com");
 requireIncludes("app backend compute disclosure", app, "What ≈83 hours means.");
-requireIncludes("app backend new debate compute", app, "New debates require about 1.5 hours each to process and add.");
+requireIncludes("app backend new debate compute", app, "Each new debate requires 1-2 hours to process and add.");
 requireExcludes("app backend published-catalogue card", app, "<span>Published catalogue</span>");
 requireExcludes("app backend dyadic-coverage card", app, "<span>Current v2 coverage</span>");
 requireIncludes("app backend compute card", app, "Reassessment compute summary");

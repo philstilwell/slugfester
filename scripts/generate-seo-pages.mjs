@@ -46,7 +46,7 @@ const assetVersion = "20260902-rubric-move-reasons-v3";
 const interlocutorAssetVersion = "20260902-rubric-move-reasons-v3";
 const rankingsAssetVersion = "20260902-ranking-gloves-v4";
 const debateAssetVersion = "20260902-rubric-move-reasons-v3";
-const backendAssetVersion = "20260902-rubric-move-reasons-v3";
+const backendAssetVersion = "20260902-backend-processing-time-v4";
 
 function escapeHtml(value = "") {
   return String(value)
