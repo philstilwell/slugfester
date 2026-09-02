@@ -42,11 +42,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260901-debate-years-v1";
-const interlocutorAssetVersion = "20260901-debate-years-v1";
-const rankingsAssetVersion = "20260901-debate-years-v1";
-const debateAssetVersion = "20260901-debate-years-v1";
-const backendAssetVersion = "20260901-debate-years-v1";
+const assetVersion = "20260901-update-cadence-v1";
+const interlocutorAssetVersion = "20260901-update-cadence-v1";
+const rankingsAssetVersion = "20260901-update-cadence-v1";
+const debateAssetVersion = "20260901-update-cadence-v1";
+const backendAssetVersion = "20260901-update-cadence-v1";
 
 function escapeHtml(value = "") {
   return String(value)

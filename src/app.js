@@ -556,7 +556,7 @@ function renderLanding() {
               <span>Looking for a subject?</span>
               <a href="${topicsPath()}">Browse all debates by topic</a>
             </div>
-            <p>We plan to add new debate assessments every month.</p>
+            <p>New debate assessments are added nearly every month.</p>
           </div>
         </div>
         <figure class="logo-showcase">
