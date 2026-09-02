@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "231",
+  "model": {"label": "5.6 Sol", "slug": "gpt-5.6-sol", "reasoningEffort": "low", "authentication": "ChatGPT subscription"},
+  "isolation": {
+    "method": "fresh isolated read-only contexts containing only each score-blind packet and catalog snapshot",
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "scoresUnavailable": true,
+    "frequencyStatisticsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "1e0fed05dfe21bb7e91901975f401feb91ea93b79e7d6d58a27feafdc3403510",
+    "bytes": 3364
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "fe8d75f2a91988e195033fc1988ad152e603cbbc471207f8304b0e1191a539af",
+    "bytes": 87790
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a", "reasoningEffort": "low", "sessionId": "01a05fa0-16a9-75b1-942a-07d9ee884946",
+      "output": {"path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/pass-a-output.json", "sha256": "03f3468bf3301a5f29c17bf622bba96fb0720d4dbee3af3773e9a28b07d19d9e", "bytes": 15344},
+      "attempts": 1, "retries": 0, "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b", "reasoningEffort": "low", "sessionId": "01a05fa0-1690-7ba3-a5af-f849fd250706",
+      "output": {"path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/pass-b-output.json", "sha256": "f192291a608aa8942f84e10cbddee71f7126be3952fdb365f5d6542a57642473", "bytes": 16558},
+      "attempts": 1, "retries": 0, "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-candidate-adjudication", "reasoningEffort": "low", "sessionId": "01a05fa3-67e6-7e10-b1a0-cf32c677c652",
+      "input": {"path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/adjudication-packet.json", "sha256": "8e46b9b3205e4f0cf36886f61b05df4fc5c6f9a27d776df6922c682675ecb9f0", "bytes": 65423},
+      "output": {"path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/adjudication-output.json", "sha256": "2be52639cfcefee7ac53f7238f498244cbe61a27b6dc54961405f45bf1eb255a", "bytes": 9011},
+      "attempts": 1, "retries": 0, "directIncrementalCostUsd": 0
+    }
+  ],
+  "schemaRecovery": {"failuresBeforeAnalysis": 0, "invalidOutputAccepted": false, "evidencePath": null},
+  "finalDefinitionCheck": {
+    "reviewedEveryCandidate": true,
+    "finalAcceptedTagCount": 7,
+    "finalAcceptedOverallLinkCount": 2,
+    "overruledOverbroadAdjudicatorAcceptances": 5,
+    "overruledAdjudicatorRejections": 0,
+    "evidence": {"path": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/final-definition-check.json", "sha256": "eb419d636b407dd51beb0b3b63f00bc3895853e1da98ba6c3477aa7ce60b690d", "bytes": 25445}
+  },
+  "overallBlunderReview": {
+    "reviewedItems": 6,
+    "definitionsPerItem": 13,
+    "acceptedReferenceLinks": 2,
+    "preservedPassA": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/pass-a-output.json",
+    "preservedPassB": "docs/assessment-production/standalone-debates-v1/debate-231/publication/rhetorical-tag-review-1/pass-b-output.json"
+  },
+  "audit": {
+    "movesReviewed": 41,
+    "definitionsPerMove": 13,
+    "definitionComparisonsPerBlindPass": 533,
+    "allCandidateDefinitionComparisonsPerBlindPass": 611,
+    "blindReviews": 2,
+    "adjudications": 25,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "transportSchemaFailuresBeforeAnalysis": 0,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completedAt": "2026-09-02T00:55:00.000Z"
+}

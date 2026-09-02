@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-standalone-source-span-sufficiency-final",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-after-independent-source-span-audit",
+  "debateNumber": "231",
+  "debateId": "hernandez-aron-ra-soul-existence-2020",
+  "motion": "Does the soul exist?",
+  "independentAudits": [
+    {
+      "auditPath": "inventory/source-span-sufficiency-audit-1.json",
+      "disposition": "every selected move was reviewed for speaker isolation, proposition support, minimal sufficiency, duplicate coverage, and section capacity; every recommended exact-span repair was then applied deterministically"
+    }
+  ],
+  "finalChecks": {
+    "completeLoadBearingCoverage": true,
+    "duplicateMoveIds": [],
+    "duplicateArguments": [],
+    "sectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true,
+    "allSpansSourceExact": true,
+    "allSpansSpeakerIsolated": true,
+    "allPropositionsSupported": true,
+    "allSpansWithinTwelveToNinetyWords": true,
+    "allSpansWithinFourHundredFiftyCharacters": true,
+    "attributionBelowHigh": [],
+    "requiredAudioChecks": []
+  },
+  "finalIndependentFindings": {
+    "selectionComplete": true,
+    "duplicateArguments": [
+      "con-16 and con-21 substantially repeat the same objection to grounding graded personhood in bodily size or weight.",
+      "con-07 and con-23 overlap on God-helmet brain stimulation, though con-07 supplies the opening empirical case and con-23 is a direct reply."
+    ],
+    "capacityRepairRequired": false,
+    "propositionSupportFailures": 3,
+    "speakerIsolationFailures": 1,
+    "sourceLimitFailures": 0
+  },
+  "controllerDispositions": [
+    "Applied every independent audit recommendation to isolate speakers, complete fragments, and keep each proposition no broader than its exact transcript support.",
+    "Applied deterministic word and character checks after the audit; every final span satisfies the hard source limits without score or publication data exposure."
+  ],
+  "finalMoveCount": 41,
+  "finalSectionCount": 7
+}

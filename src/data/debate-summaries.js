@@ -10688,5 +10688,58 @@ export const debateSummaries = [
         "title": "Parsimony and final theory comparison"
       }
     ]
+  },
+  {
+    "id": "hernandez-aron-ra-soul-existence-2020",
+    "number": "231",
+    "title": "Does the Soul Exist? Eric Hernandez vs. Aron Ra",
+    "year": 2020,
+    "label": "Soul, consciousness, and embodiment",
+    "date": "2026-09-01",
+    "duration": "2 hr 14 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=utNKIpLq7HM",
+    "motion": "Does the soul exist?",
+    "summary": "Hernandez made a serious philosophical case from consciousness and personal unity, but Aron Ra’s cumulative brain-dependence evidence and burden challenge narrowly prevailed.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "The soul exists",
+        "speaker": "Eric Hernandez",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The soul does not exist",
+        "speaker": "Aron Ra",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 77,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "definition, scientific reach, and burden of proof"
+      },
+      {
+        "title": "intentionality, truth-bearing thought, and subjective experience"
+      },
+      {
+        "title": "unity, indivisibility, and identity through change"
+      },
+      {
+        "title": "free will, rational inference, and mental causation"
+      },
+      {
+        "title": "biological continuity, emergence, and explanatory need"
+      },
+      {
+        "title": "brain dependence, embodiment, animals, and emergence"
+      },
+      {
+        "title": "empirical testing, near-death experiences, and paranormal claims"
+      }
+    ]
   }
 ];
