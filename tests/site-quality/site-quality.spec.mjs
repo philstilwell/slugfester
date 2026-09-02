@@ -158,6 +158,15 @@ test("the rubric quality check offers six closed-by-default section examples", a
   await expect(accordion).toContainText("section-side scores, not overall debate results");
 });
 
+test("the comparison selectors include the boxing-gloves divider", async ({ page }) => {
+  await openRenderedPage(page, "/rankings/");
+
+  const divider = page.locator(".ranking-comparison-versus img");
+  await expect(divider).toHaveCount(1);
+  await expect(divider).toHaveAttribute("src", "/assets/debate-gloves.png");
+  await expect(divider).toHaveAttribute("alt", "");
+});
+
 test("carries a scorecard into the issue-report form and confirms delivery", async ({ page }) => {
   const debatePath = "/debate/craig-oconnor-god-debate-2026/";
   await openRenderedPage(page, debatePath);

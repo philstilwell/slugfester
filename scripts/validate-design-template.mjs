@@ -64,6 +64,7 @@ function requireExcludes(label, source, forbidden) {
 requireIncludes("app debate hero", app, 'class="debate-gloves-panel"');
 requireIncludes("app debate hero", app, 'src="/assets/debate-gloves.png"');
 requireIncludes("app sticky header", app, 'class="brand-logo" src="/assets/debate-gloves.png"');
+requireIncludes("app rankings comparison gloves", app, 'class="ranking-comparison-versus"');
 requireIncludes("app sticky header", app, 'class="external-sites"');
 requireIncludes("app sticky header", app, "External Sites");
 requireIncludes("app sticky header", app, 'class="primary-nav-link');
@@ -395,6 +396,7 @@ requireIncludes("backend rubric examples columns", styles, ".rubric-extremes-gri
 requireIncludes("backend rubric assessed move grouping", styles, ".rubric-extreme-assessment {");
 requireIncludes("backend rubric move score", styles, ".rubric-extreme-move-score {");
 requireIncludes("backend rubric example explanation", styles, ".rubric-extreme-analysis {");
+requireIncludes("rankings comparison gloves", styles, ".ranking-comparison-versus {");
 requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");
