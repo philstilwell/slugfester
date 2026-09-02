@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-tag-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "232",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "method": "fresh isolated read-only contexts containing only each score-blind packet and catalog snapshot",
+    "existingTagsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "scoresUnavailable": true,
+    "frequencyStatisticsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "7ea4081a2dbed43f0d47de1141db91e1e8512764a8dc05d0cedd30cd14dab16d",
+    "bytes": 3754
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "eda851dab5e4bf4722859fbef67842d1bda837f8f4be9d0eb98b8f275c70c73f",
+    "bytes": 75438
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "reasoningEffort": "low",
+      "sessionId": "01a05fea-cfd8-7b13-a511-ca6ae886ceb7",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "3dd8bd5f44d00bd917c861345840ef5b963e9fc6033c39f301ca72db222ff149",
+        "bytes": 11129
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "reasoningEffort": "low",
+      "sessionId": "01a05fea-cfd6-75e2-987c-9ce1c5323290",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "0bfd09d04f9469c88f83cc3ab24b7d63b8a9546c98e37120bd0491daf3e1c427",
+        "bytes": 11690
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-candidate-adjudication",
+      "reasoningEffort": "low",
+      "sessionId": "01a05fed-38aa-7d61-81b1-8c6fbc1a6d92",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "5e1e7c16f7225ec037196e4d6b5369b9c0dab119c6dc7f82a4b545ca1198065f",
+        "bytes": 66080
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "7fb7354bc84247ecfe350a96b16638aa61e3ed0cb719ffdb299c3aa77ce94d77",
+        "bytes": 7222
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "schemaRecovery": {
+    "failuresBeforeAnalysis": 0,
+    "invalidOutputAccepted": false,
+    "evidencePath": null
+  },
+  "finalDefinitionCheck": {
+    "reviewedEveryCandidate": true,
+    "finalAcceptedTagCount": 3,
+    "finalAcceptedOverallLinkCount": 2,
+    "overruledOverbroadAdjudicatorAcceptances": 2,
+    "overruledAdjudicatorRejections": 0,
+    "evidence": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "f3c80f3245631b9a20dee67fdf8eb40743d8544f55d2f0077a715f401f803b5a",
+      "bytes": 25523
+    }
+  },
+  "overallBlunderReview": {
+    "reviewedItems": 6,
+    "definitionsPerItem": 13,
+    "acceptedReferenceLinks": 2,
+    "preservedPassA": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/pass-a-output.json",
+    "preservedPassB": "docs/assessment-production/standalone-debates-v1/debate-232/publication/rhetorical-tag-review-1/pass-b-output.json"
+  },
+  "audit": {
+    "movesReviewed": 40,
+    "definitionsPerMove": 13,
+    "definitionComparisonsPerBlindPass": 520,
+    "allCandidateDefinitionComparisonsPerBlindPass": 598,
+    "blindReviews": 2,
+    "adjudications": 26,
+    "contextsAttempted": 3,
+    "validContexts": 3,
+    "transportSchemaFailuresBeforeAnalysis": 0,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "completedAt": "2026-09-02T02:29:33.046Z"
+}

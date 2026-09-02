@@ -10741,5 +10741,55 @@ export const debateSummaries = [
         "title": "empirical testing, near-death experiences, and paranormal claims"
       }
     ]
+  },
+  {
+    "id": "goff-oppy-finite-theism-naturalism-2026",
+    "number": "232",
+    "title": "Philip Goff vs Graham Oppy: Is Finite Theism Preferable to Naturalism?",
+    "year": 2026,
+    "label": "Finite theism, naturalism, and purpose",
+    "date": "2026-09-01",
+    "duration": "1 hr 50 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=u9ZuXmpod0Q",
+    "motion": "Is finite theism preferable to naturalism?",
+    "summary": "Goff’s finite God unifies purposive value and suffering through limited power; Oppy’s naturalism counters with simplicity, modal uncertainty, and evolutionary explanation, producing a tie.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Finite theism is preferable to naturalism",
+        "speaker": "Philip Goff",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalism is preferable to finite theism",
+        "speaker": "Graham Oppy",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 79,
+      "winner": "tie"
+    },
+    "sections": [
+      {
+        "title": "Finite divine power and suffering"
+      },
+      {
+        "title": "Fine-tuning, comparative evidence, and modality"
+      },
+      {
+        "title": "Simplicity, prior probability, and theory comparison"
+      },
+      {
+        "title": "Consciousness, psychophysical harmony, and evolution"
+      },
+      {
+        "title": "Libertarian freedom, mind, and value"
+      },
+      {
+        "title": "Neighboring theisms, polytheism, and strongest challenges"
+      }
+    ]
   }
 ];

@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "232",
+  "debateId": "goff-oppy-finite-theism-naturalism-2026",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-01:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-01",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "pro-07:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-07",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "pro-10:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-10",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-01:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-01",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "pro-14:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-14",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-03:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-03",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-08:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-08",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-12:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "con-12",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "It answers causal exclusion but only partly addresses why conscious rather than nonconscious states arose."
+        },
+        "option-b": {
+          "value": 70,
+          "rationale": "The move answers causal exclusion but only partly addresses why conscious rather than nonconscious mechanisms evolved."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Any incompleteness in establishing the stipulated divine limit, comparative likelihoods, or simplicity is already represented in the relevant move dimensions and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-joint-explanation",
+              "pro-central-fine-tuning",
+              "pro-central-suffering-limits",
+              "pro-central-consciousness-agency",
+              "pro-subsidiary-simplicity"
+            ],
+            "completionCriterion": "Finite theism must receive positive comparative support across its joint explanation and principal evidential bridges.",
+            "relatedMoveIds": [
+              "pro-03",
+              "pro-04",
+              "pro-10",
+              "pro-11",
+              "pro-15",
+              "pro-18",
+              "pro-19",
+              "pro-20"
+            ],
+            "distinctConsequence": "No additional debate-wide consequence remains separate from the scored gaps in warrant, relevance, and responsiveness.",
+            "alreadyCapturedBy": [
+              "pro-03.evidenceWarrant",
+              "pro-04.evidenceWarrant",
+              "pro-11.evidenceWarrant",
+              "pro-15.evidenceWarrant",
+              "pro-19.evidenceWarrant"
+            ],
+            "counterfactual": "Without those move-level deductions, an adjustment might capture incomplete positive comparison, but applying it now would duplicate them."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incompleteness in establishing the precise divine limitation and comparative likelihoods is already reflected in the ratings of the relevant central moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-joint-explanation",
+              "pro-central-fine-tuning",
+              "pro-central-suffering-limits",
+              "pro-central-consciousness-agency",
+              "pro-subsidiary-simplicity"
+            ],
+            "completionCriterion": "Finite theism must be positively supported as comparatively preferable through defended joint explanation, limitation, likelihood, agency, and simplicity claims.",
+            "relatedMoveIds": [
+              "pro-03",
+              "pro-04",
+              "pro-06",
+              "pro-10",
+              "pro-11",
+              "pro-15",
+              "pro-18",
+              "pro-19",
+              "pro-20"
+            ],
+            "distinctConsequence": "No additional debate-wide consequence remains separate from the move-level treatment of unsupported comparative and model-specification bridges.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "relevanceBurden",
+              "responsiveness"
+            ],
+            "counterfactual": "Without the identified gaps, the cited moves would receive stronger ratings; adding an adjustment would duplicate that recorded effect."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Naturalism's incomplete positive application of simplicity, modality, and evolutionary explanation is already captured by the corresponding move ratings and burden contacts.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-total-theory",
+              "con-central-modal-fine-tuning",
+              "con-central-simplicity-method",
+              "con-central-evolution-consciousness"
+            ],
+            "completionCriterion": "Naturalism must be comparatively supported by defended simplicity, evidential fit, modality, and explanatory resources.",
+            "relatedMoveIds": [
+              "con-07",
+              "con-10",
+              "con-11",
+              "con-12",
+              "con-15",
+              "con-16",
+              "con-18",
+              "con-19"
+            ],
+            "distinctConsequence": "No separate global consequence remains beyond the scored underdevelopment of Oppy's positive comparative case.",
+            "alreadyCapturedBy": [
+              "con-07.evidenceWarrant",
+              "con-10.evidenceWarrant",
+              "con-11.evidenceWarrant",
+              "con-12.relevanceBurden",
+              "con-15.evidenceWarrant",
+              "con-18.relevanceBurden"
+            ],
+            "counterfactual": "If these local ratings had not recorded the incomplete positive case, a burden adjustment could be warranted; here it would double-count."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The limits of Oppy's positive simplicity, modality, and evolutionary case are already captured in the corresponding move ratings and burden assessments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-total-theory",
+              "con-central-modal-fine-tuning",
+              "con-central-simplicity-method",
+              "con-central-evolution-consciousness"
+            ],
+            "completionCriterion": "Naturalism must be defended through comparative simplicity and fit, supported modality, and adequate naturalistic explanatory resources.",
+            "relatedMoveIds": [
+              "con-07",
+              "con-08",
+              "con-10",
+              "con-11",
+              "con-12",
+              "con-15",
+              "con-16",
+              "con-18",
+              "con-19"
+            ],
+            "distinctConsequence": "No uncaptured debate-wide consequence remains beyond the locally rated underdevelopment of modality, method, simplicity application, and evolutionary explanation.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "relevanceBurden",
+              "responsiveness",
+              "calibrationCharity"
+            ],
+            "counterfactual": "If those positive claims had been more fully defended, their move ratings would rise; a separate adjustment would count the same shortcomings again."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 40,
+    "disputesExtracted": 10,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}
