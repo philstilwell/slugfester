@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "234",
+  "debateId": "mcgilchrist-kastrup-consciousness-purpose-2025",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-16-purpose-as-co-creation:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-16-purpose-as-co-creation",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured: the participatory, divine-development, and value claims are already reflected in the ratings of the linked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-participatory-value",
+              "pro-central-encounter",
+              "pro-central-unfolding-god",
+              "pro-subsidiary-knowing-value"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an unscored debate-wide effect on completion of pro's comparative explanatory burden.",
+            "relatedMoveIds": [
+              "pro-03-reciprocal-co-creation",
+              "pro-05-experience-real-deal",
+              "pro-14-panentheistic-unfolding",
+              "pro-15-freedom-and-developing-god",
+              "pro-16-purpose-as-co-creation",
+              "pro-18-value-capacity"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the move-level treatment of encounter, co-creation, freedom, and objective value was identified.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without the cited move ratings, pro's comparative burden would be less complete, but that effect is already captured and cannot justify an additional adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incompleteness in establishing objective value and comparative co-creation is already reflected in the relevant move-level warrant and burden ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-participatory-value",
+              "pro-central-unfolding-god"
+            ],
+            "completionCriterion": "Establish why value-directed co-creation explains purpose better than perspectival self-discovery.",
+            "relatedMoveIds": [
+              "pro-03-reciprocal-co-creation",
+              "pro-15-freedom-and-developing-god",
+              "pro-16-purpose-as-co-creation",
+              "pro-18-value-capacity"
+            ],
+            "distinctConsequence": "The objective status and unique explanatory force of value remain incompletely defended.",
+            "alreadyCapturedBy": [
+              "pro-16-purpose-as-co-creation.evidenceWarrant",
+              "pro-18-value-capacity.evidenceWarrant",
+              "pro-03-reciprocal-co-creation.evidenceWarrant"
+            ],
+            "counterfactual": "Absent those move-level deductions, the gap could reduce completion of the motion burden."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured: representation, mind-at-large, novelty, and perspectival purpose are already reflected in the ratings of the linked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-perspectival-idealism",
+              "con-central-representation",
+              "con-central-mind-at-large",
+              "con-subsidiary-perspective-purpose"
+            ],
+            "completionCriterion": "A nonzero adjustment would require an unscored debate-wide effect on completion of con's comparative explanatory burden.",
+            "relatedMoveIds": [
+              "con-03-matter-as-representation",
+              "con-05-perceptual-encoding",
+              "con-10-being-versus-observing",
+              "con-13-qualified-divine-attributes",
+              "con-15-computationally-irreducible-purpose",
+              "con-16-human-perspective"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the move-level treatment of encoding, divine awareness, open futurity, and localized significance was identified.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without the cited move ratings, con's comparative burden would be less complete, but that effect is already captured and cannot justify an additional adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incompleteness in establishing representation and mind-at-large is already reflected in the relevant move-level warrant and burden ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-central-representation",
+              "con-central-mind-at-large"
+            ],
+            "completionCriterion": "Establish that perspectival encoding and one mind-at-large outperform participatory encounter.",
+            "relatedMoveIds": [
+              "con-05-perceptual-encoding",
+              "con-07-entropy-argument",
+              "con-10-being-versus-observing",
+              "con-13-qualified-divine-attributes"
+            ],
+            "distinctConsequence": "The model's core representation and unitary-subject premises remain incompletely evidenced.",
+            "alreadyCapturedBy": [
+              "con-05-perceptual-encoding.evidenceWarrant",
+              "con-07-entropy-argument.evidenceWarrant",
+              "con-09-world-for-itself.evidenceWarrant",
+              "con-13-qualified-divine-attributes.evidenceWarrant"
+            ],
+            "counterfactual": "Absent those move-level deductions, the gap could reduce completion of the central con burdens."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 34,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-234/inventory/inventory.json",
+      "sha256": "b23e6579819a31625240a513fd1907d324f4e76d28e69b5ac2cfcf7beb84ddde"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-234/judgments/pass-a/output.json",
+      "sha256": "3c7e9e6bbddcea887dc9ac3920c48c2baf458d00d66173fee8fee73bd3759c8a"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-234/judgments/pass-b/output.json",
+      "sha256": "46a9317f4405af21d2b3fd20892eb9461b5e8057c73fb3ebeba838d7295d32de"
+    }
+  }
+}

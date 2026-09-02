@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "debateNumber",
+    "decisions"
+  ],
+  "properties": {
+    "debateNumber": {
+      "type": "string",
+      "const": "234"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 27,
+      "maxItems": 27,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateKey",
+          "decision",
+          "rationale",
+          "context"
+        ],
+        "properties": {
+          "candidateKey": {
+            "type": "string",
+            "enum": [
+              "pro-01-consciousness-ground|fallacy|Begging the question",
+              "pro-06-matter-phase|fallacy|Argument from ignorance",
+              "pro-06-matter-phase|fallacy|Begging the question",
+              "pro-04-attention-and-presence|fallacy|Red herring",
+              "pro-08-illusion-fallibility|bias|Base-rate neglect",
+              "con-07-entropy-argument|fallacy|Red herring",
+              "con-09-world-for-itself|fallacy|Begging the question",
+              "pro-15-freedom-and-developing-god|fallacy|Appeal to authority",
+              "con-08-fitness-encoding|fallacy|Appeal to authority",
+              "pro-13-intelligence-throughout-nature|fallacy|Appeal to authority",
+              "con-12-spontaneous-cosmic-intelligence|bias|Scope neglect",
+              "con-13-qualified-divine-attributes|fallacy|Begging the question",
+              "con-13-qualified-divine-attributes|fallacy|Equivocation",
+              "pro-09-richer-than-dashboard|fallacy|Equivocation",
+              "pro-09-richer-than-dashboard|fallacy|Red herring",
+              "pro-10-unmeasurable-realities|fallacy|Red herring",
+              "pro-10-unmeasurable-realities|bias|Subjective validation",
+              "pro-12-imaginative-contact|bias|Subjective validation",
+              "pro-17-survival-not-purpose|fallacy|Argument from ignorance",
+              "pro-17-survival-not-purpose|fallacy|Red herring",
+              "pro-18-value-capacity|fallacy|Begging the question",
+              "overall-pro-1|fallacy|Red herring",
+              "overall-pro-2|fallacy|Begging the question",
+              "overall-pro-3|fallacy|Red herring",
+              "overall-con-1|fallacy|Red herring",
+              "overall-con-2|bias|Confirmation bias",
+              "overall-con-3|bias|Scope neglect"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

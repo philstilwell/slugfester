@@ -10841,5 +10841,58 @@ export const debateSummaries = [
         "title": "Science, spirituality, and the closing critique"
       }
     ]
+  },
+  {
+    "id": "mcgilchrist-kastrup-consciousness-purpose-2025",
+    "number": "234",
+    "title": "Iain McGilchrist vs Bernardo Kastrup: Consciousness, God, Truth, and Purpose",
+    "year": 2025,
+    "label": "Consciousness, participation, and cosmic purpose",
+    "date": "2026-09-02",
+    "duration": "1 hr 24 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=c66QqSHDSNI",
+    "motion": "Does a participatory, value-directed account better explain consciousness and cosmic purpose than analytic idealism's perspectival account?",
+    "summary": "Both consciousness-first accounts converged substantially, but Kastrup’s sharper perspectival distinctions and replies narrowly surpassed McGilchrist’s richer yet less-warranted value-directed participatory case.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Participatory, value-directed co-creation",
+        "speaker": "Iain McGilchrist",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Analytic idealism's perspectival account",
+        "speaker": "Bernardo Kastrup",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Consciousness as primitive and the explanation of matter"
+      },
+      {
+        "title": "Representation, perception, and access to reality"
+      },
+      {
+        "title": "Field, relation, participation, and subject boundaries"
+      },
+      {
+        "title": "Constraint, agency, freedom, and novelty"
+      },
+      {
+        "title": "God, mind-at-large, and cosmic intelligence"
+      },
+      {
+        "title": "Truth, ways of knowing, humility, and value"
+      },
+      {
+        "title": "Purpose, suffering, human significance, and culture"
+      }
+    ]
   }
 ];

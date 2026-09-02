@@ -1,0 +1,396 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "debateNumber",
+    "reviewerPass",
+    "reviewedMoveIds",
+    "definitionReview",
+    "candidateReviewSemantics",
+    "candidateReviews",
+    "reviewedOverallBlunderIds",
+    "overallDefinitionReview",
+    "overallCandidateReviews"
+  ],
+  "properties": {
+    "debateNumber": {
+      "type": "string",
+      "const": "234"
+    },
+    "reviewerPass": {
+      "type": "string",
+      "const": "blind-review-b"
+    },
+    "reviewedMoveIds": {
+      "type": "array",
+      "minItems": 34,
+      "maxItems": 34,
+      "items": {
+        "type": "string",
+        "enum": [
+          "pro-01-consciousness-ground",
+          "con-01-primitive-agreement",
+          "pro-06-matter-phase",
+          "con-02-no-explanatory-gap",
+          "con-03-matter-as-representation",
+          "pro-04-attention-and-presence",
+          "con-05-perceptual-encoding",
+          "pro-05-experience-real-deal",
+          "con-06-illusion-challenge",
+          "pro-08-illusion-fallibility",
+          "con-07-entropy-argument",
+          "pro-02-field-process-relation",
+          "con-09-world-for-itself",
+          "pro-03-reciprocal-co-creation",
+          "con-10-being-versus-observing",
+          "pro-11-epistemic-boundary",
+          "pro-14-panentheistic-unfolding",
+          "pro-07-resistance-permanence",
+          "con-04-objective-mental-world",
+          "pro-15-freedom-and-developing-god",
+          "con-08-fitness-encoding",
+          "con-15-computationally-irreducible-purpose",
+          "pro-13-intelligence-throughout-nature",
+          "con-12-spontaneous-cosmic-intelligence",
+          "con-13-qualified-divine-attributes",
+          "con-14-immanent-transcendent-god",
+          "pro-09-richer-than-dashboard",
+          "con-11-intuition-as-root",
+          "pro-10-unmeasurable-realities",
+          "pro-12-imaginative-contact",
+          "pro-16-purpose-as-co-creation",
+          "con-16-human-perspective",
+          "pro-17-survival-not-purpose",
+          "pro-18-value-capacity"
+        ]
+      }
+    },
+    "definitionReview": {
+      "type": "array",
+      "minItems": 34,
+      "maxItems": 34,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "definitionsReviewed",
+          "seriousCandidateLabels"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-01-consciousness-ground",
+              "con-01-primitive-agreement",
+              "pro-06-matter-phase",
+              "con-02-no-explanatory-gap",
+              "con-03-matter-as-representation",
+              "pro-04-attention-and-presence",
+              "con-05-perceptual-encoding",
+              "pro-05-experience-real-deal",
+              "con-06-illusion-challenge",
+              "pro-08-illusion-fallibility",
+              "con-07-entropy-argument",
+              "pro-02-field-process-relation",
+              "con-09-world-for-itself",
+              "pro-03-reciprocal-co-creation",
+              "con-10-being-versus-observing",
+              "pro-11-epistemic-boundary",
+              "pro-14-panentheistic-unfolding",
+              "pro-07-resistance-permanence",
+              "con-04-objective-mental-world",
+              "pro-15-freedom-and-developing-god",
+              "con-08-fitness-encoding",
+              "con-15-computationally-irreducible-purpose",
+              "pro-13-intelligence-throughout-nature",
+              "con-12-spontaneous-cosmic-intelligence",
+              "con-13-qualified-divine-attributes",
+              "con-14-immanent-transcendent-god",
+              "pro-09-richer-than-dashboard",
+              "con-11-intuition-as-root",
+              "pro-10-unmeasurable-realities",
+              "pro-12-imaginative-contact",
+              "pro-16-purpose-as-co-creation",
+              "con-16-human-perspective",
+              "pro-17-survival-not-purpose",
+              "pro-18-value-capacity"
+            ]
+          },
+          "definitionsReviewed": {
+            "type": "integer",
+            "const": 13
+          },
+          "seriousCandidateLabels": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Appeal to authority",
+                "Argument from ignorance",
+                "Begging the question",
+                "Equivocation",
+                "Red herring",
+                "Special pleading",
+                "Ambiguity effect",
+                "Authority bias",
+                "Base-rate neglect",
+                "Belief bias",
+                "Confirmation bias",
+                "Scope neglect",
+                "Subjective validation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "candidateReviewSemantics": {
+      "type": "string",
+      "const": "Complete table of every serious card candidate considered after testing all 13 definitions; accepted and rejected decisions are both preserved."
+    },
+    "candidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "label",
+          "type",
+          "decision",
+          "rationale",
+          "url",
+          "context"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-01-consciousness-ground",
+              "con-01-primitive-agreement",
+              "pro-06-matter-phase",
+              "con-02-no-explanatory-gap",
+              "con-03-matter-as-representation",
+              "pro-04-attention-and-presence",
+              "con-05-perceptual-encoding",
+              "pro-05-experience-real-deal",
+              "con-06-illusion-challenge",
+              "pro-08-illusion-fallibility",
+              "con-07-entropy-argument",
+              "pro-02-field-process-relation",
+              "con-09-world-for-itself",
+              "pro-03-reciprocal-co-creation",
+              "con-10-being-versus-observing",
+              "pro-11-epistemic-boundary",
+              "pro-14-panentheistic-unfolding",
+              "pro-07-resistance-permanence",
+              "con-04-objective-mental-world",
+              "pro-15-freedom-and-developing-god",
+              "con-08-fitness-encoding",
+              "con-15-computationally-irreducible-purpose",
+              "pro-13-intelligence-throughout-nature",
+              "con-12-spontaneous-cosmic-intelligence",
+              "con-13-qualified-divine-attributes",
+              "con-14-immanent-transcendent-god",
+              "pro-09-richer-than-dashboard",
+              "con-11-intuition-as-root",
+              "pro-10-unmeasurable-realities",
+              "pro-12-imaginative-contact",
+              "pro-16-purpose-as-co-creation",
+              "con-16-human-perspective",
+              "pro-17-survival-not-purpose",
+              "pro-18-value-capacity"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "reviewedOverallBlunderIds": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "enum": [
+          "overall-pro-1",
+          "overall-pro-2",
+          "overall-pro-3",
+          "overall-con-1",
+          "overall-con-2",
+          "overall-con-3"
+        ]
+      }
+    },
+    "overallDefinitionReview": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "definitionsReviewed",
+          "seriousCandidateLabels"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string",
+            "enum": [
+              "overall-pro-1",
+              "overall-pro-2",
+              "overall-pro-3",
+              "overall-con-1",
+              "overall-con-2",
+              "overall-con-3"
+            ]
+          },
+          "definitionsReviewed": {
+            "type": "integer",
+            "const": 13
+          },
+          "seriousCandidateLabels": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Appeal to authority",
+                "Argument from ignorance",
+                "Begging the question",
+                "Equivocation",
+                "Red herring",
+                "Special pleading",
+                "Ambiguity effect",
+                "Authority bias",
+                "Base-rate neglect",
+                "Belief bias",
+                "Confirmation bias",
+                "Scope neglect",
+                "Subjective validation"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "overallCandidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "label",
+          "type",
+          "decision",
+          "rationale",
+          "url"
+        ],
+        "properties": {
+          "itemId": {
+            "type": "string",
+            "enum": [
+              "overall-pro-1",
+              "overall-pro-2",
+              "overall-pro-3",
+              "overall-con-1",
+              "overall-con-2",
+              "overall-con-3"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
