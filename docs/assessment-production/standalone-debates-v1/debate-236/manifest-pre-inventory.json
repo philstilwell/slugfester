@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0-standalone-debate-manifest",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "source-frozen-before-inventory",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "videoId": "EHIIgQdA2e8",
+  "sourceLocks": {
+    "rawTranscriptIndex": {
+      "path": ".assessment-cache/captions/EHIIgQdA2e8/openai-timestamped-chunks.json",
+      "sha256": "fe9fa65a8bb5b3cbb1bdc3dfb091a42fcad54951001ad739c4ee91f3870e1dcc",
+      "bytes": 7473
+    },
+    "events": {
+      "path": ".assessment-cache/captions/EHIIgQdA2e8/events.json",
+      "sha256": "902632d9a607a36ef1a2b852a4700448f0a36f9ab68c5c7c8e34cb0ebdac74a7",
+      "bytes": 282327
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/EHIIgQdA2e8/transcript.txt",
+      "sha256": "e7b586cb96aec5e2a25859168cd7dd0d685347d29baf6c32c5f12c3e363b8131",
+      "bytes": 173135
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/EHIIgQdA2e8/manifest.json",
+      "sha256": "30988f68c49f9b0a5eb64ef235dbdb7edc04922fabced919b105cd4d96cabafe",
+      "bytes": 2535
+    },
+    "chunkPlan": {
+      "path": ".assessment-cache/debate-236-source/chunk-recovery-plan.json",
+      "sha256": "4d793dc96f30bce18f8bd7a577bd9628d1bde4f06c2323592c57c88a0cd43dbb",
+      "bytes": 6832
+    },
+    "chunkExecution": {
+      "path": ".assessment-cache/debate-236-source/chunk-recovery-progress.json",
+      "sha256": "515b9473cd1902bac5b0efc2a826586fc13f254a41f8775d96713bb838d40dd7",
+      "bytes": 7649
+    },
+    "boundaryAudit": {
+      "path": ".assessment-cache/debate-236-source/chunk-boundary-audit.json",
+      "sha256": "b50ef7b3279e3d5a4e909c5af78e3fe03938233667d8d4fca87001c792d4b8a4",
+      "bytes": 2240
+    }
+  },
+  "controlLocks": {
+    "productionWorkflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "publicationReadiness": {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    "scoreStabilityPolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "scoreCalculator": {
+      "path": "scripts/lib/v4-lean-production.mjs",
+      "sha256": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+      "bytes": 39666
+    },
+    "scoreDimensions": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "sourceRenderer": {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    "standaloneProtocolLibrary": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df",
+      "bytes": 41775
+    },
+    "standaloneProtocolAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81",
+      "bytes": 52562
+    },
+    "contentParityAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec",
+      "bytes": 12735
+    },
+    "rhetoricalTagAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "81106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838",
+      "bytes": 9512
+    },
+    "productionValidator": {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "dbeab033b008e7adf19aa7ea2c45b3568e3ad157a4bfa769ffd720ee84ad9ed5",
+      "bytes": 89109
+    },
+    "packageScripts": {
+      "path": "package.json",
+      "sha256": "9da6228b21c2ecbbf16b1f335e7c69b8210c21d37fd33d40027f5fa80d9b226a",
+      "bytes": 63920
+    }
+  },
+  "modelSettings": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "scoringControls": {
+    "dimensionDisagreementThreshold": 8,
+    "moveScoreDisagreementThreshold": 4,
+    "burdenAdjustmentDisagreementThreshold": 2,
+    "oneScorePass": true,
+    "scoreProtocolId": "standalone-v1-single-deterministic-score-pass"
+  },
+  "inventoryControls": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "uniqueSemanticSectionIdsRequired": true,
+    "selectionBalanceAuditRequired": true,
+    "totalDifferenceRequiringRationale": 3,
+    "sectionDifferenceRequiringRationale": 2,
+    "publicationCapacityAuditRequired": true,
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "fourthRowPreauthorizationRequired": true,
+    "moderatorMaterialExcluded": true,
+    "speakerAttributionReviewRequired": true
+  },
+  "expectedArtifacts": [
+    "source/source-lock.json",
+    "inventory/inventory.json",
+    "judgments/judgment-packet.json",
+    "judgments/pass-a/output.json",
+    "judgments/pass-b/output.json",
+    "disagreements/disagreements.json",
+    "audio/audio-verification.json",
+    "adjudication/output.json",
+    "final-ledger/final-ledger.json",
+    "score-pass/output.json",
+    "publication/output.json",
+    "publication/content-parity-audit.json",
+    "publication/rhetorical-tag-audit.json",
+    "rendering/rendering-audit.json",
+    "validation-summary.json",
+    "report.md"
+  ]
+}

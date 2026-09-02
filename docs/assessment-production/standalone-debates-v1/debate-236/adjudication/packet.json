@@ -1,0 +1,1704 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-disputes-only",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "motion": "Is moral realism true?",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/inventory/inventory.json",
+      "sha256": "388f60cc034465f5bb6850a72816a1095d1b383f5c1dc06e614b91710ead5c6d"
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/disagreements/disagreements.json",
+      "sha256": "74aace0b26a79f365d7663c7138f34b7153c9500eed386e747b694989fc0799f"
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/audio/audio-verification.json",
+      "sha256": "20aa9ed570ac58d65f60e8c8329ef841277a6497fc5a2df698eb4f743c9b9e90"
+    }
+  },
+  "isolationBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "instructions": {
+    "resolveEveryDisputeExactlyOnceInPacketOrder": true,
+    "selectOnlyOptionAOrOptionB": true,
+    "evaluateAgainstExactLockedEvidenceAndRubricMeaning": true,
+    "doNotAverageInventOrRewriteOptions": true,
+    "doNotCalculateScoresOrInferWinner": true,
+    "optionLettersCarryNoReviewerIdentityOrPreference": true
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-welfare-is-explanation:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "pro-welfare-is-explanation",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "The response coherently treats the child's importance as a terminating normative explanation, though that stopping point remains disputed."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "The response consistently identifies welfare facts as reasons, but repeating them does not fully answer a request for their normative connection."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-welfare-is-explanation",
+          "sectionId": "intelligibility-of-reasons",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 387,
+            "endEvent": 391,
+            "startMs": 1871640,
+            "endMs": 1894360,
+            "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+          },
+          "quoteEligibleExactSpans": [
+            "the explanation was given",
+            "Because that kid matters",
+            "the reason is because he matters"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-reasons-intelligible",
+            "tier": "central",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-private-understanding-insufficient"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "explanation-can-be-ungrasped",
+              "targetMoveId": "con-private-understanding-insufficient",
+              "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+              "contacted": true,
+              "decisive": false
+            }
+          ],
+          "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+          "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "pro-welfare-is-explanation:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "pro-welfare-is-explanation",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "The welfare and cost facts support rescue, but warrant for treating 'he matters' as irreducibly explanatory is largely intuitive."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Concrete facts about harm, benefit, and cost warrant rescue strongly, while their irreducibly normative status remains the disputed premise."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-welfare-is-explanation",
+          "sectionId": "intelligibility-of-reasons",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 387,
+            "endEvent": 391,
+            "startMs": 1871640,
+            "endMs": 1894360,
+            "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+          },
+          "quoteEligibleExactSpans": [
+            "the explanation was given",
+            "Because that kid matters",
+            "the reason is because he matters"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-reasons-intelligible",
+            "tier": "central",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-private-understanding-insufficient"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "explanation-can-be-ungrasped",
+              "targetMoveId": "con-private-understanding-insufficient",
+              "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+              "contacted": true,
+              "decisive": false
+            }
+          ],
+          "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+          "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "pro-welfare-is-explanation:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-welfare-is-explanation",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 91,
+          "rationale": "It directly answers the demand for a public explanation and identifies exactly which facts constitute that explanation."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "It answers the demand by naming the proposed explanation, yet leaves the opponent's concern about how those facts generate reasons unresolved."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-welfare-is-explanation",
+          "sectionId": "intelligibility-of-reasons",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 387,
+            "endEvent": 391,
+            "startMs": 1871640,
+            "endMs": 1894360,
+            "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+          },
+          "quoteEligibleExactSpans": [
+            "the explanation was given",
+            "Because that kid matters",
+            "the reason is because he matters"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-reasons-intelligible",
+            "tier": "central",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-private-understanding-insufficient"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "explanation-can-be-ungrasped",
+              "targetMoveId": "con-private-understanding-insufficient",
+              "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+              "contacted": true,
+              "decisive": false
+            }
+          ],
+          "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+          "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "pro-welfare-is-explanation:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "pro-welfare-is-explanation",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "The move defends the intelligibility of primitive reasons, but does not establish that the proposed explanation is stance-independently true."
+        },
+        "option-b": {
+          "value": 80,
+          "rationale": "The reply keeps the central affirmative explanation in view, but its success depends on accepting the very normative understanding under dispute."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-welfare-is-explanation",
+          "sectionId": "intelligibility-of-reasons",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 387,
+            "endEvent": 391,
+            "startMs": 1871640,
+            "endMs": 1894360,
+            "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+          },
+          "quoteEligibleExactSpans": [
+            "the explanation was given",
+            "Because that kid matters",
+            "the reason is because he matters"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-reasons-intelligible",
+            "tier": "central",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-private-understanding-insufficient"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "explanation-can-be-ungrasped",
+              "targetMoveId": "con-private-understanding-insufficient",
+              "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+              "contacted": true,
+              "decisive": false
+            }
+          ],
+          "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+          "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "pro-welfare-is-explanation:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "pro-welfare-is-explanation",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 88,
+          "rationale": "The explanation and the difference between requesting a reason and failing to grasp it are expressed with useful clarity."
+        },
+        "option-b": {
+          "value": 87,
+          "rationale": "The claimed reason and explanatory facts are stated plainly, with the hearer's failure to grasp them clearly distinguished."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-welfare-is-explanation",
+          "sectionId": "intelligibility-of-reasons",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 387,
+            "endEvent": 391,
+            "startMs": 1871640,
+            "endMs": 1894360,
+            "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+          },
+          "quoteEligibleExactSpans": [
+            "the explanation was given",
+            "Because that kid matters",
+            "the reason is because he matters"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-reasons-intelligible",
+            "tier": "central",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-private-understanding-insufficient"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "explanation-can-be-ungrasped",
+              "targetMoveId": "con-private-understanding-insufficient",
+              "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+              "contacted": true,
+              "decisive": false
+            }
+          ],
+          "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+          "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "pro-welfare-is-explanation:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-welfare-is-explanation",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "It accurately recognizes the opponent's continued incomprehension, though it somewhat quickly treats repetition as sufficient explanation."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "The response fairly recognizes continued incomprehension, though it somewhat understates the opponent's request for a deeper conceptual account."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-welfare-is-explanation",
+          "sectionId": "intelligibility-of-reasons",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 387,
+            "endEvent": 391,
+            "startMs": 1871640,
+            "endMs": 1894360,
+            "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+          },
+          "quoteEligibleExactSpans": [
+            "the explanation was given",
+            "Because that kid matters",
+            "the reason is because he matters"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-reasons-intelligible",
+            "tier": "central",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-private-understanding-insufficient"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "explanation-can-be-ungrasped",
+              "targetMoveId": "con-private-understanding-insufficient",
+              "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+              "contacted": true,
+              "decisive": false
+            }
+          ],
+          "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+          "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "pro-empirical-test-illicit:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "pro-empirical-test-illicit",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 89,
+          "rationale": "It directly addresses the engineering-style test and explains why that particular evidential demand mismatches the affirmative ontology."
+        },
+        "option-b": {
+          "value": 76,
+          "rationale": "It directly answers the empirical-test analogy yet only partially addresses the wider request for any independent adjudicative standard."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "pro-empirical-test-illicit",
+          "sectionId": "corroboration-and-intuition",
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 416,
+            "endEvent": 419,
+            "startMs": 2006840,
+            "endMs": 2025480,
+            "excerpt": "I mean, the non-naturalist realist, at least, is going to say, yeah, well, of course we don't have one of those. Because remember, we're telling you these are non-natural moral facts. They're not identical to any particular empirical entity that's out there. So the fact that we don't have such a test isn't going to be that probative. You wouldn't expect to find one. Another test that we"
+          },
+          "quoteEligibleExactSpans": [
+            "of course we don't have one of those",
+            "these are non-natural moral facts",
+            "such a test isn't going to be that probative"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker identifies the non-naturalist position as his own and answers Lance's detector demand.",
+          "importance": 3,
+          "burdenContact": {
+            "bridgeId": "pro-nonnatural-method",
+            "tier": "subsidiary",
+            "polarity": "defends"
+          },
+          "respondsToIds": [
+            "con-no-independent-test"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "test-mismatches-ontology",
+              "targetMoveId": "con-no-independent-test",
+              "text": "An empirical detector is not expected for non-natural facts, so its absence is not probative against them.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "proposition": "The absence of an empirical moral-property detector is expected under non-naturalism and therefore does not count strongly against it.",
+          "inventoryRationale": "This is the principal realist response to the independent-corroboration demand."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "con-academic-selection-hypothesis:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-academic-selection-hypothesis",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      },
+      "evidence": {
+        "move": {
+          "moveId": "con-academic-selection-hypothesis",
+          "sectionId": "explanation-and-genealogy",
+          "side": "con",
+          "speaker": "Lance Bush",
+          "moveKind": "constructive",
+          "sourceSpan": {
+            "startEvent": 995,
+            "endEvent": 998,
+            "startMs": 4747480,
+            "endMs": 4769080,
+            "excerpt": "self-searching fact, and what we'll find out if we go and investigate ordinary people is that you don't see the same proportion of people claiming that these concepts make sense or that they're true among laypeople. So one thing is that you're going to end up getting... This is going to be this sort of narrow demographic, which is academic philosophers that tend to endorse this view."
+          },
+          "quoteEligibleExactSpans": [
+            "you don't see the same proportion of people claiming that these concepts make sense",
+            "this sort of narrow demographic, which is academic philosophers"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "Lance identifies his own minority position and proposes the empirical explanation in a continuous first-person turn.",
+          "importance": 1,
+          "burdenContact": {
+            "bridgeId": "con-projection-genealogy",
+            "tier": "subsidiary",
+            "polarity": "supports"
+          },
+          "respondsToIds": [],
+          "responseComponents": [],
+          "proposition": "The intelligibility consensus may reflect selection into academic philosophy rather than reliable recognition of normative facts.",
+          "inventoryRationale": "This materially accepts the explanatory burden and states the first empirical route Lance proposes for meeting it."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate debate-wide affirmative consequence remains uncaptured by the move-level ratings and rationales.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-realism-true",
+              "pro-reasons-intelligible",
+              "pro-intuition-justifies",
+              "pro-nonnatural-method",
+              "pro-normative-explanation"
+            ],
+            "completionCriterion": "A nonzero adjustment would require a distinct affirmative burden-completion consequence not represented in any rated move.",
+            "relatedMoveIds": [
+              "pro-defines-realism",
+              "pro-local-cognitivism-suffices",
+              "pro-drowning-child-reason",
+              "pro-welfare-is-explanation",
+              "pro-empirical-test-illicit",
+              "pro-clear-cases-justify",
+              "pro-private-evidence-still-justifies",
+              "pro-zorpian-facts-are-moral-facts",
+              "pro-disciplinary-understanding-shifts-burden",
+              "pro-norms-guide-goal-revision",
+              "pro-burden-awaits-evidence",
+              "pro-parsimony-omits-normativity"
+            ],
+            "distinctConsequence": "The affirmative's burden completion is fully represented by its constructive and reply moves in the locked inventory.",
+            "alreadyCapturedBy": [
+              "pro-defines-realism",
+              "pro-drowning-child-reason",
+              "pro-clear-cases-justify",
+              "pro-private-evidence-still-justifies",
+              "pro-norms-guide-goal-revision",
+              "pro-parsimony-omits-normativity"
+            ],
+            "counterfactual": "Without duplicate capture, no remaining affirmative consequence would change completion of a locked burden."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence remains beyond the effects already represented in the locked move-level judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment requires a distinct unscored consequence changing completion of an identified affirmative burden.",
+            "relatedMoveIds": [
+              "pro-drowning-child-reason",
+              "pro-clear-cases-justify",
+              "pro-burden-awaits-evidence"
+            ],
+            "distinctConsequence": "The affirmative's debate-wide strengths and limitations are already expressed through the individual locked moves.",
+            "alreadyCapturedBy": [
+              "pro-drowning-child-reason",
+              "pro-clear-cases-justify",
+              "pro-burden-awaits-evidence"
+            ],
+            "counterfactual": "Removing the identified move ratings would create omissions, but their existing ratings already capture those consequences."
+          }
+        }
+      },
+      "evidence": {
+        "route": {
+          "side": "pro",
+          "speaker": "Eric Sampson",
+          "position": "Non-naturalist moral realism is true: some moral beliefs are stance-independently true and concern irreducible normative properties.",
+          "bridges": [
+            {
+              "bridgeId": "pro-realism-true",
+              "tier": "motion",
+              "statement": "Clear moral cases justify belief that stance-independent normative truths exist."
+            },
+            {
+              "bridgeId": "pro-reasons-intelligible",
+              "tier": "central",
+              "statement": "Stance-independent reasons are intelligible considerations favoring action regardless of an agent's goals."
+            },
+            {
+              "bridgeId": "pro-intuition-justifies",
+              "tier": "central",
+              "statement": "Strong undefeated intuitions about paradigm cases provide prima facie justification for moral realism."
+            },
+            {
+              "bridgeId": "pro-nonnatural-method",
+              "tier": "subsidiary",
+              "statement": "Non-natural moral facts need not satisfy empirical detection, prediction, or reductive-definition tests."
+            },
+            {
+              "bridgeId": "pro-normative-explanation",
+              "tier": "subsidiary",
+              "statement": "Realism explains genuine normative facts that a purely psychological account leaves out."
+            }
+          ]
+        },
+        "relatedMoves": [
+          {
+            "moveId": "pro-defines-realism",
+            "sectionId": "positions-and-semantics",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 30,
+              "endEvent": 34,
+              "startMs": 158060,
+              "endMs": 182520,
+              "excerpt": "So one is cognitivism. It's the view that when we make judgments, at least some of them are attempting to describe the world as it is, their expressions of beliefs, the non-nihilism. So at least some of those beliefs are true. And when they're true, they're true stance independently, that is independent of anybody's opinions or reactions. They don't depend on a culture's reactions. They don't depend on mine. They don't depend on what I like."
+            },
+            "quoteEligibleExactSpans": [
+              "at least some of those beliefs are true",
+              "they're true stance independently",
+              "independent of anybody's opinions or reactions"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Eric's named opening anchor at event 28 continues uninterrupted through this definition.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "pro-realism-true",
+              "tier": "motion",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Moral realism combines cognitivism, non-nihilism, and the stance-independent truth of at least some moral beliefs.",
+            "inventoryRationale": "This opening definition fixes the pro position and the principal proposition disputed throughout the exchange."
+          },
+          {
+            "moveId": "pro-local-cognitivism-suffices",
+            "sectionId": "positions-and-semantics",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 82,
+              "endEvent": 85,
+              "startMs": 443640,
+              "endMs": 459280,
+              "excerpt": "But in any case, there are at least communities of people who mean the same kind of thing and they can speak with one another. So I think that at least some people are expressing beliefs when they make moral judgments. And when they do express those beliefs, we can evaluate them for their truth or falsity so we can argue about them. Maybe other people"
+            },
+            "quoteEligibleExactSpans": [
+              "communities of people who mean the same kind of thing",
+              "at least some people are expressing",
+              "evaluate them for their truth or falsity"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Troy explicitly directs the question to Eric at events 76–77, followed by Eric's continuous answer.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-realism-true",
+              "tier": "motion",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-semantic-pluralism"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "local-cognitivism-answers-pluralism",
+                "targetMoveId": "con-semantic-pluralism",
+                "text": "Semantic variation does not threaten realism because some communities still express shared truth-evaluable moral beliefs.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Semantic diversity does not defeat cognitivism because at least some shared moral discourse expresses beliefs evaluable as true or false.",
+            "inventoryRationale": "This directly limits the force of Lance's pluralism without requiring uniform semantics across every speaker."
+          },
+          {
+            "moveId": "pro-drowning-child-reason",
+            "sectionId": "intelligibility-of-reasons",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 356,
+              "endEvent": 360,
+              "startMs": 1739640,
+              "endMs": 1759600,
+              "excerpt": "and says, but you do have a reason. And now the anti-realist wants to know, but what is the reason? And the answer is always going to appeal to some particular fact about the situation that's supposed to be morally important. So it's going to be that kid's going to drown and he matters and it's suffering. It'll entail suffering for him and for his family. And the cost to you would be minimal compared to the benefit that you stand to gain. And"
+            },
+            "quoteEligibleExactSpans": [
+              "but you do have a reason",
+              "that kid's going to drown",
+              "the cost to you would be minimal"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The turn begins with Eric's first-person response at event 349 and continues through the drowning-child example.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "pro-reasons-intelligible",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-reasons-require-relations"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "child-welfare-supplies-reason",
+                "targetMoveId": "con-reasons-require-relations",
+                "text": "The child's welfare, suffering, and the low rescue cost intelligibly favor rescue without depending on the rescuer's goals.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "proposition": "A drowning child's welfare and the low cost of rescue provide an intelligible reason to act independently of the rescuer's goals.",
+            "inventoryRationale": "The example supplies Eric's concrete account of how an external reason can be understood."
+          },
+          {
+            "moveId": "pro-welfare-is-explanation",
+            "sectionId": "intelligibility-of-reasons",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 387,
+              "endEvent": 391,
+              "startMs": 1871640,
+              "endMs": 1894360,
+              "excerpt": "So, I guess I would say, in this case, the explanation was given, why should I do this? Because that kid matters, and it would cost you almost nothing to jump in and get him, and it would be an enormous benefit for them. That's the explanation. Now, you say, I don't get it. Why should I do that? So, that's asking for a reason. What's the reason? And I'm telling you, the reason is because he matters. Now, you say, that's not, I don't get it. And"
+            },
+            "quoteEligibleExactSpans": [
+              "the explanation was given",
+              "Because that kid matters",
+              "the reason is because he matters"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The response follows Lance's mechanic analogy and explicitly answers its request for explanation.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-reasons-intelligible",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-private-understanding-insufficient"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "explanation-can-be-ungrasped",
+                "targetMoveId": "con-private-understanding-insufficient",
+                "text": "The child's importance is the explanation; a hearer's failure to grasp it does not show that no explanation was supplied.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "The child's importance and the benefit of rescue already explain the reason, even if a particular hearer does not understand it.",
+            "inventoryRationale": "This is Eric's direct answer to the demand for a further public explanation."
+          },
+          {
+            "moveId": "pro-empirical-test-illicit",
+            "sectionId": "corroboration-and-intuition",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 416,
+              "endEvent": 419,
+              "startMs": 2006840,
+              "endMs": 2025480,
+              "excerpt": "I mean, the non-naturalist realist, at least, is going to say, yeah, well, of course we don't have one of those. Because remember, we're telling you these are non-natural moral facts. They're not identical to any particular empirical entity that's out there. So the fact that we don't have such a test isn't going to be that probative. You wouldn't expect to find one. Another test that we"
+            },
+            "quoteEligibleExactSpans": [
+              "of course we don't have one of those",
+              "these are non-natural moral facts",
+              "such a test isn't going to be that probative"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The speaker identifies the non-naturalist position as his own and answers Lance's detector demand.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "pro-nonnatural-method",
+              "tier": "subsidiary",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-no-independent-test"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "test-mismatches-ontology",
+                "targetMoveId": "con-no-independent-test",
+                "text": "An empirical detector is not expected for non-natural facts, so its absence is not probative against them.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "proposition": "The absence of an empirical moral-property detector is expected under non-naturalism and therefore does not count strongly against it.",
+            "inventoryRationale": "This is the principal realist response to the independent-corroboration demand."
+          },
+          {
+            "moveId": "pro-clear-cases-justify",
+            "sectionId": "corroboration-and-intuition",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 512,
+              "endEvent": 515,
+              "startMs": 2457240,
+              "endMs": 2478800,
+              "excerpt": "Yeah, so the kid drowning in the pond case is supposed to show I'm justified in thinking that there are stance-independent normative truths, because when I consider this case, I consider that it seems clear to me that I should save this kid. And not just because I happen to want to. I should save this kid even if I didn't want to. So that, I take it, justifies me in believing that there are stance-independent normative truths,"
+            },
+            "quoteEligibleExactSpans": [
+              "I should save this kid even if I didn't want to",
+              "justifies me in believing that there are stance-independent normative truths",
+              "not just because I happen to want to"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The speaker explicitly describes the intended evidential role of Eric's drowning-child case.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "pro-intuition-justifies",
+              "tier": "central",
+              "polarity": "supports"
+            },
+            "respondsToIds": [
+              "con-agreement-underdetermines-metaethics"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "personal-justification-not-popularity",
+                "targetMoveId": "con-agreement-underdetermines-metaethics",
+                "text": "The case is evidence because Eric himself judges rescue obligatory independently of desire, not merely because others agree.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "proposition": "The clear intuition that one must rescue regardless of desire provides personal justification for stance-independent normative truth.",
+            "inventoryRationale": "This states the affirmative epistemic route from a paradigm moral case to realism."
+          },
+          {
+            "moveId": "pro-private-evidence-still-justifies",
+            "sectionId": "disagreement-and-zorpians",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 561,
+              "endEvent": 564,
+              "startMs": 2728280,
+              "endMs": 2747440,
+              "excerpt": "And you say, look, well, we need to figure out we want publicly available evidence so we can convince other people. The first step in trying to convince other people is to figure out what we think ourselves and what our evidence is ourselves. And so, you know, your intuitions are going to count as evidence for you. So they're going to justify you in believing something. Whether you can convince other people is another question."
+            },
+            "quoteEligibleExactSpans": [
+              "your intuitions are going to count as evidence for you",
+              "Whether you can convince other people is another question"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The reply distinguishes Lance's evidence from Eric's and continues the realist first-person epistemology.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-intuition-justifies",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-intuition-is-private-evidence"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "justification-precedes-persuasion",
+                "targetMoveId": "con-intuition-is-private-evidence",
+                "text": "Failure to persuade others does not erase the prima facie justification that an intuition supplies to its possessor.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "proposition": "Intuitions count as evidence for those who have them, regardless of whether that evidence persuades other people.",
+            "inventoryRationale": "This preserves the realist epistemic claim while conceding that justification can vary between persons."
+          },
+          {
+            "moveId": "pro-zorpian-facts-are-moral-facts",
+            "sectionId": "disagreement-and-zorpians",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 644,
+              "endEvent": 648,
+              "startMs": 3134200,
+              "endMs": 3156360,
+              "excerpt": "the question is like, I know you said that, but you can't just say it. I mean, if it's true that they are moral facts, they're reasons for action that apply to you, regardless of what your attitudes are. We can call them, I just want to suggest, those are what earthlings call moral facts. The Zorpians may call them Zorpian facts, but they're referring to the same entity. They just have a different label on them. They're facts about what you ought"
+            },
+            "quoteEligibleExactSpans": [
+              "if it's true that they are moral facts",
+              "they're reasons for action that apply to you",
+              "those are what earthlings call moral facts"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Eric conducts the preceding questions at events 639–642 and then explicitly answers the Zorpian classification.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-reasons-intelligible",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-zorpian-parity"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "zorpian-relabeling-reply",
+                "targetMoveId": "con-zorpian-parity",
+                "text": "If Zorpian requirements apply independently of attitudes, they are the same kind of normative facts realism affirms, merely relabeled.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Zorpian facts stipulated as attitude-independent reasons are moral or normative facts under a different label, not a distinct parody domain.",
+            "inventoryRationale": "This challenges the alien comparison by denying that its purportedly separate normative category is genuinely separate."
+          },
+          {
+            "moveId": "pro-disciplinary-understanding-shifts-burden",
+            "sectionId": "primitive-normative-concepts",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 839,
+              "endEvent": 842,
+              "startMs": 3991160,
+              "endMs": 4009800,
+              "excerpt": "I know exactly what these people are saying. There just aren't any such things. And so I guess I would just suggest if what you think is that all these people are talking literal nonsense, then you bear a burden to explain how is it that even the people who agree with me, Lance Bush, all these anti-realists think that these people are talking perfectly good English, makes perfectly"
+            },
+            "quoteEligibleExactSpans": [
+              "then you bear a burden to explain",
+              "all these anti-realists think that these people are talking perfectly good English"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The response follows Lance's request for a definition and invokes Lance by name from the opposing position.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-reasons-intelligible",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-claimed-intelligibility-not-enough"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "shared-understanding-burden",
+                "targetMoveId": "con-claimed-intelligibility-not-enough",
+                "text": "Widespread understanding among realists and anti-realists shifts a substantial explanatory burden onto the exceptional gibberish diagnosis.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "The field's broad cross-position understanding of normative language gives Lance a burden to explain why it is nevertheless gibberish.",
+            "inventoryRationale": "This is Eric's main dialectical response to Lance's minority intelligibility claim."
+          },
+          {
+            "moveId": "pro-norms-guide-goal-revision",
+            "sectionId": "primitive-normative-concepts",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 936,
+              "endEvent": 939,
+              "startMs": 4470520,
+              "endMs": 4488920,
+              "excerpt": "these people even telling me to do? Well, they're saying that to the extent that you can, you should change your goals. Now, you might say, well, I can't. I mean, some goals I can't even change, or I can't adopt new goals. I mean, I think you probably can adopt new goals. So what are these non-independent facts doing? They're recommendations for, or they're facts about what goals you ought to have. So"
+            },
+            "quoteEligibleExactSpans": [
+              "to the extent that you can, you should change your goals",
+              "facts about what goals you ought to have",
+              "you probably can adopt new goals"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Eric announces a multi-part response at event 929 and directly answers Lance's goal-based challenge.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-normative-explanation",
+              "tier": "subsidiary",
+              "polarity": "supports"
+            },
+            "respondsToIds": [
+              "con-logic-is-conditionally-normative"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "norms-assess-goals",
+                "targetMoveId": "con-logic-is-conditionally-normative",
+                "text": "Normative facts do practical work by assessing and recommending revision of the goals that conditional reasoning merely takes as given.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Normative facts guide action by identifying which goals agents ought to adopt or change, even when motivation initially diverges.",
+            "inventoryRationale": "This explains the practical role of categorical normativity rather than merely repeating that moral facts exist."
+          },
+          {
+            "moveId": "pro-burden-awaits-evidence",
+            "sectionId": "explanation-and-genealogy",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 1038,
+              "endEvent": 1047,
+              "startMs": 4870160,
+              "endMs": 4890360,
+              "excerpt": "Great, I just want to highlight, I agree with all that. I think Lance, as he just said, has an explanatory burden. Explain why all these people believe that it's intelligible, and you think that it's not. He recognizes that he has that, and he has the blueprint for how to do it, and now we just have to wait and see if it works out. And if it does, then we're, the realists are going to be in trouble, and if it doesn't, then they're not."
+            },
+            "quoteEligibleExactSpans": [
+              "Lance, as he just said, has an explanatory burden",
+              "now we just have to wait and see if it works out",
+              "the realists are going to be in trouble"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Turn-taking after Lance's hypothesis and the third-person reference to Lance establish Eric as speaker.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "pro-reasons-intelligible",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-academic-selection-hypothesis"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "hypothesis-needs-confirmation",
+                "targetMoveId": "con-academic-selection-hypothesis",
+                "text": "The selection hypothesis could threaten realism if substantiated, but presently remains a blueprint whose success must be tested.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "proposition": "Lance's proposed explanation could trouble realism if empirically successful, but it currently remains an unconfirmed research program.",
+            "inventoryRationale": "This is a material conditional concession coupled to Eric's demand that the explanatory burden actually be met."
+          },
+          {
+            "moveId": "pro-parsimony-omits-normativity",
+            "sectionId": "explanation-and-genealogy",
+            "side": "pro",
+            "speaker": "Eric Sampson",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 1322,
+              "endEvent": 1326,
+              "startMs": 5618680,
+              "endMs": 5638880,
+              "excerpt": "what we should do. Parsimony, man. And I would say, well, what you're going to leave out is all the normative stuff. So you say, we explained everything we want, but you cut out all the normative stuff. And I'd say, and the realists are like, no, you missed all the normative domain. You left that out. And so the parsimony comes in when all things are equal. So all things equal, they explain the exact same things, but one is simpler"
+            },
+            "quoteEligibleExactSpans": [
+              "what you're going to leave out is all the normative stuff",
+              "you missed all the normative domain",
+              "the parsimony comes in when all things are equal"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Eric requests a follow-up at event 1310 and directly answers Lance's parsimony argument.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "pro-normative-explanation",
+              "tier": "subsidiary",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "con-psychological-parsimony"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "parsimony-not-equal-explananda",
+                "targetMoveId": "con-psychological-parsimony",
+                "text": "The accounts do not explain the same things because anti-realism omits the normative domain realism takes as part of reality.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "proposition": "Parsimony cannot favor anti-realism when its psychological explanation leaves genuine normative facts outside its explananda.",
+            "inventoryRationale": "This is Eric's central response to the inference-to-the-best-explanation argument."
+          }
+        ],
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate debate-wide negative consequence remains uncaptured by the move-level ratings and rationales.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-realism-false",
+              "con-reasons-relational",
+              "con-no-corroboration",
+              "con-projection-genealogy",
+              "con-semantic-indeterminacy"
+            ],
+            "completionCriterion": "A nonzero adjustment would require a distinct negative burden-completion consequence not represented in any rated move.",
+            "relatedMoveIds": [
+              "con-semantic-pluralism",
+              "con-semantics-removes-default",
+              "con-reasons-require-relations",
+              "con-private-understanding-insufficient",
+              "con-no-independent-test",
+              "con-agreement-underdetermines-metaethics",
+              "con-intuition-is-private-evidence",
+              "con-zorpian-parity",
+              "con-claimed-intelligibility-not-enough",
+              "con-logic-is-conditionally-normative",
+              "con-academic-selection-hypothesis",
+              "con-psychological-parsimony",
+              "con-cultural-biological-genealogy"
+            ],
+            "distinctConsequence": "The negative's burden completion is fully represented by its constructive and reply moves in the locked inventory.",
+            "alreadyCapturedBy": [
+              "con-reasons-require-relations",
+              "con-no-independent-test",
+              "con-zorpian-parity",
+              "con-psychological-parsimony",
+              "con-cultural-biological-genealogy"
+            ],
+            "counterfactual": "Without duplicate capture, no remaining negative consequence would change completion of a locked burden."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct unscored debate-wide consequence remains beyond the effects already represented in the locked move-level judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "A nonzero adjustment requires a distinct unscored consequence changing completion of an identified negative burden.",
+            "relatedMoveIds": [
+              "con-no-independent-test",
+              "con-zorpian-parity",
+              "con-cultural-biological-genealogy"
+            ],
+            "distinctConsequence": "The negative's debate-wide strengths and limitations are already expressed through the individual locked moves.",
+            "alreadyCapturedBy": [
+              "con-no-independent-test",
+              "con-zorpian-parity",
+              "con-cultural-biological-genealogy"
+            ],
+            "counterfactual": "Removing the identified move ratings would create omissions, but their existing ratings already capture those consequences."
+          }
+        }
+      },
+      "evidence": {
+        "route": {
+          "side": "con",
+          "speaker": "Lance Bush",
+          "position": "Moral realism is unjustified or unintelligible because normativity is relational and moral-realist concepts lack independent explanatory content.",
+          "bridges": [
+            {
+              "bridgeId": "con-realism-false",
+              "tier": "motion",
+              "statement": "There are no warranted stance-independent moral facts, and realist accounts are unintelligible, false, or trivial."
+            },
+            {
+              "bridgeId": "con-reasons-relational",
+              "tier": "central",
+              "statement": "Reasons and evaluative claims are intelligible only relative to goals, standards, attitudes, or consistency relations."
+            },
+            {
+              "bridgeId": "con-no-corroboration",
+              "tier": "central",
+              "statement": "Realist intuitions lack a public standard capable of adjudicating fundamental normative disagreement."
+            },
+            {
+              "bridgeId": "con-projection-genealogy",
+              "tier": "subsidiary",
+              "statement": "Moral-realist belief is better explained through psychological projection and culturally contingent genealogy."
+            },
+            {
+              "bridgeId": "con-semantic-indeterminacy",
+              "tier": "subsidiary",
+              "statement": "Ordinary moral discourse is metaethically plural and indeterminate rather than uniformly realist."
+            }
+          ]
+        },
+        "relatedMoves": [
+          {
+            "moveId": "con-semantic-pluralism",
+            "sectionId": "positions-and-semantics",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 55,
+              "endEvent": 59,
+              "startMs": 302920,
+              "endMs": 328780,
+              "excerpt": "subscribe to any one of the conventional anti-realist positions is because I don't endorse a uniform and determinate account of the meaning of moral claims. So I don't think that all moral claims are, you know, relativized or all of them are implicitly committed to something that's false, it's error theory, or that all of them just express some non-cognitive or non-propositional attitude or something like that. Instead, I endorse a combination"
+            },
+            "quoteEligibleExactSpans": [
+              "I don't endorse a uniform",
+              "determinate account of the meaning of moral claims",
+              "Instead, I endorse a combination"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance's named opposing opening begins at event 48 and continues through this first-person account.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "con-semantic-indeterminacy",
+              "tier": "subsidiary",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Ordinary moral claims lack a uniform determinate semantics and instead display metaethical indeterminacy and pluralism.",
+            "inventoryRationale": "This is Lance's foundational semantic position and explains why he rejects standard anti-realist classifications."
+          },
+          {
+            "moveId": "con-semantics-removes-default",
+            "sectionId": "positions-and-semantics",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 111,
+              "endEvent": 114,
+              "startMs": 573100,
+              "endMs": 592940,
+              "excerpt": "is that they have the more common sense view and they have the view that's more in line with the way ordinary people, like non-philosophers, are just supposed to think. And I'm not sure that that's true. And at the very least, that could take away one of the tools in the realist kit, which is sort of burden-shifting argument, which is, you know, look, we believe in like"
+            },
+            "quoteEligibleExactSpans": [
+              "they have the more common sense view",
+              "I'm not sure that that's true",
+              "take away one of the tools in the realist"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Turn-taking from Eric's answer and Lance's explicit agreement at event 97 establish the continuing Lance turn.",
+            "importance": 1,
+            "burdenContact": {
+              "bridgeId": "con-semantic-indeterminacy",
+              "tier": "subsidiary",
+              "polarity": "qualifies"
+            },
+            "respondsToIds": [
+              "pro-local-cognitivism-suffices"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "default-status-undercut",
+                "targetMoveId": "pro-local-cognitivism-suffices",
+                "text": "Even if semantic findings do not refute realism, they undermine its claimed common-sense default status.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Empirical semantic uncertainty may not refute realism, but it removes the realist's common-sense burden-shifting advantage.",
+            "inventoryRationale": "This material qualification identifies the actual argumentative role Lance assigns to folk-semantic evidence."
+          },
+          {
+            "moveId": "con-reasons-require-relations",
+            "sectionId": "intelligibility-of-reasons",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 321,
+              "endEvent": 324,
+              "startMs": 1576960,
+              "endMs": 1600280,
+              "excerpt": "that are best understood as relational. So for instance, if I want to eat food, you could say, you know, if I want to eat food, then I have a reason to eat food. But to me, it doesn't make sense to say that I could have a reason to eat food or I could have a reason to do something independent of what I want or what I desire. Because you're basically"
+            },
+            "quoteEligibleExactSpans": [
+              "that are best understood as relational",
+              "then I have a reason to eat food",
+              "independent of what I want or what I desire"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance begins the invited presentation at event 284 and develops one uninterrupted first-person objection.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-reasons-relational",
+              "tier": "central",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Normativity is intelligibly relational to wants or standards, whereas stance-independent reasons do not make sense.",
+            "inventoryRationale": "This states the central conceptual objection underlying Lance's rejection of non-naturalist realism."
+          },
+          {
+            "moveId": "con-private-understanding-insufficient",
+            "sectionId": "intelligibility-of-reasons",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 373,
+              "endEvent": 376,
+              "startMs": 1803800,
+              "endMs": 1823000,
+              "excerpt": "Yeah, so people can say they make sense of it, but okay, then can they explain it? So, like, one of my concerns about this is that to the extent that people say they can make sense of it, it seems like it's like they could privately make sense of it, but they can't explain how it makes sense. And this isn't typical of most things. So, you know, if someone says,"
+            },
+            "quoteEligibleExactSpans": [
+              "people can say they make sense of it",
+              "they could privately make sense of it",
+              "they can't explain how it makes sense"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Turn-taking after Eric's example and the explicit challenge to people claiming understanding identify Lance.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "con-reasons-relational",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "pro-drowning-child-reason"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "public-explanation-demand",
+                "targetMoveId": "pro-drowning-child-reason",
+                "text": "Merely reporting private understanding does not publicly explain what an attitude-independent reason is.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Claimed private understanding of external reasons is inadequate without a publicly communicable explanation of their meaning.",
+            "inventoryRationale": "This sharpens the intelligibility objection from personal incomprehension into a demand for public explanation."
+          },
+          {
+            "moveId": "con-no-independent-test",
+            "sectionId": "corroboration-and-intuition",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 400,
+              "endEvent": 404,
+              "startMs": 1926120,
+              "endMs": 1952360,
+              "excerpt": "and the same would hold for engineering or biology or medicine. If someone's understanding of how to conduct, how to perform a surgery or how to fix a car or how to build a bridge is wrong, the bridge is going to collapse. The person's going to die on the operating table. I don't see any comparable standard of independent corroboration to find out if a particular account of why we should morally do or not do something is true. It's just people"
+            },
+            "quoteEligibleExactSpans": [
+              "the same would hold for engineering or biology or medicine",
+              "I don't see any comparable standard of independent corroboration",
+              "why we should morally do or not do something"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Turn-taking after Eric's mechanic analogy and continuity with Lance's corroboration objection establish attribution.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-no-corroboration",
+              "tier": "central",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Unlike engineering or medicine, moral realism offers no independent test for corroborating competing accounts of what ought to be done.",
+            "inventoryRationale": "This introduces the epistemic objection that becomes central to the subsequent exchange."
+          },
+          {
+            "moveId": "con-agreement-underdetermines-metaethics",
+            "sectionId": "corroboration-and-intuition",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 438,
+              "endEvent": 441,
+              "startMs": 2102440,
+              "endMs": 2118440,
+              "excerpt": "I would want to save the kid, but I'm an anti-realist. So we could, if you're describing that situation, you would have to, in principle, pull apart the meta-ethical considerations and the normative considerations. And I don't think that that's easy to do in the case of saving a kid in a drowning river. Again, I'm an anti-realist. I would agree that we should do it."
+            },
+            "quoteEligibleExactSpans": [
+              "pull apart the meta-ethical considerations and the normative considerations",
+              "I'm an anti-realist. I would agree"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "The first-person declaration of anti-realism and turn-taking after Eric's appeal to agreement identify Lance.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "con-no-corroboration",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "pro-empirical-test-illicit"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "shared-verdict-not-realist-evidence",
+                "targetMoveId": "pro-empirical-test-illicit",
+                "text": "Agreement about saving the child is compatible with anti-realism and cannot independently corroborate the realist interpretation.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Shared first-order judgments do not corroborate realism because anti-realists can endorse the same actions without realist commitments.",
+            "inventoryRationale": "This prevents Eric's appeal to convergent judgments from functioning as distinctively metaethical evidence."
+          },
+          {
+            "moveId": "con-intuition-is-private-evidence",
+            "sectionId": "disagreement-and-zorpians",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 547,
+              "endEvent": 549,
+              "startMs": 2635000,
+              "endMs": 2659640,
+              "excerpt": "But even if it's widespread, you know, OK, but that's again, that's a private appeal. So that's not the sort of thing that can contribute very substantively to a dialectic in which we're trying to mutually figure out what's true. So, you know, it'd be like if I personally saw Bigfoot with my own eyes, you know, I would be justified in believing in Bigfoot."
+            },
+            "quoteEligibleExactSpans": [
+              "that's a private appeal",
+              "not the sort of thing that can contribute very substantively to a dialectic",
+              "I would be justified in believing in Bigfoot"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Turn-taking after Eric's intuition defense and the first-person Bigfoot analogy identify Lance.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-no-corroboration",
+              "tier": "central",
+              "polarity": "attacks"
+            },
+            "respondsToIds": [
+              "pro-clear-cases-justify"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "bigfoot-private-evidence",
+                "targetMoveId": "pro-clear-cases-justify",
+                "text": "An intuition may privately justify its possessor yet contribute little to a shared inquiry, like an unsupported Bigfoot sighting.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Realist intuition is private evidence that may justify its possessor but cannot substantively resolve the public dialectic.",
+            "inventoryRationale": "This directly distinguishes personal justification from evidence capable of adjudicating the debate."
+          },
+          {
+            "moveId": "con-zorpian-parity",
+            "sectionId": "disagreement-and-zorpians",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 615,
+              "endEvent": 618,
+              "startMs": 3004440,
+              "endMs": 3025920,
+              "excerpt": "and the evolutionary history of that species. Maybe that species, for whatever reason, natural selection favored intense competition. They developed a warrior society. They think it's morally good to kill one's rivals, that it's okay to torture members of other groups. And they could report all of the same sorts of intuitions and attitudes in favor of these"
+            },
+            "quoteEligibleExactSpans": [
+              "natural selection favored intense competition",
+              "all of the same sorts of intuitions and attitudes"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance introduces and continuously develops the explicitly labeled Zorpian alien hypothetical.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-no-corroboration",
+              "tier": "central",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "A culturally shaped alien normative system could reproduce realist argumentative moves, creating parity with claims humans regard as false.",
+            "inventoryRationale": "The Zorpian construction is Lance's major test of whether intuition and realist methodology can discriminate rival normative systems."
+          },
+          {
+            "moveId": "con-claimed-intelligibility-not-enough",
+            "sectionId": "primitive-normative-concepts",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 815,
+              "endEvent": 818,
+              "startMs": 3877080,
+              "endMs": 3897080,
+              "excerpt": "claim that they understand it say that it's intelligible. So if we counted a bunch of people that say, I believe in square circles or colorless green ideas that speak furiously, and trust me, it's intelligible, and they get just a bunch of friends that all agree that it's intelligible, it doesn't mean that it is. So I don't know what it would mean for there to be a stance"
+            },
+            "quoteEligibleExactSpans": [
+              "it doesn't mean that it is",
+              "I don't know what it would mean"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Troy explicitly addresses Lance at events 808–812, and Lance begins the answer at event 813.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-reasons-relational",
+              "tier": "central",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Consensus among people claiming to understand stance-independent facts does not establish that the concept is intelligible.",
+            "inventoryRationale": "This restates Lance's core conceptual burden after the moderator returns explicitly to the issue."
+          },
+          {
+            "moveId": "con-logic-is-conditionally-normative",
+            "sectionId": "primitive-normative-concepts",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "reply",
+            "sourceSpan": {
+              "startEvent": 892,
+              "endEvent": 895,
+              "startMs": 4239000,
+              "endMs": 4258520,
+              "excerpt": "of epistemic standards. If you want to do what's logical, then you ought to deploy this certain set of standards. In all of these cases, to the extent that there's any normatives or evaluative element to those things, we can cash them out in a way where we use basically hypothetical imperatives and conditional relational descriptions of sort of if-then clauses,"
+            },
+            "quoteEligibleExactSpans": [
+              "we use basically hypothetical imperatives and conditional relational descriptions"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance explicitly corrects Eric's reconstruction beginning at event 877 and continues this distinction.",
+            "importance": 2,
+            "burdenContact": {
+              "bridgeId": "con-reasons-relational",
+              "tier": "central",
+              "polarity": "defends"
+            },
+            "respondsToIds": [
+              "pro-disciplinary-understanding-shifts-burden"
+            ],
+            "responseComponents": [
+              {
+                "componentId": "logic-analogy-distinguished",
+                "targetMoveId": "pro-disciplinary-understanding-shifts-burden",
+                "text": "Logic differs because its practical normativity can be reduced to conditional relations between goals and methods.",
+                "contacted": true,
+                "decisive": false
+              }
+            ],
+            "proposition": "Logic does not vindicate primitive moral normativity because logical prescriptions can be expressed conditionally relative to an agent's aims.",
+            "inventoryRationale": "This answers Eric's logic analogy without treating mutual interdefinition alone as sufficient for meaninglessness."
+          },
+          {
+            "moveId": "con-academic-selection-hypothesis",
+            "sectionId": "explanation-and-genealogy",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 995,
+              "endEvent": 998,
+              "startMs": 4747480,
+              "endMs": 4769080,
+              "excerpt": "self-searching fact, and what we'll find out if we go and investigate ordinary people is that you don't see the same proportion of people claiming that these concepts make sense or that they're true among laypeople. So one thing is that you're going to end up getting... This is going to be this sort of narrow demographic, which is academic philosophers that tend to endorse this view."
+            },
+            "quoteEligibleExactSpans": [
+              "you don't see the same proportion of people claiming that these concepts make sense",
+              "this sort of narrow demographic, which is academic philosophers"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance identifies his own minority position and proposes the empirical explanation in a continuous first-person turn.",
+            "importance": 1,
+            "burdenContact": {
+              "bridgeId": "con-projection-genealogy",
+              "tier": "subsidiary",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "The intelligibility consensus may reflect selection into academic philosophy rather than reliable recognition of normative facts.",
+            "inventoryRationale": "This materially accepts the explanatory burden and states the first empirical route Lance proposes for meeting it."
+          },
+          {
+            "moveId": "con-psychological-parsimony",
+            "sectionId": "explanation-and-genealogy",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 1298,
+              "endEvent": 1302,
+              "startMs": 5503920,
+              "endMs": 5529640,
+              "excerpt": "of the underlying psychology of those beings. So in the case of realists, the realists could be understood to be inadvertently projecting culturally acquired values onto the world and reifying them and treating them as these features out there, when really it's a sort of psychological projection of the realist. So in other words, one of the things that I think favors anti-realism is an abductive inference to the best explanation, is that"
+            },
+            "quoteEligibleExactSpans": [
+              "of the underlying psychology of those beings",
+              "inadvertently projecting culturally acquired values onto the world",
+              "an abductive inference to the best explanation"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance's alien-observer argument continues uninterrupted and explicitly describes realists in the third person.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-projection-genealogy",
+              "tier": "subsidiary",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Human moral behavior and realist belief can be explained as psychological projection without positing stance-independent facts.",
+            "inventoryRationale": "This is Lance's explicit abductive and parsimonious case, distinct from his earlier intelligibility challenge."
+          },
+          {
+            "moveId": "con-cultural-biological-genealogy",
+            "sectionId": "explanation-and-genealogy",
+            "side": "con",
+            "speaker": "Lance Bush",
+            "moveKind": "constructive",
+            "sourceSpan": {
+              "startEvent": 1553,
+              "endEvent": 1556,
+              "startMs": 6678200,
+              "endMs": 6698240,
+              "excerpt": "But to me, it seems that there's a good account to be made that what morality comes down to is something highly culturally and biologically contingent and that we can just explain it as a disposition for humans to think and act certain ways. And it's not really diagnostic of any sort of universal or fundamental facts, just facts about human psychology. And I think"
+            },
+            "quoteEligibleExactSpans": [
+              "highly culturally and biologically contingent",
+              "a disposition for humans to think and act certain ways",
+              "just facts about human psychology"
+            ],
+            "attributionConfidence": "high",
+            "attributionBasis": "Lance explicitly distinguishes his positive anti-realist evidence at events 1537–1541 and develops this genealogy.",
+            "importance": 3,
+            "burdenContact": {
+              "bridgeId": "con-realism-false",
+              "tier": "motion",
+              "polarity": "supports"
+            },
+            "respondsToIds": [],
+            "responseComponents": [],
+            "proposition": "Moral belief is plausibly a culturally and biologically contingent psychological disposition rather than detection of universal normative facts.",
+            "inventoryRationale": "This late constructive supplies Lance's broad positive genealogy for rejecting realism rather than merely withholding realist intuitions."
+          }
+        ],
+        "audioCheck": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-deterministic-span-correction",
+  "status": "passed",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "trigger": {
+    "preservedModelRepairPath": "docs/assessment-production/standalone-debates-v1/debate-236/inventory/span-repair-model-output.json",
+    "preservedModelRepairSha256": "bf52a39d3721da15f2264574889ab3e392af54c83a23505558a9ed04dff7ea07",
+    "characterOnlyViolations": [
+      {
+        "moveId": "con-semantics-removes-default",
+        "startEvent": 110,
+        "endEvent": 114,
+        "lexicalTokens": 88,
+        "characters": 463,
+        "passed": false
+      },
+      {
+        "moveId": "con-agreement-underdetermines-metaethics",
+        "startEvent": 437,
+        "endEvent": 441,
+        "lexicalTokens": 86,
+        "characters": 465,
+        "passed": false
+      },
+      {
+        "moveId": "pro-private-evidence-still-justifies",
+        "startEvent": 560,
+        "endEvent": 564,
+        "lexicalTokens": 86,
+        "characters": 489,
+        "passed": false
+      },
+      {
+        "moveId": "con-zorpian-parity",
+        "startEvent": 614,
+        "endEvent": 618,
+        "lexicalTokens": 72,
+        "characters": 454,
+        "passed": false
+      },
+      {
+        "moveId": "con-claimed-intelligibility-not-enough",
+        "startEvent": 814,
+        "endEvent": 818,
+        "lexicalTokens": 85,
+        "characters": 463,
+        "passed": false
+      },
+      {
+        "moveId": "pro-disciplinary-understanding-shifts-burden",
+        "startEvent": 838,
+        "endEvent": 842,
+        "lexicalTokens": 85,
+        "characters": 478,
+        "passed": false
+      },
+      {
+        "moveId": "con-logic-is-conditionally-normative",
+        "startEvent": 891,
+        "endEvent": 895,
+        "lexicalTokens": 79,
+        "characters": 457,
+        "passed": false
+      },
+      {
+        "moveId": "con-academic-selection-hypothesis",
+        "startEvent": 994,
+        "endEvent": 998,
+        "lexicalTokens": 87,
+        "characters": 477,
+        "passed": false
+      },
+      {
+        "moveId": "con-cultural-biological-genealogy",
+        "startEvent": 1552,
+        "endEvent": 1556,
+        "lexicalTokens": 79,
+        "characters": 452,
+        "passed": false
+      }
+    ],
+    "exactQuoteViolations": [
+      {
+        "moveId": "con-reasons-require-relations",
+        "quote": "claims that are best understood as relational",
+        "wordCount": 7,
+        "sourceExact": false
+      },
+      {
+        "moveId": "pro-zorpian-facts-are-moral-facts",
+        "quote": "They're reasons for action that apply to you",
+        "wordCount": 8,
+        "sourceExact": false
+      },
+      {
+        "moveId": "con-psychological-parsimony",
+        "quote": "features of the underlying psychology of those beings",
+        "wordCount": 8,
+        "sourceExact": false
+      }
+    ]
+  },
+  "constraints": {
+    "noAdditionalModelCall": true,
+    "onlySourceEndpointNarrowingAndExactQuoteNormalization": true,
+    "noSelectedMoveAddedRemovedRenamedReorderedOrReclassified": true,
+    "exactSourceQuotesOnly": true,
+    "scoreBlind": true
+  },
+  "corrections": [
+    {
+      "moveId": "con-semantics-removes-default",
+      "before": {
+        "moveId": "con-semantics-removes-default",
+        "startEvent": 110,
+        "endEvent": 114,
+        "lexicalTokens": 88,
+        "characters": 463,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-semantics-removes-default",
+        "startEvent": 111,
+        "endEvent": 114,
+        "lexicalTokens": 71,
+        "characters": 372,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "they have the more common sense view",
+        "I'm not sure that that's true",
+        "take away one of the tools in the realist"
+      ],
+      "rationale": "Removing event 110 drops only a redundant lead-in; events 111–114 retain the ordinary-common-sense premise, Lance's doubt, and the explicitly named burden-shifting consequence."
+    },
+    {
+      "moveId": "con-agreement-underdetermines-metaethics",
+      "before": {
+        "moveId": "con-agreement-underdetermines-metaethics",
+        "startEvent": 437,
+        "endEvent": 441,
+        "lexicalTokens": 86,
+        "characters": 465,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-agreement-underdetermines-metaethics",
+        "startEvent": 438,
+        "endEvent": 441,
+        "lexicalTokens": 69,
+        "characters": 368,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "pull apart the meta-ethical considerations and the normative considerations",
+        "I'm an anti-realist. I would agree"
+      ],
+      "rationale": "Removing event 437 drops a general prefatory sentence; events 438–441 still show an anti-realist endorsing the same rescue judgment and distinguish that first-order agreement from metaethical commitment."
+    },
+    {
+      "moveId": "pro-private-evidence-still-justifies",
+      "before": {
+        "moveId": "pro-private-evidence-still-justifies",
+        "startEvent": 560,
+        "endEvent": 564,
+        "lexicalTokens": 86,
+        "characters": 489,
+        "passed": false
+      },
+      "after": {
+        "moveId": "pro-private-evidence-still-justifies",
+        "startEvent": 561,
+        "endEvent": 564,
+        "lexicalTokens": 76,
+        "characters": 431,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "your intuitions are going to count as evidence for you",
+        "Whether you can convince other people is another question"
+      ],
+      "rationale": "Removing event 560 drops only the opening affirmation; events 561–564 retain the public-evidence contrast, the first-person evidential role of intuition, its justificatory consequence, and the persuasion qualification."
+    },
+    {
+      "moveId": "con-zorpian-parity",
+      "before": {
+        "moveId": "con-zorpian-parity",
+        "startEvent": 614,
+        "endEvent": 618,
+        "lexicalTokens": 72,
+        "characters": 454,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-zorpian-parity",
+        "startEvent": 615,
+        "endEvent": 618,
+        "lexicalTokens": 58,
+        "characters": 359,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "natural selection favored intense competition",
+        "all of the same sorts of intuitions and attitudes"
+      ],
+      "rationale": "Removing event 614 drops the repeated Zorpian label and cultural-value setup; events 615–618 retain the evolutionary history, alien moral code, and same-intuitions parity mechanism."
+    },
+    {
+      "moveId": "con-claimed-intelligibility-not-enough",
+      "before": {
+        "moveId": "con-claimed-intelligibility-not-enough",
+        "startEvent": 814,
+        "endEvent": 818,
+        "lexicalTokens": 85,
+        "characters": 463,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-claimed-intelligibility-not-enough",
+        "startEvent": 815,
+        "endEvent": 818,
+        "lexicalTokens": 70,
+        "characters": 374,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "it doesn't mean that it is",
+        "I don't know what it would mean"
+      ],
+      "rationale": "Removing event 814 drops the introductory refusal; events 815–818 retain the square-circle comparison, the agreeing-friends test, and Lance's conclusion that agreement does not establish intelligibility."
+    },
+    {
+      "moveId": "pro-disciplinary-understanding-shifts-burden",
+      "before": {
+        "moveId": "pro-disciplinary-understanding-shifts-burden",
+        "startEvent": 838,
+        "endEvent": 842,
+        "lexicalTokens": 85,
+        "characters": 478,
+        "passed": false
+      },
+      "after": {
+        "moveId": "pro-disciplinary-understanding-shifts-burden",
+        "startEvent": 839,
+        "endEvent": 842,
+        "lexicalTokens": 70,
+        "characters": 384,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "then you bear a burden to explain",
+        "all these anti-realists think that these people are talking perfectly good English"
+      ],
+      "rationale": "Removing event 838 drops a duplicated attribution to anti-realists; events 839–842 retain their stated understanding, Eric's explicit burden challenge, and the cross-position language evidence."
+    },
+    {
+      "moveId": "con-logic-is-conditionally-normative",
+      "before": {
+        "moveId": "con-logic-is-conditionally-normative",
+        "startEvent": 891,
+        "endEvent": 895,
+        "lexicalTokens": 79,
+        "characters": 457,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-logic-is-conditionally-normative",
+        "startEvent": 892,
+        "endEvent": 895,
+        "lexicalTokens": 62,
+        "characters": 363,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "we use basically hypothetical imperatives and conditional relational descriptions"
+      ],
+      "rationale": "Removing event 891 drops one parallel epistemic example; events 892–895 retain the logic-relative aim and Lance's general reduction of apparent normativity to hypothetical, conditional standards."
+    },
+    {
+      "moveId": "con-academic-selection-hypothesis",
+      "before": {
+        "moveId": "con-academic-selection-hypothesis",
+        "startEvent": 994,
+        "endEvent": 998,
+        "lexicalTokens": 87,
+        "characters": 477,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-academic-selection-hypothesis",
+        "startEvent": 995,
+        "endEvent": 998,
+        "lexicalTokens": 68,
+        "characters": 386,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "you don't see the same proportion of people claiming that these concepts make sense",
+        "this sort of narrow demographic, which is academic philosophers"
+      ],
+      "rationale": "Removing event 994 drops only the introduction to the possibility; events 995–998 retain the predicted lay-academic difference and the narrow-demographic selection explanation."
+    },
+    {
+      "moveId": "con-cultural-biological-genealogy",
+      "before": {
+        "moveId": "con-cultural-biological-genealogy",
+        "startEvent": 1552,
+        "endEvent": 1556,
+        "lexicalTokens": 79,
+        "characters": 452,
+        "passed": false
+      },
+      "after": {
+        "moveId": "con-cultural-biological-genealogy",
+        "startEvent": 1553,
+        "endEvent": 1556,
+        "lexicalTokens": 65,
+        "characters": 366,
+        "passed": true,
+        "sourceExact": true,
+        "withinTransportCeiling": true
+      },
+      "retainedQuotes": [
+        "highly culturally and biologically contingent",
+        "a disposition for humans to think and act certain ways",
+        "just facts about human psychology"
+      ],
+      "rationale": "Removing event 1552 drops a trailing phrase from a prior universal-factors qualification; events 1553–1556 retain contingency, the psychological-disposition explanation, and the denial of universal-fact detection."
+    }
+  ],
+  "quoteOnlyCorrections": [
+    {
+      "moveId": "con-reasons-require-relations",
+      "before": [
+        {
+          "moveId": "con-reasons-require-relations",
+          "quote": "claims that are best understood as relational",
+          "wordCount": 7,
+          "sourceExact": false
+        }
+      ],
+      "after": [
+        "that are best understood as relational",
+        "then I have a reason to eat food",
+        "independent of what I want or what I desire"
+      ],
+      "rationale": "The controller removed a word outside the repaired event range or matched the exact source capitalization; no evidence, proposition, or assessment field changed."
+    },
+    {
+      "moveId": "pro-zorpian-facts-are-moral-facts",
+      "before": [
+        {
+          "moveId": "pro-zorpian-facts-are-moral-facts",
+          "quote": "They're reasons for action that apply to you",
+          "wordCount": 8,
+          "sourceExact": false
+        }
+      ],
+      "after": [
+        "if it's true that they are moral facts",
+        "they're reasons for action that apply to you",
+        "those are what earthlings call moral facts"
+      ],
+      "rationale": "The controller removed a word outside the repaired event range or matched the exact source capitalization; no evidence, proposition, or assessment field changed."
+    },
+    {
+      "moveId": "con-psychological-parsimony",
+      "before": [
+        {
+          "moveId": "con-psychological-parsimony",
+          "quote": "features of the underlying psychology of those beings",
+          "wordCount": 8,
+          "sourceExact": false
+        }
+      ],
+      "after": [
+        "of the underlying psychology of those beings",
+        "inadvertently projecting culturally acquired values onto the world",
+        "an abductive inference to the best explanation"
+      ],
+      "rationale": "The controller removed a word outside the repaired event range or matched the exact source capitalization; no evidence, proposition, or assessment field changed."
+    }
+  ],
+  "inventorySha256": "388f60cc034465f5bb6850a72816a1095d1b383f5c1dc06e614b91710ead5c6d"
+}

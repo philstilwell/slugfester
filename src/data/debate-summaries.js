@@ -10944,5 +10944,55 @@ export const debateSummaries = [
         "title": "The soul-body interaction problem"
       }
     ]
+  },
+  {
+    "id": "bush-sampson-moral-realism-2022",
+    "number": "236",
+    "title": "Eric Sampson vs Lance Bush: Is Moral Realism True?",
+    "year": 2022,
+    "label": "Moral realism and stance-independent reasons",
+    "date": "2026-09-02",
+    "duration": "1 hr 53 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=EHIIgQdA2e8",
+    "motion": "Is moral realism true?",
+    "summary": "Sampson narrowly prevails by defining a limited realism and defending its intelligibility, while Bush supplies powerful underdetermination and genealogy challenges that remain evidentially incomplete.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Non-naturalist moral realism is true",
+        "speaker": "Eric Sampson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Moral realism is unintelligible or unjustified",
+        "speaker": "Lance Bush",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 81,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Positions, semantics, and the scope of realism"
+      },
+      {
+        "title": "Whether stance-independent reasons are intelligible"
+      },
+      {
+        "title": "Corroboration, intuition, and prima facie justification"
+      },
+      {
+        "title": "Deep disagreement and the Zorpian comparison"
+      },
+      {
+        "title": "Primitive concepts, circular definitions, and practical force"
+      },
+      {
+        "title": "Explanatory parsimony and the genealogy of moral belief"
+      }
+    ]
   }
 ];

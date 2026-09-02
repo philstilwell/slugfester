@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0-standalone-publication-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid-after-two-bounded-depth-repair-shards",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "freshEphemeralContext": true,
+    "scoreLocked": true,
+    "otherDebateProseUnavailable": true,
+    "userConfigurationDisabled": true,
+    "rulesDisabled": true,
+    "apiKeysRemoved": true
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/packet.json",
+    "sha256": "eb133f71c3994dee3af994ecdb54ca298847dfd8840589e2e0829fbf745ecc3c",
+    "bytes": 205059
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/raw-prose-output-1.json",
+    "sha256": "b1b1760ada59ab5bbc7e93a09a2a28eb0579158534e2cd73252d555a3c3d3044",
+    "bytes": 39610
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/output.json",
+    "sha256": "81c850efb190a8824d156fbeb77bcf2d3718f79ded48558d0dbb91b6df33bae3",
+    "bytes": 61681
+  },
+  "sessionId": "01a062ad-56d6-73a0-b700-b776c0ff03c9",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "startedAt": "2026-09-02T15:12:01.716Z",
+  "completedAt": "2026-09-02T15:18:45.537Z",
+  "elapsedMs": 403821,
+  "violations": [
+    {
+      "path": "moveProse.pro-drowning-child-reason.description",
+      "kind": "description-words",
+      "observed": 21
+    },
+    {
+      "path": "moveProse.con-private-understanding-insufficient.description",
+      "kind": "description-words",
+      "observed": 21
+    },
+    {
+      "path": "moveProse.con-zorpian-parity.description",
+      "kind": "description-words",
+      "observed": 21
+    }
+  ],
+  "initialViolations": [
+    {
+      "path": "moveProse.pro-drowning-child-reason.description",
+      "kind": "description-words",
+      "observed": 21
+    },
+    {
+      "path": "moveProse.con-private-understanding-insufficient.description",
+      "kind": "description-words",
+      "observed": 21
+    },
+    {
+      "path": "moveProse.con-zorpian-parity.description",
+      "kind": "description-words",
+      "observed": 21
+    }
+  ],
+  "finalViolations": [],
+  "repair": {
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/correction-1-publication-depth.json",
+      "sha256": "0c610065491ea2b41a5d2a46684e82832528693a3ffe3c0a1acfe98e56ce1549",
+      "bytes": 4228
+    },
+    "shardAttempts": 2,
+    "shardRetries": 0,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "corpusRelative": {
+    "descriptionMean": 22.8,
+    "referenceMinimum": 20.9,
+    "shortCardShare": 0
+  },
+  "boilerplate": {
+    "minimumDocuments": 7,
+    "commonNgrams": 0,
+    "meanCoveredRatio": 0,
+    "maximumCoveredRatio": 0
+  }
+}

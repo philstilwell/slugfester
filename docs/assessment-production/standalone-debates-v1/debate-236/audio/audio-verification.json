@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-236/inventory/inventory.json",
+    "sha256": "388f60cc034465f5bb6850a72816a1095d1b383f5c1dc06e614b91710ead5c6d"
+  },
+  "trigger": {
+    "inventoryBelowHighAttributionMoveIds": [],
+    "requiredCheckIds": []
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "audit": {
+    "triggeredMoveIdsMatchCompletedChecksExactlyAndInOrder": true,
+    "allRequiredChecksComplete": true,
+    "noSuccessfulCallRepeated": true,
+    "lockedMovesReviewed": 25,
+    "highAttributionConfidenceMoves": 25,
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": false,
+    "successfulPaidCallsRepeated": 0
+  },
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossibleCostUsd": 0,
+    "paidCalls": 0,
+    "directCostUsd": 0,
+    "maximumPotentialCombinedCostUsd": 0
+  }
+}

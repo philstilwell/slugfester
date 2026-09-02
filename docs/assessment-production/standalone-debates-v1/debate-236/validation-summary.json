@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "completedAt": "2026-09-02T15:56:16.000Z",
+  "source": {
+    "videoId": "EHIIgQdA2e8",
+    "method": "complete timestamp-preserving Whisper transcription reconstructed from twelve overlapping audio chunks",
+    "transcriptWords": 23482,
+    "events": 1576,
+    "transcriptSha256": "e7b586cb96aec5e2a25859168cd7dd0d685347d29baf6c32c5f12c3e363b8131",
+    "eventsSha256": "902632d9a607a36ef1a2b852a4700448f0a36f9ab68c5c7c8e34cb0ebdac74a7",
+    "assessedWindow": "00:02:08–01:52:22",
+    "excludedMaterial": "Moderator and audience framing was reviewed but excluded from scoring; Eric Sampson and Lance Bush were the only sustained advocates.",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 25,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 10,
+    "adjudicatedDisputes": 10,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 82,
+      "con": 81,
+      "winner": "pro",
+      "margin": 1
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "displayRows": 13,
+    "argumentCards": 25,
+    "uniqueLockedMovesMapped": 25,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 3,
+      "con": 3
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "b29bbd2572a85a50981c3658941fc113307e1d7cefde87fee8183bbebcbbf7fc",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-236/publication/content-parity-audit.json",
+    "contentParityDisposition": "passed after two bounded publication-description repair shards; five corpus-relative outliers were source-specific and individually justified",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 22.8,
+      "maximum": 25,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 105,
+      "mean": 115.5,
+      "maximum": 130
+    },
+    "critiqueCharactersMean": 925.4,
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": {
+      "strengthMean": 24.7,
+      "blunderMean": 23.7
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-236/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral exact-definition review accepting four card tags and five overall links after six source-specific rejections of overbroad or duplicate acceptances",
+    "movesReviewedForFallaciesAndBiases": 25,
+    "overallBlundersReviewedForFallaciesAndBiases": 6,
+    "definitionsCheckedPerCandidate": 13,
+    "definitionComparisonsPerBlindPass": 403,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 45,
+    "acceptedCardRhetoricalTags": 4,
+    "acceptedCardFallacyTags": 2,
+    "acceptedCardBiasTags": 2,
+    "acceptedOverallRhetoricalLinks": 5,
+    "totalAcceptedRhetoricalApplications": 9,
+    "rejectedCardRhetoricalTagCandidates": 29,
+    "rejectedOverallRhetoricalLinkCandidates": 7,
+    "controllerDefinitionOverrides": 6,
+    "readerFacingScoringDisclosureCorrect": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 9,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 4,
+    "keyboardEnterTests": 1,
+    "keyboardSpaceTests": 2,
+    "mobileDistantTapTests": 1,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-236/rendering/post-rhetorical-tag-audit.json",
+    "rhetoricalTagsVisuallyVerified": 4,
+    "overallReferenceLinksVisuallyVerified": 5,
+    "desktopEvidenceSha256": "b93859eafad97e695ea12d3cef2f2483f8c4d9e820e4e178bde9fd39e5b0ce44",
+    "mobileEvidenceSha256": "2a9c52a2c0bd4ee576aead44bb101d43b31adaf7321b73a17a1059889dce2af6"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "236 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "684 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "25 moves; description mean 22.8 words; critique mean 115.5 words; no repeated six-word boilerplate"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "25 moves and 6 overall blunders checked twice against 13 definitions; all 45 union candidates adjudicated; 4 card tags and 5 overall links retained"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "25 populated cards, 4 card labels, and 5 overall links at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 236 with and without --repository-only",
+      "status": "passed",
+      "result": "25 moves; 6 sections; 10 disputes; 0 attribution audio checks; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "236 of 236 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "environment-limited after relevant checks passed",
+      "result": "Syntax, Debate 236 data, corpus, calibration, and scoring checks passed; the suite then stopped because the separate worktree lacks the ignored historical v2.2 audio fixture output/transcribe/v2.2-audio-verification/OL8LREmbDi0/refs/sye-ten-bruggencate.wav"
+    },
+    {
+      "name": "repository-only postchecks",
+      "command": "npm run postcheck",
+      "status": "environment-limited after standalone checks passed",
+      "result": "Campaign closure, calibration promotion, all 41 standalone debate replays, all standalone content-parity audits, and all rhetorical-tag audits passed; the final unrelated multi-speaker build stopped because ignored transcript .assessment-cache/captions/9WnOYHi5k4g/transcript.txt is absent from this separate worktree"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "timestampPreservingChunkRecoveryUsed": true,
+    "chunkTranscriptions": 12,
+    "chunkTranscriptionRetries": 0,
+    "scoreBlindInventoryUsed": true,
+    "sourceSpanModelRepairPasses": 1,
+    "sourceSpanDeterministicBoundaryRepairs": 1,
+    "publicationInitialDraftsRejected": 1,
+    "publicationRepairShards": 2,
+    "publicationRepairFields": 3,
+    "rhetoricalTagFieldsAdded": 4,
+    "rhetoricalOverallLinkFieldsAdded": 5,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 6,
+    "rawRhetoricalModelOutputsPreserved": true,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 12,
+    "con": 13,
+    "disposition": "The selected inventory differs by one move overall, with no section imbalance requiring an additional rationale."
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsdMaximum": 2.934,
+    "sourceRecoveryPaidCallsAttempted": 15,
+    "sourceRecoverySuccessfulPaidCalls": 12,
+    "sourceRecoveryUncertainOrFailedPaidCalls": 3,
+    "knownSuccessfulSourceRecoveryCostUsd": 0.6837,
+    "maximumPotentialSourceRecoveryCostUsd": 2.718,
+    "attributionAudioCheckCostUsd": 0,
+    "unusedAuthorizedReserveUsd": 0.216,
+    "pricingBasis": "OpenAI Whisper API duration pricing applied to the twelve successful timestamp-preserving chunks; earlier uncertain attempts are included only in the maximum."
+  },
+  "knownTotalDirectCostUsd": 0.6837,
+  "maximumPotentialTotalDirectCostUsd": 2.718,
+  "directCostUsd": 0
+}

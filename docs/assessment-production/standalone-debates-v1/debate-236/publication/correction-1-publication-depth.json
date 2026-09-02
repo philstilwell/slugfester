@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-publication-depth-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "236",
+  "debateId": "bush-sampson-moral-realism-2022",
+  "reason": "Three source-specific argument descriptions were one word below the preferred 22-word richness target despite passing the formal range and corpus-wide mean; two bounded shards expanded only those descriptions.",
+  "repair": {
+    "shards": [
+      {
+        "ordinal": 1,
+        "writableFields": [
+          "moveProse.pro-drowning-child-reason.description",
+          "moveProse.con-private-understanding-insufficient.description"
+        ],
+        "attempts": 1,
+        "retries": 0,
+        "directIncrementalCostUsd": 0,
+        "outputSha256": "e672a49a1da99240e1f603349bd879c8bd72a16a9019e23e21c319506e210967"
+      },
+      {
+        "ordinal": 2,
+        "writableFields": [
+          "moveProse.con-zorpian-parity.description"
+        ],
+        "attempts": 1,
+        "retries": 0,
+        "directIncrementalCostUsd": 0,
+        "outputSha256": "d5e4dc59299bf08fff85bf5b43327589b97851b6b6777684a843dd15e799ee5d"
+      }
+    ],
+    "maximumWritableFieldsPerShard": 2,
+    "before": [
+      {
+        "moveId": "pro-drowning-child-reason",
+        "description": "Sampson presents a drowning child's welfare, impending suffering, and inexpensive rescue as intelligible considerations favoring action independently of the rescuer's goals.",
+        "words": 21
+      },
+      {
+        "moveId": "con-private-understanding-insufficient",
+        "description": "Bush distinguishes privately reporting comprehension from publicly explaining stance-independent reasons, arguing that unexplained personal intelligibility cannot adequately answer his conceptual objection.",
+        "words": 21
+      },
+      {
+        "moveId": "con-zorpian-parity",
+        "description": "Bush imagines competitively evolved Zorpians with contrary yet structurally similar normative intuitions, challenging whether Sampson's method distinguishes truth from cultural conditioning.",
+        "words": 21
+      }
+    ],
+    "after": [
+      {
+        "moveId": "pro-drowning-child-reason",
+        "description": "Sampson argues that a drowning child's welfare, threatened suffering, and the minimal cost of rescue are intelligible reasons to act regardless of the rescuer's goals.",
+        "words": 25
+      },
+      {
+        "moveId": "con-private-understanding-insufficient",
+        "description": "Bush argues that privately claiming to understand stance-independent reasons is inadequate unless one can publicly explain what those reasons mean and how they make sense.",
+        "words": 25
+      },
+      {
+        "moveId": "con-zorpian-parity",
+        "description": "Bush imagines competitively evolved Zorpians with contrary but structurally similar normative intuitions, challenging whether Sampson's method can distinguish truth from cultural conditioning.",
+        "words": 22
+      }
+    ]
+  },
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/preserved-invalid-output-before-depth-repair.json",
+      "sha256": "c5ea8d7000c99b1ea45d84cd4ceb2a0d19818c4a83ba7b6d95f7b069edc757e9",
+      "bytes": 62176
+    },
+    "preservedInvalidOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/preserved-invalid-output-before-depth-repair.json",
+      "sha256": "c5ea8d7000c99b1ea45d84cd4ceb2a0d19818c4a83ba7b6d95f7b069edc757e9",
+      "bytes": 62176
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "81c850efb190a8824d156fbeb77bcf2d3718f79ded48558d0dbb91b6df33bae3",
+      "bytes": 61681
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/content-parity-audit.json",
+      "sha256": "4457ccfd03cd09fb38dc379734d3fb27c92e8cbbb470406bdbfd335e8aac00fa",
+      "bytes": 5403
+    },
+    "shard1": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/depth-repair-shard-1.json",
+      "sha256": "e672a49a1da99240e1f603349bd879c8bd72a16a9019e23e21c319506e210967",
+      "bytes": 718
+    },
+    "shard2": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-236/publication/depth-repair-shard-2.json",
+      "sha256": "d5e4dc59299bf08fff85bf5b43327589b97851b6b6777684a843dd15e799ee5d",
+      "bytes": 496
+    }
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 0,
+    "descriptionChanges": 3
+  }
+}
