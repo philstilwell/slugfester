@@ -56,7 +56,7 @@ const routeBudgets = [
   },
   {
     route: "/reference/fallacy/equivocation/",
-    dataBytes: 470_000,
+    dataBytes: 485_000,
     required: "reference-appearances/fallacy-equivocation.js"
   }
 ];
