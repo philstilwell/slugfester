@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0-standalone-publication-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid-after-one-bounded-depth-repair-shard",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "freshEphemeralContext": true,
+    "scoreLocked": true,
+    "otherDebateProseUnavailable": true,
+    "userConfigurationDisabled": true,
+    "rulesDisabled": true,
+    "apiKeysRemoved": true
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/packet.json",
+    "sha256": "2e53b37b5772b173d58af71eeab814b381d762379a0796237d842b214daa644d",
+    "bytes": 213096
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/raw-prose-output-1.json",
+    "sha256": "8e24fbe65eb04bd4e2f6755656beeeea4b705060865cc5bed16653a0fc3fd35a",
+    "bytes": 40541
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/output.json",
+    "sha256": "70dc1cc23479129d134704c9c9e9dedbfa67814ddb99073c77a69210dc2c46ed",
+    "bytes": 62714
+  },
+  "sessionId": null,
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-02T17:50:55.000Z",
+  "violations": [
+    {
+      "path": "moveProse.gospels-late-and-anonymous.description",
+      "kind": "description-words",
+      "observed": 21,
+      "requiredMinimum": 22,
+      "requiredMaximum": 28
+    }
+  ],
+  "repairAuthorization": {
+    "shards": 1,
+    "maximumWritableFieldsPerShard": 2,
+    "authorizedFields": [
+      "moveProse.gospels-late-and-anonymous.description"
+    ],
+    "attemptsPerShard": 1
+  },
+  "initialViolations": [
+    {
+      "path": "moveProse.gospels-late-and-anonymous.description",
+      "kind": "description-words",
+      "observed": 21,
+      "requiredMinimum": 22,
+      "requiredMaximum": 28
+    }
+  ],
+  "finalViolations": [],
+  "repair": {
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/correction-1-publication-depth.json",
+      "sha256": "070253279c76454011f28157ad755611f5c4ade0e2840f457a46c5d72aa97a45",
+      "bytes": 1596
+    },
+    "shardAttempts": 1,
+    "shardRetries": 0,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "corpusRelative": {
+    "descriptionMean": 23.79,
+    "referenceMinimum": 20.9,
+    "shortCardShare": 0
+  },
+  "critiqueMetrics": {
+    "meanWords": 124.38,
+    "minimumWords": 121,
+    "maximumWords": 129,
+    "minimumCharacters": 954
+  },
+  "boilerplate": {
+    "minimumDocuments": 6,
+    "commonNgrams": 0,
+    "meanCoveredRatio": 0,
+    "maximumCoveredRatio": 0
+  },
+  "validation": {
+    "status": "passed",
+    "sections": 5,
+    "moves": 24
+  }
+}

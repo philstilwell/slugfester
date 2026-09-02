@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-schema-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-pre-model-schema-failure",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "observedAt": "2026-09-02T17:16:38.777Z",
+  "controllerSha256": "63c7795b544f84da8bddc51857e6ae6fa029f2bff7d4b42771ee74908727c320",
+  "diagnosis": {
+    "failureClass": "invalid-json-response-schema",
+    "httpStatus": 400,
+    "serviceCode": "invalid_json_schema",
+    "message": "Invalid schema for response_format 'codex_output_schema': In context=('properties', 'schemaVersion'), schema must have a 'type' key.",
+    "resultFileCreated": false,
+    "modelOutputPreserved": false,
+    "modelSelectionReached": false,
+    "explanation": "The request reached service validation but was rejected before inference because constant-valued response fields omitted explicit JSON types."
+  },
+  "recovery": {
+    "authorizedBy": "single-debate-runbook schema-failure recovery rule",
+    "scope": "response-schema declarations only",
+    "change": "Add explicit string or boolean types to every constant-valued field without changing the requested inventory content.",
+    "countsAsModelSelectionAttempt": false,
+    "directIncrementalCostUsd": 0
+  }
+}

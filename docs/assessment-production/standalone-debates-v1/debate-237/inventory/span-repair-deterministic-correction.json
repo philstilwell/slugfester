@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-deterministic-span-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "completed",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "preservedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-237/inventory/model-output.json",
+    "sha256": "aaa7262b48330e695e5e54311bf99d4cdb56349bebe06d10e036ba507ef3c989"
+  },
+  "repairScope": [
+    "moves.oral-transmission-changes-stories.sourceSpan.endEvent",
+    "moves.case-does-not-require-gospel-inerrancy.sourceSpan.endEvent",
+    "moves.conditional-divine-causation.sourceSpan.startEvent",
+    "moves.conditional-divine-causation.sourceSpan.endEvent",
+    "moves.conditional-divine-causation.quoteEligibleExactSpans[0]"
+  ],
+  "changes": [
+    {
+      "moveId": "oral-transmission-changes-stories",
+      "before": {
+        "sourceSpan": {
+          "startEvent": 361,
+          "endEvent": 363
+        }
+      },
+      "after": {
+        "sourceSpan": {
+          "startEvent": 361,
+          "endEvent": 364
+        }
+      },
+      "rationale": "Event 364 completes the telephone-game comparison and makes the selected quote source-exact while remaining below the transport ceiling."
+    },
+    {
+      "moveId": "case-does-not-require-gospel-inerrancy",
+      "before": {
+        "sourceSpan": {
+          "startEvent": 508,
+          "endEvent": 510
+        }
+      },
+      "after": {
+        "sourceSpan": {
+          "startEvent": 508,
+          "endEvent": 511
+        }
+      },
+      "rationale": "Event 511 completes the claim that the selected facts are widely granted and makes the selected quote source-exact while remaining below the transport ceiling."
+    },
+    {
+      "moveId": "conditional-divine-causation",
+      "before": {
+        "sourceSpan": {
+          "startEvent": 729,
+          "endEvent": 732
+        },
+        "quoteEligibleExactSpans": [
+          "miracles must be least probable by natural causes",
+          "if god exists and wanted to raise jesus"
+        ]
+      },
+      "after": {
+        "sourceSpan": {
+          "startEvent": 730,
+          "endEvent": 733
+        },
+        "quoteEligibleExactSpans": [
+          "they must be least probable by natural causes",
+          "if god exists and wanted to raise jesus"
+        ]
+      },
+      "rationale": "The shifted window retains the same claim, includes Licona's conditional conclusion, removes a leading setup fragment, and corrects the quotation to an exact transcript substring."
+    }
+  ],
+  "allOtherSelectionFieldsPreserved": true,
+  "modelRepairCalls": 0,
+  "additionalScorePasses": 0,
+  "directIncrementalCostUsd": 0
+}

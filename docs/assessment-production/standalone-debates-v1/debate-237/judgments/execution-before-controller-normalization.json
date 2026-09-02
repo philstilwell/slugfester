@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.1-standalone-primary-judgment-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "completed-two-valid-isolated-passes",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "model": "5.6 Sol",
+  "modelSlug": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "startedAt": "2026-09-02T17:28:07.288Z",
+  "completedAt": "2026-09-02T17:32:06.209Z",
+  "executionMode": "concurrent-fresh-ephemeral-isolated-contexts",
+  "identicalPacketSha256": "c4f613c5ea7c4c647c452f2c3e9414dab09bfb215b11847dee74c497eea72186",
+  "inventorySha256": "555026ea63c3ed8b530db6a481ef8540962581a2a18dde54a792bcbbc3d6da2b",
+  "allowedInputHashes": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/inventory/inventory.json",
+      "sha256": "555026ea63c3ed8b530db6a481ef8540962581a2a18dde54a792bcbbc3d6da2b",
+      "bytes": 51679
+    },
+    "events": {
+      "path": ".assessment-cache/captions/MP05c_EvgZ0/events.json",
+      "sha256": "4ba706a29a8f70e4790cfeb25098a10a111bf97eb60ef86589e86018c832fabc",
+      "bytes": 194095
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/MP05c_EvgZ0/transcript.txt",
+      "sha256": "a3cc45d6b116efcbb72c30eda01e48ce20af40d45a160c67b7f02feecbdb1336",
+      "bytes": 119889
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df",
+      "bytes": 41775
+    }
+  },
+  "writablePaths": {
+    "pass-a": "docs/assessment-production/standalone-debates-v1/debate-237/judgments/pass-a/output.json",
+    "pass-b": "docs/assessment-production/standalone-debates-v1/debate-237/judgments/pass-b/output.json"
+  },
+  "passes": {
+    "pass-a": {
+      "startedAt": "2026-09-02T17:28:07.289Z",
+      "completedAt": "2026-09-02T17:32:06.200Z",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "outputSha256": "eafe8c98b29f4808a2790a5348cd67710c9a66f6f0e0d09eed280db9cf49f5ed",
+      "validation": {
+        "status": "passed",
+        "pass": "pass-a",
+        "moves": 24
+      },
+      "transport": {
+        "stdoutBytes": 29118,
+        "stderrBytes": 163210
+      }
+    },
+    "pass-b": {
+      "startedAt": "2026-09-02T17:28:07.289Z",
+      "completedAt": "2026-09-02T17:31:57.934Z",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "outputSha256": "71add3d0ca2eabae0220c0e012f1e3379b52476b138269c1eeb9ba1facb77a93",
+      "validation": {
+        "status": "passed",
+        "pass": "pass-b",
+        "moves": 24
+      },
+      "transport": {
+        "stdoutBytes": 28873,
+        "stderrBytes": 163261
+      }
+    }
+  },
+  "apiKeysRemoved": true,
+  "mutuallyBlind": true,
+  "publicationBlind": true,
+  "scoreBlind": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCalls": 0,
+  "modelAuthoredCalculatedScores": 0
+}

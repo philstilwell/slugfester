@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-transport-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-pre-model-transport-failure",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "observedAt": "2026-09-02T17:15:50.743Z",
+  "controllerSha256": "671e2118a027425a6c59f44f26516ffdff6a3f37149ce2488b8083f7e6d99e62",
+  "diagnosis": {
+    "failureClass": "stdin-transport-not-closed",
+    "timeoutMilliseconds": 900000,
+    "exitCode": null,
+    "signal": "SIGTERM",
+    "stderr": "Reading additional input from stdin...",
+    "resultFileCreated": false,
+    "modelOutputPreserved": false,
+    "modelSelectionReached": false,
+    "explanation": "The controller supplied the prompt as an argument while leaving a piped stdin stream open. The CLI waited for end-of-input and was terminated at the controller timeout before model execution or inventory selection."
+  },
+  "recovery": {
+    "authorizedBy": "single-debate-runbook transport-failure recovery rule",
+    "scope": "prompt transport only",
+    "change": "Send the unchanged prompt through stdin and explicitly close the stream.",
+    "countsAsModelSelectionAttempt": false,
+    "directIncrementalCostUsd": 0
+  }
+}

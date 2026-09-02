@@ -1,0 +1,3482 @@
+{
+  "schemaVersion": "1.0-standalone-resolved-final-ledger",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "fully-resolved-and-frozen-before-scoring",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "sourceManifest": "docs/assessment-production/standalone-debates-v1/debate-237/source/source-lock.json",
+  "evidenceLocks": {
+    "inventory": {
+      "sha256": "555026ea63c3ed8b530db6a481ef8540962581a2a18dde54a792bcbbc3d6da2b"
+    },
+    "passA": {
+      "sha256": "eafe8c98b29f4808a2790a5348cd67710c9a66f6f0e0d09eed280db9cf49f5ed"
+    },
+    "passB": {
+      "sha256": "71add3d0ca2eabae0220c0e012f1e3379b52476b138269c1eeb9ba1facb77a93"
+    },
+    "disagreements": {
+      "sha256": "cbc9779da7b9cadd5290c90ed46a52a55636da1989ab1ff67a808b34571b8be3"
+    },
+    "adjudication": {
+      "sha256": "1b62045a0598f3286c279ea3d47742cce0cb0e3303cbabadaaef3a6c1c26e844"
+    },
+    "audio": {
+      "sha256": "7cb331fb0f740fd0ce6dfcbbd5a1b1a4549cd95f9b059d9fab396134c26fea47"
+    }
+  },
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "position": "Historians can establish Jesus's bodily resurrection with reasonable certainty because it is the best explanation of agreed historical facts.",
+      "bridges": [
+        {
+          "bridgeId": "pro-motion",
+          "tier": "motion",
+          "statement": "The resurrection hypothesis can be established with enough historical probability to answer the motion affirmatively."
+        },
+        {
+          "bridgeId": "pro-comparative-method",
+          "tier": "central",
+          "statement": "Historical hypotheses should be compared by explanatory scope, explanatory power, and avoidance of unsupported additions."
+        },
+        {
+          "bridgeId": "pro-bedrock",
+          "tier": "central",
+          "statement": "Jesus's crucifixion, the disciples' claimed appearances, and Paul's claimed appearance provide a sufficiently secure factual basis."
+        },
+        {
+          "bridgeId": "pro-rival-explanations",
+          "tier": "central",
+          "statement": "Natural or visionary alternatives explain the agreed facts less adequately than bodily resurrection."
+        },
+        {
+          "bridgeId": "pro-source-control",
+          "tier": "subsidiary",
+          "statement": "The case can rely on widely granted facts without requiring complete Gospel reliability or scriptural inspiration."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "position": "Historical methods cannot prove a resurrection because they establish probable events from public evidence, whereas resurrection remains an extraordinary theological explanation.",
+      "bridges": [
+        {
+          "bridgeId": "con-motion",
+          "tier": "motion",
+          "statement": "Historical evidence cannot establish Jesus's resurrection as having probably occurred."
+        },
+        {
+          "bridgeId": "con-probability-limit",
+          "tier": "central",
+          "statement": "A method confined to probable historical explanations cannot establish a miracle defined by extraordinary improbability."
+        },
+        {
+          "bridgeId": "con-source-deficiency",
+          "tier": "central",
+          "statement": "The late, non-eyewitness, dependent, and inconsistent resurrection traditions do not supply the source quality historians seek."
+        },
+        {
+          "bridgeId": "con-natural-alternative",
+          "tier": "central",
+          "statement": "Postmortem visionary experiences provide a recurrent historical explanation for the appearance claims without requiring resurrection."
+        },
+        {
+          "bridgeId": "con-public-evidence",
+          "tier": "subsidiary",
+          "statement": "A historical conclusion must rest on evidence and assumptions available across theological viewpoints."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "historical-method",
+      "title": "Historical Method and Public Standards",
+      "weightPercent": 20
+    },
+    {
+      "sectionId": "source-quality",
+      "title": "Source Quality and Reliability",
+      "weightPercent": 20
+    },
+    {
+      "sectionId": "historical-bedrock",
+      "title": "Historical Bedrock and Evidential Relevance",
+      "weightPercent": 20
+    },
+    {
+      "sectionId": "appearances-and-alternatives",
+      "title": "Appearances and Rival Explanations",
+      "weightPercent": 20
+    },
+    {
+      "sectionId": "miracle-probability",
+      "title": "Miracle Probability and the Motion",
+      "weightPercent": 20
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "reasonable-certainty-definition",
+      "sectionId": "historical-method",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 124,
+        "endEvent": 128,
+        "startMs": 812240,
+        "endMs": 837520,
+        "excerpt": "historians occasionally use the term prove to mean that something has been established with reasonable or adequate certainty as in a courtroom trial to prove someone's guilt means to establish it beyond reasonable doubt not beyond all doubt so when carefully nuancing their statements historians talk in terms of probability and although they may conclude that a particular hypothesis is an accurate description of the past"
+      },
+      "quoteEligibleExactSpans": [
+        "established with reasonable or adequate certainty",
+        "historians talk in terms of probability"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-comparative-method",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Historical proof means establishing a conclusion with reasonable or adequate certainty, not eliminating every possible doubt.",
+      "inventoryRationale": "This definition fixes the evidential threshold Licona must meet throughout his affirmative case.",
+      "judgments": {
+        "passA": {
+          "moveId": "reasonable-certainty-definition",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The distinction between reasonable certainty and absolute certainty is coherent and supports a probabilistic historical standard."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The courtroom analogy illustrates the threshold, but no sustained evidence establishes that historians uniformly use proof this way."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "As an opening definition, it directly addresses what proving the resurrection through historical inquiry would require."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "Fixing a nonabsolute evidential threshold directly advances the affirmative methodological burden under the motion."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The threshold is intelligible, though reasonable, adequate, and beyond reasonable doubt are not carefully distinguished."
+            },
+            "calibrationCharity": {
+              "value": 83,
+              "rationale": "The move expressly disclaims certainty beyond all doubt and presents historical conclusions as probabilistic rather than infallible."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "reasonable-certainty-definition",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The definition consistently treats historical proof as an inference exceeding reasonable doubt rather than mathematical certainty."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The legal and historical analogy is plausible, though the threshold is asserted more than independently defended."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "It directly establishes the epistemic standard needed to interpret the motion's disputed word, prove."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "Clarifying the operative proof standard is central to the affirmative's burden and structures its ensuing case."
+            },
+            "precisionClarity": {
+              "value": 90,
+              "rationale": "The distinction among certainty, probability, and reasonable doubt is stated plainly and operationally."
+            },
+            "calibrationCharity": {
+              "value": 86,
+              "rationale": "The claim avoids demanding absolute certainty and adopts a moderate standard recognizable across historical inquiry."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "criteria-govern-probability",
+      "sectionId": "historical-method",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 194,
+        "endEvent": 196,
+        "startMs": 1218560,
+        "endMs": 1233840,
+        "excerpt": "now these three criteria are very important and while none of that fail safe they serve as guides for historians the more criteria that are solidly met by hypothesis the greater the probability it has of being accurate so when may a hypothesis be said to be proved"
+      },
+      "quoteEligibleExactSpans": [
+        "the more criteria that are solidly met by hypothesis",
+        "the greater the probability it has of being accurate"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-comparative-method",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "The probability of a historical hypothesis rises as it satisfies explanatory criteria more fully.",
+      "inventoryRationale": "This supplies the inferential rule connecting comparative explanatory performance to historical probability.",
+      "judgments": {
+        "passA": {
+          "moveId": "criteria-govern-probability",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "It coherently links stronger satisfaction of explanatory criteria to increased probability, while leaving the weighting rule implicit."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The criteria are presented as standard guides, but this short passage offers little defense of their reliability or interaction."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The move directly supplies the comparative method needed to answer the motion, despite preceding any opponent reply."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It materially advances the central burden by identifying how rival historical hypotheses are to be compared."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The general relationship is clear, although more criteria, solidly met, and greater probability remain only loosely specified."
+            },
+            "calibrationCharity": {
+              "value": 86,
+              "rationale": "Calling the criteria guides rather than fail-safe rules appropriately limits the confidence claimed for the method."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "criteria-govern-probability",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The listed criteria form a coherent comparative framework for judging which hypothesis best explains historical data."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "The criteria are standard explanatory virtues, but their selection and application receive limited independent justification."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "It supplies a direct method for answering objections that probability cannot be assessed in historical explanation."
+            },
+            "relevanceBurden": {
+              "value": 92,
+              "rationale": "A workable probability framework bears directly on whether the affirmative can substantiate the requested historical inference."
+            },
+            "precisionClarity": {
+              "value": 93,
+              "rationale": "Explanatory scope, power, plausibility, ad hocness, and fit with accepted beliefs are distinctly articulated."
+            },
+            "calibrationCharity": {
+              "value": 89,
+              "rationale": "The framework compares rival hypotheses without assuming in advance that a supernatural conclusion must prevail."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "It coherently links stronger satisfaction of explanatory criteria to increased probability, while leaving the weighting rule implicit.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence: the inference is intelligible, but the excerpt leaves the criteria-weighting bridge implicit."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The criteria are presented as standard guides, but this short passage offers little defense of their reliability or interaction.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the excerpt calls the criteria guides without defending their reliability or interaction."
+        },
+        "responsiveness": {
+          "value": 84,
+          "rationale": "The move directly supplies the comparative method needed to answer the motion, despite preceding any opponent reply.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because this constructive supplies a motion-facing method and does not answer a prior probability objection."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It materially advances the central burden by identifying how rival historical hypotheses are to be compared.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the method materially advances comparison but does not itself complete the affirmative case."
+        },
+        "precisionClarity": {
+          "value": 80,
+          "rationale": "The general relationship is clear, although more criteria, solidly met, and greater probability remain only loosely specified.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the relationship is clear while “solidly met” and “greater probability” remain loose."
+        },
+        "calibrationCharity": {
+          "value": 86,
+          "rationale": "Calling the criteria guides rather than fail-safe rules appropriately limits the confidence claimed for the method.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because calling the criteria non-fail-safe guides expressly limits the methodological claim."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "crucifixion-and-disciple-bedrock",
+      "sectionId": "historical-bedrock",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 203,
+        "endEvent": 206,
+        "startMs": 1270320,
+        "endMs": 1293040,
+        "excerpt": "how it works this will be our fourth and final checkpoint there are three facts pertaining to the resurrection of jesus that are virtually undisputed and are granted by virtually all scholars who study the subject including skeptical ones fact number one is jesus death by crucifixion fact number two original disciples believed they had arose from the dead and had appeared to them"
+      },
+      "quoteEligibleExactSpans": [
+        "three facts pertaining to the resurrection of jesus",
+        "jesus death by crucifixion"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-bedrock",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Jesus's crucifixion and the disciples' belief that the risen Jesus appeared to them belong to the proposed historical bedrock.",
+      "inventoryRationale": "These are two of the principal facts the resurrection hypothesis is offered to explain.",
+      "judgments": {
+        "passA": {
+          "moveId": "crucifixion-and-disciple-bedrock",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The facts form an intelligible evidential base, though grouping crucifixion with appearance beliefs does not itself establish resurrection."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "Broad scholarly agreement is asserted as support, but the passage supplies neither sources nor the qualifications behind that consensus."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The move directly addresses the affirmative need to identify historical facts that a resurrection hypothesis could explain."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The crucifixion and disciples' reported beliefs are central inputs to the proposed inference, even if not independently decisive."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The two factual claims are recoverable, but virtually undisputed and appeared to them compress important distinctions."
+            },
+            "calibrationCharity": {
+              "value": 72,
+              "rationale": "Describing the facts as virtually undisputed risks overstating consensus, especially concerning the content of appearance beliefs."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "crucifixion-and-disciple-bedrock",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The inference from multiple early attestations to crucifixion and sincere postmortem belief is internally well organized."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "Paul, early tradition, and broad scholarly agreement offer substantial support, though details of each source are compressed."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "It anticipates source skepticism by grounding the case in facts said to be accepted across critical scholarship."
+            },
+            "relevanceBurden": {
+              "value": 94,
+              "rationale": "These facts constitute two principal explananda that the affirmative resurrection hypothesis is offered to explain."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The two bedrock claims are distinguishable, although belief in appearances and the nature of appearances occasionally blur."
+            },
+            "calibrationCharity": {
+              "value": 88,
+              "rationale": "The presentation appropriately limits itself to facts claimed to enjoy unusually broad scholarly acknowledgment."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The facts form an intelligible evidential base, though grouping crucifixion with appearance beliefs does not itself establish resurrection.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because these facts form an intelligible base but do not themselves infer resurrection."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Broad scholarly agreement is asserted as support, but the passage supplies neither sources nor the qualifications behind that consensus.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the excerpt asserts broad consensus without supplying sources or qualifications."
+        },
+        "responsiveness": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The crucifixion and disciples' reported beliefs are central inputs to the proposed inference, even if not independently decisive.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the two facts are central inputs yet are not independently decisive of resurrection."
+        },
+        "precisionClarity": {
+          "value": 80,
+          "rationale": "The two factual claims are recoverable, but virtually undisputed and appeared to them compress important distinctions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the claims are recoverable but “virtually undisputed” and appearance content remain compressed."
+        },
+        "calibrationCharity": {
+          "value": 72,
+          "rationale": "Describing the facts as virtually undisputed risks overstating consensus, especially concerning the content of appearance beliefs.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because “virtually all scholars” overstates the excerpt’s support, especially for appearance-belief content."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "paul-appearance-bedrock",
+      "sectionId": "historical-bedrock",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 207,
+        "endEvent": 209,
+        "startMs": 1293600,
+        "endMs": 1308720,
+        "excerpt": "in short we'll call this the appearances to the disciples fact number three paul the persecutor of the christian church converted to christianity when he too had an experience that he believed was the risen jesus appearing to him in short we'll call this the appearance to paul"
+      },
+      "quoteEligibleExactSpans": [
+        "paul the persecutor of the christian church converted to christianity",
+        "the risen jesus appearing to him"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-bedrock",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Paul's conversion after an experience he understood as an appearance of the risen Jesus is a distinct bedrock fact.",
+      "inventoryRationale": "Paul's prior opposition is used to broaden the explanatory burden beyond experiences among Jesus's followers.",
+      "judgments": {
+        "passA": {
+          "moveId": "paul-appearance-bedrock",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "Paul's conversion and interpreted experience coherently broaden the data beyond prior followers without equating belief with truth."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The claim is specific and historically testable, but the excerpt does not document the sources or establish the experience's nature."
+            },
+            "responsiveness": {
+              "value": 85,
+              "rationale": "It directly develops the factual foundation required by the affirmative case and adds a distinct appearance claimant."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "A former opponent's reported experience materially expands the explanatory burden faced by competing historical hypotheses."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The move carefully states that Paul believed the risen Jesus appeared, rather than directly asserting what caused his experience."
+            },
+            "calibrationCharity": {
+              "value": 84,
+              "rationale": "The wording is appropriately limited to Paul's conversion and interpretation, though the label persecutor adds persuasive emphasis."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "paul-appearance-bedrock",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "Paul's own report of conversion following an appearance experience coherently supports the stated historical datum."
+            },
+            "evidenceWarrant": {
+              "value": 90,
+              "rationale": "The appeal to undisputed Pauline material and Paul's firsthand self-report is comparatively strong primary-source support."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "It directly supplies evidence for a hostile or nonbelieving individual's claimed encounter, strengthening the cumulative case."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "Paul's conversion is a significant independent explanandum for the affirmative's proposed resurrection explanation."
+            },
+            "precisionClarity": {
+              "value": 89,
+              "rationale": "The argument clearly separates Paul's prior opposition, claimed appearance, and subsequent conversion."
+            },
+            "calibrationCharity": {
+              "value": 87,
+              "rationale": "It establishes Paul's reported experience and change without by itself overstating what their ultimate cause must have been."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Paul's conversion and interpreted experience coherently broaden the data beyond prior followers without equating belief with truth.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because Paul’s interpreted experience broadens the data without validly equating his belief with its truth."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The claim is specific and historically testable, but the excerpt does not document the sources or establish the experience's nature.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the excerpt gives no source documentation and does not establish the experience’s nature."
+        },
+        "responsiveness": {
+          "value": 85,
+          "rationale": "It directly develops the factual foundation required by the affirmative case and adds a distinct appearance claimant.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because this constructive develops the affirmative factual foundation rather than replying to an earlier target."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "A former opponent's reported experience materially expands the explanatory burden faced by competing historical hypotheses.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because Paul’s reported experience expands the explanatory burden without independently resolving it."
+        },
+        "precisionClarity": {
+          "value": 86,
+          "rationale": "The move carefully states that Paul believed the risen Jesus appeared, rather than directly asserting what caused his experience.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because it carefully reports what Paul believed rather than asserting the experience’s cause."
+        },
+        "calibrationCharity": {
+          "value": 84,
+          "rationale": "The wording is appropriately limited to Paul's conversion and interpretation, though the label persecutor adds persuasive emphasis.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because the wording limits the claim to Paul’s conversion and interpretation, with only modest persuasive emphasis."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "scripture-alone-does-not-explain-belief",
+      "sectionId": "appearances-and-alternatives",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 226,
+        "endEvent": 228,
+        "startMs": 1405840,
+        "endMs": 1418640,
+        "excerpt": "now since everyone would have known that god had not rescued jesus from being killed and buried it's a stretch that claimed that the early christians would have used this text that is unless their experiences had convinced them that the bodily raised jesus had appeared before them"
+      },
+      "quoteEligibleExactSpans": [
+        "it's a stretch that claimed that the early christians would have used this text",
+        "their experiences had convinced them"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's opening phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-rival-explanations",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Scriptural reflection alone is unlikely to have generated bodily-resurrection belief unless appearance experiences had already convinced the disciples.",
+      "inventoryRationale": "This challenges Licona's selected wishful-thinking alternative at its account of how bodily-resurrection belief arose.",
+      "judgments": {
+        "passA": {
+          "moveId": "scripture-alone-does-not-explain-belief",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The inference plausibly challenges scripture-only causation, but it moves too quickly from experiences to bodily appearances."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The psychological and interpretive claim is largely asserted, without evidence excluding creative scriptural reinterpretation after defeat."
+            },
+            "responsiveness": {
+              "value": 78,
+              "rationale": "It engages a relevant rival explanation for resurrection belief, though only one selected alternative is considered here."
+            },
+            "relevanceBurden": {
+              "value": 78,
+              "rationale": "Weakening a scripture-only account advances the rival-explanation burden but does not discriminate resurrection from visions."
+            },
+            "precisionClarity": {
+              "value": 76,
+              "rationale": "The claim is understandable, although this text and their experiences lack fuller specification in the locked passage."
+            },
+            "calibrationCharity": {
+              "value": 66,
+              "rationale": "Calling the alternative a stretch understates plausible combinations of grief, scripture, group influence, and visionary experience."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "scripture-alone-does-not-explain-belief",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "It reasonably argues that antecedent texts alone do not explain a novel resurrection conviction, though the alternatives are simplified."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The appeal to Jewish expectations and scriptural interpretation is relevant but supported mostly through broad characterization."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "It answers the suggestion that followers generated resurrection belief simply by rereading scripture after Jesus's death."
+            },
+            "relevanceBurden": {
+              "value": 85,
+              "rationale": "Excluding a natural ideological source for the belief helps the affirmative's explanatory comparison."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The core contrast is intelligible, but scripture alone and experiential catalysts are not sharply disentangled."
+            },
+            "calibrationCharity": {
+              "value": 76,
+              "rationale": "The reply acknowledges scriptural influence but sometimes presents Jewish expectation with more uniformity than warranted."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The inference plausibly challenges scripture-only causation, but it moves too quickly from experiences to bodily appearances.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because the challenge to scripture-only causation moves too quickly from experiences to bodily appearances."
+        },
+        "evidenceWarrant": {
+          "value": 59,
+          "rationale": "The psychological and interpretive claim is largely asserted, without evidence excluding creative scriptural reinterpretation after defeat.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the psychological claim does not exclude creative scriptural reinterpretation after defeat."
+        },
+        "responsiveness": {
+          "value": 78,
+          "rationale": "It engages a relevant rival explanation for resurrection belief, though only one selected alternative is considered here.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it engages a relevant rival explanation but considers only that selected alternative here."
+        },
+        "relevanceBurden": {
+          "value": 78,
+          "rationale": "Weakening a scripture-only account advances the rival-explanation burden but does not discriminate resurrection from visions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because weakening scripture-only causation does not discriminate resurrection from visionary experience."
+        },
+        "precisionClarity": {
+          "value": 76,
+          "rationale": "The claim is understandable, although this text and their experiences lack fuller specification in the locked passage.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because “this text” and “their experiences” lack fuller specification in the locked passage."
+        },
+        "calibrationCharity": {
+          "value": 66,
+          "rationale": "Calling the alternative a stretch understates plausible combinations of grief, scripture, group influence, and visionary experience.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because calling the alternative a stretch underrepresents plausible combinations of scripture, grief, and visions."
+        }
+      },
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "resurrection-explains-three-facts",
+      "sectionId": "appearances-and-alternatives",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 241,
+        "endEvent": 243,
+        "startMs": 1485680,
+        "endMs": 1502400,
+        "excerpt": "now let's look at the resurrection hypothesis and comparison it accounts for jesus death by crucifixion the appearances to the disciples and the appearance to paul and um so in other words it explains all three facts without a bit of strain and so it easily beats wishful thinking"
+      },
+      "quoteEligibleExactSpans": [
+        "it accounts for jesus death by crucifixion",
+        "it explains all three facts without a bit of strain"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-rival-explanations",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "The resurrection hypothesis directly explains the crucifixion, the disciples' appearances, and Paul's appearance without strain.",
+      "inventoryRationale": "This is Licona's central application of explanatory scope and power to the resurrection hypothesis.",
+      "judgments": {
+        "passA": {
+          "moveId": "resurrection-explains-three-facts",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "Resurrection is compatible with all three facts, but compatibility alone does not establish comparative explanatory probability."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The claim that the hypothesis explains everything without strain is asserted without defending divine causation or base probability."
+            },
+            "responsiveness": {
+              "value": 78,
+              "rationale": "The move applies the announced method to the affirmative facts, but compares resurrection only briefly with wishful thinking."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "This is central to the affirmative burden because it explicitly connects the hypothesis to all three proposed facts."
+            },
+            "precisionClarity": {
+              "value": 75,
+              "rationale": "The explanatory scope is plainly stated, but without strain and easily beats do not identify measurable comparisons."
+            },
+            "calibrationCharity": {
+              "value": 61,
+              "rationale": "The confident comparative language exceeds the limited alternative analysis supplied in this particular locked passage."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "resurrection-explains-three-facts",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "If the resurrection occurred, it would jointly explain the death, appearance beliefs, and conversions without internal contradiction."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The explanatory fit is clear, but the crucial causal premise depends on contested background probability and divine action."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "It applies the announced criteria to the specific facts rather than leaving the resurrection as an unsupported assertion."
+            },
+            "relevanceBurden": {
+              "value": 96,
+              "rationale": "This is the central affirmative bridge from the accepted data to the historical conclusion demanded by the motion."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The proposed explanation and its target facts are clear, although comparative probabilities are not quantified or deeply developed."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "It recognizes hypothesis comparison, but gives limited treatment to the diversity and combinations of natural explanations."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "Resurrection is compatible with all three facts, but compatibility alone does not establish comparative explanatory probability.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because compatibility with the three facts does not establish comparative explanatory probability."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The claim that the hypothesis explains everything without strain is asserted without defending divine causation or base probability.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because “without strain” is asserted without defending divine causation or base probability."
+        },
+        "responsiveness": {
+          "value": 78,
+          "rationale": "The move applies the announced method to the affirmative facts, but compares resurrection only briefly with wishful thinking.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it applies the announced method but compares resurrection only briefly with wishful thinking."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "This is central to the affirmative burden because it explicitly connects the hypothesis to all three proposed facts.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the move is central and connects all three facts, but does not complete every required link."
+        },
+        "precisionClarity": {
+          "value": 75,
+          "rationale": "The explanatory scope is plainly stated, but without strain and easily beats do not identify measurable comparisons.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the targets are plain while “without strain” and “easily beats” lack measurable content."
+        },
+        "calibrationCharity": {
+          "value": 61,
+          "rationale": "The confident comparative language exceeds the limited alternative analysis supplied in this particular locked passage.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because its confident comparison exceeds the limited alternative analysis in this locked passage."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "affirmative-motion-conclusion",
+      "sectionId": "miracle-probability",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 268,
+        "endEvent": 271,
+        "startMs": 1642080,
+        "endMs": 1681840,
+        "excerpt": "so can historians prove that jesus rose from the dead since it's the best explanation of the known facts and uh beats others by a significant margin as historians we may say that it's quite probable to very probable that jesus rose from the dead enough confidence to hold our conclusion firmly stated in more popular terms yes historians can prove that jesus rose from the dead thank you"
+      },
+      "quoteEligibleExactSpans": [
+        "it's the best explanation of the known facts",
+        "yes historians can prove that jesus rose from the dead"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies at the conclusion of Licona's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Because resurrection substantially outperforms competing explanations of the known facts, historians may hold it as quite to very probable.",
+      "inventoryRationale": "This explicitly completes Licona's route from explanatory comparison to the affirmative answer.",
+      "judgments": {
+        "passA": {
+          "moveId": "affirmative-motion-conclusion",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 67,
+              "rationale": "The conclusion follows if the best-explanation premise is established, but that premise does not alone guarantee high probability."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "The passage summarizes an alleged comparative victory without supplying the missing priors or a comprehensive rival analysis."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It answers the exact motion and states the intended probability threshold rather than retreating to mere possibility."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "The move explicitly completes the affirmative route from explanatory comparison to historical proof under its definition."
+            },
+            "precisionClarity": {
+              "value": 79,
+              "rationale": "The conclusion is clear, although quite probable to very probable and significant margin remain unquantified."
+            },
+            "calibrationCharity": {
+              "value": 64,
+              "rationale": "The firm conclusion is stronger than the comparative support shown, even though it remains framed in probabilistic terms."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "affirmative-motion-conclusion",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The conclusion follows conditionally from the stated facts and best-explanation framework, though it inherits their contested assumptions."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The cumulative support is substantial enough for an argument, but does not independently settle supernatural prior probability."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It expressly answers the motion under the affirmative's defined reasonable-certainty standard."
+            },
+            "relevanceBurden": {
+              "value": 97,
+              "rationale": "The move directly completes the affirmative burden by asserting the exact historical proposition at issue."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The conclusion is concise and linked to the specified evidential standard and explanatory case."
+            },
+            "calibrationCharity": {
+              "value": 75,
+              "rationale": "Reasonable certainty is a calibrated phrase, but the strength claimed exceeds what some unresolved probability issues establish."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The conclusion follows if the best-explanation premise is established, but that premise does not alone guarantee high probability.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because being the asserted best explanation does not by itself guarantee high overall probability."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The passage summarizes an alleged comparative victory without supplying the missing priors or a comprehensive rival analysis.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the summary supplies neither missing priors nor a comprehensive analysis of rivals."
+        },
+        "responsiveness": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 97,
+          "rationale": "The move directly completes the affirmative burden by asserting the exact historical proposition at issue.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option B better matches relevance and burden because the move explicitly asserts the exact historical proposition required by the motion."
+        },
+        "precisionClarity": {
+          "value": 79,
+          "rationale": "The conclusion is clear, although quite probable to very probable and significant margin remain unquantified.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the conclusion is clear but its probability range and significant margin are unquantified."
+        },
+        "calibrationCharity": {
+          "value": 64,
+          "rationale": "The firm conclusion is stronger than the comparative support shown, even though it remains framed in probabilistic terms.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because the firm proof conclusion exceeds the comparative support shown despite probabilistic phrasing."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "consistency-as-source-standard",
+      "sectionId": "historical-method",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 330,
+        "endEvent": 331,
+        "startMs": 2046480,
+        "endMs": 2058160,
+        "excerpt": "you want these independent multiple sources to be consistent with one another if they contradict one another then you've got a problem because you don't know which source then to rely upon moreover"
+      },
+      "quoteEligibleExactSpans": [
+        "independent multiple sources to be consistent with one another",
+        "if they contradict one another then you've got a problem"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's opening phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-public-evidence",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Historians prefer independent sources that remain mutually consistent, since contradictions undermine confidence about which account to rely upon.",
+      "inventoryRationale": "This establishes a source-evaluation standard later applied to the Gospel narratives.",
+      "judgments": {
+        "passA": {
+          "moveId": "consistency-as-source-standard",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The inference that contradictions reduce confidence about source selection is coherent, though inconsistency need not nullify all content."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The standard is methodologically plausible, but the passage gives no examples or account of how minor discrepancies should count."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "As a constructive standard, it directly addresses how historians should assess the resurrection source base."
+            },
+            "relevanceBurden": {
+              "value": 78,
+              "rationale": "It advances the public-source burden, though consistency is only one component of evaluating independent testimony."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The preference and consequence are clearly expressed, while contradiction is left without a materiality threshold."
+            },
+            "calibrationCharity": {
+              "value": 75,
+              "rationale": "Saying contradictions create a problem is proportionate, but not knowing which source to rely on is somewhat overbroad."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "consistency-as-source-standard",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "Demanding consistent evidentiary treatment across favored and disfavored ancient sources is a sound methodological principle."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The general standard is well grounded in historical method, though the debate examples only partially establish inconsistency."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "It directly challenges selective reliance on Gospel material while simultaneously discounting its ordinary historical defects."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Source consistency materially affects the credibility of the affirmative's factual premises and comparative inference."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The methodological objection is clearly framed as equal standards rather than blanket rejection of Christian sources."
+            },
+            "calibrationCharity": {
+              "value": 90,
+              "rationale": "It permits using the Gospels when critically warranted and objects specifically to exceptional or selective treatment."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference that contradictions reduce confidence about source selection is coherent, though inconsistency need not nullify all content.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because contradictions can reduce confidence without making all content unusable."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The standard is methodologically plausible, but the passage gives no examples or account of how minor discrepancies should count.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the plausible standard lacks examples and a threshold for material discrepancies."
+        },
+        "responsiveness": {
+          "value": 82,
+          "rationale": "As a constructive standard, it directly addresses how historians should assess the resurrection source base.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because this constructive addresses source assessment without directly answering a named selective-reliance claim."
+        },
+        "relevanceBurden": {
+          "value": 78,
+          "rationale": "It advances the public-source burden, though consistency is only one component of evaluating independent testimony.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because consistency advances source evaluation but is only one component of testimonial assessment."
+        },
+        "precisionClarity": {
+          "value": 82,
+          "rationale": "The preference and consequence are clearly expressed, while contradiction is left without a materiality threshold.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the standard is understandable but supplies no materiality threshold for contradiction."
+        },
+        "calibrationCharity": {
+          "value": 75,
+          "rationale": "Saying contradictions create a problem is proportionate, but not knowing which source to rely on is somewhat overbroad.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because saying contradictions create a problem is measured, while uncertainty about all reliance is overbroad."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "gospels-late-and-anonymous",
+      "sectionId": "source-quality",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 343,
+        "endEvent": 346,
+        "startMs": 2131440,
+        "endMs": 2155760,
+        "excerpt": "that's the time gap between the death of jesus and the first accounts of his life 35 to 65 years they are not contemporary accounts these accounts are not written by eyewitnesses and they don't claim to be matthew mark luke and john do not claim to be written by people named matthew mark luke and john those are the titles in our bibles but those titles were added by later editors"
+      },
+      "quoteEligibleExactSpans": [
+        "they are not contemporary accounts",
+        "these accounts are not written by eyewitnesses"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's opening phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-source-deficiency",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "The Gospels are separated from Jesus's death by decades, are not eyewitness accounts, and do not internally claim their traditional authorship.",
+      "inventoryRationale": "This directly challenges the temporal proximity and eyewitness status of the resurrection sources.",
+      "judgments": {
+        "passA": {
+          "moveId": "gospels-late-and-anonymous",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "Temporal distance, non-eyewitness status, and anonymous internal presentation coherently reduce direct testimonial strength."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The passage supplies a concrete time range and specific authorship claims, though it does not document their underlying basis."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "It directly challenges the quality of major resurrection sources and therefore the historical warrant available to the affirmative."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "Source proximity and eyewitness status materially bear on whether resurrection claims can satisfy historical standards."
+            },
+            "precisionClarity": {
+              "value": 87,
+              "rationale": "The dates and authorship distinctions are stated clearly, including the distinction between texts and later titles."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "The criticism targets source characteristics rather than denying all value, though not eyewitness is stated categorically."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "gospels-late-and-anonymous",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "Late, anonymous, non-eyewitness texts logically warrant caution about using detailed narratives as direct testimony."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "The dating, anonymity, language, and authorship observations are concrete source-critical considerations, albeit briefly defended."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "It squarely contests the reliability and evidential status of sources invoked for the affirmative reconstruction."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "The quality and provenance of central narrative sources directly bear on whether the claimed facts are historically established."
+            },
+            "precisionClarity": {
+              "value": 90,
+              "rationale": "The several source limitations are distinctly stated and their intended evidential consequence is easy to follow."
+            },
+            "calibrationCharity": {
+              "value": 84,
+              "rationale": "The move urges caution rather than claiming that anonymity or lateness automatically makes every report false."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Temporal distance, non-eyewitness status, and anonymous internal presentation coherently reduce direct testimonial strength.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because temporal distance and anonymous, non-eyewitness presentation coherently reduce direct testimonial strength."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The passage supplies a concrete time range and specific authorship claims, though it does not document their underlying basis.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because concrete dating and authorship claims are given without their underlying documentation."
+        },
+        "responsiveness": {
+          "value": 87,
+          "rationale": "It directly challenges the quality of major resurrection sources and therefore the historical warrant available to the affirmative.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it directly challenges source quality and the historical warrant available to the affirmative."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Source proximity and eyewitness status materially bear on whether resurrection claims can satisfy historical standards.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because proximity and eyewitness status materially bear on proof but do not alone resolve it."
+        },
+        "precisionClarity": {
+          "value": 87,
+          "rationale": "The dates and authorship distinctions are stated clearly, including the distinction between texts and later titles.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the dates and distinction between internal authorship and later titles are explicitly stated."
+        },
+        "calibrationCharity": {
+          "value": 78,
+          "rationale": "The criticism targets source characteristics rather than denying all value, though not eyewitness is stated categorically.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because the criticism targets source characteristics but states non-eyewitness status categorically."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "oral-transmission-changes-stories",
+      "sectionId": "source-quality",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 361,
+        "endEvent": 364,
+        "startMs": 2232720,
+        "endMs": 2252000,
+        "excerpt": "if you ever had your children play the game telephone uh in a birthday party where one kid tells a story to the next kid sitting at their birthday party then the story goes to the next kid to the next day goes around the circle until it comes back to the first kid it's a different story if it weren't a different story it'd be a pretty dumb birthday party game to play did"
+      },
+      "quoteEligibleExactSpans": [
+        "one kid tells a story to the next kid",
+        "it's a different story"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's opening phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-source-deficiency",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "proposition": "Repeated oral transmission predictably changes stories before they are written down.",
+      "inventoryRationale": "This provides Ehrman's mechanism for the development of divergent resurrection traditions.",
+      "judgments": {
+        "passA": {
+          "moveId": "oral-transmission-changes-stories",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 63,
+              "rationale": "The analogy illustrates possible alteration but does not validly establish how controlled ancient community traditions changed."
+            },
+            "evidenceWarrant": {
+              "value": 46,
+              "rationale": "A children's telephone game is weak evidence for decades of oral tradition with repetition, correction, and communal controls."
+            },
+            "responsiveness": {
+              "value": 75,
+              "rationale": "It addresses the transmission gap behind the sources but does not closely analyze the actual resurrection traditions."
+            },
+            "relevanceBurden": {
+              "value": 72,
+              "rationale": "A mechanism of story alteration is relevant to source deficiency, although the analogy alone advances it only modestly."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The intended claim that repeated retelling can alter stories is clear, even though predictably lacks conditions or scale."
+            },
+            "calibrationCharity": {
+              "value": 57,
+              "rationale": "The birthday-game comparison presents oral transmission in an unusually uncontrolled form and underrepresents stronger versions."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "oral-transmission-changes-stories",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The claim that repeated oral transmission can alter narratives coherently weakens straightforward eyewitness-to-text assumptions."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The telephone-game analogy illustrates alteration but poorly models long-term communal transmission with repetition and correction."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It directly addresses the proposed chain from early witnesses to later Gospel accounts."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Transmission reliability affects how confidently detailed resurrection narratives can support the affirmative facts."
+            },
+            "precisionClarity": {
+              "value": 87,
+              "rationale": "The causal concern is expressed clearly, although mechanisms and the extent of alleged changes remain general."
+            },
+            "calibrationCharity": {
+              "value": 77,
+              "rationale": "It identifies a genuine risk, but the simplified analogy gives limited attention to stabilizing features of oral traditions."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 63,
+          "rationale": "The analogy illustrates possible alteration but does not validly establish how controlled ancient community traditions changed.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because the telephone analogy shows possible alteration, not how controlled ancient traditions actually changed."
+        },
+        "evidenceWarrant": {
+          "value": 46,
+          "rationale": "A children's telephone game is weak evidence for decades of oral tradition with repetition, correction, and communal controls.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because a children’s game poorly models long-term transmission with repetition and communal correction."
+        },
+        "responsiveness": {
+          "value": 75,
+          "rationale": "It addresses the transmission gap behind the sources but does not closely analyze the actual resurrection traditions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it addresses the transmission gap without closely analyzing the actual resurrection traditions."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "A mechanism of story alteration is relevant to source deficiency, although the analogy alone advances it only modestly.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because alteration is relevant, but this analogy advances the source-deficiency burden only modestly."
+        },
+        "precisionClarity": {
+          "value": 82,
+          "rationale": "The intended claim that repeated retelling can alter stories is clear, even though predictably lacks conditions or scale.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the intended alteration claim is clear but lacks conditions, mechanisms, and scale."
+        },
+        "calibrationCharity": {
+          "value": 57,
+          "rationale": "The birthday-game comparison presents oral transmission in an unusually uncontrolled form and underrepresents stronger versions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because the birthday-game analogy underrepresents stabilizing features of stronger oral-transmission accounts."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "miracles-least-probable-by-definition",
+      "sectionId": "miracle-probability",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 450,
+        "endEvent": 453,
+        "startMs": 2746720,
+        "endMs": 2777280,
+        "excerpt": "can't repeat the experiment historians can only establish what probably happened in the past and what are miracles exactly well mike has already told us what miracles are miracles in any given instance are the least probable occurrence they violate what we think of as the natural working of the natural order if they weren't spectacularly unusual they wouldn't be miracles by definition"
+      },
+      "quoteEligibleExactSpans": [
+        "historians can only establish what probably happened",
+        "miracles in any given instance are the least probable occurrence"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's opening phase identified in README.md and explicitly contrasts his probability rule with Licona's account.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-probability-limit",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "criteria-govern-probability"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "least-probable-challenges-comparative-rule",
+          "targetMoveId": "criteria-govern-probability",
+          "text": "Ehrman argues that historical method seeks probable events while miracles are extraordinary departures from the natural order and thus begin as the least probable occurrences.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Historical method establishes probable events, whereas miracles are by definition spectacularly unusual and least probable.",
+      "inventoryRationale": "This states Ehrman's main methodological barrier to historical proof of resurrection.",
+      "judgments": {
+        "passA": {
+          "moveId": "miracles-least-probable-by-definition",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 58,
+              "rationale": "The move shifts from spectacular rarity under natural regularities to least overall probability without defending that equivalence."
+            },
+            "evidenceWarrant": {
+              "value": 55,
+              "rationale": "The historical-probability premise is plausible, but the definitional claim does not establish event probability given all causes."
+            },
+            "responsiveness": {
+              "value": 85,
+              "rationale": "It directly contests Licona's comparative probability rule at the point where that rule is applied to a miracle."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "The proposed methodological barrier directly supports the negative answer to whether historians can prove resurrection."
+            },
+            "precisionClarity": {
+              "value": 74,
+              "rationale": "The contrast is easy to follow, but unusual, naturally irregular, and least probable are treated as interchangeable."
+            },
+            "calibrationCharity": {
+              "value": 59,
+              "rationale": "The formulation grants too little room for Licona's distinction between natural frequency and conditional divine causation."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "miracles-least-probable-by-definition",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The argument coherently links miracle claims to low antecedent frequency, but risks making rarity alone dispositive."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The appeal to ordinary experience supports low priors, yet the definitional claim does not fully address case-specific evidence."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It directly attacks the affirmative's probability judgment at the precise point where a supernatural cause is inferred."
+            },
+            "relevanceBurden": {
+              "value": 94,
+              "rationale": "Whether historical evidence can overcome a miracle's low prior is central to the negative burden against proof."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The improbability principle is easy to understand, though definition, prior probability, and historical conclusion are compressed."
+            },
+            "calibrationCharity": {
+              "value": 69,
+              "rationale": "Calling miracles least probable by definition understates the affirmative's claim that unusually strong evidence can alter posterior judgment."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The move shifts from spectacular rarity under natural regularities to least overall probability without defending that equivalence.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because rarity under natural regularities is not shown equivalent to least overall probability."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The historical-probability premise is plausible, but the definitional claim does not establish event probability given all causes.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the definition does not establish event probability after considering all possible causes."
+        },
+        "responsiveness": {
+          "value": 85,
+          "rationale": "It directly contests Licona's comparative probability rule at the point where that rule is applied to a miracle.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it directly contests the named comparative rule where that rule is applied to a miracle."
+        },
+        "relevanceBurden": {
+          "value": 90,
+          "rationale": "The proposed methodological barrier directly supports the negative answer to whether historians can prove resurrection.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the methodological barrier directly supports the negative answer to the motion."
+        },
+        "precisionClarity": {
+          "value": 74,
+          "rationale": "The contrast is easy to follow, but unusual, naturally irregular, and least probable are treated as interchangeable.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because unusual, naturally irregular, and least probable are treated as interchangeable."
+        },
+        "calibrationCharity": {
+          "value": 59,
+          "rationale": "The formulation grants too little room for Licona's distinction between natural frequency and conditional divine causation.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because it gives too little room to the named distinction between natural frequency and divine causation."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "probability-paradox-blocks-proof",
+      "sectionId": "miracle-probability",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 464,
+        "endEvent": 468,
+        "startMs": 2846320,
+        "endMs": 2877200,
+        "excerpt": "how can the least probable occurrence a miracle ever be the most probable by definition it's the least probable occurrence historians could never establish the least probable occurrence as being the most probable which means historians could never establish that the resurrection ever happened it cannot be used cannot be proved by historians maybe it happened maybe it didn't happen but you can't use historical evidence to prove it"
+      },
+      "quoteEligibleExactSpans": [
+        "how can the least probable occurrence a miracle ever be the most probable",
+        "you can't use historical evidence to prove it"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's opening phase identified in README.md and directly rejects Licona's affirmative conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-motion",
+        "tier": "motion",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "affirmative-motion-conclusion"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "improbability-defeats-motion-conclusion",
+          "targetMoveId": "affirmative-motion-conclusion",
+          "text": "Ehrman contends that an event classified as least probable cannot become the most probable historical conclusion, even if its occurrence remains logically possible.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Historians cannot prove resurrection because their discipline cannot establish its least probable explanation as the most probable occurrence.",
+      "inventoryRationale": "This converts Ehrman's probability premise into his explicit negative answer to the motion.",
+      "judgments": {
+        "passA": {
+          "moveId": "probability-paradox-blocks-proof",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 52,
+              "rationale": "The conclusion repeats the least-probable premise, so it is valid conditionally but largely circular as an independent proof."
+            },
+            "evidenceWarrant": {
+              "value": 50,
+              "rationale": "No additional warrant shows why a rare event cannot become the best explanation under case-specific evidence and assumptions."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "It squarely opposes the affirmative conclusion and distinguishes historical proof from mere logical possibility."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "The argument directly addresses the motion and would complete the negative burden if its probability premise held."
+            },
+            "precisionClarity": {
+              "value": 81,
+              "rationale": "The conclusion and methodological claim are unmistakable, although probable shifts between prior and posterior senses."
+            },
+            "calibrationCharity": {
+              "value": 61,
+              "rationale": "Allowing that resurrection may have happened is measured, but the categorical methodological exclusion remains overconfident."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "probability-paradox-blocks-proof",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The conclusion repeats the low-prior premise as a permanent barrier and does not show why evidence could never change relative probability."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The reasoning is primarily definitional and supplies no developed warrant for treating antecedent rarity as an absolute evidential ceiling."
+            },
+            "responsiveness": {
+              "value": 93,
+              "rationale": "It directly engages the proposed historical probability standard and challenges its application to resurrection."
+            },
+            "relevanceBurden": {
+              "value": 93,
+              "rationale": "If sustained, the claimed probability barrier would prevent the affirmative from reaching its asserted historical threshold."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The alleged tension and its consequence for historical proof are presented sharply and memorably."
+            },
+            "calibrationCharity": {
+              "value": 62,
+              "rationale": "The formulation gives inadequate credit to the opposing distinction between prior probability and probability after specific evidence."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 52,
+          "rationale": "The conclusion repeats the least-probable premise, so it is valid conditionally but largely circular as an independent proof.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because the conclusion conditionally repeats its least-probable premise rather than independently proving the barrier."
+        },
+        "evidenceWarrant": {
+          "value": 50,
+          "rationale": "No additional warrant shows why a rare event cannot become the best explanation under case-specific evidence and assumptions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because no additional support shows why case-specific evidence could never overcome rarity."
+        },
+        "responsiveness": {
+          "value": 88,
+          "rationale": "It squarely opposes the affirmative conclusion and distinguishes historical proof from mere logical possibility.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it squarely opposes the named affirmative conclusion and distinguishes proof from possibility."
+        },
+        "relevanceBurden": {
+          "value": 91,
+          "rationale": "The argument directly addresses the motion and would complete the negative burden if its probability premise held.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the argument would complete the negative burden only if its probability premise held."
+        },
+        "precisionClarity": {
+          "value": 81,
+          "rationale": "The conclusion and methodological claim are unmistakable, although probable shifts between prior and posterior senses.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the conclusion is unmistakable although probability shifts between prior and posterior senses."
+        },
+        "calibrationCharity": {
+          "value": 61,
+          "rationale": "Allowing that resurrection may have happened is measured, but the categorical methodological exclusion remains overconfident.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because it concedes possible occurrence while still asserting an overconfident categorical methodological exclusion."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "case-does-not-require-gospel-inerrancy",
+      "sectionId": "source-quality",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 508,
+        "endEvent": 511,
+        "startMs": 3141120,
+        "endMs": 3164400,
+        "excerpt": "i did not build my case for the resurrection this evening on biblical inerrancy i didn't build it on the trustworthiness of the gospels particular dating of them or who wrote them one of the things i did in my investigation to minimize my own bias was to go with the facts and only those facts that were virtually indisputed by historians that's what i built my case on and professor irman"
+      },
+      "quoteEligibleExactSpans": [
+        "i did not build my case for the resurrection this evening on biblical inerrancy",
+        "only those facts that were virtually indisputed by historians"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's first rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-source-control",
+        "tier": "subsidiary",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "gospels-late-and-anonymous",
+        "oral-transmission-changes-stories"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "inerrancy-not-required",
+          "targetMoveId": "gospels-late-and-anonymous",
+          "text": "Licona answers that his case does not depend on Gospel authorship, dating, complete trustworthiness, or biblical inerrancy.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "oral-variation-bypassed-by-bedrock",
+          "targetMoveId": "oral-transmission-changes-stories",
+          "text": "He restricts his case to facts he says historians widely grant despite broader transmission concerns.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Licona's argument relies on widely granted facts rather than biblical inerrancy, traditional authorship, or comprehensive Gospel reliability.",
+      "inventoryRationale": "This is his principal answer to Ehrman's source-wide reliability challenge.",
+      "judgments": {
+        "passA": {
+          "moveId": "case-does-not-require-gospel-inerrancy",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "Restricting the case to independently granted facts coherently limits the force of objections to comprehensive Gospel reliability."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The reply identifies a defensible methodological strategy, but merely asserting scholarly agreement does not independently warrant each fact."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "It directly answers authorship and broad reliability objections, while only partially addressing distortion of the selected facts."
+            },
+            "relevanceBurden": {
+              "value": 84,
+              "rationale": "Showing that inerrancy and traditional authorship are unnecessary materially protects the affirmative source-control burden."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The dependencies being denied and the narrower factual basis being asserted are presented with useful specificity."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "The reply accurately narrows its own case, though calling the facts virtually undisputed again overstates the consensus."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "case-does-not-require-gospel-inerrancy",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "A minimal-facts case can consistently rely on selected historically supported claims without requiring total textual inerrancy."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The distinction is methodologically sound and supported by reliance on Pauline and commonly accepted facts beyond Gospel harmonization."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It directly answers the criticism that Gospel discrepancies or anonymity defeat every element of the affirmative case."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "Preserving the evidential core despite broader textual criticism is essential to the affirmative burden."
+            },
+            "precisionClarity": {
+              "value": 91,
+              "rationale": "The limited claim is clearly defined: critical use of sources does not equal a commitment to their complete accuracy."
+            },
+            "calibrationCharity": {
+              "value": 91,
+              "rationale": "It grants textual problems and avoids defending a stronger doctrine of inerrancy than the historical argument requires."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Restricting the case to independently granted facts coherently limits the force of objections to comprehensive Gospel reliability.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because a minimal-facts strategy limits broad reliability objections without validating each selected fact."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The reply identifies a defensible methodological strategy, but merely asserting scholarly agreement does not independently warrant each fact.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because asserting scholarly agreement does not independently support each selected fact."
+        },
+        "responsiveness": {
+          "value": 84,
+          "rationale": "It directly answers authorship and broad reliability objections, while only partially addressing distortion of the selected facts.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it answers authorship and broad reliability objections but only partly answers distortion of selected facts."
+        },
+        "relevanceBurden": {
+          "value": 84,
+          "rationale": "Showing that inerrancy and traditional authorship are unnecessary materially protects the affirmative source-control burden.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because denying dependence on inerrancy materially protects, but does not complete, source control."
+        },
+        "precisionClarity": {
+          "value": 86,
+          "rationale": "The dependencies being denied and the narrower factual basis being asserted are presented with useful specificity.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the denied dependencies and narrower factual basis are specifically identified."
+        },
+        "calibrationCharity": {
+          "value": 78,
+          "rationale": "The reply accurately narrows its own case, though calling the facts virtually undisputed again overstates the consensus.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because the reply narrows its case accurately but again overstates the facts as virtually undisputed."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "ehrman-grants-appearance-beliefs",
+      "sectionId": "historical-bedrock",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 515,
+        "endEvent": 518,
+        "startMs": 3181120,
+        "endMs": 3202480,
+        "excerpt": "that some of jesus followers came to believe that he had been raised from the dead soon after his execution we know some of these believers by name he goes on and explains paul and he also says these others also claim to have seen him alive afterward fact number three the appearance to paul there is no doubt that paul believed that he saw jesus real but glorified body raised from the dead"
+      },
+      "quoteEligibleExactSpans": [
+        "some of jesus followers came to believe that he had been raised from the dead",
+        "there is no doubt that paul believed"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's first rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-bedrock",
+        "tier": "central",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "gospels-late-and-anonymous"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "concessions-preserve-bedrock",
+          "targetMoveId": "gospels-late-and-anonymous",
+          "text": "Licona cites Ehrman's own acceptance that followers claimed appearances and that Paul believed he saw the risen Jesus, arguing these facts survive the source criticism.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Ehrman's own stated conclusions grant the disciples' resurrection belief and Paul's claimed appearance, preserving Licona's factual base.",
+      "inventoryRationale": "The reply uses the opponent's concessions to defend the core data despite disputed Gospel reliability.",
+      "judgments": {
+        "passA": {
+          "moveId": "ehrman-grants-appearance-beliefs",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "Using the opponent's concessions coherently shows that broad Gospel criticism does not remove the existence of claimed beliefs."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The warrant rests on specific concessions about followers and Paul, though it supports beliefs rather than bodily resurrection."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "The reply directly contacts the source challenge by showing that the opponent accepts the limited bedrock despite it."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "Preserving the factual base is central to the affirmative explanatory case, even though it does not prove the proposed cause."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The move clearly distinguishes what followers claimed and Paul believed from a direct concession that resurrection occurred."
+            },
+            "calibrationCharity": {
+              "value": 85,
+              "rationale": "The opponent's concession is represented with appropriate limits and is not explicitly transformed into agreement on the event."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "ehrman-grants-appearance-beliefs",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "Using the opponent's stated concessions coherently narrows the dispute to explanation rather than existence of appearance beliefs."
+            },
+            "evidenceWarrant": {
+              "value": 88,
+              "rationale": "The warrant is strong within the debate because the cited concessions concern disciples and Paul believing they saw Jesus."
+            },
+            "responsiveness": {
+              "value": 93,
+              "rationale": "It answers source objections by showing that key experiential claims remain common ground despite Gospel criticism."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "Securing agreed explananda materially supports the affirmative's minimal-facts strategy."
+            },
+            "precisionClarity": {
+              "value": 89,
+              "rationale": "The move accurately focuses on beliefs or experiences rather than treating the concession as agreement on resurrection."
+            },
+            "calibrationCharity": {
+              "value": 90,
+              "rationale": "It generally preserves the distinction between conceding sincere experiences and conceding their supernatural cause."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 91,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "historical-conclusion-before-theology",
+      "sectionId": "historical-method",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 543,
+        "endEvent": 544,
+        "startMs": 3343840,
+        "endMs": 3355200,
+        "excerpt": "hypothesis is the one that has the greatest explanatory scope power and less ad hoc then it should be the best explanation the most probable explanation and the one that we can be confident"
+      },
+      "quoteEligibleExactSpans": [
+        "the greatest explanatory scope power and less ad hoc",
+        "the best explanation the most probable explanation"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's first rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-comparative-method",
+        "tier": "central",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "probability-paradox-blocks-proof"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "criteria-can-yield-historical-conclusion",
+          "targetMoveId": "probability-paradox-blocks-proof",
+          "text": "Licona maintains that the hypothesis best satisfying historical explanatory criteria should be accepted as most probable before considering further theological implications.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "If resurrection best satisfies historical explanatory criteria, it may be accepted as the probable historical conclusion independently of further theological inference.",
+      "inventoryRationale": "This defends the legitimacy of reaching resurrection through historical comparison rather than excluding it categorically.",
+      "judgments": {
+        "passA": {
+          "moveId": "historical-conclusion-before-theology",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 65,
+              "rationale": "The criteria-to-probability inference is intelligible, but it assumes the criteria can settle a hypothesis containing divine action."
+            },
+            "evidenceWarrant": {
+              "value": 55,
+              "rationale": "The passage asserts comparative superiority without demonstrating it or defending how theological priors enter the comparison."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "It opposes the probability barrier but mostly restates the affirmative method instead of answering the barrier's core premise."
+            },
+            "relevanceBurden": {
+              "value": 84,
+              "rationale": "The legitimacy of reaching resurrection through historical criteria is directly central to the affirmative methodological burden."
+            },
+            "precisionClarity": {
+              "value": 76,
+              "rationale": "The criteria and conclusion are understandable, though the claimed separation from theological inference remains underexplained."
+            },
+            "calibrationCharity": {
+              "value": 64,
+              "rationale": "Calling the best-scoring hypothesis the most probable overlooks the opponent's concern about admissible causal assumptions."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "historical-conclusion-before-theology",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "Separating a historical inference from later theological interpretation is coherent, though divine causation remains embedded in the inference."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The sequencing is conceptually defensible but does not itself supply evidence that historians can identify supernatural causation."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It directly replies to the claim that accepting resurrection requires prior Christian theological commitments."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The accessibility of the conclusion to historical method is crucial to the affirmative's formulation of the motion."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The history-theology distinction is intelligible, but the boundary becomes less clear once God is proposed as cause."
+            },
+            "calibrationCharity": {
+              "value": 82,
+              "rationale": "It allows subsequent theological questions to remain open rather than deriving an entire creed from one historical conclusion."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "The criteria-to-probability inference is intelligible, but it assumes the criteria can settle a hypothesis containing divine action.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because the criteria-to-probability inference assumes they can settle a hypothesis containing divine action."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The passage asserts comparative superiority without demonstrating it or defending how theological priors enter the comparison.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because superiority and the handling of theological priors are asserted rather than demonstrated."
+        },
+        "responsiveness": {
+          "value": 70,
+          "rationale": "It opposes the probability barrier but mostly restates the affirmative method instead of answering the barrier's core premise.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it opposes the named probability barrier but mostly restates the affirmative method."
+        },
+        "relevanceBurden": {
+          "value": 84,
+          "rationale": "The legitimacy of reaching resurrection through historical criteria is directly central to the affirmative methodological burden.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because historical accessibility is central while this move does not fully establish it."
+        },
+        "precisionClarity": {
+          "value": 76,
+          "rationale": "The criteria and conclusion are understandable, though the claimed separation from theological inference remains underexplained.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the criteria are understandable but the history-theology separation remains underexplained."
+        },
+        "calibrationCharity": {
+          "value": 64,
+          "rationale": "Calling the best-scoring hypothesis the most probable overlooks the opponent's concern about admissible causal assumptions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because it overlooks the opponent’s live concern about admissible causal assumptions."
+        }
+      },
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "crucifixion-not-positive-evidence",
+      "sectionId": "historical-bedrock",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 587,
+        "endEvent": 588,
+        "startMs": 3631120,
+        "endMs": 3643600,
+        "excerpt": "one that jesus was crucified how exactly does the crucifixion of jesus provide evidence that he was raised from the dead there were thousands of people who were crucified in the first century"
+      },
+      "quoteEligibleExactSpans": [
+        "how exactly does the crucifixion of jesus provide evidence",
+        "there were thousands of people who were crucified"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's first rebuttal phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-natural-alternative",
+        "tier": "central",
+        "polarity": "attacks"
+      },
+      "respondsToIds": [
+        "crucifixion-and-disciple-bedrock"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "death-necessary-not-probative",
+          "targetMoveId": "crucifixion-and-disciple-bedrock",
+          "text": "Ehrman distinguishes a necessary precondition for resurrection from evidence favoring resurrection, noting that many crucifixions did not imply resurrections.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Jesus's crucifixion is a necessary precondition for resurrection but is not itself positive evidence that resurrection occurred.",
+      "inventoryRationale": "This directly contests the evidential relevance of the first proposed bedrock fact.",
+      "judgments": {
+        "passA": {
+          "moveId": "crucifixion-not-positive-evidence",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The reply clearly distinguishes a necessary precondition from evidence that discriminates resurrection from nonresurrection outcomes."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The prevalence of other crucifixions strongly illustrates the low discriminatory value, though no exact base-rate support is supplied."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It directly contacts the first proposed bedrock fact and challenges precisely what evidential work that fact performs."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "The point materially limits one part of the affirmative evidential base without denying that death is explanatorily required."
+            },
+            "precisionClarity": {
+              "value": 90,
+              "rationale": "The diagnostic question and comparison clearly identify the distinction between prerequisite and positive evidence."
+            },
+            "calibrationCharity": {
+              "value": 86,
+              "rationale": "The move does not dispute the crucifixion itself and confines its criticism to the fact's claimed probative force."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "crucifixion-not-positive-evidence",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "It correctly distinguishes a necessary background condition from evidence that discriminates resurrection against rival outcomes."
+            },
+            "evidenceWarrant": {
+              "value": 86,
+              "rationale": "The evidential point follows from the commonplace fact that crucifixion normally results in death without resurrection."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It directly challenges the affirmative's inclusion of crucifixion among facts said positively to favor resurrection."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "Discriminating evidence is central to whether the cumulative case actually raises resurrection probability."
+            },
+            "precisionClarity": {
+              "value": 93,
+              "rationale": "The distinction between establishing death and establishing reversal of death is exceptionally clear."
+            },
+            "calibrationCharity": {
+              "value": 88,
+              "rationale": "It does not deny crucifixion; it appropriately limits what that conceded fact can independently establish."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "apollonius-parity-challenge",
+      "sectionId": "appearances-and-alternatives",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 629,
+        "endEvent": 631,
+        "startMs": 3910400,
+        "endMs": 3926960,
+        "excerpt": "now if the rock solid evidence of jesus resurrection is that somebody claimed they saw him alive afterwards then i think we have rock solid evidence that apollonius of tiana was raised from the dead how is it any different and it isn't just apollonius"
+      },
+      "quoteEligibleExactSpans": [
+        "somebody claimed they saw him alive afterwards",
+        "rock solid evidence that apollonius of tiana was raised from the dead"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's first rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-natural-alternative",
+        "tier": "central",
+        "polarity": "attacks"
+      },
+      "respondsToIds": [
+        "resurrection-explains-three-facts"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "appearance-criterion-overgenerates",
+          "targetMoveId": "resurrection-explains-three-facts",
+          "text": "Ehrman argues that treating postmortem appearance claims as sufficient resurrection evidence would also support resurrection claims about Apollonius and other ancient figures.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Appearance claims alone cannot establish resurrection without also validating comparable postmortem claims about other ancient figures.",
+      "inventoryRationale": "The comparison tests whether Licona's proposed evidence discriminates resurrection from parallel claims.",
+      "judgments": {
+        "passA": {
+          "moveId": "apollonius-parity-challenge",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The parity test coherently exposes possible overgeneration, but it assumes relevant evidential comparability not established here."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "A parallel claim is named, yet this short passage supplies no dates, source quality, independence, or detailed content comparison."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "It directly tests whether postmortem appearance claims sufficiently discriminate the resurrection explanation from parallels."
+            },
+            "relevanceBurden": {
+              "value": 82,
+              "rationale": "An undifferentiated parallel would weaken the affirmative comparison, although the parity premise still requires support."
+            },
+            "precisionClarity": {
+              "value": 80,
+              "rationale": "The challenge is clear, but rock solid evidence compresses Licona's case beyond appearance testimony alone."
+            },
+            "calibrationCharity": {
+              "value": 65,
+              "rationale": "The reply reconstructs the affirmative too narrowly by treating appearance claims as its sole evidential criterion."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "apollonius-parity-challenge",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The comparison consistently tests whether the affirmative's source standards would validate analogous ancient miracle claims."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The parallel contains relevant reported features, but differences in dating, dependence, genre, and evidence are not fully developed."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "It directly presses the announced consistency principle against the resurrection inference."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "A successful parity case would undermine selective confidence in one miracle tradition and thus the claimed proof."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The challenge is vivid and understandable, although exact points of evidential equivalence remain underspecified."
+            },
+            "calibrationCharity": {
+              "value": 81,
+              "rationale": "It fairly requests consistent standards, but rhetorical parity may imply closer source equivalence than the debate establishes."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The parity test coherently exposes possible overgeneration, but it assumes relevant evidential comparability not established here.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because the parity test is intelligible but assumes evidential comparability not established here."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "A parallel claim is named, yet this short passage supplies no dates, source quality, independence, or detailed content comparison.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the excerpt names a parallel without dates, independence, source quality, or detailed comparison."
+        },
+        "responsiveness": {
+          "value": 83,
+          "rationale": "It directly tests whether postmortem appearance claims sufficiently discriminate the resurrection explanation from parallels.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it directly tests the named appearance inference without establishing the broader consistency framing."
+        },
+        "relevanceBurden": {
+          "value": 82,
+          "rationale": "An undifferentiated parallel would weaken the affirmative comparison, although the parity premise still requires support.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because a genuine parallel would weaken discrimination, but the parity premise remains unsupported."
+        },
+        "precisionClarity": {
+          "value": 80,
+          "rationale": "The challenge is clear, but rock solid evidence compresses Licona's case beyond appearance testimony alone.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because “rock solid evidence” compresses the affirmative case into appearance testimony alone."
+        },
+        "calibrationCharity": {
+          "value": 65,
+          "rationale": "The reply reconstructs the affirmative too narrowly by treating appearance claims as its sole evidential criterion.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because the reply reconstructs the affirmative too narrowly as relying solely on appearance claims."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "tangible-visions-recur",
+      "sectionId": "appearances-and-alternatives",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 686,
+        "endEvent": 690,
+        "startMs": 4309200,
+        "endMs": 4342800,
+        "excerpt": "they experienced him as still in their lives they remembered his words but they also had some kind of experience of him a real tangible experience with him where they could feel him and touch him and talk to him just as widows today sometimes experienced their dead husbands or as children today experience their dead parents they had experiences of jesus experiences that happened multiple times throughout history and still till down till today"
+      },
+      "quoteEligibleExactSpans": [
+        "a real tangible experience with him",
+        "experiences that happened multiple times throughout history"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's first rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-natural-alternative",
+        "tier": "central",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "scripture-alone-does-not-explain-belief",
+        "resurrection-explains-three-facts"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "visions-explain-conviction",
+          "targetMoveId": "scripture-alone-does-not-explain-belief",
+          "text": "Ehrman agrees that experiences drove belief but proposes tangible postmortem visions rather than bodily resurrection as their cause.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "recurrent-experience-rivals-resurrection",
+          "targetMoveId": "resurrection-explains-three-facts",
+          "text": "He argues that recurrent experiences of deceased loved ones supply a historically familiar rival explanation for the appearance data.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The disciples could have had vivid, tangible postmortem experiences like recurrent experiences reported by bereaved people without Jesus bodily returning to life.",
+      "inventoryRationale": "This gives the principal natural historical alternative to the resurrection hypothesis.",
+      "judgments": {
+        "passA": {
+          "moveId": "tangible-visions-recur",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "Vivid postmortem experiences coherently explain sincere belief without bodily return, though group and bodily details remain open."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "Contemporary bereavement experiences supply a relevant class, but their frequency, comparability, and explanatory reach are undocumented."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "The reply accepts that experiences drove belief and offers a direct nonbodily cause for the same central appearance data."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "Providing a recurrent natural alternative directly advances the negative burden against resurrection as uniquely best."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The proposed mechanism is plainly stated, though tangible ranges ambiguously from felt presence to touch and conversation."
+            },
+            "calibrationCharity": {
+              "value": 77,
+              "rationale": "The move takes reported conviction seriously rather than dismissing it, but its analogy may understate distinctive claims."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "tangible-visions-recur",
+          "assessmentConfidence": "medium",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "If vivid multisensory bereavement or religious experiences recur, tangibility alone cannot entail bodily resurrection."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The examples are asserted without documentation, frequency estimates, or a close showing that they match the earliest appearance evidence."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It directly answers the claim that experience-generated conviction requires an actual bodily resurrection."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move bears on whether experiential characteristics discriminate a bodily event from natural experiences."
+            },
+            "precisionClarity": {
+              "value": 84,
+              "rationale": "The intended distinction is clear, though vision, apparition, touch, and later narrative detail are not fully separated."
+            },
+            "calibrationCharity": {
+              "value": 82,
+              "rationale": "It does not deny sincere experiences and appropriately disputes only the claimed inference from vividness to physicality."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "conditional-divine-causation",
+      "sectionId": "miracle-probability",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 730,
+        "endEvent": 733,
+        "startMs": 4614640,
+        "endMs": 4638240,
+        "excerpt": "disagree is that miracles must be the least probable explanation i agree that they must be least probable by natural causes but no one ever claimed that jesus rose by natural causes the claim is that god raised jesus from the dead and if god exists and wanted to raise jesus there's no reason why this shouldn't be the most probable explanation the difficulty for historians"
+      },
+      "quoteEligibleExactSpans": [
+        "they must be least probable by natural causes",
+        "if god exists and wanted to raise jesus"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's second rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "pro-motion",
+        "tier": "motion",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "miracles-least-probable-by-definition",
+        "probability-paradox-blocks-proof"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "natural-improbability-not-total-improbability",
+          "targetMoveId": "miracles-least-probable-by-definition",
+          "text": "Licona grants that resurrection is improbable through natural causes but argues that this does not determine its probability under intentional divine causation.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "conditional-cause-breaks-paradox",
+          "targetMoveId": "probability-paradox-blocks-proof",
+          "text": "He contends that if God exists and intended the event, resurrection need not remain the least probable explanation.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Resurrection's improbability under natural causes does not establish its overall improbability if an existing God intended to raise Jesus.",
+      "inventoryRationale": "This directly contests the premise supporting Ehrman's categorical probability barrier.",
+      "judgments": {
+        "passA": {
+          "moveId": "conditional-divine-causation",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The conditional validly shows that natural improbability does not entail overall improbability if intentional divine action is probable."
+            },
+            "evidenceWarrant": {
+              "value": 55,
+              "rationale": "The decisive antecedents—that God exists and intended this resurrection—are left unsupported within the reply."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It directly identifies and challenges the equivocation between natural improbability and probability under divine causation."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "The reply materially defeats a categorical exclusion, but it establishes only conditional possibility rather than actual probability."
+            },
+            "precisionClarity": {
+              "value": 85,
+              "rationale": "The natural-cause and divine-cause distinction is clear, with the hypothetical status expressly marked by if."
+            },
+            "calibrationCharity": {
+              "value": 80,
+              "rationale": "The move grants resurrection's natural improbability and narrows disagreement, though most probable remains insufficiently supported."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "conditional-divine-causation",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "Conditioning on God's existence and intention defeats a purely natural impossibility claim, but does not show those conditions hold."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The conditional is intelligible, yet the move offers no independent evidence here for God's existence or intention to raise Jesus."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It squarely answers the claim that resurrection must always remain the least probable explanation regardless of evidence."
+            },
+            "relevanceBurden": {
+              "value": 92,
+              "rationale": "Background beliefs about divine possibility directly influence the probability comparison at the heart of the motion."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The conditional structure is explicit and avoids simply declaring the miracle probable without a background assumption."
+            },
+            "calibrationCharity": {
+              "value": 82,
+              "rationale": "It identifies its theistic condition openly, though it does not adequately distinguish defeating impossibility from establishing probability."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The conditional validly shows that natural improbability does not entail overall improbability if intentional divine action is probable.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because the conditional defeats natural-improbability entailment without establishing that its antecedents hold."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The decisive antecedents—that God exists and intended this resurrection—are left unsupported within the reply.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because God’s existence and intention, the decisive antecedents, remain unsupported in the reply."
+        },
+        "responsiveness": {
+          "value": 91,
+          "rationale": "It directly identifies and challenges the equivocation between natural improbability and probability under divine causation.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it directly identifies and challenges the natural-to-overall probability shift in the named targets."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The reply materially defeats a categorical exclusion, but it establishes only conditional possibility rather than actual probability.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the reply defeats categorical exclusion but establishes only conditional possibility."
+        },
+        "precisionClarity": {
+          "value": 85,
+          "rationale": "The natural-cause and divine-cause distinction is clear, with the hypothetical status expressly marked by if.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the natural/divine distinction and hypothetical “if” structure are explicit."
+        },
+        "calibrationCharity": {
+          "value": 80,
+          "rationale": "The move grants resurrection's natural improbability and narrows disagreement, though most probable remains insufficiently supported.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because it concedes natural improbability while leaving “most probable” insufficiently supported."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "apollonius-source-comparison",
+      "sectionId": "source-quality",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 766,
+        "endEvent": 768,
+        "startMs": 4842720,
+        "endMs": 4861360,
+        "excerpt": "and when we look at apollonians of tiana versus jesus we say that apollonius fails in every single one of these categories whereas jesus passes the earliest account that we have 125 years after the death of apollonius we don't have multiple sources we only have the one source yes there were others"
+      },
+      "quoteEligibleExactSpans": [
+        "apollonius fails in every single one of these categories",
+        "the earliest account that we have 125 years after the death of apollonius"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's second rebuttal phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-source-control",
+        "tier": "subsidiary",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "apollonius-parity-challenge"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "parallel-source-quality-distinguished",
+          "targetMoveId": "apollonius-parity-challenge",
+          "text": "Licona distinguishes Apollonius by alleging a much later surviving account and the absence of comparable multiple sources.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "The Apollonius parallel is evidentially weaker because its surviving account is much later and lacks comparable multiple-source support.",
+      "inventoryRationale": "This answers the parity challenge by comparing the historical quality of the respective source bases.",
+      "judgments": {
+        "passA": {
+          "moveId": "apollonius-source-comparison",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "Later and singular attestation coherently distinguishes the proposed parallel from a case alleged to have earlier multiple sources."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The 125-year date and single surviving source are specific support, but the Jesus-side comparison is asserted rather than detailed."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "It directly answers the parity challenge on the most relevant axis: comparative quality of the historical source bases."
+            },
+            "relevanceBurden": {
+              "value": 84,
+              "rationale": "The distinction weakens the parallel and supports source control, though it does not itself establish resurrection."
+            },
+            "precisionClarity": {
+              "value": 83,
+              "rationale": "The key comparative differences are clear, although passes every category is broader than the evidence stated."
+            },
+            "calibrationCharity": {
+              "value": 70,
+              "rationale": "The categorical claim that Apollonius fails every category overstates what the brief source comparison demonstrates."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "apollonius-source-comparison",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "Distinguishing the cases by source proximity and multiple attestation is a coherent response to the alleged parity."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The comparison supplies a concrete dating difference and source-count claim, though independence and comparability remain compressed."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It makes direct contact with the Apollonius analogy and identifies concrete grounds for denying equivalence."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "Answering the comparative miracle challenge protects the affirmative's consistency and evidential discrimination."
+            },
+            "precisionClarity": {
+              "value": 90,
+              "rationale": "The relevant contrasts in date and number of sources are clearly specified."
+            },
+            "calibrationCharity": {
+              "value": 81,
+              "rationale": "It takes the comparison seriously, though saying Apollonius fails every category states more than this short comparison establishes."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Later and singular attestation coherently distinguishes the proposed parallel from a case alleged to have earlier multiple sources.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because later, singular attestation coherently distinguishes the alleged parallel without proving every contrast."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The 125-year date and single surviving source are specific support, but the Jesus-side comparison is asserted rather than detailed.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the date and source count are specific while the Jesus-side comparison is merely asserted."
+        },
+        "responsiveness": {
+          "value": 95,
+          "rationale": "It makes direct contact with the Apollonius analogy and identifies concrete grounds for denying equivalence.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option B better matches responsiveness because it directly answers the named analogy with concrete dating and source-count grounds for denying parity."
+        },
+        "relevanceBurden": {
+          "value": 84,
+          "rationale": "The distinction weakens the parallel and supports source control, though it does not itself establish resurrection.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because distinguishing the parallel protects source control but does not itself establish resurrection."
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "The key comparative differences are clear, although passes every category is broader than the evidence stated.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the stated contrasts are clear while “passes every category” is overbroad."
+        },
+        "calibrationCharity": {
+          "value": 70,
+          "rationale": "The categorical claim that Apollonius fails every category overstates what the brief source comparison demonstrates.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because claiming failure in every category exceeds the brief source comparison actually supplied."
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "apparitions-not-bodily-resurrection",
+      "sectionId": "appearances-and-alternatives",
+      "side": "pro",
+      "speaker": "Michael Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 785,
+        "endEvent": 787,
+        "startMs": 4951600,
+        "endMs": 4968400,
+        "excerpt": "and some of these are corroborated so i do believe in these but in no case do these people go back and check the person's tomb they don't think that it's a bodily resurrected of a transformed corpse so i do believe that sometimes you have these apparitions of the dead i don't have problems"
+      },
+      "quoteEligibleExactSpans": [
+        "in no case do these people go back and check the person's tomb",
+        "they don't think that it's a bodily resurrected"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Licona's second rebuttal phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "pro-rival-explanations",
+        "tier": "central",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "tangible-visions-recur"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "ordinary-apparitions-lack-bodily-interpretation",
+          "targetMoveId": "tangible-visions-recur",
+          "text": "Licona accepts apparitions but distinguishes them from claims involving an emptied tomb and a transformed corpse.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "proposition": "Ordinary postmortem apparitions do not normally produce a checked-tomb claim or belief in the bodily resurrection of a transformed corpse.",
+      "inventoryRationale": "This attempts to show that Ehrman's recurrent apparition class does not explain the specific bodily content of the resurrection belief.",
+      "judgments": {
+        "passA": {
+          "moveId": "apparitions-not-bodily-resurrection",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "Distinguishing ordinary apparitions from bodily-resurrection belief is relevant, but interpretation differences do not exclude visions."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The universal claim about no checked tombs is unsupported here, and the affirmative bedrock did not independently include an empty tomb."
+            },
+            "responsiveness": {
+              "value": 77,
+              "rationale": "The reply contacts the apparition alternative but does not fully answer how vivid experiences could generate bodily interpretations."
+            },
+            "relevanceBurden": {
+              "value": 76,
+              "rationale": "It identifies an explanatory mismatch, yet imports tomb and transformed-corpse details beyond the limited agreed facts."
+            },
+            "precisionClarity": {
+              "value": 82,
+              "rationale": "The distinction between accepted apparitions and claimed bodily resurrection is clearly and candidly expressed."
+            },
+            "calibrationCharity": {
+              "value": 79,
+              "rationale": "Conceding that apparitions occur treats the alternative seriously, although in no case is too categorical."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "apparitions-not-bodily-resurrection",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The distinction can weaken the apparition analogy, but it relies on tomb checking and transformed-corpse claims beyond the locked bedrock."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "No support is offered here for an empty tomb, actual tomb checking, or why bodily interpretation reliably identifies bodily occurrence."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "It directly addresses recurrent apparitions, yet only partially answers their ability to explain sincere appearance experiences."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "Differentiating ordinary apparitions from bodily-resurrection belief materially bears on the rival-explanation burden."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The proposed difference is clear, although belief content, tomb evidence, and actual bodily transformation are partly conflated."
+            },
+            "calibrationCharity": {
+              "value": 78,
+              "rationale": "It accepts that apparitions occur, but understates how such experiences might combine with prior beliefs and developing interpretation."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Distinguishing ordinary apparitions from bodily-resurrection belief is relevant, but interpretation differences do not exclude visions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because differences in interpretation do not logically exclude visions as the cause of bodily beliefs."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The universal claim about no checked tombs is unsupported here, and the affirmative bedrock did not independently include an empty tomb.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the universal tomb claim is unsupported and an empty tomb was not in the locked bedrock."
+        },
+        "responsiveness": {
+          "value": 77,
+          "rationale": "The reply contacts the apparition alternative but does not fully answer how vivid experiences could generate bodily interpretations.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it contacts the named apparition alternative without explaining how vivid visions could not yield bodily interpretations."
+        },
+        "relevanceBurden": {
+          "value": 76,
+          "rationale": "It identifies an explanatory mismatch, yet imports tomb and transformed-corpse details beyond the limited agreed facts.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the mismatch matters but imports tomb and transformed-corpse details beyond the agreed facts."
+        },
+        "precisionClarity": {
+          "value": 82,
+          "rationale": "The distinction between accepted apparitions and claimed bodily resurrection is clearly and candidly expressed.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because the concession of apparitions and distinction from bodily resurrection are plainly expressed."
+        },
+        "calibrationCharity": {
+          "value": 79,
+          "rationale": "Conceding that apparitions occur treats the alternative seriously, although in no case is too categorical.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because it seriously concedes apparitions while making the unsupported categorical claim “in no case.”"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "enemy-conversion-not-miracle-evidence",
+      "sectionId": "historical-bedrock",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 845,
+        "endEvent": 848,
+        "startMs": 5312400,
+        "endMs": 5339680,
+        "excerpt": "he joined his enemies does that show anything about the truth claims of islam does that show that muslims are right and the jews are wrong theologically because somebody converts from being an enemy to being a friend paul did convert from being an enemy to being a friend it's not unheard of in fact it happens a lot mike might point to me as an example"
+      },
+      "quoteEligibleExactSpans": [
+        "does that show anything about the truth claims of islam",
+        "paul did convert from being an enemy to being a friend"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's second rebuttal phase identified in README.md.",
+      "importance": 2,
+      "burdenContact": {
+        "bridgeId": "con-natural-alternative",
+        "tier": "central",
+        "polarity": "attacks"
+      },
+      "respondsToIds": [
+        "paul-appearance-bedrock",
+        "ehrman-grants-appearance-beliefs"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "conversion-does-not-verify-belief",
+          "targetMoveId": "paul-appearance-bedrock",
+          "text": "Ehrman argues that movement from hostility to adherence occurs in other religions and does not establish a miracle's truth.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "belief-concession-not-event-concession",
+          "targetMoveId": "ehrman-grants-appearance-beliefs",
+          "text": "He preserves the distinction between conceding Paul's conversion and conceding that Paul's interpretation was historically correct.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Paul's conversion from opponent to adherent establishes his changed conviction, not the truth of a miraculous cause.",
+      "inventoryRationale": "This directly attacks the extra evidential force Licona assigns to Paul's prior hostility.",
+      "judgments": {
+        "passA": {
+          "moveId": "enemy-conversion-not-miracle-evidence",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The distinction between sincere conversion and truth of the interpreted cause is valid and supported by cross-belief examples."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "Conversions across rival religions and Ehrman's own change illustrate the warrant, though their exact comparability is not developed."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The reply directly answers both Paul's enemy status and the attempted use of Ehrman's concession about Paul's belief."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It sharply limits the extra evidential force assigned to Paul's prior hostility while preserving the conversion fact."
+            },
+            "precisionClarity": {
+              "value": 88,
+              "rationale": "The move clearly separates changed conviction from verification of the theological proposition that prompted it."
+            },
+            "calibrationCharity": {
+              "value": 88,
+              "rationale": "It explicitly grants Paul's conversion and challenges only the stronger conclusion, accurately preserving the opponent's data."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "enemy-conversion-not-miracle-evidence",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "A dramatic conversion can confirm sincere conviction without uniquely identifying a miraculous external cause."
+            },
+            "evidenceWarrant": {
+              "value": 83,
+              "rationale": "The distinction is supported by the occurrence of intense conversions across mutually incompatible religions and movements."
+            },
+            "responsiveness": {
+              "value": 93,
+              "rationale": "It directly addresses the use of Paul's prior hostility and later commitment as evidence favoring resurrection."
+            },
+            "relevanceBurden": {
+              "value": 89,
+              "rationale": "Paul is one of the affirmative's three core facts, so limiting its discriminatory force materially affects the case."
+            },
+            "precisionClarity": {
+              "value": 90,
+              "rationale": "The move clearly distinguishes evidence for changed belief from evidence for the truth of that belief's object."
+            },
+            "calibrationCharity": {
+              "value": 87,
+              "rationale": "It accepts Paul's sincerity and conversion while resisting only the stronger causal conclusion."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "source-standard-applied-inconsistently",
+      "sectionId": "source-quality",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 859,
+        "endEvent": 862,
+        "startMs": 5409200,
+        "endMs": 5436880,
+        "excerpt": "is that with apollonius we have late sources they are not eyewitnesses and they are biased that's what he said now that's what i said about our sources for the resurrection of jesus and he said it was irrelevant now it's either relevant or it's not relevant if it's relevant then you have to discount the gospels and if it's irrelevant you cannot discount the sources for apollonians"
+      },
+      "quoteEligibleExactSpans": [
+        "with apollonius we have late sources they are not eyewitnesses and they are biased",
+        "now it's either relevant or it's not relevant"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's second rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-source-deficiency",
+        "tier": "central",
+        "polarity": "defends"
+      },
+      "respondsToIds": [
+        "case-does-not-require-gospel-inerrancy",
+        "apollonius-source-comparison"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "source-criteria-remain-relevant",
+          "targetMoveId": "case-does-not-require-gospel-inerrancy",
+          "text": "Ehrman argues that Licona cannot call source lateness, bias, and non-eyewitness status irrelevant to Jesus while using them against a parallel claim.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "same-standard-required",
+          "targetMoveId": "apollonius-source-comparison",
+          "text": "He demands consistent application of the source-quality criteria across the Jesus and Apollonius cases.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "Lateness, bias, and lack of eyewitness testimony must be applied consistently to both Gospel and Apollonius sources.",
+      "inventoryRationale": "This identifies a direct methodological conflict in Licona's treatment of source quality.",
+      "judgments": {
+        "passA": {
+          "moveId": "source-standard-applied-inconsistently",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Consistent standards are properly demanded, but differing degrees of lateness and multiplicity can justify differing conclusions."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The reply accurately identifies shared source concerns, though it does not fully compare their magnitude across the two cases."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "It directly contacts both Licona's source-control defense and his use of source quality against Apollonius."
+            },
+            "relevanceBurden": {
+              "value": 88,
+              "rationale": "Methodological consistency is central to evaluating whether the comparative source argument legitimately protects the case."
+            },
+            "precisionClarity": {
+              "value": 86,
+              "rationale": "The dilemma is plainly expressed, although relevant versus irrelevant oversimplifies evidence that may vary by degree."
+            },
+            "calibrationCharity": {
+              "value": 68,
+              "rationale": "The reply understates Licona's narrower claim that Gospel-wide reliability is unnecessary, rather than wholly irrelevant."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "source-standard-applied-inconsistently",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The symmetry demand is coherent, but it treats rejecting whole-text dependence as equivalent to declaring source quality irrelevant."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The reply identifies a genuine tension, although the cases differ in source date, quantity, and the limited facts being extracted."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "It returns precisely to the source-standard dispute and addresses the affirmative's Apollonius distinction."
+            },
+            "relevanceBurden": {
+              "value": 90,
+              "rationale": "An inconsistent evidential method would weaken both factual establishment and the resulting best-explanation claim."
+            },
+            "precisionClarity": {
+              "value": 87,
+              "rationale": "The objection is clear, but its either-relevant-or-irrelevant formulation obscures differences in degree and evidential use."
+            },
+            "calibrationCharity": {
+              "value": 74,
+              "rationale": "It fairly demands symmetry but gives insufficient credit to the distinction between source defects being irrelevant and nonfatal."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "responsiveness": {
+          "value": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "relevanceBurden": {
+          "value": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "precisionClarity": {
+          "value": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        },
+        "calibrationCharity": {
+          "value": 71,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+          "resolution": "rounded-mean"
+        }
+      },
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "public-evidence-requirement",
+      "sectionId": "historical-method",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 906,
+        "endEvent": 910,
+        "startMs": 5719360,
+        "endMs": 5755840,
+        "excerpt": "but the evidence they induce has to be available to everybody that i've named or it's not historical evidence if it's historical evidence it's based on presuppositions that everybody i've just named can agree on not people with only one particular theological point of view if the historical conclusion requires a theological point of view then it's not a historical conclusion it's a theological conclusion thank you"
+      },
+      "quoteEligibleExactSpans": [
+        "the evidence they induce has to be available to everybody",
+        "if the historical conclusion requires a theological point of view"
+      ],
+      "attributionConfidence": "high",
+      "attributionBasis": "The span lies within Ehrman's second rebuttal phase identified in README.md.",
+      "importance": 3,
+      "burdenContact": {
+        "bridgeId": "con-public-evidence",
+        "tier": "subsidiary",
+        "polarity": "supports"
+      },
+      "respondsToIds": [
+        "historical-conclusion-before-theology",
+        "conditional-divine-causation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "historical-conclusion-must-be-public",
+          "targetMoveId": "historical-conclusion-before-theology",
+          "text": "Ehrman argues that a conclusion counts as historical only when its evidence and governing assumptions are available across religious viewpoints.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "divine-intention-is-theological-premise",
+          "targetMoveId": "conditional-divine-causation",
+          "text": "He maintains that dependence on a particular view of God or divine intention makes the resulting conclusion theological rather than historical.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "proposition": "A conclusion requiring a particular theological viewpoint is not a historical conclusion because historical evidence must be publicly available across viewpoints.",
+      "inventoryRationale": "This is Ehrman's final methodological answer to Licona's attempt to admit divine causation into historical probability.",
+      "judgments": {
+        "passA": {
+          "moveId": "public-evidence-requirement",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The conclusion follows from a public-method conception of history, though universal agreement is stronger than public accessibility."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The disciplinary norm is clearly asserted but not independently defended, and shared evidence need not imply shared presuppositions."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "It squarely answers both the historical-first claim and reliance on God's existence and intention as causal premises."
+            },
+            "relevanceBurden": {
+              "value": 91,
+              "rationale": "The boundary between historical and theological conclusions directly addresses what historians can establish under the motion."
+            },
+            "precisionClarity": {
+              "value": 83,
+              "rationale": "The public-evidence requirement is clear, though available to everybody and can agree on are not equivalent standards."
+            },
+            "calibrationCharity": {
+              "value": 75,
+              "rationale": "The reply fairly identifies the theological dependency, but defines historical legitimacy more restrictively than it defends."
+            }
+          }
+        },
+        "passB": {
+          "moveId": "public-evidence-requirement",
+          "assessmentConfidence": "high",
+          "dimensions": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "Requiring publicly assessable evidence is coherent, though universal agreement on all background assumptions is too demanding."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The methodological norm is plausible and directly defended, but the stronger consensus requirement is not independently established."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "It directly answers the conditional appeal to God by questioning whether that condition can carry a public historical proof."
+            },
+            "relevanceBurden": {
+              "value": 96,
+              "rationale": "The motion asks what historians can prove, making intersubjective accessibility a decisive burden-level consideration."
+            },
+            "precisionClarity": {
+              "value": 91,
+              "rationale": "The distinction between theological commitments and shared historical evidence is plainly and forcefully drawn."
+            },
+            "calibrationCharity": {
+              "value": 82,
+              "rationale": "It reasonably requires public warrant, but risks defining historical reasoning so restrictively that disputed background beliefs are excluded."
+            }
+          }
+        }
+      },
+      "finalDimensions": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The conclusion follows from a public-method conception of history, though universal agreement is stronger than public accessibility.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches logical coherence because public accessibility can support the conclusion, but universal agreement is a stronger requirement."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The disciplinary norm is clearly asserted but not independently defended, and shared evidence need not imply shared presuppositions.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches evidence and warrant because the disciplinary norm is asserted and shared evidence does not entail shared presuppositions."
+        },
+        "responsiveness": {
+          "value": 91,
+          "rationale": "It squarely answers both the historical-first claim and reliance on God's existence and intention as causal premises.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches responsiveness because it directly answers both named targets: historical-first sequencing and conditional divine causation."
+        },
+        "relevanceBurden": {
+          "value": 91,
+          "rationale": "The boundary between historical and theological conclusions directly addresses what historians can establish under the motion.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches relevance and burden because the historical/theological boundary directly addresses what historians can establish."
+        },
+        "precisionClarity": {
+          "value": 83,
+          "rationale": "The public-evidence requirement is clear, though available to everybody and can agree on are not equivalent standards.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches precision and clarity because availability to everyone and agreement by everyone are not equivalent standards."
+        },
+        "calibrationCharity": {
+          "value": 75,
+          "rationale": "The reply fairly identifies the theological dependency, but defines historical legitimacy more restrictively than it defends.",
+          "resolution": "adjudicated-existing-option",
+          "adjudicationRationale": "Option A better matches calibration because it identifies theological dependence fairly but defends an overly restrictive historical boundary."
+        }
+      },
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide affirmative consequence remains outside the ratings already assigned to the locked moves.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the inventory-rated affirmative burden bridges is established.",
+        "relatedMoveIds": [
+          "reasonable-certainty-definition",
+          "criteria-govern-probability",
+          "resurrection-explains-three-facts",
+          "affirmative-motion-conclusion"
+        ],
+        "distinctConsequence": "The affirmative's debate-wide burden completion is fully represented in the listed move ratings.",
+        "alreadyCapturedBy": [
+          "reasonable-certainty-definition",
+          "criteria-govern-probability",
+          "resurrection-explains-three-facts",
+          "affirmative-motion-conclusion"
+        ],
+        "counterfactual": "Removing any purported extra adjustment would not omit a distinct affirmative burden consequence."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide negative consequence remains outside the ratings already assigned to the locked moves.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the inventory-rated negative burden bridges is established.",
+        "relatedMoveIds": [
+          "miracles-least-probable-by-definition",
+          "probability-paradox-blocks-proof",
+          "apparitions-not-bodily-resurrection",
+          "public-evidence-requirement"
+        ],
+        "distinctConsequence": "The negative's debate-wide burden completion is fully represented in the listed move ratings.",
+        "alreadyCapturedBy": [
+          "miracles-least-probable-by-definition",
+          "probability-paradox-blocks-proof",
+          "apparitions-not-bodily-resurrection",
+          "public-evidence-requirement"
+        ],
+        "counterfactual": "Removing any purported extra adjustment would not omit a distinct negative burden consequence."
+      }
+    }
+  },
+  "audit": {
+    "inventoryStructureUnchanged": true,
+    "acceptedJudgmentsPreserved": true,
+    "disputesResolved": 111,
+    "unresolvedDisputes": 0,
+    "requiredAudioChecksComplete": true,
+    "calculatedMoveScoresAbsent": true,
+    "calculatedSectionScoresAbsent": true,
+    "calculatedOverallScoresAbsent": true,
+    "readyForSingleScorePass": true
+  }
+}

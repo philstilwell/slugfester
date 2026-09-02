@@ -10994,5 +10994,52 @@ export const debateSummaries = [
         "title": "Explanatory parsimony and the genealogy of moral belief"
       }
     ]
+  },
+  {
+    "id": "licona-ehrman-historians-prove-resurrection-2008",
+    "number": "237",
+    "title": "Michael Licona vs Bart Ehrman: Can Historians Prove the Resurrection?",
+    "year": 2008,
+    "label": "Historical proof and the resurrection",
+    "date": "2026-09-02",
+    "duration": "2 hr 6 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=MP05c_EvgZ0",
+    "motion": "Can historians prove that Jesus rose from the dead?",
+    "summary": "Ehrman prevailed 79–78 by narrowly pairing strong source criticism and public-evidence burdens against Licona’s comparatively sophisticated but incompletely warranted resurrection inference.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Historians can establish Jesus's resurrection as the best explanation",
+        "speaker": "Michael Licona",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Historical methods cannot prove a resurrection",
+        "speaker": "Bart Ehrman",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 79,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Historical Method and Public Standards"
+      },
+      {
+        "title": "Source Quality and Reliability"
+      },
+      {
+        "title": "Historical Bedrock and Evidential Relevance"
+      },
+      {
+        "title": "Appearances and Rival Explanations"
+      },
+      {
+        "title": "Miracle Probability and the Motion"
+      }
+    ]
   }
 ];

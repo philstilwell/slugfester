@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-publication-depth-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "237",
+  "debateId": "licona-ehrman-historians-prove-resurrection-2008",
+  "reason": "One source-specific argument description was one word below the required 22-word richness floor; one bounded shard expanded only that description.",
+  "repair": {
+    "shards": [
+      {
+        "ordinal": 1,
+        "writableFields": [
+          "moveProse.gospels-late-and-anonymous.description"
+        ],
+        "attempts": 1,
+        "retries": 0,
+        "directIncrementalCostUsd": 0,
+        "outputSha256": "6306aed4fb9c2ae33bfd1dcac55e07795fc72209465740af0408cfc82d735006"
+      }
+    ],
+    "maximumWritableFieldsPerShard": 2,
+    "before": [
+      {
+        "moveId": "gospels-late-and-anonymous",
+        "description": "Ehrman argues that the Gospels’ thirty-five-to-sixty-five-year gap, non-eyewitness character, and traditional authorship weaken their evidential value as direct resurrection testimony.",
+        "words": 21
+      }
+    ],
+    "after": [
+      {
+        "moveId": "gospels-late-and-anonymous",
+        "description": "Ehrman argues that the Gospels’ thirty-five-to-sixty-five-year gap, non-eyewitness character, and internally unclaimed traditional authorship weaken their evidential value as direct resurrection testimony.",
+        "words": 22
+      }
+    ]
+  },
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/raw-prose-output-1.json",
+      "sha256": "8e24fbe65eb04bd4e2f6755656beeeea4b705060865cc5bed16653a0fc3fd35a",
+      "bytes": 40541
+    },
+    "preservedInvalidOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/raw-prose-output-1.json",
+      "sha256": "8e24fbe65eb04bd4e2f6755656beeeea4b705060865cc5bed16653a0fc3fd35a",
+      "bytes": 40541
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "70dc1cc23479129d134704c9c9e9dedbfa67814ddb99073c77a69210dc2c46ed",
+      "bytes": 62714
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/content-parity-audit.json",
+      "sha256": "1a3ae16cd3c19c4db1d709d9037fb9e597077eb4db8faae451cd869c89380a05",
+      "bytes": 4682
+    },
+    "shard1": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-237/publication/depth-repair-shard-1.json",
+      "sha256": "6306aed4fb9c2ae33bfd1dcac55e07795fc72209465740af0408cfc82d735006",
+      "bytes": 697
+    }
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 0,
+    "descriptionChanges": 1
+  }
+}
