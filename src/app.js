@@ -1939,6 +1939,9 @@ function renderRankingComparison(state) {
             ${renderComparisonOptions(allPeople, state.comparisonA, "Choose an interlocutor")}
           </select>
         </label>
+        <div class="ranking-comparison-versus" aria-hidden="true">
+          <img src="/assets/debate-gloves.png" alt="" width="444" height="444">
+        </div>
         <label class="ranking-control" for="ranking-comparison-b">
           <span>Second interlocutor</span>
           <select id="ranking-comparison-b" name="comparison-b">

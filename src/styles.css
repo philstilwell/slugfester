@@ -1182,9 +1182,24 @@ a {
 
 .ranking-comparison-form {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) max-content;
+  grid-template-columns: minmax(0, 1fr) 46px minmax(0, 1fr) max-content;
   align-items: end;
   gap: 12px;
+}
+
+.ranking-comparison-versus {
+  display: grid;
+  place-items: center;
+  align-self: end;
+  min-height: 42px;
+}
+
+.ranking-comparison-versus img {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 4px rgba(91, 38, 28, 0.18));
 }
 
 .ranking-comparison-actions {
@@ -6181,6 +6196,16 @@ a {
 
   .ranking-comparison-form {
     grid-template-columns: 1fr;
+  }
+
+  .ranking-comparison-versus {
+    min-height: 32px;
+    margin: -3px 0;
+  }
+
+  .ranking-comparison-versus img {
+    width: 38px;
+    height: 38px;
   }
 
   .ranking-comparison-actions {
