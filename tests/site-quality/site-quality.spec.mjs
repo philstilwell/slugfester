@@ -124,6 +124,18 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
   expect(landingPolicy).not.toContain("form-action 'self' https://formsubmit.co");
 });
 
+test("the rubric quality check offers six closed-by-default section examples", async ({ page }) => {
+  await openRenderedPage(page, "/backend/");
+
+  const accordion = page.locator(".rubric-extremes-accordion");
+  await expect(accordion).not.toHaveAttribute("open", "");
+  await accordion.locator("summary").click();
+  await expect(accordion).toHaveAttribute("open", "");
+  await expect(accordion.locator(".rubric-extremes-column--top .rubric-extreme-card")).toHaveCount(3);
+  await expect(accordion.locator(".rubric-extremes-column--bottom .rubric-extreme-card")).toHaveCount(3);
+  await expect(accordion).toContainText("section-side scores, not overall debate results");
+});
+
 test("carries a scorecard into the issue-report form and confirms delivery", async ({ page }) => {
   const debatePath = "/debate/craig-oconnor-god-debate-2026/";
   await openRenderedPage(page, debatePath);

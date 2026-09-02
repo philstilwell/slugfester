@@ -1719,6 +1719,266 @@ a {
   line-height: 1.4;
 }
 
+.rubric-extremes-accordion {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(38, 91, 105, 0.22);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(27, 43, 41, 0.06);
+}
+
+.rubric-extremes-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 20px;
+  color: #173f4c;
+  background: linear-gradient(90deg, rgba(232, 246, 243, 0.94), rgba(255, 249, 229, 0.92));
+  cursor: pointer;
+  list-style: none;
+  transition: background 160ms ease;
+}
+
+.rubric-extremes-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.rubric-extremes-accordion summary:hover {
+  background: linear-gradient(90deg, rgba(219, 240, 236, 0.98), rgba(255, 245, 211, 0.96));
+}
+
+.rubric-extremes-accordion summary:focus-visible {
+  outline: 3px solid rgba(47, 143, 133, 0.34);
+  outline-offset: -3px;
+}
+
+.rubric-extremes-accordion summary > span {
+  display: grid;
+  gap: 4px;
+}
+
+.rubric-extremes-accordion summary strong {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.1;
+}
+
+.rubric-extremes-accordion summary small {
+  color: #4b6268;
+  font-size: 0.79rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.rubric-extremes-accordion summary i {
+  position: relative;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  background: #1f6475;
+  border-radius: 50%;
+  box-shadow: 0 7px 16px rgba(21, 57, 67, 0.15);
+}
+
+.rubric-extremes-accordion summary i::before,
+.rubric-extremes-accordion summary i::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+  content: "";
+  transform: translate(-50%, -50%);
+  transition: transform 160ms ease;
+}
+
+.rubric-extremes-accordion summary i::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.rubric-extremes-accordion[open] summary {
+  border-bottom: 1px solid rgba(38, 91, 105, 0.18);
+}
+
+.rubric-extremes-accordion[open] summary i::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.rubric-extremes-content {
+  display: grid;
+  gap: 22px;
+  padding: 22px;
+}
+
+.rubric-extremes-intro,
+.rubric-extremes-note,
+.rubric-extremes-column > div > p:not(.eyebrow) {
+  margin: 0;
+  color: #40524f;
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.rubric-extremes-intro {
+  max-width: 980px;
+}
+
+.rubric-extremes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.rubric-extremes-column {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-width: 0;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(38, 91, 105, 0.17);
+  border-radius: 10px;
+}
+
+.rubric-extremes-column--top {
+  border-top: 4px solid var(--teal);
+}
+
+.rubric-extremes-column--bottom {
+  border-top: 4px solid var(--coral);
+}
+
+.rubric-extremes-column > div {
+  display: grid;
+  gap: 6px;
+}
+
+.rubric-extremes-column h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.rubric-extremes-column ol {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rubric-extreme-card {
+  display: grid;
+  gap: 7px;
+  padding: 14px;
+  background: #f8fbfa;
+  border: 1px solid rgba(38, 91, 105, 0.14);
+  border-radius: 8px;
+}
+
+.rubric-extreme-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rubric-extreme-card-heading > span {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  color: #ffffff;
+  background: #55706c;
+  border-radius: 50%;
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.rubric-extreme-card--top .rubric-extreme-card-heading > span {
+  background: var(--teal-text);
+}
+
+.rubric-extreme-card--bottom .rubric-extreme-card-heading > span {
+  background: var(--coral);
+}
+
+.rubric-extreme-card-heading strong {
+  font-size: 1.3rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.rubric-extreme-card-heading strong.strong {
+  color: var(--teal-text);
+}
+
+.rubric-extreme-card-heading strong.mixed {
+  color: #9a6800;
+}
+
+.rubric-extreme-card-heading strong.weak {
+  color: var(--coral-text);
+}
+
+.rubric-extreme-card h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.24;
+}
+
+.rubric-extreme-speaker {
+  margin: 0;
+  color: #40524f;
+  font-size: 0.79rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.rubric-extreme-card > a {
+  color: var(--blue);
+  font-size: 0.74rem;
+  font-weight: 750;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.rubric-extreme-card > a:hover,
+.rubric-extreme-card > a:focus-visible {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rubric-extreme-move {
+  margin: 3px 0 0;
+  padding-top: 10px;
+  color: #40524f;
+  border-top: 1px solid rgba(38, 91, 105, 0.14);
+  font-size: 0.75rem;
+  line-height: 1.46;
+}
+
+.rubric-extreme-move span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.61rem;
+  font-weight: 900;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.rubric-extremes-note {
+  padding-top: 2px;
+  font-size: 0.72rem;
+}
+
 .rankings-list-section {
   display: grid;
   gap: 16px;
@@ -5505,6 +5765,9 @@ a {
   .backend-objectivity-accordion summary,
   .backend-objectivity-accordion summary i::before,
   .backend-objectivity-accordion summary i::after,
+  .rubric-extremes-accordion summary,
+  .rubric-extremes-accordion summary i::before,
+  .rubric-extremes-accordion summary i::after,
   .ai-extension-accordion summary,
   .ai-extension-accordion summary i::before,
   .ai-extension-accordion summary i::after {
@@ -5727,6 +5990,10 @@ a {
   .profile-hero,
   .corrections-hero,
   .correction-report-section {
+    grid-template-columns: 1fr;
+  }
+
+  .rubric-extremes-grid {
     grid-template-columns: 1fr;
   }
 

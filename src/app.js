@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260901-debate-years-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260901-debate-years-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260901-debate-years-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260902-rubric-examples-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260902-rubric-examples-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260902-rubric-examples-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -33,11 +33,12 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260901-debate-years-v1";
+} from "./seo.js?v=20260902-rubric-examples-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
 let debateAnalyticsPromise;
+let sectionScoreExtremes = { top: [], bottom: [] };
 const debateDetailPromises = new Map();
 const referenceAppearancePromises = new Map();
 const referenceAppearanceCache = new Map();
@@ -76,12 +77,13 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260901-debate-years-v1")
-      .then(({ debateAnalytics }) => {
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260902-rubric-examples-v1")
+      .then(({ debateAnalytics, sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
           ...(debateAnalytics[debate.id] || {})
         }));
+        sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return debates;
       })
       .catch((error) => {
@@ -95,7 +97,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260901-debate-years-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260902-rubric-examples-v1`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -110,7 +112,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260901-debate-years-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260902-rubric-examples-v1`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1114,6 +1116,70 @@ function sectionScoreDistribution() {
   };
 }
 
+function renderRubricExtremeExample(example, index, group) {
+  const debate = {
+    id: example.debateId,
+    title: example.debateTitle,
+    year: example.debateYear
+  };
+
+  return `
+    <li class="rubric-extreme-card rubric-extreme-card--${group}">
+      <div class="rubric-extreme-card-heading">
+        <span>${index + 1}</span>
+        <strong class="${scoreTone(example.score)}">${example.score}</strong>
+      </div>
+      <h4>${escapeHtml(example.sectionTitle)}</h4>
+      <p class="rubric-extreme-speaker">${escapeHtml(example.speaker)}’s side</p>
+      <a href="${escapeHtml(debatePath(example.debateId))}">Debate ${escapeHtml(example.debateNumber)}: ${renderDebateTitle(debate)}</a>
+      ${example.representativeMove ? `<p class="rubric-extreme-move"><span>Representative assessed move</span>${escapeHtml(example.representativeMove)}</p>` : ""}
+    </li>
+  `;
+}
+
+function renderRubricExtremesAccordion(extremes) {
+  if (!extremes.top?.length || !extremes.bottom?.length) return "";
+
+  return `
+    <details class="rubric-extremes-accordion">
+      <summary>
+        <span>
+          <span class="backend-objectivity-kicker">Standards in practice</span>
+          <strong>Compare the top three and bottom three sections</strong>
+          <small>Open six real examples from the current catalogue</small>
+        </span>
+        <i aria-hidden="true"></i>
+      </summary>
+      <div class="rubric-extremes-content">
+        <p class="rubric-extremes-intro">These are section-side scores, not overall debate results. Each representative move is one part of its section; the section score combines all selected moves after weighting more important arguments more heavily. High scores reward clear, well-supported reasoning that meets the other side’s strongest point. Low scores reflect serious gaps in support, logic, relevance, responsiveness, precision, or fairness—not whether Slugfester agrees with the conclusion.</p>
+        <div class="rubric-extremes-grid">
+          <section class="rubric-extremes-column rubric-extremes-column--top" aria-labelledby="rubric-extremes-top-heading">
+            <div>
+              <p class="eyebrow">Highest section-side scores</p>
+              <h3 id="rubric-extremes-top-heading">Top three</h3>
+              <p>These sections combine strong evidence or warrant with direct engagement, disciplined scope, and fair treatment of alternatives.</p>
+            </div>
+            <ol>
+              ${extremes.top.map((example, index) => renderRubricExtremeExample(example, index, "top")).join("")}
+            </ol>
+          </section>
+          <section class="rubric-extremes-column rubric-extremes-column--bottom" aria-labelledby="rubric-extremes-bottom-heading">
+            <div>
+              <p class="eyebrow">Lowest section-side scores</p>
+              <h3 id="rubric-extremes-bottom-heading">Bottom three</h3>
+              <p>These sections retain some argumentative value but contain major unsupported steps, missed objections, overstatement, or weak evidential control.</p>
+            </div>
+            <ol>
+              ${extremes.bottom.map((example, index) => renderRubricExtremeExample(example, index, "bottom")).join("")}
+            </ol>
+          </section>
+        </div>
+        <p class="rubric-extremes-note">Ties are resolved by catalogue order. These examples update when the site’s debate data is regenerated.</p>
+      </div>
+    </details>
+  `;
+}
+
 function renderSectionScoreDistribution(distribution) {
   if (!distribution.total) return "";
 
@@ -1167,6 +1233,7 @@ function renderSectionScoreDistribution(distribution) {
         </div>
         <figcaption>This chart includes the two side scores assigned within every published debate section—not overall debate scores or interlocutor averages. Vertical axis: number of scores. Horizontal axis: two-percentage-point score ranges. Numbers above the bars are counts.</figcaption>
       </figure>
+      ${renderRubricExtremesAccordion(sectionScoreExtremes)}
     </section>
   `;
 }
@@ -2413,7 +2480,7 @@ function renderBackend() {
             <p class="eyebrow">Assessment update</p>
             <h2 id="backend-summary-heading">A careful attempt at objective scoring</h2>
           </div>
-          <p class="section-summary">Updated August 31, 2026</p>
+          <p class="section-summary">Updated September 2, 2026</p>
         </div>
         <div class="backend-summary-panel">
           <div class="backend-summary-copy">
