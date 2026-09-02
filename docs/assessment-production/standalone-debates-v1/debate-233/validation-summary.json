@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "233",
+  "debateId": "dawkins-mcgrath-christianity-reason-evidence-2006",
+  "completedAt": "2026-09-02T03:30:40.000Z",
+  "source": {
+    "videoId": "bLdsRfkkTf4",
+    "method": "complete public YouTube English auto-caption track normalized locally",
+    "transcriptWords": 14634,
+    "events": 1999,
+    "transcriptSha256": "0c54e711e0d8242657b6bc494bfcb1f8fb048945aec4d0730b893518268b4780",
+    "eventsSha256": "e491e60e9f3818b39478406de3bcc4d166009e17b83f54cf102ef82688d19629",
+    "assessedWindow": "00:00:06–01:10:04",
+    "excludedMaterial": "introductory and closing pleasantries outside the substantive uncut interview",
+    "requiredAttributionAudioChecks": 0,
+    "completedAttributionAudioChecks": 0,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 38,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 3,
+    "adjudicatedDisputes": 3,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 71,
+      "con": 82,
+      "winner": "con",
+      "margin": 11
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 6,
+    "displayRows": 21,
+    "argumentCards": 38,
+    "uniqueLockedMovesMapped": 38,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": {
+      "pro": 4,
+      "con": 4
+    },
+    "overallBlunders": {
+      "pro": 3,
+      "con": 3
+    },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "4be824d76af77e44e12b43faba7faa7709528d4d3cca0422ebfc3599aa0e7606",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-233/publication/content-parity-audit.json",
+    "contentParityDisposition": "passed after the single bounded repair attempt for five two-field description shards",
+    "argumentDescriptionWords": {
+      "targetRange": [
+        22,
+        28
+      ],
+      "minimum": 22,
+      "mean": 23.3,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": {
+      "minimum": 115,
+      "mean": 121.9,
+      "maximum": 128
+    },
+    "critiqueCharacterRange": [
+      881,
+      960
+    ],
+    "critiqueBoilerplateMeanCoveredRatio": 0.048,
+    "critiqueBoilerplateMaximumCoveredRatio": 0.051,
+    "overallItemWords": {
+      "strengthMean": 25.8,
+      "blunderMean": 26.5
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-233/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral seven-card fallacy-tag and two-overall-link exact-definition review",
+    "movesReviewedForFallaciesAndBiases": 38,
+    "overallBlundersReviewedForFallaciesAndBiases": 6,
+    "definitionsCheckedPerItem": 13,
+    "definitionComparisonsPerBlindPass": 572,
+    "blindRhetoricalTagPasses": 2,
+    "adjudicatedRhetoricalTagCandidates": 39,
+    "acceptedCardRhetoricalTags": 7,
+    "acceptedCardFallacyTags": 7,
+    "acceptedCardBiasTags": 0,
+    "acceptedOverallRhetoricalLinks": 2,
+    "totalAcceptedRhetoricalApplications": 9,
+    "rejectedCardRhetoricalTagCandidates": 23,
+    "rejectedOverallRhetoricalLinkCandidates": 7,
+    "controllerDefinitionOverrides": 6,
+    "readerFacingScoringDisclosureCorrect": true
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 8,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 2,
+    "keyboardEnterTests": 2,
+    "keyboardSpaceTests": 1,
+    "mobileDistantTapTests": 1,
+    "postRhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-233/rendering/post-rhetorical-tag-audit.json",
+    "postRhetoricalTagScreenshots": 8,
+    "rhetoricalTagsVisuallyVerified": 7,
+    "desktopEvidenceSha256": "06f5506acb9feffb7eeca388bdd615b0194870bb071e979d4e63398ab2494e87",
+    "mobileEvidenceSha256": "cc0bc670af2c500f2b9c519f0bde29a5d1096cecc683d61fbd19fba91490959d"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "233 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "678 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "status": "passed",
+      "result": "38 moves; description mean 23.3 words; critique mean 121.9 words; boilerplate coverage mean 0.048"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "status": "passed",
+      "result": "38 cards and 6 overall blunders checked against 13 definitions in 2 blind passes; all 39 union candidates adjudicated; 7 card tags and 2 overall links accepted"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "38 populated cards and 7 card-level rhetorical labels at both viewports; no overflow, failed resources, errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 233 with and without --repository-only",
+      "status": "passed",
+      "result": "38 moves; 6 sections; 3 disputes; 0 audio checks; score stability mean 0.25, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "233 of 233 transcripts"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed"
+    },
+    {
+      "name": "patch whitespace check",
+      "command": "git diff --check",
+      "status": "passed"
+    }
+  ],
+  "recoveries": {
+    "inventoryWorkerAttempts": 1,
+    "independentSourceSpanAudits": 1,
+    "sourceSpanRepairFields": 26,
+    "semanticMoveIdNormalization": 1,
+    "discardedPreflightJudgmentContexts": 2,
+    "publicationInitialDraftsRejected": 1,
+    "publicationRepairShards": 5,
+    "publicationProseFieldsRepaired": 10,
+    "rhetoricalTagFieldsAdded": 7,
+    "rhetoricalOverallLinksAdded": 2,
+    "rhetoricalAdjudicatorAcceptancesOverruled": 6,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 18,
+    "con": 20,
+    "disposition": "All thirty-eight frozen moves are mapped exactly once across six semantic sections; the slight numerical imbalance follows the complete source-derived inventory rather than a symmetry target."
+  },
+  "cost": {
+    "paidCalls": 0,
+    "paidMinutes": 0,
+    "directIncrementalCostUsd": 0,
+    "maximumPossibleCostUsd": 0
+  },
+  "directCostUsd": 0
+}

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "233",
+  "debateId": "dawkins-mcgrath-christianity-reason-evidence-2006",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-13:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-13",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "McGrath limits the claim to goods emerging amid disaster, but still confidently attributes rescue without comparative evidence."
+        },
+        "option-b": {
+          "value": 62,
+          "rationale": "McGrath acknowledges unwanted suffering, but the claim of no divine failure is more confident than the offered defense supports."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Any incomplete motion-level establishment is already represented in the ratings for McGrath's explanatory, Christ-specific, and providential moves; no separate unscored consequence remains.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-rational-explanation",
+              "pro-central-explanatory-framework",
+              "pro-central-christ-and-redemption"
+            ],
+            "completionCriterion": "Christianity must be positively supported as a comparative explanation, including its specifically Christian evidence and its account of suffering and divine action.",
+            "relatedMoveIds": [
+              "pro-03",
+              "pro-05",
+              "pro-06",
+              "pro-08",
+              "pro-09",
+              "pro-10",
+              "pro-11",
+              "pro-12",
+              "pro-13"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the move-level gaps in comparative warrant, Christian specificity, and providential consistency was identified.",
+            "alreadyCapturedBy": [
+              "pro-03:evidenceWarrant",
+              "pro-05:evidenceWarrant",
+              "pro-06:relevanceBurden",
+              "pro-08:evidenceWarrant",
+              "pro-09:responsiveness",
+              "pro-10:responsiveness",
+              "pro-11:responsiveness",
+              "pro-12:logicalCoherence",
+              "pro-13:responsiveness"
+            ],
+            "counterfactual": "Without those already-scored shortcomings, the record supplies no independent debate-wide defect requiring an additional adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Any incompleteness in establishing Christianity's comparative explanatory force is already captured in the ratings for its motion, Christ, suffering, and grounding moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion-rational-explanation",
+              "pro-central-explanatory-framework",
+              "pro-central-christ-and-redemption"
+            ],
+            "completionCriterion": "Positive comparative support for Christianity, including its specifically Christian claims and fit with suffering and divine action.",
+            "relatedMoveIds": [
+              "pro-01",
+              "pro-03",
+              "pro-05",
+              "pro-06",
+              "pro-08",
+              "pro-09",
+              "pro-10",
+              "pro-11",
+              "pro-12",
+              "pro-13"
+            ],
+            "distinctConsequence": "The central positive case remains more asserted or interpretive than comparatively evidenced across several burdens.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden"
+            ],
+            "counterfactual": "Without those move-level deductions, a negative adjustment could reflect the uncaptured debate-wide failure; here it would duplicate them."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Limitations in Dawkins's positive naturalistic comparison and inferences from religious harms are already captured within the relevant move ratings, leaving no distinct unscored burden consequence.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-naturalistic-explanation",
+              "con-central-evidence-and-complexity",
+              "con-subsidiary-religious-harms"
+            ],
+            "completionCriterion": "Naturalistic atheism must be comparatively defended rather than relying only on complexity questions, moral criticism, or examples of religious harm.",
+            "relatedMoveIds": [
+              "con-03",
+              "con-04",
+              "con-05",
+              "con-06",
+              "con-14",
+              "con-15",
+              "con-16",
+              "con-17",
+              "con-18",
+              "con-19",
+              "con-20"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the scored gaps in the designer analogy, positive naturalistic support, and ideological causation was identified.",
+            "alreadyCapturedBy": [
+              "con-03:evidenceWarrant",
+              "con-04:calibrationCharity",
+              "con-05:evidenceWarrant",
+              "con-06:calibrationCharity",
+              "con-14:evidenceWarrant",
+              "con-15:evidenceWarrant",
+              "con-16:relevanceBurden",
+              "con-17:relevanceBurden",
+              "con-18:calibrationCharity",
+              "con-19:evidenceWarrant",
+              "con-20:relevanceBurden"
+            ],
+            "counterfactual": "If the already-rated comparative and causal gaps were repaired, no independent debate-wide omission in the locked record would remain for adjustment."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Limits in the positive naturalistic comparison and the reliance on complexity and religious-harm arguments are already captured in the relevant move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion-naturalistic-explanation",
+              "con-central-evidence-and-complexity",
+              "con-subsidiary-religious-harms"
+            ],
+            "completionCriterion": "Defended comparative support that naturalism better explains reality, beyond objections to theism and examples of religious harm.",
+            "relatedMoveIds": [
+              "con-03",
+              "con-04",
+              "con-05",
+              "con-06",
+              "con-14",
+              "con-15",
+              "con-16",
+              "con-17",
+              "con-18",
+              "con-19",
+              "con-20"
+            ],
+            "distinctConsequence": "The case often weakens Christian claims without fully defending a motion-level naturalistic alternative across reality.",
+            "alreadyCapturedBy": [
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Without the existing move-level deductions, a negative adjustment might capture the missing positive comparison; here it would duplicate scored defects."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 38,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

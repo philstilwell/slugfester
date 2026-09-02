@@ -1,0 +1,92 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "debateNumber",
+    "decisions"
+  ],
+  "properties": {
+    "debateNumber": {
+      "type": "string",
+      "const": "233"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 39,
+      "maxItems": 39,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateKey",
+          "decision",
+          "rationale",
+          "context"
+        ],
+        "properties": {
+          "candidateKey": {
+            "type": "string",
+            "enum": [
+              "pro-01|bias|Subjective validation",
+              "pro-04|fallacy|Red herring",
+              "con-03|fallacy|Begging the question",
+              "pro-05|fallacy|Special pleading",
+              "con-04|fallacy|Begging the question",
+              "con-04|fallacy|Special pleading",
+              "con-05|fallacy|Begging the question",
+              "con-06|fallacy|Begging the question",
+              "pro-07|fallacy|Red herring",
+              "pro-08|fallacy|Argument from ignorance",
+              "con-08|fallacy|Argument from ignorance",
+              "con-08|bias|Confirmation bias",
+              "con-09|fallacy|Appeal to authority",
+              "con-09|bias|Authority bias",
+              "pro-10|fallacy|Begging the question",
+              "pro-11|fallacy|Red herring",
+              "pro-12|fallacy|Special pleading",
+              "pro-13|fallacy|Begging the question",
+              "pro-13|fallacy|Special pleading",
+              "pro-14|fallacy|Red herring",
+              "pro-15|fallacy|Red herring",
+              "con-15|bias|Confirmation bias",
+              "con-16|bias|Confirmation bias",
+              "con-17|bias|Subjective validation",
+              "pro-17|bias|Subjective validation",
+              "con-18|fallacy|Red herring",
+              "con-18|bias|Confirmation bias",
+              "con-19|bias|Confirmation bias",
+              "con-19|bias|Scope neglect",
+              "con-20|bias|Scope neglect",
+              "overall-pro-1|bias|Subjective validation",
+              "overall-pro-2|fallacy|Special pleading",
+              "overall-pro-3|fallacy|Begging the question",
+              "overall-pro-3|fallacy|Special pleading",
+              "overall-con-1|fallacy|Begging the question",
+              "overall-con-2|fallacy|Argument from ignorance",
+              "overall-con-2|bias|Confirmation bias",
+              "overall-con-3|fallacy|Red herring",
+              "overall-con-3|bias|Confirmation bias"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 80
+          },
+          "context": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

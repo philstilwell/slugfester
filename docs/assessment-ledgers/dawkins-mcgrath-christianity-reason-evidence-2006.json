@@ -1,0 +1,802 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "233",
+  "debateId": "dawkins-mcgrath-christianity-reason-evidence-2006",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/bLdsRfkkTf4/captions.srv3.xml",
+      "sha256": "90dce1c57fd8db705bd3acf0a377ca79ee63e1499bf79535b668c551eb01eb8c",
+      "bytes": 398802
+    },
+    "events": {
+      "path": ".assessment-cache/captions/bLdsRfkkTf4/events.json",
+      "sha256": "e491e60e9f3818b39478406de3bcc4d166009e17b83f54cf102ef82688d19629",
+      "bytes": 209665
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/bLdsRfkkTf4/transcript.txt",
+      "sha256": "0c54e711e0d8242657b6bc494bfcb1f8fb048945aec4d0730b893518268b4780",
+      "bytes": 84792
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/bLdsRfkkTf4/manifest.json",
+      "sha256": "c96ae473bfee95aea143f935aaba7ecfce370b77e852be9ff2f7f10d2edd2ff4",
+      "bytes": 966
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/authorization.json",
+      "sha256": "9381a1d7cf85332809bd5943aea00c2d9f1b21a14be5fa6b875d408c78f136a7",
+      "bytes": 3347
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/manifest.json",
+      "sha256": "12e92cd2eb60cff0a92b964a0fc57f5bc1953a2e5a2bb9b147873f45d04041fb",
+      "bytes": 5477
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/source/source-lock.json",
+      "sha256": "3b5294a79d37b55e708182282e0610ebfb26e497939e9a3a5a46498ca27ef4da",
+      "bytes": 5097
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/inventory/inventory.json",
+      "sha256": "ce4c930e27864417dac83126ea06e4f44809f48b848d1117ea62f6582eddab00",
+      "bytes": 77649
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/judgments/judgment-packet.json",
+      "sha256": "9f71498d04ddc3dbaf7614b5ef26316ca66b669fa58f3eb3c6bd744c170efea6",
+      "bytes": 4963
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/judgments/execution.json",
+      "sha256": "87d27fd6fe68b1f93360045fe060c73c7691078e30df8efeb151f014a9561dc1",
+      "bytes": 2445
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/judgments/pass-a/output.json",
+      "sha256": "e2af8d481e4298277af51e30c3606d79df58f41dc0289eab7e11b789a16da665",
+      "bytes": 57072
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/judgments/pass-b/output.json",
+      "sha256": "33ebb179157e199a794789f2ec81718857a5ef45a2bf9a952096a1b3af3aa3a8",
+      "bytes": 55545
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/disagreements/disagreements.json",
+      "sha256": "3c7042436337471360ced65294d3c6229d5e7dcb5e6c9115d97804959822c999",
+      "bytes": 9098
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/audio/audio-verification.json",
+      "sha256": "236302fdb6dc78696e3f946f0729c2886141b595c888ee77b3a922d65fa9b3c5",
+      "bytes": 1125
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/adjudication/packet.json",
+      "sha256": "d355e9d951ec14b76340c7e1164f968a67d2d8788eedd02ed8481038335186af",
+      "bytes": 10914
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/adjudication/output.json",
+      "sha256": "4f8543c77982bfc6221c5c04772c6cee6b938b34526886ae27c7b4d3ee99e6a7",
+      "bytes": 1865
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/final-ledger/final-ledger.json",
+      "sha256": "f7438205c577d7297d750351dd323f4aeb79d72fdd8e2b2101e8bff8e4410aa0",
+      "bytes": 241196
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/score-pass/input.json",
+      "sha256": "53a602d2b6072fedf9a9d41685625cf3f7b735845a6a898c4228782b16d7657a",
+      "bytes": 989
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/score-pass/output.json",
+      "sha256": "2370aebd2a961d48f0e40d03e605fa313029312dac6b4e85cb17a8d492d7d965",
+      "bytes": 18448
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/score-pass/attestation.json",
+      "sha256": "30637dfd22ca54338f0cdc491e1133aa3eab86799164b42fc839372b04010640",
+      "bytes": 836
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/publication/output.json",
+      "sha256": "fa8efa075fe85ac35484382c0921d72fc5ce5eca3c1787e50e2f5ef025074923",
+      "bytes": 78030
+    },
+    "events": {
+      "path": ".assessment-cache/captions/bLdsRfkkTf4/events.json",
+      "sha256": "e491e60e9f3818b39478406de3bcc4d166009e17b83f54cf102ef82688d19629",
+      "bytes": 209665
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/bLdsRfkkTf4/transcript.txt",
+      "sha256": "0c54e711e0d8242657b6bc494bfcb1f8fb048945aec4d0730b893518268b4780",
+      "bytes": 84792
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/publication/content-parity-audit.json",
+      "sha256": "b073d2334d8b828a63dc9bf3d32ddb1c793ff4cb96135b37f951e97eae93a56a",
+      "bytes": 5452
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/publication/correction-2-rhetorical-tags.json",
+      "sha256": "58eee73ca29ce0ae9b23e5175b3991adce143ab46bb371288cc315c290a0395f",
+      "bytes": 1442
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/publication/rhetorical-tag-audit.json",
+      "sha256": "2f58b984787ed030b533103f9609660f467580edccaf3d333d24fbab109d8e2a",
+      "bytes": 16884
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "c782b4da2c557bca0cb6b392002d26fa497f2e5352a4f4eb247e38ad3f2bb79b",
+      "bytes": 4653
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-233/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "63abb1c04108ccf419f2be405c5a1af60315a8e46be355e4ae4a54bb5d1c2016",
+      "bytes": 3090
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "233",
+    "debateId": "dawkins-mcgrath-christianity-reason-evidence-2006",
+    "sections": [
+      {
+        "sectionId": "evidence-probability-worldview-choice",
+        "title": "Evidence, probability, and worldview choice",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "pro-01",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 48,
+                  "responsiveness": 71,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 78
+                },
+                "score": 66
+              },
+              {
+                "moveId": "pro-02",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 78,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 91
+                },
+                "score": 77
+              },
+              {
+                "moveId": "pro-03",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 74,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 88
+                },
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-01",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 85
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-02",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 86,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 92
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "complexity-science-and-explanation",
+        "title": "Complexity, science, and explanation",
+        "weightPercent": 19,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "pro-04",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 59,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 60,
+                  "relevanceBurden": 64,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 74
+                },
+                "score": 63
+              },
+              {
+                "moveId": "pro-05",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 78,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 78
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-06",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 77,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 85
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "con-03",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 81,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 77
+                },
+                "score": 73
+              },
+              {
+                "moveId": "con-04",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 81
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-05",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 73
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-06",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 76
+                },
+                "score": 78
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "meaning-jesus-and-christian-specificity",
+        "title": "Meaning, Jesus, and Christian specificity",
+        "weightPercent": 19,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "pro-07",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 67,
+                  "relevanceBurden": 63,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 83
+                },
+                "score": 71
+              },
+              {
+                "moveId": "pro-08",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 79,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 79
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-09",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 76,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 79
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-10",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 51,
+                  "responsiveness": 70,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 80
+                },
+                "score": 69
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-07",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 94,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 91
+                },
+                "score": 90
+              },
+              {
+                "moveId": "con-08",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 51,
+                  "responsiveness": 85,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 56
+                },
+                "score": 73
+              },
+              {
+                "moveId": "con-09",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 92,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 66
+                },
+                "score": 77
+              },
+              {
+                "moveId": "con-10",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 68
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "suffering-providence-and-intervention",
+        "title": "Suffering, providence, and intervention",
+        "weightPercent": 19,
+        "sides": {
+          "pro": {
+            "score": 62,
+            "moves": [
+              {
+                "moveId": "pro-11",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 61,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 89
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-12",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 47,
+                  "evidenceWarrant": 41,
+                  "responsiveness": 70,
+                  "relevanceBurden": 63,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 57
+                },
+                "score": 57
+              },
+              {
+                "moveId": "pro-13",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 56,
+                  "evidenceWarrant": 44,
+                  "responsiveness": 59,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 62
+                },
+                "score": 58
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-11",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 89,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-12",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 84
+                },
+                "score": 88
+              },
+              {
+                "moveId": "con-13",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 96,
+                  "relevanceBurden": 94,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 86
+                },
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "worldviews-morality-and-violence",
+        "title": "Worldviews, morality, and violence",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "pro-14",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 82,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 89
+                },
+                "score": 76
+              },
+              {
+                "moveId": "pro-15",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 78,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 90
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "con-14",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 80,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 85
+                },
+                "score": 74
+              },
+              {
+                "moveId": "con-15",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 90,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 76
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-16",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 88,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 85
+                },
+                "score": 78
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "science-spirituality-and-closing-critique",
+        "title": "Science, spirituality, and the closing critique",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "pro-16",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 80,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 91
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-17",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 76,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 89
+                },
+                "score": 69
+              },
+              {
+                "moveId": "pro-18",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 82,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 88
+                },
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "con-17",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 77,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 69
+                },
+                "score": 73
+              },
+              {
+                "moveId": "con-18",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 85,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 58
+                },
+                "score": 71
+              },
+              {
+                "moveId": "con-19",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 89,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 81
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-20",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 88,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 71,
+        "burdenCompletionAdjustment": 0,
+        "score": 71
+      },
+      "con": {
+        "weightedSectionMean": 81.62,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
+    },
+    "winner": "con",
+    "winningMargin": 11,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 38,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

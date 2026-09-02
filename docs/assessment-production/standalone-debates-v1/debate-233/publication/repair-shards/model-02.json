@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-shard",
+  "kind": "isolated-model-field-repair",
+  "attemptCount": 1,
+  "writableLeafFields": [
+    {
+      "moveId": "pro-08",
+      "field": "words"
+    },
+    {
+      "moveId": "con-10",
+      "field": "words"
+    }
+  ],
+  "output": {
+    "repairs": [
+      {
+        "key": "pro-08:words",
+        "text": "McGrath replies that Jesus’s life, death, and resurrection demand explanation, thereby supplying Christianity’s central evidential bridge from general theism to specifically Christian faith."
+      },
+      {
+        "key": "con-10:words",
+        "text": "Dawkins argues that if divine Jesus wished to forgive human sin, crucifixion was unnecessary and morally troubling because God could simply forgive directly."
+      }
+    ]
+  }
+}

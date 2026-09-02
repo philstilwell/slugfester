@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-shard",
+  "kind": "isolated-model-field-repair",
+  "attemptCount": 1,
+  "writableLeafFields": [
+    {
+      "moveId": "pro-01",
+      "field": "words"
+    },
+    {
+      "moveId": "pro-04",
+      "field": "words"
+    }
+  ],
+  "output": {
+    "repairs": [
+      {
+        "key": "pro-01:words",
+        "text": "McGrath concludes that Christianity makes better overall sense of reality than atheism, based on his Oxford reconsideration, though he does not state the decisive comparisons."
+      },
+      {
+        "key": "pro-04:words",
+        "text": "McGrath replies that improbability does not establish nonexistence, because particular persons can be statistically improbable yet actual, limiting what negative conclusions probability alone supports."
+      }
+    ]
+  }
+}

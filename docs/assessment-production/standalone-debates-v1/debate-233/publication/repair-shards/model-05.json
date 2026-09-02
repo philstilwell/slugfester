@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-shard",
+  "kind": "isolated-model-field-repair",
+  "attemptCount": 1,
+  "writableLeafFields": [
+    {
+      "moveId": "pro-18",
+      "field": "words"
+    },
+    {
+      "moveId": "con-18",
+      "field": "words"
+    }
+  ],
+  "output": {
+    "repairs": [
+      {
+        "key": "pro-18:words",
+        "text": "McGrath separates Dawkins's evidential objection to religion from his moral anger about religious harm, asking that the grounds for each strand be justified independently."
+      },
+      {
+        "key": "con-18:words",
+        "text": "Replying to McGrath, Dawkins says religious certainty provokes his anger because ancient scriptural declarations can end questioning rather than encourage continued inquiry into reality."
+      }
+    ]
+  }
+}

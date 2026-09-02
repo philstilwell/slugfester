@@ -10791,5 +10791,55 @@ export const debateSummaries = [
         "title": "Neighboring theisms, polytheism, and strongest challenges"
       }
     ]
+  },
+  {
+    "id": "dawkins-mcgrath-christianity-reason-evidence-2006",
+    "number": "233",
+    "title": "Richard Dawkins vs Alister McGrath: Is Christianity Rational?",
+    "year": 2006,
+    "label": "Christianity, reason, and evidence",
+    "date": "2026-09-01",
+    "duration": "1 hr 10 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=bLdsRfkkTf4",
+    "motion": "Is Christianity a rational explanation of reality?",
+    "summary": "Dawkins wins by pressing evidence, complexity, Christian specificity, and selective providence more successfully, while McGrath offers a thoughtful but incompletely warranted integrative worldview.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christianity is a rational explanation of reality",
+        "speaker": "Alister McGrath",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalistic atheism better explains reality",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 71,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Evidence, probability, and worldview choice"
+      },
+      {
+        "title": "Complexity, science, and explanation"
+      },
+      {
+        "title": "Meaning, Jesus, and Christian specificity"
+      },
+      {
+        "title": "Suffering, providence, and intervention"
+      },
+      {
+        "title": "Worldviews, morality, and violence"
+      },
+      {
+        "title": "Science, spirituality, and the closing critique"
+      }
+    ]
   }
 ];
