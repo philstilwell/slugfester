@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-standalone-source-span-bounded-repair",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-before-judgment",
+  "debateNumber": "235",
+  "debateId": "hernandez-jump-soul-free-will-consciousness-2019",
+  "triggerAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/inventory/source-span-sufficiency-audit-1.json",
+    "sha256": "4efd76a35065e4fb01e895ec98790a76c9297aa694354fa716b0b53e65438b08"
+  },
+  "before": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/inventory/preserved-inventory-before-source-sufficiency-repair.json",
+    "sha256": "78cb0428443128cd8c54ba67d1bbdbb870af83817cce3094135e66c6af1c2a57"
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/inventory/inventory-after-source-boundary-repair-before-quote-cleanup.json",
+    "sha256": "3c1c127f982efc2aefbbc685af81b91b3a4e59b80a71f3c378b8c3bfe2c6ba59"
+  },
+  "changes": [
+    {
+      "moveId": "pro-correlation-not-identity",
+      "fields": [
+        "sourceSpan.endEvent",
+        "sourceSpan.endMs",
+        "sourceSpan.excerpt"
+      ],
+      "reason": "Removed the material portion of Jump’s reply while retaining only unavoidable non-substantive caption carryover."
+    },
+    {
+      "moveId": "pro-empirical-equivalence",
+      "fields": [
+        "sourceSpan.endEvent",
+        "sourceSpan.endMs",
+        "sourceSpan.excerpt"
+      ],
+      "reason": "Included the words completing Hernandez’s comparative conclusion; the same caption event also carries a non-substantive reply lead-in."
+    },
+    {
+      "moveId": "con-truth-external-to-brain",
+      "fields": [
+        "sourceSpan.endEvent",
+        "sourceSpan.endMs",
+        "sourceSpan.excerpt"
+      ],
+      "reason": "Removed Hernandez’s response from the end of Jump’s analogy."
+    },
+    {
+      "moveId": "con-unassessable-soul-objection",
+      "fields": [
+        "sourceSpan.endEvent",
+        "sourceSpan.endMs",
+        "sourceSpan.excerpt"
+      ],
+      "reason": "Removed Hernandez’s reply from the end of Jump’s assessability objection."
+    }
+  ],
+  "unchanged": [
+    "motion",
+    "sides",
+    "sections",
+    "routes",
+    "move selection",
+    "propositions",
+    "reply links",
+    "importance",
+    "balance audit",
+    "capacity audit",
+    "scores absent"
+  ],
+  "controllerResolution": {
+    "moveId": "con-brain-damage-prediction",
+    "reason": "No boundary was changed because the whole-event schema requires the final event to retain Jump’s complete conclusion; the trailing “okay so” is a non-substantive turn-transition fragment rather than attributed argumentative material."
+  },
+  "validation": {
+    "currentInventoryValidatorPassed": true,
+    "performedBeforeJudgment": true
+  }
+}

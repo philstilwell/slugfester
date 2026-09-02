@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "resolutions",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-standalone-rhetorical-adjudication"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-standalone-debate-v1"
+    },
+    "status": {
+      "type": "string",
+      "const": "complete-and-schema-valid"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "235"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hernandez-jump-soul-free-will-consciousness-2019"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "fresh-anonymous-candidate-union-adjudicator"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "reasoningEffort": {
+      "type": "string",
+      "const": "low"
+    },
+    "resolutions": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateKey",
+          "decision",
+          "context",
+          "rationale"
+        ],
+        "properties": {
+          "candidateKey": {
+            "type": "string",
+            "enum": [
+              "pro-magic-eight-ball-undercutter::fallacy::Equivocation",
+              "pro-first-mover-counterexample::fallacy::Begging the question",
+              "con-recursive-reasons-dichotomy::fallacy::Begging the question",
+              "con-recursive-reasons-dichotomy::fallacy::Equivocation",
+              "con-round-square-rejoinder::fallacy::Begging the question",
+              "pro-empirical-equivalence::fallacy::Argument from ignorance",
+              "pro-private-access-mapping::fallacy::Begging the question",
+              "pro-nondegreed-personhood::bias::Scope neglect",
+              "con-personhood-spectrum::fallacy::Argument from ignorance",
+              "pro-transcendent-ground-of-personhood::fallacy::Begging the question",
+              "pro-conscious-subject-to-soul::fallacy::Begging the question",
+              "con-unassessable-soul-objection::fallacy::Argument from ignorance",
+              "pro-primitive-interaction::fallacy::Special pleading",
+              "con-conditional-soul-concession::fallacy::Begging the question"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 35
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 60
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "completeUnionReviewed",
+        "oneDecisionPerCandidate",
+        "exactCatalogDefinitionsApplied",
+        "critiqueCorrespondenceRequired",
+        "scoresUnchanged",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "completeUnionReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "oneDecisionPerCandidate": {
+          "type": "boolean",
+          "const": true
+        },
+        "exactCatalogDefinitionsApplied": {
+          "type": "boolean",
+          "const": true
+        },
+        "critiqueCorrespondenceRequired": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresUnchanged": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0-standalone-source-span-sufficiency-final",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-and-frozen-before-judgment",
+  "debateNumber": "235",
+  "debateId": "hernandez-jump-soul-free-will-consciousness-2019",
+  "review": {
+    "status": "pass",
+    "reviewedMoveIds": [
+      "pro-magic-eight-ball-undercutter",
+      "con-reasons-determine-arithmetic",
+      "con-recursive-reasons-dichotomy",
+      "pro-first-mover-counterexample",
+      "con-round-square-rejoinder",
+      "con-brain-damage-prediction",
+      "pro-correlation-not-identity",
+      "pro-empirical-equivalence",
+      "con-predictive-confirmation-reply",
+      "pro-property-difference-thesis",
+      "pro-truth-and-weight-properties",
+      "con-emergent-property-reply",
+      "con-truth-external-to-brain",
+      "con-unassessable-soul-objection",
+      "pro-nondegreed-personhood",
+      "con-personhood-spectrum",
+      "con-discrete-physical-personhood",
+      "pro-transcendent-ground-of-personhood",
+      "pro-inverted-qualia",
+      "con-inductive-other-minds",
+      "pro-private-access-mapping",
+      "con-model-prediction-verification",
+      "pro-conscious-subject-to-soul",
+      "pro-interaction-separate-from-existence",
+      "pro-primitive-interaction",
+      "con-primitive-label-not-mechanism",
+      "pro-interaction-gap-concession",
+      "con-conditional-soul-concession"
+    ],
+    "findings": [
+      {
+        "moveId": "con-predictive-confirmation-reply",
+        "severity": "nonblocking",
+        "finding": "The quote-eligible span \"that are confirmed which is the same\" is an incomplete transition fragment and is not independently representative, although the complete source span sufficiently proves the proposition and reply contact.",
+        "recommendedAction": "Remove this quote-eligible span; retain \"a hypothesis that makes future predictions that are confirmed\" as the representative exact quotation."
+      },
+      {
+        "moveId": "pro-transcendent-ground-of-personhood",
+        "severity": "nonblocking",
+        "finding": "The quote-eligible span \"something transcend it beyond the body that's not\" ends mid-thought and is not independently representative. The complete source span still supplies the necessary inference through its earlier denial of any physical ground and its appeal to something transcendent beyond the body.",
+        "recommendedAction": "Remove the incomplete quote-eligible span and rely on \"you cannot ground your personhood or anything physical,\" or use a different exact whole-event span if a fuller quotation is required."
+      }
+    ],
+    "summary": "All 28 source spans are exact joins of complete caption events and sufficiently establish their propositions, load-bearing reasoning, and claimed reply contacts. No blocking omission, material cross-speaker attribution, or unrelated argumentative padding was found. Two exact but incomplete quote-eligible fragments should be removed."
+  },
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "isolation": "fresh ephemeral context with user configuration and rules disabled",
+    "attempts": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "rawExecutionSha256": "72d457f8cc409d38aaab0efbad57706c9b621ad915241f94a1c697bf9914e250"
+  },
+  "nonblockingCleanup": [
+    {
+      "moveId": "con-predictive-confirmation-reply",
+      "removedQuoteEligibleExactSpan": "that are confirmed which is the same",
+      "reason": "Incomplete transition fragment; stronger exact representative quote retained."
+    },
+    {
+      "moveId": "pro-transcendent-ground-of-personhood",
+      "removedQuoteEligibleExactSpan": "something transcend it beyond the body that's not",
+      "reason": "Incomplete transition fragment; stronger exact representative quote retained."
+    }
+  ],
+  "lockedInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/inventory/inventory.json",
+    "sha256": "d18618ba73e6aa075c31bafd7d01531da58204e5a3c11d3050123545b54a4bf5",
+    "moveCount": 28,
+    "proMoves": 14,
+    "conMoves": 14
+  },
+  "validation": {
+    "currentInventoryValidatorPassed": true,
+    "blockingFindings": 0,
+    "scoreBlind": true,
+    "performedBeforeJudgment": true
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0-content-parity-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "235",
+  "debateId": "hernandez-jump-soul-free-will-consciousness-2019",
+  "reason": "The initial publication passed formal limits, but two AI Extension premise fields were expanded once to meet the independent 25-debate premise-depth floor without changing evidence, judgments, critiques, tags, scores, or winner.",
+  "repair": {
+    "writableFields": [
+      "candidate.logicalExtension.con.finalArgument.premises[0]",
+      "candidate.logicalExtension.con.finalArgument.premises[1]"
+    ],
+    "attempts": 1,
+    "retries": 0,
+    "beforeExtensionPremiseWordsMean": 21.1,
+    "afterExtensionPremiseWordsMean": 23.4,
+    "referenceMinimum": 21.8,
+    "deterministicProductionContractCleanup": {
+      "writableFields": [
+        "candidate.sections[1].exchanges[1].pro",
+        "candidate.sections[5].exchanges[3].con"
+      ],
+      "action": "omit-two-null-placeholder-properties",
+      "attempts": 1,
+      "retries": 0
+    }
+  },
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-235/publication/preserved-output-before-content-parity-review.json",
+      "sha256": "b694c5ae1a7a17fb1252317ba5585336035bf25e1ca057c10a22cabba54d9b6c",
+      "bytes": 53201
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-235/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "eca8bb75fefd311de4a2ea81412dc52c245dd0494b951a93482c89c3b9cad168",
+      "bytes": 61072
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-235/publication/content-parity-audit.json",
+      "sha256": "90d4281ec6ae83b80e8d51473f43d8ae8527d7904b29e52448098caa610a1ba3",
+      "bytes": 5069
+    }
+  },
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "descriptionChanges": 0,
+    "critiqueChanges": 0,
+    "aiExtensionPremiseChanges": 2,
+    "maximumWritableFieldsPerShard": 2,
+    "omittedNullExchangeSlots": 2
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-standalone-source-span-sufficiency-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "failed-preserved-before-bounded-repair",
+  "debateNumber": "235",
+  "debateId": "hernandez-jump-soul-free-will-consciousness-2019",
+  "review": {
+    "status": "fail",
+    "reviewedMoveIds": [
+      "pro-magic-eight-ball-undercutter",
+      "con-reasons-determine-arithmetic",
+      "con-recursive-reasons-dichotomy",
+      "pro-first-mover-counterexample",
+      "con-round-square-rejoinder",
+      "con-brain-damage-prediction",
+      "pro-correlation-not-identity",
+      "pro-empirical-equivalence",
+      "con-predictive-confirmation-reply",
+      "pro-property-difference-thesis",
+      "pro-truth-and-weight-properties",
+      "con-emergent-property-reply",
+      "con-truth-external-to-brain",
+      "con-unassessable-soul-objection",
+      "pro-nondegreed-personhood",
+      "con-personhood-spectrum",
+      "con-discrete-physical-personhood",
+      "pro-transcendent-ground-of-personhood",
+      "pro-inverted-qualia",
+      "con-inductive-other-minds",
+      "pro-private-access-mapping",
+      "con-model-prediction-verification",
+      "pro-conscious-subject-to-soul",
+      "pro-interaction-separate-from-existence",
+      "pro-primitive-interaction",
+      "con-primitive-label-not-mechanism",
+      "pro-interaction-gap-concession",
+      "con-conditional-soul-concession"
+    ],
+    "findings": [
+      {
+        "moveId": "con-brain-damage-prediction",
+        "severity": "blocking",
+        "finding": "The end of event 981 includes Hernandez's turn-opening \"okay so\" after Jump's claim, so the span is not wholly single-speaker.",
+        "recommendedAction": "Trim the endpoint within event 981 immediately after \"produced by material processes.\""
+      },
+      {
+        "moveId": "pro-correlation-not-identity",
+        "severity": "blocking",
+        "finding": "The span crosses the speaker transition after Hernandez asks whether the examples prove consciousness physical. \"that's true of all science all science can't prove causation\" is Jump's reply, not Hernandez's material.",
+        "recommendedAction": "End the span at Hernandez's question ending in \"physical correct,\" excluding Jump's reply."
+      },
+      {
+        "moveId": "pro-empirical-equivalence",
+        "severity": "blocking",
+        "finding": "The span cuts the load-bearing conclusion off at \"prove one position over\" and omits \"the other\" from event 1113.",
+        "recommendedAction": "Extend the endpoint into event 1113 through \"the other,\" stopping before Jump's ensuing agreement."
+      },
+      {
+        "moveId": "con-truth-external-to-brain",
+        "severity": "blocking",
+        "finding": "Event 1561 crosses from Jump's analogy into Hernandez's response, so the attributed span contains wrong-speaker material.",
+        "recommendedAction": "Trim the endpoint within event 1561 after Jump's concluding phrase and before Hernandez begins responding."
+      },
+      {
+        "moveId": "con-unassessable-soul-objection",
+        "severity": "blocking",
+        "finding": "Event 2044 is Hernandez's reply/question rather than part of Jump's objection, making the endpoint speaker-contaminated.",
+        "recommendedAction": "End the span at event 2043."
+      }
+    ],
+    "summary": "Five source spans require boundary correction because they either cross into the other speaker's turn or omit a necessary completion. All quote-eligible strings are exact substrings; no separate quote-representativeness issue warrants a finding."
+  },
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "isolation": "fresh ephemeral context with user configuration and rules disabled",
+    "attempts": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "rawExecutionSha256": "9dff81c6c42ccfb5604b6e922677bb02e2e31538a2e201a4af894540d41b6ca2"
+  },
+  "controllerResolution": {
+    "wholeCaptionEventsRequired": true,
+    "nonSubstantiveTurnTransitionCarryoverMayRemain": true,
+    "notes": [
+      "con-brain-damage-prediction retains the whole event because the only carryover is the non-substantive phrase “okay so”; the complete preceding clause is needed.",
+      "Four other boundaries will be adjusted without changing move selection, propositions, burdens, sections, or scores."
+    ]
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "reviewedMoveIds",
+    "candidateReviews",
+    "acceptedTags",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-standalone-blind-rhetorical-review"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-standalone-debate-v1"
+    },
+    "status": {
+      "type": "string",
+      "const": "complete-and-schema-valid"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "235"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hernandez-jump-soul-free-will-consciousness-2019"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "fresh-blind-move-complete-rhetorical-reviewer"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "reasoningEffort": {
+      "type": "string",
+      "const": "low"
+    },
+    "reviewedMoveIds": {
+      "type": "array",
+      "minItems": 28,
+      "maxItems": 28,
+      "items": {
+        "type": "string",
+        "enum": [
+          "pro-magic-eight-ball-undercutter",
+          "con-reasons-determine-arithmetic",
+          "pro-first-mover-counterexample",
+          "con-recursive-reasons-dichotomy",
+          "con-round-square-rejoinder",
+          "pro-correlation-not-identity",
+          "con-brain-damage-prediction",
+          "pro-empirical-equivalence",
+          "con-predictive-confirmation-reply",
+          "pro-property-difference-thesis",
+          "con-emergent-property-reply",
+          "pro-truth-and-weight-properties",
+          "con-truth-external-to-brain",
+          "pro-inverted-qualia",
+          "con-inductive-other-minds",
+          "pro-private-access-mapping",
+          "con-model-prediction-verification",
+          "pro-nondegreed-personhood",
+          "con-personhood-spectrum",
+          "pro-transcendent-ground-of-personhood",
+          "con-discrete-physical-personhood",
+          "pro-conscious-subject-to-soul",
+          "con-unassessable-soul-objection",
+          "pro-interaction-separate-from-existence",
+          "con-primitive-label-not-mechanism",
+          "pro-primitive-interaction",
+          "con-conditional-soul-concession",
+          "pro-interaction-gap-concession"
+        ]
+      }
+    },
+    "candidateReviews": {
+      "type": "array",
+      "maxItems": 56,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "type",
+          "label",
+          "url",
+          "context",
+          "decision",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-magic-eight-ball-undercutter",
+              "con-reasons-determine-arithmetic",
+              "pro-first-mover-counterexample",
+              "con-recursive-reasons-dichotomy",
+              "con-round-square-rejoinder",
+              "pro-correlation-not-identity",
+              "con-brain-damage-prediction",
+              "pro-empirical-equivalence",
+              "con-predictive-confirmation-reply",
+              "pro-property-difference-thesis",
+              "con-emergent-property-reply",
+              "pro-truth-and-weight-properties",
+              "con-truth-external-to-brain",
+              "pro-inverted-qualia",
+              "con-inductive-other-minds",
+              "pro-private-access-mapping",
+              "con-model-prediction-verification",
+              "pro-nondegreed-personhood",
+              "con-personhood-spectrum",
+              "pro-transcendent-ground-of-personhood",
+              "con-discrete-physical-personhood",
+              "pro-conscious-subject-to-soul",
+              "con-unassessable-soul-objection",
+              "pro-interaction-separate-from-existence",
+              "con-primitive-label-not-mechanism",
+              "pro-primitive-interaction",
+              "con-conditional-soul-concession",
+              "pro-interaction-gap-concession"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "enum": [
+              "https://logfall.com/fallacies/appeal-to-authority/",
+              "https://logfall.com/fallacies/argument-from-ignorance/",
+              "https://logfall.com/fallacies/begging-the-question/",
+              "https://logfall.com/fallacies/equivocation/",
+              "https://logfall.com/fallacies/red-herring/",
+              "https://logfall.com/fallacies/special-pleading/",
+              "https://cogbias.site/biases/ambiguity-effect/",
+              "https://cogbias.site/biases/authority-bias/",
+              "https://cogbias.site/biases/base-rate-neglect/",
+              "https://cogbias.site/biases/belief-bias/",
+              "https://cogbias.site/biases/confirmation-bias/",
+              "https://cogbias.site/biases/scope-neglect/",
+              "https://cogbias.site/biases/subjective-validation/"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 35
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 50
+          }
+        }
+      }
+    },
+    "acceptedTags": {
+      "type": "array",
+      "maxItems": 28,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "type",
+          "label",
+          "url",
+          "context"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-magic-eight-ball-undercutter",
+              "con-reasons-determine-arithmetic",
+              "pro-first-mover-counterexample",
+              "con-recursive-reasons-dichotomy",
+              "con-round-square-rejoinder",
+              "pro-correlation-not-identity",
+              "con-brain-damage-prediction",
+              "pro-empirical-equivalence",
+              "con-predictive-confirmation-reply",
+              "pro-property-difference-thesis",
+              "con-emergent-property-reply",
+              "pro-truth-and-weight-properties",
+              "con-truth-external-to-brain",
+              "pro-inverted-qualia",
+              "con-inductive-other-minds",
+              "pro-private-access-mapping",
+              "con-model-prediction-verification",
+              "pro-nondegreed-personhood",
+              "con-personhood-spectrum",
+              "pro-transcendent-ground-of-personhood",
+              "con-discrete-physical-personhood",
+              "pro-conscious-subject-to-soul",
+              "con-unassessable-soul-objection",
+              "pro-interaction-separate-from-existence",
+              "con-primitive-label-not-mechanism",
+              "pro-primitive-interaction",
+              "con-conditional-soul-concession",
+              "pro-interaction-gap-concession"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "enum": [
+              "https://logfall.com/fallacies/appeal-to-authority/",
+              "https://logfall.com/fallacies/argument-from-ignorance/",
+              "https://logfall.com/fallacies/begging-the-question/",
+              "https://logfall.com/fallacies/equivocation/",
+              "https://logfall.com/fallacies/red-herring/",
+              "https://logfall.com/fallacies/special-pleading/",
+              "https://cogbias.site/biases/ambiguity-effect/",
+              "https://cogbias.site/biases/authority-bias/",
+              "https://cogbias.site/biases/base-rate-neglect/",
+              "https://cogbias.site/biases/belief-bias/",
+              "https://cogbias.site/biases/confirmation-bias/",
+              "https://cogbias.site/biases/scope-neglect/",
+              "https://cogbias.site/biases/subjective-validation/"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 35
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allMovesReviewedOnce",
+        "existingTagsUnavailable",
+        "otherReviewUnavailable",
+        "scoreChangesProhibited",
+        "emptyResultPermitted",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "allMovesReviewedOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "existingTagsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherReviewUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoreChangesProhibited": {
+          "type": "boolean",
+          "const": true
+        },
+        "emptyResultPermitted": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

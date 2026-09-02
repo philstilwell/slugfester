@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-standalone-publication-depth-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-field-corpus-relative-depth-repair",
+  "debateNumber": "235",
+  "debateId": "hernandez-jump-soul-free-will-consciousness-2019",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/publication/preserved-output-before-content-parity-review.json",
+    "sha256": "b694c5ae1a7a17fb1252317ba5585336035bf25e1ca057c10a22cabba54d9b6c"
+  },
+  "repair": {
+    "writableFields": [
+      "candidate.logicalExtension.con.finalArgument.premises[0]",
+      "candidate.logicalExtension.con.finalArgument.premises[1]"
+    ],
+    "attempts": 1,
+    "retries": 0,
+    "model": {
+      "slug": "gpt-5.6-sol",
+      "label": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "rawOutputSha256": "602e8172ef46603badcdf2197fcababa39657dfa23f877a82f7f3a33ed757921",
+    "rawExecutionSha256": "6abf751765f608fbac6aa9079e515edd43f6a33e03769f0205c4bd7cbc10e23e",
+    "directIncrementalCostUsd": 0
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "eca8bb75fefd311de4a2ea81412dc52c245dd0494b951a93482c89c3b9cad168",
+    "bytes": 61072
+  },
+  "invariants": {
+    "identityUnchanged": true,
+    "motionUnchanged": true,
+    "inventoryUnchanged": true,
+    "judgmentsUnchanged": true,
+    "adjudicationUnchanged": true,
+    "critiquesUnchanged": true,
+    "tagsUnchanged": true,
+    "scoresUnchanged": true,
+    "omittedNullExchangePlaceholderProperties": 2
+  },
+  "metrics": {
+    "beforeExtensionPremiseWordsMean": 21.1,
+    "afterExtensionPremiseWordsMean": 23.4,
+    "referenceMinimum": 21.8
+  },
+  "contentParityAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-235/publication/content-parity-audit.json",
+    "sha256": "90d4281ec6ae83b80e8d51473f43d8ae8527d7904b29e52448098caa610a1ba3"
+  }
+}

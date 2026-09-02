@@ -10894,5 +10894,55 @@ export const debateSummaries = [
         "title": "Purpose, suffering, human significance, and culture"
       }
     ]
+  },
+  {
+    "id": "hernandez-jump-soul-free-will-consciousness-2019",
+    "number": "235",
+    "title": "Eric Hernandez vs Tom Jump: Free Will, Consciousness, and the Existence of the Soul",
+    "year": 2019,
+    "label": "Free will, consciousness, and the soul",
+    "date": "2026-09-02",
+    "duration": "1 hr 45 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=m7LVr5OaSAE",
+    "motion": "Does a nonphysical human soul exist?",
+    "summary": "Hernandez defends a nonphysical soul through rational agency, mental properties, personhood, and private consciousness; Jump prevails by emphasizing coherence, physical explanation, and predictive evidence.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "A nonphysical human soul exists",
+        "speaker": "Eric Hernandez",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Free will and consciousness do not establish a nonphysical soul",
+        "speaker": "Tom Jump",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 72,
+      "con": 78,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Determinism and rational justification"
+      },
+      {
+        "title": "The coherence of libertarian free will"
+      },
+      {
+        "title": "Empirical evidence about consciousness"
+      },
+      {
+        "title": "Mind, brain, identity, and private experience"
+      },
+      {
+        "title": "Personhood as a route to the soul"
+      },
+      {
+        "title": "The soul-body interaction problem"
+      }
+    ]
   }
 ];
