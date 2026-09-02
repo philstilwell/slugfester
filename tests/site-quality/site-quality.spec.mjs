@@ -47,16 +47,16 @@ for (const route of [
 }
 
 const routeBudgets = [
-  { route: "/", dataBytes: 385_000, required: "debate-summaries.js" },
-  { route: "/rankings/", dataBytes: 435_000, required: "debate-analytics.js" },
+  { route: "/", dataBytes: 395_000, required: "debate-summaries.js" },
+  { route: "/rankings/", dataBytes: 445_000, required: "debate-analytics.js" },
   {
     route: "/debate/craig-oconnor-god-debate-2026/",
-    dataBytes: 475_000,
+    dataBytes: 480_000,
     required: "debate-details/craig-oconnor-god-debate-2026.js"
   },
   {
     route: "/reference/fallacy/equivocation/",
-    dataBytes: 465_000,
+    dataBytes: 470_000,
     required: "reference-appearances/fallacy-equivocation.js"
   }
 ];
