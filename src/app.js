@@ -38,6 +38,7 @@ import {
 const app = document.querySelector("#app");
 let debates = debateSummaries;
 let debateAnalyticsPromise;
+let sectionScoreExtremesPromise;
 let sectionScoreExtremes = { top: [], bottom: [] };
 const debateDetailPromises = new Map();
 const referenceAppearancePromises = new Map();
@@ -78,12 +79,11 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
     debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260902-rubric-examples-v1")
-      .then(({ debateAnalytics, sectionScoreExtremes: loadedSectionScoreExtremes }) => {
+      .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
           ...(debateAnalytics[debate.id] || {})
         }));
-        sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return debates;
       })
       .catch((error) => {
@@ -93,6 +93,22 @@ async function loadDebateAnalytics() {
   }
 
   return debateAnalyticsPromise;
+}
+
+async function loadSectionScoreExtremes() {
+  if (!sectionScoreExtremesPromise) {
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=20260902-rubric-examples-v1")
+      .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
+        sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
+        return sectionScoreExtremes;
+      })
+      .catch((error) => {
+        sectionScoreExtremesPromise = undefined;
+        throw error;
+      });
+  }
+
+  return sectionScoreExtremesPromise;
 }
 
 async function loadDebateDetail(id) {
@@ -3963,6 +3979,9 @@ async function route() {
 
   if (needsAnalytics && debates === debateSummaries) {
     loaders.push(loadDebateAnalytics());
+  }
+  if (backendMatch && !sectionScoreExtremes.top.length) {
+    loaders.push(loadSectionScoreExtremes());
   }
   if (debateMatch && knownDebate) {
     loaders.push(loadDebateDetail(debateId));
