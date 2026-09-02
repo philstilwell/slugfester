@@ -71,8 +71,25 @@ function speakerSummary(names = []) {
   return labels.join(" & ");
 }
 
+export function debateDisplayTitle(debate) {
+  return String(debate?.title || "").replace(/\s*\((?:19|20)\d{2}\)\s*$/, "").trim();
+}
+
+export function debateYear(debate) {
+  const explicitYear = String(debate?.year || "").match(/^(?:19|20)\d{2}$/)?.[0];
+  const titleYear = String(debate?.title || "").match(/\(((?:19|20)\d{2})\)\s*$/)?.[1];
+  const idYear = String(debate?.id || "").match(/-((?:19|20)\d{2})$/)?.[1];
+  return explicitYear || titleYear || idYear || "";
+}
+
+export function debateTitleWithYear(debate) {
+  const title = debateDisplayTitle(debate);
+  const year = debateYear(debate);
+  return year ? `${title} · ${year}` : title;
+}
+
 function debateTopicTitle(debate) {
-  const title = String(debate.title || "").replace(/\s*\(\d{4}\)\s*$/, "").trim();
+  const title = debateDisplayTitle(debate);
   const participantIndexes = [
     ...speakerNames(debate.sides.pro.speaker),
     ...speakerNames(debate.sides.con.speaker)
@@ -112,8 +129,9 @@ function debateSearchTitle(debate, participantsBySide = {}) {
   const proNames = participantsBySide.pro?.map((person) => person.name).filter(Boolean) || [];
   const conNames = participantsBySide.con?.map((person) => person.name).filter(Boolean) || [];
   const speakers = `${proNames.length ? speakerSummary(proNames) : speakerLabel(debate.sides.pro.speaker)} vs ${conNames.length ? speakerSummary(conNames) : speakerLabel(debate.sides.con.speaker)}`;
-  const topicBudget = Math.max(16, 66 - speakers.length - 3);
-  return `${compactTitlePart(debateTopicTitle(debate), topicBudget)} — ${speakers}`;
+  const yearSuffix = debateYear(debate) ? ` · ${debateYear(debate)}` : "";
+  const topicBudget = Math.max(16, 66 - speakers.length - 3 - yearSuffix.length);
+  return `${compactTitlePart(debateTopicTitle(debate), topicBudget)} — ${speakers}${yearSuffix}`;
 }
 
 function personIdentityJsonLd(name, imagePath = "") {
@@ -294,7 +312,7 @@ export function landingSeo(debates = []) {
     type: "website",
     relatedLinks: recentDebates.map((debate) => ({
       href: debatePath(debate),
-      label: `${debateNumberLabel(debate)}: ${debate.title}`
+      label: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
     })),
     jsonLd: [
       organizationJsonLd(),
@@ -308,7 +326,7 @@ export function landingSeo(debates = []) {
           "@type": "ListItem",
           position: index + 1,
           url: absoluteUrl(debatePath(debate)),
-          name: `${debateNumberLabel(debate)}: ${debate.title}`
+          name: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
         }))
       }
     ]
@@ -348,11 +366,11 @@ export function debateSeo(debate, participantsBySide = {}) {
 
   return {
     title: pageTitle(debateSearchTitle(debate, participantsBySide)),
-    heading: debate.title,
+    heading: debateTitleWithYear(debate),
     description: `${debateSearchTitle(debate, participantsBySide)}. Compare transcript-grounded claims, rebuttals, scores, critiques, and YouTube timestamps.`,
     canonicalPath: debatePath(debate),
     imagePath: DEFAULT_IMAGE,
-    imageAlt: `${debateNumberLabel(debate)} scorecard: ${debate.title}`,
+    imageAlt: `${debateNumberLabel(debate)} scorecard: ${debateTitleWithYear(debate)}`,
     type: "article",
     articleSection: "Debate scorecards",
     lastmod: modifiedDate,
@@ -365,8 +383,8 @@ export function debateSeo(debate, participantsBySide = {}) {
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        headline: `${debateNumberLabel(debate)}: ${debate.title}`,
-        name: `${debateNumberLabel(debate)}: ${debate.title}`,
+        headline: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`,
+        name: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`,
         description: compactText(debate.summary, 220),
         datePublished: publishedTime,
         dateModified: modifiedTime,
@@ -376,6 +394,7 @@ export function debateSeo(debate, participantsBySide = {}) {
         thumbnailUrl: absoluteUrl(DEFAULT_IMAGE),
         inLanguage: SITE_LANGUAGE,
         articleSection: "Debate scorecards",
+        temporalCoverage: debateYear(debate) || undefined,
         isAccessibleForFree: true,
         author: organizationIdentityJsonLd(),
         publisher: organizationIdentityJsonLd(),
@@ -402,7 +421,7 @@ export function debateSeo(debate, participantsBySide = {}) {
       },
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
-        { name: `${debateNumberLabel(debate)}: ${debate.title}`, path: debatePath(debate) }
+        { name: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`, path: debatePath(debate) }
       ])
     ]
   };
@@ -420,7 +439,7 @@ export function searchSeo(debates = []) {
     type: "website",
     relatedLinks: debates.slice(0, 12).map((debate) => ({
       href: debatePath(debate),
-      label: `${debateNumberLabel(debate)}: ${debate.title}`
+      label: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
     })),
     jsonLd: [
       organizationJsonLd(),
@@ -442,7 +461,7 @@ export function searchSeo(debates = []) {
             "@type": "ListItem",
             position: index + 1,
             url: absoluteUrl(debatePath(debate)),
-            name: `${debateNumberLabel(debate)}: ${debate.title}`
+            name: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
           }))
         }
       },
@@ -469,7 +488,7 @@ export function topicsSeo(debates = []) {
     type: "website",
     relatedLinks: debates.slice(0, 12).map((debate) => ({
       href: debatePath(debate),
-      label: `${debateNumberLabel(debate)}: ${debate.title}`
+      label: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
     })),
     jsonLd: [
       organizationJsonLd(),
@@ -573,7 +592,7 @@ export function interlocutorSeo(
     type: "website",
     relatedLinks: uniqueDebates.slice(0, 20).map((debate) => ({
       href: debatePath(debate),
-      label: `${debateNumberLabel(debate)}: ${debate.title}`
+      label: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
     })),
     jsonLd: [
       organizationJsonLd(),
@@ -597,7 +616,7 @@ export function interlocutorSeo(
             "@type": "ListItem",
             position: index + 1,
             url: absoluteUrl(debatePath(debate)),
-            name: `${debateNumberLabel(debate)}: ${debate.title}`
+            name: `${debateNumberLabel(debate)}: ${debateTitleWithYear(debate)}`
           }))
         }
       },

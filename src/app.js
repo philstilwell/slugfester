@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260901-scorecard-reporting-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260901-scorecard-reporting-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260901-scorecard-reporting-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260901-debate-years-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260901-debate-years-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260901-debate-years-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -18,6 +18,8 @@ import {
   debateNumberLabel,
   debatePath,
   debateSeo,
+  debateDisplayTitle,
+  debateYear,
   interlocutorPath,
   interlocutorSeo,
   interlocutorSlug,
@@ -31,7 +33,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260901-theist-report-v1";
+} from "./seo.js?v=20260901-debate-years-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -74,7 +76,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260901-scorecard-reporting-v1")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260901-debate-years-v1")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -93,7 +95,7 @@ async function loadDebateAnalytics() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260901-scorecard-reporting-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260901-debate-years-v1`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -108,7 +110,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260901-scorecard-reporting-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260901-debate-years-v1`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -328,6 +330,17 @@ function renderDebateNumber(debate) {
       ${escapeHtml(debate.number)}
     </span>
   `;
+}
+
+function renderDebateYear(debate) {
+  const year = debateYear(debate);
+  if (!year) return "";
+
+  return `<span class="debate-title-year" aria-label="Debate year ${escapeHtml(year)}">${escapeHtml(year)}</span>`;
+}
+
+function renderDebateTitle(debate) {
+  return `${escapeHtml(debateDisplayTitle(debate))}${renderDebateYear(debate)}`;
 }
 
 function currentPrimaryNavKey() {
@@ -624,7 +637,7 @@ function renderRecentAssessmentCard(debate) {
         ${renderDebateNumber(debate)}
         <span>Published or updated ${escapeHtml(formatDisplayDate(debate.date))}</span>
       </div>
-      <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+      <h3><a href="${escapeHtml(debatePath(debate))}">${renderDebateTitle(debate)}</a></h3>
       <p>${escapeHtml(debate.label)}</p>
       <div class="recent-assessment-footer">
         <span class="recent-assessment-people" aria-label="Interlocutor profiles">
@@ -649,7 +662,7 @@ function renderDebateCard(debate) {
         <span class="card-label">${renderDebateNumber(debate)}<span>${escapeHtml(debate.label)}</span></span>
         <span>${escapeHtml(debate.duration)}</span>
       </div>
-      <h3><a class="debate-title-link" href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+      <h3><a class="debate-title-link" href="${escapeHtml(debatePath(debate))}">${renderDebateTitle(debate)}</a></h3>
       <p class="motion">${escapeHtml(debate.motion)}</p>
       <p>${escapeHtml(debate.summary)}</p>
       <div class="card-interlocutors" aria-label="Interlocutor profiles">
@@ -1500,6 +1513,7 @@ function debateSearchText(debate) {
   return [
     debate.number,
     debate.title,
+    debate.year,
     debate.label,
     debate.motion,
     debate.summary,
@@ -2014,7 +2028,7 @@ function renderProfileDebateCard(record, person) {
   return `
     <article class="profile-debate-card" data-debate-record="${escapeHtml(debate.id)}" data-person-score="${record.score}" data-opponent-score="${record.opponentScore}">
       <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))}</p>
-      <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+      <h3><a href="${escapeHtml(debatePath(debate))}">${renderDebateTitle(debate)}</a></h3>
       <p>${escapeHtml(debate.label)}</p>
       <span class="profile-debate-opponent">Against ${escapeHtml(opponentNames || "the opposing side")}</span>
       <dl>
@@ -2043,7 +2057,7 @@ function renderProfileTeamScorecards(records) {
             ({ debate, sideKey }) => `
               <article class="profile-debate-card">
                 <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))}</p>
-                <h3><a href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+                <h3><a href="${escapeHtml(debatePath(debate))}">${renderDebateTitle(debate)}</a></h3>
                 <p>${escapeHtml(debate.label)}</p>
                 <span class="profile-debate-opponent">Side: ${escapeHtml(debate.sides[sideKey].speaker)}</span>
                 <p>Shared side score excluded from the individual record.</p>
@@ -2208,7 +2222,7 @@ function renderTopicDebateCard(debate) {
     <article class="topic-debate-card">
       <a class="topic-card-title" href="${escapeHtml(debatePath(debate))}" aria-label="Open ${escapeHtml(debateNumberLabel(debate))}: ${escapeHtml(debate.label)}">
         ${renderDebateNumber(debate)}
-        <span>${escapeHtml(debate.label)}</span>
+        <span>${escapeHtml(debate.label)}${renderDebateYear(debate)}</span>
       </a>
       <div class="topic-chip-row" aria-label="Topics">
         ${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
@@ -2343,7 +2357,7 @@ function renderSearchResult(debate) {
       </div>
       <div class="search-result-main">
         <div>
-          <h3><a class="debate-title-link search-result-title-link" href="${escapeHtml(debatePath(debate))}">${escapeHtml(debate.title)}</a></h3>
+          <h3><a class="debate-title-link search-result-title-link" href="${escapeHtml(debatePath(debate))}">${renderDebateTitle(debate)}</a></h3>
           <p class="motion">${escapeHtml(debate.motion)}</p>
           <p>${escapeHtml(debate.summary)}</p>
         </div>
@@ -2922,7 +2936,7 @@ function renderCorrections() {
           <p class="eyebrow">Reader report</p>
           <h2 id="correction-report-heading">Report a possible scorecard issue</h2>
           <p>Identify the exact page and explain what appears incorrect. A timestamp, transcript passage, calculation, screenshot link, or other evidence will make the report easier to check.</p>
-          ${selectedDebate ? `<p class="correction-report-context"><strong>Selected scorecard:</strong> Debate ${escapeHtml(selectedDebate.number)} · ${escapeHtml(selectedDebate.title)}</p>` : ""}
+          ${selectedDebate ? `<p class="correction-report-context"><strong>Selected scorecard:</strong> Debate ${escapeHtml(selectedDebate.number)} · ${renderDebateTitle(selectedDebate)}</p>` : ""}
         </div>
         <div class="correction-report-card">
           ${reportSent ? '<p class="correction-report-success" role="status"><strong>Report sent.</strong> Thank you—the possible issue has been delivered for review.</p>' : ""}
@@ -3160,7 +3174,7 @@ function renderDebateObject(
           ${calibrationPreview ? '<p class="source-note calibration-preview-note"><strong>Calibration preview:</strong> recovered diagnostic output only. This scorecard is excluded from production data and rankings.</p>' : ""}
           ${publicationStagingPreview ? '<p class="source-note calibration-preview-note"><strong>Publication staging preview:</strong> validated canary candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.</p>' : ""}
           <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))} · ${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
-          <h1>${escapeHtml(debate.title)}</h1>
+          <h1>${renderDebateTitle(debate)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
         </div>
         <figure class="debate-gloves-panel" aria-hidden="true">
@@ -3806,7 +3820,7 @@ function renderReferenceAppearance(appearance) {
       <blockquote>${escapeHtml(appearance.argument.words)}</blockquote>
       <p>${escapeHtml(appearance.tag.context)}</p>
       <p class="reference-debate-return">
-        <a href="${escapeHtml(debateHref)}">Open debate scorecard: ${escapeHtml(debateNumberLabel(appearance.debate))} · ${escapeHtml(appearance.debate.title)}</a>
+        <a href="${escapeHtml(debateHref)}">Open debate scorecard: ${escapeHtml(debateNumberLabel(appearance.debate))} · ${renderDebateTitle(appearance.debate)}</a>
       </p>
     </article>
   `;

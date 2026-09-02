@@ -31,6 +31,17 @@ for (const [index, avatar] of interlocutorAvatars.entries()) {
 }
 
 for (const debate of debates) {
+  const idYear = Number(String(debate.id || "").match(/-((?:19|20)\d{2})$/)?.[1]);
+  if (!Number.isInteger(debate.year) || debate.year < 1900 || debate.year > 2099) {
+    errors.push(`${debate.id}: year must be an integer from 1900 through 2099`);
+  }
+  if (idYear !== debate.year) {
+    errors.push(`${debate.id}: year ${debate.year} must match the year in the debate ID`);
+  }
+  if (/\((?:19|20)\d{2}\)\s*$/.test(debate.title || "")) {
+    errors.push(`${debate.id}: title must not contain a trailing parenthesized year`);
+  }
+
   for (const side of [debate.sides?.pro, debate.sides?.con]) {
     if (side?.speaker && avatarsForSpeakerText(side.speaker).length === 0) {
       errors.push(`${debate.id}: ${side.speaker} must resolve to a registered interlocutor`);
@@ -79,6 +90,9 @@ requireIncludes("app pagination", app, 'class="pagination"');
 requireIncludes("app pagination", app, "const landingPager = paginatedItems");
 requireIncludes("app pagination", app, "pager: landingPager");
 requireIncludes("app landing cards", app, 'class="debate-title-link"');
+requireIncludes("app debate years", app, "function renderDebateYear(debate)");
+requireIncludes("app debate years", app, 'class="debate-title-year"');
+requireIncludes("app debate years", app, "renderDebateTitle(debate)");
 requireIncludes("app landing cards", app, 'class="card-interlocutor"');
 requireIncludes("app landing scorecard count", app, "Debates/Scorecards");
 requireIncludes("app search route", app, "renderSearch");
@@ -269,6 +283,9 @@ requireIncludes("rankings vertical section score chart", styles, ".section-score
 requireIncludes("rankings vertical section score bars", styles, "height: var(--bar-height);");
 requireIncludes("pagination", styles, ".pagination");
 requireIncludes("landing card links", styles, ".debate-title-link");
+requireIncludes("debate year styling", styles, ".debate-title-year");
+requireIncludes("debate year styling", styles, "transform: translateY(0.12em);");
+requireIncludes("debate year styling", styles, ".debate-hero h1 .debate-title-year");
 requireIncludes("landing card links", styles, ".card-interlocutor");
 requireIncludes("search page", styles, ".search-page");
 requireIncludes("search page", styles, ".search-hero h1");

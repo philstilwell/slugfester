@@ -4434,6 +4434,19 @@ a {
   text-decoration: none;
 }
 
+.debate-title-year {
+  display: inline-block;
+  margin-inline-start: 0.42em;
+  color: var(--muted);
+  font-size: 0.72em;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  transform: translateY(0.12em);
+}
+
 .debate-title-link:hover,
 .debate-title-link:focus-visible {
   color: var(--blue);
@@ -4743,6 +4756,10 @@ a {
   font-size: clamp(1.5rem, 3.9vw, 3.35rem);
   line-height: 1;
   overflow-wrap: anywhere;
+}
+
+.debate-hero h1 .debate-title-year {
+  font-size: clamp(0.92rem, 0.38em, 1.3rem);
 }
 
 .back-link {

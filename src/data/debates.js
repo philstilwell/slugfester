@@ -96848,6 +96848,24 @@ export const debates = [
 
 addMissingAiContributions(debates);
 
+function normalizeDebateYearMetadata(debate) {
+  const explicitYear = String(debate.year || "").match(/^(?:19|20)\d{2}$/)?.[0];
+  const titleYear = String(debate.title || "").match(/\(((?:19|20)\d{2})\)\s*$/)?.[1];
+  const idYear = String(debate.id || "").match(/-((?:19|20)\d{2})$/)?.[1];
+  const recordedYears = [...new Set([explicitYear, titleYear, idYear].filter(Boolean))];
+
+  if (recordedYears.length !== 1) {
+    throw new Error(
+      `${debate.id || "Unknown debate"}: expected one consistent debate year, found ${recordedYears.join(", ") || "none"}`
+    );
+  }
+
+  debate.year = Number(recordedYears[0]);
+  debate.title = String(debate.title || "").replace(/\s*\((?:19|20)\d{2}\)\s*$/, "").trim();
+}
+
+debates.forEach(normalizeDebateYearMetadata);
+
 export const publishedDebates = debates.filter(
   (debate) => !debate.draft && !debate.sections?.some((section) => section.__draft)
 );

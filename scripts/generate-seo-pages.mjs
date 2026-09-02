@@ -25,6 +25,7 @@ import {
   assessmentSeo,
   debatePath,
   debateSeo,
+  debateTitleWithYear,
   interlocutorPath,
   interlocutorSeo,
   landingSeo,
@@ -41,11 +42,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260901-newest-debate-copy-v1";
-const interlocutorAssetVersion = "20260901-newest-debate-copy-v1";
-const rankingsAssetVersion = "20260901-newest-debate-copy-v1";
-const debateAssetVersion = "20260901-newest-debate-copy-v1";
-const backendAssetVersion = "20260901-corpus-library-v1";
+const assetVersion = "20260901-debate-years-v1";
+const interlocutorAssetVersion = "20260901-debate-years-v1";
+const rankingsAssetVersion = "20260901-debate-years-v1";
+const debateAssetVersion = "20260901-debate-years-v1";
+const backendAssetVersion = "20260901-debate-years-v1";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -261,7 +262,7 @@ ${recent
     const url = absoluteUrl(debatePath(debate));
     const entryUpdated = `${debate.date}T12:00:00-04:00`;
     return `  <entry>
-    <title>${escapeXml(`Debate ${debate.number}: ${debate.title}`)}</title>
+    <title>${escapeXml(`Debate ${debate.number}: ${debateTitleWithYear(debate)}`)}</title>
     <id>${escapeXml(url)}</id>
     <link href="${escapeXml(url)}" rel="alternate" type="text/html"/>
     <updated>${escapeXml(entryUpdated)}</updated>
@@ -331,6 +332,7 @@ function debateSummary(debate) {
     id: debate.id,
     number: debate.number,
     title: debate.title,
+    year: debate.year,
     label: debate.label,
     date: debate.date,
     duration: debate.duration,
@@ -390,6 +392,7 @@ function referenceAppearance(debate, section, sideKey, argument, tag) {
       id: debate.id,
       number: debate.number,
       title: debate.title,
+      year: debate.year,
       label: debate.label,
       youtubeUrl: debate.youtubeUrl,
       sides: debate.sides
