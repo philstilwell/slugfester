@@ -2534,7 +2534,7 @@ function renderBackend() {
               <span>Recorded model work</span>
               <strong>≈83 hr</strong>
               <p>conservative aggregate compute estimate for the completed reassessment campaign</p>
-              <p class="backend-summary-stat-note">New debates require about 1.5 hours each to process and add.</p>
+              <p class="backend-summary-stat-note">Each new debate requires 1-2 hours to process and add.</p>
             </article>
           </div>
         </div>
