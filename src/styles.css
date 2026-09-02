@@ -1955,11 +1955,15 @@ a {
   text-underline-offset: 3px;
 }
 
-.rubric-extreme-move {
+.rubric-extreme-assessment {
   margin: 3px 0 0;
   padding-top: 10px;
-  color: #40524f;
   border-top: 1px solid rgba(38, 91, 105, 0.14);
+}
+
+.rubric-extreme-move {
+  margin: 0;
+  color: #40524f;
   font-size: 0.75rem;
   line-height: 1.46;
 }
@@ -1974,10 +1978,23 @@ a {
   text-transform: uppercase;
 }
 
+.rubric-extreme-move span .rubric-extreme-move-score {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  padding: 1px 5px;
+  color: var(--ink);
+  background: rgba(38, 91, 105, 0.1);
+  border-radius: 999px;
+  font-size: 0.59rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+  vertical-align: 1px;
+}
+
 .rubric-extreme-analysis {
   display: grid;
   gap: 9px;
-  margin-top: 2px;
+  margin-top: 10px;
   padding-top: 11px;
   border-top: 1px solid rgba(38, 91, 105, 0.14);
 }

@@ -42,11 +42,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260902-rubric-explanations-v2";
-const interlocutorAssetVersion = "20260902-rubric-explanations-v2";
-const rankingsAssetVersion = "20260902-rubric-explanations-v2";
-const debateAssetVersion = "20260902-rubric-explanations-v2";
-const backendAssetVersion = "20260902-rubric-explanations-v2";
+const assetVersion = "20260902-rubric-move-reasons-v3";
+const interlocutorAssetVersion = "20260902-rubric-move-reasons-v3";
+const rankingsAssetVersion = "20260902-rubric-move-reasons-v3";
+const debateAssetVersion = "20260902-rubric-move-reasons-v3";
+const backendAssetVersion = "20260902-rubric-move-reasons-v3";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -404,6 +404,7 @@ function sectionScoreExample(record, direction) {
     speaker: record.debate.sides[record.sideKey].speaker,
     score: record.score,
     representativeMove: representativeMove?.words || "",
+    representativeMoveScore: representativeMove?.score,
     scoreFeatures: critiqueScoreFeatures(representativeMove?.critique)
   };
 }

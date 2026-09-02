@@ -198,9 +198,9 @@ requireIncludes("app backend rubric examples accordion", app, '<details class="r
 requireIncludes("app backend rubric examples columns", app, 'class="rubric-extremes-grid"');
 requireIncludes("app backend rubric examples top", app, "Highest section-side scores");
 requireIncludes("app backend rubric examples bottom", app, "Lowest section-side scores");
-requireIncludes("app backend rubric example score explanation", app, "Why this score");
-requireIncludes("app backend rubric example score credit", app, "Credit earned");
-requireIncludes("app backend rubric example score limit", app, "Score limit");
+requireIncludes("app backend rubric move-score explanation", app, "Why this move received");
+requireIncludes("app backend rubric high-score features", app, "Score-raising features");
+requireIncludes("app backend rubric low-score features", app, "Score-lowering features");
 requireExcludes("app backend rubric examples accordion default", app, '<details class="rubric-extremes-accordion" open>');
 requireIncludes("app backend section score explanation", app, "multiplied by its previously locked importance");
 requireIncludes("app backend comprehensive score explanation", app, "The default final adjustment is zero");
@@ -392,6 +392,8 @@ requireIncludes("profile opponent heading spacing", styles, ".profile-opponents 
 requireIncludes("backend rubric evidence", styles, ".backend-page .backend-rubric-evidence");
 requireIncludes("backend rubric examples accordion", styles, ".rubric-extremes-accordion {");
 requireIncludes("backend rubric examples columns", styles, ".rubric-extremes-grid {");
+requireIncludes("backend rubric assessed move grouping", styles, ".rubric-extreme-assessment {");
+requireIncludes("backend rubric move score", styles, ".rubric-extreme-move-score {");
 requireIncludes("backend rubric example explanation", styles, ".rubric-extreme-analysis {");
 requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
