@@ -198,6 +198,9 @@ requireIncludes("app backend rubric examples accordion", app, '<details class="r
 requireIncludes("app backend rubric examples columns", app, 'class="rubric-extremes-grid"');
 requireIncludes("app backend rubric examples top", app, "Highest section-side scores");
 requireIncludes("app backend rubric examples bottom", app, "Lowest section-side scores");
+requireIncludes("app backend rubric example score explanation", app, "Why this score");
+requireIncludes("app backend rubric example score credit", app, "Credit earned");
+requireIncludes("app backend rubric example score limit", app, "Score limit");
 requireExcludes("app backend rubric examples accordion default", app, '<details class="rubric-extremes-accordion" open>');
 requireIncludes("app backend section score explanation", app, "multiplied by its previously locked importance");
 requireIncludes("app backend comprehensive score explanation", app, "The default final adjustment is zero");
@@ -389,6 +392,7 @@ requireIncludes("profile opponent heading spacing", styles, ".profile-opponents 
 requireIncludes("backend rubric evidence", styles, ".backend-page .backend-rubric-evidence");
 requireIncludes("backend rubric examples accordion", styles, ".rubric-extremes-accordion {");
 requireIncludes("backend rubric examples columns", styles, ".rubric-extremes-grid {");
+requireIncludes("backend rubric example explanation", styles, ".rubric-extreme-analysis {");
 requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");

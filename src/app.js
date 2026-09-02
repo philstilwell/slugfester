@@ -1,6 +1,6 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260902-rubric-examples-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260902-rubric-examples-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260902-rubric-examples-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260902-rubric-explanations-v2";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260902-rubric-explanations-v2";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260902-rubric-explanations-v2";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -33,7 +33,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260902-rubric-examples-v1";
+} from "./seo.js?v=20260902-rubric-explanations-v2";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -78,7 +78,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260902-rubric-examples-v1")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260902-rubric-explanations-v2")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -97,7 +97,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=20260902-rubric-examples-v1")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=20260902-rubric-explanations-v2")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -113,7 +113,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260902-rubric-examples-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260902-rubric-explanations-v2`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -128,7 +128,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260902-rubric-examples-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260902-rubric-explanations-v2`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1149,6 +1149,13 @@ function renderRubricExtremeExample(example, index, group) {
       <p class="rubric-extreme-speaker">${escapeHtml(example.speaker)}’s side</p>
       <a href="${escapeHtml(debatePath(example.debateId))}">Debate ${escapeHtml(example.debateNumber)}: ${renderDebateTitle(debate)}</a>
       ${example.representativeMove ? `<p class="rubric-extreme-move"><span>Representative assessed move</span>${escapeHtml(example.representativeMove)}</p>` : ""}
+      ${example.scoreFeatures?.strength || example.scoreFeatures?.limitation ? `
+        <div class="rubric-extreme-analysis">
+          <strong>Why this score</strong>
+          ${example.scoreFeatures.strength ? `<p><span>Credit earned</span>${escapeHtml(example.scoreFeatures.strength)}</p>` : ""}
+          ${example.scoreFeatures.limitation ? `<p><span>Score limit</span>${escapeHtml(example.scoreFeatures.limitation)}</p>` : ""}
+        </div>
+      ` : ""}
     </li>
   `;
 }

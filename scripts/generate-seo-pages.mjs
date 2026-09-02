@@ -42,11 +42,11 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260902-rubric-examples-v1";
-const interlocutorAssetVersion = "20260902-rubric-examples-v1";
-const rankingsAssetVersion = "20260902-rubric-examples-v1";
-const debateAssetVersion = "20260902-rubric-examples-v1";
-const backendAssetVersion = "20260902-rubric-examples-v1";
+const assetVersion = "20260902-rubric-explanations-v2";
+const interlocutorAssetVersion = "20260902-rubric-explanations-v2";
+const rankingsAssetVersion = "20260902-rubric-explanations-v2";
+const debateAssetVersion = "20260902-rubric-explanations-v2";
+const backendAssetVersion = "20260902-rubric-explanations-v2";
 
 function escapeHtml(value = "") {
   return String(value)
@@ -403,7 +403,34 @@ function sectionScoreExample(record, direction) {
     sectionTitle: record.section.title,
     speaker: record.debate.sides[record.sideKey].speaker,
     score: record.score,
-    representativeMove: representativeMove?.words || ""
+    representativeMove: representativeMove?.words || "",
+    scoreFeatures: critiqueScoreFeatures(representativeMove?.critique)
+  };
+}
+
+function critiqueScoreFeatures(value = "") {
+  const critique = String(value).replace(/\s+/g, " ").trim();
+  if (!critique) return { strength: "", limitation: "" };
+
+  const structuredStrength = critique.match(/Strongest feature:\s*(.*?)\s*Principal limitation:/i)?.[1];
+  const structuredLimitation = critique.match(/Principal limitation:\s*(.*?)\s*Live burden:/i)?.[1];
+  if (structuredStrength && structuredLimitation) {
+    return {
+      strength: structuredStrength.trim(),
+      limitation: structuredLimitation.trim()
+    };
+  }
+
+  const sentences = critique.match(/[^.!?]+(?:[.!?]+|$)/g)?.map((sentence) => sentence.trim()) || [];
+  const contrastIndex = sentences.findIndex((sentence) =>
+    /^(?:but\b|yet\b|still\b|however\b|the problem\b|the weakness\b|some\b.*\b(?:benefit|lack|remain))/i.test(sentence)
+  );
+  const strengthEnd = contrastIndex > 0 ? Math.min(contrastIndex, 2) : Math.min(sentences.length, 2);
+  const limitationStart = contrastIndex >= 0 ? contrastIndex : Math.max(0, sentences.length - 2);
+
+  return {
+    strength: sentences.slice(0, strengthEnd).join(" "),
+    limitation: sentences.slice(limitationStart, limitationStart + 3).join(" ")
   };
 }
 

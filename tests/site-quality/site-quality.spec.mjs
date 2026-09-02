@@ -133,6 +133,8 @@ test("the rubric quality check offers six closed-by-default section examples", a
   await expect(accordion).toHaveAttribute("open", "");
   await expect(accordion.locator(".rubric-extremes-column--top .rubric-extreme-card")).toHaveCount(3);
   await expect(accordion.locator(".rubric-extremes-column--bottom .rubric-extreme-card")).toHaveCount(3);
+  await expect(accordion.locator(".rubric-extreme-analysis")).toHaveCount(6);
+  await expect(accordion.locator(".rubric-extreme-analysis p")).toHaveCount(12);
   await expect(accordion).toContainText("section-side scores, not overall debate results");
 });
 
