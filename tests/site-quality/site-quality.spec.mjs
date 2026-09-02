@@ -1,5 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
+import { debateSummaries } from "../../src/data/debate-summaries.js";
 
 const representativeRoutes = [
   "/",
@@ -46,22 +47,36 @@ for (const route of [
   });
 }
 
+// Shared catalogue files grow with each published debate. Rebase the count and route bases
+// together after a deliberate review instead of reacting to every expected small increase.
+const catalogueBudget = {
+  baselineDebates: 237,
+  bytesPerAddedDebate: 5_000,
+  reviewAfterAddedDebates: 10
+};
+const addedDebates = Math.max(0, debateSummaries.length - catalogueBudget.baselineDebates);
+const catalogueGrowthAllowance = addedDebates * catalogueBudget.bytesPerAddedDebate;
+
+test("reviews the browser data baseline after ten added debates", () => {
+  expect(addedDebates).toBeLessThanOrEqual(catalogueBudget.reviewAfterAddedDebates);
+});
+
 const routeBudgets = [
-  { route: "/", dataBytes: 395_000, required: "debate-summaries.js" },
-  { route: "/rankings/", dataBytes: 445_000, required: "debate-analytics.js" },
+  { route: "/", baseDataBytes: 395_000, required: "debate-summaries.js" },
+  { route: "/rankings/", baseDataBytes: 445_000, required: "debate-analytics.js" },
   {
     route: "/debate/craig-oconnor-god-debate-2026/",
-    dataBytes: 480_000,
+    baseDataBytes: 480_000,
     required: "debate-details/craig-oconnor-god-debate-2026.js"
   },
   {
     route: "/reference/fallacy/equivocation/",
-    dataBytes: 485_000,
+    baseDataBytes: 485_000,
     required: "reference-appearances/fallacy-equivocation.js"
   }
 ];
 
-for (const { route, dataBytes, required } of routeBudgets) {
+for (const { route, baseDataBytes, required } of routeBudgets) {
   test(`stays within its browser data budget: ${route}`, async ({ page }) => {
     await openRenderedPage(page, route);
     const resources = await page.evaluate(() =>
@@ -78,7 +93,7 @@ for (const { route, dataBytes, required } of routeBudgets) {
 
     expect(loadedNames.some((name) => name.endsWith(required))).toBe(true);
     expect(loadedNames.some((name) => name.endsWith("/src/data/debates.js"))).toBe(false);
-    expect(loadedBytes).toBeLessThanOrEqual(dataBytes);
+    expect(loadedBytes).toBeLessThanOrEqual(baseDataBytes + catalogueGrowthAllowance);
   });
 }
 

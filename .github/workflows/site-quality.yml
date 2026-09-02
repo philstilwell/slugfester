@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: site-quality-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   accessibility-and-performance:
     runs-on: ubuntu-latest
@@ -20,6 +24,4 @@ jobs:
       - name: Install pinned browser-test tools without changing the assessment lockfile
         run: npm install --no-save --no-package-lock @playwright/test@1.62.1 @axe-core/playwright@4.13.0
       - run: npx playwright install --with-deps chromium
-      - run: npm run seo
-      - run: node scripts/validate-public-site.mjs
-      - run: npx playwright test
+      - run: npm run site:check

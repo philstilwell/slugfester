@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "python3 -m http.server 4174 --bind 127.0.0.1",
     "seo": "node scripts/generate-seo-pages.mjs",
+    "site:preflight": "npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep \"reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged\"",
+    "site:check": "npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test",
     "assessment:v2.1:build": "node scripts/build-calibration-benchmarks.mjs && node scripts/build-calibration-ledgers.mjs && node scripts/analyze-v2.1-pilot.mjs",
     "assessment:v2.1:check": "node scripts/validate-calibration-v2.1.mjs && node scripts/analyze-v2.1-pilot.mjs --check",
     "assessment:v2.1:complete-gate:check": "node scripts/validate-complete-gate.mjs",
