@@ -31,5 +31,6 @@ jobs:
         with:
           name: browser-test-failure-${{ github.run_id }}
           path: .playwright-results
+          include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 1
