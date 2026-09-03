@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0-standalone-source-lock",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-hash-locked",
+  "identity": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=1MwqFMO0Lqw",
+    "videoId": "1MwqFMO0Lqw",
+    "title": "AronRa vs Matt Slick | Bible Thumping Wingnut Show",
+    "channel": "BTWN News",
+    "eventYear": 2014,
+    "eventDate": "2014-11-23",
+    "venue": "Bible Thumping Wingnut Show remote video discussion"
+  },
+  "acquisition": {
+    "method": "YouTube audio recovered locally and transcribed as 11 hash-locked overlapping timestamp-preserving chunks; two bounded host-scope clips then received speaker diarization",
+    "language": "en",
+    "trackName": "English OpenAI timestamped transcription",
+    "captionKind": "paid-api-transcription",
+    "paidTranscriptionUsed": true,
+    "model": "whisper-1",
+    "scopeVerificationModel": "gpt-4o-transcribe-diarize",
+    "knownSuccessfulCostUsd": 0.6551,
+    "maximumPotentialCombinedCostUsd": 0.8091,
+    "automaticRetries": 0
+  },
+  "content": {
+    "eventCount": 2020,
+    "wordCount": 24086,
+    "firstStartMs": 0,
+    "lastStartMs": 6233680,
+    "maxEndMs": 6237680,
+    "sourceDurationMs": 6241268,
+    "maximumTranscriptGap": {
+      "gapMs": 4760,
+      "basis": "maximum normalized event-to-event gap within the full timestamped source"
+    },
+    "eventsNonempty": true,
+    "eventsChronological": true,
+    "timestampCoverageComplete": true,
+    "speakerLabelsAvailable": false,
+    "speakerAttributionReviewRequired": true
+  },
+  "participants": {
+    "pro": "Matt Slick",
+    "con": "Aron Ra",
+    "moderators": [
+      "Tim, the Bible Thumping Wingnut host"
+    ],
+    "substantiveAdvocates": 2,
+    "moderatorAdvancedIndependentArgument": true,
+    "assessedDebateWindowMs": {
+      "start": 191600,
+      "end": 5129640
+    },
+    "dyadicGatePassed": true,
+    "basis": "The program explicitly assigns the exchange to Aron Ra and Matt Slick while other participants remain silent. Tim makes two incidental Christian-aligned interventions, but both duplicate epistemic and faith lines Slick independently develops, conservatively occupy 4.0357307757733836% of the assessed window, introduce no distinct side or unique load-bearing route, and are fully excluded together with their directly dependent replies under the frozen primary-speaker exception.",
+    "primarySpeakerScopeException": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "assessedWindow": {
+        "startMs": 191600,
+        "endMs": 5129640,
+        "durationMs": 4938040
+      },
+      "maximumHostAdvocacyShare": 0.05,
+      "primarySpeakers": {
+        "pro": "Matt Slick",
+        "con": "Aron Ra"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Tim",
+          "role": "host"
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "host-advocacy-01",
+          "kind": "host-advocacy",
+          "speaker": "Tim",
+          "startMs": 1666000,
+          "endMs": 1744950,
+          "durationMs": 78950,
+          "summary": "Tim leads a challenge about dream or simulation skepticism by paraphrasing Aron Ra's earlier video and asking whether experience could be unreal.",
+          "burdenImpactRationale": "This conservative cross-talk block duplicates Slick's independently developed skepticism about Aron Ra's claimed knowledge and continuity; removing it leaves both central burdens intact.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "dependent-response-01",
+          "kind": "dependent-response",
+          "speaker": "Aron Ra",
+          "startMs": 1687826,
+          "endMs": 1734750,
+          "durationMs": 46924,
+          "summary": "Aron Ra directly answers Tim by treating dream, Matrix, and brain-in-a-vat possibilities as irrelevant to the stable rules of experienced reality.",
+          "burdenImpactRationale": "The answer depends on Tim's excluded challenge, while Aron Ra develops his broader evidential standard independently elsewhere; excluding it avoids asymmetric credit.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-advocacy-02",
+          "kind": "host-advocacy",
+          "speaker": "Tim",
+          "startMs": 3414700,
+          "endMs": 3535036,
+          "durationMs": 120336,
+          "summary": "Tim argues through a sustained cross-talk exchange that relying on researchers' reports and integrity requires faith when Aron Ra has not personally repeated every test.",
+          "burdenImpactRationale": "This conservative host-led block repeats Slick's independently stated attempt to classify Aron Ra's confidence and reliance on evidence as faith; it creates no third burden route.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "dependent-response-02",
+          "kind": "dependent-response",
+          "speaker": "Aron Ra",
+          "startMs": 3444658,
+          "endMs": 3617960,
+          "durationMs": 173302,
+          "summary": "Aron Ra directly answers Tim by separating evidence-based trust from faith and describing how he compares researchers' work with his own prior investigation.",
+          "burdenImpactRationale": "The reply is prompted by Tim's excluded advocacy and overlaps its cross-talk, while equivalent evidential-method claims remain available from Aron Ra's independent exchanges with Slick.",
+          "uniqueLoadBearingArgument": false
+        }
+      ]
+    }
+  },
+  "format": {
+    "hostIntroduction": "00:00:00-00:03:11.600",
+    "assessedDiscussion": "00:03:11.600-01:25:29.640",
+    "excludedHostLedExchangeOne": "00:27:46.000-00:29:04.950",
+    "excludedHostLedExchangeTwo": "00:56:54.700-00:58:55.036",
+    "excludedDependentReplyOne": "00:28:07.826-00:28:54.750",
+    "excludedDependentReplyTwo": "00:57:24.658-01:00:17.960",
+    "postDebateDiscussion": "01:25:29.640-01:44:01.268"
+  },
+  "hashes": {
+    "sourceMediaSha256": "f0153f00aa679aa22decbe8c290976ae80dfe925cc40bf3675d17b13c4e95487",
+    "sourceMetadataSha256": "c173906f68a6fc09e90a0db6a54629fe849f17c85f87b143c53b78269a1b0655",
+    "rawTranscriptSha256": "ae13209ef022d09eb4599a369c956d8ca674dcb8925c4500751cd766281a4a39",
+    "normalizedEventsSha256": "308fc3bec6c0667251f585ef332a04ccc7bb7ce649b05034fb32c3c2a40997d6",
+    "transcriptSha256": "aebd0c47e89a235647b47255706803db69869af024cf13f4bf2b33ded23beda2",
+    "captionManifestSha256": "4ff24c1228e46bbe6f0199655760e317b229efffcb70cefcc7ac1c51014ba194",
+    "sourceRecoveryPlanSha256": "15580d1e6adaffed26b32899511e2188f449baa709f12f8e48122013503765f2",
+    "sourceRecoveryProgressSha256": "0cb2356c0b69fe908693c695dfe799e32ebe8a583ccbec8086acdb4e98635ef2",
+    "sourceBoundaryAuditSha256": "f1c3867c9b35596a078223fb2680bac7aebd258b41949ef895d56f946745f125",
+    "scopeClipOneSha256": "3accdc008a48359bf4791562933a579868513ed1446e978e3555401b07bea525",
+    "scopeClipTwoSha256": "3b5e457eccc77fde616047386ca41b3cc3c9c714b34459272bd706320cb3e99f",
+    "scopeDiarizationOneSha256": "d7441c60021e095b5b9e32c77676645520f10f6b711c27972b9a570e559bcd66",
+    "scopeDiarizationTwoSha256": "baac1dda3b521cbf55a60a3ce98ea8c42d4fdc077a26fdd3f21e42adb5469acd"
+  },
+  "duplicateAudit": {
+    "productionDebateCountBeforeAddition": 242,
+    "canonicalUrlUnique": true,
+    "videoIdUnique": true,
+    "debateIdUnique": true,
+    "debateNumberUnique": true,
+    "identityDuplicateFound": false,
+    "distinctExistingSpeakerDebates": "The site contains other appearances by both Matt Slick and Aron Ra, but no record uses this video ID, canonical URL, debate ID, debate number, or this 2014 Bible Thumping Wingnut Show exchange."
+  }
+}

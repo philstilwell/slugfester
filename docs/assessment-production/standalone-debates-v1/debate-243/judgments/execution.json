@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 243,
+  "debateId": "aron-ra-slick-christianity-2014",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two fresh built-in isolated subagents per launch, with explicit score-blind read boundaries and disjoint output paths; the first launch failed before producing content and the authorized recovery launch supplied both accepted outputs",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "f7c11777712c795bf4d36bea4246dace11a8dc24cc01a58f33b255eb1e5f412b",
+    "inventorySha256": "b255850fb495752c6662a40f7ce72446168531b1d54a60015b29b3056db3009f",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 2,
+    "retryCountPerPass": 1,
+    "directIncrementalCostUsd": 0,
+    "preservedTransportFailures": [
+      "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-a/execution-attempt-1.json",
+      "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-b/execution-attempt-1.json"
+    ]
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-a/output.json",
+      "outputSha256": "9e00fb5920f58ef9fed20dfef6d1591396e05df0a43d164b790e1d3dd53e9773",
+      "outputBytes": 114778,
+      "judgmentCount": 43,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 2,
+      "retryCount": 1,
+      "acceptedAttempt": 2,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-a/output.json"
+      ]
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-b/output.json",
+      "outputSha256": "b350db86b20048221ac296673019b41331dbcd9ca18e65b641528cede8538321",
+      "outputBytes": 94078,
+      "judgmentCount": 43,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 2,
+      "retryCount": 1,
+      "acceptedAttempt": 2,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-b/output.json"
+      ]
+    }
+  ],
+  "completedAt": "2026-09-03T15:10:00Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "excludedHostMaterialSeenByModelsOnlyAsFrozenAbsenceRule": true,
+    "rerunPermitted": false
+  }
+}

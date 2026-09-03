@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "243",
+  "debateId": "aron-ra-slick-christianity-2014",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/inventory/inventory.json",
+    "sha256": "b255850fb495752c6662a40f7ce72446168531b1d54a60015b29b3056db3009f"
+  },
+  "source": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=1MwqFMO0Lqw",
+    "description": "The public YouTube audio was transcribed in 11 timestamp-preserving Whisper chunks; two additional diarized clips bounded the Tim-led primary-speaker exclusions before inventory selection.",
+    "sourceAudioPath": ".assessment-cache/audio/1MwqFMO0Lqw/source.m4a",
+    "sourceAudioSha256": "f0153f00aa679aa22decbe8c290976ae80dfe925cc40bf3675d17b13c4e95487",
+    "sourceDurationSeconds": 6241.26839,
+    "ignoredLocalSourceRetained": true
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "transcription": {
+    "primaryModel": "whisper-1",
+    "scopeVerificationModel": "gpt-4o-transcribe-diarize",
+    "timestampPreservingChunks": 11,
+    "scopeVerificationClips": 2,
+    "successfulSequentialCalls": 13,
+    "automaticRetries": 0
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsdMaximum": 0.8091,
+    "paidCallsAttempted": 13,
+    "successfulPaidCalls": 13,
+    "uncertainOrFailedPaidCalls": 0,
+    "knownSuccessfulCallCostUsd": 0.6551,
+    "maximumPotentialCombinedCostUsd": 0.8091,
+    "pricingBasis": "Recorded successful source-transcription and scope-diarization calls; no successful call was repeated."
+  },
+  "audit": {
+    "triggeredMoveIdsMatchCompletedChecksExactlyAndInOrder": true,
+    "allRequiredChecksComplete": true,
+    "noSuccessfulCallRepeated": true,
+    "lockedMovesReviewed": 43,
+    "highAttributionConfidenceMoves": 43,
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0,
+    "primarySpeakerScopeClipsUsedOnlyToFreezeExclusions": true
+  }
+}

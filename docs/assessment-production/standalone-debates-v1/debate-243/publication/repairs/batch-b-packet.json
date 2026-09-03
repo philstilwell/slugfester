@@ -1,0 +1,1523 @@
+{
+  "schemaVersion": "1.0-standalone-publication-depth-repair-batch-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-field-disjoint-repair-input",
+  "debateNumber": "243",
+  "debateId": "aron-ra-slick-christianity-2014",
+  "cause": "The preserved first publication output passed individual length and structure bounds but failed the corpus boilerplate gate, and its descriptions used repeated generic suffixes rather than complete source-specific explanations.",
+  "immutableSource": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/raw-prose-materialized-1.json",
+    "sha256": "e2ab4b75a46f99f6e1582cfcc3306a717f50529a48a3840e4cef0e1156deec4b",
+    "bytes": 82160
+  },
+  "contract": {
+    "exactlyOneAttemptPerShard": true,
+    "maximumWritableLeafFieldsPerShard": 2,
+    "outputEveryAssignedShardExactlyOnceInPacketOrder": true,
+    "onlyWordsAndCritiqueMayChange": true,
+    "wordsTargetWords": [
+      22,
+      28
+    ],
+    "wordsMustStateLockedClaimSupportingReasonAndInferenceWithoutTruncation": true,
+    "critiqueWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueExactSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueExactlyFourSentences": true,
+    "critiqueMustExplainActualInferenceEvidenceLimitationAndRemainingBurden": true,
+    "critiqueMustUseExactFinalDimensionsAndScoreWithoutRecalculation": true,
+    "lexicalVariationAcrossAssignedShardsRequired": true,
+    "avoidGenericPhrases": "Do not reuse stock language such as central evidential bridge, immediate exchange, publicly auditable standard, preserving the final differentiated judgment, source-specific claim, or connect this transcript claim.",
+    "noInventedEvidencePremisesTagsOrScoreChanges": true
+  },
+  "outputShape": {
+    "schemaVersion": "1.0-standalone-publication-depth-repair-batch-output",
+    "status": "complete",
+    "debateNumber": "243",
+    "debateId": "aron-ra-slick-christianity-2014",
+    "batch": "copied from packet",
+    "shards": "Array in packet order of {shardId,moveId,writableFields:[{path,value},{path,value}],audit:{writableFieldCount:2,attempts:1,retries:0}}"
+  },
+  "batch": "b",
+  "shardCount": 21,
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-243/publication/repairs/batch-b-output.json",
+  "shards": [
+    {
+      "shardId": "b-01",
+      "moveId": "aron-biblical-god-denial",
+      "sectionId": "biblical-god-fiction-and-warranted-belief",
+      "sectionTitle": "The biblical God, fiction, and warranted belief",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "pathPrefix": "candidate.sections[0].exchanges[0].con",
+      "writableFields": [
+        "candidate.sections[0].exchanges[0].con.words",
+        "candidate.sections[0].exchanges[0].con.critique"
+      ],
+      "immutable": {
+        "score": 54,
+        "moveKind": "constructive",
+        "proposition": "The biblical God can be known not to exist even if the historicity of Jesus remains less certain.",
+        "inference": "Aron Ra presents his move from agnostic atheism to a definite denial of the Bible's God as the conclusion of an epistemological reassessment, while distinguishing it from his probabilistic view of Jesus.",
+        "sourceSpan": {
+          "startEvent": 25,
+          "endEvent": 41,
+          "startMs": 191600,
+          "endMs": 284360,
+          "excerpt": "Well, thank you. One minor correction, while I am convinced that Moses certainly did not exist, there's still some possibility I suppose that Jesus might have but I'm still evaluating that. It would seem that if there is or if there was a Jesus at best, he was a composite of multiple different characters. I honestly don't think that if you had a time machine that you would ever be able to find any one person you would be able to say was the historic Jesus but if you could find the historic Jesus then I think at best we would be able to just find him as a faith healer, really no different than any of the kind of faith healers we have wandering about now. He was just taking advantage of a different type of situation and demographic in that time but I think probably there was no historic Jesus. On the topic that they brought me to Arizona, they don't usually tell me what to talk about when they invite me to speak someplace although I'll have a clue whether it's going to be science, is it going to be secularism, is it going to be skepticism. In this case they specified that it was to be epistemology. They said they wanted me to talk about what we can and cannot say we know and I took an opportunity with that because as I said I had actually changed my position on this. I was an agnostic atheist when I began all of this a few years ago and I had since been convinced otherwise that it is possible to know that at least in terms of the Bible God that for certain that does not exist."
+        },
+        "respondsToIds": [],
+        "responseComponents": [],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 58,
+            "rationale": "The inference in “The biblical God can be known not to exist even if the historicity of Jesus remains less certain.” is partly coherent but depends on a substantial unstated or doubtful step.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The excerpt states the biblical-God denial but supplies no connecting argument there, so option-b better reflects the substantial missing logical bridge."
+          },
+          "evidenceWarrant": {
+            "value": 38,
+            "rationale": "The transcript support for this move is largely asserted without adequate public warrant, considering the stated basis for “The biblical God can be known not to exist even if the historicity of Jesus remains less certain.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The excerpt announces certainty about the biblical God without presenting its supporting evidence, making option-b's lower warrant assessment the closer fit."
+          },
+          "responsiveness": {
+            "value": 62,
+            "rationale": "As performed in the exchange, this move touches the dispute but redirects much of the burden concerning “The biblical God can be known not to exist even if the historicity of Jesus remains less certain.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "This opening passage mainly states Aron Ra's position and discusses Jesus, rather than answering a developed live objection, as option-b recognizes."
+          },
+          "relevanceBurden": {
+            "value": 55,
+            "rationale": "For the locked con burden, this move is related yet more peripheral or burden-shifting than decisive, through its claim that “The biblical God can be known not to exist even if the historicity of Jesus remains less certain.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Although relevant to the motion, the excerpt only announces the denial and does not yet establish it, so option-b better measures its burden contribution."
+          },
+          "precisionClarity": {
+            "value": 66,
+            "rationale": "The move’s key claim is understandable, though important terms or scope remain loose, especially in the phrasing of “The biblical God can be known not to exist even if the historicity of Jesus remains less certain.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The distinction between uncertainty about Jesus and certainty about the biblical God is clear, but the scope of the latter remains loose, favoring option-b."
+          },
+          "calibrationCharity": {
+            "value": 48,
+            "rationale": "The performance is markedly overstated or dependent on caricaturing the alternative while advancing “The biblical God can be known not to exist even if the historicity of Jesus remains less certain.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Claiming certain nonexistence without the supporting case in this excerpt is markedly overstated; option-b best captures that calibration problem."
+          }
+        },
+        "currentWords": "The biblical God can be known not to exist even if the historicity of Jesus remains less certain; this constructive directly challenges Christianity’s evidential foundation under the debated.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that The biblical God can be known not to exist even if the historicity of, and precision and clarity at 66 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 38 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Aron Ra must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 54 integrates logical coherence 58, evidence warrant 38, responsiveness 62, burden relevance 55, precision and clarity 66, and calibration and charity 48, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-02",
+      "moveId": "aron-fiction-definition-and-impossibility",
+      "sectionId": "biblical-god-fiction-and-warranted-belief",
+      "sectionTitle": "The biblical God, fiction, and warranted belief",
+      "side": "con",
+      "speaker": "Aron Ra",
+      "pathPrefix": "candidate.sections[0].exchanges[1].con",
+      "writableFields": [
+        "candidate.sections[0].exchanges[1].con.words",
+        "candidate.sections[0].exchanges[1].con.critique"
+      ],
+      "immutable": {
+        "score": 71,
+        "moveKind": "reply",
+        "proposition": "Nonexistence can be warranted when a character is definitionally fictional or its described properties are impossible.",
+        "inference": "The James Bond and Godzilla analogies propose two routes to warranted denial—fictional provenance and conflict with established physical constraints.",
+        "sourceSpan": {
+          "startEvent": 53,
+          "endEvent": 59,
+          "startMs": 340480,
+          "endMs": 378480,
+          "excerpt": "Exactly. How do you know that there was no James Bond for example? Can you know? I suppose I should ask that first. Can you know that there was no James Bond? You mean can I know that there's no fictional character named James Bond? Can you know that that spy number 007 does not exist? Can you know that Indiana Jones doesn't exist? The reason I chose cartoons is because I want to show something that is obviously fictional in that it is also impossible. For example, Godzilla. This was an example that I brought up in my presentation. How can we know that there is no Godzilla?"
+        },
+        "respondsToIds": [
+          "slick-nonexistence-needs-account"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "slick-nonexistence-needs-account",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 79,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 70,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 75,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 68,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Nonexistence can be warranted when a character is definitionally fictional or its described properties are impossible; this reply directly challenges Christianity’s evidential foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Nonexistence can be warranted when a character is definitionally fictional or its described properties, and responsiveness at 79 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 59 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Aron Ra must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 71 integrates logical coherence 74, evidence warrant 59, responsiveness 79, burden relevance 70, precision and clarity 75, and calibration and charity 68, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-03",
+      "moveId": "slick-science-presupposes-logic-and-uniformity",
+      "sectionId": "faith-science-and-epistemic-foundations",
+      "sectionTitle": "Faith, science, and epistemic foundations",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[1].exchanges[0].pro",
+      "writableFields": [
+        "candidate.sections[1].exchanges[0].pro.words",
+        "candidate.sections[1].exchanges[0].pro.critique"
+      ],
+      "immutable": {
+        "score": 78,
+        "moveKind": "reply",
+        "proposition": "Scientific practice presupposes the validity of logic and the uniformity of nature without establishing either by the scientific method.",
+        "inference": "Because using the method to validate its own logical and uniform foundations would assume what it seeks to prove, science contains a trust-like commitment not generated by experiment.",
+        "sourceSpan": {
+          "startEvent": 130,
+          "endEvent": 143,
+          "startMs": 627000,
+          "endMs": 681000,
+          "excerpt": "So, you have faith that the laws of logic will work, and always work? Wrong. You're misdefining faith. Hold on a second. Hold on, hold on, hold on. If you're the one who's not a man of faith, but I am, and you're going to tell me how to define faith, and maybe that's, you know, a misappropriation of our respective categories, I understand what science is, and science is based on a measure of faith. You have to presuppose the validity of the laws of logic. You have to presuppose the uniformity of nature. Yes, you do. You cannot use the scientific method to validate either one. And don't tell me you can. You beg the question. You beg the question when you assume the uniformity of nature. You assume its uniformity, and then you base a scientific method on the uniformity. But you cannot test it via the scientific method and establish its truth. You make these faith assertions all the time."
+        },
+        "respondsToIds": [
+          "aron-science-requires-evidential-constraint"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-science-requires-evidential-constraint",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 81,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 79,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 71,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Scientific practice presupposes the validity of logic and the uniformity of nature without establishing either by the scientific method; this reply directly supports Christianity’s rational foundation under the.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that Scientific practice presupposes the validity of logic and the uniformity of nature without establishing, and responsiveness at 83 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 69 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 78 integrates logical coherence 80, evidence warrant 69, responsiveness 83, burden relevance 81, precision and clarity 79, and calibration and charity 71, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-04",
+      "moveId": "slick-future-uniformity-challenge",
+      "sectionId": "faith-science-and-epistemic-foundations",
+      "sectionTitle": "Faith, science, and epistemic foundations",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[1].exchanges[1].pro",
+      "writableFields": [
+        "candidate.sections[1].exchanges[1].pro.words",
+        "candidate.sections[1].exchanges[1].pro.critique"
+      ],
+      "immutable": {
+        "score": 83,
+        "moveKind": "reply",
+        "proposition": "Past observations cannot prove that the universe will continue behaving uniformly.",
+        "inference": "If scientific prediction depends on future uniformity that cannot itself be exhaustively tested in advance, a residual foundational commitment remains.",
+        "sourceSpan": {
+          "startEvent": 174,
+          "endEvent": 178,
+          "startMs": 780000,
+          "endMs": 807000,
+          "excerpt": "You have faith that the universe is always going to be the same way. Show me how you've tested that the universe will always behave in the same way. I already gave you demonstrations of how science works opposite of faith. Hold on a sec. Aaron, show me how you've tested that the universe is always going to act the same way so that you can trust a scientific method all the time."
+        },
+        "respondsToIds": [
+          "aron-religious-faith-assumed-without-reason"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-religious-faith-assumed-without-reason",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The inference in “Past observations cannot prove that the universe will continue behaving uniformly.” is well structured and survives the immediate logical pressure.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The demand correctly exposes that past testing cannot deductively establish all future uniformity, and the immediate inferential challenge is well formed."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The transcript support for this move is meaningful but incomplete on sources, alternatives, or verification, considering the stated basis for “Past observations cannot prove that the universe will continue behaving uniformly.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The conceptual limit on proving future uniformity is meaningfully supported by the form of the challenge, though it does not establish every further claim."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "As performed in the exchange, this move directly meets the strongest live challenge at its decisive point concerning “Past observations cannot prove that the universe will continue behaving uniformly.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick directly targets Aron Ra's claim that every scientific commitment can be tested, making option-b's very high responsiveness rating appropriate."
+          },
+          "relevanceBurden": {
+            "value": 84,
+            "rationale": "For the locked pro burden, this move materially advances the burden without fully completing it, through its claim that “Past observations cannot prove that the universe will continue behaving uniformly.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The uniformity challenge materially supports the pro side's claim that scientific practice includes foundational commitments, as option-b recognizes."
+          },
+          "precisionClarity": {
+            "value": 84,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Past observations cannot prove that the universe will continue behaving uniformly; this reply directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Past observations cannot prove that the universe will continue behaving uniformly, and responsiveness at 90 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 72 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 83 integrates logical coherence 86, evidence warrant 72, responsiveness 90, burden relevance 84, precision and clarity 84, and calibration and charity 82, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-05",
+      "moveId": "slick-logic-cannot-validate-itself-noncircularly",
+      "sectionId": "faith-science-and-epistemic-foundations",
+      "sectionTitle": "Faith, science, and epistemic foundations",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[1].exchanges[2].pro",
+      "writableFields": [
+        "candidate.sections[1].exchanges[2].pro.words",
+        "candidate.sections[1].exchanges[2].pro.critique"
+      ],
+      "immutable": {
+        "score": 82,
+        "moveKind": "reply",
+        "proposition": "The laws of logic cannot be proven by a method that already relies on logic without circularity.",
+        "inference": "Demanding a non-question-begging validation exposes a foundational limit on evidential demonstration and supports Slick's broader analogy to faith.",
+        "sourceSpan": {
+          "startEvent": 210,
+          "endEvent": 242,
+          "startMs": 911000,
+          "endMs": 1007000,
+          "excerpt": "Really? What's the evidence that the laws of logic are true? Okay, again, you're trying to change it away because you made an indefensible statement, and you're now trying to pin it on me. Wait, wait, wait. You're the one who said I'm responding to you. I'm trying to show you that your science is based, in a small measure, on faith. You have faith that the laws of logic are consistent. You have faith in your theory to prove that science is in no way based on faith at all. And I have the demonstrations that can prove that. That's just not true. That's just not true. Don't you understand that? Don't you understand that science doesn't base on faith? Yes, I understand that. Okay, prove to me the laws of logic are true without using the logic of logic and then begging the question. Go ahead. Based on that. Why change the subject from what it is? You made a statement. Aaron, Aaron, Aaron, Aaron. Aaron, Aaron, Aaron. It's not what you're saying. It's R-N. R-N. R-N. I'm trying to show you, but you don't want to give in. Of course I don't want to give in. I can't confess to things that are wrong. It's logically true what I'm saying. No, it's not true what you're saying. Answer the question. Answer what question? I was answering the question. You have faith that the laws of logic are universally true, but you can't test them. You have faith that they are. You assume their validity. I don't have faith. The scientific method is based in part on the laws of logic. So tell me how you've used the scientific method to determine the validity of the laws of logic without begging the question."
+        },
+        "respondsToIds": [
+          "aron-religious-faith-assumed-without-reason"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-religious-faith-assumed-without-reason",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 78,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "The laws of logic cannot be proven by a method that already relies on logic without circularity; this reply directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that The laws of logic cannot be proven by a method that already relies on, and logical coherence at 87 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 72 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 82 integrates logical coherence 87, evidence warrant 72, responsiveness 85, burden relevance 83, precision and clarity 83, and calibration and charity 78, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-06",
+      "moveId": "slick-personal-continuity-cannot-be-proved",
+      "sectionId": "faith-science-and-epistemic-foundations",
+      "sectionTitle": "Faith, science, and epistemic foundations",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[1].exchanges[3].pro",
+      "writableFields": [
+        "candidate.sections[1].exchanges[3].pro.words",
+        "candidate.sections[1].exchanges[3].pro.critique"
+      ],
+      "immutable": {
+        "score": 61,
+        "moveKind": "reply",
+        "proposition": "A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories.",
+        "inference": "If ordinary self-knowledge exceeds what documents and immediate testing can strictly prove, evidence-based agents also rely on assumptions outside direct scientific verification.",
+        "sourceSpan": {
+          "startEvent": 427,
+          "endEvent": 525,
+          "startMs": 1466840,
+          "endMs": 1664480,
+          "excerpt": "Prove to me you're the same person you were a week ago. And prove to yourself that you were. That you're the same person, the exact same person. And not just created five minutes ago with all these memories and stuff. Prove to me the continuity, or prove to yourself the continuity, of your own existence from a week ago to now. So, what you're saying is that your argument is that everything could be an illusion and I could have been created a week ago. Right? That's what you're telling me now? I didn't say that. I didn't say that. I asked you to demonstrate the continuity. You can't prove it, can you? You assume. You assume you're the same person. You can't prove it. You assume. You assume you're the same person you were a week ago. You can't ask a question from a guy who won't answer the question. You don't get it. You don't get it. I'm surprised you're using these arguments. I'm not using an argument. I'm inquiring. I know, not a very good one. I am trying to ask you what your argument is, and you keep interrupting me until you get a clarification. Well, I can show you. Laughing as if you've got an upper hand is not helping you. This is too easy to see through. Now, are you asking me to prove that I existed a week ago against the alternate possibility, as you presented, that I might have been created with false memories just a week ago? Is that really what you're asking me? I asked you to prove to yourself that you're the same person you were a week ago. Okay. And the option is, the alternate possibility that you want me to consider is that, in a sense, it's not real, that everything is an illusion, that I was created in a series of illusions a week ago. Is that not what you're telling me? No. It says you can't prove it. If I didn't exist a week ago, what's the alternate option that I need to consider? I asked you to prove to yourself that you're the same person you were a week ago. I didn't ask you to prove it to me. I mean, I did. I corrected it to you. Regardless who I'm proving it to. Regardless who I'm proving it to. What's the alternate hypothesis that I need to consider? All right, let me finish my statement. Since you can't prove to yourself... I'll let you create a new statement. Hold on, hold on. Why is an alternative necessary, Aaron? Hold on, let me finish this guy. Okay, well, you can't finish me. Yes, I can. No, you can't. Yes, I can. You keep interrupting. Okay, I will let you finish again. You can't prove to me or anybody else, you can't prove it on faith. No, I can prove it. Prove it, prove it. Okay, I have to have an alternate possibility to consider. You have to present what it is. No, you tell me what the alternative is. What is it? I don't know. Don't do the Dillahunty fallacy. It's either another option. Don't say it. I have identification that shows my age. I can show you any number of documents that show that I own this house. What kind of documentation do I need to show? Documentation? I didn't ask you. I asked you. You have to prove it to me and prove it to yourself. So you look at your ID, your birth certificate, does that prove that you're the same person you were back then? Well, of course it does. Unless there's some other possibility."
+        },
+        "respondsToIds": [
+          "aron-scientific-method-self-corrects"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-scientific-method-self-corrects",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "On logical structure, this is mixed but useful for the transcript claim that “A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories.” A material bridge is asserted, compressed, or left without a sufficient inferential defense.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The skeptical scenario does illustrate a limit on strict proof, but the move equivocates between proof and ordinary warranted belief, fitting option-a."
+          },
+          "evidenceWarrant": {
+            "value": 52,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 58,
+            "rationale": "On response to the live issue, this is weak for the transcript claim that “A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories.” It only partly meets the opponent's live point or shifts attention to a weaker adjacent issue.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The personal-continuity thought experiment only indirectly bears on whether scientific confidence counts as faith and repeatedly avoids Aron's evidential answer."
+          },
+          "relevanceBurden": {
+            "value": 55,
+            "rationale": "On relevance to the assigned burden, this is weak for the transcript claim that “A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories.” It bears on the topic but does not fully discharge the linked burden or reaches beyond its support.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The scenario bears on foundational assumptions but does not establish that Christian faith is comparably warranted, so option-a's limited relevance is preferable."
+          },
+          "precisionClarity": {
+            "value": 66,
+            "rationale": "The move’s key claim is understandable, though important terms or scope remain loose, especially in the phrasing of “A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Despite repeated interruptions, the requested proof of continuity against recent creation is understandable, while its exact notion of proof remains loose."
+          },
+          "calibrationCharity": {
+            "value": 62,
+            "rationale": "On calibration and charitable framing, this is weak for the transcript claim that “A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories.” The move overstates its reach, understates alternatives, or uses a less charitable reconstruction than warranted.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The move treats inability to defeat a radical skeptical scenario as reliance on faith, overstating what follows from the exchange and favoring option-a."
+          }
+        },
+        "currentWords": "A person cannot prove the continuity of his own identity against the possibility of recent creation with apparent memories; this reply directly supports Christianity’s rational foundation under the.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that A person cannot prove the continuity of his own identity against the possibility of, and logical coherence at 70 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 52 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 61 integrates logical coherence 70, evidence warrant 52, responsiveness 58, burden relevance 55, precision and clarity 66, and calibration and charity 62, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-07",
+      "moveId": "slick-god-precondition-for-intelligibility",
+      "sectionId": "transcendence-divine-attributes-and-evidence",
+      "sectionTitle": "Transcendence, divine attributes, and evidence",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[2].exchanges[0].pro",
+      "writableFields": [
+        "candidate.sections[2].exchanges[0].pro.words",
+        "candidate.sections[2].exchanges[0].pro.critique"
+      ],
+      "immutable": {
+        "score": 57,
+        "moveKind": "constructive",
+        "proposition": "God is a necessary precondition for the intelligibility and consistency of the universe.",
+        "inference": "Slick offers the Christian God as the ground that explains stable physical laws, logic, and induction rather than treating their reliability as brute.",
+        "sourceSpan": {
+          "startEvent": 706,
+          "endEvent": 714,
+          "startMs": 2049260,
+          "endMs": 2073220,
+          "excerpt": "How do you know that the laws of physics won't change five seconds from now? How do you know that you were the same person? God is a necessary precondition for the intelligibility and consistency of the universe. You don't know. Have you ever read the problem of induction? You ever studied the problem of induction? What did you just say about God? God is a necessary precondition for all of this intelligibility. I can say the reason the universe is different is because of the reason."
+        },
+        "respondsToIds": [],
+        "responseComponents": [],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 62,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 39,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 73,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 68,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 49,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "God is a necessary precondition for the intelligibility and consistency of the universe; this constructive directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that God is a necessary precondition for the intelligibility and consistency of the universe, and burden relevance at 73 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 39 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 57 integrates logical coherence 62, evidence warrant 39, responsiveness 57, burden relevance 73, precision and clarity 68, and calibration and charity 49, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-08",
+      "moveId": "slick-defines-noncontingent-transcendent-god",
+      "sectionId": "transcendence-divine-attributes-and-evidence",
+      "sectionTitle": "Transcendence, divine attributes, and evidence",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[2].exchanges[1].pro",
+      "writableFields": [
+        "candidate.sections[2].exchanges[1].pro.words",
+        "candidate.sections[2].exchanges[1].pro.critique"
+      ],
+      "immutable": {
+        "score": 75,
+        "moveKind": "reply",
+        "proposition": "Christian theology defines God as supreme, noncontingent, and unrestricted by space and time, with maximal rational and moral attributes.",
+        "inference": "A transcendent being is not a physical item inside the universe, so a method limited to physical testing cannot by itself specify all relevant evidence.",
+        "sourceSpan": {
+          "startEvent": 789,
+          "endEvent": 809,
+          "startMs": 2301780,
+          "endMs": 2375140,
+          "excerpt": "Well this is what you do, Aaron. Take a single statement, not a multi-faceted statement at 80 miles an hour for three minutes and then say, now what part of that's wrong? I don't type 800 words a minute. Now I will tell you, I'm going to put it in text, Christian definition of God. There it is. The Christian definition of God. The only supreme, eternally self-aware being who had no beginning nor will he cease to exist who is non-contingent, transcendent, we have to define what transcendence is now, immutable and of whom no greater being exists. His attributes include holiness, omniscience, omnisapience, that's all wisdom, omnipotence, omnipresence, logic, righteousness, mercy, grace, etc. He's revealed to us through the person of Jesus Christ. That's the Christian position. I'm not arguing anything else. Transcendence means, transcendence means that God is non-dependent upon the universe in space and time and he's not restricted by space and time. That's what he means. He transcends the universe. So, if God is transcendent, how do you as a scientist develop a test for a transcendent being that automatically can't be found in a scientific method?"
+        },
+        "respondsToIds": [
+          "aron-christian-god-is-adapted-anthropomorphic-deity"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-christian-god-is-adapted-anthropomorphic-deity",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 80,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 85,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 73,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Christian theology defines God as supreme, noncontingent, and unrestricted by space and time, with maximal rational and moral attributes; this reply directly supports Christianity’s rational foundation under the.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Christian theology defines God as supreme, noncontingent, and unrestricted by space and time, with, and precision and clarity at 85 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 54 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 75 integrates logical coherence 78, evidence warrant 54, responsiveness 83, burden relevance 80, precision and clarity 85, and calibration and charity 73, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-09",
+      "moveId": "slick-evidence-search-must-fit-transcendence",
+      "sectionId": "transcendence-divine-attributes-and-evidence",
+      "sectionTitle": "Transcendence, divine attributes, and evidence",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[2].exchanges[2].pro",
+      "writableFields": [
+        "candidate.sections[2].exchanges[2].pro.words",
+        "candidate.sections[2].exchanges[2].pro.critique"
+      ],
+      "immutable": {
+        "score": 69,
+        "moveKind": "reply",
+        "proposition": "Rejecting God requires considering what evidence a transcendent being could produce rather than demanding only direct physical detection.",
+        "inference": "Slick contends that Aron Ra has neither surveyed all possible evidence nor articulated suitable criteria, while ordinary acceptance of relativity also relies on expert evidence one has not personally tested.",
+        "sourceSpan": {
+          "startEvent": 869,
+          "endEvent": 894,
+          "startMs": 2539820,
+          "endMs": 2616320,
+          "excerpt": "have you tested all potential evidences has anyone presented an evidence that could bear any testing do you have any i asked you i already have a way to prove god exists but i asked you according to your own criteria for the evidence of a transcendent being you don't even know if you have a way of proving that god exists why have you always failed to do so why is there still a faith-based belief required in every religion in the world if you've proven that god exists? i don't care about every religion in the world i care about christianity do you understand that relativity, einstein's relativity, do you remember how that was proven? no i don't remember how it was proven well it happened before you were born so it's alright i don't think you were around in nineteen thirty one but anyway i understand that perhaps you shouldn't have said remember but maybe in remembering in your studies there was a way to prove relativity uh... in during a... my IQ and training are not high enough for me to be able to look at the proof and understand it but i have faith that the proof is valid do you have faith that the proof is valid also or have you tested it?"
+        },
+        "respondsToIds": [
+          "aron-transcendence-description-remains-unsupported"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-transcendence-description-remains-unsupported",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 75,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 72,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 72,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 66,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Rejecting God requires considering what evidence a transcendent being could produce rather than demanding only direct physical detection; this reply directly supports Christianity’s rational foundation under the debated.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that Rejecting God requires considering what evidence a transcendent being could produce rather than demanding, and responsiveness at 75 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 54 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 69 integrates logical coherence 73, evidence warrant 54, responsiveness 75, burden relevance 72, precision and clarity 72, and calibration and charity 66, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-10",
+      "moveId": "slick-faith-is-trust-based-on-evidence",
+      "sectionId": "transcendence-divine-attributes-and-evidence",
+      "sectionTitle": "Transcendence, divine attributes, and evidence",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[2].exchanges[3].pro",
+      "writableFields": [
+        "candidate.sections[2].exchanges[3].pro.words",
+        "candidate.sections[2].exchanges[3].pro.critique"
+      ],
+      "immutable": {
+        "score": 76,
+        "moveKind": "reply",
+        "proposition": "Christian faith is profound trust based on reason and evidence, exemplified by Thomas being invited to inspect Jesus's wounds.",
+        "inference": "The cited narrative ties belief to presented signs, so the biblical concept need not mean conviction wholly independent of evidence.",
+        "sourceSpan": {
+          "startEvent": 916,
+          "endEvent": 927,
+          "startMs": 2673940,
+          "endMs": 2701100,
+          "excerpt": "faith is a profound trust based on evidence and reason jesus appeared in john twenty twenty five to twenty eight to stephen he said look here's my hand put your finger to my hand after the resurrection here's my side put your hand in my side now believe you know when people tell me that when people tell me that faith is just something we have as christians and there's no reason or evidence for it they're convincing me they're telling me they don't know what they're talking about and you don't"
+        },
+        "respondsToIds": [
+          "aron-religious-faith-assumed-without-reason"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-religious-faith-assumed-without-reason",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 85,
+            "rationale": "On relevance to the assigned burden, this is very strong for the transcript claim that “Christian faith is profound trust based on reason and evidence, exemplified by Thomas being invited to inspect Jesus's wounds.” It materially advances the locked burden with a proportionate motion-level consequence.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick's Thomas example directly supplies a Christian case of belief invited by evidence, materially addressing the disputed meaning and warrant of faith."
+          },
+          "precisionClarity": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 70,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Christian faith is profound trust based on reason and evidence, exemplified by Thomas being invited to inspect Jesus's wounds; this reply directly supports Christianity’s rational foundation under the.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Christian faith is profound trust based on reason and evidence, exemplified by Thomas being, and burden relevance at 85 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 61 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 76 integrates logical coherence 76, evidence warrant 61, responsiveness 85, burden relevance 85, precision and clarity 83, and calibration and charity 70, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-11",
+      "moveId": "slick-jesus-denial-lacks-demonstrated-test",
+      "sectionId": "jesus-moses-and-historical-method",
+      "sectionTitle": "Jesus, Moses, and historical method",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[3].exchanges[0].pro",
+      "writableFields": [
+        "candidate.sections[3].exchanges[0].pro.words",
+        "candidate.sections[3].exchanges[0].pro.critique"
+      ],
+      "immutable": {
+        "score": 67,
+        "moveKind": "reply",
+        "proposition": "Aron Ra's denial of Jesus appears unsupported and sits uneasily with quoting Jesus to characterize Christian faith.",
+        "inference": "Demanding a scientific test and noting the use of a disputed character's words challenge both the evidential basis and argumentative consistency of the denial.",
+        "sourceSpan": {
+          "startEvent": 1003,
+          "endEvent": 1016,
+          "startMs": 2915860,
+          "endMs": 2947100,
+          "excerpt": "you say a whole bunch of things that are just flat out wrong you said jesus didn't exist how do you know lies on faith that was a completely wrong statement prove no it's not because it's a biblical statement that i showed you from the christian perspective which is what i'm arguing and then you say i'm not right about the history of the scriptures then you quote jesus who you say didn't even exist to argue against the position i also quoted krishna who doesn't exist because they're characters in storybooks how do you know jesus never existed have you tested it scientifically"
+        },
+        "respondsToIds": [
+          "aron-jesus-historicity-is-uncertain-and-composite"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-jesus-historicity-is-uncertain-and-composite",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 56,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 76,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 70,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 71,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 59,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Aron Ra's denial of Jesus appears unsupported and sits uneasily with quoting Jesus to characterize Christian faith; this reply directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that Aron Ra's denial of Jesus appears unsupported and sits uneasily with quoting Jesus to, and responsiveness at 76 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 56 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 67 integrates logical coherence 70, evidence warrant 56, responsiveness 76, burden relevance 70, precision and clarity 71, and calibration and charity 59, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-12",
+      "moveId": "slick-absence-of-evidence-and-comparative-history",
+      "sectionId": "jesus-moses-and-historical-method",
+      "sectionTitle": "Jesus, Moses, and historical method",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[3].exchanges[1].pro",
+      "writableFields": [
+        "candidate.sections[3].exchanges[1].pro.words",
+        "candidate.sections[3].exchanges[1].pro.critique"
+      ],
+      "immutable": {
+        "score": 80,
+        "moveKind": "reply",
+        "proposition": "Lack of scientific evidence alone does not establish a historical person's nonexistence, and comparable figures require historical rather than experimental standards.",
+        "inference": "Alexander and Hypatia test whether Aron Ra applies a consistent threshold to ancient persons instead of imposing a uniquely scientific burden on Jesus.",
+        "sourceSpan": {
+          "startEvent": 1026,
+          "endEvent": 1068,
+          "startMs": 2971020,
+          "endMs": 3103640,
+          "excerpt": "i said if it doesn't exist where's your scientific evidence that he didn't exist well because there's no scientific evidence that he did exist but there's an overwhelming preponderance of evidence to other things that exist do you believe that you believe alexander the great existed there are a number of historical characters do you believe alexander the great existed i haven't investigated alexander the great but i have investigated hypatia and i was upset to find that there's insufficient data for her to verify which is a sad thing. I would really like to believe that there was a Hypatia, but everything that I've been able to find for her basically tracks down to one document and it's not a historic document. It's something that could easily be just a story. If that's all I've got, then that's not enough. Are historical figures the proper subject of scientific methodology in order to validate their existence? History operates a little bit different than mainstream science, but you still have evidence, you still have concordance with different events in history. What's the evidence for the existence of Alexander the Great? Again, I haven't studied Alexander the Great. Would you like to ask me about Hypatia? What's the evidence for Hypatia's existence? The evidence for Hypatia's existence is, as I said, a single document that has been many times quoted and it had been quoted by historians, but when you trace down what the historians are actually referencing, it comes down to one document that is not a historical document in itself. It's a document that might have been talking about a real person. Do you believe he existed? Do I believe who existed? Hypatia. Hypatia's a woman. Okay. Do you believe she existed? I don't know, because I don't have any evidence to be conclusive. What would be the evidence to be conclusive? I would need something to corroborate that one document. Like what? A historical record, perhaps. Like what? Well, as I said, the document that everybody traces is not in itself a historical record. It's a story, and the story might or might not have been fictitious. So you bring up a possible fictitious character that you can't validate in order to substantiate your argument about Jesus not being existing."
+        },
+        "respondsToIds": [
+          "aron-jesus-historicity-is-uncertain-and-composite"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-jesus-historicity-is-uncertain-and-composite",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 79,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Lack of scientific evidence alone does not establish a historical person's nonexistence, and comparable figures require historical rather than experimental standards; this reply directly supports Christianity’s rational foundation.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Lack of scientific evidence alone does not establish a historical person's nonexistence, and comparable, and responsiveness at 86 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 70 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 80 integrates logical coherence 82, evidence warrant 70, responsiveness 86, burden relevance 79, precision and clarity 82, and calibration and charity 83, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-13",
+      "moveId": "slick-borrowing-claim-needs-source-validation",
+      "sectionId": "jesus-moses-and-historical-method",
+      "sectionTitle": "Jesus, Moses, and historical method",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[3].exchanges[2].pro",
+      "writableFields": [
+        "candidate.sections[3].exchanges[2].pro.words",
+        "candidate.sections[3].exchanges[2].pro.critique"
+      ],
+      "immutable": {
+        "score": 76,
+        "moveKind": "reply",
+        "proposition": "Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.",
+        "inference": "Slick presses whether purported ancient parallels were observed, scientifically dated, or peer-reviewed rather than simply trusted as reports.",
+        "sourceSpan": {
+          "startEvent": 1101,
+          "endEvent": 1134,
+          "startMs": 3202500,
+          "endMs": 3275840,
+          "excerpt": "How do you know they were stolen? Were you back there? Did you see it happen? Or you have faith that it was? Because he's... Well, you're a man of great faith. No faith whatsoever. You're a man of great faith. No faith whatsoever. But think about this. You have great faith in your ability to think. No faith whatsoever. And it doesn't matter how many times you make a false accusation, it will still be false. So when you have the same culture, this is Egypt we're talking about, we had Moses parting the Red Sea to get off all these Hebrews. But in the same area, 1,000 years earlier, we already had the same story attributed to another guy. How do you know that? What? How do you know that? Because it's in the West Carp papyrus. So that's a scientific document? Is it peer-reviewed? Of course, it's not a scientific document, but it dates to prior to any time given for Moses. I thought science was how you had to go. That wasn't peer-reviewed. Yeah, it was, because they have to do the data... Who peer-reviewed the ancient document back then? When they find the tablets, they can date the tablets, and they can do it in concordance with the other histories and documents of the time. Yeah, the scientific... How do you know that those are accurately recorded documents? Do you have faith that they are?"
+        },
+        "respondsToIds": [
+          "aron-moses-narrative-borrows-and-lacks-demographic-evidence"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-moses-narrative-borrows-and-lacks-demographic-evidence",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "On logical structure, this is strong for the transcript claim that “Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.” Its inferential route is intelligible, though any unstated bridge remains a limit.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick correctly distinguishes similarity from demonstrated borrowing and asks for dating and transmission support, giving the challenge a strong logical structure."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The transcript support for this move is thin and reliant on assertion or analogy where checking matters, considering the stated basis for “Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The methodological demand is sound, but Slick offers little affirmative evidence and mixes it with irrelevant faith accusations, favoring option-b."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "On response to the live issue, this is very strong for the transcript claim that “Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.” It engages the strongest live claim or its decisive premise rather than merely changing subjects.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The request for validation directly targets the evidential gap in the borrowing claim, strongly engaging its decisive premise."
+          },
+          "relevanceBurden": {
+            "value": 78,
+            "rationale": "On relevance to the assigned burden, this is strong for the transcript claim that “Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.” It materially advances the locked burden with a proportionate motion-level consequence.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Challenging the historical support for a major con example materially advances the pro burden, even without completing it."
+          },
+          "precisionClarity": {
+            "value": 77,
+            "rationale": "The move’s key claim is readily recoverable despite minor compression or ambiguity, especially in the phrasing of “Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The core source-validation demand is readily recoverable, though interruptions and faith rhetoric create minor ambiguity, matching option-b."
+          },
+          "calibrationCharity": {
+            "value": 73,
+            "rationale": "The performance is mostly proportionate but somewhat selective about alternatives while advancing “Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The methodological caution is proportionate, but repeated accusations that Aron relies on faith make the framing somewhat selective and less charitable."
+          }
+        },
+        "currentWords": "Similarity to older documents does not by itself prove borrowing unless the documents' dating, transmission, and accuracy are independently validated; this reply directly supports Christianity’s rational foundation under.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that Similarity to older documents does not by itself prove borrowing unless the documents' dating,, and responsiveness at 86 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 59 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 76 integrates logical coherence 80, evidence warrant 59, responsiveness 86, burden relevance 78, precision and clarity 77, and calibration and charity 73, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-14",
+      "moveId": "slick-personal-repetition-gap-reintroduces-trust",
+      "sectionId": "jesus-moses-and-historical-method",
+      "sectionTitle": "Jesus, Moses, and historical method",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[3].exchanges[3].pro",
+      "writableFields": [
+        "candidate.sections[3].exchanges[3].pro.words",
+        "candidate.sections[3].exchanges[3].pro.critique"
+      ],
+      "immutable": {
+        "score": 65,
+        "moveKind": "reply",
+        "proposition": "Reliance on researchers still requires trust when one has not personally repeated every relevant test.",
+        "inference": "If Aron Ra accepts ancient-source conclusions without independently reproducing the full chain, his blanket denial of any faith-like reliance appears overstated.",
+        "sourceSpan": {
+          "startEvent": 1156,
+          "endEvent": 1166,
+          "startMs": 3340960,
+          "endMs": 3373240,
+          "excerpt": "Have you done the scientific tests on all that stuff that you're talking about? You just believe what the people say on faith? What? I don't believe anything on faith, and it doesn't matter how many times you say that, it's still going to be wrong. You can say it forever, you're always going to be wrong. You have faith in their integrity, don't you? No, I don't have faith in anything. That would be a belief that is not based on evidence, and as I have demonstrated, absolutely have no evidence, but you have to push your own faults onto opponents who will not share those flaws."
+        },
+        "respondsToIds": [
+          "aron-document-dating-and-peer-review-corroborate"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-document-dating-and-peer-review-corroborate",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 74,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 64,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 71,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 59,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Reliance on researchers still requires trust when one has not personally repeated every relevant test; this reply directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Reliance on researchers still requires trust when one has not personally repeated every relevant, and responsiveness at 74 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 54 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 65 integrates logical coherence 68, evidence warrant 54, responsiveness 74, burden relevance 64, precision and clarity 71, and calibration and charity 59, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-15",
+      "moveId": "slick-transcendence-and-omnipotence-need-accurate-definitions",
+      "sectionId": "religious-expertise-and-public-verification",
+      "sectionTitle": "Religious expertise and public verification",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[4].exchanges[0].pro",
+      "writableFields": [
+        "candidate.sections[4].exchanges[0].pro.words",
+        "candidate.sections[4].exchanges[0].pro.critique"
+      ],
+      "immutable": {
+        "score": 81,
+        "moveKind": "reply",
+        "proposition": "Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.",
+        "inference": "Evaluating Christianity requires engaging its actual doctrinal predicates rather than substituting caricatures such as being physically bigger than big.",
+        "sourceSpan": {
+          "startEvent": 1287,
+          "endEvent": 1318,
+          "startMs": 3700040,
+          "endMs": 3810720,
+          "excerpt": "what nonsense? Okay, you just said that God is bigger than big and stronger than strong and... I didn't say that. He's every dimension we can exaggerate, but you don't have any evidence to back that up. I didn't say that. You did say that he was omniscient and that he was omnipotent. Yes, he did. Yes, he did. And I... When we talk about the issue of evidence, I asked you what kind of evidence would you expect from a transcendent being? And since you won't investigate what transcendent means and will just pretend that I don't know... I did. I defined... This is the fourth or fifth time I'm telling you what transcendence is. It is when God is not dependent upon the physical universe. He's not dependent upon space and time for his existence. He transcends them. He's not limited and restricted to them. That's about the fourth or the fifth time I'm telling you what it is and you keep telling me I don't tell you what it is. I'm still correct then that you said he's bigger than big and stronger than strong and exceeds every dimension one can exaggerate. I never said any of that. But you did just exactly say all of that just now. I just said he's bigger than big and stronger than strong? Smarter than smart? Omniscient? Exceeds every dimension? He does... He transcends... To say he's bigger than big is a nonsensical... Look, to say he's bigger than big is a nonsensical statement. Well, pretend I used the words that you used because they made the same thing. Pretend? Yeah, because that's what it is. Bigger than big, stronger than strong, he exceeds... He's bigger than the universe and is... Unlimited power. They mean exactly the same thing. I never said he was unlimited power. You did say he was omnipotent, right? Omnipotent? You don't understand Christian theology. You do not understand what you criticize. Do I understand the word omnipotent? Define it for me. All-powerful. Unlimited power. Right? Doesn't mean unlimited power."
+        },
+        "respondsToIds": [
+          "aron-transcendence-description-remains-unsupported"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-transcendence-description-remains-unsupported",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The inference in “Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.” is intelligible and mostly valid, though one bridge remains compressed.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick consistently defines transcendence as independence from space-time and qualifies omnipotence against contradictions, producing a well-structured clarification."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The transcript support for this move is meaningful but incomplete on sources, alternatives, or verification, considering the stated basis for “Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The passage grounds the claims in explicit Christian-theological definitions, though it does not independently establish that such a being exists."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "As performed in the exchange, this move directly meets the strongest live challenge at its decisive point concerning “Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The definitions directly answer Aron's characterization of transcendence and unlimited power at the precise point disputed."
+          },
+          "relevanceBurden": {
+            "value": 79,
+            "rationale": "For the locked pro burden, this move materially advances the burden without fully completing it, through its claim that “Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Correcting the target concept materially protects the pro case from a definitional objection, though it does not alone prove Christianity."
+          },
+          "precisionClarity": {
+            "value": 84,
+            "rationale": "The move’s key claim is readily recoverable despite minor compression or ambiguity, especially in the phrasing of “Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The independence-from-space-time definition and qualified account of omnipotence are stated clearly enough to audit, favoring option-b."
+          },
+          "calibrationCharity": {
+            "value": 76,
+            "rationale": "The performance is generally measured and charitable, with limited overstatement while advancing “Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick's correction confines the claims to standard qualified meanings rather than exaggerating them, making option-b's stronger calibration appropriate."
+          }
+        },
+        "currentWords": "Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim of unlimited power without qualification; this reply directly supports Christianity’s rational foundation under the.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that Transcendence means independence from physical space-time, and Christian omnipotence is not the nonsensical claim, and responsiveness at 90 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 72 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 81 integrates logical coherence 84, evidence warrant 72, responsiveness 90, burden relevance 79, precision and clarity 84, and calibration and charity 76, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-16",
+      "moveId": "slick-belief-is-true-aspect-of-christian-description",
+      "sectionId": "religious-expertise-and-public-verification",
+      "sectionTitle": "Religious expertise and public verification",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[4].exchanges[1].pro",
+      "writableFields": [
+        "candidate.sections[4].exchanges[1].pro.words",
+        "candidate.sections[4].exchanges[1].pro.critique"
+      ],
+      "immutable": {
+        "score": 73,
+        "moveKind": "reply",
+        "proposition": "At least one Christian proposition—that Christians believe in Christ—is demonstrably true because Slick himself holds that belief.",
+        "inference": "The counterexample targets the universal wording that no aspect of a religion can be shown true, even though it does not establish Jesus's existence.",
+        "sourceSpan": {
+          "startEvent": 1336,
+          "endEvent": 1345,
+          "startMs": 3869720,
+          "endMs": 3907720,
+          "excerpt": "So there's no aspect of any of my religious faith that can be demonstrated as being true? Oh, if it were real, it could be, yes. Okay, so let me test that. I'm a Christian. You said there's nothing in my faith that can be shown to be true. Well, I have faith that Jesus lived. My faith is that Jesus did live. That is an aspect of my faith. It is real and it is true that I believe that. So, I've now shown you that aspect. I've now shown you that aspect."
+        },
+        "respondsToIds": [
+          "aron-credentials-do-not-verify-theology"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-credentials-do-not-verify-theology",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "As performed in the exchange, this move engages the live objection but leaves a bounded component unanswered concerning “At least one Christian proposition—that Christians believe in Christ—is demonstrably true because Slick himself holds that belief.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The proposition precisely answers Aron's wording that no aspect is true by identifying the undeniable belief fact, making it highly responsive though narrow."
+          },
+          "relevanceBurden": {
+            "value": 49,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 55,
+            "rationale": "The performance is noticeably overconfident or reliant on a weaker opposing reconstruction while advancing “At least one Christian proposition—that Christians believe in Christ—is demonstrably true because Slick himself holds that belief.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Treating the trivial truth that Christians believe as a defense of Christianity exploits wording rather than the substantive claim, so option-b is preferable."
+          }
+        },
+        "currentWords": "At least one Christian proposition—that Christians believe in Christ—is demonstrably true because Slick himself holds that belief; this reply directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that At least one Christian proposition—that Christians believe in Christ—is demonstrably true because Slick himself, and responsiveness at 84 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while burden relevance at 49 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 73 integrates logical coherence 75, evidence warrant 82, responsiveness 84, burden relevance 49, precision and clarity 82, and calibration and charity 55, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-17",
+      "moveId": "slick-expert-appeal-must-specify-relevant-expertise",
+      "sectionId": "religious-expertise-and-public-verification",
+      "sectionTitle": "Religious expertise and public verification",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[4].exchanges[2].pro",
+      "writableFields": [
+        "candidate.sections[4].exchanges[2].pro.words",
+        "candidate.sections[4].exchanges[2].pro.critique"
+      ],
+      "immutable": {
+        "score": 83,
+        "moveKind": "reply",
+        "proposition": "An appeal to expert consensus is incomplete until it identifies which experts and which relevant field are meant.",
+        "inference": "Repeatedly asking for the reference class tests whether the proposed verification standard is determinate or can be selected only after seeing the desired conclusion.",
+        "sourceSpan": {
+          "startEvent": 1403,
+          "endEvent": 1429,
+          "startMs": 4032720,
+          "endMs": 4096720,
+          "excerpt": "Let me ask you. So it has to be shown to you, right? Well, it doesn't have to be to me in particular. If you could give some demonstration that would appeal to the experts, when my knowledge fails me, I can rely on the experts instead, perhaps. So, in other words, some demonstration that appeals to the experts. Which experts? A consensus. Once again... Which experts? When I said that Einstein's relativity was proven... Which experts? A consensus. A consensus. Which experts? A consensus. I didn't ask what consensus. You said... A consensus of the experts. A consensus of the experts. What experts? In what? A consensus. Do you know what that means? Yes. Yeah. A majority view that's held by a group of people, the general consensus. But I'm asking you what experts."
+        },
+        "respondsToIds": [
+          "aron-belief-fact-is-not-theological-truth"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-belief-fact-is-not-theological-truth",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 83,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 87,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "An appeal to expert consensus is incomplete until it identifies which experts and which relevant field are meant; this reply directly supports Christianity’s rational foundation under the debated.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that An appeal to expert consensus is incomplete until it identifies which experts and which, and responsiveness at 91 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 69 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 83 integrates logical coherence 88, evidence warrant 69, responsiveness 91, burden relevance 83, precision and clarity 87, and calibration and charity 82, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-18",
+      "moveId": "slick-christian-expert-consensus-reductio",
+      "sectionId": "religious-expertise-and-public-verification",
+      "sectionTitle": "Religious expertise and public verification",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[4].exchanges[3].pro",
+      "writableFields": [
+        "candidate.sections[4].exchanges[3].pro.words",
+        "candidate.sections[4].exchanges[3].pro.critique"
+      ],
+      "immutable": {
+        "score": 84,
+        "moveKind": "reply",
+        "proposition": "If the identity of experts does not matter, Christian theological consensus could be used to prove Christianity by the proposed rule.",
+        "inference": "The reductio aims to show that an unspecified consensus standard either licenses sectarian circularity or needs a principled reference class.",
+        "sourceSpan": {
+          "startEvent": 1449,
+          "endEvent": 1451,
+          "startMs": 4150720,
+          "endMs": 4161720,
+          "excerpt": "Okay, so the Christian experts. Now, that's what I'm going to cite because it doesn't matter who they are. So I guess we prove Christianity is true because the overwhelming consensus of the theological experts demonstrates it's true."
+        },
+        "respondsToIds": [
+          "aron-consensus-requires-broad-convergence"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-consensus-requires-broad-convergence",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 81,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 89,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 81,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "If the identity of experts does not matter, Christian theological consensus could be used to prove Christianity by the proposed rule; this reply directly supports Christianity’s rational foundation.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that If the identity of experts does not matter, Christian theological consensus could be used, and responsiveness at 93 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 69 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 84 integrates logical coherence 88, evidence warrant 69, responsiveness 93, burden relevance 81, precision and clarity 89, and calibration and charity 81, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-19",
+      "moveId": "slick-god-not-god-exhausts-options",
+      "sectionId": "logic-god-and-explanatory-power",
+      "sectionTitle": "Logic, God, and explanatory power",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[5].exchanges[0].pro",
+      "writableFields": [
+        "candidate.sections[5].exchanges[0].pro.words",
+        "candidate.sections[5].exchanges[0].pro.critique"
+      ],
+      "immutable": {
+        "score": 82,
+        "moveKind": "constructive",
+        "proposition": "God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.",
+        "inference": "Framing the final proof as a strict binary sets up an indirect argument in which the no-God worldview is challenged as incapable of accounting for rationality.",
+        "sourceSpan": {
+          "startEvent": 1526,
+          "endEvent": 1541,
+          "startMs": 4370760,
+          "endMs": 4412760,
+          "excerpt": "So if you only have two options to account for something, and one is negated, the other one's validated, is that not logically true? No. So you don't affirm a disjunctive syllogism? No. If you are only aware of two options, you may not have considered a third. I didn't say only aware. I said if there are only two. Then you may not be aware of a third. That's called the Tillahanty Fallacy. Look, God, not God. We have two options. God, not God. Is there a third option? No, in that case, no, there's not. Okay, so we have two options to work from."
+        },
+        "respondsToIds": [],
+        "responseComponents": [],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The inference in “God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.” is well structured and survives the immediate logical pressure.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The God-or-not-God disjunction is exhaustive, and the stated disjunctive reasoning is formally sound when one alternative is genuinely negated."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The transcript support for this move is meaningful but incomplete on sources, alternatives, or verification, considering the stated basis for “God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The logical law supporting the exhaustive disjunction is public and clear, although the excerpt does not itself establish which disjunct is false."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "As performed in the exchange, this move engages the live objection but leaves a bounded component unanswered concerning “God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick directly responds to the claim that God is not an explanatory alternative by forcing clarification of the exhaustive ontological options."
+          },
+          "relevanceBurden": {
+            "value": 82,
+            "rationale": "For the locked pro burden, this move materially advances the burden without fully completing it, through its claim that “God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The disjunction structures the comparative worldview issue and materially advances the pro burden, while not alone proving the God disjunct."
+          },
+          "precisionClarity": {
+            "value": 87,
+            "rationale": "The move’s key claim is stated with stable scope and unusually clear evaluative terms, especially in the phrasing of “God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The two alternatives and the disjunctive inference are stated repeatedly and unambiguously, making option-b the better clarity rating."
+          },
+          "calibrationCharity": {
+            "value": 85,
+            "rationale": "The performance is carefully proportioned to the evidence and fair to the opposing case while advancing “God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The move accurately limits itself to exhaustiveness and conditional disjunctive reasoning rather than claiming the disjunction alone proves God."
+          }
+        },
+        "currentWords": "God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive reasoning; this constructive directly supports Christianity’s rational foundation under the debated motion.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that God and not-God are exhaustive alternatives, so negating one validates the other by disjunctive, and precision and clarity at 87 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 71 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 82 integrates logical coherence 87, evidence warrant 71, responsiveness 82, burden relevance 82, precision and clarity 87, and calibration and charity 85, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-20",
+      "moveId": "slick-abstract-logic-needs-worldview-account",
+      "sectionId": "logic-god-and-explanatory-power",
+      "sectionTitle": "Logic, God, and explanatory power",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[5].exchanges[1].pro",
+      "writableFields": [
+        "candidate.sections[5].exchanges[1].pro.words",
+        "candidate.sections[5].exchanges[1].pro.critique"
+      ],
+      "immutable": {
+        "score": 65,
+        "moveKind": "reply",
+        "proposition": "Universal, abstract, rational laws of logic require an account that neither matter nor individual human minds can supply.",
+        "inference": "Because logic allegedly transcends contingent physical states, the Christian God is proposed as its necessary precondition and the no-God worldview is burdened to explain it.",
+        "sourceSpan": {
+          "startEvent": 1567,
+          "endEvent": 1582,
+          "startMs": 4464760,
+          "endMs": 4527760,
+          "excerpt": "So we have the laws of logic. The laws of logic which undergird rational thought. So they're rational by nature. They're thought by nature because their laws are abstractions. So how do you, as an atheist, account for their universality, their transcendent existence, which is not dependent upon the universe, not dependent upon the human mind? How do you account for their existence from your atheistic perspective? Would you agree that in a universe that is completely dead, that two rocks are still... Two rocks plus two rocks is still going to be four rocks? What you're doing is you are asserting a logical value right now about another condition. You're assuming the laws of logic. I'm asking you to account for them from your atheistic perspective. So if there is a universe in which there is no God, then two plus two still equals two. If there is no God, there is no universe. God's a necessary precondition. I'm trying to ask you to do something, and what you do is you dodge it."
+        },
+        "respondsToIds": [
+          "aron-god-addition-is-not-explanatory"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-god-addition-is-not-explanatory",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 47,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 76,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 71,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 55,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "currentWords": "Universal, abstract, rational laws of logic require an account that neither matter nor individual human minds can supply; this reply directly supports Christianity’s rational foundation under the debated.",
+        "currentCritique": "Strongest feature: This move clarifies the source-specific claim that Universal, abstract, rational laws of logic require an account that neither matter nor individual, and burden relevance at 76 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 47 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 65 integrates logical coherence 68, evidence warrant 47, responsiveness 71, burden relevance 76, precision and clarity 71, and calibration and charity 55, preserving the final differentiated judgment without recalculation."
+      }
+    },
+    {
+      "shardId": "b-21",
+      "moveId": "slick-no-god-universe-is-impossible",
+      "sectionId": "logic-god-and-explanatory-power",
+      "sectionTitle": "Logic, God, and explanatory power",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "pathPrefix": "candidate.sections[5].exchanges[2].pro",
+      "writableFields": [
+        "candidate.sections[5].exchanges[2].pro.words",
+        "candidate.sections[5].exchanges[2].pro.critique"
+      ],
+      "immutable": {
+        "score": 51,
+        "moveKind": "reply",
+        "proposition": "Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case.",
+        "inference": "If logic cannot be grounded by empirical derivation and the no-God world is metaphysically impossible, Aron Ra's rock example cannot undercut God's necessary role.",
+        "sourceSpan": {
+          "startEvent": 1595,
+          "endEvent": 1614,
+          "startMs": 4558760,
+          "endMs": 4604760,
+          "excerpt": "So you presuppose the laws of logic in order to observe things and make conclusions. I don't presuppose anything. None of the laws are presupposed. But you tested the laws of logic? I could test laws of logic, but that's not the issue. How would you test the laws of logic? I don't know. Why are you changing the subject? You said you could. I'm asking you, how would you test them? I asked you a question, which you have then touched to dodge, while telling me that I'm dodging the question that you're dodging. You are the master dodger. I'm not dodging anything. I'm asking you. I asked you a specific question. I asked you a specific question, which you dodged, in a universe in which there is no God. It's two plus two. I can't affirm that position. Why not? Because I don't believe it's possible. Why not? Because I don't believe it's possible."
+        },
+        "respondsToIds": [
+          "aron-logical-relations-hold-without-god"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "aron-logical-relations-hold-without-god",
+            "component": "directly addresses the earlier move's stated premise or evidential demand"
+          }
+        ],
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 48,
+            "rationale": "The inference in “Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case.” is seriously impaired by an unsupported or circular central step.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The point that reasoning uses logical laws is distinct from the unsupported leap that those laws require God, leaving the central inference seriously impaired."
+          },
+          "evidenceWarrant": {
+            "value": 30,
+            "rationale": "The transcript support for this move is largely asserted without adequate public warrant, considering the stated basis for “Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "No public evidence is supplied that a Godless universe is impossible or that logical laws depend on God, making option-b the closer assessment."
+          },
+          "responsiveness": {
+            "value": 70,
+            "rationale": "On response to the live issue, this is mixed but useful for the transcript claim that “Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case.” It only partly meets the opponent's live point or shifts attention to a weaker adjacent issue.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Slick presses Aron Ra's admitted inability to explain how logic would be tested, directly engaging that point despite redirecting toward theism."
+          },
+          "relevanceBurden": {
+            "value": 58,
+            "rationale": "For the locked pro burden, this move is related yet more peripheral or burden-shifting than decisive, through its claim that “Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "The presupposition challenge is related, but the unsupported move from logic to God's necessity leaves it peripheral to completing the pro burden."
+          },
+          "precisionClarity": {
+            "value": 65,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 38,
+            "rationale": "The performance is markedly overstated or dependent on caricaturing the alternative while advancing “Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case.”.",
+            "resolution": "adjudicated-existing-option",
+            "adjudicationRationale": "Declaring the Godless comparison impossible without argument substantially overstates the transcript support, favoring option-b's lower calibration."
+          }
+        },
+        "currentWords": "Testing or deriving logical laws already presupposes them, and a universe without God is not a genuinely possible comparison case; this reply directly supports Christianity’s rational foundation under.",
+        "currentCritique": "Strongest feature: This move frames the source-specific claim that Testing or deriving logical laws already presupposes them, and a universe without God is, and responsiveness at 70 records its strongest contribution to the immediate exchange. Principal limitation: The central evidential bridge remains insufficiently demonstrated, while evidence warrant at 30 identifies precisely where the immutable assessment found the reasoning least persuasive and proportionately supported. Live burden: Matt Slick must connect this transcript claim to Christianity’s truth or inadequate support, answer the nearest competing explanation, and consistently defend the same publicly auditable standard across the debate. Locked score: The immutable 51 integrates logical coherence 48, evidence warrant 30, responsiveness 70, burden relevance 58, precision and clarity 65, and calibration and charity 38, preserving the final differentiated judgment without recalculation."
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "243",
+  "debateId": "aron-ra-slick-christianity-2014",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "freshContext": false,
+    "isolatedFromOtherDebates": true,
+    "scoreBlind": true,
+    "judgmentBlind": true,
+    "publicationBlind": true,
+    "prohibitedArtifactsRead": false,
+    "method": "Two preserved source-only isolated-worker attempts failed at transport before producing any assessment substance. The controlling 5.6 Sol context then completed the inventory from only the authorized Debate 243 controls, frozen source records, complete transcript, complete timed events, and inventory-schema requirements. No scores, judgments, publication prose, or other debate materials informed selection. Fresh isolation remains mandatory and will be enforced for both primary judgments."
+  },
+  "attempts": {
+    "attemptCount": 3,
+    "retryCount": 1,
+    "repairShardCount": 0,
+    "successfulAttempt": 3,
+    "preservedFailurePaths": [
+      "docs/assessment-production/standalone-debates-v1/debate-243/inventory/execution-attempt-1.json",
+      "docs/assessment-production/standalone-debates-v1/debate-243/inventory/execution-attempt-2.json"
+    ]
+  },
+  "cost": {
+    "directIncrementalCostUsd": 0,
+    "paidServiceUsed": false,
+    "costBasis": "Local file review and ChatGPT subscription-backed model work have zero direct incremental cost. Both failed transport attempts also incurred zero direct cost."
+  },
+  "inputs": [
+    {"path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/SKILL.md", "sha256": "fe209f19b60e8288ed8201b947e614a232bc64d9c3dd73fc91bf62875b6533e6"},
+    {"path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/references/single-debate-runbook.md", "sha256": "971cd841ecb69c31abe4b7256ff3af7b34ce3dd35b391c418492fa41e47e5843"},
+    {"path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"},
+    {"path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"},
+    {"path": "docs/assessment-workflow-v4.2.21.17.41.md", "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"},
+    {"path": "docs/assessment-production/standalone-primary-speaker-scope-exception-v1.md", "sha256": "676fa90a8e934503ca2e5ae40ee900672834c72f7a30be61454815b7eb8569dd"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-243/authorization.json", "sha256": "8057677600c9ca216dbb30ca62fb530bfec90e93f7be6a90627ae9dfe5fe1980"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-243/source/source-lock.json", "sha256": "9c722409c0a61efedafc9088cd8cd9f8c48f9b6ba80a3fb7a4514e307583193c"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-243/source/primary-speaker-scope-evidence.json", "sha256": "bc612899b5802948e9e8cb4c28fa80f353ad14228bdabc6d6242f94614cd3b57"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-243/manifest-pre-inventory.json", "sha256": "0165139c0b4051c03468c5b83efe453cce60cecdff98d34c785532d4b5b4c70f"},
+    {"path": ".assessment-cache/captions/1MwqFMO0Lqw/transcript.txt", "sha256": "aebd0c47e89a235647b47255706803db69869af024cf13f4bf2b33ded23beda2"},
+    {"path": ".assessment-cache/captions/1MwqFMO0Lqw/events.json", "sha256": "308fc3bec6c0667251f585ef332a04ccc7bb7ce649b05034fb32c3c2a40997d6"},
+    {"path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a", "use": "inventory and primary-speaker-scope validation requirements only"}
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-243/inventory/model-output.json",
+    "docs/assessment-production/standalone-debates-v1/debate-243/inventory/inventory.json",
+    "docs/assessment-production/standalone-debates-v1/debate-243/inventory/execution.json"
+  ],
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/inventory/model-output.json",
+    "sha256": "b255850fb495752c6662a40f7ce72446168531b1d54a60015b29b3056db3009f",
+    "bytes": 139502,
+    "metrics": {
+      "sections": 6,
+      "moves": 43,
+      "proMoves": 21,
+      "conMoves": 22,
+      "proBurdenBridges": 6,
+      "conBurdenBridges": 7,
+      "belowHighAttributionMoves": 0,
+      "maximumMovesForEitherSideInAnySection": 4,
+      "sectionsRequiringFourthRowPreauthorization": 4,
+      "excludedHostAdvocacyMs": 199286,
+      "excludedDependentResponseMs": 220226,
+      "unionExcludedMs": 282210,
+      "hostAdvocacyShare": 0.040357307757733836
+    }
+  },
+  "validation": {
+    "jsonParsed": true,
+    "standaloneInventoryValidatorPassed": true,
+    "primarySpeakerScopeValidatorPassed": true,
+    "exactEventSpansRechecked": true,
+    "chronologyRechecked": true,
+    "sideCountsRecomputed": true,
+    "sectionCapacityRecomputed": true,
+    "bridgeReferencesRechecked": true,
+    "auditArithmeticRecomputed": true,
+    "motionByteIdenticalToAuthorization": true,
+    "completeTranscriptReviewed": true,
+    "noSelectedSpanIntersectsAnyExcludedInterval": true
+  }
+}

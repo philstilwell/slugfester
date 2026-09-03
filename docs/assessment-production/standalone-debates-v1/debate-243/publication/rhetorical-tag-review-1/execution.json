@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "243",
+  "debateId": "aron-ra-slick-christianity-2014",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "1b657a25fb97d66a8f5d0868df3cf4a862987c35330838907357f36257cf9db1",
+    "bytes": 161957
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "3b03fd7a5305546cc2c61f0e5bb850d397798f9d60ff9f443e83657e566366e8",
+    "bytes": 4097
+  },
+  "contexts": {
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "sha256": "b4d11bf81e1570eec16ce22b3b325a08049a76ae7e44b882f280bfd371f07218",
+      "bytes": 29762,
+      "attempts": 1,
+      "retries": 0
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "sha256": "aadca18663f0ea278b4ffc08bb6a44d9270cbf9477495051b077b85727f79fef",
+      "bytes": 31914,
+      "attempts": 1,
+      "retries": 0
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/adjudication-packet.json",
+      "sha256": "52d8399ad6fb8642fe9e648366a88d6ebeab668837f86534385d0514df9adf56",
+      "bytes": 250085
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/adjudication-output.json",
+      "sha256": "7ef9d9f7c687f0f829171ab42a9c30055332507326266f77f8c48096ba1ad699",
+      "bytes": 27023,
+      "attempts": 1,
+      "retries": 0
+    }
+  },
+  "validation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/pass-validation.json",
+    "sha256": "cdacbf48edca82a7a52cc766e7de69ca32a90313b1437de10eeff5015bcae19a",
+    "bytes": 1557
+  },
+  "counts": {
+    "reviewedMoves": 43,
+    "reviewedOverallBlunders": 6,
+    "passACandidates": 45,
+    "passBCandidates": 48,
+    "unionCandidates": 57,
+    "oneReviewerCandidates": 21,
+    "acceptedMoveTags": 15,
+    "acceptedOverallBlunderLinks": 5,
+    "rejectedCandidates": 37
+  },
+  "finalDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/final-definition-check.json",
+    "sha256": "95bfd0b11ea51690fe22f49df65d6cf150cd554fc5986a71230253dc1191cb4c",
+    "bytes": 55551
+  },
+  "directIncrementalCostUsd": 0,
+  "attempts": {
+    "passA": 1,
+    "passB": 1,
+    "adjudication": 1
+  },
+  "retries": 0,
+  "completedAt": "2026-09-03T16:04:01.642Z",
+  "audit": {
+    "blindReviews": 2,
+    "anonymousUnionCandidates": 57,
+    "acceptedMoveTags": 15,
+    "acceptedOverallBlunderLinks": 5,
+    "retries": 0
+  }
+}

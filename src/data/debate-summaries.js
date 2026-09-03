@@ -11288,5 +11288,55 @@ export const debateSummaries = [
         "title": "Resurrection, prophecy, and salvation"
       }
     ]
+  },
+  {
+    "id": "aron-ra-slick-christianity-2014",
+    "number": "243",
+    "title": "Matt Slick vs Aron Ra: Is Christianity True?",
+    "year": 2014,
+    "label": "Christianity, evidence, and rational foundations",
+    "date": "2026-09-03",
+    "duration": "1 hr 44 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=1MwqFMO0Lqw",
+    "motion": "Is Christianity true?",
+    "summary": "Slick excelled on foundational challenges and expert-reference precision; Aron prevailed on belief versus truth and explanatory accountability, producing an exact overall tie.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christianity is true and the biblical God provides the necessary foundation for reason and knowledge",
+        "speaker": "Matt Slick",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christianity is not adequately supported by evidence or rational argument",
+        "speaker": "Aron Ra",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 73,
+      "winner": "tie"
+    },
+    "sections": [
+      {
+        "title": "The biblical God, fiction, and warranted belief"
+      },
+      {
+        "title": "Faith, science, and epistemic foundations"
+      },
+      {
+        "title": "Transcendence, divine attributes, and evidence"
+      },
+      {
+        "title": "Jesus, Moses, and historical method"
+      },
+      {
+        "title": "Religious expertise and public verification"
+      },
+      {
+        "title": "Logic, God, and explanatory power"
+      }
+    ]
   }
 ];
