@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "moveId",
+    "description",
+    "critique"
+  ],
+  "properties": {
+    "moveId": {
+      "const": "con-supernatural-claims-undemonstrated"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "critique": {
+      "type": "string",
+      "minLength": 880
+    }
+  }
+}

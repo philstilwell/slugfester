@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 16,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-natural-account-of-cooperation.description",
+    "moveProse.con-natural-account-of-cooperation.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-natural-account-of-cooperation",
+    "sectionId": "moral-experiential-fit",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 919,
+      "endEvent": 943,
+      "startMs": 1987919,
+      "endMs": 2056320,
+      "excerpt": "secular humanism in all three of the manifestos and in every version of the the secular ethics that I've advocated for that other organizations have put out isn't humans are ultimately good although I think that humans are generally better than some people might expect it is we live here and we have to solve problems and we have no one outside of us to reach to we have no we can't appeal to a god that we have no rational reason to think exist we can't appeal to some sort of external we are left to our own devices is what secular humanism says and the the things that are positive that you were pointing to are not functions of Christianity at all forgiveness cooperation uh sympathy none of those things are necessarily direct uh products of Christianity exclusively they are instead the result of properly applied Game Theory the the recognition of you and I have to cooperate rate to some extent and figuring out to what extent that is that is the principle"
+    },
+    "quoteEligibleExactSpans": [
+      "we live here and we have to solve problems",
+      "are not functions of Christianity at all",
+      "the result of properly applied Game Theory"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Dillahunty explicitly corrects Knechtle's account of secular humanism and answers the opening inference from cooperation and sympathy.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-natural-moral-account",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-christianity-explains-altruism-hope"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-game-theory-to-altruism",
+        "targetMoveId": "pro-christianity-explains-altruism-hope",
+        "text": "Cooperation, sympathy, and forgiveness need not be uniquely Christian products because strategic interdependence supplies a secular explanation.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "Secular humanism does not assume innate human goodness, and cooperation, sympathy, and forgiveness can arise through practical problem-solving and game-theoretic interdependence.",
+    "inventoryRationale": "This supplies a direct rival explanation for the experiences Knechtle treats as evidence of Christian fit.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-natural-account-of-cooperation",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "Practical interdependence supplies a coherent rival route to cooperation, sympathy, and forgiveness, although the bridge from reciprocal strategy to genuinely costly out-group concern is compressed."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "Game theory is a relevant explanatory framework, but the excerpt offers no model, example, or comparative evidence showing that it accounts for the full range of practices Knechtle identified."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "Dillahunty directly corrects the claim about secular humanism and supplies a non-Christian explanation for the cooperation, sympathy, and forgiveness invoked in the opening."
+          },
+          "relevanceBurden": {
+            "value": 85,
+            "rationale": "A plausible secular source for the cited moral behavior materially undercuts the claimed uniqueness of Christianity's experiential fit, even without proving every form of altruism naturalistically."
+          },
+          "precisionClarity": {
+            "value": 76,
+            "rationale": "The distinction between innate goodness and a need for cooperative problem-solving is clear, though 'properly applied Game Theory' remains underspecified as an explanatory mechanism."
+          },
+          "calibrationCharity": {
+            "value": 72,
+            "rationale": "The move fairly denies that secular humanism assumes universal goodness, but saying the positive traits are not functions of Christianity 'at all' overstates what the rival explanation establishes."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-natural-account-of-cooperation",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "Practical interdependence and game-theoretic cooperation provide a coherent rival route to sympathy and forgiveness, although the mechanism is stated more than developed."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "Game theory is a relevant source of warrant for cooperation, but the move supplies no concrete model, example, or evidence extending that account to forgiveness and sympathy."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "It directly corrects the stated account of secular humanism and answers Knechtle's claim that the positive moral phenomena require a distinctively Christian source."
+          },
+          "relevanceBurden": {
+            "value": 83,
+            "rationale": "A credible non-Christian account materially weakens the claimed uniqueness of Christian experiential fit, even though it need not settle every source of altruistic conduct."
+          },
+          "precisionClarity": {
+            "value": 78,
+            "rationale": "The practical premise that people must cooperate to solve shared problems is clear, but 'properly applied Game Theory' leaves the operative mechanism compressed."
+          },
+          "calibrationCharity": {
+            "value": 72,
+            "rationale": "The correction that secular humanism does not assume innate goodness is fair, but saying the cited virtues are not functions of Christianity at all overstates the rebuttal."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 64,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 86,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 84,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 77,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 72,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 77,
+    "relatedMoves": [
+      {
+        "moveId": "pro-christianity-explains-altruism-hope",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Christianity better explains costly concern beyond one's group, sacrificial love, and durable hope than Knechtle's characterization of evolution does.",
+        "sourceExcerpt": "and then I would say Christianity makes the most sense when it comes to our incredible devotion as a society now to Justice and to helping those who are outside of our own Social Circle or even National Circle what's the reasoning behind it from an evolutionary perspective everything is just supposed to be naturally violent and yet why do we all sudden have just this incredible Focus to help those who are different from us in ways that doesn't benefit us at all and I would say the Judo Christian values are the reason why they've come into our culture and they've radically impacted things and so you see things like sympathy compassion Agape loves sacrificial love you see things like hope you know we are irredeemably hope-based creatures and I don't think you can get there without a firm Eternal understanding of what"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Secular humanism does not assume innate human goodness and cooperation sympathy and forgiveness can arise through practical problem-solving and game-theoretic interdependence within the debate’s dispute over whether Christianity.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that Dillahunty directly corrects the claim about secular humanism and supplies a non-Christian, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because Game theory is a relevant explanatory framework but the excerpt offers no, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why secular humanism does not assume innate human goodness and cooperation sympathy and forgiveness can arise through practical problem-solving, answer the competing explanation, and show decisive contact with pro-christianity-explains-altruism-hope under a consistently applied evidential standard. Locked score: 77 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-16/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-16/schema.json",
+    "shape": {
+      "moveId": "con-natural-account-of-cooperation",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

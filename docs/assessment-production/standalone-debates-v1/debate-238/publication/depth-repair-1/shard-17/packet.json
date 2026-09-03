@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 17,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-jesus-transformed-roman-morality.description",
+    "moveProse.pro-jesus-transformed-roman-morality.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-jesus-transformed-roman-morality",
+    "sectionId": "moral-experiential-fit",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 960,
+      "endEvent": 976,
+      "startMs": 2087099,
+      "endMs": 2128320,
+      "excerpt": "simply going back to the Roman Empire what we're talking about when it came to who Jesus was what his environment was how he made changes connected to the rationality perhaps of whether this guy was even God or what this movement looked like my whole point was it was totally natural to have a slave a mistress and a wife for a male and do whatever you want in any orifice you want it was totally natural it would have been extremely unnatural for us to have said hey the races they're all equal by no means whatsoever and that's why you have so many philosophers writing about that and so my whole point is not"
+    },
+    "quoteEligibleExactSpans": [
+      "going back to the Roman Empire",
+      "how he made changes connected to the rationality",
+      "hey the races they're all equal"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Knechtle says this is his point and continues his exchange with Dillahunty about the source of moral practices.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "pro-central-experiential-fit",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "con-natural-account-of-cooperation"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "pro-roman-change-to-natural-account",
+        "targetMoveId": "con-natural-account-of-cooperation",
+        "text": "Jesus's teaching is said to have introduced striking moral changes in a Roman environment where slavery and inequality were ordinary.",
+        "contacted": true,
+        "decisive": false
+      }
+    ],
+    "proposition": "The contrast between ordinary Roman practices and the movement's egalitarian moral changes supports Christianity's distinctive historical influence.",
+    "inventoryRationale": "This refines Knechtle's broad cultural claim into an asserted historical contrast with Roman norms.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-jesus-transformed-roman-morality",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "A contrast between Roman norms and later egalitarian change can support distinctive historical influence, but influence does not by itself establish Jesus's divinity or Christianity's rational truth."
+          },
+          "evidenceWarrant": {
+            "value": 43,
+            "rationale": "Claims about ordinary Roman sexual practice, slavery, racial inequality, and Jesus-driven change are asserted broadly without chronology, sources, comparison groups, or a defended causal link."
+          },
+          "responsiveness": {
+            "value": 67,
+            "rationale": "The historical contrast engages the secular rival by alleging a distinctive Christian change, but it does not answer how game-theoretic cooperation can arise or separate Christian from other causes."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Distinctive moral influence is pertinent to experiential fit, yet the move only partially advances the rationality burden because causal influence is weaker than supernatural warrant."
+          },
+          "precisionClarity": {
+            "value": 62,
+            "rationale": "The intended Roman-versus-Christian contrast is recoverable, but undefined eras, sweeping claims about what was 'totally natural,' and the unfinished ending obscure exact scope."
+          },
+          "calibrationCharity": {
+            "value": 49,
+            "rationale": "The description generalizes Roman conduct and equality norms with little qualification and implies a Jesus-centered cause without acknowledging rival historical influences or gradual change."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-jesus-transformed-roman-morality",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "A contrast between Roman norms and later egalitarian change could show distinctive influence, but the move does not establish causation or connect that influence to Jesus's divinity."
+          },
+          "evidenceWarrant": {
+            "value": 51,
+            "rationale": "Claims about normalized slavery, sexual license, racial inequality, and subsequent Christian change are asserted without chronology, representative sources, or rival causal comparison."
+          },
+          "responsiveness": {
+            "value": 68,
+            "rationale": "The historical contrast pushes back on the claim that Christian virtues are merely generic cooperation, but it does not engage the proposed game-theoretic mechanism directly."
+          },
+          "relevanceBurden": {
+            "value": 67,
+            "rationale": "Distinctive moral influence bears on experiential fit, yet even successful social transformation would only indirectly support the rationality of Christianity's core claims."
+          },
+          "precisionClarity": {
+            "value": 64,
+            "rationale": "The Roman examples are vivid, but the relevant time period, meaning of 'changes,' causal agent, and scope of the equality claim are not made auditable."
+          },
+          "calibrationCharity": {
+            "value": 50,
+            "rationale": "The portrayal of Roman morality is sweeping and the move gives no credit to non-Christian moral developments, while implying more from influence than the span can establish."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 63,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 47,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 68,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 68,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 63,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 50,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 60,
+    "relatedMoves": [
+      {
+        "moveId": "con-natural-account-of-cooperation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "proposition": "Secular humanism does not assume innate human goodness, and cooperation, sympathy, and forgiveness can arise through practical problem-solving and game-theoretic interdependence.",
+        "sourceExcerpt": "secular humanism in all three of the manifestos and in every version of the the secular ethics that I've advocated for that other organizations have put out isn't humans are ultimately good although I think that humans are generally better than some people might expect it is we live here and we have to solve problems and we have no one outside of us to reach to we have no we can't appeal to a god that we have no rational reason to think exist we can't appeal to some sort of external we are left to our own devices is what secular humanism says and the the things that are positive that you were pointing to are not functions of Christianity at all forgiveness cooperation uh sympathy none of those things are necessarily direct uh products of Christianity exclusively they are instead the result of properly applied Game Theory the the recognition of you and I have to cooperate rate to some extent and figuring out to what extent that is that is the principle"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "The contrast between ordinary Roman practices and the movement's egalitarian moral changes supports Christianity's distinctive historical influence within the debate’s dispute over whether Christianity possesses rational warrant.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that The historical contrast engages the secular rival by alleging a distinctive Christian, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because Claims about ordinary Roman sexual practice slavery racial inequality and Jesus-driven change, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why the contrast between ordinary roman practices and the movement's egalitarian moral changes supports christianity's distinctive historical influence, answer the strongest competing explanation, and show decisive contact with con-natural-account-of-cooperation under a consistently applied evidential standard. Locked score: 60 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-17/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-17/schema.json",
+    "shape": {
+      "moveId": "pro-jesus-transformed-roman-morality",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

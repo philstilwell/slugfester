@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 2,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-rationality-requires-reality-consistency.description",
+    "moveProse.con-rationality-requires-reality-consistency.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-rationality-requires-reality-consistency",
+    "sectionId": "epistemic-warrant",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 326,
+      "endEvent": 348,
+      "startMs": 694560,
+      "endMs": 747060,
+      "excerpt": "but internal consistency isn't enough um Fantasy games with a rule setting for their magic system can be internally consistent Mario is internally consistent you have a certain jump height maximum run down maximum even using the game uh glitches to to do a speed run is consistent which is why you can have tool assisted speed runs sorry if I'm getting all geeky on everybody but it would be irrational to claim that Mario can violate the rules of the game or if you prefer Dungeons and Dragons has a magic system and a set of rules that govern that aspect of the game and as long as an act within the game is consistent with those rules it's rational that type of rationality does us no good internal consistency isn't relevant to what we're talking about today in order for something to be rational it needs to be consistent with the facts of reality"
+    },
+    "quoteEligibleExactSpans": [
+      "internal consistency isn't enough",
+      "that type of rationality does us no good",
+      "consistent with the facts of reality"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Dillahunty's source-locked opening statement.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-central-reality-test",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Internal consistency alone cannot confer relevant rationality; a belief must also be consistent with the facts of reality.",
+    "inventoryRationale": "This defines the principal epistemic standard used throughout Dillahunty's case.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-rationality-requires-reality-consistency",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The game analogies coherently distinguish internal rule consistency from correspondence with reality, though the required evidential test remains only broadly stated."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "Mario and Dungeons and Dragons concretely illustrate the distinction, but they support a conceptual point rather than documenting how Christianity conflicts with reality."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "The move directly addresses the motion by specifying what rationality must require beyond a belief system's internal consistency."
+          },
+          "relevanceBurden": {
+            "value": 90,
+            "rationale": "Defining rational belief as constrained by facts of reality directly establishes the central standard for the con side's critical burden."
+          },
+          "precisionClarity": {
+            "value": 86,
+            "rationale": "The contrast between consistency within fictional rules and consistency with reality is clear, stable, and readily auditable from the examples."
+          },
+          "calibrationCharity": {
+            "value": 80,
+            "rationale": "The claim appropriately limits itself to saying internal consistency is insufficient, but it compresses possible meanings of rationality into one preferred standard."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-rationality-requires-reality-consistency",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The game examples coherently show why internal consistency alone does not connect a belief to external reality, though the positive standard is compressed."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "Mario and Dungeons and Dragons provide apt counterexamples to sufficiency, but they illustrate rather than fully defend the proposed reality-based standard."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "The move directly addresses the motion's meaning of rationality and identifies the evidential requirement the rest of the Christian case must satisfy."
+          },
+          "relevanceBurden": {
+            "value": 91,
+            "rationale": "Requiring consistency with the facts of reality squarely advances the con side's central locked burden concerning rational warrant."
+          },
+          "precisionClarity": {
+            "value": 82,
+            "rationale": "The distinction between internal consistency and fit with reality is clear, but 'consistent with' leaves confirmation and mere compatibility insufficiently distinguished."
+          },
+          "calibrationCharity": {
+            "value": 77,
+            "rationale": "The move fairly grants that fictional systems can be internally coherent, but saying internal consistency is irrelevant overstates its limited role in rational assessment."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 85,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 75,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 89,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 91,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 84,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 79,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 84,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Internal consistency alone cannot confer relevant rationality; a belief must also be consistent with the facts of reality within the debate’s dispute over whether Christianity possesses rational warrant.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that Defining rational belief as constrained by facts of reality directly establishes the, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because Mario and Dungeons and Dragons concretely illustrate the distinction but they support, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why internal consistency alone cannot confer relevant rationality a belief must also be consistent with the facts of reality, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 84 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-02/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-02/schema.json",
+    "shape": {
+      "moveId": "con-rationality-requires-reality-consistency",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

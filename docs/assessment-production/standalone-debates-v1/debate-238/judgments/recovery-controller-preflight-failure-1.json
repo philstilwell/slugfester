@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-recovery-controller-preflight-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-pre-model-deterministic-controller-failure",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "controller": "scripts/tmp-run-judgment-shard-recovery-238.mjs",
+  "error": "recovery shards are not an exact ordered inventory partition",
+  "exitCode": 1,
+  "failedAt": "2026-09-02T19:49:56.000Z",
+  "modelCallsStarted": 0,
+  "modelOutputsWritten": 0,
+  "diagnosis": "The preflight compared section-grouped shard order with global transcript order. Section grouping is valid when each move appears exactly once; final mechanical assembly restores the frozen inventory order.",
+  "correctionScope": "Replace the incorrect global-order equality test with exact membership, uniqueness, and count checks. Do not change shard membership, inventory bytes, evidence, prompts, requested fields, or model settings."
+}

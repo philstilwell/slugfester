@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-built-in-subagent-recovery-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardId": "section-01-epistemic-warrant",
+  "authorization": "I authorize two fresh built-in isolated GPT-5.6 Sol subagents to replace Debate 238’s failed Section 1 pass-a and pass-b command-line shards, using only the frozen score-blind packet and separate output paths.",
+  "execution": {
+    "surface": "built-in-collaboration-subagent",
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "freshContextPerPass": true,
+    "simultaneousLaunch": true,
+    "mutuallyBlind": true,
+    "scoreBlind": true,
+    "publicationBlind": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "inputs": {
+    "plan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/plan.json",
+      "sha256": "cabae3a4074f699bea5ac6cd37b9f87503ccef01e27e24c661398b0e8332bb40",
+      "bytes": 3592
+    },
+    "contract": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/contract.json",
+      "sha256": "9ce19a08fc8497506b6942ca09d86b440ad4da1fd876f4aeaa4bdd80b37e0529",
+      "bytes": 2429
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+      "sha256": "87897c0777cd333e69a249e8d808114d8a4825006077529b29522330aca3df0e"
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+      "sha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab"
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    }
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/debate238_pass_a_section1",
+      "shardPlan": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/pass-a/shard-plan.json",
+        "sha256": "85334dc6cbbe555f5bd6f5b2fb529114e4fcd286ae01a99040aa5c5c0d71f7f7",
+        "bytes": 555
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/pass-a/section-01-epistemic-warrant.json",
+        "sha256": "7dadde4b1c73084591b2d3f526cc753917708530954649edd2623809d0dd1a42",
+        "bytes": 9159
+      },
+      "judgments": 5,
+      "dimensionRatings": 30,
+      "validationStatus": "complete-and-schema-valid",
+      "completedAt": "2026-09-02T21:53:22.746Z"
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/debate238_pass_b_section1",
+      "shardPlan": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/pass-b/shard-plan.json",
+        "sha256": "5a28e74fa096513c603ca3676fec652197bccfbde9f60bd0d6fbf262be33281f",
+        "bytes": 555
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/pass-b/section-01-epistemic-warrant.json",
+        "sha256": "114fb2ff65def6192052e1408cf1cbc064fbb205007386db713c98201f42a616",
+        "bytes": 9211
+      },
+      "judgments": 5,
+      "dimensionRatings": 30,
+      "validationStatus": "complete-and-schema-valid",
+      "completedAt": "2026-09-02T21:53:29.216Z"
+    }
+  ],
+  "validation": {
+    "topLevelFieldsExact": true,
+    "identityConstantsExact": true,
+    "passValuesExact": true,
+    "isolationDeclarationsExact": true,
+    "auditDeclarationsExact": true,
+    "moveOrderExact": true,
+    "judgmentCountPerPass": 5,
+    "dimensionRatingsPerPass": 30,
+    "integerRangeValid": true,
+    "rationaleMinimumCharactersValid": true,
+    "inputHashesUnchangedAfterExecution": true,
+    "otherRecoveryShardsLaunched": false
+  },
+  "startedAt": "2026-09-02T21:50:39.000Z",
+  "completedAt": "2026-09-02T21:54:34.000Z"
+}

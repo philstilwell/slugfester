@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-standalone-audio-source-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-audio-source-acquisition",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "sourceVideoId": "d0S_Ul-kRwQ",
+  "canonicalUrl": "https://www.youtube.com/watch?v=d0S_Ul-kRwQ",
+  "requiredMoveIds": [
+    "con-evidentiary-warrant-can-differ-by-person",
+    "con-forgiveness-and-hell-undermine-justice",
+    "con-historical-evidence-can-be-source-strengthened"
+  ],
+  "clipWindows": [
+    {
+      "moveId": "con-evidentiary-warrant-can-differ-by-person",
+      "startMs": 5564320,
+      "endMs": 5605219,
+      "sourceSpanStartMs": 5569320,
+      "sourceSpanEndMs": 5600219
+    },
+    {
+      "moveId": "con-forgiveness-and-hell-undermine-justice",
+      "startMs": 5835760,
+      "endMs": 5876900,
+      "sourceSpanStartMs": 5840760,
+      "sourceSpanEndMs": 5871900
+    },
+    {
+      "moveId": "con-historical-evidence-can-be-source-strengthened",
+      "startMs": 7440400,
+      "endMs": 7501280,
+      "sourceSpanStartMs": 7445400,
+      "sourceSpanEndMs": 7496280
+    }
+  ],
+  "sourceAcquisition": {
+    "selectedFormatId": "18",
+    "selectedClientRoute": "android,web",
+    "method": "Resolve one public format-18 media URL and stream its audio through ffmpeg into a local normalized source.",
+    "failedPreliminaryRoutes": [
+      {
+        "formatId": "140",
+        "clientRoute": "android_vr-default-extraction",
+        "result": "http-403-before-media-bytes"
+      },
+      {
+        "formatId": "18",
+        "clientRoute": "android_vr",
+        "result": "http-403-before-media-bytes"
+      }
+    ],
+    "paidService": false,
+    "directIncrementalCostUsd": 0
+  },
+  "clipEncoding": {
+    "container": "mp3",
+    "channels": 1,
+    "sampleRateHz": 16000,
+    "targetBitRateKbps": 64,
+    "contextPaddingBeforeMs": 5000,
+    "contextPaddingAfterMs": 5000
+  },
+  "transcription": {
+    "model": "gpt-transcribe",
+    "responseFormat": "text",
+    "onePaidAttemptPerClip": true,
+    "sequentialCalls": true,
+    "retryWithoutFurtherAuthorization": false,
+    "estimatedCombinedDurationSeconds": 142.919,
+    "priceUsdPerMinute": 0.0045,
+    "estimatedMaximumCostUsd": 0.0108,
+    "estimatePreviouslyReportedAndAuthorized": true
+  }
+}

@@ -1,0 +1,687 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-controller-acceptance",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-accepted",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "acceptedAt": "2026-09-02",
+  "authorization": {
+    "authorizedByUser": true,
+    "authorizationText": "Proceed with that recommendation.",
+    "directCostUsd": 0
+  },
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription"
+  },
+  "rejectedArtifact": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-1.json",
+    "sha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "bytes": 38509
+  },
+  "preservedRejectedArtifact": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/preserved-invalid-output-before-depth-repair-1.json",
+    "sha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "bytes": 38509,
+    "byteIdentical": true
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-2-after-depth-repair.json",
+    "sha256": "b5fc3bd48bbcbad56f5caf68321a6d1b8d7e1aa335c6027bc3220c535eeb4faf",
+    "bytes": 37915
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/packet.json",
+    "sha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "bytes": 213557
+  },
+  "contract": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/contract.json",
+    "sha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "bytes": 1874
+  },
+  "repairBoundary": {
+    "shardCount": 22,
+    "maximumWritableFieldsPerShard": 2,
+    "totalChangedLeafFields": 44,
+    "attemptsPerShard": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "nonWritableFieldsByteValueEquivalent": true,
+    "identityEvidenceInventoryJudgmentsAdjudicationAndScoresUnchanged": true
+  },
+  "validation": {
+    "status": "passed",
+    "moveCount": 22,
+    "descriptionWords": {
+      "minimum": 22,
+      "maximum": 27,
+      "mean": 23.73,
+      "belowTwentyShare": 0
+    },
+    "critiqueWords": {
+      "minimum": 115,
+      "maximum": 122,
+      "mean": 119.95
+    },
+    "critiqueCharacters": {
+      "minimum": 923,
+      "maximum": 1076,
+      "mean": 994.14
+    },
+    "critiqueComponents": {
+      "total": 88,
+      "unique": 88,
+      "uniqueShare": 1
+    },
+    "boilerplate": {
+      "ngramSize": 6,
+      "minimumDocuments": 6,
+      "commonNgrams": 0,
+      "meanCoveredRatio": 0,
+      "maximumCoveredRatio": 0,
+      "meanLimit": 0.15,
+      "maximumLimit": 0.25
+    },
+    "fourLabeledSentencesPerCritique": true,
+    "ordinaryTerminalPunctuation": true
+  },
+  "shards": [
+    {
+      "shardNumber": 1,
+      "moveId": "pro-limited-evidence-preserves-free-trust",
+      "writableFields": [
+        "moveProse.pro-limited-evidence-preserves-free-trust.description",
+        "moveProse.pro-limited-evidence-preserves-free-trust.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-01/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-01/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-01/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "043a901ce98ce6105148f07afef04d13a7d37452d38bc6dfccc9898aa3b2f67c",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-01/execution.json",
+      "executionSha256": "b2421e0726454d62b61c5b4011b775aba7ce98304d925d5f5390ce99a05a788d",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1052,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 2,
+      "moveId": "con-rationality-requires-reality-consistency",
+      "writableFields": [
+        "moveProse.con-rationality-requires-reality-consistency.description",
+        "moveProse.con-rationality-requires-reality-consistency.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-02/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-02/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-02/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "80a1766f0c0c67b724bb65cd192de45bfe770d169e9fe0c8a02629832a45ad67",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-02/execution.json",
+      "executionSha256": "d7caf36b3f30e0026bebd75fcde59d100c2515093df0553a4f8463876d006eff",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 118,
+        "critiqueCharacters": 934,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 3,
+      "moveId": "pro-multifaceted-return-to-faith",
+      "writableFields": [
+        "moveProse.pro-multifaceted-return-to-faith.description",
+        "moveProse.pro-multifaceted-return-to-faith.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-03/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-03/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-03/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "0b83e3b173566634dbb3bf5c982fb5380aca6920d36b83cc5eb5c11942ffd1e0",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-03/execution.json",
+      "executionSha256": "71dfc32bd0a9bc1d6a2a24b2e440a23ff34c4a7376ebf761fdae112bb3ae17e2",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 24,
+        "critiqueWords": 120,
+        "critiqueCharacters": 993,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 4,
+      "moveId": "con-communicative-god-leaves-burden-unmet",
+      "writableFields": [
+        "moveProse.con-communicative-god-leaves-burden-unmet.description",
+        "moveProse.con-communicative-god-leaves-burden-unmet.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-04/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-04/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-04/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "c2e581e8540c7132dbcb619acc15fe9669751ae5fbca7c419e70c608b31e17cd",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-04/execution.json",
+      "executionSha256": "8b99412b40ce64a8f0cea22eeaecb40d28224690ba8ad04a2f5e502d2a0ee96e",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 24,
+        "critiqueWords": 118,
+        "critiqueCharacters": 947,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 5,
+      "moveId": "con-evidentiary-warrant-can-differ-by-person",
+      "writableFields": [
+        "moveProse.con-evidentiary-warrant-can-differ-by-person.description",
+        "moveProse.con-evidentiary-warrant-can-differ-by-person.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-05/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-05/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-05/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "67a7553a2e82636cee0365b35e1b69cd72b698b177a7fe3aae093e6610e8bed7",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-05/execution.json",
+      "executionSha256": "2068363c35e36c825a6f8296dc9b7eb62bd4f47593387364956ba2a71fea4e06",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 25,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1034,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 6,
+      "moveId": "pro-jesus-claims-divinity",
+      "writableFields": [
+        "moveProse.pro-jesus-claims-divinity.description",
+        "moveProse.pro-jesus-claims-divinity.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-06/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-06/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-06/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "d1003782a5d14d9ecb80e41bf7a9f51989a916df397d8a50717f4c8f697898e4",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-06/execution.json",
+      "executionSha256": "5b028b24344ab4c585dfe08a91ff2675d0b1d5c14452023e3062a92b3903c333",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 25,
+        "critiqueWords": 118,
+        "critiqueCharacters": 942,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 7,
+      "moveId": "con-report-cannot-establish-forgiveness",
+      "writableFields": [
+        "moveProse.con-report-cannot-establish-forgiveness.description",
+        "moveProse.con-report-cannot-establish-forgiveness.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-07/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-07/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-07/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "6b60ff2e357fdd5a0a0eca2b2886c6d6ec086481bb7e27b8055697748a848c8e",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-07/execution.json",
+      "executionSha256": "a3125441a01f6450d575de8e6d42ebb64a258c0bec37f888002c02ba44f60e32",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 122,
+        "critiqueCharacters": 923,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 8,
+      "moveId": "pro-gospel-transmission-reliability",
+      "writableFields": [
+        "moveProse.pro-gospel-transmission-reliability.description",
+        "moveProse.pro-gospel-transmission-reliability.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-08/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-08/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-08/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "b5b78ea91d931c288841c93c5e9ab28d1daa3e79af7dc7f827254dfb52411a9d",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-08/execution.json",
+      "executionSha256": "71bcb2c5b60f794eaa1210a9ad83f87e1c77ced5cbe745744c96dc72ea17ca87",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 22,
+        "critiqueWords": 119,
+        "critiqueCharacters": 988,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 9,
+      "moveId": "con-historical-evidence-can-be-source-strengthened",
+      "writableFields": [
+        "moveProse.con-historical-evidence-can-be-source-strengthened.description",
+        "moveProse.con-historical-evidence-can-be-source-strengthened.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-09/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-09/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-09/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "02686da038780bca1d80b4e1840a21f3b430718070220f1fe91aa82b228f4a13",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-09/execution.json",
+      "executionSha256": "28086e33a7ee5f3dd2ac10782973d10f8b1b70ff79539e0834e1ced1895e785e",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 118,
+        "critiqueCharacters": 1030,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 10,
+      "moveId": "pro-resurrection-cumulative-indicia",
+      "writableFields": [
+        "moveProse.pro-resurrection-cumulative-indicia.description",
+        "moveProse.pro-resurrection-cumulative-indicia.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-10/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-10/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-10/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "99475d79e1039919bdf9d1ec7377a285ccd1a0636f93f9ef5bb4d8edbbf7d57e",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-10/execution.json",
+      "executionSha256": "7c3b16d22b9d8d217fae15f5d732d8482a973f3ab880030c0cdb09e1cc66ca9f",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 24,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1074,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 11,
+      "moveId": "con-supernatural-claims-undemonstrated",
+      "writableFields": [
+        "moveProse.con-supernatural-claims-undemonstrated.description",
+        "moveProse.con-supernatural-claims-undemonstrated.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-11/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-11/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-11/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "7b5b1d704018c22aa5ef032ec36487bb0378f8970253baf00254d7d11deec5b6",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-11/execution.json",
+      "executionSha256": "8ea7d3831cf55990f451afa8ca52390fc8c34e70ab7b5d7219c2e3a3b2ba4f77",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 24,
+        "critiqueWords": 117,
+        "critiqueCharacters": 1062,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 12,
+      "moveId": "pro-six-source-resurrection-reply",
+      "writableFields": [
+        "moveProse.pro-six-source-resurrection-reply.description",
+        "moveProse.pro-six-source-resurrection-reply.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-12/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-12/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-12/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "70b85282b63d044a328d5bf2b0805c4ef3e271dd4127773da61ed29129d4c768",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-12/execution.json",
+      "executionSha256": "51954490d7828f056ebec3dbc9a2840a173d5b3f50b04ad61506f8d62425b8f5",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 27,
+        "critiqueWords": 116,
+        "critiqueCharacters": 933,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 13,
+      "moveId": "con-scriptural-story-is-not-miracle-evidence",
+      "writableFields": [
+        "moveProse.con-scriptural-story-is-not-miracle-evidence.description",
+        "moveProse.con-scriptural-story-is-not-miracle-evidence.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-13/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-13/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-13/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "588cc3666e06395635d358379af3eab50f65a6b3fe596804c2a5eb6040d3fca9",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-13/execution.json",
+      "executionSha256": "8dfa9386795c134ef21949ca8ec768082e92f4a815b362b67d61defa12602255",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 22,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1076,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 14,
+      "moveId": "con-observed-effect-needs-causal-link",
+      "writableFields": [
+        "moveProse.con-observed-effect-needs-causal-link.description",
+        "moveProse.con-observed-effect-needs-causal-link.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-14/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-14/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-14/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "1479be664c49b3e7be0975d022a3415a1debbdf395338054fd2f443f3eb5f427",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-14/execution.json",
+      "executionSha256": "25f99aa6680e9c1292e2063b6ba6054708bbf86e04257dd4e7774341ea6fea84",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 122,
+        "critiqueCharacters": 934,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 15,
+      "moveId": "pro-christianity-explains-altruism-hope",
+      "writableFields": [
+        "moveProse.pro-christianity-explains-altruism-hope.description",
+        "moveProse.pro-christianity-explains-altruism-hope.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-15/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-15/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-15/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "e290aed97cdc99e2e94efec03efb0a9c51667037f9b65e2e4a1798d9b2953eee",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-15/execution.json",
+      "executionSha256": "9c1fc8fb72fb2c1707906ac8183e8bd285c5d4cbdfff66794e5eba79a6d17030",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1024,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 16,
+      "moveId": "con-natural-account-of-cooperation",
+      "writableFields": [
+        "moveProse.con-natural-account-of-cooperation.description",
+        "moveProse.con-natural-account-of-cooperation.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-16/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-16/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-16/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "a79dbcf6d04df4305fcf4ac1ce9a33e30b027e31bcb784174f7815e973f7e6eb",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-16/execution.json",
+      "executionSha256": "264a7e7b3ddd01a3ef702e116b60a1039c01cc7d481d71271c64f595c0b13cb8",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 24,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1007,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 17,
+      "moveId": "pro-jesus-transformed-roman-morality",
+      "writableFields": [
+        "moveProse.pro-jesus-transformed-roman-morality.description",
+        "moveProse.pro-jesus-transformed-roman-morality.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-17/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-17/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-17/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "946a063ab0595d3e8ccdfcbf322c681df5de385e5565d0ad4f64772a1a2f2616",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-17/execution.json",
+      "executionSha256": "41bf826aaf9b2d4c937b597c76d0e9028fb90ebe80666ca8daa5b4bb590268b9",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 25,
+        "critiqueWords": 122,
+        "critiqueCharacters": 1051,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 18,
+      "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+      "writableFields": [
+        "moveProse.con-social-benefit-does-not-warrant-supernatural-core.description",
+        "moveProse.con-social-benefit-does-not-warrant-supernatural-core.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-18/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-18/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-18/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "2698573b0626740263294263cc1e99ff617e8eac1c2988f8958a7f3a475ac0fd",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-18/execution.json",
+      "executionSha256": "45b7fbfcc96140ec8a5d155513689dc02680f719526bd6816afeaa709615fa1a",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 121,
+        "critiqueCharacters": 952,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 19,
+      "moveId": "con-religious-desire-does-not-show-truth",
+      "writableFields": [
+        "moveProse.con-religious-desire-does-not-show-truth.description",
+        "moveProse.con-religious-desire-does-not-show-truth.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-19/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-19/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-19/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "9a0893e676b79d7726455b69d7987a9b9a985ed74d7e7dd75cacb5eab86b6e5f",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-19/execution.json",
+      "executionSha256": "ba7c6da6eed12f744d0c9bca8625f3a62403d49386597af4c3af683db1ab2494",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 24,
+        "critiqueWords": 120,
+        "critiqueCharacters": 1031,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 20,
+      "moveId": "pro-love-and-wrath-are-coherent",
+      "writableFields": [
+        "moveProse.pro-love-and-wrath-are-coherent.description",
+        "moveProse.pro-love-and-wrath-are-coherent.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-20/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-20/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-20/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "95050e9b48120dc8c5f4707a9538712134fbe48a06c38b33e09b17801b6f89bb",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-20/execution.json",
+      "executionSha256": "804fbd8856c48170980e81caab4d6c5cd3b53a72c516c2ef1ecdfd1128346af0",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 120,
+        "critiqueCharacters": 925,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 21,
+      "moveId": "con-biblical-violence-challenges-character",
+      "writableFields": [
+        "moveProse.con-biblical-violence-challenges-character.description",
+        "moveProse.con-biblical-violence-challenges-character.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-21/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-21/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-21/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "efd7e4ed17f6c3b01dc15d8fb553215edf91e32b3be224d7e1a2d92c6a1dd233",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-21/execution.json",
+      "executionSha256": "69746396a30754961baf5b6589ed08e7338be1c6ec4dcc43c91c78c207b54899",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 23,
+        "critiqueWords": 121,
+        "critiqueCharacters": 990,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    },
+    {
+      "shardNumber": 22,
+      "moveId": "con-forgiveness-and-hell-undermine-justice",
+      "writableFields": [
+        "moveProse.con-forgiveness-and-hell-undermine-justice.description",
+        "moveProse.con-forgiveness-and-hell-undermine-justice.critique"
+      ],
+      "packet": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-22/packet.json",
+      "schema": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-22/schema.json",
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-22/result.json",
+      "attemptsAllowed": 1,
+      "status": "passed",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "resultSha256": "d4c4c7a94c11740c3d7b66fed6aff64fc5fbd3745e480a956692b8ff3128df0a",
+      "execution": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-22/execution.json",
+      "executionSha256": "dba0fe5e6b1831d832f608eb958cf2caa4f9f5d46c6564a8ecafe37390856c10",
+      "validation": {
+        "status": "passed",
+        "descriptionWords": 25,
+        "critiqueWords": 115,
+        "critiqueCharacters": 969,
+        "critiqueSentences": 4,
+        "labelsInRequiredOrder": true
+      }
+    }
+  ]
+}

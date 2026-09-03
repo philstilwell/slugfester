@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 13,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-scriptural-story-is-not-miracle-evidence.description",
+    "moveProse.con-scriptural-story-is-not-miracle-evidence.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-scriptural-story-is-not-miracle-evidence",
+    "sectionId": "resurrection-miracles",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 584,
+      "endEvent": 606,
+      "startMs": 1250340,
+      "endMs": 1301280,
+      "excerpt": "performing Miracles that haven't been demonstrated that can't be confirmed all of those things are still Supernatural as well it's just that it's easier to talk about the sun standing still in the sky than it is to say that if I Spit on the dirt and rub it on somebody's eye it doesn't heal them we have no evidence that it's ever been done other than the story which isn't evidence for a proposition it's just a claim itself but there's plenty of things you know that I mean the entirety of of Revelation uh almost the entirety of it I'm sure there are words that aren't um it is bizarre it almost wasn't even included in the doctrine but the very notion that somebody uh died and was resurrected uh which we have no empirical evidence for it's just a story in the book um that's a supernatural claim that I would put in that list as well"
+    },
+    "quoteEligibleExactSpans": [
+      "the story which isn't evidence for a proposition",
+      "we have no empirical evidence for"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "In open discussion, Knechtle asks why Dillahunty uses Old Testament examples; this is Dillahunty's continuous answer applying the same objection to New Testament miracles.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-testimony-insufficient",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-resurrection-cumulative-indicia",
+      "pro-gospel-transmission-reliability"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-story-to-resurrection",
+        "targetMoveId": "pro-resurrection-cumulative-indicia",
+        "text": "A report that somebody died and returned is the supernatural claim itself, not independent empirical evidence for it.",
+        "contacted": true,
+        "decisive": true
+      },
+      {
+        "componentId": "con-story-to-gospel-reliability",
+        "targetMoveId": "pro-gospel-transmission-reliability",
+        "text": "Accurate transmission of a story would not by itself confirm the miracle narrated by that story.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "New Testament miracle and resurrection stories remain unconfirmed supernatural claims rather than evidence establishing their own truth.",
+    "inventoryRationale": "This distinguishes textual reporting from evidence for the reported supernatural event.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-scriptural-story-is-not-miracle-evidence",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The claim-versus-confirmation distinction coherently blocks a story from self-validating, but saying a story is not evidence at all overlooks that testimony can carry limited evidential weight."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The move applies its standard to healing and resurrection reports, but offers no analysis of the reports' provenance or corroboration to justify treating them as evidentially null."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "It directly answers both the resurrection indicia and textual-reliability line by explaining that accurate preservation of a report would not itself confirm the reported miracle."
+          },
+          "relevanceBurden": {
+            "value": 85,
+            "rationale": "Separating transmission of a supernatural report from confirmation of its content materially advances the con burden against scriptural testimony as sufficient miracle evidence."
+          },
+          "precisionClarity": {
+            "value": 81,
+            "rationale": "The central distinction is easy to reconstruct through concrete examples, though the phrase story is not evidence blurs the difference between insufficient evidence and no evidence."
+          },
+          "calibrationCharity": {
+            "value": 63,
+            "rationale": "Treating the resurrection account as merely a story states the skepticism too absolutely and does not engage the pro side's cumulative rather than single-report presentation."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-scriptural-story-is-not-miracle-evidence",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The move coherently distinguishes a report of resurrection from independent confirmation of that event, preserving the difference between a proposition and support for it."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "It correctly notes that the cited material is a narrated claim, but provides little analysis of source independence or the circumstances under which testimony can gain evidential weight."
+          },
+          "responsiveness": {
+            "value": 87,
+            "rationale": "It directly answers both the resurrection case and textual-reliability line by explaining why faithfully transmitted miracle narration would not alone confirm the narrated miracle."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Separating textual reporting from confirmation directly advances the con testimony burden and targets a necessary evidential bridge in the resurrection argument."
+          },
+          "precisionClarity": {
+            "value": 82,
+            "rationale": "The story-versus-evidence distinction is vivid and auditable, though the categorical wording that a story is not evidence obscures differences among kinds of testimony."
+          },
+          "calibrationCharity": {
+            "value": 68,
+            "rationale": "Treating the resurrection material as just a story understates Knechtle's cumulative considerations, even while fairly insisting that narration cannot establish its own supernatural content."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 75,
+        "rationale": "The claim-versus-confirmation distinction coherently blocks a story from self-validating, but saying a story is not evidence at all overlooks that testimony can carry limited evidential weight.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a preserves the coherent claim-versus-confirmation distinction while recognizing the important overstatement that testimony or a transmitted report has no evidential weight at all."
+      },
+      "evidenceWarrant": {
+        "value": 70,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 86,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 86,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 82,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 66,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 78,
+    "relatedMoves": [
+      {
+        "moveId": "pro-resurrection-cumulative-indicia",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Witness reports, conversions, an empty tomb, immediate proclamation, costly adherence, and the early church's rapid emergence cumulatively support the resurrection.",
+        "sourceExcerpt": "the resurrection evidence I would take a cumulative case typically one Witnesses and how they reported two Skeptics that converted three expectations of the Gospel the way it was presented and the way it was received for Jewish background and understanding of what they were expecting five voluntary persecution suffering six immediate Proclamation seven empty tomb eight the use of women as eyewitnesses which would have been thrown out and then nine I would have said just the start of the early church has a major Paradigm Shift overnight which typically would have taken hundreds of years for that many people to have shifted from something like Judaism to Christianity"
+      },
+      {
+        "moveId": "pro-gospel-transmission-reliability",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Numerous manuscripts, early dating, patristic quotations, and decentralized transmission make the Gospel text reliable against claims of coordinated alteration.",
+        "sourceExcerpt": "uh the reliability of the gospels I think are pretty obvious you got the manuscripts and the dates 5800 manuscripts you get the dates within 15 years probably even closer to the events themselves you have the church fathers you take away all the manuscripts themselves you still have the church fathers counting up for over 1 million New Testament quotes I mean that's that's pretty impressive you know there was never a time when any one man or group of men had control over the text of the New Testament there was never this Christian utman all claims that there were changes in theology or doctrine or simply without Merit"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "New Testament miracle and resurrection stories remain unconfirmed supernatural claims rather than evidence establishing their own truth within the debate’s dispute over whether Christianity possesses rational warrant.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that It directly answers both the resurrection indicia and textual-reliability line by explaining, making the move’s inferential contribution and assessable. Principal limitation: Its calibration and charity remains constrained because Treating the resurrection account as merely a story states the skepticism too, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why new testament miracle and resurrection stories remain unconfirmed supernatural claims rather than evidence establishing their own truth, answer the competing explanation, and show contact with pro-resurrection-cumulative-indicia, pro-gospel-transmission-reliability under a consistently applied evidential standard. Locked score: 78 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-13/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-13/schema.json",
+    "shape": {
+      "moveId": "con-scriptural-story-is-not-miracle-evidence",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

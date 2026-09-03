@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-and-pending",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "a4fdea711bee370631a41baf34ec5e907dac0e5173c28f99c8efef377b7721e6",
+    "bytes": 102033
+  },
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-2-after-depth-repair.json",
+    "sha256": "b5fc3bd48bbcbad56f5caf68321a6d1b8d7e1aa335c6027bc3220c535eeb4faf",
+    "bytes": 37915
+  },
+  "definitions": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "23fa212e156bf6dc3c695cce1661e19f985ae0bf34741bc863a80f9eb202cc5f",
+    "bytes": 4453
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "high",
+      "freshBuiltInSubagent": true,
+      "mutuallyBlind": true,
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attemptsAllowed": 1,
+      "directCostUsd": 0
+    },
+    {
+      "pass": "pass-b",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "high",
+      "freshBuiltInSubagent": true,
+      "mutuallyBlind": true,
+      "output": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attemptsAllowed": 1,
+      "directCostUsd": 0
+    }
+  ],
+  "adjudication": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "freshBuiltInSubagent": true,
+    "anonymousCandidateUnion": true,
+    "unionCountDerivedAfterPassValidation": true,
+    "attemptsAllowed": 1,
+    "directCostUsd": 0
+  },
+  "scoresAndCritiquesImmutable": true
+}

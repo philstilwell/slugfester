@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-transport-failure-diagnosis",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "judgment-gate-paused-after-exhausted-bounded-recovery",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "diagnosedAt": "2026-09-02T20:12:53.000Z",
+  "frozenAssessmentState": {
+    "inventoryPreserved": true,
+    "inventorySha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab",
+    "judgmentOutputsAvailable": 0,
+    "disagreementsExtracted": false,
+    "audioChecksStarted": false,
+    "adjudicationStarted": false,
+    "scorePassStarted": false,
+    "publicationStarted": false
+  },
+  "attempts": [
+    {
+      "kind": "original-simultaneous-monolithic-pair",
+      "passes": 2,
+      "modelOutputs": 0,
+      "result": "stopped-after-2173865-ms-with-both-processes-idle-and-no-final-files",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/transport-failure-1.json",
+        "sha256": "f8f4049242f3809c1ccf5481ec00b19a5b6f93ac3810c9120ed1170aca676563"
+      }
+    },
+    {
+      "kind": "authorized-simultaneous-monolithic-replacement-pair",
+      "passes": 2,
+      "modelOutputs": 0,
+      "result": "both-passes-timed-out-after-900000-ms",
+      "evidence": [
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/pass-a/failure-2.json",
+          "sha256": "2ec0b3ba801db06691fda38de1b5469f9c79b1a0a964ba798e3a315a9333579f"
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/pass-b/failure-2.json",
+          "sha256": "9a3419a711ae3c44b2beb34cf516cd6d7d8c6fcb22f29f6a08fc9d383d11ee3f"
+        }
+      ]
+    },
+    {
+      "kind": "section-scoped-field-disjoint-recovery-pair",
+      "passes": 2,
+      "requestedMovesPerPass": 5,
+      "modelOutputs": 0,
+      "result": "first-shard-pair-timed-out-with-no-output; later-shards-not-launched",
+      "plan": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/plan.json",
+        "sha256": "351812ee4439866b44cd8401168f9e9a6e2c4158fa14cabc043eb70ff3f1e12d"
+      },
+      "evidence": [
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/pass-a/section-01-epistemic-warrant-failure.json",
+          "sha256": "229b5f120264549043655e629f2fd9d437e2aab90e38a6486b3cd47a12e0ebe6"
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/pass-b/section-01-epistemic-warrant-failure.json",
+          "sha256": "32bc3af58cb479a3add671bbfeeab9fb8180c27cd96407fb962eccc60761c202"
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/execution-incomplete.json",
+          "sha256": "7ea12b197a740964c993e371271b39b93331b9e407dc08c6426cc4318d12261c"
+        }
+      ]
+    }
+  ],
+  "diagnosis": {
+    "responseSizeRuledOut": true,
+    "assessmentContentFailure": false,
+    "modelSchemaFailure": false,
+    "modelTransportPathUnavailable": true,
+    "basis": "Both full-output pairs and a five-move section pair returned zero bytes of model output through fresh authenticated isolated contexts. The smaller request failed identically, so reducing output size did not restore service."
+  },
+  "stopRule": {
+    "active": true,
+    "reason": "The refreshed runbook permits one attempt per field-disjoint recovery shard. The first shard attempt for both passes is exhausted, and the required independent-judgment gate remains invalid.",
+    "forbiddenWhileActive": [
+      "another-identical-monolithic-retry",
+      "another-attempt-for-section-01-epistemic-warrant",
+      "manual-or-current-context-judgments",
+      "score-calculation",
+      "publication",
+      "commit-push-or-pull-request-as-a-completed-debate"
+    ],
+    "safeResumptionCondition": "A documented external transport-service recovery plus a new debate-specific user exception authorizing replacement of the exhausted section-01 field shards, or a repository-authorized authenticated isolation surface that does not reuse the failed transport path."
+  },
+  "cost": {
+    "directIncrementalModelCostUsd": 0,
+    "knownSuccessfulTranscriptionCostUsd": 0,
+    "maximumAuthorizedFutureAudioVerificationCostUsd": 0.0108
+  }
+}

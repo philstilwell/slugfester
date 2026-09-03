@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-recovery-shard-contract",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "pass",
+    "shardId",
+    "shardKind",
+    "debateNumber",
+    "debateId",
+    "inventorySha256",
+    "isolation",
+    "audit",
+    "judgments"
+  ],
+  "requiredConstants": {
+    "schemaVersion": "1.0-standalone-primary-judgment-recovery-shard",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "shardKind": "move-ratings",
+    "debateNumber": "238",
+    "debateId": "knechtle-dillahunty-christianity-rational-2023",
+    "inventorySha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab"
+  },
+  "shards": {
+    "section-02-scripture-testimony": [
+      "pro-jesus-claims-divinity",
+      "pro-gospel-transmission-reliability",
+      "con-report-cannot-establish-forgiveness",
+      "con-historical-evidence-can-be-source-strengthened"
+    ],
+    "section-03-resurrection-miracles": [
+      "pro-resurrection-cumulative-indicia",
+      "con-supernatural-claims-undemonstrated",
+      "con-scriptural-story-is-not-miracle-evidence",
+      "pro-six-source-resurrection-reply",
+      "con-observed-effect-needs-causal-link"
+    ],
+    "section-04-moral-experiential-fit": [
+      "pro-christianity-explains-altruism-hope",
+      "con-natural-account-of-cooperation",
+      "pro-jesus-transformed-roman-morality",
+      "con-social-benefit-does-not-warrant-supernatural-core",
+      "con-religious-desire-does-not-show-truth"
+    ],
+    "section-05-divine-character": [
+      "pro-love-and-wrath-are-coherent",
+      "con-biblical-violence-challenges-character",
+      "con-forgiveness-and-hell-undermine-justice"
+    ]
+  },
+  "judgmentFields": {
+    "moveId": "exact required move ID in the order specified for the shard",
+    "assessmentConfidence": "high, medium, or low",
+    "dimensions": [
+      "logicalCoherence",
+      "evidenceWarrant",
+      "responsiveness",
+      "relevanceBurden",
+      "precisionClarity",
+      "calibrationCharity"
+    ],
+    "dimensionValue": "integer from 0 through 100",
+    "dimensionRationale": "concrete source-grounded string of at least 40 characters"
+  },
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "audit": {
+    "completeLockedInventoryReviewed": true,
+    "requestedFieldsOnly": true,
+    "ratingsOnlyNoCalculatedScores": true,
+    "publicationBlind": true,
+    "scoreBlind": true
+  },
+  "prohibitions": [
+    "Do not add, drop, merge, split, reorder, or rewrite moves.",
+    "Do not calculate or mention move totals, section scores, overall scores, margins, or winners.",
+    "Do not author publication prose, fallacy tags, bias tags, or burden adjustments.",
+    "Do not inspect any path not explicitly allowed by plan.json and the pass-specific shard plan."
+  ]
+}

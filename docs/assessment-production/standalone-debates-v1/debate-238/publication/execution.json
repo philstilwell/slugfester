@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0-standalone-publication-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid-after-bounded-card-depth-rhetorical-and-ai-contribution-depth-repairs",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription"
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/packet.json",
+    "sha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "bytes": 213557
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-1.json",
+    "sha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "bytes": 38509
+  },
+  "depthRepairOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-2-after-depth-repair.json",
+    "sha256": "b5fc3bd48bbcbad56f5caf68321a6d1b8d7e1aa335c6027bc3220c535eeb4faf",
+    "bytes": 37915
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/output.json",
+    "sha256": "637d2e54cca718bef5965207b3c4f783caecb3efc907730507b19e45624b4da4",
+    "bytes": 66405
+  },
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "repair": {
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/correction-1-publication-depth.json",
+      "sha256": "d32aa5e2c8185b564c39091410e70409258b37c6a97019f0aee26d17a1d84bf6",
+      "bytes": 5572
+    },
+    "shardAttempts": 22,
+    "shardRetries": 0,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "rhetoricalReview": {
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "0d4dd8089cf45bce9ba42cf8d485dc7224d60cebe90e1734933eb75616d1b857",
+      "bytes": 3326
+    },
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/correction-2-rhetorical-tags.json",
+      "sha256": "d84d9f1db8fce210259d41286b0d426daec65ef4a36afe2a98f1fa5bf5e4e025",
+      "bytes": 6394
+    },
+    "acceptedMoveTags": 13,
+    "acceptedOverallBlunderLinks": 5
+  },
+  "corpusRelative": {
+    "descriptionMean": 23.73,
+    "shortCardShare": 0
+  },
+  "critiqueMetrics": {
+    "meanWords": 119.95,
+    "minimumWords": 115,
+    "maximumWords": 122,
+    "minimumCharacters": 923
+  },
+  "boilerplate": {
+    "ngramSize": 6,
+    "minimumDocuments": 6,
+    "commonNgrams": 0,
+    "meanCoveredRatio": 0,
+    "maximumCoveredRatio": 0,
+    "meanLimit": 0.15,
+    "maximumLimit": 0.25
+  },
+  "validation": {
+    "status": "passed",
+    "sections": 5,
+    "moves": 22
+  },
+  "aiContributionDepthRepair": {
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/correction-3-ai-contribution-depth.json",
+      "sha256": "9b99b117550fab2579fcf86c4d1bfb814880a467d371bc9e171ae228f2652443",
+      "bytes": 16544
+    },
+    "rawOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-3-after-extension-depth-repair.json",
+      "sha256": "7cb900ce1473adbe89cc15602afc138b50f2f2417051f4e741a579d830b39d60",
+      "bytes": 39938
+    },
+    "plan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/plan.json",
+      "sha256": "6dbf6cc8259bb4f87469c50ee453a543fa3370f5493901acc407ed3ee08989e2",
+      "bytes": 10291
+    },
+    "shardAttempts": 10,
+    "shardRetries": 0,
+    "changedLeafFields": 20,
+    "maximumWritableFieldsPerShard": 2,
+    "model": {
+      "slug": "gpt-5.6-sol",
+      "label": "5.6 Sol",
+      "reasoningEffort": "high"
+    },
+    "directIncrementalCostUsd": 0
+  },
+  "contentParity": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/content-parity-audit.json",
+    "sha256": "66ff7313c2c2114d93306b485bd8a0ee1d42d07dd1dc4e3e0f33591b5c5629de",
+    "bytes": 4656
+  }
+}

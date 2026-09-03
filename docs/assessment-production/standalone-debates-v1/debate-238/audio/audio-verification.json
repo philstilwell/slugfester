@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+    "sha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab"
+  },
+  "source": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=d0S_Ul-kRwQ",
+    "formatId": "18",
+    "language": "en",
+    "description": "Public YouTube format-18 source audio, streamed through the public Android/web player route and normalized locally after two preliminary direct downloads returned HTTP 403 before media bytes.",
+    "sourceAudioPath": ".assessment-cache/debate-238-audio/acquired/source.mp3",
+    "sourceAudioSha256": "43b53918a6105b75e5c1cc4d4cc20f2d837e6d6d16083fe90ad7cc2e577e97ce",
+    "sourceAudioBytes": 53864490,
+    "sourceDurationSeconds": 8977.252438,
+    "ignoredLocalSourceRetained": true
+  },
+  "trigger": {
+    "inventoryBelowHighAttributionMoveIds": [
+      "con-evidentiary-warrant-can-differ-by-person",
+      "con-forgiveness-and-hell-undermine-justice",
+      "con-historical-evidence-can-be-source-strengthened"
+    ],
+    "requiredCheckIds": [
+      "con-evidentiary-warrant-can-differ-by-person",
+      "con-forgiveness-and-hell-undermine-justice",
+      "con-historical-evidence-can-be-source-strengthened"
+    ]
+  },
+  "triggeredMoveIds": [
+    "con-evidentiary-warrant-can-differ-by-person",
+    "con-forgiveness-and-hell-undermine-justice",
+    "con-historical-evidence-can-be-source-strengthened"
+  ],
+  "checks": [
+    {
+      "moveId": "con-evidentiary-warrant-can-differ-by-person",
+      "inventoryEventRange": [
+        2485,
+        2497
+      ],
+      "result": "confirmed",
+      "confirmedSpeaker": "Matt Dillahunty",
+      "evidence": "The clip transcribes Dillahunty's first-person distinction between Stuart's possible evidential warrant and his own lack of warrant, followed by the moderator's explicit handoff to the next audience question.",
+      "clip": {
+        "path": ".assessment-cache/debate-238-audio/acquired/clips/con-evidentiary-warrant-can-differ-by-person.mp3",
+        "sha256": "5a0cfe2d94241d3ceae92355c4ea6d2972357677894afc6288f147f115475211",
+        "bytes": 328458,
+        "durationSeconds": 40.899,
+        "clipWindowStartMs": 5564320,
+        "clipWindowEndMs": 5605219
+      },
+      "transcript": {
+        "path": "output/transcribe/standalone-debate-v1/debate-238/con-evidentiary-warrant-can-differ-by-person.txt",
+        "sha256": "e099ebfac6f668b186c1b87d0d9fc9272b49745d1eec18a3d7ca72972cd2e853",
+        "bytes": 668
+      }
+    },
+    {
+      "moveId": "con-forgiveness-and-hell-undermine-justice",
+      "inventoryEventRange": [
+        2610,
+        2624
+      ],
+      "result": "confirmed",
+      "confirmedSpeaker": "Matt Dillahunty",
+      "evidence": "The clip transcribes Dillahunty's sustained first-person objection that Christian forgiveness and hell fail to guarantee justice, then captures the moderator resuming with a viewer comment.",
+      "clip": {
+        "path": ".assessment-cache/debate-238-audio/acquired/clips/con-forgiveness-and-hell-undermine-justice.mp3",
+        "sha256": "b499d4bdf5f2fd2d6d553eea73f3eb85620d70194b629eccaf4c5f49604908e8",
+        "bytes": 330186,
+        "durationSeconds": 41.14,
+        "clipWindowStartMs": 5835760,
+        "clipWindowEndMs": 5876900
+      },
+      "transcript": {
+        "path": "output/transcribe/standalone-debate-v1/debate-238/con-forgiveness-and-hell-undermine-justice.txt",
+        "sha256": "19b8f8d5af432fc3ca7662ec72e0ba900e097707802be0ebfb2a63e7884c2ede",
+        "bytes": 774
+      }
+    },
+    {
+      "moveId": "con-historical-evidence-can-be-source-strengthened",
+      "inventoryEventRange": [
+        3318,
+        3338
+      ],
+      "result": "confirmed",
+      "confirmedSpeaker": "Matt Dillahunty",
+      "evidence": "The clip begins with the historical-evidence question and Dillahunty repeating it in the first person before defining source multiplicity and competing attestation, then ends at the moderator's next question addressed to Matt.",
+      "clip": {
+        "path": ".assessment-cache/debate-238-audio/acquired/clips/con-historical-evidence-can-be-source-strengthened.mp3",
+        "sha256": "d4892ac3c61c5b1d964c0a60725f5354a3d0630e05daf2bfdedf56f2bd423fd3",
+        "bytes": 488298,
+        "durationSeconds": 60.88,
+        "clipWindowStartMs": 7440400,
+        "clipWindowEndMs": 7501280
+      },
+      "transcript": {
+        "path": "output/transcribe/standalone-debate-v1/debate-238/con-historical-evidence-can-be-source-strengthened.txt",
+        "sha256": "5c5d18b819b980aee5e9105de264730e0167c280ba30d26fccc64042939729fc",
+        "bytes": 934
+      }
+    }
+  ],
+  "transcription": {
+    "model": "gpt-transcribe",
+    "responseFormat": "text",
+    "speakerResolutionMethod": "Each transcript was mapped from first-person argument ownership, the moderator's adjacent question or handoff, and the surrounding high-confidence turn sequence preserved by five-second context padding.",
+    "combinedVerificationDurationSeconds": 142.919,
+    "localOutputDirectory": "output/transcribe/standalone-debate-v1/debate-238",
+    "successfulSequentialCalls": 3
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsdMaximum": 0.0108,
+    "paidCallsAttempted": 3,
+    "successfulPaidCalls": 3,
+    "uncertainOrFailedPaidCalls": 0,
+    "knownSuccessfulCallCostUsd": 0.010718925,
+    "maximumPotentialCombinedCostUsd": 0.010718925,
+    "pricingBasis": "Previously verified GPT Transcribe duration pricing at $0.0045 per minute, applied to the exact combined clip duration."
+  },
+  "audit": {
+    "triggeredMoveIdsMatchCompletedChecksExactlyAndInOrder": true,
+    "allRequiredChecksComplete": true,
+    "noSuccessfulCallRepeated": true,
+    "lockedMovesReviewed": 22,
+    "highAttributionConfidenceMoves": 19,
+    "requiredAttributionChecks": 3,
+    "completedAttributionChecks": 3,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0
+  }
+}

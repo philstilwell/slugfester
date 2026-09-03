@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "1.0-ai-contribution-depth-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "reason": "The independent twenty-five-debate audit found all four AI Contribution depth metrics below the comparison range, so ten one-attempt, two-field shards expanded only those score-neutral text fields.",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/preserved-output-before-extension-depth-repair.json",
+    "sha256": "7374771402f52885157975511d6d603a6a5feaf9421cf59d58fc9ac973ca80c0",
+    "bytes": 64382
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/output.json",
+    "sha256": "637d2e54cca718bef5965207b3c4f783caecb3efc907730507b19e45624b4da4",
+    "bytes": 66405
+  },
+  "writableShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.thesis",
+        "candidate.logicalExtension.pro.finalArgument.conclusion"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.premises[0]",
+        "candidate.logicalExtension.pro.finalArgument.premises[1]"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.premises[2]",
+        "candidate.logicalExtension.pro.finalArgument.premises[3]"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.premises[4]",
+        "candidate.logicalExtension.pro.newArguments[0].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[1].text",
+        "candidate.logicalExtension.pro.newArguments[2].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 6,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.thesis",
+        "candidate.logicalExtension.con.finalArgument.conclusion"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 7,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.premises[0]",
+        "candidate.logicalExtension.con.finalArgument.premises[1]"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 8,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.premises[2]",
+        "candidate.logicalExtension.con.finalArgument.premises[3]"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 9,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.premises[4]",
+        "candidate.logicalExtension.con.newArguments[0].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 10,
+      "fields": [
+        "candidate.logicalExtension.con.newArguments[1].text",
+        "candidate.logicalExtension.con.newArguments[2].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "changedLeafFields": 20,
+    "maximumWritableFieldsPerShard": 2,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "critiqueChanges": 0,
+    "descriptionChanges": 0,
+    "overallCommentaryChanges": 0,
+    "quoteChanges": 0,
+    "identityChanges": 0
+  },
+  "evidence": {
+    "rawBefore": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/preserved-raw-prose-output-before-extension-depth-repair.json",
+      "sha256": "b5fc3bd48bbcbad56f5caf68321a6d1b8d7e1aa335c6027bc3220c535eeb4faf",
+      "bytes": 37915
+    },
+    "rawAfter": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-3-after-extension-depth-repair.json",
+      "sha256": "7cb900ce1473adbe89cc15602afc138b50f2f2417051f4e741a579d830b39d60",
+      "bytes": 39938
+    },
+    "priorContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/content-parity-audit-before-extension-depth-repair.json",
+      "sha256": "bfbd3fd739fae08e5dc8993f7a975260af84159a9e94ad9e1faaa6decc9a14a2",
+      "bytes": 6162
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/content-parity-audit.json",
+      "sha256": "66ff7313c2c2114d93306b485bd8a0ee1d42d07dd1dc4e3e0f33591b5c5629de",
+      "bytes": 4656
+    },
+    "rejectionAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1-rejection-audit.json",
+      "sha256": "969f76c027bfb4ddca6230b3147c4ca9e41faa62e1b4a8cc9b8cd07e8fe7abb8",
+      "bytes": 12665
+    },
+    "plan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/plan.json",
+      "sha256": "6dbf6cc8259bb4f87469c50ee453a543fa3370f5493901acc407ed3ee08989e2",
+      "bytes": 10291
+    },
+    "shards": [
+      {
+        "ordinal": 1,
+        "fields": [
+          "logicalExtension.pro.finalArgument.thesis",
+          "logicalExtension.pro.finalArgument.conclusion"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-01/packet.json",
+          "sha256": "f0d23b07b1da1f19feac15c73dd593aa6a5e1a0728b1e09a714df250f3e41e8c",
+          "bytes": 8946
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-01/result.json",
+          "sha256": "54e6a654bb8b8ce408339b888a774d7a6bb99e598b75025a5c375750eeffee89",
+          "bytes": 724
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-01/execution.json",
+          "sha256": "93c604c23d32378ec808b83861cb4427c7fb5a361c4b5865f53142fbce9ab341",
+          "bytes": 1652
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 2,
+        "fields": [
+          "logicalExtension.pro.finalArgument.premises[0]",
+          "logicalExtension.pro.finalArgument.premises[1]"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-02/packet.json",
+          "sha256": "b40e365c747443c1dde5a1c5dda266cc12bd2b5b9e68463049999153957d2722",
+          "bytes": 8962
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-02/result.json",
+          "sha256": "5df8bb054187686680228f699385fb39c09a919b462fa8a47f2d689af8757f66",
+          "bytes": 674
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-02/execution.json",
+          "sha256": "7b9b9185200ff06abf8f8525f7a2c1b596310c3dbe5c5d948b287e0269379cdd",
+          "bytes": 1658
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 3,
+        "fields": [
+          "logicalExtension.pro.finalArgument.premises[2]",
+          "logicalExtension.pro.finalArgument.premises[3]"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-03/packet.json",
+          "sha256": "6530a5fe4bcf4c41b7cc8360ad8c34787365581d97f0ac71f865897472ee64d4",
+          "bytes": 8971
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-03/result.json",
+          "sha256": "bcb7b29680da5d85f2547f6b357e8fb1889acca0e3375db9528c9e0e44b19b46",
+          "bytes": 669
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-03/execution.json",
+          "sha256": "ab8f67b6e4ba895a03d3ec77223988e7998aa7251af6df8f0fb09c32963e69f2",
+          "bytes": 1658
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 4,
+        "fields": [
+          "logicalExtension.pro.finalArgument.premises[4]",
+          "logicalExtension.pro.newArguments[0].text"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-04/packet.json",
+          "sha256": "6ae060bd6cbed6614db932fe07312cf85800b20c43966bbade54bb21b0c95d1d",
+          "bytes": 9256
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-04/result.json",
+          "sha256": "863a3b15b9ee080ac9dc03a1a92102f3b88d8aa0466ec8d351ad4866c8009bf4",
+          "bytes": 1058
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-04/execution.json",
+          "sha256": "a87144ab4a5bb17ffbeff24de877b75c8020e612d4f0af3d446368ac6249eeda",
+          "bytes": 1654
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 5,
+        "fields": [
+          "logicalExtension.pro.newArguments[1].text",
+          "logicalExtension.pro.newArguments[2].text"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-05/packet.json",
+          "sha256": "607abbd99c52edb35acae0a6b5beebb75aa7dbc3b43f941152a7b020a489b7f6",
+          "bytes": 9559
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-05/result.json",
+          "sha256": "7e76a85cb270bd625d7ccba7c769b5e99e8df37a9d0252eeee6cde5c268cc2fb",
+          "bytes": 1546
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-05/execution.json",
+          "sha256": "780d66a5934a28049dfe5bc97aa719487e0fd75a01b19122eaa41d205bb1a932",
+          "bytes": 1649
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 6,
+        "fields": [
+          "logicalExtension.con.finalArgument.thesis",
+          "logicalExtension.con.finalArgument.conclusion"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-06/packet.json",
+          "sha256": "286db77b0a2d07594bfe9898414b71f8d2889e098a1e1c80a137835f659b279f",
+          "bytes": 10372
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-06/result.json",
+          "sha256": "bc1972795beedb2d170cc374b63b2757e278eab9302c4797ae76dd3d4171cec3",
+          "bytes": 735
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-06/execution.json",
+          "sha256": "df4458c2c22a59301d673789af0d0c19f870bbece7b9c91781493a9160db6bc7",
+          "bytes": 1653
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 7,
+        "fields": [
+          "logicalExtension.con.finalArgument.premises[0]",
+          "logicalExtension.con.finalArgument.premises[1]"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-07/packet.json",
+          "sha256": "70755553931c5c278ce0d0be57b15e9af8287376d8701ce664397626f4d69086",
+          "bytes": 10389
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-07/result.json",
+          "sha256": "ab78cf73205cf7a29b02b1c9358c0ddbb94d387f47043f05e29d351af8520234",
+          "bytes": 684
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-07/execution.json",
+          "sha256": "457c1cdf83b0d7cf2c57241b9a24791650f369b7cb6f469247b3b9329637fb15",
+          "bytes": 1659
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 8,
+        "fields": [
+          "logicalExtension.con.finalArgument.premises[2]",
+          "logicalExtension.con.finalArgument.premises[3]"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-08/packet.json",
+          "sha256": "3c1bdeaef0ce4bf09703ae578a16b09e40a4769dcef598402c39c8eb7000cc41",
+          "bytes": 10368
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-08/result.json",
+          "sha256": "76f2ad1d9d6b56fe81e8ccde3db796596f7aaaa540aa27203976ef3d4c099092",
+          "bytes": 635
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-08/execution.json",
+          "sha256": "5ab3fe3a06091a17740949ac457dcd4a5e65af891251740234665e06298f28c1",
+          "bytes": 1659
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 9,
+        "fields": [
+          "logicalExtension.con.finalArgument.premises[4]",
+          "logicalExtension.con.newArguments[0].text"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-09/packet.json",
+          "sha256": "39c925925c4f8e24a0618bddff9fd3559c91de3f13bb3e27129b84663925d65f",
+          "bytes": 10651
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-09/result.json",
+          "sha256": "685d86311d80e878ed9006627619b8458da8537310d6ba36add19e7840ac98bb",
+          "bytes": 1176
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-09/execution.json",
+          "sha256": "298a58536f6ed50927639cf7cad6e4ede3800f2d8e2a19dc78f0f70dc30dce5b",
+          "bytes": 1655
+        },
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 10,
+        "fields": [
+          "logicalExtension.con.newArguments[1].text",
+          "logicalExtension.con.newArguments[2].text"
+        ],
+        "input": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-10/packet.json",
+          "sha256": "e25466d87fa93c5f345c23963ecdc39a226efe7c92d8cebd39478ea8ee3a92c7",
+          "bytes": 10958
+        },
+        "output": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-10/result.json",
+          "sha256": "6082003d8dbd6267018530814653f7f42a3afc137e6994c632dd1dd1f22cf9b4",
+          "bytes": 1487
+        },
+        "execution": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-10/execution.json",
+          "sha256": "2ba053da6b1e5ad7d02dd284a32bd01b17fcb742c19f8093d1e8a433f8cff6eb",
+          "bytes": 1651
+        },
+        "attempts": 1,
+        "retries": 0
+      }
+    ],
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/output.json",
+      "sha256": "637d2e54cca718bef5965207b3c4f783caecb3efc907730507b19e45624b4da4",
+      "bytes": 66405
+    }
+  }
+}

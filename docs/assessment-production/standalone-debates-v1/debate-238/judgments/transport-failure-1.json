@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-transport-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-pre-output-transport-stall",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "stage": "simultaneous-score-blind-primary-judgments",
+  "attempt": 1,
+  "passes": [
+    {
+      "pass": "pass-a",
+      "processId": 57455,
+      "finalOutputExists": false,
+      "observedCpuPercent": 0,
+      "observedState": "sleeping"
+    },
+    {
+      "pass": "pass-b",
+      "processId": 57472,
+      "finalOutputExists": false,
+      "observedCpuPercent": 0,
+      "observedState": "sleeping"
+    }
+  ],
+  "startedAt": "2026-09-02T18:51:48.135Z",
+  "stoppedAt": "2026-09-02T19:28:02.000Z",
+  "elapsedMs": 2173865,
+  "intendedTimeoutMs": 900000,
+  "controllerTimeoutEnforced": false,
+  "failureClass": "transport-stall-without-model-output",
+  "diagnosis": "Both original isolated Codex processes remained connected but idle, produced no final output files, and exceeded the intended timeout because the asynchronous controller omitted a timer.",
+  "contaminationRisk": "none-no-judgment-content-returned",
+  "recovery": {
+    "authorizedByUser": true,
+    "authorizationText": "Try again or provide the reason you advise against it.",
+    "maximumReplacementAttemptsPerPass": 1,
+    "replacementMustUseFreshIsolatedContexts": true,
+    "replacementMustUseIdenticalFrozenEvidence": true,
+    "replacementMustEnforceTimeout": true
+  }
+}

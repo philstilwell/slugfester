@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-bounded-extension-depth-repair-shard-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-one-attempt-and-frozen",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 8,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "high"
+  },
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-08/packet.json",
+    "sha256": "3c1bdeaef0ce4bf09703ae578a16b09e40a4769dcef598402c39c8eb7000cc41",
+    "bytes": 10368
+  },
+  "schema": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-08/schema.json",
+    "sha256": "013c396ae7dcae0fa2946e65577a5eb7c958c8a147cecfd433bd29196eb9cc89",
+    "bytes": 1127
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/extension-depth-repair-1/shard-08/result.json",
+    "sha256": "76f2ad1d9d6b56fe81e8ccde3db796596f7aaaa540aa27203976ef3d4c099092",
+    "bytes": 635
+  },
+  "writableFields": [
+    "logicalExtension.con.finalArgument.premises[2]",
+    "logicalExtension.con.finalArgument.premises[3]"
+  ],
+  "writableFieldCount": 2,
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "validation": {
+    "exactSchemaShape": true,
+    "exactPathOrder": true,
+    "targetWordRanges": true,
+    "completeNaturalPunctuation": true,
+    "priorValuesChanged": true
+  }
+}

@@ -1,0 +1,1786 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/d0S_Ul-kRwQ/captions.srv3.xml",
+      "sha256": "0ea8110fd96255b0ce9b56868d839be215885de2226292d5d321015b3a54dfa1",
+      "bytes": 1065413
+    },
+    "events": {
+      "path": ".assessment-cache/captions/d0S_Ul-kRwQ/events.json",
+      "sha256": "ccbcf12691c97a29551dfe054c7972892cd8f059a4ee2b7bf222af22f21c1023",
+      "bytes": 426205
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/d0S_Ul-kRwQ/transcript.txt",
+      "sha256": "b63e25b2d68d849a4b428e24b49d6670c7aa47bcd0c99c32f4f46358ea81c638",
+      "bytes": 178069
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/d0S_Ul-kRwQ/manifest.json",
+      "sha256": "91834c70d2c3422d2fdf9a0379d638eaf9958800219ce01b1bc031c8e4b11331",
+      "bytes": 1022
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/authorization.json",
+      "sha256": "df41b187548266b373f5b24c2668667d96bc8863f04ea6a9c50ad84ccfa95432",
+      "bytes": 3471
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/manifest.json",
+      "sha256": "80ea40398f2a62d2ba28777f3268e64f41038fb61181557ce701ea3c34dfccdd",
+      "bytes": 6798
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/source/source-lock.json",
+      "sha256": "f9b043df689cc8d5d45b01750d5ae649c8fac3633937899bbe1a923b47defe4e",
+      "bytes": 2843
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+      "sha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab",
+      "bytes": 57773
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+      "sha256": "87897c0777cd333e69a249e8d808114d8a4825006077529b29522330aca3df0e",
+      "bytes": 4911
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/execution.json",
+      "sha256": "2814b7af8be3ae62930d011de3a801cacce636c8bb4f0b35d163fb97408a12e6",
+      "bytes": 2584
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/pass-a/output.json",
+      "sha256": "4c5f490471beef8b8777e8f87116df7403d99581d38da56f2353a4f3cc0c5c6a",
+      "bytes": 43758
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/pass-b/output.json",
+      "sha256": "04981c2bb9f6d74b42732e14717ee9c4cea02fe9712939ee8ba937f9e3e3e407",
+      "bytes": 44159
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/disagreements/disagreements.json",
+      "sha256": "419e0600c8be2671c1a907ded3f2a506188a4caa7ca6d74a772a369c028934ed",
+      "bytes": 21364
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/audio/audio-verification.json",
+      "sha256": "1033e74465960778a5535da413ba133a5ed1cefc161d96dfc746c123779439f9",
+      "bytes": 6374
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/packet.json",
+      "sha256": "fe05c5eadddd5172b993435617df80eefa998e813f0442d8b8b0f37fca48e5a4",
+      "bytes": 62859
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/output.json",
+      "sha256": "8beac1e51db29cd6c5979b4f89f54e40090f177eef12797c217a88e60c37ff32",
+      "bytes": 6030
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/final-ledger/final-ledger.json",
+      "sha256": "1260ab93074957f0ec5d29b6a816ad042152d8aefa89bff6a16d12ff0a2a2b85",
+      "bytes": 178643
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/score-pass/input.json",
+      "sha256": "97e6bff17a5591c8052e3ca986aa72c0b35c5592f29c5241d8d519304d97adda",
+      "bytes": 986
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/score-pass/output.json",
+      "sha256": "69e4d54e091ca568757cde245d65c6b0ab8325455d9a4698339018a01f96b5a2",
+      "bytes": 52358
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/score-pass/attestation.json",
+      "sha256": "03395c59420f82a6f50dc3de3cb61507270618ea4384b99613dadce0ea997d2b",
+      "bytes": 871
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/output.json",
+      "sha256": "637d2e54cca718bef5965207b3c4f783caecb3efc907730507b19e45624b4da4",
+      "bytes": 66405
+    },
+    "events": {
+      "path": ".assessment-cache/captions/d0S_Ul-kRwQ/events.json",
+      "sha256": "ccbcf12691c97a29551dfe054c7972892cd8f059a4ee2b7bf222af22f21c1023",
+      "bytes": 426205
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/d0S_Ul-kRwQ/transcript.txt",
+      "sha256": "b63e25b2d68d849a4b428e24b49d6670c7aa47bcd0c99c32f4f46358ea81c638",
+      "bytes": 178069
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/correction-1-publication-depth.json",
+      "sha256": "7f2705f408e19c6f3065398313d768eaa5533b07281f624ad2e0018c52817f63",
+      "bytes": 5848
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-1.json",
+      "sha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+      "bytes": 38509
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/content-parity-audit.json",
+      "sha256": "66ff7313c2c2114d93306b485bd8a0ee1d42d07dd1dc4e3e0f33591b5c5629de",
+      "bytes": 4656
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/correction-2-rhetorical-tags.json",
+      "sha256": "d84d9f1db8fce210259d41286b0d426daec65ef4a36afe2a98f1fa5bf5e4e025",
+      "bytes": 6394
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-audit.json",
+      "sha256": "80eea3b211691e5176966074c245dcc7069b2d110c26d6e8d7d0a9fe3956a265",
+      "bytes": 243051
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "0d4dd8089cf45bce9ba42cf8d485dc7224d60cebe90e1734933eb75616d1b857",
+      "bytes": 3326
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "69f588471552cee8536de558c1ace4bd83006f9b40b7df1abca51cf150fa02f4",
+      "bytes": 3436
+    },
+    "publicationAiContributionDepthCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/correction-3-ai-contribution-depth.json",
+      "sha256": "9b99b117550fab2579fcf86c4d1bfb814880a467d371bc9e171ae228f2652443",
+      "bytes": 16544
+    },
+    "publicationAiContributionDepthAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/content-parity-audit.json",
+      "sha256": "66ff7313c2c2114d93306b485bd8a0ee1d42d07dd1dc4e3e0f33591b5c5629de",
+      "bytes": 4656
+    },
+    "publicationAiContributionDepthExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/execution.json",
+      "sha256": "b97735d846f27a37818d7167c3183e15bd729af6461a5bab674b5cef46b9d990",
+      "bytes": 4254
+    },
+    "postAiContributionDepthRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/rendering/post-ai-contribution-depth-audit.json",
+      "sha256": "76fe5fa2df28cc1a4af9b18b89bfa198f0d00a48fe6b0dd7860a2fb0cacab995",
+      "bytes": 1874
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "238",
+    "debateId": "knechtle-dillahunty-christianity-rational-2023",
+    "sections": [
+      {
+        "sectionId": "epistemic-warrant",
+        "title": "Rationality, evidence, and epistemic warrant",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 68,
+            "moves": [
+              {
+                "moveId": "pro-limited-evidence-preserves-free-trust",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 63
+                },
+                "score": 70
+              },
+              {
+                "moveId": "pro-multifaceted-return-to-faith",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 62,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 64,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 71
+                },
+                "score": 64
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-rationality-requires-reality-consistency",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 79
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-communicative-god-leaves-burden-unmet",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 86,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 68
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-evidentiary-warrant-can-differ-by-person",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 86,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 93
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "scripture-testimony",
+        "title": "Gospel testimony and textual reliability",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "pro-jesus-claims-divinity",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 81,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 72
+                },
+                "score": 77
+              },
+              {
+                "moveId": "pro-gospel-transmission-reliability",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 80,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 51
+                },
+                "score": 69
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-report-cannot-establish-forgiveness",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 92,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 84
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-historical-evidence-can-be-source-strengthened",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 82,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 90
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "resurrection-miracles",
+        "title": "Resurrection and supernatural causation",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "pro-resurrection-cumulative-indicia",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 83,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 67
+                },
+                "score": 74
+              },
+              {
+                "moveId": "pro-six-source-resurrection-reply",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 75,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 63,
+                  "calibrationCharity": 57
+                },
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-supernatural-claims-undemonstrated",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 83,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 59
+                },
+                "score": 77
+              },
+              {
+                "moveId": "con-scriptural-story-is-not-miracle-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 86,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 66
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-observed-effect-needs-causal-link",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 90,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 89
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-experiential-fit",
+        "title": "Morality, social influence, hope, and experiential fit",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 59,
+            "moves": [
+              {
+                "moveId": "pro-christianity-explains-altruism-hope",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 55,
+                  "evidenceWarrant": 39,
+                  "responsiveness": 78,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 57,
+                  "calibrationCharity": 44
+                },
+                "score": 59
+              },
+              {
+                "moveId": "pro-jesus-transformed-roman-morality",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 47,
+                  "responsiveness": 68,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 63,
+                  "calibrationCharity": 50
+                },
+                "score": 60
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-natural-account-of-cooperation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 72
+                },
+                "score": 77
+              },
+              {
+                "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 93
+                },
+                "score": 90
+              },
+              {
+                "moveId": "con-religious-desire-does-not-show-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 64
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-character",
+        "title": "Divine character, love, wrath, and punishment",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "pro-love-and-wrath-are-coherent",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 79,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 68
+                },
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "con-biblical-violence-challenges-character",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 63
+                },
+                "score": 77
+              },
+              {
+                "moveId": "con-forgiveness-and-hell-undermine-justice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 88,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 51
+                },
+                "score": 76
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 68.39,
+        "burdenCompletionAdjustment": 0,
+        "score": 68
+      },
+      "con": {
+        "weightedSectionMean": 81.64,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
+    },
+    "winner": "con",
+    "winningMargin": 14,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "passA": {
+        "sections": [
+          {
+            "sectionId": "epistemic-warrant",
+            "title": "Rationality, evidence, and epistemic warrant",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 69,
+                "moves": [
+                  {
+                    "moveId": "pro-limited-evidence-preserves-free-trust",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 68,
+                      "evidenceWarrant": 56,
+                      "responsiveness": 83,
+                      "relevanceBurden": 86,
+                      "precisionClarity": 76,
+                      "calibrationCharity": 63
+                    },
+                    "score": 72
+                  },
+                  {
+                    "moveId": "pro-multifaceted-return-to-faith",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 62,
+                      "evidenceWarrant": 57,
+                      "responsiveness": 64,
+                      "relevanceBurden": 67,
+                      "precisionClarity": 70,
+                      "calibrationCharity": 71
+                    },
+                    "score": 64
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-rationality-requires-reality-consistency",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 84,
+                      "evidenceWarrant": 72,
+                      "responsiveness": 88,
+                      "relevanceBurden": 90,
+                      "precisionClarity": 86,
+                      "calibrationCharity": 80
+                    },
+                    "score": 83
+                  },
+                  {
+                    "moveId": "con-communicative-god-leaves-burden-unmet",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 79,
+                      "evidenceWarrant": 66,
+                      "responsiveness": 86,
+                      "relevanceBurden": 92,
+                      "precisionClarity": 82,
+                      "calibrationCharity": 70
+                    },
+                    "score": 79
+                  },
+                  {
+                    "moveId": "con-evidentiary-warrant-can-differ-by-person",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 89,
+                      "evidenceWarrant": 75,
+                      "responsiveness": 85,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 87,
+                      "calibrationCharity": 93
+                    },
+                    "score": 85
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "scripture-testimony",
+            "title": "Gospel testimony and textual reliability",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-jesus-claims-divinity",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 82,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 78,
+                      "relevanceBurden": 74,
+                      "precisionClarity": 77,
+                      "calibrationCharity": 71
+                    },
+                    "score": 76
+                  },
+                  {
+                    "moveId": "pro-gospel-transmission-reliability",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 67,
+                      "evidenceWarrant": 59,
+                      "responsiveness": 79,
+                      "relevanceBurden": 80,
+                      "precisionClarity": 57,
+                      "calibrationCharity": 53
+                    },
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-report-cannot-establish-forgiveness",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 88,
+                      "evidenceWarrant": 78,
+                      "responsiveness": 92,
+                      "relevanceBurden": 87,
+                      "precisionClarity": 87,
+                      "calibrationCharity": 83
+                    },
+                    "score": 86
+                  },
+                  {
+                    "moveId": "con-historical-evidence-can-be-source-strengthened",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 86,
+                      "evidenceWarrant": 77,
+                      "responsiveness": 82,
+                      "relevanceBurden": 83,
+                      "precisionClarity": 75,
+                      "calibrationCharity": 89
+                    },
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "resurrection-miracles",
+            "title": "Resurrection and supernatural causation",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-cumulative-indicia",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 76,
+                      "evidenceWarrant": 58,
+                      "responsiveness": 82,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 72,
+                      "calibrationCharity": 68
+                    },
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-six-source-resurrection-reply",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 66,
+                      "evidenceWarrant": 53,
+                      "responsiveness": 75,
+                      "relevanceBurden": 81,
+                      "precisionClarity": 61,
+                      "calibrationCharity": 56
+                    },
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 80,
+                "moves": [
+                  {
+                    "moveId": "con-supernatural-claims-undemonstrated",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 78,
+                      "evidenceWarrant": 66,
+                      "responsiveness": 82,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 83,
+                      "calibrationCharity": 58
+                    },
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-scriptural-story-is-not-miracle-evidence",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 75,
+                      "evidenceWarrant": 69,
+                      "responsiveness": 84,
+                      "relevanceBurden": 85,
+                      "precisionClarity": 81,
+                      "calibrationCharity": 63
+                    },
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-observed-effect-needs-causal-link",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 88,
+                      "evidenceWarrant": 79,
+                      "responsiveness": 88,
+                      "relevanceBurden": 91,
+                      "precisionClarity": 89,
+                      "calibrationCharity": 89
+                    },
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "moral-experiential-fit",
+            "title": "Morality, social influence, hope, and experiential fit",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 59,
+                "moves": [
+                  {
+                    "moveId": "pro-christianity-explains-altruism-hope",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 54,
+                      "evidenceWarrant": 39,
+                      "responsiveness": 78,
+                      "relevanceBurden": 80,
+                      "precisionClarity": 57,
+                      "calibrationCharity": 46
+                    },
+                    "score": 59
+                  },
+                  {
+                    "moveId": "pro-jesus-transformed-roman-morality",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 63,
+                      "evidenceWarrant": 43,
+                      "responsiveness": 67,
+                      "relevanceBurden": 69,
+                      "precisionClarity": 62,
+                      "calibrationCharity": 49
+                    },
+                    "score": 59
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-natural-account-of-cooperation",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 77,
+                      "evidenceWarrant": 61,
+                      "responsiveness": 86,
+                      "relevanceBurden": 85,
+                      "precisionClarity": 76,
+                      "calibrationCharity": 72
+                    },
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 92,
+                      "evidenceWarrant": 84,
+                      "responsiveness": 93,
+                      "relevanceBurden": 94,
+                      "precisionClarity": 91,
+                      "calibrationCharity": 94
+                    },
+                    "score": 91
+                  },
+                  {
+                    "moveId": "con-religious-desire-does-not-show-truth",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 85,
+                      "evidenceWarrant": 69,
+                      "responsiveness": 90,
+                      "relevanceBurden": 90,
+                      "precisionClarity": 78,
+                      "calibrationCharity": 66
+                    },
+                    "score": 81
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "divine-character",
+            "title": "Divine character, love, wrath, and punishment",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-love-and-wrath-are-coherent",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 76,
+                      "evidenceWarrant": 65,
+                      "responsiveness": 78,
+                      "relevanceBurden": 79,
+                      "precisionClarity": 73,
+                      "calibrationCharity": 70
+                    },
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-biblical-violence-challenges-character",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 78,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 84,
+                      "relevanceBurden": 82,
+                      "precisionClarity": 75,
+                      "calibrationCharity": 64
+                    },
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-forgiveness-and-hell-undermine-justice",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 77,
+                      "evidenceWarrant": 66,
+                      "responsiveness": 87,
+                      "relevanceBurden": 85,
+                      "precisionClarity": 77,
+                      "calibrationCharity": 52
+                    },
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 68.21,
+            "burdenCompletionAdjustment": 0,
+            "score": 68
+          },
+          "con": {
+            "weightedSectionMean": 81.34,
+            "burdenCompletionAdjustment": 0,
+            "score": 81
+          }
+        },
+        "winner": "con",
+        "winningMargin": 13
+      },
+      "passB": {
+        "sections": [
+          {
+            "sectionId": "epistemic-warrant",
+            "title": "Rationality, evidence, and epistemic warrant",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 64,
+                "moves": [
+                  {
+                    "moveId": "pro-limited-evidence-preserves-free-trust",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 64,
+                      "evidenceWarrant": 53,
+                      "responsiveness": 81,
+                      "relevanceBurden": 78,
+                      "precisionClarity": 71,
+                      "calibrationCharity": 62
+                    },
+                    "score": 68
+                  },
+                  {
+                    "moveId": "pro-multifaceted-return-to-faith",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 59,
+                      "evidenceWarrant": 46,
+                      "responsiveness": 57,
+                      "relevanceBurden": 66,
+                      "precisionClarity": 62,
+                      "calibrationCharity": 63
+                    },
+                    "score": 58
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-rationality-requires-reality-consistency",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 85,
+                      "evidenceWarrant": 78,
+                      "responsiveness": 89,
+                      "relevanceBurden": 91,
+                      "precisionClarity": 82,
+                      "calibrationCharity": 77
+                    },
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-communicative-god-leaves-burden-unmet",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 76,
+                      "evidenceWarrant": 58,
+                      "responsiveness": 86,
+                      "relevanceBurden": 92,
+                      "precisionClarity": 78,
+                      "calibrationCharity": 66
+                    },
+                    "score": 76
+                  },
+                  {
+                    "moveId": "con-evidentiary-warrant-can-differ-by-person",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 89,
+                      "evidenceWarrant": 80,
+                      "responsiveness": 86,
+                      "relevanceBurden": 87,
+                      "precisionClarity": 88,
+                      "calibrationCharity": 92
+                    },
+                    "score": 87
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "scripture-testimony",
+            "title": "Gospel testimony and textual reliability",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "pro-jesus-claims-divinity",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 82,
+                      "evidenceWarrant": 68,
+                      "responsiveness": 83,
+                      "relevanceBurden": 78,
+                      "precisionClarity": 79,
+                      "calibrationCharity": 72
+                    },
+                    "score": 78
+                  },
+                  {
+                    "moveId": "pro-gospel-transmission-reliability",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 70,
+                      "evidenceWarrant": 55,
+                      "responsiveness": 81,
+                      "relevanceBurden": 84,
+                      "precisionClarity": 67,
+                      "calibrationCharity": 48
+                    },
+                    "score": 69
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-report-cannot-establish-forgiveness",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 88,
+                      "evidenceWarrant": 78,
+                      "responsiveness": 92,
+                      "relevanceBurden": 87,
+                      "precisionClarity": 85,
+                      "calibrationCharity": 84
+                    },
+                    "score": 86
+                  },
+                  {
+                    "moveId": "con-historical-evidence-can-be-source-strengthened",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 84,
+                      "evidenceWarrant": 79,
+                      "responsiveness": 82,
+                      "relevanceBurden": 83,
+                      "precisionClarity": 73,
+                      "calibrationCharity": 90
+                    },
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "resurrection-miracles",
+            "title": "Resurrection and supernatural causation",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 70,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-cumulative-indicia",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 72,
+                      "evidenceWarrant": 61,
+                      "responsiveness": 83,
+                      "relevanceBurden": 82,
+                      "precisionClarity": 75,
+                      "calibrationCharity": 65
+                    },
+                    "score": 73
+                  },
+                  {
+                    "moveId": "pro-six-source-resurrection-reply",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 67,
+                      "evidenceWarrant": 54,
+                      "responsiveness": 75,
+                      "relevanceBurden": 78,
+                      "precisionClarity": 64,
+                      "calibrationCharity": 57
+                    },
+                    "score": 66
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-supernatural-claims-undemonstrated",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 83,
+                      "evidenceWarrant": 64,
+                      "responsiveness": 84,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 80,
+                      "calibrationCharity": 60
+                    },
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-scriptural-story-is-not-miracle-evidence",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 84,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 87,
+                      "relevanceBurden": 87,
+                      "precisionClarity": 82,
+                      "calibrationCharity": 68
+                    },
+                    "score": 80
+                  },
+                  {
+                    "moveId": "con-observed-effect-needs-causal-link",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 91,
+                      "evidenceWarrant": 80,
+                      "responsiveness": 92,
+                      "relevanceBurden": 92,
+                      "precisionClarity": 89,
+                      "calibrationCharity": 89
+                    },
+                    "score": 89
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "moral-experiential-fit",
+            "title": "Morality, social influence, hope, and experiential fit",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 60,
+                "moves": [
+                  {
+                    "moveId": "pro-christianity-explains-altruism-hope",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 55,
+                      "evidenceWarrant": 48,
+                      "responsiveness": 68,
+                      "relevanceBurden": 76,
+                      "precisionClarity": 70,
+                      "calibrationCharity": 42
+                    },
+                    "score": 60
+                  },
+                  {
+                    "moveId": "pro-jesus-transformed-roman-morality",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 63,
+                      "evidenceWarrant": 51,
+                      "responsiveness": 68,
+                      "relevanceBurden": 67,
+                      "precisionClarity": 64,
+                      "calibrationCharity": 50
+                    },
+                    "score": 61
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-natural-account-of-cooperation",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 79,
+                      "evidenceWarrant": 66,
+                      "responsiveness": 86,
+                      "relevanceBurden": 83,
+                      "precisionClarity": 78,
+                      "calibrationCharity": 72
+                    },
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 92,
+                      "evidenceWarrant": 82,
+                      "responsiveness": 93,
+                      "relevanceBurden": 92,
+                      "precisionClarity": 89,
+                      "calibrationCharity": 91
+                    },
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-religious-desire-does-not-show-truth",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 82,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 89,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 76,
+                      "calibrationCharity": 61
+                    },
+                    "score": 79
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "divine-character",
+            "title": "Divine character, love, wrath, and punishment",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 73,
+                "moves": [
+                  {
+                    "moveId": "pro-love-and-wrath-are-coherent",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 78,
+                      "evidenceWarrant": 58,
+                      "responsiveness": 79,
+                      "relevanceBurden": 81,
+                      "precisionClarity": 77,
+                      "calibrationCharity": 66
+                    },
+                    "score": 73
+                  }
+                ]
+              },
+              "con": {
+                "score": 77,
+                "moves": [
+                  {
+                    "moveId": "con-biblical-violence-challenges-character",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 82,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 86,
+                      "relevanceBurden": 84,
+                      "precisionClarity": 72,
+                      "calibrationCharity": 61
+                    },
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-forgiveness-and-hell-undermine-justice",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 80,
+                      "evidenceWarrant": 62,
+                      "responsiveness": 89,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 75,
+                      "calibrationCharity": 49
+                    },
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 67.4,
+            "burdenCompletionAdjustment": 0,
+            "score": 67
+          },
+          "con": {
+            "weightedSectionMean": 81.76,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 15
+      },
+      "final": {
+        "schemaVersion": "1.0-standalone-score-output",
+        "protocolId": "standalone-v1-single-deterministic-score-pass",
+        "status": "single-deterministic-score-pass-complete",
+        "debateNumber": "238",
+        "debateId": "knechtle-dillahunty-christianity-rational-2023",
+        "sections": [
+          {
+            "sectionId": "epistemic-warrant",
+            "title": "Rationality, evidence, and epistemic warrant",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 68,
+                "moves": [
+                  {
+                    "moveId": "pro-limited-evidence-preserves-free-trust",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 66,
+                      "evidenceWarrant": 55,
+                      "responsiveness": 82,
+                      "relevanceBurden": 82,
+                      "precisionClarity": 74,
+                      "calibrationCharity": 63
+                    },
+                    "score": 70
+                  },
+                  {
+                    "moveId": "pro-multifaceted-return-to-faith",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 62,
+                      "evidenceWarrant": 57,
+                      "responsiveness": 64,
+                      "relevanceBurden": 67,
+                      "precisionClarity": 70,
+                      "calibrationCharity": 71
+                    },
+                    "score": 64
+                  }
+                ]
+              },
+              "con": {
+                "score": 83,
+                "moves": [
+                  {
+                    "moveId": "con-rationality-requires-reality-consistency",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 85,
+                      "evidenceWarrant": 75,
+                      "responsiveness": 89,
+                      "relevanceBurden": 91,
+                      "precisionClarity": 84,
+                      "calibrationCharity": 79
+                    },
+                    "score": 84
+                  },
+                  {
+                    "moveId": "con-communicative-god-leaves-burden-unmet",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 78,
+                      "evidenceWarrant": 62,
+                      "responsiveness": 86,
+                      "relevanceBurden": 92,
+                      "precisionClarity": 80,
+                      "calibrationCharity": 68
+                    },
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-evidentiary-warrant-can-differ-by-person",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 89,
+                      "evidenceWarrant": 78,
+                      "responsiveness": 86,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 88,
+                      "calibrationCharity": 93
+                    },
+                    "score": 86
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "scripture-testimony",
+            "title": "Gospel testimony and textual reliability",
+            "weightPercent": 18,
+            "sides": {
+              "pro": {
+                "score": 72,
+                "moves": [
+                  {
+                    "moveId": "pro-jesus-claims-divinity",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 82,
+                      "evidenceWarrant": 69,
+                      "responsiveness": 81,
+                      "relevanceBurden": 76,
+                      "precisionClarity": 78,
+                      "calibrationCharity": 72
+                    },
+                    "score": 77
+                  },
+                  {
+                    "moveId": "pro-gospel-transmission-reliability",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 69,
+                      "evidenceWarrant": 57,
+                      "responsiveness": 80,
+                      "relevanceBurden": 82,
+                      "precisionClarity": 67,
+                      "calibrationCharity": 51
+                    },
+                    "score": 69
+                  }
+                ]
+              },
+              "con": {
+                "score": 84,
+                "moves": [
+                  {
+                    "moveId": "con-report-cannot-establish-forgiveness",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 88,
+                      "evidenceWarrant": 78,
+                      "responsiveness": 92,
+                      "relevanceBurden": 87,
+                      "precisionClarity": 86,
+                      "calibrationCharity": 84
+                    },
+                    "score": 86
+                  },
+                  {
+                    "moveId": "con-historical-evidence-can-be-source-strengthened",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 85,
+                      "evidenceWarrant": 78,
+                      "responsiveness": 82,
+                      "relevanceBurden": 83,
+                      "precisionClarity": 74,
+                      "calibrationCharity": 90
+                    },
+                    "score": 82
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "resurrection-miracles",
+            "title": "Resurrection and supernatural causation",
+            "weightPercent": 25,
+            "sides": {
+              "pro": {
+                "score": 71,
+                "moves": [
+                  {
+                    "moveId": "pro-resurrection-cumulative-indicia",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 74,
+                      "evidenceWarrant": 60,
+                      "responsiveness": 83,
+                      "relevanceBurden": 85,
+                      "precisionClarity": 74,
+                      "calibrationCharity": 67
+                    },
+                    "score": 74
+                  },
+                  {
+                    "moveId": "pro-six-source-resurrection-reply",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 67,
+                      "evidenceWarrant": 54,
+                      "responsiveness": 75,
+                      "relevanceBurden": 80,
+                      "precisionClarity": 63,
+                      "calibrationCharity": 57
+                    },
+                    "score": 67
+                  }
+                ]
+              },
+              "con": {
+                "score": 81,
+                "moves": [
+                  {
+                    "moveId": "con-supernatural-claims-undemonstrated",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 81,
+                      "evidenceWarrant": 65,
+                      "responsiveness": 83,
+                      "relevanceBurden": 88,
+                      "precisionClarity": 82,
+                      "calibrationCharity": 59
+                    },
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-scriptural-story-is-not-miracle-evidence",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 75,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 86,
+                      "relevanceBurden": 86,
+                      "precisionClarity": 82,
+                      "calibrationCharity": 66
+                    },
+                    "score": 78
+                  },
+                  {
+                    "moveId": "con-observed-effect-needs-causal-link",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 90,
+                      "evidenceWarrant": 80,
+                      "responsiveness": 90,
+                      "relevanceBurden": 92,
+                      "precisionClarity": 89,
+                      "calibrationCharity": 89
+                    },
+                    "score": 88
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "moral-experiential-fit",
+            "title": "Morality, social influence, hope, and experiential fit",
+            "weightPercent": 20,
+            "sides": {
+              "pro": {
+                "score": 59,
+                "moves": [
+                  {
+                    "moveId": "pro-christianity-explains-altruism-hope",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 55,
+                      "evidenceWarrant": 39,
+                      "responsiveness": 78,
+                      "relevanceBurden": 78,
+                      "precisionClarity": 57,
+                      "calibrationCharity": 44
+                    },
+                    "score": 59
+                  },
+                  {
+                    "moveId": "pro-jesus-transformed-roman-morality",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 63,
+                      "evidenceWarrant": 47,
+                      "responsiveness": 68,
+                      "relevanceBurden": 68,
+                      "precisionClarity": 63,
+                      "calibrationCharity": 50
+                    },
+                    "score": 60
+                  }
+                ]
+              },
+              "con": {
+                "score": 82,
+                "moves": [
+                  {
+                    "moveId": "con-natural-account-of-cooperation",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 78,
+                      "evidenceWarrant": 64,
+                      "responsiveness": 86,
+                      "relevanceBurden": 84,
+                      "precisionClarity": 77,
+                      "calibrationCharity": 72
+                    },
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 92,
+                      "evidenceWarrant": 83,
+                      "responsiveness": 93,
+                      "relevanceBurden": 93,
+                      "precisionClarity": 90,
+                      "calibrationCharity": 93
+                    },
+                    "score": 90
+                  },
+                  {
+                    "moveId": "con-religious-desire-does-not-show-truth",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 84,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 90,
+                      "relevanceBurden": 89,
+                      "precisionClarity": 77,
+                      "calibrationCharity": 64
+                    },
+                    "score": 80
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "sectionId": "divine-character",
+            "title": "Divine character, love, wrath, and punishment",
+            "weightPercent": 12,
+            "sides": {
+              "pro": {
+                "score": 74,
+                "moves": [
+                  {
+                    "moveId": "pro-love-and-wrath-are-coherent",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 77,
+                      "evidenceWarrant": 62,
+                      "responsiveness": 79,
+                      "relevanceBurden": 80,
+                      "precisionClarity": 75,
+                      "calibrationCharity": 68
+                    },
+                    "score": 74
+                  }
+                ]
+              },
+              "con": {
+                "score": 76,
+                "moves": [
+                  {
+                    "moveId": "con-biblical-violence-challenges-character",
+                    "importance": 2,
+                    "dimensions": {
+                      "logicalCoherence": 80,
+                      "evidenceWarrant": 70,
+                      "responsiveness": 85,
+                      "relevanceBurden": 83,
+                      "precisionClarity": 74,
+                      "calibrationCharity": 63
+                    },
+                    "score": 77
+                  },
+                  {
+                    "moveId": "con-forgiveness-and-hell-undermine-justice",
+                    "importance": 3,
+                    "dimensions": {
+                      "logicalCoherence": 79,
+                      "evidenceWarrant": 64,
+                      "responsiveness": 88,
+                      "relevanceBurden": 87,
+                      "precisionClarity": 76,
+                      "calibrationCharity": 51
+                    },
+                    "score": 76
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "overall": {
+          "pro": {
+            "weightedSectionMean": 68.39,
+            "burdenCompletionAdjustment": 0,
+            "score": 68
+          },
+          "con": {
+            "weightedSectionMean": 81.64,
+            "burdenCompletionAdjustment": 0,
+            "score": 82
+          }
+        },
+        "winner": "con",
+        "winningMargin": 14,
+        "audit": {
+          "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+          "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+          "modelAuthoredTotals": 0,
+          "manualScoreOverrides": 0,
+          "scorePassOrdinal": 1
+        }
+      },
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 22,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}
