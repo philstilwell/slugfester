@@ -1098,7 +1098,7 @@ function sectionScoreDistribution() {
   const scores = debates.flatMap((debate) => debate.sectionScores || []);
 
   if (!scores.length) {
-    return { buckets: [], highest: 0, lowest: 0, maximumCount: 0, total: 0 };
+    return { buckets: [], highest: 0, lowest: 0, maximumCount: 0, axisMaximum: 0, total: 0 };
   }
 
   const lowest = Math.min(...scores);
@@ -1124,11 +1124,15 @@ function sectionScoreDistribution() {
     }
   );
 
+  const maximumCount = Math.max(...buckets.map((bucket) => bucket.count));
+  const axisMaximum = Math.ceil((maximumCount * 1.1) / 20) * 20;
+
   return {
     buckets,
     highest,
     lowest,
-    maximumCount: Math.max(...buckets.map((bucket) => bucket.count)),
+    maximumCount,
+    axisMaximum,
     total: scores.length
   };
 }
@@ -1222,11 +1226,11 @@ function renderRubricExtremesAccordion(extremes) {
 function renderSectionScoreDistribution(distribution) {
   if (!distribution.total) return "";
 
-  const middleCount = Math.round(distribution.maximumCount / 2);
+  const middleCount = Math.round(distribution.axisMaximum / 2);
   const bars = distribution.buckets
     .map((bucket) => {
-      const height = distribution.maximumCount
-        ? (bucket.count / distribution.maximumCount) * 100
+      const height = distribution.axisMaximum
+        ? (bucket.count / distribution.axisMaximum) * 100
         : 0;
       const range = `${bucket.start}–${bucket.end}`;
       const countLabel = `${bucket.count.toLocaleString("en-US")} ${bucket.count === 1 ? "section-side score" : "section-side scores"}`;
@@ -1260,7 +1264,7 @@ function renderSectionScoreDistribution(distribution) {
       <figure class="section-score-chart-figure">
         <div class="section-score-chart-frame">
           <div class="section-score-y-axis" aria-hidden="true">
-            <span>${distribution.maximumCount.toLocaleString("en-US")}</span>
+            <span>${distribution.axisMaximum.toLocaleString("en-US")}</span>
             <span>${middleCount.toLocaleString("en-US")}</span>
             <span>0</span>
           </div>
