@@ -154,9 +154,14 @@ test("the rubric quality check offers six closed-by-default section examples", a
   );
   const middleStart = Math.floor((barStyles.length - 1) / 2);
   const middleEnd = Math.ceil((barStyles.length - 1) / 2);
-  const redExtensionIndex = Math.floor((barStyles.length - 1) * 0.7);
-  expect(barStyles.at(0)).toContain("var(--coral) 100.0%");
-  expect(barStyles.at(redExtensionIndex)).toContain("var(--coral)");
+  const redExtensionIndex = Math.floor((barStyles.length - 1) * 0.65);
+  const goldAnchorIndex = Math.round((barStyles.length - 1) * 0.7);
+  const goldAnchorWeight = Number(
+    barStyles.at(goldAnchorIndex)?.match(/var\(--gold\) ([\d.]+)%/)?.[1]
+  );
+  expect(barStyles.at(0)).toContain("var(--rubric-chart-red) 100.0%");
+  expect(barStyles.at(redExtensionIndex)).toContain("var(--rubric-chart-red)");
+  expect(goldAnchorWeight).toBeGreaterThan(99);
   expect(barStyles.slice(middleStart, middleEnd + 1).every((style) => style?.includes("var(--gold)"))).toBe(true);
   expect(barStyles.at(-1)).toContain("var(--teal) 100.0%");
 
