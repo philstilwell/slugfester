@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 31,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.crossan-christological-titles-contest-caesar.words",
+    "moveProse.white-synoptic-variation-can-harmonize.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "crossan-christological-titles-contest-caesar",
+      "description": "Crossan argues that Christian titles for Jesus repurposed imperial honors already applied to Augustus, framing Jesus as Caesar’s political and religious rival rather than inventing new vocabulary.",
+      "wordCount": 27,
+      "rationale": "Recasts the proposition and its contextual inference as one complete sentence without adding evidence."
+    },
+    {
+      "moveId": "white-synoptic-variation-can-harmonize",
+      "description": "White argues that close comparison can reconcile Synoptic variations: Matthew’s verb meaning “acquire” resolves the staff-instruction discrepancy and shows how multiple accounts can enrich one another.",
+      "wordCount": 26,
+      "rationale": "Combines the harmonization claim and its linguistic example in one complete, faithful sentence."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

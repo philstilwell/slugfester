@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/BIX7eqTllEc/captions.srv3.xml",
+      "sha256": "46de7c3d68b2638a6cf64521bca94879ff8c69a527d08ca3349d58ba1f9c8fc1",
+      "bytes": 1265450
+    },
+    "events": {
+      "path": ".assessment-cache/captions/BIX7eqTllEc/events.json",
+      "sha256": "c999631d3ad1c6d292021204374ee93cf49021ab5587914cd12fbfb50fa1cbd7",
+      "bytes": 521500
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/BIX7eqTllEc/transcript.txt",
+      "sha256": "a7a0d08cb193ca351b47cd3c9194270debdf7846922e42ed93a4305e1dab8af3",
+      "bytes": 222322
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/BIX7eqTllEc/manifest.json",
+      "sha256": "e3fa4b5632e7fb09e86860d7951a2176e5e18b40f1e61553cb28a2f5fa904c05",
+      "bytes": 984
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/authorization.json",
+      "sha256": "535d513f843c57dec5bcbbb009862646b0121a9c7647e098d73f8e673f4b89e7",
+      "bytes": 3746
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/manifest.json",
+      "sha256": "228afc593a51d688b8c142fad438f90875655996f4fc12ee14f5c5f2fe1f3ef1",
+      "bytes": 6332
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/source/source-lock.json",
+      "sha256": "8b030719c9533177bc5dfa5b88fa72e9d79260cadb949177a4132b52dc201744",
+      "bytes": 3357
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/inventory/inventory.json",
+      "sha256": "13f709a8a7e59edcbc3c45e5052e68742646d1f49fae2df69ed5c562a505ccc5",
+      "bytes": 60658
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/judgments/judgment-packet.json",
+      "sha256": "4930adce31ee17d4f21025e89bb5ca1a5a766285ca5cce7b2242cb0d259441c7",
+      "bytes": 5090
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/judgments/execution.json",
+      "sha256": "5b4897f6de87296e02b2ed5f2a4f6fbccee0dfc578db5c7140a916ccb6144c3e",
+      "bytes": 2459
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/judgments/pass-a/output.json",
+      "sha256": "5260357830f8eb656bb19a2a125c75269b48963777114505668f38edfe36b627",
+      "bytes": 32166
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/judgments/pass-b/output.json",
+      "sha256": "1b818b08fc77b843c29cb9bc87ddee4143a3fc1e005f01d57e4bc7d0dcab37b4",
+      "bytes": 31728
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/disagreements/disagreements.json",
+      "sha256": "33c125a25b13efadfb771833c58e7ec4ea14a8cffdb15977a8f6836b9bb3b92a",
+      "bytes": 10284
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/audio/audio-verification.json",
+      "sha256": "b10c89ab199c85d6e1cda6d02bc3587ce84cf47be189b314e6eb9b4c9b163229",
+      "bytes": 1042
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/adjudication/packet.json",
+      "sha256": "6468e64d50d1d64bbdc5e42751f72ffa412c7328553f0958ce16f86fc74c65b1",
+      "bytes": 24167
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/adjudication/output.json",
+      "sha256": "1663f800316be57699e010a765a74bbcf28105d6a9e45d6329cae6085d999ae1",
+      "bytes": 3093
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/final-ledger/final-ledger.json",
+      "sha256": "f261a13530d4f7a030bc58ea6ae9daa6869164138963fd39e268f1f9810a2bbc",
+      "bytes": 175207
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/score-pass/input.json",
+      "sha256": "ee9ac08984dba4e248544e60796265ac4f403cf00adb479e7e4984584df96ae3",
+      "bytes": 964
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/score-pass/output.json",
+      "sha256": "4bb7742126706177af359aa5e9369ccb7a546e7d64ecbb325ee4dcff1223a506",
+      "bytes": 13656
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/score-pass/attestation.json",
+      "sha256": "1109b992cd75e0013272d86132e538ce31a8fa1f947c612481cfe5d5a8dd6578",
+      "bytes": 832
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/output.json",
+      "sha256": "db638d26ffd7cb8a4bf7731ac9cba1b32441e22d7e50fe3ddde449f68fb2081a",
+      "bytes": 56457
+    },
+    "events": {
+      "path": ".assessment-cache/captions/BIX7eqTllEc/events.json",
+      "sha256": "c999631d3ad1c6d292021204374ee93cf49021ab5587914cd12fbfb50fa1cbd7",
+      "bytes": 521500
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/BIX7eqTllEc/transcript.txt",
+      "sha256": "a7a0d08cb193ca351b47cd3c9194270debdf7846922e42ed93a4305e1dab8af3",
+      "bytes": 222322
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/correction-1-publication-depth.json",
+      "sha256": "4750a8fafffa576bd8afdfb80b72554a93dcbf45c60911155994c23d1c7e63e7",
+      "bytes": 20610
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/raw-prose-output-1.json",
+      "sha256": "c5d75aff6e329741f7a7c58ad200992c26f9d070b5718a825b860e0336a7ce11",
+      "bytes": 14503
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/content-parity-audit.json",
+      "sha256": "36e7781ef9ad8a84f65c45b94921bc65abf223556e61c6de84a69905bfceb11d",
+      "bytes": 4762
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/correction-2-rhetorical-tags.json",
+      "sha256": "2f2809da7a28c3b161c6f767d3a1837ad7f3f33a40dc6d675032ea60707550f1",
+      "bytes": 5763
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/rhetorical-tag-audit.json",
+      "sha256": "3d5b7ca98084c2c474689272cbfa1364e1b77c19c0f7947f5c3364a51a56d95d",
+      "bytes": 242601
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "25b37b113a3e6768de21b5e0b28205a0a490023827bc6fc6a776f607e49e51f8",
+      "bytes": 3553
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "242",
+    "debateId": "white-crossan-biblical-jesus-historicity-2005",
+    "sections": [
+      {
+        "sectionId": "gospel-purpose-and-versions",
+        "title": "Gospel purpose and multiple versions",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "white-purpose-does-not-entail-revision",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 84,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 75
+                },
+                "score": 80
+              },
+              {
+                "moveId": "white-updating-definition-presupposes-inauthenticity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 78,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 69
+                },
+                "score": 73
+              }
+            ]
+          },
+          "con": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "crossan-no-singular-orthodox-account",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 85,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 64
+                },
+                "score": 75
+              },
+              {
+                "moveId": "crossan-gospel-rephrases-for-new-community",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 81,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 69
+                },
+                "score": 73
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-action-and-worldview",
+        "title": "Divine action, worldview, and imperial alternatives",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "white-worldview-grounds-historical-revelation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 73,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 59
+                },
+                "score": 66
+              },
+              {
+                "moveId": "white-divine-consistency-does-not-bind-god",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 85,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 71
+                },
+                "score": 80
+              },
+              {
+                "moveId": "white-miracles-are-selective-authenticating-signs",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 80
+                },
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "crossan-christological-titles-contest-caesar",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 69,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 76
+                },
+                "score": 77
+              },
+              {
+                "moveId": "crossan-divinity-is-presence-not-natural-violation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 72,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 75
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "passion-narrative-harmony",
+        "title": "Mark and John in the Passion narrative",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "white-mark-retains-control-and-fulfillment",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 75
+                },
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "crossan-mark-john-ground-and-control-contrast",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 73
+                },
+                "score": 82
+              },
+              {
+                "moveId": "crossan-passion-versions-authentic-not-historical",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 78,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 73
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "parable-history-and-meaning",
+        "title": "Parable, history, and theological meaning",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "white-explicit-parable-markers-limit-extension",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 82,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 69
+                },
+                "score": 79
+              },
+              {
+                "moveId": "white-loaves-sign-points-to-spiritual-need",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 84,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 71
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "crossan-loaves-parable-preserves-demand",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 79,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 78
+                },
+                "score": 77
+              },
+              {
+                "moveId": "crossan-emmaus-stranger-parable",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 75,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 62
+                },
+                "score": 71
+              },
+              {
+                "moveId": "crossan-preenlightenment-question-is-significance",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 73,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 79
+                },
+                "score": 73
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "source-dependence-and-attestation",
+        "title": "Source dependence and historical attestation",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "white-source-reconstructions-are-hypothesis-laden",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 75,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 57
+                },
+                "score": 67
+              },
+              {
+                "moveId": "white-synoptic-variation-can-harmonize",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 75,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 74
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "crossan-dependence-changes-attestation-value",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 82
+                },
+                "score": 83
+              },
+              {
+                "moveId": "crossan-copying-reduces-four-witnesses-to-one-stream",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 87,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 85
+                },
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "resurrection-prophecy-and-salvation",
+        "title": "Resurrection, prophecy, and salvation",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "white-emmaus-centers-prophetic-fulfillment",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 84,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 67
+                },
+                "score": 79
+              },
+              {
+                "moveId": "white-bodily-resurrection-grounds-justification",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 81,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 69
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "crossan-prophecy-is-retrospective-hope",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 81
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 78.17,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      },
+      "con": {
+        "weightedSectionMean": 77.1,
+        "burdenCompletionAdjustment": 0,
+        "score": 77
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 1,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 24,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

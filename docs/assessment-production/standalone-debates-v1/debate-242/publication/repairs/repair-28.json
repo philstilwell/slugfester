@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 28,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.crossan-gospel-rephrases-for-new-community.words",
+    "moveProse.white-mark-retains-control-and-fulfillment.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "crossan-gospel-rephrases-for-new-community",
+      "description": "Crossan argues that Gospel writers may authentically reframe or invent stories for new communities because proclaiming good news requires more than merely repeating historical data.",
+      "wordCount": 25,
+      "rationale": "Replaces the truncated fragment with a complete sentence preserving both Crossan's authenticity claim and his inference about context-sensitive proclamation."
+    },
+    {
+      "moveId": "white-mark-retains-control-and-fulfillment",
+      "description": "White argues that Mark depicts Jesus controlling his arrest and fulfilling scripture, so John's differing details need not make either narrative an invented parable.",
+      "wordCount": 24,
+      "rationale": "Replaces the truncated fragment with a complete sentence preserving White's Markan evidence and his challenge to Crossan's parable inference."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

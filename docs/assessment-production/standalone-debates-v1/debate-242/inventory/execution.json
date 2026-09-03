@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "freshContext": true,
+    "isolatedFromOtherDebates": true,
+    "scoreBlind": true,
+    "judgmentBlind": true,
+    "publicationBlind": true,
+    "prohibitedArtifactsRead": false,
+    "method": "One fresh isolated inventory worker received only the authorized Debate 242 control documents, frozen source records, complete transcript, complete timed events, and the standalone validator's inventory-schema requirements."
+  },
+  "attempts": {
+    "attemptCount": 1,
+    "retryCount": 0,
+    "repairShardCount": 0,
+    "successfulAttempt": 1
+  },
+  "cost": {
+    "directIncrementalCostUsd": 0,
+    "paidServiceUsed": false,
+    "costBasis": "Local file review and ChatGPT subscription-backed model work have zero direct incremental cost."
+  },
+  "inputs": [
+    {"path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/SKILL.md", "sha256": "e74728ab0069dbab87b3c3083568e304499a557b8662c9035197f6c33899d9f4"},
+    {"path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/references/single-debate-runbook.md", "sha256": "4eb25ce24f7dd1e893ce1686403f8acfb26bdf20736880084b871fbc144e7021"},
+    {"path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"},
+    {"path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"},
+    {"path": "docs/assessment-workflow-v4.2.21.17.41.md", "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-242/authorization.json", "sha256": "535d513f843c57dec5bcbbb009862646b0121a9c7647e098d73f8e673f4b89e7"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-242/source/source-lock.json", "sha256": "8b030719c9533177bc5dfa5b88fa72e9d79260cadb949177a4132b52dc201744"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-242/manifest-pre-inventory.json", "sha256": "820ce42aab52a9440b559fbc5ea9db00393f44ffa06aa954e4df6a47b6cadfa1"},
+    {"path": ".assessment-cache/captions/BIX7eqTllEc/transcript.txt", "sha256": "a7a0d08cb193ca351b47cd3c9194270debdf7846922e42ed93a4305e1dab8af3"},
+    {"path": ".assessment-cache/captions/BIX7eqTllEc/events.json", "sha256": "c999631d3ad1c6d292021204374ee93cf49021ab5587914cd12fbfb50fa1cbd7"},
+    {"path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df", "use": "inventory schema validation requirements only"}
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-242/inventory/model-output.json",
+    "docs/assessment-production/standalone-debates-v1/debate-242/inventory/execution.json"
+  ],
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-242/inventory/model-output.json",
+    "sha256": "13f709a8a7e59edcbc3c45e5052e68742646d1f49fae2df69ed5c562a505ccc5",
+    "bytes": 60658,
+    "metrics": {
+      "sections": 6,
+      "moves": 24,
+      "proMoves": 12,
+      "conMoves": 12,
+      "proBurdenBridges": 6,
+      "conBurdenBridges": 7,
+      "belowHighAttributionMoves": 0,
+      "maximumMovesForEitherSideInAnySection": 3,
+      "sectionsRequiringFourthRowPreauthorization": 0
+    }
+  },
+  "validation": {
+    "jsonParsed": true,
+    "standaloneInventoryValidatorPassed": true,
+    "exactEventSpansRechecked": true,
+    "chronologyRechecked": true,
+    "sideCountsRecomputed": true,
+    "sectionCapacityRecomputed": true,
+    "bridgeReferencesRechecked": true,
+    "auditArithmeticRecomputed": true,
+    "motionByteIdenticalToAuthorization": true,
+    "completeTranscriptReviewed": true
+  }
+}

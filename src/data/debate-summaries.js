@@ -11238,5 +11238,55 @@ export const debateSummaries = [
         "title": "Religious experience and hidden agency"
       }
     ]
+  },
+  {
+    "id": "white-crossan-biblical-jesus-historicity-2005",
+    "number": "242",
+    "title": "James White vs John Dominic Crossan: Is the Bible True?",
+    "year": 2005,
+    "label": "Gospel history, theological versions, and resurrection",
+    "date": "2026-09-03",
+    "duration": "3 hr 21 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=BIX7eqTllEc",
+    "motion": "Is the orthodox biblical account of Jesus of Nazareth authentic and historically accurate?",
+    "summary": "White prevailed by one point through stronger textual rebuttals on Passion harmony and miracles, while Crossan dominated source dependence and narrowly won resurrection framing.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The canonical Gospel accounts of Jesus are authentic and historically accurate",
+        "speaker": "James White",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The Gospels are developing theological interpretations rather than one uniformly historical account",
+        "speaker": "John Dominic Crossan",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 77,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Gospel purpose and multiple versions"
+      },
+      {
+        "title": "Divine action, worldview, and imperial alternatives"
+      },
+      {
+        "title": "Mark and John in the Passion narrative"
+      },
+      {
+        "title": "Parable, history, and theological meaning"
+      },
+      {
+        "title": "Source dependence and historical attestation"
+      },
+      {
+        "title": "Resurrection, prophecy, and salvation"
+      }
+    ]
   }
 ];

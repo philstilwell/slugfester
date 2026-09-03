@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "white-purpose-does-not-entail-revision",
+    "crossan-no-singular-orthodox-account",
+    "white-updating-definition-presupposes-inauthenticity",
+    "crossan-gospel-rephrases-for-new-community",
+    "white-worldview-grounds-historical-revelation",
+    "crossan-christological-titles-contest-caesar",
+    "white-divine-consistency-does-not-bind-god",
+    "crossan-divinity-is-presence-not-natural-violation",
+    "white-miracles-are-selective-authenticating-signs",
+    "white-mark-retains-control-and-fulfillment",
+    "crossan-mark-john-ground-and-control-contrast",
+    "crossan-passion-versions-authentic-not-historical",
+    "white-explicit-parable-markers-limit-extension",
+    "crossan-loaves-parable-preserves-demand",
+    "white-loaves-sign-points-to-spiritual-need",
+    "crossan-emmaus-stranger-parable",
+    "crossan-preenlightenment-question-is-significance",
+    "white-source-reconstructions-are-hypothesis-laden",
+    "crossan-dependence-changes-attestation-value",
+    "white-synoptic-variation-can-harmonize",
+    "crossan-copying-reduces-four-witnesses-to-one-stream",
+    "white-emmaus-centers-prophetic-fulfillment",
+    "crossan-prophecy-is-retrospective-hope",
+    "white-bodily-resurrection-grounds-justification"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every fixed field from packet.template byte-for-byte.",
+    "summary": "One 18–28 word comparative summary explaining the one-point result.",
+    "quotes": {
+      "pro": "{text, context}",
+      "con": "{text, context}"
+    },
+    "sections": "Copy publicationLayout identity/title/timebox/score and rows. Replace every non-null move ID with {ledgerMoveId,time,role,words,score,critique,tags:[]}; preserve null cells and row order.",
+    "overall": {
+      "pro": "{score:78,strengths:[3 strings],blunders:[3 {text,links:[]}]}",
+      "con": "{score:77,strengths:[3 strings],blunders:[3 {text,links:[]}]}"
+    },
+    "logicalExtension": "For each side: finalArgument {thesis,premises:[5],conclusion,notice}; newArguments:[3 {title,text}]."
+  },
+  "instructions": {
+    "returnCompletePublicationWrapperAndCandidate": true,
+    "preserveAllIdentityEvidenceAndScores": true,
+    "mapEveryMoveExactlyOnceInDeclaredPublicationOrder": true,
+    "deriveEveryMoveTimeRoleDescriptionScoreAndCritiqueFromFrozenLedgerAndScoreFiles": true,
+    "tagsAndBlunderLinksRemainEmpty": true,
+    "descriptionsTarget22To28Words": true,
+    "descriptionsAllowed8To55Words": true,
+    "critiquesExactlyFourLabeledSentencesAnd105To130Words": true,
+    "critiquesMinimum880Characters": true,
+    "descriptionsAndCritiquesSourceSpecific": true,
+    "summary18To28Words": true,
+    "threeStrengthsAndThreeBlundersPerSide": true,
+    "overallItemsTarget16To30Words": true,
+    "logicalExtensionFivePremisesPerSide": true,
+    "logicalExtensionThreeNewArgumentsPerSide": true,
+    "newArguments45To130Words": true,
+    "quoteTextMustBeExactContiguousTranscriptWords": true,
+    "representativeQuoteWords3To18": true,
+    "quoteContextWords12To55": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedFinalArgumentAndNewArgument": true,
+    "sourceQuoteAuditMustVerifyBothQuotesAgainstLockedTranscript": true,
+    "ordinaryPunctuationRequired": true,
+    "noFallacyOrBiasLabelsBeforeLaterReview": true,
+    "doNotAlterOrRecalculateScores": true
+  }
+}
+
+

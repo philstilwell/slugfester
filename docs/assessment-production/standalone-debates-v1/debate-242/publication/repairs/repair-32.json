@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 32,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.crossan-copying-reduces-four-witnesses-to-one-stream.words",
+    "moveProse.crossan-divinity-is-presence-not-natural-violation.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "crossan-copying-reduces-four-witnesses-to-one-stream",
+      "description": "If Matthew and Luke reuse Mark, while John knows the Synoptics, the Gospels represent one dependent tradition stream rather than four independent witnesses.",
+      "wordCount": 23,
+      "rationale": "Combines the stated literary dependence with its evidential consequence in one complete sentence without adding evidence."
+    },
+    {
+      "moveId": "crossan-divinity-is-presence-not-natural-violation",
+      "description": "God remains continuously present as justice rather than intermittently violating nature; Jesus's forgiveness from the cross therefore manifests divinity more meaningfully than miraculous physical passage.",
+      "wordCount": 25,
+      "rationale": "Preserves the contrast between continuous divine presence and supernatural intervention while stating Crossan's comparative inference as a complete sentence."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

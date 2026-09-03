@@ -1,0 +1,892 @@
+{
+  "schemaVersion": "1.1-standalone-rhetorical-review-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-blind-rhetorical-review-input",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "policy": {
+    "compareEveryCandidateAgainstEveryExactDefinition": true,
+    "outputEverySeriousCandidateConsideredEvenWhenRejected": true,
+    "acceptOnlyMaterialDefectsAlreadyRepresentedInCritiqueOrBlunder": true,
+    "acceptedContextMustBeSourceSpecificAndContainEightToThirtyFiveWords": true,
+    "weakSupportIncompleteMechanismAndUnexcludedAlternativesAreNotAutomaticallyNamedDefects": true,
+    "contestedPremiseIsNotAutomaticallyBeggingTheQuestion": true,
+    "weakAnalogyIsNotAutomaticallyEquivocation": true,
+    "citationAloneIsNotAppealToAuthority": true,
+    "disagreementOrRhetoricalHarshnessAloneIsNotBeliefBiasOrConfirmationBias": true,
+    "twoLabelsRequireTwoDistinctDefects": true,
+    "emptyAcceptedResultPermitted": true,
+    "fallaciesAndBiasesReceiveIdenticalScrutiny": true,
+    "existingTagsOtherReviewsScoresFrequenciesAndOtherDebatesUnavailable": true,
+    "scoresAndLockedScoreSentencesExcluded": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.1",
+    "status": "complete-and-schema-valid",
+    "reviewedMoveIdsMustEqualPacketOrder": [
+      "white-purpose-does-not-entail-revision",
+      "crossan-no-singular-orthodox-account",
+      "white-updating-definition-presupposes-inauthenticity",
+      "crossan-gospel-rephrases-for-new-community",
+      "white-worldview-grounds-historical-revelation",
+      "crossan-christological-titles-contest-caesar",
+      "white-divine-consistency-does-not-bind-god",
+      "crossan-divinity-is-presence-not-natural-violation",
+      "white-miracles-are-selective-authenticating-signs",
+      "white-mark-retains-control-and-fulfillment",
+      "crossan-mark-john-ground-and-control-contrast",
+      "crossan-passion-versions-authentic-not-historical",
+      "white-explicit-parable-markers-limit-extension",
+      "crossan-loaves-parable-preserves-demand",
+      "white-loaves-sign-points-to-spiritual-need",
+      "crossan-emmaus-stranger-parable",
+      "crossan-preenlightenment-question-is-significance",
+      "white-source-reconstructions-are-hypothesis-laden",
+      "crossan-dependence-changes-attestation-value",
+      "white-synoptic-variation-can-harmonize",
+      "crossan-copying-reduces-four-witnesses-to-one-stream",
+      "white-emmaus-centers-prophetic-fulfillment",
+      "crossan-prophecy-is-retrospective-hope",
+      "white-bodily-resurrection-grounds-justification"
+    ],
+    "reviewedOverallBlunderIdsMustEqualPacketOrder": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-2",
+      "overall-pro-blunder-3",
+      "overall-con-blunder-1",
+      "overall-con-blunder-2",
+      "overall-con-blunder-3"
+    ],
+    "candidateReviewFields": [
+      "moveId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "overallBlunderCandidateReviewFields": [
+      "blunderId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "decisionValues": [
+      "accepted",
+      "rejected"
+    ],
+    "contextWords": [
+      8,
+      35
+    ],
+    "rationaleMinimumWords": 18,
+    "candidateArraysContainEverySeriousCandidateActuallyConsidered": "Include accepted and rejected serious candidates; do not fabricate filler candidates."
+  },
+  "definitions": [
+    {
+      "type": "fallacy",
+      "slug": "appeal-to-authority",
+      "label": "Appeal to authority",
+      "definition": "Relying on a person or institution's status as if it settles the argument, especially when the relevant evidence, expertise, or consensus has not been shown.",
+      "externalUrl": "https://logfall.com/fallacies/appeal-to-authority/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "argument-from-ignorance",
+      "label": "Argument from ignorance",
+      "definition": "Treating a claim as true because it has not been disproved, or false because it has not been proved, rather than supplying positive evidence.",
+      "externalUrl": "https://logfall.com/fallacies/argument-from-ignorance/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "begging-the-question",
+      "label": "Begging the question",
+      "definition": "Assuming, directly or indirectly, the very point that needs to be established, so the conclusion is smuggled into the premises.",
+      "externalUrl": "https://logfall.com/fallacies/begging-the-question/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "equivocation",
+      "label": "Equivocation",
+      "definition": "Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.",
+      "externalUrl": "https://logfall.com/fallacies/equivocation/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "red-herring",
+      "label": "Red herring",
+      "definition": "Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.",
+      "externalUrl": "https://logfall.com/fallacies/red-herring/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "special-pleading",
+      "label": "Special pleading",
+      "definition": "Applying an exception or different standard to one side of the argument without giving a principled reason for the difference.",
+      "externalUrl": "https://logfall.com/fallacies/special-pleading/"
+    },
+    {
+      "type": "bias",
+      "slug": "ambiguity-effect",
+      "label": "Ambiguity effect",
+      "definition": "Preferring clearer or more familiar claims over uncertain ones, even when the uncertain option may deserve serious consideration.",
+      "externalUrl": "https://cogbias.site/biases/ambiguity-effect/"
+    },
+    {
+      "type": "bias",
+      "slug": "authority-bias",
+      "label": "Authority bias",
+      "definition": "Giving extra weight to a claim because it comes from a perceived authority, sometimes beyond what the evidence itself supports.",
+      "externalUrl": "https://cogbias.site/biases/authority-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "base-rate-neglect",
+      "label": "Base-rate neglect",
+      "definition": "Underweighting general background rates or prior probabilities while focusing too heavily on a vivid specific case or local detail.",
+      "externalUrl": "https://cogbias.site/biases/base-rate-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "belief-bias",
+      "label": "Belief bias",
+      "definition": "Judging an argument by whether its conclusion feels believable instead of evaluating whether the conclusion follows from the premises.",
+      "externalUrl": "https://cogbias.site/biases/belief-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "confirmation-bias",
+      "label": "Confirmation bias",
+      "definition": "Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information.",
+      "externalUrl": "https://cogbias.site/biases/confirmation-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "scope-neglect",
+      "label": "Scope neglect",
+      "definition": "Failing to adjust judgment in proportion to the scale, number, or magnitude of what is being discussed.",
+      "externalUrl": "https://cogbias.site/biases/scope-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "subjective-validation",
+      "label": "Subjective validation",
+      "definition": "Treating a claim as especially accurate or meaningful because it feels personally resonant or confirms one's private experience.",
+      "externalUrl": "https://cogbias.site/biases/subjective-validation/"
+    }
+  ],
+  "moves": [
+    {
+      "candidateId": "white-purpose-does-not-entail-revision",
+      "kind": "card",
+      "moveId": "white-purpose-does-not-entail-revision",
+      "sectionId": "gospel-purpose-and-versions",
+      "sectionTitle": "Gospel purpose and multiple versions",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "A Gospel's theological purpose is compatible with historical accuracy and need not entail revision or mythmaking.",
+      "inference": "Luke's stated aim of giving Theophilus certainty would be frustrated by fabrication, so purpose alone supplies no reason to infer historical alteration.",
+      "sourceSpan": {
+        "startEvent": 208,
+        "endEvent": 224,
+        "startMs": 504039,
+        "endMs": 547880,
+        "excerpt": "that Theophilus may have certainty concerning the things that he had been taught this would Define for us authentic for surely one does not impart certainty concerning what one has been taught by rewriting history changing historical events and engaging in unfounded mythmaking but immediately I must assert that it is one of the major errors of many in our modern day to assume that if you write an account for a theological or spiritual purpose you must by definition engage in historical revisionism one can firmly believe that the facts of History point to a particular conclusion without having to alter and change those facts to say then"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "A Gospel's theological purpose is compatible with historical accuracy and need not entail revision or mythmaking Luke's stated aim of giving Theophilus certainty would be.",
+      "critique": "Strongest feature: White anchors his distinction in Luke's stated purpose of giving Theophilus certainty, answering the claim that theological purpose necessarily entails historical revision, which justifies the locked relevanceBurden high of [withheld]. Principal limitation: Luke's declared intention describes authorial purpose but cannot independently establish factual accuracy, while White's broad characterization of revisionist reasoning leaves the historical dispute insufficiently tested, explaining evidenceWarrant at [withheld]. Live burden: White still must show from particular Gospel details that theological selection occurred without material alteration, while answering evidence that rival readings identify as redaction."
+    },
+    {
+      "candidateId": "crossan-no-singular-orthodox-account",
+      "kind": "card",
+      "moveId": "crossan-no-singular-orthodox-account",
+      "sectionId": "gospel-purpose-and-versions",
+      "sectionTitle": "Gospel purpose and multiple versions",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "There is no singular orthodox biblical account of Jesus; there is one Gospel expressed through multiple canonical versions.",
+      "inference": "The existence of four narrative interpretations makes the motion's singular uniform account an invalid description of the source materials.",
+      "sourceSpan": {
+        "startEvent": 907,
+        "endEvent": 928,
+        "startMs": 2135400,
+        "endMs": 2204359,
+        "excerpt": "afraid first of all there does not exist an orthodox biblical account singular an orthodox biblical account of Jesus of Nazareth it just doesn't exist which is another way of saying it is not the will of God are the inspiration of God in Christian terms and therefore the question of its authen authenticity or historicity is not valid that is such an orthodox biblical account singular is neither historically nor inspirationally valid what then does exist and is what exists authentic and historical my first part gospel and versions and this touches on something that Dr White also mentioned we some times speak sloppily and incorrectly I do it myself lots of times about the four Orthodox biblical or canonical gospels but for earliest Christianity and I think for all Christianity there"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "There is no singular orthodox biblical account of Jesus; there is one Gospel expressed through multiple canonical versions The existence of four narrative interpretations makes.",
+      "critique": "Strongest feature: Crossan uses the plurality of four Gospel narratives to challenge the motion's singular object, distinguishing one Gospel message from multiple versions and earning the locked responsiveness high of [withheld]. Principal limitation: Several narrative interpretations undermine simple uniformity but do not prove that no collective orthodox account exists, make historical inquiry invalid, or establish Crossan's claim about divine inspiration, while his compression of authenticity, historicity, and inspiration explains calibrationCharity at [withheld]. Live burden: Crossan still must identify consequential differences among the canonical narratives and show why they defeat a shared account rather than display complementary perspectives within one tradition."
+    },
+    {
+      "candidateId": "white-updating-definition-presupposes-inauthenticity",
+      "kind": "card",
+      "moveId": "white-updating-definition-presupposes-inauthenticity",
+      "sectionId": "gospel-purpose-and-versions",
+      "sectionTitle": "Gospel purpose and multiple versions",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Defining Gospel as historical alteration for a new audience builds the denial of historicity into the definition.",
+      "inference": "Neither the New Testament use of good news nor continuing relevance requires redactional change, so timeless news can serve later audiences unchanged.",
+      "sourceSpan": {
+        "startEvent": 598,
+        "endEvent": 617,
+        "startMs": 1418640,
+        "endMs": 1469360,
+        "excerpt": "alteration of the Gospel stories so as to fit the message to various contexts Mark Writing to Martyrs for example and then Luke altering Mark for his context etc etc now surely at this point we must protest the presuppositional nature of this definition of gospel by definition the historicity of the gospels themselves is denied there is nothing in the meaning of the word and its New Testament usage or understanding that demands the concept of historical alteration redaction or amendation the good news that rejoiced the hearts of the disciples when Jesus appeared to them after his resurrection does not have to be altered or changed to Rejoice the heart of Believers this very day it is the timelessness of the message of what God did in Christ that is"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Defining Gospel as historical alteration for a new audience builds the denial of historicity into the definition Neither the New Testament use of good news.",
+      "critique": "Strongest feature: White precisely distinguishes the continuing relevance of good news from any necessity for altering Gospel narratives, directly challenging Crossan's updating definition and justifying precisionClarity [withheld], responsiveness [withheld], logicalCoherence [withheld], and relevanceBurden [withheld]. Principal limitation: His excerpt asserts New Testament usage and timeless efficacy without textual examples, proves only that alteration is unnecessary rather than absent, and compresses Crossan's literary evidence into a presuppositional definition, fitting evidenceWarrant [withheld] and calibrationCharity [withheld]. Live burden: White must examine particular inter-Gospel changes and demonstrate that unchanged historical content explains their community-specific forms better than Crossan's contextual-redaction account."
+    },
+    {
+      "candidateId": "crossan-gospel-rephrases-for-new-community",
+      "kind": "card",
+      "moveId": "crossan-gospel-rephrases-for-new-community",
+      "sectionId": "gospel-purpose-and-versions",
+      "sectionTitle": "Gospel purpose and multiple versions",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "A Gospel writer may rephrase or invent a story for a new community while remaining spiritually authentic.",
+      "inference": "The stream of multiple versions shows that transmitting good news requires more than repeating historical data and permits context-sensitive reformulation.",
+      "sourceSpan": {
+        "startEvent": 1490,
+        "endEvent": 1510,
+        "startMs": 3722839,
+        "endMs": 3788920,
+        "excerpt": "the possibility that there is not four independent versions four independent versions but actually a stream of tradition what I get from this is that it is Never Enough simply to tell the historical story I am convinced that if Mark had in front of him everything Jesus ever said everything Jesus ever did DVDs and all the rest of it of what he had done mark would still have said things like well that might have been all right Jesus to say to those Fishers in Galilee but that doesn't speak to my people now and I will rephrase you Jesus or if you prefer your spirit is with me and I will trust that when I do rephrase you or even when when I invent a story about you I have still got it right still got it authentic still got it authentic even"
+      },
+      "respondsToIds": [
+        "white-updating-definition-presupposes-inauthenticity"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-updating-definition-presupposes-inauthenticity",
+          "component": "denies that contextual revision destroys authenticity and treats the four-version tradition as evidence for revision"
+        }
+      ],
+      "argumentDescription": "A Gospel writer may rephrase or invent a story for a new community while remaining spiritually authentic The stream of multiple versions shows that transmitting.",
+      "critique": "Strongest feature: Crossan directly answers White by presenting Gospel transmission as a stream in which Mark may rephrase Jesus for a later community while preserving spiritual authenticity, supporting responsiveness [withheld], relevanceBurden [withheld], precisionClarity [withheld], and logicalCoherence [withheld]. Principal limitation: The imagined scenario of Mark possessing recordings supplies no canonical example of invention, while four versions alone cannot establish that community need licenses fabrication or define how authenticity survives it, appropriately fixing evidenceWarrant [withheld] and calibrationCharity [withheld]. Live burden: Crossan must identify concrete reformulations, distinguish invention from selection or paraphrase, and provide a principled criterion showing when altered narrative remains authentically Jesus's message."
+    },
+    {
+      "candidateId": "white-worldview-grounds-historical-revelation",
+      "kind": "card",
+      "moveId": "white-worldview-grounds-historical-revelation",
+      "sectionId": "divine-action-and-worldview",
+      "sectionTitle": "Divine action, worldview, and imperial alternatives",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "The historical authenticity question depends on whether one's worldview permits a revealing God to act in history.",
+      "inference": "If the Christian God exists and enters creation, objective revelation is possible; excluding such action in advance makes a negative result worldview-driven.",
+      "sourceSpan": {
+        "startEvent": 313,
+        "endEvent": 329,
+        "startMs": 744000,
+        "endMs": 783800,
+        "excerpt": "without the Christian God who has revealed himself in Jesus Christ and the Christian scriptures all bets are off so to speak and we are doomed to subjectivism and mere opinion only because God has chosen to enter into his own Creation redemptively in the Divine second person of the Trinity can we escape the circle of personal opinion and uncertainty that leaves us wondering if God has truly acted in this world and if we can indeed have peace with the God we know is there now while our debate this evening is not necessarily focused upon the existence of the Christian God to ask if the New Testament documents are a itic and historical does in fact"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "The historical authenticity question depends on whether one's worldview permits a revealing God to act in history If the Christian God exists and enters creation.",
+      "critique": "Strongest feature: White identifies worldview exclusion as consequential, because permitting a revealing God makes historical revelation possible, and this engagement supports responsiveness [withheld], precisionClarity [withheld], logicalCoherence [withheld], and relevanceBurden [withheld]. Principal limitation: Possibility never establishes actuality, while the decisive Christian premise remains unsupported and dismissing alternative inquiry as subjectivism is overextended, appropriately constraining evidenceWarrant [withheld] and calibrationCharity [withheld]. Live burden: White must connect divine-action possibility to document-specific historical evidence showing Gospel events occurred, while demonstrating why non-Christian historiography cannot responsibly evaluate such evidence without presupposing his conclusion."
+    },
+    {
+      "candidateId": "crossan-christological-titles-contest-caesar",
+      "kind": "card",
+      "moveId": "crossan-christological-titles-contest-caesar",
+      "sectionId": "divine-action-and-worldview",
+      "sectionTitle": "Divine action, worldview, and imperial alternatives",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "Christian divine titles for Jesus reused imperial titles to oppose Caesar's rule rather than introducing an unprecedented vocabulary.",
+      "inference": "Because Augustus was already called divine son, redeemer, lord, and savior, applying those titles to Jesus expresses a rival political-religious program whose content must be interpreted contextually.",
+      "sourceSpan": {
+        "startEvent": 1996,
+        "endEvent": 2023,
+        "startMs": 4934600,
+        "endMs": 5021880,
+        "excerpt": "point also extremely constitutive for me is the background of the Roman empire under which all of this is happening and it's not just a background it's a matrix Let me Give an example this is vitally important for me at the time of Jesus back up before the time of Jesus and if Jesus had never existed Caesar Caesar Augustus was called Divine Son of God God even in Egypt God from God Redeemer Liberator Lord and savior of the world most of us might think those were particular Christian titles now when those titles are used of Jesus they are not being used simply to say well these are just ordinary terms everyone has their little Lord Jesus is just our Lord they are high treason they are saying one of the ways in which I summarize the gospel not Caesar but Christ is Lord Son of God and all of that everything you cannot act as if all of these titles were invented by Christianity they are taking on the Imperial rule of"
+      },
+      "respondsToIds": [
+        "white-worldview-grounds-historical-revelation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-worldview-grounds-historical-revelation",
+          "component": "supplies a first-century contextual alternative for understanding divine claims"
+        }
+      ],
+      "argumentDescription": "Christian divine titles for Jesus reused imperial titles to oppose Caesar's rule rather than introducing an unprecedented vocabulary Because Augustus was already called divine son.",
+      "critique": "Strongest feature: Crossan links Augustus's titles, including divine son, redeemer, lord, and savior, to the rival-sovereignty formula not Caesar but Christ is Lord, supporting precisionClarity [withheld], logicalCoherence [withheld], evidenceWarrant [withheld], and calibrationCharity [withheld]. Principal limitation: Shared imperial vocabulary establishes contextual resonance without proving political opposition exhausts Christological meaning, while the excerpt leaves the prevalence and documentary settings of those titles unsubstantiated, limiting responsiveness [withheld] and relevanceBurden [withheld]. Live burden: Crossan must document imperial usages comparatively and demonstrate this interpretation better explains Christian texts, while showing how title rivalry bears on the historical authenticity of narrated events."
+    },
+    {
+      "candidateId": "white-divine-consistency-does-not-bind-god",
+      "kind": "card",
+      "moveId": "white-divine-consistency-does-not-bind-god",
+      "sectionId": "divine-action-and-worldview",
+      "sectionTitle": "Divine action, worldview, and imperial alternatives",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Crossan's divine-consistency premise improperly requires God to repeat every historical action in every generation.",
+      "inference": "A purposive God may act uniquely at selected times, so the absence of the same act today does not negate a past act.",
+      "sourceSpan": {
+        "startEvent": 439,
+        "endEvent": 459,
+        "startMs": 1037600,
+        "endMs": 1093480,
+        "excerpt": "as we just saw the problem is if we start with the idea that if God isn't doing it today then he has never done it in the past are we not beginning with the negation of the Christian view of its own scriptures as a starting point did any of the biblical writers themselves believe that surely not I have to point out that there is no logical reason to believe that God is not free to act in human history there is no reason to believe that if God does Action X in history for his own purposes say despoiling the gods of Egypt as a display of his power that he must keep despoiling the gods of Egypt in each generation ation in the same way forever more the presupposition of divine consistency as proposed by Dr cron is nothing more as far as I can see than an insistence that God is not free to act"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Crossan's divine-consistency premise improperly requires God to repeat every historical action in every generation A purposive God may act uniquely at selected times, so the.",
+      "critique": "Strongest feature: White's example of despoiling Egypt's gods sharply distinguishes a purposive unique act from an incoherent obligation to repeat that act in every generation, supporting logical coherence [withheld], responsiveness [withheld], and precision clarity [withheld]. Principal limitation: The example defeats a repetition requirement conceptually but supplies no historical evidence that any miracle occurred, explaining evidence warrant [withheld], while its literal formulation risks oversimplifying Crossan's consistency principle and keeps calibration charity at [withheld]. Live burden: White must connect freedom for selective divine action to credible evidence for the particular reported events, rather than treating bare possibility as historical confirmation, which fits relevance burden [withheld]."
+    },
+    {
+      "candidateId": "crossan-divinity-is-presence-not-natural-violation",
+      "kind": "card",
+      "moveId": "crossan-divinity-is-presence-not-natural-violation",
+      "sectionId": "divine-action-and-worldview",
+      "sectionTitle": "Divine action, worldview, and imperial alternatives",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "God is continuously present as justice rather than intermittently intervening by violating natural law.",
+      "inference": "Jesus's forgiveness from the cross manifests divinity more meaningfully than passing through walls, so divine action need not validate supernatural narrative events.",
+      "sourceSpan": {
+        "startEvent": 3004,
+        "endEvent": 3025,
+        "startMs": 7484119,
+        "endMs": 7540880,
+        "excerpt": "methodology not by the methodology I do not presume that God intervenes in the world I presume that God is present in the world world all the time and now and then we managed to see it what I would be what I would accept as I think your phrase was a Divine m i I would imagine Jesus dying on the cross as recorded in Luke and saying father forgive them but they know not what they do is about the most Divine if I could say intervention using your term for the moment that I could imagine if if I took it literally that Jesus could come through the walls of a room my answer would be good for Jesus if he dies on the cross saying father forgive them for they know know what they do that's Divinity but it is not by definition something where there is a historical uh violation of the natural"
+      },
+      "respondsToIds": [
+        "white-divine-consistency-does-not-bind-god"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-divine-consistency-does-not-bind-god",
+          "component": "reframes divine action as continual presence and moral manifestation rather than repeated intervention"
+        }
+      ],
+      "argumentDescription": "God is continuously present as justice rather than intermittently intervening by violating natural law Jesus's forgiveness from the cross manifests divinity more meaningfully than passing.",
+      "critique": "Strongest feature: Crossan's contrast between continuous divine presence and intermittent intervention is intelligible and concretely illustrated by Jesus forgiving his executioners, supporting precision clarity [withheld], logical coherence [withheld], and calibration charity [withheld]. Principal limitation: That moral illustration expresses what Crossan values as divinity but does not establish that divine action cannot additionally include selective natural violations, leaving evidence warrant [withheld] and White's freedom objection substantially unanswered. Live burden: Crossan must justify why constant presence excludes exceptional intervention and why this methodological presumption warrants rejecting historical miracle reports, rather than merely redescribing divinity, which explains responsiveness [withheld] and relevance burden [withheld]."
+    },
+    {
+      "candidateId": "white-miracles-are-selective-authenticating-signs",
+      "kind": "card",
+      "moveId": "white-miracles-are-selective-authenticating-signs",
+      "sectionId": "divine-action-and-worldview",
+      "sectionTitle": "Divine action, worldview, and imperial alternatives",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Miracles are selective historical signs authenticating Jesus, not evidence that God is otherwise absent or must act identically every day.",
+      "inference": "Their specific revelatory purpose explains both violations of ordinary processes and their nonrepetition, answering the consistency objection.",
+      "sourceSpan": {
+        "startEvent": 3310,
+        "endEvent": 3338,
+        "startMs": 8237519,
+        "endMs": 8308519,
+        "excerpt": "not I really don't I've not been able to determine that I've been trying to listen but maybe it's just simply the topics I've heard you speaking on that has not been able to give me that information but I believe that he does because of his Sovereign decree and when I speak of intervention I'm I'm speaking of the very historical events let's use tonight's debate as the example of the gospels themselves such as Miracles that is things that testify as the signs in in John chapter 6 he did this sign that demonstrated who he was these were signs Lazar Lazarus the the uh the wedding at can of Galilee and the wine these were signs that involved at times the violation of the natural order of things but they did so for a specific purpose I don't believe that God is about doing that on every single day because he's already provided his testimony as to who his son was and the uniqueness of his son especially by raising him from the dead intervention doesn't mean he's on vacation he is present in his creation at all times but he is chosen at specific times to enter into that Creation in a in a miraculous fashion as"
+      },
+      "respondsToIds": [
+        "crossan-divinity-is-presence-not-natural-violation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-divinity-is-presence-not-natural-violation",
+          "component": "accepts continual divine presence but argues for additional purposive miraculous signs"
+        }
+      ],
+      "argumentDescription": "Miracles are selective historical signs authenticating Jesus, not evidence that God is otherwise absent or must act identically every day Their specific revelatory purpose explains.",
+      "critique": "Strongest feature: White answers Crossan by accepting divine presence while distinguishing extraordinary interventions as selective authenticating signs, concretely naming Lazarus, Cana, Johannine sign language, and resurrection; that coherent, charitable engagement explains logicalCoherence [withheld], responsiveness [withheld], precisionClarity [withheld], and calibrationCharity [withheld]. Principal limitation: The examples internally clarify White’s proposed purpose, yet their authenticating authority presupposes the historical occurrence under dispute, so evidenceWarrant remains [withheld] despite the conceptually disciplined explanation. Live burden: White must independently establish that these narrated violations occurred and genuinely authenticate Jesus, rather than merely showing how a sovereign God could purposively act exceptionally without acting identically every day, which leaves relevanceBurden at [withheld]."
+    },
+    {
+      "candidateId": "white-mark-retains-control-and-fulfillment",
+      "kind": "card",
+      "moveId": "white-mark-retains-control-and-fulfillment",
+      "sectionId": "passion-narrative-harmony",
+      "sectionTitle": "Mark and John in the Passion narrative",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Mark also portrays Jesus as controlling the arrest and invoking scriptural fulfillment.",
+      "inference": "Crossan's contrast omits Markan evidence of agency; differing Johannine detail therefore does not require treating either narrative as invented parable.",
+      "sourceSpan": {
+        "startEvent": 1668,
+        "endEvent": 1689,
+        "startMs": 4152679,
+        "endMs": 4204760,
+        "excerpt": "addresses this this group of soldiers Jesus said to them have you come again out against me as a robber with swords and clubs to capture me day after day I was with you in the temple teaching and you did not seize me but let the scriptures be fulfilled Jesus isn't out of control here Jesus is just as in control in Mark as he is in John it is very easy and I I I I don't I don't call it pulling atation but clearly John does have other things he wants to communicate within the context in which he's writing I said that from the beginning John is very clearly giving us details that are not found in the synoptic gospels there's no question about that but does that mean that to harmonize these events recognizing the differing purposes of the writers means that these are simply Parables that they didn't actually take place and that"
+      },
+      "respondsToIds": [
+        "crossan-mark-john-ground-and-control-contrast",
+        "crossan-passion-versions-authentic-not-historical"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-mark-john-ground-and-control-contrast",
+          "component": "supplies omitted Markan assertions of agency"
+        },
+        {
+          "targetMoveId": "crossan-passion-versions-authentic-not-historical",
+          "component": "rejects the inference from different emphases to nonhistorical invention"
+        }
+      ],
+      "argumentDescription": "Mark also portrays Jesus as controlling the arrest and invoking scriptural fulfillment Crossan's contrast omits Markan evidence of agency; differing Johannine detail therefore does not.",
+      "critique": "Strongest feature: White contests Crossan’s helpless-Mark versus controlling-John contrast by citing Jesus’s temple challenge and command that scripture be fulfilled; this source-specific counterexample explains responsiveness [withheld], relevanceBurden [withheld], logicalCoherence [withheld], evidenceWarrant [withheld], and precisionClarity [withheld]. Principal limitation: Although Markan agency weakens an absolute contrast, White’s assertion that Jesus is just as controlling in Mark minimizes Crossan’s tonal difference and does not reconcile every arrest or passion detail, appropriately fixing calibrationCharity at [withheld]. Live burden: White must show that distinct narrative emphases remain historically harmonizable through complete comparison, not merely that Mark includes agency or that divergence fails to prove parabolic invention."
+    },
+    {
+      "candidateId": "crossan-mark-john-ground-and-control-contrast",
+      "kind": "card",
+      "moveId": "crossan-mark-john-ground-and-control-contrast",
+      "sectionId": "passion-narrative-harmony",
+      "sectionTitle": "Mark and John in the Passion narrative",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "Mark and John construct sharply different portrayals of Jesus's agency at his arrest.",
+      "inference": "Mark's prostrate, distressed Jesus contrasts with John's commanding Jesus before a fallen cohort, supporting distinct narrative interpretations rather than simple witness variation.",
+      "sourceSpan": {
+        "startEvent": 1059,
+        "endEvent": 1084,
+        "startMs": 2541000,
+        "endMs": 2610680,
+        "excerpt": "event Mark says Jesus speaking I am deeply grieved even to death go a little farther he threw himself on the ground and prayed that if it were possible the hour might pass from him Jesus is on the ground not so in John in John's gospel Judas comes with the soldiers to arrest Jesus in English we say a band of soldiers in my English text in Greek there is spyra that's a cohort that's 600 troops one 10th of a legion at full compliment and their Captain is aill Aros head of a thousand a military Tribune in charge of a regular or even a double cohort they bring out almost the whole defense mechanism of Jerusalem against them what happens Jesus knowing all that was happened to him came forward and asked them whom are you looking for they answered Jesus of Nazareth Jesus replied I am he Judas who betrayed him was standing with them when Jesus said to them I am he they step back they Ste"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Mark and John construct sharply different portrayals of Jesus's agency at his arrest Mark's prostrate, distressed Jesus contrasts with John's commanding Jesus before a fallen.",
+      "critique": "Strongest feature: Crossan concretely juxtaposes Mark’s prostrate, grief-stricken Jesus requesting escape from the approaching hour with John’s foreknowing, forward-stepping Jesus confronting an arresting cohort and commanding protection for his disciples, giving the interpretive contrast unusually specific textual anchorage. Principal limitation: Although the comparison establishes conspicuously different narrative emphases, selected moments may remain chronologically complementary, and neither military elaboration nor divergent agency independently demonstrates invention or incompatible history. Live burden: Crossan must show why contextual redaction better explains these arrest portrayals than selective eyewitness emphasis while accounting charitably for Markan agency, Johannine vulnerability, and plausible sequencing across both narratives."
+    },
+    {
+      "candidateId": "crossan-passion-versions-authentic-not-historical",
+      "kind": "card",
+      "moveId": "crossan-passion-versions-authentic-not-historical",
+      "sectionId": "passion-narrative-harmony",
+      "sectionTitle": "Mark and John in the Passion narrative",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "Mark's suffering Jesus and John's controlling Jesus are contextually authentic, though probably not literal history.",
+      "inference": "Mark's postwar audience explains one portrayal while another setting explains John's, and together the versions express Jesus's humanity and divinity.",
+      "sourceSpan": {
+        "startEvent": 1150,
+        "endEvent": 1190,
+        "startMs": 2770359,
+        "endMs": 2897000,
+        "excerpt": "and ready to go and he even orders them orders them to let his disciples free when I look at that yes it is the context that I'm trying to imagine for Mark and the context that I'm trying to imagine for John that dictates for me what is happening Mark as I understand it is writing to people who have gone through the TS of the Roman war of 66 to 74 and he is describing Jesus in ways that would make sense to those who have died in agony or watched others dying in agony you could call that an updating you could call that a making relevant and yes I do because I I think that is I think Dr White used the term the nature of gospel the small G the according to version the function of the individual gospels is to make the one and only good news absolutely good news for this group in this time with their problems in this situation I honestly don't know any presuppositions of mine that would make me to expect that I would have expected one gospel and even if it was somewhat adapted to newer situations I would expect there to be only one of them that is basic for me there are four according TOS if you ask me are both those stories by the way authentic are both those stories authentic Mark and John's I would say absolutely both are authentic are either of them historical I doubt it very much that is a conclusion one of them might be in the other what is of importance to me is that both of them both of them together show me a Jesus who is terribly human terribly human and a Jesus who is terribly Divine and both of those are"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Mark's suffering Jesus and John's controlling Jesus are contextually authentic, though probably not literal history Mark's postwar audience explains one portrayal while another setting explains.",
+      "critique": "Strongest feature: Crossan explicitly distinguishes contextual authenticity from literal historicity, connecting Mark’s agonized Jesus to audiences traumatized by Roman war and explaining how contrasting portrayals jointly communicate humanity and divinity within his contextual-redaction account. Principal limitation: The Markan setting is plausible but John’s corresponding context remains unspecified, and contextual fitness alone neither excludes historical selection nor supplies an articulated evidential standard for doubting both portrayals. Live burden: Crossan must demonstrate that audience-responsive composition probably generated these differences, rather than preserving compatible eyewitness emphases, while defining authenticity more rigorously and honoring his concession that one account might nevertheless be historical."
+    },
+    {
+      "candidateId": "white-explicit-parable-markers-limit-extension",
+      "kind": "card",
+      "moveId": "white-explicit-parable-markers-limit-extension",
+      "sectionId": "parable-history-and-meaning",
+      "sectionTitle": "Parable, history, and theological meaning",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "The Good Samaritan is textually marked as an illustrative parable, unlike narrated events such as the virgin birth.",
+      "inference": "Because Jesus states the question and application around the Samaritan story, its form cannot justify classifying broadly historical Gospel narration as parable.",
+      "sourceSpan": {
+        "startEvent": 1720,
+        "endEvent": 1737,
+        "startMs": 4267440,
+        "endMs": 4306440,
+        "excerpt": "who is my neighbor and so he tells the story to illustrate who the neighbor is and then makes the application it's very clear in its nature that is not the same as saying that all of the historical discussions of the Virgin birth of Christ is actually just simply a a parable at the beginning of the story of Jesus it's meant to parallel Caesar Justice and so on and so forth and saying that all of the historical events in the ministry of Christ are Parables that are told and changed by one author to the next author to the next author under the inspiration of the Holy Spirit to make it more relevant to a particular audience that we pre suppose those particular gospels were written to that"
+      },
+      "respondsToIds": [
+        "crossan-loaves-parable-preserves-demand",
+        "crossan-emmaus-stranger-parable"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-loaves-parable-preserves-demand",
+          "component": "challenges extension of a recognized teaching form to narrated miracles"
+        },
+        {
+          "targetMoveId": "crossan-emmaus-stranger-parable",
+          "component": "denies that inferred meaning alone establishes parabolic genre"
+        }
+      ],
+      "argumentDescription": "The Good Samaritan is textually marked as an illustrative parable, unlike narrated events such as the virgin birth Because Jesus states the question and application.",
+      "critique": "Strongest feature: White identifies the neighbor question and concluding application surrounding the Good Samaritan as textual markers of illustrative storytelling, making his genre distinction clear and directly responsive to Crossan's extension from theological meaning to narrated miracles. Principal limitation: The absence of equivalent markers cannot establish historicity, and White overstates Crossan's position as treating all Gospel events as adaptable parables, which particularly depresses calibration and charity despite relevant evidence. Live burden: He still must engage the narrative-specific reasons offered for reading the loaves or Emmaus accounts parabolically and positively support historical authenticity rather than merely blocking genre transfer."
+    },
+    {
+      "candidateId": "crossan-loaves-parable-preserves-demand",
+      "kind": "card",
+      "moveId": "crossan-loaves-parable-preserves-demand",
+      "sectionId": "parable-history-and-meaning",
+      "sectionTitle": "Parable, history, and theological meaning",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "The feeding story functions as a parable of divine justice and the church's duty to feed people whether or not it occurred literally.",
+      "inference": "Both historical and parabolic readings yield the same action-demand because the story centers on existing food becoming sufficient through Jesus and reluctant disciples participating.",
+      "sourceSpan": {
+        "startEvent": 1320,
+        "endEvent": 1350,
+        "startMs": 3244480,
+        "endMs": 3329839,
+        "excerpt": "wants he could take the stones and turn them into bread he could bring Mana down from heaven but he doesn't do it what he does in the story is take the food that's there already and when it passes through the hands of Jesus as Divine Justice incarnate there's more than enough food for anyone I think it's a parable but I think something else is even more important if you want to take this story historically it actually happened and if you were there in the desert you would have seen it or you want to take it parabolically that is similar to the Good Samaritan story something that Mark let us say made up to express Jesus's mission identity either way you take it be it as history or as parable you're going to come out with the same conclusion namely that Jesus says it is up to the leadership of the church if you think of the 12 as the leadership of the church to take care of poverty in this world to make certain that everyone has enough food and they don't want that job they love this teaching all day business that was just fine comes the evening send them away and Jesus insists it's your your"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "The feeding story functions as a parable of divine justice and the church's duty to feed people whether or not it occurred literally Both historical.",
+      "critique": "Strongest feature: Crossan anchors his interpretation in the food present, its sufficiency through Jesus as divine justice, the reluctant disciples, and the command that church leadership address hunger, clearly preserving a demand under either historical or parabolic reading. Principal limitation: A shared ethical consequence does not establish parabolic genre, while identifying the Twelve with church leadership and privileging this justice application over competing meanings remain interpretive steps that receive insufficient defense. Live burden: He must provide grounds showing why the feeding account should be classified as parable or development, not only demonstrate that nonliteral reading can retain theological authenticity."
+    },
+    {
+      "candidateId": "white-loaves-sign-points-to-spiritual-need",
+      "kind": "card",
+      "moveId": "white-loaves-sign-points-to-spiritual-need",
+      "sectionId": "parable-history-and-meaning",
+      "sectionTitle": "Parable, history, and theological meaning",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "John interprets the feeding as an openly performed sign pointing to Jesus as heavenly bread and human spiritual need.",
+      "inference": "The surrounding discourse provides the event's intended meaning without converting it into fiction, rebutting Crossan's poverty-centered parabolic reading.",
+      "sourceSpan": {
+        "startEvent": 1817,
+        "endEvent": 1834,
+        "startMs": 4478239,
+        "endMs": 4528320,
+        "excerpt": "that tremendous discourse where Jesus says you you don't get it you you've come because you want to have your stomachs filled again but that's not why I did that I am the bread that has come down out of Heaven you have a spiritual need for spiritual food and what happens at the end of John John chapter 6 the day before 5,000 men who want to make him King at the end of John chapter 6 what do you have 12 confused disciples and one of which is a devil there is the meaning there is the application signs done openly but people who don't know their own spiritual need don't see they are blind they cannot hear they cannot see that is not misreading that is allowing"
+      },
+      "respondsToIds": [
+        "crossan-loaves-parable-preserves-demand"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-loaves-parable-preserves-demand",
+          "component": "offers John's explicit interpretation as a rival to the asserted parabolic conclusion"
+        }
+      ],
+      "argumentDescription": "John interprets the feeding as an openly performed sign pointing to Jesus as heavenly bread and human spiritual need The surrounding discourse provides the event's.",
+      "critique": "Strongest feature: White anchors his reply in the Bread of Life discourse and the openly performed sign, thereby offering a Johannine interpretation that coherently joins event, meaning, spiritual hunger, and narrative outcome. Principal limitation: This reading shows that symbolic meaning need not convert the feeding into fiction, but it does not independently establish that the event occurred, and it too quickly treats Crossan’s poverty centered application as displaced rather than potentially supplementary. Live burden: White must still supply historical warrant beyond the discourse itself while explaining why the spiritual application should exclude, rather than coexist with, the social demand Crossan identifies."
+    },
+    {
+      "candidateId": "crossan-emmaus-stranger-parable",
+      "kind": "card",
+      "moveId": "crossan-emmaus-stranger-parable",
+      "sectionId": "parable-history-and-meaning",
+      "sectionTitle": "Parable, history, and theological meaning",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "The Emmaus story is written as a parable in which Jesus is recognized through welcoming the stranger, not as a literal shape-changing episode.",
+      "inference": "A literal reading implies a mutable resurrection body like pagan gods, whereas the narrative sequence makes scriptural study and shared hospitality its intelligible meaning.",
+      "sourceSpan": {
+        "startEvent": 1416,
+        "endEvent": 1442,
+        "startMs": 3515000,
+        "endMs": 3587440,
+        "excerpt": "would be well on my way to concluding that Jesus really the resurrected body of Jesus can take off on any form at once that he is rather like one of those gods in the ancient Greek or Roman mythology who come down from heaven and can put on any guys of body they want can Jesus really appear literally as a stranger do we have to go around watching just in case if I were to invoke Divine consistency maybe Jesus is still doing it as a stranger no I think it is clear once again at least to me that this screams out to me Parable dummy I'm a parable and I don't mean to say well they really wanted it literally but I'm going to take it metaphorically I think that's the way it was written I think this was written to tell us that Jesus is present Jesus is still present among us when we study the scriptures about him and when we invite The Stranger in to eat"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "The Emmaus story is written as a parable in which Jesus is recognized through welcoming the stranger, not as a literal shape-changing episode A literal.",
+      "critique": "Strongest feature: Crossan grounds his Emmaus interpretation in the story’s own sequence of scriptural study, hospitality toward an unknown traveler, shared food, and recognition, producing a clear account of continuing presence through welcoming the stranger. Principal limitation: Those narrative features strongly support thematic meaning but do not prove parabolic composition, while the comparison with pagan gods exaggerates what a literal resurrection appearance requires and lowers charity toward the alternative. Live burden: Crossan must identify genre evidence that makes Luke’s historical presentation intentionally fictional and answer the prophetic fulfillment emphasis, rather than moving from an illuminating symbolic reading directly to historical negation."
+    },
+    {
+      "candidateId": "crossan-preenlightenment-question-is-significance",
+      "kind": "card",
+      "moveId": "crossan-preenlightenment-question-is-significance",
+      "sectionId": "parable-history-and-meaning",
+      "sectionTitle": "Parable, history, and theological meaning",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "For pre-Enlightenment audiences, the contested question was why a wonder mattered, not whether wonders were possible.",
+      "inference": "Modern readers who cannot accept literal miracles should still read the whole narrative for its operational meaning instead of abandoning Christianity over an anachronistic literal-versus-impossible choice.",
+      "sourceSpan": {
+        "startEvent": 3867,
+        "endEvent": 3898,
+        "startMs": 9651200,
+        "endMs": 9733279,
+        "excerpt": "Dr White and I have different constituencies we talk to different people most of the time I talked to many people who have told me they have left Christianity left Christianity left the church because they can't believe X happened literally let me put it that way if they can't believe Jesus walked on the waters let's say whatever I wish I could simply dismiss that as the depravity of the human heart it is much more like being trapped in a post Enlightenment world as I read a pre-enlightenment world and I am trying to understand a pre-enlightenment world because I'm absolutely convinced it doesn't think the way I do in a pre-enlightenment world wonderful things can happen the only question is why should I care about your wonderful thing rather than somebody else's if Paul was arguing say about the resurrection of Christ he could of course he could of course have somebody said to him that not that couldn't happen but I don't believe your happened they couldn't say impossibility I've said that before I suppose they could say it you can always pull that but they really don't they really don't what they are saying is why should"
+      },
+      "respondsToIds": [
+        "white-explicit-parable-markers-limit-extension",
+        "white-loaves-sign-points-to-spiritual-need"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-explicit-parable-markers-limit-extension",
+          "component": "argues that ancient genre reception cannot be reduced to the modern literal/impossible divide"
+        },
+        {
+          "targetMoveId": "white-loaves-sign-points-to-spiritual-need",
+          "component": "accepts narrative meaning as important while denying that literal occurrence is the necessary gateway to it"
+        }
+      ],
+      "argumentDescription": "For pre-Enlightenment audiences, the contested question was why a wonder mattered, not whether wonders were possible Modern readers who cannot accept literal miracles should still.",
+      "critique": "Strongest feature: Crossan distinguishes ancient disputes about a wonder's significance from modern assumptions about impossibility, while acknowledging that ancient hearers could reject a particular resurrection claim, supporting calibrationCharity [withheld] and logicalCoherence [withheld]. Principal limitation: His sweeping pre-Enlightenment generalization rests mainly on assertion and constituency anecdotes, supplies little historical evidence, and never establishes that accepting wonders makes Gospel narratives nonliteral, matching evidenceWarrant [withheld]. Live burden: He must connect this reception thesis directly to White's textual genre markers and Johannine sign interpretation, then show why operational meaning answers the motion's historical-accuracy question, consistent with responsiveness [withheld], relevanceBurden [withheld], and precisionClarity [withheld]."
+    },
+    {
+      "candidateId": "white-source-reconstructions-are-hypothesis-laden",
+      "kind": "card",
+      "moveId": "white-source-reconstructions-are-hypothesis-laden",
+      "sectionId": "source-dependence-and-attestation",
+      "sectionTitle": "Source dependence and historical attestation",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Crossan's dating and source order rest on layered hypotheses rather than secure historical facts.",
+      "inference": "Because these reconstructions incorporate prior views about divine action and Jesus's possible identity, conclusions drawn from them cannot independently defeat authenticity.",
+      "sourceSpan": {
+        "startEvent": 664,
+        "endEvent": 677,
+        "startMs": 1568080,
+        "endMs": 1602120,
+        "excerpt": "mistake end quote and yet theories concerning the inter relationship and especially the dating of the hypothetical cross gospel in Q together with Mark Luke Matthew and finally with John are absolutely fundamental to Dr cross's position as he himself admits and yet it is those hypothetical conclusions based upon hypothetical pre reconstructions based upon presupposed concepts of divine consistency and what could and could not happen in history and what Jesus could and could not be like that is at the very heart of the"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Crossan's dating and source order rest on layered hypotheses rather than secure historical facts Because these reconstructions incorporate prior views about divine action and Jesus's.",
+      "critique": "Strongest feature: White identifies Crossan's dating of the hypothetical Cross Gospel and Q, source ordering, and divine-consistency claims as interdependent reconstruction layers, making the challenge directly responsive at [withheld]. Principal limitation: Calling conclusions and reconstructions hypothetical neither demonstrates circularity nor answers their comparative textual evidence, while grouping distinct scholarly inferences understates their possible support, explaining evidenceWarrant [withheld] and calibrationCharity [withheld]. Live burden: White must compare concrete evidence for rival dates and dependencies, isolate which premise imports a worldview commitment, and show how correcting it independently strengthens canonical authenticity, as logicalCoherence [withheld], relevanceBurden [withheld], and precisionClarity [withheld] require."
+    },
+    {
+      "candidateId": "crossan-dependence-changes-attestation-value",
+      "kind": "card",
+      "moveId": "crossan-dependence-changes-attestation-value",
+      "sectionId": "source-dependence-and-attestation",
+      "sectionTitle": "Source dependence and historical attestation",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "Markan priority and Matthew's and Luke's copying materially change how agreement among the Gospels bears on historicity.",
+      "inference": "Agreement among dependent texts is not multiple independent attestation, while observable changes reveal the later writers' contextual theological work.",
+      "sourceSpan": {
+        "startEvent": 1923,
+        "endEvent": 1949,
+        "startMs": 4743159,
+        "endMs": 4820199,
+        "excerpt": "on and Dr White has not told me whether he accepts not believes accepts it's simply a scholly consensus that Mark is a source for Matthew and Luke I agree completely with the statement he made and I still would make it the materials determine the methods determine the results if the materials if the materials and here I am depending on 200 years of scholarship if it's all wrong then everything is wrong that depends on it 200 years of scholarship has I'm repeating myself convinced a lot of people let me put it that way so we're not counting heads a lot of people that Mark is a source for Matthew and Luke that means you can put them in parallel columns and you can see Matthew changing Mark now I don't use any of nasty language for that I do not use mistakes or any any unfair language I think if Matthew was here and you confronted him with that tonight as I understand it Matthew would say well I too have the spirit and what Mark says here does not actually work for what my people need"
+      },
+      "respondsToIds": [
+        "white-source-reconstructions-are-hypothesis-laden"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-source-reconstructions-are-hypothesis-laden",
+          "component": "appeals to sustained scholarship and observable parallel changes rather than conceding mere speculative reconstruction"
+        }
+      ],
+      "argumentDescription": "Markan priority and Matthew's and Luke's copying materially change how agreement among the Gospels bears on historicity Agreement among dependent texts is not multiple independent.",
+      "critique": "Strongest feature: Crossan answers White's hypothesis objection by invoking longstanding Markan-priority scholarship and observably aligning Mark, Matthew, and Luke in parallel columns, where literary dependence changes agreement from independent corroboration into transmission evidence and alteration, justifying relevanceBurden [withheld] and logicalCoherence [withheld]. Principal limitation: Although he concedes that conclusions collapse if the scholarly premise is wrong, this passage supplies no Matthean alteration for inspection and leans on durable consensus, appropriately fixing evidenceWarrant at [withheld]. Live burden: He still must demonstrate with representative textual changes that dependence and redaction weaken historicity rather than merely showing later evangelists adapting inherited material under their own claimed inspiration."
+    },
+    {
+      "candidateId": "white-synoptic-variation-can-harmonize",
+      "kind": "card",
+      "moveId": "white-synoptic-variation-can-harmonize",
+      "sectionId": "source-dependence-and-attestation",
+      "sectionTitle": "Source dependence and historical attestation",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Synoptic wording differences can become harmonious when their precise language is compared.",
+      "inference": "Matthew's distinct verb meaning acquire resolves the staff instruction difference, illustrating how multiple accounts can enrich rather than contradict one another.",
+      "sourceSpan": {
+        "startEvent": 2546,
+        "endEvent": 2567,
+        "startMs": 6388239,
+        "endMs": 6443560,
+        "excerpt": "his would just be absolutely incredible in its in its richness and I just simply see from a Divine perspective that we are we are being given that fullness in God's work in history some of the issues that you raise um the dress issue remember Mar Matthew chapter 10 uh whether you carry a staff or don't carry a staff um I I look at the fact that if I only have Matthew and Luke I'm not sure exactly what to do with that but when you I'm sorry um Mark and Luke but when you have Matthew Matthew uses a different verb and I'm referring to Matthew 109 if those of you want to look it up in your in your Bible or something like that sometimes we're going to quickly he uses a different verb katami to acquire not to bring along but to actually purchase and to acquire when you read the three of them together they become a harmonious presentation rather"
+      },
+      "respondsToIds": [
+        "crossan-dependence-changes-attestation-value"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-dependence-changes-attestation-value",
+          "component": "gives a concrete linguistic case in which differences complement rather than evidence contextual rewriting"
+        }
+      ],
+      "argumentDescription": "Synoptic wording differences can become harmonious when their precise language is compared Matthew's distinct verb meaning acquire resolves the staff instruction difference, illustrating how multiple.",
+      "critique": "Strongest feature: White supplies a concrete lexical counterexample from Matthew 10:9, distinguishing acquiring a staff from carrying one, so Synoptic instructions can form a harmonious presentation rather than an automatic contradiction, which supports logicalCoherence [withheld], precisionClarity [withheld], and relevanceBurden [withheld]. Principal limitation: He identifies a verse and verb gloss but does not establish the Greek claim or its representativeness, while White's Gospel-name correction adds confusion and helps explain evidenceWarrant [withheld] and calibrationCharity [withheld]. Live burden: He must extend this local reconciliation to Crossan's literary-dependence challenge, because harmonizing one wording difference does not establish independent attestation or resolve broader contextual rewriting."
+    },
+    {
+      "candidateId": "crossan-copying-reduces-four-witnesses-to-one-stream",
+      "kind": "card",
+      "moveId": "crossan-copying-reduces-four-witnesses-to-one-stream",
+      "sectionId": "source-dependence-and-attestation",
+      "sectionTitle": "Source dependence and historical attestation",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "The Gospels cannot supply quadraphonic independent testimony if later authors know and reuse earlier texts.",
+      "inference": "Dates matter chiefly because literary relationship turns four apparent witnesses into one tradition stream, reducing the evidential value of their agreement.",
+      "sourceSpan": {
+        "startEvent": 2594,
+        "endEvent": 2625,
+        "startMs": 6503679,
+        "endMs": 6580159,
+        "excerpt": "your metaphor of quadrophonic we're now talking about that that second point for me I said if if when we had studied these four they came out pretty much as in as independent that's what's important for me the dates I grant the dates are important because if you think that Matthew is using Mark you better have Matthew writing later than Mark so of course the dates are important but in one sense apart from that it's not the date so much as the relationship if as I said that's it's not an Act of Faith or anything like that I don't think it's a presupposition it's simply having spent about a decade doing it I pretty much convinced myself it looks like Mark is a major source for Matthew and Luke and I think John has an independent tradition but he also knows the synoptics those are conclusions all of them are debatable and I certainly didn't want to spend my life you know discussing them I wanted to get on with it so I took they they made sense to me but they did raise an issue of quadrophonic I I felt like I was um I don't want to put this in any prejudicial language as if I was a you know an attorney going into a court case with four Witnesses and I find out in the morning just for in the court that I"
+      },
+      "respondsToIds": [
+        "white-synoptic-variation-can-harmonize"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-synoptic-variation-can-harmonize",
+          "component": "argues that harmony cannot supply independent confirmation when the texts are literarily related"
+        }
+      ],
+      "argumentDescription": "The Gospels cannot supply quadraphonic independent testimony if later authors know and reuse earlier texts Dates matter chiefly because literary relationship turns four apparent witnesses.",
+      "critique": "Strongest feature: Crossan distinguishes chronology from literary relationship, arguing that Markan reuse by Matthew and Luke, alongside John's awareness of the Synoptics, prevents harmonious agreement from functioning as fourfold independent corroboration, explaining the logical coherence, responsiveness, and burden relevance. Principal limitation: His source-critical premises are conclusions from prolonged study rather than demonstrated within this exchange, especially Johannine awareness, so evidence warrant appropriately trails the otherwise consistently strong evaluation. Live burden: White must show substantially independent testimonial pathways behind Gospel agreements or explain why derivative repetition retains evidential multiplication despite Crossan's courtroom-witness comparison and acknowledgment that every proposed literary relationship remains debatable."
+    },
+    {
+      "candidateId": "white-emmaus-centers-prophetic-fulfillment",
+      "kind": "card",
+      "moveId": "white-emmaus-centers-prophetic-fulfillment",
+      "sectionId": "resurrection-prophecy-and-salvation",
+      "sectionTitle": "Resurrection, prophecy, and salvation",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "Emmaus centers on opened eyes and Scripture's prophetic testimony to the risen Jesus.",
+      "inference": "If no real prophecy points to Jesus, the disciples' stated recognition through Moses and the prophets becomes unintelligible on Luke's own terms.",
+      "sourceSpan": {
+        "startEvent": 1883,
+        "endEvent": 1909,
+        "startMs": 4637880,
+        "endMs": 4705760,
+        "excerpt": "purpose and what is really the focus of this section what do the disciples say once Jesus leaves their presence did not our hearts burn within us as he opened the scriptures to us and showed us from Moses and from all the prophets their testimony of himself I simply have to ask Dr crosson a question unless I've completely misunderstood what he has said about God and the future and and prophecies and things like that I think he's saying that when the New Testament writers say well see here's a fulfillment from Jeremiah Jeremiah had nothing to do with the ministry of Jesus and life of Jesus the Christians were making up that story to fulfill what Jeremiah said so how could the point of Luke be that their hearts are opened in seeing the prophetic testimony if there is no prophetic testimony to Jesus that actually exists in history itself and so we see it is important how we approach these text in allowing them to speak for themselves and it directly addresses the nature of"
+      },
+      "respondsToIds": [
+        "crossan-emmaus-stranger-parable"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-emmaus-stranger-parable",
+          "component": "argues that Crossan omits Luke's explicit prophetic-resurrection focus"
+        }
+      ],
+      "argumentDescription": "Emmaus centers on opened eyes and Scripture's prophetic testimony to the risen Jesus If no real prophecy points to Jesus, the disciples' stated recognition through.",
+      "critique": "Strongest feature: White identifies Luke's Moses-and-prophets framework and the disciples' burning hearts as a scriptural recognition mechanism omitted by Crossan's hospitality-centered Emmaus interpretation, producing the strongest dimension in responsiveness while maintaining textual warrant and intelligible reasoning. Principal limitation: The argument does not establish genuinely predictive, historically fulfilled prophecy rather than retrospective theological interpretation, and White's categorical reconstruction understates Crossan's account of meaningful prophetic testimony, sharply lowering calibration and charity. Live burden: White must demonstrate that the scriptural pattern supports event-specific prediction and resurrection historicity, while Crossan must explain why Luke foregrounds scriptural exposition if hospitality alone supplies the episode's controlling significance."
+    },
+    {
+      "candidateId": "crossan-prophecy-is-retrospective-hope",
+      "kind": "card",
+      "moveId": "crossan-prophecy-is-retrospective-hope",
+      "sectionId": "resurrection-prophecy-and-salvation",
+      "sectionTitle": "Resurrection, prophecy, and salvation",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "proposition": "Israel's prophecies expressed broad hope for divine justice and were retrospectively applied to Jesus, not hidden specific predictions.",
+      "inference": "Believers identified Jesus with open-ended scriptural hopes while nonbelievers did not, so claimed fulfillment reflects faith interpretation rather than prior event-specific forecast.",
+      "sourceSpan": {
+        "startEvent": 3082,
+        "endEvent": 3110,
+        "startMs": 7678760,
+        "endMs": 7761840,
+        "excerpt": "mentioned my understanding of Prophecy is not that the prophets of Israel were saying s various statements that nobody understood until suddenly they were clear in Jesus they were talking about a hope no a faith that God someday in the future is going to clean up the mess of this world now it's fairly unspecified they would talk about in those days in days to come it's open it is not as if they're all talking about Jesus and nobody knew about it until Jesus came when Jesus did those who believed in Jesus said that was about our Jesus those who did not believe in Jesus said no it isn't so it was sorry so there could not be any specific element to prophecy about uh the price of the Betrayal of Jesus The Parting of his garments uh the uh the the Messianic Psalm of 20 Psalm 22 or or 110 or Isaiah all those are are they happen stance or is it just simply that the New Testament writers looked at them and said we're going to fulfill these by saying that this is what happened in the crucifixion of Jesus I wouldn't describe it that way because that makes it sound as if"
+      },
+      "respondsToIds": [
+        "white-emmaus-centers-prophetic-fulfillment"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "white-emmaus-centers-prophetic-fulfillment",
+          "component": "offers retrospective faith-identification as the mechanism behind Gospel fulfillment claims"
+        }
+      ],
+      "argumentDescription": "Israel's prophecies expressed broad hope for divine justice and were retrospectively applied to Jesus, not hidden specific predictions Believers identified Jesus with open-ended scriptural hopes.",
+      "critique": "Strongest feature: Crossan directly answers White's Emmaus appeal by distinguishing Israel's open-ended hope for divine justice from event-specific prediction, then explaining fulfillment language through sincere retrospective identification by believers. Principal limitation: Although he names Psalms, Isaiah, betrayal payment, and divided garments, he never closely analyzes those passages, so the evidentiary warrant remains substantially weaker than the highly responsive interpretive mechanism. Live burden: Crossan must show text by text that retrospective application better explains the cited details than prior forecast, while preserving his careful distinction between faithful interpretation and calculated fabrication."
+    },
+    {
+      "candidateId": "white-bodily-resurrection-grounds-justification",
+      "kind": "card",
+      "moveId": "white-bodily-resurrection-grounds-justification",
+      "sectionId": "resurrection-prophecy-and-salvation",
+      "sectionTitle": "Resurrection, prophecy, and salvation",
+      "side": "pro",
+      "speaker": "James White",
+      "proposition": "The apostolic proclamation requires Jesus's actual resurrection for justification and reconciliation, not merely continued adherence to his social program.",
+      "inference": "Paul makes release from sin depend on the resurrection, so a nonhistorical symbolic reading changes the faith's central saving claim.",
+      "sourceSpan": {
+        "startEvent": 3750,
+        "endEvent": 3778,
+        "startMs": 9358399,
+        "endMs": 9423720,
+        "excerpt": "doesn't change the depravity of the heart of man and the fact that that's what needs to be changed and the only way to change that is to bring about peace between man and God and the only way that I understand from the scriptures that I can have peace with God Is by faith in the Lord Jesus Christ and that's result in my justification that's not a legal fiction that's a reality and how do I have that justification because the sacrifice of Jesus Christ and as Paul said he was raised for our justification if he was not raised and I'm sorry I do not believe and this this is starting to touch on a debate that is yet to come but I do not believe that the apostles believe that Jesus was raised simply in the sense that his continuing presence with them meant that they were continuing his Paradigm his kingdom his radically egalitarianism and shared broken bread that's not what Resurrection meant and I don't believe that that's consistent with their Proclamation he was raised from the dead for our justification if Jesus Christ be"
+      },
+      "respondsToIds": [
+        "crossan-prophecy-is-retrospective-hope",
+        "crossan-gospel-rephrases-for-new-community"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "crossan-prophecy-is-retrospective-hope",
+          "component": "insists apostolic resurrection language asserts an event with saving consequence"
+        },
+        {
+          "targetMoveId": "crossan-gospel-rephrases-for-new-community",
+          "component": "argues that contextual symbolic reformulation removes the proclamation's stated basis"
+        }
+      ],
+      "argumentDescription": "The apostolic proclamation requires Jesus's actual resurrection for justification and reconciliation, not merely continued adherence to his social program Paul makes release from sin depend.",
+      "critique": "Strongest feature: White uses Paul's claim that Jesus was raised for justification to identify a concrete apostolic consequence that symbolic continuation of Jesus's egalitarian social program cannot preserve unchanged, supporting logical coherence at [withheld]. Principal limitation: This Pauline language establishes the doctrinal meaning and stakes of resurrection more securely than the occurrence of a bodily event, while White's summary risks narrowing Crossan's alternative, leaving calibration and charity at [withheld]. Live burden: White must independently warrant the historical resurrection and the broader apostolic consensus, not merely demonstrate that his preferred scriptural theology requires an actual event for reconciliation and release from sin."
+    }
+  ],
+  "overallBlunders": [
+    {
+      "candidateId": "overall-pro-blunder-1",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "James White",
+      "text": "The worldview argument risked making authenticity depend on prior Christian theism instead of independently demonstrating the disputed events."
+    },
+    {
+      "candidateId": "overall-pro-blunder-2",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "James White",
+      "text": "Calling source reconstructions hypothetical did not adequately confront the observable literary relationships that powered Crossan’s strongest attestation argument."
+    },
+    {
+      "candidateId": "overall-pro-blunder-3",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "James White",
+      "text": "Several rebuttals established possible harmonization or compatibility without showing that White’s historical reading was comparatively more probable."
+    },
+    {
+      "candidateId": "overall-con-blunder-1",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "text": "Denying a singular orthodox account partly reframed the motion without proving that canonical plurality defeats authenticity or historical accuracy."
+    },
+    {
+      "candidateId": "overall-con-blunder-2",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "text": "The claim that Gospel writers could invent authentic stories was asserted more confidently than its historical evidence in the selected exchange warranted."
+    },
+    {
+      "candidateId": "overall-con-blunder-3",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "John Dominic Crossan",
+      "text": "Parabolic readings of Emmaus and the loaves supplied theological meaning but did not decisively establish that the narrated events were nonhistorical."
+    }
+  ],
+  "sourceLocks": {
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "371a65bef9a25fbd1819cbf9ce27e36f9125ddd5b9f87f9e025de7f032474119",
+      "bytes": 53266
+    },
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/packet.json",
+      "sha256": "3e348eefb7c239b9c56b7306062e930f06a54d177875f308bde9eb762ccf2f74",
+      "bytes": 7837
+    },
+    "definitions": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-242/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "eb7270d18e67cf4ece5804dec5bebe569ac49e54e3dff48b4a9bc7977d30e70d",
+      "bytes": 4098
+    }
+  },
+  "reviewOrder": "section order, exchange order, pro then con"
+}

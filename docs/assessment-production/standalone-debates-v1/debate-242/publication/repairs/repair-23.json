@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 23,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.white-purpose-does-not-entail-revision.words",
+    "moveProse.white-worldview-grounds-historical-revelation.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "white-purpose-does-not-entail-revision",
+      "description": "White argues that a Gospel’s theological purpose remains compatible with historical accuracy: Luke could give Theophilus certainty without revising events or inventing myths.",
+      "wordCount": 23,
+      "rationale": "Restores a complete grammatical description that faithfully combines White’s proposition with his stated inference from Luke’s purpose."
+    },
+    {
+      "moveId": "white-worldview-grounds-historical-revelation",
+      "description": "White argues that judgments of historical authenticity depend on worldview: if God can enter creation and reveal himself, objective revelation in history is possible.",
+      "wordCount": 24,
+      "rationale": "Restores a complete grammatical description that accurately states White’s worldview condition and its implication for objective historical revelation."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

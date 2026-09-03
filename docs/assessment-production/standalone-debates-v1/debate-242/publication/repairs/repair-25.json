@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 25,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.white-source-reconstructions-are-hypothesis-laden.words",
+    "moveProse.crossan-no-singular-orthodox-account.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "white-source-reconstructions-are-hypothesis-laden",
+      "description": "White argues that Crossan’s dating and source ordering depend on layered, presupposition-laden reconstructions, so their conclusions cannot independently establish that Gospel traditions are inauthentic.",
+      "wordCount": 24,
+      "rationale": "Restores the complete proposition-to-inference link while preserving White’s emphasis on hypothesis-laden source reconstruction and its limited evidential independence."
+    },
+    {
+      "moveId": "crossan-no-singular-orthodox-account",
+      "description": "Crossan argues that Christianity preserves one Gospel through four canonical narrative versions, not a single uniform orthodox account whose historicity can be assessed as such.",
+      "wordCount": 25,
+      "rationale": "Restores the complete claim that canonical plurality undermines treating the sources as one singular, uniform account for purposes of historical assessment."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}
