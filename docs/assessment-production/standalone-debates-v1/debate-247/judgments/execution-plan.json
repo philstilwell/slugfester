@@ -1,0 +1,67 @@
+{
+  "status": "frozen-before-execution",
+  "debateNumber": "247",
+  "debateId": "folley-scrivener-good-without-god-2025",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/inventory/inventory.json",
+      "sha256": "5b2ed454481795dc45667b8952c99abc52ddafb4fafa36f214762ef32d4fe3bc",
+      "bytes": 113553
+    },
+    "events": {
+      "path": ".assessment-cache/captions/4Foy83uTsBQ/events.json",
+      "sha256": "d8897ea21e8c499eb42ec5c36e6748c76254dfd64a627ade0f4bba9182238549",
+      "bytes": 181708
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/4Foy83uTsBQ/transcript.txt",
+      "sha256": "7eafd12a04b1a764fc391e4196e4afb50315ec492f41aed5491763cbcec25827",
+      "bytes": 76106
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-247/judgments/judgment-packet.json",
+    "sha256": "2d50d5750d6b6c778f65666dd707ed32701b7dc22b5ef778d65d05024abd15af",
+    "bytes": 4932
+  },
+  "isolationMethod": "two fresh built-in isolated subagents fork-none; explicit score-blind file boundaries; no external inference or API-key use",
+  "attemptLimitPerPass": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "contexts": [
+    {
+      "agentTask": "/root/judgment_247_a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-247/judgments/pass-a/output.json"
+      ]
+    },
+    {
+      "agentTask": "/root/judgment_247_b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-247/judgments/pass-b/output.json"
+      ]
+    }
+  ],
+  "frozenAt": "2026-09-03T23:08:42.783Z"
+}

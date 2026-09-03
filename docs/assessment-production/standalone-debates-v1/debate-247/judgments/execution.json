@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 247,
+  "debateId": "folley-scrivener-good-without-god-2025",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two fresh built-in isolated subagents with explicit score-blind read boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-247/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "2d50d5750d6b6c778f65666dd707ed32701b7dc22b5ef778d65d05024abd15af",
+    "inventorySha256": "5b2ed454481795dc45667b8952c99abc52ddafb4fafa36f214762ef32d4fe3bc",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-247/judgments/pass-a/output.json",
+      "outputSha256": "81241e307d012650ab3cf7bd196a8864e41b6eb5fac0b5b9a7c5da846b5701b1",
+      "outputBytes": 43804,
+      "judgmentCount": 29,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-247/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_247_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-247/judgments/pass-b/output.json",
+      "outputSha256": "8d69f4ac70f73ba9d4fb58ea581cc7659a5b94b717da8fbce14996df2fc2d970",
+      "outputBytes": 44799,
+      "judgmentCount": 29,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-247/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_247_b"
+    }
+  ],
+  "completedAt": "2026-09-03T23:13:57.492Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

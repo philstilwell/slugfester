@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0-standalone-debate-manifest",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "source-and-controls-frozen-before-inventory",
+  "debateNumber": "247",
+  "debateId": "folley-scrivener-good-without-god-2025",
+  "videoId": "4Foy83uTsBQ",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/4Foy83uTsBQ/captions.srv3.xml",
+      "sha256": "eccc1cfb0626c843ebbf7009cb966ec73430dcbe223758d00e6ff6f91a203929",
+      "bytes": 444036
+    },
+    "events": {
+      "path": ".assessment-cache/captions/4Foy83uTsBQ/events.json",
+      "sha256": "d8897ea21e8c499eb42ec5c36e6748c76254dfd64a627ade0f4bba9182238549",
+      "bytes": 181708
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/4Foy83uTsBQ/transcript.txt",
+      "sha256": "7eafd12a04b1a764fc391e4196e4afb50315ec492f41aed5491763cbcec25827",
+      "bytes": 76106
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/4Foy83uTsBQ/manifest.json",
+      "sha256": "6fadc3dbfa4d65ad096e5ed2747ee0b012a28b5e4c90243032378a02a075a33c",
+      "bytes": 988
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/source/source-lock.json",
+      "sha256": "4f904f41e0757b930a1fcc0f12d0e1024c79fd9ee219a2ba8079bbaae496eb55",
+      "bytes": 3936
+    }
+  },
+  "controlLocks": {
+    "productionWorkflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "publicationReadiness": {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    "scoreStabilityPolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "scoreCalculator": {
+      "path": "scripts/lib/v4-lean-production.mjs",
+      "sha256": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+      "bytes": 39666
+    },
+    "scoreDimensions": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "sourceRenderer": {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    "standaloneProtocolLibrary": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "standaloneProtocolAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "e02e60abb7e7e5ff92d447361fd8c960053643675ee1b958df7b17e7dd6ac9aa",
+      "bytes": 65543
+    },
+    "contentParityAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec",
+      "bytes": 12735
+    },
+    "rhetoricalTagAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    "productionValidator": {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "3e43613ee715d493f77eb3639d50ba074170d88a045a54b38020f6d5a325a38e",
+      "bytes": 88816
+    },
+    "packageScripts": {
+      "path": "package.json",
+      "sha256": "e00ee3448d9270163877b335dad430f3840c06613990e857c6f5df9fda747a82",
+      "bytes": 64727
+    },
+    "activeScorePolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "activeScoreEvaluator": {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    "activeScoreTest": {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    }
+  },
+  "skillLocks": {
+    "skill": {
+      "path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/SKILL.md",
+      "sha256": "fe209f19b60e8288ed8201b947e614a232bc64d9c3dd73fc91bf62875b6533e6",
+      "bytes": 9661
+    },
+    "runbook": {
+      "path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/references/single-debate-runbook.md",
+      "sha256": "971cd841ecb69c31abe4b7256ff3af7b34ce3dd35b391c418492fa41e47e5843",
+      "bytes": 29449
+    }
+  },
+  "modelSettings": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "scoringControls": {
+    "dimensionDisagreementThreshold": 8,
+    "moveScoreDisagreementThreshold": 4,
+    "burdenAdjustmentDisagreementThreshold": 2,
+    "oneScorePass": true,
+    "scoreProtocolId": "standalone-v1-single-deterministic-score-pass"
+  },
+  "inventoryControls": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "uniqueSemanticSectionIdsRequired": true,
+    "selectionBalanceAuditRequired": true,
+    "totalDifferenceRequiringRationale": 3,
+    "sectionDifferenceRequiringRationale": 2,
+    "publicationCapacityAuditRequired": true,
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "fourthRowPreauthorizationRequired": true,
+    "speakerAttributionReviewRequired": true,
+    "sourceExcerptTargetMaximumCharacters": 2200,
+    "longerCompleteArgumentRequiresRationale": true
+  },
+  "expectedArtifacts": [
+    "source/source-lock.json",
+    "inventory/inventory.json",
+    "judgments/judgment-packet.json",
+    "judgments/pass-a/output.json",
+    "judgments/pass-b/output.json",
+    "disagreements/disagreements.json",
+    "audio/audio-verification.json",
+    "adjudication/output.json",
+    "final-ledger/final-ledger.json",
+    "score-pass/output.json",
+    "publication/output.json",
+    "publication/content-parity-audit.json",
+    "publication/rhetorical-tag-audit.json",
+    "rendering/rendering-audit.json",
+    "validation-summary.json",
+    "report.md"
+  ]
+}

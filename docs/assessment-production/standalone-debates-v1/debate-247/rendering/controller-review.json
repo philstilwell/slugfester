@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checks": {
+    "critiquePointerControlPassed": true,
+    "critiqueKeyboardEnterPassed": true,
+    "critiqueKeyboardSpacePassed": true,
+    "aiAccordionKeyboardEnterOpened": true,
+    "aiAccordionKeyboardSpaceClosed": true,
+    "aiAccordionInitiallyCollapsed": true,
+    "mobileCritiqueThenDistantControlPassed": true,
+    "mobileAiAccordionOpened": true,
+    "mobileCritiqueClearedAfterTransition": true,
+    "referenceNavigationAndOccurrenceAnchorPassed": true,
+    "allDescriptionsAndCritiquesMatchPublication": true,
+    "allNineArgumentTagsAndFourOverallLinksMatch": true,
+    "all26AIContentStringsMatch": true,
+    "sourceLinkSideLabelsTimestampsAndScoresMatch": true,
+    "assessmentBylineMatches": true,
+    "bothExistingPortraitsAndProfileLinksWork": true,
+    "searchAndTopicDiscoveryPassed": true,
+    "bothProfilesIncludeDebate": true,
+    "noHorizontalOverflow": true,
+    "noConsoleErrorsOrWarnings": true,
+    "allResourcesLoaded": true,
+    "visualInspectionPassed": true
+  },
+  "screenshotNames": [
+    "desktop-initial.png",
+    "desktop-critique.png",
+    "desktop-enter.png",
+    "desktop-space.png",
+    "desktop-final-tag.png",
+    "mobile-initial.png",
+    "mobile-critique.png",
+    "mobile-ai-settled.png",
+    "mobile-final-tag.png",
+    "mobile-reference.png"
+  ],
+  "mobileDistantControlObservation": "After opening the first critique, the next pointer action activated the distant AI Contribution summary on its first click; the accordion opened and all twenty-nine critique opacity values were zero.",
+  "resourceObservation": "All twenty recorded final-session requests returned HTTP 200; the console reported zero errors and zero warnings.",
+  "diagnosticNotes": [
+    "The skill reference's network command is named requests in the installed browser tool. The unsupported diagnostic command did not affect the page; requests --static then verified every response. No site code or assessment content was changed."
+  ],
+  "temporaryBrowsersRemaining": 0,
+  "temporaryServersRemaining": 0
+}

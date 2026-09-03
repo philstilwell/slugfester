@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "debateNumber": "247",
+  "debateId": "folley-scrivener-good-without-god-2025",
+  "results": [
+    {
+      "id": "debates",
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "startedAt": "2026-09-03T23:39:10.835Z",
+      "completedAt": "2026-09-03T23:39:11.387Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/debates.log",
+        "sha256": "81025d247c2d3f00d8d5f1955bfabfdb65bbeda2be499522144fa05838f480d9",
+        "bytes": 23
+      }
+    },
+    {
+      "id": "corpus",
+      "command": [
+        "node",
+        "scripts/validate-corpus-transcripts.mjs"
+      ],
+      "startedAt": "2026-09-03T23:39:11.388Z",
+      "completedAt": "2026-09-03T23:39:11.506Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/corpus.log",
+        "sha256": "14ff1039d6217a8d93f286a67dd854551a7d14053070ecf068c59181cb8e5d2b",
+        "bytes": 151
+      }
+    },
+    {
+      "id": "seo",
+      "command": [
+        "node",
+        "scripts/generate-seo-pages.mjs",
+        "--check"
+      ],
+      "startedAt": "2026-09-03T23:39:11.507Z",
+      "completedAt": "2026-09-03T23:39:11.758Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/seo.log",
+        "sha256": "9148596b2d4f04a41c8a7654727246d97d9a03cb4603215767fd7d57d1b2f5b0",
+        "bytes": 25
+      }
+    },
+    {
+      "id": "new-standalone",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--debate",
+        "247"
+      ],
+      "startedAt": "2026-09-03T23:39:11.758Z",
+      "completedAt": "2026-09-03T23:39:11.881Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/new-standalone.log",
+        "sha256": "17c095d72d4998dfb34b43b431b0edafc220e1b9e6b63a55ce50fd3a50024d76",
+        "bytes": 251
+      }
+    },
+    {
+      "id": "all-standalone",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--audit",
+        "--repository-only"
+      ],
+      "startedAt": "2026-09-03T23:39:11.881Z",
+      "completedAt": "2026-09-03T23:39:18.361Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/all-standalone.log",
+        "sha256": "f3cbf6b2f87eca9440982ae2a926f2d685d5d70de0681ef408ba8b5c83da909c",
+        "bytes": 12228
+      }
+    },
+    {
+      "id": "content-parity",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-content-parity.mjs"
+      ],
+      "startedAt": "2026-09-03T23:39:18.361Z",
+      "completedAt": "2026-09-03T23:39:19.856Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/content-parity.log",
+        "sha256": "1cc2ccb9bd1143cafc07b92e49a165a6f0ed39cfc102ce4c5f1f8aea542d3643",
+        "bytes": 6398
+      }
+    },
+    {
+      "id": "rhetorical-tags",
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs"
+      ],
+      "startedAt": "2026-09-03T23:39:19.856Z",
+      "completedAt": "2026-09-03T23:39:20.060Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/rhetorical-tags.log",
+        "sha256": "1ee1189d7048e9185a64205bfc403c306129634fd19b0e4179a892d403003335",
+        "bytes": 6400
+      }
+    },
+    {
+      "id": "full-check",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "startedAt": "2026-09-03T23:39:20.060Z",
+      "completedAt": "2026-09-03T23:39:36.502Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/full-check.log",
+        "sha256": "b994a06823a79e5aed0ce7d419352f66e221df9b1085aade2dcb5250c120e880",
+        "bytes": 42213
+      }
+    },
+    {
+      "id": "preflight",
+      "command": [
+        "npm",
+        "run",
+        "site:preflight"
+      ],
+      "startedAt": "2026-09-03T23:39:36.502Z",
+      "completedAt": "2026-09-03T23:39:47.485Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/preflight.log",
+        "sha256": "c6000e018eb68261c14fa1d65adac7e3757e2065f526d3a0bef999a3e8f3ccc3",
+        "bytes": 33026
+      }
+    },
+    {
+      "id": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "startedAt": "2026-09-03T23:39:47.485Z",
+      "completedAt": "2026-09-03T23:39:47.567Z",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/validation/diff-check.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ],
+  "completedAt": "2026-09-03T23:39:47.567Z",
+  "logFormatting": "Terminal blank lines normalized without changing command output text, exit results, or assessment evidence."
+}

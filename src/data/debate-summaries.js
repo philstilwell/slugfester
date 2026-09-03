@@ -11644,5 +11644,58 @@ export const debateSummaries = [
         "title": "Free action under divine causation"
       }
     ]
+  },
+  {
+    "id": "folley-scrivener-good-without-god-2025",
+    "number": "247",
+    "title": "Joe Folley vs Glen Scrivener: Goodness Without God",
+    "year": 2025,
+    "label": "Goodness without God",
+    "date": "2026-09-03",
+    "duration": "1 hr 5 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=4Foy83uTsBQ",
+    "motion": "Can we be good without God?",
+    "summary": "Folley more successfully separates historical influence from necessary grounding, while Scrivener offers substantive Christian interpretations without establishing their exclusivity against non-theistic alternatives.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Moral goodness need not depend on God",
+        "speaker": "Joe Folley",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Humanistic goodness finds its true foundation in Christ",
+        "speaker": "Glen Scrivener",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 76,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Equality and Christian genealogy"
+      },
+      {
+        "title": "Non-theistic countermodels and necessity"
+      },
+      {
+        "title": "Ultimate goodness and personal love"
+      },
+      {
+        "title": "The cross, narrative, and compassion"
+      },
+      {
+        "title": "Evolution and moral truth"
+      },
+      {
+        "title": "Subjectivity and obligation"
+      },
+      {
+        "title": "Scripture and moral disagreement"
+      }
+    ]
   }
 ];

@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "method": "Controller read every returned diarized segment against the frozen caption evidence and participant-turn context; automated speaker labels were not accepted indiscriminately. Attribution-only verification does not replace canonical caption wording or expand quote eligibility.",
+  "checks": [
+    {
+      "moveId": "folley-history-is-not-necessity",
+      "status": "confirmed",
+      "rationale": "Joe Folley is identified throughout the main argument at clip seconds 3.4–102.588. The initial moderator prompt and Glen Scrivener's following response at 104.038–112.738 are context, not Folley's evidence or quotation. A transcription negation error in the discussion of alternative philosophies is not imported into the canonical source."
+    },
+    {
+      "moveId": "scrivener-concedes-ultimate-stopping-point",
+      "status": "confirmed",
+      "rationale": "The model identifies Glen Scrivener's complete stopping-point response at clip seconds 5.7–35.198; the preceding 0–3.65 moderator prompt is excluded. This directly confirms the attribution of the concession and its reason without attributing the host's question to either advocate."
+    },
+    {
+      "moveId": "scrivener-cross-protects-the-weak",
+      "status": "confirmed",
+      "rationale": "Glen Scrivener is identified throughout the substantive cross-and-weakness explanation at clip seconds 0–63.206. The moderator's 64.406–72.956 question and the short following interjection do not supply any selected proposition or eligible quotation."
+    },
+    {
+      "moveId": "scrivener-buddhism-reflection-maximal-cross",
+      "status": "confirmed",
+      "rationale": "Glen Scrivener is identified across the comparative Buddhism-and-cross argument at clip seconds 0–72.326. The final prompt addressing both speakers and inviting student questions at 73.94–81.89 is moderator speech despite an automated Joe Folley label; the frozen scope and quotation already exclude that prompt."
+    },
+    {
+      "moveId": "folley-intersubjective-language-analogy",
+      "status": "confirmed",
+      "rationale": "Joe Folley is consistently identified throughout the language analogy and intersubjective answer at clip seconds 2.95–90.086. The initial question fragment is audience speech despite an automated Glen Scrivener label and is not treated as an advocate's claim."
+    },
+    {
+      "moveId": "scrivener-outrage-objective-obligation",
+      "status": "confirmed",
+      "rationale": "Glen Scrivener is identified throughout the substantive obligation and outrage response at clip seconds 2.85–30.982. The opening tautology fragment belongs to the preceding exchange and is not used as this move's inference; the audience question beginning at 39.22 is separately labeled and excluded."
+    },
+    {
+      "moveId": "scrivener-evolution-weakness-racism",
+      "status": "confirmed",
+      "rationale": "The student explicitly addresses Glen in the frozen source; the returned segments consistently identify Glen Scrivener's continuous answer at clip seconds 5.35–122.316, including weakness, reproduction, racism, and the cross. The opening question tail and brief noises are not argument evidence. The 131.266 invitation to respond is moderator speech despite a Joe label; Folley's following answer is outside this selected inference."
+    },
+    {
+      "moveId": "scrivener-trinitarian-love-ultimate",
+      "status": "confirmed",
+      "rationale": "Glen Scrivener is consistently identified through the whole Trinitarian explanation at clip seconds 0–98.102. The final question-management exchange beginning at 101.702 is separately labeled and does not enter the claim, inference, or eligible quotation."
+    },
+    {
+      "moveId": "scrivener-jesus-scriptural-development",
+      "status": "confirmed",
+      "rationale": "The addressed-to-Glen question and Glen-labeled answer at clip seconds 2.004–44.134 and 59.828–102.642 confirm Scrivener's scriptural-development move. Three intermediate segments at 45.076–59.076 are anomalously labeled Joe, but form the uninterrupted middle of the same Matthew 19 explanation: beginning, fall, Mosaic accommodation, then Jesus's restoration; there is no intervening question, rebuttal, or turn cue in the frozen source. The controller treats those as label drift, not a new Folley contribution. The moderator follow-up at 104.442 is excluded."
+    }
+  ],
+  "audit": {
+    "allReturnedSegmentsReviewed": true,
+    "automaticLabelsAcceptedWithoutContextReview": false,
+    "canonicalCaptionBytesChanged": false,
+    "inventoryChanged": false,
+    "paidRetries": 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "preserved-authenticated-raw-bytes",
+  "path": "docs/assessment-production/standalone-debates-v1/debate-247/inventory/model-output.json",
+  "finding": "git diff --cached --check reported a final extra blank line in the original model response.",
+  "disposition": "Following the repository's existing raw-response -diff convention, an inventory-local .gitattributes marks only model-output.json as non-diffable; its bytes and authenticated hashes remain unchanged. inventory.json remains a normal text diff and passed all structured evidence checks.",
+  "sourceOrJudgmentChanges": 0,
+  "scoreChanges": 0,
+  "siteQualityLimitsChanged": false
+}

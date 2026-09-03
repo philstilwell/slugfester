@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "folley-history-is-not-necessity",
+    "scrivener-equality-not-observation",
+    "folley-cynic-social-distinction-precursors",
+    "scrivener-holland-christian-roots",
+    "scrivener-god-the-human-grounding",
+    "folley-necessity-countermodel-burden",
+    "scrivener-atheist-conduct-metaphysical-fit",
+    "folley-plato-impersonal-good",
+    "scrivener-impersonal-good-unfitting",
+    "folley-agency-consistency-model",
+    "folley-buddhist-compassion-model",
+    "folley-ultimate-good-parity",
+    "scrivener-concedes-ultimate-stopping-point",
+    "scrivener-trinitarian-love-ultimate",
+    "folley-cross-not-deductive",
+    "scrivener-cross-protects-the-weak",
+    "folley-shared-suffering-alternative",
+    "scrivener-personal-logos-rights",
+    "scrivener-buddhism-reflection-maximal-cross",
+    "folley-causal-versus-truth-question",
+    "scrivener-reciprocity-not-enemy-love",
+    "folley-evolved-empathy-not-truthmaker",
+    "scrivener-evolution-weakness-racism",
+    "folley-intersubjective-language-analogy",
+    "scrivener-outrage-objective-obligation",
+    "folley-private-morality-enforcement-tension",
+    "folley-subjectivity-qualified-reconciliation",
+    "folley-first-principles-disagreement",
+    "scrivener-jesus-scriptural-development"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every packet.template field byte-for-byte.",
+    "summary": "18–28 word source-specific comparative summary.",
+    "quotes": {
+      "pro": "{text,context}",
+      "con": "{text,context}"
+    },
+    "sections": "Copy publicationLayout identities/title/timebox/score and convert rows to exchanges [{pro:card or null,con:card or null}]; cards {ledgerMoveId,time,role,words,score,critique,tags:[]} using exact moveDisplayControls. Preserve every move and per-side order.",
+    "overall": "Each side {score:locked overall score,strengths:[3 strings],blunders:[3 {text,links:[]}]}",
+    "logicalExtension": "Each side {finalArgument:{thesis,premises:[5 strings],conclusion,notice},newArguments:[3 {title,text}]}."
+  },
+  "instructions": {
+    "argumentDescriptionTargetWords": [
+      24,
+      28
+    ],
+    "argumentDescriptionAllowedWords": [
+      8,
+      55
+    ],
+    "argumentMeanMinimum": 22.585365853658537,
+    "maximumShareBelow20Words": 0.25,
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "summaryWords": [
+      18,
+      28
+    ],
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 3,
+    "overallItemTargetWords": [
+      18,
+      30
+    ],
+    "newArgumentsPerSide": 3,
+    "premisesPerSide": 5,
+    "representativeQuoteWords": [
+      3,
+      18
+    ],
+    "quoteContextWords": [
+      18,
+      45
+    ],
+    "tagsAndBlunderLinksMustRemainEmptyUntilRhetoricalReview": true,
+    "critiquesExactlyFourLabeledSentences": true,
+    "critiqueRationalesMustBeSourceSpecific": true,
+    "thesisMinimumWords": 12,
+    "premiseMinimumWords": 12,
+    "conclusionMinimumWords": 15,
+    "newArgumentAllowedWords": [
+      45,
+      130
+    ],
+    "newArgumentTargetWords": [
+      90,
+      120
+    ],
+    "ordinaryPunctuationRequired": true,
+    "noGenericBoilerplate": true,
+    "quoteTextMustBeSourceExact": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedArgument": true,
+    "noveltyMapSourceMoveIdsRequired": true,
+    "sourceQuoteAuditMustVerifyBothQuotes": true,
+    "noManualScoreChanges": true
+  }
+}

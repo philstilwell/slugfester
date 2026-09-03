@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "247",
+  "debateId": "folley-scrivener-good-without-god-2025",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "b5a388d8345db1dfb8fa9a736ae9871120686e9eb66be856430281ea53c5d8f9",
+    "bytes": 113955
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_247_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "b5a388d8345db1dfb8fa9a736ae9871120686e9eb66be856430281ea53c5d8f9",
+        "bytes": 113955
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "102082a105d44b849b552c2995e4bfcada68e57c56841e87e13bda7525d8aed6",
+        "bytes": 38182
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_247_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "b5a388d8345db1dfb8fa9a736ae9871120686e9eb66be856430281ea53c5d8f9",
+        "bytes": 113955
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "c178a2bbb6190c512a86c9bde9ddf4252577ceb73efc4f122b3b9792d9df2e69",
+        "bytes": 36283
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_adjudication_247",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "4d9a8d36620ed80250a0372c68e69f6ddf54279f61d6e89aa743e734a5936e55",
+        "bytes": 189218
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "46f36871af0972b748973c8bc926e2e413bc5e740ad91f96cf2beb745aa5ff49",
+        "bytes": 28441
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 65
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-03T23:34:55.509Z"
+}
