@@ -3,9 +3,10 @@ import { readFile } from "node:fs/promises";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText, interlocutorAvatars } from "../src/data/interlocutors.js";
 
-const [app, styles] = await Promise.all([
+const [app, styles, topics] = await Promise.all([
   readFile(new URL("../src/app.js", import.meta.url), "utf8"),
-  readFile(new URL("../src/styles.css", import.meta.url), "utf8")
+  readFile(new URL("../src/styles.css", import.meta.url), "utf8"),
+  readFile(new URL("../src/data/topics.js", import.meta.url), "utf8")
 ]);
 
 const errors = [];
@@ -160,12 +161,12 @@ requireIncludes("app topics page", app, 'class="topic-card-reveal"');
 requireIncludes("app topics page", app, "Debate summary and speakers");
 requireIncludes("app topics page", app, "Speakers");
 requireIncludes("app topics page", app, "topicCategoriesForDebate");
-requireIncludes("app topics categories", app, "Cosmological & Contingency Arguments");
-requireIncludes("app topics categories", app, "Science and design");
-requireIncludes("app topics categories", app, "Meaning and purpose");
-requireIncludes("app topics categories", app, "Morality and ethics");
-requireExcludes("app topics categories", app, "Science, cosmology, and design");
-requireExcludes("app topics categories", app, "Morality, ethics, and meaning");
+requireIncludes("app topics categories", topics, "Cosmological & Contingency Arguments");
+requireIncludes("app topics categories", topics, "Science and design");
+requireIncludes("app topics categories", topics, "Meaning and purpose");
+requireIncludes("app topics categories", topics, "Morality and ethics");
+requireExcludes("app topics categories", topics, "Science, cosmology, and design");
+requireExcludes("app topics categories", topics, "Morality, ethics, and meaning");
 requireIncludes("app backend route", app, "renderBackend");
 requireIncludes("app backend route", app, "backendPathRoutePattern");
 requireIncludes("app backend route", app, "assessmentPathRoutePattern");
@@ -175,7 +176,7 @@ requireIncludes("app backend update date", app, "Updated September 2, 2026");
 requireIncludes("app backend review cadence", app, "approximately twice a year");
 requireIncludes("app backend selection limitation", app, "The selection process is somewhat arbitrary.");
 requireIncludes("app backend selection sampling caveat", app, "not a random or representative sample");
-requireIncludes("app backend selection category preference", app, "clearly fit within one of the ten topic categories listed on the site");
+requireIncludes("app backend selection category preference", app, "clearly fit within one of the ${topicCategoryDefinitions.length} topic categories listed on the site");
 requireIncludes("app backend recommendation form", app, 'class="backend-recommendation-form"');
 requireIncludes("app backend recommendation URL", app, 'name="debate_url" type="url"');
 requireIncludes("app backend recommendation email", app, 'name="email" type="email"');

@@ -1,3 +1,4 @@
+import { topicCategoryIds } from "../src/data/topics.js";
 import { debates } from "../src/data/debates.js";
 import { getReferenceDefinition, referenceFromUrl } from "../src/data/references.js";
 import { existsSync, readFileSync } from "node:fs";
@@ -121,19 +122,6 @@ const currentAssessmentModel = "5.6 Terra Extra High";
 const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC]);
 const terraAssessmentFirstDebate = 131;
 const explicitTopicCategoryFirstDebate = 190;
-const topicCategoryIds = new Set([
-  "cosmological-arguments",
-  "science-design",
-  "scripture-jesus-resurrection",
-  "meaning-purpose",
-  "morality-ethics",
-  "evil-suffering-hiddenness",
-  "mind-consciousness-free-will",
-  "logic-reason-presuppositions",
-  "religion-society-public-reason",
-  "god-theism-atheism",
-  "broader-debate-questions"
-]);
 
 function pathLabel(parts) {
   return parts.join(".");

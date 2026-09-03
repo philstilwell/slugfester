@@ -1,6 +1,7 @@
-import { debateSummaries } from "./data/debate-summaries.js?v=20260902-rubric-move-reasons-v3";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260902-rubric-move-reasons-v3";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260902-rubric-move-reasons-v3";
+import { topicCategoryDefinitions } from "./data/topics.js?v=20260903-topic-categories-v1";
+import { debateSummaries } from "./data/debate-summaries.js?v=20260903-topic-categories-v1";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260903-topic-categories-v1";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260903-topic-categories-v1";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -33,7 +34,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260902-rubric-move-reasons-v3";
+} from "./seo.js?v=20260903-topic-categories-v1";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -78,7 +79,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260902-rubric-move-reasons-v3")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260903-topic-categories-v1")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -97,7 +98,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=20260902-rubric-move-reasons-v3")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=20260903-topic-categories-v1")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -113,7 +114,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260902-rubric-move-reasons-v3`)
+    const promise = import(`./data/debate-details/${id}.js?v=20260903-topic-categories-v1`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -128,7 +129,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260902-rubric-move-reasons-v3`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260903-topic-categories-v1`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -724,209 +725,6 @@ function normalizeSearchValue(value = "") {
     .trim();
 }
 
-const topicCategoryDefinitions = [
-  {
-    id: "cosmological-arguments",
-    title: "Cosmological & Contingency Arguments",
-    shortLabel: "Cosmological arguments",
-    description:
-      "Kalam, contingency, beginnings, finitude, fine-tuning, cosmic evidence, and arguments from the universe to God or necessary reality.",
-    keywords: [
-      "cosmology",
-      "cosmological",
-      "cosmic",
-      "big bang",
-      "fine-tuning",
-      "kalam",
-      "nothing",
-      "nothingness",
-      "temporal infinity",
-      "beginning",
-      "contingency",
-      "necessary foundation",
-      "argument from limits",
-      "causal principle",
-      "universe",
-      "universe origins"
-    ]
-  },
-  {
-    id: "science-design",
-    title: "Science and design",
-    shortLabel: "Science & design",
-    description:
-      "Scientific explanation, biological design, origins of life, naturalism, physics-informed evidence, and the evidential reach of empirical methods.",
-    keywords: [
-      "science",
-      "scientific",
-      "scientism",
-      "design",
-      "dna",
-      "origin of life",
-      "evolution",
-      "digital physics",
-      "quantum",
-      "physicalism",
-      "naturalism"
-    ]
-  },
-  {
-    id: "scripture-jesus-resurrection",
-    title: "Scripture, Jesus, and resurrection",
-    shortLabel: "Scripture & resurrection",
-    description:
-      "Biblical reliability, Jesus traditions, resurrection arguments, miracles, Christianity's central historical claims, and scriptural morality.",
-    keywords: [
-      "jesus",
-      "resurrection",
-      "bible",
-      "biblical",
-      "scripture",
-      "christology",
-      "new testament",
-      "gospel",
-      "gospels",
-      "contradictions",
-      "ancient christianity",
-      "christianity true",
-      "miracles",
-      "slavery"
-    ]
-  },
-  {
-    id: "meaning-purpose",
-    title: "Meaning and purpose",
-    shortLabel: "Meaning & purpose",
-    description:
-      "Religious meaning, purpose, human value, existential orientation, mythic frameworks, and whether secular or theistic views better ground significance.",
-    keywords: [
-      "meaning",
-      "purpose",
-      "value",
-      "values",
-      "logos",
-      "archetypes",
-      "memes",
-      "hell",
-      "self-exile"
-    ]
-  },
-  {
-    id: "morality-ethics",
-    title: "Morality and ethics",
-    shortLabel: "Morality & ethics",
-    description:
-      "Objective morality, moral realism, ethical feeling, moral responsibility, metaethics, and social or secular moral frameworks.",
-    keywords: [
-      "morality",
-      "moral",
-      "ethics",
-      "ethical",
-      "objective",
-      "objectivist",
-      "emotivism",
-      "realism",
-      "anti-realism",
-      "responsibility",
-      "authority"
-    ]
-  },
-  {
-    id: "evil-suffering-hiddenness",
-    title: "Evil, suffering, and hiddenness",
-    shortLabel: "Evil & suffering",
-    description:
-      "The problem of evil, animal suffering, divine hiddenness, moral narrative, and whether suffering undermines theistic claims.",
-    keywords: ["evil", "suffering", "hiddenness", "animal suffering", "problem of evil"]
-  },
-  {
-    id: "mind-consciousness-free-will",
-    title: "Mind, consciousness, and free will",
-    shortLabel: "Mind & freedom",
-    description:
-      "Consciousness, mind-brain relation, agent causation, free will, idealism, and whether mental reality points beyond materialism.",
-    keywords: [
-      "consciousness",
-      "mind",
-      "brain",
-      "mind-brain",
-      "free will",
-      "freedom",
-      "compatibilism",
-      "libertarian",
-      "agent causation",
-      "agent",
-      "idealism",
-      "emergent mind",
-      "physicalism"
-    ]
-  },
-  {
-    id: "logic-reason-presuppositions",
-    title: "Logic, reason, and presuppositions",
-    shortLabel: "Logic & reason",
-    description:
-      "Logic, rationality, evidence, skepticism, presuppositional arguments, burden of proof, and the conditions for intelligible inquiry.",
-    keywords: [
-      "logic",
-      "presupposition",
-      "presuppositions",
-      "reason",
-      "rational",
-      "rationality",
-      "transcendental",
-      "evidence",
-      "skepticism",
-      "inquiry",
-      "disagreement",
-      "burden",
-      "proof"
-    ]
-  },
-  {
-    id: "religion-society-public-reason",
-    title: "Religion, society, and public reason",
-    shortLabel: "Religion & society",
-    description:
-      "Religion in public life, secular humanism, civilization, social order, Islam, political authority, and the future of human communities.",
-    keywords: [
-      "religion",
-      "public reason",
-      "civilization",
-      "faith",
-      "secular",
-      "humanism",
-      "social",
-      "society",
-      "islam",
-      "peace",
-      "power",
-      "iraq",
-      "anti-theism",
-      "human future"
-    ]
-  },
-  {
-    id: "god-theism-atheism",
-    title: "God, theism, and atheism",
-    shortLabel: "God & theism",
-    description:
-      "Direct cases for and against God, theism, atheism, divine reality, classical theism, and broad explanatory comparisons.",
-    keywords: [
-      "god",
-      "theism",
-      "atheism",
-      "atheist",
-      "christian theism",
-      "classical theism",
-      "divine",
-      "ultimate reality",
-      "belief in god",
-      "does god exist"
-    ]
-  }
-];
-
 const fallbackTopicCategory = {
   id: "broader-debate-questions",
   title: "Broader debate questions",
@@ -946,7 +744,7 @@ function topicCategoriesForDebate(debate) {
   );
   const primary = topicCategoryDefinitions.find((category) => category.id === debate.topicCategory);
 
-  return primary ? [primary, ...matches.filter((category) => category.id !== primary.id)] : matches;
+  return primary ? [primary, ...matches.filter((category) => category.id !== primary.id)] : [];
 }
 
 function topicTagsForDebate(debate) {
@@ -967,7 +765,9 @@ function topicGroupsForDebates() {
   );
 
   debates.forEach((debate) => {
-    const primaryCategory = topicCategoriesForDebate(debate)[0] || fallbackTopicCategory;
+    const primaryCategory = topicCategoryDefinitions.find(
+      (category) => category.id === debate.topicCategory
+    ) || fallbackTopicCategory;
     groups.get(primaryCategory.id).debates.push(debate);
   });
 
@@ -1709,7 +1509,7 @@ function renderTopics() {
         <div>
           <p class="eyebrow">Topic index</p>
           <h1>Debates by topic</h1>
-          <p class="topics-lede">Recurring Slugfester themes gathered into compact clusters, with abbreviated debate cards for fast browsing.</p>
+          <p class="topics-lede">Each debate appears under its main question. Additional topic tags connect related themes across categories.</p>
         </div>
         <aside class="topics-summary" aria-label="Topic catalog summary">
           <span>Topic clusters</span>
@@ -2565,7 +2365,7 @@ function renderBackend() {
         <div class="backend-selection-copy">
           <p class="eyebrow">Catalogue scope</p>
           <h2 id="backend-selection-heading">How debates enter Slugfester</h2>
-          <p><strong>The selection process is somewhat arbitrary.</strong> Slugfester is a curated catalogue, not a random or representative sample of all public debates. We favor videos that clearly fit within one of the ten topic categories listed on the site. Choices also reflect available complete sources, topics likely to interest readers, recognizable or recurring interlocutors, and whether a debate can be processed reliably with the current workflow.</p>
+          <p><strong>The selection process is somewhat arbitrary.</strong> Slugfester is a curated catalogue, not a random or representative sample of all public debates. We favor videos that clearly fit within one of the ${topicCategoryDefinitions.length} topic categories listed on the site. Choices also reflect available complete sources, topics likely to interest readers, recognizable or recurring interlocutors, and whether a debate can be processed reliably with the current workflow.</p>
           <p>That means catalogue-wide patterns describe the debates published here; they should not be treated as a neutral sample of every topic, viewpoint, speaker, or debate format. Reader recommendations help broaden the pool considered for future additions, but a recommendation does not guarantee assessment.</p>
         </div>
         <div class="backend-recommendation-card">
