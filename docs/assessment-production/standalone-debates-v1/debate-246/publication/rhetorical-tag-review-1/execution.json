@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "248c9d1d4ecb06ed5409acc00cf6b198523449c8de1ee945c10bb914b121c023",
+    "bytes": 141201
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_246_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "248c9d1d4ecb06ed5409acc00cf6b198523449c8de1ee945c10bb914b121c023",
+        "bytes": 141201
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "41c38fe3cb4a21625307c247e89aadd905cecfd89e88dbebd9cb1c036b9edd86",
+        "bytes": 28725
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_246_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "248c9d1d4ecb06ed5409acc00cf6b198523449c8de1ee945c10bb914b121c023",
+        "bytes": 141201
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "a14b216e57bf577d53382f7d8acfa897d5268c3f2d33915a12d94d9585a1a4bf",
+        "bytes": 28000
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_adjudication_246",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "e78ddb7db7a737b65dc759a364f3d6d0afdb8ce63ed50089e12521b07f3f3d83",
+        "bytes": 201594
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "b3a303748b04e20b0e2ce74f7232b8cbd289df1a911d512b0ef2a25263ea5971",
+        "bytes": 22755
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 52
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-03T22:01:33.240Z"
+}

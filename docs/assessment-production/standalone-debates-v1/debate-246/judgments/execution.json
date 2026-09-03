@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 246,
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two-fresh-built-in-subagents-fork-none",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-246/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "484ce5041720324d3bf4d8af5ac4910f52050850bde19dbc68b4095e0480040b",
+    "inventorySha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-a/output.json",
+      "outputSha256": "714b8610e6da97a663c31cf7c1f41ba879169aa7187d5722010d3856775cbb2a",
+      "outputBytes": 41675,
+      "judgmentCount": 31,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_246_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-b/output.json",
+      "outputSha256": "718744c302e6bf406e385792df3b861ed439352a1499309afce643bd005438a8",
+      "outputBytes": 42532,
+      "judgmentCount": 31,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_246_b"
+    }
+  ],
+  "completedAt": "2026-09-03T21:39:26.498Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

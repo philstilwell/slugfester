@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "36030f16b75aab92821562e2ee5153f6cf9491d94f0e8c8995e1b23e91ba6181",
+    "bytes": 68335
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[3].exchanges[0].pro.tags",
+        "candidate.sections[3].exchanges[1].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[3].exchanges[2].pro.tags",
+        "candidate.sections[5].exchanges[0].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[5].exchanges[1].pro.tags",
+        "candidate.overall.pro.blunders[1].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.overall.pro.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 5,
+    "overallBlunderLinkChanges": 2,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/output.json",
+      "sha256": "2e93c6c4021762f410fc30ea5dee5e6909bf8092c739a54fefc9e78c3186c5ff",
+      "bytes": 70361
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-audit.json",
+      "sha256": "d868dc47392a59361c0494e0cc973bb23508bd6a1eb424fda5fbd917518db5b1",
+      "bytes": 60083
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "800cd7a2c7868726ef2a64040398688e66442bd64bdaaef3d29a054b06c9af04",
+      "bytes": 29816
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0-standalone-production-rendering-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-standalone-production-rendering",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "completedAt": "2026-09-03T22:07:04.324Z",
+  "results": [
+    {
+      "viewportName": "desktop",
+      "status": "passed-rendering-viewport",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/rendering/evidence/desktop.json",
+        "sha256": "592edff61ee8c58bc744e20830f4f33e4e67f769c10709ccf499b88016b61422",
+        "bytes": 42170
+      }
+    },
+    {
+      "viewportName": "mobile",
+      "status": "passed-rendering-viewport",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/rendering/evidence/mobile.json",
+        "sha256": "8f52946c58f5cf5f550e483e8d0a56f4b8abd91947f9e88eccba1719cbcff824",
+        "bytes": 42163
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/desktop-initial.png",
+      "sha256": "c2c4d6951b8fb9b66edee6372d914997bea032a0ff552109b30d84d1c1949d87",
+      "bytes": 364126
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/desktop-critique.png",
+      "sha256": "c142206065562fc22999752da9b6d40df1409a328300e6aa32b1fa9160c539e2",
+      "bytes": 309408
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/desktop-enter.png",
+      "sha256": "15caaedcf113f876c1e948b7ce2c4785fedbc3517c9fe0fa1b04f71f7da19b58",
+      "bytes": 310605
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/desktop-space.png",
+      "sha256": "15caaedcf113f876c1e948b7ce2c4785fedbc3517c9fe0fa1b04f71f7da19b58",
+      "bytes": 310605
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/desktop-final-tag.png",
+      "sha256": "d55eb66fd04e765ea6efa93b370b88fa0e9d78e4c369518c31d7d89dd26b362e",
+      "bytes": 306474
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/desktop-labels-collapsed.png",
+      "sha256": "053f8dca1ad60a63d0693915c307bc0aa9200874d0cca0fabcd2a7d02dfd908d",
+      "bytes": 244468
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/mobile-initial.png",
+      "sha256": "4a7f5a1d0d836c86b9b8943b18141f8d5483d18fc4a901f25fa3d4bdf7070411",
+      "bytes": 113495
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/mobile-critique.png",
+      "sha256": "1f048ff29735d215dfc469ad6fdf3a26e30bc5312c4e507b6221e3f688d8e080",
+      "bytes": 118367
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/mobile-ai-settled.png",
+      "sha256": "11fda5f49ec258ae2ad4694fe1f2f8642b53292841866c89c450479a1a846b7d",
+      "bytes": 142465
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/mobile-final-tag.png",
+      "sha256": "f502ab757cbed205ee2f911e91d9d6090afc38ca79106101df2bb81fb446bbd1",
+      "bytes": 93789
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/mobile-reference.png",
+      "sha256": "3e561ecf811f6e236f94edf6411b01043735c22d6a3f930c5f6b5d3838924abf",
+      "bytes": 99913
+    }
+  ],
+  "checks": {
+    "critiquePointerControlPassed": true,
+    "critiqueKeyboardEnterPassed": true,
+    "critiqueKeyboardSpacePassed": true,
+    "mobileCritiqueThenDistantControlPassed": true,
+    "mobileAiAccordionOpened": true,
+    "mobileCritiqueClearedAfterTransition": true,
+    "referenceNavigationAndOccurrenceAnchorPassed": true,
+    "allDescriptionsAndCritiquesMatchPublication": true,
+    "noHorizontalOverflow": true,
+    "noConsoleErrorsOrWarnings": true,
+    "allResourcesLoaded": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "viewports": 2,
+    "screenshots": 11,
+    "argumentCardsPerViewport": 31,
+    "pointerInteractionTests": 3,
+    "keyboardEnterTests": 1,
+    "keyboardSpaceTests": 1,
+    "mobileDistantControlTests": 1,
+    "rhetoricalReferenceNavigationTests": 1,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosticNotes": [
+    "The first browser was opened before generation and retained a 245-debate module while fresh fetches contained 246. Closing that owned session and opening a fresh session loaded the new route correctly; no site code was changed.",
+    "The first mobile follow-up inspection placed document access outside page.evaluate; the diagnostic was corrected without repeating the successful distant-control click. The accordion was open and all critique opacity values were zero.",
+    "One screenshot command initially lacked its output directory. The directory was created and the screenshot was captured successfully; no publication bytes were affected."
+  ]
+}

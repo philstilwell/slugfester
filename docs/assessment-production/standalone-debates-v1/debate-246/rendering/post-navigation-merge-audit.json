@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0-post-navigation-merge-compatibility",
+  "status": "passed",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "completedAt": "2026-09-03T22:22:02.158Z",
+  "originMain": "d022443438308597c4648fcdca643b932a5cad12",
+  "screenshots": [
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/navigation-merge-desktop.png",
+      "sha256": "422fa92ae9d0e151039b8aaf609e05d377d90b3b3661b7975c2c900e52c9a26e",
+      "bytes": 362512
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/navigation-merge-mobile.png",
+      "sha256": "4a7f5a1d0d836c86b9b8943b18141f8d5483d18fc4a901f25fa3d4bdf7070411",
+      "bytes": 113495
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/navigation-merge-mobile-critique.png",
+      "sha256": "8719736ca26f17950cb0e7abb0ba92836d8ccacf11180e9be0fd7938f2083b3b",
+      "bytes": 118022
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-246/navigation-merge-mobile-ai.png",
+      "sha256": "cdef841cb1f876e7d1cc4c3327c7f5a33d997025e1023e27b255fec32c8bf296",
+      "bytes": 142429
+    }
+  ],
+  "assets": [
+    {
+      "path": "src/app.js",
+      "sha256": "bbd2c03a929ff9ba798c8ca552a69f42e4084ee8ab62d8f7dcefbaf37e020abf",
+      "bytes": 184779
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "4aee253f2938f5737c2bbc26f61dd6bd30457c54612fe85db1ef92578a280c7c",
+      "bytes": 122295
+    },
+    {
+      "path": "scripts/generate-seo-pages.mjs",
+      "sha256": "61eca4fb5b3ab047547ee94a0d18bdecd56e5d0ee09756508312a1bac23219cb",
+      "bytes": 24960
+    }
+  ],
+  "reason": "Main received the separately approved external-sites dropdown. Six generated HTML conflicts were resolved only by rerunning the current generator with both accepted source changes.",
+  "previousAssessmentCommit": "94aa13703537897d650dfe8014d894bbc700a4fe",
+  "checks": {
+    "sharedCodeExactlyMatchesOriginMain": true,
+    "priorAssessmentArtifactsByteUnchanged": true,
+    "scoreChanges": 0,
+    "judgmentChanges": 0,
+    "publicationChanges": 0,
+    "npmCheckAndPostcheck": "passed",
+    "siteTestsPassed": 52,
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "scrollWidth": 1440,
+      "cards": 31,
+      "tags": 5,
+      "overallLinks": 2
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "cards": 31,
+      "tags": 5,
+      "overallLinks": 2,
+      "critiqueThenDistantAiControl": "passed",
+      "aiOpen": true,
+      "visibleCritiquesAfterTap": 0
+    },
+    "all31DescriptionsAndCritiquesExact": true,
+    "all5CardLabelsExact": true,
+    "visualInspection": "passed",
+    "runtimeErrors": 0,
+    "failedResources": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "note": "The initial 11 screenshots and 47-test results remain preserved; these four additional screenshots and the 52-test run verify compatibility with the updated main branch. Required GitHub checks must rerun for this merge update."
+}
