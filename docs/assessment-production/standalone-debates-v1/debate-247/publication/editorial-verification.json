@@ -1,0 +1,60 @@
+{
+  "status": "passed-source-specific-editorial-review",
+  "publicationAtReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/output.json",
+    "sha256": "235daa232fa5f6871b82d097acd4f3764b14a2bae5c91e77445762337ac225bf",
+    "bytes": 65227
+  },
+  "quotes": [
+    {
+      "side": "pro",
+      "moveId": "folley-ultimate-good-parity",
+      "text": "God can ground goodness",
+      "eligibleAndExact": true
+    },
+    {
+      "side": "con",
+      "moveId": "scrivener-concedes-ultimate-stopping-point",
+      "text": "all of us have a stopping point",
+      "eligibleAndExact": true
+    }
+  ],
+  "noveltyMapPaths": [
+    "candidate.logicalExtension.pro.finalArgument",
+    "candidate.logicalExtension.pro.newArguments[0]",
+    "candidate.logicalExtension.pro.newArguments[1]",
+    "candidate.logicalExtension.pro.newArguments[2]",
+    "candidate.logicalExtension.con.finalArgument",
+    "candidate.logicalExtension.con.newArguments[0]",
+    "candidate.logicalExtension.con.newArguments[1]",
+    "candidate.logicalExtension.con.newArguments[2]"
+  ],
+  "allNoveltyIdsResolved": true,
+  "completeDescriptionsCritiquesAndAIContributionRead": true,
+  "ordinaryPunctuationInspected": true,
+  "repeatedSixWordBoilerplate": {
+    "ngramSize": 6,
+    "minimumDocuments": 8,
+    "commonNgrams": 0,
+    "meanCoveredRatio": 0,
+    "maximumCoveredRatio": 0
+  },
+  "recentDepth": {
+    "reference": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/recent-reference-depth.json",
+      "sha256": "db3e964b64cd74369a0ac5e04a77939f6d1cd2b50c4c06b13a02724207f74056",
+      "bytes": 2401
+    },
+    "mean": 26.586206896551722,
+    "requiredMean": 22.585365853658537,
+    "shorterThan20Words": 0
+  },
+  "wrapperStatus": "complete is an allowed completion value; the frozen contract required a status field but no specific literal, so no normalization or overwrite was performed",
+  "preAdapterProductionValidation": {
+    "unpairedCards": 7,
+    "fourthRow": 1,
+    "missingLedger": 1,
+    "otherReaderFacingFailures": 0,
+    "explanation": "These nine provisional findings arise because the production validator recognizes unpaired cards and frozen fourth-row eligibility through the not-yet-built ledger adapter; the standalone candidate validator already authenticates the exact layout. Repeat the production validator after building that adapter without altering any move."
+  }
+}

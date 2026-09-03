@@ -1,0 +1,29 @@
+{
+  "status": "frozen-before-execution",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "agentTask": "/root/adjudication_247",
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/adjudication/judgment-input.json",
+      "sha256": "a88340d5911e15ede322d2aa1039daa46e592f7c220ad7ffd2492b8e0c8e7987",
+      "bytes": 177257
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-247/adjudication/output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0
+}

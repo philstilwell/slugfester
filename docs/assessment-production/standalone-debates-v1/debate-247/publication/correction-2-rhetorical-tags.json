@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "247",
+  "debateId": "folley-scrivener-good-without-god-2025",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "235daa232fa5f6871b82d097acd4f3764b14a2bae5c91e77445762337ac225bf",
+    "bytes": 65227
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[0].exchanges[0].con.tags",
+        "candidate.sections[0].exchanges[2].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[1].exchanges[1].con.tags",
+        "candidate.sections[3].exchanges[0].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[3].exchanges[1].con.tags",
+        "candidate.sections[3].exchanges[2].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.sections[4].exchanges[1].con.tags",
+        "candidate.sections[5].exchanges[0].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.sections[6].exchanges[0].pro.tags",
+        "candidate.overall.pro.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 6,
+      "fields": [
+        "candidate.overall.con.blunders[1].links",
+        "candidate.overall.con.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 9,
+    "overallBlunderLinkChanges": 4,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/output.json",
+      "sha256": "522c0d3172b9870f2b0dcede388d43ce35ab03f539847a09587f541cd488321c",
+      "bytes": 69052
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-audit.json",
+      "sha256": "fb99f931c5c1d43a5b72f04a166cc5850ef74104ba145243e5cba939a45b7057",
+      "bytes": 78424
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-247/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "4cd16c5b455b1abaf9532147f3861612ac2981107f8f7b0d269ee44325c2c7eb",
+      "bytes": 38654
+    }
+  }
+}
