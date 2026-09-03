@@ -67,7 +67,7 @@ requireIncludes("app debate hero", app, 'src="/assets/debate-gloves.png"');
 requireIncludes("app sticky header", app, 'class="brand-logo" src="/assets/debate-gloves.png"');
 requireIncludes("app rankings comparison gloves", app, 'class="ranking-comparison-versus"');
 requireIncludes("app sticky header", app, 'class="external-sites"');
-requireIncludes("app sticky header", app, "External Sites");
+requireIncludes("app sticky header", app, 'External <span class="external-sites-chevron"');
 requireIncludes("app sticky header", app, 'class="primary-nav-link');
 requireIncludes("app sticky header", app, 'aria-current="page"');
 requireIncludes("app sticky header", app, "Search");
@@ -279,6 +279,13 @@ requireIncludes("external links", styles, ".external-sites-label");
 requireIncludes("external links", styles, ".external-sites-links");
 requireIncludes("external links", styles, ".external-site-description");
 requireIncludes("external links", styles, ".external-sites-links[hidden]");
+const externalWrapperStyles = styles.match(/\.external-sites\s*\{([^}]+)\}/)?.[1] || "";
+for (const property of ["padding:", "background:", "border:", "border-radius:", "box-shadow:"]) {
+  requireExcludes("unframed external button", externalWrapperStyles, property);
+}
+const externalButtonStyles = styles.match(/\.external-sites-label\s*\{([^}]+)\}/)?.[1] || "";
+requireIncludes("external button capitalization", externalButtonStyles, "text-transform: none;");
+requireIncludes("external button size", externalButtonStyles, "font-size: 0.8125rem;");
 requireIncludes("primary nav", styles, ".primary-nav-link");
 requireIncludes("primary nav", styles, ".site-header nav a.primary-nav-link");
 requireIncludes("primary nav", styles, ".primary-nav-link.active");
