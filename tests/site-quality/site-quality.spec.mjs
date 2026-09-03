@@ -154,7 +154,7 @@ test("the rubric quality check offers six closed-by-default section examples", a
   );
   const middleStart = Math.floor((barStyles.length - 1) / 2);
   const middleEnd = Math.ceil((barStyles.length - 1) / 2);
-  const redExtensionIndex = Math.floor((barStyles.length - 1) * 0.55);
+  const redExtensionIndex = Math.floor((barStyles.length - 1) * 0.7);
   expect(barStyles.at(0)).toContain("var(--coral) 100.0%");
   expect(barStyles.at(redExtensionIndex)).toContain("var(--coral)");
   expect(barStyles.slice(middleStart, middleEnd + 1).every((style) => style?.includes("var(--gold)"))).toBe(true);

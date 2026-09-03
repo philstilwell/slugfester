@@ -1225,7 +1225,7 @@ function renderRubricExtremesAccordion(extremes) {
 
 function sectionScoreBarColor(index, bucketCount) {
   const position = bucketCount > 1 ? index / (bucketCount - 1) : 0.5;
-  const goldPosition = 0.6;
+  const goldPosition = 0.75;
   const beforeGold = position <= goldPosition;
   const segmentProgress = beforeGold
     ? position / goldPosition
