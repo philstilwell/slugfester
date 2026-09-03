@@ -11591,5 +11591,58 @@ export const debateSummaries = [
         "title": "Fine-tuning and extraordinary cosmic evidence"
       }
     ]
+  },
+  {
+    "id": "pine-schmid-divine-simplicity-2021",
+    "number": "246",
+    "title": "Gregory Pine vs Joseph Schmid: Is Divine Simplicity True?",
+    "year": 2021,
+    "label": "Divine simplicity, knowledge, and causal explanation",
+    "date": "2026-09-03",
+    "duration": "2 hr 10 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=uhke5_tk6N0",
+    "motion": "Is divine simplicity true?",
+    "summary": "Pine develops a coherent classical framework, but Schmid more effectively isolates missing causal bridges and unresolved differences between necessary divinity and contingent knowledge.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Divine simplicity follows from God as the uncaused, purely actual source of being",
+        "speaker": "Gregory Pine",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Divine simplicity faces unresolved objections and is not established over alternative models of God",
+        "speaker": "Joseph Schmid",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 87,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "From dependent motion to pure actuality"
+      },
+      {
+        "title": "Subsistent being and necessary composition"
+      },
+      {
+        "title": "Necessary truths, divine ideas, and predication"
+      },
+      {
+        "title": "Contingent knowledge when God exists alone"
+      },
+      {
+        "title": "Changing truth and eternal knowledge"
+      },
+      {
+        "title": "Providence and differences in creation"
+      },
+      {
+        "title": "Free action under divine causation"
+      }
+    ]
   }
 ];

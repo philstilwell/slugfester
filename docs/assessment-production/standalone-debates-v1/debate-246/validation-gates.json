@@ -1,0 +1,36 @@
+{
+  "status": "passed-precommit-repository-gates",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "checks": {
+    "productionDebates": 246,
+    "corpusTranscripts": 246,
+    "seoFiles": 705,
+    "publicRoutes": 437,
+    "completeSourceByteEvidenceReplay": "passed",
+    "npmRunCheckAndPostcheck": "passed",
+    "allPublishedStandaloneRegistryRecords": "passed-repository-only-replay",
+    "campaignClosureAndCalibrationPromotions": "passed-with-frozen-history-unchanged",
+    "standaloneContentParity": "passed",
+    "standaloneRhetoricalReview": "passed",
+    "fullSiteTestsPassed": 47,
+    "initialSitePreflightTestsPassed": 15,
+    "gitDiffWhitespaceCheck": "one preserved-evidence-only blank-line-at-EOF warning; all other staged files pass"
+  },
+  "noSharedCodeOrTestLimitsChanged": true,
+  "preservedEvidenceWhitespace": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/publication/preserved-output-before-rhetorical-tag-review.json",
+    "diagnostic": "new blank line at EOF",
+    "disposition": "Retain the authenticated earlier draft byte-for-byte. The final publication has no such warning; no whitespace rule or test limit was weakened."
+  },
+  "protectedPublication": {
+    "topicBranch": "codex/debate-246",
+    "targetBranch": "main",
+    "requiredCheck": "accessibility-and-performance",
+    "strictUpToDateCheckRequired": true,
+    "mergeBeforeGreenPermitted": false,
+    "finalImmediatePrecommitPreflightRequired": true,
+    "cleanCheckoutRegistryReplayBeforePushRequired": true,
+    "postMergeSiteQualityAndPagesVerificationRequired": true
+  }
+}

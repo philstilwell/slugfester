@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0-bounded-audio-attribution-plan",
+  "status": "frozen-before-paid-calls",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/inventory.json",
+    "sha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2",
+    "bytes": 147675
+  },
+  "source": {
+    "path": ".assessment-cache/debate-246-audio/source.m4a",
+    "sha256": "1b594d476df8fa92e1ce693574129762c2aa9e6d4ffe672d44a42f200d575b7c",
+    "bytes": 47556042
+  },
+  "sourceDurationSeconds": 7813.607619,
+  "sourceAcquisition": "Existing yt-dlp public visionos extraction, format 139; source identity is the registry canonical YouTube video.",
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "chunkingStrategy": "auto",
+  "language": "en",
+  "speakerReferences": [
+    {
+      "name": "Gregory Pine",
+      "startMs": 656160,
+      "endMs": 662160,
+      "referenceBasisMoveId": "dependent-motion",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/gregory-pine-reference.mp3",
+        "sha256": "d948c8c3a6dca43b4395c2a991d6bdf038f6891beb42cefd175adb3fef4d865b",
+        "bytes": 49104,
+        "startMs": 656160,
+        "endMs": 662160,
+        "durationSeconds": 6
+      }
+    },
+    {
+      "name": "Joseph Schmid",
+      "startMs": 1640799,
+      "endMs": 1646799,
+      "referenceBasisMoveId": "providential-collapse",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/joseph-schmid-reference.mp3",
+        "sha256": "95536b83e2cf1025eff79f68167192b7bdbfb2f3a2a38ae893018b220828c22d",
+        "bytes": 49104,
+        "startMs": 1640799,
+        "endMs": 1646799,
+        "durationSeconds": 6
+      }
+    },
+    {
+      "name": "Matt Fradd",
+      "startMs": 480,
+      "endMs": 6480,
+      "referenceBasis": "Uninterrupted named host introduction at start of source.",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/matt-fradd-reference.mp3",
+        "sha256": "b9c62987a51b48b7623741bd3ff8f3238e5d82d21febd1545184737d546ea2e3",
+        "bytes": 49104,
+        "startMs": 480,
+        "endMs": 6480,
+        "durationSeconds": 6
+      }
+    }
+  ],
+  "clips": [
+    {
+      "moveId": "causal-circle-concern",
+      "speaker": "Gregory Pine",
+      "eventRange": [
+        2219,
+        2249
+      ],
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/causal-circle-concern.mp3",
+        "sha256": "b441dcca9a164f274050b334a03db548b5748f51a142c695c47db58da6aabfb0",
+        "bytes": 687888,
+        "startMs": 4593000,
+        "endMs": 4678840,
+        "durationSeconds": 85.84
+      },
+      "responsePath": "output/transcribe/standalone-debate-v1/debate-246/transcripts/causal-circle-concern.json"
+    },
+    {
+      "moveId": "rational-ideas",
+      "speaker": "Gregory Pine",
+      "eventRange": [
+        3004,
+        3050
+      ],
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/rational-ideas.mp3",
+        "sha256": "00a6a2aa3cea7329dbd076303af1646a22d5478eaa644837953df236e7e29169",
+        "bytes": 924048,
+        "startMs": 6302760,
+        "endMs": 6418119,
+        "durationSeconds": 115.359
+      },
+      "responsePath": "output/transcribe/standalone-debate-v1/debate-246/transcripts/rational-ideas.json"
+    }
+  ],
+  "estimatedSecondsIncludingReferences": 237.199,
+  "cost": {
+    "estimatedUsd": 0.023719900000000002,
+    "maximumUsd": 0.4,
+    "maximumForDebateUsd": 1,
+    "priorKnownCostUsd": 0,
+    "priorUncertainCostUsd": 0,
+    "estimateReportedBeforePaidCall": false,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "pricingRetrievedAt": "2026-09-03T21:36:23.941Z",
+    "inputPerMillionUsd": 2.5,
+    "outputPerMillionUsd": 10,
+    "conservativeInputTokensPerCall": 16000,
+    "conservativeOutputTokensPerCall": 16000,
+    "estimateBasis": "Complete set of required short clips plus repeated known-speaker references; conservative token allowance accommodates diarized response overhead."
+  },
+  "execution": {
+    "sequential": true,
+    "maximumAttemptsPerClip": 1,
+    "automaticRetries": 0,
+    "fullMediaTranscription": false,
+    "transportTimeoutMs": 180000
+  }
+}

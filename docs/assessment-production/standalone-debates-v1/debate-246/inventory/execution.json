@@ -1,0 +1,66 @@
+{
+  "status": "complete-and-schema-valid",
+  "stage": "score-blind-inventory",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "isolationMethod": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/authorization.json",
+      "sha256": "6dac2d823318c517f48966fd1e9bb650c764ca652d2ef0b9e008849d9b85c6b6",
+      "bytes": 3516
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/source/source-lock.json",
+      "sha256": "eb0c423f7631610d082240abb4fd73ee4c913b13df9a5bd5087407dec91c0bfc",
+      "bytes": 3526
+    },
+    {
+      "path": ".assessment-cache/captions/uhke5_tk6N0/transcript.txt",
+      "sha256": "79d5e31e0a0b230dc671370bde57fb0117ab69ad92234555260287184a1fd3c3",
+      "bytes": 169371
+    },
+    {
+      "path": ".assessment-cache/captions/uhke5_tk6N0/events.json",
+      "sha256": "3278dcf764f3ad8fc99cee91625b548bb4e9332ed871673ad346ca2b27381c7e",
+      "bytes": 395117
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-246/inventory/model-output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "calculatedTotalsAndOtherDebatesUnavailable": true,
+  "agentTask": "/root/inventory_246",
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/model-output.json",
+    "sha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2",
+    "bytes": 147675
+  },
+  "acceptedInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/inventory.json",
+    "sha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2",
+    "bytes": 147675
+  },
+  "validation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/controller-validation.json",
+    "sha256": "2044cc2821cffd70589f6dd4a59a885ad90f77024f3aa1288a6ad01d7927aaed",
+    "bytes": 12799
+  },
+  "attemptCount": 1,
+  "retryCount": 0,
+  "completedAt": "2026-09-03T21:32:29.448Z"
+}

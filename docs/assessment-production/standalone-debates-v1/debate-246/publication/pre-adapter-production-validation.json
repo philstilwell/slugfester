@@ -1,0 +1,17 @@
+{
+  "status": "reader-fields-checked-adapter-not-yet-frozen",
+  "debateNumber": "246",
+  "command": "node scripts/validate-debates.mjs",
+  "exitCode": 1,
+  "diagnostic": [
+    "debates.245.sections.0.exchanges.2.con: must be an object",
+    "debates.245.sections.1.exchanges.2.con: must be an object",
+    "debates.245.sections.2.exchanges.2.con: must be an object",
+    "debates.245.sections.4.exchanges.1.con: must be an object",
+    "debates.245.sections.5.exchanges.2.pro: must be an object",
+    "debates.245.assessmentRubric: requires a matching JSON assessment ledger"
+  ],
+  "explanation": "The production validator uses the matching standalone ledger to recognize legitimate unpaired cards. That adapter is deliberately not frozen before rhetorical review completes. Every reported issue is this missing-adapter classification; all remaining reader-facing validations passed. The complete production validator must pass again after the final adapter is built.",
+  "limitsLoosened": false,
+  "scoresOrInventoryChanged": false
+}

@@ -1,0 +1,65 @@
+{
+  "status": "frozen-before-execution",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "isolationMethod": "two-fresh-built-in-subagents-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/judgments/judgment-packet.json",
+      "sha256": "484ce5041720324d3bf4d8af5ac4910f52050850bde19dbc68b4095e0480040b",
+      "bytes": 5017
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/inventory.json",
+      "sha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2",
+      "bytes": 147675
+    },
+    {
+      "path": ".assessment-cache/captions/uhke5_tk6N0/events.json",
+      "sha256": "3278dcf764f3ad8fc99cee91625b548bb4e9332ed871673ad346ca2b27381c7e",
+      "bytes": 395117
+    },
+    {
+      "path": ".assessment-cache/captions/uhke5_tk6N0/transcript.txt",
+      "sha256": "79d5e31e0a0b230dc671370bde57fb0117ab69ad92234555260287184a1fd3c3",
+      "bytes": 169371
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-a/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-b/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}
