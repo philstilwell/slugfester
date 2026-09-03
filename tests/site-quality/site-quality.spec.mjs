@@ -142,6 +142,13 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
 test("the rubric quality check offers six closed-by-default section examples", async ({ page }) => {
   await openRenderedPage(page, "/backend/");
 
+  const axisPeak = Number(
+    (await page.locator(".section-score-y-axis span").first().textContent())?.replaceAll(",", "")
+  );
+  const barCounts = (await page.locator(".section-score-bar-column > span").allTextContents())
+    .map((count) => Number(count.replaceAll(",", "")));
+  expect(axisPeak).toBeGreaterThanOrEqual(Math.ceil(Math.max(...barCounts) * 1.1));
+
   const accordion = page.locator(".rubric-extremes-accordion");
   await expect(accordion).not.toHaveAttribute("open", "");
   await accordion.locator("summary").click();
