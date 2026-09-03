@@ -5,7 +5,7 @@ async function openPage(page) {
   await page.goto("/", { waitUntil: "domcontentloaded" });
   await page.locator("main h1").first().waitFor();
   return {
-    trigger: page.getByRole("button", { name: "External Sites" }),
+    trigger: page.getByRole("button", { name: "External", exact: true }),
     links: page.locator("#external-sites-links")
   };
 }

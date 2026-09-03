@@ -422,7 +422,7 @@ function renderShell(content) {
         ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
         <span class="external-sites">
           <button class="external-sites-label" type="button" aria-expanded="false" aria-controls="external-sites-links">
-            External Sites <span class="external-sites-chevron" aria-hidden="true">▾</span>
+            External <span class="external-sites-chevron" aria-hidden="true">▾</span>
           </button>
           <span class="external-sites-links" id="external-sites-links" hidden>
             <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer" aria-labelledby="logfall-menu-name" aria-describedby="logfall-menu-description">

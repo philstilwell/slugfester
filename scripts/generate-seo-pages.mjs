@@ -42,7 +42,7 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260903-external-sites-menu-v1";
+const assetVersion = "20260903-external-button-v2";
 const landingAssetVersion = assetVersion;
 const interlocutorAssetVersion = assetVersion;
 const rankingsAssetVersion = assetVersion;
