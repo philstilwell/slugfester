@@ -420,23 +420,19 @@ function renderShell(content) {
         ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
         ${renderPrimaryNavLink("rankings", rankingsPath(), "Rankings", activeNavKey)}
         ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
-        <span class="external-sites" aria-label="External Sites">
-          <span class="external-sites-label">External Sites</span>
-          <span class="external-sites-links">
-            <span class="external-site-item">
-              <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer" aria-describedby="logfall-menu-popover">LogFall</a>
-              <span class="external-site-popover" id="logfall-menu-popover" role="tooltip">
-                <strong>LogFall</strong>
-                Logical fallacy reference used for Slugfester's fallacy labels and source links.
-              </span>
-            </span>
-            <span class="external-site-item">
-              <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer" aria-describedby="cogbias-menu-popover">CogBias</a>
-              <span class="external-site-popover" id="cogbias-menu-popover" role="tooltip">
-                <strong>CogBias</strong>
-                Cognitive bias reference used for Slugfester's bias labels and source links.
-              </span>
-            </span>
+        <span class="external-sites">
+          <button class="external-sites-label" type="button" aria-expanded="false" aria-controls="external-sites-links">
+            External Sites <span class="external-sites-chevron" aria-hidden="true">▾</span>
+          </button>
+          <span class="external-sites-links" id="external-sites-links" hidden>
+            <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer" aria-labelledby="logfall-menu-name" aria-describedby="logfall-menu-description">
+              <strong id="logfall-menu-name">LogFall <span aria-hidden="true">↗</span></strong>
+              <span class="external-site-description" id="logfall-menu-description">Logical fallacies explained with examples and practice tools.</span>
+            </a>
+            <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer" aria-labelledby="cogbias-menu-name" aria-describedby="cogbias-menu-description">
+              <strong id="cogbias-menu-name">CogBias <span aria-hidden="true">↗</span></strong>
+              <span class="external-site-description" id="cogbias-menu-description">Cognitive biases explained, with tools for clearer judgment.</span>
+            </a>
           </span>
         </span>
       </nav>
@@ -3931,7 +3927,60 @@ function shouldHandleInternally(link) {
   );
 }
 
+function setExternalSitesOpen(menu, open) {
+  const links = menu.querySelector(".external-sites-links");
+  menu.querySelector(".external-sites-label").setAttribute("aria-expanded", String(open));
+  links.hidden = !open;
+  if (open) {
+    links.style.right = "0px";
+    const bounds = links.getBoundingClientRect();
+    const offset = bounds.left < 16
+      ? bounds.left - 16
+      : Math.max(0, bounds.right - document.documentElement.clientWidth + 16);
+    links.style.right = `${offset}px`;
+  }
+}
+
+window.addEventListener("resize", () => {
+  const menu = document.querySelector(".external-sites");
+  if (menu) setExternalSitesOpen(menu, false);
+});
+
+document.addEventListener("pointerover", (event) => {
+  const menu = event.target.closest?.(".external-sites");
+  if (event.pointerType !== "mouse" || !menu || menu.contains(event.relatedTarget)) return;
+  setExternalSitesOpen(menu, true);
+});
+
+document.addEventListener("pointerout", (event) => {
+  const menu = event.target.closest?.(".external-sites");
+  if (event.pointerType !== "mouse" || !menu || menu.contains(event.relatedTarget)) return;
+  if (!menu.querySelector(".external-sites-links").contains(document.activeElement)) {
+    setExternalSitesOpen(menu, false);
+  }
+});
+
+document.addEventListener("focusout", (event) => {
+  const menu = event.target.closest?.(".external-sites");
+  if (menu && !menu.contains(event.relatedTarget)) setExternalSitesOpen(menu, false);
+});
+
+document.addEventListener("keydown", (event) => {
+  const menu = document.querySelector(".external-sites");
+  if (event.key !== "Escape" || !menu || menu.querySelector(".external-sites-links").hidden) return;
+  setExternalSitesOpen(menu, false);
+  if (menu.contains(document.activeElement)) menu.querySelector(".external-sites-label").focus();
+});
+
 document.addEventListener("click", (event) => {
+  const menu = document.querySelector(".external-sites");
+  const trigger = event.target.closest?.(".external-sites-label");
+  if (menu && trigger) {
+    setExternalSitesOpen(menu, trigger.getAttribute("aria-expanded") !== "true");
+    return;
+  }
+  if (menu && !menu.contains(event.target)) setExternalSitesOpen(menu, false);
+
   const link = event.target.closest("a");
   if (link?.matches(".skip-link")) {
     event.preventDefault();
