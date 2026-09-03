@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "178998fed007de94d43e71da7e5970eaf0b8fea2bfe67e2ba55bc6021bd47a43",
+    "bytes": 50478
+  },
+  "correctedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/output.json",
+    "sha256": "b708d5d7f4fc60e3d50e8c93aa97a65e02c505e5c56323076645a4e8fca539e6",
+    "bytes": 51937
+  },
+  "authorizedChanges": {
+    "cardTagArrays": [
+      "moveProse.pro-unlimited-parsimony.tags",
+      "moveProse.pro-conscious-foundation-counts-theistic.tags",
+      "moveProse.pro-best-explanation-until-rival.tags"
+    ],
+    "overallBlunderLinkArrays": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-3"
+    ],
+    "publicationAuditFields": [
+      "audit.tagsEmpty",
+      "audit.blunderLinksEmpty",
+      "audit.rhetoricalTagReviewCompleted",
+      "audit.acceptedMoveTags",
+      "audit.acceptedOverallBlunderLinks"
+    ],
+    "acceptedMoveTagCount": 3,
+    "acceptedOverallBlunderLinkCount": 2
+  },
+  "prohibitedChanges": {
+    "identity": 0,
+    "evidence": 0,
+    "inventory": 0,
+    "judgments": 0,
+    "adjudication": 0,
+    "scores": 0,
+    "descriptions": 0,
+    "critiques": 0,
+    "overallText": 0,
+    "logicalExtension": 0,
+    "quotes": 0
+  },
+  "reviewAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/rhetorical-tag-audit.json",
+    "sha256": "5a24add1853cabd111fa9d6cd56a646104f24266595e30926be97d7350b6537a",
+    "bytes": 142934
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/output.json",
+    "sha256": "b708d5d7f4fc60e3d50e8c93aa97a65e02c505e5c56323076645a4e8fca539e6",
+    "bytes": 51937
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "moveProse.pro-unlimited-parsimony.tags",
+        "moveProse.pro-conscious-foundation-counts-theistic.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "moveProse.pro-best-explanation-until-rival.tags",
+        "overall-pro-blunder-1"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "overall-pro-blunder-3",
+        "audit.tagsEmpty"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "audit.blunderLinksEmpty",
+        "audit.rhetoricalTagReviewCompleted"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "audit.acceptedMoveTags",
+        "audit.acceptedOverallBlunderLinks"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "tagChanges": 3,
+    "acceptedTagCount": 3,
+    "overallBlunderLinkChanges": 2,
+    "publicationAuditFieldChanges": 5,
+    "maximumWritableFieldsPerShard": 2,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "controllerRejectionsOfOverbroadOrDuplicateAcceptances": 0
+  },
+  "evidence": {
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/rhetorical-tag-audit.json",
+      "sha256": "5a24add1853cabd111fa9d6cd56a646104f24266595e30926be97d7350b6537a",
+      "bytes": 142934
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/output.json",
+      "sha256": "b708d5d7f4fc60e3d50e8c93aa97a65e02c505e5c56323076645a4e8fca539e6",
+      "bytes": 51937
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "a67aae1e99d41f9a84183d95fd6260159179e7be174892659102d74010decf08",
+      "bytes": 28796
+    }
+  }
+}

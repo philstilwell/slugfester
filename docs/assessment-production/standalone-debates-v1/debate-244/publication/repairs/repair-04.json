@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-record",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "completed-valid-deterministic-source-exactness-repair",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "ordinal": 4,
+  "repairType": "exact-caption-event-quote-repair",
+  "writableFields": [
+    "candidate.quotes.pro.text",
+    "sourceQuoteAudit.pro.text"
+  ],
+  "before": "theism being the most likely explanation until we find a better option",
+  "after": "it is the best explanation",
+  "sourceEventText": "it is the best explanation",
+  "operation": "Replace only the overlong paraphrastic quote and its mirrored audit field with an exact contiguous caption-event string.",
+  "attempts": 1,
+  "retries": 0,
+  "maximumWritableFields": 2,
+  "deterministic": true,
+  "scoreBlind": true,
+  "directIncrementalCostUsd": 0
+}

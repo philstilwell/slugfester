@@ -103680,6 +103680,469 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "244",
+    "id": "jones-schmid-contingency-god-2022",
+    "date": "2026-09-03",
+    "title": "Michael Jones vs Joseph Schmid: Does the Contingency Argument Support God? (2022)",
+    "label": "Contingency, idealism, and a necessary mind",
+    "topicCategory": "cosmological-arguments",
+    "youtubeUrl": "https://www.youtube.com/watch?v=mSxDzyox0CA",
+    "duration": "1 hr 42 min",
+    "motion": "Does the contingency argument provide good reason to believe that the necessary foundation of reality is God?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "This assessment uses complete automatic English YouTube captions covering both openings, the direct exchange, and substantive contingency-focused audience questions. Marlon Wilson’s introductions, question-reading, timekeeping, and promotion were excluded; all 22 selected participant moves had high-confidence attribution, so no audio verification was required.",
+    "scoringNote": "These AI-generated scores were computed exactly once from a frozen 22-move ledger after two isolated primary judgments and anonymous adjudication of all three extracted disagreements, including both burden-completion judgments. The displayed 73–87 result is immutable; publication prose and rhetorical-tag review cannot change it.",
+    "sides": {
+      "pro": {
+        "name": "Contingency together with idealist and explanatory considerations supports a necessary divine mind",
+        "speaker": "Michael Jones",
+        "color": "teal"
+      },
+      "con": {
+        "name": "A necessary foundation may exist, but the presented argument does not adequately identify that foundation as God",
+        "speaker": "Joseph Schmid",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 87,
+      "winner": "con"
+    },
+    "summary": "Schmid won by fourteen points because his focused underdetermination objections repeatedly exposed unsupported transitions in Jones’s ambitious, wide-ranging explanatory case.",
+    "quotes": {
+      "pro": {
+        "text": "it is the best explanation",
+        "context": "Jones closes by presenting theism as a provisional inference to the best explanation, explicitly withholding proof while demanding a competitively stronger account."
+      },
+      "con": {
+        "text": "that's where I tend to jump ship",
+        "context": "Schmid grants a generic necessary concrete foundation, then locates his disagreement precisely at the second-stage inference from necessity to Godlike attributes."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "stage-one-stage-two",
+        "title": "What follows from a necessary foundation",
+        "timebox": "8:39–22:50",
+        "score": {
+          "pro": 76,
+          "con": 87
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-stage-structure",
+              "time": "8:39",
+              "role": "constructive",
+              "words": "Jones divides the contingency case into a shared necessary-foundation stage and a disputed second stage identifying that foundation as an immaterial, perfect divine mind.",
+              "score": 77,
+              "critique": "Strongest feature: Jones clearly separates the modest necessary-foundation inference from the controversial divine-identification inference, accurately forecasting where substantive disagreement will concentrate and giving listeners an intelligible argumentative roadmap. Principal limitation: The decisive transition remains announced rather than demonstrated, because describing the terminus as an immaterial, absolutely perfect mind does not independently establish why necessity selects mentality, perfection, creative agency, or divinity. Live burden: Jones must supply comparative reasons showing that the explanatory foundation is more plausibly a conscious perfect creator than Schmid’s broader class of necessary concrete realities, while avoiding reliance on definitions that simply incorporate the desired conclusion. Locked score: The score of 77 appropriately rewards exceptional framing, responsiveness, precision, and charitable recognition of stage-one agreement, while the weaker evidential warrant reflects the still-uncompleted identification central to the motion.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-stage-two-underdetermination",
+              "time": "19:18",
+              "role": "reply",
+              "words": "Schmid grants that contingent things may indicate necessary concrete foundations but argues this concession leaves the separate second-stage God-identification inference entirely unresolved.",
+              "score": 88,
+              "critique": "Strongest feature: Schmid grants Jones’s broad stage-one conclusion and then isolates the exact inferential burden at issue, demonstrating that necessity and concreteness alone remain compatible with one or several foundations lacking distinctively divine characteristics. Principal limitation: This opening diagnosis establishes underdetermination structurally but does not yet rank particular alternatives or explain which evidential standards should govern the comparison between a perfect mind and competing necessary realities. Live burden: Schmid must keep credible nondivine foundations available through the later exchanges and show that Jones’s arguments from unlimitedness, idealism, consciousness, and explanatory scope fail to close the acknowledged second-stage gap. Locked score: The score of 88 reflects unusually strong coherence, direct responsiveness, precision, calibration, and motion-level relevance, with slightly lower evidential warrant because the detailed competitive case necessarily arrives in subsequent moves.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-unlimited-parsimony",
+              "time": "10:20",
+              "role": "constructive",
+              "words": "Jones argues an unlimited perfect being is simpler because quasi-great foundations contain arbitrary limits that introduce additional unexplained brute facts requiring further explanation.",
+              "score": 74,
+              "critique": "Strongest feature: Jones gives the perfect-foundation claim an explanatory mechanism, arguing that unexplained limitation adds complexity whereas unrestricted perfection eliminates stopping points and consolidates the terminus under one principle. Principal limitation: The inference treats absence of limits as equivalent to possession of maximal attributes, without establishing that each property applies to the foundation or that an unlimited package is simpler than restricted alternatives. Live burden: Jones must justify the bridge from avoiding arbitrary quantitative ceilings to omnipotence, knowledge, goodness, and mentality, then compare the auxiliary commitments required by that package against those required by quasi-great or impersonal foundations. Locked score: The score of 74 credits the move’s relevance, clarity, and contact with the perfection burden, while its coherence and warrant register the unsupported equivalence between fewer limits and divine perfection.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Jones moves from lacking arbitrary limits to possessing maximal power, knowledge, goodness, and mentality."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "con-competing-foundations",
+              "time": "20:37",
+              "role": "reply",
+              "words": "Schmid lists diverse naturalistic and nonnaturalistic necessary foundations, arguing their varied simplicity and predictive consequences prevent confident selection of a divine mind.",
+              "score": 85,
+              "critique": "Strongest feature: Schmid converts abstract underdetermination into a competitive field, distinguishing physical, axiological, modal, and conscious possibilities whose simplicity and predictive consequences could differ from the proposed perfect divine mind. Principal limitation: Listing heterogeneous candidates shows logical availability more readily than serious explanatory viability, because several alternatives receive no developed account of how they ground contingent reality or predict the phenomena Jones invokes. Live burden: Schmid must demonstrate that at least some named rivals remain competitive after evaluating explanatory reach, intrinsic complexity, brute commitments, consciousness, value, and the production of a contingent cosmos rather than relying on possibility alone. Locked score: The score of 85 rewards excellent responsiveness, calibration, burden relevance, and broad evidential engagement, while leaving room below his strongest moves because the alternatives are introduced more than defended.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "perfection-simplicity-and-brute-facts",
+        "title": "Whether unlimited perfection is simpler",
+        "timebox": "12:39–28:38",
+        "score": {
+          "pro": 73,
+          "con": 89
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-perfect-being-explanatory-scope",
+              "time": "12:39",
+              "role": "constructive",
+              "words": "Jones says one absolute-perfection posit unifies divine attributes while explaining consciousness, morality, natural laws, and their continued cosmic support for conscious creatures.",
+              "score": 73,
+              "critique": "Strongest feature: Jones extends the simplicity comparison beyond verbal economy, proposing that absolute perfection unifies divine attributes while supplying a source for consciousness, morality, stable natural laws, and cosmic production. Principal limitation: The move assumes rather than derives the perfection-to-attribute connections, and its explanatory applications risk becoming separate auxiliary claims about goodness, consciousness, power, desires, and lawmaking instead of consequences of one property. Live burden: Jones must specify how absolute perfection entails the relevant attributes and worldly outcomes, show that those entailments are not brute principles, and compare their predictive discrimination against an impersonal necessary foundation. Locked score: The score of 73 recognizes explanatory ambition, relevance, and organization, but the lower warrant and calibration values appropriately reflect several asserted derivations and insufficient engagement with alternative accounts of the same phenomena.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-unlimited-needs-auxiliaries",
+              "time": "23:23",
+              "role": "reply",
+              "words": "Schmid argues the word unlimited is syntactically simple, yet deriving knowledge, power, and goodness requires complex auxiliary hypotheses that lower prior probability.",
+              "score": 88,
+              "critique": "Strongest feature: Schmid distinguishes a short verbal description from a economical theory, observing that omniscience, omnipotence, perfect goodness, mentality, and creative intentions require bridging principles rather than emerging automatically from the word unlimited. Principal limitation: The probabilistic language remains qualitative because no measure of conceptual complexity or prior probability is offered for comparing the divine package with the heterogeneous necessary foundations he keeps available. Live burden: Schmid must sustain this auxiliary-hypothesis accounting across Jones’s claims about perfection and explanatory scope, while acknowledging any genuine unification achieved if a defensible perfection principle entails several attributes together. Locked score: The score of 88 fits the move’s powerful coherence, warrant, precision, direct responsiveness, and central relevance, with limited remaining headroom because the complexity comparison identifies necessary bookkeeping without fully quantifying its comparative result.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-perfections-remain-brute",
+              "time": "25:51",
+              "role": "reply",
+              "words": "Schmid contends that selecting which properties qualify as perfections introduces primitive principles, so perfect-being theory has not reduced brute facts without explaining them.",
+              "score": 88,
+              "critique": "Strongest feature: Schmid targets the architecture of Jones’s unification proposal, arguing that a perfect-being theory cannot count every attribute as one fact unless it explains why properties qualify as perfections and cohere. Principal limitation: The objection does not distinguish controversial perfection criteria from secure candidates, so it may overstate the number of independent brute commitments if some attributes follow from a more general evaluative principle. Live burden: Schmid must show that the rules selecting knowledge, power, goodness, consciousness, and agency remain independent or unexplained to erase Jones’s claimed simplicity advantage over rival necessary foundations. Locked score: The score of 88 accurately reflects a responsive, precise, charitable, and evidentially substantial challenge to the advertised brute-fact reduction, while preserving modest uncertainty about whether a developed theory of perfection could generate genuine compression.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "con-unlimited-does-not-entail-perfect",
+              "time": "27:08",
+              "role": "reply",
+              "words": "Schmid observes that lacking a property can make a foundation unlimited regarding it, so absence of limitation cannot entail maximal goodness or perfection.",
+              "score": 90,
+              "critique": "Strongest feature: Schmid identifies an equivocation in the unlimitedness inference, because something can lack a finite ceiling by lacking the property altogether, leaving no route from unrestrictedness to maximal goodness, knowledge, or power. Principal limitation: The argument establishes a gap but does not exclude reasons for thinking the necessary foundation possesses the relevant properties before their magnitudes are considered, which Jones could attempt through explanatory scope. Live burden: Schmid must show that Jones’s independent appeals to consciousness, value, and cosmic order do not first establish property possession strongly enough for an anti-limit principle to support maximality. Locked score: The score of 90 appropriately marks the debate’s strongest move for its coherence, warrant, responsiveness, precision, and pressure on the central perfection bridge, tempered only by the possibility of independent property-establishing arguments.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "idealist-route-to-mind",
+        "title": "Whether idealism identifies a necessary divine mind",
+        "timebox": "14:49–48:39",
+        "score": {
+          "pro": 72,
+          "con": 83
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-idealism-to-necessary-mind",
+              "time": "14:49",
+              "role": "constructive",
+              "words": "Jones argues physical reality reduces to mind-dependent information, making contingent minds and matter more naturally grounded in a necessary consciousness than physical substance.",
+              "score": 71,
+              "critique": "Strongest feature: Jones offers a substantive route from contingency to mentality by combining mind-dependent information, the acknowledged existence of consciousness, and ontological continuity between finite experience and a necessary conscious foundation. Principal limitation: The move compresses disputed claims about idealism, physics, information, and dependence into one progression, without establishing that informational description entails mind dependence or that a necessary consciousness possesses personal divine attributes. Live burden: Jones must defend idealism independently, clarify the relevant notion of information, explain how contingent minds arise from the foundational mind, and show why this foundation is God rather than impersonal consciousness. Locked score: The score of 71 rewards direct engagement with the central mind-identification burden and meaningful explanatory structure, while low warrant, precision, and calibration capture the controversial physics claims and multiple unsupported transitions.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-common-sense-against-idealism",
+              "time": "31:49",
+              "role": "reply",
+              "words": "Schmid argues ordinary external-world intuitions make theistic idealism predict widespread innocent human error about reality’s basic nature and God’s relation to creatures.",
+              "score": 75,
+              "critique": "Strongest feature: Schmid formulates an internal predictive challenge rather than merely asserting realism, asking why a good divine idealist foundation would permit widespread, innocent, and apparently natural resistance to the mind-first character of reality. Principal limitation: Common-sense distribution and its evidential authority are not established, and divine permission of metaphysical error may have explanations unrelated to the truth of idealism, making the adverse prediction comparatively weak. Live burden: Schmid must show that external-world intuitions are robust across cultures, epistemically trustworthy in this domain, and significantly more expected under realism than under theistic idealism after plausible divine purposes are considered. Locked score: The score of 75 credits careful charity, clarity, relevance, and a genuine probabilistic objection, while its lower warrant and burden completion reflect dependence on unverified sociological and theological expectations.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-idealist-intuitions-cultural",
+              "time": "41:24",
+              "role": "reply",
+              "words": "Jones responds that anti-idealist intuitions may reflect inherited Western culture, since cross-cultural mind-first metaphysics substantially weakens Schmid’s appeal to universal common sense.",
+              "score": 79,
+              "critique": "Strongest feature: Jones directly challenges the empirical generalization supporting Schmid’s common-sense objection, noting that culturally prominent mind-first traditions make allegedly universal realist intuitions less secure and reduce their evidential force against idealism. Principal limitation: The existence of idealist traditions does not establish ordinary pretheoretical intuition within those cultures, distinguish elite metaphysical doctrine from common cognition, or provide comparative evidence about how widespread each intuition actually is. Live burden: Jones must substantiate the cross-cultural distribution claim and explain why doctrinal diversity should defeat rather than merely qualify Schmid’s proposed adverse prediction for theistic idealism. Locked score: The score of 79 reflects strong responsiveness, coherence, and charitable counterpressure on a subsidiary objection, with reduced warrant and precision because the cultural evidence is asserted generally rather than documented or carefully operationalized.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-idealism-still-underdetermines-theism",
+              "time": "46:36",
+              "role": "reply",
+              "words": "Schmid grants idealism provisionally but argues fundamental conscious properties, impersonal consciousness, or Brahman could fit it without yielding a personal, free, good God.",
+              "score": 88,
+              "critique": "Strongest feature: Schmid grants Jones’s disputed idealism for argument’s sake and demonstrates that even this favorable premise leaves several mind-first ontologies available, including impersonal consciousness, conscious properties, and impersonal Brahman. Principal limitation: The alternatives are characterized broadly and their capacity to ground contingent minds or physical information is not developed, so the move establishes underdetermination more securely than equal explanatory performance. Live burden: Schmid must preserve these alternatives against Jones’s simplicity and continuity replies while showing that personality, freedom, goodness, and creative agency require further evidence beyond consciousness being fundamental. Locked score: The score of 88 rewards exceptional charity, responsiveness, precision, and direct relevance to divine identification, with slightly lower warrant than the maximum because the rival idealist mechanisms remain largely schematic.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-conscious-foundation-counts-theistic",
+              "time": "48:03",
+              "role": "reply",
+              "words": "Jones says a simple mind-first ontology should preserve consciousness at its necessary foundation, which already constitutes a broadly theistic explanation rather than impersonal nonmind.",
+              "score": 67,
+              "critique": "Strongest feature: Jones clarifies that his immediate target is a broadly theistic conscious foundation, using ontological continuity and simplicity to resist terminating a mind-first account in something wholly impersonal or nonmental. Principal limitation: Calling a necessary consciousness theistic relaxes the original identification burden, while the inference from fundamental consciousness to a unified personal mind remains unsupported and does not recover freedom, goodness, creative agency, or perfection. Live burden: Jones must distinguish conscious properties, impersonal consciousness, and a personal subject, then establish why the simplest necessary mental foundation has the richer features associated with God. Locked score: The score of 67 appropriately credits relevance and an intelligible continuity intuition, but marks serious deficiencies in coherence, warrant, responsiveness, and precision because the reply redescribes the destination without defeating Schmid’s idealist alternatives.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Jones calls necessary consciousness broadly theistic despite not deriving personality, freedom, goodness, agency, or perfection."
+                }
+              ]
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "divine-limits-and-trinitarian-replies",
+        "title": "Whether divine plurality defeats the anti-limit argument",
+        "timebox": "51:16–58:02",
+        "score": {
+          "pro": 70,
+          "con": 89
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-trinity-perfect-community",
+              "time": "51:16",
+              "role": "reply",
+              "words": "Jones proposes three divine persons as the minimal complete loving community and experiential structure required for perfect self-understanding, potentially explaining divine plurality.",
+              "score": 66,
+              "critique": "Strongest feature: Jones attempts to convert the Trinity’s numerical specificity from an apparent arbitrary limit into a perfection-based consequence, connecting three persons with complete interpersonal love and an external perspective on self-understanding. Principal limitation: Finite counseling analogies do not establish needs within an omniscient being, and neither perfect love nor experiential self-knowledge is shown to require exactly three rather than two, four, or indefinitely many persons. Live burden: Jones must derive the minimum of three from independently defended divine perfections without presupposing creaturely cognitive limitations or introducing an auxiliary numerical principle inconsistent with his anti-arbitrariness rationale. Locked score: The score of 66 reflects admirable responsiveness and unusually charitable engagement with the objection, while the low coherence and warrant scores register the speculative analogy and missing exact-number derivation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-omniscience-removes-third-perspective-need",
+              "time": "53:16",
+              "role": "reply",
+              "words": "Schmid argues finite persons need outside perspectives because they are limited, whereas an essentially omniscient being gains no knowledge from additional persons.",
+              "score": 89,
+              "critique": "Strongest feature: Schmid exposes the mismatch between Jones’s counseling analogy and the proposed divine case, since an essentially omniscient person cannot acquire overlooked truths or corrective perspectives in the manner characteristic of limited human agents. Principal limitation: The reply focuses on propositional information and therefore does not by itself eliminate Jones’s later distinction between knowing every truth and realizing irreducibly first-person or relational forms of experience. Live burden: Schmid must explain why experiential self-knowledge either belongs completely to one omniscient person or cannot generate a principled requirement for multiple divine persons, especially exactly three. Locked score: The score of 89 rewards the move’s exceptional logical focus, direct responsiveness, evidential force, and precision against the analogy actually offered, while allowing a narrow opening for nonpropositional experience.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-experiential-self-knowledge-distinction",
+              "time": "55:02",
+              "role": "reply",
+              "words": "Jones distinguishes knowing every true proposition from possessing experiential self-knowledge, arguing multiple divine persons can realize relational perfection without correcting informational ignorance.",
+              "score": 74,
+              "critique": "Strongest feature: Jones directly answers the omniscience objection by distinguishing exhaustive propositional knowledge from first-person and relational experience, thereby explaining how plurality might add a perfection without repairing any informational deficiency. Principal limitation: The distinction establishes conceptual room for plural experience but does not show that one divine person lacks experiential self-knowledge, that experiences can transfer across persons, or that exactly three persons are optimal. Live burden: Jones must articulate the relevant experiential good, demonstrate its necessity for absolute perfection, and derive the Trinitarian count without allowing the same rationale to favor four or indefinitely many perspectives. Locked score: The score of 74 credits precise, charitable, and responsive refinement of the proposal, while coherence and warrant reflect the unresolved connection between experiential plurality, perfection, and a principled stopping point.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-person-count-regress",
+              "time": "56:57",
+              "role": "reply",
+              "words": "Schmid argues that if additional personal perspectives improve divine self-understanding, four should outperform three, producing indefinite plurality or an arbitrary unexplained numerical cutoff.",
+              "score": 89,
+              "critique": "Strongest feature: Schmid turns Jones’s experiential rationale against the proposed numerical limit, showing that if another perspective increases perfect self-understanding, each further perspective seemingly supplies another improvement without a principled stopping point. Principal limitation: The regress depends on experiences remaining cumulatively valuable after a complete relational structure is reached, whereas Jones could attempt to identify a kind of community or relation instantiated fully by three. Live burden: Schmid must test and defeat any principled saturation account while maintaining that an auxiliary cutoff would reintroduce exactly the arbitrary limitation Jones’s perfection argument was designed to avoid. Locked score: The score of 89 reflects outstanding coherence, warrant, responsiveness, precision, and burden relevance, with a small reservation because a sufficiently developed noncumulative relational model could block indefinite multiplication.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "comparative-explanatory-power",
+        "title": "Whether theism best explains consciousness and reality",
+        "timebox": "1:00:50–1:24:37",
+        "score": {
+          "pro": 76,
+          "con": 89
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "pro-parsimony-balanced-with-scope",
+              "time": "1:00:50",
+              "role": "reply",
+              "words": "Jones argues simplicity must be balanced against explanatory scope, with theism’s brute commitments potentially explaining consciousness, value, laws, and cosmic production together.",
+              "score": 79,
+              "critique": "Strongest feature: Jones correctly reframes theoretical comparison as a balance between economy and explanatory reach, emphasizing that a richer ontology can outperform a thinner rival if it unifies consciousness, value, natural laws, and cosmic production. Principal limitation: The move inventories desired explanatory targets without demonstrating that theism predicts them, specifying the relevant divine mechanisms, or comparing its total auxiliary commitments against developed rival accounts on a common standard. Live burden: Jones must convert broad compatibility into discriminating explanation by showing why these phenomena are appreciably more expected given a perfect conscious creator and why the required intentions or bridging principles are not independent brute facts. Locked score: The score of 79 rewards strong coherence, responsiveness, calibration, and comparative framing, while the lower evidential warrant appropriately reflects the promissory explanatory inventory.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-consciousness-construction-parity",
+              "time": "1:03:48",
+              "role": "reply",
+              "words": "Schmid contends theistic idealism merely replaces matter-to-mind emergence with the equally unexplained construction of many distinct finite subjects from one unlimited consciousness.",
+              "score": 89,
+              "critique": "Strongest feature: Schmid identifies a precise parity problem for Jones’s ontological-continuity advantage, because moving from one unlimited divine subject to numerous bounded subjects still requires an account of individuation, limitation, privacy, and distinct experiential perspectives. Principal limitation: The objection does not establish equal difficulty conclusively, since same-kind derivation may reduce some metaphysical discontinuity even when the mechanism of subject construction remains incomplete. Live burden: Schmid must compare the residual large-mind-to-small-minds gap with the physical-to-consciousness gap rather than treating both as automatically equivalent, while pressing Jones for concrete differentiation mechanics. Locked score: The score of 89 reflects coherence, warrant, responsiveness, precision, and relevance to the consciousness claim, with only modest uncertainty about whether ontological continuity supplies a genuine but limited advantage.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-consciousness-ontological-continuity",
+              "time": "1:08:28",
+              "role": "reply",
+              "words": "Jones argues consciousness-from-consciousness preserves qualitative ontology better than experience-from-quantitative matter, while dissociation models finite minds as differentiated experiential centers within greater consciousness.",
+              "score": 80,
+              "critique": "Strongest feature: Jones supplies a clear comparative intuition and a candidate model, arguing that consciousness grounded in consciousness preserves qualitative ontology whereas physicalism must derive subjective experience from fundamentally quantitative properties. Principal limitation: Dissociation is borrowed from relations among finite mental processes and does not explain how an unlimited subject produces numerically distinct, bounded centers with private ignorance, embodiment, and apparently independent agency. Live burden: Jones must develop dissociation beyond analogy into a mechanism that predicts finite subject boundaries and demonstrate that its unexplained structure is smaller than the emergence problem attributed to physicalism. Locked score: The score of 80 rewards strong responsiveness, coherence, charity, and direct comparative relevance, while the lower warrant and precision reflect the substantial distance between an evocative clinical model and a worked metaphysical explanation.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "con-dissociation-is-descriptive",
+              "time": "1:11:27",
+              "role": "reply",
+              "words": "Schmid argues an unlimited supernatural mind remains unlike finite minds, and calling their emergence dissociation labels the transition without illuminating its mechanism.",
+              "score": 88,
+              "critique": "Strongest feature: Schmid directly evaluates the promised explanatory payoff, emphasizing that shared mentality does not erase the enormous differences between an unlimited divine mind and bounded creaturely subjects, while dissociation may merely name their connection. Principal limitation: Demanding a detailed mechanism may set an excessively strict standard for metaphysical explanation unless rival physicalist or emergent accounts are held to the same requirement and explanatory understanding admits structural unification. Live burden: Schmid must show that the dissociation model supplies no independently testable constraints or comparative compression, while fairly crediting whatever limited advantage same-kind grounding offers over qualitative emergence. Locked score: The score of 88 reflects outstanding responsiveness, precision, calibration, and evidential pressure on Jones’s specific analogy, with slight room below the maximum because comparative standards for explanatory illumination remain contestable.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "pro-best-explanation-until-rival",
+              "time": "1:23:20",
+              "role": "reply",
+              "words": "Jones concludes theism remains rationally preferable as the best available explanation despite residual brute facts, unless critics provide a better overall rival.",
+              "score": 65,
+              "critique": "Strongest feature: Jones appropriately presents theism as a defeasible inference to the best explanation rather than a proof, acknowledges residual brute facts, and correctly notes that theoretical judgment should be comparative rather than perfectionistic. Principal limitation: He shifts the practical burden toward skeptics without answering Schmid’s developed rival-foundation, auxiliary-complexity, idealist-underdetermination, person-count, and dissociation objections, so asserting no better option has appeared does not establish comparative superiority. Live burden: Jones must evaluate those objections and alternatives on explicit criteria, demonstrating theism’s net advantage rather than treating absence of a fully articulated replacement as sufficient support. Locked score: The score of 65 recognizes clarity, modesty, and some comparative relevance, while the low coherence, warrant, responsiveness, and burden values register the conclusion’s failure to resolve the debate’s accumulated challenges.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Jones says he will believe theism remains best until someone offers a better explanation of reality."
+                }
+              ]
+            },
+            "con": null
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 73,
+        "strengths": [
+          "Jones clearly separated the shared necessary-foundation stage from the disputed divine-identification stage, keeping the central motion visible throughout the exchange.",
+          "His case pursued genuine explanatory integration across consciousness, value, natural laws, cosmic production, and perfection rather than offering mere logical compatibility.",
+          "Jones responded charitably and constructively, especially by distinguishing propositional omniscience from experiential knowledge and proposing ontological continuity through dissociation."
+        ],
+        "blunders": [
+          {
+            "text": "The crucial inference from an unlimited foundation to possession of maximal goodness, knowledge, and power was asserted without establishing property applicability.",
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
+              }
+            ]
+          },
+          {
+            "text": "The idealist route compressed controversial claims about physics, information, mind dependence, personal consciousness, and divinity into transitions receiving insufficient independent support.",
+            "links": []
+          },
+          {
+            "text": "The closing best-explanation claim did not comparatively answer Schmid’s developed alternatives and objections, effectively demanding a replacement before completing Jones’s own burden.",
+            "links": [
+              {
+                "label": "Argument from ignorance",
+                "url": "https://logfall.com/fallacies/argument-from-ignorance/"
+              }
+            ]
+          }
+        ]
+      },
+      "con": {
+        "score": 87,
+        "strengths": [
+          "Schmid repeatedly granted provisional premises before showing that necessity, unlimitedness, and even idealism still underdetermined the distinctively divine conclusion.",
+          "His auxiliary-complexity and property-applicability objections directly challenged the claimed simplicity advantage instead of merely listing conceivable alternative foundations.",
+          "The omniscience and person-count replies exposed concrete tensions in the Trinitarian explanation while preserving unusually high precision, responsiveness, and charity."
+        ],
+        "blunders": [
+          {
+            "text": "Several competing necessary foundations were listed schematically without enough mechanism or comparative evidence to establish that they were genuinely explanatory rivals.",
+            "links": []
+          },
+          {
+            "text": "The common-sense objection relied on unverified claims about widespread realist intuition and uncertain expectations concerning what a good divine idealist would permit.",
+            "links": []
+          },
+          {
+            "text": "The construction-parity critique risked understating a possible ontological-continuity advantage by treating two incompletely explained transitions as approximately equivalent too quickly.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "A necessary conscious foundation is the best available explanation when simplicity is assessed through unified generative structure rather than description length alone.",
+          "premises": [
+            "Contingent reality requires or strongly indicates at least one necessary concrete explanatory foundation, a stage that both debaters substantially accept.",
+            "Conscious experience is undeniable data, and an explanation preserving consciousness at the foundational level avoids deriving qualitative subjectivity from wholly nonexperiential quantities.",
+            "A perfection principle can count as theoretical compression only if it independently generates knowledge, power, goodness, and creative agency rather than stipulating them separately.",
+            "A successful mind-first account must provide constraints explaining how one foundational consciousness differentiates finite subjects, including their boundaries, ignorance, embodiment, and agency.",
+            "If the conscious perfect-foundation model explains consciousness, value, lawlike order, and contingent production with fewer independent bridging principles than live rivals, it gains comparative support."
+          ],
+          "conclusion": "Therefore, conditional on developed perfection and subject-differentiation mechanisms outperforming rivals, contingency provides defeasible reason to identify reality’s necessary foundation as divine mind.",
+          "notice": "AI-generated strengthening based on the debate’s locked participant arguments; it does not affect participant scores."
+        },
+        "newArguments": [
+          {
+            "title": "Constraint-based divine prediction",
+            "text": "A stronger theistic comparison could replace a loose list of explained phenomena with a constraint test. Begin with a necessary mind whose goodness, rationality, and power are derived from one defended perfection principle. Then ask what worlds such a foundation should prefer: worlds with stable discoverable regularities, morally significant agents, genuine causal participation, and environments permitting knowledge. These features would not be guaranteed, but the package would narrow expectations more than the bare claim that some necessary reality exists. Rival foundations should face the identical test, specifying what their intrinsic nature predicts about laws, consciousness, and value. If the divine model yields tighter expectations through fewer independent preference rules, its explanatory scope becomes evidential rather than merely retrospective compatibility."
+          },
+          {
+            "title": "Layered subject differentiation",
+            "text": "The dissociation proposal could be strengthened by separating three explanatory tasks that the debate treated together. First, a boundary rule must explain why streams of experience become mutually inaccessible. Second, an embodiment rule must connect each bounded stream to a stable informational perspective within the physical order. Third, an agency rule must explain why those streams develop partially independent deliberation while remaining grounded in one consciousness. A theistic idealist could propose that a rational foundational mind intentionally instantiates all three constraints to create finite centers capable of discovery and relationship. This remains speculative, but it states concrete mechanics and exposes where evidence is needed. Success would answer the charge that dissociation merely labels large-mind-to-small-minds emergence."
+          },
+          {
+            "title": "Nonarbitrary maximality test",
+            "text": "Jones’s anti-limit reasoning becomes more defensible if applied only after property relevance is established. For each proposed divine attribute, first show that the explanatory role of the foundation requires the corresponding property: producing all contingent reality requires extensive causal capacity, grounding rational structure requires intelligence, and grounding objective value requires evaluative adequacy. Next ask whether any finite ceiling on that already relevant capacity has an independent explanation. Only unexplained ceilings count against a restricted foundation; properties with no demonstrated relevance receive no automatic maximum. This two-stage procedure avoids inferring goodness from mere lack of limits. It also creates a transparent comparison: a quasi-great rival can defeat maximality by explaining its boundary, while unexplained restrictions reduce its parsimony."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The contingency argument supports at most a generic necessary foundation because each proposed route to a divine mind requires unresolved auxiliary principles and excludes no serious alternatives.",
+          "premises": [
+            "Granting a necessary concrete foundation does not determine whether there is one foundation or several, nor whether any foundation is mental, personal, free, good, or creative.",
+            "Unlimitedness cannot generate maximal attributes until the relevant properties are shown to apply, and lacking a property also lacks a finite limit in that respect.",
+            "Perfect-being simplicity depends on unexplained principles selecting perfections and connecting them to worldly outcomes, so short description length does not establish low theoretical complexity.",
+            "Idealism, even if granted, remains compatible with impersonal consciousness, conscious properties, or other mind-first foundations lacking the attributes required for God.",
+            "The proposed Trinitarian and dissociative mechanisms leave numerical cutoff and finite-subject construction unexplained, weakening the claimed explanatory advantage over rivals."
+          ],
+          "conclusion": "Therefore, the presented second-stage case does not provide adequate comparative reason to identify the conceded necessary foundation specifically as God.",
+          "notice": "AI-generated strengthening based on the debate’s locked participant arguments; it does not affect participant scores."
+        },
+        "newArguments": [
+          {
+            "title": "Auxiliary commitment ledger",
+            "text": "Schmid’s simplicity objection could be made operational by constructing an auxiliary commitment ledger for every candidate foundation. The divine-mind model must record separate principles connecting perfection to mentality, knowledge, power, goodness, freedom, creative choice, law selection, and finite consciousness. An impersonal rival must likewise record whatever principles connect its nature to contingent production and observed structure. Shared commitments, such as a rule explaining why necessity grounds contingency, cancel from the comparison. The remaining independent principles can then be assessed for specificity and predictive restriction rather than sentence length. This procedure does not assume that theism is complex. It shows exactly what Jones must derive from a single principle before claiming unification and prevents either side from hiding complexity inside an evocative label."
+          },
+          {
+            "title": "Identification ladder",
+            "text": "The second-stage burden can be represented as an identification ladder with independently defended rungs. From necessary foundation, the argument must reach consciousness; from consciousness, a unified subject; from subjecthood, agency and freedom; from agency, creative responsibility for contingent reality; and from there, knowledge, power, and goodness sufficient for God. Evidence supporting one rung cannot automatically complete later rungs. Idealism might support consciousness while leaving unity and personality open. Cosmic production might support power while leaving goodness open. By requiring a likelihood comparison at every transition, this ladder explains why a generic foundation can remain probable even when several divine features receive partial support. It also reveals precisely which additional evidence would change the conclusion rather than resting on global skepticism."
+          },
+          {
+            "title": "Finite-perspective prediction test",
+            "text": "A mind-first divine theory should predict not merely that finite subjects exist, but why their perspectives have the boundaries actually observed. Creatures display private access, severe ignorance, dependence on localized bodies, disagreement, cognitive error, and limited control. An unlimited foundational consciousness could in principle generate innumerable alternative partitions with different informational access and agency. A developed theory therefore needs a selection rule favoring this pattern. Dissociation supplies a name for separation but not yet that rule. Competing physical or neutral foundations face their own emergence burdens, so the comparison should ask which theory assigns higher probability to these specific limitations with fewer adjustable assumptions. Until the divine model constrains the partition, consciousness remains compatible evidence rather than discriminating support."
+          }
+        ]
+      }
+    }
   }
 ];
 

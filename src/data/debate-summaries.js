@@ -11338,5 +11338,52 @@ export const debateSummaries = [
         "title": "Logic, God, and explanatory power"
       }
     ]
+  },
+  {
+    "id": "jones-schmid-contingency-god-2022",
+    "number": "244",
+    "title": "Michael Jones vs Joseph Schmid: Does the Contingency Argument Support God?",
+    "year": 2022,
+    "label": "Contingency, idealism, and a necessary mind",
+    "date": "2026-09-03",
+    "duration": "1 hr 42 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=mSxDzyox0CA",
+    "motion": "Does the contingency argument provide good reason to believe that the necessary foundation of reality is God?",
+    "summary": "Schmid won by fourteen points because his focused underdetermination objections repeatedly exposed unsupported transitions in Jones’s ambitious, wide-ranging explanatory case.",
+    "topicCategory": "cosmological-arguments",
+    "sides": {
+      "pro": {
+        "name": "Contingency together with idealist and explanatory considerations supports a necessary divine mind",
+        "speaker": "Michael Jones",
+        "color": "teal"
+      },
+      "con": {
+        "name": "A necessary foundation may exist, but the presented argument does not adequately identify that foundation as God",
+        "speaker": "Joseph Schmid",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 87,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "What follows from a necessary foundation"
+      },
+      {
+        "title": "Whether unlimited perfection is simpler"
+      },
+      {
+        "title": "Whether idealism identifies a necessary divine mind"
+      },
+      {
+        "title": "Whether divine plurality defeats the anti-limit argument"
+      },
+      {
+        "title": "Whether theism best explains consciousness and reality"
+      }
+    ]
   }
 ];

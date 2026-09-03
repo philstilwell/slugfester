@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-03T18:07:30Z",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does the contingency argument provide good reason to believe that the necessary foundation of reality is God?",
+  "sides": {
+    "pro": {"speaker": "Michael Jones", "position": "Contingency together with idealist and explanatory considerations supports a necessary divine mind"},
+    "con": {"speaker": "Joseph Schmid", "position": "A necessary foundation may exist, but the presented argument does not adequately identify that foundation as God"}
+  },
+  "evidenceLocks": {
+    "inventory": {"path": "docs/assessment-production/standalone-debates-v1/debate-244/inventory/inventory.json", "sha256": "35949522febbd593af19d3f6dab964a13a50c11559b27e58c5921158033b778b", "bytes": 80904},
+    "events": {"path": ".assessment-cache/captions/mSxDzyox0CA/events.json", "sha256": "e947d0efa8c70bc11ec721083ccaada143b1b2818c978de889d55a19143859d6", "bytes": 323541},
+    "transcript": {"path": ".assessment-cache/captions/mSxDzyox0CA/transcript.txt", "sha256": "a1053d84215c629dc73b7d3817e2d3ed1ea23522e00d1f279995d2c17966bfa8", "bytes": 135644},
+    "workflow": {"path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee", "bytes": 6705},
+    "rubric": {"path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c", "bytes": 6634},
+    "validator": {"path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a", "bytes": 49735}
+  },
+  "isolationBoundary": {"legacyAssessmentsUnavailable": true, "calculatedTotalsUnavailable": true, "winnerLabelsUnavailable": true, "otherJudgmentUnavailable": true, "publicationProseUnavailable": true, "otherDebatesUnavailable": true, "aggregateRankingsUnavailable": true, "priorScoresUnavailable": true, "aiExtensionsUnavailable": true},
+  "instructions": {"reviewCompleteLockedInventory": true, "judgeEveryMoveExactlyOnce": true, "preserveInventoryStructure": true, "doNotAddDropMergeOrSplitMoves": true, "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true, "scoreTranscriptPerformanceNotWorldviewTruth": true, "supplyRatingsAndRationalesOnly": true, "calculatedMoveSectionAndOverallScoresForbidden": true, "winnerForbidden": true, "publicationProseForbidden": true},
+  "dimensionKeys": ["logicalCoherence", "evidenceWarrant", "responsiveness", "relevanceBurden", "precisionClarity", "calibrationCharity"],
+  "ratingControls": {"minimum": 0, "maximum": 100, "integerOnly": true, "rationaleMinimumCharacters": 40, "bands": {"95-100": "Exceptional and unusually complete", "85-94": "Very strong", "75-84": "Strong or competent", "65-74": "Mixed", "50-64": "Weak", "25-49": "Very weak", "0-24": "Non-performance"}},
+  "burdenAdjustmentControls": {"minimum": -5, "maximum": 5, "integerOnly": true, "nonzeroRequiresDistinctDebateWideConsequence": true, "nonzeroRequiresBurdenCompletionEffect": true, "nonzeroRequiresNotAlreadyScored": true, "duplicateCaptureForcesZero": true},
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "35949522febbd593af19d3f6dab964a13a50c11559b27e58c5921158033b778b",
+    "judgmentFields": {"moveId": "exact locked move ID in inventory order", "assessmentConfidence": "high, medium, or low", "dimensions": "exactly the six named dimension objects, each with integer value and rationale"},
+    "burdenCompletionAdjustmentFields": {"value": "integer -5 through 5", "rationale": "source-grounded explanation", "eligibility": ["distinctDebateWideConsequence", "affectsBurdenCompletion", "notAlreadyScored", "affectedBurdenIds", "completionCriterion", "relatedMoveIds", "distinctConsequence", "alreadyCapturedBy", "counterfactual"]},
+    "requiredAuditBooleans": ["completeLockedInventoryReviewed", "allMovesJudgedOnce", "ratingsOnlyNoCalculatedScores", "publicationBlind", "scoreBlind"]
+  }
+}

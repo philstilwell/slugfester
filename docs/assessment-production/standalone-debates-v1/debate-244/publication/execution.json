@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-standalone-publication-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid-after-bounded-contract-repair-and-rhetorical-review",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/packet.json",
+    "sha256": "e5a7d5890c503e1368e7b0a77b2e279a6f31489c35a9362613de28a50551f00f",
+    "bytes": 7325
+  },
+  "preservedRawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/preserved-raw-prose-output-1.json",
+    "sha256": "122a0dd117abf348e18186fa00a057dfb8d3dd310c2ef10ae7dd9e3a2e15c92d",
+    "bytes": 50323
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/raw-prose-output-1.json",
+    "sha256": "178998fed007de94d43e71da7e5970eaf0b8fea2bfe67e2ba55bc6021bd47a43",
+    "bytes": 50478
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/output.json",
+    "sha256": "b708d5d7f4fc60e3d50e8c93aa97a65e02c505e5c56323076645a4e8fca539e6",
+    "bytes": 51937
+  },
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "repair": {
+    "type": "four-field-disjoint-bounded-contract-repair-shards",
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/correction-1-publication-contract.json",
+      "sha256": "58a28ec2c05101e9d2b6c9c71bf3795ebce7bf91a77440f598cc138d9b0ae904",
+      "bytes": 3166
+    },
+    "shardAttempts": 4,
+    "shardRetries": 0,
+    "maximumWritableFieldsPerShard": 2,
+    "changedLeafFields": 7
+  },
+  "rhetoricalReview": {
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "ad1b9457c9d62d9c8e9412be793e2e03471c31d6f4fb93cb8188ba6d3314e5a0",
+      "bytes": 3541
+    },
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/correction-2-rhetorical-tags.json",
+      "sha256": "c78411012147011a92d22df22ad410a1612030f5c2e7838e4637d9639e6ee29b",
+      "bytes": 4269
+    },
+    "acceptedMoveTags": 3,
+    "acceptedOverallBlunderLinks": 2
+  },
+  "corpusRelative": {
+    "descriptionMean": 22.5,
+    "shortCardShare": 0
+  },
+  "critiqueMetrics": {
+    "meanWords": 128.1,
+    "minimumWords": 120,
+    "maximumWords": 130,
+    "minimumCharacters": 953
+  },
+  "boilerplate": {
+    "ngramSize": 6,
+    "minimumDocuments": 6,
+    "commonNgrams": 0,
+    "meanCoveredRatio": 0,
+    "maximumCoveredRatio": 0,
+    "meanLimit": 0.15,
+    "maximumLimit": 0.25
+  },
+  "contentParity": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/content-parity-audit.json",
+    "sha256": "e7d1b2d9e40f876c5a89d964a40ebcd43020097cd132b0adc24d1547721615d2",
+    "bytes": 5680
+  },
+  "validation": {
+    "status": "passed",
+    "sections": 5,
+    "moves": 22,
+    "sourceExactQuotes": 2
+  }
+}

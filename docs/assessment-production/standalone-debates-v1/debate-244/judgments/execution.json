@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 244,
+  "debateId": "jones-schmid-contingency-god-2022",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two fresh built-in isolated subagents with explicit score-blind read boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-244/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "006a0aa548e459f94e6f60514a166e24eb2880ac8ec440736c6c05be9d831c86",
+    "inventorySha256": "35949522febbd593af19d3f6dab964a13a50c11559b27e58c5921158033b778b",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-244/judgments/pass-a/output.json",
+      "outputSha256": "f7d3e2e2c76526ea5908133061effc0717057cc32da0ee73f2d33792fbcaa4c2",
+      "outputBytes": 22110,
+      "judgmentCount": 22,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": ["docs/assessment-production/standalone-debates-v1/debate-244/judgments/pass-a/output.json"]
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-244/judgments/pass-b/output.json",
+      "outputSha256": "9c7a2a20976b8d60aa60d5b89171b3879a9cd6a8a4b4f61241a1a49e32578746",
+      "outputBytes": 32466,
+      "judgmentCount": 22,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": ["docs/assessment-production/standalone-debates-v1/debate-244/judgments/pass-b/output.json"]
+    }
+  ],
+  "completedAt": "2026-09-03T18:12:00Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}
