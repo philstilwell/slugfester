@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "241",
+  "debateId": "ward-law-god-existence-2015",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-241/inventory/inventory.json",
+    "sha256": "d8865ac6b35608cff8d75232fb5a09b18b0e60e7c916a5ca3d86cfa0c7a950c1"
+  },
+  "source": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=ll_6JtbQtHU",
+    "description": "Public YouTube format-139 audio downloaded locally and clipped with five seconds of context on each side while preserving the locked source timestamps.",
+    "sourceAudioPath": ".assessment-cache/debate-241-audio/source.m4a",
+    "sourceAudioSha256": "c2972cb62721db8d3cb5bd17bb784386fb7547420a55c4f13e747e2bf90fcdcd",
+    "sourceAudioBytes": 22983486,
+    "sourceDurationSeconds": 3776.121905,
+    "ignoredLocalSourceRetained": true
+  },
+  "trigger": {
+    "inventoryBelowHighAttributionMoveIds": ["ward-agency-detector-could-track-real-god"],
+    "requiredCheckIds": ["ward-agency-detector-could-track-real-god"]
+  },
+  "triggeredMoveIds": ["ward-agency-detector-could-track-real-god"],
+  "checks": [
+    {
+      "moveId": "ward-agency-detector-could-track-real-god",
+      "inventoryEventRange": [843, 854],
+      "result": "confirmed",
+      "confirmedSpeaker": "Keith Ward",
+      "evidence": "The timestamp-preserving clip begins with Ward continuing his announced reply, explicitly contrasts Justin Barrett's Christian conclusion with Law's inference, and records Ward saying God could have installed the agency detector; the later brief overlap does not alter ownership of the locked move.",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-241/clips/ward-agency-detector-could-track-real-god__2164400-2214599.mp3",
+        "sha256": "444447041d1344ecc6e3f0f2917cfd71bc2146eeb8fd91f27a768f8cf6d6d58e",
+        "bytes": 794692,
+        "durationSeconds": 50.199002,
+        "clipWindowStartMs": 2164400,
+        "clipWindowEndMs": 2214599
+      },
+      "transcript": {
+        "path": "output/transcribe/standalone-debate-v1/debate-241/transcripts/ward-agency-detector-could-track-real-god.json",
+        "sha256": "97df3225d635a01625a7098c0915999e9a1f38bafe72bd985a984d622986c211",
+        "bytes": 880,
+        "reportedInputAudioTokens": 509,
+        "reportedOutputTokens": 144
+      }
+    }
+  ],
+  "transcription": {
+    "model": "gpt-4o-mini-transcribe",
+    "responseFormat": "json",
+    "speakerResolutionMethod": "The transcript was mapped from Ward's first-person reply, his explicit reference to Stephen's opposing inference, the locked turn sequence, and the surrounding five-second context.",
+    "combinedExactClipDurationSeconds": 50.199002,
+    "localOutputDirectory": "output/transcribe/standalone-debate-v1/debate-241",
+    "successfulSequentialCalls": 1
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsd": 0.007,
+    "paidCallsAttempted": 1,
+    "successfulPaidCalls": 1,
+    "uncertainOrFailedPaidCalls": 0,
+    "knownSuccessfulCallCostUsd": 0.00135625,
+    "maximumPotentialCombinedCostUsd": 0.00135625,
+    "pricingBasis": "OpenAI GPT-4o Mini Transcribe token pricing of $1.25 per million audio input tokens and $5.00 per million output tokens, applied to the API-reported 509 input audio tokens and 144 output tokens."
+  },
+  "audit": {
+    "triggeredMoveIdsMatchCompletedChecksExactlyAndInOrder": true,
+    "allRequiredChecksComplete": true,
+    "noSuccessfulCallRepeated": true,
+    "lockedMovesReviewed": 19,
+    "highAttributionConfidenceMoves": 18,
+    "requiredAttributionChecks": 1,
+    "completedAttributionChecks": 1,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0,
+    "completedAt": "2026-09-03T06:10:34Z"
+  }
+}

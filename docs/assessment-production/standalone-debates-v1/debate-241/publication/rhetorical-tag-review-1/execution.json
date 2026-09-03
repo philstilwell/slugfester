@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "241",
+  "debateId": "ward-law-god-existence-2015",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "af0091f209cccfb8187e6bac1ab697d3c40bab9853b559aecab27fa542cb2af7",
+    "bytes": 89799
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "3b03fd7a5305546cc2c61f0e5bb850d397798f9d60ff9f443e83657e566366e8",
+    "bytes": 4097
+  },
+  "contexts": {
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "sha256": "110351203e672a6ac810ae51990190a928a70df9ceab28df4fab9d1400b63188",
+      "bytes": 20391,
+      "attempts": 1,
+      "retries": 0
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "sha256": "9a2c064a1ae4c1f5aea81380440303b221660d505c7a07cc978c56eddf9e52e3",
+      "bytes": 16324,
+      "attempts": 1,
+      "retries": 0
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/adjudication-packet.json",
+      "sha256": "eab4abedf7f3a91276e5199a6e759ee7b53915bfcab805ae64c5c9fae6cb3064",
+      "bytes": 179722
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/adjudication-output.json",
+      "sha256": "e5108cb1687e52ef0c8688a05cc8ede8c726fed7f8477358a4008f65cb3bab6c",
+      "bytes": 19717,
+      "attempts": 1,
+      "retries": 0
+    }
+  },
+  "validation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/pass-validation.json",
+    "sha256": "b230b9946ec6c14e8318abe6ca2e656177ba6b1510e159b6f187360d92fd8d72",
+    "bytes": 6505
+  },
+  "counts": {
+    "reviewedMoves": 19,
+    "reviewedOverallBlunders": 6,
+    "passACandidates": 32,
+    "passBCandidates": 25,
+    "unionCandidates": 39,
+    "oneReviewerCandidates": 21,
+    "acceptedMoveTags": 4,
+    "acceptedOverallBlunderLinks": 4,
+    "rejectedCandidates": 31
+  },
+  "finalDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/final-definition-check.json",
+    "sha256": "a961713438c9d4abe4c2863bcc0d8430bcd4abf00e92d69d6d4700eea71230a5",
+    "bytes": 38373
+  },
+  "directIncrementalCostUsd": 0,
+  "attempts": {
+    "passA": 1,
+    "passB": 1,
+    "adjudication": 1
+  },
+  "retries": 0,
+  "completedAt": "2026-09-03T06:56:07.538Z",
+  "audit": {
+    "blindReviews": 2,
+    "anonymousUnionCandidates": 39,
+    "acceptedMoveTags": 4,
+    "acceptedOverallBlunderLinks": 4,
+    "retries": 0
+  }
+}

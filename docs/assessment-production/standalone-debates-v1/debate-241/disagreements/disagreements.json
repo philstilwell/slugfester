@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "241",
+  "debateId": "ward-law-god-existence-2015",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "law-first-cause-does-not-establish-good-god:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "law-first-cause-does-not-establish-good-god",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 1,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "Law grants the argument's first-cause conclusion for purposes of critique and targets only the unsupported further leap, despite a dismissive pedigree remark."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Law grants the argument for conditional analysis, but his aside about professional philosophers is broad and unnecessary."
+        }
+      }
+    },
+    {
+      "disputeId": "ward-agency-detector-could-track-real-god:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "ward-agency-detector-could-track-real-god",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "low"
+      }
+    },
+    {
+      "disputeId": "ward-physicists-consider-intelligence-explanation-live:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "ward-physicists-consider-intelligence-explanation-live",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden-completion consequence remains outside the scored pro moves; residual existence and bridge gaps are already represented in their dimension ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-existence-motion"
+            ],
+            "completionCriterion": "No additional completion criterion is eligible beyond the move-level treatment.",
+            "relatedMoveIds": [
+              "ward-intelligibility-fits-underlying-intelligence",
+              "ward-mind-is-fundamental-not-anthropomorphic-projection"
+            ],
+            "distinctConsequence": "Any proposed consequence duplicates move-level relevance and warrant judgments.",
+            "alreadyCapturedBy": [
+              "relevanceBurden",
+              "evidenceWarrant"
+            ],
+            "counterfactual": "Removing the duplicate consideration would not change a separate debate-wide completion finding."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured by the move dimensions and locked burden contacts, so no adjustment is eligible.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains outside the scored move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any global consequence is already represented by move-level relevance and responsiveness.",
+            "alreadyCapturedBy": [
+              "move-level dimensions and burden contacts"
+            ],
+            "counterfactual": "Removing the alleged global effect would not alter a separately unscored burden completion judgment."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden-completion consequence remains outside the scored con moves; explanatory gaps, suffering, symmetry, and experiential defeat are already captured.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-nonwarrant-motion"
+            ],
+            "completionCriterion": "No additional completion criterion is eligible beyond the move-level treatment.",
+            "relatedMoveIds": [
+              "law-good-and-evil-god-face-symmetric-evidence",
+              "law-defeater-argument-does-not-depend-on-debunking-story"
+            ],
+            "distinctConsequence": "Any proposed consequence duplicates move-level responsiveness and burden judgments.",
+            "alreadyCapturedBy": [
+              "relevanceBurden",
+              "responsiveness"
+            ],
+            "counterfactual": "Removing the duplicate consideration would not change a separate debate-wide completion finding."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured by the move dimensions and locked burden contacts, so no adjustment is eligible.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains outside the scored move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any global consequence is already represented by move-level relevance and responsiveness.",
+            "alreadyCapturedBy": [
+              "move-level dimensions and burden contacts"
+            ],
+            "counterfactual": "Removing the alleged global effect would not alter a separately unscored burden completion judgment."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 19,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/inventory/inventory.json",
+      "sha256": "d8865ac6b35608cff8d75232fb5a09b18b0e60e7c916a5ca3d86cfa0c7a950c1"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/judgments/pass-a/output.json",
+      "sha256": "8f76df396b6b737eb17e7046ae16489ade37d6b224afe63a83c69f126cf7b8bf"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/judgments/pass-b/output.json",
+      "sha256": "f9de29d8ad39da0170f899e6afd830462b70c131fe263a3efdf523c82d0ca238"
+    }
+  }
+}
