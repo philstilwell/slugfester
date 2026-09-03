@@ -25,12 +25,3 @@ jobs:
         run: npm install --no-save --no-package-lock @playwright/test@1.62.1 @axe-core/playwright@4.13.0
       - run: npx playwright install --with-deps chromium
       - run: npm run site:check
-      - name: Save failed visual comparisons
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-quality-visual-failures
-          path: .playwright-results/**/*.png
-          include-hidden-files: true
-          if-no-files-found: ignore
-          retention-days: 3
