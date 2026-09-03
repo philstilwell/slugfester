@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-record",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "completed-valid",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "ordinal": 2,
+  "repairType": "schema-shape-materialization",
+  "writableFields": [
+    "candidate.sections[2].exchanges",
+    "candidate.sections[3].exchanges"
+  ],
+  "operation": "Materialize each supplied two-sided row array as the required exchanges array without changing any nested prose, score, move identity, ordering, or source field.",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "attempts": 1,
+  "retries": 0,
+  "maximumWritableFields": 2,
+  "scoreBlind": true,
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-dispute-only-packet",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "evidenceBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-best-explanation-until-rival:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-best-explanation-until-rival",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "Jones denies proof but understates Schmid's concrete rivals and internal challenges."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Jones disclaims proof and allows skepticism, but characterizing the opposition as skepticism for its own sake understates Schmid's developed objections."
+        }
+      },
+      "moveEvidence": {
+        "moveId": "pro-best-explanation-until-rival",
+        "sectionId": "comparative-explanatory-power",
+        "side": "pro",
+        "speaker": "Michael Jones",
+        "moveKind": "reply",
+        "importance": 2,
+        "attributionConfidence": "high",
+        "sourceSpan": {
+          "startEvent": 2501,
+          "endEvent": 2540,
+          "startMs": 5000640,
+          "endMs": 5077199,
+          "excerpt": "yeah I mean I would just say I think I think it's perfectly fine to appeal to intuitions on this I think it's in a lot of ways it's it's the job of the skeptic to sort of show that the intuitions could be wrong like for example you know if we have an intuition that substance duel is true as a lot of people do in the west you can show that that's just you know not a global intuition that sort of goes around the world and so maybe that's not necessarily a good intuition to hold to um I think a lot of our intuitions with regards to the necessary Foundation are perfectly okay and it's okay to be skeptical of them as Joe is uh but I mean like at the same time I would also say like you know it's just I'm not I I don't agree that we should just be skeptical for the sake a skeptical I think we can also appeal to theism being the most likely explanation until we find a better option so something I've said in debates I've had in the past which is like look I'm going to offer an explanation of reality which I say is theism I'm not going to say it's proven I'm gonna say it is the best explanation so far and I would I'm going to believe it until someone can offer a better explanation uh and so sure we can be skeptical of that um but I just don't think the skeptic or the non-theist is offered a better explanation to this point so sure there's there are there are brute facts that maybe we don't know fully how to explain there but it still is the best explanation of reality itself"
+        },
+        "quoteEligibleExactSpans": [
+          "yeah I mean I would just say I think I think it's"
+        ],
+        "proposition": "Theism need not be proven to be rationally preferred as the best available explanation until a better rival is supplied.",
+        "inference": "Residual brute facts do not defeat inference to the best explanation when competitors have not shown greater total explanatory merit.",
+        "burdenContact": {
+          "bridgeId": "pro-comparative-explanation",
+          "tier": "subsidiary"
+        },
+        "respondsToIds": [
+          "con-competing-foundations",
+          "con-perfections-remain-brute",
+          "con-dissociation-is-descriptive"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "con-competing-foundations",
+            "component": "The move directly addresses the target proposition or its load-bearing inference."
+          },
+          {
+            "targetMoveId": "con-perfections-remain-brute",
+            "component": "The move directly addresses the target proposition or its load-bearing inference."
+          },
+          {
+            "targetMoveId": "con-dissociation-is-descriptive",
+            "component": "The move directly addresses the target proposition or its load-bearing inference."
+          }
+        ]
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide effect remains uncaptured by move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond scored moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence exists outside move ratings.",
+            "alreadyCapturedBy": [
+              "move-level dimension ratings"
+            ],
+            "counterfactual": "No eligible unscored counterfactual effect was found."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured by the ratings assigned to the locked pro moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is satisfied beyond the scored move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence was identified in the locked transcript.",
+            "alreadyCapturedBy": [
+              "pro-stage-structure",
+              "pro-unlimited-parsimony",
+              "pro-perfect-being-explanatory-scope",
+              "pro-idealism-to-necessary-mind",
+              "pro-idealist-intuitions-cultural",
+              "pro-conscious-foundation-counts-theistic",
+              "pro-trinity-perfect-community",
+              "pro-experiential-self-knowledge-distinction",
+              "pro-parsimony-balanced-with-scope",
+              "pro-consciousness-ontological-continuity",
+              "pro-best-explanation-until-rival"
+            ],
+            "counterfactual": "Removing the scored move effects leaves no additional independent pro consequence to apply."
+          }
+        }
+      },
+      "moveEvidence": null
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide effect remains uncaptured by move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond scored moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence exists outside move ratings.",
+            "alreadyCapturedBy": [
+              "move-level dimension ratings"
+            ],
+            "counterfactual": "No eligible unscored counterfactual effect was found."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured by the ratings assigned to the locked con moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is satisfied beyond the scored move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence was identified in the locked transcript.",
+            "alreadyCapturedBy": [
+              "con-stage-two-underdetermination",
+              "con-competing-foundations",
+              "con-unlimited-needs-auxiliaries",
+              "con-perfections-remain-brute",
+              "con-unlimited-does-not-entail-perfect",
+              "con-common-sense-against-idealism",
+              "con-idealism-still-underdetermines-theism",
+              "con-omniscience-removes-third-perspective-need",
+              "con-person-count-regress",
+              "con-consciousness-construction-parity",
+              "con-dissociation-is-descriptive"
+            ],
+            "counterfactual": "Removing the scored move effects leaves no additional independent con consequence to apply."
+          }
+        }
+      },
+      "moveEvidence": null
+    }
+  ]
+}

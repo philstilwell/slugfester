@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-best-explanation-until-rival:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-best-explanation-until-rival",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "Jones denies proof but understates Schmid's concrete rivals and internal challenges."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Jones disclaims proof and allows skepticism, but characterizing the opposition as skepticism for its own sake understates Schmid's developed objections."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide effect remains uncaptured by move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond scored moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence exists outside move ratings.",
+            "alreadyCapturedBy": [
+              "move-level dimension ratings"
+            ],
+            "counterfactual": "No eligible unscored counterfactual effect was found."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured by the ratings assigned to the locked pro moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is satisfied beyond the scored move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence was identified in the locked transcript.",
+            "alreadyCapturedBy": [
+              "pro-stage-structure",
+              "pro-unlimited-parsimony",
+              "pro-perfect-being-explanatory-scope",
+              "pro-idealism-to-necessary-mind",
+              "pro-idealist-intuitions-cultural",
+              "pro-conscious-foundation-counts-theistic",
+              "pro-trinity-perfect-community",
+              "pro-experiential-self-knowledge-distinction",
+              "pro-parsimony-balanced-with-scope",
+              "pro-consciousness-ontological-continuity",
+              "pro-best-explanation-until-rival"
+            ],
+            "counterfactual": "Removing the scored move effects leaves no additional independent pro consequence to apply."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide effect remains uncaptured by move-level ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond scored moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence exists outside move ratings.",
+            "alreadyCapturedBy": [
+              "move-level dimension ratings"
+            ],
+            "counterfactual": "No eligible unscored counterfactual effect was found."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide completion consequence remains uncaptured by the ratings assigned to the locked con moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is satisfied beyond the scored move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence was identified in the locked transcript.",
+            "alreadyCapturedBy": [
+              "con-stage-two-underdetermination",
+              "con-competing-foundations",
+              "con-unlimited-needs-auxiliaries",
+              "con-perfections-remain-brute",
+              "con-unlimited-does-not-entail-perfect",
+              "con-common-sense-against-idealism",
+              "con-idealism-still-underdetermines-theism",
+              "con-omniscience-removes-third-perspective-need",
+              "con-person-count-regress",
+              "con-consciousness-construction-parity",
+              "con-dissociation-is-descriptive"
+            ],
+            "counterfactual": "Removing the scored move effects leaves no additional independent con consequence to apply."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 22,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

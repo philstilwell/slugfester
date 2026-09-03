@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-publication-contract-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "reason": "The single publication response supplied complete, compliant prose but used a row-array wrapper instead of the required exchange objects in five sections, and its affirmative representative quote crossed the boundary of a single caption event. Three disjoint schema-shape shards materialized the supplied pairs without rewriting their contents; one deterministic two-field shard substituted the exact caption-event quote and its mirrored audit value.",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/preserved-raw-prose-output-1.json",
+    "sha256": "122a0dd117abf348e18186fa00a057dfb8d3dd310c2ef10ae7dd9e3a2e15c92d",
+    "bytes": 50323
+  },
+  "correctedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/raw-prose-output-1.json",
+    "sha256": "178998fed007de94d43e71da7e5970eaf0b8fea2bfe67e2ba55bc6021bd47a43",
+    "bytes": 50478
+  },
+  "repair": {
+    "shards": [
+      {
+        "ordinal": 1,
+        "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/repairs/repair-01.json",
+        "sha256": "20e27e4f6f1b2ff0c9a3fb751de7e8ecfff643d93e53ca2ae8ae2a568faf7d10",
+        "bytes": 844,
+        "writableFields": ["candidate.sections[0].exchanges", "candidate.sections[1].exchanges"],
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 2,
+        "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/repairs/repair-02.json",
+        "sha256": "e7cd7d2db47dfec4565e2f00741cad6dfe988830bbe53af99377dac836e1289d",
+        "bytes": 844,
+        "writableFields": ["candidate.sections[2].exchanges", "candidate.sections[3].exchanges"],
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 3,
+        "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/repairs/repair-03.json",
+        "sha256": "337811d1984800337e91c0d67b316531785c5f6a05663ff043ec8539f11baf91",
+        "bytes": 804,
+        "writableFields": ["candidate.sections[4].exchanges"],
+        "attempts": 1,
+        "retries": 0
+      },
+      {
+        "ordinal": 4,
+        "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/repairs/repair-04.json",
+        "sha256": "8510f9158994426aa7443d9fe38cd4ba74f79f79d7340d70865075413ad637bb",
+        "bytes": 890,
+        "writableFields": ["candidate.quotes.pro.text", "sourceQuoteAudit.pro.text"],
+        "attempts": 1,
+        "retries": 0
+      }
+    ],
+    "shardAttempts": 4,
+    "shardRetries": 0,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "audit": {
+    "sectionShapeFieldsMaterialized": 5,
+    "exactQuoteFieldsChanged": 2,
+    "nestedPublicationProseChanges": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "allRawModelBytesPreserved": true
+  },
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "244",
+  "executedAt": "2026-09-03T18:04:18Z",
+  "pass": {
+    "count": 1,
+    "purpose": "fresh isolated score-blind semantic inventory",
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "incrementalCostUsd": 0,
+    "freshContext": true,
+    "isolatedContext": true,
+    "scoreBlind": true,
+    "judgmentBlind": true,
+    "publicationBlind": true,
+    "otherDebateDataConsulted": false
+  },
+  "lockedInputs": [
+    {"path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/SKILL.md", "sha256": "fe209f19b60e8288ed8201b947e614a232bc64d9c3dd73fc91bf62875b6533e6"},
+    {"path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/references/single-debate-runbook.md", "sha256": "971cd841ecb69c31abe4b7256ff3af7b34ce3dd35b391c418492fa41e47e5843"},
+    {"path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee"},
+    {"path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"},
+    {"path": "docs/assessment-workflow-v4.2.21.17.41.md", "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-244/authorization.json", "sha256": "a1c6de7cebba65c168c0e12c33150f42df359571ff57a504e14356ca2da8b339"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-244/source/source-lock.json", "sha256": "0f66e967bcc709c49c7a03bc4c9a6490dee4a9c2783d8d18adeb6edcdeab7486"},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-244/manifest-pre-inventory.json", "sha256": "937132bca6e736bb14150bc02458cf5ced593ad8573d0d931126c95965abc3df"},
+    {"path": ".assessment-cache/captions/mSxDzyox0CA/transcript.txt", "sha256": "a1053d84215c629dc73b7d3817e2d3ed1ea23522e00d1f279995d2c17966bfa8"},
+    {"path": ".assessment-cache/captions/mSxDzyox0CA/events.json", "sha256": "e947d0efa8c70bc11ec721083ccaada143b1b2818c978de889d55a19143859d6"},
+    {"path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a"}
+  ],
+  "wroteOnly": [
+    "docs/assessment-production/standalone-debates-v1/debate-244/inventory/model-output.json",
+    "docs/assessment-production/standalone-debates-v1/debate-244/inventory/execution.json"
+  ],
+  "normalization": {
+    "performedBeforeJudgmentPacketFreeze": true,
+    "changedKeys": [
+      "sections[0].label to title",
+      "sections[1].label to title",
+      "sections[2].label to title",
+      "sections[3].label to title",
+      "sections[4].label to title"
+    ],
+    "substantiveContentChanged": false,
+    "reason": "The validator accepts arbitrary section display-key names, but the deterministic score and site-ledger adapter consumes section.title. The key-only normalization prevents undefined publication titles without changing any selected evidence, wording, weights, routes, or moves."
+  },
+  "attestation": "One fresh isolated subscription-backed GPT-5.6 Sol low pass reviewed the complete locked transcript and events, selected only assessed-window primary-speaker argument moves, and consulted no scores, judgments, publication artifacts, reports, ledgers, site data, or other debate inventories."
+}

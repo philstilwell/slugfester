@@ -1,0 +1,879 @@
+{
+  "schemaVersion": "1.1-standalone-rhetorical-review-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-blind-rhetorical-review-input",
+  "debateNumber": "244",
+  "debateId": "jones-schmid-contingency-god-2022",
+  "policy": {
+    "compareEveryCandidateAgainstEveryExactDefinition": true,
+    "outputEverySeriousCandidateConsideredEvenWhenRejected": true,
+    "acceptOnlyMaterialDefectsAlreadyRepresentedInCritiqueOrBlunder": true,
+    "acceptedContextMustBeSourceSpecificAndContainEightToThirtyFiveWords": true,
+    "weakSupportIncompleteMechanismAndUnexcludedAlternativesAreNotAutomaticallyNamedDefects": true,
+    "contestedPremiseIsNotAutomaticallyBeggingTheQuestion": true,
+    "weakAnalogyIsNotAutomaticallyEquivocation": true,
+    "citationAloneIsNotAppealToAuthority": true,
+    "disagreementOrRhetoricalHarshnessAloneIsNotBeliefBiasOrConfirmationBias": true,
+    "twoLabelsRequireTwoDistinctDefects": true,
+    "emptyAcceptedResultPermitted": true,
+    "fallaciesAndBiasesReceiveIdenticalScrutiny": true,
+    "existingTagsOtherReviewsScoresFrequenciesAndOtherDebatesUnavailable": true,
+    "scoresAndLockedScoreSentencesExcluded": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.1",
+    "status": "complete-and-schema-valid",
+    "reviewedMoveIdsMustEqualPacketOrder": [
+      "pro-stage-structure",
+      "con-stage-two-underdetermination",
+      "pro-unlimited-parsimony",
+      "con-competing-foundations",
+      "pro-perfect-being-explanatory-scope",
+      "con-unlimited-needs-auxiliaries",
+      "con-perfections-remain-brute",
+      "con-unlimited-does-not-entail-perfect",
+      "pro-idealism-to-necessary-mind",
+      "con-common-sense-against-idealism",
+      "pro-idealist-intuitions-cultural",
+      "con-idealism-still-underdetermines-theism",
+      "pro-conscious-foundation-counts-theistic",
+      "pro-trinity-perfect-community",
+      "con-omniscience-removes-third-perspective-need",
+      "pro-experiential-self-knowledge-distinction",
+      "con-person-count-regress",
+      "pro-parsimony-balanced-with-scope",
+      "con-consciousness-construction-parity",
+      "pro-consciousness-ontological-continuity",
+      "con-dissociation-is-descriptive",
+      "pro-best-explanation-until-rival"
+    ],
+    "reviewedOverallBlunderIdsMustEqualPacketOrder": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-2",
+      "overall-pro-blunder-3",
+      "overall-con-blunder-1",
+      "overall-con-blunder-2",
+      "overall-con-blunder-3"
+    ],
+    "candidateReviewFields": [
+      "moveId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "overallBlunderCandidateReviewFields": [
+      "blunderId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "decisionValues": [
+      "accepted",
+      "rejected"
+    ],
+    "contextWords": [
+      8,
+      35
+    ],
+    "rationaleMinimumWords": 18,
+    "candidateArraysContainEverySeriousCandidateActuallyConsidered": "Include accepted and rejected serious candidates; do not fabricate filler candidates."
+  },
+  "definitions": [
+    {
+      "type": "fallacy",
+      "slug": "appeal-to-authority",
+      "label": "Appeal to authority",
+      "definition": "Relying on a person or institution's status as if it settles the argument, especially when the relevant evidence, expertise, or consensus has not been shown.",
+      "externalUrl": "https://logfall.com/fallacies/appeal-to-authority/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "argument-from-ignorance",
+      "label": "Argument from ignorance",
+      "definition": "Treating a claim as true because it has not been disproved, or false because it has not been proved, rather than supplying positive evidence.",
+      "externalUrl": "https://logfall.com/fallacies/argument-from-ignorance/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "begging-the-question",
+      "label": "Begging the question",
+      "definition": "Assuming, directly or indirectly, the very point that needs to be established, so the conclusion is smuggled into the premises.",
+      "externalUrl": "https://logfall.com/fallacies/begging-the-question/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "equivocation",
+      "label": "Equivocation",
+      "definition": "Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.",
+      "externalUrl": "https://logfall.com/fallacies/equivocation/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "red-herring",
+      "label": "Red herring",
+      "definition": "Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.",
+      "externalUrl": "https://logfall.com/fallacies/red-herring/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "special-pleading",
+      "label": "Special pleading",
+      "definition": "Applying an exception or different standard to one side of the argument without giving a principled reason for the difference.",
+      "externalUrl": "https://logfall.com/fallacies/special-pleading/"
+    },
+    {
+      "type": "bias",
+      "slug": "ambiguity-effect",
+      "label": "Ambiguity effect",
+      "definition": "Preferring clearer or more familiar claims over uncertain ones, even when the uncertain option may deserve serious consideration.",
+      "externalUrl": "https://cogbias.site/biases/ambiguity-effect/"
+    },
+    {
+      "type": "bias",
+      "slug": "authority-bias",
+      "label": "Authority bias",
+      "definition": "Giving extra weight to a claim because it comes from a perceived authority, sometimes beyond what the evidence itself supports.",
+      "externalUrl": "https://cogbias.site/biases/authority-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "base-rate-neglect",
+      "label": "Base-rate neglect",
+      "definition": "Underweighting general background rates or prior probabilities while focusing too heavily on a vivid specific case or local detail.",
+      "externalUrl": "https://cogbias.site/biases/base-rate-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "belief-bias",
+      "label": "Belief bias",
+      "definition": "Judging an argument by whether its conclusion feels believable instead of evaluating whether the conclusion follows from the premises.",
+      "externalUrl": "https://cogbias.site/biases/belief-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "confirmation-bias",
+      "label": "Confirmation bias",
+      "definition": "Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information.",
+      "externalUrl": "https://cogbias.site/biases/confirmation-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "scope-neglect",
+      "label": "Scope neglect",
+      "definition": "Failing to adjust judgment in proportion to the scale, number, or magnitude of what is being discussed.",
+      "externalUrl": "https://cogbias.site/biases/scope-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "subjective-validation",
+      "label": "Subjective validation",
+      "definition": "Treating a claim as especially accurate or meaningful because it feels personally resonant or confirms one's private experience.",
+      "externalUrl": "https://cogbias.site/biases/subjective-validation/"
+    }
+  ],
+  "moves": [
+    {
+      "candidateId": "pro-stage-structure",
+      "kind": "card",
+      "moveId": "pro-stage-structure",
+      "sectionId": "stage-one-stage-two",
+      "sectionTitle": "What follows from a necessary foundation",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Contingent things call for a necessary foundation, and the second-stage claim identifies that foundation as an immaterial, perfect mind called God.",
+      "inference": "If the explanatory terminus must be necessary and the best account of that terminus is a perfect immaterial mind, the contingency argument supports God.",
+      "sourceSpan": {
+        "startEvent": 189,
+        "endEvent": 224,
+        "startMs": 519060,
+        "endMs": 598620,
+        "excerpt": "all right so yeah so the contingency argument is uh basically an argument that argues for God's existence from contingency well what is contingent well anything that could fail to exist uh you know I am contingent Joe's contingent your contingent anything the opposite of contingency is necessity something that cannot fail to exist so philosophers that use the contingency argument say well why are there contingent things uh it must go back to a necessary uh substance so the first stage of the contingency argument is arguing that contingent things uh would basically have an explanation of some sort that is a necessary Foundation um as far as I I think I think Joe and I are okay on that I don't think we disagree we're going to disagree with like a stage two uh version I would argue that it goes back to a necessary being that we call God uh and so what do I mean by necessary being I tend to Define it as as a as a being this an immaterial mind that created the universe that we inhabit and it would have absolute perfection so I'll start defining some of these things so that's generally contingency argument so step one uh contingent things exist basically and they have an explanation uh in some sort of necessary substance step two that necessary substance would be a necessary mind conclusion therefore God exists that is"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Jones divides the contingency case into a shared necessary-foundation stage and a disputed second stage identifying that foundation as an immaterial, perfect divine mind.",
+      "critique": "Strongest feature: Jones clearly separates the modest necessary-foundation inference from the controversial divine-identification inference, accurately forecasting where substantive disagreement will concentrate and giving listeners an intelligible argumentative roadmap. Principal limitation: The decisive transition remains announced rather than demonstrated, because describing the terminus as an immaterial, absolutely perfect mind does not independently establish why necessity selects mentality, perfection, creative agency, or divinity. Live burden: Jones must supply comparative reasons showing that the explanatory foundation is more plausibly a conscious perfect creator than Schmid’s broader class of necessary concrete realities, while avoiding reliance on definitions that simply incorporate the desired conclusion."
+    },
+    {
+      "candidateId": "con-stage-two-underdetermination",
+      "kind": "card",
+      "moveId": "con-stage-two-underdetermination",
+      "sectionId": "stage-one-stage-two",
+      "sectionTitle": "What follows from a necessary foundation",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "A generic contingency argument may support one or more necessary concrete foundations without establishing that any is Godlike.",
+      "inference": "Granting stage one leaves stage two as a separate and uncompleted identification task.",
+      "sourceSpan": {
+        "startEvent": 494,
+        "endEvent": 529,
+        "startMs": 1158059,
+        "endMs": 1230299,
+        "excerpt": "okay so my view on contingency arguments more generally is that it depends on the contingency argument contingency arguments are a family of arguments it's like ontological arguments or it's like teleological arguments it's really a family of different arguments you have modal contingency arguments you have non-modal contingency arguments you have ones that focus on causation ones that focus on explanation ones that rule out infinite regresses of certain sorts ones that don't so it all just kind of depends on which contingency we're talking about that said if we're just talking about a kind of plain vanilla contingency argument like there are contingent things if there are contingent things then there's probably an explanation of them and if there's probably an explanation of them then there's probably something like a necessary concrete being necessary concrete foundation of reality let's say I'm sympathetic with that so I'm sympathetic with that broad brush Strokes plain vanilla style stage one of contingency arguments that there is some one or more necessary concrete foundational realities stage two then as Michael rightly pointed out then tries to infer that this concrete necessary Foundation is God or at least has certain god-like features and that's where I tend to jump ship"
+      },
+      "respondsToIds": [
+        "pro-stage-structure"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-stage-structure",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid grants that contingent things may indicate necessary concrete foundations but argues this concession leaves the separate second-stage God-identification inference entirely unresolved.",
+      "critique": "Strongest feature: Schmid grants Jones’s broad stage-one conclusion and then isolates the exact inferential burden at issue, demonstrating that necessity and concreteness alone remain compatible with one or several foundations lacking distinctively divine characteristics. Principal limitation: This opening diagnosis establishes underdetermination structurally but does not yet rank particular alternatives or explain which evidential standards should govern the comparison between a perfect mind and competing necessary realities. Live burden: Schmid must keep credible nondivine foundations available through the later exchanges and show that Jones’s arguments from unlimitedness, idealism, consciousness, and explanatory scope fail to close the acknowledged second-stage gap."
+    },
+    {
+      "candidateId": "pro-unlimited-parsimony",
+      "kind": "card",
+      "moveId": "pro-unlimited-parsimony",
+      "sectionId": "stage-one-stage-two",
+      "sectionTitle": "What follows from a necessary foundation",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "A perfect unlimited necessary being is simpler than a quasi-great foundation because arbitrary limits create further facts needing explanation.",
+      "inference": "Explanatory parsimony favors no arbitrary limits; a foundation without them is perfect.",
+      "sourceSpan": {
+        "startEvent": 236,
+        "endEvent": 271,
+        "startMs": 620940,
+        "endMs": 701880,
+        "excerpt": "Richard swinburne I would argue that a necessary being is the most likely explanation why well because we want to sort of reduce the number of brute facts when it comes to explanations and if we just appeal uh to just something that is not absolutely perfect we start to create arbitrary limits and we want to want to reduce the number of limits and brute facts as much as possible so if I were to appeal to say sort of like a quasi-purpect being not a not a perfect being like a quasi-great being we would have to ask a question about okay well why does this foundation for the universe have a arbitrary limit why is it not all powerful uh what sets this sort of arbitrary limit so Josh Rasmussen says uh basically like well we sort of add additional complexity there to explain this additional limit it has and instead it's just simpler because Simplicity is a very important part of this argument we want a simple explanation not just a coherent one one that explains all of the data but something that is simple and if you start setting sort of like a quasi-great being or a quasi-grade substance we need to ask questions about why it has certain limits and a similar explanation to why there are contingent things would have no limits uh because it would just simply be perfect so I would argue that it is a perfect being"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Jones argues an unlimited perfect being is simpler because quasi-great foundations contain arbitrary limits that introduce additional unexplained brute facts requiring further explanation.",
+      "critique": "Strongest feature: Jones gives the perfect-foundation claim an explanatory mechanism, arguing that unexplained limitation adds complexity whereas unrestricted perfection eliminates stopping points and consolidates the terminus under one principle. Principal limitation: The inference treats absence of limits as equivalent to possession of maximal attributes, without establishing that each property applies to the foundation or that an unlimited package is simpler than restricted alternatives. Live burden: Jones must justify the bridge from avoiding arbitrary quantitative ceilings to omnipotence, knowledge, goodness, and mentality, then compare the auxiliary commitments required by that package against those required by quasi-great or impersonal foundations."
+    },
+    {
+      "candidateId": "con-competing-foundations",
+      "kind": "card",
+      "moveId": "con-competing-foundations",
+      "sectionId": "stage-one-stage-two",
+      "sectionTitle": "What follows from a necessary foundation",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "Numerous naturalistic and non-naturalistic necessary foundations compete with God and differ in simplicity and predictive power.",
+      "inference": "The breadth and heterogeneity of live rivals make confident divine identification premature.",
+      "sourceSpan": {
+        "startEvent": 535,
+        "endEvent": 607,
+        "startMs": 1237860,
+        "endMs": 1370580,
+        "excerpt": "and uh for me I'm agnostic on what the necessary Foundation might be I think there are boatloads of different proposals there are certain theistic proposals uh you know different models of God there but there are non-theistic proposals and those can be you know categorized into naturalistic and non-naturalistic so on the naturalistic side it could be one or more Quantum Fields it could be universal wave function which could be construed in either spatial temporal or non-spatial temporal terms it might be a collection of mariological symbols or physical symbols it might be relations a lot of structural realism it might be Dynamic Physical principles David Gunn has a paper that he published in the Philosopher's imprint uh wherein he talks about this it's called on the ultimate origination of things it could be the universe as a whole Allah Jonathan shaffer's priority monism it could be grandmapi's initial Singularity it could be matter or energy those are just the naturalistic non-theistic proposals but they're also non-naturalistic non-theistic foundations that might be the foundation of reality you could have a kind of neoplatonic one this absolutely simple impersonal being that uh that emanates all of the rest of the complex realm that we uh that we see around us it could be a kind of atheistic tomeism as I call it not tomeism in the sense of you know there's this absolutely simple Divine being but no it is an absolutely simple being but it's just not Divine it's just this impersonal being which his subsistent existence itself it's a purely actual being its Essence is numerically identical with its existence from which flows everything else all the things in which Essence and existence are distinct you could kind of give an atheistic domestic view you could have an atheistic Aristotelian purely actual unmoved mover you could have the Tau you could have Brahman I mean there are so many Brahmin impersonally construed of course there are different strands of Hinduism okay so that is all just to say that um by my lights there are lots of different candidates for what the necessary Foundation might be and lots of them are going to predict different things depending on whether or not you have a non-theistic non-naturalistic one depending on whether you have a naturalistic one their Simplicity is going to diverge their explanatory power is going to diverge and all that just makes me extremely hesitant to um you know confidently pronounced on stage two uh given that there are so many hosts of different hypotheses here which um vastly diverge from one another and also diverge in terms of their Simplicity intrinsic probability their the way that they predict the data Etc okay and so that's part of the reason"
+      },
+      "respondsToIds": [
+        "pro-stage-structure"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-stage-structure",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid lists diverse naturalistic and nonnaturalistic necessary foundations, arguing their varied simplicity and predictive consequences prevent confident selection of a divine mind.",
+      "critique": "Strongest feature: Schmid converts abstract underdetermination into a competitive field, distinguishing physical, axiological, modal, and conscious possibilities whose simplicity and predictive consequences could differ from the proposed perfect divine mind. Principal limitation: Listing heterogeneous candidates shows logical availability more readily than serious explanatory viability, because several alternatives receive no developed account of how they ground contingent reality or predict the phenomena Jones invokes. Live burden: Schmid must demonstrate that at least some named rivals remain competitive after evaluating explanatory reach, intrinsic complexity, brute commitments, consciousness, value, and the production of a contingent cosmos rather than relying on possibility alone."
+    },
+    {
+      "candidateId": "pro-perfect-being-explanatory-scope",
+      "kind": "card",
+      "moveId": "pro-perfect-being-explanatory-scope",
+      "sectionId": "perfection-simplicity-and-brute-facts",
+      "sectionTitle": "Whether unlimited perfection is simpler",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Absolute perfection unifies the foundation’s attributes and explains consciousness, morality, natural laws, and their maintenance.",
+      "inference": "One perfection posit supplies more consequences with fewer separate brute facts than an impersonal substance.",
+      "sourceSpan": {
+        "startEvent": 298,
+        "endEvent": 335,
+        "startMs": 759660,
+        "endMs": 839399,
+        "excerpt": "he points out that if a being entails absolute perfection it reduces the number of brood facts namely that this is the only root faculty to this being has absolute perfection if it's just a necessary substance that doesn't have absolute perfection in the form of a being then there's no reason as to why it's necessary it's just another uh uh brute fact added on top of there so it would make more sense to posit something that has absolute perfection because all you have to do is positive absolute perfection and once you pause that it explains all of the properties this being would have uh it would also explain many things we see in the universe because when we're talking about the contingency argument we're talking about everything that sort of came into existence so theism positing a being has more explanatory value because it's an ontology like we experience uh morality in this universe well why well because that would flow from this being's goodness we have Consciousness we're conscious beings well why well because we came from a necessary conscious being instead of pausing some necessary substance that isn't conscious and then somehow creates Consciousness overcoming the hard problem again it's another thing that would need to be explained uh God Can Explain the laws of nature as well because he has the power to create them and it is a desire to sustain them for conscious creatures to emerge so the ontology of a perfect"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Jones says one absolute-perfection posit unifies divine attributes while explaining consciousness, morality, natural laws, and their continued cosmic support for conscious creatures.",
+      "critique": "Strongest feature: Jones extends the simplicity comparison beyond verbal economy, proposing that absolute perfection unifies divine attributes while supplying a source for consciousness, morality, stable natural laws, and cosmic production. Principal limitation: The move assumes rather than derives the perfection-to-attribute connections, and its explanatory applications risk becoming separate auxiliary claims about goodness, consciousness, power, desires, and lawmaking instead of consequences of one property. Live burden: Jones must specify how absolute perfection entails the relevant attributes and worldly outcomes, show that those entailments are not brute principles, and compare their predictive discrimination against an impersonal necessary foundation."
+    },
+    {
+      "candidateId": "con-unlimited-needs-auxiliaries",
+      "kind": "card",
+      "moveId": "con-unlimited-needs-auxiliaries",
+      "sectionId": "perfection-simplicity-and-brute-facts",
+      "sectionTitle": "Whether unlimited perfection is simpler",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "Calling the foundation unlimited is verbally simple but deriving omniscience, omnipotence, and goodness requires auxiliary hypotheses.",
+      "inference": "Conceptual complexity and added auxiliaries undermine the claimed simplicity and lower prior probability.",
+      "sourceSpan": {
+        "startEvent": 625,
+        "endEvent": 666,
+        "startMs": 1403100,
+        "endMs": 1477980,
+        "excerpt": "firstly you said that um The View on which the foundation is unlimited is simpler now it might be simpler in the sense of it doesn't take as many words to say like oh it's unlimited you know it's just it's kind of syntactically simple to be able to State it but it's not clear to me that it's simple hypothesis when we're not just taking into account like the words that used to say it but like the actual conceptual content contained they're in because what you're really saying is that um it's like it's not just unlimited but it's Unlimited in all these different respects right axiologically unlimited unlimited goodness unlimited power and so on and in order from though in order to get to get those entailments just from the fact that it's unlimited you to add a bunch of auxiliary hypotheses you don't just get from this bear being unlimited or not being restricted that for instance it's omnibalent or that it's omniscient or that it is omnipotent you have to add auxiliary hypotheses Richard swinburne for instance adds auxiliary policies like reasons internalism and all these you know this huge elaborate edifice of hypotheses so it's not clear to me that it's actually simpler it might be simple to just say oh it's unlimited but when you actually try to flesh out the hypothesis and try to get non-trivial entailments from that you have to add a bunch of auxiliaries and that's going to lower its probability"
+      },
+      "respondsToIds": [
+        "pro-unlimited-parsimony"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-unlimited-parsimony",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid argues the word unlimited is syntactically simple, yet deriving knowledge, power, and goodness requires complex auxiliary hypotheses that lower prior probability.",
+      "critique": "Strongest feature: Schmid distinguishes a short verbal description from a economical theory, observing that omniscience, omnipotence, perfect goodness, mentality, and creative intentions require bridging principles rather than emerging automatically from the word unlimited. Principal limitation: The probabilistic language remains qualitative because no measure of conceptual complexity or prior probability is offered for comparing the divine package with the heterogeneous necessary foundations he keeps available. Live burden: Schmid must sustain this auxiliary-hypothesis accounting across Jones’s claims about perfection and explanatory scope, while acknowledging any genuine unification achieved if a defensible perfection principle entails several attributes together."
+    },
+    {
+      "candidateId": "con-perfections-remain-brute",
+      "kind": "card",
+      "moveId": "con-perfections-remain-brute",
+      "sectionId": "perfection-simplicity-and-brute-facts",
+      "sectionTitle": "Whether unlimited perfection is simpler",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "The claims specifying which attributes count as perfections appear primitive and may add many brute facts.",
+      "inference": "A perfect-being package cannot claim a brute-fact advantage until its attribute-generating principles are explained and compared with rivals.",
+      "sourceSpan": {
+        "startEvent": 714,
+        "endEvent": 760,
+        "startMs": 1551000,
+        "endMs": 1630080,
+        "excerpt": "um I also wonder about whether or not this minimizes brute facts uh at least with respect to certain other hypotheses like it's not clear to me because again in order to infer like you want to go from unlimited to perfect and from perfect you know a perfect being essentially has every Perfection and essentially lacks every imperfection but in order to get non-trivial entailments from that right you have to add in claims about what are Perfections what are the Perfections you're going to say uh being minded is a Perfection being knowledgeable and infinitely knowledgeable is a Perfection being powerful uh is a Perfection being good is a Perfection and so on so you're adding in these things and it's not clear to me that those have explanations right that they might be intuitive that might be a reason for thinking that they are true right it is intuitive that goodness is a Perfection or that knowledge is a perfection but that's separate from what explains why goodness is a Perfection or why knowledge is a Perfection and to me those seem just like kind of primitive I I don't I don't really see what more fundamental explanations we could point to to explain those and if that's the case well then in order to fill out your hypothesis in order to get these non-trivial entailments that really do bring you to God you're going to have to bring in lots of different fruit facts about which properties are indeed the Perfections and which properties of the imperfections it's actually not clear to me that you are minimizing brute facts at the very least it's not clear to me that compared all these competitor hypotheses you're going to have fewer bird facts"
+      },
+      "respondsToIds": [
+        "pro-perfect-being-explanatory-scope"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-perfect-being-explanatory-scope",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid contends that selecting which properties qualify as perfections introduces primitive principles, so perfect-being theory has not reduced brute facts without explaining them.",
+      "critique": "Strongest feature: Schmid targets the architecture of Jones’s unification proposal, arguing that a perfect-being theory cannot count every attribute as one fact unless it explains why properties qualify as perfections and cohere. Principal limitation: The objection does not distinguish controversial perfection criteria from secure candidates, so it may overstate the number of independent brute commitments if some attributes follow from a more general evaluative principle. Live burden: Schmid must show that the rules selecting knowledge, power, goodness, consciousness, and agency remain independent or unexplained to erase Jones’s claimed simplicity advantage over rival necessary foundations."
+    },
+    {
+      "candidateId": "con-unlimited-does-not-entail-perfect",
+      "kind": "card",
+      "moveId": "con-unlimited-does-not-entail-perfect",
+      "sectionId": "perfection-simplicity-and-brute-facts",
+      "sectionTitle": "Whether unlimited perfection is simpler",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "A foundation can be unlimited regarding a property by lacking that property altogether, so unlimitedness does not entail perfection.",
+      "inference": "If goodness or value does not apply to the foundation, absence of a finite degree supplies no route to maximal goodness.",
+      "sourceSpan": {
+        "startEvent": 761,
+        "endEvent": 810,
+        "startMs": 1628340,
+        "endMs": 1718100,
+        "excerpt": "uh the next thing that I want to say is that not having limits does not entail being perfect so being unlimited is not tail being perfect because there are actually three ways I think to be unlimited with respect to a certain property I gave two earlier you could have the property and have it to an infinite degree you could have the property and have it to a qualitatively complete manner or you could just lack the property altogether right because then you're not limited with respect to that property it's not like you have some finite degree and you're asking oh why is it that finite degree rather than that plus one or that minus one like why is it good to this extent rather than a little bit more a little bit less another way to be unlimited with respect to goodness is to simply be the kind of thing to which predicates like goodness and value do not even apply in the first place so a manner in which the foundation could be Unlimited maybe it it has no axiological properties whatsoever it doesn't have any goodness it doesn't have any of these things that contribute to Greatness and it's just Unlimited in the various respects that it does have so maybe it's maybe it's like a Timeless non-spatial temporal universal wave function or something like that and it just it doesn't even have value properties and so it's not as though it has some limited degree of value no it's a thoroughly unlimited thing it's just it doesn't even have these relevant properties that could allow you to infer that it's like uh infinitely good or things like that so I don't think being unlimited entails being perfect which is crucially needed for this argument to succeed you need to be able to go from being unlimited to being perfect and I just don't think that works"
+      },
+      "respondsToIds": [
+        "pro-unlimited-parsimony"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-unlimited-parsimony",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid observes that lacking a property can make a foundation unlimited regarding it, so absence of limitation cannot entail maximal goodness or perfection.",
+      "critique": "Strongest feature: Schmid identifies an equivocation in the unlimitedness inference, because something can lack a finite ceiling by lacking the property altogether, leaving no route from unrestrictedness to maximal goodness, knowledge, or power. Principal limitation: The argument establishes a gap but does not exclude reasons for thinking the necessary foundation possesses the relevant properties before their magnitudes are considered, which Jones could attempt through explanatory scope. Live burden: Schmid must show that Jones’s independent appeals to consciousness, value, and cosmic order do not first establish property possession strongly enough for an anti-limit principle to support maximality."
+    },
+    {
+      "candidateId": "pro-idealism-to-necessary-mind",
+      "kind": "card",
+      "moveId": "pro-idealism-to-necessary-mind",
+      "sectionId": "idealist-route-to-mind",
+      "sectionTitle": "Whether idealism identifies a necessary divine mind",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "If physical reality reduces to information dependent on consciousness, contingent minds and matter are best grounded in a necessary consciousness.",
+      "inference": "Idealism makes mind fundamental and avoids deriving consciousness from an ontologically different physical base.",
+      "sourceSpan": {
+        "startEvent": 363,
+        "endEvent": 454,
+        "startMs": 889500,
+        "endMs": 1079280,
+        "excerpt": "idealist and by what that means is I believe that all reality is essentially mind I don't believe in two substances mine and matter I would say all his mind and matter it just reduces to essentially information which is contingent upon mind so basically Let me Give an example explain this so take a look at my phone here so I could explain it as hard um front is shiny it lights up um you know I can explain it in terms of colors qualia these types of things and using David hume's bundle Theory as modern idealists do we'd argue physical objects reduce basically to properties I can explain it all of it in terms of its properties um meant but these are mental properties I'm explaining in terms of qualia uh how it appears and whatnot without any reference to a physical actual substance so the idealist approach simply says that all of physical reality reduces to information I'm not gonna get into the physics uh because Joe said he's not has not really studied that but I will just simply say that it that does seem to be where the physics is going as well so philosophers like mine are Coleman have argued that physics and Quantum field Theory basically is reducing to information and he is positing something called antic structural realism which essentially means we're describing physical reality not in terms of substance or particles down there but just in terms of information so physical reality seems to reduce to information on that that's all I'll say on there so my Essential my view is like if an idealist approach is more likely all of physical reality reduces to information which is contingent upon mind uh then we need to ask simple questions so it seems as though is that uh Consciousness does not come from matter matter seems to be information contingent upon conscious Minds and if that's the case we need to ask the simple questions like well where do I our minds come from because we're contingent so it would be more far more likely that if Consciousness is more fundamental than matter our conscious experience is what I mean uh then there are probably our own contingency would depend on a larger mind so to speak I'm just using larger in a colloquial sense there but some sort of necessary contingent necessary conscious mind excuse me uh from which all of reality emerges from uh so here's generally what I'm trying to say here so if you're going to take a physicalist or a materialistic approach uh you can't really pause it like this underlying particles anymore because of quantum field Theory everything seems to reduced information so you got to pause it an undetectable material some sort of substance down there that gives rise to Quantum field theory that then gives rise to particles that then gives rise to people life and conscious experience there's a lot of um things you got to explain in that field whereas on an idealistic approach you start with what we know exists we know we're conscious we know Consciousness exists and we can explain it in terms of its own ontology not appealing to a physical ontology so we start with Consciousness it's fundamental gives rise to the physical world and then if all of reality is mind well it entails that there's some sort of and there is a necessary Foundation uh it entails of that underlying Foundation would also be a mind or conscious in some sort and that is what we would call God"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Jones argues physical reality reduces to mind-dependent information, making contingent minds and matter more naturally grounded in a necessary consciousness than physical substance.",
+      "critique": "Strongest feature: Jones offers a substantive route from contingency to mentality by combining mind-dependent information, the acknowledged existence of consciousness, and ontological continuity between finite experience and a necessary conscious foundation. Principal limitation: The move compresses disputed claims about idealism, physics, information, and dependence into one progression, without establishing that informational description entails mind dependence or that a necessary consciousness possesses personal divine attributes. Live burden: Jones must defend idealism independently, clarify the relevant notion of information, explain how contingent minds arise from the foundational mind, and show why this foundation is God rather than impersonal consciousness."
+    },
+    {
+      "candidateId": "con-common-sense-against-idealism",
+      "kind": "card",
+      "moveId": "con-common-sense-against-idealism",
+      "sectionId": "idealist-route-to-mind",
+      "sectionTitle": "Whether idealism identifies a necessary divine mind",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "Ordinary intuitions favor a nonmental external world, making it surprising that a divine idealist reality would leave creatures systematically resistant to its nature.",
+      "inference": "Theistic idealism has an adverse prediction if God permits widespread, innocent intuitive error about basic reality and God’s relation to it.",
+      "sourceSpan": {
+        "startEvent": 922,
+        "endEvent": 991,
+        "startMs": 1909320,
+        "endMs": 2031779,
+        "excerpt": "and then on to idealism briefly um so I'm actually I mean I I don't have too much to say on idealism I'm not as resistant as many people might imagine uh me to be or imagine a non-theist to be I think idealism is actually quite a respectable view about reality one worry that I've had and I don't know how serious this is uh Michael's probably going to demolish this I don't know how serious this is but like it seems to be the case that we're all intuitively kind of commonsensely resistant to idealism uh you know you had what was it Jonathan Edwards who upon hearing about idealism says I refute it thusly and then he kicks up the little uh the rock now of course that's not totally fair to idealist but I think it's showing that it's kind of like common sense it's kind of intuitive that I we're not intuitive idealists we are intuitive shall we say external World physical object realists now of course I know you believe in physical objects and believe in an external world but I mean like how common sense conceives of them as non-mental so if that's the case if we are indeed as it seems to me in all my undergrad philosophy classes and talking with everyone that I have about idealism who isn't antecedently an idealist it seems as the world kind of intuitively resistant to idealism and we have this kind of intuitive common sensical view on which idealism is false but if that's the case well then I don't know that seems to be very surprising that that God would create us with these plausibility structures these intuitive commonsensical structures which are like radically misguided about the fundamental nature of reality and about God's nature like um that just seems really implausible like now imagine imagine if God created us so that we were like really resistant to being theists like that would be really surprising on theism of course this isn't as radical as that but it's kind of close I mean this is something about the fundamental nature of God himself how he relates to creation and uh how creation is fundamentally like yeah anyway it just seems surprising that that God would I mean I'm not saying it's deceptive but it just it seems surprising that he would create us so that we are so intuitively resistant to the way that the reality really is and to the way that God himself is so that that's one worry that I have and again I don't know how serious that is that that this could be totally blown out of the water"
+      },
+      "respondsToIds": [
+        "pro-idealism-to-necessary-mind"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-idealism-to-necessary-mind",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid argues ordinary external-world intuitions make theistic idealism predict widespread innocent human error about reality’s basic nature and God’s relation to creatures.",
+      "critique": "Strongest feature: Schmid formulates an internal predictive challenge rather than merely asserting realism, asking why a good divine idealist foundation would permit widespread, innocent, and apparently natural resistance to the mind-first character of reality. Principal limitation: Common-sense distribution and its evidential authority are not established, and divine permission of metaphysical error may have explanations unrelated to the truth of idealism, making the adverse prediction comparatively weak. Live burden: Schmid must show that external-world intuitions are robust across cultures, epistemically trustworthy in this domain, and significantly more expected under realism than under theistic idealism after plausible divine purposes are considered."
+    },
+    {
+      "candidateId": "pro-idealist-intuitions-cultural",
+      "kind": "card",
+      "moveId": "pro-idealist-intuitions-cultural",
+      "sectionId": "idealist-route-to-mind",
+      "sectionTitle": "Whether idealism identifies a necessary divine mind",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Resistance to idealism may reflect Western cultural inheritance rather than a universal basic intuition.",
+      "inference": "Cross-cultural acceptance of mind-first metaphysics weakens the claim that idealism conflicts with common sense as such.",
+      "sourceSpan": {
+        "startEvent": 1230,
+        "endEvent": 1277,
+        "startMs": 2484900,
+        "endMs": 2584740,
+        "excerpt": "um this just doesn't seem intuitively there are two things I want to say on that uh for one let me start culturally speaking I don't I I feel like that's a cultural a cultural belief we have that it's intuitive that idealism is just wrong because if you go to like East the Eastern religions it's the exact opposite like in India for example or southeast Asia and if you go back to the ancient near East for example they had a lot of intuition about the nature of physical reality that we don't share uh like um understanding of time for example was radically different uh compared to ours uh their understanding of um of the their home their own selves I mean uh there is debate about this I will acknowledge that but they seem to be more modest or modest in terms of how they thought of themselves not so much substance Duelists in the ancient near East uh now they I still think they did believe in some form of spirit but they tend to identify it with um air or breath in that kind of sense so yeah I I think in the west we definitely have this intuitive resistance to idealism because that's because I think we're very much sort of Basking in our history of materialism or substance dualism and that seems to be the resistant here because if you go to like India or Far East they're like oh yeah this is what we believe for centuries like it's not a not a big deal like what you call idealism is just you know the way we look at reality and have you know for you know centuries one century so I wonder if that's more of a I mean I think it's an important point to bring up but I'm glad you did because it is something I do see with people I think maybe it's more just a cultural thing not so much in actual like base intuition I guess"
+      },
+      "respondsToIds": [
+        "con-common-sense-against-idealism"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-common-sense-against-idealism",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones responds that anti-idealist intuitions may reflect inherited Western culture, since cross-cultural mind-first metaphysics substantially weakens Schmid’s appeal to universal common sense.",
+      "critique": "Strongest feature: Jones directly challenges the empirical generalization supporting Schmid’s common-sense objection, noting that culturally prominent mind-first traditions make allegedly universal realist intuitions less secure and reduce their evidential force against idealism. Principal limitation: The existence of idealist traditions does not establish ordinary pretheoretical intuition within those cultures, distinguish elite metaphysical doctrine from common cognition, or provide comparative evidence about how widespread each intuition actually is. Live burden: Jones must substantiate the cross-cultural distribution claim and explain why doctrinal diversity should defeat rather than merely qualify Schmid’s proposed adverse prediction for theistic idealism."
+    },
+    {
+      "candidateId": "con-idealism-still-underdetermines-theism",
+      "kind": "card",
+      "moveId": "con-idealism-still-underdetermines-theism",
+      "sectionId": "idealist-route-to-mind",
+      "sectionTitle": "Whether idealism identifies a necessary divine mind",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "Even if idealism were true, fundamental conscious properties, an impersonal consciousness, or impersonal Brahman could fit the evidence.",
+      "inference": "Idealism would favor theism over many hypotheses but still underdetermine a personal, free, good God.",
+      "sourceSpan": {
+        "startEvent": 1391,
+        "endEvent": 1432,
+        "startMs": 2796660,
+        "endMs": 2881440,
+        "excerpt": "yeah so I think that would be really good evidence for it being a theistic foundation but I definitely think that there are ways in the epistemic space for it not to be theistic so like there could be these sort of you know we could make these sort of subtle distinctions between conscious properties and then a conscious mind which Harbors those conscious properties so maybe there's like some sort of um fundamentally fundamental conscious properties which are ubiquitous but maybe there's no fundamental mind which Harbors them um maybe you're just asking about whether or not there's a fundamental mind even if there is you know maybe it's just a kind of it doesn't have further properties like free will or goodness or anything like that maybe it's more so just like um you know just this more it kind of impersonal could impersonally conceived Consciousness that's out there um along the lines of how some might view Brahman in fact um now again I recognize that there are personalist strands of Hinduism uh and then there are impersonalist strands and I'm talking about the impersonalist trans people uh uh I've I've been berated on that enough to uh to emphasize that three billion times okay so yeah I do think it would provide a lot of evidence for theism because theism predicts that wonderfully and there are tons of hypotheses that don't predict that wonderfully and there are only a few that do but among those few I still think that that would under under determine which of those is correct"
+      },
+      "respondsToIds": [
+        "pro-idealism-to-necessary-mind"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-idealism-to-necessary-mind",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid grants idealism provisionally but argues fundamental conscious properties, impersonal consciousness, or Brahman could fit it without yielding a personal, free, good God.",
+      "critique": "Strongest feature: Schmid grants Jones’s disputed idealism for argument’s sake and demonstrates that even this favorable premise leaves several mind-first ontologies available, including impersonal consciousness, conscious properties, and impersonal Brahman. Principal limitation: The alternatives are characterized broadly and their capacity to ground contingent minds or physical information is not developed, so the move establishes underdetermination more securely than equal explanatory performance. Live burden: Schmid must preserve these alternatives against Jones’s simplicity and continuity replies while showing that personality, freedom, goodness, and creative agency require further evidence beyond consciousness being fundamental."
+    },
+    {
+      "candidateId": "pro-conscious-foundation-counts-theistic",
+      "kind": "card",
+      "moveId": "pro-conscious-foundation-counts-theistic",
+      "sectionId": "idealist-route-to-mind",
+      "sectionTitle": "Whether idealism identifies a necessary divine mind",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "If consciousness is fundamental, simplicity favors a conscious necessary foundation, which is already a theistic sort of account.",
+      "inference": "A mind-first ontology should preserve mentality at its necessary foundation rather than terminate in impersonal nonmind.",
+      "sourceSpan": {
+        "startEvent": 1435,
+        "endEvent": 1453,
+        "startMs": 2883420,
+        "endMs": 2919660,
+        "excerpt": "um but yeah I I I was interesting what you said there I do that's that's kind of been my my whole thing like because I have people that will message me and go like you know can you be like an atheist an idealist and I'm like I there are I mean there definitely are I just to me logically it just doesn't seem to follow I think you know if idealism is true it does sort of lead to the necessary Foundation being some sort of being I mean it could be Brahman like you said but I still think you know that still that still seems like a theistic account for me and I think just in terms of like Simplicity if Consciousness is fundamental we would expect the foundation to be conscious but we can move on because that's that's"
+      },
+      "respondsToIds": [
+        "con-idealism-still-underdetermines-theism"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-idealism-still-underdetermines-theism",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones says a simple mind-first ontology should preserve consciousness at its necessary foundation, which already constitutes a broadly theistic explanation rather than impersonal nonmind.",
+      "critique": "Strongest feature: Jones clarifies that his immediate target is a broadly theistic conscious foundation, using ontological continuity and simplicity to resist terminating a mind-first account in something wholly impersonal or nonmental. Principal limitation: Calling a necessary consciousness theistic relaxes the original identification burden, while the inference from fundamental consciousness to a unified personal mind remains unsupported and does not recover freedom, goodness, creative agency, or perfection. Live burden: Jones must distinguish conscious properties, impersonal consciousness, and a personal subject, then establish why the simplest necessary mental foundation has the richer features associated with God."
+    },
+    {
+      "candidateId": "pro-trinity-perfect-community",
+      "kind": "card",
+      "moveId": "pro-trinity-perfect-community",
+      "sectionId": "divine-limits-and-trinitarian-replies",
+      "sectionTitle": "Whether divine plurality defeats the anti-limit argument",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Three divine persons may be the minimum complete community of love and the experiential structure needed for perfect self-understanding.",
+      "inference": "A principled perfection-based role for three persons could explain rather than merely stipulate the apparent numerical limit.",
+      "sourceSpan": {
+        "startEvent": 1535,
+        "endEvent": 1586,
+        "startMs": 3076980,
+        "endMs": 3185220,
+        "excerpt": "whole trinitarian thing is a limit thing I think it's a good approach um I may I would probably try to build off swinburne a little bit here and um I was thinking about this the other day and about the whole limit thing first of all I think when we're talking about you know being being unlimited I think we're talking about him in terms of properties uh not so much you know and I don't think the persons are properties of God uh but I think maybe uh you can make a case uh so swinburne for example talks about you know it's having three persons is the uh the uh the essential amount you need to have a community of love two is just love between two persons but having three sort of creates a community and that creates a perfect a perfect understanding of Love uh I was thinking about that in uh in terms of swinburne but maybe thinking more about an experience uh in a way so you know like um oftentimes we don't have full knowledge about about ourselves uh from our own perspective sometimes we need an outside perspective to sort of join in uh and sort of give us more insight about who we are as a person and having two persons helps that however sometimes couples who are really know each other quite well uh sometimes need to seek even a third person they'll go to couples counseling and get therapy so really uh you know two people also need that third perspective outside to truly fully understand themselves so maybe one could argue and I I have never You Know spoken about this to anybody so I don't even know if this is heretical so I'll just say that or if I'm wrong or if I'm making some sort of error here but maybe the Trinity is sort of like a necessary aspect and can be explained by the fact that maybe it's the perfect way for God to fully understand himself in terms of experience and knowledge and being able to experience himself from different persons and three is the max that is needed to fully understand and be a complete perfect being what are your"
+      },
+      "respondsToIds": [
+        "con-unlimited-does-not-entail-perfect"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-unlimited-does-not-entail-perfect",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones proposes three divine persons as the minimal complete loving community and experiential structure required for perfect self-understanding, potentially explaining divine plurality.",
+      "critique": "Strongest feature: Jones attempts to convert the Trinity’s numerical specificity from an apparent arbitrary limit into a perfection-based consequence, connecting three persons with complete interpersonal love and an external perspective on self-understanding. Principal limitation: Finite counseling analogies do not establish needs within an omniscient being, and neither perfect love nor experiential self-knowledge is shown to require exactly three rather than two, four, or indefinitely many persons. Live burden: Jones must derive the minimum of three from independently defended divine perfections without presupposing creaturely cognitive limitations or introducing an auxiliary numerical principle inconsistent with his anti-arbitrariness rationale."
+    },
+    {
+      "candidateId": "con-omniscience-removes-third-perspective-need",
+      "kind": "card",
+      "moveId": "con-omniscience-removes-third-perspective-need",
+      "sectionId": "divine-limits-and-trinitarian-replies",
+      "sectionTitle": "Whether divine plurality defeats the anti-limit argument",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "The need for outside perspectives applies to limited persons, not an essentially omniscient infinite being.",
+      "inference": "An already perfect knower gains no explanatory need for additional persons from finite analogies about counseling or self-discovery.",
+      "sourceSpan": {
+        "startEvent": 1594,
+        "endEvent": 1640,
+        "startMs": 3196740,
+        "endMs": 3295020,
+        "excerpt": "I mean there are I think a few ways to go so one just one briefly at the beginning you said you know like the unlimited thing applies to properties and the presence of properties but you know we can just talk about the property of like being trinitarian or you know existing in three persons yeah like that sort of property is indeed going to be a kind of limited property in the sense of it's not four it's not five Etc so um and then as your positive proposal itself so I guess I have one thing to say about the proposal itself and then two things to say about um how it relates to the argument from limits um so the first thing to say about the proposal itself is that um like that kind of outside perspective needed in order to have a kind of full understanding I can see that in the case of finite persons who aren't omniscient but like precisely because we're not Omni understanding we don't have Perfection but we're not talking about finite persons who need some kind of help from you know that kind of other perspective that needs to help them to grow in understanding or something they are already omniscient essentially by Nature Etc so I don't really see how that could work with an omniscient infinite uh personal being I could definitely see how it works with us like yeah I need uh I might um in some sense maybe not need is not the word but a couple brings out things in one another brings out depths and layers of understanding which is not present in one and the same thing would be true if they go to like a counselor or a third person or something but uh yeah that just applies to finite things because of our limitations and so on that doesn't seem to me to apply to an infinite being so I guess I'll turn it"
+      },
+      "respondsToIds": [
+        "pro-trinity-perfect-community"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-trinity-perfect-community",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid argues finite persons need outside perspectives because they are limited, whereas an essentially omniscient being gains no knowledge from additional persons.",
+      "critique": "Strongest feature: Schmid exposes the mismatch between Jones’s counseling analogy and the proposed divine case, since an essentially omniscient person cannot acquire overlooked truths or corrective perspectives in the manner characteristic of limited human agents. Principal limitation: The reply focuses on propositional information and therefore does not by itself eliminate Jones’s later distinction between knowing every truth and realizing irreducibly first-person or relational forms of experience. Live burden: Schmid must explain why experiential self-knowledge either belongs completely to one omniscient person or cannot generate a principled requirement for multiple divine persons, especially exactly three."
+    },
+    {
+      "candidateId": "pro-experiential-self-knowledge-distinction",
+      "kind": "card",
+      "moveId": "pro-experiential-self-knowledge-distinction",
+      "sectionId": "divine-limits-and-trinitarian-replies",
+      "sectionTitle": "Whether divine plurality defeats the anti-limit argument",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Omniscience can mean knowing all true propositions while multiple persons manifest perfect experiential self-knowledge.",
+      "inference": "Distinguishing propositional knowledge from experience leaves room for plurality to realize a perfection without repairing informational ignorance.",
+      "sourceSpan": {
+        "startEvent": 1646,
+        "endEvent": 1678,
+        "startMs": 3302760,
+        "endMs": 3368160,
+        "excerpt": "yeah I would like to hear that uh so I think this is why I I didn't I didn't know um explain it in terms of knowledge but more in terms of experience uh not so not so I would Define omniscence as doing all true propositions uh but I mean like I don't think we need to explain omniscience and like you know God does not need to know what it is to be like Joe and to to sort of like so like you know some people try to say God cannot be omniscient uh because he cannot actually experience being me without also being God uh this is something I've heard on the internet I don't know if you've heard it but I've heard Layman make this argument uh but yeah so so you know omniscience is just knowing all true propositions so maybe it's more about God I think an extrinsic understanding of his own nature and through experience experiencing him himself through other persons he captures that more Perfection of what it is to truly know oneself as sort of what I was getting at so that's what I was getting at that's why I didn't really try to encapsulate in terms of prep knowledge but more in terms of experience perhaps but again this is the first this is the first I've only just been thinking about it as of recently so I don't know how how strong that is"
+      },
+      "respondsToIds": [
+        "con-omniscience-removes-third-perspective-need"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-omniscience-removes-third-perspective-need",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones distinguishes knowing every true proposition from possessing experiential self-knowledge, arguing multiple divine persons can realize relational perfection without correcting informational ignorance.",
+      "critique": "Strongest feature: Jones directly answers the omniscience objection by distinguishing exhaustive propositional knowledge from first-person and relational experience, thereby explaining how plurality might add a perfection without repairing any informational deficiency. Principal limitation: The distinction establishes conceptual room for plural experience but does not show that one divine person lacks experiential self-knowledge, that experiences can transfer across persons, or that exactly three persons are optimal. Live burden: Jones must articulate the relevant experiential good, demonstrate its necessity for absolute perfection, and derive the Trinitarian count without allowing the same rationale to favor four or indefinitely many perspectives."
+    },
+    {
+      "candidateId": "con-person-count-regress",
+      "kind": "card",
+      "moveId": "con-person-count-regress",
+      "sectionId": "divine-limits-and-trinitarian-replies",
+      "sectionTitle": "Whether divine plurality defeats the anti-limit argument",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "If more persons deepen experiential self-understanding, four or more should improve on three; stopping at three restores an arbitrary limit.",
+      "inference": "The proposal either generates indefinitely many persons or needs an auxiliary cutoff that conflicts with its anti-arbitrariness rationale.",
+      "sourceSpan": {
+        "startEvent": 1706,
+        "endEvent": 1743,
+        "startMs": 3417599,
+        "endMs": 3482940,
+        "excerpt": "uh yeah I'm still not seeing why you have to be multiple persons then but like if you're truly okay what is so deficient about perfection that there like needs to be multiple persons in order for it to be fully self-understanding like is like Perfection not sufficient in itself is being omniscient not sufficient in and of itself for fully knowing yourself even in an experiential manner that seems to me to be implausible but uh I mean maybe people have diverging intuitions there I mean I guess another point is like well if he needs if in some sense in order to be fully experientially understanding himself there need to be a multiplicity of persons well uh he'll understand himself even more if there are four and he'll understand himself even more if there are five and eight more if even if there are six and so on so then soon enough we've got a multiplication of persons ad nauseum um and so I mean you know ultimately you're just gonna say okay well maybe there's some finite number and so on and then we're getting into these arbitrary limits that you're trying to trying to avoid in the first place like oh maybe love for some reason just has to end in three or maybe uh you know perfect understanding just half standard three again we're getting into these kind of like adding these auxiliary hypotheses these brute facts these adding arbitrary limits and so on"
+      },
+      "respondsToIds": [
+        "pro-experiential-self-knowledge-distinction"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-experiential-self-knowledge-distinction",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid argues that if additional personal perspectives improve divine self-understanding, four should outperform three, producing indefinite plurality or an arbitrary unexplained numerical cutoff.",
+      "critique": "Strongest feature: Schmid turns Jones’s experiential rationale against the proposed numerical limit, showing that if another perspective increases perfect self-understanding, each further perspective seemingly supplies another improvement without a principled stopping point. Principal limitation: The regress depends on experiences remaining cumulatively valuable after a complete relational structure is reached, whereas Jones could attempt to identify a kind of community or relation instantiated fully by three. Live burden: Schmid must test and defeat any principled saturation account while maintaining that an auxiliary cutoff would reintroduce exactly the arbitrary limitation Jones’s perfection argument was designed to avoid."
+    },
+    {
+      "candidateId": "pro-parsimony-balanced-with-scope",
+      "kind": "card",
+      "moveId": "pro-parsimony-balanced-with-scope",
+      "sectionId": "comparative-explanatory-power",
+      "sectionTitle": "Whether theism best explains consciousness and reality",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Theism may contain brute facts, but parsimony must be balanced with explanatory scope for consciousness, value, laws, and cosmic production.",
+      "inference": "The relevant comparison is not verbal simplicity alone but the fewest brute commitments consistent with broad explanatory power.",
+      "sourceSpan": {
+        "startEvent": 1831,
+        "endEvent": 1894,
+        "startMs": 3650099,
+        "endMs": 3774059,
+        "excerpt": "yeah I mean I'm not going to deny uh there are there are clearly brute facts on on theism and of course I'm not saying the the non-theists can can not appeal to brute facts to explain you know the necessary Foundation that would not be God uh I think it's about for me following you know uh uh what's that guy's name who I'm thinking of um Ryan Byerly that's what I'm picking up but um it's about like um reduce reduction so I mean yeah you could make a case there's a limitation here limitation here uh there's a brute fact here I think the point the theist is trying to make is that we're trying to reduce as much well maintaining as much as Simplicity really a better word would be parsimony because you know if we're gonna go with the simplest explanation we should also just agree with the Greek philosopher thales that everything is water because that's the simplest everything is just water I can explain everything by saying it's water boom I win it's the simplest but we would acknowledge you know like that doesn't that doesn't explain everything it just it just is it's simple but it doesn't it doesn't have explanatory scope or power so we want you know we want a world view that is explained power plausibility and is the least ad hoc so Simplicity is important but it's not the only thing if especially if we're going to sacrifice explanatory power and scope which I think is more important so I think the theist would respond going yeah of course you know there's going to be complexity in there there's going to be brute facts in there when we're talking about God is a necessary Foundation but I think the argument would be like in return it's like well the naturalist is going to have to make more uh the natural says to posit more brute facts um in terms of like why it's necessary why it um is able to bring about a universe why he's able to bring about conscious beings and overcome the infamous hard problem of Consciousness that also you know experience value and why you know these types of things uh it just seems like theism has more explanatory scope in terms of that with power because it can explain it with God's ontology sort of going from there but I I just want to be clear I'm not denying there's definitely gonna be facts on theism and my opening thing I just said we want to reduce the number and I think the argument that swinburne puts forward is this is going to reduce the most amount of bruteness that makes"
+      },
+      "respondsToIds": [
+        "con-unlimited-needs-auxiliaries",
+        "con-perfections-remain-brute",
+        "con-person-count-regress"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-unlimited-needs-auxiliaries",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        },
+        {
+          "targetMoveId": "con-perfections-remain-brute",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        },
+        {
+          "targetMoveId": "con-person-count-regress",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones argues simplicity must be balanced against explanatory scope, with theism’s brute commitments potentially explaining consciousness, value, laws, and cosmic production together.",
+      "critique": "Strongest feature: Jones correctly reframes theoretical comparison as a balance between economy and explanatory reach, emphasizing that a richer ontology can outperform a thinner rival if it unifies consciousness, value, natural laws, and cosmic production. Principal limitation: The move inventories desired explanatory targets without demonstrating that theism predicts them, specifying the relevant divine mechanisms, or comparing its total auxiliary commitments against developed rival accounts on a common standard. Live burden: Jones must convert broad compatibility into discriminating explanation by showing why these phenomena are appreciably more expected given a perfect conscious creator and why the required intentions or bridging principles are not independent brute facts."
+    },
+    {
+      "candidateId": "con-consciousness-construction-parity",
+      "kind": "card",
+      "moveId": "con-consciousness-construction-parity",
+      "sectionId": "comparative-explanatory-power",
+      "sectionTitle": "Whether theism best explains consciousness and reality",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "Theistic idealism still faces a primitive construction problem: how one unlimited subject yields many finite subjects of experience.",
+      "inference": "Replacing physical-to-mental emergence with large-mind-to-small-minds emergence may relocate rather than solve the hard explanatory gap.",
+      "sourceSpan": {
+        "startEvent": 1922,
+        "endEvent": 2062,
+        "startMs": 3828780,
+        "endMs": 4110359,
+        "excerpt": "I do wonder whether or not theism does have explanatory advantages in those other areas so maybe we could just so let's pick let's pick one um let's pick one that's fun the hard problem of Consciousness does theism have an advantage there um so let me let me tell you I don't think theism has an advantage here I would say I theistic idealism has an advantage okay because I just okay Okay so it depends on the relative relevant competitive hypothesis you said naturalism really so uh well naturalism itself is a little bit of a uh weasel word um I'm really I'm really trying to keep physical physical because I got well physicalism is um the difference between physicalism and like naturalism is you like for example um uh David Chalmers is a naturalist but not a physicalist I would say so naturalism would just be like everything sort of reduces to like you know something natural I guess I'm trying to keep things simple for the audience because I got so many comments saying oh this will go over my head so I'm trying really hard to make sure the Audi I can keep the audience and so I apologize yeah if I'm oversimplifying something and there's a philosopher going well actually because that'll always I apologize about yeah simplifying things too much but physicalism is generally the idea so materialism is the idea everything reduces the particles uh Sean Carroll advocates for something like that uh physicalism is the idea everything due to something physical it may not be particles it could be Quantum Fields it could be some underlying undetectable physical substance so I I think more non-theistic philosophers would be physicalists than materialists some might be naturalist some might be not I mean of course there's a whole mixed bag in there yeah yeah okay so some sort of naturalistic hypothesis uh is the relevant competitor so my question is does the isn't better explain it okay so so naturalism we do have this mysterious uh well arguably okay this is controversial but arguably there's some sort of mysterious gap between the third person purely publicly accessible uh like um third personal properties like shape and velocity and mass and uh Spin and charge there seems to be some sort of Gap there between those sorts of properties the third person publicly accessible properties and the first person qualitative subjective experience like the taste chocolate the smell of freshly baked cookies from Grandma on Christmas Etc okay there's some sort of Gap there and it's hard to see how you bridge that Gap you know you it just seems like you know particles in some sort of sufficient Arrangement and some sort of sufficiently functionally complex way they give rise to it okay that's kind of seems like a brief fact um it's just primitive that you know this sort of C fibers firing in this sort of way functioning with this way in inputs and outputs that has has the qualitative feeling associated with it some Manner and maybe it's identical with it but um maybe it functionally realizes it maybe it causes it maybe it grounds it but whatever there's some sort of seemingly brute way in which these are associated uh yeah so there seems to be that explanatory Gap there but what I wonder is isn't there a kind of corresponding gap on theistic idealism like okay I grant that you have a Consciousness at the foundation and a mind at the foundation um you're gonna have to in order to be able to well let me set that aside there I grant that you have Consciousness at the foundation but it's like it seems to me that you still have this kind of primitive uh relationship between this fundamental Consciousness and its states and then our itty bitty consciousnesses and their states right so it's like how do you get from uh just as we can ask how do you get from this purely third personal dust to like this uh Magic Consciousness how do you get from that to that there seems to be a kind of construction problem how do you get from this kind of um subject of experience at the foundation a God to itty-bitty subjects of experience right like in my mind I'm not able to make itty bitty subjects of experience like I can imagine someone like Hermione or Harry Potter or even you but when I'm imagining that the things in my mind are not themselves conscious beings right they're not they don't have they're not subjects of experience so this seems to be a holy mysterious capacity like somehow you go from this large conscious subject to getting itty bitty conscious subjects and you seem to just like it just does it's just kind of primitive and you don't have don't seem to have a further Illuminating explanation for that uh so you also seem to have this kind of problem of Consciousness just as a naturalist it faces difficulty going from the third personal stuff to this kind of first personal subject you seem to have a difficulty going from the large first personal subject to the itty-bitty first personal subjects so yeah"
+      },
+      "respondsToIds": [
+        "pro-parsimony-balanced-with-scope",
+        "pro-idealism-to-necessary-mind"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-parsimony-balanced-with-scope",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        },
+        {
+          "targetMoveId": "pro-idealism-to-necessary-mind",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid contends theistic idealism merely replaces matter-to-mind emergence with the equally unexplained construction of many distinct finite subjects from one unlimited consciousness.",
+      "critique": "Strongest feature: Schmid identifies a precise parity problem for Jones’s ontological-continuity advantage, because moving from one unlimited divine subject to numerous bounded subjects still requires an account of individuation, limitation, privacy, and distinct experiential perspectives. Principal limitation: The objection does not establish equal difficulty conclusively, since same-kind derivation may reduce some metaphysical discontinuity even when the mechanism of subject construction remains incomplete. Live burden: Schmid must compare the residual large-mind-to-small-minds gap with the physical-to-consciousness gap rather than treating both as automatically equivalent, while pressing Jones for concrete differentiation mechanics."
+    },
+    {
+      "candidateId": "pro-consciousness-ontological-continuity",
+      "kind": "card",
+      "moveId": "pro-consciousness-ontological-continuity",
+      "sectionId": "comparative-explanatory-power",
+      "sectionTitle": "Whether theism best explains consciousness and reality",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Consciousness arising from consciousness preserves ontology better than qualitative experience arising from quantitative physical properties, and dissociation offers a model.",
+      "inference": "Same-kind grounding reduces the explanatory gap, while differentiated minds can be understood as dissociated centers within a greater consciousness.",
+      "sourceSpan": {
+        "startEvent": 2063,
+        "endEvent": 2157,
+        "startMs": 4108020,
+        "endMs": 4287080,
+        "excerpt": "yeah I think that's a great Point um on that off a couple things I would say about there that uh for one I think it's not nearly as hard for the it's not nearly as hard for the theist and it would be for the naturalist because you're talking about something that's uh entirely different going for something that's that's it's explained in terms of quantitative aspects to something that's qualitative aspects are you going from something that is you know entirely uh explained in terms of like spin charge like you said and then somehow you get something that's entirely ontologically different which would be like taste qualia so we're talking about quite an existential or quite a quite a gap in terms of uh difference in terms of qualities whereas on theism you're still talking about the same qualitative aspects so it's still Consciousness coming from Consciousness it's not you know it's like it's easy to explain you know like you know how we can take matter and turn it into other matter because you know it still matter uh with Consciousness you so Consciousness coming from Consciousness in that sense so it's still going to be Consciousness being explained in terms of its own ontology not in terms of some entirely different ontology which would be a physical ontology so it seems like there is quite that big gap there it's it's the same issue I'd say with a substance duelist in some ways and then they got to explain how you know a mind is able to create an entirely different substance apart from itself that is also somehow contingent upon uh the mind of God but also not because it's also qualitatively different substance uh you know it's one of the reasons I sort of abandoned substance dualism was these philosophical conundrums with you know the um the interaction problem and uh different issues around that uh so that'd be the first thing I'd say another thing I can say about it is appealing to the uh the philosopher Bernardo castrip uh who sort of talks about this a little bit Anita talks about it like maybe it's just that concept of like um a healthy version of disassociative identity disorder so you know you can think of like uh someone who has this is also also called multiple personally disorder multiple personality disorder um you know you have one conscious agent that switches between different Alters uh so what he tries to argue and I think it's an interesting approach is that maybe you know there's this greater Consciousness and we are all just sort of disconnected from that Consciousness experiencing our own interesting personality we're developing uh and I I lately I've been thinking there might be some support for that in the scriptures as well that could also be an interesting approach as well uh this sort of idea that there's maybe this some sort of healthy version of multiple personality disorder um I'm hesitant to use that term because I know that's not it's hard to talk about an actual mental disorder as it as if healthy but just trying to get it sort of like as a comparison here like you have this Consciousness and you have these disassociative identities that are experiencing their own uh reality building their own personalities and then we eventually it's our our it's um it's our calling and Christian theology to reunite with God in some sense now of course there is some difficulties there I would say on my view and explaining on how that process would go or you know like the how uh but I mean I think in terms of ontology it's just a simpler explanation because we're not appealing to entirely different ontologies"
+      },
+      "respondsToIds": [
+        "con-consciousness-construction-parity"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-consciousness-construction-parity",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones argues consciousness-from-consciousness preserves qualitative ontology better than experience-from-quantitative matter, while dissociation models finite minds as differentiated experiential centers within greater consciousness.",
+      "critique": "Strongest feature: Jones supplies a clear comparative intuition and a candidate model, arguing that consciousness grounded in consciousness preserves qualitative ontology whereas physicalism must derive subjective experience from fundamentally quantitative properties. Principal limitation: Dissociation is borrowed from relations among finite mental processes and does not explain how an unlimited subject produces numerically distinct, bounded centers with private ignorance, embodiment, and apparently independent agency. Live burden: Jones must develop dissociation beyond analogy into a mechanism that predicts finite subject boundaries and demonstrate that its unexplained structure is smaller than the emergence problem attributed to physicalism."
+    },
+    {
+      "candidateId": "con-dissociation-is-descriptive",
+      "kind": "card",
+      "moveId": "con-dissociation-is-descriptive",
+      "sectionId": "comparative-explanatory-power",
+      "sectionTitle": "Whether theism best explains consciousness and reality",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "proposition": "An unlimited supernatural mind remains radically unlike finite minds, and labeling their emergence dissociation merely describes the transition.",
+      "inference": "Without an illuminating mechanism, ontological continuity and a clinical analogy do not establish superior explanation.",
+      "sourceSpan": {
+        "startEvent": 2158,
+        "endEvent": 2234,
+        "startMs": 4287420,
+        "endMs": 4446540,
+        "excerpt": "um yeah I mean okay so I like the way you say that like okay actually so I mean I could I could sort of see the I want to say firstly that I can sort of see where you're going for there so like I I can kind of see that it's not it's not super implausible but for me like I could still point to this you have an entirely ontologically different thing you've got this Supernatural ginormous ginormous in the sense of you know metaphorical but you've got this Supernatural unlimited mind which is so vastly different from ours I mean um our ways are not God's ways and and you know that is somehow trying to explain these limited contingent finite non-supernatural lines these are entirely ontologically different like if I'm putting myself in the mind of the physicalist you know they're probably gonna say like I don't know what the might of God is like and how like why would that be anything like of our itty bitty consciousnesses so I mean you seem to have also an entirely different ontological category giving rise to these itty bitty Consciousness now of course they're both still conscious but it's like are they conscious in different ways in different modes and different manners I'm not sure uh it does the fact that one of them is unlimited and super duper powerful does that change anything I don't know so it's like I don't know like where is the explanatory like it's difficult to see because both both of these cases involve huge ontological Rifts between the relevant explanandum and the relevant explanations in the one case yes there's a big riff it seems between third personal properties and first personal properties um whereas at least an explanatory riff um and then on the other hand there still seems to be like a big riff between a supernatural like ginormous unlimited mind which is God's mind whose God's ways are not our ways and then our minds which are limited and contingent and not Beyond you know not Supernatural Etc so that's one way and then as for the dissociative identity one I I guess my worry there is like I wonder I worry whether or not this is a mere descriptive account of um of like God's doing this as opposed to an explanatory account like you're just kind of saying that like yeah God kind of in some way dissociates and it gives rise to the itty bitty Consciousness but it's like okay but you've kind of just described that God does this and given it a labeled dissociation but it's like where's the explanatory payoff I don't really see it I I haven't I guess the better way to put this is that I haven't been illuminated here I have not been I have not had a gain in understanding when you've given me that explanation it seems to be merely a kind of descriptive um merely descriptive in import now um"
+      },
+      "respondsToIds": [
+        "pro-consciousness-ontological-continuity"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-consciousness-ontological-continuity",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Schmid argues an unlimited supernatural mind remains unlike finite minds, and calling their emergence dissociation labels the transition without illuminating its mechanism.",
+      "critique": "Strongest feature: Schmid directly evaluates the promised explanatory payoff, emphasizing that shared mentality does not erase the enormous differences between an unlimited divine mind and bounded creaturely subjects, while dissociation may merely name their connection. Principal limitation: Demanding a detailed mechanism may set an excessively strict standard for metaphysical explanation unless rival physicalist or emergent accounts are held to the same requirement and explanatory understanding admits structural unification. Live burden: Schmid must show that the dissociation model supplies no independently testable constraints or comparative compression, while fairly crediting whatever limited advantage same-kind grounding offers over qualitative emergence."
+    },
+    {
+      "candidateId": "pro-best-explanation-until-rival",
+      "kind": "card",
+      "moveId": "pro-best-explanation-until-rival",
+      "sectionId": "comparative-explanatory-power",
+      "sectionTitle": "Whether theism best explains consciousness and reality",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "proposition": "Theism need not be proven to be rationally preferred as the best available explanation until a better rival is supplied.",
+      "inference": "Residual brute facts do not defeat inference to the best explanation when competitors have not shown greater total explanatory merit.",
+      "sourceSpan": {
+        "startEvent": 2501,
+        "endEvent": 2540,
+        "startMs": 5000640,
+        "endMs": 5077199,
+        "excerpt": "yeah I mean I would just say I think I think it's perfectly fine to appeal to intuitions on this I think it's in a lot of ways it's it's the job of the skeptic to sort of show that the intuitions could be wrong like for example you know if we have an intuition that substance duel is true as a lot of people do in the west you can show that that's just you know not a global intuition that sort of goes around the world and so maybe that's not necessarily a good intuition to hold to um I think a lot of our intuitions with regards to the necessary Foundation are perfectly okay and it's okay to be skeptical of them as Joe is uh but I mean like at the same time I would also say like you know it's just I'm not I I don't agree that we should just be skeptical for the sake a skeptical I think we can also appeal to theism being the most likely explanation until we find a better option so something I've said in debates I've had in the past which is like look I'm going to offer an explanation of reality which I say is theism I'm not going to say it's proven I'm gonna say it is the best explanation so far and I would I'm going to believe it until someone can offer a better explanation uh and so sure we can be skeptical of that um but I just don't think the skeptic or the non-theist is offered a better explanation to this point so sure there's there are there are brute facts that maybe we don't know fully how to explain there but it still is the best explanation of reality itself"
+      },
+      "respondsToIds": [
+        "con-competing-foundations",
+        "con-perfections-remain-brute",
+        "con-dissociation-is-descriptive"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-competing-foundations",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        },
+        {
+          "targetMoveId": "con-perfections-remain-brute",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        },
+        {
+          "targetMoveId": "con-dissociation-is-descriptive",
+          "component": "The move directly addresses the target proposition or its load-bearing inference."
+        }
+      ],
+      "argumentDescription": "Jones concludes theism remains rationally preferable as the best available explanation despite residual brute facts, unless critics provide a better overall rival.",
+      "critique": "Strongest feature: Jones appropriately presents theism as a defeasible inference to the best explanation rather than a proof, acknowledges residual brute facts, and correctly notes that theoretical judgment should be comparative rather than perfectionistic. Principal limitation: He shifts the practical burden toward skeptics without answering Schmid’s developed rival-foundation, auxiliary-complexity, idealist-underdetermination, person-count, and dissociation objections, so asserting no better option has appeared does not establish comparative superiority. Live burden: Jones must evaluate those objections and alternatives on explicit criteria, demonstrating theism’s net advantage rather than treating absence of a fully articulated replacement as sufficient support."
+    }
+  ],
+  "overallBlunders": [
+    {
+      "candidateId": "overall-pro-blunder-1",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "text": "The crucial inference from an unlimited foundation to possession of maximal goodness, knowledge, and power was asserted without establishing property applicability."
+    },
+    {
+      "candidateId": "overall-pro-blunder-2",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "text": "The idealist route compressed controversial claims about physics, information, mind dependence, personal consciousness, and divinity into transitions receiving insufficient independent support."
+    },
+    {
+      "candidateId": "overall-pro-blunder-3",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Michael Jones",
+      "text": "The closing best-explanation claim did not comparatively answer Schmid’s developed alternatives and objections, effectively demanding a replacement before completing Jones’s own burden."
+    },
+    {
+      "candidateId": "overall-con-blunder-1",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "text": "Several competing necessary foundations were listed schematically without enough mechanism or comparative evidence to establish that they were genuinely explanatory rivals."
+    },
+    {
+      "candidateId": "overall-con-blunder-2",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "text": "The common-sense objection relied on unverified claims about widespread realist intuition and uncertain expectations concerning what a good divine idealist would permit."
+    },
+    {
+      "candidateId": "overall-con-blunder-3",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Joseph Schmid",
+      "text": "The construction-parity critique risked understating a possible ontological-continuity advantage by treating two incompletely explained transitions as approximately equivalent too quickly."
+    }
+  ],
+  "reviewOrder": "section order, exchange order, pro then con",
+  "sourceLocks": {
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/preserved-output-before-rhetorical-tag-review.json",
+      "sha256": "178998fed007de94d43e71da7e5970eaf0b8fea2bfe67e2ba55bc6021bd47a43",
+      "bytes": 50478
+    },
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/packet.json",
+      "sha256": "e5a7d5890c503e1368e7b0a77b2e279a6f31489c35a9362613de28a50551f00f",
+      "bytes": 7325
+    },
+    "definitions": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-244/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "3b03fd7a5305546cc2c61f0e5bb850d397798f9d60ff9f443e83657e566366e8",
+      "bytes": 4097
+    }
+  }
+}
