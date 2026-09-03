@@ -11,6 +11,8 @@ export const STANDALONE_SITE_LEDGER_ADAPTER_VERSION =
   "1.0-assessment-production-standalone-debate-site-ledger-adapter";
 export const STANDALONE_SCORE_PROTOCOL_ID =
   "standalone-v1-single-deterministic-score-pass";
+export const PRIMARY_SPEAKER_SCOPE_PROTOCOL_ID =
+  "primary-speaker-scope-exception-v1";
 export const DIMENSION_KEYS = Object.freeze([
   "logicalCoherence",
   "evidenceWarrant",
@@ -450,6 +452,187 @@ export function validateStandaloneInventory(
     belowHighAttributionMoveIds: inventory.moves
       .filter((move) => move.attributionConfidence !== "high")
       .map((move) => move.moveId)
+  };
+}
+
+export function validatePrimarySpeakerScopeException({
+  authorization,
+  sourceLock,
+  inventory
+}) {
+  const authorizationScope = authorization?.identity?.primarySpeakerScopeException;
+  const sourceScope = sourceLock?.participants?.primarySpeakerScopeException;
+  const audit = inventory?.primarySpeakerScopeAudit;
+  assertStandalone(
+    authorizationScope?.enabled === true &&
+      authorizationScope.protocolId === PRIMARY_SPEAKER_SCOPE_PROTOCOL_ID &&
+      sourceScope?.enabled === true &&
+      sourceScope.protocolId === PRIMARY_SPEAKER_SCOPE_PROTOCOL_ID &&
+      audit?.protocolId === PRIMARY_SPEAKER_SCOPE_PROTOCOL_ID &&
+      audit.status === "complete-and-frozen-before-judgment",
+    "primary-speaker scope: identity or status mismatch"
+  );
+  assertStandalone(
+    canonicalJson(authorizationScope.primarySpeakers) ===
+        canonicalJson(sourceScope.primarySpeakers) &&
+      canonicalJson(authorizationScope.primarySpeakers) ===
+        canonicalJson(audit.primarySpeakers) &&
+      canonicalJson(authorizationScope.nonPrimarySpeakers) ===
+        canonicalJson(sourceScope.nonPrimarySpeakers) &&
+      canonicalJson(authorizationScope.nonPrimarySpeakers) ===
+        canonicalJson(audit.nonPrimarySpeakers) &&
+      canonicalJson(authorizationScope.maximumHostAdvocacyShare) ===
+        canonicalJson(sourceScope.maximumHostAdvocacyShare) &&
+      canonicalJson(authorizationScope.maximumHostAdvocacyShare) ===
+        canonicalJson(audit.maximumHostAdvocacyShare),
+    "primary-speaker scope: participant identities or threshold differ"
+  );
+  assertStandalone(
+    audit.primarySpeakers?.pro === authorization?.identity?.pro?.speaker &&
+      audit.primarySpeakers?.con === authorization?.identity?.con?.speaker &&
+      audit.primarySpeakers?.pro === sourceLock?.participants?.pro &&
+      audit.primarySpeakers?.con === sourceLock?.participants?.con &&
+      audit.primarySpeakers.pro !== audit.primarySpeakers.con &&
+      Array.isArray(audit.nonPrimarySpeakers) &&
+      audit.nonPrimarySpeakers.length > 0,
+    "primary-speaker scope: primary speakers do not match the frozen debate identity"
+  );
+  const nonPrimaryNames = new Set();
+  for (const [index, participant] of audit.nonPrimarySpeakers.entries()) {
+    assertStandalone(
+      typeof participant?.name === "string" &&
+        participant.name.trim() &&
+        typeof participant?.role === "string" &&
+        participant.role.trim() &&
+        !nonPrimaryNames.has(participant.name) &&
+        !Object.values(audit.primarySpeakers).includes(participant.name),
+      `primary-speaker scope: invalid non-primary participant ${index}`
+    );
+    nonPrimaryNames.add(participant.name);
+  }
+  assertStandalone(
+    canonicalJson(authorizationScope.assessedWindow) ===
+        canonicalJson(sourceScope.assessedWindow) &&
+      canonicalJson(authorizationScope.assessedWindow) ===
+        canonicalJson(audit.assessedWindow) &&
+      canonicalJson(authorizationScope.excludedIntervals) ===
+        canonicalJson(sourceScope.excludedIntervals) &&
+      canonicalJson(authorizationScope.excludedIntervals) ===
+        canonicalJson(audit.excludedIntervals),
+    "primary-speaker scope: authorization, source, and inventory boundaries differ"
+  );
+  const window = audit.assessedWindow;
+  assertStandalone(
+    Number.isInteger(window?.startMs) &&
+      Number.isInteger(window?.endMs) &&
+      Number.isInteger(window?.durationMs) &&
+      window.startMs >= 0 &&
+      window.endMs > window.startMs &&
+      window.durationMs === window.endMs - window.startMs,
+    "primary-speaker scope: invalid assessed window"
+  );
+  assertStandalone(
+    audit.maximumHostAdvocacyShare === 0.05 &&
+      Array.isArray(audit.excludedIntervals) &&
+      audit.excludedIntervals.length > 0,
+    "primary-speaker scope: missing 5% control or exclusions"
+  );
+  const intervalIds = new Set();
+  let hostDurationMs = 0;
+  let dependentResponseDurationMs = 0;
+  const intervals = [...audit.excludedIntervals].sort(
+    (left, right) => left.startMs - right.startMs
+  );
+  for (const [index, interval] of intervals.entries()) {
+    assertStandalone(
+      typeof interval.intervalId === "string" &&
+        interval.intervalId.trim() &&
+        !intervalIds.has(interval.intervalId) &&
+        ["host-advocacy", "dependent-response"].includes(interval.kind) &&
+        typeof interval.speaker === "string" &&
+        interval.speaker.trim() &&
+        Number.isInteger(interval.startMs) &&
+        Number.isInteger(interval.endMs) &&
+        Number.isInteger(interval.durationMs) &&
+        interval.startMs >= window.startMs &&
+        interval.endMs <= window.endMs &&
+        interval.endMs > interval.startMs &&
+        interval.durationMs === interval.endMs - interval.startMs &&
+        typeof interval.summary === "string" &&
+        interval.summary.trim().length >= 40 &&
+        typeof interval.burdenImpactRationale === "string" &&
+        interval.burdenImpactRationale.trim().length >= 40 &&
+        interval.uniqueLoadBearingArgument === false,
+      `primary-speaker scope: invalid excluded interval ${index}`
+    );
+    intervalIds.add(interval.intervalId);
+    if (interval.kind === "host-advocacy") {
+      assertStandalone(
+        nonPrimaryNames.has(interval.speaker),
+        `primary-speaker scope: ${interval.intervalId} is not attributed to a frozen non-primary participant`
+      );
+      hostDurationMs += interval.durationMs;
+    } else {
+      assertStandalone(
+        Object.values(audit.primarySpeakers).includes(interval.speaker),
+        `primary-speaker scope: ${interval.intervalId} is not attributed to a primary speaker`
+      );
+      dependentResponseDurationMs += interval.durationMs;
+    }
+  }
+  const mergedIntervals = [];
+  for (const interval of intervals) {
+    const previous = mergedIntervals.at(-1);
+    if (!previous || interval.startMs > previous.endMs) {
+      mergedIntervals.push({ startMs: interval.startMs, endMs: interval.endMs });
+    } else {
+      previous.endMs = Math.max(previous.endMs, interval.endMs);
+    }
+  }
+  const totalExcludedDurationMs = mergedIntervals.reduce(
+    (sum, interval) => sum + interval.endMs - interval.startMs,
+    0
+  );
+  const hostAdvocacyShare = hostDurationMs / window.durationMs;
+  assertStandalone(
+    audit.derivedDurations?.hostAdvocacyMs === hostDurationMs &&
+      audit.derivedDurations?.dependentResponseMs === dependentResponseDurationMs &&
+      audit.derivedDurations?.totalExcludedMs === totalExcludedDurationMs &&
+      Math.abs(audit.derivedDurations.hostAdvocacyShare - hostAdvocacyShare) < 1e-12 &&
+      hostAdvocacyShare <= audit.maximumHostAdvocacyShare,
+    "primary-speaker scope: duration totals or 5% threshold differ"
+  );
+  assertStandalone(
+    audit.allHostInterventionsEnumerated === true &&
+      audit.noDistinctSideIntroduced === true &&
+      audit.noUniqueLoadBearingArgumentIntroduced === true &&
+      audit.noSelectedEvidenceIntersectsExclusions === true &&
+      audit.neitherSideCreditedOrPenalized === true &&
+      audit.readerDisclosureRequired === true,
+    "primary-speaker scope: required audit conclusions missing"
+  );
+  const overlaps = [];
+  assertStandalone(
+    Array.isArray(inventory.moves),
+    "primary-speaker scope: inventory moves are missing"
+  );
+  for (const move of inventory.moves) {
+    for (const interval of intervals) {
+      if (move.sourceSpan.startMs < interval.endMs && move.sourceSpan.endMs > interval.startMs) {
+        overlaps.push(`${move.moveId}:${interval.intervalId}`);
+      }
+    }
+  }
+  assertStandalone(
+    overlaps.length === 0,
+    `primary-speaker scope: selected evidence intersects exclusions: ${overlaps.join(", ")}`
+  );
+  return {
+    status: "passed",
+    protocolId: PRIMARY_SPEAKER_SCOPE_PROTOCOL_ID,
+    hostAdvocacyMs: hostDurationMs,
+    dependentResponseMs: dependentResponseDurationMs,
+    hostAdvocacyShare
   };
 }
 

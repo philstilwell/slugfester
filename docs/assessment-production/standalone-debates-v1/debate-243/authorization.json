@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-03T14:43:20Z",
+  "repositoryBaseline": {
+    "branch": "codex/debate-243",
+    "head": "c75f3f0e992215487283cbf920332567d983aaff",
+    "localMain": "d1d6f3229e34db34e59ed3feafd76a7ce91d3519",
+    "originMain": "c75f3f0e992215487283cbf920332567d983aaff",
+    "clean": false,
+    "isolationReason": "The user directed the existing Debate 243 recovery to continue without discarding its recovered source. The dedicated branch was fast-forwarded to current origin/main while preserving all ignored source evidence and the uncommitted, user-authorized general primary-speaker exception controls. The unrelated Debate 238 workspace remains untouched."
+  },
+  "identity": {
+    "debateNumber": "243",
+    "debateId": "aron-ra-slick-christianity-2014",
+    "label": "Christianity, evidence, and rational foundations",
+    "canonicalUrl": "https://www.youtube.com/watch?v=1MwqFMO0Lqw",
+    "videoId": "1MwqFMO0Lqw",
+    "sourceTitle": "AronRa vs Matt Slick | Bible Thumping Wingnut Show",
+    "eventYear": 2014,
+    "eventDate": "2014-11-23",
+    "motion": "Is Christianity true?",
+    "topicCategory": "god-theism-atheism",
+    "pro": {
+      "speaker": "Matt Slick",
+      "position": "Christianity is true and the biblical God provides the necessary foundation for reason and knowledge"
+    },
+    "con": {
+      "speaker": "Aron Ra",
+      "position": "Christianity is not adequately supported by evidence or rational argument"
+    },
+    "moderator": "Tim, the Bible Thumping Wingnut host",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "assessedWindow": {
+        "startMs": 191600,
+        "endMs": 5129640,
+        "durationMs": 4938040
+      },
+      "maximumHostAdvocacyShare": 0.05,
+      "primarySpeakers": {
+        "pro": "Matt Slick",
+        "con": "Aron Ra"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Tim",
+          "role": "host"
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "host-advocacy-01",
+          "kind": "host-advocacy",
+          "speaker": "Tim",
+          "startMs": 1666000,
+          "endMs": 1744950,
+          "durationMs": 78950,
+          "summary": "Tim leads a challenge about dream or simulation skepticism by paraphrasing Aron Ra's earlier video and asking whether experience could be unreal.",
+          "burdenImpactRationale": "This conservative cross-talk block duplicates Slick's independently developed skepticism about Aron Ra's claimed knowledge and continuity; removing it leaves both central burdens intact.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "dependent-response-01",
+          "kind": "dependent-response",
+          "speaker": "Aron Ra",
+          "startMs": 1687826,
+          "endMs": 1734750,
+          "durationMs": 46924,
+          "summary": "Aron Ra directly answers Tim by treating dream, Matrix, and brain-in-a-vat possibilities as irrelevant to the stable rules of experienced reality.",
+          "burdenImpactRationale": "The answer depends on Tim's excluded challenge, while Aron Ra develops his broader evidential standard independently elsewhere; excluding it avoids asymmetric credit.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-advocacy-02",
+          "kind": "host-advocacy",
+          "speaker": "Tim",
+          "startMs": 3414700,
+          "endMs": 3535036,
+          "durationMs": 120336,
+          "summary": "Tim argues through a sustained cross-talk exchange that relying on researchers' reports and integrity requires faith when Aron Ra has not personally repeated every test.",
+          "burdenImpactRationale": "This conservative host-led block repeats Slick's independently stated attempt to classify Aron Ra's confidence and reliance on evidence as faith; it creates no third burden route.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "dependent-response-02",
+          "kind": "dependent-response",
+          "speaker": "Aron Ra",
+          "startMs": 3444658,
+          "endMs": 3617960,
+          "durationMs": 173302,
+          "summary": "Aron Ra directly answers Tim by separating evidence-based trust from faith and describing how he compares researchers' work with his own prior investigation.",
+          "burdenImpactRationale": "The reply is prompted by Tim's excluded advocacy and overlaps its cross-talk, while equivalent evidential-method claims remain available from Aron Ra's independent exchanges with Slick.",
+          "uniqueLoadBearingArgument": false
+        }
+      ]
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "knownSuccessfulPaidTranscriptionCostUsd": 0.6551,
+    "maximumPotentialCombinedCostUsd": 0.8091,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-243/",
+    "docs/assessment-ledgers/aron-ra-slick-christianity-2014.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-production/standalone-primary-speaker-scope-exception-v1.md",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df/",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/aa6ec0fd238faaf3fc42d8d10d872a90a5366e4fc34a38e852c8e88b3a85ef1b/",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/bb74a685d0b521b0593fa6fbfc09589136d15e9d8f30280d96c15944d31a7978/",
+    "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+    "scripts/audit-assessment-production-standalone-v1.mjs",
+    "scripts/test-assessment-production-primary-speaker-scope-exception.mjs",
+    "package.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/aron-ra-slick-christianity-2014.js",
+    "src/data/debate-summaries.js",
+    "src/data/debate-analytics.js",
+    "src/data/interlocutors.js",
+    "src/data/reference-appearances/",
+    "debate/",
+    "interlocutor/",
+    "feed.xml",
+    "index.html",
+    "rankings/index.html",
+    "search/index.html",
+    "sitemap.xml",
+    "topics/index.html",
+    "output/playwright/standalone-debate-v1/debate-243/"
+  ]
+}

@@ -21,6 +21,7 @@ import {
   validateStandaloneAdjudication,
   validateStandaloneCandidate,
   validateStandaloneInventory,
+  validatePrimarySpeakerScopeException,
   validateStandalonePrimaryJudgment,
   validateStandaloneScoreStability,
   validateStandaloneSiteLedgerAdapter
@@ -109,6 +110,18 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u0000bb74a685d0b521b0593fa6fbfc09589136d15e9d8f30280d96c15944d31a7978",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/bb74a685d0b521b0593fa6fbfc09589136d15e9d8f30280d96c15944d31a7978/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
+    "scripts/lib/assessment-production-standalone-debate-v1.mjs\u0000262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df/assessment-production-standalone-debate-v1.mjs"
+  ],
+  [
+    "package.json\u0000aa6ec0fd238faaf3fc42d8d10d872a90a5366e4fc34a38e852c8e88b3a85ef1b",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/aa6ec0fd238faaf3fc42d8d10d872a90a5366e4fc34a38e852c8e88b3a85ef1b/package.json"
+  ],
   [
     "scripts/audit-assessment-production-standalone-v1.mjs\u0000a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81/audit-assessment-production-standalone-v1.mjs"
@@ -403,7 +416,8 @@ function validateFrozenInputBoundary({
       [
         "frozen-legacy-v1",
         "semantic-balanced-v1",
-        "semantic-balanced-capacity-v2"
+        "semantic-balanced-capacity-v2",
+        "semantic-balanced-capacity-primary-speaker-v1"
       ].includes(
         record.validationProfile
       ),
@@ -509,7 +523,10 @@ function validateFrozenInputBoundary({
   assert.equal(inventory.debateId, selectedRegistryRecord.debateId);
   assert.equal(
     inventory.schemaVersion,
-    selectedRegistryRecord.validationProfile === "semantic-balanced-capacity-v2"
+    [
+      "semantic-balanced-capacity-v2",
+      "semantic-balanced-capacity-primary-speaker-v1"
+    ].includes(selectedRegistryRecord.validationProfile)
       ? "1.2-standalone-score-blind-inventory"
       : selectedRegistryRecord.validationProfile === "semantic-balanced-v1"
         ? "1.1-standalone-score-blind-inventory"
@@ -525,7 +542,19 @@ function validateFrozenInputBoundary({
   const inventoryValidation = validateStandaloneInventory(inventory, events, {
     repositoryOnly
   });
-  if (!requirePasses) return { inventory, events, inventoryValidation };
+  const primarySpeakerScopeValidation =
+    selectedRegistryRecord.validationProfile ===
+    "semantic-balanced-capacity-primary-speaker-v1"
+      ? validatePrimarySpeakerScopeException({ authorization, sourceLock, inventory })
+      : null;
+  if (!requirePasses) {
+    return {
+      inventory,
+      events,
+      inventoryValidation,
+      primarySpeakerScopeValidation
+    };
+  }
   const inventorySha256 = sha256(bytes(paths.inventory));
   const passA = json(paths.passA);
   const passB = json(paths.passB);

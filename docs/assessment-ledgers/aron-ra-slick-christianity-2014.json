@@ -1,0 +1,952 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "243",
+  "debateId": "aron-ra-slick-christianity-2014",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "sourceMedia": {
+      "path": ".assessment-cache/audio/1MwqFMO0Lqw/source.m4a",
+      "sha256": "f0153f00aa679aa22decbe8c290976ae80dfe925cc40bf3675d17b13c4e95487",
+      "bytes": 100937178
+    },
+    "sourceMetadata": {
+      "path": ".assessment-cache/audio/1MwqFMO0Lqw/source.info.json",
+      "sha256": "c173906f68a6fc09e90a0db6a54629fe849f17c85f87b143c53b78269a1b0655",
+      "bytes": 73210
+    },
+    "rawTranscript": {
+      "path": ".assessment-cache/captions/1MwqFMO0Lqw/openai-timestamped-chunks.json",
+      "sha256": "ae13209ef022d09eb4599a369c956d8ca674dcb8925c4500751cd766281a4a39",
+      "bytes": 6812
+    },
+    "events": {
+      "path": ".assessment-cache/captions/1MwqFMO0Lqw/events.json",
+      "sha256": "308fc3bec6c0667251f585ef332a04ccc7bb7ce649b05034fb32c3c2a40997d6",
+      "bytes": 294313
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/1MwqFMO0Lqw/transcript.txt",
+      "sha256": "aebd0c47e89a235647b47255706803db69869af024cf13f4bf2b33ded23beda2",
+      "bytes": 153426
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/1MwqFMO0Lqw/manifest.json",
+      "sha256": "4ff24c1228e46bbe6f0199655760e317b229efffcb70cefcc7ac1c51014ba194",
+      "bytes": 3475
+    },
+    "recoveryPlan": {
+      "path": ".assessment-cache/debate-243-source/chunk-recovery-plan.json",
+      "sha256": "15580d1e6adaffed26b32899511e2188f449baa709f12f8e48122013503765f2",
+      "bytes": 6320
+    },
+    "recoveryProgress": {
+      "path": ".assessment-cache/debate-243-source/chunk-recovery-progress.json",
+      "sha256": "0cb2356c0b69fe908693c695dfe799e32ebe8a583ccbec8086acdb4e98635ef2",
+      "bytes": 3546
+    },
+    "boundaryAudit": {
+      "path": ".assessment-cache/debate-243-source/chunk-boundary-audit.json",
+      "sha256": "f1c3867c9b35596a078223fb2680bac7aebd258b41949ef895d56f946745f125",
+      "bytes": 2222
+    },
+    "scopeClipOne": {
+      "path": ".assessment-cache/debate-243-source/scope-check-1.m4a",
+      "sha256": "3accdc008a48359bf4791562933a579868513ed1446e978e3555401b07bea525",
+      "bytes": 1456940
+    },
+    "scopeClipTwo": {
+      "path": ".assessment-cache/debate-243-source/scope-check-2.m4a",
+      "sha256": "3b5e457eccc77fde616047386ca41b3cc3c9c714b34459272bd706320cb3e99f",
+      "bytes": 2750555
+    },
+    "scopeDiarizationOne": {
+      "path": ".assessment-cache/debate-243-source/scope-check-1-diarized.json",
+      "sha256": "d7441c60021e095b5b9e32c77676645520f10f6b711c27972b9a570e559bcd66",
+      "bytes": 7709
+    },
+    "scopeDiarizationTwo": {
+      "path": ".assessment-cache/debate-243-source/scope-check-2-diarized.json",
+      "sha256": "baac1dda3b521cbf55a60a3ce98ea8c42d4fdc077a26fdd3f21e42adb5469acd",
+      "bytes": 21441
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/source/source-lock.json",
+      "sha256": "9c722409c0a61efedafc9088cd8cd9f8c48f9b6ba80a3fb7a4514e307583193c",
+      "bytes": 7762
+    },
+    "primarySpeakerScopeEvidence": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/source/primary-speaker-scope-evidence.json",
+      "sha256": "bc612899b5802948e9e8cb4c28fa80f353ad14228bdabc6d6242f94614cd3b57",
+      "bytes": 2331
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/authorization.json",
+      "sha256": "8057677600c9ca216dbb30ca62fb530bfec90e93f7be6a90627ae9dfe5fe1980",
+      "bytes": 7742
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/manifest.json",
+      "sha256": "d0db255e7513622a5aad1039316a7d80d59e25fd9f60b50fec0a50924def29d3",
+      "bytes": 9075
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/source/source-lock.json",
+      "sha256": "9c722409c0a61efedafc9088cd8cd9f8c48f9b6ba80a3fb7a4514e307583193c",
+      "bytes": 7762
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/inventory/inventory.json",
+      "sha256": "b255850fb495752c6662a40f7ce72446168531b1d54a60015b29b3056db3009f",
+      "bytes": 139502
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/judgment-packet.json",
+      "sha256": "f7c11777712c795bf4d36bea4246dace11a8dc24cc01a58f33b255eb1e5f412b",
+      "bytes": 4994
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/execution.json",
+      "sha256": "48f1c76c2268f295162a4b8bbd0c23629ba8e443c62835ddcbea21b331560357",
+      "bytes": 2963
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-a/output.json",
+      "sha256": "9e00fb5920f58ef9fed20dfef6d1591396e05df0a43d164b790e1d3dd53e9773",
+      "bytes": 114778
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/judgments/pass-b/output.json",
+      "sha256": "b350db86b20048221ac296673019b41331dbcd9ca18e65b641528cede8538321",
+      "bytes": 94078
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/disagreements/disagreements.json",
+      "sha256": "391612bc1fc3ab009c688c541f8dcb0d2c208dfcced701a2d47fbef113534df8",
+      "bytes": 130580
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/audio/audio-verification.json",
+      "sha256": "391c4954c68e27273d6bd10120adf3b8690d6c6f32de910afd90b99f8b914020",
+      "bytes": 2264
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/adjudication/packet.json",
+      "sha256": "8df985fb373727541f6b72e91b5162e29c6dade29af2224d2d04c482696d8e4e",
+      "bytes": 493690
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/adjudication/output.json",
+      "sha256": "e4432956ec4ae796b2baf216e4e7f7bf19c2a98bca287d7de0f7213ab0f7905d",
+      "bytes": 30666
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/final-ledger/final-ledger.json",
+      "sha256": "238b72046475748bb13e425cc8f17ea1c7f16ae2e7978d49c49df95cf176d460",
+      "bytes": 447938
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/score-pass/input.json",
+      "sha256": "f061d5321ac9e6bae31746af8d65fe59bc8af0e98c5bbf60a26d757de4946fe2",
+      "bytes": 950
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/score-pass/output.json",
+      "sha256": "5e27b07070045d0eabba8273af911d8828c0608158c440bf67ca8bf3b2502b88",
+      "bytes": 22050
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/score-pass/attestation.json",
+      "sha256": "4f81d8a8e97b27b3414c4866a6ce36c9cb395340e631fec87dbc5322ceb98e30",
+      "bytes": 818
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/output.json",
+      "sha256": "053a3ae7017feaa533a0729e1cab38277ef35f46597702a5feaade06da731f43",
+      "bytes": 88151
+    },
+    "events": {
+      "path": ".assessment-cache/captions/1MwqFMO0Lqw/events.json",
+      "sha256": "308fc3bec6c0667251f585ef332a04ccc7bb7ce649b05034fb32c3c2a40997d6",
+      "bytes": 294313
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/1MwqFMO0Lqw/transcript.txt",
+      "sha256": "aebd0c47e89a235647b47255706803db69869af024cf13f4bf2b33ded23beda2",
+      "bytes": 153426
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/correction-1-publication-depth.json",
+      "sha256": "604b706b7f5864749b45e9d68b300543fd2d9518512df37f1b3945211e5322f8",
+      "bytes": 25192
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/raw-prose-output-1.json",
+      "sha256": "260fda8009e80c84bad0cbdc1b43373dc1ffc9ecabb722650382f8fc7d9e47f9",
+      "bytes": 82151
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/content-parity-audit.json",
+      "sha256": "7cdc85f4b55ee1e9247c3054854cea52f89beadb2f1e4b01430389e8589f8228",
+      "bytes": 4368
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/correction-2-rhetorical-tags.json",
+      "sha256": "bccfc536ae469ed6c3aadf745b0950e8a7120c62c0a35f0d04a3163f57bc2a66",
+      "bytes": 7410
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-audit.json",
+      "sha256": "a633bdea00325c6eb55f5afd5b00c2bdd1c34c1e7141bdae69aaa00bdea56692",
+      "bytes": 308825
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "5b6dd5e3869f10f031c25d598af1c75b3f5de21ca140c9385ff23121a5de8846",
+      "bytes": 3542
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "aa0981f2ea18ff2466011e7eb86c38020f1dddaf2b8721418493faaeeb5e9054",
+      "bytes": 3410
+    },
+    "publicationAiContributionDepthCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/correction-3-ai-contribution-depth.json",
+      "sha256": "d3134b6efe771c4194148c0125f801730b9cf8910421c423ad466c8963867347",
+      "bytes": 9808
+    },
+    "publicationAiContributionDepthAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/content-parity-audit.json",
+      "sha256": "7cdc85f4b55ee1e9247c3054854cea52f89beadb2f1e4b01430389e8589f8228",
+      "bytes": 4368
+    },
+    "publicationAiContributionDepthExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/publication/execution.json",
+      "sha256": "ba020889f2d5bba5ac6f8e7da0a625b24c4f9ec39cf41d44f795cd518f1b9e79",
+      "bytes": 4219
+    },
+    "postAiContributionDepthRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-243/rendering/post-ai-contribution-depth-audit.json",
+      "sha256": "3f715321f7601dcf4a0924c5bd3494632715f9d7b6f142d971cced677c12370a",
+      "bytes": 1845
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "243",
+    "debateId": "aron-ra-slick-christianity-2014",
+    "sections": [
+      {
+        "sectionId": "biblical-god-fiction-and-warranted-belief",
+        "title": "The biblical God, fiction, and warranted belief",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "slick-nonexistence-needs-account",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 81
+                },
+                "score": 79
+              },
+              {
+                "moveId": "slick-godzilla-caution",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 81,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 91
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 64,
+            "moves": [
+              {
+                "moveId": "aron-biblical-god-denial",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 58,
+                  "evidenceWarrant": 38,
+                  "responsiveness": 62,
+                  "relevanceBurden": 55,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 48
+                },
+                "score": 54
+              },
+              {
+                "moveId": "aron-fiction-definition-and-impossibility",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 79,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 68
+                },
+                "score": 71
+              },
+              {
+                "moveId": "aron-science-requires-evidential-constraint",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 78,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 48
+                },
+                "score": 70
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "faith-science-and-epistemic-foundations",
+        "title": "Faith, science, and epistemic foundations",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "slick-science-presupposes-logic-and-uniformity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 83,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 71
+                },
+                "score": 78
+              },
+              {
+                "moveId": "slick-future-uniformity-challenge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 90,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 82
+                },
+                "score": 83
+              },
+              {
+                "moveId": "slick-logic-cannot-validate-itself-noncircularly",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 78
+                },
+                "score": 82
+              },
+              {
+                "moveId": "slick-personal-continuity-cannot-be-proved",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 58,
+                  "relevanceBurden": 55,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 62
+                },
+                "score": 61
+              }
+            ]
+          },
+          "con": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "aron-religious-faith-assumed-without-reason",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 46,
+                  "responsiveness": 78,
+                  "relevanceBurden": 63,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 39
+                },
+                "score": 62
+              },
+              {
+                "moveId": "aron-observed-uniformity-is-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 87
+                },
+                "score": 83
+              },
+              {
+                "moveId": "aron-scientific-method-self-corrects",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 82,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 57
+                },
+                "score": 73
+              },
+              {
+                "moveId": "aron-alternatives-need-possibility-and-documentary-support",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 86,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 62
+                },
+                "score": 76
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "transcendence-divine-attributes-and-evidence",
+        "title": "Transcendence, divine attributes, and evidence",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 69,
+            "moves": [
+              {
+                "moveId": "slick-god-precondition-for-intelligibility",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 62,
+                  "evidenceWarrant": 39,
+                  "responsiveness": 57,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 68,
+                  "calibrationCharity": 49
+                },
+                "score": 57
+              },
+              {
+                "moveId": "slick-defines-noncontingent-transcendent-god",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 83,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 73
+                },
+                "score": 75
+              },
+              {
+                "moveId": "slick-evidence-search-must-fit-transcendence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 75,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 66
+                },
+                "score": 69
+              },
+              {
+                "moveId": "slick-faith-is-trust-based-on-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 70
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "aron-god-hypothesis-predicts-public-consistency",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 80,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 61
+                },
+                "score": 72
+              },
+              {
+                "moveId": "aron-christian-god-is-adapted-anthropomorphic-deity",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 59,
+                  "evidenceWarrant": 44,
+                  "responsiveness": 60,
+                  "relevanceBurden": 60,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 38
+                },
+                "score": 56
+              },
+              {
+                "moveId": "aron-transcendence-description-remains-unsupported",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 43,
+                  "responsiveness": 82,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 44
+                },
+                "score": 66
+              },
+              {
+                "moveId": "aron-scriptural-story-is-not-independent-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 90,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 79
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "jesus-moses-and-historical-method",
+        "title": "Jesus, Moses, and historical method",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "slick-jesus-denial-lacks-demonstrated-test",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 76,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 59
+                },
+                "score": 67
+              },
+              {
+                "moveId": "slick-absence-of-evidence-and-comparative-history",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 86,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 83
+                },
+                "score": 80
+              },
+              {
+                "moveId": "slick-borrowing-claim-needs-source-validation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 86,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 73
+                },
+                "score": 76
+              },
+              {
+                "moveId": "slick-personal-repetition-gap-reintroduces-trust",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 74,
+                  "relevanceBurden": 64,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 59
+                },
+                "score": 65
+              }
+            ]
+          },
+          "con": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "aron-jesus-historicity-is-uncertain-and-composite",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 48,
+                  "responsiveness": 68,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 61
+                },
+                "score": 62
+              },
+              {
+                "moveId": "aron-historical-claims-require-corroboration",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 87
+                },
+                "score": 81
+              },
+              {
+                "moveId": "aron-moses-narrative-borrows-and-lacks-demographic-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 78,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 51
+                },
+                "score": 72
+              },
+              {
+                "moveId": "aron-document-dating-and-peer-review-corroborate",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 83,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 66
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "religious-expertise-and-public-verification",
+        "title": "Religious expertise and public verification",
+        "weightPercent": 13,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "slick-transcendence-and-omnipotence-need-accurate-definitions",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 90,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 76
+                },
+                "score": 81
+              },
+              {
+                "moveId": "slick-belief-is-true-aspect-of-christian-description",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 84,
+                  "relevanceBurden": 49,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 55
+                },
+                "score": 73
+              },
+              {
+                "moveId": "slick-expert-appeal-must-specify-relevant-expertise",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 91,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 83
+              },
+              {
+                "moveId": "slick-christian-expert-consensus-reductio",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 93,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 81
+                },
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "aron-credentials-do-not-verify-theology",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 79
+                },
+                "score": 79
+              },
+              {
+                "moveId": "aron-belief-fact-is-not-theological-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 94,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 88
+                },
+                "score": 88
+              },
+              {
+                "moveId": "aron-consensus-requires-broad-convergence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 49,
+                  "responsiveness": 75,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 54
+                },
+                "score": 65
+              },
+              {
+                "moveId": "aron-sectarian-sample-is-not-consensus",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 92,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 79
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "logic-god-and-explanatory-power",
+        "title": "Logic, God, and explanatory power",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 64,
+            "moves": [
+              {
+                "moveId": "slick-god-not-god-exhausts-options",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 85
+                },
+                "score": 82
+              },
+              {
+                "moveId": "slick-abstract-logic-needs-worldview-account",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 47,
+                  "responsiveness": 71,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 55
+                },
+                "score": 65
+              },
+              {
+                "moveId": "slick-no-god-universe-is-impossible",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 48,
+                  "evidenceWarrant": 30,
+                  "responsiveness": 70,
+                  "relevanceBurden": 58,
+                  "precisionClarity": 65,
+                  "calibrationCharity": 38
+                },
+                "score": 51
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "aron-god-addition-is-not-explanatory",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 72
+                },
+                "score": 78
+              },
+              {
+                "moveId": "aron-logical-relations-hold-without-god",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 80,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 71
+                },
+                "score": 73
+              },
+              {
+                "moveId": "aron-explanation-requires-mechanism",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 86,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 70
+                },
+                "score": 79
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 73.49,
+        "burdenCompletionAdjustment": 0,
+        "score": 73
+      },
+      "con": {
+        "weightedSectionMean": 72.87,
+        "burdenCompletionAdjustment": 0,
+        "score": 73
+      }
+    },
+    "winner": "tie",
+    "winningMargin": 0,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.25,
+      "maximumDistance": 3,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 43,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

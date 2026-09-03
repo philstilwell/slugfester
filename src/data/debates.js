@@ -102904,6 +102904,782 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "243",
+    "id": "aron-ra-slick-christianity-2014",
+    "date": "2026-09-03",
+    "title": "Matt Slick vs Aron Ra: Is Christianity True? (2014)",
+    "label": "Christianity, evidence, and rational foundations",
+    "topicCategory": "god-theism-atheism",
+    "youtubeUrl": "https://www.youtube.com/watch?v=1MwqFMO0Lqw",
+    "duration": "1 hr 44 min",
+    "motion": "Is Christianity true?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "This assessment uses a complete timestamp-preserving transcript covering the full primary-speaker debate. Host Tim made two incidental Christian-aligned interventions; both complete host-led blocks and every directly dependent reply were excluded. Neither Matt Slick nor Aron Ra received credit or penalty for that material. All 43 selected moves had high-confidence speaker attribution.",
+    "scoringNote": "These AI-generated scores were computed once from a frozen 43-move ledger after two isolated primary judgments and anonymous adjudication of all 111 extracted disagreements, including both burden-completion judgments. The displayed 73–73 result is immutable; publication prose and rhetorical-tag review cannot change it.",
+    "sides": {
+      "pro": {
+        "name": "Christianity is true and the biblical God provides the necessary foundation for reason and knowledge",
+        "speaker": "Matt Slick",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christianity is not adequately supported by evidence or rational argument",
+        "speaker": "Aron Ra",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 73,
+      "winner": "tie"
+    },
+    "summary": "Slick excelled on foundational challenges and expert-reference precision; Aron prevailed on belief versus truth and explanatory accountability, producing an exact overall tie.",
+    "quotes": {
+      "pro": {
+        "text": "You assume their validity",
+        "context": "During the dispute over whether scientific reasoning can validate its foundations, Slick presses circularity and says logic’s validity is necessarily assumed."
+      },
+      "con": {
+        "text": "You can't show me that there was a God",
+        "context": "Replying to Slick’s statement that he believes in Christ, Aron separates the existence of conviction from the truth of its theological object."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "biblical-god-fiction-and-warranted-belief",
+        "title": "The biblical God, fiction, and warranted belief",
+        "timebox": "3:11–8:10",
+        "score": {
+          "pro": 79,
+          "con": 64
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "slick-nonexistence-needs-account",
+              "time": "4:44",
+              "role": "Reply",
+              "words": "Slick argues that categorically denying the biblical God requires explaining how nonexistence is known, shifting the evidential burden from fictional-character analogies to asserted certainty.",
+              "score": 79,
+              "critique": "Strongest feature: Slick directly interrogates how categorical nonexistence is known, making the certainty behind the denial answerable rather than allowing fictional-character comparisons alone to discharge its evidential burden; responsiveness 86 and precision and clarity 83 recognize that focused challenge. Principal limitation: Asking how someone knows a deity does not exist exposes a burden but supplies little affirmative evidence for that deity, consistent with the comparatively weak evidence warrant 68 and burden relevance 77. Live burden: He still must explain why the biblical God differs evidentially from stipulated fictional beings and show that uncertainty about nonexistence provides positive support for Christianity. Locked score: The immutable score is 79, with logical coherence 81, evidence warrant 68, responsiveness 86, burden relevance 77, precision and clarity 83, and calibration and charity 81.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-biblical-god-denial",
+              "time": "3:11",
+              "role": "Constructive",
+              "words": "Aron distinguishes uncertainty about a historical Jesus from his definite denial of the biblical God, presenting that denial as the result of epistemological reassessment.",
+              "score": 54,
+              "critique": "Strongest feature: Aron distinguishes uncertainty about a historical Jesus from his conclusion about the biblical God, making the position understandable and supporting precision and clarity 66. Principal limitation: The excerpt announces that an epistemological reassessment produced certainty, without presenting evidence or reasoning connecting that reassessment to nonexistence, which explains evidence warrant 38, logical coherence 58, and calibration and charity 48. Live burden: He must supply the missing argument for why the biblical description is impossible or fictional, show why that conclusion is stronger than uncertainty, and relate it decisively to Christianity while improving responsiveness 62 and burden relevance 55. Locked score: The immutable score is 54, with logical coherence 58, evidence warrant 38, responsiveness 62, burden relevance 55, precision and clarity 66, and calibration and charity 48.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-godzilla-caution",
+              "time": "6:21",
+              "role": "Reply",
+              "words": "Lacking biological and physical expertise, Slick calls Godzilla highly improbable but not demonstrably impossible, illustrating why responsible negative conclusions should remain appropriately limited.",
+              "score": 78,
+              "critique": "Strongest feature: By conceding Godzilla's extreme improbability while withholding an expert-level impossibility verdict, Slick models unusually careful epistemic calibration; calibration and charity 91, alongside logical coherence 81 and precision and clarity 83, reflects the disciplined distinction between probability and proof. Principal limitation: His professed lack of biological and physical knowledge cannot itself establish that relevant impossibility arguments fail, leaving evidence warrant 68 and burden relevance 70 as the comparatively weaker dimensions. Live burden: Slick must identify what evidence would justify impossibility, explain whether the same caution applies symmetrically to supernatural possibility, and connect this modest conclusion to affirmative Christian support. Locked score: The immutable score is 78, with logical coherence 81, evidence warrant 68, responsiveness 81, burden relevance 70, precision and clarity 83, and calibration and charity 91.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-fiction-definition-and-impossibility",
+              "time": "5:40",
+              "role": "Reply",
+              "words": "James Bond and Godzilla illustrate warranted nonexistence claims through known fictional origins or impossible properties, supplying two possible routes for denying a character's reality.",
+              "score": 71,
+              "critique": "Strongest feature: James Bond and Godzilla distinguish fictional provenance from physical impossibility, answering how anyone could warrant nonexistence and earning responsiveness 79 alongside precision and clarity 75. Principal limitation: Analogies establish routes to denial but do not demonstrate that the biblical God has either a traceably fictional origin or logically impossible properties, leaving evidence warrant 59 and logical coherence 74. Live burden: Aron must map one or both tests onto the divine description, defend the historical or physical premises, and show why the comparison advances the con case beyond similarity, reflected in burden relevance 70 and calibration and charity 68. Locked score: The immutable score is 71, with logical coherence 74, evidence warrant 59, responsiveness 79, burden relevance 70, precision and clarity 75, and calibration and charity 68.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "aron-science-requires-evidential-constraint",
+              "time": "6:50",
+              "role": "Reply",
+              "words": "Aron contrasts science's demand for evidence, precedent, or demonstrated possibility with faith's unsupported assertions, inferring that religious certainty reverses responsible evidential discipline.",
+              "score": 70,
+              "critique": "Strongest feature: Aron gives a recognizable methodological comparison: scientific possibilities and conclusions require evidential indication, whereas faith allegedly licenses unsupported factual assertion; burden relevance 84 and responsiveness 78 capture how directly that contrast answers the claim that science also operates by faith. Principal limitation: The universal characterization of religions is asserted rather than documented and caricatures heterogeneous religious reasoning, explaining evidence warrant 58 and especially calibration and charity 48 despite precision and clarity 78. Live burden: He must substantiate the proposed scientific rules, narrow or defend the sweeping religious comparison, and demonstrate that Christianity's particular claims actually lack comparable warrant. Locked score: The immutable score is 70, with logical coherence 72, evidence warrant 58, responsiveness 78, burden relevance 84, precision and clarity 78, and calibration and charity 48.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "faith-science-and-epistemic-foundations",
+        "title": "Faith, science, and epistemic foundations",
+        "timebox": "10:27–33:40",
+        "score": {
+          "pro": 77,
+          "con": 74
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "slick-science-presupposes-logic-and-uniformity",
+              "time": "10:27",
+              "role": "Reply",
+              "words": "Science relies on logic and nature's uniformity, yet cannot validate either through its own method without presupposing them, so experimental reasoning includes foundational trust.",
+              "score": 78,
+              "critique": "Strongest feature: Slick identifies logic and uniformity as prerequisites of science, then explains why validating those prerequisites would employ what it purports to establish, supporting responsiveness 83, burden relevance 81, and logical coherence 80. Principal limitation: Showing that inquiry begins with commitments does not make them equivalent to Christian faith or establish their theological source, so evidence warrant remains 69 and calibration and charity 71. Live burden: He must distinguish pragmatic confidence from religious trust, justify the analogy without equivocation, and explain why these foundations favor Christianity rather than secular necessity or brute regularity while maintaining precision and clarity 79. Locked score: The immutable score is 78, with logical coherence 80, evidence warrant 69, responsiveness 83, burden relevance 81, precision and clarity 79, and calibration and charity 71.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick calls science's reliance on logic and nature's uniformity faith while defending Christian religious faith."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-religious-faith-assumed-without-reason",
+              "time": "11:33",
+              "role": "Reply",
+              "words": "Aron says sermons, hymns, scripture, and theology portray faith as reason-resistant conviction, so equating it with ordinary evidence-based trust equivocates between meanings.",
+              "score": 62,
+              "critique": "Strongest feature: Aron clearly distinguishes ordinary confidence in a trustworthy object from the religious usage he describes as conviction assumed without reason, directly resisting an equation between scientific reliance and faith; responsiveness 78 and precision and clarity 75 register that intelligible semantic answer. Principal limitation: He names sermons, hymns, scripture, and theologians without quoting or sampling them, then generalizes universally and uncharitably, which fits evidence warrant 46, logical coherence 65, and calibration and charity 39. Live burden: Aron must document representative religious usage, address evidence-sensitive conceptions of faith, and establish why the semantic distinction materially weakens Christianity rather than merely policing vocabulary. Locked score: The immutable score is 62, with logical coherence 65, evidence warrant 46, responsiveness 78, burden relevance 63, precision and clarity 75, and calibration and charity 39.",
+              "tags": [
+                {
+                  "label": "Confirmation bias",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/confirmation-bias/",
+                  "context": "Aron invokes religious materials as uniformly reason-resistant while dismissing evidence-based religious trust as dictionary-only usage."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-future-uniformity-challenge",
+              "time": "13:00",
+              "role": "Reply",
+              "words": "Past observations cannot deductively guarantee nature's future uniformity; because prediction assumes that untested continuity, scientific practice retains a foundational commitment beyond advance verification.",
+              "score": 83,
+              "critique": "Strongest feature: Slick exposes the inductive gap between past observations and a deductive guarantee of future uniformity, challenging the assertion that every scientific commitment can be tested and earning responsiveness 90. Principal limitation: The argument establishes a limit on advance proof, not that future regularity lacks empirical justification or that this commitment resembles Christian faith, leaving evidence warrant 72 below other dimensions. Live burden: He must characterize the warranted but non-deductive confidence involved, avoid collapsing probabilistic induction into unsupported belief, and demonstrate how the limitation favors the pro case, with burden relevance 84 and calibration and charity 82. Locked score: The immutable score is 83, with logical coherence 86, evidence warrant 72, responsiveness 90, burden relevance 84, precision and clarity 84, and calibration and charity 82.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick labels evidence-based expectation of future physical regularity faith because exhaustive advance testing is impossible."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-observed-uniformity-is-evidence",
+              "time": "18:49",
+              "role": "Reply",
+              "words": "Observed constancy in physical laws warrants provisional, probabilistic confidence rather than certainty, so Aron clearly distinguishes evidence-based scientific reliance from unsupported faith.",
+              "score": 83,
+              "critique": "Strongest feature: Aron grounds provisional confidence in the observed constancy of physical laws and explicitly limits the conclusion to probability rather than certainty, giving the science-versus-faith distinction concrete evidence; responsiveness 87 and calibration and charity 87 complement logical coherence 83. Principal limitation: Past observed stability does not guarantee future uniformity, and the passage does not fully defend its broader contrast with every form of religious confidence, leaving evidence warrant 77 below the other dimensions. Live burden: He must explain the inductive step from recorded constancy to continued expectation and show why Christian belief lacks an analogous, proportionate evidential basis. Locked score: The immutable score is 83, with logical coherence 83, evidence warrant 77, responsiveness 87, burden relevance 85, precision and clarity 84, and calibration and charity 87.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-logic-cannot-validate-itself-noncircularly",
+              "time": "15:11",
+              "role": "Reply",
+              "words": "Any attempted proof of logic already employs logical laws, making noncircular self-validation impossible and revealing an evidential limit that Slick compares with faith.",
+              "score": 82,
+              "critique": "Strongest feature: Demanding validation of logic that does not already reason logically isolates a circularity problem, giving the reply logical coherence 87, responsiveness 85, and precision and clarity 83. Principal limitation: An unavoidable condition of intelligible argument need not constitute faith, much less evidence for Christianity, and the analogy remains asserted despite evidence warrant 72 and calibration and charity 78. Live burden: Slick must carefully and independently explain what justification logical laws can possess, show that foundational necessity and religious trust share relevant features, and rule out non-theistic accounts before discharging burden relevance 83. Locked score: The immutable score is 82, with logical coherence 87, evidence warrant 72, responsiveness 85, burden relevance 83, precision and clarity 83, and calibration and charity 78.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick calls unavoidable reliance on logic faith and compares it with the Christian commitment he defends."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-scientific-method-self-corrects",
+              "time": "22:18",
+              "role": "Reply",
+              "words": "Peer review, repeatable testing, and openness to a demonstrably superior replacement make science self-correcting and results-sensitive, unlike apologetics characterized as preserving belief.",
+              "score": 73,
+              "critique": "Strongest feature: Aron identifies repeatable testing, peer scrutiny, and openness to replacement by a demonstrably better method as safeguards that make scientific confidence responsive to results; burden relevance 88 and responsiveness 82 show the comparison's force against alleged scientific faith. Principal limitation: His description of apologetics as admitting no conceivable disconfirmation is sweeping and insufficiently defended, contributing to calibration and charity 57, while evidence warrant 65 leaves the institutional claims only moderately supported. Live burden: He must specify fair replacement criteria, demonstrate that the corrective mechanisms work as described, and establish that Christian apologetics systematically insulates belief from counterevidence. Locked score: The immutable score is 73, with logical coherence 69, evidence warrant 65, responsiveness 82, burden relevance 88, precision and clarity 78, and calibration and charity 57.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-personal-continuity-cannot-be-proved",
+              "time": "24:26",
+              "role": "Reply",
+              "words": "Apparent memories and documents cannot strictly disprove recent creation, so ordinary confidence in personal continuity exceeds immediate scientific verification and depends on assumptions.",
+              "score": 61,
+              "critique": "Strongest feature: The recent-creation scenario shows that documents, memories, and present tests cannot deliver absolute proof of continuous identity, giving the example usefulness and logical coherence 70. Principal limitation: Slick shifts from inability to defeat radical skepticism to reliance on faith, equivocating between strict proof and warranted belief while indirectly addressing scientific self-correction, reflected in responsiveness 58 and evidence warrant 52. Live burden: He must show why confidence grounded in converging memories and records is epistemically comparable to Christian commitment, rather than vulnerable to an unfalsifiable possibility, and improve burden relevance 55, precision and clarity 66, and calibration and charity 62. Locked score: The immutable score is 61, with logical coherence 70, evidence warrant 52, responsiveness 58, burden relevance 55, precision and clarity 66, and calibration and charity 62.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick moves from inability to disprove recent creation to calling ordinary confidence in personal continuity faith."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-alternatives-need-possibility-and-documentary-support",
+              "time": "29:06",
+              "role": "Reply",
+              "words": "Identity documents and continuous records support personal continuity, while an alternative false-memory scenario lacks precedent or evidence and therefore cannot claim equal plausibility.",
+              "score": 76,
+              "critique": "Strongest feature: Aron contrasts an identity supported by documents and continuous records with a bare false-memory possibility, illustrating why alternatives need precedent, parallel, or evidence before receiving equal consideration; responsiveness 86 and burden relevance 82 reward that direct evidential comparison. Principal limitation: The analogy does not establish a general threshold for possibility and may understate how initially unsupported alternatives can become investigable, which helps explain evidence warrant 65 and calibration and charity 62. Live burden: He must justify when documentary continuity defeats skeptical hypotheses and show that the same screening rule applies without prejudice to contested Christian explanations. Locked score: The immutable score is 76, with logical coherence 76, evidence warrant 65, responsiveness 86, burden relevance 82, precision and clarity 79, and calibration and charity 62.",
+              "tags": [
+                {
+                  "label": "Argument from ignorance",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/argument-from-ignorance/",
+                  "context": "Aron declares recent creation with false memories impossible because no precedent, parallel, or evidence indicates it."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "transcendence-divine-attributes-and-evidence",
+        "title": "Transcendence, divine attributes, and evidence",
+        "timebox": "34:09–47:51",
+        "score": {
+          "pro": 69,
+          "con": 70
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "slick-god-precondition-for-intelligibility",
+              "time": "34:09",
+              "role": "Constructive",
+              "words": "Slick proposes the Christian God as the necessary ground of consistent physical laws, logic, and induction, arguing that intelligibility otherwise remains an unexplained brute fact.",
+              "score": 57,
+              "critique": "Strongest feature: Slick offers a unified explanation for physical laws, logic, and induction, placing intelligibility within the pro case and achieving the strongest dimension, burden relevance 73. Principal limitation: The assertion that the Christian God is necessary receives little demonstration, and no comparison shows why divine grounding outperforms brute regularity or secular accounts, yielding evidence warrant 39, logical coherence 62, and calibration and charity 49. Live burden: He must derive necessity without assuming it, explain how a rational deity grounds each feature, and connect that explanation to Christianity while addressing alternatives and responsiveness 57 with greater precision and clarity 68. Locked score: The immutable score is 57, with logical coherence 62, evidence warrant 39, responsiveness 57, burden relevance 73, precision and clarity 68, and calibration and charity 49.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-god-hypothesis-predicts-public-consistency",
+              "time": "34:33",
+              "role": "Reply",
+              "words": "A God concerned with belief should yield public religious consistency; persistent ambiguity, divergent religions, and belief-conditioned judgment therefore count against that Christian hypothesis.",
+              "score": 72,
+              "critique": "Strongest feature: Aron derives an observable expectation from the proposed God's concern with belief: clearer public consistency should be more likely than enduring ambiguity and divergent religions; burden relevance 85 and responsiveness 80 recognize the hypothesis-level challenge to Christianity. Principal limitation: The prediction depends on contestable assumptions about divine aims, freedom, and acceptable hiddenness, while the cited religious diversity is not developed quantitatively, matching evidence warrant 57 and calibration and charity 61. Live burden: He must defend why a concerned God would prioritize unmistakable uniformity, address theological explanations for disagreement, and show that observed diversity is significantly less expected under Christianity. Locked score: The immutable score is 72, with logical coherence 72, evidence warrant 57, responsiveness 80, burden relevance 85, precision and clarity 78, and calibration and charity 61.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-defines-noncontingent-transcendent-god",
+              "time": "38:21",
+              "role": "Reply",
+              "words": "Christian theology describes God as supreme, noncontingent, beyond space-time, and maximally rational and moral; therefore exclusively physical detection cannot delimit relevant evidence.",
+              "score": 75,
+              "critique": "Strongest feature: Slick supplies a specific theological description—supreme, noncontingent, outside space-time, rational, and moral—which corrects an anthropomorphic target and supports precision and clarity 85 and responsiveness 83. Principal limitation: Defining a transcendent being does not establish existence or determine observable consequences, so restricting physical testing remains partly warranted and evidence warrant is 54. Live burden: He must identify discriminating evidence appropriate to those attributes, demonstrate the definition is internally and doctrinally defensible, and show why broadening the method strengthens Christianity rather than insulating it from assessment, with logical coherence 78, burden relevance 80, and calibration and charity 73. Locked score: The immutable score is 75, with logical coherence 78, evidence warrant 54, responsiveness 83, burden relevance 80, precision and clarity 85, and calibration and charity 73.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-christian-god-is-adapted-anthropomorphic-deity",
+              "time": "35:46",
+              "role": "Constructive",
+              "words": "Aron portrays Christianity's anthropomorphic deity, miraculous powers, inherited mythology, and salvation scheme as adaptations from earlier traditions, implying cultural construction rather than discovery.",
+              "score": 56,
+              "critique": "Strongest feature: Aron offers a coherent cultural-construction hypothesis by combining anthropomorphic traits, miraculous powers, inherited Jewish and polytheistic motifs, and the salvation scheme into an alternative to independent revelation; precision and clarity 72 indicates that this intended comparison remains recoverable. Principal limitation: The historical dependence and adaptation claims are asserted without documentary demonstration, and the framing risks caricaturing theological conceptions, reflected in evidence warrant 44, calibration and charity 38, and responsiveness 60. Live burden: He must supply specific genealogical evidence, distinguish resemblance from borrowing, and explain why cultural development makes Christianity false rather than historically mediated. Locked score: The immutable score is 56, with logical coherence 59, evidence warrant 44, responsiveness 60, burden relevance 60, precision and clarity 72, and calibration and charity 38.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-evidence-search-must-fit-transcendence",
+              "time": "42:19",
+              "role": "Reply",
+              "words": "Rejecting a transcendent God requires suitable evidential criteria and a broad search, as accepting relativity already involves expert testimony rather than exclusively personal testing.",
+              "score": 69,
+              "critique": "Strongest feature: Slick asks whether Aron specified evidence suitable for transcendence or surveyed available possibilities, while the relativity comparison highlights dependence on expert testimony, supporting responsiveness 75. Principal limitation: Failure to examine every conceivable sign does not transfer the claimant's burden, while scientific expertise differs from accepting an undefined theological manifestation, leaving evidence warrant 54 and calibration and charity 66. Live burden: Slick must propose discriminating criteria, explain why they follow from divine attributes, and demonstrate that testimony for God parallels the independently checkable expert structure behind relativity, strengthening logical coherence 73, burden relevance 72, and precision and clarity 72. Locked score: The immutable score is 69, with logical coherence 73, evidence warrant 54, responsiveness 75, burden relevance 72, precision and clarity 72, and calibration and charity 66.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick calls acceptance of expert-validated relativity faith while comparing it with faith in Christianity."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-transcendence-description-remains-unsupported",
+              "time": "39:35",
+              "role": "Reply",
+              "words": "Defining transcendence as independence from space and time merely restates the claim; without evidence for maximal attributes, the proposed divine nature remains unsupported.",
+              "score": 66,
+              "critique": "Strongest feature: Aron targets the explanatory adequacy of defining transcendence as God's independence from space and time, arguing that restatement and magnified attributes supply no evidential indicator; responsiveness 82 and burden relevance 80 reflect the move's direct engagement with the proposed divine nature. Principal limitation: The charge of circularity is compressed, and the passage does not carefully reconstruct an argument for maximal power or knowledge before rejecting it, consistent with evidence warrant 43 and calibration and charity 44. Live burden: He must show exactly where the definition becomes circular, address the strongest account of transcendence, and explain what evidence could discriminate the proposal. Locked score: Immutable score is 66, with logical coherence 72, evidence warrant 43, responsiveness 82, burden relevance 80, precision and clarity 70, and calibration and charity 44.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-faith-is-trust-based-on-evidence",
+              "time": "44:33",
+              "role": "Reply",
+              "words": "Thomas's invitation to inspect Jesus's wounds portrays Christian faith as profound trust responsive to presented signs, not conviction maintained wholly without reason or evidence.",
+              "score": 76,
+              "critique": "Strongest feature: Thomas's invitation to inspect Jesus's wounds provides a biblical instance of belief responding to signs, contesting faith as reasonless conviction and supporting responsiveness 85 and burden relevance 85. Principal limitation: A narrative depicting evidence-sensitive belief does not authenticate the event or establish that contemporary Christian confidence rests on comparable evidence, constraining evidence warrant 61 and calibration and charity 70. Live burden: He must separate faith's conceptual meaning from the illustration's historical truth, substantiate its evidential relevance, and show how profound trust remains proportionate rather than asserted, with logical coherence 76 and precision and clarity 83. Locked score: The immutable score is 76, with logical coherence 76, evidence warrant 61, responsiveness 85, burden relevance 85, precision and clarity 83, and calibration and charity 70.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-scriptural-story-is-not-independent-evidence",
+              "time": "45:01",
+              "role": "Reply",
+              "words": "A story depicting Thomas seeing a sign cannot independently verify itself, while its blessing of unseen belief and a Krishna parallel expose inconsistent evidential treatment.",
+              "score": 83,
+              "critique": "Strongest feature: Aron tests scriptural self-support through two pointed comparisons: Christians would not accept an analogous Krishna narrative, and the Thomas passage ends by praising belief without sight; responsiveness 90 and burden relevance 86 capture how effectively this challenges the story's independent evidential value. Principal limitation: The argument can establish that narration alone is insufficient, but it does not assess external corroboration or every evidential use of testimony, leaving evidence warrant 74 as its weakest dimension. Live burden: He must separate literary depiction from historical testimony, evaluate any independent support for the episode, and defend the symmetry of his Krishna comparison. Locked score: The immutable score is 83, with logical coherence 84, evidence warrant 74, responsiveness 90, burden relevance 86, precision and clarity 82, and calibration and charity 79.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "jesus-moses-and-historical-method",
+        "title": "Jesus, Moses, and historical method",
+        "timebox": "47:51–56:13",
+        "score": {
+          "pro": 73,
+          "con": 72
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "slick-jesus-denial-lacks-demonstrated-test",
+              "time": "48:35",
+              "role": "Reply",
+              "words": "Slick challenges both the evidence for denying Jesus and the consistency of quoting Jesus about faith while treating that speaker's historical existence as unsupported.",
+              "score": 67,
+              "critique": "Strongest feature: Slick requests the test supporting Aron's denial and notes the tension in citing Jesus's words while disputing his historicity, reflected in responsiveness 76. Principal limitation: Quoting a text does not commit someone to the character's existence, and demanding a scientific test may impose the wrong historical method, so evidence warrant 56 and calibration and charity 59 remain limited. Live burden: He must replace the superficial inconsistency charge with positive historical evidence, state an appropriate standard for ancient persons, and show why Aron's probabilistic position fails it, thereby strengthening logical coherence 70, burden relevance 70, and precision and clarity 71. Locked score: The immutable score is 67, with logical coherence 70, evidence warrant 56, responsiveness 76, burden relevance 70, precision and clarity 71, and calibration and charity 59.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Slick attacks Aron for quoting Jesus while disputing historicity instead of supplying positive historical evidence."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-jesus-historicity-is-uncertain-and-composite",
+              "time": "47:51",
+              "role": "Constructive",
+              "words": "Aron treats Jesus as possibly an astral figure later historicized into a composite, warranting agnosticism and weakening appeals to Gospel sayings as direct testimony.",
+              "score": 62,
+              "critique": "Strongest feature: Aron avoids categorical denial and presents the composite or historicized-astral possibility as grounds for probabilistic uncertainty, thereby weakening uncomplicated reliance on attributed Gospel sayings; burden relevance 68 and responsiveness 68 show a relevant, though limited, challenge. Principal limitation: The proposed origins are not supported with documentary evidence in the passage, and moving from possible composition to substantial historical doubt remains underdeveloped, fitting evidence warrant 48 and logical coherence 65. Live burden: He must provide evidence for the astral and composite account, compare it against ordinary historical explanations, and specify how much uncertainty follows for particular sayings. Locked score: The immutable score is 62, with logical coherence 65, evidence warrant 48, responsiveness 68, burden relevance 68, precision and clarity 67, and calibration and charity 61.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-absence-of-evidence-and-comparative-history",
+              "time": "49:31",
+              "role": "Reply",
+              "words": "Scientific silence cannot establish an ancient person's nonexistence; comparing Jesus with Alexander and Hypatia tests whether the same historical evidential threshold is applied consistently.",
+              "score": 80,
+              "critique": "Strongest feature: Alexander and Hypatia shift assessment of ancient persons from experimental proof to historical evidence, testing Aron's consistency and supporting responsiveness 86 and calibration and charity 83. Principal limitation: Scientific silence cannot prove nonexistence, but that point supplies no positive sources for Jesus and does not establish equivalent documentation among comparisons, leaving evidence warrant 70. Live burden: Slick must compare source dates, independence, transmission, and reliability across the figures, then explain what the comparison warrants about Jesus rather than merely defeating an overly strict demand, with logical coherence 82, burden relevance 79, and precision and clarity 82. Locked score: The immutable score is 80, with logical coherence 82, evidence warrant 70, responsiveness 86, burden relevance 79, precision and clarity 82, and calibration and charity 83.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-historical-claims-require-corroboration",
+              "time": "49:51",
+              "role": "Reply",
+              "words": "Aron's agnosticism about Hypatia illustrates that historical belief should follow independent documentary corroboration, not a lone possibly literary source, even when the conclusion is desired.",
+              "score": 81,
+              "critique": "Strongest feature: Aron uses his willingness to remain agnostic about Hypatia despite preferring a conclusion to demonstrate a consistent corroboration rule: one potentially literary source may not warrant historical belief; calibration and charity 87, responsiveness 86, and burden relevance 84 reward that disciplined example. Principal limitation: A single analogy does not establish how many independent records are necessary or how source quality should alter confidence, leaving evidence warrant 68 notably lower than the other dimensions. Live burden: He must articulate a proportionate historical method, compare the relevant sources by quality rather than count alone, and apply it consistently to Christian claims. Locked score: The immutable score is 81, with logical coherence 81, evidence warrant 68, responsiveness 86, burden relevance 84, precision and clarity 82, and calibration and charity 87.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-borrowing-claim-needs-source-validation",
+              "time": "53:22",
+              "role": "Reply",
+              "words": "Documentary similarity alone cannot prove borrowing; proposed ancient parallels require independent validation of their dating, transmission, accuracy, and evidential status before supporting dependence.",
+              "score": 76,
+              "critique": "Strongest feature: Slick separates resemblance from demonstrated borrowing and requests support for dating, transmission, observation, and accuracy, attacking the decisive premise and earning responsiveness 86 and logical coherence 80. Principal limitation: He provides little affirmative historical evidence and dilutes the challenge with accusations about faith, so evidence warrant 59 and calibration and charity 73 remain weaker. Live burden: He must evaluate the parallel documents, identify which links in the transmission chain fail, and distinguish reliance on peer review from uncritical trust while converting critique into pro evidence, with burden relevance 78 and precision and clarity 77. Locked score: The immutable score is 76, with logical coherence 80, evidence warrant 59, responsiveness 86, burden relevance 78, precision and clarity 77, and calibration and charity 73.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick calls reliance on dated ancient documents faith because Aron did not personally witness or test them."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-moses-narrative-borrows-and-lacks-demographic-evidence",
+              "time": "51:50",
+              "role": "Constructive",
+              "words": "Sargon and sea-parting parallels, absent traces of a two-million-person Exodus, and an impractical route cumulatively support Aron's conclusion that Moses is fictional.",
+              "score": 72,
+              "critique": "Strongest feature: Aron assembles several independent-looking considerations—the Sargon birth motif, an earlier sea-parting story, demographic absence for a two-million-person migration, and geographic implausibility—into a cumulative challenge to Moses; responsiveness 78 and burden relevance 78 capture its historical pertinence. Principal limitation: The excerpt does not document the parallels, archaeological expectations, population estimate, or route analysis, and resemblance alone cannot prove borrowing, reflected in evidence warrant 68 and calibration and charity 51. Live burden: He must source each comparison, establish appropriate archaeological expectations, and show why the combined evidence warrants fiction rather than a smaller or transformed historical core. Locked score: The immutable score is 72, with logical coherence 75, evidence warrant 68, responsiveness 78, burden relevance 78, precision and clarity 70, and calibration and charity 51.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-personal-repetition-gap-reintroduces-trust",
+              "time": "55:40",
+              "role": "Reply",
+              "words": "Accepting researchers' conclusions without personally repeating every test involves trust; therefore Aron overstates his rejection of all faith-like reliance in assessing ancient sources.",
+              "score": 65,
+              "critique": "Strongest feature: Slick identifies the gap between reproducing every test and accepting researchers' conclusions, qualifying Aron's denial of trust-like reliance and supporting responsiveness 74. Principal limitation: Dependence on accountable experts, reproducible methods, and converging results is not automatically equivalent to religious faith, while the ancient-source application remains thin, limiting evidence warrant 54 and calibration and charity 59. Live burden: He must specify the similarity between expert and Christian trust, acknowledge safeguards and differences, and show why Aron's historical conclusions depend on an inadequately supported chain, improving logical coherence 68, burden relevance 64, and precision and clarity 71. Locked score: The immutable score is 65, with logical coherence 68, evidence warrant 54, responsiveness 74, burden relevance 64, precision and clarity 71, and calibration and charity 59.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick calls reliance on researchers without personally repeating every test faith and compares it with Christian trust."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-document-dating-and-peer-review-corroborate",
+              "time": "54:35",
+              "role": "Reply",
+              "words": "Dating documents, comparing independent records, and continuing peer review rigorously test ancient-source claims, allowing correction when proposed Mosaic details repeatedly fail corroboration.",
+              "score": 75,
+              "critique": "Strongest feature: Aron explains how document dating, comparison with other records, independent testing, and continuing peer review can convert proposed historical parallels into corrigible claims rather than personal assertion; responsiveness 83 and burden relevance 78 recognize that methodological answer. Principal limitation: The passage describes safeguards generally without presenting their actual findings or showing that the cited Mosaic details underwent those checks, which leaves evidence warrant 68 and calibration and charity 66 comparatively restrained. Live burden: He must provide the dated documents and corroborating comparisons, identify the relevant scholarly review, and explain how specific failures change the probability of a historical Moses. Locked score: The immutable score is 75, with logical coherence 76, evidence warrant 68, responsiveness 83, burden relevance 78, precision and clarity 75, and calibration and charity 66.",
+              "tags": [
+                {
+                  "label": "Appeal to authority",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Aron invokes peer review and scholarly checking to validate specific claims that Mosaic details were borrowed."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "religious-expertise-and-public-verification",
+        "title": "Religious expertise and public verification",
+        "timebox": "1:01:40–1:11:22",
+        "score": {
+          "pro": 81,
+          "con": 80
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "slick-transcendence-and-omnipotence-need-accurate-definitions",
+              "time": "1:01:40",
+              "role": "Reply",
+              "words": "Transcendence denotes independence from physical space-time, while Christian omnipotence excludes nonsensical contradictions; accurate evaluation therefore must address these qualified doctrines rather than caricatures.",
+              "score": 81,
+              "critique": "Strongest feature: Slick defines transcendence as independence from space-time and qualifies omnipotence against contradictions, correcting the disputed characterization and earning responsiveness 90, logical coherence 84, and precision and clarity 84. Principal limitation: Accurate definitions protect Christianity from caricature but do not demonstrate that the described being exists or exhaust Christian usage, leaving evidence warrant 72. Live burden: He must ground the definitions doctrinally, explain their implications, and supply independent reasons for believing such a being exists, rather than treating conceptual correction as proof, with burden relevance 79 and calibration and charity 76. Locked score: The immutable score is 81, with logical coherence 84, evidence warrant 72, responsiveness 90, burden relevance 79, precision and clarity 84, and calibration and charity 76.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-credentials-do-not-verify-theology",
+              "time": "1:03:40",
+              "role": "Reply",
+              "words": "Advanced theological credentials demonstrate scholarly familiarity, not truth, because equally qualified specialists disagree and no independent test selects among their incompatible conclusions.",
+              "score": 79,
+              "critique": "Strongest feature: Aron cleanly distinguishes expertise about a tradition from evidence that the tradition is true, emphasizing equally credentialed disagreement and the absence of an independent selector among incompatible conclusions; responsiveness 84 and precision and clarity 83 confirm the argument's directness. Principal limitation: Disagreement does not by itself erase all evidential value of specialized judgment, and the passage must establish that no relevant independent test exists, consistent with evidence warrant 68. Live burden: He must identify the disputed claims, compare the experts' methods and evidence, and show why qualifications contribute familiarity without truth-confirming force in this case. Locked score: The immutable score is 79, with logical coherence 81, evidence warrant 68, responsiveness 84, burden relevance 81, precision and clarity 83, and calibration and charity 79.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-belief-is-true-aspect-of-christian-description",
+              "time": "1:04:29",
+              "role": "Reply",
+              "words": "Slick's own belief demonstrates the Christian proposition that Christians believe in Christ, refuting universal wording about religious truth without establishing Jesus's existence.",
+              "score": 73,
+              "critique": "Strongest feature: Slick supplies an independently verifiable counterexample to the universal wording: his belief confirms that one Christian believes in Christ, supporting evidence warrant 82 and responsiveness 84. Principal limitation: The maneuver exploits a broad formulation while bypassing whether Christian theological or historical claims are true, sharply limiting burden relevance 49 and calibration and charity 55. Live burden: He must move beyond the psychological fact of belief to evidence for its object, clarify the defended proposition, and avoid presenting a semantic victory as validation of Jesus's existence, notwithstanding logical coherence 75 and precision and clarity 82. Locked score: The immutable score is 73, with logical coherence 75, evidence warrant 82, responsiveness 84, burden relevance 49, precision and clarity 82, and calibration and charity 55.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Slick substitutes the truth that he believes Jesus lived for the substantive truth of Christian claims."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-belief-fact-is-not-theological-truth",
+              "time": "1:05:07",
+              "role": "Reply",
+              "words": "Documenting Christian, Hindu, Jain, or Sikh belief proves only that people hold doctrines, not that their objects or historical assertions are true.",
+              "score": 88,
+              "critique": "Strongest feature: Aron decisively separates the factual existence of belief from the truth of what is believed, using Christian, Hindu, Jain, and Sikh commitments to expose why a semantic counterexample cannot verify any doctrine; responsiveness 94, logical coherence 90, and precision and clarity 90 mark exceptional execution. Principal limitation: The distinction does not determine whether separate evidence supports one tradition, so its conclusion must remain confined to what belief reports alone establish, notwithstanding evidence warrant 78. Live burden: He must assess the independent historical or theological evidence rather than treating this rebuttal as a complete case against Christianity. Locked score: The immutable score is 88, with logical coherence 90, evidence warrant 78, responsiveness 94, burden relevance 88, precision and clarity 90, and calibration and charity 88.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-expert-appeal-must-specify-relevant-expertise",
+              "time": "1:07:12",
+              "role": "Reply",
+              "words": "Expert consensus supports verification only after identifying the experts and relevant field, preventing selection of a favorable reference class after the desired conclusion is known.",
+              "score": 83,
+              "critique": "Strongest feature: Slick requests the relevant experts and discipline, showing consensus remains indeterminate until its reference class is principled and not selected opportunistically, earning responsiveness 91 and logical coherence 88. Principal limitation: The challenge identifies missing specification but does not determine which expertise evaluates historical, scientific, or theological claims, while evidence warrant 69 remains weakest. Live burden: He must propose defensible selection criteria, apply them symmetrically to Christian and skeptical authorities, and show how the resulting expert body bears on the contested proposition rather than merely defeating vague wording, preserving burden relevance 83, precision and clarity 87, and calibration and charity 82. Locked score: The immutable score is 83, with logical coherence 88, evidence warrant 69, responsiveness 91, burden relevance 83, precision and clarity 87, and calibration and charity 82.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-consensus-requires-broad-convergence",
+              "time": "1:07:17",
+              "role": "Reply",
+              "words": "Aron argues genuine public verification should compel an overwhelming cross-perspective expert majority, whereas agreement among committed prior adherents cannot establish comparable consensus.",
+              "score": 65,
+              "critique": "Strongest feature: Aron distinguishes broad convergence independently compelled by shared data from agreement confined to prior adherents, directly answering the appeal to Christian experts; burden relevance 77 and responsiveness 75 acknowledge the criterion's usefulness for evaluating claimed public verification. Principal limitation: The near-unanimity expectation and exclusion of a supposedly tiny resistant minority are unsupported and understate reasonable expert disagreement, explaining logical coherence 63, evidence warrant 49, and calibration and charity 54. Live burden: He must justify an appropriate convergence threshold, define relevant expertise without circular exclusions, and show why strong evidence for Christianity would predict that degree of agreement. Locked score: The immutable score is 65, with logical coherence 63, evidence warrant 49, responsiveness 75, burden relevance 77, precision and clarity 70, and calibration and charity 54.",
+              "tags": [
+                {
+                  "label": "Appeal to authority",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Aron says an overwhelming expert majority would conclusively verify the disputed claim despite undefined expertise."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-christian-expert-consensus-reductio",
+              "time": "1:09:10",
+              "role": "Reply",
+              "words": "If expert identity is irrelevant, Christian theologians' consensus could prove Christianity; that unacceptable result shows the rule needs a principled, nonsectarian reference class.",
+              "score": 84,
+              "critique": "Strongest feature: Slick's reductio applies the consensus rule to Christian theologians, showing that indifference to expert identity licenses sectarian circularity and producing responsiveness 93, precision and clarity 89, and logical coherence 88. Principal limitation: The argument reveals defective formulation but does not show broad cross-disciplinary convergence is impossible or theological consensus verifies Christianity, leaving evidence warrant 69. Live burden: He must state what makes an expert class relevant, test Aron's convergence proposal under that criterion, and explain how the corrected standard supports the pro case rather than only blocking an argument, with burden relevance 81 and calibration and charity 81. Locked score: The immutable score is 84, with logical coherence 88, evidence warrant 69, responsiveness 93, burden relevance 81, precision and clarity 89, and calibration and charity 81.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-sectarian-sample-is-not-consensus",
+              "time": "1:09:21",
+              "role": "Reply",
+              "words": "Christian agreement alone could equally validate rival religions; continuing worldwide dispute shows that no inclusive, cross-perspective consensus independently demonstrates Christianity's alleged proof.",
+              "score": 83,
+              "critique": "Strongest feature: Aron exposes the selectivity of counting Christian agreement as consensus by noting that identical reasoning could validate Islam and by requiring investigators from other religions and none; responsiveness 92 and burden relevance 88 capture this forceful rebuttal. Principal limitation: Worldwide disagreement does not logically preclude strong evidence, and the proposed inclusive consensus needs clearer rules for relevant expertise and weighting, leaving evidence warrant 72 below the otherwise strong dimensions. Live burden: He must explain why demonstrated proof should produce cross-perspective convergence, distinguish rational dissent from sectarian sampling, and avoid making popularity itself the truth criterion. Locked score: The immutable score is 83, with logical coherence 85, evidence warrant 72, responsiveness 92, burden relevance 88, precision and clarity 81, and calibration and charity 79.",
+              "tags": [
+                {
+                  "label": "Appeal to authority",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/appeal-to-authority/",
+                  "context": "Aron treats near-universal cross-perspective expert acceptance as what would conclusively prove God's existence."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "logic-god-and-explanatory-power",
+        "title": "Logic, God, and explanatory power",
+        "timebox": "1:12:50–1:23:01",
+        "score": {
+          "pro": 64,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "slick-god-not-god-exhausts-options",
+              "time": "1:12:50",
+              "role": "Constructive",
+              "words": "God and not-God exhaust the possibilities, so disproving either validates the other; Slick uses this binary to prepare an indirect argument from rationality.",
+              "score": 82,
+              "critique": "Strongest feature: The God-or-not-God disjunction is exhaustive, and Slick states the conditional inference that negating one validates the other, supporting logical coherence 87, precision and clarity 87, and calibration and charity 85. Principal limitation: Formal exhaustiveness does not establish which disjunct is false, and the excerpt supplies no demonstration that a no-God worldview cannot account for rationality, leaving evidence warrant 71. Live burden: Slick must independently substantiate the promised negation, engage naturalistic accounts, and avoid treating the uncontested binary as proof while converting it into pro support, with responsiveness 82 and burden relevance 82. Locked score: The immutable score is 82, with logical coherence 87, evidence warrant 71, responsiveness 82, burden relevance 82, precision and clarity 87, and calibration and charity 85.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-god-addition-is-not-explanatory",
+              "time": "1:13:32",
+              "role": "Reply",
+              "words": "If natural and God-added accounts predict identical observations, the unsupported divine addition explains no process and is superfluous rather than a genuinely competing model.",
+              "score": 78,
+              "critique": "Strongest feature: Aron distinguishes an ontological option from an explanatory model, arguing that adding God to an otherwise identical observed universe changes no prediction or process; responsiveness 90, burden relevance 88, and precision and clarity 85 reflect that vivid comparison. Principal limitation: He largely stipulates that God explains nothing without examining Slick's proposed divine account or mechanism, so evidence warrant 60 and calibration and charity 72 appropriately constrain the assessment. Live burden: Aron must engage the strongest claimed explanatory work performed by God and show why it yields neither mechanism, distinctive prediction, nor improved understanding. Locked score: The immutable score is 78, with logical coherence 78, evidence warrant 60, responsiveness 90, burden relevance 88, precision and clarity 85, and calibration and charity 72.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-abstract-logic-needs-worldview-account",
+              "time": "1:14:24",
+              "role": "Reply",
+              "words": "Because logical laws are universal, abstract, and rational, Slick argues that neither matter nor individual minds explain them, making God their necessary precondition.",
+              "score": 65,
+              "critique": "Strongest feature: Slick identifies universality, abstraction, and rational applicability as requiring explanation, then challenges the no-God worldview to account for them, advancing burden relevance 76 and responsiveness 71. Principal limitation: The move assumes matter and human minds cannot supply an account, then proposes the Christian God without demonstrating exclusion or necessity, so evidence warrant 47, logical coherence 68, and calibration and charity 55 remain constrained. Live burden: He must defend logical transcendence, compare non-theistic accounts fairly, and show how a divine mind explains rather than labels authority, universality, and applicability, while sharpening precision and clarity 71. Locked score: The immutable score is 65, with logical coherence 68, evidence warrant 47, responsiveness 71, burden relevance 76, precision and clarity 71, and calibration and charity 55.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "aron-logical-relations-hold-without-god",
+              "time": "1:14:49",
+              "role": "Reply",
+              "words": "Because two rocks plus two remain four even in a lifeless universe, derivable logical relations need no divine mind and establish no theological premise.",
+              "score": 73,
+              "critique": "Strongest feature: Aron's two-rocks example makes his contention concrete: numerical relations would hold in a lifeless universe and can be derived from actual relations without adding a divine mind; responsiveness 80 and burden relevance 79 recognize its engagement with the claimed precondition. Principal limitation: The example assumes rather than fully explains the status and necessity of logical laws, so it does not completely answer Slick's demand for an atheistic account, consistent with evidence warrant 60 and precision and clarity 73. Live burden: He must distinguish discovering logical relations from grounding them and defend why their counterfactual applicability requires no theological explanation. Locked score: The immutable score is 73, with logical coherence 76, evidence warrant 60, responsiveness 80, burden relevance 79, precision and clarity 73, and calibration and charity 71.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "slick-no-god-universe-is-impossible",
+              "time": "1:15:58",
+              "role": "Reply",
+              "words": "Testing logic already uses logical laws, and Slick declares a Godless universe impossible; if both hold, Aron's rock comparison cannot challenge God's necessity.",
+              "score": 51,
+              "critique": "Strongest feature: Slick presses Aron's inability to explain how logical laws could be tested without already reasoning, giving the reply its highest dimension, responsiveness 70. Principal limitation: The presupposition observation is distinct from the unsupported declaration that a Godless universe is impossible or logic requires God, leaving the inference impaired with logical coherence 48, evidence warrant 30, and calibration and charity 38. Live burden: He must provide grounds for metaphysical impossibility, establish a necessary connection between God and logic, and answer the rock example without dismissing its comparison case by assertion, while improving burden relevance 58 and precision and clarity 65. Locked score: The immutable score is 51, with logical coherence 48, evidence warrant 30, responsiveness 70, burden relevance 58, precision and clarity 65, and calibration and charity 38.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "Slick rejects the Godless-universe comparison because he believes such a universe is impossible, repeating that belief when challenged."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "aron-explanation-requires-mechanism",
+              "time": "1:20:15",
+              "role": "Reply",
+              "words": "Calling an event God's act or a miracle identifies no mechanism or process, so the supernatural label leaves the natural occurrence unexplained.",
+              "score": 79,
+              "critique": "Strongest feature: Aron states an explanatory requirement: saying that God or a miracle caused an event does not reveal how it occurred, whereas mechanisms and processes add usable content; responsiveness 86 and burden relevance 86 reflect its direct challenge to the divine explanation. Principal limitation: The move assumes every explanation must specify a mechanism and spends effort equating miracle language with magic without establishing that methodological rule, leaving evidence warrant 67 and calibration and charity 70. Live burden: He must defend the mechanism requirement, consider whether personal causation can explain without physical detail, and test the actual Christian proposal against that standard. Locked score: The immutable score is 79, with logical coherence 82, evidence warrant 67, responsiveness 86, burden relevance 86, precision and clarity 80, and calibration and charity 70.",
+              "tags": []
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 73,
+        "strengths": [
+          "Slick isolated circularity in using logic or scientific method to validate the very foundations those practices necessarily presuppose.",
+          "His future-uniformity challenge exposed the difference between inductive confidence from observations and deductive proof about every future event.",
+          "He demanded accurate theological definitions and a principled expert reference class, preventing objections from succeeding through ambiguous targets."
+        ],
+        "blunders": [
+          {
+            "text": "He declared a Godless universe impossible without establishing the crucial bridge from logical necessity to the specifically Christian God.",
+            "links": [
+              {
+                "label": "Begging the question",
+                "url": "https://logfall.com/fallacies/begging-the-question/"
+              }
+            ]
+          },
+          {
+            "text": "The personal-continuity scenario blurred radical skeptical proof with ordinary warranted belief and only indirectly supported Christian faith.",
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
+              }
+            ]
+          },
+          {
+            "text": "His belief-fact counterexample answered Aron’s wording but did not establish Jesus, Christian doctrine, or Christianity’s substantive truth.",
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
+              }
+            ]
+          }
+        ]
+      },
+      "con": {
+        "score": 73,
+        "strengths": [
+          "Aron distinguished observed regularity from unsupported certainty, defending provisional scientific confidence as evidence-responsive rather than religious faith.",
+          "He separated the truth that someone believes from the truth of the doctrine believed, protecting the proper evidential burden.",
+          "His mechanism requirement and sectarian-consensus critique demanded publicly discriminating support rather than labels, credentials, or agreement among insiders."
+        ],
+        "blunders": [
+          {
+            "text": "He announced certain nonexistence of the biblical God before supplying the evidence or argument needed to warrant that confidence.",
+            "links": []
+          },
+          {
+            "text": "His universal description of religious faith as reasonless and defended against reason rested on an unverified, uncharitable generalization.",
+            "links": []
+          },
+          {
+            "text": "He treated unsupported alternatives as impossible and demanded near-total expert convergence, overstating what responsible evidential caution can justify.",
+            "links": [
+              {
+                "label": "Appeal to authority",
+                "url": "https://logfall.com/fallacies/appeal-to-authority/"
+              },
+              {
+                "label": "Argument from ignorance",
+                "url": "https://logfall.com/fallacies/argument-from-ignorance/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "Christianity better accounts for rational knowledge if, as the proposed extension argues, its God is the necessary and noncontingent ground of logical norms, inductive trust, and the intelligibility presupposed by inquiry.",
+          "premises": [
+            "Scientific inquiry already depends on valid logical inference and on nature remaining sufficiently regular for observations and experiments to support conclusions beyond the immediate moment.",
+            "Neither logical validity nor universal future uniformity can be proven without using reasoning or observed regularities that already assume the very principles needing justification.",
+            "Because abstract logical relations are universal and normative, the proposed pro extension says their ultimate explanation must reach beyond contingent physical events and individual human minds.",
+            "The proposed Christian account identifies God as necessary, rational, and transcendent, qualities that would fit the kind of foundation required for those universal preconditions of knowledge.",
+            "Historical and theological objections should employ accurate definitions, independently validated sources, and standards applied consistently to rival explanations, rather than treating an unsupported assertion of impossibility as decisive."
+          ],
+          "conclusion": "Therefore, on this proposed extension, Christianity offers a coherent foundation for the rational practices used to evaluate every worldview, providing positive though still contestable reason to regard Christianity as true.",
+          "notice": "AI-generated logical extension derived from Slick’s locked moves; it was not spoken verbatim and does not alter any score."
+        },
+        "newArguments": [
+          {
+            "title": "Transcendental explanation",
+            "text": "If every inquiry necessarily relies on logic and induction, the central comparative question is which worldview can explain that reliance. Building on Slick's stated foundational challenge, an expanded Christian case could connect specific features of rational norms, such as universality, necessity, and authority over thought, to a necessarily rational God. It would then need to compare that account with naturalistic explanations, asking whether social agreement, evolved cognition, or brute facts can ground those features without circularity. This is an AI-proposed development, not a claim that Slick presented each step."
+          },
+          {
+            "title": "Predictive divine grounding",
+            "text": "The foundational argument would become stronger if it identified risky expectations flowing from divine rational governance, rather than merely labeling regularity as God's work. An AI-proposed extension could predict stable discoverability, broad convergence on basic logical laws, and principled limits on disorder, then compare those expectations with naturalistic and rival religious models. The comparison should also identify observations that would count against the Christian account. Doing so would give the God hypothesis explanatory content and make its alleged advantages open to public assessment rather than protected by definition."
+          },
+          {
+            "title": "Cumulative historical test",
+            "text": "The pro case could add a cumulative historical test using source proximity, independent attestation, hostile corroboration, explanatory scope, and consistency with established background knowledge. Those criteria should be applied equally to Christianity, natural explanations, rival religions, and comparable claims about ancient figures. The extension would support Christianity only if its central claims survive source criticism and explain the evidence better than alternatives at the same threshold. This AI-proposed framework preserves Slick's demand for validated sources while avoiding selective standards and clarifying what historical success would actually establish."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "Christianity remains inadequately supported because its theological additions, as assessed by the proposed con extension, lack independently testable evidence, broad public corroboration, distinctive predictions, and a clear explanatory mechanism.",
+          "premises": [
+            "Responsible belief should rise or fall with evidence, tested possibilities, repeatable inquiry, and correction when predictions fail, rather than remain insulated as a protected conviction.",
+            "Repeatedly observed regularities warrant provisional confidence about future events, while remaining open to revision, without requiring certainty or redefining that evidence-responsive confidence as religious faith.",
+            "Reports showing that Christians sincerely accept particular doctrines establish facts about their beliefs, but do not by themselves establish the truth of Jesus, miracles, or God.",
+            "Consensus offered as evidence of truth should extend beyond committed adherents and include qualified investigators who approach the claims from competing religious and nonreligious perspectives.",
+            "Invoking God adds explanatory content only if the proposal supplies a causal mechanism, a distinctive prediction, or an independently supported process that improves on competing accounts."
+          ],
+          "conclusion": "Therefore, this proposed extension concludes that the debate supplies inadequate public grounds for affirming Christianity as true, while provisional evidential restraint remains the better supported position.",
+          "notice": "AI-generated logical extension derived from Aron’s locked moves; it was not spoken verbatim and does not alter any score."
+        },
+        "newArguments": [
+          {
+            "title": "Discriminating prediction test",
+            "text": "A theological hypothesis should specify observations that are more expected if Christianity is true than if naturalism or another religion is true. An AI-proposed test could state in advance measurable patterns involving answered prayer, independently confirmed revelation, unusual public consistency, or uniquely strong historical evidence. It should define comparison groups, success thresholds, and results that would weaken the hypothesis, reducing selective interpretation after events occur. If Christianity cannot generate discriminating expectations or outperform alternatives, that failure would support Aron's contention that adding God has not improved the explanatory model."
+          },
+          {
+            "title": "Cross-tradition comparison",
+            "text": "Competing religions also produce sincere testimony, trained specialists, transformative experiences, and internally coherent interpretations, so those features alone cannot uniquely confirm Christianity. An AI-proposed comparison could apply identical measures of predictive success, independent corroboration, correction procedures, and agreement among investigators to Christian and non-Christian traditions. It should distinguish consensus within a committed community from convergence across people with different prior commitments. If Christianity does not reliably outperform alternatives under shared standards, sectarian confidence would provide little public evidence for its exclusive truth, even when that confidence is personally meaningful."
+          },
+          {
+            "title": "Mechanism and model selection",
+            "text": "Explanations can be compared by causal mechanisms, predictive precision, evidential fit, and the number of unsupported assumptions they introduce. Extending Aron's mechanism objection, an AI-proposed framework could score a natural account and a God-added account against the same observations, crediting genuine predictive gains while penalizing complexity that explains nothing further. The comparison should remain defeasible, meaning new evidence could change the ranking, and it should not assume naturalism in advance. This would turn the charge that God is superfluous into a transparent inference whose premises and tradeoffs both sides can challenge."
+          }
+        ]
+      }
+    }
   }
 ];
 

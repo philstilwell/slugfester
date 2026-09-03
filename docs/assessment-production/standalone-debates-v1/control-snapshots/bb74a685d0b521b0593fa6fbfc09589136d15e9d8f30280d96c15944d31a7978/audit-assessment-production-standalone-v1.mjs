@@ -1,0 +1,1519 @@
+#!/usr/bin/env node
+
+import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
+
+import { debates } from "../src/data/debates.js";
+import {
+  STANDALONE_PROTOCOL_ID,
+  STANDALONE_ROOT,
+  STANDALONE_SCORE_PROTOCOL_ID,
+  STANDALONE_SITE_LEDGER_ADAPTER_VERSION,
+  assembleStandaloneFinalLedger,
+  canonicalJson,
+  deriveStandaloneScores,
+  extractStandaloneDisagreements,
+  fileRecord,
+  serializedJson,
+  sha256,
+  validateStandaloneAdjudication,
+  validateStandaloneCandidate,
+  validateStandaloneInventory,
+  validateStandalonePrimaryJudgment,
+  validateStandaloneScoreStability,
+  validateStandaloneSiteLedgerAdapter
+} from "./lib/assessment-production-standalone-debate-v1.mjs";
+
+const ROOT = process.cwd();
+const rawArgs = process.argv.slice(2);
+const debateFlagIndex = rawArgs.indexOf("--debate");
+const requestedDebateNumber =
+  debateFlagIndex >= 0 ? rawArgs[debateFlagIndex + 1] : null;
+if (debateFlagIndex >= 0) {
+  assert.match(requestedDebateNumber ?? "", /^\d{2,}$/);
+}
+const registryBootstrap = JSON.parse(
+  readFileSync(path.join(ROOT, STANDALONE_ROOT, "registry.json"), "utf8")
+);
+const selectedRegistryRecord = registryBootstrap.debates.find(
+  (record) => record.debateNumber === (requestedDebateNumber ?? "196")
+);
+assert.ok(
+  selectedRegistryRecord,
+  `standalone registry does not contain Debate ${requestedDebateNumber ?? "196"}`
+);
+const DEBATE_NUMBER = selectedRegistryRecord.debateNumber;
+const DEBATE_ROOT = selectedRegistryRecord.root;
+const VIDEO_ID = selectedRegistryRecord.videoId;
+const paths = {
+  registry: `${STANDALONE_ROOT}/registry.json`,
+  authorization: `${DEBATE_ROOT}/authorization.json`,
+  manifest: `${DEBATE_ROOT}/manifest.json`,
+  sourceLock: `${DEBATE_ROOT}/source/source-lock.json`,
+  events: `.assessment-cache/captions/${VIDEO_ID}/events.json`,
+  transcript: `.assessment-cache/captions/${VIDEO_ID}/transcript.txt`,
+  inventory: `${DEBATE_ROOT}/inventory/inventory.json`,
+  judgmentPacket: `${DEBATE_ROOT}/judgments/judgment-packet.json`,
+  judgmentExecution: `${DEBATE_ROOT}/judgments/execution.json`,
+  passA: `${DEBATE_ROOT}/judgments/pass-a/output.json`,
+  passB: `${DEBATE_ROOT}/judgments/pass-b/output.json`,
+  disagreements: `${DEBATE_ROOT}/disagreements/disagreements.json`,
+  adjudicationPacket: `${DEBATE_ROOT}/adjudication/packet.json`,
+  audio: `${DEBATE_ROOT}/audio/audio-verification.json`,
+  adjudication: `${DEBATE_ROOT}/adjudication/output.json`,
+  finalLedger: `${DEBATE_ROOT}/final-ledger/final-ledger.json`,
+  scoreInput: `${DEBATE_ROOT}/score-pass/input.json`,
+  scoreOutput: `${DEBATE_ROOT}/score-pass/output.json`,
+  scoreAttestation: `${DEBATE_ROOT}/score-pass/attestation.json`,
+  publication: `${DEBATE_ROOT}/publication/output.json`,
+  publicationMotionCorrection: `${DEBATE_ROOT}/publication/correction-1-motion.json`,
+  publicationCommentaryCorrection: `${DEBATE_ROOT}/publication/correction-2-overall-commentary.json`,
+  publicationContentParityCorrection:
+    selectedRegistryRecord.contentParity?.correctionPath,
+  publicationBeforeContentParityRepair:
+    selectedRegistryRecord.contentParity?.preservedOutputPath,
+  publicationContentParityAudit: selectedRegistryRecord.contentParity?.auditPath,
+  publicationContentParityExecution:
+    selectedRegistryRecord.contentParity?.executionPath,
+  publicationRhetoricalTagCorrection:
+    selectedRegistryRecord.rhetoricalTagReview?.correctionPath,
+  publicationRhetoricalTagAudit:
+    selectedRegistryRecord.rhetoricalTagReview?.auditPath,
+  publicationRhetoricalTagExecution:
+    selectedRegistryRecord.rhetoricalTagReview?.executionPath,
+  postRhetoricalTagRendering:
+    selectedRegistryRecord.rhetoricalTagReview?.renderingAuditPath,
+  publicationAiContributionDepthCorrection:
+    selectedRegistryRecord.aiContributionDepth?.correctionPath,
+  publicationAiContributionDepthAudit:
+    selectedRegistryRecord.aiContributionDepth?.auditPath,
+  publicationAiContributionDepthExecution:
+    selectedRegistryRecord.aiContributionDepth?.executionPath,
+  postAiContributionDepthRendering:
+    selectedRegistryRecord.aiContributionDepth?.renderingAuditPath,
+  publicationAiContributionPunctuationCorrection:
+    selectedRegistryRecord.aiContributionPunctuation?.correctionPath,
+  publicationAiContributionPunctuationAudit:
+    selectedRegistryRecord.aiContributionPunctuation?.auditPath,
+  postAiContributionPunctuationRendering:
+    selectedRegistryRecord.aiContributionPunctuation?.renderingAuditPath,
+  rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
+  postPublicationRendering: `${DEBATE_ROOT}/rendering/post-publication-audit-1.json`,
+  validation: `${DEBATE_ROOT}/validation-summary.json`,
+  productionLedger: selectedRegistryRecord.productionLedger.path
+};
+
+const absolute = (relative) => path.join(ROOT, relative);
+const bytes = (relative) => readFileSync(absolute(relative));
+const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
+const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u0000a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u00006285c12f48aa18d23825dae851ff906981ab3b8c933f353d68e6506bdffbbf04",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/6285c12f48aa18d23825dae851ff906981ab3b8c933f353d68e6506bdffbbf04/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs\u000081106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/81106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838/audit-assessment-production-standalone-rhetorical-tags.mjs"
+  ],
+  [
+    "package.json\u00009da6228b21c2ecbbf16b1f335e7c69b8210c21d37fd33d40027f5fa80d9b226a",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/9da6228b21c2ecbbf16b1f335e7c69b8210c21d37fd33d40027f5fa80d9b226a/package.json"
+  ]
+]);
+const verifyLockedControl = (record) => {
+  const current = bytes(record.path);
+  if (sha256(current) === record.sha256) return;
+  const snapshotPath = VERSIONED_CONTROL_SNAPSHOTS.get(
+    `${record.path}\u0000${record.sha256}`
+  );
+  assert.ok(snapshotPath, `${record.path}: control hash changed without a frozen snapshot`);
+  assert.equal(existsSync(absolute(snapshotPath)), true, `${snapshotPath}: missing`);
+  const snapshot = bytes(snapshotPath);
+  assert.equal(
+    sha256(snapshot),
+    record.sha256,
+    `${snapshotPath}: frozen control snapshot hash changed`
+  );
+  if (record.bytes != null) {
+    assert.equal(
+      snapshot.length,
+      record.bytes,
+      `${snapshotPath}: frozen control snapshot byte count changed`
+    );
+  }
+};
+const gitBytes = (commit, relative) => {
+  const result = spawnSync("git", ["show", `${commit}:${relative}`], {
+    cwd: ROOT,
+    encoding: null,
+    maxBuffer: 10 * 1024 * 1024
+  });
+  assert.equal(result.status, 0, `cannot read preserved Git object ${commit}:${relative}`);
+  return result.stdout;
+};
+const gitBlob = (commit, relative) => {
+  const result = spawnSync("git", ["rev-parse", `${commit}:${relative}`], {
+    cwd: ROOT,
+    encoding: "utf8"
+  });
+  assert.equal(result.status, 0, `cannot resolve preserved Git blob ${commit}:${relative}`);
+  return result.stdout.trim();
+};
+const publicationComparable = (debate) => {
+  const comparable = structuredClone(debate);
+  delete comparable.sourceNote;
+  delete comparable.scoringNote;
+  return comparable;
+};
+const publicationWordCount = (value) =>
+  String(value ?? "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+const textTokenShape = (value) => {
+  if (typeof value === "string") {
+    return value.match(/[\p{L}\p{N}]+(?:[’'][\p{L}\p{N}]+)*/gu) ?? [];
+  }
+  if (Array.isArray(value)) return value.map(textTokenShape);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, textTokenShape(item)]));
+  }
+  return value;
+};
+const changedLeafPaths = (before, after, prefix = "candidate.logicalExtension") => {
+  if (typeof before === "string" || typeof after === "string") {
+    return before === after ? [] : [prefix];
+  }
+  if (Array.isArray(before) && Array.isArray(after)) {
+    assert.equal(before.length, after.length, `${prefix}: array length changed`);
+    return before.flatMap((item, index) =>
+      changedLeafPaths(item, after[index], `${prefix}[${index}]`)
+    );
+  }
+  assert.equal(
+    Boolean(before && typeof before === "object"),
+    Boolean(after && typeof after === "object"),
+    `${prefix}: value type changed`
+  );
+  if (!before || typeof before !== "object") return before === after ? [] : [prefix];
+  assert.deepEqual(Object.keys(before), Object.keys(after), `${prefix}: object shape changed`);
+  return Object.keys(before).flatMap((key) =>
+    changedLeafPaths(before[key], after[key], `${prefix}.${key}`)
+  );
+};
+const validatePublicationIdentity = (candidate, authorization) => {
+  for (const side of ["pro", "con"]) {
+    const productionSide = candidate.sides?.[side];
+    if (selectedRegistryRecord.validationProfile !== "frozen-legacy-v1") {
+      assert.equal(
+        productionSide?.speaker,
+        authorization.identity[side].speaker,
+        `${side}: publication speaker differs from the frozen identity`
+      );
+    } else {
+      assert.equal(
+        typeof productionSide?.speaker === "string" &&
+          productionSide.speaker.trim().length > 0,
+        true,
+        `${side}: legacy publication speaker is missing`
+      );
+    }
+    assert.equal(
+      typeof productionSide?.name === "string" &&
+        productionSide.name.trim().length > 0,
+      true,
+      `${side}: publication position label is missing`
+    );
+    assert.notEqual(
+      productionSide.name,
+      productionSide.speaker,
+      `${side}: publication position label must not repeat the speaker name`
+    );
+    assert.equal(
+      publicationWordCount(candidate.quotes?.[side]?.context) >= 12,
+      true,
+      `${side}: publication quote context must contain at least 12 words`
+    );
+    const extension = candidate.logicalExtension?.[side];
+    assert.equal(
+      Array.isArray(extension?.finalArgument?.premises) &&
+        extension.finalArgument.premises.length >= 4,
+      true,
+      `${side}: AI Extension final argument must contain at least four premises`
+    );
+    assert.equal(
+      publicationWordCount(extension?.finalArgument?.conclusion) >= 15,
+      true,
+      `${side}: AI Extension conclusion must contain at least 15 words`
+    );
+    assert.equal(
+      Array.isArray(extension?.newArguments) &&
+        extension.newArguments.length >= 2 &&
+        extension.newArguments.every(
+          (argument) => publicationWordCount(argument.text) >= 45
+        ),
+      true,
+      `${side}: every AI Extension new argument must contain at least 45 words`
+    );
+  }
+  assert.match(
+    candidate.scoringNote ?? "",
+    /AI-generated/i,
+    "publication scoring note must explicitly disclose AI-generated scores"
+  );
+  const critiques = candidate.sections.flatMap((section) =>
+    section.exchanges.flatMap((exchange) =>
+      ["pro", "con"].flatMap((side) =>
+        exchange[side]?.critique ? [exchange[side].critique] : []
+      )
+    )
+  );
+  const critiqueLabels = [
+    "Strongest feature:",
+    "Principal limitation:",
+    "Live burden:",
+    "Locked score:"
+  ];
+  for (const critique of critiques) {
+    assert.equal(
+      publicationWordCount(critique) >= 105 &&
+        publicationWordCount(critique) <= 130,
+      true,
+      "publication critique must contain 105-130 words"
+    );
+    assert.equal(
+      critique.length >= 880,
+      true,
+      "publication critique must contain at least 880 characters"
+    );
+    const parts = critique
+      .split(/(?=Principal limitation:|Live burden:|Locked score:)/)
+      .map((part) => part.trim());
+    assert.equal(parts.length, 4, "publication critique must contain four labeled sentences");
+    assert.equal(
+      parts.every(
+        (part, index) =>
+          part.startsWith(critiqueLabels[index]) && /[.!?]$/.test(part)
+      ),
+      true,
+      "publication critique labels or terminal punctuation are invalid"
+    );
+    assert.equal(
+      (critique.match(/[.!?](?=\s|$)/g) ?? []).length,
+      4,
+      "publication critique must contain exactly four sentences"
+    );
+    assert.equal(
+      /[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(critique),
+      false,
+      "publication critique contains unexpected script or replacement characters"
+    );
+  }
+  const critiqueComponents = critiques.flatMap((critique) =>
+    critique.split(
+      /(?=Principal limitation:|Live burden:|Locked score:)/
+    )
+  );
+  assert.equal(
+    new Set(critiqueComponents).size >= Math.ceil(critiqueComponents.length * 0.8),
+    true,
+    "publication critiques are excessively templated across locked moves"
+  );
+  const tokenizedCritiques = critiques.map((critique) =>
+    critique
+      .toLowerCase()
+      .replace(/[^a-z0-9/]+/g, " ")
+      .trim()
+      .split(/\s+/)
+  );
+  const ngramSize = 6;
+  const minimumDocuments = Math.max(3, Math.ceil(critiques.length * 0.25));
+  const documentCounts = new Map();
+  for (const tokens of tokenizedCritiques) {
+    const seen = new Set();
+    for (let index = 0; index <= tokens.length - ngramSize; index += 1) {
+      seen.add(tokens.slice(index, index + ngramSize).join(" "));
+    }
+    for (const value of seen) {
+      documentCounts.set(value, (documentCounts.get(value) ?? 0) + 1);
+    }
+  }
+  const commonNgrams = new Set(
+    [...documentCounts]
+      .filter(([, count]) => count >= minimumDocuments)
+      .map(([value]) => value)
+  );
+  const repeatedRatios = tokenizedCritiques.map((tokens) => {
+    const covered = new Set();
+    for (let index = 0; index <= tokens.length - ngramSize; index += 1) {
+      if (!commonNgrams.has(tokens.slice(index, index + ngramSize).join(" "))) {
+        continue;
+      }
+      for (let offset = 0; offset < ngramSize; offset += 1) {
+        covered.add(index + offset);
+      }
+    }
+    return covered.size / tokens.length;
+  });
+  assert.equal(
+    repeatedRatios.reduce((sum, value) => sum + value, 0) /
+        repeatedRatios.length <=
+      0.15 && Math.max(...repeatedRatios) <= 0.25,
+    true,
+    "publication critiques repeat too much shared six-word boilerplate"
+  );
+};
+const writeNewJson = (relative, value) => {
+  assert.equal(existsSync(absolute(relative)), false, `${relative}: refusing to overwrite`);
+  mkdirSync(path.dirname(absolute(relative)), { recursive: true });
+  writeFileSync(absolute(relative), serializedJson(value));
+};
+
+function validateFrozenInputBoundary({
+  requirePasses = false,
+  repositoryOnly = false
+} = {}) {
+  const registry = json(paths.registry);
+  const authorization = json(paths.authorization);
+  const manifest = json(paths.manifest);
+  const sourceLock = json(paths.sourceLock);
+  assert.equal(registry.protocolId, "assessment-production-standalone-debates-v1");
+  assert.equal(registry.campaignBoundary.batch18Permitted, false);
+  for (const key of ["debateNumber", "debateId", "videoId", "root"]) {
+    const values = registry.debates.map((record) => record[key]);
+    assert.equal(new Set(values).size, values.length, `registry: duplicate ${key}`);
+  }
+  const ledgerPaths = registry.debates.map(
+    (record) => record.productionLedger?.path
+  );
+  assert.equal(
+    new Set(ledgerPaths).size,
+    ledgerPaths.length,
+    "registry: duplicate production ledger path"
+  );
+  for (const record of registry.debates) {
+    assert.match(record.debateNumber, /^\d{2,}$/);
+    assert.ok(
+      [
+        "frozen-legacy-v1",
+        "semantic-balanced-v1",
+        "semantic-balanced-capacity-v2"
+      ].includes(
+        record.validationProfile
+      ),
+      `Debate ${record.debateNumber}: unknown validation profile`
+    );
+    assert.equal(
+      record.root,
+      `${STANDALONE_ROOT}/debate-${record.debateNumber}`,
+      `Debate ${record.debateNumber}: registry root does not match its number`
+    );
+    assert.equal(
+      path.posix.dirname(record.productionLedger.path),
+      "docs/assessment-ledgers",
+      `Debate ${record.debateNumber}: production ledger is outside its allowed directory`
+    );
+    if (record.contentParity) {
+      for (const value of Object.values(record.contentParity)) {
+        assert.equal(
+          value.startsWith(`${record.root}/publication/`),
+          true,
+          `Debate ${record.debateNumber}: content-parity evidence is outside its publication directory`
+        );
+      }
+    }
+    if (record.rhetoricalTagReview) {
+      for (const [key, value] of Object.entries(record.rhetoricalTagReview)) {
+        if (["modelSlug", "modelLabel", "reasoningEffort"].includes(key)) {
+          continue;
+        }
+        if (key === "priorPublicationGitCommit") {
+          assert.match(value, /^[0-9a-f]{40}$/);
+          continue;
+        }
+        const expectedDirectory =
+          key === "renderingAuditPath"
+            ? `${record.root}/rendering/`
+            : `${record.root}/publication/`;
+        assert.equal(
+          value.startsWith(expectedDirectory),
+          true,
+          `Debate ${record.debateNumber}: rhetorical-tag evidence is outside its allowed directory`
+        );
+      }
+    }
+    if (record.aiContributionDepth) {
+      for (const [key, value] of Object.entries(record.aiContributionDepth)) {
+        if (["modelSlug", "modelLabel", "reasoningEffort"].includes(key)) {
+          continue;
+        }
+        const expectedDirectory =
+          key === "renderingAuditPath"
+            ? `${record.root}/rendering/`
+            : `${record.root}/publication/`;
+        assert.equal(
+          value.startsWith(expectedDirectory),
+          true,
+          `Debate ${record.debateNumber}: AI Contribution depth evidence is outside its allowed directory`
+        );
+      }
+    }
+  }
+  assert.equal(selectedRegistryRecord.root, DEBATE_ROOT);
+  assert.equal(
+    selectedRegistryRecord.productionLedger.path,
+    paths.productionLedger
+  );
+  assert.equal(authorization.protocolId, STANDALONE_PROTOCOL_ID);
+  assert.equal(authorization.status, "authorized-and-frozen");
+  assert.equal(authorization.identity.debateNumber, DEBATE_NUMBER);
+  assert.equal(authorization.identity.debateId, selectedRegistryRecord.debateId);
+  assert.equal(authorization.identity.videoId, VIDEO_ID);
+  assert.equal(authorization.execution.primaryJudgments, 2);
+  assert.equal(authorization.execution.oneDeterministicScorePass, true);
+  assert.equal(authorization.historicalBoundary.campaignBatch, null);
+  assert.equal(manifest.protocolId, STANDALONE_PROTOCOL_ID);
+  assert.equal(manifest.status, "inputs-frozen-before-judgment");
+  assert.equal(manifest.debateNumber, DEBATE_NUMBER);
+  assert.equal(manifest.debateId, selectedRegistryRecord.debateId);
+  assert.equal(manifest.videoId, VIDEO_ID);
+  assert.equal(manifest.scoringControls.oneScorePass, true);
+  assert.equal(sourceLock.status, "complete-and-hash-locked");
+  assert.equal(sourceLock.identity.videoId, VIDEO_ID);
+  assert.equal(sourceLock.identity.canonicalUrl, authorization.identity.canonicalUrl);
+  assert.equal(sourceLock.participants.dyadicGatePassed, true);
+  assert.equal(sourceLock.duplicateAudit.identityDuplicateFound, false);
+  for (const record of Object.values(manifest.sourceLocks)) {
+    if (repositoryOnly && record.path.startsWith(".assessment-cache/")) continue;
+    assert.equal(existsSync(absolute(record.path)), true, `${record.path}: missing`);
+    assert.equal(sha256(bytes(record.path)), record.sha256, `${record.path}: source hash changed`);
+  }
+  for (const record of Object.values(manifest.controlLocks)) {
+    assert.equal(existsSync(absolute(record.path)), true, `${record.path}: missing`);
+    verifyLockedControl(record);
+  }
+  const inventory = json(paths.inventory);
+  const events = repositoryOnly ? null : json(paths.events);
+  assert.equal(
+    authorization.identity.motion,
+    inventory.motion,
+    "authorization and inventory motions differ"
+  );
+  assert.equal(inventory.debateNumber, DEBATE_NUMBER);
+  assert.equal(inventory.debateId, selectedRegistryRecord.debateId);
+  assert.equal(
+    inventory.schemaVersion,
+    selectedRegistryRecord.validationProfile === "semantic-balanced-capacity-v2"
+      ? "1.2-standalone-score-blind-inventory"
+      : selectedRegistryRecord.validationProfile === "semantic-balanced-v1"
+        ? "1.1-standalone-score-blind-inventory"
+        : "1.0-standalone-score-blind-inventory"
+  );
+  for (const side of ["pro", "con"]) {
+    assert.equal(
+      inventory.routes.find((route) => route.side === side)?.speaker,
+      authorization.identity[side].speaker,
+      `${side}: authorization and inventory speakers differ`
+    );
+  }
+  const inventoryValidation = validateStandaloneInventory(inventory, events, {
+    repositoryOnly
+  });
+  if (!requirePasses) return { inventory, events, inventoryValidation };
+  const inventorySha256 = sha256(bytes(paths.inventory));
+  const passA = json(paths.passA);
+  const passB = json(paths.passB);
+  validateStandalonePrimaryJudgment(passA, inventory, {
+    expectedPass: "pass-a",
+    expectedInventorySha256: inventorySha256
+  });
+  validateStandalonePrimaryJudgment(passB, inventory, {
+    expectedPass: "pass-b",
+    expectedInventorySha256: inventorySha256
+  });
+  const execution = json(paths.judgmentExecution);
+  assert.equal(execution.status, "complete-and-schema-valid");
+  assert.equal(execution.debateNumber, Number(DEBATE_NUMBER));
+  assert.equal(execution.debateId, selectedRegistryRecord.debateId);
+  assert.equal(execution.execution.model, "gpt-5.6-sol");
+  assert.equal(execution.execution.displayModel, "5.6 Sol");
+  assert.equal(execution.execution.reasoningEffort, "low");
+  if (
+    execution.execution.recoveryMode ===
+    "built-in-section-and-burden-field-disjoint-shards"
+  ) {
+    assert.equal(execution.schemaVersion, "1.2-standalone-judgment-execution");
+    assert.equal(execution.execution.pluginsDisabled, true);
+    assert.equal(execution.execution.userConfigurationDisabled, true);
+    assert.equal(execution.execution.projectRulesDisabled, true);
+    assert.equal(execution.execution.isolatedFilesystemPackets, true);
+    assert.equal(execution.execution.apiKeysRemoved, true);
+    assert.equal(execution.execution.oneAttemptPerBuiltInRecoveryShard, true);
+    assert.equal(execution.execution.mechanicalAssemblyOnly, true);
+    for (const recovery of [
+      ["recovery2ExecutionPath", "recovery2ExecutionSha256"],
+      ["recovery3ExecutionPath", "recovery3ExecutionSha256"]
+    ]) {
+      const [pathKey, hashKey] = recovery;
+      assert.equal(
+        sha256(bytes(execution.execution[pathKey])),
+        execution.execution[hashKey]
+      );
+    }
+    const expectedBuiltInShardCount = inventory.sections.length + 1;
+    for (const pass of execution.passes) {
+      assert.equal(pass.builtInRecoveryShardCount, expectedBuiltInShardCount);
+      assert.equal(pass.builtInRecoveryShardAttemptCount, expectedBuiltInShardCount);
+      assert.equal(pass.builtInRecoveryShardRetryCount, 0);
+    }
+  } else {
+    assert.equal(execution.execution.freshContextPerPass, true);
+    assert.equal(execution.execution.forkTurns, "none");
+  }
+  assert.equal(execution.execution.inventorySha256, inventorySha256);
+  assert.deepEqual(
+    execution.passes.map((pass) => pass.pass),
+    ["pass-a", "pass-b"]
+  );
+  for (const pass of execution.passes) {
+    const outputPath = pass.pass === "pass-a" ? paths.passA : paths.passB;
+    assert.equal(pass.outputPath, outputPath);
+    assert.equal(pass.outputSha256, sha256(bytes(outputPath)));
+    assert.equal(pass.judgmentCount, inventory.moves.length);
+    assert.equal(pass.validationStatus, "passed");
+  }
+  return { inventory, events, inventoryValidation, inventorySha256, passA, passB };
+}
+
+function writeJudgmentPacket() {
+  const { inventory } = validateFrozenInputBoundary();
+  const authorization = json(paths.authorization);
+  const packet = {
+    schemaVersion: "1.0-standalone-score-blind-judgment-packet",
+    protocolId: STANDALONE_PROTOCOL_ID,
+    status: "frozen-identical-evidence-packet",
+    frozenAt: new Date().toISOString(),
+    debateNumber: inventory.debateNumber,
+    debateId: inventory.debateId,
+    assessmentModel: "5.6 Sol",
+    reasoningEffort: "low",
+    authentication: "ChatGPT subscription",
+    motion: inventory.motion,
+    sides: {
+      pro: authorization.identity.pro,
+      con: authorization.identity.con
+    },
+    evidenceLocks: {
+      inventory: fileRecord(paths.inventory, ROOT),
+      events: fileRecord(paths.events, ROOT),
+      transcript: fileRecord(paths.transcript, ROOT),
+      workflow: fileRecord("docs/assessment-production-workflow.md", ROOT),
+      rubric: fileRecord("docs/reassessment-rubric-v2.1.md", ROOT),
+      validator: fileRecord(
+        "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+        ROOT
+      )
+    },
+    isolationBoundary: {
+      legacyAssessmentsUnavailable: true,
+      calculatedTotalsUnavailable: true,
+      winnerLabelsUnavailable: true,
+      otherJudgmentUnavailable: true,
+      publicationProseUnavailable: true,
+      otherDebatesUnavailable: true,
+      aggregateRankingsUnavailable: true,
+      priorScoresUnavailable: true,
+      aiExtensionsUnavailable: true
+    },
+    instructions: {
+      reviewCompleteLockedInventory: true,
+      judgeEveryMoveExactlyOnce: true,
+      preserveInventoryStructure: true,
+      doNotAddDropMergeOrSplitMoves: true,
+      doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks: true,
+      scoreTranscriptPerformanceNotWorldviewTruth: true,
+      supplyRatingsAndRationalesOnly: true,
+      calculatedMoveSectionAndOverallScoresForbidden: true,
+      winnerForbidden: true,
+      publicationProseForbidden: true
+    },
+    dimensionKeys: [
+      "logicalCoherence",
+      "evidenceWarrant",
+      "responsiveness",
+      "relevanceBurden",
+      "precisionClarity",
+      "calibrationCharity"
+    ],
+    ratingControls: {
+      minimum: 0,
+      maximum: 100,
+      integerOnly: true,
+      rationaleMinimumCharacters: 40,
+      bands: {
+        "95-100": "Exceptional and unusually complete",
+        "85-94": "Very strong",
+        "75-84": "Strong or competent",
+        "65-74": "Mixed",
+        "50-64": "Weak",
+        "25-49": "Very weak",
+        "0-24": "Non-performance"
+      }
+    },
+    burdenAdjustmentControls: {
+      minimum: -5,
+      maximum: 5,
+      integerOnly: true,
+      nonzeroRequiresDistinctDebateWideConsequence: true,
+      nonzeroRequiresBurdenCompletionEffect: true,
+      nonzeroRequiresNotAlreadyScored: true,
+      duplicateCaptureForcesZero: true
+    },
+    outputContract: {
+      schemaVersion: "1.0-standalone-primary-judgment",
+      protocolId: STANDALONE_PROTOCOL_ID,
+      status: "complete-and-schema-valid",
+      reviewerRole: "isolated-score-blind-primary-judge",
+      assessmentModel: "5.6 Sol",
+      reasoningEffort: "low",
+      inventorySha256: fileRecord(paths.inventory, ROOT).sha256,
+      judgmentFields: {
+        moveId: "exact locked move ID in inventory order",
+        assessmentConfidence: "high, medium, or low",
+        dimensions:
+          "exactly the six named dimension objects, each with integer value and rationale"
+      },
+      burdenCompletionAdjustmentFields: {
+        value: "integer -5 through 5",
+        rationale: "source-grounded explanation",
+        eligibility: [
+          "distinctDebateWideConsequence",
+          "affectsBurdenCompletion",
+          "notAlreadyScored",
+          "affectedBurdenIds",
+          "completionCriterion",
+          "relatedMoveIds",
+          "distinctConsequence",
+          "alreadyCapturedBy",
+          "counterfactual"
+        ]
+      },
+      requiredAuditBooleans: [
+        "completeLockedInventoryReviewed",
+        "allMovesJudgedOnce",
+        "ratingsOnlyNoCalculatedScores",
+        "publicationBlind",
+        "scoreBlind"
+      ]
+    }
+  };
+  writeNewJson(paths.judgmentPacket, packet);
+  console.log(
+    `Standalone judgment packet frozen: Debate ${DEBATE_NUMBER}, ${inventory.moves.length} moves.`
+  );
+}
+
+function writeDisagreements() {
+  const { inventory, inventorySha256, passA, passB } =
+    validateFrozenInputBoundary({ requirePasses: true });
+  const passASha256 = sha256(bytes(paths.passA));
+  const passBSha256 = sha256(bytes(paths.passB));
+  const disagreements = extractStandaloneDisagreements({ inventory, passA, passB });
+  disagreements.evidenceLocks = {
+    inventory: { path: paths.inventory, sha256: inventorySha256 },
+    passA: { path: paths.passA, sha256: passASha256 },
+    passB: { path: paths.passB, sha256: passBSha256 }
+  };
+  writeNewJson(paths.disagreements, disagreements);
+  const inventoryById = new Map(inventory.moves.map((move) => [move.moveId, move]));
+  const packet = {
+    schemaVersion: "1.0-standalone-dispute-adjudication-packet",
+    protocolId: STANDALONE_PROTOCOL_ID,
+    status: "frozen-anonymous-dispute-only-packet",
+    debateNumber: inventory.debateNumber,
+    debateId: inventory.debateId,
+    assessmentModel: "5.6 Sol",
+    reasoningEffort: "low",
+    evidenceBoundary: {
+      passIdentitiesUnavailable: true,
+      calculatedTotalsUnavailable: true,
+      winnerLabelsUnavailable: true,
+      publicationProseUnavailable: true,
+      otherDebatesUnavailable: true
+    },
+    disputes: disagreements.disputes.map((dispute) => ({
+      ...dispute,
+      moveEvidence: dispute.moveId ? inventoryById.get(dispute.moveId) : null
+    })),
+    sourceLocks: json(paths.manifest).sourceLocks,
+    instructions: {
+      selectExistingOptionOnly: true,
+      permittedSelections: ["option-a", "option-b"],
+      resolveEveryDisputeExactlyOnce: true,
+      modelAuthoredTotalsForbidden: true
+    }
+  };
+  writeNewJson(paths.adjudicationPacket, packet);
+  console.log(
+    `Standalone disagreements frozen: ${disagreements.disputes.length} disputes across ${inventory.moves.length} moves.`
+  );
+}
+
+function assembleFinalLedger() {
+  const { inventory, inventorySha256, passA, passB } =
+    validateFrozenInputBoundary({ requirePasses: true });
+  const disagreements = json(paths.disagreements);
+  const audio = json(paths.audio);
+  const adjudication = json(paths.adjudication);
+  validateStandaloneAdjudication(adjudication, disagreements);
+  assert.equal(audio.protocolId, STANDALONE_PROTOCOL_ID);
+  assert.equal(audio.status, "complete");
+  assert.equal(audio.audit.unresolvedAttributionChecks, 0);
+  const finalLedger = assembleStandaloneFinalLedger({
+    inventory,
+    inventorySha256,
+    passA,
+    passASha256: sha256(bytes(paths.passA)),
+    passB,
+    passBSha256: sha256(bytes(paths.passB)),
+    disagreements,
+    disagreementsSha256: sha256(bytes(paths.disagreements)),
+    adjudication,
+    adjudicationSha256: sha256(bytes(paths.adjudication)),
+    audio,
+    audioSha256: sha256(bytes(paths.audio))
+  });
+  writeNewJson(paths.finalLedger, finalLedger);
+  writeNewJson(paths.scoreInput, {
+    schemaVersion: "1.0-standalone-score-pass-input",
+    protocolId: STANDALONE_SCORE_PROTOCOL_ID,
+    status: "frozen-before-single-score-pass",
+    debateNumber: finalLedger.debateNumber,
+    debateId: finalLedger.debateId,
+    finalLedger: {
+      path: paths.finalLedger,
+      sha256: sha256(bytes(paths.finalLedger))
+    },
+    scoreCalculator: fileRecord(
+      "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      ROOT
+    ),
+    dimensionCalculator: fileRecord(
+      "scripts/lib/reassessment-scoring.mjs",
+      ROOT
+    ),
+    scorePassMaximum: 1,
+    modelAuthoredTotalsPermitted: false,
+    manualScoreOverridesPermitted: false
+  });
+  console.log(
+    `Standalone resolved ledger frozen: ${finalLedger.moves.length} moves; score pass is not yet run.`
+  );
+}
+
+function runSingleScorePass() {
+  assert.equal(existsSync(absolute(paths.scoreOutput)), false, "score output already exists; a rerun is forbidden");
+  assert.equal(existsSync(absolute(paths.scoreAttestation)), false, "score attestation already exists; a rerun is forbidden");
+  const { inventory, passA, passB } = validateFrozenInputBoundary({
+    requirePasses: true
+  });
+  const input = json(paths.scoreInput);
+  assert.equal(input.status, "frozen-before-single-score-pass");
+  assert.equal(sha256(bytes(paths.finalLedger)), input.finalLedger.sha256);
+  assert.equal(
+    sha256(bytes(input.scoreCalculator.path)),
+    input.scoreCalculator.sha256,
+    "score calculator changed after preregistration"
+  );
+  assert.equal(
+    sha256(bytes(input.dimensionCalculator.path)),
+    input.dimensionCalculator.sha256,
+    "dimension calculator changed after preregistration"
+  );
+  const finalLedger = json(paths.finalLedger);
+  const scores = deriveStandaloneScores(finalLedger);
+  const stability = validateStandaloneScoreStability({
+    inventory,
+    passA,
+    passB,
+    finalScores: scores
+  });
+  scores.scoreStability = {
+    status: stability.status,
+    meanAbsoluteDistance: stability.meanAbsoluteDistance,
+    maximumDistance: stability.maximumDistance,
+    maximumExcursion: stability.maximumExcursion,
+    directionPassed: stability.directionPassed
+  };
+  writeNewJson(paths.scoreOutput, scores);
+  writeNewJson(paths.scoreAttestation, {
+    schemaVersion: "1.0-standalone-score-pass-attestation",
+    protocolId: STANDALONE_SCORE_PROTOCOL_ID,
+    status: "single-score-pass-complete-and-frozen",
+    debateNumber: scores.debateNumber,
+    debateId: scores.debateId,
+    executedAt: new Date().toISOString(),
+    ordinal: 1,
+    maximumPermitted: 1,
+    input: { path: paths.scoreInput, sha256: sha256(bytes(paths.scoreInput)) },
+    output: { path: paths.scoreOutput, sha256: sha256(bytes(paths.scoreOutput)) },
+    modelAuthoredTotals: 0,
+    manualScoreOverrides: 0,
+    rerunPermitted: false
+  });
+  console.log(
+    `Standalone single score pass complete: pro ${scores.overall.pro.score}, con ${scores.overall.con.score}; ordinal 1 of 1.`
+  );
+}
+
+function buildProductionAdapter() {
+  const finalLedger = json(paths.finalLedger);
+  const scoreOutput = json(paths.scoreOutput);
+  const attestation = json(paths.scoreAttestation);
+  const publication = json(paths.publication);
+  const authorization = json(paths.authorization);
+  assert.equal(
+    publication.candidate.motion,
+    json(paths.inventory).motion,
+    "publication motion differs from the frozen central question"
+  );
+  assert.equal(attestation.ordinal, 1);
+  assert.equal(attestation.maximumPermitted, 1);
+  validatePublicationIdentity(publication.candidate, authorization);
+  const replayed = deriveStandaloneScores(finalLedger);
+  const { scoreStability: _scoreStability, ...storedScoreOutput } = scoreOutput;
+  assert.equal(canonicalJson(replayed), canonicalJson(storedScoreOutput), "score output differs from repository replay");
+  const candidateAudit = validateStandaloneCandidate(publication.candidate, scoreOutput);
+  const evidencePaths = {
+    authorization: paths.authorization,
+    manifest: paths.manifest,
+    sourceLock: paths.sourceLock,
+    inventory: paths.inventory,
+    judgmentPacket: paths.judgmentPacket,
+    judgmentExecution: paths.judgmentExecution,
+    passA: paths.passA,
+    passB: paths.passB,
+    disagreements: paths.disagreements,
+    audio: paths.audio,
+    adjudicationPacket: paths.adjudicationPacket,
+    adjudication: paths.adjudication,
+    finalLedger: paths.finalLedger,
+    scoreInput: paths.scoreInput,
+    scoreOutput: paths.scoreOutput,
+    scoreAttestation: paths.scoreAttestation,
+    publication: paths.publication,
+    events: paths.events,
+    transcript: paths.transcript
+  };
+  for (const [key, value] of [
+    ["publicationMotionCorrection", paths.publicationMotionCorrection],
+    ["publicationCommentaryCorrection", paths.publicationCommentaryCorrection],
+    ["postPublicationRendering", paths.postPublicationRendering]
+  ]) {
+    if (existsSync(absolute(value))) evidencePaths[key] = value;
+  }
+  for (const [key, value] of [
+    ["publicationContentParityCorrection", paths.publicationContentParityCorrection],
+    ["publicationBeforeContentParityRepair", paths.publicationBeforeContentParityRepair],
+    ["publicationContentParityAudit", paths.publicationContentParityAudit],
+    ["publicationContentParityExecution", paths.publicationContentParityExecution],
+    ["publicationRhetoricalTagCorrection", paths.publicationRhetoricalTagCorrection],
+    ["publicationRhetoricalTagAudit", paths.publicationRhetoricalTagAudit],
+    ["publicationRhetoricalTagExecution", paths.publicationRhetoricalTagExecution],
+    ["postRhetoricalTagRendering", paths.postRhetoricalTagRendering],
+    [
+      "publicationAiContributionDepthCorrection",
+      paths.publicationAiContributionDepthCorrection
+    ],
+    ["publicationAiContributionDepthAudit", paths.publicationAiContributionDepthAudit],
+    [
+      "publicationAiContributionDepthExecution",
+      paths.publicationAiContributionDepthExecution
+    ],
+    ["postAiContributionDepthRendering", paths.postAiContributionDepthRendering],
+    [
+      "publicationAiContributionPunctuationCorrection",
+      paths.publicationAiContributionPunctuationCorrection
+    ],
+    [
+      "publicationAiContributionPunctuationAudit",
+      paths.publicationAiContributionPunctuationAudit
+    ],
+    [
+      "postAiContributionPunctuationRendering",
+      paths.postAiContributionPunctuationRendering
+    ]
+  ]) {
+    if (value && existsSync(absolute(value))) evidencePaths[key] = value;
+  }
+  const evidenceLocks = Object.fromEntries(
+    Object.entries(evidencePaths).map(([key, value]) => [key, fileRecord(value, ROOT)])
+  );
+  const adapter = {
+    schemaVersion: STANDALONE_SITE_LEDGER_ADAPTER_VERSION,
+    protocolId: STANDALONE_PROTOCOL_ID,
+    status: "frozen-standalone-site-ledger-adapter",
+    productionCanary: false,
+    standalonePostCampaign: true,
+    campaignBatch: null,
+    debateNumber: scoreOutput.debateNumber,
+    debateId: scoreOutput.debateId,
+    model: "5.6 Sol",
+    rubric: "Slugfester Reassessment Rubric v2",
+    scoreProtocolId: STANDALONE_SCORE_PROTOCOL_ID,
+    sourceLocks: json(paths.manifest).sourceLocks,
+    evidenceLocks,
+    calculated: scoreOutput,
+    audit: {
+      sections: candidateAudit.sections,
+      moves: candidateAudit.moves,
+      repositoryDerivedScores: true,
+      modelAuthoredTotals: 0,
+      manualScoreOverrides: 0,
+      scorePasses: 1,
+      batch18Selected: false,
+      campaignEvidenceChanges: 0,
+      calibrationEvidenceChanges: 0,
+      closureEvidenceChanges: 0
+    }
+  };
+  writeNewJson(paths.productionLedger, adapter);
+  console.log(
+    `Standalone production adapter frozen: ${candidateAudit.sections} sections, ${candidateAudit.moves} moves.`
+  );
+}
+
+function audit({ repositoryOnly = false } = {}) {
+  const { inventory, inventoryValidation, passA, passB } =
+    validateFrozenInputBoundary({ requirePasses: true, repositoryOnly });
+  const authorization = json(paths.authorization);
+  const disagreements = json(paths.disagreements);
+  const adjudication = json(paths.adjudication);
+  validateStandaloneAdjudication(adjudication, disagreements);
+  const audio = json(paths.audio);
+  assert.equal(audio.status, "complete");
+  assert.equal(audio.audit.unresolvedAttributionChecks, 0);
+  assert.deepEqual(
+    audio.triggeredMoveIds,
+    inventoryValidation.belowHighAttributionMoveIds,
+    "audio verification triggers differ from the locked inventory"
+  );
+  assert.equal(audio.inventory.sha256, sha256(bytes(paths.inventory)));
+  assert.equal(audio.checks.length, audio.triggeredMoveIds.length);
+  assert.deepEqual(
+    audio.checks.map((check) => check.moveId),
+    audio.triggeredMoveIds,
+    "audio checks differ from their triggered move IDs"
+  );
+  assert.equal(
+    audio.audit.completedAttributionChecks,
+    audio.audit.requiredAttributionChecks
+  );
+  const attestation = json(paths.scoreAttestation);
+  const scoreInput = json(paths.scoreInput);
+  assert.equal(attestation.ordinal, 1);
+  assert.equal(attestation.maximumPermitted, 1);
+  assert.equal(attestation.rerunPermitted, false);
+  assert.equal(attestation.modelAuthoredTotals, 0);
+  assert.equal(attestation.manualScoreOverrides, 0);
+  assert.equal(attestation.input.sha256, sha256(bytes(paths.scoreInput)));
+  assert.equal(attestation.output.sha256, sha256(bytes(paths.scoreOutput)));
+  const finalLedger = json(paths.finalLedger);
+  assert.equal(scoreInput.scorePassMaximum, 1);
+  assert.equal(scoreInput.modelAuthoredTotalsPermitted, false);
+  assert.equal(scoreInput.manualScoreOverridesPermitted, false);
+  assert.equal(scoreInput.finalLedger.sha256, sha256(bytes(paths.finalLedger)));
+  const scores = json(paths.scoreOutput);
+  assert.equal(scores.audit.scorePassOrdinal, 1);
+  assert.equal(scores.audit.modelAuthoredTotals, 0);
+  assert.equal(scores.audit.manualScoreOverrides, 0);
+  const { scoreStability: _scoreStability, ...storedScores } = scores;
+  assert.equal(canonicalJson(deriveStandaloneScores(finalLedger)), canonicalJson(storedScores));
+  const stability = validateStandaloneScoreStability({
+    inventory,
+    passA,
+    passB,
+    finalScores: scores
+  });
+  const publication = json(paths.publication);
+  if (existsSync(absolute(paths.publicationMotionCorrection))) {
+    assert.equal(
+      json(paths.publicationMotionCorrection).status,
+      "applied-once-and-frozen"
+    );
+  }
+  if (existsSync(absolute(paths.publicationCommentaryCorrection))) {
+    assert.equal(
+      json(paths.publicationCommentaryCorrection).status,
+      "applied-once-and-frozen"
+    );
+  }
+  if (paths.publicationContentParityCorrection) {
+    const contentParityCorrection = json(paths.publicationContentParityCorrection);
+    const contentParityAudit = json(paths.publicationContentParityAudit);
+    assert.equal(contentParityCorrection.status, "applied-once-and-frozen");
+    assert.equal(contentParityCorrection.audit.judgmentChanges, 0);
+    assert.equal(contentParityCorrection.audit.scoreChanges, 0);
+    assert.equal(contentParityCorrection.audit.moveChanges, 0);
+    assert.equal(contentParityCorrection.audit.tagChanges, 0);
+    assert.equal(
+      contentParityCorrection.evidence.before.sha256,
+      sha256(bytes(paths.publicationBeforeContentParityRepair))
+    );
+    const expectedContentParityOutputSha = paths.publicationRhetoricalTagCorrection
+      ? json(paths.publicationRhetoricalTagCorrection).preservedPriorOutput.sha256
+      : sha256(bytes(paths.publication));
+    assert.equal(contentParityCorrection.evidence.after.sha256, expectedContentParityOutputSha);
+    assert.equal(
+      contentParityCorrection.evidence.contentParityAudit.sha256,
+      sha256(bytes(paths.publicationContentParityAudit))
+    );
+    if (paths.publicationContentParityExecution) {
+      const execution = json(paths.publicationContentParityExecution);
+      assert.equal(execution.status, "passed-isolated-card-depth-repair");
+      assert.equal(execution.debateNumber, DEBATE_NUMBER);
+      assert.equal(execution.model.label, "5.6 Sol");
+      assert.equal(execution.model.slug, "gpt-5.6-sol");
+      assert.equal(execution.model.reasoningEffort, "low");
+      assert.equal(execution.audit.judgmentChanges, 0);
+      assert.equal(execution.audit.scoreChanges, 0);
+      assert.equal(execution.audit.moveChanges, 0);
+      assert.equal(
+        Math.max(...execution.shards.map((shard) => shard.writableFieldCount)) <= 2,
+        true
+      );
+      for (const shard of execution.shards) {
+        assert.equal(shard.input.sha256, sha256(bytes(shard.input.path)));
+        assert.equal(shard.output.sha256, sha256(bytes(shard.output.path)));
+        assert.equal(shard.attempts, 1);
+        assert.equal(shard.retries, 0);
+      }
+    }
+    assert.equal(contentParityAudit.status, "passed-content-parity-audit");
+    assert.equal(contentParityAudit.debateNumber, DEBATE_NUMBER);
+  }
+  if (paths.publicationRhetoricalTagCorrection) {
+    const correction = json(paths.publicationRhetoricalTagCorrection);
+    const tagAudit = json(paths.publicationRhetoricalTagAudit);
+    const prior = correction.preservedPriorOutput;
+    const priorBytes = prior.gitCommit
+      ? gitBytes(prior.gitCommit, prior.path)
+      : bytes(prior.path);
+    assert.equal(correction.status, "applied-once-and-frozen");
+    assert.equal(correction.audit.judgmentChanges, 0);
+    assert.equal(correction.audit.scoreChanges, 0);
+    assert.equal(correction.audit.moveChanges, 0);
+    assert.equal(correction.audit.tagChanges > 0, true);
+    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
+    if (prior.gitCommit) {
+      assert.equal(
+        prior.gitCommit,
+        selectedRegistryRecord.rhetoricalTagReview.priorPublicationGitCommit
+      );
+    } else {
+      assert.equal(
+        prior.path,
+        selectedRegistryRecord.rhetoricalTagReview.priorPublicationPath
+      );
+    }
+    assert.equal(prior.sha256, sha256(priorBytes));
+    assert.equal(prior.bytes, priorBytes.length);
+    if (prior.gitCommit) {
+      assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    }
+    const nextCorrection = paths.publicationAiContributionDepthCorrection
+      ? json(paths.publicationAiContributionDepthCorrection)
+      : paths.publicationAiContributionPunctuationCorrection
+        ? json(paths.publicationAiContributionPunctuationCorrection)
+        : null;
+    const tagCorrectedBytes = nextCorrection?.preservedPriorOutput?.gitCommit
+      ? gitBytes(
+          nextCorrection.preservedPriorOutput.gitCommit,
+          nextCorrection.preservedPriorOutput.path
+        )
+      : nextCorrection?.preservedPriorOutput?.path
+        ? bytes(nextCorrection.preservedPriorOutput.path)
+        : bytes(paths.publication);
+    assert.equal(correction.evidence.after.sha256, sha256(tagCorrectedBytes));
+    assert.equal(correction.evidence.after.bytes, tagCorrectedBytes.length);
+    assert.equal(
+      correction.evidence.rhetoricalTagAudit.sha256,
+      sha256(bytes(paths.publicationRhetoricalTagAudit))
+    );
+    assert.equal(
+      correction.evidence.rhetoricalTagAudit.bytes,
+      bytes(paths.publicationRhetoricalTagAudit).length
+    );
+    assert.equal(tagAudit.status, "passed-rhetorical-tag-review");
+    assert.equal(tagAudit.debateNumber, DEBATE_NUMBER);
+    const acceptedTagCount =
+      correction.audit.acceptedTagCount ?? correction.audit.tagChanges;
+    assert.equal(tagAudit.audit.acceptedTagCount, acceptedTagCount);
+    if (paths.publicationRhetoricalTagExecution) {
+      const execution = json(paths.publicationRhetoricalTagExecution);
+      assert.equal(
+        execution.status,
+        "passed-two-blind-reviews-adjudication-and-final-definition-check"
+      );
+      assert.equal(execution.debateNumber, DEBATE_NUMBER);
+      assert.equal(
+        execution.model.label ?? execution.model.display,
+        selectedRegistryRecord.rhetoricalTagReview.modelLabel ?? "5.6 Sol"
+      );
+      assert.equal(
+        execution.model.slug,
+        selectedRegistryRecord.rhetoricalTagReview.modelSlug ?? "gpt-5.6-sol"
+      );
+      assert.equal(
+        execution.model.reasoningEffort,
+        selectedRegistryRecord.rhetoricalTagReview.reasoningEffort ?? "low"
+      );
+      assert.equal(execution.audit.blindReviews, 2);
+      assert.equal(execution.audit.retries, 0);
+    }
+    const renderingAudit = json(paths.postRhetoricalTagRendering);
+    assert.equal(
+      renderingAudit.status,
+      "passed-post-rhetorical-tag-rendering-audit"
+    );
+    assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
+    assert.equal(
+      renderingAudit.audit.acceptedTagsRendered,
+      acceptedTagCount
+    );
+    assert.equal(renderingAudit.audit.runtimeFailures, 0);
+    assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
+    assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
+    assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+  }
+  if (paths.publicationAiContributionDepthCorrection) {
+    const correction = json(paths.publicationAiContributionDepthCorrection);
+    const depthAudit = json(paths.publicationAiContributionDepthAudit);
+    const prior = correction.preservedPriorOutput;
+    const priorBytes = prior.gitCommit
+      ? gitBytes(prior.gitCommit, prior.path)
+      : bytes(prior.path);
+    const priorPublication = JSON.parse(priorBytes.toString("utf8"));
+    const priorOutsideExtension = structuredClone(priorPublication);
+    const currentOutsideExtension = structuredClone(publication);
+    delete priorOutsideExtension.candidate.logicalExtension;
+    delete currentOutsideExtension.candidate.logicalExtension;
+    const changedPaths = changedLeafPaths(
+      priorPublication.candidate.logicalExtension,
+      publication.candidate.logicalExtension
+    );
+    const declaredPaths = correction.writableShards.flatMap((shard) => shard.fields);
+
+    assert.equal(correction.status, "applied-once-and-frozen");
+    assert.equal(correction.audit.judgmentChanges, 0);
+    assert.equal(correction.audit.scoreChanges, 0);
+    assert.equal(correction.audit.moveChanges, 0);
+    assert.equal(correction.audit.tagChanges, 0);
+    assert.equal(correction.audit.critiqueChanges, 0);
+    assert.equal(correction.audit.descriptionChanges, 0);
+    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
+    assert.equal(prior.sha256, sha256(priorBytes));
+    assert.equal(prior.bytes, priorBytes.length);
+    if (prior.gitCommit) assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    assert.deepEqual(
+      currentOutsideExtension,
+      priorOutsideExtension,
+      "AI Contribution depth repair changed another publication field"
+    );
+    assert.deepEqual(
+      [...changedPaths].sort(),
+      [...declaredPaths].sort(),
+      "AI Contribution depth repair differs from its declared writable fields"
+    );
+    assert.equal(changedPaths.length, correction.audit.changedLeafFields);
+    const nextCorrection = paths.publicationAiContributionPunctuationCorrection
+      ? json(paths.publicationAiContributionPunctuationCorrection)
+      : null;
+    const depthCorrectedBytes = nextCorrection?.preservedPriorOutput?.gitCommit
+      ? gitBytes(
+          nextCorrection.preservedPriorOutput.gitCommit,
+          nextCorrection.preservedPriorOutput.path
+        )
+      : nextCorrection?.preservedPriorOutput?.path
+        ? bytes(nextCorrection.preservedPriorOutput.path)
+        : bytes(paths.publication);
+    assert.equal(correction.evidence.after.sha256, sha256(depthCorrectedBytes));
+    assert.equal(correction.evidence.after.bytes, depthCorrectedBytes.length);
+    assert.equal(
+      correction.evidence.contentParityAudit.sha256,
+      sha256(bytes(paths.publicationAiContributionDepthAudit))
+    );
+    assert.equal(
+      correction.evidence.contentParityAudit.bytes,
+      bytes(paths.publicationAiContributionDepthAudit).length
+    );
+    assert.equal(depthAudit.status, "passed-content-parity-audit");
+    assert.equal(depthAudit.debateNumber, DEBATE_NUMBER);
+    for (const metric of [
+      "extensionThesisWordsMean",
+      "extensionPremiseWordsMean",
+      "extensionConclusionWordsMean",
+      "extensionNewArgumentWordsMean"
+    ]) {
+      assert.equal(
+        depthAudit.metrics[metric] >= depthAudit.referenceRanges[metric].minimum &&
+          depthAudit.metrics[metric] <= depthAudit.referenceRanges[metric].maximum,
+        true,
+        `${metric}: repaired AI Contribution remains outside the independent comparison range`
+      );
+    }
+    if (paths.publicationAiContributionDepthExecution) {
+      const execution = json(paths.publicationAiContributionDepthExecution);
+      assert.equal(
+        execution.status,
+        "complete-and-schema-valid-after-bounded-card-depth-rhetorical-and-ai-contribution-depth-repairs"
+      );
+      assert.equal(execution.debateNumber, DEBATE_NUMBER);
+      assert.equal(execution.aiContributionDepthRepair.shardAttempts, 10);
+      assert.equal(execution.aiContributionDepthRepair.shardRetries, 0);
+      assert.equal(
+        execution.aiContributionDepthRepair.maximumWritableFieldsPerShard <= 2,
+        true
+      );
+      assert.equal(
+        execution.aiContributionDepthRepair.model.slug,
+        selectedRegistryRecord.aiContributionDepth.modelSlug ?? "gpt-5.6-sol"
+      );
+      assert.equal(
+        execution.aiContributionDepthRepair.model.label,
+        selectedRegistryRecord.aiContributionDepth.modelLabel ?? "5.6 Sol"
+      );
+      assert.equal(
+        execution.aiContributionDepthRepair.model.reasoningEffort,
+        selectedRegistryRecord.aiContributionDepth.reasoningEffort ?? "low"
+      );
+    }
+    if (paths.postAiContributionDepthRendering) {
+      const renderingAudit = json(paths.postAiContributionDepthRendering);
+      assert.equal(
+        renderingAudit.status,
+        "passed-post-ai-contribution-depth-rendering-audit"
+      );
+      assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
+      assert.equal(renderingAudit.audit.visibleCorrectionsVerified, changedPaths.length);
+      assert.equal(renderingAudit.audit.runtimeFailures, 0);
+      assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
+      assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
+      assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+    }
+  }
+  if (paths.publicationAiContributionPunctuationCorrection) {
+    const correction = json(paths.publicationAiContributionPunctuationCorrection);
+    const punctuationAudit = json(paths.publicationAiContributionPunctuationAudit);
+    const prior = correction.preservedPriorOutput;
+    const priorBytes = prior.gitCommit
+      ? gitBytes(prior.gitCommit, prior.path)
+      : bytes(prior.path);
+    const priorPublication = JSON.parse(priorBytes.toString("utf8"));
+    const currentPublication = publication;
+    const priorOutsideExtension = structuredClone(priorPublication);
+    const currentOutsideExtension = structuredClone(currentPublication);
+    delete priorOutsideExtension.candidate.logicalExtension;
+    delete currentOutsideExtension.candidate.logicalExtension;
+    const changedPaths = changedLeafPaths(
+      priorPublication.candidate.logicalExtension,
+      currentPublication.candidate.logicalExtension
+    );
+    const declaredPaths = correction.writableShards.flatMap((shard) => shard.fields);
+
+    assert.equal(correction.status, "applied-once-and-frozen");
+    assert.equal(correction.audit.judgmentChanges, 0);
+    assert.equal(correction.audit.scoreChanges, 0);
+    assert.equal(correction.audit.moveChanges, 0);
+    assert.equal(correction.audit.tagChanges, 0);
+    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
+    assert.equal(correction.audit.punctuationOnly, true);
+    assert.equal(
+      prior.gitCommit,
+      selectedRegistryRecord.aiContributionPunctuation.priorPublicationGitCommit
+    );
+    assert.equal(
+      prior.path,
+      selectedRegistryRecord.aiContributionPunctuation.priorPublicationPath
+    );
+    assert.equal(prior.sha256, sha256(priorBytes));
+    assert.equal(prior.bytes, priorBytes.length);
+    assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    assert.deepEqual(
+      currentOutsideExtension,
+      priorOutsideExtension,
+      "AI Contribution punctuation repair changed another publication field"
+    );
+    assert.equal(
+      canonicalJson(textTokenShape(currentPublication.candidate.logicalExtension)),
+      canonicalJson(textTokenShape(priorPublication.candidate.logicalExtension)),
+      "AI Contribution punctuation repair changed words or structure"
+    );
+    assert.deepEqual(
+      [...changedPaths].sort(),
+      [...declaredPaths].sort(),
+      "AI Contribution punctuation repair differs from its declared writable fields"
+    );
+    assert.equal(changedPaths.length, correction.audit.changedLeafFields);
+    assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
+    assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
+    assert.equal(
+      correction.evidence.punctuationAudit.sha256,
+      sha256(bytes(paths.publicationAiContributionPunctuationAudit))
+    );
+    assert.equal(
+      correction.evidence.punctuationAudit.bytes,
+      bytes(paths.publicationAiContributionPunctuationAudit).length
+    );
+    assert.equal(punctuationAudit.status, "passed-ai-contribution-punctuation-audit");
+    assert.equal(
+      punctuationAudit.debatesReviewed,
+      200,
+      "frozen Debate 198 punctuation audit should retain its historical 200-debate scope"
+    );
+    assert.deepEqual(punctuationAudit.corpus.flaggedBefore, [DEBATE_NUMBER]);
+    assert.deepEqual(punctuationAudit.corpus.flaggedAfter, []);
+    assert.equal(
+      punctuationAudit.debate198.wordsBefore,
+      punctuationAudit.debate198.wordsAfter
+    );
+    assert.equal(
+      punctuationAudit.debate198.commasAfter >
+        punctuationAudit.debate198.commasBefore,
+      true
+    );
+    assert.equal(punctuationAudit.debate198.changedLeafFields, changedPaths.length);
+    assert.equal(punctuationAudit.debate198.wordTokensChanged, 0);
+    assert.equal(punctuationAudit.debate198.structureChanged, false);
+    assert.equal(punctuationAudit.debate198.assessmentSubstanceChanged, false);
+    const renderingAudit = json(paths.postAiContributionPunctuationRendering);
+    assert.equal(
+      renderingAudit.status,
+      "passed-post-ai-contribution-punctuation-rendering-audit"
+    );
+    assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
+    assert.equal(renderingAudit.audit.visibleCorrectionsVerified, changedPaths.length);
+    for (const viewport of renderingAudit.viewports) {
+      assert.equal(viewport.screenshot.sha256, sha256(bytes(viewport.screenshot.path)));
+    }
+    assert.equal(renderingAudit.audit.runtimeFailures, 0);
+    assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
+    assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
+    assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+    assert.equal(renderingAudit.audit.temporaryControllerDirectoriesRemaining, 0);
+  }
+  assert.equal(publication.candidate.motion, inventory.motion);
+  assert.equal(publication.candidate.motion, authorization.identity.motion);
+  validatePublicationIdentity(publication.candidate, authorization);
+  for (const side of ["pro", "con"]) {
+    assert.equal(
+      publication.candidate.overall[side].blunders.length >= 2,
+      true,
+      `${side}: corrected Overall Commentary must contain at least two material blunders`
+    );
+  }
+  const candidateAudit = validateStandaloneCandidate(publication.candidate, scores);
+  const production = debates.find((debate) => debate.number === DEBATE_NUMBER);
+  assert.ok(production, `Debate ${DEBATE_NUMBER}: production record missing`);
+  assert.equal(production.id, selectedRegistryRecord.debateId);
+  assert.equal(production.motion, authorization.identity.motion);
+  assert.deepEqual(
+    publicationComparable(production),
+    publicationComparable(publication.candidate),
+    "production debate differs from frozen publication candidate outside reader-facing note cleanup"
+  );
+  const adapter = json(paths.productionLedger);
+  assert.equal(adapter.debateNumber, DEBATE_NUMBER);
+  assert.equal(adapter.debateId, selectedRegistryRecord.debateId);
+  assert.equal(adapter.calculated.debateNumber, DEBATE_NUMBER);
+  assert.equal(adapter.calculated.debateId, selectedRegistryRecord.debateId);
+  assert.equal(adapter.audit.scorePasses, 1);
+  validateStandaloneSiteLedgerAdapter({
+    adapter,
+    candidate: production,
+    repositoryOnly,
+    root: ROOT
+  });
+  const rendering = json(paths.rendering);
+  assert.equal(rendering.status, "passed-standalone-production-rendering");
+  assert.equal(rendering.audit.runtimeFailures, 0);
+  assert.equal(rendering.audit.horizontalOverflowFailures, 0);
+  assert.equal(rendering.audit.emptyArgumentCards, 0);
+  assert.equal(rendering.audit.viewports, 2);
+  assert.equal(rendering.audit.screenshots >= 4, true);
+  if (existsSync(absolute(paths.postPublicationRendering))) {
+    const postPublicationRendering = json(paths.postPublicationRendering);
+    assert.equal(postPublicationRendering.status, "passed-post-publication-rendering-audit");
+    assert.equal(postPublicationRendering.audit.runtimeFailures, 0);
+    assert.equal(postPublicationRendering.audit.horizontalOverflowFailures, 0);
+    assert.equal(postPublicationRendering.audit.visibleCorrectionsVerified, 3);
+    assert.equal(postPublicationRendering.audit.temporaryBrowsersRemaining, 0);
+  }
+  const validation = json(paths.validation);
+  assert.equal(validation.status, "passed");
+  assert.equal(validation.debateNumber, DEBATE_NUMBER);
+  const directCostUsd =
+    audio.cost.knownSuccessfulCallCostUsd ?? audio.cost.directCostUsd;
+  assert.equal(validation.directCostUsd, directCostUsd);
+  console.log(
+    `Standalone debate audit passed: Debate ${DEBATE_NUMBER}, ${inventoryValidation.moves} moves, ${candidateAudit.sections} sections, pro ${scores.overall.pro.score}, con ${scores.overall.con.score}, ${disagreements.disputes.length} disputes, ${audio.audit.requiredAttributionChecks} audio checks, 2 viewports, $${directCostUsd} known direct incremental cost (${repositoryOnly ? "repository-only hash replay" : "full replay including local source bytes"}); score stability mean ${stability.meanAbsoluteDistance}, max ${stability.maximumDistance}, excursion ${stability.maximumExcursion}.`
+  );
+}
+
+const args = new Set(rawArgs);
+const modes = [
+  "--write-judgment-packet",
+  "--write-disagreements",
+  "--assemble-ledger",
+  "--score-once",
+  "--build-adapter",
+  "--audit"
+].filter((mode) => args.has(mode));
+assert.equal(modes.length, 1, "choose exactly one execution mode");
+for (let index = 0; index < rawArgs.length; index += 1) {
+  const argument = rawArgs[index];
+  if (argument === "--debate") {
+    index += 1;
+    continue;
+  }
+  assert.equal(
+    [modes[0], "--repository-only"].includes(argument),
+    true,
+    `unknown argument: ${argument}`
+  );
+}
+if (modes[0] !== "--audit") {
+  assert.ok(requestedDebateNumber, "write modes require --debate NNN");
+}
+if (modes[0] === "--audit" && !requestedDebateNumber) {
+  for (const record of registryBootstrap.debates.filter(
+    (item) => item.status === "published-and-frozen"
+  )) {
+    const childArgs = [
+      process.argv[1],
+      "--audit",
+      "--debate",
+      record.debateNumber,
+      ...(args.has("--repository-only") ? ["--repository-only"] : [])
+    ];
+    const result = spawnSync(process.execPath, childArgs, {
+      cwd: ROOT,
+      stdio: "inherit"
+    });
+    assert.equal(result.status, 0, `Debate ${record.debateNumber}: audit failed`);
+  }
+  process.exit(0);
+}
+if (modes[0] === "--write-judgment-packet") writeJudgmentPacket();
+if (modes[0] === "--write-disagreements") writeDisagreements();
+if (modes[0] === "--assemble-ledger") assembleFinalLedger();
+if (modes[0] === "--score-once") runSingleScorePass();
+if (modes[0] === "--build-adapter") buildProductionAdapter();
+if (modes[0] === "--audit")
+  audit({ repositoryOnly: args.has("--repository-only") });

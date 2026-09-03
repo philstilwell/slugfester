@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-primary-speaker-scope-evidence",
+  "protocolId": "primary-speaker-scope-exception-v1",
+  "status": "verified-and-frozen-before-inventory",
+  "debateNumber": "243",
+  "videoId": "1MwqFMO0Lqw",
+  "sourceBasis": {
+    "openingStatement": "The host identifies Aron Ra and Matt Slick as the two people who will engage while the other people in the call remain silent.",
+    "primarySpeakers": {
+      "pro": "Matt Slick",
+      "con": "Aron Ra"
+    },
+    "nonPrimarySpeakers": [
+      {
+        "name": "Tim",
+        "role": "host"
+      }
+    ],
+    "assessedWindow": {
+      "startMs": 191600,
+      "endMs": 5129640,
+      "durationMs": 4938040
+    }
+  },
+  "verification": {
+    "method": "Two exact source clips containing every potentially substantive host exchange were transcribed once each with gpt-4o-transcribe-diarize and compared with the complete timestamped transcript.",
+    "calls": 2,
+    "retries": 0,
+    "knownSuccessfulInputSeconds": 260.019002,
+    "knownSuccessfulCostUsd": 0.026,
+    "clips": [
+      {
+        "sourceStartMs": 1665000,
+        "sourceEndMs": 1755000,
+        "durationSeconds": 90.010625,
+        "audioSha256": "3accdc008a48359bf4791562933a579868513ed1446e978e3555401b07bea525",
+        "diarizedTranscriptSha256": "d7441c60021e095b5b9e32c77676645520f10f6b711c27972b9a570e559bcd66"
+      },
+      {
+        "sourceStartMs": 3408000,
+        "sourceEndMs": 3578000,
+        "durationSeconds": 170.008377,
+        "audioSha256": "3b5e457eccc77fde616047386ca41b3cc3c9c714b34459272bd706320cb3e99f",
+        "diarizedTranscriptSha256": "baac1dda3b521cbf55a60a3ce98ea8c42d4fdc077a26fdd3f21e42adb5469acd"
+      }
+    ]
+  },
+  "derivedDurations": {
+    "hostAdvocacyMs": 199286,
+    "dependentResponseMs": 220226,
+    "totalExcludedMs": 282210,
+    "hostAdvocacyShare": 0.040357307757733836,
+    "totalExcludedShare": 0.05715020534463066
+  },
+  "eligibilityConclusions": {
+    "sourceOrganizedAroundExactlyTwoPrimaryOpponents": true,
+    "allHostInterventionsEnumerated": true,
+    "hostAdvocacyWithinFivePercent": true,
+    "noDistinctSideIntroduced": true,
+    "noUniqueLoadBearingArgumentIntroduced": true,
+    "hostArgumentsDuplicatePrimaryProLines": true,
+    "dependentResponsesCanBeExcludedWithoutRemovingAUniqueConRoute": true,
+    "exceptionEligible": true
+  }
+}
