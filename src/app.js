@@ -1223,21 +1223,34 @@ function renderRubricExtremesAccordion(extremes) {
   `;
 }
 
+function sectionScoreBarColor(index, bucketCount) {
+  const position = bucketCount > 1 ? index / (bucketCount - 1) : 0.5;
+  const firstHalf = position <= 0.5;
+  const segmentProgress = firstHalf ? position * 2 : (position - 0.5) * 2;
+  const startWeight = ((1 - segmentProgress) * 100).toFixed(1);
+  const endWeight = (segmentProgress * 100).toFixed(1);
+  const startColor = firstHalf ? "--coral" : "--gold";
+  const endColor = firstHalf ? "--gold" : "--teal";
+
+  return `color-mix(in srgb, var(${startColor}) ${startWeight}%, var(${endColor}) ${endWeight}%)`;
+}
+
 function renderSectionScoreDistribution(distribution) {
   if (!distribution.total) return "";
 
   const middleCount = Math.round(distribution.axisMaximum / 2);
   const bars = distribution.buckets
-    .map((bucket) => {
+    .map((bucket, index) => {
       const height = distribution.axisMaximum
         ? (bucket.count / distribution.axisMaximum) * 100
         : 0;
+      const color = sectionScoreBarColor(index, distribution.buckets.length);
       const range = `${bucket.start}–${bucket.end}`;
       const countLabel = `${bucket.count.toLocaleString("en-US")} ${bucket.count === 1 ? "section-side score" : "section-side scores"}`;
 
       return `
         <li class="section-score-bucket${bucket.count ? " populated" : ""}" aria-label="${range} percent: ${countLabel}" title="${range}%: ${countLabel}">
-          <span class="section-score-bar-column" style="--bar-height: ${height.toFixed(2)}%" aria-hidden="true">
+          <span class="section-score-bar-column" style="--bar-height: ${height.toFixed(2)}%; --bar-color: ${color}" aria-hidden="true">
             <span>${bucket.count.toLocaleString("en-US")}</span>
             <i></i>
           </span>
@@ -1274,7 +1287,7 @@ function renderSectionScoreDistribution(distribution) {
             </ol>
           </div>
         </div>
-        <figcaption>This chart includes the two side scores assigned within every published debate section—not overall debate scores or interlocutor averages. Vertical axis: number of scores. Horizontal axis: two-percentage-point score ranges. Numbers above the bars are counts.</figcaption>
+        <figcaption>This chart includes the two side scores assigned within every published debate section—not overall debate scores or interlocutor averages. Vertical axis: number of scores. Horizontal axis: two-percentage-point score ranges. Bar colors progress through the site’s coral, gold, and teal palette as scores increase. Numbers above the bars are counts.</figcaption>
       </figure>
       ${renderRubricExtremesAccordion(sectionScoreExtremes)}
     </section>

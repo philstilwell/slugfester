@@ -149,6 +149,15 @@ test("the rubric quality check offers six closed-by-default section examples", a
     .map((count) => Number(count.replaceAll(",", "")));
   expect(axisPeak).toBeGreaterThanOrEqual(Math.ceil(Math.max(...barCounts) * 1.1));
 
+  const barStyles = await page.locator(".section-score-bar-column").evaluateAll((bars) =>
+    bars.map((bar) => bar.getAttribute("style"))
+  );
+  const middleStart = Math.floor((barStyles.length - 1) / 2);
+  const middleEnd = Math.ceil((barStyles.length - 1) / 2);
+  expect(barStyles.at(0)).toContain("var(--coral) 100.0%");
+  expect(barStyles.slice(middleStart, middleEnd + 1).every((style) => style?.includes("var(--gold)"))).toBe(true);
+  expect(barStyles.at(-1)).toContain("var(--teal) 100.0%");
+
   const accordion = page.locator(".rubric-extremes-accordion");
   await expect(accordion).not.toHaveAttribute("open", "");
   await accordion.locator("summary").click();
