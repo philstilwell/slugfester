@@ -398,7 +398,7 @@ requireIncludes("backend rubric assessed move grouping", styles, ".rubric-extrem
 requireIncludes("backend rubric move score", styles, ".rubric-extreme-move-score {");
 requireIncludes("backend rubric example explanation", styles, ".rubric-extreme-analysis {");
 requireIncludes("rankings comparison gloves", styles, ".ranking-comparison-versus {");
-requireIncludes("landing reassessment divider", styles, ".landing-topic-link .landing-reassessment-note {");
+requireIncludes("landing reassessment note styling", styles, ".landing-topic-link .landing-reassessment-note {");
 requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");
