@@ -1711,11 +1711,15 @@ a {
 .section-score-bar-column i {
   width: min(72%, 28px);
   height: var(--bar-height);
-  background: linear-gradient(to top, #176575, #48a59a);
-  border: 1px solid rgba(19, 72, 82, 0.3);
+  background: linear-gradient(
+    to top,
+    color-mix(in srgb, var(--bar-color) 78%, var(--ink)),
+    color-mix(in srgb, var(--bar-color) 82%, #ffffff)
+  );
+  border: 1px solid color-mix(in srgb, var(--bar-color) 72%, var(--ink));
   border-bottom: 0;
   border-radius: 4px 4px 0 0;
-  box-shadow: 0 4px 10px rgba(23, 101, 117, 0.12);
+  box-shadow: 0 4px 10px color-mix(in srgb, var(--bar-color) 26%, transparent);
 }
 
 .section-score-bucket.populated .section-score-bar-column i {
