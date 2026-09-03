@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "245",
+  "debateId": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The limited extrapolation concession, prior-worldview dependence, and unresolved cosmic case are already represented in their dimension ratings; no additional distinct consequence merits an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "p-extrapolation",
+              "p-mysticism",
+              "p-cosmic"
+            ],
+            "completionCriterion": "Warrant the affirmative extrapolation, mystical interpretation, and cosmic evidential route beyond the live alternatives.",
+            "relatedMoveIds": [
+              "calibrated-alternative",
+              "worldview-coherence",
+              "concession-and-remaining-scope"
+            ],
+            "distinctConsequence": "No debate-wide consequence distinct from the selected move dimensions is identified.",
+            "alreadyCapturedBy": [
+              "calibrated-alternative: relevanceBurden and responsiveness",
+              "worldview-coherence: relevanceBurden and responsiveness",
+              "concession-and-remaining-scope: relevanceBurden and responsiveness"
+            ],
+            "counterfactual": "Removing a second adjustment leaves the source-grounded burden effects fully represented by the move judgments."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Goff's remaining extrapolation, mystical-warrant, and cosmic-conditioning limitations are captured in the relevant move dimensions; his qualified final concession creates no separate unscored consequence.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "p-cosmic"
+            ],
+            "completionCriterion": "Resolve the offered extraordinary-evidence challenge within the live cosmic exchange.",
+            "relatedMoveIds": [
+              "concession-and-remaining-scope"
+            ],
+            "distinctConsequence": "No distinct debate-wide consequence remains outside the move-level ratings.",
+            "alreadyCapturedBy": [
+              "responsiveness",
+              "relevanceBurden",
+              "evidenceWarrant"
+            ],
+            "counterfactual": "Removing the move-level treatment would omit the effect; adding an adjustment would count it twice."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The sample limitation, public-evidence distinction, and fixed-structure reply already capture the critical burden performance; awarding another adjustment would duplicate those judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "c-extrapolation",
+              "c-mysticism",
+              "c-cosmic"
+            ],
+            "completionCriterion": "Expose missing warrants in the affirmative routes without assuming a burden to prove physicalism.",
+            "relatedMoveIds": [
+              "sample-extrapolation",
+              "public-model-test",
+              "condition-on-cosmic-structure"
+            ],
+            "distinctConsequence": "No debate-wide consequence distinct from the selected move dimensions is identified.",
+            "alreadyCapturedBy": [
+              "sample-extrapolation: relevanceBurden and responsiveness",
+              "public-model-test: relevanceBurden and responsiveness",
+              "condition-on-cosmic-structure: relevanceBurden and responsiveness"
+            ],
+            "counterfactual": "Removing a second adjustment leaves the source-grounded burden effects fully represented by the move judgments."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Folley's public-check challenges and alternative cosmic conditioning advance his critical burdens, but their consequences are already represented in the move dimensions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "c-cosmic"
+            ],
+            "completionCriterion": "Resolve the offered extraordinary-evidence challenge within the live cosmic exchange.",
+            "relatedMoveIds": [
+              "condition-on-cosmic-structure"
+            ],
+            "distinctConsequence": "No distinct debate-wide consequence remains outside the move-level ratings.",
+            "alreadyCapturedBy": [
+              "responsiveness",
+              "relevanceBurden",
+              "evidenceWarrant"
+            ],
+            "counterfactual": "Removing the move-level treatment would omit the effect; adding an adjustment would count it twice."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 44,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/inventory.json",
+      "sha256": "4a55e4d67d32324926c7e61ce52e508563bad3612c5fba0e6018bffb08cbcff2"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/judgments/pass-a/output.json",
+      "sha256": "7c06d02f02c026a8cad9bf2668426cd9c0ddf813731cf48b961f00557378d909"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/judgments/pass-b/output.json",
+      "sha256": "3b32c08b10b47b5dcadcb9425165048247e9f4ba8c7f67c620c1dc6c8b27b816"
+    }
+  }
+}

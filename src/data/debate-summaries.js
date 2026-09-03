@@ -11538,5 +11538,58 @@ export const debateSummaries = [
         "title": "Whether theism best explains consciousness and reality"
       }
     ]
+  },
+  {
+    "id": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+    "number": "245",
+    "title": "Philip Goff vs Joe Folley: Consciousness, Mystical Experience, and Fine-Tuning",
+    "year": 2026,
+    "label": "Consciousness, mystical experience, and cosmic evidence",
+    "date": "2026-09-03",
+    "duration": "2 hr 19 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=DB2BuBqAMIs",
+    "motion": "Do consciousness, mystical experience, and fine-tuning support a panpsychist and theistic interpretation of reality?",
+    "summary": "Goff offers a unified consciousness-based worldview; Folley’s targeted challenges to extrapolation, mystical warrant, and cosmic probability produce the stronger overall evidential case.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Consciousness, mystical experience, and cosmic evidence support panpsychism and a nontraditional theistic worldview",
+        "speaker": "Philip Goff",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Pragmatic and epistemic objections leave panpsychist and theistic claims insufficiently established",
+        "speaker": "Joe Folley",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 81,
+      "con": 86,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Explanation and the combination problem"
+      },
+      {
+        "title": "Extrapolating consciousness to matter"
+      },
+      {
+        "title": "Knowing the nature of experience"
+      },
+      {
+        "title": "Method, convergence, and practical stakes"
+      },
+      {
+        "title": "Mystical experience and evidential warrant"
+      },
+      {
+        "title": "Theistic interpretation and personal identity"
+      },
+      {
+        "title": "Fine-tuning and extraordinary cosmic evidence"
+      }
+    ]
   }
 ];

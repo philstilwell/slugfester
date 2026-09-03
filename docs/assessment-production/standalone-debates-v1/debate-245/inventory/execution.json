@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-execution",
+  "preFreezeCorrection": {"record": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/correction-execution.json", "output": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/model-output-corrected.json", "sha256": "4a55e4d67d32324926c7e61ce52e508563bad3612c5fba0e6018bffb08cbcff2", "originalOutputPreserved": true, "reason": "Parent source review identified a missing substantive reply target; correction remains score-blind before judgment."},
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "245",
+  "stage": "score-blind-inventory",
+  "status": "completed-and-validator-passed",
+  "model": "gpt-5.6-sol",
+  "displayLabel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "directIncrementalCostUsd": 0,
+  "isolation": {
+    "method": "Fresh delegated agent context /root/inventory_245 with source-only bounded task; no legacy assessments, other inventories, judgments, scores, or publication loaded.",
+    "freshContext": true,
+    "scoreBlind": true,
+    "publicationBlind": true,
+    "otherJudgmentsSeen": false,
+    "apiInferenceUsed": false,
+    "apiKeysAccessed": false,
+    "toolExecutionReceipt": "Execution consists of actual tools in this agent conversation; no external model-call receipt was generated."
+  },
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/authorization.json",
+      "sha256": "736a6ca33f148c0fe7c7fdf3b1162e0c0b1d97bc28bcb50ae5b166343639ef2d",
+      "bytes": 3699
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/manifest-pre-inventory.json",
+      "sha256": "697fa1694c4edb9dcbbbe14090a32dfacfea4034bfc0b27a97aa652156c51590",
+      "bytes": 5965
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/source/source-lock.json",
+      "sha256": "8a67e9182cb40edcdcffd09ad149e0581d81671d99c1365834b07492dd4515f4",
+      "bytes": 3677
+    },
+    {
+      "path": ".assessment-cache/captions/DB2BuBqAMIs/transcript.txt",
+      "sha256": "8e020d0391b411ea259791aa7cfc12170352bb9f632d60a10e1429c70ea3de4b",
+      "bytes": 163858
+    },
+    {
+      "path": ".assessment-cache/captions/DB2BuBqAMIs/events.json",
+      "sha256": "a562ddb220096e9ca24a9dd3d7a7b16f79b852fb735600d38af3811efe4c8f9a",
+      "bytes": 385600
+    },
+    {
+      "path": ".assessment-cache/captions/DB2BuBqAMIs/manifest.json",
+      "sha256": "b317751a39bc0a7021a98f60fb585b2f33da77b9599f1635a7d6d43ba11ac8c7",
+      "bytes": 985
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/SKILL.md",
+      "sha256": "fe209f19b60e8288ed8201b947e614a232bc64d9c3dd73fc91bf62875b6533e6",
+      "bytes": 9661
+    },
+    {
+      "path": "/Users/philstilwell/.codex/skills/add-slugfester-youtube-debate/references/single-debate-runbook.md",
+      "sha256": "971cd841ecb69c31abe4b7256ff3af7b34ce3dd35b391c418492fa41e47e5843",
+      "bytes": 29449
+    },
+    {
+      "path": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/SKILL.md",
+      "sha256": "0af8d96ba0a7b9b538690ef8c357093628a0c5f1baad4b4daf4edfe469b7b486",
+      "bytes": 4624
+    },
+    {
+      "path": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+      "sha256": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+      "bytes": 4950
+    }
+  ],
+  "allowedWritablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-245/inventory/model-output.json",
+    "docs/assessment-production/standalone-debates-v1/debate-245/inventory/execution.json"
+  ],
+  "attemptedOutputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/model-output.json",
+      "attempt": 1,
+      "sha256": "412d8132f365273fce07926cf3294d1c9b039262f28aba90862d9103b5631ea3",
+      "bytes": 126882,
+      "status": "accepted-by-inventory-validator"
+    }
+  ],
+  "attemptCount": 1,
+  "modelRetryCount": 0,
+  "publicationOrJudgmentRepairCount": 0,
+  "prewriteDraftDiagnostics": [
+    {
+      "type": "local-builder-quote-check",
+      "message": "Draft sample-extrapolation quote included words absent from its excerpt; exact substring corrected before any inventory output was written.",
+      "candidateFileWritten": false
+    },
+    {
+      "type": "orchestration-output-truncation",
+      "message": "Attempt to parse a large generated draft from command output failed because tool output was truncated; draft retrieved in bounded chunks before first output write.",
+      "candidateFileWritten": false
+    }
+  ],
+  "validation": {
+    "function": "validateStandaloneInventory",
+    "status": "passed",
+    "debateNumber": "245",
+    "sections": 7,
+    "moves": 43,
+    "belowHighAttributionMoveIds": [
+      "real-self-no-soul",
+      "independent-language-correspondence"
+    ],
+    "sourceExact": true
+  },
+  "completedAt": "2026-09-03T19:51:17.081Z",
+  "timingNote": "Completion timestamp was read from the local runtime after validation; no unrecorded start time is asserted.",
+  "temporaryHelper": {
+    "path": ".assessment-cache/inventory-245/build.mjs",
+    "purpose": "Deterministic exact span assembly and draft checks only; selected arguments authored by this isolated agent.",
+    "removed": true
+  },
+  "preservedRejectedOutputs": [],
+  "rejectionNote": "No on-disk inventory was rejected or overwritten; revisions occurred only in the unpublished temporary builder before the first candidate file."
+}

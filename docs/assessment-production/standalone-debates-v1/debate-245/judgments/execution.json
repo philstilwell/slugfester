@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 245,
+  "debateId": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two fresh built-in isolated subagents with explicit score-blind read boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-245/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "edca19639cd26791e584338eff8790471f5e5d94b16a9f5bd5d1e04394eeecf6",
+    "inventorySha256": "4a55e4d67d32324926c7e61ce52e508563bad3612c5fba0e6018bffb08cbcff2",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-245/judgments/pass-a/output.json",
+      "outputSha256": "7c06d02f02c026a8cad9bf2668426cd9c0ddf813731cf48b961f00557378d909",
+      "outputBytes": 61086,
+      "judgmentCount": 44,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-245/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_245_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-245/judgments/pass-b/output.json",
+      "outputSha256": "3b32c08b10b47b5dcadcb9425165048247e9f4ba8c7f67c620c1dc6c8b27b816",
+      "outputBytes": 54368,
+      "judgmentCount": 44,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-245/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_245_b"
+    }
+  ],
+  "completedAt": "2026-09-03T20:05:55.141Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "245",
+  "debateId": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "a944d0154534c913bccf6c7d312f416e68979b002e2823bb98ff79f2337a492f",
+    "bytes": 148438
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_245_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "a944d0154534c913bccf6c7d312f416e68979b002e2823bb98ff79f2337a492f",
+        "bytes": 148438
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "f809abdb11f5b44ed1152437ad355a546ff8973de602e728a3639f2fe5b1af75",
+        "bytes": 22382
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_245_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "a944d0154534c913bccf6c7d312f416e68979b002e2823bb98ff79f2337a492f",
+        "bytes": 148438
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "313b9951ac1cb6a8454bac44dc57361ec074159b4e4d462507299c5921b21dc7",
+        "bytes": 21865
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_adjudication_245",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "ab7c7098e1d74b282e86df9a4634afaf6d08d65184f63d19a1a6efab8d68588c",
+        "bytes": 204086
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "666837da40133953ad8769ff715c43c85db98cd59e663bd8a5ffd5f23fa34311",
+        "bytes": 21820
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 53
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-03T20:23:52.408Z"
+}

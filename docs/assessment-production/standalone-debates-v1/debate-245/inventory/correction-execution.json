@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-score-blind-inventory-correction",
+  "debateNumber": "245",
+  "status": "passed-before-judgments",
+  "authorization": "Parent explicitly requested bounded source/linkage, quote, and canonical-semantic correction before inventory freeze.",
+  "model": "gpt-5.6-sol",
+  "displayLabel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "directIncrementalCostUsd": 0,
+  "context": "Same isolated score-blind inventory worker continued; only its own prior inventory, locked source, and parent source-review diagnostic were added. No judgments, scores, or publication supplied.",
+  "preservedOriginal": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/model-output.json",
+    "sha256": "412d8132f365273fce07926cf3294d1c9b039262f28aba90862d9103b5631ea3",
+    "unchanged": true
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/model-output-corrected.json",
+    "sha256": "4a55e4d67d32324926c7e61ce52e508563bad3612c5fba0e6018bffb08cbcff2",
+    "bytes": 146070
+  },
+  "diagnostic": {
+    "problem": "Goff’s physics-not-physicalism move responds to Folley’s immediate reconstruction of opposed starting commitments, not to Folley’s earlier complementary dispensability argument.",
+    "sourceReview": "Reread the 59:28–61:42 context against the complete-source review from the original inventory turn.",
+    "correction": "Added opposed-starting-commitments, a substantive Folley comparison rather than an adoption of physicalism; redirected physics-not-physicalism to it. Preserved physicalism-not-needed without treating agreement as opposition.",
+    "canonicalSemantics": "All 44 moves now have proposition and inference fields; inference and inferentialBridge give an explicitly authored premise-to-conclusion reconstruction instead of mechanically copying the claim.",
+    "quotesChanged": [
+      "combination-symmetry",
+      "richness-dilemma",
+      "calibrated-alternative",
+      "fallible-introspection",
+      "physicalism-not-needed",
+      "uniform-experience-reply",
+      "awesome-evidence-reductio"
+    ],
+    "counts": {
+      "pro": 23,
+      "con": 21
+    },
+    "newFourthRow": "knowing-experience: pro 3 / con 4. Frozen rationale distinguishes fallibility, water analogy, discrimination challenge, and opposed starting commitments; no material move removed for capacity.",
+    "scopeUnchanged": true,
+    "oldMovesDeleted": 0,
+    "oldSourceSpansChanged": 0,
+    "existingAudioTriggersPreserved": true
+  },
+  "validation": {
+    "status": "passed",
+    "validator": "validateStandaloneInventory",
+    "sections": 7,
+    "moves": 44,
+    "belowHighAttributionMoveIds": [
+      "real-self-no-soul",
+      "independent-language-correspondence"
+    ],
+    "longerThan1100": [
+      {
+        "moveId": "independent-language-correspondence",
+        "characters": 1522,
+        "sourceSpecificRationalePresent": true
+      }
+    ],
+    "allCountsRecomputed": true
+  },
+  "attempts": 1,
+  "rejectedCorrectionOutputs": [],
+  "completedAt": "2026-09-03T19:55:49.956Z",
+  "temporaryHelperRemoved": true,
+  "toolReceipt": "Actual local source inspection, deterministic assembly, apply_patch output creation, and inventory-validator execution in this conversation; no external inference receipt invented."
+}
