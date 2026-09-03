@@ -11088,5 +11088,55 @@ export const debateSummaries = [
         "title": "Divine character, love, wrath, and punishment"
       }
     ]
+  },
+  {
+    "id": "harris-peterson-religious-narrative-morality-2018",
+    "number": "239",
+    "title": "Jordan Peterson vs Sam Harris: Can Religious Narratives Ground Morality and Meaning?",
+    "year": 2018,
+    "label": "Religious narrative, morality, and meaning",
+    "date": "2026-09-03",
+    "duration": "2 hr 16 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=GEf6X-FueMo",
+    "motion": "Can religious narratives provide truthful and necessary foundations for morality and meaning?",
+    "summary": "Harris wins narrowly by separating religious narratives’ genuine usefulness from truth and necessity, while Peterson exposes unresolved problems in secular value selection.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Religious narratives ground morality and meaning",
+        "speaker": "Jordan Peterson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Morality and meaning do not require religious narratives",
+        "speaker": "Sam Harris",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 81,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Narrative truth, utility, and belief"
+      },
+      {
+        "title": "Sacrifice and future orientation"
+      },
+      {
+        "title": "Dogma, criticism, and updating"
+      },
+      {
+        "title": "Well-being, facts, and value"
+      },
+      {
+        "title": "Evolved heuristics and moral scale"
+      },
+      {
+        "title": "Secular ethics, meaning, and transcendence"
+      }
+    ]
   }
 ];

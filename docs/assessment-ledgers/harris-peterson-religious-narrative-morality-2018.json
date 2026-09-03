@@ -1,0 +1,633 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/GEf6X-FueMo/captions.srv3.xml",
+      "sha256": "79f22d07dc1678b76c425eb0cffbdb15533931187bb4553888718b9a055bedc6",
+      "bytes": 928649
+    },
+    "events": {
+      "path": ".assessment-cache/captions/GEf6X-FueMo/events.json",
+      "sha256": "cd5f1114af06de99da627dcaf01de1ab8083ff4623cd08ec644deebed6512ad9",
+      "bytes": 362787
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/GEf6X-FueMo/transcript.txt",
+      "sha256": "69397fae5a3fb9c342e255d1457db5c0abb8847ed8dc3564d48fb507a0d1f8d2",
+      "bytes": 156141
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/GEf6X-FueMo/manifest.json",
+      "sha256": "9a9222b87e3d7f13da1b7e65187464c1a7076f3fe72922594fb2ee873ec8df59",
+      "bytes": 1017
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/authorization.json",
+      "sha256": "a5447b8f04cf93d9ed45a4780d4070615454474239e6c5a15f701116499fda34",
+      "bytes": 3636
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/manifest.json",
+      "sha256": "c2938c872aa1e06a4024d9f530948b471b81c6a8a0efba3c30aef2a36bbd4ad4",
+      "bytes": 6382
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/source/source-lock.json",
+      "sha256": "8969b019d845f39a35ecdaec8b5cee144de31ba6677be0711e7bd11b62dd5b63",
+      "bytes": 3033
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/inventory/inventory.json",
+      "sha256": "afdb6e9294c8007b97c7c8ef68d2042611dc08692529fcce4fd8f1a607e7ee49",
+      "bytes": 72376
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/judgment-packet.json",
+      "sha256": "c4a5451a5f6a3d5d9f268a25082372aedb440cbf0ae168208e8ea1ad907beb07",
+      "bytes": 5022
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/execution.json",
+      "sha256": "c8f0030c05b7bd9c62c5d76924735df593198813d2a11d1d58d167b023ef5524",
+      "bytes": 2645
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/pass-a/output.json",
+      "sha256": "bbd105451d965fb28219086300bee782909147cac14e3b459e395012026d5ced",
+      "bytes": 46677
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/pass-b/output.json",
+      "sha256": "13f24da0ebb1012c9aba943e0979b50113ce3083e478dd70c9c7d81e585a6580",
+      "bytes": 45511
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/disagreements/disagreements.json",
+      "sha256": "9d0774d523f6c974d26378a7569549969fd6b42d1a7e5ce4b14a8f85f4213e9c",
+      "bytes": 8002
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/audio/audio-verification.json",
+      "sha256": "e4c44db038327ca735b6521859eafd97fcd029fc4a378892734d7c0ee9d5cb6c",
+      "bytes": 1307
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/adjudication/packet.json",
+      "sha256": "40e36eb3aafcd1327b139890651140b161a9381639356159ee3e10ee3c1582b5",
+      "bytes": 17843
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/adjudication/output.json",
+      "sha256": "0147002401f617ce5195acbd2fd128296741aa1e94802d86c1f872a87a97fd13",
+      "bytes": 2139
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/final-ledger/final-ledger.json",
+      "sha256": "e625479798812b9fc61dab1afda565218cfc10ae89088bc1aa2579812873c879",
+      "bytes": 200787
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/score-pass/input.json",
+      "sha256": "54dd7ec7ac017900ce87336d69749bd9b107881b7d5dc582fdf6bc0dba2ac925",
+      "bytes": 968
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/score-pass/output.json",
+      "sha256": "86d235f189b5629510dabc026be15d366724629c2cdc3e4b3c4244b9c52d9364",
+      "bytes": 14213
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/score-pass/attestation.json",
+      "sha256": "ee2170b1f4c1913c5057e52ad73b082bc1e0e9418688a43f64389a331e32b825",
+      "bytes": 836
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/output.json",
+      "sha256": "971560062d4696018dfbb5667a63abd1730616fecdde29538da9570d6e4418b9",
+      "bytes": 70263
+    },
+    "events": {
+      "path": ".assessment-cache/captions/GEf6X-FueMo/events.json",
+      "sha256": "cd5f1114af06de99da627dcaf01de1ab8083ff4623cd08ec644deebed6512ad9",
+      "bytes": 362787
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/GEf6X-FueMo/transcript.txt",
+      "sha256": "69397fae5a3fb9c342e255d1457db5c0abb8847ed8dc3564d48fb507a0d1f8d2",
+      "bytes": 156141
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/content-parity-audit.json",
+      "sha256": "3ab8d474cb3db3aed0b9e13693ea1b6ef5ed0f92503e22719d5c22fefd89eb55",
+      "bytes": 5035
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/correction-2-rhetorical-tags.json",
+      "sha256": "eca1fbe8192093a108663040f161277f4101af5d552da95f55fc579c188ff0ef",
+      "bytes": 3786
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-audit.json",
+      "sha256": "ab5a7953fb2587c2391e548cf46603d705a62a90fb21d042bb5bd3df8f9e3d2f",
+      "bytes": 216563
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "05ea3eadf7bcf0dc97f8a7772fda745100313b06d4de7004d0b184404c4e974b",
+      "bytes": 3303
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "4095740ca1056ee9d3971243e709667a8b6bbe8342e44e846b1910349af36a76",
+      "bytes": 3194
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "239",
+    "debateId": "harris-peterson-religious-narrative-morality-2018",
+    "sections": [
+      {
+        "sectionId": "narrative-truth-and-utility",
+        "title": "Narrative truth, utility, and belief",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "peterson-stories-codify-selected-behavior",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 82,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 83
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "harris-useful-fiction-requires-literal-distinction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 87,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 90
+                },
+                "score": 89
+              },
+              {
+                "moveId": "harris-concedes-some-fictions-outperform-truth",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 94
+                },
+                "score": 85
+              },
+              {
+                "moveId": "harris-story-benefits-do-not-require-divine-authorship",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 89,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 89
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "sacrifice-and-future-orientation",
+        "title": "Sacrifice and future orientation",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "peterson-sacrifice-discovers-the-future",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 80,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 66
+                },
+                "score": 73
+              },
+              {
+                "moveId": "peterson-harris-morality-implies-sacrifice",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 69,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 68,
+                  "calibrationCharity": 63
+                },
+                "score": 64
+              },
+              {
+                "moveId": "peterson-sacrifice-becomes-psychological-abstraction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 76
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "harris-delayed-gratification-separable-from-human-sacrifice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 73
+                },
+                "score": 83
+              },
+              {
+                "moveId": "harris-disastrous-ancient-memes-need-not-be-redeemed",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 83,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 59
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "dogma-criticism-and-updating",
+        "title": "Dogma, criticism, and updating",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "peterson-dogma-precedes-books-and-enables-perception",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 67,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 67
+                },
+                "score": 68
+              },
+              {
+                "moveId": "peterson-tradition-contains-moral-updating",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 80,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 67
+                },
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "harris-sacred-books-receive-exceptional-authority",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 80,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 65
+                },
+                "score": 78
+              },
+              {
+                "moveId": "harris-sectarian-dogma-is-revisable",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 88,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 78
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "wellbeing-facts-and-value",
+        "title": "Well-being, facts, and value",
+        "weightPercent": 21,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "peterson-interpretation-problem-also-afflicts-facts",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 73,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 87
+                },
+                "score": 77
+              },
+              {
+                "moveId": "peterson-wellbeing-measurement-remains-black-box",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 88
+                },
+                "score": 82
+              },
+              {
+                "moveId": "peterson-final-value-structure-concession-and-challenge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 85,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 91
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "harris-conscious-experience-defines-moral-domain",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 84,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 86
+                },
+                "score": 82
+              },
+              {
+                "moveId": "harris-grounding-is-consciousness-not-external-purpose",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 68,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 81
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "evolved-heuristics-and-moral-scale",
+        "title": "Evolved heuristics and moral scale",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 64,
+            "moves": [
+              {
+                "moveId": "peterson-religious-landscape-tracks-permanent-adaptive-abstractions",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 49,
+                  "responsiveness": 73,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 63,
+                  "calibrationCharity": 49
+                },
+                "score": 62
+              },
+              {
+                "moveId": "peterson-evolved-heuristics-usually-remain-useful",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 65,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 60
+                },
+                "score": 65
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "harris-religion-provides-replaceable-bad-reasons",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 85,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 68
+                },
+                "score": 77
+              },
+              {
+                "moveId": "harris-quantification-corrects-story-bias",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 85,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "secular-ethics-meaning-and-transcendence",
+        "title": "Secular ethics, meaning, and transcendence",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "peterson-secular-ethos-remains-unidentified-black-box",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 77
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "harris-common-humanity-grounds-resistance-to-tribal-dogma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 78,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 71
+                },
+                "score": 77
+              },
+              {
+                "moveId": "harris-contemplation-and-ethics-survive-without-dogma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 82,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 80
+                },
+                "score": 78
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 74.54,
+        "burdenCompletionAdjustment": 0,
+        "score": 75
+      },
+      "con": {
+        "weightedSectionMean": 80.69,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      }
+    },
+    "winner": "con",
+    "winningMargin": 6,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 1,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 25,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

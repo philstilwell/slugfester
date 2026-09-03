@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/inventory/inventory.json",
+    "sha256": "afdb6e9294c8007b97c7c8ef68d2042611dc08692529fcce4fd8f1a607e7ee49"
+  },
+  "trigger": {
+    "inventoryBelowHighAttributionMoveIds": [],
+    "requiredCheckIds": []
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "audit": {
+    "triggeredMoveIdsMatchCompletedChecksExactlyAndInOrder": true,
+    "allRequiredChecksComplete": true,
+    "noSuccessfulCallRepeated": true,
+    "lockedMovesReviewed": 25,
+    "highAttributionConfidenceMoves": 25,
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": false,
+    "successfulPaidCallsRepeated": 0
+  },
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossibleCostUsd": 0,
+    "paidCalls": 0,
+    "directCostUsd": 0,
+    "maximumPotentialCombinedCostUsd": 0
+  }
+}

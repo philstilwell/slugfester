@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "high",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "7debf009d526fb9c0e949d5127017cec930897f9727bc54a1c39a6a1d14df942",
+    "bytes": 120640
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "23fa212e156bf6dc3c695cce1661e19f985ae0bf34741bc863a80f9eb202cc5f",
+    "bytes": 4453
+  },
+  "contexts": {
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "sha256": "4bfcb30d2681319be8fb40247db4a123717570dfdb17020ef122ee01f7a63a3d",
+      "bytes": 19947,
+      "attempts": 1,
+      "retries": 0
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "sha256": "287687ccdd79f4001c3b4be9bb1381ff76d52d0140dab6cdcd5a772d00d40c00",
+      "bytes": 16544,
+      "attempts": 1,
+      "retries": 0
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/adjudication-packet.json",
+      "sha256": "72ae8dbf726fe7d14931dd78fd29221d4bafe954d9112340db1403a0e9905f1a",
+      "bytes": 177087
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/adjudication-output.json",
+      "sha256": "144965e80749268f9de10ccfee6dea5403a068663a17bebb24f69a8cf410cf8b",
+      "bytes": 18194,
+      "attempts": 1,
+      "retries": 0
+    }
+  },
+  "counts": {
+    "reviewedMoves": 25,
+    "reviewedOverallBlunders": 6,
+    "passACandidates": 30,
+    "passBCandidates": 26,
+    "unionCandidates": 36,
+    "oneReviewerCandidates": 16,
+    "acceptedMoveTags": 4,
+    "acceptedOverallBlunderLinks": 3,
+    "rejectedCandidates": 29
+  },
+  "finalDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/final-definition-check.json",
+    "sha256": "4c59a7c34bd698e34368f07d6341a1e53b56e765dc24840eb180ba40c63ca873",
+    "bytes": 34440
+  },
+  "directIncrementalCostUsd": 0,
+  "attempts": {
+    "passA": 1,
+    "passB": 1,
+    "adjudication": 1
+  },
+  "retries": 0,
+  "completedAt": "2026-09-03T03:48:30.119Z",
+  "audit": {
+    "blindReviews": 2,
+    "anonymousUnionCandidates": 36,
+    "acceptedMoveTags": 4,
+    "acceptedOverallBlunderLinks": 3,
+    "retries": 0
+  }
+}

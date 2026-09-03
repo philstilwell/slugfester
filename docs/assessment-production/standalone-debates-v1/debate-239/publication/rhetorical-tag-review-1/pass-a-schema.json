@@ -1,0 +1,378 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "pass",
+    "reviewerRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "reviewedMoveIds",
+    "reviewedOverallBlunderIds",
+    "candidateReviews",
+    "overallBlunderCandidateReviews",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.1-standalone-blind-rhetorical-review"
+    },
+    "protocolId": {
+      "const": "assessment-production-standalone-debate-v1"
+    },
+    "status": {
+      "const": "complete-and-schema-valid"
+    },
+    "debateNumber": {
+      "const": "239"
+    },
+    "debateId": {
+      "const": "harris-peterson-religious-narrative-morality-2018"
+    },
+    "pass": {
+      "const": "pass-a"
+    },
+    "reviewerRole": {
+      "const": "isolated-blind-rhetorical-reviewer"
+    },
+    "assessmentModel": {
+      "const": "5.6 Sol"
+    },
+    "reasoningEffort": {
+      "const": "high"
+    },
+    "reviewedMoveIds": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "const": "peterson-stories-codify-selected-behavior"
+        },
+        {
+          "const": "harris-useful-fiction-requires-literal-distinction"
+        },
+        {
+          "const": "harris-concedes-some-fictions-outperform-truth"
+        },
+        {
+          "const": "harris-story-benefits-do-not-require-divine-authorship"
+        },
+        {
+          "const": "peterson-sacrifice-discovers-the-future"
+        },
+        {
+          "const": "harris-delayed-gratification-separable-from-human-sacrifice"
+        },
+        {
+          "const": "peterson-harris-morality-implies-sacrifice"
+        },
+        {
+          "const": "harris-disastrous-ancient-memes-need-not-be-redeemed"
+        },
+        {
+          "const": "peterson-sacrifice-becomes-psychological-abstraction"
+        },
+        {
+          "const": "peterson-dogma-precedes-books-and-enables-perception"
+        },
+        {
+          "const": "harris-sacred-books-receive-exceptional-authority"
+        },
+        {
+          "const": "peterson-tradition-contains-moral-updating"
+        },
+        {
+          "const": "harris-sectarian-dogma-is-revisable"
+        },
+        {
+          "const": "peterson-interpretation-problem-also-afflicts-facts"
+        },
+        {
+          "const": "harris-conscious-experience-defines-moral-domain"
+        },
+        {
+          "const": "peterson-wellbeing-measurement-remains-black-box"
+        },
+        {
+          "const": "harris-grounding-is-consciousness-not-external-purpose"
+        },
+        {
+          "const": "peterson-final-value-structure-concession-and-challenge"
+        },
+        {
+          "const": "peterson-religious-landscape-tracks-permanent-adaptive-abstractions"
+        },
+        {
+          "const": "harris-religion-provides-replaceable-bad-reasons"
+        },
+        {
+          "const": "peterson-evolved-heuristics-usually-remain-useful"
+        },
+        {
+          "const": "harris-quantification-corrects-story-bias"
+        },
+        {
+          "const": "peterson-secular-ethos-remains-unidentified-black-box"
+        },
+        {
+          "const": "harris-common-humanity-grounds-resistance-to-tribal-dogma"
+        },
+        {
+          "const": "harris-contemplation-and-ethics-survive-without-dogma"
+        }
+      ],
+      "minItems": 25,
+      "maxItems": 25
+    },
+    "reviewedOverallBlunderIds": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "const": "overall-pro-blunder-1"
+        },
+        {
+          "const": "overall-pro-blunder-2"
+        },
+        {
+          "const": "overall-pro-blunder-3"
+        },
+        {
+          "const": "overall-con-blunder-1"
+        },
+        {
+          "const": "overall-con-blunder-2"
+        },
+        {
+          "const": "overall-con-blunder-3"
+        }
+      ],
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "candidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "type",
+          "label",
+          "url",
+          "context",
+          "decision",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "peterson-stories-codify-selected-behavior",
+              "harris-useful-fiction-requires-literal-distinction",
+              "harris-concedes-some-fictions-outperform-truth",
+              "harris-story-benefits-do-not-require-divine-authorship",
+              "peterson-sacrifice-discovers-the-future",
+              "harris-delayed-gratification-separable-from-human-sacrifice",
+              "peterson-harris-morality-implies-sacrifice",
+              "harris-disastrous-ancient-memes-need-not-be-redeemed",
+              "peterson-sacrifice-becomes-psychological-abstraction",
+              "peterson-dogma-precedes-books-and-enables-perception",
+              "harris-sacred-books-receive-exceptional-authority",
+              "peterson-tradition-contains-moral-updating",
+              "harris-sectarian-dogma-is-revisable",
+              "peterson-interpretation-problem-also-afflicts-facts",
+              "harris-conscious-experience-defines-moral-domain",
+              "peterson-wellbeing-measurement-remains-black-box",
+              "harris-grounding-is-consciousness-not-external-purpose",
+              "peterson-final-value-structure-concession-and-challenge",
+              "peterson-religious-landscape-tracks-permanent-adaptive-abstractions",
+              "harris-religion-provides-replaceable-bad-reasons",
+              "peterson-evolved-heuristics-usually-remain-useful",
+              "harris-quantification-corrects-story-bias",
+              "peterson-secular-ethos-remains-unidentified-black-box",
+              "harris-common-humanity-grounds-resistance-to-tribal-dogma",
+              "harris-contemplation-and-ethics-survive-without-dogma"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "enum": [
+              "https://logfall.com/fallacies/appeal-to-authority/",
+              "https://logfall.com/fallacies/argument-from-ignorance/",
+              "https://logfall.com/fallacies/begging-the-question/",
+              "https://logfall.com/fallacies/equivocation/",
+              "https://logfall.com/fallacies/red-herring/",
+              "https://logfall.com/fallacies/special-pleading/",
+              "https://cogbias.site/biases/ambiguity-effect/",
+              "https://cogbias.site/biases/authority-bias/",
+              "https://cogbias.site/biases/base-rate-neglect/",
+              "https://cogbias.site/biases/belief-bias/",
+              "https://cogbias.site/biases/confirmation-bias/",
+              "https://cogbias.site/biases/scope-neglect/",
+              "https://cogbias.site/biases/subjective-validation/"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "overallBlunderCandidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "blunderId",
+          "type",
+          "label",
+          "url",
+          "context",
+          "decision",
+          "rationale"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "enum": [
+              "https://logfall.com/fallacies/appeal-to-authority/",
+              "https://logfall.com/fallacies/argument-from-ignorance/",
+              "https://logfall.com/fallacies/begging-the-question/",
+              "https://logfall.com/fallacies/equivocation/",
+              "https://logfall.com/fallacies/red-herring/",
+              "https://logfall.com/fallacies/special-pleading/",
+              "https://cogbias.site/biases/ambiguity-effect/",
+              "https://cogbias.site/biases/authority-bias/",
+              "https://cogbias.site/biases/base-rate-neglect/",
+              "https://cogbias.site/biases/belief-bias/",
+              "https://cogbias.site/biases/confirmation-bias/",
+              "https://cogbias.site/biases/scope-neglect/",
+              "https://cogbias.site/biases/subjective-validation/"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "blunderId": {
+            "type": "string",
+            "enum": [
+              "overall-pro-blunder-1",
+              "overall-pro-blunder-2",
+              "overall-pro-blunder-3",
+              "overall-con-blunder-1",
+              "overall-con-blunder-2",
+              "overall-con-blunder-3"
+            ]
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "comparedEveryMoveAndBlunderAgainstAllDefinitions",
+        "includedAllSeriousAcceptedAndRejectedCandidates",
+        "acceptedOnlyMaterialCatalogMatchesRepresentedInCritiqueOrBlunder",
+        "fallaciesAndBiasesReceivedIdenticalScrutiny",
+        "otherReviewAndProductionTagsUnavailable"
+      ],
+      "properties": {
+        "comparedEveryMoveAndBlunderAgainstAllDefinitions": {
+          "const": true
+        },
+        "includedAllSeriousAcceptedAndRejectedCandidates": {
+          "const": true
+        },
+        "acceptedOnlyMaterialCatalogMatchesRepresentedInCritiqueOrBlunder": {
+          "const": true
+        },
+        "fallaciesAndBiasesReceivedIdenticalScrutiny": {
+          "const": true
+        },
+        "otherReviewAndProductionTagsUnavailable": {
+          "const": true
+        }
+      }
+    }
+  }
+}
