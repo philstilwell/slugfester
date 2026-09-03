@@ -1,0 +1,1162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "adjudicatorRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "resolutions",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0-rhetorical-tag-adjudication-output"
+    },
+    "protocolId": {
+      "const": "assessment-production-standalone-debate-v1"
+    },
+    "status": {
+      "const": "complete-and-schema-valid"
+    },
+    "debateNumber": {
+      "const": "239"
+    },
+    "debateId": {
+      "const": "harris-peterson-religious-narrative-morality-2018"
+    },
+    "adjudicatorRole": {
+      "const": "fresh-anonymous-candidate-adjudicator"
+    },
+    "assessmentModel": {
+      "const": "5.6 Sol"
+    },
+    "reasoningEffort": {
+      "const": "high"
+    },
+    "resolutions": {
+      "type": "array",
+      "minItems": 36,
+      "maxItems": 36,
+      "prefixItems": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-stories-codify-selected-behavior|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-useful-fiction-requires-literal-distinction|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-concedes-some-fictions-outperform-truth|bias|Base-rate neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-sacrifice-discovers-the-future|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-sacrifice-discovers-the-future|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-delayed-gratification-separable-from-human-sacrifice|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-harris-morality-implies-sacrifice|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-disastrous-ancient-memes-need-not-be-redeemed|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-disastrous-ancient-memes-need-not-be-redeemed|bias|Belief bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-sacrifice-becomes-psychological-abstraction|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-dogma-precedes-books-and-enables-perception|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-dogma-precedes-books-and-enables-perception|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-sacred-books-receive-exceptional-authority|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-sectarian-dogma-is-revisable|bias|Base-rate neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-interpretation-problem-also-afflicts-facts|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-conscious-experience-defines-moral-domain|fallacy|Begging the question"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-wellbeing-measurement-remains-black-box|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-grounding-is-consciousness-not-external-purpose|fallacy|Begging the question"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-grounding-is-consciousness-not-external-purpose|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-religious-landscape-tracks-permanent-adaptive-abstractions|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-religion-provides-replaceable-bad-reasons|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-evolved-heuristics-usually-remain-useful|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-evolved-heuristics-usually-remain-useful|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-quantification-corrects-story-bias|fallacy|Appeal to authority"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-quantification-corrects-story-bias|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "peterson-secular-ethos-remains-unidentified-black-box|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-common-humanity-grounds-resistance-to-tribal-dogma|bias|Base-rate neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-common-humanity-grounds-resistance-to-tribal-dogma|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "harris-contemplation-and-ethics-survive-without-dogma|bias|Subjective validation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-1|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-2|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-2|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-3|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-1|fallacy|Begging the question"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-2|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-3|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "resolvedEveryUnionCandidateInPacketOrder",
+        "consideredOneReviewerCandidatesFully",
+        "usedExactCatalogDefinitions",
+        "acceptedOnlyMaterialDefectsRepresentedInSourceCritiqueOrBlunder",
+        "fallaciesAndBiasesReceivedIdenticalScrutiny",
+        "introducedNoNewLabels"
+      ],
+      "properties": {
+        "resolvedEveryUnionCandidateInPacketOrder": {
+          "const": true
+        },
+        "consideredOneReviewerCandidatesFully": {
+          "const": true
+        },
+        "usedExactCatalogDefinitions": {
+          "const": true
+        },
+        "acceptedOnlyMaterialDefectsRepresentedInSourceCritiqueOrBlunder": {
+          "const": true
+        },
+        "fallaciesAndBiasesReceivedIdenticalScrutiny": {
+          "const": true
+        },
+        "introducedNoNewLabels": {
+          "const": true
+        }
+      }
+    }
+  }
+}

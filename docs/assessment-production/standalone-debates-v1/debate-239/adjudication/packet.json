@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-disputes-only",
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "motion": "Can religious narratives provide truthful and necessary foundations for morality and meaning?",
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/inventory/inventory.json",
+      "sha256": "afdb6e9294c8007b97c7c8ef68d2042611dc08692529fcce4fd8f1a607e7ee49",
+      "bytes": 72376
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/disagreements/disagreements.json",
+      "sha256": "9d0774d523f6c974d26378a7569549969fd6b42d1a7e5ce4b14a8f85f4213e9c",
+      "bytes": 8002
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/audio/audio-verification.json",
+      "sha256": "e4c44db038327ca735b6521859eafd97fcd029fc4a378892734d7c0ee9d5cb6c",
+      "bytes": 1307
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  },
+  "isolationBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "instructions": {
+    "resolveEveryDisputeExactlyOnceInPacketOrder": true,
+    "selectOnlyOptionAOrOptionB": true,
+    "evaluateAgainstExactLockedEvidenceAndRubricMeaning": true,
+    "doNotAverageInventOrRewriteOptions": true,
+    "doNotCalculateScoresOrInferWinner": true,
+    "optionLettersCarryNoReviewerIdentityOrPreference": true
+  },
+  "disputes": [
+    {
+      "disputeId": "peterson-harris-morality-implies-sacrifice:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "peterson-harris-morality-implies-sacrifice",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      },
+      "evidence": {
+        "move": {
+          "moveId": "peterson-harris-morality-implies-sacrifice",
+          "sectionId": "sacrifice-and-future-orientation",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "constructive",
+          "sourceSpan": {
+            "startEvent": 773,
+            "endEvent": 778,
+            "startMs": 1941470,
+            "endMs": 1961240,
+            "excerpt": "yes ok so I would say that there's an implicit claim in that that you should sacrifice everything in you that isn't serving that to that and I would say that that's essentially the same claim that's made in Christianity well again"
+          },
+          "quoteEligibleExactSpans": [
+            "you should sacrifice everything in you that isn't serving that",
+            "that's essentially the same claim that's made in Christianity"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "Peterson explicitly marks his inference with “I would say” after examining Harris's movement from bad lives toward good lives.",
+          "importance": 2,
+          "burdenContact": {
+            "bridgeId": "pro-subsidiary-sacrifice-future",
+            "tier": "subsidiary",
+            "polarity": "supports"
+          },
+          "respondsToIds": [],
+          "responseComponents": [],
+          "proposition": "Harris's injunction to move from bad toward good implicitly requires sacrificing whatever in oneself obstructs that movement, paralleling Christianity's moral demand.",
+          "inventoryRationale": "This is a material attempted convergence between Harris's secular framework and Peterson's religious interpretation of sacrifice."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "peterson-wellbeing-measurement-remains-black-box:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "peterson-wellbeing-measurement-remains-black-box",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Poor measurement coherently establishes operational incompleteness, but Harris explicitly notes that imperfect measures do not by themselves defeat his thesis, so Peterson's broader foundational conclusion does not fully follow."
+        },
+        "option-b": {
+          "value": 81,
+          "rationale": "Peterson validly distinguishes recognizing a well-being spectrum from measuring and maximizing it, although poor present measures do not by themselves refute Harris's foundational thesis."
+        }
+      },
+      "evidence": {
+        "move": {
+          "moveId": "peterson-wellbeing-measurement-remains-black-box",
+          "sectionId": "wellbeing-facts-and-value",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "sourceSpan": {
+            "startEvent": 2552,
+            "endEvent": 2575,
+            "startMs": 6169660,
+            "endMs": 6224110,
+            "excerpt": "but we never seem to get to is so you think that we should maximize well-being and that's part of your proposition which which I don't entirely disagree with by the way that we should ground our value structures in facts but but but there's a black box problem there like I think the black box problem about the a priori structure that we use to extract the facts of the world out and the black box problem is if we could measure well-being it's like yeah that's a big problem Sam like we have measures of well-being and they're terrible yes they are no no no I'm agreeing I don't I don't think it's but it's not a problem for my thesis is it we don't have measures for anything we care about yeah but I mean if your if your thesis is that if we had the measures of well-being that were appropriate we could use them in a positive way and the responses but we don't have those measures it's like well okay well then"
+          },
+          "quoteEligibleExactSpans": [
+            "there's a black box problem there",
+            "we have measures of well-being and they're terrible",
+            "we don't have those measures"
+          ],
+          "attributionConfidence": "high",
+          "attributionBasis": "Peterson addresses Harris by name, formulates the measurement objection, and continues it despite brief acknowledgments from Harris.",
+          "importance": 3,
+          "burdenContact": {
+            "bridgeId": "pro-central-prior-value-structure",
+            "tier": "central",
+            "polarity": "supports"
+          },
+          "respondsToIds": [
+            "harris-conscious-experience-defines-moral-domain",
+            "harris-grounding-is-consciousness-not-external-purpose"
+          ],
+          "responseComponents": [
+            {
+              "componentId": "peterson-wellbeing-operationalization-objection",
+              "targetMoveId": "harris-conscious-experience-defines-moral-domain",
+              "text": "An undeniable spectrum of experience does not yet supply reliable measures for identifying or maximizing well-being.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "peterson-priors-remain-in-black-box",
+              "targetMoveId": "harris-grounding-is-consciousness-not-external-purpose",
+              "text": "Applying the consciousness framework still requires an a priori structure for extracting and ranking the relevant facts.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "proposition": "Harris's well-being thesis remains operationally incomplete because available measures are poor and the value-selecting a priori structure remains a black box.",
+          "inventoryRationale": "This is Peterson's most concrete challenge to the practical sufficiency of Harris's secular foundation."
+        },
+        "audioCheck": null
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The pro side's debate-wide burden completion is already represented by its scored motion, central, subsidiary, and reply moves; no separate consequence remains for an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Apply a nonzero adjustment only for a debate-wide change in completion of a locked pro burden that is not represented in move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide pro consequence remains outside the locked move-level record.",
+            "alreadyCapturedBy": [
+              "peterson-stories-codify-selected-behavior",
+              "peterson-sacrifice-discovers-the-future",
+              "peterson-sacrifice-becomes-psychological-abstraction",
+              "peterson-dogma-precedes-books-and-enables-perception",
+              "peterson-religious-landscape-tracks-permanent-adaptive-abstractions",
+              "peterson-secular-ethos-remains-unidentified-black-box",
+              "peterson-final-value-structure-concession-and-challenge"
+            ],
+            "counterfactual": "Without move-level capture of a cross-section omission or completion-changing synthesis, a nonzero adjustment could be warranted; that condition is absent here."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The inventory contains no distinct debate-wide burden consequence beyond Peterson's scored motion, central, and subsidiary moves and their recorded replies.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional criterion applies beyond the burden contact and responsiveness already represented at move level.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide completion consequence is present in the locked inventory.",
+            "alreadyCapturedBy": [
+              "move dimension ratings",
+              "burdenContact links",
+              "respondsToIds and responseComponents"
+            ],
+            "counterfactual": "A nonzero adjustment would require an inventory-grounded consequence for Peterson's overall burden that remains absent from every scored move and reply link."
+          }
+        }
+      },
+      "evidence": {
+        "route": {
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "position": "religious narratives ground morality and meaning.",
+          "bridges": [
+            {
+              "bridgeId": "pro-motion-narrative-foundation",
+              "tier": "motion",
+              "statement": "Religious narratives can provide truthful and necessary foundations for morality and meaning because they encode indispensable structures of value and adaptation."
+            },
+            {
+              "bridgeId": "pro-central-evolved-wisdom",
+              "tier": "central",
+              "statement": "Religious stories represent behavior and wisdom selected across biological and cultural history."
+            },
+            {
+              "bridgeId": "pro-central-prior-value-structure",
+              "tier": "central",
+              "statement": "Facts cannot guide action without an antecedent value structure supplied partly by evolved and inherited tradition."
+            },
+            {
+              "bridgeId": "pro-subsidiary-sacrifice-future",
+              "tier": "subsidiary",
+              "statement": "The religious motif of sacrifice represents delayed gratification and orientation toward a better future."
+            },
+            {
+              "bridgeId": "pro-subsidiary-tradition-updates",
+              "tier": "subsidiary",
+              "statement": "The Western religious tradition contains a commitment to revising moral judgment through rational engagement."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The con side's debate-wide burden completion is already represented by its scored motion, central, subsidiary, and reply moves; no separate consequence remains for an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Apply a nonzero adjustment only for a debate-wide change in completion of a locked con burden that is not represented in move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide con consequence remains outside the locked move-level record.",
+            "alreadyCapturedBy": [
+              "harris-useful-fiction-requires-literal-distinction",
+              "harris-delayed-gratification-separable-from-human-sacrifice",
+              "harris-sacred-books-receive-exceptional-authority",
+              "harris-conscious-experience-defines-moral-domain",
+              "harris-grounding-is-consciousness-not-external-purpose",
+              "harris-common-humanity-grounds-resistance-to-tribal-dogma",
+              "harris-story-benefits-do-not-require-divine-authorship",
+              "harris-contemplation-and-ethics-survive-without-dogma"
+            ],
+            "counterfactual": "Without move-level capture of a cross-section omission or completion-changing synthesis, a nonzero adjustment could be warranted; that condition is absent here."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The inventory contains no distinct debate-wide burden consequence beyond Harris's scored motion, central, and subsidiary moves and their recorded replies.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional criterion applies beyond the burden contact and responsiveness already represented at move level.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide completion consequence is present in the locked inventory.",
+            "alreadyCapturedBy": [
+              "move dimension ratings",
+              "burdenContact links",
+              "respondsToIds and responseComponents"
+            ],
+            "counterfactual": "A nonzero adjustment would require an inventory-grounded consequence for Harris's overall burden that remains absent from every scored move and reply link."
+          }
+        }
+      },
+      "evidence": {
+        "route": {
+          "side": "con",
+          "speaker": "Sam Harris",
+          "position": "morality and meaning do not require religious narratives.",
+          "bridges": [
+            {
+              "bridgeId": "con-motion-secular-foundation",
+              "tier": "motion",
+              "statement": "Morality and meaning can be grounded in conscious experience without religious dogma or supernatural belief."
+            },
+            {
+              "bridgeId": "con-central-conscious-wellbeing",
+              "tier": "central",
+              "statement": "The spectrum of suffering and flourishing among conscious beings supplies an objective moral domain."
+            },
+            {
+              "bridgeId": "con-central-truth-over-utility",
+              "tier": "central",
+              "statement": "A story's usefulness neither establishes its literal truth nor makes religious belief the best means of obtaining its benefits."
+            },
+            {
+              "bridgeId": "con-subsidiary-correct-inherited-heuristics",
+              "tier": "subsidiary",
+              "statement": "Quantified reasoning must correct inherited narrative heuristics when they misrepresent moral scale."
+            },
+            {
+              "bridgeId": "con-subsidiary-dogma-blocks-update",
+              "tier": "subsidiary",
+              "statement": "Religious texts receive exceptional authority that impedes open criticism and moral updating."
+            },
+            {
+              "bridgeId": "con-subsidiary-secular-transcendence",
+              "tier": "subsidiary",
+              "statement": "Narrative motivation, ethical life, and self-transcendence can be preserved without religious dogma."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

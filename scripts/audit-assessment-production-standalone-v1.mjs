@@ -114,6 +114,10 @@ const VERSIONED_CONTROL_SNAPSHOTS = new Map([
     "docs/assessment-production/standalone-debates-v1/control-snapshots/a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81/audit-assessment-production-standalone-v1.mjs"
   ],
   [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u00006285c12f48aa18d23825dae851ff906981ab3b8c933f353d68e6506bdffbbf04",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/6285c12f48aa18d23825dae851ff906981ab3b8c933f353d68e6506bdffbbf04/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
     "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs\u000081106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/81106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838/audit-assessment-production-standalone-rhetorical-tags.mjs"
   ],
@@ -562,9 +566,10 @@ function validateFrozenInputBoundary({
         execution.execution[hashKey]
       );
     }
+    const expectedBuiltInShardCount = inventory.sections.length + 1;
     for (const pass of execution.passes) {
-      assert.equal(pass.builtInRecoveryShardCount, 6);
-      assert.equal(pass.builtInRecoveryShardAttemptCount, 6);
+      assert.equal(pass.builtInRecoveryShardCount, expectedBuiltInShardCount);
+      assert.equal(pass.builtInRecoveryShardAttemptCount, expectedBuiltInShardCount);
       assert.equal(pass.builtInRecoveryShardRetryCount, 0);
     }
   } else {

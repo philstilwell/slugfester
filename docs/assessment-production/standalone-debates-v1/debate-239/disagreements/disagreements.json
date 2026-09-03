@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "peterson-harris-morality-implies-sacrifice:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "peterson-harris-morality-implies-sacrifice",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "peterson-wellbeing-measurement-remains-black-box:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "peterson-wellbeing-measurement-remains-black-box",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Poor measurement coherently establishes operational incompleteness, but Harris explicitly notes that imperfect measures do not by themselves defeat his thesis, so Peterson's broader foundational conclusion does not fully follow."
+        },
+        "option-b": {
+          "value": 81,
+          "rationale": "Peterson validly distinguishes recognizing a well-being spectrum from measuring and maximizing it, although poor present measures do not by themselves refute Harris's foundational thesis."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The pro side's debate-wide burden completion is already represented by its scored motion, central, subsidiary, and reply moves; no separate consequence remains for an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Apply a nonzero adjustment only for a debate-wide change in completion of a locked pro burden that is not represented in move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide pro consequence remains outside the locked move-level record.",
+            "alreadyCapturedBy": [
+              "peterson-stories-codify-selected-behavior",
+              "peterson-sacrifice-discovers-the-future",
+              "peterson-sacrifice-becomes-psychological-abstraction",
+              "peterson-dogma-precedes-books-and-enables-perception",
+              "peterson-religious-landscape-tracks-permanent-adaptive-abstractions",
+              "peterson-secular-ethos-remains-unidentified-black-box",
+              "peterson-final-value-structure-concession-and-challenge"
+            ],
+            "counterfactual": "Without move-level capture of a cross-section omission or completion-changing synthesis, a nonzero adjustment could be warranted; that condition is absent here."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The inventory contains no distinct debate-wide burden consequence beyond Peterson's scored motion, central, and subsidiary moves and their recorded replies.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional criterion applies beyond the burden contact and responsiveness already represented at move level.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide completion consequence is present in the locked inventory.",
+            "alreadyCapturedBy": [
+              "move dimension ratings",
+              "burdenContact links",
+              "respondsToIds and responseComponents"
+            ],
+            "counterfactual": "A nonzero adjustment would require an inventory-grounded consequence for Peterson's overall burden that remains absent from every scored move and reply link."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The con side's debate-wide burden completion is already represented by its scored motion, central, subsidiary, and reply moves; no separate consequence remains for an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "Apply a nonzero adjustment only for a debate-wide change in completion of a locked con burden that is not represented in move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide con consequence remains outside the locked move-level record.",
+            "alreadyCapturedBy": [
+              "harris-useful-fiction-requires-literal-distinction",
+              "harris-delayed-gratification-separable-from-human-sacrifice",
+              "harris-sacred-books-receive-exceptional-authority",
+              "harris-conscious-experience-defines-moral-domain",
+              "harris-grounding-is-consciousness-not-external-purpose",
+              "harris-common-humanity-grounds-resistance-to-tribal-dogma",
+              "harris-story-benefits-do-not-require-divine-authorship",
+              "harris-contemplation-and-ethics-survive-without-dogma"
+            ],
+            "counterfactual": "Without move-level capture of a cross-section omission or completion-changing synthesis, a nonzero adjustment could be warranted; that condition is absent here."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The inventory contains no distinct debate-wide burden consequence beyond Harris's scored motion, central, and subsidiary moves and their recorded replies.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional criterion applies beyond the burden contact and responsiveness already represented at move level.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide completion consequence is present in the locked inventory.",
+            "alreadyCapturedBy": [
+              "move dimension ratings",
+              "burdenContact links",
+              "respondsToIds and responseComponents"
+            ],
+            "counterfactual": "A nonzero adjustment would require an inventory-grounded consequence for Harris's overall burden that remains absent from every scored move and reply link."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 25,
+    "disputesExtracted": 4,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

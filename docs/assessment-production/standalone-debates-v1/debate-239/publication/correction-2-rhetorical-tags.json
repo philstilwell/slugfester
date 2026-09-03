@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "4edb066c4c704ff4ed21251b8c223b886dea25e99e9ff1f9ef89e62836a20b00",
+    "bytes": 68355
+  },
+  "correctedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/output.json",
+    "sha256": "971560062d4696018dfbb5667a63abd1730616fecdde29538da9570d6e4418b9",
+    "bytes": 70263
+  },
+  "authorizedChanges": {
+    "cardTagArrays": [
+      "moveProse.peterson-harris-morality-implies-sacrifice.tags",
+      "moveProse.peterson-dogma-precedes-books-and-enables-perception.tags",
+      "moveProse.peterson-evolved-heuristics-usually-remain-useful.tags"
+    ],
+    "overallBlunderLinkArrays": [
+      "overall-pro-blunder-2",
+      "overall-con-blunder-3"
+    ],
+    "acceptedMoveTagCount": 4,
+    "acceptedOverallBlunderLinkCount": 3
+  },
+  "prohibitedChanges": {
+    "identity": 0,
+    "evidence": 0,
+    "inventory": 0,
+    "judgments": 0,
+    "adjudication": 0,
+    "scores": 0,
+    "descriptions": 0,
+    "critiques": 0,
+    "overallText": 0,
+    "logicalExtension": 0,
+    "quotes": 0
+  },
+  "reviewAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-audit.json",
+    "sha256": "ab5a7953fb2587c2391e548cf46603d705a62a90fb21d042bb5bd3df8f9e3d2f",
+    "bytes": 216563
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/output.json",
+    "sha256": "971560062d4696018dfbb5667a63abd1730616fecdde29538da9570d6e4418b9",
+    "bytes": 70263
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "moveProse.peterson-harris-morality-implies-sacrifice.tags",
+        "moveProse.peterson-dogma-precedes-books-and-enables-perception.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "moveProse.peterson-evolved-heuristics-usually-remain-useful.tags",
+        "overall-pro-blunder-2"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "overall-con-blunder-3",
+        "audit.rhetoricalTagReviewCompleted"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "tagChanges": 4,
+    "acceptedTagCount": 4,
+    "overallBlunderLinkChanges": 3,
+    "rhetoricalReviewCompletionFlagChanges": 1,
+    "maximumWritableFieldsPerShard": 2,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "controllerRejectionsOfOverbroadOrDuplicateAcceptances": 0
+  },
+  "evidence": {
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-audit.json",
+      "sha256": "ab5a7953fb2587c2391e548cf46603d705a62a90fb21d042bb5bd3df8f9e3d2f",
+      "bytes": 216563
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/output.json",
+      "sha256": "971560062d4696018dfbb5667a63abd1730616fecdde29538da9570d6e4418b9",
+      "bytes": 70263
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "4c59a7c34bd698e34368f07d6341a1e53b56e765dc24840eb180ba40c63ca873",
+      "bytes": 34440
+    }
+  }
+}

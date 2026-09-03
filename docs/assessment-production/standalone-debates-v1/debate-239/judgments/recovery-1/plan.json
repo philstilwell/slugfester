@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-field-disjoint-recovery-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-recovery-execution",
+  "debateNumber": "239",
+  "debateId": "harris-peterson-religious-narrative-morality-2018",
+  "frozenAt": "2026-09-03T02:23:48.936Z",
+  "reason": "The two simultaneous initial monolithic primary-judgment contexts returned no accepted model output and timed out; section-scoped output partitions reduce response size without changing evidence or requested rating fields.",
+  "authorization": {
+    "source": "current installed single-debate skill and runbook recovery rule, under the user's authorization to proceed with Debate 239",
+    "identicalMonolithicRetryForbidden": true,
+    "oneAttemptPerShard": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/inventory/inventory.json",
+      "sha256": "afdb6e9294c8007b97c7c8ef68d2042611dc08692529fcce4fd8f1a607e7ee49",
+      "bytes": 72376
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/judgment-packet.json",
+      "sha256": "c4a5451a5f6a3d5d9f268a25082372aedb440cbf0ae168208e8ea1ad907beb07",
+      "bytes": 5022
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  },
+  "priorFailures": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/pass-a/failure-1.json",
+      "sha256": "0fadafdd7bb9c34f639e8e4106ab6f9e98385a5525425e659bb739a4b4a8a97a",
+      "bytes": 541
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/pass-b/failure-1.json",
+      "sha256": "f17a1c5ab8539597d0f46507b68d173bb8c5a479d57d4e3528b6bd7196fbe503",
+      "bytes": 541
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-239/judgments/timeout-diagnosis-1.json",
+      "sha256": "e92f25d73e9b27e8011d22c920a5ccf21740435e26d6e93d638c6e371eeab4e4",
+      "bytes": 1191
+    }
+  ],
+  "controls": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "directIncrementalCostUsd": 0,
+    "freshContextPerShard": true,
+    "completeInventoryVisibleToEveryShard": true,
+    "ratingsAndBurdenFieldsPartitionedWithoutOverlap": true,
+    "otherShardOutputsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "publicationUnavailable": true,
+    "timeoutMsPerShard": 600000,
+    "oneAttemptPerShard": true,
+    "simultaneousLaunchOnlyWithinCorrespondingPassPair": true
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "shards": [
+        {
+          "shardId": "section-01-narrative-truth-and-utility",
+          "kind": "move-ratings",
+          "sectionId": "narrative-truth-and-utility",
+          "moveIds": [
+            "harris-useful-fiction-requires-literal-distinction",
+            "peterson-stories-codify-selected-behavior",
+            "harris-concedes-some-fictions-outperform-truth",
+            "harris-story-benefits-do-not-require-divine-authorship"
+          ]
+        },
+        {
+          "shardId": "section-02-sacrifice-and-future-orientation",
+          "kind": "move-ratings",
+          "sectionId": "sacrifice-and-future-orientation",
+          "moveIds": [
+            "peterson-sacrifice-discovers-the-future",
+            "harris-delayed-gratification-separable-from-human-sacrifice",
+            "peterson-harris-morality-implies-sacrifice",
+            "harris-disastrous-ancient-memes-need-not-be-redeemed",
+            "peterson-sacrifice-becomes-psychological-abstraction"
+          ]
+        },
+        {
+          "shardId": "section-03-dogma-criticism-and-updating",
+          "kind": "move-ratings",
+          "sectionId": "dogma-criticism-and-updating",
+          "moveIds": [
+            "harris-sacred-books-receive-exceptional-authority",
+            "peterson-dogma-precedes-books-and-enables-perception",
+            "harris-sectarian-dogma-is-revisable",
+            "peterson-tradition-contains-moral-updating"
+          ]
+        },
+        {
+          "shardId": "section-04-wellbeing-facts-and-value",
+          "kind": "move-ratings",
+          "sectionId": "wellbeing-facts-and-value",
+          "moveIds": [
+            "peterson-interpretation-problem-also-afflicts-facts",
+            "harris-conscious-experience-defines-moral-domain",
+            "harris-grounding-is-consciousness-not-external-purpose",
+            "peterson-wellbeing-measurement-remains-black-box",
+            "peterson-final-value-structure-concession-and-challenge"
+          ]
+        },
+        {
+          "shardId": "section-05-evolved-heuristics-and-moral-scale",
+          "kind": "move-ratings",
+          "sectionId": "evolved-heuristics-and-moral-scale",
+          "moveIds": [
+            "harris-religion-provides-replaceable-bad-reasons",
+            "peterson-religious-landscape-tracks-permanent-adaptive-abstractions",
+            "harris-quantification-corrects-story-bias",
+            "peterson-evolved-heuristics-usually-remain-useful"
+          ]
+        },
+        {
+          "shardId": "section-06-secular-ethics-meaning-and-transcendence",
+          "kind": "move-ratings",
+          "sectionId": "secular-ethics-meaning-and-transcendence",
+          "moveIds": [
+            "harris-common-humanity-grounds-resistance-to-tribal-dogma",
+            "peterson-secular-ethos-remains-unidentified-black-box",
+            "harris-contemplation-and-ethics-survive-without-dogma"
+          ]
+        },
+        {
+          "shardId": "burden-completion-adjustments",
+          "kind": "burden-adjustments",
+          "sectionId": null,
+          "moveIds": []
+        }
+      ]
+    },
+    {
+      "pass": "pass-b",
+      "shards": [
+        {
+          "shardId": "section-01-narrative-truth-and-utility",
+          "kind": "move-ratings",
+          "sectionId": "narrative-truth-and-utility",
+          "moveIds": [
+            "harris-useful-fiction-requires-literal-distinction",
+            "peterson-stories-codify-selected-behavior",
+            "harris-concedes-some-fictions-outperform-truth",
+            "harris-story-benefits-do-not-require-divine-authorship"
+          ]
+        },
+        {
+          "shardId": "section-02-sacrifice-and-future-orientation",
+          "kind": "move-ratings",
+          "sectionId": "sacrifice-and-future-orientation",
+          "moveIds": [
+            "peterson-sacrifice-discovers-the-future",
+            "harris-delayed-gratification-separable-from-human-sacrifice",
+            "peterson-harris-morality-implies-sacrifice",
+            "harris-disastrous-ancient-memes-need-not-be-redeemed",
+            "peterson-sacrifice-becomes-psychological-abstraction"
+          ]
+        },
+        {
+          "shardId": "section-03-dogma-criticism-and-updating",
+          "kind": "move-ratings",
+          "sectionId": "dogma-criticism-and-updating",
+          "moveIds": [
+            "harris-sacred-books-receive-exceptional-authority",
+            "peterson-dogma-precedes-books-and-enables-perception",
+            "harris-sectarian-dogma-is-revisable",
+            "peterson-tradition-contains-moral-updating"
+          ]
+        },
+        {
+          "shardId": "section-04-wellbeing-facts-and-value",
+          "kind": "move-ratings",
+          "sectionId": "wellbeing-facts-and-value",
+          "moveIds": [
+            "peterson-interpretation-problem-also-afflicts-facts",
+            "harris-conscious-experience-defines-moral-domain",
+            "harris-grounding-is-consciousness-not-external-purpose",
+            "peterson-wellbeing-measurement-remains-black-box",
+            "peterson-final-value-structure-concession-and-challenge"
+          ]
+        },
+        {
+          "shardId": "section-05-evolved-heuristics-and-moral-scale",
+          "kind": "move-ratings",
+          "sectionId": "evolved-heuristics-and-moral-scale",
+          "moveIds": [
+            "harris-religion-provides-replaceable-bad-reasons",
+            "peterson-religious-landscape-tracks-permanent-adaptive-abstractions",
+            "harris-quantification-corrects-story-bias",
+            "peterson-evolved-heuristics-usually-remain-useful"
+          ]
+        },
+        {
+          "shardId": "section-06-secular-ethics-meaning-and-transcendence",
+          "kind": "move-ratings",
+          "sectionId": "secular-ethics-meaning-and-transcendence",
+          "moveIds": [
+            "harris-common-humanity-grounds-resistance-to-tribal-dogma",
+            "peterson-secular-ethos-remains-unidentified-black-box",
+            "harris-contemplation-and-ethics-survive-without-dogma"
+          ]
+        },
+        {
+          "shardId": "burden-completion-adjustments",
+          "kind": "burden-adjustments",
+          "sectionId": null,
+          "moveIds": []
+        }
+      ]
+    }
+  ]
+}
