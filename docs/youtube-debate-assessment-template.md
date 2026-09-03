@@ -66,7 +66,7 @@ Design constraints:
 2. Identify the motion or central question.
 3. Identify the two sides and speaker names.
 4. Choose the debate's concise, speaker-free `label` as a human-readable general title for its compact card and secondary topic chips.
-5. Set `topicCategory` to the exact primary category ID from `topicCategoryDefinitions` in `src/app.js`. Every new debate from `190` onward requires this field; if the debate exposes a genuine new recurring theme, update that taxonomy rather than letting it fall into the fallback category.
+5. Set `topicCategory` to the exact primary category ID from `topicCategoryDefinitions` in `src/data/topics.js`. Every published debate requires an explicit primary category. Existing editorial assignments are maintained in `src/data/topic-assignments.js`; see [the category guide](topic-categories.md) for boundaries and correction rules. If a debate exposes a genuine new recurring theme, deliberately update the taxonomy.
 6. Extract short representative quotes for each side.
 7. Segment the debate into 4-7 topical sections.
 8. For each section, align 1-3 exchange rows by topic rather than by every interruption. Under v2.1, either side may be omitted from a row when no genuine counterpart exists; the renderer leaves the opposite cell empty.
@@ -83,8 +83,8 @@ Design constraints:
 
 Topic categorization:
 
-- The current topic clusters are `Cosmological & Contingency Arguments`, `Science and design`, `Scripture, Jesus, and resurrection`, `Meaning and purpose`, `Morality and ethics`, `Evil, suffering, and hiddenness`, `Mind, consciousness, and free will`, `Logic, reason, and presuppositions`, `Religion, society, and public reason`, and `God, theism, and atheism`.
-- `/topics/` uses `topicCategory` to determine the primary group. It continues to use the debate `label` to derive up to three supplementary topic chips alongside it, for four chips total, so the label should contain the clearest recurring subject terms without adding interlocutor names.
+- The fifteen categories, their exact IDs, and their editorial boundaries are documented in [the category guide](topic-categories.md). Category definitions are shared by the site and publication validation.
+- `/topics/` uses the explicitly assigned published `topicCategory` to determine the primary group; label keywords never supply a primary category. It continues to use the debate `label` to derive up to three supplementary topic chips alongside it, for four chips total, so the label should contain the clearest recurring subject terms without adding interlocutor names.
 - After adding a debate, check that the new compact card appears under the intended `/topics/` category, that its card title remains a general topic title rather than a speaker-vs-speaker title, and that hover/focus reveals the full summary and compact speaker names within the card.
 
 ## Debate Data Skeleton

@@ -1,3 +1,4 @@
+import { withPrimaryTopic } from "./topic-assignments.js";
 import { addMissingAiContributions } from "./ai-contributions.js";
 
 const fallacy = (slug) => `https://logfall.com/fallacies/${slug}/`;
@@ -104169,4 +104170,4 @@ function normalizeDebateYearMetadata(debate) {
 
 export const publishedDebates = debates.filter(
   (debate) => !debate.draft && !debate.sections?.some((section) => section.__draft)
-).map(normalizeDebateYearMetadata);
+).map(normalizeDebateYearMetadata).map(withPrimaryTopic);

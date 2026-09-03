@@ -14,7 +14,7 @@ Create a condensed debate scorecard, not a full transcript replacement. Each pag
 - Transcript source, noted in `sourceNote`.
 - Last rendered date in `YYYY-MM-DD` format: the last date this project ran the critique and scores, not the YouTube upload date.
 - At least two-digit zero-padded debate number, speaker names, unique debate label, side labels, duration, motion, and a one-sentence summary.
-- Topic categorization for `/topics/`: set `topicCategory` to the intended primary category ID from `topicCategoryDefinitions` in `src/app.js`; keep the concise, speaker-free `label` useful for secondary topic chips.
+- Topic categorization for `/topics/`: set `topicCategory` to the intended primary category ID from `topicCategoryDefinitions` in `src/data/topics.js`; keep the concise, speaker-free `label` useful for secondary topic chips.
 - Short representative quotes for both sides.
 
 Never invent direct quotations. If transcript text is lightly cleaned for readability, say so in `sourceNote`.

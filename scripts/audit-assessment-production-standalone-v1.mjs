@@ -111,6 +111,18 @@ const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
   [
+    "scripts/validate-debates.mjs\u0000dbeab033b008e7adf19aa7ea2c45b3568e3ad157a4bfa769ffd720ee84ad9ed5",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/dbeab033b008e7adf19aa7ea2c45b3568e3ad157a4bfa769ffd720ee84ad9ed5/validate-debates.mjs"
+  ],
+  [
+    "package.json\u0000d44041b86126261cd7aaa6b96528c1d33eff68560355e1bcde990ffb1e6c74a5",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/d44041b86126261cd7aaa6b96528c1d33eff68560355e1bcde990ffb1e6c74a5/package.json"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u000042e8755c633b8836691a507696f63af3e14d8ad63f64fdedf3c76a85caa8020d",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/42e8755c633b8836691a507696f63af3e14d8ad63f64fdedf3c76a85caa8020d/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
     "scripts/audit-assessment-production-standalone-v1.mjs\u0000bb74a685d0b521b0593fa6fbfc09589136d15e9d8f30280d96c15944d31a7978",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/bb74a685d0b521b0593fa6fbfc09589136d15e9d8f30280d96c15944d31a7978/audit-assessment-production-standalone-v1.mjs"
   ],

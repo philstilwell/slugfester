@@ -11,6 +11,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=TAW6-_L4z9M",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?",
     "summary": "Craig presented a cumulative Christian case, while O'Connor's calibrated challenges concerning fine-tuning, animal suffering, and Christian specificity proved especially effective.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Theist",
@@ -56,6 +57,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=0tYm41hb48o",
     "motion": "Does God exist, and do cosmology, fine-tuning, morality, resurrection, suffering, and religion's record make Christian theism more plausible than atheism?",
     "summary": "Craig advances a cumulative Christian case; Hitchens presses evidential burdens, inferential gaps, suffering, religious authority, and secular alternatives with greater consistency.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Christian theist",
@@ -150,6 +152,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=fSYwCaFkYno",
     "motion": "Can science explain everything worth explaining, or do rationality, miracles, purpose, origins, morality, and meaning require a different kind of explanation?",
     "summary": "Lennox defended explanatory pluralism across purpose, rationality, miracles, origins, and ethics, while Atkins pressed public evidence, natural sufficiency, and scientific progress.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Science has limits",
@@ -195,6 +198,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=OL8LREmbDi0",
     "motion": "Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?",
     "summary": "Dillahunty’s fallibilist evidential method consistently outperformed Ten Bruggencate’s presuppositional case, whose challenges identified foundational problems but rarely demonstrated Christianity’s exclusive necessity.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Presuppositional theist",
@@ -286,6 +290,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=_hrN4Mn8m1w",
     "motion": "Did Jesus personally claim divine identity, or do the relevant texts better show delegated authority, divine name-bearing, and later high christology?",
     "summary": "Wood built a cumulative divine-identity case, while O'Connor more consistently showed that agency, delegation, and later devotion underdetermine Jesus's personal self-claim.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Affirmative",
@@ -331,6 +336,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=xKd2Ht5Bs-k",
     "motion": "Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?",
     "summary": "Wood defended theism through intelligibility, moral grounding, and wider eschatological context; Shermer prevailed through empirical discrimination, natural mechanisms, secular morality, and suffering.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Theist",
@@ -376,6 +382,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=9nQUg4QeI_Y",
     "motion": "Does God-language name a real supernatural being, or does it function mainly as a religious, moral, and psychological substrate for meaning?",
     "summary": "Peterson defended religious experience, narrative, and ultimate value as meaning-bearing realities; Dillahunty separated those functions from warranted belief in supernatural agency.",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Religious pragmatist",
@@ -421,6 +428,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yqaHXKLRKzg",
     "motion": "Are the foundations of moral values and duties natural or supernatural?",
     "summary": "Craig defended divine nature and commands as morality's foundation; Harris grounded value in conscious well-being, producing evenly matched strengths and unresolved explanatory burdens.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Supernatural foundation",
@@ -466,6 +474,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=XtWjEjdYvLA",
     "motion": "Can belief in a loving, powerful God survive the scale of suffering and evil in the world?",
     "summary": "D'Souza defended theistic compatibility through epistemic limits, freedom, and natural order; Ehrman pressed suffering's scale, preventability, and unexplained intervention gap.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Theistic answer",
@@ -511,6 +520,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=XLcRd3RjdjA",
     "motion": "Does evidence for God exist, or are logic, mathematics, and intelligibility better explained without Christian theism?",
     "summary": "Settecase exposed gaps between self-certainty and universal necessity, while Jump effectively separated objective relations from descriptions and challenged divine sustenance.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -556,6 +566,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=EN5Jqu2-2P8",
     "motion": "Can Christianity's claims about forgiveness, morality, divine judgment, conquest, and slavery withstand skeptical objections?",
     "summary": "Knechtle presents Christianity as redemptive and context-sensitive, while O'Connor presses evidential, moral, slavery, and gender objections through specific scriptural counterexamples.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Christian defense",
@@ -644,6 +655,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=5OXPlUCGScY",
     "motion": "Is God great, and does Christian theism better explain science, morality, dignity, and hope than Hitchens's anti-theistic critique?",
     "summary": "Lennox defended Christian explanatory foundations and redemptive hope; Hitchens pressed stronger challenges concerning revelation, secular value, suffering, authority, and historical complicity.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -692,6 +704,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=DBsHdHMvucs",
     "motion": "Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?",
     "summary": "Hirsi Ali defended Christian renewal through personal transformation and civilizational need; Dawkins separated those benefits from supernatural truth and challenged religious moral authority.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Christian renewal",
@@ -737,6 +750,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=fXBGvNc2mvU",
     "motion": "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
     "summary": "Collins builds a cumulative Christian case from fine-tuning, morality, resurrection, revelation, and beauty, while answering suffering through orderly creation and noncoercive evidence.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -782,6 +796,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=9WnOYHi5k4g",
     "motion": "Do fine-tuning, suffering, religious experience, practice, and purpose make Christianity or a God-ish hypothesis more plausible than atheist skepticism?",
     "summary": "Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Christian and God-ish",
@@ -830,6 +845,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=_pprQXq1eCA",
     "motion": "Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?",
     "summary": "Harris grounds evaluative direction in conscious experience, while O'Connor distinguishes subjective destinations from objective means and denies that flourishing requires moral truth.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Moral landscape",
@@ -924,6 +940,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=2kZRAOXEFPI",
     "motion": "Does religious faith reveal God, moral meaning, and human freedom, or does it replace reason with projection, authority, and harmful consolation?",
     "summary": "Hitchens challenges faith through natural explanation, secular morality, scriptural harm, and natural transcendence, while granting uncertainty where atheism cannot conclusively disprove theological possibilities.",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Atheist critique",
@@ -1015,6 +1032,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=A4JGJRmldQE",
     "motion": "Is morality objectively grounded in the factual requirements of human life, or are moral claims expressions of emotion without truth value?",
     "summary": "Biddle grounds objective morality in life and flourishing; O'Connor argues that conditional valuation cannot establish objective duties, especially toward other people and animals.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Objectivist morality",
@@ -1060,6 +1078,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=lcHMSNiI97w",
     "motion": "Does religion poison everything, or does Christianity provide grace, charity, moral transformation, and historical credibility that defeat that charge?",
     "summary": "Hitchens attacks supernatural authority and religious morality; Olasky counters through Christianity's grace, charitable fruits, historical credibility, and challenges to universal condemnation.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Anti-theist critique",
@@ -1105,6 +1124,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=mMraxhd9Z9Q",
     "motion": "Is Islam a religion of peace, or do its claims, institutions, and enforcement patterns make that description untenable?",
     "summary": "Hitchens foregrounds coercive institutions and secular equality; Ramadan answers through interpretive plurality, peace-oriented ethics, political causation, internal reform, and constitutional citizenship.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Islam-not-peace critique",
@@ -1150,6 +1170,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=uDCDTaKfzXU",
     "motion": "What best explains reality: theism, with a personal creator and revelation, or atheism, with no supernatural dimension?",
     "summary": "Turek advances a cumulative theistic explanation, while Hitchens more consistently supplies calibrated naturalistic alternatives and challenges the inferential bridges to design and revelation.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Theism explains reality",
@@ -1195,6 +1216,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=b5a3MxIqZOs",
     "motion": "Does evil and objective morality point to God, or can agnostic atheism explain moral experience without accepting a divine moral ground?",
     "summary": "Turek grounds objective obligation in God; O'Connor distinguishes compelling moral experience from objectivity and offers evolutionary, psychological, and conditional explanations.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Moral argument",
@@ -1240,6 +1262,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8aZn7XUFSmA",
     "motion": "What best explains reality: theism grounded in God as the cause of creation, reason, information, morality, evil, and science, or skeptical naturalism grounded in evidence and scientific inquiry?",
     "summary": "Turek advances a cumulative theistic explanation, while Shermer's calibrated skepticism, natural mechanisms, and evidential challenges more completely answer the debate's central burdens.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Theistic explanation",
@@ -1334,6 +1357,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ENZYEPpR2Jc",
     "motion": "What better explains reality: naturalism, where the physical explains the mental, or theism, where God grounds creation, reason, information, morality, evil, and science?",
     "summary": "Lowder's calibrated comparative case consistently outperformed Turek's cumulative theistic inferences, especially concerning embodied minds, suffering, hiddenness, and naturalistic cognitive reliability.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Naturalism explains reality",
@@ -1382,6 +1406,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=WsUwyC2cwNg",
     "motion": "Does the historical evidence make Jesus' resurrection the best explanation of the facts, or should skeptical alternatives and evidential caution prevent that conclusion?",
     "summary": "Craig defended resurrection through comparative explanation and early testimony, while O'Connor pressed source reliability, natural alternatives, prior probability, and evidential expectations.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection case",
@@ -1424,6 +1449,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ypRtARVG1BA",
     "motion": "Does the biblical God exist, given moral experience, Jesus, scripture, animal suffering, biblical violence, religious geography, and resurrection evidence?",
     "summary": "The Knechtles argue that morality, creation, Jesus, resurrection, and lived experience point to the biblical God; O'Connor and Halper argue that animal suffering, biblical errors, divine violence, and hiddenness count strongly against that God.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Biblical theism",
@@ -1472,6 +1498,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=X0qKZqPy9T8",
     "motion": "Does contemporary cosmology make God's existence more probable, or do naturalistic cosmological models better explain the universe without theism?",
     "summary": "Craig argued that cosmic beginnings and fine-tuning favor theism; Carroll countered that self-contained models, measure sensitivity, and predictive discipline favor naturalism.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Theistic cosmology",
@@ -1563,6 +1590,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ulykALV2FQ8",
     "motion": "Has science refuted religion, or does that claim overreach by confusing scientific method with scientism and by ignoring non-scientific forms of evidence?",
     "summary": "Carroll and Shermer argue that naturalism and scientific explanations have displaced religious claims; Hutchinson and D'Souza argue that science has not refuted religion because it cannot settle every religious, historical, moral, or existential claim.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Science refuted religion",
@@ -1611,6 +1639,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Ku6tLuEjmTY",
     "motion": "How should scientific knowledge be integrated into naturalist and theistic worldviews, and do cosmology, fine-tuning, quantum mechanics, consciousness, morality, and meaning favor either metaphysical picture?",
     "summary": "Carroll defends revisable naturalism across science and value, while Halvorson argues scientific completeness underdetermines theism and offers qualified moral and existential alternatives.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Naturalist",
@@ -1656,6 +1685,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=LVUQAVQS1-U",
     "motion": "Did Jesus of Nazareth historically rise from the dead, and do the early resurrection appearances, the unexpected messianic claim, Christianity's spread, and later visions make that explanation plausible?",
     "summary": "Bass builds a cumulative resurrection case from appearances, unexpected belief, expansion, and visions; Ehrman answers through source criticism, ordinary alternatives, and comparative evidence.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection defender",
@@ -1701,6 +1731,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Cz57BuQOCmQ",
     "motion": "Do Jesus' teachings and the West's moral transformation point to objective moral truths grounded beyond human preference, or can morality be explained as historically shaped human inclination without divine grounding?",
     "summary": "McDowell presses objective obligation and progress; Ehrman explains universal charity historically while separating human moral experience from mind-independent grounding.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Moral realist",
@@ -1746,6 +1777,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=SEZu7Ej2SzU",
     "motion": "Can Christian belief be rationally sustained amid skeptical challenges about faith, hell, resurrection evidence, biblical reliability, religious experience, the Exodus, and parallels with other ancient traditions?",
     "summary": "Jones defended Christianity through cumulative evidence and qualified theology; Lambert pressed disclosure, comparative testimony, scriptural development, sincere nonbelief, and historical insufficiency.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Believer",
@@ -1794,6 +1826,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=UWZuHxO4WcA",
     "motion": "Are there objective moral truths, and does moral realism or global normative anti-realism better explain ordinary moral judgment, deliberation, language, and disagreement?",
     "summary": "Enoch defends mind-independent normativity through justified appearances and comparative explanation; Bush contests realist priority through neutral language, causal genealogy, pragmatism, and parsimony.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Moral realist",
@@ -1839,6 +1872,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Cc16nceSWiU",
     "motion": "Do objective moral facts exist, and can ethical intuitionism establish moral realism against anti-realist quietism, folk metaethical indeterminacy, and language-use objections?",
     "summary": "Huemer defended attitude-independent morality through semantic tests and intellectual appearances; Bush countered with contextual quietism, folk indeterminacy, and challenges to intuition’s public authority.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Moral realist",
@@ -1884,6 +1918,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=rX6di0Au5Kg",
     "motion": "Is divine simplicity, understood as God's absence of real intrinsic parts or composition, coherent with classical theism, Trinitarian doctrine, divine freedom, and omniscient knowledge of contingent reality?",
     "summary": "Schmid presses simplicity through composition, Trinitarian asymmetry, and contingent knowledge; Tomaszewski answers through aseity, analogical predication, subsistent relations, and extrinsic differentiation.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Classical theist",
@@ -1926,6 +1961,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=EsrfL58iLlE",
     "motion": "Does modern cosmology, especially Big Bang evidence and cosmic fine-tuning, make theism or intelligent design a better explanation than naturalistic early-universe models?",
     "summary": "Meyer defended cosmic beginnings and fine-tuning as design evidence; Halper more successfully emphasized theorem limits, unknown probabilities, testability, and underdetermined divine intentions.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Design theist",
@@ -1971,6 +2007,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=G17N2CgrXXU",
     "motion": "Do human beings have free will, either as ultimate control over action or as a volitional capacity to focus and use reason?",
     "summary": "Biddle locates freedom in regulating rational attention; O'Connor argues that introspection, desire, and agent causation never escape determination or randomness.",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "Free-will defender",
@@ -2016,6 +2053,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=rI1OevN2FDI",
     "motion": "Are moral truths real features of reason, consciousness, religion, or emergent human life, or are moral claims best understood as expressions of feeling?",
     "summary": "Singer, Frazier, and Swinburne offer divergent realist accounts of morality; O'Connor defends ethical emotivism and treats moral language as expressive rather than truth-apt.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Moral-realist accounts",
@@ -2067,6 +2105,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yspPYcJHI3k",
     "motion": "Does atheism depend on borrowed religious or extra-natural assumptions about free will, morality, reason, and social order, or can secular life face the truth without religious scaffolding?",
     "summary": "Shapiro defends religious foundations for agency, morality, science, and cohesion; O'Connor counters with determinism, revisability, historical resistance, scriptural counterexamples, and epistemic honesty.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Religious social order",
@@ -2201,6 +2240,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=AajJBhdRpDA",
     "motion": "Does the transcendental argument show that Orthodox Christian theism is needed to ground logic, truth, induction, ethics, and knowledge?",
     "summary": "Dyer argues Orthodox theism uniquely grounds transcendental categories; Dillahunty counters that fallible reliability permits rational inquiry without an unproved divine guarantor.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Orthodox theism",
@@ -2249,6 +2289,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=aAg3H1LU1Yw",
     "motion": "Is Christianity true, and do the Gospels, resurrection claims, moral meaning, and human value give sufficient warrant for Christian faith?",
     "summary": "Knechtle offered cumulative historical, moral, and relational warrant for Christianity; Dillahunty consistently pressed whether those methods distinguish supernatural truth from preservation, fiction, and alternatives.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity is true",
@@ -2294,6 +2335,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=5gMS7WTHnho",
     "motion": "Do science, design, DNA, natural law, morality, and human experience point toward Christian theism or toward an atheistic naturalist account?",
     "summary": "Lennox pressed cumulative explanatory gaps and Christian evidence, while Atkins defended methodological economy, emergent natural processes, evolved morality, and evidential restraint.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -2339,6 +2381,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=7V6UNSvHVDM",
     "motion": "Is it reasonable to believe Jesus of Nazareth rose from the dead, given historical testimony, expected evidence, background knowledge, and standards for unusual claims?",
     "summary": "Horn defended resurrection belief through testimony and comparative explanation; Dillahunty narrowly prevailed by separating sincerity from accuracy and emphasizing ordinary error.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection belief is reasonable",
@@ -2387,6 +2430,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=UMKkX8qRHsw",
     "motion": "Is the Bible true in historical, moral, allegorical, theological, and revelatory senses, or do contradictions and morally troubling texts undermine its truth claims?",
     "summary": "O'Connor pressed concrete historical and moral counterexamples, while D'Souza defended genre-sensitive revelation, cumulative testimony, moral development, and Christianity's beneficial interpretive traditions.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Bible as true revelation",
@@ -2432,6 +2476,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=_UOwOCGIPzQ",
     "motion": "Does Christianity or humanism offer a brighter future for humanity, especially for moral formation, social health, human rights, truth, and pluralistic freedom?",
     "summary": "Law’s comparative, neutrality, and evidential challenges outweighed Jones’s stronger pluralism case and qualified historical, social, scientific, and theological defenses.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Christianity offers the brighter future",
@@ -2477,6 +2522,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=zQBY5K-Ns2Y",
     "motion": "Does the Kalam cosmological argument show that the universe began to exist, has a cause, and points to a personal creator?",
     "summary": "Craig defended causal necessity, finite-past paradoxes, and personal agency; Malpass more successfully exposed categorical causal gaps, coherent infinities, and underdetermined creator attributes.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Kalam defender",
@@ -2522,6 +2568,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=-w2auo-Y5Wg",
     "motion": "Are there objective moral facts, and can moral knowledge be justified by appearances rather than only by best-explanation evidence?",
     "summary": "Huemer defends objective morality through evaluative judgment and defeasible appearances; Lutz counters with desire-based reasons, projectivism, and explanationist standards for knowledge.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Moral realism",
@@ -2567,6 +2614,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=B3-sjyDYO2I",
     "motion": "Can atheism or secular humanism provide a better moral foundation for society than Christianity?",
     "summary": "Scrivener grounds dignity and obligation in Christianity; Dillahunty distinguishes atheism from secular humanism and advances a corrigible, human-centered moral foundation.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Christian moral foundation",
@@ -2612,6 +2660,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=EKlycI9ZKsY",
     "motion": "Is secular humanism superior to Christianity at achieving human flourishing, rational decision-making, moral reasoning, and conflict resolution?",
     "summary": "Dillahunty’s revisable, welfare-centered humanism outperformed Slick’s foundational Christian critique, whose serious grounding objections remained insufficiently connected to comparative practical superiority.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Secular humanism",
@@ -2657,6 +2706,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=oeYze2psUpw",
     "motion": "Do cosmology, fine-tuning, origin-of-life research, biblical claims, and suffering make the Christian God more or less plausible?",
     "summary": "Scientific skepticism prevailed by exposing cosmological underdetermination, alternative fine-tuning explanations, ancient biblical cosmology, and insufficient answers to extensive animal suffering.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -2702,6 +2752,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Bu-7IHp3oGQ",
     "motion": "Did Jesus physically rise from the dead, and do early Christian testimony, rival miracle claims, martyrdom, and the empty tomb make that conclusion historically reasonable?",
     "summary": "Horn defended bodily continuity, appearances, sincerity, and the empty tomb, while O'Connor pressed source ambiguity, rival-testimony parity, corroboration deficits, and natural alternatives.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection case",
@@ -2747,6 +2798,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=-ZnVNM8lkGw",
     "motion": "Did Christian faith give the modern West its beliefs in kindness, equality, freedom, consent, and abolition, or are those values better explained by mixed traditions, social struggle, and secular moral development?",
     "summary": "Scrivener traces Western morality through Christian narratives and institutions, while O'Connor argues that mixed traditions, material struggle, and internal counterevidence better explain it.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Christian moral genealogy",
@@ -2792,6 +2844,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=fJ05WWnyj2g",
     "motion": "Do patterns, symbolism, Genesis, resurrection, worship, and social meaning point toward God as Logos, or can they be explained by human cognition, pragmatic abstraction, and bottom-up social life?",
     "summary": "Pageau connected purposive patterns, scripture, resurrection, and worship to Logos; Folley consistently separated their usefulness and structural reality from supernatural conclusions.",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Symbolic theism",
@@ -2837,6 +2890,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Z1TgI3cfeM8",
     "motion": "Does the God of the Bible exist, and do causation, design, morality, Jesus, religious diversity, suffering, and evidential standards support or undermine that claim?",
     "summary": "Shermer’s calibrated skepticism and natural alternatives consistently challenged Butt’s ambitious causal, design, moral, historical, and suffering-based case for the biblical God.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Biblical theism",
@@ -2885,6 +2939,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=0QMwHUijmqo",
     "motion": "Does God exist, and do Thomistic arguments from being, act and potency, divine simplicity, revelation, evil, freedom, and changing knowledge support or undermine classical theism?",
     "summary": "Pine defends classical theism through Thomistic metaphysics, while Watkins presses identification gaps, divine-attribute tensions, evolutionary suffering, hiddenness, and religious disagreement.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Thomistic theism",
@@ -2930,6 +2985,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=2UtMbB_gazg",
     "motion": "Does cosmic fine-tuning provide strong evidence for God, or can naturalistic alternatives, hypothesis-space ambiguity, and doubts about divine psychology undercut that inference?",
     "summary": "Donahue defended a theistic likelihood advantage from fine-tuning, while Malpass pressed naturalistic aggregation, uncertain divine psychology, prior ambiguity, and theory-relative alternatives.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Fine-tuning theism",
@@ -2975,6 +3031,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=jOYiPLT41wM",
     "motion": "Do philosophical arguments, biblical beauty, religious experience, and resurrection evidence make Christianity credible, or do evil, disagreement, expert dissent, and Christian moral failure make it unlikely?",
     "summary": "Donahue defended Christianity cumulatively, while Fodor pressed comparative objections from divine psychology, suffering, religious confusion, informed dissent, and observable moral outcomes.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Reflective Christianity",
@@ -3020,6 +3077,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=b2HZu6BcxHU",
     "motion": "Does digital physics, emergent spacetime, quantum information, and idealist metaphysics make God the best explanation of reality, or is a materialist ontology simpler and better disciplined?",
     "summary": "Jones links emergent spacetime and structural physics to theistic idealism; Fodor counters that the science permits nonmental foundations and better constrains explanation.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -3111,6 +3169,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Z2FGgkubhZM",
     "motion": "Is belief in Jesus' resurrection reasonable given the historical claims, testimonial sources, rival explanations, and evidential burden for supernatural causation?",
     "summary": "Winger builds a cumulative historical case for resurrection, while Dillahunty argues that transmitted reports and unresolved causal gaps justify withholding belief.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection defense",
@@ -3159,6 +3218,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=4qpwVLLebng",
     "motion": "Does the existence of necessary truths or laws of logic support a necessarily existing divine mind, or can propositions be explained without God?",
     "summary": "Anderson argues necessary propositions are best grounded in divine thoughts; Malpass defends nonmental propositions while challenging conceptualism's coherence and comparative advantage.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Divine conceptualism",
@@ -3253,6 +3313,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=gK-rwG392Uc",
     "motion": "Does the transcendental argument show that logic, induction, knowledge, and ethics require the Orthodox Christian God, or can those preconditions be understood without that presupposition?",
     "summary": "Malpass consistently exposed necessity, parity, and scope gaps, while Dyer offered substantive Orthodox grounding but left several decisive comparative bridges underdeveloped.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Orthodox TAG",
@@ -3298,6 +3359,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=I5uYVxLdaO0",
     "motion": "Does human freedom require libertarian alternative possibilities and sourcehood, or can compatibilist notions of will, responsibility, and practical agency survive determinism?",
     "summary": "Hawkins defended alternative-capable self-formation through constrained indeterminacy; Folley more consistently grounded practical agency and responsibility in distinctions surviving determinism.",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "Libertarian freedom",
@@ -3343,6 +3405,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=MfCQBynjgnw",
     "motion": "Do Grim Reaper-style paradoxes support causal finitism, and does the existence and distribution of suffering favor theism or the hypothesis of indifference?",
     "summary": "Rasmussen defends causal finitude and theistic expectations; Malpass challenges modal recombination and argues that suffering's severity and distribution favor indifference.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Theistic modal defense",
@@ -3388,6 +3451,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=WgiWkE1lhII",
     "motion": "Is the argument from contingency persuasive in moving from contingent reality to a necessary or automatically actual foundation?",
     "summary": "Rasmussen defends global explanatory inquiry and a noncontingent foundation; Clifton challenges its scope, modal bridge, and advantage over a brute contingent endpoint.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Necessary-foundation theist",
@@ -3433,6 +3497,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8WE1y00bwCU",
     "motion": "Does the surprising applicability of mathematics to the physical world support theism better than naturalism?",
     "summary": "Craig argues that mathematics’ predictive applicability favors intentional divine ordering; Oppy challenges the datum and offers naturalistic necessity, structural, and selection-based alternatives.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Theistic mathematical explanation",
@@ -3481,6 +3546,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=m-80lQOlNOs",
     "motion": "Are there good arguments for God, and does Feser's Aristotelian proof survive Oppy's theory-comparison and persistence objections?",
     "summary": "Feser defends audience-sensitive argument, contemporaneous actualization, and a divine terminus; Oppy emphasizes global theory comparison, default persistence, and a physical explanatory bottom.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Aristotelian theist",
@@ -3526,6 +3592,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=YzvidaGO3m4",
     "motion": "Do Paul's letters, Gospel transmission, hostile witnesses, and early church structures make the bodily resurrection and Catholic continuity historically credible?",
     "summary": "Albrecht builds cumulative resurrection and ecclesial-continuity arguments, while Oppy presses visionary alternatives, transmission uncertainty, selective preservation, and early Christian plurality.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Catholic resurrection case",
@@ -3571,6 +3638,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=hKw3d3qOYSo",
     "motion": "Is theism more probable than naturalism when judged by simplicity, explanatory scope, fine-tuning, consciousness, and modality?",
     "summary": "Swinburne advances a cumulative theistic explanation, while Oppy answers with economical naturalistic alternatives and sharper comparative, anthropocentric, consciousness, and modal challenges.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Probabilistic theism",
@@ -3616,6 +3684,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Lt1wN10yOY4",
     "motion": "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
     "summary": "Rasmussen develops arbitrary limits into qualified perfection; Schmid’s holistic, axiological, symmetry, and necessity objections leave the God-like conclusion substantially underdetermined.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Limits argument",
@@ -3707,6 +3776,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ya02MOhQMV8",
     "motion": "Does moral realism have a common-sense, historical, or semantic advantage over moral anti-realism?",
     "summary": "Bush systematically challenges realist presumptions from common sense, history, and semantics, while McAllister offers competent but insufficiently documented convergence and perspectival-collapse arguments.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Moral anti-realism",
@@ -3752,6 +3822,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=a8NrTv-Durc",
     "motion": "Does Loke's reformulated Kalam cosmological argument successfully establish a beginningless personal creator of the universe?",
     "summary": "Loke builds a first-cause route toward personal agency, while Oppy challenges its modal bridges and develops a comparatively economical necessary-natural-state alternative.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Reformulated Kalam",
@@ -3797,6 +3868,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=mMuy58DaqOk",
     "motion": "Do cosmology, evolution, and biological information point beyond scientific naturalism to God, design, or a theistic interpretation of nature?",
     "summary": "Krauss argues science needs no God; Meyer argues information and fine-tuning point to design; Lamoureux defends evolutionary creation while rejecting ID interventionism.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Scientific naturalism",
@@ -3845,6 +3917,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=2pDEBRG_9_Q",
     "motion": "Do science, evolution, and future technology make God unnecessary, or do value, personhood, origins, and hope point beyond scientific materialism?",
     "summary": "Atkins defended scientific materialism and finite purpose; Fox more consistently distinguished mechanism from metaphysics while grounding morality, personhood, hope, and technological restraint.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Scientific materialism",
@@ -3936,6 +4009,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=OSQWIWY9gYg",
     "motion": "Does the historical evidence make Jesus' resurrection more probable than competing hypotheses?",
     "summary": "Christopoulos presented a cumulative probabilistic resurrection case, while Dillahunty’s source challenges and distinctions between sincerity, likelihood, and warranted belief preserved rational uncertainty.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection historicity",
@@ -4027,6 +4101,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=4KCJXMeM9WQ",
     "motion": "Can Bignon's conversion story, religious experience, and supporting arguments rationally support Christian belief, or do rival experiences and naturalist explanations undercut their evidential force?",
     "summary": "Bignon presents experience, providential convergence, and historical considerations for Christian belief; Oppy counters with symmetry, cultural variation, naturalistic explanation, hiddenness, and evidential caution.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Religious-experience case",
@@ -4072,6 +4147,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Zn7lmu0pek0",
     "motion": "Are the canonical Gospels historically reliable despite alleged contradictions in the birth narratives, resurrection accounts, and Jesus' self-presentation?",
     "summary": "Akin defended cumulative Gospel reliability through ancient conventions and possible harmonizations; Ehrman pressed consequential narrative conflicts, compositional reshaping, and discontinuous self-presentation.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Gospel reliability",
@@ -4163,6 +4239,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=uWo9qU2dhpQ",
     "motion": "Do actual-infinity and successive-addition arguments give adequate philosophical support for the Kalam claim that the universe began to exist?",
     "summary": "Craig defended actual-infinity, temporal-asymmetry, and successive-addition arguments; Malpass more effectively challenged their modal warrant, tense symmetry, quantification, and paradox-based support.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Kalam beginning case",
@@ -4208,6 +4285,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Y9Uktg9nLx8",
     "motion": "Does the Christian God exist, and do libertarian freedom, the Kalam argument, resurrection evidence, hiddenness, and inconsistent revelation make Christian theism more reasonable than skepticism?",
     "summary": "Hunter builds a cumulative Christian case from freedom, causation, and resurrection; Dillahunty presses underdetermination, evidential discrimination, hiddenness, and revelation inconsistency.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian cumulative case",
@@ -4253,6 +4331,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=1IkAU6zAYLU",
     "motion": "Is theism coherent, especially if God is described as omnipotent, omniscient, perfectly good, and infinite in power or knowledge?",
     "summary": "Swinburne defends coherent maximal attributes through logical possibility and doctrinal distinctions; Huemer presses quantitative infinity, residual knowledge, temporal conflict, and supertask objections.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Coherent theism",
@@ -4347,7 +4426,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=4nK7NmDAfkA",
     "motion": "Is Christianity true, and do the Gospels, resurrection claims, moral experience, human meaning, and biblical history justify Christian faith over skeptical naturalism?",
     "summary": "The Knechtles defend Jesus through Gospel reliability, resurrection, grace, love, and worldview fit; Aron Ra and TJump challenge miracle testimony, biblical contradictions, religious borrowing, and evidential standards.",
-    "topicCategory": "scripture-jesus-resurrection",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity true",
@@ -4442,6 +4521,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Vs7ArUMuQyg",
     "motion": "Is belief in God reasonable in light of tsunamis, childhood cancer, moral evil, and the apparent harshness of the natural world?",
     "summary": "Craig defends theistic reasonableness through freedom, epistemic restraint, and total evidence; Grayling presses suffering, better-world feasibility, ordinary moral knowledge, and secular morality.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Theistic reasonableness",
@@ -4487,6 +4567,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=UWCvKiWjV0g",
     "motion": "Does God exist, and do emergent spacetime, quantum consciousness, idealism, and the limits of metaphysical knowledge make theism more reasonable than naturalistic alternatives?",
     "summary": "Jones defended theistic idealism through consciousness and emergent spacetime; Jump pressed underdetermination, epistemic limits, natural alternatives, and the explanatory cost of divine attributes.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -4532,6 +4613,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yGxSf4zJAso",
     "motion": "Do digital physics, cosmic consciousness, and introspective idealism provide good reasons to believe in a necessary immaterial mind, or do those arguments fail demonstrability, probability, and burden-of-proof standards?",
     "summary": "Jones assembled a cumulative idealist explanation, while Dillahunty’s sharper probability, underdetermination, and burden challenges exposed substantial gaps between suggestive evidence and theism.",
+    "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -4577,6 +4659,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8J-WOwrq6bE",
     "motion": "Does religion poison everything by adding doctrine, dogma, revelation, and moral harm to human decency, or does Christianity supply the sacred ideals and institutions that made modern compassion possible?",
     "summary": "Woodford pressed doctrinal harm and non-Christian moral goods; Scrivener answered through Christian anthropology, reforming institutions, sacred equality, and nonviolent interpretation.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Religion poisons",
@@ -4625,6 +4708,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=EfAWALcKf2w",
     "motion": "Is Christianity rational, and do its claims about God, morality, reason, and resurrection meet proportionate evidential standards?",
     "summary": "Woodford pressed consistent evidence, naturalistic alternatives, and inference gaps; Brierley defended cumulative Christian warrant through experience, explanation, morality, reason, and testimony.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity irrational",
@@ -4670,6 +4754,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=g1TlLCSn_5o",
     "motion": "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
     "summary": "Woodford presses suffering, revelation, and evidential gaps; Edwards answers through a cumulative theistic case grounded in reason, order, morality, and purpose.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Theism irrational",
@@ -4761,6 +4846,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=spiiYYgi9Wg",
     "motion": "Does God belong in our best account of reality, given cosmology, explanation, resurrection claims, suffering, religious practice, and the limits of science?",
     "summary": "Craig and Williams defend Christian theism through arguments, experience, practice, and human meaning; Hossenfelder and Žižek press scientific restraint, religious plurality, and a Christian-atheist reading of God as a communal or symbolic force.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -4809,6 +4895,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=syP-OtdCIho",
     "motion": "Do humans need God, religious stories, or religiously inherited values to make sense of life, meaning, morality, suffering, and action?",
     "summary": "Peterson grounds meaning in enacted religious inheritance, while Blackmore offers evolutionary, contemplative, and social counterexamples to claims of religious necessity.",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Religious pragmatism",
@@ -4854,6 +4941,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yrnXdzQRISM",
     "motion": "Do science, mathematics, miracle claims, moral experience, and the problem of evil support an evidence-based Christian faith or a more cautious agnostic naturalism?",
     "summary": "Lennox defended cumulative Christian evidence, while Ruse separated faith from inference and pressed a particularly effective challenge from innocent suffering.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Evidential Christian theism",
@@ -4899,6 +4987,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=nOy29aP7wDc",
     "motion": "Does human consciousness, religious and moral experience, and free agency make best sense within a God-centered mind-first reality, or can agnostic naturalism absorb those mysteries without theism?",
     "summary": "Ward presents a cumulative mind-first theism, while Ruse argues that shared mysteries and experiences remain naturally explicable and metaphysically underdetermined.",
+    "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
         "name": "Mind-first theism",
@@ -4990,6 +5079,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=cqfPJQg8m5U",
     "motion": "Can Christian faith be reconciled with evolutionary theory by emphasizing agency, cognition, and natural genetic engineering, or do unresolved mechanisms in origins, body plans, fossils, and human uniqueness make evolutionary confidence overreach?",
     "summary": "Tour demands mechanisms for major transitions, while Garte defends a bounded evolutionary framework compatible with Christian unity, agency research, and acknowledged uncertainty.",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Mechanism-first skepticism",
@@ -5035,6 +5125,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=KvGdllx9pJU",
     "motion": "Are scientists currently clueless about the origin of life, or do prebiotic chemistry, ribozyme research, and systems chemistry already provide viable pathways toward abiogenesis?",
     "summary": "Tour pressed unresolved selectivity, replication, information, and integration barriers; Farina answered with experimental component mechanisms while distinguishing incomplete reconstruction from scientific cluelessness.",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Cluelessness thesis",
@@ -5132,6 +5223,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=PQetkofYXvI",
     "motion": "Does the reality of suffering make belief in an all-powerful, all-loving God unreasonable, or does the Christian framework of a broken world, divine presence, justice, and future healing make better sense of it?",
     "summary": "Dirckx defended broken creation, objective dignity, divine solidarity, and restoration; Woodford pressed evidential challenges about permitted suffering, selective healing, and salvation.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Christian suffering framework",
@@ -5177,6 +5269,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Ef2vvT5GfoE",
     "motion": "Does consciousness point beyond materialism to God, or can a non-theistic panpsychist framework explain conscious experience without adding theism?",
     "summary": "Dirckx argues consciousness fits a divine personal ground, while Goff presents panpsychism as a parsimonious alternative and challenges the specifically theistic inference.",
+    "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
         "name": "Theistic consciousness",
@@ -5222,6 +5315,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=hxUgziZ4vro",
     "motion": "Does suffering, especially animal suffering and apparently gratuitous evil, make perfect-being theism improbable, or can theodicy, skeptical theism, higher goods, and Christian hope answer the challenge?",
     "summary": "Horn and Bertuzzi defend theodicy and Christian hope; O'Connor and Schmid press evidential evil, animal suffering, and the cost of skeptical replies.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Catholic-Protestant theodicy",
@@ -5273,6 +5367,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=huOwbSrl-xw",
     "motion": "Do facts about pain, pleasure, languishing, and horrendous evil count as evidence for naturalism over theism, or can soul-building and skeptical theism neutralize that evidential force?",
     "summary": "Schieber's comparative suffering case prevailed overall, while Bertuzzi's likelihood objection and limited-information defense exposed a serious weakness in the final skeptical-theism reply.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Theistic no-evidence defense",
@@ -5321,6 +5416,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=DGpkGRoLBQ8",
     "motion": "Does the contingency argument show that contingent reality requires a necessary foundation identifiable as God, or can determinism, composition worries, and a necessary-universe option block the inference?",
     "summary": "Bertuzzi defends an external necessary foundation, while O'Connor presses modal, compositional, symmetry, and underdetermination objections against identifying that foundation as God.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Theistic contingency",
@@ -5366,6 +5462,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=sy1lUHGIQCQ",
     "motion": "Does theism or atheistic naturalism better explain evil, objective morality, knowledge, rationality, consciousness, free will, animal suffering, cosmic hostility, and non-resistant nonbelief?",
     "summary": "Hernandez defended theistic grounds for morality, reason, and consciousness; Schieber pressed stronger naturalistic alternatives and evidential challenges from suffering, hostility, and hiddenness.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -5414,6 +5511,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=kOzmwGmiDHQ",
     "motion": "Can the Christian doctrine of hell be morally justified as self-chosen exile, sanctifying grace, and possible annihilation rather than external torture?",
     "summary": "Jones defends hell through self-chosen degeneration, corrective grace, open escape, and possible annihilation; O'Connor challenges agency, proportionality, misinformation, universalism, and atonement.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian hell defense",
@@ -5459,6 +5557,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=woqy13ZkeqM",
     "motion": "Is Christianity true, especially in light of resurrection evidence, Gospel reliability, and the moral authority of biblical teaching?",
     "summary": "McLatchie defended Christianity through resurrection testimony and contextual reconciliation; O'Connor challenged source sufficiency, theological inference, biblical morality, and animal-suffering explanations.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian evidentialism",
@@ -5504,6 +5603,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=OVEuQg_Mglw",
     "motion": "Has science buried God, or can Christian theism still explain rationality, design, miracles, morality, and fine-tuning?",
     "summary": "Lennox defended theism's explanatory compatibility and Christian implications; Dawkins more consistently pressed evolutionary alternatives, creator complexity, anthropic selection, and independent evidential burdens.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Christian science compatibility",
@@ -5549,6 +5649,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=5PF1JgXOKDQ",
     "motion": "Does God exist, and do contingency, sufficient reason, moral realism, evil, animal suffering, and quantum randomness support or undermine theism?",
     "summary": "Horn develops a cumulative classical-theist case, while O'Connor's quantum, metaethical, personal-explanation, and animal-suffering challenges expose consequential gaps in its foundations and identification.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Classical theism",
@@ -5594,6 +5695,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8k9A7d2Wnjk",
     "motion": "Does divine hiddenness, uneven religious geography, sincere nonbelief, hell, and original sin count against Catholic theism, or can grace, providence, and creaturely agency explain them?",
     "summary": "O'Connor presses sincere nonbelief, unequal access, culpability, and inherited deprivation; Pine answers through universal grace, temporal formation, providence, and recoverable gratuitous gifts.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Catholic theism",
@@ -5639,6 +5741,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=jey_CzIOfYE",
     "motion": "Can religious stories, God-language, and biblical tradition ground moral truth and meaning, or should moral realism, well-being, and open inquiry replace dogmatic religious frameworks?",
     "summary": "Peterson defends religious narrative as moral mediation and embodied guidance; Harris argues that well-being, causal inquiry, and revisability provide clearer secular foundations.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Religious pragmatism",
@@ -5687,6 +5790,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=r8RZarGC8B4",
     "motion": "Can Christian scripture and the gospel of grace give a coherent account of suffering, gender, slavery, violence, forgiveness, and salvation, or do those texts and doctrines create unresolved moral problems?",
     "summary": "The Knechtles defend Christianity as a coherent gospel of grace, meaning, value, and divine justice; O'Connor presses the hardest biblical and doctrinal cases against that moral portrait.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Christian apologia",
@@ -5738,6 +5842,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=TmYCwjU_5Wc",
     "motion": "Does the Kalam causal premise justify a transcendent cause of the universe, or is ordinary causation too bound to space, time, and material conditions to support that inference?",
     "summary": "Craig defends metaphysical causation beyond spacetime, while Clifton argues ordinary causal evidence supports narrower principles and leaves transcendent creation insufficiently warranted.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Kalam defense",
@@ -5783,6 +5888,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=uJeKS705aXs",
     "motion": "Does objective morality require God as its necessary foundation, or can secular moral reasoning explain the relevant moral truths and obligations?",
     "summary": "Slick grounds universal morality in God's immutable character, while Clifton's secular alternatives and circularity objections more completely address objectivity, obligation, and impartial justification.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Christian moral foundation",
@@ -5831,6 +5937,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=APfd7B3CEhI",
     "motion": "Does God exist, and do Craig's cumulative arguments overcome Law's evidential problem of evil and evil-God symmetry challenge?",
     "summary": "Craig’s cumulative creator, morality, and resurrection case met Law’s stronger suffering evidence and evil-God symmetry challenge, which remained insufficiently distinguished by providential skepticism.",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -5922,6 +6029,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=0IpKHdVLZb4",
     "motion": "Did Jesus rise from the dead, and does the resurrection hypothesis better explain early Christian testimony than naturalistic alternatives?",
     "summary": "Licona argued resurrection best explains early testimony; Carrier countered that prior probability, visionary mechanisms, and source limitations preserve stronger natural explanations.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection hypothesis",
@@ -5967,6 +6075,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=bC-Uj92Cpvg",
     "motion": "Did Jesus exist as a historical person, or did early Christian belief begin with a celestial or mythic Christ later placed in history?",
     "summary": "Boyce defended an earthly historical Jesus through Paul, kinship, and corroboration; Carrier pressed celestial compatibility, source dependence, ambiguity, and alternative appearance explanations.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Historicity defense",
@@ -6012,6 +6121,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=HCcq8G-WzJM",
     "motion": "Did Paul understand Jesus as an earthly historical person, or as a celestial figure whose death and resurrection occurred in a mythic heavenly realm?",
     "summary": "Carrier narrowly prevailed by pressing Pauline ambiguity and source dependence, while McLatchie answered most forcefully through contextual analysis of the crucifying rulers.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Pauline historicity",
@@ -6057,6 +6167,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=OSXawgwSZQs",
     "motion": "Can libertarian free will and Bradleyan idealism answer determinist and naturalist pressure better than compatibilist pragmatism?",
     "summary": "Hawkins defended libertarian idealism through normativity and experiential completeness, while Folley’s modal distinctions and disciplined pragmatism applied stronger comparative pressure.",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "Libertarian idealism",
@@ -6102,6 +6213,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=a2sBEFE3etc",
     "motion": "Did Jesus exist as a historical Jewish teacher later mythologized, or did early Christianity begin with a revelatory Christ only later placed in history?",
     "summary": "MacDonald defended a mortal Jewish teacher later mythologized; Carrier’s revelatory-origin model and challenges to literary and Josephian evidence narrowly prevailed.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Historical Jesus mimesis",
@@ -6147,6 +6259,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=GzjYmpwbHEA",
     "motion": "Did a first-century Jewish preacher named Jesus exist behind the Christian traditions, or did Christianity develop from mythic and scriptural materials without such a person?",
     "summary": "Ehrman advances convergent historical evidence for Jesus; Price challenges source independence, terrestrial Pauline readings, chronology, and whether an ordinary founder explains Christianity.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Historical Jesus",
@@ -6195,6 +6308,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=V7EwdZ0Z_gc",
     "motion": "How much historical confidence should readers place in the Gospels and resurrection accounts: reliable witness traces or later traditions shaped by memory, theology, and debate?",
     "summary": "Douthat pressed witness continuity and resurrection strangeness; Ehrman narrowly prevailed through source criticism, calibrated historical method, and a multistage visionary reconstruction.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Historical-resurrection challenge",
@@ -6240,6 +6354,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Pba-YNVWaa0",
     "motion": "Do the earliest Christian sources establish burial, an empty tomb, appearances, and resurrection belief such that God raising Jesus best explains the evidence?",
     "summary": "Craig built a cumulative resurrection case from early sources; Price challenged its historical foundations through analogy, literary criticism, and ordinary belief-forming mechanisms.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection case",
@@ -6285,6 +6400,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=CqpFmw4pwrY",
     "motion": "Did Jesus Christ bodily rise from the dead, as early Christian sources claim?",
     "summary": "Albrecht defended bodily continuity through early testimony and textual distinctions; Price narrowly prevailed by pressing historical method, provenance uncertainty, and ordinary alternative explanations.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Bodily resurrection case",
@@ -6330,6 +6446,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=vHxAw5-RXIw",
     "motion": "Should we believe in an all-knowing, all-powerful, morally perfect being?",
     "summary": "Adelstein presented a cumulative Bayesian case for theism, while Dillahunty more consistently exposed underdetermined likelihoods, divine motives, and omnimax identification.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Theistic evidential case",
@@ -6467,6 +6584,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=cRCbvfyiu0s",
     "motion": "Does the Christian gospel's account of sin, atonement, and salvation make moral and explanatory sense?",
     "summary": "Comfort defended guilt, substitution, and faith-based salvation; Dillahunty pressed stronger challenges concerning responsibility, atonement, evidential method, and testability.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Evangelical atonement",
@@ -6512,6 +6630,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=kf0Us__r9SQ",
     "motion": "Do laws of logic and other transcendental facts provide good evidence for a necessary personal God?",
     "summary": "Vela grounds transcendental facts in a necessary personal mind; Dillahunty argues that the inference remains underspecified, comparatively unsupported, and evidentially nondiscriminating.",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Transcendental theism",
@@ -6557,6 +6676,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=f06J2R4MwGA",
     "motion": "Are evolutionary science and theistic religion compatible, and does naturalism plus evolution undercut trust in human cognition?",
     "summary": "Plantinga establishes evolutionary compatibility with divine guidance, while Dennett separates possibility from evidence and offers a narrowly stronger naturalistic account of cognitive reliability.",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Theistic compatibility",
@@ -6648,7 +6768,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=_J_9DKIAn48",
     "motion": "Does determinism or indeterminism undermine free will and moral responsibility, or can reasons-responsive agency provide a compatibilist form of freedom worth preserving?",
     "summary": "Harris challenges ultimate authorship under causation, while Dennett defends graded, reasons-responsive control and pragmatic responsibility without metaphysical self-creation.",
-    "topicCategory": "mind-consciousness-free-will",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "No libertarian free will",
@@ -6694,6 +6814,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=h-I_9e5qxnc",
     "motion": "Does naturalism fully explain mind, intentionality, morality, and reality, or does a religious account of ultimate reality offer an additional explanatory framework?",
     "summary": "Dennett defends naturalistic explanations and epistemic accountability, while Clayton argues for subjective realism, religious integration, and a deeper ultimate reality.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Naturalist inquiry",
@@ -6739,6 +6860,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=YWeOWtmCoCs",
     "motion": "Do objective moral facts, moral knowledge, moral transformation, and moral rationality make theism a better explanation than secular ethical theories?",
     "summary": "Baggett’s qualified theistic explanation meets Dillahunty’s secular mechanisms, candidacy constraints, access objections, and hiddenness challenge across moral authority, knowledge, transformation, and flourishing.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Theistic moral explanation",
@@ -6787,6 +6909,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=07EYacr3rBg",
     "motion": "Does consciousness survive bodily death, or are near-death experiences and reports of apparent contact with the dead better explained as brain-based and psychological phenomena?",
     "summary": "Alexander and Moody argue that near-death and shared-death experiences reveal consciousness beyond the brain; Carroll and Novella argue that vivid experience and testimony do not outweigh evidence that minds depend on brains.",
+    "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
         "name": "Conscious survival",
@@ -6832,6 +6955,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=IW9w6c2RWmA",
     "motion": "Did Jesus rise from the dead, and can historical evidence plus allegedly supernatural phenomena justify that conclusion?",
     "summary": "Licona defended resurrection through historical and comparative inference; Dillahunty more effectively separated reported events, unexplained anomalies, supernatural classification, and justified causal attribution.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection hypothesis",
@@ -6877,6 +7001,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=u2SjOn8arv8",
     "motion": "Which gives a better foundation for ethics: God or secular humanism?",
     "summary": "Wood pressed categorical obligation and transcendent worth, while Dillahunty more effectively defended revisable secular ethics and exposed gaps in divine grounding.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Theistic moral realism",
@@ -6971,6 +7096,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=CRpsJgYVl-8",
     "motion": "Do determinism and unchosen desires eliminate free will, or can determined agents be free when acting voluntarily and without coercion?",
     "summary": "O'Connor pressed ultimate-source objections and practical compassion; Carter more strongly defended graded, attributable agency while preserving interpersonal and normative dimensions.",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "Determinist critique",
@@ -7016,6 +7142,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Esu8BXLBmZ4",
     "motion": "Does nonbelief leave people without the purpose and moral grounding needed to flourish, or can secular and spiritual practices sustain meaningful lives without Christian theism?",
     "summary": "Koukl defends Christian theism as the objective basis for purpose and morality; O'Connor and Alok Kanojia distinguish truth claims from subjective purpose while offering philosophical, clinical, and spiritual alternatives.",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Christian purpose",
@@ -7064,6 +7191,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=HKKofNwvt1k",
     "motion": "Is objective morality better explained by God as its personal ground, or by science, evolution, and human flourishing?",
     "summary": "Turek pressed divine grounding and the is-ought gap; Shermer answered through sentient flourishing, autonomy, evolved capacities, and challenges about religious reliability.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Theistic moral grounding",
@@ -7155,6 +7283,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=13PnL6QyMEw",
     "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
     "summary": "Howitt develops a necessary Logos and Trinitarian metaphysics; Dillahunty challenges its evidential standards, Christian specificity, divine coherence, and treatment of classical logic.",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian logos",
@@ -7203,6 +7332,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=a-wIaCRIdOA",
     "motion": "Is there strong historical evidence that Jesus rose from the dead, or are the surviving Christian reports too indirect and insufficiently testable to establish a resurrection?",
     "summary": "McLatchie built a cumulative resurrection case from early testimony; Dillahunty prevailed by challenging source independence, testability, alternative explanations, and evidential thresholds.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Historical resurrection case",
@@ -7248,6 +7378,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=dto5DQ7GBEQ",
     "motion": "Is naturalism true, or does an evolutionary naturalist account of human cognition undermine the rational confidence required to affirm naturalism?",
     "summary": "Wood challenges naturalism's warrant for abstract cognition; Aron Ra defends provisional, publicly corrected inquiry while requiring objective evidence for supernatural additions.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Cognitive-reliability critique",
@@ -7293,6 +7424,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=3jWCLONu7DM",
     "motion": "Are people and societies better off with belief in God, or can secular reason and institutions provide morality, purpose, and social cooperation more effectively?",
     "summary": "Douthat defended transcendent foundations for morality and meaning, while Pinker argued that secular reason, reciprocity, and institutions adequately support flourishing and progress.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Theistic case",
@@ -7338,6 +7470,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=9JVRy7bR7zI",
     "motion": "Does the evidence from cosmology, fine-tuning, morality, Jesus' resurrection, and religious experience make Christian theism more reasonable than skeptical atheism?",
     "summary": "Craig presented a cumulative Christian case; Millican’s calibrated challenges stressed underdetermination, alternative explanations, evidential reliability, suffering, and sincere nonbelief.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Christian theist",
@@ -7484,6 +7617,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=xHhmuqBW6Dw",
     "motion": "What is the best account of objective moral values and duties: the nature and commands of God or godless normative realism?",
     "summary": "Craig defended divine nature and commands as morality’s foundation; Wielenberg answered with irreducible normativity, explanatory parity, and sharper replies on agency.",
+    "topicCategory": "morality-ethics",
     "sides": {
       "pro": {
         "name": "Theistic moral grounding",
@@ -7529,6 +7663,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=bhfkhq-CM84",
     "motion": "Is belief in the personal God of classical theism intellectually reasonable?",
     "summary": "Craig’s strongest replies preserved several theistic inferences, while Rosenberg effectively separated atheism from eliminativism and exposed unresolved explanatory and moral-grounding assumptions.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Theistic explanation",
@@ -7577,6 +7712,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Ssq-S5M8wsY",
     "motion": "Does God exist as the transcendent personal cause and moral foundation of reality?",
     "summary": "Craig advances cumulative cosmological, moral, and resurrection arguments, then answers naturalistic objections concerning causality, evolution, suffering, miracles, and scientific method.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Classical theism",
@@ -7622,6 +7758,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=L3FOgiASYY0",
     "motion": "Does the available philosophical, scientific, moral, historical, and experiential evidence support God's existence?",
     "summary": "Craig presented cumulative theistic arguments; Shook's disciplined evidential restraint and targeted alternative explanations more consistently exposed unresolved bridges from nature to God.",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Theistic supernaturalism",
@@ -7670,6 +7807,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=TqANWuXQ3Z0",
     "motion": "Does the greater weight of philosophical, scientific, moral, and historical evidence support God's existence?",
     "summary": "Craig advances a cumulative theistic inference; Krauss counters that natural alternatives, evidential uncertainty, secular morality, and ordinary history prevent decisive discrimination.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Evidence for theism",
@@ -7718,6 +7856,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yotpTOKLZ00",
     "motion": "Do modern cosmology, fine-tuning, and the universe's existence support a divine mind or a self-contained natural account?",
     "summary": "Lennox argues that intelligibility, fine-tuning, and existence favor divine mind; Krauss counters with physical explanations, selection effects, and demanding evidential standards.",
+    "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
         "name": "Theistic explanation",
@@ -7809,6 +7948,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=nbEyhU-L3iE",
     "motion": "On balance, is religion a force for good in the world?",
     "summary": "Blair emphasized faith-inspired service, reconciliation, pluralism, and purpose; Hitchens countered with doctrinal harm, sacred conflict, secular alternatives, and stricter causal comparison.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "Religion is a force for good",
@@ -7903,6 +8043,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=JZRcYaAYWg4",
     "motion": "Is the Catholic Church, considered as an institution and global social force, a force for good in the world?",
     "summary": "Onaiyekan and Widdecombe emphasize global welfare, spiritual hope, and reform within a fallible institution; Fry and Hitchens argue that those benefits do not outweigh institutional abuse, sexual control, public-health obstruction, and unaccountable authority.",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "The Church is a force for good",
@@ -7948,6 +8089,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=zruhc7XqSxo",
     "motion": "Can the nature and ultimate origins of human beings be explained by evolutionary naturalism, or does a theistic account add indispensable explanation?",
     "summary": "Williams presents humanity as the universe becoming linguistically and morally self-aware within a divine relation; Dawkins argues that natural selection explains apparent purpose without design; Kenny presses both accounts from an explicitly agnostic philosophical position.",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Theistic and purposive account",
@@ -7993,6 +8135,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=SyhMlwsQuqc",
     "motion": "Does theism offer a better overall explanation of reality than naturalism?",
     "summary": "Pearce develops theistic grounding and experiential arguments, while Oppy presses symmetrical naturalistic alternatives, epistemic calibration, and religious diversity as stronger comparative explanations.",
+    "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
         "name": "Theism",
@@ -8038,6 +8181,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=foLI3KGbMnk",
     "motion": "Are the canonical Gospels historically reliable accounts of Jesus' life, teaching, death, and resurrection?",
     "summary": "Williams defended cumulative contextual and theological continuity, while Ehrman more successfully separated informed settings from reliable events, highlighting provenance gaps and narrative conflicts.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "The Gospels are historically reliable",
@@ -8083,6 +8227,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=WRHjZCKRIu4",
     "motion": "Can textual criticism recover the wording of the original New Testament with enough confidence for the text to be trusted?",
     "summary": "Wallace defended probabilistic textual recovery through abundant branching witnesses; Ehrman conceded broad continuity but showed that reconstructing their ancestor does not establish autographic identity.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "The text is substantially recoverable",
@@ -8131,6 +8276,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=xTCPigOQabY",
     "motion": "Were the canonical Gospels written by, or under the authority of, Matthew, Mark, Luke, and John?",
     "summary": "Licona defended traditional Gospel authority through convergent testimony and collaboration; Ehrman prevailed by separating compatibility and reliability from identity-specific authorship evidence.",
+    "topicCategory": "scripture-jesus-resurrection",
     "sides": {
       "pro": {
         "name": "Traditional authorship",
@@ -8176,6 +8322,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=MW5_nJYSKyk",
     "motion": "Does the historical evidence make Jesus' bodily resurrection the best explanation of what followed his crucifixion?",
     "summary": "Craig defended resurrection through cumulative explanatory comparison; Ehrman challenged source reliability, supernatural inference, and whether historical standards can distinguish bodily resurrection from alternatives.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Historical evidence supports resurrection",
@@ -8221,6 +8368,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=eoiScvG3Emo",
     "motion": "Does the historical evidence establish that Jesus physically rose from the dead?",
     "summary": "Licona presented a cumulative bodily-resurrection inference; Ally narrowly prevailed by sustaining uncertainty about death, physical appearances, empty-tomb implications, and narrative development.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Jesus bodily rose from the dead",
@@ -8266,6 +8414,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Ksa8uGe21rw",
     "motion": "Does the historical evidence make Jesus' bodily resurrection a rational conclusion?",
     "summary": "Habermas assembled convergent historical and bodily evidence, while Flew pressed source limitations, natural underdetermination, and the need for justified theological priors.",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Resurrection is the best explanation",
@@ -8314,7 +8463,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=ee9c45dSHiY",
     "motion": "Which account of sin and salvation—the Qur'an's direct forgiveness and moral accounting or the Bible's grace through Christ's atonement—is more coherent and scripturally grounded?",
     "summary": "White grounds forgiveness in Christ’s law-satisfying atonement; Ally defends direct, equitable mercy and accountable deeds while challenging inherited guilt and biblical continuity.",
-    "topicCategory": "scripture-jesus-resurrection",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Salvation through Christ's atonement",
@@ -8360,6 +8509,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=2WrywAaDvvw",
     "motion": "Can stance-independent moral facts genuinely vindicate normative objectivity by settling what agents should do?",
     "summary": "Enoch grounds moral objectivity in stance-independent facts and ordinary deliberation, while confronting rival-package, noncognitivist, and reflective-anomaly challenges to action guidance.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Robust moral realism vindicates objectivity",
@@ -8405,6 +8555,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=6Uw9szL-3MA",
     "motion": "Are there stance-independent moral facts that people can know and that supply genuinely categorical reasons for action?",
     "summary": "Enoch and Sampson defend robust moral realism through Moorean cases and rational reflection; Loeb and Lutz argue that desire-relative reasons and a naturalistic explanation of moral experience make such facts unnecessary.",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Stance-independent moral facts exist",
@@ -8453,6 +8604,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=AxhA7S3q49o",
     "motion": "Does the natural human capacity for reasons-responsive control justify free will, moral desert, and responsibility practices?",
     "summary": "Caruso’s carefully delimited desert skepticism and forward-looking alternatives outperform Dennett’s practical compatibilism, whose institutional strengths leave ultimate sourcehood and desert’s independent role unresolved.",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "Compatibilist free will is worth wanting",
@@ -8498,7 +8650,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=FjAYvhv1-Lg",
     "motion": "Do people sometimes control which of multiple genuinely available actions occurs, and does that freedom justify responsibility?",
     "summary": "Huemer challenges the leap from pervasive causal influence to determination, while Sapolsky explains mechanistic change and presses a humane rejection of retributive desert.",
-    "topicCategory": "mind-consciousness-free-will",
+    "topicCategory": "free-will-determinism",
     "sides": {
       "pro": {
         "name": "Libertarian free will exists and matters",
@@ -8593,6 +8745,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=X4YVgM2HPMk",
     "motion": "Is consciousness the ontological foundation of reality rather than an emergent property of matter?",
     "summary": "Kastrup grounds reality in consciousness, while Blackmore argues that neutral representation better exposes idealism's unresolved structure, boundaries, and causal differentiation.",
+    "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
         "name": "Consciousness is fundamental",
@@ -8638,7 +8791,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=3DHvNRK452c",
     "motion": "Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
     "summary": "Tour pressed unresolved cellular thresholds and evidential overstatement; Cronin defended experimentally testable chemical organization while carefully conceding uncertainty about historical sequence.",
-    "topicCategory": "science-design",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Claims of progress are overstated",
@@ -8730,7 +8883,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=2CnZ3n8I5b8",
     "motion": "Are natural processes sufficient to explain the origin of life and the complexity of the cell?",
     "summary": "Ruse defended cumulative chemical and evolutionary explanations, while Rana pressed chemical constraints, cellular integration, testability, and positive indicators of intelligent agency.",
-    "topicCategory": "science-design",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Natural processes are sufficient",
@@ -8776,7 +8929,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=yJgr38h_3H0",
     "motion": "Has science come meaningfully close to explaining how life first arose from nonliving chemistry?",
     "summary": "Tour demands an integrated chemical pathway to first life, while Swamidass defends limited clues, probabilistic uncertainty, empirical testing, and scientific agnosticism.",
-    "topicCategory": "science-design",
+    "topicCategory": "evolution-origins-life",
     "sides": {
       "pro": {
         "name": "Science is nowhere close",
@@ -9450,7 +9603,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=udxloyjbtIE",
     "motion": "What best explains the poetry of reality: God or science?",
     "summary": "Scientific naturalism wins by one point: Dawkins leads on consciousness, creative by-products, and evolutionary suffering, while Williams answers more precisely on allegorical Genesis, noncompetitive divine action, and classical simplicity.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -9500,7 +9653,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=8wBtFNj_o5k",
     "motion": "Do archetypes and religious narratives convey truths that factual naturalism misses?",
     "summary": "Scientific naturalism wins 86–74 by separating symbolic usefulness from factual warrant, demanding traceable evidence, and explaining cultural transmission naturally, while symbolic realism remains strongest on narrative prioritization and action-guiding compression.",
-    "topicCategory": "religion-society-public-reason",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Symbolic religious realism",
@@ -9547,7 +9700,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=PZZkFfvfHb0",
     "motion": "Is divine hiddenness compatible with Christianity’s claim that God is perfectly loving?",
     "summary": "Tyler Vela’s hiddenness critique wins by pressing loving availability, avoidable world design, and less-hidden alternatives more consistently than Michael Jones establishes sanctification, soul formation, and individualized disclosure.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Divine-hiddenness critique",
@@ -9597,7 +9750,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=1Vc1AiY_0Ts",
     "motion": "Does divine hiddenness make the existence of a perfectly loving God unlikely?",
     "summary": "Alex O'Connor prevailed by separating public arguments from personally accessible revelation and pressing nonresistant seeking and delayed disclosure, while Lukas Ruegger countered with cumulative evidence, fallible introspection, individualized pathways, and delay's possible goods.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Divine-hiddenness critique",
@@ -9647,7 +9800,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Ed8Gb7zaLIM",
     "motion": "Does divine hiddenness provide significant evidence against a perfectly loving God?",
     "summary": "Schmid won by arguing that nonculpable nonbelief, demographic clustering, and silence amid tragedy fit naturalism better, while Paterson's temporary-redemption defenses remained comparatively under-supported.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Evidential divine-hiddenness critique",
@@ -9694,7 +9847,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=djyjKuN9o98",
     "motion": "Does divine hiddenness provide good evidence against God's existence?",
     "summary": "Baker-Hytch narrowly prevailed by probabilistically integrating hiddenness with relational and cumulative evidence, while Baggini pressed cultural contingency, geographic luck, and experiential mediation.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "evil-suffering-hiddenness",
     "sides": {
       "pro": {
         "name": "Atheistic hiddenness critique",
@@ -9741,7 +9894,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=akd6qzFYzX8",
     "motion": "Did Jesus rise from the dead?",
     "summary": "Craig organized burial, appearances, and belief into a cumulative resurrection case, while Carrier challenged Gospel independence and preserved ordinary alternatives; their contrasting strengths produced a tie.",
-    "topicCategory": "scripture-jesus-resurrection",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Historical resurrection case",
@@ -9837,7 +9990,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=CsqVRauiAn4",
     "motion": "Do religious patterns disclose enduring truths that should guide contemporary life?",
     "summary": "Woodford won 78–74 by combining charitable preservation of religious insights with stronger contextual scrutiny, cross-tradition comparison, and concrete ethical challenges; Pageau’s embedded-reform case landed powerfully but left key metaphysical and practical warrants incomplete.",
-    "topicCategory": "religion-society-public-reason",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Participatory religious patterns as enduring truth",
@@ -9886,7 +10039,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=dFYrfKHSV2k",
     "motion": "Does the available evidence warrant Christian belief?",
     "summary": "Alex O'Connor wins 84-74 by pressing suffering and hiddenness more precisely than Trent Horn warrants Christianity's cumulative explanatory bridges.",
-    "topicCategory": "religion-society-public-reason",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Cumulative Christian evidential case",
@@ -9935,7 +10088,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=OSBaAT6WPmk",
     "motion": "Does religion provide justified knowledge and meaning beyond science?",
     "summary": "Sam Harris wins for scientific naturalism and evidential skepticism, defeating David Wolpe’s religious meaning and transcendent faith position by the locked 83-68 score.",
-    "topicCategory": "religion-society-public-reason",
+    "topicCategory": "meaning-purpose",
     "sides": {
       "pro": {
         "name": "Religious meaning and transcendent faith",
@@ -9984,7 +10137,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Zp4xlI6-dlY",
     "motion": "Does the available evidence make religious belief an obligation?",
     "summary": "O’Connor’s skeptical case won 84–69, chiefly by exposing underdetermination, hiddenness, and suffering while Douthat offered a substantive but incompletely warranted cumulative case.",
-    "topicCategory": "religion-society-public-reason",
+    "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
         "name": "Religious belief as rational obligation",
@@ -10033,7 +10186,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=MNZaLudTSgg",
     "motion": "Has New Atheism failed?",
     "summary": "Con wins 83–73 by separating atheism from New Atheism’s defects and decisively exposing Pro’s unresolved covenant, slavery, and Leviticus problems.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
         "name": "New Atheism has failed",
@@ -10129,7 +10282,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=rEXymLAqqIs",
     "motion": "Do personal transformation and Christianity's cultural value justify belief that Christianity is true?",
     "summary": "Hirsi Ali established sincere transformation and cultural attraction, but O’Connor decisively separated those benefits from evidence for Christianity’s supernatural truth claims.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christian belief is personally and rationally justified",
@@ -10182,7 +10335,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=89cnR4pU_7k",
     "motion": "Is stance-independent moral realism better supported than moral anti-realism?",
     "summary": "Huemer’s intuitive and convergence-based realism met Loeb’s semantic, explanatory, and practical alternatives; mixed evidence narrowly left anti-realism at least equally plausible.",
-    "topicCategory": "morality-ethics",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Stance-independent moral realism is better supported",
@@ -10288,7 +10441,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=SQ3EU58AzFs",
     "motion": "Does scientific understanding leave rational grounds for belief in God?",
     "summary": "Collins preserves rational space through compatibility and cumulative signposts, but Dawkins wins by stronger natural explanations and sharper challenges concerning redundancy, suffering, and selective miracles.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "science-design",
     "sides": {
       "pro": {
         "name": "Scientific understanding leaves rational grounds for belief in God",
@@ -10447,7 +10600,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=Zhm5_AXcqcA",
     "motion": "Is the doctrine of purgatory true?",
     "summary": "White wins by one point because his contextual exegesis and Romans argument slightly outweigh Horn's definitional clarification, purification syllogism, and historical continuity case.",
-    "topicCategory": "scripture-jesus-resurrection",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "The doctrine of purgatory is true",
@@ -10803,7 +10956,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=bLdsRfkkTf4",
     "motion": "Is Christianity a rational explanation of reality?",
     "summary": "Dawkins wins by pressing evidence, complexity, Christian specificity, and selective providence more successfully, while McGrath offers a thoughtful but incompletely warranted integrative worldview.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity is a rational explanation of reality",
@@ -10956,7 +11109,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=EHIIgQdA2e8",
     "motion": "Is moral realism true?",
     "summary": "Sampson narrowly prevails by defining a limited realism and defending its intelligibility, while Bush supplies powerful underdetermination and genealogy challenges that remain evidentially incomplete.",
-    "topicCategory": "morality-ethics",
+    "topicCategory": "moral-realism-objectivity",
     "sides": {
       "pro": {
         "name": "Non-naturalist moral realism is true",
@@ -11006,7 +11159,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=MP05c_EvgZ0",
     "motion": "Can historians prove that Jesus rose from the dead?",
     "summary": "Ehrman prevailed 79–78 by narrowly pairing strong source criticism and public-evidence burdens against Licona’s comparatively sophisticated but incompletely warranted resurrection inference.",
-    "topicCategory": "scripture-jesus-resurrection",
+    "topicCategory": "resurrection-miracles",
     "sides": {
       "pro": {
         "name": "Historians can establish Jesus's resurrection as the best explanation",
@@ -11053,7 +11206,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=d0S_Ul-kRwQ",
     "motion": "Is Christianity rational?",
     "summary": "Knechtle offered cumulative historical, moral, and experiential support for Christianity; Dillahunty prevailed by demanding stronger links from reports and effects to supernatural conclusions.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity is rational",
@@ -11300,7 +11453,7 @@ export const debateSummaries = [
     "youtubeUrl": "https://www.youtube.com/watch?v=1MwqFMO0Lqw",
     "motion": "Is Christianity true?",
     "summary": "Slick excelled on foundational challenges and expert-reference precision; Aron prevailed on belief versus truth and explanatory accountability, producing an exact overall tie.",
-    "topicCategory": "god-theism-atheism",
+    "topicCategory": "christian-belief-doctrine",
     "sides": {
       "pro": {
         "name": "Christianity is true and the biblical God provides the necessary foundation for reason and knowledge",
