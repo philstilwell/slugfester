@@ -47,7 +47,7 @@ const landingAssetVersion = "20260902-reassessment-schedule-v4";
 const interlocutorAssetVersion = "20260902-rubric-move-reasons-v3";
 const rankingsAssetVersion = "20260902-ranking-gloves-v4";
 const debateAssetVersion = "20260902-rubric-move-reasons-v3";
-const backendAssetVersion = "20260903-rubric-chart-colors-v2";
+const backendAssetVersion = "20260903-rubric-chart-colors-v3";
 
 function escapeHtml(value = "") {
   return String(value)
