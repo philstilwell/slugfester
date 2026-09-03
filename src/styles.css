@@ -203,9 +203,9 @@ a {
 }
 
 .external-sites {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
   padding: 4px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 247, 0.94));
@@ -217,92 +217,79 @@ a {
 .external-sites-label {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   min-height: 28px;
   padding: 5px 10px;
   color: #ffffff;
   background: var(--ink);
+  border: 0;
   border-radius: 999px;
-  font-size: 0.68rem;
+  font-family: inherit;
+  font-size: 0.875rem;
   font-weight: 850;
   letter-spacing: 0;
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.external-sites-label:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.external-sites-label[aria-expanded="true"] .external-sites-chevron {
+  transform: rotate(180deg);
+}
+
+.external-sites-links[hidden] {
+  display: none;
 }
 
 .external-sites-links {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.external-site-item {
-  position: relative;
-  display: inline-flex;
-}
-
-.site-header nav .external-sites-links a {
-  padding: 6px 9px;
-  border-radius: 999px;
-  line-height: 1;
-}
-
-.external-sites-links a:hover {
-  background: rgba(47, 143, 133, 0.12);
-}
-
-.external-site-popover {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   right: 0;
   z-index: 40;
   display: grid;
-  gap: 5px;
-  width: 236px;
-  padding: 12px;
-  color: #30413e;
-  background: rgba(255, 255, 255, 0.98);
+  width: min(19rem, calc(100vw - 2rem));
+  padding: 6px;
+  background: var(--surface);
   border: 1px solid rgba(47, 143, 133, 0.24);
   border-radius: 8px;
   box-shadow: 0 18px 42px rgba(27, 43, 41, 0.18);
-  font-size: 0.82rem;
-  font-weight: 650;
-  line-height: 1.35;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-4px);
-  transition:
-    opacity 140ms ease,
-    transform 140ms ease,
-    visibility 140ms ease;
-  visibility: hidden;
 }
 
-.external-site-popover::before {
-  position: absolute;
-  top: -6px;
-  right: 18px;
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.98);
-  border-top: 1px solid rgba(47, 143, 133, 0.24);
-  border-left: 1px solid rgba(47, 143, 133, 0.24);
-  content: "";
-  transform: rotate(45deg);
+.site-header nav .external-sites-links a {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  line-height: 1.4;
 }
 
-.external-site-popover strong {
+.external-sites-links a + a {
+  border-top: 1px solid var(--line);
+}
+
+.external-sites-links strong {
   color: var(--ink);
-  font-size: 0.76rem;
+  font-size: 0.94rem;
   font-weight: 850;
-  text-transform: uppercase;
 }
 
-.external-site-item:hover .external-site-popover,
-.external-site-item:focus-within .external-site-popover {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
+.external-site-description {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.external-sites-links a:hover,
+.external-sites-links a:focus-visible {
+  background: var(--teal-soft);
+  outline: 2px solid var(--teal);
+  outline-offset: -2px;
 }
 
 .site-header nav a:not(.primary-nav-link):hover,
