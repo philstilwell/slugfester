@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 8,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-gospel-transmission-reliability.description",
+    "moveProse.pro-gospel-transmission-reliability.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-gospel-transmission-reliability",
+    "sectionId": "scripture-testimony",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 108,
+      "endEvent": 125,
+      "startMs": 227040,
+      "endMs": 265020,
+      "excerpt": "uh the reliability of the gospels I think are pretty obvious you got the manuscripts and the dates 5800 manuscripts you get the dates within 15 years probably even closer to the events themselves you have the church fathers you take away all the manuscripts themselves you still have the church fathers counting up for over 1 million New Testament quotes I mean that's that's pretty impressive you know there was never a time when any one man or group of men had control over the text of the New Testament there was never this Christian utman all claims that there were changes in theology or doctrine or simply without Merit"
+    },
+    "quoteEligibleExactSpans": [
+      "over 1 million New Testament quotes",
+      "one man or group of men had control"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Knechtle's source-locked opening statement.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "pro-subsidiary-gospel-reliability",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Numerous manuscripts, early dating, patristic quotations, and decentralized transmission make the Gospel text reliable against claims of coordinated alteration.",
+    "inventoryRationale": "The reliability of the textual witnesses is a necessary support for Knechtle's historical case.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-gospel-transmission-reliability",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "Numerous distributed witnesses can resist a coordinated-alteration theory, but textual preservation does not by itself support the broader, unqualified conclusion that the Gospel accounts are historically reliable."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The manuscript and patristic-quotation counts are asserted without source analysis, while the claimed dating within fifteen years is ambiguous and independence or textual variation is not examined."
+          },
+          "responsiveness": {
+            "value": 79,
+            "rationale": "The constructive squarely supplies textual-transmission support needed by the historical case and anticipates alteration objections, though it does not address whether preserved reports are accurate reports."
+          },
+          "relevanceBurden": {
+            "value": 80,
+            "rationale": "Decentralized transmission and abundant textual witnesses materially advance the locked Gospel-reliability bridge, but leave the crucial step from stable text to trustworthy event testimony incomplete."
+          },
+          "precisionClarity": {
+            "value": 57,
+            "rationale": "The numbers and anti-control thesis are understandable, but the object of 'dates within 15 years' is unclear and 'reliability' shifts between textual stability and historical accuracy."
+          },
+          "calibrationCharity": {
+            "value": 53,
+            "rationale": "Calling reliability obvious and contrary alteration claims wholly meritless is substantially stronger than the compressed manuscript-count and decentralization argument presented in the span."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-gospel-transmission-reliability",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "Numerous witnesses, patristic quotation, and decentralized custody can resist a coordinated-alteration hypothesis, but the move slides from textual preservation to broader Gospel reliability without stating that bridge."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "It offers checkable quantities such as 5,800 manuscripts and over one million patristic quotations, but does not source them, clarify the claimed fifteen-year dating, or address dependence and manuscript age."
+          },
+          "responsiveness": {
+            "value": 81,
+            "rationale": "The constructive squarely anticipates doubts about altered Gospel texts by presenting manuscript abundance, early dates, church-father quotation, and distributed control."
+          },
+          "relevanceBurden": {
+            "value": 84,
+            "rationale": "Textual transmission is directly material to the locked Gospel-reliability burden and supplies necessary support for later historical use of Gospel testimony."
+          },
+          "precisionClarity": {
+            "value": 67,
+            "rationale": "The main preservation argument is understandable, but 'dates within 15 years' lacks a clear referent and 'reliability' is not separated into textual and historical senses."
+          },
+          "calibrationCharity": {
+            "value": 48,
+            "rationale": "Calling reliability obvious and all theology-or-doctrine change claims meritless substantially overstates what the listed transmission considerations alone establish."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 69,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 57,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 80,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 82,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 67,
+        "rationale": "The main preservation argument is understandable, but 'dates within 15 years' lacks a clear referent and 'reliability' is not separated into textual and historical senses.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option b better reflects that the preservation thesis remains understandable despite the unclear date referent and the unresolved distinction between textual and historical reliability."
+      },
+      "calibrationCharity": {
+        "value": 51,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 69,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Numerous manuscripts early dating patristic quotations and decentralized transmission make the Gospel text reliable against claims of coordinated alteration within the debate’s dispute over whether Christianity possesses rational.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that Decentralized transmission and abundant textual witnesses materially advance the locked Gospel-reliability bridge, making the move’s inferential contribution and assessable. Principal limitation: Its calibration and charity remains constrained because Calling reliability obvious and contrary alteration claims wholly meritless is substantially stronger, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why numerous manuscripts early dating patristic quotations and decentralized transmission make the gospel text reliable against claims of coordinated, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 69 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-08/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-08/schema.json",
+    "shape": {
+      "moveId": "pro-gospel-transmission-reliability",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

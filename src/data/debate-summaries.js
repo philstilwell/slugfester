@@ -11041,5 +11041,52 @@ export const debateSummaries = [
         "title": "Miracle Probability and the Motion"
       }
     ]
+  },
+  {
+    "id": "knechtle-dillahunty-christianity-rational-2023",
+    "number": "238",
+    "title": "Stuart Knechtle vs Matt Dillahunty: Is Christianity Rational?",
+    "year": 2023,
+    "label": "Christianity and rational warrant",
+    "date": "2026-09-02",
+    "duration": "2 hr 30 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=d0S_Ul-kRwQ",
+    "motion": "Is Christianity rational?",
+    "summary": "Knechtle offered cumulative historical, moral, and experiential support for Christianity; Dillahunty prevailed by demanding stronger links from reports and effects to supernatural conclusions.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christianity is rational",
+        "speaker": "Stuart Knechtle",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christianity lacks rational warrant",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 68,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Rationality, evidence, and epistemic warrant"
+      },
+      {
+        "title": "Gospel testimony and textual reliability"
+      },
+      {
+        "title": "Resurrection and supernatural causation"
+      },
+      {
+        "title": "Morality, social influence, hope, and experiential fit"
+      },
+      {
+        "title": "Divine character, love, wrath, and punishment"
+      }
+    ]
   }
 ];

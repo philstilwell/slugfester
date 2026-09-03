@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 6,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-jesus-claims-divinity.description",
+    "moveProse.pro-jesus-claims-divinity.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-jesus-claims-divinity",
+    "sectionId": "scripture-testimony",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 13,
+      "endEvent": 23,
+      "startMs": 28680,
+      "endMs": 53340,
+      "excerpt": "claims were there you certainly have it throughout the gospels you definitely have it in John with the seven I am statements he makes but then he also receives worship he doesn't reject worship like the apostles do at times like Paul did when he tore his clothes or like when the Angels even were rejecting worship he also claimed to forgive sins and so throughout he's pretty consistent in the claim to be God"
+    },
+    "quoteEligibleExactSpans": [
+      "he also receives worship",
+      "he also claimed to forgive sins",
+      "pretty consistent in the claim to be God"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Knechtle's source-locked opening statement.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "pro-subsidiary-divine-character",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "The Gospel presentation of Jesus consistently attributes divine claims and prerogatives to him.",
+    "inventoryRationale": "This supplies an initial premise connecting Christianity's leader to the religion's divine claims.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-jesus-claims-divinity",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Receiving worship and claiming authority to forgive sins form an intelligible cumulative route to the narrower conclusion that the Gospels present Jesus as divine."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The move identifies John's seven sayings, accepted worship, and forgiveness claims, but supplies no passages and gives little support for the broader claim of consistency throughout the Gospels."
+          },
+          "responsiveness": {
+            "value": 78,
+            "rationale": "As an opening constructive, it directly addresses Christianity's identity claims, though it does not yet connect those reported claims to the full rational-warrant standard in the motion."
+          },
+          "relevanceBurden": {
+            "value": 74,
+            "rationale": "Establishing that Christianity's central figure is presented with divine prerogatives advances the locked divine-character bridge, but presentation alone does not establish truth or rational warrant."
+          },
+          "precisionClarity": {
+            "value": 77,
+            "rationale": "The examples and intended conclusion are easy to reconstruct, although 'claim to be God' compresses distinctions between explicit identity claims and conduct interpreted as divine prerogative."
+          },
+          "calibrationCharity": {
+            "value": 71,
+            "rationale": "The cumulative phrasing is reasonably measured, but calling the claim consistent throughout overstates what the brief examples demonstrate and leaves rival readings unacknowledged."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-jesus-claims-divinity",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Receiving worship, unlike apostles and angels, and claiming authority to forgive sins form an intelligible route to the stated Gospel portrayal of divinity, though the final identification is somewhat compressed."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The move names concrete textual features, including John's I-am statements, accepted worship, and forgiveness claims, but supplies no passages or examination of whether those features uniquely establish divinity."
+          },
+          "responsiveness": {
+            "value": 83,
+            "rationale": "As an opening constructive, it directly addresses the assigned case by explaining what within the Gospel presentation supports treating Jesus as divine."
+          },
+          "relevanceBurden": {
+            "value": 78,
+            "rationale": "Establishing that the Gospels present Jesus with divine prerogatives materially supports Christianity's divine-character route, while leaving the truth and rational warrant of that presentation for later argument."
+          },
+          "precisionClarity": {
+            "value": 79,
+            "rationale": "The worship and forgiveness examples make the claim readily reconstructable, but 'throughout the gospels' and 'pretty consistent' leave the textual scope imprecise."
+          },
+          "calibrationCharity": {
+            "value": 72,
+            "rationale": "The conclusion is framed as consistency within the Gospel portrayal, yet the broad claim across the Gospels is more confident than the briefly presented examples warrant."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 82,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 69,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 81,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 76,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 72,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 77,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "The Gospel presentation of Jesus consistently attributes divine claims and prerogatives to him within the debate’s dispute over whether Christianity possesses rational warrant.",
+    "critique": "Strongest feature: Its logical coherence is best captured by the assessment that Receiving worship and claiming authority to forgive sins form an intelligible cumulative, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The move identifies John's seven sayings accepted worship and forgiveness claims but, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why the gospel presentation of jesus consistently attributes divine claims and prerogatives to him, answer the strongest competing explanation, and show decisive contact with the motion-level rational-warrant standard under a consistently applied evidential standard. Locked score: 77 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-06/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-06/schema.json",
+    "shape": {
+      "moveId": "pro-jesus-claims-divinity",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

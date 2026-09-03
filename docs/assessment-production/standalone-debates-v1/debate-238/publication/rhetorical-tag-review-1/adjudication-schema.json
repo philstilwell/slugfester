@@ -1,0 +1,1342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "adjudicatorRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "resolutions",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0-rhetorical-tag-adjudication-output"
+    },
+    "protocolId": {
+      "const": "assessment-production-standalone-debate-v1"
+    },
+    "status": {
+      "const": "complete-and-schema-valid"
+    },
+    "debateNumber": {
+      "const": "238"
+    },
+    "debateId": {
+      "const": "knechtle-dillahunty-christianity-rational-2023"
+    },
+    "adjudicatorRole": {
+      "const": "fresh-anonymous-candidate-adjudicator"
+    },
+    "assessmentModel": {
+      "const": "5.6 Sol"
+    },
+    "reasoningEffort": {
+      "const": "high"
+    },
+    "resolutions": {
+      "type": "array",
+      "minItems": 42,
+      "maxItems": 42,
+      "prefixItems": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-limited-evidence-preserves-free-trust|fallacy|Special pleading"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-limited-evidence-preserves-free-trust|bias|Scope neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-multifaceted-return-to-faith|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-multifaceted-return-to-faith|bias|Subjective validation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-communicative-god-leaves-burden-unmet|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-evidentiary-warrant-can-differ-by-person|bias|Subjective validation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-jesus-claims-divinity|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-report-cannot-establish-forgiveness|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-gospel-transmission-reliability|fallacy|Appeal to authority"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-gospel-transmission-reliability|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-resurrection-cumulative-indicia|bias|Base-rate neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-resurrection-cumulative-indicia|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-supernatural-claims-undemonstrated|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-supernatural-claims-undemonstrated|bias|Ambiguity effect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-six-source-resurrection-reply|bias|Base-rate neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-scriptural-story-is-not-miracle-evidence|fallacy|Special pleading"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-scriptural-story-is-not-miracle-evidence|bias|Ambiguity effect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-christianity-explains-altruism-hope|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-christianity-explains-altruism-hope|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-christianity-explains-altruism-hope|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-natural-account-of-cooperation|fallacy|Appeal to authority"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-jesus-transformed-roman-morality|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-jesus-transformed-roman-morality|bias|Base-rate neglect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-jesus-transformed-roman-morality|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-religious-desire-does-not-show-truth|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-religious-desire-does-not-show-truth|bias|Ambiguity effect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "pro-love-and-wrath-are-coherent|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-biblical-violence-challenges-character|bias|Belief bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-biblical-violence-challenges-character|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-forgiveness-and-hell-undermine-justice|fallacy|Begging the question"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "con-forgiveness-and-hell-undermine-justice|bias|Belief bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-1|fallacy|Equivocation"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-2|fallacy|Appeal to authority"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-3|fallacy|Argument from ignorance"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-3|fallacy|Red herring"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-pro-blunder-3|bias|Confirmation bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-1|fallacy|Special pleading"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-1|bias|Ambiguity effect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-2|fallacy|Special pleading"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-2|bias|Ambiguity effect"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-3|fallacy|Begging the question"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidateKey",
+            "decision",
+            "context",
+            "rationale"
+          ],
+          "properties": {
+            "candidateKey": {
+              "const": "overall-con-blunder-3|bias|Belief bias"
+            },
+            "decision": {
+              "type": "string",
+              "enum": [
+                "accepted",
+                "rejected"
+              ]
+            },
+            "context": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "resolvedEveryUnionCandidateInPacketOrder",
+        "consideredOneReviewerCandidatesFully",
+        "usedExactCatalogDefinitions",
+        "acceptedOnlyMaterialDefectsRepresentedInSourceCritiqueOrBlunder",
+        "fallaciesAndBiasesReceivedIdenticalScrutiny",
+        "introducedNoNewLabels"
+      ],
+      "properties": {
+        "resolvedEveryUnionCandidateInPacketOrder": {
+          "const": true
+        },
+        "consideredOneReviewerCandidatesFully": {
+          "const": true
+        },
+        "usedExactCatalogDefinitions": {
+          "const": true
+        },
+        "acceptedOnlyMaterialDefectsRepresentedInSourceCritiqueOrBlunder": {
+          "const": true
+        },
+        "fallaciesAndBiasesReceivedIdenticalScrutiny": {
+          "const": true
+        },
+        "introducedNoNewLabels": {
+          "const": true
+        }
+      }
+    }
+  }
+}

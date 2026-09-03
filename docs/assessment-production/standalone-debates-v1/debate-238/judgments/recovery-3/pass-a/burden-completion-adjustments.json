@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-recovery-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "pass": "pass-a",
+  "shardId": "burden-completion-adjustments",
+  "shardKind": "burden-adjustments",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "inventorySha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab",
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "audit": {
+    "completeLockedInventoryReviewed": true,
+    "requestedFieldsOnly": true,
+    "ratingsOnlyNoCalculatedScores": true,
+    "publicationBlind": true,
+    "scoreBlind": true
+  },
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "The inventory assigns the pro case to pro-motion-cumulative-warrant through pro-limited-evidence-preserves-free-trust and pro-multifaceted-return-to-faith, while its central support is separately represented by pro-resurrection-cumulative-indicia, pro-six-source-resurrection-reply, and pro-christianity-explains-altruism-hope. No distinct debate-wide completion consequence remains outside those scored moves.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [
+          "pro-motion-cumulative-warrant",
+          "pro-central-resurrection-case",
+          "pro-central-experiential-fit"
+        ],
+        "completionCriterion": "A nonzero adjustment would require a distinct debate-wide completion or failure consequence for the pro motion burden that is not already represented in its linked moves.",
+        "relatedMoveIds": [
+          "pro-limited-evidence-preserves-free-trust",
+          "pro-multifaceted-return-to-faith",
+          "pro-resurrection-cumulative-indicia",
+          "pro-six-source-resurrection-reply",
+          "pro-christianity-explains-altruism-hope"
+        ],
+        "distinctConsequence": "None; the inventory exposes the pro side's motion-level, resurrection, and experiential burden completion through the listed moves.",
+        "alreadyCapturedBy": [
+          "relevanceBurden",
+          "evidenceWarrant",
+          "responsiveness"
+        ],
+        "counterfactual": "Absent those linked move assessments, the cumulative completion of the pro motion burden could require separate treatment; because they are present, an additional adjustment would duplicate capture."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "The inventory assigns the con motion burden to con-motion-warrant-unmet through con-communicative-god-leaves-burden-unmet, with con-rationality-requires-reality-consistency defining the reality test and con-supernatural-claims-undemonstrated plus con-observed-effect-needs-causal-link addressing the supernatural gap. No separate debate-wide completion consequence is left unscored.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [
+          "con-motion-warrant-unmet",
+          "con-central-reality-test",
+          "con-central-supernatural-gap"
+        ],
+        "completionCriterion": "A nonzero adjustment would require a distinct debate-wide completion or failure consequence for the con motion burden that is not already represented in its linked moves.",
+        "relatedMoveIds": [
+          "con-communicative-god-leaves-burden-unmet",
+          "con-rationality-requires-reality-consistency",
+          "con-supernatural-claims-undemonstrated",
+          "con-observed-effect-needs-causal-link",
+          "con-social-benefit-does-not-warrant-supernatural-core"
+        ],
+        "distinctConsequence": "None; the inventory directly represents the con side's motion-level reality-test and supernatural-causation burden through the listed moves.",
+        "alreadyCapturedBy": [
+          "relevanceBurden",
+          "evidenceWarrant",
+          "responsiveness"
+        ],
+        "counterfactual": "If the inventory lacked move-level treatment of the motion-level warrant claim and its central evidential links, separate burden completion treatment might be needed; those moves are present, so an additional adjustment would duplicate capture."
+      }
+    }
+  }
+}

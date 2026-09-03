@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.1-standalone-adjudication-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "valid-and-frozen-after-built-in-recovery",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "freshEphemeralContext": true,
+    "passIdentitiesUnavailable": true,
+    "userConfigurationDisabled": true,
+    "userRulesDisabled": true,
+    "apiKeysRemoved": true,
+    "readOnlyInputBoundary": true
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/packet.json",
+    "sha256": "fe05c5eadddd5172b993435617df80eefa998e813f0442d8b8b0f37fca48e5a4",
+    "bytes": 62859
+  },
+  "priorFailures": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/failure-1.json",
+      "sha256": "33fe8fa1183f4916d59595a3a9357e6206f333509a05cb877b8b1d7ac29d3037",
+      "bytes": 1342
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-1/execution-incomplete.json",
+      "sha256": "368a8e2f053ceedcb3c6bb24e09f407c747bc4416655259b7bbd99c29c610284",
+      "bytes": 1209
+    }
+  ],
+  "recoveryPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-2/plan.json",
+    "sha256": "51b8135786a1d60ad3316c2b45707c36fac5c20ac7d23046f931c14ab672044b",
+    "bytes": 3326
+  },
+  "recoveryExecution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-2/execution.json",
+    "sha256": "86596f02b17ed5321f1954fb30de63bfca35135f4a6a3821e263500b1d35bba3",
+    "bytes": 1318
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/output.json",
+    "sha256": "8beac1e51db29cd6c5979b4f89f54e40090f177eef12797c217a88e60c37ff32",
+    "bytes": 6030
+  },
+  "completedAt": "2026-09-02T23:55:37.642Z",
+  "monolithicAttempts": 1,
+  "commandLineRecoveryShardAttempts": 1,
+  "builtInRecoveryAttempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "validation": {
+    "disputesResolved": 16,
+    "allExistingOptions": true,
+    "currentValidatorPassed": true
+  }
+}

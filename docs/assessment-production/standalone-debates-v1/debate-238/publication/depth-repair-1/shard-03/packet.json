@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 3,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-multifaceted-return-to-faith.description",
+    "moveProse.pro-multifaceted-return-to-faith.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-multifaceted-return-to-faith",
+    "sectionId": "epistemic-warrant",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 1971,
+      "endEvent": 1977,
+      "startMs": 4388580,
+      "endMs": 4408560,
+      "excerpt": "and so for me coming back to the faith and ultimately deciding against hedonism and the bankruptcy behind it was what I've given you in terms of all of a sudden I saw all this evidence"
+    },
+    "quoteEligibleExactSpans": [
+      "coming back to the faith",
+      "deciding against hedonism and the bankruptcy behind it",
+      "I saw all this evidence"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Knechtle narrates in first person what convinced him after distancing himself from his inherited faith.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "pro-motion-cumulative-warrant",
+      "tier": "motion",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "con-rationality-requires-reality-consistency",
+      "con-communicative-god-leaves-burden-unmet"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "pro-return-to-reality-test",
+        "targetMoveId": "con-rationality-requires-reality-consistency",
+        "text": "Knechtle presents his return as a response to an accumulated body of evidence rather than internal consistency alone.",
+        "contacted": true,
+        "decisive": false
+      },
+      {
+        "componentId": "pro-return-to-unmet-burden",
+        "targetMoveId": "con-communicative-god-leaves-burden-unmet",
+        "text": "His reported reconsideration asserts that evidence was available and sufficient for him after critical distance from his upbringing.",
+        "contacted": true,
+        "decisive": false
+      }
+    ],
+    "proposition": "Knechtle's return to Christianity followed what he describes as a multifaceted evidential reassessment and rejection of hedonism's inadequacy.",
+    "inventoryRationale": "This is an important autobiographical account of his claimed warrant, though the detailed evidential premises follow in the next move.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-multifaceted-return-to-faith",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 62,
+            "rationale": "A return to faith after seeing evidence is internally intelligible, but rejecting hedonism and finding Christianity warranted are joined without an explicit inferential bridge."
+          },
+          "evidenceWarrant": {
+            "value": 57,
+            "rationale": "The autobiographical report supplies first-person evidence of reconsideration, yet 'all this evidence' is unspecified within this move and cannot be independently assessed."
+          },
+          "responsiveness": {
+            "value": 64,
+            "rationale": "It contests the claim that no warrant was available by reporting personal evidential reassessment, but does not answer the opponent's public reality-testing standard."
+          },
+          "relevanceBurden": {
+            "value": 67,
+            "rationale": "The account is relevant to whether Knechtle personally found Christianity warranted, but autobiographical conviction alone only partially advances the general motion."
+          },
+          "precisionClarity": {
+            "value": 70,
+            "rationale": "The personal sequence of leaving hedonism and returning to faith is clear, while the decisive evidence and the meaning of hedonism's bankruptcy remain vague."
+          },
+          "calibrationCharity": {
+            "value": 71,
+            "rationale": "The speaker appropriately frames the claim as his own experience, but the compressed characterization of hedonism as bankrupt is asserted rather than fairly developed."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-multifaceted-return-to-faith",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 59,
+            "rationale": "A personal return after considering multiple factors is coherent as autobiography, but rejecting hedonism does not itself supply an inference to Christianity's rational warrant."
+          },
+          "evidenceWarrant": {
+            "value": 46,
+            "rationale": "The source says only that he suddenly saw 'all this evidence' and found hedonism bankrupt, without specifying or testing the evidence within this move."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "It answers the evidence challenge by reporting a reassessment, but does not confront the opponent's reality-link standard or unmet-burden reasoning at a decisive premise."
+          },
+          "relevanceBurden": {
+            "value": 66,
+            "rationale": "The account is relevant to whether belief can be evidence-based, yet an individual's conversion narrative only weakly advances the public motion-level case."
+          },
+          "precisionClarity": {
+            "value": 62,
+            "rationale": "The autobiographical sequence is understandable, but 'all this evidence,' 'multifaceted,' and hedonism's alleged bankruptcy remain unspecified in the locked span."
+          },
+          "calibrationCharity": {
+            "value": 63,
+            "rationale": "The phrasing appropriately reports what convinced the speaker personally, while the unqualified description of hedonism as bankrupt lacks a charitable account of alternatives."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 62,
+        "rationale": "A return to faith after seeing evidence is internally intelligible, but rejecting hedonism and finding Christianity warranted are joined without an explicit inferential bridge.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a more accurately separates the intelligibility of the autobiographical sequence from the absent inferential bridge between rejecting hedonism and establishing Christian warrant."
+      },
+      "evidenceWarrant": {
+        "value": 57,
+        "rationale": "The autobiographical report supplies first-person evidence of reconsideration, yet 'all this evidence' is unspecified within this move and cannot be independently assessed.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a properly credits the first-person report as limited evidence of reconsideration while identifying that the evidence allegedly producing the conclusion is unspecified and unauditable here."
+      },
+      "responsiveness": {
+        "value": 64,
+        "rationale": "It contests the claim that no warrant was available by reporting personal evidential reassessment, but does not answer the opponent's public reality-testing standard.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a most accurately captures partial contact: the personal reassessment contests the absence of warrant but does not answer the opponent's public reality-testing requirement."
+      },
+      "relevanceBurden": {
+        "value": 67,
+        "rationale": "The account is relevant to whether Knechtle personally found Christianity warranted, but autobiographical conviction alone only partially advances the general motion.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a better describes the move's burden contact because personal evidential reconsideration is relevant to claimed warrant while only partially advancing the general motion."
+      },
+      "precisionClarity": {
+        "value": 70,
+        "rationale": "The personal sequence of leaving hedonism and returning to faith is clear, while the decisive evidence and the meaning of hedonism's bankruptcy remain vague.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a accurately credits the clear personal sequence and locates the remaining imprecision in the unidentified evidence and the unexplained sense in which hedonism is bankrupt."
+      },
+      "calibrationCharity": {
+        "value": 71,
+        "rationale": "The speaker appropriately frames the claim as his own experience, but the compressed characterization of hedonism as bankrupt is asserted rather than fairly developed.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a gives appropriate weight to the explicitly personal framing while still marking the unsupported and underdeveloped characterization of hedonism as bankrupt."
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 64,
+    "relatedMoves": [
+      {
+        "moveId": "con-rationality-requires-reality-consistency",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "proposition": "Internal consistency alone cannot confer relevant rationality; a belief must also be consistent with the facts of reality.",
+        "sourceExcerpt": "but internal consistency isn't enough um Fantasy games with a rule setting for their magic system can be internally consistent Mario is internally consistent you have a certain jump height maximum run down maximum even using the game uh glitches to to do a speed run is consistent which is why you can have tool assisted speed runs sorry if I'm getting all geeky on everybody but it would be irrational to claim that Mario can violate the rules of the game or if you prefer Dungeons and Dragons has a magic system and a set of rules that govern that aspect of the game and as long as an act within the game is consistent with those rules it's rational that type of rationality does us no good internal consistency isn't relevant to what we're talking about today in order for something to be rational it needs to be consistent with the facts of reality"
+      },
+      {
+        "moveId": "con-communicative-god-leaves-burden-unmet",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "proposition": "Because Christianity posits a communicative agent able to supply a rational model but no such evidential explanation has appeared, its burden of proof remains unmet.",
+        "sourceExcerpt": "Christianity whether it's true or not isn't testable isn't falsifiable makes claims that aren't supported by evidence or verifiable observation and therefore isn't rational moreover as Christianity holds that there's a being an agent who is beyond nature and is capable of communicating with us and capable of explaining all of these claims in a way that would result in a justifiable rational model and yet this hasn't happened that's one aspect of Christianity that while not fully falsifiable certainly would affirm that the default position of this is not true applies and continues to apply until that changes the burden of proof for truth and for rationality exists and neither has been met for Christianity"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Knechtle's return to Christianity followed what he describes as a multifaceted evidential reassessment and rejection of hedonism's inadequacy within the debate’s dispute over whether Christianity possesses rational warrant.",
+    "critique": "Strongest feature: Its calibration and charity is best captured by the assessment that The speaker appropriately frames the claim as his own experience but the, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The autobiographical report supplies first-person evidence of reconsideration yet all this evidence, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why knechtle's return to christianity followed what he describes as a multifaceted evidential reassessment and rejection of hedonism's inadequacy, answer the competing explanation, and show contact with con-rationality-requires-reality-consistency, con-communicative-god-leaves-burden-unmet under a applied evidential standard. Locked score: 64 credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-03/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-03/schema.json",
+    "shape": {
+      "moveId": "pro-multifaceted-return-to-faith",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

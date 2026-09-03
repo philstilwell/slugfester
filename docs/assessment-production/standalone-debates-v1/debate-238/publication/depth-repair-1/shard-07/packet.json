@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 7,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-report-cannot-establish-forgiveness.description",
+    "moveProse.con-report-cannot-establish-forgiveness.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-report-cannot-establish-forgiveness",
+    "sectionId": "scripture-testimony",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 1870,
+      "endEvent": 1875,
+      "startMs": 4155480,
+      "endMs": 4170480,
+      "excerpt": "don't get to just assume that he and the father are one and that he forgave sins merely because there's a report that had happened you have to actually provide evidence to show that this happened and it resulted in the Forgiveness of a sin"
+    },
+    "quoteEligibleExactSpans": [
+      "merely because there's a report that had happened",
+      "provide evidence to show that this happened",
+      "resulted in the Forgiveness of a sin"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Dillahunty directly addresses Knechtle's explanation of the Gospel claim that Jesus forgave sins.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-testimony-insufficient",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-jesus-claims-divinity",
+      "pro-gospel-transmission-reliability"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-report-to-jesus-claims",
+        "targetMoveId": "pro-jesus-claims-divinity",
+        "text": "A report that Jesus forgave sins cannot establish either his unity with the Father or an actual forgiveness event.",
+        "contacted": true,
+        "decisive": true
+      },
+      {
+        "componentId": "con-report-to-transmission",
+        "targetMoveId": "pro-gospel-transmission-reliability",
+        "text": "Textual reliability does not eliminate the need for evidence that the reported divine act occurred.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "A Gospel report cannot by itself establish that Jesus and the Father are one or that Jesus actually effected forgiveness of sins.",
+    "inventoryRationale": "This applies the claim-evidence distinction to a specific divine prerogative central to Knechtle's opening.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-report-cannot-establish-forgiveness",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The distinction between a report that an act occurred and evidence that the reported act actually occurred validly blocks an inference from narration alone to divine identity or effective forgiveness."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The report-versus-event distinction supplies a sound epistemic warrant, although the move does not specify what historical or observable evidence could establish the metaphysical result of forgiveness."
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "It directly answers both the appeal to Jesus forgiving sins and the reliance on reliable Gospel transmission by identifying the decisive gap between a preserved report and the reported divine act."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move strongly advances the testimony-insufficiency bridge by targeting a specific divine prerogative central to the pro case, while stopping short of showing that no further evidence could suffice."
+          },
+          "precisionClarity": {
+            "value": 87,
+            "rationale": "The required distinction is expressed cleanly: evidence is needed both that the episode happened and that it produced forgiveness, rather than merely that a text reports it."
+          },
+          "calibrationCharity": {
+            "value": 83,
+            "rationale": "The move fairly challenges assumption rather than claiming that testimony is never evidence, though its demand to show the result could use clarification for a non-observable theological claim."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-report-cannot-establish-forgiveness",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The distinction between a report and the reported event coherently blocks inferring either divine unity or effective forgiveness merely from the report's existence."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The move rests on a sound evidential distinction and identifies the missing support—evidence that the act occurred and effected forgiveness—though it does not specify what historical evidence could satisfy that demand."
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "It directly answers both the appeal to Jesus's forgiveness claim and the transmission argument by explaining why accurate reporting would still not establish the reported divine act."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The challenge directly advances the testimony-insufficiency burden by isolating the gap between preserving a claim and establishing its supernatural content."
+          },
+          "precisionClarity": {
+            "value": 85,
+            "rationale": "The report-event distinction and the two disputed conclusions—unity with the Father and actual forgiveness—are stated compactly and can be audited without substantial reconstruction."
+          },
+          "calibrationCharity": {
+            "value": 84,
+            "rationale": "The claim is proportionate: it denies that the report alone establishes the conclusions rather than asserting that testimony can never contribute evidence."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 88,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 92,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 87,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 86,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 84,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 86,
+    "relatedMoves": [
+      {
+        "moveId": "pro-jesus-claims-divinity",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "The Gospel presentation of Jesus consistently attributes divine claims and prerogatives to him.",
+        "sourceExcerpt": "claims were there you certainly have it throughout the gospels you definitely have it in John with the seven I am statements he makes but then he also receives worship he doesn't reject worship like the apostles do at times like Paul did when he tore his clothes or like when the Angels even were rejecting worship he also claimed to forgive sins and so throughout he's pretty consistent in the claim to be God"
+      },
+      {
+        "moveId": "pro-gospel-transmission-reliability",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Numerous manuscripts, early dating, patristic quotations, and decentralized transmission make the Gospel text reliable against claims of coordinated alteration.",
+        "sourceExcerpt": "uh the reliability of the gospels I think are pretty obvious you got the manuscripts and the dates 5800 manuscripts you get the dates within 15 years probably even closer to the events themselves you have the church fathers you take away all the manuscripts themselves you still have the church fathers counting up for over 1 million New Testament quotes I mean that's that's pretty impressive you know there was never a time when any one man or group of men had control over the text of the New Testament there was never this Christian utman all claims that there were changes in theology or doctrine or simply without Merit"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "A Gospel report cannot by itself establish that Jesus and the Father are one or that Jesus actually effected forgiveness of sins.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that It directly answers both the appeal to Jesus forgiving sins and the, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The report-versus-event distinction supplies a sound epistemic warrant although the move does, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why a gospel report cannot by itself establish that jesus and the father are one or that jesus actually, answer the competing explanation, and show contact with pro-jesus-claims-divinity, pro-gospel-transmission-reliability under a consistently applied evidential standard. Locked score: 86 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-07/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-07/schema.json",
+    "shape": {
+      "moveId": "con-report-cannot-establish-forgiveness",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

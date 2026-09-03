@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 14,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-observed-effect-needs-causal-link.description",
+    "moveProse.con-observed-effect-needs-causal-link.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-observed-effect-needs-causal-link",
+    "sectionId": "resurrection-miracles",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 2035,
+      "endEvent": 2051,
+      "startMs": 4533540,
+      "endMs": 4580040,
+      "excerpt": "to do that but what we do is we get to say hey we have an example where someone's finger was cut off and it grew back in front of us and now we begin exploring to try to find what the best explanation is we it may be that God did it but until somebody demonstrates the link the evidence that links the regrowth of your finger with a God you don't get to say that that is the the cause this is all about connecting uh observed facts with proposed explanations and you have as as The observed facts here you have a proposed explanation that there's a God but you don't have the linking evidence that shows that that is in fact the cause"
+    },
+    "quoteEligibleExactSpans": [
+      "exploring to try to find what the best explanation is",
+      "until somebody demonstrates the link"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Dillahunty uses Knechtle's proposed laboratory example and directly explains the evidential step required before attributing an event to God.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-central-supernatural-gap",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-resurrection-cumulative-indicia",
+      "pro-six-source-resurrection-reply"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-causal-link-to-cumulative-case",
+        "targetMoveId": "pro-resurrection-cumulative-indicia",
+        "text": "Even an observed anomaly would require evidence linking it to God before supernatural causation could be inferred.",
+        "contacted": true,
+        "decisive": true
+      },
+      {
+        "componentId": "con-causal-link-to-six-sources",
+        "targetMoveId": "pro-six-source-resurrection-reply",
+        "text": "Additional reports do not themselves supply the missing causal link between the alleged event and divine action.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "Even a directly observed extraordinary effect would not warrant attributing it to God without evidence linking the effect to that proposed cause.",
+    "inventoryRationale": "This identifies the causal-inference burden that Dillahunty says remains after historical testimony is considered.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-observed-effect-needs-causal-link",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The move cleanly distinguishes observing an extraordinary effect from identifying its cause and validly requires an additional evidential link before inferring divine agency."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The regrown-finger hypothetical aptly demonstrates the causal-inference standard, though the move does not specify what evidence could positively discriminate divine action from alternatives."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "It directly addresses both the cumulative indicia and six-source reply at their decisive causal bridge: reports or even an observed anomaly do not by themselves identify God as cause."
+          },
+          "relevanceBurden": {
+            "value": 91,
+            "rationale": "The missing link between alleged effect and supernatural cause is exactly the con side's central burden and directly limits what resurrection testimony can establish."
+          },
+          "precisionClarity": {
+            "value": 89,
+            "rationale": "Observed effect, proposed explanation, and linking evidence are explicitly separated in a concrete example, making the challenged inferential step readily auditable."
+          },
+          "calibrationCharity": {
+            "value": 89,
+            "rationale": "The reply expressly allows that God may be the cause while withholding attribution pending discriminating evidence, proportionately representing the supernatural possibility."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-observed-effect-needs-causal-link",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The move cleanly separates observing an extraordinary effect from identifying its cause and validly requires linking evidence before concluding that God produced it."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The regrown-finger hypothetical effectively demonstrates the causal-inference requirement, though it articulates an evidential standard rather than supplying case-specific resurrection evidence."
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "Using Knechtle's proposed laboratory example, it answers both the cumulative indicia and six-source reply at their decisive missing link from event reports to God."
+          },
+          "relevanceBurden": {
+            "value": 92,
+            "rationale": "The need for a demonstrated causal connection directly bears on the central supernatural-causation burden and explains why even a conceded anomaly would be insufficient."
+          },
+          "precisionClarity": {
+            "value": 89,
+            "rationale": "Observed fact, proposed explanation, and linking evidence are explicitly separated in a concrete example, making the challenged inferential step unusually easy to audit."
+          },
+          "calibrationCharity": {
+            "value": 89,
+            "rationale": "The move expressly allows that God may be the cause while withholding attribution until evidence connects cause and effect, representing the alternative proportionately."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 90,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 80,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 90,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 92,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 89,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 89,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 88,
+    "relatedMoves": [
+      {
+        "moveId": "pro-resurrection-cumulative-indicia",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Witness reports, conversions, an empty tomb, immediate proclamation, costly adherence, and the early church's rapid emergence cumulatively support the resurrection.",
+        "sourceExcerpt": "the resurrection evidence I would take a cumulative case typically one Witnesses and how they reported two Skeptics that converted three expectations of the Gospel the way it was presented and the way it was received for Jewish background and understanding of what they were expecting five voluntary persecution suffering six immediate Proclamation seven empty tomb eight the use of women as eyewitnesses which would have been thrown out and then nine I would have said just the start of the early church has a major Paradigm Shift overnight which typically would have taken hundreds of years for that many people to have shifted from something like Judaism to Christianity"
+      },
+      {
+        "moveId": "pro-six-source-resurrection-reply",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Six sources and a multifaceted case provide historical support for the resurrection under standards that often accept fewer sources for ancient events.",
+        "sourceExcerpt": "example six sources now for the resurrection having occurred I mean what did Matthew actually lean on six sources and we take two sources for ancient history and say that that's Patriot of something absolutely happening now if you take away no obviously if you remove that type of standard then we're all of a sudden back to the Middle Ages but it's six sources for the Christian faith and so you know it started there it it's multifaceted it has to be I don't think I could ever take just one and so I started looking"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Even a directly observed extraordinary effect would not warrant attributing it to God without evidence linking the effect to that proposed cause.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that The missing link between alleged effect and supernatural cause is exactly the, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The regrown-finger hypothetical aptly demonstrates the causal-inference standard though the move does, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why even a directly observed extraordinary effect would not warrant attributing it to god without evidence linking the effect, answer the competing explanation, and show contact with pro-resurrection-cumulative-indicia, pro-six-source-resurrection-reply under a applied evidential standard. Locked score: 88 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-14/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-14/schema.json",
+    "shape": {
+      "moveId": "con-observed-effect-needs-causal-link",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

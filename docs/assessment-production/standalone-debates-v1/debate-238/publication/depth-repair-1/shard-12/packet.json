@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 12,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-six-source-resurrection-reply.description",
+    "moveProse.pro-six-source-resurrection-reply.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-six-source-resurrection-reply",
+    "sectionId": "resurrection-miracles",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 1980,
+      "endEvent": 1993,
+      "startMs": 4410060,
+      "endMs": 4442699,
+      "excerpt": "example six sources now for the resurrection having occurred I mean what did Matthew actually lean on six sources and we take two sources for ancient history and say that that's Patriot of something absolutely happening now if you take away no obviously if you remove that type of standard then we're all of a sudden back to the Middle Ages but it's six sources for the Christian faith and so you know it started there it it's multifaceted it has to be I don't think I could ever take just one and so I started looking"
+    },
+    "quoteEligibleExactSpans": [
+      "six sources now for the resurrection having occurred",
+      "we take two sources for ancient history",
+      "it's multifaceted it has to be"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Knechtle continues his first-person account and expressly offers historical-source quantity in answer to Dillahunty's evidence challenge.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "pro-central-resurrection-case",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "con-scriptural-story-is-not-miracle-evidence",
+      "con-report-cannot-establish-forgiveness"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "pro-six-sources-to-story",
+        "targetMoveId": "con-scriptural-story-is-not-miracle-evidence",
+        "text": "Knechtle answers the single-story characterization by asserting six resurrection sources and comparing that quantity favorably with ordinary ancient history.",
+        "contacted": true,
+        "decisive": true
+      },
+      {
+        "componentId": "pro-six-sources-to-report",
+        "targetMoveId": "con-report-cannot-establish-forgiveness",
+        "text": "He offers source multiplicity as part of a broader historical standard for treating Gospel reports as evidence.",
+        "contacted": true,
+        "decisive": false
+      }
+    ],
+    "proposition": "Six sources and a multifaceted case provide historical support for the resurrection under standards that often accept fewer sources for ancient events.",
+    "inventoryRationale": "This is Knechtle's clearest later response to the objection that resurrection testimony is merely an unsupported story.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-six-source-resurrection-reply",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 66,
+            "rationale": "Multiple sources can strengthen a historical inference, but the comparison with accepting two ancient sources assumes without defense that the sources and event claims are relevantly comparable."
+          },
+          "evidenceWarrant": {
+            "value": 53,
+            "rationale": "The asserted six sources are neither named nor assessed for independence, date, access, or agreement, so source quantity carries the case without the quality checks the conclusion requires."
+          },
+          "responsiveness": {
+            "value": 75,
+            "rationale": "The reply directly resists the single-story characterization with source multiplicity, but it does not answer the objection that reports may preserve the claim without confirming the miracle."
+          },
+          "relevanceBurden": {
+            "value": 81,
+            "rationale": "Historical source support is central to the pro resurrection burden, even though the move does not complete the bridge from multiple reports to a supernatural occurrence."
+          },
+          "precisionClarity": {
+            "value": 61,
+            "rationale": "The intended source-count comparison is understandable, but the reference to what Matthew leaned on is obscure and something absolutely happening states an unclear historical threshold."
+          },
+          "calibrationCharity": {
+            "value": 56,
+            "rationale": "The move overstates ordinary ancient-history standards as establishing that events absolutely happened and understates the opponent's concern about confirmation rather than mere report count."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-six-source-resurrection-reply",
+        "assessmentConfidence": "medium",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "Multiple sources can strengthen a historical case, but source count alone does not establish independence, accuracy, resurrection, or the divine causal conclusion drawn from it."
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "The asserted six sources are not identified or compared for dependence and quality, while the claim that two sources establish ancient events absolutely is unsupported."
+          },
+          "responsiveness": {
+            "value": 75,
+            "rationale": "It directly resists the single-story characterization with source multiplicity, but does not answer the objection that reports still need event confirmation and causal linkage."
+          },
+          "relevanceBurden": {
+            "value": 78,
+            "rationale": "Source multiplicity is materially relevant to the pro historical burden, yet the absent independence and supernatural-causation bridges leave that central burden incomplete."
+          },
+          "precisionClarity": {
+            "value": 64,
+            "rationale": "The central six-source claim is understandable, but the reference to what Matthew leaned on and the ancient-history comparison lack clear source identities and standards."
+          },
+          "calibrationCharity": {
+            "value": 57,
+            "rationale": "Saying two sources lead historians to treat something as absolutely happening substantially overstates ordinary historical inference and bypasses Dillahunty's stronger evidential distinction."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 67,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 54,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 75,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 80,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 63,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 57,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 67,
+    "relatedMoves": [
+      {
+        "moveId": "con-scriptural-story-is-not-miracle-evidence",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "proposition": "New Testament miracle and resurrection stories remain unconfirmed supernatural claims rather than evidence establishing their own truth.",
+        "sourceExcerpt": "performing Miracles that haven't been demonstrated that can't be confirmed all of those things are still Supernatural as well it's just that it's easier to talk about the sun standing still in the sky than it is to say that if I Spit on the dirt and rub it on somebody's eye it doesn't heal them we have no evidence that it's ever been done other than the story which isn't evidence for a proposition it's just a claim itself but there's plenty of things you know that I mean the entirety of of Revelation uh almost the entirety of it I'm sure there are words that aren't um it is bizarre it almost wasn't even included in the doctrine but the very notion that somebody uh died and was resurrected uh which we have no empirical evidence for it's just a story in the book um that's a supernatural claim that I would put in that list as well"
+      },
+      {
+        "moveId": "con-report-cannot-establish-forgiveness",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "proposition": "A Gospel report cannot by itself establish that Jesus and the Father are one or that Jesus actually effected forgiveness of sins.",
+        "sourceExcerpt": "don't get to just assume that he and the father are one and that he forgave sins merely because there's a report that had happened you have to actually provide evidence to show that this happened and it resulted in the Forgiveness of a sin"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Six sources and a multifaceted case provide historical support for the resurrection under standards that often accept fewer sources for ancient events.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that Historical source support is central to the pro resurrection burden even though, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The asserted six sources are neither named nor assessed for independence date, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why six sources and a multifaceted case provide historical support for the resurrection under standards that often accept fewer, answer the competing explanation, and show contact with con-scriptural-story-is-not-miracle-evidence, con-report-cannot-establish-forgiveness under a applied evidential standard. Locked score: 67 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-12/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-12/schema.json",
+    "shape": {
+      "moveId": "pro-six-source-resurrection-reply",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

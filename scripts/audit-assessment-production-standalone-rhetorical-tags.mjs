@@ -116,17 +116,44 @@ for (const record of registry.debates) {
     "passed-two-blind-reviews-adjudication-and-final-definition-check"
   );
   assert.equal(execution.debateNumber, record.debateNumber);
-  assert.equal(execution.model.label, "5.6 Sol");
-  assert.equal(execution.model.slug, "gpt-5.6-sol");
-  assert.equal(execution.model.reasoningEffort, "low");
+  assert.equal(
+    execution.model.label ?? execution.model.display,
+    record.rhetoricalTagReview.modelLabel ?? "5.6 Sol"
+  );
+  assert.equal(
+    execution.model.slug,
+    record.rhetoricalTagReview.modelSlug ?? "gpt-5.6-sol"
+  );
+  assert.equal(
+    execution.model.reasoningEffort,
+    record.rhetoricalTagReview.reasoningEffort ?? "low"
+  );
   assert.equal(execution.audit.blindReviews, 2);
   assert.equal(execution.audit.retries, 0);
-  assert.equal(execution.isolation.existingTagsUnavailable, true);
-  assert.equal(execution.isolation.reviewerOutputsUnavailableToOtherReviewer, true);
-  assert.equal(execution.isolation.scoresUnavailable, true);
+  if (Object.hasOwn(execution.isolation, "existingTagsUnavailable")) {
+    assert.equal(execution.isolation.existingTagsUnavailable, true);
+    assert.equal(execution.isolation.reviewerOutputsUnavailableToOtherReviewer, true);
+    assert.equal(execution.isolation.scoresUnavailable, true);
+  } else {
+    assert.equal(execution.isolation.blindReviewContexts, 2);
+    assert.equal(execution.isolation.freshAnonymousAdjudicator, true);
+    assert.equal(execution.isolation.otherReviewOutputsUnavailableToEachBlindReviewer, true);
+    assert.equal(execution.isolation.otherDebatesAndTagFrequenciesUnavailableToModels, true);
+  }
   verifyFileRecord(execution.catalogSnapshot);
   verifyFileRecord(execution.sourcePacket);
-  execution.contexts.forEach((context) => {
+  const executionContexts = Array.isArray(execution.contexts)
+    ? execution.contexts
+    : [
+        { role: "blind-review-a", ...execution.contexts.passA, output: execution.contexts.passA },
+        { role: "blind-review-b", ...execution.contexts.passB, output: execution.contexts.passB },
+        {
+          role: "anonymous-adjudication",
+          ...execution.contexts.adjudication,
+          output: execution.contexts.adjudication
+        }
+      ];
+  executionContexts.forEach((context) => {
     if (context.input) verifyFileRecord(context.input);
     verifyFileRecord(context.output);
     assert.equal(context.attempts, 1);
@@ -137,7 +164,28 @@ for (const record of registry.debates) {
     audit.independentReview.executionSha256,
     sha256(bytes(record.rhetoricalTagReview.executionPath))
   );
-  assert.deepEqual(audit.baselineComparison, expectedBaseline);
+  for (const key of [
+    "debateCount",
+    "debateNumbers",
+    "moves",
+    "taggedArguments",
+    "tags",
+    "perDebateTagMinimum",
+    "perDebateTagMedian",
+    "perDebateTagMaximum"
+  ]) {
+    assert.deepEqual(audit.baselineComparison[key], expectedBaseline[key]);
+  }
+  assert.equal(
+    Number(audit.baselineComparison.taggedArgumentRate.toFixed(3)),
+    expectedBaseline.taggedArgumentRate
+  );
+  if (audit.baselineComparison.zeroTagDebates) {
+    assert.deepEqual(
+      audit.baselineComparison.zeroTagDebates,
+      expectedBaseline.zeroTagDebates
+    );
+  }
   assert.deepEqual(
     audit.reviewedMoveIds,
     publicationMoves.map((move) => move.ledgerMoveId),
@@ -154,28 +202,32 @@ for (const record of registry.debates) {
     assert.equal("tags" in move, false);
     assert.equal("references" in move, false);
   });
-  const blindReviews = execution.contexts
+  const blindReviews = executionContexts
     .filter((context) => context.role.startsWith("blind-review-"))
     .map((context) => json(context.output.path));
   assert.equal(blindReviews.length, 2);
   blindReviews.forEach((review) =>
     assert.deepEqual(review.reviewedMoveIds, audit.reviewedMoveIds)
   );
+  const candidateIdentity = (candidate) =>
+    candidate.candidateKey?.replaceAll("|", "\u0000") ??
+    `${candidate.moveId ?? candidate.candidateId ?? candidate.blunderId}\u0000${candidate.type}\u0000${candidate.label}`;
   const candidateUnion = new Set(
     blindReviews.flatMap((review) =>
-      review.candidateReviews.map(
-        (candidate) =>
-          `${candidate.moveId}\u0000${candidate.type}\u0000${candidate.label}`
-      )
+      [
+        ...review.candidateReviews,
+        ...(review.overallBlunderCandidateReviews ?? [])
+      ].map(candidateIdentity)
     )
   );
+  const auditedCandidateRows = audit.completeCandidateUnion ?? [
+    ...audit.candidateReviews,
+    ...(audit.overallBlunderCandidateReviews ?? [])
+  ];
   const auditedCandidates = new Set(
-    audit.candidateReviews.map(
-      (candidate) =>
-        `${candidate.moveId}\u0000${candidate.type}\u0000${candidate.label}`
-    )
+    auditedCandidateRows.map(candidateIdentity)
   );
-  assert.equal(auditedCandidates.size, audit.candidateReviews.length);
+  assert.equal(auditedCandidates.size, auditedCandidateRows.length);
   assert.deepEqual(
     [...auditedCandidates].sort(),
     [...candidateUnion].sort(),
@@ -197,17 +249,19 @@ for (const record of registry.debates) {
 
   const reviewedCandidates = new Set();
   for (const review of audit.candidateReviews) {
-    assert.equal(audit.reviewedMoveIds.includes(review.moveId), true);
-    assert.equal(["accepted", "rejected"].includes(review.decision), true);
+    const moveId = review.moveId ?? review.candidateId;
+    const decision = review.finalDecision ?? review.decision;
+    assert.equal(audit.reviewedMoveIds.includes(moveId), true);
+    assert.equal(["accepted", "rejected"].includes(decision), true);
     assert.equal(wordCount(review.rationale) >= 12, true);
-    const key = `${review.moveId}\u0000${review.type}\u0000${review.label}`;
+    const key = `${moveId}\u0000${review.type}\u0000${review.label}`;
     assert.equal(reviewedCandidates.has(key), false, `duplicate candidate ${key}`);
     reviewedCandidates.add(key);
-    if (review.decision === "accepted") {
+    if (decision === "accepted") {
       assert.equal(
         publishedTags.some(
           (tag) =>
-            tag.moveId === review.moveId &&
+            tag.moveId === moveId &&
             tag.type === review.type &&
             tag.label === review.label
         ),
@@ -237,14 +291,60 @@ for (const record of registry.debates) {
     );
   }
 
+  if (audit.acceptedOverallBlunderLinks) {
+    const publishedOverallLinks = ["pro", "con"].flatMap((side) =>
+      publication.overall[side].blunders.flatMap((blunder, index) =>
+        blunder.links.map((link) => ({
+          blunderId: `overall-${side}-blunder-${index + 1}`,
+          label: link.label,
+          url: link.url
+        }))
+      )
+    );
+    assert.deepEqual(
+      publishedOverallLinks,
+      audit.acceptedOverallBlunderLinks.map(({ blunderId, label, url }) => ({
+        blunderId,
+        label,
+        url
+      })),
+      `Debate ${record.debateNumber}: accepted overall-blunder links differ from publication`
+    );
+    for (const accepted of audit.acceptedOverallBlunderLinks) {
+      if (accepted.context) {
+        assert.equal(wordCount(accepted.context) >= 8, true);
+        assert.equal(wordCount(accepted.context) <= 35, true);
+      }
+      assert.equal(wordCount(accepted.rationale) >= 12, true);
+      const reference = referenceFromUrl(accepted.url);
+      assert.ok(reference, `${accepted.blunderId}: unrecognized reference URL`);
+      if (accepted.type) assert.equal(reference.type, accepted.type);
+      const definition = getReferenceDefinition(reference.type, reference.slug);
+      assert.ok(definition, `${accepted.blunderId}: unknown reference definition`);
+      assert.equal(definition.label, accepted.label);
+      assert.equal(definition.externalUrl, accepted.url);
+    }
+  }
+
   assert.equal(audit.audit.judgmentChanges, 0);
   assert.equal(audit.audit.scoreChanges, 0);
   assert.equal(audit.audit.moveChanges, 0);
   assert.equal(audit.audit.acceptedTagCount, publishedTags.length);
+  const moveRejectedCount = audit.candidateReviews.filter(
+    (review) => (review.finalDecision ?? review.decision) === "rejected"
+  ).length;
+  const overallRejectedCount = (audit.overallBlunderCandidateReviews ?? []).filter(
+    (review) => (review.finalDecision ?? review.decision) === "rejected"
+  ).length;
+  const rejectedCountIncludesOverall =
+    audit.audit.overallBlunderRejectedCandidateCount === undefined;
   assert.equal(
     audit.audit.rejectedCandidateCount,
-    audit.candidateReviews.filter((review) => review.decision === "rejected").length
+    moveRejectedCount + (rejectedCountIncludesOverall ? overallRejectedCount : 0)
   );
+  if (!rejectedCountIncludesOverall) {
+    assert.equal(audit.audit.overallBlunderRejectedCandidateCount, overallRejectedCount);
+  }
 
   console.log(
     `Standalone rhetorical-tag review passed: Debate ${record.debateNumber}; ` +

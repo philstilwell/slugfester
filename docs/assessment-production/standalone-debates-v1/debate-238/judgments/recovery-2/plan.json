@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-built-in-subagent-recovery-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-exceptional-recovery-execution",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "frozenAt": "2026-09-02T21:50:39.000Z",
+  "authorization": "I authorize two fresh built-in isolated GPT-5.6 Sol subagents to replace Debate 238’s failed Section 1 pass-a and pass-b command-line shards, using only the frozen score-blind packet and separate output paths.",
+  "reason": "The authenticated non-interactive Codex CLI path failed repeated debate-neutral probes after an application restart, while the built-in task model path remained operational.",
+  "exceptionScope": {
+    "shardId": "section-01-epistemic-warrant",
+    "passes": [
+      "pass-a",
+      "pass-b"
+    ],
+    "attemptsPerPass": 1,
+    "laterShardsAuthorized": false,
+    "scoresAuthorized": false,
+    "publicationAuthorizedByThisException": false
+  },
+  "executionControls": {
+    "surface": "built-in-collaboration-subagent",
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "freshContextPerPass": true,
+    "simultaneousLaunch": true,
+    "mutuallyBlind": true,
+    "scoreBlind": true,
+    "publicationBlind": true,
+    "directIncrementalCostUsd": 0
+  },
+  "evidenceLocks": {
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+      "sha256": "87897c0777cd333e69a249e8d808114d8a4825006077529b29522330aca3df0e"
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+      "sha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab"
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    }
+  },
+  "priorRecovery": {
+    "plan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/plan.json",
+      "sha256": "351812ee4439866b44cd8401168f9e9a6e2c4158fa14cabc043eb70ff3f1e12d"
+    },
+    "failures": [
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/pass-a/section-01-epistemic-warrant-failure.json",
+        "sha256": "229b5f120264549043655e629f2fd9d437e2aab90e38a6486b3cd47a12e0ebe6"
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-1/pass-b/section-01-epistemic-warrant-failure.json",
+        "sha256": "32bc3af58cb479a3add671bbfeeab9fb8180c27cd96407fb962eccc60761c202"
+      }
+    ]
+  },
+  "allowedReadPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+    "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+    "docs/reassessment-rubric-v2.1.md",
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/plan.json",
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/contract.json",
+    "one pass-specific shard-plan.json"
+  ],
+  "forbiddenInputs": [
+    "the other pass output or shard plan",
+    "prior judgment attempts beyond the authenticated failure hashes in this plan",
+    "calculated scores or totals",
+    "winner labels",
+    "publication prose",
+    "fallacy or bias tags",
+    "other debates or legacy assessments"
+  ]
+}

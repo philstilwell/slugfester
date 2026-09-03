@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 21,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-biblical-violence-challenges-character.description",
+    "moveProse.con-biblical-violence-challenges-character.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-biblical-violence-challenges-character",
+    "sectionId": "divine-character",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 1541,
+      "endEvent": 1554,
+      "startMs": 3408020,
+      "endMs": 3436020,
+      "excerpt": "handcrafted a scourge of whips to chase them out of the Temple he also when he was you know in the Old Testament sorry that the old Old Testament and conveniences to you but flooded the whole world right and didn't he kill the firstborn baby of everyone that didn't mark their door didn't he destroy the Tower of Babel where people were just trying to get together and cooperate and he said no no this won't do and then and and frustrate their languages doesn't he sentence everyone to Hell by default"
+    },
+    "quoteEligibleExactSpans": [
+      "handcrafted a scourge of whips",
+      "kill the firstborn baby of everyone",
+      "sentence everyone to Hell by default"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Dillahunty continues a sequence of questions testing Knechtle's characterization of Jesus and God against biblical episodes.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-character-tension",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-love-and-wrath-are-coherent"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-violence-to-love-wrath",
+        "targetMoveId": "pro-love-and-wrath-are-coherent",
+        "text": "Flood, firstborn, Babel, hell, and the temple scourge are offered as concrete cases that require more than an abstract reconciliation of love and wrath.",
+        "contacted": true,
+        "decisive": false
+      }
+    ],
+    "proposition": "Biblical depictions of the flood, killing firstborn children, Babel, hell, and Jesus's scourge challenge the claimed coherence of divine love and wrath.",
+    "inventoryRationale": "This is the major direct counterexample-based challenge to Knechtle's divine-character defense.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-biblical-violence-challenges-character",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "Concrete episodes involving the flood, firstborn children, Babel, hell, and the temple scourge logically pressure an abstract claim that wrath is loving, though listing them does not itself prove incoherence."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The move identifies several specific biblical depictions rather than offering a bare objection, but it supplies little textual context or argument that each episode is accurately characterized and morally comparable."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "Dillahunty directly tests Knechtle's love-and-wrath reconciliation with the very kinds of punitive acts that the abstract defense must explain, although he does not address a possible justice-based defense of each case."
+          },
+          "relevanceBurden": {
+            "value": 82,
+            "rationale": "These counterexamples materially support the locked character-tension burden by showing where claimed divine love and wrath require further reconciliation, without needing to establish an alternative theology."
+          },
+          "precisionClarity": {
+            "value": 75,
+            "rationale": "The named episodes make the challenge easy to reconstruct, but 'sentence everyone to Hell by default' and the compressed catalogue leave important doctrinal and contextual qualifications unspecified."
+          },
+          "calibrationCharity": {
+            "value": 64,
+            "rationale": "Framing the examples as challenges is proportionate, but the sarcastic aside about Old Testament inconvenience and the categorical hell formulation present the opposing account less charitably than necessary."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-biblical-violence-challenges-character",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The cited episodes function coherently as counterexamples requiring the abstract love-wrath reconciliation to handle apparently indiscriminate harm; the challenge need not prove contradiction to expose that gap."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The flood, firstborn deaths, Babel, hell, and temple scourge are concrete scriptural touchpoints, but the move gives no textual context or argument that each episode is accurately characterized as unjust wrath."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "Dillahunty directly tests Knechtle's claim that wrath protects against wrongdoing by presenting cases where those harmed are not shown here to be the relevant wrongdoers."
+          },
+          "relevanceBurden": {
+            "value": 84,
+            "rationale": "Concrete biblical cases materially advance the character-tension burden and expose what the compatibility defense must explain, though the rapid catalogue stops short of establishing an irreconcilable inconsistency."
+          },
+          "precisionClarity": {
+            "value": 72,
+            "rationale": "The examples and intended challenge are clear, but the compressed questions blur distinct issues, and saying God destroyed Babel is less exact than the stated language-confusion episode."
+          },
+          "calibrationCharity": {
+            "value": 61,
+            "rationale": "Presenting the cases as questions appropriately demands explanation, yet the sarcastic dismissal of the Old Testament and unqualified catalogue omit the strongest contextual defenses available to Knechtle."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 80,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 70,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 85,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 83,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 74,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 63,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 77,
+    "relatedMoves": [
+      {
+        "moveId": "pro-love-and-wrath-are-coherent",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Divine love and wrath are coherent because love can require opposition to what harms people, while love without justice could become apathetic toward wrongdoing.",
+        "sourceExcerpt": "I mean and with God the consistency matter is he's loving and wrathful and I know Matt Delante does not like the wrathful side of God but in order to love somebody oftentimes you do need to have a type of Wrath in order to go after something that's perhaps is harming them and that's what we see over and over again with God see if you just take a god of love then he can easily become apathetic in the face of true wrongdoing and so that's why you have a nuanced understanding of God with many different attributes that looks inconsistent but couldn't be any more consistent"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Biblical depictions of the flood, killing firstborn children, Babel, hell, and Jesus's scourge challenge the claimed coherence of divine love and wrath.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that Dillahunty directly tests Knechtle's love-and-wrath reconciliation with the very kinds of punitive, making the move’s inferential contribution and assessable. Principal limitation: Its calibration and charity remains constrained because Framing the examples as challenges is proportionate but the sarcastic aside about, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why biblical depictions of the flood killing firstborn children babel hell and jesus's scourge challenge the claimed coherence of, answer the competing explanation, and show contact with pro-love-and-wrath-are-coherent under a consistently applied evidential standard. Locked score: 77 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-21/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-21/schema.json",
+    "shape": {
+      "moveId": "con-biblical-violence-challenges-character",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

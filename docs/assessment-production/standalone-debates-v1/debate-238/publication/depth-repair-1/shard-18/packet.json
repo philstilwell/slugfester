@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 18,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-social-benefit-does-not-warrant-supernatural-core.description",
+    "moveProse.con-social-benefit-does-not-warrant-supernatural-core.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+    "sectionId": "moral-experiential-fit",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 996,
+      "endEvent": 1003,
+      "startMs": 2170140,
+      "endMs": 2192099,
+      "excerpt": "um but even if all of that were true even if Christianity was this uh wonderful package of um do this do that that led us all to a better world that doesn't make the belief rational with respect to the supernatural claims and the supernatural claims are at the core of it if if the"
+    },
+    "quoteEligibleExactSpans": [
+      "even if all of that were true",
+      "that doesn't make the belief rational",
+      "the supernatural claims are at the core"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Dillahunty immediately answers Knechtle's Roman-influence argument and expressly grants it conditionally for purposes of rebuttal.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-motion-warrant-unmet",
+      "tier": "motion",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-christianity-explains-altruism-hope",
+      "pro-jesus-transformed-roman-morality"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-benefit-to-experiential-fit",
+        "targetMoveId": "pro-christianity-explains-altruism-hope",
+        "text": "A worldview's beneficial psychological or social effects do not establish rational warrant for its supernatural claims.",
+        "contacted": true,
+        "decisive": true
+      },
+      {
+        "componentId": "con-benefit-to-roman-change",
+        "targetMoveId": "pro-jesus-transformed-roman-morality",
+        "text": "Even granting Christianity caused social improvement, that historical consequence would not verify its supernatural core.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "Even if Christianity improved society, usefulness would not make belief in its core supernatural claims rational.",
+    "inventoryRationale": "This isolates the inferential gap between beneficial consequences and the truth or warrant of supernatural doctrine.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The conditional concession cleanly separates beneficial social consequences from evidential warrant for supernatural claims, blocking the precise inference without denying the alleged benefits."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "Because the move exposes a categorical evidential gap while granting the historical premise, it needs little additional factual support; the supernatural core's centrality is plainly stated."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "It directly answers both the broad appeal to Christianity's social value and the Roman-transformation reply at their shared inference from beneficial effect to rational belief."
+          },
+          "relevanceBurden": {
+            "value": 94,
+            "rationale": "The distinction goes directly to the motion-level warrant burden and shows why success on moral or social usefulness would not establish Christianity's supernatural core."
+          },
+          "precisionClarity": {
+            "value": 91,
+            "rationale": "The phrases 'even if all of that were true' and 'with respect to the supernatural claims' sharply delimit the concession and the conclusion, despite the excerpt ending mid-thought."
+          },
+          "calibrationCharity": {
+            "value": 94,
+            "rationale": "Granting the opponent's entire social-benefit account for argument's sake is strongly charitable, and the resulting conclusion is limited to what that premise cannot establish."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The conditional concession cleanly separates beneficial social effects from evidential warrant for supernatural claims, exposing the decisive inferential gap without internal tension."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "Because the rebuttal grants the historical-benefit premise arguendo, its central support is the sound epistemic distinction that usefulness alone does not verify supernatural truth."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "It answers both the broad altruism-and-hope appeal and the Roman-influence refinement at their shared bridge, even conditionally granting their strongest factual premise."
+          },
+          "relevanceBurden": {
+            "value": 92,
+            "rationale": "The move directly protects the motion-level warrant objection by showing why conceded moral benefits would not discharge the burden concerning Christianity's supernatural core."
+          },
+          "precisionClarity": {
+            "value": 89,
+            "rationale": "The distinction among social benefit, rational belief, and core supernatural claims is concise and stable, with only the exact contents of the supernatural core left implicit."
+          },
+          "calibrationCharity": {
+            "value": 91,
+            "rationale": "The explicit 'even if' concession treats the opposing historical claim generously and limits the conclusion to what social benefit fails to establish."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 92,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 83,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 93,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 93,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 90,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 93,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 90,
+    "relatedMoves": [
+      {
+        "moveId": "pro-christianity-explains-altruism-hope",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Christianity better explains costly concern beyond one's group, sacrificial love, and durable hope than Knechtle's characterization of evolution does.",
+        "sourceExcerpt": "and then I would say Christianity makes the most sense when it comes to our incredible devotion as a society now to Justice and to helping those who are outside of our own Social Circle or even National Circle what's the reasoning behind it from an evolutionary perspective everything is just supposed to be naturally violent and yet why do we all sudden have just this incredible Focus to help those who are different from us in ways that doesn't benefit us at all and I would say the Judo Christian values are the reason why they've come into our culture and they've radically impacted things and so you see things like sympathy compassion Agape loves sacrificial love you see things like hope you know we are irredeemably hope-based creatures and I don't think you can get there without a firm Eternal understanding of what"
+      },
+      {
+        "moveId": "pro-jesus-transformed-roman-morality",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "The contrast between ordinary Roman practices and the movement's egalitarian moral changes supports Christianity's distinctive historical influence.",
+        "sourceExcerpt": "simply going back to the Roman Empire what we're talking about when it came to who Jesus was what his environment was how he made changes connected to the rationality perhaps of whether this guy was even God or what this movement looked like my whole point was it was totally natural to have a slave a mistress and a wife for a male and do whatever you want in any orifice you want it was totally natural it would have been extremely unnatural for us to have said hey the races they're all equal by no means whatsoever and that's why you have so many philosophers writing about that and so my whole point is not"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Even if Christianity improved society, usefulness would not make belief in its core supernatural claims rational within the debate’s dispute over whether Christianity possesses rational warrant.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that It directly answers both the broad appeal to Christianity's social value and, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because Because the move exposes a categorical evidential gap while granting the historical, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why even if christianity improved society usefulness would not make belief in its core supernatural claims rational, answer the strongest competing explanation, and show decisive contact with pro-christianity-explains-altruism-hope, pro-jesus-transformed-roman-morality under a consistently applied evidential standard. Locked score: 90 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-18/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-18/schema.json",
+    "shape": {
+      "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

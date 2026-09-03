@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 15,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-christianity-explains-altruism-hope.description",
+    "moveProse.pro-christianity-explains-altruism-hope.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-christianity-explains-altruism-hope",
+    "sectionId": "moral-experiential-fit",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 208,
+      "endEvent": 230,
+      "startMs": 437699,
+      "endMs": 492479,
+      "excerpt": "and then I would say Christianity makes the most sense when it comes to our incredible devotion as a society now to Justice and to helping those who are outside of our own Social Circle or even National Circle what's the reasoning behind it from an evolutionary perspective everything is just supposed to be naturally violent and yet why do we all sudden have just this incredible Focus to help those who are different from us in ways that doesn't benefit us at all and I would say the Judo Christian values are the reason why they've come into our culture and they've radically impacted things and so you see things like sympathy compassion Agape loves sacrificial love you see things like hope you know we are irredeemably hope-based creatures and I don't think you can get there without a firm Eternal understanding of what"
+    },
+    "quoteEligibleExactSpans": [
+      "Christianity makes the most sense",
+      "help those who are different from us",
+      "we are irredeemably hope-based creatures"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Knechtle's source-locked opening statement.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "pro-central-experiential-fit",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Christianity better explains costly concern beyond one's group, sacrificial love, and durable hope than Knechtle's characterization of evolution does.",
+    "inventoryRationale": "This is the opening's main inference from lived moral experience to Christianity's rational fit.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-christianity-explains-altruism-hope",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 54,
+            "rationale": "The route from out-group concern and hope to Christianity is intelligible, but treating evolution as simply violent creates a weak contrast and leaves the comparative inference incomplete."
+          },
+          "evidenceWarrant": {
+            "value": 39,
+            "rationale": "The excerpt asserts that costly concern does not benefit us and that Judeo-Christian values caused it, without historical support, evolutionary comparison, or evidence connecting hope to an eternal reality."
+          },
+          "responsiveness": {
+            "value": 78,
+            "rationale": "As a constructive move, it squarely addresses the motion through the announced experiential-fit burden, though it does not anticipate obvious natural accounts of cooperation and hope."
+          },
+          "relevanceBurden": {
+            "value": 80,
+            "rationale": "Altruism, sacrificial love, and hope directly advance the pro side's central experiential-fit bridge, but cultural influence and existential appeal alone do not complete rational warrant."
+          },
+          "precisionClarity": {
+            "value": 57,
+            "rationale": "The examples of sympathy, compassion, sacrificial love, and hope are clear, while phrases such as 'everything' being naturally violent and 'can't get there' leave scope and causal meaning unstable."
+          },
+          "calibrationCharity": {
+            "value": 46,
+            "rationale": "Calling Christianity the best explanation rests on a notably uncharitable sketch of evolution and overstates the exclusivity of Christian access to altruism and durable hope."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-christianity-explains-altruism-hope",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 55,
+            "rationale": "The inference from altruism and hope to Christian explanation is intelligible, but the contrast with an allegedly violence-only evolutionary account creates a weak either-or bridge."
+          },
+          "evidenceWarrant": {
+            "value": 48,
+            "rationale": "The span identifies sympathy, sacrificial love, and out-group help, yet offers no comparative historical or scientific support that Christianity uniquely produced or best explains them."
+          },
+          "responsiveness": {
+            "value": 68,
+            "rationale": "As an opening constructive, it addresses the motion through experiential fit, though it does not anticipate the important distinction between usefulness and supernatural truth."
+          },
+          "relevanceBurden": {
+            "value": 76,
+            "rationale": "The move directly advances the locked experiential-fit burden, but cultural and psychological explanatory fit alone leaves the motion-level warrant for Christianity incomplete."
+          },
+          "precisionClarity": {
+            "value": 70,
+            "rationale": "The examples of out-group aid, sacrificial love, and hope are understandable, but 'most sense' and the required 'firm Eternal understanding' remain underspecified."
+          },
+          "calibrationCharity": {
+            "value": 42,
+            "rationale": "Saying evolution makes everything naturally violent substantially understates evolutionary accounts of cooperation, and the claimed necessity of eternal understanding is markedly overconfident."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 55,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 39,
+        "rationale": "The excerpt asserts that costly concern does not benefit us and that Judeo-Christian values caused it, without historical support, evolutionary comparison, or evidence connecting hope to an eternal reality.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a more completely identifies the unsupported historical and evolutionary comparisons and the missing evidential link from human hope to an eternal reality."
+      },
+      "responsiveness": {
+        "value": 78,
+        "rationale": "As a constructive move, it squarely addresses the motion through the announced experiential-fit burden, though it does not anticipate obvious natural accounts of cooperation and hope.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a best applies the constructive-opening rule because the move directly addresses the motion through its experiential-fit burden, even though obvious rival explanations remain untreated."
+      },
+      "relevanceBurden": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 57,
+        "rationale": "The examples of sympathy, compassion, sacrificial love, and hope are clear, while phrases such as 'everything' being naturally violent and 'can't get there' leave scope and causal meaning unstable.",
+        "resolution": "adjudicated-existing-option",
+        "adjudicationRationale": "Option a better accounts for the cumulative clarity defects: unstable scope in the description of evolution, an unclear causal claim, and an unfinished account of what cannot be reached."
+      },
+      "calibrationCharity": {
+        "value": 44,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 59,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Christianity better explains costly concern beyond one's group sacrificial love and durable hope than Knechtle's characterization of evolution does within the debate’s dispute over whether Christianity possesses rational.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that As a constructive move it squarely addresses the motion through the announced, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The excerpt asserts that costly concern does not benefit us and that, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why christianity better explains costly concern beyond one's group sacrificial love and durable hope than knechtle's characterization of evolution, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 59 credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-15/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-15/schema.json",
+    "shape": {
+      "moveId": "pro-christianity-explains-altruism-hope",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

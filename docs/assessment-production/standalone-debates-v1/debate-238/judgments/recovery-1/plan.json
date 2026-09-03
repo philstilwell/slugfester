@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-field-disjoint-recovery-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-recovery-execution",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "frozenAt": "2026-09-02T19:50:16.082Z",
+  "reason": "Two simultaneous monolithic primary-judgment attempts returned no model output and timed out; section-scoped output partitions reduce response size without changing evidence or requested rating fields.",
+  "authorization": {
+    "source": "current installed single-debate runbook and user instruction to complete the existing Debate 238 workflow",
+    "identicalMonolithicRetryForbidden": true,
+    "oneAttemptPerShard": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+      "sha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab",
+      "bytes": 57773
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+      "sha256": "87897c0777cd333e69a249e8d808114d8a4825006077529b29522330aca3df0e",
+      "bytes": 4911
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  },
+  "priorFailures": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/transport-failure-1.json",
+      "sha256": "f8f4049242f3809c1ccf5481ec00b19a5b6f93ac3810c9120ed1170aca676563",
+      "bytes": 1523
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/pass-a/failure-2.json",
+      "sha256": "2ec0b3ba801db06691fda38de1b5469f9c79b1a0a964ba798e3a315a9333579f",
+      "bytes": 538
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/pass-b/failure-2.json",
+      "sha256": "9a3419a711ae3c44b2beb34cf516cd6d7d8c6fcb22f29f6a08fc9d383d11ee3f",
+      "bytes": 538
+    }
+  ],
+  "controls": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "directIncrementalCostUsd": 0,
+    "completeInventoryVisibleToEveryShard": true,
+    "ratingsAndBurdenFieldsPartitionedWithoutOverlap": true,
+    "otherShardOutputsUnavailable": true,
+    "calculatedScoresUnavailable": true,
+    "publicationUnavailable": true,
+    "timeoutMsPerShard": 600000,
+    "oneAttemptPerShard": true,
+    "simultaneousLaunchOnlyWithinCorrespondingPassPair": true
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "shards": [
+        {
+          "shardId": "section-01-epistemic-warrant",
+          "kind": "move-ratings",
+          "sectionId": "epistemic-warrant",
+          "moveIds": [
+            "con-rationality-requires-reality-consistency",
+            "con-communicative-god-leaves-burden-unmet",
+            "pro-limited-evidence-preserves-free-trust",
+            "pro-multifaceted-return-to-faith",
+            "con-evidentiary-warrant-can-differ-by-person"
+          ]
+        },
+        {
+          "shardId": "section-02-scripture-testimony",
+          "kind": "move-ratings",
+          "sectionId": "scripture-testimony",
+          "moveIds": [
+            "pro-jesus-claims-divinity",
+            "pro-gospel-transmission-reliability",
+            "con-report-cannot-establish-forgiveness",
+            "con-historical-evidence-can-be-source-strengthened"
+          ]
+        },
+        {
+          "shardId": "section-03-resurrection-miracles",
+          "kind": "move-ratings",
+          "sectionId": "resurrection-miracles",
+          "moveIds": [
+            "pro-resurrection-cumulative-indicia",
+            "con-supernatural-claims-undemonstrated",
+            "con-scriptural-story-is-not-miracle-evidence",
+            "pro-six-source-resurrection-reply",
+            "con-observed-effect-needs-causal-link"
+          ]
+        },
+        {
+          "shardId": "section-04-moral-experiential-fit",
+          "kind": "move-ratings",
+          "sectionId": "moral-experiential-fit",
+          "moveIds": [
+            "pro-christianity-explains-altruism-hope",
+            "con-natural-account-of-cooperation",
+            "pro-jesus-transformed-roman-morality",
+            "con-social-benefit-does-not-warrant-supernatural-core",
+            "con-religious-desire-does-not-show-truth"
+          ]
+        },
+        {
+          "shardId": "section-05-divine-character",
+          "kind": "move-ratings",
+          "sectionId": "divine-character",
+          "moveIds": [
+            "pro-love-and-wrath-are-coherent",
+            "con-biblical-violence-challenges-character",
+            "con-forgiveness-and-hell-undermine-justice"
+          ]
+        },
+        {
+          "shardId": "burden-completion-adjustments",
+          "kind": "burden-adjustments",
+          "sectionId": null,
+          "moveIds": []
+        }
+      ]
+    },
+    {
+      "pass": "pass-b",
+      "shards": [
+        {
+          "shardId": "section-01-epistemic-warrant",
+          "kind": "move-ratings",
+          "sectionId": "epistemic-warrant",
+          "moveIds": [
+            "con-rationality-requires-reality-consistency",
+            "con-communicative-god-leaves-burden-unmet",
+            "pro-limited-evidence-preserves-free-trust",
+            "pro-multifaceted-return-to-faith",
+            "con-evidentiary-warrant-can-differ-by-person"
+          ]
+        },
+        {
+          "shardId": "section-02-scripture-testimony",
+          "kind": "move-ratings",
+          "sectionId": "scripture-testimony",
+          "moveIds": [
+            "pro-jesus-claims-divinity",
+            "pro-gospel-transmission-reliability",
+            "con-report-cannot-establish-forgiveness",
+            "con-historical-evidence-can-be-source-strengthened"
+          ]
+        },
+        {
+          "shardId": "section-03-resurrection-miracles",
+          "kind": "move-ratings",
+          "sectionId": "resurrection-miracles",
+          "moveIds": [
+            "pro-resurrection-cumulative-indicia",
+            "con-supernatural-claims-undemonstrated",
+            "con-scriptural-story-is-not-miracle-evidence",
+            "pro-six-source-resurrection-reply",
+            "con-observed-effect-needs-causal-link"
+          ]
+        },
+        {
+          "shardId": "section-04-moral-experiential-fit",
+          "kind": "move-ratings",
+          "sectionId": "moral-experiential-fit",
+          "moveIds": [
+            "pro-christianity-explains-altruism-hope",
+            "con-natural-account-of-cooperation",
+            "pro-jesus-transformed-roman-morality",
+            "con-social-benefit-does-not-warrant-supernatural-core",
+            "con-religious-desire-does-not-show-truth"
+          ]
+        },
+        {
+          "shardId": "section-05-divine-character",
+          "kind": "move-ratings",
+          "sectionId": "divine-character",
+          "moveIds": [
+            "pro-love-and-wrath-are-coherent",
+            "con-biblical-violence-challenges-character",
+            "con-forgiveness-and-hell-undermine-justice"
+          ]
+        },
+        {
+          "shardId": "burden-completion-adjustments",
+          "kind": "burden-adjustments",
+          "sectionId": null,
+          "moveIds": []
+        }
+      ]
+    }
+  ]
+}

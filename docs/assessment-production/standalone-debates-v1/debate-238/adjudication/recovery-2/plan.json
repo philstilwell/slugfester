@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-built-in-recovery-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-exceptional-recovery-execution",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "frozenAt": "2026-09-02T23:51:49.000Z",
+  "authorization": "Proceed with that recommendation.",
+  "authorizationContext": "Use one temporary internal built-in GPT-5.6 Sol reviewer within the current task, with only the frozen 16-dispute packet and rubric, no scores or publication material, and a separate output path.",
+  "reason": "The authenticated command-line surface timed out first on the complete 16-dispute adjudication and then on the first one-dispute recovery shard, while built-in isolated reviewers successfully completed the primary-judgment recovery.",
+  "inputs": {
+    "packet": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/packet.json",
+      "sha256": "fe05c5eadddd5172b993435617df80eefa998e813f0442d8b8b0f37fca48e5a4",
+      "bytes": 62859,
+      "disputes": 16
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    },
+    "monolithicFailure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/failure-1.json",
+      "sha256": "33fe8fa1183f4916d59595a3a9357e6206f333509a05cb877b8b1d7ac29d3037"
+    },
+    "commandLineRecoveryFailure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-1/failures/01-pro-gospel-transmission-reliability-precisionClarity.json",
+      "sha256": "e6082ffdb3f3a0664f4a2019eb10d6780bd3712408adec8bc07fe42384ac3db4"
+    },
+    "commandLineRecoveryExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-1/execution-incomplete.json",
+      "sha256": "368a8e2f053ceedcb3c6bb24e09f407c747bc4416655259b7bbd99c29c610284"
+    }
+  },
+  "executionControls": {
+    "surface": "built-in-collaboration-subagent",
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "freshContext": true,
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "attempts": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "allowedReadPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/packet.json",
+    "docs/reassessment-rubric-v2.1.md",
+    "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-2/plan.json",
+    "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-2/contract.json"
+  ],
+  "forbiddenInputs": [
+    "primary-judgment files or reviewer identities",
+    "the command-line failure records",
+    "calculated move, section, or overall scores",
+    "winner labels",
+    "publication prose",
+    "fallacy or cognitive-bias reviews",
+    "other debates or legacy assessments"
+  ],
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/recovery-2/output.json"
+}

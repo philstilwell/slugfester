@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 22,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-forgiveness-and-hell-undermine-justice.description",
+    "moveProse.con-forgiveness-and-hell-undermine-justice.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-forgiveness-and-hell-undermine-justice",
+    "sectionId": "divine-character",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 2610,
+      "endEvent": 2624,
+      "startMs": 5840760,
+      "endMs": 5871900,
+      "excerpt": "justice in your system a mass murderer gets forgiven and goes to spend eternity in heaven while his victims go to hell there is no guarantee of Justice in your system that is grossly immoral in the New Testament is grossly worse than the Old Testament because at least then you died and slept with your fathers but now you're going to be punished forever the notion that there's Justice within Christianity is one of the most bizarre lies that people have bought it's embarrassing it's right up there with pretending that it doesn't allow for slavery"
+    },
+    "quoteEligibleExactSpans": [
+      "a mass murderer gets forgiven",
+      "while his victims go to hell",
+      "there is no guarantee of Justice in your system"
+    ],
+    "attributionConfidence": "medium",
+    "attributionBasis": "The unlabeled captions show Dillahunty interrupting Knechtle by rejecting Knechtle's attribution of a desire for judgment to him, after which he states this objection in his characteristic first-person argumentative voice.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-character-tension",
+      "tier": "subsidiary",
+      "polarity": "opposes"
+    },
+    "respondsToIds": [
+      "pro-love-and-wrath-are-coherent"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-forgiveness-hell-to-love-wrath",
+        "targetMoveId": "pro-love-and-wrath-are-coherent",
+        "text": "A system that can forgive a murderer while eternally punishing victims does not guarantee proportionate justice and therefore challenges the claimed coherence of divine love and wrath.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "Christian salvation and eternal punishment can allow a forgiven murderer to enter heaven while victims enter hell, so the system does not guarantee justice and intensifies the moral tension in God's character.",
+    "inventoryRationale": "Unlike the selected catalogue of biblical violence, this directly attacks Knechtle's claim that divine wrath supplies justice by identifying an alleged structural injustice in Christian forgiveness and hell.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-forgiveness-and-hell-undermine-justice",
+        "assessmentConfidence": "medium",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The murderer-and-victims contrast exposes a coherent structural tension between forgiveness, eternal punishment, and proportional justice, but its force depends on unstated conditions governing repentance and salvation."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The contrasting destinations provide a concrete test case for the claimed system, yet the move asserts rather than documents that Christianity permits this exact murderer-and-victims outcome."
+          },
+          "responsiveness": {
+            "value": 87,
+            "rationale": "It directly attacks Knechtle's claim that wrath prevents apathy toward wrongdoing by arguing that forgiveness and hell can distribute ultimate outcomes independently of proportional desert."
+          },
+          "relevanceBurden": {
+            "value": 85,
+            "rationale": "The alleged mismatch between culpability and eternal outcomes strongly advances the character-tension burden and targets the justice rationale offered for combining divine love with wrath."
+          },
+          "precisionClarity": {
+            "value": 77,
+            "rationale": "The mass-murderer and victim comparison sharply states the alleged injustice, though 'your system' does not specify the doctrinal assumptions under which each person's eternal destination follows."
+          },
+          "calibrationCharity": {
+            "value": 52,
+            "rationale": "Calling Christian justice a bizarre lie and embarrassing is substantially more certain and adversarial than the compressed hypothetical warrants, and it bypasses stronger doctrinal replies about repentance and judgment."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-forgiveness-and-hell-undermine-justice",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "If salvation permits a repentant murderer eternal reward while an unbelieving victim receives eternal punishment, the outcome creates a clear proportional-justice challenge to the claim that wrath supplies justice."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The hypothetical draws on recognizable Christian doctrines of forgiveness and hell, but the move does not establish that Knechtle's view assigns either person's fate solely as described or excludes further judgment."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "This reaches the decisive premise of Knechtle's defense: rather than merely objecting to wrath, it argues that the interaction of mercy and eternal punishment can itself fail to deliver justice."
+          },
+          "relevanceBurden": {
+            "value": 88,
+            "rationale": "The alleged murderer-victim reversal directly supports the character-tension bridge and attacks the proposed justice rationale for wrath, with immediate consequence for the claimed coherence of divine attributes."
+          },
+          "precisionClarity": {
+            "value": 75,
+            "rationale": "The contrasting destinies make the objection readily auditable, but 'gets forgiven' and 'victims go to hell' omit the belief, repentance, and culpability conditions needed to specify the scenario fully."
+          },
+          "calibrationCharity": {
+            "value": 49,
+            "rationale": "Calling Christian justice a bizarre lie and grossly immoral expresses certainty far beyond the compressed hypothetical, while giving no hearing to repentance, differing culpability, or alternative accounts of hell."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 79,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 64,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 88,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 87,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 76,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 51,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 76,
+    "relatedMoves": [
+      {
+        "moveId": "pro-love-and-wrath-are-coherent",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Divine love and wrath are coherent because love can require opposition to what harms people, while love without justice could become apathetic toward wrongdoing.",
+        "sourceExcerpt": "I mean and with God the consistency matter is he's loving and wrathful and I know Matt Delante does not like the wrathful side of God but in order to love somebody oftentimes you do need to have a type of Wrath in order to go after something that's perhaps is harming them and that's what we see over and over again with God see if you just take a god of love then he can easily become apathetic in the face of true wrongdoing and so that's why you have a nuanced understanding of God with many different attributes that looks inconsistent but couldn't be any more consistent"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Christian salvation and eternal punishment can allow a forgiven murderer to enter heaven while victims enter hell so the system does not guarantee justice and intensifies the moral.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that It directly attacks Knechtle's claim that wrath prevents apathy toward wrongdoing by, making the move’s inferential contribution and assessable. Principal limitation: Its calibration and charity remains constrained because Calling Christian justice a bizarre lie and embarrassing is substantially more certain, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why christian salvation and eternal punishment can allow a forgiven murderer to enter heaven while victims enter hell so, answer the competing explanation, and show contact with pro-love-and-wrath-are-coherent under a consistently applied evidential standard. Locked score: 76 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-22/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-22/schema.json",
+    "shape": {
+      "moveId": "con-forgiveness-and-hell-undermine-justice",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

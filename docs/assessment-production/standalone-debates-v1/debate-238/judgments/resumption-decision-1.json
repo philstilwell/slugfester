@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-resumption-decision",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "replacement-condition-not-met",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "decidedAt": "2026-09-02T20:25:08.000Z",
+  "authorization": "Run one debate-neutral transport health check and, only if it passes, one exceptional replacement attempt for the exhausted Section 1 pass-a and pass-b judgment shards.",
+  "healthCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/transport-health-check-1.json",
+    "sha256": "22ec089bbff684701bedc713ca3cb5014bcb23b8502d84f0c1365713596a5f4e",
+    "status": "failed",
+    "timedOut": true,
+    "observedFinalText": null
+  },
+  "decision": {
+    "exceptionalSection1ReplacementLaunched": false,
+    "reason": "The user's condition required the debate-neutral health check to pass. It returned no model output and timed out, so launching the replacement pair was not authorized.",
+    "debateStatePreserved": true,
+    "scoresCalculated": false,
+    "publicationStarted": false,
+    "commitCreated": false,
+    "pullRequestOpened": false
+  },
+  "cost": {
+    "directIncrementalCostUsd": 0,
+    "paidTranscriptionCalls": 0
+  }
+}

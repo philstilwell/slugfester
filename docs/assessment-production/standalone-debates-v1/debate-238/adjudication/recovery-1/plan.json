@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-field-disjoint-recovery-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-recovery-execution",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "frozenAt": "2026-09-02T23:41:40.000Z",
+  "reason": "The healthy authenticated command-line surface exceeded ten minutes on the monolithic 16-resolution response without creating an accepted output.",
+  "inputs": {
+    "packet": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/packet.json",
+      "sha256": "fe05c5eadddd5172b993435617df80eefa998e813f0442d8b8b0f37fca48e5a4"
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    },
+    "failure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/failure-1.json",
+      "sha256": "33fe8fa1183f4916d59595a3a9357e6206f333509a05cb877b8b1d7ac29d3037"
+    },
+    "diagnosis": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/failure-diagnosis-1.json",
+      "sha256": "3367879d6449b44a2be1f1d32f8cfca11cad5c198058f88671f5692c74cc1d8e"
+    }
+  },
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "controls": {
+    "identicalMonolithicRetryForbidden": true,
+    "shardUnit": "one-dispute-resolution",
+    "freshEphemeralContextPerShard": true,
+    "oneAttemptPerShard": true,
+    "sequentialExecution": true,
+    "otherDisputesUnavailable": true,
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "userConfigurationDisabled": true,
+    "projectRulesDisabled": true,
+    "apiKeysRemoved": true,
+    "readOnlySandbox": true,
+    "timeoutMsPerShard": 120000,
+    "directIncrementalCostUsd": 0
+  },
+  "disputeIdsInRequiredOrder": [
+    "pro-gospel-transmission-reliability:precisionClarity",
+    "pro-christianity-explains-altruism-hope:evidenceWarrant",
+    "pro-christianity-explains-altruism-hope:responsiveness",
+    "pro-christianity-explains-altruism-hope:precisionClarity",
+    "con-scriptural-story-is-not-miracle-evidence:logicalCoherence",
+    "pro-multifaceted-return-to-faith:logicalCoherence",
+    "pro-multifaceted-return-to-faith:evidenceWarrant",
+    "pro-multifaceted-return-to-faith:responsiveness",
+    "pro-multifaceted-return-to-faith:relevanceBurden",
+    "pro-multifaceted-return-to-faith:precisionClarity",
+    "pro-multifaceted-return-to-faith:calibrationCharity",
+    "pro-six-source-resurrection-reply:assessmentConfidence",
+    "con-evidentiary-warrant-can-differ-by-person:assessmentConfidence",
+    "con-forgiveness-and-hell-undermine-justice:assessmentConfidence",
+    "burdenCompletionAdjustment:pro",
+    "burdenCompletionAdjustment:con"
+  ],
+  "finalOutputPath": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/output.json"
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 9,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-historical-evidence-can-be-source-strengthened.description",
+    "moveProse.con-historical-evidence-can-be-source-strengthened.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-historical-evidence-can-be-source-strengthened",
+    "sectionId": "scripture-testimony",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 3318,
+      "endEvent": 3338,
+      "startMs": 7445400,
+      "endMs": 7496280,
+      "excerpt": "what is my definition of historical evidence I think I probably need the context in which to use but basically it is uh evidence from the past that is the best that we have currently well I mean I guess suppose it wouldn't necessarily be the best so historical evidence is evidence that isn't necessarily empirically verifiable but is reported from the past and we can uh for historical claims we can look at um for example who's making the claim how many different sources is it coming from is it coming from competing sources and the stronger the uh the evidence is stronger when you have for example the losing side saying here's what happened and The Winning Side saying here's what happened and those are consistent um because we don't have a time machine"
+    },
+    "quoteEligibleExactSpans": [
+      "historical evidence is evidence that isn't necessarily empirically verifiable",
+      "how many different sources is it coming from",
+      "is it coming from competing sources"
+    ],
+    "attributionConfidence": "medium",
+    "attributionBasis": "The moderator explicitly addresses the question to Matt, and the ensuing answer states Dillahunty's evidentiary terminology; source captions have no embedded speaker labels.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-testimony-insufficient",
+      "tier": "subsidiary",
+      "polarity": "qualifies"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Historical evidence need not be empirically verifiable, and its strength can increase with multiple sources, especially when competing parties independently report consistent facts.",
+    "inventoryRationale": "This is an important qualification to Dillahunty's testimony critique: he does not reject historical reports categorically but identifies source multiplicity, independence, and adverse or competing attestation as legitimate strengthening conditions.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-historical-evidence-can-be-source-strengthened",
+        "assessmentConfidence": "medium",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The account coherently allows non-empirical historical evidence while explaining why multiplicity and agreement across competing sources can strengthen confidence without requiring a time machine."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "Source number and agreement between opposing parties are relevant historical checks, but the account remains general and does not discuss dependence, provenance, genre, or agreement caused by shared sources."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "In answering the request for his definition, the move directly clarifies that his testimony critique does not categorically reject historical reports and identifies conditions that can strengthen them."
+          },
+          "relevanceBurden": {
+            "value": 83,
+            "rationale": "The qualification materially sharpens the locked testimony-insufficiency bridge by giving a usable comparative standard, although it does not itself apply that standard to the Gospel sources at issue."
+          },
+          "precisionClarity": {
+            "value": 75,
+            "rationale": "The central criteria are recoverable, but the speaker initially calls historical evidence 'the best' and immediately retreats, and the relation between multiple and genuinely independent sources stays implicit."
+          },
+          "calibrationCharity": {
+            "value": 89,
+            "rationale": "The speaker openly corrects an overbroad first formulation, concedes that historical evidence need not be empirically verifiable, and proportionately describes source features as strengthening rather than proving."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-historical-evidence-can-be-source-strengthened",
+        "assessmentConfidence": "medium",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The account coherently treats past reports as gradable evidence and explains why agreement across multiple, especially competing, sources can strengthen a historical claim."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "Source number, source identity, competing provenance, and cross-side consistency are concrete evidential criteria, though independence and the reliability of each reporter remain underdeveloped."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "In answering what counts as historical evidence, the move directly clarifies the standard governing Gospel testimony instead of categorically excluding non-empirical historical reports."
+          },
+          "relevanceBurden": {
+            "value": 83,
+            "rationale": "The qualification materially refines the testimony-insufficiency burden by identifying when reported evidence from the past gains strength despite the absence of a time machine."
+          },
+          "precisionClarity": {
+            "value": 73,
+            "rationale": "The usable criteria are clear, but the opening self-correction over whether historical evidence is 'the best' and the loose phrase 'reported from the past' make the definition less exact."
+          },
+          "calibrationCharity": {
+            "value": 90,
+            "rationale": "The move explicitly concedes that historical evidence need not be empirically verifiable and gives favorable strengthening conditions, fairly limiting the earlier critique of scriptural reports."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 85,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 82,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 83,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 74,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 90,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "medium",
+    "lockedScore": 82,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Historical evidence need not be empirically verifiable, and its strength can increase with multiple sources, especially when competing parties independently report consistent facts.",
+    "critique": "Strongest feature: Its calibration and charity is best captured by the assessment that The speaker openly corrects an overbroad first formulation concedes that historical evidence, making the move’s inferential contribution and assessable. Principal limitation: Its precision and clarity remains constrained because The central criteria are recoverable but the speaker initially calls historical evidence, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why historical evidence need not be empirically verifiable and its strength can increase with multiple sources especially when competing, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 82 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved,, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-09/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-09/schema.json",
+    "shape": {
+      "moveId": "con-historical-evidence-can-be-source-strengthened",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

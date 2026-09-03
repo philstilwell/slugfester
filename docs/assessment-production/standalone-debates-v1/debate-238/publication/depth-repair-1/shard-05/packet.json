@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 5,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-evidentiary-warrant-can-differ-by-person.description",
+    "moveProse.con-evidentiary-warrant-can-differ-by-person.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-evidentiary-warrant-can-differ-by-person",
+    "sectionId": "epistemic-warrant",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 2485,
+      "endEvent": 2497,
+      "startMs": 5569320,
+      "endMs": 5600219,
+      "excerpt": "of whether or not he is warranted and is rational in believing it our foundation of what is rational is based on what evidence we actually have so it is possible for a God to exist and choose to reveal himself to Steward in a way that Stewart can have evidential warrant and not reveal himself to me uh so that I don't have evidential warrant but if I were to believe in that circumstance I would be behaving irrational irrationally my belief would be irrational"
+    },
+    "quoteEligibleExactSpans": [
+      "our foundation of what is rational is based on what evidence we actually have",
+      "not reveal himself to me",
+      "my belief would be irrational"
+    ],
+    "attributionConfidence": "medium",
+    "attributionBasis": "The unlabeled captions follow a moderator question expressly addressed to Matt, and the answer continues Dillahunty's stated evidentiary framework; the transcript inconsistently renders Knechtle's first name.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-central-reality-test",
+      "tier": "central",
+      "polarity": "qualifies"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Whether a belief is rational can differ between people because evidentiary warrant depends on the evidence available to each person, even if the underlying proposition has one objective truth value.",
+    "inventoryRationale": "This materially qualifies Dillahunty's general reality-consistency standard by explaining how unequal access to evidence can make the same belief warranted for one person and unwarranted for another.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-evidentiary-warrant-can-differ-by-person",
+        "assessmentConfidence": "medium",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The hypothetical consistently distinguishes objective truth from person-relative warrant: unequal evidence can rationally justify different beliefs without changing reality."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The possible unequal revelation scenario effectively demonstrates the conceptual distinction, though it remains hypothetical rather than evidence about either debater's actual access."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The move directly clarifies the debate's rationality standard by allowing that Knechtle could possess warrant unavailable to Dillahunty."
+          },
+          "relevanceBurden": {
+            "value": 88,
+            "rationale": "Explaining that rational warrant tracks evidence actually available materially refines the con side's central reality-test burden without inventing a contrary burden."
+          },
+          "precisionClarity": {
+            "value": 87,
+            "rationale": "The contrast between God's existence, revelation to one person, and the rational status of each person's belief is explicit and easy to reconstruct."
+          },
+          "calibrationCharity": {
+            "value": 93,
+            "rationale": "The move expressly concedes that God could exist and that Knechtle could be warranted, while limiting Dillahunty's conclusion to evidence available to himself."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-evidentiary-warrant-can-differ-by-person",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The hypothetical consistently distinguishes one objective state of affairs from person-relative rational warrant based on unequal access to relevant evidence."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The God-reveals-to-one-person example clearly supports the conceptual distinction, though the move does not provide a fuller account of evidential thresholds."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "The move directly clarifies how the speaker's reality-based standard applies when two people possess different evidence for the same proposition."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It materially qualifies the central con burden by locating rationality in evidence actually available, preventing an overly broad claim about every believer."
+          },
+          "precisionClarity": {
+            "value": 88,
+            "rationale": "The contrast between God's possible existence, revelation to Stuart, non-revelation to Matt, and each person's resulting warrant is explicit and auditable."
+          },
+          "calibrationCharity": {
+            "value": 92,
+            "rationale": "The speaker expressly allows that God could exist and another person could possess genuine evidential warrant, a notably proportionate treatment of disagreement."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 89,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 86,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 88,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 88,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 93,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 86,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Whether a belief is rational can differ between people because evidentiary warrant depends on the evidence available to each person even if the underlying proposition has one objective.",
+    "critique": "Strongest feature: Its calibration and charity is best captured by the assessment that The move expressly concedes that God could exist and that Knechtle could, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The possible unequal revelation scenario effectively demonstrates the conceptual distinction though it, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why whether a belief is rational can differ between people because evidentiary warrant depends on the evidence available to, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 86 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-05/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-05/schema.json",
+    "shape": {
+      "moveId": "con-evidentiary-warrant-can-differ-by-person",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

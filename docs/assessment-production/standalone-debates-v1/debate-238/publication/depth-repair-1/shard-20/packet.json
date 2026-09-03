@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 20,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-love-and-wrath-are-coherent.description",
+    "moveProse.pro-love-and-wrath-are-coherent.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-love-and-wrath-are-coherent",
+    "sectionId": "divine-character",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 1138,
+      "endEvent": 1153,
+      "startMs": 2501099,
+      "endMs": 2545560,
+      "excerpt": "I mean and with God the consistency matter is he's loving and wrathful and I know Matt Delante does not like the wrathful side of God but in order to love somebody oftentimes you do need to have a type of Wrath in order to go after something that's perhaps is harming them and that's what we see over and over again with God see if you just take a god of love then he can easily become apathetic in the face of true wrongdoing and so that's why you have a nuanced understanding of God with many different attributes that looks inconsistent but couldn't be any more consistent"
+    },
+    "quoteEligibleExactSpans": [
+      "he's loving and wrathful",
+      "you do need to have a type of Wrath",
+      "apathetic in the face of true wrongdoing"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Knechtle speaks in first person and directly addresses Dillahunty while defending the coherence of God's attributes.",
+    "importance": 2,
+    "burdenContact": {
+      "bridgeId": "pro-subsidiary-divine-character",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Divine love and wrath are coherent because love can require opposition to what harms people, while love without justice could become apathetic toward wrongdoing.",
+    "inventoryRationale": "This supplies Knechtle's explicit reconciliation of two attributes presented as potentially inconsistent.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-love-and-wrath-are-coherent",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The inference is intelligible: love can motivate opposition to harm, so wrath and love need not contradict; however, it leaves implicit why divine wrath is always the proportionate form of that opposition."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "Knechtle supplies a recognizable protective-love analogy and the contrast with apathy toward wrongdoing, but gives no concrete divine case showing that the attributed wrath actually protects rather than harms."
+          },
+          "responsiveness": {
+            "value": 78,
+            "rationale": "As a constructive defense, it squarely addresses the anticipated tension between a loving and wrathful God, though it does not yet engage the hardest biblical examples of punishment."
+          },
+          "relevanceBurden": {
+            "value": 79,
+            "rationale": "Reconciling love with wrath materially advances the subsidiary burden of presenting a coherent divine character, but compatibility alone does not establish the justice of particular punishments."
+          },
+          "precisionClarity": {
+            "value": 73,
+            "rationale": "The protective role assigned to wrath and the apathy contrast make the core argument recoverable, while terms such as 'type of Wrath' and 'oftentimes' leave its scope and limits vague."
+          },
+          "calibrationCharity": {
+            "value": 70,
+            "rationale": "The move fairly acknowledges that love and wrath can appear inconsistent, but saying they 'couldn't be any more consistent' overstates what the brief protective-love analogy establishes."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-love-and-wrath-are-coherent",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The distinction is intelligible: love can motivate opposition to harms, so wrath need not contradict love. The move leaves implicit why divine wrath in particular reliably tracks protective justice rather than some other response."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "Knechtle offers a plausible everyday warrant about confronting what harms a loved person, but supplies no concrete divine case showing that the wrath attributed to God operates in that protective way."
+          },
+          "responsiveness": {
+            "value": 79,
+            "rationale": "As a constructive move, it directly addresses the known coherence burden by explaining how love and wrath can coexist, though it does not anticipate the difficult biblical applications raised later."
+          },
+          "relevanceBurden": {
+            "value": 81,
+            "rationale": "Reconciling the two divine attributes materially supports the subsidiary divine-character bridge, but mere compatibility does not by itself establish Christianity's broader rational warrant."
+          },
+          "precisionClarity": {
+            "value": 77,
+            "rationale": "The contrast between protective wrath and apathetic love is easy to reconstruct, although 'a type of wrath' and the boundary between just opposition and punishment remain underspecified."
+          },
+          "calibrationCharity": {
+            "value": 66,
+            "rationale": "The core claim is framed as an often-true compatibility rather than a universal necessity, but saying the attributes 'couldn't be any more consistent' outruns the limited analogy offered."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 77,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 62,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 79,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 80,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 75,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 68,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 74,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Divine love and wrath are coherent because love can require opposition to what harms people, while love without justice could become apathetic toward wrongdoing.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that Reconciling love with wrath materially advances the subsidiary burden of presenting a, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because Knechtle supplies a recognizable protective-love analogy and the contrast with apathy toward, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why divine love and wrath are coherent because love can require opposition to what harms people while love without, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 74 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-20/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-20/schema.json",
+    "shape": {
+      "moveId": "pro-love-and-wrath-are-coherent",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

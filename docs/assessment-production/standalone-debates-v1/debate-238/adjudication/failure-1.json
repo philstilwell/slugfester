@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-monolithic-adjudication-timeout",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "attemptCount": 1,
+  "retryCount": 0,
+  "timeoutMs": 600000,
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/packet.json",
+    "sha256": "fe05c5eadddd5172b993435617df80eefa998e813f0442d8b8b0f37fca48e5a4",
+    "bytes": 62859,
+    "disputes": 16
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/execution-plan.json",
+    "sha256": "239be3c564d2e438edfd9f354ace238a011f32c7d2371dd7404e73366acc0d94"
+  },
+  "outcome": {
+    "acceptedOutputCreated": false,
+    "repositoryOutputPathExists": false,
+    "scoresCalculated": false,
+    "publicationCreated": false,
+    "childProcessTerminated": true,
+    "temporaryDirectoriesRemoved": true
+  },
+  "diagnosticLimitation": "The first runner retained stdout and stderr only in memory and removed the temporary directory in its failure cleanup, so no raw diagnostic stream survived the timeout. This controller defect does not authorize replay of the monolithic attempt.",
+  "detectedAt": "2026-09-02T23:40:37.000Z"
+}

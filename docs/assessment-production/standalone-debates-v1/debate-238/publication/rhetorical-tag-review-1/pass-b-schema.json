@@ -1,0 +1,366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "pass",
+    "reviewerRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "reviewedMoveIds",
+    "reviewedOverallBlunderIds",
+    "candidateReviews",
+    "overallBlunderCandidateReviews",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.1-standalone-blind-rhetorical-review"
+    },
+    "protocolId": {
+      "const": "assessment-production-standalone-debate-v1"
+    },
+    "status": {
+      "const": "complete-and-schema-valid"
+    },
+    "debateNumber": {
+      "const": "238"
+    },
+    "debateId": {
+      "const": "knechtle-dillahunty-christianity-rational-2023"
+    },
+    "pass": {
+      "const": "pass-b"
+    },
+    "reviewerRole": {
+      "const": "isolated-blind-rhetorical-reviewer"
+    },
+    "assessmentModel": {
+      "const": "5.6 Sol"
+    },
+    "reasoningEffort": {
+      "const": "high"
+    },
+    "reviewedMoveIds": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "const": "pro-limited-evidence-preserves-free-trust"
+        },
+        {
+          "const": "con-rationality-requires-reality-consistency"
+        },
+        {
+          "const": "pro-multifaceted-return-to-faith"
+        },
+        {
+          "const": "con-communicative-god-leaves-burden-unmet"
+        },
+        {
+          "const": "con-evidentiary-warrant-can-differ-by-person"
+        },
+        {
+          "const": "pro-jesus-claims-divinity"
+        },
+        {
+          "const": "con-report-cannot-establish-forgiveness"
+        },
+        {
+          "const": "pro-gospel-transmission-reliability"
+        },
+        {
+          "const": "con-historical-evidence-can-be-source-strengthened"
+        },
+        {
+          "const": "pro-resurrection-cumulative-indicia"
+        },
+        {
+          "const": "con-supernatural-claims-undemonstrated"
+        },
+        {
+          "const": "pro-six-source-resurrection-reply"
+        },
+        {
+          "const": "con-scriptural-story-is-not-miracle-evidence"
+        },
+        {
+          "const": "con-observed-effect-needs-causal-link"
+        },
+        {
+          "const": "pro-christianity-explains-altruism-hope"
+        },
+        {
+          "const": "con-natural-account-of-cooperation"
+        },
+        {
+          "const": "pro-jesus-transformed-roman-morality"
+        },
+        {
+          "const": "con-social-benefit-does-not-warrant-supernatural-core"
+        },
+        {
+          "const": "con-religious-desire-does-not-show-truth"
+        },
+        {
+          "const": "pro-love-and-wrath-are-coherent"
+        },
+        {
+          "const": "con-biblical-violence-challenges-character"
+        },
+        {
+          "const": "con-forgiveness-and-hell-undermine-justice"
+        }
+      ],
+      "minItems": 22,
+      "maxItems": 22
+    },
+    "reviewedOverallBlunderIds": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "const": "overall-pro-blunder-1"
+        },
+        {
+          "const": "overall-pro-blunder-2"
+        },
+        {
+          "const": "overall-pro-blunder-3"
+        },
+        {
+          "const": "overall-con-blunder-1"
+        },
+        {
+          "const": "overall-con-blunder-2"
+        },
+        {
+          "const": "overall-con-blunder-3"
+        }
+      ],
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "candidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "type",
+          "label",
+          "url",
+          "context",
+          "decision",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "enum": [
+              "pro-limited-evidence-preserves-free-trust",
+              "con-rationality-requires-reality-consistency",
+              "pro-multifaceted-return-to-faith",
+              "con-communicative-god-leaves-burden-unmet",
+              "con-evidentiary-warrant-can-differ-by-person",
+              "pro-jesus-claims-divinity",
+              "con-report-cannot-establish-forgiveness",
+              "pro-gospel-transmission-reliability",
+              "con-historical-evidence-can-be-source-strengthened",
+              "pro-resurrection-cumulative-indicia",
+              "con-supernatural-claims-undemonstrated",
+              "pro-six-source-resurrection-reply",
+              "con-scriptural-story-is-not-miracle-evidence",
+              "con-observed-effect-needs-causal-link",
+              "pro-christianity-explains-altruism-hope",
+              "con-natural-account-of-cooperation",
+              "pro-jesus-transformed-roman-morality",
+              "con-social-benefit-does-not-warrant-supernatural-core",
+              "con-religious-desire-does-not-show-truth",
+              "pro-love-and-wrath-are-coherent",
+              "con-biblical-violence-challenges-character",
+              "con-forgiveness-and-hell-undermine-justice"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "enum": [
+              "https://logfall.com/fallacies/appeal-to-authority/",
+              "https://logfall.com/fallacies/argument-from-ignorance/",
+              "https://logfall.com/fallacies/begging-the-question/",
+              "https://logfall.com/fallacies/equivocation/",
+              "https://logfall.com/fallacies/red-herring/",
+              "https://logfall.com/fallacies/special-pleading/",
+              "https://cogbias.site/biases/ambiguity-effect/",
+              "https://cogbias.site/biases/authority-bias/",
+              "https://cogbias.site/biases/base-rate-neglect/",
+              "https://cogbias.site/biases/belief-bias/",
+              "https://cogbias.site/biases/confirmation-bias/",
+              "https://cogbias.site/biases/scope-neglect/",
+              "https://cogbias.site/biases/subjective-validation/"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "overallBlunderCandidateReviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "blunderId",
+          "type",
+          "label",
+          "url",
+          "context",
+          "decision",
+          "rationale"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "fallacy",
+              "bias"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Appeal to authority",
+              "Argument from ignorance",
+              "Begging the question",
+              "Equivocation",
+              "Red herring",
+              "Special pleading",
+              "Ambiguity effect",
+              "Authority bias",
+              "Base-rate neglect",
+              "Belief bias",
+              "Confirmation bias",
+              "Scope neglect",
+              "Subjective validation"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "enum": [
+              "https://logfall.com/fallacies/appeal-to-authority/",
+              "https://logfall.com/fallacies/argument-from-ignorance/",
+              "https://logfall.com/fallacies/begging-the-question/",
+              "https://logfall.com/fallacies/equivocation/",
+              "https://logfall.com/fallacies/red-herring/",
+              "https://logfall.com/fallacies/special-pleading/",
+              "https://cogbias.site/biases/ambiguity-effect/",
+              "https://cogbias.site/biases/authority-bias/",
+              "https://cogbias.site/biases/base-rate-neglect/",
+              "https://cogbias.site/biases/belief-bias/",
+              "https://cogbias.site/biases/confirmation-bias/",
+              "https://cogbias.site/biases/scope-neglect/",
+              "https://cogbias.site/biases/subjective-validation/"
+            ]
+          },
+          "context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "blunderId": {
+            "type": "string",
+            "enum": [
+              "overall-pro-blunder-1",
+              "overall-pro-blunder-2",
+              "overall-pro-blunder-3",
+              "overall-con-blunder-1",
+              "overall-con-blunder-2",
+              "overall-con-blunder-3"
+            ]
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "comparedEveryMoveAndBlunderAgainstAllDefinitions",
+        "includedAllSeriousAcceptedAndRejectedCandidates",
+        "acceptedOnlyMaterialCatalogMatchesRepresentedInCritiqueOrBlunder",
+        "fallaciesAndBiasesReceivedIdenticalScrutiny",
+        "otherReviewAndProductionTagsUnavailable"
+      ],
+      "properties": {
+        "comparedEveryMoveAndBlunderAgainstAllDefinitions": {
+          "const": true
+        },
+        "includedAllSeriousAcceptedAndRejectedCandidates": {
+          "const": true
+        },
+        "acceptedOnlyMaterialCatalogMatchesRepresentedInCritiqueOrBlunder": {
+          "const": true
+        },
+        "fallaciesAndBiasesReceivedIdenticalScrutiny": {
+          "const": true
+        },
+        "otherReviewAndProductionTagsUnavailable": {
+          "const": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 11,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-supernatural-claims-undemonstrated.description",
+    "moveProse.con-supernatural-claims-undemonstrated.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-supernatural-claims-undemonstrated",
+    "sectionId": "resurrection-miracles",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 461,
+      "endEvent": 488,
+      "startMs": 977220,
+      "endMs": 1038540,
+      "excerpt": "none of the supernatural claims of Christianity have been demonstrated to be true none have ever been demonstrated to be testable falsifiable none of them ever been demonstrated that they actually occurred and how can it then be rational to believe an explanation for something that we can't even verify happened if I have a soul for example I would suggest that people spend more time trying to prove that I have a soul than trying to explain what a soul is or how it works or how to save it or if it needs to be saved that's like skipping past are fairies real and talking about what fairies want where they're hiding how to make them happy Etc Christianity down to its core is wholly incompatible with reality and therefore irrational which is why there are so many unsubstantiated appeals to Miracles and yet no demonstration that these Miracles actually occur I'm not even convinced that Christianity is internally consistent but it's definitely not consistent with the reaction with the rationally demonstrated facts of reality"
+    },
+    "quoteEligibleExactSpans": [
+      "none of the supernatural claims of Christianity have been demonstrated",
+      "something that we can't even verify happened",
+      "no demonstration that these Miracles actually occur"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Dillahunty's source-locked opening statement and directly contests Knechtle's earlier resurrection case.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-central-supernatural-gap",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-resurrection-cumulative-indicia"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-undemonstrated-to-resurrection-indicia",
+        "targetMoveId": "pro-resurrection-cumulative-indicia",
+        "text": "The listed considerations do not demonstrate that a resurrection occurred or make the supernatural explanation testable.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "Christianity's supernatural claims are neither demonstrated to have occurred nor made testable, so they do not warrant its supernatural explanations.",
+    "inventoryRationale": "This directly attacks the evidential step from Knechtle's historical considerations to resurrection.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-supernatural-claims-undemonstrated",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The inference from an unverified event and untested explanation to absent rational warrant is coherent, but the broader claim of incompatibility with reality exceeds that narrower conclusion."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The move identifies the absence of demonstrated occurrence and testability as the evidential gap, yet asserts that no Christian supernatural claim has ever been demonstrated without substantiating that universal."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "It directly challenges the decisive bridge in Knechtle's resurrection case—whether the listed historical considerations establish that the event occurred—without assessing each consideration individually."
+          },
+          "relevanceBurden": {
+            "value": 88,
+            "rationale": "Showing that the alleged miracle and its supernatural explanation remain unverified directly advances the con side's central supernatural-gap burden."
+          },
+          "precisionClarity": {
+            "value": 83,
+            "rationale": "The distinction between verifying an event and elaborating an explanation is clear, although testable, falsifiable, and incompatible with reality are not carefully differentiated."
+          },
+          "calibrationCharity": {
+            "value": 58,
+            "rationale": "The fair demand for demonstration is weakened by categorical language that none were ever demonstrated and Christianity is wholly incompatible with reality, claims broader than the reply supports."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-supernatural-claims-undemonstrated",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The inference from an unverified event and unestablished explanatory link to absent rational warrant is coherent, though testability is asserted as necessary without full defense."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The move identifies the lack of demonstrated miracles but supports sweeping claims that none occurred or are testable mainly by assertion and a fairy analogy."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "It directly attacks the decisive step in Knechtle's cumulative indicia: the listed historical considerations do not themselves verify resurrection or a supernatural explanation."
+          },
+          "relevanceBurden": {
+            "value": 88,
+            "rationale": "The challenge squarely serves the con burden by contesting whether Christianity's central supernatural claim has been connected to reality through demonstrated evidence."
+          },
+          "precisionClarity": {
+            "value": 80,
+            "rationale": "The distinction between verifying an occurrence and explaining it is recoverable, although testable, falsifiable, demonstrated, and reality-compatible are sometimes run together."
+          },
+          "calibrationCharity": {
+            "value": 60,
+            "rationale": "Absolute statements that no supernatural Christian claim has ever been demonstrated and that Christianity is wholly incompatible with reality exceed the support presented here."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 81,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 65,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 83,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 88,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 82,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 59,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 77,
+    "relatedMoves": [
+      {
+        "moveId": "pro-resurrection-cumulative-indicia",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Witness reports, conversions, an empty tomb, immediate proclamation, costly adherence, and the early church's rapid emergence cumulatively support the resurrection.",
+        "sourceExcerpt": "the resurrection evidence I would take a cumulative case typically one Witnesses and how they reported two Skeptics that converted three expectations of the Gospel the way it was presented and the way it was received for Jewish background and understanding of what they were expecting five voluntary persecution suffering six immediate Proclamation seven empty tomb eight the use of women as eyewitnesses which would have been thrown out and then nine I would have said just the start of the early church has a major Paradigm Shift overnight which typically would have taken hundreds of years for that many people to have shifted from something like Judaism to Christianity"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Christianity's supernatural claims are neither demonstrated to have occurred nor made testable so they do not warrant its supernatural explanations within the debate’s dispute over whether Christianity possesses.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that Showing that the alleged miracle and its supernatural explanation remain unverified directly, making the move’s inferential contribution and assessable. Principal limitation: Its calibration and charity remains constrained because The fair demand for demonstration is weakened by categorical language that none, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why christianity's supernatural claims are neither demonstrated to have occurred nor made testable so they do not warrant its, answer the competing explanation, and show contact with pro-resurrection-cumulative-indicia under a applied evidential standard. Locked score: 77 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-11/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-11/schema.json",
+    "shape": {
+      "moveId": "con-supernatural-claims-undemonstrated",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

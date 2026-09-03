@@ -1,0 +1,1476 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-for-two-mutually-blind-complete-reviews",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "sourceLocks": {
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/raw-prose-output-2-after-depth-repair.json",
+      "sha256": "b5fc3bd48bbcbad56f5caf68321a6d1b8d7e1aa335c6027bc3220c535eeb4faf",
+      "bytes": 37915
+    },
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/packet.json",
+      "sha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+      "bytes": 213557
+    },
+    "definitions": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "23fa212e156bf6dc3c695cce1661e19f985ae0bf34741bc863a80f9eb202cc5f",
+      "bytes": 4453
+    }
+  },
+  "policy": {
+    "compareEveryCandidateAgainstEveryExactDefinition": true,
+    "outputEverySeriousCandidateConsideredEvenWhenRejected": true,
+    "acceptOnlyMaterialDefectsAlreadyRepresentedInCritiqueOrBlunder": true,
+    "acceptedContextMustBeSourceSpecificAndContainEightToThirtyFiveWords": true,
+    "weakSupportIncompleteMechanismAndUnexcludedAlternativesAreNotAutomaticallyNamedDefects": true,
+    "contestedPremiseIsNotAutomaticallyBeggingTheQuestion": true,
+    "weakAnalogyIsNotAutomaticallyEquivocation": true,
+    "citationAloneIsNotAppealToAuthority": true,
+    "disagreementOrRhetoricalHarshnessAloneIsNotBeliefBiasOrConfirmationBias": true,
+    "twoLabelsRequireTwoDistinctDefects": true,
+    "emptyAcceptedResultPermitted": true,
+    "fallaciesAndBiasesReceiveIdenticalScrutiny": true,
+    "existingTagsOtherReviewsScoresFrequenciesAndOtherDebatesUnavailable": true
+  },
+  "reviewOrder": "section order, exchange order, pro then con",
+  "definitions": [
+    {
+      "type": "fallacy",
+      "slug": "appeal-to-authority",
+      "label": "Appeal to authority",
+      "definition": "Relying on a person or institution's status as if it settles the argument, especially when the relevant evidence, expertise, or consensus has not been shown.",
+      "externalUrl": "https://logfall.com/fallacies/appeal-to-authority/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "argument-from-ignorance",
+      "label": "Argument from ignorance",
+      "definition": "Treating a claim as true because it has not been disproved, or false because it has not been proved, rather than supplying positive evidence.",
+      "externalUrl": "https://logfall.com/fallacies/argument-from-ignorance/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "begging-the-question",
+      "label": "Begging the question",
+      "definition": "Assuming, directly or indirectly, the very point that needs to be established, so the conclusion is smuggled into the premises.",
+      "externalUrl": "https://logfall.com/fallacies/begging-the-question/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "equivocation",
+      "label": "Equivocation",
+      "definition": "Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.",
+      "externalUrl": "https://logfall.com/fallacies/equivocation/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "red-herring",
+      "label": "Red herring",
+      "definition": "Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.",
+      "externalUrl": "https://logfall.com/fallacies/red-herring/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "special-pleading",
+      "label": "Special pleading",
+      "definition": "Applying an exception or different standard to one side of the argument without giving a principled reason for the difference.",
+      "externalUrl": "https://logfall.com/fallacies/special-pleading/"
+    },
+    {
+      "type": "bias",
+      "slug": "ambiguity-effect",
+      "label": "Ambiguity effect",
+      "definition": "Preferring clearer or more familiar claims over uncertain ones, even when the uncertain option may deserve serious consideration.",
+      "externalUrl": "https://cogbias.site/biases/ambiguity-effect/"
+    },
+    {
+      "type": "bias",
+      "slug": "authority-bias",
+      "label": "Authority bias",
+      "definition": "Giving extra weight to a claim because it comes from a perceived authority, sometimes beyond what the evidence itself supports.",
+      "externalUrl": "https://cogbias.site/biases/authority-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "base-rate-neglect",
+      "label": "Base-rate neglect",
+      "definition": "Underweighting general background rates or prior probabilities while focusing too heavily on a vivid specific case or local detail.",
+      "externalUrl": "https://cogbias.site/biases/base-rate-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "belief-bias",
+      "label": "Belief bias",
+      "definition": "Judging an argument by whether its conclusion feels believable instead of evaluating whether the conclusion follows from the premises.",
+      "externalUrl": "https://cogbias.site/biases/belief-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "confirmation-bias",
+      "label": "Confirmation bias",
+      "definition": "Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information.",
+      "externalUrl": "https://cogbias.site/biases/confirmation-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "scope-neglect",
+      "label": "Scope neglect",
+      "definition": "Failing to adjust judgment in proportion to the scale, number, or magnitude of what is being discussed.",
+      "externalUrl": "https://cogbias.site/biases/scope-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "subjective-validation",
+      "label": "Subjective validation",
+      "definition": "Treating a claim as especially accurate or meaningful because it feels personally resonant or confirms one's private experience.",
+      "externalUrl": "https://cogbias.site/biases/subjective-validation/"
+    }
+  ],
+  "moves": [
+    {
+      "candidateId": "pro-limited-evidence-preserves-free-trust",
+      "kind": "card",
+      "moveId": "pro-limited-evidence-preserves-free-trust",
+      "sectionId": "epistemic-warrant",
+      "sectionTitle": "Rationality, evidence, and epistemic warrant",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "God supplies enough intellectual and affective evidence for a free response, while overwhelming manifestation would yield mere assent rather than trusting relationship.",
+      "sourceSpan": {
+        "startEvent": 777,
+        "endEvent": 795,
+        "startMs": 1688460,
+        "endMs": 1726679,
+        "excerpt": "talks about how God gives us just enough evidence to connect with our heads and our hearts in order for us to make a free decision rather than coercively just showing up and saying you better believe in me here it is no I'm right here right now and secondly but Matt's secondly to that point that's simply going to be a type of mental Ascent that you're going to buy into there's not going to be any type of trusting relationship simply by him proving himself to you right now by showing up right next to your chair just like in Matthew 28 so many of his disciples actually connected with him physically after he rose from the dead and yet they stopped believing just a matter of probably Weeks Later"
+      },
+      "respondsToIds": [
+        "con-communicative-god-leaves-burden-unmet"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-limited-evidence-to-hiddenness",
+          "targetMoveId": "con-communicative-god-leaves-burden-unmet",
+          "text": "God's not supplying coercively conclusive manifestation is presented as compatible with supplying enough evidence for free, relational trust.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Knechtle argues that God provides sufficient intellectual and affective evidence for freely chosen trust, whereas undeniable manifestation would secure only assent, not relationship.",
+      "critique": "Strongest feature: Knechtle directly confronts Dillahunty’s communicative-God challenge by distinguishing propositional assent from voluntarily relational trust, while Matthew 28 suggests physical encounter need not produce enduring belief. Principal limitation: Neither the claim that resurrection witnesses soon abandoned belief nor “just enough evidence” establishes an assessable threshold; moreover, clearer disclosure is characterized as coercive without addressing intermediate possibilities or nonresistant uncertainty. Live burden: Knechtle must demonstrate that Christianity’s intellectual and affective indicators are sufficient, explain why stronger yet resistible evidence would damage freely chosen relationship, and connect his disciples comparison to divine hiddenness. Locked score: 70 rewards direct engagement and substantial motion-level relevance, while weak evidential grounding, undefined calibration, and incomplete contact with Dillahunty’s objection keep this coherent distinction from establishing Christianity’s rationality.",
+      "lockedScore": 70,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 66,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 55,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 63,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-rationality-requires-reality-consistency",
+      "kind": "card",
+      "moveId": "con-rationality-requires-reality-consistency",
+      "sectionId": "epistemic-warrant",
+      "sectionTitle": "Rationality, evidence, and epistemic warrant",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Internal consistency alone cannot confer relevant rationality; a belief must also be consistent with the facts of reality.",
+      "sourceSpan": {
+        "startEvent": 326,
+        "endEvent": 348,
+        "startMs": 694560,
+        "endMs": 747060,
+        "excerpt": "but internal consistency isn't enough um Fantasy games with a rule setting for their magic system can be internally consistent Mario is internally consistent you have a certain jump height maximum run down maximum even using the game uh glitches to to do a speed run is consistent which is why you can have tool assisted speed runs sorry if I'm getting all geeky on everybody but it would be irrational to claim that Mario can violate the rules of the game or if you prefer Dungeons and Dragons has a magic system and a set of rules that govern that aspect of the game and as long as an act within the game is consistent with those rules it's rational that type of rationality does us no good internal consistency isn't relevant to what we're talking about today in order for something to be rational it needs to be consistent with the facts of reality"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "By comparing coherent fictional rule systems with actual belief, Dillahunty argues that rationality demands more than internal consistency: claims must fit reality’s facts.",
+      "critique": "Strongest feature: Dillahunty’s Mario and Dungeons and Dragons comparisons sharply expose the inferential gap between coherence under invented rules and rational warrant about an external world, fixing the motion’s epistemic standard. Principal limitation: Those examples demonstrate that internal consistency is insufficient, but they neither specify which factual correspondence counts nor establish that Christianity fails it, while “irrelevant” understates coherence’s screening role. Live burden: He must supply a defensible test distinguishing mere compatibility with reality from evidential confirmation, then apply that test to Christianity rather than leaving the external comparison implicit. Locked score: 84 appropriately reflects exceptional burden relevance and responsiveness, strong clarity and coherence, but only moderate evidential support and slightly compressed calibration in the positive reality-based standard.",
+      "lockedScore": 84,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 75,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 91,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-multifaceted-return-to-faith",
+      "kind": "card",
+      "moveId": "pro-multifaceted-return-to-faith",
+      "sectionId": "epistemic-warrant",
+      "sectionTitle": "Rationality, evidence, and epistemic warrant",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "Knechtle's return to Christianity followed what he describes as a multifaceted evidential reassessment and rejection of hedonism's inadequacy.",
+      "sourceSpan": {
+        "startEvent": 1971,
+        "endEvent": 1977,
+        "startMs": 4388580,
+        "endMs": 4408560,
+        "excerpt": "and so for me coming back to the faith and ultimately deciding against hedonism and the bankruptcy behind it was what I've given you in terms of all of a sudden I saw all this evidence"
+      },
+      "respondsToIds": [
+        "con-rationality-requires-reality-consistency",
+        "con-communicative-god-leaves-burden-unmet"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-return-to-reality-test",
+          "targetMoveId": "con-rationality-requires-reality-consistency",
+          "text": "Knechtle presents his return as a response to an accumulated body of evidence rather than internal consistency alone.",
+          "contacted": true,
+          "decisive": false
+        },
+        {
+          "componentId": "pro-return-to-unmet-burden",
+          "targetMoveId": "con-communicative-god-leaves-burden-unmet",
+          "text": "His reported reconsideration asserts that evidence was available and sufficient for him after critical distance from his upbringing.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "argumentDescription": "Knechtle presents his return to Christianity as the result of accumulated evidence and rejecting hedonism as bankrupt, thereby asserting that faith had rational warrant.",
+      "critique": "Strongest feature: Knechtle’s first-person sequence—rejecting hedonism’s “bankruptcy,” then returning after seeing “all this evidence”—intelligibly challenges Dillahunty’s claim that Christianity lacks warrant. Principal limitation: Neither the evidence nor hedonism’s alleged inadequacy is specified, and abandoning hedonism does not establish Christianity; consequently, it never meets Dillahunty’s reality-consistency test or demand for verifiable support. Live burden: Knechtle must identify the considerations, explain how they connect rejection of hedonism to Christian belief, and demonstrate why they remain assessable beyond the private force of his conversion experience. Locked score: 64 recognizes clear autobiographical structure, measured personal framing, reply contact, and motion relevance, while reserving substantial credit because the decisive evidence is unauditable here, the comparative inference is incomplete, and the opponent’s evidential standard remains unanswered.",
+      "lockedScore": 64,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 62,
+          "rationale": "A return to faith after seeing evidence is internally intelligible, but rejecting hedonism and finding Christianity warranted are joined without an explicit inferential bridge."
+        },
+        "evidenceWarrant": {
+          "score": 57,
+          "rationale": "The autobiographical report supplies first-person evidence of reconsideration, yet 'all this evidence' is unspecified within this move and cannot be independently assessed."
+        },
+        "responsiveness": {
+          "score": 64,
+          "rationale": "It contests the claim that no warrant was available by reporting personal evidential reassessment, but does not answer the opponent's public reality-testing standard."
+        },
+        "relevanceBurden": {
+          "score": 67,
+          "rationale": "The account is relevant to whether Knechtle personally found Christianity warranted, but autobiographical conviction alone only partially advances the general motion."
+        },
+        "precisionClarity": {
+          "score": 70,
+          "rationale": "The personal sequence of leaving hedonism and returning to faith is clear, while the decisive evidence and the meaning of hedonism's bankruptcy remain vague."
+        },
+        "calibrationCharity": {
+          "score": 71,
+          "rationale": "The speaker appropriately frames the claim as his own experience, but the compressed characterization of hedonism as bankrupt is asserted rather than fairly developed."
+        }
+      }
+    },
+    {
+      "candidateId": "con-communicative-god-leaves-burden-unmet",
+      "kind": "card",
+      "moveId": "con-communicative-god-leaves-burden-unmet",
+      "sectionId": "epistemic-warrant",
+      "sectionTitle": "Rationality, evidence, and epistemic warrant",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Because Christianity posits a communicative agent able to supply a rational model but no such evidential explanation has appeared, its burden of proof remains unmet.",
+      "sourceSpan": {
+        "startEvent": 509,
+        "endEvent": 527,
+        "startMs": 1080120,
+        "endMs": 1127600,
+        "excerpt": "Christianity whether it's true or not isn't testable isn't falsifiable makes claims that aren't supported by evidence or verifiable observation and therefore isn't rational moreover as Christianity holds that there's a being an agent who is beyond nature and is capable of communicating with us and capable of explaining all of these claims in a way that would result in a justifiable rational model and yet this hasn't happened that's one aspect of Christianity that while not fully falsifiable certainly would affirm that the default position of this is not true applies and continues to apply until that changes the burden of proof for truth and for rationality exists and neither has been met for Christianity"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Dillahunty argues that Christianity’s allegedly communicative God has not delivered verifiable support or a justifying explanation, so Christianity has not discharged its rational burden.",
+      "critique": "Strongest feature: Dillahunty turns God’s claimed communicative capacity into an evidential expectation and connects its alleged nonfulfillment directly to rational withholding, yielding unusually strong responsiveness and motion-level burden relevance. Principal limitation: Although the excerpt says Christian claims lack “evidence or verifiable observation,” it neither examines the proffered evidence nor defends why divine communication should produce Dillahunty’s particular public, falsifiable model. Live burden: He must specify what adequate disclosure would involve, justify the expectation from God’s capacities, and demonstrate that disputed experiences and arguments genuinely fail that standard. Locked score: A 78 appropriately rewards the intelligible inference and exceptionally direct debate contact while withholding credit because the pivotal absence claim is asserted broadly, with limited precision and charitable engagement.",
+      "lockedScore": 78,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 62,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-evidentiary-warrant-can-differ-by-person",
+      "kind": "card",
+      "moveId": "con-evidentiary-warrant-can-differ-by-person",
+      "sectionId": "epistemic-warrant",
+      "sectionTitle": "Rationality, evidence, and epistemic warrant",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Whether a belief is rational can differ between people because evidentiary warrant depends on the evidence available to each person, even if the underlying proposition has one objective truth value.",
+      "sourceSpan": {
+        "startEvent": 2485,
+        "endEvent": 2497,
+        "startMs": 5569320,
+        "endMs": 5600219,
+        "excerpt": "of whether or not he is warranted and is rational in believing it our foundation of what is rational is based on what evidence we actually have so it is possible for a God to exist and choose to reveal himself to Steward in a way that Stewart can have evidential warrant and not reveal himself to me uh so that I don't have evidential warrant but if I were to believe in that circumstance I would be behaving irrational irrationally my belief would be irrational"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Dillahunty argues that rational belief tracks each person’s available evidence, so the same objectively true proposition may warrant belief for one person but not another.",
+      "critique": "Strongest feature: Dillahunty sharply separates objective truth from person-relative rational warrant: God could exist, reveal himself convincingly to Knechtle, withhold comparable evidence from Dillahunty, and thereby rationally differentiate their beliefs. Principal limitation: This hypothetical demonstrates conceptual possibility, not either participant’s actual evidence, while leaving the evidential threshold distinguishing justified acceptance from irrational belief materially underdeveloped. Live burden: Dillahunty must identify which publicly assessable or privately accessible considerations justify withholding his belief, explain how conflicting revelations should be evaluated, and connect that account to his central reality test. Locked score: The 86 properly rewards exceptional calibration, inferential coherence, precise exposition, and relevant clarification while preserving an evidentiary discount because the example maps possible unequal access more convincingly than it establishes anyone’s actual warrant.",
+      "lockedScore": 86,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-jesus-claims-divinity",
+      "kind": "card",
+      "moveId": "pro-jesus-claims-divinity",
+      "sectionId": "scripture-testimony",
+      "sectionTitle": "Gospel testimony and textual reliability",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "The Gospel presentation of Jesus consistently attributes divine claims and prerogatives to him.",
+      "sourceSpan": {
+        "startEvent": 13,
+        "endEvent": 23,
+        "startMs": 28680,
+        "endMs": 53340,
+        "excerpt": "claims were there you certainly have it throughout the gospels you definitely have it in John with the seven I am statements he makes but then he also receives worship he doesn't reject worship like the apostles do at times like Paul did when he tore his clothes or like when the Angels even were rejecting worship he also claimed to forgive sins and so throughout he's pretty consistent in the claim to be God"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Knechtle argues that the Gospels portray Jesus as divine through John's seven I-am sayings, his acceptance of worship, and his asserted authority to forgive sins.",
+      "critique": "Strongest feature: Knechtle's cumulative inference unites John's seven I-am sayings, Jesus's acceptance of worship unlike apostles and angels, and forgiveness authority, making a divine Gospel portrayal intelligible and directly relevant. Principal limitation: He supplies no passages, never establishes that these features uniquely indicate divinity, and generalizes from selected examples to Gospel-wide consistency while collapsing explicit self-identification into interpreted prerogative. Live burden: He must defend the divine interpretation against plausible alternatives, substantiate its scope across the Gospels, and connect narrative portrayal to Christianity's truth and rational warrant. Locked score: A 77 credits coherent, responsive use of concrete Gospel motifs while reserving points for absent citations, uncertain interpretive exclusivity, imprecise scope, and the unfinished transition from portrayal to warranted belief.",
+      "lockedScore": 77,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 72,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-report-cannot-establish-forgiveness",
+      "kind": "card",
+      "moveId": "con-report-cannot-establish-forgiveness",
+      "sectionId": "scripture-testimony",
+      "sectionTitle": "Gospel testimony and textual reliability",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "A Gospel report cannot by itself establish that Jesus and the Father are one or that Jesus actually effected forgiveness of sins.",
+      "sourceSpan": {
+        "startEvent": 1870,
+        "endEvent": 1875,
+        "startMs": 4155480,
+        "endMs": 4170480,
+        "excerpt": "don't get to just assume that he and the father are one and that he forgave sins merely because there's a report that had happened you have to actually provide evidence to show that this happened and it resulted in the Forgiveness of a sin"
+      },
+      "respondsToIds": [
+        "pro-jesus-claims-divinity",
+        "pro-gospel-transmission-reliability"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-report-to-jesus-claims",
+          "targetMoveId": "pro-jesus-claims-divinity",
+          "text": "A report that Jesus forgave sins cannot establish either his unity with the Father or an actual forgiveness event.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "con-report-to-transmission",
+          "targetMoveId": "pro-gospel-transmission-reliability",
+          "text": "Textual reliability does not eliminate the need for evidence that the reported divine act occurred.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty argues that a preserved Gospel report alone establishes neither Jesus’s unity with the Father nor the occurrence and efficacy of supernatural forgiveness.",
+      "critique": "Strongest feature: Dillahunty isolates the equivocation between transmission of a report and establishment of its supernatural content, answering Knechtle’s manuscript defense and appeal to Jesus forgiving sins. Principal limitation: Although “provide evidence to show that this happened” identifies the missing warrant, the reply never explains what evidence could demonstrate whether a sin was genuinely forgiven or establish Jesus’s relation to the Father. Live burden: He must articulate criteria for moving from testimony to theological actuality, then show why manuscript abundance, early dating, and patristic quotation cannot meet them without treating testimony as worthless. Locked score: The 86 reflects exceptional responsiveness and strong coherence, relevance, clarity, and charity, while weaker evidential warrant preserves the unresolved challenge of specifying confirmatory evidence for forgiveness itself.",
+      "lockedScore": 86,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-gospel-transmission-reliability",
+      "kind": "card",
+      "moveId": "pro-gospel-transmission-reliability",
+      "sectionId": "scripture-testimony",
+      "sectionTitle": "Gospel testimony and textual reliability",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "Numerous manuscripts, early dating, patristic quotations, and decentralized transmission make the Gospel text reliable against claims of coordinated alteration.",
+      "sourceSpan": {
+        "startEvent": 108,
+        "endEvent": 125,
+        "startMs": 227040,
+        "endMs": 265020,
+        "excerpt": "uh the reliability of the gospels I think are pretty obvious you got the manuscripts and the dates 5800 manuscripts you get the dates within 15 years probably even closer to the events themselves you have the church fathers you take away all the manuscripts themselves you still have the church fathers counting up for over 1 million New Testament quotes I mean that's that's pretty impressive you know there was never a time when any one man or group of men had control over the text of the New Testament there was never this Christian utman all claims that there were changes in theology or doctrine or simply without Merit"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Knechtle argues that abundant manuscripts, early dates, patristic quotations, and decentralized custody make coordinated alteration implausible, thereby supporting the Gospel text's reliability.",
+      "critique": "Strongest feature: Knechtle's 5,800 manuscripts, more than one million patristic quotations, and decentralized custody directly resist coordinated alteration, materially advancing the subsidiary Gospel-reliability bridge with unusually concrete transmission considerations. Principal limitation: His quantities remain unsourced, \"dates within 15 years\" has no clear referent, and neither manuscript age, witness dependence, nor textual variation is examined, leaving preservation distinct from historical accuracy. Live burden: Because this constructive anticipates alteration objections rather than answering a specific reply, Knechtle must substantiate his chronology and counts, then show that decentralized preservation makes transmitted testimony credible about events. Locked score: The 69 appropriately rewards strong responsiveness and burden relevance while discounting weak sourcing, conceptual slippage, and the overconfident claim that contrary alteration accounts lack merit.",
+      "lockedScore": 69,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 57,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 67,
+          "rationale": "The main preservation argument is understandable, but 'dates within 15 years' lacks a clear referent and 'reliability' is not separated into textual and historical senses."
+        },
+        "calibrationCharity": {
+          "score": 51,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-historical-evidence-can-be-source-strengthened",
+      "kind": "card",
+      "moveId": "con-historical-evidence-can-be-source-strengthened",
+      "sectionId": "scripture-testimony",
+      "sectionTitle": "Gospel testimony and textual reliability",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Historical evidence need not be empirically verifiable, and its strength can increase with multiple sources, especially when competing parties independently report consistent facts.",
+      "sourceSpan": {
+        "startEvent": 3318,
+        "endEvent": 3338,
+        "startMs": 7445400,
+        "endMs": 7496280,
+        "excerpt": "what is my definition of historical evidence I think I probably need the context in which to use but basically it is uh evidence from the past that is the best that we have currently well I mean I guess suppose it wouldn't necessarily be the best so historical evidence is evidence that isn't necessarily empirically verifiable but is reported from the past and we can uh for historical claims we can look at um for example who's making the claim how many different sources is it coming from is it coming from competing sources and the stronger the uh the evidence is stronger when you have for example the losing side saying here's what happened and The Winning Side saying here's what happened and those are consistent um because we don't have a time machine"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Dillahunty treats past reports as gradable evidence, arguing that agreement among numerous genuinely competing sources increases confidence when direct empirical verification is unavailable.",
+      "critique": "Strongest feature: Dillahunty’s answer makes his testimony standard comparative rather than dismissive, expressly admitting reports from the empirically inaccessible past while explaining why concordance between numerous competing parties increases confidence. Principal limitation: The example never establishes that Gospel accounts are independent, adversarial, or insulated from common traditions, and his self-correction leaves provenance, genre, and reporter reliability insufficiently specified. Live burden: To reinforce his testimony objection, Dillahunty must apply these criteria to debated sources, distinguish numerical plurality from evidential independence, and demonstrate whether cross-party consistency materially improves Christianity’s warrant. Locked score: 82 appropriately rewards the coherent qualification, direct answer, source comparison, and charitable calibration, while comparatively weaker precision and evidential support reflect missing Gospel-level application and unresolved dependence questions.",
+      "lockedScore": 82,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-resurrection-cumulative-indicia",
+      "kind": "card",
+      "moveId": "pro-resurrection-cumulative-indicia",
+      "sectionId": "resurrection-miracles",
+      "sectionTitle": "Resurrection and supernatural causation",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "Witness reports, conversions, an empty tomb, immediate proclamation, costly adherence, and the early church's rapid emergence cumulatively support the resurrection.",
+      "sourceSpan": {
+        "startEvent": 135,
+        "endEvent": 154,
+        "startMs": 281759,
+        "endMs": 325860,
+        "excerpt": "the resurrection evidence I would take a cumulative case typically one Witnesses and how they reported two Skeptics that converted three expectations of the Gospel the way it was presented and the way it was received for Jewish background and understanding of what they were expecting five voluntary persecution suffering six immediate Proclamation seven empty tomb eight the use of women as eyewitnesses which would have been thrown out and then nine I would have said just the start of the early church has a major Paradigm Shift overnight which typically would have taken hundreds of years for that many people to have shifted from something like Judaism to Christianity"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Knechtle argues that witness reports, skeptical conversions, immediate proclamation, the empty tomb, costly adherence, and rapid church formation jointly make the resurrection historically credible.",
+      "critique": "Strongest feature: As an opening constructive without reply contact, Knechtle combines witness reports, skeptical conversions, immediate proclamation, an empty tomb, costly adherence, and rapid ecclesial emergence into a cumulative inference addressing Christianity’s supernatural center. Principal limitation: The span enumerates categories without providing underlying sources, chronological corroboration, independence analysis, or a discriminating comparison demonstrating why their conjunction favors bodily resurrection over naturalistic alternatives. Live burden: Since conviction, suffering, proclamation, and institutional growth can accompany mistaken beliefs, Knechtle must establish each premise’s reliability and show that their combined pattern becomes likelier if resurrection occurred. Locked score: Seventy-four appropriately rewards a coherent, relevant constructive whose inventory engages the motion, while withholding credit because evidential foundations, comparative testing, causal linkage, and the “overnight” characterization remain underdeveloped.",
+      "lockedScore": 74,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 60,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 67,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-supernatural-claims-undemonstrated",
+      "kind": "card",
+      "moveId": "con-supernatural-claims-undemonstrated",
+      "sectionId": "resurrection-miracles",
+      "sectionTitle": "Resurrection and supernatural causation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Christianity's supernatural claims are neither demonstrated to have occurred nor made testable, so they do not warrant its supernatural explanations.",
+      "sourceSpan": {
+        "startEvent": 461,
+        "endEvent": 488,
+        "startMs": 977220,
+        "endMs": 1038540,
+        "excerpt": "none of the supernatural claims of Christianity have been demonstrated to be true none have ever been demonstrated to be testable falsifiable none of them ever been demonstrated that they actually occurred and how can it then be rational to believe an explanation for something that we can't even verify happened if I have a soul for example I would suggest that people spend more time trying to prove that I have a soul than trying to explain what a soul is or how it works or how to save it or if it needs to be saved that's like skipping past are fairies real and talking about what fairies want where they're hiding how to make them happy Etc Christianity down to its core is wholly incompatible with reality and therefore irrational which is why there are so many unsubstantiated appeals to Miracles and yet no demonstration that these Miracles actually occur I'm not even convinced that Christianity is internally consistent but it's definitely not consistent with the reaction with the rationally demonstrated facts of reality"
+      },
+      "respondsToIds": [
+        "pro-resurrection-cumulative-indicia"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-undemonstrated-to-resurrection-indicia",
+          "targetMoveId": "pro-resurrection-cumulative-indicia",
+          "text": "The listed considerations do not demonstrate that a resurrection occurred or make the supernatural explanation testable.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty argues that Christianity’s unverified and untestable supernatural claims cannot rationally support its explanations, because elaborating a miracle cannot substitute for demonstrating it occurred.",
+      "critique": "Strongest feature: Dillahunty directly contests Knechtle’s cumulative indicia by separating historical considerations from demonstration that resurrection occurred, and an alleged occurrence from a warranted supernatural explanation. Principal limitation: The fairy comparison illuminates explanation-before-establishment, but categorical claims that no Christian supernatural claim has ever been demonstrated and that Christianity contradicts reality remain unsupported, while testability, falsifiability, occurrence, and explanatory warrant blur together. Live burden: He must show why the witnesses, conversions, empty tomb, proclamation, costly adherence, and early-church emergence collectively fail to verify resurrection, while defending his proposed evidential requirements. Locked score: 77 appropriately rewards unusually direct central-burden contact, coherent verification-before-explanation reasoning, and clear responsiveness, while reduced evidential warrant and calibration register unsupported universals and insufficiently defended methodology.",
+      "lockedScore": 77,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 65,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 59,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-six-source-resurrection-reply",
+      "kind": "card",
+      "moveId": "pro-six-source-resurrection-reply",
+      "sectionId": "resurrection-miracles",
+      "sectionTitle": "Resurrection and supernatural causation",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "Six sources and a multifaceted case provide historical support for the resurrection under standards that often accept fewer sources for ancient events.",
+      "sourceSpan": {
+        "startEvent": 1980,
+        "endEvent": 1993,
+        "startMs": 4410060,
+        "endMs": 4442699,
+        "excerpt": "example six sources now for the resurrection having occurred I mean what did Matthew actually lean on six sources and we take two sources for ancient history and say that that's Patriot of something absolutely happening now if you take away no obviously if you remove that type of standard then we're all of a sudden back to the Middle Ages but it's six sources for the Christian faith and so you know it started there it it's multifaceted it has to be I don't think I could ever take just one and so I started looking"
+      },
+      "respondsToIds": [
+        "con-scriptural-story-is-not-miracle-evidence",
+        "con-report-cannot-establish-forgiveness"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-six-sources-to-story",
+          "targetMoveId": "con-scriptural-story-is-not-miracle-evidence",
+          "text": "Knechtle answers the single-story characterization by asserting six resurrection sources and comparing that quantity favorably with ordinary ancient history.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "pro-six-sources-to-report",
+          "targetMoveId": "con-report-cannot-establish-forgiveness",
+          "text": "He offers source multiplicity as part of a broader historical standard for treating Gospel reports as evidence.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "argumentDescription": "Knechtle argues that six resurrection sources form a multifaceted historical case stronger than the thinner sourcing often accepted for ancient events and directly challenge Dillahunty's single-story objection.",
+      "critique": "Strongest feature: Knechtle directly answers Dillahunty’s claim that resurrection testimony is merely a story by presenting six sources and situating their multiplicity within ordinary historical reasoning. Principal limitation: He neither identifies those sources nor examines their independence, dating, access, agreement, or reliability, while his two-source comparison misleadingly treats unequal reports and extraordinary events as evidentially interchangeable. Live burden: Source quantity must still establish genuinely independent confirmation of the resurrection itself, rather than repeated preservation of a claim, and then connect that event to forgiveness or divine causation. Locked score: The 67 appropriately reflects strong relevance and direct contact with the single-story objection, alongside middling evidential warrant, imprecise historical standards, and an overconfident inference from numerical multiplicity.",
+      "lockedScore": 67,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 67,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 54,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 75,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 63,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 57,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-scriptural-story-is-not-miracle-evidence",
+      "kind": "card",
+      "moveId": "con-scriptural-story-is-not-miracle-evidence",
+      "sectionId": "resurrection-miracles",
+      "sectionTitle": "Resurrection and supernatural causation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "New Testament miracle and resurrection stories remain unconfirmed supernatural claims rather than evidence establishing their own truth.",
+      "sourceSpan": {
+        "startEvent": 584,
+        "endEvent": 606,
+        "startMs": 1250340,
+        "endMs": 1301280,
+        "excerpt": "performing Miracles that haven't been demonstrated that can't be confirmed all of those things are still Supernatural as well it's just that it's easier to talk about the sun standing still in the sky than it is to say that if I Spit on the dirt and rub it on somebody's eye it doesn't heal them we have no evidence that it's ever been done other than the story which isn't evidence for a proposition it's just a claim itself but there's plenty of things you know that I mean the entirety of of Revelation uh almost the entirety of it I'm sure there are words that aren't um it is bizarre it almost wasn't even included in the doctrine but the very notion that somebody uh died and was resurrected uh which we have no empirical evidence for it's just a story in the book um that's a supernatural claim that I would put in that list as well"
+      },
+      "respondsToIds": [
+        "pro-resurrection-cumulative-indicia",
+        "pro-gospel-transmission-reliability"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-story-to-resurrection",
+          "targetMoveId": "pro-resurrection-cumulative-indicia",
+          "text": "A report that somebody died and returned is the supernatural claim itself, not independent empirical evidence for it.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "con-story-to-gospel-reliability",
+          "targetMoveId": "pro-gospel-transmission-reliability",
+          "text": "Accurate transmission of a story would not by itself confirm the miracle narrated by that story.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty argues that New Testament miracle narratives, including the resurrection, merely report supernatural claims and cannot independently establish those claims as true.",
+      "critique": "Strongest feature: Dillahunty sharply distinguishes faithfully transmitting resurrection and healing narratives from independently confirming their supernatural contents, directly confronting Knechtle’s manuscript-reliability argument and cumulative resurrection indicia. Principal limitation: His categorical assertion that a story is not evidence unjustifiably collapses potentially limited testimonial evidence into evidential nullity, without examining provenance, source independence, corroboration, or Knechtle’s cumulative presentation. Live burden: He still must demonstrate why the cited witness reports, conversions, empty tomb, immediate proclamation, costly adherence, and early-church emergence collectively remain insufficient, rather than relying exclusively on the report-event distinction. Locked score: The score of 78 appropriately rewards direct reply contact, lucid burden relevance, and coherent resistance to textual self-validation, while withholding credit because evidential warrant and charitable calibration lag behind responsiveness and precision.",
+      "lockedScore": 78,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 75,
+          "rationale": "The claim-versus-confirmation distinction coherently blocks a story from self-validating, but saying a story is not evidence at all overlooks that testimony can carry limited evidential weight."
+        },
+        "evidenceWarrant": {
+          "score": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 66,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-observed-effect-needs-causal-link",
+      "kind": "card",
+      "moveId": "con-observed-effect-needs-causal-link",
+      "sectionId": "resurrection-miracles",
+      "sectionTitle": "Resurrection and supernatural causation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Even a directly observed extraordinary effect would not warrant attributing it to God without evidence linking the effect to that proposed cause.",
+      "sourceSpan": {
+        "startEvent": 2035,
+        "endEvent": 2051,
+        "startMs": 4533540,
+        "endMs": 4580040,
+        "excerpt": "to do that but what we do is we get to say hey we have an example where someone's finger was cut off and it grew back in front of us and now we begin exploring to try to find what the best explanation is we it may be that God did it but until somebody demonstrates the link the evidence that links the regrowth of your finger with a God you don't get to say that that is the the cause this is all about connecting uh observed facts with proposed explanations and you have as as The observed facts here you have a proposed explanation that there's a God but you don't have the linking evidence that shows that that is in fact the cause"
+      },
+      "respondsToIds": [
+        "pro-resurrection-cumulative-indicia",
+        "pro-six-source-resurrection-reply"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-causal-link-to-cumulative-case",
+          "targetMoveId": "pro-resurrection-cumulative-indicia",
+          "text": "Even an observed anomaly would require evidence linking it to God before supernatural causation could be inferred.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "con-causal-link-to-six-sources",
+          "targetMoveId": "pro-six-source-resurrection-reply",
+          "text": "Additional reports do not themselves supply the missing causal link between the alleged event and divine action.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty argues that even witnessing a severed finger regrow would leave divine agency unproven until evidence connected that extraordinary result specifically to God.",
+      "critique": "Strongest feature: By adopting Knechtle's laboratory example, Dillahunty sharply separates verification of finger regrowth from identification of its cause, granting that God remains possible while explaining why neither an extraordinary observation nor six historical sources supplies discriminating evidence of divine agency. Principal limitation: The hypothetical clarifies the inferential standard rather than applying it to the resurrection record, and it leaves unspecified what observable evidence could distinguish divine action from unknown natural causation or other proposed explanations. Live burden: Dillahunty must show cumulative indicia and multiple reports establish only an alleged anomaly without independently bridging it to God, while specifying a workable test for his demanded linkage. Locked score: 88 fits the exceptional burden contact and responsiveness, tempered by comparatively weaker evidential warrant.",
+      "lockedScore": 88,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-christianity-explains-altruism-hope",
+      "kind": "card",
+      "moveId": "pro-christianity-explains-altruism-hope",
+      "sectionId": "moral-experiential-fit",
+      "sectionTitle": "Morality, social influence, hope, and experiential fit",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "Christianity better explains costly concern beyond one's group, sacrificial love, and durable hope than Knechtle's characterization of evolution does.",
+      "sourceSpan": {
+        "startEvent": 208,
+        "endEvent": 230,
+        "startMs": 437699,
+        "endMs": 492479,
+        "excerpt": "and then I would say Christianity makes the most sense when it comes to our incredible devotion as a society now to Justice and to helping those who are outside of our own Social Circle or even National Circle what's the reasoning behind it from an evolutionary perspective everything is just supposed to be naturally violent and yet why do we all sudden have just this incredible Focus to help those who are different from us in ways that doesn't benefit us at all and I would say the Judo Christian values are the reason why they've come into our culture and they've radically impacted things and so you see things like sympathy compassion Agape loves sacrificial love you see things like hope you know we are irredeemably hope-based creatures and I don't think you can get there without a firm Eternal understanding of what"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Knechtle argues that Christianity better explains costly out-group concern, sacrificial love, and enduring hope than an evolutionary picture he portrays as naturally violent.",
+      "critique": "Strongest feature: Knechtle identifies sympathy, sacrificial love, aid to outsiders, and persistent hope, giving this experiential-fit case constructive responsiveness and substantial motion relevance without replying to opposition. Principal limitation: His excerpt asserts Judeo-Christian cultural causation and portrays evolution as naturally violent, offering neither historical corroboration nor engagement with evolutionary cooperation, while leaving hope's connection to eternal reality underdetermined. Live burden: He must show that costly out-group concern resists natural explanation, distinguish Christianity's superiority from cultural influence or psychological usefulness, and justify why durable hope indicates a specifically Christian eternal reality. Locked score: The 59 reflects the frozen unevenness: strong relevance and constructive contact sustain the argument, but thin evidence, incomplete comparison, imprecise causation, and an uncharitable evolutionary contrast substantially restrain its force.",
+      "lockedScore": 59,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 55,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 39,
+          "rationale": "The excerpt asserts that costly concern does not benefit us and that Judeo-Christian values caused it, without historical support, evolutionary comparison, or evidence connecting hope to an eternal reality."
+        },
+        "responsiveness": {
+          "score": 78,
+          "rationale": "As a constructive move, it squarely addresses the motion through the announced experiential-fit burden, though it does not anticipate obvious natural accounts of cooperation and hope."
+        },
+        "relevanceBurden": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 57,
+          "rationale": "The examples of sympathy, compassion, sacrificial love, and hope are clear, while phrases such as 'everything' being naturally violent and 'can't get there' leave scope and causal meaning unstable."
+        },
+        "calibrationCharity": {
+          "score": 44,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-natural-account-of-cooperation",
+      "kind": "card",
+      "moveId": "con-natural-account-of-cooperation",
+      "sectionId": "moral-experiential-fit",
+      "sectionTitle": "Morality, social influence, hope, and experiential fit",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Secular humanism does not assume innate human goodness, and cooperation, sympathy, and forgiveness can arise through practical problem-solving and game-theoretic interdependence.",
+      "sourceSpan": {
+        "startEvent": 919,
+        "endEvent": 943,
+        "startMs": 1987919,
+        "endMs": 2056320,
+        "excerpt": "secular humanism in all three of the manifestos and in every version of the the secular ethics that I've advocated for that other organizations have put out isn't humans are ultimately good although I think that humans are generally better than some people might expect it is we live here and we have to solve problems and we have no one outside of us to reach to we have no we can't appeal to a god that we have no rational reason to think exist we can't appeal to some sort of external we are left to our own devices is what secular humanism says and the the things that are positive that you were pointing to are not functions of Christianity at all forgiveness cooperation uh sympathy none of those things are necessarily direct uh products of Christianity exclusively they are instead the result of properly applied Game Theory the the recognition of you and I have to cooperate rate to some extent and figuring out to what extent that is that is the principle"
+      },
+      "respondsToIds": [
+        "pro-christianity-explains-altruism-hope"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-game-theory-to-altruism",
+          "targetMoveId": "pro-christianity-explains-altruism-hope",
+          "text": "Cooperation, sympathy, and forgiveness need not be uniquely Christian products because strategic interdependence supplies a secular explanation.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty argues that secular humanists need not presume innate goodness because shared problems and strategic interdependence can generate cooperation, sympathy, and forgiveness without Christianity.",
+      "critique": "Strongest feature: Dillahunty directly confronts Knechtle’s explanatory claim by separating secular humanism from presumed innate goodness and presenting strategic interdependence as an intelligible alternative source of cooperation, sympathy, and forgiveness. Principal limitation: Invoking “properly applied Game Theory” identifies a relevant framework but supplies neither a concrete mechanism nor comparative evidence showing how reciprocal problem-solving extends to costly out-group concern, sacrificial conduct, sympathy, or forgiveness. Live burden: The rebuttal must demonstrate that strategic interdependence explains the morally demanding phenomena Knechtle emphasized, rather than merely establishing that cooperation can emerge without religious commitment. Locked score: 77 appropriately reflects unusually strong reply contact and substantial relevance while discounting the compressed mechanism, absent examples, and overbroad assertion that these virtues are not Christian functions at all.",
+      "lockedScore": 77,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 64,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 72,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-jesus-transformed-roman-morality",
+      "kind": "card",
+      "moveId": "pro-jesus-transformed-roman-morality",
+      "sectionId": "moral-experiential-fit",
+      "sectionTitle": "Morality, social influence, hope, and experiential fit",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "The contrast between ordinary Roman practices and the movement's egalitarian moral changes supports Christianity's distinctive historical influence.",
+      "sourceSpan": {
+        "startEvent": 960,
+        "endEvent": 976,
+        "startMs": 2087099,
+        "endMs": 2128320,
+        "excerpt": "simply going back to the Roman Empire what we're talking about when it came to who Jesus was what his environment was how he made changes connected to the rationality perhaps of whether this guy was even God or what this movement looked like my whole point was it was totally natural to have a slave a mistress and a wife for a male and do whatever you want in any orifice you want it was totally natural it would have been extremely unnatural for us to have said hey the races they're all equal by no means whatsoever and that's why you have so many philosophers writing about that and so my whole point is not"
+      },
+      "respondsToIds": [
+        "con-natural-account-of-cooperation"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "pro-roman-change-to-natural-account",
+          "targetMoveId": "con-natural-account-of-cooperation",
+          "text": "Jesus's teaching is said to have introduced striking moral changes in a Roman environment where slavery and inequality were ordinary.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "argumentDescription": "By contrasting normalized Roman slavery, sexual license, and inequality with Jesus-inspired egalitarian change, Knechtle argues that Christianity exerted a distinctive and rationally significant historical influence.",
+      "critique": "Strongest feature: Knechtle’s concrete juxtaposition of normalized Roman slavery, sexual license, and inequality against Jesus-associated egalitarian transformation challenges Dillahunty’s contention that cooperation, sympathy, and forgiveness emerge through secular problem-solving and game-theoretic interdependence. Principal limitation: The vivid contrast supplies neither chronology, representative Roman sources, comparison groups, nor causal discrimination between Christian teaching and gradual non-Christian developments, so asserted influence cannot establish Jesus’s divinity or Christianity’s rational truth. Live burden: Show why these changes were specifically caused by Jesus’s movement, distinguish that explanation from secular and competing historical causes, and connect influence to supernatural warrant. Locked score: Sixty rewards a coherent, relevant reply with genuine contact, while middling evidential support and sweeping Roman generalizations prevent the claimed transformation from carrying the central rationality burden.",
+      "lockedScore": 60,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 63,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 47,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 63,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 50,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-social-benefit-does-not-warrant-supernatural-core",
+      "kind": "card",
+      "moveId": "con-social-benefit-does-not-warrant-supernatural-core",
+      "sectionId": "moral-experiential-fit",
+      "sectionTitle": "Morality, social influence, hope, and experiential fit",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Even if Christianity improved society, usefulness would not make belief in its core supernatural claims rational.",
+      "sourceSpan": {
+        "startEvent": 996,
+        "endEvent": 1003,
+        "startMs": 2170140,
+        "endMs": 2192099,
+        "excerpt": "um but even if all of that were true even if Christianity was this uh wonderful package of um do this do that that led us all to a better world that doesn't make the belief rational with respect to the supernatural claims and the supernatural claims are at the core of it if if the"
+      },
+      "respondsToIds": [
+        "pro-christianity-explains-altruism-hope",
+        "pro-jesus-transformed-roman-morality"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-benefit-to-experiential-fit",
+          "targetMoveId": "pro-christianity-explains-altruism-hope",
+          "text": "A worldview's beneficial psychological or social effects do not establish rational warrant for its supernatural claims.",
+          "contacted": true,
+          "decisive": true
+        },
+        {
+          "componentId": "con-benefit-to-roman-change",
+          "targetMoveId": "pro-jesus-transformed-roman-morality",
+          "text": "Even granting Christianity caused social improvement, that historical consequence would not verify its supernatural core.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty grants for argument’s sake that Christianity might produce a better society, yet denies that such results justify believing its central supernatural doctrines.",
+      "critique": "Strongest feature: Dillahunty’s concession directly meets Knechtle’s appeals to altruism, hope, and transformed Roman morality while isolating the inference’s defect: desirable social consequences do not authenticate supernatural propositions. Principal limitation: The reply states rather than develops its epistemic principle, and the excerpt never specifies which supernatural claims require independent support or why pragmatic success could not contribute to their plausibility. Live burden: Having neutralized benefit as sufficient warrant without disputing the alleged benefits, Dillahunty still must assess historical or experiential evidence Knechtle offers for Jesus’s divinity and Christianity’s distinctive truth. Locked score: Ninety fits the coherent, charitable, motion-level reply and its decisive contact with both opposing moves, while the lower evidential showing reflects an asserted distinction whose implications are not defended.",
+      "lockedScore": 90,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 92,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-religious-desire-does-not-show-truth",
+      "kind": "card",
+      "moveId": "con-religious-desire-does-not-show-truth",
+      "sectionId": "moral-experiential-fit",
+      "sectionTitle": "Morality, social influence, hope, and experiential fit",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Religious desires and facts compatible with Christianity do not support it unless evidence links Christianity's proposed explanation to those facts.",
+      "sourceSpan": {
+        "startEvent": 1294,
+        "endEvent": 1320,
+        "startMs": 2866020,
+        "endMs": 2932740,
+        "excerpt": "here's the thing um the notion that human beings have desires for things that are tied up in religion in no way demonstrates that those desires are tied to something real and true that at least for all of the religions other than the one you've adopted somebody invented that and got it wrong um but the fact that human beings tend to try to explain the unknown and can get it wrong and can be irrational is all anyone needs to explain everything about every religion especially when we have zero supportive evidence for it and we don't have a testable hypothesis so Christianity isn't doesn't come with a testable falsifiable hypothesis which by definition means it cannot have evidence for it it can have facts that are consistent with it but that's not surprising because the whole purpose is to try to explain facts that are unknown but to have evidence for means that there is a a link between the proposed explanation for a fact and the fact"
+      },
+      "respondsToIds": [
+        "pro-christianity-explains-altruism-hope"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-desire-to-hope-fit",
+          "targetMoveId": "pro-christianity-explains-altruism-hope",
+          "text": "Desires for hope, meaning, and religious fulfillment do not establish that their proposed religious objects are real.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Religious longing and facts merely compatible with Christianity provide no support unless a demonstrable link connects Christianity’s explanation to the experiences or facts invoked.",
+      "critique": "Strongest feature: Dillahunty directly answers Knechtle’s appeal to hope and religious fulfillment by distinguishing observations consistent with Christianity from evidence that specifically connects those observations to Christianity’s explanatory account. Principal limitation: His claim that non-falsifiability makes evidence impossible overstates the methodological point, while assertions that human invention explains every religion and Christianity has zero support receive no defense here. Live burden: The reply needs an articulated account of what evidential connection would discriminate Christianity from natural explanations, especially if Knechtle argues cumulative experiential fit supplies probabilistic rather than demonstrative support. Locked score: 80 appropriately reflects exceptional reply contact and burden relevance alongside a coherent compatibility-versus-evidence distinction, while reserving credit for the move’s unsupported universality, compressed epistemology, and insufficiently charitable scope.",
+      "lockedScore": 80,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 64,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "pro-love-and-wrath-are-coherent",
+      "kind": "card",
+      "moveId": "pro-love-and-wrath-are-coherent",
+      "sectionId": "divine-character",
+      "sectionTitle": "Divine character, love, wrath, and punishment",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "proposition": "Divine love and wrath are coherent because love can require opposition to what harms people, while love without justice could become apathetic toward wrongdoing.",
+      "sourceSpan": {
+        "startEvent": 1138,
+        "endEvent": 1153,
+        "startMs": 2501099,
+        "endMs": 2545560,
+        "excerpt": "I mean and with God the consistency matter is he's loving and wrathful and I know Matt Delante does not like the wrathful side of God but in order to love somebody oftentimes you do need to have a type of Wrath in order to go after something that's perhaps is harming them and that's what we see over and over again with God see if you just take a god of love then he can easily become apathetic in the face of true wrongdoing and so that's why you have a nuanced understanding of God with many different attributes that looks inconsistent but couldn't be any more consistent"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Knechtle argues that protective opposition to harm can express love, so divine wrath need not conflict with love and may prevent moral indifference.",
+      "critique": "Strongest feature: Knechtle explains the contradiction through protective love: opposition to whatever harms a person can express care, while indifference toward wrongdoing would betray it, supporting coherent divine character. Principal limitation: The analogy establishes possibility, not application: no divine punishment is shown to be protective, proportionate, or just, and “a type of Wrath” leaves loving resistance indistinct from punitive violence. Live burden: Since this constructive addresses an anticipated tension rather than an identified opposing move, Knechtle must connect loving anger to contested punishments and demonstrate that they reliably oppose harm without creating harm. Locked score: The mid-seventies outcome reflects stronger coherence, responsiveness, and burden relevance than evidential warrant or calibration, especially because “couldn’t be any more consistent” overstates this comparison.",
+      "lockedScore": 74,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 62,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 75,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-biblical-violence-challenges-character",
+      "kind": "card",
+      "moveId": "con-biblical-violence-challenges-character",
+      "sectionId": "divine-character",
+      "sectionTitle": "Divine character, love, wrath, and punishment",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Biblical depictions of the flood, killing firstborn children, Babel, hell, and Jesus's scourge challenge the claimed coherence of divine love and wrath.",
+      "sourceSpan": {
+        "startEvent": 1541,
+        "endEvent": 1554,
+        "startMs": 3408020,
+        "endMs": 3436020,
+        "excerpt": "handcrafted a scourge of whips to chase them out of the Temple he also when he was you know in the Old Testament sorry that the old Old Testament and conveniences to you but flooded the whole world right and didn't he kill the firstborn baby of everyone that didn't mark their door didn't he destroy the Tower of Babel where people were just trying to get together and cooperate and he said no no this won't do and then and and frustrate their languages doesn't he sentence everyone to Hell by default"
+      },
+      "respondsToIds": [
+        "pro-love-and-wrath-are-coherent"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-violence-to-love-wrath",
+          "targetMoveId": "pro-love-and-wrath-are-coherent",
+          "text": "Flood, firstborn, Babel, hell, and the temple scourge are offered as concrete cases that require more than an abstract reconciliation of love and wrath.",
+          "contacted": true,
+          "decisive": false
+        }
+      ],
+      "argumentDescription": "Dillahunty cites the flood, firstborn deaths, Babel, hell, and Jesus’s temple scourge to challenge whether Knechtle can coherently reconcile divine wrath with love.",
+      "critique": "Strongest feature: Dillahunty directly tests Knechtle’s claim that loving wrath opposes harm by citing the flood, firstborn deaths, Babel, hell, and the temple scourge as apparent counterexamples requiring explanation. Principal limitation: The compressed catalogue supplies no textual context, conflates distinct divine actions, misstates Babel as destruction, and leaves “sentence everyone to Hell by default” doctrinally undefended, while sarcasm reduces charitable engagement. Live burden: He must show that cited victims are not relevant wrongdoers, establish morally comparable features across episodes, and defeat contextual reconciliations grounded in justice. Locked score: 77 appropriately rewards direct reply contact, concrete scriptural touchpoints, coherent counterexample pressure, and substantial relevance to divine-character tension, while withholding credit because evidential underdevelopment and rhetorical overreach prevent the catalogue from establishing incoherence.",
+      "lockedScore": 77,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 74,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 63,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "con-forgiveness-and-hell-undermine-justice",
+      "kind": "card",
+      "moveId": "con-forgiveness-and-hell-undermine-justice",
+      "sectionId": "divine-character",
+      "sectionTitle": "Divine character, love, wrath, and punishment",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "proposition": "Christian salvation and eternal punishment can allow a forgiven murderer to enter heaven while victims enter hell, so the system does not guarantee justice and intensifies the moral tension in God's character.",
+      "sourceSpan": {
+        "startEvent": 2610,
+        "endEvent": 2624,
+        "startMs": 5840760,
+        "endMs": 5871900,
+        "excerpt": "justice in your system a mass murderer gets forgiven and goes to spend eternity in heaven while his victims go to hell there is no guarantee of Justice in your system that is grossly immoral in the New Testament is grossly worse than the Old Testament because at least then you died and slept with your fathers but now you're going to be punished forever the notion that there's Justice within Christianity is one of the most bizarre lies that people have bought it's embarrassing it's right up there with pretending that it doesn't allow for slavery"
+      },
+      "respondsToIds": [
+        "pro-love-and-wrath-are-coherent"
+      ],
+      "responseComponents": [
+        {
+          "componentId": "con-forgiveness-hell-to-love-wrath",
+          "targetMoveId": "pro-love-and-wrath-are-coherent",
+          "text": "A system that can forgive a murderer while eternally punishing victims does not guarantee proportionate justice and therefore challenges the claimed coherence of divine love and wrath.",
+          "contacted": true,
+          "decisive": true
+        }
+      ],
+      "argumentDescription": "Dillahunty argues that forgiving a mass murderer while eternally punishing victims disconnects ultimate outcomes from proportional desert, undermining Knechtle’s reconciliation of divine love and wrath.",
+      "critique": "Strongest feature: The murderer-victim reversal directly engages Knechtle’s contention that wrath prevents indifference toward wrongdoing, because forgiving the perpetrator while eternally punishing victims makes ultimate outcomes appear disconnected from proportional desert. Principal limitation: Dillahunty presents a doctrinal hypothetical without establishing that Knechtle’s theology assigns either destiny as alleged, while calling Christian justice a bizarre lie, grossly immoral, and embarrassing greatly exceeds the argument’s compressed support. Live burden: He must specify how repentance, belief, culpability, forgiveness, and further judgment determine both destinies, then show that doctrinal qualifications cannot restore proportionate justice. Locked score: The score of 76 fits an exceptionally responsive, burden-relevant challenge with a lucid contrast, while discounting unverified assumptions, incomplete specification, and uncharitable certainty.",
+      "lockedScore": 76,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 64,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 51,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    }
+  ],
+  "overallBlunders": [
+    {
+      "candidateId": "overall-pro-blunder-1",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "text": "Textual preservation and reported divine claims were repeatedly treated as historical or supernatural truth without supplying the necessary evidential and causal bridges."
+    },
+    {
+      "candidateId": "overall-pro-blunder-2",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "text": "Manuscript counts, dating claims, patristic quotations, and resurrection-source totals remained unsourced, ambiguously defined, and largely untested for genuine independence."
+    },
+    {
+      "candidateId": "overall-pro-blunder-3",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Stuart Knechtle",
+      "text": "Evolutionary and moral comparisons overstated Christian uniqueness, underdescribed natural alternatives, and confused beneficial social influence with evidence for supernatural doctrine."
+    },
+    {
+      "candidateId": "overall-con-blunder-1",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "text": "Testability and falsifiability were sometimes presented as universal requirements for rational belief without sufficient defense regarding historical or metaphysical propositions."
+    },
+    {
+      "candidateId": "overall-con-blunder-2",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "text": "Categorical claims that stories are not evidence obscured the more defensible distinction between testimony possessing some weight and testimony remaining insufficient."
+    },
+    {
+      "candidateId": "overall-con-blunder-3",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "text": "Divine-character objections compressed contested doctrinal assumptions and used adversarial overstatement, weakening serious concerns about proportionality, forgiveness, violence, and eternal punishment."
+    }
+  ],
+  "outputContract": {
+    "status": "complete-and-schema-valid",
+    "reviewedMoveIdsMustEqualPacketOrder": [
+      "pro-limited-evidence-preserves-free-trust",
+      "con-rationality-requires-reality-consistency",
+      "pro-multifaceted-return-to-faith",
+      "con-communicative-god-leaves-burden-unmet",
+      "con-evidentiary-warrant-can-differ-by-person",
+      "pro-jesus-claims-divinity",
+      "con-report-cannot-establish-forgiveness",
+      "pro-gospel-transmission-reliability",
+      "con-historical-evidence-can-be-source-strengthened",
+      "pro-resurrection-cumulative-indicia",
+      "con-supernatural-claims-undemonstrated",
+      "pro-six-source-resurrection-reply",
+      "con-scriptural-story-is-not-miracle-evidence",
+      "con-observed-effect-needs-causal-link",
+      "pro-christianity-explains-altruism-hope",
+      "con-natural-account-of-cooperation",
+      "pro-jesus-transformed-roman-morality",
+      "con-social-benefit-does-not-warrant-supernatural-core",
+      "con-religious-desire-does-not-show-truth",
+      "pro-love-and-wrath-are-coherent",
+      "con-biblical-violence-challenges-character",
+      "con-forgiveness-and-hell-undermine-justice"
+    ],
+    "reviewedOverallBlunderIdsMustEqualPacketOrder": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-2",
+      "overall-pro-blunder-3",
+      "overall-con-blunder-1",
+      "overall-con-blunder-2",
+      "overall-con-blunder-3"
+    ],
+    "candidateReviewFields": [
+      "moveId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "overallBlunderCandidateReviewFields": [
+      "blunderId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "decisionValues": [
+      "accepted",
+      "rejected"
+    ],
+    "contextWords": [
+      8,
+      35
+    ],
+    "rationaleMinimumWords": 18,
+    "candidateArraysContainEverySeriousCandidateActuallyConsidered": "Include both accepted and rejected serious candidates. Do not fabricate filler candidates merely to increase counts."
+  }
+}

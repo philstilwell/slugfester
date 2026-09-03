@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 10,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.pro-resurrection-cumulative-indicia.description",
+    "moveProse.pro-resurrection-cumulative-indicia.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "pro-resurrection-cumulative-indicia",
+    "sectionId": "resurrection-miracles",
+    "side": "pro",
+    "speaker": "Stuart Knechtle",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 135,
+      "endEvent": 154,
+      "startMs": 281759,
+      "endMs": 325860,
+      "excerpt": "the resurrection evidence I would take a cumulative case typically one Witnesses and how they reported two Skeptics that converted three expectations of the Gospel the way it was presented and the way it was received for Jewish background and understanding of what they were expecting five voluntary persecution suffering six immediate Proclamation seven empty tomb eight the use of women as eyewitnesses which would have been thrown out and then nine I would have said just the start of the early church has a major Paradigm Shift overnight which typically would have taken hundreds of years for that many people to have shifted from something like Judaism to Christianity"
+    },
+    "quoteEligibleExactSpans": [
+      "the resurrection evidence I would take a cumulative case",
+      "six immediate Proclamation seven empty tomb",
+      "a major Paradigm Shift overnight"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Knechtle's source-locked opening statement.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "pro-central-resurrection-case",
+      "tier": "central",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Witness reports, conversions, an empty tomb, immediate proclamation, costly adherence, and the early church's rapid emergence cumulatively support the resurrection.",
+    "inventoryRationale": "This is Knechtle's principal historical argument for Christianity's supernatural core.",
+    "judgments": {
+      "passA": {
+        "moveId": "pro-resurrection-cumulative-indicia",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The several historical considerations form an intelligible cumulative inference, but the move leaves implicit why their conjunction favors resurrection over competing explanations."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "Witnesses, skeptical conversions, an empty tomb, persecution, and rapid church growth are listed without source identification, independence checks, or comparison with rival hypotheses."
+          },
+          "responsiveness": {
+            "value": 82,
+            "rationale": "As an opening constructive, the move directly addresses the motion by offering a historical basis for Christianity's central supernatural claim."
+          },
+          "relevanceBurden": {
+            "value": 88,
+            "rationale": "A cumulative historical case for the resurrection bears directly on the pro side's central burden, though the final bridge to rationally warranted Christianity remains compressed."
+          },
+          "precisionClarity": {
+            "value": 72,
+            "rationale": "The cumulative structure and major items are recoverable, but several numbered points are fragmentary and terms such as witnesses, expectations, and paradigm shift lack definition."
+          },
+          "calibrationCharity": {
+            "value": 68,
+            "rationale": "Calling the church's emergence an overnight shift that otherwise takes hundreds of years overstates what the listed, undeveloped considerations establish."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "pro-resurrection-cumulative-indicia",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The considerations can intelligibly accumulate, but the move leaves implicit how rapid growth, costly adherence, and reports jointly favor resurrection over rival explanations."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "It supplies nine concrete categories, including an empty tomb and immediate proclamation, yet offers no sourcing, independence analysis, or comparison with natural alternatives."
+          },
+          "responsiveness": {
+            "value": 83,
+            "rationale": "As an opening constructive, it directly addresses the motion's supernatural core by presenting the historical considerations Knechtle treats as resurrection evidence."
+          },
+          "relevanceBurden": {
+            "value": 82,
+            "rationale": "The cumulative case materially advances the central pro resurrection burden, although its unstated causal bridge prevents the listed indicia from completing that burden."
+          },
+          "precisionClarity": {
+            "value": 75,
+            "rationale": "The numbered structure is easy to follow, but items such as Gospel expectations and witness reports are compressed, and the relevant source relationships remain unspecified."
+          },
+          "calibrationCharity": {
+            "value": 65,
+            "rationale": "Calling the early church a major paradigm shift overnight and contrasting it with hundreds of years overstates what the move establishes and leaves alternatives untreated."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 74,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 60,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 83,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 85,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 74,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 67,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 74,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Witness reports conversions an empty tomb immediate proclamation costly adherence and the early church's rapid emergence cumulatively support the resurrection within the debate’s dispute over whether Christianity possesses.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that A cumulative historical case for the resurrection bears directly on the pro, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because Witnesses skeptical conversions an empty tomb persecution and rapid church growth are, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why witness reports conversions an empty tomb immediate proclamation costly adherence and the early church's rapid emergence cumulatively support, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 74 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-10/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-10/schema.json",
+    "shape": {
+      "moveId": "pro-resurrection-cumulative-indicia",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

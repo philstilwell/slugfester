@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-02T18:31:24.686Z",
+  "repositoryBaseline": {
+    "branch": "main",
+    "head": "5c71e60801f5c6df5b18eca365cb22ffae0f581f",
+    "localMain": "5c71e60801f5c6df5b18eca365cb22ffae0f581f",
+    "originMain": "5c71e60801f5c6df5b18eca365cb22ffae0f581f",
+    "clean": true,
+    "isolationReason": "The user authorized the next individual debate after the prior debate was committed and pushed, with a required stop before the following queued video."
+  },
+  "identity": {
+    "debateNumber": "238",
+    "debateId": "knechtle-dillahunty-christianity-rational-2023",
+    "label": "Christianity and rational warrant",
+    "canonicalUrl": "https://www.youtube.com/watch?v=d0S_Ul-kRwQ",
+    "videoId": "d0S_Ul-kRwQ",
+    "sourceTitle": "INTENSE DEBATE: Is Christianity Rational? Stuart Knechtle Vs Matt Dillahunty | Podcast 2023",
+    "eventYear": 2023,
+    "eventDate": "2023-02-02",
+    "motion": "Is Christianity rational?",
+    "topicCategory": "god-theism-atheism",
+    "pro": {
+      "speaker": "Stuart Knechtle",
+      "position": "Christianity is rational"
+    },
+    "con": {
+      "speaker": "Matt Dillahunty",
+      "position": "Christianity lacks rational warrant"
+    },
+    "moderator": "James Kunz",
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-238/",
+    "docs/assessment-ledgers/knechtle-dillahunty-christianity-rational-2023.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/knechtle-dillahunty-christianity-rational-2023.js",
+    "src/data/debate-summaries.js",
+    "src/data/debate-analytics.js",
+    "src/data/interlocutors.js",
+    "src/data/reference-appearances/",
+    "debate/",
+    "interlocutor/",
+    "feed.xml",
+    "index.html",
+    "rankings/index.html",
+    "search/index.html",
+    "sitemap.xml",
+    "topics/index.html",
+    "output/playwright/standalone-debate-v1/debate-238/"
+  ]
+}

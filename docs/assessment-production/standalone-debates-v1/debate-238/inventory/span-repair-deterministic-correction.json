@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-deterministic-span-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "status": "applied-and-validated",
+  "correctionClass": "event-index-preserving-endpoint-normalization-and-invalid-quote-removal",
+  "corrections": [
+    {
+      "field": "moves",
+      "action": "sorted-by-unchanged-start-event",
+      "originalMoveOrder": [
+        "pro-jesus-claims-divinity",
+        "pro-gospel-transmission-reliability",
+        "pro-resurrection-cumulative-indicia",
+        "pro-christianity-explains-altruism-hope",
+        "con-rationality-requires-reality-consistency",
+        "con-supernatural-claims-undemonstrated",
+        "con-communicative-god-leaves-burden-unmet",
+        "con-scriptural-story-is-not-miracle-evidence",
+        "pro-limited-evidence-preserves-free-trust",
+        "con-natural-account-of-cooperation",
+        "pro-jesus-transformed-roman-morality",
+        "con-social-benefit-does-not-warrant-supernatural-core",
+        "pro-love-and-wrath-are-coherent",
+        "con-biblical-violence-challenges-character",
+        "con-religious-desire-does-not-show-truth",
+        "con-report-cannot-establish-forgiveness",
+        "pro-multifaceted-return-to-faith",
+        "pro-six-source-resurrection-reply",
+        "con-observed-effect-needs-causal-link"
+      ],
+      "sortedMoveOrder": [
+        "pro-jesus-claims-divinity",
+        "pro-gospel-transmission-reliability",
+        "pro-resurrection-cumulative-indicia",
+        "pro-christianity-explains-altruism-hope",
+        "con-rationality-requires-reality-consistency",
+        "con-supernatural-claims-undemonstrated",
+        "con-communicative-god-leaves-burden-unmet",
+        "con-scriptural-story-is-not-miracle-evidence",
+        "pro-limited-evidence-preserves-free-trust",
+        "con-natural-account-of-cooperation",
+        "pro-jesus-transformed-roman-morality",
+        "con-social-benefit-does-not-warrant-supernatural-core",
+        "pro-love-and-wrath-are-coherent",
+        "con-religious-desire-does-not-show-truth",
+        "con-biblical-violence-challenges-character",
+        "con-report-cannot-establish-forgiveness",
+        "pro-multifaceted-return-to-faith",
+        "pro-six-source-resurrection-reply",
+        "con-observed-effect-needs-causal-link"
+      ],
+      "replyTargetsRemainEarlier": true
+    },
+    {
+      "moveId": "pro-gospel-transmission-reliability",
+      "field": "quoteEligibleExactSpans",
+      "action": "removed-invalid-quote-candidate",
+      "rejectedQuote": "5800 manuscripts",
+      "reason": "outside-3-to-18-word-contract"
+    },
+    {
+      "moveId": "con-scriptural-story-is-not-miracle-evidence",
+      "field": "quoteEligibleExactSpans",
+      "action": "removed-invalid-quote-candidate",
+      "rejectedQuote": "somebody died and was resurrected",
+      "reason": "not-an-exact-source-substring"
+    },
+    {
+      "moveId": "con-religious-desire-does-not-show-truth",
+      "field": "quoteEligibleExactSpans",
+      "action": "removed-invalid-quote-candidate",
+      "rejectedQuote": "a link between the proposed explanation and the fact",
+      "reason": "not-an-exact-source-substring"
+    },
+    {
+      "moveId": "con-observed-effect-needs-causal-link",
+      "field": "quoteEligibleExactSpans",
+      "action": "removed-invalid-quote-candidate",
+      "rejectedQuote": "connecting observed facts with proposed explanations",
+      "reason": "not-an-exact-source-substring"
+    }
+  ],
+  "semanticSelectionChanged": false,
+  "eventRangesChanged": false,
+  "propositionsChanged": false,
+  "replyLinksChanged": false,
+  "scoresIntroduced": false,
+  "preservedOutput": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/model-output.json",
+  "preservedOutputSha256": "caf37b885dcfba8cf9b0500252260b19cb53946cffef55a51b26036dbefe9002"
+}

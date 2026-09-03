@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 19,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-religious-desire-does-not-show-truth.description",
+    "moveProse.con-religious-desire-does-not-show-truth.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-religious-desire-does-not-show-truth",
+    "sectionId": "moral-experiential-fit",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 1294,
+      "endEvent": 1320,
+      "startMs": 2866020,
+      "endMs": 2932740,
+      "excerpt": "here's the thing um the notion that human beings have desires for things that are tied up in religion in no way demonstrates that those desires are tied to something real and true that at least for all of the religions other than the one you've adopted somebody invented that and got it wrong um but the fact that human beings tend to try to explain the unknown and can get it wrong and can be irrational is all anyone needs to explain everything about every religion especially when we have zero supportive evidence for it and we don't have a testable hypothesis so Christianity isn't doesn't come with a testable falsifiable hypothesis which by definition means it cannot have evidence for it it can have facts that are consistent with it but that's not surprising because the whole purpose is to try to explain facts that are unknown but to have evidence for means that there is a a link between the proposed explanation for a fact and the fact"
+    },
+    "quoteEligibleExactSpans": [
+      "in no way demonstrates that those desires are tied",
+      "human beings tend to try to explain the unknown"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "Dillahunty explicitly answers Knechtle's immediately preceding appeal to widespread religious desires and secular incompleteness.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-subsidiary-natural-moral-account",
+      "tier": "subsidiary",
+      "polarity": "supports"
+    },
+    "respondsToIds": [
+      "pro-christianity-explains-altruism-hope"
+    ],
+    "responseComponents": [
+      {
+        "componentId": "con-desire-to-hope-fit",
+        "targetMoveId": "pro-christianity-explains-altruism-hope",
+        "text": "Desires for hope, meaning, and religious fulfillment do not establish that their proposed religious objects are real.",
+        "contacted": true,
+        "decisive": true
+      }
+    ],
+    "proposition": "Religious desires and facts compatible with Christianity do not support it unless evidence links Christianity's proposed explanation to those facts.",
+    "inventoryRationale": "This directly contests the inference from experiential resonance to the truth or rationality of Christianity.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-religious-desire-does-not-show-truth",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The distinction between facts compatible with a religion and evidence linking those facts to its explanation is coherent, though the testability claim is stated more absolutely than needed."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The demand for a linking relation is a sound conceptual warrant, but claims that people invented every other religion and that Christianity has zero support are not independently demonstrated here."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The move directly addresses the appeal from human hope and religious desire by explaining why desiring or experiencing something does not establish the reality of its proposed object."
+          },
+          "relevanceBurden": {
+            "value": 90,
+            "rationale": "It materially defeats the inference from experiential resonance to rational warrant and reinforces the con side's natural-moral-account bridge without assuming a positive contrary worldview."
+          },
+          "precisionClarity": {
+            "value": 78,
+            "rationale": "The compatibility-versus-evidence distinction is explicit and auditable, but saying non-falsifiability means Christianity cannot have evidence blurs testability with evidential support."
+          },
+          "calibrationCharity": {
+            "value": 66,
+            "rationale": "The core conclusion is appropriately limited to desire not demonstrating truth, while sweeping references to every religion, zero evidence, and definitional impossibility reduce calibration."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-religious-desire-does-not-show-truth",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The distinction between facts merely consistent with a religion and evidence linking those facts to its explanation is coherent, though the testability claim is framed too categorically."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The move supplies a plausible alternative—human attempts to explain unknowns—but does not substantiate the sweeping assertion that this explains every religion or that support is zero."
+          },
+          "responsiveness": {
+            "value": 89,
+            "rationale": "It directly targets the inference from widespread hope, meaning, and religious desire to a real Christian object, while specifying the missing evidential link."
+          },
+          "relevanceBurden": {
+            "value": 88,
+            "rationale": "Rejecting experiential resonance as truth-indicating directly supports the natural-moral-account burden and materially undercuts a central route in Knechtle's case."
+          },
+          "precisionClarity": {
+            "value": 76,
+            "rationale": "The compatibility-versus-evidence distinction is clear, but 'testable,' 'falsifiable,' 'every religion,' and 'zero supportive evidence' carry unresolved scope and definitional ambiguity."
+          },
+          "calibrationCharity": {
+            "value": 61,
+            "rationale": "The core caution about desire is proportionate, but claims that someone invented every rival religion and that Christianity has zero evidence are broader than this exchange establishes."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 84,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 70,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 90,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 89,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 77,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 64,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 80,
+    "relatedMoves": [
+      {
+        "moveId": "pro-christianity-explains-altruism-hope",
+        "side": "pro",
+        "speaker": "Stuart Knechtle",
+        "proposition": "Christianity better explains costly concern beyond one's group, sacrificial love, and durable hope than Knechtle's characterization of evolution does.",
+        "sourceExcerpt": "and then I would say Christianity makes the most sense when it comes to our incredible devotion as a society now to Justice and to helping those who are outside of our own Social Circle or even National Circle what's the reasoning behind it from an evolutionary perspective everything is just supposed to be naturally violent and yet why do we all sudden have just this incredible Focus to help those who are different from us in ways that doesn't benefit us at all and I would say the Judo Christian values are the reason why they've come into our culture and they've radically impacted things and so you see things like sympathy compassion Agape loves sacrificial love you see things like hope you know we are irredeemably hope-based creatures and I don't think you can get there without a firm Eternal understanding of what"
+      }
+    ]
+  },
+  "rejectedPriorFields": {
+    "description": "Religious desires and facts compatible with Christianity do not support it unless evidence links Christianity's proposed explanation to those facts within the debate’s dispute over whether Christianity possesses.",
+    "critique": "Strongest feature: Its responsiveness is best captured by the assessment that The move directly addresses the appeal from human hope and religious desire, making the move’s inferential contribution and assessable. Principal limitation: Its calibration and charity remains constrained because The core conclusion is appropriately limited to desire not demonstrating truth while, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why religious desires and facts compatible with christianity do not support it unless evidence links christianity's proposed explanation to, answer the competing explanation, and show contact with pro-christianity-explains-altruism-hope under a consistently applied evidential standard. Locked score: 80 proportionately credits the move’s specific inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-19/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-19/schema.json",
+    "shape": {
+      "moveId": "con-religious-desire-does-not-show-truth",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-recovery-burden-shard-contract",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "pass",
+    "shardId",
+    "shardKind",
+    "debateNumber",
+    "debateId",
+    "inventorySha256",
+    "isolation",
+    "audit",
+    "burdenCompletionAdjustment"
+  ],
+  "requiredConstants": {
+    "schemaVersion": "1.0-standalone-primary-judgment-recovery-shard",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "shardId": "burden-completion-adjustments",
+    "shardKind": "burden-adjustments",
+    "debateNumber": "238",
+    "debateId": "knechtle-dillahunty-christianity-rational-2023",
+    "inventorySha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab"
+  },
+  "burdenCompletionAdjustment": {
+    "requiredSides": [
+      "pro",
+      "con"
+    ],
+    "value": "integer from -5 through 5; normally zero",
+    "rationale": "concrete source-grounded string of at least 40 characters",
+    "eligibilityFields": {
+      "distinctDebateWideConsequence": "boolean",
+      "affectsBurdenCompletion": "boolean",
+      "notAlreadyScored": "boolean",
+      "affectedBurdenIds": "array of exact burden IDs",
+      "completionCriterion": "string",
+      "relatedMoveIds": "array of exact inventory move IDs",
+      "distinctConsequence": "string",
+      "alreadyCapturedBy": "array of exact move IDs or scored dimensions",
+      "counterfactual": "string"
+    }
+  },
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "audit": {
+    "completeLockedInventoryReviewed": true,
+    "requestedFieldsOnly": true,
+    "ratingsOnlyNoCalculatedScores": true,
+    "publicationBlind": true,
+    "scoreBlind": true
+  },
+  "controls": [
+    "Return only pro and con debate-wide burden-completion adjustments.",
+    "Use zero unless all eligibility requirements support a distinct debate-wide consequence that move ratings do not already capture.",
+    "Do not rate moves or calculate or mention scores, totals, margins, winners, publication prose, fallacy tags, or bias tags.",
+    "Do not inspect any path not explicitly allowed by plan.json and the pass-specific shard plan."
+  ]
+}

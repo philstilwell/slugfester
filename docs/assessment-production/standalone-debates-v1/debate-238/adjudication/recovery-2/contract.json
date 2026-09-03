@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-built-in-recovery-contract",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "reasoningEffort",
+    "isolation",
+    "resolutions",
+    "audit"
+  ],
+  "requiredConstants": {
+    "schemaVersion": "1.0-standalone-dispute-adjudication",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "debateNumber": "238",
+    "debateId": "knechtle-dillahunty-christianity-rational-2023",
+    "reviewerRole": "isolated-dispute-only-adjudicator",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "requiredIsolation": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "requiredAudit": {
+    "everyDisputeResolvedOnce": true,
+    "onlyExistingOptionsSelected": true,
+    "scoresAndWinnerUnavailable": true,
+    "publicationBlind": true
+  },
+  "resolutionContract": {
+    "population": 16,
+    "order": "exact packet order",
+    "fields": [
+      "disputeId",
+      "selectedOption",
+      "rationale"
+    ],
+    "selectedOption": [
+      "option-a",
+      "option-b"
+    ],
+    "rationaleMinimumCharacters": 40
+  },
+  "prohibitions": [
+    "Resolve each packet dispute exactly once and in packet order.",
+    "Select only an existing option; do not average, combine, rewrite, or invent one.",
+    "Do not calculate or mention scores, totals, margins, winners, publication prose, fallacies, biases, or other debates.",
+    "Do not inspect any path not listed in the recovery plan."
+  ]
+}

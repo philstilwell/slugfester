@@ -85,6 +85,14 @@ const paths = {
     selectedRegistryRecord.rhetoricalTagReview?.executionPath,
   postRhetoricalTagRendering:
     selectedRegistryRecord.rhetoricalTagReview?.renderingAuditPath,
+  publicationAiContributionDepthCorrection:
+    selectedRegistryRecord.aiContributionDepth?.correctionPath,
+  publicationAiContributionDepthAudit:
+    selectedRegistryRecord.aiContributionDepth?.auditPath,
+  publicationAiContributionDepthExecution:
+    selectedRegistryRecord.aiContributionDepth?.executionPath,
+  postAiContributionDepthRendering:
+    selectedRegistryRecord.aiContributionDepth?.renderingAuditPath,
   publicationAiContributionPunctuationCorrection:
     selectedRegistryRecord.aiContributionPunctuation?.correctionPath,
   publicationAiContributionPunctuationAudit:
@@ -100,6 +108,42 @@ const paths = {
 const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
+const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u0000a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/a0847cdbed89a6ea5bf346647253d45777349bf239d6f58d18d6ef4135be4d81/audit-assessment-production-standalone-v1.mjs"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs\u000081106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/81106a52698024760f915ae663037e7bfede5663f0f7b8e90ba174b9b49ca838/audit-assessment-production-standalone-rhetorical-tags.mjs"
+  ],
+  [
+    "package.json\u00009da6228b21c2ecbbf16b1f335e7c69b8210c21d37fd33d40027f5fa80d9b226a",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/9da6228b21c2ecbbf16b1f335e7c69b8210c21d37fd33d40027f5fa80d9b226a/package.json"
+  ]
+]);
+const verifyLockedControl = (record) => {
+  const current = bytes(record.path);
+  if (sha256(current) === record.sha256) return;
+  const snapshotPath = VERSIONED_CONTROL_SNAPSHOTS.get(
+    `${record.path}\u0000${record.sha256}`
+  );
+  assert.ok(snapshotPath, `${record.path}: control hash changed without a frozen snapshot`);
+  assert.equal(existsSync(absolute(snapshotPath)), true, `${snapshotPath}: missing`);
+  const snapshot = bytes(snapshotPath);
+  assert.equal(
+    sha256(snapshot),
+    record.sha256,
+    `${snapshotPath}: frozen control snapshot hash changed`
+  );
+  if (record.bytes != null) {
+    assert.equal(
+      snapshot.length,
+      record.bytes,
+      `${snapshotPath}: frozen control snapshot byte count changed`
+    );
+  }
+};
 const gitBytes = (commit, relative) => {
   const result = spawnSync("git", ["show", `${commit}:${relative}`], {
     cwd: ROOT,
@@ -382,6 +426,9 @@ function validateFrozenInputBoundary({
     }
     if (record.rhetoricalTagReview) {
       for (const [key, value] of Object.entries(record.rhetoricalTagReview)) {
+        if (["modelSlug", "modelLabel", "reasoningEffort"].includes(key)) {
+          continue;
+        }
         if (key === "priorPublicationGitCommit") {
           assert.match(value, /^[0-9a-f]{40}$/);
           continue;
@@ -394,6 +441,22 @@ function validateFrozenInputBoundary({
           value.startsWith(expectedDirectory),
           true,
           `Debate ${record.debateNumber}: rhetorical-tag evidence is outside its allowed directory`
+        );
+      }
+    }
+    if (record.aiContributionDepth) {
+      for (const [key, value] of Object.entries(record.aiContributionDepth)) {
+        if (["modelSlug", "modelLabel", "reasoningEffort"].includes(key)) {
+          continue;
+        }
+        const expectedDirectory =
+          key === "renderingAuditPath"
+            ? `${record.root}/rendering/`
+            : `${record.root}/publication/`;
+        assert.equal(
+          value.startsWith(expectedDirectory),
+          true,
+          `Debate ${record.debateNumber}: AI Contribution depth evidence is outside its allowed directory`
         );
       }
     }
@@ -429,7 +492,7 @@ function validateFrozenInputBoundary({
   }
   for (const record of Object.values(manifest.controlLocks)) {
     assert.equal(existsSync(absolute(record.path)), true, `${record.path}: missing`);
-    assert.equal(sha256(bytes(record.path)), record.sha256, `${record.path}: control hash changed`);
+    verifyLockedControl(record);
   }
   const inventory = json(paths.inventory);
   const events = repositoryOnly ? null : json(paths.events);
@@ -477,8 +540,37 @@ function validateFrozenInputBoundary({
   assert.equal(execution.execution.model, "gpt-5.6-sol");
   assert.equal(execution.execution.displayModel, "5.6 Sol");
   assert.equal(execution.execution.reasoningEffort, "low");
-  assert.equal(execution.execution.freshContextPerPass, true);
-  assert.equal(execution.execution.forkTurns, "none");
+  if (
+    execution.execution.recoveryMode ===
+    "built-in-section-and-burden-field-disjoint-shards"
+  ) {
+    assert.equal(execution.schemaVersion, "1.2-standalone-judgment-execution");
+    assert.equal(execution.execution.pluginsDisabled, true);
+    assert.equal(execution.execution.userConfigurationDisabled, true);
+    assert.equal(execution.execution.projectRulesDisabled, true);
+    assert.equal(execution.execution.isolatedFilesystemPackets, true);
+    assert.equal(execution.execution.apiKeysRemoved, true);
+    assert.equal(execution.execution.oneAttemptPerBuiltInRecoveryShard, true);
+    assert.equal(execution.execution.mechanicalAssemblyOnly, true);
+    for (const recovery of [
+      ["recovery2ExecutionPath", "recovery2ExecutionSha256"],
+      ["recovery3ExecutionPath", "recovery3ExecutionSha256"]
+    ]) {
+      const [pathKey, hashKey] = recovery;
+      assert.equal(
+        sha256(bytes(execution.execution[pathKey])),
+        execution.execution[hashKey]
+      );
+    }
+    for (const pass of execution.passes) {
+      assert.equal(pass.builtInRecoveryShardCount, 6);
+      assert.equal(pass.builtInRecoveryShardAttemptCount, 6);
+      assert.equal(pass.builtInRecoveryShardRetryCount, 0);
+    }
+  } else {
+    assert.equal(execution.execution.freshContextPerPass, true);
+    assert.equal(execution.execution.forkTurns, "none");
+  }
   assert.equal(execution.execution.inventorySha256, inventorySha256);
   assert.deepEqual(
     execution.passes.map((pass) => pass.pass),
@@ -831,6 +923,16 @@ function buildProductionAdapter() {
     ["publicationRhetoricalTagExecution", paths.publicationRhetoricalTagExecution],
     ["postRhetoricalTagRendering", paths.postRhetoricalTagRendering],
     [
+      "publicationAiContributionDepthCorrection",
+      paths.publicationAiContributionDepthCorrection
+    ],
+    ["publicationAiContributionDepthAudit", paths.publicationAiContributionDepthAudit],
+    [
+      "publicationAiContributionDepthExecution",
+      paths.publicationAiContributionDepthExecution
+    ],
+    ["postAiContributionDepthRendering", paths.postAiContributionDepthRendering],
+    [
       "publicationAiContributionPunctuationCorrection",
       paths.publicationAiContributionPunctuationCorrection
     ],
@@ -1020,15 +1122,19 @@ function audit({ repositoryOnly = false } = {}) {
     if (prior.gitCommit) {
       assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
     }
-    const nextCorrection = paths.publicationAiContributionPunctuationCorrection
-      ? json(paths.publicationAiContributionPunctuationCorrection)
-      : null;
+    const nextCorrection = paths.publicationAiContributionDepthCorrection
+      ? json(paths.publicationAiContributionDepthCorrection)
+      : paths.publicationAiContributionPunctuationCorrection
+        ? json(paths.publicationAiContributionPunctuationCorrection)
+        : null;
     const tagCorrectedBytes = nextCorrection?.preservedPriorOutput?.gitCommit
       ? gitBytes(
           nextCorrection.preservedPriorOutput.gitCommit,
           nextCorrection.preservedPriorOutput.path
         )
-      : bytes(paths.publication);
+      : nextCorrection?.preservedPriorOutput?.path
+        ? bytes(nextCorrection.preservedPriorOutput.path)
+        : bytes(paths.publication);
     assert.equal(correction.evidence.after.sha256, sha256(tagCorrectedBytes));
     assert.equal(correction.evidence.after.bytes, tagCorrectedBytes.length);
     assert.equal(
@@ -1051,9 +1157,18 @@ function audit({ repositoryOnly = false } = {}) {
         "passed-two-blind-reviews-adjudication-and-final-definition-check"
       );
       assert.equal(execution.debateNumber, DEBATE_NUMBER);
-      assert.equal(execution.model.label, "5.6 Sol");
-      assert.equal(execution.model.slug, "gpt-5.6-sol");
-      assert.equal(execution.model.reasoningEffort, "low");
+      assert.equal(
+        execution.model.label ?? execution.model.display,
+        selectedRegistryRecord.rhetoricalTagReview.modelLabel ?? "5.6 Sol"
+      );
+      assert.equal(
+        execution.model.slug,
+        selectedRegistryRecord.rhetoricalTagReview.modelSlug ?? "gpt-5.6-sol"
+      );
+      assert.equal(
+        execution.model.reasoningEffort,
+        selectedRegistryRecord.rhetoricalTagReview.reasoningEffort ?? "low"
+      );
       assert.equal(execution.audit.blindReviews, 2);
       assert.equal(execution.audit.retries, 0);
     }
@@ -1071,6 +1186,122 @@ function audit({ repositoryOnly = false } = {}) {
     assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
     assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
     assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+  }
+  if (paths.publicationAiContributionDepthCorrection) {
+    const correction = json(paths.publicationAiContributionDepthCorrection);
+    const depthAudit = json(paths.publicationAiContributionDepthAudit);
+    const prior = correction.preservedPriorOutput;
+    const priorBytes = prior.gitCommit
+      ? gitBytes(prior.gitCommit, prior.path)
+      : bytes(prior.path);
+    const priorPublication = JSON.parse(priorBytes.toString("utf8"));
+    const priorOutsideExtension = structuredClone(priorPublication);
+    const currentOutsideExtension = structuredClone(publication);
+    delete priorOutsideExtension.candidate.logicalExtension;
+    delete currentOutsideExtension.candidate.logicalExtension;
+    const changedPaths = changedLeafPaths(
+      priorPublication.candidate.logicalExtension,
+      publication.candidate.logicalExtension
+    );
+    const declaredPaths = correction.writableShards.flatMap((shard) => shard.fields);
+
+    assert.equal(correction.status, "applied-once-and-frozen");
+    assert.equal(correction.audit.judgmentChanges, 0);
+    assert.equal(correction.audit.scoreChanges, 0);
+    assert.equal(correction.audit.moveChanges, 0);
+    assert.equal(correction.audit.tagChanges, 0);
+    assert.equal(correction.audit.critiqueChanges, 0);
+    assert.equal(correction.audit.descriptionChanges, 0);
+    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
+    assert.equal(prior.sha256, sha256(priorBytes));
+    assert.equal(prior.bytes, priorBytes.length);
+    if (prior.gitCommit) assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
+    assert.deepEqual(
+      currentOutsideExtension,
+      priorOutsideExtension,
+      "AI Contribution depth repair changed another publication field"
+    );
+    assert.deepEqual(
+      [...changedPaths].sort(),
+      [...declaredPaths].sort(),
+      "AI Contribution depth repair differs from its declared writable fields"
+    );
+    assert.equal(changedPaths.length, correction.audit.changedLeafFields);
+    const nextCorrection = paths.publicationAiContributionPunctuationCorrection
+      ? json(paths.publicationAiContributionPunctuationCorrection)
+      : null;
+    const depthCorrectedBytes = nextCorrection?.preservedPriorOutput?.gitCommit
+      ? gitBytes(
+          nextCorrection.preservedPriorOutput.gitCommit,
+          nextCorrection.preservedPriorOutput.path
+        )
+      : nextCorrection?.preservedPriorOutput?.path
+        ? bytes(nextCorrection.preservedPriorOutput.path)
+        : bytes(paths.publication);
+    assert.equal(correction.evidence.after.sha256, sha256(depthCorrectedBytes));
+    assert.equal(correction.evidence.after.bytes, depthCorrectedBytes.length);
+    assert.equal(
+      correction.evidence.contentParityAudit.sha256,
+      sha256(bytes(paths.publicationAiContributionDepthAudit))
+    );
+    assert.equal(
+      correction.evidence.contentParityAudit.bytes,
+      bytes(paths.publicationAiContributionDepthAudit).length
+    );
+    assert.equal(depthAudit.status, "passed-content-parity-audit");
+    assert.equal(depthAudit.debateNumber, DEBATE_NUMBER);
+    for (const metric of [
+      "extensionThesisWordsMean",
+      "extensionPremiseWordsMean",
+      "extensionConclusionWordsMean",
+      "extensionNewArgumentWordsMean"
+    ]) {
+      assert.equal(
+        depthAudit.metrics[metric] >= depthAudit.referenceRanges[metric].minimum &&
+          depthAudit.metrics[metric] <= depthAudit.referenceRanges[metric].maximum,
+        true,
+        `${metric}: repaired AI Contribution remains outside the independent comparison range`
+      );
+    }
+    if (paths.publicationAiContributionDepthExecution) {
+      const execution = json(paths.publicationAiContributionDepthExecution);
+      assert.equal(
+        execution.status,
+        "complete-and-schema-valid-after-bounded-card-depth-rhetorical-and-ai-contribution-depth-repairs"
+      );
+      assert.equal(execution.debateNumber, DEBATE_NUMBER);
+      assert.equal(execution.aiContributionDepthRepair.shardAttempts, 10);
+      assert.equal(execution.aiContributionDepthRepair.shardRetries, 0);
+      assert.equal(
+        execution.aiContributionDepthRepair.maximumWritableFieldsPerShard <= 2,
+        true
+      );
+      assert.equal(
+        execution.aiContributionDepthRepair.model.slug,
+        selectedRegistryRecord.aiContributionDepth.modelSlug ?? "gpt-5.6-sol"
+      );
+      assert.equal(
+        execution.aiContributionDepthRepair.model.label,
+        selectedRegistryRecord.aiContributionDepth.modelLabel ?? "5.6 Sol"
+      );
+      assert.equal(
+        execution.aiContributionDepthRepair.model.reasoningEffort,
+        selectedRegistryRecord.aiContributionDepth.reasoningEffort ?? "low"
+      );
+    }
+    if (paths.postAiContributionDepthRendering) {
+      const renderingAudit = json(paths.postAiContributionDepthRendering);
+      assert.equal(
+        renderingAudit.status,
+        "passed-post-ai-contribution-depth-rendering-audit"
+      );
+      assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
+      assert.equal(renderingAudit.audit.visibleCorrectionsVerified, changedPaths.length);
+      assert.equal(renderingAudit.audit.runtimeFailures, 0);
+      assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
+      assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
+      assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
+    }
   }
   if (paths.publicationAiContributionPunctuationCorrection) {
     const correction = json(paths.publicationAiContributionPunctuationCorrection);

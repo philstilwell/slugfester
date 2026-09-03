@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-failure-diagnosis",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "diagnosed-field-disjoint-recovery-required",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "failure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/adjudication/failure-1.json",
+    "class": "monolithic-response-timeout",
+    "acceptedOutputCreated": false
+  },
+  "transportEvidence": {
+    "pairedNeutralHealthCheckPassedImmediatelyBeforeResumption": true,
+    "probeOneElapsedSeconds": 4.004,
+    "probeTwoElapsedSeconds": 3.854,
+    "bothFinalOutputs": "TRANSPORT_OK"
+  },
+  "diagnosis": "The transport path was healthy for two simultaneous neutral probes, but the single 16-resolution adjudication exceeded its ten-minute limit. The evidence supports a response-size or long-form execution failure rather than renewed authentication or basic transport failure.",
+  "controls": {
+    "identicalMonolithicRetryForbidden": true,
+    "preserveFrozenPacket": true,
+    "preserveAnonymousOptions": true,
+    "smallestFieldDisjointRecovery": "one dispute resolution per fresh isolated shard",
+    "oneAttemptPerRecoveryShard": true,
+    "scoresRemainUnavailable": true,
+    "publicationRemainsUnavailable": true,
+    "directIncrementalCostUsd": 0
+  }
+}

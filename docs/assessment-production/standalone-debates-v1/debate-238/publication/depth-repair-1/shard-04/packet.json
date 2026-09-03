@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0-bounded-publication-depth-repair-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "shardNumber": 4,
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "high",
+  "isolation": "fresh built-in subagent; packet-only; no other repair output visible in task context",
+  "writableFields": [
+    "moveProse.con-communicative-god-leaves-burden-unmet.description",
+    "moveProse.con-communicative-god-leaves-burden-unmet.critique"
+  ],
+  "maximumWritableFields": 2,
+  "attemptsAllowed": 1,
+  "directCostUsd": 0,
+  "immutableLocks": {
+    "packetSha256": "24efd9758c21fdf014a2956b456cf9c65ec2fb74b3a72dd7cbade21085e0a940",
+    "contractSha256": "1e3532d8779d2de4b4a2eaa43f1f50eedecede63f7843256cabeb484089afa6e",
+    "rejectedArtifactSha256": "e3fb43f1a78014a783a180f85224466fdb6b57d4453c265103f3b6283df856f7",
+    "scoresImmutable": true,
+    "evidenceAndJudgmentsImmutable": true
+  },
+  "controls": {
+    "descriptionTargetWords": [
+      22,
+      28
+    ],
+    "critiqueTargetWords": [
+      112,
+      122
+    ],
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueSentences": 4
+  },
+  "requirements": {
+    "description": "Write one complete, natural sentence that states the locked claim and, where present, its supporting reason or comparison plus the inference, consequence, or burden it advances. Aim for 22–28 words without padding or invented premises.",
+    "critique": "Write exactly four complete labeled sentences in the required order. Analyze this move’s actual inference, source evidence, reply contact, principal limitation, remaining live burden, and distinctive frozen dimension pattern. Explain why the locked score fits without listing all six dimension numbers.",
+    "originality": "Use individually authored, move-specific prose. Vary syntax and analytical emphasis naturally; do not imitate the rejected fields or rely on a reusable sentence skeleton beyond the four mandatory labels.",
+    "punctuation": "Use ordinary grammatical punctuation and complete every sentence and proposition.",
+    "rhetoricalReviewBoundary": "Do not add fallacy or bias tags. A later blind catalog review handles those labels after the critiques freeze."
+  },
+  "prohibited": [
+    "Changing the move proposition, evidence, judgments, final dimensions, score, or any other publication field.",
+    "Inventing source facts or arguments absent from the packet.",
+    "Referring to validation, word counts, character counts, packets, shards, models, or workflow mechanics in reader-facing prose.",
+    "Copying or lightly paraphrasing the rejected description or critique.",
+    "Generic phrases that could be transplanted unchanged to unrelated moves."
+  ],
+  "move": {
+    "moveId": "con-communicative-god-leaves-burden-unmet",
+    "sectionId": "epistemic-warrant",
+    "side": "con",
+    "speaker": "Matt Dillahunty",
+    "moveKind": "constructive",
+    "sourceSpan": {
+      "startEvent": 509,
+      "endEvent": 527,
+      "startMs": 1080120,
+      "endMs": 1127600,
+      "excerpt": "Christianity whether it's true or not isn't testable isn't falsifiable makes claims that aren't supported by evidence or verifiable observation and therefore isn't rational moreover as Christianity holds that there's a being an agent who is beyond nature and is capable of communicating with us and capable of explaining all of these claims in a way that would result in a justifiable rational model and yet this hasn't happened that's one aspect of Christianity that while not fully falsifiable certainly would affirm that the default position of this is not true applies and continues to apply until that changes the burden of proof for truth and for rationality exists and neither has been met for Christianity"
+    },
+    "quoteEligibleExactSpans": [
+      "claims that aren't supported by evidence or verifiable observation",
+      "capable of communicating with us",
+      "neither has been met for Christianity"
+    ],
+    "attributionConfidence": "high",
+    "attributionBasis": "The span lies within Dillahunty's source-locked opening statement.",
+    "importance": 3,
+    "burdenContact": {
+      "bridgeId": "con-motion-warrant-unmet",
+      "tier": "motion",
+      "polarity": "supports"
+    },
+    "respondsToIds": [],
+    "responseComponents": [],
+    "proposition": "Because Christianity posits a communicative agent able to supply a rational model but no such evidential explanation has appeared, its burden of proof remains unmet.",
+    "inventoryRationale": "This connects evidential absence and the claimed capacities of God directly to the motion-level conclusion.",
+    "judgments": {
+      "passA": {
+        "moveId": "con-communicative-god-leaves-burden-unmet",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The inference from an able communicative agent and absent adequate disclosure to an unmet burden is intelligible, though what such an agent should provide is implicit."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The move identifies unsupported and unverifiable Christian claims, but largely asserts the absence of evidence without examining the evidence already offered in detail."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "It engages Christianity's claimed rational warrant and answers the pro case by arguing that a capable God has not supplied a justifiable public model."
+          },
+          "relevanceBurden": {
+            "value": 92,
+            "rationale": "The conclusion that the burden for truth and rationality remains unmet connects the evidential objection directly to the motion-level con position."
+          },
+          "precisionClarity": {
+            "value": 82,
+            "rationale": "The burden and communicative-capacity claims are easy to follow, although 'this hasn't happened' leaves the required form and threshold of disclosure underspecified."
+          },
+          "calibrationCharity": {
+            "value": 70,
+            "rationale": "Acknowledging that Christianity is not fully falsifiable adds restraint, but the sweeping claim that its claims lack support gives limited treatment to proffered evidence."
+          }
+        }
+      },
+      "passB": {
+        "moveId": "con-communicative-god-leaves-burden-unmet",
+        "assessmentConfidence": "high",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The absence of an expected explanation from an allegedly capable communicator supports withholding belief, although the expectation that it should occur needs defense."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The excerpt asserts that Christian claims lack verifiable support and that divine explanation has not appeared, without examining claimed counterexamples or access differences."
+          },
+          "responsiveness": {
+            "value": 86,
+            "rationale": "The move confronts Christianity's asserted warrant at the motion level by asking why its communicative God has not supplied an adequately justifying model."
+          },
+          "relevanceBurden": {
+            "value": 92,
+            "rationale": "It directly supports the locked con motion burden that Christianity has not shown its core claims to match reality and therefore remains unwarranted."
+          },
+          "precisionClarity": {
+            "value": 78,
+            "rationale": "The burden-of-proof conclusion is easy to recover, but broad claims that Christianity is not testable or falsifiable leave doctrine and evidence classes undifferentiated."
+          },
+          "calibrationCharity": {
+            "value": 66,
+            "rationale": "The move appropriately frames disbelief as a default pending evidence, yet treats the absence of adequate divine communication as settled without acknowledging disputed experiences."
+          }
+        }
+      }
+    },
+    "finalDimensions": {
+      "logicalCoherence": {
+        "value": 78,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "evidenceWarrant": {
+        "value": 62,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "responsiveness": {
+        "value": 86,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "relevanceBurden": {
+        "value": 92,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "precisionClarity": {
+        "value": 80,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      },
+      "calibrationCharity": {
+        "value": 68,
+        "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+        "resolution": "rounded-mean"
+      }
+    },
+    "assessmentConfidence": "high",
+    "lockedScore": 78,
+    "relatedMoves": []
+  },
+  "rejectedPriorFields": {
+    "description": "Because Christianity posits a communicative agent able to supply a rational model but no such evidential explanation has appeared, its burden of proof remains unmet.",
+    "critique": "Strongest feature: Its burden relevance is best captured by the assessment that The conclusion that the burden for truth and rationality remains unmet connects, making the move’s inferential contribution and assessable. Principal limitation: Its evidential warrant remains constrained because The move identifies unsupported and unverifiable Christian claims but largely asserts the, which leaves a gap between the supplied evidence and the proposition’s argumentative scope. Live burden: The speaker must establish why because christianity posits a communicative agent able to supply a rational model but no such evidential explanation has, answer the competing explanation, and show contact with the motion-level rational-warrant standard under a applied evidential standard. Locked score: 78 credits the move’s inference, evidence, and debate relevance while withholding points for the unresolved contextual, comparative, and evidence-to-conclusion work identified above."
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-04/result.json",
+    "schemaPath": "docs/assessment-production/standalone-debates-v1/debate-238/publication/depth-repair-1/shard-04/schema.json",
+    "shape": {
+      "moveId": "con-communicative-god-leaves-burden-unmet",
+      "description": "<replacement string>",
+      "critique": "<replacement string>"
+    }
+  }
+}

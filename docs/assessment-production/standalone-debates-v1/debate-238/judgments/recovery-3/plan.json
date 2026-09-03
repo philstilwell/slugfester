@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-standalone-primary-judgment-built-in-subagent-recovery-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-exceptional-recovery-execution",
+  "debateNumber": "238",
+  "debateId": "knechtle-dillahunty-christianity-rational-2023",
+  "frozenAt": "2026-09-02T22:07:27.000Z",
+  "authorization": [
+    "I authorize this for Sections 2-5.",
+    "...as well as the burden-completion judgments."
+  ],
+  "authorizationContext": "Apply the same controlled built-in GPT-5.6 Sol replacement method that succeeded for Debate 238 Section 1 to Sections 2-5 and the separate burden-completion shard.",
+  "reason": "The built-in isolated task-model surface successfully produced both schema-valid Section 1 judgments after the authenticated non-interactive command-line surface repeatedly returned no output.",
+  "exceptionScope": {
+    "shardIds": [
+      "section-02-scripture-testimony",
+      "section-03-resurrection-miracles",
+      "section-04-moral-experiential-fit",
+      "section-05-divine-character"
+    ],
+    "passes": [
+      "pass-a",
+      "pass-b"
+    ],
+    "attemptsPerPassShard": 1,
+    "burdenCompletionAuthorized": true,
+    "scoresAuthorized": false,
+    "publicationAuthorizedByThisException": false
+  },
+  "executionControls": {
+    "surface": "built-in-collaboration-subagent",
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "freshContextPerPassShard": true,
+    "simultaneousLaunchOnlyWithinCorrespondingPassPair": true,
+    "mutuallyBlind": true,
+    "scoreBlind": true,
+    "publicationBlind": true,
+    "directIncrementalCostUsd": 0
+  },
+  "evidenceLocks": {
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+      "sha256": "87897c0777cd333e69a249e8d808114d8a4825006077529b29522330aca3df0e"
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+      "sha256": "5381ae3a9ab250863193949521086dbba08d62d29d972610a7eb20ed70876aab"
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c"
+    },
+    "section1RecoveryExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-2/execution.json",
+      "sha256": "33a91f4ec32fca4178bbe41f978f3746324a0ec4aa97cd2da37a93865c21d6b9"
+    }
+  },
+  "allowedReadPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/judgment-packet.json",
+    "docs/assessment-production/standalone-debates-v1/debate-238/inventory/inventory.json",
+    "docs/reassessment-rubric-v2.1.md",
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-3/plan.json",
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-3/contract.json",
+    "docs/assessment-production/standalone-debates-v1/debate-238/judgments/recovery-3/burden-contract.json",
+    "one pass-specific shard-plan.json"
+  ],
+  "forbiddenInputs": [
+    "the other pass output or shard plan",
+    "all Section 1 judgment outputs",
+    "all current and prior recovery-shard outputs",
+    "prior judgment attempts beyond authenticated failure or execution hashes in the plan",
+    "calculated scores or totals",
+    "winner labels",
+    "publication prose",
+    "fallacy or bias tags",
+    "other debates or legacy assessments"
+  ]
+}
