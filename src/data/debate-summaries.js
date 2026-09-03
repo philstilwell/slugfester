@@ -11138,5 +11138,58 @@ export const debateSummaries = [
         "title": "Secular ethics, meaning, and transcendence"
       }
     ]
+  },
+  {
+    "id": "swinburne-goff-cosmic-purpose-god-2023",
+    "number": "240",
+    "title": "Richard Swinburne vs Philip Goff: What Best Explains Cosmic Purpose?",
+    "year": 2023,
+    "label": "Cosmic purpose, God, and alternative teleology",
+    "date": "2026-09-03",
+    "duration": "1 hr 21 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=uQmBJDc2FCY",
+    "motion": "What best explains apparent cosmic purpose: an omnipotent God or a nontraditional purposeful cosmos?",
+    "summary": "Goff wins by separating cosmic purpose from omnipotence and fitting suffering better, while Swinburne offers substantial design, freedom, compensation, and simplicity defenses.",
+    "topicCategory": "meaning-purpose",
+    "sides": {
+      "pro": {
+        "name": "An omnipotent God best explains cosmic purpose",
+        "speaker": "Richard Swinburne",
+        "color": "teal"
+      },
+      "con": {
+        "name": "A nontraditional purposeful cosmos better explains cosmic purpose",
+        "speaker": "Philip Goff",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Frameworks and explanatory burdens"
+      },
+      {
+        "title": "Fine-tuning and lawful order"
+      },
+      {
+        "title": "Multiverse and consciousness"
+      },
+      {
+        "title": "Suffering and moral purpose"
+      },
+      {
+        "title": "Divine rights and benefaction"
+      },
+      {
+        "title": "Alternative teleologies and simplicity"
+      },
+      {
+        "title": "Epistemic standards and explanatory fit"
+      }
+    ]
   }
 ];

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "triggerPolicy": "Every locked move with medium or low speaker-attribution confidence requires audio verification before adjudication.",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/inventory.json",
+    "sha256": "8f8e4c31e9d40b2290e7c4fd1373a09046f0b22933121fc369bdefffb64735c1"
+  },
+  "source": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=uQmBJDc2FCY",
+    "description": "Public YouTube source audio downloaded locally and clipped with five seconds of context on each side while preserving the locked source timestamps.",
+    "sourceAudioPath": ".assessment-cache/debate-240-audio/source.mp4",
+    "sourceAudioSha256": "66c7858f623b6ea2b9202ddd96d61cedbe38e85c35f20ee09aa8bb8f25cb5247",
+    "sourceAudioBytes": 136914884,
+    "sourceDurationSeconds": 4845.679456,
+    "ignoredLocalSourceRetained": true
+  },
+  "trigger": {
+    "inventoryBelowHighAttributionMoveIds": [
+      "vulnerability-creates-responsibility-and-compassion",
+      "benefaction-not-immaturity-grounds-parental-rights"
+    ],
+    "requiredCheckIds": [
+      "vulnerability-creates-responsibility-and-compassion",
+      "benefaction-not-immaturity-grounds-parental-rights"
+    ]
+  },
+  "triggeredMoveIds": [
+    "vulnerability-creates-responsibility-and-compassion",
+    "benefaction-not-immaturity-grounds-parental-rights"
+  ],
+  "checks": [
+    {
+      "moveId": "vulnerability-creates-responsibility-and-compassion",
+      "inventoryEventRange": [985, 1010],
+      "result": "confirmed",
+      "confirmedSpeaker": "Richard Swinburne",
+      "evidence": "The clip preserves Swinburne's first-person theodicy about God granting free will, disease giving a sufferer an opportunity for patience, and friends receiving an opportunity to care; it then captures Vitale's explicit handoff, ‘let Philip jump back.’",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-240/clips/vulnerability-creates-responsibility-and-compassion__2647200-2744280.mp3",
+        "sha256": "254c0ef34ae750dd9dcda61894c95207e41254836376b6e0246c590614a1ae60",
+        "bytes": 777738,
+        "durationSeconds": 97.08,
+        "clipWindowStartMs": 2647200,
+        "clipWindowEndMs": 2744280
+      },
+      "transcript": {
+        "path": "output/transcribe/standalone-debate-v1/debate-240/transcripts/vulnerability-creates-responsibility-and-compassion.json",
+        "sha256": "68e3726293a3d9fe8d74d0e56a2e29d3ef2f3a740270159fa76c3e669ac1db2e",
+        "bytes": 1158,
+        "reportedDurationSeconds": 98
+      }
+    },
+    {
+      "moveId": "benefaction-not-immaturity-grounds-parental-rights",
+      "inventoryEventRange": [1244, 1263],
+      "result": "confirmed",
+      "confirmedSpeaker": "Richard Swinburne",
+      "evidence": "The clip preserves Swinburne rejecting a social-contract account, restating his benefaction condition, and defending limited parental and state rights through past and expected future benefaction before asking whether he should answer Goff's second point.",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-240/clips/benefaction-not-immaturity-grounds-parental-rights__3326720-3403680.mp3",
+        "sha256": "028f9408d051a988f6a43124545dab70a1eeb9568ec4403b09c7e8e214ee0c3b",
+        "bytes": 616746,
+        "durationSeconds": 76.96,
+        "clipWindowStartMs": 3326720,
+        "clipWindowEndMs": 3403680
+      },
+      "transcript": {
+        "path": "output/transcribe/standalone-debate-v1/debate-240/transcripts/benefaction-not-immaturity-grounds-parental-rights.json",
+        "sha256": "23a40d0a518319c91e5b3ac86d335a2800127bc529a08500cb7cd087b9cf3dc2",
+        "bytes": 1034,
+        "reportedDurationSeconds": 77
+      }
+    }
+  ],
+  "transcription": {
+    "model": "gpt-transcribe",
+    "responseFormat": "json",
+    "speakerResolutionMethod": "Each transcript was mapped from first-person argument ownership, the moderator's adjacent handoff, and the surrounding high-confidence turn sequence preserved by five-second context padding.",
+    "combinedExactClipDurationSeconds": 174.04,
+    "combinedApiReportedDurationSeconds": 175,
+    "localOutputDirectory": "output/transcribe/standalone-debate-v1/debate-240",
+    "successfulSequentialCalls": 2
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsd": 0.0131,
+    "paidCallsAttempted": 2,
+    "successfulPaidCalls": 2,
+    "uncertainOrFailedPaidCalls": 0,
+    "knownSuccessfulCallCostUsd": 0.013125,
+    "maximumPotentialCombinedCostUsd": 0.013125,
+    "pricingBasis": "OpenAI GPT Transcribe duration pricing of $0.0045 per minute, applied to the API-reported total of 175 seconds."
+  },
+  "audit": {
+    "triggeredMoveIdsMatchCompletedChecksExactlyAndInOrder": true,
+    "allRequiredChecksComplete": true,
+    "noSuccessfulCallRepeated": true,
+    "lockedMovesReviewed": 28,
+    "highAttributionConfidenceMoves": 26,
+    "requiredAttributionChecks": 2,
+    "completedAttributionChecks": 2,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0
+  }
+}

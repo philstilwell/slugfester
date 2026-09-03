@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-standalone-inventory-validation-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-score-blind-source-span-sufficiency-failure",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/model-output.json",
+    "sha256": "68df4834c75630dc9dcaf8cbb6c91405ecdca4035b26a59fbb75b37ad7edc058",
+    "bytes": 77486
+  },
+  "structuralValidation": "passed",
+  "sourceSpanSufficiencyValidation": "failed",
+  "diagnosis": {
+    "moves": 28,
+    "meanSourceSpanWords": 255.68,
+    "maximumSourceSpanWords": 569,
+    "movesOver100Words": 24,
+    "movesOver180Words": 19,
+    "reason": "The selection is score-blind and structurally valid, but the evidence spans repeatedly preserve broad speech neighborhoods instead of the smallest complete passage establishing each locked claim. Several quote candidates also capture opening filler rather than the move's load-bearing language."
+  },
+  "repairAuthorization": {
+    "freshIsolatedContext": true,
+    "sameMovePopulationAndOrderRequired": true,
+    "sameSectionsSidesSpeakersMoveKindsImportanceBurdenLinksAndReplyTopologyRequired": true,
+    "writableFields": [
+      "moves[].sourceSpan.startEvent",
+      "moves[].sourceSpan.endEvent",
+      "moves[].sourceSpan.startMs",
+      "moves[].sourceSpan.endMs",
+      "moves[].sourceSpan.excerpt",
+      "moves[].quoteEligibleExactSpans"
+    ],
+    "targetMaximumWords": 180,
+    "longerSpanRequiresSourceSpecificRationale": true,
+    "scoresAvailable": false,
+    "priorAssessmentsAvailable": false
+  }
+}

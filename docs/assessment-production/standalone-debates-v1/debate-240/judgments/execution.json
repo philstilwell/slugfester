@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 240,
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two fresh built-in isolated subagents with explicit score-blind read boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "20e8eddd036165f27243a5c4e46cf108d1b17a51a05cbbe045a768f625f88d31",
+    "inventorySha256": "8f8e4c31e9d40b2290e7c4fd1373a09046f0b22933121fc369bdefffb64735c1",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/pass-a/output.json",
+      "outputSha256": "714b9e51b7d073c1c6690632b4894204dfd0e2681ecb96cee870f6308e3cd4e1",
+      "outputBytes": 53298,
+      "judgmentCount": 28,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-240/judgments/pass-a/output.json"
+      ]
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/pass-b/output.json",
+      "outputSha256": "1ad661e81360eda5406cb828a5d9da319b2c81986ca908ba0d0827fe44830435",
+      "outputBytes": 39046,
+      "judgmentCount": 28,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-240/judgments/pass-b/output.json"
+      ]
+    }
+  ],
+  "completedAt": "2026-09-03T04:44:04Z"
+}

@@ -1,0 +1,684 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/captions.srv3.xml",
+      "sha256": "c35731863a21e8c2251b84804060f9ea8cfa8d2098bd4a2e25d2e533df02e4f4",
+      "bytes": 480435
+    },
+    "events": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/events.json",
+      "sha256": "9bbccef5b91e64428d0ccdb338aec767497883cd92fa3b469098e38eb0038a1b",
+      "bytes": 195130
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/transcript.txt",
+      "sha256": "317fba2939c9d6496ebea5cea08026f0cb6792c1c677e8bd570bd27b12de50d4",
+      "bytes": 82844
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/manifest.json",
+      "sha256": "be16dc58ce305bcb8a208665e0b7a0bc271ca85e7ea71374e8aa54813f349250",
+      "bytes": 1007
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/authorization.json",
+      "sha256": "e8dfd847773ca15be0b135e2b87dc640932bac48384f05d637a350e8fe506565",
+      "bytes": 3627
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/manifest.json",
+      "sha256": "31c2e60064a97015ccee42de6e364d870c60f243fa5ea8875983dbcbc9922f63",
+      "bytes": 7012
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/source/source-lock.json",
+      "sha256": "56d8b952210d7422c5f70671222e6f80630dfb398c8ee2100f37f29997901035",
+      "bytes": 3393
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/inventory.json",
+      "sha256": "8f8e4c31e9d40b2290e7c4fd1373a09046f0b22933121fc369bdefffb64735c1",
+      "bytes": 67760
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/judgment-packet.json",
+      "sha256": "20e8eddd036165f27243a5c4e46cf108d1b17a51a05cbbe045a768f625f88d31",
+      "bytes": 5027
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/execution.json",
+      "sha256": "36c72960d68cb2568c1d46d7e5e9ae86e4560212c8b165c1b3fd64f62830f1eb",
+      "bytes": 2206
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/pass-a/output.json",
+      "sha256": "714b9e51b7d073c1c6690632b4894204dfd0e2681ecb96cee870f6308e3cd4e1",
+      "bytes": 53298
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/judgments/pass-b/output.json",
+      "sha256": "1ad661e81360eda5406cb828a5d9da319b2c81986ca908ba0d0827fe44830435",
+      "bytes": 39046
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/disagreements/disagreements.json",
+      "sha256": "f675a83419d45515eaf48564e9772a0affdf2860b2f8579457efd331e3670ea3",
+      "bytes": 18583
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/audio/audio-verification.json",
+      "sha256": "faf7a23d793c1bf814b11539f25353b1e3a3e88f45163c4937852cdce60daeb3",
+      "bytes": 5311
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/adjudication/packet.json",
+      "sha256": "14b729d2602e0258e1189a4c225b918d4987333e136149d997a319d6281121dc",
+      "bytes": 48697
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/adjudication/output.json",
+      "sha256": "d691d5162fe624bdcd2b6bdb23f0c424af166396d95a57d0ef8d456e83c5578a",
+      "bytes": 5302
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/final-ledger/final-ledger.json",
+      "sha256": "29ce548191b3f37ca539c005a69e3b7d122d9c26732cab15c4c9f28f1e90f996",
+      "bytes": 209752
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/score-pass/input.json",
+      "sha256": "6fbe9ed082649063a87499018b0a57ef493de488afdaa75c447c7462fb93c19f",
+      "bytes": 957
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/score-pass/output.json",
+      "sha256": "41c9e3c58346f1ce67c447ebe2c8eccb5015786b3d10462867a8c652809e0f5d",
+      "bytes": 15736
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/score-pass/attestation.json",
+      "sha256": "9c517a1dd366da4041668e2fed3cd63d6f33c2ab0d096dde5567ef136d9d633a",
+      "bytes": 825
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/output.json",
+      "sha256": "8339afdf5027c92d62e8606d747b3cdd00025ed3396d14d389c28e1fc82059f7",
+      "bytes": 72505
+    },
+    "events": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/events.json",
+      "sha256": "9bbccef5b91e64428d0ccdb338aec767497883cd92fa3b469098e38eb0038a1b",
+      "bytes": 195130
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/transcript.txt",
+      "sha256": "317fba2939c9d6496ebea5cea08026f0cb6792c1c677e8bd570bd27b12de50d4",
+      "bytes": 82844
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/content-parity-audit.json",
+      "sha256": "27d63b70460e185652e0f04a686df60661e68e408e46f380435633696f7fd8ed",
+      "bytes": 5365
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/correction-2-rhetorical-tags.json",
+      "sha256": "cfcaf3381c1a13c358c370b24a25068bd120002d8ee1085e1dbb43b5691b1627",
+      "bytes": 3701
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-audit.json",
+      "sha256": "8b8d809f148d2b068e73f5a8cbc272ee67573da014dd9e1356c4f650304662e1",
+      "bytes": 204734
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "553ac66fba1e96651bd095f0ae2fd5cbead57aa28e8491abc1082d1611b7235b",
+      "bytes": 3547
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "240",
+    "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+    "sections": [
+      {
+        "sectionId": "frameworks-and-explanatory-burdens",
+        "title": "Frameworks and explanatory burdens",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "design-explains-laws-conscious-agents",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 84,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 72
+                },
+                "score": 78
+              },
+              {
+                "moveId": "suffering-enables-serious-responsibility",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 81,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 71
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "middle-ground-separates-purpose-from-omnigod",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 88,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 88
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "fine-tuning-and-lawful-order",
+        "title": "Fine-tuning and lawful order",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "laws-and-consciousness-precede-modern-fine-tuning",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 79,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 74
+                },
+                "score": 75
+              },
+              {
+                "moveId": "life-requires-tunable-law-types",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 82
+                },
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "dark-energy-window-supports-fine-tuning",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 88,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 84
+                },
+                "score": 88
+              },
+              {
+                "moveId": "fine-tuning-implies-goal-directedness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 81,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 69
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "multiverse-and-consciousness",
+        "title": "Multiverse and consciousness",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "multiverse-needs-fine-tuned-generator",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 72,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 66
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "multiverse-inference-commits-inverse-gambler-error",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 84,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 65
+                },
+                "score": 75
+              },
+              {
+                "moveId": "selection-cannot-explain-conscious-experience",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 73
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "suffering-and-moral-purpose",
+        "title": "Suffering and moral purpose",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "compensation-and-necessity-limit-divine-permission",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 86
+                },
+                "score": 83
+              },
+              {
+                "moveId": "vulnerability-creates-responsibility-and-compassion",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 76,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              },
+              {
+                "moveId": "suffering-enables-character-and-radical-freedom",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 82,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 67
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "gratuitous-natural-suffering-challenges-love",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 89,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 84
+              },
+              {
+                "moveId": "cosmic-sin-intuition-opposes-omnipotent-creator",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 73,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 89
+                },
+                "score": 78
+              },
+              {
+                "moveId": "human-limits-do-not-excuse-unlimited-creator",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 93,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-rights-and-benefaction",
+        "title": "Divine rights and benefaction",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "benefactors-have-limited-rights-to-impose-hardship",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 81
+                },
+                "score": 79
+              },
+              {
+                "moveId": "benefaction-not-immaturity-grounds-parental-rights",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 75
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pragmatic-advantage-does-not-create-state-right",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 86,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 78
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "good-outcomes-do-not-create-right-to-harm",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 87
+                },
+                "score": 86
+              },
+              {
+                "moveId": "state-and-parental-authority-have-different-grounds",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 85
+                },
+                "score": 85
+              },
+              {
+                "moveId": "maturity-analogy-does-not-fit-divine-nonintervention",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 83
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "alternative-teleologies-and-simplicity",
+        "title": "Alternative teleologies and simplicity",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 70,
+            "moves": [
+              {
+                "moveId": "alternatives-fit-facts-but-need-further-explanation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 75,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 82
+                },
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "limited-designer-fits-purpose-and-suffering",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 92,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 85
+                },
+                "score": 85
+              },
+              {
+                "moveId": "three-nontraditional-purpose-hypotheses",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 83
+                },
+                "score": 80
+              },
+              {
+                "moveId": "empirical-fit-can-outweigh-default-simplicity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 92,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 87
+                },
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "epistemic-standards-and-explanatory-fit",
+        "title": "Epistemic standards and explanatory fit",
+        "weightPercent": 8,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "perfect-god-is-the-simpler-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 69
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "unknown-facts-do-not-block-best-evidence-reasoning",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 81,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 92
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 76.12,
+        "burdenCompletionAdjustment": 0,
+        "score": 76
+      },
+      "con": {
+        "weightedSectionMean": 82.56,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 28,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}
