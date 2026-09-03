@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "dependent-motion",
+    "unmoved-not-immovable",
+    "causal-circle-concern",
+    "internal-actualizer",
+    "actual-for-all-effects",
+    "subsistent-being",
+    "rival-models",
+    "exclude-composition",
+    "additional-metaphysics-needed",
+    "subsistence-answer",
+    "gradation-source",
+    "necessary-propositions",
+    "analogy-caution",
+    "parthood-test",
+    "rational-ideas",
+    "causal-self-knowledge",
+    "alone-world-knowledge",
+    "eternal-causal-embrace",
+    "modal-not-temporal",
+    "causal-not-receptive",
+    "necessary-not-contingent",
+    "eternal-possession",
+    "changing-truths",
+    "playwright-knowledge",
+    "creative-will-qualification",
+    "providential-collapse",
+    "precontained-differences",
+    "explanatory-difference",
+    "explanation-stopping-point",
+    "freedom-and-concurrence",
+    "specify-freedom"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every packet.template field byte-for-byte.",
+    "summary": "18–28 word source-specific comparative summary.",
+    "quotes": {
+      "pro": "{text,context}",
+      "con": "{text,context}"
+    },
+    "sections": "Copy publicationLayout identities/title/timebox/score and convert rows to exchanges [{pro:card or null,con:card or null}]; cards {ledgerMoveId,time,role,words,score,critique,tags:[]} using exact moveDisplayControls. Preserve every move and per-side order.",
+    "overall": "Each side {score:locked overall score,strengths:[3 strings],blunders:[3 {text,links:[]}]}",
+    "logicalExtension": "Each side {finalArgument:{thesis,premises:[5 strings],conclusion,notice},newArguments:[3 {title,text}]}."
+  },
+  "instructions": {
+    "argumentDescriptionTargetWords": [
+      24,
+      28
+    ],
+    "argumentDescriptionAllowedWords": [
+      8,
+      55
+    ],
+    "argumentMeanMinimum": 22.5,
+    "maximumShareBelow20Words": 0.25,
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "summaryWords": [
+      18,
+      28
+    ],
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 3,
+    "overallItemTargetWords": [
+      18,
+      30
+    ],
+    "newArgumentsPerSide": 3,
+    "premisesPerSide": 5,
+    "representativeQuoteWords": [
+      3,
+      18
+    ],
+    "quoteContextWords": [
+      18,
+      45
+    ],
+    "tagsAndBlunderLinksMustRemainEmptyUntilRhetoricalReview": true,
+    "critiquesExactlyFourLabeledSentences": true,
+    "critiqueRationalesMustBeSourceSpecific": true,
+    "thesisMinimumWords": 12,
+    "premiseMinimumWords": 12,
+    "conclusionMinimumWords": 15,
+    "newArgumentAllowedWords": [
+      45,
+      130
+    ],
+    "newArgumentTargetWords": [
+      90,
+      120
+    ],
+    "ordinaryPunctuationRequired": true,
+    "noGenericBoilerplate": true,
+    "quoteTextMustBeSourceExact": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedArgument": true,
+    "sourceQuoteAuditMustVerifyBothQuotes": true,
+    "noManualScoreChanges": true
+  }
+}

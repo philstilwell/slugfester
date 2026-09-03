@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "completedAt": "2026-09-03T21:39:13.151Z",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/inventory.json",
+    "sha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2",
+    "bytes": 147675
+  },
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/audio/plan.json",
+    "sha256": "c0eba2dbe624d964ab57b03d7e0b1a5bb7451ee4393925161a5caefbba4e2044",
+    "bytes": 4376
+  },
+  "controllerReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-246/audio/controller-review.json",
+    "sha256": "ec2bc3bf76851b517378fa54f800f74991462b7106514e08f9a846ecbcb752d5",
+    "bytes": 1195
+  },
+  "triggeredMoveIds": [
+    "causal-circle-concern",
+    "rational-ideas"
+  ],
+  "checks": [
+    {
+      "moveId": "causal-circle-concern",
+      "status": "confirmed",
+      "expectedSpeaker": "Gregory Pine",
+      "confirmedSpeaker": "Gregory Pine",
+      "method": "gpt-4o-transcribe-diarize with three source-anchored speaker references; controller reviewed every returned segment against the frozen source span",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/causal-circle-concern.mp3",
+        "sha256": "b441dcca9a164f274050b334a03db548b5748f51a142c695c47db58da6aabfb0",
+        "bytes": 687888,
+        "startMs": 4593000,
+        "endMs": 4678840,
+        "durationSeconds": 85.84
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/audio/responses/causal-circle-concern.json",
+        "sha256": "a155366c13d219745a1645f5db5bf071147481de3debcf442e13c7e8ff040028",
+        "bytes": 4852
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Known-speaker diarization attributes the entire selected causal-ground and circularity argument to Pine. Schmid's brief acknowledgment ends just before the selected passage begins; it supplies no premise and receives no credit or penalty. The surrounding audio preserves Pine's qualification about different kinds of reciprocal causality.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " of past and future he's like whoa chief just question beg um right",
+          "speaker": "Gregory Pine",
+          "start": 0,
+          "end": 4.3999999999999995,
+          "id": "seg_0",
+          "absoluteStartMs": 4593000,
+          "absoluteEndMs": 4597400
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yep.",
+          "speaker": "Joseph Schmid",
+          "start": 4.3999999999999995,
+          "end": 4.949999999999999,
+          "id": "seg_1",
+          "absoluteStartMs": 4597400,
+          "absoluteEndMs": 4597950
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " so um with respect to uh book seven the big thing there that he proves is umne quod moveitur valer moveitur so everything that is moved is moved by another and so i think that if you end up with a god who is himself moved in some way shape or form then you have to account for its being moved and by what or by whom",
+          "speaker": "Gregory Pine",
+          "start": 4.949999999999999,
+          "end": 25.8,
+          "id": "seg_2",
+          "absoluteStartMs": 4597950,
+          "absoluteEndMs": 4618800
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " And I think that the fear that you have there is a kind of.",
+          "speaker": "Gregory Pine",
+          "start": 26.324,
+          "end": 29.324,
+          "id": "seg_3",
+          "absoluteStartMs": 4619324,
+          "absoluteEndMs": 4622324
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " um unintelligible circle of causality because i think that the the vision that saint thomas projects of creation is of all things hanging from one fixed point right because you could imagine a system in which things caused each other under different respects and certainly saint thomas anticipates that as a possibility and account for it's like something can cause another thing in formal cause it by formal causality whereas you know a can cause b by formal causality and b can cause a",
+          "speaker": "Gregory Pine",
+          "start": 29.748,
+          "end": 56.298,
+          "id": "seg_4",
+          "absoluteStartMs": 4622748,
+          "absoluteEndMs": 4649298
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " by efficient causality like saint thomas describes the interaction of intellect and will for instance um but i think that if you don't have an ultimate causal ground then all of these you know per se or dependent series of causes effectively crumble and the causality of them ceases to obtain so so so the question would be if you know if if god has some",
+          "speaker": "Gregory Pine",
+          "start": 56.468,
+          "end": 79.36800000000001,
+          "id": "seg_5",
+          "absoluteStartMs": 4649468,
+          "absoluteEndMs": 4672368
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " potency to be realized,",
+          "speaker": "Gregory Pine",
+          "start": 80.756,
+          "end": 81.856,
+          "id": "seg_6",
+          "absoluteStartMs": 4673756,
+          "absoluteEndMs": 4674856
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " or if God is moved in some way,",
+          "speaker": "Gregory Pine",
+          "start": 82.006,
+          "end": 83.706,
+          "id": "seg_7",
+          "absoluteStartMs": 4675006,
+          "absoluteEndMs": 4676706
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " then from where?",
+          "speaker": "Gregory Pine",
+          "start": 83.806,
+          "end": 85.306,
+          "id": "seg_8",
+          "absoluteStartMs": 4676806,
+          "absoluteEndMs": 4678306
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 4549,
+        "input_tokens": 1955,
+        "input_token_details": {
+          "text_tokens": 190,
+          "audio_tokens": 1765
+        },
+        "output_tokens": 2594
+      },
+      "directCostUsd": 0.0308275,
+      "inventoryChanges": 0
+    },
+    {
+      "moveId": "rational-ideas",
+      "status": "confirmed",
+      "expectedSpeaker": "Gregory Pine",
+      "confirmedSpeaker": "Gregory Pine",
+      "method": "gpt-4o-transcribe-diarize with three source-anchored speaker references; controller reviewed every returned segment against the frozen source span",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-246/clips/rational-ideas.mp3",
+        "sha256": "00a6a2aa3cea7329dbd076303af1646a22d5478eaa644837953df236e7e29169",
+        "bytes": 924048,
+        "startMs": 6302760,
+        "endMs": 6418119,
+        "durationSeconds": 115.359
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-246/audio/responses/rational-ideas.json",
+        "sha256": "af9654615dda090fbfabf463e7d678d5c38b8ae63edb510d44be0f11322e551a",
+        "bytes": 7382
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Known-speaker diarization confirms Pine's survey of divine ideas and his rational-versus-real distinction. Near the caption span's end, Fradd gives only acknowledgments, and approximately the first third of a second of Schmid's next response overlaps the caption boundary. Those words are surrounding context, not part of Pine's scored argument; all substantive selected reasoning and the quote candidate are Pine's.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " um let's see paul to heart and benjamin to spain and the and the argument uh so it consists in this uh in just this point on whether or not there are distinct ideas and whether god has ideas of possibles so there's a there's a kind of camp as it were not in like a tribal way but there are folks who argue for the fact that god doesn't know apart from the createdness of the thing as it were so there's no there's no real space metaphysical space for pure possibles",
+          "speaker": "Gregory Pine",
+          "start": 0,
+          "end": 25.75,
+          "id": "seg_0",
+          "absoluteStartMs": 6302760,
+          "absoluteEndMs": 6328510
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " That that would be something that St. Thomas described in the Dei Veritate, and then he just moved on.",
+          "speaker": "Gregory Pine",
+          "start": 26.42,
+          "end": 29.92,
+          "id": "seg_1",
+          "absoluteStartMs": 6329180,
+          "absoluteEndMs": 6332680
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " He abandons it in the Summa Contra Gentiles, and it doesn't appear in the same way in the Summa Theologiae because these divine ideas are specifically practical knowledge.",
+          "speaker": "Gregory Pine",
+          "start": 30.220000000000002,
+          "end": 40.370000000000005,
+          "id": "seg_2",
+          "absoluteStartMs": 6332980,
+          "absoluteEndMs": 6343130
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " So God doesn't have speculative divine ideas in the strict sense.",
+          "speaker": "Gregory Pine",
+          "start": 40.42,
+          "end": 43.52000000000001,
+          "id": "seg_3",
+          "absoluteStartMs": 6343180,
+          "absoluteEndMs": 6346280
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " So these practical divine ideas or exemplars are to be distinguished then from rationes, which don't have the same kind of causal force.",
+          "speaker": "Gregory Pine",
+          "start": 43.77000000000001,
+          "end": 50.67,
+          "id": "seg_4",
+          "absoluteStartMs": 6346530,
+          "absoluteEndMs": 6353430
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " And folks of that persuasion will argue that God just knows the divine essence and that possibles aren't really spun out. So you just have the divine essence and then you have its instantiated forms,",
+          "speaker": "Gregory Pine",
+          "start": 51.284,
+          "end": 60.434,
+          "id": "seg_5",
+          "absoluteStartMs": 6354044,
+          "absoluteEndMs": 6363194
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " whereas you don't have this kind of middle ground.",
+          "speaker": "Gregory Pine",
+          "start": 60.584,
+          "end": 62.834,
+          "id": "seg_6",
+          "absoluteStartMs": 6363344,
+          "absoluteEndMs": 6365594
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " But then somebody as recently as Gregory Doolin will have argued that you do have ideas of possibles insofar as God,",
+          "speaker": "Gregory Pine",
+          "start": 63.484,
+          "end": 72.03399999999999,
+          "id": "seg_7",
+          "absoluteStartMs": 6366244,
+          "absoluteEndMs": 6374794
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " in knowing of his essence, knows all of the distinct enumerated.",
+          "speaker": "Gregory Pine",
+          "start": 72.084,
+          "end": 75.934,
+          "id": "seg_8",
+          "absoluteStartMs": 6374844,
+          "absoluteEndMs": 6378694
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " as it were ways by which that essence can be participated in limited fashion and um his argument is great he published a book with ceo press and maybe like 2014 it's like divine ideas as exemplar causes i want to say and um",
+          "speaker": "Gregory Pine",
+          "start": 76.276,
+          "end": 90.076,
+          "id": "seg_9",
+          "absoluteStartMs": 6379036,
+          "absoluteEndMs": 6392836
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yeah, so they would be like rationally or they would be distinct according to reason,",
+          "speaker": "Gregory Pine",
+          "start": 90.9,
+          "end": 96.4,
+          "id": "seg_10",
+          "absoluteStartMs": 6393660,
+          "absoluteEndMs": 6399160
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " as it were, but not really distinct insofar as there's no real distinctions in God apart from the Trinitarian processions.",
+          "speaker": "Gregory Pine",
+          "start": 96.45,
+          "end": 102.95,
+          "id": "seg_11",
+          "absoluteStartMs": 6399210,
+          "absoluteEndMs": 6405710
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " That is a kind of answer.",
+          "speaker": "Gregory Pine",
+          "start": 104.10000000000001,
+          "end": 106.05000000000001,
+          "id": "seg_12",
+          "absoluteStartMs": 6406860,
+          "absoluteEndMs": 6408810
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yep. Okay.",
+          "speaker": "Matt Fradd",
+          "start": 107.5,
+          "end": 108.55000000000001,
+          "id": "seg_13",
+          "absoluteStartMs": 6410260,
+          "absoluteEndMs": 6411310
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Sure.",
+          "speaker": "Matt Fradd",
+          "start": 108.65,
+          "end": 109.20000000000002,
+          "id": "seg_14",
+          "absoluteStartMs": 6411410,
+          "absoluteEndMs": 6411960
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yeah, no, I'll just make a really brief point that there's a kind of formula that you can use.",
+          "speaker": "Joseph Schmid",
+          "start": 110.05000000000001,
+          "end": 115.20000000000002,
+          "id": "seg_15",
+          "absoluteStartMs": 6412810,
+          "absoluteEndMs": 6417960
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 5607,
+        "input_tokens": 2233,
+        "input_token_details": {
+          "text_tokens": 175,
+          "audio_tokens": 2058
+        },
+        "output_tokens": 3374
+      },
+      "directCostUsd": 0.039322499999999996,
+      "inventoryChanges": 0
+    }
+  ],
+  "cost": {
+    "frozenFullDebateEstimateUsd": 0.023719900000000002,
+    "preauthorizedMaximumUsd": 0.4,
+    "paidCalls": 2,
+    "paidMinutes": 3.3533166666666667,
+    "directCostUsd": 0.07015,
+    "knownSuccessfulCallCostUsd": 0.07015,
+    "maximumPotentialCombinedCostUsd": 0.07015,
+    "uncertainCostUsd": 0,
+    "transcriptionCapUsd": 1,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "calculation": "Actual reported input tokens at $2.50 per million plus output tokens at $10 per million; no retries or uncertain calls."
+  },
+  "audit": {
+    "lockedMovesReviewed": 31,
+    "highAttributionConfidenceMoves": 29,
+    "requiredAttributionChecks": 2,
+    "completedAttributionChecks": 2,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0,
+    "inventoryChanged": false
+  }
+}

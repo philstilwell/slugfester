@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "246",
+  "debateId": "pine-schmid-divine-simplicity-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The unclosed causal, contingent-knowledge and creative-will bridges are already reflected in the move-level warrant, responsiveness and burden ratings; no separate uncaptured consequence is established.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-ground",
+              "pro-knowledge"
+            ],
+            "completionCriterion": "Establish pure actuality and explain contingent knowing and alternative creation without intrinsic composition.",
+            "relatedMoveIds": [
+              "dependent-motion",
+              "causal-self-knowledge",
+              "creative-will-qualification",
+              "precontained-differences"
+            ],
+            "distinctConsequence": "No distinct consequence beyond the limitations recorded in the individual arguments is identified.",
+            "alreadyCapturedBy": [
+              "dependent-motion.evidenceWarrant",
+              "causal-self-knowledge.responsiveness",
+              "creative-will-qualification.relevanceBurden",
+              "precontained-differences.relevanceBurden"
+            ],
+            "counterfactual": "A further deduction would count the same missing inferential bridges a second time."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The unresolved transitions from causal grounding to complete simplicity and from necessary self-knowledge to contingent creation are already represented in the relevant move dimensions. Pine's explicit creative-will qualification is also assessed directly; no separate debate-wide deduction is warranted.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-ground",
+              "pro-being",
+              "pro-knowledge",
+              "pro-motion"
+            ],
+            "completionCriterion": "Establish simplicity while preserving contingent knowledge and providential creation.",
+            "relatedMoveIds": [
+              "dependent-motion",
+              "causal-self-knowledge",
+              "creative-will-qualification",
+              "precontained-differences"
+            ],
+            "distinctConsequence": "No independent consequence beyond the limitations captured in these move judgments.",
+            "alreadyCapturedBy": [
+              "dependent-motion.evidenceWarrant",
+              "causal-self-knowledge.responsiveness",
+              "creative-will-qualification.relevanceBurden",
+              "precontained-differences.responsiveness"
+            ],
+            "counterfactual": "An additional adjustment would count the same missing bridges and acknowledged explanatory limitation twice."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The successful identification of missing bridges and residual premises about truth-bearers, changing truth and explanatory difference are already represented in individual move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-alternative",
+              "con-knowledge",
+              "con-control"
+            ],
+            "completionCriterion": "Challenge the establishment of simplicity without being required to prove an alternative worldview.",
+            "relatedMoveIds": [
+              "unmoved-not-immovable",
+              "necessary-not-contingent",
+              "changing-truths",
+              "explanatory-difference"
+            ],
+            "distinctConsequence": "No additional debate-wide completion effect remains outside the rated inferential challenges.",
+            "alreadyCapturedBy": [
+              "unmoved-not-immovable.relevanceBurden",
+              "necessary-not-contingent.responsiveness",
+              "changing-truths.logicalCoherence",
+              "explanatory-difference.evidenceWarrant"
+            ],
+            "counterfactual": "An additional reward or penalty would duplicate the already rated successes or unsettled premises."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Schmid's critical burden is advanced by the modal and alternative-model challenges, with remaining assumptions about truth-bearers, changing truths and explanatory differences captured at move level. No additional completion effect remains outside those judgments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-alternative",
+              "con-control",
+              "con-knowledge",
+              "con-ideas"
+            ],
+            "completionCriterion": "Challenge establishment or coherence without having to establish atheism or a complete rival theology.",
+            "relatedMoveIds": [
+              "necessary-propositions",
+              "changing-truths",
+              "explanatory-difference",
+              "unmoved-not-immovable",
+              "internal-actualizer"
+            ],
+            "distinctConsequence": "The success and residual conditions of the critical challenges are already reflected in their dimensions.",
+            "alreadyCapturedBy": [
+              "necessary-propositions.evidenceWarrant",
+              "changing-truths.logicalCoherence",
+              "explanatory-difference.evidenceWarrant",
+              "unmoved-not-immovable.relevanceBurden",
+              "internal-actualizer.relevanceBurden"
+            ],
+            "counterfactual": "A further positive or negative adjustment would duplicate the evaluated strength and limitations of the individual challenges."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 31,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/inventory/inventory.json",
+      "sha256": "f720ff6a219c002e3353c406eb5465aa24a5dbdf388b98bf956faf8f974f2bd2"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-a/output.json",
+      "sha256": "714b8610e6da97a663c31cf7c1f41ba879169aa7187d5722010d3856775cbb2a"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-246/judgments/pass-b/output.json",
+      "sha256": "718744c302e6bf406e385792df3b861ed439352a1499309afce643bd005438a8"
+    }
+  }
+}
