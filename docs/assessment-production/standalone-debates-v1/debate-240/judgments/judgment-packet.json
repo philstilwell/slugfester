@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-03T04:39:03.348Z",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "What best explains apparent cosmic purpose: an omnipotent God or a nontraditional purposeful cosmos?",
+  "sides": {
+    "pro": {
+      "speaker": "Richard Swinburne",
+      "position": "An omnipotent God best explains cosmic purpose"
+    },
+    "con": {
+      "speaker": "Philip Goff",
+      "position": "A nontraditional purposeful cosmos better explains cosmic purpose"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/inventory.json",
+      "sha256": "8f8e4c31e9d40b2290e7c4fd1373a09046f0b22933121fc369bdefffb64735c1",
+      "bytes": 67760
+    },
+    "events": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/events.json",
+      "sha256": "9bbccef5b91e64428d0ccdb338aec767497883cd92fa3b469098e38eb0038a1b",
+      "bytes": 195130
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/transcript.txt",
+      "sha256": "317fba2939c9d6496ebea5cea08026f0cb6792c1c677e8bd570bd27b12de50d4",
+      "bytes": 82844
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df",
+      "bytes": 41775
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "8f8e4c31e9d40b2290e7c4fd1373a09046f0b22933121fc369bdefffb64735c1",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-standalone-publication-execution-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-execution-after-deterministic-packet-order-repair",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "frozenAt": "2026-09-03T04:54:04Z",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inputs": {
+    "packet": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/packet-2.json",
+      "sha256": "f44da1b406f7f8df9d793f96da641490190435f0e610d0c917274ac1fcb8d6e5",
+      "bytes": 242766
+    },
+    "contract": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/contract-2.json",
+      "sha256": "30399494b0a5bae3b1cb233756002c984e6c0a0ee860ff56ba9c55d77aec014d",
+      "bytes": 2316
+    },
+    "preservedFailure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/deterministic-packet-order-failure-1.json"
+    }
+  },
+  "controls": {
+    "freshBuiltInContext": true,
+    "forkTurns": "none",
+    "perSideOrderAssertedAgainstFrozenScoreOutput": true,
+    "scoreLocked": true,
+    "identityImmutable": true,
+    "inventoryImmutable": true,
+    "judgmentsImmutable": true,
+    "adjudicationImmutable": true,
+    "scoresImmutable": true,
+    "tagsDeferred": true,
+    "attempts": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-240/publication/raw-prose-output-2.json"
+}

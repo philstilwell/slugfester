@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-standalone-publication-controller-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "preserved-invalid-publication-attempt-before-candidate-assembly",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "failureClass": "deterministic-publication-packet-order-defect",
+  "finding": "The first publication packet contained all 28 locked moves and correct scores, but its display plan reversed the locked per-side order of the two con moves in fine-tuning-and-lawful-order and the first two pro moves in suffering-and-moral-purpose. The raw prose is therefore quarantined even though its text fields remain score-neutral.",
+  "preservedInputs": {
+    "packet": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/packet.json",
+      "sha256": "c4545f781e379ac18594b53b7be52f010d3b54cfee7a894265656a1e541b67e0",
+      "bytes": 242766
+    },
+    "contract": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/contract.json",
+      "sha256": "d7c61526e2a7c34adcccbbafea0339c5a6b6b9bb8e1adfa827f4f968863b39b5",
+      "bytes": 2316
+    },
+    "executionPlan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/execution-plan.json",
+      "sha256": "dfb02bb751321d2309825cb9b3cf8d7f5e7bb29ee211b8f69ccb1c3a0ae1399d",
+      "bytes": 1388
+    }
+  },
+  "preservedInvalidOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/raw-prose-output-1.json",
+    "sha256": "dfe4c896f2498d1b876c89c2534a516a6c0353c38b677072224c2298a1fbb794",
+    "bytes": 45483
+  },
+  "scoresChanged": false,
+  "judgmentsChanged": false,
+  "substantiveMovePopulationChanged": false,
+  "requiredRecovery": "Regenerate the packet with per-side order asserted against the frozen score output, then rerun one fresh isolated publication context against the corrected packet and contract."
+}

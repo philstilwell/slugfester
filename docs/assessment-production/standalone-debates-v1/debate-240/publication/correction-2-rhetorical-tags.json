@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "7278dba832338d9f2bc52b82dba189260138a27764f684b88cf28f0d410525d0",
+    "bytes": 71275
+  },
+  "correctedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/output.json",
+    "sha256": "8339afdf5027c92d62e8606d747b3cdd00025ed3396d14d389c28e1fc82059f7",
+    "bytes": 72505
+  },
+  "authorizedChanges": {
+    "cardTagArrays": [
+      "moveProse.suffering-enables-serious-responsibility.tags",
+      "moveProse.vulnerability-creates-responsibility-and-compassion.tags",
+      "moveProse.suffering-enables-character-and-radical-freedom.tags"
+    ],
+    "overallBlunderLinkArrays": [
+      "overall-pro-blunder-2"
+    ],
+    "acceptedMoveTagCount": 3,
+    "acceptedOverallBlunderLinkCount": 1
+  },
+  "prohibitedChanges": {
+    "identity": 0,
+    "evidence": 0,
+    "inventory": 0,
+    "judgments": 0,
+    "adjudication": 0,
+    "scores": 0,
+    "descriptions": 0,
+    "critiques": 0,
+    "overallText": 0,
+    "logicalExtension": 0,
+    "quotes": 0
+  },
+  "reviewAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-audit.json",
+    "sha256": "8b8d809f148d2b068e73f5a8cbc272ee67573da014dd9e1356c4f650304662e1",
+    "bytes": 204734
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/output.json",
+    "sha256": "8339afdf5027c92d62e8606d747b3cdd00025ed3396d14d389c28e1fc82059f7",
+    "bytes": 72505
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "moveProse.suffering-enables-serious-responsibility.tags",
+        "moveProse.vulnerability-creates-responsibility-and-compassion.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "moveProse.suffering-enables-character-and-radical-freedom.tags",
+        "overall-pro-blunder-2"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "audit.rhetoricalTagReviewCompleted"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "tagChanges": 3,
+    "acceptedTagCount": 3,
+    "overallBlunderLinkChanges": 1,
+    "rhetoricalReviewCompletionFlagChanges": 1,
+    "maximumWritableFieldsPerShard": 2,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "controllerRejectionsOfOverbroadOrDuplicateAcceptances": 2
+  },
+  "evidence": {
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-audit.json",
+      "sha256": "8b8d809f148d2b068e73f5a8cbc272ee67573da014dd9e1356c4f650304662e1",
+      "bytes": 204734
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/output.json",
+      "sha256": "8339afdf5027c92d62e8606d747b3cdd00025ed3396d14d389c28e1fc82059f7",
+      "bytes": 72505
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "656543982b3397b615ee24702473560effb2483be88604a6c8ddc4ddf2f3811b",
+      "bytes": 32229
+    }
+  }
+}

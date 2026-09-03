@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-publication-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid-after-rhetorical-review",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/packet-2.json",
+    "sha256": "f44da1b406f7f8df9d793f96da641490190435f0e610d0c917274ac1fcb8d6e5",
+    "bytes": 242766
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/raw-prose-output-2.json",
+    "sha256": "fda061086c0a2317ec5175da418d508f3121f548f3d5e3f5f8a1eaa6c11a7921",
+    "bytes": 45330
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/output.json",
+    "sha256": "8339afdf5027c92d62e8606d747b3cdd00025ed3396d14d389c28e1fc82059f7",
+    "bytes": 72505
+  },
+  "attempts": 2,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "repair": {
+    "type": "fresh-replacement-after-deterministic-packet-order-defect",
+    "failureRecord": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/deterministic-packet-order-failure-1.json",
+      "sha256": "2d6c2e70fd5e96bd68a4188891a7a53aad22b0c404d91626fa52a1304660ef33",
+      "bytes": 1994
+    },
+    "shapeNormalization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/deterministic-overall-blunder-shape-correction.json",
+      "sha256": "6db326808606f68f4112e356580f1f021e024f774dcd933c8462a4104b514c60",
+      "bytes": 811
+    },
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "movePopulationChanges": 0,
+    "proseChangesDuringShapeNormalization": 0
+  },
+  "rhetoricalReview": {
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "553ac66fba1e96651bd095f0ae2fd5cbead57aa28e8491abc1082d1611b7235b",
+      "bytes": 3547
+    },
+    "correction": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/publication/correction-2-rhetorical-tags.json",
+      "sha256": "cfcaf3381c1a13c358c370b24a25068bd120002d8ee1085e1dbb43b5691b1627",
+      "bytes": 3701
+    },
+    "acceptedMoveTags": 3,
+    "acceptedOverallBlunderLinks": 1
+  },
+  "corpusRelative": {
+    "descriptionMean": 23.46,
+    "referenceMinimum": 20.9,
+    "shortCardShare": 0
+  },
+  "critiqueMetrics": {
+    "meanWords": 122.79,
+    "minimumWords": 117,
+    "maximumWords": 129,
+    "minimumCharacters": 910
+  },
+  "boilerplate": {
+    "ngramSize": 6,
+    "minimumDocuments": 7,
+    "commonNgrams": 0,
+    "meanCoveredRatio": 0,
+    "maximumCoveredRatio": 0,
+    "meanLimit": 0.15,
+    "maximumLimit": 0.25
+  },
+  "validation": {
+    "status": "passed",
+    "sections": 7,
+    "moves": 28
+  }
+}

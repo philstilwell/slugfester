@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0-standalone-debate-manifest",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "inputs-frozen-before-judgment",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "videoId": "uQmBJDc2FCY",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/captions.srv3.xml",
+      "sha256": "c35731863a21e8c2251b84804060f9ea8cfa8d2098bd4a2e25d2e533df02e4f4",
+      "bytes": 480435
+    },
+    "events": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/events.json",
+      "sha256": "9bbccef5b91e64428d0ccdb338aec767497883cd92fa3b469098e38eb0038a1b",
+      "bytes": 195130
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/transcript.txt",
+      "sha256": "317fba2939c9d6496ebea5cea08026f0cb6792c1c677e8bd570bd27b12de50d4",
+      "bytes": 82844
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/uQmBJDc2FCY/manifest.json",
+      "sha256": "be16dc58ce305bcb8a208665e0b7a0bc271ca85e7ea71374e8aa54813f349250",
+      "bytes": 1007
+    }
+  },
+  "controlLocks": {
+    "productionWorkflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "publicationReadiness": {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    "scoreStabilityPolicy": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "scoreCalculator": {
+      "path": "scripts/lib/v4-lean-production.mjs",
+      "sha256": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+      "bytes": 39666
+    },
+    "scoreDimensions": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "sourceRenderer": {
+      "path": "scripts/lib/v4220-source-span-rendering.mjs",
+      "sha256": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+      "bytes": 13666
+    },
+    "standaloneProtocolLibrary": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df",
+      "bytes": 41775
+    },
+    "standaloneProtocolAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-v1.mjs",
+      "sha256": "bb74a685d0b521b0593fa6fbfc09589136d15e9d8f30280d96c15944d31a7978",
+      "bytes": 63308
+    },
+    "contentParityAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-content-parity.mjs",
+      "sha256": "966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec",
+      "bytes": 12735
+    },
+    "rhetoricalTagAuditor": {
+      "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+      "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+      "bytes": 13417
+    },
+    "productionValidator": {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "dbeab033b008e7adf19aa7ea2c45b3568e3ad157a4bfa769ffd720ee84ad9ed5",
+      "bytes": 89109
+    },
+    "packageScripts": {
+      "path": "package.json",
+      "sha256": "aa6ec0fd238faaf3fc42d8d10d872a90a5366e4fc34a38e852c8e88b3a85ef1b",
+      "bytes": 64326
+    }
+  },
+  "modelSettings": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "scoringControls": {
+    "dimensionDisagreementThreshold": 8,
+    "moveScoreDisagreementThreshold": 4,
+    "burdenAdjustmentDisagreementThreshold": 2,
+    "oneScorePass": true,
+    "scoreProtocolId": "standalone-v1-single-deterministic-score-pass"
+  },
+  "inventoryControls": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "uniqueSemanticSectionIdsRequired": true,
+    "selectionBalanceAuditRequired": true,
+    "totalDifferenceRequiringRationale": 3,
+    "sectionDifferenceRequiringRationale": 2,
+    "publicationCapacityAuditRequired": true,
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "fourthRowPreauthorizationRequired": true,
+    "moderatorMaterialExcluded": true,
+    "speakerAttributionReviewRequired": true
+  },
+  "expectedArtifacts": [
+    "source/source-lock.json",
+    "inventory/inventory.json",
+    "judgments/judgment-packet.json",
+    "judgments/pass-a/output.json",
+    "judgments/pass-b/output.json",
+    "disagreements/disagreements.json",
+    "audio/audio-verification.json",
+    "adjudication/output.json",
+    "final-ledger/final-ledger.json",
+    "score-pass/output.json",
+    "publication/output.json",
+    "publication/content-parity-audit.json",
+    "publication/rhetorical-tag-audit.json",
+    "rendering/rendering-audit.json",
+    "validation-summary.json",
+    "report.md"
+  ],
+  "inventoryLock": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/inventory.json",
+    "sha256": "8f8e4c31e9d40b2290e7c4fd1373a09046f0b22933121fc369bdefffb64735c1",
+    "bytes": 67760,
+    "moves": 28,
+    "sections": 7,
+    "belowHighAttributionMoveIds": [
+      "vulnerability-creates-responsibility-and-compassion",
+      "benefaction-not-immaturity-grounds-parental-rights"
+    ]
+  },
+  "inventoryRepairLocks": {
+    "preservedInitialSelection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/model-output.json",
+      "sha256": "68df4834c75630dc9dcaf8cbb6c91405ecdca4035b26a59fbb75b37ad7edc058",
+      "bytes": 77486
+    },
+    "boundedSpanRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/span-repair-output.json",
+      "sha256": "fc9d864c544560a06ec399649e58f0c4cefa1925d0778eb4c8a1598d2585eae0",
+      "bytes": 60100,
+      "semanticSelectionChanged": false
+    },
+    "deterministicSourceFieldNormalization": {
+      "description": "The controller recomputed exact excerpt text and timestamp endpoints from each repaired event range; normalized legacy-equivalent field names without changing their text; supplied deterministic response-component IDs and booleans; supplied a uniform inventory rationale only where the worker omitted the non-scoring field; and recomputed all balance and capacity counts and flags.",
+      "semanticSelectionChanged": false
+    },
+    "sourceSufficiency": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-240/inventory/source-span-sufficiency-final.json",
+      "sha256": "bf6ae56ecfd6b181f7ff4bced1684677ad55f990fb0c3066f5d96d5d5c5bbbde",
+      "bytes": 4641
+    }
+  }
+}

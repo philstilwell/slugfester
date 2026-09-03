@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "240",
+  "debateId": "swinburne-goff-cosmic-purpose-god-2023",
+  "completedAt": "2026-09-03T05:18:28.000Z",
+  "source": {
+    "videoId": "uQmBJDc2FCY",
+    "method": "complete auto-generated English YouTube captions with timestamped event reconstruction",
+    "transcriptWords": 14640,
+    "events": 1804,
+    "transcriptSha256": "317fba2939c9d6496ebea5cea08026f0cb6792c1c677e8bd570bd27b12de50d4",
+    "eventsSha256": "9bbccef5b91e64428d0ccdb338aec767497883cd92fa3b469098e38eb0038a1b",
+    "assessedWindow": "00:04:14–01:19:38",
+    "excludedMaterial": "Host framing, two promotional breaks, and logistical transitions were reviewed but excluded from scored moves; Vince Vitale was confirmed as moderator rather than a third independent advocate.",
+    "requiredAttributionAudioChecks": 2,
+    "completedAttributionAudioChecks": 2,
+    "unresolvedAttributionChecks": 0
+  },
+  "assessment": {
+    "inventoryMoves": 28,
+    "primaryJudgmentPasses": 2,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 15,
+    "adjudicatedDisputes": 15,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 76,
+      "con": 83,
+      "winner": "con",
+      "margin": 7
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 16,
+    "argumentCards": 28,
+    "uniqueLockedMovesMapped": 28,
+    "sourceExactQuotes": 2,
+    "aiExtensionSides": 2,
+    "publicMotionMatchesFrozenQuestion": true,
+    "speakerIdentityAndPositionLabelsValid": true,
+    "semanticSectionIdsValid": true,
+    "publicationCapacityAuditPassed": true,
+    "critiqueSpecificityGatePassed": true,
+    "overallStrengths": { "pro": 3, "con": 3 },
+    "overallBlunders": { "pro": 3, "con": 3 },
+    "productionCandidateMatchesFrozenPublication": true,
+    "productionLedgerSha256": "d4d404a11befae712871355f134dd9f5754ce9998575636ff30dfb56d7ef049b",
+    "contentParityAudit": "docs/assessment-production/standalone-debates-v1/debate-240/publication/content-parity-audit.json",
+    "contentParityDisposition": "passed without prose repair; seven source-led corpus-relative outliers were individually justified and the hard richness contract passed",
+    "argumentDescriptionWords": {
+      "targetRange": [22, 28],
+      "minimum": 22,
+      "mean": 23.5,
+      "maximum": 26,
+      "cardsBelow20": 0
+    },
+    "critiqueWords": { "minimum": 117, "mean": 122.8, "maximum": 129 },
+    "critiqueCharactersMean": 963.6,
+    "critiqueBoilerplateMeanCoveredRatio": 0,
+    "critiqueBoilerplateMaximumCoveredRatio": 0,
+    "overallItemWords": { "strengthMean": 21.7, "blunderMean": 22 },
+    "aiContributionWords": {
+      "thesisMean": 21.5,
+      "premiseMean": 22.6,
+      "conclusionMean": 22,
+      "newArgumentMean": 70.5
+    },
+    "rhetoricalTagAudit": "docs/assessment-production/standalone-debates-v1/debate-240/publication/rhetorical-tag-audit.json",
+    "rhetoricalTagCorrection": "score-neutral exact-definition review accepting three card-level Scope neglect bias tags and one matching Overall Commentary link after two conservative controller rejections",
+    "movesReviewedForFallaciesAndBiases": 28,
+    "overallBlundersReviewedForFallaciesAndBiases": 6,
+    "definitionsCheckedPerCandidate": 13,
+    "blindRhetoricalTagPasses": 2,
+    "completeRhetoricalCandidateUnion": 34,
+    "acceptedCardRhetoricalTags": 3,
+    "acceptedCardFallacyTags": 0,
+    "acceptedCardBiasTags": 3,
+    "acceptedOverallRhetoricalLinks": 1,
+    "totalAcceptedRhetoricalApplications": 4,
+    "rejectedRhetoricalCandidates": 30,
+    "controllerDefinitionOverrides": 2,
+    "readerFacingScoringDisclosureCorrect": true,
+    "deterministicCorrections": "A display-order defect in the initial prose packet was quarantined before assembly; the corrected packet received one fresh replacement publication pass, and six unchanged blunder strings were normalized to the production object shape before rhetorical review."
+  },
+  "rendering": {
+    "status": "passed-standalone-production-rendering",
+    "viewports": 2,
+    "screenshots": 13,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "pointerTests": 6,
+    "keyboardEnterTests": 1,
+    "keyboardSpaceTests": 1,
+    "mobileDistantControlTests": 1,
+    "rhetoricalTagsVisuallyVerified": 3,
+    "overallReferenceLinksVisuallyVerified": 1,
+    "aiContributionFieldsVisuallyVerified": 20,
+    "desktopEvidenceSha256": "6733a8ffceaf7b916e455554deaa42d08b1cb6d9f4b209d88c53b8819db5e857",
+    "mobileEvidenceSha256": "162cd4f2c654e759fed34d57e7c5cf6248e865ee31522dafa9a80376332e3f18"
+  },
+  "checks": [
+    {
+      "name": "production debate validator",
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "result": "240 debates"
+    },
+    {
+      "name": "SEO generation and replay",
+      "command": "npm run seo && node scripts/generate-seo-pages.mjs --check",
+      "status": "passed",
+      "result": "693 files"
+    },
+    {
+      "name": "standalone content-parity audit",
+      "command": "node scripts/audit-assessment-production-standalone-content-parity.mjs --debate 240",
+      "status": "passed",
+      "result": "28 moves; description mean 23.5 words; critique mean 122.8 words; no short cards or repeated six-word boilerplate"
+    },
+    {
+      "name": "complete rhetorical-tag review",
+      "command": "node scripts/audit-assessment-production-standalone-rhetorical-tags.mjs --debate 240",
+      "status": "passed",
+      "result": "28 moves and 6 overall blunders checked in two blind passes against 13 definitions; all 34 union candidates adjudicated; 3 card tags and 1 overall link retained"
+    },
+    {
+      "name": "desktop and mobile rendering",
+      "status": "passed",
+      "result": "28 populated cards, 3 card labels, and 1 overall link at both viewports; no overflow, failed resources, console errors, or warnings"
+    },
+    {
+      "name": "complete and repository-only standalone replay",
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 240 with and without --repository-only",
+      "status": "passed",
+      "result": "28 moves; 7 sections; 15 disputes; 2 attribution audio checks; score stability mean 0.5, maximum 1, excursion 0"
+    },
+    {
+      "name": "living transcript-corpus replay",
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "result": "240 of 240 transcripts available"
+    },
+    {
+      "name": "full repository checks",
+      "command": "npm run check",
+      "status": "passed",
+      "result": "All syntax, debate, corpus, calibration, scoring, design, source-access, historical standalone, content-parity, rhetorical, and multi-speaker checks passed"
+    }
+  ],
+  "recoveries": {
+    "scoreBlindInventoryUsed": true,
+    "initialInventorySpanFailurePreserved": 1,
+    "boundedInventorySpanRepairPasses": 1,
+    "judgmentFailuresPreserved": 0,
+    "publicationPacketFailuresPreserved": 1,
+    "publicationReplacementPasses": 1,
+    "deterministicShapeCorrections": 1,
+    "rhetoricalTagFieldsAdded": 3,
+    "rhetoricalOverallLinkFieldsAdded": 1,
+    "rawRhetoricalModelOutputsPreserved": true,
+    "failuresPreserved": true,
+    "frozenScoresChanged": false,
+    "winnerChanged": false
+  },
+  "selectionBalance": {
+    "pro": 13,
+    "con": 15,
+    "disposition": "The two-move difference is source-led: Goff develops three distinct nontraditional alternatives while Swinburne develops more opening framework support; no balancing move was manufactured."
+  },
+  "cost": {
+    "estimateReportedBeforePaidWorkUsdMaximum": 0.0131,
+    "paidCallsAttempted": 2,
+    "knownSuccessfulPaidCostUsd": 0.013125,
+    "maximumPotentialPaidCostUsd": 0.013125,
+    "pricingBasis": "OpenAI GPT Transcribe duration pricing of $0.0045 per minute applied to 175 API-reported seconds; all judgment and publication contexts used the ChatGPT subscription."
+  },
+  "knownTotalDirectCostUsd": 0.013125,
+  "maximumPotentialTotalDirectCostUsd": 0.013125,
+  "directCostUsd": 0.013125
+}
