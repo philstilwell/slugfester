@@ -43,6 +43,7 @@ import {
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260902-rubric-move-reasons-v3";
+const landingAssetVersion = "20260902-reassessment-schedule-v4";
 const interlocutorAssetVersion = "20260902-rubric-move-reasons-v3";
 const rankingsAssetVersion = "20260902-ranking-gloves-v4";
 const debateAssetVersion = "20260902-rubric-move-reasons-v3";
@@ -580,15 +581,17 @@ debates.forEach((debate) => {
 
 function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
   const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
-  const pageAssetVersion = pathname.startsWith("/debate/")
-    ? debateAssetVersion
-    : pathname.startsWith("/interlocutor/")
-      ? interlocutorAssetVersion
-      : pathname === backendPath()
-        ? backendAssetVersion
-        : pathname === rankingsPath()
-          ? rankingsAssetVersion
-          : assetVersion;
+  const pageAssetVersion = pathname === "/"
+    ? landingAssetVersion
+    : pathname.startsWith("/debate/")
+      ? debateAssetVersion
+      : pathname.startsWith("/interlocutor/")
+        ? interlocutorAssetVersion
+        : pathname === backendPath()
+          ? backendAssetVersion
+          : pathname === rankingsPath()
+            ? rankingsAssetVersion
+            : assetVersion;
   pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText, pageAssetVersion));
   if (seo.robots !== "noindex,follow") {
     sitemapUrls.push({ loc: absoluteUrl(pathname), lastmod });

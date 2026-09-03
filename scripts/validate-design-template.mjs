@@ -82,6 +82,7 @@ requireIncludes("app landing actions", app, 'class="landing-actions"');
 requireIncludes("app landing summary", app, 'class="landing-stats"');
 requireIncludes("app landing topics", app, "Browse all debates by topic");
 requireIncludes("app landing update cadence", app, "New debate assessments are added nearly every month.");
+requireIncludes("app landing reassessment schedule", app, "The next site-wide reassessment is tentatively scheduled for spring 2027.");
 requireIncludes("app recent assessment wording", app, "Start with the newest debate additions.");
 requireExcludes("app recent assessment wording", app, "Start with the newest scorecard numbers.");
 requireIncludes("app pagination", app, "const LANDING_PAGE_SIZE = 18");
@@ -397,6 +398,7 @@ requireIncludes("backend rubric assessed move grouping", styles, ".rubric-extrem
 requireIncludes("backend rubric move score", styles, ".rubric-extreme-move-score {");
 requireIncludes("backend rubric example explanation", styles, ".rubric-extreme-analysis {");
 requireIncludes("rankings comparison gloves", styles, ".ranking-comparison-versus {");
+requireIncludes("landing reassessment note styling", styles, ".landing-topic-link .landing-reassessment-note {");
 requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");

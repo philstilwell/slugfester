@@ -575,6 +575,7 @@ function renderLanding() {
               <a href="${topicsPath()}">Browse all debates by topic</a>
             </div>
             <p>New debate assessments are added nearly every month.</p>
+            <p class="landing-reassessment-note">The next site-wide reassessment is tentatively scheduled for spring 2027.</p>
           </div>
         </div>
         <figure class="logo-showcase">
