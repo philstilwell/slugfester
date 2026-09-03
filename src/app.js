@@ -1225,14 +1225,14 @@ function renderRubricExtremesAccordion(extremes) {
 
 function sectionScoreBarColor(index, bucketCount) {
   const position = bucketCount > 1 ? index / (bucketCount - 1) : 0.5;
-  const goldPosition = 0.75;
+  const goldPosition = 0.7;
   const beforeGold = position <= goldPosition;
   const segmentProgress = beforeGold
     ? position / goldPosition
     : (position - goldPosition) / (1 - goldPosition);
   const startWeight = ((1 - segmentProgress) * 100).toFixed(1);
   const endWeight = (segmentProgress * 100).toFixed(1);
-  const startColor = beforeGold ? "--coral" : "--gold";
+  const startColor = beforeGold ? "--rubric-chart-red" : "--gold";
   const endColor = beforeGold ? "--gold" : "--teal";
 
   return `color-mix(in srgb, var(${startColor}) ${startWeight}%, var(${endColor}) ${endWeight}%)`;
