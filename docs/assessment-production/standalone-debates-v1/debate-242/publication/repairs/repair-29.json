@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 29,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.white-explicit-parable-markers-limit-extension.words",
+    "moveProse.white-loaves-sign-points-to-spiritual-need.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "white-explicit-parable-markers-limit-extension",
+      "description": "White argues that the Good Samaritan is explicitly framed as a parable, so it cannot justify treating broadly historical Gospel narratives as similarly nonhistorical.",
+      "wordCount": 24,
+      "rationale": "Recasts the supplied proposition and inference as one complete sentence while preserving the distinction between an explicitly marked parable and broader Gospel narration."
+    },
+    {
+      "moveId": "white-loaves-sign-points-to-spiritual-need",
+      "description": "White argues that John presents the feeding as an actual sign whose discourse reveals spiritual need, rebutting Crossan’s poverty-centered reading without turning history into fiction.",
+      "wordCount": 25,
+      "rationale": "Combines the supplied claim and inference into a grammatical summary that preserves both the sign’s spiritual meaning and White’s reply to Crossan."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

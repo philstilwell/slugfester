@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 27,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.crossan-loaves-parable-preserves-demand.words",
+    "moveProse.crossan-emmaus-stranger-parable.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "crossan-loaves-parable-preserves-demand",
+      "description": "Crossan treats the feeding story as a parable of divine justice: whether historical or symbolic, it charges church leaders to ensure that everyone has food.",
+      "wordCount": 25,
+      "rationale": "This complete sentence preserves both the story's parabolic interpretation and the practical obligation that Crossan draws from either reading."
+    },
+    {
+      "moveId": "crossan-emmaus-stranger-parable",
+      "description": "Crossan reads Emmaus as a parable in which Jesus becomes recognizable through scripture and hospitality toward a stranger, rather than through a literally shape-changing resurrection body.",
+      "wordCount": 26,
+      "rationale": "This complete sentence captures Crossan's preferred narrative meaning while retaining his contrast with a literal account of bodily transformation."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

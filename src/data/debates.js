@@ -102380,6 +102380,531 @@ export const debates = [
       }
     }
   }
+,
+  {
+    "number": "242",
+    "id": "white-crossan-biblical-jesus-historicity-2005",
+    "date": "2026-09-03",
+    "title": "James White vs John Dominic Crossan: Is the Bible True? (2005)",
+    "label": "Gospel history, theological versions, and resurrection",
+    "topicCategory": "scripture-jesus-resurrection",
+    "youtubeUrl": "https://www.youtube.com/watch?v=BIX7eqTllEc",
+    "duration": "3 hr 21 min",
+    "motion": "Is the orthodox biblical account of Jesus of Nazareth authentic and historically accurate?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "This assessment uses complete automatic English YouTube captions covering the full formal debate, cross-examination, closing statements, and substantive audience questions. All 24 selected moves had high-confidence speaker attribution from the debate structure, so no source-audio verification was required.",
+    "scoringNote": "These AI-generated scores were computed once from a frozen 24-move ledger after two isolated primary judgments and anonymous adjudication of all eight extracted disagreements, including both burden-completion judgments. The displayed 78–77 result is immutable; publication prose and rhetorical-tag review cannot change it.",
+    "sides": {
+      "pro": {
+        "name": "The canonical Gospel accounts of Jesus are authentic and historically accurate",
+        "speaker": "James White",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The Gospels are developing theological interpretations rather than one uniformly historical account",
+        "speaker": "John Dominic Crossan",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 77,
+      "winner": "pro"
+    },
+    "summary": "White prevailed by one point through stronger textual rebuttals on Passion harmony and miracles, while Crossan dominated source dependence and narrowly won resurrection framing.",
+    "quotes": {
+      "pro": {
+        "text": "he was raised for our justification",
+        "context": "White anchors Christian justification in an actual resurrection, arguing that continued commitment to Jesus’s social program cannot substitute for the apostolic saving claim."
+      },
+      "con": {
+        "text": "there does not exist an orthodox biblical account singular",
+        "context": "Crossan opens by disputing the motion’s singular object, insisting that the canon preserves one Gospel through four interpretive versions rather than one uniform narrative."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "gospel-purpose-and-versions",
+        "title": "Gospel purpose and multiple versions",
+        "timebox": "8:24–1:03:08",
+        "score": {
+          "pro": 77,
+          "con": 74
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "white-purpose-does-not-entail-revision",
+              "time": "8:24",
+              "role": "Constructive",
+              "words": "White argues that a Gospel’s theological purpose remains compatible with historical accuracy: Luke could give Theophilus certainty without revising events or inventing myths.",
+              "score": 80,
+              "critique": "Strongest feature: White anchors his distinction in Luke's stated purpose of giving Theophilus certainty, answering the claim that theological purpose necessarily entails historical revision, which justifies the locked relevanceBurden high of 86. Principal limitation: Luke's declared intention describes authorial purpose but cannot independently establish factual accuracy, while White's broad characterization of revisionist reasoning leaves the historical dispute insufficiently tested, explaining evidenceWarrant at 70. Live burden: White still must show from particular Gospel details that theological selection occurred without material alteration, while answering evidence that rival readings identify as redaction. Locked score: The immutable 80 combines strong clarity, coherence, responsiveness, and central burden contact with materially thinner evidential warrant, without treating compatibility as proof of authenticity.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "crossan-no-singular-orthodox-account",
+              "time": "35:35",
+              "role": "Constructive",
+              "words": "Crossan argues that Christianity preserves one Gospel through four canonical narrative versions, not a single uniform orthodox account whose historicity can be assessed as such.",
+              "score": 75,
+              "critique": "Strongest feature: Crossan uses the plurality of four Gospel narratives to challenge the motion's singular object, distinguishing one Gospel message from multiple versions and earning the locked responsiveness high of 85. Principal limitation: Several narrative interpretations undermine simple uniformity but do not prove that no collective orthodox account exists, make historical inquiry invalid, or establish Crossan's claim about divine inspiration, while his compression of authenticity, historicity, and inspiration explains calibrationCharity at 64. Live burden: Crossan still must identify consequential differences among the canonical narratives and show why they defeat a shared account rather than display complementary perspectives within one tradition. Locked score: The immutable 75 reflects direct motion contact, textual framing, and substantial relevance, tempered by moderate logical and evidential support and an overstatement extending beyond what canonical plurality warrants.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "white-updating-definition-presupposes-inauthenticity",
+              "time": "23:38",
+              "role": "Constructive",
+              "words": "White argues that defining Gospel as audience-specific historical alteration presupposes inauthenticity, since timeless good news can remain relevant to later believers without redaction.",
+              "score": 73,
+              "critique": "Strongest feature: White precisely distinguishes the continuing relevance of good news from any necessity for altering Gospel narratives, directly challenging Crossan's updating definition and justifying precisionClarity 82, responsiveness 78, logicalCoherence 75, and relevanceBurden 76. Principal limitation: His excerpt asserts New Testament usage and timeless efficacy without textual examples, proves only that alteration is unnecessary rather than absent, and compresses Crossan's literary evidence into a presuppositional definition, fitting evidenceWarrant 61 and calibrationCharity 69. Live burden: White must examine particular inter-Gospel changes and demonstrate that unchanged historical content explains their community-specific forms better than Crossan's contextual-redaction account. Locked score: The immutable 73 accurately registers a central, clearly framed objection with substantial burden contact, while withholding stronger credit because possibility of faithful transmission cannot establish nonalteration or answer affirmative evidence of revision.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "crossan-gospel-rephrases-for-new-community",
+              "time": "1:02:02",
+              "role": "Reply",
+              "words": "Crossan argues that Gospel writers may authentically reframe or invent stories for new communities because proclaiming good news requires more than merely repeating historical data.",
+              "score": 73,
+              "critique": "Strongest feature: Crossan directly answers White by presenting Gospel transmission as a stream in which Mark may rephrase Jesus for a later community while preserving spiritual authenticity, supporting responsiveness 81, relevanceBurden 81, precisionClarity 77, and logicalCoherence 73. Principal limitation: The imagined scenario of Mark possessing recordings supplies no canonical example of invention, while four versions alone cannot establish that community need licenses fabrication or define how authenticity survives it, appropriately fixing evidenceWarrant 60 and calibrationCharity 69. Live burden: Crossan must identify concrete reformulations, distinguish invention from selection or paraphrase, and provide a principled criterion showing when altered narrative remains authentically Jesus's message. Locked score: The immutable 73 reflects a central and responsive contextual-redaction model whose evidential demonstration and standard of spiritual sameness remain insufficient for the stronger historical conclusion.",
+              "tags": [
+                {
+                  "label": "Subjective validation",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/subjective-validation/",
+                  "context": "An imagined Mark trusts Jesus's spirit while rephrasing or inventing a story and still calls it authentic."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "divine-action-and-worldview",
+        "title": "Divine action, worldview, and imperial alternatives",
+        "timebox": "12:24–2:18:28",
+        "score": {
+          "pro": 76,
+          "con": 74
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "white-worldview-grounds-historical-revelation",
+              "time": "12:24",
+              "role": "Constructive",
+              "words": "White argues that judgments of historical authenticity depend on worldview: if God can enter creation and reveal himself, objective revelation in history is possible.",
+              "score": 66,
+              "critique": "Strongest feature: White identifies worldview exclusion as consequential, because permitting a revealing God makes historical revelation possible, and this engagement supports responsiveness 73, precisionClarity 71, logicalCoherence 69, and relevanceBurden 69. Principal limitation: Possibility never establishes actuality, while the decisive Christian premise remains unsupported and dismissing alternative inquiry as subjectivism is overextended, appropriately constraining evidenceWarrant 55 and calibrationCharity 59. Live burden: White must connect divine-action possibility to document-specific historical evidence showing Gospel events occurred, while demonstrating why non-Christian historiography cannot responsibly evaluate such evidence without presupposing his conclusion. Locked score: The immutable score 66 records a clear, relevant methodological contribution, yet preserves decisive penalties for insufficient evidential bridgework, overstated alternatives, and failure to progress from metaphysical permission to historical authentication.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "Only the Christian God's redemptive entry in Christ allegedly permits escape from opinion and historical uncertainty."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "crossan-christological-titles-contest-caesar",
+              "time": "1:22:14",
+              "role": "Reply",
+              "words": "Crossan argues that Christian titles for Jesus repurposed imperial honors already applied to Augustus, framing Jesus as Caesar’s political and religious rival rather than inventing new vocabulary.",
+              "score": 77,
+              "critique": "Strongest feature: Crossan links Augustus's titles, including divine son, redeemer, lord, and savior, to the rival-sovereignty formula not Caesar but Christ is Lord, supporting precisionClarity 83, logicalCoherence 81, evidenceWarrant 79, and calibrationCharity 76. Principal limitation: Shared imperial vocabulary establishes contextual resonance without proving political opposition exhausts Christological meaning, while the excerpt leaves the prevalence and documentary settings of those titles unsubstantiated, limiting responsiveness 69 and relevanceBurden 76. Live burden: Crossan must document imperial usages comparatively and demonstrate this interpretation better explains Christian texts, while showing how title rivalry bears on the historical authenticity of narrated events. Locked score: The immutable score 77 recognizes concrete context and a coherent inference, while retaining deductions for indirect engagement with revelatory possibility, incomplete source documentation, and insufficient movement from semantic background to historical inauthenticity.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "white-divine-consistency-does-not-bind-god",
+              "time": "17:17",
+              "role": "Constructive",
+              "words": "White argues that divine consistency does not require God to repeat every historical act; purposeful, unique action remains possible without its later absence disproving it.",
+              "score": 80,
+              "critique": "Strongest feature: White's example of despoiling Egypt's gods sharply distinguishes a purposive unique act from an incoherent obligation to repeat that act in every generation, supporting logical coherence 87, responsiveness 85, and precision clarity 86. Principal limitation: The example defeats a repetition requirement conceptually but supplies no historical evidence that any miracle occurred, explaining evidence warrant 69, while its literal formulation risks oversimplifying Crossan's consistency principle and keeps calibration charity at 71. Live burden: White must connect freedom for selective divine action to credible evidence for the particular reported events, rather than treating bare possibility as historical confirmation, which fits relevance burden 79. Locked score: The immutable score is 80, preserving every dimension and recognizing a clear direct rebuttal whose conceptual force exceeds its evidential reach.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Divine consistency is recast as requiring God to despoil Egypt's gods identically in every generation."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "crossan-divinity-is-presence-not-natural-violation",
+              "time": "2:04:44",
+              "role": "Reply",
+              "words": "God remains continuously present as justice rather than intermittently violating nature; Jesus's forgiveness from the cross therefore manifests divinity more meaningfully than miraculous physical passage.",
+              "score": 72,
+              "critique": "Strongest feature: Crossan's contrast between continuous divine presence and intermittent intervention is intelligible and concretely illustrated by Jesus forgiving his executioners, supporting precision clarity 79, logical coherence 75, and calibration charity 75. Principal limitation: That moral illustration expresses what Crossan values as divinity but does not establish that divine action cannot additionally include selective natural violations, leaving evidence warrant 61 and White's freedom objection substantially unanswered. Live burden: Crossan must justify why constant presence excludes exceptional intervention and why this methodological presumption warrants rejecting historical miracle reports, rather than merely redescribing divinity, which explains responsiveness 72 and relevance burden 72. Locked score: The immutable score is 72, preserving every dimension while crediting a clear source-specific framework that answers White's question only indirectly and lacks evidence for its exclusionary implication.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "Crossan presumes constant divine presence but excludes intervention through historical violations of nature."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "white-miracles-are-selective-authenticating-signs",
+              "time": "2:17:17",
+              "role": "Reply",
+              "words": "White argues that miracles selectively authenticate Jesus and need not recur routinely, because their specific revelatory purpose explains departures from ordinary processes without implying divine absence.",
+              "score": 82,
+              "critique": "Strongest feature: White answers Crossan by accepting divine presence while distinguishing extraordinary interventions as selective authenticating signs, concretely naming Lazarus, Cana, Johannine sign language, and resurrection; that coherent, charitable engagement explains logicalCoherence 86, responsiveness 87, precisionClarity 84, and calibrationCharity 80. Principal limitation: The examples internally clarify White’s proposed purpose, yet their authenticating authority presupposes the historical occurrence under dispute, so evidenceWarrant remains 69 despite the conceptually disciplined explanation. Live burden: White must independently establish that these narrated violations occurred and genuinely authenticate Jesus, rather than merely showing how a sovereign God could purposively act exceptionally without acting identically every day, which leaves relevanceBurden at 83. Locked score: The immutable 82 accurately combines unusually strong responsiveness and coherence with materially weaker historical warrant, preserving every finalized dimension and the importance-three weighting.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      },
+      {
+        "sectionId": "passion-narrative-harmony",
+        "title": "Mark and John in the Passion narrative",
+        "timebox": "42:21–1:10:04",
+        "score": {
+          "pro": 84,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "white-mark-retains-control-and-fulfillment",
+              "time": "1:09:12",
+              "role": "Reply",
+              "words": "White argues that Mark depicts Jesus controlling his arrest and fulfilling scripture, so John's differing details need not make either narrative an invented parable.",
+              "score": 84,
+              "critique": "Strongest feature: White contests Crossan’s helpless-Mark versus controlling-John contrast by citing Jesus’s temple challenge and command that scripture be fulfilled; this source-specific counterexample explains responsiveness 88, relevanceBurden 85, logicalCoherence 84, evidenceWarrant 82, and precisionClarity 84. Principal limitation: Although Markan agency weakens an absolute contrast, White’s assertion that Jesus is just as controlling in Mark minimizes Crossan’s tonal difference and does not reconcile every arrest or passion detail, appropriately fixing calibrationCharity at 75. Live burden: White must show that distinct narrative emphases remain historically harmonizable through complete comparison, not merely that Mark includes agency or that divergence fails to prove parabolic invention. Locked score: The immutable 84 rewards concrete textual engagement and a relevant correction while retaining the unresolved parity and reconciliation limits expressed across all finalized dimensions under importance three.",
+              "tags": [
+                {
+                  "label": "Scope neglect",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/scope-neglect/",
+                  "context": "One Markan command to fulfill scripture supports calling Jesus just as controlling in Mark as John."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "crossan-mark-john-ground-and-control-contrast",
+              "time": "42:21",
+              "role": "Constructive",
+              "words": "Crossan argues that Mark's distressed, prostrate Jesus and John's commanding Jesus confronting the arresting cohort represent distinct narrative interpretations, not merely reconcilable witness variation.",
+              "score": 82,
+              "critique": "Strongest feature: Crossan concretely juxtaposes Mark’s prostrate, grief-stricken Jesus requesting escape from the approaching hour with John’s foreknowing, forward-stepping Jesus confronting an arresting cohort and commanding protection for his disciples, giving the interpretive contrast unusually specific textual anchorage. Principal limitation: Although the comparison establishes conspicuously different narrative emphases, selected moments may remain chronologically complementary, and neither military elaboration nor divergent agency independently demonstrates invention or incompatible history. Live burden: Crossan must show why contextual redaction better explains these arrest portrayals than selective eyewitness emphasis while accounting charitably for Markan agency, Johannine vulnerability, and plausible sequencing across both narratives. Locked score: 82 overall, with logical coherence 80, evidence warrant 85, responsiveness 82, relevance to burden 84, precision and clarity 86, calibration and charity 73, and high assessment confidence.",
+              "tags": []
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "crossan-passion-versions-authentic-not-historical",
+              "time": "46:10",
+              "role": "Constructive",
+              "words": "Crossan regards Mark's suffering Jesus and John's controlling Jesus as contextually authentic but probably nonhistorical portrayals that together express Jesus's humanity and divinity.",
+              "score": 72,
+              "critique": "Strongest feature: Crossan explicitly distinguishes contextual authenticity from literal historicity, connecting Mark’s agonized Jesus to audiences traumatized by Roman war and explaining how contrasting portrayals jointly communicate humanity and divinity within his contextual-redaction account. Principal limitation: The Markan setting is plausible but John’s corresponding context remains unspecified, and contextual fitness alone neither excludes historical selection nor supplies an articulated evidential standard for doubting both portrayals. Live burden: Crossan must demonstrate that audience-responsive composition probably generated these differences, rather than preserving compatible eyewitness emphases, while defining authenticity more rigorously and honoring his concession that one account might nevertheless be historical. Locked score: 72 overall, with logical coherence 69, evidence warrant 64, responsiveness 78, relevance to burden 79, precision and clarity 76, calibration and charity 73, and high assessment confidence.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "parable-history-and-meaning",
+        "title": "Parable, history, and theological meaning",
+        "timebox": "54:04–2:42:13",
+        "score": {
+          "pro": 80,
+          "con": 74
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "white-explicit-parable-markers-limit-extension",
+              "time": "1:11:07",
+              "role": "Reply",
+              "words": "White argues that the Good Samaritan is explicitly framed as a parable, so it cannot justify treating broadly historical Gospel narratives as similarly nonhistorical.",
+              "score": 79,
+              "critique": "Strongest feature: White identifies the neighbor question and concluding application surrounding the Good Samaritan as textual markers of illustrative storytelling, making his genre distinction clear and directly responsive to Crossan's extension from theological meaning to narrated miracles. Principal limitation: The absence of equivalent markers cannot establish historicity, and White overstates Crossan's position as treating all Gospel events as adaptable parables, which particularly depresses calibration and charity despite relevant evidence. Live burden: He still must engage the narrative-specific reasons offered for reading the loaves or Emmaus accounts parabolically and positively support historical authenticity rather than merely blocking genre transfer. Locked score: The immutable score is 79, comprising logical coherence 80, evidence and warrant 76, responsiveness 82, relevance to burden 79, precision and clarity 83, and calibration and charity 69.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Crossan's specific readings are expanded into treating all Gospel historical events as adaptable parables."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "crossan-loaves-parable-preserves-demand",
+              "time": "54:04",
+              "role": "Constructive",
+              "words": "Crossan treats the feeding story as a parable of divine justice: whether historical or symbolic, it charges church leaders to ensure that everyone has food.",
+              "score": 77,
+              "critique": "Strongest feature: Crossan anchors his interpretation in the food present, its sufficiency through Jesus as divine justice, the reluctant disciples, and the command that church leadership address hunger, clearly preserving a demand under either historical or parabolic reading. Principal limitation: A shared ethical consequence does not establish parabolic genre, while identifying the Twelve with church leadership and privileging this justice application over competing meanings remain interpretive steps that receive insufficient defense. Live burden: He must provide grounds showing why the feeding account should be classified as parable or development, not only demonstrate that nonliteral reading can retain theological authenticity. Locked score: The immutable score is 77, comprising logical coherence 77, evidence and warrant 69, responsiveness 79, relevance to burden 80, precision and clarity 82, and calibration and charity 78.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "white-loaves-sign-points-to-spiritual-need",
+              "time": "1:14:38",
+              "role": "Reply",
+              "words": "White argues that John presents the feeding as an actual sign whose discourse reveals spiritual need, rebutting Crossan’s poverty-centered reading without turning history into fiction.",
+              "score": 81,
+              "critique": "Strongest feature: White anchors his reply in the Bread of Life discourse and the openly performed sign, thereby offering a Johannine interpretation that coherently joins event, meaning, spiritual hunger, and narrative outcome. Principal limitation: This reading shows that symbolic meaning need not convert the feeding into fiction, but it does not independently establish that the event occurred, and it too quickly treats Crossan’s poverty centered application as displaced rather than potentially supplementary. Live burden: White must still supply historical warrant beyond the discourse itself while explaining why the spiritual application should exclude, rather than coexist with, the social demand Crossan identifies. Locked score: The immutable score is 81, comprising logical coherence 81, evidence warrant 81, responsiveness 84, relevance to burden 80, precision and clarity 83, and calibration and charity 71.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "crossan-emmaus-stranger-parable",
+              "time": "58:35",
+              "role": "Constructive",
+              "words": "Crossan reads Emmaus as a parable in which Jesus becomes recognizable through scripture and hospitality toward a stranger, rather than through a literally shape-changing resurrection body.",
+              "score": 71,
+              "critique": "Strongest feature: Crossan grounds his Emmaus interpretation in the story’s own sequence of scriptural study, hospitality toward an unknown traveler, shared food, and recognition, producing a clear account of continuing presence through welcoming the stranger. Principal limitation: Those narrative features strongly support thematic meaning but do not prove parabolic composition, while the comparison with pagan gods exaggerates what a literal resurrection appearance requires and lowers charity toward the alternative. Live burden: Crossan must identify genre evidence that makes Luke’s historical presentation intentionally fictional and answer the prophetic fulfillment emphasis, rather than moving from an illuminating symbolic reading directly to historical negation. Locked score: The immutable score is 71, comprising logical coherence 69, evidence warrant 67, responsiveness 75, relevance to burden 75, precision and clarity 78, and calibration and charity 62.",
+              "tags": [
+                {
+                  "label": "Belief bias",
+                  "type": "bias",
+                  "url": "https://cogbias.site/biases/belief-bias/",
+                  "context": "A literal stranger appearance seems like pagan shape-changing, so the Emmaus story instead screams parable."
+                }
+              ]
+            }
+          },
+          {
+            "pro": null,
+            "con": {
+              "ledgerMoveId": "crossan-preenlightenment-question-is-significance",
+              "time": "2:40:51",
+              "role": "Reply",
+              "words": "Crossan argues that pre-Enlightenment audiences asked what wonders meant, not whether they were possible; modern readers should likewise seek narrative significance before rejecting Christianity.",
+              "score": 73,
+              "critique": "Strongest feature: Crossan distinguishes ancient disputes about a wonder's significance from modern assumptions about impossibility, while acknowledging that ancient hearers could reject a particular resurrection claim, supporting calibrationCharity 79 and logicalCoherence 77. Principal limitation: His sweeping pre-Enlightenment generalization rests mainly on assertion and constituency anecdotes, supplies little historical evidence, and never establishes that accepting wonders makes Gospel narratives nonliteral, matching evidenceWarrant 64. Live burden: He must connect this reception thesis directly to White's textual genre markers and Johannine sign interpretation, then show why operational meaning answers the motion's historical-accuracy question, consistent with responsiveness 73, relevanceBurden 71, and precisionClarity 76. Locked score: The immutable 73 credits a charitable, intelligible hermeneutic reframing while preserving substantial deductions for broad historical support and incomplete engagement with the specific textual case.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "source-dependence-and-attestation",
+        "title": "Source dependence and historical attestation",
+        "timebox": "26:08–1:49:40",
+        "score": {
+          "pro": 73,
+          "con": 84
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "white-source-reconstructions-are-hypothesis-laden",
+              "time": "26:08",
+              "role": "Constructive",
+              "words": "White argues that Crossan’s dating and source ordering depend on layered, presupposition-laden reconstructions, so their conclusions cannot independently establish that Gospel traditions are inauthentic.",
+              "score": 67,
+              "critique": "Strongest feature: White identifies Crossan's dating of the hypothetical Cross Gospel and Q, source ordering, and divine-consistency claims as interdependent reconstruction layers, making the challenge directly responsive at 75. Principal limitation: Calling conclusions and reconstructions hypothetical neither demonstrates circularity nor answers their comparative textual evidence, while grouping distinct scholarly inferences understates their possible support, explaining evidenceWarrant 56 and calibrationCharity 57. Live burden: White must compare concrete evidence for rival dates and dependencies, isolate which premise imports a worldview commitment, and show how correcting it independently strengthens canonical authenticity, as logicalCoherence 72, relevanceBurden 70, and precisionClarity 70 require. Locked score: The immutable 67 recognizes a relevant challenge to Crossan's source-critical foundation but preserves substantial deductions because the transcript names vulnerabilities without performing the evidential comparison needed to defeat the reconstruction.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "crossan-dependence-changes-attestation-value",
+              "time": "1:19:03",
+              "role": "Reply",
+              "words": "Crossan argues that Markan priority makes Gospel agreement dependent rather than independently corroborative, while Matthew’s and Luke’s alterations expose their contextual theological aims.",
+              "score": 83,
+              "critique": "Strongest feature: Crossan answers White's hypothesis objection by invoking longstanding Markan-priority scholarship and observably aligning Mark, Matthew, and Luke in parallel columns, where literary dependence changes agreement from independent corroboration into transmission evidence and alteration, justifying relevanceBurden 87 and logicalCoherence 86. Principal limitation: Although he concedes that conclusions collapse if the scholarly premise is wrong, this passage supplies no Matthean alteration for inspection and leans on durable consensus, appropriately fixing evidenceWarrant at 75. Live burden: He still must demonstrate with representative textual changes that dependence and redaction weaken historicity rather than merely showing later evangelists adapting inherited material under their own claimed inspiration. Locked score: The immutable 83, with responsiveness 86, precisionClarity 82, and calibrationCharity 82, records a central, coherent answer whose methodological force exceeds its presented evidence.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "white-synoptic-variation-can-harmonize",
+              "time": "1:46:28",
+              "role": "Reply",
+              "words": "White argues that close comparison can reconcile Synoptic variations: Matthew’s verb meaning “acquire” resolves the staff-instruction discrepancy and shows how multiple accounts can enrich one another.",
+              "score": 78,
+              "critique": "Strongest feature: White supplies a concrete lexical counterexample from Matthew 10:9, distinguishing acquiring a staff from carrying one, so Synoptic instructions can form a harmonious presentation rather than an automatic contradiction, which supports logicalCoherence 82, precisionClarity 80, and relevanceBurden 78. Principal limitation: He identifies a verse and verb gloss but does not establish the Greek claim or its representativeness, while White's Gospel-name correction adds confusion and helps explain evidenceWarrant 76 and calibrationCharity 74. Live burden: He must extend this local reconciliation to Crossan's literary-dependence challenge, because harmonizing one wording difference does not establish independent attestation or resolve broader contextual rewriting. Locked score: The immutable 78, with responsiveness 75, recognizes a plausible harmony that advances complementary-witness plausibility without generalizing one favorable example into a comprehensive defense of Gospel historicity.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "One staff-instruction difference becomes harmonious when Matthew's acquire verb is compared with Mark and Luke."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "crossan-copying-reduces-four-witnesses-to-one-stream",
+              "time": "1:48:23",
+              "role": "Reply",
+              "words": "If Matthew and Luke reuse Mark, while John knows the Synoptics, the Gospels represent one dependent tradition stream rather than four independent witnesses.",
+              "score": 85,
+              "critique": "Strongest feature: Crossan distinguishes chronology from literary relationship, arguing that Markan reuse by Matthew and Luke, alongside John's awareness of the Synoptics, prevents harmonious agreement from functioning as fourfold independent corroboration, explaining the logical coherence, responsiveness, and burden relevance. Principal limitation: His source-critical premises are conclusions from prolonged study rather than demonstrated within this exchange, especially Johannine awareness, so evidence warrant appropriately trails the otherwise consistently strong evaluation. Live burden: White must show substantially independent testimonial pathways behind Gospel agreements or explain why derivative repetition retains evidential multiplication despite Crossan's courtroom-witness comparison and acknowledgment that every proposed literary relationship remains debatable. Locked score: The immutable overall score is 85, with logical coherence 88, evidence warrant 77, responsiveness 87, relevance burden 88, precision and clarity 84, and calibration and charity 85.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "resurrection-prophecy-and-salvation",
+        "title": "Resurrection, prophecy, and salvation",
+        "timebox": "1:17:17–2:37:03",
+        "score": {
+          "pro": 79,
+          "con": 81
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "white-emmaus-centers-prophetic-fulfillment",
+              "time": "1:17:17",
+              "role": "Reply",
+              "words": "White argues that Emmaus links the disciples’ recognition of Jesus to Scripture’s prophetic testimony, which becomes unintelligible if no prophecy genuinely anticipated him.",
+              "score": 79,
+              "critique": "Strongest feature: White identifies Luke's Moses-and-prophets framework and the disciples' burning hearts as a scriptural recognition mechanism omitted by Crossan's hospitality-centered Emmaus interpretation, producing the strongest dimension in responsiveness while maintaining textual warrant and intelligible reasoning. Principal limitation: The argument does not establish genuinely predictive, historically fulfilled prophecy rather than retrospective theological interpretation, and White's categorical reconstruction understates Crossan's account of meaningful prophetic testimony, sharply lowering calibration and charity. Live burden: White must demonstrate that the scriptural pattern supports event-specific prediction and resurrection historicity, while Crossan must explain why Luke foregrounds scriptural exposition if hospitality alone supplies the episode's controlling significance. Locked score: The immutable overall score is 79, with logical coherence 79, evidence warrant 79, responsiveness 84, relevance burden 78, precision and clarity 81, and calibration and charity 67.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "crossan-prophecy-is-retrospective-hope",
+              "time": "2:07:58",
+              "role": "Reply",
+              "words": "Crossan argues that Israel’s prophecies voiced broad hopes for divine justice, later applied to Jesus through faith rather than fulfilled as specific prior predictions.",
+              "score": 81,
+              "critique": "Strongest feature: Crossan directly answers White's Emmaus appeal by distinguishing Israel's open-ended hope for divine justice from event-specific prediction, then explaining fulfillment language through sincere retrospective identification by believers. Principal limitation: Although he names Psalms, Isaiah, betrayal payment, and divided garments, he never closely analyzes those passages, so the evidentiary warrant remains substantially weaker than the highly responsive interpretive mechanism. Live burden: Crossan must show text by text that retrospective application better explains the cited details than prior forecast, while preserving his careful distinction between faithful interpretation and calculated fabrication. Locked score: The immutable 81 records responsiveness at 85 as strongest, logical coherence and relevance to burden at 83, precision and charity at 81, and evidence warrant at 72 as the limiting dimension.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "white-bodily-resurrection-grounds-justification",
+              "time": "2:35:58",
+              "role": "Reply",
+              "words": "White argues that apostolic Christianity makes Jesus's bodily resurrection indispensable to justification and reconciliation, so treating resurrection symbolically alters the faith's central saving claim.",
+              "score": 79,
+              "critique": "Strongest feature: White uses Paul's claim that Jesus was raised for justification to identify a concrete apostolic consequence that symbolic continuation of Jesus's egalitarian social program cannot preserve unchanged, supporting logical coherence at 83. Principal limitation: This Pauline language establishes the doctrinal meaning and stakes of resurrection more securely than the occurrence of a bodily event, while White's summary risks narrowing Crossan's alternative, leaving calibration and charity at 69. Live burden: White must independently warrant the historical resurrection and the broader apostolic consensus, not merely demonstrate that his preferred scriptural theology requires an actual event for reconciliation and release from sin. Locked score: The immutable 79 reflects evidence warrant at 76, relevance to burden at 78, responsiveness and precision at 81, with coherent theological differentiation strongest and charitable representation weakest.",
+              "tags": []
+            },
+            "con": null
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 78,
+        "strengths": [
+          "White repeatedly answered Crossan’s concrete examples, especially Markan agency, Johannine signs, Emmaus prophecy, and the Synoptic staff instructions.",
+          "His distinction between theological purpose and historical revision gave the affirmative a clear, stable framework across otherwise diverse exchanges.",
+          "The strongest pro moves combined close textual reference with direct rebuttal, producing decisive advantages in Passion harmony and parable interpretation."
+        ],
+        "blunders": [
+          {
+            "text": "The worldview argument risked making authenticity depend on prior Christian theism instead of independently demonstrating the disputed events.",
+            "links": [
+              {
+                "label": "Begging the question",
+                "url": "https://logfall.com/fallacies/begging-the-question/"
+              }
+            ]
+          },
+          {
+            "text": "Calling source reconstructions hypothetical did not adequately confront the observable literary relationships that powered Crossan’s strongest attestation argument.",
+            "links": []
+          },
+          {
+            "text": "Several rebuttals established possible harmonization or compatibility without showing that White’s historical reading was comparatively more probable.",
+            "links": []
+          }
+        ]
+      },
+      "con": {
+        "score": 77,
+        "strengths": [
+          "Crossan’s dependence argument sharply distinguished multiple documents from independent witnesses and generated the debate’s strongest sustained evidential challenge.",
+          "His Mark–John comparison used concrete narrative details to show how distinct communities could receive deliberately different portrayals of Jesus.",
+          "The retrospective-prophecy account directly answered White’s Emmaus challenge while clearly separating broad scriptural hope from event-specific prediction."
+        ],
+        "blunders": [
+          {
+            "text": "Denying a singular orthodox account partly reframed the motion without proving that canonical plurality defeats authenticity or historical accuracy.",
+            "links": []
+          },
+          {
+            "text": "The claim that Gospel writers could invent authentic stories was asserted more confidently than its historical evidence in the selected exchange warranted.",
+            "links": []
+          },
+          {
+            "text": "Parabolic readings of Emmaus and the loaves supplied theological meaning but did not decisively establish that the narrated events were nonhistorical.",
+            "links": []
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "By treating Luke’s ordered testimony, Mark’s agentic Jesus, John’s interpreted signs, and Paul’s bodily resurrection claim as differently emphasized historical witness, canonical theology can preserve rather than displace authentic testimony about Jesus.",
+          "premises": [
+            "Luke’s prologue says he wrote an orderly narrative so Theophilus could have certainty about received teaching, making historical instruction the text’s stated evidential purpose.",
+            "White’s cited distinction is narrower: writing for a theological purpose permits selecting and emphasizing historical facts, so differing pastoral contexts alone do not entail fabrication.",
+            "In Mark, Jesus challenges the armed arrest party, recalls his public temple teaching, and invokes scriptural fulfillment, demonstrating agency that undercuts a sharp contrast with John.",
+            "John’s feeding narrative explicitly identifies the miracle as a public sign and interprets it through Jesus’s bread discourse, so theological meaning does not entail fictional parable.",
+            "Paul’s claim that Jesus ‘was raised for our justification’ makes an actual bodily resurrection causally indispensable to salvation, rather than a symbol of disciples’ continuing commitment."
+          ],
+          "conclusion": "Accordingly, canonical variation in narrative emphasis and theological purpose remains compatible with a shared historical core, while Crossan’s alternative interpretation does not establish that the narrated events are merely symbolic inventions.",
+          "notice": "AI-generated synthesis extending White’s frozen debate moves; it is not a transcript quotation or an additional scored move."
+        },
+        "newArguments": [
+          {
+            "title": "Genre-sensitive burden",
+            "text": "A stronger affirmative would turn White’s Good Samaritan distinction into a comparative genre test: explicit framing by a question and application marks that story as illustrative, whereas John presents the loaves as an openly performed sign followed by a discourse interpreting Jesus as heavenly bread. It should then test Crossan’s Emmaus and poverty readings against narrative voice, setting, named participants, and authorial cues. This would not prove every narrated event occurred, but it would require a positive textual reason for moving from theological meaning to deliberate parable."
+          },
+          {
+            "title": "Dependence without evidential erasure",
+            "text": "Literary dependence lowers the corroborative value of shared wording, but it does not make every later Gospel evidentially inert. Accept Crossan’s Markan-priority premise provisionally, place Matthew and Luke beside Mark, and classify material as copied agreement, editorial alteration, or independent addition; treat John separately while testing Crossan’s concession that it preserves an independent tradition despite knowing the Synoptics. White’s staff-verb example could then illustrate a bounded editorial difference. The affirmative would gain only the residual convergence, not four independent witnesses, and should state that uncertainty explicitly."
+          },
+          {
+            "title": "Explanatory comparison of resurrection models",
+            "text": "White could turn his appeal to Paul’s claim that Christ was raised for justification into an explicit comparison of resurrection explanations. He could ask whether Crossan’s continuing-presence and social-program model accounts as well for bodily language, Luke’s Emmaus recognition through Moses and the prophets, empty-tomb traditions, costly public proclamation, and reported transformations of opponents. Convergence among those features would not by itself prove resurrection, but showing that a bodily event explains them with fewer independent assumptions would give the historical claim more force than merely restating apostolic necessity."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "Canonical plurality, Synoptic dependence, Mark and John's contrasting arrest portraits, parabolic readings of loaves and Emmaus, and retrospective prophecy together support developing theological interpretation without requiring uniformly literal history.",
+          "premises": [
+            "Crossan’s distinction between one Gospel and four canonical versions means the motion’s singular ‘orthodox biblical account’ conflates Matthew, Mark, Luke, and John’s separate narrative interpretations.",
+            "Crossan’s Markan-priority model makes Matthew’s and Luke’s agreements dependent corroboration, because parallel-column comparison shows them copying and contextually changing Mark for their communities.",
+            "Mark’s prostrate, death-grieved Jesus and John’s commanding Jesus, before whom an armed cohort recoils, encode contrasting agency suited to postwar suffering and divine control.",
+            "Because the loaves narrative makes existing food sufficient through Jesus and reluctant disciples, its demand that church leaders feed the poor survives whether history or parable.",
+            "Because Israel’s prophets voiced unspecified hopes for God to repair the world, later applications of Psalms and Isaiah to Jesus reflect believers’ retrospective identification, not forecasts."
+          ],
+          "conclusion": "Therefore, the Gospels can remain religiously authentic as community-shaped versions: dependent Synoptic streams, divergent passion portraits, meaning-bearing narratives, and retrospectively applied hopes limit claims of uniform historical reporting.",
+          "notice": "AI-generated synthesis extending Crossan’s frozen debate moves; it is not a transcript quotation or an additional scored move."
+        },
+        "newArguments": [
+          {
+            "title": "Editorial-pattern test",
+            "text": "Crossan could test his claim of developing versions by tracing repeated, directional edits from Mark into Matthew or Luke, rather than relying on canonical plurality alone. For each case, he could identify the source wording, the later alteration, and the specific theological or community-facing concern that the change serves, then compare that explanation with selection, paraphrase, or complementary recollection. A recurring pattern would not prove every difference invented, but it would make editorial development independently testable and clarify when dependence supports interpretation rather than multiple historical attestation."
+          },
+          {
+            "title": "Independent-attestation accounting",
+            "text": "Crossan’s courtroom metaphor could become a transparent evidential model: classify each major claim by whether it appears in Mark, is copied or altered by Matthew and Luke, belongs to an independent tradition, or reflects later editorial development. Then give copied agreement no additional corroborative weight, while treating John’s possible knowledge of the Synoptics as a debated dependency rather than a certainty. The resulting map would show which claims remain independently supported after four apparent witnesses are reduced to distinguishable tradition streams."
+          },
+          {
+            "title": "Meaning-preservation criterion",
+            "text": "A disciplined nonliteral reading needs a criterion for identifying when theological meaning survives historical doubt. Crossan could require the proposed meaning to arise from the narrative’s sequence and emphases: existing food passes through Jesus and reluctant disciples before becoming sufficient, while the Emmaus stranger is recognized through Scripture and shared hospitality. The criterion should also test rival readings, including White’s heavenly-bread discourse and prophetic-fulfillment emphasis, and concede uncertainty where those textual features support significance without determining whether the narrated event occurred."
+          }
+        ]
+      }
+    }
+  }
 ];
 
 addMissingAiContributions(debates);

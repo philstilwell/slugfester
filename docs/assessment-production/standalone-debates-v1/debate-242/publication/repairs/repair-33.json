@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 33,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.crossan-prophecy-is-retrospective-hope.words",
+    "moveProse.white-miracles-are-selective-authenticating-signs.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "crossan-prophecy-is-retrospective-hope",
+      "description": "Crossan argues that Israel’s prophecies voiced broad hopes for divine justice, later applied to Jesus through faith rather than fulfilled as specific prior predictions.",
+      "wordCount": 24,
+      "rationale": "Recasts the proposition and inference as one complete sentence while preserving the distinction between broad scriptural hope and specific prediction."
+    },
+    {
+      "moveId": "white-miracles-are-selective-authenticating-signs",
+      "description": "White argues that miracles selectively authenticate Jesus and need not recur routinely, because their specific revelatory purpose explains departures from ordinary processes without implying divine absence.",
+      "wordCount": 26,
+      "rationale": "Combines the selective-sign claim with its explanation of nonrepetition and ordinary-process departures without adding evidence or judgment."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}

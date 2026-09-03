@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-description-quality-repair-shard",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "242",
+  "debateId": "white-crossan-biblical-jesus-historicity-2005",
+  "shardOrdinal": 30,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "display": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePacketPath": "docs/assessment-production/standalone-debates-v1/debate-242/publication/description-repair/packet.json",
+  "writableFields": [
+    "moveProse.white-emmaus-centers-prophetic-fulfillment.words",
+    "moveProse.crossan-dependence-changes-attestation-value.words"
+  ],
+  "repairs": [
+    {
+      "moveId": "white-emmaus-centers-prophetic-fulfillment",
+      "description": "White argues that Emmaus links the disciples’ recognition of Jesus to Scripture’s prophetic testimony, which becomes unintelligible if no prophecy genuinely anticipated him.",
+      "wordCount": 23,
+      "rationale": "This preserves White’s connection between recognition, prophetic testimony, and the implied problem for a reading without genuine prediction while forming a complete sentence."
+    },
+    {
+      "moveId": "crossan-dependence-changes-attestation-value",
+      "description": "Crossan argues that Markan priority makes Gospel agreement dependent rather than independently corroborative, while Matthew’s and Luke’s alterations expose their contextual theological aims.",
+      "wordCount": 23,
+      "rationale": "This preserves Crossan’s two-part inference about reduced evidential independence and the interpretive significance of later Gospel alterations in one complete sentence."
+    }
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "audit": {
+    "exactlyTwoFields": true,
+    "wordRangePassed": true,
+    "completeGrammarPassed": true,
+    "scoresUnavailable": true,
+    "otherFieldsChanged": 0
+  }
+}
