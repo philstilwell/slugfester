@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 241,
+  "debateId": "ward-law-god-existence-2015",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "two fresh built-in isolated subagents with explicit score-blind read boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-241/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "20ada4ecc385d852deaebc7d182be6e60efb66bc8ecfdcddec8e6d6b7045fa93",
+    "inventorySha256": "d8865ac6b35608cff8d75232fb5a09b18b0e60e7c916a5ca3d86cfa0c7a950c1",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-241/judgments/pass-a/output.json",
+      "outputSha256": "8f76df396b6b737eb17e7046ae16489ade37d6b224afe63a83c69f126cf7b8bf",
+      "outputBytes": 30298,
+      "judgmentCount": 19,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": ["docs/assessment-production/standalone-debates-v1/debate-241/judgments/pass-a/output.json"]
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-241/judgments/pass-b/output.json",
+      "outputSha256": "f9de29d8ad39da0170f899e6afd830462b70c131fe263a3efdf523c82d0ca238",
+      "outputBytes": 26432,
+      "judgmentCount": 19,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": ["docs/assessment-production/standalone-debates-v1/debate-241/judgments/pass-b/output.json"]
+    }
+  ],
+  "completedAt": "2026-09-03T06:11:50Z"
+}

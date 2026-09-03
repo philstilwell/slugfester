@@ -11191,5 +11191,52 @@ export const debateSummaries = [
         "title": "Epistemic standards and explanatory fit"
       }
     ]
+  },
+  {
+    "id": "ward-law-god-existence-2015",
+    "number": "241",
+    "title": "Keith Ward vs Stephen Law: Does God Exist?",
+    "year": 2015,
+    "label": "God, intelligibility, experience, and evil",
+    "date": "2026-09-03",
+    "duration": "1 hr 3 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ll_6JtbQtHU",
+    "motion": "Does God exist?",
+    "summary": "Law’s evidential and symmetry challenges outscored Ward’s carefully limited mind-like theism, especially on suffering, hypothesis discrimination, and experiential reliability.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "God exists as a mind-like spiritual reality",
+        "speaker": "Keith Ward",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The evidence does not warrant belief in God",
+        "speaker": "Stephen Law",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 70,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Mind-like reality beyond appearance"
+      },
+      {
+        "title": "Intelligibility and cosmic explanation"
+      },
+      {
+        "title": "Divine goodness and suffering"
+      },
+      {
+        "title": "Evil-God symmetry and theodicy"
+      },
+      {
+        "title": "Religious experience and hidden agency"
+      }
+    ]
   }
 ];

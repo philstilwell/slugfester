@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-03T06:06:53Z",
+  "debateNumber": "241",
+  "debateId": "ward-law-god-existence-2015",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does God exist?",
+  "sides": {
+    "pro": {"speaker": "Keith Ward", "position": "God exists as a mind-like spiritual reality"},
+    "con": {"speaker": "Stephen Law", "position": "The evidence does not warrant belief in God"}
+  },
+  "evidenceLocks": {
+    "inventory": {"path": "docs/assessment-production/standalone-debates-v1/debate-241/inventory/inventory.json", "sha256": "d8865ac6b35608cff8d75232fb5a09b18b0e60e7c916a5ca3d86cfa0c7a950c1", "bytes": 48950},
+    "events": {"path": ".assessment-cache/captions/ll_6JtbQtHU/events.json", "sha256": "bd67e0a06345f7b29477bfcce5ed253f1a39568a5425cf39285fe6ac85a05432", "bytes": 154562},
+    "transcript": {"path": ".assessment-cache/captions/ll_6JtbQtHU/transcript.txt", "sha256": "40faa33214aa9d1b66a8fb5d529ace85a6e5d73dd286087bfcea0fc9eda97cc1", "bytes": 64037},
+    "workflow": {"path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee", "bytes": 6705},
+    "rubric": {"path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c", "bytes": 6634},
+    "validator": {"path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "262f360341e218be1b03311026b966646997151ccf02d352c7cb742c5ba974df", "bytes": 41775}
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": ["logicalCoherence", "evidenceWarrant", "responsiveness", "relevanceBurden", "precisionClarity", "calibrationCharity"],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "d8865ac6b35608cff8d75232fb5a09b18b0e60e7c916a5ca3d86cfa0c7a950c1",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": ["distinctDebateWideConsequence", "affectsBurdenCompletion", "notAlreadyScored", "affectedBurdenIds", "completionCriterion", "relatedMoveIds", "distinctConsequence", "alreadyCapturedBy", "counterfactual"]
+    },
+    "requiredAuditBooleans": ["completeLockedInventoryReviewed", "allMovesJudgedOnce", "ratingsOnlyNoCalculatedScores", "publicationBlind", "scoreBlind"]
+  }
+}

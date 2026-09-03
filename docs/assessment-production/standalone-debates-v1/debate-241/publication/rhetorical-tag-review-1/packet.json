@@ -1,0 +1,1207 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-for-two-mutually-blind-complete-reviews",
+  "debateNumber": "241",
+  "debateId": "ward-law-god-existence-2015",
+  "policy": {
+    "compareEveryCandidateAgainstEveryExactDefinition": true,
+    "outputEverySeriousCandidateConsideredEvenWhenRejected": true,
+    "acceptOnlyMaterialDefectsAlreadyRepresentedInCritiqueOrBlunder": true,
+    "acceptedContextMustBeSourceSpecificAndContainEightToThirtyFiveWords": true,
+    "weakSupportIncompleteMechanismAndUnexcludedAlternativesAreNotAutomaticallyNamedDefects": true,
+    "contestedPremiseIsNotAutomaticallyBeggingTheQuestion": true,
+    "weakAnalogyIsNotAutomaticallyEquivocation": true,
+    "citationAloneIsNotAppealToAuthority": true,
+    "disagreementOrRhetoricalHarshnessAloneIsNotBeliefBiasOrConfirmationBias": true,
+    "twoLabelsRequireTwoDistinctDefects": true,
+    "emptyAcceptedResultPermitted": true,
+    "fallaciesAndBiasesReceiveIdenticalScrutiny": true,
+    "existingTagsOtherReviewsScoresFrequenciesAndOtherDebatesUnavailable": true
+  },
+  "reviewOrder": "section order, exchange order, pro then con",
+  "outputContract": {
+    "status": "complete-and-schema-valid",
+    "reviewedMoveIdsMustEqualPacketOrder": [
+      "ward-physics-opens-underlying-reality-question",
+      "law-unknown-reality-does-not-block-hypothesis-rejection",
+      "ward-mind-is-fundamental-not-anthropomorphic-projection",
+      "ward-intelligibility-fits-underlying-intelligence",
+      "law-fine-tuning-leaves-designer-underdetermined",
+      "ward-physicists-consider-intelligence-explanation-live",
+      "ward-objective-moral-pressure-defines-good-god",
+      "law-first-cause-does-not-establish-good-god",
+      "ward-rejects-omnipotence-and-posits-fellow-sufferer",
+      "law-historical-child-suffering-evidence-against-god",
+      "law-cosmic-arguments-equally-fit-evil-god",
+      "ward-lawful-existence-necessarily-carries-destruction",
+      "law-good-and-evil-god-face-symmetric-evidence",
+      "law-free-will-defense-mirrors-for-evil-god",
+      "law-stable-laws-defense-also-mirrors-for-evil-god",
+      "ward-transcendent-experience-points-beyond-physical",
+      "law-hidden-agency-error-defeats-experiential-trust",
+      "ward-agency-detector-could-track-real-god",
+      "law-defeater-argument-does-not-depend-on-debunking-story"
+    ],
+    "reviewedOverallBlunderIdsMustEqualPacketOrder": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-2",
+      "overall-pro-blunder-3",
+      "overall-con-blunder-1",
+      "overall-con-blunder-2",
+      "overall-con-blunder-3"
+    ],
+    "candidateReviewFields": [
+      "moveId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "overallBlunderCandidateReviewFields": [
+      "blunderId",
+      "type",
+      "label",
+      "url",
+      "context",
+      "decision",
+      "rationale"
+    ],
+    "decisionValues": [
+      "accepted",
+      "rejected"
+    ],
+    "contextWords": [
+      8,
+      35
+    ],
+    "rationaleMinimumWords": 18,
+    "candidateArraysContainEverySeriousCandidateActuallyConsidered": "Include accepted and rejected serious candidates; do not fabricate filler candidates."
+  },
+  "sourceLocks": {
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/output.json",
+      "sha256": "05843d5a7a4d0a0dc35bce35915fc054c22dde1ed5a8576d70bbd0b6506fab53",
+      "bytes": 47512
+    },
+    "sourcePacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/packet.json",
+      "sha256": "af8b5f63a0383ee9f7ec97d0a28d08e5818106de13b1efa890aa954d19822e0a",
+      "bytes": 5701
+    },
+    "definitions": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-241/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "3b03fd7a5305546cc2c61f0e5bb850d397798f9d60ff9f443e83657e566366e8",
+      "bytes": 4097
+    }
+  },
+  "definitions": [
+    {
+      "type": "fallacy",
+      "slug": "appeal-to-authority",
+      "label": "Appeal to authority",
+      "definition": "Relying on a person or institution's status as if it settles the argument, especially when the relevant evidence, expertise, or consensus has not been shown.",
+      "externalUrl": "https://logfall.com/fallacies/appeal-to-authority/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "argument-from-ignorance",
+      "label": "Argument from ignorance",
+      "definition": "Treating a claim as true because it has not been disproved, or false because it has not been proved, rather than supplying positive evidence.",
+      "externalUrl": "https://logfall.com/fallacies/argument-from-ignorance/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "begging-the-question",
+      "label": "Begging the question",
+      "definition": "Assuming, directly or indirectly, the very point that needs to be established, so the conclusion is smuggled into the premises.",
+      "externalUrl": "https://logfall.com/fallacies/begging-the-question/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "equivocation",
+      "label": "Equivocation",
+      "definition": "Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.",
+      "externalUrl": "https://logfall.com/fallacies/equivocation/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "red-herring",
+      "label": "Red herring",
+      "definition": "Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.",
+      "externalUrl": "https://logfall.com/fallacies/red-herring/"
+    },
+    {
+      "type": "fallacy",
+      "slug": "special-pleading",
+      "label": "Special pleading",
+      "definition": "Applying an exception or different standard to one side of the argument without giving a principled reason for the difference.",
+      "externalUrl": "https://logfall.com/fallacies/special-pleading/"
+    },
+    {
+      "type": "bias",
+      "slug": "ambiguity-effect",
+      "label": "Ambiguity effect",
+      "definition": "Preferring clearer or more familiar claims over uncertain ones, even when the uncertain option may deserve serious consideration.",
+      "externalUrl": "https://cogbias.site/biases/ambiguity-effect/"
+    },
+    {
+      "type": "bias",
+      "slug": "authority-bias",
+      "label": "Authority bias",
+      "definition": "Giving extra weight to a claim because it comes from a perceived authority, sometimes beyond what the evidence itself supports.",
+      "externalUrl": "https://cogbias.site/biases/authority-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "base-rate-neglect",
+      "label": "Base-rate neglect",
+      "definition": "Underweighting general background rates or prior probabilities while focusing too heavily on a vivid specific case or local detail.",
+      "externalUrl": "https://cogbias.site/biases/base-rate-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "belief-bias",
+      "label": "Belief bias",
+      "definition": "Judging an argument by whether its conclusion feels believable instead of evaluating whether the conclusion follows from the premises.",
+      "externalUrl": "https://cogbias.site/biases/belief-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "confirmation-bias",
+      "label": "Confirmation bias",
+      "definition": "Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information.",
+      "externalUrl": "https://cogbias.site/biases/confirmation-bias/"
+    },
+    {
+      "type": "bias",
+      "slug": "scope-neglect",
+      "label": "Scope neglect",
+      "definition": "Failing to adjust judgment in proportion to the scale, number, or magnitude of what is being discussed.",
+      "externalUrl": "https://cogbias.site/biases/scope-neglect/"
+    },
+    {
+      "type": "bias",
+      "slug": "subjective-validation",
+      "label": "Subjective validation",
+      "definition": "Treating a claim as especially accurate or meaningful because it feels personally resonant or confirms one's private experience.",
+      "externalUrl": "https://cogbias.site/biases/subjective-validation/"
+    }
+  ],
+  "moves": [
+    {
+      "candidateId": "ward-physics-opens-underlying-reality-question",
+      "kind": "card",
+      "moveId": "ward-physics-opens-underlying-reality-question",
+      "sectionId": "mindlike-reality-beyond-appearance",
+      "sectionTitle": "Mind-like reality beyond appearance",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "Physics shows that common-sense appearance differs radically from underlying reality, making the nature of that deeper reality a legitimate metaphysical question.",
+      "sourceSpan": {
+        "startEvent": 141,
+        "endEvent": 174,
+        "startMs": 356360,
+        "endMs": 442000,
+        "excerpt": "God would be um that the physical gives you Avail uh it says uh to you things that are we know not to be true like we all think that we're sitting in this room and we're made of three-dimensional solid beings which have various colors for example and a physicist will say well none of those things are objectively true they are constructs of the brain I would prefer to say the mind there we are they are constructs whatever they are and reality in itself doesn't cons to small solid objects in three dimensions I was talking to world famous physicist recently and he said well no what actually exists uh are probably uh small Wy sort of super strings in 11 dimensions and we don't look like that you know that's not the way we look so reality is very different from appearance I think all respectable physics now says takes that for granted the the uh theorems of quantum mechanics are very different from anything we think to be true uh there are appears to us in our physical experiences well that's okay that doesn't get you to God of course but it does uh get you to the thoughts the reality is different from appearance that it underlies appearance and it raes the question what's the nature of that reality and it does seem to be thought supremely intelligible uh the problem evil of"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Physics separates ordinary solid, colored appearances from theoretical reality, legitimately opening the metaphysical question of what underlying reality is without yet reaching God.",
+      "critique": "Strongest feature: Ward carefully distinguishes the modest conclusion that physics makes underlying ontology a legitimate question from the much stronger conclusion that the hidden reality is God, using solidity, color, quantum theory, and eleven-dimensional strings to illustrate the appearance-reality separation. Principal limitation: those compressed examples support representational distance but neither mind-likeness nor the sweeping assertion that respectable physics uniformly endorses his characterization, while the unnamed physicist anecdote supplies no independently inspectable warrant. Live burden: he must add a discriminating inference showing why nonmental physical structure, mathematical description, or epistemic humility explains the separation less successfully than fundamental mentality. Locked score: 76 reflects strong coherence, direct setup, explicit calibration, and understandable relevance, tempered by underdocumented science, conceptual compression, and the acknowledged absence of any completed bridge from altered appearance to divinity.",
+      "lockedScore": 76,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 75,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-unknown-reality-does-not-block-hypothesis-rejection",
+      "kind": "card",
+      "moveId": "law-unknown-reality-does-not-block-hypothesis-rejection",
+      "sectionId": "mindlike-reality-beyond-appearance",
+      "sectionTitle": "Mind-like reality beyond appearance",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Humility about what lies behind appearances does not prevent evidence from ruling out specific hypotheses about that hidden reality.",
+      "sourceSpan": {
+        "startEvent": 580,
+        "endEvent": 600,
+        "startMs": 1499600,
+        "endMs": 1548399,
+        "excerpt": "maybe there's a veil across reality on this side of the veil there's the empirically observable realm the realm about which perhaps Common Sense will draw conclusions has drawn conclusions but we need to show a little humility we need to remember there are more things in Heaven and Earth than the Dr in our philosophy we need to remember that there there could be stuff behind the veil who knows what is behind the veil you know now I'm for humility and I prepared to acknowledge that there are more things in Heaven and Earth than I'm capable of understanding uh but still we can quite reasonably rule out various hypotheses about what is behind the veil even if we don't know actually what is behind the veil okay so"
+      },
+      "respondsToIds": [
+        "ward-physics-opens-underlying-reality-question"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "ward-physics-opens-underlying-reality-question",
+          "component": "The hidden nature of underlying reality leaves a mind-like explanation open.",
+          "contact": "Law grants epistemic humility but denies that it prevents observational rejection of particular hidden-reality hypotheses."
+        }
+      ],
+      "argumentDescription": "Law grants ignorance about reality behind appearances yet argues observable expectations can still exclude specific hidden-reality hypotheses, so humility does not suspend evidential comparison.",
+      "critique": "Strongest feature: Law grants Ward’s veil metaphor and intellectual humility, then sharply separates ignorance of underlying ontology from inability to test particular hypotheses through observable expectations, directly answering Ward without caricature. Principal limitation: This abstract methodological point does not identify which expectations follow from Ward’s unusually limited mind-like reality, so its decisive application depends on later arguments about goodness, power, and suffering rather than this reply independently. Live burden: Law must specify Ward’s hypothesis sufficiently to derive risky predictions and demonstrate that the observed world fits them materially worse than relevant alternatives. Locked score: 87 rewards exceptionally coherent, precise, charitable, responsive reasoning that preserves uncertainty while defending discrimination, with modest evidential incompleteness because concrete disconfirmation is deferred.",
+      "lockedScore": 87,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-mind-is-fundamental-not-anthropomorphic-projection",
+      "kind": "card",
+      "moveId": "ward-mind-is-fundamental-not-anthropomorphic-projection",
+      "sectionId": "mindlike-reality-beyond-appearance",
+      "sectionTitle": "Mind-like reality beyond appearance",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "Mind is a fundamental, nonreducible feature of reality, and describing underlying reality as mind-like need not anthropomorphically project a human person.",
+      "sourceSpan": {
+        "startEvent": 1045,
+        "endEvent": 1063,
+        "startMs": 2694359,
+        "endMs": 2744760,
+        "excerpt": "uh but the very thought that things are construct about Minds uh makes me think that minds are a fundamental aspect of reality right so I think that's that's just par think minds are not reducible to physical purely physical phenomena so that's a general philosophical believe I have whether or not I believe in God so so I don't I wouldn't go along with your suggestion I'm I'm just projecting something anthropomorphic actually because by mind I don't necessarily make something human uh I I think of thought uh my Paradigm of thought might be mathematics or logic right and you say is does it look at a universe is based on something mathematic or logical and I well to me it does and uh that that's how it seems"
+      },
+      "respondsToIds": [
+        "law-hidden-agency-error-defeats-experiential-trust"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "law-hidden-agency-error-defeats-experiential-trust",
+          "component": "Mind-like interpretation risks projecting human agency onto unexplained reality.",
+          "contact": "Ward distinguishes nonhuman mind-like structure from anthropomorphic agency and grounds it in a nonreductive philosophy of mind."
+        }
+      ],
+      "argumentDescription": "Ward treats mind as fundamental and irreducible, using mathematics and logic to distinguish a nonhuman mind-like basis from anthropomorphic projection onto unexplained reality.",
+      "critique": "Strongest feature: Ward directly answers the projection challenge by distinguishing specifically human agency from mind-like reality, offering mathematics and logic as paradigms of thought whose structure need not resemble human personality, while explicitly disclosing his nonreductive philosophy of mind. Principal limitation: The claim that mental construction makes minds fundamental does not demonstrate ontological irreducibility, while mathematical intelligibility remains compatible with impersonal structure, physicalism, or conceptual representation rather than an underlying thinker. Live burden: Ward must defend nonreduction independently and establish that logical or mathematical organization is better explained by mentality than merely described through human cognition. Locked score: 71 recognizes clear responsive contact, a coherent anti-anthropomorphic distinction, and useful philosophical disclosure, but substantial evidential and inferential gaps prevent conceptual possibility from supporting Ward’s divine hypothesis.",
+      "lockedScore": 71,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 59,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-intelligibility-fits-underlying-intelligence",
+      "kind": "card",
+      "moveId": "ward-intelligibility-fits-underlying-intelligence",
+      "sectionId": "intelligibility-and-cosmic-explanation",
+      "sectionTitle": "Intelligibility and cosmic explanation",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "A universe governed by rationally intelligible principles is consonant with an intelligence that made it so and that human inquiry partially understands.",
+      "sourceSpan": {
+        "startEvent": 356,
+        "endEvent": 363,
+        "startMs": 887880,
+        "endMs": 911880,
+        "excerpt": "intelligibly I want to say I I believe that this universe is intelligible that it can be understood that it works on rational principles and I would constr that by saying well very is very consent with idea of an intelligence which makes it the way it is and which we try to understand so what I'm going to say well"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Ward argues that a rationally principled, humanly intelligible universe is consonant with an intelligence that established the order investigators can partially understand.",
+      "critique": "Strongest feature: Ward identifies a genuine explanatory datum, the universe’s rational and mathematical intelligibility, and advances the proportionate compatibility claim that such order is consonant with intelligence rather than presenting intelligibility as deductive proof of God. Principal limitation: consonance remains comparatively weak because ordered comprehensibility could fit impersonal laws, observer-selection effects, brute structure, or alternative metaphysical accounts, while no likelihood comparison establishes that intelligence predicts the datum more specifically or economically. Live burden: Ward must define the relevant intelligibility, distinguish discoverability from observer selection, and demonstrate a noncircular probability advantage for intelligence over salient competitors. Locked score: 72 credits coherent relevance, clarity, responsiveness, and commendable calibration, while reduced evidential warrant and incomplete discrimination correctly constrain a move announcing explanatory fit without demonstrating comparative force.",
+      "lockedScore": 72,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 71,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 61,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-fine-tuning-leaves-designer-underdetermined",
+      "kind": "card",
+      "moveId": "law-fine-tuning-leaves-designer-underdetermined",
+      "sectionId": "intelligibility-and-cosmic-explanation",
+      "sectionTitle": "Intelligibility and cosmic explanation",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Fine-tuning would at most suggest some intelligence and leaves alternatives such as prior-universe engineers and the designer's moral character unresolved.",
+      "sourceSpan": {
+        "startEvent": 500,
+        "endEvent": 525,
+        "startMs": 1289320,
+        "endMs": 1359000,
+        "excerpt": "to produce a universe like this that is capable of supporting intelligent beings such as ourselves now what are the chances that the Universe should be set up in such a way that the Leal should be in just that position what are the chances that the Universe should have the Goldilocks property of being just right for Life astronomically low if it's just if it's just by chance far more likely then far more reasonable to suppose there's some intelligence back there that ftuned the universe that placed those leaders in just the right position is that a good argument I don't think so but again even if it were a good argument for there being some kind of intelligent designer behind the existence of the universe again why does it have to be a go why couldn't this universe have been uh Eng engineered by the inhabitants of a previous uh Universe even if it's a God why does it have to be a good God again this argument gives us no clue whatsoever so far as the moral character"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law grants fine-tuning’s designer conclusion provisionally, then specifically notes prior-universe engineers and moral underdetermination prevent identifying that intelligence as a good God.",
+      "critique": "Strongest feature: Law provisionally grants that fine-tuning could indicate intelligence, then exposes two identification gaps by offering previous-universe engineers as a designer alternative and asking why any divine designer would be morally good, precisely limiting what the premises could establish. Principal limitation: he does not evaluate whether the proposed engineer alternative is independently plausible, whether it merely relocates fine-tuning, or whether Ward’s broader cumulative case could supply the moral characterization omitted by this single argument. Live burden: Law must compare candidate explanations rather than list possibilities and address whether intelligibility, experience, and moral pressure jointly narrow the designer hypothesis. Locked score: 84 reflects strong coherence, relevance, clarity, calibration, and burden-focused responsiveness, with slightly lower evidential warrant because underdetermination is demonstrated conceptually but the comparative explanatory landscape remains only illustratively developed.",
+      "lockedScore": 84,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-physicists-consider-intelligence-explanation-live",
+      "kind": "card",
+      "moveId": "ward-physicists-consider-intelligence-explanation-live",
+      "sectionId": "intelligibility-and-cosmic-explanation",
+      "sectionTitle": "Intelligibility and cosmic explanation",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "An intelligence setting up the universe is treated by physicists as a sensible possible explanation alongside hypotheses such as a multiverse.",
+      "sourceSpan": {
+        "startEvent": 1114,
+        "endEvent": 1125,
+        "startMs": 2870000,
+        "endMs": 2907680,
+        "excerpt": "cosmology uh and all I can say this um and you must surely ADM this is true uh in such conferences people do talk seriously about possible explanations for why the basic laws of the universe are the way they are the Multiverse is very popular one uh but actually um it is uh it is thought to be by most his I to be a sensible if false hypothesis that there is an intelligence which has uh set up this particular Universe the way did"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Ward cites cosmology conferences where physicists discuss multiverses and regard intelligence as a sensible, possibly false explanation for why basic laws obtain.",
+      "critique": "Strongest feature: Ward responds to methodological dismissal by reporting that cosmology conferences seriously discuss explanations for basic laws, including multiverse proposals and an intelligence hypothesis described as sensible even when considered false, thereby supporting the limited claim that intelligence is not automatically meaningless. Principal limitation: an anecdotal report about unnamed physicists neither documents disciplinary prevalence nor supplies evidence that intelligence actually explains the laws, and treating a hypothesis as discussable is far weaker than establishing its truth, probability, or divine identity. Live burden: Ward must present the explanatory mechanism, comparative predictions, and verifiable scientific or philosophical support rather than relying on conference impressions. Locked score: 67 acknowledges a coherent and relevant possibility defense with moderate responsiveness, but low evidential warrant, imprecise attribution, and incomplete motion-level connection substantially limit its contribution.",
+      "lockedScore": 67,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 72,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 55,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 71,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 65,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 65,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-objective-moral-pressure-defines-good-god",
+      "kind": "card",
+      "moveId": "ward-objective-moral-pressure-defines-good-god",
+      "sectionId": "divine-goodness-and-suffering",
+      "sectionTitle": "Divine goodness and suffering",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "The God concept should incorporate objective moral pressure at its highest level, which Ward identifies with universal compassion for sentient beings.",
+      "sourceSpan": {
+        "startEvent": 291,
+        "endEvent": 321,
+        "startMs": 727079,
+        "endMs": 807639,
+        "excerpt": "uh and if we think about it then we sometimes think well I believe this more strongly than I ought to if I didn't believe there was an objective moral pressure in the world that I have to be compassionate for all sentient beings that's one of the highest moral perceptions I can think of so I include that in my concept of God CU I didn't invent the concept of God but there are a range of Concepts and people do disagree a little so most people believe who use the word god are going to believe that this is a a moral power but because people's moral beliefs differ considerably just like the gay you people do just differ morally never mind what their religious beliefs are people who different morally about this will think that God agrees with them all right and you will say when we construct the idea of God it must involve the highest moral perceptions that I have I myself in agreement with most of my uh theological colleagues who are Christians in Britain let's just leave it at that uh would say well that means that God is going to be in favor of universal compassion compassion for all sensed beings and any view which doesn't say that is is not about God at all so"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Ward incorporates objective moral pressure and universal compassion into his God concept, rejecting morally defective religious conceptions rather than treating them as definitive.",
+      "critique": "Strongest feature: Ward identifies objective moral pressure, especially universal compassion toward sentient beings, as the discriminating criterion for a God-concept, while acknowledging moral disagreement and rejecting morally defective representations. Principal limitation: conceptual incorporation of his moral perception neither establishes external objectivity nor demonstrates that its source is personal, divine, or instantiated by reality, leaving phenomenological conviction separated from ontological evidence. Live burden: he must justify the transition from experienced obligation and revisionary definition to an independently warranted divine reality, while explaining why persistent moral disagreement and severe suffering do not substantially undermine compassionate governance. Locked score: 69 rewards relevance, intelligibility, calibration, and a morally precise target, while lower coherence and evidential warrant register the unresolved difference between defining a God of allegiance and demonstrating that such a being exists.",
+      "lockedScore": 69,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 57,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 72,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 76,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-first-cause-does-not-establish-good-god",
+      "kind": "card",
+      "moveId": "law-first-cause-does-not-establish-good-god",
+      "sectionId": "divine-goodness-and-suffering",
+      "sectionTitle": "Divine goodness and suffering",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Even a successful first-cause argument would not establish that its cause is personal, divine, powerful, or benevolent.",
+      "sourceSpan": {
+        "startEvent": 465,
+        "endEvent": 484,
+        "startMs": 1200000,
+        "endMs": 1256919,
+        "excerpt": "so they're running some kind of cosmological or first cause argument now uh this kind of argument very not taken seriously by professional philosophers but the the thing I also want to point out about this argument is that even if it established the existence of some kind of first cause or prime mover it is a huge and as it stands unwarranted further leap to draw the conclusion that this first cause or Manu or whatever it might happen to be is the judeo-christian god is a supremely benevolent and supremely Powerful deity uh why does the first cause have to be a God have to be a person even if it has to be a person why does it have to be a good person that argument as it stands provides us with no clue at all so far as the moral character of The Creator is"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law argues that even a successful first-cause inference supplies no premises establishing that its cause is personal, divine, powerful, or morally good.",
+      "critique": "Strongest feature: Law grants the first-cause conclusion for argumentative purposes and isolates the unsupported transition from some prime mover to a personal, powerful, supremely benevolent Judeo-Christian deity, using successive questions to expose exactly which identifying premises are absent. Principal limitation: the opening remark about professional philosophers is underdeveloped and rhetorically extraneous, while the critique addresses a familiar cosmological argument more directly than Ward’s own deliberately vague, mind-like, nonomnipotent hypothesis. Live burden: Law must connect the identification gap to Ward’s actual cumulative route and determine whether Ward’s moral and experiential premises could legitimately supplement causation. Locked score: 84 rewards exceptional logical coherence, precision, evidential restraint, and calibrated conditional reasoning, with slightly lower responsiveness because the target is partly generic and the omitted bridge is diagnosed rather than exhaustively disproved.",
+      "lockedScore": 84,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 79,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 84,
+          "rationale": "Law grants the argument's first-cause conclusion for purposes of critique and targets only the unsupported further leap, despite a dismissive pedigree remark."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-rejects-omnipotence-and-posits-fellow-sufferer",
+      "kind": "card",
+      "moveId": "ward-rejects-omnipotence-and-posits-fellow-sufferer",
+      "sectionId": "divine-goodness-and-suffering",
+      "sectionTitle": "Divine goodness and suffering",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "The evil evidence does not refute Ward's God because he does not posit omnipotence; his God is a mind-like fellow sufferer within a world mixing beauty and horror.",
+      "sourceSpan": {
+        "startEvent": 856,
+        "endEvent": 876,
+        "startMs": 2209599,
+        "endMs": 2272760,
+        "excerpt": "right uh about evil well of course this is the big one we know we know that evil is a big problem for the we do uh and um what I would say about this is look I don't start from the view that God is omnipotent and omnicient I start that God is a mind likee reality underlying this one now does it look as though God's omnip and omnicient and I'd say no it doesn't actually uh so I think I'd agree with see that human existence is a mixture of absolute Beauty and absolute hor and whatever explanation you go for has to take both those two things into uh so um what do I renounce I renounce omnipotence and I say God uh in the words ofan whad is the fellow sufferer who understands rather than the one who in um puts punishment on you for various things you've done wrong so the way this"
+      },
+      "respondsToIds": [
+        "law-historical-child-suffering-evidence-against-god"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "law-historical-child-suffering-evidence-against-god",
+          "component": "Suffering is evidence against a supremely powerful and benevolent God.",
+          "contact": "Ward concedes the mixed evidence but denies that omnipotence belongs to the God hypothesis he is defending."
+        }
+      ],
+      "argumentDescription": "Ward concedes beauty and horror, rejects omnipotence, and reframes God as a mind-like fellow sufferer rather than the supreme controller Law’s evidence targets.",
+      "critique": "Strongest feature: Ward squarely confronts suffering, concedes that the world mixes absolute beauty with absolute horror, and explicitly renounces omnipotence, thereby showing that Law’s evidence against a supremely controlling deity does not straightforwardly refute the narrower mind-like fellow-sufferer he defends. Principal limitation: narrowing the hypothesis improves compatibility at the cost of explanatory content, leaving unspecified how this being causes, knows, or morally responds to events and why a compassionate spiritual reality permits horrors despite being the greatest possible power. Live burden: Ward must articulate this God’s capacities and derive independent expectations that distinguish a fellow sufferer from indifferent, limited, or nonexistent agency. Locked score: 79 reflects unusually direct responsiveness, charitable concession, clarity, and coherent hypothesis adjustment, while moderate evidence warrant and incomplete explanatory specification prevent compatibility from becoming affirmative confirmation.",
+      "lockedScore": 79,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 65,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-historical-child-suffering-evidence-against-god",
+      "kind": "card",
+      "moveId": "law-historical-child-suffering-evidence-against-god",
+      "sectionId": "divine-goodness-and-suffering",
+      "sectionTitle": "Divine goodness and suffering",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "The immense historical suffering and early death of children is strong evidence against a supremely powerful and benevolent deity governing the universe.",
+      "sourceSpan": {
+        "startEvent": 550,
+        "endEvent": 578,
+        "startMs": 1416840,
+        "endMs": 1499600,
+        "excerpt": "is that if we look at the universe we find that it contains quite extraordinary amounts of evil or if you prefer suffering okay we can leave the word evil out of it let's just focus on the suffering uh we human beings have occupied this planet for around about 200,000 years uh for almost the entire sweep of that history your chances of making it beyond your fifth birthday as a member of this species were not good uh around about a third to a half of every generation of human children would have died usually pretty horribly of a disease of starvation and so on uh they would have suffered horribly their parents would suffered horribly as they had to watch their child die before them they were helpless to do anything about it for about the entire sweep of human history that has been going on and that all by itself surely looks like pretty good evidence that there is no supremely powerful and supremely benevolent deity in charge of this particular universe that's an example of the evidential problem of evil we appear to have here very good evidence against the existence"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law cites vast historical child mortality, disease, starvation, parental anguish, and helplessness as strong evidence against a supremely powerful and benevolent ruler.",
+      "critique": "Strongest feature: Law concretizes the evidential problem through immense, preventable child mortality, disease, starvation, parental anguish, and helplessness, clearly arguing that this distribution is less expected under supremely powerful and benevolent governance. Principal limitation: the approximate demographic proportions remain unsourced within the exchange, while the inference directly addresses maximal power conjoined with benevolence rather than Ward’s narrowed, non-omnipotent deity, making its reach dependent upon the hypothesis. Live burden: Law must compare this suffering’s probability under Ward’s limited deity, naturalism, and alternatives, while addressing proposed constraints from stable lawfulness or necessary destruction without overstating an evidential conclusion as deductive disproof. Locked score: 85 recognizes relevance, coherence, clarity, evidential specificity, calibration, and direct burden contact, with modest deductions for unsupported quantities and incomplete engagement with the restricted divine hypothesis Ward preserves.",
+      "lockedScore": 85,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-cosmic-arguments-equally-fit-evil-god",
+      "kind": "card",
+      "moveId": "law-cosmic-arguments-equally-fit-evil-god",
+      "sectionId": "evil-god-symmetry-and-theodicy",
+      "sectionTitle": "Evil-God symmetry and theodicy",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Cosmic existence and fine-tuning can be explained by a supremely evil creator just as readily as by a good creator.",
+      "sourceSpan": {
+        "startEvent": 604,
+        "endEvent": 632,
+        "startMs": 1552120,
+        "endMs": 1631960,
+        "excerpt": "the belief that there is an all powerful and supremely Mal deity an evil God if you like just the one God and this is his creation and his uh moral depravity is beyond our comprehension his cruelty and sadism is greater than we could ever understand is there a god like that who believes in a god like that nobody what if they same um why not I mean after all this universe was fine tuned and the existence of such a deity would very neatly explain its fine tune character God fine tun this universe to produce intelligent conscious beings that he could then torture as of course he does uh the existence of the fin CH Universe would be just as neatly explained by an evil God the existence of of the universe at all the fact that it exists while of them fails to exist would also be explained by an evil God he created the universe and then populated it in order to T its inhabitants so these arguments that I sketched out right at the beginning they appear to be just as good Arguments for an evil God as a good God and yet none"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law argues cosmic existence and fine-tuning fit an evil creator equally well, since such a deity could design conscious beings specifically for suffering.",
+      "critique": "Strongest feature: Law constructs a precise rival explanation in which a supremely evil creator fine-tunes conscious life for torment, showing that cosmic existence and life-permitting structure alone cannot discriminate between benevolent and malevolent intelligence. Principal limitation: Narrative symmetry does not by itself establish equivalent prior probability, explanatory simplicity, or comprehensive evidential fit, especially because Ward defines God through compassion and later rejects traditional omnipotence. Live burden: Law must specify the comparison's probabilistically relevant dimensions and systematically test beauty, agency, intelligibility, suffering, and other observed features against both hypotheses. Locked score: 84 rewards a coherent, memorable, highly relevant underdetermination challenge with excellent clarity and responsiveness, while retaining deductions for incomplete comparative development and the partial mismatch between an omnipotent evil creator and Ward's revised, limited-power deity.",
+      "lockedScore": 84,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 78,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 85,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-lawful-existence-necessarily-carries-destruction",
+      "kind": "card",
+      "moveId": "ward-lawful-existence-necessarily-carries-destruction",
+      "sectionId": "evil-god-symmetry-and-theodicy",
+      "sectionTitle": "Evil-God symmetry and theodicy",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "Creaturely existence in a law-governed cosmic order necessarily carries destruction and suffering, while God need only be the greatest power possible rather than omnipotent.",
+      "sourceSpan": {
+        "startEvent": 877,
+        "endEvent": 904,
+        "startMs": 2270400,
+        "endMs": 2343030,
+        "excerpt": "world is it just has to be that destruction and destructiveness occur that's the way it is we are all the results of the EXP exps of stars and they're not very you know pretty equal people who are near about them and that's the way it is and so I would say I don't I think there was a mind likee reality but I in in Comm with a lot of my colleagues I would say the word omnipotent is well I shouldn't say this in this company but it's not a Biblical word um but I I would say it's not necessar to God that God should in some sense and it would be a very sophisticated sense be able to do anything uh that was logically possible uh and so actually theologians and philosophers have never agreed on how to define nence and I'm prepared to give it up and say God is the most powerful possible being that could ever be but if we are going to exist we have to exist in a world like this and that carries suffering and destru with it and that's the way it is so I am announcing something of uh Steven's god um but I'm leaving my God intact it's rather upset"
+      },
+      "respondsToIds": [
+        "law-good-and-evil-god-face-symmetric-evidence"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "law-good-and-evil-god-face-symmetric-evidence",
+          "component": "A good God should produce a world with substantially less suffering.",
+          "contact": "Ward narrows divine power and claims that embodied existence necessarily requires destructive cosmic processes."
+        }
+      ],
+      "argumentDescription": "Ward says law-governed embodied existence necessarily carries stellar destruction and suffering, while God may be maximally possible in power without being omnipotent.",
+      "critique": "Strongest feature: Ward connects embodied existence with destructive stellar processes and combines that tradeoff with a restricted conception of divine power, explaining how suffering might accompany a mind-like reality without implying malicious selection of every harm. Principal limitation: Showing that some destructive processes enable our existence does not establish that this world's quantity, distribution, and intensity of suffering are necessary, while “greatest possible power” leaves the controlling modal restriction unspecified. Live burden: Ward must demonstrate why substantially gentler lawful worlds or differently embodied agents are impossible and clarify which interventions remain available to his compassionate deity. Locked score: 69 credits direct burden contact, conceptual relevance, and candid abandonment of unrestricted omnipotence, while weak evidential warrant, overextended necessity, and insufficient modal precision prevent the reply from neutralizing Law's comparative challenge.",
+      "lockedScore": 69,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 67,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 60,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 77,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 72,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 69,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 70,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-good-and-evil-god-face-symmetric-evidence",
+      "kind": "card",
+      "moveId": "law-good-and-evil-god-face-symmetric-evidence",
+      "sectionId": "evil-god-symmetry-and-theodicy",
+      "sectionTitle": "Evil-God symmetry and theodicy",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Just as abundant good evidence rules out an evil God, abundant suffering should rule out an all-powerful good God.",
+      "sourceSpan": {
+        "startEvent": 634,
+        "endEvent": 668,
+        "startMs": 1631960,
+        "endMs": 1723760,
+        "excerpt": "not because there's too much love laughter ice cream and rainbows that's look out the window yeah I know there's horror on a vast scale but the fact is there's an awful lot of nice Stu in this world stuff that an evil God would never allow okay uh and that provides you ample evidence that if there's some deity back there behind the veil right it's not that one you can cross that one off our list because we know that if there were a deity like that under the veil then what we observe on this side should be very different from what we actually observe okay this is not the kind of world that such a deity would create but then in much the same way we can cross out the all powerful all good God hypothesis too right too much bad stuff the side of the veil that's excellent evidence against the existence of a good god back there behind the veil maybe there's a God back there who just doesn't give a right doesn't give a or maybe there's a team of gods in they're incompetent there are all sorts of hypotheses we might consider and I'm not holding those out well I'm ruling out the Judea Christian God as traditionally conceived and I'm ruling out the evil God for much the same reasons and of course you all rule out the evil God for much that kind of reason and so you bloody well should be ruling out the good God too for much"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law argues that love, laughter, ice cream, and rainbows count against an evil God, while vast suffering symmetrically counts against an all-powerful good God.",
+      "critique": "Strongest feature: Law converts the evil-God thought experiment into a disciplined evidential symmetry: love, laughter, ice cream, and rainbows count against supreme malevolence because the observed world differs from its expectation, so extensive suffering should similarly count against supreme benevolence. Principal limitation: the inference assumes comparably specified power and preference structures, whereas Ward rejects omnipotence and may assign independent explanatory significance to intelligibility or moral experience, making a simple mirror incomplete for his exact deity. Live burden: Law must reformulate the likelihood comparison for a limited compassionate mind and show that auxiliary theistic commitments do not asymmetrically alter predictions. Locked score: 87 reflects exceptional coherence, precision, relevance, vivid evidential illustration, and strong motion-level force, with only modest qualification because its cleanest conclusion concerns traditionally maximal good and evil Gods.",
+      "lockedScore": 87,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-free-will-defense-mirrors-for-evil-god",
+      "kind": "card",
+      "moveId": "law-free-will-defense-mirrors-for-evil-god",
+      "sectionId": "evil-god-symmetry-and-theodicy",
+      "sectionTitle": "Evil-God symmetry and theodicy",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "The free-will defense of a good God can be mirrored to explain why an evil God permits freely chosen goodness.",
+      "sourceSpan": {
+        "startEvent": 1283,
+        "endEvent": 1310,
+        "startMs": 3332319,
+        "endMs": 3410400,
+        "excerpt": "say let's consider a evil God uh an evil God why would he allow some people to do good things you know like mother [Music] Tera wondering the slums of C did she sing suffering as she did but uh let's way you did um I'm sure that's the sort of behavior an evil God would clamp down straight away he won't allow people to do good yes he will why even God could have made us puppet beings that always did the evil thing but if we're puppet beings the evil the bad things we do will not be moral evil moral evil is something that an evil God want to exist in this universe therefore he cut his strs and that allows us to do evil of our own valtion which is exactly what he wants but unfortunately Mother Teresa then goes around doing good stuff is the price he pays for it's the same explanation in you're laughing which you should because it's ridiculous but it's the Christian"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law mirrors the free-will defense: an evil God permits freely chosen goodness because freedom is required for genuine moral evil, making goodness its unavoidable price.",
+      "critique": "Strongest feature: Law reverses the free-will defense: an evil God needs uncoerced creatures to produce moral evil and therefore tolerates freely chosen goodness as its price, preserving the defense’s structure and exposing its failure to discriminate between rival deities. Principal limitation: Structural mirroring does not establish equal value, feasibility, or expected distributions of freedom under opposed deities, and it neither covers natural suffering nor fully accommodates Ward’s nonomnipotent theology. Live burden: Law must defend those symmetry assumptions and integrate free choice with independent evidence from disease, starvation, and cosmic destruction, showing why their distribution favors neither hypothesis. Locked score: 86 rewards the argument’s exceptional coherence, precision, responsiveness, and evidential focus while retaining deductions because analogical parity remains asserted more broadly than demonstrated and important asymmetries remain incompletely tested.",
+      "lockedScore": 86,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 87,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-stable-laws-defense-also-mirrors-for-evil-god",
+      "kind": "card",
+      "moveId": "law-stable-laws-defense-also-mirrors-for-evil-god",
+      "sectionId": "evil-god-symmetry-and-theodicy",
+      "sectionTitle": "Evil-God symmetry and theodicy",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "The stable-laws defense likewise mirrors: an evil God needs dependable causal laws for moral atrocities and tolerates beautiful by-products as their cost.",
+      "sourceSpan": {
+        "startEvent": 1311,
+        "endEvent": 1335,
+        "startMs": 3406720,
+        "endMs": 3463079,
+        "excerpt": "explanation or um evil God wants me to do horrendous moral things in order to do horrendous moral things I need to live in a stable Lorden Universe I need to know that when I like match and produce a flame that when I pour the pet through your letter box there'll be a terrible explosion and that you will thebly in the resulting Inferno now both laws unfortunately produce beautiful sunsets which is a Bu from the point of view of evil God uh but it's the price he has to play for these moral Horrors so you can see that there's a kind of symmetry now between these two sets of explanations on each side you have the problem of good problem evil you don't have the dees you have de it's the same the neither of these hypotheses is considerably more reasonable than the other they are both way down the scale of reasonableness cross"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Law mirrors stable-law theodicy: dependable causal order enables deliberate atrocities for an evil God while producing beautiful sunsets as an unwanted by-product.",
+      "critique": "Strongest feature: Law mirrors the stable-laws defense in concrete causal detail, observing that dependable fire can enable compassionate warming under a good God or deliberate arson under an evil God, while beautiful sunsets become the malevolent creator’s tolerated by-product. Principal limitation: the analogy establishes explanatory flexibility but does not quantify whether the world’s precise balance of regularity, flourishing, and horror is equally likely under each deity, and Ward’s limited-power view may treat lawful constraint as necessity rather than chosen policy. Live burden: Law must compare distributions across specified hypotheses and explain why the symmetry survives differences in divine capacity and ultimate purpose. Locked score: 87 reflects outstanding logical structure, relevance, clarity, responsiveness, and memorable evidential application, with a small reservation for unformalized likelihoods and incomplete accommodation of Ward’s revisionary theology.",
+      "lockedScore": 87,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 90,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 88,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 84,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-transcendent-experience-points-beyond-physical",
+      "kind": "card",
+      "moveId": "ward-transcendent-experience-points-beyond-physical",
+      "sectionId": "religious-experience-and-hidden-agency",
+      "sectionTitle": "Religious experience and hidden agency",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "Transcendent experiences of value, morality, and beauty give Ward reason to think experienced reality contains more than the sensory and physical.",
+      "sourceSpan": {
+        "startEvent": 115,
+        "endEvent": 139,
+        "startMs": 295520,
+        "endMs": 356360,
+        "excerpt": "some of us probably about 50% of populations according to most take on this have a sense that there are experiences which are of a Transcendent reality that is something other than the sensory and the physical uh and of greater value than merely the sensory or the physical but which is nevertheless mediated through the sensory and physical and that's a very basic predisposition that some humans including me have and we have that sense and we have the option of saying well it's just an illusion uh I've tried very hard to believe that and I can't bring myself to think that's just an illusion or saying there's something in there there is something more to reality as it is experienced than simply the physical it's something to do with value it's something to do with morality it's something to do with beauty Beauty in art and Beauty in nature and in those experiences you feel well it's something Beyond the Veil of appearance so that's"
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "argumentDescription": "Ward’s experiences of value, morality, and beauty seem to disclose a transcendent reality beyond sensory physicality, an appearance he cannot regard as illusion.",
+      "critique": "Strongest feature: Ward identifies specific experiential domains—value, morality, artistic beauty, and natural beauty—acknowledges that illusion is an available interpretation, and modestly presents his inability to accept that interpretation as personal evidence for more-than-physical reality. Principal limitation: phenomenological force and an asserted population prevalence do not establish external reference, reliability, or divine identity, while the conclusion moves from seeming transcendence to ontology without tests distinguishing psychological, cultural, and physical explanations. Live burden: Ward must provide reliability criteria, address conflicting religious experiences, and connect any genuine transcendent object to a mind-like compassionate God rather than unspecified value. Locked score: 69 recognizes coherent experiential relevance, clarity, responsiveness, and partial calibration, but limited evidence warrant and an underdefended inference prevent sincere seeming and broad prevalence from carrying the motion-level conclusion.",
+      "lockedScore": 69,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 68,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 55,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 72,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 73,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-hidden-agency-error-defeats-experiential-trust",
+      "kind": "card",
+      "moveId": "law-hidden-agency-error-defeats-experiential-trust",
+      "sectionId": "religious-experience-and-hidden-agency",
+      "sectionTitle": "Religious experience and hidden agency",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Known human over-detection of hidden agents supplies an epistemic defeater for hidden-agent beliefs based on subjective experience.",
+      "sourceSpan": {
+        "startEvent": 804,
+        "endEvent": 822,
+        "startMs": 2054919,
+        "endMs": 2109920,
+        "excerpt": "massively overd detect agency we see agency everywhere even when there is none we look up at the stars of night hats and go o maybe there's someone back there right uh it's a product of this part of our evolutionary Heritage now I'm not endorsing that explanation but I am pointing out that what it explains is true we are hugely prone to false beliefs in Hidden agency uh the vast majority of these beliefs are not true we know that um but that means then that anyone who knows this should immediately be highly distrustful of any belief in Hidden agency based on their own subject to experience you have what's known in epistemology as a defeater for any such belief when you come into possession of this new information so I am suggesting"
+      },
+      "respondsToIds": [
+        "ward-transcendent-experience-points-beyond-physical"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "ward-transcendent-experience-points-beyond-physical",
+          "component": "Transcendent experience can warrant belief in a reality beyond the physical.",
+          "contact": "Law challenges the reliability of subjective experience about hidden agency by citing pervasive false beliefs in that domain."
+        }
+      ],
+      "argumentDescription": "Law argues that pervasive false hidden-agent beliefs create a domain-specific reliability defeater for religious convictions formed through the same underlying subjective experiential mechanism.",
+      "critique": "Strongest feature: Law separates the unendorsed evolutionary explanation from the claimed fact of frequent false hidden-agent beliefs, then clearly presents known domain unreliability as an epistemic defeater for similarly grounded religious convictions. Principal limitation: He does not document the relevant comparison class or error rate, and treating Ward’s experiences of value, beauty, and morality as products of agency detection may ignore differences in content, formation, corroboration, and personal reliability. Live burden: Law must define the belief class, substantiate its error rate, and show that Ward has no independent evidence capable of neutralizing the proposed defeater. Locked score: 80 preserves credit for coherent epistemic structure, direct responsiveness, strong relevance, and clear presentation, while the unsupported generalization and compressed calibration limit confidence that the mechanism applies uniformly to Ward’s reported experiences.",
+      "lockedScore": 80,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 81,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 71,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 83,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 82,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 75,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "ward-agency-detector-could-track-real-god",
+      "kind": "card",
+      "moveId": "ward-agency-detector-could-track-real-god",
+      "sectionId": "religious-experience-and-hidden-agency",
+      "sectionTitle": "Religious experience and hidden agency",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "proposition": "A hyperactive agency-detection capacity is compatible with theism because God could have installed it to detect genuine divine agency.",
+      "sourceSpan": {
+        "startEvent": 843,
+        "endEvent": 854,
+        "startMs": 2169400,
+        "endMs": 2209599,
+        "excerpt": "points first of all about Justin Barrett I don't think Stephen said that Justin Barett is in fact an Evangelical Christian so he didn't draw the same U conclusion from his had uh that stepen did and I think I agree with Justin that if it's true that we have a active detection device in our brains it's probably prob God put it there and is true ageny all the time it's go that's just actually think so do"
+      },
+      "respondsToIds": [
+        "law-hidden-agency-error-defeats-experiential-trust"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "law-hidden-agency-error-defeats-experiential-trust",
+          "component": "Agency detection is unreliable enough to defeat religious experience.",
+          "contact": "Ward argues that the mechanism could be divinely installed and truth-tracking rather than uniformly deceptive."
+        }
+      ],
+      "argumentDescription": "Ward replies that hyperactive agency detection remains compatible with truth because God could have installed the capacity to register genuine divine agency.",
+      "critique": "Strongest feature: Ward notes that a causal account of agency detection does not entail universal falsity, and his appeal to Justin Barrett’s Christianity challenges the claim that the mechanism automatically supports atheism. Principal limitation: saying God probably installed the detector presupposes the disputed deity, offers no reliability evidence, and leaves Law’s point about frequent false detections unanswered; the garbled closing words make Ward’s proposed truth-tracking scope uncertain. Live burden: Ward must provide non-circular corroboration, specify when this hyperactive detector registers genuine divine agency, and explain why its false-positive tendency does not defeat his own transcendent experiences. Locked score: 57 preserves credit for relevant contact and the valid compatibility warning, while weak warrant, circular support, limited precision, and failure to confront Law’s probabilistic unreliability defeater keep the reply substantially below adequacy.",
+      "lockedScore": 57,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 61,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 45,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 66,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 60,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 56,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 53,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    },
+    {
+      "candidateId": "law-defeater-argument-does-not-depend-on-debunking-story",
+      "kind": "card",
+      "moveId": "law-defeater-argument-does-not-depend-on-debunking-story",
+      "sectionId": "religious-experience-and-hidden-agency",
+      "sectionTitle": "Religious experience and hidden agency",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "proposition": "Law's argument is an unreliability defeater, not an inference from a naturalistic causal explanation to the falsity of religious belief.",
+      "sourceSpan": {
+        "startEvent": 918,
+        "endEvent": 944,
+        "startMs": 2378400,
+        "endMs": 2443400,
+        "excerpt": "run a kind of naturalistic debunking argument against religious belief which goes something like oh we can explain this belief naturalistically therefore it's it's probably not true right the mechanisms that would account for the belief will account for it whether or not it's true and so um there's no particular reason to think that it is true now given that we have a naturalistic explanation of why we would hold it so you could offer that kind of argument um which which I think you should rightly dismiss but it ain't mine right my argument was different my argument is a defeat argument my argument is that whether or not the H explanation is correct I don't know who it is um my point is that once you know that human beings are highly prone to false beliefs on a given subject matter under given circumstances then if you form your belief on that subject matter under those circumstances you should at that point on giving this VI information you should then withhold belief so for example if"
+      },
+      "respondsToIds": [
+        "ward-agency-detector-could-track-real-god"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "ward-agency-detector-could-track-real-god",
+          "component": "The mechanism may be God-given and truth-tracking, so a naturalistic explanation does not debunk belief.",
+          "contact": "Law agrees that the causal debunking inference should be rejected but distinguishes his argument as a defeater grounded in known false-belief propensity."
+        }
+      ],
+      "argumentDescription": "Law clarifies that known unreliability, not a naturalistic origin story, defeats belief: relevant false-belief propensity rationally requires withholding regardless of causal explanation.",
+      "critique": "Strongest feature: Law explicitly accepts that inferring falsity merely from a naturalistic explanation would be mistaken, then distinguishes his position as an unreliability defeater and illustrates it with an otherwise credible snake perception undermined by knowledge of an indistinguishable-hallucination drug. Principal limitation: the analogy assumes sufficiently strong, circumstance-specific error information, whereas Law still must substantiate that religious experience shares a comparably defined mechanism and unreliability profile rather than belonging to a heterogeneous class. Live burden: he must defend the empirical base rate and show why Ward’s other arguments provide no independent reinstating evidence. Locked score: 88 rewards exceptional responsiveness, precision, charity, logical coherence, and calibration because it directly corrects Ward’s target while preserving only the narrower claim warranted, with a modest evidential reservation about applying the defeater’s antecedent conditions.",
+      "lockedScore": 88,
+      "finalDimensions": {
+        "logicalCoherence": {
+          "score": 89,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "evidenceWarrant": {
+          "score": 80,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "responsiveness": {
+          "score": 93,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "relevanceBurden": {
+          "score": 86,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "precisionClarity": {
+          "score": 91,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        },
+        "calibrationCharity": {
+          "score": 91,
+          "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered."
+        }
+      }
+    }
+  ],
+  "overallBlunders": [
+    {
+      "candidateId": "overall-pro-blunder-1",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "text": "Defining God through Ward’s highest moral perceptions substitutes conceptual eligibility for evidence that a corresponding compassionate reality exists."
+    },
+    {
+      "candidateId": "overall-pro-blunder-2",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "text": "The claim that God installed agency detection assumes the very deity the disputed experiential mechanism is supposed to support."
+    },
+    {
+      "candidateId": "overall-pro-blunder-3",
+      "kind": "overall-blunder",
+      "side": "pro",
+      "speaker": "Keith Ward",
+      "text": "Examples of necessary stellar destruction do not establish that the world’s entire quantity and distribution of suffering are unavoidable."
+    },
+    {
+      "candidateId": "overall-con-blunder-1",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "text": "Law’s strongest suffering arguments principally target an omnipotent good God, while Ward explicitly defends a substantially narrower divine hypothesis."
+    },
+    {
+      "candidateId": "overall-con-blunder-2",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "text": "Claims about historical child mortality and pervasive false hidden-agent beliefs are asserted without source documentation during the exchange."
+    },
+    {
+      "candidateId": "overall-con-blunder-3",
+      "kind": "overall-blunder",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "text": "The evil-God analogies establish structural underdetermination more clearly than equal prior probability or fully equivalent predictive likelihoods."
+    }
+  ]
+}
