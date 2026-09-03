@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "245",
+  "debateId": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+  "completedAt": "2026-09-03T20:04:19.060Z",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/inventory.json",
+    "sha256": "4a55e4d67d32324926c7e61ce52e508563bad3612c5fba0e6018bffb08cbcff2",
+    "bytes": 146070
+  },
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/audio/plan.json",
+    "sha256": "9b47b857414bdecbff3bca1990aa4f106be9edeb21b17624c51ea1dfb6cd1143",
+    "bytes": 3640
+  },
+  "triggeredMoveIds": [
+    "real-self-no-soul",
+    "independent-language-correspondence"
+  ],
+  "checks": [
+    {
+      "moveId": "real-self-no-soul",
+      "status": "confirmed",
+      "expectedSpeaker": "Philip Goff",
+      "confirmedSpeaker": "Philip Goff",
+      "method": "gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment against the frozen move and surrounding caption turns",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-245/clips/real-self-no-soul.mp3",
+        "sha256": "4467409aaeaab5aae44c1d211de0721ffe95694e3b854087d070820203d3bb8b",
+        "bytes": 447120,
+        "startMs": 6597000,
+        "endMs": 6652760,
+        "durationSeconds": 55.76
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/audio/responses/real-self-no-soul.json",
+        "sha256": "d81a26a92111ee018e3b19bf4d8f85f6494693af8498b1ffb856b585ea935c2b",
+        "bytes": 4000
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Known-speaker diarization attributes the substantive description of temporary self-destruction, denial of a separate soul, and consciousness-constituted physical embodiment to Philip Goff. Joe Folley supplies only brief acknowledgments before his transition to fine-tuning; these are not assessed as part of Goff's inference.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " um light bulb of pure consciousness but that doesn't mean in ordinary life the cotton wool isn't real and the self isn't real in fact it felt like it felt like something that is real",
+          "speaker": "Philip Goff",
+          "start": 0,
+          "end": 15.600000000000001,
+          "id": "seg_0",
+          "absoluteStartMs": 6597000,
+          "absoluteEndMs": 6612600
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " was being torn away and destroyed temporarily fortunately so it didn't feel to me like i was seeing that the self was an illusion it felt like myself was being temporarily destroyed um but lots of people people might get different different ways on that but oh just to add i mean i i don't believe in the soul though i'm a pun psychist i think i'm",
+          "speaker": "Philip Goff",
+          "start": 16.596,
+          "end": 38.946,
+          "id": "seg_1",
+          "absoluteStartMs": 6613596,
+          "absoluteEndMs": 6635946
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Right, okay,",
+          "speaker": "Joe Folley",
+          "start": 38.946,
+          "end": 39.396,
+          "id": "seg_2",
+          "absoluteStartMs": 6635946,
+          "absoluteEndMs": 6636396
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " yeah, yeah.",
+          "speaker": "Joe Folley",
+          "start": 39.446,
+          "end": 39.696,
+          "id": "seg_4",
+          "absoluteStartMs": 6636446,
+          "absoluteEndMs": 6636696
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " i'm i'm i'm physical i am i'm completely physical creature",
+          "speaker": "Philip Goff",
+          "start": 39.696,
+          "end": 43.346000000000004,
+          "id": "seg_5",
+          "absoluteStartMs": 6636696,
+          "absoluteEndMs": 6640346
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " creature with a physical body and brain it's just that the physical world is made up of consciousness",
+          "speaker": "Philip Goff",
+          "start": 43.188,
+          "end": 47.388000000000005,
+          "id": "seg_6",
+          "absoluteStartMs": 6640188,
+          "absoluteEndMs": 6644388
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " The, you know, to bring this just to touch on fine tuning very briefly,",
+          "speaker": "Joe Folley",
+          "start": 48.038000000000004,
+          "end": 52.438,
+          "id": "seg_7",
+          "absoluteStartMs": 6645038,
+          "absoluteEndMs": 6649438
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " she wrote something quite recently,",
+          "speaker": "Joe Folley",
+          "start": 52.538000000000004,
+          "end": 53.438,
+          "id": "seg_8",
+          "absoluteStartMs": 6649538,
+          "absoluteEndMs": 6650438
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " a kind of version of.",
+          "speaker": "Joe Folley",
+          "start": 53.538000000000004,
+          "end": 55.488,
+          "id": "seg_9",
+          "absoluteStartMs": 6650538,
+          "absoluteEndMs": 6652488
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 2681,
+        "input_tokens": 1000,
+        "input_token_details": {
+          "text_tokens": 75,
+          "audio_tokens": 925
+        },
+        "output_tokens": 1681
+      },
+      "directCostUsd": 0.019309999999999997,
+      "inventoryChanges": 0
+    },
+    {
+      "moveId": "independent-language-correspondence",
+      "status": "confirmed",
+      "expectedSpeaker": "Joe Folley",
+      "confirmedSpeaker": "Joe Folley",
+      "method": "gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment against the frozen move and surrounding caption turns",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-245/clips/independent-language-correspondence.mp3",
+        "sha256": "6210095b92d6e67de813312bf117f9e8983a353a4b924fec759376a3fb20343c",
+        "bytes": 795312,
+        "startMs": 6970440,
+        "endMs": 7069719,
+        "durationSeconds": 99.279
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/audio/responses/independent-language-correspondence.json",
+        "sha256": "2a8f934edc52dc15179acd8db125b4fe7c9027f32fabc617ec97295bb055798b",
+        "bytes": 6037
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Known-speaker diarization attributes the independently developed language and holy-book correspondence objection to Joe Folley through clip second 89.414. Philip Goff begins his qualified acknowledgment at second 90.114; the trailing acknowledgment inside the caption span is surrounding context, not part of Folley's argument.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " I did on sub stack.",
+          "speaker": "Joe Folley",
+          "start": 0,
+          "end": 1.7,
+          "id": "seg_0",
+          "absoluteStartMs": 6970440,
+          "absoluteEndMs": 6972140
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " It's a good article,",
+          "speaker": "Joe Folley",
+          "start": 1.7499999999999998,
+          "end": 2.25,
+          "id": "seg_1",
+          "absoluteStartMs": 6972190,
+          "absoluteEndMs": 6972690
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " by the way, which I've read is that it seems to me like the miraculous thing about the Quran being written into the big bang wouldn't be that the Quran is written into the big bang. It would the miracle would occur from the.",
+          "speaker": "Joe Folley",
+          "start": 2.3,
+          "end": 15.150000000000002,
+          "id": "seg_2",
+          "absoluteStartMs": 6972740,
+          "absoluteEndMs": 6985590
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " completely improbable coincidence of us having written down the initial condition or us having written down this thing that is in the Big Bang and having come to a particular semantic understanding of it completely independent of any kind of Big Bang initial condition stuff.",
+          "speaker": "Joe Folley",
+          "start": 16.34,
+          "end": 34.44,
+          "id": "seg_3",
+          "absoluteStartMs": 6986780,
+          "absoluteEndMs": 7004880
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I mean, that to me seems to be where the support for Islam would come in.",
+          "speaker": "Joe Folley",
+          "start": 34.790000000000006,
+          "end": 39.09,
+          "id": "seg_4",
+          "absoluteStartMs": 7005230,
+          "absoluteEndMs": 7009530
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Like if we never had the Quran.",
+          "speaker": "Joe Folley",
+          "start": 39.14,
+          "end": 41.040000000000006,
+          "id": "seg_5",
+          "absoluteStartMs": 7009580,
+          "absoluteEndMs": 7011480
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " then like i don't think this would be if the the arabic language had never been invented invented i don't know if invent is the right words to think of a language but you know what i mean um if we'd never come to have the arabic language um this would cease to be a miracle i think that and i but i think that the",
+          "speaker": "Joe Folley",
+          "start": 41.556,
+          "end": 57.156,
+          "id": "seg_6",
+          "absoluteStartMs": 7011996,
+          "absoluteEndMs": 7027596
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " The person who is sceptical about the possibility of other initial conditions for the universe can appeal to the fact that,",
+          "speaker": "Joe Folley",
+          "start": 58.196,
+          "end": 64.096,
+          "id": "seg_7",
+          "absoluteStartMs": 7028636,
+          "absoluteEndMs": 7034536
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " well, we can reason about all of the possible languages we could have come to or all the possible holy books we could have read or sorry could have stumbled upon to say to kind of stay neutral on their veracity and that's where this.",
+          "speaker": "Joe Folley",
+          "start": 64.146,
+          "end": 79.746,
+          "id": "seg_8",
+          "absoluteStartMs": 7034586,
+          "absoluteEndMs": 7050186
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Awesome. That's why the atheists or the who's skeptical about the fine tuning argument for this reason can accept the awesome evidence argument and reject fine tuning.",
+          "speaker": "Joe Folley",
+          "start": 80.564,
+          "end": 89.41399999999999,
+          "id": "seg_9",
+          "absoluteStartMs": 7051004,
+          "absoluteEndMs": 7059854
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " In a sense, I think you're right, actually.",
+          "speaker": "Philip Goff",
+          "start": 90.11399999999999,
+          "end": 92.964,
+          "id": "seg_10",
+          "absoluteStartMs": 7060554,
+          "absoluteEndMs": 7063404
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " That is a relevant difference.",
+          "speaker": "Philip Goff",
+          "start": 93.764,
+          "end": 95.86399999999999,
+          "id": "seg_11",
+          "absoluteStartMs": 7064204,
+          "absoluteEndMs": 7066304
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " But I think it does.",
+          "speaker": "Philip Goff",
+          "start": 97.11399999999999,
+          "end": 99.064,
+          "id": "seg_12",
+          "absoluteStartMs": 7067554,
+          "absoluteEndMs": 7069504
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 4715,
+        "input_tokens": 1726,
+        "input_token_details": {
+          "text_tokens": 130,
+          "audio_tokens": 1596
+        },
+        "output_tokens": 2989
+      },
+      "directCostUsd": 0.034205,
+      "inventoryChanges": 0
+    }
+  ],
+  "cost": {
+    "frozenFullDebateEstimateUsd": 0.0179039,
+    "preauthorizedMaximumUsd": 0.12,
+    "paidCalls": 2,
+    "paidMinutes": 2.5839833333333333,
+    "directCostUsd": 0.053515,
+    "knownSuccessfulCallCostUsd": 0.053515,
+    "maximumPotentialCombinedCostUsd": 0.053515,
+    "uncertainCostUsd": 0,
+    "transcriptionCapUsd": 1,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "calculation": "Actual reported input tokens at $2.50 per million plus output tokens at $10 per million; no automatic retries.",
+    "outputTokenObservation": "The second segmented response reported 2989 output tokens, exceeding the model-page 2000-token per-output planning assumption. Actual combined cost remained below the frozen $0.12 bound; the original plan is preserved."
+  },
+  "audit": {
+    "lockedMovesReviewed": 44,
+    "highAttributionConfidenceMoves": 42,
+    "requiredAttributionChecks": 2,
+    "completedAttributionChecks": 2,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0,
+    "inventoryChanged": false
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0-bounded-audio-attribution-plan",
+  "status": "frozen-before-paid-calls",
+  "debateNumber": "245",
+  "debateId": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-245/inventory/inventory.json",
+    "sha256": "4a55e4d67d32324926c7e61ce52e508563bad3612c5fba0e6018bffb08cbcff2",
+    "bytes": 146070
+  },
+  "source": {
+    "path": ".assessment-cache/debate-245-audio/source.m4a",
+    "sha256": "ed063231185a8d4991e6041b74b6442cb0cc97031a5dd6bbed0d7504e6755baf",
+    "bytes": 50706895
+  },
+  "sourceDurationSeconds": 8331.319728,
+  "sourceAcquisition": "Existing yt-dlp 2026.08.19 public visionos extraction, format139; direct Android format139 download first returned403 without media bytes.",
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "chunkingStrategy": "auto",
+  "language": "en",
+  "speakerReferences": [
+    {
+      "name": "Philip Goff",
+      "startMs": 53680,
+      "endMs": 59680,
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-245/clips/philip-goff-reference.mp3",
+        "sha256": "3369152733652cc8c2677345300f9c11cb11d492f4e717c90fc47b75b5b563fa",
+        "bytes": 49104,
+        "startMs": 53680,
+        "endMs": 59680,
+        "durationSeconds": 6
+      }
+    },
+    {
+      "name": "Joe Folley",
+      "startMs": 752800,
+      "endMs": 758800,
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-245/clips/joe-folley-reference.mp3",
+        "sha256": "1e054903524b9fe275b26abeff0ad9ea8f3380d503f397dd4bd008039ecebe62",
+        "bytes": 49104,
+        "startMs": 752800,
+        "endMs": 758800,
+        "durationSeconds": 6
+      }
+    }
+  ],
+  "clips": [
+    {
+      "moveId": "real-self-no-soul",
+      "speaker": "Philip Goff",
+      "eventRange": [
+        2824,
+        2843
+      ],
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-245/clips/real-self-no-soul.mp3",
+        "sha256": "4467409aaeaab5aae44c1d211de0721ffe95694e3b854087d070820203d3bb8b",
+        "bytes": 447120,
+        "startMs": 6597000,
+        "endMs": 6652760,
+        "durationSeconds": 55.76
+      },
+      "responsePath": "output/transcribe/standalone-debate-v1/debate-245/transcripts/real-self-no-soul.json"
+    },
+    {
+      "moveId": "independent-language-correspondence",
+      "speaker": "Joe Folley",
+      "eventRange": [
+        2987,
+        3026
+      ],
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-245/clips/independent-language-correspondence.mp3",
+        "sha256": "6210095b92d6e67de813312bf117f9e8983a353a4b924fec759376a3fb20343c",
+        "bytes": 795312,
+        "startMs": 6970440,
+        "endMs": 7069719,
+        "durationSeconds": 99.279
+      },
+      "responsePath": "output/transcribe/standalone-debate-v1/debate-245/transcripts/independent-language-correspondence.json"
+    }
+  ],
+  "estimatedSecondsIncludingReferences": 179.039,
+  "cost": {
+    "estimatedUsd": 0.0179039,
+    "maximumUsd": 0.12,
+    "maximumForDebateUsd": 1,
+    "priorKnownCostUsd": 0,
+    "priorUncertainCostUsd": 0,
+    "estimateReportedBeforePaidCall": true,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "pricingRetrievedAt": "2026-09-03T19:56:55.758Z",
+    "inputPerMillionUsd": 2.5,
+    "outputPerMillionUsd": 10,
+    "maximumInputTokensPerCall": 16000,
+    "maximumOutputTokensPerCall": 2000
+  },
+  "execution": {
+    "sequential": true,
+    "maximumAttemptsPerClip": 1,
+    "automaticRetries": 0,
+    "fullMediaTranscription": false
+  }
+}

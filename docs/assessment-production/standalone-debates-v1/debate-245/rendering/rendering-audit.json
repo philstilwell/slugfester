@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0-standalone-production-rendering-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-standalone-production-rendering",
+  "debateNumber": "245",
+  "debateId": "goff-folley-consciousness-mysticism-fine-tuning-2026",
+  "completedAt": "2026-09-03T20:27:50.973Z",
+  "results": [
+    {
+      "viewportName": "desktop",
+      "status": "passed-rendering-viewport",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/rendering/evidence/desktop.json",
+        "sha256": "6660a61739eebc408b4ae66f573b666ea30cbd03a3364dafed33292e179639fb",
+        "bytes": 59378
+      }
+    },
+    {
+      "viewportName": "mobile",
+      "status": "passed-rendering-viewport",
+      "evidence": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-245/rendering/evidence/mobile.json",
+        "sha256": "c2650cb91aca5f7b925014e5aa185dd58db3b8425b34a69cf8c180cfc1d2c6c9",
+        "bytes": 59371
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/desktop-initial.png",
+      "sha256": "c3283a5067f8dec1597427e886b7c91891a9e02003b3b85c7b7f416d457aefeb",
+      "bytes": 378911
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/desktop-critique.png",
+      "sha256": "d50b31fd08d9b9c2522fbaa1d4c86d08ef8839f1b0eed21f950eea1a6e3db626",
+      "bytes": 320140
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/desktop-enter.png",
+      "sha256": "8bc206964d43b25a451d5471c66613c9a584bd1945d3251baf4d02dbe675ea0f",
+      "bytes": 321347
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/desktop-space.png",
+      "sha256": "8bc206964d43b25a451d5471c66613c9a584bd1945d3251baf4d02dbe675ea0f",
+      "bytes": 321347
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/mobile-initial.png",
+      "sha256": "2505ce54281afc29a0052824ff14c88c2c2fa3577d70f448e59a98925db1f721",
+      "bytes": 118293
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/mobile-critique.png",
+      "sha256": "02507833e2e66f29d9eca6d7f7822116ed1a87234844b0b47908ac7ee09df981",
+      "bytes": 107735
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/mobile-ai-settled.png",
+      "sha256": "508f19ac3f1c50844dadda2571f1eaa55f6828b69a204acea2a41c49b2668e6a",
+      "bytes": 147698
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/desktop-final-tag.png",
+      "sha256": "b0088df057843b82599baab7d7414d33c814187ad716919ce95dd95b2001430d",
+      "bytes": 245073
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/mobile-final-tag.png",
+      "sha256": "28143cd7697c3856cfcab0c90b45188e8de2368eeb4c79270e2c24bbee96968d",
+      "bytes": 97780
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-245/mobile-reference.png",
+      "sha256": "af9eb1f76ab2fe0c59a25f5e7b6eb98e51e5f635218467a1229153f6237d0bec",
+      "bytes": 98864
+    }
+  ],
+  "checks": {
+    "critiquePointerControlPassed": true,
+    "critiqueKeyboardEnterPassed": true,
+    "critiqueKeyboardSpacePassed": true,
+    "mobileCritiqueThenDistantControlPassed": true,
+    "mobileAiAccordionOpened": true,
+    "mobileCritiqueClearedAfterTransition": true,
+    "referenceNavigationAndOccurrenceAnchorPassed": true,
+    "allDescriptionsAndCritiquesMatchPublication": true,
+    "noHorizontalOverflow": true,
+    "noConsoleErrorsOrWarnings": true,
+    "allResourcesLoaded": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "viewports": 2,
+    "screenshots": 10,
+    "argumentCardsPerViewport": 44,
+    "pointerInteractionTests": 3,
+    "keyboardEnterTests": 1,
+    "keyboardSpaceTests": 1,
+    "mobileDistantControlTests": 1,
+    "rhetoricalReferenceNavigationTests": 1,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosticNotes": [
+    "An initial non-role-qualified text locator also matched a hidden tooltip heading; the controller was corrected to the observed link role without changing the site.",
+    "The first immediate mobile AI screenshot captured a normal closing transition; a condition-based wait confirmed the critique fully disappeared and the distant control had already opened successfully."
+  ]
+}

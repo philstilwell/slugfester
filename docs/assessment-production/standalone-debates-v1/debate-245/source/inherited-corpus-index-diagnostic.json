@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0-inherited-derived-index-diagnostic",
+  "status": "detected-before-debate-245-publication",
+  "baselineCommit": "bf65abfd9aa03e9fca88162c1f63e3fa6b395ef7",
+  "command": "node scripts/validate-corpus-transcripts.mjs",
+  "exitCode": 1,
+  "errors": [
+    "corpusDebates 243 does not match 244",
+    "audit must contain exactly 244 entries",
+    "acquisitionRate must be 0.9959"
+  ],
+  "cause": "The living transcript-corpus index has no Debate 244 entry, although Debate 244 and its committed source lock are already on main.",
+  "authorizedRepairScope": "Add the missing metadata-only source record from Debate 244's existing source lock and caption manifest while registering Debate 245; change no frozen assessment artifact, score, or transcript bytes."
+}

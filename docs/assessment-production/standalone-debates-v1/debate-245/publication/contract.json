@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "layered-consciousness",
+    "combination-symmetry",
+    "physics-intrinsic-gap",
+    "leave-gap-open",
+    "experience-first-unification",
+    "minimal-subjectivity",
+    "richness-dilemma",
+    "parsimony-of-intrinsic-nature",
+    "sample-extrapolation",
+    "calibrated-alternative",
+    "essential-accidental-selection",
+    "qualified-revelation",
+    "fallible-introspection",
+    "appearance-is-experience",
+    "water-counterexample",
+    "illusion-and-basic-seemings",
+    "discriminating-intrinsic-access",
+    "opposed-starting-commitments",
+    "physics-not-physicalism",
+    "physicalism-not-needed",
+    "practical-theory-connections",
+    "observational-equivalence",
+    "seemings-foundation",
+    "no-resolving-method",
+    "convergence-constraint",
+    "ego-loss-testimony",
+    "veracity-versus-truth",
+    "sensory-mystical-parity",
+    "psychosis-convergence-test",
+    "uniform-experience-reply",
+    "public-model-test",
+    "worldview-coherence",
+    "essence-energies-synthesis",
+    "agency-does-explanatory-work",
+    "purpose-without-anthropomorphism",
+    "ego-death-soul-challenge",
+    "limited-power-and-suffering",
+    "real-self-no-soul",
+    "awesome-evidence-reductio",
+    "independent-language-correspondence",
+    "contrastive-likelihoods",
+    "condition-on-cosmic-structure",
+    "concession-and-remaining-scope",
+    "modal-distance-limitation"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every fixed field from packet.template byte-for-byte.",
+    "summary": "18–28 word source-specific comparative summary.",
+    "quotes": {
+      "pro": "{text, context}",
+      "con": "{text, context}"
+    },
+    "sections": "Copy publicationLayout identities/title/timebox/score and rows. Convert rows to exchanges [{pro:card or null,con:card or null}]. Cards {ledgerMoveId,time,role,words,score,critique,tags:[]}. Preserve every move and per-side order.",
+    "overall": "Each side {score:locked overall score,strengths:[3 strings],blunders:[3 {text,links:[]}]}.",
+    "logicalExtension": "Each side {finalArgument:{thesis,premises:[5 strings],conclusion,notice},newArguments:[3 {title,text}]}."
+  },
+  "instructions": {
+    "argumentDescriptionTargetWords": [
+      24,
+      28
+    ],
+    "argumentDescriptionAllowedWords": [
+      8,
+      55
+    ],
+    "argumentMeanMinimum": 22.5,
+    "maximumShareBelow20Words": 0.25,
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "summaryWords": [
+      18,
+      28
+    ],
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 3,
+    "overallItemTargetWords": [
+      18,
+      30
+    ],
+    "newArgumentsPerSide": 3,
+    "premisesPerSide": 5,
+    "representativeQuoteWords": [
+      3,
+      18
+    ],
+    "quoteContextWords": [
+      18,
+      45
+    ],
+    "tagsAndBlunderLinksMustRemainEmptyUntilRhetoricalReview": true,
+    "critiquesExactlyFourLabeledSentences": true,
+    "critiqueRationalesMustBeSourceSpecific": true,
+    "thesisMinimumWords": 12,
+    "premiseMinimumWords": 12,
+    "conclusionMinimumWords": 15,
+    "newArgumentAllowedWords": [
+      45,
+      130
+    ],
+    "newArgumentTargetWords": [
+      90,
+      120
+    ],
+    "ordinaryPunctuationRequired": true,
+    "noGenericBoilerplate": true,
+    "quoteTextMustBeSourceExact": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedArgument": true,
+    "sourceQuoteAuditMustVerifyBothQuotes": true,
+    "noTagsOrBlunderLinksBeforeReview": true,
+    "noManualScoreChanges": true
+  }
+}
