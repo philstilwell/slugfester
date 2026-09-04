@@ -1,0 +1,896 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/captions.srv3.xml",
+      "sha256": "826a5bb925b1e001b78dc052b29c282fb97c60476c8b4de9d1b86509cee9e1ef",
+      "bytes": 683635
+    },
+    "events": {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/events.json",
+      "sha256": "41bddfe9fca890b1a0dfe0c0742e22371fc1303baac0cad56968afef37404bcd",
+      "bytes": 281168
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/transcript.txt",
+      "sha256": "c34176a4f8750d19d9069e8dc7234129e24e90450aca55b4cc5434758948162d",
+      "bytes": 109784
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/manifest.json",
+      "sha256": "a614e9be11d0eaf3ebd765865a6c013f34bb90160163a339edfe34693c1bc1bb",
+      "bytes": 988
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/source/source-lock.json",
+      "sha256": "640804f16577b90b2ef404113f04489f2dc48a2f908e4a588de830d0175919ff",
+      "bytes": 4680
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/authorization.json",
+      "sha256": "524cd8c2764fcba7548f2a32463c881e01bcab38d5b7f9e09509edf02e6fd3b1",
+      "bytes": 3473
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/inventory/inventory.json",
+      "sha256": "5424193c904b4f876ac9600c86770c8a6b084797be1d292101b1342011c2384c",
+      "bytes": 164026
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/authorization.json",
+      "sha256": "524cd8c2764fcba7548f2a32463c881e01bcab38d5b7f9e09509edf02e6fd3b1",
+      "bytes": 3473
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/manifest.json",
+      "sha256": "f2880afb54bc80a4300216c2501ec6bc62e31546da452c4ea50027f37da201d5",
+      "bytes": 7248
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/source/source-lock.json",
+      "sha256": "640804f16577b90b2ef404113f04489f2dc48a2f908e4a588de830d0175919ff",
+      "bytes": 4680
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/inventory/inventory.json",
+      "sha256": "5424193c904b4f876ac9600c86770c8a6b084797be1d292101b1342011c2384c",
+      "bytes": 164026
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/judgment-packet.json",
+      "sha256": "fa0784fd204099719dfe7b5242edea4865dab9fded725064cad0a2edf4772646",
+      "bytes": 4949
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/execution.json",
+      "sha256": "320cf95837502f739e6bce42f0433b19a9e6cbb64a3e39e2e5f2f5a645cd9769",
+      "bytes": 2548
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/pass-a/output.json",
+      "sha256": "e28ba4d79919f7d95bffd625cdc222dda63f6b64209b603d0af87ea35d339596",
+      "bytes": 54974
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/pass-b/output.json",
+      "sha256": "2fb7aac8e5d384c5fa09ab57a01fe88072d16d4c82b63d852d56e4e897ef3ba6",
+      "bytes": 55185
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/disagreements/disagreements.json",
+      "sha256": "2dd041f5a0a88e6cd56bb2c3ad8aa0d5561758d37ee8a171a2f52ddf423739f2",
+      "bytes": 12055
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/audio/audio-verification.json",
+      "sha256": "730fca27907e5d0f850041c0a15d7e979df17e570f0c0105fe62e08b3b52590e",
+      "bytes": 78151
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/adjudication/packet.json",
+      "sha256": "e80d0712fd7291ff39486dd68a644c4fa3b3717a49001681f48f997bd689db00",
+      "bytes": 25792
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/adjudication/output.json",
+      "sha256": "b3a894eff42b1b588d9e70eae58584498bd83da8736fae3b7fc8ffab278c9f85",
+      "bytes": 6623
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/final-ledger/final-ledger.json",
+      "sha256": "26ab005dcf79c497b18d12997bc0a7ad15a75cda3c1e48a79acc64d1735ee0b9",
+      "bytes": 321632
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/score-pass/input.json",
+      "sha256": "df55e90f7a347510da0f516bd9543f33119d9a67b29850ae1f8b6b79b05ac1a5",
+      "bytes": 962
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/score-pass/output.json",
+      "sha256": "04a657c1dc84ff33395fc5b25f57504d6019ae774a201e948cbe07e07d109aaf",
+      "bytes": 21042
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/score-pass/attestation.json",
+      "sha256": "6e9428ef02cc742dcdbaf212611288e208ad9bcc3f6e6d84684acc2bf998236f",
+      "bytes": 830
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/output.json",
+      "sha256": "d728869710054d812fb6ed87e2de47673e1132e566be32ca8f3cab900a56ee63",
+      "bytes": 83209
+    },
+    "events": {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/events.json",
+      "sha256": "41bddfe9fca890b1a0dfe0c0742e22371fc1303baac0cad56968afef37404bcd",
+      "bytes": 281168
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/transcript.txt",
+      "sha256": "c34176a4f8750d19d9069e8dc7234129e24e90450aca55b4cc5434758948162d",
+      "bytes": 109784
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/correction-1-copyedit.json",
+      "sha256": "304afe87b7a4b01ef26acabce9efa1ada290d6935d02884c40d3fceee3fe5d50",
+      "bytes": 1501
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/preserved-output-before-copyedit.json",
+      "sha256": "e4d5a2413c074b1d460e353000be5ada3e259a6864d85519725370abe1eb934f",
+      "bytes": 82042
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/content-parity-audit.json",
+      "sha256": "390fd11dbf94ba4bde8385f4f014ae9166679128f4e1684ad369b19e65bbd70b",
+      "bytes": 5454
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/correction-2-rhetorical-tags.json",
+      "sha256": "e29679457ec132bb1bf221b7c059404eac3a4f6d11eaa7e4d0995e9b19d3a486",
+      "bytes": 2029
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-audit.json",
+      "sha256": "9d6431af9a21b9b9084953e8746caedba71ba0fab0c701d1b58a0d3af3224880",
+      "bytes": 178821
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "c2a87123e5fd44b612fd6e6dbfe47331642ddc7b554e9f858ea80f360adcf2b5",
+      "bytes": 3405
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "89bfe24f21bce35ee4e5658455440db2640211552ad53eb3d97eb0a1b5341a75",
+      "bytes": 2613
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "251",
+    "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+    "sections": [
+      {
+        "sectionId": "challenge-scope",
+        "title": "Challenge, scope and concessions",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "conditional-symmetry",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 88,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "qualified-comparative-burden",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 91,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 93
+                },
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 91,
+            "moves": [
+              {
+                "moveId": "limited-and-ambitious",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 92,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 93,
+                  "calibrationCharity": 92
+                },
+                "score": 91
+              },
+              {
+                "moveId": "reversibility-concession",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 94,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 95
+                },
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "nature-and-greatness",
+        "title": "Moral nature and maximal greatness",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "overcoming-evil-desire",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 83,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 85
+                },
+                "score": 79
+              },
+              {
+                "moveId": "competing-desires",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 88
+                },
+                "score": 82
+              },
+              {
+                "moveId": "available-evil-worlds",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 87,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 86
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "disposition-and-possible-worlds",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 90,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 91
+                },
+                "score": 86
+              },
+              {
+                "moveId": "necessary-nonwrongdoing",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 88,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 88
+                },
+                "score": 83
+              },
+              {
+                "moveId": "power-versus-desire",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 94
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "design-and-motivation",
+        "title": "Design and divine motivation",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "design-moral-neutrality",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 88,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "conscious-victims",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 75
+                },
+                "score": 80
+              },
+              {
+                "moveId": "maximal-cruelty-and-comparison",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 85
+                },
+                "score": 85
+              },
+              {
+                "moveId": "symmetric-noncreation-option",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 93,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 90
+                },
+                "score": 88
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "creation-psychology",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 84,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 92
+                },
+                "score": 80
+              },
+              {
+                "moveId": "probability-not-possibility",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 93
+                },
+                "score": 86
+              },
+              {
+                "moveId": "tentative-psychology-remainder",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 76,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 92
+                },
+                "score": 76
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "privation-and-existence",
+        "title": "Privation, existence and intrinsic coherence",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "absence-need-not-exclude-being",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 82,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 90
+                },
+                "score": 83
+              },
+              {
+                "moveId": "reverse-privation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 89
+                },
+                "score": 84
+              },
+              {
+                "moveId": "mixed-ontology-option",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 91
+                },
+                "score": 86
+              },
+              {
+                "moveId": "intrinsic-existence-challenge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 91,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 85
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "intrinsic-possibility-space",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 89
+                },
+                "score": 80
+              },
+              {
+                "moveId": "parasitic-evil-and-ultimacy",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 83,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 87
+                },
+                "score": 76
+              },
+              {
+                "moveId": "existence-as-good-condition",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 81,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 93
+                },
+                "score": 78
+              },
+              {
+                "moveId": "probability-space-restatement",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 91
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "goodness-and-character",
+        "title": "Goodness and divine character",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "functional-goodness-reframing",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 88
+                },
+                "score": 86
+              },
+              {
+                "moveId": "unknown-divine-purpose",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 89,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 80
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "four-moral-accounts",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 85,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 88
+                },
+                "score": 81
+              },
+              {
+                "moveId": "objective-evil-scope",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 85,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "reframing-unresolved",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 72,
+                  "relevanceBurden": 57,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 96
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-command-and-scope",
+        "title": "Divine command and the scope of evil",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "command-does-not-show-love",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 89,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 85
+                },
+                "score": 88
+              },
+              {
+                "moveId": "conditional-command-concession",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 92,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 89
+                },
+                "score": 88
+              },
+              {
+                "moveId": "compatibility-count-qualification",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 86,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 89
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "conceptual-evil-requirement",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "challenger-burden",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 84,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 88
+                },
+                "score": 84
+              },
+              {
+                "moveId": "compatibility-not-certainty",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 85,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 89
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "mixed-worlds-and-theodicy",
+        "title": "Reversed theodicies and mixed worlds",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "free-will-reversal",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 91,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 91
+                },
+                "score": 90
+              },
+              {
+                "moveId": "bliss-and-comparative-cruelty",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 81,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 78
+                },
+                "score": 75
+              },
+              {
+                "moveId": "mixed-world-counterexample",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 67,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 86
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "reversal-and-world-comparison",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 91
+                },
+                "score": 84
+              },
+              {
+                "moveId": "mirror-world-qualification",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 91
+                },
+                "score": 86
+              },
+              {
+                "moveId": "middle-spectrum-qualification",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 90
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 84.12,
+        "burdenCompletionAdjustment": 0,
+        "score": 84
+      },
+      "con": {
+        "weightedSectionMean": 83.3,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 1,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 42,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

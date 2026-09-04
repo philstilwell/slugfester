@@ -1,0 +1,74 @@
+{
+  "status": "frozen-before-execution",
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "freshContextPerPass": true,
+  "forkTurns": "none",
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/judgment-packet.json",
+    "sha256": "fa0784fd204099719dfe7b5242edea4865dab9fded725064cad0a2edf4772646",
+    "bytes": 4949
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/judgment-packet.json",
+      "sha256": "fa0784fd204099719dfe7b5242edea4865dab9fded725064cad0a2edf4772646",
+      "bytes": 4949
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/inventory/inventory.json",
+      "sha256": "5424193c904b4f876ac9600c86770c8a6b084797be1d292101b1342011c2384c",
+      "bytes": 164026
+    },
+    {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/events.json",
+      "sha256": "41bddfe9fca890b1a0dfe0c0742e22371fc1303baac0cad56968afef37404bcd",
+      "bytes": 281168
+    },
+    {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/transcript.txt",
+      "sha256": "c34176a4f8750d19d9069e8dc7234129e24e90450aca55b4cc5434758948162d",
+      "bytes": 109784
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/judgment_251_a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-251/judgments/pass-a/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/judgment_251_b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-251/judgments/pass-b/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

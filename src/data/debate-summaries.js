@@ -11856,5 +11856,58 @@ export const debateSummaries = [
         "title": "Knowledge Without Propositions"
       }
     ]
+  },
+  {
+    "id": "oconnor-baker-hytch-evil-god-challenge-2021",
+    "number": "251",
+    "title": "Alex O'Connor vs Max Baker-Hytch: Could God Be Evil?",
+    "year": 2021,
+    "label": "Evil-god symmetry and divine goodness",
+    "date": "2026-09-04",
+    "duration": "1 hr 30 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=T1EwbFlV2XU",
+    "motion": "Does the evil-god challenge undermine belief in a wholly good God?",
+    "summary": "O'Connor narrowly leads through character-focused objections and reciprocal creation motives, while Baker-Hytch excels at scope distinctions and qualifies the final mixed-world comparison.",
+    "topicCategory": "evil-suffering-hiddenness",
+    "sides": {
+      "pro": {
+        "name": "Evil-god symmetry challenge",
+        "speaker": "Alex O'Connor",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Divine-goodness asymmetry defense",
+        "speaker": "Max Baker-Hytch",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 84,
+      "con": 83,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Challenge, scope and concessions"
+      },
+      {
+        "title": "Moral nature and maximal greatness"
+      },
+      {
+        "title": "Design and divine motivation"
+      },
+      {
+        "title": "Privation, existence and intrinsic coherence"
+      },
+      {
+        "title": "Goodness and divine character"
+      },
+      {
+        "title": "Divine command and the scope of evil"
+      },
+      {
+        "title": "Reversed theodicies and mixed worlds"
+      }
+    ]
   }
 ];

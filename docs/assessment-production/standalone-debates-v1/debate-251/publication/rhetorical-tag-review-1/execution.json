@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "14c75f7a09650a18b643c7aba1c4b686b5e44d9508510b51a652a7bc682668ad",
+    "bytes": 163255
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_251_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "14c75f7a09650a18b643c7aba1c4b686b5e44d9508510b51a652a7bc682668ad",
+        "bytes": 163255
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "8627861480a1f3c36b73de0b3f0ffb5547a7bfd60d6afd51a1a6bea89107fbc5",
+        "bytes": 36505
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_251_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "14c75f7a09650a18b643c7aba1c4b686b5e44d9508510b51a652a7bc682668ad",
+        "bytes": 163255
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "978702a443e27f0c40d81e72f83730872c31a69c28514572c8e9d74969a9bd60",
+        "bytes": 40668
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_251_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "6d1a0b1322c2824f4695ef33de5ea5da5207e225bac97535f06aecaebbcbc70f",
+        "bytes": 254456
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "10197ee0d08dae5d33dbd14196b6a2119700fa221e57d92d0c3a3c72b6a622dc",
+        "bytes": 39819
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 80
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-04T15:45:23.456Z"
+}
