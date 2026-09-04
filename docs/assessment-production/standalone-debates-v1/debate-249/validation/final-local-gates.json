@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "completedAt": "2026-09-04T04:19:07.608Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/validation/gates-1.log",
+        "sha256": "241bc34252ba30407da998858b60dccd25b3207a4dce63f84ad24c80e8d59908",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/validation/gates-2.log",
+        "sha256": "05e1ad856e77ccc2c1f25c95a5462e058592eb8969559b07f73feb52bf7b885c",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 249",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/validation/gates-3.log",
+        "sha256": "44ec1ca06392caf1a73e5c75d6d28b644e2541c95191020fe4cdd0dbeb106ee7",
+        "bytes": 254
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/validation/gates-4.log",
+        "sha256": "efba1f383c7dc9a4ac1b01d2664f62bb1c2563ee67a5ae6250ce28e1ad7933d0",
+        "bytes": 43190
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/validation/gates-5.log",
+        "sha256": "a5b488255f66eee653654ce5f46543839ab719a1faa89604c54c93901fef7f27",
+        "bytes": 205918
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/validation/gates-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

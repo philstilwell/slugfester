@@ -1,0 +1,37 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson,validateStandaloneCandidate} from './lib/assessment-production-standalone-debate-v1.mjs';
+const number=process.argv[process.argv.indexOf('--debate')+1];assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert.ok(entry);
+const root=entry.root,postRepair=process.argv.includes('--post-repair'),p=`${root}/publication/${postRepair?'output.json':'raw-prose-output-1.json'}`,output=read(p),candidate=output.candidate,packet=read(`${root}/publication/packet.json`),contract=read(`${root}/publication/contract.json`),inventory=read(`${root}/inventory/inventory.json`),scores=read(`${root}/score-pass/output.json`);
+const errors=[];const check=(ok,label)=>{if(!ok)errors.push(label);},words=s=>String(s??'').trim().split(/\s+/u).filter(Boolean).length;
+let structure;try{structure=validateStandaloneCandidate(candidate,scores);}catch(e){errors.push(String(e));}
+for(const k of contract.requiredTopLevelFields)check(k in output,`Missing ${k}`);
+check(output.schemaVersion===contract.requiredSchemaVersion,'schemaVersion');check(output.protocolId==='assessment-production-standalone-debate-v1','protocolId');check(output.debateNumber===number&&output.debateId===entry.debateId,'wrapper identity');
+for(const [k,v]of Object.entries(packet.template))check(JSON.stringify(candidate[k])===JSON.stringify(v),`Fixed field changed: ${k}`);
+const cards=candidate.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean)));
+check(JSON.stringify(cards.map(c=>c.ledgerMoveId))===JSON.stringify(contract.moveIdsInRequiredPublicationOrder),'Publication order');
+const counts=cards.map(c=>({moveId:c.ledgerMoveId,descriptionWords:words(c.words),critiqueWords:words(c.critique),critiqueCharacters:c.critique.length}));
+const labels=packet.publicationControls.critiqueSentenceLabels;
+for(const [i,c]of cards.entries()){
+ const n=counts[i],prefix=c.ledgerMoveId;check(n.descriptionWords>=8&&n.descriptionWords<=55,`${prefix} description words ${n.descriptionWords}`);check(n.critiqueWords>=105&&n.critiqueWords<=130,`${prefix} critique words ${n.critiqueWords}`);check(n.critiqueCharacters>=880,`${prefix} critique characters ${n.critiqueCharacters}`);
+ const parts=c.critique.split(/(?=Principal limitation:|Live burden:|Locked score:)/).map(p=>p.trim());check(parts.length===4&&parts.every((p,j)=>p.startsWith(labels[j])&&/[.!?]$/.test(p)),`${prefix} labels`);check((c.critique.match(/[.!?](?=\s|$)/g)??[]).length===4,`${prefix} sentence count`);check(!/[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(c.critique),`${prefix} text encoding`);check(c.tags.length===0,`${prefix} premature tags`);
+ for(const [k,v]of Object.entries(packet.moveDisplayControls[prefix]??{}))check(c[k]===v,`${prefix} fixed ${k}`);
+}
+const descriptionMean=counts.reduce((s,c)=>s+c.descriptionWords,0)/counts.length,shortCount=counts.filter(c=>c.descriptionWords<20).length;check(descriptionMean>=packet.publicationControls.argumentMeanMinimum,'Description mean');check(shortCount/cards.length<=0.25,'Short descriptions');check(words(candidate.summary)>=18&&words(candidate.summary)<=28,'Summary length');
+const tokenized=cards.map(c=>c.critique.toLowerCase().replace(/[^a-z0-9/]+/g,' ').trim().split(/\s+/)),frequency=new Map();for(const t of tokenized){const unique=new Set();for(let i=0;i<=t.length-6;i++)unique.add(t.slice(i,i+6).join(' '));for(const n of unique)frequency.set(n,(frequency.get(n)||0)+1);}
+const minDocs=Math.max(3,Math.ceil(cards.length*0.25)),common=new Set([...frequency].filter(([,v])=>v>=minDocs).map(([k])=>k));
+const covered=tokenized.map(t=>{const c=new Set();for(let i=0;i<=t.length-6;i++)if(common.has(t.slice(i,i+6).join(' ')))for(let j=0;j<6;j++)c.add(i+j);return c.size/t.length;});
+const boilerplate={ngramSize:6,minimumDocuments:minDocs,commonNgrams:common.size,meanCoveredRatio:covered.reduce((s,n)=>s+n,0)/covered.length,maximumCoveredRatio:Math.max(...covered)};check(boilerplate.meanCoveredRatio<=.15&&boilerplate.maximumCoveredRatio<=.25,'Critique boilerplate');
+const quotes=[];for(const side of ['pro','con']){
+ const q=candidate.quotes[side],a=output.sourceQuoteAudit.find(a=>a.side===side),m=inventory.moves.find(m=>m.moveId===a?.moveId);
+ check(words(q.text)>=3&&words(q.text)<=18,`${side} quote words`);check(words(q.context)>=18&&words(q.context)<=45,`${side} quote context`);check(m?.side===side&&m.quoteEligibleExactSpans.some(s=>s.includes(q.text))&&a.text===q.text&&a.exactMatch===true,`${side} quote not exact eligible source`);quotes.push({side,moveId:a?.moveId,text:q.text,eligibleAndExact:!!(m?.quoteEligibleExactSpans.some(s=>s.includes(q.text)))});
+ const o=candidate.overall[side];check(o.strengths.length===3&&o.blunders.length===3,`${side} overall item count`);for(const s of [...o.strengths,...o.blunders.map(b=>b.text)])check(words(s)>=18&&words(s)<=30,`${side} overall words ${words(s)}`);for(const b of o.blunders)check(b.links.length===0,`${side} premature overall links`);
+ const ext=candidate.logicalExtension[side],f=ext.finalArgument;check(words(f.thesis)>=12,`${side} thesis`);check(f.premises.length===5&&f.premises.every(p=>words(p)>=12),`${side} premises`);check(words(f.conclusion)>=15,`${side} conclusion`);check(/AI-generated/i.test(f.notice)&&/not/i.test(f.notice),`${side} notice`);check(ext.newArguments.length===3,`${side} new arguments`);for(const a of ext.newArguments){check(words(a.title)>=2&&words(a.title)<=8,`${side} title ${a.title}`);check(words(a.text)>=45&&words(a.text)<=130,`${side} new argument words ${words(a.text)}`);}
+}
+const expectedNovelty=['pro','con'].flatMap(side=>['finalArgument','newArguments[0]','newArguments[1]','newArguments[2]'].map(field=>`candidate.logicalExtension.${side}.${field}`));check(JSON.stringify(output.noveltyMap.map(n=>n.path))===JSON.stringify(expectedNovelty),'Novelty paths');for(const n of output.noveltyMap)check(n.hypothetical===true&&words(n.explanation)>=12&&n.sourceMoveIds.every(id=>inventory.moves.some(m=>m.moveId===id)),`Novelty ${n.path}`);
+check(!/unassailable/i.test(JSON.stringify(candidate.logicalExtension)),'Forbidden AI claim');
+const result={status:errors.length?'failed-initial-prose-validation':'passed-initial-prose-validation',debateNumber:number,debateId:entry.debateId,output:fileRecord(p),structure,counts,descriptionMeanWords:descriptionMean,shorterThan20Words:shortCount,requiredDescriptionMean:packet.publicationControls.argumentMeanMinimum,boilerplate,quotes,noveltyMapPaths:expectedNovelty,errors};
+const outPath=`${root}/publication/${postRepair?'post-repair-validation.json':'initial-validation.json'}`;assert.equal(fs.existsSync(outPath),false);fs.mkdirSync(path.dirname(outPath),{recursive:true});fs.writeFileSync(outPath,serializedJson(result),{flag:'wx'});console.log(JSON.stringify(result,null,2));if(errors.length)process.exitCode=1;

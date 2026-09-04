@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 249,
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": false,
+    "isolationMethod": "Original pass-b retained; the second expressly authorized fresh built-in isolated replacement supplies pass-a using the identical frozen score-blind packet and a separate direct-JSON raw output path. Both failed pass-a preparations remain preserved.",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "5426e333d1edb8dfbaeb426e8cc8957eaeccaeed738df752d28989d2c0ebd76a",
+    "inventorySha256": "80880f9093ca100a799c2418788f8360a6ab983439c1184f8165d8c58bef8841",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "initialPrimaryContexts": 2,
+    "additionalReplacementContexts": 2,
+    "totalAssessmentContexts": 4,
+    "schemaValidPrimaryContexts": 2,
+    "automaticRetries": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-a/output.json",
+      "outputSha256": "29a08d8b805b829755c9af81d6194e89aa399c632a01aec0d08b3207b28b8c12",
+      "outputBytes": 61403,
+      "judgmentCount": 45,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 3,
+      "retryCount": 2,
+      "automaticRetryCount": 0,
+      "explicitlyAuthorizedReplacementCount": 2,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-a-replacement-2/output.json"
+      ],
+      "agentTask": "/root/judgment_249_a_replacement_2"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-b/output.json",
+      "outputSha256": "3b06c8aa41fc4588e147f12370b7f657bb641e9b7de716676260640df25f2658",
+      "outputBytes": 71319,
+      "judgmentCount": 45,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "automaticRetryCount": 0,
+      "explicitlyAuthorizedReplacementCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_249_b"
+    }
+  ],
+  "recovery": {
+    "approval": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/approved-recovery-2.json",
+      "sha256": "fbd840b3a0c0f9e1a7008fc290d99dc8f97f24a18965897f76e45c659c996c90",
+      "bytes": 1928
+    },
+    "priorApproval": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/approved-recovery-1.json",
+      "sha256": "d23b2b8d48de4eacef3b0632055d6ab2d62f0ba35280fa64e83d6ab06d46dcf9",
+      "bytes": 1287
+    },
+    "failedAttempts": [
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/pass-a-preparation-failure/diagnostic.json",
+        "sha256": "710790f0c9cf911930048ed9e8de958649e2a6a47709ade4826a766f0af09588",
+        "bytes": 1871
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/pass-a-replacement-1-failure/diagnostic.json",
+        "sha256": "386594c721ee9e06d7331325c33fca28fb59020181da7425ea27c29b28211b45",
+        "bytes": 2523
+      }
+    ],
+    "replacementExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-a-replacement-2/execution.json",
+      "sha256": "ef7163eb8d8bce4a5423bd5ec76a6b3ffc820f12f05aab5e749809890d9d975b",
+      "bytes": 1461
+    },
+    "retainedPassB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-b/output.json",
+      "sha256": "3b06c8aa41fc4588e147f12370b7f657bb641e9b7de716676260640df25f2658",
+      "bytes": 71319
+    }
+  },
+  "completedAt": "2026-09-04T03:06:42.958Z",
+  "audit": {
+    "primaryContexts": 4,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

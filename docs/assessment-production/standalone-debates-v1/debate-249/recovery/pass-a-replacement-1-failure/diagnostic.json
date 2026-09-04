@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-standalone-local-preparation-failure",
+  "status": "preserved-authorized-replacement-exhausted",
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "pass": "pass-a",
+  "agentTask": "/root/judgment_249_a_replacement_1",
+  "approvalPath": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/approved-recovery-1.json",
+  "replacementAttempts": 1,
+  "replacementRetries": 0,
+  "failureStage": "JavaScript draft construction before submission",
+  "error": "SyntaxError: Unexpected token ')'",
+  "cause": "The outer array of 24 rating/rationale rows was missing its closing square bracket before the store call's closing parenthesis. Parsing failed before execution.",
+  "failedInvocation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/pass-a-replacement-1-failure/failed-invocation.js.txt",
+    "sha256": "e0173f2cd82ffe8b8c83e68057387da769bc76ef9aaf7464326e8e57c3f1317d",
+    "bytes": 18535
+  },
+  "errorArtifact": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/recovery/pass-a-replacement-1-failure/error.txt",
+    "sha256": "ff87509fd2ba33607cee4ebc0f285a41712323c806eec9452f938f549f93c7f5",
+    "bytes": 92
+  },
+  "partialDraft": {
+    "completeDimensionRatingRationaleRows": 24,
+    "requiredMoveRows": 45,
+    "ratings": 144,
+    "rationales": 144,
+    "assembledMoveRecords": 0,
+    "assessmentConfidenceFields": 0,
+    "burdenJudgments": 0,
+    "completeWrapper": false,
+    "validatorExecuted": false,
+    "outputSubmitted": false
+  },
+  "forensicFollowupOnly": true,
+  "failedCodeExecutedOrRepaired": false,
+  "sourceOrInventoryChanged": false,
+  "retainedPassBUnchanged": true,
+  "scorePasses": 0,
+  "replacementDirectCostUsd": 0,
+  "concurrentAudioDisposition": {
+    "successfulChecks": 6,
+    "remainingChecks": 39,
+    "knownSuccessfulCallCostUsd": 0.1677775,
+    "maximumPotentialCombinedCostUsd": 0.1677775,
+    "uncertainCostUsd": 0,
+    "authorizedMaximumUsd": 4.5,
+    "nextClipIndex": 6,
+    "checkpointPath": "docs/assessment-production/standalone-debates-v1/debate-249/audio/partial-verification-checkpoint-1.json",
+    "successfulCallsMustNotBeRepeated": true
+  },
+  "recommendation": "Request one further explicitly authorized isolated pass-a attempt with direct JSON drafting rather than executable JavaScript array construction. Retain pass-b, source, inventory, and all six completed audio checks. Do not infer this extra attempt from the exhausted approval."
+}

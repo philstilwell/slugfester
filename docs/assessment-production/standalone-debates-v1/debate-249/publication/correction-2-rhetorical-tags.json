@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "1e656a08b011bb643ed7f496ed6cf3956d7cdae5a8b8bf69123b011ebbb61dc1",
+    "bytes": 91254
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[2].exchanges[0].pro.tags",
+        "candidate.sections[4].exchanges[0].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[4].exchanges[1].pro.tags",
+        "candidate.sections[4].exchanges[2].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[5].exchanges[0].pro.tags",
+        "candidate.overall.pro.blunders[0].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.overall.pro.blunders[1].links",
+        "candidate.overall.pro.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 5,
+    "overallBlunderLinkChanges": 4,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/output.json",
+      "sha256": "32e73fe21926d3db51272ad8ec77b1141aec529bd6c50d3c4892c1ade7593371",
+      "bytes": 93636
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-audit.json",
+      "sha256": "eeffca81dcde7a13f28f8e2190896ece6b5b5176178f5df4314df7e0b69662e5",
+      "bytes": 150877
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "7b89eec191f08380f209ff29b79960fda348dc2f64a71b456fa7bdc829b78654",
+      "bytes": 103356
+    }
+  }
+}

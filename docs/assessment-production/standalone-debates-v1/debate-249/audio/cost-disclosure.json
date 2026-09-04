@@ -1,0 +1,25 @@
+{
+  "status": "disclosed-awaiting-user-authorization",
+  "debateNumber": "249",
+  "videoId": "zqupGKqcPck",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/audio/plan.json",
+    "sha256": "593891c2f7202e808cfe2b4385f8b23414d37689aa3ce8e5203eacf90090641c",
+    "bytes": 38330
+  },
+  "requiredClips": 45,
+  "expectedCostUsd": 0.4803723,
+  "conservativePlanningAllowanceUsd": 4.5,
+  "standingAutomaticMaximumUsd": 1,
+  "userHasAuthorizedAdditionalAllowance": false,
+  "paidCallsMade": 0,
+  "knownSuccessfulCallCostUsd": 0,
+  "maximumPotentialCombinedCostUsd": 0,
+  "disclosure": "Expected charge about $0.48; conservative allowance $4.50 for 45 separate speaker-verification calls, one attempt per clip and no paid retries. Explicit additional permission requested before any paid call.",
+  "calculation": "80.06205 minutes including source context and two six-second voice references per call, at the published comparable transcription estimate $0.006/minute. Conservative allowance uses 16,000 input and 6,000 output tokens per call at $2.50/$10.00 per million. The allowance is a planning safeguard, not a server-enforced cap or expected invoice.",
+  "pricingSources": [
+    "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "https://developers.openai.com/api/docs/pricing"
+  ],
+  "localPreparationDirectCostUsd": 0
+}

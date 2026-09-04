@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "tuesday-external-reasons",
+    "unusual-goals-not-irrational",
+    "consensus-intuitive-warrant",
+    "survey-representativeness",
+    "reflection-expertise",
+    "sociological-consensus-caution",
+    "idealized-self-authority",
+    "present-values-condition-advice",
+    "semantic-naturalist-defense",
+    "semantics-needs-empirical-study",
+    "reflection-utilitarian-prediction",
+    "sacrificial-dilemma-validity",
+    "two-paths-to-utilitarian-judgment",
+    "psychological-convergence-alternative",
+    "minority-view-counterevidence",
+    "specialist-disagreement-utilitarianism",
+    "counterintuitive-cases-prediction",
+    "human-attitudes-versus-external-tests",
+    "rational-impartial-description",
+    "realism-intelligibility-challenge",
+    "primitive-reasons-not-unique",
+    "instrumental-definition-not-authority",
+    "unintelligible-to-me-not-everyone",
+    "alien-parity-objection",
+    "predictive-contact-breaks-loop",
+    "interdefining-conceptual-loop",
+    "introspective-hedonism",
+    "pain-evaluation-not-independent",
+    "badness-precedes-aversion",
+    "phenomenology-does-not-disclose-independence",
+    "qualia-scope-limitation",
+    "experience-versus-philosophical-inference",
+    "utilitarians-ahead-of-history",
+    "retrospective-agreement-not-truth",
+    "prior-weighted-moral-updating",
+    "cultural-transmission-convergence",
+    "reflection-not-mere-moral-vocabulary",
+    "genealogical-lexicalization-explanation",
+    "environmental-contingency-final-reply",
+    "reasons-need-not-motivate",
+    "desire-independent-authority-challenge",
+    "conditional-detector-acceptance",
+    "epistemic-parity-denied",
+    "anti-realist-parity-acknowledgment",
+    "conditional-consistency-not-endorsement"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every packet.template field byte-for-byte.",
+    "summary": "18–28 word source-specific comparative summary.",
+    "quotes": {
+      "pro": "{text,context}",
+      "con": "{text,context}"
+    },
+    "sections": "Copy publicationLayout identities/title/timebox/score and convert rows to exchanges [{pro:card or null,con:card or null}]; cards {ledgerMoveId,time,role,words,score,critique,tags:[]} using exact moveDisplayControls. Preserve every move and per-side order.",
+    "overall": "Each side {score:locked overall score,strengths:[3 strings],blunders:[3 {text,links:[]}]}",
+    "logicalExtension": "Each side {finalArgument:{thesis,premises:[5 strings],conclusion,notice},newArguments:[3 {title,text}]}."
+  },
+  "instructions": {
+    "argumentDescriptionTargetWords": [
+      25,
+      28
+    ],
+    "argumentDescriptionAllowedWords": [
+      8,
+      55
+    ],
+    "argumentMeanMinimum": 22.727272727272727,
+    "maximumShareBelow20Words": 0.25,
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "summaryWords": [
+      18,
+      28
+    ],
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 3,
+    "overallItemTargetWords": [
+      18,
+      30
+    ],
+    "newArgumentsPerSide": 3,
+    "premisesPerSide": 5,
+    "representativeQuoteWords": [
+      3,
+      18
+    ],
+    "quoteContextWords": [
+      18,
+      45
+    ],
+    "tagsAndBlunderLinksMustRemainEmptyUntilRhetoricalReview": true,
+    "critiquesExactlyFourLabeledSentences": true,
+    "critiqueRationalesMustBeSourceSpecific": true,
+    "thesisMinimumWords": 12,
+    "premiseMinimumWords": 12,
+    "conclusionMinimumWords": 15,
+    "newArgumentAllowedWords": [
+      45,
+      130
+    ],
+    "newArgumentTargetWords": [
+      90,
+      120
+    ],
+    "ordinaryPunctuationRequired": true,
+    "noGenericBoilerplate": true,
+    "quoteTextMustBeSourceExact": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedArgument": true,
+    "noveltyMapSourceMoveIdsRequired": true,
+    "sourceQuoteAuditMustVerifyBothQuotes": true,
+    "noManualScoreChanges": true
+  },
+  "noveltyMapShape": "8 entries total: each side finalArgument plus newArguments[0], [1], [2]. Each {side,field,path: candidate.logicalExtension.<side>.<field>,sourceMoveIds:[],explanation,hypothetical:true}.",
+  "sourceQuoteAuditShape": "2 entries: {side,speaker,moveId,text,sourcePath: final ledger path,transcriptPath,startEvent,endEvent,startMs,endMs,quoteEligibleExactSpan,exactMatch:true}; quote text must be exact substring of that move quoteEligibleExactSpans."
+}
