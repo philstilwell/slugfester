@@ -11750,5 +11750,58 @@ export const debateSummaries = [
         "title": "Hypostatic union and theological predication"
       }
     ]
+  },
+  {
+    "id": "adelstein-bush-moral-realism-2021",
+    "number": "249",
+    "title": "Matthew Adelstein vs Lance Bush: Moral Realism",
+    "year": 2021,
+    "label": "Moral realism and reflective judgment",
+    "date": "2026-09-03",
+    "duration": "2 hr 49 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zqupGKqcPck",
+    "motion": "Are there stance-independent moral facts?",
+    "summary": "Adelstein offers reflective and experiential evidence for realism; Bush more effectively challenges its interpretation, while both distinguish hypothetical consistency from harmful endorsement.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Stance-independent moral facts exist",
+        "speaker": "Matthew Adelstein",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Stance-independent moral facts do not exist",
+        "speaker": "Lance Bush",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 86,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Intuitions and Philosophical Agreement"
+      },
+      {
+        "title": "Idealized Desires and Naturalism"
+      },
+      {
+        "title": "Reflection and Empirical Predictions"
+      },
+      {
+        "title": "Intelligibility of Primitive Reasons"
+      },
+      {
+        "title": "Pain and First-Person Experience"
+      },
+      {
+        "title": "Historical Convergence and Cultural Origins"
+      },
+      {
+        "title": "Normative Authority and Motivation"
+      }
+    ]
   }
 ];

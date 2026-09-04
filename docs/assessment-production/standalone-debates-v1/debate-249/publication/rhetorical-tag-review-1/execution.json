@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "736e8cf3ff7b4d026ee352859fbdf184f2dede68624d032f0202f82c00bc63d5",
+    "bytes": 165579
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_249_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "736e8cf3ff7b4d026ee352859fbdf184f2dede68624d032f0202f82c00bc63d5",
+        "bytes": 165579
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "8b77b64af44419fc5253a64ad01c2cff875cd9c46de220c3113ec2b42ca882bb",
+        "bytes": 38843
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_249_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "736e8cf3ff7b4d026ee352859fbdf184f2dede68624d032f0202f82c00bc63d5",
+        "bytes": 165579
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "f6cc5dde33e9065c945b1c1663dc9b3365d07634226160d72a4d76957c589ed5",
+        "bytes": 37629
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_249_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "4ace16ebd46a3f52a0730137cefa93d49054578193788d87dfc7beaae381e2b8",
+        "bytes": 245414
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "33c93679ce18cc054694ccf981518251927876f77e525bd0006ee92e45f72c29",
+        "bytes": 30367
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 74
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-04T04:11:59.883Z"
+}

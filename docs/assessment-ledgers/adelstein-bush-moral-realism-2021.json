@@ -1,0 +1,935 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/zqupGKqcPck/captions.srv3.xml",
+      "sha256": "3749a10faa3928234ee77e41c4e0fe3687bf8f68a63ff94555ed675aa5af4083",
+      "bytes": 1234341
+    },
+    "events": {
+      "path": ".assessment-cache/captions/zqupGKqcPck/events.json",
+      "sha256": "e10ef72fde209da0daa9a1867043ef8f069072f1d4df968ef1b98c357c264601",
+      "bytes": 510702
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/zqupGKqcPck/transcript.txt",
+      "sha256": "77ec48aefee5f00ed08a2bb5e9d20068d0139416db4f8fd6ab1c80984d2063b9",
+      "bytes": 208435
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/zqupGKqcPck/manifest.json",
+      "sha256": "f7abd14a93bc4e570be8d696dd6333657c2008dac3ee151783bf707a686915a1",
+      "bytes": 989
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/source/source-lock.json",
+      "sha256": "b5cb872b33f4968c692c0e06af1e88c688a2a89aa3ff78be4d8f143666321934",
+      "bytes": 4268
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/authorization.json",
+      "sha256": "9300b974b8afe65ecd6d2c82c10850bc6fa4a4ddd2882577e92cf652ee0a3287",
+      "bytes": 3384
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/inventory/inventory.json",
+      "sha256": "80880f9093ca100a799c2418788f8360a6ab983439c1184f8165d8c58bef8841",
+      "bytes": 190806
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/authorization.json",
+      "sha256": "9300b974b8afe65ecd6d2c82c10850bc6fa4a4ddd2882577e92cf652ee0a3287",
+      "bytes": 3384
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/manifest.json",
+      "sha256": "d7e5a1d32ce92969245d5f1032fe77cfb5bac85cefda8201aadc97bbe90e3a00",
+      "bytes": 7239
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/source/source-lock.json",
+      "sha256": "b5cb872b33f4968c692c0e06af1e88c688a2a89aa3ff78be4d8f143666321934",
+      "bytes": 4268
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/inventory/inventory.json",
+      "sha256": "80880f9093ca100a799c2418788f8360a6ab983439c1184f8165d8c58bef8841",
+      "bytes": 190806
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/judgment-packet.json",
+      "sha256": "5426e333d1edb8dfbaeb426e8cc8957eaeccaeed738df752d28989d2c0ebd76a",
+      "bytes": 4932
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/execution.json",
+      "sha256": "a9c6bb28f28492c048fa7b8f8318f9e74df924daae3d1fb3bfc814973ff2abb9",
+      "bytes": 4539
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-a/output.json",
+      "sha256": "29a08d8b805b829755c9af81d6194e89aa399c632a01aec0d08b3207b28b8c12",
+      "bytes": 61403
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/judgments/pass-b/output.json",
+      "sha256": "3b06c8aa41fc4588e147f12370b7f657bb641e9b7de716676260640df25f2658",
+      "bytes": 71319
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/disagreements/disagreements.json",
+      "sha256": "cd15a7113caa41e386c552cc93ca97f98ebff82e4bf72412c00add45e99069b6",
+      "bytes": 12244
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/audio/audio-verification.json",
+      "sha256": "64fcffc8108dcbdbcbc4605c84fecd43e273f62704c573a0b1fcb71776c3d649",
+      "bytes": 378434
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/adjudication/packet.json",
+      "sha256": "220baa4e6dbdde9689f6b6929c2a4a52a205dee6974c1d00c310dccfc24a929c",
+      "bytes": 13364
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/adjudication/output.json",
+      "sha256": "a52346294c0884d0fb5731498adf6b26fe023fa277d6333530946f0f4239b35e",
+      "bytes": 2468
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/final-ledger/final-ledger.json",
+      "sha256": "633b78ffcde6f8029163f1dba4ff20596ce309797dd8a497530a5f3db0ee6d1f",
+      "bytes": 346441
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/score-pass/input.json",
+      "sha256": "c8907f39155677a5069c8fa46517561c76e5d046f8434fca120927eb84c5dfcc",
+      "bytes": 952
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/score-pass/output.json",
+      "sha256": "8087f3dfd1eaedebcfccde829c31b738edd06dd662d2c7bafc8d0323010e7f30",
+      "bytes": 22576
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/score-pass/attestation.json",
+      "sha256": "9dbf3994ce1ab70b11a954ab2e25f3e732b24a121eb0ba3ba94950a581f92450",
+      "bytes": 820
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/output.json",
+      "sha256": "32e73fe21926d3db51272ad8ec77b1141aec529bd6c50d3c4892c1ade7593371",
+      "bytes": 93636
+    },
+    "events": {
+      "path": ".assessment-cache/captions/zqupGKqcPck/events.json",
+      "sha256": "e10ef72fde209da0daa9a1867043ef8f069072f1d4df968ef1b98c357c264601",
+      "bytes": 510702
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/zqupGKqcPck/transcript.txt",
+      "sha256": "77ec48aefee5f00ed08a2bb5e9d20068d0139416db4f8fd6ab1c80984d2063b9",
+      "bytes": 208435
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/correction-1-content-parity.json",
+      "sha256": "2eb3c6a5469a3fd7917400b0e4cfa2b640cc05695fe03453577c7815e9b4579b",
+      "bytes": 2689
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/raw-prose-output-1.json",
+      "sha256": "9d116ec7eba2a3344cc89486e0ba0eefc96e1a04e0320dacbf60ff284dad273d",
+      "bytes": 84363
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/content-parity-audit.json",
+      "sha256": "c645a6ed6339de4e03d03bba75ba5a15124458dd6c6f85a08af3898950831fbf",
+      "bytes": 7681
+    },
+    "publicationContentParityExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/length-repair-1/execution.json",
+      "sha256": "df59ef6c00863fcb1162b6b419efde4546745cdf23f8c832554cde607fd6e2a8",
+      "bytes": 13028
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/correction-2-rhetorical-tags.json",
+      "sha256": "bf43b91564780ef2b0f023aa79c43a806a9b7afa5dadbb5a67fb469699fd84fd",
+      "bytes": 2456
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-audit.json",
+      "sha256": "eeffca81dcde7a13f28f8e2190896ece6b5b5176178f5df4314df7e0b69662e5",
+      "bytes": 150877
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "659197464544c3dbf946e488fb71230f1fabb9ea121cd8cdb719e1f83664c0e0",
+      "bytes": 3395
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "249",
+    "debateId": "adelstein-bush-moral-realism-2021",
+    "sections": [
+      {
+        "sectionId": "intuitions-consensus",
+        "title": "Intuitions and Philosophical Agreement",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "tuesday-external-reasons",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 74
+                },
+                "score": 77
+              },
+              {
+                "moveId": "consensus-intuitive-warrant",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 77,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 88
+                },
+                "score": 74
+              },
+              {
+                "moveId": "reflection-expertise",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 83,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 82
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "unusual-goals-not-irrational",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 87,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 87
+                },
+                "score": 84
+              },
+              {
+                "moveId": "survey-representativeness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 94
+                },
+                "score": 91
+              },
+              {
+                "moveId": "sociological-consensus-caution",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 78
+                },
+                "score": 79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "idealized-desires",
+        "title": "Idealized Desires and Naturalism",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "idealized-self-authority",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 82,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 85
+                },
+                "score": 76
+              },
+              {
+                "moveId": "semantic-naturalist-defense",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 80,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 85
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "present-values-condition-advice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 81
+                },
+                "score": 84
+              },
+              {
+                "moveId": "semantics-needs-empirical-study",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 89,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 77
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "reflective-predictions",
+        "title": "Reflection and Empirical Predictions",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "reflection-utilitarian-prediction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 86,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 80
+                },
+                "score": 80
+              },
+              {
+                "moveId": "two-paths-to-utilitarian-judgment",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 82,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 87
+                },
+                "score": 81
+              },
+              {
+                "moveId": "minority-view-counterevidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 89,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 82
+              },
+              {
+                "moveId": "counterintuitive-cases-prediction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 84,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 82
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "sacrificial-dilemma-validity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 93,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 92
+                },
+                "score": 90
+              },
+              {
+                "moveId": "psychological-convergence-alternative",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 81
+                },
+                "score": 85
+              },
+              {
+                "moveId": "specialist-disagreement-utilitarianism",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 94,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 91
+                },
+                "score": 91
+              },
+              {
+                "moveId": "human-attitudes-versus-external-tests",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 93,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 84
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "primitive-reasons",
+        "title": "Intelligibility of Primitive Reasons",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "rational-impartial-description",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 81,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 79
+                },
+                "score": 74
+              },
+              {
+                "moveId": "primitive-reasons-not-unique",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 82,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 80
+                },
+                "score": 77
+              },
+              {
+                "moveId": "unintelligible-to-me-not-everyone",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 89,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 88
+                },
+                "score": 86
+              },
+              {
+                "moveId": "predictive-contact-breaks-loop",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 89,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 81
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "realism-intelligibility-challenge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 84,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 64
+                },
+                "score": 76
+              },
+              {
+                "moveId": "instrumental-definition-not-authority",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 93,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 94,
+                  "calibrationCharity": 91
+                },
+                "score": 91
+              },
+              {
+                "moveId": "alien-parity-objection",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 78
+                },
+                "score": 86
+              },
+              {
+                "moveId": "interdefining-conceptual-loop",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 89,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 73
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "pain-experience",
+        "title": "Pain and First-Person Experience",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "introspective-hedonism",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 72,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 80
+                },
+                "score": 74
+              },
+              {
+                "moveId": "badness-precedes-aversion",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 82,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 78
+                },
+                "score": 74
+              },
+              {
+                "moveId": "qualia-scope-limitation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 75,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 86
+                },
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "pain-evaluation-not-independent",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 92,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 93,
+                  "calibrationCharity": 94
+                },
+                "score": 90
+              },
+              {
+                "moveId": "phenomenology-does-not-disclose-independence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 83
+                },
+                "score": 86
+              },
+              {
+                "moveId": "experience-versus-philosophical-inference",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 86
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "historical-convergence",
+        "title": "Historical Convergence and Cultural Origins",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "utilitarians-ahead-of-history",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 78
+                },
+                "score": 77
+              },
+              {
+                "moveId": "prior-weighted-moral-updating",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 75,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 82
+                },
+                "score": 77
+              },
+              {
+                "moveId": "reflection-not-mere-moral-vocabulary",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 89,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 83
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "retrospective-agreement-not-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 87
+                },
+                "score": 89
+              },
+              {
+                "moveId": "cultural-transmission-convergence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 87
+                },
+                "score": 89
+              },
+              {
+                "moveId": "genealogical-lexicalization-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 85,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 81
+                },
+                "score": 80
+              },
+              {
+                "moveId": "environmental-contingency-final-reply",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 79,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 82
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "normative-authority",
+        "title": "Normative Authority and Motivation",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "reasons-need-not-motivate",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 91,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 85
+                },
+                "score": 86
+              },
+              {
+                "moveId": "conditional-detector-acceptance",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 92
+                },
+                "score": 88
+              },
+              {
+                "moveId": "anti-realist-parity-acknowledgment",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 94,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 96
+                },
+                "score": 91
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "desire-independent-authority-challenge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 79
+                },
+                "score": 81
+              },
+              {
+                "moveId": "epistemic-parity-denied",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 92,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 76
+                },
+                "score": 86
+              },
+              {
+                "moveId": "conditional-consistency-not-endorsement",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 96,
+                  "evidenceWarrant": 91,
+                  "responsiveness": 96,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 96,
+                  "calibrationCharity": 98
+                },
+                "score": 93
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 79.04,
+        "burdenCompletionAdjustment": 0,
+        "score": 79
+      },
+      "con": {
+        "weightedSectionMean": 85.94,
+        "burdenCompletionAdjustment": 0,
+        "score": 86
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.25,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 45,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

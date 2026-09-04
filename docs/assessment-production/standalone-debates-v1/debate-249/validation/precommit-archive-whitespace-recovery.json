@@ -1,0 +1,10 @@
+{
+  "status": "fixed-at-source-without-changing-original-bytes",
+  "failedCommand": "git diff --cached --check",
+  "diagnostic": [
+    "tmp-standalone-publication-controller.mjs.txt:45: new blank line at EOF",
+    "tmp-standalone-stage-controller.mjs.txt:81: new blank line at EOF"
+  ],
+  "cause": "Exact inert controller copies retained trailing blank lines from their temporary executable originals.",
+  "repair": "Losslessly gzip only these two archival copies; verify decompressed bytes equal original bytes; record compressed and original hashes. No whitespace rule, test limit, assessment or publication content changed."
+}

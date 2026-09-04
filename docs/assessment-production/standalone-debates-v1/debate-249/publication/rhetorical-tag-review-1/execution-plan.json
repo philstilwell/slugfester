@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "736e8cf3ff7b4d026ee352859fbdf184f2dede68624d032f0202f82c00bc63d5",
+      "bytes": 165579
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/zqupGKqcPck/transcript.txt",
+      "sha256": "77ec48aefee5f00ed08a2bb5e9d20068d0139416db4f8fd6ab1c80984d2063b9",
+      "bytes": 208435
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-249/audio/audio-verification.json",
+      "sha256": "64fcffc8108dcbdbcbc4605c84fecd43e273f62704c573a0b1fcb71776c3d649",
+      "bytes": 378434
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_249_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_249_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-249/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}

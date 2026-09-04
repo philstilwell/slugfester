@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "1.0-bounded-publication-length-repair",
+  "status": "frozen-before-execution",
+  "debateNumber": "249",
+  "debateId": "adelstein-bush-moral-realism-2021",
+  "ordinal": 8,
+  "motion": "Are there stance-independent moral facts?",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "sourcePublication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/raw-prose-output-1.json",
+    "sha256": "9d116ec7eba2a3344cc89486e0ba0eefc96e1a04e0320dacbf60ff284dad273d",
+    "bytes": 84363
+  },
+  "validation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/publication/initial-validation.json",
+    "sha256": "f73d2a3241a36b39590b7f82ae7f770581898dac7cdd7d54895c5a5317008459",
+    "bytes": 10001
+  },
+  "frozenLedger": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-249/final-ledger/final-ledger.json",
+    "sha256": "633b78ffcde6f8029163f1dba4ff20596ce309797dd8a497530a5f3db0ee6d1f",
+    "bytes": 346441
+  },
+  "fields": [
+    {
+      "path": "candidate.sections[5].exchanges[0].con.critique",
+      "sectionIndex": 5,
+      "exchangeIndex": 0,
+      "side": "con",
+      "moveId": "retrospective-agreement-not-truth",
+      "text": "Strongest feature: Bush explains why a community with convergent values would retrospectively endorse earlier allies regardless of realism, expressly allowing agreement with Bentham and Mill while denying that this agreement establishes their objective correctness. Principal limitation: Showing compatibility with anti-realism does not quantify how probable the entire historical pattern is under competing explanations, so equal consistency should not silently become a demonstration of equal evidential likelihood. Live burden: The comparison must distinguish retrospective approval from independently assessed progress and examine whether the timing, breadth, and content of utilitarian anticipation are better explained by truth tracking or ordinary historical mechanisms. Locked score: The preserved 89 reflects a direct challenge to the decisive historical inference and careful separation of agreement from independent truth, with a remaining limitation concerning comparative probability rather than the basic relevance of the countermodel.",
+      "score": 89,
+      "originalWords": 136,
+      "evidence": {
+        "moveId": "retrospective-agreement-not-truth",
+        "sectionId": "historical-convergence",
+        "side": "con",
+        "speaker": "Lance Bush",
+        "moveKind": "reply",
+        "claim": "Later societies would praise earlier people who shared their values even if convergence were unrelated to objective truth.",
+        "inferentialBridge": "Retrospective agreement is compatible with stance-dependent evaluation and does not independently establish progress.",
+        "importance": 3,
+        "attributionConfidence": "medium",
+        "attributionRationale": "The unlabeled automatic captions and alternating argumentative positions support this attribution; overlapping transitions and transcription errors require later audio confirmation.",
+        "sourceSpan": {
+          "startEvent": 3359,
+          "endEvent": 3386,
+          "startMs": 6884719,
+          "endMs": 6940800,
+          "excerpt": "that's just as consistent with anti-realism so i the anti-realist would say that if people tend to converge on shared values over time for reasons unrelated to the detecting of stance independent moral facts that in retrospect they would look back on people that agreed with them as being correct of course they would uh like so like i agree with bentham and mill but i don't have to think that they were they were like objectively correct so if over time society tends to like whatever sociological and psychological and anthropological forces drive people towards a convergence in their values of course they're going to look back and reflect on people that had those values early on and say yeah they had the right values you know you know even in an anti-realist sense uh so like it just seems equally consistent with anti-realism nothing about anti-realism entails that people shouldn't tend to converge on the same values over time"
+        },
+        "quoteEligibleExactSpans": [],
+        "respondsToIds": [
+          "utilitarians-ahead-of-history"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "utilitarians-ahead-of-history",
+            "componentId": "retrospective-agreement-not-truth-response",
+            "description": "Retrospective agreement is compatible with stance-dependent evaluation and does not independently establish progress."
+          }
+        ],
+        "burdenContact": {
+          "bridgeId": "con-explanation",
+          "tier": "central",
+          "rationale": "Retrospective agreement is compatible with stance-dependent evaluation and does not independently establish progress."
+        },
+        "judgments": {
+          "passA": {
+            "moveId": "retrospective-agreement-not-truth",
+            "assessmentConfidence": "medium",
+            "dimensions": {
+              "logicalCoherence": {
+                "value": 91,
+                "rationale": "Later communities would praise earlier agreement even without independent moral facts, so retrospective approval does not itself establish truth detection."
+              },
+              "evidenceWarrant": {
+                "value": 82,
+                "rationale": "The countermodel directly accounts for retrospective praise, although it does not quantify whether the entire convergence pattern is equally expected."
+              },
+              "responsiveness": {
+                "value": 94,
+                "rationale": "He targets exactly the step from utilitarians being ahead of current opinion to their objective correctness."
+              },
+              "relevanceBurden": {
+                "value": 91,
+                "rationale": "The reply substantially blocks the offered historical inference while correctly allowing agreement with Bentham and Mill under anti-realism."
+              },
+              "precisionClarity": {
+                "value": 93,
+                "rationale": "Personal agreement, retrospective correctness claims and stance-independent truth are explicitly kept distinct."
+              },
+              "calibrationCharity": {
+                "value": 86,
+                "rationale": "He concedes shared values with the examples and makes a conditional countermodel, though equal consistency alone does not establish equal likelihood."
+              }
+            }
+          },
+          "passB": {
+            "moveId": "retrospective-agreement-not-truth",
+            "assessmentConfidence": "medium",
+            "dimensions": {
+              "logicalCoherence": {
+                "value": 89,
+                "rationale": "A society can retrospectively approve its predecessors without objective truth, so the claimed pattern does not entail progress."
+              },
+              "evidenceWarrant": {
+                "value": 81,
+                "rationale": "The countermodel relies on the ordinary relation between current values and retrospective praise, rather than an unsupported historical statistic."
+              },
+              "responsiveness": {
+                "value": 90,
+                "rationale": "Bush directly addresses the inferential move from later approval of utilitarians to independent correctness."
+              },
+              "relevanceBurden": {
+                "value": 86,
+                "rationale": "It strongly limits what historical agreement alone establishes, while equal compatibility does not settle comparative probability."
+              },
+              "precisionClarity": {
+                "value": 91,
+                "rationale": "Agreement with Bentham and Mill is expressly separated from belief in their objective correctness."
+              },
+              "calibrationCharity": {
+                "value": 87,
+                "rationale": "He retains his own favorable normative judgment while rejecting its use as a neutral historical truth test."
+              }
+            }
+          }
+        },
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 89,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 92,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 87,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "assessmentConfidence": "medium"
+      }
+    },
+    {
+      "path": "candidate.sections[5].exchanges[1].con.critique",
+      "sectionIndex": 5,
+      "exchangeIndex": 1,
+      "side": "con",
+      "moveId": "cultural-transmission-convergence",
+      "text": "Strongest feature: Bush correctly distinguishes anti-realism itself from the positive psychological and social explanations available alongside it, using communication-driven convergence in music, clothing, and food to make a transmission mechanism intelligible. Principal limitation: Those analogies do not establish that cultural diffusion sufficiently explains the particular moral and reflective patterns cited, so the substantive empirical question remains broader than demonstrating familiar convergence in other domains. Live burden: The alternative account must identify which transmission processes generate the moral observations and compare their explanatory reach with realist predictions, rather than treating the denial of independent facts as a complete causal model. Locked score: The unchanged 89 recognizes a major clarification of comparative burdens, concrete explanatory development, and acknowledgment that empirical mechanisms need investigation, while preserving uncertainty about the proposed mechanism's full sufficiency for moral convergence.",
+      "score": 89,
+      "originalWords": 133,
+      "evidence": {
+        "moveId": "cultural-transmission-convergence",
+        "sectionId": "historical-convergence",
+        "side": "con",
+        "speaker": "Lance Bush",
+        "moveKind": "reply",
+        "claim": "Anti-realism is a denial, not a causal theory; cultural transmission can explain convergence as it does food, music and dress.",
+        "inferentialBridge": "The appropriate rival explanations are psychological and social mechanisms, not the bare denial of moral facts.",
+        "importance": 3,
+        "attributionConfidence": "medium",
+        "attributionRationale": "The unlabeled automatic captions and alternating argumentative positions support this attribution; overlapping transitions and transcription errors require later audio confirmation.",
+        "sourceSpan": {
+          "startEvent": 3416,
+          "endEvent": 3466,
+          "startMs": 6991360,
+          "endMs": 7095199,
+          "excerpt": "anti-realism is just saying that there are no stance independent moral facts that wouldn't be the driving explanation for why people would converge on the same a shared set of values we would that you know the anti-realist would appeal to if they wanted to explain this and it'd be a good idea for them to do it you know if we observe that over time people come to share similar moral values uh they would appeal to psychological and anthropological and sociological facts and those that those might all just be you know the entailments of understand you know comprehensible and mundane psychological phenomena that would explain it and then we would never have any need to posit moral realism as a sort of additional explanation uh the question would be what those empirical facts are so you know for instance people over time have converged on listening to similar music so there's pop music is now available all over the world people are listening to drake and taylor swift uh people wear blue jeans all over the world they have cell phones they like similar food pizzas gotten everywhere i don't take that to be especially good evidence or to be best explained by like music realism and aesthetic realism and gastronomic realism we can explain why people would converge on similar preferences in the non-moral domains by appeal to cultural transmission leading to greater cultural homogeneity to people starting to communicate and interact with one another it all of these things can be explained without appeal to gastronomic stance independent gastronomic facts sense independent facts about what music is good or bad uh you know as people interact and with one another through cultural osmosis people become more homogeneous of course they're gonna have more similar values and that doesn't require appeal to moral facts so"
+        },
+        "quoteEligibleExactSpans": [],
+        "respondsToIds": [
+          "utilitarians-ahead-of-history"
+        ],
+        "responseComponents": [
+          {
+            "targetMoveId": "utilitarians-ahead-of-history",
+            "componentId": "cultural-transmission-convergence-response",
+            "description": "The appropriate rival explanations are psychological and social mechanisms, not the bare denial of moral facts."
+          }
+        ],
+        "burdenContact": {
+          "bridgeId": "con-explanation",
+          "tier": "central",
+          "rationale": "The appropriate rival explanations are psychological and social mechanisms, not the bare denial of moral facts."
+        },
+        "judgments": {
+          "passA": {
+            "moveId": "cultural-transmission-convergence",
+            "assessmentConfidence": "medium",
+            "dimensions": {
+              "logicalCoherence": {
+                "value": 90,
+                "rationale": "A denial need not be a causal theory, and transmission can explain convergent preferences without adding objective evaluative facts."
+              },
+              "evidenceWarrant": {
+                "value": 81,
+                "rationale": "Music, jeans and food provide concrete convergence analogies and communication supplies a mechanism, though its moral explanatory sufficiency remains untested."
+              },
+              "responsiveness": {
+                "value": 93,
+                "rationale": "He directly corrects comparison with bare anti-realism and offers the social mechanisms that should instead be assessed against realism."
+              },
+              "relevanceBurden": {
+                "value": 92,
+                "rationale": "The move properly scopes the critical burden and materially develops an alternative to the proposed historical truth-tracking explanation."
+              },
+              "precisionClarity": {
+                "value": 93,
+                "rationale": "The distinction between anti-realism's denial and the positive social explanations available alongside it is explicit and stable."
+              },
+              "calibrationCharity": {
+                "value": 87,
+                "rationale": "He admits the empirical question of which facts explain convergence and says developing an explanation is useful rather than pretending denial alone suffices."
+              }
+            }
+          },
+          "passB": {
+            "moveId": "cultural-transmission-convergence",
+            "assessmentConfidence": "medium",
+            "dimensions": {
+              "logicalCoherence": {
+                "value": 90,
+                "rationale": "A denial of moral facts is not itself a causal model; cultural transmission coherently supplies a separate explanation of convergence."
+              },
+              "evidenceWarrant": {
+                "value": 80,
+                "rationale": "Music, dress, and food examples make the proposed mechanism concrete, though its exact moral application is not empirically traced here."
+              },
+              "responsiveness": {
+                "value": 92,
+                "rationale": "The reply meets the claim that anti-realism supplies no expectation of convergence by identifying appropriate auxiliary explanations."
+              },
+              "relevanceBurden": {
+                "value": 88,
+                "rationale": "It correctly resists an invented burden to derive social change from the bare denial of realism."
+              },
+              "precisionClarity": {
+                "value": 91,
+                "rationale": "The distinction between the anti-realist thesis and its possible psychological explanations is explicit."
+              },
+              "calibrationCharity": {
+                "value": 86,
+                "rationale": "Bush offers mundane mechanisms without denying the observed changes, but their sufficiency for every moral pattern is not fully established."
+              }
+            }
+          }
+        },
+        "finalDimensions": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "relevanceBurden": {
+            "value": 90,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "precisionClarity": {
+            "value": 92,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          },
+          "calibrationCharity": {
+            "value": 87,
+            "rationale": "Rounded mean of the two isolated judgments; no field-level adjudication threshold was triggered.",
+            "resolution": "rounded-mean"
+          }
+        },
+        "assessmentConfidence": "medium"
+      }
+    }
+  ],
+  "instructions": {
+    "maximumWritableLeafFields": 2,
+    "oneSubmission": true,
+    "retries": 0,
+    "words": [
+      105,
+      130
+    ],
+    "targetWords": [
+      122,
+      126
+    ],
+    "minimumCharacters": 880,
+    "exactlyFourSentences": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "preserveMeaningQualificationsAndScore": true,
+    "scope": "Shorten only the listed critique strings; do not add claims, tags, or new reasoning. Preserve the source-specific praise, limitation, live burden, and score interpretation. No other file or field is writable.",
+    "validateInMemoryBeforeSubmission": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0",
+    "status": "complete-and-schema-valid",
+    "debateNumber": "249",
+    "ordinal": 8,
+    "repairs": "Exact fields array order [{path,moveId,text}] with only permitted revised critique strings."
+  },
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-249/publication/length-repair-1/shard-08-output.json"
+}
