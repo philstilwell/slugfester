@@ -1,0 +1,255 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-signification-concern:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-signification-concern",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "con-theological-language-revision:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-theological-language-revision",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The source records concessions about primitive natures and unresolved grounding questions, alongside substantive predication replies. These consequences are already represented in the relevant move dimensions; no independent debate-wide adjustment is justified.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-abstract",
+              "pro-unique",
+              "pro-change",
+              "pro-union"
+            ],
+            "completionCriterion": "Assess only the stated conditional burdens and replies across the four substantive issues.",
+            "relatedMoveIds": [
+              "pro-platonism-concession",
+              "pro-virtual-divine-ideas",
+              "pro-concepts-need-conceptual-distinction",
+              "pro-ideal-not-imaginary",
+              "pro-conceptual-explanatory-work",
+              "pro-terminology-not-nonexistence",
+              "pro-nature-identity-uniqueness",
+              "pro-different-natures-equivocal",
+              "pro-transitivity-survives-primitives",
+              "pro-divine-number-brute",
+              "pro-properties-presuppose-distinction",
+              "pro-higher-divinity-participation",
+              "pro-concedes-route-with-costs",
+              "pro-common-divinity-explanation",
+              "pro-perfection-not-explanation",
+              "pro-extrinsic-predication",
+              "pro-stipulation-concession",
+              "pro-tree-counterexample",
+              "pro-intrinsic-knower-extrinsic-contrast",
+              "pro-distinct-hypostatic-relation",
+              "pro-unilateral-union-analogy",
+              "pro-ordinary-extrinsic-language",
+              "pro-christological-predication"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the scored move-level strengths, limitations, and concessions was identified.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "With the move judgments retained, another adjustment would count the same burden successes or limitations a second time."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The limits of the shared-nature proof, the conceptual grounding defense and the union analogies are already evaluated in their individual dimensions. No separate debate-wide completion consequence warrants another adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-abstract",
+              "pro-unique",
+              "pro-change",
+              "pro-union"
+            ],
+            "completionCriterion": "Accommodate abstract content, secure uniqueness and explain divine predication and union consistently with simplicity.",
+            "relatedMoveIds": [
+              "pro-virtual-divine-ideas",
+              "pro-concedes-route-with-costs",
+              "pro-intrinsic-knower-extrinsic-contrast",
+              "pro-unilateral-union-analogy",
+              "pro-christological-predication"
+            ],
+            "distinctConsequence": "No consequence beyond the strengths and remaining bridges evaluated in the selected moves.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "An additional adjustment would count the same proof limitations and compatibility defenses again."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The source contains successful scope corrections and targeted challenges, alongside limited intuitive and textual support. These effects are already assessed in the moves; no separate debate-wide completion consequence warrants an adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-abstract",
+              "con-unique",
+              "con-change",
+              "con-union"
+            ],
+            "completionCriterion": "Assess only the stated conditional burdens and replies across the four substantive issues.",
+            "relatedMoveIds": [
+              "con-uncreated-abstracta",
+              "con-necessary-distinct-dilemma",
+              "con-properties-distinguish-abstracta",
+              "con-plurality-within-intellect",
+              "con-intentional-object-dilemma",
+              "con-numerically-distinct-natures",
+              "con-provisional-nature-identity-concession",
+              "con-primitive-distinctness",
+              "con-nature-level-primitive",
+              "con-person-number-distinction",
+              "con-concedes-explanatory-order",
+              "con-common-divinity-not-lion",
+              "con-resists-higher-genus",
+              "con-inference-not-explanation",
+              "con-causal-ground-uniqueness",
+              "con-stipulated-relational-change",
+              "con-signification-concern",
+              "con-extrinsic-knowledge-challenge",
+              "con-knowledge-scope-not-creator",
+              "con-asymmetric-union-intuition",
+              "con-theological-language-revision",
+              "con-holding-hands-reciprocity",
+              "con-theological-face-value"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the scored move-level strengths, limitations, and concessions was identified.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "With the move judgments retained, another adjustment would count the same burden successes or limitations a second time."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "Joe's limited critical scope, successful identification of the nature-level gap, and remaining intuitive knowledge and union concerns are already reflected in move ratings. No additional uncaptured completion effect is identified.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-abstract",
+              "con-unique",
+              "con-change",
+              "con-union"
+            ],
+            "completionCriterion": "Identify unresolved explanatory or inferential burdens without having to establish Platonism, polytheism or a wholesale disproof.",
+            "relatedMoveIds": [
+              "con-intentional-object-dilemma",
+              "con-nature-level-primitive",
+              "con-extrinsic-knowledge-challenge",
+              "con-holding-hands-reciprocity",
+              "con-theological-face-value"
+            ],
+            "distinctConsequence": "The scope concessions and remaining challenges produce no distinct unscored debate-wide consequence.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Adding a separate burden adjustment would duplicate the treatment of conditional criticism and incomplete supporting bridges."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 46,
+    "disputesExtracted": 4,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/inventory/inventory.json",
+      "sha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json",
+      "sha256": "5f0a4d700f72810cd039eb9ac7bdb8e42cfa48514f138e7ed0a5e667f1fe83cf"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-b/output.json",
+      "sha256": "bd05aa88297a821cd56fd2bf65081be7e5f5e8129c98f961b26ac79181992e2d"
+    }
+  }
+}

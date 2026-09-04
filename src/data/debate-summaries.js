@@ -11697,5 +11697,58 @@ export const debateSummaries = [
         "title": "Scripture and moral disagreement"
       }
     ]
+  },
+  {
+    "id": "tomaszewski-schmid-classical-theism-monotheism-2020",
+    "number": "248",
+    "title": "Christopher Tomaszewski vs Joe Schmid: Classical Theism and Monotheism",
+    "year": 2020,
+    "label": "Classical theism and monotheism",
+    "date": "2026-09-03",
+    "duration": "1 hr 43 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=_6kdwlkceRA",
+    "motion": "Does Thomistic classical theism adequately account for abstract objects, divine uniqueness, and relations to creation?",
+    "summary": "Joe more effectively exposes gaps in the uniqueness arguments; Christopher clarifies conceptual existence and extrinsic predication, with both sides leaving substantive explanatory questions open.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Thomistic classical theism withstands the proposed objections",
+        "speaker": "Christopher Tomaszewski",
+        "color": "teal"
+      },
+      "con": {
+        "name": "The proposed classical-theist explanations remain contestable",
+        "speaker": "Joe Schmid",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Abstract objects, aseity, and conceptualism"
+      },
+      {
+        "title": "Objective distinctions and ideal existence"
+      },
+      {
+        "title": "Identity, natures, and primitive distinction"
+      },
+      {
+        "title": "Divine persons and common divinity"
+      },
+      {
+        "title": "Alternative grounds for monotheism"
+      },
+      {
+        "title": "Extrinsic change and divine knowledge"
+      },
+      {
+        "title": "Hypostatic union and theological predication"
+      }
+    ]
   }
 ];

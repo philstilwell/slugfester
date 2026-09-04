@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 248,
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": false,
+    "isolationMethod": "Retained original isolated pass-a plus one independently isolated replacement pass-b using the exact same frozen score-blind evidence packet; initial pass-b and preliminary downstream cohort preserved separately",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "bd8bd492a58cc8496b00e96ef2bb1bb2ca88f90fc1ce51f2fe1b9ad6da22722d",
+    "inventorySha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": {
+      "pass-a": 1,
+      "pass-b": 2
+    },
+    "retryCountPerPass": {
+      "pass-a": 0,
+      "pass-b": 0
+    },
+    "directIncrementalCostUsd": 0,
+    "recoveryMode": "user-authorized-single-fresh-whole-pass-replacement",
+    "automaticRetries": 0,
+    "additionalReplacementAttempts": 1
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json",
+      "outputSha256": "5f0a4d700f72810cd039eb9ac7bdb8e42cfa48514f138e7ed0a5e667f1fe83cf",
+      "outputBytes": 66041,
+      "judgmentCount": 46,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_248_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-b/output.json",
+      "outputSha256": "bd05aa88297a821cd56fd2bf65081be7e5f5e8129c98f961b26ac79181992e2d",
+      "outputBytes": 71243,
+      "judgmentCount": 46,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 2,
+      "retryCount": 0,
+      "replacementAttemptCount": 1,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-248/judgments/replacement-pass-b-1/output.json"
+      ],
+      "rawReplacementOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/replacement-pass-b-1/output.json",
+        "sha256": "bd05aa88297a821cd56fd2bf65081be7e5f5e8129c98f961b26ac79181992e2d",
+        "bytes": 71243
+      },
+      "agentTask": "/root/judgment_248_b_replacement_1"
+    }
+  ],
+  "completedAt": "2026-09-04T00:39:45.897Z",
+  "audit": {
+    "primaryContexts": 3,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false,
+    "acceptedPrimaryContexts": 2,
+    "sourceSpecificContentValidPasses": 2,
+    "rejectedInitialSecondPassPreserved": true,
+    "passAUnchanged": true,
+    "sourceUnchanged": true,
+    "inventoryUnchanged": true
+  },
+  "recovery": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/recovery/pass-b-replacement-1-authorization.json",
+      "sha256": "26b7134f773cdc89e47ab58048da7c028b832162cfae79539d31b0fbf8d12b78",
+      "bytes": 2955
+    },
+    "plan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/replacement-pass-b-1/execution-plan.json",
+      "sha256": "0e3a91c88e3f1b112441d22a07bd2f7d9337ac8bfdc05b6620c59e842a15239f",
+      "bytes": 2933
+    },
+    "contentReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/replacement-pass-b-1/controller-content-review.json",
+      "sha256": "7cf43b1fdd22cb4c809b7fea950f20486a7b998c4d4a540ceae5ed11363f7081",
+      "bytes": 1453
+    },
+    "preservedFailureCohort": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/recovery/initial-failed-cohort/preservation.json",
+      "sha256": "d0d356766046359d7367455bc4de0a9fae7940410f1cc9086b9a15f8b8a2a8de",
+      "bytes": 2576
+    }
+  }
+}

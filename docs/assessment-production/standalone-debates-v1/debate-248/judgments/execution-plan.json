@@ -1,0 +1,74 @@
+{
+  "status": "frozen-before-execution",
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "freshContextPerPass": true,
+  "forkTurns": "none",
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/judgment-packet.json",
+    "sha256": "bd8bd492a58cc8496b00e96ef2bb1bb2ca88f90fc1ce51f2fe1b9ad6da22722d",
+    "bytes": 5076
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/judgment-packet.json",
+      "sha256": "bd8bd492a58cc8496b00e96ef2bb1bb2ca88f90fc1ce51f2fe1b9ad6da22722d",
+      "bytes": 5076
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/inventory/inventory.json",
+      "sha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8",
+      "bytes": 183103
+    },
+    {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/events.json",
+      "sha256": "06f39fc04a647da0de95d63b76ce810a0b102425f6d8aef96f06bb593d2a3519",
+      "bytes": 329851
+    },
+    {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/transcript.txt",
+      "sha256": "34e687f0df3e06cfb82a2adb1aa7b85189f1972ce773cbfdd46cdaba94235da3",
+      "bytes": 133880
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/judgment_248_a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/judgment_248_b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-b/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

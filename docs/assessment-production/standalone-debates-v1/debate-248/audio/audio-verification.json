@@ -1,0 +1,952 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "completedAt": "2026-09-04T00:39:45.728Z",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/inventory/inventory.json",
+    "sha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8",
+    "bytes": 183103
+  },
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/plan.json",
+    "sha256": "2e2d5a74f93fada9b76619e960df300ffd0d6d5a1d058de45de6f9e8e2452c8d",
+    "bytes": 6982
+  },
+  "controllerReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/controller-review.json",
+    "sha256": "76d889c29e616a90c52caef89f15ae2c666014c5727edabb3553bf439c551b48",
+    "bytes": 2798
+  },
+  "triggeredMoveIds": [
+    "pro-terminology-not-nonexistence",
+    "con-stipulated-relational-change",
+    "con-knowledge-scope-not-creator",
+    "con-theological-face-value"
+  ],
+  "checks": [
+    {
+      "moveId": "pro-terminology-not-nonexistence",
+      "status": "confirmed",
+      "expectedSpeaker": "Christopher Tomaszewski",
+      "confirmedSpeaker": "Christopher Tomaszewski",
+      "method": "gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment and frozen source boundary",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-248/clips/pro-terminology-not-nonexistence.mp3",
+        "sha256": "bf04ec3a6b94c7bb76aee60ca2dea12f685c1b5b3c75cdc956c3bc73131e02c8",
+        "bytes": 437328,
+        "startMs": 1977040,
+        "endMs": 2031560,
+        "durationSeconds": 54.52
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/responses/pro-terminology-not-nonexistence.json",
+        "sha256": "6819350e9255dc9c7929d1633f6d123b3341e16498a34ef639ade2ed8444bbd1",
+        "bytes": 4267
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Christopher is speaker-labeled throughout clip seconds 5.25–46.64, including the entire argument about substituting Joe's definition of real while leaving the theory unchanged. The preceding Joe conclusion and host handoff, and the following Joe agreement, are context only. Frozen evidence and quotation boundaries are unchanged.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " objective of thought.",
+          "speaker": "Joe Schmid",
+          "start": 0,
+          "end": 0.4500000000000002,
+          "id": "seg_0",
+          "absoluteStartMs": 1977040,
+          "absoluteEndMs": 1977490
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Anyway, that was about my minute and a half response.",
+          "speaker": "Joe Schmid",
+          "start": 0.5000000000000002,
+          "end": 2.8,
+          "id": "seg_1",
+          "absoluteStartMs": 1977540,
+          "absoluteEndMs": 1979840
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " We've got 10 seconds left if Chris",
+          "speaker": "A",
+          "start": 2.8,
+          "end": 4.7,
+          "id": "seg_2",
+          "absoluteStartMs": 1979840,
+          "absoluteEndMs": 1981740
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yeah,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 4.7,
+          "end": 4.8500000000000005,
+          "id": "seg_3",
+          "absoluteStartMs": 1981740,
+          "absoluteEndMs": 1981890
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " wants to take",
+          "speaker": "A",
+          "start": 4.8500000000000005,
+          "end": 5.250000000000001,
+          "id": "seg_4",
+          "absoluteStartMs": 1981890,
+          "absoluteEndMs": 1982290
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " so I'll just say like the inference from not real to doesn't literally exist is what I was trying to deny earlier,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 5.250000000000001,
+          "end": 13.050000000000002,
+          "id": "seg_5",
+          "absoluteStartMs": 1982290,
+          "absoluteEndMs": 1990090
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " you know, right?",
+          "speaker": "Christopher Tomaszewski",
+          "start": 13.150000000000002,
+          "end": 14.300000000000002,
+          "id": "seg_6",
+          "absoluteStartMs": 1990190,
+          "absoluteEndMs": 1991340
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I mean, so I guess if you just define real in the way that I think you are, right,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 14.400000000000002,
+          "end": 19.8,
+          "id": "seg_7",
+          "absoluteStartMs": 1991440,
+          "absoluteEndMs": 1996840
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " as being the contrary of non-existent or being the contrary of non-existent.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 19.85,
+          "end": 24.85,
+          "id": "seg_8",
+          "absoluteStartMs": 1996890,
+          "absoluteEndMs": 2001890
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Then, basically,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 25.14,
+          "end": 26.740000000000002,
+          "id": "seg_9",
+          "absoluteStartMs": 2002180,
+          "absoluteEndMs": 2003780
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " you know, I'd have to just go in and use that term to retweak the entire theory of divine simplicity and say, yeah, there are some real distinctions in God,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 27.04,
+          "end": 37.24,
+          "id": "seg_10",
+          "absoluteStartMs": 2004080,
+          "absoluteEndMs": 2014280
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " given Joe Schmid's definition of real,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 37.34,
+          "end": 40.44,
+          "id": "seg_11",
+          "absoluteStartMs": 2014380,
+          "absoluteEndMs": 2017480
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " right?",
+          "speaker": "Christopher Tomaszewski",
+          "start": 40.540000000000006,
+          "end": 40.84,
+          "id": "seg_12",
+          "absoluteStartMs": 2017580,
+          "absoluteEndMs": 2017880
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " That's what I would do. It would be equivalent to the current theory. It would just be using your definition of real.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 41.09,
+          "end": 46.64,
+          "id": "seg_13",
+          "absoluteStartMs": 2018130,
+          "absoluteEndMs": 2023680
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " All",
+          "speaker": "A",
+          "start": 47.412,
+          "end": 47.562,
+          "id": "seg_14",
+          "absoluteStartMs": 2024452,
+          "absoluteEndMs": 2024602
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yeah,",
+          "speaker": "Joe Schmid",
+          "start": 47.562,
+          "end": 47.762,
+          "id": "seg_15",
+          "absoluteStartMs": 2024602,
+          "absoluteEndMs": 2024802
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " right. And.",
+          "speaker": "A",
+          "start": 47.762,
+          "end": 48.112,
+          "id": "seg_16",
+          "absoluteStartMs": 2024802,
+          "absoluteEndMs": 2025152
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I mean, I agree that we're kind of sort of close to hitting a bedrock, but yeah,",
+          "speaker": "Joe Schmid",
+          "start": 48.112,
+          "end": 52.412,
+          "id": "seg_17",
+          "absoluteStartMs": 2025152,
+          "absoluteEndMs": 2029452
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " we can go on.",
+          "speaker": "Joe Schmid",
+          "start": 52.512,
+          "end": 53.711999999999996,
+          "id": "seg_18",
+          "absoluteStartMs": 2029552,
+          "absoluteEndMs": 2030752
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 2768,
+        "input_tokens": 1048,
+        "input_token_details": {
+          "text_tokens": 100,
+          "audio_tokens": 948
+        },
+        "output_tokens": 1720
+      },
+      "directCostUsd": 0.01982,
+      "inventoryChanges": 0
+    },
+    {
+      "moveId": "con-stipulated-relational-change",
+      "status": "confirmed",
+      "expectedSpeaker": "Joe Schmid",
+      "confirmedSpeaker": "Joe Schmid",
+      "method": "gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment and frozen source boundary",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-248/clips/con-stipulated-relational-change.mp3",
+        "sha256": "1405cbe9cfa8b2bd462fd8e5388e315fcec7a00823837aceb0ebe7d23c349d54",
+        "bytes": 426672,
+        "startMs": 4486400,
+        "endMs": 4539600,
+        "durationSeconds": 53.2
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/responses/con-stipulated-relational-change.json",
+        "sha256": "f35e0b6c3aac8c191ff2f7fd988e0a6b0301382e10b197dc192fcfeaf068ab52",
+        "bytes": 4146
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Joe is speaker-labeled throughout the stipulated-definition argument. Christopher's brief acknowledgments at 16.05–16.50 and 25.23–25.63 are distinguished from Joe's reasoning and receive no argumentative credit. The direct no-real-relations consequence is clearly Joe's stated limited claim; no source or inventory correction is needed.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " cambridge change and you said um you said that seemed to you obviously false and i'm going to be a bit cheeky and say that to me it seems obviously true right so the way we defined classical theism or not classical the way we defined cambridge change in the video we explicitly define it at the start and so i can call that a stipulative definition or whatever but",
+          "speaker": "Joe Schmid",
+          "start": 0,
+          "end": 16.05,
+          "id": "seg_0",
+          "absoluteStartMs": 4486400,
+          "absoluteEndMs": 4502450
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Okay.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 16.05,
+          "end": 16.5,
+          "id": "seg_1",
+          "absoluteStartMs": 4502450,
+          "absoluteEndMs": 4502900
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " we defined in the video right we said it's got going from standing in relation r to not standing in relation r right going from standing in relation r to not standing in relation r",
+          "speaker": "Joe Schmid",
+          "start": 16.5,
+          "end": 24.7,
+          "id": "seg_2",
+          "absoluteStartMs": 4502900,
+          "absoluteEndMs": 4511100
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Now,",
+          "speaker": "Joe Schmid",
+          "start": 25.134,
+          "end": 25.234,
+          "id": "seg_3",
+          "absoluteStartMs": 4511534,
+          "absoluteEndMs": 4511634
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Sure.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 25.234,
+          "end": 25.634,
+          "id": "seg_4",
+          "absoluteStartMs": 4511634,
+          "absoluteEndMs": 4512034
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " it simply follows deductively from the no real relations doctrine that God doesn't stand in real relations with creation.",
+          "speaker": "Joe Schmid",
+          "start": 25.634,
+          "end": 30.384,
+          "id": "seg_5",
+          "absoluteStartMs": 4512034,
+          "absoluteEndMs": 4516784
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " It simply follows from that that he doesn't go from standing in relation R to not standing in relation R.",
+          "speaker": "Joe Schmid",
+          "start": 30.684,
+          "end": 34.584,
+          "id": "seg_6",
+          "absoluteStartMs": 4517084,
+          "absoluteEndMs": 4520984
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " And hence, it simply follows from that that God cannot undergo Cambridge change as we explicitly define it in the video.",
+          "speaker": "Joe Schmid",
+          "start": 34.684,
+          "end": 39.934,
+          "id": "seg_7",
+          "absoluteStartMs": 4521084,
+          "absoluteEndMs": 4526334
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " And so it does seem to me obviously true that God cannot undergo Cambridge change as we define it in the video.",
+          "speaker": "Joe Schmid",
+          "start": 40.084,
+          "end": 44.384,
+          "id": "seg_8",
+          "absoluteStartMs": 4526484,
+          "absoluteEndMs": 4530784
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Now, now we're getting into sort of definitional.",
+          "speaker": "Joe Schmid",
+          "start": 44.434,
+          "end": 46.534000000000006,
+          "id": "seg_9",
+          "absoluteStartMs": 4530834,
+          "absoluteEndMs": 4532934
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " That's sort of where I can see you're probably going to push back.",
+          "speaker": "Joe Schmid",
+          "start": 47.184,
+          "end": 49.784000000000006,
+          "id": "seg_10",
+          "absoluteStartMs": 4533584,
+          "absoluteEndMs": 4536184
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Because now,",
+          "speaker": "Joe Schmid",
+          "start": 49.812,
+          "end": 50.262,
+          "id": "seg_11",
+          "absoluteStartMs": 4536212,
+          "absoluteEndMs": 4536662
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I mean, we do have to ask, we have to talk about these certain mixed relations.",
+          "speaker": "Joe Schmid",
+          "start": 50.312,
+          "end": 52.961999999999996,
+          "id": "seg_12",
+          "absoluteStartMs": 4536712,
+          "absoluteEndMs": 4539362
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 2695,
+        "input_tokens": 971,
+        "input_token_details": {
+          "text_tokens": 69,
+          "audio_tokens": 902
+        },
+        "output_tokens": 1724
+      },
+      "directCostUsd": 0.0196675,
+      "inventoryChanges": 0
+    },
+    {
+      "moveId": "con-knowledge-scope-not-creator",
+      "status": "confirmed",
+      "expectedSpeaker": "Joe Schmid",
+      "confirmedSpeaker": "Joe Schmid",
+      "method": "gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment and frozen source boundary",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-248/clips/con-knowledge-scope-not-creator.mp3",
+        "sha256": "562c320d036db606dea2bf4c4c9cf6091faa185fc8002cc7d4ac8a6743a277f6",
+        "bytes": 279216,
+        "startMs": 4892760,
+        "endMs": 4927520,
+        "durationSeconds": 34.76
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/responses/con-knowledge-scope-not-creator.json",
+        "sha256": "6668eae86c20e421189c9472cece3fbd5b8c778bde6dd26eaef89edeb6b3645f",
+        "bytes": 3612
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Joe's qualified refusal of the creator objection and preference for the knowledge objection are labeled at 5.75–26.40. Christopher's preceding prompt, brief acknowledgment, and resumption from 26.65 onward are context only. The transcription's minor garbling of the final relation phrase is not imported into the locked captions or treated as additional argument.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " say you know going from not being a creator to being a creator when the world comes into existence um",
+          "speaker": "Christopher Tomaszewski",
+          "start": 0,
+          "end": 5.749999999999999,
+          "id": "seg_0",
+          "absoluteStartMs": 4892760,
+          "absoluteEndMs": 4898510
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Yeah, that one I'm not too sure about.",
+          "speaker": "Joe Schmid",
+          "start": 5.749999999999999,
+          "end": 7.099999999999999,
+          "id": "seg_1",
+          "absoluteStartMs": 4898510,
+          "absoluteEndMs": 4899860
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Ryan is really big on that one.",
+          "speaker": "Joe Schmid",
+          "start": 7.449999999999998,
+          "end": 9.049999999999999,
+          "id": "seg_2",
+          "absoluteStartMs": 4900210,
+          "absoluteEndMs": 4901810
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I don't know. I'm not entirely certain on that one. I like to go with knowledge because it seems to me, I don't know, creator,",
+          "speaker": "Joe Schmid",
+          "start": 9.1,
+          "end": 14.2,
+          "id": "seg_3",
+          "absoluteStartMs": 4901860,
+          "absoluteEndMs": 4906960
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " like that seems to be some sort of like, I don't know,",
+          "speaker": "Joe Schmid",
+          "start": 14.299999999999999,
+          "end": 16.5,
+          "id": "seg_4",
+          "absoluteStartMs": 4907060,
+          "absoluteEndMs": 4909260
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " extrinsic designation.",
+          "speaker": "Joe Schmid",
+          "start": 16.55,
+          "end": 17.2,
+          "id": "seg_5",
+          "absoluteStartMs": 4909310,
+          "absoluteEndMs": 4909960
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " But when we talk about knowledge,",
+          "speaker": "Joe Schmid",
+          "start": 17.65,
+          "end": 18.9,
+          "id": "seg_6",
+          "absoluteStartMs": 4910410,
+          "absoluteEndMs": 4911660
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " it seems though in some sense we're talking about God or at least a relation to God's hands. And so I just wanted to interject that I'm not actually sure about that.",
+          "speaker": "Joe Schmid",
+          "start": 19,
+          "end": 25.45,
+          "id": "seg_7",
+          "absoluteStartMs": 4911760,
+          "absoluteEndMs": 4918210
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Not that",
+          "speaker": "Joe Schmid",
+          "start": 25.3,
+          "end": 25.35,
+          "id": "seg_8",
+          "absoluteStartMs": 4918060,
+          "absoluteEndMs": 4918110
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Okay.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 25.35,
+          "end": 25.400000000000002,
+          "id": "seg_9",
+          "absoluteStartMs": 4918110,
+          "absoluteEndMs": 4918160
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " creator,",
+          "speaker": "Joe Schmid",
+          "start": 25.400000000000002,
+          "end": 25.75,
+          "id": "seg_10",
+          "absoluteStartMs": 4918160,
+          "absoluteEndMs": 4918510
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": "",
+          "speaker": "Christopher Tomaszewski",
+          "start": 25.75,
+          "end": 25.8,
+          "id": "seg_11",
+          "absoluteStartMs": 4918510,
+          "absoluteEndMs": 4918560
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " either one.",
+          "speaker": "Joe Schmid",
+          "start": 25.85,
+          "end": 26.400000000000002,
+          "id": "seg_12",
+          "absoluteStartMs": 4918610,
+          "absoluteEndMs": 4919160
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " All right. So let me just, I guess, address the general point.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 26.650000000000002,
+          "end": 29.6,
+          "id": "seg_13",
+          "absoluteStartMs": 4919410,
+          "absoluteEndMs": 4922360
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Like, well,",
+          "speaker": "Christopher Tomaszewski",
+          "start": 29.65,
+          "end": 30.2,
+          "id": "seg_14",
+          "absoluteStartMs": 4922410,
+          "absoluteEndMs": 4922960
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " so, I mean, it seems to be, it's not like universally true.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 30.25,
+          "end": 34.4,
+          "id": "seg_15",
+          "absoluteStartMs": 4923010,
+          "absoluteEndMs": 4927160
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 1869,
+        "input_tokens": 648,
+        "input_token_details": {
+          "text_tokens": 52,
+          "audio_tokens": 596
+        },
+        "output_tokens": 1221
+      },
+      "directCostUsd": 0.01383,
+      "inventoryChanges": 0
+    },
+    {
+      "moveId": "con-theological-face-value",
+      "status": "confirmed",
+      "expectedSpeaker": "Joe Schmid",
+      "confirmedSpeaker": "Joe Schmid",
+      "method": "gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment and frozen source boundary",
+      "clip": {
+        "path": "output/transcribe/standalone-debate-v1/debate-248/clips/con-theological-face-value.mp3",
+        "sha256": "978a3e5a9647af48bbd9f87dc4fdcbb0b30428f9391a6813e5fa393aebbaf791",
+        "bytes": 831888,
+        "startMs": 6086040,
+        "endMs": 6189880,
+        "durationSeconds": 103.84
+      },
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/responses/con-theological-face-value.json",
+        "sha256": "85acb8f90238546d332cea1a3adf0e253008d83e281ba2d61f71f068ae387087",
+        "bytes": 7664
+      },
+      "attempt": 1,
+      "retries": 0,
+      "rationale": "Joe is speaker-labeled for the substantive qualification at 5.55–55.56 and 59.16–96.44 seconds, including his explicit defeasible presumption and nondevastating scope. Christopher's short interjection at approximately 55.56–58.41 accepts predication about the Word and is not credited as Joe's reasoning. Initial turn logistics and the host's closing from 97.59 seconds remain context only. All 27 returned segments were inspected; overlapping segment boundaries and disfluent automatic wording are not imported into the frozen source. No inventory change is needed.",
+      "segments": [
+        {
+          "type": "transcript.text.segment",
+          "text": " And I know I probably like 30 more seconds.",
+          "speaker": "Joe Schmid",
+          "start": 0,
+          "end": 1.7500000000000002,
+          "id": "seg_0",
+          "absoluteStartMs": 6086040,
+          "absoluteEndMs": 6087790
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Like,",
+          "speaker": "Joe Schmid",
+          "start": 2.55,
+          "end": 2.8999999999999995,
+          "id": "seg_1",
+          "absoluteStartMs": 6088590,
+          "absoluteEndMs": 6088940
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " You",
+          "speaker": "Christopher Tomaszewski",
+          "start": 2.8999999999999995,
+          "end": 3.05,
+          "id": "seg_2",
+          "absoluteStartMs": 6088940,
+          "absoluteEndMs": 6089090
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I",
+          "speaker": "Joe Schmid",
+          "start": 3.05,
+          "end": 3.3,
+          "id": "seg_3",
+          "absoluteStartMs": 6089090,
+          "absoluteEndMs": 6089340
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " look",
+          "speaker": "Christopher Tomaszewski",
+          "start": 3.3,
+          "end": 3.3499999999999996,
+          "id": "seg_4",
+          "absoluteStartMs": 6089340,
+          "absoluteEndMs": 6089390
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " agree.",
+          "speaker": "Joe Schmid",
+          "start": 3.3499999999999996,
+          "end": 3.4499999999999993,
+          "id": "seg_5",
+          "absoluteStartMs": 6089390,
+          "absoluteEndMs": 6089490
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " good.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 3.4499999999999993,
+          "end": 3.5999999999999996,
+          "id": "seg_6",
+          "absoluteStartMs": 6089490,
+          "absoluteEndMs": 6089640
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": "",
+          "speaker": "Joe Schmid",
+          "start": 3.5999999999999996,
+          "end": 3.6499999999999995,
+          "id": "seg_7",
+          "absoluteStartMs": 6089640,
+          "absoluteEndMs": 6089690
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Don't worry.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 3.6499999999999995,
+          "end": 4.1499999999999995,
+          "id": "seg_8",
+          "absoluteStartMs": 6089690,
+          "absoluteEndMs": 6090190
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Okay.",
+          "speaker": "Joe Schmid",
+          "start": 4.499999999999999,
+          "end": 4.949999999999999,
+          "id": "seg_9",
+          "absoluteStartMs": 6090540,
+          "absoluteEndMs": 6090990
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I agree in like much more generally much more broadly.",
+          "speaker": "Joe Schmid",
+          "start": 5.549999999999999,
+          "end": 8.700000000000001,
+          "id": "seg_10",
+          "absoluteStartMs": 6091590,
+          "absoluteEndMs": 6094740
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Like we have to keep in mind this like linguistic quote unquote revision right where there's this subject and we can sort of transpose the subject and the direct object or whatever and it'll still be kind of perfectly natural.",
+          "speaker": "Joe Schmid",
+          "start": 9.600000000000001,
+          "end": 20.85,
+          "id": "seg_11",
+          "absoluteStartMs": 6095640,
+          "absoluteEndMs": 6106890
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " But I think I was thinking about sort of revision in a sort of very explicitly",
+          "speaker": "Joe Schmid",
+          "start": 21.650000000000002,
+          "end": 25.85,
+          "id": "seg_12",
+          "absoluteStartMs": 6107690,
+          "absoluteEndMs": 6111890
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " logically theological sense and so it would be more so like a theological revision and not focusing on broad linguistic facts and so like really prima facie there's like a defeasible presumption it seems in favor of treating statement theological statements just on their face how they seem and on its face when we say that the word became flesh prima facie it just seems we're saying something about the word we are just we're saying something we're yeah that that's what like if you ask a normal person are you saying that",
+          "speaker": "Joe Schmid",
+          "start": 26.004,
+          "end": 51.004000000000005,
+          "id": "seg_13",
+          "absoluteStartMs": 6112044,
+          "absoluteEndMs": 6137044
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " that the word genuinely became flesh um you know they're probably going to say yeah like that that just",
+          "speaker": "Joe Schmid",
+          "start": 50.964,
+          "end": 55.564,
+          "id": "seg_14",
+          "absoluteStartMs": 6137004,
+          "absoluteEndMs": 6141604
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I",
+          "speaker": "Christopher Tomaszewski",
+          "start": 55.564,
+          "end": 55.614,
+          "id": "seg_15",
+          "absoluteStartMs": 6141604,
+          "absoluteEndMs": 6141654
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " seems true",
+          "speaker": "Joe Schmid",
+          "start": 55.614,
+          "end": 55.964,
+          "id": "seg_16",
+          "absoluteStartMs": 6141654,
+          "absoluteEndMs": 6142004
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " do too.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 55.964,
+          "end": 56.214,
+          "id": "seg_17",
+          "absoluteStartMs": 6142004,
+          "absoluteEndMs": 6142254
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " well",
+          "speaker": "Joe Schmid",
+          "start": 56.214,
+          "end": 56.414,
+          "id": "seg_18",
+          "absoluteStartMs": 6142254,
+          "absoluteEndMs": 6142454
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " We are saying something about the word.",
+          "speaker": "Christopher Tomaszewski",
+          "start": 56.414,
+          "end": 58.413999999999994,
+          "id": "seg_19",
+          "absoluteStartMs": 6142454,
+          "absoluteEndMs": 6144454
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " yeah well becoming flesh i mean that that's really the that's really the bit right because you're saying it's a logical relation on the part of the word which is really just in our minds right instead you would have to say that the flesh is such that it became really related to the word whereas the word didn't become really really related to the the flesh or whatever",
+          "speaker": "Joe Schmid",
+          "start": 59.164,
+          "end": 76.164,
+          "id": "seg_20",
+          "absoluteStartMs": 6145204,
+          "absoluteEndMs": 6162204
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " or what have you um and so really i do think it's going to have pose at least some revisionism um and we're at least going to have to treat some things that on their face seem prima facie plausible um and we're just going to have to you know kind of reject that prima facie plausibility which isn't a devastating objection i mean it's just sort of um i'm just trying to outline some of ryan's criticisms but i don't know we're probably out of time and",
+          "speaker": "Joe Schmid",
+          "start": 75.988,
+          "end": 96.438,
+          "id": "seg_21",
+          "absoluteStartMs": 6162028,
+          "absoluteEndMs": 6182478
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Well, gentlemen,",
+          "speaker": "A",
+          "start": 97.588,
+          "end": 98.738,
+          "id": "seg_22",
+          "absoluteStartMs": 6183628,
+          "absoluteEndMs": 6184778
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " thank you for this wonderful conversation.",
+          "speaker": "A",
+          "start": 98.788,
+          "end": 100.238,
+          "id": "seg_23",
+          "absoluteStartMs": 6184828,
+          "absoluteEndMs": 6186278
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Thank you for your patience and just.",
+          "speaker": "A",
+          "start": 100.438,
+          "end": 102.038,
+          "id": "seg_24",
+          "absoluteStartMs": 6186478,
+          "absoluteEndMs": 6188078
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " Just really great job.",
+          "speaker": "A",
+          "start": 102.004,
+          "end": 103.254,
+          "id": "seg_25",
+          "absoluteStartMs": 6188044,
+          "absoluteEndMs": 6189294
+        },
+        {
+          "type": "transcript.text.segment",
+          "text": " I think you",
+          "speaker": "A",
+          "start": 103.304,
+          "end": 103.70400000000001,
+          "id": "seg_26",
+          "absoluteStartMs": 6189344,
+          "absoluteEndMs": 6189744
+        }
+      ],
+      "usage": {
+        "type": "tokens",
+        "total_tokens": 5222,
+        "input_tokens": 1846,
+        "input_token_details": {
+          "text_tokens": 148,
+          "audio_tokens": 1698
+        },
+        "output_tokens": 3376
+      },
+      "directCostUsd": 0.038375,
+      "inventoryChanges": 0
+    }
+  ],
+  "cost": {
+    "frozenFullDebateEstimateUsd": 0.029432,
+    "preauthorizedMaximumUsd": 0.4,
+    "paidCalls": 4,
+    "paidMinutes": 4.105333333333333,
+    "directCostUsd": 0.0916925,
+    "knownSuccessfulCallCostUsd": 0.0916925,
+    "maximumPotentialCombinedCostUsd": 0.0916925,
+    "uncertainCostUsd": 0,
+    "transcriptionCapUsd": 1,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "calculation": "Actual reported input tokens at $2.50 per million plus output tokens at $10 per million; no automatic retries."
+  },
+  "audit": {
+    "lockedMovesReviewed": 46,
+    "highAttributionConfidenceMoves": 42,
+    "requiredAttributionChecks": 4,
+    "completedAttributionChecks": 4,
+    "unresolvedAttributionChecks": 0,
+    "paidTranscriptionUsed": true,
+    "successfulPaidCallsRepeated": 0,
+    "inventoryChanged": false
+  }
+}

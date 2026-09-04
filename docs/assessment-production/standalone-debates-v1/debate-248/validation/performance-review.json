@@ -1,0 +1,158 @@
+{
+  "status": "passed-measured-limit-preserving-review",
+  "debateNumber": "248",
+  "publishedDebates": 248,
+  "authorizationPath": "docs/assessment-production/standalone-debates-v1/debate-248/validation/performance-review-authorization.json",
+  "measurementMethod": "Fresh isolated Chromium context per route, complete network idle, decodedBodySize for all /src/data/ resources; every resource required nonzero bytes. Final six move tags and three overall links applied.",
+  "before": {
+    "baselineDebates": 237,
+    "baseDataBytes": [
+      395000,
+      445000,
+      480000,
+      485000
+    ],
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10
+  },
+  "after": {
+    "baselineDebates": 248,
+    "baseDataBytes": [
+      450000,
+      500000,
+      535000,
+      540000
+    ],
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10
+  },
+  "effectiveLimitsBefore": [
+    450000,
+    500000,
+    535000,
+    540000
+  ],
+  "effectiveLimitsAfter": [
+    450000,
+    500000,
+    535000,
+    540000
+  ],
+  "proof": "For any catalogue size N >= 248, old base + 5000*(N-237) equals (old base + 55000) + 5000*(N-248). No current or future effective byte ceiling increases.",
+  "measurements": [
+    {
+      "route": "/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23557
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 390409
+        }
+      ],
+      "loadedBytes": 426205,
+      "limitBytes": 450000,
+      "headroomBytes": 23795
+    },
+    {
+      "route": "/rankings/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23557
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 390409
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 52079
+        }
+      ],
+      "loadedBytes": 478284,
+      "limitBytes": 500000,
+      "headroomBytes": 21716
+    },
+    {
+      "route": "/debate/craig-oconnor-god-debate-2026/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23557
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 390409
+        },
+        {
+          "name": "/src/data/debate-details/craig-oconnor-god-debate-2026.js",
+          "bytes": 35843
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 52079
+        }
+      ],
+      "loadedBytes": 514127,
+      "limitBytes": 535000,
+      "headroomBytes": 20873
+    },
+    {
+      "route": "/reference/fallacy/equivocation/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 390409
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23557
+        },
+        {
+          "name": "/src/data/reference-appearances/fallacy-equivocation.js",
+          "bytes": 108947
+        }
+      ],
+      "loadedBytes": 535152,
+      "limitBytes": 540000,
+      "headroomBytes": 4848
+    }
+  ],
+  "directIncrementalCostUsd": 0,
+  "recovery": "Initial same-context measurement reused cached responses and understated bytes; rejected and preserved as performance-review-cached-invalid.json. Fresh-context measurement passes the pre-existing effective limits."
+}

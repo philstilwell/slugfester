@@ -1,0 +1,13 @@
+{
+  "status": "reader-facing-prose-passed-adapter-dependent-layout-pending",
+  "debateNumber": "248",
+  "exitCode": 1,
+  "rawOutput": "Debate validation failed with 11 issues:\n- debates.247.sections.0.exchanges.2.con: must be an object\n- debates.247.sections.2.exchanges: must contain no more than 3 items\n- debates.247.sections.2.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.247.sections.3.exchanges: must contain no more than 3 items\n- debates.247.sections.3.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.247.sections.4.exchanges.1.pro: must be an object\n- debates.247.sections.5.exchanges: must contain no more than 3 items\n- debates.247.sections.5.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.247.sections.6.exchanges: must contain no more than 3 items\n- debates.247.sections.6.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.247.assessmentRubric: requires a matching JSON assessment ledger\n",
+  "classifiedIssues": {
+    "unpairedCards": 2,
+    "fourthRowFindings": 8,
+    "missingLedger": 1,
+    "otherReaderFacingFailures": 0
+  },
+  "explanation": "The production validator recognizes unpaired cards and preauthorized fourth rows through the not-yet-built standalone adapter. All eleven provisional issues are those adapter-dependent findings; the frozen inventory and candidate validator already authenticate the exact layout. Repeat the full production validator after building the adapter without changing any move."
+}

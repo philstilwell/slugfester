@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 248,
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents with explicit score-blind input boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "bd8bd492a58cc8496b00e96ef2bb1bb2ca88f90fc1ce51f2fe1b9ad6da22722d",
+    "inventorySha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json",
+      "outputSha256": "5f0a4d700f72810cd039eb9ac7bdb8e42cfa48514f138e7ed0a5e667f1fe83cf",
+      "outputBytes": 66041,
+      "judgmentCount": 46,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_248_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-b/output.json",
+      "outputSha256": "eea792aaed98fa35412a5eb56ed74a7f7b15929d69afdc8d204f545ed89d3e3f",
+      "outputBytes": 75343,
+      "judgmentCount": 46,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_248_b"
+    }
+  ],
+  "completedAt": "2026-09-04T00:22:54.288Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

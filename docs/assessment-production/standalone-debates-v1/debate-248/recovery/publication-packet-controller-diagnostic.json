@@ -1,0 +1,19 @@
+{
+  "status": "deterministic-controller-error-corrected-before-model-launch",
+  "debateNumber": "248",
+  "error": "TypeError: root.replace is not a function",
+  "cause": "Passing fileRecord directly as an Array.map callback supplied the array index as its optional root argument.",
+  "correction": "Use an explicit one-argument arrow callback. Packet, contract and numeric benchmark already written successfully were retained; only the missing execution-plan artifact was completed from those frozen files. No score, evidence or assessment output was rerun or changed.",
+  "score": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/score-pass/output.json",
+    "sha256": "15b77ff649956f681b37abf98ec3f5557e5986104055d5d457b9f4500d888428",
+    "bytes": 23002
+  },
+  "attestation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/score-pass/attestation.json",
+    "sha256": "e46a75c4013171a8dcc9356158c199b2e8ecd310c566147acb88ba622c1228d1",
+    "bytes": 838
+  },
+  "paidCalls": 0,
+  "modelAttemptsConsumed": 0
+}
