@@ -11962,5 +11962,58 @@ export const debateSummaries = [
         "title": "Internal moral critique and logical limits"
       }
     ]
+  },
+  {
+    "id": "clifton-sechler-divine-hiddenness-hell-2022",
+    "number": "253",
+    "title": "Zac Sechler vs Scott Clifton: Is Christian belief in a loving God plausible despite divine hiddenness and the prospect of hell?",
+    "year": 2022,
+    "label": "Divine hiddenness, salvation, and hell",
+    "date": "2026-09-04",
+    "duration": "1 hr 16 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0Yg-YpvuteM",
+    "motion": "Is Christian belief in a loving God plausible despite divine hiddenness and the prospect of hell?",
+    "summary": "Clifton’s hiddenness and hell challenge prevailed 83–72, especially against Sechler’s uncertainty-based freedom defense, inclusivist salvation, and preference for annihilation.",
+    "topicCategory": "evil-suffering-hiddenness",
+    "sides": {
+      "pro": {
+        "name": "Christian plausibility defense",
+        "speaker": "Zac Sechler",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Hiddenness and hell challenge",
+        "speaker": "Scott Clifton",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 72,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Probability, worldview comparison, and qualified Christianity"
+      },
+      {
+        "title": "Salvation, sincere seeking, and explicit belief"
+      },
+      {
+        "title": "Practice, belief, and commitment under uncertainty"
+      },
+      {
+        "title": "Virtue, belief costs, and self-sacrifice"
+      },
+      {
+        "title": "Chosen hell and Christlike substitution"
+      },
+      {
+        "title": "Parental love, eternal torment, and annihilation"
+      },
+      {
+        "title": "Freedom, certainty, prevalence, and the goods of hiddenness"
+      }
+    ]
   }
 ];

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-publication-field-repair-failure",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "failed-one-attempt-exhausted",
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "ordinal": 2,
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/copyedit-1/shard-02-packet.json",
+    "sha256": "36ebe2bd5bb5d51548be0ccd1b8a2e522db0bd0d3151ad70a2fa94f1e10c8f40",
+    "bytes": 12907
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/copyedit-1/shard-02-execution-plan.json",
+    "sha256": "6497c2b784263b2b1bc697063f8326b959291c01427c60f81acf2d1e3e51d7ff",
+    "bytes": 897
+  },
+  "rejectedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/copyedit-1/shard-02-output.json",
+    "sha256": "fd924e07839cfa1b0ca884d398947c40dccab25e688382e2287b347e87368ce0",
+    "bytes": 2710
+  },
+  "attempts": 1,
+  "retries": 0,
+  "failures": [
+    {
+      "path": "candidate.sections[0].exchanges[1].pro.critique",
+      "wordCount": 145,
+      "maximumWords": 130,
+      "characterCount": 1095,
+      "sentenceCount": 4
+    },
+    {
+      "path": "candidate.sections[0].exchanges[1].con.critique",
+      "wordCount": 146,
+      "maximumWords": 130,
+      "characterCount": 1088,
+      "sentenceCount": 4
+    }
+  ],
+  "automaticRetryPermitted": false,
+  "otherInFlightRepairShardsInterrupted": [1, 3],
+  "assessmentSubstanceChanged": false,
+  "scoreChanged": false,
+  "directIncrementalCostUsd": 0
+}

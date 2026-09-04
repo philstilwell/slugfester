@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 253,
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents with explicit score-blind input boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "fced9725c08c3fa6daef8746197e9afcb3441b7662852278e20bf1c267113267",
+    "inventorySha256": "4e63d224d98254846751838c1f8b5ab792fdc90c884dabde0701e76bd22eb518",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/pass-a/output.json",
+      "outputSha256": "352310cc01fe852b1483af9dbf5af4e31069416ad6350761419d74a39d85e566",
+      "outputBytes": 78890,
+      "judgmentCount": 32,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-253/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_253_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/pass-b/output.json",
+      "outputSha256": "079e561216ed4648cc1177dd1a71e3c5b0adbfebc06a79bfe165ea376a5ef0b3",
+      "outputBytes": 59401,
+      "judgmentCount": 32,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-253/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_253_b"
+    }
+  ],
+  "completedAt": "2026-09-04T18:33:28.299Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

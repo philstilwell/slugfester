@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "completedAt": "2026-09-04T20:57:01.225Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-253/validation/gates-1.log",
+        "sha256": "473570d47626adf7ae8de58b0a44552817592839315d45e6a0869332413adc14",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-253/validation/gates-2.log",
+        "sha256": "af3563ee826dff84866b09dedffb8046a7a94dc70d3e15dc6d13d11c6f31b6cb",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 253",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-253/validation/gates-3.log",
+        "sha256": "b64982bc7b7ddd32e17906430da16bf977928bbb906bf7f0abb824d74ad47fbd",
+        "bytes": 248
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-253/validation/gates-4.log",
+        "sha256": "83dd83a8795d5b0f942042b1c8cfdd36694688b9aa56bdce2798ad82577df730",
+        "bytes": 45136
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-253/validation/gates-5.log",
+        "sha256": "f93495fb57dd603f6f59b6ba5c646b6b9800ea29172e8b53d55abfe178a8db32",
+        "bytes": 204471
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-253/validation/gates-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

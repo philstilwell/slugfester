@@ -1,0 +1,72 @@
+{
+  "status": "source-only-controller-refinement-before-judgment",
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "preservedModelOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/inventory/model-output.json",
+    "sha256": "a43972f77319450d43fd2efb81983a2a9ad9f0d5b86c06a4aae430e3759bcc50",
+    "bytes": 67190
+  },
+  "reviewedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/inventory/controller-reviewed-output.json",
+    "sha256": "4e63d224d98254846751838c1f8b5ab792fdc90c884dabde0701e76bd22eb518",
+    "bytes": 92306
+  },
+  "judgmentCallsBeforeRefinement": 0,
+  "movesAdded": 0,
+  "movesDropped": 0,
+  "sidesSectionsWeightsImportanceAndBurdenLinksChanged": false,
+  "changes": [
+    {
+      "fields": [
+        "routes",
+        "sections",
+        "moves[*].source summaries",
+        "moves[*].responseComponents",
+        "moves[*].attribution rationale"
+      ],
+      "reason": "Normalize the accepted score-blind inventory to the newest standalone semantic field names and replace generic structural text with source-specific claim, reason, inference, response, burden, and attribution descriptions."
+    },
+    {
+      "fields": [
+        "moves[*].sourceSpan"
+      ],
+      "moveIds": [
+        "hiddenness-maternal-analogy",
+        "annihilation-still-penalizes-nonbelief",
+        "substitution-scenario-is-inapplicable",
+        "lewis-hell-is-qualified-fallback",
+        "concedes-pressure-against-eternal-torment",
+        "freedom-requires-unforced-choice",
+        "choice-requires-known-option"
+      ],
+      "reason": "Extend or trim seven selected spans to complete sentence-level reasoning without crossing a speaker turn or the assessed window; excerpts are regenerated exactly from events."
+    },
+    {
+      "fields": [
+        "quoteEligibleExactSpans"
+      ],
+      "moveIds": [
+        "sincere-seeking-can-save",
+        "one-nonbeliever-suffices"
+      ],
+      "reason": "Freeze one exact eligible source phrase per side before judgment so later publication can select representative quotations without reopening source evidence."
+    },
+    {
+      "fields": [
+        "fullTranscriptCoverageAudit",
+        "publicationCapacityAudit.sections[*].absoluteDifference",
+        "audit"
+      ],
+      "reason": "Normalize audit key names to the newest accepted standalone record and mechanically derive move membership, counts, and required controller claims without changing selection."
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "debateNumber": "253",
+    "sections": 7,
+    "moves": 32,
+    "belowHighAttributionMoveIds": []
+  },
+  "directCostUsd": 0
+}
