@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "0c2eace56b418458b504504ed87f34c2dee1a0bca0dc196646aa4295d0d5caf5",
+    "bytes": 82038
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[2].exchanges[0].con.tags",
+        "candidate.sections[6].exchanges[2].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.overall.pro.blunders[2].links",
+        "candidate.overall.con.blunders[0].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 4,
+    "acceptedTagCount": 2,
+    "overallBlunderLinkChanges": 2,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/output.json",
+      "sha256": "d728869710054d812fb6ed87e2de47673e1132e566be32ca8f3cab900a56ee63",
+      "bytes": 83209
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-audit.json",
+      "sha256": "9d6431af9a21b9b9084953e8746caedba71ba0fab0c701d1b58a0d3af3224880",
+      "bytes": 178821
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "2610aea2d7bbca185bf2e7d04eb48d89dba51833c0b21b63d1fc06829f10b908",
+      "bytes": 121534
+    }
+  }
+}

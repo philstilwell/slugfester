@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "mixed-world-counterexample:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "mixed-world-counterexample",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 82,
+          "rationale": "A mixed world could be worse than pure torture, but that does not settle the chosen middle-world comparison."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "A mixed world could be worse than a torture world, but not necessarily the specified middle world."
+        }
+      }
+    },
+    {
+      "disputeId": "mixed-world-counterexample:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "mixed-world-counterexample",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 5,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 74,
+          "rationale": "The earlier contrast example supplies the support, with its aggregate-value gap still unresolved."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "The claim relies on the earlier contrast mechanism without new support for the revised comparison."
+        }
+      }
+    },
+    {
+      "disputeId": "mixed-world-counterexample:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "mixed-world-counterexample",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "Alex challenges the ordering but does not provide the positive mirror Max requested."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "Alex presses classification but does not provide the positive mirror requested."
+        }
+      }
+    },
+    {
+      "disputeId": "mixed-world-counterexample:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "mixed-world-counterexample",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The question remains relevant to generalization from mixedness to divine character."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "The point challenges a general mixed-world inference while not defeating Max's narrowed comparison."
+        }
+      }
+    },
+    {
+      "disputeId": "mixed-world-counterexample:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "mixed-world-counterexample",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "He distinguishes many possible worlds, though worst version is stronger than the established example."
+        },
+        "option-b": {
+          "value": 81,
+          "rationale": "The broad category of mixed worlds is clear, but its relation to the selected world remains loose."
+        }
+      }
+    },
+    {
+      "disputeId": "mixed-world-counterexample:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "mixed-world-counterexample",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 86,
+          "rationale": "The final might-be-worse wording is appropriately tentative despite the preceding worst-world phrase."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The language of might appropriately limits the counterexample despite the worst-version claim."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The limited parity challenge and command concession are already reflected in their ratings, as are the unresolved aggregate comparison and the character reframing. No additional distinct completion effect warrants adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-character",
+              "pro-theodicy"
+            ],
+            "completionCriterion": "Show comparative pressure against wholly good God while separating the original objective-evil hypothesis from the character reframing.",
+            "relatedMoveIds": [
+              "conditional-symmetry",
+              "conditional-command-concession",
+              "bliss-and-comparative-cruelty"
+            ],
+            "distinctConsequence": "No independent debate-wide consequence remains beyond the limitations and successes already assessed in these moves.",
+            "alreadyCapturedBy": [
+              "conditional-symmetry:dimensions",
+              "conditional-command-concession:dimensions",
+              "bliss-and-comparative-cruelty:dimensions"
+            ],
+            "counterfactual": "Changing these argumentative performances would change their dimension ratings; a separate adjustment would count the same burden effect twice."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The natural-theology countercomparison, objective-evil concession, character reframing and unresolved mixed-world response are already represented in move-level ratings; no separate adjustment is warranted.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion",
+              "pro-character",
+              "pro-theodicy"
+            ],
+            "completionCriterion": "Sustain the qualified comparative challenge while distinguishing objective evil from malicious character.",
+            "relatedMoveIds": [
+              "symmetric-noncreation-option",
+              "conditional-command-concession",
+              "mixed-world-counterexample"
+            ],
+            "distinctConsequence": "No consequence distinct from the already assessed comparative replies and scope qualifications was identified.",
+            "alreadyCapturedBy": [
+              "relevanceBurden",
+              "responsiveness",
+              "evidenceWarrant"
+            ],
+            "counterfactual": "Removing these move-level strengths and limitations would change burden completion, but adding an adjustment would count them again."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The conditional conceptual objection, admitted lack of a character reply, and limited middle-world comparison are assessed directly in the move dimensions. An extra burden adjustment would duplicate those consequences.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-intrinsic",
+              "con-morals",
+              "con-worlds"
+            ],
+            "completionCriterion": "Defend a relevant asymmetry without treating conceptual goodness as sufficient evidence of loving character or mere compatibility as a probability calculation.",
+            "relatedMoveIds": [
+              "four-moral-accounts",
+              "reframing-unresolved",
+              "middle-spectrum-qualification"
+            ],
+            "distinctConsequence": "No independent debate-wide consequence remains beyond the limitations and successes already assessed in these moves.",
+            "alreadyCapturedBy": [
+              "four-moral-accounts:dimensions",
+              "reframing-unresolved:dimensions",
+              "middle-spectrum-qualification:dimensions"
+            ],
+            "counterfactual": "Changing these argumentative performances would change their dimension ratings; a separate adjustment would count the same burden effect twice."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The conditional intrinsic strategy, candid unanswered character challenge and qualified final world comparison are already represented in the dimensions; no additional debate-wide consequence merits adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion",
+              "con-morals",
+              "con-worlds"
+            ],
+            "completionCriterion": "Provide defended comparative asymmetry while preserving the limited reversibility concession and revised character question.",
+            "relatedMoveIds": [
+              "four-moral-accounts",
+              "reframing-unresolved",
+              "middle-spectrum-qualification"
+            ],
+            "distinctConsequence": "No additional consequence remains separate from the rated support gaps, concessions and final qualifications.",
+            "alreadyCapturedBy": [
+              "relevanceBurden",
+              "responsiveness",
+              "evidenceWarrant"
+            ],
+            "counterfactual": "The unresolved character answer and limited world comparison would affect completion if omitted, but both are already assessed."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 42,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/inventory/inventory.json",
+      "sha256": "5424193c904b4f876ac9600c86770c8a6b084797be1d292101b1342011c2384c"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/pass-a/output.json",
+      "sha256": "e28ba4d79919f7d95bffd625cdc222dda63f6b64209b603d0af87ea35d339596"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/judgments/pass-b/output.json",
+      "sha256": "2fb7aac8e5d384c5fa09ab57a01fe88072d16d4c82b63d852d56e4e897ef3ba6"
+    }
+  }
+}

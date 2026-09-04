@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "completedAt": "2026-09-04T15:57:23.109Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/validation/gates-1.log",
+        "sha256": "c97f1564780f938206d892e5be3c8f4992095eb0813b0c471af09eb3e6a99d55",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/validation/gates-2.log",
+        "sha256": "5f0b9c694f341db1fac6c3af2ba63c5a9286024c5c53aea409bbf36368cf2eac",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 251",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/validation/gates-3.log",
+        "sha256": "522cb3bbf4b7329f55c6dfa5547028e3d52a7c75d587853a48de9c25da2cdab1",
+        "bytes": 255
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/validation/gates-4.log",
+        "sha256": "2cd5ada25a7020e14244541a321a6d5b676f28004c6ffdb82f125200f9ea669c",
+        "bytes": 44168
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/validation/gates-5.log",
+        "sha256": "cb8239c2d2df077847048939b53e61342c372b48e2276b4badf3911c577f6ea1",
+        "bytes": 207759
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-251/validation/gates-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

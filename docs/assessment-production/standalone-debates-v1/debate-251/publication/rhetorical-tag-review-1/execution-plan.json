@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "251",
+  "debateId": "oconnor-baker-hytch-evil-god-challenge-2021",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "14c75f7a09650a18b643c7aba1c4b686b5e44d9508510b51a652a7bc682668ad",
+      "bytes": 163255
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/T1EwbFlV2XU/transcript.txt",
+      "sha256": "c34176a4f8750d19d9069e8dc7234129e24e90450aca55b4cc5434758948162d",
+      "bytes": 109784
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-251/audio/audio-verification.json",
+      "sha256": "730fca27907e5d0f850041c0a15d7e979df17e570f0c0105fe62e08b3b52590e",
+      "bytes": 78151
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_251_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_251_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-251/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}
