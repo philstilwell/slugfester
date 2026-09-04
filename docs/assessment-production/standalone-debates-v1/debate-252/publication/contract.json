@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "whole-worldview",
+    "evidential-not-impossible",
+    "christ-solidarity",
+    "possibility-needs-warrant",
+    "dream-perspective-closing",
+    "emotion-distinction",
+    "agency-and-fall",
+    "natural-suffering-burden",
+    "fall-and-human-choice",
+    "selective-intervention",
+    "random-soul-building",
+    "heaven-suffering-reply",
+    "heaven-free-will-test",
+    "rainforest-life",
+    "rainforest-consequences",
+    "hell-qualification",
+    "animal-beneficiary-challenge",
+    "virtue-not-pleasure",
+    "remedial-virtues",
+    "law-of-triumph",
+    "suffering-bad-not-definition",
+    "virtue-consequence-overlap",
+    "virtue-criterion-reply",
+    "conditional-virtue-concession",
+    "not-every-harm-needed",
+    "exact-amount-challenge",
+    "permission-clarification",
+    "parental-counterfactual",
+    "parental-knowledge",
+    "allowing-correction",
+    "relationship-goal",
+    "relationship-concession",
+    "relationships-and-alternatives",
+    "realism-escape",
+    "independent-internal-critique",
+    "omnipotence-limits",
+    "logical-limit-concession"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every packet.template field byte-for-byte.",
+    "summary": "18–28 word source-specific comparative summary.",
+    "quotes": {
+      "pro": "{text,context}",
+      "con": "{text,context}"
+    },
+    "sections": "Copy publicationLayout identities/title/timebox/score and convert rows to exchanges [{pro:card or null,con:card or null}]; cards {ledgerMoveId,time,role,words,score,critique,tags:[]} using exact moveDisplayControls. Preserve every move and per-side order.",
+    "overall": "Each side {score:locked overall score,strengths:[3 strings],blunders:[3 {text,links:[]}]}",
+    "logicalExtension": "Each side {finalArgument:{thesis,premises:[5 strings],conclusion,notice},newArguments:[3 {title,text}]}."
+  },
+  "instructions": {
+    "argumentDescriptionTargetWords": [
+      25,
+      28
+    ],
+    "argumentDescriptionAllowedWords": [
+      8,
+      55
+    ],
+    "argumentMeanMinimum": 20.875,
+    "maximumShareBelow20Words": 0.25,
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "summaryWords": [
+      18,
+      28
+    ],
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 3,
+    "overallItemTargetWords": [
+      18,
+      30
+    ],
+    "newArgumentsPerSide": 3,
+    "premisesPerSide": 5,
+    "representativeQuoteWords": [
+      3,
+      18
+    ],
+    "quoteContextWords": [
+      18,
+      45
+    ],
+    "tagsAndBlunderLinksMustRemainEmptyUntilRhetoricalReview": true,
+    "critiquesExactlyFourLabeledSentences": true,
+    "critiqueRationalesMustBeSourceSpecific": true,
+    "thesisMinimumWords": 12,
+    "premiseMinimumWords": 12,
+    "conclusionMinimumWords": 15,
+    "newArgumentAllowedWords": [
+      45,
+      130
+    ],
+    "newArgumentTargetWords": [
+      90,
+      120
+    ],
+    "ordinaryPunctuationRequired": true,
+    "noGenericBoilerplate": true,
+    "quoteTextMustBeSourceExact": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedArgument": true,
+    "noveltyMapSourceMoveIdsRequired": true,
+    "sourceQuoteAuditMustVerifyBothQuotes": true,
+    "noManualScoreChanges": true
+  },
+  "noveltyMapShape": "8 entries total: each side finalArgument plus newArguments[0], [1], [2]. Each {side,field,path: candidate.logicalExtension.<side>.<field>,sourceMoveIds:[],explanation,hypothetical:true}.",
+  "sourceQuoteAuditShape": "2 entries: {side,speaker,moveId,text,sourcePath: original final ledger path (cite without opening original; use filtered evidence view),transcriptPath,startEvent,endEvent,startMs,endMs,quoteEligibleExactSpan,exactMatch:true}; quote text must be exact substring of that move quoteEligibleExactSpans."
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "2fbe14ba3cedd0c1f3e0d6438c07e6301acdd93d9138d906adfef8a007c42510",
+    "bytes": 141147
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_252_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "2fbe14ba3cedd0c1f3e0d6438c07e6301acdd93d9138d906adfef8a007c42510",
+        "bytes": 141147
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "83f82c6a334e920c46b40dd6b57fb25f135f597d71c1839b2229b3aed927eca5",
+        "bytes": 30157
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_252_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "2fbe14ba3cedd0c1f3e0d6438c07e6301acdd93d9138d906adfef8a007c42510",
+        "bytes": 141147
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "c96a764286a5036ec8b756479eebb91a5067998cc1abb052b27866507c03aa28",
+        "bytes": 32394
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_252_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "3b218dc971c97fbc572884832f78fc23ae568fc2c3eef5e9bc6bb9048db92937",
+        "bytes": 219185
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "fc33251ef27f1b4e0dc9d08233bb122849e6caa7cf04c0fe3c5c1e25f6ca3587",
+        "bytes": 29213
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 71
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-04T17:11:31.153Z"
+}

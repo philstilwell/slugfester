@@ -1,0 +1,52 @@
+{
+  "status": "source-only-controller-refinement-before-judgment",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "preservedModelOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-252/inventory/model-output.json",
+    "sha256": "6fd2bf62b72b6509d7458f4de3f68ddab7bb4b1663ca125ecb31fc4e6562aa5c",
+    "bytes": 166610
+  },
+  "reviewedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-252/inventory/controller-reviewed-output.json",
+    "sha256": "8a3be2f319d2782daacc709d1e0cbf7130d4b7f6c768d4231a30c6bf68f934e3",
+    "bytes": 166690
+  },
+  "judgmentCallsBeforeRefinement": 0,
+  "movesAdded": 0,
+  "movesDropped": 0,
+  "sidesSectionsWeightsImportanceAndBurdenLinksChanged": false,
+  "changes": [
+    {
+      "moveId": "relationship-concession",
+      "fields": [
+        "sourceSpan.endEvent",
+        "sourceSpan.endMs",
+        "sourceSpan.excerpt",
+        "fullTranscriptCoverageAudit.intervals"
+      ],
+      "reason": "The original evidence ended mid-sentence before the explicit conclusion that the resulting relationship does not make the Holocaust good. Extend by exactly two caption events to complete that claim; keep all words verbatim and adjust only the adjoining coverage boundary."
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "debateNumber": "252",
+    "sections": 7,
+    "moves": 37,
+    "belowHighAttributionMoveIds": [
+      "relationship-goal",
+      "permission-clarification",
+      "virtue-criterion-reply",
+      "parental-counterfactual",
+      "allowing-correction"
+    ]
+  },
+  "scopeValidation": {
+    "status": "passed",
+    "protocolId": "primary-speaker-scope-exception-v1",
+    "hostAdvocacyMs": 82770,
+    "dependentResponseMs": 56491,
+    "hostAdvocacyShare": 0.011380133726539388
+  },
+  "directCostUsd": 0
+}

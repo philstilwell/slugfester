@@ -1,0 +1,16 @@
+{
+  "debateNumber": "252",
+  "status": "measurement-issues-diagnosed-without-site-changes",
+  "popoverMeasurement": {
+    "initialResult": "Playwright isVisible returned true after the distant AI control opened; waiting for layout-hidden state timed out.",
+    "directInspection": {"opacity": "0", "visibility": "visible", "display": "grid", "pointerEvents": "none", "hover": false, "focusWithin": false},
+    "resolution": "The existing CSS hides critiques through opacity, not display or visibility. The screenshot showed no overlay. Final clearance uses computed opacity zero and pointer-events none, while opening requires computed opacity one. No stylesheet or behavior change was needed."
+  },
+  "searchObservation": {
+    "rejected": {"route": "/search/?q=suffering", "url": "http://127.0.0.1:4252/topics/#topic-evil-suffering-hiddenness", "title": "Debate topics & argument scorecards | Slugfester"},
+    "reason": "The initial broad-query locator wait completed after navigation to topics; that observation is invalid evidence of search discovery.",
+    "resolution": "The search field was filled with the exact source-motion phrase Would a loving God, Apply was activated, a fresh snapshot showed one of 252 debates and the correct Debate 252 link, and the URL was independently checked to remain on /search/."
+  },
+  "productionChanges": 0,
+  "testLimitChanges": 0
+}

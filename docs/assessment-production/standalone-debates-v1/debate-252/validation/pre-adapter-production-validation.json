@@ -1,0 +1,17 @@
+{
+  "status": "reader-facing-prose-rules-passed-pending-required-adapter",
+  "debateNumber": "252",
+  "command": "node scripts/validate-debates.mjs",
+  "exitCode": 1,
+  "issues": [
+    "debates.251.sections.1.exchanges.2.con: must be an object",
+    "debates.251.sections.3.exchanges: must contain no more than 3 items",
+    "debates.251.sections.3.exchanges.3.pro: must be an object",
+    "debates.251.sections.5.exchanges.1.pro: must be an object",
+    "debates.251.assessmentRubric: requires a matching JSON assessment ledger"
+  ],
+  "interpretation": "The production candidate is temporarily integrated before adapter freeze. All five remaining diagnostics depend on the absent standalone ledger adapter: the three frozen unpaired rows, the preauthorized fourth row, and the required ledger itself. No prose, quote, disclosure, identity, depth, or punctuation failure was reported. The full production validator must pass after the normal generic adapter is frozen; no rule is being bypassed or changed.",
+  "publicationRepairRequired": false,
+  "scoreChanges": 0,
+  "testChanges": 0
+}

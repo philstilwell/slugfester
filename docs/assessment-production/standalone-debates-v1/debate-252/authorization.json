@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-04T16:26:44.688Z",
+  "repositoryBaseline": {
+    "branch": "codex/debate-252",
+    "head": "82694f29f8bf82818e3c73dc22ba2b0154c97dad",
+    "localMain": "82694f29f8bf82818e3c73dc22ba2b0154c97dad",
+    "originMain": "82694f29f8bf82818e3c73dc22ba2b0154c97dad",
+    "clean": true,
+    "isolationReason": "A separate clean working copy from synchronized main preserves all unrelated earlier files."
+  },
+  "identity": {
+    "debateNumber": "252",
+    "debateId": "jones-oconnor-evil-suffering-2020",
+    "label": "Suffering, soul-building, and divine permission",
+    "canonicalUrl": "https://www.youtube.com/watch?v=hNF9bTESZwE",
+    "videoId": "hNF9bTESZwE",
+    "sourceTitle": "DEBATE: Would God Allow Evil? @CosmicSkeptic vs @InspiringPhilosophy",
+    "eventYear": 2020,
+    "eventDate": "2020-06-13",
+    "uploadDate": "2020-06-13",
+    "motion": "Would a loving God allow the evil and suffering found in our world?",
+    "topicCategory": "evil-suffering-hiddenness",
+    "pro": {
+      "speaker": "Michael Jones",
+      "position": "Christian permission-of-evil defense"
+    },
+    "con": {
+      "speaker": "Alex O'Connor",
+      "position": "Evidential suffering challenge"
+    },
+    "moderator": "Cameron Bertuzzi",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "primarySpeakers": {
+        "pro": "Michael Jones",
+        "con": "Alex O'Connor"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Cameron Bertuzzi",
+          "role": "Moderator with one bounded coaching intervention"
+        }
+      ],
+      "maximumHostAdvocacyShare": 0.05,
+      "assessedWindow": {
+        "startMs": 332849,
+        "endMs": 7606050,
+        "durationMs": 7273201
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "host-love-without-realism",
+          "kind": "host-advocacy",
+          "speaker": "Cameron Bertuzzi",
+          "startMs": 6347460,
+          "endMs": 6430230,
+          "durationMs": 82770,
+          "summary": "Cameron supplies an internal-consistency reply: Christianity retains a loving God even without objective morality. Overlapping caption events at both handoffs make word-level separation unreliable, so the complete continuous coaching exchange is conservatively counted as host advocacy.",
+          "burdenImpactRationale": "This prompts only the internal-critique line Alex independently develops at 21:02–21:28, 22:50–23:16, and 1:44:57–1:45:47: suffering can challenge a professedly loving God without external moral realism. It introduces neither a new side nor a unique motion burden.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "dependent-love-without-realism",
+          "kind": "dependent-response",
+          "speaker": "Alex O'Connor",
+          "startMs": 6373739,
+          "endMs": 6430230,
+          "durationMs": 56491,
+          "summary": "Alex directly accepts Cameron’s suggestion, reformulates the loving-God and child-cancer objection, and thanks Cameron by name. The overlapping caption handoff and final transition are included conservatively.",
+          "burdenImpactRationale": "No part of this directly dependent reply is credited or penalized. Alex’s independently delivered opening and immediately preceding consistency argument remain available outside the exclusion; the prompted restatement contributes no separate assessment evidence.",
+          "uniqueLoadBearingArgument": false
+        }
+      ]
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-252/",
+    "docs/assessment-ledgers/jones-oconnor-evil-suffering-2020.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/jones-oconnor-evil-suffering-2020.js",
+    "src/data/debate-summaries.js",
+    "src/data/debate-analytics.js",
+    "src/data/interlocutors.js",
+    "src/data/reference-appearances/",
+    "debate/",
+    "interlocutor/",
+    "feed.xml",
+    "index.html",
+    "rankings/index.html",
+    "search/index.html",
+    "sitemap.xml",
+    "topics/index.html",
+    "output/playwright/standalone-debate-v1/debate-252/"
+  ]
+}

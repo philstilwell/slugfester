@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "completedAt": "2026-09-04T17:17:12.150Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/validation/gates-1.log",
+        "sha256": "380822a372ffcdd42fbc2f83ddc94e6b50457784ffe6cd7a222c3f0297f70ae1",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/validation/gates-2.log",
+        "sha256": "f76cac8fb8a03e4f5aef2c324e44c56f231875a433821fdfd2fd2483986b3684",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 252",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/validation/gates-3.log",
+        "sha256": "7790aeb2b8774db37515f27fda897e8988edabfbf2136fd5f05c8aa75764f7f9",
+        "bytes": 254
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/validation/gates-4.log",
+        "sha256": "fe643e443cf29998e2356f3036e6813d50b1e0cba668fab19489784ddf273a03",
+        "bytes": 44655
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/validation/gates-5.log",
+        "sha256": "a8a4d5f70024bd858bdd614c5a3cfaa3ca7e798e48dd1949983418a17bd7dbab",
+        "bytes": 204713
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-252/validation/gates-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

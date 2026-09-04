@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "2fbe14ba3cedd0c1f3e0d6438c07e6301acdd93d9138d906adfef8a007c42510",
+      "bytes": 141147
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/hNF9bTESZwE/transcript.txt",
+      "sha256": "b3cac2f8cde9497ca84de54faa43966d0207216070aa6d5a4b11abfae7ae3ccb",
+      "bytes": 180094
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/audio/audio-verification.json",
+      "sha256": "10f9965905f4d01c369daf9db4ac1532ac69669abf2134d9ba72bcb0414af525",
+      "bytes": 46109
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_252_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_252_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}
