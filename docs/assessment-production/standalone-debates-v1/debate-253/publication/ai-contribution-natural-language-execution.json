@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0-ai-contribution-natural-language-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-bounded-user-directed-natural-language-copyedit",
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "completedAt": "2026-09-04T21:22:16Z",
+  "method": "Deterministic editorial replacement following the user's direction; no model call was made.",
+  "shards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.thesis",
+        "candidate.logicalExtension.pro.finalArgument.conclusion"
+      ],
+      "writableFieldCount": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[0].text",
+        "candidate.logicalExtension.pro.newArguments[1].text"
+      ],
+      "writableFieldCount": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[2].text",
+        "candidate.logicalExtension.con.finalArgument.thesis"
+      ],
+      "writableFieldCount": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.conclusion",
+        "candidate.logicalExtension.con.newArguments[0].text"
+      ],
+      "writableFieldCount": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.logicalExtension.con.newArguments[1].text",
+        "candidate.logicalExtension.con.newArguments[2].text"
+      ],
+      "writableFieldCount": 2,
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "shardAttempts": 5,
+    "shardRetries": 0,
+    "changedLeafFields": 10,
+    "maximumWritableFieldsPerShard": 2,
+    "directIncrementalCostUsd": 0
+  }
+}
