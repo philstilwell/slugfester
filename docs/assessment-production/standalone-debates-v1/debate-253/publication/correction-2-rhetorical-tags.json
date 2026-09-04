@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/preserved-output-before-rhetorical-tag-review-after-reader-prose-repair.json",
+    "sha256": "d2a538d83728f1f0149cb8c7f02ae7314026cf3f3a1ed8aee9ab34d2928c36fd",
+    "bytes": 64934
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[0].exchanges[0].con.tags",
+        "candidate.sections[3].exchanges[1].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[4].exchanges[0].pro.tags",
+        "candidate.sections[4].exchanges[1].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.overall.pro.blunders[0].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 5,
+    "acceptedTagCount": 4,
+    "overallBlunderLinkChanges": 1,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/preserved-output-before-extension-depth-repair-after-reader-prose-repair.json",
+      "sha256": "5c715227a5a232f72af4c30b39621811cf9e6ba55317fca710348f26799d1f1e",
+      "bytes": 66458
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/rhetorical-tag-audit.json",
+      "sha256": "7babd561edf9e36057d19fcfc5047642827002e83fa8171c68c374c135c6c0b5",
+      "bytes": 68579
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "07a1d3723cc12aead983b3b87a6580c81572c9f5b22f1e58197eae4be2ea7530",
+      "bytes": 52084
+    }
+  }
+}

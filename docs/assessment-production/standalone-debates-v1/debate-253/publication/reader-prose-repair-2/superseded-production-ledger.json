@@ -1,0 +1,776 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/0Yg-YpvuteM/captions.srv3.xml",
+      "sha256": "03b39bbcbe7419ed1092020f7e569293b5c8905798b077cf79c7215e239c8277",
+      "bytes": 497945
+    },
+    "events": {
+      "path": ".assessment-cache/captions/0Yg-YpvuteM/events.json",
+      "sha256": "64fd257e763d7afb32cdac5dd074fd758f2193cd32b84fe189516a929cdf45e5",
+      "bytes": 254192
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/0Yg-YpvuteM/transcript.txt",
+      "sha256": "4ce1b65710afff7afd148fa10214948af6ac17c044c3d809f8faa68ef25b7109",
+      "bytes": 103943
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/0Yg-YpvuteM/manifest.json",
+      "sha256": "5b14d000f6ef532bc02eaeb0f2ab780a81a6715b524a20ff157579a8386383ae",
+      "bytes": 1007
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/source/source-lock.json",
+      "sha256": "31f0c1670dd340082e9a54c5ec6235e2f6fee306308bc0bcf82633e39a068de3",
+      "bytes": 4568
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/authorization.json",
+      "sha256": "054c7d7de51446323606ad7d737d3153f85e745a2f42dba0871e1d6406abe31d",
+      "bytes": 3566
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/inventory/inventory.json",
+      "sha256": "4e63d224d98254846751838c1f8b5ab792fdc90c884dabde0701e76bd22eb518",
+      "bytes": 92306
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/authorization.json",
+      "sha256": "054c7d7de51446323606ad7d737d3153f85e745a2f42dba0871e1d6406abe31d",
+      "bytes": 3566
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/manifest.json",
+      "sha256": "6fa93e8c2486d0cd639d5f23d30e30f5d3f69faa0da38791cbab652259eb8504",
+      "bytes": 7248
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/source/source-lock.json",
+      "sha256": "31f0c1670dd340082e9a54c5ec6235e2f6fee306308bc0bcf82633e39a068de3",
+      "bytes": 4568
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/inventory/inventory.json",
+      "sha256": "4e63d224d98254846751838c1f8b5ab792fdc90c884dabde0701e76bd22eb518",
+      "bytes": 92306
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/judgment-packet.json",
+      "sha256": "fced9725c08c3fa6daef8746197e9afcb3441b7662852278e20bf1c267113267",
+      "bytes": 4974
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/execution.json",
+      "sha256": "f5e77920f8cffd19e570442b0dae5f989cbbb7a2a8c43499819db06e59eef650",
+      "bytes": 2548
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/pass-a/output.json",
+      "sha256": "352310cc01fe852b1483af9dbf5af4e31069416ad6350761419d74a39d85e566",
+      "bytes": 78890
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/judgments/pass-b/output.json",
+      "sha256": "079e561216ed4648cc1177dd1a71e3c5b0adbfebc06a79bfe165ea376a5ef0b3",
+      "bytes": 59401
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/disagreements/disagreements.json",
+      "sha256": "3e751a9b04c114c274a1e27dcc59eb8ab6194b26ece45a2e2c871aa9a6b71bfb",
+      "bytes": 56028
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/audio/audio-verification.json",
+      "sha256": "73add7a729556ccef5eff14b53d4920fd4935b5cdb0baec4938a03e2a6b82ca3",
+      "bytes": 1625
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/adjudication/packet.json",
+      "sha256": "4231b11a057aeb652473c0f9b8f5dc762e3796c89c3effe5bd285698ca6732e7",
+      "bytes": 188271
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/adjudication/output.json",
+      "sha256": "2cf1a6fa150776522174d59b105468d41bd276930822a6774d146c5a0d877e54",
+      "bytes": 15627
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/final-ledger/final-ledger.json",
+      "sha256": "cc965c821a2971cb8212a93163ccd288a7c40917700c7a3a1a25d802c0013ad9",
+      "bytes": 294934
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/score-pass/input.json",
+      "sha256": "1c7a0e6cf6aa5d8bd373d9a099a1abb43cca5e57d399d23f881f48df4f7ab54f",
+      "bytes": 962
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/score-pass/output.json",
+      "sha256": "206a426e482637226d937f5faf65430453c89888bd1b9c53b2145d72a84e43a4",
+      "bytes": 17171
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/score-pass/attestation.json",
+      "sha256": "ec8f6a00a950f8aa6bd7694c94ee732f4a8f2962b1c2f47a8eb0d7497acd0f8a",
+      "bytes": 830
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/output.json",
+      "sha256": "c37293b2048eb99eb0098e624944ded02da164647a96502d51fbf629e92fe412",
+      "bytes": 69573
+    },
+    "events": {
+      "path": ".assessment-cache/captions/0Yg-YpvuteM/events.json",
+      "sha256": "64fd257e763d7afb32cdac5dd074fd758f2193cd32b84fe189516a929cdf45e5",
+      "bytes": 254192
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/0Yg-YpvuteM/transcript.txt",
+      "sha256": "4ce1b65710afff7afd148fa10214948af6ac17c044c3d809f8faa68ef25b7109",
+      "bytes": 103943
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/correction-1-content-parity.json",
+      "sha256": "6b8e7abd18bc68048874640adf9ada8fa1e9cf13bfa5017eb08b8494ddfe31ee",
+      "bytes": 2476
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/preserved-output-before-copyedit.json",
+      "sha256": "c2fc1e67d335778b3594dd10bf48c07116314b7e0ee212d29912c3432f908f3e",
+      "bytes": 64090
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/content-parity-audit.json",
+      "sha256": "e3b43ae39f895e9927e091b22b9aaf9e196c8e9a2015744348249094e6549905",
+      "bytes": 5880
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/correction-2-rhetorical-tags.json",
+      "sha256": "651b6dce95c8fef913d706b3c438b5637590265a0b38c7d435370b9ffab61f19",
+      "bytes": 2210
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/rhetorical-tag-audit.json",
+      "sha256": "7babd561edf9e36057d19fcfc5047642827002e83fa8171c68c374c135c6c0b5",
+      "bytes": 68579
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "6f72e856da28bf0c389b7075c341faf0e3ff03dbcd494100213813ffa48cd0c5",
+      "bytes": 3851
+    },
+    "publicationAiContributionDepthCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/correction-3-ai-contribution-depth.json",
+      "sha256": "1f2cb353fd4f387276f8a766561b0835fac1b4416027c3df688ec5372ffe287f",
+      "bytes": 15438
+    },
+    "publicationAiContributionDepthAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/content-parity-audit.json",
+      "sha256": "e3b43ae39f895e9927e091b22b9aaf9e196c8e9a2015744348249094e6549905",
+      "bytes": 5880
+    },
+    "publicationAiContributionDepthExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/ai-contribution-depth-execution.json",
+      "sha256": "0393608e6f8d40a6439646b03772976e9a2077c7f99bc722b097d3c4950f637d",
+      "bytes": 1892
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "253",
+    "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+    "sections": [
+      {
+        "sectionId": "probabilistic-framing",
+        "title": "Probability, worldview comparison, and qualified Christianity",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "evidential-chip-framing",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 79,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 87
+                },
+                "score": 78
+              },
+              {
+                "moveId": "rejects-hard-exclusivism",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 72,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 90
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "hiddenness-maternal-analogy",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 82,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 73
+                },
+                "score": 76
+              },
+              {
+                "moveId": "worldview-explanatory-costs",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 85,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 89
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "salvation-without-theology-test",
+        "title": "Salvation, sincere seeking, and explicit belief",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "sincere-seeking-can-save",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 80,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 76
+                },
+                "score": 76
+              },
+              {
+                "moveId": "seeking-means-serving-god",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 77,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 65
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "belief-condition-is-unjust",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 88,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 84
+                },
+                "score": 83
+              },
+              {
+                "moveId": "annihilation-still-penalizes-nonbelief",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 84
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "commitment-under-uncertainty",
+        "title": "Practice, belief, and commitment under uncertainty",
+        "weightPercent": 13,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "practice-can-precede-belief",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 78,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 72
+                },
+                "score": 72
+              },
+              {
+                "moveId": "choose-best-expected-path",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 77,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 62
+                },
+                "score": 69
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "practice-presupposes-belief-reason",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 85
+              },
+              {
+                "moveId": "tiny-probability-cannot-displace-values",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 90,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 81
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "virtue-and-self-sacrifice",
+        "title": "Virtue, belief costs, and self-sacrifice",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "christian-practice-forms-virtue",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 79,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 76
+                },
+                "score": 74
+              },
+              {
+                "moveId": "theism-adds-ultimate-good",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 45,
+                  "responsiveness": 77,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 64
+                },
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "ethical-life-has-lower-belief-cost",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 88
+                },
+                "score": 83
+              },
+              {
+                "moveId": "eternal-reward-converts-sacrifice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 82,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 65
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "chosen-hell-and-christlike-sacrifice",
+        "title": "Chosen hell and Christlike substitution",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 63,
+            "moves": [
+              {
+                "moveId": "substitution-scenario-is-inapplicable",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 62,
+                  "relevanceBurden": 65,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 58
+                },
+                "score": 62
+              },
+              {
+                "moveId": "hell-expresses-prioritized-love",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 45,
+                  "responsiveness": 68,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 55
+                },
+                "score": 63
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "christlike-test-restores-trade",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 89,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 82
+                },
+                "score": 77
+              },
+              {
+                "moveId": "jesus-could-use-same-refusal",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 93,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 87
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "parental-love-and-annihilation",
+        "title": "Parental love, eternal torment, and annihilation",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "lewis-hell-is-qualified-fallback",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 93
+                },
+                "score": 78
+              },
+              {
+                "moveId": "concedes-pressure-against-eternal-torment",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 94,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 96
+                },
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "loving-parent-overrides-destructive-choice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 93,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 88
+                },
+                "score": 86
+              },
+              {
+                "moveId": "annihilation-leaves-relational-logic",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 94,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 92
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "freedom-certainty-and-hiddenness",
+        "title": "Freedom, certainty, prevalence, and the goods of hiddenness",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 66,
+            "moves": [
+              {
+                "moveId": "theism-is-widespread",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 73,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 74
+                },
+                "score": 70
+              },
+              {
+                "moveId": "freedom-requires-unforced-choice",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 60,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 60
+                },
+                "score": 63
+              },
+              {
+                "moveId": "hiddenness-enables-cooperation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 50,
+                  "responsiveness": 58,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 60
+                },
+                "score": 63
+              },
+              {
+                "moveId": "commitment-does-not-require-certainty",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 60,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 82
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "one-nonbeliever-suffices",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 92,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 83
+                },
+                "score": 83
+              },
+              {
+                "moveId": "choice-requires-known-option",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 96,
+                  "relevanceBurden": 94,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 93
+                },
+                "score": 90
+              },
+              {
+                "moveId": "other-goods-replace-lost-inquiry",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 94,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 90
+                },
+                "score": 84
+              },
+              {
+                "moveId": "ordinary-belief-is-the-relevant-certainty",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 96,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 93
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 72.12,
+        "burdenCompletionAdjustment": 0,
+        "score": 72
+      },
+      "con": {
+        "weightedSectionMean": 82.84,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "con",
+    "winningMargin": 11,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.75,
+      "maximumDistance": 4,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 32,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}
