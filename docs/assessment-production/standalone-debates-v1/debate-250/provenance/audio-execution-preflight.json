@@ -1,0 +1,16 @@
+{
+  "status": "passed-before-first-paid-call",
+  "debateNumber": "250",
+  "videoId": "q6-57NNo5fA",
+  "controller": {
+    "path": "scripts/tmp-standalone-audio-execution.mjs",
+    "sha256": "31492e2c8b755647178e71e9390206f45f4eaad6bda8786bd0bcf27df0fd563f",
+    "bytes": 7961
+  },
+  "identityReview": "Registry and frozen plan exclusively provide identity, current speaker references, clips, paths and counts. Prior debate number, slug, speakers, video ID, reference windows, assumed counts and overrides are absent.",
+  "guards": "Current explicit approval is authenticated to the frozen plan; existing attempts cannot be repeated; clips and references are hash-checked; all earlier attempts must be complete; actual cost plus remaining conservative reserves must fit the approved budget before any new paid call.",
+  "initialDiagnostic": "A read-only hash check initially passed an absolute skill path to the repository-relative fileRecord helper. No files or frozen controls changed. The check was corrected to read absolute skill paths directly, and every source, control and skill hash then matched.",
+  "sourceAndControlHashesUnchanged": true,
+  "paidRetries": 0,
+  "manualRhetoricalOverrides": []
+}

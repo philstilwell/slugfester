@@ -1,0 +1,49 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {execFileSync,spawnSync} from 'node:child_process';
+import {pathToFileURL} from 'node:url';
+import {gzipSync,gunzipSync} from 'node:zlib';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');
+assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const root=entry.root;
+const git=(...args)=>execFileSync('git',args,{encoding:'utf8',maxBuffer:64*1024*1024}).trim();
+const write=(p,x)=>{assert.equal(fs.existsSync(p),false);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,serializedJson(x),{flag:'wx'});};
+assert.equal(git('branch','--show-current'),`codex/debate-${number}`);
+if(phase==='review'){
+ const original=execFileSync('git',['show','HEAD:src/data/debates.js'],{encoding:'utf8',maxBuffer:64*1024*1024});
+ const src=original.replaceAll('"./topic-assignments.js"',JSON.stringify(pathToFileURL(path.resolve('src/data/topic-assignments.js')).href)).replaceAll('"./ai-contributions.js"',JSON.stringify(pathToFileURL(path.resolve('src/data/ai-contributions.js')).href));
+ const before=(await import('data:text/javascript;base64,'+Buffer.from(src).toString('base64'))).debates;
+ const after=(await import('../src/data/debates.js')).debates;
+ assert.equal(after.length,before.length+1);assert.equal(after.at(-1).number,number);assert.equal(after.at(-1).id,entry.debateId);assert.deepEqual(after.slice(0,-1),before);
+ for(const p of ['docs/assessment-production/standalone-debates-v1/registry.json','docs/calibration/v2.1/corpus-transcript-audit.json']){
+  const a=read(p),b=JSON.parse(git('show','HEAD:'+p)),key=Array.isArray(a.debates)?'debates':'entries';assert.equal(a[key].length,b[key].length+1);assert.deepEqual(a[key].slice(0,-1),b[key]);
+ }
+ const expected=['docs/assessment-production/standalone-debates-v1/registry.json','docs/calibration/v2.1/corpus-transcript-audit.json','src/data/debates.js','feed.xml','index.html','interlocutor/james-anderson/index.html','interlocutor/tom-jump/index.html','rankings/index.html','search/index.html','sitemap.xml','src/data/debate-analytics.js','src/data/debate-summaries.js','src/data/reference-appearances/fallacy-begging-the-question.js','src/data/reference-appearances/fallacy-equivocation.js','src/data/reference-appearances/fallacy-red-herring.js','topics/index.html'];
+ const changed=git('diff','--name-only').split('\n').filter(Boolean);assert.deepEqual(changed.toSorted(),expected.toSorted());
+ const files=[];function walk(p){for(const d of fs.readdirSync(p,{withFileTypes:true})){const f=path.join(p,d.name);if(d.isDirectory())walk(f);else if(d.isFile())files.push(f);else throw new Error('Unexpected special file: '+f);}}walk(root);
+ const secretPatterns=[/\bsk-(?:proj-|svcacct-)?[A-Za-z0-9_-]{30,}/,/\bgh[pousr]_[A-Za-z0-9]{30,}/,/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/];
+ for(const f of [...files,...changed]){const s=fs.readFileSync(f,'utf8');assert.ok(!secretPatterns.some(r=>r.test(s)),'Credential-shaped content detected; inspect locally without printing it.');}
+ write(`${root}/validation/final-diff-review.json`,{status:'passed',debateNumber:number,baselineCommit:git('rev-parse','HEAD'),earlierProductionDebatesUnchanged:before.length,earlierRegistryAndTranscriptEntriesUnchanged:true,trackedChangeScope:changed,assessmentRulesAndTestsChanged:false,corpusFormattingOnlyNote:'Five existing track objects were reserialized across lines; parsed historical entries are unchanged.',secretsScan:{files:files.length+changed.length,matches:0},controller:fileRecord('scripts/tmp-standalone-closeout.mjs'),completedAt:new Date().toISOString()});
+ console.log('Final diff and credential-shape review passed.');
+}else if(phase==='preflight'){
+ assert.equal(read(`${root}/validation/final-local-gates.json`).status,'passed');
+ assert.equal(read(`${root}/validation/final-diff-review.json`).status,'passed');
+ const log=`${root}/validation/precommit-site-preflight.log`;assert.equal(fs.existsSync(log),false);
+ const r=spawnSync('npm',['run','site:preflight'],{encoding:'utf8',maxBuffer:32*1024*1024});fs.writeFileSync(log,(r.stdout||'')+(r.stderr||''),{flag:'wx'});
+ write(`${root}/validation/precommit-site-preflight.json`,{status:r.status===0?'passed':'failed',command:'npm run site:preflight',exitCode:r.status,output:fileRecord(log),controller:fileRecord('scripts/tmp-standalone-closeout.mjs'),completedAt:new Date().toISOString()});
+ console.log(JSON.stringify({exitCode:r.status,tail:((r.stdout||'')+(r.stderr||'')).slice(-2500)}));process.exitCode=r.status??1;
+}else if(phase==='archive'){
+ assert.equal(read(`${root}/validation/precommit-site-preflight.json`).status,'passed');
+ assert.equal(read(`${root}/provenance/resume-runtime-cleanup.json`).originalTargetsPreserved,true);
+ assert.equal(read(`${root}/provenance/historical-runtime-cleanup.json`).originalTargetsPreserved,true);
+ const names=['tmp-freeze-audio-review','tmp-prepare-adjudication-execution','tmp-prepare-publication-isolation-recovery','tmp-prepare-standalone-source','tmp-refine-score-blind-inventory','tmp-standalone-audio-execution','tmp-standalone-audio-plan','tmp-standalone-browser-evidence','tmp-standalone-finalize-controller','tmp-standalone-integration-controller','tmp-standalone-local-runtime','tmp-standalone-prose-check','tmp-standalone-prose-repair-controller','tmp-standalone-publication-controller','tmp-standalone-resume-runtime','tmp-standalone-rhetorical-controller','tmp-standalone-stage-controller','tmp-standalone-historical-runtime','tmp-standalone-closeout'];
+ const records=[];fs.mkdirSync(`${root}/provenance/controllers`,{recursive:true});
+ for(const name of names){const p=`scripts/${name}.mjs`;assert.equal(git('ls-files','--',p),'');assert.ok(fs.lstatSync(p).isFile());const bytes=fs.readFileSync(p),compressed=bytes.length>70000,dest=`${root}/provenance/controllers/${name}.mjs.txt${compressed?'.gz':''}`;assert.equal(fs.existsSync(dest),false);fs.writeFileSync(dest,compressed?gzipSync(bytes):bytes,{flag:'wx'});assert.deepEqual(compressed?gunzipSync(fs.readFileSync(dest)):fs.readFileSync(dest),bytes);records.push({original:fileRecord(p),archive:fileRecord(dest),encoding:compressed?'gzip':'utf8'});}
+ write(`${root}/provenance/controller-archive.json`,{status:'archived-exact-bytes-and-removed-owned-executables',debateNumber:number,records,unusedControllers:['tmp-standalone-prose-repair-controller'],note:'Assessment execution counts remain governed by the frozen execution records; archiving does not execute model work or scoring.',completedAt:new Date().toISOString()});
+ for(const r of records){assert.deepEqual(fileRecord(r.original.path),r.original);fs.unlinkSync(r.original.path);}
+ console.log(JSON.stringify({archivedControllers:records.length,ownedExecutablesRemoved:records.length}));
+}else throw new Error('Unknown phase');

@@ -1,0 +1,48 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1];
+const number=arg('--debate');assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);
+assert.ok(entry);
+const root=entry.root,audioRoot=`${root}/audio`,outputRoot=`output/transcribe/standalone-debate-v1/debate-${number}`;
+const inventoryPath=`${root}/inventory/inventory.json`,inventory=read(inventoryPath),auth=read(`${root}/authorization.json`);
+const acquisition=read(`${audioRoot}/source-acquisition-diagnostic.json`),sourceLock=read(`${root}/source/source-lock.json`);
+for(const value of [auth.identity.videoId,acquisition.videoId,sourceLock.identity.videoId])assert.equal(value,entry.videoId);
+assert.equal(inventory.debateId,entry.debateId);assert.equal(inventory.debateNumber,number);
+const planPath=`${audioRoot}/plan.json`;assert.equal(fs.existsSync(planPath),false);
+const sourcePath=acquisition.sourcePath;
+const duration=Number(execFileSync('ffprobe',['-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',sourcePath],{encoding:'utf8'}));
+assert.equal(duration,acquisition.measuredDurationSeconds);
+assert.ok(Math.abs(duration-sourceLock.content.sourceDurationMs/1000)<2);
+const cut=(name,startMs,endMs)=>{
+ const p=`${outputRoot}/clips/${name}.mp3`;assert.equal(fs.existsSync(p),false);
+ fs.mkdirSync(path.dirname(p),{recursive:true});
+ execFileSync('ffmpeg',['-v','error','-n','-ss',String(startMs/1000),'-i',sourcePath,'-t',String((endMs-startMs)/1000),'-vn','-ac','1','-ar','16000','-b:a','64k',p]);
+ return {...fileRecord(p),startMs,endMs,durationSeconds:(endMs-startMs)/1000};
+};
+const events=read(`.assessment-cache/captions/${entry.videoId}/events.json`);
+const references={
+ videoId:'q6-57NNo5fA',
+ pro:{speaker:'James Anderson',startMs:60000,endMs:66000,anchor:'professor of Theology',basis:'The host addresses his guest as James at 00:44–00:52; the guest thanks Tom and identifies his theology and philosophy teaching appointment. The reference is within that uninterrupted self-introduction.'},
+ con:{speaker:'Tom Jump',startMs:91000,endMs:97000,anchor:'naturalistic explanations',basis:'The James introduction addresses the host as Tom. After accepting the introduction the same host states his own atheism and naturalistic position beginning at 01:30; this reference is within that uninterrupted statement.'}
+};
+assert.equal(references.videoId,entry.videoId);
+const refs=['pro','con'].map(side=>{
+ const r=references[side];assert.equal(r.speaker,auth.identity[side].speaker);
+ const matching=events.filter(e=>e.startMs<r.endMs&&e.startMs+e.durationMs>r.startMs);
+ assert.ok(matching.map(e=>e.text).join(' ').includes(r.anchor));
+ return {name:r.speaker,sourceMoveId:null,openingIntroductionReference:true,attributionBasis:r.basis,startMs:r.startMs,endMs:r.endMs,clip:cut(`${side}-speaker-reference`,r.startMs,r.endMs)};
+});
+const clips=inventory.moves.filter(m=>m.attributionConfidence!=='high').map(m=>({moveId:m.moveId,speaker:m.speaker,attributionRationale:m.attributionRationale,clip:cut(m.moveId,Math.max(0,m.sourceSpan.startMs-6000),Math.min(Math.floor(duration*1000),m.sourceSpan.endMs+6000)),responsePath:`${outputRoot}/transcripts/${m.moveId}.json`}));
+const round=n=>Math.round(n*1e9)/1e9;
+const referenceSeconds=refs.reduce((sum,r)=>sum+r.clip.durationSeconds,0);
+const estimatedSecondsIncludingReferences=clips.reduce((sum,c)=>sum+c.clip.durationSeconds,0)+clips.length*referenceSeconds;
+const maximumUsd=round(clips.length*(16000*2.5+6000*10)/1000000);
+const standingMaximum=auth.cost.standingPaidTranscriptionMaximumUsd,requiresAdditionalAuthorization=maximumUsd>standingMaximum;
+const plan={schemaVersion:'1.0-bounded-audio-attribution-plan',status:requiresAdditionalAuthorization?'frozen-awaiting-explicit-cost-authorization':'frozen-before-paid-calls',debateNumber:number,debateId:entry.debateId,inventory:fileRecord(inventoryPath),source:fileRecord(sourcePath),sourceDurationSeconds:duration,sourceAcquisition:`Existing yt-dlp public visionos extraction, original English format ${acquisition.selectedFormat}; current-video selection recorded.`,acquisitionDiagnostic:fileRecord(`${audioRoot}/source-acquisition-diagnostic.json`),model:'gpt-4o-transcribe-diarize',responseFormat:'diarized_json',chunkingStrategy:'auto',language:'en',speakerReferences:refs,clips,estimatedSecondsIncludingReferences,cost:{estimatedUsd:round(estimatedSecondsIncludingReferences/60*0.006),maximumUsd,maximumForDebateUsd:standingMaximum,requiresAdditionalAuthorization,priorKnownCostUsd:0,priorUncertainCostUsd:0,pricingUrl:'https://developers.openai.com/api/docs/pricing',modelPricingUrl:'https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize',pricingRetrievedAt:new Date().toISOString(),inputPerMillionUsd:2.5,outputPerMillionUsd:10,planningInputTokensPerCall:16000,planningOutputTokensPerCall:6000,planningCaveat:'The time-based estimate is indicative. The larger conservative planning maximum allows for segmented outputs and is not a server-enforced billing cap; actual usage must be checked before every remaining call.'},execution:{sequential:true,maximumAttemptsPerClip:1,automaticRetries:0,fullMediaTranscription:false,transport:'Native multipart fetch without automatic retry; no paid request is made by this preparation controller.'}};
+fs.mkdirSync(audioRoot,{recursive:true});fs.writeFileSync(planPath,serializedJson(plan),{flag:'wx'});
+console.log(JSON.stringify({debateNumber:number,duration,clipCount:clips.length,estimatedSecondsIncludingReferences,cost:plan.cost},null,2));

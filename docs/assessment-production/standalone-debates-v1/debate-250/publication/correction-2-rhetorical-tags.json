@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "4c1387396cd2865e191c3b386e4c17b1a70615a60bc56469bb0d85f6dfb22a94",
+    "bytes": 65060
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[1].exchanges[0].con.tags",
+        "candidate.sections[2].exchanges[1].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[6].exchanges[0].pro.tags",
+        "candidate.sections[6].exchanges[1].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[6].exchanges[1].con.tags",
+        "candidate.overall.pro.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.overall.con.blunders[0].links",
+        "candidate.overall.con.blunders[1].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.overall.con.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 5,
+    "overallBlunderLinkChanges": 4,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/output.json",
+      "sha256": "43d2e38c4e10a2cdd1d0d75f1f6c7dd0a68898501e80735439c70c5736141bb5",
+      "bytes": 67328
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-audit.json",
+      "sha256": "ff2bc5658a39499637fcfdcafab75a444ad537986f1eae3702fd5be3967a42a2",
+      "bytes": 94976
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "feec73285275a0b9047b34c896459965499d1eb6857043a2461b2f5688c08aba",
+      "bytes": 66884
+    }
+  }
+}

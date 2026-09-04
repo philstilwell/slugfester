@@ -1,0 +1,68 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {fileRecord,serializedJson,validateStandaloneInventory,validateStandalonePrimaryJudgment} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1];
+const number=arg('--debate'),phase=arg('--phase');
+assert.match(number||'',/^\d{3,}$/);
+const read=f=>JSON.parse(fs.readFileSync(f));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);
+assert.ok(entry); const root=entry.root;
+const write=(f,v)=>{assert.equal(fs.existsSync(f),false,`${f} already exists`);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,serializedJson(v),{flag:'wx'});};
+const record=f=>fileRecord(f);
+const command=mode=>execFileSync(process.execPath,['scripts/audit-assessment-production-standalone-v1.mjs',mode,'--debate',number],{encoding:'utf8',maxBuffer:5*1024*1024});
+const authorization=read(`${root}/authorization.json`);
+assert.equal(authorization.identity.videoId,entry.videoId);
+assert.equal(authorization.identity.debateId,entry.debateId);
+if(phase==='inventory'){
+ const rawPath=`${root}/inventory/model-output.json`,refinementPath=`${root}/inventory/score-blind-refinement.json`,refinement=read(refinementPath);
+ assert.equal(refinement.preservedModelOutput.sha256,record(rawPath).sha256);
+ assert.equal(refinement.reviewedOutput.sha256,record(refinement.reviewedOutput.path).sha256);
+ assert.equal(refinement.judgmentCallsBeforeRefinement,0);
+ const inventory=read(refinement.reviewedOutput.path);
+ const events=read(`.assessment-cache/captions/${entry.videoId}/events.json`);
+ const baseline=read(`${root}/manifest-pre-inventory.json`);
+ for(const r of [...Object.values(baseline.sourceLocks),...Object.values(baseline.controlLocks)])assert.equal(record(r.path).sha256,r.sha256);
+ assert.equal(inventory.motion,authorization.identity.motion);
+ assert.equal(inventory.debateNumber,number);assert.equal(inventory.debateId,entry.debateId);
+ const validation=validateStandaloneInventory(inventory,events);
+ const totals=Object.fromEntries(['pro','con'].map(side=>[side,inventory.moves.filter(m=>m.side===side).length]));
+ const sections=inventory.sections.map(s=>({sectionId:s.sectionId,...Object.fromEntries(['pro','con'].map(side=>[side,inventory.moves.filter(m=>m.sectionId===s.sectionId&&m.side===side).length]))}));
+ for(const [i,s] of sections.entries())for(const side of ['pro','con']){
+  assert.equal(s[side],inventory.selectionBalanceAudit.sections[i][side]);
+  assert.equal(s[side],inventory.publicationCapacityAudit.sections[i][side]);assert.ok(s[side]<=4);
+ }
+ const ids=new Set(inventory.moves.map(m=>m.moveId)),coverage=inventory.fullTranscriptCoverageAudit.intervals;
+ let next=0;
+ for(const interval of coverage){
+  assert.equal(interval.startEvent,next,'coverage gap or overlap');
+  assert.ok(Number.isInteger(interval.endEvent)&&interval.endEvent>=next&&interval.endEvent<events.length);
+  assert.ok(interval.rationale.trim().length>=20);assert.ok(interval.moveIds.every(id=>ids.has(id)));next=interval.endEvent+1;
+ }
+ assert.equal(next,events.length,'coverage is not complete');
+ const source=read(`${root}/source/source-lock.json`);
+ for(const move of inventory.moves){
+  if(move.sourceSpan.excerpt.length>2200)assert.ok(move.longSpanRationale?.trim().length>=40,`${move.moveId}: long span lacks rationale`);
+  assert.ok(move.sourceSpan.startMs>=source.participants.assessedDebateWindowMs.start);
+  assert.ok(move.sourceSpan.endMs<=source.participants.assessedDebateWindowMs.end,`${move.moveId}: beyond assessed window`);
+ }
+ const canonicalPath=`${root}/inventory/inventory.json`;write(canonicalPath,inventory);
+ write(`${root}/inventory/controller-validation.json`,{status:'passed',debateNumber:number,debateId:entry.debateId,sourceExactValidation:validation,independentlyRecomputedTotals:totals,independentlyRecomputedSections:sections,coverageIntervals:coverage.length,eventsCovered:next,wholeSourceReviewedByController:true,semanticSectionAndBurdenReview:'The controller read the complete transcript independently and reviewed every selected move, distinctness, response link, section boundary, and source span before acceptance. One reply target and substantive exact quotation candidates were refined before judgment; original model bytes are preserved.',sourceSpanCeilingApplied:true,allFourthRowsPreauthorized:inventory.publicationCapacityAudit.allFourthRowsPreauthorized,raw:record(rawPath),scoreBlindRefinement:record(refinementPath),accepted:record(canonicalPath)});
+ write(`${root}/inventory/execution.json`,{status:'complete-and-schema-valid',debateNumber:number,debateId:entry.debateId,model:'gpt-5.6-sol',displayModel:'5.6 Sol',reasoningEffort:'low',authentication:'ChatGPT subscription',isolationMethod:'fresh-built-in-subagent-fork-none',agentTask:`/root/inventory_${number}`,executionPlan:record(`${root}/inventory/execution-plan.json`),rawOutput:record(rawPath),canonicalOutput:record(canonicalPath),attempts:1,retries:0,completedAt:new Date().toISOString(),directIncrementalCostUsd:0});
+ write(`${root}/manifest.json`,{...baseline,status:'inputs-frozen-before-judgment',sourceLocks:{...baseline.sourceLocks,inventory:record(canonicalPath)},frozenAt:new Date().toISOString()});
+ console.log(command('--write-judgment-packet'));
+ const packetPath=`${root}/judgments/judgment-packet.json`,packet=read(packetPath);
+ write(`${root}/judgments/execution-plan.json`,{status:'frozen-before-execution',debateNumber:number,debateId:entry.debateId,model:'gpt-5.6-sol',displayModel:'5.6 Sol',reasoningEffort:'low',authentication:'ChatGPT subscription',freshContextPerPass:true,forkTurns:'none',sharedPacket:record(packetPath),allowedInputs:[record(packetPath),...Object.values(packet.evidenceLocks)],passes:['pass-a','pass-b'].map((pass,i)=>({pass,agentTask:`/root/judgment_${number}_${i?'b':'a'}`,writablePaths:[`${root}/judgments/${pass}/output.json`],attemptLimit:1,retries:0})),directIncrementalCostUsd:0});
+ console.log(JSON.stringify({validation,totals,sections,coverageIntervals:coverage.length},null,2));
+}else if(phase==='judgments'){
+ const inventoryPath=`${root}/inventory/inventory.json`,inventory=read(inventoryPath),inventorySha256=record(inventoryPath).sha256;
+ const packetPath=`${root}/judgments/judgment-packet.json`;
+ const passes=['pass-a','pass-b'].map((pass,i)=>{
+  const outputPath=`${root}/judgments/${pass}/output.json`,output=read(outputPath);
+  const validation=validateStandalonePrimaryJudgment(output,inventory,{expectedPass:pass,expectedInventorySha256:inventorySha256});
+  return {pass,outputPath,outputSha256:record(outputPath).sha256,outputBytes:record(outputPath).bytes,judgmentCount:validation.moves,validationStatus:'passed',validationError:null,attemptCount:1,retryCount:0,writablePaths:[outputPath],agentTask:`/root/judgment_${number}_${i?'b':'a'}`};
+ });
+ write(`${root}/judgments/execution.json`,{schemaVersion:'1.1-standalone-judgment-execution',protocolVersion:'standalone-debate-v1',debateNumber:Number(number),debateId:entry.debateId,status:'complete-and-schema-valid',execution:{model:'gpt-5.6-sol',displayModel:'5.6 Sol',reasoningEffort:'low',billingSurface:'ChatGPT subscription',freshContextPerPass:true,forkTurns:'none',simultaneousLaunch:true,isolationMethod:'Two fresh built-in isolated subagents with explicit score-blind input boundaries and disjoint output paths',sharedPacketPath:packetPath,judgmentPacketSha256:record(packetPath).sha256,inventorySha256,allowedInputsIdentical:true,outputsDisjoint:true,attemptCountPerPass:1,retryCountPerPass:0,directIncrementalCostUsd:0},passes,completedAt:new Date().toISOString(),audit:{primaryContexts:2,schemaValidPasses:2,identicalEvidencePackets:true,mutuallyBlind:true,calculatedScoresSeenByModels:false,publicationSeenByModels:false,rerunPermitted:false}});
+ console.log(command('--write-disagreements'));console.log(JSON.stringify(passes,null,2));
+}else throw new Error('Unknown phase');

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const number=process.argv[process.argv.indexOf('--debate')+1];assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),record=fileRecord;
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert.ok(entry);
+const root=entry.root,planPath=`${root}/audio/plan.json`,plan=read(planPath),notesPath=`${root}/audio/controller-review-notes.json`,notes=read(notesPath),out=`${root}/audio/controller-review.json`;
+assert.equal(fs.existsSync(out),false);assert.equal(plan.debateNumber,number);assert.equal(plan.debateId,entry.debateId);
+assert.deepEqual(Object.keys(notes),plan.clips.map(c=>c.moveId));
+const checks=plan.clips.map(c=>{
+ const file=`${root}/audio/responses/${c.moveId}.json`,response=read(file),attempt=read(`${root}/audio/responses/${c.moveId}.attempt.json`);
+ assert.equal(attempt.status,'complete');assert.equal(attempt.response.sha256,record(file).sha256);
+ assert.ok(response.segments.some(s=>s.speaker===c.speaker&&s.text.trim()));assert.ok(notes[c.moveId].length>=80);
+ return {moveId:c.moveId,confirmedSpeaker:c.speaker,responseSha256:record(file).sha256,rationale:notes[c.moveId]};
+});
+fs.writeFileSync(out,serializedJson({status:'complete-and-confirmed',debateNumber:number,debateId:entry.debateId,plan:record(planPath),notes:record(notesPath),checks,allReturnedSegmentsRead:true,allSelectedAttributionsReviewed:true,inventoryChanged:false,completedAt:new Date().toISOString()}),{flag:'wx'});
+console.log(JSON.stringify({status:'complete-and-confirmed',checks:checks.length}));

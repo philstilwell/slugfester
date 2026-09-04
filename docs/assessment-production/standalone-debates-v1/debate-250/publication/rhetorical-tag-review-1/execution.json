@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "00980997a00bed874bd164a2a39c9ddcf3603a6b88ae7aa729bdaa738318ba44",
+    "bytes": 100871
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_250_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "00980997a00bed874bd164a2a39c9ddcf3603a6b88ae7aa729bdaa738318ba44",
+        "bytes": 100871
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "bd23634af080aaa3468a66617c191a7118cfe010d9f3cbcadc1e5cf1a1da7dbc",
+        "bytes": 26799
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_250_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "00980997a00bed874bd164a2a39c9ddcf3603a6b88ae7aa729bdaa738318ba44",
+        "bytes": 100871
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "14e6a4b97232c16f810dbfec5b330424649e514ff69025af516b3732db700dd2",
+        "bytes": 27494
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_250_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "ec67c3c1f2ddc2979afcd64fb8d3fb2384216c7d2a1e95712b285e32545153c2",
+        "bytes": 152457
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "c5a531c3a48c27887aa6ab07c744b99dae1bd5268aefe78628f3d5a01eef51e3",
+        "bytes": 17921
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 43
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-04T13:34:28.914Z"
+}

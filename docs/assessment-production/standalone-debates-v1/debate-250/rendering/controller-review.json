@@ -1,0 +1,57 @@
+{
+  "status": "passed-complete-content-and-visual-review",
+  "debateNumber": "250",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/output.json",
+    "sha256": "43d2e38c4e10a2cdd1d0d75f1f6c7dd0a68898501e80735439c70c5736141bb5",
+    "bytes": 67328
+  },
+  "evidence": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/rendering/evidence/desktop.json",
+      "sha256": "741425df6ddaeb369a9146d46141e83d6b764b28ece8aab654fddf0fc5e5c7cf",
+      "bytes": 108970
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/rendering/evidence/mobile.json",
+      "sha256": "4707386a4c00f18f8d324501c7fa8cd310324683adc73f5baed5447a1103ed9e",
+      "bytes": 108977
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/rendering/evidence/tags-and-discovery.json",
+      "sha256": "76b545a9a4341b8a8df25d988895c912a8742ac0c8fb6f3a6fd67e85db370a10",
+      "bytes": 7477
+    }
+  ],
+  "checks": {
+    "critiquePointerControlPassed": true,
+    "critiqueKeyboardEnterPassed": true,
+    "critiqueKeyboardSpacePassed": true,
+    "aiAccordionKeyboardEnterOpened": true,
+    "aiAccordionKeyboardSpaceClosed": true,
+    "aiAccordionInitiallyCollapsed": true,
+    "mobileCritiqueThenDistantControlPassed": true,
+    "mobileAiAccordionOpened": true,
+    "mobileCritiqueClearedAfterTransition": true,
+    "referenceNavigationAndOccurrenceAnchorPassed": true,
+    "allDescriptionsAndCritiquesMatchPublication": true,
+    "allArgumentTagsAndOverallLinksMatch": true,
+    "allAIContentStringsMatch": true,
+    "sourceLinkSideLabelsTimestampsAndScoresMatch": true,
+    "assessmentBylineMatches": true,
+    "bothExistingPortraitsAndProfileLinksWork": true,
+    "searchAndTopicDiscoveryPassed": true,
+    "bothProfilesIncludeDebate": true,
+    "sitemapIncludesDebate": true,
+    "noHorizontalOverflow": true,
+    "noConsoleErrorsOrWarnings": true,
+    "allResourcesLoaded": true,
+    "visualInspectionPassed": true
+  },
+  "notes": [
+    "Every displayed description, critique, section score, timestamp, role, quotation, overall item and AI content string was compared with publication bytes.",
+    "Inspected settled desktop and phone screenshots, open critiques, fallacy context, AI prose, and the local occurrence target; no clipped prose or empty cards.",
+    "Transient animation captures were superseded by settled captures. No site code or CSS change was required.",
+    "Owned browser debate250 and the source-preview server were closed before this rendering freeze."
+  ]
+}

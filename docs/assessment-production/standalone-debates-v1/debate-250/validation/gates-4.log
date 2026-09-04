@@ -1,0 +1,41 @@
+
+> slugfester@0.1.0 check
+> node scripts/validate-topic-categories.mjs && node --check src/app.js && node --check src/seo.js && node --check src/data/debates.js && node --check src/data/interlocutors.js && node --check src/data/references.js && node --check scripts/acquire-youtube-captions.mjs && node --check scripts/acquire-corpus-captions.mjs && node --check scripts/normalize-openai-diarized-transcript.mjs && node --check scripts/validate-corpus-transcripts.mjs && node --check scripts/validate-complete-gate.mjs && node --check scripts/validate-scoring-pass-v2.2.mjs && node --check scripts/prepare-v22-gate-sources.mjs && node --check scripts/validate-v22-gate-sources.mjs && node --check scripts/build-v22-gate-ledgers.mjs && node --check scripts/validate-v22-adjudication.mjs && node --check scripts/analyze-v22-gate.mjs && node --check scripts/validate-v22-complete-gate.mjs && node --check scripts/prepare-v23-gate-sources.mjs && node --check scripts/validate-v23-gate-sources.mjs && node --check scripts/validate-response-classification-v2.3.mjs && node --check scripts/validate-v23-response-lock.mjs && node --check scripts/validate-scoring-pass-v2.3.mjs && node --check scripts/validate-v23-score-adjudication.mjs && node --check scripts/build-v23-gate-ledgers.mjs && node --check scripts/analyze-v23-gate.mjs && node --check scripts/validate-v23-complete-gate.mjs && node --check scripts/extract-v24-development-disagreements.mjs && node --check scripts/validate-v24-source-chain.mjs && node --check scripts/validate-v24-development.mjs && node --check scripts/validate-v24-atomic-inventory.mjs && node --check scripts/validate-v24-inventory-review.mjs && node --check scripts/validate-v24-annotation-pass.mjs && node --check scripts/validate-v24-annotation-lock.mjs && node --check scripts/analyze-v24-held-out-gate.mjs && node --check scripts/validate-v24-complete-gate.mjs && node --check scripts/lib/v25-derived-annotations.mjs && node --check scripts/extract-v25-development-cases.mjs && node --check scripts/build-v25-development-examples.mjs && node --check scripts/validate-v25-development.mjs && node --check scripts/validate-v25-source-chain.mjs && node --check scripts/validate-v25-atomic-inventory.mjs && node --check scripts/validate-v25-inventory-review.mjs && node --check scripts/validate-v25-third-review.mjs && node --check scripts/validate-v25-annotation-pass.mjs && node --check scripts/validate-v25-annotation-lock.mjs && node --check scripts/analyze-v25-held-out-gate.mjs && node --check scripts/validate-v25-complete-gate.mjs && node --check scripts/lib/v26-derived-annotations.mjs && node --check scripts/extract-v26-target-contact-disputes.mjs && node --check scripts/build-v26-target-contact-examples.mjs && node --check scripts/validate-v26-development.mjs && node --check scripts/analyze-v26-development.mjs && node --check scripts/validate-v26-atomic-inventory.mjs && node --check scripts/validate-v26-source-chain.mjs && node --check scripts/validate-v26-inventory-review.mjs && node --check scripts/validate-v26-third-review.mjs && node --check scripts/validate-v26-annotation-pass.mjs && node --check scripts/validate-v26-annotation-lock.mjs && node --check scripts/analyze-v26-held-out-gate.mjs && node --check scripts/validate-v26-complete-gate.mjs && node --check scripts/lib/v27-derived-annotations.mjs && node --check scripts/extract-v27-development-disagreements.mjs && node --check scripts/build-v27-development-examples.mjs && node --check scripts/validate-v27-development.mjs && node --check scripts/test-v27-derived-annotations.mjs && node --check scripts/analyze-v27-development.mjs && node --check scripts/validate-v27-atomic-inventory.mjs && node --check scripts/validate-v27-annotation-pass.mjs && node --check scripts/validate-v27-inventory-review.mjs && node --check scripts/validate-v27-annotation-lock.mjs && node --check scripts/analyze-v27-held-out-gate.mjs && node --check scripts/validate-v27-gate-manifest.mjs && node --check scripts/validate-v27-complete-gate.mjs && node --check scripts/build-v27-eligible-pool.mjs && node --check scripts/preregister-v27-gates.mjs && python3 -c "from pathlib import Path; compile(Path('scripts/transcribe-whisper-timestamps.py').read_text(), 'scripts/transcribe-whisper-timestamps.py', 'exec')" && node --check scripts/build-blind-packets.mjs && node --check scripts/build-calibration-benchmarks.mjs && node --check scripts/build-calibration-ledgers.mjs && node --check scripts/calculate-reassessment.mjs && node --check scripts/analyze-v2.1-pilot.mjs && node --check scripts/lib/reassessment-scoring.mjs && node --check scripts/test-reassessment-scoring.mjs && node --check scripts/validate-calibration-v2.1.mjs && node --check scripts/generate-seo-pages.mjs && node --check scripts/build-v38-heldout-eligible-pool.mjs && node --check scripts/preregister-v38-burden-contact-gate.mjs && node --check scripts/validate-v38-burden-contact-preregistration.mjs && node --check scripts/validate-v38-source-access-lock.mjs && node scripts/test-reassessment-scoring.mjs && node scripts/validate-debates.mjs && node scripts/validate-calibration-v2.1.mjs && node scripts/analyze-v2.1-pilot.mjs --check && node scripts/validate-corpus-transcripts.mjs && node scripts/validate-complete-gate.mjs && node scripts/validate-v22-gate-sources.mjs && node scripts/validate-v22-complete-gate.mjs && node scripts/validate-v24-source-chain.mjs && node scripts/validate-v24-development.mjs && node scripts/validate-v25-source-chain.mjs && node scripts/validate-v25-development.mjs && node scripts/validate-v27-development.mjs && node scripts/test-v27-derived-annotations.mjs && node scripts/analyze-v27-development.mjs && node scripts/validate-design-template.mjs && node scripts/generate-seo-pages.mjs --check && node scripts/validate-v38-source-access-lock.mjs
+
+Validated explicit primary categories for 250 debates across 15 categories.
+Validated v2 compatibility, v2.1 thresholds, and v2.2 audio/adjustment controls.
+Validated 250 debates.
+Validated 10 v2.1 calibration ledgers and their source chain.
+Validated 10 debates and 20 moves.
+{
+  "corpusDebates": 250,
+  "available": 250,
+  "unavailable": 0,
+  "acquisitionRate": 1,
+  "completeGateTranscripts": 3,
+  "localHashesChecked": 250
+}
+{
+  "ledgers": 3,
+  "sections": 17,
+  "moves": 79,
+  "triggeredMoves": 26,
+  "calculatorMismatches": 0,
+  "schemaUniformity": "passed",
+  "gateDecision": "not-passed"
+}
+node:internal/fs/promises:1281
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/Users/philstilwell/Documents/SLUGFESTER-debate-250/output/transcribe/v2.2-audio-verification/OL8LREmbDi0/refs/sye-ten-bruggencate.wav'
+    at async open (node:internal/fs/promises:1281:25)
+    at async readFile (node:internal/fs/promises:1929:14)
+    at async file:///Users/philstilwell/Documents/SLUGFESTER-debate-250/scripts/validate-v22-gate-sources.mjs:104:40 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/philstilwell/Documents/SLUGFESTER-debate-250/output/transcribe/v2.2-audio-verification/OL8LREmbDi0/refs/sye-ten-bruggencate.wav'
+}
+
+Node.js v25.9.0

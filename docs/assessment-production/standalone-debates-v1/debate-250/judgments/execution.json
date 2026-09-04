@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 250,
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents with explicit score-blind input boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "64dc85adbd3e2ed6222344550788715972d80f58c0bfac198b3886901b2f6908",
+    "inventorySha256": "77ac523f0003384d80cffc009a653abf8ccfa26a7d796077895f5778f4157121",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-a/output.json",
+      "outputSha256": "d694c9ea15223ce2084ef627be81445399109726dd3e14de958f6664fed49df6",
+      "outputBytes": 41767,
+      "judgmentCount": 30,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_250_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-b/output.json",
+      "outputSha256": "6592b05242503cc5300be3917ba561bbbdf72ea44d8828c7642476857144417f",
+      "outputBytes": 41226,
+      "judgmentCount": 30,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_250_b"
+    }
+  ],
+  "completedAt": "2026-09-04T12:27:00.265Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

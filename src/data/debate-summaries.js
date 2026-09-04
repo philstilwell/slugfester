@@ -11803,5 +11803,58 @@ export const debateSummaries = [
         "title": "Normative Authority and Motivation"
       }
     ]
+  },
+  {
+    "id": "anderson-jump-logic-belief-god-2020",
+    "number": "250",
+    "title": "James Anderson vs Tom Jump: Logic and Belief in God",
+    "year": 2020,
+    "label": "Logic and truth bearers",
+    "date": "2026-09-04",
+    "duration": "1 hr 26 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=q6-57NNo5fA",
+    "motion": "Is there reason to believe in God?",
+    "summary": "Anderson develops stronger distinctions about shared truth and representation; Jump effectively separates necessary reality from contingent language, while the divine-mind route remains incomplete.",
+    "topicCategory": "logic-reason-presuppositions",
+    "sides": {
+      "pro": {
+        "name": "Theistic explanation of logic",
+        "speaker": "James Anderson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalistic explanation of logic",
+        "speaker": "Tom Jump",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 74,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Logic to God"
+      },
+      {
+        "title": "Shared Truth Content"
+      },
+      {
+        "title": "Unexpressed Mathematical Truths"
+      },
+      {
+        "title": "Necessity and Reality"
+      },
+      {
+        "title": "Physical Patterns and Universals"
+      },
+      {
+        "title": "Ideas Objects and Labels"
+      },
+      {
+        "title": "Knowledge Without Propositions"
+      }
+    ]
   }
 ];

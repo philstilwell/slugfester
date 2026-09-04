@@ -1,0 +1,41 @@
+{
+  "status": "failed",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-1.log",
+        "sha256": "4f34b9614fe0c35e1b421be81d7880c14692618c12d7e0528584ed5f66adc5ab",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-2.log",
+        "sha256": "1712aa54682379f5ba4c3726dcedd5a498c583567ccf1246d6dff94135d18148",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 250",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-3.log",
+        "sha256": "361bb8d0a3336cd9d2dce3b9e0c49e531c6669e398503bcb8f8ba47c4db8d85e",
+        "bytes": 256
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-4.log",
+        "sha256": "34a91c89a5dd8e3863e38c671575de879127393198db0443ac4362ccc44a32d6",
+        "bytes": 7185
+      }
+    }
+  ]
+}

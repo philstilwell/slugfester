@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "debateNumber": "250",
+  "reason": "The staged whitespace check rejected extra end-of-file blank lines in five exact-byte controller archives. Gzip preserves those original bytes while keeping them inert; no assessment or site file changed.",
+  "changes": [
+    {
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-finalize-controller.mjs.txt",
+        "sha256": "020f4cf7f44780209b519c9d37ef2432405e2ead971fb1a626114cdf12c0f424",
+        "bytes": 11104
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-finalize-controller.mjs.txt.gz",
+        "sha256": "57dba9b507ea8c25c6d9124ac886ef9724c0beff3b6c475bfe9e0d4dcbc67496",
+        "bytes": 4033
+      },
+      "decompressedBytesIdentical": true
+    },
+    {
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-prose-check.mjs.txt",
+        "sha256": "b920efa3f487511cd9937c6e30eca1a46a909aefe8f8ad6c0ce85f53b0aa2f8f",
+        "bytes": 7051
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-prose-check.mjs.txt.gz",
+        "sha256": "53c2c7d5be6bbee2fa218d646ffdfe8a5971b5f4d8bf6ecb15677bbd9c6b58dd",
+        "bytes": 2787
+      },
+      "decompressedBytesIdentical": true
+    },
+    {
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-prose-repair-controller.mjs.txt",
+        "sha256": "baac27e850af26a71c94d42d8d8c3fef7e3681f97312b3ecb5d5cc5c1184acfa",
+        "bytes": 6354
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-prose-repair-controller.mjs.txt.gz",
+        "sha256": "d3b2cbb1e4e7a8f855c000c2c021e2f3af2f6dc0ec94cca27d95228e41294934",
+        "bytes": 2448
+      },
+      "decompressedBytesIdentical": true
+    },
+    {
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-publication-controller.mjs.txt",
+        "sha256": "3d960e09b78ab3a1cba4343d9a1a38144a20788cdb40829a3d27691cc7d194c3",
+        "bytes": 11210
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-publication-controller.mjs.txt.gz",
+        "sha256": "d76ff91e142227772d74f9ad30e37234f621e07156cb09b9ecae46747f10ecfa",
+        "bytes": 4476
+      },
+      "decompressedBytesIdentical": true
+    },
+    {
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-rhetorical-controller.mjs.txt",
+        "sha256": "c23f78c6f5b0f89bbeacc39b01c95445b052ad784ee7222220056d7ce39d37cd",
+        "bytes": 17052
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/provenance/controllers/tmp-standalone-rhetorical-controller.mjs.txt.gz",
+        "sha256": "8a441fb840e747ed048d34f29f9007f8ac61f69990652f2836ade1185777a9fd",
+        "bytes": 5133
+      },
+      "decompressedBytesIdentical": true
+    }
+  ],
+  "preflight": {
+    "command": "npm run site:preflight",
+    "exitCode": 0,
+    "output": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/precommit-site-preflight-after-archive-format.log",
+      "sha256": "555ff4819cf2f8c5105d629b912ebc21182a035e289b564e0f270869603e428d",
+      "bytes": 33716
+    }
+  },
+  "temporaryDependencyLinkRemoved": true,
+  "originalDependencyTargetPreserved": true,
+  "controller": {
+    "path": "scripts/tmp-standalone-archive-recovery.mjs",
+    "sha256": "4213f2063dd8e92e9ae844b1ed2dca8fd4a6b0b2179d32cff65903e1c9374aa9",
+    "bytes": 4055
+  },
+  "completedAt": "2026-09-04T13:53:51.813Z"
+}

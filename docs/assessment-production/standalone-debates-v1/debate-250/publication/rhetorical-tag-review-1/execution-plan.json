@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "00980997a00bed874bd164a2a39c9ddcf3603a6b88ae7aa729bdaa738318ba44",
+      "bytes": 100871
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/transcript.txt",
+      "sha256": "2591245e3db31d06b3c2f1ee6fbe2f23241755c12d5ff173c8a351204c1981c6",
+      "bytes": 103401
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/audio/audio-verification.json",
+      "sha256": "791ee4bd8d219c8467028ea901cf0edb8a31b62e0ab7e9d360a1726ecfee8900",
+      "bytes": 249913
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_250_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_250_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}
