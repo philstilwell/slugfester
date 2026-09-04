@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "completedAt": "2026-09-04T13:48:13.396Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-recovery-1.log",
+        "sha256": "4f34b9614fe0c35e1b421be81d7880c14692618c12d7e0528584ed5f66adc5ab",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-recovery-2.log",
+        "sha256": "1712aa54682379f5ba4c3726dcedd5a498c583567ccf1246d6dff94135d18148",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 250",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-recovery-3.log",
+        "sha256": "361bb8d0a3336cd9d2dce3b9e0c49e531c6669e398503bcb8f8ba47c4db8d85e",
+        "bytes": 256
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-recovery-4.log",
+        "sha256": "087a1a43351c9e9a6fdcaa5f8ccbd592df26d18ba18fe2c38b1fc36d6f32c7ca",
+        "bytes": 43680
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-recovery-5.log",
+        "sha256": "4ddc22975278e0403f4a76cb4df4803110e8dd6fdccf33e6eb1571c13e7b6a12",
+        "bytes": 207418
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-250/validation/gates-recovery-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

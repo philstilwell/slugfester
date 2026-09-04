@@ -1,0 +1,37 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const recordPath=`${entry.root}/provenance/local-runtime-links.json`;
+if(phase==='prepare'){
+ assert.equal(fs.existsSync(recordPath),false);
+ const cwd=fs.realpathSync('.');
+ const roots=execFileSync('git',['worktree','list','--porcelain'],{encoding:'utf8'}).split('\n').filter(l=>l.startsWith('worktree ')).map(l=>l.slice(9)).filter(r=>fs.realpathSync(r)!==cwd);
+ const requests=new Map();
+ if(!fs.existsSync('node_modules'))requests.set('node_modules',roots.find(r=>fs.existsSync(`${r}/node_modules/@playwright/test/package.json`))+'/node_modules');
+ const audit=read('docs/calibration/v2.1/corpus-transcript-audit.json');
+ for(const e of audit.entries)for(const file of [e.transcriptStorage,e.eventsStorage]){
+  if(!file||fs.existsSync(file))continue;
+  assert.ok(file.startsWith('.assessment-cache/captions/'));
+  const relative=path.dirname(file),source=roots.find(r=>fs.existsSync(`${r}/${file}`));assert.ok(source,`No existing source for ${file}`);
+  const target=`${source}/${relative}`;assert.ok(fs.existsSync(target));
+  if(requests.has(relative))assert.equal(requests.get(relative),target);else requests.set(relative,target);
+ }
+ const links=[];
+ for(const [relative,target] of requests){
+  assert.ok(fs.existsSync(target));assert.equal(fs.existsSync(relative),false);assert.equal(path.isAbsolute(relative),false);assert.ok(!relative.includes('..'));
+  fs.mkdirSync(path.dirname(relative),{recursive:true});fs.symlinkSync(target,relative,'dir');links.push({path:relative,target});
+ }
+ fs.writeFileSync(recordPath,serializedJson({status:'created-temporary-links-only',debateNumber:number,links,targetsWritten:false,newDependenciesInstalled:false,directCostUsd:0}),{flag:'wx'});
+ console.log(JSON.stringify({linksCreated:links.length,newDependenciesInstalled:false}));
+}else if(phase==='cleanup'){
+ const record=read(recordPath),receipt=`${entry.root}/provenance/local-runtime-cleanup.json`;assert.equal(record.debateNumber,number);assert.equal(fs.existsSync(receipt),false);
+ for(const link of record.links){assert.ok(fs.lstatSync(link.path).isSymbolicLink());assert.equal(fs.readlinkSync(link.path),link.target);}
+ for(const link of record.links)fs.unlinkSync(link.path);
+ fs.writeFileSync(receipt,serializedJson({status:'removed-owned-links-only',debateNumber:number,removedLinks:record.links.length,originalTargetsPreserved:true,completedAt:new Date().toISOString()}),{flag:'wx'});
+ console.log(JSON.stringify({removedLinks:record.links.length,originalTargetsPreserved:true}));
+}else throw new Error('Unknown phase');

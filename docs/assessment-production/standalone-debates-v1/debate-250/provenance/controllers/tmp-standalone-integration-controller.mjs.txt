@@ -1,0 +1,34 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson,canonicalJson,validateStandaloneCandidate} from './lib/assessment-production-standalone-debate-v1.mjs';
+import {debates} from '../src/data/debates.js';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),record=p=>fileRecord(p);
+const registryPath='docs/assessment-production/standalone-debates-v1/registry.json',registry=read(registryPath),entry=registry.debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const root=entry.root,rr=`${root}/publication/isolation-recovery-1`;
+const write=(p,v)=>{assert.equal(fs.existsSync(p),false,`Refuse overwrite ${p}`);fs.writeFileSync(p,serializedJson(v),{flag:'wx'});};
+if(phase==='transport'){
+ const plan=read(`${rr}/execution-plan.json`);assert.equal(plan.executionPermitted,true);for(const r of plan.allowedInputs)assert.equal(record(r.path).sha256,r.sha256);
+ const raw=plan.writablePaths[0],o=read(raw);assert.equal(o.debateNumber,number);assert.equal(o.debateId,entry.debateId);
+ const dest=`${root}/publication/raw-prose-output-1.json`;assert.equal(fs.existsSync(dest),false);fs.copyFileSync(raw,dest,fs.constants.COPYFILE_EXCL);assert.equal(record(raw).sha256,record(dest).sha256);
+ write(`${root}/publication/execution.json`,{status:'completed-publication-output-pending-controller-validation',debateNumber:number,debateId:entry.debateId,model:plan.model,freshContext:true,forkTurns:'none',executionPlan:record(`${rr}/execution-plan.json`),output:record(raw),canonicalRawCopy:record(dest),attempts:1,retries:0,publicationContextsIncludingPreservedFailure:2,authorizedReplacementContexts:1,priorFailure:record(`${rr}/failure-record.json`),directIncrementalCostUsd:0});
+}else if(phase==='accept'){
+ const validation=read(`${root}/publication/initial-validation.json`);assert.deepEqual(validation.errors,[]);const raw=`${root}/publication/raw-prose-output-1.json`;assert.equal(validation.output.sha256,record(raw).sha256);const out=`${root}/publication/output.json`;assert.equal(fs.existsSync(out),false);fs.copyFileSync(raw,out,fs.constants.COPYFILE_EXCL);
+ write(`${root}/publication/prose-acceptance.json`,{status:'accepted-without-field-repair',debateNumber:number,debateId:entry.debateId,validation:record(`${root}/publication/initial-validation.json`),source:record(raw),output:record(out),proseChanges:0});
+}else if(phase==='append-patch'){
+ const candidate=read(`${root}/publication/output.json`).candidate;validateStandaloneCandidate(candidate,read(`${root}/score-pass/output.json`));assert.equal(candidate.id,entry.debateId);assert.equal(candidate.number,number);assert.equal(debates.some(d=>d.id===candidate.id||d.number===number||d.youtubeUrl===candidate.youtubeUrl),false);assert.equal(Number(number),Math.max(...debates.map(d=>Number(d.number)))+1);
+ const target='src/data/debates.js',text=fs.readFileSync(target,'utf8'),marker='\n];\n\naddMissingAiContributions(debates);';assert.equal(text.split(marker).length,2);
+ const insertion=JSON.stringify(candidate,null,2).split('\n').map(s=>'  '+s).join('\n');
+ console.log(JSON.stringify({patch:'*** Begin Patch\n*** Update File: '+process.cwd()+'/'+target+'\n@@\n-  }\n-];\n+  },\n+'+insertion.split('\n').join('\n+')+'\n+];\n \n addMissingAiContributions(debates);\n*** End Patch'}));
+}else if(phase==='corpus'){
+ const p='docs/calibration/v2.1/corpus-transcript-audit.json',x=read(p),before=record(p),m=read(`.assessment-cache/captions/${entry.videoId}/manifest.json`),source=read(`${root}/source/source-lock.json`);assert.equal(x.entries.some(e=>e.debateId===entry.debateId||e.videoId===entry.videoId),false);assert.equal(m.videoId,entry.videoId);assert.equal(x.entries.length,Number(number)-1);
+ x.entries.push({debateNumber:number,debateId:entry.debateId,videoId:entry.videoId,status:'available',transcriptStorage:`.assessment-cache/captions/${entry.videoId}/transcript.txt`,eventsStorage:`.assessment-cache/captions/${entry.videoId}/events.json`,track:m.track,extractionMethod:m.extractionMethod,audioSourceUrl:null,model:null,wordCount:m.wordCount,spokenWordCount:source.content.spokenWordCount,eventCount:m.eventCount,retrievedAt:m.retrievedAt,transcriptSha256:m.transcriptSha256,normalizedEventsSha256:m.normalizedEventsSha256});
+ x.corpusDebates=x.entries.length;x.locallySavedTranscripts=x.entries.filter(e=>e.status==='available').length;x.unavailableTranscripts=x.entries.length-x.locallySavedTranscripts;x.acquisitionRate=x.locallySavedTranscripts/x.entries.length;x.auditAsOf=m.retrievedAt;
+ fs.writeFileSync(p,serializedJson(x));write(`${root}/source/corpus-index-update.json`,{status:'appended-current-source-only',debateNumber:number,before,after:record(p),earlierEntriesUnchanged:true});
+}else if(phase==='registry'){
+ const d=debates.find(d=>d.number===number);assert.equal(canonicalJson(d),canonicalJson(read(`${root}/publication/output.json`).candidate));assert.equal(read(`${root}/publication/rhetorical-tag-audit.json`).status,'passed-rhetorical-tag-review');assert.equal(entry.status,'authorized-source-gated');
+ entry.status='published-and-frozen';entry.contentParity={auditPath:`${root}/publication/content-parity-audit.json`};entry.rhetoricalTagReview={correctionPath:`${root}/publication/correction-2-rhetorical-tags.json`,auditPath:`${root}/publication/rhetorical-tag-audit.json`,priorPublicationPath:`${root}/publication/preserved-output-before-rhetorical-tag-review.json`,executionPath:`${root}/publication/rhetorical-tag-review-1/execution.json`,renderingAuditPath:`${root}/rendering/post-rhetorical-tag-audit.json`,modelSlug:'gpt-5.6-sol',modelLabel:'5.6 Sol',reasoningEffort:'low'};fs.writeFileSync(registryPath,serializedJson(registry));
+}else if(phase==='adapter-lock'){
+ assert.equal(entry.status,'published-and-frozen');assert.equal(entry.productionLedger.sha256,undefined);entry.productionLedger=record(entry.productionLedger.path);fs.writeFileSync(registryPath,serializedJson(registry));
+}else throw new Error('Unknown phase');
+if(phase!=='append-patch')console.log(JSON.stringify({phase,debateNumber:number,status:'complete'}));

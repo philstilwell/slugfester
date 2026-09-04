@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const number=process.argv[process.argv.indexOf('--debate')+1];assert.match(number||'',/^\d{3,}$/);
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json'));
+const entry=registry.debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const code=async function(page){
+ const result=await page.evaluate(()=>{
+  const q=(s,r=document)=>r.querySelector(s),all=(s,r=document)=>[...r.querySelectorAll(s)],text=e=>e?.innerText.trim()??'',raw=e=>e?.textContent.trim()??'';
+  return {url:location.href,title:document.title,width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth,bodyText:document.body.innerText,
+   sections:all('.debate-section').map(s=>({title:text(q('h2',s)),scores:all('.section-score strong',s).map(text),cards:all('.argument',s).map(c=>({description:text(q(':scope > p',c)),critique:raw(q('.critique-popover > span',c)),meta:raw(q('.argument-meta',c)).replace(/\s+/g,' '),tags:all('.tag-wrap',c).map(t=>({label:text(q('a.tag',t)),context:raw(q('.tag-context',t)),href:q('a.tag',t).getAttribute('href')}))}))})),
+   ai:all('.logical-extension-side').flatMap(s=>[raw(q('.extension-thesis',s)),...all('.extension-premises li p',s).map(raw),raw(q('.extension-conclusion p',s)),...all('.new-argument',s).flatMap(a=>[raw(q('h5',a)),raw(q('p',a))])]),
+   quotes:all('.quote-card blockquote').map(text),quoteContexts:all('.quote-card > p').map(text),overall:all('.overall-side').map(s=>({text:text(s)})),
+   links:all('a[href]').map(a=>({text:text(a),href:a.getAttribute('href')})),images:all('img').map(i=>({src:i.getAttribute('src'),complete:i.complete,naturalWidth:i.naturalWidth})),
+   tags:all('.argument .tag-wrap').map(t=>({label:text(q('a.tag',t)),context:raw(q('.tag-context',t)),href:q('a.tag',t).getAttribute('href')})),overallLinks:all('.overall .inline-links a').map(a=>({label:text(a),href:a.getAttribute('href')})),
+   aiInitiallyClosed:!q('.ai-extension-accordion').open,aiFollowsOverall:q('.overall').nextElementSibling===q('.logical-extension')};
+ });
+ if(!Array.isArray(page.__reviewErrors)||!Array.isArray(page.__reviewFailedResources))throw new Error('Browser diagnostics were not initialized');
+ return {...result,errors:page.__reviewErrors,failedResources:page.__reviewFailedResources};
+};
+console.log(JSON.stringify({debateNumber:number,debateId:entry.debateId,code:code.toString()}));

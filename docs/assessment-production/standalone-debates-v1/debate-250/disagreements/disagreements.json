@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The missing mental-character and God-identification defenses, and the contested content-to-entity bridges, are already reflected in the selected move ratings; no separate adjustment is warranted.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "The relevant completion strengths and gaps are assessed within the locked moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct unscored debate-wide consequence is identified in this source.",
+            "alreadyCapturedBy": [
+              "necessary-mind-outline",
+              "translation-shares-one-truth",
+              "knowledge-needs-real-object"
+            ],
+            "counterfactual": "Removing an additional adjustment leaves the same strengths and gaps represented by the move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The outlined mental-character and divine-identification gaps are already assessed in the opening move; no additional independent consequence warrants counting them again.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct completion criterion remains outside the move-level assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence is identified beyond the rated moves.",
+            "alreadyCapturedBy": [
+              "necessary-mind-outline"
+            ],
+            "counterfactual": "Removing an additional adjustment leaves the already assessed performance unchanged."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The successful distinctions and unresolved bearer, correspondence, and knowledge explanations are already reflected in move ratings; no independent debate-wide consequence warrants adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "The relevant completion strengths and gaps are assessed within the locked moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct unscored debate-wide consequence is identified in this source.",
+            "alreadyCapturedBy": [
+              "necessary-reality-contingent-descriptions",
+              "knowledge-with-constructed-labels",
+              "instances-make-propositions-dispensable"
+            ],
+            "counterfactual": "Removing an additional adjustment leaves the same strengths and gaps represented by the move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The remaining gaps in correspondence, shared content, and knowledge are already assessed in their respective moves; the critical role creates no further atheism-wide burden.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct completion criterion remains outside the move-level assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence is identified beyond the rated moves.",
+            "alreadyCapturedBy": [
+              "knowledge-with-constructed-labels",
+              "instances-make-propositions-dispensable"
+            ],
+            "counterfactual": "Removing an additional adjustment leaves the already assessed performance unchanged."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 30,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/inventory/inventory.json",
+      "sha256": "77ac523f0003384d80cffc009a653abf8ccfa26a7d796077895f5778f4157121"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-a/output.json",
+      "sha256": "d694c9ea15223ce2084ef627be81445399109726dd3e14de958f6664fed49df6"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-b/output.json",
+      "sha256": "6592b05242503cc5300be3917ba561bbbdf72ea44d8828c7642476857144417f"
+    }
+  }
+}

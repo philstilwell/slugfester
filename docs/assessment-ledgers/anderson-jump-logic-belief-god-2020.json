@@ -1,0 +1,730 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/captions.srv3.xml",
+      "sha256": "29f918dc8df88e781574716ae7850d61c9cc6c8ed566c3ed2457188defc11822",
+      "bytes": 592016
+    },
+    "events": {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/events.json",
+      "sha256": "0a3ce5ede02628d6f04ce64b7842b4cb5b77ddb52bdb0891e42c0d6c2b86a983",
+      "bytes": 244320
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/transcript.txt",
+      "sha256": "2591245e3db31d06b3c2f1ee6fbe2f23241755c12d5ff173c8a351204c1981c6",
+      "bytes": 103401
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/manifest.json",
+      "sha256": "26fc9277ad036379eadf2270348b00ccc75f5bd2c7010f6908bb75049193eb3d",
+      "bytes": 995
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/source/source-lock.json",
+      "sha256": "c6a33baae596dc2f6c20fd3de87830bf7a1c1c7edc6c1c2b2b7e9ab8d4a248f1",
+      "bytes": 4539
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/authorization.json",
+      "sha256": "4947e6e51806af6b54cdd06dfdedf7fe19fc32b873077d954d34555a11eed76e",
+      "bytes": 3401
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/inventory/inventory.json",
+      "sha256": "77ac523f0003384d80cffc009a653abf8ccfa26a7d796077895f5778f4157121",
+      "bytes": 93461
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/authorization.json",
+      "sha256": "4947e6e51806af6b54cdd06dfdedf7fe19fc32b873077d954d34555a11eed76e",
+      "bytes": 3401
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/manifest.json",
+      "sha256": "976cdefc3b507d618954f27a4f9e56d1c1126004957eb03dbfa5af8d45ecad3b",
+      "bytes": 7239
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/source/source-lock.json",
+      "sha256": "c6a33baae596dc2f6c20fd3de87830bf7a1c1c7edc6c1c2b2b7e9ab8d4a248f1",
+      "bytes": 4539
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/inventory/inventory.json",
+      "sha256": "77ac523f0003384d80cffc009a653abf8ccfa26a7d796077895f5778f4157121",
+      "bytes": 93461
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/judgment-packet.json",
+      "sha256": "64dc85adbd3e2ed6222344550788715972d80f58c0bfac198b3886901b2f6908",
+      "bytes": 4904
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/execution.json",
+      "sha256": "cbb18de0406c7da673a35645eb2186b28163103648b01e131ac3b9521dc1fcd7",
+      "bytes": 2540
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-a/output.json",
+      "sha256": "d694c9ea15223ce2084ef627be81445399109726dd3e14de958f6664fed49df6",
+      "bytes": 41767
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/judgments/pass-b/output.json",
+      "sha256": "6592b05242503cc5300be3917ba561bbbdf72ea44d8828c7642476857144417f",
+      "bytes": 41226
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/disagreements/disagreements.json",
+      "sha256": "0a298a28375769d5010a8bc8d33a130d7a8d385446321f54b3922d8e4258658f",
+      "bytes": 5985
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/audio/audio-verification.json",
+      "sha256": "791ee4bd8d219c8467028ea901cf0edb8a31b62e0ab7e9d360a1726ecfee8900",
+      "bytes": 249913
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/adjudication/packet.json",
+      "sha256": "79606c19be5812f16ecca6408598d9d2cc686196367dba10206827e8623cc047",
+      "bytes": 7103
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/adjudication/output.json",
+      "sha256": "add625621ca2688175de8263f5d3f5b0b2a4f56e8946fef73e386e9ba17876cf",
+      "bytes": 1920
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/final-ledger/final-ledger.json",
+      "sha256": "8a30edd749384a4cd8eedb594bc6b54553b88f7805e8938eb4860e94d0c86592",
+      "bytes": 215270
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/score-pass/input.json",
+      "sha256": "b43e46ed304593ec40ba638f80bbabc6d7ffd5e60bc1fa2d98bc35918abac881",
+      "bytes": 954
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/score-pass/output.json",
+      "sha256": "46b5d048d8610c5c2f34c3c386f0e6234eb8db34408fa87f871b7dcad4d1e700",
+      "bytes": 16000
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/score-pass/attestation.json",
+      "sha256": "e08c1ae176fc08ea2ef7f3a86529f467158e665ef294fcebd6b957a2136cafd1",
+      "bytes": 822
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/output.json",
+      "sha256": "43d2e38c4e10a2cdd1d0d75f1f6c7dd0a68898501e80735439c70c5736141bb5",
+      "bytes": 67328
+    },
+    "events": {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/events.json",
+      "sha256": "0a3ce5ede02628d6f04ce64b7842b4cb5b77ddb52bdb0891e42c0d6c2b86a983",
+      "bytes": 244320
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/transcript.txt",
+      "sha256": "2591245e3db31d06b3c2f1ee6fbe2f23241755c12d5ff173c8a351204c1981c6",
+      "bytes": 103401
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/content-parity-audit.json",
+      "sha256": "2cde956222735c917b2908cfdcc1785a8f61ee5276c503020483f568edd222b5",
+      "bytes": 7812
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/correction-2-rhetorical-tags.json",
+      "sha256": "5af594544682736d4a8d3ba118f268f49f5febc3d55421cd830c001bece45ddb",
+      "bytes": 2631
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-audit.json",
+      "sha256": "ff2bc5658a39499637fcfdcafab75a444ad537986f1eae3702fd5be3967a42a2",
+      "bytes": 94976
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "ae300a801c35700ee25e1edc0d3dc17e4cc452610376a3b1be19740af432444d",
+      "bytes": 3397
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "f07acbb324dc9112d411c15b8e16ed34ceb6c5d302d3d3b9c0d8a34cb1f30b4d",
+      "bytes": 2605
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "250",
+    "debateId": "anderson-jump-logic-belief-god-2020",
+    "sections": [
+      {
+        "sectionId": "logic-to-god",
+        "title": "Logic to God",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "necessary-mind-outline",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 85,
+                  "relevanceBurden": 66,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 82
+                },
+                "score": 73
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "logic-describes-reality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 79,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 73
+                },
+                "score": 76
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "shared-truth-content",
+        "title": "Shared Truth Content",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "truth-bearers-not-makers",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 87,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 83
+                },
+                "score": 81
+              },
+              {
+                "moveId": "translation-shares-one-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 75
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 66,
+            "moves": [
+              {
+                "moveId": "sentences-and-correspondence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 65,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 60,
+                  "calibrationCharity": 74
+                },
+                "score": 66
+              },
+              {
+                "moveId": "fictional-translation-comparison",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 61,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 70,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 72
+                },
+                "score": 67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "unexpressed-mathematical-truths",
+        "title": "Unexpressed Mathematical Truths",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "infinite-unexpressed-truths",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 81
+                },
+                "score": 83
+              },
+              {
+                "moveId": "mathematics-not-fiction",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 83,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 69,
+            "moves": [
+              {
+                "moveId": "potential-linguistic-combinations",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 70,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 80
+                },
+                "score": 73
+              },
+              {
+                "moveId": "fiction-and-math-correspondence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 65,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 69
+                },
+                "score": 65
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "necessity-and-reality",
+        "title": "Necessity and Reality",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "empty-world-truth",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 82,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 82
+                },
+                "score": 79
+              },
+              {
+                "moveId": "necessary-truths-not-contingent-tokens",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 82
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "empty-world-fact-not-sentence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 84
+                },
+                "score": 82
+              },
+              {
+                "moveId": "necessary-reality-contingent-descriptions",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 83
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "physical-patterns-and-universals",
+        "title": "Physical Patterns and Universals",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "ocean-not-abstract",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 82,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 72
+                },
+                "score": 77
+              },
+              {
+                "moveId": "ideas-share-content",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 83,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 75
+                },
+                "score": 78
+              },
+              {
+                "moveId": "keys-reopen-universals",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 87,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 88
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "brain-pattern-abstraction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 79,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 77
+                },
+                "score": 73
+              },
+              {
+                "moveId": "biochemical-ideas",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 77,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 79
+                },
+                "score": 75
+              },
+              {
+                "moveId": "keys-without-third-entity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 85,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 84
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "ideas-objects-and-labels",
+        "title": "Ideas Objects and Labels",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "idea-object-distinction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 89,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 83
+                },
+                "score": 86
+              },
+              {
+                "moveId": "concrete-abstract-status-challenge",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 84,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 75
+                },
+                "score": 80
+              },
+              {
+                "moveId": "social-construction-bearer-challenge",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 77,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 81
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "ideas-not-independent-objects",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 74,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 78
+                },
+                "score": 72
+              },
+              {
+                "moveId": "english-label-comparison",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 79,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 80
+                },
+                "score": 77
+              },
+              {
+                "moveId": "social-truth-independent-reality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 83,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 87
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "knowledge-without-propositions",
+        "title": "Knowledge Without Propositions",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "knowledge-needs-real-object",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 75,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 71
+                },
+                "score": 72
+              },
+              {
+                "moveId": "whose-idea-is-shared-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 82,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 73
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "knowledge-with-constructed-labels",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 85
+                },
+                "score": 81
+              },
+              {
+                "moveId": "instances-make-propositions-dispensable",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 73,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 72
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 79.4,
+        "burdenCompletionAdjustment": 0,
+        "score": 79
+      },
+      "con": {
+        "weightedSectionMean": 74.25,
+        "burdenCompletionAdjustment": 0,
+        "score": 74
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 5,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 30,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

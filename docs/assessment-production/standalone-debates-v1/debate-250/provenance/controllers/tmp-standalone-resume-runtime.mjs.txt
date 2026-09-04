@@ -1,0 +1,19 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {serializedJson,fileRecord} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const root=entry.root,priorPath=`${root}/provenance/local-runtime-links.json`,prior=read(priorPath),receipt=`${root}/provenance/resume-runtime-${phase}.json`;
+assert.equal(fs.existsSync(receipt),false);assert.equal(prior.debateNumber,number);
+assert.equal(read(`${root}/provenance/local-runtime-cleanup.json`).originalTargetsPreserved,true);
+if(phase==='prepare'){
+ for(const l of prior.links){assert.ok(fs.existsSync(l.target));assert.equal(fs.existsSync(l.path),false);assert.equal(fs.lstatSync(l.path,{throwIfNoEntry:false}),undefined);}
+ for(const l of prior.links)fs.symlinkSync(l.target,l.path,'dir');
+}else if(phase==='cleanup'){
+ assert.equal(read(`${root}/provenance/resume-runtime-prepare.json`).status,'complete');
+ for(const l of prior.links){assert.ok(fs.lstatSync(l.path).isSymbolicLink());assert.equal(fs.readlinkSync(l.path),l.target);}
+ for(const l of prior.links)fs.unlinkSync(l.path);
+}else throw new Error('Unknown phase');
+fs.writeFileSync(receipt,serializedJson({status:'complete',debateNumber:number,phase,links:prior.links.length,priorLinks:fileRecord(priorPath),originalTargetsPreserved:true,controller:fileRecord('scripts/tmp-standalone-resume-runtime.mjs'),completedAt:new Date().toISOString()}),{flag:'wx'});
+console.log(JSON.stringify({phase,links:prior.links.length,originalTargetsPreserved:true}));

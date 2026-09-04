@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const number=process.argv[process.argv.indexOf('--debate')+1];assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),record=p=>fileRecord(p);
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert.ok(entry);
+const root=entry.root,out=`${root}/adjudication/execution-plan.json`,audio=read(`${root}/audio/audio-verification.json`),packet=read(`${root}/adjudication/packet.json`);
+assert.equal(fs.existsSync(out),false);assert.equal(packet.debateNumber,number);assert.equal(packet.debateId,entry.debateId);assert.equal(audio.status,'complete');assert.equal(audio.audit.unresolvedAttributionChecks,0);
+const allowed=[`${root}/adjudication/packet.json`,`${root}/inventory/inventory.json`,`${root}/audio/audio-verification.json`,`.assessment-cache/captions/${entry.videoId}/events.json`,`.assessment-cache/captions/${entry.videoId}/transcript.txt`,'docs/assessment-production-workflow.md','docs/reassessment-rubric-v2.1.md','scripts/lib/assessment-production-standalone-debate-v1.mjs'];
+fs.writeFileSync(out,serializedJson({status:'frozen-before-execution',debateNumber:number,debateId:entry.debateId,model:'gpt-5.6-sol',displayModel:'5.6 Sol',reasoningEffort:'low',authentication:'ChatGPT subscription',freshContext:true,forkTurns:'none',agentTask:`/root/adjudication_${number}`,disputeCount:packet.disputes.length,allowedInputs:allowed.map(record),writablePaths:[`${root}/adjudication/output.json`],attemptLimit:1,retries:0,directIncrementalCostUsd:0}),{flag:'wx'});
+console.log(JSON.stringify({status:'frozen',disputes:packet.disputes.length,inputs:allowed}));

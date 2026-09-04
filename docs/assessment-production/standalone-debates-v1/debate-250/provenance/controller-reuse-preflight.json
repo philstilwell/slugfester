@@ -1,0 +1,42 @@
+{
+  "debateNumber": "250",
+  "debateId": "anderson-jump-logic-belief-god-2020",
+  "videoId": "q6-57NNo5fA",
+  "status": "passed-before-stage-execution",
+  "routingAuthority": "docs/assessment-production/standalone-debates-v1/registry.json",
+  "controllers": [
+    {
+      "path": "scripts/tmp-prepare-standalone-source.mjs",
+      "sha256": "bbcaac692183221b8bb6a037c337f6981545b9a83818b34b75e3caf8ff205121",
+      "bytes": 14639,
+      "review": "New controller: current source identity, event date, later upload date, motion, speakers, side positions, 5178-second duration, source endpoints and hashes checked before execution. No previous debate constants or expected assessment counts were copied. Both supplied and original-linked video IDs were absent from the published corpus."
+    },
+    {
+      "path": "scripts/tmp-standalone-stage-controller.mjs",
+      "sha256": "1bbca107f95fba56d35f4a0d38edd071a9150465b4fe4ec5fa2b6c53853e6713",
+      "bytes": 8094,
+      "review": "The prior accepted generic stage structure was read in full. Identity, paths, move IDs, collection counts, source boundaries and packet locks are derived only from current registry and frozen inputs. No literal prior speakers, motion, number, video ID, timestamps or decisions remain. Source-specific coverage and all count claims will be recomputed before acceptance. The current source-blind refinement is hash-checked separately while preserving raw model output."
+    },
+    {
+      "path": "scripts/tmp-standalone-audio-plan.mjs",
+      "sha256": "4f2c6cddaa2c82c4b13580ee950fac103ae3b44f83c81036ddeac3e3a4f44613",
+      "bytes": 5917,
+      "review": "New preparation-only controller derives all clips and counts from current frozen inventory. The sole literal identity block is asserted against current video and speakers; its 60–66 and 91–97 second reference windows are anchored in the current opening transcript. No prior speaker references, paid authorization exception, expected clip count or rhetorical overrides were carried forward. No paid calls occur in this controller."
+    },
+    {
+      "path": "scripts/tmp-refine-score-blind-inventory.mjs",
+      "sha256": "0ef66b8598002c77a56d29443fcc26caaef048aec09561536e6be22e1e730180",
+      "bytes": 6584,
+      "review": "New source-blind controller checked against all current selected excerpts before execution. Every literal move ID is asserted against the current inventory, and every proposed quotation must be its exact substring. Only quotation candidates and one precise reply target are changed, with original bytes preserved. All sources, sections, routes, attributions, weights and importance remain identical; no judgment packet may exist before execution."
+    }
+  ],
+  "checks": {
+    "syntaxValid": true,
+    "priorIdentitySweepClean": true,
+    "currentIdentitySingleSourceAsserted": true,
+    "expectedCountsDerived": true,
+    "manualRhetoricalOverrides": [],
+    "scoreChangesPermitted": false,
+    "paidCallsMade": false
+  }
+}

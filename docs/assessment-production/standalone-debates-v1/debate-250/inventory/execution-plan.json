@@ -1,0 +1,48 @@
+{
+  "status": "frozen-before-execution",
+  "stage": "score-blind-inventory",
+  "model": "gpt-5.6-sol",
+  "displayLabel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "isolationMethod": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/authorization.json",
+      "sha256": "4947e6e51806af6b54cdd06dfdedf7fe19fc32b873077d954d34555a11eed76e",
+      "bytes": 3401
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-250/source/source-lock.json",
+      "sha256": "c6a33baae596dc2f6c20fd3de87830bf7a1c1c7edc6c1c2b2b7e9ab8d4a248f1",
+      "bytes": 4539
+    },
+    {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/transcript.txt",
+      "sha256": "2591245e3db31d06b3c2f1ee6fbe2f23241755c12d5ff173c8a351204c1981c6",
+      "bytes": 103401
+    },
+    {
+      "path": ".assessment-cache/captions/q6-57NNo5fA/events.json",
+      "sha256": "0a3ce5ede02628d6f04ce64b7842b4cb5b77ddb52bdb0891e42c0d6c2b86a983",
+      "bytes": 244320
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-250/inventory/model-output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "calculatedTotalsAndOtherDebatesUnavailable": true
+}

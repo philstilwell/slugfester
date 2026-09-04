@@ -1,0 +1,11 @@
+{
+  "status": "reader-facing-rules-passed-pending-adapter",
+  "debateNumber": "250",
+  "command": "node scripts/validate-debates.mjs",
+  "exitCode": 1,
+  "exactIssues": ["debates.249.assessmentRubric: requires a matching JSON assessment ledger"],
+  "readerFacingIssues": 0,
+  "punctuationIntegrityIssues": 0,
+  "explanation": "The required pre-adapter validation checked the temporarily integrated candidate before its production ledger existed. The sole missing-ledger issue must disappear after the normal adapter freeze; no validator or limit was changed.",
+  "finalValidationStillRequired": true
+}

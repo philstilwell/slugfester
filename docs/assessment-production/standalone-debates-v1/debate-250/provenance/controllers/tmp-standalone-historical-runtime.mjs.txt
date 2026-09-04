@@ -1,0 +1,27 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {serializedJson,fileRecord} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');
+assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const receipt=`${entry.root}/provenance/historical-runtime-${phase}.json`;
+assert.equal(fs.existsSync(receipt),false);
+const link='output/transcribe/v2.2-audio-verification',target='/Users/philstilwell/Documents/SLUGFESTER.com/'+link;
+const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const records=[];
+function walk(o){if(!o||typeof o!=='object')return;if(o.localPath){assert.ok(o.localPath.startsWith(link+'/'));assert.match(o.sha256,/^[0-9a-f]{64}$/);records.push(o);}Object.values(o).forEach(walk);}
+const audits='docs/calibration/v2.2/complete-gate/audio-verification';
+for(const f of fs.readdirSync(audits).filter(f=>f.endsWith('.json')))walk(read(path.join(audits,f)));
+for(const r of records)assert.equal(sha('/Users/philstilwell/Documents/SLUGFESTER.com/'+r.localPath),r.sha256);
+if(phase==='prepare'){
+ assert.equal(fs.lstatSync(link,{throwIfNoEntry:false}),undefined);
+ fs.symlinkSync(target,link,'dir');
+}else if(phase==='cleanup'){
+ assert.equal(read(`${entry.root}/provenance/historical-runtime-prepare.json`).status,'complete');
+ assert.ok(fs.lstatSync(link).isSymbolicLink());assert.equal(fs.readlinkSync(link),target);fs.unlinkSync(link);
+}else throw new Error('Unknown phase');
+fs.writeFileSync(receipt,serializedJson({status:'complete',debateNumber:number,phase,link,target,historicalArtifactHashesChecked:records.length,originalTargetsPreserved:true,directIncrementalCostUsd:0,controller:fileRecord('scripts/tmp-standalone-historical-runtime.mjs'),completedAt:new Date().toISOString()}),{flag:'wx'});
+console.log(JSON.stringify({phase,historicalArtifactHashesChecked:records.length}));

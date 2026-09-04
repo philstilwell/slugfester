@@ -107511,6 +107511,587 @@ export const debates = [
         ]
       }
     }
+  },
+  {
+    "number": "250",
+    "id": "anderson-jump-logic-belief-god-2020",
+    "date": "2026-09-04",
+    "title": "James Anderson vs Tom Jump: Logic and Belief in God (2020)",
+    "label": "Logic and truth bearers",
+    "topicCategory": "logic-reason-presuppositions",
+    "youtubeUrl": "https://www.youtube.com/watch?v=q6-57NNo5fA",
+    "duration": "1 hr 26 min",
+    "motion": "Is there reason to believe in God?",
+    "assessmentModel": "5.6 Sol",
+    "assessmentRubric": "Slugfester Reassessment Rubric v2",
+    "sourceNote": "Complete English captions cover James Anderson’s conversation with Tom Jump on 2020-01-24; the supplied recording was uploaded in 2023-11-09. Speaker identification was verified against the recording. Short quotations reproduce the source wording, while argument cards condense the discussion. The assessment covers their spoken exchange, not Anderson’s separately published paper; later steps toward a divine mind are introduced as an outline rather than fully defended here.",
+    "scoringNote": "These AI-generated scores estimate argumentative performance in this transcript, not the truth of a worldview. They were computed exactly once from a frozen 30-move ledger after two isolated primary judgments and anonymous adjudication. Publication prose and subsequent fallacy and cognitive-bias review cannot alter the numerical result.",
+    "sides": {
+      "pro": {
+        "name": "Theistic explanation of logic",
+        "speaker": "James Anderson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalistic explanation of logic",
+        "speaker": "Tom Jump",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 74,
+      "winner": "pro"
+    },
+    "summary": "Anderson develops stronger distinctions about shared truth and representation; Jump effectively separates necessary reality from contingent language, while the divine-mind route remains incomplete.",
+    "quotes": {
+      "pro": {
+        "text": "we have to distinguish the statements the physical articulations from the truth itself",
+        "context": "Anderson uses two written descriptions of a blue sky to distinguish their shared truth from the separate physical expressions that communicate it."
+      },
+      "con": {
+        "text": "I didn't make up the truthmaker the truthmaker is independent",
+        "context": "Jump explains that calling an idea true uses constructed vocabulary, while whether the idea describes reality accurately is not something speakers invent."
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "logic-to-god",
+        "title": "Logic to God",
+        "timebox": "3:06–7:40",
+        "score": {
+          "pro": 73,
+          "con": 76
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "necessary-mind-outline",
+              "time": "3:06",
+              "score": 73,
+              "role": "Load-bearing constructive",
+              "words": "Anderson outlines a progression from logical truths through necessary existence and mental character to a necessary mind, while explicitly postponing defense of the crucial connecting premises.",
+              "critique": "Strongest feature: Anderson supplies an intelligible progression from logical propositions to necessary thoughts and then a necessary mind, explicitly identifying the intermediate commitments instead of presenting divine existence as an unexplained starting assumption. Principal limitation: The characteristics allegedly establishing that propositions are mental remain unspecified here, while excluding physical existence and identifying the resulting mind with God receive assertions rather than developed comparative arguments. Live burden: He must defend each transition independently, particularly why necessary truth requires necessary existence and why nonphysical propositions require a thinker rather than another account of abstract content. Locked score: The frozen 73 recognizes a relevant, carefully qualified outline with substantial explanatory organization, while its limited evidential development prevents credit for a completed demonstration of the motion.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "logic-describes-reality",
+              "time": "6:47",
+              "score": 76,
+              "role": "Major direct reply",
+              "words": "Jump rejects independently existing logical entities, proposing that logical systems describe reality and earn acceptance through correspondence, rather than governing reality or requiring a necessary mind.",
+              "critique": "Strongest feature: Jump attacks the opening argument at its existence premise and provides a recognizable alternative, treating logical language as descriptions selected for correspondence with reality rather than independent entities requiring divine explanation. Principal limitation: Listing alternative logical systems does not establish that their differences eliminate shared propositional content, and his suggestion that Anderson makes logic govern reality overstates the actual outlined dependence claim. Live burden: His descriptive approach must explain what accurate descriptions possess in common and how correspondence answers the existence challenge without simply renaming the disputed relationship between language and reality. Locked score: The fixed 76 reflects competent, relevant opposition to the proposed route, with useful explanatory direction but insufficient development of the alternative and imperfect representation of Anderson's starting position.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "shared-truth-content",
+        "title": "Shared Truth Content",
+        "timebox": "11:21–20:47",
+        "score": {
+          "pro": 80,
+          "con": 66
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "truth-bearers-not-makers",
+              "time": "11:21",
+              "score": 81,
+              "role": "Major direct reply",
+              "words": "Anderson distinguishes what makes statements true from what bears truth, using two written sky descriptions to argue that their shared content differs from either physical expression.",
+              "critique": "Strongest feature: Anderson separates the circumstances making a claim accurate from whatever possesses that accuracy, using two written sky descriptions to clarify why repeating correspondence alone does not answer his particular question. Principal limitation: The distinction establishes different explanatory roles more readily than independently existing entities, because matching content might still receive an account through relations among sentences rather than a separate proposition. Live burden: He needs to justify the passage from describing two expressions as communicating one truth to recognizing an additional bearer, while addressing Jump's attempt to assign truth directly to statements. Locked score: The preserved 81 rewards especially clear and responsive clarification of the central disagreement, although the shared-content example leaves an important existence inference insufficiently established rather than completing the theological route.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "sentences-and-correspondence",
+              "time": "16:09",
+              "score": 66,
+              "role": "Major direct reply",
+              "words": "Jump treats propositions as a subset of statements and truth as correspondence, denying any additional bearer while alternately describing sentences, relations, and reality as doing the work.",
+              "critique": "Strongest feature: Jump offers a direct answer about propositions by placing them within statements and locating accuracy in correspondence, thereby attempting to avoid additional entities beyond linguistic activity and the described world. Principal limitation: His explanation alternates between sentences bearing truth and correspondence functioning as the bearer, while identifying reality as the only existent item obscures how the descriptions themselves participate in that relationship. Live burden: He must identify consistently which item can be true and explain shared content without answering only what makes it accurate, since Anderson has expressly distinguished those questions. Locked score: The unchanged 66 recognizes a relevant descriptive proposal but marks substantial weakness in explanatory warrant and conceptual precision, particularly where the proposed relation replaces rather than resolves the disputed bearer requirement.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Truth bearer changes from a statement to the relationship making it accurate."
+                }
+              ]
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "translation-shares-one-truth",
+              "time": "18:26",
+              "score": 79,
+              "role": "Major direct reply",
+              "words": "Anderson compares English and French sky statements, arguing that translation and communication preserve one truth across distinct sentences and therefore require content beyond those particular linguistic expressions.",
+              "critique": "Strongest feature: Anderson makes the content distinction accessible through English and French descriptions of the sky, showing that visibly different sentences can communicate an equivalent claim rather than merely repeat identical physical markings. Principal limitation: Successful translation supports equivalence of meaning but does not automatically establish one independently existing object, so the demand for a shared entity exceeds what the linguistic example demonstrates unaided. Live burden: He must explain why coordinated reference, interpretation, or correspondence cannot account for translation, rather than treating ordinary talk about the same truth as decisive evidence for his preferred existence claim. Locked score: The locked 79 captures clear and directly engaged reasoning about communication, while reserving judgment on the contested move from shared meaning to a proposition existing beyond its expressions.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "fictional-translation-comparison",
+              "time": "20:09",
+              "score": 67,
+              "role": "Supporting reply",
+              "words": "Jump invokes translated descriptions of imaginary unicorns to contest Anderson's inference from shared meaning to existence, treating propositions as invented linguistic constructions rather than independent truth bearers.",
+              "critique": "Strongest feature: Jump identifies a genuine caution about existence claims by observing that speakers can translate descriptions of imaginary unicorns without producing the animals, making shared linguistic competence distinct from actual worldly reference. Principal limitation: The comparison moves from nonexistent described creatures to allegedly nonexistent propositions, although a claim about fictional creatures could still possess real content and bear truth within the stipulated description. Live burden: He must establish that the shared proposition occupies the same explanatory position as the unicorn, not merely that meaningful sentences sometimes concern things absent from physical reality. Locked score: The retained 67 credits an intelligible challenge to an overly quick existence inference, but the analogy does not adequately connect fictional reference with the separate question of what makes statements truth-bearing.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "unexpressed-mathematical-truths",
+        "title": "Unexpressed Mathematical Truths",
+        "timebox": "26:32–36:04",
+        "score": {
+          "pro": 83,
+          "con": 69
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "infinite-unexpressed-truths",
+              "time": "26:32",
+              "score": 83,
+              "role": "Major direct reply",
+              "words": "Anderson argues that infinitely many arithmetic truths and discoveries exceed actual human statements or thoughts, challenging identification of truth bearers with existing sentences, beliefs, or physical inscriptions.",
+              "critique": "Strongest feature: Anderson uses the indefinitely continuing natural-number sequence to show why actual human inscriptions and beliefs cannot individually exhaust mathematical claims, adding discovery as a familiar example of truth preceding someone's recognition. Principal limitation: The argument establishes pressure against identification with actual tokens more strongly than it establishes independently existing propositions, because potential expression and systematic generation remain rival explanations requiring further examination. Live burden: He must distinguish the existence of mathematical correctness conditions from the existence of separate truth-bearing objects, while explaining why a finite rule cannot capture the relevant unexpressed cases. Locked score: The frozen 83 reflects strong, specific support and sustained engagement with the sentence-only account, without treating the numerical infinity argument as sufficient proof of mental character or a necessary divine thinker.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "potential-linguistic-combinations",
+              "time": "29:57",
+              "score": 73,
+              "role": "Supporting reply",
+              "words": "Jump answers the infinity challenge with unlimited possible combinations of a finite alphabet, suggesting unspoken statements remain available without requiring an actually existing inventory of independent propositions.",
+              "critique": "Strongest feature: Jump supplies a concrete answer to the apparent mismatch between limited human expression and unlimited mathematical statements, explaining how a finite alphabet permits indefinitely many possible combinations without their simultaneous inscription. Principal limitation: Moving from actual statements to potential statements changes the earlier account, and combinatorial availability alone does not explain what determines the truth of mathematical claims before anyone expresses them. Live burden: He needs to specify whether possibilities are rules, dispositions, or independently existing items, and then connect that account to correctness rather than merely the quantity of constructible strings. Locked score: The fixed 73 credits a coherent and proportionate possibility-based response, while its incomplete treatment of actual truth and the status of potential language leaves the central mathematical objection only partly answered.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "mathematics-not-fiction",
+              "time": "33:53",
+              "score": 83,
+              "role": "Supporting reply",
+              "words": "Anderson contrasts revisable fictional stories with arithmetic and logical constraints, arguing that their independence from human invention makes Jump's Star Wars comparison inadequate for explaining mathematical truth.",
+              "critique": "Strongest feature: Anderson identifies the relevant difference between invented stories and arithmetic by contrasting revisable fictional details with mathematical claims that cannot be changed simply through authorial declaration or a different human preference. Principal limitation: Independence from invention establishes constraints on correctness but does not independently determine whether those constraints require real propositions, abstract structures, or necessarily existent thoughts within a divine mind. Live burden: He must carry the demonstrated contrast beyond rejecting the Star Wars comparison and explain why the objective status of arithmetic supports his particular account of truth bearers over Jump's descriptive alternative. Locked score: The preserved 83 recognizes a clear, well-targeted correction grounded in the examples actually exchanged, while withholding any implication that defeating a fictional analogy completes the argument from logic to God.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "fiction-and-math-correspondence",
+              "time": "35:32",
+              "score": 65,
+              "role": "Supporting reply",
+              "words": "Jump treats fictional and mathematical language as comparable descriptions whose truth depends on correspondence, suggesting different reality could undermine mathematics just as invented stories lack ordinary worldly reference.",
+              "critique": "Strongest feature: Jump consistently seeks an explanation of accuracy outside the symbols themselves, presenting mathematics and fictional language as descriptions whose assessment depends on what they represent rather than their mere linguistic construction. Principal limitation: The comparison does not distinguish truth within a story from correspondence with ordinary reality, and the suggestion of alternative mathematical facts remains unsupported by the existence of alternative formal languages. Live burden: He must identify the relevant correspondence standard for each example and explain why imagined or differently symbolized arithmetic challenges necessary mathematical content rather than changing the subject under discussion. Locked score: The unchanged 65 acknowledges a relevant explanatory intention but reflects weak support and an unstable comparison, especially because the Star Wars example does not answer Anderson's contrast between invention and discovery.",
+              "tags": [
+                {
+                  "label": "Equivocation",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/equivocation/",
+                  "context": "Truth within Star Wars becomes worldly correspondence in the mathematical comparison."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "necessity-and-reality",
+        "title": "Necessity and Reality",
+        "timebox": "24:19–40:51",
+        "score": {
+          "pro": 80,
+          "con": 82
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "empty-world-truth",
+              "time": "24:19",
+              "score": 79,
+              "role": "Supporting reply",
+              "words": "Anderson imagines a world containing no physical things and argues that its emptiness would still be true, separating truth from any physical sentence expressing that world's condition.",
+              "critique": "Strongest feature: Anderson isolates the dependence question with a world containing no physical objects, where the absence of physical objects still appears correctly describable even though no inscription could exist within that scenario. Principal limitation: Describing a possible world accurately from outside it does not straightforwardly establish a truth-bearing entity inside it, which is precisely the distinction Jump invokes in his immediate reply. Live burden: Anderson must demonstrate why truth about an empty world requires an existent proposition at that world, rather than an actual description whose accuracy concerns that scenario's stipulated physical emptiness. Locked score: The retained 79 credits a focused and comprehensible challenge to physical sentence accounts, while the contested relation between truth about possibilities and existence within them prevents a decisive demonstration of nonphysical bearers.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "empty-world-fact-not-sentence",
+              "time": "24:46",
+              "score": 82,
+              "role": "Major direct reply",
+              "words": "Jump distinguishes an empty world's physical condition from a sentence describing it, maintaining that truth belongs to the expressed sentence rather than existing within the hypothetical world itself.",
+              "critique": "Strongest feature: Jump directly distinguishes the hypothetical world's condition from the actual sentence describing it, answering the alleged contradiction without denying that an empty world could have the stipulated absence of physical things. Principal limitation: His insistence that truth begins with expression explains his terminology more fully than it explains the underlying correspondence relation, particularly when nobody produces any description of the relevant condition. Live burden: He needs to preserve the difference between a world's facts and our sentences while accounting for correctness across possible descriptions, rather than assuming that defining truth linguistically settles every existence question. Locked score: The frozen 82 rewards an especially responsive and carefully scoped rebuttal to this thought experiment, although the broader account of unexpressed content still requires development beyond the local distinction.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "necessary-truths-not-contingent-tokens",
+              "time": "37:42",
+              "score": 81,
+              "role": "Major direct reply",
+              "words": "Anderson distinguishes contingent weather from necessary arithmetic, arguing that truths holding across every possible world cannot be identical to human statements or brain processes that might never exist.",
+              "critique": "Strongest feature: Anderson contrasts local rainfall with arithmetic to separate contingent circumstances from necessary correctness, then presses the mismatch between truth across possible worlds and human expressions that may never come into existence. Principal limitation: The inference assumes that a necessary truth must itself exist in every possible world, rather than allowing contingent descriptions to represent necessary features of reality as Jump subsequently proposes. Live burden: He must defend this connection between necessary truth and necessary existence without collapsing a statement's changing physical availability into the possible falsity of what that statement correctly describes. Locked score: The fixed 81 reflects clear distinctions and direct pressure on the token account, but the central modal transition remains disputed and cannot independently establish the nonphysical or mental status of logical propositions.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "necessary-reality-contingent-descriptions",
+              "time": "39:45",
+              "score": 82,
+              "role": "Major direct reply",
+              "words": "Jump accepts necessary and contingent features of reality while denying that descriptions inherit necessity, arguing that mathematical language can contingently describe facts that could not have been otherwise.",
+              "critique": "Strongest feature: Jump accepts the distinction between necessary and contingent features while separating their status from that of our descriptions, directly challenging the inference that necessary facts demand necessarily existing linguistic or propositional objects. Principal limitation: His repeated claim that reality is simply the way it is provides little explanation of which features are necessary or how that necessity grounds the correctness of mathematical descriptions. Live burden: He must develop the fact-description distinction into an account of necessary correspondence, specifying the relevant constraints without merely assigning the disputed explanatory work to an unanalyzed conception of reality. Locked score: The preserved 82 recognizes a strong local objection to transferring necessity from subject matter to representation, while leaving the positive explanation of mathematical necessity and shared content incomplete in the exchange.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "physical-patterns-and-universals",
+        "title": "Physical Patterns and Universals",
+        "timebox": "31:37–49:40",
+        "score": {
+          "pro": 79,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "ocean-not-abstract",
+              "time": "31:37",
+              "score": 77,
+              "role": "Supporting reply",
+              "words": "Anderson rejects the ocean analogy because oceans are physically accessible, arguing that Jump cannot consistently call statements nonphysical abstract entities while also maintaining that only physical things exist.",
+              "critique": "Strongest feature: Anderson uses the physically accessible ocean to expose a difference concealed by the language of emergence, asking whether Jump's abstract statements are genuinely nonphysical entities or concrete arrangements describable at another level. Principal limitation: The challenge relies on an abstract-concrete distinction that Jump is using differently, so the ocean comparison does not itself refute abstractions understood as activities or patterns of physical brains. Live burden: He must establish which sense of abstraction the opponent actually requires and demonstrate an incompatibility with physicalism, rather than deriving contradiction from terminology that has not yet been jointly stabilized. Locked score: The locked 77 credits relevant conceptual pressure and an accessible contrast, while the unresolved meaning of abstraction limits the accusation that Jump cannot consistently maintain his preferred account of statements.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "brain-pattern-abstraction",
+              "time": "32:06",
+              "score": 73,
+              "role": "Major direct reply",
+              "words": "Jump describes abstractions as labeled brain patterns and physical processes, suggesting sufficiently small observers could enter their neural location rather than treating them as independently existing nonphysical entities.",
+              "critique": "Strongest feature: Jump makes his intended physical explanation explicit by identifying abstraction with patterns and labeling activity in brains, offering a concrete interpretation of emergence rather than conceding independent nonphysical objects through that vocabulary. Principal limitation: The imagined shrinking observer illustrates physical location but supplies no account of how neural arrangements possess meaning, represent unlimited mathematical possibilities, or support the shared content emphasized by Anderson. Live burden: He needs to connect an identifiable brain process with the semantic role of a proposition and explain why locating the process answers the question about what its content actually is. Locked score: The retained 73 acknowledges a responsive and intelligible naturalistic proposal, but the limited supporting mechanism prevents an illustrative neurological story from counting as a developed explanation of abstract truth.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "ideas-share-content",
+              "time": "46:50",
+              "score": 78,
+              "role": "Major direct reply",
+              "words": "Anderson argues that separate ideas about the blue sky express one shared truth, distinguishing communicable content from either person's mental event and renewing the case for abstract propositions.",
+              "critique": "Strongest feature: Anderson adapts the earlier sentence example to Jump's preferred vocabulary of ideas, emphasizing that distinct people's mental events can agree about the sky without becoming numerically identical episodes in their respective heads. Principal limitation: The move again assumes that agreement requires a third shared entity, without excluding accounts based on matching representation or correspondence between separate ideas and the same external situation. Live burden: He must show why agreement demands an independently existing proposition rather than equivalent content in distinct mental processes, particularly after allowing discussion to proceed without settling the broader mind-body dispute. Locked score: The frozen 78 rewards clarity and direct engagement with the reformulated alternative, while the recurring move from shared accuracy to a separate abstract bearer remains insufficiently defended against the live correspondence account.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "biochemical-ideas",
+              "time": "45:51",
+              "score": 75,
+              "role": "Major direct reply",
+              "words": "Jump recasts statements as ideas produced by biochemical brain interactions, assigning truth according to their correspondence with reality and proposing mental activity as sufficient for the descriptive account.",
+              "critique": "Strongest feature: Jump specifies that the proposed truth-bearing items are ideas realized through biochemical interactions, narrowing the earlier uncertainty about statements and providing a candidate for what can correspond accurately to external reality. Principal limitation: Identifying ideas with biochemical activity is asserted rather than explained, and the proposal leaves unclear how different physical interactions can possess equivalent content or refer beyond their immediate neural organization. Live burden: He must connect the physical realization of an idea to its representational accuracy, then explain shared agreement without importing the independent propositional entity that the naturalistic account is supposed to avoid. Locked score: The fixed 75 recognizes a relevant clarification of his alternative, but limited evidential support for the biochemical reduction restricts its success as an explanation rather than a stated position.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "keys-reopen-universals",
+              "time": "48:13",
+              "score": 83,
+              "role": "Supporting reply",
+              "words": "Anderson replies that matching keys reopen the dispute about shared shapes and universals, so the analogy cannot settle whether common features require abstract entities or merely descriptive labels.",
+              "critique": "Strongest feature: Anderson identifies that matching key shapes raise a parallel dispute about universals, meaning shared features across particulars, and acknowledges philosophical controversy rather than presenting his preferred answer as already established by the analogy. Principal limitation: Showing that the key example does not settle the issue removes its decisiveness but does not establish that shapes or propositions require independently existing entities beyond the matching physical cases. Live burden: He needs to distinguish an unresolved analogous problem from positive evidence for abstract propositions, while explaining what additional reasoning would favor realism over Jump's proposed account of descriptive similarity. Locked score: The preserved 83 rewards charitable treatment of the analogy's limits and strong responsiveness, without converting a successful objection to its conclusiveness into a completed defense of the underlying existence claim.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "keys-without-third-entity",
+              "time": "47:49",
+              "score": 82,
+              "role": "Major direct reply",
+              "words": "Jump compares two independently fashioned keys opening one lock, arguing that matching reality does not obviously require a third entity shared by the keys or by corresponding ideas.",
+              "critique": "Strongest feature: Jump offers a concrete model in which independently made keys successfully engage the same lock, making it intelligible that separate representations could match one reality without requiring an additional mediating object. Principal limitation: Mechanical compatibility is not yet an explanation of shared meaning, and whether identical shapes require universals remains disputed rather than being resolved by the ordinary success of the keys. Live burden: He must explain how the key-lock relation maps onto statements, content, and truth, while demonstrating that the proposed correspondence can replace the particular work Anderson assigns to a proposition. Locked score: The unchanged 82 credits a clear and directly relevant countermodel to the necessity of a third entity, but its analogical support remains limited where physical function differs from semantic agreement between speakers.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "ideas-objects-and-labels",
+        "title": "Ideas Objects and Labels",
+        "timebox": "51:50–1:04:39",
+        "score": {
+          "pro": 82,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "idea-object-distinction",
+              "time": "51:50",
+              "score": 86,
+              "role": "Major direct reply",
+              "words": "Anderson distinguishes unicorns from ideas about unicorns, asking whether propositions are actual ideas or nonexistent objects represented by ideas, since those alternatives carry different commitments about truth.",
+              "critique": "Strongest feature: Anderson distinguishes an imagined unicorn from the idea representing it, demonstrating that the existence of a representation does not make its represented object exist or possess the representation's properties. Principal limitation: The distinction clarifies the available positions but does not by itself show whether propositions belong with ideas, represented objects, or another category, so its success remains diagnostic rather than a complete existence proof. Live burden: Anderson must relate the clarified alternatives to the actual requirements of truth-bearing, establishing why the particular representational account Jump intends cannot perform those requirements without an additional entity. Locked score: The frozen 86 recognizes unusually effective conceptual clarification and targeted engagement with the unicorn comparison, while retaining a bounded gap between identifying an ambiguity and establishing the ultimate nature of propositional content.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "ideas-not-independent-objects",
+              "time": "56:50",
+              "score": 72,
+              "role": "Major direct reply",
+              "words": "Jump separates imagined items from independently existing worldly objects, placing propositions alongside fictional language constructs while maintaining that brain-based ideas can describe reality without independent abstract objects.",
+              "critique": "Strongest feature: Jump clarifies that denying independent propositions need not deny the existence of ideas in human heads, distinguishing a physical representation from a corresponding object existing elsewhere in the world. Principal limitation: Grouping propositions with unicorns, leprechauns, and Santa leaves unresolved whether propositions are themselves ideas or objects merely represented by ideas, preserving the ambiguity Anderson has just explicitly identified. Live burden: He must explain the precise status of truth-bearing content within his head-and-world distinction, including why an accurate idea can do the relevant work even when no independent propositional object exists. Locked score: The retained 72 credits a recognizable rejection of independent abstract entities and a relevant correspondence proposal, but conceptual instability and limited explanation prevent this restatement from resolving the challenged distinction between representations and their objects.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "concrete-abstract-status-challenge",
+              "time": "59:12",
+              "score": 80,
+              "role": "Supporting reply",
+              "words": "Anderson challenges Jump's shifting descriptions of propositions as physical, abstract, or fictional, asking what kind of thing the single shared claim about Socrates actually is within that account.",
+              "critique": "Strongest feature: Anderson gathers the competing descriptions of propositions into an explicit request for consistency, using the repeated Socrates statement to ask what kind of item allegedly remains the same across separate expressions. Principal limitation: His criticism risks treating every difference between abstraction, physical realization, and fictional labeling as contradiction, although those descriptions could concern different explanatory levels within a more carefully specified naturalistic account. Live burden: He must show that Jump's particular commitments are incompatible rather than merely underexplained, and separate the legitimate request for clarification from assuming that one shared description entails one abstract entity. Locked score: The fixed 80 reflects clear, relevant pressure on unstable terminology, while incomplete accommodation of the opponent's intended descriptive framework limits the strength of the charge that no consistent position is available.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "english-label-comparison",
+              "time": "1:00:44",
+              "score": 77,
+              "role": "Supporting reply",
+              "words": "Jump compares a shared proposition with the English language used by two sentences, proposing that common labels organize expressions without naming an additional independently existing entity behind them.",
+              "critique": "Strongest feature: Jump uses the familiar classification of two sentences as English to show that singular descriptive language need not immediately identify an additional object located alongside the sentences themselves. Principal limitation: Shared language membership differs from sharing one particular truth, and the example does not establish that linguistic categories lack any reality or that their status transfers straightforwardly to propositions. Live burden: Jump must establish how his labeling account preserves determinate sameness of content across speakers, rather than relying on the grammatical similarity between one language and one proposition to settle their existence. Locked score: The preserved 77 recognizes an understandable, relevant caution about reading existence from ordinary expressions, but its support remains analogical and does not fully answer the more specific truth-bearing role Anderson attributes to content.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "social-construction-bearer-challenge",
+              "time": "1:04:03",
+              "score": 79,
+              "role": "Supporting reply",
+              "words": "Anderson accepts correspondence with reality but redirects Jump from truthmaking conditions to the things that are true, identifying propositions as the content borne within beliefs and other expressions.",
+              "critique": "Strongest feature: Anderson preserves agreement about correspondence while redirecting attention to the item that is true, preventing the discussion of social definitions from displacing his narrower question about content within a belief. Principal limitation: Defining propositions as truth bearers does not establish their independence from constructed sentences or mental activity, and Jump has already distinguished invented labels from the noninvented circumstances governing their application. Live burden: He must identify why a socially constructed representation cannot itself bear truth when accurately related to reality, rather than assuming that naming its content a proposition resolves the underlying existence dispute. Locked score: The unchanged 79 rewards a clear and relevant distinction that keeps the central issue visible, while limited engagement with the opponent's clarified construction-and-correspondence account constrains the force of this renewed challenge.",
+              "tags": []
+            },
+            "con": {
+              "ledgerMoveId": "social-truth-independent-reality",
+              "time": "1:03:38",
+              "score": 83,
+              "role": "Major direct reply",
+              "words": "Jump distinguishes socially constructed truth definitions from independent reality, arguing that whether ideas accurately describe the world is not itself determined by the conventions used to label them.",
+              "critique": "Strongest feature: Jump clearly separates the socially chosen definition of truth from the independent success or failure of an idea's description, resisting the suggestion that constructed vocabulary makes reality itself a social invention. Principal limitation: The distinction protects objectivity but leaves the nature of the truth-bearing item underdeveloped, because explaining what governs correct application of a label does not settle what possesses the labeled property. Live burden: Jump needs to connect independently constrained descriptions with a consistent account of their content, preserving his useful distinction while answering Anderson's request for more than an account of truthmaking. Locked score: The fixed 83 acknowledges coherence, calibration, and conceptual clarification within the social-construction exchange, without treating that success as a complete explanation of shared propositions or proof that every abstract entity is dispensable.",
+              "tags": []
+            }
+          }
+        ]
+      },
+      {
+        "sectionId": "knowledge-without-propositions",
+        "title": "Knowledge Without Propositions",
+        "timebox": "1:12:48–1:23:19",
+        "score": {
+          "pro": 75,
+          "con": 77
+        },
+        "exchanges": [
+          {
+            "pro": {
+              "ledgerMoveId": "knowledge-needs-real-object",
+              "time": "1:12:48",
+              "score": 72,
+              "role": "Major direct reply",
+              "words": "Anderson argues that denying real propositions removes the objects of knowledge, using arithmetic knowledge to suggest Jump's account leaves people claiming to know truths that do not exist.",
+              "critique": "Strongest feature: Anderson draws out a consequence of the dispute by asking what someone knows when knowing arithmetic, connecting the status of propositions to the distinction between genuine knowledge and mere imagination. Principal limitation: The conclusion assumes that knowledge requires an independently existing propositional object, so describing the grammatical object of knowing does not establish the disputed existence requirement against Jump's alternative account. Live burden: He must demonstrate why an accurately representing idea cannot constitute knowledge through its relation to reality, rather than inferring the impossibility of knowledge directly from rejection of his preferred truth-bearer category. Locked score: The retained 72 recognizes a relevant and understandable challenge with significant philosophical stakes, but its central assumption and overstated consequence weaken the inference that denying abstract propositions means literally knowing nothing.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "Knowledge is said to disappear when independent propositional objects are denied."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "knowledge-with-constructed-labels",
+              "time": "1:15:30",
+              "score": 81,
+              "role": "Major direct reply",
+              "words": "Jump explains knowing through an idea accurately describing reality, while treating truth and proposition vocabulary as constructed labels, and asks Anderson to identify any contradiction in that arrangement.",
+              "critique": "Strongest feature: Jump distinguishes an invented truth label from the independent reality that makes its application appropriate, describing how a sky-related idea might remain accurate without requiring the vocabulary itself to exist independently. Principal limitation: The proposal establishes an intelligible arrangement rather than a complete account of knowledge, leaving justification, reliable recognition, and the relationship between matching ideas insufficiently explained in the actual reply. Live burden: He must show how the constructed representation supports knowledge rather than merely correct labeling, while Anderson must identify an actual contradiction instead of assuming that nominal vocabulary makes its worldly subject fictitious. Locked score: The fixed 81 rewards a coherent, appropriately scoped answer to the alleged loss of knowledge, although the remaining explanatory details prevent this local defense from establishing a comprehensive alternative theory.",
+              "tags": []
+            }
+          },
+          {
+            "pro": {
+              "ledgerMoveId": "whose-idea-is-shared-truth",
+              "time": "1:21:53",
+              "score": 77,
+              "role": "Major direct reply",
+              "words": "Anderson asks whose individual idea could constitute the proposition shared across statements and beliefs, arguing that private mental instances cannot substitute for the single common truth about Socrates.",
+              "critique": "Strongest feature: Anderson sharpens the shared-content problem by asking whose idea could serve as the truth known by different people, making the difficulty of identifying a common claim with one private episode explicit. Principal limitation: The question presupposes that shared content must be numerically one entity rather than equivalently represented across distinct ideas, so rejecting any single person's ownership does not eliminate distributed correspondence accounts. Live burden: He must defend the requirement of one independent bearer and explain why multiple ideas cannot perform the relevant representational work, rather than assuming the earlier contested singularity claim has been settled. Locked score: The preserved 77 credits a directly engaged challenge about common knowledge, but the argument's dependence on unresolved identity assumptions limits its force against Jump's account of separate descriptive instances.",
+              "tags": [
+                {
+                  "label": "Begging the question",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/begging-the-question/",
+                  "context": "The singular shared proposition is treated as established when private ideas are excluded."
+                }
+              ]
+            },
+            "con": {
+              "ledgerMoveId": "instances-make-propositions-dispensable",
+              "time": "1:22:45",
+              "score": 72,
+              "role": "Major direct reply",
+              "words": "Jump returns to key instances performing the same work, arguing that reality remains independent of propositions and that descriptions need not exist for their subject matter to exist.",
+              "critique": "Strongest feature: Jump returns to the success of individual keys to challenge the necessity of an additional idea, emphasizing that the reality being described does not depend on human descriptions for its existence. Principal limitation: The conclusion shifts from reality's independence to the dispensability of propositions for knowledge and communication, although physical objects operating without descriptions does not show that descriptions lack necessary semantic structure. Live burden: He must demonstrate that separate instances perform the truth-bearing and knowledge-related functions Anderson identifies, rather than showing only that an external lock or other worldly object survives without our ideas. Locked score: The unchanged 72 acknowledges a relevant functional challenge but reflects an incomplete analogy and overextended conclusion, especially where independence of reality is substituted for an explanation of how speakers share truths.",
+              "tags": [
+                {
+                  "label": "Red herring",
+                  "type": "fallacy",
+                  "url": "https://logfall.com/fallacies/red-herring/",
+                  "context": "Reality operating without descriptions replaces the question about knowledge and shared content."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "overall": {
+      "pro": {
+        "score": 79,
+        "strengths": [
+          "Anderson consistently distinguished truth-bearing content from the circumstances making it accurate, giving the extended exchange a clearly identifiable central philosophical question.",
+          "His arithmetic and discovery examples put substantial pressure on identifying every truth with an actual human sentence, inscription, or individual thought.",
+          "The unicorn distinction and qualified response to matching keys clarified competing commitments without pretending that the entire argument for God had been defended."
+        ],
+        "blunders": [
+          {
+            "text": "The initial route left mental character and identification with God largely outlined, so success defending shared content did not establish the motion-level conclusion.",
+            "links": []
+          },
+          {
+            "text": "Several shared-content arguments moved too quickly from equivalent meaning to one independent entity, leaving Jump's relational alternative insufficiently excluded by the examples.",
+            "links": []
+          },
+          {
+            "text": "The claim that rejecting propositions eliminates knowledge depended on the disputed existence requirement, overstating what the grammatical object of knowing could establish.",
+            "links": [
+              {
+                "label": "Begging the question",
+                "url": "https://logfall.com/fallacies/begging-the-question/"
+              }
+            ]
+          }
+        ]
+      },
+      "con": {
+        "score": 74,
+        "strengths": [
+          "Jump effectively separated necessary features of reality from contingent descriptions, directly challenging the transfer of necessity from represented facts to representing entities.",
+          "His empty-world reply distinguished facts within a hypothetical scenario from actual sentences about it, answering a specific alleged contradiction with appropriate scope.",
+          "The social-construction and knowledge replies preserved independent reality while treating labels as invented, resisting the suggestion that conventional vocabulary entails invented worldly facts."
+        ],
+        "blunders": [
+          {
+            "text": "His statements, ideas, correspondence relations, and nonexistent abstractions did not maintain sufficiently stable roles, making the proposed account harder to evaluate consistently.",
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
+              }
+            ]
+          },
+          {
+            "text": "The unicorn and Star Wars comparisons inadequately distinguished fictional subjects from truth-bearing content, leaving their application to mathematical propositions unsupported at crucial points.",
+            "links": [
+              {
+                "label": "Equivocation",
+                "url": "https://logfall.com/fallacies/equivocation/"
+              }
+            ]
+          },
+          {
+            "text": "Brain-pattern assertions and the final key analogy did not explain shared meaning sufficiently, and reality's independence alone did not establish propositions' dispensability for knowledge.",
+            "links": [
+              {
+                "label": "Red herring",
+                "url": "https://logfall.com/fallacies/red-herring/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "logicalExtension": {
+      "pro": {
+        "finalArgument": {
+          "thesis": "Shared and unexpressed logical content provides a conditional explanatory case for a necessary mind, provided its mental character can be independently defended.",
+          "premises": [
+            "Different sentences and individual beliefs can represent equivalent content without being identical physical occurrences themselves.",
+            "Arithmetic correctness extends beyond the particular statements and mental episodes that human beings have actually produced.",
+            "An adequate explanation must account for shared content and unexpressed correctness rather than merely enumerate their physical expressions.",
+            "If the best explanation identifies necessary logical content as thought, that explanation must include an appropriate thinking subject.",
+            "If such thoughts exist necessarily and require a necessarily existing subject, a necessary mind follows without yet establishing every divine attribute."
+          ],
+          "conclusion": "Therefore, a necessary mind becomes a conditional explanatory candidate, but defending mental character and identifying that mind with God remain indispensable additional tasks.",
+          "notice": "AI-generated reconstruction, not spoken by Anderson; this proposed strengthening does not affect any score."
+        },
+        "newArguments": [
+          {
+            "title": "Translation through correction",
+            "text": "Consider a hypothetical mistranslation that both speakers later correct. The proposed extension asks what makes the correction an improvement rather than merely a new agreement. A realist could argue that both versions are answerable to determinate content that neither speaker creates by endorsing it. This develops Anderson's translation example by adding the possibility of jointly recognized error. It does not establish an independent proposition automatically: a correspondence account could appeal to the described situation. The additional burden is to show that stable content explains correction more adequately than coordinated relations among speakers, expressions, and reality."
+          },
+          {
+            "title": "One account across changing media",
+            "text": "Imagine an arithmetic claim passing from spoken explanation to written notation and then to an unfamiliar symbolic system. A strengthened realist argument would compare how competing accounts preserve its inferential consequences through each change. If an account must repeatedly reconstruct the same content from unrelated physical details, treating that content as a genuine explanatory object may offer theoretical economy. This is a proposal for comparison, not a demonstration that abstract objects exist. Jump's alternative could answer by specifying transformation rules, so the proposed test concerns which account explains preservation without silently assuming the very content it seeks to eliminate."
+          },
+          {
+            "title": "Separate the mental bridge",
+            "text": "A proposed continuation would isolate the claim that propositions are thoughts from the earlier claim that propositions exist. Anderson could ask whether their representational character is better explained by mental activity than by nonmental abstract structure, explicitly comparing those alternatives before introducing God. This would improve the argument's organization by preventing success against sentence tokens from carrying an undefended conclusion about mentality. The extension supplies no missing evidence for that comparison. Its value is methodological: only after a supported mental account emerges would necessary existence raise a further question about the kind of mind required."
+          }
+        ]
+      },
+      "con": {
+        "finalArgument": {
+          "thesis": "The presented argument does not yet establish God because shared accuracy and necessary facts need not transfer their status to independently existing representations.",
+          "premises": [
+            "Human sentences and ideas can be assessed against circumstances that exist independently of the labels humans adopt.",
+            "Distinct representations may correspond to the same circumstances without becoming one numerically identical physical item.",
+            "A description can contingently exist while correctly representing a feature that could not have been otherwise.",
+            "Showing that representations share content does not alone establish that their content exists as an independent mental entity.",
+            "Anderson's proposed route requires defended transitions from truth to independent existence, mental character, and identification with a necessary divine mind."
+          ],
+          "conclusion": "Therefore, rejecting the presented route remains reasonable unless those transitions are defended, even while a complete naturalistic account of content remains unfinished.",
+          "notice": "AI-generated reconstruction, not spoken by Jump; this proposed strengthening does not affect any score."
+        },
+        "newArguments": [
+          {
+            "title": "A controlled correspondence model",
+            "text": "A hypothetical model could assign two different sentence tokens to the same independently specified condition, then evaluate each token by whether that condition obtains. This would make Jump's alternative more precise than repeatedly invoking reality. The model would not deny shared content in ordinary speech; it would test whether such speech can be explained through relations without adding another object. Its limitation is equally important: the specified condition and assignment rule might themselves require an account of meaning. The proposed argument therefore challenges the necessity of Anderson's additional entity while acknowledging that a successful model must avoid hiding propositions in its definitions."
+          },
+          {
+            "title": "Separate syntax from existence",
+            "text": "A proposed objection could compare sentences with grammatical objects that carry different existence commitments. Knowing that arithmetic holds, imagining a unicorn, and seeking an explanation each have structured complements, but their grammar alone does not determine what entities must exist. This develops the late knowledge exchange into a narrower challenge: Anderson must defend the existence implications of knowledge specifically rather than infer them from object-like phrasing. The argument does not show that knowledge lacks content or that all abstract entities are fictional. It identifies an additional explanatory step needed before ordinary language can establish an independent proposition."
+          },
+          {
+            "title": "Compare the unfinished alternatives",
+            "text": "Suppose the descriptive account of shared meaning remains incomplete after the debate. A further objection would ask whether that incompleteness favors a necessary mind specifically, rather than a nonmental account of abstract content or another unfinished theory. Each proposal should face the same demand to explain translation, arithmetic, and knowledge. This extends Jump's critical position without pretending that naturalism has already supplied every mechanism. The suggested comparison blocks an inference from one rival's missing details to the truth of theism unless the theistic account offers independently supported advantages at the disputed mental and divine-identification steps."
+          }
+        ]
+      }
+    }
   }
 ];
 

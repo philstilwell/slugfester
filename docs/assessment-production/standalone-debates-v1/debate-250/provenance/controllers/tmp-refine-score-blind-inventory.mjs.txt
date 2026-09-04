@@ -1,0 +1,64 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson,validateStandaloneInventory} from './lib/assessment-production-standalone-debate-v1.mjs';
+const index=process.argv.indexOf('--debate'),number=process.argv[index+1];assert(index>=0);assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert.ok(entry);
+const base=entry.root,input=`${base}/inventory/model-output.json`,output=`${base}/inventory/controller-reviewed-output.json`,auditPath=`${base}/inventory/score-blind-refinement.json`;
+assert.equal(fs.existsSync(output),false);assert.equal(fs.existsSync(auditPath),false);assert.equal(fs.existsSync(`${base}/inventory/inventory.json`),false);assert.equal(fs.existsSync(`${base}/judgments/judgment-packet.json`),false);
+const raw=read(input),reviewed=structuredClone(raw);assert.equal(raw.debateNumber,number);assert.equal(raw.debateId,entry.debateId);
+const quotes={
+ 'necessary-mind-outline':'thoughts require a mind',
+ 'logic-describes-reality':'the laws of logic simply describe that',
+ 'truth-bearers-not-makers':"we have to distinguish the statements the physical articulations from the truth itself",
+ 'sentences-and-correspondence':"propositions aren't some separate category from my perspective",
+ 'translation-shares-one-truth':'they express the same truth they have the same propositional content',
+ 'fictional-translation-comparison':"it's purely just something we've made up",
+ 'empty-world-truth':'there would be a truth',
+ 'empty-world-fact-not-sentence':'truth is a property of sentences',
+ 'infinite-unexpressed-truths':'there are many many more truths than there are statements or thoughts or beliefs',
+ 'potential-linguistic-combinations':'we can combine those in an infinite number of ways to create infinite possible statements',
+ 'ocean-not-abstract':"you can't help yourself to abstract entities and also maintain that you are a physicalist",
+ 'brain-pattern-abstraction':'abstract things are just emergent properties of the brain',
+ 'mathematics-not-fiction':'they are truths that are independent of our thinking and our speaking about them',
+ 'fiction-and-math-correspondence':"they're only true because they correspond to reality",
+ 'necessary-truths-not-contingent-tokens':'a necessary truth is something that is true in every possible world',
+ 'necessary-reality-contingent-descriptions':"it's just the descriptive thing that we're using to describe the necessary thing",
+ 'biochemical-ideas':'these ideas which are just physical combinations of biochemical interactions in the brain',
+ 'ideas-share-content':'there are two ideas that Express one truth',
+ 'keys-without-third-entity':"I don't see any necessary third category here",
+ 'keys-reopen-universals':"I don't think the illustration settles anything because it just raises the question of universals",
+ 'idea-object-distinction':"unicorns don't exist ideas about unicorns do exist",
+ 'ideas-not-independent-objects':"they don't exist independently of our heads",
+ 'concrete-abstract-status-challenge':"you're skipping forth between the categories of concrete things concrete physical things and Abstract things",
+ 'english-label-comparison':"it's a label that we apply to things",
+ 'social-truth-independent-reality':'whether or not our ideas can describe that reality',
+ 'social-construction-bearer-challenge':'what are the things that are true',
+ 'knowledge-needs-real-object':'anything that we know has to be a truth',
+ 'knowledge-with-constructed-labels':"I didn't make up the truthmaker the truthmaker is independent",
+ 'whose-idea-is-shared-truth':'whose idea is going to be that proposition',
+ 'instances-make-propositions-dispensable':'reality exists independent of the propositions'
+};
+assert.deepEqual(Object.keys(quotes).sort(),raw.moves.map(m=>m.moveId).sort());
+const changes=[];
+for(const move of reviewed.moves){
+ const quote=quotes[move.moveId];assert.ok(move.sourceSpan.excerpt.includes(quote));
+ assert.ok(quote.split(/\s+/).length>=3&&quote.split(/\s+/).length<=18);
+ if(JSON.stringify(move.quoteEligibleExactSpans)!==JSON.stringify([quote])){
+  changes.push({moveId:move.moveId,field:'quoteEligibleExactSpans',before:move.quoteEligibleExactSpans,after:[quote],reason:'Replace an introductory fragment or weaker candidate with an exact substantive passage from the same selected source span; no source words are rewritten.'});
+  move.quoteEligibleExactSpans=[quote];
+ }
+}
+const move=reviewed.moves.find(m=>m.moveId==='idea-object-distinction');
+assert.deepEqual(move.respondsToIds,['keys-without-third-entity']);
+const target='fictional-translation-comparison';assert.ok(reviewed.moves.findIndex(m=>m.moveId===target)<reviewed.moves.indexOf(move));
+changes.push({moveId:move.moveId,field:'respondsToIds',before:move.respondsToIds,after:[target],reason:'The selected unicorn/idea distinction challenges the already selected unicorn-to-proposition comparison. The key-making move does not contain that comparison and is not the precise reply target.'});
+changes.push({moveId:move.moveId,field:'responseComponents[0].targetMoveId',before:move.responseComponents[0].targetMoveId,after:target,reason:'Keep the component target consistent with the corrected earlier selected comparison.'});
+move.respondsToIds=[target];move.responseComponents[0].targetMoveId=target;
+const strip=i=>i.moves.map(({quoteEligibleExactSpans,respondsToIds,responseComponents,...rest})=>rest);
+assert.deepEqual(strip(raw),strip(reviewed));
+for(const key of Object.keys(raw).filter(k=>k!=='moves'))assert.deepEqual(raw[key],reviewed[key]);
+const events=read(`.assessment-cache/captions/${entry.videoId}/events.json`),validation=validateStandaloneInventory(reviewed,events);
+fs.writeFileSync(output,serializedJson(reviewed),{flag:'wx'});
+fs.writeFileSync(auditPath,serializedJson({status:'source-blind-refinement-before-controller-freeze',debateNumber:number,debateId:entry.debateId,videoId:entry.videoId,preservedModelOutput:fileRecord(input),reviewedOutput:fileRecord(output),judgmentCallsBeforeRefinement:0,changes,validation,audit:{moveCountUnchanged:true,sourceSpansUnchanged:true,speakerAttributionsUnchanged:true,sectionAssignmentsUnchanged:true,weightsAndImportanceUnchanged:true,burdenRoutesUnchanged:true,sourceExactQuotes:true,onlyOneReplyTargetCorrected:true,allPriorBytesPreserved:true}}),{flag:'wx'});
+console.log(JSON.stringify({status:'passed',changes:changes.length,validation},null,2));

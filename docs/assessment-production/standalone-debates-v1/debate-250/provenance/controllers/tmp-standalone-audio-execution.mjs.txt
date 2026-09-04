@@ -1,0 +1,52 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');
+assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),record=fileRecord,round=n=>Math.round(n*1e9)/1e9;
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert.ok(entry);
+const root=entry.root,audioRoot=`${root}/audio`,planPath=`${audioRoot}/plan.json`,plan=read(planPath),auth=read(`${root}/authorization.json`);
+const inventoryPath=`${root}/inventory/inventory.json`,inventory=read(inventoryPath);
+assert.equal(plan.debateNumber,number);assert.equal(plan.debateId,entry.debateId);assert.equal(auth.identity.videoId,entry.videoId);
+assert.equal(record(inventoryPath).sha256,plan.inventory.sha256);
+assert.deepEqual(plan.clips.map(c=>c.moveId),inventory.moves.filter(m=>m.attributionConfidence!=='high').map(m=>m.moveId));
+const write=(p,v)=>{assert.equal(fs.existsSync(p),false,`Refuse overwrite ${p}`);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,serializedJson(v),{flag:'wx'});};
+const exception=read(`${audioRoot}/cost-authorization-exception.json`);
+assert.equal(exception.status,'explicitly-authorized-by-user');assert.equal(exception.debateNumber,number);assert.equal(exception.videoId,entry.videoId);assert.equal(exception.plan.sha256,record(planPath).sha256);assert.ok(plan.cost.maximumUsd<=exception.maximumUsd);
+const perCallReserve=round((plan.cost.planningInputTokensPerCall*plan.cost.inputPerMillionUsd+plan.cost.planningOutputTokensPerCall*plan.cost.outputPerMillionUsd)/1000000);
+if(phase==='call'){
+ const disclosure=read(`${audioRoot}/cost-disclosure.json`);assert.equal(disclosure.plan.sha256,record(planPath).sha256);
+ const index=Number(arg('--index'));assert.ok(Number.isInteger(index)&&index>=0&&index<plan.clips.length);
+ const clip=plan.clips[index],attemptPath=`${audioRoot}/responses/${clip.moveId}.attempt.json`,responsePath=`${audioRoot}/responses/${clip.moveId}.json`;
+ for(const p of [attemptPath,responsePath,clip.responsePath])assert.equal(fs.existsSync(p),false,`Attempt already exists ${p}`);
+ let prior=0;
+ for(const c of plan.clips.slice(0,index)){const a=read(`${audioRoot}/responses/${c.moveId}.attempt.json`);assert.equal(a.status,'complete');prior+=a.directCostUsd;}
+ assert.ok(prior+(plan.clips.length-index)*perCallReserve<=exception.maximumUsd+1e-9,'Actual usage plus conservative remaining reserve exceeds approved budget');
+ for(const r of [clip.clip,...plan.speakerReferences.map(r=>r.clip)])assert.equal(record(r.path).sha256,r.sha256);
+ assert.ok(process.env.OPENAI_API_KEY,'OPENAI_API_KEY missing');
+ const form=new FormData();form.append('file',new Blob([fs.readFileSync(clip.clip.path)],{type:'audio/mpeg'}),path.basename(clip.clip.path));
+ for(const [key,value] of [['model',plan.model],['response_format',plan.responseFormat],['chunking_strategy',plan.chunkingStrategy],['language',plan.language]])form.append(key,value);
+ for(const r of plan.speakerReferences){form.append('known_speaker_names[]',r.name);form.append('known_speaker_references[]',`data:audio/mpeg;base64,${fs.readFileSync(r.clip.path).toString('base64')}`);}
+ const attempt={status:'started',debateNumber:number,debateId:entry.debateId,moveId:clip.moveId,attempt:1,retries:0,startedAt:new Date().toISOString(),plan:record(planPath),clip:clip.clip,maximumPotentialCostUsd:perCallReserve};write(attemptPath,attempt);
+ try{
+  const result=await fetch('https://api.openai.com/v1/audio/transcriptions',{method:'POST',headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`},body:form,signal:AbortSignal.timeout(240000)});
+  const body=await result.text();fs.writeFileSync(responsePath,body,{flag:'wx'});assert.ok(result.ok,`Transcription HTTP ${result.status}; raw response preserved`);
+  const data=JSON.parse(body);assert.ok(data.segments?.length);assert.equal(data.usage?.type,'tokens');
+  const cost=round((data.usage.input_tokens*plan.cost.inputPerMillionUsd+data.usage.output_tokens*plan.cost.outputPerMillionUsd)/1000000);
+  fs.mkdirSync(path.dirname(clip.responsePath),{recursive:true});fs.copyFileSync(responsePath,clip.responsePath,fs.constants.COPYFILE_EXCL);
+  fs.writeFileSync(attemptPath,serializedJson({...attempt,status:'complete',completedAt:new Date().toISOString(),httpStatus:result.status,response:record(responsePath),usage:data.usage,directCostUsd:cost,maximumPotentialCostUsd:cost}));
+  console.log(JSON.stringify({moveId:clip.moveId,segments:data.segments.length,directCostUsd:cost,cumulativeCostUsd:round(prior+cost)},null,2));
+ }catch(error){fs.writeFileSync(attemptPath,serializedJson({...attempt,status:'failed-or-transport-uncertain',finishedAt:new Date().toISOString(),error:String(error),noAutomaticRetry:true}));throw error;}
+}else if(phase==='finalize'){
+ const reviewPath=`${audioRoot}/controller-review.json`,review=read(reviewPath);assert.equal(review.status,'complete-and-confirmed');
+ const triggered=inventory.moves.filter(m=>m.attributionConfidence!=='high').map(m=>m.moveId);assert.deepEqual(review.checks.map(c=>c.moveId),triggered);
+ const checks=plan.clips.map((clip,i)=>{
+  const responsePath=`${audioRoot}/responses/${clip.moveId}.json`,response=read(responsePath),attempt=read(`${audioRoot}/responses/${clip.moveId}.attempt.json`),r=review.checks[i];
+  assert.equal(attempt.status,'complete');assert.equal(attempt.response.sha256,record(responsePath).sha256);assert.equal(r.responseSha256,record(responsePath).sha256);assert.equal(r.confirmedSpeaker,clip.speaker);assert.ok(r.rationale.length>=80);
+  return {moveId:clip.moveId,status:'confirmed',expectedSpeaker:clip.speaker,confirmedSpeaker:r.confirmedSpeaker,method:'gpt-4o-transcribe-diarize with two source-anchored known-speaker references; controller review of every returned segment and frozen source boundary',clip:clip.clip,response:record(responsePath),attempt:1,retries:0,rationale:r.rationale,segments:response.segments.map(s=>({...s,absoluteStartMs:Math.round(clip.clip.startMs+s.start*1000),absoluteEndMs:Math.round(clip.clip.startMs+s.end*1000)})),usage:response.usage,directCostUsd:attempt.directCostUsd,inventoryChanges:0};
+ });
+ const cost=round(checks.reduce((sum,c)=>sum+c.directCostUsd,0));assert.ok(cost<=exception.maximumUsd);
+ write(`${audioRoot}/audio-verification.json`,{schemaVersion:'1.0-standalone-audio-verification',protocolId:'assessment-production-standalone-debate-v1',status:'complete',debateNumber:number,debateId:entry.debateId,completedAt:new Date().toISOString(),inventory:record(inventoryPath),plan:record(planPath),controllerReview:record(reviewPath),triggeredMoveIds:triggered,checks,cost:{frozenFullDebateEstimateUsd:plan.cost.estimatedUsd,preauthorizedMaximumUsd:exception.maximumUsd,paidCalls:checks.length,paidMinutes:plan.clips.reduce((n,c)=>n+c.clip.durationSeconds,0)/60,directCostUsd:cost,knownSuccessfulCallCostUsd:cost,maximumPotentialCombinedCostUsd:cost,uncertainCostUsd:0,transcriptionCapUsd:exception.maximumUsd,standingTranscriptionCapUsd:auth.cost.standingPaidTranscriptionMaximumUsd,costAuthorizationException:record(`${audioRoot}/cost-authorization-exception.json`),pricingUrl:plan.cost.pricingUrl,calculation:'Actual reported input tokens at $2.50 per million plus output tokens at $10 per million; no automatic retries.'},audit:{lockedMovesReviewed:inventory.moves.length,highAttributionConfidenceMoves:inventory.moves.length-checks.length,requiredAttributionChecks:triggered.length,completedAttributionChecks:checks.length,unresolvedAttributionChecks:0,paidTranscriptionUsed:true,successfulPaidCallsRepeated:0,inventoryChanged:false}});
+ console.log(JSON.stringify({checks:checks.length,directCostUsd:cost,unresolved:0}));
+}else throw new Error('Unknown phase');
