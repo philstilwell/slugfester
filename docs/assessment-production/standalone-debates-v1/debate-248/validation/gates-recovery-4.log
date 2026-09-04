@@ -1,0 +1,485 @@
+
+> slugfester@0.1.0 check
+> node scripts/validate-topic-categories.mjs && node --check src/app.js && node --check src/seo.js && node --check src/data/debates.js && node --check src/data/interlocutors.js && node --check src/data/references.js && node --check scripts/acquire-youtube-captions.mjs && node --check scripts/acquire-corpus-captions.mjs && node --check scripts/normalize-openai-diarized-transcript.mjs && node --check scripts/validate-corpus-transcripts.mjs && node --check scripts/validate-complete-gate.mjs && node --check scripts/validate-scoring-pass-v2.2.mjs && node --check scripts/prepare-v22-gate-sources.mjs && node --check scripts/validate-v22-gate-sources.mjs && node --check scripts/build-v22-gate-ledgers.mjs && node --check scripts/validate-v22-adjudication.mjs && node --check scripts/analyze-v22-gate.mjs && node --check scripts/validate-v22-complete-gate.mjs && node --check scripts/prepare-v23-gate-sources.mjs && node --check scripts/validate-v23-gate-sources.mjs && node --check scripts/validate-response-classification-v2.3.mjs && node --check scripts/validate-v23-response-lock.mjs && node --check scripts/validate-scoring-pass-v2.3.mjs && node --check scripts/validate-v23-score-adjudication.mjs && node --check scripts/build-v23-gate-ledgers.mjs && node --check scripts/analyze-v23-gate.mjs && node --check scripts/validate-v23-complete-gate.mjs && node --check scripts/extract-v24-development-disagreements.mjs && node --check scripts/validate-v24-source-chain.mjs && node --check scripts/validate-v24-development.mjs && node --check scripts/validate-v24-atomic-inventory.mjs && node --check scripts/validate-v24-inventory-review.mjs && node --check scripts/validate-v24-annotation-pass.mjs && node --check scripts/validate-v24-annotation-lock.mjs && node --check scripts/analyze-v24-held-out-gate.mjs && node --check scripts/validate-v24-complete-gate.mjs && node --check scripts/lib/v25-derived-annotations.mjs && node --check scripts/extract-v25-development-cases.mjs && node --check scripts/build-v25-development-examples.mjs && node --check scripts/validate-v25-development.mjs && node --check scripts/validate-v25-source-chain.mjs && node --check scripts/validate-v25-atomic-inventory.mjs && node --check scripts/validate-v25-inventory-review.mjs && node --check scripts/validate-v25-third-review.mjs && node --check scripts/validate-v25-annotation-pass.mjs && node --check scripts/validate-v25-annotation-lock.mjs && node --check scripts/analyze-v25-held-out-gate.mjs && node --check scripts/validate-v25-complete-gate.mjs && node --check scripts/lib/v26-derived-annotations.mjs && node --check scripts/extract-v26-target-contact-disputes.mjs && node --check scripts/build-v26-target-contact-examples.mjs && node --check scripts/validate-v26-development.mjs && node --check scripts/analyze-v26-development.mjs && node --check scripts/validate-v26-atomic-inventory.mjs && node --check scripts/validate-v26-source-chain.mjs && node --check scripts/validate-v26-inventory-review.mjs && node --check scripts/validate-v26-third-review.mjs && node --check scripts/validate-v26-annotation-pass.mjs && node --check scripts/validate-v26-annotation-lock.mjs && node --check scripts/analyze-v26-held-out-gate.mjs && node --check scripts/validate-v26-complete-gate.mjs && node --check scripts/lib/v27-derived-annotations.mjs && node --check scripts/extract-v27-development-disagreements.mjs && node --check scripts/build-v27-development-examples.mjs && node --check scripts/validate-v27-development.mjs && node --check scripts/test-v27-derived-annotations.mjs && node --check scripts/analyze-v27-development.mjs && node --check scripts/validate-v27-atomic-inventory.mjs && node --check scripts/validate-v27-annotation-pass.mjs && node --check scripts/validate-v27-inventory-review.mjs && node --check scripts/validate-v27-annotation-lock.mjs && node --check scripts/analyze-v27-held-out-gate.mjs && node --check scripts/validate-v27-gate-manifest.mjs && node --check scripts/validate-v27-complete-gate.mjs && node --check scripts/build-v27-eligible-pool.mjs && node --check scripts/preregister-v27-gates.mjs && python3 -c "from pathlib import Path; compile(Path('scripts/transcribe-whisper-timestamps.py').read_text(), 'scripts/transcribe-whisper-timestamps.py', 'exec')" && node --check scripts/build-blind-packets.mjs && node --check scripts/build-calibration-benchmarks.mjs && node --check scripts/build-calibration-ledgers.mjs && node --check scripts/calculate-reassessment.mjs && node --check scripts/analyze-v2.1-pilot.mjs && node --check scripts/lib/reassessment-scoring.mjs && node --check scripts/test-reassessment-scoring.mjs && node --check scripts/validate-calibration-v2.1.mjs && node --check scripts/generate-seo-pages.mjs && node --check scripts/build-v38-heldout-eligible-pool.mjs && node --check scripts/preregister-v38-burden-contact-gate.mjs && node --check scripts/validate-v38-burden-contact-preregistration.mjs && node --check scripts/validate-v38-source-access-lock.mjs && node scripts/test-reassessment-scoring.mjs && node scripts/validate-debates.mjs && node scripts/validate-calibration-v2.1.mjs && node scripts/analyze-v2.1-pilot.mjs --check && node scripts/validate-corpus-transcripts.mjs && node scripts/validate-complete-gate.mjs && node scripts/validate-v22-gate-sources.mjs && node scripts/validate-v22-complete-gate.mjs && node scripts/validate-v24-source-chain.mjs && node scripts/validate-v24-development.mjs && node scripts/validate-v25-source-chain.mjs && node scripts/validate-v25-development.mjs && node scripts/validate-v27-development.mjs && node scripts/test-v27-derived-annotations.mjs && node scripts/analyze-v27-development.mjs && node scripts/validate-design-template.mjs && node scripts/generate-seo-pages.mjs --check && node scripts/validate-v38-source-access-lock.mjs
+
+Validated explicit primary categories for 248 debates across 15 categories.
+Validated v2 compatibility, v2.1 thresholds, and v2.2 audio/adjustment controls.
+Validated 248 debates.
+Validated 10 v2.1 calibration ledgers and their source chain.
+Validated 10 debates and 20 moves.
+{
+  "corpusDebates": 248,
+  "available": 248,
+  "unavailable": 0,
+  "acquisitionRate": 1,
+  "completeGateTranscripts": 3,
+  "localHashesChecked": 240
+}
+{
+  "ledgers": 3,
+  "sections": 17,
+  "moves": 79,
+  "triggeredMoves": 26,
+  "calculatorMismatches": 0,
+  "schemaUniformity": "passed",
+  "gateDecision": "not-passed"
+}
+{
+  "status": "passed",
+  "debates": 3,
+  "moves": 79,
+  "mediumOrLowAudioVerified": 14,
+  "unresolved": 0,
+  "sourceQaCorrections": 2,
+  "controlledInventoryInvariants": "passed",
+  "rawArtifactHashes": "passed"
+}
+{
+  "schemaVersion": "2.2-complete-gate-validation",
+  "validatedAt": "2026-08-03T00:41:30.189Z",
+  "gateManifestSha256": "52305d2c66935a57e053124e7c14e930f3f0cd38f69daef632835fd67ee5ecca",
+  "reliabilityAnalysisSha256": "ebded512b43de4e5764e5b7259eedc41fbf7b992f9990ea3ce7017bf94f7a0fb",
+  "gateDecisionSha256": "d1441812f6a87d4379f578c07f691064e400ed8939061efd77dc7758a0ef3faa",
+  "debates": [
+    {
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "passASha256": "2b52f908a78b63f9d2323156356fad71e6509f6ff278d01ac100e68bab72e8a6",
+      "passBSha256": "41fac0be0d8b7be81a985e32b935428c55cf76f561db3be9f4930d38ea3e7ea5",
+      "adjudicationSha256": "e79925d0f8f5912dfd33e4c8ad5f0eeed466d4ac8b97d8d517eafbd01575f6b8",
+      "ledgerSha256": "a61956c79df0485ab4a4e20f92e8e5e04cbc3ec09938c7280d09465c2a25afcb",
+      "moves": 26,
+      "triggeredMoves": 11,
+      "calculatorMismatches": 0
+    },
+    {
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "passASha256": "4f25f3ece7bdbb32b0c53a185a768cdbe023c4e63439c2980d10d1a28696a1fc",
+      "passBSha256": "4bb94c704d219ac4fe1262b25a675f7c800eaff670fcc731ccfc2de7929fef07",
+      "adjudicationSha256": "0392a39cb390d2c45113008c1d5d4eac8b1fe365cbbe49b535a5721bf038b984",
+      "ledgerSha256": "a696dad18c62253f32028a00aa6f4ce959f7b17a05898bf48d6eaa8617be163a",
+      "moves": 25,
+      "triggeredMoves": 6,
+      "calculatorMismatches": 0
+    },
+    {
+      "debateId": "craig-frazier-goff-folley-god-reality-2026",
+      "passASha256": "3e726b70c338cc0603993bf4b7fe403906201510ad9e833393a1b643ebc02f4f",
+      "passBSha256": "17a757ad3cd29b3ab890e19f6cdd957a409b3668d9a2d6ffa0207da2985c779f",
+      "adjudicationSha256": "af91028a9a57aee8be39c1eaacbda18abfdb3991f1982b083a675d98dddd1335",
+      "ledgerSha256": "bd6ece122e18efaf7f0b9368f55c1c8f3062b60f353cd6cad0a79682d77f240d",
+      "moves": 28,
+      "triggeredMoves": 9,
+      "calculatorMismatches": 0
+    }
+  ],
+  "totals": {
+    "debateCount": 3,
+    "sectionCount": 17,
+    "moveCount": 79,
+    "triggeredMoveCount": 26,
+    "moveAdjudicationRate": 0.3291,
+    "mediumOrLowAudioVerified": 14,
+    "unresolvedMediumOrLow": 0,
+    "passSchemaVariants": 1,
+    "ledgerSchemaVariants": 1,
+    "burdenAdjustmentEligibilityViolations": 0,
+    "missingRequiredAdjudications": 0,
+    "calculatorMismatches": 0
+  },
+  "overallStatus": "passed-mechanics-gate-not-passed"
+}
+{
+  "status": "passed",
+  "debateCount": 3,
+  "paidTranscriptionCalls": 0,
+  "debates": [
+    {
+      "debateId": "carroll-shermer-hutchinson-dsouza-science-religion-2012",
+      "videoId": "ulykALV2FQ8",
+      "sourceType": "auto-captions",
+      "wordCount": 23301,
+      "eventCount": 3081,
+      "transcriptSha256": "51e43ff9453eda91fbb7a6816c1adbb2c3b7e8361f31fd7f2568c6de34251d16",
+      "eventsSha256": "eb553642477116561edeb0a6f946fd31b3f9cd0062ab8f9d8fe683add1a76aee",
+      "manifestSha256": "028f8fe555ce43955d69694bba626e04bc4997d1402451a21525dc657a832dde"
+    },
+    {
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "videoId": "IW9w6c2RWmA",
+      "sourceType": "human-captions",
+      "wordCount": 28504,
+      "eventCount": 1511,
+      "transcriptSha256": "f24ccb20690144ccfcecff41f4b274f6d9f285d10f7d190cdb998398c4554fbd",
+      "eventsSha256": "a9e6767e0f7325793049c7af2483841d23af4bbcd2766d6bd8789e5cf4e0aa44",
+      "manifestSha256": "b9df8f56313a43e7c141abb5eee8d05d4005283d956123ff7b7fa78f6a7a0a50"
+    },
+    {
+      "debateId": "huemer-oppy-souls-personal-identity-2022",
+      "videoId": "gxSi0htNihk",
+      "sourceType": "auto-captions",
+      "wordCount": 24870,
+      "eventCount": 3704,
+      "transcriptSha256": "8ad124154675eef151672bd438520af0a514ddea61f822ee18534959957cee3d",
+      "eventsSha256": "fc752494e233eff522021e36dcba0a3f2efdab7feab46649cd356d155d974272",
+      "manifestSha256": "29f9d3bd89a96dd9b8e8654d2f7aa2f8ead528526fefa2cbc4f2b5e6dd7b64de"
+    }
+  ]
+}
+{
+  "status": "passed",
+  "sourceDisagreements": 32,
+  "orthogonalExamples": 32,
+  "heldOutEligible": false
+}
+{
+  "status": "passed",
+  "debateCount": 3,
+  "paidTranscriptionCalls": 0,
+  "debates": [
+    {
+      "debateId": "enoch-sampson-loeb-lutz-moral-realism-2024",
+      "videoId": "6Uw9szL-3MA",
+      "sourceType": "auto-captions",
+      "wordCount": 21908,
+      "eventCount": 2695,
+      "transcriptSha256": "b856ac8642eb744f11cf4d77bbbf3776430a2907f2341caf242b24291323e1d4",
+      "eventsSha256": "ce6e3b0249def2172eab06f3db03b765c5c8ea7bfabcfc4386d6203a440f3542",
+      "manifestSha256": "24783e957f4244dd72101df8e4975054f81704b3948639fd0516a06e268f9f56"
+    },
+    {
+      "debateId": "licona-carrier-resurrection-history-2010",
+      "videoId": "0IpKHdVLZb4",
+      "sourceType": "human-captions",
+      "wordCount": 29078,
+      "eventCount": 1571,
+      "transcriptSha256": "4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b",
+      "eventsSha256": "cc44372243cbd640ad13a702286c232c90667636fbb385499552822e11cfeda1",
+      "manifestSha256": "771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699"
+    },
+    {
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "videoId": "AxhA7S3q49o",
+      "sourceType": "auto-captions",
+      "wordCount": 22811,
+      "eventCount": 3514,
+      "transcriptSha256": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+      "eventsSha256": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+      "manifestSha256": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a"
+    }
+  ]
+}
+{
+  "status": "passed",
+  "caseCount": 15,
+  "disputedFieldCount": 24,
+  "derivedExampleCount": 15,
+  "heldOutContamination": 0
+}
+{
+  "status": "passed",
+  "caseCount": 15,
+  "intentionalContactRevisions": [
+    "173:173-m11",
+    "192:m08"
+  ],
+  "sourceSha256": "e009e3eb8112ccccc982178ccf565afaa58cb1a6cae1f44fb967be999b6b82e3",
+  "examplesSha256": "61470975c752fa967c3040e1758c9d18350bc13cceb49e717a06f7fe25eecc95",
+  "schemaSha256": "9387f7011f5a7bd4de529e186b5fb3b028d1a8ee2d06c63cd2bb1024daa2edb9"
+}
+{
+  "status": "passed",
+  "assertions": 12
+}
+{
+  "status": "passed",
+  "write": false,
+  "replayCount": 3,
+  "stableMoveCount": 36,
+  "burdenDerivationRegressions": 0,
+  "reframeDerivationRegressions": 0
+}
+Validated locked debate page design.
+Validated 709 SEO files.
+{
+  "status": "passed",
+  "gateManifestImmutable": true,
+  "selectedDebates": [
+    {
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "number": "103"
+    },
+    {
+      "debateId": "craig-malpass-kalam-nothing-2026",
+      "number": "55"
+    },
+    {
+      "debateId": "craig-millican-does-god-exist-2011",
+      "number": "161"
+    }
+  ],
+  "localTranscriptChainsPresent": 3,
+  "sourceAccessAuthorized": true,
+  "sourcePreparationAuthorized": true,
+  "classificationPassesAuthorized": false,
+  "numericalScoringAuthorized": false,
+  "assessmentProseAuthorized": false,
+  "productionMutationAuthorized": false,
+  "maximumMeteredCostUsd": 0
+}
+
+> slugfester@0.1.0 postcheck
+> npm run assessment:campaign:closure:repository:check && npm run assessment:calibration-promotion:repository:check && npm run assessment:standalone:repository:check && npm run assessment:standalone:content-parity:check && npm run assessment:standalone:rhetorical-tags:check && npm run assessment:standalone:primary-speaker-scope:check && npm run assessment:multi-speaker:v1:check
+
+
+> slugfester@0.1.0 assessment:campaign:closure:repository:check
+> node scripts/audit-assessment-production-campaign-closure.mjs --repository-only
+
+Campaign closure audit passed: 174 reassessments, 174 ledgers, 696 passing screenshots, 99 audio verifications (repository-only replay; 1316 ignored-local-evidence references were verified through their tracked frozen hash locks without reading local bytes).
+
+> slugfester@0.1.0 assessment:calibration-promotion:repository:check
+> node scripts/audit-assessment-production-calibration-promotion-v1.mjs --repository-only
+
+Calibration promotion audit passed: 5 promoted debates, 100 promoted moves, 179 historical production ledgers plus 53 authenticated standalone ledgers, 10 promoted viewports, 20 promoted screenshots, $0 direct incremental cost (repository-only frozen-hash replay).
+
+> slugfester@0.1.0 assessment:standalone:repository:check
+> node scripts/audit-assessment-production-standalone-v1.mjs --audit --repository-only
+
+Standalone debate audit passed: Debate 196, 20 moves, 5 sections, pro 77, con 79, 9 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 197, 30 moves, 6 sections, pro 74, con 83, 50 disputes, 3 audio checks, 2 viewports, $0.0200725 known direct incremental cost (repository-only hash replay); score stability mean 1.5, max 2, excursion 0.
+Standalone debate audit passed: Debate 198, 27 moves, 4 sections, pro 67, con 83, 31 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 199, 20 moves, 5 sections, pro 82, con 81, 9 disputes, 7 audio checks, 2 viewports, $0.4084025 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 200, 42 moves, 7 sections, pro 76, con 69, 55 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 201, 45 moves, 7 sections, pro 68, con 82, 15 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 202, 39 moves, 6 sections, pro 76, con 72, 15 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 203, 35 moves, 5 sections, pro 74, con 77, 40 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 1, max 2, excursion 0.
+Standalone debate audit passed: Debate 204, 29 moves, 6 sections, pro 71, con 81, 16 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 205, 26 moves, 6 sections, pro 71, con 75, 4 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 206, 25 moves, 6 sections, pro 76, con 77, 29 disputes, 13 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 207, 24 moves, 5 sections, pro 74, con 86, 20 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 208, 20 moves, 6 sections, pro 83, con 78, 5 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 209, 29 moves, 6 sections, pro 85, con 75, 8 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 1.
+Standalone debate audit passed: Debate 210, 26 moves, 5 sections, pro 88, con 83, 3 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 211, 25 moves, 5 sections, pro 80, con 82, 7 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 212, 22 moves, 5 sections, pro 80, con 80, 22 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 1.
+Standalone debate audit passed: Debate 213, 26 moves, 6 sections, pro 75, con 78, 7 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 214, 30 moves, 6 sections, pro 74, con 78, 25 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 215, 28 moves, 6 sections, pro 74, con 84, 12 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 216, 28 moves, 6 sections, pro 68, con 83, 30 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 217, 38 moves, 6 sections, pro 69, con 84, 37 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 1, max 2, excursion 0.
+Standalone debate audit passed: Debate 218, 28 moves, 5 sections, pro 73, con 83, 8 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 219, 31 moves, 6 sections, pro 77, con 72, 8 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 220, 37 moves, 7 sections, pro 71, con 83, 5 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 221, 35 moves, 7 sections, pro 80, con 82, 2 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 222, 41 moves, 7 sections, pro 76, con 81, 6 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 223, 42 moves, 7 sections, pro 76, con 83, 5 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 224, 39 moves, 7 sections, pro 85, con 82, 5 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 225, 40 moves, 7 sections, pro 83, con 80, 3 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 1, max 1, excursion 1.
+Standalone debate audit passed: Debate 226, 39 moves, 7 sections, pro 79, con 80, 15 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 227, 32 moves, 5 sections, pro 75, con 78, 5 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 0.
+Standalone debate audit passed: Debate 228, 28 moves, 5 sections, pro 85, con 83, 10 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 1, max 2, excursion 0.
+Standalone debate audit passed: Debate 229, 48 moves, 7 sections, pro 79, con 80, 97 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 1, max 2, excursion 0.
+Standalone debate audit passed: Debate 230, 36 moves, 7 sections, pro 81, con 82, 8 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 231, 41 moves, 7 sections, pro 74, con 77, 2 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 232, 40 moves, 6 sections, pro 79, con 79, 10 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0, max 0, excursion 0.
+Standalone debate audit passed: Debate 233, 38 moves, 6 sections, pro 71, con 82, 3 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 234, 34 moves, 7 sections, pro 77, con 80, 3 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0, max 0, excursion 0.
+Standalone debate audit passed: Debate 235, 28 moves, 6 sections, pro 72, con 78, 52 disputes, 6 audio checks, 2 viewports, $0.0110392 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 2, excursion 0.
+Standalone debate audit passed: Debate 236, 25 moves, 6 sections, pro 82, con 81, 10 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 237, 24 moves, 5 sections, pro 78, con 79, 111 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 3.75, max 8, excursion 0.
+Standalone debate audit passed: Debate 238, 22 moves, 5 sections, pro 68, con 82, 16 disputes, 3 audio checks, 2 viewports, $0.010718925 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 239, 25 moves, 6 sections, pro 75, con 81, 4 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.75, max 1, excursion 1.
+Standalone debate audit passed: Debate 240, 28 moves, 7 sections, pro 76, con 83, 15 disputes, 2 audio checks, 2 viewports, $0.013125 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 241, 19 moves, 5 sections, pro 70, con 85, 5 disputes, 1 audio checks, 2 viewports, $0.00135625 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 242, 24 moves, 6 sections, pro 78, con 77, 8 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+Standalone debate audit passed: Debate 243, 43 moves, 6 sections, pro 73, con 73, 111 disputes, 0 audio checks, 2 viewports, $0.6551 known direct incremental cost (repository-only hash replay); score stability mean 1.25, max 3, excursion 0.
+Standalone debate audit passed: Debate 244, 22 moves, 5 sections, pro 73, con 87, 3 disputes, 0 audio checks, 2 viewports, $0 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 245, 44 moves, 7 sections, pro 81, con 86, 2 disputes, 2 audio checks, 2 viewports, $0.053515 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 246, 31 moves, 7 sections, pro 75, con 87, 2 disputes, 2 audio checks, 2 viewports, $0.07015 known direct incremental cost (repository-only hash replay); score stability mean 0.25, max 1, excursion 0.
+Standalone debate audit passed: Debate 247, 29 moves, 7 sections, pro 85, con 76, 2 disputes, 9 audio checks, 2 viewports, $0.277065 known direct incremental cost (repository-only hash replay); score stability mean 0, max 0, excursion 0.
+Standalone debate audit passed: Debate 248, 46 moves, 7 sections, pro 82, con 85, 4 disputes, 4 audio checks, 2 viewports, $0.0916925 known direct incremental cost (repository-only hash replay); score stability mean 0.5, max 1, excursion 0.
+
+> slugfester@0.1.0 assessment:standalone:content-parity:check
+> node scripts/audit-assessment-production-standalone-content-parity.mjs
+
+Standalone content parity passed: Debate 196 against Debates 171-195; 20 moves, 5 sections, 1 justified relative outlier.
+Standalone content parity passed: Debate 197 against Debates 171-195; 30 moves, 6 sections, 3 justified relative outliers.
+Standalone content parity passed: Debate 198 against Debates 171-195; 27 moves, 4 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 199 against Debates 171-195; 20 moves, 5 sections, 3 justified relative outliers.
+Standalone content parity passed: Debate 200 against Debates 171-195; 42 moves, 7 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 201 against Debates 171-195; 45 moves, 7 sections, 9 justified relative outliers.
+Standalone content parity passed: Debate 202 against Debates 171-195; 39 moves, 6 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 203 against Debates 171-195; 35 moves, 5 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 204 against Debates 171-195; 29 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 205 against Debates 171-195; 26 moves, 6 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 206 against Debates 171-195; 25 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 207 against Debates 171-195; 24 moves, 5 sections, 4 justified relative outliers.
+Standalone content parity passed: Debate 208 against Debates 171-195; 20 moves, 6 sections, 4 justified relative outliers.
+Standalone content parity passed: Debate 209 against Debates 171-195; 29 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 210 against Debates 171-195; 26 moves, 5 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 211 against Debates 171-195; 25 moves, 5 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 212 against Debates 171-195; 22 moves, 5 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 213 against Debates 171-195; 26 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 214 against Debates 171-195; 30 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 215 against Debates 171-195; 28 moves, 6 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 216 against Debates 171-195; 28 moves, 6 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 217 against Debates 171-195; 38 moves, 6 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 218 against Debates 171-195; 28 moves, 5 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 219 against Debates 171-195; 31 moves, 6 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 220 against Debates 171-195; 37 moves, 7 sections, 4 justified relative outliers.
+Standalone content parity passed: Debate 221 against Debates 171-195; 35 moves, 7 sections, 8 justified relative outliers.
+Standalone content parity passed: Debate 222 against Debates 171-195; 41 moves, 7 sections, 8 justified relative outliers.
+Standalone content parity passed: Debate 223 against Debates 171-195; 42 moves, 7 sections, 9 justified relative outliers.
+Standalone content parity passed: Debate 224 against Debates 171-195; 39 moves, 7 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 225 against Debates 171-195; 40 moves, 7 sections, 8 justified relative outliers.
+Standalone content parity passed: Debate 226 against Debates 171-195; 39 moves, 7 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 227 against Debates 171-195; 32 moves, 5 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 228 against Debates 171-195; 28 moves, 5 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 229 against Debates 171-195; 48 moves, 7 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 230 against Debates 171-195; 36 moves, 7 sections, 9 justified relative outliers.
+Standalone content parity passed: Debate 231 against Debates 171-195; 41 moves, 7 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 232 against Debates 171-195; 40 moves, 6 sections, 8 justified relative outliers.
+Standalone content parity passed: Debate 233 against Debates 171-195; 38 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 234 against Debates 171-195; 34 moves, 7 sections, 10 justified relative outliers.
+Standalone content parity passed: Debate 235 against Debates 171-195; 28 moves, 6 sections, 4 justified relative outliers.
+Standalone content parity passed: Debate 236 against Debates 171-195; 25 moves, 6 sections, 5 justified relative outliers.
+Standalone content parity passed: Debate 237 against Debates 171-195; 24 moves, 5 sections, 3 justified relative outliers.
+Standalone content parity passed: Debate 238 against Debates 171-195; 22 moves, 5 sections, 3 justified relative outliers.
+Standalone content parity passed: Debate 239 against Debates 171-195; 25 moves, 6 sections, 4 justified relative outliers.
+Standalone content parity passed: Debate 240 against Debates 171-195; 28 moves, 7 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 241 against Debates 171-195; 19 moves, 5 sections, 3 justified relative outliers.
+Standalone content parity passed: Debate 242 against Debates 171-195; 24 moves, 6 sections, 3 justified relative outliers.
+Standalone content parity passed: Debate 243 against Debates 171-195; 43 moves, 6 sections, 4 justified relative outliers.
+Standalone content parity passed: Debate 244 against Debates 171-195; 22 moves, 5 sections, 6 justified relative outliers.
+Standalone content parity passed: Debate 245 against Debates 171-195; 44 moves, 7 sections, 7 justified relative outliers.
+Standalone content parity passed: Debate 246 against Debates 171-195; 31 moves, 7 sections, 10 justified relative outliers.
+Standalone content parity passed: Debate 247 against Debates 171-195; 29 moves, 7 sections, 11 justified relative outliers.
+Standalone content parity passed: Debate 248 against Debates 171-195; 46 moves, 7 sections, 11 justified relative outliers.
+
+> slugfester@0.1.0 assessment:standalone:rhetorical-tags:check
+> node scripts/audit-assessment-production-standalone-rhetorical-tags.mjs
+
+Standalone rhetorical-tag review passed: Debate 196; 20 moves reviewed, 4 tags accepted, 17 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 197; 30 moves reviewed, 7 tags accepted, 17 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 198; 27 moves reviewed, 7 tags accepted, 20 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 199; 20 moves reviewed, 4 tags accepted, 22 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 200; 42 moves reviewed, 2 tags accepted, 20 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 201; 45 moves reviewed, 4 tags accepted, 19 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 202; 39 moves reviewed, 5 tags accepted, 23 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 203; 35 moves reviewed, 7 tags accepted, 22 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 204; 29 moves reviewed, 6 tags accepted, 25 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 205; 26 moves reviewed, 7 tags accepted, 19 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 206; 25 moves reviewed, 8 tags accepted, 16 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 207; 24 moves reviewed, 5 tags accepted, 17 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 208; 20 moves reviewed, 6 tags accepted, 20 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 209; 29 moves reviewed, 6 tags accepted, 16 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 210; 26 moves reviewed, 6 tags accepted, 15 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 211; 25 moves reviewed, 4 tags accepted, 16 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 212; 22 moves reviewed, 7 tags accepted, 26 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 213; 26 moves reviewed, 5 tags accepted, 30 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 214; 30 moves reviewed, 4 tags accepted, 15 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 215; 28 moves reviewed, 3 tags accepted, 12 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 216; 28 moves reviewed, 4 tags accepted, 26 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 217; 38 moves reviewed, 9 tags accepted, 8 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 218; 28 moves reviewed, 7 tags accepted, 12 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 219; 31 moves reviewed, 3 tags accepted, 21 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 220; 37 moves reviewed, 13 tags accepted, 25 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 221; 35 moves reviewed, 7 tags accepted, 18 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 222; 41 moves reviewed, 11 tags accepted, 13 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 223; 42 moves reviewed, 7 tags accepted, 24 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 224; 39 moves reviewed, 6 tags accepted, 14 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 225; 40 moves reviewed, 8 tags accepted, 37 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 226; 39 moves reviewed, 0 tags accepted, 23 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 227; 32 moves reviewed, 4 tags accepted, 44 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 228; 28 moves reviewed, 10 tags accepted, 28 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 229; 48 moves reviewed, 13 tags accepted, 25 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 230; 36 moves reviewed, 3 tags accepted, 9 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 231; 41 moves reviewed, 7 tags accepted, 12 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 232; 40 moves reviewed, 3 tags accepted, 17 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 233; 38 moves reviewed, 7 tags accepted, 23 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 234; 34 moves reviewed, 5 tags accepted, 16 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 235; 28 moves reviewed, 1 tags accepted, 13 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 236; 25 moves reviewed, 4 tags accepted, 29 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 237; 24 moves reviewed, 9 tags accepted, 11 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 238; 22 moves reviewed, 13 tags accepted, 24 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 239; 25 moves reviewed, 4 tags accepted, 29 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 240; 28 moves reviewed, 3 tags accepted, 30 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 241; 19 moves reviewed, 4 tags accepted, 31 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 242; 24 moves reviewed, 8 tags accepted, 33 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 243; 43 moves reviewed, 15 tags accepted, 30 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 244; 22 moves reviewed, 3 tags accepted, 15 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 245; 44 moves reviewed, 1 tags accepted, 52 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 246; 31 moves reviewed, 5 tags accepted, 45 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 247; 29 moves reviewed, 9 tags accepted, 52 plausible candidates rejected.
+Standalone rhetorical-tag review passed: Debate 248; 46 moves reviewed, 6 tags accepted, 70 plausible candidates rejected.
+
+> slugfester@0.1.0 assessment:standalone:primary-speaker-scope:check
+> node scripts/test-assessment-production-primary-speaker-scope-exception.mjs
+
+Primary-speaker scope exception fixtures passed.
+
+> slugfester@0.1.0 assessment:multi-speaker:v1:check
+> node scripts/build-assessment-production-multi-speaker-approximation-v1.mjs && node scripts/test-assessment-production-multi-speaker-approximation-v1.mjs
+
+{
+  "status": "passed",
+  "path": "docs/assessment-production/multi-speaker-approximation-v1/manifest.json",
+  "sha256": "d8d74547153e54ed49b4143f0c0792821b592146c46025dd1d50da0b82df6d46",
+  "debates": 16,
+  "sourceChains": 16
+}
+{
+  "status": "passed",
+  "inventory": {
+    "status": "passed",
+    "debateNumber": "test",
+    "speakers": 3,
+    "sections": 4,
+    "moves": 12,
+    "formatFitness": {
+      "publicFormat": "debate",
+      "twoSidedFit": "clear",
+      "scorecardEligible": true,
+      "winnerEligible": true,
+      "mixedRolePresent": false,
+      "mixedAlignmentPresent": false
+    },
+    "belowHighAttributionMoveIds": []
+  },
+  "inventoryAudit": {
+    "status": "passed",
+    "verdict": "accept",
+    "approvedForScoring": true,
+    "findings": 0,
+    "corrections": 0
+  },
+  "audio": {
+    "status": "passed",
+    "verifiedMoves": 12,
+    "corrections": 0
+  },
+  "disputes": 3,
+  "scores": {
+    "pro": {
+      "weightedSectionMean": 76.75,
+      "burdenCompletionAdjustment": 0,
+      "score": 77
+    },
+    "con": {
+      "weightedSectionMean": 76.75,
+      "burdenCompletionAdjustment": 0,
+      "score": 77
+    }
+  },
+  "speakerDiagnostics": 3,
+  "stability": {
+    "meanAbsoluteDistance": 1.25,
+    "maximumDistance": 3,
+    "maximumExcursion": 0
+  },
+  "uncertainty": {
+    "meanMoveScoreDelta": 1.17,
+    "maximumMoveScoreDelta": 3
+  },
+  "formatSensitive": false,
+  "checkpointDecision": "proceed-to-batches"
+}

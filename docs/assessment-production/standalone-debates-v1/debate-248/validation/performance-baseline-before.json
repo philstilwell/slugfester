@@ -1,0 +1,34 @@
+{
+  "status": "measured-before-debate-integration",
+  "debateNumber": "248",
+  "repositoryBaseline": "8e0c21ee1a1830681bf29cf3fcbeb09a958b448c",
+  "publishedDebates": 247,
+  "method": "Real Chromium page navigation through the Playwright CLI; waited for networkidle and summed performance resource entries under /src/data/ using decodedBodySize.",
+  "browserSession": "debate248",
+  "baseUrl": "http://127.0.0.1:4188",
+  "existingBudget": {
+    "baselineDebates": 237,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "existingAddedDebates": 10,
+    "proposedAdditionWouldTriggerReview": true
+  },
+  "routes": [
+    {"route": "/", "actualDataBytes": 424444, "existingEffectiveLimitBytes": 445000, "remainingBytes": 20556, "fullDebatesFileLoaded": false, "horizontalOverflow": false},
+    {"route": "/rankings/", "actualDataBytes": 476292, "existingEffectiveLimitBytes": 495000, "remainingBytes": 18708, "fullDebatesFileLoaded": false, "horizontalOverflow": false},
+    {"route": "/debate/craig-oconnor-god-debate-2026/", "actualDataBytes": 512135, "existingEffectiveLimitBytes": 530000, "remainingBytes": 17865, "fullDebatesFileLoaded": false, "horizontalOverflow": false},
+    {"route": "/reference/fallacy/equivocation/", "actualDataBytes": 529712, "existingEffectiveLimitBytes": 535000, "remainingBytes": 5288, "fullDebatesFileLoaded": false, "horizontalOverflow": false}
+  ],
+  "observedResourceBytes": {
+    "/src/data/topics.js": 7772,
+    "/src/data/debate-summaries.js": 388648,
+    "/src/data/interlocutors.js": 23557,
+    "/src/data/references.js": 4467,
+    "/src/data/debate-analytics.js": 51848,
+    "/src/data/debate-details/craig-oconnor-god-debate-2026.js": 35843,
+    "/src/data/reference-appearances/fallacy-equivocation.js": 105268
+  },
+  "assessment": "Every route remains below its unchanged effective limit. The reference page has the least headroom and needs a post-addition measurement. A checkpoint renewal must move the baseline count and corresponding route base limits together, preserving the effective byte limits and the 5,000-byte growth allowance; neither the review interval nor a failing byte limit may be loosened.",
+  "baselineUpdateApplied": false,
+  "userApprovalRequestedSeparately": true
+}

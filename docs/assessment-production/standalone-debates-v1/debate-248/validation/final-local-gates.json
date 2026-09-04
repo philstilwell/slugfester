@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "completedAt": "2026-09-04T01:18:01.937Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/validation/gates-recovery-1.log",
+        "sha256": "225a9fc63d12cddf1590dcaac411aa06a1c457795127ac3bb283afd6f157659a",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/validation/gates-recovery-2.log",
+        "sha256": "d62f3207c34a46c3c99e08e36e0e1fee9209c745037605e6b7310a6e0e0757df",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 248",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/validation/gates-recovery-3.log",
+        "sha256": "3edb927755692519d7cf17fb3b54db7330bc0b88995cc8e61bbb09558caab062",
+        "bytes": 254
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/validation/gates-recovery-4.log",
+        "sha256": "9f8def63623a4b7b541fa8e8a505f84397f9f84c675983407835bf76ebc2170c",
+        "bytes": 42702
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/validation/gates-recovery-5.log",
+        "sha256": "ab3d3d4c1fe1fd39d922ae173ab27f2bfdb6aecce68d2b9bb1e1cfa522835286",
+        "bytes": 204338
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-248/validation/gates-recovery-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

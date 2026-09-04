@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "6c07033630a4410f6f505cc3423e33ed15811e33971535e6527083dc09a2d6cc",
+    "bytes": 89944
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[1].exchanges[1].pro.tags",
+        "candidate.sections[1].exchanges[2].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[2].exchanges[0].pro.tags",
+        "candidate.sections[2].exchanges[1].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[2].exchanges[2].pro.tags",
+        "candidate.sections[6].exchanges[1].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.overall.pro.blunders[0].links",
+        "candidate.overall.pro.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.overall.con.blunders[0].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 6,
+    "overallBlunderLinkChanges": 3,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/output.json",
+      "sha256": "8552aa0bd94b071273e4bf09af8c8ae79c59bea1ae6953d033aab1ca653570f3",
+      "bytes": 92589
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-audit.json",
+      "sha256": "452858592ef1f9f2f02f554f4a833b3b7af25195ce907c4e5e825e55dd64b788",
+      "bytes": 186498
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "f962765e738a31af7b2bae9037a745f433d465e0c64137eac1ff420cdd5f8035",
+      "bytes": 127708
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "user-authorized-before-change",
+  "debateNumber": "248",
+  "authorization": "Approve the measured review and limit-preserving update",
+  "approvedScope": "Include a documented performance-baseline review in this publication, only if measured page sizes pass and effective download-size limits remain unchanged.",
+  "additionalAllowedTrackedPaths": ["tests/site-quality/site-quality.spec.mjs"],
+  "constraints": {
+    "effectiveRouteByteLimitsMayIncrease": false,
+    "bytesPerAddedDebateMayIncrease": false,
+    "reviewIntervalMayIncrease": false,
+    "accessibilityThresholdsMayWeaken": false,
+    "assessmentEvidenceOrScoresMayChange": false
+  },
+  "relationshipToFrozenAuthorization": "This additive authorization extends only the tracked-path scope for the measured review; it does not replace or modify the original assessment authorization or hashes."
+}

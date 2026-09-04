@@ -1,0 +1,938 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/captions.srv3.xml",
+      "sha256": "0f20caae879fa7ca610e90740d382c674a2598db77ae9391ce651dbed373b0ca",
+      "bytes": 625888
+    },
+    "events": {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/events.json",
+      "sha256": "06f39fc04a647da0de95d63b76ce810a0b102425f6d8aef96f06bb593d2a3519",
+      "bytes": 329851
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/transcript.txt",
+      "sha256": "34e687f0df3e06cfb82a2adb1aa7b85189f1972ce773cbfdd46cdaba94235da3",
+      "bytes": 133880
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/manifest.json",
+      "sha256": "ca14068079dfce8dd05de8e58e7d1b1b3d1989c780afa7a9bcb52092a2fab07f",
+      "bytes": 1017
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/source/source-lock.json",
+      "sha256": "a73f4d49e7a2fca2b015f8e1e3ce68b6ed432ca73a31a15cdb61eec5622cfed3",
+      "bytes": 4153
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/authorization.json",
+      "sha256": "6e716021e2e51dbc8ebaba00d9b973f78be43e12c94a7956135b0c6b5f986537",
+      "bytes": 3601
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/inventory/inventory.json",
+      "sha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8",
+      "bytes": 183103
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/authorization.json",
+      "sha256": "6e716021e2e51dbc8ebaba00d9b973f78be43e12c94a7956135b0c6b5f986537",
+      "bytes": 3601
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/manifest.json",
+      "sha256": "0dd4fd834d6025f8728e2f5e6fd87ca1893eb7d6dc641a043b2d9745ec9a75f0",
+      "bytes": 7257
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/source/source-lock.json",
+      "sha256": "a73f4d49e7a2fca2b015f8e1e3ce68b6ed432ca73a31a15cdb61eec5622cfed3",
+      "bytes": 4153
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/inventory/inventory.json",
+      "sha256": "369b8b117d175e4d5fef33fb77e42ee51af6059425ebe395cb525196bdb390c8",
+      "bytes": 183103
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/judgment-packet.json",
+      "sha256": "bd8bd492a58cc8496b00e96ef2bb1bb2ca88f90fc1ce51f2fe1b9ad6da22722d",
+      "bytes": 5076
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/execution.json",
+      "sha256": "26a8478eba1274f1144d5510089afe1e798ecfef6d7cf744c3e32305250fa7e6",
+      "bytes": 4515
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-a/output.json",
+      "sha256": "5f0a4d700f72810cd039eb9ac7bdb8e42cfa48514f138e7ed0a5e667f1fe83cf",
+      "bytes": 66041
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/judgments/pass-b/output.json",
+      "sha256": "bd05aa88297a821cd56fd2bf65081be7e5f5e8129c98f961b26ac79181992e2d",
+      "bytes": 71243
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/disagreements/disagreements.json",
+      "sha256": "763ffe240a8f1e20f23e1e4408f2095a3c33b5ff8cf50082c98dd3ff74cdac00",
+      "bytes": 10864
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/audio-verification.json",
+      "sha256": "c8dbbbf3952d9c0770a22905f4b607ecc4b161b0dab8e2e3e0acac34f43c2a65",
+      "bytes": 35152
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/adjudication/packet.json",
+      "sha256": "059b43a810e3a4fb2895bff39e46a61d3c9484469f3b47ea66e3a4743ac77fe6",
+      "bytes": 18286
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/adjudication/output.json",
+      "sha256": "33d8b838cbeeaa28788390e107a79da16d76c3e80f417425915364ccec0946c8",
+      "bytes": 3728
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/final-ledger/final-ledger.json",
+      "sha256": "f8817d0e3bf30be4cbf701c8d822015a2e167d3a6cd18ccd2181af810f2bbf4c",
+      "bytes": 347584
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/score-pass/input.json",
+      "sha256": "43edf4274d85b05f7be7f5a7d0c9389ac97b8f2312ab990a4e775f1e0b7b5b21",
+      "bytes": 970
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/score-pass/output.json",
+      "sha256": "15b77ff649956f681b37abf98ec3f5557e5986104055d5d457b9f4500d888428",
+      "bytes": 23002
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/score-pass/attestation.json",
+      "sha256": "e46a75c4013171a8dcc9356158c199b2e8ecd310c566147acb88ba622c1228d1",
+      "bytes": 838
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/output.json",
+      "sha256": "8552aa0bd94b071273e4bf09af8c8ae79c59bea1ae6953d033aab1ca653570f3",
+      "bytes": 92589
+    },
+    "events": {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/events.json",
+      "sha256": "06f39fc04a647da0de95d63b76ce810a0b102425f6d8aef96f06bb593d2a3519",
+      "bytes": 329851
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/transcript.txt",
+      "sha256": "34e687f0df3e06cfb82a2adb1aa7b85189f1972ce773cbfdd46cdaba94235da3",
+      "bytes": 133880
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/content-parity-audit.json",
+      "sha256": "604bbdb40dbe1a82dc66cf22452e98e173639c0811623029749b34e752534229",
+      "bytes": 7978
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/correction-2-rhetorical-tags.json",
+      "sha256": "019ed906a2f26cbd22e89bb3457de0b89bfcac01f69bc1d620ba19340024bd17",
+      "bytes": 2653
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-audit.json",
+      "sha256": "452858592ef1f9f2f02f554f4a833b3b7af25195ce907c4e5e825e55dd64b788",
+      "bytes": 186498
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "caac06cb69b428cfd1bb026ce699dcd3e568ac1f5e73ce537794d9717e2c82eb",
+      "bytes": 3413
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "d6c52d4bd5813597e7994b32359d7ed517b62be8230c9254b2b3bddcc6780ee4",
+      "bytes": 2621
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "248",
+    "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+    "sections": [
+      {
+        "sectionId": "abstract-grounding",
+        "title": "Abstract objects, aseity, and conceptualism",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-platonism-concession",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 95,
+                  "evidenceWarrant": 91,
+                  "responsiveness": 96,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 94,
+                  "calibrationCharity": 97
+                },
+                "score": 93
+              },
+              {
+                "moveId": "pro-virtual-divine-ideas",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 86,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 83
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pro-concepts-need-conceptual-distinction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 81,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 86
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-uncreated-abstracta",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 89,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 95
+                },
+                "score": 91
+              },
+              {
+                "moveId": "con-necessary-distinct-dilemma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 88,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 90
+                },
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "abstract-distinction",
+        "title": "Objective distinctions and ideal existence",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-ideal-not-imaginary",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 86,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 87
+                },
+                "score": 83
+              },
+              {
+                "moveId": "pro-conceptual-explanatory-work",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 77,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 83
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-terminology-not-nonexistence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 92,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 90
+                },
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-properties-distinguish-abstracta",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 89
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-plurality-within-intellect",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 87,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 91
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-intentional-object-dilemma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 77,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 86
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "divine-uniqueness",
+        "title": "Identity, natures, and primitive distinction",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-nature-identity-uniqueness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 88,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 81
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-different-natures-equivocal",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 77,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 73
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-transitivity-survives-primitives",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 63,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 78
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pro-divine-number-brute",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 78,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 79
+                },
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-numerically-distinct-natures",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 93
+                },
+                "score": 91
+              },
+              {
+                "moveId": "con-provisional-nature-identity-concession",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 94,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 96
+                },
+                "score": 89
+              },
+              {
+                "moveId": "con-primitive-distinctness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 79,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 87
+                },
+                "score": 79
+              },
+              {
+                "moveId": "con-nature-level-primitive",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 94,
+                  "evidenceWarrant": 88,
+                  "responsiveness": 96,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 96
+                },
+                "score": 93
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "trinity-and-predication",
+        "title": "Divine persons and common divinity",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-properties-presuppose-distinction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 91,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 88
+                },
+                "score": 86
+              },
+              {
+                "moveId": "pro-higher-divinity-participation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 78,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 76
+                },
+                "score": 71
+              },
+              {
+                "moveId": "pro-concedes-route-with-costs",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 94,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 93
+                },
+                "score": 86
+              },
+              {
+                "moveId": "pro-common-divinity-explanation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 87,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-person-number-distinction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 85,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 92
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-concedes-explanatory-order",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 92,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 94
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-common-divinity-not-lion",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 90
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-resists-higher-genus",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 92
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "alternative-monotheism",
+        "title": "Alternative grounds for monotheism",
+        "weightPercent": 9,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-perfection-not-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 79,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 86
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-inference-not-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 94,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 88
+                },
+                "score": 89
+              },
+              {
+                "moveId": "con-causal-ground-uniqueness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 90
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "change-and-knowledge",
+        "title": "Extrinsic change and divine knowledge",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-extrinsic-predication",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 83,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 79
+                },
+                "score": 84
+              },
+              {
+                "moveId": "pro-stipulation-concession",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 93,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 89
+                },
+                "score": 84
+              },
+              {
+                "moveId": "pro-tree-counterexample",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 94,
+                  "evidenceWarrant": 89,
+                  "responsiveness": 83,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 93,
+                  "calibrationCharity": 92
+                },
+                "score": 90
+              },
+              {
+                "moveId": "pro-intrinsic-knower-extrinsic-contrast",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 91,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-stipulated-relational-change",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 94,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 92
+                },
+                "score": 90
+              },
+              {
+                "moveId": "con-signification-concern",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 79,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 79
+                },
+                "score": 70
+              },
+              {
+                "moveId": "con-extrinsic-knowledge-challenge",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 92
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-knowledge-scope-not-creator",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 94,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 96
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "hypostatic-union",
+        "title": "Hypostatic union and theological predication",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-distinct-hypostatic-relation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 81,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 77
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pro-unilateral-union-analogy",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 61,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 73,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 74
+                },
+                "score": 69
+              },
+              {
+                "moveId": "pro-ordinary-extrinsic-language",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 79,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 80
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-christological-predication",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 92,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 87
+                },
+                "score": 88
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "con-asymmetric-union-intuition",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 89,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 94
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-theological-language-revision",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 87,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 91
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-holding-hands-reciprocity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 95,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 94
+                },
+                "score": 91
+              },
+              {
+                "moveId": "con-theological-face-value",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 77,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 90
+                },
+                "score": 78
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 81.66,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      },
+      "con": {
+        "weightedSectionMean": 84.68,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      }
+    },
+    "winner": "con",
+    "winningMargin": 3,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 46,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

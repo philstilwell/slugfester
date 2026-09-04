@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "248",
+  "debateId": "tomaszewski-schmid-classical-theism-monotheism-2020",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "cb3f22d4cded5ffde5cb7574911bce9f07169c91b8bb53b7ced267261b1aee07",
+      "bytes": 161307
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/_6kdwlkceRA/transcript.txt",
+      "sha256": "34e687f0df3e06cfb82a2adb1aa7b85189f1972ce773cbfdd46cdaba94235da3",
+      "bytes": 133880
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-248/audio/audio-verification.json",
+      "sha256": "c8dbbbf3952d9c0770a22905f4b607ecc4b161b0dab8e2e3e0acac34f43c2a65",
+      "bytes": 35152
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_248_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_248_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-248/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}
