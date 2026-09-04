@@ -100,14 +100,6 @@ const paths = {
     selectedRegistryRecord.aiContributionPunctuation?.auditPath,
   postAiContributionPunctuationRendering:
     selectedRegistryRecord.aiContributionPunctuation?.renderingAuditPath,
-  publicationAiContributionNaturalLanguageCorrection:
-    selectedRegistryRecord.aiContributionNaturalLanguage?.correctionPath,
-  publicationAiContributionNaturalLanguageAudit:
-    selectedRegistryRecord.aiContributionNaturalLanguage?.auditPath,
-  publicationAiContributionNaturalLanguageExecution:
-    selectedRegistryRecord.aiContributionNaturalLanguage?.executionPath,
-  postAiContributionNaturalLanguageRendering:
-    selectedRegistryRecord.aiContributionNaturalLanguage?.renderingAuditPath,
   rendering: `${DEBATE_ROOT}/rendering/rendering-audit.json`,
   postPublicationRendering: `${DEBATE_ROOT}/rendering/post-publication-audit-1.json`,
   validation: `${DEBATE_ROOT}/validation-summary.json`,
@@ -118,10 +110,6 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
-  [
-    "scripts/audit-assessment-production-standalone-v1.mjs\u0000e02e60abb7e7e5ff92d447361fd8c960053643675ee1b958df7b17e7dd6ac9aa",
-    "docs/assessment-production/standalone-debates-v1/control-snapshots/e02e60abb7e7e5ff92d447361fd8c960053643675ee1b958df7b17e7dd6ac9aa/audit-assessment-production-standalone-v1.mjs"
-  ],
   [
     "scripts/validate-debates.mjs\u0000dbeab033b008e7adf19aa7ea2c45b3568e3ad157a4bfa769ffd720ee84ad9ed5",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/dbeab033b008e7adf19aa7ea2c45b3568e3ad157a4bfa769ffd720ee84ad9ed5/validate-debates.mjs"
@@ -1001,22 +989,6 @@ function buildProductionAdapter() {
     [
       "postAiContributionPunctuationRendering",
       paths.postAiContributionPunctuationRendering
-    ],
-    [
-      "publicationAiContributionNaturalLanguageCorrection",
-      paths.publicationAiContributionNaturalLanguageCorrection
-    ],
-    [
-      "publicationAiContributionNaturalLanguageAudit",
-      paths.publicationAiContributionNaturalLanguageAudit
-    ],
-    [
-      "publicationAiContributionNaturalLanguageExecution",
-      paths.publicationAiContributionNaturalLanguageExecution
-    ],
-    [
-      "postAiContributionNaturalLanguageRendering",
-      paths.postAiContributionNaturalLanguageRendering
     ]
   ]) {
     if (value && existsSync(absolute(value))) evidencePaths[key] = value;
@@ -1303,9 +1275,7 @@ function audit({ repositoryOnly = false } = {}) {
     assert.equal(changedPaths.length, correction.audit.changedLeafFields);
     const nextCorrection = paths.publicationAiContributionPunctuationCorrection
       ? json(paths.publicationAiContributionPunctuationCorrection)
-      : paths.publicationAiContributionNaturalLanguageCorrection
-        ? json(paths.publicationAiContributionNaturalLanguageCorrection)
-        : null;
+      : null;
     const depthCorrectedBytes = nextCorrection?.preservedPriorOutput?.gitCommit
       ? gitBytes(
           nextCorrection.preservedPriorOutput.gitCommit,
@@ -1432,16 +1402,8 @@ function audit({ repositoryOnly = false } = {}) {
       "AI Contribution punctuation repair differs from its declared writable fields"
     );
     assert.equal(changedPaths.length, correction.audit.changedLeafFields);
-    const punctuationCorrectedBytes = paths.publicationAiContributionNaturalLanguageCorrection
-      ? gitBytes(
-          json(paths.publicationAiContributionNaturalLanguageCorrection)
-            .preservedPriorOutput.gitCommit,
-          json(paths.publicationAiContributionNaturalLanguageCorrection)
-            .preservedPriorOutput.path
-        )
-      : bytes(paths.publication);
-    assert.equal(correction.evidence.after.sha256, sha256(punctuationCorrectedBytes));
-    assert.equal(correction.evidence.after.bytes, punctuationCorrectedBytes.length);
+    assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
+    assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
     assert.equal(
       correction.evidence.punctuationAudit.sha256,
       sha256(bytes(paths.publicationAiContributionPunctuationAudit))
@@ -1486,115 +1448,6 @@ function audit({ repositoryOnly = false } = {}) {
     assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
     assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
     assert.equal(renderingAudit.audit.temporaryControllerDirectoriesRemaining, 0);
-  }
-  if (paths.publicationAiContributionNaturalLanguageCorrection) {
-    const correction = json(paths.publicationAiContributionNaturalLanguageCorrection);
-    const languageAudit = json(paths.publicationAiContributionNaturalLanguageAudit);
-    const execution = json(paths.publicationAiContributionNaturalLanguageExecution);
-    const prior = correction.preservedPriorOutput;
-    const priorBytes = prior.gitCommit
-      ? gitBytes(prior.gitCommit, prior.path)
-      : bytes(prior.path);
-    const priorPublication = JSON.parse(priorBytes.toString("utf8"));
-    const priorOutsideExtension = structuredClone(priorPublication);
-    const currentOutsideExtension = structuredClone(publication);
-    delete priorOutsideExtension.candidate.logicalExtension;
-    delete currentOutsideExtension.candidate.logicalExtension;
-    const changedPaths = changedLeafPaths(
-      priorPublication.candidate.logicalExtension,
-      publication.candidate.logicalExtension
-    );
-    const declaredPaths = correction.writableShards.flatMap((shard) => shard.fields);
-
-    assert.equal(correction.status, "applied-once-and-frozen");
-    assert.equal(correction.audit.naturalLanguageOnly, true);
-    assert.equal(correction.audit.sectionLevelAiDisclosurePreserved, true);
-    assert.equal(correction.audit.argumentSubstancePreserved, true);
-    assert.equal(correction.audit.judgmentChanges, 0);
-    assert.equal(correction.audit.scoreChanges, 0);
-    assert.equal(correction.audit.moveChanges, 0);
-    assert.equal(correction.audit.tagChanges, 0);
-    assert.equal(correction.audit.critiqueChanges, 0);
-    assert.equal(correction.audit.maximumWritableFieldsPerShard <= 2, true);
-    assert.equal(
-      prior.gitCommit,
-      selectedRegistryRecord.aiContributionNaturalLanguage.priorPublicationGitCommit
-    );
-    assert.equal(
-      prior.path,
-      selectedRegistryRecord.aiContributionNaturalLanguage.priorPublicationPath
-    );
-    assert.equal(prior.sha256, sha256(priorBytes));
-    assert.equal(prior.bytes, priorBytes.length);
-    if (prior.gitCommit) assert.equal(prior.gitBlob, gitBlob(prior.gitCommit, prior.path));
-    assert.deepEqual(
-      currentOutsideExtension,
-      priorOutsideExtension,
-      "AI Contribution natural-language correction changed another publication field"
-    );
-    assert.deepEqual(
-      [...changedPaths].sort(),
-      [...declaredPaths].sort(),
-      "AI Contribution natural-language correction differs from its declared writable fields"
-    );
-    assert.equal(changedPaths.length, correction.audit.changedLeafFields);
-    assert.equal(correction.evidence.after.sha256, sha256(bytes(paths.publication)));
-    assert.equal(correction.evidence.after.bytes, bytes(paths.publication).length);
-    assert.equal(
-      correction.evidence.naturalLanguageAudit.sha256,
-      sha256(bytes(paths.publicationAiContributionNaturalLanguageAudit))
-    );
-    assert.equal(
-      correction.evidence.naturalLanguageAudit.bytes,
-      bytes(paths.publicationAiContributionNaturalLanguageAudit).length
-    );
-    assert.equal(
-      correction.evidence.execution.sha256,
-      sha256(bytes(paths.publicationAiContributionNaturalLanguageExecution))
-    );
-    assert.equal(
-      correction.evidence.execution.bytes,
-      bytes(paths.publicationAiContributionNaturalLanguageExecution).length
-    );
-    assert.equal(
-      languageAudit.status,
-      "passed-ai-contribution-natural-language-audit"
-    );
-    assert.equal(languageAudit.debateNumber, DEBATE_NUMBER);
-    assert.equal(languageAudit.audit.changedLeafFields, changedPaths.length);
-    assert.equal(languageAudit.audit.introductoryProvenancePhrasesAfter, 0);
-    assert.equal(languageAudit.audit.allReinforcingArgumentsWithin45To130Words, true);
-    assert.equal(languageAudit.audit.sectionLevelAiDisclosurePreserved, true);
-    assert.equal(execution.status, "passed-bounded-user-directed-natural-language-copyedit");
-    assert.equal(execution.debateNumber, DEBATE_NUMBER);
-    assert.equal(execution.audit.shardAttempts, execution.shards.length);
-    assert.equal(execution.audit.shardRetries, 0);
-    assert.equal(execution.audit.directIncrementalCostUsd, 0);
-    assert.equal(
-      Math.max(...execution.shards.map((shard) => shard.writableFieldCount)) <= 2,
-      true
-    );
-    for (const shard of execution.shards) {
-      assert.equal(shard.attempts, 1);
-      assert.equal(shard.retries, 0);
-    }
-    if (paths.postAiContributionNaturalLanguageRendering) {
-      const renderingAudit = json(paths.postAiContributionNaturalLanguageRendering);
-      assert.equal(
-        renderingAudit.status,
-        "passed-post-ai-contribution-natural-language-rendering-audit"
-      );
-      assert.equal(renderingAudit.debateNumber, DEBATE_NUMBER);
-      assert.equal(renderingAudit.audit.visibleCorrectionsVerified, changedPaths.length);
-      for (const viewport of renderingAudit.viewports) {
-        assert.equal(viewport.screenshot.sha256, sha256(bytes(viewport.screenshot.path)));
-      }
-      assert.equal(renderingAudit.audit.runtimeFailures, 0);
-      assert.equal(renderingAudit.audit.horizontalOverflowFailures, 0);
-      assert.equal(renderingAudit.audit.temporaryBrowsersRemaining, 0);
-      assert.equal(renderingAudit.audit.temporaryServersRemaining, 0);
-      assert.equal(renderingAudit.audit.temporaryControllerDirectoriesRemaining, 0);
-    }
   }
   assert.equal(publication.candidate.motion, inventory.motion);
   assert.equal(publication.candidate.motion, authorization.identity.motion);

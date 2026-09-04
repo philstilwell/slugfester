@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0-ai-contribution-natural-language-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "253",
+  "debateId": "clifton-sechler-divine-hiddenness-hell-2022",
+  "reason": "The reader identified repetitive provenance-first wording in the AI Contribution. The already visible heading and notices carry authorship disclosure, allowing both strengthened arguments and all six reinforcing arguments to begin naturally with their substance.",
+  "preservedPriorOutput": {
+    "gitCommit": "5cebc32030ba9e0c594dbf5b31f779944015686b",
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/output.json",
+    "gitBlob": "7d8130cfe5ba9ac68b5ef56e956b6483afbabf0e",
+    "sha256": "539ed498388c356d21be0049145e3f3edda263f20b63902517b593f9322fe866",
+    "bytes": 69183
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/output.json",
+    "sha256": "1ef4ff0ca5dcc0f5628a786ce2a1e871fee9fc605500b1615110e4c28170993c",
+    "bytes": 69217
+  },
+  "writableShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.thesis",
+        "candidate.logicalExtension.pro.finalArgument.conclusion"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[0].text",
+        "candidate.logicalExtension.pro.newArguments[1].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[2].text",
+        "candidate.logicalExtension.con.finalArgument.thesis"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.logicalExtension.con.finalArgument.conclusion",
+        "candidate.logicalExtension.con.newArguments[0].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.logicalExtension.con.newArguments[1].text",
+        "candidate.logicalExtension.con.newArguments[2].text"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "changedLeafFields": 10,
+    "maximumWritableFieldsPerShard": 2,
+    "naturalLanguageOnly": true,
+    "sectionLevelAiDisclosurePreserved": true,
+    "argumentSubstancePreserved": true,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "critiqueChanges": 0,
+    "descriptionChanges": 0,
+    "overallCommentaryChanges": 0,
+    "quoteChanges": 0,
+    "identityChanges": 0
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/output.json",
+      "sha256": "1ef4ff0ca5dcc0f5628a786ce2a1e871fee9fc605500b1615110e4c28170993c",
+      "bytes": 69217
+    },
+    "naturalLanguageAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/ai-contribution-natural-language-audit.json",
+      "sha256": "5f0e1b233d1eb070001da3e782daf208dbbd4e139585db757a77e405a63607e6",
+      "bytes": 7056
+    },
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-253/publication/ai-contribution-natural-language-execution.json",
+      "sha256": "4b938f564a7b1090a1d663c013d0950ec2d72ddeec9f8fabe14695e9123f4057",
+      "bytes": 1912
+    }
+  }
+}
