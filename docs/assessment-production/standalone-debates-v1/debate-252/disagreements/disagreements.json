@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "agency-and-fall:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "agency-and-fall",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Different capacities can generate different obligations, but universal prevention and selective intervention are not equivalent alternatives."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "Comprehensive intervention could constrain agency, but that does not show selective prevention removes freedom or dignity."
+        }
+      }
+    },
+    {
+      "disputeId": "agency-and-fall:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "agency-and-fall",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "The police-state and dream examples illustrate possible differences without establishing that meaningful freedom requires the actual exposure to harm."
+        },
+        "option-b": {
+          "value": 58,
+          "rationale": "The police-state and dream comparisons illustrate the proposal without demonstrating divine duties or the claimed absence of lasting harm."
+        }
+      }
+    },
+    {
+      "disputeId": "agency-and-fall:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "agency-and-fall",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "This directly supplies a freedom-based answer to the motion, but the natural-disaster component rests on survival rather than a reason for permission."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "The freedom problem is addressed directly, but the natural-disaster example receives a change-of-location answer rather than prevention analysis."
+        }
+      }
+    },
+    {
+      "disputeId": "agency-and-fall:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "agency-and-fall",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "Agency and continuing existence bear on divine obligation, yet neither completes the explanation of particular preventable suffering."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "Human and divine circumstances may differ relevantly; the move leaves their consequence for particular avoidable harms incomplete."
+        }
+      }
+    },
+    {
+      "disputeId": "agency-and-fall:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "agency-and-fall",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The proposed distinction between human killing and divine transfer is recoverable, though the claim of logical impossibility of divine murder is too broad."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "The distinction between permanent death and relocation is intelligible, although calling divine murder logically impossible compresses moral issues."
+        }
+      }
+    },
+    {
+      "disputeId": "agency-and-fall:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "agency-and-fall",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 71,
+          "rationale": "The language of possibility is appropriately cautious in places; minimizing experienced suffering as dreamlike outruns the argument supplied."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "Describing suffering as dreamlike and less bad from God's perspective outruns the defended comparison, despite some modal qualification."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The limits of recovery as a permission reason, and the concessions about unnecessary harms, are already captured in the individual dimension judgments. No distinct debate-wide consequence warrants counting them again.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct completion effect remains outside the assessed moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence established beyond the individual move assessments.",
+            "alreadyCapturedBy": [
+              "whole-worldview",
+              "not-every-harm-needed",
+              "permission-clarification",
+              "parental-knowledge"
+            ],
+            "counterfactual": "Changing the identified strengths or limitations would change their existing dimension assessments; applying an adjustment as well would duplicate them."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The permission, recovery and evidential gaps are already captured in the relevant dimension judgments, alongside the substantive qualifications about necessity and hell; no distinct debate-wide effect warrants an additional adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-motion"
+            ],
+            "completionCriterion": "The motion-level contribution and limitations are represented by the locked moves and their dimension ratings.",
+            "relatedMoveIds": [
+              "whole-worldview",
+              "not-every-harm-needed",
+              "permission-clarification",
+              "dream-perspective-closing"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the assessed move-level strengths and limitations is established.",
+            "alreadyCapturedBy": [
+              "whole-worldview",
+              "not-every-harm-needed",
+              "permission-clarification",
+              "dream-perspective-closing"
+            ],
+            "counterfactual": "Removing an extra adjustment preserves all supported strengths and limitations in the dimension judgments without counting them twice."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "The evidential-burden distinction, repairs and concessions are already captured in the individual dimension judgments. No separate debate-wide consequence is established that could justify additional credit or penalty.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No distinct completion effect remains outside the assessed moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence established beyond the individual move assessments.",
+            "alreadyCapturedBy": [
+              "evidential-not-impossible",
+              "conditional-virtue-concession",
+              "allowing-correction",
+              "independent-internal-critique"
+            ],
+            "counterfactual": "Changing the identified strengths or limitations would change their existing dimension assessments; applying an adjustment as well would duplicate them."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The evidential and prevention challenges, conditional concessions and remaining ethical assumptions are already captured in their move dimensions; no distinct debate-wide effect warrants another adjustment.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-motion"
+            ],
+            "completionCriterion": "The motion-level contribution and limitations are represented by the locked moves and their dimension ratings.",
+            "relatedMoveIds": [
+              "evidential-not-impossible",
+              "selective-intervention",
+              "allowing-correction",
+              "emotion-distinction"
+            ],
+            "distinctConsequence": "No additional consequence distinct from the assessed move-level strengths and limitations is established.",
+            "alreadyCapturedBy": [
+              "evidential-not-impossible",
+              "selective-intervention",
+              "allowing-correction",
+              "emotion-distinction"
+            ],
+            "counterfactual": "Removing an extra adjustment preserves all supported strengths and limitations in the dimension judgments without counting them twice."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 37,
+    "disputesExtracted": 8,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/inventory/inventory.json",
+      "sha256": "8a3be2f319d2782daacc709d1e0cbf7130d4b7f6c768d4231a30c6bf68f934e3"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/judgments/pass-a/output.json",
+      "sha256": "8c3b55d132ee0f4d92640ab5585220f62d669730e1a86889009abbef90f1bc19"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/judgments/pass-b/output.json",
+      "sha256": "bbda6489fb5cb137cbbbf1139954abaca094a503ef97eaa8f11ea99c861a60ec"
+    }
+  }
+}

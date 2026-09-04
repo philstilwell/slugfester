@@ -11909,5 +11909,58 @@ export const debateSummaries = [
         "title": "Reversed theodicies and mixed worlds"
       }
     ]
+  },
+  {
+    "id": "jones-oconnor-evil-suffering-2020",
+    "number": "252",
+    "title": "Michael Jones vs Alex O'Connor: Would a loving God allow the evil and suffering found in our world?",
+    "year": 2020,
+    "label": "Suffering, soul-building, and divine permission",
+    "date": "2026-09-04",
+    "duration": "2 hr 9 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=hNF9bTESZwE",
+    "motion": "Would a loving God allow the evil and suffering found in our world?",
+    "summary": "O'Connor more effectively presses evidential justification and selective prevention, while Jones offers qualified defenses through freedom, virtue, and eventual recovery from suffering.",
+    "topicCategory": "evil-suffering-hiddenness",
+    "sides": {
+      "pro": {
+        "name": "Christian permission-of-evil defense",
+        "speaker": "Michael Jones",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Evidential suffering challenge",
+        "speaker": "Alex O'Connor",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Evidence, compatibility, and emotional suffering"
+      },
+      {
+        "title": "Freedom, natural suffering, and selective intervention"
+      },
+      {
+        "title": "Heaven, animal suffering, and continuing existence"
+      },
+      {
+        "title": "Virtue, pleasure, and the criterion of goodness"
+      },
+      {
+        "title": "Unnecessary suffering, permission, and parental knowledge"
+      },
+      {
+        "title": "Relationships and alternative goods"
+      },
+      {
+        "title": "Internal moral critique and logical limits"
+      }
+    ]
   }
 ];

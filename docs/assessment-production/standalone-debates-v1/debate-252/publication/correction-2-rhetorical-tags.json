@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "f81e67dc5ce4e5376104ed2b9937d1282db45598ec9860c87a702312f2ff03d0",
+    "bytes": 74905
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[6].exchanges[0].pro.tags",
+        "candidate.overall.pro.blunders[2].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 2,
+    "acceptedTagCount": 1,
+    "overallBlunderLinkChanges": 1,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/output.json",
+      "sha256": "265bef384be1f9e0bd8c11090ad6257dd8439ca8913baca45480d88a4636639e",
+      "bytes": 75389
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-audit.json",
+      "sha256": "6a9a2cb06765078c06f565974991effcc71c9ce61867de6bf6f26e50232265c7",
+      "bytes": 142301
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-252/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "b6cfeb1b28343666a672a22e73e2f723603feb0d47f2c2eb2c58fd2dd5e9e30f",
+      "bytes": 97857
+    }
+  }
+}

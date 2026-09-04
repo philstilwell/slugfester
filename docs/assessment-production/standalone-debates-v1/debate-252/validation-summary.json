@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "252",
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "completedAt": "2026-09-04T17:15:48.600Z",
+  "source": {
+    "videoId": "hNF9bTESZwE",
+    "fullTranscriptAcquired": true,
+    "requiredAttributionAudioChecks": 5,
+    "completedAttributionAudioChecks": 5,
+    "unresolvedAttributionChecks": 0,
+    "primarySpeakerExceptionUsed": true,
+    "primarySpeakerScopeAudit": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "primarySpeakers": {
+        "pro": "Michael Jones",
+        "con": "Alex O'Connor"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Cameron Bertuzzi",
+          "role": "Moderator with one bounded coaching intervention"
+        }
+      ],
+      "maximumHostAdvocacyShare": 0.05,
+      "assessedWindow": {
+        "startMs": 332849,
+        "endMs": 7606050,
+        "durationMs": 7273201
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "host-love-without-realism",
+          "kind": "host-advocacy",
+          "speaker": "Cameron Bertuzzi",
+          "startMs": 6347460,
+          "endMs": 6430230,
+          "durationMs": 82770,
+          "summary": "Cameron supplies an internal-consistency reply: Christianity retains a loving God even without objective morality. Overlapping caption events at both handoffs make word-level separation unreliable, so the complete continuous coaching exchange is conservatively counted as host advocacy.",
+          "burdenImpactRationale": "This prompts only the internal-critique line Alex independently develops at 21:02–21:28, 22:50–23:16, and 1:44:57–1:45:47: suffering can challenge a professedly loving God without external moral realism. It introduces neither a new side nor a unique motion burden.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "dependent-love-without-realism",
+          "kind": "dependent-response",
+          "speaker": "Alex O'Connor",
+          "startMs": 6373739,
+          "endMs": 6430230,
+          "durationMs": 56491,
+          "summary": "Alex directly accepts Cameron’s suggestion, reformulates the loving-God and child-cancer objection, and thanks Cameron by name. The overlapping caption handoff and final transition are included conservatively.",
+          "burdenImpactRationale": "No part of this directly dependent reply is credited or penalized. Alex’s independently delivered opening and immediately preceding consistency argument remain available outside the exclusion; the prompted restatement contributes no separate assessment evidence.",
+          "uniqueLoadBearingArgument": false
+        }
+      ],
+      "status": "complete-and-frozen-before-judgment",
+      "derivedDurations": {
+        "hostAdvocacyMs": 82770,
+        "dependentResponseMs": 56491,
+        "totalExcludedMs": 82770,
+        "hostAdvocacyShare": 0.011380133726539388
+      },
+      "allHostInterventionsEnumerated": true,
+      "noDistinctSideIntroduced": true,
+      "noUniqueLoadBearingArgumentIntroduced": true,
+      "noSelectedEvidenceIntersectsExclusions": true,
+      "neitherSideCreditedOrPenalized": true,
+      "readerDisclosureRequired": true
+    }
+  },
+  "assessment": {
+    "inventoryMoves": 37,
+    "inventorySides": {
+      "pro": 18,
+      "con": 19
+    },
+    "acceptedPrimaryJudgmentPasses": 2,
+    "primaryContextsIncludingPreservedFailures": 2,
+    "authorizedReplacementAttempts": 0,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 8,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 74,
+      "con": 85,
+      "winner": "con"
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 7,
+    "displayRows": 20,
+    "argumentCards": 37,
+    "descriptionWords": [
+      25,
+      28
+    ],
+    "descriptionMeanWords": 27.62162162162162,
+    "critiqueWords": [
+      118,
+      129
+    ],
+    "minimumCritiqueCharacters": 891,
+    "contentParityAuditPassed": true,
+    "sourceExactQuotes": 2,
+    "blindRhetoricalReviews": 2,
+    "rhetoricalCandidatesReviewed": 71,
+    "acceptedCardTags": 1,
+    "acceptedOverallBlunderLinks": 1,
+    "rejectedCandidates": 69,
+    "productionLedger": {
+      "path": "docs/assessment-ledgers/jones-oconnor-evil-suffering-2020.json",
+      "sha256": "f79ab35a42ab600f5f93097ed64655773cfc78ef5f17a37d161f7a091341a3e9",
+      "bytes": 28585
+    }
+  },
+  "rendering": {
+    "viewports": 2,
+    "screenshots": 12,
+    "argumentCardsPerViewport": 37,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0.1540825,
+  "maximumPossiblePaidCostUsd": 0.1540825,
+  "paidRetries": 0,
+  "publicationInputFiltering": "passed-mechanical-view-filter",
+  "gateScope": "Completed source, assessment, publication and rendering component gates. Subsequent complete repository replay and preflight are recorded separately in validation/final-local-gates.json."
+}

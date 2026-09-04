@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 252,
+  "debateId": "jones-oconnor-evil-suffering-2020",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents with explicit score-blind input boundaries and disjoint output paths",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-252/judgments/judgment-packet.json",
+    "judgmentPacketSha256": "b37a5a14907e21b3b56c3ec4391ec16a5ffa2a003e4946e28ed57150eff9f05e",
+    "inventorySha256": "8a3be2f319d2782daacc709d1e0cbf7130d4b7f6c768d4231a30c6bf68f934e3",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-252/judgments/pass-a/output.json",
+      "outputSha256": "8c3b55d132ee0f4d92640ab5585220f62d669730e1a86889009abbef90f1bc19",
+      "outputBytes": 55427,
+      "judgmentCount": 37,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-252/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/judgment_252_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-252/judgments/pass-b/output.json",
+      "outputSha256": "bbda6489fb5cb137cbbbf1139954abaca094a503ef97eaa8f11ea99c861a60ec",
+      "outputBytes": 54184,
+      "judgmentCount": 37,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-252/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/judgment_252_b"
+    }
+  ],
+  "completedAt": "2026-09-04T16:48:41.731Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}
