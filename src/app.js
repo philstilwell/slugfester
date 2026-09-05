@@ -1,8 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=51b47091fe92816d";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=51b47091fe92816d";
-import { debateSummaries } from "./data/debate-summaries.js?v=51b47091fe92816d";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=51b47091fe92816d";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=51b47091fe92816d";
+import { topicCategoryDefinitions } from "./data/topics.js?v=b73b0985d1fbf77b";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=b73b0985d1fbf77b";
+import { debateSummaries } from "./data/debate-summaries.js?v=b73b0985d1fbf77b";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=b73b0985d1fbf77b";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=b73b0985d1fbf77b";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -38,12 +38,14 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=51b47091fe92816d";
+} from "./seo.js?v=b73b0985d1fbf77b";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
 let debateAnalyticsPromise;
 let sectionScoreExtremesPromise;
+let biographiesPromise;
+let biographies;
 let insightsPromise;
 let insightsContent;
 let insightsMethodsContent;
@@ -88,7 +90,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=51b47091fe92816d")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=b73b0985d1fbf77b")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -107,7 +109,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=51b47091fe92816d")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=b73b0985d1fbf77b")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -123,7 +125,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=51b47091fe92816d`)
+    const promise = import(`./data/debate-details/${id}.js?v=b73b0985d1fbf77b`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -138,7 +140,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=51b47091fe92816d`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=b73b0985d1fbf77b`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1887,7 +1889,7 @@ function renderProfileMetric(label, value, tone = "") {
   return `<div class="profile-metric${tone ? ` ${tone}` : ""}"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`;
 }
 
-function renderProfileDistribution(distribution, appearances) {
+function renderProfileDistribution(distribution, appearances, person) {
   return `
     <section class="profile-distribution" data-score-median="${distribution.median}" data-score-lowest="${distribution.lowest}" data-score-highest="${distribution.highest}" aria-labelledby="profile-distribution-heading">
       <div class="profile-section-heading">
@@ -1901,7 +1903,10 @@ function renderProfileDistribution(distribution, appearances) {
         <strong>${escapeHtml(distribution.consistency)}</strong>
         <span>Median ${formatAverageScore(distribution.median)} · Range ${distribution.lowest}–${distribution.highest} · ${appearances} ${appearances === 1 ? "scorecard" : "scorecards"}</span>
       </div>
-      ${renderScoreHistogram(distribution)}
+      <div class="profile-bio-chart">
+        ${biographies.renderBiography(person)}
+        ${renderScoreHistogram(distribution)}
+      </div>
     </section>
   `;
 }
@@ -2036,7 +2041,8 @@ function renderInterlocutorProfile(slug) {
         person,
         0,
         teamProfileLastmod,
-        teamScorecards.map(({ debate }) => debate)
+        teamScorecards.map(({ debate }) => debate),
+        biographies.biographyFor(person)
       )
     );
     app.innerHTML = renderShell(`
@@ -2059,6 +2065,7 @@ function renderInterlocutorProfile(slug) {
           </dl>
         </section>
 
+        ${biographies.renderBiography(person, undefined, 2)}
         ${renderProfileTeamScorecards(teamScorecards)}
       </main>
     `);
@@ -2085,7 +2092,8 @@ function renderInterlocutorProfile(slug) {
       [
         ...scorecards.map(({ debate }) => debate),
         ...teamScorecards.map(({ debate }) => debate)
-      ]
+      ],
+      biographies.biographyFor(person)
     )
   );
   app.innerHTML = renderShell(`
@@ -2110,7 +2118,7 @@ function renderInterlocutorProfile(slug) {
         </dl>
       </section>
 
-      ${renderProfileDistribution(distribution, person.appearances)}
+      ${renderProfileDistribution(distribution, person.appearances, person)}
 
       <section class="profile-detail-grid">
         ${renderProfileTopics(topics)}
@@ -3878,15 +3886,22 @@ async function route({ focusMain = false } = {}) {
   );
   const loaders = [];
 
+  if (interlocutorMatch && !biographies) {
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=b73b0985d1fbf77b")
+      .then((module) => { biographies = module; })
+      .catch((error) => { biographiesPromise = undefined; throw error; });
+    loaders.push(biographiesPromise);
+  }
+
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=51b47091fe92816d")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=b73b0985d1fbf77b")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=51b47091fe92816d")
+    insightsPromise ||= import("./data/insights.js?v=b73b0985d1fbf77b")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
