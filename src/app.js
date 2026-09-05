@@ -1,8 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=e58dbc3d9c194387";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=e58dbc3d9c194387";
-import { debateSummaries } from "./data/debate-summaries.js?v=e58dbc3d9c194387";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=e58dbc3d9c194387";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=e58dbc3d9c194387";
+import { topicCategoryDefinitions } from "./data/topics.js?v=b73b0985d1fbf77b";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=b73b0985d1fbf77b";
+import { debateSummaries } from "./data/debate-summaries.js?v=b73b0985d1fbf77b";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=b73b0985d1fbf77b";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=b73b0985d1fbf77b";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -17,6 +17,7 @@ import {
   backendSeo,
   insightsPath,
   insightsSeo,
+  insightsMethodsSeo,
   correctionsPath,
   correctionsSeo,
   debateNumberLabel,
@@ -37,7 +38,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=e58dbc3d9c194387";
+} from "./seo.js?v=b73b0985d1fbf77b";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -47,6 +48,8 @@ let biographiesPromise;
 let biographies;
 let insightsPromise;
 let insightsContent;
+let insightsMethodsContent;
+let insightsMethodsPromise;
 let sectionScoreExtremes = { top: [], bottom: [] };
 const debateDetailPromises = new Map();
 const referenceAppearancePromises = new Map();
@@ -80,14 +83,14 @@ const topicsPathRoutePattern = /^\/topics\/?$/;
 const rankingsPathRoutePattern = /^\/rankings\/?$/;
 const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
-const insightsPathRoutePattern = /^\/insights\/?$/;
+const insightsPathRoutePattern = /^\/insights(?:\/data-and-methods)?\/?$/;
 const correctionsPathRoutePattern = /^\/corrections\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=e58dbc3d9c194387")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=b73b0985d1fbf77b")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -106,7 +109,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=e58dbc3d9c194387")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=b73b0985d1fbf77b")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -122,7 +125,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=e58dbc3d9c194387`)
+    const promise = import(`./data/debate-details/${id}.js?v=b73b0985d1fbf77b`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -137,7 +140,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=e58dbc3d9c194387`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=b73b0985d1fbf77b`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -2331,8 +2334,9 @@ function renderResultPerson(person) {
 }
 
 function renderInsights() {
-  setSeo(insightsSeo());
-  app.innerHTML = renderShell(`<main class="insights-page">${insightsContent()}</main>`);
+  const methods = window.location.pathname.includes("/data-and-methods");
+  setSeo(methods ? insightsMethodsSeo() : insightsSeo());
+  app.innerHTML = renderShell(`<main class="insights-page">${methods ? insightsMethodsContent() : insightsContent()}</main>`);
 }
 
 function renderBackend() {
@@ -2643,7 +2647,7 @@ function renderBackend() {
               <p>All seven papers now use plainer language, numbered arguments leading to clear conclusions, and a reading key for every graph. Worked examples explain the statistics without assuming prior knowledge. The papers share a frozen archive of <strong>253 assessments</strong>: 237 comparable one-on-one scoring records, including 187 religious-versus-skeptical comparisons. Each paper states which records it uses and what its findings cannot establish.</p>
               <p>The first group explains the 6.34-point mean non-theist advantage, maps its topic differences, and examines slogan-like reasoning. The second asks how much the formal CON role explains and why a fallacy count is not a complete measure of debate quality. The final group examines whether scores from different assessment processes are comparable and how much confidence to place in exact speaker ranks.</p>
               <p><strong>New analysis is not new scoring.</strong> The original debate scores remain unchanged. Six papers reanalyze existing assessments; the slogan paper was replaced on September 5 with a fresh, direct reading of all 187 relevant transcripts. These papers are intended as a stable baseline until the next major GPT-model review, with genuine corrections remaining possible in the meantime. A newer model's accuracy and fairness should be tested, not assumed.</p>
-              <p>The papers distinguish observed findings from proposed explanations, show counterexamples, and identify what could change their conclusions. The position studies classify the side actually argued, rather than equating <em>PRO</em> with theism. <a href="https://github.com/philstilwell/slugfester/tree/main/docs/analysis/astra-corpus-papers-2026-09-04" target="_blank" rel="noopener">Inspect the methods, classifications, calculations, and source records.</a></p>
+              <p>The papers distinguish observed findings from proposed explanations, show counterexamples, and identify what could change their conclusions. The position studies classify the side actually argued, rather than equating <em>PRO</em> with theism. <a href="/insights/data-and-methods/">Inspect the methods, classifications, calculations, and source records.</a></p>
             </div>
             <div class="backend-report-library" aria-label="Corpus-level analysis papers">
               <section class="backend-report-group" aria-labelledby="backend-report-theist-heading">
@@ -3883,14 +3887,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=e58dbc3d9c194387")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=b73b0985d1fbf77b")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
+  if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=b73b0985d1fbf77b")
+      .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
+      .catch((error) => { insightsMethodsPromise = undefined; throw error; });
+    loaders.push(insightsMethodsPromise);
+  }
+
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=e58dbc3d9c194387")
+    insightsPromise ||= import("./data/insights.js?v=b73b0985d1fbf77b")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

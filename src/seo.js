@@ -210,6 +210,16 @@ export function insightsSeo() {
   };
 }
 
+export function insightsMethodsSeo() {
+  const description = "The evidence, calculations, limitations and downloadable research data behind Slugfester’s seven Insights studies.";
+  return {
+    title: pageTitle("Insights: data and methods"), heading: "Data and methods",
+    description, canonicalPath: "/insights/data-and-methods/", lastmod: "2026-09-05",
+    jsonLd: [organizationJsonLd(), websiteJsonLd(),
+      breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Insights", path: insightsPath() }, { name: "Data and methods", path: "/insights/data-and-methods/" }])]
+  };
+}
+
 export function correctionsPath() {
   return "/corrections/";
 }

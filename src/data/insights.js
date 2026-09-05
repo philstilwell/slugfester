@@ -1,6 +1,5 @@
 // Editorial summaries of the published papers, not live catalogue statistics.
 export const researchSnapshot = "September 4, 2026";
-const corpusSource = "https://github.com/philstilwell/slugfester/tree/main/docs/analysis/astra-corpus-papers-2026-09-04";
 export const researchInsights = [
   {
     id: "score-gap", topic: "Evidence and inference", title: "Why do the theist sides score lower?",
@@ -36,7 +35,6 @@ export const researchInsights = [
     figureTitle: "Unsupported and criticism-blocking slogans", figureScope: "187 transcripts · September 5 direct review of the September 4 archive",
     alt: "Unsupported-slogan rates per 10,000 words: theist 0.97, non-theist 0.65. Protected-slogan rates: theist 0.56, non-theist 0.16.",
     reading: "Bars show uses per 10,000 attributed words, averaged equally across debates. Protected slogans are a subset of unsupported slogans: do not add the two panels. The broader unsupported-slogan difference does not keep the same direction across repeated draws of debates.",
-    source: "https://github.com/philstilwell/slugfester/tree/main/docs/analysis/direct-slogan-study-2026-09-04",
     links: [{ search: "Sye Ten Bruggencate", label: "Explore Ten Bruggencate’s debates" }, { search: "John Lennox", label: "Explore Lennox’s debates" }]
   },
   {
@@ -121,7 +119,7 @@ export function renderInsightsContent() {
       <h3>${escape(item.figureTitle)}</h3>
       <p>${escape(item.figureScope)}</p>
       <a href="/assets/insights/${item.figure}.png" target="_blank" rel="noopener" aria-label="Enlarge figure: ${escape(item.figureTitle)} (new tab)"><img src="/assets/insights/${item.figure}.png" alt="${escape(item.alt)}" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"></a>
-      <figcaption><p><strong>Reading the figure.</strong> ${escape(item.reading)}</p><a href="${item.source || corpusSource}" target="_blank" rel="noopener">Inspect the study’s data and methods</a></figcaption>
+      <figcaption><p><strong>Reading the figure.</strong> ${escape(item.reading)}</p><a href="/insights/data-and-methods/#${item.id}">Explore this study’s data and methods</a></figcaption>
     </figure>
   </article>`).join("")}</div>`;
 }
