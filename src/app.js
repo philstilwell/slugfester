@@ -1,7 +1,7 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=20260903-topic-categories-v1";
-import { debateSummaries } from "./data/debate-summaries.js?v=20260903-topic-categories-v1";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=20260903-topic-categories-v1";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=20260903-topic-categories-v1";
+import { topicCategoryDefinitions } from "./data/topics.js?v=9bc35eb5ca2a0206";
+import { debateSummaries } from "./data/debate-summaries.js?v=9bc35eb5ca2a0206";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=9bc35eb5ca2a0206";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=9bc35eb5ca2a0206";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -34,7 +34,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260905-direct-slogan187";
+} from "./seo.js?v=9bc35eb5ca2a0206";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -79,7 +79,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=20260903-topic-categories-v1")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=9bc35eb5ca2a0206")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -98,7 +98,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=20260903-topic-categories-v1")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=9bc35eb5ca2a0206")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -114,7 +114,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=20260903-topic-categories-v1`)
+    const promise = import(`./data/debate-details/${id}.js?v=9bc35eb5ca2a0206`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -129,7 +129,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=20260903-topic-categories-v1`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=9bc35eb5ca2a0206`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1064,8 +1064,8 @@ function renderSectionScoreDistribution(distribution) {
       <div class="section-score-distribution-heading">
         <div>
           <p class="eyebrow">Rubric quality check</p>
-          <h2 id="section-score-distribution-heading">The rubric distinguishes stronger from weaker sections</h2>
-          <p>A useful assessment rubric should separate different levels of argumentative performance rather than repeatedly returning one narrow score. Across the published corpus, these section-side results occupy a meaningful range instead of collapsing into a single band. That is evidence that the six dimensions and importance weights are doing discriminating work—not proof that every individual judgment is correct.</p>
+          <h2 id="section-score-distribution-heading">How section scores are distributed</h2>
+          <p>This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies further down this page examine consistency and uncertainty.</p>
         </div>
         <dl class="section-score-distribution-summary">
           <div><dt>Section-side scores</dt><dd>${distribution.total.toLocaleString("en-US")}</dd></div>
@@ -1237,7 +1237,9 @@ function profileScoreDistribution(records) {
   const spread = highest - lowest;
   const median = scoreMedian(scores);
   const consistency =
-    spread <= 7
+    scores.length < 2
+      ? "One scorecard; too early to assess consistency"
+      : spread <= 7
       ? "Tight score spread"
       : spread <= 15
         ? "Moderate score spread"
@@ -1608,7 +1610,7 @@ function renderRankings() {
         ${
           rankings.length
             ? `<ol class="ranking-list">${rankings.map((person) => renderRankingCard(person, rankingTagMaximum)).join("")}</ol>`
-            : `<div class="empty-results"><strong>No rankings matched.</strong><span>Try a lower minimum or broaden the current model or topic focus.</span></div>`
+            : `<div class="empty-results"><strong>No rankings matched.</strong><span>Try a lower minimum or broaden the topic focus.</span></div>`
         }
         ${renderRankingMethod()}
       </section>
@@ -2338,13 +2340,13 @@ function renderBackend() {
             <p class="eyebrow">Assessment update</p>
             <h2 id="backend-summary-heading">A careful attempt at objective scoring</h2>
           </div>
-          <p class="section-summary">Updated September 2, 2026</p>
+          <p class="section-summary">Updated September 5, 2026</p>
         </div>
         <div class="backend-summary-panel">
           <div class="backend-summary-copy">
             <p><strong>Objectivity here means disciplined consistency, not infallibility.</strong> Slugfester applies the same evidential and logical standards to both sides, excludes applause, reputation, charisma, and agreement with a conclusion, and treats every score as an AI-assisted estimate of the argument actually presented.</p>
             <p>The recent campaign reviewed the complete transcript chain, hid prior scores and prose from new judgments, used two independent reviews, isolated disagreements, verified uncertain audio, calculated totals mechanically, and preserved the evidence needed to audit the result. Failed attempts were retained rather than quietly replaced.</p>
-            <p>The intention is to review the full debate catalogue approximately twice a year, when sources and quality controls permit. Future reviews may correct or refine assessments, but they should use a frozen method, preserve earlier records, and never change scores merely to produce a preferred winner.</p>
+            <p>The next site-wide reassessment is tentatively scheduled for spring 2027, when sources and quality controls permit. Future reviews may correct or refine assessments, but they should use a frozen method, preserve earlier records, and never change scores merely to produce a preferred winner.</p>
           </div>
           <div class="backend-summary-stats" aria-label="Reassessment compute summary">
             <article class="backend-summary-stat--compute">
@@ -2928,6 +2930,10 @@ function renderCorrections() {
           <p class="section-summary">This reader-facing log begins August 30, 2026. The complete technical history remains available in the linked changes.</p>
         </div>
         <ol class="revision-log-list">
+          <li>
+            <time datetime="2026-09-05">September 5, 2026</time>
+            <div><h3>Form access, data freshness, and score context corrected</h3><p>Recommendation and correction forms now work after navigating from another page. Published code and debate data receive matching content versions to prevent older cached data from accompanying an updated page. Single-scorecard profiles no longer suggest established consistency, and the rubric chart now explains that score spread alone does not establish accuracy. The spring 2027 reassessment plan is consistent across the site. No assessment scores were changed.</p></div>
+          </li>
           <li>
             <time datetime="2026-08-30">August 30, 2026</time>
             <div><h3>Team scores removed from individual records</h3><p>Shared scores from team and panel debates were separated from individual profiles, rankings, score distributions, and opponent records. Those appearances remain readable as team assessments.</p><a href="https://github.com/philstilwell/slugfester/commit/60545ad3c" target="_blank" rel="noopener noreferrer">Review the recorded change</a></div>
@@ -3778,7 +3784,7 @@ function renderRouteLoading() {
   `);
 }
 
-async function route() {
+async function route({ focusMain = false } = {}) {
   const sequence = ++routeSequence;
   const hash = window.location.hash;
   const debateMatch =
@@ -3881,6 +3887,9 @@ async function route() {
     renderLanding();
   }
 
+  if (focusMain && !window.location.hash) {
+    document.getElementById("main-content")?.focus({ preventScroll: true });
+  }
   scrollToHashTargetAfterRender();
 }
 
@@ -4001,10 +4010,10 @@ document.addEventListener("click", (event) => {
   if (next !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
     window.history.pushState({}, "", next);
   }
-  void route();
+  void route({ focusMain: true });
   window.scrollTo(0, 0);
 });
 
 window.addEventListener("hashchange", route);
-window.addEventListener("popstate", route);
+window.addEventListener("popstate", () => void route({ focusMain: true }));
 void route();

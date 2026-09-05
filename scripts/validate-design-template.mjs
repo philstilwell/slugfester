@@ -141,7 +141,7 @@ requireIncludes("app profile team score exclusion", app, "Shared side score excl
 requireIncludes("app profile group-only state", app, "No eligible one-on-one scorecards yet.");
 requireIncludes("app backend rubric evidence", app, "sectionScoreDistribution");
 requireIncludes("app backend rubric data loading", app, "rankingsMatch || interlocutorMatch || backendMatch");
-requireIncludes("app backend rubric evidence", app, "The rubric distinguishes stronger from weaker sections");
+requireIncludes("app backend rubric evidence", app, "How section scores are distributed");
 requireIncludes("app backend rubric evidence", app, "two-percentage-point score ranges");
 requireIncludes("app backend rubric evidence", app, "not overall debate scores or interlocutor averages");
 requireIncludes("app rankings analytics", app, 'class="sample-confidence');
@@ -174,7 +174,7 @@ requireIncludes("app backend route", app, "assessmentPathRoutePattern");
 requireIncludes("app backend route", app, "backendSeo");
 requireIncludes("app backend page", app, "<h1>Backend</h1>");
 requireIncludes("app backend update date", app, "Updated September 2, 2026");
-requireIncludes("app backend review cadence", app, "approximately twice a year");
+requireIncludes("app backend review cadence", app, "tentatively scheduled for spring 2027");
 requireIncludes("app backend selection limitation", app, "The selection process is somewhat arbitrary.");
 requireIncludes("app backend selection sampling caveat", app, "not a random or representative sample");
 requireIncludes("app backend selection category preference", app, "clearly fit within one of the ${topicCategoryDefinitions.length} topic categories listed on the site");

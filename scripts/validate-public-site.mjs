@@ -86,6 +86,7 @@ if (sitemapSet.size !== expectedPaths.length) {
 const canonicalOwners = new Map();
 const titleOwners = new Map();
 const descriptionOwners = new Map();
+const browserAssetVersions = new Set();
 sitemapUrls.forEach((urlString) => {
   const url = new URL(urlString);
   const file = fileForPathname(url.pathname);
@@ -95,6 +96,14 @@ sitemapUrls.forEach((urlString) => {
   }
 
   const html = readFileSync(file, "utf8");
+  for (const asset of ["app.js", "styles.css"]) {
+    const version = html.match(new RegExp(`/src/${asset.replace(".", "\\.")}\\?v=([a-f0-9]{16})`))?.[1];
+    if (!version) fail(`${url.pathname} is missing a content-versioned ${asset}`);
+    else browserAssetVersions.add(version);
+  }
+  if (!html.includes("form-action 'self' https://formsubmit.co")) {
+    fail(`${url.pathname} cannot submit the approved forms after internal navigation`);
+  }
   const titleMatches = [...html.matchAll(/<title>([^<]+)<\/title>/g)];
   const title = decodeAttribute(titleMatches[0]?.[1] || "");
   if (titleMatches.length !== 1) {
@@ -229,6 +238,13 @@ sitemapUrls.forEach((urlString) => {
     }
   }
 });
+
+if (browserAssetVersions.size !== 1) fail("Public pages disagree on the browser asset version");
+const browserVersion = [...browserAssetVersions][0];
+const appSource = readFileSync(join(root, "src/app.js"), "utf8");
+for (const match of appSource.matchAll(/\.\/(?:data\/[^"'`?]+|seo\.js)\?v=([^"'`]+)/g)) {
+  if (match[1] !== browserVersion) fail(`Browser import has a stale data version: ${match[0]}`);
+}
 
 interlocutorAvatars.forEach((person) => {
   const avatar = fileForPathname(person.src);
