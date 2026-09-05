@@ -632,7 +632,7 @@ export function interlocutorSeo(
 export function backendSeo({ legacy = false } = {}) {
   const description =
     "How Slugfester selects, transcribes, reviews, and scores debates, with validation controls and corpus-wide research on scoring patterns and comparability.";
-  const updatedDate = "2026-09-01";
+  const updatedDate = "2026-09-04";
 
   return {
     title: pageTitle("How Slugfester scores debates"),
@@ -665,7 +665,7 @@ export function backendSeo({ legacy = false } = {}) {
       },
       {
         href: "/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf",
-        label: "PDF report: Debates Are Usually Lost Without a Named Fallacy"
+        label: "PDF report: Beyond the Fallacy Count"
       },
       {
         href: "/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf",
