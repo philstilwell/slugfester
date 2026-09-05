@@ -8,6 +8,7 @@ import { referenceDefinitions, referenceFromUrl } from "../src/data/references.j
 import { renderInsightsContent } from "../src/data/insights.js";
 import { biographyFor, renderBiography } from "../src/data/interlocutor-bios.js";
 import { renderInsightsMethodsContent } from "../src/data/insights-methods.js";
+import { initialPageContent } from "./lib/initial-page-content.mjs";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
@@ -138,6 +139,7 @@ function fallbackMarkup(seo, summary) {
           .map(({ href, label }) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
           .join("\n        ")}
       </nav>
+      <div class="initial-page-content">${initialPageContent(seo.canonicalPath)}</div>
     </main>`;
 }
 
@@ -223,7 +225,7 @@ ${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl
     <div id="app">
       ${fallback}
     </div>
-    <noscript><p class="seo-noscript">Interactive filters and detailed critique controls require JavaScript; the page summary and links above remain available.</p></noscript>
+    <noscript><p class="seo-noscript">The summaries, published assessment excerpts, and links above work without JavaScript. Interactive filtering, comparison graphs, and the complete critique controls require JavaScript.</p></noscript>
     <script type="module" src="/src/app.js?v=${pageAssetVersion}"></script>
   </body>
 </html>
