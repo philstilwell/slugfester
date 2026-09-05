@@ -2693,7 +2693,7 @@ function renderBackend() {
                     <dd>17 pages · 4 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260905-direct187" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
+                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260905-direct187-r1" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
                 <small>September 5 direct-review edition, using the September 4 archive of 253 assessments. Includes plain-language definitions, word denominators, uncertainty, concentration and borderline checks, timestamped examples, and a numbered conclusion. The original debate scores and the other six papers are unchanged. <a href="https://github.com/philstilwell/slugfester/tree/main/docs/analysis/direct-slogan-study-2026-09-04" target="_blank" rel="noopener">Inspect the direct-study data and methods.</a></small>
               </article>
                 </div>

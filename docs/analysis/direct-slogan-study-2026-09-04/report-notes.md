@@ -78,7 +78,7 @@ between direct uses per words and the old risk percentage per assessed move.
 ## Site publication
 
 The replacement retains the stable PDF filename and adds the cache key
-`20260905-direct187`. The seven-paper, one-column, always-visible library remains.
+`20260905-direct187-r1`. The seven-paper, one-column, always-visible library remains.
 Only the slogan entry, necessary library clarification, Backend search date and
 description, and their generated pages/sitemap are changed. A first local browser
 test attempt stopped for missing packages. Installing the same pinned free versions
@@ -86,3 +86,10 @@ as CI resolved it; all 52 browser tests then passed (58.8 seconds), in addition
 to the data, 719 generated-file, and 444 public-route checks. Neither dependency
 manifest nor lockfile changed. Homepage and Backend asset versions are refreshed
 so cached JavaScript does not conceal the replacement paper.
+
+After deployment of PR #32, the first PDF query key still returned a Cloudflare
+HIT for the previous 518,930-byte PDF (four-hour cache). A fresh `-r1` query
+returned the checked 601,512-byte PDF with SHA-256
+`617eaee497cd560280a5a84f6f2f8455b8e5946fde190539d66a3a97a47306b7`.
+The library link and homepage/Backend application query keys were updated to
+that verified fresh version. No paper content changed in this cache correction.
