@@ -29,7 +29,7 @@ function cards(records) {
 
 function debateContent(debate) {
   return `<section><h2>Question and assessment context</h2>${paragraph(debate.motion)}${paragraph(debate.sourceNote)}${paragraph(debate.scoringNote)}
-    <p><a href="${escape(debate.youtubeUrl)}">Watch the original debate</a></p></section>
+    <p><a href="${escape(debate.youtubeUrl)}">Watch the original debate</a></p>${(debate.additionalSources || []).map((source) => `<p><a href="${escape(source.url)}">${escape(source.label)}</a></p>`).join("")}</section>
     <section><h2>Overall assessment</h2>${["pro", "con"].map((key) => `<section><h3>${escape(debate.sides[key].speaker)} — ${escape(debate.sides[key].name)}: ${escape(debate.score[key])}/100</h3>
       <h4>Published strengths</h4>${list(debate.overall?.[key]?.strengths)}
       <h4>Published weaknesses</h4>${list(debate.overall?.[key]?.blunders)}</section>`).join("")}</section>
