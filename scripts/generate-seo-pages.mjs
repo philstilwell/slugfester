@@ -6,6 +6,7 @@ import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { referenceDefinitions, referenceFromUrl } from "../src/data/references.js";
 import { renderInsightsContent } from "../src/data/insights.js";
+import { biographyFor, renderBiography } from "../src/data/interlocutor-bios.js";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
@@ -53,7 +54,7 @@ const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
 const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
   "src/styles.css", "src/seo.js", "src/data/topics.js",
-  "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js"
+  "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/interlocutor-bios.js"
 ].map((path) => readFile(join(root, path), "utf8")));
 const assetVersion = createHash("sha256")
   .update(JSON.stringify([normalizedApp, browserSources, debates, await readFile(fileURLToPath(import.meta.url), "utf8")]))
@@ -129,7 +130,7 @@ function fallbackMarkup(seo, summary) {
   return `<main class="seo-fallback" id="main-content">
       <p class="eyebrow">${escapeHtml(SITE_NAME)}</p>
       <h1>${escapeHtml(fallbackHeading(seo))}</h1>
-      <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>
+      <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>${seo.biography ? `\n      ${renderBiography({ name: seo.heading }, seo.biography, 2)}` : ""}
       <nav aria-label="Explore Slugfester">
         ${uniqueLinks
           .map(({ href, label }) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
@@ -643,9 +644,11 @@ addPage(
 [...interlocutorProfiles.values()]
   .sort((a, b) => a.person.name.localeCompare(b.person.name))
   .forEach(({ person, appearances, latestDate, debates: profileDebates }) => {
+    const bio = biographyFor(person);
+    if (!bio) throw new Error(`Missing biography for ${person.name}`);
     addPage(
       interlocutorPath(person),
-      interlocutorSeo(person, appearances, latestDate, profileDebates),
+      interlocutorSeo(person, appearances, [latestDate, bio.reviewed].filter(Boolean).sort().at(-1), profileDebates, bio),
       `${person.name}'s Slugfester profile includes score averages, opponents faced, topic performance, and linked debate scorecards.`
     );
   });

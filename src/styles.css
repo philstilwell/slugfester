@@ -2531,6 +2531,23 @@ a {
   font-weight: 700;
 }
 
+.profile-bio-chart {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+}
+
+.profile-biography { max-width: 65ch; padding: 24px 0; }
+.profile-biography h2, .profile-biography h3 { font-size: clamp(1.3rem, 2vw, 1.7rem); margin: 0 0 16px; }
+.profile-biography > p:not(.eyebrow) { line-height: 1.7; }
+.profile-biography .profile-biography-source { font-size: 0.85rem; }
+.profile-bio-chart .profile-score-histogram { width: 100%; min-width: 0; margin: 0; }
+
+@media (max-width: 850px) {
+  .profile-bio-chart { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+
 .profile-score-histogram {
   width: min(52%, 640px);
   margin: 0 auto;

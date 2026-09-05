@@ -584,8 +584,10 @@ export function interlocutorSeo(
   person,
   appearances = 0,
   updatedDate = SITE_UPDATED_DATE,
-  profileDebates = []
+  profileDebates = [],
+  biography = null
 ) {
+  updatedDate = [updatedDate, biography?.reviewed].filter(Boolean).sort().at(-1) || SITE_UPDATED_DATE;
   const profilePath = interlocutorPath(person);
   const appearanceLabel = `${appearances} eligible 1-on-1 ${appearances === 1 ? "debate scorecard" : "debate scorecards"}`;
   const description = appearances
@@ -595,12 +597,14 @@ export function interlocutorSeo(
     ...new Map(profileDebates.filter(Boolean).map((debate) => [debate.id, debate])).values()
   ];
   const personEntity = personIdentityJsonLd(person.name, person.placeholder ? "" : person.src);
+  if (biography) personEntity.description = biography.text;
 
   return {
     title: pageTitle(
       appearances ? `${person.name} debate record & scores` : `${person.name} debate appearances`
     ),
     heading: person.name,
+    biography,
     description,
     canonicalPath: profilePath,
     lastmod: updatedDate || SITE_UPDATED_DATE,
