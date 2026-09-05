@@ -3296,6 +3296,7 @@ function renderDebateObject(
           ${renderMiniScore(debate.sides.pro.name, debate.score.pro, "teal")}
           ${renderMiniScore(debate.sides.con.name, debate.score.con, "coral")}
           <a class="button secondary" href="${escapeHtml(debate.youtubeUrl)}" target="_blank" rel="noopener noreferrer">Open YouTube source</a>
+          ${(debate.additionalSources || []).map((source) => `<a class="button secondary" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.label)}</a>`).join("")}
           ${preview ? "" : `<a class="scorecard-correction-link" href="${escapeHtml(correctionReportUrl(debate))}" data-document-navigation>Report a possible scorecard issue</a>`}
         </aside>
       </section>

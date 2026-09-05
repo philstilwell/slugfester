@@ -44,7 +44,7 @@ const expected = new Map(
     debate.id,
     {
       debateNumber: debate.number,
-      videoId: videoIdFrom(debate.youtubeUrl)
+      videoId: videoIdFrom(debate.transcriptSourceUrl || debate.youtubeUrl)
     }
   ])
 );

@@ -30,6 +30,18 @@ const publicationComparable = (debate) => {
   const comparable = structuredClone(debate);
   delete comparable.sourceNote;
   delete comparable.scoringNote;
+  // Preserve the locked assessment source while allowing the approved replacement viewing links.
+  if (comparable.id === "knechtle-oconnor-christian-morality-2025" && comparable.transcriptSourceUrl) {
+    assert.equal(comparable.transcriptSourceUrl, "https://www.youtube.com/watch?v=EN5Jqu2-2P8");
+    assert.equal(comparable.youtubeUrl, "https://www.youtube.com/watch?v=r8RZarGC8B4");
+    assert.deepEqual(comparable.additionalSources, [{
+      url: "https://www.alexoconnor.com/p/debating-christianity-with-cliffe",
+      label: "Full conversation on Alex’s website (paid subscription)"
+    }]);
+    comparable.youtubeUrl = comparable.transcriptSourceUrl;
+    delete comparable.transcriptSourceUrl;
+    delete comparable.additionalSources;
+  }
   if (
     comparable.id === "hitchens-blair-religion-force-good-2010" &&
     comparable.overall?.con?.blunders?.[1]?.text ===

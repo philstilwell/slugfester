@@ -361,7 +361,8 @@ export function debateSeo(debate, participantsBySide = {}) {
       href: interlocutorPath(person),
       label: `${person.name} debate profile`
     })),
-    { href: debate.youtubeUrl, label: "Original YouTube debate" }
+    { href: debate.youtubeUrl, label: "Original YouTube debate" },
+    ...(debate.additionalSources || []).map((source) => ({ href: source.url, label: source.label }))
   ];
 
   return {
