@@ -193,6 +193,23 @@ export function backendPath() {
   return "/backend/";
 }
 
+export function insightsPath() {
+  return "/insights/";
+}
+
+export function insightsSeo() {
+  const description = "Seven research findings from Slugfester’s debate archive: evidence, score gaps, slogans, fallacy counts and ranking reliability, with figures and limitations.";
+  return {
+    title: pageTitle("Insights from the debates"), heading: "Insights from the debates",
+    description, canonicalPath: insightsPath(), lastmod: "2026-09-05",
+    jsonLd: [
+      organizationJsonLd(), websiteJsonLd(),
+      { "@context": "https://schema.org", "@type": "CollectionPage", name: "Insights from the debates", description, url: absoluteUrl(insightsPath()), dateModified: "2026-09-05", isPartOf: { "@id": WEBSITE_ID } },
+      breadcrumbJsonLd([{ name: SITE_NAME, path: "/" }, { name: "Insights", path: insightsPath() }])
+    ]
+  };
+}
+
 export function correctionsPath() {
   return "/corrections/";
 }

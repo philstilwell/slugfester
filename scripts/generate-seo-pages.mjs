@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { referenceDefinitions, referenceFromUrl } from "../src/data/references.js";
+import { renderInsightsContent } from "../src/data/insights.js";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
@@ -19,6 +20,8 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
+  insightsPath,
+  insightsSeo,
   correctionsPath,
   correctionsSeo,
   assessmentPath,
@@ -50,7 +53,7 @@ const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
 const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
   "src/styles.css", "src/seo.js", "src/data/topics.js",
-  "src/data/interlocutors.js", "src/data/references.js"
+  "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js"
 ].map((path) => readFile(join(root, path), "utf8")));
 const assetVersion = createHash("sha256")
   .update(JSON.stringify([normalizedApp, browserSources, debates, await readFile(fileURLToPath(import.meta.url), "utf8")]))
@@ -112,6 +115,7 @@ function fallbackMarkup(seo, summary) {
     { href: topicsPath(), label: "Browse topics" },
     { href: rankingsPath(), label: "Compare interlocutors" },
     { href: backendPath(), label: "Read the assessment method" },
+    { href: insightsPath(), label: "Explore research insights" },
     ...(seo.relatedLinks || [])
   ];
   const uniqueLinks = [
@@ -164,7 +168,9 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const updatedMeta = updatedTime
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
-  const fallback = fallbackMarkup(seo, noscriptText);
+  const fallback = seo.canonicalPath === insightsPath()
+    ? `<main class="insights-page" id="main-content">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
+    : fallbackMarkup(seo, noscriptText);
 
   return `<!doctype html>
 <html lang="en">
@@ -649,6 +655,8 @@ addPage(
   backendSeo(),
   "Backend explains Slugfester's full-transcript review, independent judgments, deterministic scoring, validation controls, update plans, and campaign compute estimate."
 );
+
+addPage(insightsPath(), insightsSeo(), "Explore seven research findings, figures, limitations and links to the debates.");
 
 addPage(
   correctionsPath(),

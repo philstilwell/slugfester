@@ -10,6 +10,7 @@ const representativeRoutes = [
   "/debate/craig-oconnor-god-debate-2026/",
   "/debate/horn-bertuzzi-oconnor-schmid-problem-evil-2022/",
   "/backend/",
+  "/insights/",
   "/corrections/",
   "/reference/fallacy/equivocation/"
 ];
@@ -34,6 +35,7 @@ for (const route of [
   "/interlocutor/alex-carter/",
   "/debate/craig-oconnor-god-debate-2026/",
   "/backend/",
+  "/insights/",
   "/corrections/"
 ]) {
   test(`fits a narrow phone viewport: ${route}`, async ({ page }) => {
