@@ -1,0 +1,279 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contextSufficient",
+    "contextNote",
+    "requestedEventRanges",
+    "decisions",
+    "additionalExclusions",
+    "possibleMissedEpisodes"
+  ],
+  "properties": {
+    "contextSufficient": {
+      "type": "boolean"
+    },
+    "contextNote": {
+      "type": "string"
+    },
+    "requestedEventRanges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "reason"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateId",
+          "duplicateOf",
+          "episodes",
+          "explanation"
+        ],
+        "properties": {
+          "candidateId": {
+            "type": "string"
+          },
+          "duplicateOf": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "episodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "startEvent",
+                "endEvent",
+                "speaker",
+                "quote",
+                "form",
+                "substitution",
+                "protection",
+                "emotionalDevices",
+                "confidence",
+                "explanation"
+              ],
+              "properties": {
+                "startEvent": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "endEvent": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "speaker": {
+                  "type": "string",
+                  "enum": [
+                    "A",
+                    "B",
+                    "O",
+                    "U"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "form": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unclear"
+                  ]
+                },
+                "substitution": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unclear"
+                  ]
+                },
+                "protection": {
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "unclear"
+                  ]
+                },
+                "emotionalDevices": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "comfort",
+                      "fear",
+                      "shame",
+                      "identity",
+                      "ridicule",
+                      "none",
+                      "unclear"
+                    ]
+                  }
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ]
+                },
+                "explanation": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "additionalExclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "reason"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "possibleMissedEpisodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "speaker",
+          "quote",
+          "form",
+          "substitution",
+          "protection",
+          "emotionalDevices",
+          "confidence",
+          "explanation"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "O",
+              "U"
+            ]
+          },
+          "quote": {
+            "type": "string"
+          },
+          "form": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "substitution": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "protection": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "emotionalDevices": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "comfort",
+                "fear",
+                "shame",
+                "identity",
+                "ridicule",
+                "none",
+                "unclear"
+              ]
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

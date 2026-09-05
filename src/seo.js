@@ -631,8 +631,8 @@ export function interlocutorSeo(
 
 export function backendSeo({ legacy = false } = {}) {
   const description =
-    "How Slugfester selects, transcribes, reviews, and scores debates, with validation controls and corpus-wide research on scoring patterns and comparability.";
-  const updatedDate = "2026-09-04";
+    "How Slugfester reviews and scores debates, with seven corpus research papers, including a direct slogan study of all 187 relevant transcripts.";
+  const updatedDate = "2026-09-05";
 
   return {
     title: pageTitle("How Slugfester scores debates"),

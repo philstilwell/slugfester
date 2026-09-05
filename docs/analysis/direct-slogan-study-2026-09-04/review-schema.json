@@ -1,0 +1,198 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "coverageComplete",
+    "coverageNote",
+    "attribution",
+    "candidates",
+    "contrasts"
+  ],
+  "properties": {
+    "coverageComplete": {
+      "type": "boolean"
+    },
+    "coverageNote": {
+      "type": "string"
+    },
+    "attribution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "speaker"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "O",
+              "U"
+            ]
+          }
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "contextStartEvent",
+          "contextEndEvent",
+          "speaker",
+          "quote",
+          "form",
+          "substitution",
+          "protection",
+          "supportExplanation",
+          "protectionExplanation",
+          "emotionalDevices",
+          "confidence",
+          "strongestFairReading"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "contextStartEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "contextEndEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "O",
+              "U"
+            ]
+          },
+          "quote": {
+            "type": "string"
+          },
+          "form": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "substitution": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "protection": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "supportExplanation": {
+            "type": "string"
+          },
+          "protectionExplanation": {
+            "type": "string"
+          },
+          "emotionalDevices": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "comfort",
+                "fear",
+                "shame",
+                "identity",
+                "ridicule",
+                "none",
+                "unclear"
+              ]
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "strongestFairReading": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contrasts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "speaker",
+          "quote",
+          "explanation"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "O",
+              "U"
+            ]
+          },
+          "quote": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

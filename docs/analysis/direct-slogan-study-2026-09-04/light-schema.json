@@ -1,0 +1,191 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "coverageComplete",
+    "sourceNote",
+    "attribution",
+    "teaserSpans",
+    "candidates",
+    "contrasts"
+  ],
+  "properties": {
+    "coverageComplete": {
+      "type": "boolean"
+    },
+    "sourceNote": {
+      "type": "string"
+    },
+    "attribution": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "teaserSpans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "reason"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "contextStartEvent",
+          "contextEndEvent",
+          "speaker",
+          "quote",
+          "form",
+          "substitution",
+          "protection",
+          "emotionalDevices",
+          "confidence",
+          "explanation"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "contextStartEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "contextEndEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "O",
+              "U"
+            ]
+          },
+          "quote": {
+            "type": "string"
+          },
+          "form": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "substitution": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "protection": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unclear"
+            ]
+          },
+          "emotionalDevices": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "comfort",
+                "fear",
+                "shame",
+                "identity",
+                "ridicule",
+                "none",
+                "unclear"
+              ]
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contrasts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "startEvent",
+          "endEvent",
+          "speaker",
+          "quote",
+          "explanation"
+        ],
+        "properties": {
+          "startEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "endEvent": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "O",
+              "U"
+            ]
+          },
+          "quote": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

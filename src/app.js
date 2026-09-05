@@ -34,7 +34,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260904-astra-corpus-253-r2";
+} from "./seo.js?v=20260905-direct-slogan187";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -2617,7 +2617,7 @@ function renderBackend() {
               <h3>Clearer explanations, fully explained graphs, and conclusions you can check</h3>
               <p>All seven papers now use plainer language, numbered arguments leading to clear conclusions, and a reading key for every graph. Worked examples explain the statistics without assuming prior knowledge. The papers share a frozen archive of <strong>253 assessments</strong>: 237 comparable one-on-one scoring records, including 187 religious-versus-skeptical comparisons. Each paper states which records it uses and what its findings cannot establish.</p>
               <p>The first group explains the 6.34-point mean non-theist advantage, maps its topic differences, and examines slogan-like reasoning. The second asks how much the formal CON role explains and why a fallacy count is not a complete measure of debate quality. The final group examines whether scores from different assessment processes are comparable and how much confidence to place in exact speaker ranks.</p>
-              <p><strong>New analysis is not new judging.</strong> This Astra-era edition reanalyzes the existing assessments; it does not claim that Astra freshly rescored every debate. These papers are intended as a stable baseline until the next major GPT-model review, with genuine corrections remaining possible in the meantime. A newer model's accuracy and fairness should be tested, not assumed.</p>
+              <p><strong>New analysis is not new scoring.</strong> The original debate scores remain unchanged. Six papers reanalyze existing assessments; the slogan paper was replaced on September 5 with a fresh, direct reading of all 187 relevant transcripts. These papers are intended as a stable baseline until the next major GPT-model review, with genuine corrections remaining possible in the meantime. A newer model's accuracy and fairness should be tested, not assumed.</p>
               <p>The papers distinguish observed findings from proposed explanations, show counterexamples, and identify what could change their conclusions. The position studies classify the side actually argued, rather than equating <em>PRO</em> with theism. <a href="https://github.com/philstilwell/slugfester/tree/main/docs/analysis/astra-corpus-papers-2026-09-04" target="_blank" rel="noopener">Inspect the methods, classifications, calculations, and source records.</a></p>
             </div>
             <div class="backend-report-library" aria-label="Corpus-level analysis papers">
@@ -2675,26 +2675,26 @@ function renderBackend() {
               </article>
 
               <article class="backend-report-card">
-                <span>Paper three · Slogan-risk test</span>
+                <span>Paper three · Direct slogan study</span>
                 <h4>Are Theist Arguments More Often Slogan-Like?</h4>
-                <p>Three warning signs—weak support, overstated confidence, and changing or missing limits—occur together in 28.6% of eligible theist moves and 7.9% of non-theist moves. The original test still covers 146 debates because later records lack the same detailed findings. A separate score-based check covers all 187 relevant comparisons and points in the same direction. Neither is a direct count of unfalsifiable slogans.</p>
-                <p>Close readings explain creator-given worth, postmortem compensation, protected miracle claims, and private confirmation, including several John Lennox examples. Secular overclaim and well-supported theist contributions supply counterexamples. The paper distinguishes measurable slogan risk, genuine insulation from correction, and the still-unproven hypothesis that emotional reinforcement causes the difference.</p>
+                <p>A fresh review of all 187 relevant transcripts replaces the earlier score-based warning test. It finds 77 theist and 19 non-theist uses of slogans that both replace a needed reason and shut out criticism. Allowing for speech length and giving each debate equal weight, the rates are 0.56 and 0.16 uses per 10,000 words. The broader unsupported-slogan difference is less secure, and 144 debates have no protected slogan detected on either side.</p>
+                <p>Four fully explained graphs show rates, how widely the uses occur, checks across different selections, and emotional wording. Close readings include Sye Ten Bruggencate, Christopher Hitchens, and John Lennox, distinguishing missing support from claims that block correction. Lennox supplies four unsupported slogans but only one confirmed protected slogan across eight debates. The paper explains the limits of one AI reader and why emotional language does not establish that emotion caused religious belief.</p>
                 <dl>
                   <div>
-                    <dt>Original test / broader check</dt>
-                    <dd>146 debates / 187 debates</dd>
+                    <dt>Direct review coverage</dt>
+                    <dd>187 complete retained transcripts</dd>
                   </div>
                   <div>
-                    <dt>Mean paired difference</dt>
-                    <dd>20.65 percentage points</dd>
+                    <dt>Protected-slogan rate difference</dt>
+                    <dd>+0.40 theist uses per 10,000 words</dd>
                   </div>
                   <div>
                     <dt>Length and figures</dt>
-                    <dd>14 pages · 3 figures</dd>
+                    <dd>17 pages · 4 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
-                <small>September 4 edition. Includes the unchanged original-test denominator, the expanded score-based check, timestamped examples, tests excluding Lennox, non-theist counterexamples, and a clear account of what would count against a claim.</small>
+                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260905-direct187" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
+                <small>September 5 direct-review edition, using the September 4 archive of 253 assessments. Includes plain-language definitions, word denominators, uncertainty, concentration and borderline checks, timestamped examples, and a numbered conclusion. The original debate scores and the other six papers are unchanged. <a href="https://github.com/philstilwell/slugfester/tree/main/docs/analysis/direct-slogan-study-2026-09-04" target="_blank" rel="noopener">Inspect the direct-study data and methods.</a></small>
               </article>
                 </div>
               </section>

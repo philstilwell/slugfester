@@ -1,0 +1,48 @@
+[
+  {
+    "number": 2,
+    "candidateId": "D002-I006",
+    "reason": "The attribution array omitted the change to Hitchens's seven-minute response, although the candidate correctly names A. Craig concludes at E2161; applause is E2162. Hitchens begins his reply at E2163, finishes with thanks at E2326, followed by applause and the moderator introducing Craig's closing argument at E2327–2329. Correct the whole omitted turn, not just the quoted sentence.",
+    "sourceEvidence": "Full retained transcript E2157–2339, including the response to Craig's resurrection argument, Hitchens's first-person discussion of his Mother Teresa work, and the explicit introduction of Craig after the turn.",
+    "attribution": [
+      {"startEvent": 2162, "endEvent": 2162, "speaker": "O"},
+      {"startEvent": 2163, "endEvent": 2326, "speaker": "A"},
+      {"startEvent": 2327, "endEvent": 2329, "speaker": "O"}
+    ]
+  },
+  {
+    "number": 22,
+    "candidateId": "D022-I010",
+    "reason": "The words are present at E3088 and E3090, separated by the caption's standalone [Applause] event E3089. Restore that source marker in the evidence quotation; the original shortened model quotation remains in output.json. The uncertain classification is unchanged.",
+    "sourceEvidence": "Retained transcript E3086–3096: religion does / not poison / everything everything poisons / [Applause] / religion I poison religion regrettably I ...",
+    "changes": {"quote": "everything poisons [Applause] religion"}
+  },
+  {
+    "number": 74,
+    "candidateId": "D074-I001",
+    "reason": "The model shortened the caption wording, omitting a hesitation. Use a shorter exact excerpt of the same passage. No judgment is changed; this remains an uncertain protection case, not a confirmed slogan.",
+    "sourceEvidence": "Retained transcript E2088–2091 contains the exact excerpt below, including um.",
+    "changes": {"quote": "to even countenance those types of um evaluations"}
+  },
+  {
+    "number": 78,
+    "contrastId": "D078-C002",
+    "reason": "The final word, sisters, occurs in the next caption event E1133. Extend this non-slogan contrast's evidence span by one event; its exact quotation and interpretation are unchanged. Contrasts do not contribute to the slogan counts.",
+    "sourceEvidence": "Retained transcript E1131–1133: they're not even the room but we are at / the table with our Orthodox brothers and / sisters ...",
+    "changes": {"endEvent": 1133}
+  },
+  {
+    "number": 87,
+    "contrastId": "D087-C002",
+    "reason": "The final word, does, falls in the next caption E3639. Extend the contrast's span by one event. The quote and non-slogan judgment are unchanged; no count changes.",
+    "sourceEvidence": "E3638: B Spider-Man may not exist but New York; E3639: does yeah so Matt said a lot of good ...",
+    "changes": {"endEvent": 3639}
+  },
+  {
+    "number": 219,
+    "contrastId": "D219-C002",
+    "reason": "The quotation's initial is occurs at the end of E1393, immediately before the recorded start. Extend the non-slogan contrast's span by one event. Its wording and interpretation remain unchanged; counts are unaffected.",
+    "sourceEvidence": "E1393 ends are they is; E1394 begins there a way to work around those. The rest of the quote occurs in E1395–1396.",
+    "changes": {"startEvent": 1393}
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "p3-direct-rates",
+    "title": "Two different tests, applied to both sides",
+    "reading_key": "Rust = theist; teal = non-theist. Bar length shows detected uses per 10,000 caption words attributed to that side, averaged with equal weight for each of the 187 debates. Both panels use the same scale and start at zero. The right panel is a stricter subset of the left; do not add them together.",
+    "metric": "Equal-debate average of side-specific episode rates",
+    "denominator": "Attributed substantive caption words within each debate",
+    "source": "light-results.json / light-debates.json",
+    "colors": {
+      "theist": "#B8603A",
+      "non_theist": "#137D82"
+    },
+    "scope": "187 relevant retained transcripts; one Light AI review each"
+  },
+  {
+    "id": "p3-direct-presence",
+    "title": "How widely the detected uses appear",
+    "reading_key": "Each bar counts debates, not slogans or speakers. Navy = at least one detected use on both sides; rust = only theist; teal = only non-theist; pale grey = neither. Each panel adds to 187. A debate with many uses still counts once. Neither means none detected under this rule, not proof of perfect reasoning.",
+    "metric": "Presence of at least one eligible episode by side",
+    "denominator": "187 debates per panel",
+    "source": "light-results.json / light-debates.json",
+    "colors": {
+      "theist": "#B8603A",
+      "non_theist": "#137D82"
+    },
+    "scope": "187 relevant retained transcripts; one Light AI review each"
+  },
+  {
+    "id": "p3-direct-checks",
+    "title": "Does the direction survive different selections?",
+    "reading_key": "Each dot is the average within-debate difference. Right of the dashed zero line means more theist uses; left means more non-theist uses. Each line covers the middle 95% of averages from 20,000 repeat draws of whole debates. Crossing zero means the direction changes in this exercise. Both panels use the same scale; n means debates. These are overlapping checks, not five independent studies, and the lines do not cover AI reading errors.",
+    "metric": "Paired mean rate differences with percentile resampling ranges",
+    "denominator": "Complete debates sampled as pairs; 20,000 draws; fixed seed 20260904",
+    "source": "light-results.json / light-debates.json",
+    "colors": {
+      "theist": "#B8603A",
+      "non_theist": "#137D82"
+    },
+    "scope": "187 relevant retained transcripts; one Light AI review each"
+  },
+  {
+    "id": "p3-direct-emotion",
+    "title": "Emotional wording is a separate observation",
+    "reading_key": "Rust = theist; teal = non-theist. Bars show the percentage of detected unsupported slogans also marked for comfort, fear, shame, identity, or ridicule. The counts beside each bar show the denominator. This is not the percentage of all speech that is emotional. It measures wording, not a speaker’s motive, a listener’s reaction, or what causes religious belief.",
+    "metric": "Share of confirmed unsupported episodes with at least one recorded emotional device",
+    "denominator": "Detected unsupported slogans, separately by side",
+    "source": "light-results.json / light-debates.json",
+    "colors": {
+      "theist": "#B8603A",
+      "non_theist": "#137D82"
+    },
+    "scope": "187 relevant retained transcripts; one Light AI review each"
+  }
+]

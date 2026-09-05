@@ -43,11 +43,11 @@ import {
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
 const assetVersion = "20260904-astra-corpus-253-r2";
-const landingAssetVersion = assetVersion;
+const landingAssetVersion = "20260905-direct-slogan187";
 const interlocutorAssetVersion = assetVersion;
 const rankingsAssetVersion = assetVersion;
 const debateAssetVersion = assetVersion;
-const backendAssetVersion = assetVersion;
+const backendAssetVersion = "20260905-direct-slogan187";
 
 function escapeHtml(value = "") {
   return String(value)
