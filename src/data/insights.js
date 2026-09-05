@@ -114,7 +114,7 @@ export function renderInsightsContent() {
       <p class="insight-stat"><strong>${escape(item.statistic)}</strong><span>${escape(item.statisticLabel)}</span></p>
       <p>${escape(item.explanation)}</p>
       <p class="insight-limitation"><strong>What this cannot establish.</strong> ${escape(item.limitation)}</p>
-      <a class="button primary" href="/output/pdf/${item.pdf}.pdf?v=${item.version || "20260904-astra253-r2"}" type="application/pdf" target="_blank" rel="noopener">Read the full paper <span class="sr-only">— ${escape(item.title)} (PDF, new tab)</span></a>
+      <a class="button primary" href="/output/pdf/${item.pdf}.pdf?v=${item.version || "20260904-astra253-r2"}" type="application/pdf" target="_blank" rel="noopener" aria-label="Read the full paper: ${escape(item.title)} (PDF, new tab)">Read the full paper</a>
       <ul class="insight-links">${item.links.map((link) => `<li><a href="${escape(insightLink(link))}">${escape(link.label)}</a></li>`).join("")}</ul>
     </div>
     <figure class="insight-figure">

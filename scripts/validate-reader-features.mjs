@@ -7,7 +7,13 @@ import { assessmentGuide, debateSectionAnchor, relatedDebates } from "../src/dat
 import { researchInsights, insightLink, renderInsightsContent } from "../src/data/insights.js";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const people = (debate) => [...new Map(["pro", "con"].flatMap((key) => avatarsForSpeakerText(debate.sides[key].speaker)).map((person) => [person.name, person])).values()];
+const peopleCache = new Map();
+const people = (debate) => {
+  if (!peopleCache.has(debate.id)) {
+    peopleCache.set(debate.id, [...new Map(["pro", "con"].flatMap((key) => avatarsForSpeakerText(debate.sides[key].speaker)).map((person) => [person.name, person])).values()]);
+  }
+  return peopleCache.get(debate.id);
+};
 const ids = new Set(debates.map((debate) => debate.id));
 for (const debate of debates) {
   const guide = assessmentGuide(debate);

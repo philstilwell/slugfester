@@ -1,8 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=45c179feff42d122";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=45c179feff42d122";
-import { debateSummaries } from "./data/debate-summaries.js?v=45c179feff42d122";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=45c179feff42d122";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=45c179feff42d122";
+import { topicCategoryDefinitions } from "./data/topics.js?v=3e70b7560ad9b76c";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=3e70b7560ad9b76c";
+import { debateSummaries } from "./data/debate-summaries.js?v=3e70b7560ad9b76c";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=3e70b7560ad9b76c";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=3e70b7560ad9b76c";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -37,7 +37,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=45c179feff42d122";
+} from "./seo.js?v=3e70b7560ad9b76c";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -85,7 +85,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=45c179feff42d122")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=3e70b7560ad9b76c")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -104,7 +104,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=45c179feff42d122")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=3e70b7560ad9b76c")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -120,7 +120,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=45c179feff42d122`)
+    const promise = import(`./data/debate-details/${id}.js?v=3e70b7560ad9b76c`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -135,7 +135,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=45c179feff42d122`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=3e70b7560ad9b76c`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3875,7 +3875,7 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=45c179feff42d122")
+    insightsPromise ||= import("./data/insights.js?v=3e70b7560ad9b76c")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
