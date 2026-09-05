@@ -563,7 +563,7 @@ export const debateSummaries = [
     "label": "Christian ethics",
     "date": "2026-08-15",
     "duration": "51 min",
-    "youtubeUrl": "https://www.youtube.com/watch?v=EN5Jqu2-2P8",
+    "youtubeUrl": "https://www.youtube.com/watch?v=r8RZarGC8B4",
     "motion": "Can Christianity's claims about forgiveness, morality, divine judgment, conquest, and slavery withstand skeptical objections?",
     "summary": "Knechtle presents Christianity as redemptive and context-sensitive, while O'Connor presses evidential, moral, slavery, and gender objections through specific scriptural counterexamples.",
     "topicCategory": "morality-ethics",
