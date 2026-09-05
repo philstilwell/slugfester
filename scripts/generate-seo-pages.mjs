@@ -8,6 +8,7 @@ import { referenceDefinitions, referenceFromUrl } from "../src/data/references.j
 import { renderInsightsContent } from "../src/data/insights.js";
 import { biographyFor, renderBiography } from "../src/data/interlocutor-bios.js";
 import { renderInsightsMethodsContent } from "../src/data/insights-methods.js";
+import { initialPageContent } from "./lib/initial-page-content.mjs";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
@@ -129,7 +130,7 @@ function fallbackMarkup(seo, summary) {
     ).values()
   ].slice(0, 25);
 
-  return `<main class="seo-fallback" id="main-content">
+  return `<main class="seo-fallback" id="main-content" data-initial-path="${escapeHtml(seo.canonicalPath || "")}">
       <p class="eyebrow">${escapeHtml(SITE_NAME)}</p>
       <h1>${escapeHtml(fallbackHeading(seo))}</h1>
       <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>${seo.biography ? `\n      ${renderBiography({ name: seo.heading }, seo.biography, 2)}` : ""}
@@ -138,6 +139,7 @@ function fallbackMarkup(seo, summary) {
           .map(({ href, label }) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
           .join("\n        ")}
       </nav>
+      <div class="initial-page-content">${initialPageContent(seo.canonicalPath)}</div>
     </main>`;
 }
 
@@ -172,9 +174,9 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
   const fallback = seo.canonicalPath === "/insights/data-and-methods/"
-    ? `<main class="insights-page" id="main-content">${renderInsightsMethodsContent()}</main>`
+    ? `<main class="insights-page" id="main-content" data-initial-path="/insights/data-and-methods/">${renderInsightsMethodsContent()}</main>`
     : seo.canonicalPath === insightsPath()
-    ? `<main class="insights-page" id="main-content">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
+    ? `<main class="insights-page" id="main-content" data-initial-path="/insights/">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
     : fallbackMarkup(seo, noscriptText);
 
   return `<!doctype html>
@@ -223,7 +225,7 @@ ${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl
     <div id="app">
       ${fallback}
     </div>
-    <noscript><p class="seo-noscript">Interactive filters and detailed critique controls require JavaScript; the page summary and links above remain available.</p></noscript>
+    <noscript><p class="seo-noscript">The summaries, published assessment excerpts, and links above work without JavaScript. Interactive filtering, comparison graphs, and the complete critique controls require JavaScript.</p></noscript>
     <script type="module" src="/src/app.js?v=${pageAssetVersion}"></script>
   </body>
 </html>

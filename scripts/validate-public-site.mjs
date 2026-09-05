@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import "./validate-reader-features.mjs";
 import "./validate-interlocutor-bios.mjs";
+import "./validate-initial-content.mjs";
 import { dirname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
