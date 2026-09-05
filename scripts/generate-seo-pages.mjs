@@ -174,9 +174,9 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
     ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
     : "";
   const fallback = seo.canonicalPath === "/insights/data-and-methods/"
-    ? `<main class="insights-page" id="main-content">${renderInsightsMethodsContent()}</main>`
+    ? `<main class="insights-page" id="main-content" data-initial-path="/insights/data-and-methods/">${renderInsightsMethodsContent()}</main>`
     : seo.canonicalPath === insightsPath()
-    ? `<main class="insights-page" id="main-content">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
+    ? `<main class="insights-page" id="main-content" data-initial-path="/insights/">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
     : fallbackMarkup(seo, noscriptText);
 
   return `<!doctype html>
