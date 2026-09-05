@@ -181,7 +181,7 @@ def main():
     dump(HERE/'light-results.json',results);dump(HERE/'light-debates.json',rows);dump(HERE/'light-incidents.json',candidates);dump(HERE/'light-contrasts.json',contrasts)
     if rows:
         with (HERE/'light-debates.csv').open('w',newline='') as stream:
-            writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+            writer=csv.DictWriter(stream,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(rows)
     print(json.dumps(dict(status=status,reviewedDebates=len(rows),missingDebates=len(missing),issues=issues,checks=dict(checks)),indent=2))
     if not args.partial:assert status=='complete','Do not publish partial or unresolved research'
 

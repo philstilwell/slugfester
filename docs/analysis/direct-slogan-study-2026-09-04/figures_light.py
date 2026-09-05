@@ -15,6 +15,8 @@ CONTRACTS=[]
 def finish(fig,key,title,reading,metric,denominator):
     fig.savefig(HERE/'figures'/f'{key}.png',dpi=220,facecolor='white',bbox_inches='tight')
     fig.savefig(HERE/'figures'/f'{key}.svg',facecolor='white',bbox_inches='tight')
+    svg=HERE/'figures'/f'{key}.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     plt.close(fig)
     CONTRACTS.append(dict(id=key,title=title,reading_key=reading,metric=metric,
         denominator=denominator,source='light-results.json / light-debates.json',
