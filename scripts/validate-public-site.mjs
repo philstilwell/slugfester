@@ -69,6 +69,7 @@ const expectedPaths = [
   rankingsPath(),
   backendPath(),
   insightsPath(),
+  "/insights/data-and-methods/",
   correctionsPath(),
   ...debates.map(debatePath),
   ...[...appearingPeople.values()].map(interlocutorPath),
