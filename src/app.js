@@ -34,7 +34,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=20260904-astra-corpus-253";
+} from "./seo.js?v=20260904-astra-corpus-253-r2";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -2613,9 +2613,9 @@ function renderBackend() {
           </header>
           <div class="backend-objectivity-content backend-report-content">
             <div class="backend-report-copy">
-              <p class="eyebrow">Astra-era research edition · September 4, 2026</p>
-              <h3>Better explanations, recalculated evidence, and an auditable baseline</h3>
-              <p>All seven papers have been substantially rewritten with explanatory prose, worked statistical examples, concrete debate cases, and redesigned figures. They share a frozen archive of <strong>253 assessments</strong>: 237 comparable one-on-one scoring records, including 187 religious-versus-skeptical comparisons. Each paper makes its own eligible sample and limitations explicit.</p>
+              <p class="eyebrow">Astra-era research edition · September 4, 2026 · Plain-language revision</p>
+              <h3>Clearer explanations, fully explained graphs, and conclusions you can check</h3>
+              <p>All seven papers now use plainer language, numbered arguments leading to clear conclusions, and a reading key for every graph. Worked examples explain the statistics without assuming prior knowledge. The papers share a frozen archive of <strong>253 assessments</strong>: 237 comparable one-on-one scoring records, including 187 religious-versus-skeptical comparisons. Each paper states which records it uses and what its findings cannot establish.</p>
               <p>The first group explains the 6.34-point mean non-theist advantage, maps its topic differences, and examines slogan-like reasoning. The second asks how much the formal CON role explains and why a fallacy count is not a complete measure of debate quality. The final group examines whether scores from different assessment processes are comparable and how much confidence to place in exact speaker ranks.</p>
               <p><strong>New analysis is not new judging.</strong> This Astra-era edition reanalyzes the existing assessments; it does not claim that Astra freshly rescored every debate. These papers are intended as a stable baseline until the next major GPT-model review, with genuine corrections remaining possible in the meantime. A newer model's accuracy and fairness should be tested, not assumed.</p>
               <p>The papers distinguish observed findings from proposed explanations, show counterexamples, and identify what could change their conclusions. The position studies classify the side actually argued, rather than equating <em>PRO</em> with theism. <a href="https://github.com/philstilwell/slugfester/tree/main/docs/analysis/astra-corpus-papers-2026-09-04" target="_blank" rel="noopener">Inspect the methods, classifications, calculations, and source records.</a></p>
@@ -2631,8 +2631,8 @@ function renderBackend() {
               <article class="backend-report-card">
                 <span>Paper one · Score-gap diagnosis</span>
                 <h4>Why Do the Theist Sides Score Lower?</h4>
-                <p>Across 187 relevant debates, the non-theist side averages 6.34 points higher and leads in 160 assessments. Evidence and warrant show the largest raw dimension gap; coherence, warrant, and responsiveness together account for about three-quarters of the weighted score difference.</p>
-                <p>The paper develops the <strong>epistemic bleed-through hypothesis</strong>: standards sufficient to sustain personal faith may be insufficient to justify a claim to an unconvinced listener. It identifies the missing steps between possibility and probability, practical benefit and truth, or an explanatory gap and a preferred explanation—while separating that supported diagnosis from unmeasured claims about private motives. Narrower classifications, repeated-speaker checks, and theist counterexamples keep the interpretation testable.</p>
+                <p>Across 187 relevant debates, the non-theist side averages 6.34 points higher and leads in 160 assessments. Support for claims shows the largest gap among the six scoring areas. Support, consistent reasoning, and answers to objections together make up about three-quarters of the overall score difference.</p>
+                <p>The paper tests the <strong>faith-to-debate hypothesis</strong>: standards that sustain personal faith may carry into public debate without supplying enough reason for an unconvinced listener. It asks what connects possibility to probability, religious benefit to truth, or a gap in one explanation to support for another. The conclusion separates the observed weaknesses from their still-unproved cause. Theist counterexamples and checks using different selections keep the claim open to criticism.</p>
                 <dl>
                   <div>
                     <dt>Coverage</dt>
@@ -2644,10 +2644,10 @@ function renderBackend() {
                   </div>
                   <div>
                     <dt>Length and figures</dt>
-                    <dd>13 pages · 5 figures</dd>
+                    <dd>14 pages · 5 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/why-do-the-theist-sides-score-lower.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Why Do the Theist Sides Score Lower?”</a>
+                <a class="button primary backend-report-link" href="/output/pdf/why-do-the-theist-sides-score-lower.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Why Do the Theist Sides Score Lower?”</a>
                 <small>September 4 edition. Includes score reconstruction, evidence thresholds, new-debate comparisons, worked explanations of uncertainty, source-linked cases, rival explanations, and conditions that would weaken the hypothesis.</small>
               </article>
 
@@ -2655,7 +2655,7 @@ function renderBackend() {
                 <span>Paper two · Topic, burden, and rubric map</span>
                 <h4>Where Is the Theist Disadvantage Largest?</h4>
                 <p>Religion, culture, and meaning has the largest observed mean gap: 8.27 points across 22 debates, with the non-theist side higher in 21 and one tie. Resurrection debates are closer, averaging 3.53 points across 17 comparisons. The paper explains both the topic differences and why overlapping uncertainty makes an exact topic ranking fragile.</p>
-                <p>Its most useful map concerns argumentative transitions: from religious usefulness to truth, from a necessary foundation to a personal God, and from possible divine reasons to the suffering actually observed. Topic-by-dimension figures, role and speaker checks, and high-importance-move comparisons show where those transitions most often remain unfinished.</p>
+                <p>Its most useful question is what supports the next step: from religious usefulness to truth, from a necessary foundation to a personal God, or from possible divine reasons to an explanation of the suffering we see. Fully explained graphs show the topic differences, how often each side scores higher, and why the exact order of topics is uncertain.</p>
                 <dl>
                   <div>
                     <dt>Coverage</dt>
@@ -2667,17 +2667,17 @@ function renderBackend() {
                   </div>
                   <div>
                     <dt>Length and figures</dt>
-                    <dd>14 pages · 5 figures</dd>
+                    <dd>15 pages · 5 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/where-is-the-theist-disadvantage-largest.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Where Is the Theist Disadvantage Largest?”</a>
+                <a class="button primary backend-report-link" href="/output/pdf/where-is-the-theist-disadvantage-largest.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Where Is the Theist Disadvantage Largest?”</a>
                 <small>September 4 edition. Includes all eight topic denominators, direction counts, uncertainty, topic-order resampling, a scoring-dimension map, close resurrection cases, and practical guidance for evaluating the inference that carries a conclusion.</small>
               </article>
 
               <article class="backend-report-card">
                 <span>Paper three · Slogan-risk test</span>
                 <h4>Are Theist Arguments More Often Slogan-Like?</h4>
-                <p>A three-part pattern—weak warrant, material overclaim, and unstable or missing qualification—appears in 28.6% of eligible theist moves and 7.9% of non-theist moves. The original test still covers 146 debates because later records lack the same detailed fields. A separate, explicitly different score-based check covers all 187 relevant comparisons and points in the same direction.</p>
+                <p>Three warning signs—weak support, overstated confidence, and changing or missing limits—occur together in 28.6% of eligible theist moves and 7.9% of non-theist moves. The original test still covers 146 debates because later records lack the same detailed findings. A separate score-based check covers all 187 relevant comparisons and points in the same direction. Neither is a direct count of unfalsifiable slogans.</p>
                 <p>Close readings explain creator-given worth, postmortem compensation, protected miracle claims, and private confirmation, including several John Lennox examples. Secular overclaim and well-supported theist contributions supply counterexamples. The paper distinguishes measurable slogan risk, genuine insulation from correction, and the still-unproven hypothesis that emotional reinforcement causes the difference.</p>
                 <dl>
                   <div>
@@ -2690,10 +2690,10 @@ function renderBackend() {
                   </div>
                   <div>
                     <dt>Length and figures</dt>
-                    <dd>13 pages · 3 figures</dd>
+                    <dd>14 pages · 3 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
+                <a class="button primary backend-report-link" href="/output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Are Theist Arguments More Often Slogan-Like?”</a>
                 <small>September 4 edition. Includes the unchanged original-test denominator, the expanded score-based check, timestamped examples, tests excluding Lennox, non-theist counterexamples, and a clear account of what would count against a claim.</small>
               </article>
                 </div>
@@ -2725,7 +2725,7 @@ function renderBackend() {
                     <dd>13 pages · 4 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/does-the-con-side-have-an-inherent-advantage.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Does the CON Side Have an Inherent Advantage?”</a>
+                <a class="button primary backend-report-link" href="/output/pdf/does-the-con-side-have-an-inherent-advantage.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Does the CON Side Have an Inherent Advantage?”</a>
                 <small>September 4 edition. Includes position reversals, balanced orientation groups, same-person comparisons, uncertainty, a worked composition example, and separate proposed tests of label bias and argumentative burden.</small>
               </article>
 
@@ -2748,7 +2748,7 @@ function renderBackend() {
                     <dd>13 pages · 4 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Beyond the Fallacy Count”</a>
+                <a class="button primary backend-report-link" href="/output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Beyond the Fallacy Count”</a>
                 <small>September 4 edition of “Debates Are Usually Lost Without a Named Fallacy.” Includes the process-level reversal, all four winner/loser tag patterns, cumulative dimension deficits, source-linked cases, and a worked example of a changing archive majority.</small>
               </article>
                 </div>
@@ -2764,8 +2764,8 @@ function renderBackend() {
               <article class="backend-report-card">
                 <span>Paper six · Measurement audit</span>
                 <h4>Are All Slugfester Assessments on the Same Scale?</h4>
-                <p>The earlier 179 assessments average 81.32 points per side; the later 58 average 78.51, a 2.82-point difference. Among 51 speakers appearing in both processes, 45 score lower later. Dimension profiles also change, while fallacy-or-bias tags appear on 2.54% of earlier moves and 17.27% of later moves.</p>
-                <p>The audit explains why matching model and rubric labels do not prove scale comparability. It distinguishes verified arithmetic from correct judgment, shows why within-debate margins are better protected than cross-debate levels, and rejects an unsupported blanket score adjustment. The next major-model review should use shared benchmark debates and independent source review to test accuracy, fairness, repeatability, and scale changes.</p>
+                <p>The earlier 179 assessments average 81.32 points per side; the later 58 average 78.51, a 2.82-point difference. Among 51 people assessed in both groups, 45 score lower later. The six scoring areas also move together more closely later. A new graph shows an important clue: earlier clarity marks use just four different values, while later marks use 41.</p>
+                <p>The paper explains several possible reasons for these changes without claiming to have proved their cause. It proposes a practical next-assessment plan: shared test debates, clearer examples for each scoring area, mixed review batches, hidden old scores, repeated checks, and independent review of the source passages. It also explains why adding 2.82 points to every later score would not be a justified fix.</p>
                 <dl>
                   <div>
                     <dt>Coverage</dt>
@@ -2777,18 +2777,18 @@ function renderBackend() {
                   </div>
                   <div>
                     <dt>Length and figures</dt>
-                    <dd>13 pages · 5 figures</dd>
+                    <dd>17 pages · 6 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Are All Slugfester Assessments on the Same Scale?”</a>
-                <small>September 4 edition. Includes paired score-level comparisons, 51 shared speakers, dimension and correlation maps, annotation drift, arithmetic checks, and a concrete next-major-model review standard.</small>
+                <a class="button primary backend-report-link" href="/output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Are All Slugfester Assessments on the Same Scale?”</a>
+                <small>Plain-language September 4 edition. Includes six graphs, possible reasons why the marks move together, a check of which exact marks were used, and a detailed plan to reduce unfair early-versus-later differences in the next full assessment.</small>
               </article>
 
               <article class="backend-report-card">
                 <span>Paper seven · Ranking reliability and uncertainty</span>
                 <h4>Do Slugfester Rankings Measure Stable Performance?</h4>
-                <p>The 50 speakers meeting the three-appearance minimum show a repeatable broad pattern: among those with at least six appearances, random split-record rankings correlate at a median 0.86. But the median gap between adjacent displayed means is only 0.17 points—far smaller than ordinary appearance-to-appearance variation.</p>
-                <p>The typical 95% rank range spans 12 positions when observed scores are resampled, and 19 under a model that allows pooled performance variation. The paper explains those different assumptions, compares small and large samples, examines top-ten uncertainty and assessment-process exposure, and includes the complete 50-speaker table. Its recommendation is to preserve the useful broad signal while making counts, uncertainty, and context part of the ranking.</p>
+                <p>The broad speaker order holds up better than the exact places. Among people with at least six appearances, dividing their records into two random halves produces fairly similar rankings: their typical order-agreement score is 0.86 on a scale where +1 means the same order. A simple five-name illustration explains this measure, called Spearman rank correlation. The typical score gap between neighboring averages is only 0.17 points.</p>
+                <p><strong>Resampled ranks</strong> reuse each person's recorded scores. <strong>Model ranks</strong> also allow for the score variation seen across the wider group. Their typical range widths are 12 and 19 places. The paper explains each method, shows why neither guarantees a future rank, and walks through real rows for Joseph Schmid, Sean Carroll, and Matt Dillahunty before presenting all 50 eligible speakers. It also explains why the other speakers are not in that table.</p>
                 <dl>
                   <div>
                     <dt>Coverage</dt>
@@ -2800,11 +2800,11 @@ function renderBackend() {
                   </div>
                   <div>
                     <dt>Length and figures</dt>
-                    <dd>16 pages · 5 figures</dd>
+                    <dd>20 pages · 6 figures</dd>
                   </div>
                 </dl>
-                <a class="button primary backend-report-link" href="/output/pdf/do-slugfester-rankings-measure-stable-performance.pdf?v=20260904-astra253" type="application/pdf" target="_blank" rel="noopener">Read “Do Slugfester Rankings Measure Stable Performance?”</a>
-                <small>September 4 edition. Includes sample coverage, repeatability, split-record checks, paired and individual resampling, model rank ranges, top-ten inclusion, single-appearance influence, process sensitivity, and the full ranked field.</small>
+                <a class="button primary backend-report-link" href="/output/pdf/do-slugfester-rankings-measure-stable-performance.pdf?v=20260904-astra253-r2" type="application/pdf" target="_blank" rel="noopener">Read “Do Slugfester Rankings Measure Stable Performance?”</a>
+                <small>Plain-language September 4 edition. Includes six figures, an illustrated guide to rank correlation, clear definitions of every table column, three worked rows, and the complete 50-speaker table. Rank ranges describe calculations within this fixed group—not personal worth or guaranteed future performance.</small>
               </article>
                 </div>
               </section>

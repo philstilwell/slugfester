@@ -1,15 +1,18 @@
 # Publication validation
 
-September 4, 2026 edition. Source corpus: `76d006b377f79372edc86dd804840cbac4936221`.
+September 4, 2026 edition, plain-language revision. Source corpus: `76d006b377f79372edc86dd804840cbac4936221`.
 
 ## Outcome
 
-The seven rewritten PDFs contain 95 pages and 31 data figures. The manuscripts
-contain approximately 28,300 words, excluding generated contents and the full
+The seven rewritten PDFs contain 106 pages and 33 figures: 32 use recorded data
+or fitted models; one clearly labeled teaching diagram uses five invented names.
+The manuscripts contain 31,242 words, excluding generated contents and the full
 speaker-ranking appendix. Every paper identifies the edition date, the
 253-assessment archive, its own eligible sample, the main result, and limitations.
 This is a new analysis of existing scores, not a new model's judgment of the
-253 transcripts.
+253 transcripts. All seven conclusions use explicit numbered reasons followed
+by “Therefore.” Every figure has a plain-language reading key. Both rank-range
+columns are explained before the appendix table and through three real rows.
 
 ## Numerical and source checks
 
@@ -30,9 +33,16 @@ This is a new analysis of existing scores, not a new model's judgment of the
   the overall position gap. The unchanged original slogan rule covers 146
   debates; its newer score-based counterpart covers 187. The separate narrow
   sensitivity also contains 146 debates, but is not the same set.
-- The full ranked field contains 50 speakers and 334 appearances. Broader
-  repeatability calculations use 158 speakers and 474 appearances. Resampling
-  preserves the stated debate or speaker unit and fixed seeds.
+- The full ranked field contains 50 speakers and 334 appearances. The broader
+  eligible archive has 158 speakers and 474 appearances, but the repeatability
+  and rank models are fitted to the 50-speaker, 334-appearance ranked group.
+  Resampling preserves the stated debate or speaker unit and fixed seeds.
+- The new exact-score check confirms four observed earlier clarity values and
+  41 later values. Exactly 2,179 of 3,423 earlier moves receive task score 87
+  (63.7%). `figures.py` asserts these counts from the saved moves before plotting.
+  The observation does not establish why the score relationships changed.
+- The invented five-speaker examples produce Spearman values +1, +0.90, and −1,
+  checked directly with SciPy. They are never included in assessment counts.
 - All 22 distinct manuscript source links were inspected for valid local debate
   IDs or existing source-document paths where applicable. Brief Lennox
   quotations were checked against locked source excerpts with source times;
@@ -45,23 +55,29 @@ This is a new analysis of existing scores, not a new model's judgment of the
 
 ## PDF and visual checks
 
-All 95 final pages were rendered with Poppler and reviewed in seven contact
+All 106 final pages were rendered with Poppler and reviewed in seven contact
 sheets. Selected dense or repaired pages were also inspected at full-page
 resolution, including the weighted-gap waterfall, dimension correlations,
-speaker-role comparison, and rank-interval figure.
+speaker-role comparison, rank-interval figure, exact-score-frequency figure,
+Spearman teaching diagram, reader's guide, appendix explanations, and table.
 
-Repairs made during review included moving a small waterfall label outside its
-bar, separating the rank-interval legend from the final data row, keeping short
-tables together, adding or moving prose after figure-adjacent headings, and
-keeping each methods endnote together. Final contact sheets were regenerated
-from the current page counts so obsolete render files could not masquerade as
-extra pages.
+This revision adds larger caption text, a separate reading key under every
+figure, a six-area name key where relevant, solid/dashed rank ranges, and an
+explicit first-place tick. Distribution plots separate ties into a gray bar.
+The speaker-role plot uses equal-sized dots to remove an unnecessary size code.
+Review caught reader-guide paragraphs spilling onto mostly empty pages; tighter
+contents spacing repaired those breaks without shrinking the text. The complete
+ranking table now starts on a fresh page and repeats its headers. Final contact
+sheets use current page counts so obsolete render files cannot appear as extras.
 
-The automated final checks confirm embedded fonts in all seven PDFs and all 31
+The automated final checks confirm embedded fonts in all seven PDFs and all 33
 vector figure PDFs, no extracted text outside the page boundaries, valid page
 counts, working internal/external PDF link annotations, and no missing-character
 replacement glyphs or unresolved manuscript placeholders. All figures label
 their populations, score units or percentages, and the meaning of intervals.
+The verifier asserts that all 33 reading keys are present and each PDF contains
+exactly as many printed reading-key headings as figures. It also checks that
+each paper has at least two explicit “Therefore” conclusions.
 Colors supplement labels rather than replace them.
 
 The machine-readable `qa-results.json` deliberately describes its own checks
@@ -84,10 +100,9 @@ establish screen-reader reading order or the objective accuracy of judgments.
 - Backend descriptions, lengths, figure counts, title metadata, and PDF cache
   versions were updated. Paper five's descriptive title is now *Beyond the
   Fallacy Count*, while its stable existing download filename remains intact.
-- The first browser run overlapped regeneration of static pages and one route
-  was briefly absent. The completed generation was then checked by a fresh
-  full run; all 52 tests passed. This was a local test-timing issue, not an
-  unresolved production error.
+- The full 52-test run for this revision passed after static page generation
+  finished. Download cache keys identify revision 2, and the card lengths are
+  synchronized from the PDF manifest rather than maintained separately.
 
 ## Interpretation limits retained
 
