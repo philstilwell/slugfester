@@ -130,7 +130,7 @@ function fallbackMarkup(seo, summary) {
     ).values()
   ].slice(0, 25);
 
-  return `<main class="seo-fallback" id="main-content">
+  return `<main class="seo-fallback" id="main-content" data-initial-path="${escapeHtml(seo.canonicalPath || "")}">
       <p class="eyebrow">${escapeHtml(SITE_NAME)}</p>
       <h1>${escapeHtml(fallbackHeading(seo))}</h1>
       <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>${seo.biography ? `\n      ${renderBiography({ name: seo.heading }, seo.biography, 2)}` : ""}

@@ -1,6 +1,6 @@
 # Substantive initial page content
 
-The page generator includes readable HTML before JavaScript runs. This is ordinary visible content for everyone, not crawler-only text or hidden search keywords. The interactive application replaces it after loading; no-JavaScript readers retain it.
+The page generator includes readable HTML before JavaScript runs. This is ordinary visible content for everyone, not crawler-only text or hidden search keywords. The interactive application replaces it after loading; no-JavaScript readers retain it. On matching initial routes, the summaries also remain visible during data loading and after a failed data request, with a retry message in the latter case. Internal navigation still shows the normal loading state rather than retaining the previous page's summary.
 
 - Debate pages: question, source and scoring caveats, original video link, all published overall strengths and weaknesses, and every section's scores with one representative move and its critique per side. Excerpts are explicitly labeled; this is not the complete interactive scorecard.
 - Profiles: sourced biography, eligible one-on-one average, summaries of linked records, and separately labeled excluded appearances.
