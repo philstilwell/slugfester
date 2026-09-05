@@ -37,8 +37,9 @@ for (const route of [
   "/corrections/"
 ]) {
   test(`fits a narrow phone viewport: ${route}`, async ({ page }) => {
-    await page.setViewportSize({ width: 390, height: 844 });
+    await page.setViewportSize({ width: route === "/" ? 320 : 390, height: 844 });
     await openRenderedPage(page, route);
+    if (route === "/") await page.locator(".debate-card").first().scrollIntoViewIfNeeded();
     const widths = await page.evaluate(() => ({
       client: document.documentElement.clientWidth,
       scroll: document.documentElement.scrollWidth
@@ -113,7 +114,9 @@ test("applies the generated content security policy without blocking site code",
 });
 
 test("clearly limits the catalogue sample and provides a valid debate recommendation form", async ({ page }) => {
-  await openRenderedPage(page, "/backend/");
+  await openRenderedPage(page, "/");
+  await page.getByRole("navigation", { name: "Primary", exact: true })
+    .getByRole("link", { name: "Backend" }).click();
 
   await expect(page.locator(".backend-selection-copy")).toContainText(
     "not a random or representative sample"
@@ -133,12 +136,29 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
     .getAttribute("content");
   expect(backendPolicy).toContain("form-action 'self' https://formsubmit.co");
 
+  let submitted;
+  await page.route("https://formsubmit.co/**", async (route) => {
+    submitted = route.request().postDataJSON();
+    await route.fulfill({
+      contentType: "text/html",
+      body: "<h1>Submission intercepted</h1>"
+    });
+  });
+  await form.locator("input[name='debate_url']").fill("https://www.youtube.com/watch?v=audit-only");
+  await form.locator("input[name='email']").fill("audit@example.com");
+  await form.getByRole("button", { name: "Send recommendation" }).click();
+  await expect(page.getByRole("heading", { name: "Submission intercepted" })).toBeVisible();
+  expect(submitted).toMatchObject({
+    debate_url: "https://www.youtube.com/watch?v=audit-only",
+    email: "audit@example.com"
+  });
+
   await openRenderedPage(page, "/");
   const landingPolicy = await page
     .locator("meta[http-equiv='Content-Security-Policy']")
     .getAttribute("content");
   expect(landingPolicy).toContain("form-action 'self'");
-  expect(landingPolicy).not.toContain("form-action 'self' https://formsubmit.co");
+  expect(landingPolicy).toContain("form-action 'self' https://formsubmit.co");
 });
 
 test("the rubric quality check offers six closed-by-default section examples", async ({ page }) => {

@@ -4686,6 +4686,8 @@ a {
 
 .debate-card {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
   gap: 14px;
   padding: 18px;
   box-shadow: 0 12px 32px rgba(27, 43, 41, 0.08);
@@ -6324,7 +6326,11 @@ a {
   }
 
   .debate-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card-topline {
+    flex-wrap: wrap;
   }
 
   .site-header {

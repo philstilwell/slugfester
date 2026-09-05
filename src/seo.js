@@ -727,13 +727,14 @@ export function backendSeo({ legacy = false } = {}) {
 export function correctionsSeo() {
   const description =
     "Report a possible Slugfester scorecard issue and review the public record of material scoring, attribution, and presentation corrections.";
+  const updatedDate = "2026-09-05";
 
   return {
     title: pageTitle("Corrections & scorecard revisions"),
     heading: "Corrections & revisions",
     description,
     canonicalPath: correctionsPath(),
-    lastmod: SITE_UPDATED_DATE,
+    lastmod: updatedDate,
     imagePath: DEFAULT_IMAGE,
     imageAlt: "Slugfester corrections and revision record.",
     type: "website",
@@ -746,7 +747,7 @@ export function correctionsSeo() {
         name: "Slugfester corrections and revisions",
         description,
         url: absoluteUrl(correctionsPath()),
-        dateModified: seoDateTime(SITE_UPDATED_DATE),
+        dateModified: seoDateTime(updatedDate),
         isPartOf: {
           "@id": WEBSITE_ID
         }

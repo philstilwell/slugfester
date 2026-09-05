@@ -42,12 +42,24 @@ import {
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
 const checkOnly = process.argv.includes("--check");
-const assetVersion = "20260904-astra-corpus-253-r2";
-const landingAssetVersion = "20260905-direct-slogan187-r1";
+// Browser modules must change address together when their source or data changes.
+// Normalize the generated query strings before hashing to keep regeneration stable.
+const appPath = join(root, "src/app.js");
+const appSource = await readFile(appPath, "utf8");
+const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
+const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
+const browserSources = await Promise.all([
+  "src/styles.css", "src/seo.js", "src/data/topics.js",
+  "src/data/interlocutors.js", "src/data/references.js"
+].map((path) => readFile(join(root, path), "utf8")));
+const assetVersion = createHash("sha256")
+  .update(JSON.stringify([normalizedApp, browserSources, debates, await readFile(fileURLToPath(import.meta.url), "utf8")]))
+  .digest("hex").slice(0, 16);
+const landingAssetVersion = assetVersion;
 const interlocutorAssetVersion = assetVersion;
 const rankingsAssetVersion = assetVersion;
 const debateAssetVersion = assetVersion;
-const backendAssetVersion = "20260905-direct-slogan187-r1";
+const backendAssetVersion = assetVersion;
 
 function escapeHtml(value = "") {
   return String(value)
@@ -62,7 +74,7 @@ function jsonScript(value) {
   return JSON.stringify(value).replaceAll("<", "\\u003c");
 }
 
-function contentSecurityPolicy(structuredData = "", allowExternalForm = false) {
+function contentSecurityPolicy(structuredData = "") {
   const structuredDataHash = structuredData
     ? ` 'sha256-${createHash("sha256").update(structuredData).digest("base64")}'`
     : "";
@@ -78,7 +90,7 @@ function contentSecurityPolicy(structuredData = "", allowExternalForm = false) {
     "object-src 'none'",
     "frame-src 'none'",
     "base-uri 'self'",
-    `form-action 'self'${allowExternalForm ? " https://formsubmit.co" : ""}`,
+    "form-action 'self' https://formsubmit.co",
     "upgrade-insecure-requests"
   ].join("; ");
 }
@@ -132,10 +144,9 @@ function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
   const robots = seo.robots || DEFAULT_ROBOTS;
   const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
   const structuredData = jsonScript(seo.jsonLd);
-  const securityPolicy = contentSecurityPolicy(
-    structuredData,
-    seo.canonicalPath === backendPath() || seo.canonicalPath === correctionsPath()
-  );
+  // Internal navigation keeps the original document policy, so every entry page
+  // must permit the approved recommendation and correction form destination.
+  const securityPolicy = contentSecurityPolicy(structuredData);
   const articleMeta = [
     seo.type === "article" && seo.articleSection
       ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`
@@ -325,6 +336,7 @@ function manifestJson() {
 }
 
 const pageOutputs = new Map();
+pageOutputs.set(appPath, appSource.replace(browserImportVersions, (_, prefix) => `${prefix}${assetVersion}`));
 const sitemapUrls = [];
 const latest = latestDate();
 
