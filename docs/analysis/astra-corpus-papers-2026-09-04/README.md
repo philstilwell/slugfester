@@ -6,6 +6,16 @@ The user requested substantial rewrites of all seven Backend PDFs using the
 The analysis and writing are new. The source debates have **not** been freshly
 reassessed by Astra, and no underlying public score or annotation is changed.
 
+The **plain-language revision** keeps that same frozen evidence. All seven papers
+now have numbered reasons leading to explicit conclusions and a reading key for
+every figure. Paper six adds a checked comparison of exact score values and a
+detailed plan for the next complete assessment. Paper seven adds an illustrated
+explanation of rank correlation, separate explanations of **Resampled ranks** and
+**Model ranks**, three real-row walkthroughs, and a guide to every appendix column.
+The seven PDFs total **106 pages, 33 figures, and 31,242 manuscript words**. One
+figure is explicitly a made-up five-speaker teaching example; the other 32 use
+the frozen assessment records or models fitted to them.
+
 ## Read the papers
 
 The stable PDFs are in [`output/pdf`](../../../output/pdf):
@@ -71,12 +81,18 @@ not be mistaken for identical membership.
 - `audit.ipynb`: executed, reader-facing numerical audit companion.
 - `figures.py`, `chart-contracts.json`, `figures/`: reproducible figures,
   denominators, actual plotted inputs, PNGs, and embedded-font vector PDFs.
+- `figure-reading-keys.json`: the plain-language legend and reading guide printed
+  beneath each of the 33 figures; every plotted mark and scale is explained.
+- `revision-checks.json`: independently inspectable exact-score frequencies and
+  the explicitly illustrative Spearman examples (+1, +0.90, and −1).
 - `manuscripts/01.md` through `07.md`: complete authored prose, with selected
   headline fields linked to `results.json` at typesetting time.
 - `build_papers.py`: shared ReportLab design, embedded Georgia/Arial fonts,
   linked contents, source links, and stable output filenames.
 - `verify_papers.py`, `qa-results.json`: numerical, font, source-link, page-boundary,
   and render checks. Visual review is documented in `validation.md`.
+- `sync_library.py`: updates the seven Backend cards' page/figure counts and
+  download cache versions from the finished publication manifest.
 
 ## Methods that matter
 
@@ -125,6 +141,8 @@ python docs/analysis/astra-corpus-papers-2026-09-04/figures.py
 python docs/analysis/astra-corpus-papers-2026-09-04/build_papers.py
 python docs/analysis/astra-corpus-papers-2026-09-04/verify_papers.py
 python docs/analysis/astra-corpus-papers-2026-09-04/build_audit_notebook.py
+python docs/analysis/astra-corpus-papers-2026-09-04/sync_library.py
+npm run seo
 ```
 
 Run against the frozen input revision or verify the source-manifest hashes
@@ -133,7 +151,8 @@ it is not a silently self-updating report. New corpus growth belongs to a new
 version with reviewed classifications and prose. Old source analyses remain
 under their September 1 directories, and earlier PDF versions remain in Git.
 
-No paid image-generation service was used. Graphics are actual data figures,
-not decorative synthetic evidence. All seven PDFs embed every declared font.
+No paid image-generation service was used. The five-speaker teaching diagram is
+clearly labeled as invented, not presented as evidence. All other figures use
+the saved analysis. All seven PDFs embed every declared font.
 The intended substantive refresh is the next major GPT-model transition;
 corrections remain possible before then. No recurring job was created.

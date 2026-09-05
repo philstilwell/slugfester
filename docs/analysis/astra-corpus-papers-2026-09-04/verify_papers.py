@@ -21,7 +21,10 @@ for entry in SOURCE['files']:
 for entry in PUB:
     assert hashlib.sha256((ROOT/entry['path']).read_bytes()).hexdigest()==entry['sha256'],entry['path']
 vector_figures=list((HERE/'figures').glob('*.pdf'))
-assert len(vector_figures)==31
+assert len(vector_figures)==33
+charts=json.loads((HERE/'chart-contracts.json').read_text())
+assert len(charts)==33 and all(c.get('reading_key') for c in charts)
+assert sum(p['figures'] for p in PUB)==33
 for figure in vector_figures:
     fonts=subprocess.check_output(['pdffonts',str(figure)],text=True)
     for line in fonts.splitlines()[2:]:
@@ -62,6 +65,11 @@ def inspect(pub):
     assert len(pdf.pages)==pub['pages']
     assert 'September 4, 2026' in text and '253' in text
     assert 'Executive summary' in text and 'Methods and sources' in text
+    assert text.count('How to read this graph.')==pub['figures']
+    assert text.count('Therefore:')>=2
+    if pub['id']==7:
+        for expected in ['Resampled ranks','Model ranks','Spearman','Sean Carroll','Joseph Schmid','Matt Dillahunty']:
+            assert expected in text
     assert '\ufffd' not in text and '{{' not in text
     fonts=subprocess.check_output(['pdffonts',str(path)],text=True)
     for line in fonts.splitlines()[2:]:

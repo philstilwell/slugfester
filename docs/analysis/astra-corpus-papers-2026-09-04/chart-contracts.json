@@ -195,34 +195,51 @@
         11
       ],
       "bins": [
-        -20,
-        -18,
-        -16,
-        -14,
-        -12,
-        -10,
-        -8,
-        -6,
-        -4,
-        -2,
-        0,
-        2,
-        4,
-        6,
-        8,
-        10,
-        12,
-        14,
-        16,
-        18,
-        20,
-        22,
-        24,
-        26,
-        28
+        -15.5,
+        -14.5,
+        -13.5,
+        -12.5,
+        -11.5,
+        -10.5,
+        -9.5,
+        -8.5,
+        -7.5,
+        -6.5,
+        -5.5,
+        -4.5,
+        -3.5,
+        -2.5,
+        -1.5,
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5
       ]
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each bar counts debates with that score difference. Teal, right of zero: non-theist higher. Rust, left of zero: theist higher. Gray at zero: ties. The dashed line is the average, not a winning threshold. One horizontal step is one score point; height is a debate count.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p1-decomposition",
@@ -241,7 +258,8 @@
       "rounding": -0.03066008065760781,
       "adjustment": 0.0
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each teal segment adds one scoring area's weighted contribution to the gap. The tiny rust segment subtracts the rounding difference. The dark final bar is the total, not another contribution. A segment's length, not where it starts, shows its contribution. These parts add to the score; they do not identify separate causes.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p1-dimensions",
@@ -328,7 +346,8 @@
         "negative": 30
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each dot is an average non-theist-minus-theist difference. The line holds the middle 95% of averages from 20,000 repeated draws of whole debates, with replacement. Zero means equal averages. Right of zero favors the non-theist side. The units are each area's own 0–100 points, before weighting the areas together.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p1-checks",
@@ -441,7 +460,8 @@
         "negative": 16
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each dot is an average gap for a different selection of debates. The horizontal line holds the middle 95% of averages from repeated draws of that selection. Parentheses give debate counts. Right of zero favors the non-theist side. Overlapping rows reuse many of the same debates; they are not independent tests.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p1-thresholds",
@@ -501,7 +521,8 @@
         }
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Rust bars are theist; teal bars are non-theist. Each percentage is the average share of a side's moves below the stated support score, giving every debate equal influence. A move below 60 is also below 70 and 80, so do not add the rows. The horizontal scale is percent, not score points.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p2-topics",
@@ -1110,7 +1131,8 @@
         "highest_resample_share": 0.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Dots show average gaps; lines hold the middle 95% of averages from 20,000 repeated draws within each topic. Parentheses count debates. Right of zero favors non-theist scores. An interval shows sensitivity to the recorded debates selected again, not every possible judging error. Overlap warns against treating nearby topic places as settled.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p2-directions",
@@ -1719,7 +1741,8 @@
         "highest_resample_share": 0.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Teal counts non-theist higher; light gray counts ties; rust counts theist higher. The numbers inside a bar add to that topic's debate total. Segment length is a count, not the size of a score advantage. Every debate appears in one topic only.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p2-map",
@@ -2338,7 +2361,8 @@
         "calibrationCharity"
       ]
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each cell shows how many overall score points one scoring area contributes to that topic's average gap. The site's weights are already applied. Darker blue means a larger positive contribution; the color key uses the same scale for every cell. Rounding is omitted. These are not six independent causes.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p2-order",
@@ -2947,7 +2971,8 @@
         "highest_resample_share": 0.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each bar is the percentage of 20,000 repeated calculations in which that topic has the largest average gap. Each calculation draws again from the observed debates within every topic. The bars describe those calculations, not the chance that a topic is truly hardest in the wider world.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p2-moves",
@@ -3300,7 +3325,8 @@
         }
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Dots show average support-score gaps; lines hold the middle 95% of averages from repeated draws of eligible debates. Each row requires that both sides have that kind of move. Parentheses count those debates. Right of zero favors non-theist support scores. The rows overlap and should not be added.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p3-components",
@@ -3437,7 +3463,8 @@
         "pooled_ratio": 3.621621621621621
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Rust represents 1,393 theist moves; teal represents 1,407 non-theist moves. Bars show the percentage meeting each condition. The final row requires all three at once. Earlier rows overlap and cannot be added. These flags are warning signs, not a verified count of unfalsifiable slogans.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p3-checks",
@@ -3511,7 +3538,8 @@
         "negative": 16
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "A rust dot is the average theist-minus-non-theist difference in flagged shares, calculated within debates. Lines hold the middle 95% of averages from repeated draws. Parentheses count debates. Right of zero means a higher theist rate. A line crossing zero allows either direction. Ten percentage points could mean 30% minus 20%; it is not a 10% relative increase.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p3-proxy",
@@ -3577,7 +3605,8 @@
         }
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Rust dots show the average difference in the two sides' flagged shares; lines hold the middle 95% from repeated draws of debates. The rule requires support below 70, clarity below 80, and care below 80 together. Right of zero means a higher theist rate. This score-based rule differs from the original detailed-findings rule.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p4-distribution",
@@ -3825,34 +3854,51 @@
         11
       ],
       "bins": [
-        -20,
-        -18,
-        -16,
-        -14,
-        -12,
-        -10,
-        -8,
-        -6,
-        -4,
-        -2,
-        0,
-        2,
-        4,
-        6,
-        8,
-        10,
-        12,
-        14,
-        16,
-        18,
-        20,
-        22,
-        24,
-        26,
-        28
+        -15.5,
+        -14.5,
+        -13.5,
+        -12.5,
+        -11.5,
+        -10.5,
+        -9.5,
+        -8.5,
+        -7.5,
+        -6.5,
+        -5.5,
+        -4.5,
+        -3.5,
+        -2.5,
+        -1.5,
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5
       ]
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each bar counts debates with that CON-minus-PRO difference. Teal to the right means CON higher; rust to the left means PRO higher; gray at zero means a tie. The dashed line is the 4.70-point average. The labels PRO and CON identify debate roles, not religious belief.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p4-strata",
@@ -3926,7 +3972,8 @@
         "negative": 15
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Dots show average CON-minus-PRO gaps; lines hold the middle 95% from repeated draws of whole debates. Parentheses count debates. Teal dots right of zero favor CON; the rust dot left of zero favors PRO. The groups do not overlap. They change the people and claims as well as who occupies each role.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p4-estimates",
@@ -4042,12 +4089,13 @@
         ]
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Dots show four ways of comparing CON with PRO. Lines hold the middle 95% from repeated draws of debates or speakers, as appropriate. Right of zero favors CON; a line crossing zero allows no average advantage. Rows answer different questions and reuse records; do not average or add them.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p4-speakers",
     "title": "31 speakers observed in both roles",
-    "scope": "Same people, different debates; bubble area increases with appearances",
+    "scope": "31 people, different debates; one equal-sized dot per person",
     "unit": "Mean score points",
     "source": [
       {
@@ -4361,7 +4409,8 @@
         "weight": 0.5
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "One equal-sized teal dot represents one person. Left-to-right position is their average as PRO; bottom-to-top position is their average as CON. The dashed diagonal marks equal averages. Above it means higher as CON; below it means higher as PRO. Both axes enlarge the 67–91 part of the 0–100 scale.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p5-cohorts",
@@ -4780,7 +4829,8 @@
         }
       ]
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "The dark bar combines the archive; teal is earlier, rust later, and gray other formats. Each printed fraction counts untagged lower-scoring sides over all lower-scoring sides in that group. Bar length is the percentage. Ten ties are excluded. The overall bar contains the other groups and is not an additional group.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p5-dimensions",
@@ -4878,7 +4928,8 @@
       },
       "five_or_six": 110
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each bar counts lower-scoring sides with no named-fallacy tag that trail in exactly the stated number of scoring areas. For example, '5 of 6' means five area averages are lower than the opponent's. The bars sum to 147. No eligible case trails in only zero or one area.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p5-gaps",
@@ -4965,7 +5016,8 @@
         "negative": 21
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each dot is the average higher-side-minus-lower-side difference among 147 comparable untagged losses. Lines hold the middle 95% from repeated draws of those debates. Right of zero means a deficit for the lower side. These are area-score points before weighting, not parts that can be added to the overall gap.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p5-labels",
@@ -4980,7 +5032,8 @@
       "Special pleading": 29,
       "Red herring": 82
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Bar length counts accepted public uses of each named-fallacy label. One move can have more than one label: 354 label uses occur on 345 moves. Teal has no side or belief meaning in this chart. Missing labels do not show that no other errors occurred.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p6-levels",
@@ -6411,7 +6464,8 @@
         "margin": 11
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each small dot is one debate's average of its two side scores. Teal is earlier; rust is later. Dark diamonds mark the group averages. Small vertical offsets only separate overlapping dots; they carry no score information. The horizontal axis enlarges the observed part of the 0–100 score scale.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p6-bridge",
@@ -6828,7 +6882,8 @@
         "gap": -5.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "One teal dot represents one of the 51 people assessed in both groups. The horizontal position is their earlier average; the vertical position is their later average. The dashed line means equal averages. Below it means lower later. Both axes enlarge scores 62–94. These are different debates by the same people, not repeated judgments of one debate.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p6-dimensions",
@@ -6853,7 +6908,8 @@
         "calibrationCharity": 78.47058061526594
       }
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each rust bar is the later average minus the earlier average, giving every debate equal influence. Left of zero means lower later scores. The six areas use their own 0–100 scales here; the bars are not weighted parts of the overall 2.82-point change. There are 179 earlier and 58 later debates.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p6-correlation",
@@ -6962,7 +7018,8 @@
         ]
       ]
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Match a row to a column to compare two scoring areas. Blue near +1 means they rise and fall together; red near −1 means opposite movement; pale near zero means little straight-line relationship. Both panels use one color scale. Diagonal 1.0 values compare an area with itself and are automatic. These are score relationships, not accuracy percentages.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p6-tags",
@@ -6973,7 +7030,151 @@
       "earlier": 2.5416301489921125,
       "later": 17.267348036578806
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Teal shows earlier moves and rust later moves. Each fraction is tagged moves divided by all moves in that group. A move counts once if it has any fallacy or bias tag, even if it has several. Bar length shows percentage, allowing the groups' different totals to be compared.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
+  },
+  {
+    "id": "p6-score-use",
+    "title": "Earlier marks cluster at a few exact values",
+    "scope": "3,423 earlier moves and 1,859 later moves; same frozen source records",
+    "unit": "Percentage of moves at each score",
+    "source": {
+      "precisionClarity": {
+        "earlier": {
+          "n": 3423,
+          "distinct": 4,
+          "counts": {
+            "60": 66,
+            "75": 1342,
+            "85": 402,
+            "95": 1613
+          }
+        },
+        "later": {
+          "n": 1859,
+          "distinct": 41,
+          "counts": {
+            "56": 1,
+            "57": 1,
+            "58": 3,
+            "59": 1,
+            "60": 1,
+            "61": 1,
+            "62": 4,
+            "63": 5,
+            "64": 1,
+            "65": 8,
+            "66": 10,
+            "67": 16,
+            "68": 11,
+            "69": 18,
+            "70": 20,
+            "71": 26,
+            "72": 34,
+            "73": 27,
+            "74": 42,
+            "75": 48,
+            "76": 62,
+            "77": 81,
+            "78": 65,
+            "79": 112,
+            "80": 92,
+            "81": 93,
+            "82": 114,
+            "83": 138,
+            "84": 133,
+            "85": 113,
+            "86": 111,
+            "87": 132,
+            "88": 104,
+            "89": 89,
+            "90": 45,
+            "91": 41,
+            "92": 36,
+            "93": 9,
+            "94": 8,
+            "95": 2,
+            "96": 1
+          }
+        }
+      },
+      "relevanceBurden": {
+        "earlier": {
+          "n": 3423,
+          "distinct": 19,
+          "counts": {
+            "21": 1,
+            "22": 2,
+            "23": 2,
+            "25": 1,
+            "67": 6,
+            "68": 147,
+            "69": 523,
+            "70": 6,
+            "71": 10,
+            "72": 2,
+            "73": 1,
+            "84": 1,
+            "85": 4,
+            "86": 188,
+            "87": 2179,
+            "88": 39,
+            "89": 9,
+            "99": 59,
+            "100": 243
+          }
+        },
+        "later": {
+          "n": 1859,
+          "distinct": 41,
+          "counts": {
+            "49": 1,
+            "52": 1,
+            "55": 3,
+            "57": 3,
+            "58": 1,
+            "60": 4,
+            "62": 2,
+            "63": 6,
+            "64": 4,
+            "65": 8,
+            "66": 13,
+            "67": 14,
+            "68": 25,
+            "69": 22,
+            "70": 43,
+            "71": 29,
+            "72": 55,
+            "73": 47,
+            "74": 41,
+            "75": 48,
+            "76": 69,
+            "77": 52,
+            "78": 88,
+            "79": 84,
+            "80": 86,
+            "81": 83,
+            "82": 92,
+            "83": 118,
+            "84": 128,
+            "85": 120,
+            "86": 114,
+            "87": 103,
+            "88": 103,
+            "89": 76,
+            "90": 73,
+            "91": 51,
+            "92": 22,
+            "93": 14,
+            "94": 9,
+            "95": 3,
+            "97": 1
+          }
+        }
+      }
+    },
+    "reading_key": "Teal bars show earlier moves; rust bars show later moves. Each panel counts the share of moves receiving each exact score, on the full 0–100 scale. The percentage scale is identical in both panels. A tall isolated bar means many moves received that same mark; more distinct marks do not automatically mean more accurate judging.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p7-samples",
@@ -6994,7 +7195,8 @@
       "2": 32,
       "3": 11
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each bar counts people with that many eligible appearances. Gray groups fall below the three-appearance minimum; teal groups enter the ranking. All bars together contain 158 people; the teal bars contain 50. A gray bar does not mean poor performance—it means too few appearances for the default table.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p7-repeatability",
@@ -7012,12 +7214,13 @@
       },
       "within_sd": 3.053779223633285
     },
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "The teal curve is a model's expected stability as more appearances are averaged, not observed improvement over time. Dots label examples at 1, 3, 5, and 10 appearances. The 0–1 scale measures the share of modeled variation linked to lasting differences between speakers. It is not the probability that the AI is correct.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p7-ranges",
-    "title": "Current leaders and their plausible rank ranges",
-    "scope": "Top 15 current means; 95% ranges from different uncertainty models; dots show display order",
+    "title": "Current leaders: two ways to check their places",
+    "scope": "15 highest recorded averages; calculations include all 50 eligible speakers",
     "unit": "Rank positions",
     "source": [
       {
@@ -7501,7 +7704,8 @@
         "generation_centered_rank": 18.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Dark dots mark the current displayed place. Solid teal lines are Resampled ranks, made by drawing again from recorded scores. Dashed rust lines are Model ranks, also using score variation across the wider group. Lines keep the middle 95% of calculated ranks. Parentheses count appearances. First place is left; all calculations use the full fixed group of 50.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p7-counts-width",
@@ -9110,13 +9314,14 @@
         "generation_centered_rank": 48.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each teal dot is one of the 50 ranked speakers. Horizontal position counts appearances. Vertical position is the upper Model ranks endpoint minus the lower endpoint; a range of 2–9 has width 7. Lower dots have narrower calculated ranges, not lower scores. Overlapping dots may hide one another.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   },
   {
     "id": "p7-top10",
-    "title": "Top-ten membership in the pooled-variation model",
-    "scope": "20,000 draws of latent means; fixed 50-speaker field; model-conditional probabilities",
-    "unit": "Share of model draws in top ten (%)",
+    "title": "How often does each person reach the model top ten?",
+    "scope": "20,000 model calculations; fixed group of 50; current top 12 shown",
+    "unit": "Share of model calculations in top ten (%)",
     "source": [
       {
         "speaker": "Joseph Schmid",
@@ -9503,6 +9708,53 @@
         "generation_centered_rank": 16.0
       }
     ],
-    "design": "Two semantic hues (teal, rust) plus neutral ink. Direct labels. Zero on all bars. Intervals are 95% resampling ranges, not measurement-error bounds."
+    "reading_key": "Each bar shows the share of 20,000 model calculations putting that speaker in the top ten of the same 50-person group. For example, 80% means about 16,000 calculations. The chart shows the current top 12 averages, not the whole field. These are not future win probabilities or a measure of the AI's accuracy.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
+  },
+  {
+    "id": "p7-order-example",
+    "title": "How similar are two orders?",
+    "scope": "Illustration only: five invented speakers, not assessment data",
+    "unit": "Spearman rank correlation from -1 to +1",
+    "source": {
+      "illustrative": true,
+      "examples": [
+        [
+          "Same order",
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          1.0
+        ],
+        [
+          "B and C swap",
+          [
+            1,
+            3,
+            2,
+            4,
+            5
+          ],
+          0.9
+        ],
+        [
+          "Reverse order",
+          [
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          -1.0
+        ]
+      ]
+    },
+    "reading_key": "Each panel compares two lists of five made-up speakers, A through E. First place is at the top. Follow a letter's line from the first list to the second; crossing lines show changes of order. Teal is B and rust is C only to highlight the swap. The agreement number compares the whole order, not the percentage who kept their place.",
+    "design": "Direct labels and an explicit reading key explain all marks and units. Bars start at zero; focused scatter axes are disclosed. Range meanings are chart-specific."
   }
 ]

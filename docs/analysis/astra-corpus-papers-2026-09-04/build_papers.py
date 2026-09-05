@@ -32,7 +32,8 @@ S={
  'methods':ParagraphStyle('methods',fontName='Sans',fontSize=9.4,leading=13.1,textColor=NAVY,spaceAfter=7,allowWidows=0,allowOrphans=0),
  'h1':ParagraphStyle('h1',fontName='Sans-Bold',fontSize=19,leading=23,textColor=NAVY,spaceBefore=18,spaceAfter=11,keepWithNext=True),
  'h2':ParagraphStyle('h2',fontName='Sans-Bold',fontSize=12.7,leading=17,textColor=TEAL,spaceBefore=13,spaceAfter=6,keepWithNext=True),
- 'caption':ParagraphStyle('caption',fontName='Sans',fontSize=8.4,leading=11.9,textColor=GREY,spaceBefore=5,spaceAfter=13),
+ 'caption':ParagraphStyle('caption',fontName='Sans',fontSize=9,leading=12.6,textColor=GREY,spaceBefore=5,spaceAfter=6),
+ 'reading':ParagraphStyle('reading',fontName='Sans',fontSize=9,leading=12.6,textColor=NAVY,spaceAfter=13),
  'small':ParagraphStyle('small',fontName='Sans',fontSize=8.2,leading=11.5,textColor=NAVY,spaceAfter=4),
  'table':ParagraphStyle('table',fontName='Sans',fontSize=8.8,leading=12,textColor=NAVY),
  'th':ParagraphStyle('th',fontName='Sans-Bold',fontSize=8.4,leading=11.5,textColor=colors.white),
@@ -70,6 +71,33 @@ META=[
   'finding':'The leaderboard contains a repeatable signal, but its precision is easy to overread. Typical 95% rank ranges span 12 positions under observed-score resampling and 19 under a pooled-variation model.'},
 ]
 
+# Reader-friendly revision; source scores and report date remain frozen.
+REVISED={
+ 1:{'subtitle':'Where the arguments lack support, and what that tells us about the proposed link between faith and public debate.',
+    'stats':[('6.34','average non-theist advantage\nin score points out of 100'),('187','relevant debate comparisons\nfrom 253 assessments'),('4,086','assessed claims and replies\nin those comparisons')],
+    'finding':'The difference persists across several checks. Its largest gap is in support for claims. Support, consistent reasoning, and answers to objections together make up about three-quarters of the overall score gap.'},
+ 2:{'subtitle':'Which subjects show the largest gaps, and which steps in the arguments still need a reason.',
+    'stats':[('8.27','largest topic average gap:\nreligion, culture, and meaning'),('3.53','smallest topic average gap:\nresurrection debates'),('187','debates divided into eight\nclearly defined topic groups')],
+    'finding':'Religion, culture, and meaning has the largest recorded gap, but the exact topic order is uncertain. The more useful question is what supports the step from a comforting belief or possible explanation to a claim that it is true.'},
+ 3:{'subtitle':'Weak support, overstated confidence, and claims protected from objection—with examples from John Lennox and others.',
+    'finding':'The three measured warning signs occur together much more often on the theist side. They are not a direct count of unfalsifiable slogans and do not prove that emotional reinforcement caused the difference.'},
+ 4:{'subtitle':'Why higher scores for CON do not, by themselves, show that the role gives a built-in advantage.',
+    'stats':[('4.70','average CON advantage\nin 237 comparable debates'),('0.80','same-person weighted gap;\nits range includes zero'),('31','people with assessed debates\non both PRO and CON sides')],
+    'finding':'The full role gap mixes together the people and claims assigned to each side. Comparing the same people leaves a much smaller average difference. A modest CON advantage remains possible and deserves a fair test.'},
+ 5:{'subtitle':'What named mistakes can tell us, what a missing label cannot tell us, and why the rest of the argument matters.',
+    'stats':[('61.7%','lower-scoring sides with\nno named-fallacy tag overall'),('14.5%','the same rate in the\nlater assessment group'),('74.8%','comparable untagged losses\nbehind in five or six areas')],
+    'finding':'Most lower-scoring sides have no fallacy label in the combined archive, but the opposite is true in later assessments. The lasting lesson is that a label alone does not settle how well a side has argued.'},
+ 6:{'subtitle':'Why earlier and later marks need careful comparison, and a practical plan for the next full assessment.',
+    'stats':[('2.82','points lower on average\nin later assessments'),('45 / 51','people whose average score\nis lower in later records'),('4 vs 41','different clarity marks used\nin earlier vs later moves')],
+    'finding':'Later scores are lower on average, and the six scoring areas move together more closely. Shared test debates and clearer scoring examples can help the next review separate genuine differences from changes in judging.'},
+ 7:{'subtitle':'How much of the order holds up, why nearby places can change, and how to read both kinds of rank range.',
+    'stats':[('0.86','typical order agreement\nbetween random halves'),('0.17','typical score-point gap\nbetween neighboring averages'),('50','speakers with at least\nthree eligible appearances')],
+    'finding':'The broad order repeats better than the exact places. Typical rank ranges have a width of 12 places when recorded scores are drawn again, and 19 when a model also allows the score variation seen across the wider group.'},
+}
+for meta in META:meta.update(REVISED[meta['id']])
+AREA_KEY='Area key: Logic = consistent reasoning; Support = evidence and reasons; Replies = answering the other side; Task = staying on the question and doing what the claim requires; Clarity = clear, exact wording; Care = fitting confidence to support and treating the other side fairly.'
+AREA_FIGURES={'p1-decomposition','p1-dimensions','p2-map','p5-gaps','p6-dimensions','p6-correlation'}
+
 def inline(t):
     t=t.replace('\u2011','-').replace('\u2013','-').replace('\u2014',' - ')
     t=html.escape(t,quote=False)
@@ -86,7 +114,7 @@ class Cover(Flowable):
         c.setFillColor(TEAL);c.rect(0,642,32,4,stroke=0,fill=1)
         c.setFont('Sans-Bold',9);c.drawString(43,640,'SLUGFESTER  /  CORPUS RESEARCH')
         c.setFillColor(LIGHT);c.setFont('Sans-Bold',78);c.drawRightString(CW,582,f"{m['id']:02d}")
-        c.setFillColor(GREY);c.setFont('Sans',9);c.drawString(0,593,'ASTRA-ERA RESEARCH EDITION')
+        c.setFillColor(GREY);c.setFont('Sans',9);c.drawString(0,593,'ASTRA-ERA EDITION / PLAIN-LANGUAGE REVISION')
         title=Paragraph(inline(m['title']),ParagraphStyle('coverTitle',fontName='Body-Bold',fontSize=32,leading=37,textColor=NAVY))
         tw,th=title.wrap(CW-30,180);title.drawOn(c,0,555-th)
         sub=Paragraph(inline(m['subtitle']),ParagraphStyle('coverSub',fontName='Sans',fontSize=13,leading=19,textColor=GREY))
@@ -122,6 +150,7 @@ def table(rows):
     n=len(rows[0]); widths=[CW/n]*n
     if n==2:widths=[CW*.32,CW*.68]
     elif n>=4:widths=[CW*.35]+[CW*.65/(n-1)]*(n-1)
+    if n==6 and rows[0][0]=='Place':widths=[42,129,76,65,97,97]
     body=[[Paragraph(inline(x),S['th' if i==0 else 'table']) for x in row] for i,row in enumerate(rows)]
     t=Table(body,colWidths=widths,repeatRows=1,hAlign='LEFT')
     t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),NAVY),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,PALE]),
@@ -144,13 +173,13 @@ def parse(meta,text):
         if not line:i+=1;continue
         if line=='[[contents]]':
             story+=[PageBreak(),Paragraph('Reader’s guide',S['h1'])]
-            toc=TableOfContents();toc.levelStyles=[ParagraphStyle('toc0',fontName='Sans',fontSize=10,leading=15.5,textColor=NAVY,spaceBefore=5,leftIndent=0,firstLineIndent=0,rightIndent=20)]
-            story+=[toc,Spacer(1,23),Paragraph('Reading the evidence',S['h2']),Paragraph('Start with the summary and figures for the main argument. The worked examples explain the statistical ideas; the final methods and sources show how the numbers can be checked. Counts and results refer to the frozen September 4 archive, not to later additions to the site.',S['body']),PageBreak()];i+=1;continue
+            toc=TableOfContents();toc.levelStyles=[ParagraphStyle('toc0',fontName='Sans',fontSize=10,leading=13.8,textColor=NAVY,spaceBefore=1.4,leftIndent=0,firstLineIndent=0,rightIndent=20)]
+            story+=[toc,Spacer(1,23),Paragraph('Reading the evidence',S['h2']),Paragraph('Start with the summary and graphs. Each graph has a reading key for its colors, marks, units, and limits. The conclusion gives numbered reasons leading to a stated finding. All results refer to the September 4 snapshot, not later additions to the site.',S['body']),Paragraph('An <b>average</b>, also called a mean, adds the values and divides by their number. A <b>middle value</b>, or median, is halfway through the sorted list. A <b>range from repeated draws</b> shows how the result changes when we draw again from existing records; it does not cover every possible judging mistake. The examples in the paper explain these ideas where they matter.',S['body']),PageBreak()];i+=1;continue
         if line=='[[pagebreak]]':story.append(PageBreak());i+=1;continue
         if line=='[[ranking_table]]':
-            rows=[['Speaker','Appearances','Mean','Resampled ranks','Model ranks']]
+            rows=[['Place','Speaker','Appearances','Average / 100','Resampled ranks','Model ranks']]
             for r in R['p7']['ranking']:
-                rows.append([r['speaker'],str(r['n']),f"{r['mean']:.2f}",f"{r['empirical_rank_ci'][0]:g}-{r['empirical_rank_ci'][1]:g}",f"{r['model_rank_ci'][0]:g}-{r['model_rank_ci'][1]:g}"])
+                rows.append([str(r['rank']),r['speaker'],str(r['n']),f"{r['mean']:.2f}",f"{r['empirical_rank_ci'][0]:g}-{r['empirical_rank_ci'][1]:g}",f"{r['model_rank_ci'][0]:g}-{r['model_rank_ci'][1]:g}"])
             story+=[table(rows),Spacer(1,10)];i+=1;continue
         if line.startswith('## '):
             in_methods=line[3:]=='Methods and sources'
@@ -160,8 +189,11 @@ def parse(meta,text):
         if m:
             key=m.group(2);fig_count+=1;img=Image(str(HERE/'figures'/f'{key}.png'))
             fac=min(CW/img.imageWidth,(400 if key=='p7-ranges' else 365)/img.imageHeight);img.drawWidth=img.imageWidth*fac;img.drawHeight=img.imageHeight*fac;img.hAlign='CENTER'
-            chart=CHARTS[key];cap=f'<b>Figure {fig_count}.</b> '+inline(m.group(1))+f'<br/><font size="7.6">Scope: {html.escape(chart["scope"])}.</font>'
-            story.append(KeepTogether([Spacer(1,5),img,Paragraph(cap,S['caption'])]));i+=1;continue
+            chart=CHARTS[key];cap=f'<b>Figure {fig_count}.</b> '+inline(m.group(1))
+            reading='<b>How to read this graph.</b> '+inline(chart['reading_key'])
+            if key in AREA_FIGURES:reading+='<br/>'+inline(AREA_KEY)
+            story.append(KeepTogether([Spacer(1,5),img,Paragraph(cap,S['caption']),Paragraph(reading,S['reading'])]));i+=1;continue
+        if line.startswith('!['):raise ValueError(f'Malformed figure directive: {line}')
         if line.startswith('> '):
             parts=[]
             while i<len(lines) and lines[i].strip().startswith('> '):parts.append(lines[i].strip()[2:]);i+=1
