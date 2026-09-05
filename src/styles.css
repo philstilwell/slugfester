@@ -343,9 +343,58 @@ a {
 .interlocutor-profile-page,
 .assessment-page,
 .corrections-page,
+.insights-page,
 .not-found {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
+}
+
+.insights-intro { padding: 48px 0 32px; }
+.insights-intro h1 { margin: 0; font-size: clamp(2.4rem, 5vw, 4.5rem); line-height: 1.05; }
+.insights-intro > p { max-width: 900px; }
+.insights-snapshot { border-left: 3px solid var(--gold); padding-left: 18px; color: var(--muted); }
+.insights-index { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; margin-top: 28px; }
+.insights-index a { padding: 9px 0; color: var(--blue); font-weight: 750; text-underline-offset: 4px; }
+.insights-index span { color: var(--gold-text); }
+.insight-story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 40px; padding: 44px 0; border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+.insight-copy h2 { margin: 0; font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.15; }
+.insight-finding { font-size: 1.15rem; font-weight: 750; }
+.insight-stat { display: grid; gap: 4px; padding: 16px 0; }
+.insight-stat strong { color: var(--gold-text); font-size: 2.25rem; line-height: 1.1; }
+.insight-stat span { color: var(--muted); font-size: 0.95rem; }
+.insight-limitation { color: #40524f; border-left: 3px solid var(--line); padding-left: 14px; }
+.insight-links { padding-left: 20px; }
+.insight-links li { margin: 12px 0; }
+.insight-links a, .insight-figure a, .assessment-guide a { color: var(--blue); text-underline-offset: 3px; }
+.insight-figure { margin: 0; min-width: 0; align-self: start; }
+.insight-figure h3 { margin: 0; font-size: 1.1rem; }
+.insight-figure > p, .insight-figure figcaption { color: #40524f; font-size: 0.95rem; }
+.insight-figure img { display: block; width: 100%; height: auto; margin: 20px 0; }
+.insight-figure > a { display: block; }
+.assessment-guide, .related-debates { padding: 30px 0; border-top: 1px solid var(--line); }
+.assessment-guide h2, .related-debates h2 { margin: 0 0 18px; font-size: clamp(1.7rem, 3vw, 2.6rem); line-height: 1.1; }
+.assessment-guide-summary { max-width: 960px; font-size: 1.15rem; }
+.assessment-guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 24px 0; }
+.assessment-guide-side { padding: 20px; border-left: 4px solid var(--teal); background: var(--surface); min-width: 0; color: var(--ink); }
+.assessment-guide-side.coral { border-left-color: var(--coral); }
+.assessment-guide-side h3 { margin-top: 0; font-size: 1.2rem; }
+.assessment-guide-side .eyebrow { font-size: 0.8rem; }
+.assessment-guide .source-note { color: var(--muted); font-size: 0.9rem; }
+.debate-section { scroll-margin-top: 24px; }
+.related-debate-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
+.related-debate-item { display: flex; flex-direction: column; min-width: 0; }
+.related-debate-item > h3 { margin: 0; color: var(--blue); font-size: 1rem; }
+.related-debate-reason { color: var(--muted); font-size: 0.95rem; }
+.related-debate-item .recent-assessment-card { margin-top: auto; min-width: 0; }
+@media (max-width: 900px) {
+  .insight-story { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .insight-figure { max-width: 760px; }
+  .related-debate-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  .insights-index, .assessment-guide-grid { grid-template-columns: minmax(0, 1fr); }
+  .insights-intro { padding-top: 32px; }
+  .assessment-guide-side { padding: 14px; }
 }
 
 .landing-panel {
@@ -404,6 +453,7 @@ a {
 }
 
 .landing-stats dt {
+  overflow-wrap: anywhere;
   color: var(--muted);
   font-size: 0.66rem;
   font-weight: 850;
@@ -412,6 +462,7 @@ a {
 }
 
 .landing-stats dd {
+  align-self: end;
   margin: 0;
   color: var(--ink);
   font-size: 1.34rem;

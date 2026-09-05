@@ -1,7 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=9bc35eb5ca2a0206";
-import { debateSummaries } from "./data/debate-summaries.js?v=9bc35eb5ca2a0206";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=9bc35eb5ca2a0206";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=9bc35eb5ca2a0206";
+import { topicCategoryDefinitions } from "./data/topics.js?v=45c179feff42d122";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=45c179feff42d122";
+import { debateSummaries } from "./data/debate-summaries.js?v=45c179feff42d122";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=45c179feff42d122";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=45c179feff42d122";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -14,6 +15,8 @@ import {
   absoluteUrl,
   backendPath,
   backendSeo,
+  insightsPath,
+  insightsSeo,
   correctionsPath,
   correctionsSeo,
   debateNumberLabel,
@@ -34,12 +37,14 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=9bc35eb5ca2a0206";
+} from "./seo.js?v=45c179feff42d122";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
 let debateAnalyticsPromise;
 let sectionScoreExtremesPromise;
+let insightsPromise;
+let insightsContent;
 let sectionScoreExtremes = { top: [], bottom: [] };
 const debateDetailPromises = new Map();
 const referenceAppearancePromises = new Map();
@@ -73,13 +78,14 @@ const topicsPathRoutePattern = /^\/topics\/?$/;
 const rankingsPathRoutePattern = /^\/rankings\/?$/;
 const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
+const insightsPathRoutePattern = /^\/insights\/?$/;
 const correctionsPathRoutePattern = /^\/corrections\/?$/;
 const assessmentPathRoutePattern = /^\/assessment\/?$/;
 const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?$/;
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=9bc35eb5ca2a0206")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=45c179feff42d122")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -98,7 +104,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=9bc35eb5ca2a0206")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=45c179feff42d122")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -114,7 +120,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=9bc35eb5ca2a0206`)
+    const promise = import(`./data/debate-details/${id}.js?v=45c179feff42d122`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -129,7 +135,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=9bc35eb5ca2a0206`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=45c179feff42d122`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -401,7 +407,7 @@ function renderPrimaryNavLink(key, href, label, activeKey) {
 }
 
 function renderShell(content) {
-  const activeNavKey = currentPrimaryNavKey();
+  const activeNavKey = insightsPathRoutePattern.test(window.location.pathname) ? "insights" : currentPrimaryNavKey();
   const mainContent = content.replace(
     "<main",
     '<main id="main-content" tabindex="-1"'
@@ -419,6 +425,7 @@ function renderShell(content) {
         ${renderPrimaryNavLink("search", searchPath(), "Search", activeNavKey)}
         ${renderPrimaryNavLink("topics", topicsPath(), "Topics", activeNavKey)}
         ${renderPrimaryNavLink("rankings", rankingsPath(), "Rankings", activeNavKey)}
+        ${renderPrimaryNavLink("insights", insightsPath(), "Insights", activeNavKey)}
         ${renderPrimaryNavLink("backend", backendPath(), "Backend", activeNavKey)}
         <span class="external-sites">
           <button class="external-sites-label" type="button" aria-expanded="false" aria-controls="external-sites-links">
@@ -447,6 +454,7 @@ function renderShell(content) {
         <a href="${searchPath()}">Search</a>
         <a href="${topicsPath()}">Topics</a>
         <a href="${rankingsPath()}">Rankings</a>
+        <a href="${insightsPath()}">Insights</a>
         <a href="${backendPath()}">Method</a>
         <a href="${correctionsPath()}">Corrections</a>
         <a href="/feed.xml">Updates feed</a>
@@ -562,7 +570,7 @@ function renderLanding() {
             <a class="button secondary" href="${searchPath()}">Search the archive</a>
           </div>
           <dl class="landing-stats" aria-label="Slugfester archive summary">
-            <div><dt>Debates/Scorecards</dt><dd>${debates.length}</dd></div>
+            <div><dt>Debates/<wbr>Scorecards</dt><dd>${debates.length}</dd></div>
             <div><dt>Interlocutors</dt><dd>${interlocutorCount}</dd></div>
             <div><dt>Topic clusters</dt><dd>${topicCount}</dd></div>
           </dl>
@@ -573,6 +581,7 @@ function renderLanding() {
             </div>
             <p>New debate assessments are added nearly every month.</p>
             <p class="landing-reassessment-note">The next site-wide reassessment is tentatively scheduled for spring 2027.</p>
+            <p><a href="${insightsPath()}">What are we learning? Explore the research insights.</a></p>
           </div>
         </div>
         <figure class="logo-showcase">
@@ -2313,6 +2322,11 @@ function renderResultPerson(person) {
   `;
 }
 
+function renderInsights() {
+  setSeo(insightsSeo());
+  app.innerHTML = renderShell(`<main class="insights-page">${insightsContent()}</main>`);
+}
+
 function renderBackend() {
   const sectionScores = sectionScoreDistribution();
   const recommendationSent =
@@ -2612,6 +2626,7 @@ function renderBackend() {
             <span class="backend-objectivity-kicker">Research library</span>
             <h2 id="backend-report-heading">Corpus-level analysis papers</h2>
             <p>Seven expanded research papers, with a shared September 4, 2026 snapshot of 253 assessments</p>
+            <p><a class="button primary" href="${insightsPath()}">Explore the findings on Insights</a></p>
           </header>
           <div class="backend-objectivity-content backend-report-content">
             <div class="backend-report-copy">
@@ -3118,6 +3133,7 @@ function renderDebateObject(
         </aside>
       </section>
 
+      ${renderAssessmentGuide(debate)}
       ${renderQuoteCards(debate)}
       ${renderScoringNote(debate)}
       ${renderInteractionGuide()}
@@ -3129,15 +3145,52 @@ function renderDebateObject(
 
       ${renderDebateScoreProfileGrid(debate)}
 
-      ${debate.sections.map((section) => renderSection(section, debate)).join("")}
+      ${debate.sections.map((section, index) => renderSection(section, debate, index)).join("")}
       ${renderOverall(debate)}
       ${renderLogicalExtension(debate)}
+      ${preview ? "" : renderRelatedDebates(debate)}
     </main>
   `);
 }
 
 export function renderCalibrationDebate(debate) {
   renderDebateObject(debate, { calibrationPreview: true });
+}
+
+function renderAssessmentGuide(debate) {
+  const guide = assessmentGuide(debate);
+  const outcome = guide.higherSide
+    ? `The published overall scores favor ${debate.sides[guide.higherSide].speaker} by ${Number(guide.gap.toFixed(1))} ${guide.gap === 1 ? "point" : "points"}.`
+    : "The published overall scores are tied.";
+  return `<section class="assessment-guide" aria-labelledby="assessment-guide-heading">
+    <p class="eyebrow">The assessment in brief</p>
+    <h2 id="assessment-guide-heading">What decided this assessment?</h2>
+    <p class="assessment-guide-summary">${escapeHtml(guide.summary)}</p>
+    <p>${escapeHtml(outcome)} <a href="#overall-heading">Read the full overall commentary</a>.</p>
+    <div class="assessment-guide-grid">${guide.sides.map((side) => `<article class="assessment-guide-side ${side.key === "pro" ? "teal" : "coral"}">
+      <h3>${escapeHtml(side.speaker)}</h3>
+      ${side.strongest ? `<p class="eyebrow">A highest-scoring contribution · ${side.strongest.argument.score}/100</p>
+      <p>${escapeHtml(side.strongest.argument.words)}</p>
+      <a href="#${debateSectionAnchor(side.strongest.sectionIndex)}">Read the exchange and critique</a> · ${renderTimestampLink(side.strongest.argument.time, debate.youtubeUrl, `Watch ${side.speaker}'s contribution at ${side.strongest.argument.time}`)}` : ""}
+      ${side.strength ? `<p><strong>${side.strengthIsMove ? "Why this contribution scored well." : "A strength in the overall assessment."}</strong> ${escapeHtml(side.strength)}</p>` : ""}
+      ${side.limitation ? `<p><strong>A key limitation in the overall assessment.</strong> ${escapeHtml(side.limitation)}</p>` : ""}
+    </article>`).join("")}</div>
+    <p class="source-note">Drawn from this scorecard’s existing summary, critiques and overall commentary—not a new judgment. The highlighted contributions illustrate strengths; they do not alone determine the overall scores. Ties between moves use the first displayed example. Shared-side assessments describe the side, not each participant individually.</p>
+  </section>`;
+}
+
+function renderRelatedDebates(debate) {
+  const related = relatedDebates(debate, debateSummaries, uniqueInterlocutorsForDebate);
+  if (!related.length) return "";
+  return `<section class="related-debates" aria-labelledby="related-debates-heading">
+    <p class="eyebrow">Keep exploring</p>
+    <h2 id="related-debates-heading">Related debates</h2>
+    <p>Follow the question further, or hear a familiar interlocutor in a different exchange. Suggestions reflect topics and participants, not an endorsement of a position.</p>
+    <div class="related-debate-grid">${related.map((item) => `<div class="related-debate-item">
+      <h3>${escapeHtml(item.label)}</h3><p class="related-debate-reason">${escapeHtml(item.reason)}</p>
+      ${renderRecentAssessmentCard(item.debate)}
+    </div>`).join("")}</div>
+  </section>`;
 }
 
 export function renderPublicationStagingDebate(debate) {
@@ -3336,9 +3389,9 @@ function renderQuoteCard(side, quote, tone) {
   `;
 }
 
-function renderSection(section, debate) {
+function renderSection(section, debate, index = 0) {
   return `
-    <section class="debate-section">
+    <section class="debate-section" id="${debateSectionAnchor(index)}">
       <div class="section-title-row">
         <div>
           <p class="eyebrow">${renderTimestampLink(section.timebox, debate.youtubeUrl, `Open YouTube source at ${section.timebox}`)}</p>
@@ -3803,6 +3856,7 @@ async function route({ focusMain = false } = {}) {
     hash.match(assessmentHashRoutePattern) ||
     window.location.pathname.match(assessmentPathRoutePattern);
   const correctionsMatch = window.location.pathname.match(correctionsPathRoutePattern);
+  const insightsMatch = window.location.pathname.match(insightsPathRoutePattern);
   const referenceMatch =
     hash.match(referenceHashRoutePattern) ||
     window.location.pathname.match(referencePathRoutePattern);
@@ -3819,6 +3873,13 @@ async function route({ focusMain = false } = {}) {
     rankingsMatch || interlocutorMatch || backendMatch || (debateMatch && knownDebate)
   );
   const loaders = [];
+
+  if (insightsMatch && !insightsContent) {
+    insightsPromise ||= import("./data/insights.js?v=45c179feff42d122")
+      .then((module) => { insightsContent = module.renderInsightsContent; })
+      .catch((error) => { insightsPromise = undefined; throw error; });
+    loaders.push(insightsPromise);
+  }
 
   if (needsAnalytics && debates === debateSummaries) {
     loaders.push(loadDebateAnalytics());
@@ -3866,6 +3927,8 @@ async function route({ focusMain = false } = {}) {
     renderRankings();
   } else if (interlocutorMatch) {
     renderInterlocutorProfile(decodeURIComponent(interlocutorMatch[1]));
+  } else if (insightsMatch) {
+    renderInsights();
   } else if (backendMatch) {
     renderBackend();
   } else if (correctionsMatch) {
@@ -3910,6 +3973,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(rankingsPathRoutePattern) &&
     !url.pathname.match(interlocutorPathRoutePattern) &&
     !url.pathname.match(backendPathRoutePattern) &&
+    !url.pathname.match(insightsPathRoutePattern) &&
     !url.pathname.match(correctionsPathRoutePattern) &&
     !url.pathname.match(assessmentPathRoutePattern) &&
     !url.pathname.match(referencePathRoutePattern)
@@ -3925,6 +3989,7 @@ function shouldHandleInternally(link) {
     rankingsPathRoutePattern.test(url.pathname) ||
     interlocutorPathRoutePattern.test(url.pathname) ||
     backendPathRoutePattern.test(url.pathname) ||
+    insightsPathRoutePattern.test(url.pathname) ||
     correctionsPathRoutePattern.test(url.pathname) ||
     assessmentPathRoutePattern.test(url.pathname) ||
     referencePathRoutePattern.test(url.pathname)

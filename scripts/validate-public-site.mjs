@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
+import "./validate-reader-features.mjs";
 import { dirname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
@@ -7,6 +8,7 @@ import { referenceDefinitions } from "../src/data/references.js";
 import {
   SITE_URL,
   backendPath,
+  insightsPath,
   correctionsPath,
   debatePath,
   interlocutorPath,
@@ -66,6 +68,7 @@ const expectedPaths = [
   topicsPath(),
   rankingsPath(),
   backendPath(),
+  insightsPath(),
   correctionsPath(),
   ...debates.map(debatePath),
   ...[...appearingPeople.values()].map(interlocutorPath),
@@ -163,7 +166,7 @@ sitemapUrls.forEach((urlString) => {
   if (html.includes('<div id="app"></div>')) {
     fail(`${url.pathname} still ships an empty JavaScript-only app shell`);
   }
-  const fallback = html.match(/<main class="seo-fallback"[\s\S]*?<\/main>/)?.[0] || "";
+  const fallback = html.match(/<main class="(?:seo-fallback|insights-page)"[\s\S]*?<\/main>/)?.[0] || "";
   if (!fallback) {
     fail(`${url.pathname} is missing pre-rendered fallback content`);
   } else {
