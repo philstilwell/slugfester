@@ -12015,5 +12015,60 @@ export const debateSummaries = [
         "title": "Freedom, certainty, prevalence, and the goods of hiddenness"
       }
     ]
+  },
+  {
+    "id": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+    "number": "254",
+    "title": "Cliffe Knechtle & Stuart Knechtle vs Matt Dillahunty & Joshua Bowen: Is the Bible's treatment of slavery morally defensible?",
+    "year": 2021,
+    "label": "Biblical slavery, ownership, and moral defense",
+    "date": "2026-09-08",
+    "duration": "3 hr 50 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=gcszn0DvFlM",
+    "motion": "Is the Bible's treatment of slavery morally defensible?",
+    "summary": "The critics prevail by grounding ownership and coercion in specific texts, while the defenders’ canonical trajectory never fully reconciles those legal permissions.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Biblical moral defense",
+        "speaker": "Cliffe Knechtle & Stuart Knechtle",
+        "speakers": [
+          "Cliffe Knechtle",
+          "Stuart Knechtle"
+        ],
+        "color": "teal"
+      },
+      "con": {
+        "name": "Biblical slavery critique",
+        "speaker": "Matt Dillahunty & Joshua Bowen",
+        "speakers": [
+          "Matt Dillahunty",
+          "Joshua Bowen"
+        ],
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 69,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Interpretation and canonical trajectory"
+      },
+      {
+        "title": "Legal status, ownership, and lexical context"
+      },
+      {
+        "title": "Moral foundation and autonomy"
+      },
+      {
+        "title": "Ancient comparison and hard-heart accommodation"
+      },
+      {
+        "title": "New Testament synthesis and contested cases"
+      }
+    ]
   }
 ];

@@ -1,0 +1,398 @@
+{
+  "schemaVersion": "1.0-multi-speaker-disagreement-extraction",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "m02:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "m02",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "Specific laws are cited, but the claim that most slavery concerns culpable war prisoners is asserted without representative support in this passage."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Specific laws and debt and war contexts are cited, although the broad prevalence claim and prison analogy receive little support."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "m22",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 5
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "Luke 17's expected compulsory service coherently pressures an abolitionist reading, though an illustrative presupposition does not by itself establish moral approval."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The Luke 17 illustration intelligibly undercuts the claim of clear New Testament condemnation, though one presupposed practice does not alone settle the whole canon."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "m22",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 1,
+        "moveScoreDelta": 5
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "Bowen supplies a specific textual illustration and its operative contrast, but does not develop the passage's wider purpose or compare rival readings."
+        },
+        "option-b": {
+          "value": 81,
+          "rationale": "Bowen supplies a specific textual illustration and explains its compulsory-service content, but offers little surrounding context or rival reading within this move."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "m22",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5
+      },
+      "options": {
+        "option-a": {
+          "value": 83,
+          "rationale": "The example directly answers m19's claim that the whole canon ultimately abolishes slavery, while addressing only one strand of that cumulative case."
+        },
+        "option-b": {
+          "value": 89,
+          "rationale": "The example directly answers m19's abolitionist New Testament trajectory by identifying Jesus using an apparently unreformed master-slave relationship."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "m22",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "A saying attributed to Jesus that assumes continued slave service materially advances the central New Testament non-condemnation burden."
+        },
+        "option-b": {
+          "value": 87,
+          "rationale": "A saying attributed to Jesus that presupposes compulsory service materially advances the negative burden concerning New Testament non-condemnation."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "m22",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 5
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "The Luke 17 example and intended inference are recoverable despite disfluencies and a compressed transition from narrative assumption to doctrinal conclusion."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "The concrete sequence of field labor followed by meal service is clear, although the precise force of an illustrative analogy remains somewhat compressed."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "m22",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 5
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "Calling the enlightened-condemnation position incorrect is broader than this single example establishes, though Bowen does target the actual canonical claim."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "Bowen fairly targets the claimed New Testament condemnation, but his broad concluding language exceeds what this single illustration independently establishes."
+        }
+      }
+    },
+    {
+      "disputeId": "m22:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "m22",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "m20:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 15,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 53,
+          "rationale": "Sparing the girls is compatible with protection, but the move does not establish that incorporation rather than property control was the intended outcome."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "The innocence distinction could explain sparing the girls, but being spared does not itself establish protection or exclude coercive status."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 47,
+          "rationale": "The asserted ages, collective culpability of adult women, and protective purpose are not supported by quoted language from Numbers 31 in this excerpt."
+        },
+        "option-b": {
+          "value": 60,
+          "rationale": "Numbers 25 supplies contextual linkage, while age, sexual status, protection, and lack of coercion are largely asserted in this span."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 65,
+          "rationale": "It directly denies rape and sexual slavery, yet responds to a broad closing rather than confronting the passage's ownership or plunder classification."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "It directly rejects the rape reading and offers an alternative, but does not address the girls' classification as captured spoils."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "A protective reading would matter to the regulation defense, but the unstated bridge from being spared to being protected remains substantial."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The contested case matters to coercive captivity, though the proposed protective interpretation remains insufficiently established."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "The claimed distinction between judged adults and protected young girls is clear, while the legal status of the spared girls is left unspecified."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The causal narrative is understandable, but broad age generalizations and the meaning of being accepted remain imprecise."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 48,
+          "rationale": "Calling the opposing interpretation a scary twisting overstates what the move establishes and bypasses the live concern about property status."
+        },
+        "option-b": {
+          "value": 56,
+          "rationale": "The reply correctly denies that virginity alone proves rape, but calls the contrary reading scary while understating coercive alternatives."
+        }
+      }
+    },
+    {
+      "disputeId": "m21:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "m21",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": -2,
+          "rationale": "Across the full route, the affirmative supplies ideals, regulations, and trajectory but never fully reconciles those claims with the cited durable ownership permissions.",
+          "distinctUnscoredConsequence": "The affirmative's route lacks a completed bridge from general equality principles to the moral defensibility of the specific permissions under dispute.",
+          "relatedMoveIds": [
+            "m01",
+            "m02",
+            "m03",
+            "m15",
+            "m19",
+            "m20"
+          ]
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The pro route's trajectory, regulation, dignity, abolition, and contextual bridges are all represented in the frozen selected moves, with no distinct unscored consequence warranting adjustment.",
+          "distinctUnscoredConsequence": null,
+          "relatedMoveIds": [
+            "m01",
+            "m02",
+            "m03",
+            "m04",
+            "m10",
+            "m13",
+            "m15",
+            "m19",
+            "m20"
+          ]
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 1,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 1,
+          "rationale": "The negative completes every central route through mutually reinforcing legal, moral, hermeneutic, and New Testament arguments across the full source map.",
+          "distinctUnscoredConsequence": "The negative's distinct central bridges form a complete route from textual ownership incidents through moral consequence and canonical non-correction.",
+          "relatedMoveIds": [
+            "m05",
+            "m06",
+            "m07",
+            "m08",
+            "m09",
+            "m12",
+            "m16",
+            "m17",
+            "m18",
+            "m21",
+            "m22"
+          ]
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "The con route's ownership, text, morality, New Testament silence, comparison, and hermeneutics bridges are all represented in selected moves, leaving no separate unscored consequence.",
+          "distinctUnscoredConsequence": null,
+          "relatedMoveIds": [
+            "m05",
+            "m06",
+            "m07",
+            "m08",
+            "m09",
+            "m11",
+            "m12",
+            "m14",
+            "m16",
+            "m17",
+            "m18",
+            "m21",
+            "m22"
+          ]
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 22,
+    "disputesExtracted": 17,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

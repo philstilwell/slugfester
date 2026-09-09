@@ -1,0 +1,30 @@
+{
+  "status": "passed-local-publication-gates",
+  "debateNumber": "254",
+  "checkedAt": "2026-09-09T05:01:27Z",
+  "gates": {
+    "fullLocalTeamEvidenceAudit": "passed",
+    "allStandaloneRepositoryAudits": "passed",
+    "fullNpmCheckIncludingPostcheck": "passed",
+    "siteCheck": "56 tests passed",
+    "sitePreflight": "17 tests passed",
+    "syntaxChecks": "59 added JavaScript modules passed",
+    "corpusTranscriptInventory": "all 253 prior entries unchanged; 254 current entries",
+    "contentParity": "passed; independent 25-debate window and five justified outliers",
+    "rhetoricalTags": "two valid isolated reviews and complete 31-candidate adjudication; six tags",
+    "gitDiffWhitespace": "passed",
+    "credentialScan": "No new credential pattern found. Three matches in src/data/debates.js are pre-existing interior word/slug substrings, outside Debate 254."
+  },
+  "recovery": {
+    "localArchiveAccess": "Read-through links to the original ignored historical caption and audio archive enabled full source-hash replay; no original files or existing task files were changed.",
+    "historicalRegistryRouting": "Team tag paths are checked through the hash-authenticated team recovery router; historical dyadic paths retain their original directory restrictions.",
+    "siteReferenceAttribution": "Generated occurrence data now carries the actual argument speaker when available; reference cards display that speaker rather than the team label."
+  },
+  "pendingReleaseGates": [
+    "repeat site:preflight immediately before each commit",
+    "reconcile origin/main without dropping Josh Axe avatar",
+    "clean-checkout standalone replay before push",
+    "topic-branch pull request with required accessibility-and-performance success",
+    "green-only merge and postmerge Site Quality/Pages verification"
+  ]
+}

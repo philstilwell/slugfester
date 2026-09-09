@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0-standalone-team-inventory-correction",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "correctionCycle": 1,
+  "status": "complete-pending-independent-reaudit",
+  "sourceInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-1.json",
+    "sha256": "53e2902b47bf8775f763b4aae8515fb542f3f66f463e04d7cc9c1d58e76a7fa4"
+  },
+  "correctedInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-2.json",
+    "sha256": "6e00c4f66ce7766c2b5a48b37160937d465a10f1e1cb0292cf67e4df8a203612"
+  },
+  "auditInput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/audit/audit-1.json",
+    "sha256": "9eb98eb882ae04a416d499d21cd79695fc133bb69ad97717765e2011cafe789d"
+  },
+  "changedFieldPaths": [
+    "moves[moveId=m20].sourceSpan",
+    "moves[moveId=m21].sourceSpan",
+    "moves[moveId=m01].quoteEligibleExactSpans",
+    "moves[moveId=m06].quoteEligibleExactSpans",
+    "excludedRepetitions[speaker=Matt Dillahunty,startMs=7092000] (removed)",
+    "excludedRepetitions[speaker=Joshua Bowen,startMs=8939000] (removed)"
+  ],
+  "findingsResolved": [
+    {
+      "findingId": "audit-254-f01",
+      "resolution": "Re-anchored m20 mechanically to events 3866-3893, the complete caption span of Cliffe Knechtle's Numbers 31 protection answer. Attribution remains medium pending audio."
+    },
+    {
+      "findingId": "audit-254-f02",
+      "resolution": "Re-anchored m21 mechanically to compact events 3896-3901 only. The span ends at 'They are property.' before the later multi-voice elaboration. Attribution remains medium pending audio."
+    },
+    {
+      "findingId": "audit-254-f03",
+      "resolution": "Removed both false interval/rationale records. A complete Q&A coverage recheck found no additional selected move required: the distinct Numbers 31 exchange is retained as corrected m20-m21; later ownership, moral-foundation, New Testament, and interpretive answers restate or illustrate already retained inferences without changing the burden structure. No teammate adoption link was inferred from side membership."
+    },
+    {
+      "findingId": "audit-254-f04",
+      "resolution": "Added one clean, source-exact 3-18-word quotation candidate per team in m01 and m06. Both remain candidates subject to later audio verification."
+    }
+  ],
+  "qAndACoverageCheck": {
+    "completeWindowReviewed": true,
+    "rangeMs": {
+      "startMs": 5321000,
+      "endMs": 10336000
+    },
+    "necessaryMoveChangesBeyondAuditFindings": [],
+    "rationale": "Q&A includes many audience prompts and repeated team explanations. Corrected m20-m21 capture the one audited distinct omitted exchange. Other team answers repeat retained ownership, permission, dignity, canonical-trajectory, comparative-law, or hermeneutic inferences; audience and moderator wording remains uncredited unless a team member advances it."
+  },
+  "audioAssertions": {
+    "audioReviewed": false,
+    "audioConfirmedMoves": [],
+    "note": "This correction uses captions and event indices only; all selected-move audio confirmation remains a later gate."
+  }
+}

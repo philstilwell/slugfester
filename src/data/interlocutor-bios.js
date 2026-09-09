@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Joshua Bowen", "Joshua Bowen is a scholar of the Hebrew Bible and the ancient Near East, and a co-founder of Digital Hammurabi. His books and educational work introduce ancient texts, biblical scholarship, and the historical settings of the Hebrew Bible to general readers.", "https://www.digitalhammurabi.com/about-us", "2026-09-08"],
   ["Alex O'Connor", "Alex O’Connor is a writer, public speaker, and host of the Within Reason podcast. His interviews and discussions explore philosophy of religion, biblical scholarship, and questions about ethics and public life.", "https://www.alexoconnor.com/about"],
   ["William Lane Craig", "William Lane Craig is a philosopher, theologian, and founder of Reasonable Faith. His academic and public work concerns arguments for God’s existence, the relationship between God and time, and the historical case for Jesus’ resurrection.", "https://www.reasonablefaith.org/william-lane-craig/"],
   ["Christopher Hitchens", "Christopher Hitchens was an author, journalist, and literary critic whose writing ranged across politics, religion, and culture. His books include God Is Not Great, and his public debates made criticism of religion a prominent part of his work.", "https://www.hachettebookgroup.com/contributor/christopher-hitchens/"],

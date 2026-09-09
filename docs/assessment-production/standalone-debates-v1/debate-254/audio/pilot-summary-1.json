@@ -1,0 +1,99 @@
+{
+  "status": "paused-before-further-paid-calls",
+  "outputs": [
+    {
+      "moveId": "m13",
+      "record": {
+        "path": "output/transcribe/team254-attribution-1/pilot-repaired/m13.transcript.json",
+        "bytes": 6710,
+        "sha256": "2c7c254ba2a367cdef187c2d415fedf9d95dc9d69efdf758b0b5f370c08b3b1f"
+      },
+      "durationSeconds": 48,
+      "usage": {
+        "input_tokens": 1305,
+        "output_tokens": 1533,
+        "total_tokens": 2838,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 1207,
+          "text_tokens": 98
+        }
+      },
+      "estimatedBilledUsd": 0.0185925,
+      "speakers": [
+        "Matt Dillahunty",
+        "Cliffe Knechtle",
+        "Joshua Bowen"
+      ]
+    },
+    {
+      "moveId": "m15",
+      "record": {
+        "path": "output/transcribe/team254-attribution-1/pilot-repaired/m15.transcript.json",
+        "bytes": 7544,
+        "sha256": "9d444c249b003b56104f462bc8542652694d2afd76060a528434cd9d21e6837e"
+      },
+      "durationSeconds": 74.559,
+      "usage": {
+        "input_tokens": 1979,
+        "output_tokens": 2268,
+        "total_tokens": 4247,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 1832,
+          "text_tokens": 147
+        }
+      },
+      "estimatedBilledUsd": 0.0276275,
+      "speakers": [
+        "Joshua Bowen",
+        "Stuart Knechtle"
+      ]
+    },
+    {
+      "moveId": "m16",
+      "record": {
+        "path": "output/transcribe/team254-attribution-1/pilot-repaired/m16.transcript.json",
+        "bytes": 9985,
+        "sha256": "21b1cc2ad8a7d278f2051cb705ece2073fc030c0c2065d47b4b097f6207e0c6e"
+      },
+      "durationSeconds": 116.161,
+      "usage": {
+        "input_tokens": 3206,
+        "output_tokens": 3602,
+        "total_tokens": 6808,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2971,
+          "text_tokens": 235
+        }
+      },
+      "estimatedBilledUsd": 0.044035,
+      "speakers": [
+        "Stuart Knechtle",
+        "Joshua Bowen",
+        "Cliffe Knechtle"
+      ]
+    }
+  ],
+  "cost": {
+    "basis": "Reported token usage multiplied by official model rates; not an account invoice.",
+    "pricingSource": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "inputUsdPerMillion": 2.5,
+    "outputUsdPerMillion": 10,
+    "knownSuccessfulCallEstimatedUsd": 0.090255,
+    "failedRequestUsageReported": false,
+    "initialEstimateUsd": 0.42420800000000003,
+    "projectedTotalUsd": 1.246556448558981,
+    "authorizedMaximumUsd": 1,
+    "proposedNewCumulativeMaximumUsd": 2,
+    "requiresFurtherAuthorization": true
+  },
+  "evidenceStatus": {
+    "allSelectedMovesVerified": false,
+    "confirmedMoves": 0,
+    "sourceAttributionAuditPending": true,
+    "notes": "Diarized pilot responses identify multiple speakers and cross-talk. These preserved raw responses are evidence for later review, not a completed speaker or quotation verification audit."
+  },
+  "nextStep": "Obtain authorization before any more paid calls because pilot-based projected total exceeds the existing cap. Complete independent inventory correction and re-audit without paid calls."
+}

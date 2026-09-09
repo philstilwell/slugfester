@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-multi-speaker-independent-inventory-audit",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "status": "complete-with-unresolved-findings",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "reviewerRole": "independent-score-blind-inventory-auditor",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "inventorySha256": "53e2902b47bf8775f763b4aae8515fb542f3f66f463e04d7cc9c1d58e76a7fa4",
+  "sourceLocks": {
+    "transcriptSha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4",
+    "eventsSha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+  },
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "primaryJudgmentsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "findings": [
+    {
+      "findingId": "audit-254-f01",
+      "category": "speaker-ownership",
+      "severity": "blocking",
+      "rationale": "m20's locked span is 7,954,800-8,029,520 ms (events 3677-3710), which contains the end of an Exodus 21 beating exchange, moderator transitions, and the beginning of a different audience question. It does not contain the Numbers 31 protection argument stated in the proposition. The affirmative Numbers 31 answer actually begins at event 3866 / 8,354,880 ms with 'You have to read Numbers chapter 25' and runs through event 3893 / 8,428,720 ms ('it's scary'). Replace m20's source span with the source-exact Cliffe Knechtle answer, then recheck its endpoint, ownership, response link, and quotation candidates against audio; no audio verification is asserted here.",
+      "relatedMoveIds": [
+        "m20"
+      ],
+      "correctionRequired": true,
+      "resolved": false
+    },
+    {
+      "findingId": "audit-254-f02",
+      "category": "speaker-ownership",
+      "severity": "blocking",
+      "rationale": "m21's locked span is 8,031,840-8,062,239 ms (events 3713-3728), covering a chosen-people/evolution aside rather than the claimed Numbers 31 plunder rebuttal. The rebuttal starts at event 3896 / 8,429,280 ms ('They're they're they're plunder though') and the compact Joshua Bowen core is events 3896-3901, ending at 8,441,600 ms with 'They are property.' Subsequent captions include at least one further voice, so the corrected endpoint and any additional material must be fixed only after handoff/cross-talk audio review; no audio verification is asserted here.",
+      "relatedMoveIds": [
+        "m21"
+      ],
+      "correctionRequired": true,
+      "resolved": false
+    },
+    {
+      "findingId": "audit-254-f03",
+      "category": "opportunity-coverage",
+      "severity": "material",
+      "rationale": "Two of five excluded-repetition records do not describe their locked intervals. The Matt Dillahunty record at 7,092,000-7,440,000 ms is labeled a closing-statement repetition of m18, but the actual negative closing is already m18 at 4,692,560-5,040,000 ms; the cited later interval is Q&A with multiple speakers. The Joshua Bowen record at 8,939,000-9,008,000 ms is labeled Luke 17/Philemon, but the source's Luke 17 contribution occurs around 6,561,000-6,620,000 ms, while 8,939,000 ms falls in the later micromanagement/free-will exchange. Correct or remove both repetition records and re-audit all Q&A opportunities so teammate deduplication is evidence-backed rather than inferred from mislabeled intervals.",
+      "relatedMoveIds": [
+        "m09",
+        "m18"
+      ],
+      "correctionRequired": true,
+      "resolved": false
+    },
+    {
+      "findingId": "audit-254-f04",
+      "category": "opportunity-coverage",
+      "severity": "material",
+      "rationale": "Every quoteEligibleExactSpans array is empty, so the frozen inventory has no representative quotation ready for either team. Add source-exact 3-18 word candidates before judgment while keeping them explicitly subject to later audio verification. Suitable caption-exact candidates already inside locked spans include pro m01: 'Slavery is never once God's ideal due to the sinfulness of the human heart.' and con m06: 'You can bequath them to your children as inherited property'. Preserve the ASR wording unless audio verification authorizes a correction, and never label either quotation audio-verified at this stage.",
+      "relatedMoveIds": [
+        "m01",
+        "m06"
+      ],
+      "correctionRequired": true,
+      "resolved": false
+    }
+  ],
+  "correctionHistory": [],
+  "verdict": "correction-required",
+  "approvedForScoring": false,
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingMovesChecked": true,
+    "speakerOwnershipChecked": true,
+    "opportunityCoverageChecked": true,
+    "formatFitnessChecked": true,
+    "scoreBlind": true
+  }
+}

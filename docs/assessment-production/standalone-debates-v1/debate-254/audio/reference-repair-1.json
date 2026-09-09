@@ -1,0 +1,52 @@
+{
+  "status": "reference-duration-repaired-not-attribution-verified",
+  "priorPlan": "clip-plan-1.json",
+  "failure": {
+    "status": 400,
+    "code": "invalid_value",
+    "parameter": "known_speaker_references",
+    "message": "Known speaker references has duration {duration_s} seconds, but must be between 1.2 and 10.0 seconds",
+    "outputsProduced": 0,
+    "reportedUsage": null
+  },
+  "targetedChange": "Shorten only overlength reference samples to nine seconds; preserve every original clip and reference.",
+  "references": [
+    {
+      "speaker": "Matt Dillahunty",
+      "path": "output/transcribe/team254-attribution-1/reference-1.wav",
+      "sha256": "1decccdc8c6a544933833059a55103423ed51761b9784693b2365d56dcec0d31",
+      "startSeconds": 64,
+      "endSeconds": 73,
+      "durationSeconds": 9,
+      "basis": "Explicit introduction and uninterrupted first reply; Stuart identifies the other member as having spoken on campuses for forty years. Reference identities are source-based, not inferred from the later disputed clips."
+    },
+    {
+      "speaker": "Joshua Bowen",
+      "path": "output/transcribe/team254-attribution-1/reference-2-short.wav",
+      "sha256": "9df23242e0f33ad62881eac5b609c5f807bedad9d46ca6225b4ff222325637d3",
+      "startSeconds": 82,
+      "endSeconds": 91,
+      "durationSeconds": 9,
+      "basis": "Explicit introduction and uninterrupted first reply; Stuart identifies the other member as having spoken on campuses for forty years. Reference identities are source-based, not inferred from the later disputed clips."
+    },
+    {
+      "speaker": "Stuart Knechtle",
+      "path": "output/transcribe/team254-attribution-1/reference-3-short.wav",
+      "sha256": "78abe93563230691d9da748578631d3e43a1a47593334383f2c6522c0dc769c8",
+      "startSeconds": 116,
+      "endSeconds": 125,
+      "durationSeconds": 9,
+      "basis": "Explicit introduction and uninterrupted first reply; Stuart identifies the other member as having spoken on campuses for forty years. Reference identities are source-based, not inferred from the later disputed clips."
+    },
+    {
+      "speaker": "Cliffe Knechtle",
+      "path": "output/transcribe/team254-attribution-1/reference-4-short.wav",
+      "sha256": "c7ece5459a031eeeb0de19c01076a3f3c74a395e26c884f0d86ee0fef35b8bbf",
+      "startSeconds": 183.68,
+      "endSeconds": 192.68,
+      "durationSeconds": 9,
+      "basis": "Explicit introduction and uninterrupted first reply; Stuart identifies the other member as having spoken on campuses for forty years. Reference identities are source-based, not inferred from the later disputed clips."
+    }
+  ],
+  "estimateDoesNotIncrease": true
+}

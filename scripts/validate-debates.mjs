@@ -1,4 +1,6 @@
 import { topicCategoryIds } from "../src/data/topics.js";
+import { TEAM_ADAPTER_VERSION, validateTeamSiteLedgerAdapter, validateTeamStagingCandidate } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
+import { MULTI_SPEAKER_RUBRIC } from "./lib/assessment-production-multi-speaker-approximation-v1.mjs";
 import { debates } from "../src/data/debates.js";
 import { getReferenceDefinition, referenceFromUrl } from "../src/data/references.js";
 import { existsSync, readFileSync } from "node:fs";
@@ -111,6 +113,10 @@ import {
 } from "./lib/assessment-production-standalone-debate-v1.mjs";
 
 const errors = [];
+const stagingArgs = process.argv.slice(2);
+const teamStagingNumber = stagingArgs[0] === "--team-staging-debate" && stagingArgs.length === 2 && /^\d+$/.test(stagingArgs[1]) ? stagingArgs[1] : null;
+if (stagingArgs.length && !teamStagingNumber) throw new Error("Only --team-staging-debate NNN is supported; it cannot authorize publication");
+if (teamStagingNumber && !debates.some(d => d.number === teamStagingNumber && d.assessmentFormat === "team")) throw new Error("The explicit staging record must exist and be a team debate");
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const debateNumberPattern = /^\d{2,}$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
@@ -119,7 +125,7 @@ const internalDebateMetadataPattern =
   /(?:SHA-?256|\.assessment-cache|locally cached|timestamped events|below-high-confidence|audio checks?|adjudicated-consensus|disputed-field adjudication|quote-eligible|locked source spans?|repository code|isolated judgments?|source-exact|manifest\.json|transcript\.txt|events\.json)/i;
 const legacyAssessmentModel = "GPT 5.5 Extra High";
 const currentAssessmentModel = "5.6 Terra Extra High";
-const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC]);
+const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC, MULTI_SPEAKER_RUBRIC]);
 const terraAssessmentFirstDebate = 131;
 const explicitTopicCategoryFirstDebate = 190;
 
@@ -232,7 +238,8 @@ export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
     schemaVersion === POST_CANARY_BATCH_14_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === POST_CANARY_BATCH_13_SITE_LEDGER_ADAPTER_VERSION ||
     schemaVersion === CALIBRATION_PROMOTION_SITE_LEDGER_ADAPTER_VERSION ||
-    schemaVersion === STANDALONE_SITE_LEDGER_ADAPTER_VERSION
+    schemaVersion === STANDALONE_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === TEAM_ADAPTER_VERSION
   );
 }
 
@@ -260,8 +267,9 @@ function usesStandaloneLedgerAdapter(debate) {
   );
   if (!existsSync(ledgerUrl)) return false;
   try {
-    return JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion ===
-      STANDALONE_SITE_LEDGER_ADAPTER_VERSION;
+    return [STANDALONE_SITE_LEDGER_ADAPTER_VERSION, TEAM_ADAPTER_VERSION].includes(
+      JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion
+    );
   } catch {
     return false;
   }
@@ -1720,6 +1728,11 @@ export function validateStandaloneLedgerAdapterRoute({
 }
 
 function validateReassessmentLedger(debate, path) {
+  if (debate.number === teamStagingNumber) {
+    try { validateTeamStagingCandidate(debate); }
+    catch (error) { addError([...path, "assessmentRubric"], `Team pre-render staging check failed: ${error.message}`); }
+    return;
+  }
   const isV21 = debate.assessmentRubric === V21_RUBRIC;
   const ledgerUrl = new URL(
     `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
@@ -2125,6 +2138,20 @@ function validateReassessmentLedger(debate, path) {
     return;
   }
 
+  if (ledger.schemaVersion === TEAM_ADAPTER_VERSION) {
+    try {
+      const registry = JSON.parse(readFileSync(new URL(`../${STANDALONE_ROOT}/registry.json`, import.meta.url), "utf8"));
+      const record = registry.debates.find(item => item.debateNumber === debate.number);
+      if (record?.validationProfile !== "team-approximation-v1" || record.status !== "published-and-frozen" || record.debateId !== debate.id || record.videoId !== new URL(debate.youtubeUrl).searchParams.get("v") || record.productionLedger?.path !== `docs/assessment-ledgers/${debate.id}.json` || record.productionLedger?.sha256 !== sha256(ledgerText)) {
+        throw new Error("Team ledger does not match its frozen standalone registry route");
+      }
+      validateTeamSiteLedgerAdapter({adapter: ledger, candidate: debate, repositoryOnly: true});
+    } catch (error) {
+      addError([...path, "assessmentRubric"], `Team ledger validation failed: ${error.message}`);
+    }
+    return;
+  }
+
   if (ledger.schemaVersion === STANDALONE_SITE_LEDGER_ADAPTER_VERSION) {
     try {
       validateStandaloneLedgerAdapterRoute({
@@ -2493,9 +2520,13 @@ function validateDebate(debate, index) {
   });
   const debateNumber = Number.parseInt(debate.number, 10);
   const hasReassessmentRubric = debate.assessmentRubric !== undefined;
+  // Explicit team previews use the same locked-card display rules as their
+  // eventual adapter. validateReassessmentLedger still authenticates every
+  // source, judgment, score, and publication field through the staging route.
+  const isTeamStaging = debate.number === teamStagingNumber;
   const hasAdjudicatedConsensusLedgerAdapter =
-    usesAdjudicatedConsensusLedgerAdapter(debate);
-  const hasStandaloneLedgerAdapter = usesStandaloneLedgerAdapter(debate);
+    isTeamStaging || usesAdjudicatedConsensusLedgerAdapter(debate);
+  const hasStandaloneLedgerAdapter = isTeamStaging || usesStandaloneLedgerAdapter(debate);
   if (hasReassessmentRubric) {
     const rubric = requireString(debate, "assessmentRubric", path);
     requireString(debate, "assessmentModel", path);
@@ -2718,3 +2749,4 @@ if (errors.length > 0) {
 }
 
 console.log(`Validated ${debates.length} debate${debates.length === 1 ? "" : "s"}.`);
+if (teamStagingNumber) console.log(`Debate ${teamStagingNumber}: staging candidate only; rendering and frozen-adapter publication gates remain mandatory.`);

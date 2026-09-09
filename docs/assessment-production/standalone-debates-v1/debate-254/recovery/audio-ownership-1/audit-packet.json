@@ -1,0 +1,82 @@
+{
+  "status": "frozen-independent-source-reaudit",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/recovery/audio-ownership-1/authorization.json",
+    "bytes": 2771,
+    "sha256": "edf8504e72ba31ad838bbfbe4e752cc6446bb066937f2ed3320efe982a619c22"
+  },
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-4.json",
+    "bytes": 94316,
+    "sha256": "31e2ce912a46e95cac4999d40ef400a0c59e846e681faf1aab544a9a089649db"
+  },
+  "priorInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-3.json",
+    "bytes": 92974,
+    "sha256": "d006b4fdb34096d5046fe7a2914e1f1eaca63e572b6d32a64566d2a122d77ed6"
+  },
+  "priorAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/audit/audit-3-authenticated.json",
+    "bytes": 5488,
+    "sha256": "db4b463c9a925f93474f9731bcca0fce738f698b850f3344f7c592f923068264",
+    "canonicalSha256": "b791c08a3f33885f94c76da5e15591d4fbdfd7b0205400fd3b319d043069a661"
+  },
+  "correction": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/recovery/audio-ownership-1/inventory-correction.json",
+    "bytes": 5993,
+    "sha256": "fb8228d5ce85dcf1d9c082970202608f6225fcd0f3599661d1a3cd48f418adca"
+  },
+  "source": [
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/transcript.txt",
+      "bytes": 279055,
+      "sha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/events.json",
+      "bytes": 660522,
+      "sha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/manifest.json",
+      "bytes": 1028,
+      "sha256": "c51a4d3455c95b0ad4e1ca735b1e6e2ebdf81b33133f261a5389ae06833c749d"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/captions.srv3.xml",
+      "bytes": 1572360,
+      "sha256": "36b3067e9795a15a2712237f31362304589061018234c8db73922078294d069c"
+    }
+  ],
+  "sourceLocks": {
+    "transcriptSha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4",
+    "eventsSha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+  },
+  "audio": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/raw-continuation-1/m22.json",
+      "bytes": 7761,
+      "sha256": "59253d9bc452c1cf43679e9ffbf0142e78f42876755e26d23f898bcef5d33973"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/raw-continuation-1/m21.json",
+      "bytes": 3529,
+      "sha256": "6f898836b6f28fe1f172ae04a0873db0f7496ec48640cd9ec979999683f86872"
+    }
+  ],
+  "audioPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/continuation-plan-1.json",
+    "bytes": 66406,
+    "sha256": "082eabb940c6cbf218947b2ee897027039b5667174afcc0bd4870811ef1cf5ba"
+  },
+  "affectedMoveIds": [
+    "m22",
+    "m21"
+  ],
+  "output": "docs/assessment-production/standalone-debates-v1/debate-254/recovery/audio-ownership-1/inventory-audit.json",
+  "method": "docs/assessment-standalone-team-debate-v1.md",
+  "baseMethod": "docs/assessment-multi-speaker-approximation-workflow-v1.md",
+  "requirements": "Read the complete transcript and compare the inventory. Independently assess the two audio-driven ownership corrections, smallest complete source boundaries, excluded teammate tails and no double credit or lost unique load-bearing argument. Ensure only authorized fields changed and all unaffected selections/weights/links remained exact. Preserve prior failed cycles in priorAuditHistory; this is one explicitly authorized additional audio-driven cycle, not a reset. Output the ordinary multi-speaker independent-inventory-audit schema with one current correctionHistory entry, exceptionAuthorization hash pointing to this recovery authorization, plus source-specific findings, actual audio-verification notes and excluded-tail decisions. Do not assert a pass if any material issue remains."
+}

@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from './lib/assessment-production-multi-speaker-approximation-v1.mjs';
+import {openTeamRun} from './lib/assessment-standalone-team-pipeline-v1.mjs';
+const args=process.argv.slice(2);assert.equal(args.length,2);assert.equal(args[0],'--debate');
+const r=openTeamRun(args[1]),root=r.local('publication/repairs'),folder=`${root}/01-exception-1`,intent=r.read(`${folder}/execution-intent.json`),dispatch=r.read(`${folder}/dispatch.json`),authority=r.read(intent.authorization.path);
+for(const k of ['authorization','guard','packet','prompt'])r.check(intent[k]);r.check(authority.stop);r.check(authority.priorOutput);assert.equal(authority.additionalAttempts,1);assert.equal(dispatch.attempts,1);
+const result=spawnSync(process.execPath,['scripts/validate-team-prose-repair.mjs','--packet',intent.packet.path,'--file',intent.output],{encoding:'utf8'});assert.equal(result.status,0,result.stdout+result.stderr);const validation=JSON.parse(result.stdout);
+writeFileSync(`${folder}/validation.json`,JSON.stringify(validation,null,2)+'\n',{flag:'wx'});
+const execution={...dispatch,status:'passed-exceptional-one-field-repair',at:new Date().toISOString(),intent:fileRecord(`${folder}/execution-intent.json`),dispatch:fileRecord(`${folder}/dispatch.json`),authorization:intent.authorization,guard:intent.guard,packet:intent.packet,prompt:intent.prompt,output:fileRecord(intent.output),validation:fileRecord(`${folder}/validation.json`)};
+writeFileSync(`${folder}/execution.json`,JSON.stringify(execution,null,2)+'\n',{flag:'wx'});
+const stop=r.read(authority.stop.path),resumption={status:'authorized-repair-passed-resume-pending-publication-fields',at:new Date().toISOString(),debateId:r.record.debateId,exception:fileRecord(`${folder}/execution.json`),priorStop:authority.stop,plan:fileRecord(`${root}/plan.json`),pendingShards:stop.pendingShards,additionalInstruction:intent.guard,publicationConcurrencyMaximum:2,attemptsPerPendingShard:1,directIncrementalCostUsd:0};
+writeFileSync(`${root}/resumption-1.json`,JSON.stringify(resumption,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(resumption));

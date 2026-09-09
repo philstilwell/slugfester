@@ -877,6 +877,12 @@ export const interlocutorAvatars = [
     aliases: ["Craig Evans"]
   },
   {
+    name: "Joshua Bowen",
+    src: "/assets/debate-gloves.png",
+    placeholder: true,
+    aliases: ["Joshua Bowen", "Josh Bowen"]
+  },
+  {
     name: "Josh Axe",
     src: `${avatarBasePath}/josh-axe.webp`,
     aliases: ["Josh Axe"]

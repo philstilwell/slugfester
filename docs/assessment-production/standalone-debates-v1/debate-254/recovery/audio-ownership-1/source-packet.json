@@ -1,0 +1,84 @@
+{
+  "status": "frozen-score-blind-ownership-recovery",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/recovery/audio-ownership-1/authorization.json",
+    "bytes": 2771,
+    "sha256": "edf8504e72ba31ad838bbfbe4e752cc6446bb066937f2ed3320efe982a619c22"
+  },
+  "sourceManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/manifest.json",
+    "bytes": 3646,
+    "sha256": "d562e89e35e3814501a3c2549f79774f94c9fc3008fafd4304c01082de3d0374"
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-3.json",
+    "bytes": 92974,
+    "sha256": "d006b4fdb34096d5046fe7a2914e1f1eaca63e572b6d32a64566d2a122d77ed6"
+  },
+  "priorAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/audit/audit-3-authenticated.json",
+    "bytes": 5488,
+    "sha256": "db4b463c9a925f93474f9731bcca0fce738f698b850f3344f7c592f923068264",
+    "canonicalSha256": "b791c08a3f33885f94c76da5e15591d4fbdfd7b0205400fd3b319d043069a661"
+  },
+  "source": [
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/transcript.txt",
+      "bytes": 279055,
+      "sha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/events.json",
+      "bytes": 660522,
+      "sha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/manifest.json",
+      "bytes": 1028,
+      "sha256": "c51a4d3455c95b0ad4e1ca735b1e6e2ebdf81b33133f261a5389ae06833c749d"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/captions.srv3.xml",
+      "bytes": 1572360,
+      "sha256": "36b3067e9795a15a2712237f31362304589061018234c8db73922078294d069c"
+    }
+  ],
+  "audioPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/continuation-plan-1.json",
+    "bytes": 66406,
+    "sha256": "082eabb940c6cbf218947b2ee897027039b5667174afcc0bd4870811ef1cf5ba"
+  },
+  "affectedMoveIds": [
+    "m22",
+    "m21"
+  ],
+  "audio": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/raw-continuation-1/m22.json",
+      "bytes": 7761,
+      "sha256": "59253d9bc452c1cf43679e9ffbf0142e78f42876755e26d23f898bcef5d33973"
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/raw-continuation-1/m21.json",
+      "bytes": 3529,
+      "sha256": "6f898836b6f28fe1f172ae04a0873db0f7496ec48640cd9ec979999683f86872"
+    }
+  ],
+  "findings": [
+    {
+      "moveId": "m22",
+      "observation": "Named-reference audio separates the selected speaker's textual illustration from a teammate's concluding necessary-tool/class-system/undeniable statements; the caption excerpt conflates them."
+    },
+    {
+      "moveId": "m21",
+      "observation": "Named-reference audio separates the selected speaker's plunder premise, an opponent question, and the teammate's property conclusion. The later consent/autonomy explanation is also the teammate's."
+    }
+  ],
+  "method": "docs/assessment-standalone-team-debate-v1.md",
+  "baseMethod": "docs/assessment-multi-speaker-approximation-workflow-v1.md",
+  "outputInventory": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-4.json",
+  "outputCorrection": "docs/assessment-production/standalone-debates-v1/debate-254/recovery/audio-ownership-1/inventory-correction.json",
+  "instructions": "Correct only affected move source boundaries, speaker attribution basis and source-required proposition/incremental descriptions. Prefer a smallest complete single-speaker passage. Preserve all other moves, weights, groups and reply links. Do not award a teammate's distinct statement to the named speaker. Explicitly account for excluded teammate tails against existing retained inferences, without silently losing a unique load-bearing argument. Add only necessary source-accounting metadata; if a new scored move or section change appears necessary, report rather than expanding. Compare current source events against audio offsets; caption display tails can overlap a later turn and must not be treated as new words. No scores, primary outputs, publication, other debates, web, credentials, paid calls or extra workers."
+}

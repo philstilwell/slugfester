@@ -6,6 +6,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 import { debates } from "../src/data/debates.js";
+import { openTeamRun } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
 import {
   STANDALONE_PROTOCOL_ID,
   STANDALONE_ROOT,
@@ -45,6 +46,16 @@ assert.ok(
   selectedRegistryRecord,
   `standalone registry does not contain Debate ${requestedDebateNumber ?? "196"}`
 );
+if (requestedDebateNumber && selectedRegistryRecord.validationProfile === "team-approximation-v1") {
+  assert(rawArgs.includes("--audit"), "Team debates use their dedicated stage controller; the dyadic controller permits audit routing only");
+  assert(rawArgs.every((arg, index) => ["--audit", "--repository-only", "--debate"].includes(arg) || rawArgs[index - 1] === "--debate"));
+  const child = spawnSync(process.execPath, [
+    "scripts/audit-standalone-team-debate.mjs", "--debate", requestedDebateNumber, "--audit",
+    ...(rawArgs.includes("--repository-only") ? ["--repository-only"] : [])
+  ], {cwd: ROOT, stdio: "inherit"});
+  assert.equal(child.status, 0, `Team Debate ${requestedDebateNumber}: complete publication audit failed`);
+  process.exit(0);
+}
 const DEBATE_NUMBER = selectedRegistryRecord.debateNumber;
 const DEBATE_ROOT = selectedRegistryRecord.root;
 const VIDEO_ID = selectedRegistryRecord.videoId;
@@ -118,6 +129,18 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/audit-assessment-production-standalone-content-parity.mjs\u0000966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec/audit-assessment-production-standalone-content-parity.mjs"
+  ],
+  [
+    "scripts/validate-debates.mjs\u00003e43613ee715d493f77eb3639d50ba074170d88a045a54b38020f6d5a325a38e",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/3e43613ee715d493f77eb3639d50ba074170d88a045a54b38020f6d5a325a38e/validate-debates.mjs"
+  ],
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u00004927b9921aee23c8a8e5ecf53f78f2828cbd3728910586aebd5762d4a757a8eb",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/4927b9921aee23c8a8e5ecf53f78f2828cbd3728910586aebd5762d4a757a8eb/audit-assessment-production-standalone-v1.mjs"
+  ],
   [
     "scripts/audit-assessment-production-standalone-v1.mjs\u0000e02e60abb7e7e5ff92d447361fd8c960053643675ee1b958df7b17e7dd6ac9aa",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/e02e60abb7e7e5ff92d447361fd8c960053643675ee1b958df7b17e7dd6ac9aa/audit-assessment-production-standalone-v1.mjs"
@@ -441,7 +464,8 @@ function validateFrozenInputBoundary({
         "frozen-legacy-v1",
         "semantic-balanced-v1",
         "semantic-balanced-capacity-v2",
-        "semantic-balanced-capacity-primary-speaker-v1"
+        "semantic-balanced-capacity-primary-speaker-v1",
+        "team-approximation-v1"
       ].includes(
         record.validationProfile
       ),
@@ -467,6 +491,9 @@ function validateFrozenInputBoundary({
       }
     }
     if (record.rhetoricalTagReview) {
+      const teamRun = record.validationProfile === "team-approximation-v1"
+        ? openTeamRun(record.debateNumber, ROOT)
+        : null;
       for (const [key, value] of Object.entries(record.rhetoricalTagReview)) {
         if (["modelSlug", "modelLabel", "reasoningEffort"].includes(key)) {
           continue;
@@ -478,6 +505,8 @@ function validateFrozenInputBoundary({
         const expectedDirectory =
           key === "renderingAuditPath"
             ? `${record.root}/rendering/`
+            : teamRun
+              ? teamRun.local("publication/rhetorical-tags/")
             : `${record.root}/publication/`;
         assert.equal(
           value.startsWith(expectedDirectory),

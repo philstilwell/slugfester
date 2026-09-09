@@ -16,12 +16,16 @@ const rawArgs = process.argv.slice(2);
 const debateFlag = rawArgs.indexOf("--debate");
 const requestedNumber = debateFlag >= 0 ? rawArgs[debateFlag + 1] : null;
 const printMode = rawArgs.includes("--print");
+const candidateFlag = rawArgs.indexOf("--candidate");
+const candidatePath = candidateFlag >= 0 ? rawArgs[candidateFlag + 1] : null;
+if (candidatePath) assert(requestedNumber, "Candidate staging requires an explicit debate number");
 for (let index = 0; index < rawArgs.length; index += 1) {
   if (rawArgs[index] === "--debate") {
     assert.match(rawArgs[index + 1] ?? "", /^\d{2,}$/);
     index += 1;
     continue;
   }
+  if (rawArgs[index] === "--candidate") { assert(rawArgs[index + 1]); index += 1; continue; }
   assert.equal(rawArgs[index], "--print", `unknown argument: ${rawArgs[index]}`);
 }
 
@@ -283,13 +287,14 @@ const standaloneNumbers = new Set(
 );
 const selectedRecords = registry.debates.filter(
   (record) =>
-    record.status === "published-and-frozen" &&
+    (record.status === "published-and-frozen" || Boolean(candidatePath && requestedNumber === record.debateNumber)) &&
     (!requestedNumber || record.debateNumber === requestedNumber)
 );
 assert.ok(selectedRecords.length > 0, "no matching published standalone debates");
 
 for (const record of selectedRecords) {
-  const debate = debates.find((item) => item.number === record.debateNumber);
+  const debate = candidatePath ? JSON.parse(readFileSync(candidatePath,"utf8")).candidate : debates.find((item) => item.number === record.debateNumber);
+  if (candidatePath) { assert.notEqual(record.status,"published-and-frozen"); assert.equal(debate.number,record.debateNumber); assert.equal(debate.id,record.debateId); }
   assert.ok(debate, `Debate ${record.debateNumber}: production record missing`);
   const referenceDebates = debates
     .filter(
