@@ -5,6 +5,14 @@ import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { assessmentGuide, debateSectionAnchor, relatedDebates } from "../src/data/reader-guides.js";
 import { researchInsights, insightLink, renderInsightsContent } from "../src/data/insights.js";
+import { debateDisplayTitle, debateTitleWithYear } from "../src/seo.js";
+
+const scopedTitle = Object.freeze({ title: "A vs B — Question? (2004, formal rounds)", year: 2004 });
+assert.equal(debateDisplayTitle(scopedTitle), "A vs B — Question?");
+assert.equal(debateTitleWithYear(scopedTitle), "A vs B — Question? · 2004");
+assert.equal(scopedTitle.title, "A vs B — Question? (2004, formal rounds)");
+assert.equal(debateDisplayTitle({ title: "Question? (2004)" }), "Question?");
+assert.equal(debateDisplayTitle({ title: "Question? (a formal reply)" }), "Question? (a formal reply)");
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const peopleCache = new Map();

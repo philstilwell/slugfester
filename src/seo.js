@@ -72,7 +72,7 @@ function speakerSummary(names = []) {
 }
 
 export function debateDisplayTitle(debate) {
-  return String(debate?.title || "").replace(/\s*\((?:19|20)\d{2}\)\s*$/, "").trim();
+  return String(debate?.title || "").replace(/\s*\((?:19|20)\d{2}(?:, formal rounds)?\)\s*$/, "").trim();
 }
 
 export function debateYear(debate) {
