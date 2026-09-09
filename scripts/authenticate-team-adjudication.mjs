@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {fileRecord,validateMultiSpeakerAdjudication} from './lib/assessment-production-multi-speaker-approximation-v1.mjs';
+import {openTeamRun,validateTeamSourceStage,validateTeamJudgmentStage,validateTeamAdjudicationExecution} from './lib/assessment-standalone-team-pipeline-v1.mjs';
+const args=process.argv.slice(2);assert.equal(args.length,2);assert.equal(args[0],'--debate');
+const run=openTeamRun(args[1]),source=validateTeamSourceStage(run),judgments=validateTeamJudgmentStage(run,source);
+const intentPath=run.local('adjudication/execution-intent.json'),dispatchPath=run.local('adjudication/dispatch.json');
+const intent=run.read(intentPath),dispatch=run.read(dispatchPath);
+for(const key of ['packet','prompt','audio'])run.check(intent[key]);
+assert.equal(intent.attemptsAllowed,1);assert.equal(dispatch.attempts,1);
+validateMultiSpeakerAdjudication(run.read(intent.output),run.read(run.local('disagreements/disagreements.json')));
+const execution={...dispatch,status:'completed-and-authenticated',completedAt:new Date().toISOString(),intent:fileRecord(intentPath),dispatch:fileRecord(dispatchPath),packet:intent.packet,prompt:intent.prompt,audio:intent.audio,output:fileRecord(intent.output)};
+writeFileSync(run.local('adjudication/execution.json'),JSON.stringify(execution,null,2)+'\n',{flag:'wx'});
+validateTeamAdjudicationExecution(run,judgments);
+console.log(JSON.stringify({status:execution.status,output:execution.output}));

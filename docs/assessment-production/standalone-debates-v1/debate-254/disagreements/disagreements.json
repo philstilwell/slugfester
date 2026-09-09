@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "1.0-multi-speaker-disagreement-extraction",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "m02:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "m02",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "Specific laws are cited, but the claim that most slavery concerns culpable war prisoners is asserted without representative support in this passage."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Specific laws and debt and war contexts are cited, although the broad prevalence claim and prison analogy receive little support."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 15,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 53,
+          "rationale": "Sparing the girls is compatible with protection, but the move does not establish that incorporation rather than property control was the intended outcome."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "The innocence distinction could explain sparing the girls, but being spared does not itself establish protection or exclude coercive status."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 47,
+          "rationale": "The asserted ages, collective culpability of adult women, and protective purpose are not supported by quoted language from Numbers 31 in this excerpt."
+        },
+        "option-b": {
+          "value": 60,
+          "rationale": "Numbers 25 supplies contextual linkage, while age, sexual status, protection, and lack of coercion are largely asserted in this span."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 65,
+          "rationale": "It directly denies rape and sexual slavery, yet responds to a broad closing rather than confronting the passage's ownership or plunder classification."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "It directly rejects the rape reading and offers an alternative, but does not address the girls' classification as captured spoils."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 6,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "A protective reading would matter to the regulation defense, but the unstated bridge from being spared to being protected remains substantial."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The contested case matters to coercive captivity, though the proposed protective interpretation remains insufficiently established."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 3,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 70,
+          "rationale": "The claimed distinction between judged adults and protected young girls is clear, while the legal status of the spared girls is left unspecified."
+        },
+        "option-b": {
+          "value": 73,
+          "rationale": "The causal narrative is understandable, but broad age generalizations and the meaning of being accepted remain imprecise."
+        }
+      }
+    },
+    {
+      "disputeId": "m20:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "m20",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 8,
+        "moveScoreDelta": 10
+      },
+      "options": {
+        "option-a": {
+          "value": 48,
+          "rationale": "Calling the opposing interpretation a scary twisting overstates what the move establishes and bypasses the live concern about property status."
+        },
+        "option-b": {
+          "value": 56,
+          "rationale": "The reply correctly denies that virginity alone proves rape, but calls the contrary reading scary while understating coercive alternatives."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 1,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": -3,
+          "rationale": "The affirmative establishes a coherent dignity ideal and a possible accommodation framework, but never adequately reconciles that framework with the specific lifelong ownership, inheritance, beating, unequal-release, and slave-obedience texts pressed across m06, m09, m16, m17, m18, m22, and m21.",
+          "distinctUnscoredConsequence": "Across sections, the affirmative's general canonical trajectory remains disconnected from the legal status of persons in the most specific contrary passages, leaving its defense of the Bible's actual treatment materially incomplete beyond the defects scored in any single move.",
+          "relatedMoveIds": [
+            "m01",
+            "m02",
+            "m03",
+            "m06",
+            "m09",
+            "m16",
+            "m17",
+            "m18",
+            "m19",
+            "m22",
+            "m20",
+            "m21"
+          ]
+        },
+        "option-b": {
+          "value": -2,
+          "rationale": "The affirmative establishes a meaningful canonical equality trajectory but leaves the specific ownership laws and New Testament obedience countertexts materially unresolved.",
+          "distinctUnscoredConsequence": "Across sections, the claimed abolitionist conclusion remains disconnected from the most specific permissions and institutional counterexamples.",
+          "relatedMoveIds": [
+            "m06",
+            "m09",
+            "m16",
+            "m17",
+            "m18",
+            "m19",
+            "m22"
+          ]
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 1,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 2,
+          "rationale": "The critical side completes a mutually reinforcing route from a bounded ownership definition through specific legal incidents, contextual lexical analysis, autonomy consequences, and New Testament non-correction, while fairly granting several mitigation claims.",
+          "distinctUnscoredConsequence": "The separate legal, lexical, moral, and New Testament strands converge on the same institutional classification without depending on teammate repetition, giving the critical burden cross-sectional completion not captured by any one move rating.",
+          "relatedMoveIds": [
+            "m05",
+            "m06",
+            "m07",
+            "m08",
+            "m09",
+            "m11",
+            "m12",
+            "m14",
+            "m16",
+            "m17",
+            "m18",
+            "m22",
+            "m21"
+          ]
+        },
+        "option-b": {
+          "value": 1,
+          "rationale": "The negative completes its critical burden across ownership, autonomy, lexical context, and New Testament non-condemnation with mutually reinforcing specific evidence.",
+          "distinctUnscoredConsequence": "The independent legal, moral, lexical, and canonical routes converge on the same unresolved institutional permission beyond any single scored move.",
+          "relatedMoveIds": [
+            "m05",
+            "m06",
+            "m07",
+            "m09",
+            "m16",
+            "m17",
+            "m18",
+            "m22"
+          ]
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 22,
+    "disputesExtracted": 9,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  }
+}

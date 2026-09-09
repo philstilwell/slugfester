@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {writeFileSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from './lib/assessment-production-multi-speaker-approximation-v1.mjs';
+import {openTeamRun} from './lib/assessment-standalone-team-pipeline-v1.mjs';
+import {validateSecondProseException} from './lib/assessment-team-prose-exception-v1.mjs';
+const args=process.argv.slice(2);assert.equal(args[0],'--debate');assert.equal(args.length,2);const run=openTeamRun(args[1]),folder=run.local('publication/repairs/second-exception-1'),intent=run.read(`${folder}/execution-intent.json`),dispatch=run.read(`${folder}/dispatch.json`);
+for(const key of ['authorization','supplement','guard','packet','prompt'])run.check(intent[key]);
+const result=spawnSync(process.execPath,['scripts/validate-team-prose-repair.mjs','--packet',intent.packet.path,'--file',intent.output],{encoding:'utf8'});assert.equal(result.status,0,result.stdout+result.stderr);
+const execution={...dispatch,status:'passed-authorized-two-field-exception',at:new Date().toISOString(),intent:fileRecord(`${folder}/execution-intent.json`),dispatch:fileRecord(`${folder}/dispatch.json`),authorization:intent.authorization,supplement:intent.supplement,guard:intent.guard,packet:intent.packet,prompt:intent.prompt,output:fileRecord(intent.output),validation:JSON.parse(result.stdout),editorialReview:fileRecord(`${folder}/editorial-review.json`)};
+writeFileSync(`${folder}/execution.json`,JSON.stringify(execution,null,2)+'\n',{flag:'wx'});
+const checked=validateSecondProseException(run);assert.deepEqual(run.record.publicationHold,checked.authority.stop);
+const resolution={status:'authorized-two-field-exception-passed-resume-publication',at:new Date().toISOString(),priorStop:run.record.publicationHold,exception:fileRecord(`${folder}/execution.json`),pendingShards:checked.stop.pendingShards,publicationConcurrencyMaximum:2,attemptsPerPendingShard:1,additionalInstruction:intent.guard,currentStatusSupplement:intent.supplement,directIncrementalCostUsd:0};
+const resolutionPath=run.local('publication/repairs/resumption-2.json');writeFileSync(resolutionPath,JSON.stringify(resolution,null,2)+'\n',{flag:'wx'});
+delete run.record.publicationHold;run.record.publicationRecovery=fileRecord(resolutionPath);run.record.status='score-frozen-publication-repairs-resumed';
+writeFileSync('docs/assessment-production/standalone-debates-v1/registry.json',JSON.stringify(run.registry,null,2)+'\n');
+console.log(JSON.stringify(resolution));

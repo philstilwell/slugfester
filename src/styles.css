@@ -2183,7 +2183,8 @@ a {
   line-height: 1;
 }
 
-.ranking-card-main > img {
+.ranking-card-main > img,
+.ranking-card-main > .portrait-placeholder img {
   display: block;
   width: 52px;
   height: 52px;
@@ -2409,7 +2410,8 @@ a {
   gap: 18px;
 }
 
-.profile-identity > img {
+.profile-identity > img,
+.profile-identity > .portrait-placeholder img {
   width: clamp(92px, 12vw, 136px);
   height: clamp(92px, 12vw, 136px);
   flex: 0 0 auto;
@@ -5276,6 +5278,33 @@ a {
   overflow-wrap: anywhere;
 }
 
+.portrait-placeholder {
+  position: relative;
+  display: inline-grid;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e3f3f0;
+  color: #173d38;
+}
+
+.portrait-placeholder > img {
+  visibility: hidden;
+}
+
+.portrait-placeholder > span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 850;
+  font-size: 0.78rem;
+}
+
+.profile-identity > .portrait-placeholder > span {
+  font-size: 2rem;
+}
+
 .speaker-avatar-stack {
   display: inline-flex;
   flex: 0 0 auto;
@@ -6333,7 +6362,8 @@ a {
     height: 42px;
   }
 
-  .ranking-card-main > img {
+  .ranking-card-main > img,
+  .ranking-card-main > .portrait-placeholder img {
     width: 48px;
     height: 48px;
   }

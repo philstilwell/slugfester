@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-standalone-team-inventory-targeted-correction",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "correctionCycle": 2,
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/recovery-authorization-2.json",
+    "findingId": "audit-254-f03"
+  },
+  "status": "complete-pending-independent-reaudit",
+  "sourceInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-2.json",
+    "sha256": "6e00c4f66ce7766c2b5a48b37160937d465a10f1e1cb0292cf67e4df8a203612"
+  },
+  "correctedInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-3.json",
+    "sha256": "d006b4fdb34096d5046fe7a2914e1f1eaca63e572b6d32a64566d2a122d77ed6"
+  },
+  "resolution": "Selected Joshua Bowen's events 3002-3029 as m22 because Luke 17 is a distinct textual premise reaching m09's earlier New Testament non-condemnation inference. Because m18 is the latest retained extension of that inference group, m22 extends m18 while explicitly identifying its relationship to m09. The move earns credit only for the new Luke 17 premise, remains attributed at medium confidence, and awaits audio confirmation.",
+  "changedFieldPaths": [
+    "moves (inserted moveId=m22 before moveId=m20)",
+    "speakerCoverage[speaker=Joshua Bowen].substantiveOpportunityCount",
+    "speakerCoverage[speaker=Joshua Bowen].selectedMoveIds",
+    "formatFitness.sectionAlignments[sectionId=new-testament-and-cases,speaker=Joshua Bowen].selectedMoveIds",
+    "selectionBalanceAudit.totalBySide.con",
+    "selectionBalanceAudit.sections[sectionId=new-testament-and-cases].con",
+    "selectionBalanceAudit.asymmetryRationale"
+  ],
+  "unchangedDecisionStatement": "All candidate-2 fields not listed in changedFieldPaths remain byte-equivalent as parsed JSON values; no unrelated move, span, quotation candidate, repetition record, section, route, identity, or source-scope decision changed.",
+  "audioAssertions": {
+    "audioReviewed": false,
+    "audioConfirmedMoves": [],
+    "note": "This is a caption/event-index source correction only."
+  }
+}

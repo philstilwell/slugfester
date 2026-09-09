@@ -1,8 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=33b0d630358a9455";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=33b0d630358a9455";
-import { debateSummaries } from "./data/debate-summaries.js?v=33b0d630358a9455";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=33b0d630358a9455";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=33b0d630358a9455";
+import { topicCategoryDefinitions } from "./data/topics.js?v=6804e09c25d56756";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=6804e09c25d56756";
+import { debateSummaries } from "./data/debate-summaries.js?v=6804e09c25d56756";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=6804e09c25d56756";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=6804e09c25d56756";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -38,7 +38,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=33b0d630358a9455";
+} from "./seo.js?v=6804e09c25d56756";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -90,7 +90,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=33b0d630358a9455")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=6804e09c25d56756")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -109,7 +109,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=33b0d630358a9455")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=6804e09c25d56756")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -125,7 +125,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=33b0d630358a9455`)
+    const promise = import(`./data/debate-details/${id}.js?v=6804e09c25d56756`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -140,7 +140,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=33b0d630358a9455`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=6804e09c25d56756`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -710,10 +710,17 @@ function renderDebateCard(debate) {
   `;
 }
 
+function renderPersonPortrait(person, { className = "", named = false, eager = false } = {}) {
+  const picture = `<img${className ? ` class="${escapeHtml(className)}"` : ""} src="${escapeHtml(person.src)}" alt="${named && !person.placeholder ? escapeHtml(person.name) : ""}" width="512" height="512"${eager ? "" : ' loading="lazy"'} decoding="async">`;
+  if (!person.placeholder) return picture;
+  const initials = person.name.split(/\s+/).map(part => [...part][0]).slice(0, 2).join("");
+  return `<span class="portrait-placeholder" aria-hidden="true">${picture}<span>${escapeHtml(initials)}</span></span>`;
+}
+
 function renderCardInterlocutor(person) {
   return `
     <a class="card-interlocutor" href="${escapeHtml(interlocutorPath(person))}" aria-label="Open ${escapeHtml(person.name)}'s interlocutor profile" title="${escapeHtml(person.name)}">
-      <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
+${renderPersonPortrait(person, {})}
     </a>
   `;
 }
@@ -1715,7 +1722,7 @@ function renderComparisonPerson(person, maximumBandCount) {
   return `
     <article class="comparison-person" data-comparison-person="${escapeHtml(person.name)}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}" data-appearances="${person.appearances}">
       <a class="comparison-person-identity" href="${escapeHtml(interlocutorPath(person))}">
-        <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+${renderPersonPortrait(person, {named: true, })}
         <span>
           <strong>${escapeHtml(person.name)}</strong>
           <small>${person.appearances} ${person.appearances === 1 ? "scorecard" : "scorecards"}</small>
@@ -1805,7 +1812,7 @@ function renderRankingCard(person, maximumTagRate) {
       <article class="ranking-card" data-ranking-person="${escapeHtml(person.name)}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}" data-appearances="${person.appearances}">
         <a class="ranking-card-main" href="${escapeHtml(profileHref)}" aria-label="Open ${escapeHtml(person.name)}'s debate profile">
           <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
-          <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" loading="lazy" decoding="async">
+${renderPersonPortrait(person, {named: true, })}
           <span class="ranking-person">
             <strong>${escapeHtml(person.name)}</strong>
             <span class="ranking-appearance-line"><small>${escapeHtml(debateLabel)}</small>${renderSampleConfidence(person.appearances)}</span>
@@ -2051,7 +2058,7 @@ function renderInterlocutorProfile(slug) {
 
         <section class="profile-hero">
           <div class="profile-identity">
-            <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" decoding="async">
+${renderPersonPortrait(person, {named: true, eager: true, })}
             <div>
               <p class="eyebrow">Interlocutor profile</p>
               <h1>${escapeHtml(person.name)}</h1>
@@ -2102,7 +2109,7 @@ function renderInterlocutorProfile(slug) {
 
       <section class="profile-hero">
         <div class="profile-identity">
-          <img src="${escapeHtml(person.src)}" alt="${escapeHtml(person.name)}" width="512" height="512" decoding="async">
+${renderPersonPortrait(person, {named: true, eager: true, })}
           <div>
             <p class="eyebrow">Interlocutor profile</p>
             <h1>${escapeHtml(person.name)}</h1>
@@ -2179,14 +2186,7 @@ function renderTopicDebateCard(debate) {
           ${people
             .map(
               (person) => `
-                <img
-                  src="${escapeHtml(person.src)}"
-                  alt=""
-                  width="512"
-                  height="512"
-                  loading="lazy"
-                  decoding="async"
-                >
+${renderPersonPortrait(person, {})}
               `
             )
             .join("")}
@@ -2286,7 +2286,7 @@ function renderSearch() {
 function renderPersonFilter(person, selected) {
   return `
     <button class="person-filter ${selected ? "active" : ""}" type="button" data-filter-type="person" data-filter-value="${escapeHtml(person.name)}" aria-pressed="${selected}">
-      <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
+${renderPersonPortrait(person, {})}
       <span>${escapeHtml(person.name)}</span>
       <strong>${person.count}</strong>
     </button>
@@ -2327,7 +2327,7 @@ function renderSearchResult(debate) {
 function renderResultPerson(person) {
   return `
     <a class="result-person" href="${escapeHtml(interlocutorPath(person))}" aria-label="Open ${escapeHtml(person.name)}'s interlocutor profile">
-      <img src="${escapeHtml(person.src)}" alt="" width="512" height="512" loading="lazy" decoding="async">
+${renderPersonPortrait(person, {})}
       <span>${escapeHtml(person.name)}</span>
     </a>
   `;
@@ -3149,6 +3149,7 @@ function renderDebateObject(
       ${renderAssessmentGuide(debate)}
       ${renderQuoteCards(debate)}
       ${renderScoringNote(debate)}
+      ${renderTeamScoreNote(debate)}
       ${renderInteractionGuide()}
 
       <section class="columns-head" aria-label="Debate sides">
@@ -3225,7 +3226,7 @@ function renderSideHeading(side, tone) {
 function renderSpeakerAvatars(speakerText) {
   const avatars = [
     ...new Map(
-      avatarsForSpeakerText(speakerText).map((avatar) => [avatar.src, avatar])
+      avatarsForSpeakerText(speakerText).map((avatar) => [avatar.name, avatar])
     ).values()
   ];
   if (!avatars.length) return "";
@@ -3236,15 +3237,7 @@ function renderSpeakerAvatars(speakerText) {
         .map(
           (avatar) => `
             <a class="speaker-avatar-link" href="${escapeHtml(interlocutorPath(avatar))}" aria-label="Open ${escapeHtml(avatar.name)}'s interlocutor profile" title="${escapeHtml(avatar.name)}">
-              <img
-                class="speaker-avatar"
-                src="${escapeHtml(avatar.src)}"
-                alt=""
-                width="512"
-                height="512"
-                loading="lazy"
-                decoding="async"
-              >
+${renderPersonPortrait(avatar, {className: "speaker-avatar", })}
             </a>
           `
         )
@@ -3273,6 +3266,19 @@ function renderScoringNote(debate) {
       <strong>AI-generated scorecard</strong>
       <span>Scores are AI-generated estimates of argumentative performance.</span>
       <span class="assessment-model">Assessments made by ${escapeHtml(model)}.${rubric}</span>
+    </section>
+  `;
+}
+
+function renderTeamScoreNote(debate) {
+  if (debate.assessmentFormat !== "team") return "";
+  const diagnostics = debate.teamDiagnostics;
+  return `
+    <section class="scoring-note" aria-label="Team assessment and uncertainty">
+      <strong>Collective team scores — multi-speaker approximation</strong>
+      <span>Each total assesses the team's combined case, not an individual member. These scores do not enter individual rankings or averages. The independent-review ranges below show assessment variation, not statistical confidence intervals.</span>
+      ${["pro", "con"].map(side => `<span>${escapeHtml(debate.sides[side].name)}: ${escapeHtml(diagnostics.sides[side].display)}</span>`).join("")}
+      ${diagnostics.formatSensitive ? `<span>${escapeHtml(diagnostics.formatSensitivityNotice)}</span>` : ""}
     </section>
   `;
 }
@@ -3394,7 +3400,7 @@ function renderQuoteCard(side, quote, tone) {
 
   return `
     <article class="quote-card ${tone}">
-      <span class="quote-side">${escapeHtml(side.name)} · ${escapeHtml(side.speaker)}</span>
+      <span class="quote-side">${escapeHtml(side.name)} · ${escapeHtml(quote.speaker || side.speaker)}</span>
       <blockquote>"${escapeHtml(quote.text)}"</blockquote>
       <p>${escapeHtml(quote.context)}</p>
       <span class="quote-card-mark" aria-hidden="true">"</span>
@@ -3448,6 +3454,7 @@ function renderArgument(argument, tone, debate, section, sideKey) {
         <span>${escapeHtml(argument.role)}</span>
         <strong class="${scoreTone(argument.score)}">${argument.score}</strong>
       </div>
+      ${debate.assessmentFormat === "team" ? `<p class="eyebrow">${escapeHtml(argument.speaker)}</p>` : ""}
       <p>${escapeHtml(argument.words)}</p>
       <div class="argument-footer">
         ${renderCritique(argument, debate, section, sideKey)}
@@ -3808,7 +3815,7 @@ function renderReferenceAppearance(appearance) {
         <span>${renderTimestampLink(appearance.argument.time, appearance.debate.youtubeUrl, `Open YouTube source at ${appearance.argument.time}`)}</span>
       </div>
       <h3>${escapeHtml(appearance.section.title)}</h3>
-      <p class="reference-speaker">${escapeHtml(appearance.side.name)} · ${escapeHtml(appearance.side.speaker)} · ${escapeHtml(appearance.argument.role)}</p>
+      <p class="reference-speaker">${escapeHtml(appearance.side.name)} · ${escapeHtml(appearance.argument.speaker || appearance.side.speaker)} · ${escapeHtml(appearance.argument.role)}</p>
       <blockquote>${escapeHtml(appearance.argument.words)}</blockquote>
       <p>${escapeHtml(appearance.tag.context)}</p>
       <p class="reference-debate-return">
@@ -3894,21 +3901,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=33b0d630358a9455")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=6804e09c25d56756")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=33b0d630358a9455")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=6804e09c25d56756")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=33b0d630358a9455")
+    insightsPromise ||= import("./data/insights.js?v=6804e09c25d56756")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

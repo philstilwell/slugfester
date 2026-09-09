@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0-multi-speaker-independent-inventory-audit",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "status": "complete-with-unresolved-findings",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "reviewerRole": "independent-score-blind-inventory-auditor",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "inventorySha256": "6e00c4f66ce7766c2b5a48b37160937d465a10f1e1cb0292cf67e4df8a203612",
+  "sourceLocks": {
+    "transcriptSha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4",
+    "eventsSha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+  },
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "primaryJudgmentsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "findings": [
+    {
+      "findingId": "audit-254-f03",
+      "category": "opportunity-coverage",
+      "severity": "material",
+      "rationale": "The correction removes the false Joshua Bowen repetition record at 8,939,000-9,008,000 ms but does not preserve the actual later teammate contribution that the record purported to deduplicate. Events 3002-3029, 6,561,760-6,623,920 ms, contain Bowen's distinct Luke 17 premise: Jesus uses a slave who must continue serving, which Bowen says undercuts a New Testament condemnation of slavery. This is later than Matt Dillahunty's m09 and reaches the same team inference through a new textual premise. Under the team protocol it therefore needed either selection as an incremental contribution linked to m09 or an accurate excluded-repetition record with its real interval and rationale. Simply deleting the bad record hides rather than resolves the Q&A coverage/deduplication decision. The one authorized correction cycle is exhausted, so this remains unresolved and no further repair is authorized in this audit.",
+      "relatedMoveIds": [
+        "m09"
+      ],
+      "correctionRequired": true,
+      "resolved": false
+    }
+  ],
+  "correctionHistory": [
+    {
+      "priorInventorySha256": "53e2902b47bf8775f763b4aae8515fb542f3f66f463e04d7cc9c1d58e76a7fa4",
+      "summary": "One bounded correction re-anchored m20 and m21, added one caption-exact quotation candidate per team, and removed two false repetition records. It resolved findings f01, f02, and f04, but did not fully resolve f03's Q&A coverage and team-deduplication requirement.",
+      "resolvedFindingIds": [
+        "audit-254-f01",
+        "audit-254-f02",
+        "audit-254-f04"
+      ]
+    }
+  ],
+  "verdict": "correction-exhausted-not-approved",
+  "approvedForScoring": false,
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingMovesChecked": true,
+    "speakerOwnershipChecked": true,
+    "opportunityCoverageChecked": true,
+    "formatFitnessChecked": true,
+    "scoreBlind": true
+  }
+}

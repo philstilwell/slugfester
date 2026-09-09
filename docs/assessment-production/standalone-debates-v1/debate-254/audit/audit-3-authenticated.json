@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0-multi-speaker-independent-inventory-audit",
+  "protocolId": "assessment-production-multi-speaker-approximation-v1",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "reviewerRole": "independent-score-blind-inventory-auditor",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "inventorySha256": "d006b4fdb34096d5046fe7a2914e1f1eaca63e572b6d32a64566d2a122d77ed6",
+  "sourceLocks": {
+    "transcriptSha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4",
+    "eventsSha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+  },
+  "exceptionAuthorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/recovery-authorization-2.json",
+    "sha256": "16de5456d444cb34eb9d5c1170fb3b7bb20b50cd5dbf0a1532384b93cfd7aafc",
+    "findingId": "audit-254-f03",
+    "additionalTargetedCorrectionAuthorized": true
+  },
+  "priorAuditHistory": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audit/audit-1.json",
+      "sha256": "9eb98eb882ae04a416d499d21cd79695fc133bb69ad97717765e2011cafe789d",
+      "inventorySha256": "53e2902b47bf8775f763b4aae8515fb542f3f66f463e04d7cc9c1d58e76a7fa4",
+      "verdict": "correction-required",
+      "approvedForScoring": false
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audit/audit-2.json",
+      "sha256": "2512997a61311537b0954d22cd5cab11a49e1b872f788cecce6494eec025572d",
+      "inventorySha256": "6e00c4f66ce7766c2b5a48b37160937d465a10f1e1cb0292cf67e4df8a203612",
+      "verdict": "correction-exhausted-not-approved",
+      "approvedForScoring": false,
+      "note": "The ordinary first correction cycle failed to preserve Joshua Bowen's actual Luke 17 contribution; this failure remains part of the audit trail."
+    }
+  ],
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "primaryJudgmentsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "contaminationDetected": false
+  },
+  "findings": [
+    {
+      "findingId": "audit-254-f01",
+      "category": "speaker-ownership",
+      "severity": "blocking",
+      "rationale": "Resolved in candidate 2 and preserved unchanged in candidate 3: m20 is re-anchored to events 3866-3893, 8,354,880-8,428,720 ms, whose source-exact captions contain Cliffe Knechtle's Numbers 31 protection answer. Attribution remains medium and requires later audio confirmation.",
+      "relatedMoveIds": [
+        "m20"
+      ],
+      "correctionRequired": true,
+      "resolved": true
+    },
+    {
+      "findingId": "audit-254-f02",
+      "category": "speaker-ownership",
+      "severity": "blocking",
+      "rationale": "Resolved in candidate 2 and preserved unchanged in candidate 3: m21 is re-anchored to events 3896-3901, 8,429,280-8,441,600 ms, capturing the compact Joshua Bowen plunder/property answer and ending before the later multi-voice elaboration. Attribution remains medium and requires later audio confirmation.",
+      "relatedMoveIds": [
+        "m21"
+      ],
+      "correctionRequired": true,
+      "resolved": true
+    },
+    {
+      "findingId": "audit-254-f03",
+      "category": "opportunity-coverage",
+      "severity": "material",
+      "rationale": "Resolved by the explicitly authorized exceptional correction: candidate 3 adds m22 from source-exact events 3002-3029, 6,561,760-6,625,920 ms, as Joshua Bowen's distinct Luke 17 premise. It is chronological after m19 and before m20, replies to m19, uses the con-nt-silence bridge, and extends the same-side nt-noncondemnation chain m09 to m18 to m22 without transferring credit from Matt Dillahunty. Joshua Bowen's opportunity count, selected IDs, section alignment, con total, section count, and asymmetry rationale are the only mechanically necessary derived changes.",
+      "relatedMoveIds": [
+        "m09",
+        "m18",
+        "m22"
+      ],
+      "correctionRequired": true,
+      "resolved": true
+    },
+    {
+      "findingId": "audit-254-f04",
+      "category": "opportunity-coverage",
+      "severity": "material",
+      "rationale": "Resolved in candidate 2 and preserved unchanged in candidate 3: m01 and m06 each retain a source-exact 3-18-word quotation candidate, giving representative caption wording for both teams. These remain quotation candidates only and must not be treated as audio-verified.",
+      "relatedMoveIds": [
+        "m01",
+        "m06"
+      ],
+      "correctionRequired": true,
+      "resolved": true
+    }
+  ],
+  "correctionHistory": [
+    {
+      "priorInventorySha256": "6e00c4f66ce7766c2b5a48b37160937d465a10f1e1cb0292cf67e4df8a203612",
+      "summary": "The user-authorized exceptional targeted cycle added source-exact m22 for Joshua Bowen's Luke 17 premise and changed only its mechanically necessary coverage, alignment, count, and asymmetry fields. It resolves the sole finding left unresolved by the failed ordinary correction cycle.",
+      "resolvedFindingIds": [
+        "audit-254-f03"
+      ]
+    }
+  ],
+  "verdict": "accept",
+  "approvedForScoring": true,
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingMovesChecked": true,
+    "speakerOwnershipChecked": true,
+    "opportunityCoverageChecked": true,
+    "formatFitnessChecked": true,
+    "scoreBlind": true
+  }
+}

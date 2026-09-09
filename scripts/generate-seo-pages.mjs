@@ -511,7 +511,8 @@ function referenceAppearance(debate, section, sideKey, argument, tag) {
     argument: {
       time: argument.time,
       role: argument.role,
-      words: argument.words
+      words: argument.words,
+      ...(argument.speaker ? { speaker: argument.speaker } : {})
     },
     tag: {
       type: tag.type,

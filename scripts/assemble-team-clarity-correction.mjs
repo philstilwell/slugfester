@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {writeFileSync,mkdirSync,existsSync} from 'node:fs';
+import path from 'node:path';
+import {openTeamRun,validateTeamSourceStage,validateTeamJudgmentStage,validateTeamResolvedStage,validateTeamScoreStage} from './lib/assessment-standalone-team-pipeline-v1.mjs';
+import {fileRecord,deriveMultiSpeakerScores,deriveMultiSpeakerScoreUncertainty,analyzeMultiSpeakerFormatSensitivity,buildMultiSpeakerPublicationDiagnostics,validateMultiSpeakerScoreStability} from './lib/assessment-production-multi-speaker-approximation-v1.mjs';
+import {clarityInputs,correctedClarityLedger,annotateReplacementScore,validateClarityScore} from './lib/assessment-team-clarity-correction-v1.mjs';
+const args=process.argv.slice(2);assert.equal(args.length,4);assert.equal(args[0],'--debate');assert.equal(args[2],'--folder');const run=openTeamRun(args[1]),folder=args[3];assert(folder.startsWith(`${run.record.root}/recovery/`));assert(!run.record.clarityCorrection);
+const source=validateTeamSourceStage(run),judgments=validateTeamJudgmentStage(run,source),resolved=validateTeamResolvedStage(run,source,judgments);validateTeamScoreStage(run,source,judgments,resolved);
+const inputs=clarityInputs(run,folder,source,judgments);
+assert(!existsSync(`${folder}/execution.json`),'Never rerun the assembly or score attempt');
+const put=(name,obj)=>{const p=`${folder}/${name}`;mkdirSync(path.dirname(p),{recursive:true});writeFileSync(p,JSON.stringify(obj,null,2)+'\n',{flag:'wx'});return fileRecord(p);};
+const contexts=inputs.contexts.map(({pass,...c})=>({pass,...Object.fromEntries(Object.entries(c).filter(([k])=>!['intent','output'].includes(k))),intent:fileRecord(`${folder}/${pass}/execution-intent.json`),dispatch:fileRecord(`${folder}/${pass}/dispatch.json`),packet:c.intent.packet,prompt:c.intent.prompt,output:fileRecord(c.intent.output)}));
+const execution=put('execution.json',{status:'authenticated-two-fresh-clarity-only-reviews',at:new Date().toISOString(),authorization:fileRecord(`${folder}/authorization.json`),sourceErratum:fileRecord(`${folder}/source-erratum.json`),packet:fileRecord(`${folder}/packet.json`),contexts,disputesChanged:0,newAdjudicationRequired:false,otherJudgmentChanges:0,burdenChanges:0,directIncrementalCostUsd:0});
+const inventory=put('inventory.json',inputs.inventory),passA=put('pass-a/assembled.json',inputs.passA),passB=put('pass-b/assembled.json',inputs.passB),disagreements=put('disagreements.json',inputs.disagreements);
+const locks={authorization:fileRecord(`${folder}/authorization.json`),erratum:fileRecord(`${folder}/source-erratum.json`),execution,correctedInventory:inventory};
+const finalLedger=correctedClarityLedger(source,resolved,inputs,locks),input=put('final-ledger.json',finalLedger);
+const priorAttestation=fileRecord(run.local('score-pass/attestation.json')),controls=run.read(priorAttestation.path).controls;
+const inputManifest=put('score-pass/input-manifest.json',{status:'frozen-before-authorized-exceptional-replacement',at:new Date().toISOString(),authorization:locks.authorization,originalAttestation:priorAttestation,input,controls,scorePassOrdinal:2,exceptionalReplacementOrdinal:1,manualScoreOverrides:0,modelAuthoredTotals:0});
+// This is the sole authorized new calculation. Everything above is frozen first.
+const raw=deriveMultiSpeakerScores(finalLedger),rawCalculatorOutput=put('score-pass/raw-calculator-output.json',raw),scores=annotateReplacementScore(raw),output=put('score-pass/output.json',scores);
+put('score-pass/attestation.json',{status:'authorized-exceptional-replacement-score-pass-complete',at:new Date().toISOString(),inputManifest,input,rawCalculatorOutput,output,controls,originalAttestation:priorAttestation,authorization:locks.authorization,scorePassOrdinal:2,exceptionalReplacementOrdinal:1,manualScoreOverrides:0,modelAuthoredTotals:0});
+const effectiveSource={...source,inventory:inputs.inventory},effectiveJudgments={passA:inputs.passA,passB:inputs.passB};
+const stability=validateMultiSpeakerScoreStability({...effectiveSource,...effectiveJudgments,finalScores:scores}),uncertainty=deriveMultiSpeakerScoreUncertainty({...effectiveSource,...effectiveJudgments,finalScores:scores}),sensitivity=analyzeMultiSpeakerFormatSensitivity({finalLedger,finalScores:scores}),diagnostics=buildMultiSpeakerPublicationDiagnostics({finalLedger,finalScores:scores,uncertainty,sensitivity});
+for(const [name,value]of Object.entries({stability,uncertainty,sensitivity,diagnostics}))put(`score-pass/${name}.json`,value);
+validateClarityScore(run,folder,finalLedger,effectiveSource,effectiveJudgments);
+put('assessment-amendment.json',{status:'authenticated-and-scored-authorized-clarity-correction',debateNumber:run.record.debateNumber,debateId:run.record.debateId,folder,...locks,passA,passB,disagreements,finalLedger:input,scoreAttestation:fileRecord(`${folder}/score-pass/attestation.json`),scope:inputs.authority.scope,originalScoreAttestation:priorAttestation});
+console.log(JSON.stringify({status:'authorized-replacement-scored-and-audited',overall:scores.overall,changedMove:scores.sections.flatMap(s=>Object.values(s.sides).flatMap(x=>x.moves)).find(m=>m.moveId===inputs.authority.scope.moveId),stability:stability.passed,originalScoreRetained:true}));

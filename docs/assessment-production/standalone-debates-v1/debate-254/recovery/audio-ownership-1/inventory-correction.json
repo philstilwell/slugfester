@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0-audio-ownership-inventory-correction",
+  "status": "corrected-awaiting-independent-reaudit",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "attempt": 1,
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/recovery/audio-ownership-1/authorization.json",
+    "bytes": 2771,
+    "sha256": "edf8504e72ba31ad838bbfbe4e752cc6446bb066937f2ed3320efe982a619c22",
+    "additionalInventoryAttemptsAuthorized": 1,
+    "paidCallsAuthorized": 0
+  },
+  "inputInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-3.json",
+    "bytes": 92974,
+    "sha256": "d006b4fdb34096d5046fe7a2914e1f1eaca63e572b6d32a64566d2a122d77ed6"
+  },
+  "outputInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/inventory/candidate-4.json",
+    "bytes": 94316,
+    "sha256": "31e2ce912a46e95cac4999d40ef400a0c59e846e681faf1aab544a9a089649db"
+  },
+  "sourceLocks": [
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/transcript.txt",
+      "bytes": 279055,
+      "sha256": "ac95de49ef47428dfd2165e379e216dcce607b8cbf71b67fe01dae2b353c43a4"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/events.json",
+      "bytes": 660522,
+      "sha256": "bc053bcc2468b24599807f239aada793b7d7ba8b98173bf9808a1876ca924091"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/manifest.json",
+      "bytes": 1028,
+      "sha256": "c51a4d3455c95b0ad4e1ca735b1e6e2ebdf81b33133f261a5389ae06833c749d"
+    },
+    {
+      "path": ".assessment-cache/captions/gcszn0DvFlM/captions.srv3.xml",
+      "bytes": 1572360,
+      "sha256": "36b3067e9795a15a2712237f31362304589061018234c8db73922078294d069c"
+    }
+  ],
+  "audioEvidence": [
+    {
+      "moveId": "m22",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/raw-continuation-1/m22.json",
+      "bytes": 7761,
+      "sha256": "59253d9bc452c1cf43679e9ffbf0142e78f42876755e26d23f898bcef5d33973",
+      "finding": "Named-reference audio assigns Bowen the Luke 17 illustration and non-condemnation conclusion, then assigns Dillahunty the necessary-tool, subservience, class-system, and undeniable-in-Luke-17 statements. Cliffe begins the following unjust-judge example.",
+      "correctedSourceSpan": {
+        "startEvent": 3002,
+        "endEvent": 3019,
+        "startMs": 6561760,
+        "endMs": 6602880
+      },
+      "spokenWordHandoffsMs": {
+        "dillahuntyTailStart": 6606810,
+        "dillahuntyTailEnd": 6623080,
+        "cliffeNextTurnStart": 6623530
+      },
+      "displayOverlapExplanation": "Caption event timestamps describe display windows, not exact word-level speech intervals. The retained event 3019 display tail ends at 6602880 before the audio-confirmed teammate handoff. Later caption events blend Bowen's trailing source-reference fragment with Dillahunty's new words, so they are excluded from Bowen's scored span rather than treated as Bowen speech."
+    },
+    {
+      "moveId": "m21",
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/audio/raw-continuation-1/m21.json",
+      "bytes": 3529,
+      "sha256": "6f898836b6f28fe1f172ae04a0873db0f7496ec48640cd9ec979999683f86872",
+      "finding": "Named-reference audio assigns Bowen only the plunder premise, Cliffe the intervening question, Dillahunty the property conclusion, and Dillahunty the later consent/autonomy explanation, with a brief Bowen acknowledgment and cross-talk between those Dillahunty statements.",
+      "correctedSourceSpan": {
+        "startEvent": 3896,
+        "endEvent": 3899,
+        "startMs": 8429280,
+        "endMs": 8438160
+      },
+      "spokenWordHandoffsMs": {
+        "bowenPremiseEnd": 8436080,
+        "cliffeQuestionStart": 8436280,
+        "dillahuntyPropertyStart": 8437780,
+        "dillahuntyPropertyEnd": 8438630,
+        "dillahuntyAutonomyStart": 8441030,
+        "dillahuntyAutonomyEnd": 8446430
+      },
+      "displayOverlapExplanation": "The final retained caption event displays until 8438160, overlapping the later spoken handoff, but its text contains only Bowen's final plunder words. The display tail is not new Bowen speech. The following caption events contain Cliffe's question and Dillahunty's property/autonomy words and are excluded from Bowen's source span."
+    }
+  ],
+  "excludedTeammateTailAccounting": [
+    {
+      "sourceMoveId": "m22",
+      "actualSpeaker": "Matt Dillahunty",
+      "startMs": 6606810,
+      "endMs": 6623080,
+      "retainedMoveIds": [
+        "m09",
+        "m18"
+      ],
+      "accounting": "The New Testament non-condemnation, unequal-status, and necessary-tool conclusion is already carried by Dillahunty's retained m09 inference as extended in m18. No new move, weight, response link, or transferred Bowen credit is warranted."
+    },
+    {
+      "sourceMoveId": "m21",
+      "actualSpeaker": "Matt Dillahunty",
+      "intervalsMs": [
+        [8437780, 8438630],
+        [8441030, 8446430]
+      ],
+      "retainedMoveIds": [
+        "m08"
+      ],
+      "accounting": "The property, forced-marriage, consent, and autonomy conclusions are already carried by Dillahunty's retained m08 ownership-immorality inference. No new move, weight, response link, or transferred Bowen credit is warranted."
+    }
+  ],
+  "preservation": {
+    "affectedMoveIdsOnly": [
+      "m22",
+      "m21"
+    ],
+    "moveCountUnchanged": 22,
+    "weightsUnchanged": true,
+    "sectionsUnchanged": true,
+    "groupsUnchanged": true,
+    "replyLinksUnchanged": true,
+    "allUnaffectedMoveBytesPreserved": true,
+    "priorFilesOverwritten": false
+  },
+  "validation": {
+    "validator": "validateMultiSpeakerInventory",
+    "status": "passed",
+    "sourceExactness": "passed",
+    "sections": 5,
+    "moves": 22,
+    "remainingGate": "A fresh independent score-blind re-audit must accept candidate-4 before it can freeze for replacement judgments."
+  }
+}

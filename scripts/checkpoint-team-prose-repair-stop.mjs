@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {existsSync,writeFileSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from './lib/assessment-production-multi-speaker-approximation-v1.mjs';
+import {openTeamRun,validateTeamSourceStage,validateTeamJudgmentStage,validateTeamResolvedStage,validateTeamScoreStage} from './lib/assessment-standalone-team-pipeline-v1.mjs';
+const args=process.argv.slice(2);assert.equal(args.length,2);assert.equal(args[0],'--debate');
+const r=openTeamRun(args[1]),s=validateTeamSourceStage(r),j=validateTeamJudgmentStage(r,s),l=validateTeamResolvedStage(r,s,j),q=validateTeamScoreStage(r,s,j,l),folder=r.local('publication/repairs'),plan=r.read(`${folder}/plan.json`);
+const completed=[],pending=[];
+for(const shard of plan.shards){if(!existsSync(shard.output)){assert(!existsSync(`${folder}/${shard.shardId}/dispatch.json`),'An in-flight worker must finish before checkpoint');pending.push(shard.shardId);continue;}
+  r.check(shard.packet);r.check(shard.prompt);r.check(shard.intent);const dispatchPath=`${folder}/${shard.shardId}/dispatch.json`,dispatch=r.read(dispatchPath);assert.equal(dispatch.attempts,1);assert.equal(dispatch.forkTurns,'none');
+  const result=spawnSync(process.execPath,['scripts/validate-team-prose-repair.mjs','--packet',shard.packet.path,'--file',shard.output],{encoding:'utf8'});assert([0,1].includes(result.status));assert(!result.stderr);const validation=JSON.parse(result.stdout),validationPath=`${folder}/${shard.shardId}/validation.json`;writeFileSync(validationPath,JSON.stringify(validation,null,2)+'\n',{flag:'wx'});
+  completed.push({...dispatch,status:validation.status==='passed'?'passed-repair':'failed-repair-preserved',shardId:shard.shardId,intent:shard.intent,dispatch:fileRecord(dispatchPath),packet:shard.packet,prompt:shard.prompt,output:fileRecord(shard.output),validation:fileRecord(validationPath),failedFields:validation.errors.map(e=>e.field),passingFields:shard.fields.filter(f=>!validation.errors.some(e=>e.field===f))});
+}
+assert(completed.some(c=>c.status==='failed-repair-preserved'));
+const execution={status:'stopped-on-exhausted-publication-field-repair',at:new Date().toISOString(),debateNumber:r.record.debateNumber,debateId:r.record.debateId,plan:fileRecord(`${folder}/plan.json`),initial:plan.initial,rejection:plan.rejection,completed,pendingShards:pending,additionalDirectCostUsd:0};
+const executionPath=`${folder}/execution-checkpoint-1.json`;writeFileSync(executionPath,JSON.stringify(execution,null,2)+'\n',{flag:'wx'});
+const stop={status:'stopped-awaiting-explicit-additional-field-repair-authorization',at:new Date().toISOString(),debateNumber:r.record.debateNumber,debateId:r.record.debateId,reason:'A critique still exceeds the unchanged 130-word maximum after its one permitted repair. Preserve passing fields and all raw output; do not dispatch remaining shards or publish until this exhausted field has new explicit authority.',execution:fileRecord(executionPath),exhaustedFields:completed.flatMap(c=>c.failedFields),passingShards:completed.filter(c=>c.status==='passed-repair').map(c=>c.shardId),passingFieldsPreserved:completed.flatMap(c=>c.passingFields),pendingShards:pending,frozenScore:{pro:q.scores.overall.pro.score,con:q.scores.overall.con.score,attestation:fileRecord(r.local('score-pass/attestation.json')),output:fileRecord(r.local('score-pass/output.json'))},scoreAuditPassed:true,sourceOwnershipCorrectionPassed:true,all22AudioChecksPassed:true,newPaidCalls:0,additionalDirectCostUsd:0,publication:false,commit:false,push:false,pullRequest:false};
+writeFileSync(r.local('publication/stop-1.json'),JSON.stringify(stop,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(stop,null,2));

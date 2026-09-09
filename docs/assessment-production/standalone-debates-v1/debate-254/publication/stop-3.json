@@ -1,0 +1,58 @@
+{
+  "status": "stopped-awaiting-explicit-deterministic-output-recovery-authorization",
+  "at": "2026-09-09T03:13:55.762Z",
+  "debateNumber": "254",
+  "debateId": "knechtle-dillahunty-bowen-biblical-slavery-2021",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/publication/repairs/execution-checkpoint-3.json",
+    "bytes": 17909,
+    "sha256": "dc403b0e937cefe9c70a0dd4e14f878fb00a004dc4dcbdd521d6ec4e001fe316"
+  },
+  "reason": "One later repair worker saved a status-only malformed JSON object despite having prechecked the complete intended strings. Its one write attempt is exhausted. Exact original draft recovered verbatim in a read-only diagnostic; no rewrite or replacement applied.",
+  "exhaustedShard": "18",
+  "exhaustedFields": [
+    "sections.4.exchanges.0.pro.words",
+    "sections.4.exchanges.0.pro.critique"
+  ],
+  "failedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/publication/repairs/18/output.json",
+    "bytes": 58,
+    "sha256": "370da14cdfa722320428414bd93f5aacb70e0d31706621bed821d865ad27cb83"
+  },
+  "precheckedOriginalDraft": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-254/publication/repairs/18/original-prewrite-evidence.json",
+    "bytes": 2682,
+    "sha256": "d13eeb3fb8bd8b5f070d71664f3f7b4df43f34768b61524357dbeafd218ba43e"
+  },
+  "proposedRecovery": "Copy the exact preserved draft into a correctly structured JSON object at a new path, without another model judgment or textual change; validate and authenticate only after explicit user authorization.",
+  "acceptedCardRepairs": 18,
+  "pendingShards": [
+    "20",
+    "21",
+    "22",
+    "23",
+    "24"
+  ],
+  "priorExceptionCompleted": true,
+  "frozenScore": {
+    "pro": 69,
+    "con": 85,
+    "output": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/score-pass/output.json",
+      "bytes": 46990,
+      "sha256": "74fbdbf56197cdfafb7622a611c31c28e51b77b38b6feba0bf17b7f9962f2fec"
+    },
+    "attestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-254/score-pass/attestation.json",
+      "bytes": 2033,
+      "sha256": "f83fcbe6aae8a14518ef96e95732f7091a0684f02d1df7bb011564b9c59dced6"
+    }
+  },
+  "all22AudioChecksPassed": true,
+  "newPaidCalls": 0,
+  "additionalDirectCostUsd": 0,
+  "publication": false,
+  "commit": false,
+  "push": false,
+  "pullRequest": false
+}

@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {fileRecord} from './lib/assessment-production-multi-speaker-approximation-v1.mjs';
+import {openTeamRun} from './lib/assessment-standalone-team-pipeline-v1.mjs';
+const args=process.argv.slice(2);assert.equal(args.length,2);assert.equal(args[0],'--debate');
+const {read,local}=openTeamRun(args[1]);
+const original=local('audit/audit-3.json'),audit=read(original),before=structuredClone(audit);
+const authorization=fileRecord(audit.exceptionAuthorization.path);
+assert.equal(audit.approvedForScoring,true);
+for(const old of audit.priorAuditHistory)assert.equal(fileRecord(old.path).sha256,old.sha256);
+audit.exceptionAuthorization.sha256=authorization.sha256;
+const after=structuredClone(audit);delete after.exceptionAuthorization.sha256;delete before.exceptionAuthorization.sha256;
+assert.deepEqual(after,before,'Only the machine-derived authorization hash may change');
+const output=local('audit/audit-3-authenticated.json');
+writeFileSync(output,JSON.stringify(audit,null,2)+'\n',{flag:'wx'});
+writeFileSync(local('audit/metadata-binding-1.json'),JSON.stringify({status:'deterministic-metadata-binding-only',preservedOriginal:fileRecord(original),authenticatedOutput:fileRecord(output),authorization,changedLeaf:'exceptionAuthorization.sha256',reason:'The independent reviewer mistyped three hexadecimal characters in a file hash. Recomputed directly from unchanged approved bytes; no source selection, finding, rationale, verdict, or repair allowance changed.',modelCalls:0},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify(fileRecord(output)));
