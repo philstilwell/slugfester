@@ -1,8 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=5fe44ec0d6de1920";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=5fe44ec0d6de1920";
-import { debateSummaries } from "./data/debate-summaries.js?v=5fe44ec0d6de1920";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=5fe44ec0d6de1920";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=5fe44ec0d6de1920";
+import { topicCategoryDefinitions } from "./data/topics.js?v=1a5b51c4c7db267d";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=1a5b51c4c7db267d";
+import { debateSummaries } from "./data/debate-summaries.js?v=1a5b51c4c7db267d";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=1a5b51c4c7db267d";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=1a5b51c4c7db267d";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -38,7 +38,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=5fe44ec0d6de1920";
+} from "./seo.js?v=1a5b51c4c7db267d";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -90,7 +90,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=5fe44ec0d6de1920")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=1a5b51c4c7db267d")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -109,7 +109,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=5fe44ec0d6de1920")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=1a5b51c4c7db267d")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -125,7 +125,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=5fe44ec0d6de1920`)
+    const promise = import(`./data/debate-details/${id}.js?v=1a5b51c4c7db267d`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -140,7 +140,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=5fe44ec0d6de1920`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=1a5b51c4c7db267d`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3901,21 +3901,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=5fe44ec0d6de1920")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=1a5b51c4c7db267d")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=5fe44ec0d6de1920")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=1a5b51c4c7db267d")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=5fe44ec0d6de1920")
+    insightsPromise ||= import("./data/insights.js?v=1a5b51c4c7db267d")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
