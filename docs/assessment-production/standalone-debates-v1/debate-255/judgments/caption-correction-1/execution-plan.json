@@ -1,0 +1,138 @@
+{
+  "status": "frozen-before-execution",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "frozenAt": "2026-09-09T17:25:11.115Z",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/authorization.json",
+    "sha256": "9c33bbb722c28f61690879ce19aede304b1bd7b727b465c3c09ef7d0a7941772",
+    "bytes": 4936
+  },
+  "commonInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+      "bytes": 152724
+    },
+    {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+      "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+      "bytes": 199829
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+      "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+      "bytes": 226182
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  ],
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "forkTurns": "none",
+  "billingSurface": "ChatGPT subscription",
+  "directIncrementalCostUsd": 0,
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/debate255_caption_correction_a",
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-a/packet.json",
+        "sha256": "db707a0c3de83789f57840dd6dec86ba55fa8ce9a6fb604af9b04217ba53931c",
+        "bytes": 7676
+      },
+      "allowedInputs": [
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-a/packet.json",
+          "sha256": "db707a0c3de83789f57840dd6dec86ba55fa8ce9a6fb604af9b04217ba53931c",
+          "bytes": 7676
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+          "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+          "bytes": 152724
+        },
+        {
+          "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+          "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+          "bytes": 199829
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+          "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+          "bytes": 226182
+        },
+        {
+          "path": "docs/assessment-production-workflow.md",
+          "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+          "bytes": 6705
+        },
+        {
+          "path": "docs/reassessment-rubric-v2.1.md",
+          "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+          "bytes": 6634
+        }
+      ],
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-a/replacement.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/debate255_caption_correction_b",
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-b/packet.json",
+        "sha256": "2e98ebd4b9c017e1f449015920dfc6d3a25e760de6569c4d59576569ecbc38e6",
+        "bytes": 6306
+      },
+      "allowedInputs": [
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-b/packet.json",
+          "sha256": "2e98ebd4b9c017e1f449015920dfc6d3a25e760de6569c4d59576569ecbc38e6",
+          "bytes": 6306
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+          "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+          "bytes": 152724
+        },
+        {
+          "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+          "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+          "bytes": 199829
+        },
+        {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+          "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+          "bytes": 226182
+        },
+        {
+          "path": "docs/assessment-production-workflow.md",
+          "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+          "bytes": 6705
+        },
+        {
+          "path": "docs/reassessment-rubric-v2.1.md",
+          "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+          "bytes": 6634
+        }
+      ],
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-b/replacement.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "inventoryValidation": {
+    "status": "passed",
+    "debateNumber": "255",
+    "sections": 5,
+    "moves": 27,
+    "belowHighAttributionMoveIds": [
+      "pro-sincere-appearances",
+      "con-vision-development-theory",
+      "con-paul-body-exchange",
+      "pro-paul-continuity",
+      "pro-paul-lexical-rebuttal",
+      "con-jewish-pauline-parallels",
+      "pro-direct-pauline-transformation-texts",
+      "pro-rubicon-comparison-rebuttal",
+      "con-mark-literary-markers",
+      "con-exchange-usage-and-context",
+      "pro-closing-comparative-fit"
+    ]
+  },
+  "scopeValidation": {
+    "status": "passed",
+    "debateNumber": "255",
+    "window": {
+      "startEvent": 46,
+      "endEvent": 1038,
+      "startMs": 310080,
+      "endMs": 5902800,
+      "durationMs": 5592720
+    },
+    "sourceEvents": 993,
+    "moves": 27,
+    "publicationChecked": false
+  },
+  "audio": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+    "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+    "bytes": 226182
+  },
+  "audioChecks": 11,
+  "lexicalChecks": 11,
+  "cost": {
+    "initialFullDebateEstimateUsd": 0.210376,
+    "frozenFullDebateEstimateUsd": 0.717020731,
+    "preauthorizedMaximumUsd": 0.91,
+    "paidCalls": 12,
+    "successfulPaidCalls": 11,
+    "failedOrUncertainCalls": 1,
+    "paidMinutes": 32.86266666666667,
+    "directCostUsd": 0.6923275,
+    "knownSuccessfulCallCostUsd": 0.6923275,
+    "maximumPotentialCombinedCostUsd": 0.7523275,
+    "uncertainCostUsd": 0.06,
+    "transcriptionCapUsd": 1,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "calculation": "Reported successful input tokens at $2.50 per million and output tokens at $10 per million, plus a conservative six-cent allowance for the preserved failed network attempt. One explicit user-authorized retry; no automatic retries."
+  },
+  "hold": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/assessment-integrity-hold.json",
+    "sha256": "4d8194d776261b244afb37aae8b90afa449248c1a8cdd717ce38ff671993cbab",
+    "bytes": 6358
+  },
+  "judgmentA": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+    "sha256": "0d56bf73e14ef01e1bb930993ff4142dd84afaabac2767f59a31742b466c9622",
+    "bytes": 36930
+  },
+  "judgmentB": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+    "sha256": "712eb0fda8466eb81cce4c9cf07bb8d8fb9f5c8fcd32952bc71257d59e6472a2",
+    "bytes": 36727
+  },
+  "adjudicationAbsent": true,
+  "scoreAbsent": true,
+  "publicationAbsent": true,
+  "status": "audio-recovery-complete-awaiting-bounded-judgment-correction-approval",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "savedAt": "2026-09-09T17:16:54.515Z",
+  "branch": "codex/debate-255",
+  "repositoryBaseline": "3e283382a3875c72f8926d0b8ef6795ad90eff07",
+  "nextAction": "Do not repeat audio, rebuild source or inventory, alter accepted-unaffected judgments, or calculate scores. Ask for explicit approval to replace only 17 identified dimension judgments in two fresh isolated correction contexts, then re-extract disputes and resume remaining workflow after validation."
+}

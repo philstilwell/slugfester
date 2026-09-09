@@ -1,0 +1,1641 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "assessmentModel": "5.6 Sol",
+  "motion": "Did Jesus rise from the dead?",
+  "assessedDebateWindowMs": {
+    "start": 310080,
+    "end": 5902800
+  },
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "position": "Historical resurrection defense",
+      "bridges": [
+        {
+          "bridgeId": "pro-motion",
+          "tier": "motion",
+          "burden": "Establish that Jesus's resurrection is the best historical explanation of the relevant facts.",
+          "successCriterion": "The death, empty tomb, and reported appearances are well supported and resurrection explains them better than live natural alternatives."
+        },
+        {
+          "bridgeId": "pro-death",
+          "tier": "subsidiary",
+          "burden": "Establish Jesus died by crucifixion.",
+          "successCriterion": "Independent attestation, crucifixion lethality, medical judgment, and the implausibility of a merely injured survivor jointly make death highly probable."
+        },
+        {
+          "bridgeId": "pro-tomb",
+          "tier": "central",
+          "burden": "Establish that Jesus's tomb was empty.",
+          "successCriterion": "Jerusalem proclamation, hostile explanation, and bodily-resurrection usage support a missing body despite source criticism."
+        },
+        {
+          "bridgeId": "pro-appearances",
+          "tier": "central",
+          "burden": "Establish sincere postmortem-appearance beliefs among followers and relevant converts.",
+          "successCriterion": "Early, multiple, and adverse-witness evidence supports sincere experiences not adequately explained by fraud or ordinary hallucination."
+        },
+        {
+          "bridgeId": "pro-paul",
+          "tier": "central",
+          "burden": "Show Paul's resurrection language supports bodily transformation rather than exchange into an unrelated heavenly body.",
+          "successCriterion": "Grammar, lexical usage, and parallel Pauline passages exhibit continuity between the mortal and raised body."
+        },
+        {
+          "bridgeId": "pro-miracle",
+          "tier": "subsidiary",
+          "burden": "Defend historical inference to miracle against a blanket prior-probability objection.",
+          "successCriterion": "A religiously significant context supplies relevant intentional background and natural rivals remain less probable."
+        }
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "position": "Naturalistic historical challenge",
+      "bridges": [
+        {
+          "bridgeId": "con-motion",
+          "tier": "motion",
+          "burden": "Show that resurrection is not the best-supported explanation of the approved historical evidence.",
+          "successCriterion": "A natural visionary-development account predicts the evidence at least as well while avoiding an exceptionally unsupported supernatural event."
+        },
+        {
+          "bridgeId": "con-paul",
+          "tier": "central",
+          "burden": "Show the earliest source, Paul, teaches acquisition of a new heavenly body rather than revival or transformation of the buried flesh.",
+          "successCriterion": "Paul's contrasts, omissions, vocabulary, and parallels more naturally indicate body exchange and conflict with later physical narratives."
+        },
+        {
+          "bridgeId": "con-tomb",
+          "tier": "central",
+          "burden": "Undermine the historicity and necessity of the empty-tomb narrative.",
+          "successCriterion": "The claim lacks early independent evidence, is unnecessary on the Pauline model, and displays literary or legendary development."
+        },
+        {
+          "bridgeId": "con-visions",
+          "tier": "central",
+          "burden": "Explain reported appearances through ordinary visionary processes.",
+          "successCriterion": "Grief, suggestion, memory effects, and Paul's own revelatory experience explain sincere belief without a physical encounter."
+        },
+        {
+          "bridgeId": "con-priors",
+          "tier": "subsidiary",
+          "burden": "Show the resurrection claim requires unusually strong evidence that the available sources do not supply.",
+          "successCriterion": "Known rates of legend and hallucination greatly exceed confirmed supernatural encounters, and source quality fails to overcome that disparity."
+        },
+        {
+          "bridgeId": "con-divine-intent",
+          "tier": "subsidiary",
+          "burden": "Challenge the fit between selective ancient appearances and a loving God's saving intention.",
+          "successCriterion": "Restricted, brief appearances are shown more expected under ordinary religious origins than under an intending, universally compassionate deity."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "historical-explananda",
+      "title": "Historical explananda and resurrection inference",
+      "weightPercent": 24,
+      "weightRationale": "Defines the core facts and the competing explanatory theories that directly answer the motion."
+    },
+    {
+      "sectionId": "pauline-body",
+      "title": "Paul and the nature of the resurrection body",
+      "weightPercent": 25,
+      "weightRationale": "The debate's most sustained technical dispute concerns what the earliest named source meant by resurrection."
+    },
+    {
+      "sectionId": "empty-tomb-sources",
+      "title": "Empty tomb, sources, and literary development",
+      "weightPercent": 22,
+      "weightRationale": "The empty tomb is the principal contested factual premise and receives extensive source-comparison and literary argument."
+    },
+    {
+      "sectionId": "visions-and-priors",
+      "title": "Appearances, visions, and prior probability",
+      "weightPercent": 18,
+      "weightRationale": "Competing accounts of sincere experiences and the evidential threshold for miracle are independently load-bearing."
+    },
+    {
+      "sectionId": "comparative-synthesis",
+      "title": "Comparative explanatory synthesis",
+      "weightPercent": 11,
+      "weightRationale": "Final statements compare overall fit, simplicity, and theological expectation without adding equal detail to the earlier disputes."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-crucifixion-death",
+      "sectionId": "historical-explananda",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 122,
+        "endEvent": 133
+      },
+      "spanLengthRationale": "This is the smallest contiguous span preserving Licona’s four cumulative death grounds and synthesis",
+      "quoteEligibleExactSpans": [
+        "the process killed him"
+      ],
+      "claimSummary": "Jesus died by crucifixion.",
+      "reasonSummary": "Licona cites multiple Christian and non-Christian attestation, the lethality of crucifixion, medical consensus, and the inability of a badly injured survivor to generate resurrection belief.",
+      "inferenceSummary": {
+        "premise": "Crucifixion was ordinarily fatal and the specific evidence supplies no rescue or treatment scenario.",
+        "inference": "Convergent attestation and physiological likelihood defeat survival speculation.",
+        "conclusion": "The crucifixion killed Jesus."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-death",
+        "tier": "subsidiary",
+        "rationale": "Supplies the first historical fact required by the resurrection explanation."
+      },
+      "importance": 3,
+      "importanceRationale": "Death is indispensable: without it there is no resurrection to explain.",
+      "respondsToIds": [],
+      "responseComponents": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona opening; wording material to the inference is clear.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The propositions and reasons are stable despite minor caption disfluency."
+    },
+    {
+      "moveId": "pro-empty-tomb-case",
+      "sectionId": "empty-tomb-sources",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 134,
+        "endEvent": 166
+      },
+      "spanLengthRationale": "All three expressly enumerated empty-tomb grounds are cumulative and conclude only after the third",
+      "quoteEligibleExactSpans": [
+        "the concept of resurrection implies an empty tomb"
+      ],
+      "claimSummary": "Jesus's tomb was empty.",
+      "reasonSummary": "Public proclamation in Jerusalem could have been stopped by producing the body; an alleged theft implies a missing body; and contemporary bodily-resurrection language implies absence of the buried body.",
+      "inferenceSummary": {
+        "premise": "Jerusalem opponents had both opportunity and motive to expose a present body, hostile polemic explained a missing body, and resurrection meant bodily raising.",
+        "inference": "These independent considerations converge on an empty tomb.",
+        "conclusion": "The women probably found Jesus's tomb empty."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-tomb",
+        "tier": "central",
+        "rationale": "Constructs the disputed empty-tomb premise."
+      },
+      "importance": 3,
+      "importanceRationale": "This is one of Licona's three principal facts and the fact Carrier directly rejects.",
+      "respondsToIds": [],
+      "responseComponents": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona opening.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The three stated reasons are present and intelligible in the span."
+    },
+    {
+      "moveId": "pro-sincere-appearances",
+      "sectionId": "historical-explananda",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 188,
+        "endEvent": 217
+      },
+      "spanLengthRationale": "The move supports friends and foes separately through disciples, Paul, and James, so shortening would drop a claimed category",
+      "claimSummary": "Followers and at least one former enemy sincerely believed the risen Jesus appeared to them.",
+      "reasonSummary": "Licona invokes early Pauline tradition, reports of disciples' willingness to suffer, Paul's conversion and testimony, and James's later leadership and martyrdom.",
+      "inferenceSummary": {
+        "premise": "Early, multiple sources report appearance claims whose adherents accepted serious costs, including Paul and James.",
+        "inference": "Costly adherence and adverse prior stance support sincere experience rather than deliberate fabrication.",
+        "conclusion": "A number of friends and foes genuinely believed they encountered the risen Jesus."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-appearances",
+        "tier": "central",
+        "rationale": "Establishes the third principal explanandum."
+      },
+      "importance": 3,
+      "importanceRationale": "Both theories must explain these sincere appearance beliefs.",
+      "respondsToIds": [],
+      "responseComponents": [],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but the captioned Greek-derived term around events 174–176 and several names have not been audio-verified.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The early-tradition inference is clear, but the exact Greek term and some proper names are materially uncertain in captions.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-resurrection-best-explanation",
+      "sectionId": "historical-explananda",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 218,
+        "endEvent": 244
+      },
+      "spanLengthRationale": "The complete inference joins factual coverage, failure of natural rivals, and religious context",
+      "claimSummary": "Resurrection is the best explanation of the three facts.",
+      "reasonSummary": "It explains all three without strain; proposed natural alternatives fail to cover the full data; and Jesus's religiously charged ministry makes divine action contextually relevant.",
+      "inferenceSummary": {
+        "premise": "Death, empty tomb, and sincere appearances are established, natural accounts do not jointly explain them, and the context contains claimed divine significance.",
+        "inference": "Inference to the best explanation favors the theory with broader, less strained coverage.",
+        "conclusion": "Jesus's resurrection probably occurred in history."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-motion",
+        "tier": "motion",
+        "rationale": "Directly concludes the motion from Licona's factual case."
+      },
+      "importance": 3,
+      "importanceRationale": "This is the opening's explicit motion-level inference.",
+      "respondsToIds": [],
+      "responseComponents": [],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona opening.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The comparative inference and contextual qualification are explicit.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-vision-development-theory",
+      "sectionId": "historical-explananda",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 256,
+        "endEvent": 279
+      },
+      "spanLengthRationale": "Carrier’s rival theory is a connected chain from visions through two-body belief to later sectarian development",
+      "quoteEligibleExactSpans": [
+        "that is my theory in rough outline"
+      ],
+      "claimSummary": "A natural visionary origin followed by sectarian development is a better explanation.",
+      "reasonSummary": "Disciples sought meaning after Jesus's death, had reassuring visions, inferred a new heavenly body while the corpse remained, and later flesh-focused sects generated the canonical narratives.",
+      "inferenceSummary": {
+        "premise": "Religious grief can produce visions and early movements can fragment and elaborate doctrine.",
+        "inference": "Those ordinary processes generate both an early heavenly-body belief and later physical stories.",
+        "conclusion": "The natural visionary-development theory is more probable than resurrection."
+      },
+      "burdenContact": {
+        "bridgeId": "con-motion",
+        "tier": "motion",
+        "rationale": "States Carrier's complete rival explanation and comparative burden."
+      },
+      "importance": 3,
+      "importanceRationale": "This is the con side's motion-level theory against which all later facts are tested.",
+      "respondsToIds": [
+        "pro-resurrection-best-explanation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-resurrection-best-explanation",
+          "component": "alternative explanation",
+          "description": "Replaces miraculous resurrection with visions plus doctrinal and narrative development."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but a captioned sect label around events 269–276 is materially uncertain and not audio-verified.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The theory is clear, but the exact names of the opposed sectarian tendencies are uncertain in the source wording."
+    },
+    {
+      "moveId": "con-paul-versus-gospels",
+      "sectionId": "historical-explananda",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 280,
+        "endEvent": 316
+      },
+      "spanLengthRationale": "The complete source-priority argument requires Paul’s description, the Luke-John contrasts, and the comparative conclusion",
+      "quoteEligibleExactSpans": [
+        "our later record says exactly the opposite"
+      ],
+      "claimSummary": "Paul describes a spiritual resurrection that conflicts with Luke and John.",
+      "reasonSummary": "Carrier treats Paul as earlier and better sourced, reads 1 Corinthians 15 as excluding flesh and blood and making Christ a spirit, then contrasts later eating, wounds, and flesh-and-bones stories.",
+      "inferenceSummary": {
+        "premise": "Paul predates the gospels and describes a heavenly spiritual body, while Luke and John emphasize tangible wounded flesh.",
+        "inference": "The accounts conflict, and the later less secure physical accounts are likelier to be wrong.",
+        "conclusion": "The earliest evidence favors a non-fleshly resurrection body."
+      },
+      "burdenContact": {
+        "bridgeId": "con-paul",
+        "tier": "central",
+        "rationale": "Uses source priority and alleged contradiction to establish Carrier's Pauline model."
+      },
+      "importance": 3,
+      "importanceRationale": "This initiates the debate's dominant exegetical dispute.",
+      "respondsToIds": [
+        "pro-empty-tomb-case",
+        "pro-resurrection-best-explanation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-empty-tomb-case",
+          "component": "source conflict",
+          "description": "Challenges later physical narratives used to support a missing body."
+        },
+        {
+          "targetMoveId": "pro-resurrection-best-explanation",
+          "component": "earliest-source fit",
+          "description": "Argues Licona's orthodox resurrection is not what the earliest source describes."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier opening; core quoted contrasts are intelligible.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "No uncertain Greek term is necessary to this high-level source-priority argument."
+    },
+    {
+      "moveId": "con-paul-body-exchange",
+      "sectionId": "pauline-body",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 317,
+        "endEvent": 345
+      },
+      "spanLengthRationale": "Paul’s omission, body contrast, exchange vocabulary, and Jewish parallels form one cumulative inference",
+      "claimSummary": "Paul's omissions and exchange language indicate two bodies rather than transformation of one body.",
+      "reasonSummary": "Paul omits physical encounter evidence when discussing resurrection bodies, says the sown body is not the body to come, contrasts earthly dust with heavenly substance, and uses garment or exchange imagery with Jewish parallels.",
+      "inferenceSummary": {
+        "premise": "An apt physical encounter is absent, while Paul's contrasts emphasize different origins, substances, and a body supplied by God.",
+        "inference": "The discourse is better explained by replacement of the earthly body than its transformation.",
+        "conclusion": "Paul probably held a two-body exchange doctrine."
+      },
+      "burdenContact": {
+        "bridgeId": "con-paul",
+        "tier": "central",
+        "rationale": "Gives the positive textual case for body exchange."
+      },
+      "importance": 3,
+      "importanceRationale": "The exchange reading underwrites Carrier's claim that no empty tomb was originally required.",
+      "respondsToIds": [
+        "pro-empty-tomb-case"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-empty-tomb-case",
+          "component": "necessity denial",
+          "description": "If a new body is supplied, resurrection belief does not imply removal of the corpse."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but the captioned Greek word at events 335–337 is materially uncertain and central to the inference.",
+      "materialWordingConfidence": "low",
+      "materialWordingRationale": "The source renders the alleged Greek exchange verb as 'allah'; exact form and semantic claim require audio verification.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-empty-tomb-evidence-quality",
+      "sectionId": "empty-tomb-sources",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 363,
+        "endEvent": 405
+      },
+      "spanLengthRationale": "Carrier explicitly constructs five comparative evidence criteria and concludes only after applying all five",
+      "quoteEligibleExactSpans": [
+        "the evidence available is simply not sufficient"
+      ],
+      "claimSummary": "The evidence for the empty tomb is insufficient.",
+      "reasonSummary": "Compared with Caesar crossing the Rubicon, the tomb claim lacks historical necessity, physical evidence, early hostile corroboration, skilled identified critical historians, and a known eyewitness author.",
+      "inferenceSummary": {
+        "premise": "The empty-tomb evidence is late, interested, largely anonymous, and unnecessary to explain later Christian history.",
+        "inference": "It lacks the independent and high-quality support needed for an already remarkable claim.",
+        "conclusion": "Historians should not treat the empty tomb as established."
+      },
+      "burdenContact": {
+        "bridgeId": "con-tomb",
+        "tier": "central",
+        "rationale": "Directly attacks Licona's contested second fact through source-quality criteria."
+      },
+      "importance": 3,
+      "importanceRationale": "Removing the empty tomb sharply reduces the resurrection theory's claimed explanatory advantage.",
+      "respondsToIds": [
+        "pro-empty-tomb-case"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-empty-tomb-case",
+          "component": "evidential sufficiency",
+          "description": "Argues each proposed support is weaker than the kinds of evidence available for a secure ancient event."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier opening.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The five comparative criteria and conclusion are clear."
+    },
+    {
+      "moveId": "con-gospel-legend-growth",
+      "sectionId": "empty-tomb-sources",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 406,
+        "endEvent": 424
+      },
+      "claimSummary": "The gospel resurrection narratives show progressive legendary embellishment.",
+      "reasonSummary": "Carrier traces Mark's simple tomb scene through Matthew's angel, earthquake and guards, Luke's touching and eating, and John's elaborate burial and wounds.",
+      "inferenceSummary": {
+        "premise": "Later narratives add increasingly spectacular and apologetically useful details to a simpler earlier account.",
+        "inference": "Directional accretion is expected under legend more than preserved eyewitness history.",
+        "conclusion": "The physical empty-tomb and appearance traditions likely developed over time."
+      },
+      "burdenContact": {
+        "bridgeId": "con-tomb",
+        "tier": "central",
+        "rationale": "Provides an internal literary reason to distrust later tomb and flesh details."
+      },
+      "importance": 2,
+      "importanceRationale": "It supports the natural-development component independently of Paul's theology.",
+      "respondsToIds": [
+        "pro-empty-tomb-case",
+        "pro-sincere-appearances"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-empty-tomb-case",
+          "component": "legendary trajectory",
+          "description": "Treats later tomb corroboration as elaboration rather than independent support."
+        },
+        {
+          "targetMoveId": "pro-sincere-appearances",
+          "component": "physical-detail reliability",
+          "description": "Challenges the historical force of later tangible appearance narratives."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier opening.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The claimed sequence of added details is explicit.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-visions-prior-fit",
+      "sectionId": "visions-and-priors",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 425,
+        "endEvent": 446
+      },
+      "claimSummary": "Ordinary religious visions are far more probable than genuine supernatural encounters, and Paul describes a vision-like revelation.",
+      "reasonSummary": "Religious dreams and hallucinations are common and scientifically grounded, confirmed supernatural encounters are absent, and Paul's light-and-voice revelation is continuous with the witness list.",
+      "inferenceSummary": {
+        "premise": "Visionary experiences are common and understood; supernatural encounters are unconfirmed; the earliest described appearance is revelatory.",
+        "inference": "The ordinary class has the higher prior and better evidential fit.",
+        "conclusion": "The appearances were probably visions rather than physical encounters."
+      },
+      "burdenContact": {
+        "bridgeId": "con-visions",
+        "tier": "central",
+        "rationale": "Builds the natural account of the accepted sincere appearance beliefs."
+      },
+      "importance": 3,
+      "importanceRationale": "This is Carrier's main explanation of Licona's strongest shared fact.",
+      "respondsToIds": [
+        "pro-sincere-appearances",
+        "pro-resurrection-best-explanation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-sincere-appearances",
+          "component": "natural mechanism",
+          "description": "Explains sincerity without granting physical resurrection."
+        },
+        {
+          "targetMoveId": "pro-resurrection-best-explanation",
+          "component": "comparative probability",
+          "description": "Claims a well-attested natural mechanism is likelier than miracle."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier opening.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The probabilistic and Pauline reasons are clear.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-intentionality-and-hallucination-cost",
+      "sectionId": "visions-and-priors",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 483,
+        "endEvent": 511
+      },
+      "spanLengthRationale": "The reply requires both intentionality against raw frequency and reciprocal improbability for hallucination",
+      "claimSummary": "Carrier's frequency argument ignores intentional divine action and his hallucination account has its own severe improbabilities.",
+      "reasonSummary": "If contextual evidence gives reason to expect divine intention, raw event frequency is not controlling; meanwhile group experiences and appearances to enemies are difficult for hallucination theory.",
+      "inferenceSummary": {
+        "premise": "Intentional processes alter base-rate expectations, the case has religious context, and Carrier needs coordinated or adverse-witness hallucinations.",
+        "inference": "Carrier cannot dismiss miracle by frequency while exempting an improbable natural mechanism from comparable evidential demands.",
+        "conclusion": "Prior-probability objections do not defeat resurrection and cut against the vision theory."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-miracle",
+        "tier": "subsidiary",
+        "rationale": "Defends the legitimacy of miracle inference and reverses the evidential demand."
+      },
+      "importance": 3,
+      "importanceRationale": "It directly addresses Carrier's general probability framework and vision mechanism.",
+      "respondsToIds": [
+        "con-visions-prior-fit"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-visions-prior-fit",
+          "component": "intentionality",
+          "description": "Argues divine intention makes a context-sensitive probability relevant."
+        },
+        {
+          "targetMoveId": "con-visions-prior-fit",
+          "component": "rival improbability",
+          "description": "Challenges group and enemy hallucinations as unsupported and improbable."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona rebuttal.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The lottery analogy, contextual condition, and counterchallenge are explicit.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-paul-continuity",
+      "sectionId": "pauline-body",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 516,
+        "endEvent": 549
+      },
+      "spanLengthRationale": "Grammatical continuity, the meaning of spiritual, and the Romans parallel are distinct cumulative replies",
+      "claimSummary": "Paul teaches continuity and transformation of the same body.",
+      "reasonSummary": "Licona argues that singular grammar links what is sown and raised, 'spiritual' describes orientation rather than material, and Romans 8 says the life-giving Spirit gives life to mortal bodies.",
+      "inferenceSummary": {
+        "premise": "Paul uses continuous grammatical reference and parallel vocabulary for transformation of mortal bodies.",
+        "inference": "Continuity is textually more direct than substitution of an unrelated body.",
+        "conclusion": "Paul supports transformation, not body exchange."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-paul",
+        "tier": "central",
+        "rationale": "Directly rebuts Carrier's earliest-source interpretation."
+      },
+      "importance": 3,
+      "importanceRationale": "If successful it restores both orthodox resurrection and the inference to an empty tomb.",
+      "respondsToIds": [
+        "con-paul-versus-gospels",
+        "con-paul-body-exchange"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-paul-versus-gospels",
+          "component": "semantic rebuttal",
+          "description": "Denies that spiritual denotes different material substance."
+        },
+        {
+          "targetMoveId": "con-paul-body-exchange",
+          "component": "grammatical continuity",
+          "description": "Claims the same singular referent is sown and raised."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but several captioned Greek terms and the cited life-giving verb are not audio-verified.",
+      "materialWordingConfidence": "low",
+      "materialWordingRationale": "Exact Greek forms around events 530–549 are materially garbled, though the proposed semantic contrasts are clear.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-paul-lexical-rebuttal",
+      "sectionId": "pauline-body",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 550,
+        "endEvent": 564
+      },
+      "claimSummary": "Neither 'flesh and blood' nor the disputed change verb supports Carrier's exchange reading.",
+      "reasonSummary": "Licona reads flesh and blood as a Jewish idiom for mortality and says major lexicons give alteration as the primary sense of the change verb in 1 Corinthians 15.",
+      "inferenceSummary": {
+        "premise": "The idiom denotes mortal humanity and leading lexical references classify the verb under alteration.",
+        "inference": "Carrier's material-exclusion and mercantile-exchange readings are not required by the language.",
+        "conclusion": "The key lexical objections do not overturn transformation."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-paul",
+        "tier": "central",
+        "rationale": "Answers Carrier's two specific lexical supports for body exchange."
+      },
+      "importance": 2,
+      "importanceRationale": "These word-level disputes are repeatedly invoked by both speakers.",
+      "respondsToIds": [
+        "con-paul-versus-gospels",
+        "con-paul-body-exchange"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-paul-versus-gospels",
+          "component": "idiom",
+          "description": "Reinterprets flesh and blood as mortality rather than material exclusion."
+        },
+        {
+          "targetMoveId": "con-paul-body-exchange",
+          "component": "lexicon",
+          "description": "Contests the alleged exclusive mercantile sense of the change verb."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but the captioned Greek verb and lexicon names are materially uncertain and require audio.",
+      "materialWordingConfidence": "low",
+      "materialWordingRationale": "Events 557–564 garble the Greek form and some reference names central to the lexical claim.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-grief-and-paul-vision-mechanisms",
+      "sectionId": "visions-and-priors",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 571,
+        "endEvent": 619
+      },
+      "spanLengthRationale": "Carrier deliberately supplies different causal accounts for followers and Paul, both needed to answer friend-and-foe evidence",
+      "claimSummary": "Grief and social-psychological processes can explain disciples' experiences, while Paul's distinctive guilt and attraction to the movement can explain his rare conversion vision.",
+      "reasonSummary": "Carrier invokes grief, fasting, suggestion and memory contamination for group belief, and hypothesizes guilt, stress, fatigue and attraction to Christian moral reform for Paul.",
+      "inferenceSummary": {
+        "premise": "Known psychological and social processes can produce convergent interpretations without identical perceptions, and Paul's circumstances differed from the disciples'.",
+        "inference": "Different ordinary triggers can yield sincere but nonveridical appearance beliefs.",
+        "conclusion": "Neither group belief nor Paul's conversion requires divine appearance."
+      },
+      "burdenContact": {
+        "bridgeId": "con-visions",
+        "tier": "central",
+        "rationale": "Supplies mechanisms in response to Licona's group-and-enemy objection."
+      },
+      "importance": 3,
+      "importanceRationale": "It is Carrier's fullest causal account of the appearance evidence.",
+      "respondsToIds": [
+        "pro-sincere-appearances",
+        "pro-intentionality-and-hallucination-cost"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-sincere-appearances",
+          "component": "sincerity without veridicality",
+          "description": "Accepts sincere belief but supplies grief and social mechanisms."
+        },
+        {
+          "targetMoveId": "pro-intentionality-and-hallucination-cost",
+          "component": "group mechanism",
+          "description": "Denies identical simultaneous hallucination is required."
+        },
+        {
+          "targetMoveId": "pro-intentionality-and-hallucination-cost",
+          "component": "Paul mechanism",
+          "description": "Offers distinct guilt and stress conditions for the adverse witness."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier rebuttal.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The mechanisms are explicitly framed as Carrier's proposed explanation, with speculation acknowledged.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-jewish-pauline-parallels",
+      "sectionId": "pauline-body",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 620,
+        "endEvent": 652
+      },
+      "spanLengthRationale": "Jewish parallels, several Pauline passages, and scholarly support jointly establish the claimed plausibility",
+      "claimSummary": "Jewish parallels and other Pauline passages make a new-body interpretation plausible.",
+      "reasonSummary": "Carrier cites Josephus, Philo, Essene parallels, Philippians and 2 Corinthians as distinguishing decaying earthly embodiment from an eternal heavenly dwelling, and notes scholarly support including Wright's allowance of exchange.",
+      "inferenceSummary": {
+        "premise": "Contemporary Jewish texts and multiple Pauline passages use new dwelling, clothing, decay, and heavenly-body contrasts.",
+        "inference": "The broader conceptual setting supports replacement rather than continuity of flesh.",
+        "conclusion": "A two-body reading of Paul is historically and textually plausible."
+      },
+      "burdenContact": {
+        "bridgeId": "con-paul",
+        "tier": "central",
+        "rationale": "Expands the Pauline case beyond the disputed 1 Corinthians vocabulary."
+      },
+      "importance": 2,
+      "importanceRationale": "It answers the charge that Carrier's reading is linguistically isolated or ad hoc.",
+      "respondsToIds": [
+        "pro-paul-continuity",
+        "pro-paul-lexical-rebuttal"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-paul-continuity",
+          "component": "cross-text context",
+          "description": "Uses other Pauline and Jewish texts to resist the continuity reading."
+        },
+        {
+          "targetMoveId": "pro-paul-lexical-rebuttal",
+          "component": "scholarly plausibility",
+          "description": "Argues recognized scholars allow the exchange interpretation."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but several names and quoted wording in captions have not been audio-verified.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The conceptual argument is clear; exact scholarly names and the wording attributed to Wright need verification.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-guards-and-symbolic-tomb",
+      "sectionId": "empty-tomb-sources",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 653,
+        "endEvent": 676
+      },
+      "spanLengthRationale": "The smallest complete span contains the Daniel construction, independent-attestation test, and Markan-symbol response",
+      "claimSummary": "Matthew's guards and theft accusation and Mark's empty tomb are literary constructions rather than independent historical evidence.",
+      "reasonSummary": "Matthew allegedly reshapes Mark through Daniel parallels requiring seal, guards, and theft; other early sources omit them; Mark's new-house saying and reversal pattern are said to make the tomb symbolic.",
+      "inferenceSummary": {
+        "premise": "Narrative elements serve identifiable literary structures and lack independent early attestation.",
+        "inference": "Literary necessity better explains them than remembered hostile testimony.",
+        "conclusion": "The guards, theft polemic, and empty tomb do not establish a historical missing body."
+      },
+      "burdenContact": {
+        "bridgeId": "con-tomb",
+        "tier": "central",
+        "rationale": "Directly counters hostile-attestation and treats the tomb narrative as symbolic."
+      },
+      "importance": 3,
+      "importanceRationale": "It targets two of Licona's three empty-tomb arguments.",
+      "respondsToIds": [
+        "pro-empty-tomb-case"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-empty-tomb-case",
+          "component": "hostile-attestation denial",
+          "description": "Says no first-century enemy document attests an empty tomb."
+        },
+        {
+          "targetMoveId": "pro-empty-tomb-case",
+          "component": "literary explanation",
+          "description": "Explains guards and theft as narrative devices and the tomb as metaphor."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier rebuttal.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The stated literary and attestation reasons are clear.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-adverse-witness-vision-challenge",
+      "sectionId": "visions-and-priors",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 678,
+        "endEvent": 700
+      },
+      "claimSummary": "Carrier's hallucination extensions to James and Paul lack evidence and the selective-appearance objection lacks a probability basis.",
+      "reasonSummary": "Licona says grief does not fit James or Paul, Paul's guilt is unsupported and inconsistent with his proud résumé, and Carrier offers no justified calculus for how widely Jesus should appear.",
+      "inferenceSummary": {
+        "premise": "The proposed psychological triggers are absent or speculative for adverse witnesses, and the divine-distribution expectation is undefended.",
+        "inference": "Ad hoc extensions and unsupported theological expectations do not explain away the appearance data.",
+        "conclusion": "Carrier has not adequately naturalized the appearances to friends and foes."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-appearances",
+        "tier": "central",
+        "rationale": "Defends appearance evidence against Carrier's expanded vision theory."
+      },
+      "importance": 2,
+      "importanceRationale": "It focuses the dispute on evidential support for the proposed mechanisms.",
+      "respondsToIds": [
+        "con-grief-and-paul-vision-mechanisms"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-grief-and-paul-vision-mechanisms",
+          "component": "Paul evidence",
+          "description": "Challenges the guilt hypothesis as unsupported."
+        },
+        {
+          "targetMoveId": "con-grief-and-paul-vision-mechanisms",
+          "component": "James scope",
+          "description": "Notes grief does not cover the skeptical brother."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona response.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The evidential objections are explicit.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-direct-pauline-transformation-texts",
+      "sectionId": "pauline-body",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 701,
+        "endEvent": 733
+      },
+      "spanLengthRationale": "The move preserves Licona’s Josephus concession, relevance limit, and Romans-Philippians counterevidence",
+      "claimSummary": "Ambiguous Jewish parallels do not control the earliest Christian belief, while Romans and Philippians explicitly support transformation of mortal bodies.",
+      "reasonSummary": "Licona concedes difficulty in a Josephus passage but distinguishes afterlife views from resurrection and appeals to Romans 8 and Philippians 3 for giving life to and transforming present bodies.",
+      "inferenceSummary": {
+        "premise": "Jewish groups differed, Josephus may concern reincarnation, and Pauline texts directly predicate life and transformation of mortal or lowly bodies.",
+        "inference": "Direct Christian evidence outweighs ambiguous comparative parallels.",
+        "conclusion": "The earliest Christians believed transformation of the same body."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-paul",
+        "tier": "central",
+        "rationale": "Answers the enlarged Jewish and Pauline contextual case."
+      },
+      "importance": 2,
+      "importanceRationale": "It supplies a focused cross-text rebuttal and a relevant concession about ambiguity.",
+      "respondsToIds": [
+        "con-jewish-pauline-parallels"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-jewish-pauline-parallels",
+          "component": "parallel relevance",
+          "description": "Distinguishes Josephus's possible reincarnation from resurrection."
+        },
+        {
+          "targetMoveId": "con-jewish-pauline-parallels",
+          "component": "direct Pauline evidence",
+          "description": "Prioritizes verbs applied to present mortal bodies in Romans and Philippians."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but the captioned Greek verb and some proper names are not audio-verified.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The argumentative structure is clear; exact quoted correspondence and Greek pronunciation are uncertain.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-guard-polemic-and-literary-method",
+      "sectionId": "empty-tomb-sources",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 734,
+        "endEvent": 759
+      },
+      "spanLengthRationale": "The reply combines a polemic alternative, limited reliance on guards, and a distinct critique of literary method",
+      "claimSummary": "The guard polemic may preserve Jewish-Christian exchange, and the proposed literary borrowing is strained and irrelevant to earlier evidence.",
+      "reasonSummary": "Licona reconstructs a theft/guards counter-polemic, says his case does not depend on guards, and argues alleged literary parallels require changing vocabulary, characterization, motifs, sequence, and models.",
+      "inferenceSummary": {
+        "premise": "A plausible polemical history exists, and broad literary-parallel methods can manufacture dependence despite missing normal indicators.",
+        "inference": "Carrier has not established fictional construction, and even doing so would not defeat earlier evidence.",
+        "conclusion": "The literary critique does not overturn the empty-tomb case."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-tomb",
+        "tier": "central",
+        "rationale": "Defends tomb evidence from the symbolic-fiction response while limiting dependence on guards."
+      },
+      "importance": 2,
+      "importanceRationale": "It directly contests Carrier's literary route but concedes the guards are not essential to Licona's case.",
+      "respondsToIds": [
+        "con-guards-and-symbolic-tomb"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-guards-and-symbolic-tomb",
+          "component": "polemic alternative",
+          "description": "Offers a historical exchange that could explain the guard narrative."
+        },
+        {
+          "targetMoveId": "con-guards-and-symbolic-tomb",
+          "component": "method critique",
+          "description": "Challenges literary dependence as insufficiently discriminating."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona response.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The reconstructed exchange and methodological objection are clear.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-rubicon-comparison-rebuttal",
+      "sectionId": "empty-tomb-sources",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 763,
+        "endEvent": 793
+      },
+      "spanLengthRationale": "The response is a criterion-by-criterion answer on physical evidence, hostility, bias, historian quality, and chronology",
+      "claimSummary": "Carrier's Rubicon comparison underrates Christian evidence and overrates Roman historical sources.",
+      "reasonSummary": "Licona argues physical relic expectations are misplaced, Paul and James provide adverse testimony, bias is not falsity, Roman historians also contain errors and marvels, and resurrection reports are chronologically earlier relative to their event.",
+      "inferenceSummary": {
+        "premise": "Evidence types depend on the event, hostile or biased sources can still inform, and Carrier's comparators are late and fallible.",
+        "inference": "The Rubicon contrast does not demonstrate uniquely poor resurrection evidence.",
+        "conclusion": "Early multiple, adverse, and embarrassing Christian evidence remains historically significant."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-tomb",
+        "tier": "central",
+        "rationale": "Answers Carrier's principal comparative source-quality attack on the tomb and appearances."
+      },
+      "importance": 2,
+      "importanceRationale": "It challenges the benchmark used to declare the evidence categorically insufficient.",
+      "respondsToIds": [
+        "con-empty-tomb-evidence-quality"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-empty-tomb-evidence-quality",
+          "component": "comparison fit",
+          "description": "Argues the expected evidence differs by event and political setting."
+        },
+        {
+          "targetMoveId": "con-empty-tomb-evidence-quality",
+          "component": "source parity",
+          "description": "Notes defects and lateness in Carrier's Roman comparators."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but several historian names and one source reference are garbled in captions and await audio.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The comparative reasons are clear, though proper-name accuracy is uncertain.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-mark-literary-markers",
+      "sectionId": "empty-tomb-sources",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 797,
+        "endEvent": 837
+      },
+      "spanLengthRationale": "Carrier expressly supplies six independent literary markers after being challenged for insufficient support",
+      "claimSummary": "Mark's empty-tomb scene is densely integrated with reversal, mystery-religion, Psalm, Genesis, and other scriptural symbolism.",
+      "reasonSummary": "Carrier enumerates thematic and verbal correspondences that allegedly require women, an opened tomb, a stone, and a new-body image within Mark's literary design.",
+      "inferenceSummary": {
+        "premise": "Multiple features of the tomb narrative perform specific symbolic and intertextual roles within Mark.",
+        "inference": "Dense literary functionality is better expected if Mark composed a parable than recorded a bare historical report.",
+        "conclusion": "Mark's empty tomb is weak historical evidence and likely symbolic invention."
+      },
+      "burdenContact": {
+        "bridgeId": "con-tomb",
+        "tier": "central",
+        "rationale": "Provides the detailed literary case Licona said had not been supplied."
+      },
+      "importance": 2,
+      "importanceRationale": "It is Carrier's developed answer to the charge that his Mark claim was unsupported.",
+      "respondsToIds": [
+        "pro-guard-polemic-and-literary-method"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-guard-polemic-and-literary-method",
+          "component": "independent literary case",
+          "description": "Disclaims reliance on the theory Licona attacked and supplies six separate proposed markers."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but some captioned religious and textual names are uncertain and central correspondences require audio confirmation.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The six-part structure is clear, but exact names such as the mystery tradition and some verbal claims are not audio-verified.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-romans-present-life-context",
+      "sectionId": "pauline-body",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 838,
+        "endEvent": 855
+      },
+      "claimSummary": "Romans 8 concerns present spiritual life, while other Pauline texts say flesh and earthly vessels are destroyed and replaced by bodies not made with hands.",
+      "reasonSummary": "Carrier reads Romans contextually as present renewal and cites 1 Corinthians, Romans 7, Colossians, and 2 Corinthians for destruction of flesh and contrast between disposable earthly pots and superior heavenly embodiment.",
+      "inferenceSummary": {
+        "premise": "Romans 8 need not describe future resurrection and other Pauline passages contrast destructible flesh with a non-handmade body.",
+        "inference": "Licona's continuity proof-text is neutralized while replacement imagery accumulates.",
+        "conclusion": "Paul did not teach resurrection of the present flesh."
+      },
+      "burdenContact": {
+        "bridgeId": "con-paul",
+        "tier": "central",
+        "rationale": "Directly answers Licona's principal Romans continuity text."
+      },
+      "importance": 2,
+      "importanceRationale": "It closes a major cross-text dispute rather than merely repeating the opening reading.",
+      "respondsToIds": [
+        "pro-paul-continuity",
+        "pro-direct-pauline-transformation-texts"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-paul-continuity",
+          "component": "contextual rebuttal",
+          "description": "Reads giving life to mortal bodies as present experience rather than future resurrection."
+        },
+        {
+          "targetMoveId": "pro-direct-pauline-transformation-texts",
+          "component": "counter-texts",
+          "description": "Uses destruction and heavenly-dwelling passages against continuity."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier response.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "No uncertain Greek form is essential to this contextual argument.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-intentionality-circularity",
+      "sectionId": "visions-and-priors",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 856,
+        "endEvent": 872
+      },
+      "claimSummary": "Licona's appeal to divine intention is circular, and resurrection requires evidence comparable to other wholly unconfirmed extraordinary claims.",
+      "reasonSummary": "Whether an intending God acted is the point needing proof; unlike ordinary possessions, divine appearances and bodily resurrection lack established instances, so much stronger evidence is required.",
+      "inferenceSummary": {
+        "premise": "The proposed intention is not independently established and the event type lacks confirmed background instances.",
+        "inference": "Intention cannot raise the probability without assuming the disputed supernatural framework.",
+        "conclusion": "The available historical evidence does not overcome the resurrection claim's very low prior."
+      },
+      "burdenContact": {
+        "bridgeId": "con-priors",
+        "tier": "subsidiary",
+        "rationale": "Directly rebuts Licona's context-and-intention response."
+      },
+      "importance": 3,
+      "importanceRationale": "This is the clearest methodological disagreement over how miracle claims can be historically supported.",
+      "respondsToIds": [
+        "pro-intentionality-and-hallucination-cost"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-intentionality-and-hallucination-cost",
+          "component": "circularity",
+          "description": "Argues divine intention cannot be used before supernatural action is evidenced."
+        },
+        {
+          "targetMoveId": "pro-intentionality-and-hallucination-cost",
+          "component": "evidence threshold",
+          "description": "Maintains that an unconfirmed event class requires exceptionally strong evidence."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier response.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The analogy and circularity claim are clear.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-exchange-usage-and-context",
+      "sectionId": "pauline-body",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 873,
+        "endEvent": 906
+      },
+      "spanLengthRationale": "Corpus usage, Psalm source, garment imagery, grammar, material context, and scholarly division are distinct supports",
+      "claimSummary": "Usage and context support exchange vocabulary and material contrast, while acknowledged scholarly division prevents Licona from claiming decisive refutation.",
+      "reasonSummary": "Carrier appeals to alleged New Testament and Septuagint usage, a Psalm about destruction and replacement, clothing metaphors, the bodies-and-substances context, and dispute over the omitted Greek subject.",
+      "inferenceSummary": {
+        "premise": "The verb's cited uses involve exchange, its source passage depicts replacement, and the surrounding argument contrasts different bodies and substances.",
+        "inference": "Context favors exchange despite a generic dictionary gloss of change.",
+        "conclusion": "Licona has not shown Carrier's Pauline reading false, and the exchange reading remains stronger or at least live."
+      },
+      "burdenContact": {
+        "bridgeId": "con-paul",
+        "tier": "central",
+        "rationale": "Responds to Licona's lexical and grammatical rebuttals with contextual usage."
+      },
+      "importance": 3,
+      "importanceRationale": "This is Carrier's final detailed defense of the technical premise on which his tomb theory depends.",
+      "respondsToIds": [
+        "pro-paul-lexical-rebuttal",
+        "pro-direct-pauline-transformation-texts"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-paul-lexical-rebuttal",
+          "component": "usage over gloss",
+          "description": "Prioritizes alleged corpus usage and source-text imagery over primary dictionary sense."
+        },
+        {
+          "targetMoveId": "pro-direct-pauline-transformation-texts",
+          "component": "grammar and context",
+          "description": "Disputes the supplied subject and emphasizes distinct material bodies."
+        }
+      ],
+      "attributionConfidence": "low",
+      "attributionRationale": "Speaker identity is secure, but several central Greek words are badly rendered in captions and have not been audio-verified; attribution is lowered to trigger the required audio gate.",
+      "materialWordingConfidence": "low",
+      "materialWordingRationale": "Events 873–906 contain materially uncertain Greek forms, including the change verb and a Philippians verb; exact claims must be checked against audio.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-selective-appearance-expectation",
+      "sectionId": "comparative-synthesis",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 958,
+        "endEvent": 979
+      },
+      "claimSummary": "The vision-development theory better fits both the appearance record and what a loving God would be expected to do.",
+      "reasonSummary": "Paul's revelation is continuous with other appearances, physical details occur only later, and a compassionate saving deity would appear broadly rather than briefly to a select ancient group and rely on human transmission.",
+      "inferenceSummary": {
+        "premise": "The earliest appearances are vision-like and limited, later sources add physicality, and universal divine concern predicts wider disclosure.",
+        "inference": "The observed selective trajectory is more expected under ordinary religious origins than genuine divine intervention.",
+        "conclusion": "Carrier's natural theory is the better overall explanation."
+      },
+      "burdenContact": {
+        "bridgeId": "con-divine-intent",
+        "tier": "subsidiary",
+        "rationale": "Adds a theological expectation test to the final comparative synthesis."
+      },
+      "importance": 2,
+      "importanceRationale": "It is Carrier's distinctive final cumulative point, though dependent on a contested expectation about divine behavior.",
+      "respondsToIds": [
+        "pro-intentionality-and-hallucination-cost",
+        "pro-adverse-witness-vision-challenge"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-intentionality-and-hallucination-cost",
+          "component": "intention countermodel",
+          "description": "Argues loving salvific intention predicts universal rather than selective appearances."
+        },
+        {
+          "targetMoveId": "pro-adverse-witness-vision-challenge",
+          "component": "probability basis",
+          "description": "Supplies compassion and universal salvation as the reason for the distribution expectation."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Carrier final statement after the mixed procedural event 912; selected span contains only Carrier.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The final theological and evidential comparison is explicit.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-closing-comparative-fit",
+      "sectionId": "comparative-synthesis",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 985,
+        "endEvent": 1006
+      },
+      "claimSummary": "Resurrection explains all principal facts without strain, whereas the vision-legend theory lacks direct evidence and depends on historical and linguistic errors.",
+      "reasonSummary": "Licona reiterates death, tomb, appearances, and church growth, invokes early eyewitness, adverse, embarrassing and multiple testimony, and says Carrier's Rubicon and Pauline readings fail.",
+      "inferenceSummary": {
+        "premise": "The resurrection theory covers all cited facts, the natural theory has no direct evidence, and its source and lexical supports have been contested.",
+        "inference": "Greater coverage with fewer unsupported auxiliaries favors resurrection.",
+        "conclusion": "The Christian theory remains the best explanation."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-motion",
+        "tier": "motion",
+        "rationale": "Provides Licona's final motion-level comparative inference."
+      },
+      "importance": 3,
+      "importanceRationale": "This is the pro side's cumulative closing answer to the motion.",
+      "respondsToIds": [
+        "con-vision-development-theory",
+        "con-empty-tomb-evidence-quality",
+        "con-exchange-usage-and-context",
+        "con-selective-appearance-expectation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-vision-development-theory",
+          "component": "comparative fit",
+          "description": "Claims resurrection covers the facts more simply."
+        },
+        {
+          "targetMoveId": "con-empty-tomb-evidence-quality",
+          "component": "source quality",
+          "description": "Reasserts early and multiple testimony."
+        },
+        {
+          "targetMoveId": "con-exchange-usage-and-context",
+          "component": "lexical rebuttal",
+          "description": "Says transformation fits broader Pauline usage despite exchange elsewhere."
+        },
+        {
+          "targetMoveId": "con-selective-appearance-expectation",
+          "component": "overall alternative",
+          "description": "Rejects vision-development as unsupported and strained."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but the closing repeats a materially disputed Greek lexical claim whose exact caption form is not audio-verified.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "Overall synthesis is clear; the specific Greek-word reference around events 1003–1006 remains uncertain.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "pro-closing-natural-rivals",
+      "sectionId": "comparative-synthesis",
+      "side": "pro",
+      "speaker": "Mike Licona",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1008,
+        "endEvent": 1031
+      },
+      "spanLengthRationale": "The final reply integrates hallucination, Markan chronology, and religious-context responses before its conclusion",
+      "claimSummary": "Carrier's hallucination and gospel readings require unsupported assumptions, while early pre-Markan evidence plus religious context sustain high confidence in resurrection.",
+      "reasonSummary": "Licona says coordinated multimodal hallucinations are strained, legendary Mark would not touch earlier evidence, and the only plausible full-data explanation occurs in a context of divine significance.",
+      "inferenceSummary": {
+        "premise": "Carrier's mechanisms require disputed coordination, the core evidence is claimed to predate Mark, and religious context remains relevant.",
+        "inference": "Later legendary possibility and speculative hallucination do not displace the earlier cumulative case.",
+        "conclusion": "The resurrection inference remains warranted with high confidence."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-motion",
+        "tier": "motion",
+        "rationale": "Completes the final defense of the motion against Carrier's two principal natural mechanisms."
+      },
+      "importance": 2,
+      "importanceRationale": "It addresses the remaining live alternatives immediately before the devotional close.",
+      "respondsToIds": [
+        "con-grief-and-paul-vision-mechanisms",
+        "con-mark-literary-markers",
+        "con-intentionality-circularity"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-grief-and-paul-vision-mechanisms",
+          "component": "coordination challenge",
+          "description": "Claims the proposed group mechanism still requires implausibly aligned experiences."
+        },
+        {
+          "targetMoveId": "con-mark-literary-markers",
+          "component": "chronology",
+          "description": "Treats Markan legend as irrelevant to earlier tradition."
+        },
+        {
+          "targetMoveId": "con-intentionality-circularity",
+          "component": "context",
+          "description": "Reasserts religious significance as relevant to miracle probability."
+        }
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "Uninterrupted Licona final statement.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The principal claims and supporting reasons are clear without relying on the later devotional wording.",
+      "quoteEligibleExactSpans": []
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {
+      "totalAbsoluteDifference": 3,
+      "sectionAbsoluteDifference": 2
+    },
+    "totals": {
+      "pro": 13,
+      "con": 14,
+      "absoluteDifference": 1
+    },
+    "sections": [
+      {
+        "sectionId": "historical-explananda",
+        "pro": 3,
+        "con": 2,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "pauline-body",
+        "pro": 3,
+        "con": 4,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "empty-tomb-sources",
+        "pro": 3,
+        "con": 4,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "visions-and-priors",
+        "pro": 2,
+        "con": 3,
+        "absoluteDifference": 1
+      },
+      {
+        "sectionId": "comparative-synthesis",
+        "pro": 2,
+        "con": 1,
+        "absoluteDifference": 1
+      }
+    ],
+    "rationaleRequired": false,
+    "rationale": "The total difference is one and every section difference is within one. Historical-explananda includes Carrier's source-priority conflict because it directly challenges Licona's factual explanatory frame; Pauline-body retains four non-mergeable textual exchanges. Counts follow semantic content rather than symmetry."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {
+        "sectionId": "historical-explananda",
+        "pro": 3,
+        "con": 2,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "No fourth row."
+      },
+      {
+        "sectionId": "pauline-body",
+        "pro": 3,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "The fourth con row is evidence-led and non-mergeable: the opening exchange-text case, Jewish and cross-Pauline parallels, the Romans-context answer, and the final lexical-context answer use different evidence and answer different pro replies."
+      },
+      {
+        "sectionId": "empty-tomb-sources",
+        "pro": 3,
+        "con": 4,
+        "withinCapacity": true,
+        "fourthRowRequired": true,
+        "fourthRowAuthorized": true,
+        "rationale": "The fourth con row is evidence-led and non-mergeable: con-empty-tomb-evidence-quality is comparative source quality, con-gospel-legend-growth gospel accretion, con-guards-and-symbolic-tomb Matthew/Mark construction, and con-mark-literary-markers a later detailed six-marker Mark argument responding to Licona's methodological objection."
+      },
+      {
+        "sectionId": "visions-and-priors",
+        "pro": 2,
+        "con": 3,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "No fourth row."
+      },
+      {
+        "sectionId": "comparative-synthesis",
+        "pro": 2,
+        "con": 1,
+        "withinCapacity": true,
+        "fourthRowRequired": false,
+        "fourthRowAuthorized": true,
+        "rationale": "No fourth row."
+      }
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "fullTranscriptCoverageAudit": {
+    "assessedWindowOnly": true,
+    "reviewOfExcludedRecording": false,
+    "approvedStartEvent": 46,
+    "approvedEndEvent": 1038,
+    "eventCountReviewed": 993,
+    "intervals": [
+      {
+        "startEvent": 46,
+        "endEvent": 82,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Greeting, personal faith framing, stakes, and historical-method setup; no distinct load-bearing inference beyond the selected case."
+      },
+      {
+        "startEvent": 83,
+        "endEvent": 244,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "pro-crucifixion-death",
+          "pro-empty-tomb-case",
+          "pro-sincere-appearances",
+          "pro-resurrection-best-explanation"
+        ],
+        "rationale": "Licona opening case; connective repetitions inside the interval support the selected moves."
+      },
+      {
+        "startEvent": 245,
+        "endEvent": 255,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Moderator introduction and biography; procedural, not scored."
+      },
+      {
+        "startEvent": 256,
+        "endEvent": 355,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "con-vision-development-theory",
+          "con-paul-versus-gospels",
+          "con-paul-body-exchange"
+        ],
+        "rationale": "Carrier theory and Pauline case; events 346–355 connect body exchange to the tomb and preview later selected arguments."
+      },
+      {
+        "startEvent": 356,
+        "endEvent": 362,
+        "disposition": "supporting",
+        "moveIds": [
+          "con-visions-prior-fit"
+        ],
+        "rationale": "General base-rate principle developed concretely in con-visions-prior-fit and con-intentionality-circularity."
+      },
+      {
+        "startEvent": 363,
+        "endEvent": 464,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "con-empty-tomb-evidence-quality",
+          "con-gospel-legend-growth",
+          "con-visions-prior-fit"
+        ],
+        "rationale": "Carrier's tomb, legend, and vision arguments; final recap repeats those selected moves."
+      },
+      {
+        "startEvent": 465,
+        "endEvent": 465,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Procedural moderator transition."
+      },
+      {
+        "startEvent": 466,
+        "endEvent": 569,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "pro-intentionality-and-hallucination-cost",
+          "pro-paul-continuity",
+          "pro-paul-lexical-rebuttal"
+        ],
+        "rationale": "Licona rebuttal; opening recap and closing rhetoric repeat selected content."
+      },
+      {
+        "startEvent": 570,
+        "endEvent": 570,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Procedural moderator transition."
+      },
+      {
+        "startEvent": 571,
+        "endEvent": 676,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "con-grief-and-paul-vision-mechanisms",
+          "con-jewish-pauline-parallels",
+          "con-guards-and-symbolic-tomb"
+        ],
+        "rationale": "Carrier rebuttal, fully represented by its vision, Pauline, and tomb/literary components."
+      },
+      {
+        "startEvent": 677,
+        "endEvent": 677,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Procedural moderator transition."
+      },
+      {
+        "startEvent": 678,
+        "endEvent": 793,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "pro-adverse-witness-vision-challenge",
+          "pro-direct-pauline-transformation-texts",
+          "pro-guard-polemic-and-literary-method",
+          "pro-rubicon-comparison-rebuttal"
+        ],
+        "rationale": "Licona response; all distinct load-bearing replies selected, with connective restatement retained as support."
+      },
+      {
+        "startEvent": 794,
+        "endEvent": 796,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Procedural slide and timing transition."
+      },
+      {
+        "startEvent": 797,
+        "endEvent": 907,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "con-mark-literary-markers",
+          "con-romans-present-life-context",
+          "con-intentionality-circularity",
+          "con-exchange-usage-and-context"
+        ],
+        "rationale": "Carrier response; four non-mergeable literary, Pauline-context, probability, and lexical replies selected."
+      },
+      {
+        "startEvent": 908,
+        "endEvent": 912,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Procedural transition; event 912 is mixed, but its few Carrier setup words add no proposition and are not scored."
+      },
+      {
+        "startEvent": 913,
+        "endEvent": 945,
+        "disposition": "supporting",
+        "moveIds": [
+          "con-vision-development-theory",
+          "con-exchange-usage-and-context"
+        ],
+        "rationale": "Carrier closing recap of visionary development, Pauline body exchange, source insufficiency, and legend; no distinct new reason."
+      },
+      {
+        "startEvent": 946,
+        "endEvent": 979,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "con-visions-prior-fit",
+          "con-selective-appearance-expectation"
+        ],
+        "rationale": "Closing recap of prior probability and appearances plus the distinct divine-distribution argument."
+      },
+      {
+        "startEvent": 980,
+        "endEvent": 980,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Procedural moderator transition."
+      },
+      {
+        "startEvent": 981,
+        "endEvent": 1031,
+        "disposition": "selected-or-supporting",
+        "moveIds": [
+          "pro-closing-comparative-fit",
+          "pro-closing-natural-rivals"
+        ],
+        "rationale": "Licona final comparative synthesis; greeting and audience framing are non-substantive."
+      },
+      {
+        "startEvent": 1032,
+        "endEvent": 1038,
+        "disposition": "omitted",
+        "moveIds": [],
+        "rationale": "Devotional movie illustration and praise do not add a historical premise or reply."
+      }
+    ],
+    "coverageComplete": true,
+    "scopeClarification": "Every event in the complete approved formal-rounds transcript, events 46 through 1038, was reviewed. Excluded subsequent questions and answers were not reviewed and were not used to strengthen or weaken any claim."
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "completeTranscriptMeans": "complete approved formal-rounds transcript only, not the excluded questions and answers or the complete recording",
+    "allSpansSourceExact": true,
+    "scoreBlind": true,
+    "noOutcomePredetermined": true,
+    "noAudienceOrHostCredit": true
+  }
+}

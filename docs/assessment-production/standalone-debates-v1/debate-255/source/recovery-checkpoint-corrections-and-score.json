@@ -1,0 +1,59 @@
+{
+  "status": "correction-and-adjudication-complete-score-frozen-publication-running",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "savedAt": "2026-09-09T17:35:40.869Z",
+  "correction": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/completion-audit.json",
+    "sha256": "5b26f8d664b3a9e661aec878d1237db8bc0b6ff293936fa5b3fe11f003e0c54e",
+    "bytes": 2356
+  },
+  "negativeTests": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/auditor-fixture-tests.json",
+    "sha256": "4f20223da634efb2ccacdbfcc325374cf8455619c2061fea08fd59d207a3042a",
+    "bytes": 594
+  },
+  "adjudication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/adjudication/execution.json",
+    "sha256": "3a816eff4231d1a196dadd587a3c9bd761eda87f91a5d7fb983feed4f1721098",
+    "bytes": 985
+  },
+  "score": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/output.json",
+    "sha256": "770579d7a12035cb26c3d54f544ae4d72223b39e84a83e04fd5061e5ef54d314",
+    "bytes": 14178
+  },
+  "attestation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/attestation.json",
+    "sha256": "b590183739016c37095cee81b6967b00c7e58d11246a562d1d027d50c61d20a5",
+    "bytes": 833
+  },
+  "publicationPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/execution-plan.json",
+    "sha256": "0ad6fba51f407192ff73101dea4e9d89b2d428584c4ab114883a5651d8254f70",
+    "bytes": 3282
+  },
+  "nextAction": "Wait for the one authorized publication output; validate prose, then run two blind rhetorical reviews and anonymous adjudication, integrate and validate the site, commit/push the topic branch and complete the quality-gated pull request. Never repeat source acquisition, audio, primary judgments, correction, adjudication, or the single score calculation.",
+  "scores": {
+    "pro": 82,
+    "con": 81
+  },
+  "scoredScope": "formal rounds 5:10–1:38:23 only",
+  "additionalDirectCostUsd": 0,
+  "paidCost": {
+    "initialFullDebateEstimateUsd": 0.210376,
+    "frozenFullDebateEstimateUsd": 0.717020731,
+    "preauthorizedMaximumUsd": 0.91,
+    "paidCalls": 12,
+    "successfulPaidCalls": 11,
+    "failedOrUncertainCalls": 1,
+    "paidMinutes": 32.86266666666667,
+    "directCostUsd": 0.6923275,
+    "knownSuccessfulCallCostUsd": 0.6923275,
+    "maximumPotentialCombinedCostUsd": 0.7523275,
+    "uncertainCostUsd": 0.06,
+    "transcriptionCapUsd": 1,
+    "pricingUrl": "https://developers.openai.com/api/docs/pricing",
+    "calculation": "Reported successful input tokens at $2.50 per million and output tokens at $10 per million, plus a conservative six-cent allowance for the preserved failed network attempt. One explicit user-authorized retry; no automatic retries."
+  }
+}

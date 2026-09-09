@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "46420dc3fe9eb8bdbd0c05109b53d03a3ace03c04d98d993963228bdc8bdf0b0",
+      "bytes": 146928
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+      "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+      "bytes": 199829
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+      "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+      "bytes": 226182
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_255_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_255_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}

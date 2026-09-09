@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 255,
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents; explicit identical formal-rounds-only file boundaries and disjoint outputs; no API calls or secrets used.",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/formal-rounds-packet.json",
+    "judgmentPacketSha256": "2e1919459fceec793a8a3e7fa09dbd92574fce7e618634ff493487e187035c7c",
+    "inventorySha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+      "outputSha256": "0d56bf73e14ef01e1bb930993ff4142dd84afaabac2767f59a31742b466c9622",
+      "outputBytes": 36930,
+      "judgmentCount": 27,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/debate255_judgment_a"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+      "outputSha256": "712eb0fda8466eb81cce4c9cf07bb8d8fb9f5c8fcd32952bc71257d59e6472a2",
+      "outputBytes": 36727,
+      "judgmentCount": 27,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/debate255_judgment_b"
+    }
+  ],
+  "completedAt": "2026-09-09T17:04:42.228Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "excludedQAndASeenByModels": false,
+    "rerunPermitted": false
+  }
+}

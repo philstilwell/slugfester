@@ -1,0 +1,70 @@
+{
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-09T16:54:18.687Z",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "freshContextPerPass": true,
+  "forkTurns": "none",
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/formal-rounds-packet.json",
+    "sha256": "2e1919459fceec793a8a3e7fa09dbd92574fce7e618634ff493487e187035c7c",
+    "bytes": 6134
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/formal-rounds-packet.json",
+      "sha256": "2e1919459fceec793a8a3e7fa09dbd92574fce7e618634ff493487e187035c7c",
+      "bytes": 6134
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+      "bytes": 152724
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+      "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+      "bytes": 199829
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/debate255_judgment_a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/debate255_judgment_b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

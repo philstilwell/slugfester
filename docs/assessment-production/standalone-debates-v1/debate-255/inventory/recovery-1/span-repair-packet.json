@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0-score-blind-source-span-repair",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "source": {
+    "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+    "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+    "bytes": 199829
+  },
+  "moves": [
+    {
+      "moveId": "con-mark-literary-markers",
+      "sectionId": "empty-tomb-sources",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 816,
+        "endEvent": 837
+      },
+      "spanLengthRationale": "Carrier expressly supplies six independent literary markers after being challenged for insufficient support",
+      "claimSummary": "Mark's empty-tomb scene is densely integrated with reversal, mystery-religion, Psalm, Genesis, and other scriptural symbolism.",
+      "reasonSummary": "Carrier enumerates thematic and verbal correspondences that allegedly require women, an opened tomb, a stone, and a new-body image within Mark's literary design.",
+      "inferenceSummary": {
+        "premise": "Multiple features of the tomb narrative perform specific symbolic and intertextual roles within Mark.",
+        "inference": "Dense literary functionality is better expected if Mark composed a parable than recorded a bare historical report.",
+        "conclusion": "Mark's empty tomb is weak historical evidence and likely symbolic invention."
+      },
+      "burdenContact": {
+        "bridgeId": "con-tomb",
+        "tier": "central",
+        "rationale": "Provides the detailed literary case Licona said had not been supplied."
+      },
+      "importance": 2,
+      "importanceRationale": "It is Carrier's developed answer to the charge that his Mark claim was unsupported.",
+      "respondsToIds": [
+        "pro-guard-polemic-and-literary-method"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-guard-polemic-and-literary-method",
+          "component": "independent literary case",
+          "description": "Disclaims reliance on the theory Licona attacked and supplies six separate proposed markers."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "Speaker identity is secure, but some captioned religious and textual names are uncertain and central correspondences require audio confirmation.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The six-part structure is clear, but exact names such as the mystery tradition and some verbal claims are not audio-verified.",
+      "quoteEligibleExactSpans": []
+    },
+    {
+      "moveId": "con-exchange-usage-and-context",
+      "sectionId": "pauline-body",
+      "side": "con",
+      "speaker": "Richard Carrier",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 873,
+        "endEvent": 895
+      },
+      "spanLengthRationale": "Corpus usage, Psalm source, garment imagery, grammar, material context, and scholarly division are distinct supports",
+      "claimSummary": "Usage and context support exchange vocabulary and material contrast, while acknowledged scholarly division prevents Licona from claiming decisive refutation.",
+      "reasonSummary": "Carrier appeals to alleged New Testament and Septuagint usage, a Psalm about destruction and replacement, clothing metaphors, the bodies-and-substances context, and dispute over the omitted Greek subject.",
+      "inferenceSummary": {
+        "premise": "The verb's cited uses involve exchange, its source passage depicts replacement, and the surrounding argument contrasts different bodies and substances.",
+        "inference": "Context favors exchange despite a generic dictionary gloss of change.",
+        "conclusion": "Licona has not shown Carrier's Pauline reading false, and the exchange reading remains stronger or at least live."
+      },
+      "burdenContact": {
+        "bridgeId": "con-paul",
+        "tier": "central",
+        "rationale": "Responds to Licona's lexical and grammatical rebuttals with contextual usage."
+      },
+      "importance": 3,
+      "importanceRationale": "This is Carrier's final detailed defense of the technical premise on which his tomb theory depends.",
+      "respondsToIds": [
+        "pro-paul-lexical-rebuttal",
+        "pro-direct-pauline-transformation-texts"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-paul-lexical-rebuttal",
+          "component": "usage over gloss",
+          "description": "Prioritizes alleged corpus usage and source-text imagery over primary dictionary sense."
+        },
+        {
+          "targetMoveId": "pro-direct-pauline-transformation-texts",
+          "component": "grammar and context",
+          "description": "Disputes the supplied subject and emphasizes distinct material bodies."
+        }
+      ],
+      "attributionConfidence": "low",
+      "attributionRationale": "Speaker identity is secure, but several central Greek words are badly rendered in captions and have not been audio-verified; attribution is lowered to trigger the required audio gate.",
+      "materialWordingConfidence": "low",
+      "materialWordingRationale": "Events 873–906 contain materially uncertain Greek forms, including the change verb and a Philippians verb; exact claims must be checked against audio.",
+      "quoteEligibleExactSpans": []
+    }
+  ],
+  "writableFields": [
+    "moves[con-mark-literary-markers].sourceSpan",
+    "moves[con-exchange-usage-and-context].sourceSpan"
+  ],
+  "instructions": [
+    "Read the complete approved formal-round source packet. Repair ONLY the two sourceSpan objects, each containing integer startEvent and endEvent. Choose the shortest complete contiguous source span that supports every unchanged claim, reason, inference, and response component. Do not rewrite words, summaries, confidence, section, importance, reply links, quotes, or any other inventory field.",
+    "For con-mark-literary-markers the existing excerpt omits its opening reversal explanation and explicit reply disclaiming reliance on the theory Licona attacked. For con-exchange-usage-and-context the existing excerpt omits the grammatical and material-context grounds named in the unchanged summary. Locate the actual complete source boundaries without assuming a proposed answer.",
+    "No scores, ratings, winner, prior debates, or other model outputs are permitted. One repair attempt only, no retries. Report a blocker if both source spans cannot support all unchanged content."
+  ],
+  "outputContract": {
+    "status": "complete-and-source-verified OR blocked",
+    "repairs": [
+      {
+        "moveId": "one of the two allowed IDs",
+        "sourceSpan": {
+          "startEvent": "integer",
+          "endEvent": "integer"
+        },
+        "rationale": "specific source-only reason, at least 40 characters"
+      }
+    ],
+    "completeApprovedSourceReviewed": true,
+    "noOtherFieldsChanged": true,
+    "scoresAbsent": true
+  }
+}

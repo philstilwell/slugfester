@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0-standalone-assessment-integrity-hold",
+  "status": "blocked-before-adjudication-and-score-calculation",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "createdAt": "2026-09-09T17:13:41.729Z",
+  "reason": "Both primary judges acknowledge that source-media uncertainty affected participant dimension values. Schema validation passed, but this semantic scoring-integrity requirement did not.",
+  "requiredPrinciple": "Score the speakers' argumentative performance; poor caption quality may lower assessment confidence, never participant performance ratings.",
+  "preservedArtifacts": {
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+      "sha256": "0d56bf73e14ef01e1bb930993ff4142dd84afaabac2767f59a31742b466c9622",
+      "bytes": 36930
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+      "sha256": "712eb0fda8466eb81cce4c9cf07bb8d8fb9f5c8fcd32952bc71257d59e6472a2",
+      "bytes": 36727
+    },
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/execution.json",
+      "sha256": "1af997e0bdae725732c47a203324b7c8de617bc02f50978edd589900822d02d1",
+      "bytes": 2646
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/disagreements/disagreements.json",
+      "sha256": "c4109cd56141e07238b4a063f0ebb111e66fed5655b0cf5818b0646d53341749",
+      "bytes": 7575
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+      "bytes": 152724
+    },
+    "scorePassExists": false,
+    "adjudicationExists": false
+  },
+  "diagnostics": {
+    "pass-a": {
+      "affectedRatingCount": 11,
+      "agentTask": "/root/debate255_judgment_a",
+      "admission": "Eleven dimension values were affected at least partly by recording/caption uncertainty rather than having that uncertainty confined solely to assessmentConfidence.",
+      "affectedFields": [
+        "pro-sincere-appearances.precisionClarity",
+        "con-vision-development-theory.precisionClarity",
+        "con-paul-body-exchange.evidenceWarrant",
+        "con-paul-body-exchange.precisionClarity",
+        "pro-paul-continuity.evidenceWarrant",
+        "pro-paul-continuity.precisionClarity",
+        "pro-paul-lexical-rebuttal.evidenceWarrant",
+        "pro-paul-lexical-rebuttal.precisionClarity",
+        "pro-direct-pauline-transformation-texts.precisionClarity",
+        "con-exchange-usage-and-context.evidenceWarrant",
+        "con-exchange-usage-and-context.precisionClarity"
+      ],
+      "independentlySupportedAndUnaffected": [
+        "pro-rubicon-comparison-rebuttal.precisionClarity",
+        "pro-closing-comparative-fit.precisionClarity",
+        "pro-closing-natural-rivals.precisionClarity",
+        "con-empty-tomb-evidence-quality.precisionClarity"
+      ],
+      "diagnosticWasReadOnly": true,
+      "outputUnchanged": true
+    },
+    "pass-b": {
+      "affectedRatingCount": 6,
+      "agentTask": "/root/debate255_judgment_b",
+      "admission": "I did lower some dimension values for caption/audio uncertainty, which should have been confined to assessmentConfidence.",
+      "affectedFields": [
+        "con-paul-body-exchange.precisionClarity",
+        "pro-paul-continuity.precisionClarity",
+        "pro-paul-lexical-rebuttal.evidenceWarrant",
+        "pro-paul-lexical-rebuttal.precisionClarity",
+        "con-exchange-usage-and-context.evidenceWarrant",
+        "con-exchange-usage-and-context.precisionClarity"
+      ],
+      "independentlySupportedAndUnaffected": [
+        "con-vision-development-theory.precisionClarity",
+        "con-paul-body-exchange.evidenceWarrant",
+        "pro-paul-continuity.evidenceWarrant",
+        "con-jewish-pauline-parallels.precisionClarity",
+        "pro-closing-comparative-fit.precisionClarity",
+        "pro-sincere-appearances (all dimensions)"
+      ],
+      "diagnosticWasReadOnly": true,
+      "outputUnchanged": true
+    }
+  },
+  "affectedDimensionJudgments": 17,
+  "unaffectedDimensionJudgments": 307,
+  "noArtifactsOverwritten": true,
+  "noScoresCalculated": true,
+  "noAdjudicationExecuted": true,
+  "noPublicationCommitPushOrPR": true,
+  "allFurtherModelJudgmentsPaused": true,
+  "noNewPaidRequestMayStart": true,
+  "inFlightAudioMayCompleteWithoutRetry": true,
+  "proposedRecovery": {
+    "authorizationStatus": "requires-explicit-user-approval",
+    "method": "Two fresh mutually blind score-blind correction contexts, one per original pass, using the same complete frozen formal-rounds source, verified audio, rubric, and unchanged inventory. Each may replace only the dimension value/rationale objects its original judge admitted were affected. Retain all other dimensions and burden judgments byte-for-byte.",
+    "fieldsByPass": {
+      "pass-a": [
+        "pro-sincere-appearances.precisionClarity",
+        "con-vision-development-theory.precisionClarity",
+        "con-paul-body-exchange.evidenceWarrant",
+        "con-paul-body-exchange.precisionClarity",
+        "pro-paul-continuity.evidenceWarrant",
+        "pro-paul-continuity.precisionClarity",
+        "pro-paul-lexical-rebuttal.evidenceWarrant",
+        "pro-paul-lexical-rebuttal.precisionClarity",
+        "pro-direct-pauline-transformation-texts.precisionClarity",
+        "con-exchange-usage-and-context.evidenceWarrant",
+        "con-exchange-usage-and-context.precisionClarity"
+      ],
+      "pass-b": [
+        "con-paul-body-exchange.precisionClarity",
+        "pro-paul-continuity.precisionClarity",
+        "pro-paul-lexical-rebuttal.evidenceWarrant",
+        "pro-paul-lexical-rebuttal.precisionClarity",
+        "con-exchange-usage-and-context.evidenceWarrant",
+        "con-exchange-usage-and-context.precisionClarity"
+      ]
+    },
+    "attemptsPerCorrectionContext": 1,
+    "automaticRetries": 0,
+    "preserveAllRawAndFailedArtifacts": true,
+    "noInventoryChanges": true,
+    "noManualNumericalAdjustments": true,
+    "noTotalsVisible": true,
+    "newDisagreementExtractionAfterValidatedCorrections": true,
+    "directIncrementalModelCostUsd": 0
+  }
+}

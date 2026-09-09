@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0-score-blind-caption-correction-packet",
+  "status": "frozen-before-execution",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "pass": "pass-b",
+  "inventorySha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/formal-rounds-authorization.json",
+      "sha256": "1e3ac8b56d93232664276e9a5ae17e18fa89ca84c7f3539633de3d81d3faf52b",
+      "bytes": 2125
+    },
+    "assessedWindow": {
+      "startEvent": 46,
+      "endEvent": 1038,
+      "startMs": 310080,
+      "endMs": 5902800,
+      "durationMs": 5592720
+    },
+    "scope": "The complete formal openings, rebuttals, responses, and final statements only. Introductory material and all later questions, answers, moderator challenges, and closing exchanges are outside assessment. Procedural moderator transitions inside the formal rounds are not scored.",
+    "requiredReaderDisclosure": "Only the formal debate rounds (5:10–1:38:23) are assessed. The subsequent question-and-answer session, including moderator-authored challenges and both speakers' replies, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+      "bytes": 152724
+    },
+    {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+      "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+      "bytes": 199829
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+      "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+      "bytes": 226182
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    }
+  ],
+  "allowedFields": [
+    "con-paul-body-exchange.precisionClarity",
+    "pro-paul-continuity.precisionClarity",
+    "pro-paul-lexical-rebuttal.evidenceWarrant",
+    "pro-paul-lexical-rebuttal.precisionClarity",
+    "con-exchange-usage-and-context.evidenceWarrant",
+    "con-exchange-usage-and-context.precisionClarity"
+  ],
+  "instructions": [
+    "Read the complete approved formal-rounds source, complete locked inventory, rubric, and all verified audio evidence before judging the listed dimensions.",
+    "Give a fresh independent integer rating and source-specific rationale for each listed dimension; there is no prescribed number or direction of change.",
+    "Score the actual spoken argument. Caption or automatic-transcription errors and uncertified Greek spelling are not participant-performance defects. Audio verifies the spoken contrast, not the truth of a scholarly claim.",
+    "Assess evidence/warrant for actual support and precision/clarity for the recoverable spoken distinctions. Avoid charging a warrant gap again as clarity without a distinct spoken ambiguity.",
+    "Do not read original judgments, other correction packets or outputs, unscoped transcript/events, other debates, scores, tags, or publication prose. Do not use web, models, paid APIs, or subagents.",
+    "Only the approved formal rounds count; no credit or penalties for excluded questions and answers.",
+    "Do not change burden judgments, confidence, other dimensions, inventory, or source evidence. Output only the ordered replacement objects. One attempt, no retries."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.0-bounded-dimension-replacement",
+    "status": "complete",
+    "debateNumber": "255",
+    "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+    "pass": "pass-b",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+    "replacements": [
+      {
+        "field": "con-paul-body-exchange.precisionClarity",
+        "value": "integer 0 through 100",
+        "rationale": "at least 40 characters; specific actual argument reason, not caption quality"
+      },
+      {
+        "field": "pro-paul-continuity.precisionClarity",
+        "value": "integer 0 through 100",
+        "rationale": "at least 40 characters; specific actual argument reason, not caption quality"
+      },
+      {
+        "field": "pro-paul-lexical-rebuttal.evidenceWarrant",
+        "value": "integer 0 through 100",
+        "rationale": "at least 40 characters; specific actual argument reason, not caption quality"
+      },
+      {
+        "field": "pro-paul-lexical-rebuttal.precisionClarity",
+        "value": "integer 0 through 100",
+        "rationale": "at least 40 characters; specific actual argument reason, not caption quality"
+      },
+      {
+        "field": "con-exchange-usage-and-context.evidenceWarrant",
+        "value": "integer 0 through 100",
+        "rationale": "at least 40 characters; specific actual argument reason, not caption quality"
+      },
+      {
+        "field": "con-exchange-usage-and-context.precisionClarity",
+        "value": "integer 0 through 100",
+        "rationale": "at least 40 characters; specific actual argument reason, not caption quality"
+      }
+    ],
+    "audit": {
+      "completeFormalSourceReviewed": true,
+      "completeInventoryReviewed": true,
+      "verifiedAudioReviewed": true,
+      "otherJudgmentUnavailable": true,
+      "oldAffectedRatingsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "captionQualityNotPenalized": true,
+      "onlyAuthorizedFieldsJudged": true
+    }
+  },
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-b/replacement.json"
+  ]
+}
