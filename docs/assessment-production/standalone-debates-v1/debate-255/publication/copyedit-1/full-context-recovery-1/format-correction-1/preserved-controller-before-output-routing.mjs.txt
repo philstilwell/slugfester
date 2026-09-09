@@ -1,0 +1,70 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1],number=arg('--debate'),phase=arg('--phase');assert.match(number||'',/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),record=fileRecord;
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(d=>d.debateNumber===number);assert.ok(entry);
+const root=entry.root,rr=`${root}/publication/copyedit-1/full-context-recovery-1`,oldRoot=`${root}/publication/copyedit-1`;
+const write=(p,v)=>{assert.equal(fs.existsSync(p),false,`Refuse overwrite ${p}`);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,typeof v==='string'?v:serializedJson(v),{flag:'wx'});};
+const tokens=p=>p.replace(/\[(\d+)\]/g,'.$1').split('.'),get=(o,p)=>tokens(p).reduce((v,k)=>v[k],o);
+const set=(o,p,v)=>{const ks=tokens(p),last=ks.pop();ks.reduce((x,k)=>x[k],o)[last]=v;};
+const words=s=>s.trim().split(/\s+/u).length,labels=['Strongest feature:','Principal limitation:','Live burden:','Locked score:'];
+if(phase==='prepare'){
+ const old=read(`${oldRoot}/manifest.json`),hold=read(`${oldRoot}/integrity-hold.json`),sourcePath=hold.completeFrozenSource.path,source=read(sourcePath);
+ assert.equal(hold.status,'stopped-on-source-context-omission');assert.equal(record(sourcePath).sha256,hold.completeFrozenSource.sha256);
+ assert.equal(record(old.rejectedOutput.path).sha256,old.rejectedOutput.sha256);
+ for(const r of old.evidenceInputs)assert.equal(record(r.path).sha256,r.sha256);
+ const authorizationPath=`${rr}/authorization.json`;
+ write(authorizationPath,{status:'explicit-user-authorized-full-context-recovery',debateNumber:number,debateId:entry.debateId,approvedAt:new Date().toISOString(),userReply:'I approve.',approvedRequest:'Restart the failed and interrupted two-field repair attempts with the complete frozen formal-round transcript, then finish the remaining unlaunched repairs.',priorHold:record(`${oldRoot}/integrity-hold.json`),replacementOrdinals:[hold.failedRepair.ordinal,hold.interruptedRepair.ordinal],firstAttemptOrdinals:hold.unlaunchedOrdinals,maximumWritableFieldsPerShard:2,maximumConcurrentContexts:2,attemptsPerNewContext:1,automaticRetries:0,sourceAndScoresUnchanged:true,directIncrementalCostUsd:0});
+ const readablePath=`${rr}/complete-formal-source.txt`,readable=source.events.map(e=>`[event ${e.eventIndex}; ${e.startMs}ms] ${e.text}`).join('\n')+'\n';
+ write(readablePath,readable);
+ write(`${rr}/source-view-validation.json`,{status:'passed-verbatim-complete-formal-event-view',original:record(sourcePath),view:record(readablePath),eventCount:source.events.length,eventIndices:source.events.map(e=>e.eventIndex),allEventTextsPreserved:true,excludedQuestionAndAnswerUnavailable:true,transformation:'Each source event appears exactly once in original order, prefixed only by its original event index and absolute start time; no source words added, omitted, or rewritten.'});
+ const plans=[];
+ for(const p of old.plans){
+  assert.equal(record(p.packet.path).sha256,p.packet.sha256);assert.equal(record(p.executionPlan.path).sha256,p.executionPlan.sha256);
+  const packet=read(p.packet.path),oldPlan=read(p.executionPlan.path),shard=`shard-${String(p.ordinal).padStart(2,'0')}`,packetPath=`${rr}/${shard}-packet.json`,planPath=`${rr}/${shard}-execution-plan.json`,outputPath=`${rr}/${shard}-output.json`;
+  packet.status='frozen-complete-context-publication-repair';packet.completeFormalSource=record(readablePath);packet.completeFormalSourceOriginal=record(sourcePath);
+  packet.requirements.editorialRules.push('Read the complete formal-round source view before drafting, not only the selected summary span; the source view is 993 event lines and must be read in nontruncated portions.','Before claiming that a speaker omitted, never supplied, merely asserted, failed to identify, or did not explain something, check every earlier and later formal-round occurrence of that issue; restrict the limitation to what the complete source supports.','Do not present an opponent’s abandoned possibility as their current position; distinguish concession from active advocacy.','Treat disputed language and historical conclusions as claims, not externally verified facts.');
+  packet.outputContract.sourceReview={completeFormalSourceRead:true,limitationCheckedAgainstWholeSource:true,contextualSupport:'Array of {startEvent,endEvent,reason}, referring to actual supporting or qualifying passages beyond the selected span where relevant.',omissionClaimAudit:'Explain what broader-source check was made for the proposed limitation; do not assert that absence from the selected excerpt proves absence from the debate.'};
+  write(packetPath,packet);
+  const replacement=[hold.failedRepair.ordinal,hold.interruptedRepair.ordinal].includes(p.ordinal);
+  const plan={...oldPlan,status:'frozen-before-complete-context-repair',agentTask:`/root/publication_${number}_full_context_${String(p.ordinal).padStart(2,'0')}`,allowedInputs:[record(packetPath),record(readablePath)],writablePaths:[outputPath],exceptionalReplacement:replacement,priorContextDisposition:replacement?(p.ordinal===hold.failedRepair.ordinal?'completed-invalid-preserved':'interrupted-without-output'):'never-launched',authorization:record(authorizationPath),priorPlan:p.executionPlan,startedOnlyAfterCompleteSourceAccess:true};
+  write(planPath,plan);plans.push({...p,packet:record(packetPath),executionPlan:record(planPath),outputPath,exceptionalReplacement:replacement});
+ }
+ write(`${rr}/manifest.json`,{...old,status:'frozen-before-full-context-recovery',authorization:record(authorizationPath),priorManifest:record(`${oldRoot}/manifest.json`),priorHold:record(`${oldRoot}/integrity-hold.json`),completeSourceView:record(readablePath),sourceViewValidation:record(`${rr}/source-view-validation.json`),plans});
+ console.log(JSON.stringify({shards:plans.length,replacements:plans.filter(p=>p.exceptionalReplacement).length,unlaunchedFirstAttempts:plans.filter(p=>!p.exceptionalReplacement).length,sourceEvents:source.events.length}));
+}else if(phase==='validate-shard'||phase==='merge'){
+ const manifest=read(`${rr}/manifest.json`),preserved=read(manifest.rejectedOutput.path),merged=structuredClone(preserved),applied=[];
+ for(const r of [manifest.rejectedOutput,manifest.failedValidation,manifest.completeSourceView,...manifest.evidenceInputs])assert.equal(record(r.path).sha256,r.sha256);
+ const selected=phase==='validate-shard'?manifest.plans.filter(p=>p.ordinal===Number(arg('--ordinal'))):manifest.plans;assert.ok(selected.length);
+ const source=read(read(`${oldRoot}/integrity-hold.json`).completeFrozenSource.path),ids=new Set(source.events.map(e=>e.eventIndex));
+ for(const item of selected){
+  for(const r of [item.packet,item.executionPlan])assert.equal(record(r.path).sha256,r.sha256);
+  const output=read(item.outputPath),packet=read(item.packet.path);
+  for(const [k,v]of Object.entries({schemaVersion:'1.0',status:'complete-and-schema-valid',debateNumber:number,debateId:entry.debateId,ordinal:item.ordinal}))assert.equal(output[k],v,k);
+  assert.deepEqual(Object.keys(output).sort(),['schemaVersion','status','debateNumber','debateId','ordinal','repairs','audit','sourceReview'].sort());
+  assert.deepEqual(output.repairs.map(r=>r.path),item.fieldPaths);assert.deepEqual(output.audit,{onlyDeclaredFields:true,oneAttempt:true,scoreChanges:0,critiqueChangesOutsideScope:0});
+  const review=output.sourceReview;assert.equal(review.completeFormalSourceRead,true);assert.equal(review.limitationCheckedAgainstWholeSource,true);assert.ok(words(review.omissionClaimAudit)>=12);assert.ok(review.contextualSupport.length>0);
+  for(const c of review.contextualSupport){assert.ok(ids.has(c.startEvent)&&ids.has(c.endEvent)&&c.endEvent>=c.startEvent);assert.ok(words(c.reason)>=6);}
+  const [description,critique]=output.repairs.map(r=>r.value);assert.equal(typeof description,'string');assert.equal(typeof critique,'string');
+  assert.ok(words(description)>=22&&words(description)<=35,`Description words ${words(description)}`);assert.ok(/[.!?]$/.test(description),'Description terminal punctuation');
+  assert.ok(words(critique)>=105&&words(critique)<=130,`Critique words ${words(critique)}`);assert.ok(critique.length>=880,`Critique characters ${critique.length}`);
+  const parts=critique.split(/(?=Principal limitation:|Live burden:|Locked score:)/).map(s=>s.trim());assert.ok(parts.length===4&&parts.every((s,i)=>s.startsWith(labels[i])&&/[.!?]$/.test(s)));assert.equal((critique.match(/[.!?](?=\s|$)/g)||[]).length,4);assert.ok(parts[3].includes(String(packet.lockedDisplay.score)));
+  for(const repair of output.repairs){assert.deepEqual(Object.keys(repair).sort(),['path','value']);assert.notEqual(repair.value,get(preserved,repair.path));set(merged,repair.path,repair.value);applied.push(repair.path);}
+  console.log(JSON.stringify({ordinal:item.ordinal,moveId:item.moveId,descriptionWords:words(description),critiqueWords:words(critique),critiqueCharacters:critique.length,output:record(item.outputPath)}));
+ }
+ if(phase==='merge'){
+  assert.equal(applied.length,manifest.shardCount*2);assert.equal(new Set(applied).size,applied.length);const check=structuredClone(merged);for(const p of applied)set(check,p,get(preserved,p));assert.deepEqual(check,preserved);
+  const editorial=read(`${rr}/controller-semantic-review.json`);assert.equal(editorial.status,'passed-complete-source-semantic-review');assert.deepEqual(editorial.reviewedOrdinals,manifest.plans.map(p=>p.ordinal));
+  for(const r of editorial.outputs)assert.equal(record(r.path).sha256,r.sha256);
+  const out=`${root}/publication/output.json`;write(out,merged);
+  write(`${oldRoot}/execution.json`,{status:'merged-pending-complete-revalidation',debateNumber:number,debateId:entry.debateId,source:manifest.rejectedOutput,output:record(out),shards:manifest.plans.map(p=>({ordinal:p.ordinal,executionPlan:p.executionPlan,output:record(p.outputPath),fields:p.fieldPaths,attempts:1,retries:0,exceptionalReplacement:p.exceptionalReplacement})),fieldCount:applied.length,maximumWritableFieldsPerShard:2,attemptsPerShard:1,retries:0,maximumConcurrentContexts:2,exceptionalReplacementAuthorization:manifest.authorization,preservedFailedRepair:manifest.priorHold,semanticReview:record(`${rr}/controller-semantic-review.json`),directIncrementalCostUsd:0});
+ }
+}else if(phase==='finalize'){
+ const validation=read(`${root}/publication/post-repair-validation.json`),execution=read(`${oldRoot}/execution.json`),manifest=read(`${rr}/manifest.json`);
+ assert.deepEqual(validation.errors,[]);assert.equal(validation.output.sha256,record(`${root}/publication/output.json`).sha256);assert.equal(execution.output.sha256,validation.output.sha256);
+ write(`${root}/publication/correction-1-copyedit.json`,{schemaVersion:'1.0-publication-copyedit-correction',protocolId:'assessment-production-standalone-debate-v1',status:'applied-once-and-frozen',debateNumber:number,debateId:entry.debateId,preservedPriorOutput:manifest.rejectedOutput,failedValidation:manifest.failedValidation,execution:record(`${oldRoot}/execution.json`),postRepairValidation:record(`${root}/publication/post-repair-validation.json`),applicationShards:execution.shards.map(s=>({ordinal:s.ordinal,fields:s.fields,maximumFields:2,attempts:1,retries:0})),audit:{fieldChanges:execution.fieldCount,judgmentChanges:0,scoreChanges:0,moveChanges:0,identityChanges:0,maximumWritableFieldsPerShard:2,attemptsPerShard:1,completeDebateRevalidated:true},evidence:{after:record(`${root}/publication/output.json`)}});
+ write(`${root}/publication/prose-acceptance.json`,{status:'accepted-after-bounded-field-repair',debateNumber:number,debateId:entry.debateId,initialValidation:manifest.failedValidation,correction:record(`${root}/publication/correction-1-copyedit.json`),validation:record(`${root}/publication/post-repair-validation.json`),source:manifest.rejectedOutput,output:record(`${root}/publication/output.json`),proseChanges:execution.fieldCount});
+ console.log(JSON.stringify({status:'accepted-after-repair',fields:execution.fieldCount}));
+}else throw new Error('Unknown phase');

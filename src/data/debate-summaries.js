@@ -12070,5 +12070,52 @@ export const debateSummaries = [
         "title": "New Testament synthesis and contested cases"
       }
     ]
+  },
+  {
+    "id": "licona-carrier-resurrection-formal-rounds-2004",
+    "number": "255",
+    "title": "Mike Licona vs Richard Carrier — Did Jesus rise from the dead? (2004, formal rounds)",
+    "year": 2004,
+    "label": "Resurrection evidence: formal rounds",
+    "date": "2026-09-09",
+    "duration": "2 hr 30 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=XWa3DSxETaU",
+    "motion": "Did Jesus rise from the dead?",
+    "summary": "Licona narrowly prevails through cumulative historical breadth, while Carrier’s Pauline, visionary, source-critical, and prior-probability challenges keep every decisive inference closely contested.",
+    "topicCategory": "resurrection-miracles",
+    "sides": {
+      "pro": {
+        "name": "Historical resurrection defense",
+        "speaker": "Mike Licona",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalistic historical challenge",
+        "speaker": "Richard Carrier",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 81,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Historical explananda and resurrection inference"
+      },
+      {
+        "title": "Paul and the nature of the resurrection body"
+      },
+      {
+        "title": "Empty tomb, sources, and literary development"
+      },
+      {
+        "title": "Appearances, visions, and prior probability"
+      },
+      {
+        "title": "Comparative explanatory synthesis"
+      }
+    ]
   }
 ];

@@ -1,0 +1,528 @@
+{
+  "status": "applied-approved-format-only-corrections",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/format-correction-1/authorization.json",
+    "sha256": "7c45839238335066f1ade7f2a5978e640faaa666df845bcb99fcfa643f3f16b7",
+    "bytes": 1086
+  },
+  "source": {
+    "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+    "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+    "bytes": 199829
+  },
+  "controller": {
+    "path": "scripts/tmp-standalone-publication-format-correction.mjs",
+    "sha256": "330ce9644ba581b5789e766227834ab4ee2bc252a6d295645cb01d81d27a06df",
+    "bytes": 6574
+  },
+  "outputs": [
+    {
+      "ordinal": 2,
+      "raw": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/shard-02-output.json",
+        "sha256": "fff83d50bc2a0c77dfdef48f5fea76e1cd4f9356629cbc1a69f1250d4993883b",
+        "bytes": 3089
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/format-correction-1/shard-02-normalized-output.json",
+        "sha256": "a2fedf0162c034f1bb13528303817fa713511218f49bce904c583941267c3028",
+        "bytes": 3599
+      },
+      "readerFacingChangedFields": [],
+      "argumentativeChanges": 0,
+      "normalizationMapping": [
+        "schemaVersion and status are exact frozen contract constants; the derived object is not represented as raw model output.",
+        "The audit booleans are controller attestations: both exact permitted fields and one recorded model context are checked; no score-bearing field is present.",
+        "Source-review counts/range are checked against every frozen formal event; reference spans are split without changing endpoints or reasons, and the original whole-source check is retained verbatim."
+      ],
+      "applicationShards": [
+        {
+          "ordinal": 1,
+          "fields": [
+            {
+              "path": "schemaVersion",
+              "before": "1.0-publication-field-repair-output",
+              "after": "1.0"
+            },
+            {
+              "path": "sourceReview.completeFormalSourceLinesRead",
+              "before": 993,
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 2,
+          "fields": [
+            {
+              "path": "sourceReview.completeFormalSourceEventRange.startEvent",
+              "before": 46,
+              "after": null
+            },
+            {
+              "path": "sourceReview.completeFormalSourceEventRange.endEvent",
+              "before": 1038,
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 3,
+          "fields": [
+            {
+              "path": "sourceReview.materialEventReferences[0].events",
+              "before": "256–279",
+              "after": null
+            },
+            {
+              "path": "sourceReview.materialEventReferences[0].relevance",
+              "before": "Carrier states the grief-vision, heavenly-body, and later sectarian-development theory.",
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 4,
+          "fields": [
+            {
+              "path": "sourceReview.materialEventReferences[1].events",
+              "before": "280–464",
+              "after": null
+            },
+            {
+              "path": "sourceReview.materialEventReferences[1].relevance",
+              "before": "Carrier supports the theory with Paul, Gospel development, empty-tomb evidence, and comparative probability.",
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 5,
+          "fields": [
+            {
+              "path": "sourceReview.materialEventReferences[2].events",
+              "before": "466–569",
+              "after": null
+            },
+            {
+              "path": "sourceReview.materialEventReferences[2].relevance",
+              "before": "Licona challenges the theory through bodily continuity, lexical context, early evidence, and hallucination objections.",
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 6,
+          "fields": [
+            {
+              "path": "sourceReview.materialEventReferences[3].events",
+              "before": "571–676, 797–907, 912–979",
+              "after": null
+            },
+            {
+              "path": "sourceReview.materialEventReferences[3].relevance",
+              "before": "Carrier develops and summarizes his Pauline, visionary, literary, and comparative replies.",
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 7,
+          "fields": [
+            {
+              "path": "sourceReview.materialEventReferences[4].events",
+              "before": "985–1038",
+              "after": null
+            },
+            {
+              "path": "sourceReview.materialEventReferences[4].relevance",
+              "before": "Licona closes by disputing the theory’s direct evidence, simplicity, lexical reading, and psychological assumptions.",
+              "after": null
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 8,
+          "fields": [
+            {
+              "path": "sourceReview.wholeSourceOmissionCheck",
+              "before": "All 993 supplied source lines, covering events 46–1038, were read in nontruncated portions. No material formal-round support or reply relevant to this move was omitted; the later question-and-answer session is intentionally absent from the frozen source and was neither inferred nor assessed.",
+              "after": null
+            },
+            {
+              "path": "status",
+              "before": null,
+              "after": "complete-and-schema-valid"
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 9,
+          "fields": [
+            {
+              "path": "audit.onlyDeclaredFields",
+              "before": null,
+              "after": true
+            },
+            {
+              "path": "audit.oneAttempt",
+              "before": null,
+              "after": true
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 10,
+          "fields": [
+            {
+              "path": "audit.scoreChanges",
+              "before": null,
+              "after": 0
+            },
+            {
+              "path": "audit.critiqueChangesOutsideScope",
+              "before": null,
+              "after": 0
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 11,
+          "fields": [
+            {
+              "path": "sourceReview.completeFormalSourceRead",
+              "before": null,
+              "after": true
+            },
+            {
+              "path": "sourceReview.limitationCheckedAgainstWholeSource",
+              "before": null,
+              "after": true
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 12,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[0].startEvent",
+              "before": null,
+              "after": 256
+            },
+            {
+              "path": "sourceReview.contextualSupport[0].endEvent",
+              "before": null,
+              "after": 279
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 13,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[0].reason",
+              "before": null,
+              "after": "Carrier states the grief-vision, heavenly-body, and later sectarian-development theory."
+            },
+            {
+              "path": "sourceReview.contextualSupport[1].startEvent",
+              "before": null,
+              "after": 280
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 14,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[1].endEvent",
+              "before": null,
+              "after": 464
+            },
+            {
+              "path": "sourceReview.contextualSupport[1].reason",
+              "before": null,
+              "after": "Carrier supports the theory with Paul, Gospel development, empty-tomb evidence, and comparative probability."
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 15,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[2].startEvent",
+              "before": null,
+              "after": 466
+            },
+            {
+              "path": "sourceReview.contextualSupport[2].endEvent",
+              "before": null,
+              "after": 569
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 16,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[2].reason",
+              "before": null,
+              "after": "Licona challenges the theory through bodily continuity, lexical context, early evidence, and hallucination objections."
+            },
+            {
+              "path": "sourceReview.contextualSupport[3].startEvent",
+              "before": null,
+              "after": 571
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 17,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[3].endEvent",
+              "before": null,
+              "after": 676
+            },
+            {
+              "path": "sourceReview.contextualSupport[3].reason",
+              "before": null,
+              "after": "Carrier develops and summarizes his Pauline, visionary, literary, and comparative replies."
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 18,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[4].startEvent",
+              "before": null,
+              "after": 797
+            },
+            {
+              "path": "sourceReview.contextualSupport[4].endEvent",
+              "before": null,
+              "after": 907
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 19,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[4].reason",
+              "before": null,
+              "after": "Carrier develops and summarizes his Pauline, visionary, literary, and comparative replies."
+            },
+            {
+              "path": "sourceReview.contextualSupport[5].startEvent",
+              "before": null,
+              "after": 912
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 20,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[5].endEvent",
+              "before": null,
+              "after": 979
+            },
+            {
+              "path": "sourceReview.contextualSupport[5].reason",
+              "before": null,
+              "after": "Carrier develops and summarizes his Pauline, visionary, literary, and comparative replies."
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 21,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[6].startEvent",
+              "before": null,
+              "after": 985
+            },
+            {
+              "path": "sourceReview.contextualSupport[6].endEvent",
+              "before": null,
+              "after": 1038
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "ordinal": 22,
+          "fields": [
+            {
+              "path": "sourceReview.contextualSupport[6].reason",
+              "before": null,
+              "after": "Licona closes by disputing the theory’s direct evidence, simplicity, lexical reading, and psychological assumptions."
+            },
+            {
+              "path": "sourceReview.omissionClaimAudit",
+              "before": null,
+              "after": "All 993 supplied source lines, covering events 46–1038, were read in nontruncated portions. No material formal-round support or reply relevant to this move was omitted; the later question-and-answer session is intentionally absent from the frozen source and was neither inferred nor assessed."
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        }
+      ],
+      "metadataAuthorship": "Controller-derived normalization, with original model bytes preserved.",
+      "modelAttemptsAdded": 0
+    },
+    {
+      "ordinal": 3,
+      "raw": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/shard-03-output.json",
+        "sha256": "6d6084b2d9e2dbf5f0ffcce7e3142a4552afd3166971c6c98e2bc153a38e0fcb",
+        "bytes": 3190
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/format-correction-1/shard-03-normalized-output.json",
+        "sha256": "3429f69c1de8c6379354d50a6efe8da0276ea526dbf52bdc96b1ff7bc264ad3c",
+        "bytes": 3200
+      },
+      "readerFacingChangedFields": [
+        "candidate.sections[0].exchanges[1].pro.critique"
+      ],
+      "argumentativeChanges": 0,
+      "normalizationMapping": [
+        {
+          "before": "events 190–192",
+          "after": "18:55–19:11",
+          "startEvent": 190,
+          "endEvent": 192,
+          "startMs": 1135440,
+          "endMs": 1150400
+        },
+        {
+          "before": "571–572",
+          "after": "55:23–55:32",
+          "startEvent": 571,
+          "endEvent": 572,
+          "startMs": 3323920,
+          "endMs": 3331920
+        },
+        {
+          "before": "585–619",
+          "after": "56:38–59:42",
+          "startEvent": 585,
+          "endEvent": 619,
+          "startMs": 3398560,
+          "endMs": 3581600
+        },
+        {
+          "before": "events 505–510",
+          "after": "48:50–49:21",
+          "startEvent": 505,
+          "endEvent": 510,
+          "startMs": 2930000,
+          "endMs": 2960400
+        },
+        {
+          "before": "689–700",
+          "after": "1:06:28–1:07:37",
+          "startEvent": 689,
+          "endEvent": 700,
+          "startMs": 3988480,
+          "endMs": 4056640
+        }
+      ],
+      "applicationShards": [
+        {
+          "ordinal": 1,
+          "fields": [
+            {
+              "path": "repairs[1].value",
+              "before": "Strongest feature: Licona connects an early Pauline appearance tradition, disciples’ costly perseverance, Paul’s persecutor-to-adherent reversal, and James’s unbelief-to-leadership trajectory, establishing sincere conviction through convergent evidence. Principal limitation: Licona expressly concedes at events 190–192 that suffering supports sincerity, not truth; Carrier later accepts sincerity at 571–572 while proposing grief, suggestion, memory contamination, and distinct guilt-and-stress mechanisms at 585–619. Live burden: The contest is whether Licona’s later group-hallucination objection and challenge to evidence for Paul’s guilt at events 505–510 and 689–700 defeat Carrier’s mechanisms and bridge conviction to resurrection. Locked score: The fixed score of 86 rewards early, multiple, adverse-witness evidence and careful calibration, while recognizing that the move’s broader force depends on the later comparative-explanation dispute.",
+              "after": "Strongest feature: Licona connects an early Pauline appearance tradition, disciples’ costly perseverance, Paul’s persecutor-to-adherent reversal, and James’s unbelief-to-leadership trajectory, establishing sincere conviction through convergent evidence. Principal limitation: Licona expressly concedes at 18:55–19:11 that suffering supports sincerity, not truth; Carrier later accepts sincerity at 55:23–55:32 while proposing grief, suggestion, memory contamination, and distinct guilt-and-stress mechanisms at 56:38–59:42. Live burden: The contest is whether Licona’s later group-hallucination objection and challenge to evidence for Paul’s guilt at 48:50–49:21 and 1:06:28–1:07:37 defeat Carrier’s mechanisms and bridge conviction to resurrection. Locked score: The fixed score of 86 rewards early, multiple, adverse-witness evidence and careful calibration, while recognizing that the move’s broader force depends on the later comparative-explanation dispute."
+            }
+          ],
+          "maximumFields": 2,
+          "attempts": 1,
+          "retries": 0
+        }
+      ],
+      "metadataAuthorship": "Controller-derived normalization, with original model bytes preserved.",
+      "modelAttemptsAdded": 0
+    }
+  ],
+  "audit": {
+    "rawModelOutputsPreserved": true,
+    "argumentativeChanges": 0,
+    "scoreChanges": 0,
+    "evidenceChanges": 0,
+    "judgmentChanges": 0,
+    "newModelCalls": 0,
+    "maximumLeafFieldsPerApplicationShard": 2,
+    "directIncrementalCostUsd": 0
+  }
+}

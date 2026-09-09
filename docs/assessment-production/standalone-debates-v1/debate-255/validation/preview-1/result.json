@@ -1,0 +1,50 @@
+{
+  "status": "failed-private-production-preview",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/replacement-1/raw-prose-output.json",
+    "sha256": "bf99ec86102c656a75801c0acee9cdf41f2cd386f1078faef6c3d6184c20b815",
+    "bytes": 60586
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "ba0dbbb0ce376ee53ef40d0819c33cf6af8777eb6d8a100b31f4e502060b5215",
+      "bytes": 124824
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "db952b880e38353dfe7ba6947664883e6e8fabcc06a680ff3b5b7be4e0e99c00",
+      "bytes": 11474759
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/replacement-1/raw-prose-output.json",
+      "sha256": "bf99ec86102c656a75801c0acee9cdf41f2cd386f1078faef6c3d6184c20b815",
+      "bytes": 60586
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/output.json",
+      "sha256": "770579d7a12035cb26c3d54f544ae4d72223b39e84a83e04fd5061e5ef54d314",
+      "bytes": 14178
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 255",
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/preview-1/command-1.log",
+        "sha256": "8fc4e1e12ee71c69576bc50e3e1f0c11bab9fbc636dc0b7e823744ed2b596c08",
+        "bytes": 1118
+      }
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: scripts/audit-assessment-production-standalone-v1.mjs failed; see docs/assessment-production/standalone-debates-v1/debate-255/validation/preview-1/command-1.log\n\n1 !== 0\n"
+}

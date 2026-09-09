@@ -1,0 +1,677 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/captions.srv3.xml",
+      "sha256": "15c841c078d0328506600653b7b589005ea2b0b3302b275f473abea4b1cd092b",
+      "bytes": 208915
+    },
+    "events": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/events.json",
+      "sha256": "22e25b9752f715582b4cf34c5af5e285d77c8f1228091c8de89b82305f476491",
+      "bytes": 265678
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/transcript.txt",
+      "sha256": "6202f032f27541eabb958dd6b60b1901a0030cca6a1637900fbc0adb5a0897be",
+      "bytes": 165661
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/manifest.json",
+      "sha256": "aaf8717c07e98142acb688b2bd3d33492c9efaed98b4b6b275ed4e0155269092",
+      "bytes": 935
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/source-lock.json",
+      "sha256": "d64ec92aba0096cc9231c71377f109a174973508ea9674e0bf18cd30780d612a",
+      "bytes": 4997
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/authorization.json",
+      "sha256": "3c90a08a8b2cd5d832e7af91909b9fba96eb8fc7756de684eabe220f13667885",
+      "bytes": 4799
+    },
+    "formalRoundsAuthorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/formal-rounds-authorization.json",
+      "sha256": "1e3ac8b56d93232664276e9a5ae17e18fa89ca84c7f3539633de3d81d3faf52b",
+      "bytes": 2125
+    },
+    "formalRoundsSource": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+      "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+      "bytes": 199829
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+      "bytes": 152724
+    },
+    "formalRoundsTooling": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/formal-rounds-tooling-scope.json",
+      "sha256": "664c7b01df26aff5591f63332e5fd7e67b2ffc8ea8c05b8b7b96bfe191f10f88",
+      "bytes": 1384
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/authorization.json",
+      "sha256": "3c90a08a8b2cd5d832e7af91909b9fba96eb8fc7756de684eabe220f13667885",
+      "bytes": 4799
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/manifest.json",
+      "sha256": "77c964f2820243085245010f72bd625a9f6c100174fee04431bf0c5f95bb520f",
+      "bytes": 9354
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/source-lock.json",
+      "sha256": "d64ec92aba0096cc9231c71377f109a174973508ea9674e0bf18cd30780d612a",
+      "bytes": 4997
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+      "bytes": 152724
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/judgment-packet.json",
+      "sha256": "12854eab56f4d86463af783f876f64a30c166a64e8d45db0cdd7dabf35501381",
+      "bytes": 4917
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/execution.json",
+      "sha256": "9d3c0a842206c4f5429ecaf527493b906cd4bb4474e3e533928c647ba5f62699",
+      "bytes": 5887
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+      "sha256": "0f1a2d9bfc30013e08d0692ee9d091096adc31df508d77b86b9ad3d3bab5c4c7",
+      "bytes": 44464
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+      "sha256": "2a1b2671364ea78638cdeb407a6b6c9b97026fbd8a3a8ca52d4f3d76b9ca6c62",
+      "bytes": 43416
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/disagreements/disagreements.json",
+      "sha256": "6559ae622d882e701cb79582d50d9ba22655a601e23c9349fca6d9a5396500f9",
+      "bytes": 10308
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/audio-verification.json",
+      "sha256": "f14c4f4f81ec0465ee74dcb4ed0a03dff5503f8c9f36b43598ca3fd8015f0c0d",
+      "bytes": 226182
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/adjudication/packet.json",
+      "sha256": "b82a5ea88275b5bb176b673994e81fb339eccf39b18cbc51f2dffb6744f0b392",
+      "bytes": 32287
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/adjudication/output.json",
+      "sha256": "defbb2cd9cbdf3571eba10bc89b0b50508ed2f02b3c421e9b13650c1ff64d63e",
+      "bytes": 2534
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/final-ledger/final-ledger.json",
+      "sha256": "837ac9ac583237cfba4a5fad247f176988123c431c4abd3172700718c2bd1082",
+      "bytes": 274162
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/input.json",
+      "sha256": "015629c8a1b226ada12c6853b738c824c34a52d21d2633f6a1c2fe9f0b320f22",
+      "bytes": 965
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/output.json",
+      "sha256": "770579d7a12035cb26c3d54f544ae4d72223b39e84a83e04fd5061e5ef54d314",
+      "bytes": 14178
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/attestation.json",
+      "sha256": "b590183739016c37095cee81b6967b00c7e58d11246a562d1d027d50c61d20a5",
+      "bytes": 833
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/output.json",
+      "sha256": "f40e049d18826f720718716fd285ff336a4e70397711fc46ff676b4d8c8efdf2",
+      "bytes": 62112
+    },
+    "events": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/events.json",
+      "sha256": "22e25b9752f715582b4cf34c5af5e285d77c8f1228091c8de89b82305f476491",
+      "bytes": 265678
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/XWa3DSxETaU/transcript.txt",
+      "sha256": "6202f032f27541eabb958dd6b60b1901a0030cca6a1637900fbc0adb5a0897be",
+      "bytes": 165661
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/correction-1-copyedit.json",
+      "sha256": "8c4f9404e8c4b0e386c53ca7f11473b7643760f877dbac61238b6b4dbffae7a6",
+      "bytes": 8783
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/preserved-output-before-copyedit.json",
+      "sha256": "bf99ec86102c656a75801c0acee9cdf41f2cd386f1078faef6c3d6184c20b815",
+      "bytes": 60586
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/content-parity-audit.json",
+      "sha256": "45650f79321660f4456ab8ad581cc65831df6e068cd9e1ca272cfea9346e3b50",
+      "bytes": 7614
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/correction-2-rhetorical-tags.json",
+      "sha256": "9aabdfe1574a69ab6dc15c5cbf9930feb89bc6e83df5175cb2441179f3bfb952",
+      "bytes": 1980
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-audit.json",
+      "sha256": "03c6044a06b742ffc62086c711ba1771ec3378a75546379d44be8e45ab140c62",
+      "bytes": 118874
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "6624fb9a504c66bd6b4e3b94869a582c1004073b2dff209257e9030fe691d35a",
+      "bytes": 3781
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "255",
+    "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+    "sections": [
+      {
+        "sectionId": "historical-explananda",
+        "title": "Historical explananda and resurrection inference",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-crucifixion-death",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 91,
+                  "relevanceBurden": 95,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 89
+                },
+                "score": 90
+              },
+              {
+                "moveId": "pro-sincere-appearances",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 88,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 90
+                },
+                "score": 86
+              },
+              {
+                "moveId": "pro-resurrection-best-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 80,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 63
+                },
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "con-vision-development-theory",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 85,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 77
+                },
+                "score": 76
+              },
+              {
+                "moveId": "con-paul-versus-gospels",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 88,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 69
+                },
+                "score": 81
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "pauline-body",
+        "title": "Paul and the nature of the resurrection body",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-paul-continuity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 93,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 72
+                },
+                "score": 85
+              },
+              {
+                "moveId": "pro-paul-lexical-rebuttal",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 93,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 77
+                },
+                "score": 85
+              },
+              {
+                "moveId": "pro-direct-pauline-transformation-texts",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 87
+                },
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-paul-body-exchange",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 88,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 68
+                },
+                "score": 80
+              },
+              {
+                "moveId": "con-jewish-pauline-parallels",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 78
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-romans-present-life-context",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 93,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 67
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-exchange-usage-and-context",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 94,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 74
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "empty-tomb-sources",
+        "title": "Empty tomb, sources, and literary development",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-empty-tomb-case",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 83,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 71
+                },
+                "score": 79
+              },
+              {
+                "moveId": "pro-guard-polemic-and-literary-method",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 67
+                },
+                "score": 76
+              },
+              {
+                "moveId": "pro-rubicon-comparison-rebuttal",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 88,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 66
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-empty-tomb-evidence-quality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 92,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 69
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-gospel-legend-growth",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 72
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-guards-and-symbolic-tomb",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 60
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-mark-literary-markers",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 87,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 62
+                },
+                "score": 76
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "visions-and-priors",
+        "title": "Appearances, visions, and prior probability",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "pro-intentionality-and-hallucination-cost",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 70
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-adverse-witness-vision-challenge",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 93,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-visions-prior-fit",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 90,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 84
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-grief-and-paul-vision-mechanisms",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 76
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-intentionality-circularity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 94,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 83
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "comparative-synthesis",
+        "title": "Comparative explanatory synthesis",
+        "weightPercent": 11,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "pro-closing-comparative-fit",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 84,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 63
+                },
+                "score": 77
+              },
+              {
+                "moveId": "pro-closing-natural-rivals",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 58
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-selective-appearance-expectation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 88,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 63
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 81.7,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      },
+      "con": {
+        "weightedSectionMean": 81.2,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 1,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0,
+      "maximumDistance": 0,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 27,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

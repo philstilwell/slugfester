@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0-publication-repair-integrity-hold",
+  "status": "stopped-on-source-context-omission",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "completedAt": "2026-09-09T18:08:35.360Z",
+  "repairManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/manifest.json",
+    "sha256": "d1ae2e57b540c15137aae66849eb32c2e4a01a86b7e76bc132fa6e464b701337",
+    "bytes": 25870
+  },
+  "controller": {
+    "path": "scripts/tmp-standalone-publication-repair.mjs",
+    "sha256": "d199c778d9f4624625f35fd76b61599590e1861c04ee4e327af320f4ede417fb",
+    "bytes": 13274
+  },
+  "rejectedOriginal": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/preserved-output-before-copyedit.json",
+    "sha256": "bf99ec86102c656a75801c0acee9cdf41f2cd386f1078faef6c3d6184c20b815",
+    "bytes": 60586
+  },
+  "completeFrozenSource": {
+    "path": ".assessment-cache/captions/XWa3DSxETaU/formal-rounds-source.json",
+    "sha256": "f619af36253f8e4246b26db5bcb63aee083d42f1ebb836e9c9c1920a20eb65b8",
+    "bytes": 199829
+  },
+  "failedRepair": {
+    "ordinal": 1,
+    "moveId": "pro-crucifixion-death",
+    "packet": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/shard-01-packet.json",
+      "sha256": "c711cac71867da3387fa9ff7a4c4d774669d66dde9b7326ac9de81ff99a0c96e",
+      "bytes": 10602
+    },
+    "executionPlan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/shard-01-execution-plan.json",
+      "sha256": "0265d9a289b4127bd1973e0561222bb9621bfb31e3719ce29ea00d5a5d869459",
+      "bytes": 900
+    },
+    "output": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/shard-01-output.json",
+      "sha256": "7bb49fbb8f8e4b13c67efcace9f9ee88e9a1047eb0acb0f6436908f9c8782b02",
+      "bytes": 1870
+    },
+    "mechanicalValidation": "passed word, character, exact-score and four-sentence checks",
+    "semanticValidation": "failed complete-source consistency",
+    "failure": "The limitation claims Licona did not examine exceptional survival conditions in detail, but his earlier formal opening explicitly recounts Josephus obtaining removal and medical care for three crucified friends, two of whom still died, and contrasts the absence of such evidence for Jesus.",
+    "sourceCounterevidence": [
+      {
+        "eventIndex": 100,
+        "startMs": 634000,
+        "durationMs": 5120,
+        "text": "only one account exists of a person surviving crucifixion josephus reports of seeing three"
+      },
+      {
+        "eventIndex": 101,
+        "startMs": 639120,
+        "durationMs": 4720,
+        "text": "of his friends crucified he ran to the roman commander titus who was one of his friends"
+      },
+      {
+        "eventIndex": 102,
+        "startMs": 643840,
+        "durationMs": 4960,
+        "text": "and and told him about it and titus ordered that the three be removed while alive and provided the"
+      },
+      {
+        "eventIndex": 103,
+        "startMs": 648800,
+        "durationMs": 5920,
+        "text": "best medical treatment rome had to offer in spite of this two of the three died thus even if jesus"
+      },
+      {
+        "eventIndex": 104,
+        "startMs": 654720,
+        "durationMs": 4800,
+        "text": "had been removed prematurely be it intentionally or unintentionally his chances of survival were"
+      },
+      {
+        "eventIndex": 105,
+        "startMs": 659520,
+        "durationMs": 6320,
+        "text": "still very bleak but to complicate the matters worse there is no evidence whatsoever that jesus"
+      },
+      {
+        "eventIndex": 106,
+        "startMs": 665840,
+        "durationMs": 5520,
+        "text": "was removed while alive or that he was provided any medical care whatsoever much less rome's best"
+      }
+    ],
+    "unsafeOmissionClaims": [
+      "presenting the medical reasoning",
+      "examining exceptional survival conditions in detail"
+    ]
+  },
+  "interruptedRepair": {
+    "ordinal": 2,
+    "moveId": "con-vision-development-theory",
+    "executionPlan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/shard-02-execution-plan.json",
+      "sha256": "dd6b4bc85efe749a6ecec0c7e29665fc5061a6807b36a61294acf5862cb17adb",
+      "bytes": 900
+    },
+    "agentTask": "/root/publication_255_repair_02",
+    "status": "interrupted-before-output",
+    "outputExists": false,
+    "reason": "Prevent further publication decisions from the incomplete source-context packet."
+  },
+  "unlaunchedOrdinals": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "cause": "Controller supplied the selected source span and directly linked moves but omitted access to the complete already-frozen formal-round transcript. A summary-span omission is not evidence of an omission from the speaker’s complete argument.",
+  "disposition": "Preserve all packets and outputs. No canonical publication merge, rhetorical review, production data mutation, commit, push, or new score pass. The failed repair has consumed its single attempt; obtain explicit approval before fresh replacement contexts for the first two shards. Correct every remaining packet to provide the full frozen formal source and require a full-context check before asserting any omission.",
+  "scoresUnchanged": {
+    "pro": 82,
+    "con": 81
+  },
+  "scoreOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/output.json",
+    "sha256": "770579d7a12035cb26c3d54f544ae4d72223b39e84a83e04fd5061e5ef54d314",
+    "bytes": 14178
+  },
+  "scoreAttestation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/attestation.json",
+    "sha256": "b590183739016c37095cee81b6967b00c7e58d11246a562d1d027d50c61d20a5",
+    "bytes": 833
+  },
+  "directIncrementalCostUsd": 0
+}

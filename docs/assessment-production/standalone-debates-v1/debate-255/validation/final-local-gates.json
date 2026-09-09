@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "completedAt": "2026-09-09T19:33:52.393Z",
+  "results": [
+    {
+      "command": "node scripts/audit-standalone-caption-rating-correction.mjs --debate 255",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-1.log",
+        "sha256": "66bb10ab597edfd50e0646b0ff7677031b9b643b42d8c4503d7a85803854c0ba",
+        "bytes": 211
+      }
+    },
+    {
+      "command": "node scripts/audit-standalone-formal-rounds-scope.mjs --debate 255 --publication",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-2.log",
+        "sha256": "97637f444557b1f15d6226af07c3ba18382ffa5e412bbc5a94654dc44a4ced00",
+        "bytes": 252
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-3.log",
+        "sha256": "955254eb7fafa459964d8b76641ea745be5825db9c2bee5e0a4af2d0f3e31929",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-4.log",
+        "sha256": "6342990718c545ae41461d2146674be4ee0b04186f5bb8701d8841fd2a44f5ce",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 255",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-5.log",
+        "sha256": "8238734a233cdebc6fd0d5be69a5414a1d0bb8c150f06a12dc715a3201c7b2fa",
+        "bytes": 253
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-6.log",
+        "sha256": "9a20725cc01a8a36d3ef1ddb52dd291be8aad05fd32dd4222533b84a9a7b0ff7",
+        "bytes": 46193
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-7.log",
+        "sha256": "a4f595a2304614c1a14de32d87e5b4c287ae254745afe0e6d320afdf200d33c2",
+        "bytes": 220344
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/gates-8.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

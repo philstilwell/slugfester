@@ -1,0 +1,97 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileRecord, serializedJson, canonicalJson, validateStandalonePrimaryJudgment, extractStandaloneDisagreements} from './lib/assessment-production-standalone-debate-v1.mjs';
+import {auditFormalRoundsScope} from './audit-standalone-formal-rounds-scope.mjs';
+const arg=k=>process.argv[process.argv.indexOf(k)+1], n=arg('--debate'), phase=arg('--phase');
+assert(/^\d{3,}$/.test(n));
+const read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(entry);
+const root=entry.root, base=`${root}/judgments/caption-correction-1`, holdPath=`${root}/judgments/assessment-integrity-hold.json`, hold=read(holdPath);
+assert.equal(hold.debateNumber,n);assert.equal(hold.debateId,entry.debateId);
+const write=(p,v)=>{fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,serializedJson(v),{flag:'wx'});};
+const inventoryPath=`${root}/inventory/inventory.json`, inventory=read(inventoryPath), invHash=fileRecord(inventoryPath).sha256;
+const audioPath=`${root}/audio/audio-verification.json`, audio=read(audioPath);
+const masks=hold.proposedRecovery.fieldsByPass;
+const originalPaths={passA:`${root}/judgments/pass-a/output.json`,passB:`${root}/judgments/pass-b/output.json`,execution:`${root}/judgments/execution.json`,disagreements:`${root}/disagreements/disagreements.json`,adjudicationPacket:`${root}/adjudication/packet.json`};
+const preservedPath=k=>`${base}/preserved/${k}.json`;
+const outsideMask=(obj,mask)=>{const clone=structuredClone(obj);for(const field of mask){const [id,key]=field.split('.');delete clone.judgments.find(m=>m.moveId===id).dimensions[key];}return canonicalJson(clone);};
+const assertFrozen=()=>{
+  auditFormalRoundsScope(n);
+  assert.equal(fileRecord(inventoryPath).sha256,hold.preservedArtifacts.inventory.sha256);
+  for(const records of Object.values(read(`${root}/manifest.json`))){if(records&&typeof records==='object'&&!Array.isArray(records))for(const value of Object.values(records)){if(value?.path&&value?.sha256)assert.equal(fileRecord(value.path).sha256,value.sha256,value.path);}}
+  assert.equal(audio.status,'complete');assert.equal(audio.audit.unresolvedAttributionChecks,0);assert.equal(audio.audit.unresolvedLexicalChecks,0);
+  assert.deepEqual(audio.triggeredMoveIds,inventory.moves.filter(m=>m.attributionConfidence!=='high').map(m=>m.moveId));
+  assert(!fs.existsSync(`${root}/score-pass/output.json`));assert(!fs.existsSync(`${root}/adjudication/output.json`));
+};
+if(phase==='prepare'){
+  assertFrozen();
+  for(const [key,p] of Object.entries(originalPaths)){
+    if(hold.preservedArtifacts[key])assert.equal(fileRecord(p).sha256,hold.preservedArtifacts[key].sha256);
+    fs.mkdirSync(path.dirname(preservedPath(key)),{recursive:true});fs.copyFileSync(p,preservedPath(key),fs.constants.COPYFILE_EXCL);
+    assert.equal(fileRecord(p).sha256,fileRecord(preservedPath(key)).sha256);
+  }
+  write(`${base}/authorization.json`,{schemaVersion:'1.0-explicit-bounded-caption-rating-correction',status:'authorized-and-frozen-before-correction',debateNumber:n,debateId:entry.debateId,authorizedAt:new Date().toISOString(),userApproval:'I approve.',approvedRequest:'Replace only the 17 ratings affected by caption errors through two fresh isolated correction reviews, preserving everything else; additional direct cost $0.',hold:fileRecord(holdPath),fieldsByPass:masks,affectedDimensionJudgments:hold.affectedDimensionJudgments,unaffectedDimensionJudgments:hold.unaffectedDimensionJudgments,attemptsPerContext:1,automaticRetries:0,model:'gpt-5.6-sol',displayModel:'5.6 Sol',reasoningEffort:'low',forkTurns:'none',directIncrementalCostUsd:0,preservedOriginals:Object.fromEntries(Object.keys(originalPaths).map(k=>[k,{original:fileRecord(originalPaths[k]),preserved:fileRecord(preservedPath(k))}])),noInventoryChanges:true,noBurdenChanges:true,noConfidenceChanges:true,noManualNumericalAdjustments:true,noTotalsOrWinnerVisible:true,originalAffectedRatingsUnavailable:true,noPrescribedDirectionOfChange:true});
+  const commonInputs=[inventoryPath,`.assessment-cache/captions/${entry.videoId}/formal-rounds-source.json`,audioPath,'docs/assessment-production-workflow.md','docs/reassessment-rubric-v2.1.md'];
+  const plan={status:'frozen-before-execution',debateNumber:n,debateId:entry.debateId,frozenAt:new Date().toISOString(),authorization:fileRecord(`${base}/authorization.json`),commonInputs:commonInputs.map(p=>fileRecord(p)),model:'gpt-5.6-sol',displayModel:'5.6 Sol',reasoningEffort:'low',forkTurns:'none',billingSurface:'ChatGPT subscription',directIncrementalCostUsd:0,passes:[]};
+  for(const pass of ['pass-a','pass-b']){
+    const packetPath=`${base}/${pass}/packet.json`,outputPath=`${base}/${pass}/replacement.json`;
+    write(packetPath,{schemaVersion:'1.0-score-blind-caption-correction-packet',status:'frozen-before-execution',debateNumber:n,debateId:entry.debateId,pass,inventorySha256:invHash,formalRoundsScope:read(`${root}/authorization.json`).identity.formalRoundsScope,allowedInputs:plan.commonInputs,allowedFields:masks[pass],instructions:['Read the complete approved formal-rounds source, complete locked inventory, rubric, and all verified audio evidence before judging the listed dimensions.', 'Give a fresh independent integer rating and source-specific rationale for each listed dimension; there is no prescribed number or direction of change.', 'Score the actual spoken argument. Caption or automatic-transcription errors and uncertified Greek spelling are not participant-performance defects. Audio verifies the spoken contrast, not the truth of a scholarly claim.', 'Assess evidence/warrant for actual support and precision/clarity for the recoverable spoken distinctions. Avoid charging a warrant gap again as clarity without a distinct spoken ambiguity.', 'Do not read original judgments, other correction packets or outputs, unscoped transcript/events, other debates, scores, tags, or publication prose. Do not use web, models, paid APIs, or subagents.', 'Only the approved formal rounds count; no credit or penalties for excluded questions and answers.', 'Do not change burden judgments, confidence, other dimensions, inventory, or source evidence. Output only the ordered replacement objects. One attempt, no retries.'],outputContract:{schemaVersion:'1.0-bounded-dimension-replacement',status:'complete',debateNumber:n,debateId:entry.debateId,pass,assessmentModel:'5.6 Sol',reasoningEffort:'low',inventorySha256:invHash,replacements:masks[pass].map(field=>({field,value:'integer 0 through 100',rationale:'at least 40 characters; specific actual argument reason, not caption quality'})),audit:{completeFormalSourceReviewed:true,completeInventoryReviewed:true,verifiedAudioReviewed:true,otherJudgmentUnavailable:true,oldAffectedRatingsUnavailable:true,calculatedTotalsUnavailable:true,captionQualityNotPenalized:true,onlyAuthorizedFieldsJudged:true}},writablePaths:[outputPath]});
+    plan.passes.push({pass,agentTask:`/root/debate${n}_caption_correction_${pass.at(-1)}`,packet:fileRecord(packetPath),allowedInputs:[fileRecord(packetPath),...plan.commonInputs],writablePaths:[outputPath],attemptLimit:1,retries:0});
+  }
+  write(`${base}/execution-plan.json`,plan);
+  console.log(JSON.stringify({status:plan.status,passes:plan.passes.map(p=>({pass:p.pass,packet:p.packet.path,output:p.writablePaths[0]}))}));
+}else if(phase==='apply'){
+  assertFrozen();
+  const plan=read(`${base}/execution-plan.json`),auth=read(`${base}/authorization.json`);
+  assert.deepEqual(fileRecord(plan.authorization.path),plan.authorization);
+  for(const p of plan.commonInputs)assert.deepEqual(fileRecord(p.path),p);
+  const completed=[];let unchangedCount=0;
+  for(const passPlan of plan.passes){
+    for(const p of passPlan.allowedInputs)assert.deepEqual(fileRecord(p.path),p);
+    const {pass}=passPlan, outputPath=passPlan.writablePaths[0], patch=read(outputPath), packet=read(passPlan.packet.path), original=read(preservedPath(pass==='pass-a'?'passA':'passB'));
+    assert.deepEqual(Object.keys(patch).sort(),Object.keys(packet.outputContract).sort());
+    for(const [k,v]of Object.entries(packet.outputContract)){if(!['replacements','audit'].includes(k))assert.equal(patch[k],v,k);}
+    assert.deepEqual(patch.audit,packet.outputContract.audit);
+    assert.deepEqual(patch.replacements.map(x=>x.field),masks[pass]);
+    const candidate=structuredClone(original);
+    for(const item of patch.replacements){
+      assert.deepEqual(Object.keys(item).sort(),['field','rationale','value']);assert(Number.isInteger(item.value)&&item.value>=0&&item.value<=100);assert(typeof item.rationale==='string'&&item.rationale.length>=40);
+      const [moveId,dimension]=item.field.split('.');const move=candidate.judgments.find(m=>m.moveId===moveId);assert(move?.dimensions[dimension]);move.dimensions[dimension]={value:item.value,rationale:item.rationale};
+    }
+    assert.equal(outsideMask(candidate,masks[pass]),outsideMask(original,masks[pass]),`${pass}: unauthorized field change`);
+    const validation=validateStandalonePrimaryJudgment(candidate,inventory,{expectedPass:pass,expectedInventorySha256:invHash});
+    const candidatePath=`${base}/${pass}/corrected-output.json`;write(candidatePath,candidate);
+    unchangedCount+=inventory.moves.length*6-masks[pass].length;
+    completed.push({pass,agentTask:passPlan.agentTask,packet:passPlan.packet,allowedInputs:passPlan.allowedInputs,rawCorrection:fileRecord(outputPath),correctedOutput:fileRecord(candidatePath),originalOutput:auth.preservedOriginals[pass==='pass-a'?'passA':'passB'].preserved,allowedFields:masks[pass],validation,attemptCount:1,retryCount:0,outsideMaskCanonicalJsonIdentical:true,burdenJudgmentsUnchanged:true,assessmentConfidenceUnchanged:true});
+  }
+  assert.equal(unchangedCount,hold.unaffectedDimensionJudgments);
+  const correctedA=read(completed[0].correctedOutput.path),correctedB=read(completed[1].correctedOutput.path);
+  const disputes=extractStandaloneDisagreements({inventory,passA:correctedA,passB:correctedB});
+  const correctionExecution={schemaVersion:'1.0-bounded-caption-correction-execution',status:'complete-and-validated',debateNumber:n,debateId:entry.debateId,completedAt:new Date().toISOString(),authorization:fileRecord(`${base}/authorization.json`),plan:fileRecord(`${base}/execution-plan.json`),model:plan.model,displayModel:plan.displayModel,reasoningEffort:plan.reasoningEffort,isolationMethod:'Two fresh built-in subagents, forkTurns none, disjoint packet/output boundaries; only frozen formal source, inventory, verified audio and rubric; no original ratings or other pass exposed, no API calls or secrets used.',passes:completed,audit:{freshCorrectionContexts:2,attempts:2,automaticRetries:0,replacedDimensionJudgments:hold.affectedDimensionJudgments,unaffectedDimensionJudgments:unchangedCount,unchangedBurdenJudgments:4,inventoryUnchanged:true,confidenceUnchanged:true,noManualNumericalAdjustments:true,totalsCalculated:false,directIncrementalCostUsd:0}};
+  write(`${base}/execution.json`,correctionExecution);
+  // Canonical paths are a derived assembly; authenticate and preserve raw historical files first.
+  for(const [key,p]of Object.entries(originalPaths))assert.equal(fileRecord(p).sha256,auth.preservedOriginals[key].original.sha256);
+  for(const item of completed)fs.copyFileSync(item.correctedOutput.path,`${root}/judgments/${item.pass}/output.json`);
+  const execution=read(preservedPath('execution'));
+  execution.schemaVersion='1.3-standalone-judgment-execution-with-authorized-field-correction';
+  execution.completedAt=correctionExecution.completedAt;
+  execution.execution.recoveryMode='explicit-user-authorized-caption-dimension-correction';
+  execution.execution.attemptCountPerPass=2;
+  execution.execution.primaryAttemptCountPerPass=1;
+  execution.execution.authorizedCorrectionAttemptCountPerPass=1;
+  execution.execution.originalExecution=auth.preservedOriginals.execution.preserved;
+  execution.execution.correctionExecution=fileRecord(`${base}/execution.json`);
+  execution.execution.isolationMethod+=' Original outputs are preserved; two additional fresh mutually blind contexts replaced only the explicitly authorized dimensions using verified audio. Canonical outputs are deterministic assemblies, not raw model outputs.';
+  for(const pass of execution.passes){const p=completed.find(x=>x.pass===pass.pass);const rec=fileRecord(pass.outputPath);pass.outputSha256=rec.sha256;pass.outputBytes=rec.bytes;pass.originalOutput=p.originalOutput;pass.rawCorrection=p.rawCorrection;pass.correctionAgentTask=p.agentTask;pass.attemptCount=2;pass.primaryAttemptCount=1;pass.authorizedCorrectionAttemptCount=1;pass.originalWritablePaths=pass.writablePaths;pass.writablePaths=[...pass.writablePaths,p.rawCorrection.path];pass.outputMethod='Deterministic authorized field-mask merge; no other changes';}
+  execution.audit.correctionContexts=2;execution.audit.totalModelContexts=4;execution.audit.authorizedReplacementDimensions=hold.affectedDimensionJudgments;execution.audit.unaffectedDimensions=unchangedCount;execution.audit.originalSchemaPassesSemanticallyQuarantined=true;
+  fs.writeFileSync(originalPaths.execution,serializedJson(execution));
+  disputes.evidenceLocks={inventory:{path:inventoryPath,sha256:invHash},passA:{path:originalPaths.passA,sha256:fileRecord(originalPaths.passA).sha256},passB:{path:originalPaths.passB,sha256:fileRecord(originalPaths.passB).sha256}};
+  write(`${base}/corrected-disagreements.json`,disputes);fs.copyFileSync(`${base}/corrected-disagreements.json`,originalPaths.disagreements);
+  const adjudication=read(preservedPath('adjudicationPacket'));
+  adjudication.disputes=disputes.disputes.map(d=>({...d,moveEvidence:d.moveId?inventory.moves.find(m=>m.moveId===d.moveId):null}));
+  write(`${base}/corrected-adjudication-packet.json`,adjudication);fs.copyFileSync(`${base}/corrected-adjudication-packet.json`,originalPaths.adjudicationPacket);
+  for(const p of Object.values(auth.preservedOriginals))assert.equal(fileRecord(p.preserved.path).sha256,p.original.sha256);
+  write(`${base}/completion-audit.json`,{status:'passed-authorized-correction-hold-resolved',debateNumber:n,debateId:entry.debateId,hold:fileRecord(holdPath),authorization:fileRecord(`${base}/authorization.json`),execution:fileRecord(`${base}/execution.json`),canonicalExecution:fileRecord(originalPaths.execution),canonicalPasses:completed.map(p=>fileRecord(`${root}/judgments/${p.pass}/output.json`)),newDisagreements:fileRecord(originalPaths.disagreements),newDisputeCount:disputes.disputes.length,preservedStaleDisagreements:auth.preservedOriginals.disagreements.preserved,unchangedDimensionJudgments:unchangedCount,replacedDimensionJudgments:hold.affectedDimensionJudgments,rawOriginalsPreserved:true,inventoryAndSourceUnchanged:true,scorePassNotRun:true,adjudicationNotRun:true,directIncrementalCostUsd:0});
+  console.log(JSON.stringify({status:'corrected-and-re-extracted',unchangedCount,replacements:hold.affectedDimensionJudgments,disputes:disputes.disputes.length}));
+}else throw new Error('Unknown phase');

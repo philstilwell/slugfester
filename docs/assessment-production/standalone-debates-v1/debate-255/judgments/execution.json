@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.3-standalone-judgment-execution-with-authorized-field-correction",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 255,
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents; explicit identical formal-rounds-only file boundaries and disjoint outputs; no API calls or secrets used. Original outputs are preserved; two additional fresh mutually blind contexts replaced only the explicitly authorized dimensions using verified audio. Canonical outputs are deterministic assemblies, not raw model outputs.",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/formal-rounds-packet.json",
+    "judgmentPacketSha256": "2e1919459fceec793a8a3e7fa09dbd92574fce7e618634ff493487e187035c7c",
+    "inventorySha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 2,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0,
+    "recoveryMode": "explicit-user-authorized-caption-dimension-correction",
+    "primaryAttemptCountPerPass": 1,
+    "authorizedCorrectionAttemptCountPerPass": 1,
+    "originalExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/preserved/execution.json",
+      "sha256": "1af997e0bdae725732c47a203324b7c8de617bc02f50978edd589900822d02d1",
+      "bytes": 2646
+    },
+    "correctionExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/execution.json",
+      "sha256": "bebe1e59933265fb98c24fedd97474c260c88ffd661b4c298f55a6b9e257c65b",
+      "bytes": 8179
+    }
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+      "outputSha256": "0f1a2d9bfc30013e08d0692ee9d091096adc31df508d77b86b9ad3d3bab5c4c7",
+      "outputBytes": 44464,
+      "judgmentCount": 27,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 2,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-a/replacement.json"
+      ],
+      "agentTask": "/root/debate255_judgment_a",
+      "originalOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/preserved/passA.json",
+        "sha256": "0d56bf73e14ef01e1bb930993ff4142dd84afaabac2767f59a31742b466c9622",
+        "bytes": 36930
+      },
+      "rawCorrection": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-a/replacement.json",
+        "sha256": "4be0878b7df3dd61f03cb1c04b710b93d23e77c7a477e8e7cfd779aa3bb820e8",
+        "bytes": 6088
+      },
+      "correctionAgentTask": "/root/debate255_caption_correction_a",
+      "primaryAttemptCount": 1,
+      "authorizedCorrectionAttemptCount": 1,
+      "originalWritablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json"
+      ],
+      "outputMethod": "Deterministic authorized field-mask merge; no other changes"
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+      "outputSha256": "2a1b2671364ea78638cdeb407a6b6c9b97026fbd8a3a8ca52d4f3d76b9ca6c62",
+      "outputBytes": 43416,
+      "judgmentCount": 27,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 2,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-b/replacement.json"
+      ],
+      "agentTask": "/root/debate255_judgment_b",
+      "originalOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/preserved/passB.json",
+        "sha256": "712eb0fda8466eb81cce4c9cf07bb8d8fb9f5c8fcd32952bc71257d59e6472a2",
+        "bytes": 36727
+      },
+      "rawCorrection": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/caption-correction-1/pass-b/replacement.json",
+        "sha256": "6831b8cc8c0d9fd8b9ac3c403a3ff78c05edd5a53b9a7f2b91a547eb594c23c3",
+        "bytes": 3699
+      },
+      "correctionAgentTask": "/root/debate255_caption_correction_b",
+      "primaryAttemptCount": 1,
+      "authorizedCorrectionAttemptCount": 1,
+      "originalWritablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json"
+      ],
+      "outputMethod": "Deterministic authorized field-mask merge; no other changes"
+    }
+  ],
+  "completedAt": "2026-09-09T17:30:12.605Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "excludedQAndASeenByModels": false,
+    "rerunPermitted": false,
+    "correctionContexts": 2,
+    "totalModelContexts": 4,
+    "authorizedReplacementDimensions": 17,
+    "unaffectedDimensions": 307,
+    "originalSchemaPassesSemanticallyQuarantined": true
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pro-paul-lexical-rebuttal:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-paul-lexical-rebuttal",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "Calling Carrier's claim a half-truth is sharp, but the response acknowledges that the mercantile sense genuinely exists."
+        },
+        "option-b": {
+          "value": 65,
+          "rationale": "Calling Carrier's account a half truth and obvious misunderstanding understates the role of contextual sense selection."
+        }
+      }
+    },
+    {
+      "disputeId": "con-intentionality-circularity:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "con-intentionality-circularity",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 74,
+          "rationale": "The demand for stronger evidence is calibrated, but saying there is no supernatural grounding overlooks Licona's claimed religious context rather than answering it fully."
+        },
+        "option-b": {
+          "value": 83,
+          "rationale": "The argument asks for proportionate evidence rather than declaring miracles impossible, though the spacecraft equivalence remains rhetorically strong."
+        }
+      }
+    },
+    {
+      "disputeId": "con-exchange-usage-and-context:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "con-exchange-usage-and-context",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 74,
+          "rationale": "Carrier supplies several relevant warrants beyond a dictionary gloss: claimed New Testament and Septuagint usage, destruction-and-replacement imagery in the Psalm and Hebrews, Pauline clothing metaphors, the repeated body nouns, and the decay-versus-indestructibility context. The case is meaningful, but universal usage and source dependence are asserted without examples sufficient to check them, while some garment symbolism is speculative."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "Carrier gives several concrete supports rather than relying on a dictionary gloss: alleged corpus-wide exchange usage, the destruction-and-replacement Psalm and Hebrews parallel, clothing imagery, repeated body nouns, and decay versus indestructibility. The case remains somewhat vulnerable because universal usage and derivation from the Psalm are asserted quickly, while the garment analogy does not by itself establish bodily replacement."
+        }
+      }
+    },
+    {
+      "disputeId": "con-exchange-usage-and-context:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "con-exchange-usage-and-context",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "Carrier makes the main contrast intelligible by distinguishing generic dictionary meaning from usage in context and by explaining how replacement, clothing, grammar, and material mortality support exchange. The passage interleaves separate consensus-percentage arguments and ends before developing the spiritual-body point, so the presentation is less focused than its core lexical thesis."
+        },
+        "option-b": {
+          "value": 86,
+          "rationale": "Carrier makes his usage-over-gloss method explicit and clearly distinguishes lexical usage, source-passage imagery, grammar, material context, and the separate fallback point about scholarly division. Some rapid transitions and the blending of clothing metaphors with replacement make the inference less than pristine, but the spoken contrasts and intended conclusion are stable."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains uncaptured by the move ratings and locked burden structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond the scored moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence was identified outside the move-level assessments.",
+            "alreadyCapturedBy": [
+              "move-level dimensions and locked burden links"
+            ],
+            "counterfactual": "Removing any claimed global effect would not change burden completion beyond existing move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured; incomplete comparative defeat and successful subsidiary work are already represented in move dimensions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion is invoked beyond the criteria already assessed move by move.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified outside the scored move record.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing any proposed adjustment would not omit an otherwise unscored burden-completion consequence."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains uncaptured by the move ratings and locked burden structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond the scored moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence was identified outside the move-level assessments.",
+            "alreadyCapturedBy": [
+              "move-level dimensions and locked burden links"
+            ],
+            "counterfactual": "Removing any claimed global effect would not change burden completion beyond existing move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured; the natural account's strengths and speculative bridges are already represented in move dimensions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion is invoked beyond the criteria already assessed move by move.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified outside the scored move record.",
+            "alreadyCapturedBy": [
+              "logicalCoherence",
+              "evidenceWarrant",
+              "responsiveness",
+              "relevanceBurden",
+              "precisionClarity",
+              "calibrationCharity"
+            ],
+            "counterfactual": "Removing any proposed adjustment would not omit an otherwise unscored burden-completion consequence."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 27,
+    "disputesExtracted": 6,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+      "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-a/output.json",
+      "sha256": "0f1a2d9bfc30013e08d0692ee9d091096adc31df508d77b86b9ad3d3bab5c4c7"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/judgments/pass-b/output.json",
+      "sha256": "2a1b2671364ea78638cdeb407a6b6c9b97026fbd8a3a8ca52d4f3d76b9ca6c62"
+    }
+  }
+}

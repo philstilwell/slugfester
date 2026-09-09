@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-standalone-pre-judgment-transport-hold",
+  "status": "awaiting-one-explicit-first-clip-retry-authorization",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "createdAt": "2026-09-09T16:48:57.386Z",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/inventory/inventory.json",
+    "sha256": "09475797061059d6f49052ab408957a932d8c348ab44b31002c29ee577a1c6e4",
+    "bytes": 152724
+  },
+  "manifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/manifest.json",
+    "sha256": "77c964f2820243085245010f72bd625a9f6c100174fee04431bf0c5f95bb520f",
+    "bytes": 9354
+  },
+  "audioPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/plan.json",
+    "sha256": "473d7eecb94e9e8ee605db25484cbc17b341542f07aa9d3b79e1290faf87e6d3",
+    "bytes": 12847
+  },
+  "failedAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/responses/pro-sincere-appearances.attempt.json",
+    "sha256": "f94abe7afdbadb296aab7045496e66cbfef3c194f9dc23d8c0280754a9587e27",
+    "bytes": 15538
+  },
+  "failureStatus": "failed-or-transport-uncertain",
+  "hostnameResolutionFailure": true,
+  "attempt": 1,
+  "retries": 0,
+  "firstMoveId": "pro-sincere-appearances",
+  "remainingMoveIds": [
+    "con-vision-development-theory",
+    "con-paul-body-exchange",
+    "pro-paul-continuity",
+    "pro-paul-lexical-rebuttal",
+    "con-jewish-pauline-parallels",
+    "pro-direct-pauline-transformation-texts",
+    "pro-rubicon-comparison-rebuttal",
+    "con-mark-literary-markers",
+    "con-exchange-usage-and-context",
+    "pro-closing-comparative-fit"
+  ],
+  "conservativeUncertainReserveUsd": 0.06,
+  "estimatedUsd": 0.210376,
+  "maximumUsd": 0.66,
+  "diagnosis": {
+    "stage": "Name resolution before connection to audio transcription service",
+    "restrictedPublicHeadCheck": "curl exit 6: Could not resolve host: api.openai.com",
+    "outsideRestrictedEnvironmentHeadCheck": {
+      "httpStatus": 404,
+      "requestId": "req_8d95684cb9cc439292267eee94be21b7",
+      "date": "2026-09-09T16:48:15Z",
+      "audioSent": false,
+      "credentialsSent": false,
+      "paidRequest": false
+    },
+    "conclusion": "The public service is reachable outside the restricted environment. This establishes network reachability, not that a model transcription will succeed."
+  },
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0,
+    "successfulPaidCalls": 0,
+    "maximumPotentialFailedCallCostUsd": 0.06,
+    "billingNotIndependentlyVerified": true,
+    "standingCapUsd": 1
+  },
+  "preservation": {
+    "rawInventoryAndFailurePreserved": true,
+    "twoSourceSpanFieldsRepairedAndValidated": true,
+    "allAudioClipsPreserved": true,
+    "noAudioAttemptRetried": true,
+    "noJudgmentsStarted": true,
+    "noScoresCalculated": true,
+    "noPublicationCreated": true,
+    "noCommitPushOrPR": true
+  },
+  "nextAction": "Seek explicit approval for one fresh attempt of pro-sincere-appearances, outside the restricted environment, preserving the first failure. If it succeeds, continue the ten unattempted clips sequentially, one attempt each, within the unchanged one-dollar total cap. Do not silently reset the frozen attempt counter."
+}

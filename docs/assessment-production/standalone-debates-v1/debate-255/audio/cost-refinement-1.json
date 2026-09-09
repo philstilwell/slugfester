@@ -1,0 +1,82 @@
+{
+  "status": "frozen-and-disclosed-before-further-paid-calls",
+  "createdAt": "2026-09-09T16:56:34.901Z",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "unchangedPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/plan.json",
+    "sha256": "473d7eecb94e9e8ee605db25484cbc17b341542f07aa9d3b79e1290faf87e6d3",
+    "bytes": 12847
+  },
+  "successfulFirstAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/responses/pro-sincere-appearances.retry-1.attempt.json",
+    "sha256": "c8b227c9ff6bc80bdfeba9ac75f5a889e3786ba055df8aa6b8a2d6444aee5d7a",
+    "bytes": 1570
+  },
+  "exception": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/audio/retry-1-authorization.json",
+    "sha256": "79f15c134f8a49df0046e6522fa7927b50da02c44b90875c659b6e57be4e907f",
+    "bytes": 1376
+  },
+  "reason": "The first response reports 5648 aggregate output tokens, exceeding the model page per-generation limit used in the original per-call reserve. Automatic audio chunking can aggregate multiple outputs; that earlier reserve was not a valid endpoint ceiling. The original plan and failed attempt remain unchanged.",
+  "estimationBasis": "Observed first-call cost per second including speaker-reference duration, with 20 percent reserve on every unattempted clip. This is a planning allowance, not a server-enforced billing cap.",
+  "estimatedTotalSuccessfulCostUsd": 0.717020731,
+  "knownSuccessfulCostUsd": 0.0641575,
+  "uncertainPriorReserveUsd": 0.06,
+  "remainingClips": [
+    {
+      "moveId": "con-vision-development-theory",
+      "estimatedUsd": 0.053850855,
+      "reserveUsd": 0.064621026
+    },
+    {
+      "moveId": "con-paul-body-exchange",
+      "estimatedUsd": 0.06241246,
+      "reserveUsd": 0.074894952
+    },
+    {
+      "moveId": "pro-paul-continuity",
+      "estimatedUsd": 0.075418464,
+      "reserveUsd": 0.090502156
+    },
+    {
+      "moveId": "pro-paul-lexical-rebuttal",
+      "estimatedUsd": 0.039590603,
+      "reserveUsd": 0.047508724
+    },
+    {
+      "moveId": "con-jewish-pauline-parallels",
+      "estimatedUsd": 0.075854724,
+      "reserveUsd": 0.091025669
+    },
+    {
+      "moveId": "pro-direct-pauline-transformation-texts",
+      "estimatedUsd": 0.073182631,
+      "reserveUsd": 0.087819157
+    },
+    {
+      "moveId": "pro-rubicon-comparison-rebuttal",
+      "estimatedUsd": 0.068301971,
+      "reserveUsd": 0.081962365
+    },
+    {
+      "moveId": "con-mark-literary-markers",
+      "estimatedUsd": 0.082916684,
+      "reserveUsd": 0.099500021
+    },
+    {
+      "moveId": "con-exchange-usage-and-context",
+      "estimatedUsd": 0.073209897,
+      "reserveUsd": 0.087851876
+    },
+    {
+      "moveId": "pro-closing-comparative-fit",
+      "estimatedUsd": 0.048124942,
+      "reserveUsd": 0.05774993
+    }
+  ],
+  "maximumPotentialCombinedCostUsd": 0.91,
+  "standingCapUsd": 1,
+  "userDisclosure": "The retry succeeded; actual reported billing exceeds the initial estimate. Revised full-check estimate about $0.72, allowance $0.91 including uncertainty, within the existing $1 cap. Usage checked before every remaining call.",
+  "evidenceModelAndAttemptLimitsUnchanged": true
+}

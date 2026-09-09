@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-formal-rounds-tooling-scope",
+  "status": "implementation-scope-frozen-before-judgments",
+  "basis": "The user's explicit approval of a formal-rounds-only assessment requires a mechanical boundary and disclosure check in addition to the unchanged ordinary assessment controls.",
+  "additionalTrackedImplementationPath": "scripts/audit-standalone-formal-rounds-scope.mjs",
+  "appliesTo": "Any registry-routed standalone debate with an explicit formalRoundsScope authorization; no debate number, speaker, video ID, or source timestamp is embedded in the validator.",
+  "requiredChecks": [
+    "Approved scope authorization hash",
+    "Identical authorized motion and source boundaries",
+    "Complete sequential source events within the authorized window",
+    "Every selected move and response target inside the authorized inventory",
+    "Material wording uncertainty triggers audio verification",
+    "Continuous approved-window inventory coverage",
+    "Reader-facing title and exact scope disclosure",
+    "One-to-one published move mapping and in-scope quotations"
+  ],
+  "existingSourceAndAssessmentEvidenceMutable": false,
+  "rubricOrScoreThresholdChanges": false,
+  "temporaryControllers": "Preparation and assembly helpers will be removed after their provenance is preserved; no paid calls or model judgments are performed by the scope validator."
+}

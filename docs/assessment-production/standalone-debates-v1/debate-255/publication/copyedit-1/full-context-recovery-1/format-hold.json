@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0-publication-transport-format-hold",
+  "status": "paused-before-metadata-only-recovery",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "completedAt": "2026-09-09T18:19:47.071Z",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/authorization.json",
+    "sha256": "2c585ad8b6b16c17a6487338f3ceeaab9c55b425e4d79434ddb8faa33b1db80f",
+    "bytes": 1114
+  },
+  "manifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/manifest.json",
+    "sha256": "4550e27c757aa2d887c8e90a82ce0efeeb4f7347722a31c6d1e4dc72b5045599",
+    "bytes": 30202
+  },
+  "failedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/shard-02-output.json",
+    "sha256": "fff83d50bc2a0c77dfdef48f5fea76e1cd4f9356629cbc1a69f1250d4993883b",
+    "bytes": 3089
+  },
+  "strictValidationLog": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/schema-failure-2.log",
+    "sha256": "181bcbcb3408b43dce67cac7f5eb6c4360fd5f23f12e499417643b85fca173e9",
+    "bytes": 778
+  },
+  "failedOrdinal": 2,
+  "actualSchemaVersion": "1.0-publication-field-repair-output",
+  "requiredSchemaVersion": "1.0",
+  "missingTopLevelFields": [
+    "status",
+    "audit"
+  ],
+  "sourceReviewFormatMismatch": "The raw response uses completeFormalSourceLinesRead, completeFormalSourceEventRange, materialEventReferences, and wholeSourceOmissionCheck rather than the declared sourceReview keys.",
+  "completedDrafts": [
+    {
+      "ordinal": 1,
+      "moveId": "pro-crucifixion-death",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/shard-01-output.json",
+        "sha256": "7f5f02a29305845470428b31c443b7ce33b3c128dcab8222098bbf459a855155",
+        "bytes": 3121
+      },
+      "fields": [
+        {
+          "path": "candidate.sections[0].exchanges[0].pro.words",
+          "words": 25,
+          "characters": 194
+        },
+        {
+          "path": "candidate.sections[0].exchanges[0].pro.critique",
+          "words": 120,
+          "characters": 1012
+        }
+      ],
+      "internalEventReferences": false
+    },
+    {
+      "ordinal": 2,
+      "moveId": "con-vision-development-theory",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/shard-02-output.json",
+        "sha256": "fff83d50bc2a0c77dfdef48f5fea76e1cd4f9356629cbc1a69f1250d4993883b",
+        "bytes": 3089
+      },
+      "fields": [
+        {
+          "path": "candidate.sections[0].exchanges[0].con.words",
+          "words": 27,
+          "characters": 231
+        },
+        {
+          "path": "candidate.sections[0].exchanges[0].con.critique",
+          "words": 123,
+          "characters": 1035
+        }
+      ],
+      "internalEventReferences": false
+    },
+    {
+      "ordinal": 3,
+      "moveId": "pro-sincere-appearances",
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/copyedit-1/full-context-recovery-1/shard-03-output.json",
+        "sha256": "6d6084b2d9e2dbf5f0ffcce7e3142a4552afd3166971c6c98e2bc153a38e0fcb",
+        "bytes": 3190
+      },
+      "fields": [
+        {
+          "path": "candidate.sections[0].exchanges[1].pro.words",
+          "words": 27,
+          "characters": 193
+        },
+        {
+          "path": "candidate.sections[0].exchanges[1].pro.critique",
+          "words": 115,
+          "characters": 952
+        }
+      ],
+      "internalEventReferences": true
+    }
+  ],
+  "remainingUnlaunchedOrdinals": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "semanticReview": {
+    "firstReplacement": "Source-consistent; recognizes actual survival evidence and Carrier’s concession.",
+    "secondReplacement": "Source-consistent wording; no need for model rewriting or reassessment, but the schema is invalid.",
+    "firstUnlaunchedRepairCompleted": "Source-consistent wording and strict schema pass; internal event IDs should be rendered as corresponding video timestamps for readers."
+  },
+  "recommendedRecovery": {
+    "newModelCalls": 0,
+    "readerArgumentChanges": 0,
+    "metadata": "Preserve the raw response; create a separate normalized response using exact contract constants, unchanged repairs, and a transparent mapping from the existing source-review metadata. Record normalization as controller-derived rather than pretending the model supplied the correct schema.",
+    "eventReferences": "Convert internal event IDs in reader-facing critique text into video timestamps using the frozen source event times, with exact before/after hashes and no inferential changes.",
+    "revalidateWholeOutput": true,
+    "continueOnlyAfterExplicitApproval": true
+  },
+  "scoresUnchanged": {
+    "pro": {
+      "weightedSectionMean": 81.7,
+      "burdenCompletionAdjustment": 0,
+      "score": 82
+    },
+    "con": {
+      "weightedSectionMean": 81.2,
+      "burdenCompletionAdjustment": 0,
+      "score": 81
+    }
+  },
+  "scoreOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/output.json",
+    "sha256": "770579d7a12035cb26c3d54f544ae4d72223b39e84a83e04fd5061e5ef54d314",
+    "bytes": 14178
+  },
+  "scoreAttestation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/attestation.json",
+    "sha256": "b590183739016c37095cee81b6967b00c7e58d11246a562d1d027d50c61d20a5",
+    "bytes": 833
+  },
+  "canonicalPublicationExists": false,
+  "directIncrementalCostUsd": 0
+}

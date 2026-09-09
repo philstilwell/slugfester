@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "46420dc3fe9eb8bdbd0c05109b53d03a3ace03c04d98d993963228bdc8bdf0b0",
+    "bytes": 146928
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "controllerCorrection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/controller-correction.json",
+    "sha256": "e379cd5c08b12b51b1084c96c3927b00301d8b1cacc3cc7c78b984ab4bf7dadc",
+    "bytes": 17372
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_255_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "46420dc3fe9eb8bdbd0c05109b53d03a3ace03c04d98d993963228bdc8bdf0b0",
+        "bytes": 146928
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "ac0f43de46507be3b25b5261438c5f8341f778ec60ec2d127854d665a9822568",
+        "bytes": 33433
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_255_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "46420dc3fe9eb8bdbd0c05109b53d03a3ace03c04d98d993963228bdc8bdf0b0",
+        "bytes": 146928
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "159c651040ff30164e2fc27906a0c097b0fd60613e3f0065846348cac8227b62",
+        "bytes": 24453
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_255_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "a78e91748d90728952f5b5385c3414841a183b2bd5bf18e85799820c92da05e8",
+        "bytes": 204716
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "c99d84688b31e200df3b5909e631f35fe59aabf0514f4f62e2f1a96afae9b952",
+        "bytes": 23984
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "retries": 0,
+    "unionCandidates": 54,
+    "controllerAcceptedToRejectedCorrections": 19,
+    "controllerRejectedToAcceptedCorrections": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-09T19:25:47.469Z"
+}

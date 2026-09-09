@@ -1,0 +1,59 @@
+{
+  "status": "passed-private-production-preview",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/output.json",
+    "sha256": "b31314e9c9b25e7c4f3d0d3fd378b5addc5a75e3dd5942c521d13d461007f4df",
+    "bytes": 60774
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "ba0dbbb0ce376ee53ef40d0819c33cf6af8777eb6d8a100b31f4e502060b5215",
+      "bytes": 124824
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "db952b880e38353dfe7ba6947664883e6e8fabcc06a680ff3b5b7be4e0e99c00",
+      "bytes": 11474759
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/publication/output.json",
+      "sha256": "b31314e9c9b25e7c4f3d0d3fd378b5addc5a75e3dd5942c521d13d461007f4df",
+      "bytes": 60774
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-255/score-pass/output.json",
+      "sha256": "770579d7a12035cb26c3d54f544ae4d72223b39e84a83e04fd5061e5ef54d314",
+      "bytes": 14178
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 255",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/preview-2/command-1.log",
+        "sha256": "295e78f979b8f9f3c8c776b2aee0d7aa13b7ed3a39a439383a5a3d0b85091059",
+        "bytes": 60
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/validation/preview-2/command-2.log",
+        "sha256": "955254eb7fafa459964d8b76641ea745be5825db9c2bee5e0a4af2d0f3e31929",
+        "bytes": 23
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-09T16:19:13.615Z",
+  "repositoryBaseline": {
+    "branch": "codex/debate-255",
+    "head": "3e283382a3875c72f8926d0b8ef6795ad90eff07",
+    "localMain": "3e283382a3875c72f8926d0b8ef6795ad90eff07",
+    "originMain": "3e283382a3875c72f8926d0b8ef6795ad90eff07",
+    "clean": true,
+    "isolationReason": "Dedicated topic working copy created from clean synchronized main before intake; only the preserved current-debate intake now exists."
+  },
+  "identity": {
+    "debateNumber": "255",
+    "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+    "label": "Resurrection evidence: formal rounds",
+    "canonicalUrl": "https://www.youtube.com/watch?v=XWa3DSxETaU",
+    "videoId": "XWa3DSxETaU",
+    "sourceTitle": "Carrier vs. Licona (2004)",
+    "title": "Mike Licona vs Richard Carrier — Did Jesus rise from the dead? (2004, formal rounds)",
+    "eventYear": 2004,
+    "uploadDate": "2014-02-12",
+    "motion": "Did Jesus rise from the dead?",
+    "topicCategory": "resurrection-miracles",
+    "pro": {
+      "speaker": "Mike Licona",
+      "position": "Historical resurrection defense"
+    },
+    "con": {
+      "speaker": "Richard Carrier",
+      "position": "Naturalistic historical challenge"
+    },
+    "moderator": "Moderator (formal-round procedural role only)",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": false
+    },
+    "formalRoundsScope": {
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/formal-rounds-authorization.json",
+        "sha256": "1e3ac8b56d93232664276e9a5ae17e18fa89ca84c7f3539633de3d81d3faf52b",
+        "bytes": 2125
+      },
+      "assessedWindow": {
+        "startEvent": 46,
+        "endEvent": 1038,
+        "startMs": 310080,
+        "endMs": 5902800,
+        "durationMs": 5592720
+      },
+      "scope": "The complete formal openings, rebuttals, responses, and final statements only. Introductory material and all later questions, answers, moderator challenges, and closing exchanges are outside assessment. Procedural moderator transitions inside the formal rounds are not scored.",
+      "requiredReaderDisclosure": "Only the formal debate rounds (5:10–1:38:23) are assessed. The subsequent question-and-answer session, including moderator-authored challenges and both speakers' replies, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+      "allSubsequentQAndAExcluded": true,
+      "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-255/",
+    "docs/assessment-ledgers/licona-carrier-resurrection-formal-rounds-2004.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/licona-carrier-resurrection-formal-rounds-2004.js",
+    "src/data/debate-summaries.js",
+    "src/data/debate-analytics.js",
+    "src/data/reference-appearances/",
+    "debate/",
+    "interlocutor/",
+    "feed.xml",
+    "index.html",
+    "rankings/index.html",
+    "search/index.html",
+    "sitemap.xml",
+    "topics/index.html",
+    "output/playwright/standalone-debate-v1/debate-255/"
+  ]
+}

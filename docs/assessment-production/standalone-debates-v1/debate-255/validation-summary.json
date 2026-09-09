@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "255",
+  "debateId": "licona-carrier-resurrection-formal-rounds-2004",
+  "completedAt": "2026-09-09T19:31:58.726Z",
+  "source": {
+    "videoId": "XWa3DSxETaU",
+    "fullTranscriptAcquired": true,
+    "requiredAttributionAudioChecks": 11,
+    "completedAttributionAudioChecks": 11,
+    "unresolvedAttributionChecks": 0,
+    "primarySpeakerExceptionUsed": false,
+    "primarySpeakerScopeAudit": null,
+    "formalRoundsScope": {
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-255/source/formal-rounds-authorization.json",
+        "sha256": "1e3ac8b56d93232664276e9a5ae17e18fa89ca84c7f3539633de3d81d3faf52b",
+        "bytes": 2125
+      },
+      "assessedWindow": {
+        "startEvent": 46,
+        "endEvent": 1038,
+        "startMs": 310080,
+        "endMs": 5902800,
+        "durationMs": 5592720
+      },
+      "scope": "The complete formal openings, rebuttals, responses, and final statements only. Introductory material and all later questions, answers, moderator challenges, and closing exchanges are outside assessment. Procedural moderator transitions inside the formal rounds are not scored.",
+      "requiredReaderDisclosure": "Only the formal debate rounds (5:10–1:38:23) are assessed. The subsequent question-and-answer session, including moderator-authored challenges and both speakers' replies, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+      "allSubsequentQAndAExcluded": true,
+      "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+    },
+    "completeRecordingScored": false
+  },
+  "assessment": {
+    "inventoryMoves": 27,
+    "inventorySides": {
+      "pro": 13,
+      "con": 14
+    },
+    "acceptedPrimaryJudgmentPasses": 2,
+    "primaryContextsIncludingPreservedFailures": 4,
+    "authorizedReplacementAttempts": 2,
+    "authorizedReplacedDimensionJudgments": 17,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 6,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 82,
+      "con": 81,
+      "winner": "pro"
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0,
+      "maximumDistance": 0,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "displayRows": 16,
+    "argumentCards": 27,
+    "descriptionWords": [
+      25,
+      28
+    ],
+    "descriptionMeanWords": 26.37037037037037,
+    "critiqueWords": [
+      113,
+      130
+    ],
+    "minimumCritiqueCharacters": 892,
+    "contentParityAuditPassed": true,
+    "sourceExactQuotes": 2,
+    "blindRhetoricalReviews": 2,
+    "rhetoricalCandidatesReviewed": 54,
+    "acceptedCardTags": 3,
+    "acceptedOverallBlunderLinks": 2,
+    "rejectedCandidates": 49,
+    "productionLedger": {
+      "path": "docs/assessment-ledgers/licona-carrier-resurrection-formal-rounds-2004.json",
+      "sha256": "ad4dc66c6c7e0ca2ee9a0a38804add2e68c8607ec75db04ad438c0a1fe3db773",
+      "bytes": 24328
+    }
+  },
+  "rendering": {
+    "viewports": 2,
+    "screenshots": 8,
+    "argumentCardsPerViewport": 27,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0.6923275,
+  "maximumPossiblePaidCostUsd": 0.7523275,
+  "paidRetries": 1,
+  "publicationInputFiltering": "passed-mechanical-view-filter",
+  "gateScope": "Completed source, assessment, publication and rendering component gates. Subsequent complete repository replay and preflight are recorded separately in validation/final-local-gates.json."
+}

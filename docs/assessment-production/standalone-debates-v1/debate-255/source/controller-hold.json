@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-source-eligibility-controller-record",
+  "recordedAt": "2026-09-09T16:12:01Z",
+  "status": "awaiting-user-scope-decision",
+  "videoId": "XWa3DSxETaU",
+  "sourceUrl": "https://www.youtube.com/watch?v=XWa3DSxETaU",
+  "sourceTitle": "Carrier vs. Licona (2004)",
+  "proposedDebateNumber": "255",
+  "numberRegistered": false,
+  "repositoryBaseline": "3e283382a3875c72f8926d0b8ef6795ad90eff07",
+  "branch": "codex/debate-255",
+  "execution": {
+    "reviewer": "/root/debate255_source_eligibility",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "isolation": "fresh-built-in-subagent-fork-none",
+    "attempts": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "paidApiCalls": 0,
+    "executionPlanSha256": "19330bbe24cb6a0056c4c9182e7a73165159192c8d2789e2bc59c56de7672a36",
+    "preservedRawOutputSha256": "72f062e21cab6da9f986c9b44f565f0add58f2ab56caa02c900ec3c463007375"
+  },
+  "controllerChecks": {
+    "allowedInputHashesAndSizesMatch": true,
+    "reviewOutputParsesAsJson": true,
+    "sourceEventCount": 1622,
+    "sourceIssueEventRangesValid": true,
+    "videoAndMotionMatch": true,
+    "assessmentJudgmentsStarted": false,
+    "inventoryFrozen": false,
+    "publicationStarted": false
+  },
+  "holdReason": "The full recording cannot be certified under the current primary-speaker scope exception. Moderator-authored challenges about early Christian social transformation near 1:47:34 and Matthew 28's 'some doubted' near 1:56:44 supply substantive premises not clearly duplicative of independently developed primary arguments. Their short duration does not resolve the exception's separate no-new-argument requirement. Some Q&A speaker boundaries also remain uncertain. No inference about either primary speaker's merits or scores is made.",
+  "rawReviewCaveats": [
+    "The reviewer field assessedWindow describes a candidate source window, not an authorized or frozen assessment boundary.",
+    "Moderator surname spelling is not independently audio-verified; the hold depends on the moderator role, not that spelling.",
+    "Several format blocks are provisional at merged-caption boundaries. In particular, the output's Licona label across events 1233-1235 is not certified because its sourceIssues entry explicitly marks speaker ownership uncertain.",
+    "The proposed formal-rounds endpoint uses event 1038 rather than the reviewer's broad wrap-up block ending at event 1039, which contains the moderator's transition."
+  ],
+  "proposedRecovery": {
+    "requiresExplicitUserApproval": true,
+    "description": "Assess only the complete formal rounds, with clear reader-facing disclosure that the later question-and-answer session is excluded. This is a scope change, not an automatic application of the moderator exception.",
+    "candidateStartEvent": 46,
+    "candidateStartMs": 310080,
+    "candidateEndEvent": 1038,
+    "candidateEndMs": 5902800,
+    "userFacingApproximateWindow": "5:10-1:38:25",
+    "authorized": false,
+    "nextStepIfApproved": "Recheck numbering and repository state, preserve all current evidence, then validate and freeze the explicitly authorized formal-rounds scope before inventory or judgments. Resolve material transcript uncertainty within that scope through the normal evidence workflow."
+  },
+  "audioDiagnostic": {
+    "paidTranscriptionStarted": false,
+    "announcedEstimatedCostUsd": 0.01,
+    "actualCostUsd": 0,
+    "freeDownloadAttempt": "Four requested source snippets used an unavailable section_number output token, yielding the same filename. The first was saved and the remaining three skipped under no-overwrites. The preserved stream-copy clip has pre-roll and is not accepted as a timestamp-accurate voice reference.",
+    "preservedFile": "output/transcribe/debate255-source-eligibility-1/source-NA.webm",
+    "preservedFileSha256": "861d80a762d8aea2fac5d87209a69256c77af99dbef9deed27648b72b423cd32",
+    "reportedDurationSeconds": 22,
+    "acceptedAsEvidence": false,
+    "reasonNotContinued": "The independently established scope hold requires a user decision regardless of the disputed Q&A speaker attribution. No paid check or download retry was initiated."
+  }
+}
