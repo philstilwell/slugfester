@@ -1,0 +1,50 @@
+{
+  "status": "failed-private-production-preview",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/raw-prose-output-1.json",
+    "sha256": "b6e5f287227ca0eab8a2e6731f0ed3520198866a490bc628973f660d5e6cf9ac",
+    "bytes": 60794
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "d0eed43ef07189165d5a16c90f2cfb4842d61d999baab2feadb4a98e22d517b0",
+      "bytes": 126500
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "b085029e23605be80422dfed55a0df5aa02e836c12b52c694e25dcc242ba5d65",
+      "bytes": 11531520
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/raw-prose-output-1.json",
+      "sha256": "b6e5f287227ca0eab8a2e6731f0ed3520198866a490bc628973f660d5e6cf9ac",
+      "bytes": 60794
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/score-pass/output.json",
+      "sha256": "04f7222bae1f476324da7dcfe4f32acb71a6d46fc67820dab65c1d26c963e379",
+      "bytes": 14852
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 256",
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/validation/preview-1/command-1.log",
+        "sha256": "d44945a0ca206fcecb2f6072600b7ba19ff2d7e2b3448029dbe0ad3c8512e7ae",
+        "bytes": 1100
+      }
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: scripts/audit-assessment-production-standalone-v1.mjs failed; see docs/assessment-production/standalone-debates-v1/debate-256/validation/preview-1/command-1.log\n\n1 !== 0\n"
+}

@@ -1,8 +1,8 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=cc1d31857fb30db4";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=cc1d31857fb30db4";
-import { debateSummaries } from "./data/debate-summaries.js?v=cc1d31857fb30db4";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=cc1d31857fb30db4";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=cc1d31857fb30db4";
+import { topicCategoryDefinitions } from "./data/topics.js?v=edec85e685cf6a95";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=edec85e685cf6a95";
+import { debateSummaries } from "./data/debate-summaries.js?v=edec85e685cf6a95";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=edec85e685cf6a95";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=edec85e685cf6a95";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -38,7 +38,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=cc1d31857fb30db4";
+} from "./seo.js?v=edec85e685cf6a95";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -90,7 +90,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=cc1d31857fb30db4")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=edec85e685cf6a95")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -109,7 +109,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=cc1d31857fb30db4")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=edec85e685cf6a95")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -125,7 +125,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=cc1d31857fb30db4`)
+    const promise = import(`./data/debate-details/${id}.js?v=edec85e685cf6a95`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -140,7 +140,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=cc1d31857fb30db4`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=edec85e685cf6a95`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3149,6 +3149,7 @@ function renderDebateObject(
       ${renderAssessmentGuide(debate)}
       ${renderQuoteCards(debate)}
       ${renderScoringNote(debate)}
+      ${renderSourceContext(debate)}
       ${renderTeamScoreNote(debate)}
       ${renderInteractionGuide()}
 
@@ -3266,6 +3267,16 @@ function renderScoringNote(debate) {
       <strong>AI-generated scorecard</strong>
       <span>Scores are AI-generated estimates of argumentative performance.</span>
       <span class="assessment-model">Assessments made by ${escapeHtml(model)}.${rubric}</span>
+    </section>
+  `;
+}
+
+function renderSourceContext(debate) {
+  if (!debate.assessmentScopeDisclosure) return "";
+  return `
+    <section class="scoring-note source-context" aria-label="Source and assessment scope">
+      <strong>Source and assessment scope</strong>
+      <span>${escapeHtml(debate.assessmentScopeDisclosure)}</span>
     </section>
   `;
 }
@@ -3901,21 +3912,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=cc1d31857fb30db4")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=edec85e685cf6a95")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=cc1d31857fb30db4")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=edec85e685cf6a95")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=cc1d31857fb30db4")
+    insightsPromise ||= import("./data/insights.js?v=edec85e685cf6a95")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

@@ -1,0 +1,16 @@
+{
+  "status": "recovered-misplaced-reading-receipt-with-no-assessment-change",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "sessionPath": "/Users/philstilwell/.codex/sessions/2026/09/09/rollout-2026-09-09T20-32-03-01a088ba-92f1-78b1-aecc-3b5927f2ab00.jsonl",
+  "firstWriteCallId": "call_yWzmfKhbTkZQMgqnQm3q2Ft5",
+  "recoveryCallId": "call_pyNdPwWv8tiMNhmtJCQ9gIR1",
+  "incident": "The reviewer wrote its reading-only receipt at the same relative path in the main checkout because apply_patch did not inherit the preceding shell command's workdir. In the same reading stage it copied the exact receipt text into the dedicated worktree and removed only its own misplaced receipt.",
+  "controllerVerification": "The two public tool calls show the original receipt creation and exact-text copy/delete. The misplaced main-checkout receipt is absent; the worktree receipt hash is authenticated by the reading gate. No existing user file was overwritten or removed.",
+  "canonicalReceiptSha256": "449653ce4b283e9776388732260c21049ea841e0546d572593de741429aa9fca",
+  "assessmentDecisionsAtIncident": 0,
+  "assessmentChanges": 0,
+  "newReviewerContexts": 0,
+  "privateReasoningReadOrPreserved": false,
+  "directIncrementalCostUsd": 0
+}

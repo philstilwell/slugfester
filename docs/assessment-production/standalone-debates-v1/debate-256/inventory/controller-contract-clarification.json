@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0-nonsubstantive-controller-contract-clarification",
+  "status": "delivered-during-original-inventory-attempt-before-output",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "recordedAt": "2026-09-09T20:52:08.052Z",
+  "originalPacketPreserved": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/packet.json",
+  "originalPlanPreserved": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/execution-plan.json",
+  "agentTask": "/root/debate256_formal_inventory",
+  "delivery": "Direct controller message to the original running context; no additional file access or new attempt",
+  "field": "publicationCapacityAudit.sections[*].fourthRowAuthorized",
+  "incorrectPacketInstruction": "true only for a justified fourth row, otherwise false",
+  "correctRepositoryDefinition": "!fourthRowRequired || (stored.fourthRowAuthorized === true && source-specific rationale has at least 40 characters)",
+  "meaning": "Ordinary sections require no exception, so their authorization flag is true; fourth-row sections additionally require the documented justification.",
+  "authority": "scripts/lib/assessment-production-standalone-debate-v1.mjs:409",
+  "sourceChanges": 0,
+  "inventorySubstanceChanges": 0,
+  "ratingsProduced": 0,
+  "additionalModelAttempts": 0,
+  "directIncrementalCostUsd": 0
+}

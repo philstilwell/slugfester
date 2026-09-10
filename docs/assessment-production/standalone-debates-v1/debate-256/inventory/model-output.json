@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "assessmentModel": "5.6 Sol",
+  "motion": "Is Christianity dangerous?",
+  "assessedDebateWindowMs": {"start": 119670, "end": 5242429},
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Aron Ra",
+      "position": "Christianity poses serious dangers",
+      "bridges": [
+        {"bridgeId": "pro-motion-danger", "tier": "motion", "burden": "Show that Christianity poses serious dangers within the assessed material.", "successCriterion": "Connect Christian doctrines or institutions to concrete harms rather than merely noting misconduct by Christians."},
+        {"bridgeId": "pro-coercive-scripture", "tier": "central", "burden": "Show that Christian scripture and its authoritative use license violence or coercion.", "successCriterion": "Identify teachings and historically consequential applications that threaten life, liberty, or equal standing."},
+        {"bridgeId": "pro-faith-reason", "tier": "central", "burden": "Show that Christian faith damages evidence-responsive reasoning.", "successCriterion": "Explain how required belief resists contrary evidence and creates harmful downstream decisions."},
+        {"bridgeId": "pro-civic-dominion", "tier": "subsidiary", "burden": "Show that Christian political power threatens pluralism and civil rights.", "successCriterion": "Trace religious authority or policy goals to coercive law, unequal citizenship, or discriminatory restrictions."},
+        {"bridgeId": "pro-social-harm", "tier": "subsidiary", "burden": "Show adverse social and personal outcomes associated with Christianity.", "successCriterion": "Supply examples or comparative evidence linking religiosity to measurable harms."},
+        {"bridgeId": "pro-science-health", "tier": "subsidiary", "burden": "Show that Christian belief can obstruct science-informed health and environmental conduct.", "successCriterion": "Identify belief-driven rejection of evidence with concrete health or environmental stakes."}
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Michael Jones",
+      "position": "Christianity is not intrinsically dangerous",
+      "bridges": [
+        {"bridgeId": "con-motion-causation", "tier": "motion", "burden": "Deny that Christianity itself is established as a cause of serious danger.", "successCriterion": "Show that examples of Christian wrongdoing do not establish the required causal link to Christianity."},
+        {"bridgeId": "con-empirical-benefits", "tier": "central", "burden": "Show that the best aggregate evidence does not associate intrinsic religiosity with harmful outcomes.", "successCriterion": "Use peer-reviewed syntheses or properly controlled evidence showing neutral or beneficial general trends."},
+        {"bridgeId": "con-scriptural-context", "tier": "central", "burden": "Show that key harmful readings are not required by Christian scripture.", "successCriterion": "Give contextual or linguistic reasons why the cited doctrines do not mandate irrationality or Old Covenant violence."},
+        {"bridgeId": "con-faith-evidence", "tier": "subsidiary", "burden": "Show that biblical faith need not mean belief against evidence.", "successCriterion": "Ground faith in commitment, assurance, or evidence-responsive trust rather than blind assent."},
+        {"bridgeId": "con-science-compatibility", "tier": "subsidiary", "burden": "Show that Christianity does not necessarily cause rejection of science.", "successCriterion": "Use historical or polling evidence of Christian compatibility with evolution and environmental concern."},
+        {"bridgeId": "con-misuse-distinction", "tier": "subsidiary", "burden": "Distinguish Christianity from opportunistic misuse or misinterpretation by adherents.", "successCriterion": "Show that actors can appropriate words or religion for independent bad motives without the source causing their acts."}
+      ]
+    }
+  ],
+  "sections": [
+    {"sectionId": "causal-burden", "title": "What must count as Christianity causing danger", "weightPercent": 22, "weightRationale": "Both openings and much of cross-examination contest the motion's causal standard: Aron treats recurring doctrine-linked harms as probative, while Jones demands evidence that intrinsic religiosity itself produces them."},
+    {"sectionId": "scripture-violence", "title": "Scripture, violence, and historical coercion", "weightPercent": 17, "weightRationale": "Aron's core historical case invokes violent biblical commands and Christian persecution; Jones answers that Old Covenant prescriptions do not govern Christians."},
+    {"sectionId": "political-rights", "title": "Political power, pluralism, and civil rights", "weightPercent": 16, "weightRationale": "The affirmative alleges danger when Christianity controls law or targets minorities, while the negative treats such conduct as radical misuse rather than intrinsic Christianity."},
+    {"sectionId": "faith-epistemology", "title": "Faith, evidence, and rational agency", "weightPercent": 20, "weightRationale": "The parties directly dispute whether Christian faith requires belief without or against evidence, using lexical claims, Thomas, Hebrews, and cross-examination examples."},
+    {"sectionId": "social-outcomes", "title": "Crime, well-being, and comparative social evidence", "weightPercent": 15, "weightRationale": "Both sides invoke empirical social outcomes, but differ over country-level comparisons, individual intrinsic religiosity, and the evidential value of meta-analysis."},
+    {"sectionId": "science-health", "title": "Science, health, and environmental consequences", "weightPercent": 10, "weightRationale": "The assessed speeches offer concrete disputes about medical reliance, evolution, and climate attitudes as tests of whether Christianity creates practical danger."}
+  ],
+  "moves": [
+    {
+      "moveId": "pro-recurring-doctrine-linked-harms", "sectionId": "causal-burden", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 504, "endEvent": 521},
+      "quoteEligibleExactSpans": ["Christianity is dangerous in that it provides cover", "there's some degree of danger if you take any at all"],
+      "claimSummary": "Christianity remains dangerous even when some moderate believers appear unharmed.",
+      "reasonSummary": "It provides cover for delusion and misinformation, and the existence of apparently healthy moderate adherents no more removes risk than some long-lived smokers remove smoking risk.",
+      "inferenceSummary": {"premise": "Christian belief can shelter delusion and serious falsehood, while moderate cases can appear benign.", "inference": "A practice can carry risk without harming every participant or only after extreme exposure.", "conclusion": "Christianity can be dangerous even in small doses."},
+      "burdenContact": {"bridgeId": "pro-motion-danger", "tier": "motion", "rationale": "This explicitly connects Christianity as a belief practice, not just isolated Christians, to a continuing risk profile."},
+      "importance": 3, "importanceRationale": "It states the affirmative's general theory for moving from varied examples to the motion-level conclusion.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening statement.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The risk analogy and operative conclusion are coherent across consecutive captions."
+    },
+    {
+      "moveId": "pro-required-belief-danger", "sectionId": "causal-burden", "side": "pro", "speaker": "Aron Ra", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1761, "endEvent": 1776},
+      "quoteEligibleExactSpans": ["if you have the belief system what about that is not dangerous", "the correlations just aren't there"],
+      "claimSummary": "A required Christian belief system can itself be dangerous despite Jones's attempt to classify examples as bad individual conduct.",
+      "reasonSummary": "Aron argues that the teachings and scriptures instruct believers and therefore cannot all be detached from the conduct as merely bad individual behavior.",
+      "inferenceSummary": {"premise": "The harmful conduct is presented as following teachings believers take scripture to require.", "inference": "If the belief system supplies the instruction, dismissing every instance as mere bad conduct misses the proposed mechanism.", "conclusion": "The danger claim concerns Christianity's required beliefs, not merely Christian identity."},
+      "burdenContact": {"bridgeId": "pro-motion-danger", "tier": "motion", "rationale": "This directly defends the affirmative causal bridge against the negative's attribution objection."},
+      "importance": 2, "importanceRationale": "It is a central cross-examination clarification of the affirmative causal theory.",
+      "respondsToIds": ["con-attribution-standard"], "responseComponents": [{"targetMoveId": "con-attribution-standard", "component": "causal attribution", "description": "Challenges the demand to detach harms from Christianity when adherents cite required teachings as their reason."}],
+      "attributionConfidence": "medium", "attributionRationale": "Cross-examination alternates voices; the question through event 1776 is Aron's, while Jones's answer begins at 1777 within the selected exchange.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The central wording is clear, but rolling captions combine the question and immediate answer."
+    },
+    {
+      "moveId": "con-attribution-standard", "sectionId": "causal-burden", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 745, "endEvent": 818},
+      "quoteEligibleExactSpans": ["he has to show that Christianity necessarily is the cause", "this is actually not proof Christianity cause these bad things"],
+      "claimSummary": "Examples of Christians doing bad things do not establish that Christianity caused those acts.",
+      "reasonSummary": "Jones identifies multiple unsupported steps from a verse, through Aron's interpretation and alleged majority acceptance, to harmful effects, calling the resulting attribution an error.",
+      "inferenceSummary": {"premise": "Bad acts by members of a group can occur without being caused by the group's defining belief system.", "inference": "The affirmative must establish interpretation, uptake, and causal effect rather than infer causation from affiliation and examples.", "conclusion": "The presented examples alone do not meet the motion's causal burden."},
+      "burdenContact": {"bridgeId": "con-motion-causation", "tier": "motion", "rationale": "This sets the negative's controlling burden test for the entire debate."},
+      "importance": 3, "importanceRationale": "The causal-attribution standard organizes Jones's opening and repeated cross-examination answers.",
+      "respondsToIds": ["pro-recurring-doctrine-linked-harms"], "responseComponents": [{"targetMoveId": "pro-recurring-doctrine-linked-harms", "component": "generalization from examples", "description": "Denies that examples and analogies establish Christianity as the directed cause of the alleged harms."}],
+      "attributionConfidence": "high", "attributionRationale": "This is Jones's uninterrupted opening statement after his introduction.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The captions repeatedly and coherently state the attribution-error standard."
+    },
+    {
+      "moveId": "con-truth-distinct-from-danger", "sectionId": "causal-burden", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1722, "endEvent": 1737},
+      "quoteEligibleExactSpans": ["that's not the debate we're having tonight", "something can be pragmatic and not true"],
+      "claimSummary": "Whether Christianity is true is distinct from whether it is dangerous.",
+      "reasonSummary": "Jones says Aron is assuming falsity under his own evidence standard and notes that false systems may be useful while true claims may be impractical.",
+      "inferenceSummary": {"premise": "Truth and pragmatic effect are separable properties.", "inference": "Showing that a belief lacks truth or evidence would not by itself establish harmful social effects.", "conclusion": "The debate should be decided by evidence of danger, not by a prior verdict on Christianity's truth."},
+      "burdenContact": {"bridgeId": "con-motion-causation", "tier": "motion", "rationale": "This narrows the motion to harmful effects and resists replacing causal proof with an epistemic objection."},
+      "importance": 2, "importanceRationale": "It clarifies why Jones relies on outcome studies instead of defending Christianity's truth.",
+      "respondsToIds": ["pro-salvation-rewards-gullibility"], "responseComponents": [{"targetMoveId": "pro-salvation-rewards-gullibility", "component": "belief without adequate evidence", "description": "Replies that alleged falsity or lack of evidence does not itself demonstrate danger."}],
+      "attributionConfidence": "medium", "attributionRationale": "The cross-examination voices alternate within the selected exchange, though Jones's extended answer is identifiable from context.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The central truth-versus-pragmatism distinction is clear despite merged captions and a garbled phrase near event 1702."
+    },
+    {
+      "moveId": "pro-biblical-violent-commands", "sectionId": "scripture-violence", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 85, "endEvent": 97},
+      "quoteEligibleExactSpans": ["the Bible says that too in Deuteronomy 13 and 17", "whole communities can be slaughtered"],
+      "claimSummary": "The Bible contains commands to kill dissenters, slaughter communities, enslave children, and execute alleged witches.",
+      "reasonSummary": "Aron contrasts perceptions of Quranic violence with explicit passages he identifies in Deuteronomy, Numbers, and Exodus.",
+      "inferenceSummary": {"premise": "Authoritative Christian scripture contains severe commands against unbelievers and outsiders.", "inference": "Treating such commands as divinely authoritative can supply religious warrant for violence.", "conclusion": "Christian scripture provides a source of danger."},
+      "burdenContact": {"bridgeId": "pro-coercive-scripture", "tier": "central", "rationale": "The move identifies textual material alleged to authorize lethal coercion directly."},
+      "importance": 3, "importanceRationale": "Scriptural authorization is a central affirmative mechanism connecting Christianity to historical violence.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The cited books and actions are plainly preserved in consecutive captions."
+    },
+    {
+      "moveId": "pro-christian-persecution-history", "sectionId": "scripture-violence", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 158, "endEvent": 184},
+      "quoteEligibleExactSpans": ["Christian history is rife with centuries of near-continuous overlapping wars", "blasphemy heresy or apostasy"],
+      "claimSummary": "Christian history repeatedly features intra-Christian wars and punishment of dissent as religious crimes.",
+      "reasonSummary": "Aron lists conflicts among Christian denominations and notes that blasphemy, heresy, and apostasy could bring imprisonment or execution.",
+      "inferenceSummary": {"premise": "Christian regimes and factions repeatedly coerced religious conformity and fought in the shared God's name.", "inference": "Recurring institutional violence tied to doctrinal conformity is evidence of a danger beyond isolated misconduct.", "conclusion": "Historically empowered Christianity endangered life and freedom of thought."},
+      "burdenContact": {"bridgeId": "pro-coercive-scripture", "tier": "central", "rationale": "This supplies historical application evidence for the scriptural-coercion burden."},
+      "importance": 2, "importanceRationale": "It broadens the affirmative case from isolated texts to recurring institutional history.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The denominations, alleged motive, and dissent offenses are intelligible in the captions."
+    },
+    {
+      "moveId": "con-old-covenant-not-prescriptive", "sectionId": "scripture-violence", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1324, "endEvent": 1356},
+      "quoteEligibleExactSpans": ["Old Testament laws are not prescribed to Christians", "Christians are now commanded to do is to love one another"],
+      "claimSummary": "Old Testament legal commands cited against Christianity are not prescribed to Christians under the New Covenant.",
+      "reasonSummary": "Jones argues from Matthew, John, Hebrews, and Galatians that Christ fulfilled the former law and replaced its governing covenant with the law of love.",
+      "inferenceSummary": {"premise": "Christian scripture presents the Old Covenant as fulfilled and obsolete while restating a law of love.", "inference": "Commands belonging to the former covenant cannot automatically be treated as present Christian duties.", "conclusion": "Old Testament violence does not establish that Christianity prescribes such conduct."},
+      "burdenContact": {"bridgeId": "con-scriptural-context", "tier": "central", "rationale": "This directly contests the affirmative's use of violent Old Testament commands as operative Christian norms."},
+      "importance": 3, "importanceRationale": "It is Jones's principal contextual answer to the affirmative's scriptural violence case.",
+      "respondsToIds": ["pro-biblical-violent-commands"], "responseComponents": [{"targetMoveId": "pro-biblical-violent-commands", "component": "continuing prescription", "description": "Argues that the cited Old Testament laws belong to a fulfilled covenant and are not Christian commands."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "Despite minor automatic-caption distortions, the four-step covenant argument is explicit and coherent."
+    },
+    {
+      "moveId": "pro-state-religion-oppression", "sectionId": "political-rights", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 185, "endEvent": 225},
+      "quoteEligibleExactSpans": ["every time religion has ever had rule over law", "you can't have freedom of religion without freedom from religion"],
+      "claimSummary": "Religious rule over law predictably violates life and liberty, so state religion makes other faiths second-class.",
+      "reasonSummary": "Aron invokes Salem, the secular protections of the founding order, and Missouri's Mormon execution order as examples of supernatural or official religious authority corrupting justice.",
+      "inferenceSummary": {"premise": "When religious claims govern courts or the state, dissenters can lose legal protection and equal status.", "inference": "Pluralistic liberty requires government not to enforce an official religion.", "conclusion": "Christian political establishment is dangerous to life and liberty."},
+      "burdenContact": {"bridgeId": "pro-civic-dominion", "tier": "subsidiary", "rationale": "This ties Christian governmental authority to coercion and unequal citizenship."},
+      "importance": 3, "importanceRationale": "Political establishment is one of Aron's principal present and historical danger mechanisms.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The political principle and Mormon-order example remain clear across the span."
+    },
+    {
+      "moveId": "pro-religious-right-discrimination", "sectionId": "political-rights", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 434, "endEvent": 468},
+      "quoteEligibleExactSpans": ["the religious right are pushing legislation that denies everyone else their rights", "laws that are written purely to promote discrimination"],
+      "claimSummary": "The Christian religious right pursues laws that deny equal rights to religious and sexual minorities.",
+      "reasonSummary": "Aron cites efforts to legalize employment and housing discrimination and Texas bathroom restrictions that impose humiliation without a demonstrated safety justification.",
+      "inferenceSummary": {"premise": "Religiously motivated legislation restricts jobs, housing, facilities, and equal consideration for targeted groups.", "inference": "Coercive denial of basic rights is a concrete public danger.", "conclusion": "Christian political bigotry endangers minorities."},
+      "burdenContact": {"bridgeId": "pro-civic-dominion", "tier": "subsidiary", "rationale": "The move supplies contemporary policy mechanisms for religiously driven unequal treatment."},
+      "importance": 2, "importanceRationale": "It gives specific present-day applications of the broader political-danger claim.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The policy examples and asserted rights consequences are captioned clearly."
+    },
+    {
+      "moveId": "con-radical-misuse-not-intrinsic", "sectionId": "political-rights", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1966, "endEvent": 1977},
+      "quoteEligibleExactSpans": ["their misunderstanding does not mean the belief actually caused it", "trying to justify anything they can caused that"],
+      "claimSummary": "People's misuse or misunderstanding of words does not show that the underlying belief system caused their harmful politics.",
+      "reasonSummary": "Jones identifies himself as a partial preterist and compares end-times misunderstanding with Jacobins' use of humanism, arguing that opportunistic justification must be separated from causation.",
+      "inferenceSummary": {"premise": "Actors can attach respected words or doctrines to conduct that those sources do not direct.", "inference": "Citation or affiliation alone cannot distinguish genuine doctrinal causation from excuse-making or misunderstanding.", "conclusion": "Radical political harms should not automatically be attributed to Christianity."},
+      "burdenContact": {"bridgeId": "con-misuse-distinction", "tier": "subsidiary", "rationale": "This supplies the negative's direct account of how religion can be invoked without causing political harm."},
+      "importance": 2, "importanceRationale": "It operationalizes the attribution objection against Aron's political examples.",
+      "respondsToIds": ["pro-state-religion-oppression", "pro-religious-right-discrimination"],
+      "responseComponents": [
+        {"targetMoveId": "pro-state-religion-oppression", "component": "doctrine-to-persecution link", "description": "Argues that later misuse of a source does not prove the source caused persecution."},
+        {"targetMoveId": "pro-religious-right-discrimination", "component": "religious justification", "description": "Treats radical political interpretations as possible excuse-making rather than evidence of intrinsic causation."}
+      ],
+      "attributionConfidence": "medium", "attributionRationale": "The cross-examination alternates within the span, but Jones's hypothetical and comparative answer are identifiable.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The core misuse distinction is clear; a few captions around the exchange boundary are fragmented."
+    },
+    {
+      "moveId": "pro-faith-denies-evidence", "sectionId": "faith-epistemology", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 531, "endEvent": 566},
+      "quoteEligibleExactSpans": ["faith is not just a synonym of trust", "there's a definite danger to your ability to reason"],
+      "claimSummary": "Religious faith rests on authority, fallacy, or subjective impressions rather than scientific evidence and therefore impairs reasoning.",
+      "reasonSummary": "Aron says every form of Christianity requires some denial of natural science or assent to unevidenced claims under threat of damnation.",
+      "inferenceSummary": {"premise": "Christian faith requires accepting claims not supported by scientific evidence and resisting contrary evidence.", "inference": "Conditioning belief away from evidence weakens a person's ability to reason reliably.", "conclusion": "Christian faith creates an epistemic danger."},
+      "burdenContact": {"bridgeId": "pro-faith-reason", "tier": "central", "rationale": "This expressly states the affirmative's faith-to-impaired-reason mechanism."},
+      "importance": 3, "importanceRationale": "The meaning and effects of faith become a sustained central dispute in both opening and cross-examination.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The definition, examples, and reasoning-risk conclusion are coherent despite a few transcription slips."
+    },
+    {
+      "moveId": "pro-salvation-rewards-gullibility", "sectionId": "faith-epistemology", "side": "pro", "speaker": "Aron Ra", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1614, "endEvent": 1641},
+      "quoteEligibleExactSpans": ["all your sins can be forgiven if you but believe", "you are judged for your gullibility exclusively"],
+      "claimSummary": "Christian salvation makes belief rather than moral conduct decisive and demands assent without adequate evidence.",
+      "reasonSummary": "Aron contrasts forgiveness for an evil believer with condemnation for a good nonbeliever and says authority and threat replace evidence while contrary evidence is forbidden.",
+      "inferenceSummary": {"premise": "The system allegedly makes belief the condition of salvation independently of goodness and without evidential support.", "inference": "Rewarding assent and punishing disbelief trains gullibility rather than moral or rational evaluation.", "conclusion": "Christian soteriology is epistemically and morally dangerous."},
+      "burdenContact": {"bridgeId": "pro-faith-reason", "tier": "central", "rationale": "This gives a doctrinal mechanism by which compelled belief is said to displace evidence and moral judgment."},
+      "importance": 2, "importanceRationale": "It develops the faith objection into a specific account of salvation and punishment.",
+      "respondsToIds": ["con-attribution-standard"], "responseComponents": [{"targetMoveId": "con-attribution-standard", "component": "doctrinal mechanism", "description": "Offers salvation conditioned on belief as the specific Christian mechanism alleged to cultivate dangerous assent."}],
+      "attributionConfidence": "medium", "attributionRationale": "This is an extended Aron turn in cross-examination, but rolling captions and the question boundary warrant verification.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The salvation-versus-morality contrast is clear, though the surrounding spoken syntax is compressed."
+    },
+    {
+      "moveId": "con-faith-means-commitment", "sectionId": "faith-epistemology", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1214, "endEvent": 1251},
+      "quoteEligibleExactSpans": ["faith is means commitment or assurance not blind belief", "faith is understood more or less as a response to Revelation"],
+      "claimSummary": "The Greek term for biblical faith means commitment, assurance, loyalty, or confidence rather than belief against evidence.",
+      "reasonSummary": "Jones appeals to a lexical authority, Acts, Peter, and usage in ancient Greek literature, comparing faithfulness to commitment to a spouse.",
+      "inferenceSummary": {"premise": "Relevant lexical and textual uses treat pistis as assurance or commitment.", "inference": "A definition of faith as inherently irrational is not established by the biblical vocabulary.", "conclusion": "Christian faith does not by definition require rejection of evidence."},
+      "burdenContact": {"bridgeId": "con-faith-evidence", "tier": "subsidiary", "rationale": "This directly disputes the affirmative's definition of faith as an evidence-denying practice."},
+      "importance": 3, "importanceRationale": "The lexical dispute anchors Jones's answer to the affirmative's broad epistemic-danger theory.",
+      "respondsToIds": ["pro-faith-denies-evidence"], "responseComponents": [{"targetMoveId": "pro-faith-denies-evidence", "component": "definition of faith", "description": "Counters that biblical pistis denotes commitment or assurance rather than belief without evidence."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Automatic captions inconsistently render the Greek word, so the exact transliteration needs audio or source verification though the semantic claim is clear."
+    },
+    {
+      "moveId": "con-thomas-evidence-context", "sectionId": "faith-epistemology", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1252, "endEvent": 1295},
+      "quoteEligibleExactSpans": ["Thomas doubted in spite of evidence", "all the people livid were given evidence to trust God"],
+      "claimSummary": "Doubting Thomas and Hebrews 11 do not commend evidence-free belief; their contexts presuppose evidence and reasoned trust.",
+      "reasonSummary": "Jones says Thomas had the empty tomb and corroborating witnesses, while Hebrews describes assurance concerning hoped-for promises given to people who had reason to trust God.",
+      "inferenceSummary": {"premise": "The cited biblical characters possessed evidence before being called to trust God's promises.", "inference": "Commending trust beyond immediate sight is not the same as commanding belief with no evidence.", "conclusion": "These passages do not support the claim that Christianity opposes reason."},
+      "burdenContact": {"bridgeId": "con-scriptural-context", "tier": "central", "rationale": "This provides passage-specific context against a major affirmative example of blind faith."},
+      "importance": 2, "importanceRationale": "It tests the general lexical defense against the principal New Testament examples discussed in the debate.",
+      "respondsToIds": ["pro-faith-denies-evidence"], "responseComponents": [{"targetMoveId": "pro-faith-denies-evidence", "component": "biblical support for blind belief", "description": "Argues that Thomas and Hebrews depict trust on prior evidence rather than evidence-free assent."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The argument is clear, but event 1282 contains a meaningful automatic-caption error ('livid') in the supporting sentence."
+    },
+    {
+      "moveId": "pro-secular-societies-fare-better", "sectionId": "social-outcomes", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 619, "endEvent": 648},
+      "quoteEligibleExactSpans": ["there's a negative correlation between religiosity and what we typically think of as moral behavior", "high violent crime rates high infant mortality rates high poverty rates"],
+      "claimSummary": "More secular societies tend to outperform highly religious societies on peace, prosperity, rights, education, health, and corruption.",
+      "reasonSummary": "Aron cites studies and Phil Zuckerman's comparative claim while acknowledging exceptions such as Vietnam and China.",
+      "inferenceSummary": {"premise": "Cross-national patterns associate secularization with favorable social indicators and high religiosity with multiple adverse indicators.", "inference": "Broad outcome patterns count against the claim that religion is needed for morality and support concern about religious influence.", "conclusion": "Comparative social evidence supports Christianity's danger case."},
+      "burdenContact": {"bridgeId": "pro-social-harm", "tier": "subsidiary", "rationale": "This is the affirmative's principal comparative empirical bridge from religiosity to social harm."},
+      "importance": 2, "importanceRationale": "Jones later addresses this evidence specifically, making it an independently contested empirical move.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The variables, direction of association, and express exceptions are intelligible."
+    },
+    {
+      "moveId": "con-meta-analyses-benefits", "sectionId": "social-outcomes", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 826, "endEvent": 918},
+      "quoteEligibleExactSpans": ["the overwhelming consensus in scientific literature is resounding no", "intrinsic religiosity is a deterrent for crime"],
+      "claimSummary": "Meta-analytic literature generally associates intrinsic religiosity with beneficial rather than dangerous outcomes.",
+      "reasonSummary": "Jones cites syntheses on crime, cancer health, mental health, delinquency, drug use, well-being, and prosocial priming, emphasizing that meta-analysis aggregates divergent studies.",
+      "inferenceSummary": {"premise": "Multiple meta-analyses report beneficial associations between intrinsic religiosity and social, health, or psychological outcomes.", "inference": "Aggregated peer-reviewed evidence is more reliable than selected anecdotes or studies for the general trend.", "conclusion": "The broad scientific record does not warrant calling Christianity dangerous."},
+      "burdenContact": {"bridgeId": "con-empirical-benefits", "tier": "central", "rationale": "This is the negative's main affirmative evidence that intrinsic religiosity has generally favorable measured outcomes."},
+      "importance": 3, "importanceRationale": "The cited meta-analyses form the empirical centerpiece of Jones's case.",
+      "spanLengthRationale": "The contiguous span is needed to preserve both the range of independently named meta-analyses and Jones's stated reason for preferring their aggregated trend.",
+      "respondsToIds": ["pro-secular-societies-fare-better"], "responseComponents": [{"targetMoveId": "pro-secular-societies-fare-better", "component": "empirical general trend", "description": "Counters country-level adverse correlations with aggregate studies of intrinsic religiosity reporting beneficial outcomes."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "Study domains and claimed association directions are repeated clearly, notwithstanding minor title transcription errors."
+    },
+    {
+      "moveId": "con-country-comparison-confounded", "sectionId": "social-outcomes", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1357, "endEvent": 1399},
+      "quoteEligibleExactSpans": ["we have to do multivariate analysis of people in these countries", "persons who are most religious commit crimes at lower rates"],
+      "claimSummary": "Country-level secular-versus-religious comparisons cannot isolate religion's effects without multivariate individual-level analysis.",
+      "reasonSummary": "Jones calls Gregory Paul's comparison univariate and contrasts it with individual-level evidence associating greater religiosity with lower crime.",
+      "inferenceSummary": {"premise": "Countries differ in many variables, so visual cross-country comparison cannot identify religion as the cause of outcome differences.", "inference": "Individual-level, controlled measures are better suited to testing whether religiosity predicts harm.", "conclusion": "Aron's comparative-country evidence does not establish that Christianity is dangerous."},
+      "burdenContact": {"bridgeId": "con-empirical-benefits", "tier": "central", "rationale": "This challenges the affirmative's empirical design while offering a more directly targeted level of analysis."},
+      "importance": 2, "importanceRationale": "It is Jones's specific methodological rebuttal to Aron's cited secular-country pattern.",
+      "respondsToIds": ["pro-secular-societies-fare-better"], "responseComponents": [{"targetMoveId": "pro-secular-societies-fare-better", "component": "cross-national inference", "description": "Argues that the country comparison is univariate and confounded, and should be replaced by individual-level multivariate analysis."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The methodological contrast and lower-crime finding are explicit despite some automatic-caption name errors."
+    },
+    {
+      "moveId": "pro-faith-healing-child-deaths", "sectionId": "science-health", "side": "pro", "speaker": "Aron Ra", "moveKind": "constructive",
+      "sourceSpan": {"startEvent": 567, "endEvent": 581},
+      "quoteEligibleExactSpans": ["we've seen hundreds of children die in this country", "their parents prayed over them but denied the medicine"],
+      "claimSummary": "Christian faith can become lethally dangerous when parents substitute prayer for effective medical treatment of children.",
+      "reasonSummary": "Aron alleges that hundreds of children died from easily treatable conditions because parents relied on hoped-for supernatural intervention and withheld medicine.",
+      "inferenceSummary": {"premise": "Some parents deny effective medicine because they expect prayer to produce a cure.", "inference": "Replacing tested treatment with supernatural expectation exposes dependent children to avoidable death.", "conclusion": "Christian faith can cause concrete health danger."},
+      "burdenContact": {"bridgeId": "pro-science-health", "tier": "subsidiary", "rationale": "This is a direct belief-to-treatment-to-death causal chain rather than a general association."},
+      "importance": 2, "importanceRationale": "It supplies one of the clearest concrete mechanisms linking faith-based evidence rejection to physical harm.",
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is within Aron's uninterrupted opening.",
+      "materialWordingConfidence": "high", "materialWordingRationale": "The asserted conduct, condition treatability, and consequence are clear."
+    },
+    {
+      "moveId": "con-evolution-not-necessary-rejection", "sectionId": "science-health", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1116, "endEvent": 1193},
+      "quoteEligibleExactSpans": ["53 percent of Christians accept evolution", "literal interpretations of Genesis were not an essential part of Christianity"],
+      "claimSummary": "Christianity does not necessarily cause rejection of evolution.",
+      "reasonSummary": "Jones cites majority Christian acceptance of evolution, traces modern young-earth creationism chiefly through Seventh-day Adventist influence, and notes early church allegorical readings of Genesis.",
+      "inferenceSummary": {"premise": "Many Christians accept evolution, and literal young-earth readings are neither historically universal nor essential to Christianity.", "inference": "A consequence that is absent among a majority and not doctrinally necessary cannot simply be attributed to Christianity itself.", "conclusion": "Evolution rejection does not establish Christianity as dangerous."},
+      "burdenContact": {"bridgeId": "con-science-compatibility", "tier": "subsidiary", "rationale": "This uses polling and doctrinal history to contest necessary Christian hostility to evolution."},
+      "importance": 2, "importanceRationale": "It is the negative's most developed science-compatibility example.",
+      "spanLengthRationale": "The full span is required to keep together the poll result, the proposed historical source of modern creationism, and evidence of older nonliteral Christian readings.",
+      "respondsToIds": ["pro-faith-denies-evidence"], "responseComponents": [{"targetMoveId": "pro-faith-denies-evidence", "component": "Christian denial of natural science", "description": "Counters the evolution example with majority acceptance and a history showing literal Genesis is not essential Christianity."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The polling and historical thesis are clear, but several proper names and denominational terms are distorted by captions."
+    },
+    {
+      "moveId": "con-climate-belief-poll", "sectionId": "science-health", "side": "con", "speaker": "Michael Jones", "moveKind": "reply",
+      "sourceSpan": {"startEvent": 1457, "endEvent": 1482},
+      "quoteEligibleExactSpans": ["evangelicals fifty-one percent except", "no evidence that any of our measures of religiosity intensify"],
+      "claimSummary": "Polling and consumer-behavior research do not show that Christian religiosity causes rejection of climate science or environmental action.",
+      "reasonSummary": "Jones cites majority acceptance of anthropogenic climate change across Catholic, Protestant, and evangelical groups and a study associating religious identity and attendance with environmentally friendly consumption.",
+      "inferenceSummary": {"premise": "Majorities in named Christian groups accept anthropogenic climate change, and religiosity measures did not intensify conservative opposition in the cited study.", "inference": "These patterns are inconsistent with a simple causal claim that Christianity produces environmental denial.", "conclusion": "The climate example does not establish intrinsic Christian danger."},
+      "burdenContact": {"bridgeId": "con-science-compatibility", "tier": "subsidiary", "rationale": "This directly answers the affirmative's environmental-danger example with targeted polling and study evidence."},
+      "importance": 1, "importanceRationale": "It is a distinct supporting application of the negative's broader causation standard.",
+      "respondsToIds": ["pro-faith-healing-child-deaths"], "responseComponents": [{"targetMoveId": "pro-faith-healing-child-deaths", "component": "general science-rejection mechanism", "description": "While addressing climate rather than medicine, it contests the broader inference that Christian religiosity normally drives rejection of science-informed conduct."}],
+      "attributionConfidence": "high", "attributionRationale": "This is within Jones's uninterrupted opening.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Event 1464 captions 'accept' as 'except', a meaningful wording error, though the surrounding percentages and argument reveal the intended claim."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {"totalAbsoluteDifference": 3, "sectionAbsoluteDifference": 2},
+    "totals": {"pro": 10, "con": 10, "absoluteDifference": 0},
+    "sections": [
+      {"sectionId": "causal-burden", "pro": 2, "con": 2, "absoluteDifference": 0},
+      {"sectionId": "scripture-violence", "pro": 2, "con": 1, "absoluteDifference": 1},
+      {"sectionId": "political-rights", "pro": 2, "con": 1, "absoluteDifference": 1},
+      {"sectionId": "faith-epistemology", "pro": 2, "con": 2, "absoluteDifference": 0},
+      {"sectionId": "social-outcomes", "pro": 1, "con": 2, "absoluteDifference": 1},
+      {"sectionId": "science-health", "pro": 1, "con": 2, "absoluteDifference": 1}
+    ],
+    "rationaleRequired": false,
+    "rationale": "The inventory is exactly balanced overall; one-card section differences reflect the source's distinct argument density and remain below the frozen thresholds."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {"sectionId": "causal-burden", "pro": 2, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The paired claims belong together because they define and contest the motion's causal burden."},
+      {"sectionId": "scripture-violence", "pro": 2, "con": 1, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The claims belong together because they dispute whether violent texts remain operative Christian prescriptions."},
+      {"sectionId": "political-rights", "pro": 2, "con": 1, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The claims belong together because political coercion and discrimination are answered by the misuse distinction."},
+      {"sectionId": "faith-epistemology", "pro": 2, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The claims belong together because definitions of faith and contextual biblical examples bear on evidence-responsive belief."},
+      {"sectionId": "social-outcomes", "pro": 1, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The claims belong together because they contrast country comparisons with meta-analytic and individual-level outcome evidence."},
+      {"sectionId": "science-health", "pro": 1, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The claims belong together because medicine, evolution, and climate are practical tests of alleged Christian science rejection."}
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "fullTranscriptCoverageAudit": {
+    "assessedWindowOnly": true,
+    "reviewOfExcludedRecording": false,
+    "intervals": [
+      {"startEvent": 36, "endEvent": 691, "moveIds": ["pro-recurring-doctrine-linked-harms", "pro-biblical-violent-commands", "pro-christian-persecution-history", "pro-state-religion-oppression", "pro-religious-right-discrimination", "pro-faith-denies-evidence", "pro-secular-societies-fare-better", "pro-faith-healing-child-deaths"], "reason": "Aron's complete opening was reviewed; listed moves capture selected substantive arguments while unselected examples, elaboration, rhetoric, and repetition remain covered but unscored."},
+      {"startEvent": 692, "endEvent": 714, "moveIds": [], "reason": "Applause, moderator travel remarks, speaker introduction, and timer transition are procedural and unscored."},
+      {"startEvent": 715, "endEvent": 1528, "moveIds": ["con-attribution-standard", "con-faith-means-commitment", "con-thomas-evidence-context", "con-old-covenant-not-prescriptive", "con-meta-analyses-benefits", "con-country-comparison-confounded", "con-evolution-not-necessary-rejection", "con-climate-belief-poll"], "reason": "Jones's complete opening was reviewed; listed moves capture selected substantive arguments while greetings, study-list elaboration, repetition, and closing presentation remarks remain covered but unscored."},
+      {"startEvent": 1529, "endEvent": 1539, "moveIds": [], "reason": "Music, applause, moderator instructions, break notice, and transition into cross-examination are procedural and unscored."},
+      {"startEvent": 1540, "endEvent": 2444, "moveIds": ["pro-required-belief-danger", "pro-salvation-rewards-gullibility", "con-truth-distinct-from-danger", "con-radical-misuse-not-intrinsic"], "reason": "The complete approved cross-examination was reviewed; selected exchanges preserve its main added arguments, while repeated challenges, short clarifications, examples, and mixed-voice transitions remain covered but unscored."}
+    ]
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "completeTranscriptMeans": "complete approved formal-rounds transcript",
+    "allSpansSourceExact": true,
+    "scoreBlind": true,
+    "noOutcomePredetermined": true,
+    "noAudienceOrHostCredit": true
+  }
+}

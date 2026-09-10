@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0-standalone-publication-copyedit-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[0].exchanges[0].con.critique",
+        "candidate.sections[0].exchanges[2].pro.critique"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[0].exchanges[3].pro.critique",
+        "candidate.sections[1].exchanges[0].con.critique"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[1].exchanges[1].pro.critique",
+        "candidate.sections[1].exchanges[2].pro.critique"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.sections[3].exchanges[0].pro.critique",
+        "candidate.sections[3].exchanges[1].pro.critique"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.sections[3].exchanges[2].con.critique",
+        "candidate.sections[4].exchanges[1].con.critique"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 6,
+      "fields": [
+        "candidate.sections[4].exchanges[2].pro.critique",
+        "candidate.quotes.pro.context"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 7,
+      "fields": [
+        "candidate.overall.pro.strengths[0]",
+        "candidate.overall.con.strengths[2]"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 8,
+      "fields": [
+        "sourceQuoteAudit[0].sourcePath",
+        "sourceQuoteAudit[1].sourcePath"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 9,
+      "fields": [
+        "candidate.logicalExtension.pro.finalArgument.notice",
+        "candidate.logicalExtension.con.finalArgument.notice"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "descriptionChanges": 0,
+    "critiqueChanges": 11,
+    "quoteTextChanges": 0,
+    "quoteContextChanges": 1,
+    "overallItemChanges": 2,
+    "sourceQuotePathCorrections": 2,
+    "noticeCorrections": 2,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/preserved-output-before-copyedit.json",
+      "sha256": "b6e5f287227ca0eab8a2e6731f0ed3520198866a490bc628973f660d5e6cf9ac",
+      "bytes": 60794
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/output.json",
+      "sha256": "21b08b21f04b79d2914116291e8178663d00d80579acf64faa0a35080b3a43a1",
+      "bytes": 62745
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/content-parity-audit.json",
+      "sha256": "d19df9bb51325b4afb1a5dea974df16782b9d2c6ea2dd5219121d338a69ed9d4",
+      "bytes": 6375
+    },
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/copyedit-1/execution.json",
+      "sha256": "6d6ad08acf9670567dde40110e6c8057050f8da79eb357608b199669ce732ba8",
+      "bytes": 11618
+    },
+    "editorialReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/editorial-review.json",
+      "sha256": "dad62cdc63900af53e3c59a01d042597e4af92b1dd39dd37e77b1662b47cd2a1",
+      "bytes": 2768
+    }
+  }
+}

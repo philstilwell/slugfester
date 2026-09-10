@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-09T20:48:26.596Z",
+  "repositoryBaseline": {
+    "branch": "codex/debate-256",
+    "head": "758078771a995b0154ac8564c1e549751eda0dbb",
+    "localMain": "758078771a995b0154ac8564c1e549751eda0dbb",
+    "originMain": "758078771a995b0154ac8564c1e549751eda0dbb",
+    "clean": true,
+    "isolationReason": "New working copy from synchronized clean main; unrelated unfinished working copies preserved."
+  },
+  "identity": {
+    "debateNumber": "256",
+    "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+    "videoId": "bQBFY1z_RvI",
+    "canonicalUrl": "https://www.youtube.com/watch?v=bQBFY1z_RvI",
+    "sourceTitle": "Is Christianity Dangerous? - BBC Debate",
+    "eventYear": 2019,
+    "uploadDate": "2019-06-28",
+    "title": "Aron Ra vs Michael Jones — Is Christianity dangerous? (2019, formal rounds)",
+    "label": "Christianity and public harm",
+    "topicCategory": "religion-society-public-reason",
+    "motion": "Is Christianity dangerous?",
+    "pro": {
+      "speaker": "Aron Ra",
+      "position": "Christianity poses serious dangers"
+    },
+    "con": {
+      "speaker": "Michael Jones",
+      "position": "Christianity is not intrinsically dangerous"
+    },
+    "moderator": "Moderator (formal-round procedural role only)",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": false
+    },
+    "formalRoundsScope": {
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/source/formal-rounds-authorization.json",
+        "sha256": "b8f05192d33cbcb00fa962505bb6a9e78f28e3b97a33e860b02ff847eeec7fc2",
+        "bytes": 2418
+      },
+      "assessedWindow": {
+        "startEvent": 36,
+        "endEvent": 2444,
+        "startMs": 119670,
+        "endMs": 5242429,
+        "durationMs": 5122759
+      },
+      "scope": "Only the opening statements and cross-examination are assessed. Introductory material, all audience questions and answers, and both closing statements delivered after the Q&A are excluded. Procedural transitions within the approved window are not scored.",
+      "requiredReaderDisclosure": "Only the opening statements and cross-examination (1:59–1:27:22) are assessed. All subsequent audience questions and answers, and both speakers' later closing statements, are excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+      "allSubsequentQAndAExcluded": true,
+      "allLaterClosingStatementsExcluded": true,
+      "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-256",
+    "docs/assessment-ledgers/aron-ra-jones-christianity-dangerous-formal-rounds-2019.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/transcript-corpus",
+    "src/data/debates.js",
+    "src/data/debate-index.js",
+    "src/data/debate-details",
+    "debate",
+    "interlocutors",
+    "topics",
+    "search",
+    "rankings",
+    "index.html",
+    "sitemap.xml",
+    "output/playwright/standalone-debate-v1/debate-256",
+    "generated site output belonging to this addition"
+  ]
+}

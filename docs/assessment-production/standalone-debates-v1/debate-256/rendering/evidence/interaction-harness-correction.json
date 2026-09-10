@@ -1,0 +1,10 @@
+{
+  "status": "verification-harness-corrected-without-site-change",
+  "issue": "The phone check expected CSS visibility:hidden, but the site's established hiding mechanism is opacity:0 with pointer-events:none. The first distant click had already opened the AI section and cleared the critique visually.",
+  "rejectedLog": "mobile.interactions.transport.log",
+  "preservedController": "preserved-initial-interaction-controller.mjs.txt",
+  "correction": "Wait for the actual hidden, non-intercepting CSS state and replay the complete interaction with new evidence paths. Wait for transition completion before the AI screenshot.",
+  "siteChanges": 0,
+  "assessmentChanges": 0,
+  "testLimitsChanged": false
+}

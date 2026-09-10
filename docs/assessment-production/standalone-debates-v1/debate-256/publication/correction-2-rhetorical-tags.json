@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "21b08b21f04b79d2914116291e8178663d00d80579acf64faa0a35080b3a43a1",
+    "bytes": 62745
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[0].exchanges[2].pro.tags",
+        "candidate.sections[1].exchanges[0].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[1].exchanges[0].con.tags",
+        "candidate.sections[1].exchanges[1].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[4].exchanges[0].pro.tags",
+        "candidate.overall.pro.blunders[0].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.overall.pro.blunders[2].links",
+        "candidate.overall.con.blunders[1].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 8,
+    "acceptedTagCount": 5,
+    "overallBlunderLinkChanges": 3,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/output.json",
+      "sha256": "3b38f2183e31658b66de320412a77c0f9d5aff838b708911fc17e1d33a427c45",
+      "bytes": 65018
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-audit.json",
+      "sha256": "9eb7298e10cb64435d01a0ee4a9245722c4775a4b71d429d159643688f3ac5b0",
+      "bytes": 99414
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/final-definition-check.json",
+      "sha256": "0ec98a4fe4f848e16f704b045f773543318cff9cf8717745f0452dadd5f02bd8",
+      "bytes": 74386
+    }
+  }
+}

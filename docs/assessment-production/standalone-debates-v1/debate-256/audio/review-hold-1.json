@@ -1,0 +1,959 @@
+{
+  "schemaVersion": "1.0-standalone-audio-review-hold",
+  "status": "blocked-pending-authorized-frozen-inventory-correction",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "videoId": "bQBFY1z_RvI",
+  "recordedAt": "2026-09-09T22:17:58.416Z",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/plan.json",
+    "sha256": "22d60bd550da080a0d5ad825a356424080f50c990a7b6191e43f4f325dedf948",
+    "bytes": 10035
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json",
+    "sha256": "043c316139278a1fceeeb533212b27feb9570f67cadc289cfe3d7bf64e566b0b",
+    "bytes": 111238
+  },
+  "manifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/manifest.json",
+    "sha256": "dbd40e761565c540feee4eb98329b1f139427ce242ac71a3f07f355e175b58d6",
+    "bytes": 9164
+  },
+  "reviewMethod": "Controller comparison of all required known-speaker audio-transcription responses with the corresponding complete selected caption spans. This records transcription-based source verification, not independent fact-checking of participants' empirical claims.",
+  "checks": [
+    {
+      "moveId": "pro-faith-rejects-scientific-evidence",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The complete clip identifies Aron Ra throughout his uninterrupted opening and confirms the explicit contrast between religious faith, ordinary trust and scientific evidence, followed by the claimed danger to reasoning. The recording transcript clarifies the caption's malformed phrase as man-made mythology without changing the locked argument. His references to logical fallacies and authority are his claims, not assessor tags. Overlapping transcription chunks repeat drinking and the phrase about good reason; the first complete segment says for no good reason, so the truncated repeated chunk must not be scored as a reversal or contradiction.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Overlapping automatic chunks repeat while drinking; this is not a repeated argumentative move.",
+          "startSeconds": 38.612,
+          "endSeconds": 47.982
+        },
+        {
+          "reason": "Overlapping chunk at 77.108 begins for good reason after the complete preceding for no good reason; do not treat this clipped repetition as a participant contradiction.",
+          "startSeconds": 77.108,
+          "endSeconds": 79.958
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-01.json",
+        "sha256": "495d1c3d4c8aade9579eb342db6fbcf0a69454cfa7e7532c4f5fdc139b85e1f6",
+        "bytes": 6549
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-01.mp3",
+        "sha256": "7451c302edbcf47990ec530aaa953b0767efb7faa5b1fe693c99007ff92576c7",
+        "bytes": 709488,
+        "startMs": 1215100,
+        "endMs": 1303659
+      },
+      "originalTimestampOffsetMs": 1215100
+    },
+    {
+      "moveId": "pro-secular-country-outcomes",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The audio transcription identifies Aron Ra and explicitly restores tend to be where the canonical caption reads ten be. It confirms his comparative claim across crime, welfare, rights and health, attribution to Phil Zuckerman, and the stated Vietnam and China exceptions. These qualifications must be retained when assessing the generalization. The clip's introductory abortion material and closing prisoner-treatment example are padding, not additions to this selected move. A chunk boundary repeats violent crime; it does not create a second claim or a participant error.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Partial violent cr at the end of one segment overlaps the following violent crime rates continuation; not a speaker reasoning defect.",
+          "startSeconds": 57.94,
+          "endSeconds": 60.04
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-02.json",
+        "sha256": "657019f6ab6d55b0c17ec2f623a9b960021caae63a383986c8b9d4574aaf782e",
+        "bytes": 6366
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-02.mp3",
+        "sha256": "e8334ffe6bd47acb2bca66e1f314dde89ced03e9be9f8a1527660959dfcfdf48",
+        "bytes": 579024,
+        "startMs": 1392009,
+        "endMs": 1464260
+      },
+      "originalTimestampOffsetMs": 1392009
+    },
+    {
+      "moveId": "con-attribution-and-necessary-cause",
+      "status": "confirmed",
+      "confirmedSpeaker": "Michael Jones",
+      "rationale": "The full clip identifies Michael Jones and confirms his distinction between Christians committing harms and Christianity causing them. It preserves his explicit necessarily language, the interpretation-to-prevalence-to-harm chain, and the comparison with an atheism/autism association that he expressly denies is causal. The recording verifies what causal standard Jones asserted; it does not replace the frozen neutral motion with that stronger wording. Variant transcriptions of Aron's name and the introductory thank-you are not substantive errors by either participant.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Aaron, Oren, RN and R_ are transcription variants of the referenced opponent's name, not different participants or changes of referent."
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-03.json",
+        "sha256": "19eb8138ff987cb8eece015cd4f9f0078eae126fc97424f04c6a83882e963dc3",
+        "bytes": 13224
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-03.mp3",
+        "sha256": "eb6aa5831f296dcca25426de82070386ebc986f11c5c0d5fe96045e851f4301d",
+        "bytes": 1707120,
+        "startMs": 1662769,
+        "endMs": 1876020
+      },
+      "originalTimestampOffsetMs": 1662769
+    },
+    {
+      "moveId": "con-evolution-rejection-not-essential",
+      "status": "confirmed",
+      "confirmedSpeaker": "Michael Jones",
+      "rationale": "The recording transcript identifies Michael Jones and confirms his concession that many Christians reject evolution, the 53/57-percent polling comparison, and the contrast between Christianity generally and modern Seventh-day Adventist creationism. Names garbled in the captions are intelligibly transcribed as Ronald Numbers, George McCready Price and Ellen G. White, while the earlier allegorical-reading argument remains intact. This verifies his stated historical and polling case, not the independent accuracy of those claims. The clipped introductory intelligence sentence and the isolated chunk-boundary fragment laid up are excluded as transcription/padding artifacts.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Opening padding begins inside the preceding intelligence sentence and omits its earlier negation; it is outside this selected evolution move and must not become a contradiction.",
+          "startSeconds": 0,
+          "endSeconds": 4.35
+        },
+        {
+          "reason": "Isolated laid up fragment overlaps the prior poll-data ending at an automatic chunk boundary.",
+          "startSeconds": 126.484,
+          "endSeconds": 126.784
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-04.json",
+        "sha256": "ed6469c102afe81aec2950e11aafeac0a5d24ac4a31189e20e0878ef77eed31e",
+        "bytes": 12681
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-04.mp3",
+        "sha256": "37606b5bbb96da956dcfe54471f858b3867379a96ac865b487b95d11e885d4ef",
+        "bytes": 1344816,
+        "startMs": 2484510,
+        "endMs": 2652480
+      },
+      "originalTimestampOffsetMs": 2484510
+    },
+    {
+      "moveId": "con-faith-means-committed-trust",
+      "status": "confirmed",
+      "confirmedSpeaker": "Michael Jones",
+      "rationale": "The full audio identifies Michael Jones and consistently transcribes the discussed Greek term as pistis. It confirms the contrast between commitment or assurance and blind belief, the cited Acts and Peter examples, the spouse comparison, and the claim that Thomas already had evidence. This establishes the spoken lexical argument without certifying the underlying Greek scholarship or biblical interpretation. The canonical captions remain unchanged. The overlapping phrase about Greek literature is a chunk boundary, and the following Hebrews discussion is clip padding outside this selected span.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Greek literature begins again at an overlapping transcription boundary; no additional argument or clarity penalty follows.",
+          "startSeconds": 78.36,
+          "endSeconds": 95.58
+        },
+        {
+          "reason": "The retained caption phrase faith is means is clarified by audio as faith means; avoid using the garbled caption wording as a representative quotation."
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-05.json",
+        "sha256": "f9aa0a30ea94199c29d2841b3c7bc028f7cdc55404035daeca99722d425d8854",
+        "bytes": 11172
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-05.mp3",
+        "sha256": "c4eb128bc0b44689c2bdae786e274ea8976aca3f5b05e4332b600ac04f1f80eb",
+        "bytes": 1037232,
+        "startMs": 2677289,
+        "endMs": 2806799
+      },
+      "originalTimestampOffsetMs": 2677289
+    },
+    {
+      "moveId": "pro-belief-benefit-is-placebo",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The clip separates Aron's question from Jones's ensuing answer. Aron characterizes the preceding presentation as a placebo effect, disputes its implications for conduct and truth, and names scapegoating, original sin and a global flood as allegedly dangerous beliefs. Jones begins the separate causal-study demand near the clip's end. The broken opening clause is a spoken restart plus rough captioning, not a different proposition; the recoverable challenge remains the one in the locked inventory.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Jones's reply beginning around 52.33 seconds is context for the next selected move, not part of Aron's claim.",
+          "startSeconds": 52.33,
+          "endSeconds": 62.23
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-06.json",
+        "sha256": "33b2caf185b4028c231087712df5b333a8a1517cb73c4b4693dca66e75e4ab98",
+        "bytes": 3589
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-06.mp3",
+        "sha256": "eb13e0b3dabfb24d725c14f5c3d2d5fb6a2234c190cac414dac83f968182d329",
+        "bytes": 499536,
+        "startMs": 3366720,
+        "endMs": 3429009
+      },
+      "originalTimestampOffsetMs": 3366720
+    },
+    {
+      "moveId": "pro-lacks-greek-expert-concession",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The short clip distinguishes Jones's questions from Aron's replies. Aron says he has no idea whether supporting scholars are available, invokes missionaries, and then says I don't know when Jones asks whether they are experts. Jones supplies the expert question and fair-enough response. This verifies Aron's limited knowledge concession, not a claim that no qualified scholar exists. Rapid overlapping acknowledgments produce fragmented diarized tokens, but the complete concession and its speaker remain clear.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Subsecond alternating fragments between about 8.05 and 13.15 seconds should not be treated as separate claims or relied upon as word-perfect speaker boundaries; the complete questions and replies establish the exchange.",
+          "startSeconds": 8.05,
+          "endSeconds": 13.15
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-07.json",
+        "sha256": "f9565bd9bf710ff357290ce023bcc333e3c4351c62b10aacc9c60e2a7ad44b57",
+        "bytes": 4529
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-07.mp3",
+        "sha256": "ad103feb18947b98fab5f00bd0b10b0d9275bed88ee49956da89feda812cb390",
+        "bytes": 193968,
+        "startMs": 4336280,
+        "endMs": 4360370
+      },
+      "originalTimestampOffsetMs": 4336280
+    },
+    {
+      "moveId": "pro-placebo-and-personal-experience-reply",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The audio separates Aron's placebo characterization and interpretation claims from Jones's demands for supporting studies. Aron maintains that required, uncounterable belief harms reasoning and says he has not seen the study cited on the fly. The selected claim is his response, not Jones's questions embedded in the same source span; unfamiliarity must not be reported as a demonstrated refutation of the study. The interleaved subsecond tokens do not change the clear complete clauses. The later reference to another debate is padding and supplies no additional evidence here.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Rapid alternating acknowledgments and overlapping words around 9.8–19.85 and 50.55–58.55 seconds are not reliable word-level boundaries for standalone quotations.",
+          "startSeconds": 9.8,
+          "endSeconds": 19.85
+        },
+        {
+          "reason": "Jones's new question about another debate begins after the selected reply and is not evidence for this move.",
+          "startSeconds": 81.788,
+          "endSeconds": 90.338
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-08.json",
+        "sha256": "a1ba7706fc0b68c276bd2e7a2a7ea352eceb5eba92097387dab200ef1a7b0aad",
+        "bytes": 10244
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-08.mp3",
+        "sha256": "30673bbdb2ad9ecd05bda961d98cf3191843922ec7be2b42257150fa0b8c8ecc",
+        "bytes": 724464,
+        "startMs": 4853540,
+        "endMs": 4943949
+      },
+      "originalTimestampOffsetMs": 4853540
+    },
+    {
+      "moveId": "pro-youth-homelessness-from-rejection",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The known-speaker audio transcription identifies Aron as the speaker of the 20–40 percent claim and of the proposed link between Christian parental rejection, family estrangement and gay or trans youth homelessness. Jones's preceding study question is padding, not Aron's evidence. This confirms the spoken percentage and causal assertion, not their independent factual accuracy; the statistics and causal bridge remain open to assessment.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "The preceding attentional-blink question belongs to Jones; the tiny interleaved acknowledgments are not new claims.",
+          "startSeconds": 4.994,
+          "endSeconds": 11.394
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.json",
+        "sha256": "8cc7b4d9c34b5a269fb34d3848ac7dade4e890e30c71731294dbbce79cbf879e",
+        "bytes": 23713
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-09.mp3",
+        "sha256": "7d024df0705a2b668361942cd52c8f53c90fa624027fcdebf881590c163384c7",
+        "bytes": 1719504,
+        "startMs": 5027650,
+        "endMs": 5242429
+      },
+      "originalTimestampOffsetMs": 5027650
+    },
+    {
+      "moveId": "con-cross-country-homonegativty-reply",
+      "status": "confirmed",
+      "confirmedSpeaker": "Michael Jones",
+      "rationale": "Jones presents research across 79 countries and distinguishes association from causation. He states that increased religiosity accompanies a less strong rise in homonegativity in post-communist countries, not that homonegativity declines. Aron's interjections ask whether that answers the family-rejection claim and must not be assigned to Jones. Verification establishes Jones's stated comparison, not the study's independent validity or precise research design; the short spoken title does not independently establish that it is a meta-analysis.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "An overlapping automatic chunk repeats stated that at the Allport passage boundary; do not treat it as a clarity defect.",
+          "startSeconds": 75.564,
+          "endSeconds": 95.932
+        },
+        {
+          "reason": "The tiny unattributed acknowledgment at 39.918–40.118 seconds is not evidence of a third substantive participant.",
+          "startSeconds": 39.918,
+          "endSeconds": 40.118
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.json",
+        "sha256": "8cc7b4d9c34b5a269fb34d3848ac7dade4e890e30c71731294dbbce79cbf879e",
+        "bytes": 23713
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-09.mp3",
+        "sha256": "7d024df0705a2b668361942cd52c8f53c90fa624027fcdebf881590c163384c7",
+        "bytes": 1719504,
+        "startMs": 5027650,
+        "endMs": 5242429
+      },
+      "originalTimestampOffsetMs": 5027650
+    },
+    {
+      "moveId": "pro-interpretive-variability-enables-atrocity",
+      "status": "confirmed",
+      "confirmedSpeaker": "Aron Ra",
+      "rationale": "The complete clip attributes the belief-versus-conduct objection, interpretive-variability criticism and atrocities-in-God's-name argument to Aron. Jones interrupts to deny that the interpretation or causal connection has been established; those interruptions are not premises offered by Aron. The final text-communication criticism and the claim that misuse remains relevant are recoverable. Fragmented and overlapping automatic text around the interrupted motion question must not be scored as a speaker's confused sentence, and the malformed exact caption quotation should not be selected for reader-facing use.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "The interrupted motion-question fragments around 157.108–162.158 seconds contain cross-talk and are not a word-perfect quotation.",
+          "startSeconds": 157.108,
+          "endSeconds": 162.158
+        },
+        {
+          "reason": "The retained caption string people will do it commit all kinds of atrocities is clarified in the audio transcription; do not choose the malformed caption as a representative quotation."
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.json",
+        "sha256": "8cc7b4d9c34b5a269fb34d3848ac7dade4e890e30c71731294dbbce79cbf879e",
+        "bytes": 23713
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-09.mp3",
+        "sha256": "7d024df0705a2b668361942cd52c8f53c90fa624027fcdebf881590c163384c7",
+        "bytes": 1719504,
+        "startMs": 5027650,
+        "endMs": 5242429
+      },
+      "originalTimestampOffsetMs": 5027650
+    },
+    {
+      "moveId": "con-words-do-not-cause-deliberate-misuse",
+      "status": "blocked-material-inventory-misattribution",
+      "confirmedSpeaker": "Michael Jones",
+      "rationale": "Jones owns the misuse hypothetical and causal claim, but the inventory incorrectly reports that Aron concedes the causal principle. The audio transcription assigns Aron's response to a question about whether he advocated violence and a denial of having done so. Jones, not Aron, supplies the agreeing words. The selected analogy can remain an argument by Jones, but the reason summary, importance rationale and two confidence rationales cannot represent a direct concession by Aron. This is material frozen-inventory substance, so primary judgments remain blocked pending specific correction authority.",
+      "excludedTranscriptionArtifacts": [
+        {
+          "reason": "Subsecond interleaving at the final denial must be read with the complete speaker turns; the full final affirmation is assigned to Michael Jones.",
+          "startSeconds": 203.586,
+          "endSeconds": 211.618
+        },
+        {
+          "reason": "The moderator's Alright, that's it is a logistical close, not a new argument or an additional advocate.",
+          "startSeconds": 212.218,
+          "endSeconds": 212.918
+        }
+      ],
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.json",
+        "sha256": "8cc7b4d9c34b5a269fb34d3848ac7dade4e890e30c71731294dbbce79cbf879e",
+        "bytes": 23713
+      },
+      "clip": {
+        "path": "output/transcribe/debate256-verification-1/clips/clip-09.mp3",
+        "sha256": "7d024df0705a2b668361942cd52c8f53c90fa624027fcdebf881590c163384c7",
+        "bytes": 1719504,
+        "startMs": 5027650,
+        "endMs": 5242429
+      },
+      "originalTimestampOffsetMs": 5027650
+    }
+  ],
+  "finding": {
+    "moveId": "con-words-do-not-cause-deliberate-misuse",
+    "kind": "incorrect-explicit-concession-attribution",
+    "affectedFields": [
+      "reasonSummary",
+      "importanceRationale",
+      "attributionRationale",
+      "materialWordingRationale"
+    ],
+    "currentFalseClaim": "Jones asks whether a future viewer's violent misuse of Aron's words would make Aron responsible; Aron agrees it would not.",
+    "sourceSpans": [
+      {
+        "speaker": "Michael Jones",
+        "segmentIds": [
+          "seg_70",
+          "seg_71"
+        ],
+        "startSeconds": 188.586,
+        "endSeconds": 193.936,
+        "meaning": "Asks whether someone misinterpreting Aron's words to persecute or kill Christians means Aron's words caused it.",
+        "absoluteStartMs": 5216236,
+        "absoluteEndMs": 5221586
+      },
+      {
+        "speaker": "Aron Ra",
+        "segmentIds": [
+          "seg_72",
+          "seg_74"
+        ],
+        "startSeconds": 193.936,
+        "endSeconds": 198.436,
+        "meaning": "Asks whether he gave any impression of advocating persecution or killing of Christians.",
+        "absoluteStartMs": 5221586,
+        "absoluteEndMs": 5226086
+      },
+      {
+        "speaker": "Michael Jones",
+        "segmentIds": [
+          "seg_75"
+        ],
+        "startSeconds": 198.436,
+        "endSeconds": 203.036,
+        "meaning": "Says no and asserts that people can misinterpret words for their advantage.",
+        "absoluteStartMs": 5226086,
+        "absoluteEndMs": 5230686
+      },
+      {
+        "speaker": "Aron Ra",
+        "segmentIds": [
+          "seg_76",
+          "seg_78",
+          "seg_80",
+          "seg_82"
+        ],
+        "startSeconds": 203.586,
+        "endSeconds": 209.286,
+        "meaning": "Denies ever advocating violence.",
+        "absoluteStartMs": 5231236,
+        "absoluteEndMs": 5236936
+      },
+      {
+        "speaker": "Michael Jones",
+        "segmentIds": [
+          "seg_77",
+          "seg_79",
+          "seg_81",
+          "seg_83"
+        ],
+        "startSeconds": 206.486,
+        "endSeconds": 211.618,
+        "meaning": "Agrees with Aron's denial; the full final affirmation belongs to Jones.",
+        "absoluteStartMs": 5234136,
+        "absoluteEndMs": 5239268
+      }
+    ],
+    "assessmentRisk": "A supposed opponent concession could improperly strengthen the reply assessment, importance rationale or burden-completion judgment."
+  },
+  "proposedRepair": {
+    "authorized": false,
+    "applied": false,
+    "scope": "One source-grounded correction to four explanatory fields of this one inventory move, preserving all prior inventory versions and audio records. No new inventory selection or paid transcription.",
+    "fields": [
+      {
+        "moveId": "con-words-do-not-cause-deliberate-misuse",
+        "field": "reasonSummary",
+        "current": "Jones asks whether a future viewer's violent misuse of Aron's words would make Aron responsible; Aron agrees it would not.",
+        "proposed": "Jones tests responsibility for scriptural misuse against a hypothetical violent misuse of Aron's words; Aron denies advocating violence, and Jones agrees with that denial rather than receiving an explicit concession on causation."
+      },
+      {
+        "moveId": "con-words-do-not-cause-deliberate-misuse",
+        "field": "importanceRationale",
+        "current": "It ends the approved exchange with a direct concession on the causal principle.",
+        "proposed": "The analogy directly answers the pro side's culminating claim about responsibility for interpretive danger, but the exchange does not establish an explicit concession by Aron on the causal principle."
+      },
+      {
+        "moveId": "con-words-do-not-cause-deliberate-misuse",
+        "field": "attributionRationale",
+        "current": "Jones poses the hypothetical and Aron supplies the concession within merged rolling captions; audio must resolve each turn.",
+        "proposed": "The verified speaker turns assign the hypothetical and causal claim to Jones, the denial of advocating violence to Aron, and the final agreement with that denial to Jones; no causal concession by Aron is established."
+      },
+      {
+        "moveId": "con-words-do-not-cause-deliberate-misuse",
+        "field": "materialWordingRationale",
+        "current": "The last captions include garbled words after the concession, requiring audio verification.",
+        "proposed": "The audio transcription resolves the garbled final captions as Aron's denial of advocating violence and Jones's affirmation of that denial; the material meaning does not establish a concession on causation."
+      }
+    ],
+    "invariants": [
+      "No change to motion, speakers, sides, source window, move IDs, move counts, section assignment, claim summary, inferential structure, response links, importance value or frozen evidence.",
+      "No assessment or scoring until a corrected inventory and dependent hash records are valid.",
+      "Preserve the superseded inventory and old manifest/plan exactly; link any newly authorized correction rather than rewriting prior evidence.",
+      "Reuse all nine successful audio responses without a new paid call."
+    ]
+  },
+  "cost": {
+    "paidCalls": 9,
+    "successfulPaidCalls": 9,
+    "failedOrUncertainCalls": 0,
+    "automaticRetries": 0,
+    "paidRetries": 0,
+    "knownSuccessfulCallCostUsd": 0.3726275,
+    "maximumPotentialCombinedCostUsd": 0.3726275,
+    "uncertainCostUsd": 0,
+    "planningAllowanceUsd": 0.975923,
+    "standingMaximumUsd": 1,
+    "receipts": [
+      {
+        "clipId": "clip-01",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-01.json",
+          "sha256": "495d1c3d4c8aade9579eb342db6fbcf0a69454cfa7e7532c4f5fdc139b85e1f6",
+          "bytes": 6549
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-01.attempt.json",
+          "sha256": "7e71e8ab8fb30e26b733316b2050385e4c18eb35aadbbf6226f0686c4015d76c",
+          "bytes": 1217
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-01.completion.json",
+          "sha256": "86138974af2f3e8bbf7e3fad2978bd6d83bf5b7627f3521b9f3a51bd732f42ce",
+          "bytes": 1032
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-01",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-01.json",
+            "sha256": "495d1c3d4c8aade9579eb342db6fbcf0a69454cfa7e7532c4f5fdc139b85e1f6",
+            "bytes": 6549
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-01.attempt.json",
+            "sha256": "7e71e8ab8fb30e26b733316b2050385e4c18eb35aadbbf6226f0686c4015d76c",
+            "bytes": 1217
+          },
+          "usage": {
+            "input_tokens": 1608,
+            "output_tokens": 2674,
+            "total_tokens": 4282,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 1488,
+              "text_tokens": 120
+            }
+          },
+          "directCostUsd": 0.03076,
+          "knownSuccessfulCumulativeCostUsd": 0.03076,
+          "responseDurationSeconds": 88.559,
+          "segments": 17,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:03:38.204Z"
+        }
+      },
+      {
+        "clipId": "clip-02",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-02.json",
+          "sha256": "657019f6ab6d55b0c17ec2f623a9b960021caae63a383986c8b9d4574aaf782e",
+          "bytes": 6366
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-02.attempt.json",
+          "sha256": "6bcccb07469acf29f25166ea652491127a18a919a7374340fc8acd6a796010cb",
+          "bytes": 1223
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-02.completion.json",
+          "sha256": "b2cf7bf191dfbd750a9f8455ee1ee348de77013135ddc4fb878ce026d11d37e4",
+          "bytes": 1035
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-02",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-02.json",
+            "sha256": "657019f6ab6d55b0c17ec2f623a9b960021caae63a383986c8b9d4574aaf782e",
+            "bytes": 6366
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-02.attempt.json",
+            "sha256": "6bcccb07469acf29f25166ea652491127a18a919a7374340fc8acd6a796010cb",
+            "bytes": 1223
+          },
+          "usage": {
+            "input_tokens": 1305,
+            "output_tokens": 2240,
+            "total_tokens": 3545,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 1213,
+              "text_tokens": 92
+            }
+          },
+          "directCostUsd": 0.0256625,
+          "knownSuccessfulCumulativeCostUsd": 0.0564225,
+          "responseDurationSeconds": 72.251,
+          "segments": 19,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:04:59.535Z"
+        }
+      },
+      {
+        "clipId": "clip-03",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-03.json",
+          "sha256": "19eb8138ff987cb8eece015cd4f9f0078eae126fc97424f04c6a83882e963dc3",
+          "bytes": 13224
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-03.attempt.json",
+          "sha256": "16db385fdced53335bad5c63bb370279f8bc2dffcd112681092c3e12a1694375",
+          "bytes": 1207
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-03.completion.json",
+          "sha256": "337a9d0c57fae412f540b6f9ac6e3a2f0f159c2aad2b2193185c82b701d1baad",
+          "bytes": 1049
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-03",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-03.json",
+            "sha256": "19eb8138ff987cb8eece015cd4f9f0078eae126fc97424f04c6a83882e963dc3",
+            "bytes": 13224
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-03.attempt.json",
+            "sha256": "16db385fdced53335bad5c63bb370279f8bc2dffcd112681092c3e12a1694375",
+            "bytes": 1207
+          },
+          "usage": {
+            "input_tokens": 3578,
+            "output_tokens": 6466,
+            "total_tokens": 10044,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 3338,
+              "text_tokens": 240
+            }
+          },
+          "directCostUsd": 0.07360499999999999,
+          "knownSuccessfulCumulativeCostUsd": 0.1300275,
+          "responseDurationSeconds": 213.251,
+          "segments": 30,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:06:32.113Z"
+        }
+      },
+      {
+        "clipId": "clip-04",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-04.json",
+          "sha256": "ed6469c102afe81aec2950e11aafeac0a5d24ac4a31189e20e0878ef77eed31e",
+          "bytes": 12681
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-04.attempt.json",
+          "sha256": "20ac199b18c5120748cc6f682ded3dc0ede84f68512b3ed75c6d105783a3b667",
+          "bytes": 1207
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-04.completion.json",
+          "sha256": "0fa138c226f2ab83a2b23fdaf8cf80c144c84f90abd2d050daf16de1c11eeddf",
+          "bytes": 1036
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-04",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-04.json",
+            "sha256": "ed6469c102afe81aec2950e11aafeac0a5d24ac4a31189e20e0878ef77eed31e",
+            "bytes": 12681
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-04.attempt.json",
+            "sha256": "20ac199b18c5120748cc6f682ded3dc0ede84f68512b3ed75c6d105783a3b667",
+            "bytes": 1207
+          },
+          "usage": {
+            "input_tokens": 2823,
+            "output_tokens": 4994,
+            "total_tokens": 7817,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 2647,
+              "text_tokens": 176
+            }
+          },
+          "directCostUsd": 0.0569975,
+          "knownSuccessfulCumulativeCostUsd": 0.187025,
+          "responseDurationSeconds": 167.97,
+          "segments": 33,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:08:04.178Z"
+        }
+      },
+      {
+        "clipId": "clip-05",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-05.json",
+          "sha256": "f9aa0a30ea94199c29d2841b3c7bc028f7cdc55404035daeca99722d425d8854",
+          "bytes": 11172
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-05.attempt.json",
+          "sha256": "f42e8d4975b5e17e18bf0f3fa6c3b3de1ad73e4309d72c87771c4c607e1402c4",
+          "bytes": 1216
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-05.completion.json",
+          "sha256": "88af03ec647c2b024cc286ed10b62c8b692b2f0755f05576481560d2188c2646",
+          "bytes": 1048
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-05",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-05.json",
+            "sha256": "f9aa0a30ea94199c29d2841b3c7bc028f7cdc55404035daeca99722d425d8854",
+            "bytes": 11172
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-05.attempt.json",
+            "sha256": "f42e8d4975b5e17e18bf0f3fa6c3b3de1ad73e4309d72c87771c4c607e1402c4",
+            "bytes": 1216
+          },
+          "usage": {
+            "input_tokens": 2305,
+            "output_tokens": 4001,
+            "total_tokens": 6306,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 2144,
+              "text_tokens": 161
+            }
+          },
+          "directCostUsd": 0.045772499999999994,
+          "knownSuccessfulCumulativeCostUsd": 0.2327975,
+          "responseDurationSeconds": 129.51,
+          "segments": 35,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:09:14.055Z"
+        }
+      },
+      {
+        "clipId": "clip-06",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-06.json",
+          "sha256": "33b2caf185b4028c231087712df5b333a8a1517cb73c4b4693dca66e75e4ab98",
+          "bytes": 3589
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-06.attempt.json",
+          "sha256": "65972d84d51db3a6decf0f46b933b6ea1d1404e1236f1f25be2496347ecf5cc1",
+          "bytes": 1206
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-06.completion.json",
+          "sha256": "8676dc4612f938cc00a39dacc6c95bd8bd2c8632d7387353e9ee5648ffae3d96",
+          "bytes": 1031
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-06",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-06.json",
+            "sha256": "33b2caf185b4028c231087712df5b333a8a1517cb73c4b4693dca66e75e4ab98",
+            "bytes": 3589
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-06.attempt.json",
+            "sha256": "65972d84d51db3a6decf0f46b933b6ea1d1404e1236f1f25be2496347ecf5cc1",
+            "bytes": 1206
+          },
+          "usage": {
+            "input_tokens": 998,
+            "output_tokens": 1696,
+            "total_tokens": 2694,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 923,
+              "text_tokens": 75
+            }
+          },
+          "directCostUsd": 0.019455,
+          "knownSuccessfulCumulativeCostUsd": 0.2522525,
+          "responseDurationSeconds": 62.289,
+          "segments": 8,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:09:39.246Z"
+        }
+      },
+      {
+        "clipId": "clip-07",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-07.json",
+          "sha256": "f9565bd9bf710ff357290ce023bcc333e3c4351c62b10aacc9c60e2a7ad44b57",
+          "bytes": 4529
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-07.attempt.json",
+          "sha256": "34afe3dc6a1ebd53cf1e6237abc42e3b9b2c83b390e9ad982fad04194ebd1a71",
+          "bytes": 1215
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-07.completion.json",
+          "sha256": "8bd9fd3fd6bd7e7bc71765c3fbe5dc4ae4f19b8bef7d9573c95d1b41712f2333",
+          "bytes": 1042
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-07",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-07.json",
+            "sha256": "f9565bd9bf710ff357290ce023bcc333e3c4351c62b10aacc9c60e2a7ad44b57",
+            "bytes": 4529
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-07.attempt.json",
+            "sha256": "34afe3dc6a1ebd53cf1e6237abc42e3b9b2c83b390e9ad982fad04194ebd1a71",
+            "bytes": 1215
+          },
+          "usage": {
+            "input_tokens": 384,
+            "output_tokens": 824,
+            "total_tokens": 1208,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 360,
+              "text_tokens": 24
+            }
+          },
+          "directCostUsd": 0.009200000000000002,
+          "knownSuccessfulCumulativeCostUsd": 0.2614525,
+          "responseDurationSeconds": 24.09,
+          "segments": 18,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:09:51.164Z"
+        }
+      },
+      {
+        "clipId": "clip-08",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-08.json",
+          "sha256": "a1ba7706fc0b68c276bd2e7a2a7ea352eceb5eba92097387dab200ef1a7b0aad",
+          "bytes": 10244
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-08.attempt.json",
+          "sha256": "460cc28321107945e452d76dbb6ac354ef69912be45946af932bb33062916487",
+          "bytes": 1206
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-08.completion.json",
+          "sha256": "2a40affa1bba0b2e8b930c2c46776c8b737ade227cc1978961c47b5e307638e8",
+          "bytes": 1035
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-08",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-08.json",
+            "sha256": "a1ba7706fc0b68c276bd2e7a2a7ea352eceb5eba92097387dab200ef1a7b0aad",
+            "bytes": 10244
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-08.attempt.json",
+            "sha256": "460cc28321107945e452d76dbb6ac354ef69912be45946af932bb33062916487",
+            "bytes": 1206
+          },
+          "usage": {
+            "input_tokens": 1490,
+            "output_tokens": 2901,
+            "total_tokens": 4391,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 1394,
+              "text_tokens": 96
+            }
+          },
+          "directCostUsd": 0.032735,
+          "knownSuccessfulCumulativeCostUsd": 0.2941875,
+          "responseDurationSeconds": 90.409,
+          "segments": 36,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:10:31.066Z"
+        }
+      },
+      {
+        "clipId": "clip-09",
+        "response": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.json",
+          "sha256": "8cc7b4d9c34b5a269fb34d3848ac7dade4e890e30c71731294dbbce79cbf879e",
+          "bytes": 23713
+        },
+        "attempt": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.attempt.json",
+          "sha256": "c8ae3daf5708409d4c02b8be675e4bbc4fa7788abfba28a689b2f676b98cacda",
+          "bytes": 1217
+        },
+        "completion": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.completion.json",
+          "sha256": "265ffc9b53afe5f6ee2c323e369c1ba351a365100723241151f33dc89662e8d4",
+          "bytes": 1037
+        },
+        "completionData": {
+          "status": "response-received-with-usage",
+          "debateNumber": "256",
+          "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+          "clipId": "clip-09",
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.json",
+            "sha256": "8cc7b4d9c34b5a269fb34d3848ac7dade4e890e30c71731294dbbce79cbf879e",
+            "bytes": 23713
+          },
+          "attempt": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/responses/clip-09.attempt.json",
+            "sha256": "c8ae3daf5708409d4c02b8be675e4bbc4fa7788abfba28a689b2f676b98cacda",
+            "bytes": 1217
+          },
+          "usage": {
+            "input_tokens": 3608,
+            "output_tokens": 6942,
+            "total_tokens": 10550,
+            "type": "tokens",
+            "input_token_details": {
+              "audio_tokens": 3358,
+              "text_tokens": 250
+            }
+          },
+          "directCostUsd": 0.07844,
+          "knownSuccessfulCumulativeCostUsd": 0.3726275,
+          "responseDurationSeconds": 214.779,
+          "segments": 85,
+          "automaticRetries": 0,
+          "completedAt": "2026-09-09T22:12:06.386Z"
+        }
+      }
+    ]
+  },
+  "gateDisposition": {
+    "requiredMoveChecks": 12,
+    "reviewedMoveChecks": 12,
+    "confirmedMoveChecks": 11,
+    "blockedMoveChecks": 1,
+    "inventoryChanged": false,
+    "judgmentsStarted": false,
+    "scorePassRun": false,
+    "publicationChanged": false,
+    "commitCreated": false,
+    "pushed": false,
+    "audioVerificationComplete": false,
+    "nextStep": "Obtain explicit authority for the proposed narrow source correction. Do not run the all-confirmed audio completion controller against this hold."
+  }
+}

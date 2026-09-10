@@ -1,0 +1,40 @@
+async (page) => {
+  const viewport=page.viewportSize().width===1440?'desktop':'mobile';
+  const number=await page.locator('.debate-hero').textContent().then(t=>t.match(/Debate\s+(\d+)/i)?.[1]);
+  if(!number)throw new Error('Current debate number not found');
+  const out=`output/playwright/standalone-debate-v1/debate-${number}`;
+  const critique=page.locator('.critique button').first(),popover=page.locator('.critique-popover').first();
+  const ai=page.locator('.ai-extension-accordion'),summary=ai.locator('summary');
+  const visible=async()=>popover.evaluate(e=>getComputedStyle(e).visibility==='visible'&&Number(getComputedStyle(e).opacity)===1);
+  const waitVisible=()=>page.waitForFunction(()=>{const e=document.querySelector('.critique-popover'),s=getComputedStyle(e);return s.visibility==='visible'&&Number(s.opacity)===1;});
+  const checks={};const paths=[];
+  if(viewport==='desktop'){
+    await critique.hover();await waitVisible();checks.critiquePointerControlPassed=await visible();
+    await page.mouse.move(5,5);await critique.focus();await critique.press('Enter');await waitVisible();checks.critiqueKeyboardEnterPassed=await visible();
+    await critique.press('Space');await waitVisible();checks.critiqueKeyboardSpacePassed=await visible();
+    await summary.focus();await summary.press('Enter');checks.aiAccordionKeyboardEnterOpened=await ai.evaluate(e=>e.open);
+    await summary.press('Space');checks.aiAccordionKeyboardSpaceClosed=!(await ai.evaluate(e=>e.open));
+    await summary.click();
+  }else{
+    await critique.click();await waitVisible();checks.critiqueOpened=await visible();
+    const shot=`${out}/mobile-critique-open.png`;await page.screenshot({path:shot,scale:'css'});paths.push(shot);
+    await summary.click();checks.firstDistantClickOpenedAI=await ai.evaluate(e=>e.open);
+    await page.waitForFunction(()=>getComputedStyle(document.querySelector('.critique-popover')).visibility==='hidden');
+    checks.critiqueClearedAfterTransition=!(await visible());
+  }
+  await page.waitForFunction(()=>document.querySelector('.ai-extension-accordion').open);
+  await summary.scrollIntoViewIfNeeded();
+  const aiShot=`${out}/${viewport}-ai-open.png`;await page.screenshot({path:aiShot,scale:'css'});paths.push(aiShot);
+  await summary.click();
+  await page.locator('.source-context').scrollIntoViewIfNeeded();
+  const scope=await page.locator('.source-context').evaluate(e=>{const r=e.getBoundingClientRect();return {text:e.textContent,visible:r.width>0&&r.height>0,insideViewport:r.left>=0&&r.right<=innerWidth,overflow:e.scrollWidth>e.clientWidth};});
+  checks.scopeDisclosureVisibleAndUnclipped=scope.visible&&scope.insideViewport&&!scope.overflow;
+  const scopeShot=`${out}/${viewport}-source-scope.png`;await page.screenshot({path:scopeShot,scale:'css'});paths.push(scopeShot);
+  if(viewport==='mobile'){
+    const link=page.locator('.argument .tag-wrap a').first();const href=await link.getAttribute('href');await link.click();await page.waitForLoadState('networkidle');
+    const hash=new URL(page.url()).hash;const target=page.locator(`[id="${decodeURIComponent(hash.slice(1))}"]`);
+    checks.referenceTarget={href,url:page.url(),exists:await target.count()===1,text:await target.textContent()};
+    const shot=`${out}/mobile-reference-target.png`;await page.screenshot({path:shot,scale:'css'});paths.push(shot);
+  }
+  return {viewport,checks,scope,screenshotPaths:paths};
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0-standalone-publication-prose-contract",
+  "requiredTopLevelFields": [
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "debateNumber",
+    "debateId",
+    "candidate",
+    "noveltyMap",
+    "sourceQuoteAudit",
+    "audit"
+  ],
+  "requiredSchemaVersion": "1.0-standalone-publication-output",
+  "moveIdsInRequiredPublicationOrder": [
+    "pro-religious-versus-political-violence",
+    "con-old-covenant-not-prescriptive",
+    "pro-scriptural-violence-commands",
+    "con-misuse-does-not-establish-intrinsic-cause",
+    "pro-secular-law-protects-liberty",
+    "pro-dissent-punished-as-capital-crime",
+    "pro-medical-deception-and-measles",
+    "con-meta-analytic-beneficial-pattern",
+    "pro-prayer-instead-of-treatment",
+    "con-cross-country-homonegativty-reply",
+    "pro-youth-homelessness-from-rejection",
+    "pro-secular-country-outcomes",
+    "con-cross-country-needs-multivariate-analysis",
+    "pro-climate-denial-policy",
+    "con-climate-acceptance-data",
+    "con-single-study-cannot-counter-meta-analysis",
+    "pro-faith-rejects-scientific-evidence",
+    "con-intelligence-correlation-is-fickle",
+    "pro-lacks-greek-expert-concession",
+    "con-evolution-rejection-not-essential",
+    "con-faith-means-committed-trust",
+    "con-medical-trust-analogy",
+    "pro-belief-benefit-is-placebo",
+    "con-attribution-and-necessary-cause",
+    "pro-placebo-and-personal-experience-reply",
+    "con-specific-beliefs-require-studies",
+    "pro-interpretive-variability-enables-atrocity",
+    "con-words-do-not-cause-deliberate-misuse"
+  ],
+  "candidateShape": {
+    "fixedFields": "Copy every packet.template field byte-for-byte.",
+    "summary": "18–28 word source-specific comparative summary.",
+    "quotes": {
+      "pro": "{text,context}",
+      "con": "{text,context}"
+    },
+    "sections": "Copy publicationLayout identities/title/timebox/score and convert rows to exchanges [{pro:card or null,con:card or null}]; cards {ledgerMoveId,time,role,words,score,critique,tags:[]} using exact moveDisplayControls. Preserve every move and per-side order.",
+    "overall": "Each side {score:locked overall score,strengths:[3 strings],blunders:[3 {text,links:[]}]}",
+    "logicalExtension": "Each side {finalArgument:{thesis,premises:[5 strings],conclusion,notice},newArguments:[3 {title,text}]}."
+  },
+  "instructions": {
+    "argumentDescriptionTargetWords": [
+      22,
+      28
+    ],
+    "argumentDescriptionAllowedWords": [
+      8,
+      55
+    ],
+    "argumentMeanMinimum": 20.875,
+    "maximumShareBelow20Words": 0.25,
+    "critiqueAllowedWords": [
+      105,
+      130
+    ],
+    "critiqueMinimumCharacters": 880,
+    "critiqueSentenceLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "summaryWords": [
+      18,
+      28
+    ],
+    "overallStrengthsPerSide": 3,
+    "overallBlundersPerSide": 3,
+    "overallItemTargetWords": [
+      18,
+      30
+    ],
+    "newArgumentsPerSide": 3,
+    "premisesPerSide": 5,
+    "representativeQuoteWords": [
+      3,
+      18
+    ],
+    "quoteContextWords": [
+      18,
+      45
+    ],
+    "tagsAndBlunderLinksMustRemainEmptyUntilRhetoricalReview": true,
+    "critiquesExactlyFourLabeledSentences": true,
+    "critiqueRationalesMustBeSourceSpecific": true,
+    "thesisMinimumWords": 12,
+    "premiseMinimumWords": 12,
+    "conclusionMinimumWords": 15,
+    "newArgumentAllowedWords": [
+      45,
+      130
+    ],
+    "newArgumentTargetWords": [
+      90,
+      120
+    ],
+    "ordinaryPunctuationRequired": true,
+    "noGenericBoilerplate": true,
+    "naturalEditorialArgumentRequired": true,
+    "provenanceLaunchersForbidden": [
+      "AI-generated extension",
+      "AI-developed extension",
+      "possible extension",
+      "AI reconstruction"
+    ],
+    "repeatedModelOrConstraintLaunchersForbidden": true,
+    "reviewBothSidesForMirroredScaffolding": true,
+    "oneSectionLevelAIDisclosureSufficient": true,
+    "quoteTextMustBeSourceExact": true,
+    "doNotSelectRepresentativeQuotationsFlaggedAsMalformedInAudioReview": true,
+    "neverSilentlyRewriteAnExactQuotation": true,
+    "critiqueTargetWords": [
+      112,
+      118
+    ],
+    "judgeOnlyActuallyEstablishedConcessions": true,
+    "noveltyMapMustDiscloseEveryAIGeneratedArgument": true,
+    "noveltyMapSourceMoveIdsRequired": true,
+    "sourceQuoteAuditMustVerifyBothQuotes": true,
+    "noManualScoreChanges": true
+  },
+  "noveltyMapShape": "8 entries total: each side finalArgument plus newArguments[0], [1], [2]. Each {side,field,path: candidate.logicalExtension.<side>.<field>,sourceMoveIds:[],explanation,hypothetical:true}.",
+  "sourceQuoteAuditShape": "2 entries: {side,speaker,moveId,text,sourcePath: original final ledger path (cite without opening original; use filtered evidence view),transcriptPath,startEvent,endEvent,startMs,endMs,quoteEligibleExactSpan,exactMatch:true}; quote text must be exact substring of that move quoteEligibleExactSpans."
+}

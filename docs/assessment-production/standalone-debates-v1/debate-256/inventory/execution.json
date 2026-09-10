@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.2-isolated-inventory-execution",
+  "status": "complete-and-schema-valid",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "agentTask": "/root/debate256_targeted_inventory_repair",
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/targeted-repair-1/packet.json",
+      "sha256": "aab7c87226862b5b04a856e87ef17bdf4f2f5d82164b9ec0e9dec361a85cfd3e",
+      "bytes": 6883
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/model-output.json",
+      "sha256": "ea8aae10d10dbf76b45b96d91c6312abc4337a00dfe92c8e85ff3433534198d8",
+      "bytes": 56462
+    },
+    {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json",
+      "sha256": "59ea491e15840642fd79422e029aad97d8d5a28995f1170cb24cc6c03bfe9913",
+      "bytes": 348100
+    },
+    {
+      "path": "scripts/tmp-standalone-repair-materializer.mjs",
+      "sha256": "20f3a38f56fd74ad17a77a97359cd8f68226addef8740b235dcb1f3b817840a9",
+      "bytes": 6002
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    }
+  ],
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/targeted-repair-1/execution-plan.json",
+    "sha256": "e9ea0132d3bc141866efdd85931ce397c1fdbd3c2414ea35c2cd2f7ce1aad5a0",
+    "bytes": 2138
+  },
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/targeted-repair-1/authorization.json",
+    "sha256": "c0a079b85809f6a5ec9234dcccfda975aefbe4e2fb1ad2bf933d2e038e6a5249",
+    "bytes": 1813
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/targeted-repair-1/recovered-model-output.json",
+    "sha256": "0701211b8cf3ded9e070a711a1932e60ea5040039d3445f2ee2017388eb6388a",
+    "bytes": 28286
+  },
+  "transportRecovery": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/targeted-repair-1/transport-recovery.json",
+    "sha256": "75874d9055a5c5a997f4b6174b54431f12cfe35648a4880100570370fdb836ad",
+    "bytes": 2841
+  },
+  "lockedInventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json",
+    "sha256": "1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918",
+    "bytes": 111673
+  },
+  "attempts": 3,
+  "originalFailedContexts": 1,
+  "failedReplacementContexts": 1,
+  "explicitlyAuthorizedTargetedRepairContexts": 1,
+  "attemptsPerContext": 1,
+  "retries": 0,
+  "preservedOutputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/model-output.json",
+      "sha256": "4267a30e8bba5d6050449f30639991c93d3a110aa1ce0fd2b910fd3865575391",
+      "bytes": 49745
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/model-output.json",
+      "sha256": "ea8aae10d10dbf76b45b96d91c6312abc4337a00dfe92c8e85ff3433534198d8",
+      "bytes": 56462
+    }
+  ],
+  "preservedHolds": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/validation-hold.json",
+      "sha256": "4c5ee9f11d53778a202806e473ed2d3f63f80009890ad2b2015745ad49625369",
+      "bytes": 6672
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/validation-hold.json",
+      "sha256": "463428c1f9d8740f6db8c0d500263e034dc397135872b8416b26ef0c176eadd9",
+      "bytes": 4965
+    }
+  ],
+  "directIncrementalCostUsd": 0,
+  "validation": {
+    "status": "passed",
+    "debateNumber": "256",
+    "sections": 5,
+    "moves": 28,
+    "belowHighAttributionMoveIds": [
+      "pro-faith-rejects-scientific-evidence",
+      "pro-secular-country-outcomes",
+      "con-attribution-and-necessary-cause",
+      "con-evolution-rejection-not-essential",
+      "con-faith-means-committed-trust",
+      "pro-belief-benefit-is-placebo",
+      "pro-lacks-greek-expert-concession",
+      "pro-placebo-and-personal-experience-reply",
+      "pro-youth-homelessness-from-rejection",
+      "con-cross-country-homonegativty-reply",
+      "pro-interpretive-variability-enables-atrocity",
+      "con-words-do-not-cause-deliberate-misuse"
+    ]
+  },
+  "completedAt": "2026-09-09T22:01:41.713Z",
+  "sourceCorrection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/audio-correction-1/correction.json",
+    "sha256": "e24c7204d29e525657ab06d60e58d01154242dfad5e7ee7d313097ad888f5e1d",
+    "bytes": 5428
+  },
+  "amendedAt": "2026-09-09T22:41:58.134Z"
+}

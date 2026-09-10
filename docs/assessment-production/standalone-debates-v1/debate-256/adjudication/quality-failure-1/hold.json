@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-adjudication-evidence-review-hold",
+  "status": "failed-required-evidence-review",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "agentTask": "/root/debate256_adjudication",
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/adjudication/output.json",
+    "sha256": "7abfb3b2f28fbebec18f704dc10a7de68d9d88c24e41e72777e6afe179672df4",
+    "bytes": 6830
+  },
+  "formalSchemaValidation": "passed",
+  "substantiveExecutionGate": "failed",
+  "disputes": 24,
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "reason": "The adjudicator read the rubric, packet metadata, all 24 disputes with embedded selected-source excerpts, and the list of permitted evidence views. It did not read any of the complete source, inventory or audio presentation pages, and did not read the canonical audio-verification artifact. Several confidence resolutions explicitly claim completed audio checks establish high assessment confidence without inspecting those checks. Prior-review assertions are not a substitute for the required independent source-and-audio examination.",
+  "proof": {
+    "allPublicToolCallsInspected": true,
+    "evidenceRecord": "docs/assessment-production/standalone-debates-v1/debate-256/adjudication/quality-failure-1/execution-evidence.json",
+    "fullSourcePagesRead": 0,
+    "audioChecksPagesRead": 0,
+    "audioSegmentPagesRead": 0,
+    "embeddedMoveEvidenceWasRead": true,
+    "privateReasoningInspected": false,
+    "omittedAudioReviewExamples": [
+      "pro-belief-benefit-is-placebo:assessmentConfidence",
+      "pro-placebo-and-personal-experience-reply:assessmentConfidence",
+      "con-cross-country-homonegativty-reply:assessmentConfidence"
+    ]
+  },
+  "preservedOutputUnchanged": true,
+  "acceptedPrimaryReviewsUnaffected": true,
+  "finalLedgerAssembled": false,
+  "scorePassStarted": false,
+  "publicationStarted": false,
+  "recommendedRecovery": {
+    "action": "One fresh isolated replacement of the failed adjudication only, with complete required source and audio evidence included in mandatory bounded reading packets and authenticated read completion before any decisions are delivered.",
+    "additionalContextCount": 1,
+    "attemptLimit": 1,
+    "retries": 0,
+    "estimatedAdditionalDirectCostUsd": 0,
+    "requiresExplicitUserAuthorization": true
+  }
+}

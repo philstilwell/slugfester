@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.1-isolated-inventory-replacement-plan",
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-09T21:14:32.876Z",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/authorization.json",
+    "sha256": "184ae8812e650dd4acec51b6d0c6513be13814ded16515de494526e9f7355761",
+    "bytes": 2290
+  },
+  "preservedOriginalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/model-output.json",
+    "sha256": "4267a30e8bba5d6050449f30639991c93d3a110aa1ce0fd2b910fd3865575391",
+    "bytes": 49745
+  },
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "agentTask": "/root/debate256_inventory_replacement",
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/packet.json",
+      "sha256": "c66bb8d60774f6324084f8389608e8da923eeacb9daa0bb4ac91b89e0b304de6",
+      "bytes": 10811
+    },
+    {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json",
+      "sha256": "59ea491e15840642fd79422e029aad97d8d5a28995f1170cb24cc6c03bfe9913",
+      "bytes": 348100
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/model-output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "paidServicesAllowed": false,
+  "directIncrementalCostUsd": 0
+}

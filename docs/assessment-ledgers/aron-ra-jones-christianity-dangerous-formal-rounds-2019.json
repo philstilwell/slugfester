@@ -1,0 +1,695 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/captions.srv3.xml",
+      "sha256": "155a5f94c19f141175430cc4427b452ba94630a8da98980d7b88986b242dc2cb",
+      "bytes": 1119157
+    },
+    "events": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/events.json",
+      "sha256": "2b14dcff12ad4ab40525778809d737f14f1b670e722d00d8d9510b7cf53b8d2d",
+      "bytes": 453690
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/transcript.txt",
+      "sha256": "62c5cd6a9b070af64c7a33282993acf166e4bed03c93aef1ec771debccf65071",
+      "bytes": 194235
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/manifest.json",
+      "sha256": "8b6b0391e8b0137585aff5dc85c775f91949a12ed6bd6fb18ccc447ce727b49c",
+      "bytes": 982
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/source/source-lock.json",
+      "sha256": "4e3c2291d6a62e80da58c1fcea10fb91ef211dd8c6191e0671c301693b013cfe",
+      "bytes": 4844
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/authorization.json",
+      "sha256": "278b363e5540139743f959f5535a0de04e9d309779ce0af6c4f2c42ce6cbb03d",
+      "bytes": 4662
+    },
+    "formalRoundsAuthorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/source/formal-rounds-authorization.json",
+      "sha256": "b8f05192d33cbcb00fa962505bb6a9e78f28e3b97a33e860b02ff847eeec7fc2",
+      "bytes": 2418
+    },
+    "formalRoundsSource": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json",
+      "sha256": "59ea491e15840642fd79422e029aad97d8d5a28995f1170cb24cc6c03bfe9913",
+      "bytes": 348100
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json",
+      "sha256": "1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918",
+      "bytes": 111673
+    },
+    "inventorySourceCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/audio-correction-1/correction.json",
+      "sha256": "e24c7204d29e525657ab06d60e58d01154242dfad5e7ee7d313097ad888f5e1d",
+      "bytes": 5428
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/authorization.json",
+      "sha256": "278b363e5540139743f959f5535a0de04e9d309779ce0af6c4f2c42ce6cbb03d",
+      "bytes": 4662
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/manifest.json",
+      "sha256": "30b355db7da6e3540262a92b1973d9d0916010b3d1d88f62de3ea6725ce16899",
+      "bytes": 9432
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/source/source-lock.json",
+      "sha256": "4e3c2291d6a62e80da58c1fcea10fb91ef211dd8c6191e0671c301693b013cfe",
+      "bytes": 4844
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json",
+      "sha256": "1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918",
+      "bytes": 111673
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/judgment-packet.json",
+      "sha256": "ac8120bd6655a468aa9dd92e7eefa5948f569507b80555a3e21e4a0cb7596625",
+      "bytes": 4930
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/execution.json",
+      "sha256": "93412ca3296890962d7b289f43917514de77abb7f92d031fbd6cdf15973496fd",
+      "bytes": 7404
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-a/output.json",
+      "sha256": "6b2c28b36437e77d02c4e769baf927e89b7ee13540a8cd794cf3fdbc4968e90b",
+      "bytes": 42823
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-b/output.json",
+      "sha256": "fba694b06fbfe0ff5f63dd5528fbe4520cbc0672ca346cce143b983fea3847b3",
+      "bytes": 33427
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/disagreements/disagreements.json",
+      "sha256": "c166b7b87bcc833e7ffad8ce14189e0962000cdf3c54b4f60267fb59a3b25a4a",
+      "bytes": 21317
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/audio-verification.json",
+      "sha256": "2b0f80b30e9ca3baf9ebcbdf74777266d02dca5fde783673c9233cc95204ea28",
+      "bytes": 215113
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/adjudication/packet.json",
+      "sha256": "54f85ad365c9539601c57b64c3acdcca163770c92092a4e26186fad6aa62f959",
+      "bytes": 89256
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/adjudication/output.json",
+      "sha256": "5b779b7292ab2cf45d1a0314aca2d18d0feb0a01b066ce8b6ae46664aadf0a26",
+      "bytes": 8296
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/final-ledger/final-ledger.json",
+      "sha256": "8a4601378b54eda7f78e814cd79b6ffb90ae38b8114aeefdf062f31837fdc5b1",
+      "bytes": 234791
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/score-pass/input.json",
+      "sha256": "0d1e64150f8acea3ba5d84f9a676abfb8fd7e8a5f2b5873df216d7e33dd3fcca",
+      "bytes": 974
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/score-pass/output.json",
+      "sha256": "04f7222bae1f476324da7dcfe4f32acb71a6d46fc67820dab65c1d26c963e379",
+      "bytes": 14852
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/score-pass/attestation.json",
+      "sha256": "5d150972fa8a01a0f808be0400c5110457402165edffb7322d91c386100a6d4b",
+      "bytes": 842
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/output.json",
+      "sha256": "3b38f2183e31658b66de320412a77c0f9d5aff838b708911fc17e1d33a427c45",
+      "bytes": 65018
+    },
+    "events": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/events.json",
+      "sha256": "2b14dcff12ad4ab40525778809d737f14f1b670e722d00d8d9510b7cf53b8d2d",
+      "bytes": 453690
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/bQBFY1z_RvI/transcript.txt",
+      "sha256": "62c5cd6a9b070af64c7a33282993acf166e4bed03c93aef1ec771debccf65071",
+      "bytes": 194235
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/correction-1-copyedit.json",
+      "sha256": "415d303acdf04c350d42f5aa372539ec898eb95667d24459cc921a0fc1908567",
+      "bytes": 4020
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/preserved-output-before-copyedit.json",
+      "sha256": "b6e5f287227ca0eab8a2e6731f0ed3520198866a490bc628973f660d5e6cf9ac",
+      "bytes": 60794
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/content-parity-audit.json",
+      "sha256": "d19df9bb51325b4afb1a5dea974df16782b9d2c6ea2dd5219121d338a69ed9d4",
+      "bytes": 6375
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/correction-2-rhetorical-tags.json",
+      "sha256": "046bf5d570efb301839a274f3d99010ceb38e8129bd036ab20f9d48feaf94311",
+      "bytes": 2503
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-audit.json",
+      "sha256": "9eb7298e10cb64435d01a0ee4a9245722c4775a4b71d429d159643688f3ac5b0",
+      "bytes": 99414
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/execution.json",
+      "sha256": "85ff81814a3df3cc27ab45955d86ee839dd7e505958cf0c8be54c00572faeb8a",
+      "bytes": 5600
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "5588c66200c03c13e7b842cdcfa72ac857198372435f94e69e368ffb63e11a3a",
+      "bytes": 2625
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "256",
+    "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+    "sections": [
+      {
+        "sectionId": "scripture-history-and-coercion",
+        "title": "Scripture, History, and Coercive Power",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-religious-versus-political-violence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 81,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 82
+                },
+                "score": 77
+              },
+              {
+                "moveId": "pro-scriptural-violence-commands",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 82,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 68
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pro-secular-law-protects-liberty",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 82,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 59
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-dissent-punished-as-capital-crime",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 88,
+                  "relevanceBurden": 94,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 68
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-old-covenant-not-prescriptive",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 91,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 82
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-misuse-does-not-establish-intrinsic-cause",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 73,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 78
+                },
+                "score": 77
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "health-family-and-social-harm",
+        "title": "Health, Family, and Social Harm",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-medical-deception-and-measles",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 82,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 63
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-prayer-instead-of-treatment",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 84,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 72
+                },
+                "score": 83
+              },
+              {
+                "moveId": "pro-youth-homelessness-from-rejection",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 83,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 64
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "con-meta-analytic-beneficial-pattern",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 82
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-cross-country-homonegativty-reply",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 60,
+                  "responsiveness": 61,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 77
+                },
+                "score": 66
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "cross-national-outcomes-and-climate",
+        "title": "Cross-National Outcomes and Climate Policy",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "pro-secular-country-outcomes",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 80,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 80
+                },
+                "score": 75
+              },
+              {
+                "moveId": "pro-climate-denial-policy",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 81,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 63
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-cross-country-needs-multivariate-analysis",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 93,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 78
+                },
+                "score": 88
+              },
+              {
+                "moveId": "con-climate-acceptance-data",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 91,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 86
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-single-study-cannot-counter-meta-analysis",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 92,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 85
+                },
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "faith-science-and-evidence",
+        "title": "Faith, Science, and Evidence",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "pro-faith-rejects-scientific-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 81,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 50
+                },
+                "score": 69
+              },
+              {
+                "moveId": "pro-lacks-greek-expert-concession",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 90,
+                  "responsiveness": 89,
+                  "relevanceBurden": 54,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 96
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-intelligence-correlation-is-fickle",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 88
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-evolution-rejection-not-essential",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 89,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 90
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-faith-means-committed-trust",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-medical-trust-analogy",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 88,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 84
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "causation-benefits-and-interpretation",
+        "title": "Causation, Benefits, and Interpretive Responsibility",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 67,
+            "moves": [
+              {
+                "moveId": "pro-belief-benefit-is-placebo",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 62,
+                  "evidenceWarrant": 49,
+                  "responsiveness": 69,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 51
+                },
+                "score": 62
+              },
+              {
+                "moveId": "pro-placebo-and-personal-experience-reply",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 58,
+                  "evidenceWarrant": 43,
+                  "responsiveness": 60,
+                  "relevanceBurden": 63,
+                  "precisionClarity": 64,
+                  "calibrationCharity": 55
+                },
+                "score": 56
+              },
+              {
+                "moveId": "pro-interpretive-variability-enables-atrocity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 88,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 58
+                },
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-attribution-and-necessary-cause",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 74
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-specific-beliefs-require-studies",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 87,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 78
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-words-do-not-cause-deliberate-misuse",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 80
+                },
+                "score": 77
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 75.2,
+        "burdenCompletionAdjustment": 0,
+        "score": 75
+      },
+      "con": {
+        "weightedSectionMean": 81.98,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.25,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 28,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

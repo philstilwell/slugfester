@@ -12117,5 +12117,52 @@ export const debateSummaries = [
         "title": "Comparative explanatory synthesis"
       }
     ]
+  },
+  {
+    "id": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+    "number": "256",
+    "title": "Aron Ra vs Michael Jones — Is Christianity dangerous? (2019, formal rounds)",
+    "year": 2019,
+    "label": "Christianity and public harm",
+    "date": "2026-09-09",
+    "duration": "2 hr 34 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=bQBFY1z_RvI",
+    "motion": "Is Christianity dangerous?",
+    "summary": "Aron documents scriptural and social harms, but Jones wins by repeatedly separating Christian identity from causation and challenging unadjusted comparisons.",
+    "topicCategory": "religion-society-public-reason",
+    "sides": {
+      "pro": {
+        "name": "Christianity poses serious dangers",
+        "speaker": "Aron Ra",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christianity is not intrinsically dangerous",
+        "speaker": "Michael Jones",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Scripture, History, and Coercive Power"
+      },
+      {
+        "title": "Health, Family, and Social Harm"
+      },
+      {
+        "title": "Cross-National Outcomes and Climate Policy"
+      },
+      {
+        "title": "Faith, Science, and Evidence"
+      },
+      {
+        "title": "Causation, Benefits, and Interpretive Responsibility"
+      }
+    ]
   }
 ];

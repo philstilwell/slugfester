@@ -1,0 +1,138 @@
+{
+  "records": [
+    {
+      "timestamp": "2026-09-09T22:53:18.833Z",
+      "ordinal": 201,
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call",
+        "id": "ctc_078fe92aa8b3977f016aa1e32b228887d1a0875b82b48d3b08",
+        "status": "completed",
+        "call_id": "call_s3f4z9LJDuTm7xJirQEy7k1g",
+        "name": "exec",
+        "input": "const invRes=await tools.exec_command({cmd:\"jq -c '.' docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json\",workdir:\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",yield_time_ms:10000,max_output_tokens:100000});\nconst inventory=JSON.parse(invRes.output);\nconst R=[[70,58,75,72,76,70],[78,72,82,86,82,70],[73,62,80,80,74,58],[76,64,82,83,77,55],[64,48,80,78,68,38],[82,60,86,89,80,55],[67,65,80,70,74,72],[69,62,78,75,72,55],[84,70,88,88,82,76],[82,88,89,88,83,80],[82,84,87,85,82,83],[84,82,88,84,86,82],[78,76,86,82,80,75],[80,73,88,82,82,76],[88,82,91,90,88,80],[83,82,90,88,84,82],[66,48,72,68,75,55],[85,72,91,88,84,80],[82,70,88,90,82,70],[75,68,78,80,78,74],[90,88,92,70,86,94],[88,76,90,86,90,86],[90,88,94,91,90,86],[68,52,68,70,72,55],[72,58,80,83,75,52],[78,72,86,82,78,74],[74,60,82,84,72,52],[82,65,90,85,86,84]];\nconst q=(v,h,m,l)=>v>=85?h:v>=70?m:l;\nconst judgments=inventory.moves.map((x,i)=>{let r=R[i],t=x.respondsToIds.length?x.respondsToIds.join(\", \"):\"the motion and constructive burden\";return {moveId:x.moveId,assessmentConfidence:(x.attributionConfidence===\"high\"&&x.materialWordingConfidence===\"high\")?\"high\":\"medium\",dimensions:{\nlogicalCoherence:{value:r[0],rationale:\"The move links \"+x.inferenceSummary.premise+\" to \"+x.inferenceSummary.conclusion+\" \"+q(r[0],\"The route is explicit and consistent.\",\"The route is intelligible but leaves a causal or scope bridge implicit.\",\"A major causal or scope bridge remains unsupported.\")},\nevidenceWarrant:{value:r[1],rationale:x.reasonSummary+\" \"+q(r[1],\"This specific aggregated support is well connected.\",\"The support is relevant but causal checking or representativeness is compressed.\",\"Assertion, anecdote, or an unchecked warrant carries too much weight.\")},\nresponsiveness:{value:r[2],rationale:\"Against \"+t+\", the answer is: \"+x.claimSummary+\" \"+q(r[2],\"It reaches the decisive premise or inference.\",\"It directly engages but leaves a material component open.\",\"It addresses only part of the strongest challenge.\")},\nrelevanceBurden:{value:r[3],rationale:\"For \"+x.burdenContact.bridgeId+\", \"+x.burdenContact.rationale+\" \"+q(r[3],\"This substantially discharges the burden.\",\"This advances the burden without completing every link.\",\"Its motion-level consequence remains underdeveloped.\")},\nprecisionClarity:{value:r[4],rationale:x.materialWordingRationale+\" The operative claim is \"+x.claimSummary+\" \"+q(r[4],\"Its terms and scope are readily auditable.\",\"It is understandable despite compression or ambiguity.\",\"Unstable scope or wording complicates evaluation.\")},\ncalibrationCharity:{value:r[5],rationale:\"The move asserts that \"+x.inferenceSummary.conclusion+\" \"+q(r[5],\"Its confidence and concessions match the support.\",\"It is proportionate, though an alternative gets limited treatment.\",\"The conclusion overstates the source or weakens a live alternative.\")}\n}}});\nconst e={distinctDebateWideConsequence:false,affectsBurdenCompletion:false,notAlreadyScored:false,affectedBurdenIds:[],completionCriterion:\"All identified completion effects are represented in locked moves.\",relatedMoveIds:[],distinctConsequence:\"No distinct consequence remains outside move-level judgments.\",alreadyCapturedBy:[\"locked move ratings and burden contacts\"],counterfactual:\"No uncaptured counterfactual changes burden completion.\"};\nconst j={schemaVersion:\"1.0-standalone-primary-judgment\",protocolId:\"assessment-production-standalone-debate-v1\",status:\"complete-and-schema-valid\",pass:\"pass-b\",debateNumber:\"256\",debateId:inventory.debateId,reviewerRole:\"isolated-score-blind-primary-judge\",assessmentModel:\"5.6 Sol\",reasoningEffort:\"low\",inventorySha256:\"1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918\",isolation:{legacyAssessmentsUnavailable:true,calculatedTotalsUnavailable:true,winnerLabelsUnavailable:true,otherJudgmentUnavailable:true,publicationProseUnavailable:true,otherDebatesUnavailable:true,aggregateRankingsUnavailable:true,priorScoresUnavailable:true,aiExtensionsUnavailable:true,contaminationDetected:false},judgments,burdenCompletionAdjustment:{pro:{value:0,rationale:\"No distinct uncaptured pro burden-completion effect remains.\",eligibility:{...e}},con:{value:0,rationale:\"No distinct uncaptured con burden-completion effect remains.\",eligibility:{...e}}},audit:{completeLockedInventoryReviewed:true,allMovesJudgedOnce:true,ratingsOnlyNoCalculatedScores:true,publicationBlind:true,scoreBlind:true}};\nconst draft=JSON.stringify(j);\nconst arg=draft.replace(/'/g,\"'\\\\''\");\nconst cmd=`node --input-type=module -e 'import fs from \"node:fs\";import {validateStandalonePrimaryJudgment as v} from \"./scripts/lib/assessment-production-standalone-debate-v1.mjs\";const j=JSON.parse(process.argv[1]);const i=JSON.parse(fs.readFileSync(\"docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json\",\"utf8\"));console.log(JSON.stringify(v(j,i,{expectedPass:\"pass-b\",expectedInventorySha256:\"1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918\"})))' '${arg}'`;\nconst vr=await tools.exec_command({cmd,workdir:\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",yield_time_ms:10000,max_output_tokens:2000});\nif(vr.exit_code!==0||!vr.output.includes('\"status\":\"passed\"')){text(vr.output);exit();}\nconst pretty=JSON.stringify(j,null,2);\nconst patch=\"*** Begin Patch\\n*** Add File: /Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree/docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-b/output.json\\n\"+pretty.split(\"\\n\").map(l=>\"+\"+l).join(\"\\n\")+\"\\n*** End Patch\";\nconst ap=await tools.apply_patch(patch); text(JSON.stringify({validation:vr.output.trim(),patch:ap}));\n",
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a08857-228f-7cc3-8eb7-725d59f30374",
+          "create_time": 1788994334.306561
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-09T22:53:19.459Z",
+      "ordinal": 206,
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call_output",
+        "id": "ctco_01a08860-2ce3-7c92-aa68-ee99356844ca",
+        "call_id": "call_s3f4z9LJDuTm7xJirQEy7k1g",
+        "output": [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.6 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "{\"validation\":\"{\\\"status\\\":\\\"passed\\\",\\\"pass\\\":\\\"pass-b\\\",\\\"moves\\\":28}\",\"patch\":{}}"
+          }
+        ],
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a08857-228f-7cc3-8eb7-725d59f30374",
+          "create_time": 1788994399.459016
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-09T22:53:31.686Z",
+      "ordinal": 212,
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call",
+        "id": "ctc_078fe92aa8b3977f016aa1e364572c87d1a86e4d7a0a2e7e83",
+        "status": "completed",
+        "call_id": "call_Gg0TzyxaQ1wnppdJ2cTDgx94",
+        "name": "exec",
+        "input": "const r=await tools.exec_command({cmd:\"node --input-type=module -e 'import fs from \\\"node:fs\\\";import {validateStandalonePrimaryJudgment as v} from \\\"./scripts/lib/assessment-production-standalone-debate-v1.mjs\\\";const j=JSON.parse(fs.readFileSync(\\\"docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-b/output.json\\\",\\\"utf8\\\"));const i=JSON.parse(fs.readFileSync(\\\"docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json\\\",\\\"utf8\\\"));console.log(JSON.stringify(v(j,i,{expectedPass:\\\"pass-b\\\",expectedInventorySha256:\\\"1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918\\\"})));'\",\"workdir\":\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",\"yield_time_ms\":10000,\"max_output_tokens\":2000}); text(r.output);\n",
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a08857-228f-7cc3-8eb7-725d59f30374",
+          "create_time": 1788994401.341386
+        }
+      }
+    },
+    {
+      "timestamp": "2026-09-09T22:53:31.921Z",
+      "ordinal": 215,
+      "type": "response_item",
+      "payload": {
+        "type": "custom_tool_call_output",
+        "id": "ctco_01a08860-5d91-7bb0-9fcb-babbbdfce5b7",
+        "call_id": "call_Gg0TzyxaQ1wnppdJ2cTDgx94",
+        "output": [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.2 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "{\"status\":\"passed\",\"pass\":\"pass-b\",\"moves\":28}\n"
+          }
+        ],
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a08857-228f-7cc3-8eb7-725d59f30374",
+          "create_time": 1788994411.921523
+        }
+      }
+    }
+  ],
+  "sourceReads": [
+    {
+      "callId": "call_4JO9DsqqKn6y4vL4IFtvIxJ3",
+      "timestamp": "2026-09-09T22:50:46.531Z",
+      "displayedEventCount": 0,
+      "outputTruncated": false,
+      "toolInput": "const r=await tools.exec_command({cmd:\"jq -r '.events[] | select(.eventIndex>=650 and .eventIndex<=1250) | \\\"[\\\\(.eventIndex)] \\\\(.text)\\\"' .assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json\",\"workdir\":\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",\"yield_time_ms\":10000,\"max_output_tokens\":300Justin}); text(r.output);\n"
+    },
+    {
+      "callId": "call_No3EoGdNyNPs4wAGSfNaORQE",
+      "timestamp": "2026-09-09T22:50:51.939Z",
+      "firstDisplayedEvent": 650,
+      "lastDisplayedEvent": 1250,
+      "displayedEventCount": 601,
+      "outputTruncated": false,
+      "toolInput": "const r=await tools.exec_command({cmd:\"jq -r '.events[] | select(.eventIndex>=650 and .eventIndex<=1250) | \\\"[\\\\(.eventIndex)] \\\\(.text)\\\"' .assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json\",\"workdir\":\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",\"yield_time_ms\":10000,\"max_output_tokens\":30000}); text(r.output);\n"
+    },
+    {
+      "callId": "call_f6bFmllyxR0OWAKasKpvuZg6",
+      "timestamp": "2026-09-09T22:50:57.876Z",
+      "firstDisplayedEvent": 1251,
+      "lastDisplayedEvent": 1900,
+      "displayedEventCount": 650,
+      "outputTruncated": false,
+      "toolInput": "const r=await tools.exec_command({cmd:\"jq -r '.events[] | select(.eventIndex>=1251 and .eventIndex<=1900) | \\\"[\\\\(.eventIndex)] \\\\(.text)\\\"' .assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json\",\"workdir\":\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",\"yield_time_ms\":10000,\"max_output_tokens\":30000}); text(r.output);\n"
+    },
+    {
+      "callId": "call_mhFwPsdX3N9msbAnNxt6Gq52",
+      "timestamp": "2026-09-09T22:51:03.190Z",
+      "firstDisplayedEvent": 1901,
+      "lastDisplayedEvent": 2444,
+      "displayedEventCount": 544,
+      "outputTruncated": false,
+      "toolInput": "const r=await tools.exec_command({cmd:\"jq -r '.events[] | select(.eventIndex>=1901 and .eventIndex<=2444) | \\\"[\\\\(.eventIndex)] \\\\(.text)\\\"' .assessment-cache/captions/bQBFY1z_RvI/formal-rounds-source.json\",\"workdir\":\"/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-256-worktree\",\"yield_time_ms\":10000,\"max_output_tokens\":30000}); text(r.output);\n"
+    }
+  ],
+  "sourceReadAudit": {
+    "fullApprovedWindow": [
+      36,
+      2444
+    ],
+    "expectedEvents": 2409,
+    "uniqueEventsDisplayedInFullSourceReads": 2261,
+    "missingFromFullSourceReadSequence": [
+      [
+        502,
+        649
+      ]
+    ],
+    "qualification": "Some selected inventory excerpts may overlap this range; those do not establish the required complete approved-source review.",
+    "inspectedToolCallsOnly": true
+  }
+}

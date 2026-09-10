@@ -1,0 +1,32 @@
+{
+  "status": "source-authenticated-delivery-deviation-preserved",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "sessionPath": "/Users/philstilwell/.codex/sessions/2026/09/09/rollout-2026-09-09T20-26-28-01a088b5-743e-7403-961b-4a57b1d4f267.jsonl",
+  "publicToolEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/copyedit-1/shard-4/delivery-incident/public-tool-evidence.json",
+    "sha256": "6ebb653648be7d7e9a3f27dff0fce7bcbe08aff65421e21eb11c2ebe97ad7c92",
+    "bytes": 5554
+  },
+  "initialEnvelope": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/copyedit-1/shard-4/delivery-incident/preserved-initial-envelope.json",
+    "sha256": "2cfde28ca6639159290a9c330f3ddb64cd1c0b9816391ae3f8bc53bae826a798",
+    "bytes": 90
+  },
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/copyedit-1/shard-4/output.json",
+    "sha256": "2a8279168b18f13a12080b06d166f6bb30f54effecebd4d2dd52f6e9c9e84c90",
+    "bytes": 2250
+  },
+  "observedWrites": 2,
+  "initialEnvelopeRepairFields": 0,
+  "firstAndOnlyNonemptyRepairDeliveryFields": 2,
+  "assessmentLeafValuesOverwritten": 0,
+  "rootTextChanges": 0,
+  "reviewerContexts": 1,
+  "reviewerTaskInvocations": 1,
+  "additionalModelRecoveryCalls": 0,
+  "privateReasoningReadOrPreserved": false,
+  "preservationTiming": "Recovered exact initial bytes from immutable public tool input after the worker overwrote the empty envelope; not falsely represented as preservation before overwrite.",
+  "finding": "The worker violated the one-write delivery instruction by creating an empty envelope with an incorrect debate ID, then replacing it with the first complete repair values. No previously delivered assessment or repair string was revised or erased. Treat this as a disclosed delivery-process deviation within the one authorized field-shard invocation, not an additional substantive repair attempt. Both states and both public tool calls are preserved."
+}
