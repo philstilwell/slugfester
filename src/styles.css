@@ -1231,6 +1231,18 @@ a {
   font-weight: 750;
 }
 
+.ranking-comparison-form select:has(option[value=""]:checked) {
+  color: #fff;
+  background-color: var(--glove-red);
+  border-color: var(--glove-red);
+  color-scheme: dark;
+}
+
+.ranking-comparison-form select option {
+  color: var(--ink);
+  background-color: #fff;
+}
+
 .ranking-form-actions {
   display: flex;
   align-self: end;
