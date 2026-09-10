@@ -872,6 +872,17 @@ a {
   font-weight: 700;
 }
 
+#search-query:placeholder-shown:not(:focus) {
+  color: #fff;
+  background-color: var(--glove-red);
+  border-color: var(--glove-red);
+}
+
+#search-query:placeholder-shown:not(:focus)::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
 .filter-section {
   display: grid;
   gap: 10px;
