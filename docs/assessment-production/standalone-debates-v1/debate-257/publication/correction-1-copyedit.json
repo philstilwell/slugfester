@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-standalone-publication-copyedit-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[4].exchanges[0].con.critique",
+        "candidate.overall.pro.strengths[1]"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.overall.pro.strengths[2]",
+        "candidate.overall.con.blunders[1].text"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[0].exchanges[1].pro.words",
+        "candidate.sections[3].exchanges[0].con.critique"
+      ],
+      "maximumFields": 2,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "noveltyMap[5].explanation"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "sourceQuoteAudit[0].sourcePath",
+        "sourceQuoteAudit[1].sourcePath"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0,
+    "descriptionChanges": 1,
+    "critiqueChanges": 2,
+    "quoteTextChanges": 0,
+    "overallItemChanges": 3,
+    "sourceQuotePathCorrections": 2,
+    "noveltyExplanationChanges": 1,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "before": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/preserved-output-before-copyedit.json",
+      "sha256": "d34b1ff33d67235d3c394b8524cbc0616450e9eb8aff8c18ba23c9f4601a8a5e",
+      "bytes": 41540
+    },
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/output.json",
+      "sha256": "de8833493000ec30073744001c49d9c76e53767e01c8cd1d66bc1576cccd0c12",
+      "bytes": 45733
+    },
+    "contentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/content-parity-audit.json",
+      "sha256": "cf6ce501835689a684ebde742c704b3d6e51d488eb87ffd05b76ed1e09ceb267",
+      "bytes": 5922
+    },
+    "execution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/execution.json",
+      "sha256": "52e3694b1140fe1ab3201fbdf6d2878a6f76b089359e9f661c016be0bd693cb0",
+      "bytes": 6107
+    },
+    "editorialReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/editorial-review.json",
+      "sha256": "a74a91811a71b40df69c5e7fdfe2e06b5b6f7689b947990c64cda7d55b666819",
+      "bytes": 6228
+    }
+  }
+}

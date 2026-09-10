@@ -1,0 +1,93 @@
+{
+  "status": "rejected-before-inventory-lock",
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/model-output.json",
+    "sha256": "53d5bec7da8e25108d10470e5e1c2cd52e338cca982b1ca605a052172dee30b7",
+    "bytes": 40936
+  },
+  "actualInitialFailure": {
+    "command": "node scripts/tmp-standalone-stages.mjs --debate 257 --phase inventory",
+    "error": "AssertionError [ERR_ASSERTION]: Expected actual to be strictly unequal to: high",
+    "exitCode": 1
+  },
+  "completeDiagnostic": [
+    {
+      "moveId": "pro-evidence-constrains-inquiry",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "pro-science-is-integrated",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "pro-philosophy-loses-domains",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-science-best-for-empirical-facts",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-ultimate-explanation-limit",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-ultimate-explanation-limit",
+      "field": "quoteEligibleExactSpans[1]",
+      "issue": "Not an exact 3–18-word substring of the selected source."
+    },
+    {
+      "moveId": "con-ultimate-explanation-limit",
+      "field": "spanLengthRationale",
+      "issue": "Complete argument exceeds the 2200-character transport target without rationale."
+    },
+    {
+      "moveId": "con-is-ought-limit",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-is-ought-limit",
+      "field": "quoteEligibleExactSpans[2]",
+      "issue": "Not an exact 3–18-word substring of the selected source."
+    },
+    {
+      "moveId": "con-identity-distinction",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-specialist-philosophical-skill",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "pro-science-explains-morality",
+      "field": "quoteEligibleExactSpans[1]",
+      "issue": "Not an exact 3–18-word substring of the selected source."
+    },
+    {
+      "moveId": "pro-conceptualism-is-empty",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-thought-experiment-refutes-theory",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    },
+    {
+      "moveId": "con-origins-do-not-justify-morality",
+      "field": "attributionConfidence",
+      "issue": "Below-high material wording was not routed into mandatory audio verification."
+    }
+  ],
+  "preservedRawBytesUnchanged": true,
+  "judgmentsStarted": false,
+  "scoresCalculated": false
+}

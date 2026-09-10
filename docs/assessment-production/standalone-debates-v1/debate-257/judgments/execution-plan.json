@@ -1,0 +1,80 @@
+{
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-10T04:20:00.509Z",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "freshContextPerPass": true,
+  "forkTurns": "none",
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/formal-rounds-packet.json",
+    "sha256": "7dd3d7f147364f5b94a8f5993206df77a26818e34eb9da6b1edfcfb22bd084ae",
+    "bytes": 7282
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/formal-rounds-packet.json",
+      "sha256": "7dd3d7f147364f5b94a8f5993206df77a26818e34eb9da6b1edfcfb22bd084ae",
+      "bytes": 7282
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/inventory.json",
+      "sha256": "5e62746e18b5e6ba58701485a33e3c0a487579e238365b910447c49dd966b8e3",
+      "bytes": 73470
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": ".assessment-cache/captions/i5AyjXBgjvA/formal-rounds-source.json",
+      "sha256": "fdc0d3ab573bc643da72d2804cc07f8b91487f9a652e5cb3996be88a0beb9681",
+      "bytes": 90032
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/audio-verification.json",
+      "sha256": "d9a86165d6113c000d95b77edc5bc4d40bf68893f338e6c4c2809bd9f847ba41",
+      "bytes": 106548
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/debate257_judgment_a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-a/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/debate257_judgment_b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-b/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

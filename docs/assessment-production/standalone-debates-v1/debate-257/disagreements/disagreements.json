@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-mind-body-conceptual-obstacle:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-mind-body-conceptual-obstacle",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate debate-wide consequence remains uncaptured by the scored moves and their locked burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "",
+            "relatedMoveIds": [],
+            "distinctConsequence": "",
+            "alreadyCapturedBy": [
+              "pro-evidence-constrains-inquiry",
+              "pro-science-is-integrated",
+              "pro-science-can-pursue-fundamentals"
+            ],
+            "counterfactual": ""
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains eligible beyond the move-level ratings and response analysis already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is invoked.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence beyond scored moves.",
+            "alreadyCapturedBy": [
+              "move-dimension-ratings"
+            ],
+            "counterfactual": "No independent adjustment counterfactual applies."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No separate debate-wide consequence remains uncaptured by the scored moves and their locked burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "",
+            "relatedMoveIds": [],
+            "distinctConsequence": "",
+            "alreadyCapturedBy": [
+              "con-science-best-for-empirical-facts",
+              "con-is-ought-limit",
+              "con-thought-experiment-refutes-theory"
+            ],
+            "counterfactual": ""
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains eligible beyond the move-level ratings and response analysis already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is invoked.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence beyond scored moves.",
+            "alreadyCapturedBy": [
+              "move-dimension-ratings"
+            ],
+            "counterfactual": "No independent adjustment counterfactual applies."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 17,
+    "disputesExtracted": 3,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/inventory.json",
+      "sha256": "5e62746e18b5e6ba58701485a33e3c0a487579e238365b910447c49dd966b8e3"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-a/output.json",
+      "sha256": "72befd2daf2cda3459a6c81fb86ae8d0d337e92adc2467455e98e9db5223c309"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-b/output.json",
+      "sha256": "8efdd99de0b4d50b9cd0f9ce75ae8db3aa02fc8210038a4009b7a24be3c6b3ee"
+    }
+  }
+}

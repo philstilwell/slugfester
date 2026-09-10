@@ -12164,5 +12164,55 @@ export const debateSummaries = [
         "title": "Causation, Benefits, and Interpretive Responsibility"
       }
     ]
+  },
+  {
+    "id": "atkins-law-science-philosophy-formal-rounds-2014",
+    "number": "257",
+    "title": "Peter Atkins vs Stephen Law — Science or philosophy? (2014, formal rounds)",
+    "year": 2014,
+    "label": "Science and conceptual inquiry",
+    "date": "2026-09-10",
+    "duration": "1 hr 25 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=i5AyjXBgjvA",
+    "motion": "Is science a better model for free inquiry than philosophy?",
+    "summary": "Atkins champions evidence-driven scientific expansion; Law concedes science’s empirical authority while defending conceptual analysis, ultimate explanation, and moral justification as indispensable.",
+    "topicCategory": "science-design",
+    "sides": {
+      "pro": {
+        "name": "Scientific inquiry has primacy",
+        "speaker": "Peter Atkins",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Philosophical inquiry remains indispensable",
+        "speaker": "Stephen Law",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 65,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Evidence and the discipline of inquiry"
+      },
+      {
+        "title": "Scientific integration and philosophical specialization"
+      },
+      {
+        "title": "The reach of scientific explanation"
+      },
+      {
+        "title": "Moral origins and moral justification"
+      },
+      {
+        "title": "Conceptual puzzles and thought experiments"
+      },
+      {
+        "title": "Mind, brain, and scientific optimism"
+      }
+    ]
   }
 ];

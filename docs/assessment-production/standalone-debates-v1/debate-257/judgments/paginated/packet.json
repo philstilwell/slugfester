@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-10T04:20:00.564Z",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Is science a better model for free inquiry than philosophy?",
+  "sides": {
+    "pro": {
+      "speaker": "Peter Atkins",
+      "position": "Scientific inquiry has primacy"
+    },
+    "con": {
+      "speaker": "Stephen Law",
+      "position": "Philosophical inquiry remains indispensable"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/inventory.json",
+      "sha256": "5e62746e18b5e6ba58701485a33e3c0a487579e238365b910447c49dd966b8e3",
+      "bytes": 73470
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "formalRoundsSource": {
+      "path": ".assessment-cache/captions/i5AyjXBgjvA/formal-rounds-source.json",
+      "sha256": "fdc0d3ab573bc643da72d2804cc07f8b91487f9a652e5cb3996be88a0beb9681",
+      "bytes": 90032
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/audio-verification.json",
+      "sha256": "d9a86165d6113c000d95b77edc5bc4d40bf68893f338e6c4c2809bd9f847ba41",
+      "bytes": 106548
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true,
+    "assessOnlyApprovedFormalRounds": true,
+    "excludedQuestionAndAnswerSessionUnavailable": true,
+    "excludedLaterClosingStatementsUnavailable": true,
+    "noCreditOrPenaltyForExcludedMaterial": true,
+    "completeTranscriptMeansCompleteApprovedFormalRounds": true,
+    "audioVerificationCompletedBeforePrimaryJudgments": true,
+    "audioClarifiesSpokenMeaningNotIndependentTruth": true,
+    "doNotScoreCaptionOrTranscriptionArtifactsAsParticipantErrors": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "5e62746e18b5e6ba58701485a33e3c0a487579e238365b910447c49dd966b8e3",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  },
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/source/formal-rounds-authorization.json",
+      "sha256": "ce46c697db01fc668f903c4329907a1adb83e6172267c00fffc744ba6dd9c196",
+      "bytes": 2682
+    },
+    "assessedWindow": {
+      "startEvent": 64,
+      "endEvent": 683,
+      "startMs": 181319,
+      "endMs": 1730440,
+      "durationMs": 1549121
+    },
+    "scope": "Only the opening statements and first rebuttals are assessed. Introductory material and the entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, are excluded. Moderator logistics within the approved window are not scored.",
+    "requiredReaderDisclosure": "Only the opening statements and first rebuttals (3:01–28:50) are assessed. The entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "allLaterClosingStatementsExcluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "sourceAttributionInstructions": "Assess only each selected speaker’s own claim and inference. The approved segment has four extended turns with procedural handovers identified in the source packet. Consult the complete approved source for qualifications and rebuttals; do not use any excluded later audience discussion.",
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/paginated/reading-manifest.json",
+    "sha256": "c8583deaa7a14f5d32dffcb67eef0483ac4d143592abe9b11fc9e23d423c57c4",
+    "bytes": 26966
+  },
+  "readingProtocol": [
+    "Read the complete workflow and rubric. Read the packet and all three metadata files, then every reading page listed in reading-manifest in full.",
+    "Display each reading page in its OWN tool invocation with an outer output budget of at least 7000 tokens. Do not combine pages in one functions.exec result. If any result is truncated, reread the missing range before continuing.",
+    "The canonical source, inventory and audio verification remain authoritative. The reading views change presentation only; do not reopen excluded source material or any other debate.",
+    "Before authoring ratings, save your own reading receipt listing all page paths with first/last neutral textual anchors and source event bounds. Do not claim completeness on the basis of hashes alone.",
+    "Author each dimension rationale individually: identify this particular move’s premise, inference, evidence, live reply, scope, or qualification and explain why it warrants the selected dimension rating under the rubric. Generic dimension descriptions or grade-band stock sentences concatenated with inventory summaries are not acceptable.",
+    "Code may validate and assemble independently authored records, but may not generate assessment explanations by templates or inventory-field concatenation. You may draft your full assessment across sections within this single context; no additional agents, model calls or retries.",
+    "Inventory caption cautions describe source acquisition, not defects in the participant’s reasoning. Apply all completed audio clarifications. No deduction for a transcription artifact.",
+    "Create the full output directly with apply_patch; never create an empty placeholder. Validate the delivered bytes using validateStandalonePrimaryJudgment, not only an in-memory object. Preserve an invalid delivered output and report it; no unauthorized replacement."
+  ],
+  "outputRoles": [
+    "pass-a",
+    "pass-b"
+  ],
+  "extraAllowedOutput": "A pass-specific reading-receipt.json; final output.json must satisfy the existing primary-judgment contract without changed limits."
+}

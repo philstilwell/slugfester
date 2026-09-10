@@ -219,7 +219,8 @@ requireExcludes("app backend retired overall scoring", app, ".70 centrality-weig
 requireIncludes("app backend page", app, "Account personalization and private conversation history are not inputs");
 requireIncludes("app search filters", app, 'class="person-filter');
 requireIncludes("app search filters", app, 'class="filter-section filter-accordion"');
-requireIncludes("app search filters", app, "Interlocutor filters");
+requireIncludes("app search filters", app, "<strong>Interlocutor photos &amp; filters</strong>");
+requireIncludes("app search filter invitation", app, "<small>Click here to browse participant photos and choose who to include in your search.</small>");
 requireExcludes("app search filters", app, 'class="topic-filter');
 requireExcludes("app search filters", app, "renderTopicFilter");
 requireIncludes("app debate numbering", app, "debate.number");

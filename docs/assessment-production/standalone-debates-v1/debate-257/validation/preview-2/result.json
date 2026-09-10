@@ -1,0 +1,59 @@
+{
+  "status": "passed-private-production-preview",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/output.json",
+    "sha256": "de8833493000ec30073744001c49d9c76e53767e01c8cd1d66bc1576cccd0c12",
+    "bytes": 45733
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "a672d85d49a19677c0c99ab77752a2641b708c1f4765b597632f6782f52d255c",
+      "bytes": 128320
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "2577b8d3463fda1b0acc588b37a766a4409636b1ba72ccba3a26f7e15b605b50",
+      "bytes": 11590835
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/output.json",
+      "sha256": "de8833493000ec30073744001c49d9c76e53767e01c8cd1d66bc1576cccd0c12",
+      "bytes": 45733
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/score-pass/output.json",
+      "sha256": "96ff9f93a4b66e864a90b16584f804e9f877b823087128585bf6b701f6c53a52",
+      "bytes": 10271
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 257",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/validation/preview-2/command-1.log",
+        "sha256": "bf7d97ea96a8d28307871d961bad94dd79f27bf3e3c069fdbb2fd945080ab6b4",
+        "bytes": 60
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/validation/preview-2/command-2.log",
+        "sha256": "0cbaceafdabe7850bf29e2fd3114397b3e95223228ef783cb7939d61fdd18fed",
+        "bytes": 23
+      }
+    }
+  ],
+  "error": null
+}

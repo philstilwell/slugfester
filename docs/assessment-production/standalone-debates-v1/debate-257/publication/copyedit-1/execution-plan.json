@@ -1,0 +1,106 @@
+{
+  "status": "frozen-before-repairs",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/preserved-output-before-copyedit.json",
+    "sha256": "d34b1ff33d67235d3c394b8524cbc0616450e9eb8aff8c18ba23c9f4601a8a5e",
+    "bytes": 41540
+  },
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/syntax-repair-1/normalized-output.json",
+    "sha256": "d34b1ff33d67235d3c394b8524cbc0616450e9eb8aff8c18ba23c9f4601a8a5e",
+    "bytes": 41540
+  },
+  "validation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/initial-validation.json",
+    "sha256": "f91e7d81ed190babec1e7fea0361b0123275f705c747ec5ad57cdea320cca9b9",
+    "bytes": 5993
+  },
+  "shards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[4].exchanges[0].con.critique",
+        "candidate.overall.pro.strengths[1]"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/shard-1/packet.json",
+        "sha256": "703639c02324d77438ff543725990f27bd56ea9bb7930fbbfd3169f55d051285",
+        "bytes": 13719
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/shard-1/output.json",
+      "agentTask": "/root/publication_257_copyedit_1",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.overall.pro.strengths[2]",
+        "candidate.overall.con.blunders[1].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/shard-2/packet.json",
+        "sha256": "e2423fe325364ebe6b31555bc48eccef00f0c851fc609f1f1d50ad62c59602c7",
+        "bytes": 23125
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/shard-2/output.json",
+      "agentTask": "/root/publication_257_copyedit_2",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[0].exchanges[1].pro.words",
+        "candidate.sections[3].exchanges[0].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/shard-3/packet.json",
+        "sha256": "85f5d50df61a950e3494e4326dba396f35c46a1186d1868f3df07a86035830a3",
+        "bytes": 14078
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-257/publication/copyedit-1/shard-3/output.json",
+      "agentTask": "/root/publication_257_copyedit_3",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "deterministicShards": [
+    {
+      "ordinal": 4,
+      "fields": [
+        {
+          "path": "noveltyMap[5].explanation",
+          "before": "AI-generated measurement-and-classification argument extends Law’s conceptual-engineering examples; it was not spoken.",
+          "after": "AI-generated measurement-and-classification argument extends Law’s conceptual-engineering examples to shared observations and rival classifications; it was not spoken."
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        {
+          "path": "sourceQuoteAudit[0].sourcePath",
+          "before": "docs/assessment-production/standalone-debates-v1/debate-257/final-ledger.json",
+          "after": "docs/assessment-production/standalone-debates-v1/debate-257/final-ledger/final-ledger.json"
+        },
+        {
+          "path": "sourceQuoteAudit[1].sourcePath",
+          "before": "docs/assessment-production/standalone-debates-v1/debate-257/final-ledger.json",
+          "after": "docs/assessment-production/standalone-debates-v1/debate-257/final-ledger/final-ledger.json"
+        }
+      ]
+    }
+  ],
+  "maximumFieldsPerShard": 2,
+  "oneAttemptPerShard": true,
+  "directIncrementalCostUsd": 0
+}
