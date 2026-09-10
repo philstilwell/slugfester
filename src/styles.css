@@ -921,8 +921,44 @@ a {
 
 .filter-heading-copy {
   display: grid;
+  flex: 1;
   gap: 2px;
   min-width: 0;
+}
+
+.filter-photo-preview {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 5px;
+}
+
+.filter-photo-preview img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #f6ead0;
+}
+
+@media (max-width: 600px) {
+  .filter-accordion .filter-heading {
+    flex-wrap: wrap;
+  }
+
+  .filter-photo-preview img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .filter-heading-copy {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .filter-count {
+    margin-left: auto;
+  }
 }
 
 .filter-heading-copy small {
