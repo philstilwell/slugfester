@@ -1,0 +1,29 @@
+{
+  "status": "reading-stage-continued-with-no-assessment-attempt-retry",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "passA": {
+    "sessionPath": "/Users/philstilwell/.codex/sessions/2026/09/09/rollout-2026-09-09T20-31-52-01a088ba-651c-7193-82cd-98c926c1d29d.jsonl",
+    "observedCall": "call_we1IE7T9JaCfEqIsCW9bjBoE",
+    "processDeviation": "A broad first/last-line read entered unlisted inventory view paths.",
+    "actualUnlistedContentsReturned": [
+      "inventory-01.txt through inventory-07.txt: only file names and opening/closing braces",
+      "inventory-metadata.json: only its file name, schemaVersion 1.2-standalone-score-blind-inventory, and closing brace"
+    ],
+    "prohibitedSubstantiveInventoryTextRead": false,
+    "ratingsScoresOtherReviewerOrPriorTagsExposed": false,
+    "controllerDisposition": "Record the path deviation without claiming zero incidental file access; the exposed structural syntax carries no assessment information and does not compromise blindness. Continue required evidence reading in the same context."
+  },
+  "passB": {
+    "sessionPath": "/Users/philstilwell/.codex/sessions/2026/09/09/rollout-2026-09-09T20-32-03-01a088ba-92f1-78b1-aecc-3b5927f2ab00.jsonl",
+    "reportedProblem": "Reviewer inferred that total evidence size could not fit its effective context.",
+    "observedProblem": "Batched returned output was truncated; no provider hard-context error was supplied.",
+    "controllerDisposition": "Continue remaining evidence with one page per output. Do not equate a per-call output limit with a demonstrated cumulative context failure."
+  },
+  "readingGateClarification": "A large file may be displayed as separate contiguous 100-line chunks. The controller authenticates every original line, chunk hash and returned output, without summaries, dropped evidence or altered source bytes.",
+  "reviewDecisionsAuthoredBeforeContinuation": 0,
+  "newReviewerContexts": 0,
+  "replacementAssessmentAttempts": 0,
+  "requiredEvidenceRemoved": 0,
+  "directIncrementalCostUsd": 0
+}

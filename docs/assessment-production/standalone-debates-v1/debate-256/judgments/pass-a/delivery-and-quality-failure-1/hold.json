@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-primary-judgment-failure-hold",
+  "status": "blocked-invalid-primary-judgment",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "pass": "pass-a",
+  "reviewedAt": "2026-09-09T22:48:06.074Z",
+  "failedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-a/output.json",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "bytes": 3
+  },
+  "executionEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-a/delivery-and-quality-failure-1/preserved-execution-evidence.json",
+    "sha256": "8b2d4ca82dfce02c79316b67bf7be8b4eb68b1d9b534e04570681a85203019ba",
+    "bytes": 53254
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/execution-plan.json",
+    "sha256": "2c756c67fa839e8986bcc8bdf2cacddbe7a11dd768b57f0f5406eb6d6d6dac9a",
+    "bytes": 2785
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/formal-rounds-packet.json",
+    "sha256": "c10d495eb4cb237b8e3bb14fce673abe7f92ba369745d328e8abe87fdbcd9339",
+    "bytes": 7436
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json",
+    "sha256": "1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918",
+    "bytes": 111673
+  },
+  "audio": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/audio-verification.json",
+    "sha256": "2b0f80b30e9ca3baf9ebcbdf74777266d02dca5fde783673c9233cc95204ea28",
+    "bytes": 215113
+  },
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "agentTask": "/root/debate256_judgment_a",
+  "originalAttemptCount": 1,
+  "automaticRetries": 0,
+  "additionalModelAttempts": 0,
+  "directIncrementalCostUsd": 0,
+  "findings": [
+    {
+      "type": "invalid-delivery",
+      "detail": "The sole delivered output is the three-byte file {} followed by a newline; read-back validation fails with pass-a: judgment identity mismatch.",
+      "evidenceCallIds": [
+        "call_7LLupA0IYuzzVPsSeHnN0kze",
+        "call_EZcdgiujeaHgS943WxFcI4xJ"
+      ]
+    },
+    {
+      "type": "insufficient-dimension-rationales",
+      "detail": "The preserved pre-delivery validation command constructs all 168 dimension rationales from six generic dimension sentences followed by the same inventory reasonSummary for that move. These descriptions do not explain the specific dimension ratings or warrant the assigned bands.",
+      "evidenceCallId": "call_IybqQr4f9Hqzd8JWr3i5cEml",
+      "affectedDimensionRationaleCount": 168
+    },
+    {
+      "type": "required-complete-evidence-review-not-performed",
+      "detail": "The execution tool-call sequence reads packet/control files and selected inventory views, including truncated inventory views. It hashes the complete formal source but does not display/read its content for review; the audio query asks nonexistent fields and returns null rather than reviewing checks. It then builds the judgment. This does not satisfy the explicit full approved-source and audio-review requirements.",
+      "basis": "Review of task tool calls and outputs only; no private reasoning used."
+    }
+  ],
+  "recoveryDisposition": "Transport-only recovery is insufficient: although the command can deterministically reconstruct a schema-valid draft, its provenance and rationales fail the substantive assessment requirements. Do not accept or score it.",
+  "preservation": {
+    "originalOutputUnchanged": true,
+    "sourceAndInventoryUnchanged": true,
+    "otherReviewUnchanged": true,
+    "noScorePassExecuted": true,
+    "noPublicationMutation": true
+  },
+  "nextStep": "Await explicit authority to replace only the failed first assessment in one fresh isolated context. Let the original second assessment finish and audit it separately."
+}

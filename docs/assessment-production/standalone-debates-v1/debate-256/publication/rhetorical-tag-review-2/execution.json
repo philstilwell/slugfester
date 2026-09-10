@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "totalBlindReviewContextsIncludingPreservedFailure": 3,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/authorization.json",
+    "sha256": "4f23ac23c229f083fbbd68adcf862990780961e4691d735caa68da39392f09c7",
+    "bytes": 2260
+  },
+  "blindSemanticReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/blind-semantic-review.json",
+    "sha256": "43cf3e513af5cc9d66231c055ac0012752dd6fed54c9ec4b64ce60c134484404",
+    "bytes": 1965
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/packet.json",
+    "sha256": "1187d0a700720c9f66b191c086aa4563f89d886ba7cdb475e6d99a6e771dd9ce",
+    "bytes": 105614
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "controllerCorrection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/controller-correction.json",
+    "sha256": "573d9bda4332a6bf5d29abe904136d4bd974eddf2b8be056b9badc25cea518a5",
+    "bytes": 8574
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_256_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "1187d0a700720c9f66b191c086aa4563f89d886ba7cdb475e6d99a6e771dd9ce",
+        "bytes": 105614
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/pass-a-output.json",
+        "sha256": "2740698914c21e407b3fe8a74b8527af553b03b1e50edff9eadcdb8ddf29bda5",
+        "bytes": 30299
+      },
+      "readingGate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/pass-a-reading-gate.json",
+        "sha256": "8dc455374f1295a388ca80e3c0def3dfd0d96931850fa0a23942d991da0f448f",
+        "bytes": 17858
+      },
+      "retainedWithoutNewAssessment": true,
+      "originalOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "2740698914c21e407b3fe8a74b8527af553b03b1e50edff9eadcdb8ddf29bda5",
+        "bytes": 30299
+      },
+      "originalFailedAttempts": 0,
+      "authorizedReplacementAttempts": 0,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_256_b_replacement",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/packet.json",
+        "sha256": "1187d0a700720c9f66b191c086aa4563f89d886ba7cdb475e6d99a6e771dd9ce",
+        "bytes": 105614
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/pass-b-output.json",
+        "sha256": "e8dd89afcd2c1f04de8fe6646fd0af127c496b952cad90b1f6f926909c6100f4",
+        "bytes": 25416
+      },
+      "readingGate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/pass-b-reading-gate.json",
+        "sha256": "eff96f923f08f13e4cced9050d5b8461f946849fb57bae760dbac7bd3ce922ac",
+        "bytes": 17858
+      },
+      "retainedWithoutNewAssessment": false,
+      "originalOutput": null,
+      "originalFailedAttempts": 1,
+      "authorizedReplacementAttempts": 1,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_256_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/adjudication-packet.json",
+        "sha256": "5c3ccd8dbb9f885c852cf0efcbbaae629485542ccc527d1a166b857c0765927d",
+        "bytes": 152430
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/rhetorical-tag-review-2/adjudication-output.json",
+        "sha256": "ae56985592a40cb364db63b19821168db61d19e4633c54e05eb87a6027384c3d",
+        "bytes": 19825
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "totalBlindReviewAttemptsIncludingPreservedFailure": 3,
+    "authorizedReplacementAttempts": 1,
+    "retries": 0,
+    "unionCandidates": 45,
+    "controllerAcceptedToRejectedCorrections": 10,
+    "controllerRejectedToAcceptedCorrections": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-10T02:15:16.314Z"
+}

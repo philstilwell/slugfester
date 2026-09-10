@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0-preserved-inventory-replacement-validation-hold",
+  "status": "failed-validation-awaiting-further-authorization",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "videoId": "bQBFY1z_RvI",
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/replacement-1/model-output.json",
+    "sha256": "ea8aae10d10dbf76b45b96d91c6312abc4337a00dfe92c8e85ff3433534198d8",
+    "bytes": 56462
+  },
+  "validatorMessage": "inventory: selectionBalanceAudit totals or thresholds differ",
+  "additionalControllerMessage": "pro-secular-country-outcomes: missing audio trigger",
+  "independentlyRecomputedCounts": {
+    "moves": 26,
+    "pro": 12,
+    "con": 14,
+    "sections": [
+      {"sectionId": "history-and-coercive-power", "pro": 3, "con": 2},
+      {"sectionId": "empirical-social-harm", "pro": 5, "con": 5},
+      {"sectionId": "faith-reason-and-evidence", "pro": 1, "con": 4},
+      {"sectionId": "causation-and-interpretive-responsibility", "pro": 3, "con": 3}
+    ]
+  },
+  "blockingFailures": [
+    {
+      "type": "incorrect-count-audits",
+      "detail": "The move array contains 12 pro and 14 con moves, while selectionBalanceAudit reports 11 and 12. Both count audits report empirical-social-harm as 4/4 instead of 5/5, and causation-and-interpretive-responsibility as 3/2 instead of 3/3."
+    },
+    {
+      "type": "publication-capacity-exceeded",
+      "sectionId": "empirical-social-harm",
+      "actualPro": 5,
+      "actualCon": 5,
+      "maximumPerSide": 4,
+      "detail": "A genuine semantic division is required before judgment; claims must not be deleted merely to satisfy the display limit."
+    },
+    {
+      "type": "uncertain-wording-does-not-trigger-required-audio",
+      "moveIds": [
+        "pro-secular-country-outcomes",
+        "con-attribution-and-necessary-cause",
+        "con-evolution-rejection-not-essential",
+        "con-faith-means-committed-trust",
+        "pro-belief-benefit-is-placebo"
+      ],
+      "detail": "Each lists medium materialWordingConfidence but high attributionConfidence. The frozen contract expressly requires below-high attributionConfidence whenever material wording needs verification, even if voice ownership is known."
+    },
+    {
+      "type": "incorrect-semantic-response-targets",
+      "examples": [
+        {
+          "moveId": "con-evolution-rejection-not-essential",
+          "storedTarget": "pro-climate-denial-policy",
+          "sourceEvents": [1116, 1193],
+          "detail": "The selected response addresses rejection of evolution, not the selected Texas climate-policy claim. Shared relevance to science does not make these the same addressed inference."
+        },
+        {
+          "moveId": "con-medical-trust-analogy",
+          "storedTarget": "pro-lacks-greek-expert-concession",
+          "sourceEvents": [2031, 2072],
+          "detail": "The medical analogy challenges the inference from faith-language to belief without evidence, developed between the expertise concession and the analogy. It does not rebut the concession that Aron cannot name a specialist. The actual antecedent and the substantive ensuing pro reply need source-based treatment."
+        }
+      ],
+      "detail": "A complete semantic link and coverage review is needed before acceptance; the examples are not an exhaustive certification of the remaining links."
+    }
+  ],
+  "improvementsVerified": {
+    "chronologicalMoveOrder": true,
+    "nonexactQuoteStrings": 0,
+    "allLongSpansHaveRequiredRationale": true,
+    "selectedThroughFinalApprovedEvent": 2444,
+    "lateCoveragePromptsRepresented": 4,
+    "note": "These improvements do not override the blocking failures or constitute final semantic acceptance."
+  },
+  "workerCompletion": {
+    "agentTask": "/root/debate256_inventory_replacement",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "freshContext": true,
+    "forkTurns": "none",
+    "attempts": 1,
+    "automaticRetries": 0,
+    "workerConfirmedValidationFailure": true,
+    "postDeliveryEditsPermitted": false
+  },
+  "workflowState": {
+    "canonicalInventoryWritten": false,
+    "judgmentsStarted": false,
+    "scorePasses": 0,
+    "publicationStarted": false,
+    "paidTranscriptionCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "commitCreated": false,
+    "pushPerformed": false,
+    "pullRequestCreated": false
+  },
+  "recommendedRecovery": "Seek explicit authorization for one targeted, score-blind inventory repair using the preserved replacement and unchanged approved source. Repair semantic sectioning and actual response relationships without pruning material arguments, connect every lexical uncertainty to audio verification, and have the controller generate both count tables from the actual move array. Preserve this rejected output and write any authorized repair separately. Rerun all inventory and scope gates before judgment."
+}

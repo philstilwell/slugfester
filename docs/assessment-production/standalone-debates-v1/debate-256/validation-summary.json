@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0-standalone-validation-summary",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "completedAt": "2026-09-10T02:25:44.441Z",
+  "source": {
+    "videoId": "bQBFY1z_RvI",
+    "fullTranscriptAcquired": true,
+    "requiredAttributionAudioChecks": 12,
+    "completedAttributionAudioChecks": 12,
+    "unresolvedAttributionChecks": 0,
+    "primarySpeakerExceptionUsed": false,
+    "primarySpeakerScopeAudit": null,
+    "formalRoundsScope": {
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/source/formal-rounds-authorization.json",
+        "sha256": "b8f05192d33cbcb00fa962505bb6a9e78f28e3b97a33e860b02ff847eeec7fc2",
+        "bytes": 2418
+      },
+      "assessedWindow": {
+        "startEvent": 36,
+        "endEvent": 2444,
+        "startMs": 119670,
+        "endMs": 5242429,
+        "durationMs": 5122759
+      },
+      "scope": "Only the opening statements and cross-examination are assessed. Introductory material, all audience questions and answers, and both closing statements delivered after the Q&A are excluded. Procedural transitions within the approved window are not scored.",
+      "requiredReaderDisclosure": "Only the opening statements and cross-examination (1:59–1:27:22) are assessed. All subsequent audience questions and answers, and both speakers' later closing statements, are excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+      "allSubsequentQAndAExcluded": true,
+      "allLaterClosingStatementsExcluded": true,
+      "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+    },
+    "completeRecordingScored": false
+  },
+  "assessment": {
+    "inventoryMoves": 28,
+    "inventorySides": {
+      "pro": 14,
+      "con": 14
+    },
+    "acceptedPrimaryJudgmentPasses": 2,
+    "primaryContextsIncludingPreservedFailures": 4,
+    "authorizedReplacementAttempts": 2,
+    "authorizedReplacedDimensionJudgments": 0,
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "disputes": 24,
+    "scorePasses": 1,
+    "scoreReruns": 0,
+    "manualScoreOverrides": 0,
+    "score": {
+      "pro": 75,
+      "con": 82,
+      "winner": "con"
+    },
+    "stability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.25,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "publication": {
+    "sections": 5,
+    "displayRows": 17,
+    "argumentCards": 28,
+    "descriptionWords": [
+      20,
+      23
+    ],
+    "descriptionMeanWords": 21.25,
+    "critiqueWords": [
+      118,
+      130
+    ],
+    "minimumCritiqueCharacters": 895,
+    "contentParityAuditPassed": true,
+    "sourceExactQuotes": 2,
+    "blindRhetoricalReviews": 2,
+    "rhetoricalCandidatesReviewed": 45,
+    "acceptedCardTags": 5,
+    "acceptedOverallBlunderLinks": 3,
+    "rejectedCandidates": 37,
+    "productionLedger": {
+      "path": "docs/assessment-ledgers/aron-ra-jones-christianity-dangerous-formal-rounds-2019.json",
+      "sha256": "ec39dcaa03fe238373b308b21ee6ca0515fb495d93e5748bb9f44b45a7f97eb3",
+      "bytes": 25313
+    }
+  },
+  "rendering": {
+    "viewports": 2,
+    "screenshots": 11,
+    "argumentCardsPerViewport": 28,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "directCostUsd": 0.3726275,
+  "maximumPossiblePaidCostUsd": 0.3726275,
+  "paidRetries": 0,
+  "publicationInputFiltering": "passed-mechanical-view-filter",
+  "gateScope": "Completed source, assessment, publication and rendering component gates. Subsequent complete repository replay and preflight are recorded separately in validation/final-local-gates.json."
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0-primary-judgment-quality-hold",
+  "status": "blocked-schema-valid-but-substantively-invalid",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "pass": "pass-b",
+  "reviewedAt": "2026-09-09T22:56:45.629Z",
+  "failedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-b/output.json",
+    "sha256": "ce23c8c97c9109bcd6dac4e08c7093ba446c3f6a5673015d2c16241f12fd7cc9",
+    "bytes": 57021
+  },
+  "executionEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/pass-b/quality-failure-1/preserved-execution-evidence.json",
+    "sha256": "49f4b533eb2d6c3004871afe43d92ca93c5b2ab0c93d59c4364da25e32f10981",
+    "bytes": 12465
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/execution-plan.json",
+    "sha256": "2c756c67fa839e8986bcc8bdf2cacddbe7a11dd768b57f0f5406eb6d6d6dac9a",
+    "bytes": 2785
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/formal-rounds-packet.json",
+    "sha256": "c10d495eb4cb237b8e3bb14fce673abe7f92ba369745d328e8abe87fdbcd9339",
+    "bytes": 7436
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/inventory/inventory.json",
+    "sha256": "1ff75f1ccdb5715a878319cccec8c2cb8cd66f14478ae11d673f8b812e081918",
+    "bytes": 111673
+  },
+  "audio": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/audio/audio-verification.json",
+    "sha256": "2b0f80b30e9ca3baf9ebcbdf74777266d02dca5fde783673c9233cc95204ea28",
+    "bytes": 215113
+  },
+  "controllerGuidance": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/judgments/controller-delivery-guidance.json",
+    "sha256": "856275457caeec12045eb985f12209a27d0182543d7dbd48f9f286589cb70024",
+    "bytes": 2000
+  },
+  "formalSchemaValidation": {
+    "status": "passed",
+    "pass": "pass-b",
+    "moves": 28
+  },
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "agentTask": "/root/debate256_judgment_b",
+  "originalAttemptCount": 1,
+  "automaticRetries": 0,
+  "additionalModelAttempts": 0,
+  "directIncrementalCostUsd": 0,
+  "findings": [
+    {
+      "type": "template-derived-dimension-rationales",
+      "affectedDimensionRationaleCount": 168,
+      "evidenceCallId": "call_s3f4z9LJDuTm7xJirQEy7k1g",
+      "detail": "The actual delivery program concatenates copied inventory fields with one of three stock sentences selected solely by the numeric rating band for each dimension. It does not supply distinct source-grounded explanations for the assigned dimension ratings; formatting validity cannot substitute for the rubric's required particular evidence or missing bridge."
+    },
+    {
+      "type": "verified-caption-artifacts-reintroduced-into-assessment",
+      "detail": "Precision rationales mechanically copy pre-verification materialWordingRationale strings, leaving resolved caption defects described as still needing verification and in one case connecting malformed captions to unstable wording."
+    },
+    {
+      "type": "complete-source-review-not-established",
+      "detail": "After a truncated combined full-source read, the reviewer separately displayed events 650–2444. The displayed full-source sequence still omits events 502–649; selected excerpts do not by themselves establish complete approved-source review.",
+      "sourceReadAudit": {
+        "fullApprovedWindow": [
+          36,
+          2444
+        ],
+        "expectedEvents": 2409,
+        "uniqueEventsDisplayedInFullSourceReads": 2261,
+        "missingFromFullSourceReadSequence": [
+          [
+            502,
+            649
+          ]
+        ],
+        "qualification": "Some selected inventory excerpts may overlap this range; those do not establish the required complete approved-source review.",
+        "inspectedToolCallsOnly": true
+      }
+    }
+  ],
+  "examples": [
+    {
+      "moveId": "pro-lacks-greek-expert-concession",
+      "dimension": "evidenceWarrant",
+      "deliveredRationale": "When asked for experts, he says he has no idea and cannot claim missionary testimony as specialist expertise. This specific aggregated support is well connected.",
+      "problem": "The stock high-band phrase describes an admission of not knowing relevant experts as aggregated support, which is not the evidence offered."
+    },
+    {
+      "moveId": "pro-faith-rejects-scientific-evidence",
+      "dimension": "precisionClarity",
+      "deliveredRationale": "Several automatic-caption phrases are malformed, though the contrast between faith, trust, and scientific evidence is clear. The operative claim is Religious faith relies on authority, fallacies, or subjective impressions rather than scientific evidence and therefore impairs evidence-sensitive reasoning. Unstable scope or wording complicates evaluation.",
+      "problem": "The rationale imports malformed automatic captions as a reason for unstable wording although the frozen audio review has already clarified the spoken argument."
+    },
+    {
+      "moveId": "con-climate-acceptance-data",
+      "dimension": "logicalCoherence",
+      "deliveredRationale": "The move links Most surveyed Christian groups accept anthropogenic climate change and religiosity measures did not worsen the adverse political effect. to The environmental example does not establish intrinsic Christian danger. The route is intelligible but leaves a causal or scope bridge implicit.",
+      "problem": "The rating is followed by a generic causal-or-scope-bridge warning, but does not identify which bridge is missing or how the strongest live objection affects that dimension."
+    }
+  ],
+  "recoveryDisposition": "Preserve this schema-valid raw output as a rejected assessment. Do not repair explanations around unsupported frozen ratings or accept it for disagreement extraction; a replacement must judge independently from the corrected score-blind evidence.",
+  "preservation": {
+    "originalOutputUnchanged": true,
+    "sourceAndInventoryUnchanged": true,
+    "otherReviewUnchanged": true,
+    "noScorePassExecuted": true,
+    "noPublicationMutation": true
+  },
+  "nextStep": "Obtain explicit authorization for one fresh isolated replacement for each failed primary pass, preserving all source, audio, inventory and failed outputs."
+}

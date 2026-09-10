@@ -1,0 +1,59 @@
+{
+  "status": "passed-private-production-preview",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/output.json",
+    "sha256": "21b08b21f04b79d2914116291e8178663d00d80579acf64faa0a35080b3a43a1",
+    "bytes": 62745
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "d0eed43ef07189165d5a16c90f2cfb4842d61d999baab2feadb4a98e22d517b0",
+      "bytes": 126500
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "b085029e23605be80422dfed55a0df5aa02e836c12b52c694e25dcc242ba5d65",
+      "bytes": 11531520
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/output.json",
+      "sha256": "21b08b21f04b79d2914116291e8178663d00d80579acf64faa0a35080b3a43a1",
+      "bytes": 62745
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-256/score-pass/output.json",
+      "sha256": "04f7222bae1f476324da7dcfe4f32acb71a6d46fc67820dab65c1d26c963e379",
+      "bytes": 14852
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 256",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/validation/preview-2/command-1.log",
+        "sha256": "4b71a6b0068ded132134b01d425514ae5b29716fab81aa37fc4f7b1a179779b4",
+        "bytes": 60
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-256/validation/preview-2/command-2.log",
+        "sha256": "3a2b9293640c338552b32f832e01957b6df91eca78759fd25537a3e1a64af53d",
+        "bytes": 23
+      }
+    }
+  ],
+  "error": null
+}

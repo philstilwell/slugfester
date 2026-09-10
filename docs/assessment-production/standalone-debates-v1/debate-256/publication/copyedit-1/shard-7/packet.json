@@ -1,0 +1,37 @@
+{
+  "status": "frozen-before-single-field-repair",
+  "debateNumber": "256",
+  "debateId": "aron-ra-jones-christianity-dangerous-formal-rounds-2019",
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-256/publication/raw-prose-output-1.json",
+    "sha256": "b6e5f287227ca0eab8a2e6731f0ed3520198866a490bc628973f660d5e6cf9ac",
+    "bytes": 60794
+  },
+  "allowedFields": [
+    {
+      "path": "candidate.overall.pro.strengths[0]",
+      "before": "Connected abstract dangerousness to concrete mechanisms: coercive law, treatment refusal, family rejection, climate obstruction, and atrocity-justifying interpretation.",
+      "kind": "overallItem",
+      "reasons": [
+        "Expand to 20–26 words without inventing a new strength, claim or evidence; preserve the existing comparative assessment."
+      ],
+      "side": "pro"
+    },
+    {
+      "path": "candidate.overall.con.strengths[2]",
+      "before": "Won the cross-national and faith-science exchanges through precise confounder analysis, covenantal distinctions, and evidence-responsive accounts of trust.",
+      "kind": "overallItem",
+      "reasons": [
+        "Expand to 20–26 words without inventing a new strength, claim or evidence; preserve the existing comparative assessment."
+      ],
+      "side": "con"
+    }
+  ],
+  "instructions": [
+    "Repair only these one or two leaf strings. Do not read or write the complete candidate or unrelated source. Existing assessed substance and all scores are immutable.",
+    "Use everyday natural language; trim surplus phrasing, never remove a material limitation or add boilerplate. Critiques retain exactly Strongest feature:, Principal limitation:, Live burden:, Locked score: sentences.",
+    "Use whitespace word counting, not punctuation splitting. Critique bounds105–130 words,minimum880characters; target118–125. Check the complete authored values in memory before the first delivery.",
+    "Write exactly {status:complete,debateNumber,debateId,repairs:[{path,value}]} in declared order, using apply_patch to the sole output path. One attempt, no retries and no other file edits."
+  ],
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-256/publication/copyedit-1/shard-7/output.json"
+}

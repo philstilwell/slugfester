@@ -1,0 +1,27 @@
+{
+  "status": "source-level-renderer-fix-with-initial-regression-check-passed",
+  "debateNumber": "256",
+  "issue": "The interactive renderDebateObject path omitted saved sourceNote and replaced saved scoringNote with generic text. The static initial HTML retained these fields, so source-record validation alone did not reveal the disclosure disappearing after JavaScript loaded.",
+  "change": "Render existing saved sourceNote in a visible Source and assessment scope section and render existing scoringNote in the scoring panel, retaining its byline and a default for records without that field.",
+  "assessmentDataChanged": false,
+  "existingDebateRecordsChanged": false,
+  "scoreChanges": 0,
+  "assetVersionStrategy": "The existing SEO generator hashes the changed browser source and regenerates all dependent asset URLs; run generation before final verification.",
+  "initialRegressionCheck": {
+    "route": "/debate/licona-carrier-resurrection-formal-rounds-2004/",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "completeSavedScopeNoteVisible": true,
+    "savedScoringNoteVisible": true,
+    "pageScrollWidth": 390,
+    "screenshot": {
+      "path": "output/playwright/standalone-debate-v1/debate-256/source-note-regression-mobile.png",
+      "sha256": "94d24aadaa6da232d90adae0a3bbdaec8e9b61174172b8e87db8940691e918cc",
+      "bytes": 103651
+    },
+    "visualReview": "Complete source disclosure wraps within the phone panel, including assessed time window and exclusion of Q&A. No clipped scope text or page-width overflow."
+  },
+  "remaining": "Verify exact Debate256 notes at both required viewports after final tag application and generated-page refresh."
+}
