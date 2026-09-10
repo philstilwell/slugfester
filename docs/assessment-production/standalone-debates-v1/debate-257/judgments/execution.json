@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 257,
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents with identical approved formal-rounds inputs and disjoint outputs; no API calls or secrets used.",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/paginated/packet.json",
+    "judgmentPacketSha256": "36601aa9a24dd895d469e9ca1237fe6075615e41325e978c8cea869de8ac7b28",
+    "inventorySha256": "5e62746e18b5e6ba58701485a33e3c0a487579e238365b910447c49dd966b8e3",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-a/output.json",
+      "outputSha256": "72befd2daf2cda3459a6c81fb86ae8d0d337e92adc2467455e98e9db5223c309",
+      "outputBytes": 24886,
+      "judgmentCount": 17,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-a/reading-receipt.json",
+        "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/debate257_judgment_a",
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-a/authenticated-reading.json",
+        "sha256": "bb7ad5d5009c7e29c097686144e5f2fef202c2062a2b4a2e03f9b4105e916700",
+        "bytes": 211564
+      }
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-b/output.json",
+      "outputSha256": "8efdd99de0b4d50b9cd0f9ce75ae8db3aa02fc8210038a4009b7a24be3c6b3ee",
+      "outputBytes": 23875,
+      "judgmentCount": 17,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-b/reading-receipt.json",
+        "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/debate257_judgment_b",
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/judgments/pass-b/authenticated-reading.json",
+        "sha256": "9b1a2ba04a3f4c8aeb5c868e9936378c58a98af2f92316ffdaf12d7f7542f978",
+        "bytes": 212422
+      }
+    }
+  ],
+  "completedAt": "2026-09-10T04:29:34.187Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "excludedMaterialSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

@@ -1,0 +1,698 @@
+{
+  "schemaVersion": "1.1-blind-rhetorical-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-after-score-and-critique-lock",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "motion": "Is science a better model for free inquiry than philosophy?",
+  "sourceTranscript": {
+    "path": ".assessment-cache/captions/i5AyjXBgjvA/formal-rounds-source.json",
+    "sha256": "fdc0d3ab573bc643da72d2804cc07f8b91487f9a652e5cb3996be88a0beb9681",
+    "bytes": 90032
+  },
+  "verifiedAudio": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/audio-verification.json",
+    "sha256": "d9a86165d6113c000d95b77edc5bc4d40bf68893f338e6c4c2809bd9f847ba41",
+    "bytes": 106548
+  },
+  "sides": {
+    "pro": {
+      "name": "Scientific inquiry has primacy",
+      "speaker": "Peter Atkins",
+      "color": "teal"
+    },
+    "con": {
+      "name": "Philosophical inquiry remains indispensable",
+      "speaker": "Stephen Law",
+      "color": "coral"
+    }
+  },
+  "catalog": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "primarySpeakerScopeAudit": null,
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/source/formal-rounds-authorization.json",
+      "sha256": "ce46c697db01fc668f903c4329907a1adb83e6172267c00fffc744ba6dd9c196",
+      "bytes": 2682
+    },
+    "assessedWindow": {
+      "startEvent": 64,
+      "endEvent": 683,
+      "startMs": 181319,
+      "endMs": 1730440,
+      "durationMs": 1549121
+    },
+    "scope": "Only the opening statements and first rebuttals are assessed. Introductory material and the entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, are excluded. Moderator logistics within the approved window are not scored.",
+    "requiredReaderDisclosure": "Only the opening statements and first rebuttals (3:01–28:50) are assessed. The entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "allLaterClosingStatementsExcluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "moves": [
+    {
+      "moveId": "pro-evidence-constrains-inquiry",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "evidential-discipline",
+      "sourceSpan": {
+        "startEvent": 73,
+        "endEvent": 87,
+        "startMs": 207800,
+        "endMs": 257680,
+        "excerpt": "Um yes, philosophy is good for free inquiry. Um provided you emphasize the free that is so long as you're not constrained by by evidence and that and that you are free to explore wherever your thoughts take you. This of course is comes out in the worst possible way when theology becomes when philosophy becomes theology where inventions are made which are then pursued down the ages and I think that's a a clear example of an example where free inquiry is iniquitous. Um, that's about all I've"
+      },
+      "claim": "Philosophical freedom detached from evidence can become harmful speculation, exemplified by theology.",
+      "inference": {
+        "premise": "Unconstrained philosophical inventions can persist without evidential correction.",
+        "inference": "An inquiry model that permits such persistence can mislead rather than discover.",
+        "conclusion": "Free inquiry requires evidential constraint, favoring science over unconstrained philosophy."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "pro-scientific-primacy",
+        "tier": "motion",
+        "rationale": "This directly frames evidential constraint as the feature making science the better model of inquiry."
+      },
+      "description": "Atkins argues that inquiry detached from evidence permits inventions to persist uncorrected, so reliable intellectual freedom requires science’s evidential constraints.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins establishes a consequential methodological contrast: evidential constraint supplies correction, reflected in logical coherence 73, responsiveness 76, relevance and burden 77, and precision and clarity 70. Principal limitation: His theological example remains broadly asserted rather than comparatively demonstrated, leaving evidence and warrant at 59 and calibration and charity at 56 because persistence alone does not establish philosophy’s general unreliability. Live burden: He still must connect scientific constraint to freer inquiry without equating intellectual openness with empirical testability or treating every nonempirical investigation as unconstrained invention."
+    },
+    {
+      "moveId": "con-science-best-for-empirical-facts",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "evidential-discipline",
+      "sourceSpan": {
+        "startEvent": 209,
+        "endEvent": 225,
+        "startMs": 639040,
+        "endMs": 679760,
+        "excerpt": "clearly at the outset that if you want to find out about how things spann out there in the world, then the application of the scientific method is one of the very best methods available in terms of discovering how things stand. Um, I rather doubt that you're going to discover anything about how things stand out there in reality by sitting in your armchair with your eyes closed, having a good old think about it. And that is uh Peter's concern. And he's right. Of course that's true. Um so why don't I just then sort of roll over and concede that philosophy is a waste of time then. Well, because that's just a misunderstanding of what philosophy is."
+      },
+      "claim": "Science is among the best methods for discovering empirical reality, but that concession does not make philosophy useless.",
+      "inference": {
+        "premise": "Scientific methods excel at empirical discovery, and unaided reflection does not replace them.",
+        "inference": "That limitation applies only if philosophy is misconstrued as competing empirical science.",
+        "conclusion": "Atkins's evidential criticism does not eliminate philosophy's distinct role."
+      },
+      "respondsToIds": [
+        "pro-evidence-constrains-inquiry",
+        "pro-observation-corrects-speculation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-evidence-constrains-inquiry",
+          "component": "scope",
+          "description": "Accepts evidential constraint for empirical questions but denies that this exhausts philosophy's remit."
+        },
+        {
+          "targetMoveId": "pro-observation-corrects-speculation",
+          "component": "conclusion",
+          "description": "Concedes that armchair speculation cannot discover external facts while rejecting the inference that philosophy is therefore wasted."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "con-philosophical-indispensability",
+        "tier": "motion",
+        "rationale": "Law concedes science's strength while preserving the case that philosophy remains a necessary distinct inquiry."
+      },
+      "description": "Law grants science’s superiority for discovering empirical facts but argues that this concession leaves philosophy’s distinct, nonempirical work untouched and necessary.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law concedes Atkins’s strongest empirical point and precisely narrows the dispute, earning logical coherence 86, responsiveness 90, relevance and burden 87, precision and clarity 88, and calibration and charity 92. Principal limitation: The distinct philosophical function is promised more than established within this move, so evidence and warrant remains 78 until later examples substantiate the proposed division of labor. Live burden: He must demonstrate that conceptual inquiry answers legitimate questions rather than merely renaming activities that scientific practice already incorporates, and that indispensability follows from those examples."
+    },
+    {
+      "moveId": "pro-observation-corrects-speculation",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "evidential-discipline",
+      "sourceSpan": {
+        "startEvent": 97,
+        "endEvent": 118,
+        "startMs": 280680,
+        "endMs": 357720,
+        "excerpt": "without appealing to evidence is exemplified by by the Greek philosophers to whom we show great we should show great deal of of um of pleasure and honor because they did start humanity thinking and I think that was rather wonderful but of course that's all they did and people like Aristotle sat around on marble steps thinking about what the world was probably like should be like is like without appealing to any evidence whatsoever. Not quite true in biology, of course, where he was rather more carefully attuned to evidence, but certainly in physics. And such was his grip on on humanity's inclination to to understand that his errors persisted for millennia. And I think that's an example of where free inquiry without evidence can be extremely damaging. The the joy of science, and it"
+      },
+      "claim": "Aristotle's largely nonempirical physics shows how unsupported reasoning can preserve error for millennia.",
+      "inference": {
+        "premise": "Major physical claims made without evidence persisted despite being erroneous.",
+        "inference": "Inquiry without observation lacks a dependable corrective mechanism.",
+        "conclusion": "Evidence-based scientific inquiry is safer and more productive than free speculation."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "pro-evidential-method",
+        "tier": "central",
+        "rationale": "The historical example is used to motivate observation as science's error-correcting method."
+      },
+      "description": "Atkins invokes Aristotle’s largely nonempirical physics, whose errors persisted for millennia, to argue that scientific observation corrects unsupported speculation more reliably than prestige.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins supplies a concrete historical mechanism—authority preserving unsupported physical speculation—which supports logical coherence 78, responsiveness 79, relevance and burden 80, and precision and clarity 81. Principal limitation: The example is selectively compressed and not independently documented in the exchange, holding evidence and warrant at 67 and calibration and charity at 71 because Aristotle’s empirical biology complicates any wholesale contrast. Live burden: He must show that the episode represents philosophy as such, rather than an early scientific failure later corrected by practices that philosophy can also endorse."
+    },
+    {
+      "moveId": "pro-science-is-integrated",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "scientific-integration",
+      "sourceSpan": {
+        "startEvent": 119,
+        "endEvent": 148,
+        "startMs": 351440,
+        "endMs": 460759,
+        "excerpt": "is a joy of science, is that mankind has stumbled on the most obvious way of thinking about the nature of the world, which is to see what is going on. uh make notes, compare notes, and perhaps most important of all to embed the notes and observations in a reticulation of phenomena. A reticulation the network of um of concepts and understanding. No part of science is an island. And I think we should remember that discoveries in one part of science, discoveries that almost invariably are made on the basis of observation edges further forward never clash with observations made elsewhere in science. One set of observations let us say in cosmology informs the observations in let us say particle physics in two extremes if you like of magnitude and it's quite extraordinary how science and more generally how understanding of the nature of the world edges forward on the basis of related ing observation to um this reticulation of existing of concepts. You can see an effect of that"
+      },
+      "claim": "Science advances by embedding observations in an interconnected network of concepts spanning fields.",
+      "inference": {
+        "premise": "Scientific observations are integrated across fields into a mutually constraining conceptual network.",
+        "inference": "Cross-field integration makes scientific understanding cumulative and coherent.",
+        "conclusion": "Science offers a powerful, progressively unified model of inquiry."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "pro-evidential-method",
+        "tier": "central",
+        "rationale": "It explains how observation plus cross-field integration generates scientific progress."
+      },
+      "description": "Science embeds observations in a mutually constraining network across fields, Atkins argues, producing cumulative coherence and a progressively unified understanding.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins offers a positive model of inquiry in which observations and concepts mutually constrain discoveries across fields, supporting logical coherence 82, responsiveness 83, relevance and burden 85, and precision and clarity 79. Principal limitation: The asserted absence of clashes and the inference from integration to comparative supremacy are insufficiently defended, leaving evidence and warrant at 72 and calibration and charity at 70. Live burden: He must distinguish productive scientific integration from conceptual synthesis performed within philosophy and explain why cross-field coherence reliably tracks truth rather than merely systemic consistency."
+    },
+    {
+      "moveId": "con-specialist-philosophical-skill",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "scientific-integration",
+      "sourceSpan": {
+        "startEvent": 489,
+        "endEvent": 519,
+        "startMs": 1250960,
+        "endMs": 1316159,
+        "excerpt": "philosophy is different to science, but that's not to say that philosophy is a waste of time. It's essentially conceptual engineering. It's important to have philosophers around to be asking the right kind of questions. Very often, it doesn't even occur to the scientist to ask a philosophical question. Um, it seems to me it's important to have philosophers around in the same way it's important to have trained magicians around when scientists are investigating Yuri Gella, right? Because when they investigate Yuri Gella, they get tricked and they get fooled and they miss what any trained magician is going to spot in a minute, right? You need a different skill set when you're dealing with that kind of problem and that kind of claim. And scientists don't have that skill set. Okay. Philos philosophy is similar in that it deals with certain kinds of problems. It employs certain kind of methods. You tend to find the same kind of problems cropping up again and again and again. And see, as a philosophy, you tend to get very good at dealing with those problems. That's what we do. Okay? It's not science. It doesn't pretend to be science, but it is nevertheless, it seems to me, very important. I'll stop"
+      },
+      "claim": "Philosophy remains important because trained philosophers recognize recurring conceptual problems that scientists may overlook.",
+      "inference": {
+        "premise": "Different recurring problems require specialist detection and analysis skills not automatically possessed by scientists.",
+        "inference": "Scientific competence does not subsume every skill needed for critical inquiry.",
+        "conclusion": "Philosophical specialists remain valuable within an integrated intellectual enterprise."
+      },
+      "respondsToIds": [
+        "pro-philosophy-loses-domains"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-philosophy-loses-domains",
+          "component": "conclusion",
+          "description": "Rejects irrelevance by identifying a recurring conceptual skill set that scientific training need not supply."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "con-philosophical-indispensability",
+        "tier": "motion",
+        "rationale": "It directly supports retaining philosophy as a distinct and useful model of inquiry."
+      },
+      "description": "Recurring conceptual mistakes require specialist philosophical skills, Law contends, just as trained magicians detect deceptions that capable scientists can overlook.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law’s magician analogy intelligibly explains why scientific competence need not include every error-detection skill, producing logical coherence 77, responsiveness 84, relevance and burden 81, and precision and clarity 81. Principal limitation: The analogy establishes possible specialization more readily than philosophy’s indispensability, while evidence and warrant 69 reflects the undeveloped claim that scientists generally lack the relevant conceptual abilities; calibration and charity is 78. Live burden: He must specify which philosophical methods reliably outperform interdisciplinary scientific criticism and show that recurring conceptual expertise produces conclusions unavailable through ordinary reasoning."
+    },
+    {
+      "moveId": "pro-philosophy-loses-domains",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "scientific-integration",
+      "sourceSpan": {
+        "startEvent": 149,
+        "endEvent": 166,
+        "startMs": 456240,
+        "endMs": 517719,
+        "excerpt": "in the way that philosophy has slowly lost it any area in which it used to be dominant. Of course, it used to be dominant in theology, but we all know that theology is nonsense and and most philosophers accept that it's nonsense unless they're paid by one church or the other. But serious philosophers, I think secular philosophers know that theology has really been taken away from their their domain. Um, science in general, the the the objects of scientific inquiry which used once to be part of the the domain of philosophy, natural philosophy, of course, they've lost out. No scientist these days listens to what philosophers have to say. My my"
+      },
+      "claim": "As science advances, fields once treated as natural philosophy leave philosophy's domain.",
+      "inference": {
+        "premise": "Science has taken over domains once claimed by natural philosophy.",
+        "inference": "Successful empirical methods displace philosophy where genuine knowledge becomes possible.",
+        "conclusion": "Philosophy's intellectual domain is shrinking as science progresses."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "pro-philosophy-displacement",
+        "tier": "subsidiary",
+        "rationale": "The move argues directly that science absorbs formerly philosophical subject matter."
+      },
+      "description": "Atkins says empirical disciplines repeatedly leave natural philosophy for science, implying that successful knowledge progressively contracts philosophy’s independent intellectual territory.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins connects historical disciplinary migration to the comparative motion, giving an intelligible inference reflected in logical coherence 65, responsiveness 71, relevance and burden 72, and precision and clarity 63. Principal limitation: His universal claims about philosophers, theology, and scientific disregard are asserted without representative evidence, producing evidence and warrant 56 and especially calibration and charity 43 through sweeping occupational generalization. Live burden: He must establish that scientific independence eliminates rather than transforms philosophy’s methodological contribution, and that surviving conceptual questions are unproductive instead of differently answerable."
+    },
+    {
+      "moveId": "pro-science-can-pursue-fundamentals",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "explanatory-scope",
+      "sourceSpan": {
+        "startEvent": 527,
+        "endEvent": 543,
+        "startMs": 1336720,
+        "endMs": 1382840,
+        "excerpt": "What a litany of pessimist. It illustrated the point that I was making. Either the philosophers spend a lot of time saying you'll never be able to do something or they spend their time on problems that have no relevance at all to the world. And you saw examples of that from from Steven's uh talk just now. Will scientists ever be able to talk about the origin of the world from absolutely nothing? Who knows? They are currently trying. And if and it's no point in saying you will not ever do it. Let the scientists get on with the job of doing it. Will the scientists never be able to"
+      },
+      "claim": "Law's alleged ultimate limits express pessimism rather than grounds for stopping scientific investigation.",
+      "inference": {
+        "premise": "Science is currently pursuing origins and permanent impossibility has not been established.",
+        "inference": "An unresolved question does not warrant declaring a boundary science can never cross.",
+        "conclusion": "Fundamental origins should remain a scientific research target rather than a protected philosophical domain."
+      },
+      "respondsToIds": [
+        "con-ultimate-explanation-limit"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-ultimate-explanation-limit",
+          "component": "conclusion",
+          "description": "Challenges the move from current explanatory structure to a permanent limit on scientific inquiry."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "pro-philosophy-displacement",
+        "tier": "subsidiary",
+        "rationale": "It directly resists Law's attempt to reserve ultimate explanation for philosophy."
+      },
+      "description": "Because permanent explanatory limits remain unproved while origin research continues, Atkins urges science to pursue fundamentals instead of accepting philosophical pessimism.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins correctly challenges the modal leap from present explanatory structure to permanent impossibility, supporting logical coherence 71, relevance and burden 72, and precision and clarity 73. Principal limitation: Calling Law pessimistic does not answer the regress concerning laws and prior conditions, so responsiveness falls to 65, evidence and warrant to 61, and calibration and charity to 54. Live burden: He must explain how scientific explanation could terminate or reframe the demand for ultimate grounds rather than merely continue investigating earlier states indefinitely."
+    },
+    {
+      "moveId": "con-ultimate-explanation-limit",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "explanatory-scope",
+      "sourceSpan": {
+        "startEvent": 229,
+        "endEvent": 294,
+        "startMs": 685320,
+        "endMs": 837600,
+        "excerpt": "science addresses many questions. But there appear to be questions appear to be questions that are questions that are beyond the remit of science of the empirical sciences to answer. And you know your you can think of your own examples but the classic examples would be for example why is there anything at all? Why is there something rather than nothing? That's a famous philosophical conundrum. Can can science answer that fundamental question? Well, of course scientists can point to the big bang. They can say we've discovered the big bang happened 13 or 14 billion years ago. But of course that really postpones the question, doesn't it? The mystery of why there's something rather than nothing because well now we want to know well why did the big bang happen rather than not. Um perhaps other theories will develop. Perhaps there'll be a theory of quantum vacuums in which the the big bang happens as a spontaneous event uh given the the the pre-existing quantum conditions. um perhaps that would explain it. But then we just want an explanation for those pre-existing quantum conditions, don't we? Scientific explanations work like this. They point to laws or causes that account for phenomena um and explain the phenomena in that kind of way. If you want a scientific explanation of why the water in your pipes froze last Thursday, the scientist will say it is a law of nature that water freezes below 0 degrees centigrade. The temperature fell below 0° centigrade last Tuesday. Hence the water frozen your pipes last Tuesday. That is a scientific explanation. Perfectly good one. Um but you can see that if that's how scientific explanation works when it comes to the most fundamental laws and most fundamental causes, they will not be explicable by science. They will either just have to accept them as a group fact or we'll have to look for some other kind of explanation for them. And it's those kind of questions then that philosophers are particularly interested in. Theologians too of course they'll be reaching for God at that point. I'm not amongst them. I'm philosopher. It seems to me that the project of philosophy is to attempt to answer these questions as best we can by applying reason. That's not to say that we will necessarily succeed, but we might be able to work out that certain answers are no good no good. And it seems to me that we can figure out pretty quickly that the theological ones are no good. And that it seems to me would be some philosophical progress. Um, another area"
+      },
+      "claim": "Ultimate questions such as why anything exists are not resolved by scientific explanations that invoke prior laws or causes.",
+      "inference": {
+        "premise": "Scientific explanation accounts for phenomena by invoking laws, causes, or prior conditions.",
+        "inference": "The most fundamental laws or conditions cannot be explained in that same regressive manner.",
+        "conclusion": "Reasoned philosophical inquiry has a legitimate role in addressing ultimate explanatory questions beyond empirical science."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "con-nonempirical-scope",
+        "tier": "central",
+        "rationale": "It establishes a principled explanatory domain that Law says empirical science cannot exhaust."
+      },
+      "description": "Scientific explanations invoke laws, causes, or prior conditions; Law argues that ultimate foundations therefore require philosophical reasoning or remain brute facts.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law traces a clear regress from ordinary causal explanation through cosmology to fundamental conditions, reflected in logical coherence 80, responsiveness 82, relevance and burden 83, precision and clarity 84, and calibration and charity 86. Principal limitation: Evidence and warrant 74 reflects an incompletely defended assumption that every possible scientific explanation must retain the cited antecedent structure and that philosophical reasoning can provide more than exclusion. Live burden: He must show that the limit is principled rather than provisional and clarify what successful philosophical progress contributes when a final positive explanation remains unavailable."
+    },
+    {
+      "moveId": "pro-science-explains-morality",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "moral-justification",
+      "sourceSpan": {
+        "startEvent": 545,
+        "endEvent": 560,
+        "startMs": 1382840,
+        "endMs": 1429919,
+        "excerpt": "morality? Of course they can talk about the roots of morality. What they have to do is to take the anthropological evidence. They have to take the ethological evidence. They have to take the evolutionary evidence and they have to think about the way that um we humans can think about the consequences of our actions. So the scientists are working on that other domain of philosophy where which philosophers are desperately trying to defend for themselves. They will fail. scientists will expose the answers to these questions and the philosophers will be left in yet an yet smaller at the corner of the"
+      },
+      "claim": "Science can investigate morality through anthropology, animal behavior, evolution, and the consequences of human action.",
+      "inference": {
+        "premise": "Moral behavior and deliberation have anthropological, behavioral, evolutionary, and consequential evidence.",
+        "inference": "Empirically tractable components make morality accessible to scientific investigation.",
+        "conclusion": "Morality is not secured as an exclusively philosophical domain."
+      },
+      "respondsToIds": [
+        "con-is-ought-limit"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-is-ought-limit",
+          "component": "scope",
+          "description": "Answers the claimed scientific limit by pointing to empirical inquiry into moral origins and deliberative consequences."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "pro-philosophy-displacement",
+        "tier": "subsidiary",
+        "rationale": "The move argues that science is already taking over a domain claimed for philosophy."
+      },
+      "description": "Anthropology, animal behavior, evolution, and consequential reasoning make morality scientifically tractable, Atkins says, weakening claims that it remains philosophy’s exclusive domain.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins identifies several empirically tractable components of moral behavior and deliberation, supporting evidence and warrant 69, logical coherence 65, relevance and burden 61, and precision and clarity 71. Principal limitation: Those causal resources do not answer Law’s justificatory question, driving responsiveness to 48 and calibration and charity to 51 because the reply treats an origins account as though it displaced normative reasoning. Live burden: He must supply or defend the bridge from evolutionary, anthropological, and consequential facts to conclusions about what agents ought to do."
+    },
+    {
+      "moveId": "con-is-ought-limit",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "moral-justification",
+      "sourceSpan": {
+        "startEvent": 295,
+        "endEvent": 338,
+        "startMs": 835200,
+        "endMs": 934639,
+        "excerpt": "in which uh it seems to me that science quickly runs out of steam is morality. Uh, David Hume famously invoked the isought gap. Uh, science discovers what is the case. It discovers that there is blood and that there is screaming and so on. There is pain, there is suffering. But in an argument, premises that concern what is the case always fail logically to support conclusions about what one ought or ought not to do. And yet morality is concerned with what one ought or ought not to do. Therefore, science cannot justify moral positions or moral conclusions, at least not the most fundamental positions that we take. Of course, science has a role within moral debate because very often the clue conclusions we draw are a combination draw on premises that are both moral premises and empirical premises. So for example, I might believe that women ought not to have the vote. I don't believe that by the way, but let's suppose for the sake of argument I believe women ought to have the vote. Why do I believe that? Well, because I believe that women are dim and dim people ought not to have the vote. Now you can see what I've done there. I've got two premises that dim people ought to be able to vote. Uh the the other premise is that women are dim. That premise uh is empirically falsifiable and indeed empirically falsified and scientists can establish that and so they can establish that my conclusion doesn't follow. So it's not that science is irrelevant when it comes to moral argument. It is relevant but science cannot it seems justify our most fundamental moral beliefs because of this famous is gap. So I am not signing"
+      },
+      "claim": "Scientific facts can inform moral arguments but cannot by themselves justify fundamental moral conclusions.",
+      "inference": {
+        "premise": "Science supplies descriptive facts, while morality requires normative conclusions.",
+        "inference": "Descriptive premises alone do not logically entail fundamental ought-claims.",
+        "conclusion": "Fundamental moral justification requires reasoning beyond science, even though science remains relevant to mixed moral arguments."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "con-nonempirical-scope",
+        "tier": "central",
+        "rationale": "The move identifies normative justification as an important limit on empirical science."
+      },
+      "description": "Descriptive science can test empirical premises within moral reasoning, Law argues, but facts alone cannot logically justify the fundamental normative premises required.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law carefully distinguishes descriptive premises, normative premises, and their cooperation in mixed arguments, earning logical coherence 89, evidence and warrant 82, responsiveness 86, relevance and burden 90, precision and clarity 89, and calibration and charity 91. Principal limitation: The move assumes rather than fully defends Hume’s restriction and does not specify which philosophical method positively justifies fundamental norms beyond identifying the gap. Live burden: He must explain how philosophy supplies warranted normative premises without reproducing unsupported intuition, convention, or question-begging evaluative commitments."
+    },
+    {
+      "moveId": "con-origins-do-not-justify-morality",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "moral-justification",
+      "sourceSpan": {
+        "startEvent": 651,
+        "endEvent": 679,
+        "startMs": 1658640,
+        "endMs": 1720080,
+        "excerpt": "the fact that it's very often moral questions that we're interested in. It seems to me that these are some of the most important questions that there are. I've already explained why if fume is correct you can never justify moral conclusions by reference to premises that concern what is the case and those are the only premises that science is going to be able to deliver. Um Peter pointed to uh anthropology and ethnography and so on and various other scientific disciplines which he supposes might ultimately answer the question about the origin of morality which would be very interesting and well worthwhile but completely irrelevant because it wasn't the question that I raised which is why are certain positions right or wrong not why do we think certain positions are right or wrong it may be a product of our evolutionary heritage that we think certain things are right and other things are wrong. That doesn't make them right or wrong. Uh if you want to justify them as moral positions, you're going to need a different kind of argument. Not the argument that Peter offered. I mean, what's striking is that"
+      },
+      "claim": "A scientific explanation of why humans hold moral beliefs does not establish that those beliefs are right.",
+      "inference": {
+        "premise": "Causal accounts explain why people think actions are right or wrong.",
+        "inference": "The origin of a belief does not establish the truth or justification of its normative content.",
+        "conclusion": "Atkins's scientific evidence does not answer Law's moral-justification challenge."
+      },
+      "respondsToIds": [
+        "pro-science-explains-morality"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-science-explains-morality",
+          "component": "relevance",
+          "description": "Distinguishes explaining the causal origins of moral beliefs from justifying which moral positions are correct."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "con-nonempirical-scope",
+        "tier": "central",
+        "rationale": "It sharpens the distinction between empirical moral origins and nonempirical normative justification."
+      },
+      "description": "Explaining why humans acquired moral beliefs does not establish their correctness, Law replies, so Atkins’s causal evidence leaves normative justification unanswered.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law identifies the exact category mismatch in Atkins’s reply—causal genealogy versus normative justification—earning logical coherence 92, evidence and warrant 86, responsiveness 95, relevance and burden 93, precision and clarity 93, and calibration and charity 88. Principal limitation: The rebuttal decisively preserves the question but still leaves the positive source of warranted moral premises unspecified, so victory over this reply is not itself a complete moral theory. Live burden: He must show how philosophical argument can justify normative standards rather than only demonstrating that anthropology and evolution do not suffice."
+    },
+    {
+      "moveId": "pro-conceptualism-is-empty",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "conceptual-analysis",
+      "sourceSpan": {
+        "startEvent": 564,
+        "endEvent": 577,
+        "startMs": 1435000,
+        "endMs": 1477679,
+        "excerpt": "uh all the other problems about concepts that that that philosophers spend their time on conceptual problems. I mean that's empty. It's all about linguistics and people about applying particular um words to particular things. It's a complete waste of time. We all know what a river is. We and if we said that um if I would jump into the river temps twice, the answer would be perfectly clear. And I don't think there is any conceptualizing that except to keep clown philosophers in the jobs that they're trying to do."
+      },
+      "claim": "Conceptual disputes like the same-river example are verbal exercises without real-world value.",
+      "inference": {
+        "premise": "The river question is readily understood and answered in ordinary usage.",
+        "inference": "Further analysis concerns word application rather than discovery about the world.",
+        "conclusion": "Such conceptual philosophy is empty and not a valuable model of inquiry."
+      },
+      "respondsToIds": [
+        "con-identity-distinction",
+        "con-mirror-conceptual-puzzle"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-identity-distinction",
+          "component": "importance",
+          "description": "Treats the same-river analysis as unnecessary verbal elaboration because ordinary usage already settles the practical question."
+        },
+        {
+          "targetMoveId": "con-mirror-conceptual-puzzle",
+          "component": "method",
+          "description": "Generalizes the dismissal to conceptual problems as linguistic rather than world-directed inquiry."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "pro-philosophy-displacement",
+        "tier": "subsidiary",
+        "rationale": "It challenges the asserted productivity of philosophy's distinct conceptual domain."
+      },
+      "description": "Ordinary language already settles practical river talk, Atkins claims, so further conceptual analysis concerns verbal classification rather than consequential discovery about reality.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins directly targets Law’s river example and offers a recognizable ordinary-language deflation, reflected in logical coherence 55, relevance and burden 59, and precision and clarity 65. Principal limitation: He neither addresses Law’s ambiguity diagnosis nor the mirror argument, leaving evidence and warrant 50, responsiveness 52, and calibration and charity 31 amid dismissive occupational rhetoric and unsupported generalization. Live burden: He must distinguish genuinely empty verbal disputes from conceptual analysis that exposes contradiction, clarifies identity, or changes what theories coherently assert."
+    },
+    {
+      "moveId": "con-mirror-conceptual-puzzle",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "conceptual-analysis",
+      "sourceSpan": {
+        "startEvent": 349,
+        "endEvent": 392,
+        "startMs": 953720,
+        "endMs": 1062799,
+        "excerpt": "me then talk about how we might approach these kind of puzzles. What method might we apply? Well, it seems to me that philosophers are essentially conceptual engineers. Okay, we work with concepts and many puzzles are conceptual puzzles. And I'm going to give you one or two examples of simple conceptual puzzles. So, for example, the mirror puzzle. You look into a mirror every day and you don't think twice about it. But now think about this. Why do mirrors reverse left to right but not top to bottom? Why is that? It's a really hard puzzle. You'll find Plato thinking about that puzzle and failing to solve it. Right? Can science solve that puzzle? The answer is no, it can't because it doesn't matter how much scientific data you get in or how many scientific theories you develop about how light bounces off the surface of the mirror. The fact is that the light bounces off the surface of the mirror in exactly the same way whether it's on this axis or in that axis. It makes no difference whatsoever. You can have as many scientific discoveries and as much scientific theorizing as you like. You will never solve that puzzle until you start thinking conceptually. It's a conceptual puzzle. If you want to solve that puzzle, you can do it from the comfort of your armchair. I'm not going to do it for you now. Uh but you can do it from the comfort of your armchair. It's essentially something you can figure out with your eyes closed just by having a think about it. That's philosophy. That's what philosophy is. There are puzzles that are purely conceptual in nature that you need conceptual meanings to solve."
+      },
+      "claim": "Some puzzles, illustrated by mirror reversal, are conceptual rather than empirical and require conceptual analysis.",
+      "inference": {
+        "premise": "The mirror's physical behavior does not differ across the relevant axes.",
+        "inference": "More empirical data of that kind cannot resolve a puzzle generated by how the situation is conceptualized.",
+        "conclusion": "Conceptual engineering is a genuine philosophical method with problems science alone cannot solve."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "con-conceptual-method",
+        "tier": "subsidiary",
+        "rationale": "The example demonstrates the claimed independent operation of conceptual analysis."
+      },
+      "description": "Because reflection behaves symmetrically across axes, Law argues that the mirror’s apparent left-right reversal is a conceptual puzzle, not an empirical deficit.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law uses the symmetry of reflected light to motivate a distinct explanatory question, supporting logical coherence 77, responsiveness 80, relevance and burden 77, and precision and clarity 82. Principal limitation: He announces rather than demonstrates the conceptual solution, leaving evidence and warrant 69 and calibration and charity 72 because science’s inability to solve it depends on a contestable boundary around explanation. Live burden: He must present the resolving distinction and show why it constitutes important inquiry rather than an instructive semantic clarification already available within scientific pedagogy."
+    },
+    {
+      "moveId": "con-identity-distinction",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "conceptual-analysis",
+      "sourceSpan": {
+        "startEvent": 410,
+        "endEvent": 454,
+        "startMs": 1092960,
+        "endMs": 1183520,
+        "excerpt": "all the way back to ancient Greece is can you jump in the same river twice? Heracitus pondered that one. Um, you might think, well, if I jump in and then I get out and then I jump in again and the water's moved a bit and the fish have pooed in the water and it's changed in various ways. So, it's not the same river. And if it's not the same river, then the number of rivers, right, is two, not one. Uh, but that sounds wrong, doesn't it? Um, here's another reason why you can't jump in the same river twice. It won't be you that jumps in the second time because you would have changed in the inter room no matter how short a period of time is elapsed. There will change would have taken place. So it won't be the same person. Therefore, the number of people are is two. In other words, nothing ever changes. It's just it just disappears and gets replaced by another thing that's very slightly different to it. And that's an extraordinarily silly and absurd metaphysical conclusion generated by an argument that's got something wrong with it. Right? How do you do do you figure out what's wrong with the argument by doing empirical science? No. Right. The way you figure out what's wrong with the argument is you sit in your armchair with your eyes closed and you start making conceptual distinctions in this case between different kinds of sameness or identity. That argument just trades on an ambiguity between two different ways of using the expression the same. And once you've spotted that, you go, \"Well, of course.\" Right? But until you've spotted it, you might be tempted to draw some silly metaphysical conclusions. Again, philosophical progress. So phil that's what"
+      },
+      "claim": "The same-river puzzle is resolved by distinguishing kinds of sameness rather than gathering more empirical data.",
+      "inference": {
+        "premise": "An argument denying persistence through change equivocates between different senses of identity.",
+        "inference": "Exposing the conceptual ambiguity removes the apparent metaphysical conclusion.",
+        "conclusion": "Conceptual distinction can produce real philosophical progress."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "con-conceptual-method",
+        "tier": "subsidiary",
+        "rationale": "It provides a second, structurally distinct example of conceptual analysis resolving an argument."
+      },
+      "description": "The same-river paradox equivocates between kinds of identity; distinguishing persistence from unchanged composition dissolves the absurd conclusion that change continually replaces objects.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law reconstructs an absurd replacement conclusion and diagnoses its equivocation between senses of sameness, earning logical coherence 87, evidence and warrant 81, responsiveness 84, relevance and burden 82, precision and clarity 88, and calibration and charity 84. Principal limitation: The example demonstrates conceptual clarification more securely than motion-level indispensability, since ordinary language may already encode the distinction without professional philosophical intervention. Live burden: He must connect resolution of identity ambiguities to consequential free inquiry and establish that comparable analytical work cannot be absorbed into scientifically informed theorizing."
+    },
+    {
+      "moveId": "con-thought-experiment-refutes-theory",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "conceptual-analysis",
+      "sourceSpan": {
+        "startEvent": 605,
+        "endEvent": 648,
+        "startMs": 1547919,
+        "endMs": 1656240,
+        "excerpt": "also it's also worth remembering that scientists themselves acknowledge the importance of conceptual work. So for example there is the famous thought experiment run by Galileo who uh was a critic of the arisatilian view right that uh had the consequence that a large metal ball and a small metal ball differing masses would fall at different speeds depending on the mass. Okay, that was a consequence of the aristocian theory and Galileo um is supposed to climb the tower of Piser and thrown these two walls off to see what would happen. But actually he probably didn't do that and what he certainly did do was he ran a thought experiment. He said imagine bit of conceptual work now imagine the two balls are chained together right now if Aristotle theory is true how are they going to fall are they going to fall faster or slower at the same speed you've just combined their mass so they must fall faster however the small ball being chained to the big ball it previously fell slower than the big ball it will be acting as a break on the big ball therefore the two balls must fall slower So we've just derived a logical contradiction from Aristotle's theory of motion which shows that Aristotle's theory of motion is false. So we've just sh we don't know what's actually going to happen when you throw the balls off the top of the l tower of pieces. We have to do some science to establish that. But you know in advance that that particular scientific theory is false and we've established that by doing conceptual engineering. Okay. So even scientists do it see the value of it. um"
+      },
+      "claim": "Galileo's linked-balls thought experiment shows conceptual reasoning can rule out a scientific theory before further experiment.",
+      "inference": {
+        "premise": "A scientific theory generates incompatible predictions under a coherently imagined case.",
+        "inference": "A theory entailing contradiction can be rejected through conceptual reasoning, even before observation determines the actual outcome.",
+        "conclusion": "Scientists themselves rely on valuable conceptual engineering."
+      },
+      "respondsToIds": [
+        "pro-conceptualism-is-empty"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-conceptualism-is-empty",
+          "component": "conclusion",
+          "description": "Counters the dismissal by showing conceptual reasoning can establish the falsity of a substantive scientific theory."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "con-conceptual-method",
+        "tier": "subsidiary",
+        "rationale": "The thought experiment demonstrates conceptual analysis doing independently assessable work within science."
+      },
+      "description": "Galileo’s linked balls make Aristotle’s theory predict both faster and slower descent, so conceptual contradiction can reject a scientific theory before experimentation.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law derives incompatible predictions from Aristotle’s mass-dependent account and distinguishes refuting that theory from discovering actual motion, earning logical coherence 91, evidence and warrant 85, responsiveness 93, relevance and burden 90, precision and clarity 91, and calibration and charity 90. Principal limitation: The historical illustration alone does not establish that such reasoning belongs uniquely to philosophy rather than theoretical science, logic, or their shared methods. Live burden: He must justify the institutional boundary while preserving his stronger methodological conclusion that observation is not the only source of legitimate constraint."
+    },
+    {
+      "moveId": "pro-scientific-optimism",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "sectionId": "mind-and-consciousness",
+      "sourceSpan": {
+        "startEvent": 169,
+        "endEvent": 194,
+        "startMs": 519640,
+        "endMs": 596399,
+        "excerpt": "of philosophers and scientists is that you is that philosophers are almost invariably pessimists whereas scientists are almost invariably optimists and that philosophers say you cannot tread there. You will never understand. scientists largely ignoring this um these um these sheet anchors of philosophy um goes into the laboratory of some work and then shows to the philosopher what they thought could never be done and we know that there are big open questions extraordinarily difficult questions which philosophers think that and indeed many assert it will never be within our capability of resolving it such as the origin of the universe, such as the nature of consciousness. Don't listen to them. The evidence is supportive of the optimism that science that pervades the the attitudes of of scientists. We are edging towards understanding and there is no reason to suppose other than pessimism that we will not get there."
+      },
+      "claim": "Philosophical declarations that consciousness and other hard problems are permanently inaccessible are unjustified pessimism.",
+      "inference": {
+        "premise": "Scientific work has overcome supposed limits and continues to advance toward hard problems including consciousness.",
+        "inference": "Past and present progress undercuts claims of permanent impossibility.",
+        "conclusion": "Inquiry should retain scientific optimism rather than accept philosophical limits."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "burdenContact": {
+        "bridgeId": "pro-philosophy-displacement",
+        "tier": "subsidiary",
+        "rationale": "It denies that philosophy can set permanent boundaries around scientific inquiry."
+      },
+      "description": "Past scientific progress undermines declarations of permanent limits, Atkins argues, warranting continued optimism about difficult problems including consciousness and cosmic origins.",
+      "critiqueWithoutLockedScore": "Strongest feature: Atkins supplies a sensible defeasible warning against converting present difficulty into permanent impossibility, supporting logical coherence 69, responsiveness 74, relevance and burden 71, and precision and clarity 69. Principal limitation: The appeal to generalized historical progress does not specifically warrant eventual explanations of consciousness or origins, leaving evidence and warrant 60 and calibration and charity 48 because philosophers are characterized collectively as pessimistic boundary-setters. Live burden: He must identify progress bearing directly on the conceptual obstacle Law later describes and distinguish justified research optimism from an unrestricted promissory claim."
+    },
+    {
+      "moveId": "con-mind-body-conceptual-obstacle",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "sectionId": "mind-and-consciousness",
+      "sourceSpan": {
+        "startEvent": 457,
+        "endEvent": 486,
+        "startMs": 1185120,
+        "endMs": 1248080,
+        "excerpt": "trivial examples, but the mind body problem is in in essence a philosophical puzzle. It's a conceptual puzzle. Scientists may discover all sorts of facts about minds and brains and what goes on in one being correlated with something going on in the other and so on. But is the mind the brain? or not. What's the connection between the two? There appears to be a philosophical puzzle there because on the one hand, it looks like minds have to be brains or at least physical in order to have any physical effects. On the other hand, it seems they can't possibly be because there seems to be some kind of conceptual obstacle to identifying minds with brains. I won't go into the detail, but there appears to be such a conceptual obstacle. If you are as a scientist want to solve that puzzle and show that minds are brains, you have to do conceptual engineering. You're going to have to employ a philosopher because it's a philosophical conceptual puzzle, not a scientific puzzle. No matter how much science you do, you're never going to solve the conceptual puzzle that is the mind body problem. So it seems to me"
+      },
+      "claim": "Scientific correlations between minds and brains do not by themselves resolve the conceptual question whether minds are brains.",
+      "inference": {
+        "premise": "Empirical brain correlations coexist with an unresolved conceptual obstacle to mind-brain identity.",
+        "inference": "Additional empirical findings alone do not remove an obstacle concerning what identification means.",
+        "conclusion": "Solving the mind-body problem requires conceptual philosophical work as well as science."
+      },
+      "respondsToIds": [
+        "pro-scientific-optimism"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-scientific-optimism",
+          "component": "inference",
+          "description": "Argues that empirical progress about correlations does not itself settle the conceptual identity question."
+        }
+      ],
+      "burdenContact": {
+        "bridgeId": "con-conceptual-method",
+        "tier": "subsidiary",
+        "rationale": "It applies conceptual analysis to Atkins's named consciousness test case."
+      },
+      "description": "Brain correlations do not alone establish mind-brain identity, Law argues, because physical causation and apparent conceptual resistance generate a problem requiring analysis.",
+      "critiqueWithoutLockedScore": "Strongest feature: Law precisely distinguishes accumulating mind-brain correlations from establishing identity, supporting responsiveness 76, relevance and burden 74, logical coherence 69, and precision and clarity 69. Principal limitation: The purported conceptual obstacle is repeatedly asserted but never explained, leaving evidence and warrant 57 and calibration and charity 67 because the claim of scientific insufficiency exceeds the supplied analysis. Live burden: He must articulate the incompatible concepts, show why identity cannot be reformulated through scientific theory, and demonstrate what philosophical engineering would resolve."
+    }
+  ],
+  "overallBlunders": [
+    {
+      "blunderId": "overall-pro-blunder-1",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "text": "He repeatedly substitutes sweeping ridicule of philosophers for comparative evidence, weakening fairness and obscuring distinctions among philosophical methods."
+    },
+    {
+      "blunderId": "overall-pro-blunder-2",
+      "side": "pro",
+      "speaker": "Peter Atkins",
+      "text": "His moral reply explains belief origins and deliberative inputs but does not answer Law’s separate question about normative justification."
+    },
+    {
+      "blunderId": "overall-con-blunder-1",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "text": "The mirror solution and mind-body obstacle are announced rather than developed, leaving their claimed philosophical necessity incompletely demonstrated."
+    },
+    {
+      "blunderId": "overall-con-blunder-2",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "text": "His examples show conceptual reasoning resolving ambiguity and refuting a theory, but establish neither professional philosophy’s exclusive ownership of those methods nor institutional indispensability."
+    }
+  ],
+  "instructions": {
+    "assessOnlyApprovedFormalRounds": true,
+    "excludedQAndAUnavailable": true,
+    "verifiedAudioMustBeReviewed": true,
+    "captionGlitchesAreNotParticipantDefects": true,
+    "reviewEveryMoveInPublicationOrder": true,
+    "reviewEveryOverallBlunder": true,
+    "applyEveryCatalogDefinition": true,
+    "recordAllSeriousCandidatesIncludingAcceptancesAndRejections": true,
+    "doNotInventTagQuota": true,
+    "doNotTagMereWeaknessDisagreementCitationsOrAnalogy": true,
+    "identifyObservableDefinitionMechanism": true,
+    "distinguishFallacyFromBias": true,
+    "avoidDuplicatingOneMechanismWithTwoTagsUnlessDistinct": true,
+    "scoresAndWinnerUnavailable": true,
+    "otherReviewerAndOtherDebatesUnavailable": true,
+    "contextWords": [
+      8,
+      35
+    ],
+    "rationaleMinimumWords": 12
+  },
+  "outputContract": {
+    "schemaVersion": "1.1",
+    "status": "complete-and-schema-valid",
+    "pass": "pass-a or pass-b",
+    "reviewedMoveIds": [
+      "pro-evidence-constrains-inquiry",
+      "con-science-best-for-empirical-facts",
+      "pro-observation-corrects-speculation",
+      "pro-science-is-integrated",
+      "con-specialist-philosophical-skill",
+      "pro-philosophy-loses-domains",
+      "pro-science-can-pursue-fundamentals",
+      "con-ultimate-explanation-limit",
+      "pro-science-explains-morality",
+      "con-is-ought-limit",
+      "con-origins-do-not-justify-morality",
+      "pro-conceptualism-is-empty",
+      "con-mirror-conceptual-puzzle",
+      "con-identity-distinction",
+      "con-thought-experiment-refutes-theory",
+      "pro-scientific-optimism",
+      "con-mind-body-conceptual-obstacle"
+    ],
+    "reviewedOverallBlunderIds": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-2",
+      "overall-con-blunder-1",
+      "overall-con-blunder-2"
+    ],
+    "candidateReviews": "[{moveId,type,label,url,context,decision:accepted|rejected,rationale}] for every serious move candidate",
+    "overallBlunderCandidateReviews": "[{blunderId,type,label,url,context,decision:accepted|rejected,rationale}] for every serious overall candidate",
+    "acceptedTags": "exact accepted subset of candidateReviews",
+    "acceptedOverallBlunderLinks": "exact accepted subset of overallBlunderCandidateReviews",
+    "audit": {
+      "allMovesReviewed": true,
+      "allOverallBlundersReviewed": true,
+      "allCatalogDefinitionsConsidered": true,
+      "noTagQuota": true,
+      "scoreBlind": true
+    }
+  }
+}

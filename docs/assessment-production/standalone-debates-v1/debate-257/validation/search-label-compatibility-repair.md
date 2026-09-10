@@ -1,0 +1,7 @@
+# Existing Search label and design-check compatibility
+
+The first full repository check failed because `scripts/validate-design-template.mjs` still required the literal `Interlocutor filters`. The authorized baseline commit `abe73913cce0ee9f1e562ee97a94c65b00e89897` (PR #47, “Clarify Search photo accordion invitation”) already changed the app to `Interlocutor photos &amp; filters` and the explicit participant-photo invitation. This mismatch predates Debate 257; the original full-check output is preserved in `gates-5.log` and `failed-gates.json`.
+
+The narrowly scoped compatibility repair replaces that one obsolete label assertion with an exact assertion for the approved strong-element text and adds an exact assertion for its approved small-element invitation. The surrounding checks still require the person filter and accordion and still prohibit the retired topic-filter design. No accessibility rule, page-size budget, scoring control, publication requirement, historical artifact, or app behavior is changed. The skill permits deterministic repair of stale living audit expectations without altering frozen evidence.
+
+Separately, the generator changes 13 browser import-version strings in `src/app.js` and regenerates the debate summaries, analytics, section extremes, detail, reference occurrences, and dependent HTML. These are expected generated outputs of adding the new debate. A final diff assertion compares the app against baseline after normalizing only those generated version strings; all substantive app code must remain byte-identical.

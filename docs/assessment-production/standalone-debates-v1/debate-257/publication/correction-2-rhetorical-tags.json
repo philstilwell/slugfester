@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "de8833493000ec30073744001c49d9c76e53767e01c8cd1d66bc1576cccd0c12",
+    "bytes": 45733
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[3].exchanges[0].pro.tags",
+        "candidate.sections[4].exchanges[0].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.overall.pro.blunders[0].links",
+        "candidate.overall.pro.blunders[1].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 4,
+    "acceptedTagCount": 2,
+    "overallBlunderLinkChanges": 2,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/output.json",
+      "sha256": "096c60ba21c3e450b32c2ede56e1ce5a11866054038cae78711740e7c9668e4f",
+      "bytes": 46643
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/rhetorical-tag-audit.json",
+      "sha256": "c1ee26c290acb24be2e20a1eaf91386d74ed850907d5f0b49c3089d0a18c90d9",
+      "bytes": 69111
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "7b95258844d3142aa185ff0c3e33641b9c007de995064bb1534bb8310fd9f060",
+      "bytes": 50707
+    }
+  }
+}

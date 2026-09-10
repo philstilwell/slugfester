@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0-isolated-inventory-execution-plan",
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-10T03:58:12.781Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/packet.json",
+      "sha256": "c8395397b4d091bd9210edb85cc1fb9f0c4b964f022f40980ac1a5ec7a3fe95c",
+      "bytes": 7551
+    },
+    {
+      "path": ".assessment-cache/captions/i5AyjXBgjvA/formal-rounds-source.json",
+      "sha256": "fdc0d3ab573bc643da72d2804cc07f8b91487f9a652e5cb3996be88a0beb9681",
+      "bytes": 90032
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-257/inventory/model-output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "paidServicesAllowed": false,
+  "directIncrementalCostUsd": 0,
+  "forbiddenInputs": [
+    "excluded recording",
+    "other debates",
+    "judgments",
+    "scores",
+    "publication prose",
+    "legacy assessments"
+  ],
+  "instruction": "Use only the named packet and its formal-rounds source; write only the named model-output JSON using apply_patch. Do not read other files, spawn children, use APIs, or make other changes."
+}

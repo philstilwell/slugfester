@@ -1,0 +1,50 @@
+{
+  "status": "failed-private-production-preview",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/syntax-repair-1/normalized-output.json",
+    "sha256": "d34b1ff33d67235d3c394b8524cbc0616450e9eb8aff8c18ba23c9f4601a8a5e",
+    "bytes": 41540
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "a672d85d49a19677c0c99ab77752a2641b708c1f4765b597632f6782f52d255c",
+      "bytes": 128320
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "2577b8d3463fda1b0acc588b37a766a4409636b1ba72ccba3a26f7e15b605b50",
+      "bytes": 11590835
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/publication/syntax-repair-1/normalized-output.json",
+      "sha256": "d34b1ff33d67235d3c394b8524cbc0616450e9eb8aff8c18ba23c9f4601a8a5e",
+      "bytes": 41540
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/score-pass/output.json",
+      "sha256": "96ff9f93a4b66e864a90b16584f804e9f877b823087128585bf6b701f6c53a52",
+      "bytes": 10271
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 257",
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/validation/preview-1/command-1.log",
+        "sha256": "b33d361a5ef320985d00c5e1277f99c9f928f477d164bd5714844d662a256275",
+        "bytes": 1100
+      }
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: scripts/audit-assessment-production-standalone-v1.mjs failed; see docs/assessment-production/standalone-debates-v1/debate-257/validation/preview-1/command-1.log\n\n1 !== 0\n"
+}

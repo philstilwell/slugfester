@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-10T03:58:12.765Z",
+  "repositoryBaseline": {
+    "branch": "codex/debate-257",
+    "head": "abe73913cce0ee9f1e562ee97a94c65b00e89897",
+    "localMain": "abe73913cce0ee9f1e562ee97a94c65b00e89897",
+    "originMain": "abe73913cce0ee9f1e562ee97a94c65b00e89897",
+    "clean": true,
+    "isolationReason": "New working copy from synchronized clean main; unrelated unfinished working copies preserved."
+  },
+  "identity": {
+    "debateNumber": "257",
+    "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+    "videoId": "i5AyjXBgjvA",
+    "canonicalUrl": "https://www.youtube.com/watch?v=i5AyjXBgjvA",
+    "sourceTitle": "Peter Atkins debates Stephen Law - Science or philosophy, which is best? (World Humanist Congress)",
+    "eventYear": 2014,
+    "uploadDate": "2015-05-22",
+    "title": "Peter Atkins vs Stephen Law — Science or philosophy? (2014, formal rounds)",
+    "label": "Science and conceptual inquiry",
+    "topicCategory": "science-design",
+    "motion": "Is science a better model for free inquiry than philosophy?",
+    "pro": {
+      "speaker": "Peter Atkins",
+      "position": "Scientific inquiry has primacy"
+    },
+    "con": {
+      "speaker": "Stephen Law",
+      "position": "Philosophical inquiry remains indispensable"
+    },
+    "moderator": "Pavan Dhaliwal",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": false
+    },
+    "formalRoundsScope": {
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-257/source/formal-rounds-authorization.json",
+        "sha256": "ce46c697db01fc668f903c4329907a1adb83e6172267c00fffc744ba6dd9c196",
+        "bytes": 2682
+      },
+      "assessedWindow": {
+        "startEvent": 64,
+        "endEvent": 683,
+        "startMs": 181319,
+        "endMs": 1730440,
+        "durationMs": 1549121
+      },
+      "scope": "Only the opening statements and first rebuttals are assessed. Introductory material and the entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, are excluded. Moderator logistics within the approved window are not scored.",
+      "requiredReaderDisclosure": "Only the opening statements and first rebuttals (3:01–28:50) are assessed. The entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+      "allSubsequentQAndAExcluded": true,
+      "allLaterClosingStatementsExcluded": true,
+      "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "boundaryVerificationKnownCostUsd": 0.0164025,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-257",
+    "docs/assessment-ledgers/atkins-law-science-philosophy-formal-rounds-2014.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/transcript-corpus",
+    "src/data/debates.js",
+    "src/data/debate-index.js",
+    "src/data/debate-details",
+    "debate",
+    "interlocutors",
+    "topics",
+    "search",
+    "rankings",
+    "index.html",
+    "sitemap.xml",
+    "output/playwright/standalone-debate-v1/debate-257",
+    "generated site output belonging to this addition"
+  ]
+}

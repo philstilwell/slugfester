@@ -1,0 +1,305 @@
+{
+  "status": "passed-before-inventory-lock",
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/model-output.json",
+    "sha256": "53d5bec7da8e25108d10470e5e1c2cd52e338cca982b1ca605a052172dee30b7",
+    "bytes": 40936
+  },
+  "failure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/initial-validation-failure.json",
+    "sha256": "361fd7d687e1870b849e9211f7587600bda690dee97cca07a18aeaf056a97fce",
+    "bytes": 3546
+  },
+  "normalizedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/normalized-output.json",
+    "sha256": "fbdea8fc151573a1f9ef23e06ea63af638e75240d7a2a6c35849086c3334a22f",
+    "bytes": 52250
+  },
+  "controller": {
+    "path": "scripts/tmp-standalone-inventory-normalize.mjs",
+    "sha256": "4ca5c4698eedee0ea1bf3f762299e4c1d30fbae3a8373dc4bfc65dd3146d2f81",
+    "bytes": 5696
+  },
+  "shards": [
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[0].attributionConfidence",
+        "moves[0].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The span lies securely within Atkins's opening block and contains a continuous first-person position."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The span lies securely within Atkins's opening block and contains a continuous first-person position. Combined audio-review confidence is medium because material wording requires verification: The automatic caption phrase 'free inquiry is iniquitous' is meaningful but contextually unusual and merits audio verification."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-1",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[2].attributionConfidence",
+        "moves[2].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The span is wholly within Atkins's opening and maintains one continuous account."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The span is wholly within Atkins's opening and maintains one continuous account. Combined audio-review confidence is medium because material wording requires verification: The caption at event 146 is garbled, but the surrounding account of relating observation to a conceptual network remains clear."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-2",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[3].attributionConfidence",
+        "moves[3].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "Atkins is the sole speaker throughout this opening span."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "Atkins is the sole speaker throughout this opening span. Combined audio-review confidence is medium because material wording requires verification: The phrase 'lost it any area' is caption-corrupted, though the domain-loss claim is clear from adjacent events."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-3",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[5].attributionConfidence",
+        "moves[5].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The span begins well inside Law's opening after the speaker handover."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The span begins well inside Law's opening after the speaker handover. Combined audio-review confidence is medium because material wording requires verification: Event 210's 'how things spann out' appears caption-corrupted, but the repeated empirical-method point is clear."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-4",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[6].attributionConfidence",
+        "moves[6].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The entire passage is Law's uninterrupted opening argument."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The entire passage is Law's uninterrupted opening argument. Combined audio-review confidence is medium because material wording requires verification: Event 276 captions 'group fact,' likely a meaningful mistranscription of the type of unexplained fact, so audio review is warranted."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-5",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "source-exact-quotation-format",
+      "fields": [
+        "moves[6].quoteEligibleExactSpans[1]"
+      ],
+      "before": "why is there something rather than nothing",
+      "after": "Why is there something rather than nothing",
+      "reason": "Match canonical caption capitalization and wording; do not correct the caption itself or alter the selected claim.",
+      "shardId": "mechanical-6",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "source-grounded-transport-rationale",
+      "fields": [
+        "moves[6].spanLengthRationale"
+      ],
+      "before": null,
+      "after": "The passage traces the ultimate-explanation question through the Big Bang, quantum conditions, and an ordinary law-based explanation before drawing the fundamental-limit conclusion and specifying philosophy’s qualified role; retaining that contiguous chain prevents presenting the alleged limit without its stated method and qualification.",
+      "spanUnchanged": true,
+      "shardId": "mechanical-7",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[7].attributionConfidence",
+        "moves[7].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "Law speaks continuously and explicitly labels the inferential gap."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "Law speaks continuously and explicitly labels the inferential gap. Combined audio-review confidence is medium because material wording requires verification: Several example captions reverse or garble the voting proposition, but the general is-ought argument is independently explicit and clear."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-8",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "source-exact-quotation-format",
+      "fields": [
+        "moves[7].quoteEligibleExactSpans[2]"
+      ],
+      "before": "science cannot justify our most fundamental moral beliefs",
+      "after": "science cannot justify moral positions",
+      "reason": "Match canonical caption capitalization and wording; do not correct the caption itself or alter the selected claim.",
+      "shardId": "mechanical-9",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[9].attributionConfidence",
+        "moves[9].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "Law owns the full example within his opening block."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "Law owns the full example within his opening block. Combined audio-review confidence is medium because material wording requires verification: Event 425's 'changed in the inter room' is materially garbled, although the change-over-time premise remains recoverable from context."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-10",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[11].attributionConfidence",
+        "moves[11].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The move concludes Law's uninterrupted opening."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The move concludes Law's uninterrupted opening. Combined audio-review confidence is medium because material wording requires verification: The name 'Yuri Gella' may be a caption rendering requiring audio confirmation, though the magician analogy is clear."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-11",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "source-exact-quotation-format",
+      "fields": [
+        "moves[13].quoteEligibleExactSpans[1]"
+      ],
+      "before": "anthropological evidence",
+      "after": "take the anthropological evidence.",
+      "reason": "Match canonical caption capitalization and wording; do not correct the caption itself or alter the selected claim.",
+      "shardId": "mechanical-12",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[14].attributionConfidence",
+        "moves[14].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The span is within Atkins's first rebuttal with no ownership ambiguity."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The span is within Atkins's first rebuttal with no ownership ambiguity. Combined audio-review confidence is medium because material wording requires verification: Event 572 captions 'river temps,' a meaningful corruption in the named river example, so audio verification is appropriate."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-13",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[15].attributionConfidence",
+        "moves[15].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "The span is fully within Law's rebuttal after the applause transition."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "The span is fully within Law's rebuttal after the applause transition. Combined audio-review confidence is medium because material wording requires verification: Several proper names and locations are visibly caption-corrupted, though the linked-ball contradiction and conclusion are clear."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-14",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "kind": "deterministic-contract-routing",
+      "fields": [
+        "moves[16].attributionConfidence",
+        "moves[16].attributionRationale"
+      ],
+      "before": {
+        "attributionConfidence": "high",
+        "attributionRationale": "Law owns the full final rebuttal span used here."
+      },
+      "after": {
+        "attributionConfidence": "medium",
+        "attributionRationale": "Law owns the full final rebuttal span used here. Combined audio-review confidence is medium because material wording requires verification: Event 655 captions 'if fume is correct,' likely a meaningful proper-name error, while the repeated logical distinction is clear."
+      },
+      "meaningOrVoiceOwnershipChanged": false,
+      "shardId": "mechanical-15",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "debateNumber": "257",
+    "sections": 6,
+    "moves": 17,
+    "belowHighAttributionMoveIds": [
+      "pro-evidence-constrains-inquiry",
+      "pro-science-is-integrated",
+      "pro-philosophy-loses-domains",
+      "con-science-best-for-empirical-facts",
+      "con-ultimate-explanation-limit",
+      "con-is-ought-limit",
+      "con-identity-distinction",
+      "con-specialist-philosophical-skill",
+      "pro-conceptualism-is-empty",
+      "con-thought-experiment-refutes-theory",
+      "con-origins-do-not-justify-morality"
+    ]
+  },
+  "selectedMoveIdsUnchanged": true,
+  "sourceSpansClaimsInferenceImportanceWeightsAndLinksUnchanged": true,
+  "modelReruns": 0,
+  "directIncrementalCostUsd": 0
+}

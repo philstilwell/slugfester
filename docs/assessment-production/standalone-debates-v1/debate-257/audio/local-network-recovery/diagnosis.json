@@ -1,0 +1,45 @@
+{
+  "status": "confirmed-local-dns-failure-before-connection",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/plan.json",
+    "sha256": "b78f4873f568bbf432dde301daf03e860f3f74192094189ae056539960bdfec6",
+    "bytes": 8609
+  },
+  "clipId": "clip-01",
+  "failure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/responses/clip-01.failure.json",
+    "sha256": "b604dc05717fa1b1520ffc204a159d0b23b0d1079a5c0a7e50d36ae789f01020",
+    "bytes": 10773
+  },
+  "originalAttempt": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/responses/clip-01.attempt.json",
+    "sha256": "bace14d8eba4c63e445b974b4f753b71057528eaaa600553f63286ff613522e1",
+    "bytes": 1196
+  },
+  "preservedController": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/local-network-recovery/initial-controller.mjs.txt.gz",
+    "sha256": "9d49d4ac16ceefdd898bcd5e3eb2f84526db16309c697a17bdacb6e30470fd95",
+    "bytes": 2166
+  },
+  "originalController": {
+    "path": "scripts/tmp-standalone-audio-call.mjs",
+    "sha256": "d46f8d64ca423380a3210239d9cfb5cb72a377eb3d96e5532ffccc52d43586b2",
+    "bytes": 5706
+  },
+  "evidence": "The only network attempt failed in connect_tcp with local name-resolution error [Errno 8]; no TCP connection, HTTP response, request ID or model response exists. max_retries=0 was used. No audio request reached the service.",
+  "healthCheck": {
+    "credentialFree": true,
+    "audioSent": false,
+    "request": "GET https://api.openai.com/v1/models",
+    "outsideRestrictedNetwork": true,
+    "httpStatus": 401,
+    "meaning": "Service reachable; authentication correctly required."
+  },
+  "directCostOfBlockedLocalAttemptUsd": 0,
+  "successfulPaidRequestsToThisClip": 0,
+  "permittedRecovery": "One external-network execution of the original frozen clip, speaker references and model; original failure bytes preserved; no recursive recovery.",
+  "knownSuccessfulCostUsd": 0.0164025,
+  "diagnosedAt": "2026-09-10T04:10:51.290Z"
+}

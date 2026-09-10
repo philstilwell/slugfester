@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-standalone-dispute-adjudication-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-anonymous-dispute-only-packet",
+  "debateNumber": "257",
+  "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "evidenceBoundary": {
+    "passIdentitiesUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  },
+  "sourceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/inventory/inventory.json",
+      "sha256": "5e62746e18b5e6ba58701485a33e3c0a487579e238365b910447c49dd966b8e3",
+      "bytes": 73470
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "formalRoundsSource": {
+      "path": ".assessment-cache/captions/i5AyjXBgjvA/formal-rounds-source.json",
+      "sha256": "fdc0d3ab573bc643da72d2804cc07f8b91487f9a652e5cb3996be88a0beb9681",
+      "bytes": 90032
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/audio/audio-verification.json",
+      "sha256": "d9a86165d6113c000d95b77edc5bc4d40bf68893f338e6c4c2809bd9f847ba41",
+      "bytes": 106548
+    }
+  },
+  "instructions": [
+    "selectExistingOptionOnly: true",
+    "permittedSelections: option-a,option-b",
+    "resolveEveryDisputeExactlyOnce: true",
+    "modelAuthoredTotalsForbidden: true",
+    "completeApprovedSourceOnly: true",
+    "allAudioClarificationsMandatory: true",
+    "noCaptionArtifactPenalty: true",
+    "noCreditOrPenaltyForExcludedRecording: true",
+    "assessDisputedFieldsOnly: true",
+    "Read every full dispute page. Select only one existing option for each field; do not assign ratings to undisputed fields, alter any source, or calculate totals.",
+    "Each rationale must explain why the selected option better fits the precise disputed dimension, live reply or burden eligibility, not just repeat the chosen value or apply an interchangeable grade-band sentence.",
+    "Produce output.json once via apply_patch, validate the saved bytes using validateStandaloneAdjudication with the canonical scoped packet, preserve and report any invalid output without retry."
+  ],
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/source/formal-rounds-authorization.json",
+      "sha256": "ce46c697db01fc668f903c4329907a1adb83e6172267c00fffc744ba6dd9c196",
+      "bytes": 2682
+    },
+    "assessedWindow": {
+      "startEvent": 64,
+      "endEvent": 683,
+      "startMs": 181319,
+      "endMs": 1730440,
+      "durationMs": 1549121
+    },
+    "scope": "Only the opening statements and first rebuttals are assessed. Introductory material and the entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, are excluded. Moderator logistics within the approved window are not scored.",
+    "requiredReaderDisclosure": "Only the opening statements and first rebuttals (3:01–28:50) are assessed. The entire subsequent audience-question portion, including both speakers' later replies, concessions, and concluding comments, is excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "allLaterClosingStatementsExcluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-dispute-adjudication",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "debateNumber": "257",
+    "debateId": "atkins-law-science-philosophy-formal-rounds-2014",
+    "reviewerRole": "isolated-dispute-only-adjudicator",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "isolation": {
+      "passIdentitiesUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "publicationProseUnavailable": true,
+      "otherDebatesUnavailable": true,
+      "contaminationDetected": false
+    },
+    "resolutions": "Exactly one {disputeId,selectedOption,rationale} per frozen dispute, in packet order; selectedOption must be option-a or option-b; source-specific rationale at least 40 characters; do not invent new values."
+  },
+  "canonicalPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-257/adjudication/formal-rounds-packet.json",
+    "sha256": "cc177d920949ec16f3e8653aada58d6043d313afc10077e1fb78a5c0922b55b4",
+    "bytes": 12319
+  },
+  "decisionPages": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-257/adjudication/paginated/reading/disputes-01.txt",
+      "sha256": "9321790e9e3a48e85484f372dc9d8fd295895356cdcc96a60afe3cb869fcf978",
+      "bytes": 5885,
+      "disputeIds": [
+        "con-mind-body-conceptual-obstacle:assessmentConfidence",
+        "burdenCompletionAdjustment:pro",
+        "burdenCompletionAdjustment:con"
+      ]
+    }
+  ],
+  "disputeCount": 3,
+  "disputeIds": [
+    "con-mind-body-conceptual-obstacle:assessmentConfidence",
+    "burdenCompletionAdjustment:pro",
+    "burdenCompletionAdjustment:con"
+  ]
+}
