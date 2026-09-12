@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 259,
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": true,
+    "isolationMethod": "Two fresh built-in isolated subagents with identical complete score-blind evidence, authenticated full reading and disjoint outputs; no API calls or secrets used.",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/execution-packet.json",
+    "judgmentPacketSha256": "6ed6c67dd851c9cebfd3b2f77558440b6d98a60e28a0b1e23336e829a935e65a",
+    "inventorySha256": "d12171c97e6d231cf06dbc3ef331adfb7203a4cd2562fe219ee347968b1ed67a",
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountPerPass": 1,
+    "retryCountPerPass": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-a/output.json",
+      "outputSha256": "10e5546a3873ae9b55912584a6a17d5dd8e14bf982f6f765eeae7627432a92d3",
+      "outputBytes": 42758,
+      "judgmentCount": 33,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-a/output.json"
+      ],
+      "agentTask": "/root/debate259_judgment_a",
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-a/authenticated-reading.json",
+        "sha256": "bed4379a0f4e925b691348354fdd35b3c25651cf2c5a03bf8e8bf51dda840c0b",
+        "bytes": 441932
+      },
+      "dimensionRationales": 198,
+      "distinctDimensionRationales": 198,
+      "authorizedFormatOnlyCorrection": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/format-repair-audit-1.json",
+        "sha256": "f2a3485224f7c0e88597ca2a3a056cdb12b6c8dff6f82e3145b9f965a5922087",
+        "bytes": 1648
+      },
+      "preservedRawOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-a/preserved-invalid-output-1.json",
+        "sha256": "69b0567e1a2858c38df75b1ec112e78aca6d2b200f229f8c806f9c7e019db7d5",
+        "bytes": 42754
+      },
+      "formatCorrectionAttempts": 1
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-b/output.json",
+      "outputSha256": "87dcfdba43d3793baacce07134e64142bc0a557d8f00f57ebe1624a56fa8a744",
+      "outputBytes": 49397,
+      "judgmentCount": 33,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-b/output.json"
+      ],
+      "agentTask": "/root/debate259_judgment_b",
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-b/authenticated-reading.json",
+        "sha256": "895223af2593fa6e41581d154cdb916984109f189c6ae88d37dfc502595ec898",
+        "bytes": 443164
+      },
+      "dimensionRationales": 198,
+      "distinctDimensionRationales": 198
+    }
+  ],
+  "completedAt": "2026-09-12T01:16:44.771Z",
+  "audit": {
+    "primaryContexts": 2,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "rerunPermitted": false
+  }
+}

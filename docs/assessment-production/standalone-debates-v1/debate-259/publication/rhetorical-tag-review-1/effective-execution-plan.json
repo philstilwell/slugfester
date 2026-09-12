@@ -1,0 +1,74 @@
+{
+  "status": "frozen-with-user-authorized-second-pass-replacement",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "f8eaa9e438161ec946681eb6e0e94614ad4d5ed791ffecb5e13b612d4ffb4c2c",
+      "bytes": 142909
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/score-blind-source.json",
+      "sha256": "d1ce5adee3993046cbecf26c3cfc3150e4fcc5b5d4f7cb9bd7b5ec12e55eb7c3",
+      "bytes": 205695
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/audio/audio-verification.json",
+      "sha256": "4c79018edd4b8a108219ffdfbbde3085dd82b20e6f5634cf68ba46e22ff18968",
+      "bytes": 18980
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_259_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0,
+      "retainedWithoutNewAssessment": true
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_259_b_replacement_1",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-replacement-1/output.json",
+      "attempts": 1,
+      "retries": 0,
+      "readingGatePath": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-replacement-1/reading-gate.json",
+      "readingOrderPath": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-replacement-1/reading-order-audit.json",
+      "originalFailedAttempts": 1,
+      "authorizedReplacementAttempts": 1,
+      "originalFailedOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "540aadadef0ca71487fe3e6ee03a304b6b0ce49a11097bdec5ea643f279ba493",
+        "bytes": 168
+      }
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0,
+  "originalPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/execution-plan.json",
+    "sha256": "9149e80c8831e570f88acdfa3bbf0362887f09f12ff7609612c798976a945c54",
+    "bytes": 1873
+  },
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-replacement-1/authorization.json",
+    "sha256": "d55e1c93ee8fa6112b77a17819205fe2602da32691fef66c610305c32b9e4afe",
+    "bytes": 1400
+  },
+  "totalBlindReviewContextsIncludingPreservedFailure": 3
+}

@@ -1,0 +1,85 @@
+{
+  "status": "frozen-before-paid-call",
+  "debateNumber": "259",
+  "videoId": "jrVnAWP2XEs",
+  "source": {
+    "path": "output/transcribe/debate259-verification-1/source.m4a",
+    "sha256": "da813a677d6b6d2ba4208a709ad5c69ec646dd15235661aca53cf42e1a4eee93",
+    "bytes": 88035730
+  },
+  "captionManifest": {
+    "path": ".assessment-cache/captions/jrVnAWP2XEs/manifest.json",
+    "sha256": "b5b6b7a6912738edc8b723806a45f765c6635bf1ddc1c772875cb4c0194f35fb",
+    "bytes": 988
+  },
+  "controller": {
+    "path": "scripts/tmp-source-speaker-check.mjs",
+    "sha256": "8dc43a1107f9d85f9ef5fa3c2d351d7a8288d4494da85d243dbaf301ed3ab6a6",
+    "bytes": 5734
+  },
+  "purpose": "Resolve speaker of error-bar intervention around 01:19:21 before freezing eligibility and scoring scope.",
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "automaticRetries": 0,
+  "attemptsPerClip": 1,
+  "clips": [
+    {
+      "id": "intervention",
+      "start": 4752,
+      "end": 4798,
+      "path": "output/transcribe/debate259-verification-1/intervention.wav",
+      "sha256": "15ea34f1a7b8417fcf9a880956785e111cdca910122a167a0ed9283605e05243",
+      "bytes": 1472078,
+      "durationSeconds": 46
+    },
+    {
+      "id": "curt-reference",
+      "speaker": "Curt Jaimungal",
+      "start": 321,
+      "end": 331,
+      "path": "output/transcribe/debate259-verification-1/curt-reference.wav",
+      "sha256": "0f2b3e49a3e895651a74c5ef3d05897aaadd196209cc2416ff33a0dfa1d4ddec",
+      "bytes": 320078,
+      "durationSeconds": 10
+    },
+    {
+      "id": "susan-reference",
+      "speaker": "Susan Blackmore",
+      "start": 339,
+      "end": 349,
+      "path": "output/transcribe/debate259-verification-1/susan-reference.wav",
+      "sha256": "4bde8a2157230c35e0d6ab440679ad48c02feebca2e2c1fefcdbe1da0690c260",
+      "bytes": 320078,
+      "durationSeconds": 10
+    },
+    {
+      "id": "bernardo-reference",
+      "speaker": "Bernardo Kastrup",
+      "start": 579,
+      "end": 589,
+      "path": "output/transcribe/debate259-verification-1/bernardo-reference.wav",
+      "sha256": "3577c28aef9960f361ff825c96eb2276813c95af5b8f2676a3d3a6c50d985c2a",
+      "bytes": 320078,
+      "durationSeconds": 10
+    }
+  ],
+  "cost": {
+    "reportedBeforeCall": true,
+    "knownSuccessfulCallCostUsd": 0,
+    "initialCheckEstimateUsd": 0.0076,
+    "initialCheckPlanningAllowanceUsd": 0.1,
+    "fullRecordingReferenceEstimateUsd": 0.5444,
+    "combinedFullRecordingPlusInitialCheckReferenceEstimateUsd": 0.552,
+    "fullRecordingTranscriptionPlanned": false,
+    "standingLimitUsd": 1,
+    "futureChecksRequireSeparateFrozenPlan": true,
+    "minuteRateIsPlanningProxyFromSamePriceTranscriptionFamily": true,
+    "pricingUrls": [
+      "https://developers.openai.com/api/docs/pricing",
+      "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize"
+    ],
+    "inputTokenRatePerMillionUsd": 2.5,
+    "outputTokenRatePerMillionUsd": 10
+  },
+  "preparedAt": "2026-09-12T00:36:47.099Z"
+}

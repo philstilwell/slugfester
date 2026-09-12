@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "completedAt": "2026-09-12T03:04:32.832Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/gates-1.log",
+        "sha256": "809ec968500ee8a2d9c5cf015633c92d8e5f629bbc38f2ecc7aeec36fe7b6891",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/gates-2.log",
+        "sha256": "61fc626013c9e6c45a539108e3e23938efbf68c7762e40c4eefb8732c1a755d8",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 259",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/gates-3.log",
+        "sha256": "e14e48d6ddd431e9decca7caef0b59487e223ba62826f62273a3055f2eb25560",
+        "bytes": 255
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/gates-4.log",
+        "sha256": "ac3e3f0d21ff2563fffcf486070f1ee76768ed9361c17a64edc4d87eb0b9fb0e",
+        "bytes": 48157
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/gates-5.log",
+        "sha256": "54bab261db209976f4688ea212b9fa3f6ba91dcdfbb44ae0febe348d428023e8",
+        "bytes": 219401
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/gates-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

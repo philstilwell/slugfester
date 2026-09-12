@@ -1,0 +1,202 @@
+{
+  "status": "passed-measured-limit-preserving-review",
+  "debateNumber": "259",
+  "publishedDebates": 259,
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/performance-review-authorization.json",
+    "sha256": "3cdceafab955abb498a9f58e678414e28161ba80119d42ebba6f47da9190f689",
+    "bytes": 1191
+  },
+  "testBefore": {
+    "path": "tests/site-quality/site-quality.spec.mjs",
+    "sha256": "fc2c9e1b074a0657201540350390bb78aad06dc3c345b71eead92dfa0d159c4a",
+    "bytes": 13748
+  },
+  "generatedSummaries": {
+    "path": "src/data/debate-summaries.js",
+    "sha256": "0c02acf3b27b7ccc2cfac21ea6dd83294dafa472cc157915dbdfa59ab0397c18",
+    "bytes": 407777
+  },
+  "finalPublication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/output.json",
+    "sha256": "634ce17e229b63f170937ca6fe01cb33ef35e64bf1a95acf92112cfe7c72f469",
+    "bytes": 70251
+  },
+  "measurementMethod": "fresh-isolated-browser-context-per-route",
+  "measurementLog": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/performance-measurement.transport.log",
+    "sha256": "7dbd386d4e571451a206c3d4899d7d4be09e61fda523674adf585b74d2d8d205",
+    "bytes": 1771
+  },
+  "before": {
+    "baselineDebates": 248,
+    "baseDataBytes": [
+      450000,
+      500000,
+      535000,
+      540000
+    ],
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10
+  },
+  "after": {
+    "baselineDebates": 259,
+    "baseDataBytes": [
+      505000,
+      555000,
+      590000,
+      595000
+    ],
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10
+  },
+  "effectiveLimitsBefore": [
+    505000,
+    555000,
+    590000,
+    595000
+  ],
+  "effectiveLimitsAfter": [
+    505000,
+    555000,
+    590000,
+    595000
+  ],
+  "proof": "For all N >= 259, old base + 5000*(N-248) equals (old base + 55000) + 5000*(N-259); current and future effective byte ceilings remain unchanged.",
+  "measurements": [
+    {
+      "route": "/",
+      "url": "http://127.0.0.1:4259/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23684
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 407777
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        }
+      ],
+      "loadedBytes": 448009,
+      "limitBytes": 505000,
+      "headroomBytes": 56991
+    },
+    {
+      "route": "/rankings/",
+      "url": "http://127.0.0.1:4259/rankings/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23684
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 407777
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 54504
+        }
+      ],
+      "loadedBytes": 502513,
+      "limitBytes": 555000,
+      "headroomBytes": 52487
+    },
+    {
+      "route": "/debate/craig-oconnor-god-debate-2026/",
+      "url": "http://127.0.0.1:4259/debate/craig-oconnor-god-debate-2026/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23684
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 407777
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 54504
+        },
+        {
+          "name": "/src/data/debate-details/craig-oconnor-god-debate-2026.js",
+          "bytes": 35843
+        }
+      ],
+      "loadedBytes": 538356,
+      "limitBytes": 590000,
+      "headroomBytes": 51644
+    },
+    {
+      "route": "/reference/fallacy/equivocation/",
+      "url": "http://127.0.0.1:4259/reference/fallacy/equivocation/",
+      "resources": [
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 23684
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 407777
+        },
+        {
+          "name": "/src/data/reference-appearances/fallacy-equivocation.js",
+          "bytes": 112197
+        }
+      ],
+      "loadedBytes": 560206,
+      "limitBytes": 595000,
+      "headroomBytes": 34794
+    }
+  ],
+  "temporaryContextsClosed": true,
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,63 @@
+{
+  "status": "diagnosed-controller-false-positive",
+  "debateNumber": "259",
+  "controllerBefore": {
+    "path": "scripts/tmp-publication-gates.mjs",
+    "sha256": "d5f96a1be25a9bb5d19b0bc99eccfb5621851c1353813461668dc8b373e42565",
+    "bytes": 5695
+  },
+  "preservedController": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/delivery-gate-diagnostic-1/controller-before-fix.mjs.txt.gz",
+    "sha256": "8e31f7de30ba288e3b3f20d1380a70e188852939880809fc75fe958d276a7613",
+    "bytes": 2537
+  },
+  "error": "Exactly one delivered publication patch call expected: 3 !== 1",
+  "cause": "The controller counted two in-memory preflight scripts whose conditional exit prevented apply_patch from running. Only the third public tool result confirms the authorized file was actually created.",
+  "publicToolEvidence": [
+    {
+      "callId": "call_bnJiSpnJxNRdyoGX8F8xRUbJ",
+      "timestamp": "2026-09-12T01:31:11.224Z",
+      "inputSha256": "85973199cd9d962301d0582350748580016819a98ec8637564de0925d99a7b32",
+      "exitsBeforePatchOnPreflightError": true,
+      "texts": [
+        "input_text",
+        "Script completed\nWall time 0.2 seconds\nOutput:\n",
+        "input_text",
+        "[\"pro-seeming-and-neuronal-digest-dilemma:123/932\",\"con-illusionism-reframes-hard-problem:116/888\",\"pro-specific-hypothesis-demand:123/916\",\"con-method-not-experience-denial:123/883\",\"con-nonmaterialist-burden-limitation:119/922\",\"pro-nondual-experience-implies-idealism:119/912\",\"con-attention-schema-and-first-person-method:118/966\",\"pro-field-ontology-and-single-subjectivity:130/975\",\"con-panpsychist-alternative:112/884\",\"pro-lawful-mind-and-perceptual-dashboard:125/956\",\"con-regularity-and-explanatory-gain:117/911\",\"pro-ontological-economy-and-mental-modulation:117/910\",\"con-dashboard-ontology-neutrality:116/894\",\"pro-matter-as-dissociative-appearance:121/926\",\"con-neural-correlation-demand:120/912\",\"pro-inferential-isolation-and-clinical-evidence:121/936\",\"con-minimal-dissociative-boundary:117/878\",\"pro-biology-as-dissociative-boundary:129/1000\",\"con-clinical-to-cosmic-scope-gap:118/878\",\"pro-experience-without-metaconsciousness:120/933\",\"con-ordinary-perceptual-dissociations:117/914\",\"pro-overbroad-illusion-label:120/901\",\"con-ownerless-experience-and-metacognition:129/998\",\"pro-idealist-reinterpretation-of-physical-causes:130/956\",\"con-reification-as-specific-target:110/878\",\"pro-primitive-properties-and-useful-ego:127/928\",\"con-concession-on-brute-regularities:120/893\",\"pro-porous-dissociation-and-weak-effects:118/931\",\"con-controlled-telepathy-revision-condition:111/890\",\"pro-specific-dream-coincidence:118/924\",\"con-absence-of-controlled-psi-support:124/908\",\"pro-materialism-and-belief-revision:130/1011\",\"con-limits-of-immediate-psi-rebuttal:125/932\"]"
+      ],
+      "outputSha256": "b7957f4d89e36cec27f027bf24af3083624f6473e560f7e75a3a2ead9a8df840",
+      "deliverySucceeded": false
+    },
+    {
+      "callId": "call_XYb53pjcN9DskXG2UC67WnId",
+      "timestamp": "2026-09-12T01:35:58.610Z",
+      "inputSha256": "d0659ea2ab1ce9ec829105d54024847b57c43524675a94007971838049ff2b5e",
+      "exitsBeforePatchOnPreflightError": true,
+      "texts": [
+        "input_text",
+        "Script completed\nWall time 0.1 seconds\nOutput:\n",
+        "input_text",
+        "pro-seeming-and-neuronal-digest-dilemma words=129 chars=979 stops=1\ncon-illusionism-reframes-hard-problem words=130 chars=954 stops=1\npro-specific-hypothesis-demand words=130 chars=982 stops=1\ncon-method-not-experience-denial words=129 chars=926 stops=1\ncon-nonmaterialist-burden-limitation words=129 chars=981 stops=1\npro-nondual-experience-implies-idealism words=130 chars=992 stops=1\ncon-attention-schema-and-first-person-method words=129 chars=977 stops=1\npro-field-ontology-and-single-subjectivity words=129 chars=956 stops=1\ncon-panpsychist-alternative words=115 chars=892 stops=1\npro-lawful-mind-and-perceptual-dashboard words=129 chars=947 stops=1\ncon-regularity-and-explanatory-gain words=124 chars=910 stops=1\npro-ontological-economy-and-mental-modulation words=129 chars=954 stops=1\ncon-dashboard-ontology-neutrality words=129 chars=966 stops=1\npro-matter-as-dissociative-appearance words=129 chars=998 stops=1\ncon-neural-correlation-demand words=130 chars=976 stops=1\npro-inferential-isolation-and-clinical-evidence words=130 chars=985 stops=1\ncon-minimal-dissociative-boundary words=130 chars=968 stops=1\npro-biology-as-dissociative-boundary words=129 chars=971 stops=1\ncon-clinical-to-cosmic-scope-gap words=130 chars=950 stops=1\npro-experience-without-metaconsciousness words=130 chars=1048 stops=1\ncon-ordinary-perceptual-dissociations words=130 chars=962 stops=1\npro-overbroad-illusion-label words=129 chars=964 stops=1\ncon-ownerless-experience-and-metacognition words=130 chars=999 stops=1\npro-idealist-reinterpretation-of-physical-causes words=129 chars=969 stops=1\ncon-reification-as-specific-target words=128 chars=1000 stops=1\npro-primitive-properties-and-useful-ego words=130 chars=911 stops=1\ncon-concession-on-brute-regularities words=129 chars=956 stops=1\npro-porous-dissociation-and-weak-effects words=129 chars=1003 stops=1\ncon-controlled-telepathy-revision-condition words=129 chars=990 stops=1\npro-specific-dream-coincidence words=130 chars=1012 stops=1\ncon-absence-of-controlled-psi-support words=130 chars=946 stops=1\npro-materialism-and-belief-revision words=130 chars=1005 stops=1\ncon-limits-of-immediate-psi-rebuttal words=129 chars=978 stops=1"
+      ],
+      "outputSha256": "8ed363d4580b4076c73cb839273a8c51de0482b96dc08a4e7d8b9ae45884f2e8",
+      "deliverySucceeded": false
+    },
+    {
+      "callId": "call_nGkjEEH2MDZzhq8C91CYDXqf",
+      "timestamp": "2026-09-12T01:37:21.161Z",
+      "inputSha256": "8c0af6e44b0bd4beb75d7f96a395bcd7115784c2507e60a7e8136edfb32d51aa",
+      "exitsBeforePatchOnPreflightError": true,
+      "texts": [
+        "input_text",
+        "Script completed\nWall time 0.2 seconds\nOutput:\n",
+        "input_text",
+        "preflight passed; critiques=33; bytes=65908; patch={}"
+      ],
+      "outputSha256": "2f4a465792f47aba1470d987a824bde5460b306ed67eabbcb5a4d165f66072f7",
+      "deliverySucceeded": true
+    }
+  ],
+  "savedPublicationOutputs": 1,
+  "unpublishedPreflightRevisions": 2,
+  "privateReasoningInspectedOrPreserved": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "failed-incomplete-rhetorical-review-output",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "role": "pass-b",
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-output.json",
+    "sha256": "540aadadef0ca71487fe3e6ee03a304b6b0ce49a11097bdec5ea643f279ba493",
+    "bytes": 168
+  },
+  "preserved": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/preserved-invalid-pass-b-output-1.json",
+    "sha256": "540aadadef0ca71487fe3e6ee03a304b6b0ce49a11097bdec5ea643f279ba493",
+    "bytes": 168
+  },
+  "completeReadingAuthenticated": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-reading-gate.json",
+    "sha256": "ff97480f28d04f0b9c487ba52bad5095a3b53bc46ccaa8990c5bc08b0125770f",
+    "bytes": 934
+  },
+  "soleDeliveryAuthenticated": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/pass-b-reading-order-audit.json",
+    "sha256": "1acae2d00b0effffd553dcb60c471c440fc6ae249308da716de6f9f0dcae181f",
+    "bytes": 17398
+  },
+  "expectedMoves": 33,
+  "expectedOverallBlunders": 4,
+  "deliveredCandidateJudgments": 0,
+  "deliveredOverallJudgments": 0,
+  "errors": [
+    "Missing required field: reviewedOverallBlunderIds",
+    "Missing required field: candidateReviews",
+    "Missing required field: overallBlunderCandidateReviews",
+    "Missing required field: acceptedTags",
+    "Missing required field: acceptedOverallBlunderLinks",
+    "Missing required field: audit",
+    "reviewedMoveIds does not contain the complete exact publication-order move list"
+  ],
+  "diagnosis": "The public tool call submitted only a small schema header and a malformed single move identifier, with no candidate judgments. No complete publication-ready review exists to recover by byte transport or punctuation repair.",
+  "ordinaryOneAttemptExhausted": true,
+  "automaticRetries": 0,
+  "assessmentSourceJudgmentOrScoreChanges": 0,
+  "publicationProseChanges": 0,
+  "tagsApplied": 0,
+  "directIncrementalCostUsd": 0
+}

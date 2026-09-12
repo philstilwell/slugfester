@@ -1,0 +1,752 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/captions.srv3.xml",
+      "sha256": "8cc752c57be86f561d593b42e33dd3c862c8543ec695b17831323e5c4d1d7143",
+      "bytes": 120012
+    },
+    "events": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/events.json",
+      "sha256": "9586b1c49ba419ef210bc554f7772dcd88016c93a7f56b208b10f1b6bd13d70c",
+      "bytes": 164129
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/transcript.txt",
+      "sha256": "dce4d9acd824c526d273f43408e3eed1d4ad2af6055c7e09f87fa54d10be1fca",
+      "bytes": 92911
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/manifest.json",
+      "sha256": "b5b6b7a6912738edc8b723806a45f765c6635bf1ddc1c772875cb4c0194f35fb",
+      "bytes": 988
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/source/source-lock.json",
+      "sha256": "9eaad4f05a4a04e76e56eb99cf79f0f44fe46ccda642d64acde9d3bd119f4500",
+      "bytes": 5104
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/authorization.json",
+      "sha256": "40718ba6c88d0f74efddc769a76710be68afcd6c05a76568bfc8fbf4d478c930",
+      "bytes": 3569
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/inventory/inventory.json",
+      "sha256": "d12171c97e6d231cf06dbc3ef331adfb7203a4cd2562fe219ee347968b1ed67a",
+      "bytes": 147070
+    },
+    "completeScoreBlindSource": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/score-blind-source.json",
+      "sha256": "d1ce5adee3993046cbecf26c3cfc3150e4fcc5b5d4f7cb9bd7b5ec12e55eb7c3",
+      "bytes": 205695
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/authorization.json",
+      "sha256": "40718ba6c88d0f74efddc769a76710be68afcd6c05a76568bfc8fbf4d478c930",
+      "bytes": 3569
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/manifest.json",
+      "sha256": "a59bf3653150248eddc0894fc279a187116281953b917e1be6366bb1c4d61c56",
+      "bytes": 7473
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/source/source-lock.json",
+      "sha256": "9eaad4f05a4a04e76e56eb99cf79f0f44fe46ccda642d64acde9d3bd119f4500",
+      "bytes": 5104
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/inventory/inventory.json",
+      "sha256": "d12171c97e6d231cf06dbc3ef331adfb7203a4cd2562fe219ee347968b1ed67a",
+      "bytes": 147070
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/judgment-packet.json",
+      "sha256": "7ba52c52338d8cb91dd48ac524a96d10679803f5c9725851058c3c11f0ee9ee9",
+      "bytes": 4916
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/execution.json",
+      "sha256": "c825532ee26fa7374a054e259248286b282fa32e28b84312118c8dcd5aa800f5",
+      "bytes": 3903
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-a/output.json",
+      "sha256": "10e5546a3873ae9b55912584a6a17d5dd8e14bf982f6f765eeae7627432a92d3",
+      "bytes": 42758
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/pass-b/output.json",
+      "sha256": "87dcfdba43d3793baacce07134e64142bc0a557d8f00f57ebe1624a56fa8a744",
+      "bytes": 49397
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/disagreements/disagreements.json",
+      "sha256": "2c5705112cb03ec6a17d75ad96edb1b20f3d83437c578fbf7d0a57bb5e0e057e",
+      "bytes": 11523
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/audio/audio-verification.json",
+      "sha256": "4c79018edd4b8a108219ffdfbbde3085dd82b20e6f5634cf68ba46e22ff18968",
+      "bytes": 18980
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/adjudication/packet.json",
+      "sha256": "80e263d6d7308f0706cd86eb72f225ba3c4bf33a6fcda888e9f27020b32bb7f3",
+      "bytes": 37391
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/adjudication/output.json",
+      "sha256": "59cae88e42354db170600792958d4f02a3b04cbddd19e9d268c1504461016b91",
+      "bytes": 4803
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/final-ledger/final-ledger.json",
+      "sha256": "1b484ee2e22502782173cbba1e599f7d183bd3dcfeb22155811355ab4143d5de",
+      "bytes": 303939
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/score-pass/input.json",
+      "sha256": "012f470402d16b5be631233de3bd24e3b1c90dfba128a899d799d82019289245",
+      "bytes": 960
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/score-pass/output.json",
+      "sha256": "3fe0e1092be5e4502b09750aae8d7fbdb3b98274c92399786f165cd3e8d77338",
+      "bytes": 17254
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/score-pass/attestation.json",
+      "sha256": "62269c9fb91c7e111de8f176011ff6696cb9739eb75bd4524148875e1d3a9af1",
+      "bytes": 828
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/output.json",
+      "sha256": "634ce17e229b63f170937ca6fe01cb33ef35e64bf1a95acf92112cfe7c72f469",
+      "bytes": 70251
+    },
+    "events": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/events.json",
+      "sha256": "9586b1c49ba419ef210bc554f7772dcd88016c93a7f56b208b10f1b6bd13d70c",
+      "bytes": 164129
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/transcript.txt",
+      "sha256": "dce4d9acd824c526d273f43408e3eed1d4ad2af6055c7e09f87fa54d10be1fca",
+      "bytes": 92911
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/content-parity-audit.json",
+      "sha256": "02204f5ebaeb328ffe20fac9bb6b78601643a8fd1ed1bb739bfb3a7424db9098",
+      "bytes": 5746
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/correction-2-rhetorical-tags.json",
+      "sha256": "433f15576e416b8cd5c7b8c66571fbdc0c2e8aae5a130b34f2e285acfe54d917",
+      "bytes": 2495
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-audit.json",
+      "sha256": "dec185bb00d52827164b495308340d2f39e0c4388530351b318a6b6dc29febec",
+      "bytes": 103031
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "09668e07e4461c733972046c4debe88e4a86a71f34f8f34f43e4f8e46987742e",
+      "bytes": 5384
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "259",
+    "debateId": "kastrup-blackmore-conscious-illusion-2023",
+    "sections": [
+      {
+        "sectionId": "illusionism",
+        "title": "What illusionism claims",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "pro-seeming-and-neuronal-digest-dilemma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 69,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 61
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-specific-hypothesis-demand",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 79,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 58
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-illusionism-reframes-hard-problem",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 86,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 79
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-method-not-experience-denial",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 88,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 89
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-nonmaterialist-burden-limitation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 86,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 92
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "ontology",
+        "title": "Idealism and rival ontologies",
+        "weightPercent": 17,
+        "sides": {
+          "pro": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "pro-nondual-experience-implies-idealism",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 75,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 65
+                },
+                "score": 70
+              },
+              {
+                "moveId": "pro-field-ontology-and-single-subjectivity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 77,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 58
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-attention-schema-and-first-person-method",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 81,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 91
+                },
+                "score": 79
+              },
+              {
+                "moveId": "con-panpsychist-alternative",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 92,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 91
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "representation",
+        "title": "Regularity, perception, and mental causation",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-lawful-mind-and-perceptual-dashboard",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 79,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 71
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pro-ontological-economy-and-mental-modulation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 91,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 79
+                },
+                "score": 84
+              },
+              {
+                "moveId": "pro-matter-as-dissociative-appearance",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 89,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 76
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-regularity-and-explanatory-gain",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 93,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 84
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-dashboard-ontology-neutrality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 79,
+                  "responsiveness": 95,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 88
+                },
+                "score": 89
+              },
+              {
+                "moveId": "con-neural-correlation-demand",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 87
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "dissociation",
+        "title": "Dissociation and private minds",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-inferential-isolation-and-clinical-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 85,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 83
+                },
+                "score": 82
+              },
+              {
+                "moveId": "pro-biology-as-dissociative-boundary",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 84,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 67
+                },
+                "score": 76
+              },
+              {
+                "moveId": "pro-experience-without-metaconsciousness",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 85,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 64
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-minimal-dissociative-boundary",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 93,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 92
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-clinical-to-cosmic-scope-gap",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 96,
+                  "relevanceBurden": 95,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 94
+                },
+                "score": 92
+              },
+              {
+                "moveId": "con-ordinary-perceptual-dissociations",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 77,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 91
+                },
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "metaconsciousness",
+        "title": "Experience, metacognition, and self",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-overbroad-illusion-label",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 63,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 66
+                },
+                "score": 75
+              },
+              {
+                "moveId": "pro-idealist-reinterpretation-of-physical-causes",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 84,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 79
+                },
+                "score": 80
+              },
+              {
+                "moveId": "pro-primitive-properties-and-useful-ego",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 80,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 81
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-ownerless-experience-and-metacognition",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 91,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 95
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-reification-as-specific-target",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 92
+                },
+                "score": 87
+              },
+              {
+                "moveId": "con-concession-on-brute-regularities",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 92,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 97
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "evidence",
+        "title": "Revisability, telepathy, and materialism",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 62,
+            "moves": [
+              {
+                "moveId": "pro-porous-dissociation-and-weak-effects",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 78,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 62
+                },
+                "score": 69
+              },
+              {
+                "moveId": "pro-specific-dream-coincidence",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 44,
+                  "responsiveness": 60,
+                  "relevanceBurden": 61,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 58
+                },
+                "score": 61
+              },
+              {
+                "moveId": "pro-materialism-and-belief-revision",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 50,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 33
+                },
+                "score": 57
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-controlled-telepathy-revision-condition",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 91,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 80
+                },
+                "score": 85
+              },
+              {
+                "moveId": "con-absence-of-controlled-psi-support",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 92,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 92
+                },
+                "score": 86
+              },
+              {
+                "moveId": "con-limits-of-immediate-psi-rebuttal",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 76,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 94
+                },
+                "score": 80
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 75.28,
+        "burdenCompletionAdjustment": 0,
+        "score": 75
+      },
+      "con": {
+        "weightedSectionMean": 85.35,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      }
+    },
+    "winner": "con",
+    "winningMargin": 10,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.25,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 33,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

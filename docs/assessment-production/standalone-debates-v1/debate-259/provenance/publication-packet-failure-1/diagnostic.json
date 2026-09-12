@@ -1,0 +1,40 @@
+{
+  "status": "failed-preserved-before-controller-correction",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "controller": {
+    "path": "scripts/tmp-publication-packet.mjs",
+    "sha256": "fcea30f69b0ac8bfdb58506a143509f5fc3d36a4e0cfb80b848972cee1637937",
+    "bytes": 12634
+  },
+  "archive": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/provenance/publication-packet-failure-1/controller.mjs.txt.gz",
+    "sha256": "b7ef3bf5f554846bf8b86b3590cd356574124f0da7234465ca9fdfeb44a6c413",
+    "bytes": 5046
+  },
+  "phase": "publication-packet-preparation-before-model-execution",
+  "error": "AssertionError true !== false at tmp-publication-packet.mjs:55:10",
+  "cause": "A broad string regular expression intended to reject primary-judgment object keys also matched the legitimate burden-completion alreadyCapturedBy array value \"judgments\". The judgment-bearing move object keys had already been removed.",
+  "correction": "Check the forbidden names only when used as JSON object keys. Preserve the legitimate burden rationale and all frozen source, judgment, adjudication and score bytes.",
+  "completedArtifact": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/recent-description-benchmark.json",
+    "sha256": "9ec210aae0f44275d2de120d45780aecfa44498667624da13e7177cfc9fa4fed",
+    "bytes": 2210
+  },
+  "scoreOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/score-pass/output.json",
+    "sha256": "3fe0e1092be5e4502b09750aae8d7fbdb3b98274c92399786f165cd3e8d77338",
+    "bytes": 17254
+  },
+  "scoreAttestation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/score-pass/attestation.json",
+    "sha256": "62269c9fb91c7e111de8f176011ff6696cb9739eb75bd4524148875e1d3a9af1",
+    "bytes": 828
+  },
+  "publicationWorkerStarted": false,
+  "judgmentValuesChanged": false,
+  "scoreRerunPermitted": false,
+  "modelCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "recordedAt": "2026-09-12T01:22:14.241Z"
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0-isolated-score-blind-inventory-packet",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "motion": "Does analytic idealism adequately explain consciousness?",
+  "assessmentModel": "5.6 Sol",
+  "sides": {
+    "pro": {
+      "speaker": "Bernardo Kastrup",
+      "position": "Analytic idealism"
+    },
+    "con": {
+      "speaker": "Susan Blackmore",
+      "position": "Illusionist critique"
+    }
+  },
+  "source": {
+    "path": ".assessment-cache/captions/jrVnAWP2XEs/score-blind-source.json",
+    "sha256": "d1ce5adee3993046cbecf26c3cfc3150e4fcc5b5d4f7cb9bd7b5ec12e55eb7c3",
+    "bytes": 205695
+  },
+  "instructions": [
+    "Read every event of the complete source before selecting moves or writing decisions. Produce a score-blind inventory only: no ratings, fallacy/bias judgments, totals, winner or publication prose. Preserve Blackmore’s explicitly nonmaterialist methodological position and Kastrup’s actual explanatory burden; do not require a complete competing metaphysics merely to criticize his explanation.",
+    "Create 4–7 coherent topical sections with unique lowercase semantic IDs, positive integer weightPercent summing to 100 and evidence-led weightRationale. Select 8–48 load-bearing arguments, major replies and important concessions in chronology, exactly one section per move. Do not manufacture symmetry or omit a major argument to reduce workload. Each section needs at least one move per side and at most four per side. One to three per side is ordinary; a fourth must be distinct, independently assessable and non-mergeable with a source-specific rationale of at least 40 characters frozen before scoring.",
+    "Each side has 3–7 unique burden bridges: exactly one motion bridge plus at least one central and subsidiary bridge, using bridgeId, tier, burden and successCriterion. Assign each move to its own side’s bridge, tier and reason. Importance is 1 supporting, 2 major or 3 load-bearing, with a source-grounded rationale, never a score forecast.",
+    "Every move states claimSummary, reasonSummary and inferenceSummary {premise,inference,conclusion}. sourceSpan {startEvent,endEvent} must be the smallest complete contiguous passage establishing that speaker’s claim and load-bearing reason. Original eventIndex values are mandatory. The controller supplies exact unchanged excerpt and timing. Target <=2200 excerpt characters; longer genuinely necessary spans require spanLengthRationale >=40 characters. Do not pad spans, straddle long speaker changes, or attribute an opponent’s complete argument to the selected speaker.",
+    "quoteEligibleExactSpans contains 3–18-word exact substrings of the selected span. attributionConfidence and materialWordingConfidence are high, medium or low with source-specific rationales. Any material uncertain wording or speaker ownership must also make attributionConfidence below high, triggering audio. Preserve caption words without meaningful silent correction. The separate pre-inventory audio check labels the 1:19:21 error-bar question Kastrup.",
+    "Constructive moves use moveKind constructive, respondsToIds [] and responseComponents []. Replies use moveKind reply, refer only to earlier selected move IDs and have nonempty responseComponents [{targetMoveId,component,description}]. Never create an earlier-target link for later speech.",
+    "selectionBalanceAudit is {thresholds:{totalAbsoluteDifference:3,sectionAbsoluteDifference:2},totals:{pro,con,absoluteDifference},sections:[{sectionId,pro,con,absoluteDifference}],rationaleRequired,rationale}. Derive every count. Rationale is required when either threshold is reached and must source-ground every asymmetry in >=40 characters.",
+    "publicationCapacityAudit is {maximumSelectedMovesPerSidePerSection:4,sections:[{sectionId,pro,con,withinCapacity,fourthRowRequired,fourthRowAuthorized,rationale}],allSectionsWithinCapacity:true,allFourthRowsPreauthorized:true}. fourthRowRequired means either side has four. fourthRowAuthorized is true if justified or vacuously true when no fourth row is needed. The controller independently recomputes both audits before judgment.",
+    "fullTranscriptCoverageAudit must partition all original events exactly once in consecutive inclusive intervals, including nonargumentative material: {intervals:[{startEvent,endEvent,moveIds,reason}]}. Empty moveIds are allowed for logistics, repetition or genuinely subsidiary material with specific reasons; all cited moveIds must exist. No material argument may be quietly excluded."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-frozen",
+    "debateNumber": "259",
+    "debateId": "kastrup-blackmore-conscious-illusion-2023",
+    "assessmentModel": "5.6 Sol",
+    "motion": "Does analytic idealism adequately explain consciousness?",
+    "assessedDebateWindowMs": {
+      "start": 332220,
+      "end": 5339580
+    },
+    "routes": "[{side,speaker,position,bridges:[{bridgeId,tier,burden,successCriterion}]}]",
+    "sections": "[{sectionId,title,weightPercent,weightRationale}]",
+    "moves": "[{moveId,sectionId,side,speaker,moveKind,sourceSpan,quoteEligibleExactSpans,claimSummary,reasonSummary,inferenceSummary,burdenContact:{bridgeId,tier,rationale},importance,importanceRationale,respondsToIds,responseComponents,attributionConfidence,attributionRationale,materialWordingConfidence,materialWordingRationale,optional spanLengthRationale}]",
+    "selectionBalanceAudit": "object described above",
+    "publicationCapacityAudit": "object described above",
+    "fullTranscriptCoverageAudit": "object described above",
+    "audit": {
+      "calculatedTotalsAbsent": true,
+      "completeTranscriptReviewed": true,
+      "allSpansSourceExact": true,
+      "scoreBlind": true,
+      "noOutcomePredetermined": true,
+      "noAudienceOrHostCredit": true
+    }
+  }
+}

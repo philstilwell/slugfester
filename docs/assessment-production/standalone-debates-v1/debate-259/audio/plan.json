@@ -1,0 +1,92 @@
+{
+  "status": "frozen-before-required-paid-calls",
+  "debateNumber": "259",
+  "videoId": "jrVnAWP2XEs",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/inventory/inventory.json",
+    "sha256": "d12171c97e6d231cf06dbc3ef331adfb7203a4cd2562fe219ee347968b1ed67a",
+    "bytes": 147070
+  },
+  "media": {
+    "path": "output/transcribe/debate259-verification-1/source.m4a",
+    "sha256": "da813a677d6b6d2ba4208a709ad5c69ec646dd15235661aca53cf42e1a4eee93",
+    "bytes": 88035730
+  },
+  "controller": {
+    "path": "scripts/tmp-audio-verification.mjs",
+    "sha256": "64632804fbeac6bac649675c7ddd421e4e5e340225b629827b64c8a9bcc8bf37",
+    "bytes": 5712
+  },
+  "references": [
+    {
+      "id": "curt-reference",
+      "speaker": "Curt Jaimungal",
+      "start": 321,
+      "end": 331,
+      "path": "output/transcribe/debate259-verification-1/curt-reference.wav",
+      "sha256": "0f2b3e49a3e895651a74c5ef3d05897aaadd196209cc2416ff33a0dfa1d4ddec",
+      "bytes": 320078,
+      "durationSeconds": 10
+    },
+    {
+      "id": "susan-reference",
+      "speaker": "Susan Blackmore",
+      "start": 339,
+      "end": 349,
+      "path": "output/transcribe/debate259-verification-1/susan-reference.wav",
+      "sha256": "4bde8a2157230c35e0d6ab440679ad48c02feebca2e2c1fefcdbe1da0690c260",
+      "bytes": 320078,
+      "durationSeconds": 10
+    },
+    {
+      "id": "bernardo-reference",
+      "speaker": "Bernardo Kastrup",
+      "start": 579,
+      "end": 589,
+      "path": "output/transcribe/debate259-verification-1/bernardo-reference.wav",
+      "sha256": "3577c28aef9960f361ff825c96eb2276813c95af5b8f2676a3d3a6c50d985c2a",
+      "bytes": 320078,
+      "durationSeconds": 10
+    }
+  ],
+  "clips": [
+    {
+      "clipId": "required-1",
+      "moveId": "con-minimal-dissociative-boundary",
+      "startMs": 2980700,
+      "endMs": 3017920,
+      "durationSeconds": 37.22,
+      "path": "output/transcribe/debate259-verification-1/required-1.wav",
+      "sha256": "72aaf54c7d0b937eefaf0e0977db99bc1bca7b7dd0fed921ae8912715f6e9bdb",
+      "bytes": 1191118,
+      "planningAllowanceUsd": 0.1
+    },
+    {
+      "clipId": "required-2",
+      "moveId": "con-limits-of-immediate-psi-rebuttal",
+      "startMs": 5013380,
+      "endMs": 5105980,
+      "durationSeconds": 92.6,
+      "path": "output/transcribe/debate259-verification-1/required-2.wav",
+      "sha256": "add20a4584249c42529fb23fffae61d8a93a7ac340ea3f41e0e5e65e8f8566df",
+      "bytes": 2963278,
+      "planningAllowanceUsd": 0.1
+    }
+  ],
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "automaticRetries": 0,
+  "attemptsPerClip": 1,
+  "cost": {
+    "reportedBeforeCall": true,
+    "knownSuccessfulCallCostBeforeUsd": 0.0169725,
+    "requiredChecksIndicativeEstimateUsd": 0.018982,
+    "requiredChecksPlanningAllowanceUsd": 0.2,
+    "cumulativePlanningExposureUsd": 0.2169725,
+    "standingLimitUsd": 1,
+    "inputTokenRatePerMillionUsd": 2.5,
+    "outputTokenRatePerMillionUsd": 10,
+    "pricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize"
+  },
+  "preparedAt": "2026-09-12T00:55:05.633Z"
+}

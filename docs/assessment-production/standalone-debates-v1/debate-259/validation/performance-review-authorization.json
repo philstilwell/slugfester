@@ -1,0 +1,22 @@
+{
+  "status": "user-approved-measured-limit-preserving-review",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "approval": "Approve the measured review and limit-preserving update",
+  "scope": "Measure the final generated pages, document the scheduled performance review, and update only the catalogue baseline and corresponding base byte allowances if all effective current download-size limits pass and remain unchanged.",
+  "testPath": "tests/site-quality/site-quality.spec.mjs",
+  "oldBaselineDebates": 248,
+  "newBaselineDebates": 259,
+  "bytesPerAddedDebateUnchanged": 5000,
+  "reviewAfterAddedDebatesUnchanged": 10,
+  "requiredMeasurementMethod": "Separate fresh Chromium browser context per route; wait for full network idle; require nonzero decodedBodySize for every loaded /src/data/ resource. Preserve complete measurements and reject cache-undercounted measurements.",
+  "effectiveLimitsAt259Bytes": {
+    "home": 505000,
+    "rankings": 555000,
+    "existingDebate": 590000,
+    "reference": 595000
+  },
+  "frozenAssessmentChangesAuthorized": false,
+  "increasedEffectiveDownloadLimitsAuthorized": false,
+  "directIncrementalCostUsd": 0
+}
