@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-10T17:42:22.574Z",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Is the Bible true?",
+  "sides": {
+    "pro": {
+      "speaker": "James White",
+      "position": "The Bible is true"
+    },
+    "con": {
+      "speaker": "Robert Price",
+      "position": "Biblical reliability is unestablished"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/inventory/inventory.json",
+      "sha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+      "bytes": 123859
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "formalRoundsSource": {
+      "path": ".assessment-cache/captions/DmA6c0yoVrQ/formal-rounds-source.json",
+      "sha256": "a42fd344d87701f10685c0dadd314b1f23f18e8387bec956fb50b97e14a52894",
+      "bytes": 464635
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/audio/audio-verification.json",
+      "sha256": "ae5156d9ac4cc177c9e624c36a291ff568cbc44f55b3de92e4a1bcac2b281c4f",
+      "bytes": 284525
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true,
+    "assessOnlyApprovedFormalRounds": true,
+    "excludedQuestionAndAnswerSessionUnavailable": true,
+    "formalClosingStatementsIncluded": true,
+    "noCreditOrPenaltyForExcludedMaterial": true,
+    "completeTranscriptMeansCompleteApprovedFormalRounds": true,
+    "audioVerificationCompletedBeforePrimaryJudgments": true,
+    "audioClarifiesSpokenMeaningNotIndependentTruth": true,
+    "doNotScoreCaptionOrTranscriptionArtifactsAsParticipantErrors": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  },
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/source/formal-rounds-authorization.json",
+      "sha256": "b9e6a472b18f909724abe65555fa90affbc729341d201138f4389ed7fe8fe847",
+      "bytes": 2841
+    },
+    "assessedWindow": {
+      "startEvent": 149,
+      "endEvent": 3358,
+      "startMs": 424120,
+      "endMs": 8191390,
+      "durationMs": 7767270
+    },
+    "scope": "Only the formal rounds, including opening statements, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, later audience questions and answers, and the moderator's separate concluding Christian apologetic argument are excluded. Moderator logistics within the approved window are not scored.",
+    "requiredReaderDisclosure": "Only the formal rounds (7:04–2:16:31), including openings, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, all later audience questions and answers, and the moderator's separate concluding argument are excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "bothFormalClosingStatementsIncluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "sourceAttributionInstructions": "Assess only each selected speaker’s own claim and inference. The approved segment includes openings, rebuttals, rapid cross-examination turns, and both formal closing statements. Verify the selected speaker and distinguish their own words from questions, quotations, or the opponent’s reply. Consult the complete approved source for qualifications and rebuttals; do not use any excluded later audience discussion."
+}

@@ -12214,5 +12214,55 @@ export const debateSummaries = [
         "title": "Mind, brain, and scientific optimism"
       }
     ]
+  },
+  {
+    "id": "white-price-bible-truth-formal-rounds-2010",
+    "number": "258",
+    "title": "James White vs Robert Price — Is the Bible true? (2010, formal rounds)",
+    "year": 2010,
+    "label": "The Bible's historical reliability",
+    "date": "2026-09-10",
+    "duration": "2 hr 44 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=DmA6c0yoVrQ",
+    "motion": "Is the Bible true?",
+    "summary": "White narrowly wins through manuscript-stream and contextual replies, while Price’s strongest challenges expose methodological limits, oral flexibility, and inerrancy’s interpretive costs.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "The Bible is true",
+        "speaker": "James White",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Biblical reliability is unestablished",
+        "speaker": "Robert Price",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 81,
+      "con": 78,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Historical method and supernatural claims"
+      },
+      {
+        "title": "Eyewitnesses, oral tradition, and distortion"
+      },
+      {
+        "title": "Authorship, sources, and literary composition"
+      },
+      {
+        "title": "Manuscripts, interpolation, and textual transmission"
+      },
+      {
+        "title": "Contradictions, context, and anachronism"
+      },
+      {
+        "title": "Inspiration, meaning, and the Bible's value"
+      }
+    ]
   }
 ];

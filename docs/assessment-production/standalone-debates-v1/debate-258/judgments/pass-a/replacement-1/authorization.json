@@ -1,0 +1,42 @@
+{
+  "status": "explicit-user-authorized-single-replacement",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "authorizedAt": "2026-09-10T18:44:08.734Z",
+  "userReply": "Yes.",
+  "approvedRequest": "Replace only the failed review with one fresh isolated reviewer, verifying its complete evidence reading before allowing ratings. Additional direct cost: $0.",
+  "preservedFailure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paused-reading-failure.json",
+    "sha256": "97652ee8c6c2f54c5865d2766d1d26f7f4f1bc31c97785a5d1c8319749300a94",
+    "bytes": 5159
+  },
+  "failedOriginal": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/output.json",
+    "sha256": "e263633f0f61a56c8759dbc0cb5be7f72c9caa6e53a0e68521d6d2a374da8311",
+    "bytes": 30281
+  },
+  "retainedPass": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/output.json",
+    "sha256": "c598a7c48087ceb3ee12dbbc1b2d44de373640de190e16cfab5b359aeb9f6e79",
+    "bytes": 37287
+  },
+  "replacementContexts": 1,
+  "replacementAttempts": 1,
+  "automaticRetries": 0,
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "twoStageExecution": {
+    "first": "Evidence reading only; no ratings and no output.json.",
+    "controllerGate": "Authenticate every complete source, inventory, audio and control file from public returned tool contents before giving judgment authority.",
+    "second": "One judgment attempt in that same fresh context after the reading gate passes."
+  },
+  "separateModelOutput": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/output.json",
+  "canonicalPromotion": "Only after complete reading, schema and substantive controller gates pass: move the original failed canonical file to an exact-byte preserved-failed-output-1.json archive, then install the accepted replacement at the generic canonical path. Verify both hashes and record the path transition; never overwrite or delete the failed original bytes, and never modify pass-b.",
+  "sourceInventoryAndAudioUnchanged": true,
+  "noPaidTranscription": true,
+  "additionalDirectCostUsd": 0
+}

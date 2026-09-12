@@ -1,0 +1,59 @@
+{
+  "status": "passed-private-production-preview",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/output.json",
+    "sha256": "03d7ee967b06158468e712836c206a5b8879f2fdd1bc5cb03eb51b7f94edd6f5",
+    "bytes": 67420
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "cb4a5ae2b750d5bdff08192b6062b0d71b2765f74ca9dac7748d4ea7ef97528a",
+      "bytes": 130128
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "657a180abf54e90cd617151406ac968f9ef25a0cd6698e3cab99e9721964458c",
+      "bytes": 11631709
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/output.json",
+      "sha256": "03d7ee967b06158468e712836c206a5b8879f2fdd1bc5cb03eb51b7f94edd6f5",
+      "bytes": 67420
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/score-pass/output.json",
+      "sha256": "98096c81537b313374debd3ed0aaa40f0ec4ab1253e17b521593632cde3885d4",
+      "bytes": 16859
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 258",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/preview-2/command-1.log",
+        "sha256": "23a4a591eb9a733cd1edf2ce24452a1ccaf8bd246fcd5e91f5d465307a288131",
+        "bytes": 60
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/preview-2/command-2.log",
+        "sha256": "e5b2d13705438567a5a0c556ae15d3f005f907e9172d1a5f6f5244e9bb5e5424",
+        "bytes": 23
+      }
+    }
+  ],
+  "error": null
+}

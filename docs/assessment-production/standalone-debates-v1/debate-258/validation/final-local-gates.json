@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "completedAt": "2026-09-12T00:09:23.015Z",
+  "results": [
+    {
+      "command": "node scripts/audit-standalone-formal-rounds-scope.mjs --debate 258 --publication",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-1.log",
+        "sha256": "9c0bc6cff44fb9af5f62cea4bc6f3ef0056fa5cb0a1d2cfe8cc64cd44ccd9fe0",
+        "bytes": 254
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-2.log",
+        "sha256": "e5b2d13705438567a5a0c556ae15d3f005f907e9172d1a5f6f5244e9bb5e5424",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-3.log",
+        "sha256": "6d37e6972f1fc66c5ccf01e696daf5a8f1a77d427b54ac0b3764589cbe7aaa03",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 258",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-4.log",
+        "sha256": "6325bf9d573c7da93af7760c092b6ce9168d1f3e451d536700c1dbe3b2d450cf",
+        "bytes": 257
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-5.log",
+        "sha256": "fa36cae8a1d46c15c047ba05ebc0451010394d8a280519edda53bc12d50e6fa9",
+        "bytes": 47669
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-6.log",
+        "sha256": "a7bd81a437de381689d3a612a4348343e3f32750e7bf575ea3000bb138184735",
+        "bytes": 219466
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/gates-7.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

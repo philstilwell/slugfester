@@ -1,0 +1,27 @@
+{
+  "status": "frozen-evidence-reading-only-before-ratings",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "role": "pass-a",
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/packet.json",
+    "sha256": "69699976994bdeb0723d9abf29a8eeed894ead3b3d41c95a2a2f370adffd9111",
+    "bytes": 22557
+  },
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading-manifest.json",
+    "sha256": "07a9aef5c33bde5e48ba6f205223386d833fae53bc1042a1b2b8e74ff84b3248",
+    "bytes": 109774
+  },
+  "instructions": [
+    "This is a fresh isolated primary-review context. Read the entire shared packet and manifest, both workflow and rubric, all three metadata files, and EVERY page in the manifest: source, inventory, audio-checks and audio-segments. You cannot reuse the priorIdenticalPages provision: no earlier context reading belongs to this fresh context.",
+    "Return each page separately using a sufficient tool output budget. For the entire manifest use a dedicated 50000-token command output budget and 55000-token outer budget. Do not treat file names, counts, hashes or a summary as the actual evidence. If any output truncates, complete all missing text.",
+    "This turn authorizes ONLY evidence reading. Do not formulate, write, generate, validate or submit ratings, burden adjustments, overall scores, winners, publication prose or tags. Do not create output.json even as a placeholder.",
+    "After the complete read, write only reading-receipt.json with the full list of read files and honest neutral anchors for each page. The controller independently audits all returned bytes; a receipt is not proof. End your turn after saving the receipt.",
+    "Wait for an explicit follow-up from the controller in this same context before any judgment work. That follow-up will specify the sole authorized assessment attempt and output path.",
+    "Do not open any judgment output, failed assessment, another reviewer record, source-reading receipt from an earlier context, excluded recording material, other debates, histories, credentials, network or outside research. Do not spawn agents.",
+    "The shared packet governs the eventual assessment contract, but this guidance withholds judgment authority until the controller confirms complete evidence reading. All source qualifications and completed audio clarifications must be incorporated later."
+  ],
+  "soleWritablePath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/reading-receipt.json",
+  "directIncrementalCostUsd": 0
+}

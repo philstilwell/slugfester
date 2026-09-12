@@ -1,0 +1,51 @@
+{
+  "status": "passed-byte-identical-single-delivered-output-recovery",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "sessionPath": "/Users/philstilwell/.codex/sessions/2026/09/10/rollout-2026-09-10T14-44-23-01a08ca2-a230-7450-a78c-d004c23f35de.jsonl",
+  "source": {
+    "path": "/Users/philstilwell/Documents/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/output.json",
+    "sha256": "59a88ef69703ec75b7ac1e619381f735bd1ae5c38f64a4a11dfcca14e618ce75",
+    "bytes": 39234
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/output.json",
+    "sha256": "59a88ef69703ec75b7ac1e619381f735bd1ae5c38f64a4a11dfcca14e618ce75",
+    "bytes": 39234
+  },
+  "publicCalls": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/transport-public-tool-records.json",
+    "sha256": "53df8da109c382dd684b0e984b542c8a6d6f6194c6bfe4b02d92128d456dfb45",
+    "bytes": 52921
+  },
+  "failedWrite": {
+    "callId": "call_tfeAujOB5Tikrf0cGOaW4WtT",
+    "timestamp": "2026-09-10T18:52:56.574Z",
+    "noFileCreated": true,
+    "reason": "Malformed patch rejected before write"
+  },
+  "successfulWrite": {
+    "callId": "call_OL8UUi5MF7dpHNPV7hf755X3",
+    "timestamp": "2026-09-10T18:54:29.993Z",
+    "wrongWorkingCopy": true
+  },
+  "firstAttemptCutoff": "2026-09-10T18:52:56.574Z",
+  "modelContexts": 1,
+  "assessmentAttempts": 1,
+  "fileDeliveryAttempts": 2,
+  "failedFileDeliveryAttempts": 1,
+  "schemaFeedbackBeforeSavedOutput": false,
+  "otherAssessmentFeedback": false,
+  "ratingsChangedBetweenPublicDeliveryCalls": 0,
+  "rationaleWordingChangesBeforeOnlySuccessfulSave": 192,
+  "controllerChangedOutputBytes": 0,
+  "newModelCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "validation": {
+    "status": "passed",
+    "pass": "pass-a",
+    "moves": 32
+  },
+  "recoveredAt": "2026-09-10T19:00:31.496Z",
+  "note": "One same-context assessment. Its malformed first patch saved nothing; before the sole successful save the reviewer shortened rationale wording but retained all 192 ratings and both zero adjustments. The controller recovers only the saved file, not the draft, with exact bytes and no assessment repair. Earliest attempted delivery is used as the reading-order cutoff."
+}

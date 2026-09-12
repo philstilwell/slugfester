@@ -1,0 +1,88 @@
+{
+  "status": "paused-user-authority-required-for-one-failed-leaf",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "createdAt": "2026-09-11T23:32:59.840Z",
+  "completedAuthorizedExceptions": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/exception-1/acceptance.json",
+      "sha256": "5e3fb632e1c725289d38922c26b5a1374a29ada9b6ece2ead1beca011c0b29d7",
+      "bytes": 1973
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/exception-1/acceptance.json",
+      "sha256": "4dba410ba843e005e19840d2bdd5b7f5c27d386ceb25ef4a252ded0bd55a996d",
+      "bytes": 1979
+    }
+  ],
+  "reason": "The new manuscript AI Contribution paragraph passed formal bounds but introduces an unsupported necessary condition through 'only when'. The one permitted model repair attempt is exhausted. Preserve the exact output and valid sibling; no automatic retry or parent rewrite is authorized.",
+  "failedField": "candidate.logicalExtension.pro.newArguments[0].text",
+  "failedMoveIds": [
+    "pro-manuscript-streams-against-interpolation",
+    "pro-no-standardization-manuscript-variation"
+  ],
+  "failedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/output.json",
+    "sha256": "8ceb65b2e73513ae2dcb9c21ee105d5ae5e0f5c6264cdd1baa11493f254ba12a",
+    "bytes": 1980
+  },
+  "originalParagraph": "A stronger manuscript argument would date identifiable textual branches against controversies that made the resurrection list useful. If geographically separated witnesses share First Corinthians 15:3–11 before any coordinating authority existed, interpolation requires multiple independent adoptions or an extraordinarily early archetype. Each route can be compared with known variant behavior. The conclusion remains probabilistic: shared early attestation raises the historical cost of insertion without pretending lost prehistory is impossible.",
+  "repairedParagraph": "Independent manuscript branches make interpolation costly only when their separation predates the controversy that would motivate adding the resurrection list. If geographically separated witnesses already contain First Corinthians 15:3–11 before any coordinating authority could align them, the hypothesis must posit either repeated independent adoption or an insertion in an exceptionally early shared archetype. Those alternatives should then be tested against the persistence of other variants across the same branches. Agreement does not prove that no lost form ever existed, because surviving witnesses cannot reveal every stage of transmission. It does, however, shift the burden: interpolation must explain both the passage’s early distribution and the absence of a recoverable contrary stream.",
+  "rejectedPhrase": "make interpolation costly only when",
+  "diagnosis": "The contextual-prediction paragraph is source-specific, conditional and faithful to the prior proposed test. The manuscript paragraph’s opening newly makes branch separation before a motivating controversy a necessary condition for interpolation to be costly. That is stronger than the original proposed chronology comparison and is not established by it. For example, branches could separate after a controversy begins but before a proposed insertion, which would still create an independent-adoption burden. Remove only the word 'only' to retain the useful sufficient-condition argument without the unsupported necessity claim.",
+  "proposedNarrowRepair": "Delete only the word 'only' from the opening sentence. Preserve every other word, all other fields, the valid sibling and the frozen participant scores.",
+  "retainedValidRepairedCritiques": 32,
+  "retainedValidAIParagraphs": 5,
+  "pendingInvalidAIParagraphs": 1,
+  "allNormalModelRepairShardsCompleted": true,
+  "unstartedNormalModelRepairShards": [],
+  "deterministicShardsNotApplied": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "originalPublication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/raw-prose-output-1.json",
+    "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+    "bytes": 63680
+  },
+  "preservedOriginalPublication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/preserved-output-before-copyedit.json",
+    "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+    "bytes": 63680
+  },
+  "sourceAndControlLocksRechecked": 28,
+  "allSourceAndControlLocksUnchanged": true,
+  "scoreOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/score-pass/output.json",
+    "sha256": "98096c81537b313374debd3ed0aaa40f0ec4ab1253e17b521593632cde3885d4",
+    "bytes": 16859
+  },
+  "scoreAttestation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/score-pass/attestation.json",
+    "sha256": "2ff70e1934cde7decab77c3c1c25e58d683f0463af56c363843a149738493607",
+    "bytes": 829
+  },
+  "officialScorePassesAdded": 0,
+  "publicationCandidateExists": false,
+  "publicationApplicationAttempted": false,
+  "productionDataChanged": false,
+  "commitCreated": false,
+  "pushed": false,
+  "pullRequestCreated": false,
+  "browsersOrServersOpened": false,
+  "knownPaidCostUsd": 0.7067425,
+  "maximumPossiblePaidCostUsd": 0.7067425,
+  "additionalPaidCostThisContinuationUsd": 0,
+  "fullCritiqueSetCheck": {
+    "count": 32,
+    "minimumWords": 117,
+    "maximumWords": 130,
+    "minimumCharacters": 914,
+    "recurringSixWordPhraseCount": 0,
+    "meanBoilerplateCoverage": 0,
+    "maximumBoilerplateCoverage": 0
+  },
+  "remainingWorkflow": "After the narrowly authorized correction passes: compile field reviews; apply only declared repairs; full prose and production-preview validation; independent corpus parity and editorial freeze; two blind rhetorical reviews plus anonymous adjudication; integration, rendering, repository checks, preflight, topic-branch PR, green checks and merge/deployment verification."
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-isolated-score-blind-inventory-packet",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "motion": "Is the Bible true?",
+  "assessmentModel": "5.6 Sol",
+  "sides": {
+    "pro": {
+      "speaker": "James White",
+      "position": "The Bible is true"
+    },
+    "con": {
+      "speaker": "Robert Price",
+      "position": "Biblical reliability is unestablished"
+    }
+  },
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/source/formal-rounds-authorization.json",
+      "sha256": "b9e6a472b18f909724abe65555fa90affbc729341d201138f4389ed7fe8fe847",
+      "bytes": 2841
+    },
+    "assessedWindow": {
+      "startEvent": 149,
+      "endEvent": 3358,
+      "startMs": 424120,
+      "endMs": 8191390,
+      "durationMs": 7767270
+    },
+    "scope": "Only the formal rounds, including opening statements, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, later audience questions and answers, and the moderator's separate concluding Christian apologetic argument are excluded. Moderator logistics within the approved window are not scored.",
+    "requiredReaderDisclosure": "Only the formal rounds (7:04–2:16:31), including openings, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, all later audience questions and answers, and the moderator's separate concluding argument are excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "bothFormalClosingStatementsIncluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "source": {
+    "path": ".assessment-cache/captions/DmA6c0yoVrQ/formal-rounds-source.json",
+    "sha256": "a42fd344d87701f10685c0dadd314b1f23f18e8387bec956fb50b97e14a52894",
+    "bytes": 464635
+  },
+  "instructions": [
+    "Read every event of the complete approved formal-rounds source. The entire original recording outside this packet is forbidden; neither side receives credit or penalty for excluded material. Produce inventory only, no ratings, fallacy/bias judgments, totals, winner, or publication prose.",
+    "Create 4–7 coherent topical sections with unique lowercase semantic IDs, positive integer weightPercent summing to 100, and evidence-led weightRationale. Do not force symmetry. Select 8–48 substantive moves chronologically, each with a unique semantic moveId and exactly one section. A section must have at least one move per side and at most four per side; one to three is ordinary. Any fourth card must be distinct, independently assessable and non-mergeable with a frozen source-specific rationale of at least 40 characters. Structure coherent topics before judging; never compress scored moves later.",
+    "Each side needs 3–7 unique burden bridges: exactly one motion bridge and at least one central and subsidiary bridge. Use bridgeId, tier, burden, successCriterion. Assign each move to that side’s bridge, tier and reason. Importance is 1 supporting, 2 major, or 3 load-bearing, with source-grounded rationale; no score prediction.",
+    "Every move states claimSummary, reasonSummary and inferenceSummary {premise,inference,conclusion}. Use the smallest complete contiguous sourceSpan {startEvent,endEvent} proving the selected speaker’s claim and its load-bearing reason. Original eventIndex values are mandatory. The controller adds unchanged exact excerpt and timing. Target at most 2200 excerpt characters; a longer genuinely necessary span needs spanLengthRationale of at least 40 characters. Never pad spans for full-source coverage, cross a procedural transition, or include the opponent’s complete independent argument as the selected speaker’s own speech.",
+    "QuoteEligibleExactSpans must be 3–18-word exact substrings of the selected span; use the field name quoteEligibleExactSpans. Preserve captions without silent meaningful correction. AttributionConfidence and materialWordingConfidence are high, medium or low, each with a source-specific rationale. If meaningful caption wording or voice ownership is below high, attributionConfidence must also be below high to trigger audio. Do not evade a trigger by omitting a material argument.",
+    "A constructive move has respondsToIds:[] and responseComponents:[]. A reply points only to earlier selected move IDs with nonempty responseComponents, each {targetMoveId,component,description}. Explain the actual addressed component without creating an earlier-target link for a later utterance.",
+    "Compute both count audits exactly from moves; the controller independently recomputes them. selectionBalanceAudit thresholds {totalAbsoluteDifference:3,sectionAbsoluteDifference:2}, totals {pro,con,absoluteDifference}, sections [{sectionId,pro,con,absoluteDifference}], rationaleRequired boolean and rationale. Differences at either threshold need a source-specific rationale >=40 characters.",
+    "publicationCapacityAudit is {maximumSelectedMovesPerSidePerSection:4,sections:[{sectionId,pro,con,withinCapacity,fourthRowRequired,fourthRowAuthorized,rationale}],allSectionsWithinCapacity:true,allFourthRowsPreauthorized:true}. fourthRowRequired is true if either side has four; fourthRowAuthorized is true for a justified fourth row and is also vacuously true if no fourth row is required, matching the current validator. Every rationale must identify why the selected distinct claims belong together; fourth-row rationales need >=40 characters.",
+    "fullTranscriptCoverageAudit must cover every approved original event exactly once in consecutive intervals, including procedural material: {assessedWindowOnly:true,reviewOfExcludedRecording:false,intervals:[{startEvent,endEvent,moveIds,reason}]}. All moveIds must exist; procedural or repetition intervals may have an empty list and a reason. Never claim source review of excluded recording."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-frozen",
+    "debateNumber": "258",
+    "debateId": "white-price-bible-truth-formal-rounds-2010",
+    "assessmentModel": "5.6 Sol",
+    "motion": "Is the Bible true?",
+    "assessedDebateWindowMs": {
+      "start": 424120,
+      "end": 8191390
+    },
+    "routes": "Array of {side,speaker,position,bridges:[{bridgeId,tier,burden,successCriterion}]}",
+    "sections": "Array of {sectionId,title,weightPercent,weightRationale}",
+    "moves": "Array of {moveId,sectionId,side,speaker,moveKind,sourceSpan,quoteEligibleExactSpans,claimSummary,reasonSummary,inferenceSummary,burdenContact:{bridgeId,tier,rationale},importance,importanceRationale,respondsToIds,responseComponents,attributionConfidence,attributionRationale,materialWordingConfidence,materialWordingRationale,optional spanLengthRationale}",
+    "selectionBalanceAudit": "Object described above",
+    "publicationCapacityAudit": "Object described above",
+    "fullTranscriptCoverageAudit": "Object described above",
+    "audit": {
+      "calculatedTotalsAbsent": true,
+      "completeTranscriptReviewed": true,
+      "completeTranscriptMeans": "complete approved formal-rounds transcript",
+      "allSpansSourceExact": true,
+      "scoreBlind": true,
+      "noOutcomePredetermined": true,
+      "noAudienceOrHostCredit": true
+    }
+  }
+}

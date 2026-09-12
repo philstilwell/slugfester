@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.1-standalone-judgment-execution",
+  "protocolVersion": "standalone-debate-v1",
+  "debateNumber": 258,
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "status": "complete-and-schema-valid",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "billingSurface": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "simultaneousLaunch": false,
+    "isolationMethod": "One original valid built-in isolated primary context retained unchanged; one explicitly authorized fresh built-in replacement context reads identical frozen substantive evidence, passes controller authentication, then authors its only judgment. Failed and retained assessments are unavailable to the replacement.",
+    "sharedPacketPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/packet.json",
+    "judgmentPacketSha256": "69699976994bdeb0723d9abf29a8eeed894ead3b3d41c95a2a2f370adffd9111",
+    "inventorySha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+    "assessmentEvidenceIdentical": true,
+    "allowedInputsIdentical": true,
+    "outputsDisjoint": true,
+    "attemptCountByPass": {
+      "pass-a": 2,
+      "pass-b": 1
+    },
+    "attemptsPerAcceptedContext": 1,
+    "authorizedReplacementAttempts": 1,
+    "automaticRetries": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/authorization.json",
+    "sha256": "67b4439dd84734fe9ca70fda492c652f67d779ae7db03b790c0c2e741d557a50",
+    "bytes": 2321
+  },
+  "originalExecutionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/execution-plan.json",
+    "sha256": "3a3881b7b88cf497972a7331f71ea9a56ce5f0f119e6d668657af9be82ba8d39",
+    "bytes": 27752
+  },
+  "replacementExecutionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/execution-plan.json",
+    "sha256": "e477e0548a714ef81fed2bd838b23200f818541c09471489d64d3484c54ee6b8",
+    "bytes": 17399
+  },
+  "canonicalPromotion": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/canonical-promotion.json",
+    "sha256": "1a11d3a7b0585f1e49fa22049bed316ba60f5fad0e74a3948f772b314522a02f",
+    "bytes": 1822
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/output.json",
+      "outputSha256": "59a88ef69703ec75b7ac1e619381f735bd1ae5c38f64a4a11dfcca14e618ce75",
+      "outputBytes": 39234,
+      "judgmentCount": 32,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 2,
+      "originalFailedAttempts": 1,
+      "authorizedReplacementAttempts": 1,
+      "automaticRetries": 0,
+      "agentTask": "/root/debate258_judgment_a_replacement",
+      "modelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/output.json",
+        "sha256": "59a88ef69703ec75b7ac1e619381f735bd1ae5c38f64a4a11dfcca14e618ce75",
+        "bytes": 39234
+      },
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/authenticated-reading.json",
+        "sha256": "7f4eafaac7f08ebd06a5b9f43b6545e8a6a4d3c626c7824eb0b6ffb71b2a28e3",
+        "bytes": 1047162
+      },
+      "readingOrder": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/reading-order-audit.json",
+        "sha256": "6777721f6b81cd6c2c5270b862f3307b2fb29433193f3e318dabd20b0d436cd5",
+        "bytes": 36279
+      },
+      "readingGate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/reading-gate.json",
+        "sha256": "05500a85c5e99e056446e6732a2ae6fd9e581262271eeb9444702e4deda4530d",
+        "bytes": 1153
+      },
+      "controllerReview": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/controller-review.json",
+        "sha256": "2df2bf0d4d82f8c23f2d74f39e11920743b3edd49c98c9e5b75aa16e7e22190d",
+        "bytes": 2337
+      }
+    },
+    {
+      "pass": "pass-b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/output.json",
+      "outputSha256": "c598a7c48087ceb3ee12dbbc1b2d44de373640de190e16cfab5b359aeb9f6e79",
+      "outputBytes": 37287,
+      "judgmentCount": 32,
+      "validationStatus": "passed",
+      "validationError": null,
+      "attemptCount": 1,
+      "originalFailedAttempts": 0,
+      "authorizedReplacementAttempts": 0,
+      "automaticRetries": 0,
+      "retainedWithoutNewAssessment": true,
+      "agentTask": "/root/debate258_judgment_b",
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/authenticated-reading.json",
+        "sha256": "9c1627d1a3a32e421928a602b8addffbe17f8eac5fc9c08e0b347be1547169de",
+        "bytes": 1056833
+      },
+      "readingOrder": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/reading-order-audit.json",
+        "sha256": "3acdd45595fad9a71eb25b6c2db99666b3602197cbe20ee71e0fb1ebf0140a01",
+        "bytes": 35380
+      },
+      "controllerReview": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/controller-retention-review.json",
+        "sha256": "f438b9e7a46569a72013c9a9edadfc3144acb73e1c3de67d4609a09b7592b14a",
+        "bytes": 1996
+      }
+    }
+  ],
+  "completedAt": "2026-09-10T19:01:20.759Z",
+  "audit": {
+    "primaryContexts": 2,
+    "totalModelContexts": 3,
+    "replacementContexts": 1,
+    "schemaValidPasses": 2,
+    "identicalEvidencePackets": true,
+    "mutuallyBlind": true,
+    "calculatedScoresSeenByModels": false,
+    "publicationSeenByModels": false,
+    "excludedMaterialSeenByModels": false,
+    "failedOriginalExcludedFromScoring": true,
+    "rerunPermitted": false
+  }
+}

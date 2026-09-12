@@ -1,0 +1,71 @@
+{
+  "status": "passed-before-inventory-lock",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "config": {
+    "path": ".assessment-cache/intake/approved-run.json",
+    "sha256": "8e864fd3f80f524b378cfcccdd16c9f5eb31a296c3839a9e8e65ebb1a060b102",
+    "bytes": 2499
+  },
+  "controls": [
+    {
+      "path": "scripts/tmp-standalone-intake.mjs",
+      "sha256": "2ac38999f090da92e17be5f4eeb96a53003dd98d87fcacd660cb53991134e176",
+      "bytes": 20747
+    },
+    {
+      "path": "scripts/tmp-standalone-boundary-check.mjs",
+      "sha256": "f7fe3edb2643c748f97907252cf8f7cd35db23eb190dac5bf872113ad9a6e912",
+      "bytes": 5138
+    },
+    {
+      "path": "scripts/tmp-standalone-stages.mjs",
+      "sha256": "68dc10fbda3da34e72cd2d30000b0773c15a8c6015310dadcf8efc053504a720",
+      "bytes": 9728
+    },
+    {
+      "path": "scripts/tmp-standalone-audio-plan.mjs",
+      "sha256": "4e3504ccd2d099faaf1c8fe41a7a9d26d576b8f6bd4db70ddf4dd6edbf677e97",
+      "bytes": 5800
+    },
+    {
+      "path": "scripts/tmp-standalone-audio-acquisition-receipt.mjs",
+      "sha256": "0cdb61512fc85303937ff82ffe1d66d6cd14927c5d9eb67c452438f7555f8a06",
+      "bytes": 1509
+    },
+    {
+      "path": "scripts/tmp-standalone-authenticate-reading.mjs",
+      "sha256": "5ac81ae3792e2a9c86b76a35abb3a780d5e637d34f49d9e1f393a0d6da2ad6c9",
+      "bytes": 4773
+    }
+  ],
+  "review": {
+    "sourceSpecificConfigurationIsSingleIdentityAuthority": true,
+    "priorExecutableIdentityAbsent": true,
+    "previousScopeAndTurnCountRemoved": true,
+    "priorSemanticOverridesNotImported": true,
+    "newInventoryStartsWithoutCorrections": true,
+    "formalClosingStatementsIncluded": true,
+    "fullRecordingOutsideWindowUnavailableToWorker": true,
+    "countsWillBeDerivedFromCurrentInventory": true
+  },
+  "boundaryVerification": {
+    "plan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/source/boundary-verification/plan.json",
+      "sha256": "805894fc39aa926c623591c2e4ee70c32b5c574d8c71e585d91f4ce8646c73b8",
+      "bytes": 1768
+    },
+    "attempts": 2,
+    "retries": 0,
+    "knownSuccessfulCostUsd": 0.0130475,
+    "maximumPossibleCostUsd": 0.0130475,
+    "interpretation": "The opening clip introduces Price and captures his opening preface. The closing clip captures White finishing his substantive closing before applause; the caption-split farewell has no scored argumentative content."
+  },
+  "transportPrecheck": {
+    "initialFreeCheck": "Python standard-library certificate lookup failed before a paid request; no verification was disabled.",
+    "successfulFreeCheck": "The installed transcription client HTTP library returned the expected unauthenticated 401 response with normal certificate verification.",
+    "paidRequestsFollowingHealthyCheck": true
+  },
+  "consoleCostClarification": "The intake command printed directCostUsd 0 for source acquisition. Cumulative paid boundary cost is recorded separately and is not zero.",
+  "reviewedAt": "2026-09-10T17:03:42.520Z"
+}

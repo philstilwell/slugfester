@@ -1,0 +1,40 @@
+{
+  "status": "authorized-after-controller-reading-gate",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "pass": "pass-a",
+  "readingGate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/reading-gate.json",
+    "sha256": "05500a85c5e99e056446e6732a2ae6fd9e581262271eeb9444702e4deda4530d",
+    "bytes": 1153
+  },
+  "issuedAt": "2026-09-10T18:49:56.305Z",
+  "sameContextRequired": true,
+  "sessionPath": "/Users/philstilwell/.codex/sessions/2026/09/10/rollout-2026-09-10T14-44-23-01a08ca2-a230-7450-a78c-d004c23f35de.jsonl",
+  "assessmentAttemptLimit": 1,
+  "automaticRetries": 0,
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/packet.json",
+    "sha256": "69699976994bdeb0723d9abf29a8eeed894ead3b3d41c95a2a2f370adffd9111",
+    "bytes": 22557
+  },
+  "soleWritablePath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/replacement-1/output.json",
+  "instructions": [
+    "Produce the full pass-a primary judgment under the unchanged shared packet contract. Preserve every move in inventory order, with each of six integer ratings and a source-specific rationale; include both fully reasoned burden-completion adjustments.",
+    "Do not compute totals or winners, assign tags, write publication prose, read any other assessment, change evidence, or spawn additional agents. Apply all audio ownership and wording cautions without treating transcript artifacts as participant errors.",
+    "Create the complete output once with apply_patch. Validate its saved bytes with validateStandalonePrimaryJudgment using the allowed validator and dependency. If invalid, preserve and report the delivered output rather than overwriting it."
+  ],
+  "validatorControls": [
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

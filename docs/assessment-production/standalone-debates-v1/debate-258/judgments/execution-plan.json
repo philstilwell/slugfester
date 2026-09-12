@@ -1,0 +1,80 @@
+{
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-10T17:42:22.581Z",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "freshContextPerPass": true,
+  "forkTurns": "none",
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/formal-rounds-packet.json",
+    "sha256": "04ca5a4ebe947b48a13a1fd484a1542843e414a87098b474dbf5aafb35578198",
+    "bytes": 7415
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/formal-rounds-packet.json",
+      "sha256": "04ca5a4ebe947b48a13a1fd484a1542843e414a87098b474dbf5aafb35578198",
+      "bytes": 7415
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/inventory/inventory.json",
+      "sha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+      "bytes": 123859
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": ".assessment-cache/captions/DmA6c0yoVrQ/formal-rounds-source.json",
+      "sha256": "a42fd344d87701f10685c0dadd314b1f23f18e8387bec956fb50b97e14a52894",
+      "bytes": 464635
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/audio/audio-verification.json",
+      "sha256": "ae5156d9ac4cc177c9e624c36a291ff568cbc44f55b3de92e4a1bcac2b281c4f",
+      "bytes": 284525
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/debate258_judgment_a",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/debate258_judgment_b",
+      "writablePaths": [
+        "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/output.json"
+      ],
+      "attemptLimit": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

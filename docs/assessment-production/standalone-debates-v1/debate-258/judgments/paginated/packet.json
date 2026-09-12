@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-10T17:42:22.657Z",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Is the Bible true?",
+  "sides": {
+    "pro": {
+      "speaker": "James White",
+      "position": "The Bible is true"
+    },
+    "con": {
+      "speaker": "Robert Price",
+      "position": "Biblical reliability is unestablished"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/inventory/inventory.json",
+      "sha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+      "bytes": 123859
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    "formalRoundsSource": {
+      "path": ".assessment-cache/captions/DmA6c0yoVrQ/formal-rounds-source.json",
+      "sha256": "a42fd344d87701f10685c0dadd314b1f23f18e8387bec956fb50b97e14a52894",
+      "bytes": 464635
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/audio/audio-verification.json",
+      "sha256": "ae5156d9ac4cc177c9e624c36a291ff568cbc44f55b3de92e4a1bcac2b281c4f",
+      "bytes": 284525
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true,
+    "assessOnlyApprovedFormalRounds": true,
+    "excludedQuestionAndAnswerSessionUnavailable": true,
+    "formalClosingStatementsIncluded": true,
+    "noCreditOrPenaltyForExcludedMaterial": true,
+    "completeTranscriptMeansCompleteApprovedFormalRounds": true,
+    "audioVerificationCompletedBeforePrimaryJudgments": true,
+    "audioClarifiesSpokenMeaningNotIndependentTruth": true,
+    "doNotScoreCaptionOrTranscriptionArtifactsAsParticipantErrors": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  },
+  "formalRoundsScope": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/source/formal-rounds-authorization.json",
+      "sha256": "b9e6a472b18f909724abe65555fa90affbc729341d201138f4389ed7fe8fe847",
+      "bytes": 2841
+    },
+    "assessedWindow": {
+      "startEvent": 149,
+      "endEvent": 3358,
+      "startMs": 424120,
+      "endMs": 8191390,
+      "durationMs": 7767270
+    },
+    "scope": "Only the formal rounds, including opening statements, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, later audience questions and answers, and the moderator's separate concluding Christian apologetic argument are excluded. Moderator logistics within the approved window are not scored.",
+    "requiredReaderDisclosure": "Only the formal rounds (7:04–2:16:31), including openings, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, all later audience questions and answers, and the moderator's separate concluding argument are excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+    "allSubsequentQAndAExcluded": true,
+    "bothFormalClosingStatementsIncluded": true,
+    "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+  },
+  "sourceAttributionInstructions": "Assess only each selected speaker’s own claim and inference. The approved segment includes openings, rebuttals, rapid cross-examination turns, and both formal closing statements. Verify the selected speaker and distinguish their own words from questions, quotations, or the opponent’s reply. Consult the complete approved source for qualifications and rebuttals; do not use any excluded later audience discussion.",
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading-manifest.json",
+    "sha256": "07a9aef5c33bde5e48ba6f205223386d833fae53bc1042a1b2b8e74ff84b3248",
+    "bytes": 109774
+  },
+  "priorEvidenceReadingStage": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/execution-plan.json",
+    "sha256": "4e2bf323252e894d79b385ce40df57b74c06f35eecaf51243bb56913916cb5e0",
+    "bytes": 11042
+  },
+  "priorIdenticalPages": [
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-01.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-01.txt",
+      "sha256": "bb597e19dec6e475023ab9b4bdab8e25aba3c8eb76befcaccfd1e54b50f112f7",
+      "bytes": 13975
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-02.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-02.txt",
+      "sha256": "cae65b3d6541d2619e26d7039f76082f72bd2035214983446bf54639c6ca736b",
+      "bytes": 13951
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-03.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-03.txt",
+      "sha256": "227bdf8faa38ff18a50108e2c22f413c04717c59b6199d15df148640018afb4b",
+      "bytes": 13941
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-04.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-04.txt",
+      "sha256": "abe27695604185d82c428161dc3688a82a54aebbff1256cf3f8cfbdccf243ca7",
+      "bytes": 14008
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-05.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-05.txt",
+      "sha256": "8774060b6268981fca88cceaadee9743130010d167cfdb14489d0f8ddca65ea0",
+      "bytes": 13966
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-06.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-06.txt",
+      "sha256": "8084b6cc11ad7a6dd241b01145d6a0d2d2fa91521f78af851565ec91616b5374",
+      "bytes": 13950
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-07.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-07.txt",
+      "sha256": "584b2c79e1c52ef7a39c1370e9aff64113762603fa1ec4e0623f4cdfb5208253",
+      "bytes": 14023
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-08.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-08.txt",
+      "sha256": "0b6127e64a907b4fe7194fe33fdccad637ff5acdc3c493fd918dac00483482d6",
+      "bytes": 14012
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-09.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-09.txt",
+      "sha256": "cf83f9153ead611e5592cf9a36dc1c2a362304f9b1f0e45b578b15aa4d7e3c0c",
+      "bytes": 13970
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-10.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-10.txt",
+      "sha256": "e15fb8ec7a3f7cd9e9c9ee43ce5f7d0bba2259e63ecf8622d9ac28e08275e506",
+      "bytes": 13980
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-11.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-11.txt",
+      "sha256": "d2ee5371eea3b7bde4db7e9bd1afb444fe9dcc96b81d100ee85a378f9c900838",
+      "bytes": 14025
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-12.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-12.txt",
+      "sha256": "459ebd98de4391b38ca699beeb081f631378eaaa7f915118a235c85d0868bf9e",
+      "bytes": 14001
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-13.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-13.txt",
+      "sha256": "95a0f47c1163b840bf4e04e19773dd3795ef0203d96e62b4d66abd1b2609c6c2",
+      "bytes": 13941
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-14.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-14.txt",
+      "sha256": "4dfe5dee2dd102a1056d347b9fca703a52ff26ac68e0984667c94a4ec509b2b4",
+      "bytes": 13985
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-15.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-15.txt",
+      "sha256": "425db0124c0725191f3a6dd400ee98b65d7961d338189e6b274bfde536b6a69e",
+      "bytes": 13968
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-16.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-16.txt",
+      "sha256": "d58863f32e5e7118b0b14da75e8e80acd054c448494cd78ae4ae6f103e9cc147",
+      "bytes": 13973
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-17.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-17.txt",
+      "sha256": "b5efae6835316a9908f1416455092324028fad0b2cb398bd76af2199079a7a50",
+      "bytes": 13967
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-18.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-18.txt",
+      "sha256": "c3057e5d9bd9b2eeca49bf9c7f8f5dcdca1f0e241b0d9be773155ab3a9572f42",
+      "bytes": 14025
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-19.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-19.txt",
+      "sha256": "b75214e5418d40290e89723e35e9a0d59e8f6f646ae640d66372392ef6a63f2e",
+      "bytes": 13952
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-20.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-20.txt",
+      "sha256": "a7265ab8962cc0dc68b9e6a24b81cafa0a06658ee93b4cb8338fe04beb666205",
+      "bytes": 13961
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-21.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-21.txt",
+      "sha256": "c533264d426c357ff0e781e08a316a304b5b9da4221684c482154cba0d2aed64",
+      "bytes": 14026
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-22.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-22.txt",
+      "sha256": "043ace5f47114556bec3feab48e27603d776ecbf7f425a1fa3ea5aa124273d5d",
+      "bytes": 13969
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-23.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-23.txt",
+      "sha256": "2cfc60330846208bcfb526355e6428d7621731f894858676eb8e59f93edbb857",
+      "bytes": 13981
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-24.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/source-24.txt",
+      "sha256": "56f5fdde909b0d3aa77164511364d5834b95f42a6073fdb4cb850e7d0170f90a",
+      "bytes": 6940
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-01.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-01.txt",
+      "sha256": "83516bbcf166e9d93020d0249013e3ab11c07edb9c479ec35e703e1bfb76efbd",
+      "bytes": 14743
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-02.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-02.txt",
+      "sha256": "02a1a5224e746ce5c4b7c263902b8a3f24512989acb889d2c2a01f0c85a9fa99",
+      "bytes": 13962
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-03.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-03.txt",
+      "sha256": "54661c93ae1f325264ea17fbd5f00ce656c043803bd6f5afe7528ff39b7e6e91",
+      "bytes": 13971
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-04.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-04.txt",
+      "sha256": "3c37f5907319ddd5937db773c11251c5eb59ed61bc30a453b9c666c388230d00",
+      "bytes": 14383
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-05.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-05.txt",
+      "sha256": "c7640f482087dcff7be6bacf4fe1fe5c02d3aaa0675fc41f8597334a250cbef2",
+      "bytes": 13830
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-06.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-06.txt",
+      "sha256": "bb70c437c92d545280c1f4143fec57477d8d0c56b6b86bda17859ae7e668a211",
+      "bytes": 11930
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-07.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-07.txt",
+      "sha256": "298bda2e40b8e6a87d619cd9631abbe9a1660fe54770cc0088a0bb33c3088dbf",
+      "bytes": 12683
+    },
+    {
+      "currentPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/inventory-08.txt",
+      "previousPath": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pre-audio-reading/reading/inventory-08.txt",
+      "sha256": "558e0d3be6a484fd527b929d1f8ce58ab3a32f347e1d88d9f20d6c4cef97171c",
+      "bytes": 8463
+    }
+  ],
+  "readingProtocol": [
+    "Read the complete workflow and rubric, this final packet, the entire final reading manifest and all three metadata files. Read every audio-check and audio-segment page in full. The listed priorIdenticalPages have controller-verified identical bytes to pages from your completed evidence-reading stage; those source/inventory pages need not be reread if you already read their complete contents. Any missing or truncated earlier page must be read now.",
+    "Display each reading page in its OWN tool invocation with an outer output budget of at least 7000 tokens. Do not combine pages in one functions.exec result. If any result is truncated, reread the missing range before continuing.",
+    "The canonical source, inventory and audio verification remain authoritative. The reading views change presentation only; do not reopen excluded source material or any other debate.",
+    "Before authoring ratings, save your own reading receipt listing all page paths with first/last neutral textual anchors and source event bounds. Do not claim completeness on the basis of hashes alone.",
+    "Author each dimension rationale individually: identify this particular move’s premise, inference, evidence, live reply, scope, or qualification and explain why it warrants the selected dimension rating under the rubric. Generic dimension descriptions or grade-band stock sentences concatenated with inventory summaries are not acceptable.",
+    "Code may validate and assemble independently authored records, but may not generate assessment explanations by templates or inventory-field concatenation. You may draft your full assessment across sections within this single context; no additional agents, model calls or retries.",
+    "Inventory caption cautions describe source acquisition, not defects in the participant’s reasoning. Apply all completed audio clarifications. No deduction for a transcription artifact.",
+    "Create the full output directly with apply_patch; never create an empty placeholder. Validate the delivered bytes using validateStandalonePrimaryJudgment, not only an in-memory object. Preserve an invalid delivered output and report it; no unauthorized replacement."
+  ],
+  "outputRoles": [
+    "pass-a",
+    "pass-b"
+  ],
+  "extraAllowedOutput": "A pass-specific reading-receipt.json; final output.json must satisfy the existing primary-judgment contract without changed limits."
+}
