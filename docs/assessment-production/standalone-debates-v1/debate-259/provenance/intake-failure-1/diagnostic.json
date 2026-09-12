@@ -1,0 +1,10 @@
+{
+  "phase": "pre-inventory manifest construction",
+  "failure": "Repository-relative fileRecord was given an absolute installed-skill path, which it incorrectly joined to the repository root.",
+  "writtenBeforeFailure": ["source/intake-configuration.json", "source/speaker-verification", "source/media-acquisition.json", "authorization.json", "source/source-lock.json"],
+  "notWritten": ["inventory/pre-inventory-manifest.json", "inventory/packet.json", "inventory/execution-plan.json", "registry entry"],
+  "judgmentOrInventoryModelCalls": 0,
+  "recovery": "Hash absolute skill files directly. Preserve all existing bytes; when resuming verify existing JSON equality apart from the authorization creation timestamp, then create only missing files.",
+  "assessmentSubstanceChanged": false,
+  "additionalPaidCostUsd": 0
+}

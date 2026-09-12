@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-isolated-inventory-execution-plan",
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-12T00:42:10.955Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/inventory/packet.json",
+      "sha256": "e861517a199856e451d8753d276d77b4e6c6d9b6191f28b7e5f13e7f67e5a600",
+      "bytes": 5993
+    },
+    {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/score-blind-source.json",
+      "sha256": "d1ce5adee3993046cbecf26c3cfc3150e4fcc5b5d4f7cb9bd7b5ec12e55eb7c3",
+      "bytes": 205695
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-259/inventory/model-output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "paidServicesAllowed": false,
+  "directIncrementalCostUsd": 0,
+  "forbiddenInputs": [
+    "other debates",
+    "judgments",
+    "scores",
+    "publication prose",
+    "legacy assessments"
+  ],
+  "instruction": "Read the complete packet and source only, without truncation, before deciding. Write only model-output.json with apply_patch. Do not read other files, spawn children, use APIs or make other changes."
+}

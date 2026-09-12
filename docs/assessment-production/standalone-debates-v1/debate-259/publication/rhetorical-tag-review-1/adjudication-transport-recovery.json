@@ -1,0 +1,23 @@
+{
+  "status": "passed-byte-identical-output-transport",
+  "debateNumber": "259",
+  "original": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/adjudication-decisions.json",
+    "sha256": "1b751cf5115c58826a803140dc08ca3fa8740b484c82f5814748742627d9e3b0",
+    "bytes": 19374
+  },
+  "canonical": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/adjudication-output.json",
+    "sha256": "1b751cf5115c58826a803140dc08ca3fa8740b484c82f5814748742627d9e3b0",
+    "bytes": 19374
+  },
+  "diagnosis": "The single complete output was delivered to adjudication-decisions.json instead of the authorized adjudication-output.json in the same review directory. The controller preserved the delivered file and created the expected file with identical bytes.",
+  "submissionAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/rhetorical-tag-review-1/adjudication-reading-order-audit.json",
+    "sha256": "ecf644045ae6fa2b2748ba92d2a5c7f8cb4ab856c212dbd620ebe56a83b6eac7",
+    "bytes": 19864
+  },
+  "modelRetries": 0,
+  "contentChanges": 0,
+  "directIncrementalCostUsd": 0
+}

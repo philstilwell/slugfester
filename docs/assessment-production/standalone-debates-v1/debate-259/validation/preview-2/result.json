@@ -1,0 +1,59 @@
+{
+  "status": "passed-private-production-preview",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/output.json",
+    "sha256": "634ce17e229b63f170937ca6fe01cb33ef35e64bf1a95acf92112cfe7c72f469",
+    "bytes": 70251
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "f6092b3f46b81036ff9a37c4ae573942f4cae394c00fe0e9ec71e69bebf1bacc",
+      "bytes": 131934
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "907356df13ed18411b7a8f7c56aa8bd43aaa3061a49a9d9e64a5186f493794bf",
+      "bytes": 11694647
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/publication/output.json",
+      "sha256": "634ce17e229b63f170937ca6fe01cb33ef35e64bf1a95acf92112cfe7c72f469",
+      "bytes": 70251
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/score-pass/output.json",
+      "sha256": "3fe0e1092be5e4502b09750aae8d7fbdb3b98274c92399786f165cd3e8d77338",
+      "bytes": 17254
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 259",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/preview-2/command-1.log",
+        "sha256": "a4fa020becf1361e6169a14160dec008eac525592950a16fe9810f05aa4fd3dc",
+        "bytes": 60
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-259/validation/preview-2/command-2.log",
+        "sha256": "809ec968500ee8a2d9c5cf015633c92d8e5f629bbc38f2ecc7aeec36fe7b6891",
+        "bytes": 23
+      }
+    }
+  ],
+  "error": null
+}

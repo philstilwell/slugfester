@@ -1,0 +1,15 @@
+{
+  "status": "preserved-exact-failed-transport-bytes",
+  "original": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/rendering/evidence/discovery.transport.log",
+    "sha256": "cbf96f4ba4ed6a3f737368646616638864861ea1fc90cacefba01358f0859558",
+    "bytes": 187
+  },
+  "archive": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/rendering/evidence/discovery.transport.log.gz",
+    "sha256": "ec65258477358b380149bab94157e34d674a04eb73c6e535bd6c29787bea30cf",
+    "bytes": 173
+  },
+  "encoding": "gzip",
+  "rationale": "The original transport response ends with a blank line that Git flags in a newly added text file. Preserve it byte-for-byte in a compressed repository artifact; leave the ignored original local log unchanged. No test setting or source evidence was altered."
+}

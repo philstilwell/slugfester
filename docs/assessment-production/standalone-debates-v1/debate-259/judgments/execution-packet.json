@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-12T00:53:48.371Z",
+  "debateNumber": "259",
+  "debateId": "kastrup-blackmore-conscious-illusion-2023",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does analytic idealism adequately explain consciousness?",
+  "sides": {
+    "pro": {
+      "speaker": "Bernardo Kastrup",
+      "position": "Analytic idealism"
+    },
+    "con": {
+      "speaker": "Susan Blackmore",
+      "position": "Illusionist critique"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/inventory/inventory.json",
+      "sha256": "d12171c97e6d231cf06dbc3ef331adfb7203a4cd2562fe219ee347968b1ed67a",
+      "bytes": 147070
+    },
+    "events": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/events.json",
+      "sha256": "9586b1c49ba419ef210bc554f7772dcd88016c93a7f56b208b10f1b6bd13d70c",
+      "bytes": 164129
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/transcript.txt",
+      "sha256": "dce4d9acd824c526d273f43408e3eed1d4ad2af6055c7e09f87fa54d10be1fca",
+      "bytes": 92911
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "indexedSource": {
+      "path": ".assessment-cache/captions/jrVnAWP2XEs/score-blind-source.json",
+      "sha256": "d1ce5adee3993046cbecf26c3cfc3150e4fcc5b5d4f7cb9bd7b5ec12e55eb7c3",
+      "bytes": 205695
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-259/audio/audio-verification.json",
+      "sha256": "4c79018edd4b8a108219ffdfbbde3085dd82b20e6f5634cf68ba46e22ff18968",
+      "bytes": 18980
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "d12171c97e6d231cf06dbc3ef331adfb7203a4cd2562fe219ee347968b1ed67a",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  },
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-259/judgments/reading-manifest.json",
+    "sha256": "ca40243d1c94c75486c4ef3d989794b9a677bca36ef58ad95011ff8fb1e1053f",
+    "bytes": 26128
+  },
+  "readingProtocol": [
+    "Before authoring any ratings or output, read this entire packet, the entire reading manifest, all metadata and every source/inventory/audio page, plus the complete workflow and rubric. Use one page per tool result with sufficient output budget. Recover any missing or truncated page before decisions. Page completeness is independently audited against public tool outputs.",
+    "Do not read other debates or any other judgment. Do not calculate move, section or overall scores, winners or rankings. Do not use paid tools, network resources, external models or child agents. The schema validator and its imported scoring-code dependency are permitted only for read-only validation after authoring, not for calculating scores.",
+    "Assess source performance rather than worldview truth. Blackmore explicitly declines materialism and a completed rival metaphysics. Preserve the authorized critical burden. Kastrup’s polemics about materialism are his chosen comparison, not a position she undertakes to defend.",
+    "Apply completed audio notes and their quotation restrictions. Ambiguous nonmaterial repeated words are not separate evidence. Never deduct for a caption or transcription artifact. Moderator prompts are not participant arguments.",
+    "Author each dimension rationale independently about the actual move’s inference, evidence, responsiveness, relevance, precision or calibration. Generic grade descriptions glued to inventory text are not acceptable. Code may validate independently authored data, never create reasons from repeated templates.",
+    "Write the complete final JSON directly once with apply_patch to the assigned pass output. No empty placeholder, no overwrite, no automatic repair or retry. If validation fails, preserve the exact output and report the error.",
+    "The output has top-level schemaVersion, protocolId, status, pass, debateNumber, debateId, reviewerRole, assessmentModel, reasoningEffort, inventorySha256, isolation, judgments, burdenCompletionAdjustment and audit. Copy the fixed identity values from this packet. isolation includes all required boundary booleans and contaminationDetected false. judgments follows locked inventory order, one item per move, each with moveId, assessmentConfidence, and the six dimensions {value,rationale}. burdenCompletionAdjustment contains pro and con, each exactly {value,rationale,eligibility}. Eligibility contains the nine named keys from the output contract. Include all required audit booleans as true only when actually satisfied."
+  ],
+  "outputRoles": [
+    "pass-a",
+    "pass-b"
+  ],
+  "extraAllowedOutput": false
+}

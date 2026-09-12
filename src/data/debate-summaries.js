@@ -12264,5 +12264,55 @@ export const debateSummaries = [
         "title": "Inspiration, meaning, and the Bible's value"
       }
     ]
+  },
+  {
+    "id": "kastrup-blackmore-conscious-illusion-2023",
+    "number": "259",
+    "title": "Bernardo Kastrup vs Susan Blackmore — Consciousness and illusion",
+    "year": 2023,
+    "label": "Idealism and conscious illusion",
+    "date": "2026-09-11",
+    "duration": "1 hr 30 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jrVnAWP2XEs",
+    "motion": "Does analytic idealism adequately explain consciousness?",
+    "summary": "Blackmore’s disciplined challenges expose gaps in Kastrup’s elegant idealist account, especially around boundaries and evidence, while her limited method avoids claiming a rival metaphysics.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Analytic idealism",
+        "speaker": "Bernardo Kastrup",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Illusionist critique",
+        "speaker": "Susan Blackmore",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "What illusionism claims"
+      },
+      {
+        "title": "Idealism and rival ontologies"
+      },
+      {
+        "title": "Regularity, perception, and mental causation"
+      },
+      {
+        "title": "Dissociation and private minds"
+      },
+      {
+        "title": "Experience, metacognition, and self"
+      },
+      {
+        "title": "Revisability, telepathy, and materialism"
+      }
+    ]
   }
 ];
