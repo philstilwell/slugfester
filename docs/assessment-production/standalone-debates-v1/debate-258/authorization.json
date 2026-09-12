@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-10T17:01:25.085Z",
+  "repositoryBaseline": {
+    "branch": "codex/debate-258",
+    "head": "c6c22c0f72b094f98da280f5db20fbcd0ace9902",
+    "localMain": "c6c22c0f72b094f98da280f5db20fbcd0ace9902",
+    "originMain": "c6c22c0f72b094f98da280f5db20fbcd0ace9902",
+    "clean": true,
+    "isolationReason": "New working copy from synchronized clean main; unrelated unfinished working copies preserved."
+  },
+  "identity": {
+    "debateNumber": "258",
+    "debateId": "white-price-bible-truth-formal-rounds-2010",
+    "videoId": "DmA6c0yoVrQ",
+    "canonicalUrl": "https://www.youtube.com/watch?v=DmA6c0yoVrQ",
+    "sourceTitle": "Is The Bible True? White vs Price 5/6/2010",
+    "eventYear": 2010,
+    "uploadDate": "2013-10-29",
+    "title": "James White vs Robert Price — Is the Bible true? (2010, formal rounds)",
+    "label": "The Bible's historical reliability",
+    "topicCategory": "scripture-jesus-resurrection",
+    "motion": "Is the Bible true?",
+    "pro": {
+      "speaker": "James White",
+      "position": "The Bible is true"
+    },
+    "con": {
+      "speaker": "Robert Price",
+      "position": "Biblical reliability is unestablished"
+    },
+    "moderator": "Hank Hanegraaff",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": false
+    },
+    "formalRoundsScope": {
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/source/formal-rounds-authorization.json",
+        "sha256": "b9e6a472b18f909724abe65555fa90affbc729341d201138f4389ed7fe8fe847",
+        "bytes": 2841
+      },
+      "assessedWindow": {
+        "startEvent": 149,
+        "endEvent": 3358,
+        "startMs": 424120,
+        "endMs": 8191390,
+        "durationMs": 7767270
+      },
+      "scope": "Only the formal rounds, including opening statements, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, later audience questions and answers, and the moderator's separate concluding Christian apologetic argument are excluded. Moderator logistics within the approved window are not scored.",
+      "requiredReaderDisclosure": "Only the formal rounds (7:04–2:16:31), including openings, rebuttals, cross-examinations, and both closing statements, are assessed. Introductions, all later audience questions and answers, and the moderator's separate concluding argument are excluded; neither speaker receives credit or penalties for that material. These scores are not an assessment of the complete recording.",
+      "allSubsequentQAndAExcluded": true,
+      "bothFormalClosingStatementsIncluded": true,
+      "neitherSideCreditedOrPenalizedForExcludedMaterial": true
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "boundaryVerificationKnownCostUsd": 0.0130475,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-258",
+    "docs/assessment-ledgers/white-price-bible-truth-formal-rounds-2010.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/transcript-corpus",
+    "src/data/debates.js",
+    "src/data/debate-index.js",
+    "src/data/debate-details",
+    "debate",
+    "interlocutors",
+    "topics",
+    "search",
+    "rankings",
+    "index.html",
+    "sitemap.xml",
+    "output/playwright/standalone-debate-v1/debate-258",
+    "generated site output belonging to this addition"
+  ]
+}

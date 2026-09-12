@@ -1,0 +1,82 @@
+{
+  "status": "frozen-before-additional-field-disjoint-repairs",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/raw-prose-output-1.json",
+    "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+    "bytes": 63680
+  },
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/preserved-output-before-copyedit.json",
+    "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+    "bytes": 63680
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/ai-depth-diagnosis.json",
+    "sha256": "efd6424fbf631788e93a453be95f213f1aa056e0b6dd4a99a27c582bb79ba4bf",
+    "bytes": 4554
+  },
+  "shards": [
+    {
+      "ordinal": 21,
+      "kind": "ai-depth",
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[0].text",
+        "candidate.logicalExtension.pro.newArguments[1].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/packet.json",
+        "sha256": "c86aaf5bb47cb63dad4dec3215b7684ea8d3c7185d02ff8f4673a9ca3069f76d",
+        "bytes": 70796
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/output.json",
+      "agentTask": "/root/publication_258_repair_21",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 22,
+      "kind": "ai-depth",
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[2].text",
+        "candidate.logicalExtension.con.newArguments[0].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/packet.json",
+        "sha256": "3a6052dbbb9cad0a0e8cd92a734617ce810b55b9b942f3f6cdc1485019b6633d",
+        "bytes": 41647
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/output.json",
+      "agentTask": "/root/publication_258_repair_22",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "ordinal": 23,
+      "kind": "ai-depth",
+      "fields": [
+        "candidate.logicalExtension.con.newArguments[1].text",
+        "candidate.logicalExtension.con.newArguments[2].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/packet.json",
+        "sha256": "0bb1483d0707b737400eebc8328856858be5fd6ef381261613d90ce1fe972791",
+        "bytes": 72411
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/output.json",
+      "agentTask": "/root/publication_258_repair_23",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "maximumFieldsPerShard": 2,
+  "oneAttemptPerShard": true,
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "transport-recovery-reading-complete-awaiting-reauthentication",
+  "role": "adjudication",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "continuationReason": "Controller authentication found that the 24 source-page returns from the initial reading were not byte-identical because the earlier PTY transport added carriage returns. This continuation reread each source page using a separate non-PTY exec_command cat and displayed each page in its own returned tool output.",
+  "recoveredInputRecords": {
+    "pathPattern": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/source-NN.txt",
+    "firstPage": "source-01.txt",
+    "lastPage": "source-24.txt",
+    "pageCount": 24,
+    "hashesAndByteLengthsPinnedBy": "docs/assessment-production/standalone-debates-v1/debate-258/publication/rhetorical-tag-review-1/adjudication-reading-manifest.json#pages",
+    "eachReadCompletely": true,
+    "eachReadWithSeparateExecCommand": true,
+    "eachDisplayedInSeparateReturnedToolOutput": true,
+    "tty": false,
+    "loginShell": false
+  },
+  "coverage": {
+    "sourcePagesExpected": 24,
+    "sourcePagesRecovered": 24,
+    "sourceEventCount": 3210,
+    "firstSourceEventIndex": 149,
+    "lastSourceEventIndex": 3358,
+    "noTruncationObserved": true,
+    "originalReceiptPreservedUnchanged": true
+  },
+  "attestations": {
+    "readingContinuationOnly": true,
+    "noDecisionAuthorityReceived": true,
+    "noDecisionOutputDraftedOrProduced": true,
+    "noOtherFilesOrExternalInputsRead": true,
+    "noDelegation": true,
+    "awaitingControllerReauthenticationAndExplicitFollowUp": true
+  },
+  "directIncrementalCostUsd": 0
+}

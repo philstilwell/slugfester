@@ -1,0 +1,101 @@
+{
+  "status": "paused-awaiting-one-fresh-pass-a-replacement-authorization",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "pausedAt": "2026-09-10T17:52:32.504Z",
+  "failedPass": {
+    "pass": "pass-a",
+    "preservedOriginal": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/output.json",
+      "sha256": "e263633f0f61a56c8759dbc0cb5be7f72c9caa6e53a0e68521d6d2a374da8311",
+      "bytes": 30281
+    },
+    "preservedReadingReceipt": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/reading-receipt.json",
+      "sha256": "c41d508233bdf012eed6934036b65750bad31e446264cd4a511c67330e653d0b",
+      "bytes": 672
+    },
+    "readingOrder": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-a/reading-order-audit.json",
+      "sha256": "f53a19b604990d5cd40da18146a61a1c04bf8b7d31ac6738dc000bf044966478",
+      "bytes": 34799
+    },
+    "reason": "The original reviewer submitted its assessment before the complete audio-segment pages identified in the reading-order audit had been returned. Its receipt claimed all audio pages were read. Reading a page after the submitted judgment cannot retroactively establish the required evidence-before-judgment order.",
+    "unreadRequiredPagesAtSubmission": [
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-09.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-10.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-11.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-12.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-13.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-14.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-15.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-16.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-17.txt",
+      "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading/audio-segments-18.txt"
+    ],
+    "eligibleForScoring": false
+  },
+  "retainedPass": {
+    "pass": "pass-b",
+    "output": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/output.json",
+      "sha256": "c598a7c48087ceb3ee12dbbc1b2d44de373640de190e16cfab5b359aeb9f6e79",
+      "bytes": 37287
+    },
+    "controllerReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/pass-b/controller-retention-review.json",
+      "sha256": "f438b9e7a46569a72013c9a9edadfc3144acb73e1c3de67d4609a09b7592b14a",
+      "bytes": 1996
+    }
+  },
+  "preservedEvidence": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/inventory/inventory.json",
+      "sha256": "8e1cf03400b915404275ca6fb709b7ebfc5c38e1cb7cec2c9a8bb46d54097baf",
+      "bytes": 123859
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/audio/audio-verification.json",
+      "sha256": "ae5156d9ac4cc177c9e624c36a291ff568cbc44f55b3de92e4a1bcac2b281c4f",
+      "bytes": 284525
+    },
+    "packet": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/packet.json",
+      "sha256": "69699976994bdeb0723d9abf29a8eeed894ead3b3d41c95a2a2f370adffd9111",
+      "bytes": 22557
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/judgments/paginated/reading-manifest.json",
+      "sha256": "07a9aef5c33bde5e48ba6f205223386d833fae53bc1042a1b2b8e74ff84b3248",
+      "bytes": 109774
+    }
+  },
+  "recoveryProposal": {
+    "replacementContexts": 1,
+    "replacedPass": "pass-a",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContext": true,
+    "failedAndRetainedJudgmentOutputsUnavailable": true,
+    "firstStage": "Complete evidence reading only, followed by controller-authenticated gate before authorizing any ratings.",
+    "secondStage": "One primary-judgment attempt in the same fresh context after the complete reading gate passes.",
+    "separateOutputPathRequired": true,
+    "originalOutputsNeverOverwritten": true,
+    "additionalPaidTranscription": false,
+    "additionalDirectCostUsd": 0,
+    "userAuthorizationRequired": true
+  },
+  "state": {
+    "scoreCalculationInvoked": false,
+    "publicationStarted": false,
+    "committed": false,
+    "pushed": false,
+    "temporaryBrowserOrServerOpen": false
+  },
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.7067425,
+    "maximumPossiblePaidCostUsd": 0.7067425,
+    "uncertainCostUsd": 0
+  }
+}

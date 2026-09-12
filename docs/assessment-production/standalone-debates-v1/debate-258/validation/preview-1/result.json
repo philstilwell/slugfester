@@ -1,0 +1,50 @@
+{
+  "status": "failed-private-production-preview",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/raw-prose-output-1.json",
+    "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+    "bytes": 63680
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "cb4a5ae2b750d5bdff08192b6062b0d71b2765f74ca9dac7748d4ea7ef97528a",
+      "bytes": 130128
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "657a180abf54e90cd617151406ac968f9ef25a0cd6698e3cab99e9721964458c",
+      "bytes": 11631709
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/raw-prose-output-1.json",
+      "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+      "bytes": 63680
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-258/score-pass/output.json",
+      "sha256": "98096c81537b313374debd3ed0aaa40f0ec4ab1253e17b521593632cde3885d4",
+      "bytes": 16859
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 258",
+      "exitCode": 1,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/validation/preview-1/command-1.log",
+        "sha256": "d30c75f188d6b8c8e5d04816e401c82ce148bd86a581c32d1261a00a49cc1e9f",
+        "bytes": 1118
+      }
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: scripts/audit-assessment-production-standalone-v1.mjs failed; see docs/assessment-production/standalone-debates-v1/debate-258/validation/preview-1/command-1.log\n\n1 !== 0\n"
+}

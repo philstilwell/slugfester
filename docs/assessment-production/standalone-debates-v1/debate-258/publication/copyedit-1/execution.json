@@ -1,0 +1,948 @@
+{
+  "status": "passed-isolated-score-neutral-copy-edit",
+  "debateNumber": "258",
+  "debateId": "white-price-bible-truth-formal-rounds-2010",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/execution-plan.json",
+    "sha256": "b24f70735be83614345c53e1a77c85958976580e3335bd7766c2bde5c29fbfb5",
+    "bytes": 14861
+  },
+  "additionalAIDepthPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/additional-ai-depth-plan.json",
+    "sha256": "c5be4a696c507d403f3a112ba08f217ea8fcd3c3b8030b99e6da73d266e1724c",
+    "bytes": 3213
+  },
+  "freshContextPerModelShard": true,
+  "forkTurns": "none",
+  "shards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[0].exchanges[0].pro.critique",
+        "candidate.sections[0].exchanges[0].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/packet.json",
+        "sha256": "530d3235616987d68ccba6d7bf1d8dc3ef03a758af581fcdbe4698c7779fee26",
+        "bytes": 28807
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/output.json",
+      "agentTask": "/root/publication_258_repair_1",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/output.json",
+        "sha256": "d828f38b69941e60f85d1b5851be62171740638d336cc19d49bf3a77fa5cb9c4",
+        "bytes": 2305
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/output.json",
+        "sha256": "d828f38b69941e60f85d1b5851be62171740638d336cc19d49bf3a77fa5cb9c4",
+        "bytes": 2305
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/authenticated-file-reading.json",
+        "sha256": "283ed673feaf7b140f5bb76f1eae52f5ac93a4a72e269eea30524012ba28f2f5",
+        "bytes": 1573
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/drafting-authorization.json",
+        "sha256": "ea3a640e01b8d3681ed7b2977ff85d82a855f4f06aa563fe33c9d0191adcd7c9",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-1/validation.json",
+        "sha256": "f6175d3c8d9212e0af4d82e7d8bac7117d92ab30c082bffde0d9dbb52060ddd0",
+        "bytes": 1434
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[0].exchanges[1].pro.critique",
+        "candidate.sections[0].exchanges[1].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/packet.json",
+        "sha256": "c0c20e03e6eb6da1dc58ccd09a07ca623f7ff1b6d8bb0c2ff8a7da2967223398",
+        "bytes": 46398
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/output.json",
+      "agentTask": "/root/publication_258_repair_2",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/output.json",
+        "sha256": "ebc12442efdba006046599e597045253b8a8804426be0cc803e8147d509fe6e5",
+        "bytes": 2340
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/output.json",
+        "sha256": "ebc12442efdba006046599e597045253b8a8804426be0cc803e8147d509fe6e5",
+        "bytes": 2340
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/authenticated-file-reading.json",
+        "sha256": "fe91a48dfa469abb6f37d2c6896604368c409f4bca577d518584aba412e487ca",
+        "bytes": 1574
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/drafting-authorization.json",
+        "sha256": "88aba3ac064e69456370c4b02c95f3ed8c372a4a8b62abd0517b9ef065f59af7",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-2/validation.json",
+        "sha256": "e8ca9261ff4deb2b0f56b8f46e105dab4d62e034e77bd38f5d77d2d6e795128d",
+        "bytes": 1435
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[0].exchanges[2].pro.critique",
+        "candidate.sections[0].exchanges[2].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/packet.json",
+        "sha256": "3a221603dc0b66a1ebae37a9ad5ff9f194d9831d168a00879e00ab3b2865969b",
+        "bytes": 33737
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/output.json",
+      "agentTask": "/root/publication_258_repair_3",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/output.json",
+        "sha256": "7b7ae0472645442ab4f95a2ad06321f5b5e0f573ff2e6bb5df917c2e3ecf489f",
+        "bytes": 2305
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/output.json",
+        "sha256": "7b7ae0472645442ab4f95a2ad06321f5b5e0f573ff2e6bb5df917c2e3ecf489f",
+        "bytes": 2305
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/authenticated-file-reading.json",
+        "sha256": "93531fe7728fc1ebcb2bbe65bb79a0f8ca6b38674d5f739a0d60e0557d59630f",
+        "bytes": 1509
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/drafting-authorization.json",
+        "sha256": "cf0791625632f014ea615146a53a95d8d2c9110075684b46607f54a06d05d24a",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-3/validation.json",
+        "sha256": "c98eee5c2f9ff29a078973fd605f7af7410dfd5866194f6e8c1b2bf9ff84f86b",
+        "bytes": 1434
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.sections[1].exchanges[0].pro.critique",
+        "candidate.sections[1].exchanges[0].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/packet.json",
+        "sha256": "04f0b6d30f4d9ac9674d31edd92475d6b0cbe6af36ec737b1a6d368f16e39315",
+        "bytes": 27443
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/output.json",
+      "agentTask": "/root/publication_258_repair_4",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/output.json",
+        "sha256": "949aa45b177ec02d14c5ce5166a672887a70930d44899403f334ee478376ab11",
+        "bytes": 2342
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/output.json",
+        "sha256": "949aa45b177ec02d14c5ce5166a672887a70930d44899403f334ee478376ab11",
+        "bytes": 2342
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/authenticated-file-reading.json",
+        "sha256": "611e04597602ea7eb7b272e798001aacabdb3c1a04ed047c93481d6996329100",
+        "bytes": 1505
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/drafting-authorization.json",
+        "sha256": "db428fe542f03fbcb526882370bcf8931a72afd83f6ffdb93851c42e2d9d7214",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-4/validation.json",
+        "sha256": "ca098fac7bfe562c7d4851a4f70662ca6e4dd08f5c5658c74d40070083162048",
+        "bytes": 1435
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.sections[1].exchanges[1].pro.critique",
+        "candidate.sections[1].exchanges[1].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/packet.json",
+        "sha256": "d448b5cf8dd7d489b747f4a8f0e9f93d5b04a169d3b2ba7dbcb649016de30b53",
+        "bytes": 60484
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/output.json",
+      "agentTask": "/root/publication_258_repair_5",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/output.json",
+        "sha256": "6b2e7620f51adfb7e23e03ab94a8f622a474ea01691c1cb92bddf42b48d29aca",
+        "bytes": 2204
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/output.json",
+        "sha256": "6b2e7620f51adfb7e23e03ab94a8f622a474ea01691c1cb92bddf42b48d29aca",
+        "bytes": 2204
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/authenticated-file-reading.json",
+        "sha256": "41f3b8c5709b1e851d10183ef8b240a7e07bd79f3c82c9fa60499e5a14910f34",
+        "bytes": 1505
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/drafting-authorization.json",
+        "sha256": "fa610ae73aa661a8e431fd20c8d5b6ea3381c6459baa8d0fbc9b3bd932dec1be",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-5/validation.json",
+        "sha256": "eed7fe3fa6ef67245be9ae5d67a5f78850d995e38c3025d5726fe7b689512b14",
+        "bytes": 1434
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 6,
+      "fields": [
+        "candidate.sections[1].exchanges[2].con.critique",
+        "candidate.sections[2].exchanges[0].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/packet.json",
+        "sha256": "4145626535aa6d0d3e5f9b36595d8e3ef31a5a1c3fcaac9c58f5156bcd9ef857",
+        "bytes": 57266
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/output.json",
+      "agentTask": "/root/publication_258_repair_6",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/exception-1/effective-shard-output.json",
+        "sha256": "f52cf04af158ae475fa391a9b48bf898fbb49958f126205ca4b341afd8fd4eba",
+        "bytes": 2269
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/output.json",
+        "sha256": "a9523fa354a71bf16ca78248aba7e42e8b3d732bfe64fa758d366b9c7b718b94",
+        "bytes": 2303
+      },
+      "authorizedAdditionalSingleLeafAttempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/exception-1/acceptance.json",
+        "sha256": "5e3fb632e1c725289d38922c26b5a1374a29ada9b6ece2ead1beca011c0b29d7",
+        "bytes": 1973
+      },
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/authenticated-file-reading.json",
+        "sha256": "2c837082340e3b6bc877c807bda9ac3e7a34f2a6ac371ebf29d4d01697435284",
+        "bytes": 6503
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/drafting-authorization.json",
+        "sha256": "58f4c50d1ecee11869e17cf40bd9fdebbd7a543e9f2385f05ca0fbe12de2815a",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-6/validation.json",
+        "sha256": "067fd7e85b4060c2e3d34c03f90daa353b992f47a42071aad1bb8caea6d027b9",
+        "bytes": 1434
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 7,
+      "fields": [
+        "candidate.sections[2].exchanges[0].con.critique",
+        "candidate.sections[2].exchanges[1].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/packet.json",
+        "sha256": "b65b3fa0dc73d51461bec473f428ac1a39c515865adf61dabc41cd630196bd99",
+        "bytes": 54757
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/output.json",
+      "agentTask": "/root/publication_258_repair_7",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/output.json",
+        "sha256": "c030a2a4c651a600be8f7342f005a4bf1d25f4f8e6267db95e79157472925e21",
+        "bytes": 2405
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/output.json",
+        "sha256": "c030a2a4c651a600be8f7342f005a4bf1d25f4f8e6267db95e79157472925e21",
+        "bytes": 2405
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/authenticated-file-reading.json",
+        "sha256": "b282bc429caaf596fbc53492afde1b901ccfcb57c623c5645c5bb800524b23a7",
+        "bytes": 5661
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/drafting-authorization.json",
+        "sha256": "9d83e246ae2239ab9e7d18cda0b68b194c5db21d543bdd18bc1f8e22a009c10a",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-7/validation.json",
+        "sha256": "25234b6e8e5326bfa3b95e68a8cad1fb4c1bc03db2fa4e0fcf3c950b5f86831b",
+        "bytes": 1436
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 8,
+      "fields": [
+        "candidate.sections[2].exchanges[1].con.critique",
+        "candidate.sections[2].exchanges[2].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/packet.json",
+        "sha256": "bdd048c2e1ab23be49042e109bdea3c21833e72006f05afd2d3be27c8c22bfa3",
+        "bytes": 87985
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/output.json",
+      "agentTask": "/root/publication_258_repair_8",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/output.json",
+        "sha256": "b20afc7dff347ca1db69a170503ba52ceaa20ec6771ec242d15f7d8d3e54b75b",
+        "bytes": 2341
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/output.json",
+        "sha256": "b20afc7dff347ca1db69a170503ba52ceaa20ec6771ec242d15f7d8d3e54b75b",
+        "bytes": 2341
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/authenticated-file-reading.json",
+        "sha256": "c2377dfe6e1e8bf72ff6a9476eec08d04ecbb79033ac69d5c5796fa686b13ef7",
+        "bytes": 9937
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/drafting-authorization.json",
+        "sha256": "270ee4ab19cf6f61567901c48b8dc3b1c8603ab3deaeaa0e9cb435059578f3c2",
+        "bytes": 1232
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-8/validation.json",
+        "sha256": "747191dd54335bce685fced33676595ef3403da8c28ebf1ffff2e45093f9dab4",
+        "bytes": 1435
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 9,
+      "fields": [
+        "candidate.sections[2].exchanges[2].con.critique",
+        "candidate.sections[2].exchanges[3].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/packet.json",
+        "sha256": "d11623c3e3fcbdc000a032c1e4fadb1098f489d054caebd2e4d11a2f9362626e",
+        "bytes": 114879
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/output.json",
+      "agentTask": "/root/publication_258_repair_9",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/output.json",
+        "sha256": "c4ce85e4b0e8fb6735856c5191db46ccae2550c7d7f955ce7a3680c72668e376",
+        "bytes": 2340
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/output.json",
+        "sha256": "c4ce85e4b0e8fb6735856c5191db46ccae2550c7d7f955ce7a3680c72668e376",
+        "bytes": 2340
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/authenticated-file-reading.json",
+        "sha256": "e0dbd91569a5b68828ca5c6eed56e4c43f32dbc1297a71b1ce661bfe12751dcc",
+        "bytes": 12274
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/drafting-authorization.json",
+        "sha256": "0e52701bc6f8db085d74477e83d3506b3ff872892bba9d4f85403b808f50300b",
+        "bytes": 1234
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-9/validation.json",
+        "sha256": "d026c8f4074f7a0002560054d7791f9c33ee3dd021ce48edc8abbb3a73575eba",
+        "bytes": 1436
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 10,
+      "fields": [
+        "candidate.sections[2].exchanges[3].con.critique",
+        "candidate.sections[3].exchanges[0].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/packet.json",
+        "sha256": "8941c2c6c4e3e4c86881bb9414fdc8a751d9783a72ef0256cedb4929feda0624",
+        "bytes": 67239
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/output.json",
+      "agentTask": "/root/publication_258_repair_10",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/output.json",
+        "sha256": "080876bcb09646097ae347856ef1473b510784fb51a5606229bfdf5e3408012c",
+        "bytes": 2411
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/output.json",
+        "sha256": "080876bcb09646097ae347856ef1473b510784fb51a5606229bfdf5e3408012c",
+        "bytes": 2411
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/authenticated-file-reading.json",
+        "sha256": "6cd4911cbc0fca432e6ca9ecea13665681622e5fde96d25da75138cd06c7730b",
+        "bytes": 7220
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/drafting-authorization.json",
+        "sha256": "2377cadd26b35a12e2e695f535c5992ab554dd8bb954420b974000cd4ceb9064",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-10/validation.json",
+        "sha256": "444469f9e5d49e3a6b468a43b7437063392647d1879a5d6e42d3b2c63055a9ed",
+        "bytes": 1440
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 11,
+      "fields": [
+        "candidate.sections[3].exchanges[0].con.critique",
+        "candidate.sections[3].exchanges[1].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/packet.json",
+        "sha256": "16ea047de394435d0cd7cd67f9d99feb3669b1b563da423f24490cb9b6e4b688",
+        "bytes": 27639
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/output.json",
+      "agentTask": "/root/publication_258_repair_11",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/exception-1/effective-shard-output.json",
+        "sha256": "075736430ca26e11ee45f3bbadcf8baffc9bde491ff92c5283c900095dc5cc9d",
+        "bytes": 2219
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/output.json",
+        "sha256": "08fafbc817fa7d1298eb2e62780ad3f32ed020eda048e86da17eb6e053765d4f",
+        "bytes": 2321
+      },
+      "authorizedAdditionalSingleLeafAttempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/exception-1/acceptance.json",
+        "sha256": "4dba410ba843e005e19840d2bdd5b7f5c27d386ceb25ef4a252ded0bd55a996d",
+        "bytes": 1979
+      },
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/authenticated-file-reading.json",
+        "sha256": "6f29093ed3f05033fe7055a6b8c81099ffad2a835e609033b5e62a9a5ee8b531",
+        "bytes": 3342
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/drafting-authorization.json",
+        "sha256": "98789c30aad72d5f985e62c2a83d445bcb53b4ab8bc3a7766debc51a8a763f7e",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-11/validation.json",
+        "sha256": "43fa75e5ced5088015b9dbfdc83dea8a94c74bbb6bf976002cb85f5503a7fe30",
+        "bytes": 1439
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 12,
+      "fields": [
+        "candidate.sections[3].exchanges[1].con.critique",
+        "candidate.sections[3].exchanges[2].pro.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/packet.json",
+        "sha256": "ff5e803f42f04b0035ad8891975b106195f245e23619fbc4a20d298ff24a52e5",
+        "bytes": 57462
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/output.json",
+      "agentTask": "/root/publication_258_repair_12",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/output.json",
+        "sha256": "390a409c794b3fd50434baa88a18c29340d9be6efc0cf5845efd428dce96b420",
+        "bytes": 2244
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/output.json",
+        "sha256": "390a409c794b3fd50434baa88a18c29340d9be6efc0cf5845efd428dce96b420",
+        "bytes": 2244
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/authenticated-file-reading.json",
+        "sha256": "f5caae868467ef419679e32ea85c2faf46360c648a53f544f8528bb760a3f5d0",
+        "bytes": 6441
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/drafting-authorization.json",
+        "sha256": "dff8df94f09239c3118e9e7466cef46436d03692ff7d45961d90637d8c71cd1a",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-12/validation.json",
+        "sha256": "eb90d08f4913e197d0276a6ff19de16d72bb2972f58913c768c24a0cdd88c000",
+        "bytes": 1438
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 13,
+      "fields": [
+        "candidate.sections[4].exchanges[0].pro.critique",
+        "candidate.sections[4].exchanges[0].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/packet.json",
+        "sha256": "355c549123ceec65bad075f54516ba3e7d3609fbc518ae016d788ded1ede59de",
+        "bytes": 24726
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/output.json",
+      "agentTask": "/root/publication_258_repair_13",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/output.json",
+        "sha256": "8a814e54522f3a3a059bbb5569183c162cd4c3a41b942f758e986a5a4a1de0e8",
+        "bytes": 2341
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/output.json",
+        "sha256": "8a814e54522f3a3a059bbb5569183c162cd4c3a41b942f758e986a5a4a1de0e8",
+        "bytes": 2341
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/authenticated-file-reading.json",
+        "sha256": "d53d775e4a5c56f6b67129bed92e690b95ba7a88aab2e3bb1209c2fde2bc0997",
+        "bytes": 3340
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/drafting-authorization.json",
+        "sha256": "07a90fbea409fc6a36d6a567fcf85b15b153009d787a26e0fa71163dcdfafcaf",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-13/validation.json",
+        "sha256": "53db64bcafb1dc539ece977d9dad2151589fa46a99ac7ea50224be7e1071d1d6",
+        "bytes": 1439
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 14,
+      "fields": [
+        "candidate.sections[4].exchanges[1].pro.critique",
+        "candidate.sections[4].exchanges[1].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/packet.json",
+        "sha256": "8109b85e03c9a40c2c120b354e1e8ab70d75497f4df9f91320019b18da76f5e0",
+        "bytes": 30198
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/output.json",
+      "agentTask": "/root/publication_258_repair_14",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/output.json",
+        "sha256": "c657d10168704ac4456c81e0cd88e28e06a7585225ab787f3b88dc09c56aa8b9",
+        "bytes": 2347
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/output.json",
+        "sha256": "c657d10168704ac4456c81e0cd88e28e06a7585225ab787f3b88dc09c56aa8b9",
+        "bytes": 2347
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/authenticated-file-reading.json",
+        "sha256": "23c47185d51233cbdd10a334cee87d998e0e4de3d8d5d229b2fe3bada228d9dc",
+        "bytes": 3728
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/drafting-authorization.json",
+        "sha256": "9fe2e0447543e9cca1af898334ff4fb8eaaf4d51948ff279b31e910c7b54e6e4",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-14/validation.json",
+        "sha256": "f4f9e316193a35994f83fc73db8efcc3e67d16abf64286a16ee63623256bf2b4",
+        "bytes": 1439
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 15,
+      "fields": [
+        "candidate.sections[5].exchanges[0].pro.critique",
+        "candidate.sections[5].exchanges[0].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/packet.json",
+        "sha256": "d1edae4b59dd25a1da5c2bcf7fca0bdb3ce4fbb65798c27430a3a039ba67c59f",
+        "bytes": 50592
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/output.json",
+      "agentTask": "/root/publication_258_repair_15",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/output.json",
+        "sha256": "222a052fedc5e28c7ceaea1e9c8082ae596367ebb5f5831576b5bdbf0d255123",
+        "bytes": 2264
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/output.json",
+        "sha256": "222a052fedc5e28c7ceaea1e9c8082ae596367ebb5f5831576b5bdbf0d255123",
+        "bytes": 2264
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/authenticated-file-reading.json",
+        "sha256": "057b11702f4719b96c91418dff5deeecc1b7265a6fef5a565efa4cc10413bfbb",
+        "bytes": 5275
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/drafting-authorization.json",
+        "sha256": "debb166397fd152fb4491541294478c1b01a53349cd0b07642d7772d882afe0e",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-15/validation.json",
+        "sha256": "eaf3c1d38f90f299cdbdccc05d82632a202ca55ca1af98d3d58b2b55a0afb18b",
+        "bytes": 1438
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 16,
+      "fields": [
+        "candidate.sections[5].exchanges[1].pro.critique",
+        "candidate.sections[5].exchanges[1].con.critique"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/packet.json",
+        "sha256": "93e2b54a0c53ddff27d6abad5e0ae827fa0b3687c2b1f9a6dc947ba63b645b12",
+        "bytes": 28939
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/output.json",
+      "agentTask": "/root/publication_258_repair_16",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/output.json",
+        "sha256": "f3d03362aa6513a6d089e47085a24ab04d876b7b73b30a707f47c7dcf04a6559",
+        "bytes": 2343
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/output.json",
+        "sha256": "f3d03362aa6513a6d089e47085a24ab04d876b7b73b30a707f47c7dcf04a6559",
+        "bytes": 2343
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/authenticated-file-reading.json",
+        "sha256": "7446177533d0001e1b13e9845f55c7e114d7cfd60321ea0e95124eb3ec086a63",
+        "bytes": 3338
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/drafting-authorization.json",
+        "sha256": "3581c66e4c9f062af9852e13463241154a3c35f6ac404b46bd1e5279bd09905d",
+        "bytes": 1236
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-16/validation.json",
+        "sha256": "b3c999c78d0c3bb224f16eb5421b723b0531e8631d6a47c4bd986302896a11d3",
+        "bytes": 1440
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 21,
+      "kind": "ai-depth",
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[0].text",
+        "candidate.logicalExtension.pro.newArguments[1].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/packet.json",
+        "sha256": "c86aaf5bb47cb63dad4dec3215b7684ea8d3c7185d02ff8f4673a9ca3069f76d",
+        "bytes": 70796
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/output.json",
+      "agentTask": "/root/publication_258_repair_21",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/exception-1/effective-shard-output.json",
+        "sha256": "2d44e0358d6c1ce44072a8e280eb2d6d6eb095d2ccc46d6cd6b6b2d1ef0b0b8b",
+        "bytes": 1975
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/output.json",
+        "sha256": "8ceb65b2e73513ae2dcb9c21ee105d5ae5e0f5c6264cdd1baa11493f254ba12a",
+        "bytes": 1980
+      },
+      "authorizedAdditionalSingleLeafAttempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/exception-1/acceptance.json",
+        "sha256": "47c0c20c765ddfcc1f5bf7858b24c223f75c5026d1d89e1dc79951a57201a180",
+        "bytes": 1983
+      },
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/authenticated-file-reading.json",
+        "sha256": "7f38078d56c26381b051dc4812e1e44cc821776273afc73f54f90a8e6f8ec06e",
+        "bytes": 7224
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/drafting-authorization.json",
+        "sha256": "edbd9b8c026ccf3f489e884c52dd4b89514a7c563e28706ce37dbe9128c66d05",
+        "bytes": 1244
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-21/validation.json",
+        "sha256": "73eae7d39806c7f80c0718bf612562a14c7f13ae7fbdc792726b01ce9013bb9c",
+        "bytes": 1446
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 22,
+      "kind": "ai-depth",
+      "fields": [
+        "candidate.logicalExtension.pro.newArguments[2].text",
+        "candidate.logicalExtension.con.newArguments[0].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/packet.json",
+        "sha256": "3a6052dbbb9cad0a0e8cd92a734617ce810b55b9b942f3f6cdc1485019b6633d",
+        "bytes": 41647
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/output.json",
+      "agentTask": "/root/publication_258_repair_22",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/output.json",
+        "sha256": "64e96789846ac38e7f04213fda1d2230db082565fadbf0dd42f06d62131b55fc",
+        "bytes": 1875
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/output.json",
+        "sha256": "64e96789846ac38e7f04213fda1d2230db082565fadbf0dd42f06d62131b55fc",
+        "bytes": 1875
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/authenticated-file-reading.json",
+        "sha256": "12269a4355aad0c0ba16bad669430011e9244b4c21da95aff38976d89f918385",
+        "bytes": 4112
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/drafting-authorization.json",
+        "sha256": "357b45b2d66f746ad0def0f2caa4b9e49fa6311774adc5bcbd2a21dea2ca45c4",
+        "bytes": 1244
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-22/validation.json",
+        "sha256": "f6f7869a4549c6f8b38469d245cd9196453ba48b40c7b99aa6f6472161927c09",
+        "bytes": 1446
+      },
+      "writableFieldCount": 2
+    },
+    {
+      "ordinal": 23,
+      "kind": "ai-depth",
+      "fields": [
+        "candidate.logicalExtension.con.newArguments[1].text",
+        "candidate.logicalExtension.con.newArguments[2].text"
+      ],
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/packet.json",
+        "sha256": "0bb1483d0707b737400eebc8328856858be5fd6ef381261613d90ce1fe972791",
+        "bytes": 72411
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/output.json",
+      "agentTask": "/root/publication_258_repair_23",
+      "attempts": 1,
+      "retries": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/output.json",
+        "sha256": "1e9dfc1b15db8f8280bb07894f46ff3618fc956a8393cfbf3939354f4c40107f",
+        "bytes": 1848
+      },
+      "originalModelOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/output.json",
+        "sha256": "1e9dfc1b15db8f8280bb07894f46ff3618fc956a8393cfbf3939354f4c40107f",
+        "bytes": 1848
+      },
+      "authorizedAdditionalSingleLeafAttempt": null,
+      "readingProof": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/authenticated-file-reading.json",
+        "sha256": "a8f6db4b023ba8c8dfdc937d0ebd2a768ee1df478543de810b589b85252c88a5",
+        "bytes": 6831
+      },
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/drafting-authorization.json",
+        "sha256": "a34c8171a59d7f6eea6f05fe42d37c675cc2cb7d356905e8b28397f1cea24c98",
+        "bytes": 1244
+      },
+      "validation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/shard-23/validation.json",
+        "sha256": "dc10371fe177eaa9f06ca766bacaac8bf21e3e7e786c2b5dd4dc34bb27acabf2",
+        "bytes": 1446
+      },
+      "writableFieldCount": 2
+    }
+  ],
+  "deterministicShards": [
+    {
+      "ordinal": 17,
+      "fields": [
+        {
+          "path": "candidate.sections[2].exchanges[3].con.time",
+          "before": "1:بوك",
+          "after": "1:39:05",
+          "reason": "Restore byte-exact frozen display timestamp."
+        },
+        {
+          "path": "candidate.logicalExtension.pro.finalArgument.notice",
+          "before": "This argument is an AI-authored synthesis extending White’s locked moves; it is not source-debate content and cannot affect the scores.",
+          "after": "This argument is an AI-generated synthesis extending White’s locked moves; it is not source-debate content and cannot affect the scores.",
+          "reason": "Restore the required disclosure term without changing its meaning or argumentative content."
+        }
+      ]
+    },
+    {
+      "ordinal": 18,
+      "fields": [
+        {
+          "path": "candidate.logicalExtension.con.finalArgument.notice",
+          "before": "This argument is an AI-authored synthesis extending Price’s locked moves; it is not source-debate content and cannot affect the scores.",
+          "after": "This argument is an AI-generated synthesis extending Price’s locked moves; it is not source-debate content and cannot affect the scores.",
+          "reason": "Restore the required disclosure term without changing its meaning or argumentative content."
+        },
+        {
+          "path": "noveltyMap[0].explanation",
+          "before": "AI-authored cumulative synthesis extending locked premises while preserving their evidential limits.",
+          "after": "AI-authored cumulative synthesis extending the listed locked premises while preserving their evidential limits.",
+          "reason": "Clarify that the existing synthesis disclosure refers to its already-listed source moves; no new argument."
+        }
+      ]
+    },
+    {
+      "ordinal": 19,
+      "fields": [
+        {
+          "path": "noveltyMap[4].explanation",
+          "before": "AI-authored cumulative synthesis extending locked premises while preserving their evidential limits.",
+          "after": "AI-authored cumulative synthesis extending the listed locked premises while preserving their evidential limits.",
+          "reason": "Clarify that the existing synthesis disclosure refers to its already-listed source moves; no new argument."
+        },
+        {
+          "path": "sourceQuoteAudit[0].sourcePath",
+          "before": "docs/assessment-production/standalone-debates-v1/debate-258/final-ledger.json",
+          "after": "docs/assessment-production/standalone-debates-v1/debate-258/final-ledger/final-ledger.json",
+          "reason": "Correct provenance locator to the existing original final-ledger path, without changing quoted evidence."
+        }
+      ]
+    },
+    {
+      "ordinal": 20,
+      "fields": [
+        {
+          "path": "sourceQuoteAudit[1].sourcePath",
+          "before": "docs/assessment-production/standalone-debates-v1/debate-258/final-ledger.json",
+          "after": "docs/assessment-production/standalone-debates-v1/debate-258/final-ledger/final-ledger.json",
+          "reason": "Correct provenance locator to the existing original final-ledger path, without changing quoted evidence."
+        }
+      ]
+    }
+  ],
+  "publicationBefore": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/preserved-output-before-copyedit.json",
+    "sha256": "a359478d4dfd9c030c41dcd27d34d05434c0c2c14828709b7fdc26a095596f30",
+    "bytes": 63680
+  },
+  "publicationAfter": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/output.json",
+    "sha256": "03d7ee967b06158468e712836c206a5b8879f2fdd1bc5cb03eb51b7f94edd6f5",
+    "bytes": 67420
+  },
+  "controllerReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-258/publication/copyedit-1/controller-field-review.json",
+    "sha256": "ae13747fd995db3db71396a16cfb3fc0cd1790014b5c7862f3659cf03ba23f25",
+    "bytes": 19650
+  },
+  "audit": {
+    "freshRepairContexts": 22,
+    "maximumWritableFieldsPerShard": 2,
+    "additionalModelRetries": 3,
+    "automaticModelRetries": 0,
+    "authorizedAdditionalSingleLeafAttempts": 3,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "tagChanges": 0
+  },
+  "directIncrementalCostUsd": 0
+}
