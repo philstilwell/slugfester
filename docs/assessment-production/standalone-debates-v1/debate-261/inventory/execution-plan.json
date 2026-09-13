@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-isolated-inventory-execution-plan",
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-13T17:19:17.119Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/packet.json",
+      "sha256": "cc9e1cf9b41d48d86b0de90a34e246b0dde3639371c85c9609e7305cdadacd1b",
+      "bytes": 11666
+    },
+    {
+      "path": ".assessment-cache/captions/HPYxA8dYLBY/score-blind-source.json",
+      "sha256": "36527c471a50072b44cbd7ad17204510c22470cd3977d0a06cbc512957590a24",
+      "bytes": 296001
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-261/inventory/model-output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "paidServicesAllowed": false,
+  "directIncrementalCostUsd": 0,
+  "forbiddenInputs": [
+    "other debates",
+    "judgments",
+    "scores",
+    "publication prose",
+    "legacy assessments"
+  ],
+  "instruction": "Read the complete allowed packet and all original source events without truncation. First report reading complete without writing. After controller authentication releases this same context, write model-output.json once using apply_patch; no other files, calls, children or retries."
+}

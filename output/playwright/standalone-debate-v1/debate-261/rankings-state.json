@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "rankings-state",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "eval",
+    "() => ({url:location.href,minimum:document.querySelector(\"#ranking-minimum\")?.value,options:[...document.querySelectorAll(\"#ranking-minimum option\")].map(o=>({value:o.value,label:o.textContent})),sharptonLinks:[...document.querySelectorAll(\"a\")].filter(a=>a.href.includes(\"sharpton\")).map(a=>({href:a.getAttribute(\"href\"),text:a.textContent})),selectSharpton:[...document.querySelectorAll(\"option\")].filter(o=>o.textContent.includes(\"Sharpton\")).map(o=>({value:o.value,text:o.textContent})),sharptonInBody:document.body.textContent.includes(\"Al Sharpton\")})"
+  ],
+  "startedAt": "2026-09-13T21:08:55.616Z",
+  "completedAt": "2026-09-13T21:08:56.654Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/rankings-state.txt",
+    "sha256": "c3241cc9f8f84aaa59c9fc3a9e039cff8d5c85c22f8ef056fe307c8a318a126c",
+    "bytes": 1268
+  },
+  "directIncrementalCostUsd": 0
+}

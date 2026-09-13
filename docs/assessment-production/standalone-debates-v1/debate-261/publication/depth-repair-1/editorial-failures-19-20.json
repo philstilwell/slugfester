@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0-source-specific-publication-editorial-failure",
+  "status": "failed-preserve-valid-descriptions-request-critique-replacements",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "records": [
+    {
+      "shardId": "shard-19",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-19/returned-text-first-attempt/input-bundle.json",
+        "sha256": "949e493d014706e0fdf125b17be29a858e61a755e06f63c93bda0d13bd409fa6",
+        "bytes": 26618
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-19/returned-text-first-attempt/output.json",
+        "sha256": "1268c2c3418edd710253306771b92393b8bd359c85572e5e16af6eafea6cba4d",
+        "bytes": 2201
+      },
+      "raw": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-19/returned-text-first-attempt/raw-final-response.txt",
+        "sha256": "5264501a23778c9c3cc12a7dc994b0b28484102cb392357dfe0300f3d6d07056",
+        "bytes": 2043
+      },
+      "formalValidation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-19/returned-text-first-attempt/validation.json",
+        "sha256": "b2a4ec5095bba0f715814742f9d6541f5095bf0b545039d3b083965dd72a7419",
+        "bytes": 2649
+      },
+      "critiquePath": "candidate.sections[3].exchanges[0].con.critique",
+      "descriptionPath": "candidate.sections[3].exchanges[0].con.words",
+      "description": "Sincere religious experience may warrant private belief, but sincerity alone proves neither supernatural doctrine nor any authority to impose that doctrine on children or others."
+    },
+    {
+      "shardId": "shard-20",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-20/returned-text-first-attempt/input-bundle.json",
+        "sha256": "8c02db864db2724db4d25a1745c6b839acb5f7f0afe493d45fdbf2b6b40be951",
+        "bytes": 26946
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-20/returned-text-first-attempt/output.json",
+        "sha256": "ab9b39721aae3b2e78441f66232510794f628ee63e749c1f8e33b054e479b727",
+        "bytes": 2278
+      },
+      "raw": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-20/returned-text-first-attempt/raw-final-response.txt",
+        "sha256": "da82263080910cf9202fe94df9c0970e2591e8a11f370817535af6a59f42d10f",
+        "bytes": 2120
+      },
+      "formalValidation": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-20/returned-text-first-attempt/validation.json",
+        "sha256": "b5df6d50b107e2865be4c94ebc617f07ddadaa868b499d766202d96f90ec8732",
+        "bytes": 2649
+      },
+      "critiquePath": "candidate.sections[3].exchanges[1].con.critique",
+      "descriptionPath": "candidate.sections[3].exchanges[1].con.words",
+      "description": "Hitchens concedes secular atrocities, but argues Stalin exploited habits formed by czarist religious absolutism; resisting credulity and idolization therefore remains the relevant remedy."
+    }
+  ],
+  "findings": [
+    {
+      "shardId": "shard-19",
+      "moveId": "con-private-experience-no-public-proof",
+      "field": "candidate.sections[3].exchanges[0].con.critique",
+      "quotedDefect": "corrupted captions constrain illustrative precision",
+      "rationale": "This incorrectly includes a transcription defect among reasons for withholding participant credit. The frozen judgments discuss loaded illustration and difficult narration, and the completed audio check explicitly forbids recognition trouble in the virgin-birth illustration from becoming a new inference or quotation. Correct only the prose explanation; do not alter any numerical or source judgment."
+    },
+    {
+      "shardId": "shard-20",
+      "moveId": "con-secular-evil-conceded",
+      "field": "candidate.sections[3].exchanges[1].con.critique",
+      "quotedDefects": [
+        "historically-inherited",
+        "authoritarian-political",
+        "historically-plausible",
+        "religious-authoritarian",
+        "independently-originating",
+        "institutionally-grounded",
+        "psychologically-grounded",
+        "historically-particular",
+        "evidentially-under-supported",
+        "substantively-unanswered"
+      ],
+      "rationale": "The dense invented compounds make ordinary prose unnatural and compress the whitespace word count. Passing the numeric gate does not excuse artificial wording. Rewrite grammatically within the unchanged105–130-word and880-character contract while retaining the same concession, historical limitation, comparative burden and score."
+    }
+  ],
+  "successfulEarlierRecovery": {
+    "shardId": "shard-15",
+    "critiqueWords": 121,
+    "critiqueCharacters": 965,
+    "descriptionUnchanged": true
+  },
+  "preserved": {
+    "allRawOutputs": true,
+    "allFormalValidators": true,
+    "allEvidenceAndJudgments": true,
+    "scores": {
+      "pro": 76,
+      "con": 84
+    },
+    "canonicalPublicationStillOriginalRejectedBytes": true
+  },
+  "proposedRecovery": {
+    "additionalFreshContexts": 1,
+    "writableFields": [
+      "candidate.sections[3].exchanges[0].con.critique",
+      "candidate.sections[3].exchanges[1].con.critique"
+    ],
+    "maximumWritableLeaves": 2,
+    "attempts": 1,
+    "retries": 0,
+    "retainBothValidDescriptionsExactly": true,
+    "requiresSpecificUserAuthorization": true,
+    "directIncrementalCostUsd": 0
+  },
+  "unstartedShards": [
+    "shard-21",
+    "shard-22",
+    "shard-23",
+    "shard-24",
+    "shard-25",
+    "shard-26",
+    "shard-27",
+    "shard-28",
+    "shard-29",
+    "shard-30",
+    "shard-31",
+    "shard-32",
+    "shard-33",
+    "shard-34"
+  ],
+  "newRhetoricalReviewStarted": false,
+  "productionDataChanged": false
+}

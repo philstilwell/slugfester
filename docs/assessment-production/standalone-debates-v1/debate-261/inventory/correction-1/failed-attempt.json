@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-preserved-failed-inventory-repair-attempt",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "shardId": "quotation-and-closing-boundary",
+  "status": "failed-one-attempt-exhausted-no-output-file",
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/packet.json",
+    "sha256": "8e0d9fe22f9d10df01124323e315286e1edf4ea8e9114d879c2f174bc09792c3",
+    "bytes": 38302
+  },
+  "authenticatedReading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/reading-authentication.json",
+    "bytes": 1791,
+    "sha256": "4590e95fb6891e7cf66d783c4b624b68bddc8a16bab994875483dbceeb5991d7"
+  },
+  "sessionPrefix": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T13-38-53-01a09bd9-bd54-7182-80f3-7b50b509c172.jsonl",
+    "bytes": 349709,
+    "sha256": "2dfa77d2cd66bed8406762b1dcb3a2c4857d81b7004b4c5e751a683cad0a9a2a",
+    "observedAt": "2026-09-13T17:45:13.106Z"
+  },
+  "callId": "call_xajgUSCqZKuWTtbUjfIuNK7W",
+  "rawCustomToolInput": "const patch = \"*** Begin Patch\\n*** Add File: /Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-261-worktree/docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/output.json\\n+{\\n+  \\\"status\\\": \\\"complete\\\",\\n+  \\\"shardId\\\": \\\"quotation-and-closing-boundary\\\",\\n+  \\\"edits\\\": [\\n+    {\\n+      \\\"path\\\": \\\"/moves/29/quoteEligibleExactSpans\\\",\\n+      \\\"moveId\\\": \\\"con-faith-specific-extraordinary-harms\\\",\\n+      \\\"field\\\": \\\"quoteEligibleExactSpans\\\",\\n+      \\\"value\\\": [\\n+        \\\"committed because of and only because of faith\\\"\\n+      ],\\n+      \\\"rationale\\\": \\\"The selected excerpt begins with proof, so the burden-of-proof phrase is not exact-span eligible; the faith-specific quotation appears verbatim in events 1803–1804.\\\"\\n+    },\\n+    {\\n+      \\\"path\\\": \\\"/moves/30/sourceSpan\\\",\\n+      \\\"moveId\\\": \\\"pro-closing-existence-burden\\\",\\n+      \\\"field\\\": \\\"sourceSpan\\\",\\n+      \\\"value\\\": {\\n+        \\\"startEvent\\\": 8,\\n+        \\\"endEvent\\\": 1957\\n8\\n+      },\\n+      \\\"rationale\\\": \\\"Ending at event 1957 removes only the trailing autograph remark while preserving the complete God-scope, origin analogy, and scientific-data evidence from events 1918–1957.\\\"\\n+    }\\n+  ],\\n+  \\\"audit\\\": {\\n+    \\\"packetReadCompletely\\\": true,\\n+    \\\"usedOnlyPacketEvidence\\\": true,\\n+    \\\"onlyDeclaredLeavesCorrected\\\": true,\\n+    \\\"scoresOrJudgmentsAccessed\\\": false,\\n+    \\\"argumentSemanticsChanged\\\": false\\n+  }\\n+}\\n*** End Patch\";\nconst r = await tools.apply_patch(patch);\ntext(r);",
+  "rawCustomToolInputSha256": "374bc75fc6947d100574302410285440d84b25d27865d49d70f9dab86e72e8a4",
+  "decodedPatch": "*** Begin Patch\n*** Add File: /Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-261-worktree/docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/output.json\n+{\n+  \"status\": \"complete\",\n+  \"shardId\": \"quotation-and-closing-boundary\",\n+  \"edits\": [\n+    {\n+      \"path\": \"/moves/29/quoteEligibleExactSpans\",\n+      \"moveId\": \"con-faith-specific-extraordinary-harms\",\n+      \"field\": \"quoteEligibleExactSpans\",\n+      \"value\": [\n+        \"committed because of and only because of faith\"\n+      ],\n+      \"rationale\": \"The selected excerpt begins with proof, so the burden-of-proof phrase is not exact-span eligible; the faith-specific quotation appears verbatim in events 1803–1804.\"\n+    },\n+    {\n+      \"path\": \"/moves/30/sourceSpan\",\n+      \"moveId\": \"pro-closing-existence-burden\",\n+      \"field\": \"sourceSpan\",\n+      \"value\": {\n+        \"startEvent\": 8,\n+        \"endEvent\": 1957\n8\n+      },\n+      \"rationale\": \"Ending at event 1957 removes only the trailing autograph remark while preserving the complete God-scope, origin analogy, and scientific-data evidence from events 1918–1957.\"\n+    }\n+  ],\n+  \"audit\": {\n+    \"packetReadCompletely\": true,\n+    \"usedOnlyPacketEvidence\": true,\n+    \"onlyDeclaredLeavesCorrected\": true,\n+    \"scoresOrJudgmentsAccessed\": false,\n+    \"argumentSemanticsChanged\": false\n+  }\n+}\n*** End Patch",
+  "decodedPatchSha256": "76bce80b21163b56bd54ab8859bf1028df1acbc8995c4591954d59653401e55d",
+  "toolResponse": [
+    {
+      "type": "input_text",
+      "text": "Script failed\nWall time 0.0 seconds\nOutput:\n"
+    },
+    {
+      "type": "input_text",
+      "text": "Script error:\napply_patch verification failed: invalid hunk at line 23, '8' is not a valid hunk header. Valid hunk headers: '*** Add File: {path}', '*** Delete File: {path}', '*** Update File: {path}'"
+    }
+  ],
+  "diagnosis": [
+    "Malformed patch contains a bare line 8 instead of a patch-prefixed JSON line; apply_patch rejected it without writing.",
+    "The attempted sourceSpan.startEvent is 8, not the original 1918 required to remain unchanged. This is an additional source-boundary error, so recovering only the patch syntax would not produce a valid repair.",
+    "Required audit keys also differ from the frozen packet contract. No candidate was accepted or silently repaired."
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "noFileCreated": true,
+  "modelAuthoredBytesPreservedExactly": true,
+  "directIncrementalCostUsd": 0
+}
+

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0-authenticated-returned-text-leaf-repair",
+  "status": "passed-authenticated-bounded-leaf-repair",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "shardId": "shard-04",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/replacement-1/input-bundle.json",
+    "sha256": "52f5bf7e2e05fc7345b198acb21a1aac4bd33c6dfab7734d1ab4758e0110b165",
+    "bytes": 30108
+  },
+  "rawFinalResponse": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/replacement-1/raw-final-response.txt",
+    "sha256": "113d0b2ca1b9da5a2d980992a568a986ecf4d82c534f4f7a6bee86b7fd697fe9",
+    "bytes": 2126
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/replacement-1/output.json",
+    "sha256": "5f2daf6aa0c7daf8cdc1ebc6de3b340a37ad6111a17f0039cbdeac7cfb725c55",
+    "bytes": 2184
+  },
+  "readingAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/replacement-1/reading-authentication.json",
+    "sha256": "c4f9cafc1f8e64f4f3bfaf7ffd3eb2dd797be384dbf9ce57c72b08b11e1c00fc",
+    "bytes": 1845
+  },
+  "replacementAuthorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/returned-text-replacement-authorization.json",
+    "sha256": "6d77465e1116715f8b7d7de82a03b74055beafafde04811baf102141db313820",
+    "bytes": 894
+  },
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "sessionPrefix": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T15-16-56-01a09c33-83b9-7c43-811b-89bad5fb0a7c.jsonl",
+    "bytes": 324537,
+    "sha256": "4b920748e48dca0b593b2c9bb4efc7689c2b6e144750fdc1df9812efae97e9f2"
+  },
+  "finalMessageId": "msg_01cd859ff63843d6016aa6f71b193887d18dc71a4f516a06ae",
+  "finalResponses": 1,
+  "modelFilesystemWriteAttempts": 0,
+  "controllerCanonicalWrites": 1,
+  "administrativeNormalizations": [
+    {
+      "path": "schemaVersion",
+      "original": "1.0-bounded-publication-leaf-repair",
+      "canonical": "1.0-bounded-publication-leaf-repair-output",
+      "basis": "Administrative wrapper derived solely from frozen output contract and authenticated execution facts; returned leaf values and rationales are unchanged."
+    },
+    {
+      "path": "status",
+      "original": null,
+      "canonical": "complete",
+      "basis": "Administrative wrapper derived solely from frozen output contract and authenticated execution facts; returned leaf values and rationales are unchanged."
+    },
+    {
+      "path": "audit",
+      "original": {
+        "model": "gpt-5.6-sol",
+        "reasoningEffort": "low",
+        "directCostUsd": 0,
+        "writableLeafCount": 2,
+        "changedLeafCount": 2,
+        "scoreChanged": false,
+        "assessmentChanged": false,
+        "scopeChanged": false,
+        "validation": {
+          "wordsFieldWordCount": 24,
+          "critiqueWordCount": 129,
+          "critiqueCharacterCount": 1035,
+          "critiqueSentenceCount": 4
+        }
+      },
+      "canonical": {
+        "model": "gpt-5.6-sol",
+        "reasoningEffort": "low",
+        "attempts": 1,
+        "retries": 0,
+        "directIncrementalCostUsd": 0,
+        "judgmentChanges": 0,
+        "scoreChanges": 0,
+        "moveChanges": 0,
+        "fieldCount": 2
+      },
+      "basis": "Administrative wrapper derived solely from frozen output contract and authenticated execution facts; returned leaf values and rationales are unchanged."
+    }
+  ],
+  "returnedLeafValuesUnchanged": true,
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "writableFieldCount": 2,
+  "errors": [],
+  "metrics": [
+    {
+      "path": "candidate.sections[0].exchanges[1].con.words",
+      "words": 24,
+      "characters": 193
+    },
+    {
+      "path": "candidate.sections[0].exchanges[1].con.critique",
+      "words": 129,
+      "characters": 1035
+    }
+  ]
+}

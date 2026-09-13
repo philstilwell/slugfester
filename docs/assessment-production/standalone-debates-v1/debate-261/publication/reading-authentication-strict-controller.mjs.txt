@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync,existsSync} from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const [planPath,sessionPath]=process.argv.slice(2),read=p=>JSON.parse(readFileSync(p));
+const route=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(d=>d.debateNumber==='261');
+assert.ok(planPath.startsWith(`${route.root}/publication/`)&&sessionPath.startsWith('/Users/philstilwell/.codex/sessions/'));
+const plan=read(planPath);assert.equal(plan.debateNumber,route.debateNumber);assert.equal(plan.debateId,route.debateId);
+assert.equal(plan.model,'gpt-5.6-sol');assert.equal(plan.reasoningEffort,'low');assert.deepEqual(plan.inputBundle,fileRecord(plan.inputBundle.path));
+const destination=plan.readingAuthenticationPath??`${path.dirname(planPath)}/reading-authentication.json`;assert.equal(existsSync(destination),false);
+const expected=readFileSync(plan.inputBundle.path,'utf8'),buffer=readFileSync(sessionPath),rows=buffer.toString().trim().split('\n').map(JSON.parse),metadata=rows.find(r=>r.type==='session_meta').payload;
+const contexts=rows.filter(r=>r.type==='turn_context');assert.ok(contexts.length&&contexts.every(r=>r.payload.model===plan.model&&r.payload.effort===plan.reasoningEffort));
+const calls=rows.filter(r=>['function_call','custom_tool_call'].includes(r.payload?.type));
+assert.ok(calls.every(r=>['exec','send_message','wait_agent'].includes(r.payload.name)));assert.equal(calls.filter(r=>String(r.payload.input??r.payload.arguments).includes('apply_patch')).length,0);
+const pages=[];
+function inspect(text){
+ assert.ok(!text.includes('Warning: truncated output')&&!text.includes('tokens truncated'));
+ for(const line of text.split('\n')){let x;try{x=JSON.parse(line);}catch{continue;}
+  if(Number.isInteger(x?.start)&&Number.isInteger(x?.end)&&typeof x?.text==='string')pages.push(x);
+  else if(typeof x?.output==='string')inspect(x.output);
+ }
+}
+for(const r of rows.filter(r=>['function_call_output','custom_tool_call_output'].includes(r.payload?.type))){const o=r.payload.output;if(Array.isArray(o)){for(const b of o)if(typeof b.text==='string')inspect(b.text);}else if(typeof o==='string')inspect(o);}
+let next=0;for(const p of pages){assert.equal(p.start,next);assert.ok(p.end>p.start&&p.end-p.start<=7000);assert.equal(p.text,expected.slice(p.start,p.end));next=p.end;}assert.equal(next,expected.length);assert.equal(pages.map(p=>p.text).join(''),expected);
+const result={schemaVersion:'1.0-authenticated-isolated-stage-reading',status:'complete-exact-reading-authenticated-release-permitted',debateNumber:route.debateNumber,debateId:route.debateId,agentPath:metadata.agent_path,model:plan.model,reasoningEffort:plan.reasoningEffort,plan:fileRecord(planPath),packet:plan.inputBundle,sessionPrefix:{path:sessionPath,bytes:buffer.length,sha256:createHash('sha256').update(buffer).digest('hex'),observedAt:new Date().toISOString()},authenticatedPages:pages.map(({start,end})=>({start,end})),exactCharacterCount:next,completePacketMatched:true,outputTruncations:0,preReleaseWrites:0,writablePath:plan.writablePath,attemptsAuthorizedAfterRelease:1,retries:0,directIncrementalCostUsd:0};
+writeFileSync(destination,serializedJson(result),{flag:'wx'});console.log(JSON.stringify({agent:metadata.agent_path,status:result.status,characters:next,pages:pages.length,record:fileRecord(destination)}));

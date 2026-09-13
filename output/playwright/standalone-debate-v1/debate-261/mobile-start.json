@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "mobile-start",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const a=page.locator(\".ai-extension-accordion\"); if(await a.evaluate(el=>el.open))await a.locator(\"summary\").click(); await page.evaluate(()=>scrollTo(0,0)); return {width:await page.evaluate(()=>innerWidth),collapsed:await a.evaluate(el=>!el.open)}; }"
+  ],
+  "startedAt": "2026-09-13T21:04:43.115Z",
+  "completedAt": "2026-09-13T21:04:44.135Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/mobile-start.txt",
+    "sha256": "802c03c2560e9d9e2e4daabca56a54a5f4d1a7cd31a4184dd4cd0d1c37edfd7f",
+    "bytes": 362
+  },
+  "directIncrementalCostUsd": 0
+}

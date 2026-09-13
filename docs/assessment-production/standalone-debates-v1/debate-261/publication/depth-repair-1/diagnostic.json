@@ -1,0 +1,67 @@
+{
+  "status": "rejected-publication-preserved-before-repair",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/preserved-output.json",
+    "sha256": "c0d3b4259e92742d7d07bd8ba4a3708359b3f40bc73ccfc01ecf9458bec8671f",
+    "bytes": 67675
+  },
+  "initialValidation": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/initial-validation.json",
+    "sha256": "fd235d32164c6cee8bfc997caf05a23a9427cc49829af3f16022a5bb3042f2f7",
+    "bytes": 5223
+  },
+  "repositoryParityFailure": "AssertionError: boilerplate.meanCoveredRatio <= 0.15",
+  "boilerplate": {
+    "meanCoveredRatio": 0.375296821681283,
+    "maximumCoveredRatio": 0.4098360655737705,
+    "commonSixWordSequences": [
+      "the decisive comparison remains underdeveloped live",
+      "decisive comparison remains underdeveloped live burden",
+      "comparison remains underdeveloped live burden this",
+      "al sharpton needed discriminating support against",
+      "sharpton needed discriminating support against the",
+      "needed discriminating support against the strongest",
+      "discriminating support against the strongest rival",
+      "support against the strongest rival explanation",
+      "against the strongest rival explanation locked",
+      "the strongest rival explanation locked score",
+      "rewards relevance burden and burden contact",
+      "relevance burden and burden contact while",
+      "burden and burden contact while withholding",
+      "and burden contact while withholding higher",
+      "burden contact while withholding higher credit",
+      "contact while withholding higher credit for",
+      "while withholding higher credit for evidence",
+      "withholding higher credit for evidence warrant",
+      "higher credit for evidence warrant the",
+      "credit for evidence warrant the result",
+      "for evidence warrant the result remains",
+      "evidence warrant the result remains evidence",
+      "warrant the result remains evidence sensitive",
+      "the result remains evidence sensitive counterexample",
+      "result remains evidence sensitive counterexample responsive",
+      "remains evidence sensitive counterexample responsive scope",
+      "evidence sensitive counterexample responsive scope disciplined",
+      "sensitive counterexample responsive scope disciplined inference",
+      "counterexample responsive scope disciplined inference specific",
+      "responsive scope disciplined inference specific alternative",
+      "scope disciplined inference specific alternative aware",
+      "disciplined inference specific alternative aware proportionate",
+      "inference specific alternative aware proportionate and",
+      "specific alternative aware proportionate and transcript",
+      "alternative aware proportionate and transcript grounded",
+      "christopher hitchens needed discriminating support against",
+      "hitchens needed discriminating support against the",
+      "rewards responsiveness and burden contact while",
+      "responsiveness and burden contact while withholding"
+    ]
+  },
+  "editorialFindings": [
+    "All31 critiques use repeated filler and many cut-off sentences; every critique must be rewritten without changing its locked assessment.",
+    "Descriptions average43.129words, above the independent26.3maximum; condense each source-grounded claim/reason/inference to the22–28word style target.",
+    "Three pro AI reinforcing paragraphs repeatedly frame development through Sharpton could; preserve their arguments but express them directly.",
+    "Two sourceQuoteAudit transcriptPath strings point to a nonexistent .json file instead of the exact frozen transcript path; repair routing metadata deterministically, not quotations."
+  ],
+  "modelRepairScope": "31 disjoint two-leaf card shards plus two disjoint AI prose shards (2+1leaves), one fresh isolated attempt each; separate two-leaf deterministic path correction.",
+  "assessmentChanges": 0
+}

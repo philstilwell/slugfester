@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0-standalone-judgment-execution",
+  "status": "complete-and-schema-valid",
+  "debateNumber": 261,
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "inventorySha256": "4957c6832a79c0c5efc4bccfae5a9a382c73d0d647a6b7c78ba89e14fffdbfcc",
+    "identicalInputBundle": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/judgments/input-bundle.json",
+      "sha256": "bf1d75c2df51f62f4744c358bbdd4eadcf62ef6c9fe531279f17ea8eb892ed26",
+      "bytes": 243531
+    },
+    "attemptsPerPass": 1,
+    "retries": 0,
+    "isolationMethod": "Fresh built-in contexts with no inherited conversation; sole frozen input bundle and disjoint absolute output paths. Access restrictions are protocol-enforced and confirmed from actual tool sessions, not claimed as an operating-system sandbox.",
+    "apiCredentialDisposition": "Subscription model execution; no API key or credential supplied in the model input, and no credential or environment reads by either worker."
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentPath": "/root/primary_261_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-261/judgments/pass-a/output.json",
+      "outputSha256": "a1d9d3cde88769e872e91add2732930ac9644d3ec9409bc53044ef26806bd71d",
+      "judgmentCount": 31,
+      "validationStatus": "passed",
+      "readingAuthentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/judgments/pass-a/reading-authentication.json",
+        "sha256": "d103f3edebff8b44920ff30c9ead1d8b0d7783379881d3d73d85363af0587121",
+        "bytes": 2984
+      },
+      "sessionPrefix": {
+        "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T14-07-38-01a09bf4-10db-7b40-9e57-aa9eb4799885.jsonl",
+        "bytes": 1475825,
+        "sha256": "0428b974af651503cf1dc979893cb44750d0846c28982d9badb2420501cd19ef"
+      },
+      "writeCallId": "call_no4frgzElXMFuHJ6GyszcVxY",
+      "attempts": 1,
+      "retries": 0,
+      "toolResult": [
+        {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a09bf8-55ea-76d1-ade6-020a753ecead",
+          "call_id": "call_no4frgzElXMFuHJ6GyszcVxY",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{}"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a09bf4-1133-7211-b620-759becdcc9e1",
+            "create_time": 1789323138.538247
+          }
+        }
+      ],
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentPath": "/root/primary_261_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-261/judgments/pass-b/output.json",
+      "outputSha256": "8aad5c9644b438cd9a54de183c78dfc325e8402975be2f7c37ce8d60e2dbb819",
+      "judgmentCount": 31,
+      "validationStatus": "passed",
+      "readingAuthentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/judgments/pass-b/reading-authentication.json",
+        "sha256": "cf0b71225b2127e5f7bee5a395bda1043ad5e89241b0f692166746968b620f50",
+        "bytes": 3150
+      },
+      "sessionPrefix": {
+        "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T14-07-53-01a09bf4-4af6-7912-b71a-7c169795d66a.jsonl",
+        "bytes": 1451888,
+        "sha256": "0bb8369ca590e1b8c07ff137a2cfffaea07b52121f1b116f53f0b7e855f8de55"
+      },
+      "writeCallId": "call_BU4kh5RPuohc8DyLvMmjWJNz",
+      "attempts": 1,
+      "retries": 0,
+      "toolResult": [
+        {
+          "type": "custom_tool_call_output",
+          "id": "ctco_01a09bfb-2115-73d3-b768-64f87aa4e0c9",
+          "call_id": "call_BU4kh5RPuohc8DyLvMmjWJNz",
+          "output": [
+            {
+              "type": "input_text",
+              "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+            },
+            {
+              "type": "input_text",
+              "text": "{}"
+            }
+          ],
+          "internal_chat_message_metadata_passthrough": {
+            "turn_id": "01a09bf4-4b4d-7033-814a-2c7407c1e945",
+            "create_time": 1789323321.62162
+          }
+        }
+      ],
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "audit": {
+    "completeReadingAuthenticated": true,
+    "allMovesJudgedOncePerPass": true,
+    "primaryPassesMutuallyBlind": true,
+    "calculatedTotalsAbsent": true,
+    "publicationBlind": true,
+    "passAAdditionalIsolationMetadataPreservedWithoutChangingRequiredSchema": true
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-13T18:15:48.139Z"
+}

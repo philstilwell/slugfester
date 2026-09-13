@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-rejected-bounded-repair-execution",
+  "status": "quarantined-malformed-output-replacement-not-authorized",
+  "debateNumber": "261",
+  "shardId": "shard-05",
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-05/rejected-write-process/preserved-malformed-output.json",
+    "sha256": "2547bb49a07153faf69fb2de9cd812418ac2965558c1e33d8ccafa00b17147e7",
+    "bytes": 33
+  },
+  "toolTrace": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-05/rejected-write-process/tool-write-trace.json",
+    "sha256": "48e58aba40625302e820dc103096cd23d857e470366c01a9f527de7459f951c2",
+    "bytes": 801
+  },
+  "readingAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-05/reading-authentication.json",
+    "sha256": "9a25244af0087b805f820f6d17852dd0154c59580c11dfcd2d87d38d5e96e15e",
+    "bytes": 2517
+  },
+  "diagnosis": "The sole allowed write produced only an opening object and malformed schemaVersion string; no repair fields arrived. The worker reported the failure and was interrupted before any retry. Do not reconstruct a new output from uncommitted in-memory drafts.",
+  "modelContextAttempts": 1,
+  "writeToolCalls": 1,
+  "additionalContextAttemptsAuthorized": 0,
+  "sourceAndScoreChanges": 0,
+  "publicationApplied": false,
+  "directIncrementalCostUsd": 0,
+  "sessionPrefix": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T15-05-10-01a09c28-baa8-7590-8ad8-00d5f77482c9.jsonl",
+    "bytes": 332562,
+    "sha256": "7cb12a018df8080e6834e8f8df26716bd7ac91b90e4e881a528f8d5633f8057a"
+  }
+}

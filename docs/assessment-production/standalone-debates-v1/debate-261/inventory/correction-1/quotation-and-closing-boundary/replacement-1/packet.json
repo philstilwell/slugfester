@@ -1,0 +1,872 @@
+{
+  "schemaVersion": "1.0-bounded-score-blind-inventory-field-repair",
+  "status": "frozen-before-one-repair-attempt",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "shardId": "quotation-and-closing-boundary",
+  "motion": "Is God great?",
+  "initialRawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/model-output.json",
+    "sha256": "c3a1e53ccf2ebef0bfabf1867bbca9a460eee78ce956b3ab747ffddf6eb3652f",
+    "bytes": 83664
+  },
+  "rejectedInspection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/controller-inspection.json",
+    "sha256": "d7dd4325e9fee80a744c29a6b9ef92b33fdcea9ddd3659e86ab7ae69e1f7e6bd",
+    "bytes": 15385
+  },
+  "allowedFields": [
+    {
+      "path": "/moves/29/quoteEligibleExactSpans",
+      "moveId": "con-faith-specific-extraordinary-harms",
+      "field": "quoteEligibleExactSpans",
+      "before": [
+        "the burden of proof",
+        "committed because of and only because of faith"
+      ],
+      "instruction": "The entry the burden of proof is not inside the selected exact excerpt, which starts at proof. Remove that ineligible entry while preserving the other valid quotation. Do not broaden the evidence span."
+    },
+    {
+      "path": "/moves/30/sourceSpan",
+      "moveId": "pro-closing-existence-burden",
+      "field": "sourceSpan",
+      "before": {
+        "startEvent": 1918,
+        "endEvent": 1958
+      },
+      "instruction": "The last selected event says only get an autograph and its rolling duration crosses the frozen assessed-window end. Narrow only endEvent to the immediately preceding event if the existing claim, reasons, inference and exact quotations remain completely evidenced. Preserve startEvent. Return only {startEvent,endEvent}; the parent derives text and times. If this cannot preserve substantive coverage, report blocked rather than changing the frozen window or argument."
+    }
+  ],
+  "selectedMoves": [
+    {
+      "moveId": "con-faith-specific-extraordinary-harms",
+      "sectionId": "suffering-coercion-and-closing",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1790,
+        "endEvent": 1815,
+        "startMs": 4822460,
+        "endMs": 4884349,
+        "excerpt": "proof in any case is not on our team if you will we don't say just belief in God will make you a better person or make you more moral we are arguing against those who say that a belief in an unprovable supernatural will make you more moral now that we know is not true that we know is not true because there's not just a lot of ordinary crime committed by the faithful but there's a lot of extraordinary crime such as suicide bombing and genital mutilation and many other things that's committed because of and only because of faith so the word my crime breakdown would be to increase atheism in disbelief there is no corollary as I was careful I think scrupulous is saying there is no corollary on the Atheist side to that but the those who argue that religion is a source of morality have as yet as always and as so far this evening all they're explaining the ahead of them and that's with 2,000 years of failure to chalk up I must say this and I know we"
+      },
+      "quoteEligibleExactSpans": [
+        "the burden of proof",
+        "committed because of and only because of faith"
+      ],
+      "claimSummary": "The con side need not claim atheism makes people better; it challenges the unsupported claim that faith improves morality and identifies extraordinary harms caused specifically by faith.",
+      "reasonSummary": "Hitchens distinguishes ordinary crimes by believers from suicide bombing and genital mutilation that he says require a faith premise, placing the explanatory burden on religious moral claims.",
+      "inferenceSummary": {
+        "premise": "Both believers and unbelievers commit ordinary crimes, while some extraordinary harms are performed because actors regard faith as sufficient warrant.",
+        "inference": "The absence of an atheist mirror-image weakens the claim that religion is a moral improvement and shifts the defense burden to that claimant.",
+        "conclusion": "Religious morality remains unproved and faith can add distinctive harms."
+      },
+      "burdenContact": {
+        "bridgeId": "con-religious-authority-harms",
+        "tier": "subsidiary",
+        "rationale": "The move carefully states the comparative harm claim without manufacturing a claim that atheism guarantees virtue."
+      },
+      "importance": 3,
+      "importanceRationale": "This is the mature formulation of Hitchens's moral asymmetry after conceding secular crime.",
+      "respondsToIds": [
+        "pro-atheists-also-do-evil",
+        "pro-framework-not-daily-command"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-atheists-also-do-evil",
+          "component": "burden-clarification",
+          "description": "Agrees that ordinary crime exists on both sides and denies needing the stronger claim Sharpton attacks."
+        },
+        {
+          "targetMoveId": "pro-framework-not-daily-command",
+          "component": "comparative-harm",
+          "description": "Maintains that faith-based warrant still explains some otherwise exceptional harms even if Sharpton rejects daily revelation."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The speaker identifies his team and states Hitchens's burden position in direct response; labels are absent.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The burden and faith-specific harm contrast is clear, though a few transition words are malformed."
+    },
+    {
+      "moveId": "pro-closing-existence-burden",
+      "sectionId": "suffering-coercion-and-closing",
+      "side": "pro",
+      "speaker": "Al Sharpton",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1918,
+        "endEvent": 1958,
+        "startMs": 5176680,
+        "endMs": 5299180,
+        "excerpt": "we are here to discuss mr. Hitchens book and mr. Hitchens book attacked God and I wanted him to defend his book his book unfortunately for your question did not attack the Bible or Christianity and I would not watch well you have to read the book it does when you get inside but I think that what you must wouldwould what I wanted to convey is that there are all kinds of people that relate to God other than the ways mr. Hitchens may address a certain religion that I respect you don't have to be a Christian or a Muslim or a Hindu or Buddhist to believe in God or worship God so that is not the defense against those that say that God does not exist because that would have reduced the debate to just part of the framework of the book so that is why I wanted him to discuss with us his his whole attack not just his dogmatic attack though he clearly does and I do encourage people to buy the book it's well written I don't believe what it says but it's well written no he's a very nice eloquent and well-versed person well it's extremely handsome of you so that in answer to your first question I think that again to say that one does not exist because I cannot say for sure how it was brought into being I'm sitting on the stage you don't know how I was born answering God's not there because we don't know who God's father was or how God came into being I don't think deals with the existence that there is clearly confirmed by some of the scientific data in mr. Hitchens book that I can encourage you to get and get an autograph"
+      },
+      "quoteEligibleExactSpans": [
+        "all kinds of people that relate to God",
+        "clearly confirmed by some of the scientific data"
+      ],
+      "claimSummary": "The debate's broader God claim cannot be reduced to Christianity, and inability to explain God's own origin does not show that God is absent.",
+      "reasonSummary": "Sharpton notes that people across or outside religions worship God and analogizes his own unexplained birth, then appeals again to scientific order as confirmation.",
+      "inferenceSummary": {
+        "premise": "Belief in God is broader than any single scripture, and ignorance of an entity's production does not entail its nonexistence.",
+        "inference": "Questions about who created God and attacks on Christianity do not by themselves defeat the general creator claim.",
+        "conclusion": "Hitchens still owes an argument against God as broadly and personally understood."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-personal-theism",
+        "tier": "motion",
+        "rationale": "The closing directly restates the pro side's existence burden and broader-than-Christian route to the motion."
+      },
+      "importance": 3,
+      "importanceRationale": "This is Sharpton's final substantive answer and his closing statement of what the opposing case must establish.",
+      "respondsToIds": [
+        "con-creator-unsupported-private-only",
+        "con-faith-specific-extraordinary-harms"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-creator-unsupported-private-only",
+          "component": "non-entailment",
+          "description": "Argues that not knowing God's origin does not entail God's nonexistence."
+        },
+        {
+          "targetMoveId": "con-faith-specific-extraordinary-harms",
+          "component": "scope",
+          "description": "Reiterates that particular religious harms cover only part of the broader God question."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The audience question addresses Sharpton and the answer defends his book-scope position; the source itself has no speaker labels.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The general-God scope and origin analogy are clear, while the final scientific-data wording is broad and caption-dependent."
+    }
+  ],
+  "relatedEarlierMoves": [
+    {
+      "moveId": "pro-atheists-also-do-evil",
+      "sectionId": "experience-and-secular-evil",
+      "side": "pro",
+      "speaker": "Al Sharpton",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 993,
+        "endEvent": 1003,
+        "startMs": 2650570,
+        "endMs": 2684350,
+        "excerpt": "more so you do not believe so you do not believe in your long and thorough research in history that atheist ever did anything evil these only religious people that were driven by somebody representing God that made them do that and people that came in satanic ways all of that is rubbish only religious people reading scriptures of some sort have done wicked things in the history of the world"
+      },
+      "quoteEligibleExactSpans": [
+        "atheist ever did anything evil",
+        "only religious people"
+      ],
+      "claimSummary": "Religious motivation cannot be the general explanation of evil because atheists and nonreligious actors also commit grave wrongdoing.",
+      "reasonSummary": "Sharpton challenges the apparent selectivity of examples that connect wickedness to scripture or Satanic claims while ignoring secular perpetrators.",
+      "inferenceSummary": {
+        "premise": "Evil conduct occurs among both religious and nonreligious people.",
+        "inference": "A cause present only on one side cannot explain wrongdoing common to both.",
+        "conclusion": "Examples of religious evil do not establish that faith is the decisive corrupting factor."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-god-religion-distinction",
+        "tier": "central",
+        "rationale": "The challenge weakens the inference from religious perpetrators to a condemnation of God or belief itself."
+      },
+      "importance": 2,
+      "importanceRationale": "It is a major causal objection that prompts Hitchens's explicit concession and comparative reply.",
+      "respondsToIds": [
+        "con-innate-morality-and-religious-corruption"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-innate-morality-and-religious-corruption",
+          "component": "counterexample",
+          "description": "Points to atheist wrongdoing as a challenge to religion-centered explanations of cruelty."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The adversarial question is immediately answered by Hitchens and matches Sharpton's position; speaker labels are absent.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The challenge is clear despite rhetorical compression and a few malformed caption words."
+    },
+    {
+      "moveId": "pro-framework-not-daily-command",
+      "sectionId": "suffering-coercion-and-closing",
+      "side": "pro",
+      "speaker": "Al Sharpton",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1719,
+        "endEvent": 1737,
+        "startMs": 4623480,
+        "endMs": 4675850,
+        "excerpt": "but I never said that I think that I think mr. Hitchens said that God tells these people this I said that God if there is no Supreme Being that sets a framework for the world that has a framework of right and wrong then what do we base it on do I think God calls the leaders of the church every morning and tells them what's right and wrong after they read the New York Times no I think that there is a framework based on what is right and wrong in humanity by the force that created humanity and that is not God sending you an email every day or revelation on a map I did not say that I think that was his concept of what had happened to some that had professed that so I can't defend what I didn't say I am of one"
+      },
+      "quoteEligibleExactSpans": [
+        "a framework of right and wrong",
+        "not God sending you an email"
+      ],
+      "claimSummary": "Divine moral grounding means a creator-established framework in humanity, not church leaders receiving daily commands.",
+      "reasonSummary": "Sharpton rejects the equation of his view with arbitrary Stalin-like command and denies that God communicates a new moral directive to clergy every morning.",
+      "inferenceSummary": {
+        "premise": "A stable created moral framework differs from episodic instructions asserted by religious officials.",
+        "inference": "Criticisms of revelation and clerical command do not rebut the more modest grounding thesis.",
+        "conclusion": "God can ground right and wrong without authorizing religious micromanagement or coercion."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-moral-grounding",
+        "tier": "subsidiary",
+        "rationale": "This precisely limits Sharpton's moral bridge and prevents attribution of a stronger command theory he disavows."
+      },
+      "importance": 3,
+      "importanceRationale": "It is an important clarification of the exact moral proposition for which the pro side accepts responsibility.",
+      "respondsToIds": [
+        "con-private-belief-no-coercion",
+        "con-authority-claim-unearned"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-private-belief-no-coercion",
+          "component": "position-clarification",
+          "description": "Denies that his grounding claim entails clerical orders or daily imposed revelation."
+        },
+        {
+          "targetMoveId": "con-authority-claim-unearned",
+          "component": "burden-limitation",
+          "description": "Disclaims the detailed knowledge-of-God's-wishes claim that Hitchens attacked."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The speaker explicitly distinguishes his view from Hitchens's description and states Sharpton's creator framework; labels are absent.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The framework and no-daily-message clarification are clear despite minor recognition errors."
+    },
+    {
+      "moveId": "con-creator-unsupported-private-only",
+      "sectionId": "sources-of-morality",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 861,
+        "endEvent": 872,
+        "startMs": 2299700,
+        "endMs": 2331740,
+        "excerpt": "which common ground we cannot know that there was a creator whether of ourselves or of our cosmos if you want you may wish to assume one but that's the best you can do the evidence is all that the cosmos evolved and the evidence that there was a single mind purposeful creator of it there's nil there's no evidence for that at all but all means believe it as long as you don't try and make me believe it or teach it to my children"
+      },
+      "quoteEligibleExactSpans": [
+        "we cannot know that there was a creator",
+        "there's no evidence for that at all"
+      ],
+      "claimSummary": "A creator may be privately assumed, but the evidence supports an evolved cosmos and provides no basis for imposing creator belief on others.",
+      "reasonSummary": "Hitchens distinguishes the permission to believe from evidential warrant and from authority to compel him or teach the claim to his children.",
+      "inferenceSummary": {
+        "premise": "Available evidence indicates cosmic evolution but not a single purposeful mind.",
+        "inference": "An unsupported optional assumption cannot ground public coercion or shared obligations.",
+        "conclusion": "Creator belief should remain private and cannot carry Sharpton's proposed moral authority."
+      },
+      "burdenContact": {
+        "bridgeId": "con-god-not-great",
+        "tier": "motion",
+        "rationale": "This squarely denies evidential support for the creator while stating the limited liberty Hitchens grants belief."
+      },
+      "importance": 3,
+      "importanceRationale": "It addresses bare creator belief directly, answering the repeated complaint that con only attacks religion.",
+      "respondsToIds": [
+        "pro-target-is-god-not-texts",
+        "pro-morality-needs-governor"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-target-is-god-not-texts",
+          "component": "burden-answer",
+          "description": "Directly states that evidence for a single purposeful creator is nil."
+        },
+        {
+          "targetMoveId": "pro-morality-needs-governor",
+          "component": "authority-limit",
+          "description": "Denies that an optional unsupported creator belief can be imposed as a moral foundation."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The first-person refusal to be compelled matches Hitchens's established position and turn, but the source remains unlabeled.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The short passage clearly and repeatedly distinguishes assumption, evidence, and coercion."
+    }
+  ],
+  "originalEvents": [
+    {
+      "moveId": "con-faith-specific-extraordinary-harms",
+      "events": [
+        {
+          "eventIndex": 1790,
+          "startMs": 4822460,
+          "durationMs": 2670,
+          "text": "proof in any case is not on our team if"
+        },
+        {
+          "eventIndex": 1791,
+          "startMs": 4824590,
+          "durationMs": 3359,
+          "text": "you will"
+        },
+        {
+          "eventIndex": 1792,
+          "startMs": 4825130,
+          "durationMs": 4620,
+          "text": "we don't say just belief in God will"
+        },
+        {
+          "eventIndex": 1793,
+          "startMs": 4827949,
+          "durationMs": 4081,
+          "text": "make you a better person or make you"
+        },
+        {
+          "eventIndex": 1794,
+          "startMs": 4829750,
+          "durationMs": 4139,
+          "text": "more moral we are arguing against those"
+        },
+        {
+          "eventIndex": 1795,
+          "startMs": 4832030,
+          "durationMs": 4200,
+          "text": "who say that a belief in an unprovable"
+        },
+        {
+          "eventIndex": 1796,
+          "startMs": 4833889,
+          "durationMs": 5071,
+          "text": "supernatural will make you more moral"
+        },
+        {
+          "eventIndex": 1797,
+          "startMs": 4836230,
+          "durationMs": 4800,
+          "text": "now that we know is not true that we"
+        },
+        {
+          "eventIndex": 1798,
+          "startMs": 4838960,
+          "durationMs": 4020,
+          "text": "know is not true because there's not"
+        },
+        {
+          "eventIndex": 1799,
+          "startMs": 4841030,
+          "durationMs": 4319,
+          "text": "just a lot of ordinary crime committed"
+        },
+        {
+          "eventIndex": 1800,
+          "startMs": 4842980,
+          "durationMs": 5280,
+          "text": "by the faithful but there's a lot of"
+        },
+        {
+          "eventIndex": 1801,
+          "startMs": 4845349,
+          "durationMs": 5161,
+          "text": "extraordinary crime such as suicide"
+        },
+        {
+          "eventIndex": 1802,
+          "startMs": 4848260,
+          "durationMs": 4229,
+          "text": "bombing and genital mutilation and many"
+        },
+        {
+          "eventIndex": 1803,
+          "startMs": 4850510,
+          "durationMs": 3629,
+          "text": "other things that's committed because of"
+        },
+        {
+          "eventIndex": 1804,
+          "startMs": 4852489,
+          "durationMs": 4681,
+          "text": "and only because of faith"
+        },
+        {
+          "eventIndex": 1805,
+          "startMs": 4854139,
+          "durationMs": 5520,
+          "text": "so the word my crime breakdown would be"
+        },
+        {
+          "eventIndex": 1806,
+          "startMs": 4857170,
+          "durationMs": 4500,
+          "text": "to increase atheism in disbelief there"
+        },
+        {
+          "eventIndex": 1807,
+          "startMs": 4859659,
+          "durationMs": 4230,
+          "text": "is no corollary as I was careful"
+        },
+        {
+          "eventIndex": 1808,
+          "startMs": 4861670,
+          "durationMs": 4319,
+          "text": "I think scrupulous is saying there is no"
+        },
+        {
+          "eventIndex": 1809,
+          "startMs": 4863889,
+          "durationMs": 4471,
+          "text": "corollary on the Atheist side to that"
+        },
+        {
+          "eventIndex": 1810,
+          "startMs": 4865989,
+          "durationMs": 5460,
+          "text": "but the those who argue that religion is"
+        },
+        {
+          "eventIndex": 1811,
+          "startMs": 4868360,
+          "durationMs": 5040,
+          "text": "a source of morality have as yet as"
+        },
+        {
+          "eventIndex": 1812,
+          "startMs": 4871449,
+          "durationMs": 4500,
+          "text": "always and as so far this evening all"
+        },
+        {
+          "eventIndex": 1813,
+          "startMs": 4873400,
+          "durationMs": 4770,
+          "text": "they're explaining the ahead of them and"
+        },
+        {
+          "eventIndex": 1814,
+          "startMs": 4875949,
+          "durationMs": 6391,
+          "text": "that's with 2,000 years of failure to"
+        },
+        {
+          "eventIndex": 1815,
+          "startMs": 4878170,
+          "durationMs": 6179,
+          "text": "chalk up I must say this and I know we"
+        }
+      ]
+    },
+    {
+      "moveId": "pro-closing-existence-burden",
+      "events": [
+        {
+          "eventIndex": 1918,
+          "startMs": 5176680,
+          "durationMs": 10720,
+          "text": "we are here to discuss mr. Hitchens book"
+        },
+        {
+          "eventIndex": 1919,
+          "startMs": 5180950,
+          "durationMs": 10910,
+          "text": "and mr. Hitchens book attacked God and I"
+        },
+        {
+          "eventIndex": 1920,
+          "startMs": 5187400,
+          "durationMs": 6900,
+          "text": "wanted him to defend his book his book"
+        },
+        {
+          "eventIndex": 1921,
+          "startMs": 5191860,
+          "durationMs": 5890,
+          "text": "unfortunately for your question did not"
+        },
+        {
+          "eventIndex": 1922,
+          "startMs": 5194300,
+          "durationMs": 6030,
+          "text": "attack the Bible or Christianity and I"
+        },
+        {
+          "eventIndex": 1923,
+          "startMs": 5197750,
+          "durationMs": 5370,
+          "text": "would not watch well you have to read"
+        },
+        {
+          "eventIndex": 1924,
+          "startMs": 5200330,
+          "durationMs": 4680,
+          "text": "the book it does when you get inside but"
+        },
+        {
+          "eventIndex": 1925,
+          "startMs": 5203120,
+          "durationMs": 5280,
+          "text": "I think that what you must"
+        },
+        {
+          "eventIndex": 1926,
+          "startMs": 5205010,
+          "durationMs": 5850,
+          "text": "wouldwould what I wanted to convey is"
+        },
+        {
+          "eventIndex": 1927,
+          "startMs": 5208400,
+          "durationMs": 6150,
+          "text": "that there are all kinds of people that"
+        },
+        {
+          "eventIndex": 1928,
+          "startMs": 5210860,
+          "durationMs": 6720,
+          "text": "relate to God other than the ways mr."
+        },
+        {
+          "eventIndex": 1929,
+          "startMs": 5214550,
+          "durationMs": 4590,
+          "text": "Hitchens may address a certain religion"
+        },
+        {
+          "eventIndex": 1930,
+          "startMs": 5217580,
+          "durationMs": 5700,
+          "text": "that I respect you don't have to be a"
+        },
+        {
+          "eventIndex": 1931,
+          "startMs": 5219140,
+          "durationMs": 6240,
+          "text": "Christian or a Muslim or a Hindu or"
+        },
+        {
+          "eventIndex": 1932,
+          "startMs": 5223280,
+          "durationMs": 4950,
+          "text": "Buddhist to believe in God or worship"
+        },
+        {
+          "eventIndex": 1933,
+          "startMs": 5225380,
+          "durationMs": 5060,
+          "text": "God so that is not the defense against"
+        },
+        {
+          "eventIndex": 1934,
+          "startMs": 5228230,
+          "durationMs": 4290,
+          "text": "those that say that God does not exist"
+        },
+        {
+          "eventIndex": 1935,
+          "startMs": 5230440,
+          "durationMs": 5470,
+          "text": "because that would have reduced the"
+        },
+        {
+          "eventIndex": 1936,
+          "startMs": 5232520,
+          "durationMs": 6600,
+          "text": "debate to just part of the framework of"
+        },
+        {
+          "eventIndex": 1937,
+          "startMs": 5235910,
+          "durationMs": 7170,
+          "text": "the book so that is why I wanted him to"
+        },
+        {
+          "eventIndex": 1938,
+          "startMs": 5239120,
+          "durationMs": 6660,
+          "text": "discuss with us his his whole attack not"
+        },
+        {
+          "eventIndex": 1939,
+          "startMs": 5243080,
+          "durationMs": 4440,
+          "text": "just his dogmatic attack though he"
+        },
+        {
+          "eventIndex": 1940,
+          "startMs": 5245780,
+          "durationMs": 3480,
+          "text": "clearly does and I do encourage people"
+        },
+        {
+          "eventIndex": 1941,
+          "startMs": 5247520,
+          "durationMs": 3900,
+          "text": "to buy the book it's well written I"
+        },
+        {
+          "eventIndex": 1942,
+          "startMs": 5249260,
+          "durationMs": 7250,
+          "text": "don't believe what it says but it's well"
+        },
+        {
+          "eventIndex": 1943,
+          "startMs": 5251420,
+          "durationMs": 10110,
+          "text": "written no he's a very nice eloquent and"
+        },
+        {
+          "eventIndex": 1944,
+          "startMs": 5256510,
+          "durationMs": 8410,
+          "text": "well-versed person well it's extremely"
+        },
+        {
+          "eventIndex": 1945,
+          "startMs": 5261530,
+          "durationMs": 5700,
+          "text": "handsome of you so that in answer to"
+        },
+        {
+          "eventIndex": 1946,
+          "startMs": 5264920,
+          "durationMs": 7500,
+          "text": "your first question I think that again"
+        },
+        {
+          "eventIndex": 1947,
+          "startMs": 5267230,
+          "durationMs": 8880,
+          "text": "to say that one does not exist because I"
+        },
+        {
+          "eventIndex": 1948,
+          "startMs": 5272420,
+          "durationMs": 6300,
+          "text": "cannot say for sure how it was brought"
+        },
+        {
+          "eventIndex": 1949,
+          "startMs": 5276110,
+          "durationMs": 3950,
+          "text": "into being I'm sitting on the stage you"
+        },
+        {
+          "eventIndex": 1950,
+          "startMs": 5278720,
+          "durationMs": 3630,
+          "text": "don't know how I was born"
+        },
+        {
+          "eventIndex": 1951,
+          "startMs": 5280060,
+          "durationMs": 4330,
+          "text": "answering God's not there because we"
+        },
+        {
+          "eventIndex": 1952,
+          "startMs": 5282350,
+          "durationMs": 3510,
+          "text": "don't know who God's father was or how"
+        },
+        {
+          "eventIndex": 1953,
+          "startMs": 5284390,
+          "durationMs": 3840,
+          "text": "God came into being"
+        },
+        {
+          "eventIndex": 1954,
+          "startMs": 5285860,
+          "durationMs": 5370,
+          "text": "I don't think deals with the existence"
+        },
+        {
+          "eventIndex": 1955,
+          "startMs": 5288230,
+          "durationMs": 5430,
+          "text": "that there is clearly confirmed by some"
+        },
+        {
+          "eventIndex": 1956,
+          "startMs": 5291230,
+          "durationMs": 4740,
+          "text": "of the scientific data in mr. Hitchens"
+        },
+        {
+          "eventIndex": 1957,
+          "startMs": 5293660,
+          "durationMs": 3390,
+          "text": "book that I can encourage you to get and"
+        },
+        {
+          "eventIndex": 1958,
+          "startMs": 5295970,
+          "durationMs": 3210,
+          "text": "get an autograph"
+        }
+      ]
+    }
+  ],
+  "primarySpeakerScopeAudit": {
+    "enabled": true,
+    "protocolId": "primary-speaker-scope-exception-v1",
+    "primarySpeakers": {
+      "pro": "Al Sharpton",
+      "con": "Christopher Hitchens"
+    },
+    "nonPrimarySpeakers": [
+      {
+        "name": "Jacob Weisberg",
+        "role": "Moderator with bounded incidental advocacy"
+      }
+    ],
+    "maximumHostAdvocacyShare": 0.05,
+    "assessedWindow": {
+      "startMs": 352630,
+      "endMs": 5297300,
+      "durationMs": 4944670
+    },
+    "excludedIntervals": [
+      {
+        "intervalId": "host-civil-rights-prompt",
+        "kind": "host-advocacy",
+        "speaker": "Jacob Weisberg",
+        "startMs": 854899,
+        "endMs": 880199,
+        "durationMs": 25300,
+        "summary": "The moderator calls Hitchens mistaken about religion being incidental to civil rights, requests a correction, and exchanges brief banter. The conservative interval covers the mixed caption boundary.",
+        "burdenImpactRationale": "The subject was already independently introduced by Hitchens at 8:15–9:55; Sharpton develops moral grounding independently at 17:09–18:21 and later the movement history at 26:13–27:36. No new burden is introduced.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "response-civil-rights-prompt",
+        "kind": "dependent-response",
+        "speaker": "Al Sharpton",
+        "startMs": 1115240,
+        "endMs": 1154700,
+        "durationMs": 39460,
+        "summary": "Sharpton directly answers the moderator’s civil-rights prompt by linking the movement to belief in God and equal moral standing; the conservative endpoint includes the transition.",
+        "burdenImpactRationale": "Exclude this prompted passage from credit and penalty. The earlier unprompted moral-grounding case and later primary-to-primary discussion remain separately available; this interval must not be selected as evidence or a reply target.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "host-deism-prompt",
+        "kind": "host-advocacy",
+        "speaker": "Jacob Weisberg",
+        "startMs": 2940520,
+        "endMs": 2991980,
+        "durationMs": 51460,
+        "summary": "Weisberg explicitly takes up Sharpton’s side, distinguishing deism from literalism and asking why Hitchens objects to faith detached from scriptures. The interval conservatively covers the mixed reply boundary.",
+        "burdenImpactRationale": "Sharpton has repeatedly argued this distinction at 15:14–16:39, 24:36–25:54, 28:13–29:21 and 33:16–35:28. The moderator prompts an existing line rather than adding a distinct explanation or third position.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "response-deism-prompt",
+        "kind": "dependent-response",
+        "speaker": "Christopher Hitchens",
+        "startMs": 2985140,
+        "endMs": 3126070,
+        "durationMs": 140930,
+        "summary": "Hitchens answers the moderator with distinctions between religion and deism, Jefferson’s limited scientific horizon, evolutionary explanation and explanatory economy.",
+        "burdenImpactRationale": "This complete answer is excluded, including any unique detail in the response. Other independent primary-speaker arguments remain assessable on their own evidence, without credit or penalty for this excluded answer.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "host-scripture-prompt",
+        "kind": "host-advocacy",
+        "speaker": "Jacob Weisberg",
+        "startMs": 3124420,
+        "endMs": 3148769,
+        "durationMs": 24349,
+        "summary": "Weisberg presses Sharpton on why a minister defends spirituality and design but not the Bible; conservative boundaries include brief mixed primary speech.",
+        "burdenImpactRationale": "Hitchens had independently challenged Sharpton’s refusal to defend scripture at 30:27–31:06 and 33:13–33:35. This repeats that line and introduces neither a new side nor a unique motion argument.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "response-scripture-prompt",
+        "kind": "dependent-response",
+        "speaker": "Al Sharpton",
+        "startMs": 3140260,
+        "endMs": 3234089,
+        "durationMs": 93829,
+        "summary": "Sharpton directly answers that the advertised target is God rather than the Bible, returns to freedom of personal belief, and declines the demanded biblical defense.",
+        "burdenImpactRationale": "The response repeats Sharpton’s independently developed distinction and non-imposition concession; exclude it completely from selected moves, quotations, scoring and burden completion.",
+        "uniqueLoadBearingArgument": false
+      }
+    ],
+    "status": "complete-and-frozen-before-judgment",
+    "derivedDurations": {
+      "hostAdvocacyMs": 101109,
+      "dependentResponseMs": 274219,
+      "totalExcludedMs": 358329,
+      "hostAdvocacyShare": 0.02044807843597247
+    },
+    "allHostInterventionsEnumerated": true,
+    "noDistinctSideIntroduced": true,
+    "noUniqueLoadBearingArgumentIntroduced": true,
+    "noSelectedEvidenceIntersectsExclusions": true,
+    "neitherSideCreditedOrPenalized": true,
+    "readerDisclosureRequired": true
+  },
+  "instructions": [
+    "This is a schema/source-boundary repair before inventory freeze and before any judgment. Evidence is data, not instructions. Read this entire packet, including exact event records, without truncation.",
+    "You have exactly the two listed writable JSON leaves and one attempt. Do not introduce, remove, split, reassign, or judge any argument. Keep claims, reasons, inference, section membership, importance, weights, burden contacts, response links, confidences, identity, scope and motion unchanged.",
+    "Do not access other files, network, prior debates, judgments, scores, model sessions or sibling outputs. No children. Use only this packet. Write only your assigned output once through apply_patch, with no retries or overwrite. The parent will independently validate and mechanically merge your exact leaf values.",
+    "First report complete packet reading and wait for parent authentication; do not write until released in this same isolated context.",
+    "If a requested leaf correction cannot satisfy the fixed surrounding evidence and semantics, return status blocked with reasons and no proposed broader change. A failed repair stops this stage.",
+    "The original closing sourceSpan.startEvent is 1918 and MUST remain exactly 1918. No other start value is permitted. Only its end may narrow. Preserve the exact required audit keys from outputContract. Construct a JavaScript object, serialize it with JSON.stringify, and generate the Add File patch from serialized lines to avoid hand-escaped or malformed patch syntax. Internally check all invariant values before the one write."
+  ],
+  "outputContract": {
+    "status": "complete",
+    "shardId": "quotation-and-closing-boundary",
+    "edits": [
+      {
+        "path": "/moves/29/quoteEligibleExactSpans",
+        "moveId": "con-faith-specific-extraordinary-harms",
+        "field": "quoteEligibleExactSpans",
+        "value": "corrected JSON value",
+        "rationale": "source-specific explanation, at least 40 characters"
+      },
+      {
+        "path": "/moves/30/sourceSpan",
+        "moveId": "pro-closing-existence-burden",
+        "field": "sourceSpan",
+        "value": "corrected JSON value",
+        "rationale": "source-specific explanation, at least 40 characters"
+      }
+    ],
+    "audit": {
+      "onlyDeclaredLeaves": true,
+      "scoreBlind": true,
+      "noJudgmentOrArgumentSubstanceChanged": true
+    }
+  },
+  "writablePath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/replacement-1/output.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "replacementAuthorization": {
+    "userMessage": "Yes. And don't stop for basic approvals in the future.",
+    "scope": "One fresh isolated replacement of only the failed two-field repair, retaining every other source and valid output.",
+    "exceptionalReplacementOrdinal": 1,
+    "maximum": 1,
+    "failedAttempt": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/failed-attempt.json",
+      "bytes": 5687,
+      "sha256": "3908a5bb3bb85d7ea5ac73bafce1e4a51ce10cf7ef12a93cbbd28901e6daa904"
+    },
+    "originalPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/packet.json",
+      "bytes": 38302,
+      "sha256": "8e0d9fe22f9d10df01124323e315286e1edf4ea8e9114d879c2f174bc09792c3"
+    }
+  }
+}

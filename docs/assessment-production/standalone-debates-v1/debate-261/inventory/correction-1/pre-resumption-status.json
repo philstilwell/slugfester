@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-standalone-debate-resume-status",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "videoId": "HPYxA8dYLBY",
+  "status": "paused-before-judgment-exception-required-for-failed-repair",
+  "branch": "codex/debate-261",
+  "workdir": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-261-worktree",
+  "sourceCompleteAndPreserved": true,
+  "rawInventoryPreserved": true,
+  "candidateStructure": {"sections": 6, "moves": 31, "pro": 14, "con": 17},
+  "inventoryAcceptedOrFrozen": false,
+  "judgmentsStarted": false,
+  "scorePasses": 0,
+  "productionDataChanged": false,
+  "committed": false,
+  "pushed": false,
+  "pullRequestOpened": false,
+  "cost": {"paidCalls": 0, "knownSuccessfulCallCostUsd": 0, "maximumPossibleCostUsd": 0},
+  "preservedValidRepairOutputs": [
+    "inventory/correction-1/quote-lengths/output.json",
+    "inventory/correction-1/reply-kinds/output.json"
+  ],
+  "failedRepair": {
+    "shardId": "quotation-and-closing-boundary",
+    "evidence": "inventory/correction-1/failed-attempt.json",
+    "attempts": 1,
+    "retryAuthorized": false,
+    "problems": ["Malformed patch rejected before writing", "Attempted startEvent 8 violates required unchanged startEvent 1918", "Required output audit keys differ"],
+    "writableFieldsForProposedFreshReplacement": ["/moves/29/quoteEligibleExactSpans", "/moves/30/sourceSpan"]
+  },
+  "unexecutedRepair": {
+    "shardId": "consolation-span-and-kind",
+    "agentPath": "/root/inventory_261_repair_consolation",
+    "readingAuthenticated": true,
+    "writeAttempts": 0,
+    "executionReleased": false
+  },
+  "resumeSequenceIfUserAuthorizesReplacement": [
+    "Preserve every existing file; do not rerun source acquisition, inventory creation, or valid repair shards.",
+    "Freeze a separate one-attempt replacement packet for only the failed two-field repair, retaining its original frozen constraints and using a new isolated GPT-5.6 Sol low context.",
+    "If that replacement passes, release the already-read unexecuted consolation shard for its first attempt; do not widen any shard or retry a failure.",
+    "Mechanically merge validated leaf values and derive corrected balance/capacity counts from the unchanged move array, preserving the original rejected inventory.",
+    "Revalidate every source span, quotation, reply link, confidence, coverage interval, count, and frozen primary-speaker exclusion; complete semantic review before freezing any inventory.",
+    "Continue the normal two-judgment, required-audio, adjudication, one-score-pass, publication, rendering and protected-branch workflow only after those gates pass."
+  ],
+  "cleanup": {"temporaryBrowserTabsOpened": 0, "temporaryServersStarted": 0, "activeRepairWorkRemaining": false, "pausedControllersAndEvidencePreservedForResume": true}
+}

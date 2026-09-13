@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "desktop-content",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "eval",
+    "() => ({url:location.href,title:document.title,width:innerWidth,height:innerHeight,clientWidth:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,heading:document.querySelector('main h1').textContent,body:document.body.textContent,aiText:document.querySelector('.logical-extension').textContent,aiOpen:document.querySelector('.ai-extension-accordion').open,cards:[...document.querySelectorAll('.argument')].map(c=>({side:c.classList.contains('side-pro')?'pro':'con',words:c.querySelector(':scope > p').textContent,critique:c.querySelector('.critique-popover > span').textContent,score:Number(c.querySelector('.argument-meta > strong').textContent),time:c.querySelector('.argument-meta .timestamp-link').textContent.trim(),timestampUrl:c.querySelector('.argument-meta .timestamp-link').href,role:c.querySelector('.argument-meta > span:nth-child(2)').textContent.trim(),tags:[...c.querySelectorAll('.tag-wrap')].map(t=>({label:t.querySelector('a.tag').textContent.trim(),href:t.querySelector('a.tag').getAttribute('href'),context:t.querySelector('.tag-context').textContent}))})),sourceUrl:document.querySelector('a[aria-label=\"Open YouTube source\"]')?.href??[...document.querySelectorAll('a')].find(a=>a.textContent.trim()==='Open YouTube source')?.href,images:[...document.images].map(i=>({src:i.currentSrc,complete:i.complete,naturalWidth:i.naturalWidth})),resourceFailures:performance.getEntriesByType('resource').filter(r=>r.responseStatus>=400).map(r=>({name:r.name,status:r.responseStatus}))})"
+  ],
+  "startedAt": "2026-09-13T21:00:57.653Z",
+  "completedAt": "2026-09-13T21:00:58.636Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/desktop-content.txt",
+    "sha256": "d93c5360ddb770747b37456129e37acef134c1025d84cd7d20cd358b76a2cb18",
+    "bytes": 135746
+  },
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "diagnosed-test-assumption-not-site-failure",
+  "debateNumber": "261",
+  "observation": "Initial all-image completion assertion included intentionally lazy, offscreen images. Visible portraits loaded and no resource returned an error.",
+  "originalBrowserEvidence": "output/playwright/standalone-debate-v1/debate-261/desktop-content.txt",
+  "verificationChange": "Decode every distinct actual image source in the browser and require a positive width. This verifies every asset without assuming that offscreen lazy images must already be loaded.",
+  "siteCodeChanges": 0,
+  "qualityGateLimitChanges": 0
+}

@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Al Sharpton","Al Sharpton is a minister, civil-rights activist, author, and broadcaster. He founded the National Action Network in 1991, and his public work includes nonviolent protest, voting-rights advocacy, and campaigns concerning policing and racial inequality.","https://nationactionnetwork.squarespace.com/bio","2026-09-13"],
   ["Shmuley Boteach","Shmuley Boteach is an American Orthodox rabbi, author, television host, and public speaker. He founded the Jewish Values Network, and his books for general readers address parenting, relationships, and Jewish ethical teaching.","https://www.penguinrandomhouse.com/authors/2853/shmuley-boteach/","2026-09-12"],
   ["Joshua Bowen", "Joshua Bowen is a scholar of the Hebrew Bible and the ancient Near East, and a co-founder of Digital Hammurabi. His books and educational work introduce ancient texts, biblical scholarship, and the historical settings of the Hebrew Bible to general readers.", "https://www.digitalhammurabi.com/about-us", "2026-09-08"],
   ["Alex O'Connor", "Alex O’Connor is a writer, public speaker, and host of the Within Reason podcast. His interviews and discussions explore philosophy of religion, biblical scholarship, and questions about ethics and public life.", "https://www.alexoconnor.com/about"],

@@ -1,0 +1,13 @@
+{
+  "status": "strict-sequence-assumption-failed-before-any-authentication-write",
+  "error": "AssertionError: 0 !== 294000",
+  "originalController": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/reading-authentication-strict-controller.mjs.txt",
+    "sha256": "f8f8f2403714cc5dfb2604647cd7bc1cc38774f645c3da59c9f56ad9c98d465e",
+    "bytes": 3525
+  },
+  "cause": "Two exact duplicate page pairs interrupt an otherwise complete ordered source read; one failed mistyped-path read returned no content.",
+  "recovery": "Authenticate every page byte-for-byte; permit only the two enumerated duplicate calls, require contiguous first-occurrence coverage to EOF, and verify the sole mistyped-path call returned ENOENT without content.",
+  "assessmentChanges": 0,
+  "modelRetries": 0
+}

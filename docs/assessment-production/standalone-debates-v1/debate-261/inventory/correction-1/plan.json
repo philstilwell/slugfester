@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-inventory-bounded-correction-plan",
+  "status": "frozen-before-repair",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "authority": "The current single-debate runbook requires preserving invalid score-blind inventories, correcting count/capacity failures before judgment, and using bounded fresh field-disjoint schema/source repairs with one attempt per shard. This is the first repair stage, not a recursive retry or a scored-inventory change.",
+  "frozenAt": "2026-09-13T17:38:12.241Z",
+  "controller": {
+    "path": "scripts/tmp-prepare-inventory-repairs-261.mjs",
+    "sha256": "8ab3c974e696200b71f5a036f318db12555248a369540b33bd0f7cd471d33202",
+    "bytes": 11898
+  },
+  "initialExecution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/execution.json",
+    "sha256": "65d7407b616f1e15e47659469a0d955bedfa778d9ccbe5e7fed9fc525bce65bc",
+    "bytes": 1992
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/model-output.json",
+    "sha256": "c3a1e53ccf2ebef0bfabf1867bbca9a460eee78ce956b3ab747ffddf6eb3652f",
+    "bytes": 83664
+  },
+  "sourceExpandedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/source-expanded-candidate.json",
+    "sha256": "e1db398df7b685146315bd19efab36b8ccd676203536c4ed5864335d4b206c91",
+    "bytes": 132760
+  },
+  "initialInspection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/controller-inspection.json",
+    "sha256": "d7dd4325e9fee80a744c29a6b9ef92b33fdcea9ddd3659e86ab7ae69e1f7e6bd",
+    "bytes": 15385
+  },
+  "supplementaryFindings": [
+    "Three constructive-kind moves have nonempty earlier reply links and response components; those enum/relationship inconsistencies were hidden behind the validator’s earlier fail-fast quotation error.",
+    "The consolation move’s first answer concerns government-funded chaplains, not the selected explanation of religious growth; its evidential start requires narrowing without changing its inference.",
+    "The closing span’s last event contains only autograph logistics and ends after the frozen assessed window; its argument must remain wholly within that window."
+  ],
+  "deterministicBookkeepingCorrection": {
+    "source": "Recompute both audits directly from the unchanged selected move array",
+    "permittedLeaves": [
+      "selectionBalanceAudit.totals",
+      "selectionBalanceAudit.sections",
+      "publicationCapacityAudit.sections"
+    ],
+    "semanticFieldsMutable": false,
+    "sectionRestructuringRequired": false
+  },
+  "packets": [
+    {
+      "shardId": "quote-lengths",
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quote-lengths/packet.json",
+        "sha256": "c89a044c437e8d342c94a0f4fbfa71e18f3fd5d07149ca24481022bf3ffc87e6",
+        "bytes": 41034
+      },
+      "writablePath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quote-lengths/output.json",
+      "allowedFields": [
+        "/moves/19/quoteEligibleExactSpans",
+        "/moves/23/quoteEligibleExactSpans"
+      ]
+    },
+    {
+      "shardId": "quotation-and-closing-boundary",
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/packet.json",
+        "sha256": "8e0d9fe22f9d10df01124323e315286e1edf4ea8e9114d879c2f174bc09792c3",
+        "bytes": 38302
+      },
+      "writablePath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/output.json",
+      "allowedFields": [
+        "/moves/29/quoteEligibleExactSpans",
+        "/moves/30/sourceSpan"
+      ]
+    },
+    {
+      "shardId": "reply-kinds",
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/reply-kinds/packet.json",
+        "sha256": "8e45d7734ce0d384677315fc3c2dc8d1b228b8d699ecb37c53e54e6060ae1d0a",
+        "bytes": 38679
+      },
+      "writablePath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/reply-kinds/output.json",
+      "allowedFields": [
+        "/moves/20/moveKind",
+        "/moves/21/moveKind"
+      ]
+    },
+    {
+      "shardId": "consolation-span-and-kind",
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/packet.json",
+        "sha256": "cedff8a007bb5bc8d95d4f98751710c08aef43658ec664eaab8b0a14f464d0cf",
+        "bytes": 25422
+      },
+      "writablePath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/output.json",
+      "allowedFields": [
+        "/moves/23/moveKind",
+        "/moves/23/sourceSpan"
+      ]
+    }
+  ],
+  "maximumModelLeavesPerShard": 2,
+  "attemptsPerShard": 1,
+  "recursiveRetryAllowed": false,
+  "preserveEveryRejectedByte": true,
+  "judgmentLaunchRequiresCompleteValidationAndSemanticReview": true,
+  "directIncrementalCostUsd": 0
+}

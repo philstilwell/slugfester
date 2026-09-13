@@ -1,0 +1,9 @@
+### Result
+{"landedUrl":"http://127.0.0.1:4181/reference/fallacy/argument-from-ignorance/?debate=sharpton-hitchens-god-religion-morality-2007#occurrence-fallacy-argument-from-ignorance-sharpton-hitchens-god-religion-morality-2007-al-sharpton-truth-order-and-divine-character-16-39-major-direct-reply","occurrenceFound":true,"occurrenceText":"\n      \n        Debate 261 · God, religion, and morality\n        \n    \n      16:39\n    \n  \n      \n      Truth, order, and divine character\n      Personal theism · Al Sharpton · Major direct reply\n      Natural order and moral judgments that exceed prevailing power require explanation, and Sharpton infers that their enduring structure points to a supreme governing source.\n      Unanswered origins, continuing natural progression, and moral authority are said to require a supreme source.\n      \n        Open debate scorecard: Debate 261 · Al Sharpton vs Christopher Hitchens — God, religion, and morality2007\n      \n    ","noOverflow":true}
+### Ran Playwright code
+```js
+await (async (page) => {const id=await page.evaluate(()=>decodeURIComponent(location.hash.slice(1))),target=page.locator(`[id="${id}"]`);if(!id||await target.count()!==1)throw new Error("Missing reference occurrence");await target.scrollIntoViewIfNeeded();return {landedUrl:page.url(),occurrenceFound:true,occurrenceText:await target.textContent(),noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)};})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4181/reference/fallacy/argument-from-ignorance/?debate=sharpton-hitchens-god-religion-morality-2007#occurrence-fallacy-argument-from-ignorance-sharpton-hitchens-god-religion-morality-2007-al-sharpton-truth-order-and-divine-character-16-39-major-direct-reply
+- Page Title: Argument from ignorance: logical fallacy in debates | Slugfester

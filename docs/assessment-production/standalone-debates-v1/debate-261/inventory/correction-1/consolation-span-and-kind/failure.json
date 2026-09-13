@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-bounded-inventory-repair-failure",
+  "status": "rejected-preserved-no-retry",
+  "debateNumber": "261",
+  "shardId": "consolation-span-and-kind",
+  "recordedAt": "2026-09-13T18:00:08.396Z",
+  "originalOutput": {
+    "path": "/Users/philstilwell/Documents/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/output.json",
+    "bytes": 160,
+    "sha256": "3b6451f404f92264fe8c62b42485a516bc5004c8d25aef71f10c0ca8607b1c3b"
+  },
+  "preservedOutputPath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/rejected-output.json",
+  "originalOutputRelocatedIntact": true,
+  "errors": [
+    "Output omitted the required edits array, per-field source rationale, and audit object.",
+    "Relative output path resolved against the unrelated root working copy, not the authorized dedicated working copy."
+  ],
+  "valuesObserved": {
+    "moveKind": "reply",
+    "sourceSpan": {
+      "startEvent": 1490,
+      "endEvent": 1513
+    }
+  },
+  "valuesNotAcceptedOrMerged": true,
+  "attempts": 1,
+  "retries": 0,
+  "execution": {
+    "kind": "consolation",
+    "session": {
+      "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T13-42-32-01a09bdd-1469-7a30-a376-33374369ed5e.jsonl",
+      "bytes": 275670,
+      "sha256": "f6091aa508e05034333ef29cfeb988e533f9b921f50fa793ec5535520ce82076"
+    },
+    "readingAuthentication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/reading-authentication.json",
+      "bytes": 1656,
+      "sha256": "137c81af09a448dfe80d84473d2160278a1183148490d046d9666905f441ef0b"
+    },
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "attempts": 1,
+    "retries": 0,
+    "toolCall": {
+      "type": "custom_tool_call",
+      "id": "ctc_00bc51187fda39f7016aa6e2f278fc87d1ab5f8b356fb97e3b",
+      "status": "completed",
+      "call_id": "call_kpn8Gv1vMXEVkTr2q3PS1ze0",
+      "name": "exec",
+      "input": "const obj = {\n  status: \"complete\",\n  shardId: \"consolation-span-and-kind\",\n  moveKind: \"reply\",\n  sourceSpan: {\n    startEvent: 1490,\n    endEvent: 1513\n  }\n};\nconst body = JSON.stringify(obj, null, 2) + \"\\n\";\nconst path = \"docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/output.json\";\nconst patch = [\n  \"*** Begin Patch\",\n  `*** Add File: ${path}`,\n  ...body.split(\"\\n\").slice(0, -1).map(line => `+${line}`),\n  \"*** End Patch\"\n].join(\"\\n\");\nconst result = await tools.apply_patch(patch);\ntext(result);",
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a09be6-6122-7fd2-9029-29c10f1abb5d",
+        "create_time": 1789321962.387897
+      }
+    },
+    "toolResult": [
+      {
+        "type": "custom_tool_call_output",
+        "id": "ctco_01a09be6-8f86-7133-aaf1-2d513763c375",
+        "call_id": "call_kpn8Gv1vMXEVkTr2q3PS1ze0",
+        "output": [
+          {
+            "type": "input_text",
+            "text": "Script completed\nWall time 0.0 seconds\nOutput:\n"
+          },
+          {
+            "type": "input_text",
+            "text": "{}"
+          }
+        ],
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a09be6-6122-7fd2-9029-29c10f1abb5d",
+          "create_time": 1789321973.638363
+        }
+      }
+    ]
+  },
+  "nextAttemptRequiresSpecificAuthorization": true,
+  "directIncrementalCostUsd": 0
+}

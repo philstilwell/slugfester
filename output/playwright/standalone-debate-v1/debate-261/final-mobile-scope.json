@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "final-mobile-scope",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page)=>{const note=page.locator(\".source-context\");await note.scrollIntoViewIfNeeded();await page.screenshot({path:\"output/playwright/standalone-debate-v1/debate-261/final-mobile-scope.png\"});return {visible:await note.isVisible(),text:await note.textContent()};}"
+  ],
+  "startedAt": "2026-09-13T21:11:37.662Z",
+  "completedAt": "2026-09-13T21:11:38.700Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/final-mobile-scope.txt",
+    "sha256": "cea00a42ef03e6e9b4102f705b8c57212e74e454a1eefda49fa7ea18f87b32e4",
+    "bytes": 758
+  },
+  "directIncrementalCostUsd": 0
+}

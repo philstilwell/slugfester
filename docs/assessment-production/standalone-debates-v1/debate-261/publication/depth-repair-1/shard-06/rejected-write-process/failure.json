@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-rejected-bounded-repair-execution",
+  "status": "quarantined-process-contract-failed-replacement-not-authorized",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "shardId": "shard-06",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-06/execution-plan.json",
+    "sha256": "43e93e4f337b71dfe2ee4ab32a48bf5265d3b46776007930c6f028bd0e57a071",
+    "bytes": 821
+  },
+  "readingAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-06/reading-authentication.json",
+    "sha256": "7c8bc1081ce15804fd29ecafb31b257307926df9b8799586d0f4e619a26cfa29",
+    "bytes": 1956
+  },
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-06/rejected-write-process/preserved-final-output.json",
+    "sha256": "e992246d2eb6a67e78b49b56f12bc7131409867802d7afa2d5c3de7bf865a566",
+    "bytes": 2169
+  },
+  "toolTrace": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-06/rejected-write-process/tool-write-trace.json",
+    "sha256": "e06ca8352067ea346ada5d4aa72336e3161630231e13a2cea8a956e8c11104d8",
+    "bytes": 3912
+  },
+  "diagnosis": "Two write-tool calls: a failed empty write to an unauthorized path, followed by the sole successful assigned output write. The strict one-call execution contract failed even though the first request produced no file and the final prose was not rewritten.",
+  "writeToolCalls": 2,
+  "successfulWriteToolCalls": 1,
+  "failedWriteToolCalls": 1,
+  "unexpectedPathsVerifiedAbsent": [
+    "/Users/philstilwellfinder"
+  ],
+  "sourceAndScoreChanges": 0,
+  "publicationApplied": false,
+  "modelContextAttempts": 1,
+  "additionalContextAttemptsAuthorized": 0,
+  "directIncrementalCostUsd": 0,
+  "sessionPrefix": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T15-05-22-01a09c28-e979-7830-aef7-c53852384b96.jsonl",
+    "bytes": 324272,
+    "sha256": "3e8b84450922ae69ad0faf1fac483bc98f5c11245972708cb2ef617de3066983"
+  },
+  "nextAction": "Request one fresh isolated replacement attempt for this same two-leaf shard, retain all valid work and rejected evidence, and use a new disjoint output directory."
+}

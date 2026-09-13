@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "discovery-checks",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const origin=\"http://127.0.0.1:4181\", target=\"/debate/sharpton-hitchens-god-religion-morality-2007/\", results=[],errors=[]; page.on(\"pageerror\",e=>errors.push(e.message)); for(const route of [\"/interlocutor/christopher-hitchens/\",\"/\",\"/search/?q=Sharpton\",\"/topics/\"]){await page.goto(origin+route);await page.locator(\"main h1\").first().waitFor();await page.waitForLoadState(\"networkidle\");const count=await page.locator(`a[href=\"${target}\"]`).count();if(!count)throw new Error(\"Missing debate link: \"+route);results.push({route,debateLinks:count,noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)});}await page.goto(origin+\"/rankings/\");await page.locator(\"main h1\").first().waitFor();await page.waitForLoadState(\"networkidle\");const ranked=await page.locator(\"a[href=\\\"/interlocutor/al-sharpton/\\\"]\").count();if(!ranked)throw new Error(\"Missing Sharpton ranking link\");const sitemap=await page.request.get(origin+\"/sitemap.xml\");const sitemapContainsDebate=(await sitemap.text()).includes(target);if(!sitemapContainsDebate||errors.length)throw new Error(JSON.stringify({sitemapContainsDebate,errors}));return {results,rankingProfileLinks:ranked,sitemapContainsDebate,runtimeErrors:errors}; }"
+  ],
+  "startedAt": "2026-09-13T21:06:49.517Z",
+  "completedAt": "2026-09-13T21:06:53.002Z",
+  "exitCode": 1,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/discovery-checks.txt",
+    "sha256": "3b178a36e5f05ef5c9dc4802c3821ab6bc5bf54a634dc9a3119902669ab0bf95",
+    "bytes": 47
+  },
+  "directIncrementalCostUsd": 0
+}

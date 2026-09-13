@@ -1,0 +1,38 @@
+### Result
+{
+  "url": "http://127.0.0.1:4181/rankings/?minimum=1",
+  "minimum": "3",
+  "options": [
+    {
+      "value": "3",
+      "label": "3+ appearances"
+    },
+    {
+      "value": "5",
+      "label": "5+ appearances"
+    },
+    {
+      "value": "10",
+      "label": "10+ appearances"
+    }
+  ],
+  "sharptonLinks": [],
+  "selectSharpton": [
+    {
+      "value": "Al Sharpton",
+      "text": "Al Sharpton"
+    },
+    {
+      "value": "Al Sharpton",
+      "text": "Al Sharpton"
+    }
+  ],
+  "sharptonInBody": true
+}
+### Ran Playwright code
+```js
+await page.evaluate('() => ({url:location.href,minimum:document.querySelector("#ranking-minimum")?.value,options:[...document.querySelectorAll("#ranking-minimum option")].map(o=>({value:o.value,label:o.textContent})),sharptonLinks:[...document.querySelectorAll("a")].filter(a=>a.href.includes("sharpton")).map(a=>({href:a.getAttribute("href"),text:a.textContent})),selectSharpton:[...document.querySelectorAll("option")].filter(o=>o.textContent.includes("Sharpton")).map(o=>({value:o.value,text:o.textContent})),sharptonInBody:document.body.textContent.includes("Al Sharpton")})');
+```
+### Page
+- Page URL: http://127.0.0.1:4181/rankings/?minimum=1
+- Page Title: Debate speaker rankings & score comparison | Slugfester

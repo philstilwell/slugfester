@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "mobile-biography",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const b=page.locator(\".profile-biography\"),g=page.locator(\".profile-bio-chart .profile-score-histogram\"); const br=await b.boundingBox(),gr=await g.boundingBox(); const checks={bioAboveGraph:br.y+br.height<=gr.y+1,noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),debateLinked:await page.locator(\"a[href=\\\"/debate/sharpton-hitchens-god-religion-morality-2007/\\\"]\").count()>0,sourceLinked:await b.locator(\"a[href=\\\"https://nationactionnetwork.squarespace.com/bio\\\"]\").count()===1}; await b.scrollIntoViewIfNeeded(); await page.screenshot({path:\"output/playwright/standalone-debate-v1/debate-261/mobile-biography.png\"}); if(Object.values(checks).some(v=>v!==true))throw new Error(JSON.stringify(checks)); return {checks,biography:await b.textContent(),bioBounds:br,graphBounds:gr}; }"
+  ],
+  "startedAt": "2026-09-13T21:05:54.745Z",
+  "completedAt": "2026-09-13T21:05:55.783Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/mobile-biography.txt",
+    "sha256": "ab20364755765c109b661df384af6ed739b042553e488f3db02de424363eee9e",
+    "bytes": 1469
+  },
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,67 @@
+{
+  "status": "passed-all-other-staged-file-whitespace-checks",
+  "debateNumber": "261",
+  "scope": "Nine exact preserved model/execution/command artifacts contain an extra terminal blank line. Their original bytes remain intact. All reader-facing and generated code files pass the unchanged whitespace check.",
+  "rawArtifactExceptions": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/controller-authentication-v1.mjs",
+      "sha256": "9275bce43b8c06568d4f957dd672e8be48cbbb138de01c0a77009d97b13fac7f",
+      "bytes": 3791
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/execution.json",
+      "sha256": "2bec3ac70dcba4f86ddf4c8db7c183bf4247e0491c6f0f17aa9cefbedd90c50b",
+      "bytes": 6306
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/failed-attempt.json",
+      "sha256": "3908a5bb3bb85d7ea5ac73bafce1e4a51ce10cf7ef12a93cbbd28901e6daa904",
+      "bytes": 5687
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/judgments/pass-a/output.json",
+      "sha256": "a1d9d3cde88769e872e91add2732930ac9644d3ec9409bc53044ef26806bd71d",
+      "bytes": 89723
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/preserved-output.json",
+      "sha256": "c0d3b4259e92742d7d07bd8ba4a3708359b3f40bc73ccfc01ecf9458bec8671f",
+      "bytes": 67675
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-261/close-owned-browser.txt",
+      "sha256": "c94cf52cf4de68dc0efc3697898b8d376fb4ff233df396c239b351e1b638a782",
+      "bytes": 40
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-261/final-console-replay.txt",
+      "sha256": "d0e5634bb0c1271965327ad2ac18107af18fa7da6d2c9ce13e03eeda6cb603db",
+      "bytes": 55
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-261/final-console.txt",
+      "sha256": "d0e5634bb0c1271965327ad2ac18107af18fa7da6d2c9ce13e03eeda6cb603db",
+      "bytes": 55
+    },
+    {
+      "path": "output/playwright/standalone-debate-v1/debate-261/final-network.txt",
+      "sha256": "7b0ed209fa05da2b7d3fccbf020bae2548bdc2553ad4a80664df6f861883b6a3",
+      "bytes": 6691
+    }
+  ],
+  "diagnostic": [
+    "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/controller-authentication-v1.mjs:59: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/execution.json:140: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/failed-attempt.json:49: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-261/judgments/pass-a/output.json:1056: new blank line at EOF.",
+    "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/preserved-output.json:659: new blank line at EOF.",
+    "output/playwright/standalone-debate-v1/debate-261/close-owned-browser.txt:2: new blank line at EOF.",
+    "output/playwright/standalone-debate-v1/debate-261/final-console-replay.txt:3: new blank line at EOF.",
+    "output/playwright/standalone-debate-v1/debate-261/final-console.txt:3: new blank line at EOF.",
+    "output/playwright/standalone-debate-v1/debate-261/final-network.txt:120: new blank line at EOF."
+  ],
+  "allOtherStagedFilesChecked": true,
+  "readerFacingWhitespaceExceptions": 0,
+  "originalRejectedBytesChanged": false,
+  "testLimitsChanged": false
+}

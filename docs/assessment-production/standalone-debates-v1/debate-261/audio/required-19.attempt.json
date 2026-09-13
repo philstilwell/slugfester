@@ -1,0 +1,47 @@
+{
+  "status": "paid-call-started",
+  "debateNumber": "261",
+  "clipId": "required-19",
+  "moveIds": [
+    "pro-morality-is-created-pattern"
+  ],
+  "clip": {
+    "path": "output/transcribe/debate261-verification-1/required-19.wav",
+    "sha256": "b60cc1ef5db71eeec036715f4a0d0da3c9cbafdd093630c677ea92796f8a1d6d",
+    "bytes": 1297998
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "attempt": 1,
+  "retries": 0,
+  "automaticRetries": 0,
+  "timeoutSeconds": 150,
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/audio/plan.json",
+    "sha256": "15c6f3ed6467d61bb7c1e01d4615743788f061cdd4278140f9b47196a87bc2ae",
+    "bytes": 14230
+  },
+  "costException": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/audio/cost-cap-exception-1.json",
+    "sha256": "e57801875a4505cce92b6bd64b026942c9ef27b7cd1a484107b0493922b3c26a",
+    "bytes": 779
+  },
+  "controller": {
+    "path": "scripts/tmp-run-audio-261.mjs",
+    "sha256": "c306508ed5f9a488bc3c5151e105ecb5ac20a71ab2542d1a7091d4878ec59e14",
+    "bytes": 6185
+  },
+  "wrapper": {
+    "path": "scripts/tmp-transcribe-no-retry-261.py",
+    "sha256": "682b5383803f117b4edc6fece33063612315c74fe6021f04940e02618cbb392d",
+    "bytes": 451
+  },
+  "installedCli": {
+    "path": "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py",
+    "bytes": 8684,
+    "sha256": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  },
+  "knownSuccessfulCostBeforeUsd": 0.8118325000000001,
+  "uncertainCallPlanningAllowanceUsd": 0.024224000000000002,
+  "startedAt": "2026-09-13T18:33:06.923Z"
+}

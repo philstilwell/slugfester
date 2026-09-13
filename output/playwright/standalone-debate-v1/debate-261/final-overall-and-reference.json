@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "final-overall-and-reference",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => {const sideLinks=await page.locator(\".overall-side\").evaluateAll(ss=>ss.map(s=>[...s.querySelectorAll(\"a\")].map(a=>({label:a.textContent.trim(),href:a.getAttribute(\"href\")})))); if(JSON.stringify(sideLinks.map(s=>s.map(x=>x.label)))!==JSON.stringify([[\"Argument from ignorance\",\"Red herring\"],[]]))throw new Error(\"Overall links mismatch\");const first=page.locator(\".argument .tag-wrap a\").first(),href=await first.getAttribute(\"href\");await first.click();await page.waitForLoadState(\"networkidle\");const id=decodeURIComponent(new URL(page.url()).hash.slice(1)),target=page.locator(`[id=\"${id}\"]`);if(!id||await target.count()!==1)throw new Error(\"Missing reference occurrence\");await target.scrollIntoViewIfNeeded();return {sideLinks,clickedReference:href,landedUrl:page.url(),occurrenceFound:true,occurrenceText:await target.textContent(),noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)};}"
+  ],
+  "startedAt": "2026-09-13T21:07:32.571Z",
+  "completedAt": "2026-09-13T21:07:33.118Z",
+  "exitCode": 1,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/final-overall-and-reference.txt",
+    "sha256": "b907b5813047be5c84182df51426c3ba7eff45875caa69300c611ec5df4d54db",
+    "bytes": 45
+  },
+  "directIncrementalCostUsd": 0
+}

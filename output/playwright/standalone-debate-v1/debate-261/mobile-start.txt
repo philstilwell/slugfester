@@ -1,0 +1,6 @@
+### Result
+{"width":390,"collapsed":true}
+### Ran Playwright code
+```js
+await (async (page) => { const a=page.locator(".ai-extension-accordion"); if(await a.evaluate(el=>el.open))await a.locator("summary").click(); await page.evaluate(()=>scrollTo(0,0)); return {width:await page.evaluate(()=>innerWidth),collapsed:await a.evaluate(el=>!el.open)}; })(page);
+```
