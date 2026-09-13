@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-isolated-score-blind-inventory-packet",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "motion": "Does God exist?",
+  "assessmentModel": "5.6 Sol",
+  "sides": {
+    "pro": {
+      "speaker": "Shmuley Boteach",
+      "position": "Jewish theism"
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic critique"
+    }
+  },
+  "source": {
+    "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+    "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+    "bytes": 349406
+  },
+  "instructions": [
+    "Read every original event before selecting moves. Produce only a score-blind inventory: no dimension ratings, tags, winner, totals, or publication prose. Score the two opponents only; moderator questions and logistics carry no independent credit. Preserve both sides' actual claims, concessions and burdens, as stated in positionCaution.",
+    "Create 4–7 coherent topical sections with semantic lowercase IDs, titles of 2–10 words, and positive integer weightPercent totaling 100, each with weightRationale. Select 8–48 distinct load-bearing arguments, major replies and important concessions chronologically; exactly one section per move. Let evidence determine count; do not manufacture symmetry or omit a material argument to reduce workload.",
+    "Each section needs one or more moves per side, normally at most three each, never more than four. A fourth requires a >=40-character source-specific explanation of why its distinct, independently assessable, non-mergeable move belongs in this coherent section. Resection while score-blind if necessary. Both sides may have four only under this same locked-card exception.",
+    "Each side has 3–7 unique burden bridges: exactly one motion bridge plus at least one central and subsidiary bridge. Each bridge has bridgeId, tier, burden and successCriterion. Link each move to its own side's bridge and tier with a rationale. Importance 1 supporting, 2 major, 3 load-bearing has a source-based importanceRationale, not a score forecast.",
+    "Each move requires claimSummary, reasonSummary, inferenceSummary {premise,inference,conclusion}, and sourceSpan {startEvent,endEvent} using original zero-based eventIndex values. Select the smallest complete contiguous passage proving that speaker's claim and supporting reason; the controller later supplies exact source excerpt and timing. Target <=2200 characters; longer complete arguments require spanLengthRationale >=40 characters. Do not pad spans or attribute an opponent's speech to the selected speaker.",
+    "quoteEligibleExactSpans are 3–18-word exact substrings within that selected source span. Preserve caption words. attributionConfidence and materialWordingConfidence must be high, medium or low, with source-specific attributionRationale and materialWordingRationale. Material uncertainty in either category must also make attributionConfidence below high, triggering audio. Do not convert an unreliable caption into a substantive error by either speaker.",
+    "Constructive moves have moveKind constructive, respondsToIds [], responseComponents []. Replies have moveKind reply, target only earlier selected IDs, and nonempty responseComponents [{targetMoveId,component,description}]. Later replies can be described in coverage but cannot be backward links to future moves.",
+    "selectionBalanceAudit = {thresholds:{totalAbsoluteDifference:3,sectionAbsoluteDifference:2},totals:{pro,con,absoluteDifference},sections:[{sectionId,pro,con,absoluteDifference}],rationaleRequired,rationale}. Derive all counts. Rationale is required if either threshold is reached and must identify the source-grounded reason for all asymmetries in >=40 characters.",
+    "publicationCapacityAudit = {maximumSelectedMovesPerSidePerSection:4,sections:[{sectionId,pro,con,withinCapacity,fourthRowRequired,fourthRowAuthorized,rationale}],allSectionsWithinCapacity:true,allFourthRowsPreauthorized:true}. fourthRowRequired means either side has four. fourthRowAuthorized is true if specifically justified or vacuously true when no fourth is required. The controller independently recomputes all counts and flags.",
+    "fullTranscriptCoverageAudit = {intervals:[{startEvent,endEvent,moveIds,reason}]}, partitioning all original events exactly once in consecutive inclusive intervals. Empty moveIds are allowed for logistics, repetition or genuinely subsidiary material with a source-specific reason; do not quietly exclude any material argument. All moveIds cited must exist."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-frozen",
+    "debateNumber": "260",
+    "debateId": "boteach-hitchens-god-morality-2008",
+    "assessmentModel": "5.6 Sol",
+    "motion": "Does God exist?",
+    "assessedDebateWindowMs": {
+      "start": 231440,
+      "end": 5630440
+    },
+    "routes": "[{side,speaker,position,bridges:[{bridgeId,tier,burden,successCriterion}]}]",
+    "sections": "[{sectionId,title,weightPercent,weightRationale}]",
+    "moves": "[{moveId,sectionId,side,speaker,moveKind,sourceSpan,quoteEligibleExactSpans,claimSummary,reasonSummary,inferenceSummary,burdenContact:{bridgeId,tier,rationale},importance,importanceRationale,respondsToIds,responseComponents,attributionConfidence,attributionRationale,materialWordingConfidence,materialWordingRationale,optional spanLengthRationale}]",
+    "selectionBalanceAudit": "object specified above",
+    "publicationCapacityAudit": "object specified above",
+    "fullTranscriptCoverageAudit": "object specified above",
+    "audit": {
+      "calculatedTotalsAbsent": true,
+      "completeTranscriptReviewed": true,
+      "allSpansSourceExact": true,
+      "scoreBlind": true,
+      "noOutcomePredetermined": true,
+      "noAudienceOrHostCredit": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# Debate 260 — bounded source corrections returned; recovery gate paused
+
+The user approved two fresh isolated reviewers to correct only the previously identified judgments. Both GPT-5.6 Sol contexts ran at low reasoning effort, with the same complete frozen evidence and no old ratings. Public-tool authentication confirms complete reading of all 2,437 source events, 40 inventory moves, 25 audio checks, 58 evidence pages, metadata, workflow and rubric before either wrote. Each delivered one output and performed no rewrite or model retry. Direct incremental cost for this continuation was $0.
+
+The permitted scope was two move judgments per pass, plus pass A's single responsiveness dimension for Hitchens's Einstein reply. All earlier primary outputs, their prior formatting repairs, the frozen inventory and every audio artifact remain unchanged. The corrected fields have not been merged.
+
+The independent controller check found:
+
+- Pass A addresses the actual presidency correction, the bounded court citation, and the actual linked challenge in Hitchens's reply. Its JSON contains four stray `+` characters on two lines. Removing only those characters in memory preserves every string and scalar token and passes the unchanged structural contract.
+- Pass B supplies both sets of dimension ratings and rationales, but uses `ratings`/`rating` rather than `dimensions`/`value` and omits the two required confidence labels. Its own reported validation pass did not enforce the actual packet contract. A read-only diagnostic confirms that field-name normalization plus retention of the two original `medium` confidence labels produces a structurally valid record without changing any supplied rating or rationale; this normalization has not been authorized or applied.
+- Pass B's responsiveness rationale for Boteach's presidency correction still criticizes failure to answer the separate theological issue and Hitchens's later uncertainty. That is outside the selected constructive move's defined burden. Only this remaining responsiveness value/rationale needs fresh source-grounded reassessment; the controller has not proposed or assigned a replacement value.
+
+The exact rejected outputs, authenticated reading records, file hashes, hypothetical normalization checks, and remaining source-scope diagnosis are preserved in `judgments/source-correction-1/failure-diagnostic-1.json`. Neither output has been overwritten. The prepared merge controller has not run, and no judgment-execution acceptance, disagreement extraction, adjudication, score calculation, production integration, commit, push, or pull request has occurred.
+
+The recommended next authorization is a bounded normalization of both correction files, explicit retention of the two existing confidence labels, and one fresh isolated assessment limited to pass B's remaining responsiveness value/rationale. All other assessment fields remain immutable. To reduce avoidable future interruptions, the user may additionally authorize provably content-preserving formatting recovery for this debate only; such permission would not authorize substantive changes or automatic model retries.
+
+All 25 audio checks remain complete. Known and maximum incurred paid cost remain $1.3086524999999998, within the authorized $2 cap. The proposed recovery adds $0 direct cost. No browsers or servers were opened during this continuation. The existing `codex/debate-260` working copy and unrelated work remain preserved.

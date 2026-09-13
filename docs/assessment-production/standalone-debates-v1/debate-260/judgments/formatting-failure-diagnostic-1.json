@@ -1,0 +1,187 @@
+{
+  "status": "paused-before-repair-no-judgment-accepted",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "createdAt": "2026-09-12T22:49:13.372Z",
+  "controller": {
+    "path": "scripts/tmp-diagnose-primary-formatting.mjs",
+    "sha256": "3854c1fa516a220a33d1e4489042302d1d50f906f3fcd23ede419c15ebb591c1",
+    "bytes": 4729
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/execution-packet.json",
+    "sha256": "25443c6c4073377b07cb74c93c783c31187f5b225fca7cb5b91425ed5781e05a",
+    "bytes": 8804
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/inventory.json",
+    "sha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+    "bytes": 191206
+  },
+  "audio": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/audio/audio-verification.json",
+    "sha256": "e0b7a9f1da4f55f9d69083a263ea3e3178d484b2efa736caa7ff0d946caa3e1e",
+    "bytes": 356004
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "status": "failed-json-syntax-preserved-awaiting-bounded-repair-authority",
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-a/output.json",
+        "sha256": "e7ee446b05c2221667845cba683ce1770c05e5fe72943769314f60011305b7d8",
+        "bytes": 44307
+      },
+      "rejectedCopy": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-a/rejected-output-1.json",
+        "sha256": "e7ee446b05c2221667845cba683ce1770c05e5fe72943769314f60011305b7d8",
+        "bytes": 44307
+      },
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-a/authenticated-reading.json",
+        "sha256": "7fa0f1727ebd51c76c60b386b938138893ff7f7849fb3d8ccad237dadc729cde",
+        "bytes": 921592
+      },
+      "originalParseError": "Unexpected token '}', ...\"llow.\"}}},},\n    {\"m\"... is not valid JSON",
+      "attempts": 1,
+      "retries": 0,
+      "diagnostic": {
+        "readOnly": true,
+        "hypotheticalRepairSaved": false,
+        "operation": "Remove stray }, sequences and excess closing braces only; all strings and scalar tokens must remain byte-identical and ordered.",
+        "removedCharacters": 4,
+        "affectedLines": [
+          {
+            "line": 20,
+            "removedCharacters": 2,
+            "originalLineSha256": "7ec23f21f63e22b17611d0a84094da5f2464d8c6dd6f353b6ca08da0901c1573",
+            "hypotheticalLineSha256": "e9cb4c7c93f8a38d68fd7bfd2c34c8f800c9fbf65e86818aca37d754b1cf8b21"
+          },
+          {
+            "line": 22,
+            "removedCharacters": 2,
+            "originalLineSha256": "15bd8d9be49a4f8c5c76e833fedc9ccd6869de299009f91025790d85be71d1a4",
+            "hypotheticalLineSha256": "1375600581fe1259c46cd355bb7d8023e3d4431dd9e93acdd796f38c66c9c044"
+          }
+        ],
+        "hypotheticalOutputSha256": "2ac7a158016277f28b22c97bf5c82ddce2fdf657b2b767fb458c190383bf2e61",
+        "hypotheticalOutputBytes": 44303,
+        "semanticTokenStreamUnchanged": true,
+        "validation": {
+          "status": "passed",
+          "pass": "pass-a",
+          "moves": 40
+        },
+        "dimensionRationales": 240,
+        "distinctDimensionRationales": 240,
+        "substantiveQualityAcceptance": false
+      }
+    },
+    {
+      "pass": "pass-b",
+      "status": "failed-json-syntax-preserved-awaiting-bounded-repair-authority",
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-b/output.json",
+        "sha256": "5a1e6193bbbb900c91ca409e95608058fe9a7605705a023c362173be8af137ed",
+        "bytes": 35744
+      },
+      "rejectedCopy": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-b/rejected-output-1.json",
+        "sha256": "5a1e6193bbbb900c91ca409e95608058fe9a7605705a023c362173be8af137ed",
+        "bytes": 35744
+      },
+      "authenticatedReading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-b/authenticated-reading.json",
+        "sha256": "a0466e922b1ef8b639a3df9c91b5b8d6dc64657f08724e5543612af246c7f35e",
+        "bytes": 924232
+      },
+      "originalParseError": "Expected ',' or ']' after array element in JSON at position 9807 (line 24 column 830)",
+      "attempts": 1,
+      "retries": 0,
+      "diagnostic": {
+        "readOnly": true,
+        "hypotheticalRepairSaved": false,
+        "operation": "Remove stray }, sequences and excess closing braces only; all strings and scalar tokens must remain byte-identical and ordered.",
+        "removedCharacters": 20,
+        "affectedLines": [
+          {
+            "line": 24,
+            "removedCharacters": 2,
+            "originalLineSha256": "0e98f91becbdc5407e029ce27bb87fc26140a60aed08d5bb9d601b8aaee7f953",
+            "hypotheticalLineSha256": "ef4487c4ba4e8d07edc41bb6c7b722e99ee7f8645c008ac2708fef4cc2c355c2"
+          },
+          {
+            "line": 35,
+            "removedCharacters": 2,
+            "originalLineSha256": "3bd26570d9d74974ff5e0650c3b84083644d95d09576b092efc6db342a6152ce",
+            "hypotheticalLineSha256": "506f041fb73ede65b87a9dcaf4ef732c9030d95639882eb9030a0dd393b9e09c"
+          },
+          {
+            "line": 40,
+            "removedCharacters": 2,
+            "originalLineSha256": "04b9369e45539dc1bc2a5d6a261a80bb967eac9742f2a4a4c7ab2ccff9ce2297",
+            "hypotheticalLineSha256": "0c4abcd7f20031550223e12847fa5d176a81f5d2ff1e54322d105cf4e484ca08"
+          },
+          {
+            "line": 41,
+            "removedCharacters": 2,
+            "originalLineSha256": "67be0e923bcf9331aef66f55fd5b3f0bfdd981c937f374c062e78188334a8ef5",
+            "hypotheticalLineSha256": "e9da0452209f62e189eda47e2671eb484a00c5f53cb6a98f13143c7334db91ae"
+          },
+          {
+            "line": 45,
+            "removedCharacters": 2,
+            "originalLineSha256": "ced972ea911dd138b1f37a91f7bf8d3b0f896dd1dc7c489d14bff03a3d77ed8f",
+            "hypotheticalLineSha256": "1a8bb8e21796b0610c863d00303f93c3d60872134d99a92ee88c130291a410a5"
+          },
+          {
+            "line": 47,
+            "removedCharacters": 4,
+            "originalLineSha256": "72fb1c8d0b72009b3b9651f4ad1ab40f19edc5e91d243c88f4c0234b69afa224",
+            "hypotheticalLineSha256": "86e3486140d7bb9f5cc4eb11db69b09fe713fa3c2fc8925652268d068ab3a3fe"
+          },
+          {
+            "line": 50,
+            "removedCharacters": 2,
+            "originalLineSha256": "155726f0c204a43d2f7f20b56f04a281bbb15147d1b55fd009a736e99bbb1c87",
+            "hypotheticalLineSha256": "054290e2fa34839acf689e27973425fe952d9160c6980be3af5471241802d07f"
+          },
+          {
+            "line": 52,
+            "removedCharacters": 2,
+            "originalLineSha256": "1c418b1df3d374352e8cb2c0b52bba95bce54476c4a10d4ee9eb45111d0d426b",
+            "hypotheticalLineSha256": "ec3aa12c0d8802a268981a5ae8c9f1b42b7b8a752f60db494db0d1d7f49124cb"
+          },
+          {
+            "line": 53,
+            "removedCharacters": 2,
+            "originalLineSha256": "3d9883c2a9e0f3f92d19733d6ad0f4fd66545fa3553eb8cd23fc14d5f553fb18",
+            "hypotheticalLineSha256": "4647c3566c7be8741254459926fb44abc312a37af5aac3922e797a756da5f85a"
+          }
+        ],
+        "hypotheticalOutputSha256": "c4b1805429cb68f61350bf57efc3c1864bf2acd87e9b1fed5c062edc2cdead26",
+        "hypotheticalOutputBytes": 35724,
+        "semanticTokenStreamUnchanged": true,
+        "validation": {
+          "status": "passed",
+          "pass": "pass-b",
+          "moves": 40
+        },
+        "dimensionRationales": 240,
+        "distinctDimensionRationales": 240,
+        "substantiveQualityAcceptance": false
+      }
+    }
+  ],
+  "totalPunctuationCharactersProposedForRemoval": 24,
+  "ratingsChanged": 0,
+  "rationalesChanged": 0,
+  "successfulAudioCallsRepeated": 0,
+  "additionalPaidCalls": 0,
+  "scorePasses": 0,
+  "adjudicationRun": false,
+  "productionModified": false,
+  "commitCreated": false,
+  "pushed": false,
+  "proposedRecovery": "One deterministic punctuation-only repair per primary output, preserving every original byte separately and every string/scalar token unchanged. Require explicit authorization before writing repaired output and repeat full structural and source-quality checks before accepting either pass."
+}

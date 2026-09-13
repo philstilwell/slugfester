@@ -1,0 +1,86 @@
+{
+  "status": "passed-punctuation-only-repair",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/formatting-repair-1-authorization.json",
+    "sha256": "9b5d949e2294e0d069e7578ae5886cbed714f4abe3a9cfb8bfca325e49359796",
+    "bytes": 942
+  },
+  "diagnostic": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/formatting-failure-diagnostic-1.json",
+    "sha256": "2ca729aaee71a050363bb485917c74ff66dbade8795f38a426aac29319cd642a",
+    "bytes": 8483
+  },
+  "controller": {
+    "path": "scripts/tmp-primary-format-repair.mjs",
+    "sha256": "89f471e06b9e95dd15d54512b00f8294f548dd18ac52ad79161623b444746776",
+    "bytes": 3521
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-a/output.json",
+        "sha256": "e7ee446b05c2221667845cba683ce1770c05e5fe72943769314f60011305b7d8",
+        "bytes": 44307
+      },
+      "preservedOriginal": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-a/rejected-output-1.json",
+        "sha256": "e7ee446b05c2221667845cba683ce1770c05e5fe72943769314f60011305b7d8",
+        "bytes": 44307
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-a/output.json",
+        "sha256": "2ac7a158016277f28b22c97bf5c82ddce2fdf657b2b767fb458c190383bf2e61",
+        "bytes": 44303
+      },
+      "removedPunctuationCharacters": 4,
+      "semanticTokenStreamUnchanged": true,
+      "validation": {
+        "status": "passed",
+        "pass": "pass-a",
+        "moves": 40
+      },
+      "attempts": 1,
+      "retries": 0,
+      "modelReruns": 0
+    },
+    {
+      "pass": "pass-b",
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-b/output.json",
+        "sha256": "5a1e6193bbbb900c91ca409e95608058fe9a7605705a023c362173be8af137ed",
+        "bytes": 35744
+      },
+      "preservedOriginal": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-b/rejected-output-1.json",
+        "sha256": "5a1e6193bbbb900c91ca409e95608058fe9a7605705a023c362173be8af137ed",
+        "bytes": 35744
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/pass-b/output.json",
+        "sha256": "c4b1805429cb68f61350bf57efc3c1864bf2acd87e9b1fed5c062edc2cdead26",
+        "bytes": 35724
+      },
+      "removedPunctuationCharacters": 20,
+      "semanticTokenStreamUnchanged": true,
+      "validation": {
+        "status": "passed",
+        "pass": "pass-b",
+        "moves": 40
+      },
+      "attempts": 1,
+      "retries": 0,
+      "modelReruns": 0
+    }
+  ],
+  "totalRemovedPunctuationCharacters": 24,
+  "ratingsChanged": 0,
+  "rationalesChanged": 0,
+  "substantiveQualityAcceptance": false,
+  "sourceChanged": false,
+  "modelReruns": 0,
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-12T23:00:30.106Z"
+}

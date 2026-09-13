@@ -1,0 +1,651 @@
+
+> slugfester@0.1.0 site:preflight
+> node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep "reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged"
+
+Validated explicit primary categories for 260 debates across 15 categories.
+
+> slugfester@0.1.0 seo
+> node scripts/generate-seo-pages.mjs --check
+
+Validated 738 SEO files.
+Validated source-grounded introductions and three related suggestions for 260 debates, plus all seven research introductions and figures.
+Validated source-backed biographies for all 174 published interlocutors.
+Validated substantive initial text for 260 debates and 174 profiles, plus catalogue, topics, rankings and method pages.
+Validated 455 public routes, 260 debate detail files, 174 generated profiles, and 174 avatar assets.
+
+
+Running 17 tests using 1 worker
+
+
+
+[1/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[3/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /interlocutor/alex-carter/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[4/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /debate/craig-oconnor-god-debate-2026/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[5/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /backend/
+
+
+
+
+
+
+
+
+
+
+
+
+[6/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[7/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/data-and-methods/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[8/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /corrections/
+
+
+
+
+
+
+
+
+
+
+[9/17] tests/site-quality/site-quality.spec.mjs:67:1 › reviews the browser data baseline after ten added debates
+[10/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[11/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /rankings/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[12/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /debate/craig-oconnor-god-debate-2026/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[13/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /reference/fallacy/equivocation/
+
+
+
+
+
+
+
+
+
+
+
+[14/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /rankings/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[16/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /interlocutor/alex-o-connor/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[17/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /corrections/
+
+
+
+
+
+
+
+
+
+
+  17 passed (11.1s)
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET / HTTP/1.1" 200 -
+(node:94716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/slugfester-logo.jpg HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/bernardo-kastrup.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/shmuley-boteach.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/robert-price.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/james-white.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:36] "GET /assets/caricatures/peter-atkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/alex-malpass.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/joe-folley.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/joseph-schmid.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/scott-clifton.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/bart-ehrman.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/sean-carroll.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:37] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /interlocutor/alex-carter/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/interlocutor-bios.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /assets/caricatures/alex-carter.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /debate/craig-oconnor-god-debate-2026/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:38] "GET /src/data/debate-details/craig-oconnor-god-debate-2026.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /backend/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /src/data/section-score-extremes.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:39] "GET /assets/backend-methodology-illustration.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /insights/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /assets/insights/p2-moves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /assets/insights/p1-dimensions.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/insights.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /insights/data-and-methods/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/insights-methods.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/insights.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /src/data/insights.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:40] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /corrections/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:41] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/slugfester-logo.jpg HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/shmuley-boteach.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/bernardo-kastrup.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/james-white.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/peter-atkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/robert-price.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/john-lennox.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/sye-ten-bruggencate.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/david-wood.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/michael-shermer-v2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/jordan-peterson.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /rankings/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/joseph-schmid.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/alex-malpass.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/scott-clifton.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/joe-folley.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/sean-carroll.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/bart-ehrman.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/lance-bush.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/daniel-dennett.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/graham-oppy.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/max-baker-hytch.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/michael-huemer.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/michael-ruse.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/philip-goff.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/michael-licona.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/sam-harris.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/michael-shermer-v2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/stephen-woodford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:42] "GET /assets/caricatures/bernardo-kastrup.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /debate/craig-oconnor-god-debate-2026/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /src/data/debate-details/craig-oconnor-god-debate-2026.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:43] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /reference/fallacy/equivocation/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/reference-appearances/fallacy-equivocation.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/slugfester-logo.jpg HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/bernardo-kastrup.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/shmuley-boteach.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/james-white.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/robert-price.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/peter-atkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/john-lennox.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/sye-ten-bruggencate.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:44] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /rankings/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/joseph-schmid.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/alex-malpass.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/scott-clifton.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/joe-folley.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/sean-carroll.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/bart-ehrman.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/lance-bush.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/graham-oppy.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/michael-ruse.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/max-baker-hytch.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/michael-huemer.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/daniel-dennett.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/philip-goff.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/sam-harris.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/michael-licona.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/stephen-woodford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:45] "GET /assets/caricatures/michael-shermer-v2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /interlocutor/alex-o-connor/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/interlocutor-bios.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/debate-analytics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/max-baker-hytch.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/trent-horn.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/craig-biddle.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/jonathan-mclatchie.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/michael-jones.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/david-wood.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/alex-carter.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/cameron-bertuzzi.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/francis-collins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/glen-scrivener.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/sam-harris.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/cliffe-knechtle.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/frank-turek.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/lukas-ruegger.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/gregory-pine.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/alister-mcgrath.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/ayaan-hirsi-ali.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/ross-douthat.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/caricatures/ben-shapiro.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /corrections/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/styles.css?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/app.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/debate-summaries.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/interlocutors.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/seo.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/reader-guides.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/topics.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /src/data/references.js?v=9b1524cdb1babc58 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [12/Sep/2026 22:31:46] "GET /assets/debate-gloves.png HTTP/1.1" 200 -

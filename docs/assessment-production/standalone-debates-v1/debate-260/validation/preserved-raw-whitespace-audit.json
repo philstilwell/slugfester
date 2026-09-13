@@ -1,0 +1,35 @@
+{
+  "status": "passed-all-other-staged-file-whitespace-checks",
+  "debateNumber": "260",
+  "scope": "Exactly four immutable raw model artifacts retain original trailing whitespace or an extra terminal newline. Their exact bytes are required by existing source and publication recovery proofs; no source, prose, test, or executable is changed to suppress a validation failure.",
+  "rawArtifactExceptions": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/correction-1/raw-inventory.json",
+      "sha256": "dc6eb72415a5db54b00b7f2f5e076b94ba73069f07d03cdfaf33f701b23d47e4",
+      "bytes": 97763
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/replacement-1/model-output.json",
+      "sha256": "dc6eb72415a5db54b00b7f2f5e076b94ba73069f07d03cdfaf33f701b23d47e4",
+      "bytes": 97763
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/raw-prose-output-1.json",
+      "sha256": "cbd5e6692d62108dc2b1b3b39f9f580f7af64e5523f825d3f1e7a773003d3f9b",
+      "bytes": 80815
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/transport-recovery-1/raw-misplaced-output.json",
+      "sha256": "cbd5e6692d62108dc2b1b3b39f9f580f7af64e5523f825d3f1e7a773003d3f9b",
+      "bytes": 80815
+    }
+  ],
+  "exceptionKinds": [
+    "One trailing space on line 52 of the two exact inventory copies",
+    "One blank terminal line in the two exact raw publication copies"
+  ],
+  "allOtherStagedFilesChecked": true,
+  "readerFacingWhitespaceExceptions": 0,
+  "originalRejectedBytesChanged": false,
+  "testLimitsChanged": false
+}

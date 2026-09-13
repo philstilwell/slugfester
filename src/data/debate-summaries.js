@@ -12314,5 +12314,58 @@ export const debateSummaries = [
         "title": "Revisability, telepathy, and materialism"
       }
     ]
+  },
+  {
+    "id": "boteach-hitchens-god-morality-2008",
+    "number": "260",
+    "title": "Shmuley Boteach vs Christopher Hitchens — God and morality",
+    "year": 2008,
+    "label": "God, morality, and religion",
+    "date": "2026-09-12",
+    "duration": "1 hr 33 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vnMYL8sF7bQ",
+    "motion": "Does God exist?",
+    "summary": "Boteach grounds design and human worth in a personal God; Hitchens answers with natural explanation, moral autonomy, and challenges to interventionist religion.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Jewish theism",
+        "speaker": "Shmuley Boteach",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheistic critique",
+        "speaker": "Christopher Hitchens",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 74,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Existence and explanatory burden"
+      },
+      {
+        "title": "Cosmos, life, and design"
+      },
+      {
+        "title": "Evolution and divine guidance"
+      },
+      {
+        "title": "Morality and human worth"
+      },
+      {
+        "title": "Scripture, ritual, and harm"
+      },
+      {
+        "title": "Historical and factual credibility"
+      },
+      {
+        "title": "God, covenant, and chosenness"
+      }
+    ]
   }
 ];

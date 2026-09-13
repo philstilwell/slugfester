@@ -1,0 +1,73 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "833f318956c20ca45b8fba0899572c9ac8f230b6d0c39b280aa39c2afae9cd1e",
+      "bytes": 179437
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+      "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+      "bytes": 349406
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/audio/audio-verification.json",
+      "sha256": "e0b7a9f1da4f55f9d69083a263ea3e3178d484b2efa736caa7ff0d946caa3e1e",
+      "bytes": 356004
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_260_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-format-normalized.json",
+      "attempts": 1,
+      "retries": 0,
+      "originalOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "540b1e8feb22bd8955822357141a7c1a111c5123ae036168096adc2825f24f39",
+        "bytes": 34894
+      },
+      "formatNormalization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-format-normalization.json",
+        "sha256": "d0682745206a1edad5e7f9f99195d364ba6b2f1fd63619f6f88158d104f94817",
+        "bytes": 16940
+      }
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_260_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0,
+  "originalPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/execution-plan.json",
+    "sha256": "18dc27ec318e9012fdd21f1f03cb28165e3751c7951e14074e12802eda105e37",
+    "bytes": 1867
+  },
+  "formatNormalization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-format-normalization.json",
+    "sha256": "d0682745206a1edad5e7f9f99195d364ba6b2f1fd63619f6f88158d104f94817",
+    "bytes": 16940
+  }
+}

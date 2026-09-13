@@ -1,0 +1,142 @@
+{
+  "status": "paused-correction-output-contract-and-residual-source-failure",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "controller": {
+    "path": "scripts/tmp-diagnose-source-correction-1.mjs",
+    "sha256": "3c61244e43dd68918ee8e7c2c0a2b29e0c1fe56104d70714081eed625131738f",
+    "bytes": 7852
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/execution-plan.json",
+    "sha256": "d27aa940ecdc50d9f5a1320bfbb80ab6727e55bb29d786b0c14a371746e5965b",
+    "bytes": 34983
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-a/output.json",
+        "sha256": "4abc361c836a6466bfce475a8476c1e97c2e5b2b210140417ff4dbd0f195e2fe",
+        "bytes": 4935
+      },
+      "preservedRejectedOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-a/rejected-output-1.json",
+        "sha256": "4abc361c836a6466bfce475a8476c1e97c2e5b2b210140417ff4dbd0f195e2fe",
+        "bytes": 4935
+      },
+      "reading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-a/authenticated-reading.json",
+        "sha256": "1977cecfab568d787e8cdb9f40a3875a45192e18aaa1249d66e1a8d48ef018d6",
+        "bytes": 924283
+      },
+      "structuralProblems": [
+        "Expected double-quoted property name in JSON at position 474 (line 13 column 1)"
+      ],
+      "normalization": {
+        "hypotheticalOnly": true,
+        "saved": false,
+        "removeFourLeadingPlusCharacters": true,
+        "affectedLines": [
+          13,
+          55
+        ],
+        "hypotheticalOutputSha256": "4f4c398fb1b33d8f95b95bc9d272e0491d321b2def98735191d4bbb7f4d94493",
+        "hypotheticalOutputBytes": 4931,
+        "allStringAndScalarTokensUnchanged": true
+      },
+      "hypotheticalMergedStructuralValidation": {
+        "status": "passed",
+        "pass": "pass-a",
+        "moves": 40
+      },
+      "attempts": 1,
+      "retries": 0,
+      "controllerAppliedChanges": false
+    },
+    {
+      "pass": "pass-b",
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/output.json",
+        "sha256": "d0af120de7e54a606791bc8d0e2c380cac4659adb7187a19ec99e69ca637f2c1",
+        "bytes": 5350
+      },
+      "preservedRejectedOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/rejected-output-1.json",
+        "sha256": "d0af120de7e54a606791bc8d0e2c380cac4659adb7187a19ec99e69ca637f2c1",
+        "bytes": 5350
+      },
+      "reading": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/authenticated-reading.json",
+        "sha256": "9b0e6508d88288f34f11701e9784b89e2af34ac31b635b0a8cced0cf1d2db786",
+        "bytes": 923047
+      },
+      "structuralProblems": [
+        "pro-einstein-claim-inaccurate: uses ratings/rating instead of dimensions/value and omits assessmentConfidence",
+        "con-court-source-and-deism-limit: uses ratings/rating instead of dimensions/value and omits assessmentConfidence"
+      ],
+      "normalization": {
+        "hypotheticalOnly": true,
+        "saved": false,
+        "fieldMapping": {
+          "ratings": "dimensions",
+          "rating": "value"
+        },
+        "allSuppliedNumericalRatingsAndRationalesUnchanged": true,
+        "confidenceDisposition": "Proposed retention of each existing original primary assessmentConfidence, not a new controller judgment; requires explicit authorization.",
+        "retainedConfidenceLabels": [
+          {
+            "moveId": "pro-einstein-claim-inaccurate",
+            "assessmentConfidence": "medium"
+          },
+          {
+            "moveId": "con-court-source-and-deism-limit",
+            "assessmentConfidence": "medium"
+          }
+        ],
+        "hypotheticalOutputSha256": "9b1fdb65bc1d5baac02b81b3bffd0f7c1ab95ddc2f00f3493031301378a1f592",
+        "hypotheticalOutputBytes": 5424
+      },
+      "hypotheticalMergedStructuralValidation": {
+        "status": "passed",
+        "pass": "pass-b",
+        "moves": 40
+      },
+      "attempts": 1,
+      "retries": 0,
+      "controllerAppliedChanges": false
+    }
+  ],
+  "allReplacementRationalesReadByController": true,
+  "sourceReview": {
+    "passA": "The two move judgments address the presidency correction and bounded court-citation argument; its single reply dimension addresses the actual political-motive challenge. No additional source-target mismatch identified.",
+    "passB": "The core presidency and court-citation judgments now address the source. One responsiveness rationale still invokes unassigned theological and later-response burdens.",
+    "remainingFailure": {
+      "pass": "pass-b",
+      "moveId": "pro-einstein-claim-inaccurate",
+      "field": "dimensions.responsiveness",
+      "suppliedRatingField": "ratings.responsiveness",
+      "verbatimProblem": "It does not fully answer the distinct issue of Einstein's conception of God or Hitchens's uncertainty about motive.",
+      "sourceEvents": {
+        "start": 1160,
+        "end": 1187
+      },
+      "audioCheck": 12,
+      "explanation": "The selected constructive move is a source-specific correction about the presidency sequence and refusal motive. Its responsiveness must be assessed against that defined argument and burden, not reduced for failure to address the separate theological argument or a later response. This is a source-scope failure, not a request to change a grade in a preferred direction.",
+      "minimumAdditionalModelScope": "Only pass B pro-einstein-claim-inaccurate responsiveness value and rationale, in one fresh score-blind bounded attempt; retain every other supplied dimension and all source evidence."
+    }
+  },
+  "proposedMechanicalRecovery": {
+    "approvalRequired": true,
+    "passA": "Remove exactly four stray plus characters; all strings and scalar tokens remain identical.",
+    "passB": "Normalize field names only and retain the existing two original confidence labels; no supplied numerical rating or rationale may change in normalization."
+  },
+  "noFurtherModelAttemptAuthorized": true,
+  "noRepairedOutputSaved": true,
+  "primaryOutputsUnchanged": true,
+  "scorePasses": 0,
+  "adjudicationRun": false,
+  "paidCallsThisTurn": 0,
+  "knownAndMaximumIncurredPaidCostUsd": 1.3086524999999998,
+  "diagnosedAt": "2026-09-12T23:21:17.297Z"
+}

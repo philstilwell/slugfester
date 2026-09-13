@@ -1,0 +1,59 @@
+{
+  "status": "passed-private-production-preview",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "candidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/output.json",
+    "sha256": "a0a97334b94f416b52179fc7a021664d609c4e9801784231a859b5b1dadd9a54",
+    "bytes": 86727
+  },
+  "unmodifiedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "b910ad59010b9b7adc763c3860c6a2c4c03aef484c0b537e9a5467add42e3bc1",
+      "bytes": 133454
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "f957a19dbe70402a9a920ddbdd66d14cada15429b9653a2e78f923c0504c5c32",
+      "bytes": 11759009
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/output.json",
+      "sha256": "a0a97334b94f416b52179fc7a021664d609c4e9801784231a859b5b1dadd9a54",
+      "bytes": 86727
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/score-pass/output.json",
+      "sha256": "5530e559a85e01bf95afa502f1561052ce4ac51f3a07889f95ad30c4474fe8b5",
+      "bytes": 20431
+    }
+  ],
+  "productionRulesUnchanged": true,
+  "realProductionValidatorUsed": true,
+  "onlyPrivatePreviewRegistryAndAdapterWritten": true,
+  "productionSiteDataChanged": false,
+  "officialScorePassesAdded": 0,
+  "temporaryFixturesRemoved": true,
+  "results": [
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --build-adapter --debate 260",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/preview-2/command-1.log",
+        "sha256": "451dbd8a1628e34e455eca5b54fe0122043c91c333ea94387a81d6fe47f1a121",
+        "bytes": 60
+      }
+    },
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "log": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/preview-2/command-2.log",
+        "sha256": "dc0a222b5de91742b03281d3fdd200b6ec8a3b5842f1827f2fad0ed0c0819dc1",
+        "bytes": 23
+      }
+    }
+  ],
+  "error": null
+}

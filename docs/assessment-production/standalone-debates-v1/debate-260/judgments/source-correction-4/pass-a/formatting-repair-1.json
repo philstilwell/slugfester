@@ -1,0 +1,83 @@
+{
+  "status": "passed-authenticated-metadata-only-normalization",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-2/authorization.json",
+    "sha256": "61662f13ccc9ce0d716fb1755762d11a16d79dd172779b1243deefa80fb1198a",
+    "bytes": 1979
+  },
+  "packet": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-4/pass-a/packet.json",
+    "sha256": "779ca4192c808d9f5da509e828b80218bca5055e6113a4cd9eef01e1f426ff5d",
+    "bytes": 10424
+  },
+  "authenticatedReading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-4/pass-a/authenticated-reading.json",
+    "sha256": "9e31121b6973550a708bbf9c51bdfa72e61bd7ab8784e49ca84db261806b1699",
+    "bytes": 930821
+  },
+  "preservedRejectedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-4/pass-a/rejected-output-1.json",
+    "sha256": "7fcfd1571482a61376ea472c45093604259f62bf49c69af2d5f79ab032192cb8",
+    "bytes": 5102
+  },
+  "before": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-4/pass-a/output.json",
+    "sha256": "7fcfd1571482a61376ea472c45093604259f62bf49c69af2d5f79ab032192cb8",
+    "bytes": 5102
+  },
+  "after": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-4/pass-a/output.json",
+    "sha256": "e3630675b65b8a67c91ddac6366657d1efb268ae89a6988f7a45c0b7db8013d8",
+    "bytes": 5105
+  },
+  "originalValidation": {
+    "status": "failed-contract-metadata",
+    "mismatches": [
+      {
+        "field": "protocolId",
+        "before": "assessment-production-.overlay-debate-v1",
+        "after": "assessment-production-standalone-debate-v1",
+        "basis": "Exact authenticated packet outputContract; no assessment content or allowed evidence is changed."
+      },
+      {
+        "field": "inventorySha256",
+        "before": "9b17d989ef771b8b5a7e4e47c822a927f07d91a9fb0a87155cb8b4eb7498281",
+        "after": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+        "basis": "Exact authenticated packet outputContract; no assessment content or allowed evidence is changed."
+      }
+    ]
+  },
+  "changes": [
+    {
+      "field": "protocolId",
+      "before": "assessment-production-.overlay-debate-v1",
+      "after": "assessment-production-standalone-debate-v1",
+      "basis": "Exact authenticated packet outputContract; no assessment content or allowed evidence is changed."
+    },
+    {
+      "field": "inventorySha256",
+      "before": "9b17d989ef771b8b5a7e4e47c822a927f07d91a9fb0a87155cb8b4eb7498281",
+      "after": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+      "basis": "Exact authenticated packet outputContract; no assessment content or allowed evidence is changed."
+    }
+  ],
+  "proof": {
+    "exactlyTwoMetadataLinesChanged": true,
+    "allOtherBytesUnchanged": true,
+    "allAssessmentPairsIdentical": true,
+    "assessmentPairsSha256": "2b62f825ec85debd39e823942cddde1fcf026a65917b20b6db748e69cf10f266",
+    "noNewModelAttempt": true,
+    "noSubstantiveRepair": true
+  },
+  "normalizedContractStatus": "passed",
+  "sourceQualityStatus": "not-accepted-by-this-format-repair",
+  "directIncrementalCostUsd": 0,
+  "controller": {
+    "path": "scripts/tmp-normalize-source-correction-4.mjs",
+    "sha256": "1117da61657e0f273cc651b0860be9416a7b9c0f6402afc09b9ba98c675a36cd",
+    "bytes": 4648
+  },
+  "completedAt": "2026-09-13T00:10:52.914Z"
+}

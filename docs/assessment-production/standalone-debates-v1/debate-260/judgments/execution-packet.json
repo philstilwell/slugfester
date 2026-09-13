@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-12T22:04:06.809Z",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does God exist?",
+  "sides": {
+    "pro": {
+      "speaker": "Shmuley Boteach",
+      "position": "Jewish theism"
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic critique"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/inventory.json",
+      "sha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+      "bytes": 191206
+    },
+    "events": {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/events.json",
+      "sha256": "8177b7bb890d1755591dc561924c3657ddb99f08f4b5477bd347f537d3d80e16",
+      "bytes": 261337
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/transcript.txt",
+      "sha256": "093d3b31b7fd04653d2b63a3ab7e56a1885b1db3f5e8d43b53b188edb4e3eba6",
+      "bytes": 109996
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "indexedSource": {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+      "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+      "bytes": 349406
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/audio/audio-verification.json",
+      "sha256": "e0b7a9f1da4f55f9d69083a263ea3e3178d484b2efa736caa7ff0d946caa3e1e",
+      "bytes": 356004
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  },
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/reading-manifest.json",
+    "sha256": "4c337b7b2eac5988d055186be862900202ca4cfbad2760716299ddde49ed8750",
+    "bytes": 54394
+  },
+  "readingProtocol": [
+    "Before authoring any ratings or output, read this entire packet, the entire reading manifest, all metadata and every source/inventory/audio page, plus the complete workflow and rubric. Use one page per tool result with sufficient output budget. Recover any missing or truncated page before decisions. Page completeness is independently audited against public tool outputs.",
+    "Do not read other debates or any other judgment. Do not calculate move, section or overall scores, winners or rankings. Do not use paid tools, network resources, external models or child agents. The schema validator and its imported scoring-code dependency are permitted only for read-only validation after authoring, not for calculating scores.",
+    "Assess source performance rather than worldview truth. Preserve exactly the authorized motion and critical burdens. Boteach defends a creator and supreme moral authority while explicitly accepting guided evolutionary development. Do not portray him as rejecting all evolution. Hitchens distinguishes the absence of evidence for a first cause from his stronger criticism of an interventionist God; he also advances distinct claims about religion's moral effects. Neither speaker's historical or scientific assertions become independently verified facts merely by appearing in the captions. The moderator's requests to define God are facilitative, not a third competing position.",
+    "Apply completed audio notes and their quotation restrictions. Ambiguous nonmaterial repeated words are not separate evidence. Never deduct for a caption or transcription artifact. Moderator prompts are not participant arguments.",
+    "Author each dimension rationale independently about the actual move’s inference, evidence, responsiveness, relevance, precision or calibration. Generic grade descriptions glued to inventory text are not acceptable. Code may validate independently authored data, never create reasons from repeated templates.",
+    "Write the complete final JSON directly once with apply_patch to the assigned pass output. No empty placeholder, no overwrite, no automatic repair or retry. If validation fails, preserve the exact output and report the error.",
+    "The output has top-level schemaVersion, protocolId, status, pass, debateNumber, debateId, reviewerRole, assessmentModel, reasoningEffort, inventorySha256, isolation, judgments, burdenCompletionAdjustment and audit. Copy the fixed identity values from this packet. isolation includes all required boundary booleans and contaminationDetected false. judgments follows locked inventory order, one item per move, each with moveId, assessmentConfidence, and the six dimensions {value,rationale}. burdenCompletionAdjustment contains pro and con, each exactly {value,rationale,eligibility}. Eligibility contains the nine named keys from the output contract. Include all required audit booleans as true only when actually satisfied."
+  ],
+  "outputRoles": [
+    "pass-a",
+    "pass-b"
+  ],
+  "extraAllowedOutput": false
+}

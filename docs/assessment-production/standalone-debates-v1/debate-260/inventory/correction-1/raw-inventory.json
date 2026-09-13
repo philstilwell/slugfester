@@ -1,0 +1,505 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "assessmentModel": "5.6 Sol",
+  "motion": "Does God exist?",
+  "assessedDebateWindowMs": {"start": 231440, "end": 5630440},
+  "routes": [
+    {
+      "side": "pro",
+      "speaker": "Shmuley Boteach",
+      "position": "Jewish theism",
+      "bridges": [
+        {"bridgeId": "pro-motion-creator", "tier": "motion", "burden": "Establish that God exists as creator, source of life, and personal supreme moral authority.", "successCriterion": "Provide affirmative reason to infer a creator and morally authoritative personal God rather than unguided nature alone."},
+        {"bridgeId": "pro-design-order", "tier": "central", "burden": "Show that cosmic and biological order are better explained by guidance or design.", "successCriterion": "Identify source-specific complexity or life-permitting order that unguided processes are argued not plausibly to produce."},
+        {"bridgeId": "pro-guided-evolution", "tier": "central", "burden": "Reconcile evolutionary development with divine guidance and challenge an exclusively unguided mechanism.", "successCriterion": "Clarify acceptance of development while giving reasons that mutation, selection, and the fossil record require guidance."},
+        {"bridgeId": "pro-moral-ground", "tier": "central", "burden": "Ground equal human worth and binding moral duties in God rather than mutable human preference.", "successCriterion": "Explain why divine authority supplies an objective and durable basis for dignity, charity, and prohibitions on murder."},
+        {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "burden": "Defend the relevant Jewish teachings and practices from critiques used against theistic credibility.", "successCriterion": "Correct or contextualize the challenged doctrines, texts, practices, and historical claims with identifiable reasons."}
+      ]
+    },
+    {
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic critique",
+      "bridges": [
+        {"bridgeId": "con-motion-no-evidence", "tier": "motion", "burden": "Maintain that the evidence does not warrant belief that God exists.", "successCriterion": "Show that observed reality works without the God hypothesis and that affirmative theistic evidence is absent or circular."},
+        {"bridgeId": "con-natural-explanation", "tier": "central", "burden": "Explain cosmic, biological, and moral phenomena through natural processes without divine guidance.", "successCriterion": "Give testable natural accounts that undercut design or supernatural inference."},
+        {"bridgeId": "con-deism-theism-gap", "tier": "central", "burden": "Distinguish an unproved first cause from the interventionist personal God defended in the debate.", "successCriterion": "Show that even possible deism supplies no evidence for prayer, revelation, supervision, or religious commands."},
+        {"bridgeId": "con-moral-autonomy", "tier": "central", "burden": "Show that human morality does not require God and that religion can license wrongdoing.", "successCriterion": "Identify moral capacities available to nonbelievers and religiously motivated harms unavailable as evidence for divine moral authority."},
+        {"bridgeId": "con-religion-critique", "tier": "subsidiary", "burden": "Challenge religious texts, practices, and exceptionalist claims invoked as evidence of God's goodness or revelation.", "successCriterion": "Give source-specific counterexamples or inconsistencies that weaken the claimed moral and epistemic authority of religion."}
+      ]
+    }
+  ],
+  "sections": [
+    {"sectionId": "existence-and-explanation", "title": "Existence and explanatory burden", "weightPercent": 18, "weightRationale": "The motion directly turns on who bears the evidential burden and whether a creator adds explanatory power."},
+    {"sectionId": "cosmos-and-design", "title": "Cosmos, life, and design", "weightPercent": 14, "weightRationale": "Both speakers use habitability, extinction, fine-tuning, and biological complexity to contest design."},
+    {"sectionId": "evolution-and-guidance", "title": "Evolution and divine guidance", "weightPercent": 18, "weightRationale": "A sustained exchange tests Boteach's expressly guided evolutionary view against Hitchens's naturalistic account."},
+    {"sectionId": "morality-and-human-worth", "title": "Morality and human worth", "weightPercent": 18, "weightRationale": "The debate repeatedly asks whether objective duties, dignity, charity, and hope depend on God."},
+    {"sectionId": "scripture-and-practice", "title": "Scripture, ritual, and harm", "weightPercent": 12, "weightRationale": "Concrete disputes about Torah, circumcision, Hanukkah, and scriptural violence bear on religious authority."},
+    {"sectionId": "historical-accuracy", "title": "Historical and factual credibility", "weightPercent": 9, "weightRationale": "The speakers directly contest factual portrayals of Einstein, Jewish law, and Israeli legal history."},
+    {"sectionId": "god-covenant-and-chosenness", "title": "God, covenant, and chosenness", "weightPercent": 11, "weightRationale": "The closing exchange defines Boteach's God and tests whether covenant and chosenness imply mission or favoritism."}
+  ],
+  "moves": [
+    {
+      "moveId": "con-burden-little-evidence", "sectionId": "existence-and-explanation", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 72, "endEvent": 95},
+      "quoteEligibleExactSpans": ["the burden of proof is not with me", "little evidence for such a horrible proposition"],
+      "claimSummary": "The affirmative bears the burden, and the proposition of a supreme creator has little evidence.", "reasonSummary": "Hitchens distinguishes his broader moral critique from the immediate motion and says falsity itself contributes to the belief's harmfulness.",
+      "inferenceSummary": {"premise": "A creator claim is an affirmative proposition for which little evidence has been furnished.", "inference": "Unsupported affirmative claims should not shift the burden to the skeptic.", "conclusion": "Belief in the proposed supreme being is unwarranted."},
+      "burdenContact": {"bridgeId": "con-motion-no-evidence", "tier": "motion", "rationale": "This expressly assigns and answers the motion's burden of proof."}, "importance": 3, "importanceRationale": "It frames the evidential standard governing every later existence claim.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This begins Hitchens's introduced opening statement and is continuous first-person speech.", "materialWordingConfidence": "high", "materialWordingRationale": "The burden and lack-of-evidence sentences are clear despite nearby filler." 
+    },
+    {
+      "moveId": "con-religion-early-pattern-story", "sectionId": "existence-and-explanation", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 97, "endEvent": 179},
+      "quoteEligibleExactSpans": ["we prefer junk explanation to no explanation at all", "Just go one god more"],
+      "claimSummary": "Religion is an early pattern-seeking explanation whose priority, not evidential success, explains its persistence.", "reasonSummary": "Humans prefer an explanation or conspiracy theory to none; obsolete cosmologies and thousands of abandoned gods show that inherited divine explanations are routinely discarded.",
+      "inferenceSummary": {"premise": "Human pattern-seeking generated many mutually abandoned gods before scientific knowledge.", "inference": "An explanation's antiquity and psychological appeal do not establish its truth.", "conclusion": "Current monotheism should be treated like the many earlier rejected divine explanations."},
+      "burdenContact": {"bridgeId": "con-natural-explanation", "tier": "central", "rationale": "It offers a natural psychological and historical account of religious belief."}, "importance": 2, "importanceRationale": "It supplies an alternative explanation for belief rather than merely denying God.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "The uninterrupted opening remains Hitchens's speech throughout this span.", "materialWordingConfidence": "high", "materialWordingRationale": "The pattern-seeking thesis and abandoned-gods comparison are intelligible in the captions.", "spanLengthRationale": "The long span is needed to connect the psychological account, obsolete cosmology, and abandoned-gods consistency test as one developed argument."
+    },
+    {
+      "moveId": "con-universe-needs-no-assumption", "sectionId": "existence-and-explanation", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 182, "endEvent": 208},
+      "quoteEligibleExactSpans": ["it works very well, your highness, without that assumption", "nothing remaining to be explained"],
+      "claimSummary": "Nothing observed requires a supreme being, creator, or first cause as its unique explanation.", "reasonSummary": "Using the Laplace anecdote, Hitchens argues that the cosmos and human life operate as expected if no such entity exists.",
+      "inferenceSummary": {"premise": "Available scientific and reflective explanations operate without assuming God.", "inference": "An idle hypothesis with no uniquely explained remainder gains no evidential support.", "conclusion": "The world provides no need to posit a creator."},
+      "burdenContact": {"bridgeId": "con-motion-no-evidence", "tier": "motion", "rationale": "This is Hitchens's central direct reason for unbelief on the motion."}, "importance": 3, "importanceRationale": "It states the core explanatory-redundancy case against God's existence.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Hitchens opening with no speaker transition.", "materialWordingConfidence": "high", "materialWordingRationale": "The operative conclusion is explicit and clearly captioned."
+    },
+    {
+      "moveId": "con-first-cause-regress-gap", "sectionId": "existence-and-explanation", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 346, "endEvent": 375},
+      "quoteEligibleExactSpans": ["who created the god who made the creator", "The deist has all their work still ahead"],
+      "claimSummary": "A creator produces an infinite regress, and even deism leaves the personal theist's case unproved.", "reasonSummary": "A starter itself invites the question of what started it, while a prayer-answering, intervening lawgiver is a much stronger claim than an imponderable first cause.",
+      "inferenceSummary": {"premise": "Positing a designer does not answer who designed it, and a first cause does not entail intervention.", "inference": "The creator hypothesis neither terminates explanation nor establishes the attributes of theism.", "conclusion": "The defended personal God has not been established by first-cause reasoning."},
+      "burdenContact": {"bridgeId": "con-deism-theism-gap", "tier": "central", "rationale": "The passage explicitly separates deism from the interventionist theism at issue."}, "importance": 3, "importanceRationale": "It attacks both the creator inference and the later move from creator to religious God.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "This is still Hitchens's uninterrupted opening statement.", "materialWordingConfidence": "high", "materialWordingRationale": "The regress questions and deist/theist distinction are clear notwithstanding one self-correction."
+    },
+    {
+      "moveId": "con-cosmos-hostile-not-designed", "sectionId": "cosmos-and-design", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 243, "endEvent": 296},
+      "quoteEligibleExactSpans": ["the rate is going up", "Some design, huh"],
+      "claimSummary": "Cosmic expansion, eventual observational emptiness, collision, and solar destruction do not resemble benevolent design.", "reasonSummary": "Hitchens describes accelerating expansion, the loss of Big Bang traces, Andromeda's collision course, and the sun's destructive future as programmed nothingness.",
+      "inferenceSummary": {"premise": "Large-scale cosmic processes erase evidence and ultimately destroy the conditions for life.", "inference": "Such indifferent destructive structure is unexpected on a human-centered design hypothesis.", "conclusion": "Cosmology does not support a providential designer."},
+      "burdenContact": {"bridgeId": "con-natural-explanation", "tier": "central", "rationale": "Natural cosmic dynamics are used to rebut an inference from the universe to design."}, "importance": 2, "importanceRationale": "It directly anticipates the affirmative's later fine-tuning appeal.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens remains the sole opening speaker.", "materialWordingConfidence": "medium", "materialWordingRationale": "The cosmic thesis is clear, but several captions garble names and numerical phrasing without altering the selected claim.", "spanLengthRationale": "The full sequence is required because the argument accumulates distinct cosmic processes into one anti-design inference."
+    },
+    {
+      "moveId": "con-life-precarious-and-imperfect", "sectionId": "cosmos-and-design", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 300, "endEvent": 338},
+      "quoteEligibleExactSpans": ["Every other rock in our solar system is completely inhospitable", "We're not the finest primates that could have evolved"],
+      "claimSummary": "Earthly life is precarious and humans bear marks of imperfect evolution, contrary to flattering design claims.", "reasonSummary": "Other solar-system bodies are inhospitable, Earth sits near climatic catastrophe, most species vanished, and human anatomy retains maladaptive features.",
+      "inferenceSummary": {"premise": "Life occupies a narrow fragile niche and human bodies exhibit evolutionary limitations.", "inference": "Precarity and imperfection fit unguided natural history better than privileged optimal design.", "conclusion": "The anthropic appeal does not warrant a designer."},
+      "burdenContact": {"bridgeId": "con-natural-explanation", "tier": "central", "rationale": "The cited biological and planetary features support an evolutionary rather than design explanation."}, "importance": 3, "importanceRationale": "It is the opening's most detailed empirical answer to human-centered design.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "The opening speaker is unambiguous.", "materialWordingConfidence": "high", "materialWordingRationale": "The habitability, extinction, and anatomical claims are clearly expressed."
+    },
+    {
+      "moveId": "con-delayed-intervention-history", "sectionId": "scripture-and-practice", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "constructive", "sourceSpan": {"startEvent": 406, "endEvent": 456},
+      "quoteEligibleExactSpans": ["heaven watches with folded arms", "around 4,000 years ago decides"],
+      "claimSummary": "Interventionist theism implausibly says heaven ignored immense prehistoric suffering before revealing itself locally and late.", "reasonSummary": "For most of human existence, mortality, disease, disaster, and conflict prevailed; revelation allegedly began only in the Bronze Age and spread slowly beyond it.",
+      "inferenceSummary": {"premise": "A caring God allegedly delayed intervention through nearly all early human suffering and then chose a narrow ancient setting.", "inference": "That timing and method are inconsistent with universal providential concern.", "conclusion": "The interventionist revelation story is implausible."},
+      "burdenContact": {"bridgeId": "con-religion-critique", "tier": "subsidiary", "rationale": "The history of alleged revelation is used against the credibility of interventionist religion."}, "importance": 3, "importanceRationale": "This is a major direct argument against the personal God rather than only generic deism.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens's opening remains uninterrupted.", "materialWordingConfidence": "high", "materialWordingRationale": "The chronological contrast and conclusion are clear.", "spanLengthRationale": "The suffering inventory and the late-local-intervention claim jointly form the complete argument and cannot be reduced to one isolated sentence."
+    },
+    {
+      "moveId": "pro-transcendence-conscious-choice", "sectionId": "morality-and-human-worth", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 482, "endEvent": 568},
+      "quoteEligibleExactSpans": ["born with a spiritual capacity to transcend instinct", "in that 2% lies human consciousness"],
+      "claimSummary": "A reductive primate picture omits consciousness, conscience, freedom, and the human capacity to transcend instinct.", "reasonSummary": "Boteach contrasts Hitchens's allegedly bleak reductionism with religion's view that humans can choose goodness; genetic similarity does not erase morally decisive differences.",
+      "inferenceSummary": {"premise": "Humans possess conscious moral choice and can act against immediate animal impulse.", "inference": "These capacities are not adequately captured by describing humans only as evolved primates.", "conclusion": "A spiritual account of human dignity and transcendence remains warranted."},
+      "burdenContact": {"bridgeId": "pro-moral-ground", "tier": "central", "rationale": "The move connects spiritual nature to conscience, choice, and human worth."}, "importance": 2, "importanceRationale": "It establishes the affirmative anthropology underlying later moral arguments.", "respondsToIds": ["con-life-precarious-and-imperfect"],
+      "responseComponents": [{"targetMoveId": "con-life-precarious-and-imperfect", "component": "conclusion", "description": "Rejects the inference from evolutionary kinship and bodily imperfection to a merely animal account of humanity."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach has just been introduced for his opening and speaks continuously.", "materialWordingConfidence": "medium", "materialWordingRationale": "The consciousness and transcendence claims are clear, while some quoted descriptions and names are caption-noisy.", "spanLengthRationale": "The passage develops one contrast from the alleged reductionist view through the affirmative account of consciousness, conscience, and choice."
+    },
+    {
+      "moveId": "pro-torah-compassion-circumcision-benefit", "sectionId": "scripture-and-practice", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 575, "endEvent": 604},
+      "quoteEligibleExactSpans": ["You must love your fellow man as yourself", "reduce a man's risk of contracting AIDS by 50%"],
+      "claimSummary": "Claims that Torah lacks compassion and that circumcision is sheer barbarism ignore contrary textual and medical evidence.", "reasonSummary": "Boteach cites Leviticus's command to love one's fellow and reports evidence that circumcision can materially reduce HIV transmission risk.",
+      "inferenceSummary": {"premise": "Torah explicitly commands fellow-love, and circumcision has a reported protective medical effect.", "inference": "A practice or text cannot fairly be dismissed by omitting directly relevant counterevidence.", "conclusion": "These examples do not sustain Hitchens's blanket portrayal of Jewish cruelty."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "It defends a Jewish text and ritual from specific factual and moral criticisms."}, "importance": 2, "importanceRationale": "The examples directly contest the evidential reliability of the religious critique.", "respondsToIds": ["con-delayed-intervention-history"],
+      "responseComponents": [{"targetMoveId": "con-delayed-intervention-history", "component": "conclusion", "description": "Offers concrete compassionate teaching and claimed benefit against the broader portrayal of interventionist religion as malign."}],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Boteach opening statement.", "materialWordingConfidence": "high", "materialWordingRationale": "The cited command and risk-reduction claim are plainly captioned."
+    },
+    {
+      "moveId": "pro-hanukkah-resisted-tyranny", "sectionId": "scripture-and-practice", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 606, "endEvent": 646},
+      "quoteEligibleExactSpans": ["put Jerusalem's inhabitants to death in the most cruel way", "standing up against their own brutal oppressors"],
+      "claimSummary": "Hanukkah commemorates resistance to a brutal oppressor, not a rejection of enlightenment or science.", "reasonSummary": "Boteach describes Antiochus IV as condemned even by his own people and recounts torture and forced desecration, comparing resistance to opposition to Saddam Hussein.",
+      "inferenceSummary": {"premise": "The resisted ruler violently persecuted Jews and imposed sacrilege by force.", "inference": "Resistance to coercive tyranny is not equivalent to rejecting knowledge or humane Hellenism.", "conclusion": "Hitchens's moral characterization of Hanukkah is mistaken."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "The move supplies historical context for a challenged Jewish observance."}, "importance": 2, "importanceRationale": "It is a developed reply to a concrete example used in the critique of religion.", "respondsToIds": ["con-delayed-intervention-history"],
+      "responseComponents": [{"targetMoveId": "con-delayed-intervention-history", "component": "premise", "description": "Counters the portrayal of ancient Jewish religion as simply benighted by highlighting resistance to coercive violence."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach remains the uninterrupted speaker.", "materialWordingConfidence": "medium", "materialWordingRationale": "The persecution argument is clear, though names and some quoted historical wording are misspelled by captions."
+    },
+    {
+      "moveId": "pro-secular-eugenics-risk", "sectionId": "morality-and-human-worth", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "constructive", "sourceSpan": {"startEvent": 647, "endEvent": 706},
+      "quoteEligibleExactSpans": ["good and evil should have a scientific evolutionary connotation", "sterilize the mentally handicapped"],
+      "claimSummary": "Detaching moral worth from divine sanctity permits eugenic judgments about who is useful enough to live.", "reasonSummary": "Boteach cites ancient exposure, proposed delayed recognition of birth, age-based death, species-centered ethics, and historic forced sterilization as examples.",
+      "inferenceSummary": {"premise": "Prominent secular or scientific figures have proposed eliminating people judged defective or socially burdensome.", "inference": "Utility or fitness alone does not secure equal and inviolable human worth.", "conclusion": "A stronger moral ground than evolutionary utility is needed."},
+      "burdenContact": {"bridgeId": "pro-moral-ground", "tier": "central", "rationale": "The move argues that divine sanctity protects persons from fitness-based valuation."}, "importance": 2, "importanceRationale": "It introduces the central affirmative concern about objective protection for vulnerable people.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Boteach opening.", "materialWordingConfidence": "medium", "materialWordingRationale": "The ethical examples are intelligible, but captions garble several names and technical terms.", "spanLengthRationale": "The argument is cumulative: several historical and contemporary examples establish the claimed danger of fitness-based valuation."
+    },
+    {
+      "moveId": "pro-divine-law-against-murder", "sectionId": "morality-and-human-worth", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "constructive", "sourceSpan": {"startEvent": 711, "endEvent": 788},
+      "quoteEligibleExactSpans": ["Charity is a religious concept, pure and simple", "do not murder is God's law"],
+      "claimSummary": "Divine law makes prohibitions such as murder unconditional, whereas human law and survival-of-the-fittest reasoning remain manipulable.", "reasonSummary": "Boteach links social Darwinist rhetoric to atrocities and contrasts regimes with nominal human laws against the immutable authority he assigns to the Ten Commandments.",
+      "inferenceSummary": {"premise": "Human legal systems have authorized mass killing, while divine command presents murder as never permissible.", "inference": "A prohibition above political revision offers firmer moral restraint than mutable law or fitness.", "conclusion": "God is needed as supreme moral authority protecting life."},
+      "burdenContact": {"bridgeId": "pro-moral-ground", "tier": "central", "rationale": "This expressly grounds an absolute duty not to murder in God's law."}, "importance": 3, "importanceRationale": "It is Boteach's principal affirmative bridge from morality to God.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "The single-speaker opening context is clear.", "materialWordingConfidence": "medium", "materialWordingRationale": "The divine-law inference is clear; several attributed quotations and historical labels are caption-uncertain.", "spanLengthRationale": "The long span connects survival-of-the-fittest examples, genocide under human law, and the contrasting divine prohibition into one argument."
+    },
+    {
+      "moveId": "pro-world-testifies-creator", "sectionId": "existence-and-explanation", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 791, "endEvent": 795},
+      "quoteEligibleExactSpans": ["the entire world testifies to God", "the house to the builder"],
+      "claimSummary": "The world's organized character testifies to a creator as an artifact testifies to its maker.", "reasonSummary": "Boteach invokes an artifact analogy: garment, door, and house point to intelligent producers, and the world likewise points beyond itself.",
+      "inferenceSummary": {"premise": "Ordered artifacts ordinarily indicate makers, and the world exhibits comparable order.", "inference": "The maker inference extends from artifacts to the organized world.", "conclusion": "The world provides affirmative evidence for God the creator."},
+      "burdenContact": {"bridgeId": "pro-motion-creator", "tier": "motion", "rationale": "This is an explicit affirmative inference to God the creator."}, "importance": 3, "importanceRationale": "It is the clearest compact affirmative answer to the existence motion.", "respondsToIds": ["con-universe-needs-no-assumption"],
+      "responseComponents": [{"targetMoveId": "con-universe-needs-no-assumption", "component": "premise", "description": "Denies that nothing in the world points beyond itself by treating order as evidence of a maker."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach's opening continues without interruption.", "materialWordingConfidence": "high", "materialWordingRationale": "The artifact analogy and creator conclusion are explicit."
+    },
+    {
+      "moveId": "pro-earth-fine-tuning", "sectionId": "cosmos-and-design", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 800, "endEvent": 829},
+      "quoteEligibleExactSpans": ["If the atmosphere were thinner", "water miraculously expands"],
+      "claimSummary": "Multiple narrow physical conditions make terrestrial life possible and together indicate design.", "reasonSummary": "Boteach lists solar distance, axial tilt, rotation, lunar distance, ocean depth, atmosphere, and water's expansion as interlocking life-permitting conditions.",
+      "inferenceSummary": {"premise": "Many physical parameters would allegedly preclude life if modestly different.", "inference": "Their coordinated life-permitting values are unlikely to be mere accident.", "conclusion": "Earth's conditions support an intelligent designer."},
+      "burdenContact": {"bridgeId": "pro-design-order", "tier": "central", "rationale": "The enumerated conditions are offered as affirmative evidence of life-oriented design."}, "importance": 3, "importanceRationale": "This is the affirmative's primary cosmic fine-tuning case.", "respondsToIds": ["con-cosmos-hostile-not-designed", "con-life-precarious-and-imperfect"],
+      "responseComponents": [
+        {"targetMoveId": "con-cosmos-hostile-not-designed", "component": "conclusion", "description": "Answers cosmic hostility by emphasizing the coordinated local conditions that permit life."},
+        {"targetMoveId": "con-life-precarious-and-imperfect", "component": "inference", "description": "Recasts narrow habitability from evidence against design into evidence for precise design."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Boteach opening.", "materialWordingConfidence": "medium", "materialWordingRationale": "The parameter list is clear, though at least one numerical water-expansion caption is malformed."
+    },
+    {
+      "moveId": "pro-morality-and-organic-complexity", "sectionId": "cosmos-and-design", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "constructive", "sourceSpan": {"startEvent": 830, "endEvent": 881},
+      "quoteEligibleExactSpans": ["The moral sense is an innate part of being human", "this phenomenal complexity came about through genetic mutation"],
+      "claimSummary": "Innate moral universals and the immense coordinated complexity of a developing child call for more than unguided mutation and selection.", "reasonSummary": "Boteach cites universal moral concepts and detailed sensory-neural organization, then questions whether such complexity could arise spontaneously.",
+      "inferenceSummary": {"premise": "Humans display innate moral capacities and extraordinarily coordinated biological systems.", "inference": "These features are argued to exceed what self-interested selection and spontaneous mutation plausibly explain.", "conclusion": "Human nature and complexity support design."},
+      "burdenContact": {"bridgeId": "pro-design-order", "tier": "central", "rationale": "The biological coordination is explicitly offered as evidence for a designer."}, "importance": 2, "importanceRationale": "It extends fine-tuning from planetary conditions to moral and biological organization.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "Boteach remains the introduced speaker through the applause.", "materialWordingConfidence": "medium", "materialWordingRationale": "The general complexity case is clear, though several quantities and anatomical phrases may be imperfectly captioned.", "spanLengthRationale": "The moral-universal premise and several coordinated sensory examples build the single cumulative claim that human complexity is not spontaneous."
+    },
+    {
+      "moveId": "con-evolution-tested-and-evidenced", "sectionId": "evolution-and-guidance", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 883, "endEvent": 953},
+      "quoteEligibleExactSpans": ["a theory which if tested always works", "common ancestry between other primates and ourselves"],
+      "claimSummary": "Evolution by natural selection is repeatedly testable, practically useful, and supported by genetics and convergent eye evolution.", "reasonSummary": "Hitchens cites influenza genome sequencing, common ancestry, bacterial origins, multiple evolutionary routes to eyes, and clarifies that evolution does not claim descent from present monkeys.",
+      "inferenceSummary": {"premise": "Evolution generates successful tests, applications, genetic relations, and repeated biological explanations.", "inference": "A theory with this record is evidence-based rather than a faith commitment.", "conclusion": "Natural selection adequately explains biological development without divine guidance."},
+      "burdenContact": {"bridgeId": "con-natural-explanation", "tier": "central", "rationale": "It directly defends the natural mechanism challenged by the affirmative."}, "importance": 3, "importanceRationale": "It is Hitchens's foundational evidential reply on evolution.", "respondsToIds": ["pro-morality-and-organic-complexity"],
+      "responseComponents": [{"targetMoveId": "pro-morality-and-organic-complexity", "component": "inference", "description": "Supplies tested evolutionary pathways and genetic evidence against the inference that complexity requires design."}],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens begins his formally scheduled rebuttal and speaks continuously.", "materialWordingConfidence": "medium", "materialWordingRationale": "The evidence claims are clear although several proper names and a phrase about bacterial ancestry are caption-noisy.", "spanLengthRationale": "The complete answer combines testability, practical prediction, ancestry, eye evolution, and clarification of common descent."
+    },
+    {
+      "moveId": "con-scriptural-violence-and-hell", "sectionId": "scripture-and-practice", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 967, "endEvent": 989},
+      "quoteEligibleExactSpans": ["what happened to the Amalachites", "There's no hell in the Old Testament"],
+      "claimSummary": "The Hebrew scriptures enjoin genocide, while Christianity adds eternal punishment, undermining claims of uniquely compassionate revelation.", "reasonSummary": "Hitchens points to commands concerning Amalekites and Midianites and contrasts the absence of postmortem torture in the Old Testament with Christian hell.",
+      "inferenceSummary": {"premise": "Religious texts attribute mass killing and later eternal punishment to divine authority.", "inference": "Commands and doctrines of that kind conflict with the claimed supreme moral goodness of revelation.", "conclusion": "Scriptural tradition is evidence against, not for, a morally perfect God."},
+      "burdenContact": {"bridgeId": "con-religion-critique", "tier": "subsidiary", "rationale": "It attacks the moral authority of the specific revelations invoked by the affirmative."}, "importance": 3, "importanceRationale": "The move supplies direct textual counterexamples to divine-law morality.", "respondsToIds": ["pro-torah-compassion-circumcision-benefit", "pro-divine-law-against-murder"],
+      "responseComponents": [
+        {"targetMoveId": "pro-torah-compassion-circumcision-benefit", "component": "conclusion", "description": "Counters a compassionate Torah portrait with alleged commands of extermination."},
+        {"targetMoveId": "pro-divine-law-against-murder", "component": "premise", "description": "Challenges the claim of an exceptionless divine prohibition by citing scriptural divine commands to kill."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Hitchens rebuttal.", "materialWordingConfidence": "high", "materialWordingRationale": "The genocide challenge and Old Testament/hell distinction are explicit."
+    },
+    {
+      "moveId": "con-secular-civil-rights", "sectionId": "morality-and-human-worth", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 990, "endEvent": 1048},
+      "quoteEligibleExactSpans": ["we don't need religious permission for that", "the secular left long before Dr. King started preaching"],
+      "claimSummary": "Civil-rights morality did not originate in religion, and saint-making obscures secular organizers and licenses religious demagogues.", "reasonSummary": "Hitchens credits secular socialist and labor organizers with the March on Washington and says the equality case preceded King's preaching; he also defends criticism of unelected religious leaders.",
+      "inferenceSummary": {"premise": "Secular activists articulated and organized for equal rights independently of religious authorization.", "inference": "A moral achievement available through secular reason cannot demonstrate that morality depends on God.", "conclusion": "Religious belief is unnecessary for solidarity and equal rights."},
+      "burdenContact": {"bridgeId": "con-moral-autonomy", "tier": "central", "rationale": "The move provides a concrete secular genealogy for a major moral advance."}, "importance": 2, "importanceRationale": "It directly answers the appeal to religious heroes and charity.", "respondsToIds": ["pro-secular-eugenics-risk", "pro-divine-law-against-murder"],
+      "responseComponents": [
+        {"targetMoveId": "pro-secular-eugenics-risk", "component": "inference", "description": "Offers secular egalitarian organizing against the idea that nonreligious thought trends toward eugenics."},
+        {"targetMoveId": "pro-divine-law-against-murder", "component": "conclusion", "description": "Argues that equality and solidarity require no religious permission."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens remains the sole rebuttal speaker.", "materialWordingConfidence": "medium", "materialWordingRationale": "The secular-organizing thesis is clear, while several names and Tibetan place terms are garbled.", "spanLengthRationale": "The span is needed to explain both the erased secular organizers and the consequence of treating religious figures as exclusive moral representatives."
+    },
+    {
+      "moveId": "con-circumcision-requires-consent", "sectionId": "scripture-and-practice", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1054, "endEvent": 1080},
+      "quoteEligibleExactSpans": ["let it be decided by the grown-up", "without their consent"],
+      "claimSummary": "Possible health benefits do not justify irreversible genital cutting of a nonconsenting child.", "reasonSummary": "Hitchens accepts that benefits concerning HIV or cervical cancer may exist but says the adult should decide; religion turns an otherwise unchosen act into covenantal obligation.",
+      "inferenceSummary": {"premise": "The procedure is irreversible, affects a child's genitals, and can be chosen later by an informed adult.", "inference": "Potential benefit does not defeat the child's claim to bodily consent.", "conclusion": "Religiously mandated infant circumcision is immoral."},
+      "burdenContact": {"bridgeId": "con-religion-critique", "tier": "subsidiary", "rationale": "The concrete ritual is presented as a harm licensed specifically by covenantal belief."}, "importance": 2, "importanceRationale": "It directly engages and narrows the affirmative's medical defense rather than ignoring it.", "respondsToIds": ["pro-torah-compassion-circumcision-benefit"],
+      "responseComponents": [{"targetMoveId": "pro-torah-compassion-circumcision-benefit", "component": "inference", "description": "Concedes possible benefit but denies that benefit authorizes performing the procedure before consent."}],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Hitchens rebuttal with first-person address to Boteach.", "materialWordingConfidence": "high", "materialWordingRationale": "The adult-choice and consent standard are unmistakable."
+    },
+    {
+      "moveId": "con-hanukkah-rejects-secular-humanism", "sectionId": "scripture-and-practice", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1083, "endEvent": 1116},
+      "quoteEligibleExactSpans": ["the world was made of atoms", "turn away from the unbelievable scholarship"],
+      "claimSummary": "The relevant Hanukkah conflict includes rejection of Epicurean secularism and humanism, not merely resistance to a tyrant.", "reasonSummary": "Hitchens distinguishes Zeus worship from Epicurus and Lucretius, whom he credits with atomism and noninterventionist gods, contrasting their scholarship with the candle miracle.",
+      "inferenceSummary": {"premise": "Jewish orthodoxy opposed the Epicurean unbeliever and privileged a miracle story over secular Hellenistic inquiry.", "inference": "Tyranny does not exhaust what was resisted in the historical-religious conflict.", "conclusion": "Hanukkah can still represent religious resistance to intellectual emancipation."},
+      "burdenContact": {"bridgeId": "con-religion-critique", "tier": "subsidiary", "rationale": "It refines the historical example used to question religious epistemic authority."}, "importance": 2, "importanceRationale": "It answers Boteach's strongest contextual defense of Hanukkah on its own terms.", "respondsToIds": ["pro-hanukkah-resisted-tyranny"],
+      "responseComponents": [{"targetMoveId": "pro-hanukkah-resisted-tyranny", "component": "premise", "description": "Distinguishes opposition to tyranny from the additional religious rejection of Epicurean unbelief."}],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens is still the scheduled rebuttal speaker.", "materialWordingConfidence": "medium", "materialWordingRationale": "The Epicurean contrast is clear but the captions misspell both philosophers and some religious terminology."
+    },
+    {
+      "moveId": "con-atheism-necessary-not-sufficient", "sectionId": "morality-and-human-worth", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1120, "endEvent": 1131},
+      "quoteEligibleExactSpans": ["not a sufficient condition for wisdom", "it is a necessary one"],
+      "claimSummary": "Atheism does not guarantee wisdom or goodness, but rejecting the supernatural is necessary for enlightenment.", "reasonSummary": "Hitchens explicitly concedes that atheists can be genocidal, fascist, Stalinist, nihilist, or sadistic, denying any simple equation between unbelief and virtue.",
+      "inferenceSummary": {"premise": "Unbelievers can be profoundly wicked, so atheism alone is insufficient for goodness.", "inference": "Rejecting a false supernatural authority can still be a necessary intellectual condition without being a complete ethic.", "conclusion": "The existence of wicked atheists does not vindicate religious moral authority."},
+      "burdenContact": {"bridgeId": "con-moral-autonomy", "tier": "central", "rationale": "It limits the secular moral claim while preserving independence from supernatural belief."}, "importance": 2, "importanceRationale": "The explicit concession prevents a false symmetry and defines the actual con burden.", "respondsToIds": ["pro-secular-eugenics-risk"],
+      "responseComponents": [{"targetMoveId": "pro-secular-eugenics-risk", "component": "conclusion", "description": "Concedes atheist wickedness while denying that it establishes God or religious moral necessity."}],
+      "attributionConfidence": "high", "attributionRationale": "The rebuttal closes in Hitchens's voice immediately before applause.", "materialWordingConfidence": "medium", "materialWordingRationale": "The sufficient/necessary distinction is clear despite garbled labels in the vice list."
+    },
+    {
+      "moveId": "pro-accepts-guided-evolution", "sectionId": "evolution-and-guidance", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1143, "endEvent": 1159},
+      "quoteEligibleExactSpans": ["I believe in evolutionary development", "The question is whether this is guided"],
+      "claimSummary": "Boteach accepts evolutionary development; the live dispute is whether it is guided.", "reasonSummary": "He says the Torah's ordered creation sequence is compatible with development from mineral through vegetable and animal to intellect, then shifts to guidance and mathematical possibility.",
+      "inferenceSummary": {"premise": "The affirmative accepts developmental succession rather than denying all evolution.", "inference": "Evidence for evolutionary change does not by itself decide whether the process is unguided.", "conclusion": "Hitchens must address guidance rather than treating Boteach as a blanket evolution denier."},
+      "burdenContact": {"bridgeId": "pro-guided-evolution", "tier": "central", "rationale": "This explicitly states the affirmative's qualified evolutionary position and burden."}, "importance": 3, "importanceRationale": "It is essential position clarification required to assess all subsequent evolution exchanges fairly.", "respondsToIds": ["con-evolution-tested-and-evidenced"],
+      "responseComponents": [{"targetMoveId": "con-evolution-tested-and-evidenced", "component": "conclusion", "description": "Accepts development while denying that evidence of evolution alone excludes guidance."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach begins his scheduled rebuttal and identifies his own view.", "materialWordingConfidence": "high", "materialWordingRationale": "The acceptance and guidance distinction is explicit and clear."
+    },
+    {
+      "moveId": "pro-einstein-claim-inaccurate", "sectionId": "historical-accuracy", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "constructive", "sourceSpan": {"startEvent": 1160, "endEvent": 1187},
+      "quoteEligibleExactSpans": ["That is pure utter fabrication", "neither the desire nor the energy to run a country"],
+      "claimSummary": "Hitchens inaccurately attributes Einstein's refusal of Israel's presidency to misgivings about Zionism.", "reasonSummary": "Boteach says it was the second presidency and cites accounts saying Einstein declined for lack of desire, energy, and concern for interference with scientific work while remaining a Zionist.",
+      "inferenceSummary": {"premise": "Available biographical accounts give practical reasons for Einstein's refusal and describe him as supportive of Israel.", "inference": "A contrary motive should not be asserted without adequate support.", "conclusion": "This example weakens Hitchens's factual credibility about religion and Israel."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "It challenges a factual portrayal used in the larger critique of Jewish religion and Israel."}, "importance": 1, "importanceRationale": "It is subsidiary to the motion but becomes a recurring credibility dispute.", "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Boteach rebuttal.", "materialWordingConfidence": "medium", "materialWordingRationale": "The practical-motive contrast is clear, but names and the quoted source label are caption-imperfect."
+    },
+    {
+      "moveId": "pro-mutation-probability-guidance", "sectionId": "evolution-and-guidance", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1194, "endEvent": 1319},
+      "quoteEligibleExactSpans": ["well over 99% are harmful", "evolution needs a guiding parent"],
+      "claimSummary": "Random mutation is too predominantly harmful and combinatorially improbable to explain life's complexity without guidance.", "reasonSummary": "Boteach says evolution needs common beneficial mutations, cites scientists describing most mutations as harmful, presents an immense probability estimate for producing a horse, and rejects time alone as miracle-worker.",
+      "inferenceSummary": {"premise": "Beneficial coordinated mutations are asserted to be extremely rare relative to harmful ones, with available time insufficient for required combinations.", "inference": "An unguided process is mathematically implausible as the sole source of complex life.", "conclusion": "Evolutionary development requires a guiding intelligence."},
+      "burdenContact": {"bridgeId": "pro-guided-evolution", "tier": "central", "rationale": "The probability case is Boteach's main reason for adding guidance to accepted development."}, "importance": 3, "importanceRationale": "This is the most extended affirmative mechanism-level argument for guidance.", "respondsToIds": ["con-evolution-tested-and-evidenced"],
+      "responseComponents": [{"targetMoveId": "con-evolution-tested-and-evidenced", "component": "inference", "description": "Argues that evidence of evolutionary change does not show random mutation has enough beneficial capacity to generate complexity unguided."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach speaks continuously in his rebuttal.", "materialWordingConfidence": "medium", "materialWordingRationale": "The intended probability argument is clear, but exact powers, quotations, and scientific names are materially caption-noisy and should be audio-checked before quotation.", "spanLengthRationale": "The complete move requires the mutation prerequisites, cited harmfulness, probability illustration, time response, and application to extraterrestrial life."
+    },
+    {
+      "moveId": "pro-fossil-gaps-and-eye", "sectionId": "evolution-and-guidance", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1321, "endEvent": 1418},
+      "quoteEligibleExactSpans": ["The transitional links barely exist", "the most complex and orderly arrangement of matter in the universe"],
+      "claimSummary": "Sparse transitional fossils and the eye's complexity count against slow unguided evolution and support intelligent design.", "reasonSummary": "Boteach invokes punctuated equilibrium, alleged scarcity of failed intermediates despite extensive excavation, Darwin's expression of difficulty about the eye, and the brain's order.",
+      "inferenceSummary": {"premise": "The expected abundance of transitional forms is claimed missing, while organs such as the eye display extraordinary integrated complexity.", "inference": "Gaps and integration are argued to fit guided leaps or design better than gradual random change.", "conclusion": "The empirical record does not establish unguided evolution and instead points to intelligence."},
+      "burdenContact": {"bridgeId": "pro-guided-evolution", "tier": "central", "rationale": "Fossils and organ complexity are used to contest the sufficiency of gradual unguided mechanisms."}, "importance": 3, "importanceRationale": "It supplies the second major empirical pillar of the affirmative guidance case.", "respondsToIds": ["con-evolution-tested-and-evidenced"],
+      "responseComponents": [{"targetMoveId": "con-evolution-tested-and-evidenced", "component": "premise", "description": "Disputes the claimed evidential completeness by emphasizing fossil gaps and integrated eye complexity."}],
+      "attributionConfidence": "high", "attributionRationale": "The rebuttal remains Boteach's through the applause.", "materialWordingConfidence": "medium", "materialWordingRationale": "The fossil-gap and eye arguments are clear, but several scientist names, dates, quotations, and numbers are unreliable in the automatic captions.", "spanLengthRationale": "The fossil-record argument, punctuated-equilibrium interpretation, eye example, and concluding brain-design inference form one sustained evidential case."
+    },
+    {
+      "moveId": "con-einstein-pantheist-distinction", "sectionId": "historical-accuracy", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1438, "endEvent": 1467},
+      "quoteEligibleExactSpans": ["a state for Jews but not for a Jewish state", "not as Rabbi Schuli would have you believe"],
+      "claimSummary": "Einstein's political motive is uncertain but irrelevant to the key point that his God was pantheistic, not interventionist.", "reasonSummary": "Hitchens allows uncertainty about the presidency decision, notes Einstein's distinction between a state for Jews and a Jewish state, and stresses a Spinozist rather than supervising deity.",
+      "inferenceSummary": {"premise": "Einstein's religious language referred to a pantheistic God and did not affirm prayer-answering intervention.", "inference": "A disputed political motive cannot turn Einstein into evidence for Boteach's theism.", "conclusion": "Einstein does not support the personal-God claim."},
+      "burdenContact": {"bridgeId": "con-deism-theism-gap", "tier": "central", "rationale": "The reply protects the distinction between impersonal religious language and interventionist theism."}, "importance": 1, "importanceRationale": "The factual correction is subsidiary but clarifies what kind of God could be attributed to Einstein.", "respondsToIds": ["pro-einstein-claim-inaccurate"],
+      "responseComponents": [{"targetMoveId": "pro-einstein-claim-inaccurate", "component": "conclusion", "description": "Concedes uncertainty about motive while arguing it has no bearing on Einstein's noninterventionist concept of God."}],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens begins his next rebuttal after stage logistics.", "materialWordingConfidence": "medium", "materialWordingRationale": "The political and theological distinctions are clear, though Spinoza and other names are misspelled."
+    },
+    {
+      "moveId": "con-fossils-contingency-unfalsifiability", "sectionId": "evolution-and-guidance", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1469, "endEvent": 1577},
+      "quoteEligibleExactSpans": ["not of whether evolution occurred", "unfalsifiability is quite rightly considered"],
+      "claimSummary": "Gould affirmed evolution, transitional evidence is being found, contingency needs no guidance, and design-by-complexity is unfalsifiable.", "reasonSummary": "Hitchens distinguishes debates over evolutionary tempo from occurrence, cites molecular and fossil records plus an intermediate Canadian species, uses Burgess Shale contingency, and says an untestable God inference is weakness rather than evidence.",
+      "inferenceSummary": {"premise": "Evolution is recorded in biology and fossils, scientific disputes concern pathways, and a design response can accommodate any outcome without possible falsification.", "inference": "Misstating scientific disagreement and invoking an untestable explanation do not defeat natural evolution.", "conclusion": "The fossil and complexity case does not warrant divine guidance."},
+      "burdenContact": {"bridgeId": "con-natural-explanation", "tier": "central", "rationale": "It defends evolutionary evidence and the testability standard against a guiding-designer inference."}, "importance": 3, "importanceRationale": "This is Hitchens's fullest direct rebuttal to both affirmative evolution moves.", "respondsToIds": ["pro-mutation-probability-guidance", "pro-fossil-gaps-and-eye"],
+      "responseComponents": [
+        {"targetMoveId": "pro-mutation-probability-guidance", "component": "conclusion", "description": "Argues that inserting guidance after complexity is an unfalsifiable rather than evidential explanation."},
+        {"targetMoveId": "pro-fossil-gaps-and-eye", "component": "premise", "description": "Corrects the portrayal of Gould and points to molecular, fossil, and newly discovered intermediate evidence."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "Continuous Hitchens rebuttal.", "materialWordingConfidence": "medium", "materialWordingRationale": "The scientific distinctions and falsifiability point are clear, but species, author, and technical names are heavily garbled.", "spanLengthRationale": "The reply must retain the Gould correction, positive fossil evidence, contingency example, and falsifiability objection because they answer distinct premises of one guidance case."
+    },
+    {
+      "moveId": "con-selection-fact-not-ethic", "sectionId": "evolution-and-guidance", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1581, "endEvent": 1619},
+      "quoteEligibleExactSpans": ["we can actually take steps", "I was talking about how nature aborts"],
+      "claimSummary": "Natural selection describes facts but does not command social Darwinism, and Hitchens's miscarriage passage described nature rather than endorsing killing.", "reasonSummary": "Humans can mitigate survival-of-the-fittest effects; unpleasant natural facts remain facts, while Boteach's abortion challenge confuses spontaneous natural loss with moral prescription.",
+      "inferenceSummary": {"premise": "A natural process can be accurately described without being adopted as a human moral rule.", "inference": "Moving from evolutionary fact to eugenic duty commits a fact-to-value error and misreads the miscarriage example.", "conclusion": "Evolution does not entail the immoral program attributed to it."},
+      "burdenContact": {"bridgeId": "con-natural-explanation", "tier": "central", "rationale": "It distinguishes the explanatory scientific theory from an alleged ethical prescription."}, "importance": 3, "importanceRationale": "It removes the affirmative's central moral objection to accepting natural selection.", "respondsToIds": ["pro-secular-eugenics-risk", "pro-divine-law-against-murder"],
+      "responseComponents": [
+        {"targetMoveId": "pro-secular-eugenics-risk", "component": "inference", "description": "Rejects the inference from natural selection's description to a duty to eliminate vulnerable people."},
+        {"targetMoveId": "pro-divine-law-against-murder", "component": "premise", "description": "Clarifies that the quoted miscarriage observation was not an endorsement of human killing."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens is the uninterrupted rebuttal speaker.", "materialWordingConfidence": "high", "materialWordingRationale": "The descriptive-versus-prescriptive distinction is explicit."
+    },
+    {
+      "moveId": "pro-jewish-law-treats-nonjews", "sectionId": "historical-accuracy", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1621, "endEvent": 1705},
+      "quoteEligibleExactSpans": ["the Talmud obligate us to treat nonJews on the Sabbath", "even a gentile who studies God's law is equal"],
+      "claimSummary": "Jewish law obligates treatment of non-Jews on the Sabbath and contains strong universalist teachings, contrary to Hitchens's portrayal.", "reasonSummary": "Boteach challenges Hitchens to identify a Jewish court holding otherwise, describes the Talmudic discussion's persecutory Roman context, and cites teachings on Gentile dignity, salvation, and divine presence.",
+      "inferenceSummary": {"premise": "Authoritative Jewish teachings require care for non-Jews and affirm moral-spiritual standing regardless of ethnicity.", "inference": "A contrary exceptionalist portrayal omits governing law and context.", "conclusion": "The allegation of Jewish refusal to save non-Jews is false and should not discredit the tradition."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "This directly defends Jewish legal and moral teaching against a factual charge."}, "importance": 3, "importanceRationale": "The claim becomes the debate's most sustained factual credibility dispute.", "respondsToIds": ["con-scriptural-violence-and-hell"],
+      "responseComponents": [{"targetMoveId": "con-scriptural-violence-and-hell", "component": "conclusion", "description": "Offers universalist Jewish law and practice against the claim that the tradition's operative morality is cruel or exclusionary."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach begins his reply after applause and directly addresses Hitchens.", "materialWordingConfidence": "medium", "materialWordingRationale": "The treatment obligation and universalist thrust are clear, but tractate names and several quotations are severely garbled.", "spanLengthRationale": "The court challenge, Roman context, multiple universalist authorities, and claimed Israeli practice jointly constitute the complete rebuttal."
+    },
+    {
+      "moveId": "pro-transitional-links-still-missing", "sectionId": "evolution-and-guidance", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1707, "endEvent": 1743},
+      "quoteEligibleExactSpans": ["the whole observable universe is not large enough", "Where are they"],
+      "claimSummary": "Hitchens's claim that transitional links are only now being found concedes how little of the enormous predicted record exists.", "reasonSummary": "Boteach reiterates the typewriter improbability analogy, distinguishes punctuated equilibrium from slow evolution, and argues trillions of expected intermediates should be readily present after extensive excavation.",
+      "inferenceSummary": {"premise": "A gradual process is claimed to predict vastly more intermediates than have been presented.", "inference": "Finding a small number does not close the alleged quantitative evidential gap.", "conclusion": "Unguided gradual evolution remains insufficiently supported."},
+      "burdenContact": {"bridgeId": "pro-guided-evolution", "tier": "central", "rationale": "The reply presses the fossil-evidence burden for an unguided mechanism."}, "importance": 2, "importanceRationale": "It directly engages Hitchens's positive intermediate-fossil response rather than merely repeating the opening.", "respondsToIds": ["con-fossils-contingency-unfalsifiability"],
+      "responseComponents": [{"targetMoveId": "con-fossils-contingency-unfalsifiability", "component": "premise", "description": "Argues that a few emerging intermediates do not meet the alleged scale of the gradualist prediction."}],
+      "attributionConfidence": "high", "attributionRationale": "Boteach continues his scheduled reply.", "materialWordingConfidence": "medium", "materialWordingRationale": "The missing-links challenge is clear, but scientist names, the quoted analogy, and large-number phrasing are caption-noisy."
+    },
+    {
+      "moveId": "pro-religious-source-of-equal-worth", "sectionId": "morality-and-human-worth", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1744, "endEvent": 1788},
+      "quoteEligibleExactSpans": ["it's not because of evolutionary ethics", "the infinite sanctity of life"],
+      "claimSummary": "Antiracism and protection of disabled people draw on religious sanctity rather than evolutionary fitness.", "reasonSummary": "Boteach cites racist statements by evolutionary figures but expressly denies all evolutionists are racist, praising Hitchens while claiming his humanitarianism borrows the Ten Commandments' values.",
+      "inferenceSummary": {"premise": "Evolutionary description has coexisted with racist hierarchy, while Hitchens nevertheless affirms equal worth and protection.", "inference": "Those egalitarian commitments require a source beyond fitness and are attributed to religious sanctity.", "conclusion": "Hitchens's humane ethics implicitly rely on values grounded in God."},
+      "burdenContact": {"bridgeId": "pro-moral-ground", "tier": "central", "rationale": "The passage links equal dignity and protection of vulnerable life to religious moral grounding."}, "importance": 3, "importanceRationale": "It is the most direct reply to the descriptive-versus-prescriptive distinction and secular autonomy claim.", "respondsToIds": ["con-secular-civil-rights", "con-atheism-necessary-not-sufficient", "con-selection-fact-not-ethic"],
+      "responseComponents": [
+        {"targetMoveId": "con-secular-civil-rights", "component": "conclusion", "description": "Claims secular egalitarian action still derives its governing sanctity principle from religion."},
+        {"targetMoveId": "con-atheism-necessary-not-sufficient", "component": "inference", "description": "Uses Hitchens's own humane commitments to argue that unbelief lacks an independent grounding account."},
+        {"targetMoveId": "con-selection-fact-not-ethic", "component": "conclusion", "description": "Accepts that Hitchens rejects eugenics but attributes that rejection to inherited divine-law values."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "Boteach remains the speaker until the moderator stops him.", "materialWordingConfidence": "medium", "materialWordingRationale": "The grounding claim and express qualification are clear, but historical quotations and names are caption-imperfect."
+    },
+    {
+      "moveId": "con-court-source-and-deism-limit", "sectionId": "historical-accuracy", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1807, "endEvent": 1844},
+      "quoteEligibleExactSpans": ["brought that case and lost it in the high court", "The book is easily found"],
+      "claimSummary": "The challenged non-Jew-on-Sabbath allegation has an identifiable published source and reported adverse court history.", "reasonSummary": "Hitchens names Israel Shahak, spells the surname, identifies a book and publisher, and says the underlying case was lost in Jerusalem's high court and rabbinical courts.",
+      "inferenceSummary": {"premise": "A named scholar, book, publisher, and reported litigation are supplied for the allegation.", "inference": "The charge is not an unsupported invention merely because the citation was not initially recited.", "conclusion": "Boteach's factual dismissal requires engaging the named source and case."},
+      "burdenContact": {"bridgeId": "con-religion-critique", "tier": "subsidiary", "rationale": "It substantiates a concrete claim about discriminatory religious-law interpretation."}, "importance": 2, "importanceRationale": "The named source is the essential answer to Boteach's repeated credibility challenge.", "respondsToIds": ["pro-jewish-law-treats-nonjews"],
+      "responseComponents": [{"targetMoveId": "pro-jewish-law-treats-nonjews", "component": "premise", "description": "Supplies the named author, book, publisher, and alleged case outcome demanded by Boteach."}],
+      "attributionConfidence": "high", "attributionRationale": "The moderator explicitly gives Hitchens the first answer, and he speaks in first person.", "materialWordingConfidence": "medium", "materialWordingRationale": "The source-identification structure is clear, but the book title, institutions, and some legal labels are caption-garbled."
+    },
+    {
+      "moveId": "con-deism-possible-theism-falsified", "sectionId": "god-covenant-and-chosenness", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 1845, "endEvent": 1878},
+      "quoteEligibleExactSpans": ["Science and reason cannot disprove the existence of a first cause", "there is no evidence on the other side"],
+      "claimSummary": "A first cause cannot be disproved, but nothing requires it and interventionist theism is unsupported and repeatedly falsified.", "reasonSummary": "Hitchens rejects the ontological move from naming God to existence, says the universe works without a creator assumption, and distinguishes that limited agnosticism from prayer, sexual rules, war favoritism, and miracles.",
+      "inferenceSummary": {"premise": "Possible deism has no affirmative evidence, while specific interventionist claims generate testable miracle and revelation assertions.", "inference": "Logical possibility of a first cause cannot establish the much richer God defended by religion.", "conclusion": "Unbelief remains warranted, especially toward a personal intervening God."},
+      "burdenContact": {"bridgeId": "con-deism-theism-gap", "tier": "central", "rationale": "This is the clearest late formulation of the concession about deism and rejection of theism."}, "importance": 3, "importanceRationale": "It precisely defines the con position in response to the moderator's God-definition question.", "respondsToIds": ["pro-world-testifies-creator"],
+      "responseComponents": [{"targetMoveId": "pro-world-testifies-creator", "component": "conclusion", "description": "Allows abstract first-cause possibility but denies that artifact analogy supplies evidence for a personal intervening God."}],
+      "attributionConfidence": "high", "attributionRationale": "Hitchens continues his answer until applause.", "materialWordingConfidence": "high", "materialWordingRationale": "The deism/theism distinction, concession, and evidential conclusion are explicit."
+    },
+    {
+      "moveId": "pro-court-claim-remains-unsupported", "sectionId": "historical-accuracy", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 1880, "endEvent": 1936},
+      "quoteEligibleExactSpans": ["don't you think you ought to cite a footnote", "That is absolutely false"],
+      "claimSummary": "Naming a secondary book does not identify the allegedly authoritative court ruling, and the claim remains unsupported.", "reasonSummary": "Boteach distinguishes Israel's secular Supreme Court from rabbinical courts, presses for the precise court and footnote, and says no high rabbinical court barred saving a non-Jew.",
+      "inferenceSummary": {"premise": "Hitchens supplies a book but, in Boteach's view, not the exact tribunal or ruling matching the claim.", "inference": "A serious institutional allegation requires a traceable primary citation and accurate court identification.", "conclusion": "The allegation should not be accepted on the source given in the exchange."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "This challenges the factual basis of an accusation against Jewish law."}, "importance": 2, "importanceRationale": "It identifies the unresolved precision issue after Hitchens supplies a source.", "respondsToIds": ["con-court-source-and-deism-limit"],
+      "responseComponents": [{"targetMoveId": "con-court-source-and-deism-limit", "component": "premise", "description": "Argues that a book citation still fails to specify the exact court ruling alleged."}],
+      "attributionConfidence": "medium", "attributionRationale": "Most of the span is Boteach, but rapid cross-talk with Hitchens and moderator intervention makes some short clauses uncertain.", "materialWordingConfidence": "medium", "materialWordingRationale": "Boteach's demand for a court and footnote is clear; exact court labels in the overlapping exchange require audio verification.", "spanLengthRationale": "The extended cross-talk is necessary to preserve the precise dispute over high court, rabbinical court, book citation, and missing footnote."
+    },
+    {
+      "moveId": "pro-god-supreme-moral-authority", "sectionId": "morality-and-human-worth", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "constructive", "sourceSpan": {"startEvent": 1941, "endEvent": 2014},
+      "quoteEligibleExactSpans": ["the supreme moral authority", "you cannot have cut flower ethics"],
+      "claimSummary": "God is the supreme moral authority who makes life infinitely valuable, and secular ethics severed from religion will not remain durable.", "reasonSummary": "Boteach connects divine value to care for elderly, suffering, and suicidal people, restates guided evolution, contrasts biblical equality with racial hierarchy, and uses cut flowers as an analogy for inherited virtues detached from their source.",
+      "inferenceSummary": {"premise": "Unconditional care and equal worth require treating life as infinitely valuable, while secular cultures inherit charity and hope from religion.", "inference": "Values detached from their transcendent ground lose their binding force over time.", "conclusion": "God is needed as the enduring source of objective moral value."},
+      "burdenContact": {"bridgeId": "pro-moral-ground", "tier": "central", "rationale": "The passage explicitly defines God by moral authority and argues that secular ethics cannot preserve its fruits independently."}, "importance": 3, "importanceRationale": "This is the affirmative's fullest direct answer linking its God definition to lived moral consequences.", "respondsToIds": ["con-secular-civil-rights", "con-atheism-necessary-not-sufficient", "con-selection-fact-not-ethic"],
+      "responseComponents": [
+        {"targetMoveId": "con-secular-civil-rights", "component": "inference", "description": "Answers secular moral achievement by distinguishing present possession of values from their durable historical and metaphysical source."},
+        {"targetMoveId": "con-atheism-necessary-not-sufficient", "component": "conclusion", "description": "Argues that unbelief cannot itself provide the infinite valuation needed for an objective ethic."},
+        {"targetMoveId": "con-selection-fact-not-ethic", "component": "conclusion", "description": "Claims the humane decision to resist fitness-based outcomes depends on religiously grounded sanctity."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "After the moderator redirects, Boteach gives a continuous answer until interrupted.", "materialWordingConfidence": "medium", "materialWordingRationale": "The moral-authority and cut-flower claims are clear; Hitler quotations and some names in the middle are noisy.", "spanLengthRationale": "The definition, concrete life-value applications, equality contrast, and cut-flower conclusion are the complete grounding argument."
+    },
+    {
+      "moveId": "pro-personal-relational-god", "sectionId": "god-covenant-and-chosenness", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 2043, "endEvent": 2057},
+      "quoteEligibleExactSpans": ["the origin of life", "God is he who hears my prayer"],
+      "claimSummary": "The defended God is cosmic origin, absolute moral authority, hearer of prayer, protector of the helpless, and a relational being who may be challenged.", "reasonSummary": "Boteach answers the moderator's demand for specificity with several attributes and invokes Israel as wrestling with God, including anger at apparent failure to protect.",
+      "inferenceSummary": {"premise": "Boteach's theism makes definite creator, moral, providential, and relational claims.", "inference": "The motion should assess this articulated personal God rather than an undefined sky figure.", "conclusion": "His affirmative position is a specific personal Jewish theism."},
+      "burdenContact": {"bridgeId": "pro-motion-creator", "tier": "motion", "rationale": "The move expressly identifies the entity whose existence the affirmative defends."}, "importance": 3, "importanceRationale": "A precise referent is indispensable for judging the existence motion and the deism/theism dispute.", "respondsToIds": ["con-first-cause-regress-gap", "con-deism-possible-theism-falsified"],
+      "responseComponents": [
+        {"targetMoveId": "con-first-cause-regress-gap", "component": "conclusion", "description": "Specifies that the affirmative defends more than an imponderable starter."},
+        {"targetMoveId": "con-deism-possible-theism-falsified", "component": "conclusion", "description": "Directly identifies the personal and interventionist properties Hitchens says remain unsupported."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "The moderator addresses Boteach by name, and Boteach answers in first person.", "materialWordingConfidence": "high", "materialWordingRationale": "The list of divine attributes and relational claim are explicit."
+    },
+    {
+      "moveId": "con-dna-natural-morality-challenge", "sectionId": "morality-and-human-worth", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 2071, "endEvent": 2124},
+      "quoteEligibleExactSpans": ["Religion borrows its morality from us", "could not be uttered by a non-believer"],
+      "claimSummary": "Genetics places humans in nature, and innate morality belongs to humans rather than being borrowed from religion.", "reasonSummary": "Hitchens says DNA undermines creationism and special privilege, accepts Boteach's premise that generous qualities are innate, then challenges anyone to name a believer's noble act unavailable to a nonbeliever while religiously exclusive wicked acts are easy to name.",
+      "inferenceSummary": {"premise": "Nonbelievers can perform every class of noble act, while some wrongdoing is motivated specifically by faith, and moral tendencies are innate.", "inference": "Religion is neither necessary for goodness nor the source of moral capacity.", "conclusion": "Human morality does not provide evidence for God and may be corrupted by religion."},
+      "burdenContact": {"bridgeId": "con-moral-autonomy", "tier": "central", "rationale": "The two challenges directly test whether any moral content uniquely requires belief in God."}, "importance": 3, "importanceRationale": "This is Hitchens's clearest positive case for moral autonomy and reversal of the grounding argument.", "respondsToIds": ["pro-transcendence-conscious-choice", "pro-religious-source-of-equal-worth", "pro-god-supreme-moral-authority"],
+      "responseComponents": [
+        {"targetMoveId": "pro-transcendence-conscious-choice", "component": "premise", "description": "Accepts innate moral capacity but locates it in evolved humans rather than a spiritual source."},
+        {"targetMoveId": "pro-religious-source-of-equal-worth", "component": "conclusion", "description": "Challenges Boteach to identify a noble act that uniquely depends on belief."},
+        {"targetMoveId": "pro-god-supreme-moral-authority", "component": "inference", "description": "Reverses the cut-flower claim by arguing that religion borrows its morality from prior human capacities."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "The moderator directs the question to Hitchens and the answer is continuous.", "materialWordingConfidence": "high", "materialWordingRationale": "The natural-origin claim and paired moral challenges are explicit."
+    },
+    {
+      "moveId": "pro-chosenness-is-mission", "sectionId": "god-covenant-and-chosenness", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "constructive", "sourceSpan": {"startEvent": 2129, "endEvent": 2246},
+      "quoteEligibleExactSpans": ["God never played favorites with the Jews", "chosen by God to spread the light of God"],
+      "claimSummary": "Jewish chosenness is a duty to serve all nations, not divine favoritism, racial superiority, or exclusive access to truth.", "reasonSummary": "Boteach treats chosen as an activity of spreading universal divine concern, notes Judaism does not require conversion, invokes respect for Christianity and Islam, and concludes every person is created in God's image.",
+      "inferenceSummary": {"premise": "The doctrine assigns Jews a mission while affirming non-Jews as loved, spiritually eligible, and not in need of conversion.", "inference": "A universal service obligation is not a claim that Jews possess greater intrinsic worth.", "conclusion": "Chosenness does not undermine God's impartial moral authority or justify antisemitism."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "It clarifies a central Jewish doctrine challenged as evidence of divine favoritism and racism."}, "importance": 3, "importanceRationale": "It is the complete affirmative response to the moderator's final substantive question and the covenant critique.", "respondsToIds": ["con-religion-early-pattern-story", "con-deism-possible-theism-falsified"],
+      "responseComponents": [
+        {"targetMoveId": "con-religion-early-pattern-story", "component": "premise", "description": "Rejects the earlier portrayal of covenant as tribal self-preference by construing it as universal service."},
+        {"targetMoveId": "con-deism-possible-theism-falsified", "component": "conclusion", "description": "Offers universal moral mission and human equality as the affirmative account of what this personal God commands."}
+      ],
+      "attributionConfidence": "high", "attributionRationale": "The moderator asks Boteach the final question, and Boteach answers until the exchange closes.", "materialWordingConfidence": "medium", "materialWordingRationale": "The mission-not-favoritism thesis is clear, but Hebrew terms, philosopher names, and several examples are caption-garbled.", "spanLengthRationale": "The long answer is needed to connect mission, nonconversion, interfaith respect, victim-blaming rebuttal, and universal creation in God's image."
+    },
+    {
+      "moveId": "con-covenant-specialness-and-violence", "sectionId": "god-covenant-and-chosenness", "side": "con", "speaker": "Christopher Hitchens", "moveKind": "reply", "sourceSpan": {"startEvent": 2252, "endEvent": 2306},
+      "quoteEligibleExactSpans": ["Either God did or did not make a covenant", "a concept of racial and national superiority"],
+      "claimSummary": "Either the covenant is fictional or its scriptures attach violent privilege to a specially chosen people; national claims of divine favor invite legitimate criticism.", "reasonSummary": "Hitchens says archaeology disproves Mosaic events but notes the texts authorize Canaanite conquest and bodily covenant, then compares chosenness with other national-superiority traditions he also rejects.",
+      "inferenceSummary": {"premise": "The covenant texts combine special status with conquest, and analogous national supremacy claims are objectionable elsewhere.", "inference": "Recasting chosenness as harmless mission does not erase the textual and political content of special divine favor.", "conclusion": "Covenantal exceptionalism weakens the moral credibility of the defended God."},
+      "burdenContact": {"bridgeId": "con-religion-critique", "tier": "subsidiary", "rationale": "The move challenges covenantal revelation and specialness as morally compromised human propaganda."}, "importance": 3, "importanceRationale": "It is the con's final substantive answer to the affirmative interpretation of chosenness.", "respondsToIds": ["pro-chosenness-is-mission"],
+      "responseComponents": [{"targetMoveId": "pro-chosenness-is-mission", "component": "premise", "description": "Counters the mission-only reading with conquest texts and comparisons to rejected national supremacy claims."}],
+      "attributionConfidence": "high", "attributionRationale": "After closing thanks, Hitchens asks to add a final response and speaks until cross-talk resumes.", "materialWordingConfidence": "medium", "materialWordingRationale": "The covenant dilemma and supremacy comparison are clear; archaeological and scriptural proper nouns are caption-imperfect.", "spanLengthRationale": "The covenant dilemma, conquest content, and comparison with other national divine-favor claims jointly constitute the reply."
+    },
+    {
+      "moveId": "pro-war-context-and-mainstream-repudiation", "sectionId": "god-covenant-and-chosenness", "side": "pro", "speaker": "Shmuley Boteach", "moveKind": "reply", "sourceSpan": {"startEvent": 2314, "endEvent": 2410},
+      "quoteEligibleExactSpans": ["in the context of war at the time", "Palestinians who are our brothers"],
+      "claimSummary": "Ancient extermination commands were confined to an exceptional war context, and mainstream Judaism cannot identify modern Palestinians as Amalekites and repudiates anti-Palestinian murder.", "reasonSummary": "Boteach compares extreme ancient measures to Allied wartime bombing, says later killing was forbidden, demands a mainstream rabbinic example, and recounts public condemnation of Baruch Goldstein despite a retaliatory attack on his own home.",
+      "inferenceSummary": {"premise": "The disputed commands are presented as historically bounded, while modern authoritative Jewish voices condemn massacre and affirm Palestinians as equal children of God.", "inference": "A bounded war text should not be treated as an operative standing license for ethnic killing.", "conclusion": "The covenant tradition does not presently authorize the violence Hitchens attributes to it."},
+      "burdenContact": {"bridgeId": "pro-tradition-integrity", "tier": "subsidiary", "rationale": "It contextualizes difficult texts and supplies claimed mainstream practice against the charge of continuing genocidal covenant."}, "importance": 3, "importanceRationale": "This is the affirmative's final and fullest answer to the scriptural-violence and exceptionalism challenge.", "respondsToIds": ["con-scriptural-violence-and-hell", "con-covenant-specialness-and-violence"],
+      "responseComponents": [
+        {"targetMoveId": "con-scriptural-violence-and-hell", "component": "premise", "description": "Confines the cited killing commands to an exceptional ancient war setting rather than an exceptionless ongoing rule."},
+        {"targetMoveId": "con-covenant-specialness-and-violence", "component": "conclusion", "description": "Offers mainstream repudiation of modern massacre and equal divine status for Palestinians against the claim of operative violent privilege."}
+      ],
+      "attributionConfidence": "medium", "attributionRationale": "The moderator identifies Boteach's requested response, but Hitchens interjects briefly during this long, heated closing exchange.", "materialWordingConfidence": "medium", "materialWordingRationale": "Boteach's war-context and repudiation claims are clear; casualty numbers, names, and several cross-talk clauses require audio checking.", "spanLengthRationale": "The reply needs the war analogy, claimed temporal limit, mainstream-rabbi challenge, and concrete Goldstein condemnation to answer both text and present-practice objections."
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {"totalAbsoluteDifference": 3, "sectionAbsoluteDifference": 2},
+    "totals": {"pro": 16, "con": 16, "absoluteDifference": 0},
+    "sections": [
+      {"sectionId": "existence-and-explanation", "pro": 1, "con": 4, "absoluteDifference": 3},
+      {"sectionId": "cosmos-and-design", "pro": 2, "con": 2, "absoluteDifference": 0},
+      {"sectionId": "evolution-and-guidance", "pro": 4, "con": 3, "absoluteDifference": 1},
+      {"sectionId": "morality-and-human-worth", "pro": 4, "con": 4, "absoluteDifference": 0},
+      {"sectionId": "scripture-and-practice", "pro": 2, "con": 4, "absoluteDifference": 2},
+      {"sectionId": "historical-accuracy", "pro": 3, "con": 2, "absoluteDifference": 1},
+      {"sectionId": "god-covenant-and-chosenness", "pro": 2, "con": 2, "absoluteDifference": 0}
+    ],
+    "rationaleRequired": true,
+    "rationale": "Existence opens with four distinct con arguments—burden, natural origin of belief, explanatory redundancy, and the deism/theism regress—before the pro's compact artifact analogy; scripture likewise contains four independently answered con critiques but only two pro opening defenses. Other sections preserve the later pro-heavy guidance and factual exchanges, yielding equal overall totals without manufacturing additional rows."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {"sectionId": "existence-and-explanation", "pro": 1, "con": 4, "withinCapacity": true, "fourthRowRequired": true, "fourthRowAuthorized": true, "rationale": "The fourth con row is independently necessary: first-cause regress and the deism/theism gap are not mergeable with burden allocation, psychology of belief, or explanatory redundancy."},
+      {"sectionId": "cosmos-and-design", "pro": 2, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "Neither side reaches four rows; cosmic and biological design cases fit in two rows each."},
+      {"sectionId": "evolution-and-guidance", "pro": 4, "con": 3, "withinCapacity": true, "fourthRowRequired": true, "fourthRowAuthorized": true, "rationale": "The fourth pro row is independently necessary because position clarification, mutation probability, fossil-and-eye evidence, and the later quantitative transitional-link reply are separately assessable and non-mergeable."},
+      {"sectionId": "morality-and-human-worth", "pro": 4, "con": 4, "withinCapacity": true, "fourthRowRequired": true, "fourthRowAuthorized": true, "rationale": "Both fourth rows are necessary: pro separately develops spiritual agency, eugenic risk, immutable divine law, and cut-flower grounding; con separately addresses secular civil rights, its limited atheism concession, fact/value separation, and the final innate-morality challenge."},
+      {"sectionId": "scripture-and-practice", "pro": 2, "con": 4, "withinCapacity": true, "fourthRowRequired": true, "fourthRowAuthorized": true, "rationale": "The fourth con row is independently necessary because late revelation, scriptural killing, bodily consent, and Epicurean Hanukkah meaning target different doctrines and cannot be responsibly merged."},
+      {"sectionId": "historical-accuracy", "pro": 3, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "No side reaches four; the selected rows track the distinct Einstein and court-source exchanges."},
+      {"sectionId": "god-covenant-and-chosenness", "pro": 2, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "No fourth row is needed; definition and covenant are covered by two moves per side."}
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "fullTranscriptCoverageAudit": {
+    "intervals": [
+      {"startEvent": 0, "endEvent": 66, "moveIds": [], "reason": "Introductions, credentials, format, applause, and pre-window logistics carry no independent opponent credit."},
+      {"startEvent": 67, "endEvent": 181, "moveIds": ["con-burden-little-evidence", "con-religion-early-pattern-story"], "reason": "Hitchens opens with burden framing and the natural historical-psychological account of religion; greetings and transitions are subsidiary."},
+      {"startEvent": 182, "endEvent": 242, "moveIds": ["con-universe-needs-no-assumption"], "reason": "The explanatory-redundancy case and its transition into cosmic evidence."},
+      {"startEvent": 243, "endEvent": 345, "moveIds": ["con-cosmos-hostile-not-designed", "con-life-precarious-and-imperfect"], "reason": "Cosmic destruction, precarious habitability, extinction, and human imperfection form the opening anti-design case."},
+      {"startEvent": 346, "endEvent": 405, "moveIds": ["con-first-cause-regress-gap"], "reason": "Creator regress and deism/theism distinction, followed by setup for the delayed-intervention argument."},
+      {"startEvent": 406, "endEvent": 464, "moveIds": ["con-delayed-intervention-history"], "reason": "The late-intervention argument, closing summary, applause, music, and stage transition."},
+      {"startEvent": 465, "endEvent": 574, "moveIds": ["pro-transcendence-conscious-choice"], "reason": "Boteach's opening rhetoric and developed contrast between reductionism and spiritual moral agency."},
+      {"startEvent": 575, "endEvent": 646, "moveIds": ["pro-torah-compassion-circumcision-benefit", "pro-hanukkah-resisted-tyranny"], "reason": "Specific defenses of Torah compassion, circumcision, and Hanukkah."},
+      {"startEvent": 647, "endEvent": 790, "moveIds": ["pro-secular-eugenics-risk", "pro-divine-law-against-murder"], "reason": "Cumulative argument from eugenics and mutable human law to unconditional divine prohibition."},
+      {"startEvent": 791, "endEvent": 882, "moveIds": ["pro-world-testifies-creator", "pro-earth-fine-tuning", "pro-morality-and-organic-complexity"], "reason": "Affirmative artifact analogy, fine-tuning evidence, human complexity, conclusion, and applause."},
+      {"startEvent": 883, "endEvent": 966, "moveIds": ["con-evolution-tested-and-evidenced"], "reason": "Hitchens defends testable evolution and rejects the fundamentalist label; jokes and hatred remarks are subsidiary."},
+      {"startEvent": 967, "endEvent": 1053, "moveIds": ["con-scriptural-violence-and-hell", "con-secular-civil-rights"], "reason": "Scriptural violence and secular civil-rights replies, followed by transition to remaining rebuttal points."},
+      {"startEvent": 1054, "endEvent": 1132, "moveIds": ["con-circumcision-requires-consent", "con-hanukkah-rejects-secular-humanism", "con-atheism-necessary-not-sufficient"], "reason": "Consent, Epicurean Hanukkah, and the limited atheism concession conclude the rebuttal."},
+      {"startEvent": 1133, "endEvent": 1193, "moveIds": ["pro-accepts-guided-evolution", "pro-einstein-claim-inaccurate"], "reason": "Boteach clarifies guided evolution and raises the Einstein factual dispute; opening rhetoric and transitions are subsidiary."},
+      {"startEvent": 1194, "endEvent": 1320, "moveIds": ["pro-mutation-probability-guidance"], "reason": "The full mutation, probability, time, and extraterrestrial-life guidance argument."},
+      {"startEvent": 1321, "endEvent": 1419, "moveIds": ["pro-fossil-gaps-and-eye"], "reason": "Fossil-gap, punctuated-equilibrium, eye, brain, and intelligent-design argument through applause."},
+      {"startEvent": 1420, "endEvent": 1468, "moveIds": ["con-einstein-pantheist-distinction"], "reason": "Stage-position logistics, brief Andromeda joke, and substantive Einstein reply."},
+      {"startEvent": 1469, "endEvent": 1580, "moveIds": ["con-fossils-contingency-unfalsifiability"], "reason": "Gould correction, fossil and molecular evidence, contingency, and unfalsifiability response."},
+      {"startEvent": 1581, "endEvent": 1620, "moveIds": ["con-selection-fact-not-ethic"], "reason": "Social-Darwinism and miscarriage clarification through applause."},
+      {"startEvent": 1621, "endEvent": 1706, "moveIds": ["pro-jewish-law-treats-nonjews"], "reason": "Boteach's sustained Jewish-court, Talmudic context, universalism, and Israeli-practice rebuttal."},
+      {"startEvent": 1707, "endEvent": 1743, "moveIds": ["pro-transitional-links-still-missing"], "reason": "Quantitative transitional-link response to Hitchens's fossil evidence."},
+      {"startEvent": 1744, "endEvent": 1789, "moveIds": ["pro-religious-source-of-equal-worth"], "reason": "Evolutionary racism examples, explicit qualification, and the religious-grounding reply before moderator intervention."},
+      {"startEvent": 1790, "endEvent": 1806, "moveIds": [], "reason": "Moderator introduces audience questions and asks both speakers to define God; facilitation carries no independent credit."},
+      {"startEvent": 1807, "endEvent": 1879, "moveIds": ["con-court-source-and-deism-limit", "con-deism-possible-theism-falsified"], "reason": "Hitchens supplies the challenged court source, then answers the God-definition question through applause."},
+      {"startEvent": 1880, "endEvent": 1940, "moveIds": ["pro-court-claim-remains-unsupported"], "reason": "Boteach disputes the exact court citation amid cross-talk; moderator repeatedly redirects to the God question."},
+      {"startEvent": 1941, "endEvent": 2042, "moveIds": ["pro-god-supreme-moral-authority"], "reason": "Boteach defines God through moral authority and develops the cut-flower grounding argument; moderator presses for further definition."},
+      {"startEvent": 2043, "endEvent": 2063, "moveIds": ["pro-personal-relational-god"], "reason": "Boteach's explicit personal-God definition followed by moderator interruption and applause."},
+      {"startEvent": 2064, "endEvent": 2125, "moveIds": ["con-dna-natural-morality-challenge"], "reason": "Moderator's neuroscience prompt and Hitchens's naturalistic DNA and moral-autonomy answer."},
+      {"startEvent": 2126, "endEvent": 2246, "moveIds": ["pro-chosenness-is-mission"], "reason": "Moderator's final question and Boteach's complete mission-not-favoritism answer."},
+      {"startEvent": 2247, "endEvent": 2313, "moveIds": ["con-covenant-specialness-and-violence"], "reason": "Closing thanks, Hitchens's requested covenant reply, and resulting cross-talk."},
+      {"startEvent": 2314, "endEvent": 2410, "moveIds": ["pro-war-context-and-mainstream-repudiation"], "reason": "Boteach's war-context, mainstream-law, and Goldstein-repudiation response."},
+      {"startEvent": 2411, "endEvent": 2436, "moveIds": ["pro-war-context-and-mainstream-repudiation", "con-court-source-and-deism-limit"], "reason": "Boteach reiterates the repudiation and citation challenge; Hitchens repeats his source amid final moderator closure and book-wager cross-talk."}
+    ]
+  },
+  "audit": {
+    "calculatedTotalsAbsent": true,
+    "completeTranscriptReviewed": true,
+    "allSpansSourceExact": true,
+    "scoreBlind": true,
+    "noOutcomePredetermined": true,
+    "noAudienceOrHostCredit": true
+  }
+}

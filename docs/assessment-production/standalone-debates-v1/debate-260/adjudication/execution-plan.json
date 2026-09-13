@@ -1,0 +1,596 @@
+{
+  "status": "frozen-before-execution",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "model": "gpt-5.6-sol",
+  "displayModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "freshContext": true,
+  "forkTurns": "none",
+  "agentTask": "/root/debate260_adjudication",
+  "sharedPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/execution-packet.json",
+    "sha256": "07e007638048b05c1e72fd351dd8e905b0068e7218f0c071867c08506a3282d7",
+    "bytes": 27783
+  },
+  "canonicalPacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/packet.json",
+    "sha256": "51780de95177afa3faca2af3cb79a7b2f7d93d2bbe994a59094d5628a748f2bc",
+    "bytes": 462488
+  },
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/reading-manifest.json",
+    "sha256": "9925ff085fdbce2090ede8f1e92c8d59665ee7e1cab12825204b19d4318dd255",
+    "bytes": 76209
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/execution-packet.json",
+      "sha256": "07e007638048b05c1e72fd351dd8e905b0068e7218f0c071867c08506a3282d7",
+      "bytes": 27783
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/reading-manifest.json",
+      "sha256": "9925ff085fdbce2090ede8f1e92c8d59665ee7e1cab12825204b19d4318dd255",
+      "bytes": 76209
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/inventory.json",
+      "sha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+      "bytes": 191206
+    },
+    {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/events.json",
+      "sha256": "8177b7bb890d1755591dc561924c3657ddb99f08f4b5477bd347f537d3d80e16",
+      "bytes": 261337
+    },
+    {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/transcript.txt",
+      "sha256": "093d3b31b7fd04653d2b63a3ab7e56a1885b1db3f5e8d43b53b188edb4e3eba6",
+      "bytes": 109996
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+      "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+      "bytes": 349406
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/audio/audio-verification.json",
+      "sha256": "e0b7a9f1da4f55f9d69083a263ea3e3178d484b2efa736caa7ff0d946caa3e1e",
+      "bytes": 356004
+    },
+    {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-metadata.json",
+      "sha256": "14beb691c1e69b4ca1e3d224d70699312af700b43d54aaa1ac699f54e96f0538",
+      "bytes": 1432
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-metadata.json",
+      "sha256": "7c8fba0e798e1849d553551512341cb4ffa028887782deca8c8ccb5c64ab04e3",
+      "bytes": 21624
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-metadata.json",
+      "sha256": "9bd8807892b01c940761d849a6d85343eb084dcb6885f2239edbf058f0f88e3f",
+      "bytes": 3671
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-01.txt",
+      "sha256": "10943cb620ec7af7c32a0cf1e66737f027593a3deb87d36313b68d2c81dc9051",
+      "bytes": 13471
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-02.txt",
+      "sha256": "e2588c27db9867433c3fdd01e4dcd1b5fafb5c1adb66fb3fadb41353430b84d0",
+      "bytes": 13459
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-03.txt",
+      "sha256": "5a31e366cf2f448c534e606da4b1b4b2204d166a48170e3175ab9bdcaecb9f3a",
+      "bytes": 13488
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-04.txt",
+      "sha256": "a6fa11785003336089e3ba0119a54feffcec0655340c612858ff6aad142caf6a",
+      "bytes": 13472
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-05.txt",
+      "sha256": "579403da0f1cfb33e61c3fb5db734fdb62f46a19fb590e7684d8dbc5ce919673",
+      "bytes": 13451
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-06.txt",
+      "sha256": "5565b981068b88ec5b6bc6c37aec20308dc538775beb62b7777e8b6eb8552c18",
+      "bytes": 13447
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-07.txt",
+      "sha256": "4b41a703e0bbe857b84f38a892c2b93d8e6c9e7441b8a45b5bb410caeaf7044f",
+      "bytes": 13514
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-08.txt",
+      "sha256": "70d8b317b661a3d1bfca4c024cfb26591c803497d6e5db63c9ba594390e19c38",
+      "bytes": 13494
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-09.txt",
+      "sha256": "9c5c4ae40b12798233d70f84cbe60b31e6386c0a6cfa55cf3803619b0a0a0cca",
+      "bytes": 13530
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-10.txt",
+      "sha256": "7ae64081f0549eee44c0b36b3196e77dfb1c5b6707b6e886e40b7205682103b9",
+      "bytes": 13470
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-11.txt",
+      "sha256": "2de1b033c54fca70f3c798fb0c630bd7d2c11530b0e62f00809ad102a1839511",
+      "bytes": 13515
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-12.txt",
+      "sha256": "abe532a298328b63492cf678826f8d3280ec2c6fc99f58a9e8fe38898e85c81d",
+      "bytes": 13459
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-13.txt",
+      "sha256": "fc25cc9acc8355bd42bb8ddb9986708fe83d8e50acbfb55db693210f09dace81",
+      "bytes": 13441
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-14.txt",
+      "sha256": "2ca93512b666df4a6a23c1cb337d1f31b0beb9addc4b1620569ea232e4f5a0aa",
+      "bytes": 13469
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-15.txt",
+      "sha256": "805b5a8dfab1af2934eaa4a6a29ed2550bf761bcd7fe282d8b4fef38181a9b66",
+      "bytes": 13464
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-16.txt",
+      "sha256": "02c9dfa7537b1fa9cfd13082d6bbe5b214e627742e265ab356ed8a2e0276ba95",
+      "bytes": 13504
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-17.txt",
+      "sha256": "19b4fe8b7a11ed6179053f8f6b7e8ed0ebcfb91c190a759b8469340b904182fc",
+      "bytes": 13515
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-18.txt",
+      "sha256": "82b5c33fe77807c9b0dbb2d79c16d3cbd7659cbad65757311758d9f05927fb64",
+      "bytes": 13507
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/source-19.txt",
+      "sha256": "ca47c8c85d50006039347a10bbfec4357c7badf6527e9f0cfae8ad50459740de",
+      "bytes": 3625
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-01.txt",
+      "sha256": "d54d12a074ca260d758ecdde543fe731ea53e55890f6797343f7b8bd94bc6687",
+      "bytes": 10192
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-02.txt",
+      "sha256": "93e48f18324ab37e9a80d09ac0faff31c39d4df6e5b0692a925769b842440833",
+      "bytes": 10012
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-03.txt",
+      "sha256": "51c7fec3b49ac54b96cb59353288e392045789b4dc789dd863cc0f76c560ab9e",
+      "bytes": 11881
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-04.txt",
+      "sha256": "218f2d4df650b0a90a1db1962bbf0abecc2ec482a9b3d8edb8d88ac16d35171b",
+      "bytes": 12106
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-05.txt",
+      "sha256": "63ca0f24767db85455bdea5d596c7b1184745c502a435caf850f7baa3d319920",
+      "bytes": 9085
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-06.txt",
+      "sha256": "32120a2c01e898f01cdfe81573273bed59d1ed003c5d01b1bcbbb60a23d845cd",
+      "bytes": 12721
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-07.txt",
+      "sha256": "66701e26db08eca885156c52e7968e3280f4aa99a06421f3d7e8c5aae76c844a",
+      "bytes": 11395
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-08.txt",
+      "sha256": "23666f6c7deb8c247335186fe9f79a56f280d06386d81302cf7e36b518818b54",
+      "bytes": 10019
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-09.txt",
+      "sha256": "fd4ae29d8d817fbf3af2476a1be49addff7eeafa31f94d3624ae13cb33474382",
+      "bytes": 9289
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-10.txt",
+      "sha256": "98d615804f1dc68c0f565497ae8c060591dc27ca5c3a3ec495ced9924ee1684c",
+      "bytes": 10515
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-11.txt",
+      "sha256": "b14e942a6079340fa374876f6bdda1c84c801840e1526c42edea92b9ecedf260",
+      "bytes": 13138
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-12.txt",
+      "sha256": "319c86f500fa280757682935f564fb2492bf8cf8cebd61d0420d43e6ab59b1a0",
+      "bytes": 11411
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-13.txt",
+      "sha256": "9a67f86ea5e9b76136e2913ff87a8f373b6fa9e5323d59bfc22f5c269148334e",
+      "bytes": 13279
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-14.txt",
+      "sha256": "bfc43dea4510d06e0a0e5fd70512b53823215485fe45e0ed08c12ae69f9c6743",
+      "bytes": 11130
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/inventory-15.txt",
+      "sha256": "7617897e270d499477463230a80c8d55b9529a4c3de92d3f2eefdf8a5644a3ca",
+      "bytes": 6649
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-01.txt",
+      "sha256": "eb1ed423b1ad21588d8451ec610c4e7c064b96de0f82c19abd46c0784420a3cf",
+      "bytes": 9183
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-02.txt",
+      "sha256": "1ef55f22b50081a31e12dbff553929d41c2714b9ac30cf94e945ed567abde7d4",
+      "bytes": 17934
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-03.txt",
+      "sha256": "225eba18ddd8e9047b9c64fc76c1b741f54778371f9aac501cb9194b0f8be202",
+      "bytes": 10246
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-04.txt",
+      "sha256": "ad83475d9779959c68db20d5a64d05c2c879566a78f4a4f8f961fb65758363cf",
+      "bytes": 12141
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-05.txt",
+      "sha256": "8cf37829bd1823c54ad85b60d8927d6ae01a3dc9710d1888ebe7f8b3ea7f91d9",
+      "bytes": 17076
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-06.txt",
+      "sha256": "990d441ed6a51d4a6f0d28f4fd298dc3dc3cb9054c869c9901931e99580d0a60",
+      "bytes": 7000
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-07.txt",
+      "sha256": "b859dbab15b946302eaded28bcc12f9ae843e309a5e7dfe9abdd7b48fec33638",
+      "bytes": 9530
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-08.txt",
+      "sha256": "8f82b826a7574a52f9d6950649a0b320eb0097609fc2e542177a7c7f217e3a9e",
+      "bytes": 9265
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-09.txt",
+      "sha256": "1ca5805ec90db537e3206771bb86d784741787e8073deaef91d5b2bd8a5826eb",
+      "bytes": 7794
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-10.txt",
+      "sha256": "f78c22e69b5dfa4762a6c8be1d4feabb676b284809f97e19e9e84f0bce306c9c",
+      "bytes": 10720
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-11.txt",
+      "sha256": "117af3026b1c71dd6361ae49b96f056e949f9f7ad225b473199386ea37442a82",
+      "bytes": 6016
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-12.txt",
+      "sha256": "c2685e5ad3c11b5636998eb79891646f8bee19d5f056520a307705f356e95c9f",
+      "bytes": 21154
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-13.txt",
+      "sha256": "93e9f5d64a731b82fe4e5c0b7b68e0753f4fd90d16a75beb39927ea2eee52e65",
+      "bytes": 15468
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-14.txt",
+      "sha256": "d5a5d81fc0cf6ef448a29bdf1d98608b518756a819f2895c3af174509d8c9466",
+      "bytes": 5387
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-15.txt",
+      "sha256": "b105e2515345c272c462eb9fcefeeb10ae725047a379c273e50dc2ce51802a47",
+      "bytes": 12562
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-16.txt",
+      "sha256": "02702093251a5b256e1bce63181dadfc81a9b10f46c7d9719986f88b9acdb325",
+      "bytes": 15614
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-17.txt",
+      "sha256": "1dd9a1ce0aa3c901a74e78b1d6b1ffae982c4d5173f48b1aafaf000d8cd760a3",
+      "bytes": 7530
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-18.txt",
+      "sha256": "4d78e1cab68ed841b85118100d58f0aa78f807cad6c4965a3a0542f00eae0333",
+      "bytes": 10547
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-19.txt",
+      "sha256": "9a18073a2dfd7ff30c351f53814710f6cafc23bf447829b0e6421c495099175d",
+      "bytes": 11888
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-20.txt",
+      "sha256": "857d4170a43a53a1d83e82d3e9120d08f590d9d41211966cdc6c8180efb8d8f3",
+      "bytes": 31221
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-21.txt",
+      "sha256": "24096554b1a56dac5da5d103a8f8c180a4d3c58a0e7cffa8fb01c7c0f1aa7646",
+      "bytes": 13448
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-22.txt",
+      "sha256": "60ddf9026d255142704996b8c45c47683bdf10d2db5428f33f1a1ab9e874e035",
+      "bytes": 24328
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-23.txt",
+      "sha256": "ecfdfedcee204b58857fbdb1ed127fa69ecfc53383ca97391fd04feb83cb6cb8",
+      "bytes": 13513
+    },
+    {
+      "path": ".assessment-cache/judgment-reading/debate-260/audio-checks-24.txt",
+      "sha256": "113b68635e8dd04a7a201efb2ae678f9f5ea8551363e024537f05351785aa7bd",
+      "bytes": 18976
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-01.txt",
+      "sha256": "0aa39db8570b841f5fe597e920e608d1215d8aad59c12c31a38b43ca9cd31cd0",
+      "bytes": 11219
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-02.txt",
+      "sha256": "376352a7535f4289d650d8a5b25449714c4c816ff7b74c3b704087d1ac545041",
+      "bytes": 11695
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-03.txt",
+      "sha256": "49021c948430741c828eedc73d8060581c328f474dd17414724222be8a9e373d",
+      "bytes": 9065
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-04.txt",
+      "sha256": "4ac3d640f7475e11dac96a35511e6467a7da092a4d9d60a7787e9d694eea3752",
+      "bytes": 12746
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-05.txt",
+      "sha256": "1473a05e64707048c8c22a6913931841bd254a5b86cf7dd2f18564be35e41ec8",
+      "bytes": 12721
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-06.txt",
+      "sha256": "a0ebadf65802d41bb4fd712fb679eabd7cb68eeae4d32f045d3b3cfbe07e98f0",
+      "bytes": 10848
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-07.txt",
+      "sha256": "30d730b32b0b113fabef9307bba28657417eafb157b4f15dbb0514d3541f865f",
+      "bytes": 12973
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-08.txt",
+      "sha256": "b3bc6457e4dd63a341c2b15a76fde2595f65a093f4d563e78541715624a60969",
+      "bytes": 7307
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-09.txt",
+      "sha256": "9f70b81017b8210fb9310aa4d693fe8bf655002d8cf1c04cd4c8299866d7f461",
+      "bytes": 11437
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-10.txt",
+      "sha256": "3ca9a839a534009c2ff92f025c0292139464db3f0b66bcab85b035703b1c1383",
+      "bytes": 11424
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-11.txt",
+      "sha256": "05f0003bccd11b4db6b2c30c3863da72582de6a0fd812a40da521308563d83e1",
+      "bytes": 11408
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-12.txt",
+      "sha256": "6318f814a43d849e9edd0c3bc81434198ca89494289caab47ea5460788d9a61f",
+      "bytes": 12769
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-13.txt",
+      "sha256": "e03489d6b10030135e197b293a309aa331b1ae515961db1cc6475c9f95b86766",
+      "bytes": 9763
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-14.txt",
+      "sha256": "44a2cbb555b54aa009527080f544f74b6f883d6a89e424ff93b354cc46f7b583",
+      "bytes": 8750
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-15.txt",
+      "sha256": "5b64bd79b8b3e10d67f32e0ea7a11db688a3e95298640200f1a3f7a77221cbec",
+      "bytes": 8691
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-16.txt",
+      "sha256": "7e7ab5050e06e329b85cad9ccc3ff62f23db41b1912409d23008c3ce58d83254",
+      "bytes": 12795
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-17.txt",
+      "sha256": "e0fe2bb260f8e69c656fbad89266eec8420be9e86cb624c6059ba29f5ace8241",
+      "bytes": 9522
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-18.txt",
+      "sha256": "71ffc3406f1b0f5de209e237d3ba8368a31b91cbb16c6a939a1139d9379d0297",
+      "bytes": 11002
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-19.txt",
+      "sha256": "3e76d8740caa5e8b1b9cc8b38082c6deeec3d5bfbdd6c4624d13603072721174",
+      "bytes": 10588
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-20.txt",
+      "sha256": "0640f52add271c1a38f1516ce4ee682fe869cce71a7d8c887618a21d26e98e64",
+      "bytes": 10760
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-21.txt",
+      "sha256": "b06d38dce83a00d11fde423b32c25df9d95a80a209b4ffd94ed6ee59ecf36b39",
+      "bytes": 10876
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-22.txt",
+      "sha256": "3eacaccae6e7a8ed5ee5518c2d87689fe81559adaeda22d68ef38f0d468de1d7",
+      "bytes": 7338
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-23.txt",
+      "sha256": "6d6316a755b99cc49f3a6db0496668d239eab319ec7fe579dab7c6c186464c58",
+      "bytes": 7031
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-24.txt",
+      "sha256": "00104b27c559aad0dd26e10b8ed32bbe7071b3457ea122b680242167feead391",
+      "bytes": 7026
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-25.txt",
+      "sha256": "0ca2158ba3d3ceaaea4b651008e80385af5cd29162933b99d8a33dcc3e10f007",
+      "bytes": 7420
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-26.txt",
+      "sha256": "d0c458bdc2ed80b61799e5813cdb7f63f8e54e1d300cb8ee2d05b9ebc7f4a8a4",
+      "bytes": 7491
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-27.txt",
+      "sha256": "9f5485df645c04d5d2722d1a1faf88b5b1e714c0393884ce5cbdd839ff9a5d11",
+      "bytes": 11027
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-28.txt",
+      "sha256": "4281082065c44d4b41baa78f76c63ce675306f6829e1cae4744847ce2b1023b7",
+      "bytes": 11599
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-29.txt",
+      "sha256": "cbabdead494a1437eb1b25d42846059d187219aa193f70cea3a789280f56676c",
+      "bytes": 11646
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-30.txt",
+      "sha256": "1c5a27916a086ae1fbdc71c5ac9b988ca71c1d6efa5778dbf096b1b89394a188",
+      "bytes": 11190
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-31.txt",
+      "sha256": "9194525a412d92132d35a23e9175476b2706acf08eb91e50e8213b7658c2bc0b",
+      "bytes": 11458
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-32.txt",
+      "sha256": "686aac90e8cae827c61351512fea60de3fd371a0ae019b0923441aac42cb5d59",
+      "bytes": 9538
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-33.txt",
+      "sha256": "7ec97e7ed1ebf40036163ab64f12cec9ceca5cd3eefa81b7066d139e2e5bec00",
+      "bytes": 9498
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-34.txt",
+      "sha256": "ebbe343d22a799aa85ce626f961741625ab4c027c28be393540c46f160d2df76",
+      "bytes": 9499
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-35.txt",
+      "sha256": "fc8e9737cbe8ea38e5abb1fc5b76930c0205c801db80726c6765137ee8f7a971",
+      "bytes": 10470
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-36.txt",
+      "sha256": "76bafa7a7583bbad634499c8ba62c4b0df3a46011478b1d5c377ac2871df8897",
+      "bytes": 11911
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-37.txt",
+      "sha256": "3d4ccca86f1dadad85efd39b4dd072c5153689ffb6ab8e43ae9596342018a57d",
+      "bytes": 11957
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-38.txt",
+      "sha256": "07979574e5bb0dccae9bb502f91db335b67f9542d1b68ee609f8e054f810d89a",
+      "bytes": 11518
+    },
+    {
+      "path": ".assessment-cache/adjudication-reading/debate-260/disputes-39.txt",
+      "sha256": "80f4e58b23928f65c50e7e0ee936f48d7363e6bed59407010453fbbefcaccb8f",
+      "bytes": 3255
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/packet.json",
+      "sha256": "51780de95177afa3faca2af3cb79a7b2f7d93d2bbe994a59094d5628a748f2bc",
+      "bytes": 462488
+    }
+  ],
+  "writablePaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-260/adjudication/output.json"
+  ],
+  "attemptLimit": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "frozenAt": "2026-09-13T00:37:08.226Z"
+}

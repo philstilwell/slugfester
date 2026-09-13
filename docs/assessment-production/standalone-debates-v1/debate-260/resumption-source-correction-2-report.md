@@ -1,0 +1,11 @@
+# Debate 260 — approved recovery completed; narrow source gate still paused
+
+The user's latest “Yes.” authorized the two recorded format normalizations, retention of the original confidence labels, one fresh isolated replacement of pass B's Einstein-presidency responsiveness dimension, and further provably content-preserving formatting repairs for Debate 260 only.
+
+The normalization succeeded: four stray plus characters were removed from pass A; pass B's schema keys were mapped without changing any supplied rating or rationale, and its two original medium confidence labels were retained by explicit authorization. Raw outputs remain preserved. One new isolated GPT-5.6 Sol/low context reviewed all 2,437 exact source events, all 58 frozen pages, three metadata files, the workflow and rubric before writing. Its one-field output passed structural and direct source review. That field alone was applied to the normalized correction output. No prior primary output was changed or accepted.
+
+A further controller review identified three court-citation fields that use uncertain exact-name/title transcription as part of an assessment limitation: pass A precision/clarity, and pass B evidence/warrant and precision/clarity. Audio check 20 explicitly treats those titles as transcription-imperfect and does not establish that Hitchens misstated them. The controller's earlier review missed this. Genuine court-history ambiguity and missing primary documentation may still be assessed, but these three rationales must independently separate those limitations from transcription uncertainty.
+
+The minimum proposed recovery is two fresh isolated contexts, one attempt each, replacing only those three value-and-rationale pairs. Every other field, including the newly corrected responsiveness judgment, remains immutable. This is substantive judgment work, not a formatting repair, and requires new explicit authorization. No such replacement has been launched.
+
+Additional direct cost: $0. Known and maximum incurred direct cost remains $1.3086525 (about $1.31). No disagreement extraction, adjudication, score pass, production change, commit, push, pull request or merge has occurred. All existing evidence and historical failure files are preserved on `codex/debate-260`.
