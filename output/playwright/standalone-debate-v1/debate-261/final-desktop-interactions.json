@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "final-desktop-interactions",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const checks={}; const a=page.locator(\".ai-extension-accordion\"), s=a.locator(\"summary\"), b=page.locator(\".critique button\").first(); if(await a.evaluate(el=>el.open))await s.click(); await b.scrollIntoViewIfNeeded(); await b.hover(); const settled=()=>page.waitForFunction(()=>Number(getComputedStyle(document.querySelector(\".critique-popover\")).opacity)>0.99); await settled(); checks.pointerCritique=true; await page.screenshot({path:\"output/playwright/standalone-debate-v1/debate-261/final-desktop-critique.png\"}); await page.mouse.move(0,0); await b.focus(); await page.keyboard.press(\"Enter\"); await settled(); checks.critiqueEnter=true; await page.keyboard.press(\"Space\"); await settled(); checks.critiqueSpace=true; checks.aiInitiallyCollapsed=await a.evaluate(el=>!el.open); await s.click(); checks.aiPointerOpened=await a.evaluate(el=>el.open); await page.keyboard.press(\"Enter\"); checks.aiEnterClosed=await a.evaluate(el=>!el.open); await page.keyboard.press(\"Space\"); checks.aiSpaceOpened=await a.evaluate(el=>el.open); await s.scrollIntoViewIfNeeded(); if(Object.values(checks).some(v=>v!==true))throw new Error(JSON.stringify(checks)); return checks; }"
+  ],
+  "startedAt": "2026-09-13T21:11:13.709Z",
+  "completedAt": "2026-09-13T21:11:15.015Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/final-desktop-interactions.txt",
+    "sha256": "b36f5fdb260983129215b17a0169e2013e73dc9b3d6f25fa8359ce4dd11fbbf6",
+    "bytes": 1405
+  },
+  "directIncrementalCostUsd": 0
+}

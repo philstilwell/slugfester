@@ -1,0 +1,10 @@
+{
+  "status": "diagnosed-before-any-production-write",
+  "debateNumber": "261",
+  "error": "TypeError: root.replace is not a function",
+  "cause": "Passing fileRecord directly to Array.map supplied the numeric array index as its optional root argument.",
+  "repair": "Use an explicit single-argument mapping callback for both before and after file records; no evidence or assessment value changed.",
+  "preservedControllerSha256": "f2a7daec10ae98cb8658334b441d830d63ef56ce17290d7b8bb34a3fb9f1a0aa",
+  "productionWritesBeforeFailure": 0,
+  "provisionalValidationDisposition": "The first provisional-production-validation passed only the existing 260 debates, since integration stopped before any write. It is not evidence that Debate 261 passed. Run a separately named validation after successful integration."
+}

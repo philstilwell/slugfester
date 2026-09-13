@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "desktop-critique-diagnostic",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const b=page.locator(\".critique button\").first(); await b.scrollIntoViewIfNeeded(); await b.hover(); await page.waitForFunction(()=>Number(getComputedStyle(document.querySelector(\".critique-popover\")).opacity)>0.99); return await b.evaluate(b=>({active:b===document.activeElement,focusWithin:b.parentElement.matches(\":focus-within\"),hover:b.parentElement.matches(\":hover\"),style:{opacity:getComputedStyle(b.nextElementSibling).opacity,visibility:getComputedStyle(b.nextElementSibling).visibility,pointerEvents:getComputedStyle(b.nextElementSibling).pointerEvents},viewport:[innerWidth,innerHeight]})); }"
+  ],
+  "startedAt": "2026-09-13T21:04:01.226Z",
+  "completedAt": "2026-09-13T21:04:02.400Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/desktop-critique-diagnostic.txt",
+    "sha256": "5c64b49abf6c013bd90d58061d3373542ecc353cc9b866469b790e7bfd143930",
+    "bytes": 832
+  },
+  "directIncrementalCostUsd": 0
+}

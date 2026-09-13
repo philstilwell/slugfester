@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0-administrative-envelope-parse-recovery",
+  "status": "exact-administrative-only-recovery",
+  "debateNumber": "261",
+  "rawFinalResponseSha256": "0d505ca0256bdeae36d442374ba412b5814f803e2f51fdde2da8a56a343419e5",
+  "replacements": [
+    {
+      "from": "{\"Word count 389 words.\n",
+      "to": ""
+    },
+    {
+      "from": "1.Word count 13 words.\n0-bounded-publication-leaf-repair-output",
+      "to": "1.0-bounded-publication-leaf-repair-output"
+    }
+  ],
+  "scope": "Only a stray outer prefix and the schemaVersion string are repaired. The repairs array and every returned value and rationale remain byte-identical. No model retry or assessment change.",
+  "additionalModelAttempts": 0,
+  "originalDiagnostic": "SyntaxError: Bad control character in string literal in JSON at position23"
+}

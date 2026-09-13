@@ -1,0 +1,6 @@
+### Result
+{"checks":{"bioLeftOfGraph":true,"noOverflow":true,"portraitLoaded":true},"bioBounds":{"x":130,"y":322.125,"width":561.203125,"height":292.5546875},"graphBounds":{"x":748.796875,"y":340.3359375,"width":561.203125,"height":256.1328125}}
+### Ran Playwright code
+```js
+await (async (page) => { const b=page.locator(".profile-biography"),g=page.locator(".profile-bio-chart .profile-score-histogram"); const br=await b.boundingBox(),gr=await g.boundingBox(); const checks={bioLeftOfGraph:br.x+br.width<=gr.x+1,noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),portraitLoaded:await page.getByRole("img",{name:"Al Sharpton",exact:true}).evaluate(i=>i.complete&&i.naturalWidth>0)}; await b.scrollIntoViewIfNeeded(); await page.screenshot({path:"output/playwright/standalone-debate-v1/debate-261/desktop-biography.png"}); if(Object.values(checks).some(v=>v!==true))throw new Error(JSON.stringify(checks)); return {checks,bioBounds:br,graphBounds:gr}; })(page);
+```

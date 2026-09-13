@@ -1,0 +1,15 @@
+{
+  "status": "passed-exact-reading-wrapper-recovery",
+  "debateNumber": "261",
+  "preservedAuthenticator": "preserved-authenticator-before-pages-wrapper.mjs",
+  "preservedAuthenticatorSha256": "db7da29259201a3d1585b41cd8eaa46db475d82b32be77e3016254d36d949586",
+  "initialFailure": "The parser collected zero pages because the returned page array was nested in a pages property, then failed the zero-versus-30361-character completeness assertion before release.",
+  "change": "Recognize an array-valued pages wrapper; retain exact source text, contiguous character ranges, model, attempt, no-write and full EOF checks unchanged.",
+  "authenticatedCharacters": 30361,
+  "authenticatedPages": 5,
+  "readingAuthenticationSha256": "91ec1b270fbef3d985b5b98985cbc8107efaa754320c21a9199bbcdacbb902f4",
+  "additionalModelAttempts": 0,
+  "sourceChanges": 0,
+  "judgmentChanges": 0,
+  "scoreChanges": 0
+}

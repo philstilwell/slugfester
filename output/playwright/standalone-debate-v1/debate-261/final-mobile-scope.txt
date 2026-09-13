@@ -1,0 +1,6 @@
+### Result
+{"visible":true,"text":"\n      Source and assessment scope\n      This assessment uses the complete automatic English captions and audio verification of all 31 selected arguments across 23 passages. Under the primary-speaker exception, moderator Jacob Weisberg’s substantive civil-rights, deism, and scripture interventions, together with their directly dependent replies, are excluded from both speakers’ scores.\n    "}
+### Ran Playwright code
+```js
+await (async (page)=>{const note=page.locator(".source-context");await note.scrollIntoViewIfNeeded();await page.screenshot({path:"output/playwright/standalone-debate-v1/debate-261/final-mobile-scope.png"});return {visible:await note.isVisible(),text:await note.textContent()};})(page);
+```

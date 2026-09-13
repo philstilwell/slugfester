@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "reference-occurrence-verified",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => {const id=await page.evaluate(()=>decodeURIComponent(location.hash.slice(1))),target=page.locator(`[id=\"${id}\"]`);if(!id||await target.count()!==1)throw new Error(\"Missing reference occurrence\");await target.scrollIntoViewIfNeeded();return {landedUrl:page.url(),occurrenceFound:true,occurrenceText:await target.textContent(),noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)};}"
+  ],
+  "startedAt": "2026-09-13T21:07:54.534Z",
+  "completedAt": "2026-09-13T21:07:55.547Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/reference-occurrence-verified.txt",
+    "sha256": "4eccb21a5e81c19b1b687b563945e63bf6efe418288f45622553a3d9a5c1764f",
+    "bytes": 1862
+  },
+  "directIncrementalCostUsd": 0
+}

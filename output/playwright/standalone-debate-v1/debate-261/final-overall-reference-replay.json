@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "final-overall-reference-replay",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => {await page.goto(\"http://127.0.0.1:4181/debate/sharpton-hitchens-god-religion-morality-2007/\");await page.waitForLoadState(\"networkidle\");const sideLinks=await page.locator(\".overall-side\").evaluateAll(ss=>ss.map(s=>[...s.querySelectorAll(\"a\")].map(a=>({label:a.textContent.trim(),href:a.getAttribute(\"href\")}))));if(JSON.stringify(sideLinks.map(s=>s.map(x=>x.label)))!==JSON.stringify([[\"Argument from ignorance\",\"Red herring\"],[]]))throw new Error(\"Overall links mismatch\");const first=page.locator(\".argument .tag-wrap a\").first(),href=await first.getAttribute(\"href\");await first.click();await page.waitForLoadState(\"networkidle\");const id=await page.evaluate(()=>decodeURIComponent(location.hash.slice(1))),target=page.locator(`[id=\"${id}\"]`);if(!id||await target.count()!==1)throw new Error(\"Missing reference occurrence\");return {sideLinks,clickedReference:href,landedUrl:page.url(),occurrenceFound:true,occurrenceText:await target.textContent(),noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)};}"
+  ],
+  "startedAt": "2026-09-13T21:18:48.807Z",
+  "completedAt": "2026-09-13T21:18:50.660Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/final-overall-reference-replay.txt",
+    "sha256": "ecea04f7928d7323b43a5ff242203ce6dea135d08ca017acba336772ed7b2b9e",
+    "bytes": 3042
+  },
+  "directIncrementalCostUsd": 0
+}

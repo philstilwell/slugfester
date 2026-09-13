@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "desktop-biography",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const b=page.locator(\".profile-biography\"),g=page.locator(\".profile-bio-chart .profile-score-histogram\"); const br=await b.boundingBox(),gr=await g.boundingBox(); const checks={bioLeftOfGraph:br.x+br.width<=gr.x+1,noOverflow:await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),portraitLoaded:await page.getByRole(\"img\",{name:\"Al Sharpton\",exact:true}).evaluate(i=>i.complete&&i.naturalWidth>0)}; await b.scrollIntoViewIfNeeded(); await page.screenshot({path:\"output/playwright/standalone-debate-v1/debate-261/desktop-biography.png\"}); if(Object.values(checks).some(v=>v!==true))throw new Error(JSON.stringify(checks)); return {checks,bioBounds:br,graphBounds:gr}; }"
+  ],
+  "startedAt": "2026-09-13T21:06:13.593Z",
+  "completedAt": "2026-09-13T21:06:14.645Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/desktop-biography.txt",
+    "sha256": "93a28b280000618a883a175775c610f5df29dd4affc90faaa5520f6ff356efed",
+    "bytes": 1004
+  },
+  "directIncrementalCostUsd": 0
+}

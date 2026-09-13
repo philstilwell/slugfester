@@ -1,0 +1,6 @@
+### Result
+{"active":false,"focusWithin":false,"hover":true,"style":{"opacity":"0.992806","visibility":"visible","pointerEvents":"auto"},"viewport":[1440,1000]}
+### Ran Playwright code
+```js
+await (async (page) => { const b=page.locator(".critique button").first(); await b.scrollIntoViewIfNeeded(); await b.hover(); await page.waitForFunction(()=>Number(getComputedStyle(document.querySelector(".critique-popover")).opacity)>0.99); return await b.evaluate(b=>({active:b===document.activeElement,focusWithin:b.parentElement.matches(":focus-within"),hover:b.parentElement.matches(":hover"),style:{opacity:getComputedStyle(b.nextElementSibling).opacity,visibility:getComputedStyle(b.nextElementSibling).visibility,pointerEvents:getComputedStyle(b.nextElementSibling).pointerEvents},viewport:[innerWidth,innerHeight]})); })(page);
+```

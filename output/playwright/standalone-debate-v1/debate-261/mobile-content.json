@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "mobile-content",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "eval",
+    "async () => { const data = (() => ({url:location.href,title:document.title,width:innerWidth,height:innerHeight,clientWidth:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,heading:document.querySelector('main h1').textContent,body:document.body.textContent,aiText:document.querySelector('.logical-extension').textContent,aiOpen:document.querySelector('.ai-extension-accordion').open,cards:[...document.querySelectorAll('.argument')].map(c=>({side:c.classList.contains('side-pro')?'pro':'con',words:c.querySelector(':scope > p').textContent,critique:c.querySelector('.critique-popover > span').textContent,score:Number(c.querySelector('.argument-meta > strong').textContent),time:c.querySelector('.argument-meta .timestamp-link').textContent.trim(),timestampUrl:c.querySelector('.argument-meta .timestamp-link').href,role:c.querySelector('.argument-meta > span:nth-child(2)').textContent.trim(),tags:[...c.querySelectorAll('.tag-wrap')].map(t=>({label:t.querySelector('a.tag').textContent.trim(),href:t.querySelector('a.tag').getAttribute('href'),context:t.querySelector('.tag-context').textContent}))})),sourceUrl:document.querySelector('a[aria-label=\"Open YouTube source\"]')?.href??[...document.querySelectorAll('a')].find(a=>a.textContent.trim()==='Open YouTube source')?.href,images:[...document.images].map(i=>({src:i.currentSrc,complete:i.complete,naturalWidth:i.naturalWidth})),resourceFailures:performance.getEntriesByType('resource').filter(r=>r.responseStatus>=400).map(r=>({name:r.name,status:r.responseStatus}))}))(); data.imageAssetChecks = await Promise.all([...new Set([...document.images].map(i=>i.src))].map(src=>new Promise(resolve=>{const image=new Image();image.onload=()=>resolve({src,loaded:true,width:image.naturalWidth});image.onerror=()=>resolve({src,loaded:false,width:0});image.src=src;}))); return data; }"
+  ],
+  "startedAt": "2026-09-13T21:05:06.039Z",
+  "completedAt": "2026-09-13T21:05:07.571Z",
+  "exitCode": 0,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/mobile-content.txt",
+    "sha256": "149127de33c386c25e9595da6ba978a0fb776ba6307b3b0c00bad93493fa1fd4",
+    "bytes": 137258
+  },
+  "directIncrementalCostUsd": 0
+}

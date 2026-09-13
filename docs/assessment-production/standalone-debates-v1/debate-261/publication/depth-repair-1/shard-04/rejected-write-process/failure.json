@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-rejected-bounded-repair-execution",
+  "status": "quarantined-process-contract-failed-replacement-not-authorized",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "shardId": "shard-04",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/execution-plan.json",
+    "sha256": "8bbde92ad00c8c65a96ff19738043b02057b76a5eeccc90ed431fde63ec9fe64",
+    "bytes": 821
+  },
+  "readingAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/reading-authentication.json",
+    "sha256": "0a9db03108eefbdbed41e0f374c31d8dac6cf2813c7279170124ce3d1bd28f4b",
+    "bytes": 2151
+  },
+  "preservedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/rejected-write-process/preserved-final-output.json",
+    "sha256": "f8d6492117424836eb3b5abd7902586e12a355bd0169615c9b8f576099b7cb6d",
+    "bytes": 2203
+  },
+  "toolTrace": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/rejected-write-process/tool-write-trace.json",
+    "sha256": "0025f276f5d1edd0bfb75e4192c486b8fa30e5f1c1a4f15e02e42d24ca5ecbf9",
+    "bytes": 7213
+  },
+  "diagnosis": "Six write-tool calls: three failed malformed/wrong-path requests, an unauthorized temporary output, deletion of that temporary while adding the assigned output, and a later output-envelope patch. The temporary contained only {} and was deleted by the worker; exact tool evidence is retained.",
+  "writeToolCalls": 6,
+  "successfulWriteToolCalls": 3,
+  "failedWriteToolCalls": 3,
+  "unexpectedPathsVerifiedAbsent": [
+    "/Users/phgrading Directory anything",
+    "/Users/philst remindersennials(profile conversations)? ",
+    "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-261-worktree/docs/assessment-production/standalone-debates-v1/debate-261/publication/depth-repair-1/shard-04/output-bad.json"
+  ],
+  "sourceAndScoreChanges": 0,
+  "publicationApplied": false,
+  "modelContextAttempts": 1,
+  "additionalContextAttemptsAuthorized": 0,
+  "directIncrementalCostUsd": 0,
+  "sessionPrefix": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T15-05-01-01a09c28-99c4-7cc3-80f9-c4a41f9a5931.jsonl",
+    "bytes": 354977,
+    "sha256": "2fc7260413e61b575a9f67d0a1e2a31ea5d9880b02ecbe3285eecee70ea2bd71"
+  },
+  "nextAction": "Request one fresh isolated replacement attempt for this same two-leaf shard, retain all valid work and rejected evidence, and use a new disjoint output directory."
+}

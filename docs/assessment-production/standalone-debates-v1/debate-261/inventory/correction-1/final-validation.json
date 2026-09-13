@@ -1,0 +1,688 @@
+{
+  "schemaVersion": "1.0-inventory-controller-inspection",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "status": "complete-validated-and-frozen-before-judgment",
+  "createdAt": "2026-09-13T18:06:04.461Z",
+  "controller": {
+    "path": "scripts/tmp-finalize-inventory-261.mjs",
+    "sha256": "114c46b2448e2627cb3a607bdae52ab24aad60b5186a917892c1abd0a8d68fda",
+    "bytes": 16200
+  },
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/model-output.json",
+    "sha256": "c3a1e53ccf2ebef0bfabf1867bbca9a460eee78ce956b3ab747ffddf6eb3652f",
+    "bytes": 83664
+  },
+  "sourceExpandedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/inventory.json",
+    "sha256": "4957c6832a79c0c5efc4bccfae5a9a382c73d0d647a6b7c78ba89e14fffdbfcc",
+    "bytes": 131882
+  },
+  "rawOutputPreserved": true,
+  "modifications": "Exactly eight authenticated repair leaves, independently recomputed balance/capacity counts, and deterministic exact source text/endpoints. All other original fields preserved.",
+  "authenticatedRepairs": [
+    {
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quote-lengths/packet.json",
+        "sha256": "c89a044c437e8d342c94a0f4fbfa71e18f3fd5d07149ca24481022bf3ffc87e6",
+        "bytes": 41034
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quote-lengths/output.json",
+        "sha256": "a58e6bf2a14a06754053713b5c7b7f82b6901b95b9e237e1c47d7315da20de95",
+        "bytes": 1040
+      },
+      "edits": [
+        {
+          "path": "/moves/19/quoteEligibleExactSpans",
+          "moveId": "con-secular-evil-conceded",
+          "field": "quoteEligibleExactSpans",
+          "value": [
+            "behave the same way",
+            "learn the pleasures of thinking for themselves"
+          ],
+          "rationale": "Removes the ineligible two-word span while preserving both longer exact alternatives found in the supplied source excerpt."
+        },
+        {
+          "path": "/moves/23/quoteEligibleExactSpans",
+          "moveId": "con-growth-from-insecurity-not-truth",
+          "field": "quoteEligibleExactSpans",
+          "value": [
+            "cling to stability certainty and consolation",
+            "the beauty of science and of reason"
+          ],
+          "rationale": "Removes the ineligible two-word span while preserving both longer exact alternatives found in the supplied source excerpt."
+        }
+      ]
+    },
+    {
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/reply-kinds/packet.json",
+        "sha256": "8e45d7734ce0d384677315fc3c2dc8d1b228b8d699ecb37c53e54e6060ae1d0a",
+        "bytes": 38679
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/reply-kinds/output.json",
+        "sha256": "9a4382ca0dc9f8690dd767f35763c8461936143410b5c531a511ba5fece76530",
+        "bytes": 923
+      },
+      "edits": [
+        {
+          "path": "/moves/20/moveKind",
+          "moveId": "con-scientific-belief-coexistence",
+          "field": "moveKind",
+          "value": "reply",
+          "rationale": "The passage directly denies the scientific-warrant component of pro-order-and-moral-source by distinguishing private belief from evidence supplied by a scientist's discipline."
+        },
+        {
+          "path": "/moves/21/moveKind",
+          "moveId": "con-transcendence-without-supernatural",
+          "field": "moveKind",
+          "value": "reply",
+          "rationale": "The passage directly answers pro-personal-experience-confirms-god through the fixed underdetermination component, showing that transcendent experience need not support a supernatural interpretation."
+        }
+      ]
+    },
+    {
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/replacement-1/packet.json",
+        "sha256": "e0da57a459fdd18a2e52f6fb890cbd08feb8cd8c2b2848ccf24f6b049126a492",
+        "bytes": 39587
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/quotation-and-closing-boundary/replacement-1/output.json",
+        "sha256": "ffcb1b649dd866979614cf212c577931feaf7b01be94e57c1fa981794db9b3dd",
+        "bytes": 1027
+      },
+      "edits": [
+        {
+          "path": "/moves/29/quoteEligibleExactSpans",
+          "moveId": "con-faith-specific-extraordinary-harms",
+          "field": "quoteEligibleExactSpans",
+          "value": [
+            "committed because of and only because of faith"
+          ],
+          "rationale": "The removed phrase begins before event 1790 and is absent from the selected excerpt, while the retained quotation appears exactly in events 1803–1804."
+        },
+        {
+          "path": "/moves/30/sourceSpan",
+          "moveId": "pro-closing-existence-burden",
+          "field": "sourceSpan",
+          "value": {
+            "startEvent": 1918,
+            "endEvent": 1957
+          },
+          "rationale": "Event 1958 contains only the non-substantive phrase “get an autograph”; ending at event 1957 preserves the complete scope, origin, and scientific-data support."
+        }
+      ]
+    },
+    {
+      "packet": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/replacement-1/packet.json",
+        "sha256": "b3fa97d91c047eff79a12dacc3c1fcb21023b027addae2920510865ce7ca88d1",
+        "bytes": 26628
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/replacement-1/review.json",
+        "sha256": "40de9353edbcbc241ecb099140fc9d638336d3b50e0c100b5a3911655c42b184",
+        "bytes": 930
+      },
+      "edits": [
+        {
+          "path": "/moves/23/moveKind",
+          "moveId": "con-growth-from-insecurity-not-truth",
+          "field": "moveKind",
+          "value": "reply",
+          "rationale": "The move directly answers the earlier personal-God-and-order case through its explicit psychological-alternative response component."
+        },
+        {
+          "path": "/moves/23/sourceSpan",
+          "moveId": "con-growth-from-insecurity-not-truth",
+          "field": "sourceSpan",
+          "value": {
+            "startEvent": 1490,
+            "endEvent": 1513
+          },
+          "rationale": "Event 1490 begins the complete modernity and insecurity argument, excluding the separate government-funded-chaplains objection while retaining the full consolation inference."
+        }
+      ]
+    }
+  ],
+  "replacementExecution": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "isolation": "fresh-built-in-subagent-fork-none",
+    "readingAuthentication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/replacement-1/reading-authentication.json",
+      "sha256": "6c7c7af6d089e20267d805097fe403735f4f9411ca38413ebfe47ba38aee6f43",
+      "bytes": 1393
+    },
+    "sessionPrefix": {
+      "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T14-02-23-01a09bef-406c-7303-802d-e6dfc902076a.jsonl",
+      "bytes": 265940,
+      "sha256": "f37d5145e1e6e321bca461d49bc875f350ea473abc144b20eb41ad7e9a100652"
+    },
+    "attempts": 1,
+    "retries": 0,
+    "actualOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/replacement-1/review.json",
+      "sha256": "40de9353edbcbc241ecb099140fc9d638336d3b50e0c100b5a3911655c42b184",
+      "bytes": 930
+    },
+    "outputRoutingDeviation": "The sole write used review.json instead of output.json within the same authorized replacement directory. The complete returned JSON is preserved unchanged and routed by its actual hash and path. No semantic repair, second model attempt, or output overwrite occurred.",
+    "exactToolCall": {
+      "type": "custom_tool_call",
+      "id": "ctc_01c7c9cb86afcba5016aa6e56e064c87d1a92bf951a4e1408e",
+      "status": "completed",
+      "call_id": "call_RraWK7PujniGFS2diHhCv3Qe",
+      "name": "exec",
+      "input": "const output = {\n  status: \"complete\",\n  shardId: \"consolation-span-and-kind\",\n  edits: [\n    {\n      path: \"/moves/23/moveKind\",\n      moveId: \"con-growth-from-insecurity-not-truth\",\n      field: \"moveKind\",\n      value: \"reply\",\n      rationale: \"The move directly answers the earlier personal-God-and-order case through its explicit psychological-alternative response component.\"\n    },\n    {\n      path: \"/moves/23/sourceSpan\",\n      moveId: \"con-growth-from-insecurity-not-truth\",\n      field: \"sourceSpan\",\n      value: {\n        startEvent: 1490,\n        endEvent: 1513\n      },\n      rationale: \"Event 1490 begins the complete modernity and insecurity argument, excluding the separate government-funded-chaplains objection while retaining the full consolation inference.\"\n    }\n  ],\n  audit: {\n    onlyDeclaredLeaves: true,\n    scoreBlind: true,\n    noJudgmentOrArgumentSubstanceChanged: true\n  }\n};\nconst topKeys = Object.keys(output);\nconst expectedTopKeys = [\"status\", \"shardId\", \"edits\", \"audit\"];\nconst expectedPaths = [\"/moves/23/moveKind\", \"/moves/23/sourceSpan\"];\nif (JSON.stringify(topKeys) !== JSON.stringify(expectedTopKeys)) throw new Error(\"Invalid top-level keys\");\nif (!Array.isArray(output.edits) || output.edits.length !== 2) throw new Error(\"Invalid edits\");\nif (JSON.stringify(output.edits.map(e => e.path)) !== JSON.stringify(expectedPaths)) throw new Error(\"Invalid edit paths\");\nfor (const edit of output.edits) {\n  if (JSON.stringify(Object.keys(edit)) !== JSON.stringify([\"path\", \"moveId\", \"field\", \"value\", \"rationale\"])) throw new Error(\"Invalid edit keys\");\n  if (edit.moveId !== \"con-growth-from-insecurity-not-truth\" || edit.rationale.length < 40) throw new Error(\"Invalid edit content\");\n}\nif (JSON.stringify(Object.keys(output.audit)) !== JSON.stringify([\"onlyDeclaredLeaves\", \"scoreBlind\", \"noJudgmentOrArgumentSubstanceChanged\"])) throw new Error(\"Invalid audit keys\");\nif (!Object.values(output.audit).every(v => v === true)) throw new Error(\"Invalid audit values\");\nconst serialized = JSON.stringify(output, null, 2) + \"\\n\";\nconst patch = \"*** Begin Patch\\n*** Add File: /Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-261-worktree/docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/replacement-1/review.json\\n\" + serialized.split(\"\\n\").slice(0, -1).map(line => \"+\" + line).join(\"\\n\") + \"\\n*** End Patch\";\nconst result = await tools.apply_patch(patch);\ntext(result);",
+      "internal_chat_message_metadata_passthrough": {
+        "turn_id": "01a09bef-40ee-7072-ac0f-b002228c75a8",
+        "create_time": 1789322602.736161
+      }
+    },
+    "directIncrementalCostUsd": 0
+  },
+  "semanticReview": {
+    "status": "complete",
+    "completeOriginalSourceAndAllMovesReviewedBeforeRepairs": true,
+    "allEightRepairedLeavesReviewed": true,
+    "unrelatedChaplainsPrefaceRemovedOnly": true,
+    "closingAutographLogisticsRemovedOnly": true,
+    "claimsReasonsInferencesMembershipImportanceWeightsLinksAndConfidencesUnchanged": true
+  },
+  "derivedTotals": {
+    "pro": 14,
+    "con": 17,
+    "absoluteDifference": 3
+  },
+  "derivedSections": [
+    {
+      "sectionId": "opening-truth-and-greatness",
+      "pro": 2,
+      "con": 3,
+      "absoluteDifference": 1
+    },
+    {
+      "sectionId": "god-versus-religion",
+      "pro": 3,
+      "con": 3,
+      "absoluteDifference": 0
+    },
+    {
+      "sectionId": "sources-of-morality",
+      "pro": 3,
+      "con": 3,
+      "absoluteDifference": 0
+    },
+    {
+      "sectionId": "experience-and-secular-evil",
+      "pro": 1,
+      "con": 2,
+      "absoluteDifference": 1
+    },
+    {
+      "sectionId": "science-meaning-and-transcendence",
+      "pro": 2,
+      "con": 3,
+      "absoluteDifference": 1
+    },
+    {
+      "sectionId": "suffering-coercion-and-closing",
+      "pro": 3,
+      "con": 3,
+      "absoluteDifference": 0
+    }
+  ],
+  "sourceEventCount": 1973,
+  "checks": [
+    {
+      "name": "exact identity and scope",
+      "status": "passed"
+    },
+    {
+      "name": "con-religion-primitive-explanation: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-religion-primitive-explanation: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-religion-primitive-explanation: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-scriptural-violence: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-scriptural-violence: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-scriptural-violence: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-surveillance-and-hell: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-surveillance-and-hell: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-surveillance-and-hell: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-misuse-does-not-disprove: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-misuse-does-not-disprove: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-misuse-does-not-disprove: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-order-and-moral-source: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-order-and-moral-source: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-order-and-moral-source: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-authority-claim-unearned: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-authority-claim-unearned: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-authority-claim-unearned: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-human-noncentrality: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-human-noncentrality: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-human-noncentrality: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-dogma-is-not-god: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-dogma-is-not-god: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-dogma-is-not-god: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-misuse-concession-and-scope: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-misuse-concession-and-scope: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-misuse-concession-and-scope: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-texts-mean-what-they-command: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-texts-mean-what-they-command: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-texts-mean-what-they-command: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-target-is-god-not-texts: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-target-is-god-not-texts: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-target-is-god-not-texts: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-needs-governor: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-needs-governor: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-needs-governor: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-morality-precedes-revelation: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-morality-precedes-revelation: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-morality-precedes-revelation: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-creator-unsupported-private-only: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-creator-unsupported-private-only: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-creator-unsupported-private-only: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-personal-experience-confirms-god: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-personal-experience-confirms-god: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-personal-experience-confirms-god: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-not-temporary-power: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-not-temporary-power: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-not-temporary-power: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-innate-morality-and-religious-corruption: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-innate-morality-and-religious-corruption: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-innate-morality-and-religious-corruption: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-atheists-also-do-evil: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-atheists-also-do-evil: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-atheists-also-do-evil: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-private-experience-no-public-proof: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-private-experience-no-public-proof: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-private-experience-no-public-proof: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-secular-evil-conceded: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-secular-evil-conceded: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-secular-evil-conceded: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-scientific-belief-coexistence: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-scientific-belief-coexistence: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-scientific-belief-coexistence: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-transcendence-without-supernatural: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-transcendence-without-supernatural: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-transcendence-without-supernatural: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-personal-god-and-order: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-personal-god-and-order: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-personal-god-and-order: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-growth-from-insecurity-not-truth: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-growth-from-insecurity-not-truth: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-growth-from-insecurity-not-truth: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-knowledge-expands-unanswered-questions: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-knowledge-expands-unanswered-questions: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-knowledge-expands-unanswered-questions: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-suffering-has-natural-causes: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-suffering-has-natural-causes: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-suffering-has-natural-causes: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-is-created-pattern: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-is-created-pattern: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-morality-is-created-pattern: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-private-belief-no-coercion: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-private-belief-no-coercion: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-private-belief-no-coercion: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-framework-not-daily-command: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-framework-not-daily-command: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-framework-not-daily-command: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "con-faith-specific-extraordinary-harms: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "con-faith-specific-extraordinary-harms: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "con-faith-specific-extraordinary-harms: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "pro-closing-existence-burden: raw endpoints and exact expansion",
+      "status": "passed"
+    },
+    {
+      "name": "pro-closing-existence-burden: packet contract and confidence",
+      "status": "passed"
+    },
+    {
+      "name": "pro-closing-existence-burden: full rolling-event exclusion intersection",
+      "status": "passed"
+    },
+    {
+      "name": "section and bridge text contract",
+      "status": "passed"
+    },
+    {
+      "name": "independent balance and publication-capacity recomputation",
+      "status": "passed"
+    },
+    {
+      "name": "complete source coverage partition",
+      "status": "passed"
+    },
+    {
+      "name": "current standalone inventory validator",
+      "status": "passed"
+    },
+    {
+      "name": "current primary-speaker scope validator",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "libraryValidation": {
+    "status": "passed",
+    "debateNumber": "261",
+    "sections": 6,
+    "moves": 31,
+    "belowHighAttributionMoveIds": [
+      "con-religion-primitive-explanation",
+      "con-scriptural-violence",
+      "con-surveillance-and-hell",
+      "pro-misuse-does-not-disprove",
+      "pro-order-and-moral-source",
+      "con-authority-claim-unearned",
+      "con-human-noncentrality",
+      "pro-dogma-is-not-god",
+      "pro-misuse-concession-and-scope",
+      "con-texts-mean-what-they-command",
+      "pro-target-is-god-not-texts",
+      "pro-morality-needs-governor",
+      "con-morality-precedes-revelation",
+      "con-creator-unsupported-private-only",
+      "pro-personal-experience-confirms-god",
+      "pro-morality-not-temporary-power",
+      "con-innate-morality-and-religious-corruption",
+      "pro-atheists-also-do-evil",
+      "con-private-experience-no-public-proof",
+      "con-secular-evil-conceded",
+      "con-scientific-belief-coexistence",
+      "con-transcendence-without-supernatural",
+      "pro-personal-god-and-order",
+      "con-growth-from-insecurity-not-truth",
+      "pro-knowledge-expands-unanswered-questions",
+      "con-suffering-has-natural-causes",
+      "pro-morality-is-created-pattern",
+      "con-private-belief-no-coercion",
+      "pro-framework-not-daily-command",
+      "con-faith-specific-extraordinary-harms",
+      "pro-closing-existence-burden"
+    ]
+  },
+  "scopeValidation": {
+    "status": "passed",
+    "protocolId": "primary-speaker-scope-exception-v1",
+    "hostAdvocacyMs": 101109,
+    "dependentResponseMs": 274219,
+    "hostAdvocacyShare": 0.02044807843597247
+  },
+  "judgmentLaunched": false,
+  "inventoryFrozen": true,
+  "directIncrementalCostUsd": 0
+}

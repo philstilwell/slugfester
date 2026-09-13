@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-authenticated-administrative-envelope-recovery",
+  "status": "passed-with-all-substantive-review-values-retained",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "pass": "a",
+  "raw": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/rhetorical-tag-review-1/pass-a/raw-final-response.txt",
+    "sha256": "b85dbb6f5de440f53d220491b9bf8525ca803b3f6820ad9a668c8cd7bfdeb232",
+    "bytes": 37210
+  },
+  "preserved": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/rhetorical-tag-review-1/pass-a/administrative-recovery-1/preserved-output.json",
+      "sha256": "0ebdcc53d878802d611aec6e2dddf32becfa48e51a652fdf6705c1b6b9ba3b80",
+      "bytes": 42944
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/rhetorical-tag-review-1/pass-a/administrative-recovery-1/preserved-validation.json",
+      "sha256": "401328ff2a932be63fcac25899848cd574477117b9522e944b4b790bc0083619",
+      "bytes": 21060
+    }
+  ],
+  "normalizedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/publication/rhetorical-tag-review-1/pass-a/administrative-recovery-1/normalized-output.json",
+    "sha256": "82668a07047f01bdb9c464b77c0353d020059b73c371cb58802defc97c1b364b",
+    "bytes": 58192
+  },
+  "originalValidator": {
+    "path": "scripts/tmp-check-rhetorical-261.mjs",
+    "sha256": "9887fe462bfd2b4e95f2d9fc85fa9de599d0b6c951565ad6f16e35b9d1fcd4ec",
+    "bytes": 6109
+  },
+  "originalValidationBlockSha256": "5504b45c65acf64d9f8a565879e17e007ed59a16ad09d4c1c0e5099fbdf397c7",
+  "notes": [
+    {
+      "kind": "unambiguous-duplicate-decision-recovery",
+      "candidateKey": "pro-morality-not-temporary-power|fallacy|red-herring",
+      "source": "The exact duplicate acceptedTags row explicitly says accepted:true; all other fields match the candidate row byte-for-byte."
+    },
+    {
+      "kind": "redundant-key-typo",
+      "before": "con-human-noncentrality|fallacy|red h hostlac",
+      "after": "con-human-noncentrality|fallacy|Red herring",
+      "source": "Ordered candidate row, exact catalog label and URL, accepted duplicate, and unchanged diversion rationale all identify Red herring."
+    },
+    {
+      "kind": "administrative-field-normalization",
+      "changes": [
+        "externalUrl → url",
+        "accepted boolean → decision accepted/rejected",
+        "candidateKey slug spelling → exact contract label spelling",
+        "explicit all-thirteen-reviewed declaration → enumerated sole packet definition keys",
+        "execution audit fields from authenticated session, sole packet, no-write trace and frozen plan"
+      ],
+      "newModelWork": false
+    }
+  ],
+  "audit": {
+    "modelAttempts": 1,
+    "modelRetries": 0,
+    "newModelCalls": 0,
+    "candidateDecisionsChanged": 0,
+    "candidatesAdded": 0,
+    "candidatesRemoved": 0,
+    "contextChanges": 0,
+    "rationaleChanges": 0,
+    "reviewCoverageChanges": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

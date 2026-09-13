@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileRecord,serializedJson} from './lib/assessment-production-standalone-debate-v1.mjs';
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json'));
+const route=registry.debates.find(x=>x.debateNumber==='261'),R=route.root;
+assert.equal(route.videoId,'HPYxA8dYLBY');
+const prior=registry.debates.find(x=>Number(x.debateNumber)===Number(route.debateNumber)-1);
+const recordPath=`${R}/provenance/validation-runtime-prepare.json`;
+if(process.argv[2]==='prepare'){
+ assert.equal(fs.existsSync(recordPath),false);
+ // Prior paths are historical source locations, never destinations for current assessment output.
+ const priorMap=JSON.parse(fs.readFileSync(`${prior.root}/provenance/validation-runtime-prepare.json`)).links;
+ const ownRoot=process.cwd(),repoRoot=path.resolve('../..');
+ const list=priorMap.concat([{path:`.assessment-cache/captions/${prior.videoId}`,target:path.join(repoRoot,'.assessment-cache',`debate-${prior.debateNumber}-worktree`,'.assessment-cache/captions',prior.videoId)}]);
+ const links=[];
+ for(const entry of list){assert.ok(entry.path.startsWith('.assessment-cache/captions/')||entry.path==='output/transcribe/v2.2-audio-verification');assert.ok(fs.existsSync(entry.target),entry.target);const dest=path.resolve(entry.path);assert.ok(dest.startsWith(ownRoot+'/'));assert.equal(fs.existsSync(dest),false,dest);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.symlinkSync(entry.target,dest,'dir');links.push(entry);}
+ const corpus=JSON.parse(fs.readFileSync('docs/calibration/v2.1/corpus-transcript-audit.json'));let hashesChecked=0;
+ for(const d of corpus.debates){for(const [p,h] of [[d.transcriptStorage,d.transcriptSha256],[d.eventsStorage,d.normalizedEventsSha256]]){assert.equal(fileRecord(p).sha256,h,p);hashesChecked++;}}
+ fs.writeFileSync(recordPath,serializedJson({status:'prepared-existing-local-source-access',debateNumber:route.debateNumber,links,hashesChecked,sourceTargetsWritten:false,newDownloads:0,paidCalls:0,controller:fileRecord('scripts/tmp-validation-runtime-261.mjs')}),{flag:'wx'});
+ console.log({links:links.length,hashesChecked});
+}else if(process.argv[2]==='cleanup'){
+ const r=JSON.parse(fs.readFileSync(recordPath));for(const e of r.links){assert.equal(fs.lstatSync(e.path).isSymbolicLink(),true);assert.equal(fs.readlinkSync(e.path),e.target);fs.unlinkSync(e.path);assert.equal(fs.existsSync(e.target),true);}
+ fs.writeFileSync(`${R}/provenance/validation-runtime-cleanup.json`,serializedJson({status:'removed-owned-links-original-targets-preserved',debateNumber:route.debateNumber,removedLinks:r.links.length,sourceTargetsWritten:false}),{flag:'wx'});console.log('Owned source links removed; original evidence preserved.');
+}else throw new Error('Expected prepare or cleanup');

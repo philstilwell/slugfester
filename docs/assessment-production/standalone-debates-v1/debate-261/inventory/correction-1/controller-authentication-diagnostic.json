@@ -1,0 +1,12 @@
+{
+  "status": "controller-parser-corrected-before-any-release",
+  "debateNumber": "261",
+  "affectedShards": ["quote-lengths", "quotation-and-closing-boundary", "reply-kinds"],
+  "failure": "Authentication controller rejected the legitimate non-mutating wait_agent call because its initial tool-name allowlist contained only exec and send_message.",
+  "preservedController": "controller-authentication-v1.mjs",
+  "sourceDiagnosis": "Actual session tool records show only packet reads, parent notification, and waiting for release. No additional input or output write was observed.",
+  "correction": "Recognize wait_agent as a non-mutating waiting operation. Exact packet comparison, every-page coverage, model checks, no-truncation checks and zero-write checks remain unchanged.",
+  "modelReruns": 0,
+  "assessmentChanges": 0,
+  "directIncrementalCostUsd": 0
+}

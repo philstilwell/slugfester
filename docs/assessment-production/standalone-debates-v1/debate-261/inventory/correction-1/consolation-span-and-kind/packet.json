@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "1.0-bounded-score-blind-inventory-field-repair",
+  "status": "frozen-before-one-repair-attempt",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "shardId": "consolation-span-and-kind",
+  "motion": "Is God great?",
+  "initialRawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/model-output.json",
+    "sha256": "c3a1e53ccf2ebef0bfabf1867bbca9a460eee78ce956b3ab747ffddf6eb3652f",
+    "bytes": 83664
+  },
+  "rejectedInspection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/controller-inspection.json",
+    "sha256": "d7dd4325e9fee80a744c29a6b9ef92b33fdcea9ddd3659e86ab7ae69e1f7e6bd",
+    "bytes": 15385
+  },
+  "allowedFields": [
+    {
+      "path": "/moves/23/moveKind",
+      "moveId": "con-growth-from-insecurity-not-truth",
+      "field": "moveKind",
+      "before": "constructive",
+      "instruction": "This is marked constructive but already has an earlier response target and a detailed response component. Confirm whether reply accurately describes the existing argument relationship, without modifying links, summaries, burden or evidence. Only the enum may change. If the existing relationship is not supported, report blocked."
+    },
+    {
+      "path": "/moves/23/sourceSpan",
+      "moveId": "con-growth-from-insecurity-not-truth",
+      "field": "sourceSpan",
+      "before": {
+        "startEvent": 1469,
+        "endEvent": 1513
+      },
+      "instruction": "The selected span begins with a separate objection to government-funded chaplains that is unnecessary to the selected consolation/popularity inference. Narrow the start to the first complete source event beginning the modernity/insecurity argument, while preserving endEvent and all selected claim, reasons, inference, and remaining eligible quotations. Return only {startEvent,endEvent}; the parent derives exact text and times. Do not include the unrelated first answer merely to retain a long span."
+    }
+  ],
+  "selectedMoves": [
+    {
+      "moveId": "con-growth-from-insecurity-not-truth",
+      "sectionId": "science-meaning-and-transcendence",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1469,
+        "endEvent": 1513,
+        "startMs": 3965869,
+        "endMs": 4087329,
+        "excerpt": "being callous can be inaudible I don't think that we should be paying for chaplains I don't think the US government should be employing now James James Madison's co-author of the Virginia statute on religious freedom and over the First Amendment therefore was very adamant on the point very clear there shouldn't be it's flat out on unconstitutional to pay or employ a chaplain to open the procedures of Congress or to be in the Armed Forces we can't have chaplains on our payroll that's that people who want to pray can't be stopped but they can do it of all the solitary activities apart from the search for nevermind surely that's one that doesn't need a paid state mediator it's a negation of the American Revolution so that's first second yes the modernity involving as it does a huge exchange of Technology and population and innovation and a very churning of the trigonis manner of course means that a lot of lives have to be lived in a very insecure and risky way and it's not at all unlike our nature as a species to try and cling to stability certainty and consolation in those cases it explains itself it seems to me what is notable though is that hasn't come up in thousands of years with any superior explanation to the old ones it still is going back to myths that were discredited and exploded many years ago and these of course turn out to be false consolations whereas the consolations of philosophy and over the aesthetic and of the beauty of science and of reason available to us all the time and really able to explain why things happen why terrible wounds are inflicted in Afghanistan so no no that won't do"
+      },
+      "quoteEligibleExactSpans": [
+        "cling to stability certainty and consolation",
+        "false consolations",
+        "the beauty of science and of reason"
+      ],
+      "claimSummary": "Religion's growth amid danger and modern disruption is explained by demand for certainty and consolation, not by the truth or superiority of its explanations.",
+      "reasonSummary": "Hitchens links insecurity to human consolation-seeking, argues religion still recycles discredited myths, and contrasts those with philosophy, aesthetics, science, and reason.",
+      "inferenceSummary": {
+        "premise": "People predictably seek stable consolation under risk, while religious popularity has not produced improved explanations.",
+        "inference": "Psychological demand explains growth without validating the content that satisfies it.",
+        "conclusion": "Religious resurgence is not evidence that God exists or is great."
+      },
+      "burdenContact": {
+        "bridgeId": "con-natural-moral-explanation",
+        "tier": "central",
+        "rationale": "It offers a human explanation for persistent belief and alternative sources of consolation and understanding."
+      },
+      "importance": 2,
+      "importanceRationale": "It addresses popularity and existential usefulness, important but secondary evidence for the motion.",
+      "respondsToIds": [
+        "pro-personal-god-and-order"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "pro-personal-god-and-order",
+          "component": "psychological-alternative",
+          "description": "Explains felt need and persistence through insecurity and consolation rather than divine contact."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The constitutional objection to state chaplains and praise of reason identify Hitchens, but captions lack labels.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The insecurity and false-consolation thesis is clear, though several images and transitions are poorly recognized.",
+      "spanLengthRationale": "The psychological explanation and comparison with secular consolations must remain together to establish both cause and alternative."
+    }
+  ],
+  "relatedEarlierMoves": [
+    {
+      "moveId": "pro-personal-god-and-order",
+      "sectionId": "science-meaning-and-transcendence",
+      "side": "pro",
+      "speaker": "Al Sharpton",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1411,
+        "endEvent": 1439,
+        "startMs": 3805480,
+        "endMs": 3893090,
+        "excerpt": "do not believe that everyone believes in things that are illogical I think that and there are different theologians that approach it differently I guess the closest well not exactly where I am but Paul Tillich that talks about a personal God would be going in the direction that I believe I believe in my own experiences and my own relationship with God and that is not based on any illogical unbelievable act I do not believe things that are necessarily part of dogma and I think that Richard you whoever has the right to disbelieve it without being a freak but I don't think that I am a freak that believes in illogical things because I believe that the reason the world operates in a certain order is because there is a supreme force that ordered it and I don't think that I happen to agree with Richard that I think religion has been one of the most misused things in history but I don't think that has anything to do with the existence or non-existence of God I think that has something to do with man's misuse or use of what is is absolutely there and that is the Supreme Being thank you we have a"
+      },
+      "quoteEligibleExactSpans": [
+        "my own relationship with God",
+        "a supreme force that ordered it"
+      ],
+      "claimSummary": "Personal theism is neither illogical dogma nor institutional abuse because it rests on experience and the ordered operation of the world.",
+      "reasonSummary": "Sharpton invokes his own relationship with God and the inference from regular order to a supreme ordering force while agreeing that religion has often been misused.",
+      "inferenceSummary": {
+        "premise": "Personal experience and persistent natural order remain even after dogmatic and institutional claims are set aside.",
+        "inference": "Those independent grounds can support a personal God without accepting every religious assertion.",
+        "conclusion": "Misused religion does not make Sharpton's personal belief illogical or false."
+      },
+      "burdenContact": {
+        "bridgeId": "pro-personal-theism",
+        "tier": "motion",
+        "rationale": "This integrates Sharpton's experiential and design grounds into his narrower affirmative position."
+      },
+      "importance": 3,
+      "importanceRationale": "It is a concise later restatement of the exact version of theism the pro side asks to have assessed.",
+      "respondsToIds": [
+        "con-scientific-belief-coexistence",
+        "con-transcendence-without-supernatural"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "con-scientific-belief-coexistence",
+          "component": "independent-inference",
+          "description": "Returns to world order as a rational ground rather than relying on scientists' authority."
+        },
+        {
+          "targetMoveId": "con-transcendence-without-supernatural",
+          "component": "personal-warrant",
+          "description": "Maintains that his own experience supports relationship with God even if others interpret transcendence differently."
+        }
+      ],
+      "attributionConfidence": "medium",
+      "attributionRationale": "The personal-God defense and agreement about misuse identify Sharpton's reply; the source is unlabeled.",
+      "materialWordingConfidence": "medium",
+      "materialWordingRationale": "The experience, order, and misuse distinctions are repeated plainly with modest ASR noise."
+    }
+  ],
+  "originalEvents": [
+    {
+      "moveId": "con-growth-from-insecurity-not-truth",
+      "events": [
+        {
+          "eventIndex": 1469,
+          "startMs": 3965869,
+          "durationMs": 6901,
+          "text": "being callous can be inaudible I don't"
+        },
+        {
+          "eventIndex": 1470,
+          "startMs": 3970820,
+          "durationMs": 4590,
+          "text": "think that we should be paying for"
+        },
+        {
+          "eventIndex": 1471,
+          "startMs": 3972770,
+          "durationMs": 7770,
+          "text": "chaplains I don't think the US"
+        },
+        {
+          "eventIndex": 1472,
+          "startMs": 3975410,
+          "durationMs": 7140,
+          "text": "government should be employing now James"
+        },
+        {
+          "eventIndex": 1473,
+          "startMs": 3980540,
+          "durationMs": 3150,
+          "text": "James Madison's co-author of the"
+        },
+        {
+          "eventIndex": 1474,
+          "startMs": 3982550,
+          "durationMs": 2760,
+          "text": "Virginia statute on religious freedom"
+        },
+        {
+          "eventIndex": 1475,
+          "startMs": 3983690,
+          "durationMs": 3500,
+          "text": "and over the First Amendment therefore"
+        },
+        {
+          "eventIndex": 1476,
+          "startMs": 3985310,
+          "durationMs": 5780,
+          "text": "was very adamant on the point very clear"
+        },
+        {
+          "eventIndex": 1477,
+          "startMs": 3987190,
+          "durationMs": 6520,
+          "text": "there shouldn't be it's flat out on"
+        },
+        {
+          "eventIndex": 1478,
+          "startMs": 3991090,
+          "durationMs": 3820,
+          "text": "unconstitutional to pay or employ a"
+        },
+        {
+          "eventIndex": 1479,
+          "startMs": 3993710,
+          "durationMs": 3149,
+          "text": "chaplain to open the procedures of"
+        },
+        {
+          "eventIndex": 1480,
+          "startMs": 3994910,
+          "durationMs": 3480,
+          "text": "Congress or to be in the Armed Forces we"
+        },
+        {
+          "eventIndex": 1481,
+          "startMs": 3996859,
+          "durationMs": 3871,
+          "text": "can't have chaplains on our payroll"
+        },
+        {
+          "eventIndex": 1482,
+          "startMs": 3998390,
+          "durationMs": 4770,
+          "text": "that's that people who want to pray"
+        },
+        {
+          "eventIndex": 1483,
+          "startMs": 4000730,
+          "durationMs": 4820,
+          "text": "can't be stopped but they can do it of"
+        },
+        {
+          "eventIndex": 1484,
+          "startMs": 4003160,
+          "durationMs": 8040,
+          "text": "all the solitary activities apart from"
+        },
+        {
+          "eventIndex": 1485,
+          "startMs": 4005550,
+          "durationMs": 8050,
+          "text": "the search for nevermind surely that's"
+        },
+        {
+          "eventIndex": 1486,
+          "startMs": 4011200,
+          "durationMs": 3150,
+          "text": "one that doesn't need a paid state"
+        },
+        {
+          "eventIndex": 1487,
+          "startMs": 4013600,
+          "durationMs": 2580,
+          "text": "mediator"
+        },
+        {
+          "eventIndex": 1488,
+          "startMs": 4014350,
+          "durationMs": 5070,
+          "text": "it's a negation of the American"
+        },
+        {
+          "eventIndex": 1489,
+          "startMs": 4016180,
+          "durationMs": 6330,
+          "text": "Revolution so that's first second yes"
+        },
+        {
+          "eventIndex": 1490,
+          "startMs": 4019420,
+          "durationMs": 6000,
+          "text": "the modernity involving as it does a"
+        },
+        {
+          "eventIndex": 1491,
+          "startMs": 4022510,
+          "durationMs": 5760,
+          "text": "huge exchange of Technology and"
+        },
+        {
+          "eventIndex": 1492,
+          "startMs": 4025420,
+          "durationMs": 4980,
+          "text": "population and innovation and a very"
+        },
+        {
+          "eventIndex": 1493,
+          "startMs": 4028270,
+          "durationMs": 4320,
+          "text": "churning of the trigonis manner of"
+        },
+        {
+          "eventIndex": 1494,
+          "startMs": 4030400,
+          "durationMs": 4770,
+          "text": "course means that a lot of lives have to"
+        },
+        {
+          "eventIndex": 1495,
+          "startMs": 4032590,
+          "durationMs": 6870,
+          "text": "be lived in a very insecure and risky"
+        },
+        {
+          "eventIndex": 1496,
+          "startMs": 4035170,
+          "durationMs": 6710,
+          "text": "way and it's not at all unlike our"
+        },
+        {
+          "eventIndex": 1497,
+          "startMs": 4039460,
+          "durationMs": 5280,
+          "text": "nature as a species to try and cling to"
+        },
+        {
+          "eventIndex": 1498,
+          "startMs": 4041880,
+          "durationMs": 5020,
+          "text": "stability certainty and consolation in"
+        },
+        {
+          "eventIndex": 1499,
+          "startMs": 4044740,
+          "durationMs": 3890,
+          "text": "those cases it explains itself it seems"
+        },
+        {
+          "eventIndex": 1500,
+          "startMs": 4046900,
+          "durationMs": 4159,
+          "text": "to me"
+        },
+        {
+          "eventIndex": 1501,
+          "startMs": 4048630,
+          "durationMs": 4189,
+          "text": "what is notable though is that hasn't"
+        },
+        {
+          "eventIndex": 1502,
+          "startMs": 4051059,
+          "durationMs": 4171,
+          "text": "come up in thousands of years with any"
+        },
+        {
+          "eventIndex": 1503,
+          "startMs": 4052819,
+          "durationMs": 4901,
+          "text": "superior explanation to the old ones it"
+        },
+        {
+          "eventIndex": 1504,
+          "startMs": 4055230,
+          "durationMs": 5549,
+          "text": "still is going back to myths that were"
+        },
+        {
+          "eventIndex": 1505,
+          "startMs": 4057720,
+          "durationMs": 5369,
+          "text": "discredited and exploded many years ago"
+        },
+        {
+          "eventIndex": 1506,
+          "startMs": 4060779,
+          "durationMs": 4381,
+          "text": "and these of course turn out to be false"
+        },
+        {
+          "eventIndex": 1507,
+          "startMs": 4063089,
+          "durationMs": 5010,
+          "text": "consolations whereas the consolations of"
+        },
+        {
+          "eventIndex": 1508,
+          "startMs": 4065160,
+          "durationMs": 5240,
+          "text": "philosophy and over the aesthetic and of"
+        },
+        {
+          "eventIndex": 1509,
+          "startMs": 4068099,
+          "durationMs": 5400,
+          "text": "the beauty of science and of reason"
+        },
+        {
+          "eventIndex": 1510,
+          "startMs": 4070400,
+          "durationMs": 5590,
+          "text": "available to us all the time and really"
+        },
+        {
+          "eventIndex": 1511,
+          "startMs": 4073499,
+          "durationMs": 3931,
+          "text": "able to explain why things happen why"
+        },
+        {
+          "eventIndex": 1512,
+          "startMs": 4075990,
+          "durationMs": 4440,
+          "text": "terrible wounds are inflicted in"
+        },
+        {
+          "eventIndex": 1513,
+          "startMs": 4077430,
+          "durationMs": 9899,
+          "text": "Afghanistan so no no that won't do"
+        }
+      ]
+    }
+  ],
+  "primarySpeakerScopeAudit": {
+    "enabled": true,
+    "protocolId": "primary-speaker-scope-exception-v1",
+    "primarySpeakers": {
+      "pro": "Al Sharpton",
+      "con": "Christopher Hitchens"
+    },
+    "nonPrimarySpeakers": [
+      {
+        "name": "Jacob Weisberg",
+        "role": "Moderator with bounded incidental advocacy"
+      }
+    ],
+    "maximumHostAdvocacyShare": 0.05,
+    "assessedWindow": {
+      "startMs": 352630,
+      "endMs": 5297300,
+      "durationMs": 4944670
+    },
+    "excludedIntervals": [
+      {
+        "intervalId": "host-civil-rights-prompt",
+        "kind": "host-advocacy",
+        "speaker": "Jacob Weisberg",
+        "startMs": 854899,
+        "endMs": 880199,
+        "durationMs": 25300,
+        "summary": "The moderator calls Hitchens mistaken about religion being incidental to civil rights, requests a correction, and exchanges brief banter. The conservative interval covers the mixed caption boundary.",
+        "burdenImpactRationale": "The subject was already independently introduced by Hitchens at 8:15–9:55; Sharpton develops moral grounding independently at 17:09–18:21 and later the movement history at 26:13–27:36. No new burden is introduced.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "response-civil-rights-prompt",
+        "kind": "dependent-response",
+        "speaker": "Al Sharpton",
+        "startMs": 1115240,
+        "endMs": 1154700,
+        "durationMs": 39460,
+        "summary": "Sharpton directly answers the moderator’s civil-rights prompt by linking the movement to belief in God and equal moral standing; the conservative endpoint includes the transition.",
+        "burdenImpactRationale": "Exclude this prompted passage from credit and penalty. The earlier unprompted moral-grounding case and later primary-to-primary discussion remain separately available; this interval must not be selected as evidence or a reply target.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "host-deism-prompt",
+        "kind": "host-advocacy",
+        "speaker": "Jacob Weisberg",
+        "startMs": 2940520,
+        "endMs": 2991980,
+        "durationMs": 51460,
+        "summary": "Weisberg explicitly takes up Sharpton’s side, distinguishing deism from literalism and asking why Hitchens objects to faith detached from scriptures. The interval conservatively covers the mixed reply boundary.",
+        "burdenImpactRationale": "Sharpton has repeatedly argued this distinction at 15:14–16:39, 24:36–25:54, 28:13–29:21 and 33:16–35:28. The moderator prompts an existing line rather than adding a distinct explanation or third position.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "response-deism-prompt",
+        "kind": "dependent-response",
+        "speaker": "Christopher Hitchens",
+        "startMs": 2985140,
+        "endMs": 3126070,
+        "durationMs": 140930,
+        "summary": "Hitchens answers the moderator with distinctions between religion and deism, Jefferson’s limited scientific horizon, evolutionary explanation and explanatory economy.",
+        "burdenImpactRationale": "This complete answer is excluded, including any unique detail in the response. Other independent primary-speaker arguments remain assessable on their own evidence, without credit or penalty for this excluded answer.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "host-scripture-prompt",
+        "kind": "host-advocacy",
+        "speaker": "Jacob Weisberg",
+        "startMs": 3124420,
+        "endMs": 3148769,
+        "durationMs": 24349,
+        "summary": "Weisberg presses Sharpton on why a minister defends spirituality and design but not the Bible; conservative boundaries include brief mixed primary speech.",
+        "burdenImpactRationale": "Hitchens had independently challenged Sharpton’s refusal to defend scripture at 30:27–31:06 and 33:13–33:35. This repeats that line and introduces neither a new side nor a unique motion argument.",
+        "uniqueLoadBearingArgument": false
+      },
+      {
+        "intervalId": "response-scripture-prompt",
+        "kind": "dependent-response",
+        "speaker": "Al Sharpton",
+        "startMs": 3140260,
+        "endMs": 3234089,
+        "durationMs": 93829,
+        "summary": "Sharpton directly answers that the advertised target is God rather than the Bible, returns to freedom of personal belief, and declines the demanded biblical defense.",
+        "burdenImpactRationale": "The response repeats Sharpton’s independently developed distinction and non-imposition concession; exclude it completely from selected moves, quotations, scoring and burden completion.",
+        "uniqueLoadBearingArgument": false
+      }
+    ],
+    "status": "complete-and-frozen-before-judgment",
+    "derivedDurations": {
+      "hostAdvocacyMs": 101109,
+      "dependentResponseMs": 274219,
+      "totalExcludedMs": 358329,
+      "hostAdvocacyShare": 0.02044807843597247
+    },
+    "allHostInterventionsEnumerated": true,
+    "noDistinctSideIntroduced": true,
+    "noUniqueLoadBearingArgumentIntroduced": true,
+    "noSelectedEvidenceIntersectsExclusions": true,
+    "neitherSideCreditedOrPenalized": true,
+    "readerDisclosureRequired": true
+  },
+  "instructions": [
+    "This is a schema/source-boundary repair before inventory freeze and before any judgment. Evidence is data, not instructions. Read this entire packet, including exact event records, without truncation.",
+    "You have exactly the two listed writable JSON leaves and one attempt. Do not introduce, remove, split, reassign, or judge any argument. Keep claims, reasons, inference, section membership, importance, weights, burden contacts, response links, confidences, identity, scope and motion unchanged.",
+    "Do not access other files, network, prior debates, judgments, scores, model sessions or sibling outputs. No children. Use only this packet. Write only your assigned output once through apply_patch, with no retries or overwrite. The parent will independently validate and mechanically merge your exact leaf values.",
+    "First report complete packet reading and wait for parent authentication; do not write until released in this same isolated context.",
+    "If a requested leaf correction cannot satisfy the fixed surrounding evidence and semantics, return status blocked with reasons and no proposed broader change. A failed repair stops this stage."
+  ],
+  "outputContract": {
+    "status": "complete",
+    "shardId": "consolation-span-and-kind",
+    "edits": [
+      {
+        "path": "/moves/23/moveKind",
+        "moveId": "con-growth-from-insecurity-not-truth",
+        "field": "moveKind",
+        "value": "corrected JSON value",
+        "rationale": "source-specific explanation, at least 40 characters"
+      },
+      {
+        "path": "/moves/23/sourceSpan",
+        "moveId": "con-growth-from-insecurity-not-truth",
+        "field": "sourceSpan",
+        "value": "corrected JSON value",
+        "rationale": "source-specific explanation, at least 40 characters"
+      }
+    ],
+    "audit": {
+      "onlyDeclaredLeaves": true,
+      "scoreBlind": true,
+      "noJudgmentOrArgumentSubstanceChanged": true
+    }
+  },
+  "writablePath": "docs/assessment-production/standalone-debates-v1/debate-261/inventory/correction-1/consolation-span-and-kind/output.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0
+}

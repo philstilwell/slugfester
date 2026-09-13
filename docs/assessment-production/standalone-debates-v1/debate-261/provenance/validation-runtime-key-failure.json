@@ -1,0 +1,7 @@
+{
+  "status": "preserved-controller-only-failure",
+  "error": "TypeError: corpus.debates is not iterable",
+  "cause": "The local source-access helper used debates instead of the existing entries key after creating its declared source links.",
+  "recovery": "Retain and authenticate the exact already-created links, use the actual entries array, and verify all transcript/event hashes. No source target or assessment content changed.",
+  "preservedController": "docs/assessment-production/standalone-debates-v1/debate-261/provenance/validation-runtime-controller-before-key-fix.mjs.txt"
+}

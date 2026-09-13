@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0-standalone-source-lock",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-hash-locked",
+  "identity": {
+    "canonicalUrl": "https://www.youtube.com/watch?v=HPYxA8dYLBY",
+    "videoId": "HPYxA8dYLBY",
+    "title": "Christopher Hitchens Debates Al Sharpton - New York Public",
+    "channel": "ChristopherHitchslap",
+    "eventYear": 2007,
+    "eventDate": "2007-05-07",
+    "identityReferenceUrl": "https://www.nypl.org/audiovideo/god-not-great-debate-between-christopher-hitchens-and-al-sharpton",
+    "dateBasis": "The organizer’s indexed event page identifies May 7, 2007; the source introduction identifies the two speakers and moderator. The upload date is not treated as the event date.",
+    "speakerIdentityBasis": "Named introductory biographies and alternating primary responses, corroborated by the organizer event listing."
+  },
+  "acquisition": {
+    "method": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+    "language": "en",
+    "trackName": "English (auto-generated)",
+    "captionKind": "asr",
+    "retrievedAt": "2026-09-13T17:12:18.690Z",
+    "paidTranscriptionUsed": false,
+    "model": null,
+    "directCostUsd": 0
+  },
+  "content": {
+    "eventCount": 1973,
+    "wordCount": 15791,
+    "firstStartMs": 3529,
+    "lastStartMs": 5345110,
+    "maxEndMs": 5350070,
+    "sourceDurationMs": 5348000,
+    "eventsNonempty": true,
+    "eventsChronological": true,
+    "timestampCoverageComplete": true,
+    "speakerLabelsAvailable": false,
+    "speakerAttributionReviewRequired": true,
+    "coverageNote": "The single English ASR track covers the complete recording with no gap exceeding ten seconds between caption end and next start. Rolling caption endpoints overlap and the final music caption extends 2.070 seconds beyond the player duration. All events are preserved.",
+    "captionCaution": "Sharpton defends personal theism, order, moral grounding and lived experience while refusing to defend biblical literalism or organized religion wholesale. Hitchens distinguishes an unproved creator from his stronger rejection of religious authority and claimed moral benefits. Do not assign either side a stronger proposition. All historical/scientific assertions remain participant claims, not independently verified facts. Captions contain clear lexical and numeral errors; uncertain words must never be credited as a speaker’s mistake. Audience assertions carry no independent credit; only the two primary speakers’ adopted or answered arguments may be selected, except that all frozen moderator-led exclusions and directly dependent replies are completely unavailable for assessment. If the complete source contradicts any scope condition, return a source-gate failure instead of an inventory."
+  },
+  "participants": {
+    "pro": "Al Sharpton",
+    "con": "Christopher Hitchens",
+    "moderators": [
+      "Jacob Weisberg"
+    ],
+    "substantiveAdvocates": 2,
+    "moderatorsAdvancedIndependentArgument": true,
+    "assessedDebateWindowMs": {
+      "start": 352630,
+      "end": 5297300
+    },
+    "dyadicGatePassed": true,
+    "primarySpeakerScopeException": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "primarySpeakers": {
+        "pro": "Al Sharpton",
+        "con": "Christopher Hitchens"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Jacob Weisberg",
+          "role": "Moderator with bounded incidental advocacy"
+        }
+      ],
+      "maximumHostAdvocacyShare": 0.05,
+      "assessedWindow": {
+        "startMs": 352630,
+        "endMs": 5297300,
+        "durationMs": 4944670
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "host-civil-rights-prompt",
+          "kind": "host-advocacy",
+          "speaker": "Jacob Weisberg",
+          "startMs": 854899,
+          "endMs": 880199,
+          "durationMs": 25300,
+          "summary": "The moderator calls Hitchens mistaken about religion being incidental to civil rights, requests a correction, and exchanges brief banter. The conservative interval covers the mixed caption boundary.",
+          "burdenImpactRationale": "The subject was already independently introduced by Hitchens at 8:15–9:55; Sharpton develops moral grounding independently at 17:09–18:21 and later the movement history at 26:13–27:36. No new burden is introduced.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-civil-rights-prompt",
+          "kind": "dependent-response",
+          "speaker": "Al Sharpton",
+          "startMs": 1115240,
+          "endMs": 1154700,
+          "durationMs": 39460,
+          "summary": "Sharpton directly answers the moderator’s civil-rights prompt by linking the movement to belief in God and equal moral standing; the conservative endpoint includes the transition.",
+          "burdenImpactRationale": "Exclude this prompted passage from credit and penalty. The earlier unprompted moral-grounding case and later primary-to-primary discussion remain separately available; this interval must not be selected as evidence or a reply target.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-deism-prompt",
+          "kind": "host-advocacy",
+          "speaker": "Jacob Weisberg",
+          "startMs": 2940520,
+          "endMs": 2991980,
+          "durationMs": 51460,
+          "summary": "Weisberg explicitly takes up Sharpton’s side, distinguishing deism from literalism and asking why Hitchens objects to faith detached from scriptures. The interval conservatively covers the mixed reply boundary.",
+          "burdenImpactRationale": "Sharpton has repeatedly argued this distinction at 15:14–16:39, 24:36–25:54, 28:13–29:21 and 33:16–35:28. The moderator prompts an existing line rather than adding a distinct explanation or third position.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-deism-prompt",
+          "kind": "dependent-response",
+          "speaker": "Christopher Hitchens",
+          "startMs": 2985140,
+          "endMs": 3126070,
+          "durationMs": 140930,
+          "summary": "Hitchens answers the moderator with distinctions between religion and deism, Jefferson’s limited scientific horizon, evolutionary explanation and explanatory economy.",
+          "burdenImpactRationale": "This complete answer is excluded, including any unique detail in the response. Other independent primary-speaker arguments remain assessable on their own evidence, without credit or penalty for this excluded answer.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-scripture-prompt",
+          "kind": "host-advocacy",
+          "speaker": "Jacob Weisberg",
+          "startMs": 3124420,
+          "endMs": 3148769,
+          "durationMs": 24349,
+          "summary": "Weisberg presses Sharpton on why a minister defends spirituality and design but not the Bible; conservative boundaries include brief mixed primary speech.",
+          "burdenImpactRationale": "Hitchens had independently challenged Sharpton’s refusal to defend scripture at 30:27–31:06 and 33:13–33:35. This repeats that line and introduces neither a new side nor a unique motion argument.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-scripture-prompt",
+          "kind": "dependent-response",
+          "speaker": "Al Sharpton",
+          "startMs": 3140260,
+          "endMs": 3234089,
+          "durationMs": 93829,
+          "summary": "Sharpton directly answers that the advertised target is God rather than the Bible, returns to freedom of personal belief, and declines the demanded biblical defense.",
+          "burdenImpactRationale": "The response repeats Sharpton’s independently developed distinction and non-imposition concession; exclude it completely from selected moves, quotations, scoring and burden completion.",
+          "uniqueLoadBearingArgument": false
+        }
+      ]
+    },
+    "basis": "Two named primary opponents plus moderator and ordinary audience questions. The moderator’s three substantive prompts and direct responses are excluded under the standing bounded exception. Full-source inventory must independently confirm this classification before judgment."
+  },
+  "format": {
+    "assessedExchange": "Complete two-primary-speaker exchange including substantive audience answers, minus frozen moderator-led exclusions",
+    "offMotionCoverage": "Opening biographies, logistics, applause, personal banter and unrelated war-policy disputes receive no separate credit. Audience questions supply context only and must not become third-party scored moves."
+  },
+  "positionCaution": "Sharpton defends personal theism, order, moral grounding and lived experience while refusing to defend biblical literalism or organized religion wholesale. Hitchens distinguishes an unproved creator from his stronger rejection of religious authority and claimed moral benefits. Do not assign either side a stronger proposition. All historical/scientific assertions remain participant claims, not independently verified facts. Captions contain clear lexical and numeral errors; uncertain words must never be credited as a speaker’s mistake. Audience assertions carry no independent credit; only the two primary speakers’ adopted or answered arguments may be selected, except that all frozen moderator-led exclusions and directly dependent replies are completely unavailable for assessment. If the complete source contradicts any scope condition, return a source-gate failure instead of an inventory.",
+  "hashes": {
+    "rawCaptionSha256": "5dd8c0494ae62f2715b93fcf30bed4420e1d9e0160cec8a772161ed38d4b4498",
+    "normalizedEventsSha256": "013a04eeae949fe7442f0098fd36ee370861d2b01c3d9b5077bde95cac94d5b6",
+    "transcriptSha256": "f3def0bac3364fd15082b1edc18a9cefffeb654e6adae43f0c57d1ed5d6f6ea6",
+    "captionManifestSha256": "aa0a8ebc6827213706012168c043adf323da605dd02816f93b9cd1b335cc2c38"
+  },
+  "duplicateAudit": {
+    "productionDebateCountBeforeAddition": 260,
+    "canonicalUrlUnique": true,
+    "videoIdUnique": true,
+    "debateIdUnique": true,
+    "debateNumberUnique": true,
+    "identityDuplicateFound": false,
+    "relatedRecordingComparison": "No Sharpton entry, matching two-speaker identity, video ID or source URL appears in synchronized production data or registry."
+  }
+}

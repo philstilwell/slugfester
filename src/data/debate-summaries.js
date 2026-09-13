@@ -12367,5 +12367,55 @@ export const debateSummaries = [
         "title": "God, covenant, and chosenness"
       }
     ]
+  },
+  {
+    "id": "sharpton-hitchens-god-religion-morality-2007",
+    "number": "261",
+    "title": "Al Sharpton vs Christopher Hitchens — God, religion, and morality",
+    "year": 2007,
+    "label": "God, religion, and morality",
+    "date": "2026-09-13",
+    "duration": "1 hr 29 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HPYxA8dYLBY",
+    "motion": "Is God great?",
+    "summary": "Sharpton narrowed the case to personal theism, but Hitchens won by separating private belief from public warrant and supplying stronger naturalistic alternatives.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Personal theism",
+        "speaker": "Al Sharpton",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheistic critique",
+        "speaker": "Christopher Hitchens",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 76,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Truth, order, and divine character"
+      },
+      {
+        "title": "God distinguished from religious authority"
+      },
+      {
+        "title": "Competing sources of morality"
+      },
+      {
+        "title": "Experience, miracles, and secular evil"
+      },
+      {
+        "title": "Science, meaning, and transcendence"
+      },
+      {
+        "title": "Suffering, coercion, and closing burdens"
+      }
+    ]
   }
 ];

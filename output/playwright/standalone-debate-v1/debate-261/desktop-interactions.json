@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-recorded-browser-check",
+  "debateNumber": "261",
+  "label": "desktop-interactions",
+  "invocation": [
+    "--session",
+    "slugfester-debate-261",
+    "run-code",
+    "async (page) => { const checks={}; const button=page.locator(\".critique button\").first(); const tip=page.locator(\".critique-popover\").first(); const visible=()=>tip.evaluate(el=>getComputedStyle(el).visibility===\"visible\"&&getComputedStyle(el).opacity!==\"0\"); checks.pointerCritique=await visible(); await page.mouse.move(0,0); await button.focus(); await page.keyboard.press(\"Enter\"); checks.critiqueEnter=await visible(); await page.keyboard.press(\"Space\"); checks.critiqueSpace=await visible(); const accordion=page.locator(\".ai-extension-accordion\"), summary=accordion.locator(\"summary\"); checks.aiInitiallyCollapsed=await accordion.evaluate(el=>!el.open); await summary.click(); checks.aiPointerOpened=await accordion.evaluate(el=>el.open); await page.keyboard.press(\"Enter\"); checks.aiEnterClosed=await accordion.evaluate(el=>!el.open); await page.keyboard.press(\"Space\"); checks.aiSpaceOpened=await accordion.evaluate(el=>el.open); await summary.scrollIntoViewIfNeeded(); if(Object.values(checks).some(v=>v!==true))throw new Error(JSON.stringify(checks)); return checks; }"
+  ],
+  "startedAt": "2026-09-13T21:03:05.899Z",
+  "completedAt": "2026-09-13T21:03:06.484Z",
+  "exitCode": 1,
+  "output": {
+    "path": "output/playwright/standalone-debate-v1/debate-261/desktop-interactions.txt",
+    "sha256": "659b5adf8cf2e789fa4086618c4a36cf3f9f291ecb47e82a19f047173b6b6462",
+    "bytes": 180
+  },
+  "directIncrementalCostUsd": 0
+}

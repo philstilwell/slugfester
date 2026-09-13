@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0-isolated-score-blind-inventory-packet",
+  "debateNumber": "261",
+  "debateId": "sharpton-hitchens-god-religion-morality-2007",
+  "motion": "Is God great?",
+  "assessmentModel": "5.6 Sol",
+  "sides": {
+    "pro": {
+      "speaker": "Al Sharpton",
+      "position": "Personal theism"
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic critique"
+    }
+  },
+  "source": {
+    "path": ".assessment-cache/captions/HPYxA8dYLBY/score-blind-source.json",
+    "sha256": "36527c471a50072b44cbd7ad17204510c22470cd3977d0a06cbc512957590a24",
+    "bytes": 296001
+  },
+  "instructions": [
+    "Read every original event before selecting any move. Produce no ratings, scores, tags, winner or publication prose. Verify the primary-speaker scope exception against the complete source; if any condition remains uncertain, output {status:\"source-gate-failed\",reasons:[...]} instead. Do not silently add exclusions or modify the frozen motion.",
+    "Select 8–48 distinct load-bearing arguments, major direct replies and important concessions chronologically, using exactly 4–7 coherent topical sections. Let the source determine move count. No load-bearing omission or manufactured symmetry. Sections require unique semantic lowercase IDs, 2–10-word titles, integer weightPercent totaling 100 and source-specific weightRationale.",
+    "Each side needs 3–7 unique bridges with bridgeId, tier, burden, successCriterion; exactly one motion-tier bridge and at least one central and one subsidiary bridge. Each move links its own side’s bridge/tier with burdenContact.rationale. Importance is 1 supporting, 2 major or 3 load-bearing with importanceRationale, not a score forecast.",
+    "Each section must have at least one move per side and no more than four per side; three is ordinary. A fourth must have a source-specific >=40-character rationale establishing distinct, non-mergeable, independently assessable arguments in the coherent section. Do not shift one side merely to make counts pass.",
+    "Moves need claimSummary, reasonSummary, inferenceSummary:{premise,inference,conclusion}, sourceSpan:{startEvent,endEvent} in original zero-based indices. Use the smallest complete contiguous passage proving that speaker’s claim and reason. Controller supplies exact excerpt and timestamps. Target <=2200 characters; a genuinely necessary longer passage needs spanLengthRationale >=40 characters. Do not pad with opponent or audience speech.",
+    "quoteEligibleExactSpans contains only exact 3–18-word substrings within the selected source span. Preserve caption words. attributionConfidence and materialWordingConfidence must be high, medium or low with source-specific rationales. Uncertainty in either category must also make attributionConfidence below high, triggering later audio verification. Never interpret transcription mistakes as argumentative defects.",
+    "Constructive moves have moveKind:\"constructive\",respondsToIds:[],responseComponents:[]. Replies use moveKind:\"reply\", respond only to earlier selected move IDs and have responseComponents:[{targetMoveId,component,description}]. No reply link may target excluded material; do not select a host-dependent answer under another role.",
+    "selectionBalanceAudit:{thresholds:{totalAbsoluteDifference:3,sectionAbsoluteDifference:2},totals:{pro,con,absoluteDifference},sections:[{sectionId,pro,con,absoluteDifference}],rationaleRequired,rationale}. Recompute counts; rationale >=40 characters required if either threshold is reached. Explain every asymmetric load-bearing move.",
+    "publicationCapacityAudit:{maximumSelectedMovesPerSidePerSection:4,sections:[{sectionId,pro,con,withinCapacity,fourthRowRequired,fourthRowAuthorized,rationale}],allSectionsWithinCapacity:true,allFourthRowsPreauthorized:true}. Fourth row means either side has four. fourthRowAuthorized must be true when justified or vacuously true when no fourth required. Controller independently verifies every count.",
+    "fullTranscriptCoverageAudit:{intervals:[{startEvent,endEvent,moveIds,reason}]} partitions ALL original events once in contiguous inclusive intervals. Empty IDs require a source-specific reason: logistics, repetition, incidental/off-motion material, audience-only material or a named frozen exclusion. Explain exclusions honestly without claiming omitted material was judged. All referenced move IDs must exist.",
+    "Copy primarySpeakerScopeAudit unchanged from the source; independently confirm no selected span intersects any exclusion. The controller will verify all intervals and intersections before judgment. No credit or penalty for either side from excluded moderator prompts or their directly dependent replies."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.2-standalone-score-blind-inventory",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-frozen",
+    "debateNumber": "261",
+    "debateId": "sharpton-hitchens-god-religion-morality-2007",
+    "assessmentModel": "5.6 Sol",
+    "motion": "Is God great?",
+    "assessedDebateWindowMs": {
+      "start": 352630,
+      "end": 5297300
+    },
+    "routes": "[{side,speaker,position,bridges:[{bridgeId,tier,burden,successCriterion}]}]",
+    "sections": "[{sectionId,title,weightPercent,weightRationale}]",
+    "moves": "[{moveId,sectionId,side,speaker,moveKind,sourceSpan,quoteEligibleExactSpans,claimSummary,reasonSummary,inferenceSummary,burdenContact:{bridgeId,tier,rationale},importance,importanceRationale,respondsToIds,responseComponents,attributionConfidence,attributionRationale,materialWordingConfidence,materialWordingRationale,optional spanLengthRationale}]",
+    "selectionBalanceAudit": "As specified in instructions",
+    "publicationCapacityAudit": "As specified in instructions",
+    "fullTranscriptCoverageAudit": "As specified in instructions",
+    "primarySpeakerScopeAudit": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "primarySpeakers": {
+        "pro": "Al Sharpton",
+        "con": "Christopher Hitchens"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Jacob Weisberg",
+          "role": "Moderator with bounded incidental advocacy"
+        }
+      ],
+      "maximumHostAdvocacyShare": 0.05,
+      "assessedWindow": {
+        "startMs": 352630,
+        "endMs": 5297300,
+        "durationMs": 4944670
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "host-civil-rights-prompt",
+          "kind": "host-advocacy",
+          "speaker": "Jacob Weisberg",
+          "startMs": 854899,
+          "endMs": 880199,
+          "durationMs": 25300,
+          "summary": "The moderator calls Hitchens mistaken about religion being incidental to civil rights, requests a correction, and exchanges brief banter. The conservative interval covers the mixed caption boundary.",
+          "burdenImpactRationale": "The subject was already independently introduced by Hitchens at 8:15–9:55; Sharpton develops moral grounding independently at 17:09–18:21 and later the movement history at 26:13–27:36. No new burden is introduced.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-civil-rights-prompt",
+          "kind": "dependent-response",
+          "speaker": "Al Sharpton",
+          "startMs": 1115240,
+          "endMs": 1154700,
+          "durationMs": 39460,
+          "summary": "Sharpton directly answers the moderator’s civil-rights prompt by linking the movement to belief in God and equal moral standing; the conservative endpoint includes the transition.",
+          "burdenImpactRationale": "Exclude this prompted passage from credit and penalty. The earlier unprompted moral-grounding case and later primary-to-primary discussion remain separately available; this interval must not be selected as evidence or a reply target.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-deism-prompt",
+          "kind": "host-advocacy",
+          "speaker": "Jacob Weisberg",
+          "startMs": 2940520,
+          "endMs": 2991980,
+          "durationMs": 51460,
+          "summary": "Weisberg explicitly takes up Sharpton’s side, distinguishing deism from literalism and asking why Hitchens objects to faith detached from scriptures. The interval conservatively covers the mixed reply boundary.",
+          "burdenImpactRationale": "Sharpton has repeatedly argued this distinction at 15:14–16:39, 24:36–25:54, 28:13–29:21 and 33:16–35:28. The moderator prompts an existing line rather than adding a distinct explanation or third position.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-deism-prompt",
+          "kind": "dependent-response",
+          "speaker": "Christopher Hitchens",
+          "startMs": 2985140,
+          "endMs": 3126070,
+          "durationMs": 140930,
+          "summary": "Hitchens answers the moderator with distinctions between religion and deism, Jefferson’s limited scientific horizon, evolutionary explanation and explanatory economy.",
+          "burdenImpactRationale": "This complete answer is excluded, including any unique detail in the response. Other independent primary-speaker arguments remain assessable on their own evidence, without credit or penalty for this excluded answer.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "host-scripture-prompt",
+          "kind": "host-advocacy",
+          "speaker": "Jacob Weisberg",
+          "startMs": 3124420,
+          "endMs": 3148769,
+          "durationMs": 24349,
+          "summary": "Weisberg presses Sharpton on why a minister defends spirituality and design but not the Bible; conservative boundaries include brief mixed primary speech.",
+          "burdenImpactRationale": "Hitchens had independently challenged Sharpton’s refusal to defend scripture at 30:27–31:06 and 33:13–33:35. This repeats that line and introduces neither a new side nor a unique motion argument.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "response-scripture-prompt",
+          "kind": "dependent-response",
+          "speaker": "Al Sharpton",
+          "startMs": 3140260,
+          "endMs": 3234089,
+          "durationMs": 93829,
+          "summary": "Sharpton directly answers that the advertised target is God rather than the Bible, returns to freedom of personal belief, and declines the demanded biblical defense.",
+          "burdenImpactRationale": "The response repeats Sharpton’s independently developed distinction and non-imposition concession; exclude it completely from selected moves, quotations, scoring and burden completion.",
+          "uniqueLoadBearingArgument": false
+        }
+      ],
+      "status": "complete-and-frozen-before-judgment",
+      "derivedDurations": {
+        "hostAdvocacyMs": 101109,
+        "dependentResponseMs": 274219,
+        "totalExcludedMs": 358329,
+        "hostAdvocacyShare": 0.02044807843597247
+      },
+      "allHostInterventionsEnumerated": true,
+      "noDistinctSideIntroduced": true,
+      "noUniqueLoadBearingArgumentIntroduced": true,
+      "noSelectedEvidenceIntersectsExclusions": true,
+      "neitherSideCreditedOrPenalized": true,
+      "readerDisclosureRequired": true
+    },
+    "audit": {
+      "calculatedTotalsAbsent": true,
+      "completeTranscriptReviewed": true,
+      "allSpansSourceExact": true,
+      "scoreBlind": true,
+      "noOutcomePredetermined": true,
+      "noAudienceOrHostCredit": true
+    }
+  }
+}

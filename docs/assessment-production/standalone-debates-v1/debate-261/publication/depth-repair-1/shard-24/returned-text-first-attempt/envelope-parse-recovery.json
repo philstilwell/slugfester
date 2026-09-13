@@ -1,0 +1,12 @@
+{
+  "status": "authorized-deterministic-administrative-parse-recovery",
+  "mode": "remove-one-extraneous-closing-brace-at-eof",
+  "rawFinalResponseSha256": "bab3e44f93558d2a7a3ff214bcbd267e3e4aecf68a1b2fc74ec3328c093561ca",
+  "rawCharacters": 2065,
+  "initialError": "Unexpected non-whitespace character after JSON at position 2064",
+  "replacements": [],
+  "rationale": "The complete valid JSON object ends at character 2064; its one extraneous closing brace is outside every returned field. Removing only that final character yields valid JSON while preserving every repair value, rationale and all other bytes exactly.",
+  "preservedController": "preserved-collector-before-trailing-brace-recovery.mjs",
+  "newModelAttempts": 0,
+  "semanticChanges": 0
+}

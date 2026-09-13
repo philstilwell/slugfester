@@ -1,0 +1,101 @@
+{
+  "enabled": true,
+  "protocolId": "primary-speaker-scope-exception-v1",
+  "primarySpeakers": {
+    "pro": "Al Sharpton",
+    "con": "Christopher Hitchens"
+  },
+  "nonPrimarySpeakers": [
+    {
+      "name": "Jacob Weisberg",
+      "role": "Moderator with bounded incidental advocacy"
+    }
+  ],
+  "maximumHostAdvocacyShare": 0.05,
+  "assessedWindow": {
+    "startMs": 352630,
+    "endMs": 5297300,
+    "durationMs": 4944670
+  },
+  "excludedIntervals": [
+    {
+      "intervalId": "host-civil-rights-prompt",
+      "kind": "host-advocacy",
+      "speaker": "Jacob Weisberg",
+      "startMs": 854899,
+      "endMs": 880199,
+      "durationMs": 25300,
+      "summary": "The moderator calls Hitchens mistaken about religion being incidental to civil rights, requests a correction, and exchanges brief banter. The conservative interval covers the mixed caption boundary.",
+      "burdenImpactRationale": "The subject was already independently introduced by Hitchens at 8:15–9:55; Sharpton develops moral grounding independently at 17:09–18:21 and later the movement history at 26:13–27:36. No new burden is introduced.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-civil-rights-prompt",
+      "kind": "dependent-response",
+      "speaker": "Al Sharpton",
+      "startMs": 1115240,
+      "endMs": 1154700,
+      "durationMs": 39460,
+      "summary": "Sharpton directly answers the moderator’s civil-rights prompt by linking the movement to belief in God and equal moral standing; the conservative endpoint includes the transition.",
+      "burdenImpactRationale": "Exclude this prompted passage from credit and penalty. The earlier unprompted moral-grounding case and later primary-to-primary discussion remain separately available; this interval must not be selected as evidence or a reply target.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "host-deism-prompt",
+      "kind": "host-advocacy",
+      "speaker": "Jacob Weisberg",
+      "startMs": 2940520,
+      "endMs": 2991980,
+      "durationMs": 51460,
+      "summary": "Weisberg explicitly takes up Sharpton’s side, distinguishing deism from literalism and asking why Hitchens objects to faith detached from scriptures. The interval conservatively covers the mixed reply boundary.",
+      "burdenImpactRationale": "Sharpton has repeatedly argued this distinction at 15:14–16:39, 24:36–25:54, 28:13–29:21 and 33:16–35:28. The moderator prompts an existing line rather than adding a distinct explanation or third position.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-deism-prompt",
+      "kind": "dependent-response",
+      "speaker": "Christopher Hitchens",
+      "startMs": 2985140,
+      "endMs": 3126070,
+      "durationMs": 140930,
+      "summary": "Hitchens answers the moderator with distinctions between religion and deism, Jefferson’s limited scientific horizon, evolutionary explanation and explanatory economy.",
+      "burdenImpactRationale": "This complete answer is excluded, including any unique detail in the response. Other independent primary-speaker arguments remain assessable on their own evidence, without credit or penalty for this excluded answer.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "host-scripture-prompt",
+      "kind": "host-advocacy",
+      "speaker": "Jacob Weisberg",
+      "startMs": 3124420,
+      "endMs": 3148769,
+      "durationMs": 24349,
+      "summary": "Weisberg presses Sharpton on why a minister defends spirituality and design but not the Bible; conservative boundaries include brief mixed primary speech.",
+      "burdenImpactRationale": "Hitchens had independently challenged Sharpton’s refusal to defend scripture at 30:27–31:06 and 33:13–33:35. This repeats that line and introduces neither a new side nor a unique motion argument.",
+      "uniqueLoadBearingArgument": false
+    },
+    {
+      "intervalId": "response-scripture-prompt",
+      "kind": "dependent-response",
+      "speaker": "Al Sharpton",
+      "startMs": 3140260,
+      "endMs": 3234089,
+      "durationMs": 93829,
+      "summary": "Sharpton directly answers that the advertised target is God rather than the Bible, returns to freedom of personal belief, and declines the demanded biblical defense.",
+      "burdenImpactRationale": "The response repeats Sharpton’s independently developed distinction and non-imposition concession; exclude it completely from selected moves, quotations, scoring and burden completion.",
+      "uniqueLoadBearingArgument": false
+    }
+  ],
+  "status": "complete-and-frozen-before-judgment",
+  "derivedDurations": {
+    "hostAdvocacyMs": 101109,
+    "dependentResponseMs": 274219,
+    "totalExcludedMs": 358329,
+    "hostAdvocacyShare": 0.02044807843597247
+  },
+  "allHostInterventionsEnumerated": true,
+  "noDistinctSideIntroduced": true,
+  "noUniqueLoadBearingArgumentIntroduced": true,
+  "noSelectedEvidenceIntersectsExclusions": true,
+  "neitherSideCreditedOrPenalized": true,
+  "readerDisclosureRequired": true
+}
