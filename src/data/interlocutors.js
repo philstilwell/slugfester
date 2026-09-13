@@ -885,6 +885,11 @@ export const interlocutorAvatars = [
     name: "Shmuley Boteach",
     src: `${avatarBasePath}/shmuley-boteach.webp`,
     aliases: ["Shmuley Boteach"]
+  },
+  {
+    name: "Al Sharpton",
+    src: `${avatarBasePath}/al-sharpton.webp`,
+    aliases: ["Al Sharpton"]
   }
 ];
 
