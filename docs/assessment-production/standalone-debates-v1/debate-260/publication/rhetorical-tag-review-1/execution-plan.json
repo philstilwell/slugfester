@@ -1,0 +1,53 @@
+{
+  "status": "frozen-before-two-blind-reviews",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContexts": 2,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/packet.json",
+      "sha256": "833f318956c20ca45b8fba0899572c9ac8f230b6d0c39b280aa39c2afae9cd1e",
+      "bytes": 179437
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/reference-definitions.json",
+      "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+      "bytes": 3828
+    },
+    {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+      "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+      "bytes": 349406
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/audio/audio-verification.json",
+      "sha256": "e0b7a9f1da4f55f9d69083a263ea3e3178d484b2efa736caa7ff0d946caa3e1e",
+      "bytes": 356004
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "agentTask": "/root/rhetorical_260_a",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-output.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "agentTask": "/root/rhetorical_260_b",
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-b-output.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerOverrides": {},
+  "directIncrementalCostUsd": 0
+}

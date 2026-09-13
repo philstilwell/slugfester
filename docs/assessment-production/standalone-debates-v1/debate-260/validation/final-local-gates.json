@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "completedAt": "2026-09-13T02:27:32.105Z",
+  "results": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/gates-1.log",
+        "sha256": "dc0a222b5de91742b03281d3fdd200b6ec8a3b5842f1827f2fad0ed0c0819dc1",
+        "bytes": 23
+      }
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/gates-2.log",
+        "sha256": "894faeefa0fd6bb68cc0fdf311ce0daa3a574bd588937708a85f40273598a105",
+        "bytes": 152
+      }
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 260",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/gates-3.log",
+        "sha256": "60fdb21beb746bb6ecf9ed5dffe461a6c3bf15dfd9dbdd82d8c41ae6f5e0bc4b",
+        "bytes": 265
+      }
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/gates-4.log",
+        "sha256": "93f99bf8be51b6c4493ae48b6e887d36ca7c854ce7b9b4a4006676f5cd34ce46",
+        "bytes": 48656
+      }
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/gates-5.log",
+        "sha256": "f62854f53ceb2229e17819746039f09489c76eb6a57f4ce7285adfe9af162cd4",
+        "bytes": 252676
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/validation/gates-6.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

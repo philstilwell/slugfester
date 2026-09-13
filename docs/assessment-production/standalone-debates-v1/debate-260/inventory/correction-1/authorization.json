@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-explicit-bounded-inventory-repair-authorization",
+  "status": "frozen-before-correction",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "authorizedAt": "2026-09-12 21:52:01 UTC",
+  "userApproval": "Yes.",
+  "approvedQuestion": "May I make that correction pass, then continue normally if validation passes?",
+  "approvedScope": "One bounded correction pass covering counts, overfull section, quotation errors, questionable reply links, and missing audio-check flags; no assessment substance or score change.",
+  "sourceAndEarlierOutputsPreserved": true,
+  "priorFailure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/replacement-1/model-output.json",
+    "sha256": "dc6eb72415a5db54b00b7f2f5e076b94ba73069f07d03cdfaf33f701b23d47e4",
+    "bytes": 97763
+  },
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "fresh-built-in-subagent-fork-none",
+  "newSemanticContextCount": 1,
+  "semanticOutputAttemptLimit": 1,
+  "automaticRetries": 0,
+  "directIncrementalCostUsd": 0,
+  "repositoryBaseline": "db1540b28ce1dbe932c3b723cc57e84cd329a947",
+  "allowedSemanticFields": [
+    {
+      "type": "reply-classification-and-links",
+      "moveIds": [
+        "pro-torah-compassion-circumcision-benefit",
+        "pro-hanukkah-resisted-tyranny",
+        "pro-jewish-law-treats-nonjews",
+        "pro-god-supreme-moral-authority",
+        "pro-chosenness-is-mission"
+      ],
+      "instructions": "For these five moves only, supply the source-correct moveKind, respondsToIds and responseComponents, plus rationale. A reply must actually address a premise/inference/conclusion of an earlier selected move. A speaker introducing a counterargument against the opponent's book is not automatically replying to a different argument in the opponent's current opening. If constructive, BOTH arrays must be empty. Preserve all genuine later reply chains. Existing responseComponents may be retained unchanged when justified."
+    },
+    {
+      "type": "capacity-compliant-semantic-sectioning",
+      "maximumMoveAssignments": 2,
+      "instructions": "The current morality section has 5 pro and 3 con moves, so violates maximum 4 per side. Choose a minimal source-grounded resection of at most two existing moves, preferably one coherent pro/con exchange together, into an existing semantically appropriate section. Both origin and destination must have at least 1 and at most 4 per side afterward. No moves may be dropped, split, merged, added or semantically rewritten; no section identities, titles or weights may change. Each reassignment needs >=40 characters of source-specific reasoning. Do not arbitrarily shift one side just to force symmetry. If impossible within this scope, report blocked rather than widen it."
+    },
+    {
+      "type": "recomputed-audit-rationales",
+      "instructions": "After your proposed section assignments, supply a source-specific overall selectionBalanceRationale and a capacityRationale for every existing section in original order. Explicitly justify distinct non-mergeable fourth cards wherever a side has 4. Give no formulaic numerical symmetry justification. The controller will compute all arithmetic itself."
+    }
+  ],
+  "writablePath": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/correction-1/semantic-corrections.json",
+  "readOnlyFirst": true,
+  "continueNormallyOnlyAfterValidationPasses": true
+}

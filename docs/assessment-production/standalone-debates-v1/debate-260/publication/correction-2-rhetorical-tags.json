@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0-rhetorical-tag-correction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "applied-once-and-frozen",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "preservedPriorOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/preserved-output-before-rhetorical-tag-review.json",
+    "sha256": "3ac25a3a8b5fed5b89d9f38049a3c505009cfd978a98e755e2b518e5032feaa6",
+    "bytes": 80804
+  },
+  "applicationShards": [
+    {
+      "ordinal": 1,
+      "fields": [
+        "candidate.sections[1].exchanges[1].pro.tags",
+        "candidate.sections[2].exchanges[0].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 2,
+      "fields": [
+        "candidate.sections[2].exchanges[1].pro.tags",
+        "candidate.sections[2].exchanges[1].con.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 3,
+      "fields": [
+        "candidate.sections[2].exchanges[2].pro.tags",
+        "candidate.sections[2].exchanges[3].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 4,
+      "fields": [
+        "candidate.sections[3].exchanges[1].pro.tags",
+        "candidate.sections[3].exchanges[2].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 5,
+      "fields": [
+        "candidate.sections[3].exchanges[3].pro.tags",
+        "candidate.sections[5].exchanges[0].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 6,
+      "fields": [
+        "candidate.sections[5].exchanges[2].pro.tags",
+        "candidate.sections[6].exchanges[2].pro.tags"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 7,
+      "fields": [
+        "candidate.overall.pro.blunders[0].links",
+        "candidate.overall.pro.blunders[1].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    },
+    {
+      "ordinal": 8,
+      "fields": [
+        "candidate.overall.con.blunders[0].links"
+      ],
+      "maximumFields": 2,
+      "deterministicApplication": true
+    }
+  ],
+  "audit": {
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "moveChanges": 0,
+    "critiqueChanges": 0,
+    "tagChanges": 19,
+    "acceptedTagCount": 15,
+    "overallBlunderLinkChanges": 4,
+    "maximumWritableFieldsPerShard": 2
+  },
+  "evidence": {
+    "after": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/output.json",
+      "sha256": "a0a97334b94f416b52179fc7a021664d609c4e9801784231a859b5b1dadd9a54",
+      "bytes": 86727
+    },
+    "rhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-audit.json",
+      "sha256": "9a1e7d63941bebd5d6d0d36a16782f1114e42e871657f634e0ca2348401f14e5",
+      "bytes": 134848
+    },
+    "finalDefinitionCheck": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/final-definition-check.json",
+      "sha256": "eeaa394a0e69b246beb6ec4bed8a7ecf87dc11172798f825d3aab55bab1f2148",
+      "bytes": 184191
+    }
+  }
+}

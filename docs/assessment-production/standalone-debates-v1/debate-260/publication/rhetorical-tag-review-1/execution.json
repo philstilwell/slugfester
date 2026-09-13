@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "blindReviewContexts": 2,
+    "totalBlindReviewContextsIncludingPreservedFailure": 2,
+    "freshAnonymousAdjudicator": true,
+    "forkTurns": "none",
+    "otherReviewOutputsUnavailableToEachBlindReviewer": true,
+    "otherDebatesAndTagFrequenciesUnavailableToModels": true
+  },
+  "authorization": null,
+  "blindSemanticReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/blind-semantic-review.json",
+    "sha256": "b1cf037ebbe8da2b30706aee1c806734a38eeb136b755f8f6a860e13ab6a9f21",
+    "bytes": 3130
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "833f318956c20ca45b8fba0899572c9ac8f230b6d0c39b280aa39c2afae9cd1e",
+    "bytes": 179437
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/reference-definitions.json",
+    "sha256": "ca1b736615bff85eb0288b83d27a4864a18e2f7581cf9cc828bfe4b82046ef59",
+    "bytes": 3828
+  },
+  "controllerCorrection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/controller-correction.json",
+    "sha256": "eb7b844e7db1058425a670b5a3f5fd5a9c34076c1a12bd4ce2f3cdc573abd7cb",
+    "bytes": 93953
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "agentTask": "/root/rhetorical_260_a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "833f318956c20ca45b8fba0899572c9ac8f230b6d0c39b280aa39c2afae9cd1e",
+        "bytes": 179437
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-format-normalized.json",
+        "sha256": "ef9022b17f4a8d46716721088f62fd7c1207563606ba5f42414f890ea8aca74d",
+        "bytes": 38434
+      },
+      "readingGate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-reading-gate.json",
+        "sha256": "e16c8b8c0a1652dbd0b5136e9d96f95867df5e50f2c16934768358d8b369dc3f",
+        "bytes": 1341
+      },
+      "retainedWithoutNewAssessment": false,
+      "originalOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-a-output.json",
+        "sha256": "540b1e8feb22bd8955822357141a7c1a111c5123ae036168096adc2825f24f39",
+        "bytes": 34894
+      },
+      "originalFailedAttempts": 0,
+      "authorizedReplacementAttempts": 0,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "agentTask": "/root/rhetorical_260_b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "833f318956c20ca45b8fba0899572c9ac8f230b6d0c39b280aa39c2afae9cd1e",
+        "bytes": 179437
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-b-output.json",
+        "sha256": "e6b1fe332066c93a88e93acc8f8f1c54f6469d7ed5230c14acae98f424d0a97b",
+        "bytes": 39777
+      },
+      "readingGate": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/pass-b-reading-gate.json",
+        "sha256": "feb46b8597a2cb8bb4d2d08d612cd0d33ade8300c13e89f0175220f2d1d30715",
+        "bytes": 1341
+      },
+      "retainedWithoutNewAssessment": false,
+      "originalOutput": null,
+      "originalFailedAttempts": 0,
+      "authorizedReplacementAttempts": 0,
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "agentTask": "/root/rhetorical_260_adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/adjudication-packet.json",
+        "sha256": "1cbc43225cdd21fa39fdb25f5279ae371f66c8ec65c375d6bc64a596811f8ef8",
+        "bytes": 241969
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/publication/rhetorical-tag-review-1/adjudication-output.json",
+        "sha256": "3455645816b1163ca5027b4721261d3fcd79b75a106d922db3fb4a01e77329e1",
+        "bytes": 24568
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "audit": {
+    "blindReviews": 2,
+    "totalBlindReviewAttemptsIncludingPreservedFailure": 2,
+    "authorizedReplacementAttempts": 0,
+    "retries": 0,
+    "unionCandidates": 62,
+    "controllerAcceptedToRejectedCorrections": 20,
+    "controllerContextOnlyCorrections": 1,
+    "controllerRejectedToAcceptedCorrections": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "completedAt": "2026-09-13T02:21:13.011Z"
+}

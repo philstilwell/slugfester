@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0-bounded-score-blind-inventory-correction",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "motion": "Does God exist?",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "source": {
+    "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+    "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+    "bytes": 349406
+  },
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/correction-1/raw-inventory.json",
+    "sha256": "dc6eb72415a5db54b00b7f2f5e076b94ba73069f07d03cdfaf33f701b23d47e4",
+    "bytes": 97763
+  },
+  "scope": "One metadata-only correction round before judgment, retaining all selected argument claims, reasons, inferential summaries, burden links, importance values, exact source spans, section identities and section weights. No ratings, totals, scores, winner, tags, publication or biography.",
+  "readonlyFirst": true,
+  "mechanicalCorrectionsByController": [
+    "Stable chronological sort by original source startEvent.",
+    "Recompute all total and section counts, balance/capacity flags from the resulting move array.",
+    "Restore 3 quotation candidates to exact contiguous caption wording, retaining repeated words.",
+    "For each existing materialWordingConfidence below high propagate that level to attributionConfidence if currently high, ensuring audio triggers; do not upgrade confidence."
+  ],
+  "reviewTasks": [
+    {
+      "type": "reply-classification-and-links",
+      "moveIds": [
+        "pro-torah-compassion-circumcision-benefit",
+        "pro-hanukkah-resisted-tyranny",
+        "pro-jewish-law-treats-nonjews",
+        "pro-god-supreme-moral-authority",
+        "pro-chosenness-is-mission"
+      ],
+      "instructions": "For these five moves only, supply the source-correct moveKind, respondsToIds and responseComponents, plus rationale. A reply must actually address a premise/inference/conclusion of an earlier selected move. A speaker introducing a counterargument against the opponent's book is not automatically replying to a different argument in the opponent's current opening. If constructive, BOTH arrays must be empty. Preserve all genuine later reply chains. Existing responseComponents may be retained unchanged when justified."
+    },
+    {
+      "type": "capacity-compliant-semantic-sectioning",
+      "maximumMoveAssignments": 2,
+      "instructions": "The current morality section has 5 pro and 3 con moves, so violates maximum 4 per side. Choose a minimal source-grounded resection of at most two existing moves, preferably one coherent pro/con exchange together, into an existing semantically appropriate section. Both origin and destination must have at least 1 and at most 4 per side afterward. No moves may be dropped, split, merged, added or semantically rewritten; no section identities, titles or weights may change. Each reassignment needs >=40 characters of source-specific reasoning. Do not arbitrarily shift one side just to force symmetry. If impossible within this scope, report blocked rather than widen it."
+    },
+    {
+      "type": "recomputed-audit-rationales",
+      "instructions": "After your proposed section assignments, supply a source-specific overall selectionBalanceRationale and a capacityRationale for every existing section in original order. Explicitly justify distinct non-mergeable fourth cards wherever a side has 4. Give no formulaic numerical symmetry justification. The controller will compute all arithmetic itself."
+    }
+  ],
+  "observedConcerns": [
+    {
+      "moveIds": [
+        "pro-torah-compassion-circumcision-benefit",
+        "pro-hanukkah-resisted-tyranny"
+      ],
+      "linkedTarget": "con-delayed-intervention-history",
+      "sourceBasis": "Events 575–646 explicitly discuss Hitchens book claims about Torah, circumcision and Hanukkah; target events 406–456 argue that revelation occurred implausibly late after prehistoric suffering. Those are not the same argumentative premises. Classifications and response links need fresh score-blind review rather than mechanically asserting direct reply credit."
+    },
+    {
+      "moveIds": [
+        "pro-jewish-law-treats-nonjews"
+      ],
+      "linkedTarget": "con-scriptural-violence-and-hell",
+      "sourceBasis": "The inventory links a challenge about Sabbath treatment and court authority to a selected passage about ancient extermination and hell. Review whether it is genuinely a reply to that selected argument or an independently introduced counterargument about Hitchens book; retain its later real source/citation exchanges."
+    }
+  ],
+  "outputContract": {
+    "schemaVersion": "1.0-bounded-inventory-correction-output",
+    "status": "complete-within-authorized-scope",
+    "debateNumber": "260",
+    "debateId": "boteach-hitchens-god-morality-2008",
+    "assessmentModel": "5.6 Sol",
+    "classificationCorrections": "Exactly five objects in reviewTasks[0].moveIds order: {moveId,moveKind,respondsToIds,responseComponents:[{targetMoveId,component,description}],rationale}",
+    "sectionAssignments": "One or two objects: {moveId,sectionId,rationale}",
+    "selectionBalanceRationale": "Source-specific string >=40 characters explaining every threshold-triggering imbalance after resection.",
+    "capacityRationales": "Exactly seven objects in original section order: {sectionId,rationale}",
+    "audit": {
+      "sourceReadCompletely": true,
+      "inventoryReadCompletely": true,
+      "selectedArgumentsUnchanged": true,
+      "sourceSpansUnchanged": true,
+      "importanceAndBurdenLinksUnchanged": true,
+      "sectionWeightsUnchanged": true,
+      "ratingsAndTotalsAbsent": true
+    }
+  },
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/correction-1/semantic-corrections.json",
+  "attemptLimit": 1,
+  "retries": 0
+}

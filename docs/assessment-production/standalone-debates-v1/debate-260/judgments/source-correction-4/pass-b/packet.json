@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-standalone-bounded-source-correction-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-isolated-source-correction",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "pass": "pass-b",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does God exist?",
+  "sides": {
+    "pro": {
+      "speaker": "Shmuley Boteach",
+      "position": "Jewish theism"
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic critique"
+    }
+  },
+  "inventorySha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/inventory.json",
+      "sha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+      "bytes": 191206
+    },
+    "events": {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/events.json",
+      "sha256": "8177b7bb890d1755591dc561924c3657ddb99f08f4b5477bd347f537d3d80e16",
+      "bytes": 261337
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/transcript.txt",
+      "sha256": "093d3b31b7fd04653d2b63a3ab7e56a1885b1db3f5e8d43b53b188edb4e3eba6",
+      "bytes": 109996
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    },
+    "indexedSource": {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+      "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+      "bytes": 349406
+    },
+    "audioVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/audio/audio-verification.json",
+      "sha256": "e0b7a9f1da4f55f9d69083a263ea3e3178d484b2efa736caa7ff0d946caa3e1e",
+      "bytes": 356004
+    },
+    "validatorDependency": {
+      "path": "scripts/lib/reassessment-scoring.mjs",
+      "sha256": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+      "bytes": 44028
+    }
+  },
+  "readingManifest": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/reading-manifest.json",
+    "sha256": "4c337b7b2eac5988d055186be862900202ca4cfbad2760716299ddde49ed8750",
+    "bytes": 54394
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true,
+    "oldPrimaryJudgmentsUnavailable": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "scope": {
+    "replaceJudgmentsForMoveIds": [],
+    "replaceDimensions": [
+      {
+        "moveId": "con-evolution-tested-and-evidenced",
+        "dimension": "precisionClarity"
+      },
+      {
+        "moveId": "con-evolution-tested-and-evidenced",
+        "dimension": "calibrationCharity"
+      }
+    ]
+  },
+  "sourceFocusNotes": [
+    "Assess only the frozen selected move and explicitly listed dimension. A move identifier and the full-source background do not license transferring credit or penalty for material delivered in another selected passage.",
+    "The earlier con-evolution-tested-and-evidenced passage supplies testability, influenza sequencing, ancestry, eye-development models, common ancestry versus descent from present monkeys, and evidence versus faith. Assess the argument and the speaker’s actual treatment of the opposing position. Do not import later fossil examples or the later con-selection-fact-not-ethic distinction, and do not attribute concessions or religious-compatibility statements absent from this passage.",
+    "The con-fossils-contingency-unfalsifiability passage supplies positive molecular/fossil evidence, newly found intermediates, contingent survival of an ancestor, and criticism of unfalsifiable guidance. Its survival narrative explains the contingency of humans appearing, not a mechanism for missing fossils. Do not attribute a fossilization-rarity or incomplete-preservation explanation that the speaker did not give.",
+    "The pro-transitional-links-still-missing passage responds to Hitchens’s statement that intermediate species are only now being discovered, and presses an expected-count claim. Assess that live exchange and the actual burden, not failure to answer an unspoken fossil-preservation explanation. Legitimate criticism of unsupported expectations or inference remains possible; no preferred value or direction is implied.",
+    "Read all complete audio qualifications. In particular, audio check 16 excludes its three uncertain speaker snippets and garbled species/Popper names from separate credit, quotation and penalty evidence; independently confirmed segments establish the selected core. Boteach explicitly accepts guided development, so do not turn criticism of unguided sufficiency into blanket rejection of evolutionary development. Spoken scientific claims are not independently certified facts."
+  ],
+  "readingProtocol": [
+    "Phase 1 is read-only. Read this complete packet and the complete reading manifest, all three metadata files, every source/inventory/audio page, and the complete production workflow and rubric before authoring assessments. Show one file per result with ample output budget; recover any truncation using exact line ranges. Stop and report READY FOR AUTHENTICATION with counts and unresolved reading problems only. Write no reading receipt or other file.",
+    "After controller authentication, phase 2 permits precisely one complete apply_patch output at the assigned path. Do not write placeholders, overwrite a delivered output, or retry a failed delivery. In-memory syntax and contract checks before delivery are permitted.",
+    "Use only the frozen evidence and listed controls. Do not inspect old primary judgments, source-quality reviews, controller reports, other passes, prior or current scores, other debates, publication material, biographies, rankings, skill directories, private logs, or credentials. No network, paid services, external models or child agents. No calculation of move, section or overall totals or winners.",
+    "Independently author every permitted rating and rationale about the actual source argument. Do not infer a desired value or direction from this task. Do not add an overall burden adjustment or rerate any unlisted field. Preserve all fixed identity fields.",
+    "Your completeJudgments array follows scope.replaceJudgmentsForMoveIds exactly. Each entry is {moveId,assessmentConfidence,dimensions}, with high/medium/low assessmentConfidence and all six dimensions, each {value:integer 0..100,rationale:source-specific string at least 40 characters}. Your dimensionRepairs follows scope.replaceDimensions exactly, each {moveId,dimension,assessment:{value,rationale}}. It is an empty array when no dimension repair is authorized.",
+    "Your completeJudgments must be empty. Your dimensionRepairs must match scope.replaceDimensions exactly and in order, each {moveId,dimension,assessment:{value,rationale}}. Do not author confidence labels, burdens, or other dimensions. debateNumber is the exact string in outputContract. Validate JSON and the full exact output contract in memory before your one apply_patch delivery."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-bounded-source-correction-output",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "debateNumber": "260",
+    "debateId": "boteach-hitchens-god-morality-2008",
+    "pass": "pass-b",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "9b17d989ef771a3378d292b48195f4e13d54c3cd886a0d1cdf783a56935e4ece",
+    "requiredTopLevelKeys": [
+      "schemaVersion",
+      "protocolId",
+      "status",
+      "debateNumber",
+      "debateId",
+      "pass",
+      "assessmentModel",
+      "reasoningEffort",
+      "inventorySha256",
+      "isolation",
+      "completeJudgments",
+      "dimensionRepairs",
+      "audit"
+    ],
+    "isolation": {
+      "completeSourceReviewed": true,
+      "oldPrimaryJudgmentsUnavailable": true,
+      "otherPassUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "publicationUnavailable": true,
+      "contaminationDetected": false
+    },
+    "audit": {
+      "onlyAuthorizedFieldsAuthored": true,
+      "sourceScopePreserved": true,
+      "audioCautionsApplied": true,
+      "noTotalsAuthored": true
+    }
+  },
+  "writablePath": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-4/pass-b/output.json"
+}

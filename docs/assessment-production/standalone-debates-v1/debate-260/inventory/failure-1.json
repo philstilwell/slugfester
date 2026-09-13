@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0-preserved-isolated-inventory-failure",
+  "status": "blocked-awaiting-replacement-authorization",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "videoId": "vnMYL8sF7bQ",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/execution-plan.json",
+    "sha256": "71d1d13d73b6b9886d8579034b5350d98f63a540a4b06d44e6a37807e1b297f3",
+    "bytes": 1421
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/packet.json",
+      "sha256": "8c290d52a4b628b94283818d19c600103d1d357e6858b4aac6e96fee00215fc9",
+      "bytes": 5979
+    },
+    {
+      "path": ".assessment-cache/captions/vnMYL8sF7bQ/score-blind-source.json",
+      "sha256": "04b76540361d28a7468f10bd28bbe02f75b5d02ebddbaee817789665123aa799",
+      "bytes": 349406
+    }
+  ],
+  "failedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/model-output.json",
+    "sha256": "fab91c90de521b46cb06e57f8467ff29506aeb4fdd352a042929767fca88060b",
+    "bytes": 48
+  },
+  "authenticatedReading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/inventory/authenticated-reading.json",
+    "sha256": "8d5e169ba1b3527b1e88fb019ecf40de89ee0f838562baf4188e3d7e17509536",
+    "bytes": 891393
+  },
+  "validator": {
+    "status": "failed",
+    "message": "inventory: identity or status mismatch"
+  },
+  "observedFailure": "The sole output is a 48-byte syntactically valid JSON placeholder with an invalid schemaVersion and an unrelated key. It contains no argument inventory, burden map, or coverage audit.",
+  "agentReportedFailure": "Blocked: the single authorized write was accidentally consumed by an invalid placeholder file. I did not modify it afterward.",
+  "attempts": 1,
+  "retries": 0,
+  "sourceGatePassed": true,
+  "completeSourceReadingAuthenticated": true,
+  "validInventory": false,
+  "judgmentsStarted": false,
+  "adjudicationStarted": false,
+  "scorePasses": 0,
+  "publicationStarted": false,
+  "knownSuccessfulCallCostUsd": 0,
+  "maximumPossiblePaidCostUsd": 0,
+  "privateReasoningInspectedOrPreserved": false,
+  "nextAllowedAction": "One fresh isolated score-blind inventory replacement only after explicit user authorization, retaining the source packet and failed bytes and using a separate output path.",
+  "recordedAt": "2026-09-12T21:19:34.567Z"
+}

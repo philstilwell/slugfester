@@ -1,0 +1,76 @@
+{
+  "status": "passed-authorized-content-preserving-normalization",
+  "debateNumber": "260",
+  "debateId": "boteach-hitchens-god-morality-2008",
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-2/authorization.json",
+    "sha256": "61662f13ccc9ce0d716fb1755762d11a16d79dd172779b1243deefa80fb1198a",
+    "bytes": 1979
+  },
+  "passes": [
+    {
+      "pass": "pass-a",
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-a/output.json",
+        "sha256": "4abc361c836a6466bfce475a8476c1e97c2e5b2b210140417ff4dbd0f195e2fe",
+        "bytes": 4935
+      },
+      "preservedRejectedOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-a/rejected-output-1.json",
+        "sha256": "4abc361c836a6466bfce475a8476c1e97c2e5b2b210140417ff4dbd0f195e2fe",
+        "bytes": 4935
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-a/output.json",
+        "sha256": "4f4c398fb1b33d8f95b95bc9d272e0491d321b2def98735191d4bbb7f4d94493",
+        "bytes": 4931
+      },
+      "proof": {
+        "allStringAndScalarTokensUnchanged": true,
+        "removedCharacters": 4,
+        "lines": [
+          13,
+          55
+        ]
+      }
+    },
+    {
+      "pass": "pass-b",
+      "before": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/output.json",
+        "sha256": "d0af120de7e54a606791bc8d0e2c380cac4659adb7187a19ec99e69ca637f2c1",
+        "bytes": 5350
+      },
+      "preservedRejectedOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/rejected-output-1.json",
+        "sha256": "d0af120de7e54a606791bc8d0e2c380cac4659adb7187a19ec99e69ca637f2c1",
+        "bytes": 5350
+      },
+      "after": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/output.json",
+        "sha256": "9b1fdb65bc1d5baac02b81b3bffd0f7c1ab95ddc2f00f3493031301378a1f592",
+        "bytes": 5424
+      },
+      "proof": {
+        "allSuppliedNumericalRatingsAndRationalesUnchanged": true,
+        "fieldMapping": {
+          "ratings": "dimensions",
+          "rating": "value"
+        },
+        "confidenceOrigin": {
+          "path": "docs/assessment-production/standalone-debates-v1/debate-260/judgments/source-correction-1/pass-b/preserved-prior-output.json",
+          "sha256": "c4b1805429cb68f61350bf57efc3c1864bf2acd87e9b1fed5c062edc2cdead26",
+          "bytes": 35724
+        },
+        "confidenceDisposition": "The user explicitly authorized retention of these original primary labels; they are not attributed to the correction reviewer."
+      }
+    }
+  ],
+  "substantiveChanges": 0,
+  "scorePasses": 0,
+  "controller": {
+    "path": "scripts/tmp-prepare-primary-source-correction-2.mjs",
+    "sha256": "a48837c98837fd6fbfef345ea4e064153995874eeb1b00dfdb721c78e9d159a0",
+    "bytes": 7568
+  }
+}
