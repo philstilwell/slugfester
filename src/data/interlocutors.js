@@ -890,6 +890,16 @@ export const interlocutorAvatars = [
     name: "Al Sharpton",
     src: `${avatarBasePath}/al-sharpton.webp`,
     aliases: ["Al Sharpton"]
+  },
+  {
+    name: "Jonathan Sacks",
+    src: `${avatarBasePath}/jonathan-sacks.webp`,
+    aliases: ["Jonathan Sacks"]
+  },
+  {
+    name: "Deepak Chopra",
+    src: `${avatarBasePath}/deepak-chopra.webp`,
+    aliases: ["Deepak Chopra"]
   }
 ];
 
