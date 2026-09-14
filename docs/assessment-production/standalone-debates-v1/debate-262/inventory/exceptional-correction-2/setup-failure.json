@@ -1,0 +1,10 @@
+{
+  "status": "controller-path-error-before-worker-execution",
+  "debateNumber": "262",
+  "phase": "execution-plan construction",
+  "cause": "The repository fileRecord helper accepts repository-relative paths. Passing the packet's absolute source paths caused a duplicate repository prefix and ENOENT.",
+  "preservation": "Previously created authorization and packet bytes remain untouched. Preserve the failed controller; resume only if generated existing files match byte-for-byte, then create the missing plan with repository-relative source records.",
+  "modelAttemptConsumed": false,
+  "sourceOrAssessmentChanged": false,
+  "directCostUsd": 0
+}

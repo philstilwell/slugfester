@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0-isolated-adjudication-execution-plan",
+  "status": "frozen-before-execution",
+  "frozenAt": "2026-09-13T23:51:38.342Z",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContext": true,
+  "inputFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/packet.json",
+      "sha256": "2c353775cf455caa15138345a9598b1b2c0ebb2c6255f77f7bc7722035b4c7d4",
+      "bytes": 97966
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/inventory.json",
+      "sha256": "362e58b923f218b34051a051aab8a11030ef2da7b513b81fd2a4ec80cae84d1b",
+      "bytes": 117464
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/audio/audio-verification.json",
+      "sha256": "c6d1672b83f150f9d215b9164db06e088eec49e3ddfa0305860b6dea1703ee76",
+      "bytes": 1534
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/source/text-attribution-review.json",
+      "sha256": "a11743a16a15270fc76c659616ad0c99ef9b92b1fa4b8d9dc32cd7d94ff29100",
+      "bytes": 15299
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/indexed-transcript.txt",
+      "sha256": "f7b93831e019475312fa2df1b2ee442cb4d8f8ae664316a846fc12014c4df4f5",
+      "bytes": 136442
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    }
+  ],
+  "proceduralSkill": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/SKILL.md",
+  "outputPath": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-262-worktree/docs/assessment-production/standalone-debates-v1/debate-262/adjudication/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "disputeIds": [
+    "secular-reason-can-design-workable-social-order:logicalCoherence",
+    "secular-reason-can-design-workable-social-order:evidenceWarrant",
+    "secular-reason-can-design-workable-social-order:responsiveness",
+    "secular-reason-can-design-workable-social-order:relevanceBurden",
+    "secular-reason-can-design-workable-social-order:precisionClarity",
+    "secular-reason-can-design-workable-social-order:calibrationCharity",
+    "psychology-does-not-settle-moral-truth:logicalCoherence",
+    "psychology-does-not-settle-moral-truth:evidenceWarrant",
+    "psychology-does-not-settle-moral-truth:responsiveness",
+    "psychology-does-not-settle-moral-truth:relevanceBurden",
+    "psychology-does-not-settle-moral-truth:precisionClarity",
+    "psychology-does-not-settle-moral-truth:calibrationCharity",
+    "meaning-can-enter-broad-well-being:logicalCoherence",
+    "meaning-can-enter-broad-well-being:evidenceWarrant",
+    "meaning-can-enter-broad-well-being:responsiveness",
+    "meaning-can-enter-broad-well-being:relevanceBurden",
+    "meaning-can-enter-broad-well-being:precisionClarity",
+    "meaning-can-enter-broad-well-being:calibrationCharity",
+    "burdenCompletionAdjustment:pro",
+    "burdenCompletionAdjustment:con"
+  ],
+  "directCostUsd": 0,
+  "instructions": [
+    "Resolve every listed dispute exactly once in order, choosing only an existing option-a or option-b. Each rationale must have at least 40 characters and explain the source-specific reason relevant to that disputed field.",
+    "Read the complete rubric/scoring controls, all anonymous options, the locked inventory and full indexed transcript in bounded untruncated chunks. Do not read either original judgment, execution logs, aggregate scores, other debates, rankings, publication prose or network content. Do not follow sourceLocks into prohibited inputs.",
+    "The options have no pass identity. Do not infer which reviewer produced them. Rate neither the inventory anew nor any undisputed field. Do not calculate totals or name a winner.",
+    "Evidence is caption/transcript-only. The editor independently confirms Sam Harris opens; selected proposition attribution was checked textually before freeze. No audio was verified; the zero-audio-check disposition is explicit. Do not infer tone or penalize caption transcription artifacts.",
+    "Both burden adjustments must be resolved from existing eligibility objects. Avoid double counting an already rated deficiency or success; no new numerical value is permitted.",
+    "Create no placeholders. Construct and validate the complete result in memory before one apply_patch submission to the exact outputPath. Preserve final bytes without overwrite or retries.",
+    "All shell commands must remove OPENAI_API_KEY and ANTHROPIC_API_KEY. No paid APIs, credentials, Git operations, network or other workers."
+  ],
+  "outputShape": {
+    "schemaVersion": "1.0-standalone-dispute-adjudication",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "debateNumber": "262",
+    "debateId": "harris-haidt-religion-moral-truth-2016",
+    "reviewerRole": "isolated-dispute-only-adjudicator",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "isolation": {
+      "passIdentitiesUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "publicationProseUnavailable": true,
+      "otherDebatesUnavailable": true,
+      "contaminationDetected": false
+    },
+    "resolutions": [
+      {
+        "disputeId": "each exact ID, once, in order",
+        "selectedOption": "option-a or option-b",
+        "rationale": "40+ characters; explain this particular field's source warrant"
+      }
+    ],
+    "readingAuthentication": {
+      "completeTranscriptReviewed": true,
+      "sourceEventRanges": "actual ranges read",
+      "allDisputesReviewed": true,
+      "additionalInputsRead": "actual allowed inputs",
+      "directCostUsd": 0
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-repository-gates",
+  "debateNumber": "262",
+  "status": "passed",
+  "completedAt": "2026-09-14T01:46:28.880Z",
+  "commands": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "result": "262 debates validated"
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "result": "262 available transcripts; target bytes authenticated"
+    },
+    {
+      "command": "node scripts/validate-interlocutor-bios.mjs",
+      "exitCode": 0,
+      "result": "176 source-backed biographies"
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 262",
+      "exitCode": 0,
+      "result": "Full replay including target source bytes"
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 262 --repository-only",
+      "exitCode": 0
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --repository-only",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run assessment:standalone:content-parity:check",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run assessment:standalone:rhetorical-tags:check",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run seo",
+      "exitCode": 0,
+      "result": "744 generated files"
+    },
+    {
+      "command": "node scripts/generate-seo-pages.mjs --check",
+      "exitCode": 0,
+      "result": "744 generated files validated"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "result": "Full current check and postcheck completed on replay 2; includes campaign closure, calibration promotion, all standalone records, content parity, rhetorical tags, scope fixtures, and team lane"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "logs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/validation/full-repository-check.txt",
+      "sha256": "e36872aaa983c795d9c84d6f97750b956ca76da3bc6ae4880533235b09c7a2d0",
+      "bytes": 7276
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/validation/full-repository-check-replay-1.txt",
+      "sha256": "029380c60e070c06973db707724dbb075930c110271437daeb98235644efa693",
+      "bytes": 9887
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/validation/full-repository-check-replay-2.txt",
+      "sha256": "721a0d72d21844a388463b237c5dfb09e9cebd4c2bf03caea241a3f22809a6bb",
+      "bytes": 49632
+    }
+  ],
+  "historicalCacheRecovery": {
+    "failedAttempts": 2,
+    "reason": "Separate worktree lacked ignored historical audio and caption files required by existing full-source validators.",
+    "resolution": "Linked the existing parent v2.2 audio-verification directory under ignored output/transcribe and 244 missing historical caption directories under the ignored caption cache. Existing local target cache was not overwritten. Original source evidence was only read.",
+    "testLimitsChanged": false,
+    "sharedCodeChanged": false,
+    "scoringRulesChanged": false
+  },
+  "remainingGates": "Full local site check, immediate precommit preflight, clean-checkout repository-only replay, required PR check, merge, and successful main/Pages runs."
+}

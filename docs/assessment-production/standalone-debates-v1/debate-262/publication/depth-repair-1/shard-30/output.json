@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-two-leaf-publication-repair-output",
+  "status": "complete-two-leaf-repair",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "shardId": "shard-30",
+  "repairs": [
+    {
+      "path": "candidate.quotes.con.text",
+      "value": "emergent property of a system",
+      "rationale": "Trims only the unfinished trailing clause while preserving a coherent exact source substring."
+    },
+    {
+      "path": "sourceQuoteAudit[1].text",
+      "value": "emergent property of a system",
+      "rationale": "Matches the candidate repair exactly and retains only coherent words from the eligible span."
+    }
+  ],
+  "audit": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "attempts": 1,
+    "retries": 0,
+    "directCostUsd": 0,
+    "scoresChanged": false,
+    "otherFieldsChanged": false
+  }
+}

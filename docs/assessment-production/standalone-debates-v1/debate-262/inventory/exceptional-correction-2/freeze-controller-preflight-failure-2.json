@@ -1,0 +1,11 @@
+{
+  "status": "diagnosed-before-any-canonical-write",
+  "failure": "Counting code containing apply_patch overcounted an aborted local draft as a submitted artifact.",
+  "preservedController": "freeze-controller-attempt2.mjs",
+  "sourceDiagnosis": "The 23:15:41 worker call raised SyntaxError at JSON.parse before its apply_patch line. Its in-memory draft display had exceeded the local output budget. The 23:17:15 call submitted both files successfully. There was only one actual file submission.",
+  "correction": "Inspect each corresponding tool result and exclude only the demonstrated pre-write parse failure, while retaining an explicit record of it. Keep the expected final submission count at one.",
+  "dependentPacketCommand": "The subsequently attempted packet command stopped on the absent canonical inventory and wrote nothing.",
+  "workerRerun": false,
+  "canonicalInventoryWrittenByFailedController": false,
+  "directCostUsd": 0
+}

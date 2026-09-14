@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0-publication-repair-unauthorized-rewrite-incident",
+  "status": "blocked-pending-explicit-exception",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "shardId": "shard-13",
+  "recordedAt": "2026-09-14T00:41:16.916Z",
+  "failedFirstOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/depth-repair-1/shard-13/failed-attempt-1-output.json",
+    "sha256": "33617a4305314d44880cba7eee20fe500f72866f83a714dff916c22972698d0b",
+    "bytes": 2337
+  },
+  "secondSubmittedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/depth-repair-1/shard-13/output.json",
+    "sha256": "ac85b1f11f9fa06bdf2f18e24b896f87c7f2a8e520bce7e30b3274214a34963d",
+    "bytes": 2224
+  },
+  "firstSubmission": {
+    "critiqueWords": 146,
+    "contractMaximumWords": 130,
+    "callId": "call_TftobKQv1iOFXqfQn2BpPwMd",
+    "timestamp": "2026-09-14T00:30:05.028Z",
+    "preservationMethod": "Exact original file content reconstructed from the authenticated session's Add File patch because the worker had already overwritten it before controller inspection."
+  },
+  "secondSubmission": {
+    "critiqueWords": 129,
+    "critiqueCharacters": 1028,
+    "callId": "call_zg2VyHD7MegU7LvQRzgjMM2d",
+    "timestamp": "2026-09-14T00:30:45.754Z",
+    "changedFields": [
+      "candidate.sections[2].exchanges[1].con.critique"
+    ],
+    "semanticReview": "Complete grammatical source-specific critique; preserves descriptive scope, Haidt's explicit moral-truth concession, and assigned score 84.",
+    "accepted": false
+  },
+  "authentication": {
+    "agentPath": "/root/depth262_13",
+    "sessionId": "01a09d51-8057-7bb3-84da-7e88776394c8",
+    "session": {
+      "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T20-29-19-01a09d51-8057-7bb3-84da-7e88776394c8.jsonl",
+      "sha256": "43bc2c0ca38c84ff84398059ab2674368a24718d5f6fe236aa758feb7a2d5fc7",
+      "bytes": 284683
+    },
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "freshContext": true,
+    "completeInputDisplayed": true,
+    "readingMethod": "Every non-whitespace input character matched in ordered display blocks. Unrelated procedural/error messages are ignored only when they do not match the next source characters; no missing source content is skipped.",
+    "inputNonWhitespaceCharacters": 16708,
+    "observedNonWhitespaceCharacters": 16708,
+    "matchedDisplayBlocks": [
+      {
+        "index": 3,
+        "start": 0,
+        "end": 4919
+      },
+      {
+        "index": 5,
+        "start": 4919,
+        "end": 9497
+      },
+      {
+        "index": 7,
+        "start": 9497,
+        "end": 14246
+      },
+      {
+        "index": 9,
+        "start": 14246,
+        "end": 16708
+      }
+    ],
+    "successfulOutputPatchCalls": 2,
+    "patchCallIds": [
+      "call_TftobKQv1iOFXqfQn2BpPwMd",
+      "call_zg2VyHD7MegU7LvQRzgjMM2d"
+    ],
+    "startedAt": "2026-09-14T00:29:19.415Z",
+    "completedAt": "2026-09-14T00:31:08.416Z"
+  },
+  "defect": "Worker submitted an overlength critique, then overwrote it after submission despite the frozen one-attempt/no-overwrite rule. Its output self-report of attempts:1/retries:0 does not accurately describe the two actual submitted versions. Both calls and versions are retained; the controller does not ratify the extra attempt.",
+  "requestedException": "Authorize retaining the already-validated second submitted version of this single critique, with actual attempts and recovery recorded honestly. No new judgment, score, source, or content-generation attempt is requested.",
+  "publicationUnchanged": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/output.json",
+    "sha256": "cdec37f7b7c42808cb7336d8c78785ff76bf354d1ed7ee053bcc64b6a8ce5aa5",
+    "bytes": 59902
+  },
+  "scoresUnchanged": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/score-pass/output.json",
+    "sha256": "cc74cdd3736cc11c46e7c7fa0eb0d30d5a672f5163006966fcffeb4197db276c",
+    "bytes": 15810
+  },
+  "score": {
+    "pro": 82,
+    "con": 82
+  },
+  "directCostUsd": 0,
+  "maximumPossiblePaidCostUsd": 0
+}

@@ -1,0 +1,327 @@
+{
+  "schemaVersion": "1.2-standalone-score-blind-inventory",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "assessmentModel": "5.6 Sol",
+  "motion": "Is a rational account centered on well-being sufficient to explain and guide morality?",
+  "assessedDebateWindowMs": {"start": 0, "end": 4822000},
+  "routes": [
+    {
+      "side": "pro",
+      "position": "Well-being-centered rationalism",
+      "bridges": [
+        {"bridgeId": "pro-foundation", "tier": "motion", "burden": "Establish well-being as the basic domain in which moral truth is evaluated.", "successCriterion": "Show why changes in conscious experience admit better and worse directions independently of inherited labels."},
+        {"bridgeId": "pro-objectivity", "tier": "central", "burden": "Explain how plural good lives remain compatible with objective moral error.", "successCriterion": "Distinguish multiple flourishing peaks from states of avoidable misery and harm."},
+        {"bridgeId": "pro-guidance", "tier": "central", "burden": "Show that rational inquiry can guide beings beyond evolved intuitions.", "successCriterion": "Connect descriptive facts about minds and consequences to navigable improvements in well-being."},
+        {"bridgeId": "pro-alternatives", "tier": "subsidiary", "burden": "Answer claims that religion, evolutionary history, rights, meaning, or narrative supply indispensable independent moral standards.", "successCriterion": "Absorb their genuine benefits into a sufficiently broad account of well-being without denying concessions."}
+      ]
+    },
+    {
+      "side": "con",
+      "position": "Moral pluralism",
+      "bridges": [
+        {"bridgeId": "con-foundation", "tier": "motion", "burden": "Challenge the sufficiency of well-being as a complete account of morality.", "successCriterion": "Identify morally relevant facts or values that are not exhausted by summed experience or flourishing."},
+        {"bridgeId": "con-anthropocentric", "tier": "central", "burden": "Explain why moral truths depend on the kinds of social creatures and practices involved.", "successCriterion": "Defend emergent anthropocentric truth without collapsing into individual preference or simple relativism."},
+        {"bridgeId": "con-psychology", "tier": "central", "burden": "Show that reliable moral guidance requires an adequate account of evolved and social psychology.", "successCriterion": "Demonstrate limits of isolated reasoning and the practical importance of institutions, intuitions, and group structure."},
+        {"bridgeId": "con-plural-goods", "tier": "subsidiary", "burden": "Show that meaning, purpose, rights, narrative, and social cohesion complicate a purely experiential metric.", "successCriterion": "Provide cases where these considerations change evaluation rather than merely redescribe pleasure."}
+      ]
+    }
+  ],
+  "sections": [
+    {"sectionId": "religion-belief-and-social-function", "title": "Religious doctrine and social function", "weight": 12, "rationale": "The opening dispute establishes whether explicit belief or broader evolved social function best explains conduct and therefore what a flourishing-centered reform must account for."},
+    {"sectionId": "reason-and-moral-knowledge", "title": "Individual reason, institutions, and moral judgment", "weight": 18, "rationale": "The speakers directly test whether biased individual reasoning undermines rational moral guidance or instead supports institutional correction."},
+    {"sectionId": "moral-truth-and-pluralism", "title": "Moral truth, pluralism, and anthropocentric facts", "weight": 28, "rationale": "This is the clearest foundational disagreement about what kind of truth morality can possess and whether multiple good lives threaten objectivity."},
+    {"sectionId": "possible-minds-and-evolution", "title": "Possible minds, evolution, and moral scope", "weight": 22, "rationale": "Alien, artificial, and differently evolved minds test whether evolutionary history fixes moral categories or merely supplies facts relevant to well-being."},
+    {"sectionId": "flourishing-meaning-and-measurement", "title": "Flourishing, meaning, and measurement", "weight": 20, "rationale": "The closing on-motion exchange tests whether meaning and life narrative are components of well-being or independent values that defeat sufficiency."}
+  ],
+  "moves": [
+    {
+      "moveId": "m001", "sectionId": "religion-belief-and-social-function", "side": "pro", "speaker": "Sam Harris", "moveKind": "constructive", "sourceSpan": {"startEvent": 25, "endEvent": 109},
+      "claimSummary": "Specific doctrines can be indispensable explanations of particular religious conduct even though religion also includes ritual, belonging, and transcendence.",
+      "reasonSummary": "ISIS's prescribed treatment of gay people follows a particular rule book, and modest changes to that rule book would predictably change the conduct; other traditions generate different specific practices.",
+      "inferenceSummary": {"premise": "Distinct religious traditions explicitly prescribe distinct, otherwise highly specific behaviors.", "inference": "When behavior varies with those prescriptions and lacks a comparably specific intuitive source, doctrine has causal explanatory force.", "conclusion": "A complete account of religious moral conduct must take specific beliefs seriously."},
+      "importance": 2, "importanceRationale": "It frames Harris's broader claim that rational reform must confront belief content, though it is preparatory to the morality dispute.",
+      "burdenContact": {"bridgeId": "pro-alternatives", "tier": "subsidiary", "rationale": "It resists treating religion's social functions as a sufficient explanation of morally consequential practices."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "The extended opening turn and later direct replies identify Harris, but the source has no speaker labels and was not audio-verified.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The ASR is coherent across the argument but contains small recognition errors and rolling-caption overlap.",
+      "quoteEligibleExactSpans": ["specific doctrines matter so much", "all you really have to know are the rules of the game"]
+    },
+    {
+      "moveId": "m002", "sectionId": "religion-belief-and-social-function", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "reply", "sourceSpan": {"startEvent": 110, "endEvent": 148},
+      "claimSummary": "Doctrine matters, but religious behavior cannot be reduced to a single end such as paradise because religion serves multiple goals.",
+      "reasonSummary": "Haidt grants the counterfactual about changed scripture, then challenges the end-zone analogy for imposing parsimony on complex human and social phenomena.",
+      "inferenceSummary": {"premise": "Religions and adherents pursue several ends, and even social bonding is only one among them.", "inference": "An explanation organized around one ultimate goal omits causally relevant motives and levels of analysis.", "conclusion": "Belief-centered explanation is useful but insufficiently comprehensive."},
+      "importance": 2, "importanceRationale": "It states the pluralist explanatory objection while preserving a major concession about doctrine.",
+      "burdenContact": {"bridgeId": "con-psychology", "tier": "central", "rationale": "It argues that guidance and explanation require a fuller psychological model than explicit ends alone."},
+      "respondsToIds": ["m001"], "responseComponents": [{"targetMoveId": "m001", "component": "scope", "rationale": "It accepts doctrine's effect but rejects extending a single doctrinal end into a general explanation of religion."}],
+      "attributionConfidence": "medium", "attributionRationale": "The explicit request for Harris to identify the end zone and the later contrast mark Haidt's turn, without speaker labels or audio verification.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Meaning is stable despite ASR repetitions.",
+      "quoteEligibleExactSpans": ["those are all goals there are lots of different goals", "i will certainly grant that specific doctrines matter"]
+    },
+    {
+      "moveId": "m003", "sectionId": "religion-belief-and-social-function", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "constructive", "sourceSpan": {"startEvent": 577, "endEvent": 620},
+      "claimSummary": "Religion's possible evolutionary role does not directly prove present moral value, but it reveals psychological and social goods that a flourishing assessment must include.",
+      "reasonSummary": "An adaptation for group solidarity may have enabled large non-kin societies and may still support happiness, satisfaction, and less selfish social structures even if law can replace parts of it.",
+      "inferenceSummary": {"premise": "Adaptations can disclose durable psychological needs and social mechanisms without being normatively authoritative.", "inference": "Those mechanisms are evidence about which forms of life flourish and cannot be dismissed merely because doctrines are false.", "conclusion": "A well-being analysis needs a full descriptive picture of religion's benefits before recommending its removal."},
+      "importance": 2, "importanceRationale": "It carefully separates evolutionary explanation from a naturalistic fallacy and connects the opening topic to flourishing.",
+      "burdenContact": {"bridgeId": "con-psychology", "tier": "central", "rationale": "It makes descriptive adequacy a prerequisite for sound prescriptions."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "Book ownership and the explicit defense of adaptation identify Haidt, but no audio check was performed.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The central qualifications are clearly recoverable from automatic captions.",
+      "quoteEligibleExactSpans": ["i would never say that religion being an adaptation", "what kinds of lives are happy and satisfying"]
+    },
+    {
+      "moveId": "m004", "sectionId": "religion-belief-and-social-function", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 621, "endEvent": 649},
+      "claimSummary": "Evolutionary origin alone carries no moral weight, although an evolved disposition belongs in a practical account of flourishing.",
+      "reasonSummary": "Harris initially detects a naturalistic inference, while Haidt's immediate denial clarifies the common ground that evolved does not mean right or good.",
+      "inferenceSummary": {"premise": "A trait may be natural, selected, and ancestrally beneficial while being morally bad now.", "inference": "Origin cannot by itself justify retention; present consequences must do the normative work.", "conclusion": "Religion's evolved status does not displace a well-being-centered evaluation."},
+      "importance": 1, "importanceRationale": "The challenge prompts an important concession and boundary, but the suspected inference is withdrawn rather than sustained.",
+      "burdenContact": {"bridgeId": "pro-alternatives", "tier": "subsidiary", "rationale": "It blocks evolutionary pedigree from functioning as an independent moral warrant."},
+      "respondsToIds": ["m003"], "responseComponents": [{"targetMoveId": "m003", "component": "warrant", "rationale": "It tests whether ancestral benefit is being used as present moral justification."}],
+      "attributionConfidence": "medium", "attributionRationale": "The challenge aligns with Harris and is answered in the same rolling-caption region; the span includes the opponent's short denial, so only Harris's challenge is attributed as his proposition.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Turn overlap makes exact boundary uncertain, though the challenge is intelligible.",
+      "quoteEligibleExactSpans": ["because this thing is natural to us", "some version of the naturalistic fallacy"]
+    },
+    {
+      "moveId": "m005", "sectionId": "reason-and-moral-knowledge", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "constructive", "sourceSpan": {"startEvent": 1013, "endEvent": 1062},
+      "claimSummary": "Individual moral reasoning is systematically motivated, but well-designed institutions can make reason reliable through adversarial correction.",
+      "reasonSummary": "Individuals seek support for desired propositions and stop when they find it, whereas science institutionalizes disconfirmation by letting other motivated reasoners push back.",
+      "inferenceSummary": {"premise": "People reason selectively as individuals, while organized criticism exposes unsupported claims.", "inference": "Reliability can emerge from a system even when its individual participants are biased.", "conclusion": "Skepticism about solitary moral reasoning need not entail skepticism about reason itself."},
+      "importance": 3, "importanceRationale": "It supplies Haidt's strongest positive account of how rational inquiry can work while limiting Harris's individualistic picture.",
+      "burdenContact": {"bridgeId": "con-psychology", "tier": "central", "rationale": "It identifies institutional design as the condition under which reason becomes trustworthy."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "The direct correction of Harris's summary and references to Haidt's research identify the speaker; labels and audio verification are absent.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The argument is coherent though automatic captions garble one phrase around 'reasoned process.'",
+      "quoteEligibleExactSpans": ["my skepticism is not about reason in general", "institutionalized disconfirmation", "reason as an emergent property of a system"]
+    },
+    {
+      "moveId": "m006", "sectionId": "reason-and-moral-knowledge", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "constructive", "sourceSpan": {"startEvent": 1069, "endEvent": 1126},
+      "claimSummary": "Moral dumbfounding shows that gut judgments can persist after every offered reason has been defeated.",
+      "reasonSummary": "In the harmless-incest vignette, participants replace rebutted reasons until acknowledging that they cannot explain their condemnation.",
+      "inferenceSummary": {"premise": "Participants retain a moral verdict after conceding that their articulated harm-based reasons fail.", "inference": "The verdict is supported psychologically by intuition rather than by the stated reasons.", "conclusion": "Gut feelings can generate moral judgments in the absence of articulable reasons."},
+      "importance": 2, "importanceRationale": "It is concrete evidence for the descriptive limit on individual reasoning, while Haidt later denies that it settles moral truth.",
+      "burdenContact": {"bridgeId": "con-psychology", "tier": "central", "rationale": "It demonstrates why rational guidance must account for intuition and post-hoc justification."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "First-person research history identifies Haidt, but the ASR source is unlabeled.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The experiment's structure is clear despite caption repairs and repetition.",
+      "quoteEligibleExactSpans": ["gut feelings can support a moral judgment", "i just feel it's wrong"]
+    },
+    {
+      "moveId": "m007", "sectionId": "reason-and-moral-knowledge", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1127, "endEvent": 1133},
+      "claimSummary": "The psychological fact of unsupported moral confidence would not itself establish that no moral truth exists.",
+      "reasonSummary": "Harris distinguishes how people form or defend judgments from whether those judgments have truth conditions.",
+      "inferenceSummary": {"premise": "A person can hold a verdict without articulating a reason.", "inference": "That causal fact about belief formation does not decide the separate metaphysical question of truth.", "conclusion": "Moral dumbfounding cannot by itself refute moral truth."},
+      "importance": 2, "importanceRationale": "It prevents the descriptive experiment from bearing a stronger normative conclusion than Haidt ultimately claims.",
+      "burdenContact": {"bridgeId": "pro-objectivity", "tier": "central", "rationale": "It protects objective moral evaluation from a genetic explanation of judgment."},
+      "respondsToIds": ["m006"], "responseComponents": [{"targetMoveId": "m006", "component": "implication", "rationale": "It asks whether evidence about intuitive judgment is being extended to denial of moral truth."}],
+      "attributionConfidence": "medium", "attributionRationale": "The questioning role and immediate correction identify Harris, without labels or audio verification.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The short challenge is intelligible but ends at a rolling-caption interruption.",
+      "quoteEligibleExactSpans": ["there clearly can be no truth of the matter"]
+    },
+    {
+      "moveId": "m008", "sectionId": "reason-and-moral-knowledge", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "reply", "sourceSpan": {"startEvent": 1134, "endEvent": 1142},
+      "claimSummary": "Moral dumbfounding is unrelated to Haidt's separate philosophical disagreement with Harris about moral truth.",
+      "reasonSummary": "Haidt explicitly denies drawing a truth conclusion from the experiment and locates the disagreement in differences among kinds of truth.",
+      "inferenceSummary": {"premise": "The experiment concerns the psychological support of judgments, not their truth conditions.", "inference": "Evidence for intuitive causation cannot alone establish or defeat moral realism.", "conclusion": "The moral-truth dispute must be argued philosophically on other grounds."},
+      "importance": 2, "importanceRationale": "The concession prevents a straw position and redirects the debate to the live foundation.",
+      "burdenContact": {"bridgeId": "con-anthropocentric", "tier": "central", "rationale": "It separates the later pluralist truth argument from the psychology experiment."},
+      "respondsToIds": ["m007"], "responseComponents": [{"targetMoveId": "m007", "component": "attribution", "rationale": "It rejects the implication Harris tentatively attributed to Haidt."}],
+      "attributionConfidence": "medium", "attributionRationale": "The direct first-person denial is Haidt's answer, but the source lacks labels.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "One term is truncated as 'dumb found,' but the denial is unambiguous.",
+      "quoteEligibleExactSpans": ["the existence of moral dumb founding tells us nothing", "that's unrelated to dumb found"]
+    },
+    {
+      "moveId": "m009", "sectionId": "moral-truth-and-pluralism", "side": "pro", "speaker": "Sam Harris", "moveKind": "constructive", "sourceSpan": {"startEvent": 1157, "endEvent": 1188},
+      "claimSummary": "Multiple incompatible good lives do not eliminate moral truth because many paths can be good while others reliably produce misery.",
+      "reasonSummary": "The moral-landscape metaphor permits many peaks yet preserves valleys, just as a question can have several right answers without making wrong answers disappear.",
+      "inferenceSummary": {"premise": "There may be many distinct flourishing lives and societies, alongside conditions of profound misery.", "inference": "Plurality among successful answers is compatible with objective failure conditions.", "conclusion": "Moral pluralism does not by itself imply relativism or defeat well-being-based truth."},
+      "importance": 3, "importanceRationale": "It states Harris's principal reconciliation of objectivity with pluralism.",
+      "burdenContact": {"bridgeId": "pro-objectivity", "tier": "central", "rationale": "It directly supplies the bridge from plural goods to objective moral error."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "Ownership of The Moral Landscape and first-person formulation identify Harris, with no speaker labels.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The argument is clear and repeated, though derived from automatic captions.",
+      "quoteEligibleExactSpans": ["multiple distinct and yet incompatible possible good lives", "many ways to be off a peak"]
+    },
+    {
+      "moveId": "m010", "sectionId": "moral-truth-and-pluralism", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "constructive", "sourceSpan": {"startEvent": 1222, "endEvent": 1280},
+      "claimSummary": "Moral truth can be real yet anthropocentric: it can emerge from human forms of life and interaction rather than hold independently like chemistry.",
+      "reasonSummary": "Haidt contrasts planet-independent physical facts with the real but interaction-dependent fact that gold is more valuable than silver.",
+      "inferenceSummary": {"premise": "Some facts arise from stable patterns of interaction and remain true beyond any individual's opinion.", "inference": "Dependence on human practices does not reduce such facts to subjective preference.", "conclusion": "Moral truths may be emergent and anthropocentric without being relativistic."},
+      "importance": 3, "importanceRationale": "It provides the conceptual core of Haidt's alternative account of moral truth.",
+      "burdenContact": {"bridgeId": "con-anthropocentric", "tier": "central", "rationale": "It defines the truth category on which the pluralist route depends."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "The Wiggins account and first-person intellectual history identify Haidt; audio was not checked.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Several rolling interruptions occur, but the distinction and market example remain clear.",
+      "quoteEligibleExactSpans": ["there are anthropocentric facts", "it's an emergent fact because we interact with each other"]
+    },
+    {
+      "moveId": "m011", "sectionId": "moral-truth-and-pluralism", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "constructive", "sourceSpan": {"startEvent": 1281, "endEvent": 1321},
+      "claimSummary": "Women's equal political rights are morally true within modern individual-based political life, but not necessarily a timeless species-independent fact.",
+      "reasonSummary": "Earlier societies organized political labor around families and different roles, whereas modern politics treats individuals as the basic unit and lacks a good reason for exclusion.",
+      "inferenceSummary": {"premise": "The institutional unit and division of labor that give political rights their role vary historically.", "inference": "The reasons making equal participation obligatory can emerge with a form of social organization.", "conclusion": "Women's equality is an emergent moral truth rather than a truth of the same kind as conductivity."},
+      "importance": 3, "importanceRationale": "It is Haidt's concrete test case for anthropocentric morality and directly invites Harris's reply.",
+      "burdenContact": {"bridgeId": "con-anthropocentric", "tier": "central", "rationale": "It applies the abstract distinction to a morally consequential case."},
+      "respondsToIds": [], "responseComponents": [],
+      "attributionConfidence": "medium", "attributionRationale": "The argument continues Haidt's Wiggins exposition and ends in his question to Harris, but the transcript is unlabeled.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The social-history example is recoverable despite rough ASR punctuation.",
+      "quoteEligibleExactSpans": ["women's equality is an emerging fact about the way we live now", "there is no good reason"]
+    },
+    {
+      "moveId": "m012", "sectionId": "moral-truth-and-pluralism", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1322, "endEvent": 1376},
+      "claimSummary": "The anthropocentric boundary is too sharp because morality concerns every possible conscious mind and the experiences available to it.",
+      "reasonSummary": "Future conscious computers and altered humans raise coherent questions about suffering and which intuitions to create; across such cases, holding other things constant, more misery is worse.",
+      "inferenceSummary": {"premise": "Possible conscious systems can suffer even when their biology and intuitions differ radically from ours.", "inference": "The moral salience of worsening their experience does not depend on specifically human history or current convention.", "conclusion": "Conscious experience supplies a wider and more stable basis for moral truth than anthropocentric practice."},
+      "importance": 3, "importanceRationale": "It directly attacks the main con foundation and states the universal core of Harris's view.",
+      "burdenContact": {"bridgeId": "pro-foundation", "tier": "motion", "rationale": "It grounds the motion's proposed sufficiency in the space of possible conscious experience."},
+      "respondsToIds": ["m010", "m011"], "responseComponents": [{"targetMoveId": "m010", "component": "scope", "rationale": "It challenges restricting moral truth to human-dependent facts."}, {"targetMoveId": "m011", "component": "criterion", "rationale": "It argues that altered and nonhuman minds can still be assessed through suffering and flourishing."}],
+      "attributionConfidence": "medium", "attributionRationale": "The explicit statement of The Moral Landscape position identifies Harris; speaker labels and audio verification are absent.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The examples and invariant claim are clear in ASR, with minor disfluency.",
+      "quoteEligibleExactSpans": ["what possible experiences are there in this universe", "more misery is worse than less misery"]
+    },
+    {
+      "moveId": "m013", "sectionId": "moral-truth-and-pluralism", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1391, "endEvent": 1429},
+      "claimSummary": "A flourishing framework can allow alternative gender arrangements in possible societies while condemning present exclusion where it produces indefensible harm.",
+      "reasonSummary": "Harris imagines a differently developed society where women freely choose nonpolitical lives that flourish equally, then contrasts it with current and Taliban conditions shaped by coercion and brutality.",
+      "inferenceSummary": {"premise": "Different social arrangements can be equally good if genuinely chosen and equally flourishing, but actual exclusion often inflicts clear harms.", "inference": "Context affects which arrangements flourish without making evaluation merely conventional.", "conclusion": "Well-being pluralism can explain both possible variation and firm criticism of present injustice."},
+      "importance": 3, "importanceRationale": "It answers Haidt's strongest historical case without claiming that one surface arrangement is universally mandatory.",
+      "burdenContact": {"bridgeId": "pro-objectivity", "tier": "central", "rationale": "It applies multiple peaks and objective valleys to political equality."},
+      "respondsToIds": ["m011"], "responseComponents": [{"targetMoveId": "m011", "component": "application", "rationale": "It grants contextual variation while rejecting convention as sufficient to justify harmful exclusion."}],
+      "attributionConfidence": "medium", "attributionRationale": "The reply follows Haidt's direct question and uses Harris's landscape framework; no speaker labels or audio check.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Core qualifications are clear though the captions contain repairs.",
+      "quoteEligibleExactSpans": ["possibly equally flourishing conditions", "rationally and ethically indefensible"]
+    },
+    {
+      "moveId": "m014", "sectionId": "possible-minds-and-evolution", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "reply", "sourceSpan": {"startEvent": 1432, "endEvent": 1449},
+      "claimSummary": "If consciousness and intelligence alone are sufficient, Harris should be able in principle to derive moral truths for aliens without knowing their evolutionary history.",
+      "reasonSummary": "Haidt turns the universal claim into a diagnostic case designed to expose what information the well-being account needs.",
+      "inferenceSummary": {"premise": "An unknown alien species may be conscious and intelligent while having an entirely unknown nature.", "inference": "A universal rational account should state what can be morally inferred before species-specific history is supplied.", "conclusion": "The necessity of evolutionary information is a decisive test of Harris's claimed foundation."},
+      "importance": 2, "importanceRationale": "It is a focused challenge rather than a contrary theory, and it elicits the debate's most direct exchange on scope.",
+      "burdenContact": {"bridgeId": "con-anthropocentric", "tier": "central", "rationale": "It tests whether moral truths can be independent of creature-specific constitution."},
+      "respondsToIds": ["m012"], "responseComponents": [{"targetMoveId": "m012", "component": "scope", "rationale": "It asks whether Harris's appeal to all possible minds can guide judgment with only consciousness and intelligence known."}],
+      "attributionConfidence": "medium", "attributionRationale": "The reply acknowledges Harris's condemnation and asks him a second-person question; source labels and audio verification are absent.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The diagnostic question is clear despite automatic-caption segmentation.",
+      "quoteEligibleExactSpans": ["could say what is right for them", "we don't know anything about their evolutionary history"]
+    },
+    {
+      "moveId": "m015", "sectionId": "possible-minds-and-evolution", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1470, "endEvent": 1479},
+      "claimSummary": "Evolutionary history is not necessary to ask whether a newly created conscious system is suffering and by how much.",
+      "reasonSummary": "A first conscious computer could have no evolutionary history at all while its suffering remained a coherent subject of inquiry.",
+      "inferenceSummary": {"premise": "A newly created conscious being can suffer despite lacking an evolutionary lineage.", "inference": "If suffering remains assessable, lineage is not a necessary condition of every moral fact.", "conclusion": "At least some moral truths about possible minds are grounded in experience rather than evolution."},
+      "importance": 3, "importanceRationale": "The compact counterexample directly answers Haidt's diagnostic question and supports the universal well-being foundation.",
+      "burdenContact": {"bridgeId": "pro-foundation", "tier": "motion", "rationale": "It isolates consciousness as sufficient for at least the suffering dimension of moral concern."},
+      "respondsToIds": ["m014"], "responseComponents": [{"targetMoveId": "m014", "component": "necessity", "rationale": "It supplies a case where moral assessment remains coherent without evolutionary history."}],
+      "attributionConfidence": "medium", "attributionRationale": "This is the direct answer to Haidt's question and matches Harris's possible-minds thesis; no labels or audio verification.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The short answer is clear in ASR.",
+      "quoteEligibleExactSpans": ["create the first conscious computer", "whether that thing that conscious system was suffering"]
+    },
+    {
+      "moveId": "m016", "sectionId": "possible-minds-and-evolution", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "reply", "sourceSpan": {"startEvent": 1480, "endEvent": 1521},
+      "claimSummary": "Suffering is only one moral dimension; creature-specific reproduction and psychology may determine whether categories such as individual rights apply at all.",
+      "reasonSummary": "Haidt contrasts sexually reproducing individuals with a clonal species whose members share genomes, predicting that the latter would not organize morality around individual rights.",
+      "inferenceSummary": {"premise": "Different reproductive structures plausibly produce different psychologies and relations among individuals.", "inference": "Those differences can alter the relevance of whole moral categories rather than merely the amount of suffering.", "conclusion": "Evolutionary and psychological facts are needed to determine the content of morality for a species."},
+      "importance": 3, "importanceRationale": "It concedes suffering but presses the strongest pluralist objection to treating that dimension as the whole account.",
+      "burdenContact": {"bridgeId": "con-plural-goods", "tier": "subsidiary", "rationale": "It argues that rights may not reduce to a generic experiential metric without species-specific structure."},
+      "respondsToIds": ["m015"], "responseComponents": [{"targetMoveId": "m015", "component": "completeness", "rationale": "It grants the suffering case but argues that it leaves other moral categories underdetermined."}],
+      "attributionConfidence": "medium", "attributionRationale": "The interruption 'suffering is one dimension' and the clonal-species challenge continue Haidt's diagnostic line; unlabeled source prevents high confidence.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "ASR garbles one pop-culture reference, but the reproduction-rights inference is intact.",
+      "quoteEligibleExactSpans": ["suffering is one dimension", "whole categories of moral truths such as rights"]
+    },
+    {
+      "moveId": "m017", "sectionId": "possible-minds-and-evolution", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1522, "endEvent": 1570},
+      "claimSummary": "Evolutionary history helps predict wants and suffering, but forward-looking morality asks how to maximize possible well-being and often requires rejecting evolved dispositions.",
+      "reasonSummary": "Harris grants the descriptive value of origin while arguing that tribal violence and misfiring disgust are evolved traits that moral progress must leave behind.",
+      "inferenceSummary": {"premise": "Evolution explains present psychology but also produces dispositions that frustrate wider flourishing.", "inference": "Descriptive origin cannot set the normative destination; consequences for sentient beings must guide revision.", "conclusion": "History informs application but is not the foundation of moral guidance."},
+      "importance": 3, "importanceRationale": "It gives the full qualified answer to Haidt: descriptive relevance without normative authority.",
+      "burdenContact": {"bridgeId": "pro-guidance", "tier": "central", "rationale": "It explains how rational inquiry uses psychological facts while correcting inherited intuitions."},
+      "respondsToIds": ["m016"], "responseComponents": [{"targetMoveId": "m016", "component": "normative-role", "rationale": "It accepts that history informs psychology but denies that it determines what should be preserved."}],
+      "attributionConfidence": "medium", "attributionRationale": "The answer restates Harris's well-being thesis and is followed by Haidt's explicit characterization of it; no audio verification.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The key descriptive/normative distinction is stable despite ASR errors such as 'discussed circuitry.'",
+      "quoteEligibleExactSpans": ["our moral concerns are a subset of a deeper concern about well-being", "we have to leave the monkey behind"]
+    },
+    {
+      "moveId": "m018", "sectionId": "flourishing-meaning-and-measurement", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "reply", "sourceSpan": {"startEvent": 1571, "endEvent": 1621},
+      "claimSummary": "More flourishing is better other things equal, but a life's value is not exhausted by summing pleasurable or happy moments because narrative and meaning also matter.",
+      "reasonSummary": "A life with substantially more happy moments can nevertheless be evaluated as an utter failure in its final narrative; people care about purpose and the story of the whole life.",
+      "inferenceSummary": {"premise": "People's considered evaluation of lives depends on meaning and narrative as well as momentary experience.", "inference": "A metric that simply aggregates experiential moments can rank lives incorrectly.", "conclusion": "Well-being understood as summed experience is insufficient as a complete moral criterion."},
+      "importance": 3, "importanceRationale": "It states the con side's sharpest direct challenge to sufficiency while explicitly conceding the ceteris-paribus value of flourishing.",
+      "burdenContact": {"bridgeId": "con-foundation", "tier": "motion", "rationale": "It directly denies that experiential aggregation is all morality contains."},
+      "respondsToIds": ["m017"], "responseComponents": [{"targetMoveId": "m017", "component": "completeness", "rationale": "It accepts flourishing as important but challenges its proposed exhaustiveness."}],
+      "attributionConfidence": "medium", "attributionRationale": "The phrase 'your conception' and reference to Haidt's published reply identify Haidt; labels and audio verification are absent.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The example is coherent but the ASR does not preserve punctuation.",
+      "quoteEligibleExactSpans": ["more flourishing is better than less", "there's more to a happy life than moments of flourishing"]
+    },
+    {
+      "moveId": "m019", "sectionId": "flourishing-meaning-and-measurement", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1622, "endEvent": 1645},
+      "claimSummary": "The distinction between experienced and remembered selves already broadens well-being beyond momentary pleasure to whole-life appraisal.",
+      "reasonSummary": "Harris describes moment-by-moment sampling and contrasts it with people's retrospective judgments about happiness, actualization, and the future.",
+      "inferenceSummary": {"premise": "People's well-being includes both lived moments and reflective assessment of their lives.", "inference": "A sufficiently broad well-being construct can include global narrative evaluation rather than only pleasure samples.", "conclusion": "The measurement objection does not yet show a value outside well-being."},
+      "importance": 2, "importanceRationale": "It offers a plausible absorption of the narrative objection, though Haidt immediately argues that meaning goes beyond remembered happiness.",
+      "burdenContact": {"bridgeId": "pro-alternatives", "tier": "subsidiary", "rationale": "It attempts to incorporate narrative within well-being rather than treating it as an independent foundation."},
+      "respondsToIds": ["m018"], "responseComponents": [{"targetMoveId": "m018", "component": "definition", "rationale": "It argues that the target attacks an unduly narrow momentary conception of well-being."}],
+      "attributionConfidence": "medium", "attributionRationale": "First-person report of arguing with Kahneman and the response structure identify Harris, but no labels or audio check exist.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "Experienced/remembered terminology is repeated clearly in the captions.",
+      "quoteEligibleExactSpans": ["the experienced self and the remembered self", "how actualized are you"]
+    },
+    {
+      "moveId": "m020", "sectionId": "flourishing-meaning-and-measurement", "side": "con", "speaker": "Jonathan Haidt", "moveKind": "reply", "sourceSpan": {"startEvent": 1646, "endEvent": 1652},
+      "claimSummary": "Meaning, purpose, and accomplishment are not captured merely by asking how much happiness the remembered self reports.",
+      "reasonSummary": "Haidt distinguishes the value-laden structure of a life from remembered quantities of happiness.",
+      "inferenceSummary": {"premise": "A person can assess purpose and accomplishment separately from remembered happiness.", "inference": "Expanding the time horizon of happiness measurement does not automatically incorporate those goods.", "conclusion": "The remembered-self distinction leaves the sufficiency objection alive."},
+      "importance": 2, "importanceRationale": "It pinpoints why Harris's first absorption may be definitional rather than explanatory.",
+      "burdenContact": {"bridgeId": "con-plural-goods", "tier": "subsidiary", "rationale": "It identifies candidate goods not obviously reducible to remembered happiness."},
+      "respondsToIds": ["m019"], "responseComponents": [{"targetMoveId": "m019", "component": "adequacy", "rationale": "It argues that retrospective happiness still fails to represent meaning and accomplishment."}],
+      "attributionConfidence": "medium", "attributionRationale": "The explicit 'beyond that' rejoinder is Haidt's interruption, but unlabeled rolling captions limit confidence.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The distinction is concise and clear in ASR.",
+      "quoteEligibleExactSpans": ["levels of meaning a sense of purpose a sense of accomplishment"]
+    },
+    {
+      "moveId": "m021", "sectionId": "flourishing-meaning-and-measurement", "side": "pro", "speaker": "Sam Harris", "moveKind": "reply", "sourceSpan": {"startEvent": 1653, "endEvent": 1679},
+      "claimSummary": "Meaning, connection, and life story can be included within the thing measured as well-being, even when attaining them reduces momentary pleasure.",
+      "reasonSummary": "People do not seek the pleasure profile of successful heroin addicts; they willingly undergo ordeals for connection, meaning, and a good story, all of which affect the total value under the curve.",
+      "inferenceSummary": {"premise": "Considered human flourishing includes meaning, connection, and narrative, not merely pleasure.", "inference": "A well-being measure can track those experienced and reflective goods and their trade-offs.", "conclusion": "Meaning complicates measurement but need not constitute an independent moral foundation."},
+      "importance": 3, "importanceRationale": "This is Harris's final on-motion defense of sufficiency against the strongest plural-goods objection.",
+      "burdenContact": {"bridgeId": "pro-alternatives", "tier": "subsidiary", "rationale": "It explicitly broadens well-being to encompass the values Haidt says are missing."},
+      "respondsToIds": ["m020"], "responseComponents": [{"targetMoveId": "m020", "component": "incorporation", "rationale": "It contends that purpose and narrative alter what belongs under the well-being curve rather than defeating the framework."}],
+      "attributionConfidence": "medium", "attributionRationale": "The reply agrees and then defends 'area under the curve,' consistent with Harris; speaker labels and audio verification are absent.",
+      "materialWordingConfidence": "medium", "materialWordingRationale": "The conclusion is clear though the phrase 'area under the curve' remains metaphorical.",
+      "quoteEligibleExactSpans": ["they want a sense of meaning they want connections", "you have to be clear about what's under the curve"]
+    }
+  ],
+  "selectionBalanceAudit": {
+    "thresholds": {"totalAbsoluteDifference": 3, "sectionAbsoluteDifference": 2},
+    "totals": {"pro": 9, "con": 12, "absoluteDifference": 3},
+    "sections": [
+      {"sectionId": "religion-belief-and-social-function", "pro": 2, "con": 2, "absoluteDifference": 0},
+      {"sectionId": "reason-and-moral-knowledge", "pro": 1, "con": 3, "absoluteDifference": 2},
+      {"sectionId": "moral-truth-and-pluralism", "pro": 3, "con": 2, "absoluteDifference": 1},
+      {"sectionId": "possible-minds-and-evolution", "pro": 2, "con": 2, "absoluteDifference": 0},
+      {"sectionId": "flourishing-meaning-and-measurement", "pro": 2, "con": 3, "absoluteDifference": 1}
+    ],
+    "rationaleRequired": true,
+    "rationale": "The three-move total difference and two-move difference in reason-and-moral-knowledge are source-led: Haidt supplies the institutional account, empirical dumbfounding example, and explicit correction of Harris's tentative implication, while Harris supplies one short diagnostic challenge. Removing Haidt's correction would falsely leave him committed to an inference he expressly denies. Elsewhere the shortest complete arguments produce near balance without adding repetitive material."
+  },
+  "publicationCapacityAudit": {
+    "maximumSelectedMovesPerSidePerSection": 4,
+    "sections": [
+      {"sectionId": "religion-belief-and-social-function", "pro": 2, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "Each side has two nonredundant moves."},
+      {"sectionId": "reason-and-moral-knowledge", "pro": 1, "con": 3, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "Three con moves preserve distinct theory, evidence, and concession; no fourth row is needed."},
+      {"sectionId": "moral-truth-and-pluralism", "pro": 3, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "All selected moves are distinct foundation or application arguments."},
+      {"sectionId": "possible-minds-and-evolution", "pro": 2, "con": 2, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The diagnostic exchange is represented by two moves per side."},
+      {"sectionId": "flourishing-meaning-and-measurement", "pro": 2, "con": 3, "withinCapacity": true, "fourthRowRequired": false, "fourthRowAuthorized": true, "rationale": "The alternating replies require three con and two pro rows; no fourth row is needed."}
+    ],
+    "allSectionsWithinCapacity": true,
+    "allFourthRowsPreauthorized": true
+  },
+  "completeTranscriptCoverage": [
+    {"startEvent": 0, "endEvent": 400, "selectedMoveIds": ["m001", "m002"], "unselectedMaterialRationale": "Reviewed in full. Unselected material elaborates the same doctrine-versus-social-context exchange, distinguishes fundamentalism from moderate religion, and introduces group selection; concessions about ritual, belonging, and doctrine are preserved in the selected summaries."},
+    {"startEvent": 401, "endEvent": 800, "selectedMoveIds": ["m003", "m004"], "unselectedMaterialRationale": "Reviewed in full. The technical group-selection discussion, Nazi analogy, references for further reading, and global-governance setup are contextual or scientific background; the normative disclaimer and flourishing relevance are selected."},
+    {"startEvent": 801, "endEvent": 1200, "selectedMoveIds": ["m005", "m006", "m007", "m008", "m009"], "unselectedMaterialRationale": "Reviewed in full. The immigration discussion is substantially aligned and off the locked motion. The transition into morality, reason-system distinction, dumbfounding evidence, denied implication, and plural-peaks argument are preserved."},
+    {"startEvent": 1201, "endEvent": 1600, "selectedMoveIds": ["m010", "m011", "m012", "m013", "m014", "m015", "m016", "m017"], "unselectedMaterialRationale": "Reviewed in full. The full anthropocentric-truth exposition and the complete possible-minds exchange are represented. Omitted lines are connective examples, repeated formulations, short acknowledgments, or interruptions whose substance is included in adjacent selected moves."},
+    {"startEvent": 1601, "endEvent": 2000, "selectedMoveIds": ["m018", "m019", "m020", "m021"], "unselectedMaterialRationale": "Reviewed in full. The meaning and remembered-self exchange is selected through its final reply. From event 1680 the speakers explicitly table morality and move to campus politics; that material is contextual and off-motion."},
+    {"startEvent": 2001, "endEvent": 2390, "selectedMoveIds": [], "unselectedMaterialRationale": "Reviewed in full. This block continues the mutually sympathetic discussion of campus speech, liberalism, polarization, the 2016 election, and the podcast farewell. It does not supply a contrary burden on the locked well-being-sufficiency motion."}
+  ],
+  "audit": {"calculatedTotalsAbsent": true, "completeTranscriptReviewed": true, "allSpansSourceExact": true, "scoreBlind": true, "noOutcomePredetermined": true}
+}

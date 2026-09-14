@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0-pre-adapter-production-validator-observation",
+  "debateNumber": "262",
+  "status": "staging-observation",
+  "command": "node scripts/validate-debates.mjs",
+  "exitCode": 1,
+  "output": "Debate validation failed with 7 issues:\n- debates.261.sections.0.exchanges: must contain no more than 3 items\n- debates.261.sections.0.exchanges.3.con: must be an object\n- debates.261.sections.2.exchanges.0.pro: must be an object\n- debates.261.sections.2.exchanges.1.pro: must be an object\n- debates.261.sections.3.exchanges.2.con: must be an object\n- debates.261.sections.4.exchanges.2.con: must be an object\n- debates.261.assessmentRubric: requires a matching JSON assessment ledger\n",
+  "productionAdapterFrozen": false,
+  "productionCommitted": false,
+  "finalProductionValidationStillRequired": true
+}

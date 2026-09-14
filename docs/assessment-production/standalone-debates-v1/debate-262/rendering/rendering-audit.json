@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-standalone-production-rendering-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "status": "passed-standalone-production-rendering",
+  "completedAt": "2026-09-14T01:42:26.765Z",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/output.json",
+    "sha256": "b8ef8e22d44b8d87304e2b5b70eda7047fdd4df220d9f04ce9f81d3ecf5c0dd9",
+    "bytes": 62479
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-desktop-ai-opened-final.png",
+      "sha256": "305ca31471d674edbadb192e8ff111a0572c4870b204cb0142224ddcb7ae012b",
+      "bytes": 342985
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-desktop-collapsed.png",
+      "sha256": "401c41077f0e2739d06c668b8df3b0655dc4d111a5511bea57faf09783e0c1ed",
+      "bytes": 258505
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-desktop-critique.png",
+      "sha256": "266df59a4f9383e8465d44979e54832da545f5819d8d6cd8944278726fa770d6",
+      "bytes": 296942
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-desktop-opened.png",
+      "sha256": "a794d69b7a20f5cdcceec89d90bdff1068033928639935d2e3b0517d5cc5425d",
+      "bytes": 283404
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-haidt-desktop.png",
+      "sha256": "63903cbd20af414e3637fbcc19c08c44f5ce3db1c44847416f4b4c6e284fb46a",
+      "bytes": 247970
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-haidt-mobile.png",
+      "sha256": "f3fd3f6fea7872f6414db7269215e6b672bbc9586a8e0ad85e31b4851232c7c6",
+      "bytes": 88643
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-mobile-collapsed.png",
+      "sha256": "0b706c2eeb0986c36e14d744637f59f279c7b42651b73266598d9885cf06e7c4",
+      "bytes": 110493
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-mobile-critique.png",
+      "sha256": "7385e32a41283411414f09992f8bcd6b4ba42ca624411d41d6cc164682c279ae",
+      "bytes": 106055
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/rendering/screenshots/debate262-mobile-opened.png",
+      "sha256": "9951349dea423e0b74c8e6dbbd3d160d47a3056f99fdf3a9c1392be1f183b1cd",
+      "bytes": 145801
+    }
+  ],
+  "checks": {
+    "productionCandidateExactMatch": true,
+    "all29CardsPresent": true,
+    "correctTitleYearSourcePositionsScoresByline": true,
+    "acceptedTagAndOverallLinkRendered": true,
+    "aiDefaultCollapsedPointerEnterSpacePassed": true,
+    "critiquePointerEnterSpaceFocusPassed": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "haidtBiographyLeftDesktopAboveMobile": true,
+    "avatarLoaded": true,
+    "homeSearchTopicsSitemapBothProfilesContainDebate": true,
+    "rankingsHarrisLinkAndHaidtComparisonOptionsPresent": true,
+    "visualInspectionPassed": true
+  },
+  "observations": [
+    "Critiques are CSS focus/hover popovers, not toggle buttons; Enter and Space preserve the visible focused popover.",
+    "The mobile open-critique-to-distant-summary interaction succeeded without interception, and the details element became open.",
+    "Haidt has one scorecard, below the unchanged default minimum of three appearances; both comparison selectors include him.",
+    "The legacy network command is unsupported by this installed CLI. Its supported requests --static command returned 37 successful debate-page requests. Browser resource and console checks reported zero failures.",
+    "The supplemental desktop-opened screenshot caught the hero after opening. The separately captured desktop-ai-opened-final screenshot directly shows the expanded AI text.",
+    "All reader-facing production data are deeply equal to the final frozen publication candidate. The SEO check separately verifies generated output."
+  ],
+  "audit": {
+    "viewports": 2,
+    "screenshots": 9,
+    "argumentCardsPerViewport": 29,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-prescore-controller-semantic-review",
+  "status": "rejected-before-judgment",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "videoId": "-WmmcTUkdVM",
+  "checkedAt": "2026-09-13T23:05:00.116Z",
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/correction-1/model-output.json",
+    "sha256": "d119e838fe5b729f4040b4da3c9855111f59c29dc3232ce7d173b5602569db08",
+    "bytes": 65563
+  },
+  "expandedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/correction-1/source-expanded-candidate.json",
+    "sha256": "3c362af7840ca163179c47f16c9e9b0f2d50f79315ccfb84ffbe52ad99fa41a3",
+    "bytes": 92999
+  },
+  "mechanicalAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/correction-1/mechanical-audit.json",
+    "sha256": "bac7ef572f889e4dadf60953479126860e74342927096aa03b4c4353bb4ef8cd",
+    "bytes": 20608
+  },
+  "source": {
+    "path": ".assessment-cache/captions/-WmmcTUkdVM/events.json",
+    "sha256": "0ca18c5a8d206da4989ffdd435e965bf3cd2a4d5cbb96f5f2459b4b9064316e8",
+    "bytes": 257655
+  },
+  "checkedMoves": 25,
+  "issues": [
+    {
+      "issue": "Distinct explicit-versus-implicit-motives objection and direct response omitted",
+      "sourceEvidence": [
+        {
+          "startEvent": 161,
+          "endEvent": 191,
+          "startMs": 318320,
+          "endMs": 382080,
+          "representativeExactWords": "too focused on the explicit"
+        },
+        {
+          "startEvent": 191,
+          "endEvent": 216,
+          "startMs": 378319,
+          "endMs": 434880,
+          "representativeExactWords": "this is how they understand themselves"
+        }
+      ],
+      "explanation": "Haidt grants that doctrines matter but argues that explicit texts cannot alone explain conduct, identifying unconscious and geopolitical motives. Harris replies that adherents supply scriptural justifications and that certain specific ideas require explicit traditional teaching. This is a paired causal-explanation exchange, not a repetition of the earlier multiple-goals objection.",
+      "requiredDisposition": "Reconsider and explicitly represent the paired substantive exchange before judging; do not manufacture an opposition over whether beliefs matter at all."
+    },
+    {
+      "issue": "On-motion institutional-feasibility exchange not separately accounted for",
+      "sourceEvidence": [
+        {
+          "startEvent": 730,
+          "endEvent": 838,
+          "startMs": 1476799,
+          "endMs": 1707760,
+          "representativeExactWords": "it does tell us which way is more likely to work"
+        },
+        {
+          "startEvent": 838,
+          "endEvent": 894,
+          "startMs": 1704399,
+          "endMs": 1833039,
+          "representativeExactWords": "there must be a truly rational way"
+        }
+      ],
+      "explanation": "Haidt argues that evolved group psychology favors nested institutions over removing group boundaries, and Harris argues that secular reason can supply workable arrangements. The coverage table labels a large neighborhood immigration or background without accounting for this earlier direct challenge to rational moral guidance. Later substantial agreement about immigration does not erase this exchange.",
+      "requiredDisposition": "Give the distinct institutional argument and relevant reply an evidence-based selection disposition, with coherent section capacity and weights fixed before any judgment."
+    },
+    {
+      "issue": "Imbalance explanation contradicts the actual section counts",
+      "explanation": "The reason-and-moral-knowledge section has one pro move and three con moves. Its difference of two triggers the existing source-based rationale rule, but rationaleRequired is false and the rationale incorrectly says no section differs by more than one.",
+      "requiredDisposition": "Recompute and explain the final source-led counts without changing the validator or forcing numerical symmetry."
+    }
+  ],
+  "selectedMovesChanged": false,
+  "primaryJudgmentsExecuted": false,
+  "scorePassExecuted": false,
+  "exhaustedCorrectionAttemptPreserved": true,
+  "additionalModelAttemptExecuted": false
+}
