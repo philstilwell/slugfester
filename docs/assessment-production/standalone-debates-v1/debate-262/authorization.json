@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-13T22:35:20.479Z",
+  "userAuthorization": "User supplied this URL under the standing single-debate assessed-publication workflow and requested continuation without basic approvals. Routine isolated review, bounded authorized repairs and checked topic-branch publication are authorized; no new scope exception or exhausted-attempt replacement is authorized.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-262",
+    "head": "6ba4369282936c52b960e6e6ff35436ffb94d082",
+    "localMain": "6ba4369282936c52b960e6e6ff35436ffb94d082",
+    "originMain": "6ba4369282936c52b960e6e6ff35436ffb94d082",
+    "clean": true,
+    "isolationReason": "Previously unassigned, clean dedicated topic branch at synchronized main reused for this accepted source. Ignored rejected-source checks remain untouched; unrelated working copies remain untouched."
+  },
+  "identity": {
+    "debateNumber": "262",
+    "debateId": "harris-haidt-religion-moral-truth-2016",
+    "videoId": "-WmmcTUkdVM",
+    "canonicalUrl": "https://www.youtube.com/watch?v=-WmmcTUkdVM",
+    "sourceTitle": "Sam Harris vs. Jonathan Haidt. Sam and Jonathan debate religion and morality.",
+    "eventYear": 2016,
+    "episodeReleaseDate": "2016-03-09",
+    "title": "Sam Harris vs Jonathan Haidt — Religion, moral truth, and human flourishing (2016)",
+    "label": "Religion and moral truth",
+    "topicCategory": "morality-ethics",
+    "motion": "Is a rational account centered on well-being sufficient to explain and guide morality?",
+    "pro": {
+      "speaker": "Sam Harris",
+      "position": "Well-being-centered rationalism"
+    },
+    "con": {
+      "speaker": "Jonathan Haidt",
+      "position": "Moral pluralism"
+    },
+    "moderator": null,
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-262",
+    "docs/assessment-ledgers/harris-haidt-religion-moral-truth-2016.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/interlocutors.js",
+    "src/data/interlocutor-bios.js",
+    "output/playwright/standalone-debate-v1/debate-262",
+    "generated site output belonging to this addition"
+  ]
+}

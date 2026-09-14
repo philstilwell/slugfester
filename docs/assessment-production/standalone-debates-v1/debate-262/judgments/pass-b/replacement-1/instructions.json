@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0-primary-replacement-transport-instructions",
+  "status": "frozen-before-replacement",
+  "pass": "pass-b",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inputFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/judgments/execution-instructions.json",
+      "sha256": "48844b0e7af7097041f3a15452a86ef49fe709fc4087489d73e57fe1046a7cab",
+      "bytes": 11373
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/judgments/judgment-packet.json",
+      "sha256": "dca59336bcb6c6fc21c65089b6775b686e9b4308169c88b7c9b52029802cb4b5",
+      "bytes": 4946
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/inventory.json",
+      "sha256": "362e58b923f218b34051a051aab8a11030ef2da7b513b81fd2a4ec80cae84d1b",
+      "bytes": 117464
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/source/text-attribution-review.json",
+      "sha256": "a11743a16a15270fc76c659616ad0c99ef9b92b1fa4b8d9dc32cd7d94ff29100",
+      "bytes": 15299
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/source/caption-only-authorization.json",
+      "sha256": "579ddf4fb1bc10f9e03afc967d9197c5a78e7cbf7b9f0bb2ea7c24d87aff9485",
+      "bytes": 1671
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/indexed-transcript.txt",
+      "sha256": "f7b93831e019475312fa2df1b2ee442cb4d8f8ae664316a846fc12014c4df4f5",
+      "bytes": 136442
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/events.json",
+      "sha256": "0ca18c5a8d206da4989ffdd435e965bf3cd2a4d5cbb96f5f2459b4b9064316e8",
+      "bytes": 257655
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  ],
+  "outputPath": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-262-worktree/docs/assessment-production/standalone-debates-v1/debate-262/judgments/pass-b/replacement-1/output.json",
+  "requirements": [
+    "Use the same unchanged execution-instructions.json, judgment packet, locked inventory, complete indexed transcript and current scoring controls named in inputFiles. This file adds submission hygiene only; no assessment substance is altered.",
+    "Read every required file in bounded chunks and inspect each result for truncation; reread a truncated display in smaller chunks before judging. Read the complete inventory, including routes, sections, moves and coverage/count audits, and the entire 2391-event transcript.",
+    "Do not read any other pass or old assessment. Do not read the replacement authorization record or parent checkpoint; they are not judgment inputs.",
+    "Produce the full required primary JSON, including 29 judgments, both burden adjustments, isolation/audit fields and every sourceReview check. The pass value remains pass-b.",
+    "NEVER create an empty, placeholder, or partial output file. Build and validate the entire result in memory before the single apply_patch submission. Do not rely on tool output carrying a very large JSON blob; use a bounded local computation or direct patch after in-memory validation.",
+    "Each dimension rationale should explain that dimension's source-specific warrant; generic shared suffixes are not a substitute for explaining a rating. Do not calculate totals or a winner.",
+    "One final submission only, at the absolute outputPath above. Do not overwrite it afterward. If submission fails or the result is invalid, preserve it and report instead of retrying.",
+    "Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shell commands. No metered calls, credentials, network, Git operations or other workers."
+  ]
+}

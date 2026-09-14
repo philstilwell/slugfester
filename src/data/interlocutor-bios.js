@@ -177,6 +177,7 @@ const entries = [
   ["Alex Carter", "Alex Carter is a philosophy educator at the University of Cambridge. His interests include Wittgenstein, Simone Weil, ethics, creativity, and the philosophy of humor, connecting philosophical study with questions about everyday life.", "https://accounts.pace.cam.ac.uk/rest/download/material/34312"],
   ["James Marriott", "James Marriott is a journalist and Times columnist. His writing, including the Cultural Capital newsletter, explores society, ideas, and culture, bringing these subjects into public discussion.", "https://www.penguinrandomhouse.com/authors/129107/james-marriott/"],
   ["Craig Evans", "Craig Evans is a biblical scholar whose work examines the historical Jesus and the world of the New Testament. His research and public lectures connect biblical texts with archaeology, ancient languages, and the Dead Sea Scrolls.", "https://www.thebibleseminary.edu/faculty-1/dr.-craig-evans"],
+  ["Jonathan Haidt", "Jonathan Haidt is a social psychologist and author whose research explores the intuitive foundations of morality and differences across cultures and political groups. His books include The Righteous Mind and The Happiness Hypothesis.", "https://www.jonathanhaidt.com/bio", "2026-09-13"],
 ];
 
 export const interlocutorBios = Object.fromEntries(entries.map(([name, text, url, reviewed = biographyReviewDate]) => [name, {

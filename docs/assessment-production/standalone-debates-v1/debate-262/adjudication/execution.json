@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0-authenticated-isolated-adjudication",
+  "status": "validated-with-reading-completion",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "forkTurns": "none",
+  "freshContextAtInitialDispatch": true,
+  "agentPath": "/root/adjudication_262",
+  "sessionId": "01a09d2f-3101-7e22-9abb-fb5d83dcaf3e",
+  "sessionRecord": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T19-51-50-01a09d2f-3101-7e22-9abb-fb5d83dcaf3e.jsonl",
+    "sha256": "1b694c18693d394ce0e3c2c7a5fe547ca89350fe245896937a50384252e7bd40",
+    "bytes": 2638768
+  },
+  "executionPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/execution-plan.json",
+    "sha256": "3a11cb0e3133c21d91e59f0399740e1850a962860a552899b68353dc54508016",
+    "bytes": 6378
+  },
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/packet.json",
+      "sha256": "2c353775cf455caa15138345a9598b1b2c0ebb2c6255f77f7bc7722035b4c7d4",
+      "bytes": 97966
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/inventory.json",
+      "sha256": "362e58b923f218b34051a051aab8a11030ef2da7b513b81fd2a4ec80cae84d1b",
+      "bytes": 117464
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/audio/audio-verification.json",
+      "sha256": "c6d1672b83f150f9d215b9164db06e088eec49e3ddfa0305860b6dea1703ee76",
+      "bytes": 1534
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/source/text-attribution-review.json",
+      "sha256": "a11743a16a15270fc76c659616ad0c99ef9b92b1fa4b8d9dc32cd7d94ff29100",
+      "bytes": 15299
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/indexed-transcript.txt",
+      "sha256": "f7b93831e019475312fa2df1b2ee442cb4d8f8ae664316a846fc12014c4df4f5",
+      "bytes": 136442
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    }
+  ],
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/output.json",
+    "sha256": "3c9eff0d20198da310c4921520a145f73474f086c016c82499c3954958f797cb",
+    "bytes": 7954
+  },
+  "validation": {
+    "status": "passed",
+    "disputes": 20
+  },
+  "sourceEventsObserved": 2391,
+  "allInventoryAndAnonymousPacketStringsObserved": true,
+  "completeScoringControlsObserved": true,
+  "readingCompletion": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/reading-completion.json",
+    "sha256": "4c324dca4ff1e29cd49d77997ddd0b228b8040b763368aff7ef987224eab3c91",
+    "bytes": 1936
+  },
+  "readingCompletionStatement": {
+    "schemaVersion": "1.0-adjudication-reading-completion",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete",
+    "debateNumber": "262",
+    "debateId": "harris-haidt-religion-moral-truth-2016",
+    "reviewerRole": "isolated-dispute-only-adjudicator",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "purpose": "Authentication-only completion of a previously truncated locked-inventory display; no new judgment attempt.",
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/inventory.json",
+      "sha256": "362e58b923f218b34051a051aab8a11030ef2da7b513b81fd2a4ec80cae84d1b",
+      "lineCount": 1579,
+      "completeRead": true,
+      "boundedLineRangesRead": [
+        "1-180",
+        "181-360",
+        "361-540",
+        "541-720",
+        "721-900",
+        "901-1080",
+        "1081-1260",
+        "1261-1440",
+        "1441-1579"
+      ],
+      "maximumLinesPerCall": 180,
+      "parallelCallsUsed": false,
+      "combinedOutputsUsed": false
+    },
+    "packetAdministrativeRead": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/packet.json",
+      "query": "del(.disputes)",
+      "complete": true,
+      "sourceLockPathsFollowed": false
+    },
+    "existingAdjudicationOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/adjudication/output.json",
+      "sha256": "3c9eff0d20198da310c4921520a145f73474f086c016c82499c3954958f797cb",
+      "modified": false,
+      "resubmitted": false
+    },
+    "reconsideration": {
+      "substantiveReasonExistingResolutionsRequireReconsideration": false,
+      "reasons": [],
+      "rationale": "The newly displayed frozen inventory context is consistent with the already reviewed disputed-move evidence, burden contacts, response links, attribution limits, and duplicate-capture controls. It supplies no substantive reason to reconsider any existing resolution."
+    },
+    "directCostUsd": 0
+  },
+  "authenticationNote": "The first session displayed the complete source and every anonymous option, but a combined inventory display truncated contextual entries. Before ledger assembly or scoring, the same isolated reviewer completed those reads and filed a separate authentication-only record without changing any resolution. The initial output and failed read displays remain preserved in the authenticated session.",
+  "attempts": 1,
+  "retries": 0,
+  "authenticationOnlyContinuations": 1,
+  "finalWriteCallId": "call_O2Ef7x0U1BmUFyx28NRjyYXi",
+  "startedAt": "2026-09-13T23:51:50.937Z",
+  "completedAt": "2026-09-14T00:02:37.460Z",
+  "directCostUsd": 0
+}

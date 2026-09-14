@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-authenticated-two-leaf-repair-validation",
+  "status": "failed",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "shardId": "shard-13",
+  "input": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/depth-repair-1/shard-13/input-bundle.json",
+    "sha256": "1de5ac21b5f33dcf898644bdc9d988f62d1a05a1ce45006d6c76eb58d87ceea9",
+    "bytes": 20939
+  },
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/depth-repair-1/shard-13/output.json",
+    "sha256": "ac85b1f11f9fa06bdf2f18e24b896f87c7f2a8e520bce7e30b3274214a34963d",
+    "bytes": 2224
+  },
+  "errors": [
+    "Exactly one completed output patch required"
+  ],
+  "metrics": [
+    {
+      "path": "candidate.sections[2].exchanges[1].con.words",
+      "words": 25,
+      "characters": 216
+    },
+    {
+      "path": "candidate.sections[2].exchanges[1].con.critique",
+      "words": 129,
+      "characters": 1028
+    }
+  ],
+  "authentication": {
+    "agentPath": "/root/depth262_13",
+    "sessionId": "01a09d51-8057-7bb3-84da-7e88776394c8",
+    "session": {
+      "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T20-29-19-01a09d51-8057-7bb3-84da-7e88776394c8.jsonl",
+      "sha256": "43bc2c0ca38c84ff84398059ab2674368a24718d5f6fe236aa758feb7a2d5fc7",
+      "bytes": 284683
+    },
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "freshContext": true,
+    "completeInputDisplayed": true,
+    "readingMethod": "Every non-whitespace input character matched in ordered display blocks. Unrelated procedural/error messages are ignored only when they do not match the next source characters; no missing source content is skipped.",
+    "inputNonWhitespaceCharacters": 16708,
+    "observedNonWhitespaceCharacters": 16708,
+    "matchedDisplayBlocks": [
+      {
+        "index": 3,
+        "start": 0,
+        "end": 4919
+      },
+      {
+        "index": 5,
+        "start": 4919,
+        "end": 9497
+      },
+      {
+        "index": 7,
+        "start": 9497,
+        "end": 14246
+      },
+      {
+        "index": 9,
+        "start": 14246,
+        "end": 16708
+      }
+    ],
+    "successfulOutputPatchCalls": 2,
+    "patchCallIds": [
+      "call_TftobKQv1iOFXqfQn2BpPwMd",
+      "call_zg2VyHD7MegU7LvQRzgjMM2d"
+    ],
+    "startedAt": "2026-09-14T00:29:19.415Z",
+    "completedAt": "2026-09-14T00:31:08.416Z"
+  },
+  "attempts": 1,
+  "retries": 0,
+  "directCostUsd": 0
+}

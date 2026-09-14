@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-standalone-final-review",
+  "debateNumber": "262",
+  "status": "passed",
+  "completedAt": "2026-09-14T01:48:27.448Z",
+  "fullSiteCheck": {
+    "command": "npm run site:check",
+    "exitCode": 0,
+    "testsPassed": 56,
+    "logPath": "docs/assessment-production/standalone-debates-v1/debate-262/validation/full-site-check.txt"
+  },
+  "sourceAndGeneratedScopeReviewed": true,
+  "secretsPatternScanMatches": 0,
+  "sharedScriptsTestsOrBudgetsChanged": false,
+  "rawEvidenceDisposition": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/publication/preserved-before-depth-repair-1.json",
+    "sha256": "cdec37f7b7c42808cb7336d8c78785ff76bf354d1ed7ee053bcc64b6a8ce5aa5",
+    "originalFinding": "git diff --cached --check reports a new blank line at EOF in the exact rejected worker submission.",
+    "action": "Classified this exact preserved raw artifact as -diff in .gitattributes, matching the repository's existing raw-output precedent. Original bytes and their authenticated hash remain unchanged; human-readable final publication remains in the ordinary diff. No whitespace, scoring, performance, or accessibility test limits changed."
+  },
+  "gitDiffCheck": {
+    "stagedPassed": true
+  },
+  "precommitPreflight": "Still required immediately before the commit."
+}

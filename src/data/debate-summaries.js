@@ -12417,5 +12417,55 @@ export const debateSummaries = [
         "title": "Suffering, coercion, and closing burdens"
       }
     ]
+  },
+  {
+    "id": "harris-haidt-religion-moral-truth-2016",
+    "number": "262",
+    "title": "Sam Harris vs Jonathan Haidt — Religion, moral truth, and human flourishing",
+    "year": 2016,
+    "label": "Religion and moral truth",
+    "date": "2026-09-13",
+    "duration": "1 hr 20 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-WmmcTUkdVM",
+    "motion": "Is a rational account centered on well-being sufficient to explain and guide morality?",
+    "summary": "Two naturalists contest whether broad well-being can ground moral truth, with Harris strongest on scope and Haidt strongest on psychology, institutions, and plural goods.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Well-being-centered rationalism",
+        "speaker": "Sam Harris",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Moral pluralism",
+        "speaker": "Jonathan Haidt",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 82,
+      "con": 82,
+      "winner": "tie"
+    },
+    "sections": [
+      {
+        "title": "Religious doctrine and causal explanation"
+      },
+      {
+        "title": "Religious function, evolved psychology, and institutional feasibility"
+      },
+      {
+        "title": "Individual reason, institutions, and moral judgment"
+      },
+      {
+        "title": "Moral truth, pluralism, and anthropocentric facts"
+      },
+      {
+        "title": "Possible minds, evolution, and moral scope"
+      },
+      {
+        "title": "Flourishing, meaning, and measurement"
+      }
+    ]
   }
 ];

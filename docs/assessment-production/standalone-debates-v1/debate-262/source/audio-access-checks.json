@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0-source-audio-access-diagnostic",
+  "debateNumber": "262",
+  "videoId": "-WmmcTUkdVM",
+  "canonicalUrl": "https://www.youtube.com/watch?v=-WmmcTUkdVM",
+  "status": "required-audio-not-yet-available",
+  "checkedDate": "2026-09-13",
+  "captionSourceUnaffected": true,
+  "originalAudioDownloaded": false,
+  "paidCalls": 0,
+  "knownSuccessfulCallCostUsd": 0,
+  "maximumPossiblePaidCostUsd": 0,
+  "checks": [
+    {
+      "method": "Android public-player MP4 audio, full response",
+      "formats": [140, 139, 599],
+      "result": "All requests returned HTTP 403; no media file was saved.",
+      "detailPath": ".assessment-cache/captions/-WmmcTUkdVM/audio-acquisition.json"
+    },
+    {
+      "method": "Android audio with client-specific user agent",
+      "result": "Full response remained HTTP 403. The initial 1024-byte range was available with both browser and Android user agents."
+    },
+    {
+      "method": "Timestamp-preserving source transport via byte ranges",
+      "format": 139,
+      "expectedTotalBytes": 29404942,
+      "results": [
+        {"startByte": 0, "requestedBytes": 262144, "httpStatus": 206},
+        {"startByte": 1048576, "requestedBytes": 65536, "httpStatus": 403},
+        {"startByte": 10000000, "requestedBytes": 16384, "httpStatus": 403},
+        {"startByte": 20000000, "requestedBytes": 1024, "httpStatus": 403}
+      ],
+      "result": "Only an initial portion is accessible; later source ranges fail. No reconstructed audio is claimed or used."
+    },
+    {
+      "method": "Range query parameter",
+      "result": "Both a later 1024-byte range and the whole-file range returned HTTP 403."
+    },
+    {
+      "method": "Public iOS player",
+      "result": "Player metadata was available, but later audio bytes returned HTTP 403 and no HLS stream was offered."
+    },
+    {
+      "method": "Android VR player availability",
+      "result": "Returned a sign-in/anti-bot challenge. This route was stopped without attempting to bypass the challenge."
+    },
+    {
+      "method": "Public web player",
+      "result": "The available response exposed format metadata but no directly usable media URLs."
+    },
+    {
+      "method": "Publisher episode page",
+      "referenceUrl": "https://www.samharris.org/podcasts/making-sense-episodes/evolving-minds",
+      "publicAudioUrl": "https://traffic.libsyn.com/secure/wakingup/Making_Sense_31_Evolving_Minds_Paywall_6-27-22.mp3",
+      "result": "The publisher links a public preview, independently listed as 42 minutes on its podcast feed. This does not cover the 80-minute uploaded segment; no full-episode access was inferred or attempted."
+    },
+    {
+      "method": "Historical publisher SoundCloud link",
+      "referenceUrl": "https://soundcloud.com/samharrisorg/evolving-minds-a-conversation-with-jonathan-haidt",
+      "result": "No playable sound record appeared in the public page response."
+    }
+  ],
+  "nextSourceAction": "Use a user-supplied audio/video copy of this recording or a newly available public original stream; validate identity, duration and timestamp alignment before preparing verification clips.",
+  "noScoreOrPublicationExceptionAuthorized": true
+}

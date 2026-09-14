@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0-authenticated-prescore-execution",
+  "status": "completed-and-authenticated",
+  "debateNumber": "262",
+  "debateId": "harris-haidt-religion-moral-truth-2016",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "agentPath": "/root/inventory_262_exceptional2",
+  "sessionId": "01a09d08-94b3-70e3-b7d9-515d9f4339f6",
+  "sessionRecord": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/13/rollout-2026-09-13T19-09-40-01a09d08-94b3-70e3-b7d9-515d9f4339f6.jsonl",
+    "sha256": "55d8c42de4c492f9bc1370501bce2a5d69016190284b55f0a2036ffdcc8478cb",
+    "bytes": 2544672
+  },
+  "startedAt": "2026-09-13T23:09:40.535Z",
+  "completedAt": "2026-09-13T23:17:35.212Z",
+  "authenticatedAt": "2026-09-13T23:33:37.268Z",
+  "freshContext": true,
+  "forkTurns": "none",
+  "inputFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/exceptional-correction-2/packet.json",
+      "sha256": "b5c09c5c094c05dd7acdc3ec8a10e6c7b6e334ecdccfcae4bf09e6d7c98fe997",
+      "bytes": 101120
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/indexed-transcript.txt",
+      "sha256": "f7b93831e019475312fa2df1b2ee442cb4d8f8ae664316a846fc12014c4df4f5",
+      "bytes": 136442
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/events.json",
+      "sha256": "0ca18c5a8d206da4989ffdd435e965bf3cd2a4d5cbb96f5f2459b4b9064316e8",
+      "bytes": 257655
+    },
+    {
+      "path": ".assessment-cache/captions/-WmmcTUkdVM/score-blind-source.json",
+      "sha256": "27dd053e95fd9f16987b96877f9017bd3f401d931153d6382855c17d3d2aa02f",
+      "bytes": 461067
+    }
+  ],
+  "additionalProceduralInput": {
+    "path": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/SKILL.md",
+    "sha256": "38c2cccaa78f6afe284f3dafed19ae29650ad6336b710be48e18a8aa14139733",
+    "purpose": "Mandatory skill instruction read; not debate evidence or legacy scoring data."
+  },
+  "fullRequiredReadsUntruncated": true,
+  "sourceReadRanges": [
+    [
+      1,
+      600
+    ],
+    [
+      601,
+      1200
+    ],
+    [
+      1201,
+      1800
+    ],
+    [
+      1801,
+      2391
+    ]
+  ],
+  "packetReadRanges": [
+    [
+      1,
+      260
+    ],
+    [
+      261,
+      620
+    ],
+    [
+      621,
+      1200
+    ],
+    [
+      1201,
+      1590
+    ]
+  ],
+  "redundantOutputTruncations": [
+    {
+      "timestamp": "2026-09-13T23:11:19.661Z",
+      "disposition": "Redundant packet query or in-memory draft display; complete required packet/source reads above were untruncated."
+    },
+    {
+      "timestamp": "2026-09-13T23:13:26.233Z",
+      "disposition": "Redundant packet query or in-memory draft display; complete required packet/source reads above were untruncated."
+    }
+  ],
+  "finalOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/exceptional-correction-2/model-output.json",
+    "sha256": "b40fc77431d85ccad4bd1ffe812c2d4d7b2e403d40f70afe542afe9ed2b7e9e2",
+    "bytes": 65818
+  },
+  "readingAuthentication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-262/inventory/exceptional-correction-2/reading-authentication.json",
+    "sha256": "f8d224189484d0b88bea3403f3e47c030cbf29be6419ea0d5382a31aeab1b515",
+    "bytes": 1811
+  },
+  "finalWriteTimestamp": "2026-09-13T23:17:15.033Z",
+  "attempts": 1,
+  "retries": 0,
+  "finalSubmissions": 1,
+  "abortedLocalDraftTransports": [
+    {
+      "timestamp": "2026-09-13T23:15:41.427Z",
+      "reason": "In-memory JSON transport was truncated; JSON.parse threw before apply_patch. No output file was submitted or overwritten. The same worker enlarged the local transport budget and submitted its final candidate once."
+    }
+  ],
+  "apiKeyHandling": "Evidence processing and drafting commands removed OPENAI_API_KEY and ANTHROPIC_API_KEY. The initial read-only procedural skill-file read did not unset them; no credential read or metered API execution occurred. Do not attest that the underlying runtime environment was purged.",
+  "isolationAudit": "Tool-call inspection found no other debate, legacy judgment, score, ranking, winner, publication prose, network, or credential input. Root task messages were not inherited.",
+  "directCostUsd": 0
+}

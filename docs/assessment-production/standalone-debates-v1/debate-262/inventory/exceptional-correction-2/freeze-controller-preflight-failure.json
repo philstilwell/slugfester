@@ -1,0 +1,11 @@
+{
+  "status": "diagnosed-before-any-canonical-write",
+  "failure": "The authentication controller initially counted writeFileSync calls, but the worker correctly submitted both outputs through one apply_patch call. It consequently found zero submissions and stopped.",
+  "preservedController": "freeze-controller-attempt1.mjs",
+  "sourceDiagnosis": "Actual worker session at 2026-09-13T23:17:15.033Z shows one apply_patch submission, using the authorized absolute output directory and the two required filenames.",
+  "correction": "Match the observed apply_patch submission and verify its actual directory and filenames. Keep the required count of one submission unchanged.",
+  "workerRerun": false,
+  "modelAttemptConsumed": false,
+  "canonicalInventoryWrittenByFailedController": false,
+  "directCostUsd": 0
+}
