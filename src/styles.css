@@ -5306,7 +5306,7 @@ a {
 .side-heading {
   --avatar-size: clamp(42px, 4.2vw, 54px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.75fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   min-width: 0;
   gap: 10px;
@@ -5325,16 +5325,25 @@ a {
 
 .side-speaker-lockup {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   min-width: 0;
   gap: 10px;
 }
 
 .side-speaker-lockup strong {
+  flex: 1 1 18ch;
   min-width: 0;
-  text-align: right;
-  overflow-wrap: anywhere;
+  text-align: left;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.side-speaker-lockup .speaker-avatar-stack {
+  flex-wrap: wrap;
+  max-width: 100%;
+  row-gap: 8px;
 }
 
 .portrait-placeholder {
