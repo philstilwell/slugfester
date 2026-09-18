@@ -1,0 +1,1045 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e4]:
+    - link "Slugfester home" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: Slugfester
+    - navigation "Primary" [ref=e7]:
+      - link "Debates" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=e9] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e10] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e11] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e12] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=e13] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=e15] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=e16]: ▾
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - link "Back to debates" [ref=e20] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e21]: "Debate 263 · Existence and goodness of God · Last rendered: 2026-09-18"
+        - heading "William Dembski vs Christopher Hitchens — Does a good God exist? Debate year 2010" [level=1] [ref=e22]:
+          - text: William Dembski vs Christopher Hitchens — Does a good God exist?
+          - generic "Debate year 2010" [ref=e23]: "2010"
+        - paragraph [ref=e24]: Does a good God exist?
+      - figure [aria-hidden] [ref=e25]
+      - complementary "Debate score summary" [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Average section score
+          - strong [ref=e29]: "75"
+        - generic [ref=e30]:
+          - generic [ref=e31]: Christian theism
+          - strong [ref=e32]: "71"
+        - generic [ref=e34]:
+          - generic [ref=e35]: Atheistic critique
+          - strong [ref=e36]: "79"
+        - link "Open YouTube source" [ref=e38] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=D6K43WSZrmI
+        - link "Report a possible scorecard issue" [ref=e39] [cursor=pointer]:
+          - /url: /corrections/?debate=dembski-hitchens-good-god-existence-2010#report-scorecard-issue
+    - region [ref=e40]:
+      - paragraph [ref=e41]: The assessment in brief
+      - heading "What decided this assessment?" [level=2] [ref=e42]
+      - paragraph [ref=e43]: Hitchens wins by exposing the gap between design and a good providential God, while Dembski offers careful limits and several effective scientific replies.
+      - paragraph [ref=e44]:
+        - text: The published overall scores favor Christopher Hitchens by 8 points.
+        - link "Read the full overall commentary" [ref=e45] [cursor=pointer]:
+          - /url: "#overall-heading"
+        - text: .
+      - generic [ref=e46]:
+        - article [ref=e47]:
+          - heading "William Dembski" [level=3] [ref=e48]
+          - paragraph [ref=e49]: A highest-scoring contribution · 86/100
+          - paragraph [ref=e50]: Design evidence need not eliminate faith because it indicates only an architect, leaving resurrection, incarnation, salvation, and the architect’s relationship to Christianity independently unsettled.
+          - link "Read the exchange and critique" [ref=e51] [cursor=pointer]:
+            - /url: "#assessed-section-1"
+          - text: ·
+          - link "Watch William Dembski's contribution at 88:58" [ref=e52] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=5338s
+            - text: 88:58
+          - paragraph [ref=e53]:
+            - strong [ref=e54]: Why this contribution scored well.
+            - text: Dembski answers the faith objection directly by inventorying what design does not entail—resurrection, incarnation, salvation, or the Christian identity of the architect—so evidential support remains limited rather than coercive.
+          - paragraph [ref=e55]:
+            - strong [ref=e56]: A key limitation in the overall assessment.
+            - text: The moral-grounding case largely assumes that objective norms must derive from God without explaining why divine nature is good rather than merely authoritative.
+        - article [ref=e57]:
+          - heading "Christopher Hitchens" [level=3] [ref=e58]
+          - paragraph [ref=e59]: A highest-scoring contribution · 87/100
+          - paragraph [ref=e60]: Evidence for an initiating intelligence would establish less than interventionist theism, which additionally claims revelation, providence, divine goodness, and personal plans for human lives.
+          - link "Read the exchange and critique" [ref=e61] [cursor=pointer]:
+            - /url: "#assessed-section-1"
+          - text: ·
+          - link "Watch Christopher Hitchens's contribution at 13:05" [ref=e62] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=785s
+            - text: 13:05
+          - paragraph [ref=e63]:
+            - strong [ref=e64]: Why this contribution scored well.
+            - text: Hitchens defines the motion’s target precisely by separating a possibly indifferent initiator from a God who reveals, intervenes in history, governs providentially, and cares about individuals.
+          - paragraph [ref=e65]:
+            - strong [ref=e66]: A key limitation in the overall assessment.
+            - text: The cosmic-waste argument assumes that benevolent creation should resemble human efficiency, but it does not adequately defend that expectation against less anthropocentric theism.
+      - paragraph [ref=e67]: Drawn from this scorecard’s existing summary, critiques and overall commentary—not a new judgment. The highlighted contributions illustrate strengths; they do not alone determine the overall scores. Ties between moves use the first displayed example. Shared-side assessments describe the side, not each participant individually.
+    - region "Position quotes" [ref=e68]:
+      - generic [ref=e70]:
+        - paragraph [ref=e71]: Representative transcript quotes
+        - heading "Positions in their words" [level=2] [ref=e72]
+      - generic [ref=e73]:
+        - article [ref=e74]:
+          - generic [ref=e75]: Christian theism · William Dembski
+          - blockquote [ref=e76]: "\"intelligent design is not a proof of the Christian God\""
+          - paragraph [ref=e77]: Dembski limits the inference to an architect, stressing that design alone cannot establish the gospel, resurrection, divine goodness, or the Christian God.
+          - generic [aria-hidden] [ref=e78]: "\""
+        - article [ref=e79]:
+          - generic [ref=e80]: Atheistic critique · Christopher Hitchens
+          - blockquote [ref=e81]: "\"what they can't do is take away your sins\""
+          - paragraph [ref=e82]: Hitchens distinguishes paying another person’s debt or penalty from erasing that person’s authorship and moral responsibility for the original act.
+          - generic [aria-hidden] [ref=e83]: "\""
+    - region "Scoring note" [ref=e84]:
+      - strong [ref=e85]: AI-generated scorecard
+      - generic [ref=e86]: Scores are AI-generated estimates of argumentative performance.
+      - generic [ref=e87]: "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+    - region "How to read critiques" [ref=e88]:
+      - strong [ref=e89]: ◉ Deeper critiques
+      - generic [ref=e90]: Mouse over the ◉ symbols, or focus them with the keyboard, to open a longer critique of each scored argument.
+    - region "Debate sides" [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]: Christian theism
+        - generic [ref=e94]:
+          - generic "Interlocutor profiles" [ref=e95]:
+            - link "Open William Dembski's interlocutor profile" [ref=e96] [cursor=pointer]:
+              - /url: /interlocutor/william-dembski/
+          - strong [ref=e97]: William Dembski
+      - generic [ref=e98]:
+        - generic [ref=e99]: Atheistic critique
+        - generic [ref=e100]:
+          - generic "Interlocutor profiles" [ref=e101]:
+            - link "Open Christopher Hitchens's interlocutor profile" [ref=e102] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+          - strong [ref=e103]: Christopher Hitchens
+    - region "Interlocutor score profiles" [ref=e104]:
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - heading [level=3] [ref=e109]:
+            - link "William Dembski" [ref=e110] [cursor=pointer]:
+              - /url: /interlocutor/william-dembski/
+          - generic [ref=e111]: 1 eligible 1-on-1 scorecard
+        - figure "Published 1-on-1 overall scores in five-point ranges. Every graph on this page uses the same vertical scale." [ref=e112]:
+          - generic [ref=e113]:
+            - generic [aria-hidden] [ref=e114]: Scorecards
+            - list "William Dembski published 1-on-1 overall score distribution from 50 to 100" [ref=e115]:
+              - 'listitem "50–54: 0 scorecards" [ref=e116]':
+                - generic [aria-hidden] [ref=e118]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=e119]':
+                - generic [aria-hidden] [ref=e121]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=e122]':
+                - generic [aria-hidden] [ref=e124]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=e125]':
+                - generic [aria-hidden] [ref=e127]: 65–69
+              - 'listitem "70–74: 1 scorecard" [ref=e128]':
+                - strong [aria-hidden] [ref=e129]: "1"
+                - generic [aria-hidden] [ref=e131]: 70–74
+              - 'listitem "75–79: 0 scorecards" [ref=e132]':
+                - generic [aria-hidden] [ref=e134]: 75–79
+              - 'listitem "80–84: 0 scorecards" [ref=e135]':
+                - generic [aria-hidden] [ref=e137]: 80–84
+              - 'listitem "85–89: 0 scorecards" [ref=e138]':
+                - generic [aria-hidden] [ref=e140]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=e141]':
+                - generic [aria-hidden] [ref=e143]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=e144]':
+                - generic [aria-hidden] [ref=e146]: 95–100
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - heading [level=3] [ref=e152]:
+            - link "Christopher Hitchens" [ref=e153] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+          - generic [ref=e154]: 14 eligible 1-on-1 scorecards
+        - figure "Published 1-on-1 overall scores in five-point ranges. Every graph on this page uses the same vertical scale." [ref=e155]:
+          - generic [ref=e156]:
+            - generic [aria-hidden] [ref=e157]: Scorecards
+            - list "Christopher Hitchens published 1-on-1 overall score distribution from 50 to 100" [ref=e158]:
+              - 'listitem "50–54: 0 scorecards" [ref=e159]':
+                - generic [aria-hidden] [ref=e161]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=e162]':
+                - generic [aria-hidden] [ref=e164]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=e165]':
+                - generic [aria-hidden] [ref=e167]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=e168]':
+                - generic [aria-hidden] [ref=e170]: 65–69
+              - 'listitem "70–74: 0 scorecards" [ref=e171]':
+                - generic [aria-hidden] [ref=e173]: 70–74
+              - 'listitem "75–79: 2 scorecards" [ref=e174]':
+                - strong [aria-hidden] [ref=e175]: "2"
+                - generic [aria-hidden] [ref=e177]: 75–79
+              - 'listitem "80–84: 10 scorecards" [ref=e178]':
+                - strong [aria-hidden] [ref=e179]: "10"
+                - generic [aria-hidden] [ref=e181]: 80–84
+              - 'listitem "85–89: 2 scorecards" [ref=e182]':
+                - strong [aria-hidden] [ref=e183]: "2"
+                - generic [aria-hidden] [ref=e185]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=e186]':
+                - generic [aria-hidden] [ref=e188]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=e189]':
+                - generic [aria-hidden] [ref=e191]: 95–100
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - paragraph [ref=e196]:
+            - link "Open YouTube source at 13:05–121:24" [ref=e197] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=785s
+              - text: 13:05–121:24
+          - heading "Design inference and evidential reach" [level=2] [ref=e198]
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - generic [ref=e201]: Christian theism
+            - strong [ref=e202]: "81"
+          - generic [ref=e203]:
+            - generic [ref=e204]: Atheistic critique
+            - strong [ref=e205]: "83"
+      - generic [ref=e206]:
+        - article [ref=e207]:
+          - generic [ref=e208]:
+            - link "Open YouTube source at 39:47" [ref=e210] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=2387s
+              - text: 39:47
+            - generic [ref=e211]: Constructive design method
+            - strong [ref=e212]: "76"
+          - paragraph [ref=e213]: Patterns that are both highly improbable and independently specified can indicate intelligence, as forensics and extraterrestrial searches distinguish deliberate signals from accidental configurations.
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - button "Critique for Constructive design method" [ref=e216] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Constructive design method
+                - generic: "Strongest feature: Dembski supplies an intelligible test rather than appealing vaguely to complexity: improbability must coincide with a recognizable pattern, as illustrated by a prime-number signal and forensics. Principal limitation: those examples establish only that design is sometimes detectable; he does not calculate the biological probability, specify the evolutionary chance model, or demonstrate that cellular patterns satisfy an antecedent specification rather than one selected after observation. Live burden: He must apply the method to a biological system while comparing design with mutation, selection, inheritance, and natural histories, because announcing that cells exhibit specified complexity does not establish comparative superiority. Locked score: 76 rewards a clear, motion-relevant inferential framework, yet withholds stronger credit because the crucial biological application and the bridge from an inferred intelligence to a good God remain undeveloped."
+            - generic [ref=e217]: No named fallacy
+        - article [ref=e218]:
+          - generic [ref=e219]:
+            - link "Open YouTube source at 13:05" [ref=e221] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=785s
+              - text: 13:05
+            - generic [ref=e222]: Motion-framing distinction
+            - strong [ref=e223]: "87"
+          - paragraph [ref=e224]: Evidence for an initiating intelligence would establish less than interventionist theism, which additionally claims revelation, providence, divine goodness, and personal plans for human lives.
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - button "Critique for Motion-framing distinction" [ref=e227] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 87/100 · Motion-framing distinction
+                - generic: "Strongest feature: Hitchens defines the motion’s target precisely by separating a possibly indifferent initiator from a God who reveals, intervenes in history, governs providentially, and cares about individuals. Principal limitation: The distinction allocates burdens but does not itself show that revelation or providence is false, improbable, or morally defective; additional commitments require additional evidence, not automatic rejection. Live burden: The affirmative must supply independent bridges from generic design to personality, goodness, intervention, and specifically Christian revelation, while the negative must assess those bridges rather than treating conceptual distance as disproof. Locked score: 87 reflects an exceptionally relevant and charitable framing move, including the concession that deism is difficult to disprove, while recognizing that its warrant is chiefly conceptual and leaves the case against the stronger theistic commitments to later arguments."
+            - generic [ref=e228]: No named fallacy
+        - article [ref=e229]:
+          - generic [ref=e230]:
+            - link "Open YouTube source at 45:50" [ref=e232] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=2750s
+              - text: 45:50
+            - generic [ref=e233]: Scope-limiting clarification
+            - strong [ref=e234]: "84"
+          - paragraph [ref=e235]: Biological design may support an architect but cannot alone establish Christianity; resurrection, morality, cosmic intelligibility, and other evidence would have to complete that larger inference.
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - button "Critique for Scope-limiting clarification" [ref=e238] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 84/100 · Scope-limiting clarification
+                - generic: "Strongest feature: Dembski limits his conclusion to an architect and identifies resurrection as a separate evidential route, preventing biological design from silently doing the work of a Christian apologetic. Principal limitation: He lists morality, intelligibility, cosmic existence, and resurrection as questions that theism allegedly answers better, but the debate passage provides no warrants for those claims or connection between the architect and revelation. Live burden: The affirmative still must establish that the inferred designer is transcendent, morally good, personally concerned, and credibly identified with the Christian God, using evidence independent of the biological inference itself. Locked score: 84 properly credits disciplined calibration and exceptional clarity about what “by itself” cannot prove, while reserving further credit because the architect-to-God extension is acknowledged rather than argued and therefore remains the unfinished bridge."
+            - generic [ref=e239]: No named fallacy
+        - article [ref=e240]:
+          - generic [ref=e241]:
+            - link "Open YouTube source at 78:34" [ref=e243] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4714s
+              - text: 78:34
+            - generic [ref=e244]: Two-part critical reply
+            - strong [ref=e245]: "79"
+          - paragraph [ref=e246]: A theology able to absorb every scientific outcome lacks a stable test, while proof-like design evidence may also undermine the uncertainty that gives faith its meaning.
+          - generic [ref=e247]:
+            - generic [ref=e248]:
+              - button "Critique for Two-part critical reply" [ref=e249] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 79/100 · Two-part critical reply
+                - generic: "Strongest feature: Hitchens poses two tests: what scientific finding would count against the theological explanation, and why faith would remain necessary if design established God as straightforwardly as an ordinary proposition. Principal limitation: His Big Bang and evolution examples show Christianity’s interpretive flexibility, but they do not demonstrate that Dembski’s specified-complexity criterion accepts every possible result; the faith argument also assumes, without theological defense, that evidence and faith are inversely related. Live burden: Dembski must name potential defeaters for the design inference and explain how evidential support can coexist with noncompulsory trust, while Hitchens must engage the actual criterion rather than theology in general. Locked score: 79 recognizes a responsive challenge to evidential reach and falsifiability, yet reflects that both prongs remain conceptual provocations whose decisive premises require more argument."
+            - generic [ref=e250]: No named fallacy
+        - article [ref=e251]:
+          - generic [ref=e252]:
+            - link "Open YouTube source at 88:58" [ref=e254] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=5338s
+              - text: 88:58
+            - generic [ref=e255]: Faith-compatibility reply
+            - strong [ref=e256]: "86"
+          - paragraph [ref=e257]: Design evidence need not eliminate faith because it indicates only an architect, leaving resurrection, incarnation, salvation, and the architect’s relationship to Christianity independently unsettled.
+          - generic [ref=e258]:
+            - generic [ref=e259]:
+              - button "Critique for Faith-compatibility reply" [ref=e260] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 86/100 · Faith-compatibility reply
+                - generic: "Strongest feature: Dembski answers the faith objection directly by inventorying what design does not entail—resurrection, incarnation, salvation, or the Christian identity of the architect—so evidential support remains limited rather than coercive. Principal limitation: Romans provides a Christian precedent for natural signs, but neither that citation nor the inventory establishes that the inferred architect is transcendent, good, revealing, or connected to the gospel. Live burden: He must explain why the design evidence points beyond finite intelligence and then defend the separate historical and theological steps, while also clarifying what degree of evidence would threaten faith’s voluntariness. Locked score: 86 rewards a direct, carefully delimited response that preserves distinct evidential routes, while withholding completion credit because the limitations that answer Hitchens also confirm that design alone cannot satisfy the debate’s good-God motion."
+            - generic [ref=e261]: No named fallacy
+        - article [ref=e262]:
+          - generic [ref=e263]:
+            - link "Open YouTube source at 120:16" [ref=e265] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=7216s
+              - text: 120:16
+            - generic [ref=e266]: Evidential scope challenge
+            - strong [ref=e267]: "75"
+          - paragraph [ref=e268]: The fossil record permits some common ancestry but does not establish universal descent, because Cambrian body plans appear abruptly despite preservation of earlier soft-bodied organisms.
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - button "Critique for Evidential scope challenge" [ref=e271] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Evidential scope challenge
+                - generic: "Strongest feature: Dembski makes a bounded evidential claim rather than denying common ancestry wholesale, focusing on abrupt Cambrian body plans, the reported scarcity of suitable precursors, and preservation conditions that allegedly should reveal them. Principal limitation: He provides no sources, rates, sampling context, taxonomic definitions, or engagement with proposed precursor forms, so the expectation that universal descent requires a markedly different record remains insufficiently defended. Live burden: He must show that the observed pattern is genuinely improbable under evolutionary models and comparatively expected under design, not merely identify incompleteness or scientific dispute. Locked score: 75 credits a relevant, calibrated challenge to how much the fossil record establishes, but the missing quantitative and comparative warrants prevent the Cambrian pattern from becoming positive evidence for intelligence or completing the broader design burden."
+            - generic [ref=e272]: No named fallacy
+    - generic [ref=e273]:
+      - generic [ref=e274]:
+        - generic [ref=e275]:
+          - paragraph [ref=e276]:
+            - link "Open YouTube source at 15:15–127:03" [ref=e277] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=915s
+              - text: 15:15–127:03
+          - heading "Cosmos, providence, and human significance" [level=2] [ref=e278]
+        - generic [ref=e279]:
+          - generic [ref=e280]:
+            - generic [ref=e281]: Christian theism
+            - strong [ref=e282]: "68"
+          - generic [ref=e283]:
+            - generic [ref=e284]: Atheistic critique
+            - strong [ref=e285]: "77"
+      - generic [ref=e286]:
+        - article [ref=e287]:
+          - generic [ref=e288]:
+            - link "Open YouTube source at 86:14" [ref=e290] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=5174s
+              - text: 86:14
+            - generic [ref=e291]: Scale objection reply
+            - strong [ref=e292]: "69"
+          - paragraph [ref=e293]: Human physical smallness does not determine insignificance, since minds can comprehend a cosmos vastly exceeding their bodies and geocentrism did not necessarily imply privilege.
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - button "Critique for Scale objection reply" [ref=e296] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 69/100 · Scale objection reply
+                - generic: "Strongest feature: Dembski identifies a non sequitur in moving from humanity’s tiny physical scale to diminished worth, and his contrast between size and intellectual comprehension offers a vivid reason that significance need not track magnitude. Principal limitation: The reply shifts among intelligence, exceptional capacity, divine importance, and political value without establishing that achievement indicates providential concern; its association of cosmic modesty with eugenics also exceeds Hitchens’s stated argument. Live burden: Dembski must connect cognitive distinction to the good creator claimed by the motion, while addressing why providence would employ such an immense and destructive cosmos. Locked score: 69 recognizes an effective rebuttal to a simplistic size-based inference, but not a positive demonstration of human sacredness or an answer to the evidential force Hitchens assigns to cosmic history."
+            - generic [ref=e297]: No named fallacy
+        - article [ref=e298]:
+          - generic [ref=e299]:
+            - link "Open YouTube source at 15:15" [ref=e301] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=915s
+              - text: 15:15
+            - generic [ref=e302]: Cosmic goodness objection
+            - strong [ref=e303]: "78"
+          - paragraph [ref=e304]: A destructive, expanding universe appears poorly matched to a benign human-focused creator, because stars die, humanity occupies a minute location, and cosmic dissolution awaits.
+          - generic [ref=e305]:
+            - generic [ref=e306]:
+              - button "Critique for Cosmic goodness objection" [ref=e307] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 78/100 · Cosmic goodness objection
+                - generic: "Strongest feature: Hitchens connects cosmological features—stellar death, accelerating expansion, humanity’s minute location, and eventual extinction—to the motion’s goodness claim instead of treating mere vastness as a deductive refutation. Principal limitation: He assumes that benign design should be human-centered, spatially economical, and permanently habitable, yet does not defend those expectations against theisms assigning value to nonhuman creation, temporal goods, or purposes unrelated to cosmic efficiency. Live burden: The negative must show why this universe is substantially less expected under a good creator than under naturalism, while the affirmative must offer independently motivated purposes rather than retrospective possibilities compatible with any outcome. Locked score: 78 rewards the objection’s direct relevance and cumulative evidential pressure, but reflects its overconfident claim of incompatibility and the absence of a developed likelihood comparison between rival worldviews."
+            - generic [ref=e308]: No named fallacy
+        - article [ref=e309]:
+          - generic [ref=e310]:
+            - link "Open YouTube source at 118:53" [ref=e312] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=7133s
+              - text: 118:53
+            - generic [ref=e313]: Cosmological fit argument
+            - strong [ref=e314]: "67"
+          - paragraph [ref=e315]: A finite cosmic beginning fits creation without pre-existing matter better than eternal materialism, because physical laws traced backward reach a boundary where their application ends.
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - button "Critique for Cosmological fit argument" [ref=e318] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 67/100 · Cosmological fit argument
+                - generic: "Strongest feature: Dembski offers an abductive proposal: a universe with a finite physical boundary appears more consonant with creation than the steady-state picture of an eternal material cosmos. Principal limitation: Reaching a boundary in the applicability of current laws does not establish absolute nothingness, personal causation, or comparative superiority for theism; he also portrays multiverse proposals as evasions without examining their scientific motivations or uncertainty. Live burden: The affirmative must distinguish an epistemic boundary from an ontological beginning and explain why a good personal creator predicts this cosmology better than natural alternatives or an indifferent cause. Locked score: 67 recognizes relevance and an intelligible theistic interpretation, but the move remains a compatibility claim whose unsupported transitions from Big Bang cosmology to creation, agency, and goodness leave the motion-level conclusion unearned."
+            - generic [ref=e319]: No named fallacy
+        - article [ref=e320]:
+          - generic [ref=e321]:
+            - link "Open YouTube source at 19:52" [ref=e323] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=1192s
+              - text: 19:52
+            - generic [ref=e324]: Providential method critique
+            - strong [ref=e325]: "76"
+          - paragraph [ref=e326]: Providential interpretations lack a stable test when religious observers can describe catastrophe as divine punishment and later military victory as vindication despite continuing conflict.
+          - generic [ref=e327]:
+            - generic [ref=e328]:
+              - button "Critique for Providential method critique" [ref=e329] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Providential method critique
+                - generic: "Strongest feature: Hitchens exposes instability by contrasting catastrophe interpreted as punishment with victory interpreted as vindication, showing how opposite outcomes can enter the same providential narrative without a discriminator. Principal limitation: The examples establish flexible interpretation, not that every theology of history is unfalsifiable, and his claims about Israeli doubt and religious reasoning extend beyond the evidence in this exchange. Live burden: The affirmative must specify beforehand what patterns providence predicts and what would count against that reading, while the negative must distinguish ad hoc apologetics from responsible theological interpretation. Locked score: 76 credits a logically coherent challenge to post hoc purpose claims, but reserves stronger credit because these cases do not demonstrate that all providential explanations evade testing or that divine action is improbable."
+            - generic [ref=e330]: No named fallacy
+        - article [ref=e331]:
+          - generic [ref=e332]:
+            - link "Open YouTube source at 21:51" [ref=e334] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=1311s
+              - text: 21:51
+            - generic [ref=e335]: Evolutionary contingency objection
+            - strong [ref=e336]: "79"
+          - paragraph [ref=e337]: Human primate inheritance, near-extinction, and the disappearance of almost all species make benevolent special design less expected than a contingent natural history.
+          - generic [ref=e338]:
+            - generic [ref=e339]:
+              - button "Critique for Evolutionary contingency objection" [ref=e340] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 79/100 · Evolutionary contingency objection
+                - generic: "Strongest feature: Hitchens combines human primate traits, population vulnerability, and the extinction of nearly all species into a cumulative challenge to benevolent special creation rather than relying on one isolated anomaly. Principal limitation: These observations fit evolutionary contingency, but they neither specify the full causal mechanism nor exclude theistic evolution, under which natural descent and extinction could occur within a providential order. Live burden: The negative must show that this pattern is markedly less probable under a good creator, while the affirmative must explain why immense biological waste, fragility, and suffering serve independently motivated purposes. Locked score: 79 credits strong relevance to both naturalistic explanation and divine goodness, yet stops short of treating contingency as decisive because the likelihood comparison and the reply available to evolutionary theism remain insufficiently developed."
+            - generic [ref=e341]: No named fallacy
+        - article [ref=e342]:
+          - generic [ref=e343]:
+            - link "Open YouTube source at 123:33" [ref=e345] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=7413s
+              - text: 123:33
+            - generic [ref=e346]: Natural-origin counterargument
+            - strong [ref=e347]: "75"
+          - paragraph [ref=e348]: Possible quantum origins and the universe’s destructive future weaken creation claims and make cosmic history poor evidence for a competent, benevolent, human-centered designer.
+          - generic [ref=e349]:
+            - generic [ref=e350]:
+              - button "Critique for Natural-origin counterargument" [ref=e351] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Natural-origin counterargument
+                - generic: "Strongest feature: Hitchens answers the cosmological case on two fronts, noting that physical accounts may complicate the meaning of “nothing” and arguing that stellar destruction, expansion, collision, and extinction poorly resemble benevolent human-centered planning. Principal limitation: He candidly concedes uncertainty about quantum cosmology and the possible deity, but then calls the designer incompetent and the naturalistic probability overwhelming without supplying calculations or defending an efficiency standard for divine action. Live burden: The negative must compare expected cosmic evidence under rival hypotheses, while the affirmative must explain the apparent waste without inventing purposes solely to accommodate it. Locked score: 75 reflects a relevant challenge to both origin and goodness, but its speculative physics, anthropocentric assumptions, and unquantified confidence prevent the rhetoric of caprice from becoming a conclusive inference."
+            - generic [ref=e352]: No named fallacy
+    - generic [ref=e353]:
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - paragraph [ref=e356]:
+            - link "Open YouTube source at 29:51–67:12" [ref=e357] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=1791s
+              - text: 29:51–67:12
+          - heading "Evolution and scientific method" [level=2] [ref=e358]
+        - generic [ref=e359]:
+          - generic [ref=e360]:
+            - generic [ref=e361]: Christian theism
+            - strong [ref=e362]: "73"
+          - generic [ref=e363]:
+            - generic [ref=e364]: Atheistic critique
+            - strong [ref=e365]: "73"
+      - generic [ref=e366]:
+        - article [ref=e367]:
+          - generic [ref=e368]:
+            - link "Open YouTube source at 29:51" [ref=e370] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=1791s
+              - text: 29:51
+            - generic [ref=e371]: Four-part evidential reply
+            - strong [ref=e372]: "69"
+          - paragraph [ref=e373]: Regulatory DNA, Cambrian patterns, retinal function, and unsupported eye pathways each challenge standard examples presented as evidence for evolution’s unguided creative power.
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - button "Critique for Four-part evidential reply" [ref=e376] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 69/100 · Four-part evidential reply
+                - generic: "Strongest feature: Dembski presents four identifiable challenges—functions in so-called junk DNA, abrupt Cambrian forms, benefits of retinal inversion, and insufficiently tested eye pathways—making his disagreement concrete enough for separate examination. Principal limitation: Disputing selected examples does not justify his sweeping claim that evolutionary proofs are easily deconstructed; several objections rely on contested interpretations, unspecified standards, or announced doubts rather than demonstrated failures of the broader theory. Live burden: He must document each case, distinguish revisions from collapse, and show that design predicts the relevant findings better than evolutionary alternatives instead of inferring design from unsettled details. Locked score: 69 rewards an auditable structure and legitimate pressure on overstatement, but reflects weak calibration and incomplete evidential support where the passage generalizes from four disputes to evolution’s overall explanatory capacity."
+            - generic [ref=e377]: No named fallacy
+        - article [ref=e378]:
+          - generic [ref=e379]:
+            - link "Open YouTube source at 49:56" [ref=e381] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=2996s
+              - text: 49:56
+            - generic [ref=e382]: Historical dependency rebuttal
+            - strong [ref=e383]: "72"
+          - paragraph [ref=e384]: Atheism cannot logically or historically depend on Darwinian evolution, because atheist and atomist thought preceded Darwin and scientific inquiry extends beyond one biological theory.
+          - generic [ref=e385]:
+            - generic [ref=e386]:
+              - button "Critique for Historical dependency rebuttal" [ref=e387] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 72/100 · Historical dependency rebuttal
+                - generic: "Strongest feature: Hitchens directly rejects the alleged dependency by separating disbelief from any origins theory and pointing to atheist and atomist traditions that existed long before Darwin, which defeats the strongest historical formulation. Principal limitation: The chronology establishes that atheism can exist without evolutionary theory, but it does not answer Dembski’s narrower contention that contemporary naturalism needs some blind material account of biological complexity; Hitchens also broadens into insufficiently qualified claims about organized religion’s hostility to science. Live burden: The negative must distinguish logical independence from explanatory adequacy and identify the naturalistic resources that now bear the origins burden. Locked score: 72 credits a responsive and conceptually decisive rebuttal to necessary dependence, while withholding more because historical counterexamples alone do not establish that current atheistic explanations of life are successful."
+            - generic [ref=e388]: No named fallacy
+        - article [ref=e389]:
+          - generic [ref=e390]:
+            - link "Open YouTube source at 35:44" [ref=e392] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=2144s
+              - text: 35:44
+            - generic [ref=e393]: Worldview dependency claim
+            - strong [ref=e394]: "64"
+          - paragraph [ref=e395]: Atheism requires a purposeless material account of biological origins, whereas theism can accept guided evolution or direct design and therefore retains more explanatory options.
+          - generic [ref=e396]:
+            - generic [ref=e397]:
+              - button "Critique for Worldview dependency claim" [ref=e398] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 64/100 · Worldview dependency claim
+                - generic: "Strongest feature: Dembski identifies a genuine asymmetry in worldview constraints: atheism excludes divine agency, while theism can in principle accommodate either evolutionary development or more direct signs of design. Principal limitation: Excluding God does not entail commitment to Darwin’s particular mechanism, and describing Hitchens as trapped in an atheist straitjacket overlooks alternative naturalistic accounts, revisions within evolutionary theory, and Hitchens’s actual burden in this exchange. Live burden: Dembski must show not merely that atheism needs a natural explanation, but that available natural explanations fail and that intentional design supplies superior, testable expectations. Locked score: 64 recognizes the intelligible modal contrast between the worldviews, yet penalizes equivocation among Darwinism, evolution, and purposeless origins, together with rhetoric that substitutes alleged psychological constraint for engagement with competing evidence."
+            - generic [ref=e399]: No named fallacy
+        - article [ref=e400]:
+          - generic [ref=e401]:
+            - link "Open YouTube source at 53:46" [ref=e403] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=3226s
+              - text: 53:46
+            - generic [ref=e404]: Adaptive evidence reply
+            - strong [ref=e405]: "71"
+          - paragraph [ref=e406]: Varied eye structures and cave salamanders losing infection-prone, unused organs illustrate natural selection modifying visual systems without requiring a designer for each outcome.
+          - generic [ref=e407]:
+            - generic [ref=e408]:
+              - button "Critique for Adaptive evidence reply" [ref=e409] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 71/100 · Adaptive evidence reply
+                - generic: "Strongest feature: Hitchens offers an observable adaptive example rather than a purely theoretical assertion: cave salamanders retain eye-shaped vestiges while selection can favor losing costly, infection-prone organs that no longer assist survival. Principal limitation: Eye loss demonstrates modification of an inherited structure more securely than the origin of an integrated visual system, and his reference to proposed pathways and Dawkins leaves the constructive sequence insufficiently developed in this exchange. Live burden: The negative must connect incremental variation and selection to the production of functional visual complexity, while answering Dembski’s distinction between disabling machinery and building it. Locked score: 71 credits concrete naturalistic relevance and a plausible selection mechanism, but reflects that the cited case principally explains degeneration and therefore cannot alone discharge the broader burden concerning biological origins."
+            - generic [ref=e410]: No named fallacy
+        - article [ref=e411]:
+          - generic [ref=e412]:
+            - link "Open YouTube source at 64:34" [ref=e414] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=3874s
+              - text: 64:34
+            - generic [ref=e415]: Origin-loss distinction
+            - strong [ref=e416]: "82"
+          - paragraph [ref=e417]: Losing a cave animal’s eye through genetic disruption is easier than originating an integrated visual system, so degeneration does not resolve the disputed design question.
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - button "Critique for Origin-loss distinction" [ref=e420] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 82/100 · Origin-loss distinction
+                - generic: "Strongest feature: Dembski isolates the inferential mismatch in Hitchens’s example: disabling or down-regulating an inherited eye under darkness does not explain how coordinated light-sensitive structures first arose. Principal limitation: His suggested gene or promoter mechanism is plausible but speculative for the particular salamander, and showing that loss is easier than origin neither demonstrates design nor establishes that evolutionary construction lacks cumulative pathways. Live burden: He must evaluate actual origin models and show why mutation, selection, co-option, and intermediate functions cannot produce the relevant integration, rather than relying on the asymmetry between destruction and construction. Locked score: 82 rewards a sharply responsive correction that materially narrows what the cave example proves, while withholding completion credit because the successful rebuttal removes one argument without supplying positive comparative evidence for an intelligent cause."
+            - generic [ref=e421]: No named fallacy
+        - article [ref=e422]:
+          - generic [ref=e423]:
+            - link "Open YouTube source at 60:50" [ref=e425] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=3650s
+              - text: 60:50
+            - generic [ref=e426]: Scientific method defense
+            - strong [ref=e427]: "77"
+          - paragraph [ref=e428]: Scientific disagreement and revision demonstrate evidence-led self-correction rather than weakness, while successful medical predictions show practical reliability unavailable from fixed religious dogma.
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - button "Critique for Scientific method defense" [ref=e431] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 77/100 · Scientific method defense
+                - generic: "Strongest feature: Hitchens turns disagreement into a methodological virtue, explaining that researchers revise claims in public and connecting evolutionary understanding to medical prediction rather than demanding uniformity or permanent authority. Principal limitation: The Gould–Dawkins dispute and medical example illustrate scientific practice, but the flu chronology is unclear, and saying medicine would be impossible without evolution greatly exceeds what this brief evidence establishes. Live burden: The negative must show that the particular evolutionary claims challenged by Dembski survive correction and generate superior predictions, while distinguishing institutional reliability from truth in every disputed case. Locked score: 77 recognizes a responsive defense of fallible inquiry and its practical achievements, yet reserves higher credit because general success cannot substitute for answering Dembski’s specific origin-versus-loss objections or documenting the claimed medical dependence."
+            - generic [ref=e432]: No named fallacy
+        - article [ref=e433]:
+          - generic [ref=e434]:
+            - link "Open YouTube source at 65:35" [ref=e436] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=3935s
+              - text: 65:35
+            - generic [ref=e437]: Extrapolation challenge
+            - strong [ref=e438]: "74"
+          - paragraph [ref=e439]: Observed resistance in bacteria and insects demonstrates bounded adaptation but does not by itself explain the origin of organisms, integrated systems, or larger evolutionary innovations.
+          - generic [ref=e440]:
+            - generic [ref=e441]:
+              - button "Critique for Extrapolation challenge" [ref=e442] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 74/100 · Extrapolation challenge
+                - generic: "Strongest feature: Dembski concedes small-scale selection and medical adaptation, then asks whether evidence for resistance legitimately supports extrapolation to the origin of bacteria, insects, or integrated biological systems. Principal limitation: Calling the observed changes bounded and asserting no evidence for larger origins does not establish a principled barrier; the passage offers neither a quantitative limit nor engagement with cumulative evolutionary mechanisms across longer timescales. Live burden: He must identify a biological innovation that natural processes cannot traverse, justify the relevant probability and population assumptions, and show why design predicts the evidence better. Locked score: 74 rewards a focused warning against overextension and an accurate distinction between observing adaptation and explaining remote origins, but the absence of a demonstrated boundary or competing design mechanism leaves the challenge suggestive rather than decisive."
+            - generic [ref=e443]: No named fallacy
+    - generic [ref=e444]:
+      - generic [ref=e445]:
+        - generic [ref=e446]:
+          - paragraph [ref=e447]:
+            - link "Open YouTube source at 68:46–98:24" [ref=e448] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4126s
+              - text: 68:46–98:24
+          - heading "Morality, altruism, and human value" [level=2] [ref=e449]
+        - generic [ref=e450]:
+          - generic [ref=e451]:
+            - generic [ref=e452]: Christian theism
+            - strong [ref=e453]: "69"
+          - generic [ref=e454]:
+            - generic [ref=e455]: Atheistic critique
+            - strong [ref=e456]: "78"
+      - generic [ref=e457]:
+        - article [ref=e458]:
+          - generic [ref=e459]:
+            - link "Open YouTube source at 68:46" [ref=e461] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4126s
+              - text: 68:46
+            - generic [ref=e462]: Divine goodness grounding
+            - strong [ref=e463]: "65"
+          - paragraph [ref=e464]: If God grounds all being and purpose, goodness cannot be an external standard standing above God; objective moral authority must instead derive from God’s nature.
+          - generic [ref=e465]:
+            - generic [ref=e466]:
+              - button "Critique for Divine goodness grounding" [ref=e467] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 65/100 · Divine goodness grounding
+                - generic: "Strongest feature: Dembski states the dependence argument: if God is the ultimate source of reality and purpose, an authoritative moral standard cannot simply stand above that source as a superior tribunal. Principal limitation: The conclusion assumes that every objective norm must derive from a creator and does not explain why divine nature is good rather than definitive, leaving the concern that goodness could collapse into power or stipulation. Live burden: He must give noncircular content to divine goodness and show how humans can evaluate purported commands, especially when scripture appears to authorize suffering or violence. Locked score: 65 recognizes a philosophically coherent conditional answer to the external-standard objection, but the key metaphysical premise remains asserted and the move does not yet reconcile the standard with the debate’s evidence of evil."
+            - generic [ref=e468]: No named fallacy
+        - article [ref=e469]:
+          - generic [ref=e470]:
+            - link "Open YouTube source at 80:44" [ref=e472] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4844s
+              - text: 80:44
+            - generic [ref=e473]: Naturalistic moral account
+            - strong [ref=e474]: "76"
+          - paragraph [ref=e475]: Natural history explains suffering among imperfect animals, while social dependence, solidarity, and reflective persuasion can ground cooperative morality without invoking deficient ancient commands.
+          - generic [ref=e476]:
+            - generic [ref=e477]:
+              - button "Critique for Naturalistic moral account" [ref=e478] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Naturalistic moral account
+                - generic: "Strongest feature: Hitchens unites two positive naturalistic proposals: aggression and disease arise among vulnerable animals on an unstable planet, while cooperation develops because social survival depends on bonding, sacrifice, and persuasion beyond inherited commands. Principal limitation: Explaining how moral dispositions emerged does not establish their normative authority, and his criticism of selected commandments leaves unanswered why solidarity supplies obligations that should govern selfish agents rather than merely describing successful group behavior. Live burden: The negative must bridge evolutionary genealogy to justified moral reasons, while the affirmative must show that divine grounding explains obligation without importing independent standards. Locked score: 76 rewards a substantive alternative to both supernatural explanations of suffering and divine-command ethics, but recognizes that concrete observations about sociality establish moral capacity more readily than objective moral validity."
+            - generic [ref=e479]: No named fallacy
+        - article [ref=e480]:
+          - generic [ref=e481]:
+            - link "Open YouTube source at 73:11" [ref=e483] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4391s
+              - text: 73:11
+            - generic [ref=e484]: Moral grounding challenge
+            - strong [ref=e485]: "71"
+          - paragraph [ref=e486]: Evolutionary and social conditioning may explain moral feelings but cannot make them objectively binding, since opposed communities can express incompatible dispositions without a transcendent standard.
+          - generic [ref=e487]:
+            - generic [ref=e488]:
+              - button "Critique for Moral grounding challenge" [ref=e489] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 71/100 · Moral grounding challenge
+                - generic: "Strongest feature: Dembski distinguishes moral behavior from moral ontology, explicitly allowing that atheists can recognize and perform good acts while arguing that evolutionary conditioning cannot by itself make any judgment objectively binding. Principal limitation: He generalizes from some evolutionary debunking accounts to atheism as such, overlooks secular realist alternatives, and weakens charity by calling atheist moral judgment cheating and suggesting a genital-cutting community has the better argument. Live burden: The affirmative must explain how God grounds rather than merely commands moral truths, while showing that theistic knowledge avoids comparable cultural and psychological mediation. Locked score: 71 credits a direct and important challenge concerning normative authority, but the incomplete survey of atheistic ethics and the provocative overstatement prevent the argument from establishing that objective morality requires God."
+            - generic [ref=e490]: No named fallacy
+        - article [ref=e491]:
+          - generic [ref=e492]:
+            - link "Open YouTube source at 83:17" [ref=e494] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4997s
+              - text: 83:17
+            - generic [ref=e495]: Political neutrality rebuttal
+            - strong [ref=e496]: "82"
+          - paragraph [ref=e497]: Atheism denies a supernatural realm but entails no single ethics or politics, since unbelievers can become humanists, egoists, fascists, sadists, or communists.
+          - generic [ref=e498]:
+            - generic [ref=e499]:
+              - button "Critique for Political neutrality rebuttal" [ref=e500] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 82/100 · Political neutrality rebuttal
+                - generic: "Strongest feature: Hitchens cleanly separates bare disbelief from a positive political creed, noting that atheists can adopt humane, egoistic, fascist, sadistic, or communist commitments and therefore cannot be assigned one practical program. Principal limitation: The examples establish logical compatibility more securely than historical causation, and several classifications are asserted without documentation; moreover, showing that atheism permits many ethics does not explain which secular moral view is best justified. Live burden: Dembski must identify a mechanism connecting disbelief to particular harms rather than grouping secular ideologies together, while Hitchens must defend his own humanism independently of atheism. Locked score: 82 rewards an exceptionally responsive correction to the parity argument and an important burden distinction, while leaving open whether specific naturalistic doctrines, institutions, or leaders can still bear responsibility for political atrocities."
+            - generic [ref=e501]: No named fallacy
+        - article [ref=e502]:
+          - generic [ref=e503]:
+            - link "Open YouTube source at 76:22" [ref=e505] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=4582s
+              - text: 76:22
+            - generic [ref=e506]: Practical worldview comparison
+            - strong [ref=e507]: "60"
+          - paragraph [ref=e508]: Worldviews should be compared by how they support or resist contested practices, since the image of God may ground human sacredness while materialism removes transcendence.
+          - generic [ref=e509]:
+            - generic [ref=e510]:
+              - button "Critique for Practical worldview comparison" [ref=e511] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 60/100 · Practical worldview comparison
+                - generic: "Strongest feature: Dembski moves beyond the irrelevant question whether individual atheists behave decently and proposes comparing how worldviews justify human value, invoking the image of God as a basis for sacredness. Principal limitation: His associations among secular materialism, eugenics, euthanasia, and abortion do not demonstrate causation, and he presents deeply contested policies without their strongest moral rationales while assuming that transcendent grounding reliably improves practice. Live burden: The affirmative must trace specific doctrines to outcomes and compare religious counterexamples under consistent standards, rather than selecting harms associated with opponents. Locked score: 60 acknowledges a potentially relevant shift from personal virtue to institutional consequences, but the broad correlations, compressed historical claims, and limited engagement with Hitchens’s more precise parity argument leave this move under-supported and insufficiently calibrated."
+            - generic [ref=e512]: No named fallacy
+        - article [ref=e513]:
+          - generic [ref=e514]:
+            - link "Open YouTube source at 93:02" [ref=e516] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=5582s
+              - text: 93:02
+            - generic [ref=e517]: Evolutionary altruism example
+            - strong [ref=e518]: "78"
+          - paragraph [ref=e519]: Blood donation can be evolutionarily intelligible because its cost is replenishable, helping feels rewarding, and reciprocal social systems may later benefit the donor.
+          - generic [ref=e520]:
+            - generic [ref=e521]:
+              - button "Critique for Evolutionary altruism example" [ref=e522] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 78/100 · Evolutionary altruism example
+                - generic: "Strongest feature: Hitchens reconstructs blood donation through distinct costs and benefits: the loss is small and replenishable, helping produces satisfaction, and sustaining a reciprocal system may protect the donor later. Principal limitation: One rewarding donation is not representative evidence for costly or anonymous altruism, and the evolutionary origin of the rewarding feeling is asserted rather than shown; reciprocity also risks explaining prudence instead of genuine concern for others. Live burden: The negative must demonstrate how selection produces impartial obligations extending beyond kin and expected return, while the affirmative must explain why evolutionary origins would undermine moral worth. Locked score: 78 credits a clear, concrete mechanism and appropriate acknowledgment that social animals contain selfish as well as cooperative tendencies, but the anecdote establishes plausibility rather than a comprehensive genealogy of altruism."
+            - generic [ref=e523]: No named fallacy
+        - article [ref=e524]:
+          - generic [ref=e525]:
+            - link "Open YouTube source at 96:06" [ref=e527] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=5766s
+              - text: 96:06
+            - generic [ref=e528]: Normative scope rebuttal
+            - strong [ref=e529]: "76"
+          - paragraph [ref=e530]: Evolutionary explanations cover cooperation and violence alike, so a natural genealogy cannot by itself privilege altruism or transform adaptive behavior into moral obligation.
+          - generic [ref=e531]:
+            - generic [ref=e532]:
+              - button "Critique for Normative scope rebuttal" [ref=e533] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Normative scope rebuttal
+                - generic: "Strongest feature: Dembski separates evolutionary explanation from moral endorsement, observing that accounts can be proposed for cooperation, rape, and infanticide alike, so natural selection alone does not identify which behaviors deserve approval. Principal limitation: The examples are cited without enough context to distinguish explaining behavior from endorsing it, while Darwin’s reaction to natural cruelty is secondhand and does not show that evolutionary ethics lacks independent normative resources. Live burden: The affirmative must establish why divine grounding secures obligation better, and the negative must explain how reflection can criticize evolved impulses rather than merely inherit them. Locked score: 76 rewards a responsive exposure of the genealogy-to-normativity gap and Dembski’s concession that natural evil challenges design, but the compressed examples do not defeat sophisticated secular moral theories or positively establish intentional design."
+            - generic [ref=e534]: No named fallacy
+    - generic [ref=e535]:
+      - generic [ref=e536]:
+        - generic [ref=e537]:
+          - paragraph [ref=e538]:
+            - link "Open YouTube source at 57:36–105:26" [ref=e539] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=3456s
+              - text: 57:36–105:26
+          - heading "Evil, scripture, and fallen-world theodicy" [level=2] [ref=e540]
+        - generic [ref=e541]:
+          - generic [ref=e542]:
+            - generic [ref=e543]: Christian theism
+            - strong [ref=e544]: "63"
+          - generic [ref=e545]:
+            - generic [ref=e546]: Atheistic critique
+            - strong [ref=e547]: "81"
+      - generic [ref=e548]:
+        - article [ref=e549]:
+          - generic [ref=e550]:
+            - link "Open YouTube source at 100:27" [ref=e552] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=6027s
+              - text: 100:27
+            - generic [ref=e553]: Theodicy reply
+            - strong [ref=e554]: "63"
+          - paragraph [ref=e555]: A fallen world may confront divine governance with tragic choices resembling wartime decisions, while Christian theology treats death and disorder as consequences of human rebellion.
+          - generic [ref=e556]:
+            - generic [ref=e557]:
+              - button "Critique for Theodicy reply" [ref=e558] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 63/100 · Theodicy reply
+                - generic: "Strongest feature: Dembski directly addresses scriptural violence by proposing tragic-choice reasoning, comparing divine governance in a fallen world with human decisions where every available course carries grave harm. Principal limitation: The analogy assumes rather than demonstrates that an omnipotent God lacked a better option, and the appeal to fallenness, judgment, and rebellion supplies no evidence that the specific killings or captive-taking were necessary or just. Live burden: He must identify the goods secured, explain why less destructive means were unavailable, and reconcile collective punishment with individual responsibility. Locked score: 63 recognizes a coherent possibility of compatibility between goodness and hard choices, but the contested wartime counterfactual and unsupported theological premises leave the central evidential problem intact rather than showing that the alleged commands were morally proportionate."
+            - generic [ref=e559]: No named fallacy
+        - article [ref=e560]:
+          - generic [ref=e561]:
+            - link "Open YouTube source at 57:36" [ref=e563] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=3456s
+              - text: 57:36
+            - generic [ref=e564]: Historical evidence rebuttal
+            - strong [ref=e565]: "78"
+          - paragraph [ref=e566]: Archaeological and textual evidence does not automatically vindicate biblical history or Jesus’s divinity, because Exodus evidence is disputed and Gospel reports require independent scrutiny.
+          - generic [ref=e567]:
+            - generic [ref=e568]:
+              - button "Critique for Historical evidence rebuttal" [ref=e569] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 78/100 · Historical evidence rebuttal
+                - generic: "Strongest feature: Hitchens separates plausible historicity from resurrection and divinity, directly answering the suggestion that denying Christian conclusions is merely contrarian while invoking archaeology, Egyptian records, and textual disagreement as public evidential tests. Principal limitation: His categorical Exodus conclusion and assertion that the Gospels conflict about everything are not demonstrated passage by passage, and he does not engage the contrary archaeological literature Dembski cites. Live burden: The negative must document which historical claims fail and why those failures bear on divine identity, while the affirmative must provide evidence for resurrection rather than relying on general biblical reliability. Locked score: 78 rewards a responsive distinction between an ancient person and supernatural claims, but the sweeping textual language and undeveloped archaeological assertions prevent this reply from decisively settling the Christian evidential route."
+            - generic [ref=e570]: No named fallacy
+        - article [ref=e571]:
+          - generic [ref=e572]:
+            - link "Open YouTube source at 98:44" [ref=e574] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=5924s
+              - text: 98:44
+            - generic [ref=e575]: Scriptural goodness objection
+            - strong [ref=e576]: "84"
+          - paragraph [ref=e577]: Hitchens argues that biblical commands prescribe extermination, enslavement, and sexual domination, making the attributed divine instructions themselves evidence against the scriptural God’s goodness.
+          - generic [ref=e578]:
+            - generic [ref=e579]:
+              - button "Critique for Scriptural goodness objection" [ref=e580] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 84/100 · Scriptural goodness objection
+                - generic: "Strongest feature: Hitchens targets the doctrine rather than believers’ misconduct: as he presents the passages, divine instructions require killing whole populations while retaining marriageable women, creating a direct conflict with perfect goodness. Principal limitation: His inference from retained captives to rape and his description of scripture as an instruction manual go beyond the wording established in the debate, so the allegation requires textual and historical substantiation rather than rhetorical amplification. Live burden: The affirmative must explain the commands’ provenance, necessity, proportionality, and treatment of noncombatants, while the negative must establish its interpretation without assuming disputed details. Locked score: 84 reflects the relevance of an attributed command to kill children and preserve captives, yet preserves room for contextual challenge because the strongest sexual-violence characterization is Hitchens’s interpretation, not independently verified here."
+            - generic [ref=e581]: No named fallacy
+        - article [ref=e582]:
+          - generic [ref=e583]:
+            - link "Open YouTube source at 103:36" [ref=e585] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=6216s
+              - text: 103:36
+            - generic [ref=e586]: Fallenness counterargument
+            - strong [ref=e587]: "80"
+          - paragraph [ref=e588]: The fallen-world account may intensify alienation by portraying a creator who makes vulnerable beings, condemns their rebellion, and answers it with suffering, death, and threatened punishment.
+          - generic [ref=e589]:
+            - generic [ref=e590]:
+              - button "Critique for Fallenness counterargument" [ref=e591] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 80/100 · Fallenness counterargument
+                - generic: "Strongest feature: Hitchens turns the fallenness defense back on divine responsibility, arguing that a creator cannot blame dependent creatures for conditions culminating in plague, flood, mortality, and threatened eternal punishment. Principal limitation: His portrayal of the knowledge prohibition as simply “don’t think,” and his description of God as cruel or stupid, compress theological distinctions concerning freedom, disobedience, judgment, and inherited disorder into a forceful caricature. Live burden: The affirmative must explain why creaturely freedom justifies the scale and transmission of suffering, while the negative must engage the strongest account of rebellion rather than its harshest slogans. Locked score: 80 rewards direct pressure on the moral coherence of the fallen-world reply, but the overstatement limits calibration and leaves unresolved whether a more careful free-will theodicy can distribute responsibility without implicating God."
+            - generic [ref=e592]: No named fallacy
+    - generic [ref=e593]:
+      - generic [ref=e594]:
+        - generic [ref=e595]:
+          - paragraph [ref=e596]:
+            - link "Open YouTube source at 105:53–140:31" [ref=e597] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=6353s
+              - text: 105:53–140:31
+          - heading "Incarnation, atonement, and freedom" [level=2] [ref=e598]
+        - generic [ref=e599]:
+          - generic [ref=e600]:
+            - generic [ref=e601]: Christian theism
+            - strong [ref=e602]: "74"
+          - generic [ref=e603]:
+            - generic [ref=e604]: Atheistic critique
+            - strong [ref=e605]: "80"
+      - generic [ref=e606]:
+        - article [ref=e607]:
+          - generic [ref=e608]:
+            - link "Open YouTube source at 105:53" [ref=e610] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=6353s
+              - text: 105:53
+            - generic [ref=e611]: Incarnational theodicy reply
+            - strong [ref=e612]: "73"
+          - paragraph [ref=e613]: Christianity portrays God not as a distant dictator but as sharing human vulnerability through incarnation and crucifixion, offering solidarity alongside a proposed remedy for fallenness.
+          - generic [ref=e614]:
+            - generic [ref=e615]:
+              - button "Critique for Incarnational theodicy reply" [ref=e616] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 73/100 · Incarnational theodicy reply
+                - generic: "Strongest feature: Dembski answers the distant-ruler objection with a concrete contrast between merely knowing suffering and entering it, using incarnation, crucifixion, and a missionary analogy to articulate divine solidarity with vulnerable humans. Principal limitation: The analogy clarifies the doctrine’s moral appeal but does not establish incarnation or Christ’s divine identity, and shared suffering alone does not explain why an omnipotent God permits the underlying harms. Live burden: He must connect solidarity to justified governance, show how salvation remedies rather than merely accompanies suffering, and provide public evidence for the theological premises. Locked score: 73 credits an intelligible and existentially serious Christian response, including Dembski’s personal acknowledgement of conversion and uncertainty, while recognizing that conditional coherence and autobiographical force do not prove the doctrine true or complete the good-God defense."
+            - generic [ref=e617]: No named fallacy
+        - article [ref=e618]:
+          - generic [ref=e619]:
+            - link "Open YouTube source at 112:35" [ref=e621] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=6755s
+              - text: 112:35
+            - generic [ref=e622]: Substitution coherence objection
+            - strong [ref=e623]: "84"
+          - paragraph [ref=e624]: Another person may pay a debt or endure punishment, but substitution cannot erase the wrongdoer’s authorship, historical act, or continuing moral responsibility.
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - button "Critique for Substitution coherence objection" [ref=e627] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 84/100 · Substitution coherence objection
+                - generic: "Strongest feature: Hitchens draws a vivid distinction between transferring a cost and transferring agency: another person might pay money or accept punishment, yet the original act remains historically and morally attributable to its author. Principal limitation: His phrase about taking away sins sometimes shifts between canceling liability and erasing history, so the analogies do not defeat Christian accounts that promise forgiveness without denying who acted; they challenge only stronger substitutionary interpretations. Live burden: The affirmative must explain what Christ’s payment changes, why punishment is transferable, and how forgiveness preserves responsibility without becoming scapegoating. Locked score: 84 rewards a precise, memorable objection grounded in debt, prison, and scaffold comparisons, but leaves room for Dembski’s liability-versus-history distinction because Hitchens has not shown that every atonement doctrine claims the act literally never occurred."
+            - generic [ref=e628]: No named fallacy
+        - article [ref=e629]:
+          - generic [ref=e630]:
+            - link "Open YouTube source at 115:19" [ref=e632] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=6919s
+              - text: 115:19
+            - generic [ref=e633]: Atonement distinction reply
+            - strong [ref=e634]: "75"
+          - paragraph [ref=e635]: "Penal substitution can cancel liability without erasing history: Christ pays the moral debt while the person remains the author of the act and remembers it."
+          - generic [ref=e636]:
+            - generic [ref=e637]:
+              - button "Critique for Atonement distinction reply" [ref=e638] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Atonement distinction reply
+                - generic: "Strongest feature: Dembski accepts Hitchens’s historical point and narrows the claim: forgiveness changes liability because a debt is paid, while neither God nor the offender must pretend the wrongful act never happened. Principal limitation: This distinction makes substitution conceptually possible but does not establish the penal framework, Christ’s identity, the justice of transferred punishment, or the claim that atheism entails determinism; the named example cannot bear that breadth. Live burden: He must explain why moral liability, unlike personal authorship, can justly be transferred and how voluntary payment restores the relationship without bypassing repentance or victims. Locked score: 75 credits a responsive and coherent conditional defense that uses Hitchens’s own analogies, yet withholds stronger credit because resolving an ambiguity about history does not prove Christian atonement true or answer responsibility objections."
+            - generic [ref=e639]: No named fallacy
+        - article [ref=e640]:
+          - generic [ref=e641]:
+            - link "Open YouTube source at 138:54" [ref=e643] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=8334s
+              - text: 138:54
+            - generic [ref=e644]: Epistemic freedom argument
+            - strong [ref=e645]: "74"
+          - paragraph [ref=e646]: Open-ended inquiry accepts uncertainty and intellectual risk, whereas guaranteed religious certainty and demands for submission to absolute authority can foreclose the search for truth.
+          - generic [ref=e647]:
+            - generic [ref=e648]:
+              - button "Critique for Epistemic freedom argument" [ref=e649] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 74/100 · Epistemic freedom argument
+                - generic: "Strongest feature: Hitchens presents a sustained epistemic ideal in which worthwhile inquiry requires acknowledged limits, revisable conversation, and willingness to risk error, contrasting it with messages that declare children spiritually dead until submission. Principal limitation: The local example supports concern about coercive certainty, but it does not establish that faith generally forecloses inquiry or that open-ended risk reliably produces wisdom; “absolute authority” also covers more institutional and theological forms than he distinguishes. Live burden: The negative must identify mechanisms by which specific doctrines suppress correction, while the affirmative must show how confident revelation remains responsive to counterevidence and intellectual freedom. Locked score: 74 credits a memorable, relevant defense of inquiry, yet reflects the absence of comparative evidence and the possibility that religious conviction can coexist with disciplined questioning."
+            - generic [ref=e650]: No named fallacy
+    - generic [ref=e651]:
+      - generic [ref=e652]:
+        - generic [ref=e653]:
+          - paragraph [ref=e654]:
+            - link "Open YouTube source at 26:19–138:00" [ref=e655] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=1579s
+              - text: 26:19–138:00
+          - heading "Ideology, charity, and public consequences" [level=2] [ref=e656]
+        - generic [ref=e657]:
+          - generic [ref=e658]:
+            - generic [ref=e659]: Christian theism
+            - strong [ref=e660]: "71"
+          - generic [ref=e661]:
+            - generic [ref=e662]: Atheistic critique
+            - strong [ref=e663]: "77"
+      - generic [ref=e664]:
+        - article [ref=e665]:
+          - generic [ref=e666]:
+            - link "Open YouTube source at 129:52" [ref=e668] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=7792s
+              - text: 129:52
+            - generic [ref=e669]: Ideological parity reply
+            - strong [ref=e670]: "72"
+          - paragraph [ref=e671]: Religious and secular ideals can both rationalize coercion and violence, yet Hitchens allegedly counts secular atrocities asymmetrically by redirecting responsibility toward religious associations.
+          - generic [ref=e672]:
+            - generic [ref=e673]:
+              - button "Critique for Ideological parity reply" [ref=e674] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 72/100 · Ideological parity reply
+                - generic: "Strongest feature: Dembski concedes that religion can motivate coercion and asks for a symmetrical causal standard when evaluating Stalinist, Nazi, and North Korean violence, preventing criticism from becoming definitionally one-sided. Principal limitation: Naming regimes as secular does not show that atheism caused their crimes, and his claim that Hitchens always changes the subject understates distinctions among disbelief, totalitarian ideology, nationalism, and religious collaboration. Live burden: The affirmative must trace particular secular doctrines to specific harms with the same care demanded for religious causation, while the negative must avoid immunizing favored ideologies through selective classification. Locked score: 72 rewards a legitimate parity challenge and useful concession, but the compressed historical analysis and imputation of rigidity leave the causal bridge incomplete rather than establishing that religious and secular worldviews bear equivalent responsibility."
+            - generic [ref=e675]: No named fallacy
+        - article [ref=e676]:
+          - generic [ref=e677]:
+            - link "Open YouTube source at 26:19" [ref=e679] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=1579s
+              - text: 26:19
+            - generic [ref=e680]: Authority-risk argument
+            - strong [ref=e681]: "77"
+          - paragraph [ref=e682]: Belief in an undeposable supernatural ruler can encourage authoritarian control when human interpreters claim privileged access to divine commands and place them beyond appeal.
+          - generic [ref=e683]:
+            - generic [ref=e684]:
+              - button "Critique for Authority-risk argument" [ref=e685] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 77/100 · Authority-risk argument
+                - generic: "Strongest feature: Hitchens translates abstract divine sovereignty into recognizable political models—an absent father, undeposable king, and judge without appeal—then identifies the institutional danger when clerics claim privileged interpretive access. Principal limitation: The analogies establish an authoritarian risk, not an inevitable outcome, and they move too quickly from absolute supernatural authority to coercive human government without considering noncoercive theology, divided institutions, or safeguards against clerical power. Live burden: The negative must document when and how theological certainty produces civic subordination, while the affirmative must explain why claimed revelation remains publicly contestable. Locked score: 77 rewards direct contact with freedom and welfare and a vivid causal hypothesis, but the broad generalization and limited attention to religious diversity prevent association between divine kingship and authoritarian practice from becoming a universal causal verdict."
+            - generic [ref=e686]: No named fallacy
+        - article [ref=e687]:
+          - generic [ref=e688]:
+            - link "Open YouTube source at 131:52" [ref=e690] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=7912s
+              - text: 131:52
+            - generic [ref=e691]: Character allegation rebuttal
+            - strong [ref=e692]: "69"
+          - paragraph [ref=e693]: A witness’s report that Mother Teresa twice refused improved medical treatment and requested it for the poor challenges the narrower accusation of self-serving hypocrisy.
+          - generic [ref=e694]:
+            - generic [ref=e695]:
+              - button "Critique for Character allegation rebuttal" [ref=e696] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 69/100 · Character allegation rebuttal
+                - generic: "Strongest feature: Dembski supplies a concrete reported counterexample to the hypocrisy charge: according to his witness, Mother Teresa declined an improved pacemaker, asked that it go to the poor, and refused again near death. Principal limitation: The anecdote depends on uncorroborated testimony in this exchange and answers only whether she accepted privileged care, not Hitchens’s more consequential allegations about suffering, donations, contraception, or institutional effects. Live burden: Dembski must verify the episode and show how personal austerity bears on the broader moral assessment, while distinguishing admirable sacrifice from beneficial policy. Locked score: 70 credits a specific and potentially damaging reply to one allegation, but its narrow responsiveness means that even a fully accurate pacemaker account would not resolve the debate over her organization’s treatment of poverty and suffering."
+            - generic [ref=e697]: No named fallacy
+        - article [ref=e698]:
+          - generic [ref=e699]:
+            - link "Open YouTube source at 133:31" [ref=e701] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=8011s
+              - text: 133:31
+            - generic [ref=e702]: Policy-impact counterreply
+            - strong [ref=e703]: "75"
+          - paragraph [ref=e704]: Hitchens argues that personal austerity cannot answer allegations that Mother Teresa glorified suffering, accepted compromised donations, and opposed reproductive choices that could reduce poverty.
+          - generic [ref=e705]:
+            - generic [ref=e706]:
+              - button "Critique for Policy-impact counterreply" [ref=e707] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Policy-impact counterreply
+                - generic: "Strongest feature: Hitchens explains why refusing treatment would not settle the issue, redirecting evaluation toward preaching about suffering, fundraising choices, opposition to contraception, and their consequences for women and villages. Principal limitation: Labels such as fanatic and fraud, together with claims that empowerment always works or contraception is the sole cure, are substantially overstated, and the allegations remain asserted rather than independently documented within this debate. Live burden: The negative must substantiate institutional practices and compare actual outcomes, while the affirmative must answer policy effects instead of relying only on the founder’s personal austerity. Locked score: 76 rewards the relevant distinction between private sacrifice and public impact, but preserves uncertainty because the causal link from reproductive teaching to poverty and the characterization of donations require evidence beyond Hitchens’s account."
+            - generic [ref=e708]: No named fallacy
+        - article [ref=e709]:
+          - generic [ref=e710]:
+            - link "Open YouTube source at 135:47" [ref=e712] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=8147s
+              - text: 135:47
+            - generic [ref=e713]: Secular diversity reply
+            - strong [ref=e714]: "82"
+          - paragraph [ref=e715]: Atheism permits divergent ethical commitments rather than one coercive ideology, and nonreligious aid organizations can pursue humanitarian service without proselytizing or a hidden salvation agenda.
+          - generic [ref=e716]:
+            - generic [ref=e717]:
+              - button "Critique for Secular diversity reply" [ref=e718] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 82/100 · Secular diversity reply
+                - generic: "Strongest feature: Hitchens concedes that atheists can embrace bad politics while distinguishing disbelief from those programs, then names secular humanitarian organizations as positive evidence that charity need not depend on promised salvation. Principal limitation: Médecins Sans Frontières and Oxfam are recognizable counterexamples to claims of uniquely religious service, but the passage offers no comparative evidence that their motives lack agendas or that nonreligious aid is ethically superior in practice. Live burden: The negative must defend the principles supporting its preferred humanism, while the affirmative must identify more than mere atheistic compatibility when assigning responsibility for secular harms. Locked score: 79 rewards a precise reply to ideological parity and a concrete charitable counterexample, yet stops short of inferring causal innocence or superiority from organizational association alone."
+            - generic [ref=e719]: No named fallacy
+        - article [ref=e720]:
+          - generic [ref=e721]:
+            - link "Open YouTube source at 136:33" [ref=e723] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=D6K43WSZrmI&t=8193s
+              - text: 136:33
+            - generic [ref=e724]: Historical classification rebuttal
+            - strong [ref=e725]: "76"
+          - paragraph [ref=e726]: Hitchens disputes classifying Nazism as simply secular by citing Hitler’s divine rhetoric, the Vatican treaty, God-invoking oaths, military insignia, and collaboration with Christian institutions.
+          - generic [ref=e727]:
+            - generic [ref=e728]:
+              - button "Critique for Historical classification rebuttal" [ref=e729] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Historical classification rebuttal
+                - generic: "Strongest feature: Hitchens attacks the classification premise with concrete associations—Hitler’s claimed divine mission, a Vatican treaty, compulsory oaths invoking God, military insignia, and incorporation of parts of the Christian right. Principal limitation: Religious language and institutional collaboration complicate the label “secular” but do not by themselves establish that Christian doctrine caused Nazi crimes; his further suggestion that totalitarianism and fanaticism are generally religious greatly overextends contested evidence. Live burden: The negative must trace which beliefs and alliances materially enabled particular policies, while Dembski must likewise show that atheism rather than nationalism or totalitarian ideology drove them. Locked score: 76 credits a directly responsive and evidence-bearing challenge to simplistic classification, but the unresolved distinction between association, opportunistic cooperation, ideological inheritance, and causation prevents the historical case from settling worldview parity."
+            - generic [ref=e730]: No named fallacy
+    - region [ref=e731]:
+      - generic [ref=e732]:
+        - paragraph [ref=e733]: Final read
+        - heading "Overall commentary" [level=2] [ref=e734]
+      - generic [ref=e735]:
+        - article [ref=e736]:
+          - generic [ref=e737]:
+            - generic [ref=e738]: Christian theism · William Dembski
+            - strong [ref=e739]: "71"
+          - heading "Landed" [level=3] [ref=e740]
+          - list [ref=e741]:
+            - listitem [ref=e742]: He carefully limits intelligent design to an architect, avoiding the unsupported leap from biological complexity to Christian revelation or divine goodness.
+            - listitem [ref=e743]: His origin-versus-loss distinction directly exposes why cave-eye degeneration does not by itself explain the construction of integrated visual machinery.
+            - listitem [ref=e744]: He concedes scientific uncertainty and evolutionary scope where appropriate, strengthening his replies by separating modest evidential claims from comprehensive theological conclusions.
+          - heading "Whiffed" [level=3] [ref=e745]
+          - list [ref=e746]:
+            - listitem [ref=e747]: The moral-grounding case largely assumes that objective norms must derive from God without explaining why divine nature is good rather than merely authoritative.
+            - listitem [ref=e748]: The fallen-world defense never shows why an omnipotent God lacked less destructive alternatives, leaving scriptural violence and extensive suffering insufficiently reconciled.
+        - article [ref=e749]:
+          - generic [ref=e750]:
+            - generic [ref=e751]: Atheistic critique · Christopher Hitchens
+            - strong [ref=e752]: "79"
+          - heading "Landed" [level=3] [ref=e753]
+          - list [ref=e754]:
+            - listitem [ref=e755]: He consistently separates evidence for an unspecified designer from the additional burdens of revelation, providence, perfect goodness, and personal divine concern.
+            - listitem [ref=e756]: His atonement objection sharply distinguishes transferable costs from nontransferable agency, forcing the Christian defense to clarify liability, forgiveness, and historical responsibility.
+            - listitem [ref=e757]: He connects suffering, scriptural commands, and cosmic disorder directly to the motion’s goodness claim rather than treating generic disbelief as sufficient.
+          - heading "Whiffed" [level=3] [ref=e758]
+          - list [ref=e759]:
+            - listitem [ref=e760]: The cosmic-waste argument assumes that benevolent creation should resemble human efficiency, but it does not adequately defend that expectation against less anthropocentric theism.
+            - listitem [ref=e761]: His historical and charitable allegations sometimes move from association to causation and employ sweeping rhetoric where comparative documentation would be more persuasive.
+    - region [ref=e762]:
+      - generic [ref=e763]:
+        - generic [ref=e764]:
+          - paragraph [ref=e765]: AI contribution
+          - heading "AI Contribution" [level=2] [ref=e766]
+        - paragraph [ref=e767]: An AI-generated steelman of where each case could go next.
+      - group [ref=e768]:
+        - generic "Explore the AI-generated arguments Strengthened final arguments and new reinforcements for both sides" [ref=e769] [cursor=pointer]:
+          - generic [ref=e770]:
+            - strong [ref=e771]: Explore the AI-generated arguments
+            - generic [ref=e772]: Strengthened final arguments and new reinforcements for both sides
+    - region [ref=e774]:
+      - paragraph [ref=e775]: Keep exploring
+      - heading "Related debates" [level=2] [ref=e776]
+      - paragraph [ref=e777]: Follow the question further, or hear a familiar interlocutor in a different exchange. Suggestions reflect topics and participants, not an endorsement of a position.
+      - generic [ref=e778]:
+        - generic [ref=e779]:
+          - heading "Explore the same topic" [level=3] [ref=e780]
+          - paragraph [ref=e781]: Shares this debate’s primary topic; selected for overlap in its question and section headings.
+          - article [ref=e782]:
+            - generic [ref=e783]:
+              - generic "Debate 200" [ref=e784]: "200"
+              - generic [ref=e785]: Published or updated Aug 29, 2026
+            - heading [level=3] [ref=e786]:
+              - 'link "William Lane Craig vs Victor Stenger: Does God Exist? Debate year 2010" [ref=e787] [cursor=pointer]':
+                - /url: /debate/craig-stenger-god-existence-2010/
+                - text: "William Lane Craig vs Victor Stenger: Does God Exist?"
+                - generic "Debate year 2010" [ref=e788]: "2010"
+            - paragraph [ref=e789]: God and scientific naturalism
+            - generic [ref=e790]:
+              - generic "Interlocutor profiles" [ref=e791]:
+                - link "Open William Lane Craig's interlocutor profile" [ref=e792] [cursor=pointer]:
+                  - /url: /interlocutor/william-lane-craig/
+                - link "Open Victor Stenger's interlocutor profile" [ref=e793] [cursor=pointer]:
+                  - /url: /interlocutor/victor-stenger/
+              - generic "Overall side scores" [ref=e794]:
+                - strong [ref=e795]: "76"
+                - generic [aria-hidden] [ref=e796]: /
+                - strong [ref=e797]: "69"
+        - generic [ref=e798]:
+          - heading "A different matchup" [level=3] [ref=e799]
+          - paragraph [ref=e800]: Another debate featuring Christopher Hitchens, with a different participant lineup.
+          - article [ref=e801]:
+            - generic [ref=e802]:
+              - generic "Debate 03" [ref=e803]: "03"
+              - generic [ref=e804]: Published or updated Aug 21, 2026
+            - heading [level=3] [ref=e805]:
+              - 'link "Christopher Hitchens vs Dinesh D''Souza: Is Religion the Problem? Debate year 2010" [ref=e806] [cursor=pointer]':
+                - /url: /debate/hitchens-dsouza-religion-problem-2010/
+                - text: "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?"
+                - generic "Debate year 2010" [ref=e807]: "2010"
+            - paragraph [ref=e808]: Religion and public reason
+            - generic [ref=e809]:
+              - generic "Interlocutor profiles" [ref=e810]:
+                - link "Open Christopher Hitchens's interlocutor profile" [ref=e811] [cursor=pointer]:
+                  - /url: /interlocutor/christopher-hitchens/
+                - link "Open Dinesh D'Souza's interlocutor profile" [ref=e812] [cursor=pointer]:
+                  - /url: /interlocutor/dinesh-d-souza/
+              - generic "Overall side scores" [ref=e813]:
+                - strong [ref=e814]: "83"
+                - generic [aria-hidden] [ref=e815]: /
+                - strong [ref=e816]: "75"
+        - generic [ref=e817]:
+          - heading "Hear other speakers" [level=3] [ref=e818]
+          - paragraph [ref=e819]: A different set of interlocutors discussing the same primary topic.
+          - article [ref=e820]:
+            - generic [ref=e821]:
+              - generic "Debate 29" [ref=e822]: "29"
+              - generic [ref=e823]: Published or updated Aug 26, 2026
+            - heading [level=3] [ref=e824]:
+              - 'link "Frank Turek vs David Silverman: Which Better Explains Reality? Debate year 2013" [ref=e825] [cursor=pointer]':
+                - /url: /debate/turek-silverman-reality-theism-atheism-2013/
+                - text: "Frank Turek vs David Silverman: Which Better Explains Reality?"
+                - generic "Debate year 2013" [ref=e826]: "2013"
+            - paragraph [ref=e827]: Reality and moral responsibility
+            - generic [ref=e828]:
+              - generic "Interlocutor profiles" [ref=e829]:
+                - link "Open Frank Turek's interlocutor profile" [ref=e830] [cursor=pointer]:
+                  - /url: /interlocutor/frank-turek/
+                - link "Open David Silverman's interlocutor profile" [ref=e831] [cursor=pointer]:
+                  - /url: /interlocutor/david-silverman/
+              - generic "Overall side scores" [ref=e832]:
+                - strong [ref=e833]: "77"
+                - generic [aria-hidden] [ref=e834]: /
+                - strong [ref=e835]: "78"
+  - contentinfo [ref=e836]:
+    - generic [ref=e837]:
+      - link "Slugfester" [ref=e838] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e839]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=e840]:
+      - link "Search" [ref=e841] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e842] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e843] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e844] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=e845] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=e846] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=e847] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=e848] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=e849] [cursor=pointer]:
+        - /url: https://cogbias.site/

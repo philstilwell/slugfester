@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0-narrow-evidence-repair-packet",
+  "shardId": "evidence-05",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "baseline": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/narrow-repairs-1/baseline.json",
+    "sha256": "54067d1837f273c7cc822985c836fed200fd040cb5aca831657fdb498250743e",
+    "bytes": 243565
+  },
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/narrow-repairs-1/authorization.json",
+    "sha256": "5c295ab1167f3b80017cd28984f2603b5040fa6910148007bfd0b13a33ef33f7",
+    "bytes": 2929
+  },
+  "source": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/narrow-repairs-1/evidence-05/source.txt",
+    "sha256": "1024f188ed2fc197b759ec52fd84fa5aa0b2fb30deb64346b1b98de84f43cb41",
+    "bytes": 8692
+  },
+  "sourceEventsFile": {
+    "path": ".assessment-cache/captions/D6K43WSZrmI/events.json",
+    "sha256": "0beb8c791dfb707519576c9a9c24af6690c6ab3419d409a949eb31dfb893019d",
+    "bytes": 393586
+  },
+  "outputPath": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-263-worktree/docs/assessment-production/standalone-debates-v1/debate-263/inventory/narrow-repairs-1/evidence-05/output.json",
+  "checkerPath": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-263-worktree/tmp-standalone-check-narrow-repair.mjs",
+  "moves": [
+    {
+      "moveId": "scripture-history-evidence-reply",
+      "sectionId": "evil-scripture-and-providence",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "claimSummary": "The archaeological and textual evidence cited does not vindicate the biblical history or uniquely secure Jesus's divine claims.",
+      "reasonSummary": "Israeli archaeologists with strong motive and access allegedly found no Exodus trail, while Gospel accounts conflict and resemble secondhand reports available for other ancient figures.",
+      "inferenceSummary": {
+        "premise": "Israeli archaeologists with strong motive and access allegedly found no Exodus trail, while Gospel accounts conflict and resemble secondhand reports available for other ancient figures.",
+        "inference": "If israeli archaeologists with strong motive and access allegedly found no Exodus trail, while Gospel accounts conflict and resemble secondhand reports available for other ancient figures. then the stated claim materially affects the assigned burden.",
+        "conclusion": "Disputing a categorical denial of Jesus's existence does not supply evidence for miracles, resurrection, or revelation."
+      },
+      "importance": 2,
+      "importanceRationale": "Answers Dembski's historical-evidence criticism while distinguishing existence from divinity.",
+      "burdenContact": {
+        "bridgeId": "con-good-god-motion",
+        "tier": "motion",
+        "rationale": "This move directly bears on Undermine the claim that a good God exists."
+      },
+      "respondsToIds": [
+        "design-reaches-architect-only"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "design-reaches-architect-only",
+          "component": "The target's central premise, inference, or burden consequence.",
+          "rationale": "The source passage expressly challenges or qualifies design reaches architect only."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 1480,
+        "endEvent": 1556,
+        "startMs": 3456920,
+        "endMs": 3653240
+      },
+      "quoteEligibleExactSpans": [
+        "they couldn't find a single trace of anything",
+        "the four gospels contradict each other"
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "This passage occurs within a named, long primary-speaker turn or a clearly handed-off answer with stable first-person continuity.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The exact quotation avoids evident ASR garbles and the surrounding span preserves the complete claim-and-reason unit."
+    },
+    {
+      "moveId": "loss-does-not-explain-origin",
+      "sectionId": "evolution-and-scientific-method",
+      "side": "pro",
+      "speaker": "William Dembski",
+      "moveKind": "reply",
+      "claimSummary": "The loss of a cave animal's eye is much easier than the origin of an eye and therefore does not answer the design problem.",
+      "reasonSummary": "Disabling an existing gene can remove a structure in darkness, whereas producing an integrated visual system is the disputed creative step.",
+      "inferenceSummary": {
+        "premise": "Disabling an existing gene can remove a structure in darkness, whereas producing an integrated visual system is the disputed creative step.",
+        "inference": "If disabling an existing gene can remove a structure in darkness, whereas producing an integrated visual system is the disputed creative step. then the stated claim materially affects the assigned burden.",
+        "conclusion": "A case of degeneration cannot by itself establish the unguided construction of complex organs."
+      },
+      "importance": 3,
+      "importanceRationale": "Directly distinguishes the evidence offered by Hitchens from the origin question Dembski presses.",
+      "burdenContact": {
+        "bridgeId": "pro-design-evidence",
+        "tier": "central",
+        "rationale": "This move directly bears on Show that features of nature are better explained by intelligence than unguided processes."
+      },
+      "respondsToIds": [
+        "eye-adaptation-evidence"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "eye-adaptation-evidence",
+          "component": "The target's central premise, inference, or burden consequence.",
+          "rationale": "The source passage expressly challenges or qualifies eye adaptation evidence."
+        }
+      ],
+      "sourceSpan": {
+        "startEvent": 1601,
+        "endEvent": 1669,
+        "startMs": 3764640,
+        "endMs": 3937480
+      },
+      "quoteEligibleExactSpans": [
+        "it's a very different thing losing an eye and gaining an eye"
+      ],
+      "attributionConfidence": "high",
+      "attributionRationale": "This passage occurs within a named, long primary-speaker turn or a clearly handed-off answer with stable first-person continuity.",
+      "materialWordingConfidence": "high",
+      "materialWordingRationale": "The exact quotation avoids evident ASR garbles and the surrounding span preserves the complete claim-and-reason unit."
+    }
+  ],
+  "instructions": [
+    "Read this complete packet and the complete assigned source.txt before drafting. This is a narrow repair of at most two moves, not an inventory or assessment. Full-source discovery was already performed; do not claim a new full-debate read. Read source in separate calls of at most 200 lines; never combine output chunks in one functions.exec call. Re-read any truncated required input before submitting.",
+    "Keep every supplied semantic field immutable. Select the smallest contiguous event range inside the original range that supports the complete unchanged claim, every load-bearing reason/example in reasonSummary, and every material qualification or concession in inferenceSummary.conclusion. Do not stitch separated excerpts or silently omit a premise to meet 2200 characters. If the unchanged proposition cannot be supported, report the exact conflict instead of rewriting it.",
+    "Remove introductions, jokes, book promotions, repeated conclusions and unrelated following arguments where the endpoints permit. For a range exceeding 2200 characters, identify the exact separated source components that require retaining its first and last events and the intervening text. A long range is allowed only when genuinely necessary. Do not wrap the original reasonSummary in a generic claim that shortening loses evidence.",
+    "Provide a support map: one claim entry, one or more reason entries covering every named load-bearing component, and one conclusion entry. Every entry includes a short source-specific description, firstEvent, lastEvent, and an exact 3..25-word anchor from those events. Anchors must prove the relevant component, not just be adjacent words. All support-map ranges must be inside your chosen evidence range.",
+    "Give source-specific endpoint explanations and describe exactly which original prefix/suffix was removed and why it is dispensable. If unchanged, explain the indispensable endpoint content. Do not include arbitrary 20-event buffer windows. Cite event numbers, not generic references to context.",
+    "Supply 1..2 exact 3..18-word quotation candidates within the retained excerpt. Preserve fillers, repetitions and case. Prefer clear ungarbled wording. Quotation candidates may change only to fit the corrected source boundaries or avoid a caption garble; they must not invent participant wording.",
+    "Run the provided read-only checker on the full in-memory draft BEFORE final submission. It checks source exactness, anchors, bounds, keys and immutable identity. Fix draft/checking errors in memory before one final apply_patch write. Do not submit a known-invalid draft. The controller separately reviews semantic minimality; a machine pass alone is insufficient.",
+    "Write only the absolute outputPath, one final apply_patch submission; do not overwrite or write any temporary file. No Git changes, network, other debates, scores, tags, additional agents, credentials or paid APIs. For shells use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY. Return a failure message instead of changing immutable substance."
+  ],
+  "outputSchema": {
+    "shardId": "evidence-05",
+    "debateNumber": "263",
+    "debateId": "dembski-hitchens-good-god-existence-2010",
+    "repairs": "Exactly one per assigned move, in order: {moveId,startEvent,endEvent,quoteEligibleExactSpans,supportMap:[{kind:\"claim\"|\"reason\"|\"conclusion\",description,firstEvent,lastEvent,anchor}],boundaryJustification:{startWhy,endWhy,removedPrefix,removedSuffix},longerCompleteArgumentRationale}. All explanation leaves strings. Longer rationale empty when <=2200 characters.",
+    "readingAuthentication": "{sourceReadCompletely:true,readRanges:[actual source file line ranges],sourceSha256:packet.source.sha256,limitations:[honest caption limitations]}"
+  }
+}

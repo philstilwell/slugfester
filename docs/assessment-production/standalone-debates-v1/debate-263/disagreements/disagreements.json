@@ -1,0 +1,729 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "providential-history-unfalsifiable:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "providential-history-unfalsifiable",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "evolution-evidence-challenges:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "evolution-evidence-challenges",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "atheism-darwin-dependence:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "atheism-darwin-dependence",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 60,
+          "rationale": "Atheism excludes divine design, but Dembski treats that constraint as requiring one Darwinian theory, omitting other naturalistic origin accounts from the dilemma."
+        },
+        "option-b": {
+          "value": 62,
+          "rationale": "Materialism excludes divine guidance, but the inference narrows all atheistic origins accounts to one Darwinian theory and conflates evolution with Darwinism."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-darwin-dependence:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "atheism-darwin-dependence",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 7,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 48,
+          "rationale": "The move gives no evidence that every atheist must accept Darwinism and substitutes assertions about what Hitchens needs or cannot contemplate for support."
+        },
+        "option-b": {
+          "value": 55,
+          "rationale": "The move gives a conceptual constraint, not evidence that Darwinism is atheism’s sole theory, and surveys no naturalistic alternatives."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-darwin-dependence:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "atheism-darwin-dependence",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 66,
+          "rationale": "It engages Hitchens’s Darwin-based no-need-of-God claim, but attacks psychological dependence more than the biological evidence offered for natural descent."
+        },
+        "option-b": {
+          "value": 77,
+          "rationale": "It confronts Hitchens’s use of evolution to remove God, but attacks alleged dependence more than the natural explanation’s merits."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-darwin-dependence:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "atheism-darwin-dependence",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "The constraint is relevant to comparative burdens, yet restricting an opponent’s options does not positively show that design better explains biological features."
+        },
+        "option-b": {
+          "value": 70,
+          "rationale": "Worldview dependence would reveal motivational pressure, yet would not show Darwinism false or make design the better biological explanation."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-darwin-dependence:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "atheism-darwin-dependence",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 69,
+          "rationale": "The contrast is intelligible, but “Darwinism,” “evolution,” and any purposeless natural origin account slide together without stable definition."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "The option asymmetry is clear, but Darwinism, materialistic evolution, and evolution are used too interchangeably for the categorical conclusion."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-darwin-dependence:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "atheism-darwin-dependence",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 7,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 44,
+          "rationale": "Calling Hitchens trapped in an atheist straitjacket overstates both his stated position and the available naturalistic alternatives."
+        },
+        "option-b": {
+          "value": 53,
+          "rationale": "Calling atheism a straightjacket imputes rigidity while overlooking alternative mechanisms and possible agnosticism about a complete origins account."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-predates-darwin:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "atheism-predates-darwin",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "Historical counterexamples refute literal historical dependence and support logical separability, though pre-Darwin atheism alone does not provide a modern naturalistic origin account."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "Pre-Darwin atheism refutes historical dependence, but does not refute the logical claim that contemporary atheism needs a purposeless origins mechanism."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-predates-darwin:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "atheism-predates-darwin",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "Hitchens names ancient atomists and Newton’s non-evolutionary natural philosophy, providing concrete counterexamples, though the extended Newton material is indirect."
+        },
+        "option-b": {
+          "value": 75,
+          "rationale": "Named atomists support historical priority, though the long Newton discussion is digressive and does little to prove logical independence."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-predates-darwin:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "atheism-predates-darwin",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 16,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 84,
+          "rationale": "He immediately denies that atheists must be evolutionists and supplies chronological and conceptual counterexamples to the claimed necessary dependence."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "Hitchens denies atheists must be evolutionists, but leaves Dembski’s central materialist self-organization constraint largely unanswered."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-predates-darwin:relevanceBurden",
+      "kind": "move-dimension",
+      "moveId": "atheism-predates-darwin",
+      "field": "relevanceBurden",
+      "trigger": {
+        "dimensionDelta": 4,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "Breaking the alleged entailment protects the con route from burden transfer, but does not itself supply the required naturalistic biological explanation."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "Historical separation weakens Dembski’s linkage, yet supplies no naturalistic biological explanation and only partly serves the locked burden."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-predates-darwin:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "atheism-predates-darwin",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 76,
+          "rationale": "The thesis and examples are recoverable, though the digression through alchemy and religious hostility makes the logical conclusion less focused."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "The thesis and examples are clear, but discussion of scientist terminology, alchemy, and church hostility blurs the exact logical issue."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-predates-darwin:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "atheism-predates-darwin",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 2,
+        "moveScoreDelta": 6,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 72,
+          "rationale": "He distinguishes atheism from evolution fairly, but the ensuing broad claim about organized religion’s hostility is insufficiently qualified."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "The historical denial is proportionate, but Hitchens pivots to organized religion’s hostility rather than granting Dembski’s narrower conceptual concern."
+        }
+      }
+    },
+    {
+      "disputeId": "eye-adaptation-evidence:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "eye-adaptation-evidence",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 14,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 77,
+          "rationale": "He answers the eye challenge with gain-and-loss cases and non-intentional selection, but not Dembski’s embryology, neural-processing, or model-tethering objections."
+        },
+        "option-b": {
+          "value": 63,
+          "rationale": "Hitchens supports observable adaptation, but Dembski challenged eye construction, whereas organ loss addresses degeneration and selection more directly."
+        }
+      }
+    },
+    {
+      "disputeId": "eye-adaptation-evidence:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "eye-adaptation-evidence",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "science-self-corrects-and-works:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "science-self-corrects-and-works",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 73,
+          "rationale": "The dogma-evidence contrast is vivid, though genetics, evolution, vaccine development, and all medicine are bundled too loosely."
+        },
+        "option-b": {
+          "value": 84,
+          "rationale": "The disagreement-dogma-evidence contrast is explicit, with only the absolute medicine claim introducing material overbreadth."
+        }
+      }
+    },
+    {
+      "disputeId": "atheism-lacks-objective-morality:logicalCoherence",
+      "kind": "move-dimension",
+      "moveId": "atheism-lacks-objective-morality",
+      "field": "logicalCoherence",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 63,
+          "rationale": "The descriptive-versus-normative distinction is intelligible, but the argument treats atheism as entailing reductionism and assumes without demonstration that no secular objective standard can exist."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "The genealogy-versus-objectivity distinction is coherent, but Dembski slides from naturalism explaining moral belief to naturalism necessarily defeating every objective moral theory, which is not established by the examples."
+        }
+      }
+    },
+    {
+      "disputeId": "worldviews-have-moral-consequences:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "worldviews-have-moral-consequences",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "incarnation-solidarity-answer:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "incarnation-solidarity-answer",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 58,
+          "rationale": "Dembski supplies a concrete missionary analogy, crucifixion, and personal conversion testimony, but the crucial incarnation and divine-identity premises are asserted rather than publicly established; autobiography supports existential force, not the doctrine’s truth."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "Dembski supplies the crucifixion and a concrete missionary analogy as warrants for experiential solidarity, yet the divine identity of Jesus and salvific meaning of the cross remain asserted rather than publicly defended here."
+        }
+      }
+    },
+    {
+      "disputeId": "fossil-record-limits-common-descent:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "fossil-record-limits-common-descent",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "cosmic-waste-and-god-projection:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "cosmic-waste-and-god-projection",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "mother-teresa-defense:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "mother-teresa-defense",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 12,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 57,
+          "rationale": "The anecdote answers the narrow accusation that Mother Teresa accepted unavailable elite care, but it does not address Hitchens’s more consequential claims about suffering, donations, contraception, or institutional effects."
+        },
+        "option-b": {
+          "value": 69,
+          "rationale": "The move answers the charge that she accepted privileged care, yet it does not address Hitchens’s broader claims about suffering, donations, contraception, or poverty policy."
+        }
+      }
+    },
+    {
+      "disputeId": "mother-teresa-poverty-counter:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "mother-teresa-poverty-counter",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 57,
+          "rationale": "He supplies specific allegations involving Duvalier, Keating, convents, and reproductive policy, but offers no sourcing in the exchange and asserts universal poverty effects and causal outcomes far beyond the shown evidence."
+        },
+        "option-b": {
+          "value": 68,
+          "rationale": "He offers specific allegations about donors, convents, contraception, and village development, but the sweeping claim that empowerment works every time and his net-harm conclusion lack documentation here."
+        }
+      }
+    },
+    {
+      "disputeId": "nazism-not-secular-counter:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "nazism-not-secular-counter",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 64,
+          "rationale": "Hitchens cites Mein Kampf, the Vatican treaty, compulsory oaths, and belt inscriptions as checkable historical particulars, but their selection does not resolve competing evidence about Nazi ideology or causal motivation."
+        },
+        "option-b": {
+          "value": 74,
+          "rationale": "Hitchens supplies multiple specific historical indicators—Mein Kampf, the Vatican treaty, compulsory oaths, and belt buckles—yet their accuracy and causal significance are not independently supported here."
+        }
+      }
+    },
+    {
+      "disputeId": "certainty-undermines-inquiry:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "certainty-undermines-inquiry",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 68,
+          "rationale": "The closing reframes Dembski’s offered salvation and creator relationship as epistemic authority, engaging the freedom concern and the already-dead claim. It largely bypasses Dembski’s liability/history distinction and his explicit admission of theological uncertainty."
+        },
+        "option-b": {
+          "value": 78,
+          "rationale": "He answers Dembski’s salvation offer and acknowledged harsh exclusivity by reframing promised security as an intellectual cost, though he does not engage the liability/history distinction that formed Dembski’s strongest atonement reply."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Dembski made contact with every pro burden across the debate, but no further debate-wide adjustment is eligible. His design case expressly stopped at an architect, his objective-goodness case depended on defining God as the standard, and his fallen-world reply did not independently resolve the concrete scriptural-violence challenge. Those completion limits and his stronger replies are already represented by the identified moves, so another deduction or bonus would count the same performance twice.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-good-god-motion",
+              "pro-design-evidence",
+              "pro-objective-goodness",
+              "pro-evil-reconciliation",
+              "pro-christian-specificity",
+              "pro-ideology-parity"
+            ],
+            "completionCriterion": "The pro side needed a defensible public route to a good God while answering naturalistic alternatives, objective-morality challenges, evil, Christian specificity, and ideology parity.",
+            "relatedMoveIds": [
+              "specified-complexity-design-inference",
+              "design-reaches-architect-only",
+              "god-as-goodness-standard",
+              "fallen-world-hard-choices",
+              "incarnation-solidarity-answer",
+              "secular-atrocity-parity"
+            ],
+            "distinctConsequence": "No additional global consequence remains after the selected moves record both the architect-only concession and the incomplete answers to evil and Christian specificity.",
+            "alreadyCapturedBy": [
+              "design-reaches-architect-only:relevanceBurden",
+              "god-as-goodness-standard:logicalCoherence",
+              "fallen-world-hard-choices:responsiveness",
+              "incarnation-solidarity-answer:relevanceBurden",
+              "secular-atrocity-parity:calibrationCharity"
+            ],
+            "counterfactual": "Without those move-level treatments, a negative adjustment could reflect the unclosed gap from design to a good Christian God; here that would duplicate already captured defects."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide correction is warranted. Dembski addressed design, moral grounding, evil, Christian specificity, and ideological parity, but his explicit architect-only limit and unresolved discomfort over hell and exclusivity materially constrain completion. Those gains and gaps already belong to the identified moves and their scored dimensions; adjusting again would double-count them.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "pro-good-god-motion",
+              "pro-design-evidence",
+              "pro-objective-goodness",
+              "pro-evil-reconciliation",
+              "pro-christian-specificity",
+              "pro-ideology-parity"
+            ],
+            "completionCriterion": "A nonzero correction would require a debate-wide completion effect on showing a good God that is not represented by the selected existence, morality, evil, doctrine, and ideology moves.",
+            "relatedMoveIds": [
+              "specified-complexity-design-inference",
+              "design-reaches-architect-only",
+              "god-as-goodness-standard",
+              "atheism-lacks-objective-morality",
+              "fallen-world-hard-choices",
+              "incarnation-solidarity-answer",
+              "forgiveness-pays-debt-not-history",
+              "secular-atrocity-parity"
+            ],
+            "distinctConsequence": "The whole-debate record shows broad burden contact but no additional consequence independent of the selected moves: the architect concession and unresolved theological tensions delimit the motion case within those moves.",
+            "alreadyCapturedBy": [
+              "specified-complexity-design-inference:relevanceBurden",
+              "design-reaches-architect-only:relevanceBurden",
+              "god-as-goodness-standard:logicalCoherence",
+              "fallen-world-hard-choices:responsiveness",
+              "incarnation-solidarity-answer:responsiveness",
+              "forgiveness-pays-debt-not-history:calibrationCharity",
+              "secular-atrocity-parity:responsiveness"
+            ],
+            "counterfactual": "Without the selected-move scoring, the architect-only concession and incomplete reconciliation of scriptural violence, hell, and exclusivity could reduce burden completion; with those moves scored, another adjustment duplicates the same effects."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "Hitchens repeatedly advanced the critical motion burden through cosmic disorder, naturalistic explanation, scriptural violence, moral autonomy, doctrine, and institutional authority. He did not need to prove a contrary worldview, and his more ambitious naturalistic claims remained locally contestable. The breadth and residual gaps are already carried by the actual moves, leaving no distinct debate-wide completion effect that warrants an extra bonus or penalty.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-good-god-motion",
+              "con-naturalistic-explanation",
+              "con-evil-objection",
+              "con-moral-autonomy",
+              "con-christian-doctrine-critique",
+              "con-authority-and-ideology"
+            ],
+            "completionCriterion": "The con side needed to undermine the offered good-God case by testing its evidence, natural alternatives, evil, non-divine morality, Christian doctrine, and authority consequences.",
+            "relatedMoveIds": [
+              "cosmic-disorder-objection",
+              "eye-adaptation-evidence",
+              "naturalistic-evil-and-morality",
+              "biblical-genocide-objection",
+              "atonement-cannot-remove-responsibility",
+              "certainty-undermines-inquiry"
+            ],
+            "distinctConsequence": "No unrepresented debate-wide consequence remains: the critic's cumulative pressure is the combined effect of selected objections rather than a separate completion achievement.",
+            "alreadyCapturedBy": [
+              "cosmic-disorder-objection:relevanceBurden",
+              "eye-adaptation-evidence:evidenceWarrant",
+              "naturalistic-evil-and-morality:logicalCoherence",
+              "biblical-genocide-objection:responsiveness",
+              "atonement-cannot-remove-responsibility:relevanceBurden",
+              "certainty-undermines-inquiry:calibrationCharity"
+            ],
+            "counterfactual": "Absent the selected objection moves, a completion bonus might recognize sustained coverage of all critical burdens; applying it here would reward the same cumulative objections twice."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide correction is warranted. Hitchens repeatedly attacked the existence-and-goodness case through cosmic disorder, naturalistic explanation, scriptural violence, atonement, and authority, while offering a critical rather than contrary-theistic burden. The cumulative force and its limits are already represented in those moves, so an extra adjustment would double-count coverage and responsiveness.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": true,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [
+              "con-good-god-motion",
+              "con-naturalistic-explanation",
+              "con-evil-objection",
+              "con-moral-autonomy",
+              "con-christian-doctrine-critique",
+              "con-authority-and-ideology"
+            ],
+            "completionCriterion": "A nonzero correction would require a distinct debate-wide success or failure in undermining the offered good-God case beyond the selected cosmology, evolution, morality, evil, doctrine, and authority moves.",
+            "relatedMoveIds": [
+              "deism-theism-distinction",
+              "cosmic-waste-and-god-projection",
+              "science-self-corrects-and-works",
+              "naturalistic-evil-and-morality",
+              "biblical-genocide-objection",
+              "rebellion-theology-is-nihilistic",
+              "atonement-cannot-remove-responsibility",
+              "certainty-undermines-inquiry"
+            ],
+            "distinctConsequence": "The record supplies a sustained cumulative critique, but its debate-wide effect is the combined consequence of already selected challenges rather than a new unscored burden-completion fact.",
+            "alreadyCapturedBy": [
+              "deism-theism-distinction:relevanceBurden",
+              "cosmic-waste-and-god-projection:evidenceWarrant",
+              "science-self-corrects-and-works:responsiveness",
+              "naturalistic-evil-and-morality:relevanceBurden",
+              "biblical-genocide-objection:responsiveness",
+              "rebellion-theology-is-nihilistic:responsiveness",
+              "atonement-cannot-remove-responsibility:logicalCoherence",
+              "certainty-undermines-inquiry:relevanceBurden"
+            ],
+            "counterfactual": "Without move-level treatment, the cumulative convergence of natural, moral, scriptural, and doctrinal objections could merit a completion correction; because each route is already selected and scored, zero avoids counting it twice."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 40,
+    "disputesExtracted": 28,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/inventory.json",
+      "sha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/judgments/pass-a/output.json",
+      "sha256": "ee12ecb7542c68f5e8dc247bb953b995d5f84812b1974c063a1a64ea532566a2"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/judgments/pass-b/output.json",
+      "sha256": "38cda9a21e85f6553abb103c701f8937c6be64e526e10d4e9d54d5d053575699"
+    }
+  }
+}

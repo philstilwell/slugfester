@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0-standalone-rhetorical-review-execution",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": {
+    "existingTagsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true,
+    "scoresUnavailable": true,
+    "forkTurns": "none"
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/catalog-snapshot.json",
+    "sha256": "c90d59cbbcf31b98daff980e1a24831eefbce663442f795d66c2433f45eb6b46",
+    "bytes": 4611
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "d28d7661792f4dc938144ec16820b3a577e79d8f38f7848161af59e06be1a6b7",
+    "bytes": 210175
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "d28d7661792f4dc938144ec16820b3a577e79d8f38f7848161af59e06be1a6b7",
+        "bytes": 210175
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-a/output.json",
+        "sha256": "3fea9626bb4f505dece55499cc5101b29420705d14efe5442373b0ac7db7c858",
+        "bytes": 80335
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-a/execution.json",
+        "sha256": "6192636e9dd0c83999746b391fd9c19ed25ac83402efcd2101f6bae270558ce9",
+        "bytes": 38511
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "blind-review-b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "d28d7661792f4dc938144ec16820b3a577e79d8f38f7848161af59e06be1a6b7",
+        "bytes": 210175
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-b/replacement-1/output.json",
+        "sha256": "0e1cc48ad9ae919c1fc285a52e10fc8a52fb6bfac0c9e5ee25d282de34069330",
+        "bytes": 52525
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-b/replacement-1/execution.json",
+        "sha256": "3642a218dc10332f9ce09e6884ed23898da323e550fee14b4ef443fae26c8d0b",
+        "bytes": 26246
+      },
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/adjudication/input.json",
+        "sha256": "a2e9a44fa172558f5a661715d32b23575876c087f3fe10904b189ba60de4ee77",
+        "bytes": 43199
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/adjudication/output.json",
+        "sha256": "0606cce134bb079621433e19a3065f0006f70b10360f31e5e62ea84ed97a61c7",
+        "bytes": 29420
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/adjudication/execution.json",
+        "sha256": "13f7232dbc975c3b373a7bad26d37cf3b3641dd37969225e14aee1b75b34c0c7",
+        "bytes": 45975
+      },
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "controllerDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/controller-definition-check.json",
+    "sha256": "00f041425e729148b9a178a8318b837d674423e2bda88b21525a1d2794b76a89",
+    "bytes": 26941
+  },
+  "audit": {
+    "blindReviews": 2,
+    "anonymousAdjudicators": 1,
+    "retries": 0,
+    "judgmentChanges": 0,
+    "scoreChanges": 0,
+    "critiqueChanges": 0,
+    "completeUnionCount": 43,
+    "authorizedReplacementContexts": 1,
+    "attemptScope": "One submission in each accepted isolated context; failed earlier contexts remain preserved and explicitly routed."
+  },
+  "directIncrementalCostUsd": 0,
+  "effectivePassRouting": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/effective-passes.json",
+    "sha256": "89982cfc372ab1e23ff0f5410875b889b9358eae84b9c0391a98d9e1f2bd2c48",
+    "bytes": 724
+  },
+  "authorizedReplacements": [
+    {
+      "pass": "pass-b",
+      "failedOriginalOutput": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-b/output.json",
+        "sha256": "3a4cd6b559a1283f5dabe1f2ce9d53e9f521257d3e473ee15076475b2ea687fa",
+        "bytes": 81822
+      },
+      "failedOriginalReview": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-b/controller-review.json",
+        "sha256": "6759ae800efc6836d4cae5836681f114372716539881964133b95aed211cbb91",
+        "bytes": 1693
+      },
+      "replacementDirectory": "pass-b/replacement-1",
+      "authorization": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-b/replacement-1/authorization.json",
+        "sha256": "0f333c6db58bb22c77d8d080713f6f80a9338304967ab185f34a6974b6b37143",
+        "bytes": 1991
+      },
+      "recoveryCompletion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/rhetorical-tag-review-1/pass-b/replacement-1/recovery-completion.json",
+        "sha256": "c58d87bb00610a57fdd1f4c8e5039fc05144aaf33848d62711716f40c86a82fe",
+        "bytes": 1056
+      }
+    }
+  ]
+}

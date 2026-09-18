@@ -12467,5 +12467,58 @@ export const debateSummaries = [
         "title": "Flourishing, meaning, and measurement"
       }
     ]
+  },
+  {
+    "id": "dembski-hitchens-good-god-existence-2010",
+    "number": "263",
+    "title": "William Dembski vs Christopher Hitchens — Does a good God exist?",
+    "year": 2010,
+    "label": "Existence and goodness of God",
+    "date": "2026-09-18",
+    "duration": "2 hr 26 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=D6K43WSZrmI",
+    "motion": "Does a good God exist?",
+    "summary": "Hitchens wins by exposing the gap between design and a good providential God, while Dembski offers careful limits and several effective scientific replies.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "William Dembski",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheistic critique",
+        "speaker": "Christopher Hitchens",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 71,
+      "con": 79,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Design inference and evidential reach"
+      },
+      {
+        "title": "Cosmos, providence, and human significance"
+      },
+      {
+        "title": "Evolution and scientific method"
+      },
+      {
+        "title": "Morality, altruism, and human value"
+      },
+      {
+        "title": "Evil, scripture, and fallen-world theodicy"
+      },
+      {
+        "title": "Incarnation, atonement, and freedom"
+      },
+      {
+        "title": "Ideology, charity, and public consequences"
+      }
+    ]
   }
 ];

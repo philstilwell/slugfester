@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-17T16:59:06.739Z",
+  "userAuthorization": "User supplied this URL under the standing one-debate assessed-publication workflow and requested few basic approvals. Required isolated reviews, ordinary bounded repairs, and quality-gated topic-branch publication are authorized. The standing primary-speaker exception applies only if independently confirmed; no exhausted-attempt replacement or broader scope exception is authorized.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-263",
+    "head": "28b23c096f139bc36e75760b6b006edc198be555",
+    "localMain": "28b23c096f139bc36e75760b6b006edc198be555",
+    "originMain": "28b23c096f139bc36e75760b6b006edc198be555",
+    "clean": true,
+    "isolationReason": "New dedicated worktree created from synchronized clean main; unrelated tracked and untracked work remains untouched."
+  },
+  "identity": {
+    "debateNumber": "263",
+    "debateId": "dembski-hitchens-good-god-existence-2010",
+    "videoId": "D6K43WSZrmI",
+    "canonicalUrl": "https://www.youtube.com/watch?v=D6K43WSZrmI",
+    "sourceTitle": "Christopher Hitchens VS. William Dembski FULL",
+    "eventYear": 2010,
+    "eventDate": "2010-11-18",
+    "title": "William Dembski vs Christopher Hitchens — Does a good God exist? (2010)",
+    "label": "Existence and goodness of God",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does a good God exist?",
+    "pro": {
+      "speaker": "William Dembski",
+      "position": "Christian theism"
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic critique"
+    },
+    "moderator": "Event moderator (name not established)",
+    "dyadic": true,
+    "primarySpeakerScopeException": {
+      "enabled": true,
+      "protocolId": "primary-speaker-scope-exception-v1",
+      "primarySpeakers": {
+        "pro": "William Dembski",
+        "con": "Christopher Hitchens"
+      },
+      "nonPrimarySpeakers": [
+        {
+          "name": "Dan Panetti and Caleb (opening hosts)",
+          "role": "Opening institutional framing; conservative shared interval"
+        },
+        {
+          "name": "Event moderator (name not established)",
+          "role": "Logistics, audience questions, and bounded church/ministry promotion"
+        },
+        {
+          "name": "Larry Taylor",
+          "role": "School head giving closing testimony and prayer"
+        }
+      ],
+      "maximumHostAdvocacyShare": 0.05,
+      "assessedWindow": {
+        "startMs": 87079,
+        "endMs": 8736520,
+        "durationMs": 8649441
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "opening-worldview-training",
+          "kind": "host-advocacy",
+          "speaker": "Dan Panetti and Caleb (opening hosts)",
+          "startMs": 96320,
+          "endMs": 199959,
+          "durationMs": 103639,
+          "summary": "The opening hosts frame the event as preparation to engage atheists, compare worldview training to football practice, and endorse scripture and spiritual preparation for this life and the next. The whole continuous opening exchange is conservatively excluded.",
+          "burdenImpactRationale": "This is Christian institutional framing, not an additional account of divine existence or goodness. Its scriptural authority and afterlife assumptions are independently defended by Dembski at 1:29:24–1:31:01 and 1:46:03–1:50:09. Neither primary speaker directly answers this pre-event exchange.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "church-scripture-invitation",
+          "kind": "host-advocacy",
+          "speaker": "Event moderator (name not established)",
+          "startMs": 435000,
+          "endMs": 454759,
+          "durationMs": 19759,
+          "summary": "The moderator invites listeners to Prestonwood as a place to search for truth using scripture as a guide. The mixed transition into biographies is conservatively included.",
+          "burdenImpactRationale": "The invitation supplies no independent motion argument and repeats the Christian scriptural framework Dembski independently adopts. It is excluded from both sides’ evidence, with no directly dependent primary response.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "closing-ministry-promotion",
+          "kind": "host-advocacy",
+          "speaker": "Event moderator (name not established)",
+          "startMs": 8489319,
+          "endMs": 8523120,
+          "durationMs": 33801,
+          "summary": "After both closing statements, the moderator recommends Probe Ministries and its resources for answering questions arising from the debate. The complete promotional passage is conservatively excluded.",
+          "burdenImpactRationale": "This institutional recommendation supplies no substantive answer or unique argument for the motion. It adds no third position, occurs after the primary exchange ends, and receives no response from either debater.",
+          "uniqueLoadBearingArgument": false
+        },
+        {
+          "intervalId": "closing-testimony-prayer",
+          "kind": "host-advocacy",
+          "speaker": "Larry Taylor",
+          "startMs": 8595240,
+          "endMs": 8736520,
+          "durationMs": 141280,
+          "summary": "The school head recounts his preference for biblical truth over atheism and closes with a Christian prayer affirming God’s revelation, Christ’s sacrifice, and eternal life. This entire testimony and prayer is excluded.",
+          "burdenImpactRationale": "Personal conviction, scriptural truth and salvation in Christ repeat Dembski’s independently stated conversion and incarnation case at 1:46:03–1:50:09 and forgiveness defense at 1:54:52–1:57:59. The closing prayer offers no additional public premise or unique motion argument and is not answered by either primary speaker.",
+          "uniqueLoadBearingArgument": false
+        }
+      ]
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-263",
+    "docs/assessment-ledgers/dembski-hitchens-good-god-existence-2010.json",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/interlocutors.js",
+    "src/data/interlocutor-bios.js",
+    "output/playwright/standalone-debate-v1/debate-263",
+    "generated site output belonging to this addition"
+  ]
+}

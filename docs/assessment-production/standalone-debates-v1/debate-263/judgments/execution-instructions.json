@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "1.0-isolated-primary-execution-instructions",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+  "purpose": "One complete independent primary judgment, with an independent source-reliability check. No aggregate scores, winner, tags or publication prose.",
+  "inputFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/judgments/judgment-packet.json",
+      "sha256": "95d1e7aa2dbe2fb28143f2d8098d1129b3c698a3075a064dabfd361ca026f7f2",
+      "bytes": 4883
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/inventory.json",
+      "sha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+      "bytes": 214666
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/source/source-lock.json",
+      "sha256": "d40dd3a7f4cf4315b19cd97b29ab326479ed0c9c758c55f46b44f894df3170c2",
+      "bytes": 11411
+    },
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/indexed-transcript.txt",
+      "sha256": "67bbab22848c39a15d6d0830ef38d370aa120e36353407a6cf53a2a910ab50a6",
+      "bytes": 209151
+    },
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/events.json",
+      "sha256": "0beb8c791dfb707519576c9a9c24af6690c6ab3419d409a949eb31dfb893019d",
+      "bytes": 393586
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-workflow-v2.1.md",
+      "sha256": "68d3e5ed9be0cb91f06fdbafc50d1da8b7de4308d339cf161a7aea0b8198d10f",
+      "bytes": 8857
+    },
+    {
+      "path": "docs/assessment-workflow-v4.2.21.17.41.md",
+      "sha256": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+      "bytes": 2669
+    },
+    {
+      "path": "docs/assessment-production/standalone-primary-speaker-scope-exception-v1.md",
+      "sha256": "676fa90a8e934503ca2e5ae40ee900672834c72f7a30be61454815b7eb8569dd",
+      "bytes": 2985
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  ],
+  "proceduralSkillFiles": [
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/SKILL.md"
+  ],
+  "completeSourceEventCount": 3657,
+  "expectedMoveIds": [
+    "deism-theism-distinction",
+    "cosmic-disorder-objection",
+    "providential-history-unfalsifiable",
+    "extinction-undercuts-design",
+    "theocracy-authoritarian-cost",
+    "evolution-evidence-challenges",
+    "atheism-darwin-dependence",
+    "specified-complexity-design-inference",
+    "design-reaches-architect-only",
+    "atheism-predates-darwin",
+    "eye-adaptation-evidence",
+    "scripture-history-evidence-reply",
+    "science-self-corrects-and-works",
+    "loss-does-not-explain-origin",
+    "microevolution-scope-limit",
+    "god-as-goodness-standard",
+    "atheism-lacks-objective-morality",
+    "worldviews-have-moral-consequences",
+    "unfalsifiable-explanation-and-faith",
+    "naturalistic-evil-and-morality",
+    "atheism-does-not-fix-politics",
+    "human-significance-not-size",
+    "design-limits-preserve-faith",
+    "evolved-altruism-blood-example",
+    "evolution-moral-mixed-bag",
+    "biblical-genocide-objection",
+    "fallen-world-hard-choices",
+    "rebellion-theology-is-nihilistic",
+    "incarnation-solidarity-answer",
+    "atonement-cannot-remove-responsibility",
+    "forgiveness-pays-debt-not-history",
+    "big-bang-theistic-fit",
+    "fossil-record-limits-common-descent",
+    "cosmic-waste-and-god-projection",
+    "secular-atrocity-parity",
+    "mother-teresa-defense",
+    "mother-teresa-poverty-counter",
+    "atheism-allows-many-ethics",
+    "nazism-not-secular-counter",
+    "certainty-undermines-inquiry"
+  ],
+  "sourceReviewRequirements": [
+    "Read the complete indexed transcript and complete inventory, routes, sections and packet. Read required controls; do not follow references into other debates, calibration outputs, ranking, legacy assessment, other judgments or publication. Use source reads of at most 400 lines and bounded untruncated control reads; functions.exec has its own output-token budget. A projection of all inventory fields except the sourceSpan.excerpt is permitted only when every indexed source event has also been read; do not omit other semantic fields.",
+    "The frozen primary-speaker scope exclusions are not evidence for either side. Do not credit or penalize the primary speakers for host framing, promotions, testimony, prayer or dependent content. Ordinary facilitative questions provide context only; assess the two speakers’ adopted claims and replies. Review concessions and what each side actually undertakes to establish.",
+    "The raw captions are not speaker-labelled. Independently verify the owner of every selected proposition and quotation using named handoffs, formal rounds and local textual continuity; mixed interjections are not automatically the selected speaker’s words. Report any source uncertainty without guessing or scoring a likely transcription error as a participant defect.",
+    "In sourceReview list every move once in inventory order with attributionSupported,materialUncertainty,rationale. An unresolved material ambiguity blocks adjudication. Do not infer tone or use outside scientific, historical or biographical research as unspoken participant evidence.",
+    "Apply the locked rubric to actual performance in this exchange. Never reward a preferred worldview, target a score average, manufacture symmetry or calculate totals. Assessment confidence is separate from attribution confidence.",
+    "Provide exactly the six named integer dimension ratings with specific rationales of at least 40 characters per field. Provide both burden-completion adjustments with all nine eligibility fields. A nonzero adjustment needs a distinct debate-wide consequence not already captured by move ratings; duplicate capture requires zero. Use only real current burden/move IDs.",
+    "One attempt and one final output submission. Before submitting, run validateStandalonePrimaryJudgment from the allowed standalone protocol library on your in-memory draft, current inventory, assigned expectedPass and frozen expectedInventorySha256. It is read-only and returns no aggregate scores. Fix mechanical drafting errors in memory before your sole final write. Use apply_patch to create only your assigned absolute output path. Do not overwrite submitted output, write scripts, retry a failed submission, use network or mutate Git.",
+    "For shell commands remove OPENAI_API_KEY and ANTHROPIC_API_KEY with env -u. Do not read credentials or use paid APIs. Fresh subscription model context only. Record actual read ranges and inputs; never claim an unperformed audio check."
+  ],
+  "outputShape": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "pass": "ASSIGNED PASS",
+    "debateNumber": "263",
+    "debateId": "dembski-hitchens-good-god-existence-2010",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentUnavailable": true,
+      "publicationProseUnavailable": true,
+      "otherDebatesUnavailable": true,
+      "contaminationDetected": false
+    },
+    "judgments": [
+      {
+        "moveId": "every inventory ID once, in order",
+        "assessmentConfidence": "high | medium | low",
+        "dimensions": {
+          "logicalCoherence": {
+            "value": "integer 0..100",
+            "rationale": "source-grounded text, at least 40 characters"
+          },
+          "evidenceWarrant": {
+            "value": "integer 0..100",
+            "rationale": "source-grounded text, at least 40 characters"
+          },
+          "responsiveness": {
+            "value": "integer 0..100",
+            "rationale": "source-grounded text, at least 40 characters"
+          },
+          "relevanceBurden": {
+            "value": "integer 0..100",
+            "rationale": "source-grounded text, at least 40 characters"
+          },
+          "precisionClarity": {
+            "value": "integer 0..100",
+            "rationale": "source-grounded text, at least 40 characters"
+          },
+          "calibrationCharity": {
+            "value": "integer 0..100",
+            "rationale": "source-grounded text, at least 40 characters"
+          }
+        }
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": "integer -5..5",
+        "rationale": "source-grounded explanation",
+        "eligibility": {
+          "distinctDebateWideConsequence": "boolean",
+          "affectsBurdenCompletion": "boolean",
+          "notAlreadyScored": "boolean",
+          "affectedBurdenIds": [
+            "actual burden IDs or empty"
+          ],
+          "completionCriterion": "text; 30+ characters if nonzero",
+          "relatedMoveIds": [
+            "actual move IDs or empty"
+          ],
+          "distinctConsequence": "text; 30+ characters if nonzero",
+          "alreadyCapturedBy": [
+            "actual dimension/move captures or empty"
+          ],
+          "counterfactual": "text; 30+ characters if nonzero"
+        }
+      },
+      "con": {
+        "value": "integer -5..5",
+        "rationale": "source-grounded explanation",
+        "eligibility": {
+          "distinctDebateWideConsequence": "boolean",
+          "affectsBurdenCompletion": "boolean",
+          "notAlreadyScored": "boolean",
+          "affectedBurdenIds": [
+            "actual burden IDs or empty"
+          ],
+          "completionCriterion": "text; 30+ characters if nonzero",
+          "relatedMoveIds": [
+            "actual move IDs or empty"
+          ],
+          "distinctConsequence": "text; 30+ characters if nonzero",
+          "alreadyCapturedBy": [
+            "actual dimension/move captures or empty"
+          ],
+          "counterfactual": "text; 30+ characters if nonzero"
+        }
+      }
+    },
+    "audit": {
+      "completeLockedInventoryReviewed": true,
+      "allMovesJudgedOnce": true,
+      "ratingsOnlyNoCalculatedScores": true,
+      "publicationBlind": true,
+      "scoreBlind": true
+    },
+    "sourceReview": {
+      "audioVerified": false,
+      "completeTranscriptReviewed": true,
+      "checks": [
+        {
+          "moveId": "every locked ID once in order",
+          "attributionSupported": "boolean",
+          "materialUncertainty": "boolean",
+          "rationale": "specific observation about speaker ownership and material wording"
+        }
+      ]
+    },
+    "readingAuthentication": {
+      "sourceEventRanges": "actual full ranges read",
+      "packetAndInventoryReadCompletely": "boolean",
+      "additionalInputsRead": "actual procedural files only",
+      "directCostUsd": 0
+    }
+  }
+}

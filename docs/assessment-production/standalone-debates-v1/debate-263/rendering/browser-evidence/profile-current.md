@@ -1,0 +1,162 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e857] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e858]:
+    - link "Slugfester home" [ref=e859] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e1005]: Slugfester
+    - navigation "Primary" [ref=e860]:
+      - link "Debates" [ref=e861] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=e862] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e863] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e864] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e865] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=e866] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=e1007] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=e1008]: ▾
+  - main [active] [ref=e867]:
+    - link "Back to Rankings & Flags" [ref=e868] [cursor=pointer]:
+      - /url: /rankings/
+    - generic [ref=e869]:
+      - generic [ref=e870]:
+        - img "William Dembski" [ref=e871]
+        - generic [ref=e872]:
+          - paragraph [ref=e873]: Interlocutor profile
+          - heading "William Dembski" [level=1] [ref=e874]
+          - paragraph [ref=e875]: 1 published 1-on-1 scorecard across 1 topic.
+          - generic "One scorecard provides an early signal, not a settled ranking." [ref=e876]: Limited sample
+      - generic [ref=e878]:
+        - generic [ref=e879]:
+          - term [ref=e880]: Average score
+          - definition [ref=e881]: "71"
+        - generic [ref=e882]:
+          - term [ref=e883]: Opponents' Avg.
+          - definition [ref=e884]: "79"
+        - generic [ref=e885]:
+          - term [ref=e886]: Fallacies
+          - definition [ref=e887]: 0.0 per 100
+        - generic [ref=e888]:
+          - term [ref=e889]: Biases
+          - definition [ref=e890]: 0.0 per 100
+    - region [ref=e891]:
+      - generic [ref=e892]:
+        - generic [ref=e893]:
+          - paragraph [ref=e894]: Score profile
+          - heading "Distribution, not a sequence" [level=2] [ref=e895]
+        - paragraph [ref=e896]: Overall scores are grouped into fixed five-point buckets so every interlocutor uses the same 50–100 scale.
+      - generic [ref=e897]:
+        - strong [ref=e898]: One scorecard; too early to assess consistency
+        - generic [ref=e899]: Median 71 · Range 71–71 · 1 scorecard
+      - generic [ref=e900]:
+        - region "About William Dembski" [ref=e901]:
+          - paragraph [ref=e902]: Background
+          - heading "About William Dembski" [level=3] [ref=e903]
+          - paragraph [ref=e904]: William Dembski is a mathematician, philosopher, and author known for his work on intelligent design. His writing addresses information, arguments about design in nature, Christian theology, and the relationships among technology, education, and human freedom.
+          - paragraph [ref=e905]:
+            - link "Biographical source for William Dembski (opens in a new tab)" [ref=e906] [cursor=pointer]:
+              - /url: https://billdembski.com/about/
+              - text: Biographical source ↗
+        - figure "Bar height shows the number of published scorecards in each range." [ref=e907]:
+          - generic [ref=e908]:
+            - generic [aria-hidden] [ref=e909]: Scorecards
+            - list "Overall score distribution from 50 to 100" [ref=e910]:
+              - 'listitem "50–54: 0 scorecards" [ref=e911]':
+                - generic [aria-hidden] [ref=e913]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=e914]':
+                - generic [aria-hidden] [ref=e916]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=e917]':
+                - generic [aria-hidden] [ref=e919]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=e920]':
+                - generic [aria-hidden] [ref=e922]: 65–69
+              - 'listitem "70–74: 1 scorecard" [ref=e923]':
+                - strong [aria-hidden] [ref=e924]: "1"
+                - generic [aria-hidden] [ref=e927]: 70–74
+              - 'listitem "75–79: 0 scorecards" [ref=e928]':
+                - generic [aria-hidden] [ref=e930]: 75–79
+              - 'listitem "80–84: 0 scorecards" [ref=e931]':
+                - generic [aria-hidden] [ref=e933]: 80–84
+              - 'listitem "85–89: 0 scorecards" [ref=e934]':
+                - generic [aria-hidden] [ref=e936]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=e937]':
+                - generic [aria-hidden] [ref=e939]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=e940]':
+                - generic [aria-hidden] [ref=e942]: 95–100
+    - generic [ref=e944]:
+      - region [ref=e945]:
+        - generic [ref=e947]:
+          - paragraph [ref=e948]: Topic record
+          - heading "Performance by topic" [level=2] [ref=e949]
+        - list [ref=e950]:
+          - listitem [ref=e951]:
+            - generic [ref=e952]:
+              - strong [ref=e953]: God, theism, and atheism
+              - generic [ref=e954]: 1 scorecard
+            - generic [ref=e955]: "71"
+      - region [ref=e956]:
+        - generic [ref=e957]:
+          - generic [ref=e958]:
+            - paragraph [ref=e959]: Opponents faced
+            - heading "Debate opponents" [level=2] [ref=e960]
+          - paragraph [ref=e961]: Right-hand values are matchup scores against William Dembski—not opponents’ overall profile averages.
+        - list [ref=e962]:
+          - listitem [ref=e963]:
+            - link "Christopher Hitchens Christopher Hitchens 1 meeting · matchup score" [ref=e964] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+              - img "Christopher Hitchens" [ref=e965]
+              - generic [ref=e966]:
+                - strong [ref=e967]: Christopher Hitchens
+                - generic [ref=e968]: 1 meeting · matchup score
+            - generic [ref=e969]: "79"
+    - region [ref=e970]:
+      - generic [ref=e971]:
+        - generic [ref=e972]:
+          - paragraph [ref=e973]: Linked record
+          - heading "1-on-1 debate scorecards" [level=2] [ref=e974]
+        - paragraph [ref=e975]: Open a scorecard to read the transcript-grounded assessment behind its published score.
+      - article [ref=e977]:
+        - paragraph [ref=e978]: Debate 263
+        - heading [level=3] [ref=e979]:
+          - link "William Dembski vs Christopher Hitchens — Does a good God exist? Debate year 2010" [ref=e980] [cursor=pointer]:
+            - /url: /debate/dembski-hitchens-good-god-existence-2010/
+            - text: William Dembski vs Christopher Hitchens — Does a good God exist?
+            - generic "Debate year 2010" [ref=e981]: "2010"
+        - paragraph [ref=e982]: Existence and goodness of God
+        - generic [ref=e983]: Against Christopher Hitchens
+        - generic [ref=e984]:
+          - generic [ref=e985]:
+            - term [ref=e986]: William's score
+            - definition [ref=e987]: "71"
+          - generic [ref=e988]:
+            - term [ref=e989]: Opponents' score
+            - definition [ref=e990]: "79"
+  - contentinfo [ref=e991]:
+    - generic [ref=e992]:
+      - link "Slugfester" [ref=e993] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e994]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=e995]:
+      - link "Search" [ref=e996] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e997] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e998] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e999] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=e1000] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=e1001] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=e1002] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=e1003] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=e1004] [cursor=pointer]:
+        - /url: https://cogbias.site/

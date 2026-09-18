@@ -1,0 +1,531 @@
+- generic [ref=f1e2]:
+  - link "Skip to main content" [ref=f1e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f1e4]:
+    - link "Slugfester home" [ref=f1e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f1e6]: Slugfester
+    - navigation "Primary" [ref=f1e7]:
+      - link "Debates" [ref=f1e8] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=f1e9] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f1e10] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f1e11] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f1e12] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=f1e13] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=f1e15] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=f1e16]: ▾
+  - main [ref=f1e17]:
+    - link "Back to Rankings & Flags" [ref=f1e18] [cursor=pointer]:
+      - /url: /rankings/
+    - generic [ref=f1e19]:
+      - generic [ref=f1e20]:
+        - img "Christopher Hitchens" [ref=f1e21]
+        - generic [ref=f1e22]:
+          - paragraph [ref=f1e23]: Interlocutor profile
+          - heading "Christopher Hitchens" [level=1] [ref=f1e24]
+          - paragraph [ref=f1e25]: 14 published 1-on-1 scorecards across 8 topics. 2 team appearances are listed separately.
+          - generic "A broader scorecard sample makes the average more stable." [ref=f1e26]: Established sample
+      - generic [ref=f1e28]:
+        - generic [ref=f1e29]:
+          - term [ref=f1e30]: Average score
+          - definition [ref=f1e31]: "81.6"
+        - generic [ref=f1e32]:
+          - term [ref=f1e33]: Opponents' Avg.
+          - definition [ref=f1e34]: "77.1"
+        - generic [ref=f1e35]:
+          - term [ref=f1e36]: Fallacies
+          - definition [ref=f1e37]: 3.4 per 100
+        - generic [ref=f1e38]:
+          - term [ref=f1e39]: Biases
+          - definition [ref=f1e40]: 1.1 per 100
+    - region [ref=f1e41]:
+      - generic [ref=f1e42]:
+        - generic [ref=f1e43]:
+          - paragraph [ref=f1e44]: Score profile
+          - heading "Distribution, not a sequence" [level=2] [ref=f1e45]
+        - paragraph [ref=f1e46]: Overall scores are grouped into fixed five-point buckets so every interlocutor uses the same 50–100 scale.
+      - generic [ref=f1e47]:
+        - strong [ref=f1e48]: Tight score spread
+        - generic [ref=f1e49]: Median 81 · Range 79–85 · 14 scorecards
+      - generic [ref=f1e50]:
+        - region "About Christopher Hitchens" [ref=f1e51]:
+          - paragraph [ref=f1e52]: Background
+          - heading "About Christopher Hitchens" [level=3] [ref=f1e53]
+          - paragraph [ref=f1e54]: Christopher Hitchens was an author, journalist, and literary critic whose writing ranged across politics, religion, and culture. His books include God Is Not Great, and his public debates made criticism of religion a prominent part of his work.
+          - paragraph [ref=f1e55]:
+            - link "Biographical source for Christopher Hitchens (opens in a new tab)" [ref=f1e56] [cursor=pointer]:
+              - /url: https://www.hachettebookgroup.com/contributor/christopher-hitchens/
+              - text: Biographical source ↗
+        - figure "Bar height shows the number of published scorecards in each range." [ref=f1e57]:
+          - generic [ref=f1e58]:
+            - generic [aria-hidden] [ref=f1e59]: Scorecards
+            - list "Overall score distribution from 50 to 100" [ref=f1e60]:
+              - 'listitem "50–54: 0 scorecards" [ref=f1e61]':
+                - generic [aria-hidden] [ref=f1e63]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=f1e64]':
+                - generic [aria-hidden] [ref=f1e66]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=f1e67]':
+                - generic [aria-hidden] [ref=f1e69]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=f1e70]':
+                - generic [aria-hidden] [ref=f1e72]: 65–69
+              - 'listitem "70–74: 0 scorecards" [ref=f1e73]':
+                - generic [aria-hidden] [ref=f1e75]: 70–74
+              - 'listitem "75–79: 2 scorecards" [ref=f1e76]':
+                - strong [aria-hidden] [ref=f1e77]: "2"
+                - generic [aria-hidden] [ref=f1e80]: 75–79
+              - 'listitem "80–84: 10 scorecards" [ref=f1e81]':
+                - strong [aria-hidden] [ref=f1e82]: "10"
+                - generic [aria-hidden] [ref=f1e85]: 80–84
+              - 'listitem "85–89: 2 scorecards" [ref=f1e86]':
+                - strong [aria-hidden] [ref=f1e87]: "2"
+                - generic [aria-hidden] [ref=f1e90]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=f1e91]':
+                - generic [aria-hidden] [ref=f1e93]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=f1e94]':
+                - generic [aria-hidden] [ref=f1e96]: 95–100
+    - generic [ref=f1e98]:
+      - region [ref=f1e99]:
+        - generic [ref=f1e101]:
+          - paragraph [ref=f1e102]: Topic record
+          - heading "Performance by topic" [level=2] [ref=f1e103]
+        - list [ref=f1e104]:
+          - listitem [ref=f1e105]:
+            - generic [ref=f1e106]:
+              - strong [ref=f1e107]: Religion, society, and public reason
+              - generic [ref=f1e108]: 11 scorecards
+            - generic [ref=f1e109]: "81.6"
+          - listitem [ref=f1e110]:
+            - generic [ref=f1e111]:
+              - strong [ref=f1e112]: God, theism, and atheism
+              - generic [ref=f1e113]: 9 scorecards
+            - generic [ref=f1e114]: "81.6"
+          - listitem [ref=f1e115]:
+            - generic [ref=f1e116]:
+              - strong [ref=f1e117]: Morality and ethics
+              - generic [ref=f1e118]: 5 scorecards
+            - generic [ref=f1e119]: "80.6"
+          - listitem [ref=f1e120]:
+            - generic [ref=f1e121]:
+              - strong [ref=f1e122]: Meaning and purpose
+              - generic [ref=f1e123]: 2 scorecards
+            - generic [ref=f1e124]: "82.5"
+          - listitem [ref=f1e125]:
+            - generic [ref=f1e126]:
+              - strong [ref=f1e127]: Logic, reason, and presuppositions
+              - generic [ref=f1e128]: 1 scorecard
+            - generic [ref=f1e129]: "83"
+          - listitem [ref=f1e130]:
+            - generic [ref=f1e131]:
+              - strong [ref=f1e132]: Cosmological & Contingency Arguments
+              - generic [ref=f1e133]: 1 scorecard
+            - generic [ref=f1e134]: "81"
+          - listitem [ref=f1e135]:
+            - generic [ref=f1e136]:
+              - strong [ref=f1e137]: Science and design
+              - generic [ref=f1e138]: 1 scorecard
+            - generic [ref=f1e139]: "81"
+          - listitem [ref=f1e140]:
+            - generic [ref=f1e141]:
+              - strong [ref=f1e142]: Christian belief and doctrine
+              - generic [ref=f1e143]: 1 scorecard
+            - generic [ref=f1e144]: "80"
+      - region [ref=f1e145]:
+        - generic [ref=f1e146]:
+          - generic [ref=f1e147]:
+            - paragraph [ref=f1e148]: Opponents faced
+            - heading "Debate opponents" [level=2] [ref=f1e149]
+          - paragraph [ref=f1e150]: Right-hand values are matchup scores against Christopher Hitchens—not opponents’ overall profile averages.
+        - list [ref=f1e151]:
+          - listitem [ref=f1e152]:
+            - link "Frank Turek Frank Turek 2 meetings · matchup average" [ref=f1e153] [cursor=pointer]:
+              - /url: /interlocutor/frank-turek/
+              - img "Frank Turek" [ref=f1e154]
+              - generic [ref=f1e155]:
+                - strong [ref=f1e156]: Frank Turek
+                - generic [ref=f1e157]: 2 meetings · matchup average
+            - generic [ref=f1e158]: "74"
+          - listitem [ref=f1e159]:
+            - link "Tony Blair Tony Blair 1 meeting · matchup score" [ref=f1e160] [cursor=pointer]:
+              - /url: /interlocutor/tony-blair/
+              - img "Tony Blair" [ref=f1e161]
+              - generic [ref=f1e162]:
+                - strong [ref=f1e163]: Tony Blair
+                - generic [ref=f1e164]: 1 meeting · matchup score
+            - generic [ref=f1e165]: "83"
+          - listitem [ref=f1e166]:
+            - link "Marvin Olasky Marvin Olasky 1 meeting · matchup score" [ref=f1e167] [cursor=pointer]:
+              - /url: /interlocutor/marvin-olasky/
+              - img "Marvin Olasky" [ref=f1e168]
+              - generic [ref=f1e169]:
+                - strong [ref=f1e170]: Marvin Olasky
+                - generic [ref=f1e171]: 1 meeting · matchup score
+            - generic [ref=f1e172]: "82"
+          - listitem [ref=f1e173]:
+            - link "Tariq Ramadan Tariq Ramadan 1 meeting · matchup score" [ref=f1e174] [cursor=pointer]:
+              - /url: /interlocutor/tariq-ramadan/
+              - img "Tariq Ramadan" [ref=f1e175]
+              - generic [ref=f1e176]:
+                - strong [ref=f1e177]: Tariq Ramadan
+                - generic [ref=f1e178]: 1 meeting · matchup score
+            - generic [ref=f1e179]: "82"
+          - listitem [ref=f1e180]:
+            - link "Alister McGrath Alister McGrath 1 meeting · matchup score" [ref=f1e181] [cursor=pointer]:
+              - /url: /interlocutor/alister-mcgrath/
+              - img "Alister McGrath" [ref=f1e182]
+              - generic [ref=f1e183]:
+                - strong [ref=f1e184]: Alister McGrath
+                - generic [ref=f1e185]: 1 meeting · matchup score
+            - generic [ref=f1e186]: "80"
+          - listitem [ref=f1e187]:
+            - link "William Lane Craig William Lane Craig 1 meeting · matchup score" [ref=f1e188] [cursor=pointer]:
+              - /url: /interlocutor/william-lane-craig/
+              - img "William Lane Craig" [ref=f1e189]
+              - generic [ref=f1e190]:
+                - strong [ref=f1e191]: William Lane Craig
+                - generic [ref=f1e192]: 1 meeting · matchup score
+            - generic [ref=f1e193]: "78"
+          - listitem [ref=f1e194]:
+            - link "John Lennox John Lennox 1 meeting · matchup score" [ref=f1e195] [cursor=pointer]:
+              - /url: /interlocutor/john-lennox/
+              - img "John Lennox" [ref=f1e196]
+              - generic [ref=f1e197]:
+                - strong [ref=f1e198]: John Lennox
+                - generic [ref=f1e199]: 1 meeting · matchup score
+            - generic [ref=f1e200]: "77"
+          - listitem [ref=f1e201]:
+            - link "Peter Hitchens Peter Hitchens 1 meeting · matchup score" [ref=f1e202] [cursor=pointer]:
+              - /url: /interlocutor/peter-hitchens/
+              - img "Peter Hitchens" [ref=f1e203]
+              - generic [ref=f1e204]:
+                - strong [ref=f1e205]: Peter Hitchens
+                - generic [ref=f1e206]: 1 meeting · matchup score
+            - generic [ref=f1e207]: "77"
+          - listitem [ref=f1e208]:
+            - link "Al Sharpton Al Sharpton 1 meeting · matchup score" [ref=f1e209] [cursor=pointer]:
+              - /url: /interlocutor/al-sharpton/
+              - img "Al Sharpton" [ref=f1e210]
+              - generic [ref=f1e211]:
+                - strong [ref=f1e212]: Al Sharpton
+                - generic [ref=f1e213]: 1 meeting · matchup score
+            - generic [ref=f1e214]: "76"
+          - listitem [ref=f1e215]:
+            - link "Rabbi David Wolpe Rabbi David Wolpe 1 meeting · matchup score" [ref=f1e216] [cursor=pointer]:
+              - /url: /interlocutor/rabbi-david-wolpe/
+              - img "Rabbi David Wolpe" [ref=f1e217]
+              - generic [ref=f1e218]:
+                - strong [ref=f1e219]: Rabbi David Wolpe
+                - generic [ref=f1e220]: 1 meeting · matchup score
+            - generic [ref=f1e221]: "76"
+          - listitem [ref=f1e222]:
+            - link "Dinesh D'Souza Dinesh D'Souza 1 meeting · matchup score" [ref=f1e223] [cursor=pointer]:
+              - /url: /interlocutor/dinesh-d-souza/
+              - img "Dinesh D'Souza" [ref=f1e224]
+              - generic [ref=f1e225]:
+                - strong [ref=f1e226]: Dinesh D'Souza
+                - generic [ref=f1e227]: 1 meeting · matchup score
+            - generic [ref=f1e228]: "75"
+          - listitem [ref=f1e229]:
+            - link "Shmuley Boteach Shmuley Boteach 1 meeting · matchup score" [ref=f1e230] [cursor=pointer]:
+              - /url: /interlocutor/shmuley-boteach/
+              - img "Shmuley Boteach" [ref=f1e231]
+              - generic [ref=f1e232]:
+                - strong [ref=f1e233]: Shmuley Boteach
+                - generic [ref=f1e234]: 1 meeting · matchup score
+            - generic [ref=f1e235]: "74"
+          - listitem [ref=f1e236]:
+            - link "William Dembski William Dembski 1 meeting · matchup score" [ref=f1e237] [cursor=pointer]:
+              - /url: /interlocutor/william-dembski/
+              - img "William Dembski" [ref=f1e238]
+              - generic [ref=f1e239]:
+                - strong [ref=f1e240]: William Dembski
+                - generic [ref=f1e241]: 1 meeting · matchup score
+            - generic [ref=f1e242]: "71"
+    - region [ref=f1e243]:
+      - generic [ref=f1e244]:
+        - generic [ref=f1e245]:
+          - paragraph [ref=f1e246]: Linked record
+          - heading "1-on-1 debate scorecards" [level=2] [ref=f1e247]
+        - paragraph [ref=f1e248]: Open a scorecard to read the transcript-grounded assessment behind its published score.
+      - generic [ref=f1e249]:
+        - article [ref=f1e250]:
+          - paragraph [ref=f1e251]: Debate 02
+          - heading [level=3] [ref=f1e252]:
+            - 'link "William Lane Craig vs Christopher Hitchens: Does God Exist? Debate year 2009" [ref=f1e253] [cursor=pointer]':
+              - /url: /debate/craig-hitchens-god-existence-2009/
+              - text: "William Lane Craig vs Christopher Hitchens: Does God Exist?"
+              - generic "Debate year 2009" [ref=f1e254]: "2009"
+          - paragraph [ref=f1e255]: Christian theism and atheism
+          - generic [ref=f1e256]: Against William Lane Craig
+          - generic [ref=f1e257]:
+            - generic [ref=f1e258]:
+              - term [ref=f1e259]: Christopher's score
+              - definition [ref=f1e260]: "82"
+            - generic [ref=f1e261]:
+              - term [ref=f1e262]: Opponents' score
+              - definition [ref=f1e263]: "78"
+        - article [ref=f1e264]:
+          - paragraph [ref=f1e265]: Debate 03
+          - heading [level=3] [ref=f1e266]:
+            - 'link "Christopher Hitchens vs Dinesh D''Souza: Is Religion the Problem? Debate year 2010" [ref=f1e267] [cursor=pointer]':
+              - /url: /debate/hitchens-dsouza-religion-problem-2010/
+              - text: "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?"
+              - generic "Debate year 2010" [ref=f1e268]: "2010"
+          - paragraph [ref=f1e269]: Religion and public reason
+          - generic [ref=f1e270]: Against Dinesh D'Souza
+          - generic [ref=f1e271]:
+            - generic [ref=f1e272]:
+              - term [ref=f1e273]: Christopher's score
+              - definition [ref=f1e274]: "83"
+            - generic [ref=f1e275]:
+              - term [ref=f1e276]: Opponents' score
+              - definition [ref=f1e277]: "75"
+        - article [ref=f1e278]:
+          - paragraph [ref=f1e279]: Debate 15
+          - heading [level=3] [ref=f1e280]:
+            - 'link "Christopher Hitchens vs John Lennox: Is God Great? Debate year 2017" [ref=f1e281] [cursor=pointer]':
+              - /url: /debate/hitchens-lennox-is-god-great-2017/
+              - text: "Christopher Hitchens vs John Lennox: Is God Great?"
+              - generic "Debate year 2017" [ref=f1e282]: "2017"
+          - paragraph [ref=f1e283]: God and anti-theism
+          - generic [ref=f1e284]: Against John Lennox
+          - generic [ref=f1e285]:
+            - generic [ref=f1e286]:
+              - term [ref=f1e287]: Christopher's score
+              - definition [ref=f1e288]: "81"
+            - generic [ref=f1e289]:
+              - term [ref=f1e290]: Opponents' score
+              - definition [ref=f1e291]: "77"
+        - article [ref=f1e292]:
+          - paragraph [ref=f1e293]: Debate 20
+          - heading [level=3] [ref=f1e294]:
+            - 'link "Christopher Hitchens vs Peter Hitchens: Iraq, God, and Moral Authority Debate year 2008" [ref=f1e295] [cursor=pointer]':
+              - /url: /debate/hitchens-hitchens-iraq-god-2008/
+              - text: "Christopher Hitchens vs Peter Hitchens: Iraq, God, and Moral Authority"
+              - generic "Debate year 2008" [ref=f1e296]: "2008"
+          - paragraph [ref=f1e297]: Iraq, God, and moral authority
+          - generic [ref=f1e298]: Against Peter Hitchens
+          - generic [ref=f1e299]:
+            - generic [ref=f1e300]:
+              - term [ref=f1e301]: Christopher's score
+              - definition [ref=f1e302]: "79"
+            - generic [ref=f1e303]:
+              - term [ref=f1e304]: Opponents' score
+              - definition [ref=f1e305]: "77"
+        - article [ref=f1e306]:
+          - paragraph [ref=f1e307]: Debate 21
+          - heading [level=3] [ref=f1e308]:
+            - 'link "Christopher Hitchens vs Rabbi David Wolpe: The Great God Debate Debate year 2010" [ref=f1e309] [cursor=pointer]':
+              - /url: /debate/hitchens-wolpe-great-god-debate-2010/
+              - text: "Christopher Hitchens vs Rabbi David Wolpe: The Great God Debate"
+              - generic "Debate year 2010" [ref=f1e310]: "2010"
+          - paragraph [ref=f1e311]: God, meaning, and faith
+          - generic [ref=f1e312]: Against Rabbi David Wolpe
+          - generic [ref=f1e313]:
+            - generic [ref=f1e314]:
+              - term [ref=f1e315]: Christopher's score
+              - definition [ref=f1e316]: "85"
+            - generic [ref=f1e317]:
+              - term [ref=f1e318]: Opponents' score
+              - definition [ref=f1e319]: "76"
+        - article [ref=f1e320]:
+          - paragraph [ref=f1e321]: Debate 22
+          - heading [level=3] [ref=f1e322]:
+            - 'link "Frank Turek vs Christopher Hitchens: Does God Exist? Debate year 2008" [ref=f1e323] [cursor=pointer]':
+              - /url: /debate/turek-hitchens-god-existence-2008/
+              - text: "Frank Turek vs Christopher Hitchens: Does God Exist?"
+              - generic "Debate year 2008" [ref=f1e324]: "2008"
+          - paragraph [ref=f1e325]: Cosmology, design, and anti-theism
+          - generic [ref=f1e326]: Against Frank Turek
+          - generic [ref=f1e327]:
+            - generic [ref=f1e328]:
+              - term [ref=f1e329]: Christopher's score
+              - definition [ref=f1e330]: "81"
+            - generic [ref=f1e331]:
+              - term [ref=f1e332]: Opponents' score
+              - definition [ref=f1e333]: "74"
+        - article [ref=f1e334]:
+          - paragraph [ref=f1e335]: Debate 24
+          - heading [level=3] [ref=f1e336]:
+            - 'link "Christopher Hitchens vs Marvin Olasky: Religion, Grace, and Secular Morality Debate year 2007" [ref=f1e337] [cursor=pointer]':
+              - /url: /debate/hitchens-olasky-religion-grace-2007/
+              - text: "Christopher Hitchens vs Marvin Olasky: Religion, Grace, and Secular Morality"
+              - generic "Debate year 2007" [ref=f1e338]: "2007"
+          - paragraph [ref=f1e339]: Religion, grace, and secular morality
+          - generic [ref=f1e340]: Against Marvin Olasky
+          - generic [ref=f1e341]:
+            - generic [ref=f1e342]:
+              - term [ref=f1e343]: Christopher's score
+              - definition [ref=f1e344]: "80"
+            - generic [ref=f1e345]:
+              - term [ref=f1e346]: Opponents' score
+              - definition [ref=f1e347]: "82"
+        - article [ref=f1e348]:
+          - paragraph [ref=f1e349]: Debate 25
+          - heading [level=3] [ref=f1e350]:
+            - 'link "Christopher Hitchens vs Tariq Ramadan: Is Islam a Religion of Peace? Debate year 2010" [ref=f1e351] [cursor=pointer]':
+              - /url: /debate/hitchens-ramadan-islam-peace-2010/
+              - text: "Christopher Hitchens vs Tariq Ramadan: Is Islam a Religion of Peace?"
+              - generic "Debate year 2010" [ref=f1e352]: "2010"
+          - paragraph [ref=f1e353]: Islam as peace or power
+          - generic [ref=f1e354]: Against Tariq Ramadan
+          - generic [ref=f1e355]:
+            - generic [ref=f1e356]:
+              - term [ref=f1e357]: Christopher's score
+              - definition [ref=f1e358]: "80"
+            - generic [ref=f1e359]:
+              - term [ref=f1e360]: Opponents' score
+              - definition [ref=f1e361]: "82"
+        - article [ref=f1e362]:
+          - paragraph [ref=f1e363]: Debate 26
+          - heading [level=3] [ref=f1e364]:
+            - 'link "Frank Turek vs Christopher Hitchens: What Best Explains Reality? Debate year 2011" [ref=f1e365] [cursor=pointer]':
+              - /url: /debate/turek-hitchens-reality-theism-atheism-2011/
+              - text: "Frank Turek vs Christopher Hitchens: What Best Explains Reality?"
+              - generic "Debate year 2011" [ref=f1e366]: "2011"
+          - paragraph [ref=f1e367]: Reality, theism, and atheism
+          - generic [ref=f1e368]: Against Frank Turek
+          - generic [ref=f1e369]:
+            - generic [ref=f1e370]:
+              - term [ref=f1e371]: Christopher's score
+              - definition [ref=f1e372]: "83"
+            - generic [ref=f1e373]:
+              - term [ref=f1e374]: Opponents' score
+              - definition [ref=f1e375]: "74"
+        - article [ref=f1e376]:
+          - paragraph [ref=f1e377]: Debate 171
+          - heading [level=3] [ref=f1e378]:
+            - 'link "Christopher Hitchens vs Tony Blair: Is Religion a Force for Good in the World? Debate year 2010" [ref=f1e379] [cursor=pointer]':
+              - /url: /debate/hitchens-blair-religion-force-good-2010/
+              - text: "Christopher Hitchens vs Tony Blair: Is Religion a Force for Good in the World?"
+              - generic "Debate year 2010" [ref=f1e380]: "2010"
+          - paragraph [ref=f1e381]: Religion's social benefits and harms
+          - generic [ref=f1e382]: Against Tony Blair
+          - generic [ref=f1e383]:
+            - generic [ref=f1e384]:
+              - term [ref=f1e385]: Christopher's score
+              - definition [ref=f1e386]: "85"
+            - generic [ref=f1e387]:
+              - term [ref=f1e388]: Opponents' score
+              - definition [ref=f1e389]: "83"
+        - article [ref=f1e390]:
+          - paragraph [ref=f1e391]: Debate 172
+          - heading [level=3] [ref=f1e392]:
+            - 'link "Christopher Hitchens vs Alister McGrath: Poison or Cure? Religious Belief in the Modern World Debate year 2007" [ref=f1e393] [cursor=pointer]':
+              - /url: /debate/hitchens-mcgrath-religious-belief-2007/
+              - text: "Christopher Hitchens vs Alister McGrath: Poison or Cure? Religious Belief in the Modern World"
+              - generic "Debate year 2007" [ref=f1e394]: "2007"
+          - paragraph [ref=f1e395]: Religious truth, morality, violence, and meaning
+          - generic [ref=f1e396]: Against Alister McGrath
+          - generic [ref=f1e397]:
+            - generic [ref=f1e398]:
+              - term [ref=f1e399]: Christopher's score
+              - definition [ref=f1e400]: "80"
+            - generic [ref=f1e401]:
+              - term [ref=f1e402]: Opponents' score
+              - definition [ref=f1e403]: "80"
+        - article [ref=f1e404]:
+          - paragraph [ref=f1e405]: Debate 260
+          - heading [level=3] [ref=f1e406]:
+            - link "Shmuley Boteach vs Christopher Hitchens — God and morality Debate year 2008" [ref=f1e407] [cursor=pointer]:
+              - /url: /debate/boteach-hitchens-god-morality-2008/
+              - text: Shmuley Boteach vs Christopher Hitchens — God and morality
+              - generic "Debate year 2008" [ref=f1e408]: "2008"
+          - paragraph [ref=f1e409]: God, morality, and religion
+          - generic [ref=f1e410]: Against Shmuley Boteach
+          - generic [ref=f1e411]:
+            - generic [ref=f1e412]:
+              - term [ref=f1e413]: Christopher's score
+              - definition [ref=f1e414]: "80"
+            - generic [ref=f1e415]:
+              - term [ref=f1e416]: Opponents' score
+              - definition [ref=f1e417]: "74"
+        - article [ref=f1e418]:
+          - paragraph [ref=f1e419]: Debate 261
+          - heading [level=3] [ref=f1e420]:
+            - link "Al Sharpton vs Christopher Hitchens — God, religion, and morality Debate year 2007" [ref=f1e421] [cursor=pointer]:
+              - /url: /debate/sharpton-hitchens-god-religion-morality-2007/
+              - text: Al Sharpton vs Christopher Hitchens — God, religion, and morality
+              - generic "Debate year 2007" [ref=f1e422]: "2007"
+          - paragraph [ref=f1e423]: God, religion, and morality
+          - generic [ref=f1e424]: Against Al Sharpton
+          - generic [ref=f1e425]:
+            - generic [ref=f1e426]:
+              - term [ref=f1e427]: Christopher's score
+              - definition [ref=f1e428]: "84"
+            - generic [ref=f1e429]:
+              - term [ref=f1e430]: Opponents' score
+              - definition [ref=f1e431]: "76"
+        - article [ref=f1e432]:
+          - paragraph [ref=f1e433]: Debate 263
+          - heading [level=3] [ref=f1e434]:
+            - link "William Dembski vs Christopher Hitchens — Does a good God exist? Debate year 2010" [ref=f1e435] [cursor=pointer]:
+              - /url: /debate/dembski-hitchens-good-god-existence-2010/
+              - text: William Dembski vs Christopher Hitchens — Does a good God exist?
+              - generic "Debate year 2010" [ref=f1e436]: "2010"
+          - paragraph [ref=f1e437]: Existence and goodness of God
+          - generic [ref=f1e438]: Against William Dembski
+          - generic [ref=f1e439]:
+            - generic [ref=f1e440]:
+              - term [ref=f1e441]: Christopher's score
+              - definition [ref=f1e442]: "79"
+            - generic [ref=f1e443]:
+              - term [ref=f1e444]: Opponents' score
+              - definition [ref=f1e445]: "71"
+    - region [ref=f1e446]:
+      - generic [ref=f1e447]:
+        - generic [ref=f1e448]:
+          - paragraph [ref=f1e449]: Team record
+          - heading "Team and panel appearances" [level=2] [ref=f1e450]
+        - paragraph [ref=f1e451]: These scorecards assess a combined side. They remain available to read but do not affect this interlocutor’s individual averages, distribution, or opponent record.
+      - generic [ref=f1e452]:
+        - article [ref=f1e453]:
+          - paragraph [ref=f1e454]: Debate 71
+          - heading [level=3] [ref=f1e455]:
+            - 'link "Christopher Hitchens vs Harold Kushner and Peter Gomes: God, Religion, and Morality Debate year 2009" [ref=f1e456] [cursor=pointer]':
+              - /url: /debate/hitchens-kushner-gomes-god-religion-morality-2009/
+              - text: "Christopher Hitchens vs Harold Kushner and Peter Gomes: God, Religion, and Morality"
+              - generic "Debate year 2009" [ref=f1e457]: "2009"
+          - paragraph [ref=f1e458]: God, morality, and religious harm
+          - generic [ref=f1e459]: "Side: Christopher Hitchens"
+          - paragraph [ref=f1e460]: Shared side score excluded from the individual record.
+        - article [ref=f1e461]:
+          - paragraph [ref=f1e462]: Debate 173
+          - heading [level=3] [ref=f1e463]:
+            - 'link "John Onaiyekan & Ann Widdecombe vs Stephen Fry & Christopher Hitchens: The Catholic Church Is a Force for Good in the World Debate year 2009" [ref=f1e464] [cursor=pointer]':
+              - /url: /debate/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009/
+              - text: "John Onaiyekan & Ann Widdecombe vs Stephen Fry & Christopher Hitchens: The Catholic Church Is a Force for Good in the World"
+              - generic "Debate year 2009" [ref=f1e465]: "2009"
+          - paragraph [ref=f1e466]: The Catholic Church's social record
+          - generic [ref=f1e467]: "Side: Stephen Fry and Christopher Hitchens"
+          - paragraph [ref=f1e468]: Shared side score excluded from the individual record.
+  - contentinfo [ref=f1e469]:
+    - generic [ref=f1e470]:
+      - link "Slugfester" [ref=f1e471] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f1e472]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=f1e473]:
+      - link "Search" [ref=f1e474] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f1e475] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f1e476] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f1e477] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=f1e478] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=f1e479] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=f1e480] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=f1e481] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=f1e482] [cursor=pointer]:
+        - /url: https://cogbias.site/

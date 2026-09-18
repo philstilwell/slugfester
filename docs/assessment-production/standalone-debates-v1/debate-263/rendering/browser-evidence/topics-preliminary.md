@@ -1,0 +1,5394 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e2514] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e2515]:
+    - link "Slugfester home" [ref=e2516] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e2517]: Slugfester
+    - navigation "Primary" [ref=e2518]:
+      - link "Debates" [ref=e2519] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=e2520] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e2521] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e2522] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e2523] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=e2524] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=e2526] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=e2527]: ▾
+  - main [active] [ref=e2528]:
+    - generic [ref=e2529]:
+      - generic [ref=e2530]:
+        - paragraph [ref=e2531]: Topic index
+        - heading "Debates by topic" [level=1] [ref=e2532]
+        - paragraph [ref=e2533]: Each debate appears under its main question. Additional topic tags connect related themes across categories.
+      - complementary "Topic catalog summary" [ref=e2534]:
+        - generic [ref=e2535]: Topic clusters
+        - strong [ref=e2536]: "15"
+        - generic [ref=e2537]: Debate scorecards
+        - strong [ref=e2538]: "263"
+    - navigation "Topic categories" [ref=e2539]:
+      - link "Cosmological & Contingency Arguments 19" [ref=e2540] [cursor=pointer]:
+        - /url: "#topic-cosmological-arguments"
+        - generic [ref=e2541]: Cosmological & Contingency Arguments
+        - strong [ref=e2542]: "19"
+      - link "Science and design 21" [ref=e2543] [cursor=pointer]:
+        - /url: "#topic-science-design"
+        - generic [ref=e2544]: Science and design
+        - strong [ref=e2545]: "21"
+      - link "Evolution and origins of life 7" [ref=e2546] [cursor=pointer]:
+        - /url: "#topic-evolution-origins-life"
+        - generic [ref=e2547]: Evolution and origins of life
+        - strong [ref=e2548]: "7"
+      - link "Bible and historical Jesus 17" [ref=e2549] [cursor=pointer]:
+        - /url: "#topic-scripture-jesus-resurrection"
+        - generic [ref=e2550]: Bible and historical Jesus
+        - strong [ref=e2551]: "17"
+      - link "Resurrection and miracles 19" [ref=e2552] [cursor=pointer]:
+        - /url: "#topic-resurrection-miracles"
+        - generic [ref=e2553]: Resurrection and miracles
+        - strong [ref=e2554]: "19"
+      - link "Christian belief and doctrine 19" [ref=e2555] [cursor=pointer]:
+        - /url: "#topic-christian-belief-doctrine"
+        - generic [ref=e2556]: Christian belief and doctrine
+        - strong [ref=e2557]: "19"
+      - link "Meaning and purpose 10" [ref=e2558] [cursor=pointer]:
+        - /url: "#topic-meaning-purpose"
+        - generic [ref=e2559]: Meaning and purpose
+        - strong [ref=e2560]: "10"
+      - link "Morality and ethics 19" [ref=e2561] [cursor=pointer]:
+        - /url: "#topic-morality-ethics"
+        - generic [ref=e2562]: Morality and ethics
+        - strong [ref=e2563]: "19"
+      - link "Moral realism and objectivity 11" [ref=e2564] [cursor=pointer]:
+        - /url: "#topic-moral-realism-objectivity"
+        - generic [ref=e2565]: Moral realism and objectivity
+        - strong [ref=e2566]: "11"
+      - link "Evil, suffering, and hiddenness 19" [ref=e2567] [cursor=pointer]:
+        - /url: "#topic-evil-suffering-hiddenness"
+        - generic [ref=e2568]: Evil, suffering, and hiddenness
+        - strong [ref=e2569]: "19"
+      - link "Mind and consciousness 20" [ref=e2570] [cursor=pointer]:
+        - /url: "#topic-mind-consciousness-free-will"
+        - generic [ref=e2571]: Mind and consciousness
+        - strong [ref=e2572]: "20"
+      - link "Free will and determinism 7" [ref=e2573] [cursor=pointer]:
+        - /url: "#topic-free-will-determinism"
+        - generic [ref=e2574]: Free will and determinism
+        - strong [ref=e2575]: "7"
+      - link "Logic, reason, and presuppositions 14" [ref=e2576] [cursor=pointer]:
+        - /url: "#topic-logic-reason-presuppositions"
+        - generic [ref=e2577]: Logic, reason, and presuppositions
+        - strong [ref=e2578]: "14"
+      - link "Religion, society, and public reason 21" [ref=e2579] [cursor=pointer]:
+        - /url: "#topic-religion-society-public-reason"
+        - generic [ref=e2580]: Religion, society, and public reason
+        - strong [ref=e2581]: "21"
+      - link "God, theism, and atheism 40" [ref=e2582] [cursor=pointer]:
+        - /url: "#topic-god-theism-atheism"
+        - generic [ref=e2583]: God, theism, and atheism
+        - strong [ref=e2584]: "40"
+    - region "Debates grouped by topic" [ref=e2585]:
+      - generic [ref=e2586]:
+        - generic [ref=e2587]:
+          - generic [ref=e2588]:
+            - paragraph [ref=e2589]: 19 debates
+            - heading "Cosmological & Contingency Arguments" [level=2] [ref=e2590]
+          - paragraph [ref=e2591]: Kalam, contingency, beginnings, finitude, fine-tuning, cosmic evidence, and arguments from the universe to God or necessary reality.
+        - generic [ref=e2592]:
+          - article [ref=e2593]:
+            - 'link "Open Debate 33: God and cosmological models" [ref=e2594] [cursor=pointer]':
+              - /url: /debate/craig-carroll-god-cosmology-2014/
+              - generic "Debate 33" [ref=e2595]: "33"
+              - generic [ref=e2596]:
+                - text: God and cosmological models
+                - generic "Debate year 2014" [ref=e2597]: "2014"
+            - generic "Topics" [ref=e2598]:
+              - generic [ref=e2599]: Cosmological arguments
+              - generic [ref=e2600]: Logic & reason
+              - generic [ref=e2601]: God & theism
+            - generic [ref=e2602]:
+              - generic "Interlocutor photos" [ref=e2603]
+              - generic [ref=e2604]: 2 hr 16 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig argued that cosmic beginnings and fine-tuning favor theism; Carroll countered that self-contained models, measure sensitivity, and predictive discipline favor naturalism.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Sean Carroll
+          - article [ref=e2605]:
+            - 'link "Open Debate 43: Big Bang fine-tuning and design" [ref=e2606] [cursor=pointer]':
+              - /url: /debate/meyer-halper-cosmology-fine-tuning-2026/
+              - generic "Debate 43" [ref=e2607]: "43"
+              - generic [ref=e2608]:
+                - text: Big Bang fine-tuning and design
+                - generic "Debate year 2026" [ref=e2609]: "2026"
+            - generic "Topics" [ref=e2610]:
+              - generic [ref=e2611]: Cosmological arguments
+              - generic [ref=e2612]: Science & design
+            - generic [ref=e2613]:
+              - generic "Interlocutor photos" [ref=e2614]
+              - generic [ref=e2615]: 2 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Meyer defended cosmic beginnings and fine-tuning as design evidence; Halper more successfully emphasized theorem limits, unknown probabilities, testability, and underdetermined divine intentions.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stephen Meyer | Phil Halper
+          - article [ref=e2616]:
+            - 'link "Open Debate 55: Kalam, nothing, and infinity" [ref=e2617] [cursor=pointer]':
+              - /url: /debate/craig-malpass-kalam-nothing-2026/
+              - generic "Debate 55" [ref=e2618]: "55"
+              - generic [ref=e2619]:
+                - text: Kalam, nothing, and infinity
+                - generic "Debate year 2026" [ref=e2620]: "2026"
+            - generic "Topics" [ref=e2621]: Cosmological arguments
+            - generic [ref=e2623]:
+              - generic "Interlocutor photos" [ref=e2624]
+              - generic [ref=e2625]: 1 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defended causal necessity, finite-past paradoxes, and personal agency; Malpass more successfully exposed categorical causal gaps, coherent infinities, and underdetermined creator attributes.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Alex Malpass
+          - article [ref=e2626]:
+            - 'link "Open Debate 59: God, science, and cosmic evidence" [ref=e2627] [cursor=pointer]':
+              - /url: /debate/bollore-halper-god-science-evidence-2026/
+              - generic "Debate 59" [ref=e2628]: "59"
+              - generic [ref=e2629]:
+                - text: God, science, and cosmic evidence
+                - generic "Debate year 2026" [ref=e2630]: "2026"
+            - generic "Topics" [ref=e2631]:
+              - generic [ref=e2632]: Cosmological arguments
+              - generic [ref=e2633]: Science & design
+              - generic [ref=e2634]: Logic & reason
+              - generic [ref=e2635]: God & theism
+            - generic [ref=e2636]:
+              - generic "Interlocutor photos" [ref=e2637]
+              - generic [ref=e2638]: 1 hr 48 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Scientific skepticism prevailed by exposing cosmological underdetermination, alternative fine-tuning explanations, ancient biblical cosmology, and insufficient answers to extensive animal suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michel-Yves Bollore | Phil Halper
+          - article [ref=e2639]:
+            - 'link "Open Debate 65: Fine-tuning priors and naturalism" [ref=e2640] [cursor=pointer]':
+              - /url: /debate/donahue-malpass-fine-tuning-god-2026/
+              - generic "Debate 65" [ref=e2641]: "65"
+              - generic [ref=e2642]:
+                - text: Fine-tuning priors and naturalism
+                - generic "Debate year 2026" [ref=e2643]: "2026"
+            - generic "Topics" [ref=e2644]:
+              - generic [ref=e2645]: Cosmological arguments
+              - generic [ref=e2646]: Science & design
+            - generic [ref=e2647]:
+              - generic "Interlocutor photos" [ref=e2648]
+              - generic [ref=e2649]: 1 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Donahue defended a theistic likelihood advantage from fine-tuning, while Malpass pressed naturalistic aggregation, uncertain divine psychology, prior ambiguity, and theory-relative alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Miles K. Donahue | Alex Malpass
+          - article [ref=e2650]:
+            - 'link "Open Debate 75: Contingency and necessary foundation" [ref=e2651] [cursor=pointer]':
+              - /url: /debate/rasmussen-clifton-contingency-argument-2019/
+              - generic "Debate 75" [ref=e2652]: "75"
+              - generic [ref=e2653]:
+                - text: Contingency and necessary foundation
+                - generic "Debate year 2019" [ref=e2654]: "2019"
+            - generic "Topics" [ref=e2655]: Cosmological arguments
+            - generic [ref=e2657]:
+              - generic "Interlocutor photos" [ref=e2658]
+              - generic [ref=e2659]: 1 hr 24 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Rasmussen defends global explanatory inquiry and a noncontingent foundation; Clifton challenges its scope, modal bridge, and advantage over a brute contingent endpoint.
+              - generic:
+                - generic: Speakers
+                - paragraph: Josh Rasmussen | Scott Clifton
+          - article [ref=e2660]:
+            - 'link "Open Debate 80: Argument from limits" [ref=e2661] [cursor=pointer]':
+              - /url: /debate/rasmussen-schmid-argument-from-limits-2023/
+              - generic "Debate 80" [ref=e2662]: "80"
+              - generic [ref=e2663]:
+                - text: Argument from limits
+                - generic "Debate year 2023" [ref=e2664]: "2023"
+            - generic "Topics" [ref=e2665]: Cosmological arguments
+            - generic [ref=e2667]:
+              - generic "Interlocutor photos" [ref=e2668]
+              - generic [ref=e2669]: 1 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Rasmussen develops arbitrary limits into qualified perfection; Schmid’s holistic, axiological, symmetry, and necessity objections leave the God-like conclusion substantially underdetermined.
+              - generic:
+                - generic: Speakers
+                - paragraph: Josh Rasmussen | Joe Schmid
+          - article [ref=e2670]:
+            - 'link "Open Debate 83: Kalam causal principle and necessity" [ref=e2671] [cursor=pointer]':
+              - /url: /debate/loke-oppy-kalam-causal-principle-2020/
+              - generic "Debate 83" [ref=e2672]: "83"
+              - generic [ref=e2673]:
+                - text: Kalam causal principle and necessity
+                - generic "Debate year 2020" [ref=e2674]: "2020"
+            - generic "Topics" [ref=e2675]: Cosmological arguments
+            - generic [ref=e2677]:
+              - generic "Interlocutor photos" [ref=e2678]
+              - generic [ref=e2679]: 2 hr 28 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Loke builds a first-cause route toward personal agency, while Oppy challenges its modal bridges and develops a comparatively economical necessary-natural-state alternative.
+              - generic:
+                - generic: Speakers
+                - paragraph: Andrew Loke | Graham Oppy
+          - article [ref=e2680]:
+            - 'link "Open Debate 84: God science and universe origins" [ref=e2681] [cursor=pointer]':
+              - /url: /debate/krauss-meyer-lamoureux-god-science-universe-2016/
+              - generic "Debate 84" [ref=e2682]: "84"
+              - generic [ref=e2683]:
+                - text: God science and universe origins
+                - generic "Debate year 2016" [ref=e2684]: "2016"
+            - generic "Topics" [ref=e2685]:
+              - generic [ref=e2686]: Cosmological arguments
+              - generic [ref=e2687]: Science & design
+              - generic [ref=e2688]: God & theism
+            - generic [ref=e2689]:
+              - generic "Interlocutor photos" [ref=e2690]
+              - generic [ref=e2691]: 2 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Krauss argues science needs no God; Meyer argues information and fine-tuning point to design; Lamoureux defends evolutionary creation while rejecting ID interventionism.
+              - generic:
+                - generic: Speakers
+                - paragraph: Lawrence Krauss | Stephen Meyer and Denis Lamoureux
+          - article [ref=e2692]:
+            - 'link "Open Debate 92: Kalam beginning and temporal infinity" [ref=e2693] [cursor=pointer]':
+              - /url: /debate/craig-malpass-universe-begin-exist-2020/
+              - generic "Debate 92" [ref=e2694]: "92"
+              - generic [ref=e2695]:
+                - text: Kalam beginning and temporal infinity
+                - generic "Debate year 2020" [ref=e2696]: "2020"
+            - generic "Topics" [ref=e2697]: Cosmological arguments
+            - generic [ref=e2699]:
+              - generic "Interlocutor photos" [ref=e2700]
+              - generic [ref=e2701]: 2 hr 5 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defended actual-infinity, temporal-asymmetry, and successive-addition arguments; Malpass more effectively challenged their modal warrant, tense symmetry, quantification, and paradox-based support.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Alex Malpass
+          - article [ref=e2702]:
+            - 'link "Open Debate 117: Contingency and nothingness" [ref=e2703] [cursor=pointer]':
+              - /url: /debate/bertuzzi-oconnor-contingency-argument-2018/
+              - generic "Debate 117" [ref=e2704]: "117"
+              - generic [ref=e2705]:
+                - text: Contingency and nothingness
+                - generic "Debate year 2018" [ref=e2706]: "2018"
+            - generic "Topics" [ref=e2707]: Cosmological arguments
+            - generic [ref=e2709]:
+              - generic "Interlocutor photos" [ref=e2710]
+              - generic [ref=e2711]: 1 hr 07 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Bertuzzi defends an external necessary foundation, while O'Connor presses modal, compositional, symmetry, and underdetermination objections against identifying that foundation as God.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cameron Bertuzzi | Alex O'Connor
+          - article [ref=e2712]:
+            - 'link "Open Debate 122: God, contingency, and evil" [ref=e2713] [cursor=pointer]':
+              - /url: /debate/horn-oconnor-god-existence-2020/
+              - generic "Debate 122" [ref=e2714]: "122"
+              - generic [ref=e2715]:
+                - text: God, contingency, and evil
+                - generic "Debate year 2020" [ref=e2716]: "2020"
+            - generic "Topics" [ref=e2717]:
+              - generic [ref=e2718]: Cosmological arguments
+              - generic [ref=e2719]: Evil & suffering
+              - generic [ref=e2720]: God & theism
+            - generic [ref=e2721]:
+              - generic "Interlocutor photos" [ref=e2722]
+              - generic [ref=e2723]: 2 hr 06 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Horn develops a cumulative classical-theist case, while O'Connor's quantum, metaethical, personal-explanation, and animal-suffering challenges expose consequential gaps in its foundations and identification.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn | Alex O'Connor
+          - article [ref=e2724]:
+            - 'link "Open Debate 126: Kalam cosmological argument" [ref=e2725] [cursor=pointer]':
+              - /url: /debate/craig-clifton-kalam-cosmological-argument-2021/
+              - generic "Debate 126" [ref=e2726]: "126"
+              - generic [ref=e2727]:
+                - text: Kalam cosmological argument
+                - generic "Debate year 2021" [ref=e2728]: "2021"
+            - generic "Topics" [ref=e2729]:
+              - generic [ref=e2730]: Cosmological arguments
+              - generic [ref=e2731]: Logic & reason
+            - generic [ref=e2732]:
+              - generic "Interlocutor photos" [ref=e2733]
+              - generic [ref=e2734]: 1 hr 00 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defends metaphysical causation beyond spacetime, while Clifton argues ordinary causal evidence supports narrower principles and leaves transcendent creation insufficiently warranted.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Scott Clifton
+          - article [ref=e2735]:
+            - 'link "Open Debate 139: Theism, fine-tuning, and anthropic evidence" [ref=e2736] [cursor=pointer]':
+              - /url: /debate/adelstein-dillahunty-belief-god-2025/
+              - generic "Debate 139" [ref=e2737]: "139"
+              - generic [ref=e2738]:
+                - text: Theism, fine-tuning, and anthropic evidence
+                - generic "Debate year 2025" [ref=e2739]: "2025"
+            - generic "Topics" [ref=e2740]:
+              - generic [ref=e2741]: Cosmological arguments
+              - generic [ref=e2742]: Logic & reason
+              - generic [ref=e2743]: God & theism
+            - generic [ref=e2744]:
+              - generic "Interlocutor photos" [ref=e2745]
+              - generic [ref=e2746]: 1 hr 54 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Adelstein presented a cumulative Bayesian case for theism, while Dillahunty more consistently exposed underdetermined likelihoods, divine motives, and omnimax identification.
+              - generic:
+                - generic: Speakers
+                - paragraph: Matthew Adelstein | Matt Dillahunty
+          - article [ref=e2747]:
+            - 'link "Open Debate 140: Classical theism, essence, and evidence" [ref=e2748] [cursor=pointer]':
+              - /url: /debate/rhodes-dillahunty-evidence-god-2021/
+              - generic "Debate 140" [ref=e2749]: "140"
+              - generic [ref=e2750]:
+                - text: Classical theism, essence, and evidence
+                - generic "Debate year 2021" [ref=e2751]: "2021"
+            - generic "Topics" [ref=e2752]:
+              - generic [ref=e2753]: Cosmological arguments
+              - generic [ref=e2754]: Logic & reason
+              - generic [ref=e2755]: God & theism
+            - generic [ref=e2756]:
+              - generic "Interlocutor photos" [ref=e2757]
+              - generic [ref=e2758]: 3 hr 01 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Rhodes defended a metaphysical route from finite composition to classical theism; Dillahunty pressed evidential, ontological, agency, identification, and hiddenness objections.
+              - generic:
+                - generic: Speakers
+                - paragraph: Kenny Rhodes | Matt Dillahunty
+          - article [ref=e2759]:
+            - 'link "Open Debate 141: Axiomatic first cause and evidence" [ref=e2760] [cursor=pointer]':
+              - /url: /debate/fischer-dillahunty-axiomatic-evidence-god-2020/
+              - generic "Debate 141" [ref=e2761]: "141"
+              - generic [ref=e2762]:
+                - text: Axiomatic first cause and evidence
+                - generic "Debate year 2020" [ref=e2763]: "2020"
+            - generic "Topics" [ref=e2764]:
+              - generic [ref=e2765]: Cosmological arguments
+              - generic [ref=e2766]: Logic & reason
+            - generic [ref=e2767]:
+              - generic "Interlocutor photos" [ref=e2768]
+              - generic [ref=e2769]: 2 hr 41 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Fischer defended axiomatic theism, causal agency, and testimony; Dillahunty pressed discriminating evidence, modal justification, consistent standards, and identifiable divine attribution.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ben Fischer | Matt Dillahunty
+          - article [ref=e2770]:
+            - 'link "Open Debate 168: Evidence, cosmology, and divine explanation" [ref=e2771] [cursor=pointer]':
+              - /url: /debate/craig-krauss-evidence-god-2012/
+              - generic "Debate 168" [ref=e2772]: "168"
+              - generic [ref=e2773]:
+                - text: Evidence, cosmology, and divine explanation
+                - generic "Debate year 2012" [ref=e2774]: "2012"
+            - generic "Topics" [ref=e2775]:
+              - generic [ref=e2776]: Cosmological arguments
+              - generic [ref=e2777]: Logic & reason
+              - generic [ref=e2778]: God & theism
+            - generic [ref=e2779]:
+              - generic "Interlocutor photos" [ref=e2780]
+              - generic [ref=e2781]: 2 hr 14 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig advances a cumulative theistic inference; Krauss counters that natural alternatives, evidential uncertainty, secular morality, and ordinary history prevent decisive discrimination.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Lawrence Krauss
+          - article [ref=e2782]:
+            - 'link "Open Debate 169: Cosmology, fine-tuning, and explanatory scope" [ref=e2783] [cursor=pointer]':
+              - /url: /debate/lennox-krauss-universe-god-question-2013/
+              - generic "Debate 169" [ref=e2784]: "169"
+              - generic [ref=e2785]:
+                - text: Cosmology, fine-tuning, and explanatory scope
+                - generic "Debate year 2013" [ref=e2786]: "2013"
+            - generic "Topics" [ref=e2787]: Cosmological arguments
+            - generic [ref=e2789]:
+              - generic "Interlocutor photos" [ref=e2790]
+              - generic [ref=e2791]: 1 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox argues that intelligibility, fine-tuning, and existence favor divine mind; Krauss counters with physical explanations, selection effects, and demanding evidential standards.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Lawrence Krauss
+          - article [ref=e2792]:
+            - 'link "Open Debate 244: Contingency, idealism, and a necessary mind" [ref=e2793] [cursor=pointer]':
+              - /url: /debate/jones-schmid-contingency-god-2022/
+              - generic "Debate 244" [ref=e2794]: "244"
+              - generic [ref=e2795]:
+                - text: Contingency, idealism, and a necessary mind
+                - generic "Debate year 2022" [ref=e2796]: "2022"
+            - generic "Topics" [ref=e2797]:
+              - generic [ref=e2798]: Cosmological arguments
+              - generic [ref=e2799]: Mind & consciousness
+            - generic [ref=e2800]:
+              - generic "Interlocutor photos" [ref=e2801]
+              - generic [ref=e2802]: 1 hr 42 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Schmid won by fourteen points because his focused underdetermination objections repeatedly exposed unsupported transitions in Jones’s ambitious, wide-ranging explanatory case.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Joseph Schmid
+      - generic [ref=e2803]:
+        - generic [ref=e2804]:
+          - generic [ref=e2805]:
+            - paragraph [ref=e2806]: 21 debates
+            - heading "Science and design" [level=2] [ref=e2807]
+          - paragraph [ref=e2808]: Scientific explanation, naturalism, physics, cosmic or mathematical design, and the scope and limits of empirical methods.
+        - generic [ref=e2809]:
+          - article [ref=e2810]:
+            - 'link "Open Debate 04: Science and explanation" [ref=e2811] [cursor=pointer]':
+              - /url: /debate/lennox-atkins-science-explain-everything-2019/
+              - generic "Debate 04" [ref=e2812]: "04"
+              - generic [ref=e2813]:
+                - text: Science and explanation
+                - generic "Debate year 2019" [ref=e2814]: "2019"
+            - generic "Topics" [ref=e2815]: Science & design
+            - generic [ref=e2817]:
+              - generic "Interlocutor photos" [ref=e2818]
+              - generic [ref=e2819]: 1 hr 38 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox defended explanatory pluralism across purpose, rationality, miracles, origins, and ethics, while Atkins pressed public evidence, natural sufficiency, and scientific progress.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Peter Atkins
+          - article [ref=e2820]:
+            - 'link "Open Debate 08: Science, morality, and God" [ref=e2821] [cursor=pointer]':
+              - /url: /debate/wood-shermer-god-exist-2022/
+              - generic "Debate 08" [ref=e2822]: "08"
+              - generic [ref=e2823]:
+                - text: Science, morality, and God
+                - generic "Debate year 2022" [ref=e2824]: "2022"
+            - generic "Topics" [ref=e2825]:
+              - generic [ref=e2826]: Science & design
+              - generic [ref=e2827]: Morality & ethics
+              - generic [ref=e2828]: God & theism
+            - generic [ref=e2829]:
+              - generic "Interlocutor photos" [ref=e2830]
+              - generic [ref=e2831]: 2 hr 17 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Wood defended theism through intelligibility, moral grounding, and wider eschatological context; Shermer prevailed through empirical discrimination, natural mechanisms, secular morality, and suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Wood | Michael Shermer
+          - article [ref=e2832]:
+            - 'link "Open Debate 17: Science and faith" [ref=e2833] [cursor=pointer]':
+              - /url: /debate/collins-oconnor-god-existence-2024/
+              - generic "Debate 17" [ref=e2834]: "17"
+              - generic [ref=e2835]:
+                - text: Science and faith
+                - generic "Debate year 2024" [ref=e2836]: "2024"
+            - generic "Topics" [ref=e2837]:
+              - generic [ref=e2838]: Science & design
+              - generic [ref=e2839]: Religion & society
+            - generic [ref=e2840]:
+              - generic "Interlocutor photos" [ref=e2841]
+              - generic [ref=e2842]: 1 hr 47 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Collins builds a cumulative Christian case from fine-tuning, morality, resurrection, revelation, and beauty, while answering suffering through orderly creation and noncoercive evidence.
+              - generic:
+                - generic: Speakers
+                - paragraph: Francis Collins | Alex O'Connor
+          - article [ref=e2843]:
+            - 'link "Open Debate 30: Naturalism and explanatory balance" [ref=e2844] [cursor=pointer]':
+              - /url: /debate/lowder-turek-naturalism-theism-2016/
+              - generic "Debate 30" [ref=e2845]: "30"
+              - generic [ref=e2846]:
+                - text: Naturalism and explanatory balance
+                - generic "Debate year 2016" [ref=e2847]: "2016"
+            - generic "Topics" [ref=e2848]: Science & design
+            - generic [ref=e2850]:
+              - generic "Interlocutor photos" [ref=e2851]
+              - generic [ref=e2852]: 2 hr 12 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lowder's calibrated comparative case consistently outperformed Turek's cumulative theistic inferences, especially concerning embodied minds, suffering, hiddenness, and naturalistic cognitive reliability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jeffery Jay Lowder | Frank Turek
+          - article [ref=e2853]:
+            - 'link "Open Debate 35: Science, religion, and scientism" [ref=e2854] [cursor=pointer]':
+              - /url: /debate/carroll-shermer-hutchinson-dsouza-science-religion-2012/
+              - generic "Debate 35" [ref=e2855]: "35"
+              - generic [ref=e2856]:
+                - text: Science, religion, and scientism
+                - generic "Debate year 2012" [ref=e2857]: "2012"
+            - generic "Topics" [ref=e2858]:
+              - generic [ref=e2859]: Science & design
+              - generic [ref=e2860]: Religion & society
+            - generic [ref=e2861]:
+              - generic "Interlocutor photos" [ref=e2862]
+              - generic [ref=e2863]: 2 hr 5 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Carroll and Shermer argue that naturalism and scientific explanations have displaced religious claims; Hutchinson and D'Souza argue that science has not refuted religion because it cannot settle every religious, historical, moral, or existential claim.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sean Carroll and Michael Shermer | Ian Hutchinson and Dinesh D'Souza
+          - article [ref=e2864]:
+            - 'link "Open Debate 36: Metaphysics and scientific worldview" [ref=e2865] [cursor=pointer]':
+              - /url: /debate/carroll-halvorson-metaphysics-worldview-2016/
+              - generic "Debate 36" [ref=e2866]: "36"
+              - generic [ref=e2867]:
+                - text: Metaphysics and scientific worldview
+                - generic "Debate year 2016" [ref=e2868]: "2016"
+            - generic "Topics" [ref=e2869]: Science & design
+            - generic [ref=e2871]:
+              - generic "Interlocutor photos" [ref=e2872]
+              - generic [ref=e2873]: 1 hr 33 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Carroll defends revisable naturalism across science and value, while Halvorson argues scientific completeness underdetermines theism and offers qualified moral and existential alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sean Carroll | Hans Halvorson
+          - article [ref=e2874]:
+            - 'link "Open Debate 51: Design, DNA, and naturalism" [ref=e2875] [cursor=pointer]':
+              - /url: /debate/lennox-atkins-duelling-professors-2012/
+              - generic "Debate 51" [ref=e2876]: "51"
+              - generic [ref=e2877]:
+                - text: Design, DNA, and naturalism
+                - generic "Debate year 2012" [ref=e2878]: "2012"
+            - generic "Topics" [ref=e2879]:
+              - generic [ref=e2880]: Science & design
+              - generic [ref=e2881]: Evolution & life origins
+            - generic [ref=e2882]:
+              - generic "Interlocutor photos" [ref=e2883]
+              - generic [ref=e2884]: 2 hr 57 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox pressed cumulative explanatory gaps and Christian evidence, while Atkins defended methodological economy, emergent natural processes, evolved morality, and evidential restraint.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Peter Atkins
+          - article [ref=e2885]:
+            - 'link "Open Debate 67: Digital physics and theistic idealism" [ref=e2886] [cursor=pointer]':
+              - /url: /debate/jones-fodor-digital-physics-god-2021/
+              - generic "Debate 67" [ref=e2887]: "67"
+              - generic [ref=e2888]:
+                - text: Digital physics and theistic idealism
+                - generic "Debate year 2021" [ref=e2889]: "2021"
+            - generic "Topics" [ref=e2890]:
+              - generic [ref=e2891]: Science & design
+              - generic [ref=e2892]: Mind & consciousness
+            - generic [ref=e2893]:
+              - generic "Interlocutor photos" [ref=e2894]
+              - generic [ref=e2895]: 2 hr 07 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones links emergent spacetime and structural physics to theistic idealism; Fodor counters that the science permits nonmental foundations and better constrains explanation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | James Fodor
+          - article [ref=e2896]:
+            - 'link "Open Debate 85: Science, God, and human futures" [ref=e2897] [cursor=pointer]':
+              - /url: /debate/atkins-fox-god-science-future-humanity-2024/
+              - generic "Debate 85" [ref=e2898]: "85"
+              - generic [ref=e2899]:
+                - text: Science, God, and human futures
+                - generic "Debate year 2024" [ref=e2900]: "2024"
+            - generic "Topics" [ref=e2901]:
+              - generic [ref=e2902]: Science & design
+              - generic [ref=e2903]: Religion & society
+              - generic [ref=e2904]: God & theism
+            - generic [ref=e2905]:
+              - generic "Interlocutor photos" [ref=e2906]
+              - generic [ref=e2907]: 1 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Atkins defended scientific materialism and finite purpose; Fox more consistently distinguished mechanism from metaphysics while grounding morality, personhood, hope, and technological restraint.
+              - generic:
+                - generic: Speakers
+                - paragraph: Peter Atkins | Keith Fox
+          - article [ref=e2908]:
+            - 'link "Open Debate 99: Digital physics and naturalistic pantheism" [ref=e2909] [cursor=pointer]':
+              - /url: /debate/jones-jump-digital-physics-god-2019/
+              - generic "Debate 99" [ref=e2910]: "99"
+              - generic [ref=e2911]:
+                - text: Digital physics and naturalistic pantheism
+                - generic "Debate year 2019" [ref=e2912]: "2019"
+            - generic "Topics" [ref=e2913]:
+              - generic [ref=e2914]: Science & design
+              - generic [ref=e2915]: God & theism
+            - generic [ref=e2916]:
+              - generic "Interlocutor photos" [ref=e2917]
+              - generic [ref=e2918]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones defended theistic idealism through consciousness and emergent spacetime; Jump pressed underdetermination, epistemic limits, natural alternatives, and the explanatory cost of divine attributes.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Tom Jump
+          - article [ref=e2919]:
+            - 'link "Open Debate 107: Science, faith, and divine evidence" [ref=e2920] [cursor=pointer]':
+              - /url: /debate/lennox-ruse-science-faith-evidence-god-2018/
+              - generic "Debate 107" [ref=e2921]: "107"
+              - generic [ref=e2922]:
+                - text: Science, faith, and divine evidence
+                - generic "Debate year 2018" [ref=e2923]: "2018"
+            - generic "Topics" [ref=e2924]:
+              - generic [ref=e2925]: Science & design
+              - generic [ref=e2926]: Logic & reason
+              - generic [ref=e2927]: Religion & society
+              - generic [ref=e2928]: God & theism
+            - generic [ref=e2929]:
+              - generic "Interlocutor photos" [ref=e2930]
+              - generic [ref=e2931]: 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox defended cumulative Christian evidence, while Ruse separated faith from inference and pressed a particularly effective challenge from innocent suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Michael Ruse
+          - article [ref=e2932]:
+            - 'link "Open Debate 121: Science, miracles, and God" [ref=e2933] [cursor=pointer]':
+              - /url: /debate/dawkins-lennox-science-buried-god-2017/
+              - generic "Debate 121" [ref=e2934]: "121"
+              - generic [ref=e2935]:
+                - text: Science, miracles, and God
+                - generic "Debate year 2017" [ref=e2936]: "2017"
+            - generic "Topics" [ref=e2937]:
+              - generic [ref=e2938]: Science & design
+              - generic [ref=e2939]: Resurrection & miracles
+              - generic [ref=e2940]: God & theism
+            - generic [ref=e2941]:
+              - generic "Interlocutor photos" [ref=e2942]
+              - generic [ref=e2943]: 1 hr 22 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox defended theism's explanatory compatibility and Christian implications; Dawkins more consistently pressed evolutionary alternatives, creator complexity, anthropic selection, and independent evidential burdens.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Richard Dawkins
+          - article [ref=e2944]:
+            - 'link "Open Debate 147: Naturalism, mind, and ultimate reality" [ref=e2945] [cursor=pointer]':
+              - /url: /debate/dennett-clayton-naturalism-ultimate-reality-2012/
+              - generic "Debate 147" [ref=e2946]: "147"
+              - generic [ref=e2947]:
+                - text: Naturalism, mind, and ultimate reality
+                - generic "Debate year 2012" [ref=e2948]: "2012"
+            - generic "Topics" [ref=e2949]:
+              - generic [ref=e2950]: Science & design
+              - generic [ref=e2951]: Mind & consciousness
+              - generic [ref=e2952]: God & theism
+            - generic [ref=e2953]:
+              - generic "Interlocutor photos" [ref=e2954]
+              - generic [ref=e2955]: 1 hr 06 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dennett defends naturalistic explanations and epistemic accountability, while Clayton argues for subjective realism, religious integration, and a deeper ultimate reality.
+              - generic:
+                - generic: Speakers
+                - paragraph: Daniel Dennett | Philip Clayton
+          - article [ref=e2956]:
+            - 'link "Open Debate 159: Naturalism, evolution, and rationality" [ref=e2957] [cursor=pointer]':
+              - /url: /debate/wood-aron-ra-naturalism-2023/
+              - generic "Debate 159" [ref=e2958]: "159"
+              - generic [ref=e2959]:
+                - text: Naturalism, evolution, and rationality
+                - generic "Debate year 2023" [ref=e2960]: "2023"
+            - generic "Topics" [ref=e2961]:
+              - generic [ref=e2962]: Science & design
+              - generic [ref=e2963]: Evolution & life origins
+              - generic [ref=e2964]: Logic & reason
+            - generic [ref=e2965]:
+              - generic "Interlocutor photos" [ref=e2966]
+              - generic [ref=e2967]: 1 hr 52 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Wood challenges naturalism's warrant for abstract cognition; Aron Ra defends provisional, publicly corrected inquiry while requiring objective evidence for supernatural additions.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Wood | Aron Ra
+          - article [ref=e2968]:
+            - 'link "Open Debate 165: Theism, naturalism, and reasonable belief" [ref=e2969] [cursor=pointer]':
+              - /url: /debate/craig-rosenberg-faith-god-reasonable-2013/
+              - generic "Debate 165" [ref=e2970]: "165"
+              - generic [ref=e2971]:
+                - text: Theism, naturalism, and reasonable belief
+                - generic "Debate year 2013" [ref=e2972]: "2013"
+            - generic "Topics" [ref=e2973]:
+              - generic [ref=e2974]: Science & design
+              - generic [ref=e2975]: Logic & reason
+              - generic [ref=e2976]: God & theism
+            - generic [ref=e2977]:
+              - generic "Interlocutor photos" [ref=e2978]
+              - generic [ref=e2979]: 2 hr 47 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig’s strongest replies preserved several theistic inferences, while Rosenberg effectively separated atheism from eliminativism and exposed unresolved explanatory and moral-grounding assumptions.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Alex Rosenberg
+          - article [ref=e2980]:
+            - 'link "Open Debate 166: Theistic arguments and scientific naturalism" [ref=e2981] [cursor=pointer]':
+              - /url: /debate/craig-atkins-does-god-exist-2011/
+              - generic "Debate 166" [ref=e2982]: "166"
+              - generic [ref=e2983]:
+                - text: Theistic arguments and scientific naturalism
+                - generic "Debate year 2011" [ref=e2984]: "2011"
+            - generic "Topics" [ref=e2985]: Science & design
+            - generic [ref=e2987]:
+              - generic "Interlocutor photos" [ref=e2988]
+              - generic [ref=e2989]: 1 hr 53 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig advances cumulative cosmological, moral, and resurrection arguments, then answers naturalistic objections concerning causality, evolution, suffering, miracles, and scientific method.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Peter Atkins
+          - article [ref=e2990]:
+            - 'link "Open Debate 167: Naturalism, supernaturalism, and explanatory bridges" [ref=e2991] [cursor=pointer]':
+              - /url: /debate/craig-shook-existence-god-2008/
+              - generic "Debate 167" [ref=e2992]: "167"
+              - generic [ref=e2993]:
+                - text: Naturalism, supernaturalism, and explanatory bridges
+                - generic "Debate year 2008" [ref=e2994]: "2008"
+            - generic "Topics" [ref=e2995]: Science & design
+            - generic [ref=e2997]:
+              - generic "Interlocutor photos" [ref=e2998]
+              - generic [ref=e2999]: 2 hr 17 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig presented cumulative theistic arguments; Shook's disciplined evidential restraint and targeted alternative explanations more consistently exposed unresolved bridges from nature to God.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | John Shook
+          - article [ref=e3000]:
+            - 'link "Open Debate 206: God, science, and the poetry of reality" [ref=e3001] [cursor=pointer]':
+              - /url: /debate/williams-dawkins-god-science-reality-2026/
+              - generic "Debate 206" [ref=e3002]: "206"
+              - generic [ref=e3003]:
+                - text: God, science, and the poetry of reality
+                - generic "Debate year 2026" [ref=e3004]: "2026"
+            - generic "Topics" [ref=e3005]:
+              - generic [ref=e3006]: Science & design
+              - generic [ref=e3007]: God & theism
+            - generic [ref=e3008]:
+              - generic "Interlocutor photos" [ref=e3009]
+              - generic [ref=e3010]: 1 hr 39 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: "Scientific naturalism wins by one point: Dawkins leads on consciousness, creative by-products, and evolutionary suffering, while Williams answers more precisely on allegorical Genesis, noncompetitive divine action, and classical simplicity."
+              - generic:
+                - generic: Speakers
+                - paragraph: Rowan Williams | Richard Dawkins
+          - article [ref=e3011]:
+            - 'link "Open Debate 223: Scientific understanding and belief in God" [ref=e3012] [cursor=pointer]':
+              - /url: /debate/collins-dawkins-science-belief-god-2022/
+              - generic "Debate 223" [ref=e3013]: "223"
+              - generic [ref=e3014]:
+                - text: Scientific understanding and belief in God
+                - generic "Debate year 2022" [ref=e3015]: "2022"
+            - generic "Topics" [ref=e3016]:
+              - generic [ref=e3017]: Science & design
+              - generic [ref=e3018]: God & theism
+            - generic [ref=e3019]:
+              - generic "Interlocutor photos" [ref=e3020]
+              - generic [ref=e3021]: 1 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Collins preserves rational space through compatibility and cumulative signposts, but Dawkins wins by stronger natural explanations and sharper challenges concerning redundancy, suffering, and selective miracles.
+              - generic:
+                - generic: Speakers
+                - paragraph: Francis Collins | Richard Dawkins
+          - article [ref=e3022]:
+            - 'link "Open Debate 224: Superdeterminism, statistical independence, and measurement" [ref=e3023] [cursor=pointer]':
+              - /url: /debate/hossenfelder-kastrup-superdeterminism-2022/
+              - generic "Debate 224" [ref=e3024]: "224"
+              - generic [ref=e3025]:
+                - text: Superdeterminism, statistical independence, and measurement
+                - generic "Debate year 2022" [ref=e3026]: "2022"
+            - generic "Topics" [ref=e3027]:
+              - generic [ref=e3028]: Science & design
+              - generic [ref=e3029]: Free will & determinism
+            - generic [ref=e3030]:
+              - generic "Interlocutor photos" [ref=e3031]
+              - generic [ref=e3032]: 1 hr 16 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hossenfelder narrowly prevails by defending model-specific, local, testable research, while Kastrup exposes unresolved mechanisms, evidential motivation, and operational specification.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sabine Hossenfelder | Bernardo Kastrup
+          - article [ref=e3033]:
+            - 'link "Open Debate 257: Science and conceptual inquiry" [ref=e3034] [cursor=pointer]':
+              - /url: /debate/atkins-law-science-philosophy-formal-rounds-2014/
+              - generic "Debate 257" [ref=e3035]: "257"
+              - generic [ref=e3036]:
+                - text: Science and conceptual inquiry
+                - generic "Debate year 2014" [ref=e3037]: "2014"
+            - generic "Topics" [ref=e3038]:
+              - generic [ref=e3039]: Science & design
+              - generic [ref=e3040]: Logic & reason
+            - generic [ref=e3041]:
+              - generic "Interlocutor photos" [ref=e3042]
+              - generic [ref=e3043]: 1 hr 25 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Atkins champions evidence-driven scientific expansion; Law concedes science’s empirical authority while defending conceptual analysis, ultimate explanation, and moral justification as indispensable.
+              - generic:
+                - generic: Speakers
+                - paragraph: Peter Atkins | Stephen Law
+      - generic [ref=e3044]:
+        - generic [ref=e3045]:
+          - generic [ref=e3046]:
+            - paragraph [ref=e3047]: 7 debates
+            - heading "Evolution and origins of life" [level=2] [ref=e3048]
+          - paragraph [ref=e3049]: Biological evolution, prebiotic chemistry, the origin of life, cellular complexity, and biological design.
+        - generic [ref=e3050]:
+          - article [ref=e3051]:
+            - 'link "Open Debate 110: Evolution, agency, and Christian faith" [ref=e3052] [cursor=pointer]':
+              - /url: /debate/tour-garte-evolution-agency-christian-faith-2025/
+              - generic "Debate 110" [ref=e3053]: "110"
+              - generic [ref=e3054]:
+                - text: Evolution, agency, and Christian faith
+                - generic "Debate year 2025" [ref=e3055]: "2025"
+            - generic "Topics" [ref=e3056]:
+              - generic [ref=e3057]: Evolution & life origins
+              - generic [ref=e3058]: Christian belief & doctrine
+              - generic [ref=e3059]: Religion & society
+            - generic [ref=e3060]:
+              - generic "Interlocutor photos" [ref=e3061]
+              - generic [ref=e3062]: 1 hr 13 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Tour demands mechanisms for major transitions, while Garte defends a bounded evolutionary framework compatible with Christian unity, agency research, and acknowledged uncertainty.
+              - generic:
+                - generic: Speakers
+                - paragraph: James Tour | Sy Garte
+          - article [ref=e3063]:
+            - 'link "Open Debate 111: Origin of life cluelessness" [ref=e3064] [cursor=pointer]':
+              - /url: /debate/tour-farina-origin-life-cluelessness-2023/
+              - generic "Debate 111" [ref=e3065]: "111"
+              - generic [ref=e3066]:
+                - text: Origin of life cluelessness
+                - generic "Debate year 2023" [ref=e3067]: "2023"
+            - generic "Topics" [ref=e3068]: Evolution & life origins
+            - generic [ref=e3070]:
+              - generic "Interlocutor photos" [ref=e3071]
+              - generic [ref=e3072]: 2 hr 00 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Tour pressed unresolved selectivity, replication, information, and integration barriers; Farina answered with experimental component mechanisms while distinguishing incomplete reconstruction from scientific cluelessness.
+              - generic:
+                - generic: Speakers
+                - paragraph: James Tour | Dave Farina
+          - article [ref=e3073]:
+            - 'link "Open Debate 144: Evolution, naturalism, and divine design" [ref=e3074] [cursor=pointer]':
+              - /url: /debate/plantinga-dennett-evolution-naturalism-2018/
+              - generic "Debate 144" [ref=e3075]: "144"
+              - generic [ref=e3076]:
+                - text: Evolution, naturalism, and divine design
+                - generic "Debate year 2018" [ref=e3077]: "2018"
+            - generic "Topics" [ref=e3078]:
+              - generic [ref=e3079]: Evolution & life origins
+              - generic [ref=e3080]: Science & design
+              - generic [ref=e3081]: God & theism
+            - generic [ref=e3082]:
+              - generic "Interlocutor photos" [ref=e3083]
+              - generic [ref=e3084]: 1 hr 47 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Plantinga establishes evolutionary compatibility with divine guidance, while Dennett separates possibility from evidence and offers a narrowly stronger naturalistic account of cognitive reliability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alvin Plantinga | Daniel Dennett
+          - article [ref=e3085]:
+            - 'link "Open Debate 174: Evolution, consciousness, and ultimate origins" [ref=e3086] [cursor=pointer]':
+              - /url: /debate/dawkins-williams-kenny-humanity-ultimate-origins-2012/
+              - generic "Debate 174" [ref=e3087]: "174"
+              - generic [ref=e3088]:
+                - text: Evolution, consciousness, and ultimate origins
+                - generic "Debate year 2012" [ref=e3089]: "2012"
+            - generic "Topics" [ref=e3090]:
+              - generic [ref=e3091]: Evolution & life origins
+              - generic [ref=e3092]: Mind & consciousness
+            - generic [ref=e3093]:
+              - generic "Interlocutor photos" [ref=e3094]
+              - generic [ref=e3095]: 1 hr 28 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Williams presents humanity as the universe becoming linguistically and morally self-aware within a divine relation; Dawkins argues that natural selection explains apparent purpose without design; Kenny presses both accounts from an explicitly agnostic philosophical position.
+              - generic:
+                - generic: Speakers
+                - paragraph: Rowan Williams | Richard Dawkins and Anthony Kenny
+          - article [ref=e3096]:
+            - 'link "Open Debate 189: Origin of life chemistry and evidential overstatement" [ref=e3097] [cursor=pointer]':
+              - /url: /debate/tour-cronin-origin-of-life-2020/
+              - generic "Debate 189" [ref=e3098]: "189"
+              - generic [ref=e3099]:
+                - text: Origin of life chemistry and evidential overstatement
+                - generic "Debate year 2020" [ref=e3100]: "2020"
+            - generic "Topics" [ref=e3101]: Evolution & life origins
+            - generic [ref=e3103]:
+              - generic "Interlocutor photos" [ref=e3104]
+              - generic [ref=e3105]: 1 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Tour pressed unresolved cellular thresholds and evidential overstatement; Cronin defended experimentally testable chemical organization while carefully conceding uncertainty about historical sequence.
+              - generic:
+                - generic: Speakers
+                - paragraph: James Tour | Lee Cronin
+          - article [ref=e3106]:
+            - 'link "Open Debate 191: Origin of life and cellular design" [ref=e3107] [cursor=pointer]':
+              - /url: /debate/ruse-rana-origin-life-evolution-design-2013/
+              - generic "Debate 191" [ref=e3108]: "191"
+              - generic [ref=e3109]:
+                - text: Origin of life and cellular design
+                - generic "Debate year 2013" [ref=e3110]: "2013"
+            - generic "Topics" [ref=e3111]:
+              - generic [ref=e3112]: Evolution & life origins
+              - generic [ref=e3113]: Science & design
+            - generic [ref=e3114]:
+              - generic "Interlocutor photos" [ref=e3115]
+              - generic [ref=e3116]: 2 hr 28 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ruse defended cumulative chemical and evolutionary explanations, while Rana pressed chemical constraints, cellular integration, testability, and positive indicators of intelligent agency.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Ruse | Fuz Rana
+          - article [ref=e3117]:
+            - 'link "Open Debate 192: Prebiotic chemistry and scientific agnosticism" [ref=e3118] [cursor=pointer]':
+              - /url: /debate/tour-swamidass-origin-life-chemistry-2020/
+              - generic "Debate 192" [ref=e3119]: "192"
+              - generic [ref=e3120]:
+                - text: Prebiotic chemistry and scientific agnosticism
+                - generic "Debate year 2020" [ref=e3121]: "2020"
+            - generic "Topics" [ref=e3122]:
+              - generic [ref=e3123]: Evolution & life origins
+              - generic [ref=e3124]: Science & design
+            - generic [ref=e3125]:
+              - generic "Interlocutor photos" [ref=e3126]
+              - generic [ref=e3127]: 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Tour demands an integrated chemical pathway to first life, while Swamidass defends limited clues, probabilistic uncertainty, empirical testing, and scientific agnosticism.
+              - generic:
+                - generic: Speakers
+                - paragraph: James Tour | S. Joshua Swamidass
+      - generic [ref=e3128]:
+        - generic [ref=e3129]:
+          - generic [ref=e3130]:
+            - paragraph [ref=e3131]: 17 debates
+            - heading "Bible and historical Jesus" [level=2] [ref=e3132]
+          - paragraph [ref=e3133]: Biblical texts, Gospel reliability, authorship, historical Jesus, mythicism, interpretation, and scriptural ethics.
+        - generic [ref=e3134]:
+          - article [ref=e3135]:
+            - 'link "Open Debate 07: New Testament christology" [ref=e3136] [cursor=pointer]':
+              - /url: /debate/wood-oconnor-jesus-claim-god-2025/
+              - generic "Debate 07" [ref=e3137]: "07"
+              - generic [ref=e3138]:
+                - text: New Testament christology
+                - generic "Debate year 2025" [ref=e3139]: "2025"
+            - generic "Topics" [ref=e3140]: Bible & historical Jesus
+            - generic [ref=e3142]:
+              - generic "Interlocutor photos" [ref=e3143]
+              - generic [ref=e3144]: 2 hr 22 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Wood built a cumulative divine-identity case, while O'Connor more consistently showed that agency, delegation, and later devotion underdetermine Jesus's personal self-claim.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Wood | Alex O'Connor
+          - article [ref=e3145]:
+            - 'link "Open Debate 53: Bible truth and moral authority" [ref=e3146] [cursor=pointer]':
+              - /url: /debate/oconnor-dsouza-bible-true-2024/
+              - generic "Debate 53" [ref=e3147]: "53"
+              - generic [ref=e3148]:
+                - text: Bible truth and moral authority
+                - generic "Debate year 2024" [ref=e3149]: "2024"
+            - generic "Topics" [ref=e3150]:
+              - generic [ref=e3151]: Bible & historical Jesus
+              - generic [ref=e3152]: Morality & ethics
+            - generic [ref=e3153]:
+              - generic "Interlocutor photos" [ref=e3154]
+              - generic [ref=e3155]: 1 hr 56 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: O'Connor pressed concrete historical and moral counterexamples, while D'Souza defended genre-sensitive revelation, cumulative testimony, moral development, and Christianity's beneficial interpretive traditions.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dinesh D'Souza | Alex O'Connor
+          - article [ref=e3156]:
+            - 'link "Open Debate 90: Gospel reliability and contradictions" [ref=e3157] [cursor=pointer]':
+              - /url: /debate/akin-ehrman-gospels-historically-reliable-2022/
+              - generic "Debate 90" [ref=e3158]: "90"
+              - generic [ref=e3159]:
+                - text: Gospel reliability and contradictions
+                - generic "Debate year 2022" [ref=e3160]: "2022"
+            - generic "Topics" [ref=e3161]: Bible & historical Jesus
+            - generic [ref=e3163]:
+              - generic "Interlocutor photos" [ref=e3164]
+              - generic [ref=e3165]: 2 hr 13 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Akin defended cumulative Gospel reliability through ancient conventions and possible harmonizations; Ehrman pressed consequential narrative conflicts, compositional reshaping, and discontinuous self-presentation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jimmy Akin | Bart Ehrman
+          - article [ref=e3166]:
+            - 'link "Open Debate 125: Bible ethics and grace" [ref=e3167] [cursor=pointer]':
+              - /url: /debate/knechtles-oconnor-bible-ethics-grace-2024/
+              - generic "Debate 125" [ref=e3168]: "125"
+              - generic [ref=e3169]:
+                - text: Bible ethics and grace
+                - generic "Debate year 2024" [ref=e3170]: "2024"
+            - generic "Topics" [ref=e3171]:
+              - generic [ref=e3172]: Bible & historical Jesus
+              - generic [ref=e3173]: Christian belief & doctrine
+              - generic [ref=e3174]: Morality & ethics
+            - generic [ref=e3175]:
+              - generic "Interlocutor photos" [ref=e3176]
+              - generic [ref=e3177]: 2 hr 46 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: The Knechtles defend Christianity as a coherent gospel of grace, meaning, value, and divine justice; O'Connor presses the hardest biblical and doctrinal cases against that moral portrait.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cliffe and Stuart Knechtle | Alex O'Connor
+          - article [ref=e3178]:
+            - 'link "Open Debate 131: Historical Jesus and mythicism" [ref=e3179] [cursor=pointer]':
+              - /url: /debate/boyce-carrier-historical-jesus-mythicism-2022/
+              - generic "Debate 131" [ref=e3180]: "131"
+              - generic [ref=e3181]:
+                - text: Historical Jesus and mythicism
+                - generic "Debate year 2022" [ref=e3182]: "2022"
+            - generic "Topics" [ref=e3183]: Bible & historical Jesus
+            - generic [ref=e3185]:
+              - generic "Interlocutor photos" [ref=e3186]
+              - generic [ref=e3187]: 2 hr 54 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Boyce defended an earthly historical Jesus through Paul, kinship, and corroboration; Carrier pressed celestial compatibility, source dependence, ambiguity, and alternative appearance explanations.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stephen Boyce | Richard Carrier
+          - article [ref=e3188]:
+            - 'link "Open Debate 132: Paul and celestial Jesus mythicism" [ref=e3189] [cursor=pointer]':
+              - /url: /debate/mclatchie-carrier-paul-celestial-jesus-2018/
+              - generic "Debate 132" [ref=e3190]: "132"
+              - generic [ref=e3191]:
+                - text: Paul and celestial Jesus mythicism
+                - generic "Debate year 2018" [ref=e3192]: "2018"
+            - generic "Topics" [ref=e3193]: Bible & historical Jesus
+            - generic [ref=e3195]:
+              - generic "Interlocutor photos" [ref=e3196]
+              - generic [ref=e3197]: 1 hr 23 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Carrier narrowly prevailed by pressing Pauline ambiguity and source dependence, while McLatchie answered most forcefully through contextual analysis of the crucifying rulers.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jonathan McLatchie | Richard Carrier
+          - article [ref=e3198]:
+            - 'link "Open Debate 134: Historical Jesus, mythicism, and mimesis" [ref=e3199] [cursor=pointer]':
+              - /url: /debate/macdonald-carrier-jesus-mythicism-mimesis-2025/
+              - generic "Debate 134" [ref=e3200]: "134"
+              - generic [ref=e3201]:
+                - text: Historical Jesus, mythicism, and mimesis
+                - generic "Debate year 2025" [ref=e3202]: "2025"
+            - generic "Topics" [ref=e3203]: Bible & historical Jesus
+            - generic [ref=e3205]:
+              - generic "Interlocutor photos" [ref=e3206]
+              - generic [ref=e3207]: 2 hr 04 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: MacDonald defended a mortal Jewish teacher later mythologized; Carrier’s revelatory-origin model and challenges to literary and Josephian evidence narrowly prevailed.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dennis R. MacDonald | Richard Carrier
+          - article [ref=e3208]:
+            - 'link "Open Debate 135: Historical Jesus, mythicism, and textual evidence" [ref=e3209] [cursor=pointer]':
+              - /url: /debate/ehrman-price-historical-jesus-mythicism-2016/
+              - generic "Debate 135" [ref=e3210]: "135"
+              - generic [ref=e3211]:
+                - text: Historical Jesus, mythicism, and textual evidence
+                - generic "Debate year 2016" [ref=e3212]: "2016"
+            - generic "Topics" [ref=e3213]:
+              - generic [ref=e3214]: Bible & historical Jesus
+              - generic [ref=e3215]: Logic & reason
+            - generic [ref=e3216]:
+              - generic "Interlocutor photos" [ref=e3217]
+              - generic [ref=e3218]: 2 hr 34 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ehrman advances convergent historical evidence for Jesus; Price challenges source independence, terrestrial Pauline readings, chronology, and whether an ordinary founder explains Christianity.
+              - generic:
+                - generic: Speakers
+                - paragraph: Bart Ehrman | Robert Price
+          - article [ref=e3219]:
+            - 'link "Open Debate 176: Historical reliability of the Gospels" [ref=e3220] [cursor=pointer]':
+              - /url: /debate/ehrman-peter-williams-gospels-historically-reliable-2018/
+              - generic "Debate 176" [ref=e3221]: "176"
+              - generic [ref=e3222]:
+                - text: Historical reliability of the Gospels
+                - generic "Debate year 2018" [ref=e3223]: "2018"
+            - generic "Topics" [ref=e3224]: Bible & historical Jesus
+            - generic [ref=e3226]:
+              - generic "Interlocutor photos" [ref=e3227]
+              - generic [ref=e3228]: 1 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Williams defended cumulative contextual and theological continuity, while Ehrman more successfully separated informed settings from reliable events, highlighting provenance gaps and narrative conflicts.
+              - generic:
+                - generic: Speakers
+                - paragraph: Peter J. Williams | Bart Ehrman
+          - article [ref=e3229]:
+            - 'link "Open Debate 177: New Testament textual reconstruction" [ref=e3230] [cursor=pointer]':
+              - /url: /debate/ehrman-wallace-trust-text-new-testament-2011/
+              - generic "Debate 177" [ref=e3231]: "177"
+              - generic [ref=e3232]:
+                - text: New Testament textual reconstruction
+                - generic "Debate year 2011" [ref=e3233]: "2011"
+            - generic "Topics" [ref=e3234]: Bible & historical Jesus
+            - generic [ref=e3236]:
+              - generic "Interlocutor photos" [ref=e3237]
+              - generic [ref=e3238]: 2 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Wallace defended probabilistic textual recovery through abundant branching witnesses; Ehrman conceded broad continuity but showed that reconstructing their ancestor does not establish autographic identity.
+              - generic:
+                - generic: Speakers
+                - paragraph: Daniel B. Wallace | Bart Ehrman
+          - article [ref=e3239]:
+            - 'link "Open Debate 178: Authorship of the canonical Gospels" [ref=e3240] [cursor=pointer]':
+              - /url: /debate/ehrman-licona-who-wrote-gospels-2025/
+              - generic "Debate 178" [ref=e3241]: "178"
+              - generic [ref=e3242]:
+                - text: Authorship of the canonical Gospels
+                - generic "Debate year 2025" [ref=e3243]: "2025"
+            - generic "Topics" [ref=e3244]: Bible & historical Jesus
+            - generic [ref=e3246]:
+              - generic "Interlocutor photos" [ref=e3247]
+              - generic [ref=e3248]: 2 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Licona defended traditional Gospel authority through convergent testimony and collaboration; Ehrman prevailed by separating compatibility and reliability from identity-specific authorship evidence.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Licona | Bart Ehrman
+          - article [ref=e3249]:
+            - 'link "Open Debate 193: Gospels, miracles, identity, and resurrection" [ref=e3250] [cursor=pointer]':
+              - /url: /debate/crossan-licona-historical-jesus-2018/
+              - generic "Debate 193" [ref=e3251]: "193"
+              - generic [ref=e3252]:
+                - text: Gospels, miracles, identity, and resurrection
+                - generic "Debate year 2018" [ref=e3253]: "2018"
+            - generic "Topics" [ref=e3254]:
+              - generic [ref=e3255]: Bible & historical Jesus
+              - generic [ref=e3256]: Resurrection & miracles
+            - generic [ref=e3257]:
+              - generic "Interlocutor photos" [ref=e3258]
+              - generic [ref=e3259]: 2 hr 10 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Crossan defended a kingdom-centered, metaphorical resurrection account, while Licona pressed early-source, divine-identity, and bodily-transformation evidence through disciplined historical distinctions.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Dominic Crossan | Michael Licona
+          - article [ref=e3260]:
+            - 'link "Open Debate 228: New Testament reliability and Jesus" [ref=e3261] [cursor=pointer]':
+              - /url: /debate/ehrman-evans-new-testament-misquote-jesus-2010/
+              - generic "Debate 228" [ref=e3262]: "228"
+              - generic [ref=e3263]:
+                - text: New Testament reliability and Jesus
+                - generic "Debate year 2010" [ref=e3264]: "2010"
+            - generic "Topics" [ref=e3265]: Bible & historical Jesus
+            - generic [ref=e3267]:
+              - generic "Interlocutor photos" [ref=e3268]
+              - generic [ref=e3269]: 1 hr 28 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ehrman wins 85–83, chiefly through concrete contradictions and saying-level variants; Evans nearly matches him with historically secure cores, eyewitness-linked transmission, and contextual corroboration.
+              - generic:
+                - generic: Speakers
+                - paragraph: Bart Ehrman | Craig Evans
+          - article [ref=e3270]:
+            - 'link "Open Debate 229: Historicity of Jesus" [ref=e3271] [cursor=pointer]':
+              - /url: /debate/evans-carrier-did-jesus-exist-2016/
+              - generic "Debate 229" [ref=e3272]: "229"
+              - generic [ref=e3273]:
+                - text: Historicity of Jesus
+                - generic "Debate year 2016" [ref=e3274]: "2016"
+            - generic "Topics" [ref=e3275]: Bible & historical Jesus
+            - generic [ref=e3277]:
+              - generic "Interlocutor photos" [ref=e3278]
+              - generic [ref=e3279]: 2 hr 46 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Carrier prevailed 80–79 because Pauline ambiguity and limits on gospel corroboration narrowly outweighed Evans’s early letters, Josephus defense, and carefully qualified historical method.
+              - generic:
+                - generic: Speakers
+                - paragraph: Craig Evans | Richard Carrier
+          - article [ref=e3280]:
+            - 'link "Open Debate 242: Gospel history, theological versions, and resurrection" [ref=e3281] [cursor=pointer]':
+              - /url: /debate/white-crossan-biblical-jesus-historicity-2005/
+              - generic "Debate 242" [ref=e3282]: "242"
+              - generic [ref=e3283]:
+                - text: Gospel history, theological versions, and resurrection
+                - generic "Debate year 2005" [ref=e3284]: "2005"
+            - generic "Topics" [ref=e3285]:
+              - generic [ref=e3286]: Bible & historical Jesus
+              - generic [ref=e3287]: Resurrection & miracles
+              - generic [ref=e3288]: Logic & reason
+            - generic [ref=e3289]:
+              - generic "Interlocutor photos" [ref=e3290]
+              - generic [ref=e3291]: 3 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: White prevailed by one point through stronger textual rebuttals on Passion harmony and miracles, while Crossan dominated source dependence and narrowly won resurrection framing.
+              - generic:
+                - generic: Speakers
+                - paragraph: James White | John Dominic Crossan
+          - article [ref=e3292]:
+            - 'link "Open Debate 254: Biblical slavery, ownership, and moral defense" [ref=e3293] [cursor=pointer]':
+              - /url: /debate/knechtle-dillahunty-bowen-biblical-slavery-2021/
+              - generic "Debate 254" [ref=e3294]: "254"
+              - generic [ref=e3295]:
+                - text: Biblical slavery, ownership, and moral defense
+                - generic "Debate year 2021" [ref=e3296]: "2021"
+            - generic "Topics" [ref=e3297]:
+              - generic [ref=e3298]: Bible & historical Jesus
+              - generic [ref=e3299]: Morality & ethics
+            - generic [ref=e3300]:
+              - generic "Interlocutor photos" [ref=e3301]
+              - generic [ref=e3302]: 3 hr 50 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: The critics prevail by grounding ownership and coercion in specific texts, while the defenders’ canonical trajectory never fully reconciles those legal permissions.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cliffe Knechtle & Stuart Knechtle | Matt Dillahunty & Joshua Bowen
+          - article [ref=e3303]:
+            - 'link "Open Debate 258: The Bible''s historical reliability" [ref=e3304] [cursor=pointer]':
+              - /url: /debate/white-price-bible-truth-formal-rounds-2010/
+              - generic "Debate 258" [ref=e3305]: "258"
+              - generic [ref=e3306]:
+                - text: The Bible's historical reliability
+                - generic "Debate year 2010" [ref=e3307]: "2010"
+            - generic "Topics" [ref=e3308]: Bible & historical Jesus
+            - generic [ref=e3310]:
+              - generic "Interlocutor photos" [ref=e3311]
+              - generic [ref=e3312]: 2 hr 44 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: White narrowly wins through manuscript-stream and contextual replies, while Price’s strongest challenges expose methodological limits, oral flexibility, and inerrancy’s interpretive costs.
+              - generic:
+                - generic: Speakers
+                - paragraph: James White | Robert Price
+      - generic [ref=e3313]:
+        - generic [ref=e3314]:
+          - generic [ref=e3315]:
+            - paragraph [ref=e3316]: 19 debates
+            - heading "Resurrection and miracles" [level=2] [ref=e3317]
+          - paragraph [ref=e3318]: Resurrection evidence, miracle testimony, naturalistic alternatives, and the limits of historical proof of supernatural events.
+        - generic [ref=e3319]:
+          - article [ref=e3320]:
+            - 'link "Open Debate 31: Resurrection and historical evidence" [ref=e3321] [cursor=pointer]':
+              - /url: /debate/oconnor-craig-resurrection-2023/
+              - generic "Debate 31" [ref=e3322]: "31"
+              - generic [ref=e3323]:
+                - text: Resurrection and historical evidence
+                - generic "Debate year 2023" [ref=e3324]: "2023"
+            - generic "Topics" [ref=e3325]:
+              - generic [ref=e3326]: Resurrection & miracles
+              - generic [ref=e3327]: Logic & reason
+            - generic [ref=e3328]:
+              - generic "Interlocutor photos" [ref=e3329]
+              - generic [ref=e3330]: 1 hr 5 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defended resurrection through comparative explanation and early testimony, while O'Connor pressed source reliability, natural alternatives, prior probability, and evidential expectations.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Alex O'Connor
+          - article [ref=e3331]:
+            - 'link "Open Debate 37: Resurrection and historical method" [ref=e3332] [cursor=pointer]':
+              - /url: /debate/ehrman-bass-resurrection-history-2023/
+              - generic "Debate 37" [ref=e3333]: "37"
+              - generic [ref=e3334]:
+                - text: Resurrection and historical method
+                - generic "Debate year 2023" [ref=e3335]: "2023"
+            - generic "Topics" [ref=e3336]: Resurrection & miracles
+            - generic [ref=e3338]:
+              - generic "Interlocutor photos" [ref=e3339]
+              - generic [ref=e3340]: 1 hr 17 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Bass builds a cumulative resurrection case from appearances, unexpected belief, expansion, and visions; Ehrman answers through source criticism, ordinary alternatives, and comparative evidence.
+              - generic:
+                - generic: Speakers
+                - paragraph: Justin Bass | Bart Ehrman
+          - article [ref=e3341]:
+            - 'link "Open Debate 52: Resurrection reasonability and testimony" [ref=e3342] [cursor=pointer]':
+              - /url: /debate/horn-dillahunty-resurrection-reasonable-2021/
+              - generic "Debate 52" [ref=e3343]: "52"
+              - generic [ref=e3344]:
+                - text: Resurrection reasonability and testimony
+                - generic "Debate year 2021" [ref=e3345]: "2021"
+            - generic "Topics" [ref=e3346]:
+              - generic [ref=e3347]: Resurrection & miracles
+              - generic [ref=e3348]: Logic & reason
+            - generic [ref=e3349]:
+              - generic "Interlocutor photos" [ref=e3350]
+              - generic [ref=e3351]: 2 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Horn defended resurrection belief through testimony and comparative explanation; Dillahunty narrowly prevailed by separating sincerity from accuracy and emphasizing ordinary error.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn | Matt Dillahunty
+          - article [ref=e3352]:
+            - 'link "Open Debate 60: Resurrection witnesses and rival miracles" [ref=e3353] [cursor=pointer]':
+              - /url: /debate/horn-oconnor-jesus-resurrection-2026/
+              - generic "Debate 60" [ref=e3354]: "60"
+              - generic [ref=e3355]:
+                - text: Resurrection witnesses and rival miracles
+                - generic "Debate year 2026" [ref=e3356]: "2026"
+            - generic "Topics" [ref=e3357]: Resurrection & miracles
+            - generic [ref=e3359]:
+              - generic "Interlocutor photos" [ref=e3360]
+              - generic [ref=e3361]: 1 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Horn defended bodily continuity, appearances, sincerity, and the empty tomb, while O'Connor pressed source ambiguity, rival-testimony parity, corroboration deficits, and natural alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn | Alex O'Connor
+          - article [ref=e3362]:
+            - 'link "Open Debate 69: Resurrection burden and history" [ref=e3363] [cursor=pointer]':
+              - /url: /debate/winger-dillahunty-resurrection-unreasonable-2019/
+              - generic "Debate 69" [ref=e3364]: "69"
+              - generic [ref=e3365]:
+                - text: Resurrection burden and history
+                - generic "Debate year 2019" [ref=e3366]: "2019"
+            - generic "Topics" [ref=e3367]:
+              - generic [ref=e3368]: Resurrection & miracles
+              - generic [ref=e3369]: Logic & reason
+            - generic [ref=e3370]:
+              - generic "Interlocutor photos" [ref=e3371]
+              - generic [ref=e3372]: 1 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Winger builds a cumulative historical case for resurrection, while Dillahunty argues that transmitted reports and unresolved causal gaps justify withholding belief.
+              - generic:
+                - generic: Speakers
+                - paragraph: Mike Winger | Matt Dillahunty
+          - article [ref=e3373]:
+            - 'link "Open Debate 78: Resurrection and ancient Christianity" [ref=e3374] [cursor=pointer]':
+              - /url: /debate/albrecht-oppy-resurrection-ancient-christianity-2023/
+              - generic "Debate 78" [ref=e3375]: "78"
+              - generic [ref=e3376]:
+                - text: Resurrection and ancient Christianity
+                - generic "Debate year 2023" [ref=e3377]: "2023"
+            - generic "Topics" [ref=e3378]:
+              - generic [ref=e3379]: Resurrection & miracles
+              - generic [ref=e3380]: Christian belief & doctrine
+            - generic [ref=e3381]:
+              - generic "Interlocutor photos" [ref=e3382]
+              - generic [ref=e3383]: 1 hr 03 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Albrecht builds cumulative resurrection and ecclesial-continuity arguments, while Oppy presses visionary alternatives, transmission uncertainty, selective preservation, and early Christian plurality.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Albrecht | Graham Oppy
+          - article [ref=e3384]:
+            - 'link "Open Debate 87: Resurrection probability and source reliability" [ref=e3385] [cursor=pointer]':
+              - /url: /debate/christopoulos-dillahunty-resurrection-historical-event-2024/
+              - generic "Debate 87" [ref=e3386]: "87"
+              - generic [ref=e3387]:
+                - text: Resurrection probability and source reliability
+                - generic "Debate year 2024" [ref=e3388]: "2024"
+            - generic "Topics" [ref=e3389]: Resurrection & miracles
+            - generic [ref=e3391]:
+              - generic "Interlocutor photos" [ref=e3392]
+              - generic [ref=e3393]: 2 hr 34 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Christopoulos presented a cumulative probabilistic resurrection case, while Dillahunty’s source challenges and distinctions between sincerity, likelihood, and warranted belief preserved rational uncertainty.
+              - generic:
+                - generic: Speakers
+                - paragraph: Than Christopoulos | Matt Dillahunty
+          - article [ref=e3394]:
+            - 'link "Open Debate 130: Resurrection evidence and natural explanations" [ref=e3395] [cursor=pointer]':
+              - /url: /debate/licona-carrier-resurrection-history-2010/
+              - generic "Debate 130" [ref=e3396]: "130"
+              - generic [ref=e3397]:
+                - text: Resurrection evidence and natural explanations
+                - generic "Debate year 2010" [ref=e3398]: "2010"
+            - generic "Topics" [ref=e3399]:
+              - generic [ref=e3400]: Resurrection & miracles
+              - generic [ref=e3401]: Logic & reason
+            - generic [ref=e3402]:
+              - generic "Interlocutor photos" [ref=e3403]
+              - generic [ref=e3404]: 2 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Licona argued resurrection best explains early testimony; Carrier countered that prior probability, visionary mechanisms, and source limitations preserve stronger natural explanations.
+              - generic:
+                - generic: Speakers
+                - paragraph: Mike Licona | Richard Carrier
+          - article [ref=e3405]:
+            - 'link "Open Debate 136: Resurrection, Gospel testimony, and belief" [ref=e3406] [cursor=pointer]':
+              - /url: /debate/douthat-ehrman-resurrection-gospel-history-2026/
+              - generic "Debate 136" [ref=e3407]: "136"
+              - generic [ref=e3408]:
+                - text: Resurrection, Gospel testimony, and belief
+                - generic "Debate year 2026" [ref=e3409]: "2026"
+            - generic "Topics" [ref=e3410]:
+              - generic [ref=e3411]: Resurrection & miracles
+              - generic [ref=e3412]: Bible & historical Jesus
+            - generic [ref=e3413]:
+              - generic "Interlocutor photos" [ref=e3414]
+              - generic [ref=e3415]: 1 hr 24 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Douthat pressed witness continuity and resurrection strangeness; Ehrman narrowly prevailed through source criticism, calibrated historical method, and a multistage visionary reconstruction.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ross Douthat | Bart Ehrman
+          - article [ref=e3416]:
+            - 'link "Open Debate 137: Resurrection, historical analogy, and evidence" [ref=e3417] [cursor=pointer]':
+              - /url: /debate/price-craig-resurrection-historical-analogy-1999/
+              - generic "Debate 137" [ref=e3418]: "137"
+              - generic [ref=e3419]:
+                - text: Resurrection, historical analogy, and evidence
+                - generic "Debate year 1999" [ref=e3420]: "1999"
+            - generic "Topics" [ref=e3421]:
+              - generic [ref=e3422]: Resurrection & miracles
+              - generic [ref=e3423]: Logic & reason
+            - generic [ref=e3424]:
+              - generic "Interlocutor photos" [ref=e3425]
+              - generic [ref=e3426]: 2 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig built a cumulative resurrection case from early sources; Price challenged its historical foundations through analogy, literary criticism, and ordinary belief-forming mechanisms.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Robert Price
+          - article [ref=e3427]:
+            - 'link "Open Debate 138: Bodily resurrection, ancient parallels, and testimony" [ref=e3428] [cursor=pointer]':
+              - /url: /debate/albrecht-price-bodily-resurrection-2022/
+              - generic "Debate 138" [ref=e3429]: "138"
+              - generic [ref=e3430]:
+                - text: Bodily resurrection, ancient parallels, and testimony
+                - generic "Debate year 2022" [ref=e3431]: "2022"
+            - generic "Topics" [ref=e3432]: Resurrection & miracles
+            - generic [ref=e3434]:
+              - generic "Interlocutor photos" [ref=e3435]
+              - generic [ref=e3436]: 1 hr 53 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Albrecht defended bodily continuity through early testimony and textual distinctions; Price narrowly prevailed by pressing historical method, provenance uncertainty, and ordinary alternative explanations.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Albrecht | Robert Price
+          - article [ref=e3437]:
+            - 'link "Open Debate 150: Miracles, resurrection, and historical evidence" [ref=e3438] [cursor=pointer]':
+              - /url: /debate/licona-dillahunty-resurrection-evidence-2017/
+              - generic "Debate 150" [ref=e3439]: "150"
+              - generic [ref=e3440]:
+                - text: Miracles, resurrection, and historical evidence
+                - generic "Debate year 2017" [ref=e3441]: "2017"
+            - generic "Topics" [ref=e3442]:
+              - generic [ref=e3443]: Resurrection & miracles
+              - generic [ref=e3444]: Logic & reason
+            - generic [ref=e3445]:
+              - generic "Interlocutor photos" [ref=e3446]
+              - generic [ref=e3447]: 2 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Licona defended resurrection through historical and comparative inference; Dillahunty more effectively separated reported events, unexplained anomalies, supernatural classification, and justified causal attribution.
+              - generic:
+                - generic: Speakers
+                - paragraph: Mike Licona | Matt Dillahunty
+          - article [ref=e3448]:
+            - 'link "Open Debate 158: Resurrection, testimony, and history" [ref=e3449] [cursor=pointer]':
+              - /url: /debate/dillahunty-mclatchie-resurrection-evidence-2020/
+              - generic "Debate 158" [ref=e3450]: "158"
+              - generic [ref=e3451]:
+                - text: Resurrection, testimony, and history
+                - generic "Debate year 2020" [ref=e3452]: "2020"
+            - generic "Topics" [ref=e3453]: Resurrection & miracles
+            - generic [ref=e3455]:
+              - generic "Interlocutor photos" [ref=e3456]
+              - generic [ref=e3457]: 2 hr 35 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: McLatchie built a cumulative resurrection case from early testimony; Dillahunty prevailed by challenging source independence, testability, alternative explanations, and evidential thresholds.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dr Jonathan McLatchie | Matt Dillahunty
+          - article [ref=e3458]:
+            - 'link "Open Debate 179: Historical evidence for Jesus'' resurrection" [ref=e3459] [cursor=pointer]':
+              - /url: /debate/craig-ehrman-historical-evidence-resurrection-2006/
+              - generic "Debate 179" [ref=e3460]: "179"
+              - generic [ref=e3461]:
+                - text: Historical evidence for Jesus' resurrection
+                - generic "Debate year 2006" [ref=e3462]: "2006"
+            - generic "Topics" [ref=e3463]:
+              - generic [ref=e3464]: Resurrection & miracles
+              - generic [ref=e3465]: Bible & historical Jesus
+              - generic [ref=e3466]: Logic & reason
+            - generic [ref=e3467]:
+              - generic "Interlocutor photos" [ref=e3468]
+              - generic [ref=e3469]: 1 hr 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defended resurrection through cumulative explanatory comparison; Ehrman challenged source reliability, supernatural inference, and whether historical standards can distinguish bodily resurrection from alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Bart Ehrman
+          - article [ref=e3470]:
+            - 'link "Open Debate 180: The bodily resurrection of Jesus" [ref=e3471] [cursor=pointer]':
+              - /url: /debate/ally-licona-did-jesus-rise-dead-2004/
+              - generic "Debate 180" [ref=e3472]: "180"
+              - generic [ref=e3473]:
+                - text: The bodily resurrection of Jesus
+                - generic "Debate year 2004" [ref=e3474]: "2004"
+            - generic "Topics" [ref=e3475]:
+              - generic [ref=e3476]: Resurrection & miracles
+              - generic [ref=e3477]: Bible & historical Jesus
+            - generic [ref=e3478]:
+              - generic "Interlocutor photos" [ref=e3479]
+              - generic [ref=e3480]: 2 hr 36 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Licona presented a cumulative bodily-resurrection inference; Ally narrowly prevailed by sustaining uncertainty about death, physical appearances, empty-tomb implications, and narrative development.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Licona | Shabir Ally
+          - article [ref=e3481]:
+            - 'link "Open Debate 181: Historical and philosophical evidence for resurrection" [ref=e3482] [cursor=pointer]':
+              - /url: /debate/habermas-flew-did-jesus-rise-dead-2000/
+              - generic "Debate 181" [ref=e3483]: "181"
+              - generic [ref=e3484]:
+                - text: Historical and philosophical evidence for resurrection
+                - generic "Debate year 2000" [ref=e3485]: "2000"
+            - generic "Topics" [ref=e3486]:
+              - generic [ref=e3487]: Resurrection & miracles
+              - generic [ref=e3488]: Logic & reason
+            - generic [ref=e3489]:
+              - generic "Interlocutor photos" [ref=e3490]
+              - generic [ref=e3491]: 1 hr 31 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Habermas assembled convergent historical and bodily evidence, while Flew pressed source limitations, natural underdetermination, and the need for justified theological priors.
+              - generic:
+                - generic: Speakers
+                - paragraph: Gary Habermas | Antony Flew
+          - article [ref=e3492]:
+            - 'link "Open Debate 212: Resurrection evidence, Gospel sources, and natural explanations" [ref=e3493] [cursor=pointer]':
+              - /url: /debate/craig-carrier-resurrection-2009/
+              - generic "Debate 212" [ref=e3494]: "212"
+              - generic [ref=e3495]:
+                - text: Resurrection evidence, Gospel sources, and natural explanations
+                - generic "Debate year 2009" [ref=e3496]: "2009"
+            - generic "Topics" [ref=e3497]:
+              - generic [ref=e3498]: Resurrection & miracles
+              - generic [ref=e3499]: Bible & historical Jesus
+              - generic [ref=e3500]: Logic & reason
+            - generic [ref=e3501]:
+              - generic "Interlocutor photos" [ref=e3502]
+              - generic [ref=e3503]: 1 hr 41 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig organized burial, appearances, and belief into a cumulative resurrection case, while Carrier challenged Gospel independence and preserved ordinary alternatives; their contrasting strengths produced a tie.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Richard Carrier
+          - article [ref=e3504]:
+            - 'link "Open Debate 237: Historical proof and the resurrection" [ref=e3505] [cursor=pointer]':
+              - /url: /debate/licona-ehrman-historians-prove-resurrection-2008/
+              - generic "Debate 237" [ref=e3506]: "237"
+              - generic [ref=e3507]:
+                - text: Historical proof and the resurrection
+                - generic "Debate year 2008" [ref=e3508]: "2008"
+            - generic "Topics" [ref=e3509]:
+              - generic [ref=e3510]: Resurrection & miracles
+              - generic [ref=e3511]: Logic & reason
+            - generic [ref=e3512]:
+              - generic "Interlocutor photos" [ref=e3513]
+              - generic [ref=e3514]: 2 hr 6 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ehrman prevailed 79–78 by narrowly pairing strong source criticism and public-evidence burdens against Licona’s comparatively sophisticated but incompletely warranted resurrection inference.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Licona | Bart Ehrman
+          - article [ref=e3515]:
+            - 'link "Open Debate 255: Resurrection evidence: formal rounds" [ref=e3516] [cursor=pointer]':
+              - /url: /debate/licona-carrier-resurrection-formal-rounds-2004/
+              - generic "Debate 255" [ref=e3517]: "255"
+              - generic [ref=e3518]:
+                - text: "Resurrection evidence: formal rounds"
+                - generic "Debate year 2004" [ref=e3519]: "2004"
+            - generic "Topics" [ref=e3520]:
+              - generic [ref=e3521]: Resurrection & miracles
+              - generic [ref=e3522]: Logic & reason
+            - generic [ref=e3523]:
+              - generic "Interlocutor photos" [ref=e3524]
+              - generic [ref=e3525]: 2 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Licona narrowly prevails through cumulative historical breadth, while Carrier’s Pauline, visionary, source-critical, and prior-probability challenges keep every decisive inference closely contested.
+              - generic:
+                - generic: Speakers
+                - paragraph: Mike Licona | Richard Carrier
+      - generic [ref=e3526]:
+        - generic [ref=e3527]:
+          - generic [ref=e3528]:
+            - paragraph [ref=e3529]: 19 debates
+            - heading "Christian belief and doctrine" [level=2] [ref=e3530]
+          - paragraph [ref=e3531]: The overall truth or rationality of Christianity, Christian conversion, salvation, atonement, hell, grace, and purgatory.
+        - generic [ref=e3532]:
+          - article [ref=e3533]:
+            - 'link "Open Debate 32: Biblical God and animal suffering" [ref=e3534] [cursor=pointer]':
+              - /url: /debate/knechtle-oconnor-halper-biblical-god-2024/
+              - generic "Debate 32" [ref=e3535]: "32"
+              - generic [ref=e3536]:
+                - text: Biblical God and animal suffering
+                - generic "Debate year 2024" [ref=e3537]: "2024"
+            - generic "Topics" [ref=e3538]:
+              - generic [ref=e3539]: Christian belief & doctrine
+              - generic [ref=e3540]: Bible & historical Jesus
+              - generic [ref=e3541]: Evil & suffering
+              - generic [ref=e3542]: God & theism
+            - generic [ref=e3543]:
+              - generic "Interlocutor photos" [ref=e3544]
+              - generic [ref=e3545]: 2 hr 44 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: The Knechtles argue that morality, creation, Jesus, resurrection, and lived experience point to the biblical God; O'Connor and Halper argue that animal suffering, biblical errors, divine violence, and hiddenness count strongly against that God.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cliffe and Stuart Knechtle | Alex O'Connor and Phil Halper
+          - article [ref=e3546]:
+            - 'link "Open Debate 39: Christian faith and skeptical inquiry" [ref=e3547] [cursor=pointer]':
+              - /url: /debate/lambert-jones-christian-faith-skepticism-2021/
+              - generic "Debate 39" [ref=e3548]: "39"
+              - generic [ref=e3549]:
+                - text: Christian faith and skeptical inquiry
+                - generic "Debate year 2021" [ref=e3550]: "2021"
+            - generic "Topics" [ref=e3551]:
+              - generic [ref=e3552]: Christian belief & doctrine
+              - generic [ref=e3553]: Logic & reason
+              - generic [ref=e3554]: Religion & society
+            - generic [ref=e3555]:
+              - generic "Interlocutor photos" [ref=e3556]
+              - generic [ref=e3557]: 2 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones defended Christianity through cumulative evidence and qualified theology; Lambert pressed disclosure, comparative testimony, scriptural development, sincere nonbelief, and historical insufficiency.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Derek Lambert
+          - article [ref=e3558]:
+            - 'link "Open Debate 50: Christianity, resurrection, and evidence" [ref=e3559] [cursor=pointer]':
+              - /url: /debate/knechtle-dillahunty-christianity-true-2023/
+              - generic "Debate 50" [ref=e3560]: "50"
+              - generic [ref=e3561]:
+                - text: Christianity, resurrection, and evidence
+                - generic "Debate year 2023" [ref=e3562]: "2023"
+            - generic "Topics" [ref=e3563]:
+              - generic [ref=e3564]: Christian belief & doctrine
+              - generic [ref=e3565]: Resurrection & miracles
+              - generic [ref=e3566]: Logic & reason
+            - generic [ref=e3567]:
+              - generic "Interlocutor photos" [ref=e3568]
+              - generic [ref=e3569]: 2 hr 37 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Knechtle offered cumulative historical, moral, and relational warrant for Christianity; Dillahunty consistently pressed whether those methods distinguish supernatural truth from preservation, fiction, and alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cliffe Knechtle | Matt Dillahunty
+          - article [ref=e3570]:
+            - 'link "Open Debate 63: Biblical theism and skeptical evidence" [ref=e3571] [cursor=pointer]':
+              - /url: /debate/butt-shermer-god-bible-2023/
+              - generic "Debate 63" [ref=e3572]: "63"
+              - generic [ref=e3573]:
+                - text: Biblical theism and skeptical evidence
+                - generic "Debate year 2023" [ref=e3574]: "2023"
+            - generic "Topics" [ref=e3575]:
+              - generic [ref=e3576]: Christian belief & doctrine
+              - generic [ref=e3577]: Bible & historical Jesus
+              - generic [ref=e3578]: Logic & reason
+              - generic [ref=e3579]: God & theism
+            - generic [ref=e3580]:
+              - generic "Interlocutor photos" [ref=e3581]
+              - generic [ref=e3582]: 2 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Shermer’s calibrated skepticism and natural alternatives consistently challenged Butt’s ambitious causal, design, moral, historical, and suffering-based case for the biblical God.
+              - generic:
+                - generic: Speakers
+                - paragraph: Kyle Butt | Michael Shermer
+          - article [ref=e3583]:
+            - 'link "Open Debate 66: Christianity, evidence, and disagreement" [ref=e3584] [cursor=pointer]':
+              - /url: /debate/donahue-fodor-case-against-christianity-2025/
+              - generic "Debate 66" [ref=e3585]: "66"
+              - generic [ref=e3586]:
+                - text: Christianity, evidence, and disagreement
+                - generic "Debate year 2025" [ref=e3587]: "2025"
+            - generic "Topics" [ref=e3588]:
+              - generic [ref=e3589]: Christian belief & doctrine
+              - generic [ref=e3590]: Logic & reason
+            - generic [ref=e3591]:
+              - generic "Interlocutor photos" [ref=e3592]
+              - generic [ref=e3593]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Donahue defended Christianity cumulatively, while Fodor pressed comparative objections from divine psychology, suffering, religious confusion, informed dissent, and observable moral outcomes.
+              - generic:
+                - generic: Speakers
+                - paragraph: Miles K. Donahue | James Fodor
+          - article [ref=e3594]:
+            - 'link "Open Debate 93: Christian God evidential standards" [ref=e3595] [cursor=pointer]':
+              - /url: /debate/hunter-dillahunty-christian-god-exist-2019/
+              - generic "Debate 93" [ref=e3596]: "93"
+              - generic [ref=e3597]:
+                - text: Christian God evidential standards
+                - generic "Debate year 2019" [ref=e3598]: "2019"
+            - generic "Topics" [ref=e3599]:
+              - generic [ref=e3600]: Christian belief & doctrine
+              - generic [ref=e3601]: God & theism
+            - generic [ref=e3602]:
+              - generic "Interlocutor photos" [ref=e3603]
+              - generic [ref=e3604]: 2 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hunter builds a cumulative Christian case from freedom, causation, and resurrection; Dillahunty presses underdetermination, evidential discrimination, hiddenness, and revelation inconsistency.
+              - generic:
+                - generic: Speakers
+                - paragraph: Braxton Hunter | Matt Dillahunty
+          - article [ref=e3605]:
+            - 'link "Open Debate 96: Christianity, miracle testimony, and humanism" [ref=e3606] [cursor=pointer]':
+              - /url: /debate/knechtle-aronra-tjump-christianity-true-2023/
+              - generic "Debate 96" [ref=e3607]: "96"
+              - generic [ref=e3608]:
+                - text: Christianity, miracle testimony, and humanism
+                - generic "Debate year 2023" [ref=e3609]: "2023"
+            - generic "Topics" [ref=e3610]:
+              - generic [ref=e3611]: Christian belief & doctrine
+              - generic [ref=e3612]: Resurrection & miracles
+              - generic [ref=e3613]: Religion & society
+            - generic [ref=e3614]:
+              - generic "Interlocutor photos" [ref=e3615]
+              - generic [ref=e3616]: 3 hr 19 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: The Knechtles defend Jesus through Gospel reliability, resurrection, grace, love, and worldview fit; Aron Ra and TJump challenge miracle testimony, biblical contradictions, religious borrowing, and evidential standards.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cliffe and Stuart Knechtle | Aron Ra and Tom Jump
+          - article [ref=e3617]:
+            - 'link "Open Debate 102: Christian rationality and evidence" [ref=e3618] [cursor=pointer]':
+              - /url: /debate/woodford-brierley-christianity-rational-2019/
+              - generic "Debate 102" [ref=e3619]: "102"
+              - generic [ref=e3620]:
+                - text: Christian rationality and evidence
+                - generic "Debate year 2019" [ref=e3621]: "2019"
+            - generic "Topics" [ref=e3622]:
+              - generic [ref=e3623]: Christian belief & doctrine
+              - generic [ref=e3624]: Logic & reason
+            - generic [ref=e3625]:
+              - generic "Interlocutor photos" [ref=e3626]
+              - generic [ref=e3627]: 1 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Woodford pressed consistent evidence, naturalistic alternatives, and inference gaps; Brierley defended cumulative Christian warrant through experience, explanation, morality, reason, and testimony.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stephen Woodford | Justin Brierley
+          - article [ref=e3628]:
+            - 'link "Open Debate 119: Hell, self-exile, and grace" [ref=e3629] [cursor=pointer]':
+              - /url: /debate/jones-oconnor-hell-2023/
+              - generic "Debate 119" [ref=e3630]: "119"
+              - generic [ref=e3631]:
+                - text: Hell, self-exile, and grace
+                - generic "Debate year 2023" [ref=e3632]: "2023"
+            - generic "Topics" [ref=e3633]:
+              - generic [ref=e3634]: Christian belief & doctrine
+              - generic [ref=e3635]: Meaning & purpose
+            - generic [ref=e3636]:
+              - generic "Interlocutor photos" [ref=e3637]
+              - generic [ref=e3638]: 1 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones defends hell through self-chosen degeneration, corrective grace, open escape, and possible annihilation; O'Connor challenges agency, proportionality, misinformation, universalism, and atonement.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Alex O'Connor
+          - article [ref=e3639]:
+            - 'link "Open Debate 120: Resurrection and biblical morality" [ref=e3640] [cursor=pointer]':
+              - /url: /debate/mclatchie-oconnor-christianity-true-2019/
+              - generic "Debate 120" [ref=e3641]: "120"
+              - generic [ref=e3642]:
+                - text: Resurrection and biblical morality
+                - generic "Debate year 2019" [ref=e3643]: "2019"
+            - generic "Topics" [ref=e3644]:
+              - generic [ref=e3645]: Christian belief & doctrine
+              - generic [ref=e3646]: Bible & historical Jesus
+              - generic [ref=e3647]: Resurrection & miracles
+              - generic [ref=e3648]: Morality & ethics
+            - generic [ref=e3649]:
+              - generic "Interlocutor photos" [ref=e3650]
+              - generic [ref=e3651]: 1 hr 19 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: McLatchie defended Christianity through resurrection testimony and contextual reconciliation; O'Connor challenged source sufficiency, theological inference, biblical morality, and animal-suffering explanations.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jonathan McLatchie | Alex O'Connor
+          - article [ref=e3652]:
+            - 'link "Open Debate 142: Gospel atonement and moral responsibility" [ref=e3653] [cursor=pointer]':
+              - /url: /debate/comfort-dillahunty-gospel-atonement-2020/
+              - generic "Debate 142" [ref=e3654]: "142"
+              - generic [ref=e3655]:
+                - text: Gospel atonement and moral responsibility
+                - generic "Debate year 2020" [ref=e3656]: "2020"
+            - generic "Topics" [ref=e3657]:
+              - generic [ref=e3658]: Christian belief & doctrine
+              - generic [ref=e3659]: Bible & historical Jesus
+              - generic [ref=e3660]: Morality & ethics
+            - generic [ref=e3661]:
+              - generic "Interlocutor photos" [ref=e3662]
+              - generic [ref=e3663]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Comfort defended guilt, substitution, and faith-based salvation; Dillahunty pressed stronger challenges concerning responsibility, atonement, evidential method, and testability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ray Comfort | Matt Dillahunty
+          - article [ref=e3664]:
+            - 'link "Open Debate 157: Logic, reason, and divine grounding" [ref=e3665] [cursor=pointer]':
+              - /url: /debate/dillahunty-howitt-christianity-true-2023/
+              - generic "Debate 157" [ref=e3666]: "157"
+              - generic [ref=e3667]:
+                - text: Logic, reason, and divine grounding
+                - generic "Debate year 2023" [ref=e3668]: "2023"
+            - generic "Topics" [ref=e3669]:
+              - generic [ref=e3670]: Christian belief & doctrine
+              - generic [ref=e3671]: Logic & reason
+              - generic [ref=e3672]: God & theism
+            - generic [ref=e3673]:
+              - generic "Interlocutor photos" [ref=e3674]
+              - generic [ref=e3675]: 1 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Howitt develops a necessary Logos and Trinitarian metaphysics; Dillahunty challenges its evidential standards, Christian specificity, divine coherence, and treatment of classical logic.
+              - generic:
+                - generic: Speakers
+                - paragraph: Lewis Howitt (PerspectivePhilosophy) | Matt Dillahunty
+          - article [ref=e3676]:
+            - 'link "Open Debate 182: Sin, forgiveness, and salvation" [ref=e3677] [cursor=pointer]':
+              - /url: /debate/white-ally-sin-salvation-quran-bible-2013/
+              - generic "Debate 182" [ref=e3678]: "182"
+              - generic [ref=e3679]:
+                - text: Sin, forgiveness, and salvation
+                - generic "Debate year 2013" [ref=e3680]: "2013"
+            - generic "Topics" [ref=e3681]: Christian belief & doctrine
+            - generic [ref=e3683]:
+              - generic "Interlocutor photos" [ref=e3684]
+              - generic [ref=e3685]: 2 hr 31 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: White grounds forgiveness in Christ’s law-satisfying atonement; Ally defends direct, equitable mercy and accountable deeds while challenging inherited guilt and biblical continuity.
+              - generic:
+                - generic: Speakers
+                - paragraph: James White | Shabir Ally
+          - article [ref=e3686]:
+            - 'link "Open Debate 215: Christian belief and skeptical objections" [ref=e3687] [cursor=pointer]':
+              - /url: /debate/horn-oconnor-christian-belief-2022/
+              - generic "Debate 215" [ref=e3688]: "215"
+              - generic [ref=e3689]:
+                - text: Christian belief and skeptical objections
+                - generic "Debate year 2022" [ref=e3690]: "2022"
+            - generic "Topics" [ref=e3691]: Christian belief & doctrine
+            - generic [ref=e3693]:
+              - generic "Interlocutor photos" [ref=e3694]
+              - generic [ref=e3695]: 2 hr 2 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Alex O'Connor wins 84-74 by pressing suffering and hiddenness more precisely than Trent Horn warrants Christianity's cumulative explanatory bridges.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn | Alex O'Connor
+          - article [ref=e3696]:
+            - 'link "Open Debate 220: Christian conversion, truth, and cultural value" [ref=e3697] [cursor=pointer]':
+              - /url: /debate/hirsi-ali-oconnor-christian-conversion-2024/
+              - generic "Debate 220" [ref=e3698]: "220"
+              - generic [ref=e3699]:
+                - text: Christian conversion, truth, and cultural value
+                - generic "Debate year 2024" [ref=e3700]: "2024"
+            - generic "Topics" [ref=e3701]:
+              - generic [ref=e3702]: Christian belief & doctrine
+              - generic [ref=e3703]: Meaning & purpose
+            - generic [ref=e3704]:
+              - generic "Interlocutor photos" [ref=e3705]
+              - generic [ref=e3706]: 1 hr 3 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hirsi Ali established sincere transformation and cultural attraction, but O’Connor decisively separated those benefits from evidence for Christianity’s supernatural truth claims.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ayaan Hirsi Ali | Alex O'Connor
+          - article [ref=e3707]:
+            - 'link "Open Debate 226: Purgatory and postmortem purification" [ref=e3708] [cursor=pointer]':
+              - /url: /debate/horn-white-purgatory-2024/
+              - generic "Debate 226" [ref=e3709]: "226"
+              - generic [ref=e3710]:
+                - text: Purgatory and postmortem purification
+                - generic "Debate year 2024" [ref=e3711]: "2024"
+            - generic "Topics" [ref=e3712]: Christian belief & doctrine
+            - generic [ref=e3714]:
+              - generic "Interlocutor photos" [ref=e3715]
+              - generic [ref=e3716]: 2 hr 12 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: White wins by one point because his contextual exegesis and Romans argument slightly outweigh Horn's definitional clarification, purification syllogism, and historical continuity case.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn | James White
+          - article [ref=e3717]:
+            - 'link "Open Debate 233: Christianity, reason, and evidence" [ref=e3718] [cursor=pointer]':
+              - /url: /debate/dawkins-mcgrath-christianity-reason-evidence-2006/
+              - generic "Debate 233" [ref=e3719]: "233"
+              - generic [ref=e3720]:
+                - text: Christianity, reason, and evidence
+                - generic "Debate year 2006" [ref=e3721]: "2006"
+            - generic "Topics" [ref=e3722]:
+              - generic [ref=e3723]: Christian belief & doctrine
+              - generic [ref=e3724]: Logic & reason
+            - generic [ref=e3725]:
+              - generic "Interlocutor photos" [ref=e3726]
+              - generic [ref=e3727]: 1 hr 10 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dawkins wins by pressing evidence, complexity, Christian specificity, and selective providence more successfully, while McGrath offers a thoughtful but incompletely warranted integrative worldview.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alister McGrath | Richard Dawkins
+          - article [ref=e3728]:
+            - 'link "Open Debate 238: Christianity and rational warrant" [ref=e3729] [cursor=pointer]':
+              - /url: /debate/knechtle-dillahunty-christianity-rational-2023/
+              - generic "Debate 238" [ref=e3730]: "238"
+              - generic [ref=e3731]:
+                - text: Christianity and rational warrant
+                - generic "Debate year 2023" [ref=e3732]: "2023"
+            - generic "Topics" [ref=e3733]:
+              - generic [ref=e3734]: Christian belief & doctrine
+              - generic [ref=e3735]: Logic & reason
+            - generic [ref=e3736]:
+              - generic "Interlocutor photos" [ref=e3737]
+              - generic [ref=e3738]: 2 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Knechtle offered cumulative historical, moral, and experiential support for Christianity; Dillahunty prevailed by demanding stronger links from reports and effects to supernatural conclusions.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stuart Knechtle | Matt Dillahunty
+          - article [ref=e3739]:
+            - 'link "Open Debate 243: Christianity, evidence, and rational foundations" [ref=e3740] [cursor=pointer]':
+              - /url: /debate/aron-ra-slick-christianity-2014/
+              - generic "Debate 243" [ref=e3741]: "243"
+              - generic [ref=e3742]:
+                - text: Christianity, evidence, and rational foundations
+                - generic "Debate year 2014" [ref=e3743]: "2014"
+            - generic "Topics" [ref=e3744]:
+              - generic [ref=e3745]: Christian belief & doctrine
+              - generic [ref=e3746]: Logic & reason
+            - generic [ref=e3747]:
+              - generic "Interlocutor photos" [ref=e3748]
+              - generic [ref=e3749]: 1 hr 44 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Slick excelled on foundational challenges and expert-reference precision; Aron prevailed on belief versus truth and explanatory accountability, producing an exact overall tie.
+              - generic:
+                - generic: Speakers
+                - paragraph: Matt Slick | Aron Ra
+      - generic [ref=e3750]:
+        - generic [ref=e3751]:
+          - generic [ref=e3752]:
+            - paragraph [ref=e3753]: 10 debates
+            - heading "Meaning and purpose" [level=2] [ref=e3754]
+          - paragraph [ref=e3755]: Religious meaning, purpose, human value, existential orientation, mythic frameworks, and whether secular or theistic views better ground significance.
+        - generic [ref=e3756]:
+          - article [ref=e3757]:
+            - 'link "Open Debate 09: God and religious meaning" [ref=e3758] [cursor=pointer]':
+              - /url: /debate/peterson-dillahunty-god-debate-2023/
+              - generic "Debate 09" [ref=e3759]: "09"
+              - generic [ref=e3760]:
+                - text: God and religious meaning
+                - generic "Debate year 2023" [ref=e3761]: "2023"
+            - generic "Topics" [ref=e3762]:
+              - generic [ref=e3763]: Meaning & purpose
+              - generic [ref=e3764]: God & theism
+            - generic [ref=e3765]:
+              - generic "Interlocutor photos" [ref=e3766]
+              - generic [ref=e3767]: 1 hr 39 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Peterson defended religious experience, narrative, and ultimate value as meaning-bearing realities; Dillahunty separated those functions from warranted belief in supernatural agency.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jordan Peterson | Matt Dillahunty
+          - article [ref=e3768]:
+            - 'link "Open Debate 21: God, meaning, and faith" [ref=e3769] [cursor=pointer]':
+              - /url: /debate/hitchens-wolpe-great-god-debate-2010/
+              - generic "Debate 21" [ref=e3770]: "21"
+              - generic [ref=e3771]:
+                - text: God, meaning, and faith
+                - generic "Debate year 2010" [ref=e3772]: "2010"
+            - generic "Topics" [ref=e3773]:
+              - generic [ref=e3774]: Meaning & purpose
+              - generic [ref=e3775]: Religion & society
+              - generic [ref=e3776]: God & theism
+            - generic [ref=e3777]:
+              - generic "Interlocutor photos" [ref=e3778]
+              - generic [ref=e3779]: 1 hr 32 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hitchens challenges faith through natural explanation, secular morality, scriptural harm, and natural transcendence, while granting uncertainty where atheism cannot conclusively disprove theological possibilities.
+              - generic:
+                - generic: Speakers
+                - paragraph: Christopher Hitchens | Rabbi David Wolpe
+          - article [ref=e3780]:
+            - 'link "Open Debate 62: Patterns, Logos, and secular meaning" [ref=e3781] [cursor=pointer]':
+              - /url: /debate/pageau-folley-logos-meaning-resurrection-2026/
+              - generic "Debate 62" [ref=e3782]: "62"
+              - generic [ref=e3783]:
+                - text: Patterns, Logos, and secular meaning
+                - generic "Debate year 2026" [ref=e3784]: "2026"
+            - generic "Topics" [ref=e3785]:
+              - generic [ref=e3786]: Meaning & purpose
+              - generic [ref=e3787]: Religion & society
+            - generic [ref=e3788]:
+              - generic "Interlocutor photos" [ref=e3789]
+              - generic [ref=e3790]: 1 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Pageau connected purposive patterns, scripture, resurrection, and worship to Logos; Folley consistently separated their usefulness and structural reality from supernatural conclusions.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jonathan Pageau | Joe Folley
+          - article [ref=e3791]:
+            - 'link "Open Debate 106: God, archetypes, and memes" [ref=e3792] [cursor=pointer]':
+              - /url: /debate/peterson-blackmore-god-meaning-life-2018/
+              - generic "Debate 106" [ref=e3793]: "106"
+              - generic [ref=e3794]:
+                - text: God, archetypes, and memes
+                - generic "Debate year 2018" [ref=e3795]: "2018"
+            - generic "Topics" [ref=e3796]:
+              - generic [ref=e3797]: Meaning & purpose
+              - generic [ref=e3798]: God & theism
+            - generic [ref=e3799]:
+              - generic "Interlocutor photos" [ref=e3800]
+              - generic [ref=e3801]: 47 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Peterson grounds meaning in enacted religious inheritance, while Blackmore offers evolutionary, contemplative, and social counterexamples to claims of religious necessity.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jordan Peterson | Susan Blackmore
+          - article [ref=e3802]:
+            - 'link "Open Debate 154: Meaning, purpose, and belief" [ref=e3803] [cursor=pointer]':
+              - /url: /debate/koukl-oconnor-kanojia-nonbelief-harm-2025/
+              - generic "Debate 154" [ref=e3804]: "154"
+              - generic [ref=e3805]:
+                - text: Meaning, purpose, and belief
+                - generic "Debate year 2025" [ref=e3806]: "2025"
+            - generic "Topics" [ref=e3807]: Meaning & purpose
+            - generic [ref=e3809]:
+              - generic "Interlocutor photos" [ref=e3810]
+              - generic [ref=e3811]: 3 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Koukl defends Christian theism as the objective basis for purpose and morality; O'Connor and Alok Kanojia distinguish truth claims from subjective purpose while offering philosophical, clinical, and spiritual alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Greg Koukl | Alex O'Connor and Alok Kanojia
+          - article [ref=e3812]:
+            - 'link "Open Debate 207: Memes, archetypes, and religious truth" [ref=e3813] [cursor=pointer]':
+              - /url: /debate/peterson-dawkins-memes-archetypes-truth-2024/
+              - generic "Debate 207" [ref=e3814]: "207"
+              - generic [ref=e3815]:
+                - text: Memes, archetypes, and religious truth
+                - generic "Debate year 2024" [ref=e3816]: "2024"
+            - generic "Topics" [ref=e3817]: Meaning & purpose
+            - generic [ref=e3819]:
+              - generic "Interlocutor photos" [ref=e3820]
+              - generic [ref=e3821]: 1 hr 32 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Scientific naturalism wins 86–74 by separating symbolic usefulness from factual warrant, demanding traceable evidence, and explaining cultural transmission naturally, while symbolic realism remains strongest on narrative prioritization and action-guiding compression.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jordan Peterson | Richard Dawkins
+          - article [ref=e3822]:
+            - 'link "Open Debate 214: Metaphorical truth and religious patterns" [ref=e3823] [cursor=pointer]':
+              - /url: /debate/pageau-woodford-metaphorical-truth-2020/
+              - generic "Debate 214" [ref=e3824]: "214"
+              - generic [ref=e3825]:
+                - text: Metaphorical truth and religious patterns
+                - generic "Debate year 2020" [ref=e3826]: "2020"
+            - generic "Topics" [ref=e3827]: Meaning & purpose
+            - generic [ref=e3829]:
+              - generic "Interlocutor photos" [ref=e3830]
+              - generic [ref=e3831]: 1 hr 15 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Woodford won 78–74 by combining charitable preservation of religious insights with stronger contextual scrutiny, cross-tradition comparison, and concrete ethical challenges; Pageau’s embedded-reform case landed powerfully but left key metaphysical and practical warrants incomplete.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jonathan Pageau | Stephen Woodford
+          - article [ref=e3832]:
+            - 'link "Open Debate 216: Religious faith and secular naturalism" [ref=e3833] [cursor=pointer]':
+              - /url: /debate/harris-wolpe-religion-science-2007/
+              - generic "Debate 216" [ref=e3834]: "216"
+              - generic [ref=e3835]:
+                - text: Religious faith and secular naturalism
+                - generic "Debate year 2007" [ref=e3836]: "2007"
+            - generic "Topics" [ref=e3837]:
+              - generic [ref=e3838]: Meaning & purpose
+              - generic [ref=e3839]: Science & design
+              - generic [ref=e3840]: Religion & society
+            - generic [ref=e3841]:
+              - generic "Interlocutor photos" [ref=e3842]
+              - generic [ref=e3843]: 1 hr 44 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Sam Harris wins for scientific naturalism and evidential skepticism, defeating David Wolpe’s religious meaning and transcendent faith position by the locked 83-68 score.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Wolpe | Sam Harris
+          - article [ref=e3844]:
+            - 'link "Open Debate 227: God, secular life, and meaning" [ref=e3845] [cursor=pointer]':
+              - /url: /debate/oldfield-marriott-meaning-without-god-2026/
+              - generic "Debate 227" [ref=e3846]: "227"
+              - generic [ref=e3847]:
+                - text: God, secular life, and meaning
+                - generic "Debate year 2026" [ref=e3848]: "2026"
+            - generic "Topics" [ref=e3849]:
+              - generic [ref=e3850]: Meaning & purpose
+              - generic [ref=e3851]: Religion & society
+              - generic [ref=e3852]: God & theism
+            - generic [ref=e3853]:
+              - generic "Interlocutor photos" [ref=e3854]
+              - generic [ref=e3855]: 1 hr 41 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Marriott prevailed by three points through a clearer ultimate-versus-proximate distinction, stronger scrutiny of spiritual intuition, and more consistent burden contact, despite Oldfield’s effective anti-reductionist replies.
+              - generic:
+                - generic: Speakers
+                - paragraph: Elizabeth Oldfield | James Marriott
+          - article [ref=e3856]:
+            - 'link "Open Debate 240: Cosmic purpose, God, and alternative teleology" [ref=e3857] [cursor=pointer]':
+              - /url: /debate/swinburne-goff-cosmic-purpose-god-2023/
+              - generic "Debate 240" [ref=e3858]: "240"
+              - generic [ref=e3859]:
+                - text: Cosmic purpose, God, and alternative teleology
+                - generic "Debate year 2023" [ref=e3860]: "2023"
+            - generic "Topics" [ref=e3861]:
+              - generic [ref=e3862]: Meaning & purpose
+              - generic [ref=e3863]: Cosmological arguments
+              - generic [ref=e3864]: God & theism
+            - generic [ref=e3865]:
+              - generic "Interlocutor photos" [ref=e3866]
+              - generic [ref=e3867]: 1 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Goff wins by separating cosmic purpose from omnipotence and fitting suffering better, while Swinburne offers substantial design, freedom, compensation, and simplicity defenses.
+              - generic:
+                - generic: Speakers
+                - paragraph: Richard Swinburne | Philip Goff
+      - generic [ref=e3868]:
+        - generic [ref=e3869]:
+          - generic [ref=e3870]:
+            - paragraph [ref=e3871]: 19 debates
+            - heading "Morality and ethics" [level=2] [ref=e3872]
+          - paragraph [ref=e3873]: Moral arguments for God, ethical obligations, moral responsibility, religious and secular ethics, and the foundations of human flourishing.
+        - generic [ref=e3874]:
+          - article [ref=e3875]:
+            - 'link "Open Debate 10: Moral foundations" [ref=e3876] [cursor=pointer]':
+              - /url: /debate/craig-harris-moral-foundations-2011/
+              - generic "Debate 10" [ref=e3877]: "10"
+              - generic [ref=e3878]:
+                - text: Moral foundations
+                - generic "Debate year 2011" [ref=e3879]: "2011"
+            - generic "Topics" [ref=e3880]: Morality & ethics
+            - generic [ref=e3882]:
+              - generic "Interlocutor photos" [ref=e3883]
+              - generic [ref=e3884]: 2 hr 07 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defended divine nature and commands as morality's foundation; Harris grounded value in conscious well-being, producing evenly matched strengths and unresolved explanatory burdens.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Sam Harris
+          - article [ref=e3885]:
+            - 'link "Open Debate 13: Christian ethics" [ref=e3886] [cursor=pointer]':
+              - /url: /debate/knechtle-oconnor-christian-morality-2025/
+              - generic "Debate 13" [ref=e3887]: "13"
+              - generic [ref=e3888]:
+                - text: Christian ethics
+                - generic "Debate year 2025" [ref=e3889]: "2025"
+            - generic "Topics" [ref=e3890]: Morality & ethics
+            - generic [ref=e3892]:
+              - generic "Interlocutor photos" [ref=e3893]
+              - generic [ref=e3894]: 51 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Knechtle presents Christianity as redemptive and context-sensitive, while O'Connor presses evidential, moral, slavery, and gender objections through specific scriptural counterexamples.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cliffe Knechtle | Alex O'Connor
+          - article [ref=e3895]:
+            - 'link "Open Debate 24: Religion, grace, and secular morality" [ref=e3896] [cursor=pointer]':
+              - /url: /debate/hitchens-olasky-religion-grace-2007/
+              - generic "Debate 24" [ref=e3897]: "24"
+              - generic [ref=e3898]:
+                - text: Religion, grace, and secular morality
+                - generic "Debate year 2007" [ref=e3899]: "2007"
+            - generic "Topics" [ref=e3900]:
+              - generic [ref=e3901]: Morality & ethics
+              - generic [ref=e3902]: Christian belief & doctrine
+              - generic [ref=e3903]: Religion & society
+            - generic [ref=e3904]:
+              - generic "Interlocutor photos" [ref=e3905]
+              - generic [ref=e3906]: 1 hr 37 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hitchens attacks supernatural authority and religious morality; Olasky counters through Christianity's grace, charitable fruits, historical credibility, and challenges to universal condemnation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Christopher Hitchens | Marvin Olasky
+          - article [ref=e3907]:
+            - 'link "Open Debate 27: Evil and moral objectivity" [ref=e3908] [cursor=pointer]':
+              - /url: /debate/oconnor-turek-evil-moral-argument-2017/
+              - generic "Debate 27" [ref=e3909]: "27"
+              - generic [ref=e3910]:
+                - text: Evil and moral objectivity
+                - generic "Debate year 2017" [ref=e3911]: "2017"
+            - generic "Topics" [ref=e3912]:
+              - generic [ref=e3913]: Morality & ethics
+              - generic [ref=e3914]: Moral realism & objectivity
+              - generic [ref=e3915]: Evil & suffering
+            - generic [ref=e3916]:
+              - generic "Interlocutor photos" [ref=e3917]
+              - generic [ref=e3918]: 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Turek grounds objective obligation in God; O'Connor distinguishes compelling moral experience from objectivity and offers evolutionary, psychological, and conditional explanations.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frank Turek | Alex O'Connor
+          - article [ref=e3919]:
+            - 'link "Open Debate 38: Moral objectivity and Christian ethics" [ref=e3920] [cursor=pointer]':
+              - /url: /debate/mcdowell-ehrman-moral-objectivity-2026/
+              - generic "Debate 38" [ref=e3921]: "38"
+              - generic [ref=e3922]:
+                - text: Moral objectivity and Christian ethics
+                - generic "Debate year 2026" [ref=e3923]: "2026"
+            - generic "Topics" [ref=e3924]:
+              - generic [ref=e3925]: Morality & ethics
+              - generic [ref=e3926]: Moral realism & objectivity
+            - generic [ref=e3927]:
+              - generic "Interlocutor photos" [ref=e3928]
+              - generic [ref=e3929]: 1 hr 04 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: McDowell presses objective obligation and progress; Ehrman explains universal charity historically while separating human moral experience from mind-independent grounding.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sean McDowell | Bart Ehrman
+          - article [ref=e3930]:
+            - 'link "Open Debate 57: Atheism and Christian moral inheritance" [ref=e3931] [cursor=pointer]':
+              - /url: /debate/scrivener-dillahunty-atheism-morality-2020/
+              - generic "Debate 57" [ref=e3932]: "57"
+              - generic [ref=e3933]:
+                - text: Atheism and Christian moral inheritance
+                - generic "Debate year 2020" [ref=e3934]: "2020"
+            - generic "Topics" [ref=e3935]:
+              - generic [ref=e3936]: Morality & ethics
+              - generic [ref=e3937]: God & theism
+            - generic [ref=e3938]:
+              - generic "Interlocutor photos" [ref=e3939]
+              - generic [ref=e3940]: 1 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Scrivener grounds dignity and obligation in Christianity; Dillahunty distinguishes atheism from secular humanism and advances a corrigible, human-centered moral foundation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Glen Scrivener | Matt Dillahunty
+          - article [ref=e3941]:
+            - 'link "Open Debate 124: Religion, myth, and moral truth" [ref=e3942] [cursor=pointer]':
+              - /url: /debate/harris-peterson-god-atheism-bible-2018/
+              - generic "Debate 124" [ref=e3943]: "124"
+              - generic [ref=e3944]:
+                - text: Religion, myth, and moral truth
+                - generic "Debate year 2018" [ref=e3945]: "2018"
+            - generic "Topics" [ref=e3946]:
+              - generic [ref=e3947]: Morality & ethics
+              - generic [ref=e3948]: Moral realism & objectivity
+              - generic [ref=e3949]: Religion & society
+            - generic [ref=e3950]:
+              - generic "Interlocutor photos" [ref=e3951]
+              - generic [ref=e3952]: 2 hr 06 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Peterson defends religious narrative as moral mediation and embodied guidance; Harris argues that well-being, causal inquiry, and revisability provide clearer secular foundations.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jordan Peterson | Sam Harris
+          - article [ref=e3953]:
+            - 'link "Open Debate 127: Objective morality and theistic foundations" [ref=e3954] [cursor=pointer]':
+              - /url: /debate/slick-clifton-objective-morality-god-2014/
+              - generic "Debate 127" [ref=e3955]: "127"
+              - generic [ref=e3956]:
+                - text: Objective morality and theistic foundations
+                - generic "Debate year 2014" [ref=e3957]: "2014"
+            - generic "Topics" [ref=e3958]:
+              - generic [ref=e3959]: Morality & ethics
+              - generic [ref=e3960]: Moral realism & objectivity
+            - generic [ref=e3961]:
+              - generic "Interlocutor photos" [ref=e3962]
+              - generic [ref=e3963]: 1 hr 48 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Slick grounds universal morality in God's immutable character, while Clifton's secular alternatives and circularity objections more completely address objectivity, obligation, and impartial justification.
+              - generic:
+                - generic: Speakers
+                - paragraph: Matt Slick | Scott Clifton
+          - article [ref=e3964]:
+            - 'link "Open Debate 148: Moral authority, God, and secular ethics" [ref=e3965] [cursor=pointer]':
+              - /url: /debate/baggett-dillahunty-moral-argument-2018/
+              - generic "Debate 148" [ref=e3966]: "148"
+              - generic [ref=e3967]:
+                - text: Moral authority, God, and secular ethics
+                - generic "Debate year 2018" [ref=e3968]: "2018"
+            - generic "Topics" [ref=e3969]:
+              - generic [ref=e3970]: Morality & ethics
+              - generic [ref=e3971]: Religion & society
+              - generic [ref=e3972]: God & theism
+            - generic [ref=e3973]:
+              - generic "Interlocutor photos" [ref=e3974]
+              - generic [ref=e3975]: 2 hr 02 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Baggett’s qualified theistic explanation meets Dillahunty’s secular mechanisms, candidacy constraints, access objections, and hiddenness challenge across moral authority, knowledge, transformation, and flourishing.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Baggett | Matt Dillahunty
+          - article [ref=e3976]:
+            - 'link "Open Debate 151: Moral obligation and human flourishing" [ref=e3977] [cursor=pointer]':
+              - /url: /debate/wood-dillahunty-god-secular-humanism-2020/
+              - generic "Debate 151" [ref=e3978]: "151"
+              - generic [ref=e3979]:
+                - text: Moral obligation and human flourishing
+                - generic "Debate year 2020" [ref=e3980]: "2020"
+            - generic "Topics" [ref=e3981]: Morality & ethics
+            - generic [ref=e3983]:
+              - generic "Interlocutor photos" [ref=e3984]
+              - generic [ref=e3985]: 2 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Wood pressed categorical obligation and transcendent worth, while Dillahunty more effectively defended revisable secular ethics and exposed gaps in divine grounding.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Wood | Matt Dillahunty
+          - article [ref=e3986]:
+            - 'link "Open Debate 155: Moral objectivity and divine grounding" [ref=e3987] [cursor=pointer]':
+              - /url: /debate/turek-shermer-morality-god-science-2015/
+              - generic "Debate 155" [ref=e3988]: "155"
+              - generic [ref=e3989]:
+                - text: Moral objectivity and divine grounding
+                - generic "Debate year 2015" [ref=e3990]: "2015"
+            - generic "Topics" [ref=e3991]:
+              - generic [ref=e3992]: Morality & ethics
+              - generic [ref=e3993]: Moral realism & objectivity
+              - generic [ref=e3994]: God & theism
+            - generic [ref=e3995]:
+              - generic "Interlocutor photos" [ref=e3996]
+              - generic [ref=e3997]: 2 hr 6 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Turek pressed divine grounding and the is-ought gap; Shermer answered through sentient flourishing, autonomy, evolved capacities, and challenges about religious reliability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frank Turek | Michael Shermer
+          - article [ref=e3998]:
+            - 'link "Open Debate 162: Moral grounding and ultimate accountability" [ref=e3999] [cursor=pointer]':
+              - /url: /debate/craig-kagan-god-morality-2009/
+              - generic "Debate 162" [ref=e4000]: "162"
+              - generic [ref=e4001]:
+                - text: Moral grounding and ultimate accountability
+                - generic "Debate year 2009" [ref=e4002]: "2009"
+            - generic "Topics" [ref=e4003]: Morality & ethics
+            - generic [ref=e4005]:
+              - generic "Interlocutor photos" [ref=e4006]
+              - generic [ref=e4007]: 1 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Kagan's secular realism answers Craig's grounding challenge most effectively on finite significance and prudential conflict, while Craig presses a substantial explanatory-value objection.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Shelly Kagan
+          - article [ref=e4008]:
+            - 'link "Open Debate 164: Moral realism and divine authority" [ref=e4009] [cursor=pointer]':
+              - /url: /debate/craig-wielenberg-god-morality-2018/
+              - generic "Debate 164" [ref=e4010]: "164"
+              - generic [ref=e4011]:
+                - text: Moral realism and divine authority
+                - generic "Debate year 2018" [ref=e4012]: "2018"
+            - generic "Topics" [ref=e4013]:
+              - generic [ref=e4014]: Morality & ethics
+              - generic [ref=e4015]: Moral realism & objectivity
+              - generic [ref=e4016]: God & theism
+            - generic [ref=e4017]:
+              - generic "Interlocutor photos" [ref=e4018]
+              - generic [ref=e4019]: 2 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defended divine nature and commands as morality’s foundation; Wielenberg answered with irreducible normativity, explanatory parity, and sharper replies on agency.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Erik Wielenberg
+          - article [ref=e4020]:
+            - 'link "Open Debate 198: God and the foundations of morality" [ref=e4021] [cursor=pointer]':
+              - /url: /debate/ferrer-dillahunty-god-morality-2018/
+              - generic "Debate 198" [ref=e4022]: "198"
+              - generic [ref=e4023]:
+                - text: God and the foundations of morality
+                - generic "Debate year 2018" [ref=e4024]: "2018"
+            - generic "Topics" [ref=e4025]:
+              - generic [ref=e4026]: Morality & ethics
+              - generic [ref=e4027]: God & theism
+            - generic [ref=e4028]:
+              - generic "Interlocutor photos" [ref=e4029]
+              - generic [ref=e4030]: 2 hr 1 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ferrer grounds categorical morality and knowledge in God while Dillahunty defends publicly correctable wellbeing judgments and challenges scripture as divine guidance.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Ferrer | Matt Dillahunty
+          - article [ref=e4031]:
+            - 'link "Open Debate 204: Morality without God" [ref=e4032] [cursor=pointer]':
+              - /url: /debate/singer-dsouza-morality-without-god-2008/
+              - generic "Debate 204" [ref=e4033]: "204"
+              - generic [ref=e4034]:
+                - text: Morality without God
+                - generic "Debate year 2008" [ref=e4035]: "2008"
+            - generic "Topics" [ref=e4036]:
+              - generic [ref=e4037]: Morality & ethics
+              - generic [ref=e4038]: God & theism
+            - generic [ref=e4039]:
+              - generic "Interlocutor photos" [ref=e4040]
+              - generic [ref=e4041]: 1 hr 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dinesh D'Souza and Peter Singer dispute whether moral obligations require God. D'Souza presses conscience, equality, sacrifice, history, and duty's authority, while Singer answers through reason, universal consideration, ethical progress, and Euthyphro.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dinesh D'Souza | Peter Singer
+          - article [ref=e4042]:
+            - 'link "Open Debate 239: Religious narrative, morality, and meaning" [ref=e4043] [cursor=pointer]':
+              - /url: /debate/harris-peterson-religious-narrative-morality-2018/
+              - generic "Debate 239" [ref=e4044]: "239"
+              - generic [ref=e4045]:
+                - text: Religious narrative, morality, and meaning
+                - generic "Debate year 2018" [ref=e4046]: "2018"
+            - generic "Topics" [ref=e4047]:
+              - generic [ref=e4048]: Morality & ethics
+              - generic [ref=e4049]: Meaning & purpose
+            - generic [ref=e4050]:
+              - generic "Interlocutor photos" [ref=e4051]
+              - generic [ref=e4052]: 2 hr 16 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Harris wins narrowly by separating religious narratives’ genuine usefulness from truth and necessity, while Peterson exposes unresolved problems in secular value selection.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jordan Peterson | Sam Harris
+          - article [ref=e4053]:
+            - 'link "Open Debate 247: Goodness without God" [ref=e4054] [cursor=pointer]':
+              - /url: /debate/folley-scrivener-good-without-god-2025/
+              - generic "Debate 247" [ref=e4055]: "247"
+              - generic [ref=e4056]:
+                - text: Goodness without God
+                - generic "Debate year 2025" [ref=e4057]: "2025"
+            - generic "Topics" [ref=e4058]:
+              - generic [ref=e4059]: Morality & ethics
+              - generic [ref=e4060]: God & theism
+            - generic [ref=e4061]:
+              - generic "Interlocutor photos" [ref=e4062]
+              - generic [ref=e4063]: 1 hr 5 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Folley more successfully separates historical influence from necessary grounding, while Scrivener offers substantive Christian interpretations without establishing their exclusivity against non-theistic alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Joe Folley | Glen Scrivener
+          - article [ref=e4064]:
+            - 'link "Open Debate 249: Moral realism and reflective judgment" [ref=e4065] [cursor=pointer]':
+              - /url: /debate/adelstein-bush-moral-realism-2021/
+              - generic "Debate 249" [ref=e4066]: "249"
+              - generic [ref=e4067]:
+                - text: Moral realism and reflective judgment
+                - generic "Debate year 2021" [ref=e4068]: "2021"
+            - generic "Topics" [ref=e4069]:
+              - generic [ref=e4070]: Morality & ethics
+              - generic [ref=e4071]: Moral realism & objectivity
+            - generic [ref=e4072]:
+              - generic "Interlocutor photos" [ref=e4073]
+              - generic [ref=e4074]: 2 hr 49 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Adelstein offers reflective and experiential evidence for realism; Bush more effectively challenges its interpretation, while both distinguish hypothetical consistency from harmful endorsement.
+              - generic:
+                - generic: Speakers
+                - paragraph: Matthew Adelstein | Lance Bush
+          - article [ref=e4075]:
+            - 'link "Open Debate 262: Religion and moral truth" [ref=e4076] [cursor=pointer]':
+              - /url: /debate/harris-haidt-religion-moral-truth-2016/
+              - generic "Debate 262" [ref=e4077]: "262"
+              - generic [ref=e4078]:
+                - text: Religion and moral truth
+                - generic "Debate year 2016" [ref=e4079]: "2016"
+            - generic "Topics" [ref=e4080]:
+              - generic [ref=e4081]: Morality & ethics
+              - generic [ref=e4082]: Moral realism & objectivity
+              - generic [ref=e4083]: Religion & society
+            - generic [ref=e4084]:
+              - generic "Interlocutor photos" [ref=e4085]
+              - generic [ref=e4086]: 1 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Two naturalists contest whether broad well-being can ground moral truth, with Harris strongest on scope and Haidt strongest on psychology, institutions, and plural goods.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sam Harris | Jonathan Haidt
+      - generic [ref=e4087]:
+        - generic [ref=e4088]:
+          - generic [ref=e4089]:
+            - paragraph [ref=e4090]: 11 debates
+            - heading "Moral realism and objectivity" [level=2] [ref=e4091]
+          - paragraph [ref=e4092]: Whether objective moral facts exist, including moral realism, anti-realism, intuitionism, emotivism, error theory, and disagreement.
+        - generic [ref=e4093]:
+          - article [ref=e4094]:
+            - 'link "Open Debate 19: Moral landscape and emotivism" [ref=e4095] [cursor=pointer]':
+              - /url: /debate/harris-oconnor-objective-morality-2024/
+              - generic "Debate 19" [ref=e4096]: "19"
+              - generic [ref=e4097]:
+                - text: Moral landscape and emotivism
+                - generic "Debate year 2024" [ref=e4098]: "2024"
+            - generic "Topics" [ref=e4099]:
+              - generic [ref=e4100]: Moral realism & objectivity
+              - generic [ref=e4101]: Morality & ethics
+            - generic [ref=e4102]:
+              - generic "Interlocutor photos" [ref=e4103]
+              - generic [ref=e4104]: 14 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Harris grounds evaluative direction in conscious experience, while O'Connor distinguishes subjective destinations from objective means and denies that flourishing requires moral truth.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sam Harris | Alex O'Connor
+          - article [ref=e4105]:
+            - 'link "Open Debate 23: Objectivist morality and emotivism" [ref=e4106] [cursor=pointer]':
+              - /url: /debate/oconnor-biddle-objective-morality-2024/
+              - generic "Debate 23" [ref=e4107]: "23"
+              - generic [ref=e4108]:
+                - text: Objectivist morality and emotivism
+                - generic "Debate year 2024" [ref=e4109]: "2024"
+            - generic "Topics" [ref=e4110]:
+              - generic [ref=e4111]: Moral realism & objectivity
+              - generic [ref=e4112]: Morality & ethics
+            - generic [ref=e4113]:
+              - generic "Interlocutor photos" [ref=e4114]
+              - generic [ref=e4115]: 1 hr 33 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Biddle grounds objective morality in life and flourishing; O'Connor argues that conditional valuation cannot establish objective duties, especially toward other people and animals.
+              - generic:
+                - generic: Speakers
+                - paragraph: Craig Biddle | Alex O'Connor
+          - article [ref=e4116]:
+            - 'link "Open Debate 40: Moral realism and anti-realism" [ref=e4117] [cursor=pointer]':
+              - /url: /debate/enoch-bush-objective-moral-truths-2026/
+              - generic "Debate 40" [ref=e4118]: "40"
+              - generic [ref=e4119]:
+                - text: Moral realism and anti-realism
+                - generic "Debate year 2026" [ref=e4120]: "2026"
+            - generic "Topics" [ref=e4121]:
+              - generic [ref=e4122]: Moral realism & objectivity
+              - generic [ref=e4123]: Morality & ethics
+            - generic [ref=e4124]:
+              - generic "Interlocutor photos" [ref=e4125]
+              - generic [ref=e4126]: 1 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Enoch defends mind-independent normativity through justified appearances and comparative explanation; Bush contests realist priority through neutral language, causal genealogy, pragmatism, and parsimony.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Enoch | Lance Bush
+          - article [ref=e4127]:
+            - 'link "Open Debate 41: Objective moral facts and intuitionism" [ref=e4128] [cursor=pointer]':
+              - /url: /debate/huemer-bush-objective-moral-facts-2024/
+              - generic "Debate 41" [ref=e4129]: "41"
+              - generic [ref=e4130]:
+                - text: Objective moral facts and intuitionism
+                - generic "Debate year 2024" [ref=e4131]: "2024"
+            - generic "Topics" [ref=e4132]:
+              - generic [ref=e4133]: Moral realism & objectivity
+              - generic [ref=e4134]: Morality & ethics
+            - generic [ref=e4135]:
+              - generic "Interlocutor photos" [ref=e4136]
+              - generic [ref=e4137]: 2 hr 09 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Huemer defended attitude-independent morality through semantic tests and intellectual appearances; Bush countered with contextual quietism, folk indeterminacy, and challenges to intuition’s public authority.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Huemer | Lance Bush
+          - article [ref=e4138]:
+            - 'link "Open Debate 45: Moral reality and ethical feeling" [ref=e4139] [cursor=pointer]':
+              - /url: /debate/singer-frazier-swinburne-oconnor-morality-2025/
+              - generic "Debate 45" [ref=e4140]: "45"
+              - generic [ref=e4141]:
+                - text: Moral reality and ethical feeling
+                - generic "Debate year 2025" [ref=e4142]: "2025"
+            - generic "Topics" [ref=e4143]:
+              - generic [ref=e4144]: Moral realism & objectivity
+              - generic [ref=e4145]: Morality & ethics
+            - generic [ref=e4146]:
+              - generic "Interlocutor photos" [ref=e4147]
+              - generic [ref=e4148]: 1 hr 41 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Singer, Frazier, and Swinburne offer divergent realist accounts of morality; O'Connor defends ethical emotivism and treats moral language as expressive rather than truth-apt.
+              - generic:
+                - generic: Speakers
+                - paragraph: Peter Singer, Jessica Frazier, Richard Swinburne | Alex O'Connor
+          - article [ref=e4149]:
+            - 'link "Open Debate 56: Moral realism and error theory" [ref=e4150] [cursor=pointer]':
+              - /url: /debate/huemer-lutz-morality-real-2026/
+              - generic "Debate 56" [ref=e4151]: "56"
+              - generic [ref=e4152]:
+                - text: Moral realism and error theory
+                - generic "Debate year 2026" [ref=e4153]: "2026"
+            - generic "Topics" [ref=e4154]:
+              - generic [ref=e4155]: Moral realism & objectivity
+              - generic [ref=e4156]: Morality & ethics
+            - generic [ref=e4157]:
+              - generic "Interlocutor photos" [ref=e4158]
+              - generic [ref=e4159]: 1 hr 42 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Huemer defends objective morality through evaluative judgment and defeasible appearances; Lutz counters with desire-based reasons, projectivism, and explanationist standards for knowledge.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Huemer | Matt Lutz
+          - article [ref=e4160]:
+            - 'link "Open Debate 82: Metaethical anti-realism and realism" [ref=e4161] [cursor=pointer]':
+              - /url: /debate/bush-mcallister-moral-anti-realism-realism-2025/
+              - generic "Debate 82" [ref=e4162]: "82"
+              - generic [ref=e4163]:
+                - text: Metaethical anti-realism and realism
+                - generic "Debate year 2025" [ref=e4164]: "2025"
+            - generic "Topics" [ref=e4165]:
+              - generic [ref=e4166]: Moral realism & objectivity
+              - generic [ref=e4167]: Morality & ethics
+            - generic [ref=e4168]:
+              - generic "Interlocutor photos" [ref=e4169]
+              - generic [ref=e4170]: 1 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Bush systematically challenges realist presumptions from common sense, history, and semantics, while McAllister offers competent but insufficiently documented convergence and perspectival-collapse arguments.
+              - generic:
+                - generic: Speakers
+                - paragraph: Lance Bush | Derek McAllister
+          - article [ref=e4171]:
+            - 'link "Open Debate 183: Moral realism and normative objectivity" [ref=e4172] [cursor=pointer]':
+              - /url: /debate/enoch-clarke-doane-moral-realism-objectivity-2026/
+              - generic "Debate 183" [ref=e4173]: "183"
+              - generic [ref=e4174]:
+                - text: Moral realism and normative objectivity
+                - generic "Debate year 2026" [ref=e4175]: "2026"
+            - generic "Topics" [ref=e4176]:
+              - generic [ref=e4177]: Moral realism & objectivity
+              - generic [ref=e4178]: Morality & ethics
+            - generic [ref=e4179]:
+              - generic "Interlocutor photos" [ref=e4180]
+              - generic [ref=e4181]: 1 hr 10 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Enoch grounds moral objectivity in stance-independent facts and ordinary deliberation, while confronting rival-package, noncognitivist, and reflective-anomaly challenges to action guidance.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Enoch | Justin Clarke-Doane
+          - article [ref=e4182]:
+            - 'link "Open Debate 184: Moral realism, knowledge, and categorical reasons" [ref=e4183] [cursor=pointer]':
+              - /url: /debate/enoch-sampson-loeb-lutz-moral-realism-2024/
+              - generic "Debate 184" [ref=e4184]: "184"
+              - generic [ref=e4185]:
+                - text: Moral realism, knowledge, and categorical reasons
+                - generic "Debate year 2024" [ref=e4186]: "2024"
+            - generic "Topics" [ref=e4187]:
+              - generic [ref=e4188]: Moral realism & objectivity
+              - generic [ref=e4189]: Morality & ethics
+              - generic [ref=e4190]: Logic & reason
+            - generic [ref=e4191]:
+              - generic "Interlocutor photos" [ref=e4192]
+              - generic [ref=e4193]: 1 hr 43 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Enoch and Sampson defend robust moral realism through Moorean cases and rational reflection; Loeb and Lutz argue that desire-relative reasons and a naturalistic explanation of moral experience make such facts unnecessary.
+              - generic:
+                - generic: Speakers
+                - paragraph: David Enoch & Eric Sampson | Don Loeb & Matthew Lutz
+          - article [ref=e4194]:
+            - 'link "Open Debate 221: Moral realism, intuition, and disagreement" [ref=e4195] [cursor=pointer]':
+              - /url: /debate/huemer-loeb-moral-realism-2022/
+              - generic "Debate 221" [ref=e4196]: "221"
+              - generic [ref=e4197]:
+                - text: Moral realism, intuition, and disagreement
+                - generic "Debate year 2022" [ref=e4198]: "2022"
+            - generic "Topics" [ref=e4199]:
+              - generic [ref=e4200]: Moral realism & objectivity
+              - generic [ref=e4201]: Morality & ethics
+              - generic [ref=e4202]: Logic & reason
+            - generic [ref=e4203]:
+              - generic "Interlocutor photos" [ref=e4204]
+              - generic [ref=e4205]: 1 hr 34 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Huemer’s intuitive and convergence-based realism met Loeb’s semantic, explanatory, and practical alternatives; mixed evidence narrowly left anti-realism at least equally plausible.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Huemer | Don Loeb
+          - article [ref=e4206]:
+            - 'link "Open Debate 236: Moral realism and stance-independent reasons" [ref=e4207] [cursor=pointer]':
+              - /url: /debate/bush-sampson-moral-realism-2022/
+              - generic "Debate 236" [ref=e4208]: "236"
+              - generic [ref=e4209]:
+                - text: Moral realism and stance-independent reasons
+                - generic "Debate year 2022" [ref=e4210]: "2022"
+            - generic "Topics" [ref=e4211]:
+              - generic [ref=e4212]: Moral realism & objectivity
+              - generic [ref=e4213]: Morality & ethics
+              - generic [ref=e4214]: Logic & reason
+            - generic [ref=e4215]:
+              - generic "Interlocutor photos" [ref=e4216]
+              - generic [ref=e4217]: 1 hr 53 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Sampson narrowly prevails by defining a limited realism and defending its intelligibility, while Bush supplies powerful underdetermination and genealogy challenges that remain evidentially incomplete.
+              - generic:
+                - generic: Speakers
+                - paragraph: Eric Sampson | Lance Bush
+      - generic [ref=e4218]:
+        - generic [ref=e4219]:
+          - generic [ref=e4220]:
+            - paragraph [ref=e4221]: 19 debates
+            - heading "Evil, suffering, and hiddenness" [level=2] [ref=e4222]
+          - paragraph [ref=e4223]: The problem of evil, animal suffering, divine hiddenness, moral narrative, and whether suffering undermines theistic claims.
+        - generic [ref=e4224]:
+          - article [ref=e4225]:
+            - 'link "Open Debate 01: Christian theism and suffering" [ref=e4226] [cursor=pointer]':
+              - /url: /debate/craig-oconnor-god-debate-2026/
+              - generic "Debate 01" [ref=e4227]: "01"
+              - generic [ref=e4228]:
+                - text: Christian theism and suffering
+                - generic "Debate year 2026" [ref=e4229]: "2026"
+            - generic "Topics" [ref=e4230]:
+              - generic [ref=e4231]: Evil & suffering
+              - generic [ref=e4232]: God & theism
+            - generic [ref=e4233]:
+              - generic "Interlocutor photos" [ref=e4234]
+              - generic [ref=e4235]: 1 hr 49 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig presented a cumulative Christian case, while O'Connor's calibrated challenges concerning fine-tuning, animal suffering, and Christian specificity proved especially effective.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Alex O'Connor
+          - article [ref=e4236]:
+            - 'link "Open Debate 11: Problem of evil" [ref=e4237] [cursor=pointer]':
+              - /url: /debate/dsouza-ehrman-god-suffering-evil-2025/
+              - generic "Debate 11" [ref=e4238]: "11"
+              - generic [ref=e4239]:
+                - text: Problem of evil
+                - generic "Debate year 2025" [ref=e4240]: "2025"
+            - generic "Topics" [ref=e4241]: Evil & suffering
+            - generic [ref=e4243]:
+              - generic "Interlocutor photos" [ref=e4244]
+              - generic [ref=e4245]: 1 hr 35 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: D'Souza defended theistic compatibility through epistemic limits, freedom, and natural order; Ehrman pressed suffering's scale, preventability, and unexplained intervention gap.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dinesh D'Souza | Bart Ehrman
+          - article [ref=e4246]:
+            - 'link "Open Debate 48: Hiddenness, evil, and moral narrative" [ref=e4247] [cursor=pointer]':
+              - /url: /debate/scrivener-folley-hiddenness-evil-moral-narrative-2025/
+              - generic "Debate 48" [ref=e4248]: "48"
+              - generic [ref=e4249]:
+                - text: Hiddenness, evil, and moral narrative
+                - generic "Debate year 2025" [ref=e4250]: "2025"
+            - generic "Topics" [ref=e4251]:
+              - generic [ref=e4252]: Evil & suffering
+              - generic [ref=e4253]: Morality & ethics
+            - generic [ref=e4254]:
+              - generic "Interlocutor photos" [ref=e4255]
+              - generic [ref=e4256]: 1 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Folley pressed cumulative evidential and methodological objections, while Scrivener offered an integrated Christian narrative whose strongest replies remained partly underdeveloped.
+              - generic:
+                - generic: Speakers
+                - paragraph: Glen Scrivener | Joe Folley
+          - article [ref=e4257]:
+            - 'link "Open Debate 74: Suffering, theism, and causal finitude" [ref=e4258] [cursor=pointer]':
+              - /url: /debate/rasmussen-malpass-suffering-causal-finitism-2021/
+              - generic "Debate 74" [ref=e4259]: "74"
+              - generic [ref=e4260]:
+                - text: Suffering, theism, and causal finitude
+                - generic "Debate year 2021" [ref=e4261]: "2021"
+            - generic "Topics" [ref=e4262]:
+              - generic [ref=e4263]: Evil & suffering
+              - generic [ref=e4264]: God & theism
+            - generic [ref=e4265]:
+              - generic "Interlocutor photos" [ref=e4266]
+              - generic [ref=e4267]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Rasmussen defends causal finitude and theistic expectations; Malpass challenges modal recombination and argues that suffering's severity and distribution favor indifference.
+              - generic:
+                - generic: Speakers
+                - paragraph: Josh Rasmussen | Alex Malpass
+          - article [ref=e4268]:
+            - 'link "Open Debate 98: Evil and divine reasonableness" [ref=e4269] [cursor=pointer]':
+              - /url: /debate/craig-grayling-evil-god-reasonable-2011/
+              - generic "Debate 98" [ref=e4270]: "98"
+              - generic [ref=e4271]:
+                - text: Evil and divine reasonableness
+                - generic "Debate year 2011" [ref=e4272]: "2011"
+            - generic "Topics" [ref=e4273]:
+              - generic [ref=e4274]: Evil & suffering
+              - generic [ref=e4275]: Logic & reason
+              - generic [ref=e4276]: God & theism
+            - generic [ref=e4277]:
+              - generic "Interlocutor photos" [ref=e4278]
+              - generic [ref=e4279]: 1 hr 48 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defends theistic reasonableness through freedom, epistemic restraint, and total evidence; Grayling presses suffering, better-world feasibility, ordinary moral knowledge, and secular morality.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | A. C. Grayling
+          - article [ref=e4280]:
+            - 'link "Open Debate 103: Rational theism and gratuitous evil" [ref=e4281] [cursor=pointer]':
+              - /url: /debate/woodford-edwards-rational-belief-god-2023/
+              - generic "Debate 103" [ref=e4282]: "103"
+              - generic [ref=e4283]:
+                - text: Rational theism and gratuitous evil
+                - generic "Debate year 2023" [ref=e4284]: "2023"
+            - generic "Topics" [ref=e4285]:
+              - generic [ref=e4286]: Evil & suffering
+              - generic [ref=e4287]: Logic & reason
+              - generic [ref=e4288]: God & theism
+            - generic [ref=e4289]:
+              - generic "Interlocutor photos" [ref=e4290]
+              - generic [ref=e4291]: 51 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Woodford presses suffering, revelation, and evidential gaps; Edwards answers through a cumulative theistic case grounded in reason, order, morality, and purpose.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stephen Woodford | Simon Edwards
+          - article [ref=e4292]:
+            - 'link "Open Debate 113: God and suffering" [ref=e4293] [cursor=pointer]':
+              - /url: /debate/dirckx-woodford-god-suffering-2024/
+              - generic "Debate 113" [ref=e4294]: "113"
+              - generic [ref=e4295]:
+                - text: God and suffering
+                - generic "Debate year 2024" [ref=e4296]: "2024"
+            - generic "Topics" [ref=e4297]:
+              - generic [ref=e4298]: Evil & suffering
+              - generic [ref=e4299]: God & theism
+            - generic [ref=e4300]:
+              - generic "Interlocutor photos" [ref=e4301]
+              - generic [ref=e4302]: 1 hr 07 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dirckx defended broken creation, objective dignity, divine solidarity, and restoration; Woodford pressed evidential challenges about permitted suffering, selective healing, and salvation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sharon Dirckx | Stephen Woodford
+          - article [ref=e4303]:
+            - 'link "Open Debate 115: Panel problem of evil" [ref=e4304] [cursor=pointer]':
+              - /url: /debate/horn-bertuzzi-oconnor-schmid-problem-evil-2022/
+              - generic "Debate 115" [ref=e4305]: "115"
+              - generic [ref=e4306]:
+                - text: Panel problem of evil
+                - generic "Debate year 2022" [ref=e4307]: "2022"
+            - generic "Topics" [ref=e4308]: Evil & suffering
+            - generic [ref=e4310]:
+              - generic "Interlocutor photos" [ref=e4311]
+              - generic [ref=e4312]: 1 hr 15 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Horn and Bertuzzi defend theodicy and Christian hope; O'Connor and Schmid press evidential evil, animal suffering, and the cost of skeptical replies.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn and Cameron Bertuzzi | Alex O'Connor and Joe Schmid
+          - article [ref=e4313]:
+            - 'link "Open Debate 116: Evil as evidence" [ref=e4314] [cursor=pointer]':
+              - /url: /debate/bertuzzi-schieber-evil-evidence-2019/
+              - generic "Debate 116" [ref=e4315]: "116"
+              - generic [ref=e4316]:
+                - text: Evil as evidence
+                - generic "Debate year 2019" [ref=e4317]: "2019"
+            - generic "Topics" [ref=e4318]:
+              - generic [ref=e4319]: Evil & suffering
+              - generic [ref=e4320]: Logic & reason
+            - generic [ref=e4321]:
+              - generic "Interlocutor photos" [ref=e4322]
+              - generic [ref=e4323]: 1 hr 05 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Schieber's comparative suffering case prevailed overall, while Bertuzzi's likelihood objection and limited-information defense exposed a serious weakness in the final skeptical-theism reply.
+              - generic:
+                - generic: Speakers
+                - paragraph: Cameron Bertuzzi | Justin Schieber
+          - article [ref=e4324]:
+            - 'link "Open Debate 118: Evil, mind, and hiddenness" [ref=e4325] [cursor=pointer]':
+              - /url: /debate/hernandez-schieber-god-existence-2023/
+              - generic "Debate 118" [ref=e4326]: "118"
+              - generic [ref=e4327]:
+                - text: Evil, mind, and hiddenness
+                - generic "Debate year 2023" [ref=e4328]: "2023"
+            - generic "Topics" [ref=e4329]:
+              - generic [ref=e4330]: Evil & suffering
+              - generic [ref=e4331]: Mind & consciousness
+            - generic [ref=e4332]:
+              - generic "Interlocutor photos" [ref=e4333]
+              - generic [ref=e4334]: 2 hr 18 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hernandez defended theistic grounds for morality, reason, and consciousness; Schieber pressed stronger naturalistic alternatives and evidential challenges from suffering, hostility, and hiddenness.
+              - generic:
+                - generic: Speakers
+                - paragraph: Eric Hernandez | Justin Schieber
+          - article [ref=e4335]:
+            - 'link "Open Debate 123: Divine hiddenness and seeking" [ref=e4336] [cursor=pointer]':
+              - /url: /debate/oconnor-pine-divine-hiddenness-2024/
+              - generic "Debate 123" [ref=e4337]: "123"
+              - generic [ref=e4338]:
+                - text: Divine hiddenness and seeking
+                - generic "Debate year 2024" [ref=e4339]: "2024"
+            - generic "Topics" [ref=e4340]:
+              - generic [ref=e4341]: Evil & suffering
+              - generic [ref=e4342]: God & theism
+            - generic [ref=e4343]:
+              - generic "Interlocutor photos" [ref=e4344]
+              - generic [ref=e4345]: 1 hr 41 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: O'Connor presses sincere nonbelief, unequal access, culpability, and inherited deprivation; Pine answers through universal grace, temporal formation, providence, and recoverable gratuitous gifts.
+              - generic:
+                - generic: Speakers
+                - paragraph: Gregory Pine | Alex O'Connor
+          - article [ref=e4346]:
+            - 'link "Open Debate 128: Evil God challenge and theism" [ref=e4347] [cursor=pointer]':
+              - /url: /debate/craig-law-evil-god-challenge-2011/
+              - generic "Debate 128" [ref=e4348]: "128"
+              - generic [ref=e4349]:
+                - text: Evil God challenge and theism
+                - generic "Debate year 2011" [ref=e4350]: "2011"
+            - generic "Topics" [ref=e4351]:
+              - generic [ref=e4352]: Evil & suffering
+              - generic [ref=e4353]: God & theism
+            - generic [ref=e4354]:
+              - generic "Interlocutor photos" [ref=e4355]
+              - generic [ref=e4356]: 1 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig’s cumulative creator, morality, and resurrection case met Law’s stronger suffering evidence and evil-God symmetry challenge, which remained insufficiently distinguished by providential skepticism.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Stephen Law
+          - article [ref=e4357]:
+            - 'link "Open Debate 208: Divine hiddenness and Christian love" [ref=e4358] [cursor=pointer]':
+              - /url: /debate/vela-jones-divine-hiddenness-christian-love-2023/
+              - generic "Debate 208" [ref=e4359]: "208"
+              - generic [ref=e4360]:
+                - text: Divine hiddenness and Christian love
+                - generic "Debate year 2023" [ref=e4361]: "2023"
+            - generic "Topics" [ref=e4362]:
+              - generic [ref=e4363]: Evil & suffering
+              - generic [ref=e4364]: God & theism
+            - generic [ref=e4365]:
+              - generic "Interlocutor photos" [ref=e4366]
+              - generic [ref=e4367]: 2 hr 3 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Tyler Vela’s hiddenness critique wins by pressing loving availability, avoidable world design, and less-hidden alternatives more consistently than Michael Jones establishes sanctification, soul formation, and individualized disclosure.
+              - generic:
+                - generic: Speakers
+                - paragraph: Tyler Vela | Michael Jones
+          - article [ref=e4368]:
+            - 'link "Open Debate 209: Divine hiddenness and a loving God" [ref=e4369] [cursor=pointer]':
+              - /url: /debate/oconnor-ruegger-divine-hiddenness-loving-god-2022/
+              - generic "Debate 209" [ref=e4370]: "209"
+              - generic [ref=e4371]:
+                - text: Divine hiddenness and a loving God
+                - generic "Debate year 2022" [ref=e4372]: "2022"
+            - generic "Topics" [ref=e4373]:
+              - generic [ref=e4374]: Evil & suffering
+              - generic [ref=e4375]: God & theism
+            - generic [ref=e4376]:
+              - generic "Interlocutor photos" [ref=e4377]
+              - generic [ref=e4378]: 1 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Alex O'Connor prevailed by separating public arguments from personally accessible revelation and pressing nonresistant seeking and delayed disclosure, while Lukas Ruegger countered with cumulative evidence, fallible introspection, individualized pathways, and delay's possible goods.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alex O'Connor | Lukas Ruegger
+          - article [ref=e4379]:
+            - 'link "Open Debate 210: Divine hiddenness, relationship, and religious evidence" [ref=e4380] [cursor=pointer]':
+              - /url: /debate/paterson-schmid-divine-hiddenness-relationship-2026/
+              - generic "Debate 210" [ref=e4381]: "210"
+              - generic [ref=e4382]:
+                - text: Divine hiddenness, relationship, and religious evidence
+                - generic "Debate year 2026" [ref=e4383]: "2026"
+            - generic "Topics" [ref=e4384]:
+              - generic [ref=e4385]: Evil & suffering
+              - generic [ref=e4386]: Logic & reason
+              - generic [ref=e4387]: God & theism
+            - generic [ref=e4388]:
+              - generic "Interlocutor photos" [ref=e4389]
+              - generic [ref=e4390]: 1 hr 14 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Schmid won by arguing that nonculpable nonbelief, demographic clustering, and silence amid tragedy fit naturalism better, while Paterson's temporary-redemption defenses remained comparatively under-supported.
+              - generic:
+                - generic: Speakers
+                - paragraph: Joe Schmid | Dan Paterson
+          - article [ref=e4391]:
+            - 'link "Open Debate 211: Divine hiddenness, evidential ambiguity, and belief" [ref=e4392] [cursor=pointer]':
+              - /url: /debate/baggini-baker-hytch-divine-hiddenness-2025/
+              - generic "Debate 211" [ref=e4393]: "211"
+              - generic [ref=e4394]:
+                - text: Divine hiddenness, evidential ambiguity, and belief
+                - generic "Debate year 2025" [ref=e4395]: "2025"
+            - generic "Topics" [ref=e4396]:
+              - generic [ref=e4397]: Evil & suffering
+              - generic [ref=e4398]: God & theism
+            - generic [ref=e4399]:
+              - generic "Interlocutor photos" [ref=e4400]
+              - generic [ref=e4401]: 1 hr 2 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Baker-Hytch narrowly prevailed by probabilistically integrating hiddenness with relational and cumulative evidence, while Baggini pressed cultural contingency, geographic luck, and experiential mediation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Julian Baggini | Max Baker-Hytch
+          - article [ref=e4402]:
+            - 'link "Open Debate 251: Evil-god symmetry and divine goodness" [ref=e4403] [cursor=pointer]':
+              - /url: /debate/oconnor-baker-hytch-evil-god-challenge-2021/
+              - generic "Debate 251" [ref=e4404]: "251"
+              - generic [ref=e4405]:
+                - text: Evil-god symmetry and divine goodness
+                - generic "Debate year 2021" [ref=e4406]: "2021"
+            - generic "Topics" [ref=e4407]:
+              - generic [ref=e4408]: Evil & suffering
+              - generic [ref=e4409]: God & theism
+            - generic [ref=e4410]:
+              - generic "Interlocutor photos" [ref=e4411]
+              - generic [ref=e4412]: 1 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: O'Connor narrowly leads through character-focused objections and reciprocal creation motives, while Baker-Hytch excels at scope distinctions and qualifies the final mixed-world comparison.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alex O'Connor | Max Baker-Hytch
+          - article [ref=e4413]:
+            - 'link "Open Debate 252: Suffering, soul-building, and divine permission" [ref=e4414] [cursor=pointer]':
+              - /url: /debate/jones-oconnor-evil-suffering-2020/
+              - generic "Debate 252" [ref=e4415]: "252"
+              - generic [ref=e4416]:
+                - text: Suffering, soul-building, and divine permission
+                - generic "Debate year 2020" [ref=e4417]: "2020"
+            - generic "Topics" [ref=e4418]:
+              - generic [ref=e4419]: Evil & suffering
+              - generic [ref=e4420]: Mind & consciousness
+              - generic [ref=e4421]: God & theism
+            - generic [ref=e4422]:
+              - generic "Interlocutor photos" [ref=e4423]
+              - generic [ref=e4424]: 2 hr 9 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: O'Connor more effectively presses evidential justification and selective prevention, while Jones offers qualified defenses through freedom, virtue, and eventual recovery from suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Alex O'Connor
+          - article [ref=e4425]:
+            - 'link "Open Debate 253: Divine hiddenness, salvation, and hell" [ref=e4426] [cursor=pointer]':
+              - /url: /debate/clifton-sechler-divine-hiddenness-hell-2022/
+              - generic "Debate 253" [ref=e4427]: "253"
+              - generic [ref=e4428]:
+                - text: Divine hiddenness, salvation, and hell
+                - generic "Debate year 2022" [ref=e4429]: "2022"
+            - generic "Topics" [ref=e4430]:
+              - generic [ref=e4431]: Evil & suffering
+              - generic [ref=e4432]: Christian belief & doctrine
+              - generic [ref=e4433]: Meaning & purpose
+              - generic [ref=e4434]: God & theism
+            - generic [ref=e4435]:
+              - generic "Interlocutor photos" [ref=e4436]
+              - generic [ref=e4437]: 1 hr 16 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Clifton’s hiddenness and hell challenge prevailed 83–72, especially against Sechler’s uncertainty-based freedom defense, inclusivist salvation, and preference for annihilation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Zac Sechler | Scott Clifton
+      - generic [ref=e4438]:
+        - generic [ref=e4439]:
+          - generic [ref=e4440]:
+            - paragraph [ref=e4441]: 20 debates
+            - heading "Mind and consciousness" [level=2] [ref=e4442]
+          - paragraph [ref=e4443]: Consciousness, the mind–brain relation, souls, personal identity, idealism, and whether mental reality extends beyond matter.
+        - generic [ref=e4444]:
+          - article [ref=e4445]:
+            - 'link "Open Debate 34: Consciousness and physicalism" [ref=e4446] [cursor=pointer]':
+              - /url: /debate/goff-carroll-consciousness-fundamental-2023/
+              - generic "Debate 34" [ref=e4447]: "34"
+              - generic [ref=e4448]:
+                - text: Consciousness and physicalism
+                - generic "Debate year 2023" [ref=e4449]: "2023"
+            - generic "Topics" [ref=e4450]:
+              - generic [ref=e4451]: Mind & consciousness
+              - generic [ref=e4452]: Science & design
+            - generic [ref=e4453]:
+              - generic "Interlocutor photos" [ref=e4454]
+              - generic [ref=e4455]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Goff defended consciousness-first metaphysics from private experience and explanatory gaps; Carroll answered through multilevel emergence, empirical constraints, and comparative challenges.
+              - generic:
+                - generic: Speakers
+                - paragraph: Philip Goff | Sean Carroll
+          - article [ref=e4456]:
+            - 'link "Open Debate 68: Quantum idealism and demonstrability" [ref=e4457] [cursor=pointer]':
+              - /url: /debate/jones-dillahunty-quantum-idealism-demonstrability-2026/
+              - generic "Debate 68" [ref=e4458]: "68"
+              - generic [ref=e4459]:
+                - text: Quantum idealism and demonstrability
+                - generic "Debate year 2026" [ref=e4460]: "2026"
+            - generic "Topics" [ref=e4461]:
+              - generic [ref=e4462]: Mind & consciousness
+              - generic [ref=e4463]: Science & design
+            - generic [ref=e4464]:
+              - generic "Interlocutor photos" [ref=e4465]
+              - generic [ref=e4466]: 22 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones offered an informational idealist account of quantum observation, while Dillahunty pressed stronger public-demonstrability, causal-interaction, preconscious-development, and discriminating-testability objections.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Matt Dillahunty
+          - article [ref=e4467]:
+            - 'link "Open Debate 91: Psychophysical harmony and theism" [ref=e4468] [cursor=pointer]':
+              - /url: /debate/cutter-oppy-mind-brain-harmony-god-2025/
+              - generic "Debate 91" [ref=e4469]: "91"
+              - generic [ref=e4470]:
+                - text: Psychophysical harmony and theism
+                - generic "Debate year 2025" [ref=e4471]: "2025"
+            - generic "Topics" [ref=e4472]:
+              - generic [ref=e4473]: Mind & consciousness
+              - generic [ref=e4474]: God & theism
+            - generic [ref=e4475]:
+              - generic "Interlocutor photos" [ref=e4476]
+              - generic [ref=e4477]: 1 hr 51 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Cutter argues psychophysical harmony favors divine goodness; Oppy counters that identity theory and unresolved probability measures undermine the proposed evidential comparison.
+              - generic:
+                - generic: Speakers
+                - paragraph: Brian Cutter | Graham Oppy
+          - article [ref=e4478]:
+            - 'link "Open Debate 100: Emergent mind and evidential burden" [ref=e4479] [cursor=pointer]':
+              - /url: /debate/jones-dillahunty-emergent-mind-god-2020/
+              - generic "Debate 100" [ref=e4480]: "100"
+              - generic [ref=e4481]:
+                - text: Emergent mind and evidential burden
+                - generic "Debate year 2020" [ref=e4482]: "2020"
+            - generic "Topics" [ref=e4483]:
+              - generic [ref=e4484]: Mind & consciousness
+              - generic [ref=e4485]: Logic & reason
+            - generic [ref=e4486]:
+              - generic "Interlocutor photos" [ref=e4487]
+              - generic [ref=e4488]: 2 hr 11 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones assembled a cumulative idealist explanation, while Dillahunty’s sharper probability, underdetermination, and burden challenges exposed substantial gaps between suggestive evidence and theism.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Matt Dillahunty
+          - article [ref=e4489]:
+            - 'link "Open Debate 108: Mind, consciousness, and God" [ref=e4490] [cursor=pointer]':
+              - /url: /debate/ward-ruse-mind-consciousness-god-2013/
+              - generic "Debate 108" [ref=e4491]: "108"
+              - generic [ref=e4492]:
+                - text: Mind, consciousness, and God
+                - generic "Debate year 2013" [ref=e4493]: "2013"
+            - generic "Topics" [ref=e4494]:
+              - generic [ref=e4495]: Mind & consciousness
+              - generic [ref=e4496]: God & theism
+            - generic [ref=e4497]:
+              - generic "Interlocutor photos" [ref=e4498]
+              - generic [ref=e4499]: 1 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ward presents a cumulative mind-first theism, while Ruse argues that shared mysteries and experiences remain naturally explicable and metaphysically underdetermined.
+              - generic:
+                - generic: Speakers
+                - paragraph: Keith Ward | Michael Ruse
+          - article [ref=e4500]:
+            - 'link "Open Debate 114: Consciousness pointing to God" [ref=e4501] [cursor=pointer]':
+              - /url: /debate/dirckx-goff-consciousness-points-god-2019/
+              - generic "Debate 114" [ref=e4502]: "114"
+              - generic [ref=e4503]:
+                - text: Consciousness pointing to God
+                - generic "Debate year 2019" [ref=e4504]: "2019"
+            - generic "Topics" [ref=e4505]:
+              - generic [ref=e4506]: Mind & consciousness
+              - generic [ref=e4507]: God & theism
+            - generic [ref=e4508]:
+              - generic "Interlocutor photos" [ref=e4509]
+              - generic [ref=e4510]: 1 hr 04 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dirckx argues consciousness fits a divine personal ground, while Goff presents panpsychism as a parsimonious alternative and challenges the specifically theistic inference.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sharon Dirckx | Philip Goff
+          - article [ref=e4511]:
+            - 'link "Open Debate 149: Mind, brain, and conscious survival" [ref=e4512] [cursor=pointer]':
+              - /url: /debate/alexander-moody-carroll-novella-death-2014/
+              - generic "Debate 149" [ref=e4513]: "149"
+              - generic [ref=e4514]:
+                - text: Mind, brain, and conscious survival
+                - generic "Debate year 2014" [ref=e4515]: "2014"
+            - generic "Topics" [ref=e4516]: Mind & consciousness
+            - generic [ref=e4518]:
+              - generic "Interlocutor photos" [ref=e4519]
+              - generic [ref=e4520]: 2 hr 53 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Alexander and Moody argue that near-death and shared-death experiences reveal consciousness beyond the brain; Carroll and Novella argue that vivid experience and testimony do not outweigh evidence that minds depend on brains.
+              - generic:
+                - generic: Speakers
+                - paragraph: Eben Alexander and Raymond Moody | Sean Carroll and Steven Novella
+          - article [ref=e4521]:
+            - 'link "Open Debate 187: Mind, consciousness, purpose, and free will" [ref=e4522] [cursor=pointer]':
+              - /url: /debate/ward-dennett-more-than-matter-2019/
+              - generic "Debate 187" [ref=e4523]: "187"
+              - generic [ref=e4524]:
+                - text: Mind, consciousness, purpose, and free will
+                - generic "Debate year 2019" [ref=e4525]: "2019"
+            - generic "Topics" [ref=e4526]:
+              - generic [ref=e4527]: Mind & consciousness
+              - generic [ref=e4528]: Meaning & purpose
+              - generic [ref=e4529]: Free will & determinism
+            - generic [ref=e4530]:
+              - generic "Interlocutor photos" [ref=e4531]
+              - generic [ref=e4532]: 1 hr 23 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Ward defends irreducible consciousness, value, identity, and agency; Dennett answers through evolved computation, higher-level explanation, emergent purpose, and compatibilist control.
+              - generic:
+                - generic: Speakers
+                - paragraph: Keith Ward | Daniel Dennett
+          - article [ref=e4533]:
+            - 'link "Open Debate 188: Analytic idealism, neutral monism, and the self-model" [ref=e4534] [cursor=pointer]':
+              - /url: /debate/kastrup-blackmore-consciousness-idealism-2023/
+              - generic "Debate 188" [ref=e4535]: "188"
+              - generic [ref=e4536]:
+                - text: Analytic idealism, neutral monism, and the self-model
+                - generic "Debate year 2023" [ref=e4537]: "2023"
+            - generic "Topics" [ref=e4538]: Mind & consciousness
+            - generic [ref=e4540]:
+              - generic "Interlocutor photos" [ref=e4541]
+              - generic [ref=e4542]: 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Kastrup grounds reality in consciousness, while Blackmore argues that neutral representation better exposes idealism's unresolved structure, boundaries, and causal differentiation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Bernardo Kastrup | Susan Blackmore
+          - article [ref=e4543]:
+            - 'link "Open Debate 190: Mind, souls, and personal identity" [ref=e4544] [cursor=pointer]':
+              - /url: /debate/huemer-oppy-souls-personal-identity-2022/
+              - generic "Debate 190" [ref=e4545]: "190"
+              - generic [ref=e4546]:
+                - text: Mind, souls, and personal identity
+                - generic "Debate year 2022" [ref=e4547]: "2022"
+            - generic "Topics" [ref=e4548]: Mind & consciousness
+            - generic [ref=e4550]:
+              - generic "Interlocutor photos" [ref=e4551]
+              - generic [ref=e4552]: 2 hr 5 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Huemer argues that irreducible mentality requires a surviving soul, while Oppy offers multiscale naturalism, brain dependence, and cosmological objections to that inference.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Huemer | Graham Oppy
+          - article [ref=e4553]:
+            - 'link "Open Debate 197: Consciousness, purpose, and God" [ref=e4554] [cursor=pointer]':
+              - /url: /debate/mcgilchrist-seth-consciousness-god-2026/
+              - generic "Debate 197" [ref=e4555]: "197"
+              - generic [ref=e4556]:
+                - text: Consciousness, purpose, and God
+                - generic "Debate year 2026" [ref=e4557]: "2026"
+            - generic "Topics" [ref=e4558]:
+              - generic [ref=e4559]: Mind & consciousness
+              - generic [ref=e4560]: Meaning & purpose
+              - generic [ref=e4561]: God & theism
+            - generic [ref=e4562]:
+              - generic "Interlocutor photos" [ref=e4563]
+              - generic [ref=e4564]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: McGilchrist argues that consciousness, value, and directionality indicate a divine relational ground; Seth answers with biological emergence, thermodynamics, and methodological restraint.
+              - generic:
+                - generic: Speakers
+                - paragraph: Iain McGilchrist | Anil Seth
+          - article [ref=e4565]:
+            - 'link "Open Debate 199: Soul and mind–body identity" [ref=e4566] [cursor=pointer]':
+              - /url: /debate/crummett-watkins-soul-existence-2020/
+              - generic "Debate 199" [ref=e4567]: "199"
+              - generic [ref=e4568]:
+                - text: Soul and mind–body identity
+                - generic "Debate year 2020" [ref=e4569]: "2020"
+            - generic "Topics" [ref=e4570]: Mind & consciousness
+            - generic [ref=e4572]:
+              - generic "Interlocutor photos" [ref=e4573]
+              - generic [ref=e4574]: 1 hr 57 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Crummett narrowly prevails, pairing fission cases with contingent psychophysical laws, while Watkins offers empirically grounded monism but overstates closure and conservation arguments.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dustin Crummett | Ben Watkins
+          - article [ref=e4575]:
+            - 'link "Open Debate 201: Soul, mind, and physical personhood" [ref=e4576] [cursor=pointer]':
+              - /url: /debate/hernandez-dillahunty-soul-existence-2015/
+              - generic "Debate 201" [ref=e4577]: "201"
+              - generic [ref=e4578]:
+                - text: Soul, mind, and physical personhood
+                - generic "Debate year 2015" [ref=e4579]: "2015"
+            - generic "Topics" [ref=e4580]: Mind & consciousness
+            - generic [ref=e4582]:
+              - generic "Interlocutor photos" [ref=e4583]
+              - generic [ref=e4584]: 1 hr 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dillahunty prevailed through verification demands, brain dependence, and physical alternatives, while Hernandez offered a broad metaphysical case whose central necessity inferences remained under-supported.
+              - generic:
+                - generic: Speakers
+                - paragraph: Eric Hernandez | Matt Dillahunty
+          - article [ref=e4585]:
+            - 'link "Open Debate 225: Analytic idealism and materialist explanation" [ref=e4586] [cursor=pointer]':
+              - /url: /debate/kastrup-jump-analytic-idealism-materialism-2023/
+              - generic "Debate 225" [ref=e4587]: "225"
+              - generic [ref=e4588]:
+                - text: Analytic idealism and materialist explanation
+                - generic "Debate year 2023" [ref=e4589]: "2023"
+            - generic "Topics" [ref=e4590]: Mind & consciousness
+            - generic [ref=e4592]:
+              - generic "Interlocutor photos" [ref=e4593]
+              - generic [ref=e4594]: 1 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Kastrup narrowly wins by pressing materialism’s qualitative explanatory gap, while Jump preserves materialism’s viability through epistemic caution, composition challenges, and realization possibilities.
+              - generic:
+                - generic: Speakers
+                - paragraph: Bernardo Kastrup | Tom Jump
+          - article [ref=e4595]:
+            - 'link "Open Debate 230: Idealism, naturalism, and explanation" [ref=e4596] [cursor=pointer]':
+              - /url: /debate/kastrup-oppy-idealism-naturalism-2021/
+              - generic "Debate 230" [ref=e4597]: "230"
+              - generic [ref=e4598]:
+                - text: Idealism, naturalism, and explanation
+                - generic "Debate year 2021" [ref=e4599]: "2021"
+            - generic "Topics" [ref=e4600]:
+              - generic [ref=e4601]: Mind & consciousness
+              - generic [ref=e4602]: Science & design
+            - generic [ref=e4603]:
+              - generic "Interlocutor photos" [ref=e4604]
+              - generic [ref=e4605]: 1 hr 33 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Kastrup makes consciousness and qualitative experience the central explanatory test; Oppy narrowly prevails by clarifying pluralistic naturalism, identity, underdetermination, and balanced theory choice.
+              - generic:
+                - generic: Speakers
+                - paragraph: Bernardo Kastrup | Graham Oppy
+          - article [ref=e4606]:
+            - 'link "Open Debate 231: Soul, consciousness, and embodiment" [ref=e4607] [cursor=pointer]':
+              - /url: /debate/hernandez-aron-ra-soul-existence-2020/
+              - generic "Debate 231" [ref=e4608]: "231"
+              - generic [ref=e4609]:
+                - text: Soul, consciousness, and embodiment
+                - generic "Debate year 2020" [ref=e4610]: "2020"
+            - generic "Topics" [ref=e4611]: Mind & consciousness
+            - generic [ref=e4613]:
+              - generic "Interlocutor photos" [ref=e4614]
+              - generic [ref=e4615]: 2 hr 14 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hernandez made a serious philosophical case from consciousness and personal unity, but Aron Ra’s cumulative brain-dependence evidence and burden challenge narrowly prevailed.
+              - generic:
+                - generic: Speakers
+                - paragraph: Eric Hernandez | Aron Ra
+          - article [ref=e4616]:
+            - 'link "Open Debate 234: Consciousness, participation, and cosmic purpose" [ref=e4617] [cursor=pointer]':
+              - /url: /debate/mcgilchrist-kastrup-consciousness-purpose-2025/
+              - generic "Debate 234" [ref=e4618]: "234"
+              - generic [ref=e4619]:
+                - text: Consciousness, participation, and cosmic purpose
+                - generic "Debate year 2025" [ref=e4620]: "2025"
+            - generic "Topics" [ref=e4621]:
+              - generic [ref=e4622]: Mind & consciousness
+              - generic [ref=e4623]: Cosmological arguments
+              - generic [ref=e4624]: Meaning & purpose
+            - generic [ref=e4625]:
+              - generic "Interlocutor photos" [ref=e4626]
+              - generic [ref=e4627]: 1 hr 24 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Both consciousness-first accounts converged substantially, but Kastrup’s sharper perspectival distinctions and replies narrowly surpassed McGilchrist’s richer yet less-warranted value-directed participatory case.
+              - generic:
+                - generic: Speakers
+                - paragraph: Iain McGilchrist | Bernardo Kastrup
+          - article [ref=e4628]:
+            - 'link "Open Debate 235: Free will, consciousness, and the soul" [ref=e4629] [cursor=pointer]':
+              - /url: /debate/hernandez-jump-soul-free-will-consciousness-2019/
+              - generic "Debate 235" [ref=e4630]: "235"
+              - generic [ref=e4631]:
+                - text: Free will, consciousness, and the soul
+                - generic "Debate year 2019" [ref=e4632]: "2019"
+            - generic "Topics" [ref=e4633]:
+              - generic [ref=e4634]: Mind & consciousness
+              - generic [ref=e4635]: Free will & determinism
+            - generic [ref=e4636]:
+              - generic "Interlocutor photos" [ref=e4637]
+              - generic [ref=e4638]: 1 hr 45 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hernandez defends a nonphysical soul through rational agency, mental properties, personhood, and private consciousness; Jump prevails by emphasizing coherence, physical explanation, and predictive evidence.
+              - generic:
+                - generic: Speakers
+                - paragraph: Eric Hernandez | Tom Jump
+          - article [ref=e4639]:
+            - 'link "Open Debate 245: Consciousness, mystical experience, and cosmic evidence" [ref=e4640] [cursor=pointer]':
+              - /url: /debate/goff-folley-consciousness-mysticism-fine-tuning-2026/
+              - generic "Debate 245" [ref=e4641]: "245"
+              - generic [ref=e4642]:
+                - text: Consciousness, mystical experience, and cosmic evidence
+                - generic "Debate year 2026" [ref=e4643]: "2026"
+            - generic "Topics" [ref=e4644]:
+              - generic [ref=e4645]: Mind & consciousness
+              - generic [ref=e4646]: Cosmological arguments
+              - generic [ref=e4647]: Logic & reason
+            - generic [ref=e4648]:
+              - generic "Interlocutor photos" [ref=e4649]
+              - generic [ref=e4650]: 2 hr 19 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Goff offers a unified consciousness-based worldview; Folley’s targeted challenges to extrapolation, mystical warrant, and cosmic probability produce the stronger overall evidential case.
+              - generic:
+                - generic: Speakers
+                - paragraph: Philip Goff | Joe Folley
+          - article [ref=e4651]:
+            - 'link "Open Debate 259: Idealism and conscious illusion" [ref=e4652] [cursor=pointer]':
+              - /url: /debate/kastrup-blackmore-conscious-illusion-2023/
+              - generic "Debate 259" [ref=e4653]: "259"
+              - generic [ref=e4654]:
+                - text: Idealism and conscious illusion
+                - generic "Debate year 2023" [ref=e4655]: "2023"
+            - generic "Topics" [ref=e4656]: Mind & consciousness
+            - generic [ref=e4658]:
+              - generic "Interlocutor photos" [ref=e4659]
+              - generic [ref=e4660]: 1 hr 30 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Blackmore’s disciplined challenges expose gaps in Kastrup’s elegant idealist account, especially around boundaries and evidence, while her limited method avoids claiming a rival metaphysics.
+              - generic:
+                - generic: Speakers
+                - paragraph: Bernardo Kastrup | Susan Blackmore
+      - generic [ref=e4661]:
+        - generic [ref=e4662]:
+          - generic [ref=e4663]:
+            - paragraph [ref=e4664]: 7 debates
+            - heading "Free will and determinism" [level=2] [ref=e4665]
+          - paragraph [ref=e4666]: Free will, determinism, compatibilism, libertarian agency, and their implications for responsibility, desert, and punishment.
+        - generic [ref=e4667]:
+          - article [ref=e4668]:
+            - 'link "Open Debate 44: Free will and agent causation" [ref=e4669] [cursor=pointer]':
+              - /url: /debate/oconnor-biddle-free-will-2025/
+              - generic "Debate 44" [ref=e4670]: "44"
+              - generic [ref=e4671]:
+                - text: Free will and agent causation
+                - generic "Debate year 2025" [ref=e4672]: "2025"
+            - generic "Topics" [ref=e4673]: Free will & determinism
+            - generic [ref=e4675]:
+              - generic "Interlocutor photos" [ref=e4676]
+              - generic [ref=e4677]: 1 hr 39 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Biddle locates freedom in regulating rational attention; O'Connor argues that introspection, desire, and agent causation never escape determination or randomness.
+              - generic:
+                - generic: Speakers
+                - paragraph: Craig Biddle | Alex O'Connor
+          - article [ref=e4678]:
+            - 'link "Open Debate 73: Libertarian freedom and compatibilism" [ref=e4679] [cursor=pointer]':
+              - /url: /debate/hawkins-folley-free-will-compatibilism-2026/
+              - generic "Debate 73" [ref=e4680]: "73"
+              - generic [ref=e4681]:
+                - text: Libertarian freedom and compatibilism
+                - generic "Debate year 2026" [ref=e4682]: "2026"
+            - generic "Topics" [ref=e4683]: Free will & determinism
+            - generic [ref=e4685]:
+              - generic "Interlocutor photos" [ref=e4686]
+              - generic [ref=e4687]: 1 hr 24 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hawkins defended alternative-capable self-formation through constrained indeterminacy; Folley more consistently grounded practical agency and responsibility in distinctions surviving determinism.
+              - generic:
+                - generic: Speakers
+                - paragraph: Nathan Hawkins | Joe Folley
+          - article [ref=e4688]:
+            - 'link "Open Debate 133: Free will, agency, and idealism" [ref=e4689] [cursor=pointer]':
+              - /url: /debate/hawkins-folley-free-will-idealism-2026/
+              - generic "Debate 133" [ref=e4690]: "133"
+              - generic [ref=e4691]:
+                - text: Free will, agency, and idealism
+                - generic "Debate year 2026" [ref=e4692]: "2026"
+            - generic "Topics" [ref=e4693]:
+              - generic [ref=e4694]: Free will & determinism
+              - generic [ref=e4695]: Mind & consciousness
+            - generic [ref=e4696]:
+              - generic "Interlocutor photos" [ref=e4697]
+              - generic [ref=e4698]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hawkins defended libertarian idealism through normativity and experiential completeness, while Folley’s modal distinctions and disciplined pragmatism applied stronger comparative pressure.
+              - generic:
+                - generic: Speakers
+                - paragraph: Nathan Hawkins | Joe Folley
+          - article [ref=e4699]:
+            - 'link "Open Debate 146: Determinism, agency, and responsibility" [ref=e4700] [cursor=pointer]':
+              - /url: /debate/harris-dennett-free-will-2018/
+              - generic "Debate 146" [ref=e4701]: "146"
+              - generic [ref=e4702]:
+                - text: Determinism, agency, and responsibility
+                - generic "Debate year 2018" [ref=e4703]: "2018"
+            - generic "Topics" [ref=e4704]:
+              - generic [ref=e4705]: Free will & determinism
+              - generic [ref=e4706]: Morality & ethics
+            - generic [ref=e4707]:
+              - generic "Interlocutor photos" [ref=e4708]
+              - generic [ref=e4709]: 1 hr 35 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Harris challenges ultimate authorship under causation, while Dennett defends graded, reasons-responsive control and pragmatic responsibility without metaphysical self-creation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sam Harris | Daniel Dennett
+          - article [ref=e4710]:
+            - 'link "Open Debate 153: Free will and compatibilism" [ref=e4711] [cursor=pointer]':
+              - /url: /debate/oconnor-carter-free-will-determinism-2024/
+              - generic "Debate 153" [ref=e4712]: "153"
+              - generic [ref=e4713]:
+                - text: Free will and compatibilism
+                - generic "Debate year 2024" [ref=e4714]: "2024"
+            - generic "Topics" [ref=e4715]: Free will & determinism
+            - generic [ref=e4717]:
+              - generic "Interlocutor photos" [ref=e4718]
+              - generic [ref=e4719]: 1 hr 09 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: O'Connor pressed ultimate-source objections and practical compassion; Carter more strongly defended graded, attributable agency while preserving interpersonal and normative dimensions.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alex O'Connor | Alex Carter
+          - article [ref=e4720]:
+            - 'link "Open Debate 185: Compatibilism, desert, and punishment" [ref=e4721] [cursor=pointer]':
+              - /url: /debate/dennett-caruso-free-will-responsibility-2021/
+              - generic "Debate 185" [ref=e4722]: "185"
+              - generic [ref=e4723]:
+                - text: Compatibilism, desert, and punishment
+                - generic "Debate year 2021" [ref=e4724]: "2021"
+            - generic "Topics" [ref=e4725]: Free will & determinism
+            - generic [ref=e4727]:
+              - generic "Interlocutor photos" [ref=e4728]
+              - generic [ref=e4729]: 2 hr 6 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Caruso’s carefully delimited desert skepticism and forward-looking alternatives outperform Dennett’s practical compatibilism, whose institutional strengths leave ultimate sourcehood and desert’s independent role unresolved.
+              - generic:
+                - generic: Speakers
+                - paragraph: Daniel Dennett | Gregg Caruso
+          - article [ref=e4730]:
+            - 'link "Open Debate 186: Agency, biological causation, and responsibility" [ref=e4731] [cursor=pointer]':
+              - /url: /debate/huemer-sapolsky-free-will-determinism-2024/
+              - generic "Debate 186" [ref=e4732]: "186"
+              - generic [ref=e4733]:
+                - text: Agency, biological causation, and responsibility
+                - generic "Debate year 2024" [ref=e4734]: "2024"
+            - generic "Topics" [ref=e4735]:
+              - generic [ref=e4736]: Free will & determinism
+              - generic [ref=e4737]: Morality & ethics
+              - generic [ref=e4738]: Logic & reason
+            - generic [ref=e4739]:
+              - generic "Interlocutor photos" [ref=e4740]
+              - generic [ref=e4741]: 1 hr 26 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Huemer challenges the leap from pervasive causal influence to determination, while Sapolsky explains mechanistic change and presses a humane rejection of retributive desert.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Huemer | Robert Sapolsky
+      - generic [ref=e4742]:
+        - generic [ref=e4743]:
+          - generic [ref=e4744]:
+            - paragraph [ref=e4745]: 14 debates
+            - heading "Logic, reason, and presuppositions" [level=2] [ref=e4746]
+          - paragraph [ref=e4747]: Logic, rationality, evidence, skepticism, presuppositional arguments, burden of proof, and the conditions for intelligible inquiry.
+        - generic [ref=e4748]:
+          - article [ref=e4749]:
+            - 'link "Open Debate 05: Logic and presuppositions" [ref=e4750] [cursor=pointer]':
+              - /url: /debate/dillahunty-ten-bruggencate-reasonable-god-2014/
+              - generic "Debate 05" [ref=e4751]: "05"
+              - generic [ref=e4752]:
+                - text: Logic and presuppositions
+                - generic "Debate year 2014" [ref=e4753]: "2014"
+            - generic "Topics" [ref=e4754]: Logic & reason
+            - generic [ref=e4756]:
+              - generic "Interlocutor photos" [ref=e4757]
+              - generic [ref=e4758]: 1 hr 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dillahunty’s fallibilist evidential method consistently outperformed Ten Bruggencate’s presuppositional case, whose challenges identified foundational problems but rarely demonstrated Christianity’s exclusive necessity.
+              - generic:
+                - generic: Speakers
+                - paragraph: Sye Ten Bruggencate | Matt Dillahunty
+          - article [ref=e4759]:
+            - 'link "Open Debate 12: Evidence and presuppositions" [ref=e4760] [cursor=pointer]':
+              - /url: /debate/settecase-jump-evidence-for-god-2025/
+              - generic "Debate 12" [ref=e4761]: "12"
+              - generic [ref=e4762]:
+                - text: Evidence and presuppositions
+                - generic "Debate year 2025" [ref=e4763]: "2025"
+            - generic "Topics" [ref=e4764]: Logic & reason
+            - generic [ref=e4766]:
+              - generic "Interlocutor photos" [ref=e4767]
+              - generic [ref=e4768]: 1 hr 05 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Settecase exposed gaps between self-certainty and universal necessity, while Jump effectively separated objective relations from descriptions and challenged divine sustenance.
+              - generic:
+                - generic: Speakers
+                - paragraph: Joel Settecase | Tom Jump
+          - article [ref=e4769]:
+            - 'link "Open Debate 28: Reality, evidence, and skepticism" [ref=e4770] [cursor=pointer]':
+              - /url: /debate/turek-shermer-reality-theism-atheism-2018/
+              - generic "Debate 28" [ref=e4771]: "28"
+              - generic [ref=e4772]:
+                - text: Reality, evidence, and skepticism
+                - generic "Debate year 2018" [ref=e4773]: "2018"
+            - generic "Topics" [ref=e4774]: Logic & reason
+            - generic [ref=e4776]:
+              - generic "Interlocutor photos" [ref=e4777]
+              - generic [ref=e4778]: 2 hr 4 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Turek advances a cumulative theistic explanation, while Shermer's calibrated skepticism, natural mechanisms, and evidential challenges more completely answer the debate's central burdens.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frank Turek | Michael Shermer
+          - article [ref=e4779]:
+            - 'link "Open Debate 49: Transcendental theism and logic" [ref=e4780] [cursor=pointer]':
+              - /url: /debate/dyer-dillahunty-transcendental-theism-2019/
+              - generic "Debate 49" [ref=e4781]: "49"
+              - generic [ref=e4782]:
+                - text: Transcendental theism and logic
+                - generic "Debate year 2019" [ref=e4783]: "2019"
+            - generic "Topics" [ref=e4784]:
+              - generic [ref=e4785]: Logic & reason
+              - generic [ref=e4786]: God & theism
+            - generic [ref=e4787]:
+              - generic "Interlocutor photos" [ref=e4788]
+              - generic [ref=e4789]: 2 hr 46 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dyer argues Orthodox theism uniquely grounds transcendental categories; Dillahunty counters that fallible reliability permits rational inquiry without an unproved divine guarantor.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jay Dyer | Matt Dillahunty
+          - article [ref=e4790]:
+            - 'link "Open Debate 58: Secular humanism and presuppositional critique" [ref=e4791] [cursor=pointer]':
+              - /url: /debate/dillahunty-slick-secular-humanism-christianity-2016/
+              - generic "Debate 58" [ref=e4792]: "58"
+              - generic [ref=e4793]:
+                - text: Secular humanism and presuppositional critique
+                - generic "Debate year 2016" [ref=e4794]: "2016"
+            - generic "Topics" [ref=e4795]:
+              - generic [ref=e4796]: Logic & reason
+              - generic [ref=e4797]: Religion & society
+            - generic [ref=e4798]:
+              - generic "Interlocutor photos" [ref=e4799]
+              - generic [ref=e4800]: 2 hr 43 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dillahunty’s revisable, welfare-centered humanism outperformed Slick’s foundational Christian critique, whose serious grounding objections remained insufficiently connected to comparative practical superiority.
+              - generic:
+                - generic: Speakers
+                - paragraph: Matt Dillahunty | Matt Slick
+          - article [ref=e4801]:
+            - 'link "Open Debate 70: Logic and divine conceptualism" [ref=e4802] [cursor=pointer]':
+              - /url: /debate/malpass-anderson-logic-god-2021/
+              - generic "Debate 70" [ref=e4803]: "70"
+              - generic [ref=e4804]:
+                - text: Logic and divine conceptualism
+                - generic "Debate year 2021" [ref=e4805]: "2021"
+            - generic "Topics" [ref=e4806]:
+              - generic [ref=e4807]: Logic & reason
+              - generic [ref=e4808]: God & theism
+            - generic [ref=e4809]:
+              - generic "Interlocutor photos" [ref=e4810]
+              - generic [ref=e4811]: 1 hr 28 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Anderson argues necessary propositions are best grounded in divine thoughts; Malpass defends nonmental propositions while challenging conceptualism's coherence and comparative advantage.
+              - generic:
+                - generic: Speakers
+                - paragraph: James Anderson | Alex Malpass
+          - article [ref=e4812]:
+            - 'link "Open Debate 72: TAG, induction, and logic" [ref=e4813] [cursor=pointer]':
+              - /url: /debate/dyer-malpass-tag-argument-2019/
+              - generic "Debate 72" [ref=e4814]: "72"
+              - generic [ref=e4815]:
+                - text: TAG, induction, and logic
+                - generic "Debate year 2019" [ref=e4816]: "2019"
+            - generic "Topics" [ref=e4817]: Logic & reason
+            - generic [ref=e4819]:
+              - generic "Interlocutor photos" [ref=e4820]
+              - generic [ref=e4821]: 1 hr 41 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Malpass consistently exposed necessity, parity, and scope gaps, while Dyer offered substantive Orthodox grounding but left several decisive comparative bridges underdeveloped.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jay Dyer | Alex Malpass
+          - article [ref=e4822]:
+            - 'link "Open Debate 77: Argument standards and Aristotelian proof" [ref=e4823] [cursor=pointer]':
+              - /url: /debate/feser-oppy-arguments-for-god-2020/
+              - generic "Debate 77" [ref=e4824]: "77"
+              - generic [ref=e4825]:
+                - text: Argument standards and Aristotelian proof
+                - generic "Debate year 2020" [ref=e4826]: "2020"
+            - generic "Topics" [ref=e4827]: Logic & reason
+            - generic [ref=e4829]:
+              - generic "Interlocutor photos" [ref=e4830]
+              - generic [ref=e4831]: 2 hr 01 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Feser defends audience-sensitive argument, contemporaneous actualization, and a divine terminus; Oppy emphasizes global theory comparison, default persistence, and a physical explanatory bottom.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ed Feser | Graham Oppy
+          - article [ref=e4832]:
+            - 'link "Open Debate 89: Religious experience and rationality" [ref=e4833] [cursor=pointer]':
+              - /url: /debate/bignon-oppy-religious-experience-god-2022/
+              - generic "Debate 89" [ref=e4834]: "89"
+              - generic [ref=e4835]:
+                - text: Religious experience and rationality
+                - generic "Debate year 2022" [ref=e4836]: "2022"
+            - generic "Topics" [ref=e4837]: Logic & reason
+            - generic [ref=e4839]:
+              - generic "Interlocutor photos" [ref=e4840]
+              - generic [ref=e4841]: 1 hr 18 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Bignon presents experience, providential convergence, and historical considerations for Christian belief; Oppy counters with symmetry, cultural variation, naturalistic explanation, hiddenness, and evidential caution.
+              - generic:
+                - generic: Speakers
+                - paragraph: Guillaume Bignon | Graham Oppy
+          - article [ref=e4842]:
+            - 'link "Open Debate 104: Reason, intentionality, and naturalism" [ref=e4843] [cursor=pointer]':
+              - /url: /debate/oconnor-baker-hytch-argument-from-reason-2020/
+              - generic "Debate 104" [ref=e4844]: "104"
+              - generic [ref=e4845]:
+                - text: Reason, intentionality, and naturalism
+                - generic "Debate year 2020" [ref=e4846]: "2020"
+            - generic "Topics" [ref=e4847]:
+              - generic [ref=e4848]: Logic & reason
+              - generic [ref=e4849]: Science & design
+            - generic [ref=e4850]:
+              - generic "Interlocutor photos" [ref=e4851]
+              - generic [ref=e4852]: 1 hr 17 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Baker-Hytch argues rationality and consciousness favor fundamental mentality, while O'Connor defends evolutionary, physical realization and challenges the proposed comparative advantage.
+              - generic:
+                - generic: Speakers
+                - paragraph: Max Baker-Hytch | Alex O'Connor
+          - article [ref=e4853]:
+            - 'link "Open Debate 129: Evolutionary argument and rational belief" [ref=e4854] [cursor=pointer]':
+              - /url: /debate/plantinga-law-eaan-rational-belief-2010/
+              - generic "Debate 129" [ref=e4855]: "129"
+              - generic [ref=e4856]:
+                - text: Evolutionary argument and rational belief
+                - generic "Debate year 2010" [ref=e4857]: "2010"
+            - generic "Topics" [ref=e4858]:
+              - generic [ref=e4859]: Logic & reason
+              - generic [ref=e4860]: Evolution & life origins
+            - generic [ref=e4861]:
+              - generic "Interlocutor photos" [ref=e4862]
+              - generic [ref=e4863]: 1 hr 09 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Plantinga develops a self-defeat argument from evolutionary reliability doubts, while Law counters with adaptive truth-tracking, content constraints, and skeptical parity.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alvin Plantinga | Stephen Law
+          - article [ref=e4864]:
+            - 'link "Open Debate 143: Transcendental logic and divine evidence" [ref=e4865] [cursor=pointer]':
+              - /url: /debate/vela-dillahunty-transcendental-evidence-god-2020/
+              - generic "Debate 143" [ref=e4866]: "143"
+              - generic [ref=e4867]:
+                - text: Transcendental logic and divine evidence
+                - generic "Debate year 2020" [ref=e4868]: "2020"
+            - generic "Topics" [ref=e4869]:
+              - generic [ref=e4870]: Logic & reason
+              - generic [ref=e4871]: God & theism
+            - generic [ref=e4872]:
+              - generic "Interlocutor photos" [ref=e4873]
+              - generic [ref=e4874]: 2 hr 17 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Vela grounds transcendental facts in a necessary personal mind; Dillahunty argues that the inference remains underspecified, comparatively unsupported, and evidentially nondiscriminating.
+              - generic:
+                - generic: Speakers
+                - paragraph: Tyler Vela | Matt Dillahunty
+          - article [ref=e4875]:
+            - 'link "Open Debate 217: Religious belief and evidential obligation" [ref=e4876] [cursor=pointer]':
+              - /url: /debate/douthat-oconnor-religious-belief-obligation-2026/
+              - generic "Debate 217" [ref=e4877]: "217"
+              - generic [ref=e4878]:
+                - text: Religious belief and evidential obligation
+                - generic "Debate year 2026" [ref=e4879]: "2026"
+            - generic "Topics" [ref=e4880]: Logic & reason
+            - generic [ref=e4882]:
+              - generic "Interlocutor photos" [ref=e4883]
+              - generic [ref=e4884]: 1 hr 49 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: O’Connor’s skeptical case won 84–69, chiefly by exposing underdetermination, hiddenness, and suffering while Douthat offered a substantive but incompletely warranted cumulative case.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ross Douthat | Alex O'Connor
+          - article [ref=e4885]:
+            - 'link "Open Debate 250: Logic and truth bearers" [ref=e4886] [cursor=pointer]':
+              - /url: /debate/anderson-jump-logic-belief-god-2020/
+              - generic "Debate 250" [ref=e4887]: "250"
+              - generic [ref=e4888]:
+                - text: Logic and truth bearers
+                - generic "Debate year 2020" [ref=e4889]: "2020"
+            - generic "Topics" [ref=e4890]: Logic & reason
+            - generic [ref=e4892]:
+              - generic "Interlocutor photos" [ref=e4893]
+              - generic [ref=e4894]: 1 hr 26 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Anderson develops stronger distinctions about shared truth and representation; Jump effectively separates necessary reality from contingent language, while the divine-mind route remains incomplete.
+              - generic:
+                - generic: Speakers
+                - paragraph: James Anderson | Tom Jump
+      - generic [ref=e4895]:
+        - generic [ref=e4896]:
+          - generic [ref=e4897]:
+            - paragraph [ref=e4898]: 21 debates
+            - heading "Religion, society, and public reason" [level=2] [ref=e4899]
+          - paragraph [ref=e4900]: Religion in public life, secular humanism, civilization, social order, Islam, political authority, and the future of human communities.
+        - generic [ref=e4901]:
+          - article [ref=e4902]:
+            - 'link "Open Debate 03: Religion and public reason" [ref=e4903] [cursor=pointer]':
+              - /url: /debate/hitchens-dsouza-religion-problem-2010/
+              - generic "Debate 03" [ref=e4904]: "03"
+              - generic [ref=e4905]:
+                - text: Religion and public reason
+                - generic "Debate year 2010" [ref=e4906]: "2010"
+            - generic "Topics" [ref=e4907]:
+              - generic [ref=e4908]: Religion & society
+              - generic [ref=e4909]: Logic & reason
+            - generic [ref=e4910]:
+              - generic "Interlocutor photos" [ref=e4911]
+              - generic [ref=e4912]: 1 hr 48 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hitchens challenged revelation, supernatural explanation, and religious authority; D'Souza defended theism through comparative explanation, design, morality, purpose, and human agency.
+              - generic:
+                - generic: Speakers
+                - paragraph: Christopher Hitchens | Dinesh D'Souza
+          - article [ref=e4913]:
+            - 'link "Open Debate 06: Theism and public reason" [ref=e4914] [cursor=pointer]':
+              - /url: /debate/dsouza-dillahunty-god-woman-2023/
+              - generic "Debate 06" [ref=e4915]: "06"
+              - generic [ref=e4916]:
+                - text: Theism and public reason
+                - generic "Debate year 2023" [ref=e4917]: "2023"
+            - generic "Topics" [ref=e4918]:
+              - generic [ref=e4919]: Religion & society
+              - generic [ref=e4920]: Logic & reason
+              - generic [ref=e4921]: God & theism
+            - generic [ref=e4922]:
+              - generic "Interlocutor photos" [ref=e4923]
+              - generic [ref=e4924]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: D'Souza defended faith-informed inference, biological institutions, and market incentives; Dillahunty answered with evidential burdens, institutional neutrality, and consequence-focused social welfare.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dinesh D'Souza | Matt Dillahunty
+          - article [ref=e4925]:
+            - 'link "Open Debate 15: God and anti-theism" [ref=e4926] [cursor=pointer]':
+              - /url: /debate/hitchens-lennox-is-god-great-2017/
+              - generic "Debate 15" [ref=e4927]: "15"
+              - generic [ref=e4928]:
+                - text: God and anti-theism
+                - generic "Debate year 2017" [ref=e4929]: "2017"
+            - generic "Topics" [ref=e4930]:
+              - generic [ref=e4931]: Religion & society
+              - generic [ref=e4932]: God & theism
+            - generic [ref=e4933]:
+              - generic "Interlocutor photos" [ref=e4934]
+              - generic [ref=e4935]: 1 hr 53 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox defended Christian explanatory foundations and redemptive hope; Hitchens pressed stronger challenges concerning revelation, secular value, suffering, authority, and historical complicity.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Christopher Hitchens
+          - article [ref=e4936]:
+            - 'link "Open Debate 16: Faith and civilization" [ref=e4937] [cursor=pointer]':
+              - /url: /debate/hirsi-ali-dawkins-god-debate-2024/
+              - generic "Debate 16" [ref=e4938]: "16"
+              - generic [ref=e4939]:
+                - text: Faith and civilization
+                - generic "Debate year 2024" [ref=e4940]: "2024"
+            - generic "Topics" [ref=e4941]: Religion & society
+            - generic [ref=e4943]:
+              - generic "Interlocutor photos" [ref=e4944]
+              - generic [ref=e4945]: 1 hr 07 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hirsi Ali defended Christian renewal through personal transformation and civilizational need; Dawkins separated those benefits from supernatural truth and challenged religious moral authority.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ayaan Hirsi Ali | Richard Dawkins
+          - article [ref=e4946]:
+            - 'link "Open Debate 20: Iraq, God, and moral authority" [ref=e4947] [cursor=pointer]':
+              - /url: /debate/hitchens-hitchens-iraq-god-2008/
+              - generic "Debate 20" [ref=e4948]: "20"
+              - generic [ref=e4949]:
+                - text: Iraq, God, and moral authority
+                - generic "Debate year 2008" [ref=e4950]: "2008"
+            - generic "Topics" [ref=e4951]:
+              - generic [ref=e4952]: Religion & society
+              - generic [ref=e4953]: Morality & ethics
+              - generic [ref=e4954]: God & theism
+            - generic [ref=e4955]:
+              - generic "Interlocutor photos" [ref=e4956]
+              - generic [ref=e4957]: 2 hr 02 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Christopher Hitchens defends intervention and secular morality; Peter Hitchens challenges Iraq's consequences and argues that binding moral authority requires transcendence.
+              - generic:
+                - generic: Speakers
+                - paragraph: Christopher Hitchens | Peter Hitchens
+          - article [ref=e4958]:
+            - 'link "Open Debate 25: Islam as peace or power" [ref=e4959] [cursor=pointer]':
+              - /url: /debate/hitchens-ramadan-islam-peace-2010/
+              - generic "Debate 25" [ref=e4960]: "25"
+              - generic [ref=e4961]:
+                - text: Islam as peace or power
+                - generic "Debate year 2010" [ref=e4962]: "2010"
+            - generic "Topics" [ref=e4963]: Religion & society
+            - generic [ref=e4965]:
+              - generic "Interlocutor photos" [ref=e4966]
+              - generic [ref=e4967]: 1 hr 31 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hitchens foregrounds coercive institutions and secular equality; Ramadan answers through interpretive plurality, peace-oriented ethics, political causation, internal reform, and constitutional citizenship.
+              - generic:
+                - generic: Speakers
+                - paragraph: Christopher Hitchens | Tariq Ramadan
+          - article [ref=e4968]:
+            - 'link "Open Debate 46: Atheism, free will, and social order" [ref=e4969] [cursor=pointer]':
+              - /url: /debate/shapiro-oconnor-atheist-delusion-society-2023/
+              - generic "Debate 46" [ref=e4970]: "46"
+              - generic [ref=e4971]:
+                - text: Atheism, free will, and social order
+                - generic "Debate year 2023" [ref=e4972]: "2023"
+            - generic "Topics" [ref=e4973]:
+              - generic [ref=e4974]: Religion & society
+              - generic [ref=e4975]: Free will & determinism
+              - generic [ref=e4976]: God & theism
+            - generic [ref=e4977]:
+              - generic "Interlocutor photos" [ref=e4978]
+              - generic [ref=e4979]: 1 hr 20 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Shapiro defends religious foundations for agency, morality, science, and cohesion; O'Connor counters with determinism, revisability, historical resistance, scriptural counterexamples, and epistemic honesty.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ben Shapiro | Alex O'Connor
+          - article [ref=e4980]:
+            - 'link "Open Debate 47: Christian social goods and secular inquiry" [ref=e4981] [cursor=pointer]':
+              - /url: /debate/jones-krauss-christianity-secular-ethics-2025/
+              - generic "Debate 47" [ref=e4982]: "47"
+              - generic [ref=e4983]:
+                - text: Christian social goods and secular inquiry
+                - generic "Debate year 2025" [ref=e4984]: "2025"
+            - generic "Topics" [ref=e4985]:
+              - generic [ref=e4986]: Religion & society
+              - generic [ref=e4987]: Logic & reason
+            - generic [ref=e4988]:
+              - generic "Interlocutor photos" [ref=e4989]
+              - generic [ref=e4990]: 2 hr 23 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Christianity's institutional and moral arguments narrowly outperformed secular ethics, while secular challenges concerning heterogeneity, fallibilism, causation, and equal standing remained substantial.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Lawrence Krauss
+          - article [ref=e4991]:
+            - 'link "Open Debate 54: Christianity, humanism, and social future" [ref=e4992] [cursor=pointer]':
+              - /url: /debate/jones-law-christianity-humanism-future-2025/
+              - generic "Debate 54" [ref=e4993]: "54"
+              - generic [ref=e4994]:
+                - text: Christianity, humanism, and social future
+                - generic "Debate year 2025" [ref=e4995]: "2025"
+            - generic "Topics" [ref=e4996]:
+              - generic [ref=e4997]: Religion & society
+              - generic [ref=e4998]: Christian belief & doctrine
+            - generic [ref=e4999]:
+              - generic "Interlocutor photos" [ref=e5000]
+              - generic [ref=e5001]: 1 hr 34 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Law’s comparative, neutrality, and evidential challenges outweighed Jones’s stronger pluralism case and qualified historical, social, scientific, and theological defenses.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Stephen Law
+          - article [ref=e5002]:
+            - 'link "Open Debate 61: Biblical slavery and moral inheritance" [ref=e5003] [cursor=pointer]':
+              - /url: /debate/scrivener-oconnor-morality-bible-slavery-2026/
+              - generic "Debate 61" [ref=e5004]: "61"
+              - generic [ref=e5005]:
+                - text: Biblical slavery and moral inheritance
+                - generic "Debate year 2026" [ref=e5006]: "2026"
+            - generic "Topics" [ref=e5007]:
+              - generic [ref=e5008]: Religion & society
+              - generic [ref=e5009]: Bible & historical Jesus
+              - generic [ref=e5010]: Morality & ethics
+            - generic [ref=e5011]:
+              - generic "Interlocutor photos" [ref=e5012]
+              - generic [ref=e5013]: 2 hr 31 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Scrivener traces Western morality through Christian narratives and institutions, while O'Connor argues that mixed traditions, material struggle, and internal counterevidence better explain it.
+              - generic:
+                - generic: Speakers
+                - paragraph: Glen Scrivener | Alex O'Connor
+          - article [ref=e5014]:
+            - 'link "Open Debate 71: God, morality, and religious harm" [ref=e5015] [cursor=pointer]':
+              - /url: /debate/hitchens-kushner-gomes-god-religion-morality-2009/
+              - generic "Debate 71" [ref=e5016]: "71"
+              - generic [ref=e5017]:
+                - text: God, morality, and religious harm
+                - generic "Debate year 2009" [ref=e5018]: "2009"
+            - generic "Topics" [ref=e5019]:
+              - generic [ref=e5020]: Religion & society
+              - generic [ref=e5021]: Morality & ethics
+              - generic [ref=e5022]: God & theism
+            - generic [ref=e5023]:
+              - generic "Interlocutor photos" [ref=e5024]
+              - generic [ref=e5025]: 3 hr 4 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Kushner and Gomes defend religion as moral aspiration, resilience, and community; Hitchens argues that secular ethics survives while religion adds dangerous authority claims.
+              - generic:
+                - generic: Speakers
+                - paragraph: Harold Kushner and Peter Gomes | Christopher Hitchens
+          - article [ref=e5026]:
+            - 'link "Open Debate 97: Human values and Christian inheritance" [ref=e5027] [cursor=pointer]':
+              - /url: /debate/holland-grayling-christianity-human-values-2019/
+              - generic "Debate 97" [ref=e5028]: "97"
+              - generic [ref=e5029]:
+                - text: Human values and Christian inheritance
+                - generic "Debate year 2019" [ref=e5030]: "2019"
+            - generic "Topics" [ref=e5031]:
+              - generic [ref=e5032]: Religion & society
+              - generic [ref=e5033]: Meaning & purpose
+            - generic [ref=e5034]:
+              - generic "Interlocutor photos" [ref=e5035]
+              - generic [ref=e5036]: 1 hr 22 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Holland traces Western dignity and reform through Christian transformation, while Grayling argues that classical, cross-cultural, Enlightenment, and secular traditions provide stronger plural genealogies.
+              - generic:
+                - generic: Speakers
+                - paragraph: Tom Holland | A. C. Grayling
+          - article [ref=e5037]:
+            - 'link "Open Debate 101: Religion poison and Christian humanism" [ref=e5038] [cursor=pointer]':
+              - /url: /debate/woodford-scrivener-religion-poisons-everything-2026/
+              - generic "Debate 101" [ref=e5039]: "101"
+              - generic [ref=e5040]:
+                - text: Religion poison and Christian humanism
+                - generic "Debate year 2026" [ref=e5041]: "2026"
+            - generic "Topics" [ref=e5042]: Religion & society
+            - generic [ref=e5044]:
+              - generic "Interlocutor photos" [ref=e5045]
+              - generic [ref=e5046]: 1 hr 24 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Woodford pressed doctrinal harm and non-Christian moral goods; Scrivener answered through Christian anthropology, reforming institutions, sacred equality, and nonviolent interpretation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stephen Woodford | Glen Scrivener
+          - article [ref=e5047]:
+            - 'link "Open Debate 156: Religion, moral reasoning, and social order" [ref=e5048] [cursor=pointer]':
+              - /url: /debate/harris-prager-religion-morality-public-reason-2014/
+              - generic "Debate 156" [ref=e5049]: "156"
+              - generic [ref=e5050]:
+                - text: Religion, moral reasoning, and social order
+                - generic "Debate year 2014" [ref=e5051]: "2014"
+            - generic "Topics" [ref=e5052]:
+              - generic [ref=e5053]: Religion & society
+              - generic [ref=e5054]: Morality & ethics
+              - generic [ref=e5055]: Logic & reason
+            - generic [ref=e5056]:
+              - generic "Interlocutor photos" [ref=e5057]
+              - generic [ref=e5058]: 50 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Prager defends divine authority through moral durability and historical performance; Harris advances conscious wellbeing, open inquiry, and cooperation while challenging scriptural reliability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Dennis Prager | Sam Harris
+          - article [ref=e5059]:
+            - 'link "Open Debate 160: Religion, secularism, and human flourishing" [ref=e5060] [cursor=pointer]':
+              - /url: /debate/pinker-douthat-do-we-need-god-2026/
+              - generic "Debate 160" [ref=e5061]: "160"
+              - generic [ref=e5062]:
+                - text: Religion, secularism, and human flourishing
+                - generic "Debate year 2026" [ref=e5063]: "2026"
+            - generic "Topics" [ref=e5064]:
+              - generic [ref=e5065]: Religion & society
+              - generic [ref=e5066]: Morality & ethics
+            - generic [ref=e5067]:
+              - generic "Interlocutor photos" [ref=e5068]
+              - generic [ref=e5069]: 0 hr 58 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Douthat defended transcendent foundations for morality and meaning, while Pinker argued that secular reason, reciprocity, and institutions adequately support flourishing and progress.
+              - generic:
+                - generic: Speakers
+                - paragraph: Ross Douthat | Steven Pinker
+          - article [ref=e5070]:
+            - 'link "Open Debate 171: Religion''s social benefits and harms" [ref=e5071] [cursor=pointer]':
+              - /url: /debate/hitchens-blair-religion-force-good-2010/
+              - generic "Debate 171" [ref=e5072]: "171"
+              - generic [ref=e5073]:
+                - text: Religion's social benefits and harms
+                - generic "Debate year 2010" [ref=e5074]: "2010"
+            - generic "Topics" [ref=e5075]: Religion & society
+            - generic [ref=e5077]:
+              - generic "Interlocutor photos" [ref=e5078]
+              - generic [ref=e5079]: 1 hr 45 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Blair emphasized faith-inspired service, reconciliation, pluralism, and purpose; Hitchens countered with doctrinal harm, sacred conflict, secular alternatives, and stricter causal comparison.
+              - generic:
+                - generic: Speakers
+                - paragraph: Tony Blair | Christopher Hitchens
+          - article [ref=e5080]:
+            - 'link "Open Debate 172: Religious truth, morality, violence, and meaning" [ref=e5081] [cursor=pointer]':
+              - /url: /debate/hitchens-mcgrath-religious-belief-2007/
+              - generic "Debate 172" [ref=e5082]: "172"
+              - generic [ref=e5083]:
+                - text: Religious truth, morality, violence, and meaning
+                - generic "Debate year 2007" [ref=e5084]: "2007"
+            - generic "Topics" [ref=e5085]:
+              - generic [ref=e5086]: Religion & society
+              - generic [ref=e5087]: Meaning & purpose
+              - generic [ref=e5088]: Morality & ethics
+            - generic [ref=e5089]:
+              - generic "Interlocutor photos" [ref=e5090]
+              - generic [ref=e5091]: 1 hr 40 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hitchens pressed evidential, coercive, and secular-moral objections; McGrath defended interpretive openness, transcendent morality, restorative doctrine, and Christianity's nonviolent norms.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alister McGrath | Christopher Hitchens
+          - article [ref=e5092]:
+            - 'link "Open Debate 173: The Catholic Church''s social record" [ref=e5093] [cursor=pointer]':
+              - /url: /debate/onaiyekan-widdecombe-fry-hitchens-catholic-church-force-good-2009/
+              - generic "Debate 173" [ref=e5094]: "173"
+              - generic [ref=e5095]:
+                - text: The Catholic Church's social record
+                - generic "Debate year 2009" [ref=e5096]: "2009"
+            - generic "Topics" [ref=e5097]: Religion & society
+            - generic [ref=e5099]:
+              - generic "Interlocutor photos" [ref=e5100]
+              - generic [ref=e5101]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Onaiyekan and Widdecombe emphasize global welfare, spiritual hope, and reform within a fallible institution; Fry and Hitchens argue that those benefits do not outweigh institutional abuse, sexual control, public-health obstruction, and unaccountable authority.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Onaiyekan and Ann Widdecombe | Stephen Fry and Christopher Hitchens
+          - article [ref=e5102]:
+            - 'link "Open Debate 213: Capitalism, Marxism, and human happiness" [ref=e5103] [cursor=pointer]':
+              - /url: /debate/peterson-zizek-capitalism-marxism-happiness-2019/
+              - generic "Debate 213" [ref=e5104]: "213"
+              - generic [ref=e5105]:
+                - text: Capitalism, Marxism, and human happiness
+                - generic "Debate year 2019" [ref=e5106]: "2019"
+            - generic "Topics" [ref=e5107]: Religion & society
+            - generic [ref=e5109]:
+              - generic "Interlocutor photos" [ref=e5110]
+              - generic [ref=e5111]: 2 hr 46 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Žižek prevailed 78–75 by separating capitalist prosperity from happiness and democratic freedom, while Peterson strongly defended poverty reduction, material security, responsibility, and meaning.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jordan Peterson | Slavoj Žižek
+          - article [ref=e5112]:
+            - 'link "Open Debate 218: New Atheism and its legacy" [ref=e5113] [cursor=pointer]':
+              - /url: /debate/mcgrath-oconnor-new-atheism-failure-2023/
+              - generic "Debate 218" [ref=e5114]: "218"
+              - generic [ref=e5115]:
+                - text: New Atheism and its legacy
+                - generic "Debate year 2023" [ref=e5116]: "2023"
+            - generic "Topics" [ref=e5117]:
+              - generic [ref=e5118]: Religion & society
+              - generic [ref=e5119]: God & theism
+            - generic [ref=e5120]:
+              - generic "Interlocutor photos" [ref=e5121]
+              - generic [ref=e5122]: 1 hr 26 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Con wins 83–73 by separating atheism from New Atheism’s defects and decisively exposing Pro’s unresolved covenant, slavery, and Leviticus problems.
+              - generic:
+                - generic: Speakers
+                - paragraph: Alister McGrath | Alex O'Connor
+          - article [ref=e5123]:
+            - 'link "Open Debate 256: Christianity and public harm" [ref=e5124] [cursor=pointer]':
+              - /url: /debate/aron-ra-jones-christianity-dangerous-formal-rounds-2019/
+              - generic "Debate 256" [ref=e5125]: "256"
+              - generic [ref=e5126]:
+                - text: Christianity and public harm
+                - generic "Debate year 2019" [ref=e5127]: "2019"
+            - generic "Topics" [ref=e5128]:
+              - generic [ref=e5129]: Religion & society
+              - generic [ref=e5130]: Christian belief & doctrine
+            - generic [ref=e5131]:
+              - generic "Interlocutor photos" [ref=e5132]
+              - generic [ref=e5133]: 2 hr 34 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Aron documents scriptural and social harms, but Jones wins by repeatedly separating Christian identity from causation and challenging unadjusted comparisons.
+              - generic:
+                - generic: Speakers
+                - paragraph: Aron Ra | Michael Jones
+      - generic [ref=e5134]:
+        - generic [ref=e5135]:
+          - generic [ref=e5136]:
+            - paragraph [ref=e5137]: 40 debates
+            - heading "God, theism, and atheism" [level=2] [ref=e5138]
+          - paragraph [ref=e5139]: Direct cases for and against God, theism, atheism, divine reality, classical theism, and broad explanatory comparisons.
+        - generic [ref=e5140]:
+          - article [ref=e5141]:
+            - 'link "Open Debate 02: Christian theism and atheism" [ref=e5142] [cursor=pointer]':
+              - /url: /debate/craig-hitchens-god-existence-2009/
+              - generic "Debate 02" [ref=e5143]: "02"
+              - generic [ref=e5144]:
+                - text: Christian theism and atheism
+                - generic "Debate year 2009" [ref=e5145]: "2009"
+            - generic "Topics" [ref=e5146]: God & theism
+            - generic [ref=e5148]:
+              - generic "Interlocutor photos" [ref=e5149]
+              - generic [ref=e5150]: 2 hr 27 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig advances a cumulative Christian case; Hitchens presses evidential burdens, inferential gaps, suffering, religious authority, and secular alternatives with greater consistency.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Christopher Hitchens
+          - article [ref=e5151]:
+            - 'link "Open Debate 14: God and naturalism" [ref=e5152] [cursor=pointer]':
+              - /url: /debate/jones-carrier-god-existence-2025/
+              - generic "Debate 14" [ref=e5153]: "14"
+              - generic [ref=e5154]:
+                - text: God and naturalism
+                - generic "Debate year 2025" [ref=e5155]: "2025"
+            - generic "Topics" [ref=e5156]:
+              - generic [ref=e5157]: God & theism
+              - generic [ref=e5158]: Science & design
+            - generic [ref=e5159]:
+              - generic "Interlocutor photos" [ref=e5160]
+              - generic [ref=e5161]: 1 hr 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Jones and Carrier closely contest whether consciousness, cosmic structure, morality, and origins comparatively favor theistic idealism or secular naturalism.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Jones | Richard Carrier
+          - article [ref=e5162]:
+            - 'link "Open Debate 18: Between God and atheism" [ref=e5163] [cursor=pointer]':
+              - /url: /debate/williams-goff-oldfield-oconnor-between-god-atheism-2024/
+              - generic "Debate 18" [ref=e5164]: "18"
+              - generic [ref=e5165]:
+                - text: Between God and atheism
+                - generic "Debate year 2024" [ref=e5166]: "2024"
+            - generic "Topics" [ref=e5167]: God & theism
+            - generic [ref=e5169]:
+              - generic "Interlocutor photos" [ref=e5170]
+              - generic [ref=e5171]: 1 hr 24 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.
+              - generic:
+                - generic: Speakers
+                - paragraph: Rowan Williams, Philip Goff, and Elizabeth Oldfield | Alex O'Connor, with Jack Symes moderating
+          - article [ref=e5172]:
+            - 'link "Open Debate 22: Cosmology, design, and anti-theism" [ref=e5173] [cursor=pointer]':
+              - /url: /debate/turek-hitchens-god-existence-2008/
+              - generic "Debate 22" [ref=e5174]: "22"
+              - generic [ref=e5175]:
+                - text: Cosmology, design, and anti-theism
+                - generic "Debate year 2008" [ref=e5176]: "2008"
+            - generic "Topics" [ref=e5177]:
+              - generic [ref=e5178]: God & theism
+              - generic [ref=e5179]: Cosmological arguments
+              - generic [ref=e5180]: Science & design
+              - generic [ref=e5181]: Religion & society
+            - generic [ref=e5182]:
+              - generic "Interlocutor photos" [ref=e5183]
+              - generic [ref=e5184]: 2 hr 12 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Turek advances cumulative theistic explanations, while Hitchens more consistently enforces evidential burdens, challenges Christian specificity, and defends secular moral autonomy.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frank Turek | Christopher Hitchens
+          - article [ref=e5185]:
+            - 'link "Open Debate 26: Reality, theism, and atheism" [ref=e5186] [cursor=pointer]':
+              - /url: /debate/turek-hitchens-reality-theism-atheism-2011/
+              - generic "Debate 26" [ref=e5187]: "26"
+              - generic [ref=e5188]:
+                - text: Reality, theism, and atheism
+                - generic "Debate year 2011" [ref=e5189]: "2011"
+            - generic "Topics" [ref=e5190]: God & theism
+            - generic [ref=e5192]:
+              - generic "Interlocutor photos" [ref=e5193]
+              - generic [ref=e5194]: 2 hr 6 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Turek advances a cumulative theistic explanation, while Hitchens more consistently supplies calibrated naturalistic alternatives and challenges the inferential bridges to design and revelation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frank Turek | Christopher Hitchens
+          - article [ref=e5195]:
+            - 'link "Open Debate 29: Reality and moral responsibility" [ref=e5196] [cursor=pointer]':
+              - /url: /debate/turek-silverman-reality-theism-atheism-2013/
+              - generic "Debate 29" [ref=e5197]: "29"
+              - generic [ref=e5198]:
+                - text: Reality and moral responsibility
+                - generic "Debate year 2013" [ref=e5199]: "2013"
+            - generic "Topics" [ref=e5200]:
+              - generic [ref=e5201]: God & theism
+              - generic [ref=e5202]: Morality & ethics
+            - generic [ref=e5203]:
+              - generic "Interlocutor photos" [ref=e5204]
+              - generic [ref=e5205]: 2 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Turek advances cumulative theistic explanations, while Silverman emphasizes natural processes, evidential restraint, human responsibility, and tensions between divine attributes and suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frank Turek | David Silverman
+          - article [ref=e5206]:
+            - 'link "Open Debate 42: Divine simplicity and classical theism" [ref=e5207] [cursor=pointer]':
+              - /url: /debate/schmid-tomaszewski-divine-simplicity-2020/
+              - generic "Debate 42" [ref=e5208]: "42"
+              - generic [ref=e5209]:
+                - text: Divine simplicity and classical theism
+                - generic "Debate year 2020" [ref=e5210]: "2020"
+            - generic "Topics" [ref=e5211]: God & theism
+            - generic [ref=e5213]:
+              - generic "Interlocutor photos" [ref=e5214]
+              - generic [ref=e5215]: 1 hr 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Schmid presses simplicity through composition, Trinitarian asymmetry, and contingent knowledge; Tomaszewski answers through aseity, analogical predication, subsistent relations, and extrinsic differentiation.
+              - generic:
+                - generic: Speakers
+                - paragraph: Chris Tomaszewski | Joe Schmid
+          - article [ref=e5216]:
+            - 'link "Open Debate 64: Thomistic theism and analytic atheism" [ref=e5217] [cursor=pointer]':
+              - /url: /debate/pine-watkins-god-existence-2020/
+              - generic "Debate 64" [ref=e5218]: "64"
+              - generic [ref=e5219]:
+                - text: Thomistic theism and analytic atheism
+                - generic "Debate year 2020" [ref=e5220]: "2020"
+            - generic "Topics" [ref=e5221]: God & theism
+            - generic [ref=e5223]:
+              - generic "Interlocutor photos" [ref=e5224]
+              - generic [ref=e5225]: 2 hr 12 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Pine defends classical theism through Thomistic metaphysics, while Watkins presses identification gaps, divine-attribute tensions, evolutionary suffering, hiddenness, and religious disagreement.
+              - generic:
+                - generic: Speakers
+                - paragraph: Gregory Pine | Ben Watkins
+          - article [ref=e5226]:
+            - 'link "Open Debate 76: Mathematics and theism" [ref=e5227] [cursor=pointer]':
+              - /url: /debate/craig-oppy-mathematics-theism-2020/
+              - generic "Debate 76" [ref=e5228]: "76"
+              - generic [ref=e5229]:
+                - text: Mathematics and theism
+                - generic "Debate year 2020" [ref=e5230]: "2020"
+            - generic "Topics" [ref=e5231]: God & theism
+            - generic [ref=e5233]:
+              - generic "Interlocutor photos" [ref=e5234]
+              - generic [ref=e5235]: 1 hr 32 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig argues that mathematics’ predictive applicability favors intentional divine ordering; Oppy challenges the datum and offers naturalistic necessity, structural, and selection-based alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Graham Oppy
+          - article [ref=e5236]:
+            - 'link "Open Debate 79: Probability of theism" [ref=e5237] [cursor=pointer]':
+              - /url: /debate/swinburne-oppy-theism-probability-2022/
+              - generic "Debate 79" [ref=e5238]: "79"
+              - generic [ref=e5239]:
+                - text: Probability of theism
+                - generic "Debate year 2022" [ref=e5240]: "2022"
+            - generic "Topics" [ref=e5241]: God & theism
+            - generic [ref=e5243]:
+              - generic "Interlocutor photos" [ref=e5244]
+              - generic [ref=e5245]: 1 hr 32 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Swinburne advances a cumulative theistic explanation, while Oppy answers with economical naturalistic alternatives and sharper comparative, anthropocentric, consciousness, and modal challenges.
+              - generic:
+                - generic: Speakers
+                - paragraph: Richard Swinburne | Graham Oppy
+          - article [ref=e5246]:
+            - 'link "Open Debate 81: Ultimate reality and naturalism" [ref=e5247] [cursor=pointer]':
+              - /url: /debate/rasmussen-oppy-ultimate-reality-naturalism-2020/
+              - generic "Debate 81" [ref=e5248]: "81"
+              - generic [ref=e5249]:
+                - text: Ultimate reality and naturalism
+                - generic "Debate year 2020" [ref=e5250]: "2020"
+            - generic "Topics" [ref=e5251]:
+              - generic [ref=e5252]: God & theism
+              - generic [ref=e5253]: Science & design
+            - generic [ref=e5254]:
+              - generic "Interlocutor photos" [ref=e5255]
+              - generic [ref=e5256]: 1 hr 59 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Rasmussen develops unified theistic foundations from unlimitedness and consciousness; Oppy answers with naturalistic continuity, neural identity, and disciplined whole-worldview comparison.
+              - generic:
+                - generic: Speakers
+                - paragraph: Josh Rasmussen | Graham Oppy
+          - article [ref=e5257]:
+            - 'link "Open Debate 86: Thomism, hiddenness, and morality" [ref=e5258] [cursor=pointer]':
+              - /url: /debate/egnor-dillahunty-god-existence-2021/
+              - generic "Debate 86" [ref=e5259]: "86"
+              - generic [ref=e5260]:
+                - text: Thomism, hiddenness, and morality
+                - generic "Debate year 2021" [ref=e5261]: "2021"
+            - generic "Topics" [ref=e5262]:
+              - generic [ref=e5263]: God & theism
+              - generic [ref=e5264]: Morality & ethics
+              - generic [ref=e5265]: Evil & suffering
+            - generic [ref=e5266]:
+              - generic "Interlocutor photos" [ref=e5267]
+              - generic [ref=e5268]: 2 hr 22 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Egnor developed cumulative Thomistic, natural-order, and moral arguments, while Dillahunty more effectively defended evidential restraint and exposed unsupported transitions to God.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Egnor | Matt Dillahunty
+          - article [ref=e5269]:
+            - 'link "Open Debate 88: Perfect mind and explanatory power" [ref=e5270] [cursor=pointer]':
+              - /url: /debate/sechler-dillahunty-perfect-mind-universe-2022/
+              - generic "Debate 88" [ref=e5271]: "88"
+              - generic [ref=e5272]:
+                - text: Perfect mind and explanatory power
+                - generic "Debate year 2022" [ref=e5273]: "2022"
+            - generic "Topics" [ref=e5274]:
+              - generic [ref=e5275]: God & theism
+              - generic [ref=e5276]: Mind & consciousness
+              - generic [ref=e5277]: Religion & society
+            - generic [ref=e5278]:
+              - generic "Interlocutor photos" [ref=e5279]
+              - generic [ref=e5280]: 1 hr 32 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Sechler presents a cumulative perfect-mind inference; Dillahunty answers that unspecified hypotheses, missing likelihood baselines, hiddenness, and rival agent explanations limit its force.
+              - generic:
+                - generic: Speakers
+                - paragraph: Zac Sechler | Matt Dillahunty
+          - article [ref=e5281]:
+            - 'link "Open Debate 94: Theism coherence and divine infinity" [ref=e5282] [cursor=pointer]':
+              - /url: /debate/swinburne-huemer-theism-coherent-2026/
+              - generic "Debate 94" [ref=e5283]: "94"
+              - generic [ref=e5284]:
+                - text: Theism coherence and divine infinity
+                - generic "Debate year 2026" [ref=e5285]: "2026"
+            - generic "Topics" [ref=e5286]: God & theism
+            - generic [ref=e5288]:
+              - generic "Interlocutor photos" [ref=e5289]
+              - generic [ref=e5290]: 55 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Swinburne defends coherent maximal attributes through logical possibility and doctrinal distinctions; Huemer presses quantitative infinity, residual knowledge, temporal conflict, and supertask objections.
+              - generic:
+                - generic: Speakers
+                - paragraph: Richard Swinburne | Michael Huemer
+          - article [ref=e5291]:
+            - 'link "Open Debate 95: God reality and objective meaning" [ref=e5292] [cursor=pointer]':
+              - /url: /debate/craig-frazier-goff-folley-god-reality-2026/
+              - generic "Debate 95" [ref=e5293]: "95"
+              - generic [ref=e5294]:
+                - text: God reality and objective meaning
+                - generic "Debate year 2026" [ref=e5295]: "2026"
+            - generic "Topics" [ref=e5296]:
+              - generic [ref=e5297]: God & theism
+              - generic [ref=e5298]: Meaning & purpose
+            - generic [ref=e5299]:
+              - generic "Interlocutor photos" [ref=e5300]
+              - generic [ref=e5301]: 1 hr 45 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig defends classical Christian theism as the best explanation of reality and objective meaning; Frazier, Goff, and Folley press Hindu, mystical, and agnostic alternatives that complicate God, value, experience, and morality.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Jessica Frazier, Philip Goff, and Joe Folley
+          - article [ref=e5302]:
+            - 'link "Open Debate 105: God, reality, and Christian atheism" [ref=e5303] [cursor=pointer]':
+              - /url: /debate/craig-williams-hossenfelder-zizek-god-reality-2026/
+              - generic "Debate 105" [ref=e5304]: "105"
+              - generic [ref=e5305]:
+                - text: God, reality, and Christian atheism
+                - generic "Debate year 2026" [ref=e5306]: "2026"
+            - generic "Topics" [ref=e5307]: God & theism
+            - generic [ref=e5309]:
+              - generic "Interlocutor photos" [ref=e5310]
+              - generic [ref=e5311]: 1 hr 33 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig and Williams defend Christian theism through arguments, experience, practice, and human meaning; Hossenfelder and Žižek press scientific restraint, religious plurality, and a Christian-atheist reading of God as a communal or symbolic force.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig and Rowan Williams | Sabine Hossenfelder and Slavoj Žižek
+          - article [ref=e5312]:
+            - 'link "Open Debate 109: Theism, naturalism, and reality" [ref=e5313] [cursor=pointer]':
+              - /url: /debate/mclatchie-oconnor-theism-naturalism-reality-2022/
+              - generic "Debate 109" [ref=e5314]: "109"
+              - generic [ref=e5315]:
+                - text: Theism, naturalism, and reality
+                - generic "Debate year 2022" [ref=e5316]: "2022"
+            - generic "Topics" [ref=e5317]:
+              - generic [ref=e5318]: God & theism
+              - generic [ref=e5319]: Science & design
+            - generic [ref=e5320]:
+              - generic "Interlocutor photos" [ref=e5321]
+              - generic [ref=e5322]: 2 hr 25 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: McLatchie advances biological-design and resurrection arguments while answering hiddenness and suffering objections through adequate evidence, moral probation, epistemic limits, and lawful regularity.
+              - generic:
+                - generic: Speakers
+                - paragraph: Jonathan McLatchie | Alex O'Connor
+          - article [ref=e5323]:
+            - 'link "Open Debate 112: Reasonable belief in God" [ref=e5324] [cursor=pointer]':
+              - /url: /debate/copan-woodford-belief-god-reasonable-2024/
+              - generic "Debate 112" [ref=e5325]: "112"
+              - generic [ref=e5326]:
+                - text: Reasonable belief in God
+                - generic "Debate year 2024" [ref=e5327]: "2024"
+            - generic "Topics" [ref=e5328]:
+              - generic [ref=e5329]: God & theism
+              - generic [ref=e5330]: Logic & reason
+            - generic [ref=e5331]:
+              - generic "Interlocutor photos" [ref=e5332]
+              - generic [ref=e5333]: 1 hr 22 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Copan’s cumulative theistic explanation connected cosmology, consciousness, morality, and reform, but underdeveloped rival comparisons and the evidential challenge from suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: Paul Copan | Stephen Woodford
+          - article [ref=e5334]:
+            - 'link "Open Debate 145: Religion, naturalism, and divine explanation" [ref=e5335] [cursor=pointer]':
+              - /url: /debate/dennett-dsouza-god-human-invention-2007/
+              - generic "Debate 145" [ref=e5336]: "145"
+              - generic [ref=e5337]:
+                - text: Religion, naturalism, and divine explanation
+                - generic "Debate year 2007" [ref=e5338]: "2007"
+            - generic "Topics" [ref=e5339]:
+              - generic [ref=e5340]: God & theism
+              - generic [ref=e5341]: Science & design
+              - generic [ref=e5342]: Religion & society
+            - generic [ref=e5343]:
+              - generic "Interlocutor photos" [ref=e5344]
+              - generic [ref=e5345]: 2 hr 07 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dennett advances naturalistic explanations of religion, cosmos, mind, and morality, while D'Souza defends divine reality through conceptual, cosmological, experiential, and moral arguments.
+              - generic:
+                - generic: Speakers
+                - paragraph: Daniel Dennett | Dinesh D'Souza
+          - article [ref=e5346]:
+            - 'link "Open Debate 152: Design, logic, and God" [ref=e5347] [cursor=pointer]':
+              - /url: /debate/knechtle-aron-ra-god-existence-2023/
+              - generic "Debate 152" [ref=e5348]: "152"
+              - generic [ref=e5349]:
+                - text: Design, logic, and God
+                - generic "Debate year 2023" [ref=e5350]: "2023"
+            - generic "Topics" [ref=e5351]:
+              - generic [ref=e5352]: God & theism
+              - generic [ref=e5353]: Science & design
+              - generic [ref=e5354]: Logic & reason
+            - generic [ref=e5355]:
+              - generic "Interlocutor photos" [ref=e5356]
+              - generic [ref=e5357]: 3 hr 01 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Knechtle advances cumulative theistic arguments from order, reason, morality, and Jesus; Aron Ra counters through evidential standards, natural explanations, and religious unreliability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Stuart Knechtle | Aron Ra
+          - article [ref=e5358]:
+            - 'link "Open Debate 161: God and skeptical empiricism" [ref=e5359] [cursor=pointer]':
+              - /url: /debate/craig-millican-does-god-exist-2011/
+              - generic "Debate 161" [ref=e5360]: "161"
+              - generic [ref=e5361]:
+                - text: God and skeptical empiricism
+                - generic "Debate year 2011" [ref=e5362]: "2011"
+            - generic "Topics" [ref=e5363]: God & theism
+            - generic [ref=e5365]:
+              - generic "Interlocutor photos" [ref=e5366]
+              - generic [ref=e5367]: 2 hr 19 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig presented a cumulative Christian case; Millican’s calibrated challenges stressed underdetermination, alternative explanations, evidential reliability, suffering, and sincere nonbelief.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Peter Millican
+          - article [ref=e5368]:
+            - 'link "Open Debate 163: God and comparative evidence" [ref=e5369] [cursor=pointer]':
+              - /url: /debate/craig-draper-existence-of-god-1997/
+              - generic "Debate 163" [ref=e5370]: "163"
+              - generic [ref=e5371]:
+                - text: God and comparative evidence
+                - generic "Debate year 1997" [ref=e5372]: "1997"
+            - generic "Topics" [ref=e5373]:
+              - generic [ref=e5374]: God & theism
+              - generic [ref=e5375]: Logic & reason
+            - generic [ref=e5376]:
+              - generic "Interlocutor photos" [ref=e5377]
+              - generic [ref=e5378]: 1 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig advances a cumulative Christian case, while Draper’s disciplined comparative-likelihood framework more effectively integrates evolution, suffering, hiddenness, and qualified replies.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Paul Draper
+          - article [ref=e5379]:
+            - 'link "Open Debate 170: Reason, morality, suffering, and resurrection" [ref=e5380] [cursor=pointer]':
+              - /url: /debate/singer-lennox-is-there-god-2011/
+              - generic "Debate 170" [ref=e5381]: "170"
+              - generic [ref=e5382]:
+                - text: Reason, morality, suffering, and resurrection
+                - generic "Debate year 2011" [ref=e5383]: "2011"
+            - generic "Topics" [ref=e5384]:
+              - generic [ref=e5385]: God & theism
+              - generic [ref=e5386]: Resurrection & miracles
+              - generic [ref=e5387]: Morality & ethics
+              - generic [ref=e5388]: Evil & suffering
+            - generic [ref=e5389]:
+              - generic "Interlocutor photos" [ref=e5390]
+              - generic [ref=e5391]: 1 hr 46 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Lennox presents a cumulative Christian explanation of reason, value, hope, and Jesus; Singer answers with naturalistic alternatives, evidential demands, and suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Peter Singer
+          - article [ref=e5392]:
+            - 'link "Open Debate 175: Theism and naturalistic explanation" [ref=e5393] [cursor=pointer]':
+              - /url: /debate/oppy-pearce-is-there-a-god-2022/
+              - generic "Debate 175" [ref=e5394]: "175"
+              - generic [ref=e5395]:
+                - text: Theism and naturalistic explanation
+                - generic "Debate year 2022" [ref=e5396]: "2022"
+            - generic "Topics" [ref=e5397]: God & theism
+            - generic [ref=e5399]:
+              - generic "Interlocutor photos" [ref=e5400]
+              - generic [ref=e5401]: 1 hr 21 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Pearce develops theistic grounding and experiential arguments, while Oppy presses symmetrical naturalistic alternatives, epistemic calibration, and religious diversity as stronger comparative explanations.
+              - generic:
+                - generic: Speakers
+                - paragraph: Kenny Pearce | Graham Oppy
+          - article [ref=e5402]:
+            - 'link "Open Debate 194: Simplicity, cosmic order, and evil" [ref=e5403] [cursor=pointer]':
+              - /url: /debate/swinburne-millican-does-god-exist-2022/
+              - generic "Debate 194" [ref=e5404]: "194"
+              - generic [ref=e5405]:
+                - text: Simplicity, cosmic order, and evil
+                - generic "Debate year 2022" [ref=e5406]: "2022"
+            - generic "Topics" [ref=e5407]:
+              - generic [ref=e5408]: God & theism
+              - generic [ref=e5409]: Cosmological arguments
+              - generic [ref=e5410]: Evil & suffering
+            - generic [ref=e5411]:
+              - generic "Interlocutor photos" [ref=e5412]
+              - generic [ref=e5413]: 1 hr 8 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Swinburne defended personal explanation, simplicity, freedom, and compensation; Millican pressed predictive specificity, scientific background, divine coherence, embodiment, and victim-centered suffering.
+              - generic:
+                - generic: Speakers
+                - paragraph: Richard Swinburne | Peter Millican
+          - article [ref=e5414]:
+            - 'link "Open Debate 195: Contingency, experience, and morality" [ref=e5415] [cursor=pointer]':
+              - /url: /debate/russell-copleston-existence-of-god-1948/
+              - generic "Debate 195" [ref=e5416]: "195"
+              - generic [ref=e5417]:
+                - text: Contingency, experience, and morality
+                - generic "Debate year 1948" [ref=e5418]: "1948"
+            - generic "Topics" [ref=e5419]:
+              - generic [ref=e5420]: God & theism
+              - generic [ref=e5421]: Cosmological arguments
+              - generic [ref=e5422]: Morality & ethics
+            - generic [ref=e5423]:
+              - generic "Interlocutor photos" [ref=e5424]
+              - generic [ref=e5425]: 56 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Copleston develops contingency, religious-experience, and moral arguments for God; Russell narrowly prevails by exposing modal, evidential, and normative explanatory gaps.
+              - generic:
+                - generic: Speakers
+                - paragraph: Frederick Copleston | Bertrand Russell
+          - article [ref=e5426]:
+            - 'link "Open Debate 196: God, infinity, and explanatory comparison" [ref=e5427] [cursor=pointer]':
+              - /url: /debate/huemer-rasmussen-god-existence-2026/
+              - generic "Debate 196" [ref=e5428]: "196"
+              - generic [ref=e5429]:
+                - text: God, infinity, and explanatory comparison
+                - generic "Debate year 2026" [ref=e5430]: "2026"
+            - generic "Topics" [ref=e5431]: God & theism
+            - generic [ref=e5433]:
+              - generic "Interlocutor photos" [ref=e5434]
+              - generic [ref=e5435]: 1 hr 39 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Rasmussen advances a cumulative explanatory case for God, while Huemer presses competing finite-creator, multiverse, infinity, and evidential suffering objections.
+              - generic:
+                - generic: Speakers
+                - paragraph: Josh Rasmussen | Michael Huemer
+          - article [ref=e5436]:
+            - 'link "Open Debate 200: God and scientific naturalism" [ref=e5437] [cursor=pointer]':
+              - /url: /debate/craig-stenger-god-existence-2010/
+              - generic "Debate 200" [ref=e5438]: "200"
+              - generic [ref=e5439]:
+                - text: God and scientific naturalism
+                - generic "Debate year 2010" [ref=e5440]: "2010"
+            - generic "Topics" [ref=e5441]:
+              - generic [ref=e5442]: God & theism
+              - generic [ref=e5443]: Science & design
+            - generic [ref=e5444]:
+              - generic "Interlocutor photos" [ref=e5445]
+              - generic [ref=e5446]: 2 hr 12 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Craig’s stronger modal, cosmological, moral, and cumulative replies outweighed Stenger’s empirical challenges from natural explanation, prayer, neuroscience, hiddenness, suffering, and disputed resurrection history.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Victor Stenger
+          - article [ref=e5447]:
+            - 'link "Open Debate 202: The God Delusion and Christian theism" [ref=e5448] [cursor=pointer]':
+              - /url: /debate/dawkins-lennox-god-delusion-2007/
+              - generic "Debate 202" [ref=e5449]: "202"
+              - generic [ref=e5450]:
+                - text: The God Delusion and Christian theism
+                - generic "Debate year 2007" [ref=e5451]: "2007"
+            - generic "Topics" [ref=e5452]: God & theism
+            - generic [ref=e5454]:
+              - generic "Interlocutor photos" [ref=e5455]
+              - generic [ref=e5456]: 1 hr 47 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Dawkins prevailed narrowly by pressing natural explanations, evidential scrutiny, and secular accounts of morality, while Lennox answered strongly on evidential faith, science's limits, and Christian distinctiveness.
+              - generic:
+                - generic: Speakers
+                - paragraph: Richard Dawkins | John Lennox
+          - article [ref=e5457]:
+            - 'link "Open Debate 203: Evidence for and against God''s existence" [ref=e5458] [cursor=pointer]':
+              - /url: /debate/craig-flew-god-existence-1998/
+              - generic "Debate 203" [ref=e5459]: "203"
+              - generic [ref=e5460]:
+                - text: Evidence for and against God's existence
+                - generic "Debate year 1998" [ref=e5461]: "1998"
+            - generic "Topics" [ref=e5462]:
+              - generic [ref=e5463]: God & theism
+              - generic [ref=e5464]: Logic & reason
+            - generic [ref=e5465]:
+              - generic "Interlocutor photos" [ref=e5466]
+              - generic [ref=e5467]: 1 hr 34 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Flew narrowly prevailed because his disciplined evidential burden and domain objections exposed unresolved causal and probabilistic leaps across Craig's cumulative case.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Lane Craig | Antony Flew
+          - article [ref=e5468]:
+            - 'link "Open Debate 205: Cumulative theism and divine imperfection" [ref=e5469] [cursor=pointer]':
+              - /url: /debate/horn-watkins-god-existence-2021/
+              - generic "Debate 205" [ref=e5470]: "205"
+              - generic [ref=e5471]:
+                - text: Cumulative theism and divine imperfection
+                - generic "Debate year 2021" [ref=e5472]: "2021"
+            - generic "Topics" [ref=e5473]: God & theism
+            - generic [ref=e5475]:
+              - generic "Interlocutor photos" [ref=e5476]
+              - generic [ref=e5477]: 2 hr 18 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Horn argued from a first actualizer, finite past, divine attributes, and moral value; Watkins countered with sustaining-causation objections, naturalism’s simpler prior, evolutionary evil, hiddenness, and secular moral realism.
+              - generic:
+                - generic: Speakers
+                - paragraph: Trent Horn | Ben Watkins
+          - article [ref=e5478]:
+            - 'link "Open Debate 219: God, imagination, and explanatory evidence" [ref=e5479] [cursor=pointer]':
+              - /url: /debate/shermer-mcgrath-god-imagination-2017/
+              - generic "Debate 219" [ref=e5480]: "219"
+              - generic [ref=e5481]:
+                - text: God, imagination, and explanatory evidence
+                - generic "Debate year 2017" [ref=e5482]: "2017"
+            - generic "Topics" [ref=e5483]:
+              - generic [ref=e5484]: God & theism
+              - generic [ref=e5485]: Logic & reason
+            - generic [ref=e5486]:
+              - generic "Interlocutor photos" [ref=e5487]
+              - generic [ref=e5488]: 1 hr 56 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Shermer prevailed by connecting religious diversity, evidential burdens, naturalistic morality, and unfalsifiability to human construction, while McGrath offered thoughtful but less evidentially complete defenses of faith.
+              - generic:
+                - generic: Speakers
+                - paragraph: Michael Shermer | Alister McGrath
+          - article [ref=e5489]:
+            - 'link "Open Debate 222: God, evidence, and scientific explanation" [ref=e5490] [cursor=pointer]':
+              - /url: /debate/lennox-shermer-god-existence-2008/
+              - generic "Debate 222" [ref=e5491]: "222"
+              - generic [ref=e5492]:
+                - text: God, evidence, and scientific explanation
+                - generic "Debate year 2008" [ref=e5493]: "2008"
+            - generic "Topics" [ref=e5494]:
+              - generic [ref=e5495]: God & theism
+              - generic [ref=e5496]: Science & design
+              - generic [ref=e5497]: Logic & reason
+            - generic [ref=e5498]:
+              - generic "Interlocutor photos" [ref=e5499]
+              - generic [ref=e5500]: 1 hr 35 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Shermer’s disciplined evidential restraint narrowly prevailed over Lennox’s wide-ranging cumulative case, chiefly through stronger replies on suffering, historical underdetermination, and uncertainty.
+              - generic:
+                - generic: Speakers
+                - paragraph: John Lennox | Michael Shermer
+          - article [ref=e5501]:
+            - 'link "Open Debate 232: Finite theism, naturalism, and purpose" [ref=e5502] [cursor=pointer]':
+              - /url: /debate/goff-oppy-finite-theism-naturalism-2026/
+              - generic "Debate 232" [ref=e5503]: "232"
+              - generic [ref=e5504]:
+                - text: Finite theism, naturalism, and purpose
+                - generic "Debate year 2026" [ref=e5505]: "2026"
+            - generic "Topics" [ref=e5506]:
+              - generic [ref=e5507]: God & theism
+              - generic [ref=e5508]: Science & design
+              - generic [ref=e5509]: Meaning & purpose
+            - generic [ref=e5510]:
+              - generic "Interlocutor photos" [ref=e5511]
+              - generic [ref=e5512]: 1 hr 50 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Goff’s finite God unifies purposive value and suffering through limited power; Oppy’s naturalism counters with simplicity, modal uncertainty, and evolutionary explanation, producing a tie.
+              - generic:
+                - generic: Speakers
+                - paragraph: Philip Goff | Graham Oppy
+          - article [ref=e5513]:
+            - 'link "Open Debate 241: God, intelligibility, experience, and evil" [ref=e5514] [cursor=pointer]':
+              - /url: /debate/ward-law-god-existence-2015/
+              - generic "Debate 241" [ref=e5515]: "241"
+              - generic [ref=e5516]:
+                - text: God, intelligibility, experience, and evil
+                - generic "Debate year 2015" [ref=e5517]: "2015"
+            - generic "Topics" [ref=e5518]:
+              - generic [ref=e5519]: God & theism
+              - generic [ref=e5520]: Evil & suffering
+            - generic [ref=e5521]:
+              - generic "Interlocutor photos" [ref=e5522]
+              - generic [ref=e5523]: 1 hr 3 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Law’s evidential and symmetry challenges outscored Ward’s carefully limited mind-like theism, especially on suffering, hypothesis discrimination, and experiential reliability.
+              - generic:
+                - generic: Speakers
+                - paragraph: Keith Ward | Stephen Law
+          - article [ref=e5524]:
+            - 'link "Open Debate 246: Divine simplicity, knowledge, and causal explanation" [ref=e5525] [cursor=pointer]':
+              - /url: /debate/pine-schmid-divine-simplicity-2021/
+              - generic "Debate 246" [ref=e5526]: "246"
+              - generic [ref=e5527]:
+                - text: Divine simplicity, knowledge, and causal explanation
+                - generic "Debate year 2021" [ref=e5528]: "2021"
+            - generic "Topics" [ref=e5529]: God & theism
+            - generic [ref=e5531]:
+              - generic "Interlocutor photos" [ref=e5532]
+              - generic [ref=e5533]: 2 hr 10 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Pine develops a coherent classical framework, but Schmid more effectively isolates missing causal bridges and unresolved differences between necessary divinity and contingent knowledge.
+              - generic:
+                - generic: Speakers
+                - paragraph: Gregory Pine | Joseph Schmid
+          - article [ref=e5534]:
+            - 'link "Open Debate 248: Classical theism and monotheism" [ref=e5535] [cursor=pointer]':
+              - /url: /debate/tomaszewski-schmid-classical-theism-monotheism-2020/
+              - generic "Debate 248" [ref=e5536]: "248"
+              - generic [ref=e5537]:
+                - text: Classical theism and monotheism
+                - generic "Debate year 2020" [ref=e5538]: "2020"
+            - generic "Topics" [ref=e5539]: God & theism
+            - generic [ref=e5541]:
+              - generic "Interlocutor photos" [ref=e5542]
+              - generic [ref=e5543]: 1 hr 43 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Joe more effectively exposes gaps in the uniqueness arguments; Christopher clarifies conceptual existence and extrinsic predication, with both sides leaving substantive explanatory questions open.
+              - generic:
+                - generic: Speakers
+                - paragraph: Christopher Tomaszewski | Joe Schmid
+          - article [ref=e5544]:
+            - 'link "Open Debate 260: God, morality, and religion" [ref=e5545] [cursor=pointer]':
+              - /url: /debate/boteach-hitchens-god-morality-2008/
+              - generic "Debate 260" [ref=e5546]: "260"
+              - generic [ref=e5547]:
+                - text: God, morality, and religion
+                - generic "Debate year 2008" [ref=e5548]: "2008"
+            - generic "Topics" [ref=e5549]:
+              - generic [ref=e5550]: God & theism
+              - generic [ref=e5551]: Morality & ethics
+              - generic [ref=e5552]: Religion & society
+            - generic [ref=e5553]:
+              - generic "Interlocutor photos" [ref=e5554]
+              - generic [ref=e5555]: 1 hr 33 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Boteach grounds design and human worth in a personal God; Hitchens answers with natural explanation, moral autonomy, and challenges to interventionist religion.
+              - generic:
+                - generic: Speakers
+                - paragraph: Shmuley Boteach | Christopher Hitchens
+          - article [ref=e5556]:
+            - 'link "Open Debate 261: God, religion, and morality" [ref=e5557] [cursor=pointer]':
+              - /url: /debate/sharpton-hitchens-god-religion-morality-2007/
+              - generic "Debate 261" [ref=e5558]: "261"
+              - generic [ref=e5559]:
+                - text: God, religion, and morality
+                - generic "Debate year 2007" [ref=e5560]: "2007"
+            - generic "Topics" [ref=e5561]:
+              - generic [ref=e5562]: God & theism
+              - generic [ref=e5563]: Morality & ethics
+              - generic [ref=e5564]: Religion & society
+            - generic [ref=e5565]:
+              - generic "Interlocutor photos" [ref=e5566]
+              - generic [ref=e5567]: 1 hr 29 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Sharpton narrowed the case to personal theism, but Hitchens won by separating private belief from public warrant and supplying stronger naturalistic alternatives.
+              - generic:
+                - generic: Speakers
+                - paragraph: Al Sharpton | Christopher Hitchens
+          - article [ref=e5568]:
+            - 'link "Open Debate 263: Existence and goodness of God" [ref=e5569] [cursor=pointer]':
+              - /url: /debate/dembski-hitchens-good-god-existence-2010/
+              - generic "Debate 263" [ref=e5570]: "263"
+              - generic [ref=e5571]:
+                - text: Existence and goodness of God
+                - generic "Debate year 2010" [ref=e5572]: "2010"
+            - generic "Topics" [ref=e5573]: God & theism
+            - generic [ref=e5575]:
+              - generic "Interlocutor photos" [ref=e5576]
+              - generic [ref=e5577]: 2 hr 26 min
+            - generic "Debate summary and speakers":
+              - generic:
+                - generic: Summary
+                - paragraph: Hitchens wins by exposing the gap between design and a good providential God, while Dembski offers careful limits and several effective scientific replies.
+              - generic:
+                - generic: Speakers
+                - paragraph: William Dembski | Christopher Hitchens
+  - contentinfo [ref=e5578]:
+    - generic [ref=e5579]:
+      - link "Slugfester" [ref=e5580] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e5581]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=e5582]:
+      - link "Search" [ref=e5583] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e5584] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e5585] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e5586] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=e5587] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=e5588] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=e5589] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=e5590] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=e5591] [cursor=pointer]:
+        - /url: https://cogbias.site/

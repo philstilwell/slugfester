@@ -1,0 +1,1997 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e5592] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e5593]:
+    - link "Slugfester home" [ref=e5594] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e5595]: Slugfester
+    - navigation "Primary" [ref=e5596]:
+      - link "Debates" [ref=e5597] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=e5598] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e5599] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e5600] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e5601] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=e5602] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=e5604] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=e5605]: ▾
+  - main [active] [ref=e5606]:
+    - generic [ref=e5607]:
+      - generic [ref=e5608]:
+        - paragraph [ref=e5609]: Published score averages
+        - heading "Rankings & Flags" [level=1] [ref=e5610]
+        - paragraph [ref=e5611]: Rank speakers by their published overall scores, with the context to compare topics, sample size, and opponents faced.
+      - complementary "Rankings summary" [ref=e5612]:
+        - generic [ref=e5613]: Qualified interlocutors
+        - strong [ref=e5614]: "51"
+        - generic [ref=e5615]: Filtered scorecards
+        - strong [ref=e5616]: "246"
+    - region [ref=e5617]:
+      - generic [ref=e5619]:
+        - paragraph [ref=e5620]: Head-to-head
+        - heading "Compare interlocutors" [level=2] [ref=e5621]
+        - paragraph [ref=e5622]: Comparison follows the current topic focus and uses all available appearances within it.
+      - generic [ref=e5623]:
+        - generic [ref=e5624]:
+          - generic [ref=e5625]: First interlocutor
+          - combobox "First interlocutor" [ref=e5626]:
+            - option "Choose an interlocutor"
+            - option "AC Grayling"
+            - option "Al Sharpton"
+            - option "Alex Carter"
+            - option "Alex Malpass"
+            - option "Alex O'Connor"
+            - option "Alex Rosenberg"
+            - option "Alister McGrath"
+            - option "Alok Kanojia"
+            - option "Alvin Plantinga"
+            - option "Andrew Loke"
+            - option "Anil Seth"
+            - option "Ann Widdecombe"
+            - option "Anthony Kenny"
+            - option "Antony Flew"
+            - option "Aron Ra"
+            - option "Ayaan Hirsi Ali"
+            - option "Bart Ehrman"
+            - option "Ben Fischer"
+            - option "Ben Shapiro"
+            - option "Ben Watkins"
+            - option "Bernardo Kastrup"
+            - option "Bertrand Russell"
+            - option "Braxton Hunter"
+            - option "Brian Cutter"
+            - option "Cameron Bertuzzi"
+            - option "Christopher Hitchens"
+            - option "Christopher Tomaszewski"
+            - option "Cliffe Knechtle"
+            - option "Craig Biddle"
+            - option "Craig Evans"
+            - option "Dan Paterson"
+            - option "Daniel B. Wallace"
+            - option "Daniel Dennett"
+            - option "Dave Farina"
+            - option "David Baggett"
+            - option "David Enoch"
+            - option "David Silverman"
+            - option "David Wood"
+            - option "Denis Lamoureux"
+            - option "Dennis Prager"
+            - option "Dennis R. MacDonald"
+            - option "Derek Lambert"
+            - option "Derek McAllister"
+            - option "Dinesh D'Souza"
+            - option "Don Loeb"
+            - option "Dustin Crummett"
+            - option "Eben Alexander"
+            - option "Ed Feser"
+            - option "Elizabeth Oldfield"
+            - option "Eric Hernandez"
+            - option "Eric Sampson"
+            - option "Erik Wielenberg"
+            - option "Francis Collins"
+            - option "Frank Turek"
+            - option "Frederick Copleston"
+            - option "Fuz Rana"
+            - option "Gary Habermas"
+            - option "Glen Scrivener"
+            - option "Graham Oppy"
+            - option "Greg Koukl"
+            - option "Gregg Caruso"
+            - option "Gregory Pine"
+            - option "Guillaume Bignon"
+            - option "Hans Halvorson"
+            - option "Harold Kushner"
+            - option "Iain McGilchrist"
+            - option "Ian Hutchinson"
+            - option "James Anderson"
+            - option "James Fodor"
+            - option "James Marriott"
+            - option "James Tour"
+            - option "James White"
+            - option "Jay Dyer"
+            - option "Jeffery Jay Lowder"
+            - option "Jessica Frazier"
+            - option "Jimmy Akin"
+            - option "Joe Folley"
+            - option "Joel Settecase"
+            - option "John Dominic Crossan"
+            - option "John Ferrer"
+            - option "John Lennox"
+            - option "John Onaiyekan"
+            - option "John Shook"
+            - option "Jonathan Haidt"
+            - option "Jonathan McLatchie"
+            - option "Jonathan Pageau"
+            - option "Jordan Peterson"
+            - option "Joseph Schmid"
+            - option "Josh Rasmussen"
+            - option "Joshua Bowen"
+            - option "Julian Baggini"
+            - option "Justin Bass"
+            - option "Justin Brierley"
+            - option "Justin Clarke-Doane"
+            - option "Justin Schieber"
+            - option "Keith Fox"
+            - option "Keith Ward"
+            - option "Kenny Pearce"
+            - option "Kenny Rhodes"
+            - option "Kyle Butt"
+            - option "Lance Bush"
+            - option "Lawrence Krauss"
+            - option "Lee Cronin"
+            - option "Lewis Howitt"
+            - option "Lukas Ruegger"
+            - option "Marvin Olasky"
+            - option "Matt Dillahunty"
+            - option "Matt Lutz"
+            - option "Matt Slick"
+            - option "Matthew Adelstein"
+            - option "Max Baker-Hytch"
+            - option "Michael Egnor"
+            - option "Michael Huemer"
+            - option "Michael Jones"
+            - option "Michael Licona"
+            - option "Michael Ruse"
+            - option "Michael Shermer"
+            - option "Michel-Yves Bolloré"
+            - option "Mike Winger"
+            - option "Miles Donahue"
+            - option "Nathan Hawkins"
+            - option "Paul Copan"
+            - option "Paul Draper"
+            - option "Peter Atkins"
+            - option "Peter Gomes"
+            - option "Peter Hitchens"
+            - option "Peter J. Williams"
+            - option "Peter Millican"
+            - option "Peter Singer"
+            - option "Phil Halper"
+            - option "Philip Clayton"
+            - option "Philip Goff"
+            - option "Rabbi David Wolpe"
+            - option "Ray Comfort"
+            - option "Raymond Moody"
+            - option "Richard Carrier"
+            - option "Richard Dawkins"
+            - option "Richard Swinburne"
+            - option "Robert Price"
+            - option "Robert Sapolsky"
+            - option "Ross Douthat"
+            - option "Rowan Williams"
+            - option "S. Joshua Swamidass"
+            - option "Sabine Hossenfelder"
+            - option "Sam Harris"
+            - option "Scott Clifton"
+            - option "Sean Carroll"
+            - option "Sean McDowell"
+            - option "Shabir Ally"
+            - option "Sharon Dirckx"
+            - option "Shelly Kagan"
+            - option "Shmuley Boteach"
+            - option "Simon Edwards"
+            - option "Slavoj Žižek"
+            - option "Stephen Boyce"
+            - option "Stephen Fry"
+            - option "Stephen Law"
+            - option "Stephen Meyer"
+            - option "Stephen Woodford"
+            - option "Steven Novella"
+            - option "Steven Pinker"
+            - option "Stuart Knechtle"
+            - option "Susan Blackmore"
+            - option "Sy Garte"
+            - option "Sye Ten Bruggencate"
+            - option "Tariq Ramadan"
+            - option "Than Christopoulos"
+            - option "Tom Holland"
+            - option "Tom Jump"
+            - option "Tony Blair"
+            - option "Trent Horn"
+            - option "Tyler Vela"
+            - option "Victor Stenger"
+            - option "William Albrecht"
+            - option "William Dembski" [selected]
+            - option "William Lane Craig"
+            - option "Zac Sechler"
+        - generic [ref=e5628]:
+          - generic [ref=e5629]: Second interlocutor
+          - combobox "Second interlocutor" [ref=e5630]:
+            - option "Choose an interlocutor" [selected]
+            - option "AC Grayling"
+            - option "Al Sharpton"
+            - option "Alex Carter"
+            - option "Alex Malpass"
+            - option "Alex O'Connor"
+            - option "Alex Rosenberg"
+            - option "Alister McGrath"
+            - option "Alok Kanojia"
+            - option "Alvin Plantinga"
+            - option "Andrew Loke"
+            - option "Anil Seth"
+            - option "Ann Widdecombe"
+            - option "Anthony Kenny"
+            - option "Antony Flew"
+            - option "Aron Ra"
+            - option "Ayaan Hirsi Ali"
+            - option "Bart Ehrman"
+            - option "Ben Fischer"
+            - option "Ben Shapiro"
+            - option "Ben Watkins"
+            - option "Bernardo Kastrup"
+            - option "Bertrand Russell"
+            - option "Braxton Hunter"
+            - option "Brian Cutter"
+            - option "Cameron Bertuzzi"
+            - option "Christopher Hitchens"
+            - option "Christopher Tomaszewski"
+            - option "Cliffe Knechtle"
+            - option "Craig Biddle"
+            - option "Craig Evans"
+            - option "Dan Paterson"
+            - option "Daniel B. Wallace"
+            - option "Daniel Dennett"
+            - option "Dave Farina"
+            - option "David Baggett"
+            - option "David Enoch"
+            - option "David Silverman"
+            - option "David Wood"
+            - option "Denis Lamoureux"
+            - option "Dennis Prager"
+            - option "Dennis R. MacDonald"
+            - option "Derek Lambert"
+            - option "Derek McAllister"
+            - option "Dinesh D'Souza"
+            - option "Don Loeb"
+            - option "Dustin Crummett"
+            - option "Eben Alexander"
+            - option "Ed Feser"
+            - option "Elizabeth Oldfield"
+            - option "Eric Hernandez"
+            - option "Eric Sampson"
+            - option "Erik Wielenberg"
+            - option "Francis Collins"
+            - option "Frank Turek"
+            - option "Frederick Copleston"
+            - option "Fuz Rana"
+            - option "Gary Habermas"
+            - option "Glen Scrivener"
+            - option "Graham Oppy"
+            - option "Greg Koukl"
+            - option "Gregg Caruso"
+            - option "Gregory Pine"
+            - option "Guillaume Bignon"
+            - option "Hans Halvorson"
+            - option "Harold Kushner"
+            - option "Iain McGilchrist"
+            - option "Ian Hutchinson"
+            - option "James Anderson"
+            - option "James Fodor"
+            - option "James Marriott"
+            - option "James Tour"
+            - option "James White"
+            - option "Jay Dyer"
+            - option "Jeffery Jay Lowder"
+            - option "Jessica Frazier"
+            - option "Jimmy Akin"
+            - option "Joe Folley"
+            - option "Joel Settecase"
+            - option "John Dominic Crossan"
+            - option "John Ferrer"
+            - option "John Lennox"
+            - option "John Onaiyekan"
+            - option "John Shook"
+            - option "Jonathan Haidt"
+            - option "Jonathan McLatchie"
+            - option "Jonathan Pageau"
+            - option "Jordan Peterson"
+            - option "Joseph Schmid"
+            - option "Josh Rasmussen"
+            - option "Joshua Bowen"
+            - option "Julian Baggini"
+            - option "Justin Bass"
+            - option "Justin Brierley"
+            - option "Justin Clarke-Doane"
+            - option "Justin Schieber"
+            - option "Keith Fox"
+            - option "Keith Ward"
+            - option "Kenny Pearce"
+            - option "Kenny Rhodes"
+            - option "Kyle Butt"
+            - option "Lance Bush"
+            - option "Lawrence Krauss"
+            - option "Lee Cronin"
+            - option "Lewis Howitt"
+            - option "Lukas Ruegger"
+            - option "Marvin Olasky"
+            - option "Matt Dillahunty"
+            - option "Matt Lutz"
+            - option "Matt Slick"
+            - option "Matthew Adelstein"
+            - option "Max Baker-Hytch"
+            - option "Michael Egnor"
+            - option "Michael Huemer"
+            - option "Michael Jones"
+            - option "Michael Licona"
+            - option "Michael Ruse"
+            - option "Michael Shermer"
+            - option "Michel-Yves Bolloré"
+            - option "Mike Winger"
+            - option "Miles Donahue"
+            - option "Nathan Hawkins"
+            - option "Paul Copan"
+            - option "Paul Draper"
+            - option "Peter Atkins"
+            - option "Peter Gomes"
+            - option "Peter Hitchens"
+            - option "Peter J. Williams"
+            - option "Peter Millican"
+            - option "Peter Singer"
+            - option "Phil Halper"
+            - option "Philip Clayton"
+            - option "Philip Goff"
+            - option "Rabbi David Wolpe"
+            - option "Ray Comfort"
+            - option "Raymond Moody"
+            - option "Richard Carrier"
+            - option "Richard Dawkins"
+            - option "Richard Swinburne"
+            - option "Robert Price"
+            - option "Robert Sapolsky"
+            - option "Ross Douthat"
+            - option "Rowan Williams"
+            - option "S. Joshua Swamidass"
+            - option "Sabine Hossenfelder"
+            - option "Sam Harris"
+            - option "Scott Clifton"
+            - option "Sean Carroll"
+            - option "Sean McDowell"
+            - option "Shabir Ally"
+            - option "Sharon Dirckx"
+            - option "Shelly Kagan"
+            - option "Shmuley Boteach"
+            - option "Simon Edwards"
+            - option "Slavoj Žižek"
+            - option "Stephen Boyce"
+            - option "Stephen Fry"
+            - option "Stephen Law"
+            - option "Stephen Meyer"
+            - option "Stephen Woodford"
+            - option "Steven Novella"
+            - option "Steven Pinker"
+            - option "Stuart Knechtle"
+            - option "Susan Blackmore"
+            - option "Sy Garte"
+            - option "Sye Ten Bruggencate"
+            - option "Tariq Ramadan"
+            - option "Than Christopoulos"
+            - option "Tom Holland"
+            - option "Tom Jump"
+            - option "Tony Blair"
+            - option "Trent Horn"
+            - option "Tyler Vela"
+            - option "Victor Stenger"
+            - option "William Albrecht"
+            - option "William Dembski"
+            - option "William Lane Craig"
+            - option "Zac Sechler"
+        - button "Compare" [ref=e5632]
+      - paragraph [ref=e5633]: Choose two interlocutors to compare their score averages, opponents faced, and named reasoning-tag rates.
+    - region [ref=e5634]:
+      - generic [ref=e5635]:
+        - generic [ref=e5636]:
+          - paragraph [ref=e5637]: Overall score leaderboard
+          - heading "Ranked by average score" [level=2] [ref=e5638]
+        - generic [ref=e5639]:
+          - paragraph [ref=e5640]: Showing 51 interlocutors from 246 matching scorecards.
+          - paragraph [ref=e5641]: Group debate scores are not factored into interlocutors' 1-on-1 debate scorecard averages.
+      - region "Ranking controls" [ref=e5642]:
+        - generic [ref=e5643]:
+          - generic [ref=e5644]:
+            - generic [ref=e5645]: Topic focus
+            - combobox "Topic focus" [ref=e5646]:
+              - option "All topics" [selected]
+              - option "Cosmological & Contingency Arguments"
+              - option "Science and design"
+              - option "Evolution and origins of life"
+              - option "Bible and historical Jesus"
+              - option "Resurrection and miracles"
+              - option "Christian belief and doctrine"
+              - option "Meaning and purpose"
+              - option "Morality and ethics"
+              - option "Moral realism and objectivity"
+              - option "Evil, suffering, and hiddenness"
+              - option "Mind and consciousness"
+              - option "Free will and determinism"
+              - option "Logic, reason, and presuppositions"
+              - option "Religion, society, and public reason"
+              - option "God, theism, and atheism"
+          - generic [ref=e5647]:
+            - generic [ref=e5648]: Minimum debates
+            - combobox "Minimum debates" [ref=e5649]:
+              - option "3+ appearances" [selected]
+              - option "5+ appearances"
+              - option "10+ appearances"
+          - generic [ref=e5650]:
+            - generic [ref=e5651]: Sort by
+            - combobox "Sort by" [ref=e5652]:
+              - option "Highest average" [selected]
+              - option "Highest Opponents' Avg."
+              - option "Most appearances"
+              - option "Name"
+          - button "Apply" [ref=e5654]
+      - list [ref=e5655]:
+        - listitem [ref=e5656]:
+          - article [ref=e5657]:
+            - link "Open Joseph Schmid's debate profile" [ref=e5658] [cursor=pointer]:
+              - /url: /interlocutor/joseph-schmid/
+              - generic "Rank 1" [ref=e5659]: "1"
+              - img "Joseph Schmid" [ref=e5660]
+              - generic [ref=e5661]:
+                - strong [ref=e5662]: Joseph Schmid
+                - generic [ref=e5663]:
+                  - generic [ref=e5664]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e5665]: Developing sample
+                - generic [ref=e5667]: "Most common topic: God, theism, and atheism"
+                - generic "Joseph Schmid's reasoning-tag rates" [ref=e5668]:
+                  - generic [ref=e5669]:
+                    - generic [ref=e5670]: Fallacies
+                    - strong [ref=e5673]: 1.3 per 100
+                  - generic [ref=e5674]:
+                    - generic [ref=e5675]: Biases
+                    - strong [ref=e5677]: 0.0 per 100
+              - generic [ref=e5678]:
+                - generic [ref=e5679]:
+                  - generic [ref=e5680]: Joseph's avg.
+                  - strong [ref=e5681]: "87.3"
+                - generic [ref=e5682]:
+                  - generic [ref=e5683]: Opponents' Avg.
+                  - strong [ref=e5684]: "80.5"
+        - listitem [ref=e5685]:
+          - article [ref=e5686]:
+            - link "Open Alex Malpass's debate profile" [ref=e5687] [cursor=pointer]:
+              - /url: /interlocutor/alex-malpass/
+              - generic "Rank 2" [ref=e5688]: "2"
+              - img "Alex Malpass" [ref=e5689]
+              - generic [ref=e5690]:
+                - strong [ref=e5691]: Alex Malpass
+                - generic [ref=e5692]:
+                  - generic [ref=e5693]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e5694]: Developing sample
+                - generic [ref=e5696]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Alex Malpass's reasoning-tag rates" [ref=e5697]:
+                  - generic [ref=e5698]:
+                    - generic [ref=e5699]: Fallacies
+                    - strong [ref=e5701]: 0.0 per 100
+                  - generic [ref=e5702]:
+                    - generic [ref=e5703]: Biases
+                    - strong [ref=e5705]: 0.0 per 100
+              - generic [ref=e5706]:
+                - generic [ref=e5707]:
+                  - generic [ref=e5708]: Alex's avg.
+                  - strong [ref=e5709]: "87.2"
+                - generic [ref=e5710]:
+                  - generic [ref=e5711]: Opponents' Avg.
+                  - strong [ref=e5712]: "79.2"
+        - listitem [ref=e5713]:
+          - article [ref=e5714]:
+            - link "Open Scott Clifton's debate profile" [ref=e5715] [cursor=pointer]:
+              - /url: /interlocutor/scott-clifton/
+              - generic "Rank 3" [ref=e5716]: "3"
+              - img "Scott Clifton" [ref=e5717]
+              - generic [ref=e5718]:
+                - strong [ref=e5719]: Scott Clifton
+                - generic [ref=e5720]:
+                  - generic [ref=e5721]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e5722]: Developing sample
+                - generic [ref=e5724]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Scott Clifton's reasoning-tag rates" [ref=e5725]:
+                  - generic [ref=e5726]:
+                    - generic [ref=e5727]: Fallacies
+                    - strong [ref=e5730]: 4.4 per 100
+                  - generic [ref=e5731]:
+                    - generic [ref=e5732]: Biases
+                    - strong [ref=e5735]: 2.2 per 100
+              - generic [ref=e5736]:
+                - generic [ref=e5737]:
+                  - generic [ref=e5738]: Scott's avg.
+                  - strong [ref=e5739]: "86.8"
+                - generic [ref=e5740]:
+                  - generic [ref=e5741]: Opponents' Avg.
+                  - strong [ref=e5742]: "75.8"
+        - listitem [ref=e5743]:
+          - article [ref=e5744]:
+            - link "Open Joe Folley's debate profile" [ref=e5745] [cursor=pointer]:
+              - /url: /interlocutor/joe-folley/
+              - generic "Rank 4" [ref=e5746]: "4"
+              - img "Joe Folley" [ref=e5747]
+              - generic [ref=e5748]:
+                - strong [ref=e5749]: Joe Folley
+                - generic [ref=e5750]:
+                  - generic [ref=e5751]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e5752]: Developing sample
+                - generic [ref=e5754]: "Most common topic: Free will and determinism"
+                - generic "Joe Folley's reasoning-tag rates" [ref=e5755]:
+                  - generic [ref=e5756]:
+                    - generic [ref=e5757]: Fallacies
+                    - strong [ref=e5760]: 2.8 per 100
+                  - generic [ref=e5761]:
+                    - generic [ref=e5762]: Biases
+                    - strong [ref=e5764]: 0.0 per 100
+              - generic [ref=e5765]:
+                - generic [ref=e5766]:
+                  - generic [ref=e5767]: Joe's avg.
+                  - strong [ref=e5768]: "86.2"
+                - generic [ref=e5769]:
+                  - generic [ref=e5770]: Opponents' Avg.
+                  - strong [ref=e5771]: "77.8"
+        - listitem [ref=e5772]:
+          - article [ref=e5773]:
+            - link "Open Sean Carroll's debate profile" [ref=e5774] [cursor=pointer]:
+              - /url: /interlocutor/sean-carroll/
+              - generic "Rank 5" [ref=e5775]: "5"
+              - img "Sean Carroll" [ref=e5776]
+              - generic [ref=e5777]:
+                - strong [ref=e5778]: Sean Carroll
+                - generic [ref=e5779]:
+                  - generic [ref=e5780]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e5781]: Limited sample
+                - generic [ref=e5783]: "Most common topic: Science and design"
+                - generic "Sean Carroll's reasoning-tag rates" [ref=e5784]:
+                  - generic [ref=e5785]:
+                    - generic [ref=e5786]: Fallacies
+                    - strong [ref=e5788]: 0.0 per 100
+                  - generic [ref=e5789]:
+                    - generic [ref=e5790]: Biases
+                    - strong [ref=e5792]: 0.0 per 100
+              - generic [ref=e5793]:
+                - generic [ref=e5794]:
+                  - generic [ref=e5795]: Sean's avg.
+                  - strong [ref=e5796]: "86"
+                - generic [ref=e5797]:
+                  - generic [ref=e5798]: Opponents' Avg.
+                  - strong [ref=e5799]: "84.7"
+        - listitem [ref=e5800]:
+          - article [ref=e5801]:
+            - link "Open Matt Dillahunty's debate profile" [ref=e5802] [cursor=pointer]:
+              - /url: /interlocutor/matt-dillahunty/
+              - generic "Rank 6" [ref=e5803]: "6"
+              - img "Matt Dillahunty" [ref=e5804]
+              - generic [ref=e5805]:
+                - strong [ref=e5806]: Matt Dillahunty
+                - generic [ref=e5807]:
+                  - generic [ref=e5808]: 28 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e5809]: Established sample
+                - generic [ref=e5811]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Matt Dillahunty's reasoning-tag rates" [ref=e5812]:
+                  - generic [ref=e5813]:
+                    - generic [ref=e5814]: Fallacies
+                    - strong [ref=e5817]: 2.3 per 100
+                  - generic [ref=e5818]:
+                    - generic [ref=e5819]: Biases
+                    - strong [ref=e5822]: 0.7 per 100
+              - generic [ref=e5823]:
+                - generic [ref=e5824]:
+                  - generic [ref=e5825]: Matt's avg.
+                  - strong [ref=e5826]: "85.9"
+                - generic [ref=e5827]:
+                  - generic [ref=e5828]: Opponents' Avg.
+                  - strong [ref=e5829]: "74.4"
+        - listitem [ref=e5830]:
+          - article [ref=e5831]:
+            - link "Open Alex O'Connor's debate profile" [ref=e5832] [cursor=pointer]:
+              - /url: /interlocutor/alex-o-connor/
+              - generic "Rank 7" [ref=e5833]: "7"
+              - img "Alex O'Connor" [ref=e5834]
+              - generic [ref=e5835]:
+                - strong [ref=e5836]: Alex O'Connor
+                - generic [ref=e5837]:
+                  - generic [ref=e5838]: 28 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e5839]: Established sample
+                - generic [ref=e5841]: "Most common topic: God, theism, and atheism"
+                - generic "Alex O'Connor's reasoning-tag rates" [ref=e5842]:
+                  - generic [ref=e5843]:
+                    - generic [ref=e5844]: Fallacies
+                    - strong [ref=e5847]: 2.0 per 100
+                  - generic [ref=e5848]:
+                    - generic [ref=e5849]: Biases
+                    - strong [ref=e5852]: 1.0 per 100
+              - generic [ref=e5853]:
+                - generic [ref=e5854]:
+                  - generic [ref=e5855]: Alex's avg.
+                  - strong [ref=e5856]: "85.5"
+                - generic [ref=e5857]:
+                  - generic [ref=e5858]: Opponents' Avg.
+                  - strong [ref=e5859]: "77.6"
+        - listitem [ref=e5860]:
+          - article [ref=e5861]:
+            - link "Open Bart Ehrman's debate profile" [ref=e5862] [cursor=pointer]:
+              - /url: /interlocutor/bart-ehrman/
+              - generic "Rank 8" [ref=e5863]: "8"
+              - img "Bart Ehrman" [ref=e5864]
+              - generic [ref=e5865]:
+                - strong [ref=e5866]: Bart Ehrman
+                - generic [ref=e5867]:
+                  - generic [ref=e5868]: 12 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e5869]: Established sample
+                - generic [ref=e5871]: "Most common topic: Bible and historical Jesus"
+                - generic "Bart Ehrman's reasoning-tag rates" [ref=e5872]:
+                  - generic [ref=e5873]:
+                    - generic [ref=e5874]: Fallacies
+                    - strong [ref=e5877]: 8.2 per 100
+                  - generic [ref=e5878]:
+                    - generic [ref=e5879]: Biases
+                    - strong [ref=e5882]: 2.5 per 100
+              - generic [ref=e5883]:
+                - generic [ref=e5884]:
+                  - generic [ref=e5885]: Bart's avg.
+                  - strong [ref=e5886]: "85.4"
+                - generic [ref=e5887]:
+                  - generic [ref=e5888]: Opponents' Avg.
+                  - strong [ref=e5889]: "81.8"
+        - listitem [ref=e5890]:
+          - article [ref=e5891]:
+            - link "Open Susan Blackmore's debate profile" [ref=e5892] [cursor=pointer]:
+              - /url: /interlocutor/susan-blackmore/
+              - generic "Rank 9" [ref=e5893]: "9"
+              - img "Susan Blackmore" [ref=e5894]
+              - generic [ref=e5895]:
+                - strong [ref=e5896]: Susan Blackmore
+                - generic [ref=e5897]:
+                  - generic [ref=e5898]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e5899]: Limited sample
+                - generic [ref=e5901]: "Most common topic: Mind and consciousness"
+                - generic "Susan Blackmore's reasoning-tag rates" [ref=e5902]:
+                  - generic [ref=e5903]:
+                    - generic [ref=e5904]: Fallacies
+                    - strong [ref=e5906]: 0.0 per 100
+                  - generic [ref=e5907]:
+                    - generic [ref=e5908]: Biases
+                    - strong [ref=e5910]: 0.0 per 100
+              - generic [ref=e5911]:
+                - generic [ref=e5912]:
+                  - generic [ref=e5913]: Susan's avg.
+                  - strong [ref=e5914]: "85.3"
+                - generic [ref=e5915]:
+                  - generic [ref=e5916]: Opponents' Avg.
+                  - strong [ref=e5917]: "77.3"
+        - listitem [ref=e5918]:
+          - article [ref=e5919]:
+            - link "Open Lance Bush's debate profile" [ref=e5920] [cursor=pointer]:
+              - /url: /interlocutor/lance-bush/
+              - generic "Rank 10" [ref=e5921]: "10"
+              - img "Lance Bush" [ref=e5922]
+              - generic [ref=e5923]:
+                - strong [ref=e5924]: Lance Bush
+                - generic [ref=e5925]:
+                  - generic [ref=e5926]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e5927]: Developing sample
+                - generic [ref=e5929]: "Most common topic: Moral realism and objectivity"
+                - generic "Lance Bush's reasoning-tag rates" [ref=e5930]:
+                  - generic [ref=e5931]:
+                    - generic [ref=e5932]: Fallacies
+                    - strong [ref=e5934]: 0.0 per 100
+                  - generic [ref=e5935]:
+                    - generic [ref=e5936]: Biases
+                    - strong [ref=e5939]: 1.5 per 100
+              - generic [ref=e5940]:
+                - generic [ref=e5941]:
+                  - generic [ref=e5942]: Lance's avg.
+                  - strong [ref=e5943]: "84.8"
+                - generic [ref=e5944]:
+                  - generic [ref=e5945]: Opponents' Avg.
+                  - strong [ref=e5946]: "81.4"
+        - listitem [ref=e5947]:
+          - article [ref=e5948]:
+            - link "Open Graham Oppy's debate profile" [ref=e5949] [cursor=pointer]:
+              - /url: /interlocutor/graham-oppy/
+              - generic "Rank 11" [ref=e5950]: "11"
+              - img "Graham Oppy" [ref=e5951]
+              - generic [ref=e5952]:
+                - strong [ref=e5953]: Graham Oppy
+                - generic [ref=e5954]:
+                  - generic [ref=e5955]: 12 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e5956]: Established sample
+                - generic [ref=e5958]: "Most common topic: God, theism, and atheism"
+                - generic "Graham Oppy's reasoning-tag rates" [ref=e5959]:
+                  - generic [ref=e5960]:
+                    - generic [ref=e5961]: Fallacies
+                    - strong [ref=e5964]: 3.9 per 100
+                  - generic [ref=e5965]:
+                    - generic [ref=e5966]: Biases
+                    - strong [ref=e5968]: 0.0 per 100
+              - generic [ref=e5969]:
+                - generic [ref=e5970]:
+                  - generic [ref=e5971]: Graham's avg.
+                  - strong [ref=e5972]: "84.1"
+                - generic [ref=e5973]:
+                  - generic [ref=e5974]: Opponents' Avg.
+                  - strong [ref=e5975]: "80.4"
+        - listitem [ref=e5976]:
+          - article [ref=e5977]:
+            - link "Open Stephen Law's debate profile" [ref=e5978] [cursor=pointer]:
+              - /url: /interlocutor/stephen-law/
+              - generic "Rank 12" [ref=e5979]: "12"
+              - img "Stephen Law" [ref=e5980]
+              - generic [ref=e5981]:
+                - strong [ref=e5982]: Stephen Law
+                - generic [ref=e5983]:
+                  - generic [ref=e5984]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e5985]: Developing sample
+                - generic [ref=e5987]: "Most common topic: Evil, suffering, and hiddenness"
+                - generic "Stephen Law's reasoning-tag rates" [ref=e5988]:
+                  - generic [ref=e5989]:
+                    - generic [ref=e5990]: Fallacies
+                    - strong [ref=e5993]: 2.3 per 100
+                  - generic [ref=e5994]:
+                    - generic [ref=e5995]: Biases
+                    - strong [ref=e5998]: 2.3 per 100
+              - generic [ref=e5999]:
+                - generic [ref=e6000]:
+                  - generic [ref=e6001]: Stephen's avg.
+                  - strong [ref=e6002]: "83.4"
+                - generic [ref=e6003]:
+                  - generic [ref=e6004]: Opponents' Avg.
+                  - strong [ref=e6005]: "72.8"
+        - listitem [ref=e6006]:
+          - article [ref=e6007]:
+            - link "Open Daniel Dennett's debate profile" [ref=e6008] [cursor=pointer]:
+              - /url: /interlocutor/daniel-dennett/
+              - generic "Rank 13" [ref=e6009]: "13"
+              - img "Daniel Dennett" [ref=e6010]
+              - generic [ref=e6011]:
+                - strong [ref=e6012]: Daniel Dennett
+                - generic [ref=e6013]:
+                  - generic [ref=e6014]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6015]: Developing sample
+                - generic [ref=e6017]: "Most common topic: Free will and determinism"
+                - generic "Daniel Dennett's reasoning-tag rates" [ref=e6018]:
+                  - generic [ref=e6019]:
+                    - generic [ref=e6020]: Fallacies
+                    - strong [ref=e6022]: 0.0 per 100
+                  - generic [ref=e6023]:
+                    - generic [ref=e6024]: Biases
+                    - strong [ref=e6026]: 0.0 per 100
+              - generic [ref=e6027]:
+                - generic [ref=e6028]:
+                  - generic [ref=e6029]: Daniel's avg.
+                  - strong [ref=e6030]: "83.2"
+                - generic [ref=e6031]:
+                  - generic [ref=e6032]: Opponents' Avg.
+                  - strong [ref=e6033]: "81.2"
+        - listitem [ref=e6034]:
+          - article [ref=e6035]:
+            - link "Open Max Baker-Hytch's debate profile" [ref=e6036] [cursor=pointer]:
+              - /url: /interlocutor/max-baker-hytch/
+              - generic "Rank 14" [ref=e6037]: "14"
+              - img "Max Baker-Hytch" [ref=e6038]
+              - generic [ref=e6039]:
+                - strong [ref=e6040]: Max Baker-Hytch
+                - generic [ref=e6041]:
+                  - generic [ref=e6042]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6043]: Limited sample
+                - generic [ref=e6045]: "Most common topic: Evil, suffering, and hiddenness"
+                - generic "Max Baker-Hytch's reasoning-tag rates" [ref=e6046]:
+                  - generic [ref=e6047]:
+                    - generic [ref=e6048]: Fallacies
+                    - strong [ref=e6051]: 7.0 per 100
+                  - generic [ref=e6052]:
+                    - generic [ref=e6053]: Biases
+                    - strong [ref=e6056]: 2.3 per 100
+              - generic [ref=e6057]:
+                - generic [ref=e6058]:
+                  - generic [ref=e6059]: Max's avg.
+                  - strong [ref=e6060]: "83"
+                - generic [ref=e6061]:
+                  - generic [ref=e6062]: Opponents' Avg.
+                  - strong [ref=e6063]: "82"
+        - listitem [ref=e6064]:
+          - article [ref=e6065]:
+            - link "Open Michael Ruse's debate profile" [ref=e6066] [cursor=pointer]:
+              - /url: /interlocutor/michael-ruse/
+              - generic "Rank 15" [ref=e6067]: "15"
+              - img "Michael Ruse" [ref=e6068]
+              - generic [ref=e6069]:
+                - strong [ref=e6070]: Michael Ruse
+                - generic [ref=e6071]:
+                  - generic [ref=e6072]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6073]: Limited sample
+                - generic [ref=e6075]: "Most common topic: God, theism, and atheism"
+                - generic "Michael Ruse's reasoning-tag rates" [ref=e6076]:
+                  - generic [ref=e6077]:
+                    - generic [ref=e6078]: Fallacies
+                    - strong [ref=e6080]: 0.0 per 100
+                  - generic [ref=e6081]:
+                    - generic [ref=e6082]: Biases
+                    - strong [ref=e6084]: 0.0 per 100
+              - generic [ref=e6085]:
+                - generic [ref=e6086]:
+                  - generic [ref=e6087]: Michael's avg.
+                  - strong [ref=e6088]: "83"
+                - generic [ref=e6089]:
+                  - generic [ref=e6090]: Opponents' Avg.
+                  - strong [ref=e6091]: "80"
+        - listitem [ref=e6092]:
+          - article [ref=e6093]:
+            - link "Open Michael Huemer's debate profile" [ref=e6094] [cursor=pointer]:
+              - /url: /interlocutor/michael-huemer/
+              - generic "Rank 16" [ref=e6095]: "16"
+              - img "Michael Huemer" [ref=e6096]
+              - generic [ref=e6097]:
+                - strong [ref=e6098]: Michael Huemer
+                - generic [ref=e6099]:
+                  - generic [ref=e6100]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6101]: Established sample
+                - generic [ref=e6103]: "Most common topic: Morality and ethics"
+                - generic "Michael Huemer's reasoning-tag rates" [ref=e6104]:
+                  - generic [ref=e6105]:
+                    - generic [ref=e6106]: Fallacies
+                    - strong [ref=e6109]: 8.1 per 100
+                  - generic [ref=e6110]:
+                    - generic [ref=e6111]: Biases
+                    - strong [ref=e6114]: 4.1 per 100
+              - generic [ref=e6115]:
+                - generic [ref=e6116]:
+                  - generic [ref=e6117]: Michael's avg.
+                  - strong [ref=e6118]: "82"
+                - generic [ref=e6119]:
+                  - generic [ref=e6120]: Opponents' Avg.
+                  - strong [ref=e6121]: "80.3"
+        - listitem [ref=e6122]:
+          - article [ref=e6123]:
+            - link "Open Philip Goff's debate profile" [ref=e6124] [cursor=pointer]:
+              - /url: /interlocutor/philip-goff/
+              - generic "Rank 17" [ref=e6125]: "17"
+              - img "Philip Goff" [ref=e6126]
+              - generic [ref=e6127]:
+                - strong [ref=e6128]: Philip Goff
+                - generic [ref=e6129]:
+                  - generic [ref=e6130]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6131]: Developing sample
+                - generic [ref=e6133]: "Most common topic: Mind and consciousness"
+                - generic "Philip Goff's reasoning-tag rates" [ref=e6134]:
+                  - generic [ref=e6135]:
+                    - generic [ref=e6136]: Fallacies
+                    - strong [ref=e6138]: 0.0 per 100
+                  - generic [ref=e6139]:
+                    - generic [ref=e6140]: Biases
+                    - strong [ref=e6143]: 1.3 per 100
+              - generic [ref=e6144]:
+                - generic [ref=e6145]:
+                  - generic [ref=e6146]: Philip's avg.
+                  - strong [ref=e6147]: "81.6"
+                - generic [ref=e6148]:
+                  - generic [ref=e6149]: Opponents' Avg.
+                  - strong [ref=e6150]: "80.8"
+        - listitem [ref=e6151]:
+          - article [ref=e6152]:
+            - link "Open Christopher Hitchens's debate profile" [ref=e6153] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+              - generic "Rank 18" [ref=e6154]: "18"
+              - img "Christopher Hitchens" [ref=e6155]
+              - generic [ref=e6156]:
+                - strong [ref=e6157]: Christopher Hitchens
+                - generic [ref=e6158]:
+                  - generic [ref=e6159]: 14 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6160]: Established sample
+                - generic [ref=e6162]: "Most common topic: Religion, society, and public reason"
+                - generic "Christopher Hitchens's reasoning-tag rates" [ref=e6163]:
+                  - generic [ref=e6164]:
+                    - generic [ref=e6165]: Fallacies
+                    - strong [ref=e6168]: 3.4 per 100
+                  - generic [ref=e6169]:
+                    - generic [ref=e6170]: Biases
+                    - strong [ref=e6173]: 1.1 per 100
+              - generic [ref=e6174]:
+                - generic [ref=e6175]:
+                  - generic [ref=e6176]: Christopher's avg.
+                  - strong [ref=e6177]: "81.6"
+                - generic [ref=e6178]:
+                  - generic [ref=e6179]: Opponents' Avg.
+                  - strong [ref=e6180]: "77.1"
+        - listitem [ref=e6181]:
+          - article [ref=e6182]:
+            - link "Open Richard Dawkins's debate profile" [ref=e6183] [cursor=pointer]:
+              - /url: /interlocutor/richard-dawkins/
+              - generic "Rank 19" [ref=e6184]: "19"
+              - img "Richard Dawkins" [ref=e6185]
+              - generic [ref=e6186]:
+                - strong [ref=e6187]: Richard Dawkins
+                - generic [ref=e6188]:
+                  - generic [ref=e6189]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6190]: Established sample
+                - generic [ref=e6192]: "Most common topic: God, theism, and atheism"
+                - generic "Richard Dawkins's reasoning-tag rates" [ref=e6193]:
+                  - generic [ref=e6194]:
+                    - generic [ref=e6195]: Fallacies
+                    - strong [ref=e6198]: 10.8 per 100
+                  - generic [ref=e6199]:
+                    - generic [ref=e6200]: Biases
+                    - strong [ref=e6202]: 0.0 per 100
+              - generic [ref=e6203]:
+                - generic [ref=e6204]:
+                  - generic [ref=e6205]: Richard's avg.
+                  - strong [ref=e6206]: "81.4"
+                - generic [ref=e6207]:
+                  - generic [ref=e6208]: Opponents' Avg.
+                  - strong [ref=e6209]: "74.1"
+        - listitem [ref=e6210]:
+          - article [ref=e6211]:
+            - link "Open Sam Harris's debate profile" [ref=e6212] [cursor=pointer]:
+              - /url: /interlocutor/sam-harris/
+              - generic "Rank 20" [ref=e6213]: "20"
+              - img "Sam Harris" [ref=e6214]
+              - generic [ref=e6215]:
+                - strong [ref=e6216]: Sam Harris
+                - generic [ref=e6217]:
+                  - generic [ref=e6218]: 8 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6219]: Established sample
+                - generic [ref=e6221]: "Most common topic: Morality and ethics"
+                - generic "Sam Harris's reasoning-tag rates" [ref=e6222]:
+                  - generic [ref=e6223]:
+                    - generic [ref=e6224]: Fallacies
+                    - strong [ref=e6226]: 0.0 per 100
+                  - generic [ref=e6227]:
+                    - generic [ref=e6228]: Biases
+                    - strong [ref=e6230]: 0.0 per 100
+              - generic [ref=e6231]:
+                - generic [ref=e6232]:
+                  - generic [ref=e6233]: Sam's avg.
+                  - strong [ref=e6234]: "81.1"
+                - generic [ref=e6235]:
+                  - generic [ref=e6236]: Opponents' Avg.
+                  - strong [ref=e6237]: "78.5"
+        - listitem [ref=e6238]:
+          - article [ref=e6239]:
+            - link "Open Michael Licona's debate profile" [ref=e6240] [cursor=pointer]:
+              - /url: /interlocutor/michael-licona/
+              - generic "Rank 21" [ref=e6241]: "21"
+              - img "Michael Licona" [ref=e6242]
+              - generic [ref=e6243]:
+                - strong [ref=e6244]: Michael Licona
+                - generic [ref=e6245]:
+                  - generic [ref=e6246]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6247]: Established sample
+                - generic [ref=e6249]: "Most common topic: Resurrection and miracles"
+                - generic "Michael Licona's reasoning-tag rates" [ref=e6250]:
+                  - generic [ref=e6251]:
+                    - generic [ref=e6252]: Fallacies
+                    - strong [ref=e6255]: 2.8 per 100
+                  - generic [ref=e6256]:
+                    - generic [ref=e6257]: Biases
+                    - strong [ref=e6260]: 5.6 per 100
+              - generic [ref=e6261]:
+                - generic [ref=e6262]:
+                  - generic [ref=e6263]: Michael's avg.
+                  - strong [ref=e6264]: "81"
+                - generic [ref=e6265]:
+                  - generic [ref=e6266]: Opponents' Avg.
+                  - strong [ref=e6267]: "83.6"
+        - listitem [ref=e6268]:
+          - article [ref=e6269]:
+            - link "Open Michael Shermer's debate profile" [ref=e6270] [cursor=pointer]:
+              - /url: /interlocutor/michael-shermer/
+              - generic "Rank 22" [ref=e6271]: "22"
+              - img "Michael Shermer" [ref=e6272]
+              - generic [ref=e6273]:
+                - strong [ref=e6274]: Michael Shermer
+                - generic [ref=e6275]:
+                  - generic [ref=e6276]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6277]: Developing sample
+                - generic [ref=e6279]: "Most common topic: God, theism, and atheism"
+                - generic "Michael Shermer's reasoning-tag rates" [ref=e6280]:
+                  - generic [ref=e6281]:
+                    - generic [ref=e6282]: Fallacies
+                    - strong [ref=e6285]: 2.6 per 100
+                  - generic [ref=e6286]:
+                    - generic [ref=e6287]: Biases
+                    - strong [ref=e6289]: 0.0 per 100
+              - generic [ref=e6290]:
+                - generic [ref=e6291]:
+                  - generic [ref=e6292]: Michael's avg.
+                  - strong [ref=e6293]: "81"
+                - generic [ref=e6294]:
+                  - generic [ref=e6295]: Opponents' Avg.
+                  - strong [ref=e6296]: "73.3"
+        - listitem [ref=e6297]:
+          - article [ref=e6298]:
+            - link "Open Stephen Woodford's debate profile" [ref=e6299] [cursor=pointer]:
+              - /url: /interlocutor/stephen-woodford/
+              - generic "Rank 23" [ref=e6300]: "23"
+              - img "Stephen Woodford" [ref=e6301]
+              - generic [ref=e6302]:
+                - strong [ref=e6303]: Stephen Woodford
+                - generic [ref=e6304]:
+                  - generic [ref=e6305]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6306]: Developing sample
+                - generic [ref=e6308]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Stephen Woodford's reasoning-tag rates" [ref=e6309]:
+                  - generic [ref=e6310]:
+                    - generic [ref=e6311]: Fallacies
+                    - strong [ref=e6314]: 5.0 per 100
+                  - generic [ref=e6315]:
+                    - generic [ref=e6316]: Biases
+                    - strong [ref=e6319]: 3.3 per 100
+              - generic [ref=e6320]:
+                - generic [ref=e6321]:
+                  - generic [ref=e6322]: Stephen's avg.
+                  - strong [ref=e6323]: "81"
+                - generic [ref=e6324]:
+                  - generic [ref=e6325]: Opponents' Avg.
+                  - strong [ref=e6326]: "77.7"
+        - listitem [ref=e6327]:
+          - article [ref=e6328]:
+            - link "Open Bernardo Kastrup's debate profile" [ref=e6329] [cursor=pointer]:
+              - /url: /interlocutor/bernardo-kastrup/
+              - generic "Rank 24" [ref=e6330]: "24"
+              - img "Bernardo Kastrup" [ref=e6331]
+              - generic [ref=e6332]:
+                - strong [ref=e6333]: Bernardo Kastrup
+                - generic [ref=e6334]:
+                  - generic [ref=e6335]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6336]: Developing sample
+                - generic [ref=e6338]: "Most common topic: Mind and consciousness"
+                - generic "Bernardo Kastrup's reasoning-tag rates" [ref=e6339]:
+                  - generic [ref=e6340]:
+                    - generic [ref=e6341]: Fallacies
+                    - strong [ref=e6344]: 17.3 per 100
+                  - generic [ref=e6345]:
+                    - generic [ref=e6346]: Biases
+                    - strong [ref=e6349]: 5.1 per 100
+              - generic [ref=e6350]:
+                - generic [ref=e6351]:
+                  - generic [ref=e6352]: Bernardo's avg.
+                  - strong [ref=e6353]: "80.7"
+                - generic [ref=e6354]:
+                  - generic [ref=e6355]: Opponents' Avg.
+                  - strong [ref=e6356]: "82.5"
+        - listitem [ref=e6357]:
+          - article [ref=e6358]:
+            - link "Open Ben Watkins's debate profile" [ref=e6359] [cursor=pointer]:
+              - /url: /interlocutor/ben-watkins/
+              - generic "Rank 25" [ref=e6360]: "25"
+              - img "Ben Watkins" [ref=e6361]
+              - generic [ref=e6362]:
+                - strong [ref=e6363]: Ben Watkins
+                - generic [ref=e6364]:
+                  - generic [ref=e6365]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6366]: Limited sample
+                - generic [ref=e6368]: "Most common topic: God, theism, and atheism"
+                - generic "Ben Watkins's reasoning-tag rates" [ref=e6369]:
+                  - generic [ref=e6370]:
+                    - generic [ref=e6371]: Fallacies
+                    - strong [ref=e6374]: 6.7 per 100
+                  - generic [ref=e6375]:
+                    - generic [ref=e6376]: Biases
+                    - strong [ref=e6379]: 3.3 per 100
+              - generic [ref=e6380]:
+                - generic [ref=e6381]:
+                  - generic [ref=e6382]: Ben's avg.
+                  - strong [ref=e6383]: "80.7"
+                - generic [ref=e6384]:
+                  - generic [ref=e6385]: Opponents' Avg.
+                  - strong [ref=e6386]: "77.3"
+        - listitem [ref=e6387]:
+          - article [ref=e6388]:
+            - link "Open Josh Rasmussen's debate profile" [ref=e6389] [cursor=pointer]:
+              - /url: /interlocutor/josh-rasmussen/
+              - generic "Rank 26" [ref=e6390]: "26"
+              - img "Josh Rasmussen" [ref=e6391]
+              - generic [ref=e6392]:
+                - strong [ref=e6393]: Josh Rasmussen
+                - generic [ref=e6394]:
+                  - generic [ref=e6395]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6396]: Developing sample
+                - generic [ref=e6398]: "Most common topic: God, theism, and atheism"
+                - generic "Josh Rasmussen's reasoning-tag rates" [ref=e6399]:
+                  - generic [ref=e6400]:
+                    - generic [ref=e6401]: Fallacies
+                    - strong [ref=e6403]: 0.0 per 100
+                  - generic [ref=e6404]:
+                    - generic [ref=e6405]: Biases
+                    - strong [ref=e6408]: 4.2 per 100
+              - generic [ref=e6409]:
+                - generic [ref=e6410]:
+                  - generic [ref=e6411]: Josh's avg.
+                  - strong [ref=e6412]: "80.6"
+                - generic [ref=e6413]:
+                  - generic [ref=e6414]: Opponents' Avg.
+                  - strong [ref=e6415]: "86"
+        - listitem [ref=e6416]:
+          - article [ref=e6417]:
+            - link "Open Richard Carrier's debate profile" [ref=e6418] [cursor=pointer]:
+              - /url: /interlocutor/richard-carrier/
+              - generic "Rank 27" [ref=e6419]: "27"
+              - img "Richard Carrier" [ref=e6420]
+              - generic [ref=e6421]:
+                - strong [ref=e6422]: Richard Carrier
+                - generic [ref=e6423]:
+                  - generic [ref=e6424]: 8 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6425]: Established sample
+                - generic [ref=e6427]: "Most common topic: Bible and historical Jesus"
+                - generic "Richard Carrier's reasoning-tag rates" [ref=e6428]:
+                  - generic [ref=e6429]:
+                    - generic [ref=e6430]: Fallacies
+                    - strong [ref=e6433]: 9.6 per 100
+                  - generic [ref=e6434]:
+                    - generic [ref=e6435]: Biases
+                    - strong [ref=e6438]: 3.2 per 100
+              - generic [ref=e6439]:
+                - generic [ref=e6440]:
+                  - generic [ref=e6441]: Richard's avg.
+                  - strong [ref=e6442]: "80.5"
+                - generic [ref=e6443]:
+                  - generic [ref=e6444]: Opponents' Avg.
+                  - strong [ref=e6445]: "79"
+        - listitem [ref=e6446]:
+          - article [ref=e6447]:
+            - link "Open Lawrence Krauss's debate profile" [ref=e6448] [cursor=pointer]:
+              - /url: /interlocutor/lawrence-krauss/
+              - generic "Rank 28" [ref=e6449]: "28"
+              - img "Lawrence Krauss" [ref=e6450]
+              - generic [ref=e6451]:
+                - strong [ref=e6452]: Lawrence Krauss
+                - generic [ref=e6453]:
+                  - generic [ref=e6454]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6455]: Limited sample
+                - generic [ref=e6457]: "Most common topic: Cosmological & Contingency Arguments"
+                - generic "Lawrence Krauss's reasoning-tag rates" [ref=e6458]:
+                  - generic [ref=e6459]:
+                    - generic [ref=e6460]: Fallacies
+                    - strong [ref=e6462]: 0.0 per 100
+                  - generic [ref=e6463]:
+                    - generic [ref=e6464]: Biases
+                    - strong [ref=e6466]: 0.0 per 100
+              - generic [ref=e6467]:
+                - generic [ref=e6468]:
+                  - generic [ref=e6469]: Lawrence's avg.
+                  - strong [ref=e6470]: "80.3"
+                - generic [ref=e6471]:
+                  - generic [ref=e6472]: Opponents' Avg.
+                  - strong [ref=e6473]: "79.3"
+        - listitem [ref=e6474]:
+          - article [ref=e6475]:
+            - link "Open James Tour's debate profile" [ref=e6476] [cursor=pointer]:
+              - /url: /interlocutor/james-tour/
+              - generic "Rank 29" [ref=e6477]: "29"
+              - img "James Tour" [ref=e6478]
+              - generic [ref=e6479]:
+                - strong [ref=e6480]: James Tour
+                - generic [ref=e6481]:
+                  - generic [ref=e6482]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6483]: Developing sample
+                - generic [ref=e6485]: "Most common topic: Evolution and origins of life"
+                - generic "James Tour's reasoning-tag rates" [ref=e6486]:
+                  - generic [ref=e6487]:
+                    - generic [ref=e6488]: Fallacies
+                    - strong [ref=e6491]: 2.8 per 100
+                  - generic [ref=e6492]:
+                    - generic [ref=e6493]: Biases
+                    - strong [ref=e6495]: 0.0 per 100
+              - generic [ref=e6496]:
+                - generic [ref=e6497]:
+                  - generic [ref=e6498]: James's avg.
+                  - strong [ref=e6499]: "80.3"
+                - generic [ref=e6500]:
+                  - generic [ref=e6501]: Opponents' Avg.
+                  - strong [ref=e6502]: "79.3"
+        - listitem [ref=e6503]:
+          - article [ref=e6504]:
+            - link "Open Robert Price's debate profile" [ref=e6505] [cursor=pointer]:
+              - /url: /interlocutor/robert-price/
+              - generic "Rank 30" [ref=e6506]: "30"
+              - img "Robert Price" [ref=e6507]
+              - generic [ref=e6508]:
+                - strong [ref=e6509]: Robert Price
+                - generic [ref=e6510]:
+                  - generic [ref=e6511]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6512]: Developing sample
+                - generic [ref=e6514]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Robert Price's reasoning-tag rates" [ref=e6515]:
+                  - generic [ref=e6516]:
+                    - generic [ref=e6517]: Fallacies
+                    - strong [ref=e6519]: 0.0 per 100
+                  - generic [ref=e6520]:
+                    - generic [ref=e6521]: Biases
+                    - strong [ref=e6524]: 2.1 per 100
+              - generic [ref=e6525]:
+                - generic [ref=e6526]:
+                  - generic [ref=e6527]: Robert's avg.
+                  - strong [ref=e6528]: "79.8"
+                - generic [ref=e6529]:
+                  - generic [ref=e6530]: Opponents' Avg.
+                  - strong [ref=e6531]: "82"
+        - listitem [ref=e6532]:
+          - article [ref=e6533]:
+            - link "Open William Lane Craig's debate profile" [ref=e6534] [cursor=pointer]:
+              - /url: /interlocutor/william-lane-craig/
+              - generic "Rank 31" [ref=e6535]: "31"
+              - img "William Lane Craig" [ref=e6536]
+              - generic [ref=e6537]:
+                - strong [ref=e6538]: William Lane Craig
+                - generic [ref=e6539]:
+                  - generic [ref=e6540]: 24 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6541]: Established sample
+                - generic [ref=e6543]: "Most common topic: God, theism, and atheism"
+                - generic "William Lane Craig's reasoning-tag rates" [ref=e6544]:
+                  - generic [ref=e6545]:
+                    - generic [ref=e6546]: Fallacies
+                    - strong [ref=e6549]: 6.7 per 100
+                  - generic [ref=e6550]:
+                    - generic [ref=e6551]: Biases
+                    - strong [ref=e6554]: 1.2 per 100
+              - generic [ref=e6555]:
+                - generic [ref=e6556]:
+                  - generic [ref=e6557]: William's avg.
+                  - strong [ref=e6558]: "79.5"
+                - generic [ref=e6559]:
+                  - generic [ref=e6560]: Opponents' Avg.
+                  - strong [ref=e6561]: "83"
+        - listitem [ref=e6562]:
+          - article [ref=e6563]:
+            - link "Open James White's debate profile" [ref=e6564] [cursor=pointer]:
+              - /url: /interlocutor/james-white/
+              - generic "Rank 32" [ref=e6565]: "32"
+              - img "James White" [ref=e6566]
+              - generic [ref=e6567]:
+                - strong [ref=e6568]: James White
+                - generic [ref=e6569]:
+                  - generic [ref=e6570]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6571]: Developing sample
+                - generic [ref=e6573]: "Most common topic: Bible and historical Jesus"
+                - generic "James White's reasoning-tag rates" [ref=e6574]:
+                  - generic [ref=e6575]:
+                    - generic [ref=e6576]: Fallacies
+                    - strong [ref=e6579]: 7.1 per 100
+                  - generic [ref=e6580]:
+                    - generic [ref=e6581]: Biases
+                    - strong [ref=e6584]: 3.6 per 100
+              - generic [ref=e6585]:
+                - generic [ref=e6586]:
+                  - generic [ref=e6587]: James's avg.
+                  - strong [ref=e6588]: "79.5"
+                - generic [ref=e6589]:
+                  - generic [ref=e6590]: Opponents' Avg.
+                  - strong [ref=e6591]: "78.3"
+        - listitem [ref=e6592]:
+          - article [ref=e6593]:
+            - link "Open David Wood's debate profile" [ref=e6594] [cursor=pointer]:
+              - /url: /interlocutor/david-wood/
+              - generic "Rank 33" [ref=e6595]: "33"
+              - img "David Wood" [ref=e6596]
+              - generic [ref=e6597]:
+                - strong [ref=e6598]: David Wood
+                - generic [ref=e6599]:
+                  - generic [ref=e6600]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6601]: Developing sample
+                - generic [ref=e6603]: "Most common topic: Science and design"
+                - generic "David Wood's reasoning-tag rates" [ref=e6604]:
+                  - generic [ref=e6605]:
+                    - generic [ref=e6606]: Fallacies
+                    - strong [ref=e6608]: 0.0 per 100
+                  - generic [ref=e6609]:
+                    - generic [ref=e6610]: Biases
+                    - strong [ref=e6612]: 0.0 per 100
+              - generic [ref=e6613]:
+                - generic [ref=e6614]:
+                  - generic [ref=e6615]: David's avg.
+                  - strong [ref=e6616]: "79"
+                - generic [ref=e6617]:
+                  - generic [ref=e6618]: Opponents' Avg.
+                  - strong [ref=e6619]: "83.3"
+        - listitem [ref=e6620]:
+          - article [ref=e6621]:
+            - link "Open Jonathan McLatchie's debate profile" [ref=e6622] [cursor=pointer]:
+              - /url: /interlocutor/jonathan-mclatchie/
+              - generic "Rank 34" [ref=e6623]: "34"
+              - img "Jonathan McLatchie" [ref=e6624]
+              - generic [ref=e6625]:
+                - strong [ref=e6626]: Jonathan McLatchie
+                - generic [ref=e6627]:
+                  - generic [ref=e6628]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6629]: Developing sample
+                - generic [ref=e6631]: "Most common topic: Bible and historical Jesus"
+                - generic "Jonathan McLatchie's reasoning-tag rates" [ref=e6632]:
+                  - generic [ref=e6633]:
+                    - generic [ref=e6634]: Fallacies
+                    - strong [ref=e6636]: 0.0 per 100
+                  - generic [ref=e6637]:
+                    - generic [ref=e6638]: Biases
+                    - strong [ref=e6640]: 0.0 per 100
+              - generic [ref=e6641]:
+                - generic [ref=e6642]:
+                  - generic [ref=e6643]: Jonathan's avg.
+                  - strong [ref=e6644]: "78.8"
+                - generic [ref=e6645]:
+                  - generic [ref=e6646]: Opponents' Avg.
+                  - strong [ref=e6647]: "83"
+        - listitem [ref=e6648]:
+          - article [ref=e6649]:
+            - link "Open Tom Jump's debate profile" [ref=e6650] [cursor=pointer]:
+              - /url: /interlocutor/tom-jump/
+              - generic "Rank 35" [ref=e6651]: "35"
+              - img "Tom Jump" [ref=e6652]
+              - generic [ref=e6653]:
+                - strong [ref=e6654]: Tom Jump
+                - generic [ref=e6655]:
+                  - generic [ref=e6656]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6657]: Developing sample
+                - generic [ref=e6659]: "Most common topic: Mind and consciousness"
+                - generic "Tom Jump's reasoning-tag rates" [ref=e6660]:
+                  - generic [ref=e6661]:
+                    - generic [ref=e6662]: Fallacies
+                    - strong [ref=e6665]: 7.5 per 100
+                  - generic [ref=e6666]:
+                    - generic [ref=e6667]: Biases
+                    - strong [ref=e6669]: 0.0 per 100
+              - generic [ref=e6670]:
+                - generic [ref=e6671]:
+                  - generic [ref=e6672]: Tom's avg.
+                  - strong [ref=e6673]: "78"
+                - generic [ref=e6674]:
+                  - generic [ref=e6675]: Opponents' Avg.
+                  - strong [ref=e6676]: "78.8"
+        - listitem [ref=e6677]:
+          - article [ref=e6678]:
+            - link "Open Richard Swinburne's debate profile" [ref=e6679] [cursor=pointer]:
+              - /url: /interlocutor/richard-swinburne/
+              - generic "Rank 36" [ref=e6680]: "36"
+              - img "Richard Swinburne" [ref=e6681]
+              - generic [ref=e6682]:
+                - strong [ref=e6683]: Richard Swinburne
+                - generic [ref=e6684]:
+                  - generic [ref=e6685]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6686]: Developing sample
+                - generic [ref=e6688]: "Most common topic: God, theism, and atheism"
+                - generic "Richard Swinburne's reasoning-tag rates" [ref=e6689]:
+                  - generic [ref=e6690]:
+                    - generic [ref=e6691]: Fallacies
+                    - strong [ref=e6693]: 0.0 per 100
+                  - generic [ref=e6694]:
+                    - generic [ref=e6695]: Biases
+                    - strong [ref=e6698]: 7.7 per 100
+              - generic [ref=e6699]:
+                - generic [ref=e6700]:
+                  - generic [ref=e6701]: Richard's avg.
+                  - strong [ref=e6702]: "78"
+                - generic [ref=e6703]:
+                  - generic [ref=e6704]: Opponents' Avg.
+                  - strong [ref=e6705]: "84.8"
+        - listitem [ref=e6706]:
+          - article [ref=e6707]:
+            - link "Open Ross Douthat's debate profile" [ref=e6708] [cursor=pointer]:
+              - /url: /interlocutor/ross-douthat/
+              - generic "Rank 37" [ref=e6709]: "37"
+              - img "Ross Douthat" [ref=e6710]
+              - generic [ref=e6711]:
+                - strong [ref=e6712]: Ross Douthat
+                - generic [ref=e6713]:
+                  - generic [ref=e6714]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6715]: Limited sample
+                - generic [ref=e6717]: "Most common topic: Bible and historical Jesus"
+                - generic "Ross Douthat's reasoning-tag rates" [ref=e6718]:
+                  - generic [ref=e6719]:
+                    - generic [ref=e6720]: Fallacies
+                    - strong [ref=e6723]: 21.6 per 100
+                  - generic [ref=e6724]:
+                    - generic [ref=e6725]: Biases
+                    - strong [ref=e6728]: 2.7 per 100
+              - generic [ref=e6729]:
+                - generic [ref=e6730]:
+                  - generic [ref=e6731]: Ross's avg.
+                  - strong [ref=e6732]: "77.7"
+                - generic [ref=e6733]:
+                  - generic [ref=e6734]: Opponents' Avg.
+                  - strong [ref=e6735]: "85"
+        - listitem [ref=e6736]:
+          - article [ref=e6737]:
+            - link "Open Glen Scrivener's debate profile" [ref=e6738] [cursor=pointer]:
+              - /url: /interlocutor/glen-scrivener/
+              - generic "Rank 38" [ref=e6739]: "38"
+              - img "Glen Scrivener" [ref=e6740]
+              - generic [ref=e6741]:
+                - strong [ref=e6742]: Glen Scrivener
+                - generic [ref=e6743]:
+                  - generic [ref=e6744]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6745]: Developing sample
+                - generic [ref=e6747]: "Most common topic: Morality and ethics"
+                - generic "Glen Scrivener's reasoning-tag rates" [ref=e6748]:
+                  - generic [ref=e6749]:
+                    - generic [ref=e6750]: Fallacies
+                    - strong [ref=e6753]: 11.5 per 100
+                  - generic [ref=e6754]:
+                    - generic [ref=e6755]: Biases
+                    - strong [ref=e6758]: 1.9 per 100
+              - generic [ref=e6759]:
+                - generic [ref=e6760]:
+                  - generic [ref=e6761]: Glen's avg.
+                  - strong [ref=e6762]: "77.6"
+                - generic [ref=e6763]:
+                  - generic [ref=e6764]: Opponents' Avg.
+                  - strong [ref=e6765]: "85.4"
+        - listitem [ref=e6766]:
+          - article [ref=e6767]:
+            - link "Open John Lennox's debate profile" [ref=e6768] [cursor=pointer]:
+              - /url: /interlocutor/john-lennox/
+              - generic "Rank 39" [ref=e6769]: "39"
+              - img "John Lennox" [ref=e6770]
+              - generic [ref=e6771]:
+                - strong [ref=e6772]: John Lennox
+                - generic [ref=e6773]:
+                  - generic [ref=e6774]: 9 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6775]: Established sample
+                - generic [ref=e6777]: "Most common topic: God, theism, and atheism"
+                - generic "John Lennox's reasoning-tag rates" [ref=e6778]:
+                  - generic [ref=e6779]:
+                    - generic [ref=e6780]: Fallacies
+                    - strong [ref=e6783]: 10.2 per 100
+                  - generic [ref=e6784]:
+                    - generic [ref=e6785]: Biases
+                    - strong [ref=e6788]: 0.9 per 100
+              - generic [ref=e6789]:
+                - generic [ref=e6790]:
+                  - generic [ref=e6791]: John's avg.
+                  - strong [ref=e6792]: "77.1"
+                - generic [ref=e6793]:
+                  - generic [ref=e6794]: Opponents' Avg.
+                  - strong [ref=e6795]: "80.4"
+        - listitem [ref=e6796]:
+          - article [ref=e6797]:
+            - link "Open Trent Horn's debate profile" [ref=e6798] [cursor=pointer]:
+              - /url: /interlocutor/trent-horn/
+              - generic "Rank 40" [ref=e6799]: "40"
+              - img "Trent Horn" [ref=e6800]
+              - generic [ref=e6801]:
+                - strong [ref=e6802]: Trent Horn
+                - generic [ref=e6803]:
+                  - generic [ref=e6804]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6805]: Developing sample
+                - generic [ref=e6807]: "Most common topic: Resurrection and miracles"
+                - generic "Trent Horn's reasoning-tag rates" [ref=e6808]:
+                  - generic [ref=e6809]:
+                    - generic [ref=e6810]: Fallacies
+                    - strong [ref=e6813]: 8.8 per 100
+                  - generic [ref=e6814]:
+                    - generic [ref=e6815]: Biases
+                    - strong [ref=e6818]: 1.3 per 100
+              - generic [ref=e6819]:
+                - generic [ref=e6820]:
+                  - generic [ref=e6821]: Trent's avg.
+                  - strong [ref=e6822]: "76.8"
+                - generic [ref=e6823]:
+                  - generic [ref=e6824]: Opponents' Avg.
+                  - strong [ref=e6825]: "81.8"
+        - listitem [ref=e6826]:
+          - article [ref=e6827]:
+            - link "Open Aron Ra's debate profile" [ref=e6828] [cursor=pointer]:
+              - /url: /interlocutor/aron-ra/
+              - generic "Rank 41" [ref=e6829]: "41"
+              - img "Aron Ra" [ref=e6830]
+              - generic [ref=e6831]:
+                - strong [ref=e6832]: Aron Ra
+                - generic [ref=e6833]:
+                  - generic [ref=e6834]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6835]: Developing sample
+                - generic [ref=e6837]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Aron Ra's reasoning-tag rates" [ref=e6838]:
+                  - generic [ref=e6839]:
+                    - generic [ref=e6840]: Fallacies
+                    - strong [ref=e6843]: 10.0 per 100
+                  - generic [ref=e6844]:
+                    - generic [ref=e6845]: Biases
+                    - strong [ref=e6848]: 7.5 per 100
+              - generic [ref=e6849]:
+                - generic [ref=e6850]:
+                  - generic [ref=e6851]: Aron's avg.
+                  - strong [ref=e6852]: "76.4"
+                - generic [ref=e6853]:
+                  - generic [ref=e6854]: Opponents' Avg.
+                  - strong [ref=e6855]: "76.2"
+        - listitem [ref=e6856]:
+          - article [ref=e6857]:
+            - link "Open Gregory Pine's debate profile" [ref=e6858] [cursor=pointer]:
+              - /url: /interlocutor/gregory-pine/
+              - generic "Rank 42" [ref=e6859]: "42"
+              - img "Gregory Pine" [ref=e6860]
+              - generic [ref=e6861]:
+                - strong [ref=e6862]: Gregory Pine
+                - generic [ref=e6863]:
+                  - generic [ref=e6864]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6865]: Limited sample
+                - generic [ref=e6867]: "Most common topic: God, theism, and atheism"
+                - generic "Gregory Pine's reasoning-tag rates" [ref=e6868]:
+                  - generic [ref=e6869]:
+                    - generic [ref=e6870]: Fallacies
+                    - strong [ref=e6873]: 11.4 per 100
+                  - generic [ref=e6874]:
+                    - generic [ref=e6875]: Biases
+                    - strong [ref=e6878]: 2.9 per 100
+              - generic [ref=e6879]:
+                - generic [ref=e6880]:
+                  - generic [ref=e6881]: Gregory's avg.
+                  - strong [ref=e6882]: "76"
+                - generic [ref=e6883]:
+                  - generic [ref=e6884]: Opponents' Avg.
+                  - strong [ref=e6885]: "86.7"
+        - listitem [ref=e6886]:
+          - article [ref=e6887]:
+            - link "Open Dinesh D'Souza's debate profile" [ref=e6888] [cursor=pointer]:
+              - /url: /interlocutor/dinesh-d-souza/
+              - generic "Rank 43" [ref=e6889]: "43"
+              - img "Dinesh D'Souza" [ref=e6890]
+              - generic [ref=e6891]:
+                - strong [ref=e6892]: Dinesh D'Souza
+                - generic [ref=e6893]:
+                  - generic [ref=e6894]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6895]: Developing sample
+                - generic [ref=e6897]: "Most common topic: Religion, society, and public reason"
+                - generic "Dinesh D'Souza's reasoning-tag rates" [ref=e6898]:
+                  - generic [ref=e6899]:
+                    - generic [ref=e6900]: Fallacies
+                    - strong [ref=e6903]: 11.3 per 100
+                  - generic [ref=e6904]:
+                    - generic [ref=e6905]: Biases
+                    - strong [ref=e6908]: 11.3 per 100
+              - generic [ref=e6909]:
+                - generic [ref=e6910]:
+                  - generic [ref=e6911]: Dinesh's avg.
+                  - strong [ref=e6912]: "75.5"
+                - generic [ref=e6913]:
+                  - generic [ref=e6914]: Opponents' Avg.
+                  - strong [ref=e6915]: "84.8"
+        - listitem [ref=e6916]:
+          - article [ref=e6917]:
+            - link "Open Michael Jones's debate profile" [ref=e6918] [cursor=pointer]:
+              - /url: /interlocutor/michael-jones/
+              - generic "Rank 44" [ref=e6919]: "44"
+              - img "Michael Jones" [ref=e6920]
+              - generic [ref=e6921]:
+                - strong [ref=e6922]: Michael Jones
+                - generic [ref=e6923]:
+                  - generic [ref=e6924]: 13 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e6925]: Established sample
+                - generic [ref=e6927]: "Most common topic: Mind and consciousness"
+                - generic "Michael Jones's reasoning-tag rates" [ref=e6928]:
+                  - generic [ref=e6929]:
+                    - generic [ref=e6930]: Fallacies
+                    - strong [ref=e6933]: 5.0 per 100
+                  - generic [ref=e6934]:
+                    - generic [ref=e6935]: Biases
+                    - strong [ref=e6938]: 2.9 per 100
+              - generic [ref=e6939]:
+                - generic [ref=e6940]:
+                  - generic [ref=e6941]: Michael's avg.
+                  - strong [ref=e6942]: "75.4"
+                - generic [ref=e6943]:
+                  - generic [ref=e6944]: Opponents' Avg.
+                  - strong [ref=e6945]: "82.5"
+        - listitem [ref=e6946]:
+          - article [ref=e6947]:
+            - link "Open Keith Ward's debate profile" [ref=e6948] [cursor=pointer]:
+              - /url: /interlocutor/keith-ward/
+              - generic "Rank 45" [ref=e6949]: "45"
+              - img "Keith Ward" [ref=e6950]
+              - generic [ref=e6951]:
+                - strong [ref=e6952]: Keith Ward
+                - generic [ref=e6953]:
+                  - generic [ref=e6954]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e6955]: Limited sample
+                - generic [ref=e6957]: "Most common topic: Mind and consciousness"
+                - generic "Keith Ward's reasoning-tag rates" [ref=e6958]:
+                  - generic [ref=e6959]:
+                    - generic [ref=e6960]: Fallacies
+                    - strong [ref=e6963]: 10.3 per 100
+                  - generic [ref=e6964]:
+                    - generic [ref=e6965]: Biases
+                    - strong [ref=e6968]: 10.3 per 100
+              - generic [ref=e6969]:
+                - generic [ref=e6970]:
+                  - generic [ref=e6971]: Keith's avg.
+                  - strong [ref=e6972]: "75.3"
+                - generic [ref=e6973]:
+                  - generic [ref=e6974]: Opponents' Avg.
+                  - strong [ref=e6975]: "83.3"
+        - listitem [ref=e6976]:
+          - article [ref=e6977]:
+            - link "Open Jordan Peterson's debate profile" [ref=e6978] [cursor=pointer]:
+              - /url: /interlocutor/jordan-peterson/
+              - generic "Rank 46" [ref=e6979]: "46"
+              - img "Jordan Peterson" [ref=e6980]
+              - generic [ref=e6981]:
+                - strong [ref=e6982]: Jordan Peterson
+                - generic [ref=e6983]:
+                  - generic [ref=e6984]: 6 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e6985]: Developing sample
+                - generic [ref=e6987]: "Most common topic: Meaning and purpose"
+                - generic "Jordan Peterson's reasoning-tag rates" [ref=e6988]:
+                  - generic [ref=e6989]:
+                    - generic [ref=e6990]: Fallacies
+                    - strong [ref=e6993]: 17.9 per 100
+                  - generic [ref=e6994]:
+                    - generic [ref=e6995]: Biases
+                    - strong [ref=e6997]: 0.0 per 100
+              - generic [ref=e6998]:
+                - generic [ref=e6999]:
+                  - generic [ref=e7000]: Jordan's avg.
+                  - strong [ref=e7001]: "74.8"
+                - generic [ref=e7002]:
+                  - generic [ref=e7003]: Opponents' Avg.
+                  - strong [ref=e7004]: "83.8"
+        - listitem [ref=e7005]:
+          - article [ref=e7006]:
+            - link "Open Frank Turek's debate profile" [ref=e7007] [cursor=pointer]:
+              - /url: /interlocutor/frank-turek/
+              - generic "Rank 47" [ref=e7008]: "47"
+              - img "Frank Turek" [ref=e7009]
+              - generic [ref=e7010]:
+                - strong [ref=e7011]: Frank Turek
+                - generic [ref=e7012]:
+                  - generic [ref=e7013]: 7 debates
+                  - generic "A broader scorecard sample makes the average more stable." [ref=e7014]: Established sample
+                - generic [ref=e7016]: "Most common topic: God, theism, and atheism"
+                - generic "Frank Turek's reasoning-tag rates" [ref=e7017]:
+                  - generic [ref=e7018]:
+                    - generic [ref=e7019]: Fallacies
+                    - strong [ref=e7022]: 14.1 per 100
+                  - generic [ref=e7023]:
+                    - generic [ref=e7024]: Biases
+                    - strong [ref=e7027]: 2.8 per 100
+              - generic [ref=e7028]:
+                - generic [ref=e7029]:
+                  - generic [ref=e7030]: Frank's avg.
+                  - strong [ref=e7031]: "74.1"
+                - generic [ref=e7032]:
+                  - generic [ref=e7033]: Opponents' Avg.
+                  - strong [ref=e7034]: "82.3"
+        - listitem [ref=e7035]:
+          - article [ref=e7036]:
+            - link "Open Alister McGrath's debate profile" [ref=e7037] [cursor=pointer]:
+              - /url: /interlocutor/alister-mcgrath/
+              - generic "Rank 48" [ref=e7038]: "48"
+              - img "Alister McGrath" [ref=e7039]
+              - generic [ref=e7040]:
+                - strong [ref=e7041]: Alister McGrath
+                - generic [ref=e7042]:
+                  - generic [ref=e7043]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e7044]: Developing sample
+                - generic [ref=e7046]: "Most common topic: Religion, society, and public reason"
+                - generic "Alister McGrath's reasoning-tag rates" [ref=e7047]:
+                  - generic [ref=e7048]:
+                    - generic [ref=e7049]: Fallacies
+                    - strong [ref=e7052]: 24.5 per 100
+                  - generic [ref=e7053]:
+                    - generic [ref=e7054]: Biases
+                    - strong [ref=e7057]: 3.8 per 100
+              - generic [ref=e7058]:
+                - generic [ref=e7059]:
+                  - generic [ref=e7060]: Alister's avg.
+                  - strong [ref=e7061]: "74"
+                - generic [ref=e7062]:
+                  - generic [ref=e7063]: Opponents' Avg.
+                  - strong [ref=e7064]: "80.5"
+        - listitem [ref=e7065]:
+          - article [ref=e7066]:
+            - link "Open Matt Slick's debate profile" [ref=e7067] [cursor=pointer]:
+              - /url: /interlocutor/matt-slick/
+              - generic "Rank 49" [ref=e7068]: "49"
+              - img "Matt Slick" [ref=e7069]
+              - generic [ref=e7070]:
+                - strong [ref=e7071]: Matt Slick
+                - generic [ref=e7072]:
+                  - generic [ref=e7073]: 3 debates
+                  - generic "3 scorecards provide an early signal, not a settled ranking." [ref=e7074]: Limited sample
+                - generic [ref=e7076]: "Most common topic: Logic, reason, and presuppositions"
+                - generic "Matt Slick's reasoning-tag rates" [ref=e7077]:
+                  - generic [ref=e7078]:
+                    - generic [ref=e7079]: Fallacies
+                    - strong [ref=e7082]: 23.8 per 100
+                  - generic [ref=e7083]:
+                    - generic [ref=e7084]: Biases
+                    - strong [ref=e7086]: 0.0 per 100
+              - generic [ref=e7087]:
+                - generic [ref=e7088]:
+                  - generic [ref=e7089]: Matt's avg.
+                  - strong [ref=e7090]: "72.3"
+                - generic [ref=e7091]:
+                  - generic [ref=e7092]: Opponents' Avg.
+                  - strong [ref=e7093]: "81.3"
+        - listitem [ref=e7094]:
+          - article [ref=e7095]:
+            - link "Open Eric Hernandez's debate profile" [ref=e7096] [cursor=pointer]:
+              - /url: /interlocutor/eric-hernandez/
+              - generic "Rank 50" [ref=e7097]: "50"
+              - img "Eric Hernandez" [ref=e7098]
+              - generic [ref=e7099]:
+                - strong [ref=e7100]: Eric Hernandez
+                - generic [ref=e7101]:
+                  - generic [ref=e7102]: 4 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e7103]: Developing sample
+                - generic [ref=e7105]: "Most common topic: Mind and consciousness"
+                - generic "Eric Hernandez's reasoning-tag rates" [ref=e7106]:
+                  - generic [ref=e7107]:
+                    - generic [ref=e7108]: Fallacies
+                    - strong [ref=e7111]: 8.3 per 100
+                  - generic [ref=e7112]:
+                    - generic [ref=e7113]: Biases
+                    - strong [ref=e7115]: 0.0 per 100
+              - generic [ref=e7116]:
+                - generic [ref=e7117]:
+                  - generic [ref=e7118]: Eric's avg.
+                  - strong [ref=e7119]: "72"
+                - generic [ref=e7120]:
+                  - generic [ref=e7121]: Opponents' Avg.
+                  - strong [ref=e7122]: "80.5"
+        - listitem [ref=e7123]:
+          - article [ref=e7124]:
+            - link "Open Peter Atkins's debate profile" [ref=e7125] [cursor=pointer]:
+              - /url: /interlocutor/peter-atkins/
+              - generic "Rank 51" [ref=e7126]: "51"
+              - img "Peter Atkins" [ref=e7127]
+              - generic [ref=e7128]:
+                - strong [ref=e7129]: Peter Atkins
+                - generic [ref=e7130]:
+                  - generic [ref=e7131]: 5 debates
+                  - generic "Several scorecards provide useful context, though more appearances can still move the average." [ref=e7132]: Developing sample
+                - generic [ref=e7134]: "Most common topic: Science and design"
+                - generic "Peter Atkins's reasoning-tag rates" [ref=e7135]:
+                  - generic [ref=e7136]:
+                    - generic [ref=e7137]: Fallacies
+                    - strong [ref=e7140]: 6.8 per 100
+                  - generic [ref=e7141]:
+                    - generic [ref=e7142]: Biases
+                    - strong [ref=e7144]: 0.0 per 100
+              - generic [ref=e7145]:
+                - generic [ref=e7146]:
+                  - generic [ref=e7147]: Peter's avg.
+                  - strong [ref=e7148]: "71.4"
+                - generic [ref=e7149]:
+                  - generic [ref=e7150]: Opponents' Avg.
+                  - strong [ref=e7151]: "82.6"
+      - group [ref=e7152]:
+        - generic "Ranking method +" [ref=e7153] [cursor=pointer]
+    - region [ref=e7154]:
+      - generic [ref=e7156]:
+        - paragraph [ref=e7157]: Named assessment tags
+        - heading "Reasoning flags by topic" [level=2] [ref=e7158]
+        - paragraph [ref=e7159]: Rates show cited fallacy and bias tags per 100 scored argument and rebuttal moves.
+      - generic [ref=e7160]:
+        - generic [ref=e7161]:
+          - generic [ref=e7162]: Corpus overview
+          - strong [ref=e7163]: All topic clusters
+        - generic [ref=e7164]:
+          - generic [ref=e7165]:
+            - term [ref=e7166]: Scorecards
+            - definition [ref=e7167]: "263"
+          - generic [ref=e7168]:
+            - term [ref=e7169]: Scored moves
+            - definition [ref=e7170]: "5791"
+          - generic [ref=e7171]:
+            - term [ref=e7172]: Fallacy tags
+            - definition [ref=e7173]:
+              - text: "386"
+              - generic [ref=e7174]: 6.7 per 100
+          - generic [ref=e7175]:
+            - term [ref=e7176]: Bias tags
+            - definition [ref=e7177]:
+              - text: "150"
+              - generic [ref=e7178]: 2.6 per 100
+      - generic "Reasoning tag legend" [ref=e7179]:
+        - generic [ref=e7180]: Logical fallacy tags
+        - generic [ref=e7182]: Cognitive bias tags
+        - generic [ref=e7184]: Topic groups use each scorecard's primary Slugfester category.
+      - list [ref=e7185]:
+        - listitem [ref=e7186]:
+          - generic [ref=e7187]:
+            - strong [ref=e7188]: Cosmological & Contingency Arguments
+            - generic [ref=e7189]: 19 scorecards · 362 scored moves
+          - generic [ref=e7190]:
+            - generic [ref=e7191]:
+              - generic [ref=e7192]: Fallacies
+              - strong [ref=e7195]: 5.2 per 100
+            - generic [ref=e7196]:
+              - generic [ref=e7197]: Biases
+              - strong [ref=e7199]: 0.0 per 100
+        - listitem [ref=e7200]:
+          - generic [ref=e7201]:
+            - strong [ref=e7202]: Science and design
+            - generic [ref=e7203]: 21 scorecards · 441 scored moves
+          - generic [ref=e7204]:
+            - generic [ref=e7205]:
+              - generic [ref=e7206]: Fallacies
+              - strong [ref=e7209]: 4.8 per 100
+            - generic [ref=e7210]:
+              - generic [ref=e7211]: Biases
+              - strong [ref=e7214]: 2.3 per 100
+        - listitem [ref=e7215]:
+          - generic [ref=e7216]:
+            - strong [ref=e7217]: Evolution and origins of life
+            - generic [ref=e7218]: 7 scorecards · 122 scored moves
+          - generic [ref=e7219]:
+            - generic [ref=e7220]:
+              - generic [ref=e7221]: Fallacies
+              - strong [ref=e7224]: 1.6 per 100
+            - generic [ref=e7225]:
+              - generic [ref=e7226]: Biases
+              - strong [ref=e7229]: 2.5 per 100
+        - listitem [ref=e7230]:
+          - generic [ref=e7231]:
+            - strong [ref=e7232]: Bible and historical Jesus
+            - generic [ref=e7233]: 17 scorecards · 394 scored moves
+          - generic [ref=e7234]:
+            - generic [ref=e7235]:
+              - generic [ref=e7236]: Fallacies
+              - strong [ref=e7239]: 8.9 per 100
+            - generic [ref=e7240]:
+              - generic [ref=e7241]: Biases
+              - strong [ref=e7244]: 3.6 per 100
+        - listitem [ref=e7245]:
+          - generic [ref=e7246]:
+            - strong [ref=e7247]: Resurrection and miracles
+            - generic [ref=e7248]: 19 scorecards · 377 scored moves
+          - generic [ref=e7249]:
+            - generic [ref=e7250]:
+              - generic [ref=e7251]: Fallacies
+              - strong [ref=e7254]: 4.5 per 100
+            - generic [ref=e7255]:
+              - generic [ref=e7256]: Biases
+              - strong [ref=e7259]: 1.9 per 100
+        - listitem [ref=e7260]:
+          - generic [ref=e7261]:
+            - strong [ref=e7262]: Christian belief and doctrine
+            - generic [ref=e7263]: 19 scorecards · 455 scored moves
+          - generic [ref=e7264]:
+            - generic [ref=e7265]:
+              - generic [ref=e7266]: Fallacies
+              - strong [ref=e7269]: 10.3 per 100
+            - generic [ref=e7270]:
+              - generic [ref=e7271]: Biases
+              - strong [ref=e7274]: 5.1 per 100
+        - listitem [ref=e7275]:
+          - generic [ref=e7276]:
+            - strong [ref=e7277]: Meaning and purpose
+            - generic [ref=e7278]: 10 scorecards · 230 scored moves
+          - generic [ref=e7279]:
+            - generic [ref=e7280]:
+              - generic [ref=e7281]: Fallacies
+              - strong [ref=e7284]: 8.7 per 100
+            - generic [ref=e7285]:
+              - generic [ref=e7286]: Biases
+              - strong [ref=e7289]: 3.0 per 100
+        - listitem [ref=e7290]:
+          - generic [ref=e7291]:
+            - strong [ref=e7292]: Morality and ethics
+            - generic [ref=e7293]: 19 scorecards · 441 scored moves
+          - generic [ref=e7294]:
+            - generic [ref=e7295]:
+              - generic [ref=e7296]: Fallacies
+              - strong [ref=e7299]: 7.5 per 100
+            - generic [ref=e7300]:
+              - generic [ref=e7301]: Biases
+              - strong [ref=e7304]: 2.3 per 100
+        - listitem [ref=e7305]:
+          - generic [ref=e7306]:
+            - strong [ref=e7307]: Moral realism and objectivity
+            - generic [ref=e7308]: 11 scorecards · 212 scored moves
+          - generic [ref=e7309]:
+            - generic [ref=e7310]:
+              - generic [ref=e7311]: Fallacies
+              - strong [ref=e7314]: 4.2 per 100
+            - generic [ref=e7315]:
+              - generic [ref=e7316]: Biases
+              - strong [ref=e7319]: 2.4 per 100
+        - listitem [ref=e7320]:
+          - generic [ref=e7321]:
+            - strong [ref=e7322]: Evil, suffering, and hiddenness
+            - generic [ref=e7323]: 19 scorecards · 436 scored moves
+          - generic [ref=e7324]:
+            - generic [ref=e7325]:
+              - generic [ref=e7326]: Fallacies
+              - strong [ref=e7329]: 5.0 per 100
+            - generic [ref=e7330]:
+              - generic [ref=e7331]: Biases
+              - strong [ref=e7334]: 3.2 per 100
+        - listitem [ref=e7335]:
+          - generic [ref=e7336]:
+            - strong [ref=e7337]: Mind and consciousness
+            - generic [ref=e7338]: 20 scorecards · 523 scored moves
+          - generic [ref=e7339]:
+            - generic [ref=e7340]:
+              - generic [ref=e7341]: Fallacies
+              - strong [ref=e7344]: 7.6 per 100
+            - generic [ref=e7345]:
+              - generic [ref=e7346]: Biases
+              - strong [ref=e7349]: 2.9 per 100
+        - listitem [ref=e7350]:
+          - generic [ref=e7351]:
+            - strong [ref=e7352]: Free will and determinism
+            - generic [ref=e7353]: 7 scorecards · 132 scored moves
+          - generic [ref=e7354]:
+            - generic [ref=e7355]:
+              - generic [ref=e7356]: Fallacies
+              - strong [ref=e7359]: 0.8 per 100
+            - generic [ref=e7360]:
+              - generic [ref=e7361]: Biases
+              - strong [ref=e7363]: 0.0 per 100
+        - listitem [ref=e7364]:
+          - generic [ref=e7365]:
+            - strong [ref=e7366]: Logic, reason, and presuppositions
+            - generic [ref=e7367]: 14 scorecards · 299 scored moves
+          - generic [ref=e7368]:
+            - generic [ref=e7369]:
+              - generic [ref=e7370]: Fallacies
+              - strong [ref=e7373]: 7.0 per 100
+            - generic [ref=e7374]:
+              - generic [ref=e7375]: Biases
+              - strong [ref=e7378]: 0.7 per 100
+        - listitem [ref=e7379]:
+          - generic [ref=e7380]:
+            - strong [ref=e7381]: Religion, society, and public reason
+            - generic [ref=e7382]: 21 scorecards · 411 scored moves
+          - generic [ref=e7383]:
+            - generic [ref=e7384]:
+              - generic [ref=e7385]: Fallacies
+              - strong [ref=e7388]: 5.8 per 100
+            - generic [ref=e7389]:
+              - generic [ref=e7390]: Biases
+              - strong [ref=e7393]: 2.9 per 100
+        - listitem [ref=e7394]:
+          - generic [ref=e7395]:
+            - strong [ref=e7396]: God, theism, and atheism
+            - generic [ref=e7397]: 40 scorecards · 956 scored moves
+          - generic [ref=e7398]:
+            - generic [ref=e7399]:
+              - generic [ref=e7400]: Fallacies
+              - strong [ref=e7403]: 7.8 per 100
+            - generic [ref=e7404]:
+              - generic [ref=e7405]: Biases
+              - strong [ref=e7408]: 2.9 per 100
+      - paragraph [ref=e7409]: These are counts of named assessment tags, not independent findings that every cited fallacy or bias is established across the corpus.
+  - contentinfo [ref=e7410]:
+    - generic [ref=e7411]:
+      - link "Slugfester" [ref=e7412] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e7413]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=e7414]:
+      - link "Search" [ref=e7415] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e7416] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e7417] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e7418] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=e7419] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=e7420] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=e7421] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=e7422] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=e7423] [cursor=pointer]:
+        - /url: https://cogbias.site/

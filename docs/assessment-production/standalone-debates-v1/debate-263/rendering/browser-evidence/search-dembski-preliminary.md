@@ -1,0 +1,105 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e2431] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e2432]:
+    - link "Slugfester home" [ref=e2433] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e2434]: Slugfester
+    - navigation "Primary" [ref=e2435]:
+      - link "Debates" [ref=e2436] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=e2437] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e2438] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e2439] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e2440] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=e2441] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=e2443] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=e2444]: ▾
+  - main [ref=e2445]:
+    - generic [ref=e2446]:
+      - generic [ref=e2447]:
+        - paragraph [ref=e2448]: Search scorecards
+        - heading "Find debates" [level=1] [ref=e2449]
+      - status [ref=e2450]: 1 of 263 debates
+    - region "Search filters" [ref=e2451]:
+      - search [ref=e2452]:
+        - generic [ref=e2453]: Search text
+        - generic [ref=e2454]:
+          - searchbox "Search text" [ref=e2455]: Dembski
+          - button "Apply" [ref=e2456]
+          - button "Clear" [ref=e2457]
+      - group [ref=e2458]:
+        - generic "+ Interlocutor photos & filters Click here to browse participant photos and choose who to include in your search. Any" [ref=e2459] [cursor=pointer]:
+          - text: +
+          - generic [ref=e2461]:
+            - strong [ref=e2462]: Interlocutor photos & filters
+            - generic [ref=e2463]: Click here to browse participant photos and choose who to include in your search.
+          - generic [ref=e2464]: Any
+    - region [ref=e2465]:
+      - generic [ref=e2466]:
+        - paragraph [ref=e2467]: "Matches: \"Dembski\""
+        - heading "Debates" [level=2] [ref=e2468]
+      - article [ref=e2470]:
+        - generic [ref=e2471]:
+          - generic [ref=e2472]:
+            - generic "Debate 263" [ref=e2473]: "263"
+            - generic [ref=e2474]: Existence and goodness of God
+          - generic [ref=e2475]: 2 hr 26 min
+        - generic [ref=e2476]:
+          - generic [ref=e2477]:
+            - heading [level=3] [ref=e2478]:
+              - link "William Dembski vs Christopher Hitchens — Does a good God exist? Debate year 2010" [ref=e2479] [cursor=pointer]:
+                - /url: /debate/dembski-hitchens-good-god-existence-2010/
+                - text: William Dembski vs Christopher Hitchens — Does a good God exist?
+                - generic "Debate year 2010" [ref=e2480]: "2010"
+            - paragraph [ref=e2481]: Does a good God exist?
+            - paragraph [ref=e2482]: Hitchens wins by exposing the gap between design and a good providential God, while Dembski offers careful limits and several effective scientific replies.
+          - generic "Interlocutors" [ref=e2483]:
+            - link "Open William Dembski's interlocutor profile" [ref=e2484] [cursor=pointer]:
+              - /url: /interlocutor/william-dembski/
+              - generic [ref=e2485]: William Dembski
+            - link "Open Christopher Hitchens's interlocutor profile" [ref=e2486] [cursor=pointer]:
+              - /url: /interlocutor/christopher-hitchens/
+              - generic [ref=e2487]: Christopher Hitchens
+        - generic "Overall scores" [ref=e2488]:
+          - generic [ref=e2489]:
+            - generic [ref=e2490]: Christian theism
+            - strong [ref=e2491]: "71"
+          - generic [ref=e2493]:
+            - generic [ref=e2494]: Atheistic critique
+            - strong [ref=e2495]: "79"
+        - generic [ref=e2497]:
+          - link "Open Debate Assessment" [ref=e2498] [cursor=pointer]:
+            - /url: /debate/dembski-hitchens-good-god-existence-2010/
+          - link "YouTube Source" [ref=e2499] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=D6K43WSZrmI
+  - contentinfo [ref=e2500]:
+    - generic [ref=e2501]:
+      - link "Slugfester" [ref=e2502] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e2503]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=e2504]:
+      - link "Search" [ref=e2505] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e2506] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e2507] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e2508] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=e2509] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=e2510] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=e2511] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=e2512] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=e2513] [cursor=pointer]:
+        - /url: https://cogbias.site/

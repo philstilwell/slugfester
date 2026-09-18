@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0-standalone-repository-gates",
+  "debateNumber": "263",
+  "status": "passed",
+  "completedAt": "2026-09-18T17:29:59.166Z",
+  "commands": [
+    {
+      "command": "node scripts/validate-debates.mjs",
+      "exitCode": 0,
+      "result": "263 debates; corpus-wide AI punctuation checks included"
+    },
+    {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "exitCode": 0,
+      "result": "263 available transcripts; 240 local source hashes checked after cache restoration"
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --debate 263",
+      "exitCode": 0,
+      "result": "40 moves, 7 sections, 28 disputes, scores 71–79, full current source bytes authenticated"
+    },
+    {
+      "command": "node scripts/audit-assessment-production-standalone-v1.mjs --audit --repository-only",
+      "exitCode": 0,
+      "executionSessionId": 97315,
+      "result": "All published standalone records, including 263"
+    },
+    {
+      "command": "npm run seo",
+      "exitCode": 0,
+      "result": "747 generated files"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "executionSessionId": 23319,
+      "result": "Full current check and postcheck passed; includes campaign closure, calibration, all standalone audits, content parity, rhetorical labels, primary-speaker fixtures and team lane"
+    },
+    {
+      "command": "npm run site:check",
+      "exitCode": 0,
+      "executionSessionId": 19511,
+      "result": "56 tests passed; includes public routes, 177 biographies, scope disclosure, accessibility, performance and visual regression"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    },
+    {
+      "command": "raw production comparison",
+      "exitCode": 0,
+      "result": "All 262 existing raw debate objects unchanged; new object exactly matches final frozen candidate"
+    }
+  ],
+  "initialFailures": [
+    {
+      "command": "npm run check",
+      "executionSessionId": 58677,
+      "exitCode": 1,
+      "reason": "Missing ignored historical audio reference output/transcribe/v2.2-audio-verification/OL8LREmbDi0/refs/sye-ten-bruggencate.wav",
+      "resolution": "Linked the existing parent historical audio directory and 244 missing historical caption directories into ignored local locations; no existing target was overwritten or source content edited."
+    },
+    {
+      "command": "npm run assessment:campaign:closure:repository:check",
+      "executionSessionId": 78553,
+      "exitCode": 1,
+      "reason": "Check was run while 263 was integrated but not yet marked published-and-frozen; the incomplete current classification produced 196 versus 195 historical-population expectation.",
+      "resolution": "Completed the normal frozen adapter and standalone registry classification, then passed the unchanged closure audit through npm run check. No historical evidence or historical counts were edited."
+    }
+  ],
+  "cleanup": {
+    "archivedControllers": 32,
+    "temporaryBrowserClosed": true,
+    "previewPort4263Closed": true,
+    "earlierReportPreserved": true,
+    "unrelatedChangesPreserved": true
+  },
+  "limitsOrFrozenAssessmentChanged": false,
+  "remainingGates": [
+    "Immediate precommit site:preflight",
+    "Clean-checkout standalone replay",
+    "Required PR accessibility-and-performance check",
+    "Merge and origin/main containment",
+    "Successful Site Quality and Pages deployment"
+  ]
+}
