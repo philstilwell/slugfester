@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0-isolated-adjudication-instructions",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "packetPath": "docs/assessment-production/standalone-debates-v1/debate-263/adjudication/packet.json",
+  "audioPath": "docs/assessment-production/standalone-debates-v1/debate-263/adjudication/audio-context.json",
+  "inventoryPath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/inventory.json",
+  "sourcePath": ".assessment-cache/captions/D6K43WSZrmI/indexed-transcript.txt",
+  "controls": [
+    "docs/assessment-production-workflow.md",
+    "docs/reassessment-rubric-v2.1.md",
+    "docs/assessment-workflow-v2.1.md",
+    "docs/assessment-production/standalone-primary-speaker-scope-exception-v1.md",
+    "scripts/lib/assessment-production-standalone-debate-v1.mjs"
+  ],
+  "outputPath": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-263-worktree/docs/assessment-production/standalone-debates-v1/debate-263/adjudication/output.json",
+  "expectedDisputeIds": [
+    "providential-history-unfalsifiable:assessmentConfidence",
+    "evolution-evidence-challenges:assessmentConfidence",
+    "atheism-darwin-dependence:logicalCoherence",
+    "atheism-darwin-dependence:evidenceWarrant",
+    "atheism-darwin-dependence:responsiveness",
+    "atheism-darwin-dependence:relevanceBurden",
+    "atheism-darwin-dependence:precisionClarity",
+    "atheism-darwin-dependence:calibrationCharity",
+    "atheism-predates-darwin:logicalCoherence",
+    "atheism-predates-darwin:evidenceWarrant",
+    "atheism-predates-darwin:responsiveness",
+    "atheism-predates-darwin:relevanceBurden",
+    "atheism-predates-darwin:precisionClarity",
+    "atheism-predates-darwin:calibrationCharity",
+    "eye-adaptation-evidence:responsiveness",
+    "eye-adaptation-evidence:assessmentConfidence",
+    "science-self-corrects-and-works:precisionClarity",
+    "atheism-lacks-objective-morality:logicalCoherence",
+    "worldviews-have-moral-consequences:assessmentConfidence",
+    "incarnation-solidarity-answer:evidenceWarrant",
+    "fossil-record-limits-common-descent:assessmentConfidence",
+    "cosmic-waste-and-god-projection:assessmentConfidence",
+    "mother-teresa-defense:responsiveness",
+    "mother-teresa-poverty-counter:evidenceWarrant",
+    "nazism-not-secular-counter:evidenceWarrant",
+    "certainty-undermines-inquiry:responsiveness",
+    "burdenCompletionAdjustment:pro",
+    "burdenCompletionAdjustment:con"
+  ],
+  "instructions": [
+    "Read the entire anonymous dispute packet, all attached move evidence, complete frozen inventory and required controls. The complete indexed transcript is allowed for source context, not to create additional disputes. Read in bounded untruncated calls; separately read any omitted/truncated portion before submission.",
+    "Resolve only the supplied disputes in packet order, selecting option-a or option-b exactly as provided. Do not change an option, manufacture a compromise, calculate aggregate scores, choose a winner, review non-disputed ratings, or author publication prose/tags.",
+    "Use the locked rubric and exact source. Account for adopted burdens, concessions, and independent argumentative consequences without double penalties. The host exclusions receive no credit or penalty. Caption artifacts are not participant defects. The audio record explicitly describes any limited independent-transcription checks; it does not claim direct listening or complete-debate audio verification. Read each supplemental resolution when relevant. Report any remaining material source conflict instead of assuming it resolved.",
+    "Do not read primary judgment outputs, execution metadata revealing identities, disagreement extraction source files, other debates, scores, legacy prose, inventories from failed attempts, or external research. Inputs here contain anonymous options and score-blind source only.",
+    "Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shells. No credentials, paid API, network, Git changes, new agents, or temporary files. One attempt, no retries, one final absolute apply_patch output only. Never write a placeholder. Run validateStandaloneAdjudication on the full in-memory draft and packet before submitting; fix only pre-submission drafting errors in memory."
+  ],
+  "outputShape": {
+    "schemaVersion": "1.0-standalone-dispute-adjudication",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "debateNumber": "263",
+    "debateId": "dembski-hitchens-good-god-existence-2010",
+    "reviewerRole": "isolated-dispute-only-adjudicator",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "isolation": {
+      "passIdentitiesUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "publicationProseUnavailable": true,
+      "otherDebatesUnavailable": true,
+      "contaminationDetected": false
+    },
+    "resolutions": [
+      {
+        "disputeId": "each exact packet ID once in packet order",
+        "selectedOption": "option-a or option-b",
+        "rationale": "source-specific at least40characters"
+      }
+    ],
+    "readingAuthentication": {
+      "packetReadCompletely": true,
+      "inventoryReadCompletely": true,
+      "sourceRangesRead": "actual ranges only",
+      "controlsRead": "actual controls",
+      "audioPerformed": false,
+      "directCostUsd": 0
+    }
+  }
+}

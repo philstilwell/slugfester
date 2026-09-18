@@ -1,0 +1,923 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e1635] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e1636]:
+    - link "Slugfester home" [ref=e1637] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e1638]: Slugfester
+    - navigation "Primary" [ref=e1639]:
+      - link "Debates" [ref=e1640] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=e1641] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e1642] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e1643] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e1644] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=e1645] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=e1647] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=e1648]: ▾
+  - main [active] [ref=e1649]:
+    - generic [ref=e1650]:
+      - generic [ref=e1651]:
+        - paragraph [ref=e1652]: Search scorecards
+        - heading "Find debates" [level=1] [ref=e1653]
+      - status [ref=e1654]: 263 of 263 debates
+    - region "Search filters" [ref=e1655]:
+      - search [ref=e1656]:
+        - generic [ref=e1657]: Search text
+        - generic [ref=e1658]:
+          - searchbox "Search text" [ref=e1659]
+          - button "Apply" [ref=e1660]
+      - group [ref=e1661]:
+        - generic "+ Interlocutor photos & filters Click here to browse participant photos and choose who to include in your search. Any" [ref=e1662] [cursor=pointer]:
+          - text: +
+          - generic [ref=e1664]:
+            - strong [ref=e1665]: Interlocutor photos & filters
+            - generic [ref=e1666]: Click here to browse participant photos and choose who to include in your search.
+          - generic [ref=e1667]: Any
+    - region [ref=e1668]:
+      - generic [ref=e1669]:
+        - paragraph [ref=e1670]: "Matches: all debates"
+        - heading "Debates" [level=2] [ref=e1671]
+      - navigation "Search results above results pagination" [ref=e1672]:
+        - generic [ref=e1673]: Showing 1-24 of 263 debates
+        - generic [ref=e1674]:
+          - generic [ref=e1675]: Previous
+          - generic [ref=e1676]:
+            - generic [ref=e1677]: "1"
+            - link "Page 2" [ref=e1678] [cursor=pointer]:
+              - /url: /search/?page=2
+              - text: "2"
+            - generic [aria-hidden] [ref=e1679]: …
+            - link "Page 11" [ref=e1680] [cursor=pointer]:
+              - /url: /search/?page=11
+              - text: "11"
+          - link "Next" [ref=e1681] [cursor=pointer]:
+            - /url: /search/?page=2
+      - generic [ref=e1682]:
+        - article [ref=e1683]:
+          - generic [ref=e1684]:
+            - generic [ref=e1685]:
+              - generic "Debate 01" [ref=e1686]: "01"
+              - generic [ref=e1687]: Christian theism and suffering
+            - generic [ref=e1688]: 1 hr 49 min
+          - generic [ref=e1689]:
+            - generic [ref=e1690]:
+              - heading [level=3] [ref=e1691]:
+                - 'link "Alex O''Connor vs William Lane Craig: Does God Exist? Debate year 2026" [ref=e1692] [cursor=pointer]':
+                  - /url: /debate/craig-oconnor-god-debate-2026/
+                  - text: "Alex O'Connor vs William Lane Craig: Does God Exist?"
+                  - generic "Debate year 2026" [ref=e1693]: "2026"
+              - paragraph [ref=e1694]: Does God exist, and do cosmology, fine-tuning, morality, resurrection, and suffering support or undermine Christian theism?
+              - paragraph [ref=e1695]: Craig presented a cumulative Christian case, while O'Connor's calibrated challenges concerning fine-tuning, animal suffering, and Christian specificity proved especially effective.
+            - generic "Interlocutors" [ref=e1696]:
+              - link "Open William Lane Craig's interlocutor profile" [ref=e1697] [cursor=pointer]:
+                - /url: /interlocutor/william-lane-craig/
+                - generic [ref=e1698]: William Lane Craig
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e1699] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e1700]: Alex O'Connor
+          - generic "Overall scores" [ref=e1701]:
+            - generic [ref=e1702]:
+              - generic [ref=e1703]: Theist
+              - strong [ref=e1704]: "76"
+            - generic [ref=e1706]:
+              - generic [ref=e1707]: Agnostic atheist
+              - strong [ref=e1708]: "82"
+          - generic [ref=e1710]:
+            - link "Open Debate Assessment" [ref=e1711] [cursor=pointer]:
+              - /url: /debate/craig-oconnor-god-debate-2026/
+            - link "YouTube Source" [ref=e1712] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=TAW6-_L4z9M
+        - article [ref=e1713]:
+          - generic [ref=e1714]:
+            - generic [ref=e1715]:
+              - generic "Debate 02" [ref=e1716]: "02"
+              - generic [ref=e1717]: Christian theism and atheism
+            - generic [ref=e1718]: 2 hr 27 min
+          - generic [ref=e1719]:
+            - generic [ref=e1720]:
+              - heading [level=3] [ref=e1721]:
+                - 'link "William Lane Craig vs Christopher Hitchens: Does God Exist? Debate year 2009" [ref=e1722] [cursor=pointer]':
+                  - /url: /debate/craig-hitchens-god-existence-2009/
+                  - text: "William Lane Craig vs Christopher Hitchens: Does God Exist?"
+                  - generic "Debate year 2009" [ref=e1723]: "2009"
+              - paragraph [ref=e1724]: Does God exist, and do cosmology, fine-tuning, morality, resurrection, suffering, and religion's record make Christian theism more plausible than atheism?
+              - paragraph [ref=e1725]: Craig advances a cumulative Christian case; Hitchens presses evidential burdens, inferential gaps, suffering, religious authority, and secular alternatives with greater consistency.
+            - generic "Interlocutors" [ref=e1726]:
+              - link "Open William Lane Craig's interlocutor profile" [ref=e1727] [cursor=pointer]:
+                - /url: /interlocutor/william-lane-craig/
+                - generic [ref=e1728]: William Lane Craig
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e1729] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e1730]: Christopher Hitchens
+          - generic "Overall scores" [ref=e1731]:
+            - generic [ref=e1732]:
+              - generic [ref=e1733]: Christian theist
+              - strong [ref=e1734]: "78"
+            - generic [ref=e1736]:
+              - generic [ref=e1737]: Atheist critic
+              - strong [ref=e1738]: "82"
+          - generic [ref=e1740]:
+            - link "Open Debate Assessment" [ref=e1741] [cursor=pointer]:
+              - /url: /debate/craig-hitchens-god-existence-2009/
+            - link "YouTube Source" [ref=e1742] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=0tYm41hb48o
+        - article [ref=e1743]:
+          - generic [ref=e1744]:
+            - generic [ref=e1745]:
+              - generic "Debate 03" [ref=e1746]: "03"
+              - generic [ref=e1747]: Religion and public reason
+            - generic [ref=e1748]: 1 hr 48 min
+          - generic [ref=e1749]:
+            - generic [ref=e1750]:
+              - heading [level=3] [ref=e1751]:
+                - 'link "Christopher Hitchens vs Dinesh D''Souza: Is Religion the Problem? Debate year 2010" [ref=e1752] [cursor=pointer]':
+                  - /url: /debate/hitchens-dsouza-religion-problem-2010/
+                  - text: "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?"
+                  - generic "Debate year 2010" [ref=e1753]: "2010"
+              - paragraph [ref=e1754]: Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?
+              - paragraph [ref=e1755]: Hitchens challenged revelation, supernatural explanation, and religious authority; D'Souza defended theism through comparative explanation, design, morality, purpose, and human agency.
+            - generic "Interlocutors" [ref=e1756]:
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e1757] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e1758]: Christopher Hitchens
+              - link "Open Dinesh D'Souza's interlocutor profile" [ref=e1759] [cursor=pointer]:
+                - /url: /interlocutor/dinesh-d-souza/
+                - generic [ref=e1760]: Dinesh D'Souza
+          - generic "Overall scores" [ref=e1761]:
+            - generic [ref=e1762]:
+              - generic [ref=e1763]: Religion is the problem
+              - strong [ref=e1764]: "83"
+            - generic [ref=e1766]:
+              - generic [ref=e1767]: God explains the problem
+              - strong [ref=e1768]: "75"
+          - generic [ref=e1770]:
+            - link "Open Debate Assessment" [ref=e1771] [cursor=pointer]:
+              - /url: /debate/hitchens-dsouza-religion-problem-2010/
+            - link "YouTube Source" [ref=e1772] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=9V85OykSDT8
+        - article [ref=e1773]:
+          - generic [ref=e1774]:
+            - generic [ref=e1775]:
+              - generic "Debate 04" [ref=e1776]: "04"
+              - generic [ref=e1777]: Science and explanation
+            - generic [ref=e1778]: 1 hr 38 min
+          - generic [ref=e1779]:
+            - generic [ref=e1780]:
+              - heading [level=3] [ref=e1781]:
+                - 'link "John Lennox vs Peter Atkins: Can Science Explain Everything? Debate year 2019" [ref=e1782] [cursor=pointer]':
+                  - /url: /debate/lennox-atkins-science-explain-everything-2019/
+                  - text: "John Lennox vs Peter Atkins: Can Science Explain Everything?"
+                  - generic "Debate year 2019" [ref=e1783]: "2019"
+              - paragraph [ref=e1784]: Can science explain everything worth explaining, or do rationality, miracles, purpose, origins, morality, and meaning require a different kind of explanation?
+              - paragraph [ref=e1785]: Lennox defended explanatory pluralism across purpose, rationality, miracles, origins, and ethics, while Atkins pressed public evidence, natural sufficiency, and scientific progress.
+            - generic "Interlocutors" [ref=e1786]:
+              - link "Open John Lennox's interlocutor profile" [ref=e1787] [cursor=pointer]:
+                - /url: /interlocutor/john-lennox/
+                - generic [ref=e1788]: John Lennox
+              - link "Open Peter Atkins's interlocutor profile" [ref=e1789] [cursor=pointer]:
+                - /url: /interlocutor/peter-atkins/
+                - generic [ref=e1790]: Peter Atkins
+          - generic "Overall scores" [ref=e1791]:
+            - generic [ref=e1792]:
+              - generic [ref=e1793]: Science has limits
+              - strong [ref=e1794]: "84"
+            - generic [ref=e1796]:
+              - generic [ref=e1797]: Science explains reality
+              - strong [ref=e1798]: "77"
+          - generic [ref=e1800]:
+            - link "Open Debate Assessment" [ref=e1801] [cursor=pointer]:
+              - /url: /debate/lennox-atkins-science-explain-everything-2019/
+            - link "YouTube Source" [ref=e1802] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=fSYwCaFkYno
+        - article [ref=e1803]:
+          - generic [ref=e1804]:
+            - generic [ref=e1805]:
+              - generic "Debate 05" [ref=e1806]: "05"
+              - generic [ref=e1807]: Logic and presuppositions
+            - generic [ref=e1808]: 1 hr 55 min
+          - generic [ref=e1809]:
+            - generic [ref=e1810]:
+              - heading [level=3] [ref=e1811]:
+                - 'link "Matt Dillahunty vs Sye Ten Bruggencate: Is It Reasonable to Believe God Exists? Debate year 2014" [ref=e1812] [cursor=pointer]':
+                  - /url: /debate/dillahunty-ten-bruggencate-reasonable-god-2014/
+                  - text: "Matt Dillahunty vs Sye Ten Bruggencate: Is It Reasonable to Believe God Exists?"
+                  - generic "Debate year 2014" [ref=e1813]: "2014"
+              - paragraph [ref=e1814]: Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?
+              - paragraph [ref=e1815]: Dillahunty’s fallibilist evidential method consistently outperformed Ten Bruggencate’s presuppositional case, whose challenges identified foundational problems but rarely demonstrated Christianity’s exclusive necessity.
+            - generic "Interlocutors" [ref=e1816]:
+              - link "Open Sye Ten Bruggencate's interlocutor profile" [ref=e1817] [cursor=pointer]:
+                - /url: /interlocutor/sye-ten-bruggencate/
+                - generic [ref=e1818]: Sye Ten Bruggencate
+              - link "Open Matt Dillahunty's interlocutor profile" [ref=e1819] [cursor=pointer]:
+                - /url: /interlocutor/matt-dillahunty/
+                - generic [ref=e1820]: Matt Dillahunty
+          - generic "Overall scores" [ref=e1821]:
+            - generic [ref=e1822]:
+              - generic [ref=e1823]: Presuppositional theist
+              - strong [ref=e1824]: "64"
+            - generic [ref=e1826]:
+              - generic [ref=e1827]: Skeptical atheist
+              - strong [ref=e1828]: "88"
+          - generic [ref=e1830]:
+            - link "Open Debate Assessment" [ref=e1831] [cursor=pointer]:
+              - /url: /debate/dillahunty-ten-bruggencate-reasonable-god-2014/
+            - link "YouTube Source" [ref=e1832] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=OL8LREmbDi0
+        - article [ref=e1833]:
+          - generic [ref=e1834]:
+            - generic [ref=e1835]:
+              - generic "Debate 06" [ref=e1836]: "06"
+              - generic [ref=e1837]: Theism and public reason
+            - generic [ref=e1838]: 1 hr 59 min
+          - generic [ref=e1839]:
+            - generic [ref=e1840]:
+              - heading [level=3] [ref=e1841]:
+                - 'link "Dinesh D''Souza vs Matt Dillahunty: Does God Exist? What Is a Woman? Debate year 2023" [ref=e1842] [cursor=pointer]':
+                  - /url: /debate/dsouza-dillahunty-god-woman-2023/
+                  - text: "Dinesh D'Souza vs Matt Dillahunty: Does God Exist? What Is a Woman?"
+                  - generic "Debate year 2023" [ref=e1843]: "2023"
+              - paragraph [ref=e1844]: Should beliefs about God, gender, politics, and social welfare be guided by faith-informed inference, empirical evidence, or secular-humanist consequences?
+              - paragraph [ref=e1845]: D'Souza defended faith-informed inference, biological institutions, and market incentives; Dillahunty answered with evidential burdens, institutional neutrality, and consequence-focused social welfare.
+            - generic "Interlocutors" [ref=e1846]:
+              - link "Open Dinesh D'Souza's interlocutor profile" [ref=e1847] [cursor=pointer]:
+                - /url: /interlocutor/dinesh-d-souza/
+                - generic [ref=e1848]: Dinesh D'Souza
+              - link "Open Matt Dillahunty's interlocutor profile" [ref=e1849] [cursor=pointer]:
+                - /url: /interlocutor/matt-dillahunty/
+                - generic [ref=e1850]: Matt Dillahunty
+          - generic "Overall scores" [ref=e1851]:
+            - generic [ref=e1852]:
+              - generic [ref=e1853]: Theistic conservative
+              - strong [ref=e1854]: "77"
+            - generic [ref=e1856]:
+              - generic [ref=e1857]: Secular humanist
+              - strong [ref=e1858]: "87"
+          - generic [ref=e1860]:
+            - link "Open Debate Assessment" [ref=e1861] [cursor=pointer]:
+              - /url: /debate/dsouza-dillahunty-god-woman-2023/
+            - link "YouTube Source" [ref=e1862] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=mEM1AhlH9eI
+        - article [ref=e1863]:
+          - generic [ref=e1864]:
+            - generic [ref=e1865]:
+              - generic "Debate 07" [ref=e1866]: "07"
+              - generic [ref=e1867]: New Testament christology
+            - generic [ref=e1868]: 2 hr 22 min
+          - generic [ref=e1869]:
+            - generic [ref=e1870]:
+              - heading [level=3] [ref=e1871]:
+                - 'link "David Wood vs Alex O''Connor: Did Jesus Claim to Be God? Debate year 2025" [ref=e1872] [cursor=pointer]':
+                  - /url: /debate/wood-oconnor-jesus-claim-god-2025/
+                  - text: "David Wood vs Alex O'Connor: Did Jesus Claim to Be God?"
+                  - generic "Debate year 2025" [ref=e1873]: "2025"
+              - paragraph [ref=e1874]: Did Jesus personally claim divine identity, or do the relevant texts better show delegated authority, divine name-bearing, and later high christology?
+              - paragraph [ref=e1875]: Wood built a cumulative divine-identity case, while O'Connor more consistently showed that agency, delegation, and later devotion underdetermine Jesus's personal self-claim.
+            - generic "Interlocutors" [ref=e1876]:
+              - link "Open David Wood's interlocutor profile" [ref=e1877] [cursor=pointer]:
+                - /url: /interlocutor/david-wood/
+                - generic [ref=e1878]: David Wood
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e1879] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e1880]: Alex O'Connor
+          - generic "Overall scores" [ref=e1881]:
+            - generic [ref=e1882]:
+              - generic [ref=e1883]: Affirmative
+              - strong [ref=e1884]: "83"
+            - generic [ref=e1886]:
+              - generic [ref=e1887]: Critical reader
+              - strong [ref=e1888]: "90"
+          - generic [ref=e1890]:
+            - link "Open Debate Assessment" [ref=e1891] [cursor=pointer]:
+              - /url: /debate/wood-oconnor-jesus-claim-god-2025/
+            - link "YouTube Source" [ref=e1892] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=_hrN4Mn8m1w
+        - article [ref=e1893]:
+          - generic [ref=e1894]:
+            - generic [ref=e1895]:
+              - generic "Debate 08" [ref=e1896]: "08"
+              - generic [ref=e1897]: Science, morality, and God
+            - generic [ref=e1898]: 2 hr 17 min
+          - generic [ref=e1899]:
+            - generic [ref=e1900]:
+              - heading [level=3] [ref=e1901]:
+                - 'link "David Wood vs Michael Shermer: Does God Exist? Debate year 2022" [ref=e1902] [cursor=pointer]':
+                  - /url: /debate/wood-shermer-god-exist-2022/
+                  - text: "David Wood vs Michael Shermer: Does God Exist?"
+                  - generic "Debate year 2022" [ref=e1903]: "2022"
+              - paragraph [ref=e1904]: Does science, morality, evil, and explanatory method support theism more strongly than skeptical naturalism?
+              - paragraph [ref=e1905]: Wood defended theism through intelligibility, moral grounding, and wider eschatological context; Shermer prevailed through empirical discrimination, natural mechanisms, secular morality, and suffering.
+            - generic "Interlocutors" [ref=e1906]:
+              - link "Open David Wood's interlocutor profile" [ref=e1907] [cursor=pointer]:
+                - /url: /interlocutor/david-wood/
+                - generic [ref=e1908]: David Wood
+              - link "Open Michael Shermer's interlocutor profile" [ref=e1909] [cursor=pointer]:
+                - /url: /interlocutor/michael-shermer/
+                - generic [ref=e1910]: Michael Shermer
+          - generic "Overall scores" [ref=e1911]:
+            - generic [ref=e1912]:
+              - generic [ref=e1913]: Theist
+              - strong [ref=e1914]: "73"
+            - generic [ref=e1916]:
+              - generic [ref=e1917]: Skeptic
+              - strong [ref=e1918]: "80"
+          - generic [ref=e1920]:
+            - link "Open Debate Assessment" [ref=e1921] [cursor=pointer]:
+              - /url: /debate/wood-shermer-god-exist-2022/
+            - link "YouTube Source" [ref=e1922] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=xKd2Ht5Bs-k
+        - article [ref=e1923]:
+          - generic [ref=e1924]:
+            - generic [ref=e1925]:
+              - generic "Debate 09" [ref=e1926]: "09"
+              - generic [ref=e1927]: God and religious meaning
+            - generic [ref=e1928]: 1 hr 39 min
+          - generic [ref=e1929]:
+            - generic [ref=e1930]:
+              - heading [level=3] [ref=e1931]:
+                - 'link "Jordan Peterson vs Matt Dillahunty: The Greatest God Debate In History Debate year 2023" [ref=e1932] [cursor=pointer]':
+                  - /url: /debate/peterson-dillahunty-god-debate-2023/
+                  - text: "Jordan Peterson vs Matt Dillahunty: The Greatest God Debate In History"
+                  - generic "Debate year 2023" [ref=e1933]: "2023"
+              - paragraph [ref=e1934]: Does God-language name a real supernatural being, or does it function mainly as a religious, moral, and psychological substrate for meaning?
+              - paragraph [ref=e1935]: Peterson defended religious experience, narrative, and ultimate value as meaning-bearing realities; Dillahunty separated those functions from warranted belief in supernatural agency.
+            - generic "Interlocutors" [ref=e1936]:
+              - link "Open Jordan Peterson's interlocutor profile" [ref=e1937] [cursor=pointer]:
+                - /url: /interlocutor/jordan-peterson/
+                - generic [ref=e1938]: Jordan Peterson
+              - link "Open Matt Dillahunty's interlocutor profile" [ref=e1939] [cursor=pointer]:
+                - /url: /interlocutor/matt-dillahunty/
+                - generic [ref=e1940]: Matt Dillahunty
+          - generic "Overall scores" [ref=e1941]:
+            - generic [ref=e1942]:
+              - generic [ref=e1943]: Religious pragmatist
+              - strong [ref=e1944]: "73"
+            - generic [ref=e1946]:
+              - generic [ref=e1947]: Secular skeptic
+              - strong [ref=e1948]: "89"
+          - generic [ref=e1950]:
+            - link "Open Debate Assessment" [ref=e1951] [cursor=pointer]:
+              - /url: /debate/peterson-dillahunty-god-debate-2023/
+            - link "YouTube Source" [ref=e1952] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=9nQUg4QeI_Y
+        - article [ref=e1953]:
+          - generic [ref=e1954]:
+            - generic [ref=e1955]:
+              - generic "Debate 10" [ref=e1956]: "10"
+              - generic [ref=e1957]: Moral foundations
+            - generic [ref=e1958]: 2 hr 07 min
+          - generic [ref=e1959]:
+            - generic [ref=e1960]:
+              - heading [level=3] [ref=e1961]:
+                - 'link "William Lane Craig vs Sam Harris: The God Debate II Debate year 2011" [ref=e1962] [cursor=pointer]':
+                  - /url: /debate/craig-harris-moral-foundations-2011/
+                  - text: "William Lane Craig vs Sam Harris: The God Debate II"
+                  - generic "Debate year 2011" [ref=e1963]: "2011"
+              - paragraph [ref=e1964]: Are the foundations of moral values and duties natural or supernatural?
+              - paragraph [ref=e1965]: Craig defended divine nature and commands as morality's foundation; Harris grounded value in conscious well-being, producing evenly matched strengths and unresolved explanatory burdens.
+            - generic "Interlocutors" [ref=e1966]:
+              - link "Open William Lane Craig's interlocutor profile" [ref=e1967] [cursor=pointer]:
+                - /url: /interlocutor/william-lane-craig/
+                - generic [ref=e1968]: William Lane Craig
+              - link "Open Sam Harris's interlocutor profile" [ref=e1969] [cursor=pointer]:
+                - /url: /interlocutor/sam-harris/
+                - generic [ref=e1970]: Sam Harris
+          - generic "Overall scores" [ref=e1971]:
+            - generic [ref=e1972]:
+              - generic [ref=e1973]: Supernatural foundation
+              - strong [ref=e1974]: "79"
+            - generic [ref=e1976]:
+              - generic [ref=e1977]: Natural foundation
+              - strong [ref=e1978]: "79"
+          - generic [ref=e1980]:
+            - link "Open Debate Assessment" [ref=e1981] [cursor=pointer]:
+              - /url: /debate/craig-harris-moral-foundations-2011/
+            - link "YouTube Source" [ref=e1982] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=yqaHXKLRKzg
+        - article [ref=e1983]:
+          - generic [ref=e1984]:
+            - generic [ref=e1985]:
+              - generic "Debate 11" [ref=e1986]: "11"
+              - generic [ref=e1987]: Problem of evil
+            - generic [ref=e1988]: 1 hr 35 min
+          - generic [ref=e1989]:
+            - generic [ref=e1990]:
+              - heading [level=3] [ref=e1991]:
+                - 'link "Dinesh D''Souza vs Bart Ehrman: God, Suffering, and Evil Debate year 2025" [ref=e1992] [cursor=pointer]':
+                  - /url: /debate/dsouza-ehrman-god-suffering-evil-2025/
+                  - text: "Dinesh D'Souza vs Bart Ehrman: God, Suffering, and Evil"
+                  - generic "Debate year 2025" [ref=e1993]: "2025"
+              - paragraph [ref=e1994]: Can belief in a loving, powerful God survive the scale of suffering and evil in the world?
+              - paragraph [ref=e1995]: D'Souza defended theistic compatibility through epistemic limits, freedom, and natural order; Ehrman pressed suffering's scale, preventability, and unexplained intervention gap.
+            - generic "Interlocutors" [ref=e1996]:
+              - link "Open Dinesh D'Souza's interlocutor profile" [ref=e1997] [cursor=pointer]:
+                - /url: /interlocutor/dinesh-d-souza/
+                - generic [ref=e1998]: Dinesh D'Souza
+              - link "Open Bart Ehrman's interlocutor profile" [ref=e1999] [cursor=pointer]:
+                - /url: /interlocutor/bart-ehrman/
+                - generic [ref=e2000]: Bart Ehrman
+          - generic "Overall scores" [ref=e2001]:
+            - generic [ref=e2002]:
+              - generic [ref=e2003]: Theistic answer
+              - strong [ref=e2004]: "79"
+            - generic [ref=e2006]:
+              - generic [ref=e2007]: Skeptical challenge
+              - strong [ref=e2008]: "87"
+          - generic [ref=e2010]:
+            - link "Open Debate Assessment" [ref=e2011] [cursor=pointer]:
+              - /url: /debate/dsouza-ehrman-god-suffering-evil-2025/
+            - link "YouTube Source" [ref=e2012] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=XtWjEjdYvLA
+        - article [ref=e2013]:
+          - generic [ref=e2014]:
+            - generic [ref=e2015]:
+              - generic "Debate 12" [ref=e2016]: "12"
+              - generic [ref=e2017]: Evidence and presuppositions
+            - generic [ref=e2018]: 1 hr 05 min
+          - generic [ref=e2019]:
+            - generic [ref=e2020]:
+              - heading [level=3] [ref=e2021]:
+                - 'link "Joel Settecase vs Tom Jump: Is There Evidence for God? Debate year 2025" [ref=e2022] [cursor=pointer]':
+                  - /url: /debate/settecase-jump-evidence-for-god-2025/
+                  - text: "Joel Settecase vs Tom Jump: Is There Evidence for God?"
+                  - generic "Debate year 2025" [ref=e2023]: "2025"
+              - paragraph [ref=e2024]: Does evidence for God exist, or are logic, mathematics, and intelligibility better explained without Christian theism?
+              - paragraph [ref=e2025]: Settecase exposed gaps between self-certainty and universal necessity, while Jump effectively separated objective relations from descriptions and challenged divine sustenance.
+            - generic "Interlocutors" [ref=e2026]:
+              - link "Open Joel Settecase's interlocutor profile" [ref=e2027] [cursor=pointer]:
+                - /url: /interlocutor/joel-settecase/
+                - generic [ref=e2028]: Joel Settecase
+              - link "Open Tom Jump's interlocutor profile" [ref=e2029] [cursor=pointer]:
+                - /url: /interlocutor/tom-jump/
+                - generic [ref=e2030]: Tom Jump
+          - generic "Overall scores" [ref=e2031]:
+            - generic [ref=e2032]:
+              - generic [ref=e2033]: Christian theism
+              - strong [ref=e2034]: "84"
+            - generic [ref=e2036]:
+              - generic [ref=e2037]: Atheist naturalism
+              - strong [ref=e2038]: "78"
+          - generic [ref=e2040]:
+            - link "Open Debate Assessment" [ref=e2041] [cursor=pointer]:
+              - /url: /debate/settecase-jump-evidence-for-god-2025/
+            - link "YouTube Source" [ref=e2042] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=XLcRd3RjdjA
+        - article [ref=e2043]:
+          - generic [ref=e2044]:
+            - generic [ref=e2045]:
+              - generic "Debate 13" [ref=e2046]: "13"
+              - generic [ref=e2047]: Christian ethics
+            - generic [ref=e2048]: 51 min
+          - generic [ref=e2049]:
+            - generic [ref=e2050]:
+              - heading [level=3] [ref=e2051]:
+                - 'link "Cliffe Knechtle vs Alex O''Connor: Christianity, Scripture, and Morality Debate year 2025" [ref=e2052] [cursor=pointer]':
+                  - /url: /debate/knechtle-oconnor-christian-morality-2025/
+                  - text: "Cliffe Knechtle vs Alex O'Connor: Christianity, Scripture, and Morality"
+                  - generic "Debate year 2025" [ref=e2053]: "2025"
+              - paragraph [ref=e2054]: Can Christianity's claims about forgiveness, morality, divine judgment, conquest, and slavery withstand skeptical objections?
+              - paragraph [ref=e2055]: Knechtle presents Christianity as redemptive and context-sensitive, while O'Connor presses evidential, moral, slavery, and gender objections through specific scriptural counterexamples.
+            - generic "Interlocutors" [ref=e2056]:
+              - link "Open Cliffe Knechtle's interlocutor profile" [ref=e2057] [cursor=pointer]:
+                - /url: /interlocutor/cliffe-knechtle/
+                - generic [ref=e2058]: Cliffe Knechtle
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e2059] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e2060]: Alex O'Connor
+          - generic "Overall scores" [ref=e2061]:
+            - generic [ref=e2062]:
+              - generic [ref=e2063]: Christian defense
+              - strong [ref=e2064]: "76"
+            - generic [ref=e2066]:
+              - generic [ref=e2067]: Skeptical critique
+              - strong [ref=e2068]: "87"
+          - generic [ref=e2070]:
+            - link "Open Debate Assessment" [ref=e2071] [cursor=pointer]:
+              - /url: /debate/knechtle-oconnor-christian-morality-2025/
+            - link "YouTube Source" [ref=e2072] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=r8RZarGC8B4
+        - article [ref=e2073]:
+          - generic [ref=e2074]:
+            - generic [ref=e2075]:
+              - generic "Debate 14" [ref=e2076]: "14"
+              - generic [ref=e2077]: God and naturalism
+            - generic [ref=e2078]: 1 hr 55 min
+          - generic [ref=e2079]:
+            - generic [ref=e2080]:
+              - heading [level=3] [ref=e2081]:
+                - 'link "Michael Jones vs Richard Carrier: Does God Exist? Debate year 2025" [ref=e2082] [cursor=pointer]':
+                  - /url: /debate/jones-carrier-god-existence-2025/
+                  - text: "Michael Jones vs Richard Carrier: Does God Exist?"
+                  - generic "Debate year 2025" [ref=e2083]: "2025"
+              - paragraph [ref=e2084]: Does the evidence from consciousness, emergence, morality, and cosmology make theism more plausible than naturalism?
+              - paragraph [ref=e2085]: Jones and Carrier closely contest whether consciousness, cosmic structure, morality, and origins comparatively favor theistic idealism or secular naturalism.
+            - generic "Interlocutors" [ref=e2086]:
+              - link "Open Michael Jones's interlocutor profile" [ref=e2087] [cursor=pointer]:
+                - /url: /interlocutor/michael-jones/
+                - generic [ref=e2088]: Michael Jones
+              - link "Open Richard Carrier's interlocutor profile" [ref=e2089] [cursor=pointer]:
+                - /url: /interlocutor/richard-carrier/
+                - generic [ref=e2090]: Richard Carrier
+          - generic "Overall scores" [ref=e2091]:
+            - generic [ref=e2092]:
+              - generic [ref=e2093]: Theistic idealism
+              - strong [ref=e2094]: "74"
+            - generic [ref=e2096]:
+              - generic [ref=e2097]: Secular naturalism
+              - strong [ref=e2098]: "73"
+          - generic [ref=e2100]:
+            - link "Open Debate Assessment" [ref=e2101] [cursor=pointer]:
+              - /url: /debate/jones-carrier-god-existence-2025/
+            - link "YouTube Source" [ref=e2102] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=Ht_SVm0GWBs
+        - article [ref=e2103]:
+          - generic [ref=e2104]:
+            - generic [ref=e2105]:
+              - generic "Debate 15" [ref=e2106]: "15"
+              - generic [ref=e2107]: God and anti-theism
+            - generic [ref=e2108]: 1 hr 53 min
+          - generic [ref=e2109]:
+            - generic [ref=e2110]:
+              - heading [level=3] [ref=e2111]:
+                - 'link "Christopher Hitchens vs John Lennox: Is God Great? Debate year 2017" [ref=e2112] [cursor=pointer]':
+                  - /url: /debate/hitchens-lennox-is-god-great-2017/
+                  - text: "Christopher Hitchens vs John Lennox: Is God Great?"
+                  - generic "Debate year 2017" [ref=e2113]: "2017"
+              - paragraph [ref=e2114]: Is God great, and does Christian theism better explain science, morality, dignity, and hope than Hitchens's anti-theistic critique?
+              - paragraph [ref=e2115]: Lennox defended Christian explanatory foundations and redemptive hope; Hitchens pressed stronger challenges concerning revelation, secular value, suffering, authority, and historical complicity.
+            - generic "Interlocutors" [ref=e2116]:
+              - link "Open John Lennox's interlocutor profile" [ref=e2117] [cursor=pointer]:
+                - /url: /interlocutor/john-lennox/
+                - generic [ref=e2118]: John Lennox
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e2119] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e2120]: Christopher Hitchens
+          - generic "Overall scores" [ref=e2121]:
+            - generic [ref=e2122]:
+              - generic [ref=e2123]: Christian theism
+              - strong [ref=e2124]: "77"
+            - generic [ref=e2126]:
+              - generic [ref=e2127]: Anti-theism
+              - strong [ref=e2128]: "81"
+          - generic [ref=e2130]:
+            - link "Open Debate Assessment" [ref=e2131] [cursor=pointer]:
+              - /url: /debate/hitchens-lennox-is-god-great-2017/
+            - link "YouTube Source" [ref=e2132] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=5OXPlUCGScY
+        - article [ref=e2133]:
+          - generic [ref=e2134]:
+            - generic [ref=e2135]:
+              - generic "Debate 16" [ref=e2136]: "16"
+              - generic [ref=e2137]: Faith and civilization
+            - generic [ref=e2138]: 1 hr 07 min
+          - generic [ref=e2139]:
+            - generic [ref=e2140]:
+              - heading [level=3] [ref=e2141]:
+                - 'link "Ayaan Hirsi Ali vs Richard Dawkins: The God Debate Debate year 2024" [ref=e2142] [cursor=pointer]':
+                  - /url: /debate/hirsi-ali-dawkins-god-debate-2024/
+                  - text: "Ayaan Hirsi Ali vs Richard Dawkins: The God Debate"
+                  - generic "Debate year 2024" [ref=e2143]: "2024"
+              - paragraph [ref=e2144]: Can Hirsi Ali's Christian turn be justified by personal experience, truth, and civilizational need, or should Dawkins's atheist truth test reject it?
+              - paragraph [ref=e2145]: Hirsi Ali defended Christian renewal through personal transformation and civilizational need; Dawkins separated those benefits from supernatural truth and challenged religious moral authority.
+            - generic "Interlocutors" [ref=e2146]:
+              - link "Open Ayaan Hirsi Ali's interlocutor profile" [ref=e2147] [cursor=pointer]:
+                - /url: /interlocutor/ayaan-hirsi-ali/
+                - generic [ref=e2148]: Ayaan Hirsi Ali
+              - link "Open Richard Dawkins's interlocutor profile" [ref=e2149] [cursor=pointer]:
+                - /url: /interlocutor/richard-dawkins/
+                - generic [ref=e2150]: Richard Dawkins
+          - generic "Overall scores" [ref=e2151]:
+            - generic [ref=e2152]:
+              - generic [ref=e2153]: Christian renewal
+              - strong [ref=e2154]: "74"
+            - generic [ref=e2156]:
+              - generic [ref=e2157]: Atheist truth test
+              - strong [ref=e2158]: "84"
+          - generic [ref=e2160]:
+            - link "Open Debate Assessment" [ref=e2161] [cursor=pointer]:
+              - /url: /debate/hirsi-ali-dawkins-god-debate-2024/
+            - link "YouTube Source" [ref=e2162] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=DBsHdHMvucs
+        - article [ref=e2163]:
+          - generic [ref=e2164]:
+            - generic [ref=e2165]:
+              - generic "Debate 17" [ref=e2166]: "17"
+              - generic [ref=e2167]: Science and faith
+            - generic [ref=e2168]: 1 hr 47 min
+          - generic [ref=e2169]:
+            - generic [ref=e2170]:
+              - heading [level=3] [ref=e2171]:
+                - 'link "Francis Collins vs Alex O''Connor: Does God Exist? Debate year 2024" [ref=e2172] [cursor=pointer]':
+                  - /url: /debate/collins-oconnor-god-existence-2024/
+                  - text: "Francis Collins vs Alex O'Connor: Does God Exist?"
+                  - generic "Debate year 2024" [ref=e2173]: "2024"
+              - paragraph [ref=e2174]: Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?
+              - paragraph [ref=e2175]: Collins builds a cumulative Christian case from fine-tuning, morality, resurrection, revelation, and beauty, while answering suffering through orderly creation and noncoercive evidence.
+            - generic "Interlocutors" [ref=e2176]:
+              - link "Open Francis Collins's interlocutor profile" [ref=e2177] [cursor=pointer]:
+                - /url: /interlocutor/francis-collins/
+                - generic [ref=e2178]: Francis Collins
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e2179] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e2180]: Alex O'Connor
+          - generic "Overall scores" [ref=e2181]:
+            - generic [ref=e2182]:
+              - generic [ref=e2183]: Christian theism
+              - strong [ref=e2184]: "79"
+            - generic [ref=e2186]:
+              - generic [ref=e2187]: Skeptical agnosticism
+              - strong [ref=e2188]: "88"
+          - generic [ref=e2190]:
+            - link "Open Debate Assessment" [ref=e2191] [cursor=pointer]:
+              - /url: /debate/collins-oconnor-god-existence-2024/
+            - link "YouTube Source" [ref=e2192] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=fXBGvNc2mvU
+        - article [ref=e2193]:
+          - generic [ref=e2194]:
+            - generic [ref=e2195]:
+              - generic "Debate 18" [ref=e2196]: "18"
+              - generic [ref=e2197]: Between God and atheism
+            - generic [ref=e2198]: 1 hr 24 min
+          - generic [ref=e2199]:
+            - generic [ref=e2200]:
+              - heading [level=3] [ref=e2201]:
+                - 'link "Rowan Williams, Philip Goff, Elizabeth Oldfield, and Alex O''Connor: Between God and Atheism Debate year 2024" [ref=e2202] [cursor=pointer]':
+                  - /url: /debate/williams-goff-oldfield-oconnor-between-god-atheism-2024/
+                  - text: "Rowan Williams, Philip Goff, Elizabeth Oldfield, and Alex O'Connor: Between God and Atheism"
+                  - generic "Debate year 2024" [ref=e2203]: "2024"
+              - paragraph [ref=e2204]: Do fine-tuning, suffering, religious experience, practice, and purpose make Christianity or a God-ish hypothesis more plausible than atheist skepticism?
+              - paragraph [ref=e2205]: Williams, Goff, and Oldfield defend traditional, revised, and experiential Christianity; O'Connor presses fine-tuning limits, suffering, Gnosticism, and purpose.
+            - generic "Interlocutors" [ref=e2206]:
+              - link "Open Rowan Williams's interlocutor profile" [ref=e2207] [cursor=pointer]:
+                - /url: /interlocutor/rowan-williams/
+                - generic [ref=e2208]: Rowan Williams
+              - link "Open Philip Goff's interlocutor profile" [ref=e2209] [cursor=pointer]:
+                - /url: /interlocutor/philip-goff/
+                - generic [ref=e2210]: Philip Goff
+              - link "Open Elizabeth Oldfield's interlocutor profile" [ref=e2211] [cursor=pointer]:
+                - /url: /interlocutor/elizabeth-oldfield/
+                - generic [ref=e2212]: Elizabeth Oldfield
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e2213] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e2214]: Alex O'Connor
+          - generic "Overall scores" [ref=e2215]:
+            - generic [ref=e2216]:
+              - generic [ref=e2217]: Christian and God-ish
+              - strong [ref=e2218]: "80"
+            - generic [ref=e2220]:
+              - generic [ref=e2221]: Atheist and skeptical
+              - strong [ref=e2222]: "82"
+          - generic [ref=e2224]:
+            - link "Open Debate Assessment" [ref=e2225] [cursor=pointer]:
+              - /url: /debate/williams-goff-oldfield-oconnor-between-god-atheism-2024/
+            - link "YouTube Source" [ref=e2226] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=9WnOYHi5k4g
+        - article [ref=e2227]:
+          - generic [ref=e2228]:
+            - generic [ref=e2229]:
+              - generic "Debate 19" [ref=e2230]: "19"
+              - generic [ref=e2231]: Moral landscape and emotivism
+            - generic [ref=e2232]: 14 min
+          - generic [ref=e2233]:
+            - generic [ref=e2234]:
+              - heading [level=3] [ref=e2235]:
+                - 'link "Sam Harris vs Alex O''Connor: Objective Morality and Emotivism Debate year 2024" [ref=e2236] [cursor=pointer]':
+                  - /url: /debate/harris-oconnor-objective-morality-2024/
+                  - text: "Sam Harris vs Alex O'Connor: Objective Morality and Emotivism"
+                  - generic "Debate year 2024" [ref=e2237]: "2024"
+              - paragraph [ref=e2238]: Can objective morality be grounded in facts about conscious well-being, or does ethical language reduce to emotive expression plus instrumental science?
+              - paragraph [ref=e2239]: Harris grounds evaluative direction in conscious experience, while O'Connor distinguishes subjective destinations from objective means and denies that flourishing requires moral truth.
+            - generic "Interlocutors" [ref=e2240]:
+              - link "Open Sam Harris's interlocutor profile" [ref=e2241] [cursor=pointer]:
+                - /url: /interlocutor/sam-harris/
+                - generic [ref=e2242]: Sam Harris
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e2243] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e2244]: Alex O'Connor
+          - generic "Overall scores" [ref=e2245]:
+            - generic [ref=e2246]:
+              - generic [ref=e2247]: Moral landscape
+              - strong [ref=e2248]: "77"
+            - generic [ref=e2250]:
+              - generic [ref=e2251]: Emotivist skepticism
+              - strong [ref=e2252]: "88"
+          - generic [ref=e2254]:
+            - link "Open Debate Assessment" [ref=e2255] [cursor=pointer]:
+              - /url: /debate/harris-oconnor-objective-morality-2024/
+            - link "YouTube Source" [ref=e2256] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=_pprQXq1eCA
+        - article [ref=e2257]:
+          - generic [ref=e2258]:
+            - generic [ref=e2259]:
+              - generic "Debate 20" [ref=e2260]: "20"
+              - generic [ref=e2261]: Iraq, God, and moral authority
+            - generic [ref=e2262]: 2 hr 02 min
+          - generic [ref=e2263]:
+            - generic [ref=e2264]:
+              - heading [level=3] [ref=e2265]:
+                - 'link "Christopher Hitchens vs Peter Hitchens: Iraq, God, and Moral Authority Debate year 2008" [ref=e2266] [cursor=pointer]':
+                  - /url: /debate/hitchens-hitchens-iraq-god-2008/
+                  - text: "Christopher Hitchens vs Peter Hitchens: Iraq, God, and Moral Authority"
+                  - generic "Debate year 2008" [ref=e2267]: "2008"
+              - paragraph [ref=e2268]: Was the invasion of Iraq defensible, and does religion supply or corrupt moral authority?
+              - paragraph [ref=e2269]: Christopher Hitchens defends intervention and secular morality; Peter Hitchens challenges Iraq's consequences and argues that binding moral authority requires transcendence.
+            - generic "Interlocutors" [ref=e2270]:
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e2271] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e2272]: Christopher Hitchens
+              - link "Open Peter Hitchens's interlocutor profile" [ref=e2273] [cursor=pointer]:
+                - /url: /interlocutor/peter-hitchens/
+                - generic [ref=e2274]: Peter Hitchens
+          - generic "Overall scores" [ref=e2275]:
+            - generic [ref=e2276]:
+              - generic [ref=e2277]: Intervention and anti-theism
+              - strong [ref=e2278]: "79"
+            - generic [ref=e2280]:
+              - generic [ref=e2281]: Restraint and theism
+              - strong [ref=e2282]: "77"
+          - generic [ref=e2284]:
+            - link "Open Debate Assessment" [ref=e2285] [cursor=pointer]:
+              - /url: /debate/hitchens-hitchens-iraq-god-2008/
+            - link "YouTube Source" [ref=e2286] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=ngjQs_QjSwc
+        - article [ref=e2287]:
+          - generic [ref=e2288]:
+            - generic [ref=e2289]:
+              - generic "Debate 21" [ref=e2290]: "21"
+              - generic [ref=e2291]: God, meaning, and faith
+            - generic [ref=e2292]: 1 hr 32 min
+          - generic [ref=e2293]:
+            - generic [ref=e2294]:
+              - heading [level=3] [ref=e2295]:
+                - 'link "Christopher Hitchens vs Rabbi David Wolpe: The Great God Debate Debate year 2010" [ref=e2296] [cursor=pointer]':
+                  - /url: /debate/hitchens-wolpe-great-god-debate-2010/
+                  - text: "Christopher Hitchens vs Rabbi David Wolpe: The Great God Debate"
+                  - generic "Debate year 2010" [ref=e2297]: "2010"
+              - paragraph [ref=e2298]: Does religious faith reveal God, moral meaning, and human freedom, or does it replace reason with projection, authority, and harmful consolation?
+              - paragraph [ref=e2299]: Hitchens challenges faith through natural explanation, secular morality, scriptural harm, and natural transcendence, while granting uncertainty where atheism cannot conclusively disprove theological possibilities.
+            - generic "Interlocutors" [ref=e2300]:
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e2301] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e2302]: Christopher Hitchens
+              - link "Open Rabbi David Wolpe's interlocutor profile" [ref=e2303] [cursor=pointer]:
+                - /url: /interlocutor/rabbi-david-wolpe/
+                - generic [ref=e2304]: Rabbi David Wolpe
+          - generic "Overall scores" [ref=e2305]:
+            - generic [ref=e2306]:
+              - generic [ref=e2307]: Atheist critique
+              - strong [ref=e2308]: "85"
+            - generic [ref=e2310]:
+              - generic [ref=e2311]: Jewish theism
+              - strong [ref=e2312]: "76"
+          - generic [ref=e2314]:
+            - link "Open Debate Assessment" [ref=e2315] [cursor=pointer]:
+              - /url: /debate/hitchens-wolpe-great-god-debate-2010/
+            - link "YouTube Source" [ref=e2316] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=2kZRAOXEFPI
+        - article [ref=e2317]:
+          - generic [ref=e2318]:
+            - generic [ref=e2319]:
+              - generic "Debate 22" [ref=e2320]: "22"
+              - generic [ref=e2321]: Cosmology, design, and anti-theism
+            - generic [ref=e2322]: 2 hr 12 min
+          - generic [ref=e2323]:
+            - generic [ref=e2324]:
+              - heading [level=3] [ref=e2325]:
+                - 'link "Frank Turek vs Christopher Hitchens: Does God Exist? Debate year 2008" [ref=e2326] [cursor=pointer]':
+                  - /url: /debate/turek-hitchens-god-existence-2008/
+                  - text: "Frank Turek vs Christopher Hitchens: Does God Exist?"
+                  - generic "Debate year 2008" [ref=e2327]: "2008"
+              - paragraph [ref=e2328]: Does God exist, and do cosmology, design, morality, consciousness, and Christian claims outweigh the anti-theist critique of religion?
+              - paragraph [ref=e2329]: Turek advances cumulative theistic explanations, while Hitchens more consistently enforces evidential burdens, challenges Christian specificity, and defends secular moral autonomy.
+            - generic "Interlocutors" [ref=e2330]:
+              - link "Open Frank Turek's interlocutor profile" [ref=e2331] [cursor=pointer]:
+                - /url: /interlocutor/frank-turek/
+                - generic [ref=e2332]: Frank Turek
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e2333] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e2334]: Christopher Hitchens
+          - generic "Overall scores" [ref=e2335]:
+            - generic [ref=e2336]:
+              - generic [ref=e2337]: Christian theism
+              - strong [ref=e2338]: "74"
+            - generic [ref=e2340]:
+              - generic [ref=e2341]: Anti-theism
+              - strong [ref=e2342]: "81"
+          - generic [ref=e2344]:
+            - link "Open Debate Assessment" [ref=e2345] [cursor=pointer]:
+              - /url: /debate/turek-hitchens-god-existence-2008/
+            - link "YouTube Source" [ref=e2346] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=S7WBEJJlYWU
+        - article [ref=e2347]:
+          - generic [ref=e2348]:
+            - generic [ref=e2349]:
+              - generic "Debate 23" [ref=e2350]: "23"
+              - generic [ref=e2351]: Objectivist morality and emotivism
+            - generic [ref=e2352]: 1 hr 33 min
+          - generic [ref=e2353]:
+            - generic [ref=e2354]:
+              - heading [level=3] [ref=e2355]:
+                - 'link "Alex O''Connor vs Craig Biddle: Is Morality Objective? Debate year 2024" [ref=e2356] [cursor=pointer]':
+                  - /url: /debate/oconnor-biddle-objective-morality-2024/
+                  - text: "Alex O'Connor vs Craig Biddle: Is Morality Objective?"
+                  - generic "Debate year 2024" [ref=e2357]: "2024"
+              - paragraph [ref=e2358]: Is morality objectively grounded in the factual requirements of human life, or are moral claims expressions of emotion without truth value?
+              - paragraph [ref=e2359]: Biddle grounds objective morality in life and flourishing; O'Connor argues that conditional valuation cannot establish objective duties, especially toward other people and animals.
+            - generic "Interlocutors" [ref=e2360]:
+              - link "Open Craig Biddle's interlocutor profile" [ref=e2361] [cursor=pointer]:
+                - /url: /interlocutor/craig-biddle/
+                - generic [ref=e2362]: Craig Biddle
+              - link "Open Alex O'Connor's interlocutor profile" [ref=e2363] [cursor=pointer]:
+                - /url: /interlocutor/alex-o-connor/
+                - generic [ref=e2364]: Alex O'Connor
+          - generic "Overall scores" [ref=e2365]:
+            - generic [ref=e2366]:
+              - generic [ref=e2367]: Objectivist morality
+              - strong [ref=e2368]: "82"
+            - generic [ref=e2370]:
+              - generic [ref=e2371]: Emotivist challenge
+              - strong [ref=e2372]: "89"
+          - generic [ref=e2374]:
+            - link "Open Debate Assessment" [ref=e2375] [cursor=pointer]:
+              - /url: /debate/oconnor-biddle-objective-morality-2024/
+            - link "YouTube Source" [ref=e2376] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=A4JGJRmldQE
+        - article [ref=e2377]:
+          - generic [ref=e2378]:
+            - generic [ref=e2379]:
+              - generic "Debate 24" [ref=e2380]: "24"
+              - generic [ref=e2381]: Religion, grace, and secular morality
+            - generic [ref=e2382]: 1 hr 37 min
+          - generic [ref=e2383]:
+            - generic [ref=e2384]:
+              - heading [level=3] [ref=e2385]:
+                - 'link "Christopher Hitchens vs Marvin Olasky: Religion, Grace, and Secular Morality Debate year 2007" [ref=e2386] [cursor=pointer]':
+                  - /url: /debate/hitchens-olasky-religion-grace-2007/
+                  - text: "Christopher Hitchens vs Marvin Olasky: Religion, Grace, and Secular Morality"
+                  - generic "Debate year 2007" [ref=e2387]: "2007"
+              - paragraph [ref=e2388]: Does religion poison everything, or does Christianity provide grace, charity, moral transformation, and historical credibility that defeat that charge?
+              - paragraph [ref=e2389]: Hitchens attacks supernatural authority and religious morality; Olasky counters through Christianity's grace, charitable fruits, historical credibility, and challenges to universal condemnation.
+            - generic "Interlocutors" [ref=e2390]:
+              - link "Open Christopher Hitchens's interlocutor profile" [ref=e2391] [cursor=pointer]:
+                - /url: /interlocutor/christopher-hitchens/
+                - generic [ref=e2392]: Christopher Hitchens
+              - link "Open Marvin Olasky's interlocutor profile" [ref=e2393] [cursor=pointer]:
+                - /url: /interlocutor/marvin-olasky/
+                - generic [ref=e2394]: Marvin Olasky
+          - generic "Overall scores" [ref=e2395]:
+            - generic [ref=e2396]:
+              - generic [ref=e2397]: Anti-theist critique
+              - strong [ref=e2398]: "80"
+            - generic [ref=e2400]:
+              - generic [ref=e2401]: Christian grace
+              - strong [ref=e2402]: "82"
+          - generic [ref=e2404]:
+            - link "Open Debate Assessment" [ref=e2405] [cursor=pointer]:
+              - /url: /debate/hitchens-olasky-religion-grace-2007/
+            - link "YouTube Source" [ref=e2406] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=lcHMSNiI97w
+      - navigation "Search results below results pagination" [ref=e2407]:
+        - generic [ref=e2408]: Showing 1-24 of 263 debates
+        - generic [ref=e2409]:
+          - generic [ref=e2410]: Previous
+          - generic [ref=e2411]:
+            - generic [ref=e2412]: "1"
+            - link "Page 2" [ref=e2413] [cursor=pointer]:
+              - /url: /search/?page=2
+              - text: "2"
+            - generic [aria-hidden] [ref=e2414]: …
+            - link "Page 11" [ref=e2415] [cursor=pointer]:
+              - /url: /search/?page=11
+              - text: "11"
+          - link "Next" [ref=e2416] [cursor=pointer]:
+            - /url: /search/?page=2
+  - contentinfo [ref=e2417]:
+    - generic [ref=e2418]:
+      - link "Slugfester" [ref=e2419] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e2420]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=e2421]:
+      - link "Search" [ref=e2422] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=e2423] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=e2424] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=e2425] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=e2426] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=e2427] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=e2428] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=e2429] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=e2430] [cursor=pointer]:
+        - /url: https://cogbias.site/

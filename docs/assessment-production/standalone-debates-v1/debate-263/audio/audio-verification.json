@@ -1,0 +1,989 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "videoId": "D6K43WSZrmI",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/inventory.json",
+    "sha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+    "bytes": 214666
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "supplementalChecks": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/resolution.json",
+      "sha256": "7deabb4502fa87b437aea1c3b8b44dba77a07df2df55e0fa56f5512440d831bb",
+      "bytes": 4321,
+      "moveId": "fossil-record-limits-common-descent",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "fossil-record-limits-common-descent",
+        "sourceEventRange": [
+          3036,
+          3065
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/plan.json",
+            "sha256": "e20dd937cd87741cd106e7ad33f75a18128c11510e7d02a2a4131fbde6dbbf82",
+            "bytes": 1575
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/response.json",
+            "sha256": "2be6063f7fa7e639dbf39466fcfff8ca725b4a80ebdc145722cfc273969a258b",
+            "bytes": 1973
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/execution.json",
+            "sha256": "2ad160ce93b6ed8fb2a6a364e1ada356b29cd89ed51adf33ea77e12331c5d181",
+            "bytes": 620
+          }
+        ],
+        "trigger": "Both section-01 primary reviewers independently flagged caption wording, despite the original inventory's high wording confidence.",
+        "method": "Controller comparison of the frozen passage and both reviewers' stated concerns with a separately acquired, independently transcribed public audio clip. No original captions or leading wording prompt was supplied to the transcription service. No human/direct listening is claimed.",
+        "findings": [
+          {
+            "concern": "extent organisms",
+            "audioTranscript": "extant organisms",
+            "consequence": "Clarifies that the preservation comparison concerns currently existing organisms; the frozen inventory and both judgments already assess that comparison."
+          },
+          {
+            "concern": "Monet to man",
+            "audioTranscript": "monad to man evolution",
+            "consequence": "Clarifies the phrase denoting the universal evolutionary history being rejected; neither review depends on the corrupted proper-name spelling."
+          },
+          {
+            "concern": "soft body plants",
+            "audioTranscript": "soft body plants in the pre-Cambrian rocks",
+            "consequence": "Independent transcription reproduces rather than replaces the phrase. The selected claim and both judgments concern preserved soft-bodied material, not a disputed plant identity, and no taxonomic correction is inferred."
+          },
+          {
+            "concern": "Broken final caption clause",
+            "audioTranscript": "I don't think the evidence supports that.",
+            "consequence": "The disfluent preceding clause remains disfluent; this conclusion and the explicit rejection of universal common ancestry earlier in the same answer agree. No omitted positive endorsement or negation is introduced."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "The audio transcript itself renders an interjection as 'proof' where captions have 'poof'; neither form is used to manufacture substantive evidence.",
+          "The short handoff after the answer contains a stray transcription artifact; it is outside this selected move and is not quotation evidence.",
+          "The stream-copy clip includes preroll. No new absolute word timestamps are asserted.",
+          "This wording check does not establish the empirical truth of Dembski's paleontological claims."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "pricingSource": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe",
+          "inputTokens": 1129,
+          "outputTokens": 374,
+          "inputUsdPerMillion": 2.5,
+          "outputUsdPerMillion": 10,
+          "knownSuccessfulCallCostUsd": 0.0065625,
+          "maximumPossibleTotalCostUsd": 0.011468,
+          "costBasis": "Successful-call cost calculated from returned usage and published token prices, not an independently inspected invoice. Maximum uses the higher frozen per-minute estimate; there were no transport-uncertain or failed paid calls.",
+          "paidCalls": 1,
+          "retries": 0
+        },
+        "completedAt": "2026-09-17T19:23:46.743Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-4/resolution.json",
+      "sha256": "e5cf729be1ce7ff72c3ad1dc04afee594aba7d82bc5879647cab3ca63f7631f5",
+      "bytes": 3515,
+      "moveId": "science-self-corrects-and-works",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "science-self-corrects-and-works",
+        "sourceEventRange": [
+          1557,
+          1596
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-4/plan.json",
+            "sha256": "a5368ce291590c72f18ccdcf9c0b489bfd8150788b3c038cae57145331542d8b",
+            "bytes": 1684
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-4/response.json",
+            "sha256": "aaabf980f243a2f3518b2629b3969aac7efc17a4af6fc9b05c383087687bd987",
+            "bytes": 1932
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-4/execution.json",
+            "sha256": "381879c0c783f756de8438c1d11051affcd68d90fa989ee46b839df137e2e163",
+            "bytes": 850
+          }
+        ],
+        "trigger": "One independent reviewer flagged the flu outbreak, 1919 sequencing, and vaccine wording.",
+        "method": "One caption-blind audio transcription, compared with the frozen source and the stated uncertainty. No direct listening claimed.",
+        "findings": [
+          {
+            "concern": "Flu-virus chronology and sequencing",
+            "audioTranscript": "sequence the DNA of the last such virus in 1919",
+            "consequence": "Independent audio transcription reproduces the frozen wording rather than supplying a different date or molecular term. The compressed chronology and inference remain participant claims; no RNA/date correction or external factual vindication is introduced."
+          },
+          {
+            "concern": "Vaccine and prediction inference",
+            "audioTranscript": "a vaccine. That could prevent the last flu from being as bad as the previous one.",
+            "consequence": "The audio-derived transcript retains the claimed practical success and the broader assertion about medicine, confirming the selected methodological example. The reviews' criticism of compressed history or exaggerated reach is not altered."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "The independent transcript renders the opening direct address as Richard Dawkins where the captions name Dembski. This possible recognition error is not imported into the frozen source. The continuous Hitchens turn, explicit scientific-disagreement challenge, and later Dawkins–Gould comparison preserve the methodological proposition and its live context.",
+          "This verifies the wording supplied for assessment, not the historical or scientific truth of the vaccine example.",
+          "Clip preroll does not alter existing caption timestamps."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0068725,
+          "maximumPossibleTotalCostUsd": 0.012400000000000001,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:39:15.891Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-8/resolution.json",
+      "sha256": "4a182461bd4f5ac8751dc8d0c0a5916ffe99fdbd10ad13b88cf225640af582b7",
+      "bytes": 2644,
+      "moveId": "atheism-lacks-objective-morality",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "atheism-lacks-objective-morality",
+        "sourceEventRange": [
+          1857,
+          1938
+        ],
+        "focusedAudioEventRange": [
+          1913,
+          1922
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-8/plan.json",
+            "sha256": "18187a58f12d6c062ebce9f7964b4329c55ebd7223457c3d612309be8302d39a",
+            "bytes": 2048
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-8/response.json",
+            "sha256": "c89a3145f42e31d5212d2179b03928c4c1bc7ca179dffd096cda2275ae5ac362",
+            "bytes": 1018
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-8/execution.json",
+            "sha256": "fb237f65fce231ae059cf4ba0495c8750d79f4ac4fa256828ad79a90385f8261",
+            "bytes": 833
+          }
+        ],
+        "trigger": "Independent section-04 source review flagged a local malformed caption phrase.",
+        "method": "One bounded caption-blind audio transcription. No direct listening or full-debate audio verification claimed.",
+        "findings": [
+          {
+            "concern": "univ ly",
+            "audioTranscript": "objective and universally binding",
+            "consequence": "The independent transcript supplies the expected universality phrase while retaining the distinction between moral conduct and objective grounding."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Original caption bytes and quote-eligible strings remain unchanged. The audio-derived wording is corroboration, not silently substituted quotation text.",
+          "No external factual or philosophical correctness is inferred from the recognized speech."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.00286,
+          "maximumPossibleTotalCostUsd": 0.005224,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:49:28.980Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-9/resolution.json",
+      "sha256": "c07db7d63b3a99b66c746465d8e7bd5e297892c9696c2732c3be71d6a46bbc68",
+      "bytes": 2721,
+      "moveId": "atheism-does-not-fix-politics",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "atheism-does-not-fix-politics",
+        "sourceEventRange": [
+          2113,
+          2142
+        ],
+        "focusedAudioEventRange": [
+          2123,
+          2132
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-9/plan.json",
+            "sha256": "a8da3a1a4369827d5b6c5bb76b82d8a830ae236a40bc08e9aacffd06a333309c",
+            "bytes": 2055
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-9/response.json",
+            "sha256": "17cdbf7d4003fde0eafe0ceb949c39b588d5a0eea489613a2e54f7c3b10c18e4",
+            "bytes": 976
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-9/execution.json",
+            "sha256": "a88ac09d0775c3ebe9be193b263e7943e13804a64dc158811a4205005d5da62a",
+            "bytes": 847
+          }
+        ],
+        "trigger": "Independent section-04 source review flagged a local malformed caption phrase.",
+        "method": "One bounded caption-blind audio transcription. No direct listening or full-debate audio verification claimed.",
+        "findings": [
+          {
+            "concern": "atheist fashion melini",
+            "audioTranscript": "You can be an atheist fascist. Mussolini I think was an atheist",
+            "consequence": "The independent transcript clarifies the historical example and retains the central compatibility claim. It does not establish Mussolini’s beliefs as an external fact."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Original caption bytes and quote-eligible strings remain unchanged. The audio-derived wording is corroboration, not silently substituted quotation text.",
+          "No external factual or philosophical correctness is inferred from the recognized speech."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.002915,
+          "maximumPossibleTotalCostUsd": 0.0047799999999999995,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:49:28.984Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-10/resolution.json",
+      "sha256": "081b9960783d89b84502b7e53023369489861d2a1906e11fde1bd6ffecd220eb",
+      "bytes": 2696,
+      "moveId": "evolution-moral-mixed-bag",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "evolution-moral-mixed-bag",
+        "sourceEventRange": [
+          2427,
+          2487
+        ],
+        "focusedAudioEventRange": [
+          2478,
+          2487
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-10/plan.json",
+            "sha256": "a0570dffde55c4e970fb868358c422d5f8f8b72916b8b2456cd42a6c053b8f8d",
+            "bytes": 2040
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-10/response.json",
+            "sha256": "2e8f600b932dce40aef788b7d0651605b6d5343fe6a3176f88febeca7dedfbce",
+            "bytes": 1212
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-10/execution.json",
+            "sha256": "0d12f6036af82afd3512dfc9a7cfc78e7f1a0c5899eefd91f883433b0fc364ce",
+            "bytes": 833
+          }
+        ],
+        "trigger": "Independent section-04 source review flagged a local malformed caption phrase.",
+        "method": "One bounded caption-blind audio transcription. No direct listening or full-debate audio verification claimed.",
+        "findings": [
+          {
+            "concern": "reputation of design",
+            "audioTranscript": "not a refutation of design",
+            "consequence": "The independent transcript confirms the contrast between a challenge to design and a refutation. Both reviewers already assessed that distinction; no confidence label or numerical judgment changes."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Original caption bytes and quote-eligible strings remain unchanged. The audio-derived wording is corroboration, not silently substituted quotation text.",
+          "No external factual or philosophical correctness is inferred from the recognized speech."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.00359,
+          "maximumPossibleTotalCostUsd": 0.005424,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:49:28.987Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-11/resolution.json",
+      "sha256": "cc26f859a7afe79b9a05e659cc0edc873f360082a57732897c192276daf84331",
+      "bytes": 3547,
+      "moveId": "biblical-genocide-objection",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "biblical-genocide-objection",
+        "sourceEventRange": [
+          2498,
+          2530
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-11/plan.json",
+            "sha256": "bdd25c487859641f78a039dab297314c78c3cbfe8e3543ff1c77748f23ac8a97",
+            "bytes": 2014
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-11/response.json",
+            "sha256": "32e68d524f0c6e43f62f8549f3c93e55cdf733f30e7005269124942828bff1dd",
+            "bytes": 1745
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-11/execution.json",
+            "sha256": "f70fbba17fce224aa8907c53460c3ad307372ff5c349dfc64e49c22c16a0b938",
+            "bytes": 838
+          }
+        ],
+        "trigger": "Section-05 pass-a flagged the distinction between the quoted command and Hitchens's rape interpretation.",
+        "method": "One bounded caption-blind audio transcription, not direct listening or independent scriptural exegesis.",
+        "findings": [
+          {
+            "concern": "Does the speaker explicitly distinguish preserved women from the interpretation of their intended use?",
+            "audioTranscript": "the Bible does not say those women were kept for immoral purposes",
+            "consequence": "The recognized speech retains the competing reading and Hitchens's rejection of it. His ensuing label 'instructions for rape' is his evaluative inference, not a silently imported literal command."
+          },
+          {
+            "concern": "Is the target religious misuse or the alleged content of divine instructions?",
+            "audioTranscript": "What I object to is what's in the original instructions",
+            "consequence": "The reply's target is explicitly confirmed. The unresolved adequacy of Hitchens's textual interpretation remains part of the original evidence/calibration assessments; confirming what he argued does not establish that interpretation as true."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "The independent transcription contains foreign-language fragments around transitions. These fragments are not used to establish speaker identity or the selected proposition.",
+          "No biblical quotation has been verified against an external text. No historical claim or interpretation has been fact-checked by this audio check.",
+          "The original materialUncertainty flag remains in the accepted primary artifact. This supplemental record resolves the speech-meaning question only; it does not erase the explicitly retained interpretive limitation."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0059075,
+          "maximumPossibleTotalCostUsd": 0.010674,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:57:49.761Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-12/resolution.json",
+      "sha256": "ee763275eed21c59cda51da92d9ebcd15de336d14b26faa9d45b4a69640812c1",
+      "bytes": 3268,
+      "moveId": "nazism-not-secular-counter",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "nazism-not-secular-counter",
+        "sourceEventRange": [
+          3443,
+          3477
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-12/plan.json",
+            "sha256": "744a04c9f8aaf94620567b280f9b782b2bff47c6c23a67a0e42226c13facd2af",
+            "bytes": 2036
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-12/response.json",
+            "sha256": "9c563024aa5d3093b3de4465c3bfe24e9cb809f18fca642d2c64b5cd859735c9",
+            "bytes": 1830
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-12/execution.json",
+            "sha256": "5dd4fe1f346f281ca29c2719313826d155ae78c83274e8c337e4302b9148c11e",
+            "bytes": 849
+          }
+        ],
+        "trigger": "Both section-07 reviewers flagged caption damage to German terms, a book title and oath wording.",
+        "method": "One bounded caption-blind audio transcription. No direct listening, external historical fact-check or full-debate audio verification.",
+        "findings": [
+          {
+            "concern": "German book title and political title",
+            "audioTranscript": "Mein Kampf; Führer",
+            "consequence": "Independent recognition supports the intended names. The assessment can evaluate the asserted source and classification argument without treating the caption spellings as speaker errors."
+          },
+          {
+            "concern": "Oath and belt-buckle wording",
+            "audioTranscript": "I swear by Almighty God, undying fealty; Gott mit uns",
+            "consequence": "The audio-derived text corroborates Hitchens's English gloss and the God-invoking examples. It does not establish their historical accuracy or establish Nazism's essential character."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "The independent transcript omits or compresses some nearby connective phrases; it is not substituted for the frozen source or used for new precise quotations.",
+          "Any original precision judgment that penalizes caption corruption remains a separate substantive review defect. This source resolution does not repair or approve those judgments.",
+          "The historical classification and universal claim about totalitarianism remain contested in the original assessment."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.006455,
+          "maximumPossibleTotalCostUsd": 0.011023999999999999,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T20:01:43.146Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-2/resolution.json",
+      "sha256": "2be77a94cb9fa873a215238bd2c315c438d3ed7929a671d919c4eda9e420f242",
+      "bytes": 3348,
+      "moveId": "extinction-undercuts-design",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "extinction-undercuts-design",
+        "sourceEventRange": [
+          576,
+          632
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-2/plan.json",
+            "sha256": "f1edc632ba5695330afc3e2a4ba1781e52e73512726984d289b2b4f190ee014e",
+            "bytes": 1680
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-2/response.json",
+            "sha256": "1fe85e730b07babb6a4b7bfb14cf1f86e1d39806cfc72c98da5753905666e3f8",
+            "bytes": 2475
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-2/execution.json",
+            "sha256": "94985405619354f25636482bac6ecebe045e343135375c4f5601e967f592ab33",
+            "bytes": 838
+          }
+        ],
+        "trigger": "An independent section-02 reviewer flagged source-dependent wording; no numeric judgment or inventory attribution is being changed.",
+        "method": "Controller comparison against one independent audio transcription, supplied no captions or leading prompt. No direct listening claimed.",
+        "findings": [
+          {
+            "concern": "Chromosome wording",
+            "audioTranscript": "half a chromosome away from the chimpanzee",
+            "consequence": "The unusual formulation is present in the independent transcription. It is a participant formulation, not a root correction into a more precise scientific claim."
+          },
+          {
+            "concern": "Human bottleneck figure",
+            "audioTranscript": "less than two or three thousand people",
+            "consequence": "The audio-derived figure matches the frozen caption's two-or-three-thousand claim; its historical or biological truth is not established by transcription."
+          },
+          {
+            "concern": "Extinction percentage",
+            "audioTranscript": "99.8%",
+            "consequence": "The percentage recurs explicitly in the independent transcript, confirming the figure underlying the frozen selection. No alternative statistic is substituted."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Transcription is evidence of wording, not scientific fact-checking.",
+          "Minor clipped or malformed words outside the requested propositions are not imported as participant mistakes or replacement quotations.",
+          "The media includes stream-copy preroll; existing caption timestamps and exact quote strings remain frozen."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0096475,
+          "maximumPossibleTotalCostUsd": 0.016624,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:33:07.382Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-3/resolution.json",
+      "sha256": "2db6ae07a1ba08e1cd87cf3cc64c0a171676f55e710711503c7dcb6341da67bc",
+      "bytes": 3713,
+      "moveId": "cosmic-waste-and-god-projection",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "cosmic-waste-and-god-projection",
+        "sourceEventRange": [
+          3120,
+          3200
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-3/plan.json",
+            "sha256": "13487515659438c8601f3432285580c7437837126bb5fd75356ad95e6d521085",
+            "bytes": 1695
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-3/response.json",
+            "sha256": "0f13d3640125d9ef1989f9399eb50c6c18b113281ba9b19c2724b4ebe99d9065",
+            "bytes": 3445
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-3/execution.json",
+            "sha256": "07b07d589d30dce38c165dd5cba05ac687a116af703d312fd2abba1c927ae5ad",
+            "bytes": 850
+          }
+        ],
+        "trigger": "An independent section-02 reviewer flagged source-dependent wording; no numeric judgment or inventory attribution is being changed.",
+        "method": "Controller comparison against one independent audio transcription, supplied no captions or leading prompt. No direct listening claimed.",
+        "findings": [
+          {
+            "concern": "collab with Andromeda",
+            "audioTranscript": "collide with Andromeda",
+            "consequence": "Clarifies the collision premise already represented in the frozen inventory and both reviews."
+          },
+          {
+            "concern": "ne ey",
+            "audioTranscript": "naked eye",
+            "consequence": "Clarifies the visibility phrase without changing the inferential claim or providing external support for the astronomical assertions."
+          },
+          {
+            "concern": "proplate",
+            "audioTranscript": "profligate",
+            "consequence": "Clarifies the epithet accompanying the waste argument. Both reviews already assess the waste-to-goodness inference and its rhetorical excess."
+          },
+          {
+            "concern": "Projection passage's contradictory short clause",
+            "audioTranscript": "man did not create god",
+            "consequence": "This odd clause also occurs in the independent transcription, immediately followed by men and women creating many gods and the explicit human-projection conclusion. It is retained, not silently reversed into another quotation. The selected proposition is supported by the explicit following explanation and human-authority comparison, not this isolated disfluent clause."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Transcription is evidence of wording, not scientific fact-checking.",
+          "Minor clipped or malformed words outside the requested propositions are not imported as participant mistakes or replacement quotations.",
+          "The media includes stream-copy preroll; existing caption timestamps and exact quote strings remain frozen."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0135875,
+          "maximumPossibleTotalCostUsd": 0.023319999999999997,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:33:07.386Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-5/resolution.json",
+      "sha256": "d1c4fe02aaaa9f7b5add4968cc954a8eb7bcd57bb0122c44cba08c43f6ed7aa5",
+      "bytes": 3289,
+      "moveId": "evolution-evidence-challenges",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "evolution-evidence-challenges",
+        "sourceEventRange": [
+          777,
+          920
+        ],
+        "focusedAudioEventRange": [
+          865,
+          920
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-5/plan.json",
+            "sha256": "d730c5b1ad3c704c493792316105d2c618e50f18090816732bfccb0eecb7ee2c",
+            "bytes": 1735
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-5/response.json",
+            "sha256": "ca7a05d7181a4916aa47f9356d6fb5f9aea64a504a3fc537d59c6a82de8b7a82",
+            "bytes": 2636
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-5/execution.json",
+            "sha256": "6a4985423bdaa76d48d753817bb324b508dfbdd30dc32ec5453336b88eb737bd",
+            "bytes": 838
+          }
+        ],
+        "trigger": "Section-03 pass-b flagged exact-wording uncertainty in subsidiary names or biological descriptions.",
+        "method": "One bounded, caption-blind audio transcription compared against the actual flagged phrases. No direct listening or external fact-checking claimed.",
+        "findings": [
+          {
+            "concern": "Miller gal / gleo",
+            "audioTranscript": "Müller glial cells",
+            "consequence": "The independent transcript identifies glial cells and their claimed optical-fiber function, while varying Miller/Müller in its own spelling. The frozen assessment concerns functional and evidential claims, not the spelling."
+          },
+          {
+            "concern": "Dan Nelson and Susan pel",
+            "audioTranscript": "Dan Nielsen and Susan Pelger",
+            "consequence": "The mathematical-eye-model reference is corroborated, but the independent transcript also varies Nielsen/Pilger later. Exact name orthography is not claimed as conclusively established or silently inserted into frozen quotations."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Variant spellings remain; they do not alter the selected model-testing objection or either rating, and are not upgraded into verified citation metadata.",
+          "The frozen selected claim, source excerpt, quote-eligible spans and ratings are not corrected or expanded.",
+          "Independent transcription is corroboration of limited material wording, not a claim that every word was recognized correctly."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0088225,
+          "maximumPossibleTotalCostUsd": 0.015976,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:44:42.018Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-6/resolution.json",
+      "sha256": "cb001b15c2a9ca53526317efca76a4eb146db8072ce9dfbfe86103399e6c4c76",
+      "bytes": 2942,
+      "moveId": "atheism-predates-darwin",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "atheism-predates-darwin",
+        "sourceEventRange": [
+          1291,
+          1337
+        ],
+        "focusedAudioEventRange": [
+          1323,
+          1337
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-6/plan.json",
+            "sha256": "201ba90e26461291b1be610e6e602004a41ec2d37bf5464d55ba31b235e6e3da",
+            "bytes": 1729
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-6/response.json",
+            "sha256": "891a8b3a6538f3a6ade8fe9ee2f18c0609c35e45f850d36609618f862a8b29db",
+            "bytes": 1136
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-6/execution.json",
+            "sha256": "81e88c018fdd172a47040aeecf755fea639f5073abc70d94151d6d0fcb8b94ea",
+            "bytes": 835
+          }
+        ],
+        "trigger": "Section-03 pass-b flagged exact-wording uncertainty in subsidiary names or biological descriptions.",
+        "method": "One bounded, caption-blind audio transcription compared against the actual flagged phrases. No direct listening or external fact-checking claimed.",
+        "findings": [
+          {
+            "concern": "spirit / voler / democratus",
+            "audioTranscript": "Spinoza, the work of Voltaire, the work of Lucretius",
+            "consequence": "The named historical sequence becomes intelligible in the independent transcript, which also names Democritus and Epicurus. This supports the pre-Darwin example already assessed without importing external biographical claims."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "Pronunciation transcription does not establish every philosopher's beliefs or the truth of Hitchens's historical characterizations.",
+          "The frozen selected claim, source excerpt, quote-eligible spans and ratings are not corrected or expanded.",
+          "Independent transcription is corroboration of limited material wording, not a claim that every word was recognized correctly."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0037775,
+          "maximumPossibleTotalCostUsd": 0.006376,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:44:42.022Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-7/resolution.json",
+      "sha256": "f7c3e4ac44e492d0efa4c0708021d459043fcc25ac8073a158a63af732f626c8",
+      "bytes": 3403,
+      "moveId": "eye-adaptation-evidence",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "eye-adaptation-evidence",
+        "sourceEventRange": [
+          1386,
+          1474
+        ],
+        "focusedAudioEventRange": [
+          1400,
+          1474
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-7/plan.json",
+            "sha256": "ffedf1ca458c4bc1b1f4969553c137fabf746761ce7bb446090aba000629c302",
+            "bytes": 2052
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-7/response.json",
+            "sha256": "a3422c6c6434971f8007e25bb53859b3c7c926d63ac87e95c07d5f3e8a511b40",
+            "bytes": 3436
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-7/execution.json",
+            "sha256": "689e9677fe309f8e54cf57483111a6c389616a95708a3d5764425edd628c805c",
+            "bytes": 838
+          }
+        ],
+        "trigger": "Section-03 pass-b flagged exact-wording uncertainty in subsidiary names or biological descriptions.",
+        "method": "One bounded, caption-blind audio transcription compared against the actual flagged phrases. No direct listening or external fact-checking claimed.",
+        "findings": [
+          {
+            "concern": "Animal and location",
+            "audioTranscript": "The salamander, the beautiful Indonesian lizard",
+            "consequence": "The unusual animal/location description is reproduced by the independent transcript. It remains Hitchens's described example, not a controller-corrected zoological identification."
+          },
+          {
+            "concern": "tasks / tusks",
+            "audioTranscript": "the ones with long tusks get shot",
+            "consequence": "The tusk selection example is corroborated, including survival and breeding of short- or no-tusk elephants. The caption's tasks spelling is not treated as a participant conceptual error."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "The independent transcript contains unrelated multilingual fragments around the eye interjection and omits some surrounding words. Those fragments are not evidence; the clean animal-description, eye-loss, and differential-survival passages independently corroborate the assessed mechanism. No replacement full transcript is created.",
+          "The frozen selected claim, source excerpt, quote-eligible spans and ratings are not corrected or expanded.",
+          "Independent transcription is corroboration of limited material wording, not a claim that every word was recognized correctly."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0127475,
+          "maximumPossibleTotalCostUsd": 0.021308,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T19:44:42.025Z"
+      }
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-13/resolution.json",
+      "sha256": "e95d241ac8bec1c33a2f8a0fab5b7e61804c4e55231b03c164dd648e3777ad8c",
+      "bytes": 3236,
+      "moveId": "atheism-allows-many-ethics",
+      "resolution": {
+        "schemaVersion": "1.0-supplemental-wording-resolution",
+        "debateNumber": "263",
+        "debateId": "dembski-hitchens-good-god-existence-2010",
+        "status": "resolved-without-frozen-substance-change",
+        "moveId": "atheism-allows-many-ethics",
+        "sourceEventRange": [
+          3424,
+          3443
+        ],
+        "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+        "verificationInputs": [
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-13/plan.json",
+            "sha256": "7df3331d0a9eb8ccb317a4531f010c2d47003948062f0ae35d2464b56f634284",
+            "bytes": 2022
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-13/response.json",
+            "sha256": "53458694372a069f4cbab1fc390e6c12f7fc6a8b633dcaba1fc1e841055b3e53",
+            "bytes": 1505
+          },
+          {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-13/execution.json",
+            "sha256": "b981dfe1ec02a89d8fdb8282f589f8f42be16e1cbf30f431c7043b2ac4212d01",
+            "bytes": 836
+          }
+        ],
+        "trigger": "Section-07 pass-b flagged garbled names in the ethical-pluralism and humanitarian-aid comparison.",
+        "method": "One bounded caption-blind audio transcription; no direct listening or external verification of charitable organizations or individual beliefs.",
+        "findings": [
+          {
+            "concern": "Contrasting example and named aid organizations",
+            "audioTranscript": "Marquis de Sade; Médecins Sans Frontières; Oxfam",
+            "consequence": "The recognized names corroborate the intended contrast between divergent atheist ethics and aid without proselytizing. Caption spellings cannot properly count as the speaker's lack of precision."
+          },
+          {
+            "concern": "Humanitarian motive comparison",
+            "audioTranscript": "They're doing it for its own sake",
+            "consequence": "The audio-derived text retains the claim of aid without a hidden religious agenda and Hitchens's asserted slight superiority. It does not establish the actual motives of all workers or the validity of the superiority inference."
+          }
+        ],
+        "nonMaterialResiduals": [
+          "The independent transcript still renders one connective as 'atheist in the Marquis de Sade'; the contrast with a great humanist and the identified name are clear. No caption bytes or direct quotations are replaced.",
+          "The source meaning is resolved separately from the pending precision-judgment defect. No score or rating is repaired by this corroboration."
+        ],
+        "materialMeaningResolved": true,
+        "attributionChanged": false,
+        "frozenSourceChanged": false,
+        "inventoryChanged": false,
+        "ratingsChanged": false,
+        "assessmentConfidenceChanged": false,
+        "originalReviewerFlagsPreserved": true,
+        "unresolvedMaterialSourceIssues": 0,
+        "cost": {
+          "knownSuccessfulCallCostUsd": 0.0048725,
+          "maximumPossibleTotalCostUsd": 0.007884,
+          "paidCalls": 1,
+          "retries": 0,
+          "costBasis": "Returned usage and published token rates, not an independently inspected invoice; maximum retains the larger frozen duration estimate. No uncertain paid calls."
+        },
+        "completedAt": "2026-09-17T20:02:32.543Z"
+      }
+    }
+  ],
+  "audioAcquired": true,
+  "audioListenedTo": false,
+  "paidTranscriptionPerformed": true,
+  "fullDebateAudioVerified": false,
+  "disposition": "No below-high-confidence inventory attribution triggers. Subsequent independent-review material wording concerns are separately matched to authenticated supplemental audio-transcription resolutions. Original caption bytes, inventory, ratings, confidence labels, and reviewer concern flags remain unchanged. No direct listening or complete-debate audio verification is claimed.",
+  "independentReviews": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/judgments/pass-a/output.json",
+      "sha256": "ee12ecb7542c68f5e8dc247bb953b995d5f84812b1974c063a1a64ea532566a2",
+      "bytes": 128318
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/judgments/pass-b/output.json",
+      "sha256": "38cda9a21e85f6553abb103c701f8937c6be64e526e10d4e9d54d5d053575699",
+      "bytes": 128693
+    }
+  ],
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.0886175,
+    "maximumPossibleTotalCostUsd": 0.15248199999999998,
+    "paidCalls": 13
+  },
+  "audit": {
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "completedSupplementalWordingChecks": 13,
+    "unresolvedMaterialMeaningChecks": 0,
+    "confidenceUpgradesToAvoidChecks": 0
+  },
+  "completedAt": "2026-09-17T20:14:22.293Z"
+}

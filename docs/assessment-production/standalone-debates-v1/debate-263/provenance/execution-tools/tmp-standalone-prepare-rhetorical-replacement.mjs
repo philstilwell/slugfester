@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {fileRecord} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const serialize=o=>JSON.stringify(o,null,2)+'\n';
+const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+export function prepareReplacement(debateNumber){
+ const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===debateNumber);assert(rec);
+ const base=rec.root+'/publication/rhetorical-tag-review-1',dest=base+'/pass-b/replacement-1';
+ const previous=read(base+'/pass-b/execution-plan.json'),stop=read(base+'/controller-stop.json');
+ assert.equal(stop.status,'blocked-awaiting-exceptional-pass-b-replacement-authorization');
+ assert.equal(read(base+'/pass-a/controller-review.json').status,'accepted-for-anonymous-adjudication');
+ for(const lock of previous.inputs)assert.equal(fileRecord(lock.path).sha256,lock.sha256);
+ assert.equal(fileRecord(base+'/pass-b/output.json').sha256,stop.failedOutput.sha256);
+ const instructions=read(base+'/pass-b/execution-instructions.json');
+ instructions.outputPath=path.resolve(dest+'/output.json');
+ instructions.rules.push('For each candidate, write an individually reasoned explanation identifying the actual inference and precisely why the exact definition fits or does not fit. Merely repeating a catalog definition after a stock acceptance/rejection phrase is invalid. No auto-generated rationales or claim-summary-plus-boilerplate rationales. Each move review must record a specific reasoning result, including when no candidate is accepted.');
+ instructions.rules.push('Identify the assessed speaker\'s own inference. Quoting, reporting, testing, or criticizing an alleged defect is not itself committing that defect. Do not infer psychology, motives, or cognitive bias from disagreement alone. Assess both sides symmetrically under the frozen definitions; never target a tag count.');
+ instructions.rules.push('All file writes must use the exact absolute outputPath, not a relative path. Draft and validate in memory first. You may develop the unsaved draft in bounded batches, but submit the complete output only once. Do not read any previous reviewer output or controller record.');
+ const instructionPath=dest+'/execution-instructions.json';const files={[instructionPath]:serialize(instructions)};
+ const inputs=previous.inputs.slice(1);
+ const plan={...previous,outputPath:instructions.outputPath,inputs:[{path:instructionPath,bytes:Buffer.byteLength(files[instructionPath]),sha256:hash(files[instructionPath])},...inputs],exceptionalReplacement:true,attempts:1,retries:0};
+ files[dest+'/execution-plan.json']=serialize(plan);
+ files[dest+'/authorization.json']=serialize({schemaVersion:'1.0-exceptional-rhetorical-replacement-authorization',status:'authorized-by-user',debateNumber,debateId:rec.debateId,approvedUserReply:'Yes.',approvedProposal:'Replace only the failed fallacy-and-bias reviewer with one fresh isolated reviewer, retaining the valid review, text, evidence, and scores.',retainedPassA:fileRecord(base+'/pass-a/output.json'),preservedFailedOutput:fileRecord(base+'/pass-b/output.json'),priorFailure:fileRecord(base+'/controller-stop.json'),model:previous.model,sourcePacket:fileRecord(previous.packetPath),allowedOutput:instructions.outputPath,maximumFreshAttempts:1,automaticRetries:0,permittedDirectIncrementalCostUsd:0,frozenAssessmentChangesAllowed:false,authorizedAt:new Date().toISOString()});
+ for(const p of Object.keys(files))assert(!fs.existsSync(p),'Preserve existing '+p);
+ return{files,instructionsPath:path.resolve(instructionPath)};
+}
+if(process.argv[2]==='--debate')console.log(JSON.stringify(prepareReplacement(process.argv[3])));

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0-bounded-inventory-correction-packet",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "baseline": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/coverage-replacement-1/source-expanded-candidate.json",
+    "sha256": "7c714257607058ba3140cff963e61a779e48899c0874f0458d9959947e6b1f43",
+    "bytes": 233078
+  },
+  "authorizationPath": "docs/assessment-production/standalone-debates-v1/debate-263/authorization.json",
+  "sourceLockPath": "docs/assessment-production/standalone-debates-v1/debate-263/source/source-lock.json",
+  "eventsPath": ".assessment-cache/captions/D6K43WSZrmI/events.json",
+  "indexedTranscriptPath": ".assessment-cache/captions/D6K43WSZrmI/indexed-transcript.txt",
+  "sourceLocks": [
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/captions.srv3.xml",
+      "sha256": "fb828abd6da9ecd8e82fd157720d3bf0ae02256cf8d5a9eebf5104f9e9eaf50f",
+      "bytes": 953179
+    },
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/events.json",
+      "sha256": "0beb8c791dfb707519576c9a9c24af6690c6ab3419d409a949eb31dfb893019d",
+      "bytes": 393586
+    },
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/transcript.txt",
+      "sha256": "4f1abfebbd4160faf7f6394381768d3bdf510ed95cab9589bf3858e8ad7f869a",
+      "bytes": 167904
+    },
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/manifest.json",
+      "sha256": "134dbe91c1699d92d403d426c70d44217eebaf78944440923349cc6728337313",
+      "bytes": 979
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/source/source-lock.json",
+      "sha256": "d40dd3a7f4cf4315b19cd97b29ab326479ed0c9c758c55f46b44f894df3170c2",
+      "bytes": 11411
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/authorization.json",
+      "sha256": "c4661d132a94182a54901b1af05666917138b92172dc257b0b860b1e09a67895",
+      "bytes": 7981
+    },
+    {
+      "path": ".assessment-cache/captions/D6K43WSZrmI/score-blind-source.json",
+      "sha256": "ee6c188b937ccaea1daa40aca9da31918c6ed363aa70388c67237f2aff67ad01",
+      "bytes": 712627
+    }
+  ],
+  "failureReportPath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/coverage-replacement-1/controller-rejection.json",
+  "rubricPath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/coverage-replacement-1/rubric.md",
+  "scopeRulePath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/coverage-replacement-1/scope-rule.md",
+  "validatorContractPath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/coverage-replacement-1/inventory-validator-contract.txt",
+  "helperPath": "tmp-standalone-bounded-inventory-correction.mjs",
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/bounded-correction-1/correction.json",
+  "maxSourceLinesPerRead": 400,
+  "outputSchema": {
+    "debateNumber": "263",
+    "debateId": "dembski-hitchens-good-god-existence-2010",
+    "baselineSha256": "7c714257607058ba3140cff963e61a779e48899c0874f0458d9959947e6b1f43",
+    "sections": "4..7 objects {sectionId,title,weightPercent,rationale}; each side present; weights positive integers totaling 100",
+    "moves": "Exactly all 40 original IDs in order. Every object has exactly moveId,sectionId,startEvent,endEvent,quoteEligibleExactSpans,evidenceRationale,longerCompleteArgumentRationale. The two rationales are strings; longer rationale empty for <=2200 characters, otherwise source-specific >=100 characters.",
+    "balanceRationale": "Source-specific explanation naming asymmetrical selected moves and their necessity, >=80 characters.",
+    "sectionRationales": "One per section in exact section order: {sectionId,rationale}; >=100 characters for fourth rows, >=40 otherwise. Name each independent inference that requires a fourth row, not generic non-mergeability.",
+    "readingAuthentication": "Actual files/hashes/read ranges and source limitations."
+  },
+  "rules": [
+    "Read this entire packet, authorization, baseline, failure report, rubric, scope and validator instructions, then every indexed source event in <=400-line untruncated chunks. Read the baseline in bounded chunks or project all non-source fields and read all indexed source separately; no omitted semantic fields.",
+    "This is one bounded correction, not a replacement inventory or scoring pass. All original argument substance, links, importance, routes, scope and coverage remain byte-identical. Do not remove or merge arguments to fit.",
+    "Choose coherent linked exchanges for resection, rather than arithmetic shuffling of one side. At most four moves per side per section and at most seven sections. Section weights must be evidence-led, not score-led.",
+    "Review each evidence unit against its unchanged claim, reason and conclusion. Trim redundant setup while preserving every load-bearing reason. If complete support requires a longer contiguous passage, explain precisely why it cannot be shortened without losing named reasoning; do not add generic waivers. Evidence bounds may change only within the same substantive primary-speaker turn.",
+    "Exact quotation candidates must be 3..18-word literal substrings including spoken fillers and casing. Avoid garbled phrases. If evidence cannot support an unchanged proposition, stop and identify the issue rather than alter its substance.",
+    "Use the read-only helper before submitting: import applyCorrection(correction,packet) in a Node read-only command or feed JSON to node helper --check-stdin packetPath. Fix any mechanical errors while drafting in memory; drafting is allowed, but there is one final output submission only. Do not submit known-invalid data.",
+    "One apply_patch write only, to the declared output path. Do not overwrite it. Do not write helper files or artifacts elsewhere. Root alone will integrate accepted deltas and independently validate source completeness and semantics.",
+    "No scores, tags, winners, publication prose, outside facts, web, other debates or further agents. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shells. No paid APIs.",
+    "If scope-limited correction cannot succeed, return a failure report to root without expanding authority. Preserve all rejected bytes."
+  ]
+}

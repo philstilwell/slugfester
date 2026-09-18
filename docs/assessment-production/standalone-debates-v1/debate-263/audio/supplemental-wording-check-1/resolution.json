@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-supplemental-wording-resolution",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "status": "resolved-without-frozen-substance-change",
+  "moveId": "fossil-record-limits-common-descent",
+  "sourceEventRange": [
+    3036,
+    3065
+  ],
+  "frozenInventorySha256": "dba59b14daa6973972690a70c1659ffdc421fd532fe57b9e91ba985b7249be6d",
+  "verificationInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/plan.json",
+      "sha256": "e20dd937cd87741cd106e7ad33f75a18128c11510e7d02a2a4131fbde6dbbf82",
+      "bytes": 1575
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/response.json",
+      "sha256": "2be6063f7fa7e639dbf39466fcfff8ca725b4a80ebdc145722cfc273969a258b",
+      "bytes": 1973
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/audio/supplemental-wording-check-1/execution.json",
+      "sha256": "2ad160ce93b6ed8fb2a6a364e1ada356b29cd89ed51adf33ea77e12331c5d181",
+      "bytes": 620
+    }
+  ],
+  "trigger": "Both section-01 primary reviewers independently flagged caption wording, despite the original inventory's high wording confidence.",
+  "method": "Controller comparison of the frozen passage and both reviewers' stated concerns with a separately acquired, independently transcribed public audio clip. No original captions or leading wording prompt was supplied to the transcription service. No human/direct listening is claimed.",
+  "findings": [
+    {
+      "concern": "extent organisms",
+      "audioTranscript": "extant organisms",
+      "consequence": "Clarifies that the preservation comparison concerns currently existing organisms; the frozen inventory and both judgments already assess that comparison."
+    },
+    {
+      "concern": "Monet to man",
+      "audioTranscript": "monad to man evolution",
+      "consequence": "Clarifies the phrase denoting the universal evolutionary history being rejected; neither review depends on the corrupted proper-name spelling."
+    },
+    {
+      "concern": "soft body plants",
+      "audioTranscript": "soft body plants in the pre-Cambrian rocks",
+      "consequence": "Independent transcription reproduces rather than replaces the phrase. The selected claim and both judgments concern preserved soft-bodied material, not a disputed plant identity, and no taxonomic correction is inferred."
+    },
+    {
+      "concern": "Broken final caption clause",
+      "audioTranscript": "I don't think the evidence supports that.",
+      "consequence": "The disfluent preceding clause remains disfluent; this conclusion and the explicit rejection of universal common ancestry earlier in the same answer agree. No omitted positive endorsement or negation is introduced."
+    }
+  ],
+  "nonMaterialResiduals": [
+    "The audio transcript itself renders an interjection as 'proof' where captions have 'poof'; neither form is used to manufacture substantive evidence.",
+    "The short handoff after the answer contains a stray transcription artifact; it is outside this selected move and is not quotation evidence.",
+    "The stream-copy clip includes preroll. No new absolute word timestamps are asserted.",
+    "This wording check does not establish the empirical truth of Dembski's paleontological claims."
+  ],
+  "materialMeaningResolved": true,
+  "attributionChanged": false,
+  "frozenSourceChanged": false,
+  "inventoryChanged": false,
+  "ratingsChanged": false,
+  "assessmentConfidenceChanged": false,
+  "originalReviewerFlagsPreserved": true,
+  "unresolvedMaterialSourceIssues": 0,
+  "cost": {
+    "pricingSource": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe",
+    "inputTokens": 1129,
+    "outputTokens": 374,
+    "inputUsdPerMillion": 2.5,
+    "outputUsdPerMillion": 10,
+    "knownSuccessfulCallCostUsd": 0.0065625,
+    "maximumPossibleTotalCostUsd": 0.011468,
+    "costBasis": "Successful-call cost calculated from returned usage and published token prices, not an independently inspected invoice. Maximum uses the higher frozen per-minute estimate; there were no transport-uncertain or failed paid calls.",
+    "paidCalls": 1,
+    "retries": 0
+  },
+  "completedAt": "2026-09-17T19:23:46.743Z"
+}

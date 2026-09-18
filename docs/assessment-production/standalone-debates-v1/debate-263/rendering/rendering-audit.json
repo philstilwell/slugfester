@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0-standalone-production-rendering-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "status": "passed-standalone-production-rendering",
+  "completedAt": "2026-09-18T17:25:37.952Z",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/publication/output.json",
+    "sha256": "eb58ac2c598e55b5a2c8b7141bb53a6d5429b03b91b4eab3ea6137e78ce325eb",
+    "bytes": 83289
+  },
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/desktop-collapsed-final.png",
+      "sha256": "92d087770aa42579d7d25b0412941dd982c098b1dfc3598e385aec9a9b53ad6d",
+      "bytes": 303464
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/mobile-collapsed-final.png",
+      "sha256": "b26c35c4ee395f8c576ad16ff62fde3eeb38c6fe6af326484a98a57976142d86",
+      "bytes": 104379
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/desktop-ai-opened-settled-final.png",
+      "sha256": "e444e424f65ed48990016d52649b23ab139386b4c67f71c364860fcd529d1902",
+      "bytes": 386293
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/mobile-ai-opened-settled-final.png",
+      "sha256": "b41c5f3cc679efc2b17cd84a53432e31701ddfec3d1e1f6692bec78c8edfc216",
+      "bytes": 134665
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/desktop-critique-settled-final.png",
+      "sha256": "9dc36b1c33b7db428fd3978e4d8f7a629fd0f43a6db629e3cb2487a5ef617166",
+      "bytes": 302051
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/mobile-critique-settled-final.png",
+      "sha256": "a03545edeeca012d6fbbe5a934d6fe9709a103b71516c7896af0309223cedb64",
+      "bytes": 111266
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/desktop-dembski-final.png",
+      "sha256": "3be3e6b6098e72fa1cf6bdc6e267696a0dd230434ce8963bd6af4d96f55fa2a9",
+      "bytes": 246717
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/mobile-dembski-final.png",
+      "sha256": "66810f29eff0432f87b7dd86920d8f753911859417fd77f0eed306325fefd377",
+      "bytes": 99878
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/desktop-tag-final.png",
+      "sha256": "0193dc08021935b374c9e87dfc7fb7d7054a963a5a230acd2ab8ac830441ddb1",
+      "bytes": 252459
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/desktop-source-final.png",
+      "sha256": "00c8c075baca48dcb23d196225c0ff49cc2b883ad6e02a6d14103a7e22321fd0",
+      "bytes": 276473
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-263/rendering/browser-evidence/mobile-source-final.png",
+      "sha256": "031b91145d663f1efaae4970eb8d9d567b9651f056c8d0f17f64124aa52d49ec",
+      "bytes": 97401
+    }
+  ],
+  "checks": {
+    "all40CardsPresent": true,
+    "correctTitleYearMotionSourcePositionsScoresByline": true,
+    "nineTagsAndTwoOverallLinksRendered": true,
+    "sourceScopeDisclosureReadable": true,
+    "aiDefaultCollapsedPointerEnterSpacePassed": true,
+    "critiquePointerEnterSpaceFocusPassed": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "dembskiBiographyLeftDesktopAboveMobile": true,
+    "portraitsLoaded": true,
+    "homeSearchTopicSitemapBothProfilesContainDebate": true,
+    "rankingsComparisonContainsBothSpeakers": true,
+    "visualInspectionPassed": true
+  },
+  "observations": [
+    "Critiques use focus/hover; Enter and Space preserve the focused popover. The immediately following mobile click reaches the distant AI summary.",
+    "Initial screenshot captures caught CSS opacity transitions. They remain archived; the named settled-final screenshots were captured after observing the target opacity and are the accepted visual evidence. No stylesheet change was needed.",
+    "Console had zero messages, errors, or warnings. All 41 recorded requests through the final tag view succeeded; subsequent profile and debate navigation also loaded successfully without browser errors.",
+    "Dembski has one appearance, below the unchanged default ranking minimum of three, but both comparison controls include him.",
+    "The 80-word source notice explicitly discloses automatic captions, thirteen bounded caption-blind transcriptions, no direct listening/full-audio verification, and excluded host advocacy.",
+    "Temporary browser debate-263 closed; local preview session stopped and port 4263 has no listener."
+  ],
+  "audit": {
+    "viewports": 2,
+    "screenshots": 11,
+    "argumentCardsPerViewport": 40,
+    "acceptedTagsRendered": 9,
+    "acceptedOverallLinksRendered": 2,
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0,
+    "directIncrementalCostUsd": 0
+  }
+}

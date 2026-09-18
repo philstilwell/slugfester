@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-controller-prelock-semantic-audit",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "status": "rejected-before-judgment-material-coverage-omissions",
+  "reviewDate": "2026-09-17",
+  "rawOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/model-output.json",
+    "sha256": "47a3464336d44a87dca6883ce70afa11175e84c5f91c7dfe908a88dfacc74ca4",
+    "bytes": 85156
+  },
+  "expandedCandidateMatchesRawBytes": true,
+  "mechanicalAuditPath": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/mechanical-audit.json",
+  "mechanicalAuditPassed": true,
+  "sourceGatePassed": true,
+  "reason": "A complete partition of transcript event indices is not a complete substantive inventory. The 16-move candidate labels several independently load-bearing replies and concessions as context without a source-based duplication or off-motion rationale. Exactly two moves per side per section is not itself an error, and no larger numerical quota is imposed; rejection is based on identifiable omitted arguments on both sides.",
+  "materialFindings": [
+    {
+      "findingId": "forgiveness-answer-omitted",
+      "sourceWindow": "1:54:52–1:57:59",
+      "eventRange": [2897, 2976],
+      "side": "pro",
+      "linkedSelectedMove": "con-vicarious-redemption-undermines-responsibility",
+      "problem": "The selected Hitchens objection says another person cannot remove responsibility for an act. Dembski directly distinguishes forgiveness of debt from erasure of the historical act, then challenges responsibility on atheistic assumptions and concedes tensions about hell and exclusivity. The candidate explicitly leaves this entire reply as context. This is a new inferential answer to a selected challenge, not a repetition of the earlier incarnation-solidarity argument."
+    },
+    {
+      "findingId": "design-revelation-limit-and-faith-exchange-omitted",
+      "sourceWindow": "1:18:11–1:20:23 and 1:28:30–1:31:45",
+      "sides": ["con", "pro"],
+      "problem": "Hitchens challenges evidence that accommodates every outcome and asks what evidential proof leaves for faith. Dembski answers that design reaches an architect, not the Christian God, gospel, resurrection or faith, while still claiming it points in that direction. These are material method and burden-limitation moves. The candidate calls the challenge contextual and the whole later exchange elaboration, without selecting or explaining the distinct concession and reply."
+    },
+    {
+      "findingId": "closing-ideology-reply-omitted",
+      "sourceWindow": "2:13:31–2:20:28",
+      "eventRange": [3367, 3540],
+      "side": "con",
+      "linkedSelectedMove": "pro-secular-ideology-can-also-rationalize-atrocity",
+      "problem": "Dembski’s closing accusation of asymmetrical treatment of religious and secular atrocities is selected. Hitchens directly contests the classification of Nazism as secular using specific claimed historical evidence, distinguishes atheism from a single moral or political system, and answers the Mother Teresa defense. Calling the entire closing mere reinforcement leaves the selected accusation without its direct response. These historical assertions remain participant claims, not externally verified facts."
+    },
+    {
+      "findingId": "other-large-blocks-need-substantive-review",
+      "sourceWindow": "1:10:40–1:17:59 and 1:32:39–1:38:41",
+      "sides": ["pro", "con"],
+      "problem": "The coverage notes also dismiss objective-morality development and the extended altruism exchange as support or elaboration. A replacement must determine which distinct normative, evolutionary and design-goodness claims require selection, instead of assuming that a shared topical bridge makes a new argument redundant. This is a review requirement, not a prescribed move count or predetermined assessment."
+    }
+  ],
+  "executionReview": {
+    "agentPath": "/root/inventory_263",
+    "sessionId": "01a0b04e-f339-73b2-8366-b6b1f9537132",
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "forkTurns": "none",
+    "sessionRecord": {
+      "path": "/Users/philstilwell/.codex/sessions/2026/09/17/rollout-2026-09-17T12-59-19-01a0b04e-f339-73b2-8366-b6b1f9537132.jsonl",
+      "sha256": "6188bdd3c6425d058129f91bef52fc4e8f278a7e61fc41250cd326c141e26247",
+      "bytes": 2870057
+    },
+    "completeIndexedTranscriptReadUntruncated": true,
+    "sourceReadLineRanges": [[1, 600], [601, 1200], [1201, 1800], [1801, 2400], [2401, 3000], [3001, 3657]],
+    "initialPacketReadTruncations": 2,
+    "packetReadCaution": "The full-packet and combined-range reads were truncated. Separate scope, validator and rubric reads were visible; no complete untruncated reread of the final packet rules is authenticated. The worker’s blanket packet-read attestation is therefore not accepted without qualification.",
+    "abortedInMemoryDraftChecks": [
+      {"timestamp": "2026-09-17T17:04:47.847Z", "error": "long span con-chaotic-cosmos 2580", "outputSubmitted": false},
+      {"timestamp": "2026-09-17T17:07:05.998Z", "error": "quote con-chaotic-cosmos", "outputSubmitted": false}
+    ],
+    "finalSubmissionTimestamp": "2026-09-17T17:08:59.383Z",
+    "finalSubmissions": 1,
+    "submittedOutputOverwritten": false,
+    "apiKeyHandling": "No credential read or metered API call was found in the execution log. Read-only shell commands did not consistently unset API-key environment variables; no claim is made that the shell environment was purged.",
+    "directIncrementalCostUsd": 0
+  },
+  "preservation": {
+    "originalModelOutputUnchanged": true,
+    "readingAuthenticationUnchanged": true,
+    "sourceEvidenceUnchanged": true,
+    "canonicalInventoryCreated": false,
+    "primaryJudgmentsExecuted": false,
+    "scorePassExecuted": false,
+    "publicationProduced": false,
+    "commitCreated": false,
+    "topicBranchPushed": false
+  },
+  "recommendedRecovery": {
+    "status": "requires-user-authorization",
+    "type": "one-fresh-isolated-prelock-inventory-replacement",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "maximumAttempts": 1,
+    "sourceAndIdentityRemainFrozen": true,
+    "priorEvidenceAndRejectedOutputPreserved": true,
+    "scoresRemainUncomputed": true,
+    "proposedOutputDirectory": "docs/assessment-production/standalone-debates-v1/debate-263/inventory/coverage-replacement-1",
+    "reasonAuthorizationRequired": "The initial frozen inventory execution plan authorized one attempt and no retry. Its only final submission is now rejected on substantive coverage. No fresh replacement has been launched under an inferred retry allowance."
+  }
+}

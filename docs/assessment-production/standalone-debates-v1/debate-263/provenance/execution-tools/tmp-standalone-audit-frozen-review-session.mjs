@@ -1,0 +1,67 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import vm from 'node:vm';
+import { fileRecord } from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+
+export function auditFrozenReviewSession(sessionPath, planPath, options = {}) {
+  const plan = JSON.parse(fs.readFileSync(planPath));
+  for (const lock of plan.inputs) assert.equal(fileRecord(lock.path).sha256, lock.sha256, 'Frozen input changed: ' + lock.path);
+  const rows = fs.readFileSync(sessionPath, 'utf8').trim().split('\n').map(JSON.parse);
+  const calls = new Map(rows.filter(r => r.type === 'response_item' && ['function_call','custom_tool_call'].includes(r.payload.type)).map(r => [r.payload.call_id,r]));
+  const callText = r => r?.payload.input ?? r?.payload.arguments ?? '';
+  const unwrap = value => {
+    if (Array.isArray(value)) return value.map(unwrap).join('\n');
+    if (value && typeof value === 'object') return typeof value.output === 'string' ? unwrap(value.output) : typeof value.text === 'string' ? unwrap(value.text) : JSON.stringify(value);
+    if (typeof value !== 'string') return String(value);
+    try { const parsed = JSON.parse(value); if (Array.isArray(parsed) && parsed.every(x => x && typeof x === 'object' && (typeof x.output === 'string' || typeof x.text === 'string'))) return unwrap(parsed); if (parsed && typeof parsed === 'object' && (typeof parsed.output === 'string' || (parsed.type === 'text' && typeof parsed.text === 'string'))) return unwrap(parsed); } catch {}
+    return value;
+  };
+  const returns = rows.filter(r => r.type === 'response_item' && ['function_call_output','custom_tool_call_output'].includes(r.payload.type)).map(r => ({row:r,text:unwrap(r.payload.output),call:calls.get(r.payload.call_id)}));
+  const attemptedSubmissionCalls = [...calls.values()].filter(r => /tools\.apply_patch\(/.test(callText(r)));
+  // A parse failure prevents the entire orchestration cell from executing.
+  // Exclude only a reproduced compile-time SyntaxError with a matching tool error;
+  // runtime failures remain submissions because a write may already have occurred.
+  const preExecutionSubmissionFailures = attemptedSubmissionCalls.filter(r => {
+    const result = returns.find(x => x.row.payload.call_id === r.payload.call_id);
+    if (!result || !/Script failed[\s\S]*Script error:\s*SyntaxError:/.test(result.text)) return false;
+    try { new vm.Script('(async () => {\n' + callText(r) + '\n})'); return false; }
+    catch (error) { return error instanceof SyntaxError; }
+  });
+  const failureIds = new Set(preExecutionSubmissionFailures.map(r => r.payload.call_id));
+  const submissions = attemptedSubmissionCalls.filter(r => !failureIds.has(r.payload.call_id));
+  const firstSubmission = submissions[0]?.ordinal ?? Infinity;
+  const beforeSubmission = returns.filter(r => r.row.ordinal < firstSubmission);
+  const visible = new Set(beforeSubmission.flatMap(r => r.text.split('\n').map(l => l.trim())).filter(Boolean));
+  const inputAuthentication = plan.inputs.map(lock => {
+    const raw = fs.readFileSync(lock.path,'utf8').trimEnd(), lines = [...new Set(raw.split('\n').map(l => l.trim()).filter(Boolean))];
+    const completeDocumentCalls = beforeSubmission.filter(r => r.text.includes(raw)).map(r => r.row.payload.call_id);
+    const missing = completeDocumentCalls.length ? [] : lines.filter(l => !visible.has(l));
+    return {...lock,complete:missing.length===0,uniqueNonemptyLines:lines.length,authenticatedUniqueLines:lines.length-missing.length,missingLineCount:missing.length,completeDocumentCalls,onlyExactVisibleLinesCredited:true};
+  });
+  const sourcePath = plan.sourcePath ?? plan.inputs.find(i=>i.path.endsWith('/indexed-transcript.txt'))?.path;
+  assert(sourcePath);
+  const sourceLines = fs.readFileSync(sourcePath,'utf8').trimEnd().split('\n');
+  const exactVisible = new Set(beforeSubmission.flatMap(r => r.text.split('\n')));
+  const missingEvents = sourceLines.filter(l => !exactVisible.has(l)).map(l => Number(l.split('\t')[0]));
+  const actualModels = rows.filter(r => r.type === 'turn_context').map(r => ({model:r.payload.model,reasoningEffort:r.payload.effort}));
+  assert(actualModels.length && actualModels.every(m => m.model===plan.model.model && m.reasoningEffort===plan.model.reasoningEffort));
+  const outputExists = fs.existsSync(plan.outputPath);
+  assert(outputExists || !options.requireOutput, 'Missing output');
+  const validation = outputExists && options.validateOutput ? options.validateOutput(JSON.parse(fs.readFileSync(plan.outputPath))) : null;
+  return {
+    schemaVersion:'1.0-isolated-frozen-review-execution-audit',
+    status:inputAuthentication.every(i=>i.complete)&&!missingEvents.length?'input-authenticated-controller-review-required':'required-reading-incomplete',
+    debateNumber:plan.debateNumber,debateId:plan.debateId,agentPath:rows.find(r=>r.type==='session_meta')?.payload.agent_path,
+    session:{path:sessionPath,bytes:fs.statSync(sessionPath).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(sessionPath)).digest('hex')},
+    model:plan.model,actualModels,executionPlan:fileRecord(planPath),inputAuthentication,
+    completeRequiredReading:inputAuthentication.every(i=>i.complete)&&!missingEvents.length,
+    sourceReading:{path:sourcePath,expectedEvents:sourceLines.length,authenticatedEvents:sourceLines.length-missingEvents.length,missingEvents,completeBeforeSubmission:!missingEvents.length},
+    output:outputExists?fileRecord(path.relative(process.cwd(),plan.outputPath)):null,validation,
+    submissions:submissions.map(r=>({callId:r.payload.call_id,time:r.timestamp,outputPathPresent:callText(r).includes(plan.outputPath)})),
+    preExecutionSubmissionFailures:preExecutionSubmissionFailures.map(r=>({callId:r.payload.call_id,time:r.timestamp,commandSha256:crypto.createHash('sha256').update(callText(r)).digest('hex'),result:returns.find(x=>x.row.payload.call_id===r.payload.call_id).text,classification:'reproduced-compile-time-syntax-error-no-cell-statements-executed'})),
+    toolCallEvidence:returns.filter(r=>/tools\.exec_command|tools\.write_stdin|tools\.apply_patch/.test(callText(r.call))).map(r=>({callId:r.row.payload.call_id,time:r.row.timestamp,commandSha256:crypto.createHash('sha256').update(callText(r.call)).digest('hex'),commandPreview:callText(r.call).slice(0,1800),outputCharacters:r.text.length,truncated:/tokens truncated|Warning: truncated output/.test(r.text),beforeSubmission:r.row.ordinal<firstSubmission})),
+    attempts:1,retries:0,directIncrementalCostUsd:0,auditedAt:new Date().toISOString()
+  };
+}

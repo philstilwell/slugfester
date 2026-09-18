@@ -54,11 +54,15 @@ const standaloneRegistry = JSON.parse(await readFile(join(root, "docs/assessment
 const assessmentScopeDisclosures = new Map();
 for (const entry of standaloneRegistry.debates) {
   if (!debates.some((debate) => debate.id === entry.debateId)) continue;
+  const scopePath = entry.readerScopeDisclosurePath ?? `${entry.root}/source/formal-rounds-authorization.json`;
+  if (entry.readerScopeDisclosurePath && scopePath !== `${entry.root}/source/reader-scope-disclosure.json`) {
+    throw new Error(`${entry.debateId}: public scope disclosure must stay in its own source directory`);
+  }
   let scope;
   try {
-    scope = JSON.parse(await readFile(join(root, entry.root, "source/formal-rounds-authorization.json"), "utf8"));
+    scope = JSON.parse(await readFile(join(root, scopePath), "utf8"));
   } catch (error) {
-    if (error.code === "ENOENT") continue;
+    if (error.code === "ENOENT" && !entry.readerScopeDisclosurePath) continue;
     throw error;
   }
   const debate = debates.find((item) => item.id === entry.debateId);

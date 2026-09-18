@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-standalone-adjudication-controller-review",
+  "status": "blocked-invalid-first-adjudication-requires-new-authority",
+  "debateNumber": "263",
+  "debateId": "dembski-hitchens-good-god-existence-2010",
+  "reviewedAt": "2026-09-17T20:23:33.110Z",
+  "executionAudit": "docs/assessment-production/standalone-debates-v1/debate-263/adjudication/execution.json",
+  "submittedOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-263/adjudication/output.json",
+    "sha256": "944c167c402d8f09157beefe1ab783c3f81ed56c2ec0a968df8adc50a56ab8d0",
+    "bytes": 10359
+  },
+  "preservedRejectedOutput": "docs/assessment-production/standalone-debates-v1/debate-263/adjudication/failed-attempt-1-output.json",
+  "findings": [
+    {
+      "severity": "blocking",
+      "code": "unsupported-complete-transcript-reading-claim",
+      "detail": "The output claims indexed transcript lines 1–3657 were read. The authenticated execution contains no transcript-content read call and returns zero complete indexed-source lines before the final submission. Counting transcript lines with wc is not reading its content."
+    },
+    {
+      "severity": "blocking",
+      "code": "incomplete-frozen-evidence-reading",
+      "detail": "Only packet lines 1–400 were read directly. Subsequent packet and inventory projections omit fields and contain truncated aggregates; no later call retrieves the omitted material. The required complete inventory and anonymous packet cannot be authenticated."
+    },
+    {
+      "severity": "blocking",
+      "code": "incomplete-required-control-reading",
+      "detail": "The standalone library was read only at lines 1–240 and 880–1040, not completely as required by the frozen instructions."
+    }
+  ],
+  "schemaValidation": {
+    "status": "passed",
+    "disputes": 28
+  },
+  "editorialDisposition": "All 28 resolutions and supplied alternatives were inspected, but schema validity and plausible rationales do not cure the execution failure. No resolution is accepted for scoring.",
+  "preservation": {
+    "originalAdjudicationUnchanged": true,
+    "primaryReviewsUnchanged": true,
+    "acceptedPrecisionOnlyReplacementsUnchanged": true,
+    "inventoryUnchanged": true,
+    "sourceEvidenceUnchanged": true,
+    "audioResolutionsUnchanged": true
+  },
+  "nextAction": {
+    "requiresUserAuthorization": true,
+    "scope": "One fresh isolated gpt-5.6-sol low replacement adjudicator for the same 28 anonymous disputes, with a separate output path and verified complete required reading before submission; no rebuild of primary judgments, inventory, or audio.",
+    "estimatedDirectIncrementalCostUsd": 0
+  },
+  "finalLedgerCreated": false,
+  "scorePassRun": false,
+  "publicationAttempted": false
+}
