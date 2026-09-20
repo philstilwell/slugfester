@@ -1,0 +1,48 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {validateStandalonePrimaryJudgment} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const record=p=>{const bytes=fs.readFileSync(p);return{path:p,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length};};
+const write=(p,x)=>{assert(!fs.existsSync(p),'Preserve existing '+p);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,JSON.stringify(x,null,2)+'\n',{flag:'wx'});};
+const [flag,n]=process.argv.slice(2);assert.equal(flag,'--debate');
+const route=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(route);
+const b=route.root,root=b+'/judgments/exceptional-replacement',plan=read(root+'/execution-plan.json'),inventory=read(plan.inventory.path),manifest=read(b+'/manifest.json');
+for(const lock of [...Object.values(manifest.sourceLocks),...Object.values(manifest.controlLocks),plan.inventory,...plan.inputs,...plan.readingFiles])assert.equal(record(lock.path).sha256,lock.sha256);
+assert(!fs.existsSync(b+'/judgments/execution.json'));
+const precisionRoot=b+'/judgments/precision-replacement',precisionPlan=read(precisionRoot+'/execution-plan.json'),precisionTask=precisionPlan.tasks[0],precisionOutput=read(precisionTask.outputPath),precisionReview=read(precisionRoot+'/'+precisionTask.assignmentId+'/controller-review.json');
+assert.equal(precisionReview.status,'accepted-two-dimension-replacement');assert.equal(record(precisionTask.outputPath).sha256,precisionReview.outputSha256);
+const built=[];
+for(const pass of ['pass-a','pass-b']){
+ const tasks=plan.tasks.filter(t=>t.pass===pass),parts=tasks.map(task=>{
+  const dir=path.dirname(task.packet.path),auth=read(dir+'/output-authentication.json'),review=read(dir+'/controller-review.json');
+  assert.equal(auth.status,'authenticated-output-awaiting-semantic-review');assert.equal(record(task.outputPath).sha256,auth.output.sha256);assert.equal(record(task.outputPath).sha256,review.outputSha256);
+  const output=read(task.outputPath);let acceptedOutput=structuredClone(output),override=null;
+  if(pass==='pass-b'&&task.sectionId===precisionOutput.sectionId){throw new Error('Unexpected overlapping sectionId in precision output; derive match only from exact move IDs');}
+  const targetIds=precisionOutput.replacements.map(r=>r.moveId);
+  const needsPrecision=pass==='pass-b'&&task.kind==='section'&&targetIds.every(id=>output.judgments.some(j=>j.moveId===id));
+  if(needsPrecision){
+   assert.equal(review.status,'rejected-two-precision-fields-caption-error-contamination');
+   for(const item of precisionOutput.replacements){const j=acceptedOutput.judgments.find(x=>x.moveId===item.moveId);j.dimensions[item.dimension]={value:item.value,rationale:item.rationale};}
+   const restored=structuredClone(acceptedOutput);for(const item of precisionOutput.replacements)restored.judgments.find(j=>j.moveId===item.moveId).dimensions[item.dimension]=output.judgments.find(j=>j.moveId===item.moveId).dimensions[item.dimension];assert.deepEqual(restored,output);
+   override={authorization:record(precisionRoot+'/authorization.json'),packet:precisionTask.packet,output:record(precisionTask.outputPath),authentication:record(precisionRoot+'/'+precisionTask.assignmentId+'/output-authentication.json'),review:record(precisionRoot+'/'+precisionTask.assignmentId+'/controller-review.json'),fields:precisionOutput.replacements.map(r=>({moveId:r.moveId,dimension:r.dimension})),allOtherFieldsUnchanged:true};
+  }else assert(['accepted-section-judgment','accepted-burden-judgment'].includes(review.status),task.assignmentId);
+  return{task,output:acceptedOutput,evidence:{assignmentId:task.assignmentId,packet:task.packet,output:record(task.outputPath),authentication:record(dir+'/output-authentication.json'),review:record(dir+'/controller-review.json'),override}};
+ });
+ const sectionParts=parts.filter(p=>p.task.kind==='section'),burden=parts.find(p=>p.task.kind==='burden');assert.equal(sectionParts.length,inventory.sections.length);assert(burden);
+ const js=sectionParts.flatMap(p=>p.output.judgments),checks=sectionParts.flatMap(p=>p.output.sourceReview.checks);assert.equal(js.length,inventory.moves.length);assert.equal(new Set(js.map(j=>j.moveId)).size,inventory.moves.length);
+ const judgment={schemaVersion:'1.0-standalone-primary-judgment',protocolId:'assessment-production-standalone-debate-v1',status:'complete-and-schema-valid',pass,debateNumber:n,debateId:route.debateId,reviewerRole:'isolated-score-blind-primary-judge',assessmentModel:plan.model.displayLabel,reasoningEffort:plan.model.reasoningEffort,inventorySha256:plan.inventory.sha256,isolation:sectionParts[0].output.isolation,judgments:inventory.moves.map(m=>js.find(j=>j.moveId===m.moveId)),burdenCompletionAdjustment:burden.output.burdenCompletionAdjustment,audit:{completeLockedInventoryReviewed:true,allMovesJudgedOnce:true,ratingsOnlyNoCalculatedScores:true,publicationBlind:true,scoreBlind:true},sourceReview:{audioVerified:false,completeTranscriptReviewed:true,checks:inventory.moves.map(m=>checks.find(c=>c.moveId===m.moveId))},readingAuthentication:{eachContextReadCompleteScopedSourceAndInventory:true,contextCount:tasks.length+(pass==='pass-b'?1:0),method:'Authenticated fresh no-history contexts; mutually blind protocol-restricted reads and disjoint writes, not an OS-level sandbox.',directCostUsd:0}};
+ const validation=validateStandalonePrimaryJudgment(judgment,inventory,{expectedPass:pass,expectedInventorySha256:plan.inventory.sha256});
+ const oldPath=b+'/judgments/'+pass+'/output.json',oldAuth=read(b+'/judgments/'+pass+'/controller-audit.json');assert.equal(record(oldPath).sha256,oldAuth.output.sha256);
+ built.push({pass,judgment,validation,parts:parts.map(p=>p.evidence),oldPath,oldHash:oldAuth.output.sha256});
+}
+const passes=[];
+for(const x of built){
+ const assembled=root+'/'+x.pass+'/assembled-output.json';write(assembled,x.judgment);
+ const preserved=b+'/judgments/'+x.pass+'/failed-initial-output.json';assert(!fs.existsSync(preserved));fs.copyFileSync(x.oldPath,preserved,fs.constants.COPYFILE_EXCL);assert.equal(record(preserved).sha256,x.oldHash);
+ fs.copyFileSync(assembled,x.oldPath);assert.equal(record(assembled).sha256,record(x.oldPath).sha256);
+ passes.push({pass:x.pass,outputPath:x.oldPath,outputSha256:record(x.oldPath).sha256,judgmentCount:inventory.moves.length,validationStatus:x.validation.status,failedOriginal:record(preserved),assembledReplacement:record(assembled),shardRecords:x.parts,attempts:1,retries:0,directIncrementalCostUsd:0});
+}
+write(b+'/judgments/execution.json',{schemaVersion:'1.0-standalone-judgment-execution',status:'complete-and-schema-valid',debateNumber:Number(n),debateId:route.debateId,execution:{model:plan.model.model,displayModel:plan.model.displayLabel,reasoningEffort:plan.model.reasoningEffort,authentication:plan.model.authentication,recoveryMode:'authorized-built-in-section-and-burden-replacement',freshContextPerPass:true,freshContextPerShard:true,eachPassUsesMultipleFreshContexts:true,contextsPerPass:{'pass-a':inventory.sections.length+1,'pass-b':inventory.sections.length+2},forkTurns:'none',inventorySha256:plan.inventory.sha256,isolationMethod:'Mechanically assembled fresh no-history section and whole-debate burden contexts, plus one explicitly authorized two-field precision context. Protocol-restricted reads and disjoint writes, not an OS-level sandbox.',replacementAuthorization:record(root+'/authorization.json'),replacementPlan:record(root+'/execution-plan.json'),additionalFieldReplacementPlan:record(precisionRoot+'/execution-plan.json'),apiKeysRemovedForShells:true,semanticAssemblyEdits:0,originalAttemptsPerPass:1,replacementAttemptsPerShard:1,recursiveRetryPermitted:false},passes,audit:{allMovesJudgedOncePerAcceptedPass:true,primaryPassesMutuallyBlind:true,calculatedTotalsAbsent:true,publicationBlind:true,allFailedOriginalBytesPreserved:true,sourceConcernsRequireFormalAudioMapping:true},directIncrementalCostUsd:0,completedAt:new Date().toISOString()});
+console.log(JSON.stringify({status:'assembled-and-validated-without-calculating-scores',passes:passes.map(p=>({pass:p.pass,moves:p.judgmentCount,outputSha256:p.outputSha256}))},null,2));

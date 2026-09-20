@@ -1,0 +1,65 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+const record=p=>{const b=fs.readFileSync(p);return{path:p,sha256:hash(b),bytes:b.length};};
+const unwrap=v=>{if(Array.isArray(v))return v.map(unwrap).join('\n');if(v&&typeof v==='object')return typeof v.output==='string'?unwrap(v.output):typeof v.text==='string'?unwrap(v.text):JSON.stringify(v);if(typeof v!=='string')return String(v);try{const p=JSON.parse(v);if(Array.isArray(p)&&p.every(x=>x&&typeof x==='object'&&(typeof x.text==='string'||typeof x.output==='string')))return unwrap(p);if(p&&typeof p==='object'&&(typeof p.output==='string'||p.type==='text'&&typeof p.text==='string'))return unwrap(p);return v;}catch{return v;}};
+export function auditReading(number,assignmentId,session,lane='exceptional-replacement'){
+ const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert(rec);
+ const root=rec.root+'/judgments/'+lane,plan=read(root+'/execution-plan.json'),task=plan.tasks.find(t=>t.assignmentId===assignmentId);assert(task);
+ assert.equal(record(task.packet.path).sha256,task.packet.sha256);const packet=read(task.packet.path);
+ for(const lock of [plan.inventory,plan.source,...plan.inputs,...plan.readingFiles])assert.equal(record(lock.path).sha256,lock.sha256,lock.path);
+ const all=fs.readFileSync(session),rows=all.toString().trim().split('\n').map(JSON.parse);const command=r=>r?.payload.input??r?.payload.arguments??'';
+ const calls=new Map(rows.filter(r=>r.type==='response_item'&&['function_call','custom_tool_call'].includes(r.payload.type)).map(r=>[r.payload.call_id,r]));
+ const submissions=[...calls.values()].filter(r=>command(r).includes('tools.apply_patch('));
+ const first=submissions[0]?.ordinal??Infinity;
+ const returns=rows.filter(r=>r.type==='response_item'&&['function_call_output','custom_tool_call_output'].includes(r.payload.type)&&r.ordinal<first).map(r=>({row:r,call:calls.get(r.payload.call_id),text:unwrap(r.payload.output)}));
+ const reads=returns.filter(r=>command(r.call).includes('exec_command'));
+ const evidence=[task.packet,...plan.readingFiles].map(lock=>{const raw=fs.readFileSync(lock.path,'utf8').trimEnd();const eligible=reads.filter(r=>command(r.call).includes(lock.path));const found=eligible.filter(r=>r.text.includes(raw));const visible=new Set(eligible.flatMap(r=>r.text.split('\n').map(l=>l.trim())));const missing=[...new Set(raw.split('\n').map(l=>l.trim()).filter(Boolean))].filter(l=>!visible.has(l));return{...lock,complete:found.length>0||missing.length===0,missingUniqueLines:missing.length,visibleInCallIds:(found.length?found:eligible).map(r=>r.row.payload.call_id)};});
+ const models=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,effort:r.payload.effort}));assert(models.length&&models.every(m=>m.model===plan.model.model&&m.effort===plan.model.reasoningEffort));
+ const metadata=rows.find(r=>r.type==='session_meta').payload;
+ return{schemaVersion:'1.0-replacement-reading-authentication',status:evidence.every(x=>x.complete)?'passed':'incomplete',debateNumber:number,assignmentId,agentPath:metadata.agent_path,actualModels:models,session:record(session),packet:task.packet,readingFiles:evidence,completeReadingBeforeSubmission:evidence.every(x=>x.complete),submissions:submissions.map(r=>({callId:r.payload.call_id,timestamp:r.timestamp,authorizedPath:command(r).includes(task.outputPath)})),readCalls:reads.map(r=>({callId:r.row.payload.call_id,command:command(r.call),outputCharacters:r.text.length})),directCostUsd:0};
+}
+export function validatePart(packet,out){
+ const equals=(a,b)=>assert.deepEqual(a,b);
+ for(const key of ['schemaVersion','status','debateNumber','debateId','pass','assignmentId','kind','assessmentModel','reasoningEffort','inventorySha256','isolation','readingAuthentication','directCostUsd'])equals(out[key],packet.outputShape[key]);
+ equals(Object.keys(out).sort(),Object.keys(packet.outputShape).sort());
+ const findings=[];
+ if(packet.kind==='section'){
+  equals(out.judgments.map(j=>j.moveId),packet.expectedMoveIds);
+  for(const j of out.judgments){assert(['high','medium','low'].includes(j.assessmentConfidence));const dims=['logicalCoherence','evidenceWarrant','responsiveness','relevanceBurden','precisionClarity','calibrationCharity'];equals(Object.keys(j.dimensions).sort(),dims.sort());
+   const reasons=[];for(const [d,v]of Object.entries(j.dimensions)){equals(Object.keys(v).sort(),['rationale','value']);assert(Number.isInteger(v.value)&&v.value>=0&&v.value<=100);assert(typeof v.rationale==='string'&&v.rationale.length>=40);reasons.push(v.rationale.replace(/\b(?:logical coherence|evidence and warrant|responsiveness|relevance and burden|precision and clarity|calibration and charity)\b/gi,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim().toLowerCase());}
+   assert.equal(new Set(reasons).size,6,'Repeated criterion rationale: '+j.moveId);
+   findings.push({moveId:j.moveId,distinctCriterionTexts:6});
+  }
+  equals(out.sourceReview.checks.map(c=>c.moveId),packet.expectedMoveIds);assert.equal(out.sourceReview.audioVerified,false);assert.equal(out.sourceReview.completeTranscriptReviewed,true);
+  for(const c of out.sourceReview.checks){assert.equal(typeof c.attributionSupported,'boolean');assert.equal(typeof c.materialUncertainty,'boolean');assert(typeof c.rationale==='string'&&c.rationale.length>=30);}
+ }else if(packet.kind==='dimension'){
+  equals(out.replacements.map(x=>({moveId:x.moveId,dimension:x.dimension})),packet.writableDimensionRecords);
+  for(const x of out.replacements){equals(Object.keys(x).sort(),['dimension','moveId','rationale','value']);assert(Number.isInteger(x.value)&&x.value>=0&&x.value<=100);assert(typeof x.rationale==='string'&&x.rationale.length>=40);}
+ }else{
+  const inv=read('docs/assessment-production/standalone-debates-v1/debate-'+packet.debateNumber+'/inventory/inventory.json');
+  equals(Object.keys(out.burdenCompletionAdjustment).sort(),['con','pro']);
+  for(const side of ['pro','con']){const a=out.burdenCompletionAdjustment[side],e=a.eligibility;equals(Object.keys(a).sort(),['eligibility','rationale','value']);assert(Number.isInteger(a.value)&&a.value>=-5&&a.value<=5);assert(typeof a.rationale==='string'&&a.rationale.length>=40);
+   const keys=['distinctDebateWideConsequence','affectsBurdenCompletion','notAlreadyScored','affectedBurdenIds','completionCriterion','relatedMoveIds','distinctConsequence','alreadyCapturedBy','counterfactual'];equals(Object.keys(e).sort(),keys.sort());
+   for(const k of ['distinctDebateWideConsequence','affectsBurdenCompletion','notAlreadyScored'])assert.equal(typeof e[k],'boolean');
+   for(const k of ['affectedBurdenIds','relatedMoveIds','alreadyCapturedBy'])assert(Array.isArray(e[k]));
+   for(const id of e.relatedMoveIds)assert(inv.moves.some(m=>m.moveId===id));
+   if(e.alreadyCapturedBy.length||!e.notAlreadyScored)assert.equal(a.value,0);
+   if(a.value!==0){assert(e.distinctDebateWideConsequence&&e.affectsBurdenCompletion&&e.notAlreadyScored&&e.affectedBurdenIds.length&&e.relatedMoveIds.length&&!e.alreadyCapturedBy.length);for(const k of ['completionCriterion','distinctConsequence','counterfactual'])assert(typeof e[k]==='string'&&e[k].length>=30);}
+  }
+ }
+ return{status:'mechanical-schema-and-distinct-text-check-passed',judgmentCount:out.judgments?.length??0,findings,semanticControllerReviewStillRequired:true};
+}
+if(process.argv[1]&&path.resolve(process.argv[1])===path.resolve(import.meta.filename)){
+ const [flag,number,assignment,agent,mode='reading',lane='exceptional-replacement']=process.argv.slice(2);assert.equal(flag,'--debate');
+ const sessionRoot='/Users/philstilwell/.codex/sessions/2026/09/19';
+ const matches=fs.readdirSync(sessionRoot).filter(f=>f.endsWith('.jsonl')).map(f=>path.join(sessionRoot,f)).filter(p=>{const fd=fs.openSync(p,'r'),b=Buffer.alloc(32768);const n=fs.readSync(fd,b,0,b.length,0);fs.closeSync(fd);try{return JSON.parse(b.subarray(0,n).toString().split('\n')[0]).payload.agent_path==='/root/'+agent;}catch{return false;}});assert.equal(matches.length,1,agent);
+ const audit=auditReading(number,assignment,matches[0],lane);
+ const root='docs/assessment-production/standalone-debates-v1/debate-'+number+'/judgments/'+lane+'/'+assignment;
+ if(mode==='output'){assert.equal(audit.status,'passed');assert.equal(audit.submissions.length,1);assert(audit.submissions[0].authorizedPath);const packet=read(root+'/packet.json');audit.output=record(packet.outputPath);audit.mechanicalValidation=validatePart(packet,read(packet.outputPath));audit.status='authenticated-output-awaiting-semantic-review';}
+ const dest=root+'/'+(mode==='reading'?'reading-authentication-v2':mode==='reading-recheck'?'reading-authentication-v3':'output-authentication')+'.json';assert(!fs.existsSync(dest),'Preserve prior authentication');fs.writeFileSync(dest,JSON.stringify(audit,null,2)+'\n',{flag:'wx'});
+ console.log(JSON.stringify({status:audit.status,assignmentId:assignment,agentPath:audit.agentPath,session:audit.session.path,completeInputs:audit.readingFiles.filter(x=>x.complete).length,expectedInputs:audit.readingFiles.length,missing:audit.readingFiles.filter(x=>!x.complete).map(x=>x.path),submissions:audit.submissions,validation:audit.mechanicalValidation??null,auditPath:dest},null,2));
+}

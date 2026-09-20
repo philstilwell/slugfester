@@ -7,6 +7,7 @@ import path from "node:path";
 
 import { debates } from "../src/data/debates.js";
 import { openTeamRun } from "./lib/assessment-standalone-team-pipeline-v1.mjs";
+import { validateEditorScopedSource } from "./lib/assessment-editor-scoped-source.mjs";
 import {
   STANDALONE_PROTOCOL_ID,
   STANDALONE_ROOT,
@@ -129,6 +130,10 @@ const absolute = (relative) => path.join(ROOT, relative);
 const bytes = (relative) => readFileSync(absolute(relative));
 const json = (relative) => JSON.parse(readFileSync(absolute(relative), "utf8"));
 const VERSIONED_CONTROL_SNAPSHOTS = new Map([
+  [
+    "scripts/audit-assessment-production-standalone-v1.mjs\u0000926859709525f55313f413a398ff420d8c61b884dfbeac08b42854c1dd62fad5",
+    "docs/assessment-production/standalone-debates-v1/control-snapshots/926859709525f55313f413a398ff420d8c61b884dfbeac08b42854c1dd62fad5/audit-assessment-production-standalone-v1.mjs"
+  ],
   [
     "scripts/audit-assessment-production-standalone-content-parity.mjs\u0000966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec",
     "docs/assessment-production/standalone-debates-v1/control-snapshots/966d8c2939f65d5fb5e3e3bffecd43170356335b2c99150ccdb27214c10f08ec/audit-assessment-production-standalone-content-parity.mjs"
@@ -595,6 +600,12 @@ function validateFrozenInputBoundary({
   const inventoryValidation = validateStandaloneInventory(inventory, events, {
     repositoryOnly
   });
+  if (authorization.identity.editorApprovedScope || selectedRegistryRecord.editorScopePath) {
+    assert.equal(selectedRegistryRecord.editorScopePath, `${DEBATE_ROOT}/source/editor-scope.json`);
+    assert.equal(manifest.sourceLocks.editorScope.path, selectedRegistryRecord.editorScopePath);
+    assert.deepEqual(json(selectedRegistryRecord.editorScopePath), authorization.identity.editorApprovedScope);
+    validateEditorScopedSource({ authorization, sourceLock, inventory });
+  }
   const primarySpeakerScopeValidation =
     selectedRegistryRecord.validationProfile ===
     "semantic-balanced-capacity-primary-speaker-v1"

@@ -1,0 +1,36 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {pathToFileURL} from 'node:url';
+import {checkDraftPortion} from './tmp-current-review-draft-portion.mjs';
+import {checkPublication} from './tmp-current-check-publication.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+export function compilePublicationDraft(number) {
+  const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert(rec);
+  const p=read(rec.root+'/publication/input-bundle.json');
+  assert(!fs.existsSync(p.outputPath),'Final output already submitted');
+  const c=structuredClone(p.lockedCandidateSkeleton),l=read(p.ledgerPath);
+  for(const s of c.sections){
+    const part=read(rec.root+'/publication/author-draft-portions/'+s.sectionId+'.json');
+    checkDraftPortion(number,s.sectionId,part.cards);
+    const byId=new Map(part.cards.map(d=>[d.ledgerMoveId,d]));
+    for(const e of s.exchanges)for(const side of ['pro','con'])if(e[side]){
+      const d=byId.get(e[side].ledgerMoveId);assert(d);
+      for(const key of ['role','words','critique']) e[side][key]=d[key];
+    }
+  }
+  const rest=read(rec.root+'/publication/author-draft-portions/remaining-prose.json').prose;
+  assert.deepEqual(Object.keys(rest).sort(),['summary','sourceNote','scoringNote','quotes','overall','logicalExtension','noveltyMap'].sort());
+  for(const key of ['summary','sourceNote','scoringNote','quotes','overall','logicalExtension'])c[key]=rest[key];
+  const sourceQuoteAudit=['pro','con'].map(side=>{
+    const text=c.quotes[side].text;
+    const m=l.moves.find(m=>m.side===side&&m.quoteEligibleExactSpans.some(q=>q.includes(text)));
+    assert(m,'Quote not eligible');
+    return {side,speaker:c.sides[side].speaker,moveId:m.moveId,text,sourcePath:p.ledgerPath,transcriptPath:p.transcriptPath,startEvent:m.sourceSpan.startEvent,endEvent:m.sourceSpan.endEvent,startMs:m.sourceSpan.startMs,endMs:m.sourceSpan.endMs,quoteEligibleExactSpan:m.quoteEligibleExactSpans.find(q=>q.includes(text)),exactMatch:true};
+  });
+  const output={};
+  for(const k of ['schemaVersion','protocolId','status','debateNumber','debateId'])output[k]=p.outputRequirements[k];
+  Object.assign(output,{candidate:c,sourceQuoteAudit,noveltyMap:rest.noveltyMap,audit:p.outputRequirements.audit});
+  checkPublication(output,p);
+  return output;
+}
+if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href&&process.argv[2]==='--debate')console.log(JSON.stringify(compilePublicationDraft(process.argv[3]),null,2));

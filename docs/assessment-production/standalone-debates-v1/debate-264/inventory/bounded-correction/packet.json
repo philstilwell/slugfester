@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0-bounded-score-blind-inventory-correction",
+  "debateNumber": "264",
+  "debateId": "chopra-dawkins-consciousness-purpose-spirituality-2013",
+  "status": "frozen-before-one-correction-attempt",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "createdAt": "2026-09-19T20:45:32.195Z",
+  "authorizationBasis": "Routine pre-judgment source-exactness and independently recomputed capacity correction under the current single-debate runbook; the failed candidate has not been accepted or judged.",
+  "baseline": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-264/inventory/source-expanded-candidate.json",
+    "sha256": "c80a61acf03f98526469017ed04ad5d95987b72d388bcdf9f16f25201d6afed7",
+    "bytes": 131686
+  },
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/inventory/packet.json",
+      "sha256": "b837d35a76ba753524ec27c2f9440d7ecfc0a67d8151fb4a1e5f0ab8c3081e43",
+      "bytes": 42444
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/inventory/mechanical-audit.json",
+      "sha256": "d67359a0a24af3acbb397f95c34b33eaf17c8d59e5ed3bc918fa29b526425bc0",
+      "bytes": 32845
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/source/editor-scope.json",
+      "sha256": "b4cd6d97d8a915dda4b228ef157ce64a4ed3f1e05f8bc48ea4ad3d875bd39a86",
+      "bytes": 3715
+    },
+    {
+      "path": ".assessment-cache/captions/BiwLrxPb1fE/indexed-transcript.txt",
+      "sha256": "4d582acdf797dfd09c53ac8d6544748b5fa1d8177b25a6a8dd4d79fbcfd8cc48",
+      "bytes": 74137
+    },
+    {
+      "path": ".assessment-cache/captions/BiwLrxPb1fE/events.json",
+      "sha256": "0db0562cca0e9f822faeb1fc7819814783762b01fc21277448017193739bea3a",
+      "bytes": 142818
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/authorization.json",
+      "sha256": "64a5df28768e3958349fd37b5c14882919ea30db89c476cb3c34857e213844de",
+      "bytes": 7941
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/source/source-lock.json",
+      "sha256": "5703ba0a57de685d99007888c0f260cb950c7bec4f56b257cf82cb1be906da49",
+      "bytes": 10923
+    },
+    {
+      "path": "tmp-current-inventory-correction.mjs",
+      "sha256": "c49d67890cf70d78c57a7a3128cd2a2c17d6cbec5f9735462eb73a7b7d7ee899",
+      "bytes": 5830
+    }
+  ],
+  "eventsPath": ".assessment-cache/captions/BiwLrxPb1fE/events.json",
+  "indexedSourcePath": ".assessment-cache/captions/BiwLrxPb1fE/indexed-transcript.txt",
+  "authorizationPath": "docs/assessment-production/standalone-debates-v1/debate-264/authorization.json",
+  "sourceLockPath": "docs/assessment-production/standalone-debates-v1/debate-264/source/source-lock.json",
+  "outputPath": "/Users/philstilwell/Documents/SLUGFESTER.com/.assessment-cache/debate-264-worktree/docs/assessment-production/standalone-debates-v1/debate-264/inventory/bounded-correction/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "outputShape": {
+    "debateNumber": "264",
+    "debateId": "chopra-dawkins-consciousness-purpose-spirituality-2013",
+    "baselineSha256": "exact baseline SHA",
+    "moves": "one per original move in original order: moveId,startEvent,endEvent,quoteEligibleExactSpans,evidenceRationale (80+ chars),longerCompleteArgumentRationale (empty unless necessary, 100+ chars for >2200),attributionConfidence (may lower, never raise),attributionRationale (40+ chars)",
+    "balanceRationale": "80+ characters, exact counts independently derived by controller",
+    "sectionRationales": "one per unchanged section in section order: sectionId,rationale; 100+ characters for any fourth row, 40+ otherwise"
+  },
+  "rules": [
+    "Read the complete indexed source, baseline semantic inventory, original packet and correction helper visibly before drafting; other debates, external research, scores and tags are forbidden.",
+    "Preserve every selected move ID, speaker, side, claim, reason, inference, importance, burden link, response link, section assignment, section weight and material-wording confidence. Do not add, delete, merge, split or reinterpret moves. If evidence cannot support the original semantic fields inside the frozen scope, report that substantive blocker instead of forcing a correction.",
+    "Repair minimal exact span endpoints and quotations, including all known non-exact quotes and all intersecting boundaries. The first attempt selected event 1188 into an exclusion and began the religion card at excluded event 1234; no corrected span may overlap any frozen excluded interval. Do not change those exclusion intervals.",
+    "Audit quotation ownership in mixed speech; a Dawkins card must not quote Chopra as though the words were his, and a quoted passage read by Dawkins from Chopra should not be mistaken for his own assertion. Prefer a clear owned challenge over a quotation of an opponent.",
+    "Keep spans to the smallest complete passage that supports the existing claim and load-bearing reason; do not retain whole turns merely for context. Source context is already available in full. If a coherent combined move genuinely requires >2200 characters, explain the specific necessity.",
+    "Count tables will be rebuilt by the controller. Give a source-led rationale for the existing four con cards in consciousness-and-emergence and the balanced four-row transcendence section; other sections remain unchanged. Do not manufacture symmetry.",
+    "Only create the declared correction output once via apply_patch. No scripts, other outputs, external calls, credentials, or overwriting. Before the single final submission validate your draft in memory by piping JSON to node tmp-current-inventory-correction.mjs --check-stdin PACKET. This read-only helper checks every scope, quote, count and semantic-preservation constraint without any score calculation.",
+    "Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shell commands. All subscription-backed work has zero direct incremental cost."
+  ]
+}

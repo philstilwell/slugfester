@@ -1,0 +1,96 @@
+{
+  "status": "usage-based-estimate-revised-within-cap",
+  "recordedAt": "2026-09-19T20:52:06.673Z",
+  "debateNumber": "264",
+  "basis": "Provider-reported input and output tokens priced at official model-page rates; not an independently reconciled invoice.",
+  "inputUsdPerMillion": 2.5,
+  "outputUsdPerMillion": 10,
+  "source": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+  "sourceRecovery": [
+    {
+      "response": {
+        "path": "output/transcribe/debate-264-source/opening-response.json",
+        "sha256": "3e87ce729455c5534bde2d45d834cefc211d3e5bf91279893d0fd69b4cd1ef99",
+        "bytes": 3831
+      },
+      "usage": {
+        "input_tokens": 2978,
+        "output_tokens": 949,
+        "total_tokens": 3927,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2978,
+          "text_tokens": 0
+        }
+      },
+      "costFromReportedTokensUsd": 0.016935
+    },
+    {
+      "response": {
+        "path": "output/transcribe/debate-264-source/poll-response.json",
+        "sha256": "be08289705baa7ea98057307589bff5ceca497dfbf38a8d37c8c7a93d8713f7b",
+        "bytes": 1509
+      },
+      "usage": {
+        "input_tokens": 1013,
+        "output_tokens": 344,
+        "total_tokens": 1357,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 1013,
+          "text_tokens": 0
+        }
+      },
+      "costFromReportedTokensUsd": 0.0059725
+    }
+  ],
+  "completedVerificationSample": [
+    {
+      "clipId": "clip-01",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-01.json",
+        "sha256": "d337603bfce3c39fa34f84851bc9cfb6431a15626517d1dd7dcf00c252459b2e",
+        "bytes": 8241
+      },
+      "usage": {
+        "input_tokens": 3731,
+        "output_tokens": 4858,
+        "total_tokens": 8589,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3458,
+          "text_tokens": 273
+        }
+      },
+      "costFromReportedTokensUsd": 0.0579075
+    },
+    {
+      "clipId": "clip-02",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-02.json",
+        "sha256": "165f7f7890d12b0a88d8d4a46587477536942aec23e3f7254fa2c2003908096d",
+        "bytes": 1887
+      },
+      "usage": {
+        "input_tokens": 414,
+        "output_tokens": 444,
+        "total_tokens": 858,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 376,
+          "text_tokens": 38
+        }
+      },
+      "costFromReportedTokensUsd": 0.005475000000000001
+    }
+  ],
+  "sourceRecoveryCostFromReportedTokensUsd": 0.022907499999999997,
+  "linearCumulativeProjectionUsd": 0.6340407156646899,
+  "conservativeCommunicatedRangeUsd": [
+    0.7,
+    0.8
+  ],
+  "capUsd": 1,
+  "originalPlanUnchanged": true,
+  "noRetries": true
+}

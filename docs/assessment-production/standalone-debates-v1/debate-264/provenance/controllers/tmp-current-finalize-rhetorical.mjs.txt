@@ -1,0 +1,89 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+import { debates } from './src/data/debates.js';
+import { fileRecord } from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+import { checkRhetoricalReview, checkRhetoricalAdjudication } from './tmp-current-check-rhetorical.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const serialize=o=>JSON.stringify(o,null,2)+'\n';
+const textRecord=(path,text)=>({path,sha256:crypto.createHash('sha256').update(text).digest('hex'),bytes:Buffer.byteLength(text)});
+const allMoves=d=>d.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean)));
+
+// This creates a mechanical application plan only after the controller has
+// independently accepted every current adjudicated catalog decision.
+export function finalizeRhetoricalFiles(debateNumber){
+ const registryPath='docs/assessment-production/standalone-debates-v1/registry.json';
+ const registry=read(registryPath),rec=registry.debates.find(r=>r.debateNumber===debateNumber);assert(rec);
+ const root=rec.root,base=root+'/publication/rhetorical-tag-review-1',publicationPath=root+'/publication/output.json';
+ const routes=fs.existsSync(base+'/effective-passes.json')?read(base+'/effective-passes.json').directories:{'pass-a':'pass-a','pass-b':'pass-b'};
+ for(const pass of ['pass-a','pass-b'])assert(routes[pass]===pass||new RegExp('^'+pass+'/replacement-[1-9][0-9]*$').test(routes[pass]));
+ const packet=read(base+'/packet.json'),a=read(base+'/'+routes['pass-a']+'/output.json'),b=read(base+'/'+routes['pass-b']+'/output.json');
+ checkRhetoricalReview(a,packet);checkRhetoricalReview(b,packet);
+ const adjPacket=read(base+'/adjudication/input.json'),adjudication=read(base+'/adjudication/output.json');
+ checkRhetoricalAdjudication(adjudication,adjPacket);
+ const controllerPath=base+'/controller-definition-check.json',controller=read(controllerPath);
+ assert.equal(controller.status,'accepted-for-rhetorical-tag-application');
+ assert.deepEqual(controller.reviewedCandidateKeys,adjPacket.expectedCandidateKeys);
+ assert.equal(controller.adjudication.sha256,fileRecord(base+'/adjudication/output.json').sha256);
+ assert(Array.isArray(controller.controllerOverrides));
+ const catalog=read(base+'/catalog-snapshot.json');
+ const overrides=new Map();
+ for(const override of controller.controllerOverrides){
+  assert(!overrides.has(override.candidateKey));
+  const prior=adjudication.resolutions.find(r=>r.candidateKey===override.candidateKey);assert(prior);
+  assert.equal(override.fromDecision,prior.decision);assert.equal(override.toDecision,'rejected');
+  assert.equal(override.exactCatalogDefinition,catalog.find(d=>d.type===prior.type&&d.label===prior.label)?.definition);
+  assert(override.basisMoveIds.length>0&&override.basisMoveIds.every(id=>packet.moves.some(m=>m.moveId===id)));
+  if(prior.moveId)assert.deepEqual(override.basisMoveIds,[prior.moveId]);
+  assert(override.rationale.split(/\s+/).length>=20);
+  overrides.set(override.candidateKey,override);
+ }
+ const contexts=[['blind-review-a',routes['pass-a'],base+'/packet.json'],['blind-review-b',routes['pass-b'],base+'/packet.json'],['anonymous-adjudication','adjudication',base+'/adjudication/input.json']].map(([role,dir,input])=>{
+  const e=read(base+'/'+dir+'/execution.json');assert(e.completeRequiredReading);assert.equal(e.submissions.length,1);assert.equal(e.attempts,1);assert.equal(e.retries,0);assert.equal(e.output.sha256,fileRecord(base+'/'+dir+'/output.json').sha256);
+  return{role,input:fileRecord(input),output:fileRecord(base+'/'+dir+'/output.json'),authentication:fileRecord(base+'/'+dir+'/execution.json'),attempts:1,retries:0};
+ });
+ const priorText=fs.readFileSync(publicationPath,'utf8'),publication=JSON.parse(priorText),candidate=publication.candidate;
+ const referenceNumbers=read(root+'/publication/editorial-depth-benchmark.json').referenceWindow.debateNumbers;const baseline=referenceNumbers.map(n=>debates.find(d=>d.number===n));assert.equal(baseline.length,25);assert(baseline.every(Boolean));assert(baseline.every(d=>Number(d.number)<Number(debateNumber)&&!registry.debates.some(r=>r.debateNumber===d.number)));
+ const baselineRows=baseline.map(d=>({number:d.number,moves:allMoves(d).length,tagged:allMoves(d).filter(m=>m.tags.length).length,tags:allMoves(d).reduce((s,m)=>s+m.tags.length,0)}));
+ const tagCounts=baselineRows.map(d=>d.tags).sort((a,b)=>a-b),moveCount=baselineRows.reduce((s,d)=>s+d.moves,0),tagged=baselineRows.reduce((s,d)=>s+d.tagged,0);
+ const baselineComparison={debateCount:baseline.length,debateNumbers:baseline.map(d=>d.number),moves:moveCount,taggedArguments:tagged,tags:baselineRows.reduce((s,d)=>s+d.tags,0),taggedArgumentRate:Number((tagged/moveCount).toFixed(3)),perDebateTagMinimum:tagCounts[0],perDebateTagMedian:tagCounts[Math.floor(tagCounts.length/2)],perDebateTagMaximum:tagCounts.at(-1),zeroTagDebates:baselineRows.filter(d=>!d.tags).map(d=>d.number),interpretation:'Independent consistency check only; no tag-rate target or quota was used.'};
+ const resolutions=adjudication.resolutions.map(r=>overrides.has(r.candidateKey)?{...r,decision:overrides.get(r.candidateKey).toDecision,rationale:overrides.get(r.candidateKey).rationale,originalAdjudicationDecision:r.decision,controllerDefinitionCorrection:true}:r),moveReviews=resolutions.filter(r=>r.moveId),overallReviews=resolutions.filter(r=>r.blunderId);
+ const acceptedTags=moveReviews.filter(r=>r.decision==='accepted').map(({moveId,label,type,url,context,rationale})=>({moveId,label,type,url,context,rationale}));
+ const acceptedOverallBlunderLinks=overallReviews.filter(r=>r.decision==='accepted');
+ const files={},executionPath=base+'/execution.json';
+ const model=read(root+'/manifest.json').modelSettings;
+ files[executionPath]=serialize({schemaVersion:'1.0-standalone-rhetorical-review-execution',status:'passed-two-blind-reviews-adjudication-and-final-definition-check',debateNumber,debateId:rec.debateId,model:{label:model.displayLabel,slug:model.model,reasoningEffort:model.reasoningEffort,authentication:'ChatGPT subscription'},isolation:{existingTagsUnavailable:true,reviewerOutputsUnavailableToOtherReviewer:true,scoresUnavailable:true,forkTurns:'none'},catalogSnapshot:fileRecord(base+'/catalog-snapshot.json'),sourcePacket:fileRecord(base+'/packet.json'),contexts,controllerDefinitionCheck:fileRecord(controllerPath),audit:{blindReviews:2,anonymousAdjudicators:1,retries:0,judgmentChanges:0,scoreChanges:0,critiqueChanges:0,completeUnionCount:resolutions.length},directIncrementalCostUsd:0});
+ if(fs.existsSync(base+'/effective-passes.json')){
+  const execution=JSON.parse(files[executionPath]);
+  execution.effectivePassRouting=fileRecord(base+'/effective-passes.json');
+  execution.authorizedReplacements=['pass-a','pass-b'].filter(pass=>routes[pass]!==pass).map(pass=>({pass,failedOriginalOutput:fileRecord(base+'/'+pass+'/output.json'),failedOriginalReview:fileRecord(base+'/'+pass+'/controller-review.json'),replacementDirectory:routes[pass],authorization:fileRecord(base+'/'+routes[pass]+'/authorization.json'),recoveryCompletion:fileRecord(base+'/'+routes[pass]+'/recovery-completion.json')}));
+  execution.audit.retries=0;
+  execution.audit.authorizedReplacementContexts=execution.authorizedReplacements.length;
+  execution.audit.attemptScope='One submission in each accepted isolated context; failed earlier contexts remain preserved and explicitly routed.';
+  files[executionPath]=serialize(execution);
+ }
+ const auditPath=base+'/audit.json';
+ files[auditPath]=serialize({schemaVersion:'1.0-standalone-rhetorical-tag-audit',status:'passed-rhetorical-tag-review',debateNumber,debateId:rec.debateId,independentReview:{executionPath,executionSha256:textRecord(executionPath,files[executionPath]).sha256},baselineComparison,reviewedMoveIds:packet.moves.map(m=>m.moveId),completeCandidateUnion:resolutions,candidateReviews:moveReviews,overallBlunderCandidateReviews:overallReviews,acceptedTags,acceptedOverallBlunderLinks,controllerOverrides:controller.controllerOverrides,audit:{judgmentChanges:0,scoreChanges:0,moveChanges:0,acceptedTagCount:acceptedTags.length,rejectedCandidateCount:moveReviews.filter(r=>r.decision==='rejected').length,overallBlunderRejectedCandidateCount:overallReviews.filter(r=>r.decision==='rejected').length}});
+ const changed=[];
+ for(const [si,s]of candidate.sections.entries())for(const [ei,e]of s.exchanges.entries())for(const side of ['pro','con'])if(e[side]){
+  const m=e[side];assert.equal(m.tags.length,0);const tags=acceptedTags.filter(t=>t.moveId===m.ledgerMoveId).map(({label,type,url,context})=>({label,type,url,context}));if(tags.length){m.tags=tags;changed.push('candidate.sections['+si+'].exchanges['+ei+'].'+side+'.tags');}
+ }
+ for(const side of ['pro','con'])for(const [index,blunder]of candidate.overall[side].blunders.entries()){
+  assert.equal(blunder.links.length,0);const links=acceptedOverallBlunderLinks.filter(r=>r.blunderId==='overall-'+side+'-blunder-'+(index+1)).map(({label,url})=>({label,url}));if(links.length){blunder.links=links;changed.push('candidate.overall.'+side+'.blunders['+index+'].links');}
+ }
+ const stripped=o=>{const c=structuredClone(o);for(const m of allMoves(c.candidate))m.tags=[];for(const side of ['pro','con'])for(const b of c.candidate.overall[side].blunders)b.links=[];return c;};
+ assert.deepEqual(stripped(publication),JSON.parse(priorText));
+ rec.contentParity={auditPath:root+'/publication/content-parity-audit.json'};
+ rec.rhetoricalTagReview={auditPath,executionPath};
+ if(changed.length){
+  const priorPath=base+'/preserved-prior-output.json',correctionPath=root+'/publication/correction-rhetorical-tags.json';
+  files[priorPath]=priorText;files[publicationPath]=serialize(publication);
+  const shards=[];for(let i=0;i<changed.length;i+=2)shards.push({ordinal:shards.length+1,fields:changed.slice(i,i+2),maximumFields:2,mechanicalApplicationOfAdjudicatedMetadata:true});
+  files[correctionPath]=serialize({schemaVersion:'1.0-standalone-rhetorical-tag-correction',status:'applied-once-and-frozen',debateNumber,debateId:rec.debateId,preservedPriorOutput:textRecord(priorPath,priorText),evidence:{after:textRecord(publicationPath,files[publicationPath]),rhetoricalTagAudit:textRecord(auditPath,files[auditPath]),execution:textRecord(executionPath,files[executionPath])},writableShards:shards,audit:{judgmentChanges:0,scoreChanges:0,moveChanges:0,critiqueChanges:0,tagChanges:acceptedTags.length+acceptedOverallBlunderLinks.length,acceptedTagCount:acceptedTags.length,acceptedOverallBlunderLinkCount:acceptedOverallBlunderLinks.length,maximumWritableFieldsPerShard:Math.max(...shards.map(s=>s.fields.length))},directIncrementalCostUsd:0});
+  Object.assign(rec.rhetoricalTagReview,{correctionPath,priorPublicationPath:priorPath,renderingAuditPath:root+'/rendering/post-rhetorical-tag-audit-1.json'});
+ }
+ for(const p of Object.keys(files))if(p!==publicationPath)assert(!fs.existsSync(p),'Preserve existing '+p);
+ files[registryPath]=serialize(registry);
+ return{files,summary:{debateNumber,acceptedMoveTags:acceptedTags.length,acceptedOverallLinks:acceptedOverallBlunderLinks.length,changedFields:changed.length,controllerOverrides:overrides.size}};
+}
+if(process.argv[2]==='--debate')console.log(JSON.stringify(finalizeRhetoricalFiles(process.argv[3])));

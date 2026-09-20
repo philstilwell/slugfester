@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "1.0-reported-usage-cost-reconciliation",
+  "status": "all-authorized-paid-calls-successful-no-uncertain-calls",
+  "debateNumber": "264",
+  "debateId": "chopra-dawkins-consciousness-purpose-spirituality-2013",
+  "model": "gpt-4o-transcribe-diarize",
+  "knownSuccessfulCallCostUsd": 0.712495,
+  "maximumPossibleTotalAtPublishedTokenRatesUsd": 0.712495,
+  "billingConfirmed": false,
+  "standingCapUsd": 1,
+  "withinCap": true,
+  "successfulCalls": 17,
+  "failedOrTransportUncertainCalls": 0,
+  "retries": 0,
+  "pricing": {
+    "inputUsdPerMillionTokens": 2.5,
+    "outputUsdPerMillionTokens": 10,
+    "source": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "verifiedDate": "2026-09-19"
+  },
+  "estimateHistory": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/plan.json",
+      "sha256": "546fa18cf5b1d2e2304258d4e8fd0f49738733b4343075fdbc2aa1cf861c6867",
+      "bytes": 10747
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/cost-estimate-update-1.json",
+      "sha256": "7573eb27ab1862952d9f82cd0a0cabd3cf928a0d41a7866d70fd9e5daa2cd67c",
+      "bytes": 2912
+    }
+  ],
+  "calls": [
+    {
+      "phase": "source-context-recovery",
+      "id": "opening",
+      "response": {
+        "path": "output/transcribe/debate-264-source/opening-response.json",
+        "sha256": "3e87ce729455c5534bde2d45d834cefc211d3e5bf91279893d0fd69b4cd1ef99",
+        "bytes": 3831
+      },
+      "usage": {
+        "input_tokens": 2978,
+        "output_tokens": 949,
+        "total_tokens": 3927,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2978,
+          "text_tokens": 0
+        }
+      },
+      "reportedUsageCostUsd": 0.016935
+    },
+    {
+      "phase": "source-context-recovery",
+      "id": "poll",
+      "response": {
+        "path": "output/transcribe/debate-264-source/poll-response.json",
+        "sha256": "be08289705baa7ea98057307589bff5ceca497dfbf38a8d37c8c7a93d8713f7b",
+        "bytes": 1509
+      },
+      "usage": {
+        "input_tokens": 1013,
+        "output_tokens": 344,
+        "total_tokens": 1357,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 1013,
+          "text_tokens": 0
+        }
+      },
+      "reportedUsageCostUsd": 0.0059725
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-01",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-01.json",
+        "sha256": "d337603bfce3c39fa34f84851bc9cfb6431a15626517d1dd7dcf00c252459b2e",
+        "bytes": 8241
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-01.attempt.json",
+        "sha256": "cdd7e5015663ec2d0975f3cb413983a98db6bfa50700812e9d61c9e0a560c02d",
+        "bytes": 810
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-01.completion.json",
+        "sha256": "4f84509d61d316a48b6b696b200b6550f64f4b497c758f65d1298200667ca427",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 3731,
+        "output_tokens": 4858,
+        "total_tokens": 8589,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3458,
+          "text_tokens": 273
+        }
+      },
+      "reportedUsageCostUsd": 0.0579075
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-02",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-02.json",
+        "sha256": "165f7f7890d12b0a88d8d4a46587477536942aec23e3f7254fa2c2003908096d",
+        "bytes": 1887
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-02.attempt.json",
+        "sha256": "5cd121e9a2ea3c2cd3c42f2916f6d40347e26693339a771bcdc5dad705475059",
+        "bytes": 825
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-02.completion.json",
+        "sha256": "c22512cf03b6afaa6b571c0853d5f22d6d06d1d666a58a62d51633bee77aec36",
+        "bytes": 677
+      },
+      "usage": {
+        "input_tokens": 414,
+        "output_tokens": 444,
+        "total_tokens": 858,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 376,
+          "text_tokens": 38
+        }
+      },
+      "reportedUsageCostUsd": 0.005475
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-03",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-03.json",
+        "sha256": "dcf9178fe4dfabd814946aa1caddeda25d6f16da166c5a767f7777e698b7442e",
+        "bytes": 8966
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-03.attempt.json",
+        "sha256": "753f70b16ec07cda13be6d904c9241d439a4f1c3b86ef12996415380a882c67b",
+        "bytes": 811
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-03.completion.json",
+        "sha256": "061b534b6621f9e85161df1e7f59acef76fe0bfb63eed2d2ae19ba0efb8c5090",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 4296,
+        "output_tokens": 5220,
+        "total_tokens": 9516,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3972,
+          "text_tokens": 324
+        }
+      },
+      "reportedUsageCostUsd": 0.06294
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-04",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-04.json",
+        "sha256": "b19161588a024afd39b381ef9d9c932b125288a47bec32f3af74d28cd478e1cb",
+        "bytes": 13067
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-04.attempt.json",
+        "sha256": "9955f50c9c77d0ac2984994eaf07cac0bb99e13e66b5368219ff4cb06bf4199c",
+        "bytes": 811
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-04.completion.json",
+        "sha256": "966e323ab917e1a7fa480e0fc00c02985da642f19ec1a7ac8678b6b70643f19b",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 4161,
+        "output_tokens": 5050,
+        "total_tokens": 9211,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3837,
+          "text_tokens": 324
+        }
+      },
+      "reportedUsageCostUsd": 0.0609025
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-05",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-05.json",
+        "sha256": "5e8bb6a5497929a76f3b09d247a280aa0ec54665b303a9694dabf42485625fb3",
+        "bytes": 13529
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-05.attempt.json",
+        "sha256": "dfa186b1310e9cb2f39ba2ca950fff86f066732ca46043e3f028727dd3c85e9e",
+        "bytes": 811
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-05.completion.json",
+        "sha256": "8030b16e8391c88bf9c0e96619807cd26da0867b0fe7d2dba12cd88c84d5c44c",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 4012,
+        "output_tokens": 5335,
+        "total_tokens": 9347,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3708,
+          "text_tokens": 304
+        }
+      },
+      "reportedUsageCostUsd": 0.06338
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-06",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-06.json",
+        "sha256": "a296dd180c10e4b84d507b4396ac041c8ec8ba6d49630bbad0ba6c3fdbe12e08",
+        "bytes": 14478
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-06.attempt.json",
+        "sha256": "be9b8240227db74cba9bc97f5c468af99b22bcceff26fbcc7f8875f7f48ceb6c",
+        "bytes": 814
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-06.completion.json",
+        "sha256": "306c9205ba8cf61428a867d999a5733c3d6d3fa2ec193beeb096efcfa3b8696e",
+        "bytes": 670
+      },
+      "usage": {
+        "input_tokens": 4554,
+        "output_tokens": 5315,
+        "total_tokens": 9869,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 4204,
+          "text_tokens": 350
+        }
+      },
+      "reportedUsageCostUsd": 0.064535
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-07",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-07.json",
+        "sha256": "fd22b169f030df46292e5eebaa8eed9b47edda7a2b2b0eb97eb9c42a407c7928",
+        "bytes": 12695
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-07.attempt.json",
+        "sha256": "744e2a370ba8bcd9ada5dab48e21b860501dc13bbb8f2290d07854fd77fedbd6",
+        "bytes": 813
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-07.completion.json",
+        "sha256": "50933c25e123ac6714f5d3efb8b0fbde66bab3a0557200ecabdfdd415d3a93ad",
+        "bytes": 669
+      },
+      "usage": {
+        "input_tokens": 2586,
+        "output_tokens": 3608,
+        "total_tokens": 6194,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2401,
+          "text_tokens": 185
+        }
+      },
+      "reportedUsageCostUsd": 0.042545
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-08",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-08.json",
+        "sha256": "028cd83c537158286d98cc237740c0055677bdf8071e1b9e2fa4b3382e7034bb",
+        "bytes": 8555
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-08.attempt.json",
+        "sha256": "92fe5cfb6a8042c0be0f88fb454fe277a48a41730f929bba19717e9f74d4a082",
+        "bytes": 811
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-08.completion.json",
+        "sha256": "f63a67320ebd48eaab332bfd4b228f3e88eb952c8c0dc70abe6002ae51736153",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 4282,
+        "output_tokens": 5198,
+        "total_tokens": 9480,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3949,
+          "text_tokens": 333
+        }
+      },
+      "reportedUsageCostUsd": 0.062685
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-09",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-09.json",
+        "sha256": "efe051c3bf4a70af33c369a18c51a4ecb8086540aa1a0825f3f60ffbef83a4a3",
+        "bytes": 5192
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-09.attempt.json",
+        "sha256": "51396daa1bdabf69ca7db71df8fcd378443ccdc8b2574a9e0abdd2a4f229d90c",
+        "bytes": 826
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-09.completion.json",
+        "sha256": "1b536fff71e1396c44e020d48cd3eb6441fef1bb7f995906bb833c9fad6c3db8",
+        "bytes": 679
+      },
+      "usage": {
+        "input_tokens": 915,
+        "output_tokens": 1181,
+        "total_tokens": 2096,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 839,
+          "text_tokens": 76
+        }
+      },
+      "reportedUsageCostUsd": 0.0140975
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-10",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-10.json",
+        "sha256": "0ae12d8b9ef3a995aec234a954c21e7074301fc723058b84b02aa49882a14a11",
+        "bytes": 6075
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-10.attempt.json",
+        "sha256": "6d7ee3f2c583bc98b394e6796d9dd87dc756a053204a468239375139f6fea42d",
+        "bytes": 814
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-10.completion.json",
+        "sha256": "a1f7e2cc35eb158b05d46de75a528532a9230dbf9fdfa437943a41215a198d55",
+        "bytes": 670
+      },
+      "usage": {
+        "input_tokens": 2692,
+        "output_tokens": 3033,
+        "total_tokens": 5725,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2470,
+          "text_tokens": 222
+        }
+      },
+      "reportedUsageCostUsd": 0.03706
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-11",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-11.json",
+        "sha256": "d8eb9e5839c4f15feeac9695d6c5288589b8996da7ba7ae81e6bf01abfea12cc",
+        "bytes": 17953
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-11.attempt.json",
+        "sha256": "2baa337de6b5d61b268fecd0ae52b232bcb34bf50a5a76b10607f2c90d760222",
+        "bytes": 813
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-11.completion.json",
+        "sha256": "d691a64187a3fd7e403d8f4d4d1afb1d441aa3e3f1293356be650fda7c389b73",
+        "bytes": 669
+      },
+      "usage": {
+        "input_tokens": 4251,
+        "output_tokens": 5349,
+        "total_tokens": 9600,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3936,
+          "text_tokens": 315
+        }
+      },
+      "reportedUsageCostUsd": 0.0641175
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-12",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-12.json",
+        "sha256": "12c23e0a3eac8d3627a3f01c9dbe592f56fc6b4717d8c05177f9b0b2fa496826",
+        "bytes": 9603
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-12.attempt.json",
+        "sha256": "ffb82fec738e6c456e980994a54f1c45fd8da019a0d70e2194c58fe330885d92",
+        "bytes": 811
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-12.completion.json",
+        "sha256": "c76a503362899c9f9f6407f2006139cccc9e7b21fe377cdc36ba50ecf5f3a449",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 4292,
+        "output_tokens": 5234,
+        "total_tokens": 9526,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3941,
+          "text_tokens": 351
+        }
+      },
+      "reportedUsageCostUsd": 0.06307
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-13",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-13.json",
+        "sha256": "424f0fdcfdd322dabfea4e70f53ee291e5aa10f22243e06bccedd15c51ec83e1",
+        "bytes": 3930
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-13.attempt.json",
+        "sha256": "e05cee032968ed122ced08cc87c41a4f12354f9552866b3e7a1ff7feea6049fc",
+        "bytes": 825
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-13.completion.json",
+        "sha256": "51b12aadee52d1e6df7154e311becd57a2f168a1ce15c5a4f796b26f573b81e2",
+        "bytes": 681
+      },
+      "usage": {
+        "input_tokens": 1840,
+        "output_tokens": 2127,
+        "total_tokens": 3967,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 1688,
+          "text_tokens": 152
+        }
+      },
+      "reportedUsageCostUsd": 0.02587
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-14",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-14.json",
+        "sha256": "f878d16c29fb4f84225969dec7763737d8cf51aa96e1b19b91717182b8496125",
+        "bytes": 6328
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-14.attempt.json",
+        "sha256": "0e96e2c7cbcc622ebe1d60d573206a9d730cc6a03caead9ad557c9b762c0bd53",
+        "bytes": 825
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-14.completion.json",
+        "sha256": "25738f8ea72aaba43d0caada73e97fa4a6f205fd3c879378476ad9ebea69b2b9",
+        "bytes": 681
+      },
+      "usage": {
+        "input_tokens": 2444,
+        "output_tokens": 3105,
+        "total_tokens": 5549,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2259,
+          "text_tokens": 185
+        }
+      },
+      "reportedUsageCostUsd": 0.03716
+    },
+    {
+      "phase": "speaker-and-wording-verification",
+      "id": "clip-15",
+      "response": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-15.json",
+        "sha256": "b37402e838c08f2ed9b8ab5f145a1c24003f1bdf24bb345e12977ef061f63b4d",
+        "bytes": 4033
+      },
+      "attempt": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-15.attempt.json",
+        "sha256": "72b89cd971568d74b13c6d00e21e5c32137d0a76226930b7de896a6d3505542b",
+        "bytes": 811
+      },
+      "completion": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/audio/responses/clip-15.completion.json",
+        "sha256": "8d57aa4469d6344c6851c9971c40e518138a203659d7343f168bd4d49bbeeef6",
+        "bytes": 667
+      },
+      "usage": {
+        "input_tokens": 1925,
+        "output_tokens": 2303,
+        "total_tokens": 4228,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 1789,
+          "text_tokens": 136
+        }
+      },
+      "reportedUsageCostUsd": 0.0278425
+    }
+  ],
+  "visualChecks": [
+    {
+      "path": "output/transcribe/debate-264-verification/speaker-check-47m45.png",
+      "sha256": "e94a3cf6cf43c11dd1a546affb930592963124235b1023747e0c981e74724dbf",
+      "bytes": 885212
+    },
+    {
+      "path": "output/transcribe/debate-264-verification/speaker-check-48m57.png",
+      "sha256": "4868a70de42ddd0292f870d06fec5db0e532d06f65c508889003df8ace91913d",
+      "bytes": 849576
+    },
+    {
+      "path": "output/transcribe/debate-264-verification/speaker-check-49m40.png",
+      "sha256": "2e0f41f2662043019812a1a7e07800dd573abfe31f8cafd0faceb5799559aeec",
+      "bytes": 946254
+    }
+  ]
+}

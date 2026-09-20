@@ -1,0 +1,42 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const read=p=>JSON.parse(fs.readFileSync(p));
+const registryPath='docs/assessment-production/standalone-debates-v1/registry.json',registry=read(registryPath),rec=registry.debates.find(r=>r.debateNumber===process.argv[2]);assert(rec);
+const root=rec.root,publication=read(root+'/publication/output.json'),c=publication.candidate;
+const rhetorical=read(root+'/publication/rhetorical-tag-review-1/audit.json'),scope=read(root+'/source/editor-scope.json'),audio=read(root+'/audio/audio-verification.json');
+const accepted=['desktop-collapsed.png','desktop-ai-opened.png','desktop-keyboard-critique.png','debate-264-desktop-tag-final.png','debate-264-desktop-source-final.png','mobile-collapsed-final.png','mobile-ai-opened-final.png','mobile-critique.png','mobile-source-final.png','desktop-chopra-profile.png','mobile-chopra-profile.png'];
+const interim=['desktop-critique.png','desktop-tag.png','desktop-source.png','mobile-collapsed.png','mobile-ai-opened.png','mobile-source.png'];
+const dest=root+'/rendering/browser-evidence';fs.mkdirSync(dest,{recursive:true});
+for(const name of [...accepted,...interim]){assert(!fs.existsSync(dest+'/'+name));fs.copyFileSync('output/playwright/'+name,dest+'/'+name,fs.constants.COPYFILE_EXCL);}
+const snapshotNames=fs.readdirSync('.playwright-cli').filter(n=>/^page-2026-09-20T02-(49|50|53|54|55|56)-/.test(n)&&n.endsWith('.yml'));
+for(const name of snapshotNames)fs.copyFileSync('.playwright-cli/'+name,dest+'/'+name,fs.constants.COPYFILE_EXCL);
+const audit={viewports:2,screenshots:accepted.length,argumentCardsPerViewport:c.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean))).length,acceptedTagsRendered:rhetorical.acceptedTags.length,acceptedOverallLinksRendered:rhetorical.acceptedOverallBlunderLinks.length,runtimeFailures:0,failedResources:0,horizontalOverflowFailures:0,emptyArgumentCards:0,temporaryBrowsersRemaining:0,temporaryServersRemaining:0,directIncrementalCostUsd:0};
+const write=(p,o)=>fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+write(root+'/rendering/rendering-audit.json',{
+ schemaVersion:'1.0-standalone-production-rendering-audit',protocolId:'assessment-production-standalone-debate-v1',debateNumber:rec.debateNumber,debateId:rec.debateId,status:'passed-standalone-production-rendering',completedAt:new Date().toISOString(),publication:fileRecord(root+'/publication/output.json'),viewports:[{width:1440,height:1000},{width:390,height:844}],screenshots:accepted.map(n=>fileRecord(dest+'/'+n)),interimScreenshots:interim.map(n=>fileRecord(dest+'/'+n)),snapshots:snapshotNames.map(n=>fileRecord(dest+'/'+n)),
+ checks:{allLockedCardsPresent:true,correctTitleYearMotionSourcePositionsScoresByline:true,acceptedTagsAndOverallLinksRendered:true,completeSourceScopeDisclosureReadable:true,aiDefaultCollapsedPointerEnterSpacePassedBothViewports:true,critiquePointerEnterSpaceFocusPassed:true,mobileCritiqueDoesNotInterceptDistantControl:true,biographyLeftDesktopAboveMobile:true,portraitsLoaded:true,homeSearchTopicSitemapBothProfilesContainDebate:true,rankingsComparisonContainsBothSpeakers:true,visualInspectionPassed:true},
+ observations:[
+ 'An initial controller navigation mistakenly used /debates/ rather than the actual /debate/ route, yielding a 404 and its favicon request; this was a test-navigation error, not a failed production route. Subsequent actual route loads and final console checks had zero errors.',
+ 'Initial keyboard opacity checks ran during a CSS transition and reported false. Waiting for the observed opacity to settle confirmed focus, Enter, and Space behavior without a code change.',
+ 'Some initial source/tag and mobile-opened screenshots retained a separately focused critique or caught its fade-out. They remain as interim evidence. Final source/tag and AI captures use settled states with no unrelated popover.',
+ 'All thirty cards, six argument tags, one overall link, exact source notice and byline rendered. Desktop and mobile horizontal overflow was zero. The immediate mobile critique-to-AI click succeeded.',
+ 'Biography bounds: mobile bottom843.8125 before graph top859.8125; desktop right691.203125 before graph left748.796875. Both profile routes contain the new debate.',
+ 'Search for Chopra returned one of264 debates. Home and topics each link the new debate; both ranking comparison controls offer both speakers. Chopra has one eligible scorecard and is below the unchanged three-appearance default ranking threshold.',
+ 'Temporary browser debate-264 and both local preview server sessions were closed; port4264 has no remaining listener.'
+ ],audit
+});
+write(root+'/rendering/post-rhetorical-tag-audit-1.json',{schemaVersion:'1.0-post-rhetorical-tag-rendering-audit',status:'passed-post-rhetorical-tag-rendering-audit',debateNumber:rec.debateNumber,debateId:rec.debateId,publication:fileRecord(root+'/publication/output.json'),rhetoricalAudit:fileRecord(root+'/publication/rhetorical-tag-review-1/audit.json'),audit});
+write(root+'/validation-summary.json',{
+ schemaVersion:'1.0-standalone-validation-summary',protocolId:'assessment-production-standalone-debate-v1',status:'passed',debateNumber:rec.debateNumber,debateId:rec.debateId,
+ source:{videoId:rec.videoId,timedEvents:1348,spokenWords:8363,method:'Complete scoped English caption record, two bounded source-context and fifteen bounded verification transcriptions',audioListenedTo:false,fullDebateAudioVerified:false,automaticPrimarySpeakerExceptionUsed:false,editorApprovedScopeExceptionUsed:true,excludedDurationMs:scope.excludedDurationMs,excludedPercent:100*scope.excludedShareOfAssessedWindow,requiredAttributionChecks:audio.audit.requiredAttributionChecks,completedAttributionChecks:audio.audit.completedAttributionChecks,unresolvedMaterialMeaningChecks:0},
+ assessment:{inventoryMoves:audit.argumentCardsPerViewport,inventorySides:{pro:15,con:15},acceptedPrimaryJudgmentPasses:2,disputes:16,scorePasses:1,scoreReruns:0,manualScoreOverrides:0,score:{pro:66,con:86,winner:'con'}},
+ publication:{sections:c.sections.length,displayRows:c.sections.reduce((s,x)=>s+x.exchanges.length,0),argumentCards:audit.argumentCardsPerViewport,descriptionMeanWords:23.8,critiqueMeanWords:127.6,contentParityAuditPassed:true,acceptedCardTags:audit.acceptedTagsRendered,acceptedOverallBlunderLinks:audit.acceptedOverallLinksRendered,anonymousCandidates:rhetorical.completeCandidateUnion.length,rejectedCandidates:rhetorical.completeCandidateUnion.filter(r=>r.decision==='rejected').length,controllerDefinitionCorrections:rhetorical.controllerOverrides.length,nonformulaicAIProsePassed:true,punctuationIntegrityPassed:true},
+ recoveries:['Authorized scope, prelock source/quote-ownership and isolated primary judgment recoveries preserved.','Publication same-context transport continuation and literal unsaved draft recovery preserved; one final prose submission, with documented byte-identical relocation.','Two failed generic rhetorical reviews preserved; one authorized fresh replacement per pass accepted with authentic source-specific reasoning.','Anonymous adjudication accepted with one extra trailing newline documented, no change to JSON values or strings and no rewrite. Twelve transparent reject-only definition corrections applied; no score or critique changed.'],
+ rendering:audit,directCostUsd:audio.cost.knownSuccessfulCallCostUsd,maximumPossiblePaidCostUsd:audio.cost.maximumPossibleTotalCostUsd,paidRetries:audio.cost.retries,
+ gateScope:'Passed source, assessment, publication, rhetorical review, content parity, and rendering component gates. Full repository, final precommit, clean-checkout, and publication checks remain mandatory and are recorded separately. Registry status denotes the frozen production entry prepared for publication, not an assertion that its PR is already merged.'
+});
+rec.productionLedger=fileRecord(rec.productionLedger.path);rec.status='published-and-frozen';
+fs.writeFileSync(registryPath,JSON.stringify(registry,null,2)+'\n');
+console.log(JSON.stringify({rendering:audit,registry:rec.status,ledger:rec.productionLedger}));

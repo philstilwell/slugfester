@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+import {checkDraftPortion} from './tmp-current-review-draft-portion.mjs';
+const [flag,number,sectionId,sessionPath]=process.argv.slice(2);
+assert.equal(flag,'--debate');
+const rec=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json')).debates.find(r=>r.debateNumber===number);
+assert(rec);
+const section=JSON.parse(fs.readFileSync(rec.root+'/publication/input-bundle.json')).lockedCandidateSkeleton.sections.find(s=>s.sectionId===sectionId);
+assert(section);
+const first=section.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean))[0].ledgerMoveId;
+const rows=fs.readFileSync(sessionPath,'utf8').trim().split('\n').map(JSON.parse);
+let found;
+for(const row of rows.filter(r=>r.payload?.type==='custom_tool_call_output')){
+  if(!Array.isArray(row.payload.output))continue;
+  for(const block of row.payload.output){
+    if(typeof block.text!=='string')continue;
+    try { const cards=JSON.parse(block.text); if(Array.isArray(cards)&&cards[0]?.ledgerMoveId===first)found={cards,row,raw:block.text}; } catch {}
+  }
+}
+assert(found,'No emitted JSON array found for '+sectionId);
+const result={cards:found.cards,validation:checkDraftPortion(number,sectionId,found.cards),sourceCallId:found.row.payload.call_id,sourceTimestamp:found.row.timestamp,sourceEmissionSha256:crypto.createHash('sha256').update(found.raw).digest('hex')};
+console.log(JSON.stringify(result));

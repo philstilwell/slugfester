@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0-prejudgment-correction-controller-audit",
+  "status": "rejected-two-opposite-speaker-quotations-additional-repair-authority-required",
+  "debateNumber": "264",
+  "debateId": "chopra-dawkins-consciousness-purpose-spirituality-2013",
+  "modelExecutionAuthentication": "docs/assessment-production/standalone-debates-v1/debate-264/inventory/bounded-correction/session-authentication.json",
+  "preservedCorrection": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-264/inventory/bounded-correction/output.json",
+    "sha256": "e399366faf8af0a9c6ec43db28169fbb0e13bf7ef6ac6131a4bf05d7fbef0347",
+    "bytes": 22598
+  },
+  "mechanicalValidation": {
+    "status": "passed",
+    "debateNumber": "264",
+    "sections": 6,
+    "moves": 30,
+    "belowHighAttributionMoveIds": [
+      "dawkins-cell-responsiveness-does-not-solve-consciousness",
+      "chopra-awareness-versus-perception",
+      "dawkins-admits-mechanism-unknown",
+      "dawkins-explain-not-dismiss-mysticism",
+      "chopra-credentials-and-conscious-usage"
+    ]
+  },
+  "editorScopeValidation": {
+    "status": "passed",
+    "excludedDurationMs": 502158,
+    "excludedShareOfAssessedWindow": 0.14050936807467598
+  },
+  "independentlyDerivedCounts": [
+    {
+      "sectionId": "purpose-and-fine-tuning",
+      "pro": 3,
+      "con": 2
+    },
+    {
+      "sectionId": "consciousness-and-emergence",
+      "pro": 3,
+      "con": 4
+    },
+    {
+      "sectionId": "scientific-and-spiritual-methods",
+      "pro": 1,
+      "con": 1
+    },
+    {
+      "sectionId": "transcendence-and-explanatory-scope",
+      "pro": 4,
+      "con": 4
+    },
+    {
+      "sectionId": "quantum-language-and-continuity",
+      "pro": 3,
+      "con": 3
+    },
+    {
+      "sectionId": "religion-and-human-wellbeing",
+      "pro": 1,
+      "con": 1
+    }
+  ],
+  "semanticFieldsPreserved": true,
+  "normalCorrectionAttemptsUsed": 1,
+  "additionalAttemptAuthorized": false,
+  "primaryJudgmentsExecuted": false,
+  "scorePassExecuted": false,
+  "findings": [
+    {
+      "moveId": "dawkins-cell-responsiveness-does-not-solve-consciousness",
+      "field": "quoteEligibleExactSpans",
+      "incorrectQuote": "a single cell has siience",
+      "actualSpeaker": "Deepak Chopra",
+      "assignedCardSpeaker": "Richard Dawkins",
+      "sourceEvent": 508,
+      "audioClipId": "clip-06",
+      "audioSegments": [
+        41,
+        42,
+        43
+      ],
+      "absoluteStartSeconds": 2008.941,
+      "absoluteEndSeconds": 2013.391,
+      "explanation": "Dawkins ends his critical sentence with consciousness; Chopra then asserts cellular sentience. The automatic captions concatenate the two speakers in one event. Exact substring matching alone does not establish quotation ownership.",
+      "recommendedChange": "Remove only this opponent-owned quotation; retain the already exact Dawkins quotation 'the hard problem of Consciousness'."
+    },
+    {
+      "moveId": "chopra-promissory-note-objection",
+      "field": "quoteEligibleExactSpans",
+      "incorrectQuote": "it is a promisory note",
+      "actualSpeaker": "Richard Dawkins",
+      "assignedCardSpeaker": "Deepak Chopra",
+      "sourceEvents": [
+        859,
+        860
+      ],
+      "audioClipId": "clip-11",
+      "absoluteStartSeconds": 2990.686,
+      "absoluteEndSeconds": 2991.836,
+      "explanation": "This wording is Dawkins's concession during the interleaved exchange. Chopra's economy-related retort and subsequent challenge remain independently attributable and support the unchanged move.",
+      "recommendedChange": "Remove only this opponent-owned quotation; retain the exact Chopra quotation \"you're not open to a Consciousness driven science\"."
+    }
+  ],
+  "audioReview": {
+    "status": "all-15-planned-clips-reviewed-not-an-inventory-gate-pass",
+    "notes": "docs/assessment-production/standalone-debates-v1/debate-264/audio/controller-clip-notes.json",
+    "costReconciliation": "docs/assessment-production/standalone-debates-v1/debate-264/audio/cost-reconciliation.json",
+    "knownSuccessfulCallCostUsd": 0.712495,
+    "maximumPossibleTotalAtPublishedTokenRatesUsd": 0.712495,
+    "billingConfirmed": false,
+    "directListeningPerformed": false,
+    "visualEvidence": [
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/source/visual-checks/speaker-check-47m45.png",
+        "sha256": "e94a3cf6cf43c11dd1a546affb930592963124235b1023747e0c981e74724dbf",
+        "bytes": 885212
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/source/visual-checks/speaker-check-48m57.png",
+        "sha256": "4868a70de42ddd0292f870d06fec5db0e532d06f65c508889003df8ace91913d",
+        "bytes": 849576
+      },
+      {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-264/source/visual-checks/speaker-check-49m40.png",
+        "sha256": "2e0f41f2662043019812a1a7e07800dd573abfe31f8cafd0faceb5799559aeec",
+        "bytes": 946254
+      }
+    ],
+    "visualMethod": "Source-video contact sheets at approximate 4-second spacing from 2865 and 2980 seconds, and 3-second spacing from 2937 seconds. Visual speaking/gesture continuity corroborates the Chopra/Dawkins exchanges where automatic speaker labels confuse Chopra with Roemer; still images alone do not authenticate every word.",
+    "sourceCaptionBytesChanged": false
+  },
+  "proposedBoundedRecovery": {
+    "newAttempts": 1,
+    "writableFields": [
+      "moves[dawkins-cell-responsiveness-does-not-solve-consciousness].quoteEligibleExactSpans",
+      "moves[chopra-promissory-note-objection].quoteEligibleExactSpans"
+    ],
+    "permittedOperation": "Delete the one explicitly identified opposite-speaker candidate quotation from each list; no replacements or other changes.",
+    "preserve": [
+      "all raw source and audio evidence",
+      "all original and correction outputs",
+      "all 30 move identities, semantic fields, importance, burdens and response links",
+      "all sections and weights",
+      "approved scope intervals"
+    ],
+    "additionalDirectCostUsd": 0
+  },
+  "publicationActions": {
+    "committed": false,
+    "pushed": false,
+    "pullRequestCreated": false
+  }
+}

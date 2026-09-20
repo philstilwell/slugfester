@@ -1,0 +1,82 @@
+import argparse
+import hashlib
+import importlib.util
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from openai import OpenAI
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--debate', required=True)
+args = parser.parse_args()
+root = Path.cwd()
+registry = json.loads((root / 'docs/assessment-production/standalone-debates-v1/registry.json').read_text())
+record = next(r for r in registry['debates'] if r['debateNumber'] == args.debate)
+plan_path = root / record['root'] / 'audio/plan.json'
+plan = json.loads(plan_path.read_text())
+assert plan['debateId'] == record['debateId'] and plan['videoId'] == record['videoId']
+assert plan['attemptsPerClip'] == 1 and plan['retries'] == 0
+assert plan['pricing']['cumulativeEstimatedUsd'] <= plan['pricing']['standingCapUsd']
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+def write_new(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('x') as stream:
+        json.dump(value, stream, ensure_ascii=False, indent=2)
+        stream.write('\n')
+
+assert digest(root / plan['sourceMedia']['path']) == plan['sourceMedia']['sha256']
+for item in plan['knownSpeakerReferences'] + plan['clips']:
+    assert digest(root / item['path']) == item['sha256']
+
+spec = importlib.util.spec_from_file_location('bounded_transcribe_skill', plan['transcribeSkill'])
+skill = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(skill)
+names, refs = skill._parse_known_speakers([f"{r['speaker']}={root / r['path']}" for r in plan['knownSpeakerReferences']])
+payload = {'model': plan['model'], 'response_format': plan['responseFormat'],
+           'chunking_strategy': plan['chunkingStrategy'],
+           'extra_body': {'known_speaker_names': names, 'known_speaker_references': refs}}
+client = OpenAI(max_retries=0, timeout=plan['timeoutSeconds'])
+out = root / plan['executionOutputRoot']
+ref_seconds = sum((r['endMs'] - r['startMs']) / 1000 for r in plan['knownSpeakerReferences'])
+completed = []
+for clip in plan['clips']:
+    stem = clip['clipId']
+    attempt_path = out / f'{stem}.attempt.json'
+    response_path = out / f'{stem}.json'
+    completion_path = out / f'{stem}.completion.json'
+    assert not any(p.exists() for p in [attempt_path, response_path, completion_path]), 'No retry or overwrite permitted'
+    estimate = (clip['durationSeconds'] + ref_seconds) / 60 * plan['pricing']['estimatedRateUsdPerMinute']
+    attempt = {'status': 'started-single-paid-attempt', 'startedAt': now(), 'debateNumber': args.debate,
+               'debateId': record['debateId'], 'clipId': stem, 'planSha256': digest(plan_path),
+               'clipSha256': clip['sha256'], 'originalTimestampOffsetMs': clip['startMs'],
+               'model': plan['model'], 'attempt': 1, 'retries': 0, 'estimatedCostUsd': estimate,
+               'billingConfirmed': False, 'knownSpeakerReferenceHashes': [r['sha256'] for r in plan['knownSpeakerReferences']]}
+    write_new(attempt_path, attempt)
+    print(json.dumps({'clip': stem, 'status': 'started', 'seconds': clip['durationSeconds']}), flush=True)
+    try:
+        result = skill._run_one(client, root / clip['path'], payload)
+    except Exception as error:
+        write_new(completion_path, {'status': 'failed-or-transport-uncertain-no-retry', 'finishedAt': now(),
+                  'errorType': type(error).__name__, 'httpStatus': getattr(error, 'status_code', None),
+                  'attemptSha256': digest(attempt_path), 'maximumPossibleEstimatedCostUsd': estimate,
+                  'billingConfirmed': False, 'retries': 0})
+        print(json.dumps({'clip': stem, 'status': 'stopped-after-failed-or-uncertain-attempt', 'errorType': type(error).__name__}), flush=True)
+        raise SystemExit(1)
+    data = result.model_dump() if hasattr(result, 'model_dump') else result
+    write_new(response_path, data)
+    completion = {'status': 'successful-single-call', 'completedAt': now(), 'clipId': stem,
+                  'responseSha256': digest(response_path), 'attemptSha256': digest(attempt_path),
+                  'model': plan['model'], 'attempt': 1, 'retries': 0, 'estimatedCostUsd': estimate,
+                  'usage': data.get('usage'), 'billingConfirmed': False, 'directListeningPerformed': False}
+    write_new(completion_path, completion)
+    completed.append(completion)
+    print(json.dumps({'clip': stem, 'status': 'successful', 'segments': len(data.get('segments', [])),
+                      'textCharacters': len(data.get('text', '')), 'estimatedCostUsd': estimate}), flush=True)
+print(json.dumps({'status': 'all-planned-calls-complete', 'successfulCalls': len(completed),
+                  'verificationEstimatedCostUsd': sum(c['estimatedCostUsd'] for c in completed), 'retries': 0}), flush=True)

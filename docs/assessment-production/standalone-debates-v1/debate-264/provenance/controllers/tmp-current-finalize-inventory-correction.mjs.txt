@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,sha256,serializedJson} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+import {applyCorrection} from './tmp-current-inventory-correction.mjs';
+const [flag,number,session]=process.argv.slice(2);assert.equal(flag,'--debate');assert(number&&session);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert(rec);
+const root=rec.root+'/inventory/bounded-correction',packet=read(root+'/packet.json'),output=read(root+'/output.json');
+const result=applyCorrection(output,packet);
+const bytes=fs.readFileSync(session),rows=bytes.toString().trim().split('\n').map((x,i)=>({...JSON.parse(x),auditOrdinal:i}));
+const unwrap=v=>{if(Array.isArray(v))return v.map(unwrap).join('\n');if(v&&typeof v==='object')return typeof v.output==='string'?unwrap(v.output):typeof v.text==='string'?unwrap(v.text):JSON.stringify(v);if(typeof v!=='string')return String(v);try{const p=JSON.parse(v);return p&&typeof p==='object'?unwrap(p):v;}catch{return v;}};
+const input=r=>r?.payload.input??r?.payload.arguments??'';
+const calls=new Map(rows.filter(r=>r.type==='response_item'&&['function_call','custom_tool_call'].includes(r.payload.type)).map(r=>[r.payload.call_id,r]));
+const writes=[...calls.values()].filter(r=>input(r).includes('tools.apply_patch(')||r.payload.name==='apply_patch');
+assert.equal(writes.length,1);
+const firstWrite=writes[0].auditOrdinal,lines=fs.readFileSync(packet.indexedSourcePath,'utf8').trimEnd().split('\n'),sourceSet=new Set(lines),covered=new Set(),sourceEvidence=[],readCalls=[],visible=[];
+for(const r of rows){
+ if(r.type!=='response_item'||!['function_call_output','custom_tool_call_output'].includes(r.payload.type))continue;
+ const text=unwrap(r.payload.output),call=calls.get(r.payload.call_id),truncated=/Warning: truncated output|tokens truncated/i.test(text),before=r.auditOrdinal<firstWrite;
+ const matches=text.split('\n').filter(l=>sourceSet.has(l));
+ if(before&&!truncated){visible.push(text);if(matches.length){matches.forEach(l=>covered.add(l));sourceEvidence.push({callId:r.payload.call_id,eventRanges:[Number(matches[0].split('\t')[0]),Number(matches.at(-1).split('\t')[0])],events:matches.length});}}
+ if(input(call).includes('exec_command'))readCalls.push({callId:r.payload.call_id,time:call.timestamp,input:input(call),truncated,beforeSubmission:before,sourceEventsReturned:matches.length});
+}
+const models=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));
+assert(models.length&&models.every(m=>m.model===packet.model.model&&m.reasoningEffort===packet.model.reasoningEffort));
+const missingEvents=lines.filter(l=>!covered.has(l)).map(l=>Number(l.split('\t')[0]));
+const joined=visible.join('\n'),base=read(packet.baseline.path),missingSemantics=[];
+for(const m of base.moves)for(const k of ['claimSummary','reasonSummary','inferenceSummary','importanceRationale','materialWordingRationale'])if(typeof m[k]==='string'&&!joined.includes(m[k]))missingSemantics.push({moveId:m.moveId,field:k});
+const authentication={status:missingEvents.length||missingSemantics.length?'incomplete-reading-authentication':'complete-reading-authenticated',debateNumber:rec.debateNumber,debateId:rec.debateId,session:{path:session,sha256:sha256(bytes),bytes:bytes.length},agentPath:rows.find(r=>r.type==='session_meta')?.payload.agent_path,actualModels:models,expectedEvents:lines.length,authenticatedEvents:covered.size,missingEvents,missingSemantics,sourceEvidence,readCalls,writeCalls:writes.map(r=>({callId:r.payload.call_id,time:r.timestamp,inputSha256:sha256(Buffer.from(input(r))),declaredOutputPathPresent:input(r).includes(packet.outputPath)})),outputs:[fileRecord(root+'/output.json')],directIncrementalCostUsd:0};
+console.log(serializedJson({authentication,mechanicalValidation:result.validation,scope:result.scope,counts:result.counts}));

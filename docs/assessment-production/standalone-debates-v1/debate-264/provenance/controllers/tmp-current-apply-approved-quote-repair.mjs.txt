@@ -1,0 +1,28 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+import {applyCorrection} from './tmp-current-inventory-correction.mjs';
+const [flag,number]=process.argv.slice(2);assert.equal(flag,'--debate');
+const read=p=>JSON.parse(fs.readFileSync(p));
+const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert(rec);
+const b=rec.root,aPath=b+'/inventory/exceptional-quotation-repair/authorization.json',a=read(aPath),packet=read(b+'/inventory/bounded-correction/packet.json');
+assert.equal(a.debateNumber,number);assert.equal(a.debateId,rec.debateId);assert.equal(a.maximumAttempts,1);assert.equal(a.retries,0);assert.equal(a.fields.length,2);
+assert.equal(fileRecord(a.preservedBaseline.path).sha256,a.preservedBaseline.sha256);
+const manifest=read(b+'/manifest.json');
+for(const lock of [...Object.values(manifest.sourceLocks),...Object.values(manifest.controlLocks)])assert.equal(fileRecord(lock.path).sha256,lock.sha256,lock.path);
+const before=read(a.preservedBaseline.path),after=structuredClone(before),changes=[];
+for(const field of a.fields){
+ assert.equal(field.field,'quoteEligibleExactSpans');
+ const m=after.moves.find(m=>m.moveId===field.moveId);assert(m);
+ const old=[...m.quoteEligibleExactSpans];assert.equal(old.filter(q=>q===field.removeExact).length,1);
+ m.quoteEligibleExactSpans=old.filter(q=>q!==field.removeExact);assert(m.quoteEligibleExactSpans.length>=1);
+ changes.push({moveId:m.moveId,field:field.field,before:old,after:m.quoteEligibleExactSpans});
+}
+const restored=structuredClone(after);for(const c of changes)restored.moves.find(m=>m.moveId===c.moveId)[c.field]=c.before;assert.deepEqual(restored,before);
+const r=applyCorrection(after,packet);
+const out=b+'/inventory/exceptional-quotation-repair/output.json',inv=b+'/inventory/inventory.json',audit=b+'/inventory/exceptional-quotation-repair/audit.json';
+for(const p of[out,inv,audit])assert(!fs.existsSync(p),'No retry or overwrite: '+p);
+for(const [p,value]of[[out,after],[inv,r.candidate]]){fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,serializedJson(value),{flag:'wx'});}
+const result={schemaVersion:'1.0-exceptional-two-field-quotation-repair-audit',status:'passed-and-inventory-frozen-before-judgment',debateNumber:rec.debateNumber,debateId:rec.debateId,completedAt:new Date().toISOString(),authorization:fileRecord(aPath),preservedBaseline:fileRecord(a.preservedBaseline.path),output:fileRecord(out),inventory:fileRecord(inv),changes,allOtherFieldsByteEquivalentAfterParsedRestoration:true,validation:r.validation,scope:r.scope,counts:r.counts,controllerReview:r.review,sourceAndControlLocksVerified:true,primaryJudgmentsExecuted:false,scorePassExecuted:false,attempts:1,retries:0,directIncrementalCostUsd:0};
+fs.writeFileSync(audit,serializedJson(result),{flag:'wx'});console.log(serializedJson({status:result.status,inventory:result.inventory,validation:r.validation,scope:r.scope,changes}));
