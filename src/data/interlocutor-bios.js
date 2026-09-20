@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Deepak Chopra","Deepak Chopra is a physician and author whose books and public teaching explore spirituality, meditation, consciousness, and well-being. His work connects spiritual traditions with questions about science, self-awareness, and the relationship between mind and body.","https://www.deepakchopra.com/","2026-09-19"],
   ["William Dembski","William Dembski is a mathematician, philosopher, and author known for his work on intelligent design. His writing addresses information, arguments about design in nature, Christian theology, and the relationships among technology, education, and human freedom.","https://billdembski.com/about/","2026-09-17"],
   ["Al Sharpton","Al Sharpton is a minister, civil-rights activist, author, and broadcaster. He founded the National Action Network in 1991, and his public work includes nonviolent protest, voting-rights advocacy, and campaigns concerning policing and racial inequality.","https://nationactionnetwork.squarespace.com/bio","2026-09-13"],
   ["Shmuley Boteach","Shmuley Boteach is an American Orthodox rabbi, author, television host, and public speaker. He founded the Jewish Values Network, and his books for general readers address parenting, relationships, and Jewish ethical teaching.","https://www.penguinrandomhouse.com/authors/2853/shmuley-boteach/","2026-09-12"],

@@ -1,0 +1,48 @@
+{
+  "status": "two-successful-calls-no-retries",
+  "estimatedCostUsd": 0.0494,
+  "maximumPossibleEstimatedCostUsd": 0.0494,
+  "billingConfirmed": false,
+  "sourceAudio": {
+    "path": "output/transcribe/debate-264-source/BiwLrxPb1fE.webm",
+    "sha256": "ac282470c4f26467f2e74c18fc4ee31f6eba7c5d16adddd36d97a9156d387a76",
+    "bytes": 55986345
+  },
+  "sourceAudioIsOriginalNotDubbed": true,
+  "fullAudioDurationSeconds": 4408.701,
+  "attempts": 2,
+  "retries": 0,
+  "directListeningPerformed": false,
+  "plan": {
+    "path": "output/transcribe/debate-264-source/preflight-plan.json",
+    "sha256": "b1b3d0629c76d1c81afd9e4396e43823f999b5994c7a3005eae67d39bc30b259",
+    "bytes": 1534
+  },
+  "clips": [
+    {
+      "response": {
+        "path": "output/transcribe/debate-264-source/opening-response.json",
+        "sha256": "3e87ce729455c5534bde2d45d834cefc211d3e5bf91279893d0fd69b4cd1ef99",
+        "bytes": 3831
+      },
+      "execution": {
+        "path": "output/transcribe/debate-264-source/opening-execution-result.json",
+        "sha256": "0ebe9e1edd38fba220935dcb76f9965e1dd9e73d27f2e9219db521049d66f4ec",
+        "bytes": 871
+      }
+    },
+    {
+      "response": {
+        "path": "output/transcribe/debate-264-source/poll-response.json",
+        "sha256": "be08289705baa7ea98057307589bff5ceca497dfbf38a8d37c8c7a93d8713f7b",
+        "bytes": 1509
+      },
+      "execution": {
+        "path": "output/transcribe/debate-264-source/poll-execution-result.json",
+        "sha256": "b92468319abe1de1d7f1dafe4be6a2deb4dfbdbd8d3916abebbd590ca241f31a",
+        "bytes": 862
+      }
+    }
+  ],
+  "review": "Recovered Spanish introductions, format, preannounced topics and polling instructions. The later Spanish poll gap is inside the entire editor-excluded branch, so its words are not assessed. Raw paid results remain ignored and are not presented as timed speaker verification."
+}

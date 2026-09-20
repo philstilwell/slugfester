@@ -1,0 +1,41 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+import {checkRhetoricalAdjudication} from './tmp-current-check-rhetorical.mjs';
+const number=process.argv[2];
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json'));
+const rec=registry.debates.find(x=>x.debateNumber===number);assert(rec);
+const base=rec.root+'/publication/rhetorical-tag-review-1/adjudication';
+const session=process.argv[3];
+const ids=process.argv.slice(4);assert.equal(ids.length,3);
+const rows=fs.readFileSync(session,'utf8').trim().split('\n').map(JSON.parse);
+const portions=ids.map(id=>{
+ const matches=[];
+ for(const row of rows.filter(r=>r.type==='response_item'&&r.payload.type==='custom_tool_call_output'&&r.payload.call_id===id)){
+  for(const block of Array.isArray(row.payload.output)?row.payload.output:[]){
+   try{const value=JSON.parse(block.text);if(Array.isArray(value)&&value[0]?.candidateKey)matches.push(value);}catch{}
+  }
+ }
+ assert.equal(matches.length,1,'exactly one literal portion for '+id);return matches[0];
+});
+const packet=JSON.parse(fs.readFileSync(base+'/input.json'));
+const draft={...packet.outputContract,resolutions:portions.flat()};
+const validation=checkRhetoricalAdjudication(draft,packet);
+const write=(p,o)=>fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+write(base+'/pre-submission-draft.json',draft);
+write(base+'/pre-submission-review.json',{
+ schemaVersion:'1.0-literal-adjudication-draft-completeness-review',
+ status:'source-specific-complete-draft-released-for-single-submission',
+ debateNumber:number,debateId:rec.debateId,validation,
+ sourceSession:session,sourceCalls:ids,portionCounts:portions.map(x=>x.length),
+ collection:'Exact literal model-authored arrays concatenated in authenticated call order; frozen output-contract fields expanded without rewriting decisions, contexts, or rationales.',
+ reviewedCandidateKeys:draft.reviewedCandidateKeys,
+ review:'Controller read every context and rationale directly. All candidates receive distinct source-specific explanations rather than process assurances. Catalog-definition correctness remains subject to a separate transparent final review after the raw output is frozen.',
+ output:fileRecord(base+'/pre-submission-draft.json'),scoreChanges:0,controllerRewrites:0
+});
+const plan=JSON.parse(fs.readFileSync(base+'/execution-plan.json'));
+plan.schemaVersion='1.0-isolated-rhetorical-adjudication-final-submission-plan';
+plan.status='frozen-after-literal-draft-completeness-review-before-single-submission';
+plan.inputs.push(fileRecord(base+'/pre-submission-draft.json'));
+write(base+'/final-execution-plan.json',plan);
+console.log(JSON.stringify({validation,draft:fileRecord(base+'/pre-submission-draft.json'),lines:fs.readFileSync(base+'/pre-submission-draft.json','utf8').trimEnd().split('\n').length}));

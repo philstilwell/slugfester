@@ -1,0 +1,26 @@
+{
+  "debateNumber": "264",
+  "initialProductionValidation": {
+    "status": "failed-before-ledger-and-final-registry-classification",
+    "findings": ["Missing ledger; dependent locked-row and unpaired-card rules unavailable", "After adapter creation, frozen registry route not yet classified"],
+    "resolution": "Created the required generic adapter once, completed rendering, then registered its exact hash and completed production status. No rule or scored move changed."
+  },
+  "fullProductionValidation": "passed-264-debates",
+  "newDebateFullEvidenceReplay": "passed",
+  "newDebateRepositoryOnlyReplay": "passed",
+  "allStandaloneRepositoryReplay": "passed",
+  "repositoryCheck": "passed-including-historical-and-standalone-postchecks",
+  "siteQuality": {"tests": 56, "passed": 56, "failed": 0},
+  "firstPreflight": {"tests": 17, "passed": 17, "failed": 0},
+  "editorScopeUnitTests": {"tests": 19, "passed": 19, "failed": 0},
+  "priorDebatePreservation": "All 263 prior raw objects byte-identical; appended object exactly equals frozen candidate",
+  "stagedWhitespaceReview": {
+    "command": "git diff --cached --check",
+    "exitCode": 2,
+    "warnings": 1,
+    "path": "docs/assessment-production/standalone-debates-v1/debate-264/publication/rhetorical-tag-review-1/adjudication/output.json",
+    "finding": "Line476: new blank line at EOF",
+    "disposition": "Reviewed immutable model-evidence serialization warning. Original bytes retained; parsed JSON and every authored string equal the draft exactly. No suppression, whitespace configuration change, rule relaxation, or raw-output rewrite."
+  },
+  "publicationBoundary": "Final immediate precommit preflight, clean-checkout replay, PR check, merge, and deployment are subsequent gates; not preclaimed here."
+}

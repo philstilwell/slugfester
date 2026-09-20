@@ -1,0 +1,29 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord,sha256,serializedJson} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const [flag,number,session]=process.argv.slice(2);assert.equal(flag,'--debate');assert(number&&session);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);assert(rec);
+const plan=read(`${rec.root}/inventory/execution-plan.json`),packet=read(`${rec.root}/inventory/packet.json`);
+for(const lock of plan.allowedInputs)assert.equal(fileRecord(lock.path).sha256,lock.sha256,lock.path);
+const bytes=fs.readFileSync(session),rows=bytes.toString().trim().split('\n').map((v,i)=>({...JSON.parse(v),auditOrdinal:i}));
+const unwrap=v=>{if(Array.isArray(v))return v.map(unwrap).join('\n');if(v&&typeof v==='object')return typeof v.output==='string'?unwrap(v.output):typeof v.text==='string'?unwrap(v.text):JSON.stringify(v);if(typeof v!=='string')return String(v);try{const p=JSON.parse(v);return p&&typeof p==='object'?unwrap(p):v;}catch{return v;}};
+const input=r=>r?.payload.input??r?.payload.arguments??'';
+const calls=new Map(rows.filter(r=>r.type==='response_item'&&['function_call','custom_tool_call'].includes(r.payload.type)).map(r=>[r.payload.call_id,r]));
+const writes=[...calls.values()].filter(r=>input(r).includes('tools.apply_patch(')||r.payload.name==='apply_patch');
+const firstWrite=Math.min(...writes.map(r=>r.auditOrdinal));
+const lines=fs.readFileSync(packet.indexedTranscriptPath,'utf8').trimEnd().split('\n'),sourceSet=new Set(lines),covered=new Set(),evidence=[],readCalls=[];
+for(const r of rows){
+ if(r.type!=='response_item'||!['function_call_output','custom_tool_call_output'].includes(r.payload.type))continue;
+ const text=unwrap(r.payload.output),call=calls.get(r.payload.call_id),truncated=/Warning: truncated output|tokens truncated/i.test(text),before=r.auditOrdinal<firstWrite;
+ const matches=text.split('\n').filter(l=>sourceSet.has(l));
+ if(before&&!truncated&&matches.length){matches.forEach(l=>covered.add(l));evidence.push({callId:r.payload.call_id,readAt:r.timestamp,eventRanges:[Number(matches[0].split('\t')[0]),Number(matches.at(-1).split('\t')[0])],events:matches.length,beforeSubmission:true,untruncated:true});}
+ if(input(call).includes('exec_command'))readCalls.push({callId:r.payload.call_id,time:call.timestamp,input:input(call),outputCharacters:text.length,truncated,beforeSubmission:before,sourceEventsReturned:matches.length});
+}
+const models=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));
+assert(models.length&&models.every(m=>m.model===plan.model.model&&m.reasoningEffort===plan.model.reasoningEffort));
+const missing=lines.filter(l=>!covered.has(l)).map(l=>Number(l.split('\t')[0]));
+const result={schemaVersion:'1.0-inventory-session-authentication',status:missing.length?'source-reading-not-authenticated':'source-reading-authenticated-controller-review-required',debateNumber:rec.debateNumber,debateId:rec.debateId,session:{path:session,sha256:sha256(bytes),bytes:bytes.length},agentPath:rows.find(r=>r.type==='session_meta')?.payload.agent_path,actualContextModels:models,inputs:plan.allowedInputs,expectedEvents:lines.length,authenticatedEvents:covered.size,missingEvents:missing,completeUntruncatedSourceReadBeforeSubmission:missing.length===0,sourceReadEvidence:evidence,writeCalls:writes.map(r=>({callId:r.payload.call_id,time:r.timestamp,inputSha256:sha256(Buffer.from(input(r))),inputCharacters:input(r).length,declaredOutputPathsPresent:plan.allowedOutputPaths.filter(p=>input(r).includes(p))})),readCalls,directIncrementalCostUsd:0};
+for(const p of plan.allowedOutputPaths)if(fs.existsSync(p))(result.outputs??=[]).push(fileRecord(path.relative(process.cwd(),p)));
+console.log(serializedJson(result));

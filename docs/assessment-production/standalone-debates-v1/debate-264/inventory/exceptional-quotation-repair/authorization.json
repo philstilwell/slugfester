@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-exceptional-two-field-quotation-repair-authorization",
+  "status": "authorized-before-execution",
+  "debateNumber": "264",
+  "debateId": "chopra-dawkins-consciousness-purpose-spirituality-2013",
+  "userReply": "Yes.",
+  "approvedProposal": "One additional repair limited to the two wrong-speaker quotation fields, then continue; all arguments and assessment rules unchanged.",
+  "preservedBaseline": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-264/inventory/bounded-correction/output.json",
+    "sha256": "e399366faf8af0a9c6ec43db28169fbb0e13bf7ef6ac6131a4bf05d7fbef0347"
+  },
+  "operation": "Deterministic deletion of the two specifically identified opposite-speaker quotations; no model-authored replacement text.",
+  "fields": [
+    {
+      "moveId": "dawkins-cell-responsiveness-does-not-solve-consciousness",
+      "field": "quoteEligibleExactSpans",
+      "removeExact": "a single cell has siience"
+    },
+    {
+      "moveId": "chopra-promissory-note-objection",
+      "field": "quoteEligibleExactSpans",
+      "removeExact": "it is a promisory note"
+    }
+  ],
+  "maximumAttempts": 1,
+  "retries": 0,
+  "otherInventoryFieldsMutable": false,
+  "sourceMutable": false,
+  "directIncrementalCostUsd": 0
+}

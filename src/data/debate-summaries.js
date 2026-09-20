@@ -12520,5 +12520,55 @@ export const debateSummaries = [
         "title": "Ideology, charity, and public consequences"
       }
     ]
+  },
+  {
+    "id": "chopra-dawkins-consciousness-purpose-spirituality-2013",
+    "number": "264",
+    "title": "Deepak Chopra vs Richard Dawkins — Consciousness, Cosmic Purpose, and Spirituality",
+    "year": 2013,
+    "label": "Consciousness, purpose, and spirituality",
+    "date": "2026-09-19",
+    "duration": "1 hr 13 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=BiwLrxPb1fE",
+    "motion": "Does spirituality provide knowledge of consciousness, cosmic purpose, and human well-being beyond naturalistic science?",
+    "summary": "Dawkins wins through scale-sensitive emergence arguments and precise criticism of quantum equivocation; Chopra’s strongest reply challenges confidence in promised brain-only explanation.",
+    "topicCategory": "mind-consciousness-free-will",
+    "sides": {
+      "pro": {
+        "name": "Spiritual nondualism",
+        "speaker": "Deepak Chopra",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 66,
+      "con": 86,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Purpose, evolution, and fine-tuning"
+      },
+      {
+        "title": "Consciousness, sentience, and emergence"
+      },
+      {
+        "title": "Scientific explanation and spiritual method"
+      },
+      {
+        "title": "Transcendence and explanatory scope"
+      },
+      {
+        "title": "Quantum language, discontinuity, and continuity"
+      },
+      {
+        "title": "Religion, spirituality, and human well-being"
+      }
+    ]
   }
 ];

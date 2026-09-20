@@ -1,0 +1,28 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {pathToFileURL} from 'node:url';
+const read = p => JSON.parse(fs.readFileSync(p,'utf8'));
+export function checkDraftPortion(number, sectionId, cards) {
+  const rec = read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===number);
+  assert(rec);
+  const packet = read(rec.root+'/publication/input-bundle.json');
+  const section = packet.lockedCandidateSkeleton.sections.find(s=>s.sectionId===sectionId);
+  assert(section);
+  const expected = section.exchanges.flatMap(e=>['pro','con'].flatMap(side=>e[side]?[e[side]]:[]));
+  assert.deepEqual(cards.map(c=>c.ledgerMoveId),expected.map(c=>c.ledgerMoveId));
+  const wc = s => String(s).trim().split(/\s+/).length;
+  for (const [i,c] of cards.entries()) {
+    assert.deepEqual(Object.keys(c).sort(),['ledgerMoveId','role','words','critique'].sort());
+    assert(wc(c.role)>=1&&wc(c.role)<=5);
+    assert(wc(c.words)>=22&&wc(c.words)<=28);
+    assert(wc(c.critique)>=105&&wc(c.critique)<=130);
+    assert(c.critique.length>=880);
+    assert.equal((c.critique.match(/[.!?](?=\s|$)/g)||[]).length,4);
+    const labels=['Strongest feature:','Principal limitation:','Live burden:','Locked score:'];
+    const parts=c.critique.split(/(?=Principal limitation:|Live burden:|Locked score:)/);
+    assert.equal(parts.length,4); assert(parts.every((p,j)=>p.trim().startsWith(labels[j])&&/[.!?]$/.test(p.trim())));
+    assert(parts[3].includes(String(expected[i].score)),'Locked score not explicitly explained');
+  }
+  return {status:'mechanically-valid-direct-prose-review-required',sectionId,cards:cards.length,critiqueWords:cards.map(c=>wc(c.critique)),critiqueCharacters:cards.map(c=>c.critique.length)};
+}
+if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href && process.argv[2]==='--debate') console.log(JSON.stringify(checkDraftPortion(process.argv[3],process.argv[4],JSON.parse(fs.readFileSync(0,'utf8')))));

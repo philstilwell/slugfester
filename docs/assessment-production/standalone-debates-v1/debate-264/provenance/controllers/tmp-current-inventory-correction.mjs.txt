@@ -1,0 +1,50 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,serializedJson,validateStandaloneInventory} from './scripts/lib/assessment-production-standalone-debate-v1.mjs';
+import {validateEditorScopedSource} from './scripts/lib/assessment-editor-scoped-source.mjs';
+export function applyCorrection(correction,packet){
+ const read=p=>JSON.parse(fs.readFileSync(p));
+ assert.equal(fileRecord(packet.baseline.path).sha256,packet.baseline.sha256);
+ for(const r of packet.inputs)assert.equal(fileRecord(r.path).sha256,r.sha256,r.path);
+ const base=read(packet.baseline.path),events=read(packet.eventsPath),out=structuredClone(base);
+ assert.equal(correction.debateNumber,base.debateNumber);assert.equal(correction.debateId,base.debateId);assert.equal(correction.baselineSha256,packet.baseline.sha256);
+ assert.deepEqual(correction.moves.map(m=>m.moveId),base.moves.map(m=>m.moveId));
+ const review=[];
+ for(const [n,d]of correction.moves.entries()){
+  assert.deepEqual(Object.keys(d).sort(),['moveId','startEvent','endEvent','quoteEligibleExactSpans','evidenceRationale','longerCompleteArgumentRationale','attributionConfidence','attributionRationale'].sort());
+  const m=out.moves[n],old=base.moves[n];
+  assert(Number.isInteger(d.startEvent)&&Number.isInteger(d.endEvent)&&d.startEvent>=0&&d.startEvent<=d.endEvent&&d.endEvent<events.length);
+  assert(d.evidenceRationale.length>=80);assert(d.attributionRationale.length>=40);
+  const rank={low:0,medium:1,high:2};assert(d.attributionConfidence in rank);assert(rank[d.attributionConfidence]<=rank[old.attributionConfidence],'Cannot promote attribution confidence in a text-only repair');
+  m.sourceSpan={startEvent:d.startEvent,endEvent:d.endEvent,startMs:events[d.startEvent].startMs,endMs:events[d.endEvent].startMs+events[d.endEvent].durationMs,excerpt:events.slice(d.startEvent,d.endEvent+1).map(e=>e.text).join(' ').replace(/\s+/g,' ').trim()};
+  m.quoteEligibleExactSpans=d.quoteEligibleExactSpans;assert(m.quoteEligibleExactSpans.length>=1);
+  assert(typeof d.longerCompleteArgumentRationale==='string');
+  if(m.sourceSpan.excerpt.length>2200)assert(d.longerCompleteArgumentRationale.length>=100,'Long span requires specific necessity rationale');
+  m.longerCompleteArgumentRationale=d.longerCompleteArgumentRationale;m.attributionConfidence=d.attributionConfidence;m.attributionRationale=d.attributionRationale;
+  for(const k of ['claimSummary','reasonSummary','inferenceSummary','sectionId','side','speaker','moveKind','importance','importanceRationale','burdenContact','respondsToIds','responseComponents','materialWordingConfidence','materialWordingRationale'])assert.deepEqual(m[k],old[k]);
+  review.push({moveId:m.moveId,sourceEventRange:[d.startEvent,d.endEvent],characters:m.sourceSpan.excerpt.length,evidenceRationale:d.evidenceRationale,attributionConfidence:m.attributionConfidence});
+ }
+ const counts=out.sections.map(s=>({sectionId:s.sectionId,pro:out.moves.filter(m=>m.sectionId===s.sectionId&&m.side==='pro').length,con:out.moves.filter(m=>m.sectionId===s.sectionId&&m.side==='con').length}));
+ const totals={pro:out.moves.filter(m=>m.side==='pro').length,con:out.moves.filter(m=>m.side==='con').length};totals.absoluteDifference=Math.abs(totals.pro-totals.con);
+ assert(correction.balanceRationale.length>=80);assert.deepEqual(correction.sectionRationales.map(x=>x.sectionId),out.sections.map(s=>s.sectionId));
+ out.selectionBalanceAudit={thresholds:{totalAbsoluteDifference:3,sectionAbsoluteDifference:2},totals,sections:counts.map(s=>({...s,absoluteDifference:Math.abs(s.pro-s.con)})),rationaleRequired:totals.absoluteDifference>=3||counts.some(s=>Math.abs(s.pro-s.con)>=2),rationale:correction.balanceRationale};
+ out.publicationCapacityAudit={maximumSelectedMovesPerSidePerSection:4,sections:counts.map((s,n)=>{const fourth=s.pro===4||s.con===4;const rationale=correction.sectionRationales[n].rationale;assert(rationale.length>=(fourth?100:40));return{...s,withinCapacity:s.pro<=4&&s.con<=4,fourthRowRequired:fourth,fourthRowAuthorized:true,rationale};}),allSectionsWithinCapacity:counts.every(s=>s.pro<=4&&s.con<=4),allFourthRowsPreauthorized:true};
+ // Coverage is rebuilt from exact event membership, independently of model arithmetic.
+ const coverage=[];
+ for(const [i,e]of events.entries()){
+  const s=base.editorApprovedScope,excluded=e.startMs<s.assessedWindow.startMs||e.startMs+e.durationMs>s.assessedWindow.endMs||s.excludedIntervals.some(x=>e.startMs<x.endMs&&e.startMs+e.durationMs>x.startMs);
+  const ids=out.moves.filter(m=>m.sourceSpan.startEvent<=i&&m.sourceSpan.endEvent>=i).map(m=>m.moveId);
+  assert(!excluded||ids.length===0,'Excluded event selected');
+  const original=base.completeTranscriptCoverage.find(b=>b.startEvent<=i&&b.endEvent>=i);assert(original);
+  const reason=excluded?'Outside the approved scoring scope; no credit or penalty.':ids.length?'Exact selected argument evidence; retained surrounding context remains available in the complete scoped source.':original.reason;
+  const prev=coverage.at(-1);if(prev&&prev.reason===reason&&JSON.stringify(prev.moveIds)===JSON.stringify(ids))prev.endEvent=i;else coverage.push({startEvent:i,endEvent:i,moveIds:ids,reason});
+ }
+ out.completeTranscriptCoverage=coverage;
+ const validation=validateStandaloneInventory(out,events);
+ const scope=validateEditorScopedSource({authorization:read(packet.authorizationPath),sourceLock:read(packet.sourceLockPath),inventory:out});
+ return{candidate:out,validation,scope,counts,review};
+}
+if(process.argv[2]==='--check-stdin'){
+ const packet=JSON.parse(fs.readFileSync(process.argv[3]));const c=JSON.parse(fs.readFileSync(0,'utf8'));
+ const r=applyCorrection(c,packet);console.log(serializedJson({status:'passed-read-only-draft-validation',validation:r.validation,scope:r.scope,counts:r.counts,review:r.review}));
+}
