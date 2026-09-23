@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const wc=s=>String(s??'').trim().split(/\s+/).filter(Boolean).length;
+export function checkRhetorical(o,p){
+ const adjud=Array.isArray(p.candidates),c=p.outputContract;
+ for(const key of ['schemaVersion','status','debateNumber','debateId'])assert.equal(o[key],c[key],key);
+ const defs=p.referenceDefinitions,ids=p.moves.map(x=>x.moveId),blunders=p.overallBlunders.map(x=>x.blunderId);
+ const checkRow=r=>{const id=r.moveId??r.blunderId;assert((r.moveId?ids:blunders).includes(id));const d=defs.find(x=>x.type===r.type&&x.label===r.label);assert(d,'unknown definition '+r.candidateKey);assert.equal(r.url,d.url);assert.equal(r.candidateKey,id+'|'+r.type+'|'+r.label);assert(['accepted','rejected'].includes(r.decision));assert(wc(r.context)>=8&&wc(r.context)<=35,'context count '+r.candidateKey);assert(wc(r.rationale)>=12,'rationale count '+r.candidateKey);};
+ if(adjud){assert.deepEqual(o.reviewedCandidateKeys,p.candidates.map(x=>x.candidateKey));assert.deepEqual(o.resolutions.map(x=>x.candidateKey),o.reviewedCandidateKeys);o.resolutions.forEach(checkRow);}
+ else {
+  assert.deepEqual(o.reviewedMoveIds,ids);assert.deepEqual(o.reviewedOverallBlunderIds,blunders);
+  assert.deepEqual(o.moveReviews.map(x=>x.moveId),ids);assert.deepEqual(o.overallBlunderReviews.map(x=>x.blunderId),blunders);
+  const tables=[o.candidateReviews,o.overallBlunderCandidateReviews];assert(tables.every(Array.isArray));tables.flat().forEach(checkRow);
+  const keys=tables.flat().map(x=>x.candidateKey);assert.equal(new Set(keys).size,keys.length,'duplicate candidates');
+  for(const reviews of [o.moveReviews,o.overallBlunderReviews])for(const r of reviews){assert.deepEqual(r.allDefinitionsConsidered,defs.map(d=>d.definitionKey));const id=r.moveId??r.blunderId;assert.deepEqual([...r.candidateKeys].sort(),tables.flat().filter(x=>(x.moveId??x.blunderId)===id).map(x=>x.candidateKey).sort());assert(wc(r.rationale)>=12,'source-specific review required '+id);}
+  assert.deepEqual(o.acceptedTags,o.candidateReviews.filter(x=>x.decision==='accepted'));assert.deepEqual(o.acceptedOverallBlunderLinks,o.overallBlunderCandidateReviews.filter(x=>x.decision==='accepted'));
+ }
+ assert.deepEqual(o.audit,c.audit);
+ return {status:'mechanically-valid-definition-and-source-review-required',moves:ids.length,candidates:adjud?o.resolutions.length:o.candidateReviews.length+o.overallBlunderCandidateReviews.length};
+}
+if(process.argv[2]==='--check-stdin')console.log(JSON.stringify(checkRhetorical(JSON.parse(fs.readFileSync(0,'utf8')),JSON.parse(fs.readFileSync(process.argv[3])))));

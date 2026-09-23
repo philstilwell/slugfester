@@ -1,0 +1,16 @@
+"""Invoke the installed transcription skill once with automatic retries disabled."""
+import importlib.util
+import json
+import sys
+from openai import OpenAI
+
+spec = importlib.util.spec_from_file_location("installed_transcribe_skill", "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py")
+skill = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(skill)
+skill._create_client = lambda: OpenAI(max_retries=0, timeout=180.0)
+try:
+    skill.main()
+except Exception as error:
+    # Do not expose credentials, request bodies, or signed media URLs in an error.
+    print(json.dumps({"errorType": type(error).__name__, "statusCode": getattr(error, "status_code", None), "requestId": getattr(error, "request_id", None)}), file=sys.stderr)
+    raise SystemExit(1)

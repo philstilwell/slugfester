@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0-reading-authentication-correction-note",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "status": "resolved-before-first-publication-drafting-release",
+  "finding": "The initial transcript lines 1–350 appeared only within a truncated combined response and were not credited. Other inputs had been read in interleaved file chunks, which the first whole-file-adjacency matcher could not authenticate despite literal line coverage.",
+  "sourceRecovery": "The same isolated writer reread transcript lines 1–350 in one standalone untruncated result before release. No new model or replacement assessment attempt was used.",
+  "matcherCorrection": "Authentication now matches exact contiguous runs of original lines within untruncated visible tool blocks, in any read order. Every nonempty input line must be covered; truncated blocks earn no credit. No summaries, hashes alone, reconstructed text, or declarations count as reading.",
+  "preservedPreviousMatcher": "docs/assessment-production/standalone-debates-v1/debate-265/publication/reading-authenticator-before-interleaved-chunk-support.mjs",
+  "authenticatedRelease": "docs/assessment-production/standalone-debates-v1/debate-265/publication/reading-release.json",
+  "assessmentChanges": 0,
+  "scoreChanges": 0,
+  "publicationSubmissionsBeforeRelease": 0,
+  "directIncrementalCostUsd": 0
+}

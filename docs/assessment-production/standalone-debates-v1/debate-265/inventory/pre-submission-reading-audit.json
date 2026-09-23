@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0-standalone-reading-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "assessmentModel": "5.6 Sol",
+  "packetSha256": "5fc5c12f281035db3e49ebea0b4750b4b98573d715e58a5f5429e92769952fa1",
+  "inputsReviewed": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/inventory/packet.json",
+      "coverage": "complete after topicCategory correction"
+    },
+    {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/indexed-transcript.txt",
+      "coverage": "all 3040 events [0000]-[3039] in eight separate untruncated calls of 380 lines"
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "coverage": "allowed lines 1-457 in full"
+    }
+  ],
+  "sourceEventCoverage": {
+    "declaredEventCount": 3040,
+    "firstEvent": 0,
+    "lastEvent": 3039,
+    "eventsRead": 3040,
+    "complete": true,
+    "readBatches": [
+      {
+        "startEvent": 0,
+        "endEvent": 379
+      },
+      {
+        "startEvent": 380,
+        "endEvent": 759
+      },
+      {
+        "startEvent": 760,
+        "endEvent": 1139
+      },
+      {
+        "startEvent": 1140,
+        "endEvent": 1519
+      },
+      {
+        "startEvent": 1520,
+        "endEvent": 1899
+      },
+      {
+        "startEvent": 1900,
+        "endEvent": 2279
+      },
+      {
+        "startEvent": 2280,
+        "endEvent": 2659
+      },
+      {
+        "startEvent": 2660,
+        "endEvent": 3039
+      }
+    ]
+  },
+  "eligibilityReview": {
+    "dyadicGatePassed": true,
+    "pro": "Miles K. Donahue",
+    "con": "Dan Linford",
+    "moderator": "Phil Halper",
+    "reason": "Only Donahue and Linford adopt and defend positions on the motion. Halper introduces, times, reads audience questions, briefly explains the Boltzmann-brain prompt, and closes without defending an independent position."
+  },
+  "sourceAttributionReview": {
+    "method": "Captions-only review using named handoffs, sustained turns, and local question-answer context.",
+    "audioVerificationPerformed": false,
+    "audioAvailabilityNote": "Original English audio was obtained by the controller but was not an authorized input for this worker and was not consulted.",
+    "issues": [
+      {
+        "type": "automatic-caption-errors",
+        "effect": "Names, technical terms, exponents, and occasional negations may be wrong; exact source text remains uncorrected."
+      },
+      {
+        "type": "rapid-speaker-switches",
+        "effect": "Some cross-examination and audience caption events contain interjections or shared boundaries; affected selected moves use medium confidence and an audioVerificationReason."
+      }
+    ]
+  },
+  "sourceGate": {
+    "passed": true,
+    "issuesRequiringRejection": [],
+    "notes": "The complete transcript covers both openings, all four cross-examinations, the full audience-question period, and the final deeper-physics objection. The sole gap over five seconds occurs during screen-sharing setup."
+  },
+  "prohibitedMaterialAudit": {
+    "externalResearchUsed": false,
+    "otherDebatesRead": false,
+    "priorScoresRead": false,
+    "numericalRatingsProduced": false,
+    "winnerSelected": false,
+    "credentialsAccessed": false,
+    "paidCallsUsed": false,
+    "otherAgentsUsed": false
+  },
+  "readingCheckpoint": {
+    "reportedToController": true,
+    "releasedByController": true,
+    "releaseCondition": "Controller authenticated model/settings, full source visibility, allowed calls, and the packet's corrected topicCategory before drafting."
+  }
+}

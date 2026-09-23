@@ -1,0 +1,46 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
+const n=process.argv[2]; assert.equal(n,'265');
+const read=p=>JSON.parse(fs.readFileSync(p));
+const record=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);
+assert.equal(record.videoId,'Ui9C6N4HFvY');
+const sourceRoot='/Users/philstilwell/Documents/SLUGFESTER.com';
+const entries=new Map();
+const multi=process.argv[3]==='multi';
+const add=(p,hash=null)=>{assert(!path.isAbsolute(p)&&!p.split('/').includes('..')); entries.set(p,hash);};
+if(multi){
+ const manifest=read('docs/assessment-production/multi-speaker-approximation-v1/manifest.json');
+ for(const debate of manifest.debates)for(const key of ['transcript','events','manifest'])add(debate.source[key].path,debate.source[key].sha256);
+}else{
+const gateRoot='docs/calibration/v2.2/complete-gate';
+for(const debate of read(gateRoot+'/gate-manifest.json').sample.debates){
+ const audit=read(gateRoot+'/audio-verification/'+debate.debateId+'.json');
+ for(const item of [...audit.speakerReferences,audit.sourceAudio,...audit.moves.flatMap(m=>[m.clip,m.transcript])])add(item.localPath,item.sha256);
+}
+for(const gate of ['docs/calibration/v2.4/held-out-gate/gate-manifest.json','docs/calibration/v2.5/held-out-gate/gate-manifest.json','docs/calibration/v3.8/held-out-burden-contact-integration-gate/gate-manifest.json']){
+ for(const debate of read(gate).sample.debates){
+  const root='.assessment-cache/captions/'+debate.videoId;
+  for(const name of ['transcript.txt','events.json','manifest.json'])add(root+'/'+name);
+ }
+}
+}
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const results=[];
+for(const [p,expected] of entries){
+ let disposition='already-present';
+ if(!fs.existsSync(p)){
+  fs.mkdirSync(path.dirname(p),{recursive:true});
+  const copy=spawnSync('/bin/cp',['-n',path.join(sourceRoot,p),p],{encoding:'utf8',timeout:30000});
+  assert.equal(copy.status,0,copy.error?.message??copy.stderr); disposition='copied-existing-cache';
+ }
+ const bytes=fs.readFileSync(p),actual=hash(bytes); if(expected)assert.equal(actual,expected,p);
+ results.push({path:p,sha256:actual,bytes:bytes.length,expectedSha256:expected,disposition});
+ console.log(disposition,p);
+}
+for(const p of entries.keys())if(p.endsWith('/manifest.json')&&p.startsWith('.assessment-cache/captions/')){
+ const m=read(p),root=path.dirname(p);assert.equal(hash(fs.readFileSync(root+'/transcript.txt')),m.transcriptSha256);assert.equal(hash(fs.readFileSync(root+'/events.json')),m.normalizedEventsSha256);
+}
+fs.writeFileSync(record.root+'/validation/historical-cache-restoration'+(multi?'-multi':'')+'.json',JSON.stringify({status:'passed',debateNumber:n,completedAt:new Date().toISOString(),sourceRoot,originalFilesModified:0,paidCalls:0,results},null,2)+'\n',{flag:'wx'});

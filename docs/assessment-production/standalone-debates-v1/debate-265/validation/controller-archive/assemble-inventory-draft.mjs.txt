@@ -1,0 +1,38 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {validateStandaloneInventory} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const session='/Users/philstilwell/.codex/sessions/2026/09/23/rollout-2026-09-23T14-25-57-01a0cf84-6b22-7f33-830e-dc073d92168a.jsonl';
+const raw=fs.readFileSync(session),rows=raw.toString().trim().split('\n').map(JSON.parse);
+const root='docs/assessment-production/standalone-debates-v1/debate-265';
+const parts=[];
+for(const row of rows)for(const b of row.payload?.type==='custom_tool_call_output'?row.payload.output:[])try{const j=JSON.parse(b.text);if(j.draftPart)parts.push({ordinal:row.ordinal,callId:row.payload.call_id,...j});}catch{}
+const get=k=>parts.findLast(x=>x.draftPart===k)?.value;
+const inv=structuredClone(get('header'));assert.equal(inv.debateNumber,'265');
+Object.assign(inv,get('header-counts-correction'));
+inv.moves=parts.filter(p=>/^moves-\d+(?:-|$)/.test(p.draftPart)).flatMap(p=>structuredClone(p.value));
+const move=id=>{const m=inv.moves.find(x=>x.moveId===id);assert.ok(m,id);return m;};
+const pre=get('pre-submission-corrections');
+for(const c of pre.moveCorrections){const m=move(c.moveId);if(c.replacement)inv.moves[inv.moves.indexOf(m)]=structuredClone(c.replacement);else{const{moveId,correctionNote,...fields}=c;Object.assign(m,fields);}}
+inv.selectionBalanceAudit=pre.selectionBalanceAudit;
+for(const c of pre.publicationCapacitySectionCorrections){const i=inv.publicationCapacityAudit.sections.findIndex(x=>x.sectionId===c.sectionId);assert.ok(i>=0);inv.publicationCapacityAudit.sections[i]=c;}
+const f=get('final-span-and-coverage-corrections');
+for(const c of f.spanCorrections){const m=move(c.moveId);Object.assign(m.sourceSpan,{startEvent:c.startEvent,endEvent:c.endEvent});m.sourceSpanSelectionRationale=c.rationale;for(const k of ['claim','warrant','inference','respondsToIds','responseComponents'])if(c[k+'Correction']!==undefined)m[k]=c[k+'Correction'];}
+for(const c of f.retainedLongSpans)move(c.moveId).sourceSpanSelectionRationale=c.rationale;
+for(const c of f.coverageAuditReplacements){const i=inv.coverageAudit.findIndex(x=>x.startEvent===c.startEvent);assert.ok(i>=0);inv.coverageAudit[i]=c;}
+for(const c of get('final-attribution-corrections')){const{moveId,...v}=c;Object.assign(move(moveId),v);}
+for(const c of get('final-source-substance-resolutions')){const m=move(c.moveId);Object.assign(m.sourceSpan,{startEvent:c.sourceSpanDecision.startEvent,endEvent:c.sourceSpanDecision.endEvent});m.sourceSpanSelectionRationale=c.sourceSpanDecision.rationale;const{moveId,sourceSpanDecision,...rest}=c;Object.assign(m,rest);}
+{const c=get('final-quote-provenance-correction');const{moveId,...v}=c;Object.assign(move(moveId),v);}
+const events=JSON.parse(fs.readFileSync('.assessment-cache/captions/Ui9C6N4HFvY/events.json','utf8'));
+const removedQuotes=[];
+for(const m of inv.moves){const s=m.sourceSpan;s.startMs=events[s.startEvent].startMs;s.endMs=events[s.endEvent].startMs+events[s.endEvent].durationMs;s.excerpt=events.slice(s.startEvent,s.endEvent+1).map(e=>e.text.replace(/\s+/g,' ').trim()).join(' ').replace(/\s+/g,' ').trim();m.quoteEligibleExactSpans=m.quoteEligibleExactSpans.filter(q=>{const valid=s.excerpt.includes(q)&&q.trim().split(/\s+/).length>=3&&q.trim().split(/\s+/).length<=18;if(!valid)removedQuotes.push({moveId:m.moveId,quote:q});return valid;});}
+inv.moves.sort((a,b)=>a.sourceSpan.startEvent-b.sourceSpan.startEvent);
+const audit=validateStandaloneInventory(inv,events);
+assert.equal(inv.motion,JSON.parse(fs.readFileSync(root+'/authorization.json','utf8')).identity.motion);
+const longSpans=inv.moves.filter(m=>m.sourceSpan.excerpt.length>2200).map(m=>({moveId:m.moveId,characters:m.sourceSpan.excerpt.length,rationale:m.sourceSpanSelectionRationale}));
+const missingLongRationales=longSpans.filter(m=>!m.rationale);
+const reading=get('reading-audit');
+const record={schemaVersion:'1.0-controller-first-draft-assembly',status:missingLongRationales.length?'long-span-review-pending':'passed-mechanical-draft-review',createdAt:new Date().toISOString(),debateNumber:'265',model:'gpt-5.6-sol',reasoningEffort:'low',authenticatedDraftParts:parts.map(x=>({draftPart:x.draftPart,ordinal:x.ordinal,callId:x.callId})),assembly:'Only literal worker-authored semantic decisions; mechanical chronological sort, exact event concatenation/endpoints, and worker-authorized filtering of nonexact or out-of-range optional quotations. No ratings or calculated scores.',validation:audit,removedQuotes,longSpans,missingLongRationales,modelContexts:rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,effort:r.payload.effort})),sessionSnapshot:{path:session,sha256:createHash('sha256').update(raw).digest('hex'),bytes:raw.length},directIncrementalCostUsd:0};
+if(process.argv.includes('--preserve')){for(const[name,value]of Object.entries({'pre-submission-draft.json':inv,'draft-parts.json':parts,'pre-submission-mechanical-review.json':record,'pre-submission-reading-audit.json':reading}))fs.writeFileSync(root+'/inventory/'+name,JSON.stringify(value,null,2)+'\n',{flag:'wx'});}
+if(process.argv.includes('--preserve-pre-audio')){for(const[name,value]of Object.entries({'pre-audio-inventory.json':inv,'pre-audio-draft-parts.json':parts,'pre-audio-mechanical-review.json':record}))fs.writeFileSync(root+'/inventory/'+name,JSON.stringify(value,null,2)+'\n',{flag:'wx'});}
+console.log(JSON.stringify({audit,counts:inv.selectionBalanceAudit,removedQuotes,longSpans,missingLongRationales,quoteCount:inv.moves.reduce((n,m)=>n+m.quoteEligibleExactSpans.length,0)},null,2));

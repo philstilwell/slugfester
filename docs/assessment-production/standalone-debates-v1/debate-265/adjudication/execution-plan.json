@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0-frozen-dispute-only-execution-plan",
+  "status": "frozen-before-model-execution",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/adjudication/packet.json",
+      "sha256": "6cae20ba2b171817946e45402f3dfd4892041a602bb749c1798766f753341323",
+      "bytes": 181625
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/inventory/inventory.json",
+      "sha256": "24a6e4b206ad12edd54e90d7241c088b24b3a8a0a30b9cd92e943decd53ce39f",
+      "bytes": 127349
+    },
+    {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/indexed-transcript.txt",
+      "sha256": "b8654b07c7198cbf2dbd971998753edd0cdc318a9b17470266eddda4d013f323",
+      "bytes": 186387
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/audio/score-blind-supplement.json",
+      "sha256": "87ad96b1257418b84f034e9917d82c0c5de92bcd7c769065d2e0e26bc8821ad9",
+      "bytes": 10870
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 903,
+          "end": 946
+        }
+      ]
+    }
+  ],
+  "disputeCount": 42,
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-265/adjudication/output.json",
+  "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-265/adjudication/reading-audit.json",
+  "attempts": 1,
+  "retries": 0,
+  "forkTurns": "none",
+  "directIncrementalCostUsd": 0,
+  "requirements": [
+    "Fresh anonymous adjudicator. Read every declared input literally and completely (validator only allowed lines). Transcript chunks at most380lines; inventory/packet bounded untruncated chunks. Send reading checkpoint and wait for authenticated release before decisions.",
+    "Only anonymous dispute options are visible. Do not access either primary output or pass identity, other debates, calculated totals, winner labels, publication, biographies, external research, credentials, paidAPI or subagents. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY in shell commands. Do not call any calculator.",
+    "Resolve exactly every packet dispute once in packet order. Choose only option-a or option-b for the disputed field; never invent a new rating or change source, inventory, weights or links. Supply independently reasoned source-specific rationale at least40characters for each choice. No evaluation outside the listed disputes.",
+    "Respect the frozen audio supplement and full live replies. Never penalize caption corruption; no direct listening claimed. Distinguish confirmation from posterior probability, and a skeptical challenge from a positive naturalistic burden according to the locked motion.",
+    "Use validator schema1.0-standalone-dispute-adjudication; protocol assessment-production-standalone-debate-v1; complete-and-schema-valid; reviewerRole isolated-dispute-only-adjudicator; assessmentModel5.6 Sol; reasoningEffort low; exact debateNumber/debateId. Required isolation booleans from validator. resolutions entries contain disputeId, selectedOption, rationale.",
+    "Single first submission, no automatic retry. Self-check literal draft before first output write. Use apply_patch and only declared output/reading-audit paths; do not overwrite submitted output. No arbitrary deadline."
+  ]
+}

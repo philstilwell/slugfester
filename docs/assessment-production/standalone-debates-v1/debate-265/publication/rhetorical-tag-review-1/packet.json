@@ -1,0 +1,1256 @@
+{
+  "schemaVersion": "1.0-score-blind-rhetorical-review-packet",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "motion": "Does cosmic fine-tuning provide strong evidence for theism over naturalism?",
+  "controllerOverrides": [],
+  "referenceDefinitions": [
+    {
+      "definitionKey": "fallacy|appeal-to-authority",
+      "type": "fallacy",
+      "slug": "appeal-to-authority",
+      "label": "Appeal to authority",
+      "definition": "Relying on a person or institution's status as if it settles the argument, especially when the relevant evidence, expertise, or consensus has not been shown.",
+      "url": "https://logfall.com/fallacies/appeal-to-authority/"
+    },
+    {
+      "definitionKey": "fallacy|argument-from-ignorance",
+      "type": "fallacy",
+      "slug": "argument-from-ignorance",
+      "label": "Argument from ignorance",
+      "definition": "Treating a claim as true because it has not been disproved, or false because it has not been proved, rather than supplying positive evidence.",
+      "url": "https://logfall.com/fallacies/argument-from-ignorance/"
+    },
+    {
+      "definitionKey": "fallacy|begging-the-question",
+      "type": "fallacy",
+      "slug": "begging-the-question",
+      "label": "Begging the question",
+      "definition": "Assuming, directly or indirectly, the very point that needs to be established, so the conclusion is smuggled into the premises.",
+      "url": "https://logfall.com/fallacies/begging-the-question/"
+    },
+    {
+      "definitionKey": "fallacy|equivocation",
+      "type": "fallacy",
+      "slug": "equivocation",
+      "label": "Equivocation",
+      "definition": "Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.",
+      "url": "https://logfall.com/fallacies/equivocation/"
+    },
+    {
+      "definitionKey": "fallacy|red-herring",
+      "type": "fallacy",
+      "slug": "red-herring",
+      "label": "Red herring",
+      "definition": "Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.",
+      "url": "https://logfall.com/fallacies/red-herring/"
+    },
+    {
+      "definitionKey": "fallacy|special-pleading",
+      "type": "fallacy",
+      "slug": "special-pleading",
+      "label": "Special pleading",
+      "definition": "Applying an exception or different standard to one side of the argument without giving a principled reason for the difference.",
+      "url": "https://logfall.com/fallacies/special-pleading/"
+    },
+    {
+      "definitionKey": "bias|ambiguity-effect",
+      "type": "bias",
+      "slug": "ambiguity-effect",
+      "label": "Ambiguity effect",
+      "definition": "Preferring clearer or more familiar claims over uncertain ones, even when the uncertain option may deserve serious consideration.",
+      "url": "https://cogbias.site/biases/ambiguity-effect/"
+    },
+    {
+      "definitionKey": "bias|authority-bias",
+      "type": "bias",
+      "slug": "authority-bias",
+      "label": "Authority bias",
+      "definition": "Giving extra weight to a claim because it comes from a perceived authority, sometimes beyond what the evidence itself supports.",
+      "url": "https://cogbias.site/biases/authority-bias/"
+    },
+    {
+      "definitionKey": "bias|base-rate-neglect",
+      "type": "bias",
+      "slug": "base-rate-neglect",
+      "label": "Base-rate neglect",
+      "definition": "Underweighting general background rates or prior probabilities while focusing too heavily on a vivid specific case or local detail.",
+      "url": "https://cogbias.site/biases/base-rate-neglect/"
+    },
+    {
+      "definitionKey": "bias|belief-bias",
+      "type": "bias",
+      "slug": "belief-bias",
+      "label": "Belief bias",
+      "definition": "Judging an argument by whether its conclusion feels believable instead of evaluating whether the conclusion follows from the premises.",
+      "url": "https://cogbias.site/biases/belief-bias/"
+    },
+    {
+      "definitionKey": "bias|confirmation-bias",
+      "type": "bias",
+      "slug": "confirmation-bias",
+      "label": "Confirmation bias",
+      "definition": "Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information.",
+      "url": "https://cogbias.site/biases/confirmation-bias/"
+    },
+    {
+      "definitionKey": "bias|scope-neglect",
+      "type": "bias",
+      "slug": "scope-neglect",
+      "label": "Scope neglect",
+      "definition": "Failing to adjust judgment in proportion to the scale, number, or magnitude of what is being discussed.",
+      "url": "https://cogbias.site/biases/scope-neglect/"
+    },
+    {
+      "definitionKey": "bias|subjective-validation",
+      "type": "bias",
+      "slug": "subjective-validation",
+      "label": "Subjective validation",
+      "definition": "Treating a claim as especially accurate or meaningful because it feels personally resonant or confirms one's private experience.",
+      "url": "https://cogbias.site/biases/subjective-validation/"
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "multiple-parameters-have-narrow-life-permitting-ranges",
+      "sectionId": "fine-tuning-data-and-likelihoods",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 303,
+        "endEvent": 330,
+        "startMs": 700320,
+        "endMs": 765200,
+        "excerpt": "the universe is fine-tuned for life. So here what we mean by fine-tuning is that as Dan intimated the various parameters of physics are such that for many of them small variations in their value relative to their possible range of values would yield a physics or a universe with a physics that does not permit uh complex life of any kind. So here are four examples that are commonly taken for granted though they're not incredibly uncontroversial or completely uncontroversial. So the cosmological constant this is a contributing factor to the expansion rate of the universe. The Higs vacuum expectation value which is a a contribution to the masses of fundamental particles. Q uniformity which measure measures uh perturbations or differences in the density of mass energy in the very early universe and then the gravitational coupling constant which determines the strength of gravity. In all of these cases and more, they are fine-tuned for life that if you alter them by a sufficient amount, you get a universe that can't permit complexity of any kind, much less life."
+      },
+      "claim": "Several central physical parameters have narrow life-permitting ranges under current physics.",
+      "warrant": "Small variations in the cosmological constant, Higgs vacuum expectation value, Q uniformity, or gravitational coupling would prevent complex structure and life.",
+      "inference": "There is a substantive fine-tuning datum requiring comparative explanation, not merely an empty label.",
+      "burdenContact": {
+        "bridgeId": "pro-central-life-permitting-range",
+        "tier": "central",
+        "rationale": "It identifies multiple parameters and the consequence of leaving their life-permitting ranges."
+      },
+      "respondsToIds": [
+        "theory-level-fine-tuning-reframe"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "theory-level-fine-tuning-reframe",
+          "component": "existence of an explanandum",
+          "rationale": "It asserts that current parameter sensitivity supports talking about a life-permitting fine-tuning datum even while acknowledging controversy."
+        }
+      ],
+      "publicationDescription": "Multiple parameters occupy narrow life-permitting ranges because modest changes prevent complex structure, establishing a physical pattern that competing worldviews must explain.",
+      "publicationCritique": "Strongest feature: Donahue identifies four concrete parameters and connects departures from their life-permitting ranges to the loss of complex structure, giving the fine-tuning discussion a substantive empirical target rather than an empty label. Principal limitation: The examples and consequences are summarized rather than demonstrated, so the passage establishes current-theory sensitivity more securely than it establishes any probability distribution over possible values. Live burden: The affirmative must justify a measure that converts narrow counterfactual ranges into low likelihood under naturalism while remaining open to deeper physics and the acknowledged controversy surrounding particular cases. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "theory-level-fine-tuning-reframe",
+      "sectionId": "fine-tuning-data-and-likelihoods",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 51,
+        "endEvent": 88,
+        "startMs": 119040,
+        "endMs": 204720,
+        "excerpt": "In contrast, there's what I've called the the physicist sense of fine-tuned. In this sense of fine-tuning, it's not the universe that we're thinking about, but rather a theory is supposed to be a feature that a theory can have. And a theory has that feature when its free parameters have unnatural or improbable values. So down below we have this uh this passage from Luke Barnes. So he puts it the uh the point this way. So we're thinking about the probability of some data d given some theory t and uh in background knowledge b. He's saying that this likelihood is much less than one. And then he says that this is what a physicist means by fine-tune. Right? So don't take just my word for it that this is a uh one thing a physicist might mean by fine-tuning. This is what Luke Barnes, one of the proponents of the fine-tuning argument, says physicists mean by fine-tuning. Then he tells us that it's a special case of Beijian theory testing that fine-tuned or unnatural theories have very small likelihoods. And the more fine-tuned, the smaller the likelihood. Now, a small likelihood is not a sufficient reason to discard a theory. Rather, it presents an explainable but as yet unexplained fact. So, a good reason to examine our background assumptions and or search for an alternative theory. Perhaps one whose free parameters are not as fine-tuned or in the quantity alpha, that's your free parameter, is not a free parameter at all."
+      },
+      "claim": "Fine-tuning is most usefully treated as a feature of a theory whose free parameters have improbable values, not automatically as a discovered feature of the universe.",
+      "warrant": "On the cited physicist usage, a low likelihood marks an unexplained theoretical vice and motivates revisiting background assumptions or seeking a successor theory.",
+      "inference": "The observed parameter values do not by themselves license a direct inference from an allegedly fine-tuned universe to theism.",
+      "burdenContact": {
+        "bridgeId": "con-central-theory-fine-tuning",
+        "tier": "central",
+        "rationale": "It supplies the skeptical account of fine-tuning as theory-relative low likelihood."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "publicationDescription": "Fine-tuning marks improbable free parameters within theories, so low likelihood motivates revising assumptions or seeking successors rather than directly establishing divine design.",
+      "publicationCritique": "Strongest feature: Linford cleanly distinguishes a universe-level property from a theory-level vice and explains why a small likelihood rationally prompts reconsideration of assumptions or a search for a less fine-tuned successor. Principal limitation: His physicist-versus-philosopher terminology is sociologically contestable, and the reframe does not itself show that observed parameter sensitivity cannot also describe a feature of the universe. Live burden: The skeptical case must demonstrate that theory revision leaves the naturalistic likelihood genuinely unsettled while applying the same successor-theory standards to theism rather than excluding design by definition. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "value-sensitive-theism-outpredicts-naturalism",
+      "sectionId": "fine-tuning-data-and-likelihoods",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 383,
+        "endEvent": 427,
+        "startMs": 881760,
+        "endMs": 988000,
+        "excerpt": "Under naturalism, it seems to me that the probability of fine-tuning for life is extremely low. Because for any of these parameters, you have a huge range of possible values. And naturalism as a world view gives absolutely no reason to expect or privilege that small range of values that allows for life or value. Naturalism is blind to considerations like that on a on a naturalistic perspective. There can be nothing special about the life permitting range. And so a natural probability assumption here is that the range of possible values are all equally likely. And given then that that the range of life permitting values is so small, it will follow then that the probability of life permitting values is in fact very small given naturalism. Whereas under theism the hypothesis the hypothesis just is that a perfectly good all powerful all- knowing being exists. And on that on that supposition if God designs a universe it wouldn't be at all unlikely that he would design it so that it could allow for things of objective value like conscious agents. And even if you think that well there are other valuable states of affairs too that God might design a universe for say say beauty beautiful structures as opposed to like moral value of ages there's also aesthetic value in the absence of finetuning you wouldn't even have aesthetic god again you would just have diffuse hydrogen gas so I think it follows from several considerations then that the likelihood of finetuning whether for life or these other valuable states of affairs is much much higher on theism than under naturalism. But then by the likelihood principle it follows that fine-tuning is strong evidence for theism over naturalism."
+      },
+      "claim": "Life-permitting fine-tuning is much more likely on theism than on naturalism.",
+      "warrant": "Naturalism supplies no reason to privilege the tiny life-permitting range, whereas a perfectly good and powerful creator could reasonably aim at conscious agents, beauty, and other objective value.",
+      "inference": "By the likelihood principle, fine-tuning is strong evidence for theism over naturalism.",
+      "burdenContact": {
+        "bridgeId": "pro-motion-strong-evidence",
+        "tier": "motion",
+        "rationale": "It explicitly reaches the motion's strong-evidence conclusion through a comparative likelihood."
+      },
+      "respondsToIds": [
+        "unknown-naturalistic-likelihood-without-distribution"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unknown-naturalistic-likelihood-without-distribution",
+          "component": "natural probability assumption",
+          "rationale": "It proposes equal weighting across the possible parameter range and pairs that with a theistic value-based prediction."
+        }
+      ],
+      "publicationDescription": "A value-sensitive creator could favor conscious life and beauty while naturalism privileges no life-permitting range, allegedly making fine-tuning comparatively likelier on theism.",
+      "publicationCritique": "Strongest feature: Donahue presents the motion’s required likelihood comparison directly, connecting conscious and aesthetic value to divine purposes while explaining why naturalism, considered alone, supplies no comparable preference for life-permitting values. Principal limitation: Equal weighting across parameter ranges and the proposed divine preference both remain asserted, and saying naturalism gives absolutely no privilege overstates what unknown successor theories might contribute. Live burden: He must defend the relevant measures and show that value-sensitive creation remains more probable after alternative divine aims, embodiment options, and future physical explanations receive fair weight. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "unknown-naturalistic-likelihood-without-distribution",
+      "sectionId": "fine-tuning-data-and-likelihoods",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 223,
+        "endEvent": 239,
+        "startMs": 506560,
+        "endMs": 545519,
+        "excerpt": "do. And likewise in the last possibility here we have where we endorse the physical hypothesis and deny the probability assumption. In that case while we have the physical hypothesis we don't know how to assign probabilities over its free parameters and for that reason don't know how to assign uh the probability of life given that hypothesis. So the uh since we don't know what each one of these three terms should be, we don't know what this second term in the probability of life given naturalism should be. And so I think we don't know what the probability of life given naturalism actually is."
+      },
+      "claim": "Without a justified probability distribution over a physical theory's free parameters, the probability of life given naturalism is unknown.",
+      "warrant": "A physical hypothesis without its probability assumption supplies no way to assign probabilities to its parameter values, and the remaining weighted-average terms are likewise unknown.",
+      "inference": "The low-probability premise needed to compare naturalism unfavorably with theism is not established.",
+      "burdenContact": {
+        "bridgeId": "con-central-probability-recipe",
+        "tier": "central",
+        "rationale": "It states why naturalism does not inherit one disputed physical probability recipe."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "publicationDescription": "Naturalism supplies no determinate life-likelihood without justified parameter distributions because alternative physical packages and measures leave the weighted probability terms unresolved.",
+      "publicationCritique": "Strongest feature: Linford isolates the precise probabilistic omission: a physical hypothesis without a distribution over its free parameters cannot generate the likelihood needed for the fine-tuning comparison, and his weighted decomposition makes that omission auditable. Principal limitation: Showing that the presented recipe is unjustified does not prove every defensible naturalistic measure is unavailable, so the conclusion is warranted uncertainty rather than a positive prediction for naturalism. Live burden: The skeptic must preserve this disciplined agnosticism while answering any independently motivated distribution or robustness analysis that could make life-permitting values consistently rare across successor theories. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "modest-not-overwhelming-confirmation",
+      "sectionId": "theory-replacement-and-deeper-physics",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 470,
+        "endEvent": 490,
+        "startMs": 1075919,
+        "endMs": 1126240,
+        "excerpt": "So my my central thesis, and this is going to relate to what Dan had to say previously, is that fine-tuning is strong but not overwhelming evidence for theism over a range of alternatives. You'll often hear in this context humongous numbers that are claimed as the confirmation factor of theism against naturalism that once we factor in fine-tuning now theism is 10 to the 90 to1 more likely than naturalism. And I think that's just an irresponsible use of the numbers involved. And what it fails to realize is that those ultra high probabilities only follow under certain assumptions as Dan said. But my thesis just is, in contrast to Dan, that once we factor in those alternative possibilities, we're still left with a a very large degree of confirmation for theism over naturalism."
+      },
+      "claim": "Fine-tuning supplies strong but not overwhelming confirmation for theism after alternative possibilities are included.",
+      "warrant": "Enormous advertised confirmation factors depend on contestable assumptions, yet relaxing those assumptions need not erase a large likelihood advantage.",
+      "inference": "The affirmative case can survive Linford's uncertainty objection in a deliberately modest form.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-modest-bayesian-case",
+        "tier": "subsidiary",
+        "rationale": "It expressly narrows the case in response to uncertainty about assumptions."
+      },
+      "respondsToIds": [
+        "unknown-naturalistic-likelihood-without-distribution"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unknown-naturalistic-likelihood-without-distribution",
+          "component": "effect of uncertainty",
+          "rationale": "It concedes that extreme figures fail while denying that uncertainty removes substantial confirmation."
+        }
+      ],
+      "publicationDescription": "Fine-tuning allegedly retains strong theistic confirmation after disputed assumptions are relaxed, although the enormous ratios sometimes advertised are responsibly rejected as unjustified.",
+      "publicationCritique": "Strongest feature: Donahue explicitly narrows his thesis to strong rather than overwhelming confirmation, rejects the extravagant advertised ratio, and acknowledges that its apparent precision depends on assumptions highlighted by his opponent. Principal limitation: The qualification improves calibration but supplies no derivation for the remaining claim that confirmation is still very large, leaving the central magnitude unsupported after the concession is made. Live burden: He must identify defensible likelihoods or a robustness argument showing that reasonable adjustments for future physics and alternative possibilities reduce the advantage without reversing or trivializing it. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "theism-must-be-less-fine-tuned-successor",
+      "sectionId": "theory-replacement-and-deeper-physics",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 737,
+        "endEvent": 771,
+        "startMs": 1671120,
+        "endMs": 1767520,
+        "excerpt": "that the um that the theism can be a candidate uh successor. And so the this opens up the space for a new kind of fine-tuning argument. I I think that that argument doesn't succeed, but at least it um you know it it opens the the way to a possible fine-tuning argument for theism as opposed to uh just dogmatically closing off the possibility of of theism. Um the what the theist would have to show is that theism uh is at least not as fine-tuned and of course doesn't suffer from other theoretical defects either uh than the than whatever theory it replaces just as we would demand from any uh successor theory. Then I would want to insist that uh that in fact theism um is uh is is fine-tuned in various ways. I raised one of them. Maybe we could chat about others later if you wanted. Um, but you know, I think it's worth pointing out that the if you have a god who's principally interested in uh in life and would be solely interested in biological observers, then you get this stupendously small number. Actually, that's it's a smaller number than the 10 to the90 that people quote for the cosmological constant. Um and so in that sense uh once we are able to see theories as fine-tuned then that allows us to see the possibility that theism could be fine-tuned and we see that it's incumbent on the theist to show us that theism isn't fine-tuned in that sense."
+      },
+      "claim": "Theism is eligible as a successor theory only if it is no more fine-tuned and has no offsetting theoretical defects.",
+      "warrant": "Theory replacement applies the same standards to theism as to any successor, and a God solely selecting biological observers faces an extremely low entropy-related likelihood.",
+      "inference": "Reframing does not exclude theism, but places on it the burden of showing that it improves rather than relocates fine-tuning.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-priors-and-successors",
+        "tier": "subsidiary",
+        "rationale": "It applies successor-theory standards to theism."
+      },
+      "respondsToIds": [
+        "modest-not-overwhelming-confirmation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "modest-not-overwhelming-confirmation",
+          "component": "successor burden",
+          "rationale": "It says even a modest theistic replacement must itself avoid fine-tuning and other defects."
+        }
+      ],
+      "publicationDescription": "Theism qualifies as a successor only if it reduces fine-tuning without offsetting defects, placing the same comparative explanatory burden on divine and physical theories.",
+      "publicationCritique": "Strongest feature: Linford grants that theism may be a legitimate successor and then applies an even-handed standard: it must be no more fine-tuned than the displaced theory and must avoid offsetting theoretical defects. Principal limitation: The entropy illustration depends on a conditional model in which God is solely interested in biological observers, so it cannot establish that every relevant form of theism reproduces the same fine-tuning problem. Live burden: The skeptical side must compare developed theistic packages with naturalistic successors, including broader divine purposes, rather than treating one restricted observer-selection hypothesis as representative. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "future-physics-reduces-but-does-not-erase-confirmation",
+      "sectionId": "theory-replacement-and-deeper-physics",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 995,
+        "endEvent": 1007,
+        "startMs": 2252000,
+        "endMs": 2286400,
+        "excerpt": "naturalism as such then we have to take the weighted average of its likelihood under current physics and its likelihood under future physics and that's a very difficult quantity to calculate but I think that when we do that the resultant number is ultimately confirmation for theism but we're talking more along the lines of like a confirmation factor of 10,000 to one which I think is very strong but it's nowhere near 10^ the 90 to1. So that just is to explain where I'm coming from these days."
+      },
+      "claim": "Averaging over current and future physics substantially reduces the claimed confirmation factor but still leaves strong confirmation for theism.",
+      "warrant": "The naturalistic likelihood must average the parameter's likelihood under current physics with its likelihood under unknown future physics.",
+      "inference": "Deeper-physics uncertainty changes the magnitude rather than the direction of the fine-tuning evidence.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-modest-bayesian-case",
+        "tier": "subsidiary",
+        "rationale": "It incorporates future physics into the affirmative likelihood estimate."
+      },
+      "respondsToIds": [
+        "theism-must-be-less-fine-tuned-successor"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "theism-must-be-less-fine-tuned-successor",
+          "component": "effect of successor uncertainty",
+          "rationale": "It accepts weighted successor possibilities but claims the remaining comparison still favors theism."
+        }
+      ],
+      "publicationDescription": "Averaging current and future physics supposedly reduces but preserves the theistic advantage, making deeper-theory uncertainty affect evidential magnitude rather than direction.",
+      "publicationCritique": "Strongest feature: Donahue incorporates the deeper-physics objection into his own framework by averaging current and future packages, and he substantially reduces the advertised confirmation factor instead of pretending successor uncertainty is irrelevant. Principal limitation: He calls the resulting quantity difficult to calculate and then offers a very large illustrative factor without component likelihoods, weights, or a derivation, making the claimed direction and magnitude evidentially unsupported. Live burden: The affirmative must replace the illustration with a principled sensitivity analysis showing that plausible successor weights consistently leave theism favored. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "naturalism-does-not-entail-current-physics-package",
+      "sectionId": "theory-replacement-and-deeper-physics",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1047,
+        "endEvent": 1052,
+        "startMs": 2361839,
+        "endMs": 2377599,
+        "excerpt": ">> Great. So yeah. So, so the the naturalist quad naturaturalist isn't committed to that uh particular physical hypothesis or really any physical hypothesis at least quan naturalist >> not not qu naturalist. No."
+      },
+      "claim": "Naturalism as such is not committed to the particular current physical hypothesis, or to any particular physical hypothesis.",
+      "warrant": "This is the agreed scope implication of Donahue's immediately preceding weighted-average answer: current and future physical packages are alternatives conditioned within naturalism rather than entailed by naturalism itself.",
+      "inference": "A poor likelihood under one current physical package cannot be assigned directly to naturalism as such.",
+      "burdenContact": {
+        "bridgeId": "con-central-probability-recipe",
+        "tier": "central",
+        "rationale": "It denies that naturalism entails the physical component of the selected probability recipe."
+      },
+      "respondsToIds": [
+        "future-physics-reduces-but-does-not-erase-confirmation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "future-physics-reduces-but-does-not-erase-confirmation",
+          "component": "scope consequence of weighted averaging",
+          "rationale": "Dan draws the naturalism-scope implication from Miles's earlier acknowledgment that the likelihood averages current and future physical packages; Miles then confirms that implication."
+        }
+      ],
+      "publicationDescription": "Naturalism entails no particular current physical package, so a poor likelihood from one model cannot automatically be transferred to the broader worldview.",
+      "publicationCritique": "Strongest feature: Linford draws the decisive scope implication from Donahue’s own weighted-average answer: current and future physical packages are alternatives within naturalism, not propositions entailed by naturalism itself, and Donahue immediately confirms that point. Principal limitation: Non-entailment alone does not show that the remaining naturalistic packages carry substantial prior weight or predict life-permitting values well, so the distinction blocks transfer without supplying a favorable worldview likelihood. Live burden: To sustain this limited scope objection, Linford must show that defensible alternative weighting remains open and answer evidence that plausible successors collectively carry too little probability to alter the claimed asymmetry. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "free-parameters-support-counterfactual-variation",
+      "sectionId": "theory-replacement-and-deeper-physics",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1746,
+        "endEvent": 1792,
+        "startMs": 3952000,
+        "endMs": 4052400,
+        "excerpt": ">> Yeah. So this might be a question about deeper physics like why do I why am I confident that there's no deeper physical explanation that would allow us to derive the values of the constants? And and that's a more complicated issue. I I'm not confident that there's no deeper physics. But then I think the question would shift. If we did discover a deeper physical theory that say fixed all of the values of the parameters, then the question would be how likely is that deeper physics given theism than given naturalism? And I think that the same sort of fine-tuning argument could be given in that case. But that's that's a more complicated thing. I think what the question is saying is like under current physics, how do we know they could be different? And there I would just say that under current physics these parameters are called free parameters. There's nothing within the equations that entail their values. And so we can talk about possible universes with different values of these constants where the form of the uh laws of nature the equations is held fixed. So we say narrowing in our scope to those possible universes governed by these forms of equations. So wherein the values of the constants can differ. We find that finely tuned universes or ones that allow for life take up an extremely small proportion thereof. And I think that that allows you then to do all of the probabilistic calculations and that that's all you need in order to get that argument. Um, and so you don't have to make any sort of like stronger claim about whether they could be different in the sense of like is there a dial somewhere within this universe that we could turn to give us a different strength of gravity or something like that. That's that almost is certainly false."
+      },
+      "claim": "Current physics permits comparison with possible universes having different constant values because the parameters are free.",
+      "warrant": "The equations do not entail those values, so one may hold the form of the laws fixed while varying the constants and compare the proportion that permits life.",
+      "inference": "The fine-tuning calculation does not require a literal physical dial or certainty that no deeper theory exists.",
+      "burdenContact": {
+        "bridgeId": "pro-central-life-permitting-range",
+        "tier": "central",
+        "rationale": "It supplies the modal basis for measuring a narrow life-permitting range."
+      },
+      "respondsToIds": [
+        "naturalism-does-not-entail-current-physics-package"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "naturalism-does-not-entail-current-physics-package",
+          "component": "legitimacy of current-theory variation",
+          "rationale": "It explains what can still be inferred within current physics despite possible successors."
+        }
+      ],
+      "publicationDescription": "Current equations leave parameter values free, allowing constants to vary while law forms remain fixed and supporting counterfactual comparison without literal physical adjustability.",
+      "publicationCritique": "Strongest feature: Donahue carefully distinguishes counterfactual variation from a literal physical dial, explaining that current equations do not entail free-parameter values and therefore permit comparison among worlds sharing the same law form. Principal limitation: Modal freedom identifies a comparison space but does not provide a probability measure over it, so the small proportion of life-permitting values cannot yet be treated as a low likelihood. Live burden: He must connect the legitimate current-theory counterfactuals to a non-arbitrary distribution while preserving his concession that deeper physics may determine the parameters. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "probability-measure-determines-small-variation",
+      "sectionId": "theory-replacement-and-deeper-physics",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1795,
+        "endEvent": 1855,
+        "startMs": 4053119,
+        "endMs": 4211360,
+        "excerpt": ">> I mean, I guess I I sort of broadly agree with Miles here that the the what matters here is is not whether the the constants can be changed, but whether um the we want to consider as an epistemically live possibility, the possibility that they uh that they could or could not be changed in various ways. Um though I would point out that at least in the traditional version of the fine-tuning argument um where people pull out these uh tremendously stupendously small numbers um where people assume the uh the probability recipe what I've called the probability recipe um then in in those cases uh what they're what they're effectively saying is that there's a very particular way in which we can vary the constants. Right? So in Miles's opening statement, he says um he talked about how uh the this idea that you could vary the the constants by some small amount and that would make uh life impossible. The what we mean by a small amount is determined by that probability recipe. As far as I can tell, absent that probability recipe, uh there's no rigorous way to think about what uh what that small difference is supposed to amount to. And in fact, I would go so far as to say that uh without the probability recipe telling us what it means to vary something by a small amount, um then we uh we don't have um we can't get the fine-tuning argument off the ground. um the uh when someone's imagining the possibility that we can't vary the constants uh they're really constant in some very strong sense then the part of what they're imagining is I I would suppose a an alternative uh probability recipe where now the uh the the probability distribution over the free parameters of our theory is is what mathematicians and physicists would call a delta function. In other words, the distribution is just a spike. All of its weight is at the one value and there's no weight anywhere else. Um, and indeed the uh the the likelihoods we would calculate given that probability recipe would be very different from the the probability we would would give given other uh probability distributions or given other uh probability assumptions."
+      },
+      "claim": "Claims that a small change destroys life depend on a particular probability measure over parameter values.",
+      "warrant": "Without the probability recipe there is no rigorous scale of small variation; an alternative delta-function distribution can concentrate all probability on the observed value.",
+      "inference": "Free-parameter counterfactuals alone do not establish a low naturalistic likelihood.",
+      "burdenContact": {
+        "bridgeId": "con-central-probability-recipe",
+        "tier": "central",
+        "rationale": "It identifies the distributional assumption required by the small-range claim."
+      },
+      "respondsToIds": [
+        "free-parameters-support-counterfactual-variation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "free-parameters-support-counterfactual-variation",
+          "component": "measure over variations",
+          "rationale": "It grants possible variation but denies that variation supplies probabilities without a measure."
+        }
+      ],
+      "publicationDescription": "Counterfactual variation yields no probability by itself because a measure defines what counts as small, and different distributions can radically alter the resulting likelihood.",
+      "publicationCritique": "Strongest feature: Linford grants the legitimacy of varying free parameters and then isolates the missing probabilistic bridge, using a delta-function distribution to demonstrate concretely how alternative measures generate radically different likelihoods. Principal limitation: The spike example establishes measure dependence but does not show that such a distribution is physically plausible or that no independently motivated smooth measure can support the fine-tuning calculation. Live burden: The skeptic must evaluate proposed measures on substantive grounds rather than relying on their logical availability, while retaining the demand that any notion of small variation be distribution-relative. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "low-likelihood-disconfirms-only-comparatively",
+      "sectionId": "entropy-and-comparative-disconfirmation",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1281,
+        "endEvent": 1315,
+        "startMs": 2877920,
+        "endMs": 2954720,
+        "excerpt": ">> I right I don't think so because a low probability outcome only disisconfirms a theory when it is more likely on an alternative hypothesis but where all of the altern alternatives attribute an equally low likelihood to some outcome. The fact that that very fact of a recurrence does not cut either way. It doesn't confirm or disisconfirm. And so what I would say is in the case of the low entropy condition, there are facts that appeal to a multiverse or theism with this kind of anthropic focus predict. And then there's the low entropy condition which falls out of the scope of uh a predict of a an outcome which is selected purely for allowing observers. And that's fine. But so long as the naturalist the the naturalist doesn't have a mechanism that makes it more probable and that the theist couldn't also avail themselves of because if the naturalist can take advantage of it so can the theist in which case the low entropy condition still doesn't disisconfirm theism to to naturalism. So you can't just go from a low likelihood to therefore there's disisconfirmation just like the coin flip of a thousand uh a series of a thousand coin flips is extremely improbable under the chance hypothesis. But the fact that it happened doesn't disisconfirm that the coin flip happened by chance."
+      },
+      "claim": "A very low likelihood does not disconfirm theism unless the observation is more likely on a relevant alternative.",
+      "warrant": "If naturalism and theism can use the same entropy-explaining physical mechanism, low entropy does not distinguish them, just as one exact long coin-flip sequence does not disconfirm chance merely because it is improbable.",
+      "inference": "Low cosmic entropy does not by itself neutralize fine-tuning evidence for theism.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-theistic-flexibility",
+        "tier": "subsidiary",
+        "rationale": "It explains how neutral physical auxiliaries can be conjoined with theism."
+      },
+      "respondsToIds": [
+        "observer-selection-does-not-predict-cosmic-low-entropy"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "observer-selection-does-not-predict-cosmic-low-entropy",
+          "component": "comparative disconfirmation",
+          "rationale": "It denies that a low theistic likelihood matters unless naturalism predicts the observation better."
+        }
+      ],
+      "publicationDescription": "Low likelihood disconfirms theism only when an alternative predicts the observation better, so shared entropy-explaining physics can leave the worldview comparison unchanged.",
+      "publicationCritique": "Strongest feature: Donahue correctly insists that improbability alone is not comparative disconfirmation, and his shared-auxiliary and long coin-sequence examples clarify why an observation must be likelier under an alternative before it discriminates. Principal limitation: The principle is secure, but the application assumes that no live naturalistic alternative predicts cosmic low entropy better than theism, which Linford explicitly disputes by invoking non-anthropic cosmologies. Live burden: Donahue must examine the weighted alternatives rather than merely note that any neutral physical explanation could be conjoined with both worldviews. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "observer-selection-does-not-predict-cosmic-low-entropy",
+      "sectionId": "entropy-and-comparative-disconfirmation",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1150,
+        "endEvent": 1177,
+        "startMs": 2586960,
+        "endMs": 2654079,
+        "excerpt": "supposed to be that um we want to think about hypothesis where you have some mechanism that selects more biological observers and then you ask what is the value of the entropy that you expect given some mechanism that does that and the uh in order to have biological observers you don't need an entropy that's anywhere near as low as the one that we that we observe. You could have, for example, low entropy region that's >> maybe the size of the room that I'm in or maybe if you want to be a little more charitable, maybe the size of a of a galaxy. Um, it turns out not to matter tremendously to the numbers whether you consider a room or or a galaxy because the numbers we're dealing with are so stupendously uh large or small as the case is. Uh and then the thought is that well uh if that's if that's going to be the kind of prediction you get out of any mechanism that selects for biological observers then if we have some sort of theistic hypothesis where God isn't interested in selecting for biological observers that's the kind of thing that you'd have uh there as well."
+      },
+      "claim": "A mechanism that selects biological observers does not predict entropy as low as the universe actually displays.",
+      "warrant": "Biological observers require only a low-entropy region as small as a room or galaxy, so an observer-selecting mechanism assigns extremely little probability to the much larger low-entropy condition.",
+      "inference": "A theistic hypothesis centered only on producing biological observers is itself fine-tuned with respect to entropy.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-theism-fine-tuned",
+        "tier": "subsidiary",
+        "rationale": "It identifies entropy as a parameter on which observer-selecting theism appears fine-tuned."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "publicationDescription": "Biological observers require only local low entropy rather than cosmic order, so observer-selection theism assigns unexpectedly little probability to the universe’s observed condition.",
+      "publicationCritique": "Strongest feature: Linford contrasts the modest low-entropy region needed for biological observers with the vastly broader cosmic order observed, giving a concrete reason that observer selection alone underpredicts the actual entropy condition. Principal limitation: The calculation is summarized rather than developed, and its consequence applies specifically to a God concerned solely with biological observers rather than to every value-sensitive theistic hypothesis. Live burden: The skeptic must show that broader divine purposes do not appreciably raise the likelihood or that a naturalistic alternative predicts the observation better enough to create comparative disconfirmation. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "life-need-not-be-gods-only-purpose",
+      "sectionId": "entropy-and-comparative-disconfirmation",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1350,
+        "endEvent": 1367,
+        "startMs": 3023680,
+        "endMs": 3065440,
+        "excerpt": ">> I think the way out of this dilemma is that the theist doesn't need to claim that God's only purpose in designing the universe was to allow for life. All they need to get the the elevated probabilities for the parameters that are claimed to be fine-tuned for life is the claim that life and conscious agents are one of God's purposes. And that hypothesis you it can be is perfectly consistent to say that it predicts life permitting values for those constants that require fine-tuning and then that it would have a low likelihood for entropy for example. So I don't I think that it's perfectly consistent for one theory theism to yield different predictions depending on the parameter."
+      },
+      "claim": "Theism can predict life-permitting constants without claiming that life is God's only purpose.",
+      "warrant": "It is enough that conscious life is one divine aim; the same theory may assign a low likelihood to entropy while assigning elevated likelihood to parameters needed for life.",
+      "inference": "Different predictions across parameters are consistent and the entropy objection does not automatically cancel the life-permitting prediction.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-theistic-flexibility",
+        "tier": "subsidiary",
+        "rationale": "It separates a general divine aim from an exclusive observer-selection hypothesis."
+      },
+      "respondsToIds": [
+        "observer-selection-does-not-predict-cosmic-low-entropy"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "observer-selection-does-not-predict-cosmic-low-entropy",
+          "component": "scope of divine aims",
+          "rationale": "It denies the exclusive-life motivation assumed by the entropy calculation."
+        }
+      ],
+      "publicationDescription": "Theism can predict life-permitting constants while assigning low probability to entropy because conscious life may be one divine purpose rather than the exclusive purpose.",
+      "publicationCritique": "Strongest feature: Donahue identifies the exact overrestriction in Linford’s entropy model, distinguishing life as one divine aim from life as the only aim and allowing one theory to make different predictions across parameters. Principal limitation: Logical consistency is not yet comparative probability, because the passage offers little independent reason to believe that life is among God’s aims or to weight additional purposes favoring cosmic order. Live burden: The affirmative must specify a principled distribution over divine motivations that predicts both life-permitting constants and the observed entropy without becoming retrospectively adjustable to any outcome. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "weighted-average-symmetry-for-both-worldviews",
+      "sectionId": "entropy-and-comparative-disconfirmation",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1368,
+        "endEvent": 1397,
+        "startMs": 3063040,
+        "endMs": 3135200,
+        "excerpt": ">> But this but this way out of the dilemma is not really way out of the dilemma is to bite one horn of the dilemma. Right? So the if you say okay God can have other motivations that's Barnes's response. That's one where we say okay the we're going to go with the the second term in the weighted average principle. Great. The naturals can also go with the second term in the weighted average principle. >> And what's the second term for you? So the there's the the the first term was where we consider the the theistic hypothesis um that uh where God is motivated only to create life and then the second term is where God might have other motivations where we add other exor hypotheses to theism and likewise on naturalism there's where we can conjoin naturalism with any number of different kinds of uh potential hypotheses. um the it's it's only >> right so but the two situations are exactly symmetric as far as I can tell we can conjoin naturalism with different kinds of hypothesis we can conjoin theism with different kinds of hypothesis"
+      },
+      "claim": "Appealing to additional divine motivations invokes the same weighted-average escape available to naturalism.",
+      "warrant": "Theism can be conjoined with alternative motivations and naturalism can be conjoined with alternative physical hypotheses; both have second terms covering possibilities beyond the initially specified model.",
+      "inference": "The theistic reply does not break the symmetry that leaves both worldview-level likelihoods unsettled.",
+      "burdenContact": {
+        "bridgeId": "con-motion-insufficient-comparison",
+        "tier": "motion",
+        "rationale": "It argues that the same flexibility prevents a settled comparison between the worldviews."
+      },
+      "respondsToIds": [
+        "life-need-not-be-gods-only-purpose"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "life-need-not-be-gods-only-purpose",
+          "component": "parallel auxiliary hypotheses",
+          "rationale": "It treats other divine aims as a weighted alternative exactly parallel to deeper naturalistic physics."
+        }
+      ],
+      "publicationDescription": "Additional divine motives and alternative naturalistic physics occupy parallel weighted-average terms, so flexible auxiliary hypotheses leave both worldview-level likelihoods comparably unsettled.",
+      "publicationCritique": "Strongest feature: Linford applies the same law-of-total-probability structure to both worldviews, showing that additional divine motivations and alternative naturalistic physics each occupy weighted terms beyond the initially specified model. Principal limitation: Formal symmetry does not establish equal numerical weights, so the argument leaves open Donahue’s possibility that independently justified divine purposes and naturalistic successors receive substantially different probabilities. Live burden: Linford must preserve the matched comparison while assessing substantive priors instead of allowing structural parallelism alone to decide the evidential direction. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "low-entropy-enables-discovery-and-beauty",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1458,
+        "endEvent": 1493,
+        "startMs": 3289760,
+        "endMs": 3374880,
+        "excerpt": "Robin Collins will say but what is required what what does require that low entropy condition is the scientific discoverability of the universe. You know we could have a tiny little island of order within a surrounding soup of chaos the size of the solar system but then of course we couldn't observe anything outside of our solar system. And so the low entropy condition on the universe as a whole, what that will allow for is the capacity to see the entire universe and to gain knowledge about physics and uh interstellar physics and our history by observing this the cosmic background microwave radiation and so so on and so forth cosmic microwave background radiation. And so if if you think that that's plausible, then I think that the idea that God would design the universe to allow also for scientific discovery and for the beauty of the universe, like it doesn't it doesn't take that much poeticism to be able to look up into the night sky and see that this is outrageously beautiful and we couldn't have this if the entropy condition were such that there was only a small patch of order the size of the solar system. If you think that that's plausible, then our low entropy condition under theism will not be that improbable. So, and I think that's plausible. I'm willing to to defend that claim. I don't think it's necessary, but I will defend that claim."
+      },
+      "claim": "Cosmic low entropy is not very improbable on theism because it enables scientific discovery and beauty.",
+      "warrant": "A merely local pocket of order would greatly restrict knowledge of fundamental physics and cosmic history, whereas large-scale order permits observation of the wider universe and an aesthetically valuable sky.",
+      "inference": "A perfectly good, value-sensitive God has reasons beyond bare biological survival to create the observed low-entropy condition.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-theistic-flexibility",
+        "tier": "subsidiary",
+        "rationale": "It gives discovery and beauty as additional divine aims."
+      },
+      "respondsToIds": [
+        "observer-selection-does-not-predict-cosmic-low-entropy"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "observer-selection-does-not-predict-cosmic-low-entropy",
+          "component": "divine purposes beyond biological selection",
+          "rationale": "It answers the claim that observer selection cannot predict cosmic low entropy by adding scientific discovery and beauty as value-sensitive divine aims."
+        }
+      ],
+      "publicationDescription": "Cosmic low entropy enables scientific discovery and large-scale beauty, giving a value-sensitive creator reasons to produce more order than biological survival requires.",
+      "publicationCritique": "Strongest feature: Donahue supplies two concrete values beyond biological survival, scientific discoverability and large-scale beauty, explaining why a value-sensitive creator might prefer cosmic order rather than only a small habitable pocket. Principal limitation: The passage treats those values intuitively and does not show why they select the observed scale or outweigh countless alternative valuable arrangements a perfect creator could realize. Live burden: He must turn plausible divine reasons into a constrained likelihood by specifying how discoverability and beauty weight competing universes without retrospective accommodation. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "discoverability-is-underspecified",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1494,
+        "endEvent": 1525,
+        "startMs": 3372720,
+        "endMs": 3460400,
+        "excerpt": "Yeah. But in that case, so a few things here. Um, so one, uh, it's not clear to me what discoverability is supposed to amount to. Um you're right that there's there's one sense in which we can think about the universe being more discoverable if it has this low entropy condition. But of course there's also another sense in which um it's sort of radically undiscoverable given a very very large universe where the majority of it is at this very low entropy uh condition. Then that means that uh well any given part of it might be discoverable to um some observer uh no observer can can discover the uh the universe in totality. Whereas if you had a a universe that was significantly smaller say smaller than our Hubble volume uh then you such an observer would be able to see the entire uh universe. Um and I could imagine that had we lived in a universe like that then the the people that live there would would be saying that oh look how discoverable the universe is uh not only is it at low entropy you can see the whole uh the whole smorges board right the whole thing. Um so that's one sort of thought is that the this notion of discoverability doesn't seem to be very rigorously defined as far as I can tell."
+      },
+      "claim": "Discoverability is too underspecified to ground a reliable prediction of cosmic scale or entropy.",
+      "warrant": "A smaller universe might be more discoverable in the sense that an observer could see all of it, while a very large low-entropy universe prevents any observer from discovering the totality.",
+      "inference": "Theism does not gain a clear entropy likelihood from an undefined appeal to discoverability.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-theism-fine-tuned",
+        "tier": "subsidiary",
+        "rationale": "It denies that discoverability fixes the theistic prediction."
+      },
+      "respondsToIds": [
+        "low-entropy-enables-discovery-and-beauty"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "low-entropy-enables-discovery-and-beauty",
+          "component": "predictive content of discoverability",
+          "rationale": "It supplies rival senses of discoverability that point toward different universes."
+        }
+      ],
+      "publicationDescription": "Discoverability does not uniquely predict cosmic scale because local visibility and seeing an entire smaller universe favor different arrangements, leaving the divine-purpose appeal indeterminate.",
+      "publicationCritique": "Strongest feature: Linford gives the discoverability objection concrete content by distinguishing visibility within a vast ordered region from an observer’s ability to see an entire smaller universe, showing that plausible meanings yield different predictions. Principal limitation: The counterexample weakens the scientific-discovery rationale but does not address Donahue’s separate appeal to beauty, nor does it establish which understanding of discoverability a value-sensitive creator would prioritize. Live burden: To sustain this diagnosis, Linford must show that Donahue has not defended a determinate account of discoverability and explain why the separate beauty appeal does not repair the missing specification. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "priors-and-all-evidence-separate-from-local-confirmation",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1645,
+        "endEvent": 1680,
+        "startMs": 3730480,
+        "endMs": 3814319,
+        "excerpt": ">> well I would want to say that the I I agree with you that in order to have the conclusion that the probability of theism given fine-tuning is say greater than the probability of naturalism given fine tuning is higher. That will involve not just adjudicating the intrinsic probabilities of theism against naturalism. That is to say how likely they are in and of themselves abstracting away everything we know about the world. It will also involve every other disputed line of evidence for naturalism against theism. And that's just going to be monstrously complicated. So that's why for me in a modest formulation of the fine-tuning argument that we hold that in obeyance and just say when we look at fine-tuning it's strong evidence for theism over naturalism. And when it comes to the intrinsic probabilities I don't think that theism the the omniod hypothesis is terribly unlikely intrinsically and so it's not going to be many orders of magnitude less likely than naturalism. um and could very well be comparable when we understand that the hypothesis of naturalism isn't the claim that the natural world exists is that only the natural world exists and that is a more substantial claim. So in any case my answer to your question is I I think you can give broad considerations to show that theism's intrinsic pro probability is not going to be terribly low. So the"
+      },
+      "claim": "Whether theism becomes more probable overall than naturalism is separate from whether fine-tuning locally confirms theism.",
+      "warrant": "A posterior comparison must incorporate intrinsic priors and every other disputed line of evidence, an enormously complicated task; the modest argument holds those matters in abeyance and claims only that fine-tuning is strong evidence.",
+      "inference": "Failure to derive a posterior above one half does not defeat the claimed evidential relevance of fine-tuning.",
+      "burdenContact": {
+        "bridgeId": "pro-motion-strong-evidence",
+        "tier": "motion",
+        "rationale": "It defines strong evidence as local confirmation rather than an overall posterior majority."
+      },
+      "respondsToIds": [
+        "weighted-average-symmetry-for-both-worldviews"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "weighted-average-symmetry-for-both-worldviews",
+          "component": "scope of conclusion",
+          "rationale": "It limits the affirmative conclusion rather than claiming the full posterior ordering follows deductively."
+        }
+      ],
+      "publicationDescription": "Local confirmation from fine-tuning need not settle overall worldview probability, which also depends on intrinsic priors and every other disputed line of evidence.",
+      "publicationCritique": "Strongest feature: Donahue sharply separates the local likelihood question from the complete posterior verdict, correctly noting that intrinsic priors and every other disputed body of evidence would be needed to rank the worldviews overall. Principal limitation: Narrowing the conclusion protects the motion’s scope but does not demonstrate that the local likelihood ratio is strong, since the earlier measure and future-physics objections remain unresolved. Live burden: The affirmative must establish a substantial fine-tuning update on its own terms while consistently declining to treat that update as proof or as a posterior above one half. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "vague-priors-do-not-entail-posterior-ordering",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1681,
+        "endEvent": 1697,
+        "startMs": 3810880,
+        "endMs": 3858720,
+        "excerpt": "uh so suppose that I grant that the the ratio of intrinsic probabilities is not um stupendously low that maybe like the the prior probabilities are uh are comparable. Um then the uh we're asking whether or not we can infer the the statement about the posteriors. And again the answer is going to be no because without a precise specification of the of the priors and something about uh the relationship between the likelihoods uh even if one likelihood is say slightly greater than the than the other. >> Um it we there is there's nothing that's deductively entailed about the ratio of posteriors."
+      },
+      "claim": "Comparable but unspecified priors and only a slight likelihood ordering do not deductively entail that theism has the higher posterior.",
+      "warrant": "Without a precise specification of priors and the relationship between likelihoods, probability theory fixes no posterior ratio.",
+      "inference": "The stronger posterior form of the fine-tuning argument remains unsupported even after granting that theism’s prior is not extremely low.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-priors-and-successors",
+        "tier": "subsidiary",
+        "rationale": "It states the missing prior-and-likelihood specification."
+      },
+      "respondsToIds": [
+        "priors-and-all-evidence-separate-from-local-confirmation"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "priors-and-all-evidence-separate-from-local-confirmation",
+          "component": "posterior entailment",
+          "rationale": "It agrees that the posterior issue is separate but denies that vague comparative inputs settle it."
+        }
+      ],
+      "publicationDescription": "Comparable but unspecified priors and vaguely ordered likelihoods cannot determine posterior rankings, so the stronger claim that theism becomes likelier overall remains unsupported.",
+      "publicationCritique": "Strongest feature: Linford correctly observes that unspecified priors and an unspecified likelihood advantage cannot entail a posterior ordering, and he grants comparable priors for argument’s sake before drawing only that limited consequence. Principal limitation: Donahue had already disclaimed the need to establish an overall posterior majority, so this technically sound objection constrains a stronger argument more directly than it answers the motion’s local strong-evidence claim. Live burden: Linford must connect uncertainty about magnitudes to the strength of the local update rather than merely deny a conclusion the affirmative does not require. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "unlimited-attributes-have-coherence-prior",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 1901,
+        "endEvent": 1934,
+        "startMs": 4297360,
+        "endMs": 4373040,
+        "excerpt": "don't think that's right because I don't think that we should treat the unlimited hypothesis as just one point in this kind of uniform probability distribution over all the possible universes. Rather, because theism posits unlimited power, knowledge, and goodness to God, it is therefore much more likely than any specific quasitheistic hypothesis and and probably comparable to the disjunction of quasitheistic ones. So, what's a good intuition pump here is to think about the hypothesis that the laws of nature apply uniformly within the universe. They apply everywhere. Okay, pretty plausible. But then compare that to the anomalous patch hypothesis that the laws of physics apply everywhere except for one cubic foot somewhere in the Andromeda galaxy. Now that hypothesis is perfectly compatible with all of our empirical evidence and our observation. But all of us instinctually I would think discount that as incredibly unlikely. Well, the only way that can happen is if the prior or intrinsic probability of the uniform laws of physics to whatever hypothesis is much much higher than the anomalous hatch hypothesis. So that that then provides an analogy for what I mean when I say that the attribution of unlimited properties to God is more intrinsically likely than any arbitrary limitation."
+      },
+      "claim": "An unlimited God can have a substantial intrinsic prior compared with arbitrarily limited god hypotheses.",
+      "warrant": "Uniform laws are intrinsically preferred to a law with an unexplained anomalous patch; likewise unlimited power, knowledge, and goodness form a coherent hypothesis rather than one arbitrary point among limitations.",
+      "inference": "Theism need not begin with a negligible prior merely because many limited alternatives exist.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-modest-bayesian-case",
+        "tier": "subsidiary",
+        "rationale": "It argues that the prior is not swamped by limited alternatives."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "publicationDescription": "Unlimited divine attributes allegedly gain intrinsic plausibility from coherence, like uniform laws over arbitrary exceptions, preventing theism from receiving a negligible starting probability.",
+      "publicationCritique": "Strongest feature: Donahue offers an intelligible uniform-laws analogy for why an unlimited, coherent hypothesis should not be treated as merely one equiprobable point among innumerable finite specifications. Principal limitation: Preference for one uniform law over one arbitrary patch does not establish that unlimited personal attributes rival the entire disjunction of finite alternatives, and no independent prior rule supports that transfer. Live burden: He must justify the relevant comparison class and explain why coherence contributes enough probability to offset the unlimited hypothesis’s maximal scope without relying solely on intuition. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "denial-of-infinity-is-a-disjunction-not-one-arbitrary-limit",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 1981,
+        "endEvent": 2004,
+        "startMs": 4472000,
+        "endMs": 4532960,
+        "excerpt": ">> Uh but I also don't want to endorse the full-blown uh uniformity principle. I think that the there's a mistake that people often make here which is where they say that any kind of limited hypothesis is one according to which the there are specific arbitrary limits. But that's just not what the denial of the uniformity hypothesis says or indeed the denial of the infinite God hypothesis. Right? The the denial of the uniformity hypothesis is the big disjunction of all of the ways that the universe could fail to be uniform. Some of those may have arbitrary uh limits and some of them may not. Likewise, the denial of the hypothesis that God is infinite is all the ways that God could be finite. And some of those might be finite degrees of power and others might not be might not involve finite degrees, sorry, arbitrary finite degrees of of power. Um, so the that's that's one thing I want to say"
+      },
+      "claim": "The alternative to infinity or uniformity is a broad disjunction, not a single arbitrary limitation.",
+      "warrant": "Nonuniform laws include every way uniformity can fail, and finite-god hypotheses include every way God can be finite; many need not posit a specially chosen arbitrary boundary.",
+      "inference": "The coherence analogy does not show that the unlimited hypothesis outweighs its full alternative.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-priors-and-successors",
+        "tier": "subsidiary",
+        "rationale": "It identifies the correct comparison class for the prior."
+      },
+      "respondsToIds": [
+        "unlimited-attributes-have-coherence-prior"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unlimited-attributes-have-coherence-prior",
+          "component": "comparison class",
+          "rationale": "It replaces the comparison to one arbitrary limit with the disjunction of all nonuniform or finite alternatives."
+        }
+      ],
+      "publicationDescription": "Infinity must be compared with every finite alternative rather than one arbitrary limit, so a uniformity analogy cannot establish superiority over the complete disjunction.",
+      "publicationCritique": "Strongest feature: Linford precisely corrects the comparison class: denying uniformity includes every nonuniform arrangement, and denying an infinite God includes every finite alternative, many of which need not contain a conspicuously arbitrary boundary. Principal limitation: Identifying the full disjunction does not itself determine its prior probability, because large disjunctions can contain individually complex or poorly motivated members and still require principled weighting. Live burden: The comparison correction stands once the full disjunction is restored; Linford would need a principled weighting only to advance the stronger claim that finite alternatives receive greater total prior probability. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "coherence-can-outweigh-global-immodesty",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2058,
+        "endEvent": 2109,
+        "startMs": 4658080,
+        "endMs": 4783520,
+        "excerpt": ">> Well I want let me let me comment on this because I think it's it's just a substantive point and I'll be brief. I I think with respect to the example of the anomalous patch, I that just isn't to engage with the example itself. I do mean if the laws of physics themselves varied within a one cubic foot patch, then that would be perfectly compatible with our all our evidence rather than there being a deeper theory that manifests itself field. Well, now let me finish because we don't we got to >> um and so what I would also say with respect to the disjunctions, I agree with you. The alternative to an unlimited god is not a specific limited god hypothesis, but the disjunction. And I don't need to make the claim that the unlimited god intrinsic probability swamps the whole disjunction, but just that it renders it non-negligibly likely some not too terribly low. And I think I think that follows and I also think that follows for the uniformity of or the the uniform application of our laws of physics to arbitrarily large distances. I I disagree. I mean, I I've read uh sections of your dissertation, and I disagree with the analysis about the inability the the the inability to know about regions arbitrarily far away and how uniformity loses its intrinsic probability as you extend a further and further scope. I think it's right that that hypothesis is maximally immodest. That is to say, it makes a claim about everywhere in spaceime. But I think that the modesty of a hypothesis raises its intr I mean sorry the coherence of a hypothesis raises its intrinsic probability more than its immodesty detracts. And for that reason, I think the point carries that even when we're thinking about uh whether the full scope of the universe and the the scope of the laws of nature or with respect to God's attributes, the hypothesis that the relevant quantity is uniformly applied or unlimited will be non-negligibly likely compared to the alternative."
+      },
+      "claim": "The coherence of a uniform or unlimited hypothesis can outweigh the prior penalty from its broad scope.",
+      "warrant": "Even granting maximal immodesty, a single uniform rule is more coherent than arbitrary variation, and coherence can raise intrinsic probability more than immodesty lowers it.",
+      "inference": "Uniform laws and unlimited divine attributes may remain non-negligibly likely compared with their alternatives.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-modest-bayesian-case",
+        "tier": "subsidiary",
+        "rationale": "It defends a non-negligible theistic prior through coherence."
+      },
+      "respondsToIds": [
+        "local-induction-does-not-require-global-uniformity"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "local-induction-does-not-require-global-uniformity",
+          "component": "coherence versus immodesty",
+          "rationale": "It accepts the scope cost but claims coherence has greater positive weight."
+        }
+      ],
+      "publicationDescription": "A uniform or unlimited hypothesis may remain non-negligible when coherence outweighs sweeping scope, despite conceding that global claims incur a substantial immodesty cost.",
+      "publicationCritique": "Strongest feature: Donahue concedes both the complete disjunction and the maximal immodesty of global uniformity, then narrows his conclusion to non-negligible probability rather than claiming that infinity dominates every alternative. Principal limitation: The decisive proposition that coherence contributes more intrinsic probability than unrestricted scope removes is asserted without a weighting principle, leaving the balance dependent on personal intuition. Live burden: He must articulate and defend a prior rule that measures coherence and immodesty across the entire hypothesis space, not merely repeat the anomalous-patch intuition. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "local-induction-does-not-require-global-uniformity",
+      "sectionId": "divine-purposes-discoverability-and-priors",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2005,
+        "endEvent": 2054,
+        "startMs": 4531600,
+        "endMs": 4656000,
+        "excerpt": "here. The another thing I want to say here is that a lot of the work that people want from the uniformity principle can instead take place with alternative principles. So if we had a principle according to which uh a um a statement when confirmed in some um decently sized space-time region uh gives us reason for thinking that the same principle holds in neighboring regions. Mhm. >> Then that would uh give us reason to think that for example on the basis of the of the sun rising yesterday the sun will rise tomorrow. Right. It allows us to make inductive inferences from one space-time region to neighboring regions without committing us to the principle that the the same set of laws apply to all space-time regions. Um, right. I mean, here's when I think about uh how I want to think about the relationship between coherence and modesty, which is like the two principles that Paul Draper uses to judge intrinsic probability. Then if if I'm thinking about um quite large regions within the visible universe, maybe I want to say that like well all else being equal, we can expect the same laws to apply. Uh but then if I start thinking about regions that are arbitrarily far apart, sorry, far away, arbitrarily far beyond our cosmological horizon, now it suddenly looks so tremendously uh immodest that I just feel like we're kind of out to sea there. I I don't want to make some confident statement about whether we should expect uh the laws to apply to locations that are arbitrarily far away. And what that tells me is that uh there's something about the the uniformity principle that this uniformity principle a lot of people want to appeal to might just be stupendously immodest and for that reason something that we shouldn't really give too high of a intrinsic or prior probability."
+      },
+      "claim": "Ordinary induction can be supported by local continuity without assigning a high prior to complete cosmic uniformity.",
+      "warrant": "A principle connecting neighboring spacetime regions supports prediction from nearby evidence, while a law asserted over arbitrarily remote regions becomes increasingly immodest.",
+      "inference": "The uniformity analogy does not establish a high intrinsic prior for an unlimited God.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-priors-and-successors",
+        "tier": "subsidiary",
+        "rationale": "It explains why immodesty can lower the prior without destroying induction."
+      },
+      "respondsToIds": [
+        "unlimited-attributes-have-coherence-prior"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unlimited-attributes-have-coherence-prior",
+          "component": "uniformity analogy",
+          "rationale": "It replaces global uniformity with a local continuity principle and emphasizes scope-based immodesty."
+        }
+      ],
+      "publicationDescription": "Neighboring-region continuity can support ordinary induction without universal laws across remote domains, weakening the analogy between practical prediction and unlimited divine attributes.",
+      "publicationCritique": "Strongest feature: Linford supplies a positive alternative to global uniformity, explaining how continuity across neighboring spacetime regions can support ordinary predictions while withholding commitment about regions arbitrarily beyond the cosmological horizon. Principal limitation: The local principle is informal and independently undefended, so the argument does not establish how inductive support decays with distance or why coherence cannot sustain broader extrapolation. Live burden: The skeptical side must formulate the locality rule non-arbitrarily and show that it preserves successful induction without covertly assuming the very regularity it is intended to replace. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "unembodied-designer-does-not-require-physical-fine-tuning",
+      "sectionId": "embodiment-and-theistic-prediction",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2218,
+        "endEvent": 2248,
+        "startMs": 5025679,
+        "endMs": 5097600,
+        "excerpt": "you. Yeah I think that's right that if God were a massive but humanoid agent with a brain and a body then it would likely need to be an incredibly like fine-tuned delicate arrangement. It would also mean that the designer of the universe exists within a life permitting universe itself which is also fine-tuned. So it would literally just push the problem back in step. But the hypothesis is that God is an unembodied or immaterial mind that doesn't have physical parts. And you might still press as Dan might do that it's fine-tuned in the sense of being improbable because God has to have just the right attributes in order to predict fine-tuning. But I don't think that's what the question is getting at. I think it's more getting at, you know, isn't that just a ridiculously implausible hypothesis given that all of the minds that we know about are embodied. Um and there I think that to to connect to a point Dan was making about uniformity and and possibilities more and more reconcite from our experience is that the more removed some hypothetical scenario is from our experience, the weaker are our inductive generalizations from our experience to that scenario."
+      },
+      "claim": "The designer hypothesis posits an immaterial mind, so it does not push physical fine-tuning back to a divine brain.",
+      "warrant": "Although known minds are embodied, induction from them weakens radically when applied to a hypothesized creator of the fundamental laws and constants.",
+      "inference": "Embodiment experience does not make an unembodied divine designer prohibitively unlikely.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-theistic-flexibility",
+        "tier": "subsidiary",
+        "rationale": "It distinguishes divine mentality from a fine-tuned physical substrate."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "publicationDescription": "An immaterial designer avoids a fine-tuned divine brain, while induction from familiar embodied minds weakens when extrapolated to a creator of fundamental laws.",
+      "publicationCritique": "Strongest feature: Donahue directly answers the physical-substrate regress by distinguishing an immaterial creator from a humanoid designer, while conceding that an embodied God would merely relocate the fine-tuning problem. Principal limitation: Weakening induction in remote contexts establishes possibility more readily than probability, and the passage supplies little positive warrant for an unembodied mind despite acknowledging that every observed mind is embodied. Live burden: He must explain why remoteness reduces the adverse induction without also undermining positive inferences about divine purposes, mentality, and value sensitivity. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "theism-must-select-biological-and-miracle-details",
+      "sectionId": "embodiment-and-theistic-prediction",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2312,
+        "endEvent": 2372,
+        "startMs": 5238000,
+        "endMs": 5395040,
+        "excerpt": "I I think that the the the questioner um has a few things in mind. Uh one of them is you know I mentioned earlier that I think theism is fine-tuned in more than one sense. So one problem is this entropy issue that we discussed at nauseium but there's there's other issues too. I think that theism is fine-tuned with respect to God's motivations. Uh if God is interested in creating morally significant creatures, that is creatures that both have moral worth and have uh can make morally significant actions. Um that it seems to me that uh what you what you need are creatures whose uh conscious experience can be made better or worse. And you need conscious creatures that are capable of affecting each other so that their actions result in each other's experiences being better or worse. Under those conditions, those condition those agents are worthy of our moral consideration because precisely because they have the kind of experience been made better or worse and they uh they are capable of carrying out morally significant action because their actions in virtue of making each other's experiences better or worse uh can either be right or wrong. And then I guess you might add that these agents are capable of understanding the consequences of their of their actions and so on. So throw in some intelligence to each of the agents. Uh but none of that requires like physical embodiment or biology. Uh all of that is consistent with a universe that um is in some state of maximum entropy or where there's no physical uh portion of reality at all. Uh so God has to be in and under this argument that I'm making has to be fine-tuned. that is theism has to be fine-tuned in order to uh predict that you would have biological life of such and such kind. You also have to exclude that God would carry out a constant miracle in allowing uh life to exist. Though not too much of a um you know not so God has to carry out some kind of constant miracle but not too large of one. So God has to carry out enough of a constant miracle that we have souls attaching to uh to biological systems, at least if the if a theist takes himself to believe in souls, but not so much of a a miracle that God would attach souls to things like rocks. Uh and that also seems like a kind of of fine-tuning to me. A related way of of"
+      },
+      "claim": "Theism remains fine-tuned with respect to divine motivations for biological agents and the amount of miraculous intervention.",
+      "warrant": "Moral agents need consciousness, interaction, and intelligence but not biology; theism must additionally select embodied life and enough miracle for souls without indiscriminately attaching souls to rocks.",
+      "inference": "Theism does not straightforwardly predict the specific biologically embodied life used in the fine-tuning argument.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-theism-fine-tuned",
+        "tier": "subsidiary",
+        "rationale": "It specifies motivation and miracle parameters allegedly requiring tuning."
+      },
+      "respondsToIds": [
+        "unembodied-designer-does-not-require-physical-fine-tuning"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unembodied-designer-does-not-require-physical-fine-tuning",
+          "component": "prediction of biological embodiment",
+          "rationale": "It grants that moral agents could be unembodied and asks why God would choose this biological realization."
+        }
+      ],
+      "publicationDescription": "Moral agency requires consciousness and interaction but not biology, so theism needs further assumptions selecting embodied creatures and a particular degree of miraculous intervention.",
+      "publicationCritique": "Strongest feature: Linford separates moral agency from biological embodiment and then identifies two additional selections theism must explain: choosing physical organisms and calibrating miraculous intervention rather than sustaining minds indiscriminately. Principal limitation: The souls-and-rocks illustration depends on optional theological commitments, and the argument does not assign probabilities to the many purposive possibilities it says theism must navigate. Live burden: The skeptic must show that these extra specifications materially lower the likelihood of embodied life across defensible theistic models, not merely that unembodied or more miraculous creations are conceivable. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "three-creation-options-preserve-theistic-prediction",
+      "sectionId": "embodiment-and-theistic-prediction",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2443,
+        "endEvent": 2474,
+        "startMs": 5552239,
+        "endMs": 5625120,
+        "excerpt": ">> Yeah. So a general comment is that I I think so what Dan is attempting to do is is disconnect the fact that theism even if we grant that theism predicts conscious agents. It doesn't follow that theism predicts physical fine-tuning for life within which biologically embodied physical agents could arise because it's a live possibility that God creates unembodied beings like angels for example or creates physical life but in a universe that is not life permitting naturally. Say all of the constants and initial conditions fall out of their life permitting range but God sustains them miraculously in existence. Sure, I I think you can just factor these in as possibilities, but there's not a big list. I think Matthew Adelstein has made this point. There's basically three. Either God does it naturally in a way that leads to fine-tuning for life. God does it miraculously where God creates angelic beings that are unembodied. And on that way of dividing up the possibilities, you you can just attach a reasonable probability of even a tenth to the idea of a physical realization for life. in which case it doesn't really alter the predictive power of theism with respect to fine-tuning specifically all that much. And then the"
+      },
+      "claim": "The main ways God could create life are few enough that physical life can retain a substantial theistic probability.",
+      "warrant": "The options are natural physical life with fine-tuning, miraculous physical life, or unembodied angelic life; assigning even a modest share to natural physical realization leaves theism predictively useful.",
+      "inference": "Alternative divine means do not reduce the likelihood of physical fine-tuning to a negligible level.",
+      "burdenContact": {
+        "bridgeId": "pro-central-comparative-likelihood",
+        "tier": "central",
+        "rationale": "It defends a non-negligible likelihood of physical life on theism."
+      },
+      "respondsToIds": [
+        "theism-must-select-biological-and-miracle-details"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "theism-must-select-biological-and-miracle-details",
+          "component": "size of divine option space",
+          "rationale": "It argues that the relevant alternatives are a short partition rather than an unbounded set."
+        }
+      ],
+      "publicationDescription": "Natural physical life, miraculous physical life, and unembodied life form a proposed three-way partition, allegedly leaving natural fine-tuning substantially probable under theism.",
+      "publicationCritique": "Strongest feature: Donahue responds to Linford’s selection problem with an explicit three-part partition distinguishing naturally sustained physical life, miraculously sustained physical life, and unembodied agents, thereby making his proposed prediction inspectable. Principal limitation: Counting three coarse categories neither proves the partition complete nor warrants assigning one tenth to natural physical realization, because each category can contain differently weighted, finely specified possibilities. Live burden: The affirmative must justify a representation-invariant measure over divine options and show that physical embodiment retains substantial weight when the space is described at comparable granularity. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "supernatural-agent-takes-larger-prior-hit",
+      "sectionId": "embodiment-and-theistic-prediction",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2508,
+        "endEvent": 2520,
+        "startMs": 5698080,
+        "endMs": 5731199,
+        "excerpt": "think on the one hand it's a speculative hypothesis, right? And I do not want to deny that. Uh on the other hand, it's just another hypothesis about the way that physical items could be. Um and in that sense, it's yet more of the same kind of stuff that we're used to. When we postulate a supernatural agent, we're postulating something that's radically unlike uh the kinds of things that we're that we're used to. And I it's for that reason I think it would take a bigger hit. But actually I think the the thing"
+      },
+      "claim": "A supernatural agent should take a larger prior-probability penalty than speculative extra-dimensional physics.",
+      "warrant": "Extra dimensions remain a speculative hypothesis about more physical structure of a familiar kind, whereas a supernatural agent is radically unlike observed entities.",
+      "inference": "The unembodied-designer reply therefore does not neutralize the prior-probability concern.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-priors-and-successors",
+        "tier": "subsidiary",
+        "rationale": "It argues that theism’s prior cannot be treated as merely unspecified but harmless."
+      },
+      "respondsToIds": [
+        "unembodied-designer-does-not-require-physical-fine-tuning"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unembodied-designer-does-not-require-physical-fine-tuning",
+          "component": "distance from observed ontology",
+          "rationale": "It distinguishes unfamiliar physical structure from a categorically supernatural agent."
+        }
+      ],
+      "publicationDescription": "Extra dimensions remain speculative physical structure, whereas a supernatural agent is categorically unlike observed entities, allegedly imposing a larger prior-probability penalty on theism.",
+      "publicationCritique": "Strongest feature: Linford identifies a genuine difference between unfamiliar extra-dimensional physics and an immaterial agent: the former extends physical ontology, whereas the latter introduces a categorically different kind of entity. Principal limitation: Familiarity alone supplies no validated prior measure, so the claim that supernatural agency deserves a larger penalty remains qualitative and could mistake ontological conservatism for evidential probability. Live burden: He must defend a principled connection between category distance and prior weight, then show that the resulting penalty is large enough to matter against any claimed likelihood advantage. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "unconstrained-pivoting-cannot-immunize-naturalism",
+      "sectionId": "multiverse-symmetry-and-final-deeper-physics",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2660,
+        "endEvent": 2710,
+        "startMs": 6077280,
+        "endMs": 6187920,
+        "excerpt": "comments there, my worry is that this sort of methodology of well, you know, naturalism plus this specific proposal poorly predicts the data, so we just opt for a different one. To me, that begins to make it look like there's just no way you could ever discon disisconfirm naturalism or grant that under naturalism itself, this data point is very very unlikely and is therefore disconfirmed. You you can't always do that, right? You can't always just pivot and go to a different neighboring hypothesis. And and why is that? Well, because even if there might be other hypotheses which predict the data better, if they themselves are very very intrinsically unlikely, then they're not going to help rescue the more general hypothesis or consideration. That's just a general point, but it follows here as well. And so if the multiverse makes fine-tuning extremely unlikely and we had put a lot of stock into the prior plausibility of multiverse proposals, well then that that's going to take out a huge chunk of the probability space under naturalism itself which could have led to a higher prediction for fine-tuning for life. And so I agree that in an ideal world we would make this all numerically precise. But inductive reasoning in everyday life and often in scientific context and certainly in philosophy it's never numerically precise. It's always going to be more qualitative. That's just a limit of the discipline itself. I think it's what Aristotle said about ethics is that the inquiry the the rules of the inquiry just don't allow for that level of precision. And so you either are okay with it and proceeding at a rough and ready level or you just don't proceed at all. And I would say it's okay to proceed if we are willing to recognize that things aren't going to be as numerically precise as say some formulations of the fine-tuning argument would would suggest."
+      },
+      "claim": "Naturalism cannot always evade disconfirmation by pivoting from each poorly predicting model to an unspecified alternative.",
+      "warrant": "Alternative models help only in proportion to their intrinsic plausibility; eliminating a previously plausible multiverse family removes probability mass that could have raised naturalism’s prediction of fine-tuning.",
+      "inference": "Qualitative Bayesian reasoning can still support a low naturalistic likelihood without exact numerical precision.",
+      "burdenContact": {
+        "bridgeId": "pro-subsidiary-modest-bayesian-case",
+        "tier": "subsidiary",
+        "rationale": "It defends rough comparative likelihoods and constrains rescue hypotheses by their priors."
+      },
+      "respondsToIds": [
+        "naturalism-is-not-committed-to-a-fine-tuned-multiverse"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "naturalism-is-not-committed-to-a-fine-tuned-multiverse",
+          "component": "cost of alternative models",
+          "rationale": "It says unspecified alternatives cannot rescue naturalism unless they carry sufficient intrinsic probability."
+        }
+      ],
+      "publicationDescription": "Naturalism cannot escape every failed model through unspecified alternatives because rescue hypotheses matter only according to their intrinsic plausibility and prior probability.",
+      "publicationCritique": "Strongest feature: Donahue correctly notes that a broad worldview is not rescued merely by the logical existence of better-predicting variants, because those variants influence its likelihood only through their prior weights and evidential fit. Principal limitation: The general Bayesian point is sound, but the debate supplies no basis for his claim that multiverse proposals occupied a huge share of naturalistic probability or that the remaining alternatives are collectively weak. Live burden: He must discipline qualitative reasoning with defensible comparative weights rather than use the rejection of costless pivoting to infer a low naturalistic likelihood directly. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "naturalism-is-not-committed-to-a-fine-tuned-multiverse",
+      "sectionId": "multiverse-symmetry-and-final-deeper-physics",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "constructive",
+      "sourceSpan": {
+        "startEvent": 2574,
+        "endEvent": 2604,
+        "startMs": 5870400,
+        "endMs": 5944400,
+        "excerpt": "So, you know, the case that I've made uh against or I'm skeptical of the fine-tuning argument does not involve uh any sort of commitment to a multiverse. I think a multiverse hypothesis might be one kind of naturalistic hypo or really one family of multiverse about sort of naturalistic hypotheses on which maybe the fine chaining problem either is taken away or reduced or something. Um, but you know, if someone comes along and tells us, hey, like this particular naturalistic proposal uh is itself fine-tuned, well, great. I just turn the crank and I say the same things I've already said, right? I say, look, what that means is that that uh particular naturalistic hypothesis poorly predicts the data. When a hypothesis poorly predicts the data, it means that we should be looking at other hypotheses. The naturalist just right in virtue of being a naturalist is not committed to a multiverse. So their role within their rights is to say that naturalism hasn't made this poor prediction. It's just this particular version of naturalism that's made a poor prediction. And then they can try to see if there's other versions of of naturalism that make a better prediction. um the uh and you"
+      },
+      "claim": "Showing that one multiverse proposal is fine-tuned disconfirms that proposal, not naturalism as such.",
+      "warrant": "Naturalism is not committed to a multiverse and may consider other physical hypotheses; the unknown weighted-average term across those alternatives remains unresolved.",
+      "inference": "A fine-tuned multiverse does not rescue the fine-tuning argument’s worldview-level likelihood premise.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-priors-and-successors",
+        "tier": "subsidiary",
+        "rationale": "It confines disconfirmation to the physical package that made the poor prediction."
+      },
+      "respondsToIds": [],
+      "responseComponents": [],
+      "publicationDescription": "A fine-tuned multiverse disconfirms that model rather than naturalism itself, since the broader worldview includes other physical possibilities with unresolved collective likelihood.",
+      "publicationCritique": "Strongest feature: Linford answers the multiverse objection without adopting that model, clearly distinguishing a particular poorly predicting cosmology from naturalism’s broader disjunction and accepting that the defective package should lose credibility. Principal limitation: Moving to other naturalistic models preserves logical possibility but leaves their collective prior weight and predictive success unknown, so the scope distinction alone cannot show that naturalism handles fine-tuning well. Live burden: The limited objection requires only that alternative weighting remain open, but it must address any evidence showing that plausible successors collectively retain too little probability to alter the asymmetry. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "rival-partition-needed-to-lower-biological-life",
+      "sectionId": "multiverse-symmetry-and-final-deeper-physics",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2908,
+        "endEvent": 2916,
+        "startMs": 6610960,
+        "endMs": 6628880,
+        "excerpt": ">> so what would you propose as an alternative der uh division that gives you a very low probability for biological life specifically? I'm just proposing it as a reasonable way to think about the possibility space. But if you have an alternative which you think is better with very low probability, I'm all here for it."
+      },
+      "claim": "The partition objection needs an alternative division that actually makes biological life very improbable on theism.",
+      "warrant": "Donahue presents his division as a reasonable model and invites a better partition with a low biological-life probability.",
+      "inference": "Merely observing that partitions can differ does not establish the skeptical likelihood claim.",
+      "burdenContact": {
+        "bridgeId": "pro-central-comparative-likelihood",
+        "tier": "central",
+        "rationale": "It defends the offered option-space model pending a better alternative."
+      },
+      "respondsToIds": [
+        "option-count-depends-on-partition-granularity"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "option-count-depends-on-partition-granularity",
+          "component": "burden of an alternative partition",
+          "rationale": "It asks the skeptic to supply a partition that changes the biological-life likelihood rather than merely noting granularity."
+        }
+      ],
+      "publicationDescription": "Noting alternative partitions does not lower theism’s biological-life likelihood by itself, so the skeptic is invited to propose a better division with different consequences.",
+      "publicationCritique": "Strongest feature: Donahue keeps attention on the disputed consequence by asking for an alternative partition that actually makes biological life unlikely, rather than accepting a purely abstract observation about representational granularity as decisive. Principal limitation: The request shifts too much responsibility to the skeptic, because failure to supply a rival partition would not validate Donahue’s original three-category division or its unsupported one-tenth assignment. Live burden: The affirmative retains the obligation to justify why its partition is privileged, complete, and probabilistically meaningful before demanding a quantitatively superior replacement. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "option-count-depends-on-partition-granularity",
+      "sectionId": "multiverse-symmetry-and-final-deeper-physics",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2890,
+        "endEvent": 2901,
+        "startMs": 6575199,
+        "endMs": 6603679,
+        "excerpt": ">> So look, the you're right that there are many like physical hypotheses we could write out, but that's comparable not to the the triad of of uh theologies that you described, but rather to the disjunction of all of the quite specific ways that God could be. I mean, if I want to, I can say there's only two physical possibilities, right? There's like the physical possibility in which the entropy is unlikely and then there's the denial of it and now there's two."
+      },
+      "claim": "Counting three divine options does not establish their probabilities because either worldview’s possibility space can be partitioned coarsely or finely.",
+      "warrant": "Detailed physical hypotheses should be compared with the equally detailed ways God could be; naturalistic possibilities can be redescribed as only entropy-likely versus not, just as theism was divided into three.",
+      "inference": "The bare number of categories gives no asymmetry favoring theism.",
+      "burdenContact": {
+        "bridgeId": "con-subsidiary-theism-fine-tuned",
+        "tier": "subsidiary",
+        "rationale": "It challenges the parameterization of divine and physical option spaces."
+      },
+      "respondsToIds": [
+        "three-creation-options-preserve-theistic-prediction"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "three-creation-options-preserve-theistic-prediction",
+          "component": "granularity of option counting",
+          "rationale": "It says three coarse divine categories cannot be compared with many fine-grained physical theories."
+        }
+      ],
+      "publicationDescription": "Option counts change with descriptive granularity, so three coarse divine categories cannot be probabilistically compared with numerous finely specified physical hypotheses.",
+      "publicationCritique": "Strongest feature: Linford exposes the representation dependence of bare option counting by comparing Donahue’s three coarse theological categories with an equally coarse two-part physical division, while noting that detailed theories require equally detailed divine alternatives. Principal limitation: Demonstrating that category counts are unstable does not provide the correct partition or probability measure, so the objection defeats the one-tenth warrant without establishing that embodied life is actually improbable on theism. Live burden: The granularity objection defeats the offered one-tenth warrant unless Donahue fixes a principled partition; only a stronger claim that embodied life is improbable would require Linford to supply an invariant alternative measure. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "deeper-physics-must-explain-all-fine-tuned-parameters",
+      "sectionId": "multiverse-symmetry-and-final-deeper-physics",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2983,
+        "endEvent": 3024,
+        "startMs": 6767920,
+        "endMs": 6855280,
+        "excerpt": ">> Yeah, you can say that in theory. But what I would maintain is that in so far as we're talking about the predictive power of just this appeal vague appeal to deeper physics and we didn't really get into this and there's there's no time left to really hash out the details here. Um the likelihood of life permitting values for the various parameters of physics is going to be very very epistemically unlikely under naturalism because what you need under this appeal to deeper physics and naturalism to get away to get away from improbable parameters is not just a deeper physical theory fixing one parameter or two or three. you need a deeper physical theory that can explain the values of all of the fundamental parameters because in so far as even one is left out that's going to be an instance of fine-tuning and so I think that while the improbabilities there may not strictly multiply they do cobble together as you get more and more instances of fine-tuning you get more and more epistemic improbabilities of okay the theory needs to not just fix say the entropy it also needs to fix the value of Q uniformity it also needs to fix the value of the cosmological constant and the Higs ve and that is just going to make its epistemic probability from our current vantage point ever more low and unlikely. Uh so while I think in theory the naturalist can do that I in practice I think the number comes out very very small for the epistemic probability of of life forbidding values under deeper physics but I wasn't actually able to make that point in the debate proper. So I know"
+      },
+      "claim": "A naturalistic appeal to deeper physics must jointly explain every fine-tuned parameter, not merely one or a few.",
+      "warrant": "Any unexplained parameter leaves an instance of fine-tuning, and the epistemic difficulty accumulates as a deeper theory must fix entropy, Q uniformity, the cosmological constant, the Higgs value, and the rest.",
+      "inference": "From the current epistemic position, a life-permitting deeper theory remains very unlikely enough to support the modest theistic comparison.",
+      "burdenContact": {
+        "bridgeId": "pro-motion-strong-evidence",
+        "tier": "motion",
+        "rationale": "It explains why deeper-physics uncertainty allegedly leaves strong comparative evidence rather than eliminating it."
+      },
+      "respondsToIds": [
+        "same-auxiliary-move-threatens-disconfirmation-symmetrically"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "same-auxiliary-move-threatens-disconfirmation-symmetrically",
+          "component": "asymmetry in joint explanatory demands",
+          "rationale": "It claims naturalistic deeper physics faces cumulative demands across all fine-tuned parameters."
+        }
+      ],
+      "publicationDescription": "A successful deeper theory must jointly explain every apparently fine-tuned parameter, creating cumulative pressure that allegedly keeps life-permitting naturalistic physics epistemically unlikely.",
+      "publicationCritique": "Strongest feature: Donahue makes the deeper-physics appeal concrete by naming entropy, uniformity, the cosmological constant, and the Higgs quantity, emphasizing that a successor leaving even one relevant parameter unexplained preserves fine-tuning pressure. Principal limitation: He explicitly denies strict multiplication yet supplies no alternative dependence structure, model-space measure, or aggregation rule supporting his conclusion that the joint epistemic probability becomes very small. Live burden: The affirmative must show how explanatory demands accumulate across correlated parameters and why a unified theory cannot address several simultaneously without independent improbability penalties. Locked score: [withheld for blind rhetorical review]."
+    },
+    {
+      "moveId": "same-auxiliary-move-threatens-disconfirmation-symmetrically",
+      "sectionId": "multiverse-symmetry-and-final-deeper-physics",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "moveKind": "reply",
+      "sourceSpan": {
+        "startEvent": 2917,
+        "endEvent": 2938,
+        "startMs": 6626480,
+        "endMs": 6684400,
+        "excerpt": ">> Takes us away from the original point, right? Like so the point was that the uh so what we were discussing was whether or not naturalism or whether or not the uh the argument that I was giving proves too much because it would turn out that naturalism cannot be discon. Likewise, I was saying, well, if I can construct an analogous case for what goes on with theism, then it turns out that theism can't be disisconfirmed. Now, in both cases, you can add various successes or replace your hypothesis with some other variant or something like that that course that corresponds to looking at this other term, the weighted average principle. And now the uh if if both want to make that move and if it's true that that move means that you can't disisconfirm the hypothesis well then it would work in both cases and you can't disisconfirm either one."
+      },
+      "claim": "If adding or replacing auxiliary hypotheses prevents disconfirmation, the move works symmetrically for both theism and naturalism.",
+      "warrant": "Each side can shift from a disfavored conjunction to another variant represented in the weighted average; if that maneuver immunizes one worldview, it immunizes the other too.",
+      "inference": "Donahue’s objection that Linford makes naturalism unfalsifiable does not independently establish the fine-tuning argument.",
+      "burdenContact": {
+        "bridgeId": "con-motion-insufficient-comparison",
+        "tier": "motion",
+        "rationale": "It argues that the proposed rescue and disconfirmation rules remain symmetric."
+      },
+      "respondsToIds": [
+        "unconstrained-pivoting-cannot-immunize-naturalism"
+      ],
+      "responseComponents": [
+        {
+          "targetMoveId": "unconstrained-pivoting-cannot-immunize-naturalism",
+          "component": "alleged immunity",
+          "rationale": "It turns the same immunity objection back on theism’s use of auxiliary motivations and physics."
+        }
+      ],
+      "publicationDescription": "If replacing auxiliary hypotheses shields naturalism from disconfirmation, identical reasoning can shield theism, so the maneuver cannot independently establish an asymmetric worldview comparison.",
+      "publicationCritique": "Strongest feature: Linford turns the unfalsifiability objection back conditionally, showing that if moving among weighted variants immunizes naturalism, then the same formal maneuver involving divine purposes and physical auxiliaries threatens to immunize theism. Principal limitation: The structural parallel does not show that the two families have equal priors or predictive resources, and substantive asymmetry could remain after both receive principled weights. Live burden: He must maintain matched evidential rules while permitting evidence to distinguish the actual plausibility and fit of the available auxiliaries rather than treating formal symmetry as numerical equality. Locked score: [withheld for blind rhetorical review]."
+    }
+  ],
+  "overallBlunders": [
+    {
+      "blunderId": "overall-pro-blunder-1",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "text": "Several decisive probability assignments remained asserted rather than derived, especially the residual confirmation factor, the share for physical life, and the cumulative improbability of deeper physics."
+    },
+    {
+      "blunderId": "overall-pro-blunder-2",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "text": "The coherence-based prior defense never supplied a rule showing why unlimited divine attributes outweigh global immodesty or the complete disjunction of finite alternatives."
+    },
+    {
+      "blunderId": "overall-con-blunder-1",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "text": "The structural symmetry arguments did not establish equal numerical weights for theistic and naturalistic alternatives, leaving room for a substantive asymmetry if independently defended."
+    },
+    {
+      "blunderId": "overall-con-blunder-2",
+      "side": "con",
+      "speaker": "Dan Linford",
+      "text": "The proposed larger prior penalty for supernatural agency relied mainly on ontological familiarity, without an independent principle determining how unfamiliarity should alter prior probability."
+    }
+  ],
+  "completeTimestampedTranscript": ".assessment-cache/captions/Ui9C6N4HFvY/indexed-transcript.txt",
+  "audioContextPath": "docs/assessment-production/standalone-debates-v1/debate-265/audio/score-blind-supplement.json",
+  "sourceScope": "Full two-speaker debate. Moderator logistics unscored. No primary-speaker exclusion exception.",
+  "reviewRules": [
+    "Read every declared input literally before review. Consider every local definition against each complete move and live reply. Do not infer a fallacy merely from weak evidence, an unfinished mechanism, a contested premise, non-deductive inference, or a missing alternative comparison.",
+    "Record source-specific reasoning for every move and every overall blunder, including no-tag decisions. Include every serious candidate considered, both accepted and rejected, in candidateReviews or overallBlunderCandidateReviews. The acceptedTags arrays are exact accepted subsets. Do not manufacture implausible candidates just to fill a table.",
+    "Each accepted tag requires a material source defect already represented in the frozen critique. Tags do not change scores. A source caveat or qualification may defeat an apparent label; review complete context and audio corrections before acceptance. Never equate disagreement with a named fallacy. Two labels for one defect require distinct catalog-defined failures.",
+    "No quotas or forced side symmetry; zero accepted labels can be justified only by specific complete review. Keep output reviewer identity separate; do not access the other review, scores, published tags, earlier debates or tag frequencies.",
+    "Use exact catalog label/type/url. Context8–35words, rationale at least12words. Candidate key is moveId|type|label or blunderId|type|label. Candidate rows include identifier,candidateKey,type,label,url,context,rationale,decision accepted or rejected.",
+    "Self-check first complete draft in memory using the declared checker; never submit a placeholder or generic no-tag review. Literal unsaved draft components may be emitted for controller inspection/compilation; do not overwrite any submitted output. One attempt; no automatic retries."
+  ],
+  "outputContract": {
+    "schemaVersion": "1.0-independent-rhetorical-review",
+    "status": "complete-blind-move-complete-review",
+    "debateNumber": "265",
+    "debateId": "donahue-linford-fine-tuning-theism-2026",
+    "reviewedMoveIds": [
+      "multiple-parameters-have-narrow-life-permitting-ranges",
+      "theory-level-fine-tuning-reframe",
+      "value-sensitive-theism-outpredicts-naturalism",
+      "unknown-naturalistic-likelihood-without-distribution",
+      "modest-not-overwhelming-confirmation",
+      "theism-must-be-less-fine-tuned-successor",
+      "future-physics-reduces-but-does-not-erase-confirmation",
+      "naturalism-does-not-entail-current-physics-package",
+      "free-parameters-support-counterfactual-variation",
+      "probability-measure-determines-small-variation",
+      "low-likelihood-disconfirms-only-comparatively",
+      "observer-selection-does-not-predict-cosmic-low-entropy",
+      "life-need-not-be-gods-only-purpose",
+      "weighted-average-symmetry-for-both-worldviews",
+      "low-entropy-enables-discovery-and-beauty",
+      "discoverability-is-underspecified",
+      "priors-and-all-evidence-separate-from-local-confirmation",
+      "vague-priors-do-not-entail-posterior-ordering",
+      "unlimited-attributes-have-coherence-prior",
+      "denial-of-infinity-is-a-disjunction-not-one-arbitrary-limit",
+      "coherence-can-outweigh-global-immodesty",
+      "local-induction-does-not-require-global-uniformity",
+      "unembodied-designer-does-not-require-physical-fine-tuning",
+      "theism-must-select-biological-and-miracle-details",
+      "three-creation-options-preserve-theistic-prediction",
+      "supernatural-agent-takes-larger-prior-hit",
+      "unconstrained-pivoting-cannot-immunize-naturalism",
+      "naturalism-is-not-committed-to-a-fine-tuned-multiverse",
+      "rival-partition-needed-to-lower-biological-life",
+      "option-count-depends-on-partition-granularity",
+      "deeper-physics-must-explain-all-fine-tuned-parameters",
+      "same-auxiliary-move-threatens-disconfirmation-symmetrically"
+    ],
+    "reviewedOverallBlunderIds": [
+      "overall-pro-blunder-1",
+      "overall-pro-blunder-2",
+      "overall-con-blunder-1",
+      "overall-con-blunder-2"
+    ],
+    "moveReviews": "One per move in exact packet order: moveId, allDefinitionsConsidered (all exact definitionKeys), candidateKeys (complete serious candidate set), source-specific rationale≥12words.",
+    "overallBlunderReviews": "One per blunder in exact packet order, same fields with blunderId.",
+    "candidateReviews": "Complete serious move candidate table, accepted and rejected.",
+    "overallBlunderCandidateReviews": "Complete serious overall blunder candidate table, accepted and rejected.",
+    "acceptedTags": "Exact accepted subset of candidateReviews.",
+    "acceptedOverallBlunderLinks": "Exact accepted subset of overallBlunderCandidateReviews.",
+    "audit": {
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0,
+      "existingTagsUnavailable": true,
+      "scoresUnavailable": true,
+      "otherReviewUnavailable": true,
+      "judgmentChanges": 0,
+      "scoreChanges": 0
+    }
+  }
+}

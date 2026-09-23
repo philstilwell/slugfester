@@ -12570,5 +12570,55 @@ export const debateSummaries = [
         "title": "Religion, spirituality, and human well-being"
       }
     ]
+  },
+  {
+    "id": "donahue-linford-fine-tuning-theism-2026",
+    "number": "265",
+    "title": "Miles K. Donahue vs Dan Linford — Fine-Tuning and Theism",
+    "year": 2026,
+    "label": "Fine-tuning and theism",
+    "date": "2026-09-23",
+    "duration": "1 hr 54 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ui9C6N4HFvY",
+    "motion": "Does cosmic fine-tuning provide strong evidence for theism over naturalism?",
+    "summary": "Linford’s measure and model-flexibility objections outperformed Donahue’s modest fine-tuning case, whose strongest distinctions remained burdened by unsupported probability assignments.",
+    "topicCategory": "cosmological-arguments",
+    "sides": {
+      "pro": {
+        "name": "Theistic fine-tuning",
+        "speaker": "Miles K. Donahue",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Fine-tuning skepticism",
+        "speaker": "Dan Linford",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 87,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Fine-tuning, data, and the core likelihood comparison"
+      },
+      {
+        "title": "Theory replacement and deeper physics"
+      },
+      {
+        "title": "Entropy and comparative disconfirmation"
+      },
+      {
+        "title": "Divine purposes, discoverability, and intrinsic priors"
+      },
+      {
+        "title": "Embodiment and theistic prediction"
+      },
+      {
+        "title": "Multiverse symmetry and the final deeper-physics objection"
+      }
+    ]
   }
 ];

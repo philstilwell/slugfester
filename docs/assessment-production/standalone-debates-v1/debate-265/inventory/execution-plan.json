@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-frozen-inventory-execution-plan",
+  "status": "frozen-before-model",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "createdAt": "2026-09-23T18:25:38.490Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "Fresh built-in subagent with fork_turns none; protocol-restricted declared source inputs and disjoint writes; not an operating-system sandbox.",
+  "attempts": 1,
+  "retries": 0,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/inventory/packet.json",
+      "sha256": "5fc5c12f281035db3e49ebea0b4750b4b98573d715e58a5f5429e92769952fa1",
+      "bytes": 11776
+    },
+    {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/indexed-transcript.txt",
+      "sha256": "b8654b07c7198cbf2dbd971998753edd0cdc318a9b17470266eddda4d013f323",
+      "bytes": 186387
+    },
+    {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/events.json",
+      "sha256": "a8549d36bd377c1703de405253fa60c411eb3a78894f8dd87447106290fde288",
+      "bytes": 326710
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLineRanges": [
+        {
+          "start": 1,
+          "end": 457
+        }
+      ]
+    }
+  ],
+  "allowedOutputPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-265/inventory/inventory.json",
+    "docs/assessment-production/standalone-debates-v1/debate-265/inventory/reading-audit.json"
+  ],
+  "directIncrementalCostUsd": 0
+}

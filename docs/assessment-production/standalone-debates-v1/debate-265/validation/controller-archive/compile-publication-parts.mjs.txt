@@ -1,0 +1,25 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {checkPublication} from './check-publication-draft.mjs';
+const [n,session,...flags]=process.argv.slice(2);assert.match(n,/^\d{3}$/);const read=p=>JSON.parse(fs.readFileSync(p)),hash=b=>createHash('sha256').update(b).digest('hex'),rec=p=>{const b=fs.readFileSync(p);return{path:p,sha256:hash(b),bytes:b.length};};
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(r);const dir=r.root+'/publication',p=read(dir+'/input-bundle.json'),release=read(dir+'/reading-release.json');assert.equal(release.session.path,session);
+const rows=fs.readFileSync(session,'utf8').trim().split('\n').map(JSON.parse),parts=[];
+for(const row of rows)for(const block of row.payload?.type==='custom_tool_call_output'?row.payload.output:[]){try{const value=JSON.parse(block.text);if(value.draftPart)parts.push({callId:row.payload.call_id,ordinal:row.ordinal,timestamp:row.timestamp,sha256:hash(block.text),literal:value});}catch{}}
+const latest=new Map();for(const part of parts){if(latest.has(part.literal.draftPart))assert.equal(part.literal.supersedesPrevious,true,'Repeated draft component needs explicit supersession');latest.set(part.literal.draftPart,part);}
+const needed=[...p.lockedCandidateSkeleton.sections.map((_,i)=>'section-'+(i+1)),'other-prose'],missing=needed.filter(k=>!latest.has(k));
+if(missing.length){console.log(JSON.stringify({status:'drafting-in-progress',received:[...latest.keys()],missing},null,2));process.exit(0);}
+const c=structuredClone(p.lockedCandidateSkeleton),seen=[];
+for(const [i,s] of c.sections.entries()){const part=latest.get('section-'+(i+1)).literal;if(part.sectionId!==undefined)assert.equal(part.sectionId,s.sectionId);const draftCards=part.cards??part.value;assert(Array.isArray(draftCards));const cards=s.exchanges.flatMap(e=>['pro','con'].flatMap(side=>e[side]?[e[side]]:[]));assert.deepEqual(draftCards.map(c=>c.moveId),cards.map(c=>c.ledgerMoveId));for(const [j,card] of cards.entries()){const m=draftCards[j];for(const key of ['role','words','critique']){assert.equal(typeof m[key],'string');card[key]=m[key];}seen.push(m.moveId);}}
+const supersessions=latest.get('scope-and-band-supersessions')?.literal.value??[];
+for(const change of supersessions){const cards=c.sections.flatMap(s=>s.exchanges.flatMap(e=>['pro','con'].flatMap(side=>e[side]?[e[side]]:[])));const card=cards.find(x=>x.ledgerMoveId===change.moveId);assert(card,'Unknown supersession move');assert(typeof change.replaceExact==='string'&&change.replaceExact.length>0);assert.equal(card.critique.split(change.replaceExact).length,2,'Supersession must match exactly once: '+change.moveId);card.critique=card.critique.replace(change.replaceExact,change.with);}
+const other=latest.get('other-prose').literal.value??latest.get('other-prose').literal;
+for(const key of ['sourceNote','scoringNote','summary','quotes','logicalExtension']){assert(other[key]!=null,key);c[key]=other[key];}
+for(const side of ['pro','con']){if(other.overall[side].score!==undefined)assert.equal(other.overall[side].score,c.overall[side].score);for(const key of ['strengths','blunders']){assert(other.overall[side][key]!=null);c.overall[side][key]=other.overall[side][key];}}
+const output={schemaVersion:p.outputRequirements.schemaVersion,protocolId:p.outputRequirements.protocolId,status:p.outputRequirements.status,debateNumber:n,debateId:r.debateId,candidate:c,sourceQuoteAudit:other.sourceQuoteAudit,noveltyMap:other.noveltyMap,audit:p.outputRequirements.audit};
+const validation=checkPublication(output,p);
+if(flags.includes('--freeze')){
+ assert(!fs.existsSync(p.outputPath));
+ const write=(path,o)=>fs.writeFileSync(path,JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+ write(dir+'/literal-draft-components.json',{schemaVersion:'1.0-literal-unsaved-publication-components',debateNumber:n,debateId:r.debateId,session:rec(session),parts});
+ write(p.outputPath,output);
+ write(dir+'/mechanical-first-submission.json',{schemaVersion:'1.0-mechanical-publication-first-submission',status:'single-first-submission-compiled-from-authenticated-writer-literals',debateNumber:n,debateId:r.debateId,readingRelease:rec(dir+'/reading-release.json'),draftComponents:rec(dir+'/literal-draft-components.json'),latestParts:[...latest].map(([name,p])=>({name,callId:p.callId,ordinal:p.ordinal,sha256:p.sha256})),output:rec(p.outputPath),compiler:rec('.assessment-cache/compile-publication-parts.mjs'),validation,controllerAuthoredProse:false,submittedOutputs:1,preWriteSelfChecksAreNotReplacementAttempts:true,judgmentChanges:0,scoreChanges:0,directIncrementalCostUsd:0});
+}
+console.log(JSON.stringify({status:flags.includes('--freeze')?'first-publication-submission-frozen':'complete-unsaved-draft-check-passed',validation,parts:latest.size,cardCount:seen.length},null,2));

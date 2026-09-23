@@ -1,0 +1,63 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {validateStandaloneInventory} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const n=process.argv[2]; assert.match(n,/^\d{3}$/);
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const registry=read('docs/assessment-production/standalone-debates-v1/registry.json');
+const record=registry.debates.find(x=>x.debateNumber===n);assert.ok(record);
+const root=record.root, hash=b=>createHash('sha256').update(b).digest('hex');
+const rec=p=>{const b=fs.readFileSync(p);return {path:p,sha256:hash(b),bytes:b.length};};
+const write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+const pre=read(root+'/inventory/pre-audio-inventory.json');assert.equal(pre.debateId,record.debateId);
+const inv=structuredClone(pre), plan=read(root+'/audio/plan.json');
+assert.equal(plan.videoId,record.videoId);assert.equal(plan.inventoryCandidate.sha256,rec(root+'/inventory/pre-audio-inventory.json').sha256);
+const session=read(root+'/inventory/pre-audio-mechanical-review.json').sessionSnapshot.path;
+const sessionBytes=fs.readFileSync(session), rows=sessionBytes.toString().trim().split('\n').map(JSON.parse);
+const parts=[]; const sourceReads=[];
+for(const row of rows) for(const b of row.payload?.type==='custom_tool_call_output'?row.payload.output:[]){
+ const text=b.text||'';
+ try{const j=JSON.parse(text);if(j.draftPart)parts.push({ordinal:row.ordinal,callId:row.payload.call_id,...j});}catch{}
+ const found=[...text.matchAll(/^\[(\d{4})\] \d+-\d+ms /gm)].map(x=>Number(x[1]));
+ if(found.length&&!/truncated/i.test(text))sourceReads.push({ordinal:row.ordinal,callId:row.payload.call_id,firstEvent:found[0],lastEvent:found.at(-1),events:found.length,eventIds:found});
+}
+const contexts=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));
+assert.ok(contexts.length&&contexts.every(x=>x.model==='gpt-5.6-sol'&&x.reasoningEffort==='low'));
+const correctionNames=['audio-clip-04-attribution-correction','audio-clip-04-audit-preservation-followup'];
+const corrections=correctionNames.map(name=>{const p=parts.findLast(x=>x.draftPart===name);assert.ok(p,name);return p;});
+for(const p of corrections){const id=p.value.moveId,i=inv.moves.findIndex(m=>m.moveId===id);assert.ok(i>=0);Object.assign(inv.moves[i],structuredClone(p.value));}
+const events=read('.assessment-cache/captions/'+record.videoId+'/events.json');
+for(const m of inv.moves){const s=m.sourceSpan;assert.equal(s.excerpt,events.slice(s.startEvent,s.endEvent+1).map(e=>e.text.replace(/\s+/g,' ').trim()).join(' ').replace(/\s+/g,' ').trim());}
+const seen=new Set(sourceReads.flatMap(r=>r.eventIds));assert.equal(seen.size,events.length);assert.ok(events.every((e,i)=>seen.has(i)));
+const validation=validateStandaloneInventory(inv,events);assert.deepEqual(validation.belowHighAttributionMoveIds,plan.selectedMoveIds);
+assert.deepEqual(inv.moves.map(m=>m.moveId),pre.moves.map(m=>m.moveId));
+assert.deepEqual(inv.sections,pre.sections);assert.deepEqual(inv.routes,pre.routes);
+assert.equal(inv.motion,read(root+'/authorization.json').identity.motion);
+const reviews=[1,2,3].flatMap(i=>read(root+'/audio/controller-notes-part-'+i+'.json').reviews);
+assert.deepEqual(reviews.map(x=>x.clipId),plan.clips.map(x=>x.clipId));
+let known=0;const verifiedClips=plan.clips.map(c=>{
+ const response=rec(root+'/audio/responses/'+c.clipId+'.json');
+ const cp=root+'/audio/responses/'+c.clipId+'.completion.json',completion=read(cp),attempt=read(root+'/audio/responses/'+c.clipId+'.attempt.json');
+ assert.equal(completion.status,'succeeded-no-retry');assert.equal(completion.responseSha256,response.sha256);assert.equal(attempt.inputSha256,c.sha256);assert.equal(attempt.attempt,1);assert.equal(attempt.retries,0);
+ known+=completion.callCostEstimateUsd;
+ const note=reviews.find(x=>x.clipId===c.clipId);assert.equal(note.materialMeaningResolved,true);
+ return {clipId:c.clipId,startMs:c.startMs,endMs:c.endMs,moveIds:c.moveIds,response,completion:rec(cp),controllerNote:note.resolution};
+});
+assert.ok(known<=plan.pricing.standingCapUsd);
+const finalPath=root+'/inventory/inventory.json';
+for(const suffix of ['/inventory/inventory.json','/inventory/first-freeze-audit.json','/inventory/reading-audit.json','/inventory/session-authentication.json','/audio/audio-verification.json','/audio/score-blind-supplement.json'])assert.equal(fs.existsSync(root+suffix),false,suffix+' already exists');
+write(root+'/inventory/audio-correction-draft-parts.json',corrections);
+write(finalPath,inv);
+const inventory=rec(finalPath);
+const checks=plan.selectedMoveIds.map(moveId=>{
+ const m=inv.moves.find(x=>x.moveId===moveId);const clips=verifiedClips.filter(c=>c.moveIds.includes(moveId));assert.ok(clips.length);
+ return {moveId,sourceEventRange:[m.sourceSpan.startEvent,m.sourceSpan.endEvent],speaker:m.speaker,retainedAttributionConfidence:m.attributionConfidence,method:'Controller-reviewed audio-derived transcription with known-speaker references and complete local question-answer context; no direct listening claimed.',resolution:{moveId,resolution:clips.map(c=>c.controllerNote).join(' '),materialMeaningResolved:true,retainedQuotationOwnershipResolved:true},verificationClips:clips,sourceAndInventoryUnchanged:moveId!==corrections[0].value.moveId,correctionBeforeFirstInventoryFreeze:moveId===corrections[0].value.moveId};
+});
+const audio={schemaVersion:'1.0-standalone-audio-verification',protocolId:'assessment-production-standalone-debate-v1',status:'complete',debateNumber:n,debateId:record.debateId,videoId:record.videoId,inventory,plan:rec(root+'/audio/plan.json'),triggeredMoveIds:plan.selectedMoveIds,checks,cost:{knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostUsd:known,maximumPossibleTotalCostEstimateUsd:known,directCostUsd:known,uncertainPaidAttempts:0,successfulCalls:plan.clips.length,retries:0,billingDashboardConfirmed:false,basis:'Response token usage at frozen official model rates; no transport-uncertain calls. Actual billing dashboard has not been independently reconciled.',frozenEstimateUsd:plan.pricing.estimatedCompleteDebatePaidWorkUsd,capUsd:plan.pricing.standingCapUsd},audit:{requiredAttributionChecks:checks.length,completedAttributionChecks:checks.length,unresolvedAttributionChecks:0,paidCallAttempts:plan.clips.length,paidRetries:0,sourceCaptionBytesUnchanged:true,finalInventoryFrozenAfterAudio:true,directListeningPerformed:false}};
+write(root+'/audio/audio-verification.json',audio);
+write(root+'/audio/score-blind-supplement.json',{schemaVersion:'1.0-score-blind-audio-source-supplement',debateNumber:n,debateId:record.debateId,inventory,sourceVerification:rec(root+'/audio/audio-verification.json'),method:'Independent audio-derived transcript checks, not direct human listening. Raw captions remain unchanged; use the following source clarifications when reading them. No numerical assessment, winner, tags, or publication prose is included.',clarifications:checks.map(c=>({moveId:c.moveId,speaker:c.speaker,sourceEventRange:c.sourceEventRange,resolution:c.resolution.resolution})),frozenBeforePrimaryJudgments:true});
+const reading=parts.findLast(p=>p.draftPart==='reading-audit').value;
+write(root+'/inventory/reading-audit.json',{...reading,controllerSupplement:{preAudioReadingAudit:rec(root+'/inventory/pre-submission-reading-audit.json'),additionalAuthorizedWorkerInputs:[rec(root+'/audio/plan.json'),rec(root+'/audio/responses/clip-04.json')],audioCorrectionDraftParts:rec(root+'/inventory/audio-correction-draft-parts.json'),audioVerification:rec(root+'/audio/audio-verification.json'),workerReadAudioTranscriptionNotListened:true,sourceCorrectionOccurredBeforeFirstInventoryFreeze:true}});
+write(root+'/inventory/session-authentication.json',{schemaVersion:'1.0-inventory-session-authentication',status:'authenticated-complete-source-and-first-inventory',debateNumber:n,debateId:record.debateId,session:{path:session,sha256:hash(sessionBytes),bytes:sessionBytes.length,kind:'prefix-snapshot-before-agent-final-message'},agentPath:'/root/inventory_'+n,actualContextModels:contexts,expectedEvents:events.length,authenticatedEvents:seen.size,missingEvents:[],completeUntruncatedSourceReadBeforeSubmission:true,sourceReadEvidence:sourceReads.map(({eventIds,...rest})=>rest),isolation:'Fresh built-in context; protocol-limited input access, not operating-system filesystem isolation.',originalPlan:rec(root+'/inventory/execution-plan.json'),sameFirstDraftContext:true,corrections:rec(root+'/inventory/audio-correction-draft-parts.json'),output:inventory,directIncrementalCostUsd:0});
+write(root+'/inventory/first-freeze-audit.json',{schemaVersion:'1.0-source-verified-first-inventory-freeze',status:'passed',debateNumber:n,createdAt:new Date().toISOString(),preservedPreAudioInventory:rec(root+'/inventory/pre-audio-inventory.json'),output:inventory,validation,changedMoveIds:[corrections[0].value.moveId],changedMoveRationale:'Independent original-audio transcription corrects ownership of a question-answer exchange before any primary rating. The same inventory worker supplied both literal correction parts. No move added, removed, reassigned by side or section, reweighted or scored.',unchangedSectionWeights:true,unchangedMoveOrder:true,unchangedBurdenMap:true,unchangedSideCounts:true,unchangedSourceCaptions:true,modelAuthoredRatings:0,modelAuthoredTotals:0,primaryJudgmentsExecutedBeforeFreeze:0,mechanicalOnlyCompilation:true,audio:rec(root+'/audio/audio-verification.json'),directIncrementalCostUsd:0});
+console.log(JSON.stringify({status:'frozen',validation,inventory,cost:audio.cost},null,2));
