@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0-independent-rhetorical-review-execution",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "isolation": {
+    "existingTagsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true,
+    "scoresUnavailable": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/catalog-snapshot.json",
+    "sha256": "f1156bfc6faa312a15fdbed3895cf6baaf86499213f2d923a4d824baa5d3bd95",
+    "bytes": 5059
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "df8427d3815edba0ce8ec29fc177959aa95b8863c39e61e5916199298e6f6d73",
+    "bytes": 126804
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "df8427d3815edba0ce8ec29fc177959aa95b8863c39e61e5916199298e6f6d73",
+        "bytes": 126804
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/pass-a/output.json",
+        "sha256": "3cbebae8c5aca32283fa4e30b596a75007f933fcf80a51818c0b0602d36fbf7b",
+        "bytes": 45943
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/pass-a/execution.json",
+        "sha256": "02f62d184e04802520651c25b54822fb1de21d708daafa8ed0f07cc8745bae2c",
+        "bytes": 2364
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "df8427d3815edba0ce8ec29fc177959aa95b8863c39e61e5916199298e6f6d73",
+        "bytes": 126804
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/pass-b/output.json",
+        "sha256": "ab4790cf400c35e616b93668432e0a541859be7b8b34ef0e1b425908a39c6409",
+        "bytes": 44234
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/pass-b/execution.json",
+        "sha256": "6564821a9c6069572b2f576269854d1fc8310ce7ac2443087af3de80bd062a39",
+        "bytes": 2364
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/adjudication/input.json",
+        "sha256": "2ac68873d7cf67911e746a97fd680271b5ad62755e01cba569c67f33372191e9",
+        "bytes": 155779
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/adjudication/output.json",
+        "sha256": "608dc6bf75fc18a7c010031287201d9b11cb1ecf280eeb2267d5f2ab200c0375",
+        "bytes": 23932
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/adjudication/execution.json",
+        "sha256": "a85eb5fa82271fd4ee99535bdb2ccfe8ebace66d5210d4565e832155e5cb1c7c",
+        "bytes": 2417
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "controllerDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-265/publication/rhetorical-tag-review-1/controller-definition-check.json",
+    "sha256": "8f50ac8465f1f875fcdd4c057eb1b4e5af869ab66b76571def0e9f8ab1ef5ba9",
+    "bytes": 8037
+  },
+  "audit": {
+    "blindReviews": 2,
+    "anonymousAdjudicators": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "controllerOverrides": 2
+  }
+}

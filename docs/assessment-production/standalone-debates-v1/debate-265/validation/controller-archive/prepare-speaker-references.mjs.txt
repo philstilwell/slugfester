@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+const root='docs/assessment-production/standalone-debates-v1/debate-265';
+const a=JSON.parse(fs.readFileSync(root+'/authorization.json','utf8'));
+assert.equal(a.identity.videoId,'Ui9C6N4HFvY');
+const base='.assessment-cache/captions/'+a.identity.videoId;
+const dir=base+'/verification/references';fs.mkdirSync(dir,{recursive:true});
+const refs=[
+ {speaker:a.identity.con.speaker,startMs:80000,endMs:88000,basis:'Uninterrupted opening after the host names Dan and hands him the first presentation.'},
+ {speaker:a.identity.pro.speaker,startMs:705000,endMs:713000,basis:'Uninterrupted second opening; Miles identifies himself at 11:29–11:36, immediately before this reference.'},
+ {speaker:a.identity.moderator,startMs:6000,endMs:14000,basis:'Continuous host introduction before either primary speaker takes an argumentative turn.'}
+];
+for(const [i,r]of refs.entries()){
+ const p=dir+'/speaker-'+(i+1)+'.mp3';
+ execFileSync('/opt/homebrew/bin/ffmpeg',['-nostdin','-n','-hide_banner','-loglevel','error','-ss',String(r.startMs/1000),'-i',base+'/original-audio.webm','-t',String((r.endMs-r.startMs)/1000),'-vn','-ac','1','-ar','16000','-b:a','64k',p]);
+ const b=fs.readFileSync(p);r.file={path:p,sha256:createHash('sha256').update(b).digest('hex'),bytes:b.length};
+}
+const out={schemaVersion:'1.0-frozen-speaker-reference-inputs',debateNumber:a.identity.debateNumber,videoId:a.identity.videoId,method:'Lossy clips of the existing original English source audio; original timestamps retained. No audio synthesis or local voice generation.',directCostUsd:0,knownSpeakerReferences:refs};
+fs.mkdirSync(root+'/audio',{recursive:true});
+fs.writeFileSync(root+'/audio/speaker-references.json',JSON.stringify(out,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify(out,null,2));

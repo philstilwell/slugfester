@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-frozen-isolated-primary-instructions",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/judgment-packet.json",
+      "sha256": "d09f3b6cc6d7e0f5ff434f900abf116092b3106cb1fa1dfcd4ce1691273a6785",
+      "bytes": 4935
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/inventory/inventory.json",
+      "sha256": "24a6e4b206ad12edd54e90d7241c088b24b3a8a0a30b9cd92e943decd53ce39f",
+      "bytes": 127349
+    },
+    {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/indexed-transcript.txt",
+      "sha256": "b8654b07c7198cbf2dbd971998753edd0cdc318a9b17470266eddda4d013f323",
+      "bytes": 186387
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/audio/score-blind-supplement.json",
+      "sha256": "87ad96b1257418b84f034e9917d82c0c5de92bcd7c769065d2e0e26bc8821ad9",
+      "bytes": 10870
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 620,
+          "end": 804
+        }
+      ]
+    }
+  ],
+  "fullSourceEventCount": 3040,
+  "inventoryMoveCount": 32,
+  "requirements": [
+    "Read every listed allowed input completely, except the validator restricted to the declared lines. Read the entire indexed transcript in chunks of at most 380 lines. Read the entire inventory in nontruncated chunks. Do not replace literal reading with keyword extraction or a script that silently reads bytes. Send a reading checkpoint to the parent and wait for authenticated release before rating.",
+    "Fresh isolated first primary assessment. Do not access other passes, other debates, existing assessments, calculated scores, winners, publication prose, Git history, biographies, Internet research, user configuration, credentials, or paid model APIs. Use environment-cleared shell commands (env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY). No new subagents.",
+    "Rate every locked move exactly once in inventory order across all six dimensions. Author each value and rationale independently from the source and rubric. Rationales must be dimension-specific and source-specific; do not reuse one generic reason for all six dimensions or generate scores from a formula or template.",
+    "Assess the actual live argument, including concessions and replies elsewhere in the complete source, without importing new premises. Do not penalize automatic-caption corruption as the speaker's error. The frozen score-blind audio supplement resolves flagged attribution and wording; apply it to interpretation without editing the raw captions or inventing audio quotations. Do not claim to have listened to audio. The supplement contains no ratings, scores, winner or evaluative recommendations.",
+    "The neutral motion is byte-locked. Do not convert strong comparative evidence into proof or an overall posterior above one half. A critical side need not establish a positive naturalistic model. Conversely do not excuse a failed inference solely because it is critical.",
+    "Do not alter the inventory, source, burden map, weights, importance, links or section membership. Do not calculate or author move, section, overall totals, winning side or fallacy/bias tags. Every six-dimension object has exact keys and each rationale is at least forty characters.",
+    "Evaluate both burden-completion adjustments independently. Use exact nine-field eligibility object in the validator. A nonzero adjustment requires a distinct debate-wide consequence not already captured in any scored move; duplicate capture requires zero. Do not use the adjustment as an overall-impression bonus or penalty.",
+    "One first submission only, no automatic retries, replacements or substance repairs. Build the literal result carefully and self-check schema and move order before writing. Do not call the calculator while checking. Use apply_patch for local file edits. You may retain unsaved draft components across tool calls, but no filesystem output except the single declared output and reading-audit paths. Do not stop because of an invented deadline; the work can continue across context compaction.",
+    "After first output write, report the path and stop. The controller authenticates actual model, allowed-input reads, output hash and substantive rationale coverage. No second write over a rejected output without an explicit bounded recovery packet."
+  ],
+  "directIncrementalCostUsd": 0,
+  "attempts": 1,
+  "retries": 0,
+  "pass": "pass-b",
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-b/output.json",
+  "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-b/reading-audit.json"
+}

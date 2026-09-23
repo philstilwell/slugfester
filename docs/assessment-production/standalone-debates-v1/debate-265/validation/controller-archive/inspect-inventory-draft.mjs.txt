@@ -1,0 +1,30 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const session='/Users/philstilwell/.codex/sessions/2026/09/23/rollout-2026-09-23T14-25-57-01a0cf84-6b22-7f33-830e-dc073d92168a.jsonl';
+const raw=fs.readFileSync(session);
+const rows=raw.toString().trim().split('\n').map(JSON.parse);
+const drafts=[];
+const sourceIds=new Set();
+for(const r of rows)for(const block of r.payload?.type==='custom_tool_call_output'?r.payload.output:[]){
+  const text=block.text||'';
+  for(const m of text.matchAll(/\[(\d{4})\] /g))sourceIds.add(Number(m[1]));
+  try{const j=JSON.parse(text);if(j.draftPart)drafts.push({ordinal:r.ordinal,callId:r.payload.call_id,...j});}catch{}
+}
+const latest=new Map(drafts.map(d=>[d.draftPart,d]));
+const header=latest.get('header')?.value;
+const moves=[...latest.values()].filter(x=>/^moves-\d+$/.test(x.draftPart)).sort((a,b)=>a.draftPart.localeCompare(b.draftPart)).flatMap(x=>x.value);
+const events=JSON.parse(fs.readFileSync('.assessment-cache/captions/Ui9C6N4HFvY/events.json','utf8'));
+const mechanical=moves.map(m=>{
+  const s=m.sourceSpan;
+  const exact=events.slice(s.startEvent,s.endEvent+1).map(e=>e.text.replace(/\s+/g,' ').trim()).join(' ').replace(/\s+/g,' ').trim();
+  return {moveId:m.moveId,side:m.side,section:m.sectionId,sourceExact:exact===s.excerpt,endpointsMatch:s.startMs===events[s.startEvent].startMs&&s.endMs===events[s.endEvent].startMs+events[s.endEvent].durationMs,quoteExact:m.quoteEligibleExactSpans.every(q=>s.excerpt.includes(q)),excerptCharacters:s.excerpt.length,excerptWords:s.excerpt.split(/\s+/).length,attributionConfidence:m.attributionConfidence};
+});
+const result={draftParts:drafts.map(x=>({part:x.draftPart,ordinal:x.ordinal,callId:x.callId})),assembledMoves:moves.length,sourceEventCoverage:{expected:events.length,readDistinct:sourceIds.size,missing:events.map((_,i)=>i).filter(i=>!sourceIds.has(i))},models:rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,effort:r.payload.effort})),mechanical,session:{path:session,sha256:createHash('sha256').update(raw).digest('hex'),bytes:raw.length},complete:false};
+if(process.argv.includes('--preserve-draft')){
+  const root='docs/assessment-production/standalone-debates-v1/debate-265/inventory';
+  assert.equal(header.debateNumber,'265');
+  fs.writeFileSync(root+'/pre-submission-draft.json',JSON.stringify({...header,moves},null,2)+'\n',{flag:'wx'});
+  fs.writeFileSync(root+'/pre-submission-mechanical-review.json',JSON.stringify(result,null,2)+'\n',{flag:'wx'});
+}
+console.log(JSON.stringify(result,null,2));

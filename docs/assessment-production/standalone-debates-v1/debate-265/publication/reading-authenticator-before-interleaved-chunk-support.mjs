@@ -1,0 +1,13 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+const [planPath,agentPath,session,outputPath,...flags]=process.argv.slice(2);
+const hash=b=>createHash('sha256').update(b).digest('hex'),p=JSON.parse(fs.readFileSync(planPath));
+const raw=fs.readFileSync(session),rows=raw.toString().trim().split('\n').map(JSON.parse),meta=rows.find(r=>r.type==='session_meta').payload;assert.equal(meta.agent_path,agentPath);
+const model=p.model.slug||p.model.model,effort=p.model.reasoningEffort;
+const contexts=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));assert.ok(contexts.length&&contexts.every(x=>x.model===model&&x.reasoningEffort===effort));
+const outputs=[];for(const row of rows)for(const b of row.payload?.type==='custom_tool_call_output'?row.payload.output:[]){let t=b.text||'';try{const j=JSON.parse(t);if(typeof j.output==='string')t=j.output;}catch{}if(!t||/^Script completed\nWall time/.test(t))continue;outputs.push({ordinal:row.ordinal,callId:row.payload.call_id,text:t,sha256:hash(t),characters:t.length,truncated:/Warning: truncated output|tokens truncated|output truncated/i.test(t)});}
+const combined=outputs.filter(x=>!x.truncated).map(x=>x.text).join('');
+const inputs=p.allowedInputs.map(rec=>{const b=fs.readFileSync(rec.path);assert.equal(hash(b),rec.sha256);let expected=b.toString();if(rec.allowedLines)expected=rec.allowedLines.map(x=>expected.split('\n').slice(x.start-1,x.end).join('\n')+'\n').join('');return {...rec,literalCompleteReadAuthenticated:combined.includes(expected),expectedCharacters:expected.length};});
+assert.ok(inputs.every(x=>x.literalCompleteReadAuthenticated),'Missing complete literal input: '+inputs.filter(x=>!x.literalCompleteReadAuthenticated).map(x=>x.path).join(', '));
+const audit={schemaVersion:'1.0-isolated-phase-reading-release',status:'authenticated-and-released-for-first-submission',debateNumber:p.debateNumber,debateId:p.debateId,createdAt:new Date().toISOString(),agentPath,plan:{path:planPath,sha256:hash(fs.readFileSync(planPath))},session:{path:session,sha256:hash(raw),bytes:raw.length,kind:'pre-submission-prefix-snapshot'},actualContextModels:contexts,inputs,outputReadEvidence:outputs.map(({text,...rest})=>rest),outputExistedAtRelease:fs.existsSync(p.outputPath),directIncrementalCostUsd:0};assert.equal(audit.outputExistedAtRelease,false);
+if(flags.includes('--freeze'))fs.writeFileSync(outputPath,JSON.stringify(audit,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:audit.status,agentPath,completeInputs:inputs.length,actualContextModels:contexts,frozen:flags.includes('--freeze')},null,2));

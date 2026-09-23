@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {pipeline} from 'node:stream/promises';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const a=process.argv.slice(2),n=a[a.indexOf('--debate')+1];assert.match(n,/^\d{3,}$/);
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json'));
+const rec=registry.debates.find(x=>x.debateNumber===n);assert(rec);
+const out=`.assessment-cache/captions/${rec.videoId}/original-audio.m4a`;
+assert(!fs.existsSync(out));
+const watch=await(await fetch(`https://www.youtube.com/watch?v=${rec.videoId}`,{signal:AbortSignal.timeout(30000)})).text();
+const key=watch.match(/"INNERTUBE_API_KEY":"([^"]+)"/)?.[1];assert(key);
+const player=await(await fetch(`https://www.youtube.com/youtubei/v1/player?key=${key}`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({context:{client:{clientName:'ANDROID',clientVersion:'20.10.38',androidSdkVersion:30,hl:'en',gl:'US'}},videoId:rec.videoId}),signal:AbortSignal.timeout(30000)})).json();
+const f=player.streamingData?.adaptiveFormats?.find(x=>x.itag===140&&x.audioTrack?.id==='en-US.4'&&x.audioTrack.audioIsDefault&&!x.audioTrack.isAutoDubbed&&x.url);assert(f,'Original English audio unavailable');
+const response=await fetch(f.url,{signal:AbortSignal.timeout(120000)});
+assert(response.ok,`Audio fetch returned HTTP ${response.status}`);
+await pipeline(response.body,fs.createWriteStream(out,{flags:'wx'}));
+const record={videoId:rec.videoId,canonicalUrl:`https://www.youtube.com/watch?v=${rec.videoId}`,acquisition:'YouTube public Android player original English audio',format:{itag:f.itag,mimeType:f.mimeType,audioTrack:f.audioTrack,approxDurationMs:f.approxDurationMs},retrievedAt:new Date().toISOString(),file:fileRecord(out),directCostUsd:0};
+fs.writeFileSync(`${out}.provenance.json`,JSON.stringify(record,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(record,null,2));

@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const n=process.argv[2];assert.equal(n,'265');
+const r=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json')).debates.find(x=>x.debateNumber===n);assert.equal(r.videoId,'Ui9C6N4HFvY');
+const allowed=`acquire-current-audio.mjs apply-rhetorical-review.mjs assemble-inventory-draft.mjs authenticate-phase-reading.mjs authenticate-primary-reading.mjs check-publication-draft.mjs check-rhetorical-draft.mjs compile-publication-parts.mjs compile-rhetorical-adjudication.mjs finalize-production-record.mjs freeze-definition-review.mjs freeze-metadata-correction.mjs freeze-original-audio.mjs freeze-phase-execution.mjs freeze-primary-execution.mjs freeze-prose-audits.mjs freeze-rendering.mjs freeze-rhetorical-execution.mjs freeze-source-reviewed-inventory.mjs inspect-inventory-draft.mjs measure-publication-style.mjs prepare-adjudication-context.mjs prepare-audio-plan.mjs prepare-new-source.mjs prepare-primary-execution.mjs prepare-publication-context.mjs prepare-rhetorical-adjudication.mjs prepare-rhetorical-contexts.mjs prepare-speaker-references.mjs restore-historical-test-inputs.mjs run-audio-plan.mjs run-validation-command.mjs stage-frozen-publication.mjs transcribe-one-clip.py archive-task-controllers.mjs`.split(' ');
+const actual=fs.readdirSync('.assessment-cache',{withFileTypes:true}).filter(x=>x.isFile()).map(x=>x.name).sort();assert.deepEqual(actual,[...allowed].sort());
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const archive=r.root+'/validation/controller-archive';fs.mkdirSync(archive,{recursive:true});
+const archived=allowed.map(name=>{const p='.assessment-cache/'+name,b=fs.readFileSync(p),target=archive+'/'+name+'.txt';assert(!fs.existsSync(target));fs.copyFileSync(p,target,fs.constants.COPYFILE_EXCL);assert.equal(hash(fs.readFileSync(target)),hash(b));return{originalPath:p,path:target,sha256:hash(b),bytes:b.length};});
+const duplicates=[];
+const preview='output/playwright/debate-'+n;
+for(const name of fs.readdirSync(preview)){
+ assert(/^[a-z-]+\.png$/.test(name));const p=preview+'/'+name,durable=r.root+'/rendering/browser-evidence/'+name;assert(fs.existsSync(durable));assert.equal(hash(fs.readFileSync(p)),hash(fs.readFileSync(durable)));duplicates.push({path:p,durablePath:durable,sha256:hash(fs.readFileSync(p))});
+}
+assert.equal(spawnSync('lsof',['-nP','-iTCP:4265','-sTCP:LISTEN']).status,1);
+for(const item of archived)fs.unlinkSync(item.originalPath);
+for(const item of duplicates)fs.unlinkSync(item.path);
+fs.rmdirSync(preview);
+fs.writeFileSync(r.root+'/validation/cleanup.json',JSON.stringify({status:'complete',debateNumber:n,completedAt:new Date().toISOString(),archivedControllers:archived,removedDuplicateScreenshots:duplicates,sourceCacheRetained:true,originalCheckoutChanged:false,temporaryPreviewBrowsersRemaining:0,temporaryPreviewServersRemaining:0,note:'Only explicitly enumerated task-owned controller files and hash-matched preview duplicates were removed. Their exact bytes are recoverable from this archive and the rendering evidence.'},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'complete',archivedControllers:archived.length,removedDuplicateScreenshots:duplicates.length}));
