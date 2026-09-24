@@ -915,6 +915,11 @@ export const interlocutorAvatars = [
     name: "Daniel Linford",
     src: `${avatarBasePath}/daniel-linford.webp`,
     aliases: ["Daniel Linford", "Dan Linford"]
+  },
+  {
+    name: "Blake Giunta",
+    src: `${avatarBasePath}/blake-giunta.webp`,
+    aliases: ["Blake Giunta"]
   }
 ];
 
