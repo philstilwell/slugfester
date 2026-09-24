@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const n=process.argv[2];assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(r);
+const root=r.root,a=read(root+'/authorization.json'),inv=read(root+'/inventory/pre-audio-inventory.json'),scopeAudio=read(root+'/source/scope-audio-evidence.json'),cost=read(root+'/source/scope-audio-cost-reconciliation.json');
+assert.equal(inv.debateId,r.debateId);assert.equal(scopeAudio.videoId,r.videoId);
+const media=scopeAudio.mediaManifest.source,refs=scopeAudio.mediaManifest.references;
+assert.equal(fileRecord(media.path).sha256,media.sha256);
+const moves=inv.moves.filter(m=>m.attributionConfidence!=='high'),window=a.identity.primarySpeakerScopeException.assessedWindow,exclusions=a.identity.primarySpeakerScopeException.excludedIntervals;
+const ranges=moves.map(m=>{
+ let startMs=Math.max(window.startMs,m.sourceSpan.startMs-4000),endMs=Math.min(window.endMs,m.sourceSpan.endMs+4000);
+ for(const x of exclusions){if(x.endMs<=m.sourceSpan.startMs)startMs=Math.max(startMs,x.endMs);if(x.startMs>=m.sourceSpan.endMs)endMs=Math.min(endMs,x.startMs);}
+ return{startMs,endMs,moveIds:[m.moveId]};
+});
+const merged=[];for(const x of ranges){const p=merged.at(-1);if(p&&x.startMs<=p.endMs+10000&&!exclusions.some(e=>p.startMs<e.endMs&&x.endMs>e.startMs)){p.endMs=Math.max(p.endMs,x.endMs);p.moveIds.push(...x.moveIds);}else merged.push({...x});}
+const clips=[];for(const x of merged){let start=x.startMs;while(start<x.endMs){const end=Math.min(x.endMs,start+150000);clips.push({startMs:start,endMs:end,durationSeconds:(end-start)/1000,moveIds:x.moveIds.filter(id=>{const m=moves.find(m=>m.moveId===id);return m.sourceSpan.startMs<end&&m.sourceSpan.endMs>start;})});if(end===x.endMs)break;start=end-2000;}}
+const seconds=clips.reduce((n,c)=>n+c.durationSeconds,0),referenceSeconds=refs.reduce((n,x)=>n+x.measuredDurationSeconds,0)*clips.length;
+const perSecond=.00055,estimatedComplete=cost.knownSuccessfulCallCostUsd+(seconds+referenceSeconds)*perSecond;
+assert(estimatedComplete<=1,'Required verification exceeds remaining authorized cost allowance; do not create or call a paid plan.');
+const dir='.assessment-cache/captions/'+r.videoId+'/verification/clips';fs.mkdirSync(dir,{recursive:true});
+for(const [i,c]of clips.entries()){c.clipId='clip-'+String(i+1).padStart(2,'0');const p=dir+'/'+c.clipId+'.wav';execFileSync('/opt/homebrew/bin/ffmpeg',['-nostdin','-n','-hide_banner','-loglevel','error','-ss',String(c.startMs/1000),'-i',media.path,'-t',String(c.durationSeconds),'-vn','-ac','1','-ar','16000',p]);Object.assign(c,fileRecord(p));c.reservedCallEstimateUsd=(c.durationSeconds+refs.reduce((n,x)=>n+x.measuredDurationSeconds,0))*perSecond;}
+const plan={schemaVersion:'1.0-frozen-bounded-audio-verification-plan',status:'frozen-before-paid-verification',createdAt:new Date().toISOString(),debateNumber:n,debateId:r.debateId,videoId:r.videoId,inventoryCandidate:fileRecord(root+'/inventory/pre-audio-inventory.json'),sourceMedia:media,sourceOriginalAudio:true,sourceLanguage:'en',purpose:'Resolve every material below-high source wording or attribution concern before judgments; no excluded branch becomes scoring evidence.',selectedMoveIds:moves.map(m=>m.moveId),model:'gpt-4o-transcribe-diarize',responseFormat:'diarized_json',chunkingStrategy:'auto',prompt:null,knownSpeakerReferences:refs.map(x=>({speaker:x.name,file:x.file,durationSeconds:x.measuredDurationSeconds})),clips,pricing:{verifiedDate:new Date().toISOString().slice(0,10),modelSource:'https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize',inputUsdPerMillionTokens:2.5,outputUsdPerMillionTokens:10,ordinaryTranscriptionEstimatedUsdPerMinute:.006,verificationAudioSeconds:seconds,referenceAudioSeconds:referenceSeconds,conservativePlanningRateUsdPerMinute:perSecond*60,conservativeRateReason:'Observed scope verification costs were approximately $0.022 per minute; reserve $0.033 per minute including repeated reference audio, then reconcile every response token count. This is a planning estimate, not an invoice or an absolute billing guarantee.',estimatedCompleteDebatePaidWorkUsd:estimatedComplete,knownCostBeforeCallsUsd:cost.knownSuccessfulCallCostUsd,maximumPossibleCostBeforeCallsUsd:cost.maximumPossiblePaidCostUsd,standingCapUsd:1,billingConfirmed:false},attemptsPerClip:1,retries:0,maximumClipSeconds:150,clipSplitOverlapSeconds:2,timeoutSeconds:180,executionOutputRoot:root+'/audio/responses',transcribeSkill:'/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py',directListeningPerformed:false};
+fs.mkdirSync(root+'/audio',{recursive:true});fs.writeFileSync(root+'/audio/plan.json',JSON.stringify(plan,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({clips:clips.length,checks:moves.length,seconds,referenceSeconds,alreadyIncurred:cost.knownSuccessfulCallCostUsd,revisedCompleteDebateEstimateUsd:estimatedComplete,plan:fileRecord(root+'/audio/plan.json')},null,2));

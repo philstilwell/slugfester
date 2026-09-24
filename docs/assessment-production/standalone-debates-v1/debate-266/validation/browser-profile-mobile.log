@@ -1,0 +1,6 @@
+### Result
+{"status":"passed","biography":{"x":10,"y":506.671875,"width":370,"height":337.59375},"graph":{"x":10,"y":860.265625,"width":370,"height":216.21875},"viewport":{"width":390,"height":844}}
+### Ran Playwright code
+```js
+await (async(page)=>{const b=page.getByRole("region",{name:"About Blake Giunta",exact:true}),g=page.getByRole("figure",{name:"Bar height shows the number of published scorecards in each range.",exact:true});await b.scrollIntoViewIfNeeded();const bb=await b.boundingBox(),gb=await g.boundingBox();if(!(bb.y+bb.height<=gb.y+1))throw Error("Biography must precede graph vertically");if(!await page.getByRole("link",{name:/Matt Dillahunty vs Blake Giunta/}).count())throw Error("Missing debate");await page.screenshot({path:"output/playwright/debate-266/mobile-profile.png"});return {status:"passed",biography:bb,graph:gb,viewport:page.viewportSize()}})(page);
+```

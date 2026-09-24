@@ -1,0 +1,5 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';
+const [n,id]=process.argv.slice(2);assert.match(n,/^\d{3}$/);assert.match(id,/^\d{2}$/);
+const r=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json')).debates.find(r=>r.debateNumber===n);assert(r);const dir=r.root+'/publication/critique-editorial-repair-1/shard-'+id,agent='/root/critique_'+n+'_'+id;
+const day='/Users/philstilwell/.codex/sessions/'+new Date().toISOString().slice(0,10).replaceAll('-','/');const sessions=fs.readdirSync(day).filter(f=>f.endsWith('.jsonl')).map(f=>day+'/'+f).filter(f=>{try{return JSON.parse(fs.readFileSync(f,'utf8').split('\n')[0]).payload.agent_path===agent;}catch{return false;}});assert.equal(sessions.length,1);
+const p=spawnSync(process.execPath,['.assessment-cache/authenticate-current-reading.mjs',dir+'/execution-plan.json',agent,sessions[0],dir+'/reading-release.json','--freeze'],{encoding:'utf8'});process.stdout.write(p.stdout);process.stderr.write(p.stderr);process.exit(p.status);

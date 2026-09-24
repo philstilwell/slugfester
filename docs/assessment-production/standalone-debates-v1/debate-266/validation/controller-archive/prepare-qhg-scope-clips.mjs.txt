@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const planPath='.assessment-cache/qhg-scope-audio-plan.json', plan=JSON.parse(fs.readFileSync(planPath));
+const source=`.assessment-cache/captions/${plan.videoId}/source-recovery.m4a`;
+const record=p=>{const b=fs.readFileSync(p);return{path:p,bytes:b.length,sha256:createHash('sha256').update(b).digest('hex')};};
+const duration=p=>Number(execFileSync('ffprobe',['-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',p],{encoding:'utf8'}).trim());
+const sourceSeconds=duration(source);assert(Math.abs(sourceSeconds-8939)<3);
+const info=JSON.parse(fs.readFileSync(`.assessment-cache/captions/${plan.videoId}/source-recovery.info.json`));assert.equal(info.id,plan.videoId);
+fs.mkdirSync(plan.outputRoot,{recursive:true});
+const render=(item,sub)=>{const p=`${plan.outputRoot}/${sub}/${item.id??item.name.toLowerCase().replaceAll(' ','-')}.wav`;assert(!fs.existsSync(p));fs.mkdirSync(path.dirname(p),{recursive:true});execFileSync('ffmpeg',['-v','error','-n','-ss',String(item.startSeconds),'-i',source,'-t',String(item.endSeconds-item.startSeconds),'-vn','-ac','1','-ar','16000','-c:a','pcm_s16le',p]);const seconds=duration(p);assert(Math.abs(seconds-(item.endSeconds-item.startSeconds))<0.05);return{...item,file:record(p),measuredDurationSeconds:seconds};};
+const references=plan.referenceClips.map(i=>render(i,'references')),clips=plan.clips.map(i=>render(i,'clips'));
+const clipTotal=clips.reduce((s,c)=>s+c.measuredDurationSeconds,0),refTotal=references.reduce((s,c)=>s+c.measuredDurationSeconds,0)*clips.length;
+assert.equal(clipTotal,plan.scopeClipSeconds);assert.equal(refTotal,plan.scopeReferenceSeconds);
+const manifest={status:'media-frozen-before-paid-calls',videoId:plan.videoId,createdAt:new Date().toISOString(),plan:record(planPath),source:{...record(source),durationSeconds:sourceSeconds,acquisition:'Existing yt-dlp 2026.08.19 public default client fallback after public Android stream returned HTTP 403',title:info.title,formatId:info.format_id,canonicalUrl:plan.canonicalUrl},model:plan.model,rateUsdPerMinute:plan.rateUsdPerMinute,references,clips,estimatedTotalUsd:(clipTotal+refTotal)/60*plan.rateUsdPerMinute,attemptsPerClip:1,retries:0};
+const out=`${plan.outputRoot}/manifest.json`;fs.writeFileSync(out,JSON.stringify(manifest,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({manifest:record(out),clips:clips.length,audioSeconds:clipTotal,estimatedTotalUsd:manifest.estimatedTotalUsd}));

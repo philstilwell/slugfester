@@ -1,0 +1,6 @@
+### Result
+{"status":"passed","profile":"Matt Dillahunty","debate":266}
+### Ran Playwright code
+```js
+await (async(page)=>{if(await page.getByRole("link",{name:/Matt Dillahunty vs Blake Giunta/}).count()!==1)throw Error("Profile entry missing");return {status:"passed",profile:"Matt Dillahunty",debate:266}})(page);
+```

@@ -1,0 +1,6 @@
+### Result
+{"status":"passed","home":true,"sitemap":true}
+### Ran Playwright code
+```js
+await (async(page)=>{if(await page.getByRole("link",{name:/Matt Dillahunty vs Blake Giunta/}).count()!==1)throw Error("Home entry missing");const response=await page.request.get("http://127.0.0.1:4266/sitemap.xml");if(!response.ok()||!(await response.text()).includes("/debate/dillahunty-giunta-faith-rational-justification-2018/"))throw Error("Sitemap entry missing");return {status:"passed",home:true,sitemap:true}})(page);
+```

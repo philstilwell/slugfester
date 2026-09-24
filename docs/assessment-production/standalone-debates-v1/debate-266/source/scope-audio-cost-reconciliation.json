@@ -1,0 +1,177 @@
+{
+  "status": "all-six-responses-received-no-uncertain-call",
+  "calculatedAt": "2026-09-24T04:49:35.409Z",
+  "pricingSource": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+  "inputPerMillionUsd": 2.5,
+  "outputPerMillionUsd": 10,
+  "knownSuccessfulCallCostUsd": 0.2842825,
+  "maximumPossiblePaidCostUsd": 0.2842825,
+  "invoiceVerified": false,
+  "basis": "Published token prices applied to returned usage; this is a usage-based cost estimate, not a billing invoice. All six calls returned usage. Original minute-based estimates are preserved unchanged and superseded here, not interpreted as hard cost bounds.",
+  "originalFrozenPlan": {
+    "path": ".assessment-cache/qhg-scope-audio-plan.json",
+    "sha256": "30c7690cfb70a81328764cd7d03049a80413a1c6a7ce12954fabb16fe44b9441",
+    "bytes": 2546
+  },
+  "originalFullWorkflowEstimateUsd": 0.54,
+  "remainingAuthorizedBudgetUsd": 0.7157175,
+  "additionalPaidWork": "Freeze and report a revised cumulative estimate from the actual required clip set before any further paid call; cap remains $1.00.",
+  "calls": [
+    {
+      "id": "opening-boundary",
+      "startSeconds": 315,
+      "endSeconds": 350,
+      "output": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/opening-boundary.transcript.json",
+        "sha256": "429063016db0c0a22093d983487ce4dd5ac89d42f988381bc6ad0ea5e571323b",
+        "bytes": 2007
+      },
+      "result": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/opening-boundary.result.json",
+        "sha256": "c043d958d731cdabe02db61288975f6b2910c68cd2f0aed529080722abfd0663",
+        "bytes": 584
+      },
+      "usage": {
+        "input_tokens": 850,
+        "output_tokens": 1046,
+        "total_tokens": 1896,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 776,
+          "text_tokens": 74
+        }
+      },
+      "tokenPricedEstimateUsd": 0.012585
+    },
+    {
+      "id": "definition-clarification",
+      "startSeconds": 620,
+      "endSeconds": 730,
+      "output": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/definition-clarification.transcript.json",
+        "sha256": "d228efe0738deb20381daff824c687ba13fec58d3e40de2b7be001bf0f47ae96",
+        "bytes": 5227
+      },
+      "result": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/definition-clarification.result.json",
+        "sha256": "be9092de4573f3ec7bd4a7d572907c8e209b4d5a61206fcd4b63be6fa67cd903",
+        "bytes": 636
+      },
+      "usage": {
+        "input_tokens": 2597,
+        "output_tokens": 3288,
+        "total_tokens": 5885,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2369,
+          "text_tokens": 228
+        }
+      },
+      "tokenPricedEstimateUsd": 0.0393725
+    },
+    {
+      "id": "theory-method-redirect",
+      "startSeconds": 3960,
+      "endSeconds": 4132,
+      "output": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/theory-method-redirect.transcript.json",
+        "sha256": "ce827d9e76aa511ae1c4f5ac2e260d419862e56fddd7eae21aef38af42524869",
+        "bytes": 13259
+      },
+      "result": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/theory-method-redirect.result.json",
+        "sha256": "89a7d02581f4e5bdc69f1614b14d22a267b0fb841bcd0151da29c395d83affdb",
+        "bytes": 603
+      },
+      "usage": {
+        "input_tokens": 4176,
+        "output_tokens": 5300,
+        "total_tokens": 9476,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3826,
+          "text_tokens": 350
+        }
+      },
+      "tokenPricedEstimateUsd": 0.06344
+    },
+    {
+      "id": "psychology-confidence",
+      "startSeconds": 4125,
+      "endSeconds": 4280,
+      "output": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/psychology-confidence.transcript.json",
+        "sha256": "15237f69c5f6e45c85939bbd57a4937e85b6ac18873c5b585ef671bd1a5aadf5",
+        "bytes": 16426
+      },
+      "result": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/psychology-confidence.result.json",
+        "sha256": "46e5aab9a50f35736985df307a25daac28e80b189689c06de429b13f88ea4d9b",
+        "bytes": 628
+      },
+      "usage": {
+        "input_tokens": 3252,
+        "output_tokens": 4801,
+        "total_tokens": 8053,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2993,
+          "text_tokens": 259
+        }
+      },
+      "tokenPricedEstimateUsd": 0.05614
+    },
+    {
+      "id": "possibility-challenge",
+      "startSeconds": 4270,
+      "endSeconds": 4455,
+      "output": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/possibility-challenge.transcript.json",
+        "sha256": "0e33801bd1887077d16b2cc21d99d20b59d2c34a0188afe3d2d4c9c54083bf43",
+        "bytes": 10649
+      },
+      "result": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/possibility-challenge.result.json",
+        "sha256": "774e44f5c09e6923e097f115a8dbf2a4e21ae9e6873c3c45a529dc5a9099432d",
+        "bytes": 600
+      },
+      "usage": {
+        "input_tokens": 4038,
+        "output_tokens": 5409,
+        "total_tokens": 9447,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 3705,
+          "text_tokens": 333
+        }
+      },
+      "tokenPricedEstimateUsd": 0.064185
+    },
+    {
+      "id": "closing-boundary",
+      "startSeconds": 4445,
+      "endSeconds": 4580,
+      "output": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/closing-boundary.transcript.json",
+        "sha256": "77e935fbb3384669f0d9f0d72eb4a17ae1e58fb40115a15d8058627436cf20b4",
+        "bytes": 12565
+      },
+      "result": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/closing-boundary.result.json",
+        "sha256": "79228df15d8d406542b907d540b3c49feb9f52cb8113d402012df26b7b85b972",
+        "bytes": 613
+      },
+      "usage": {
+        "input_tokens": 2832,
+        "output_tokens": 4148,
+        "total_tokens": 6980,
+        "type": "tokens",
+        "input_token_details": {
+          "audio_tokens": 2604,
+          "text_tokens": 228
+        }
+      },
+      "tokenPricedEstimateUsd": 0.04856
+    }
+  ]
+}

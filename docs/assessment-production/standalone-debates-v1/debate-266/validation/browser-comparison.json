@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-validation-command-evidence",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "command": [
+    "env",
+    "npm_config_offline=true",
+    "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+    "-s=slugfester266",
+    "run-code",
+    "async(page)=>{await page.getByRole(\"combobox\",{name:\"First interlocutor\",exact:true}).selectOption({label:\"Matt Dillahunty\"});await page.getByRole(\"combobox\",{name:\"Second interlocutor\",exact:true}).selectOption({label:\"Blake Giunta\"});await page.getByRole(\"button\",{name:\"Compare\",exact:true}).click();const cards=page.locator(\".comparison-person\");await cards.first().waitFor();const result=await cards.evaluateAll(xs=>xs.map(x=>({name:x.dataset.comparisonPerson,score:x.dataset.averageScore,appearances:x.dataset.appearances})));if(result.length!==2||!result.some(x=>x.name===\"Blake Giunta\"&&Number(x.score)===82))throw Error(\"Comparison invalid\");await page.screenshot({path:\"output/playwright/debate-266/desktop-comparison.png\"});return result}"
+  ],
+  "startedAt": "2026-09-24T06:37:39.345Z",
+  "completedAt": "2026-09-24T06:37:40.962Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "status": "passed",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/validation/browser-comparison.log",
+    "bytes": 1113,
+    "sha256": "18535f1bd539c754c9f302d71845d9a5a223abe8be920ba5e910c36caa1bd7c1"
+  },
+  "directIncrementalCostUsd": 0
+}

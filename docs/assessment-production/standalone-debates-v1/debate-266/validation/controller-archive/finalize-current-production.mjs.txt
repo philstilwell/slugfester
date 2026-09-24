@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const [n,mode]=process.argv.slice(2);assert.match(n,/^\d{3,}$/);assert(['components','register'].includes(mode));
+const read=p=>JSON.parse(fs.readFileSync(p)),registryPath='docs/assessment-production/standalone-debates-v1/registry.json',registry=read(registryPath),r=registry.debates.find(r=>r.debateNumber===n);assert(r);
+const root=r.root,put=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+if(mode==='components'){
+ const c=read(root+'/publication/output.json').candidate,s=read(root+'/score-pass/output.json'),audio=read(root+'/audio/audio-verification.json'),inv=read(root+'/inventory/inventory.json'),render=read(root+'/rendering/rendering-audit.json'),tags=read(r.rhetoricalTagReview.auditPath),parity=read(root+'/publication/content-parity-audit.json'),style=read(root+'/publication/ai-contribution-editorial-audit.json'),a=read(root+'/authorization.json');
+ assert.equal(c.id,r.debateId);assert.equal(c.motion,a.identity.motion);assert.equal(inv.motion,c.motion);
+ assert.equal(render.status,'passed-standalone-production-rendering');
+ for(const k of ['runtimeFailures','horizontalOverflowFailures','temporaryBrowsersRemaining','temporaryServersRemaining'])assert.equal(render.audit[k],0);
+ assert.equal(parity.status,'passed-content-parity-audit');assert.equal(style.status,'passed-direct-nonformulaic-prose-and-punctuation-review');assert.equal(tags.status,'passed-rhetorical-tag-review');
+ const events=read('.assessment-cache/captions/'+r.videoId+'/events.json'),scope=a.identity.primarySpeakerScopeException,sourceNotes=read(root+'/audio/controller-resolution.json');
+ assert.equal(sourceNotes.status,'passed-complete-source-review');assert.equal(audio.audit.unresolvedAttributionChecks,0);
+ const selectedBySide=Object.fromEntries(['pro','con'].map(side=>[side,inv.moves.filter(m=>m.side===side).length]));
+ put(root+'/validation-summary.json',{
+  schemaVersion:'1.0-standalone-validation-summary',protocolId:'assessment-production-standalone-debate-v1',status:'passed',debateNumber:n,debateId:r.debateId,
+  source:{videoId:r.videoId,timedEvents:events.length,spokenWords:events.reduce((total,e)=>total+e.text.trim().split(/\s+/).filter(Boolean).length,0),method:'Complete English automatic captions screened for eligibility; only the approved, frozen scoped transcript was judged. Independent bounded audio-derived transcription verified scope and all triggered move attributions.',audioListenedTo:false,fullDebateAudioVerified:false,scopeVerificationClips:audio.cost.scopeVerificationSuccessfulCalls,moveVerificationClips:audio.cost.successfulCalls,primarySpeakerExceptionUsed:scope.enabled,assessedWindow:scope.assessedWindow,readerDisclosure:read(root+'/source/reader-scope-disclosure.json').requiredReaderDisclosure,requiredAttributionChecks:audio.audit.requiredAttributionChecks,completedAttributionChecks:audio.audit.completedAttributionChecks,unresolvedMaterialMeaningChecks:audio.audit.unresolvedAttributionChecks},
+  assessment:{inventoryMoves:inv.moves.length,inventorySides:selectedBySide,acceptedPrimaryJudgmentPasses:2,disputes:read(root+'/disagreements/disagreements.json').disputes.length,scorePasses:1,scoreReruns:0,manualScoreOverrides:0,score:{pro:s.overall.pro.score,con:s.overall.con.score,winner:s.winner}},
+  publication:{sections:c.sections.length,displayRows:parity.metrics.rows,argumentCards:parity.metrics.moves,descriptionMeanWords:parity.metrics.argumentWordsMean,critiqueMeanWords:parity.metrics.critiqueWordsMean,contentParityAuditPassed:true,acceptedCardTags:tags.acceptedTags.length,acceptedOverallBlunderLinks:tags.acceptedOverallBlunderLinks.length,anonymousCandidates:tags.completeCandidateUnion.length,rejectedCandidates:tags.completeCandidateUnion.filter(x=>x.decision==='rejected').length,controllerDefinitionCorrections:tags.controllerDefinitionCorrections?.length??0,nonformulaicAIProsePassed:true,punctuationIntegrityPassed:true},
+  preFreezeSourcePreparation:sourceNotes.completeSourceReview.preFreezeCorrections,
+  componentEvidence:{sourceResolution:fileRecord(root+'/audio/controller-resolution.json'),inventoryFirstFreeze:fileRecord(root+'/inventory/first-freeze-audit.json'),judgments:fileRecord(root+'/judgments/execution.json'),adjudication:fileRecord(root+'/adjudication/execution.json'),publication:fileRecord(root+'/publication/execution.json'),parity:fileRecord(root+'/publication/content-parity-audit.json'),editorial:fileRecord(root+'/publication/ai-contribution-editorial-audit.json'),rendering:fileRecord(root+'/rendering/rendering-audit.json')},
+  rendering:render.audit,directCostUsd:audio.cost.knownSuccessfulCallCostUsd,maximumPossiblePaidCostUsd:audio.cost.maximumPossibleTotalCostUsd,paidRetries:audio.cost.retries,
+  gateScope:'Passed source, assessment, publication, rhetorical review, content parity and rendering component gates. Full repository, final precommit, clean-checkout, required pull-request and deployment checks remain mandatory and are recorded separately. Registry status denotes a frozen production entry, not a claim that its pull request is already merged.'
+ });
+ r.contentParity={...(r.contentParity||{}),auditPath:root+'/publication/content-parity-audit.json'};
+}else{
+ assert.equal(read(root+'/validation-summary.json').status,'passed');const ledger=read(r.productionLedger.path);assert.equal(ledger.debateId,r.debateId);assert.equal(ledger.status,'frozen-standalone-site-ledger-adapter');r.productionLedger=fileRecord(r.productionLedger.path);r.status='published-and-frozen';
+}
+fs.writeFileSync(registryPath,JSON.stringify(registry,null,2)+'\n');
+console.log(JSON.stringify({status:mode+'-complete',debateNumber:n}));

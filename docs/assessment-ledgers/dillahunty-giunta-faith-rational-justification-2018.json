@@ -1,0 +1,882 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/captions.srv3.xml",
+      "sha256": "04a782243e7f8157d973c02778bb8138caeef57453f7ff234f0e8a4392d1cf0b",
+      "bytes": 1029441
+    },
+    "events": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/events.json",
+      "sha256": "8c758c53efe717ae31a798ac5470a193c27b49efc2fab972e31db8371b0fe2a2",
+      "bytes": 404356
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/transcript.txt",
+      "sha256": "f8915293178f50382d70ca5eee525e0cd2ad65d6598f27a9e592c3ab68cc62a3",
+      "bytes": 174177
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/manifest.json",
+      "sha256": "942b102eec95f4c6dccde533bdfaa002d0339fb7d35d312c3ef718fabf4e27c8",
+      "bytes": 1011
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/authorization.json",
+      "sha256": "f754c05b3ac17607b9c9ea0891ae05674e28a8aa7bed4edde739a4e8c62873aa",
+      "bytes": 19766
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/source/source-lock.json",
+      "sha256": "dbca50e42c63c638cd1615f5f40199bd7310e2c759900b99481eb5cda67cae2e",
+      "bytes": 20325
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-indexed-transcript.txt",
+      "sha256": "b2cd4b752434d3a4a28455ef8bf2d6f62bbe398213fc9448a787dbc7cc6274ae",
+      "bytes": 95238
+    },
+    "scopedEvents": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-events.json",
+      "sha256": "7fb010baeae11296fc089f87a4d5788c4bab0afbeff2a304b588e8a97de7d083",
+      "bytes": 201942
+    },
+    "primarySpeakerScopeAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/source/primary-speaker-scope-audit.json",
+      "sha256": "0cf5588bc9a7c710a5b4d72a7c6c33c3bb1c0f9c5b679744e850155d20562dc6",
+      "bytes": 13682
+    },
+    "limitedScopeAuthorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/source/limited-scope-authorization.json",
+      "sha256": "2cd46fa864361874e0162856bdf121d4b966ecefd513d0714dbeaa6aa54c032d",
+      "bytes": 1847
+    },
+    "scopeAudioEvidence": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/source/scope-audio-evidence.json",
+      "sha256": "c517e25fe4078f290d1617fd462470a24d254f7dea68abe74b1c04dbc66dff57",
+      "bytes": 11284
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/authorization.json",
+      "sha256": "f754c05b3ac17607b9c9ea0891ae05674e28a8aa7bed4edde739a4e8c62873aa",
+      "bytes": 19766
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/manifest.json",
+      "sha256": "10ff80c04abb2241c243d5eefc2f517ec26260f4cd28af1587b5f562f6f1e250",
+      "bytes": 7505
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/source/source-lock.json",
+      "sha256": "dbca50e42c63c638cd1615f5f40199bd7310e2c759900b99481eb5cda67cae2e",
+      "bytes": 20325
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/inventory.json",
+      "sha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de",
+      "bytes": 139869
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/judgment-packet.json",
+      "sha256": "c49412c5ac08d2b3d2844a79930d994b2ba6ab51f6c83295a93254e43142c608",
+      "bytes": 4984
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/execution.json",
+      "sha256": "d24078a83aff8568c10e0e89b5e4e2ceb3d83d0115697d708a833dc599539bb0",
+      "bytes": 3361
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-a/output.json",
+      "sha256": "c8270ca6b0d32a8e1b0dcc040d2528721166e560b493dc2bb2a17c3f46861710",
+      "bytes": 36911
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/output.json",
+      "sha256": "7a4140a4c43c5af7cb2259fbf484aff3e69014abc02bcb365de44e83ca760954",
+      "bytes": 34061
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/disagreements/disagreements.json",
+      "sha256": "ce6f12faa3500d6aba13ad0e4a619d5476199a4844d17634b55a7ca1ed5cbadd",
+      "bytes": 8496
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/audio-verification.json",
+      "sha256": "664325cfeab77fe567cbcce8b2e147c6beeb0a1acbd179fa9724535c2eb1371e",
+      "bytes": 5829
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/adjudication/packet.json",
+      "sha256": "f30ddbe446b562e38f4c274eaef5ead454707c54211dd1bd6bf3ca7c937bae6d",
+      "bytes": 25197
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/adjudication/output.json",
+      "sha256": "a136c18524617ba79ac92241b779de9431b843dc51b6919658a2cc1b7bb19ccf",
+      "bytes": 3321
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/final-ledger/final-ledger.json",
+      "sha256": "3ae4d11d826b7a12410844dca5afec53c8782c45fed920f656061ffbd0ab97d1",
+      "bytes": 275827
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/score-pass/input.json",
+      "sha256": "128f63f58a0bce8fcdd8a1d3d2218d0e39693ea472201be797dfe17cdebda2c6",
+      "bytes": 970
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/score-pass/output.json",
+      "sha256": "1c16af9bb7648408bc6121a0a108ad54d8960c61db6a8ddcb22358fd3c853167",
+      "bytes": 20292
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/score-pass/attestation.json",
+      "sha256": "cf0012c422da83907003fbaa6dd1cbd8ad8d01f92c0e7050eba2aa2a92b03004",
+      "bytes": 838
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/output.json",
+      "sha256": "e3fa41a58acf4fc2ea75a3dcfba1da76707877d41c440a53d5b03881393f8100",
+      "bytes": 76984
+    },
+    "events": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/events.json",
+      "sha256": "8c758c53efe717ae31a798ac5470a193c27b49efc2fab972e31db8371b0fe2a2",
+      "bytes": 404356
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/transcript.txt",
+      "sha256": "f8915293178f50382d70ca5eee525e0cd2ad65d6598f27a9e592c3ab68cc62a3",
+      "bytes": 174177
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/correction-critique-editorial.json",
+      "sha256": "94d09e21c27eef7ab6896edd71d9440a835415b53c6f2f731d8d3c8e0ded89e1",
+      "bytes": 6504
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/critique-editorial-repair-1/preserved-prior-output.json",
+      "sha256": "a752e452754b32cc8d92361196b13cbcc3037d5a74ea46bc810ac611c2997ff3",
+      "bytes": 73472
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/content-parity-audit.json",
+      "sha256": "d972f5f50a9af20b0c3eead0efb38d355a2fb6bd52059cb8e42c610c7b8881dd",
+      "bytes": 7475
+    },
+    "publicationContentParityExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/critique-editorial-repair-1/execution.json",
+      "sha256": "8be70406ca6e45386f6725cf392aca8734c1045426d573969c487877e0708819",
+      "bytes": 57285
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/correction-rhetorical-tags.json",
+      "sha256": "5bbff1f524f2cc7cbceb23799a3a63cd5730de2da097781dffb9a9ee3ad0c7d1",
+      "bytes": 2124
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "0e676bd2af642615b0f5a16f8a9be9815a3e898aa3d3d769b102d93b8409b756",
+      "bytes": 108153
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "0378a3d19ad1b296c7dbde2459198378a3c17870787685a14fcc418658719444",
+      "bytes": 4330
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/rendering/post-rhetorical-tag-audit-1.json",
+      "sha256": "d1eeb38f08d0f2d7bf2f33de64d6b499180465db961fe0c710b1c0b8463ee9fb",
+      "bytes": 1243
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "266",
+    "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+    "sections": [
+      {
+        "sectionId": "terms-and-common-ground",
+        "title": "Faith, rationality, and shared ground",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-confidence-is-not-method",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 88,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 89
+                },
+                "score": 84
+              },
+              {
+                "moveId": "pro-demonstration-foundational",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 76,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-faith-foundation-discriminates-poorly",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 82,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 91
+                },
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "con-faith-means-trust",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 81,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 75
+                },
+                "score": 78
+              },
+              {
+                "moveId": "con-direct-or-supported-belief",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 80,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 83
+                },
+                "score": 81
+              },
+              {
+                "moveId": "con-comparative-case-framing",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 73,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 81
+                },
+                "score": 73
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "truth-directed-justification",
+        "title": "Truth-directed standards of justification",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-reasonable-process-not-enough",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 90,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 89
+                },
+                "score": 86
+              },
+              {
+                "moveId": "pro-justification-aims-at-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 82,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 82
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pro-sufficient-evidence-and-independent-checks",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 92,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 86
+                },
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "con-shared-rational-confidence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 86,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 86
+                },
+                "score": 77
+              },
+              {
+                "moveId": "con-focus-on-justified-god-belief",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 91,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 91
+                },
+                "score": 84
+              },
+              {
+                "moveId": "con-formulates-possibility-rule",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 93,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 92,
+                  "calibrationCharity": 92
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "possibility-and-ordinary-inference",
+        "title": "Possibility and ordinary inference",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-categorical-possibility-inference",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 91,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 85
+                },
+                "score": 85
+              },
+              {
+                "moveId": "pro-history-uses-reports-and-corroboration",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 91,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 88
+                },
+                "score": 85
+              },
+              {
+                "moveId": "pro-composite-possibility-requires-known-parts",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 84,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 77
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-history-tests-demonstration",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 84,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 87
+                },
+                "score": 80
+              },
+              {
+                "moveId": "con-rule-bars-supernatural-belief",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 88
+                },
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "higgs-and-supernatural-candidates",
+        "title": "The Higgs analogy and supernatural candidates",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-supernatural-lacks-possibility-basis",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 90,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 71
+                },
+                "score": 77
+              },
+              {
+                "moveId": "pro-higgs-is-testable-known-physics",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 86
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-standard-methods-have-no-extra-rule",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 83
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-higgs-analogy-exposes-catchall",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 88,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 80
+                },
+                "score": 79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "candidate-status-and-naturalism",
+        "title": "Candidate status and methodological naturalism",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "pro-candidate-versus-acceptance",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 94,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 88
+                },
+                "score": 88
+              },
+              {
+                "moveId": "pro-supernatural-has-no-confirmed-kind",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 92,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 76
+                },
+                "score": 85
+              },
+              {
+                "moveId": "pro-natural-reference-class-clarification",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 93,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 91
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "con-cern-and-theism-use-likelihoods",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 88,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 79
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-absence-is-not-violation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 90,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 85
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-science-allows-radical-novelty",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 85,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 83
+                },
+                "score": 76
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "bayesian-candidate-testing",
+        "title": "Bayesian comparison and candidate testing",
+        "weightPercent": 13,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-unknown-cause-does-not-license-god",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 90,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 90
+                },
+                "score": 88
+              },
+              {
+                "moveId": "pro-likelihood-fit-cannot-create-candidate",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 93,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 88
+                },
+                "score": 90
+              },
+              {
+                "moveId": "pro-bayes-misapplied-to-cosmic-supernatural",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 65,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 85,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 67
+                },
+                "score": 72
+              },
+              {
+                "moveId": "pro-supernatural-priors-need-investigation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 92,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 84
+                },
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-bayes-treats-theism-like-higgs",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 89,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 81
+                },
+                "score": 83
+              },
+              {
+                "moveId": "con-low-prior-absorbs-ad-hocness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 81,
+                  "responsiveness": 94,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 88
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "updating-and-fine-tuning",
+        "title": "Updating, convergence, and fine-tuning",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-science-converges-on-public-evidence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 86,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 68
+                },
+                "score": 74
+              },
+              {
+                "moveId": "pro-fine-tuning-needs-alternative-possibility",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 93,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 86
+              },
+              {
+                "moveId": "pro-appearance-and-anthropic-fit",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 89,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 85
+                },
+                "score": 82
+              }
+            ]
+          },
+          "con": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "con-priors-update-toward-truth",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 89,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 76
+                },
+                "score": 82
+              },
+              {
+                "moveId": "con-fine-tuning-as-likelihood-evidence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 87,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 75
+                },
+                "score": 76
+              },
+              {
+                "moveId": "con-physicists-recognize-fine-tuning",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 61,
+                  "relevanceBurden": 67,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 61
+                },
+                "score": 64
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 82.81,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      },
+      "con": {
+        "weightedSectionMean": 81.78,
+        "burdenCompletionAdjustment": 0,
+        "score": 82
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 1,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 1,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 7,
+    "moves": 39,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

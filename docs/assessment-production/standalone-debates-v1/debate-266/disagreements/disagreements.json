@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "con-comparative-case-framing:precisionClarity",
+      "kind": "move-dimension",
+      "moveId": "con-comparative-case-framing",
+      "field": "precisionClarity",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 2,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 80,
+          "rationale": "The comparative task is understandable despite some looseness about metaphysical possibility."
+        },
+        "option-b": {
+          "value": 67,
+          "rationale": "Metaphysical possibility and comparative confidence are insufficiently separated."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-demonstration-foundational:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-demonstration-foundational",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 13,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 66,
+          "rationale": "The reply somewhat overreads Giunta as dismissing evidential demonstration generally."
+        },
+        "option-b": {
+          "value": 79,
+          "rationale": "It acknowledges rational processes can yield false conclusions."
+        }
+      }
+    },
+    {
+      "disputeId": "pro-supernatural-has-no-confirmed-kind:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "pro-supernatural-has-no-confirmed-kind",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 11,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 87,
+          "rationale": "The move allows an anomalous ability while withholding a supernatural label."
+        },
+        "option-b": {
+          "value": 76,
+          "rationale": "By-definition violation is too broad, though the later operational point is narrower."
+        }
+      }
+    },
+    {
+      "disputeId": "con-absence-is-not-violation:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "con-absence-is-not-violation",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "pro-fine-tuning-needs-alternative-possibility:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pro-fine-tuning-needs-alternative-possibility",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "high",
+        "option-b": "medium"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured by the scored pro moves and their locked burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond the move-level burden record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional debate-wide consequence was identified outside selected moves.",
+            "alreadyCapturedBy": [
+              "pro-candidate-versus-acceptance",
+              "pro-likelihood-fit-cannot-create-candidate"
+            ],
+            "counterfactual": "Removing any supposed adjustment would not change burden completion independently of scored moves."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains outside the individually assessed moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains beyond the locked move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible debate-wide consequence was identified outside move scoring.",
+            "alreadyCapturedBy": [
+              "pro-demonstration-foundational",
+              "pro-likelihood-fit-cannot-create-candidate"
+            ],
+            "counterfactual": "Removing a separate adjustment leaves all pro burden effects represented by moves."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains uncaptured by the scored con moves and their locked burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion applies beyond the move-level burden record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No additional debate-wide consequence was identified outside selected moves.",
+            "alreadyCapturedBy": [
+              "con-bayes-treats-theism-like-higgs",
+              "con-low-prior-absorbs-ad-hocness"
+            ],
+            "counterfactual": "Removing any supposed adjustment would not change burden completion independently of scored moves."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains outside the individually assessed moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains beyond the locked move record.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible debate-wide consequence was identified outside move scoring.",
+            "alreadyCapturedBy": [
+              "con-standard-methods-have-no-extra-rule",
+              "con-low-prior-absorbs-ad-hocness"
+            ],
+            "counterfactual": "Removing a separate adjustment leaves all con burden effects represented by moves."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 39,
+    "disputesExtracted": 7,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/inventory.json",
+      "sha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-a/output.json",
+      "sha256": "c8270ca6b0d32a8e1b0dcc040d2528721166e560b493dc2bb2a17c3f46861710"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/output.json",
+      "sha256": "7a4140a4c43c5af7cb2259fbf484aff3e69014abc02bcb365de44e83ca760954"
+    }
+  }
+}

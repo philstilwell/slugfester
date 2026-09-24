@@ -1,0 +1,6 @@
+### Result
+{"status":"passed","text":"1 of 266 debates","url":"http://127.0.0.1:4266/search/?q=Blake+Giunta"}
+### Ran Playwright code
+```js
+await (async(page)=>{await page.getByRole("link",{name:/Matt Dillahunty vs Blake Giunta/}).waitFor();return {status:"passed",text:await page.getByRole("status").innerText(),url:page.url()}})(page);
+```

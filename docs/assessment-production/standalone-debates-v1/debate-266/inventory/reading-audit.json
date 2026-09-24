@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0-score-blind-inventory-reading-audit",
+  "status": "complete-before-first-inventory-freeze",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "completedAt": "2026-09-24T05:06:23Z",
+  "isolation": {
+    "freshContext": true,
+    "scoreBlind": true,
+    "declaredInputProtocolIsolation": true,
+    "operatingSystemSandboxClaimed": false,
+    "otherDebateFilesRead": false,
+    "priorAssessmentsRead": false,
+    "externalResearchUsed": false,
+    "gitHistoryRead": false,
+    "otherAgentJudgmentContextRead": false,
+    "scoresCritiquesOrTagsRead": false,
+    "apiKeysRemovedFromShellCalls": ["OPENAI_API_KEY", "ANTHROPIC_API_KEY"],
+    "directIncrementalCostUsd": 0
+  },
+  "inputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/execution-plan.json",
+      "sha256": "fb13c53f347152913ec9365a12c00a7ebd7169e30394a88ff5abc4cf639bf3c2",
+      "bytes": 1830,
+      "lineCount": 50,
+      "literalReadRanges": [{"start": 1, "end": 50}],
+      "hashVerified": true,
+      "fullyRead": true
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/packet.json",
+      "sha256": "60758d6cf242dd286396371be3b22db8b00f619d40e346ab4de60a46557494d8",
+      "bytes": 37824,
+      "lineCount": 533,
+      "literalReadRanges": [{"start": 1, "end": 300}, {"start": 301, "end": 533}],
+      "hashVerified": true,
+      "fullyRead": true
+    },
+    {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-indexed-transcript.txt",
+      "sha256": "b2cd4b752434d3a4a28455ef8bf2d6f62bbe398213fc9448a787dbc7cc6274ae",
+      "bytes": 95238,
+      "lineCount": 1533,
+      "literalReadRanges": [
+        {"start": 1, "end": 300}, {"start": 301, "end": 600}, {"start": 601, "end": 900},
+        {"start": 901, "end": 1200}, {"start": 1201, "end": 1500}, {"start": 1501, "end": 1533}
+      ],
+      "hashVerified": true,
+      "fullyRead": true
+    },
+    {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-events.json",
+      "sha256": "7fb010baeae11296fc089f87a4d5788c4bab0afbeff2a304b588e8a97de7d083",
+      "bytes": 201942,
+      "lineCount": 9200,
+      "literalReadRanges": [
+        {"start": 1, "end": 300}, {"start": 301, "end": 600}, {"start": 601, "end": 900},
+        {"start": 901, "end": 1200}, {"start": 1201, "end": 1500}, {"start": 1501, "end": 1800},
+        {"start": 1801, "end": 2100}, {"start": 2101, "end": 2400}, {"start": 2401, "end": 2700},
+        {"start": 2701, "end": 3000}, {"start": 3001, "end": 3300}, {"start": 3301, "end": 3600},
+        {"start": 3601, "end": 3900}, {"start": 3901, "end": 4200}, {"start": 4201, "end": 4500},
+        {"start": 4501, "end": 4800}, {"start": 4801, "end": 5100}, {"start": 5101, "end": 5400},
+        {"start": 5401, "end": 5700}, {"start": 5701, "end": 6000}, {"start": 6001, "end": 6300},
+        {"start": 6301, "end": 6600}, {"start": 6601, "end": 6900}, {"start": 6901, "end": 7200},
+        {"start": 7201, "end": 7500}, {"start": 7501, "end": 7800}, {"start": 7801, "end": 8100},
+        {"start": 8101, "end": 8400}, {"start": 8401, "end": 8700}, {"start": 8701, "end": 9000},
+        {"start": 9001, "end": 9200}
+      ],
+      "hashVerified": true,
+      "fullyRead": true
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "fileLineCount": 1368,
+      "authorizedLineRanges": [{"start": 1, "end": 641}],
+      "literalReadRanges": [{"start": 1, "end": 300}, {"start": 301, "end": 600}, {"start": 601, "end": 641}],
+      "hashVerified": true,
+      "allAuthorizedLinesRead": true,
+      "unauthorizedLinesRead": false
+    }
+  ],
+  "checkpoint": {
+    "sentBeforeDrafting": true,
+    "controllerReleaseReceivedBeforeDrafting": true,
+    "attempt": 1,
+    "retries": 0
+  },
+  "preFreezeRevision": {
+    "originalDraftPath": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/draft-parts.json",
+    "originalDraftPreserved": true,
+    "intermediateSourceReviewedDraftPaths": [
+      "docs/assessment-production/standalone-debates-v1/debate-266/inventory/source-reviewed-draft.json",
+      "docs/assessment-production/standalone-debates-v1/debate-266/inventory/source-reviewed-draft-v2.json"
+    ],
+    "sourceReviewedDraftPath": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/source-reviewed-draft-v3.json",
+    "controllerAuthorizedRevision": true,
+    "reason": "Before the first inventory freeze, source review required smaller primary-speaker-only spans, correction of an opening inference, explicit treatment of material intervening exchanges, exact-quote rechecks, and updated count and capacity audits.",
+    "finalInventoryWritten": false
+  }
+}
