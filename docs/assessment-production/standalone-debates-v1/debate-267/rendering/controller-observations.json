@@ -1,0 +1,53 @@
+{
+  "status": "passed-direct-desktop-and-mobile-review",
+  "publicationSha256": "f4c85409f71df5f497452592ba7eb3e724a154f174cfaa55d18575d92b64f829",
+  "previewPort": 4187,
+  "viewports": [{"width":1440,"height":1000},{"width":390,"height":844}],
+  "checks": {
+    "allLockedCardsPresent": true,
+    "correctTitleMotionSourcePositionsScoresByline": true,
+    "acceptedTagsAndOverallLinksRendered": true,
+    "aiDefaultCollapsedPointerEnterSpacePassedBothViewports": true,
+    "critiquePointerEnterSpaceFocusPassedBothViewports": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "biographyLeftDesktopAboveMobile": true,
+    "bothSpeakerPortraitsLoaded": true,
+    "homeSearchTopicsSitemapBothProfilesContainDebate": true,
+    "rankingsComparisonContainsBothSpeakers": true,
+    "approvedScopeDisclosureVisible": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {"runtimeFailures":0,"failedResources":0,"horizontalOverflowFailures":0,"emptyArgumentCards":0,"temporaryBrowsersRemaining":0,"temporaryServersRemaining":0},
+  "screenshotPaths": [
+    "output/playwright/debate-267/desktop-scope.png",
+    "output/playwright/debate-267/desktop-ai-closed.png",
+    "output/playwright/debate-267/desktop-ai-open.png",
+    "output/playwright/debate-267/desktop-critique.png",
+    "output/playwright/debate-267/desktop-profile.png",
+    "output/playwright/debate-267/mobile-scope.png",
+    "output/playwright/debate-267/mobile-ai-closed.png",
+    "output/playwright/debate-267/mobile-ai-open.png",
+    "output/playwright/debate-267/mobile-critique.png",
+    "output/playwright/debate-267/mobile-profile.png"
+  ],
+  "snapshotPaths": [
+    "output/playwright/debate-267/desktop-snapshot.yml",
+    "output/playwright/debate-267/mobile-final-snapshot.yml",
+    "output/playwright/debate-267/desktop-profile.yml",
+    "output/playwright/debate-267/mobile-profile.yml",
+    "output/playwright/debate-267/search-result.yml",
+    "output/playwright/debate-267/rankings.yml"
+  ],
+  "consolePath": "docs/assessment-production/standalone-debates-v1/debate-267/validation/browser-final-console.log",
+  "networkPath": "docs/assessment-production/standalone-debates-v1/debate-267/validation/browser-debate-network.log",
+  "observations": [
+    "All twenty-four cards and three card labels were mechanically verified at both viewport sizes. The snapshots also confirm the one Overall Commentary label, frozen motion, correct source URL, position labels, scores and model byline.",
+    "AI Contribution opens and closes by pointer, Enter and Space. Critiques open by pointer and keyboard while retaining focus; immediately activating the distant AI control succeeds on mobile without interception.",
+    "Ten screenshots were directly inspected. Critique text remains readable within viewport bounds, the source-scope disclosure wraps cleanly, both portraits load, and no horizontal overflow or empty argument card appears.",
+    "Douglas Wilson's biography appears left of the actual distribution figure on desktop and above it on mobile. An initial probe mistakenly measured the introductory distribution summary instead of the graph; the corrected figure-based check passes without any site change.",
+    "Generated homepage, topic index, sitemap, summary and analytics data, and both profiles contain the new debate. The live search for Douglas Wilson returns Debate267, and both names are available in the live ranking comparison selectors.",
+    "The existing shared renderer displays the exact approved scope disclosure, not the entire sourceNote field. A supplementary visibility probe for the appended quotation clarification therefore did not apply to this renderer. The full corrected sourceNote is preserved byte-for-byte in generated debate data; no broader shared-renderer change or claim of displaying the extra sentence is made.",
+    "The current browser command is requests --static; the installed skill's older network command was unavailable. The valid network capture shows only successful or cached responses, and the final browser console has zero errors or warnings.",
+    "The owned debate267 browser session was closed and the owned preview server on4187 stopped before freezing rendering evidence. No user browser tab was changed or closed."
+  ]
+}

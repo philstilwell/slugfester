@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import path from 'node:path';
+import {execFileSync,spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const planPath=process.argv[2],p=JSON.parse(fs.readFileSync(planPath));
+assert.equal(p.status,'frozen-before-paid-boundary-verification');
+assert.equal(fileRecord(p.mediaPath).sha256,p.mediaSha256);
+const put=(f,o)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,JSON.stringify(o,null,2)+'\n',{flag:'wx'});};
+fs.mkdirSync(p.outputRoot,{recursive:true});
+const render=(c,name)=>{const out=`${p.outputRoot}/${name}.wav`;assert(!fs.existsSync(out));execFileSync('ffmpeg',['-v','error','-n','-ss',String(c.startSeconds),'-i',p.mediaPath,'-t',String(c.endSeconds-c.startSeconds),'-ac','1','-ar','16000','-c:a','pcm_s16le',out]);return{...c,file:fileRecord(out)};};
+const references=p.referenceClips.map(c=>render(c,c.name.toLowerCase().replaceAll(' ','-'))), clips=p.clips.map(c=>render(c,c.id));
+put(`${p.outputRoot}/manifest.json`,{status:'media-frozen-before-paid-calls',videoId:p.videoId,plan:fileRecord(planPath),references,clips,conservativeUpperEstimateUsd:p.scopeConservativeUpperEstimateUsd,model:p.model});
+console.log(JSON.stringify({clips:clips.length,references:references.length,mediaFrozen:true,paidCallsMade:0}));

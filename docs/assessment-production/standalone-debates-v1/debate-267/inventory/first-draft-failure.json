@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0-preserved-first-inventory-failure",
+  "status": "invalid-first-draft-preserved-no-scoring",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "createdAt": "2026-09-24T17:42:23.992Z",
+  "draft": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/draft-parts.json",
+    "sha256": "bca959d00edadf882fd1f3e23f3c3cf7d64b2107cada626e143a5b46d492a4ea",
+    "bytes": 48389
+  },
+  "readingAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/reading-audit.json",
+    "sha256": "cbdebdfaa59470163fec457f3e6f458da5a20a81c095161caa1485a4f0227384",
+    "bytes": 2134
+  },
+  "readingRelease": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/reading-release.json",
+    "sha256": "0053496747417d103ed32465c94b6f4185f1cb24f4c8944566c66b5dcd0ce596",
+    "bytes": 492550
+  },
+  "invalidQuotes": [
+    {
+      "moveId": "hitchens-victim-perspective-and-present-danger",
+      "path": "moves[14].quoteEligibleExactSpans[1]",
+      "text": "does religion add anything that doesn't make it more toxic",
+      "sourceEventRange": [
+        1097,
+        1120
+      ]
+    },
+    {
+      "moveId": "hitchens-rival-miracles-discrimination-problem",
+      "path": "moves[19].quoteEligibleExactSpans[0]",
+      "text": "either all religions Supernatural claims must be true or none",
+      "sourceEventRange": [
+        1271,
+        1296
+      ]
+    },
+    {
+      "moveId": "hitchens-hume-comparative-probability",
+      "path": "moves[21].quoteEligibleExactSpans[1]",
+      "text": "it isn't an a priori one",
+      "sourceEventRange": [
+        1645,
+        1659
+      ]
+    },
+    {
+      "moveId": "wilson-ancients-knew-ordinary-natural-course",
+      "path": "moves[22].quoteEligibleExactSpans[1]",
+      "text": "they knew that as well as we do",
+      "sourceEventRange": [
+        1660,
+        1676
+      ]
+    },
+    {
+      "moveId": "hitchens-virgin-birth-is-recurring-religious-pattern",
+      "path": "moves[23].quoteEligibleExactSpans[1]",
+      "text": "where it doesn't begin with a with a miraculous birth",
+      "sourceEventRange": [
+        1677,
+        1704
+      ]
+    }
+  ],
+  "actualCounts": {
+    "pro": 12,
+    "con": 12
+  },
+  "actualSections": [
+    {
+      "sectionId": "rational-grounding-and-inquiry",
+      "pro": 2,
+      "con": 2
+    },
+    {
+      "sectionId": "objective-value-and-moral-authority",
+      "pro": 2,
+      "con": 3
+    },
+    {
+      "sectionId": "beauty-culture-and-transcendence",
+      "pro": 3,
+      "con": 2
+    },
+    {
+      "sectionId": "miracles-testimony-and-rival-claims",
+      "pro": 3,
+      "con": 3
+    },
+    {
+      "sectionId": "superstition-and-cultural-effects",
+      "pro": 2,
+      "con": 2
+    }
+  ],
+  "scope": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/source/editor-scope.json",
+    "sha256": "a8cfccfede05e52c23b1e7b2190e540430f678c866c0e4a8618e040d64a6be0b",
+    "bytes": 2598
+  },
+  "firstAttempt": {
+    "attempts": 1,
+    "retries": 0,
+    "agentPath": "/root/inventory_267",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "directIncrementalCostUsd": 0,
+    "originalBytesUnchanged": true
+  },
+  "mechanicalFindings": [
+    "24 selected moves: pro 12 / con 12, but the worker balance audit records 11 / 11.",
+    "The superstition-and-cultural-effects section has 2 pro / 2 con moves, not 2 / 1; both balance and capacity tables are wrong.",
+    "Five proposed exact quotations are not substrings of their selected source spans: three omit spoken filler/repetition and two extend beyond their selected end events."
+  ],
+  "sourceReviewFindings": [
+    {
+      "moveId": "hitchens-victim-perspective-and-present-danger",
+      "finding": "The selected end event 1120 stops before toxic; event 1121 contains the conclusion. Exact quotation and complete end boundary need correction before freeze."
+    },
+    {
+      "moveId": "hitchens-hume-comparative-probability",
+      "finding": "Event 1659 ends at an a; event 1660 supplies priori one and then Wilson's turn. The qualifier is central to the claim and must be completely retained and speaker-resolved."
+    },
+    {
+      "moveId": "wilson-christianity-displaced-demonism",
+      "finding": "The selected end event 1235 stops at dependent on the Christian; the continuation must be checked for the complete historical claim before freeze."
+    },
+    {
+      "moveId": "wilson-naturalism-unmoved-by-amalekites",
+      "finding": "The nominally high-confidence span includes Hitchens's substantive denial at event 1097. Review its boundary/confidence rather than declaring uniform single-speaker certainty."
+    },
+    {
+      "moveId": "hitchens-virgin-birth-is-recurring-religious-pattern",
+      "finding": "The recurring-birth/counterfeit argument is assigned to rational-grounding-and-inquiry instead of the miracles dispute it directly answers. Review semantic assignment and burden contact before judgment; if reassigned, recompute the fourth-row condition and supply the required source-based rationale."
+    }
+  ],
+  "controllerRecovery": {
+    "originalAssembler": ".assessment-cache/assemble-current-inventory.first-attempt.mjs.txt",
+    "correctedAssembler": ".assessment-cache/assemble-current-inventory.mjs",
+    "reason": "The packet requested draft parts, so the assembler now inherits frozen identity from authorization and validates the worker's scope object. This is a controller representation correction; it neither changes draft bytes nor accepts count/quote defects.",
+    "currentResult": "Still fails closed on the worker's incorrect totals; no assembled/frozen inventory has been written."
+  },
+  "proposedNextAction": {
+    "requiresAdditionalAttemptAuthorization": true,
+    "description": "One bounded pre-scoring inventory correction, preserving the failed first draft, source locks, approved excerpt, 24 selected moves, claims, warrants, inferences, importance, section weights, and reply targets. Correct exact quotations, complete source endpoints, affected attribution/confidence fields, the identified semantic section/burden assignment if source review confirms it, and recomputed audit fields. Enumerate exact writable fields and separate output paths before execution; every uncertain selected turn then requires the already-authorized bounded audio checks before inventory freeze.",
+    "forbidden": [
+      "No rebuild from scratch",
+      "No excluded source",
+      "No change to motion/speakers/sides",
+      "No rating or score",
+      "No relaxation of validators",
+      "No recursive retry"
+    ]
+  },
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.020477500000000003,
+    "maximumPossiblePaidCostUsd": 0.020477500000000003,
+    "uncertainPaidAttempts": 0,
+    "invoiceVerified": false
+  },
+  "publicationState": {
+    "primaryJudgmentsStarted": false,
+    "inventoryFrozen": false,
+    "scorePasses": 0,
+    "published": false,
+    "committed": false,
+    "pushed": false,
+    "pullRequestCreated": false
+  }
+}

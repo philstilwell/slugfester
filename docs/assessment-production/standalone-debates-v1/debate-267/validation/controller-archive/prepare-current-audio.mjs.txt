@@ -1,0 +1,27 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const root=r.root,a=read(root+'/authorization.json'),inv=read(root+'/inventory/pre-audio-inventory.json'),sourceAudio=read(root+'/source/audio-source-verification.json');
+assert.equal(inv.debateId,r.debateId);assert.equal(sourceAudio.videoId,r.videoId);
+const boundaryPlan=sourceAudio.boundaryPlan,media=sourceAudio.waveformCheck.media,refs=read(boundaryPlan.outputRoot+'/manifest.json').references;
+assert.equal(fileRecord(media.path).sha256,media.sha256);
+const moves=inv.moves.filter(m=>m.attributionConfidence!=='high'),scope=a.identity.editorApprovedScope,window=scope.assessedWindow,exclusions=scope.excludedIntervals;
+const ranges=moves.map(m=>{
+ let startMs=Math.max(window.startMs,m.sourceSpan.startMs-4000),endMs=Math.min(window.endMs,m.sourceSpan.endMs+4000);
+ for(const x of exclusions){if(x.endMs<=m.sourceSpan.startMs)startMs=Math.max(startMs,x.endMs);if(x.startMs>=m.sourceSpan.endMs)endMs=Math.min(endMs,x.startMs);}
+ return {startMs,endMs,moveIds:[m.moveId]};
+});
+const merged=[];for(const x of ranges){const p=merged.at(-1);if(p&&x.startMs<=p.endMs+10000&&!exclusions.some(e=>p.startMs<e.endMs&&x.endMs>e.startMs)){p.endMs=Math.max(p.endMs,x.endMs);p.moveIds.push(...x.moveIds);}else merged.push({...x});}
+const clips=[];for(const x of merged){let start=x.startMs;while(start<x.endMs){const end=Math.min(x.endMs,start+150000);clips.push({startMs:start,endMs:end,durationSeconds:(end-start)/1000,moveIds:x.moveIds.filter(id=>{const m=moves.find(m=>m.moveId===id);return m.sourceSpan.startMs<end&&m.sourceSpan.endMs>start;})});if(end===x.endMs)break;start=end-2000;}}
+assert(clips.length<=boundaryPlan.remainingPossibleVerificationCalls,'Required clip count exceeds the frozen full-workflow call reserve');
+const known=sourceAudio.knownSuccessfulCallCostUsd,reserve=boundaryPlan.conservativePerCallUpperEstimateUsd,estimate=known+clips.length*reserve;
+assert.equal(sourceAudio.maximumPossiblePaidCostUsd,known);assert(estimate<=boundaryPlan.fullDebateWorkflowConservativeUpperEstimateUsd&&estimate<=1);
+const dir='.assessment-cache/captions/'+r.videoId+'/verification/clips';fs.mkdirSync(dir,{recursive:true});
+for(const [i,c]of clips.entries()){c.clipId='clip-'+String(i+1).padStart(2,'0');const p=dir+'/'+c.clipId+'.wav';execFileSync('/opt/homebrew/bin/ffmpeg',['-nostdin','-n','-hide_banner','-loglevel','error','-ss',String(c.startMs/1000),'-i',media.path,'-t',String(c.durationSeconds),'-vn','-ac','1','-ar','16000',p]);Object.assign(c,fileRecord(p));c.reservedCallEstimateUsd=reserve;}
+const plan={schemaVersion:'1.0-frozen-bounded-audio-verification-plan',status:'frozen-before-paid-verification',createdAt:new Date().toISOString(),debateNumber:n,debateId:r.debateId,videoId:r.videoId,inventoryCandidate:fileRecord(root+'/inventory/pre-audio-inventory.json'),sourceMedia:media,sourceOriginalAudio:true,sourceLanguage:'en',purpose:'Resolve every material below-high source wording or attribution concern before judgments. Excluded content is not scoring evidence.',selectedMoveIds:moves.map(m=>m.moveId),model:boundaryPlan.model,responseFormat:'diarized_json',chunkingStrategy:'auto',prompt:null,knownSpeakerReferences:refs.map(x=>({speaker:x.name,file:x.file,durationSeconds:x.endSeconds-x.startSeconds})),clips,pricing:{verifiedDate:boundaryPlan.priceCheckedDate,modelSource:boundaryPlan.pricingSource,inputUsdPerMillionTokens:boundaryPlan.inputUsdPerMillionTokens,outputUsdPerMillionTokens:boundaryPlan.outputUsdPerMillionTokens,perCallUpperEstimateUsd:reserve,estimateBasis:boundaryPlan.perCallUpperEstimateBasis,estimatedCompleteDebatePaidWorkUsd:estimate,knownCostBeforeCallsUsd:known,maximumPossibleCostBeforeCallsUsd:known,standingCapUsd:1,billingConfirmed:false},attemptsPerClip:1,retries:0,maximumClipSeconds:150,clipSplitOverlapSeconds:2,timeoutSeconds:180,executionOutputRoot:root+'/audio/responses',transcribeSkill:'/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py',directListeningPerformed:false};
+plan.executionOutputRoot='output/transcribe/'+r.videoId+'-verification';
+fs.mkdirSync(root+'/audio',{recursive:true});fs.writeFileSync(root+'/audio/plan.json',JSON.stringify(plan,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({clips:clips.length,checks:moves.length,seconds:clips.reduce((t,c)=>t+c.durationSeconds,0),alreadyIncurred:known,revisedCompleteDebateUpperEstimateUsd:estimate,plan:fileRecord(root+'/audio/plan.json')},null,2));

@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const planPath=process.argv[2], id=process.argv[3],p=JSON.parse(fs.readFileSync(planPath)), m=JSON.parse(fs.readFileSync(`${p.outputRoot}/manifest.json`));
+assert.equal(m.plan.sha256,fileRecord(planPath).sha256);
+const c=m.clips.find(x=>x.id===id);assert(c);
+for(const r of [...m.references,c])assert.equal(fileRecord(r.file.path).sha256,r.file.sha256);
+const out=`${p.outputRoot}/${id}.transcript.json`,result=`${p.outputRoot}/${id}.result.json`,started=`${p.outputRoot}/${id}.started.json`;
+assert(!fs.existsSync(out)&&!fs.existsSync(result)&&!fs.existsSync(started),'One attempt only');
+fs.writeFileSync(started,JSON.stringify({videoId:p.videoId,clipId:id,startedAt:new Date().toISOString(),plan:fileRecord(planPath),input:c.file,maximumPossibleAttemptCostUsd:p.conservativePerCallUpperEstimateUsd},null,2)+'\n',{flag:'wx'});
+const args=['.assessment-cache/transcribe-current-once.py',c.file.path,'--model',p.model,'--response-format','diarized_json','--chunking-strategy','auto','--language','en','--out',out];
+for(const ref of m.references)args.push('--known-speaker',`${ref.name}=${ref.file.path}`);
+const r=spawnSync('python3',args,{encoding:'utf8',timeout:195000,maxBuffer:1000000});
+fs.writeFileSync(`${p.outputRoot}/${id}.stdout.log`,r.stdout??'',{flag:'wx'});fs.writeFileSync(`${p.outputRoot}/${id}.stderr.log`,r.stderr??'',{flag:'wx'});
+let cost=null;if(r.status===0&&fs.existsSync(out)){const u=JSON.parse(fs.readFileSync(out)).usage;assert(u&&u.input_tokens>=0&&u.output_tokens>=0);cost=(u.input_tokens*p.inputUsdPerMillionTokens+u.output_tokens*p.outputUsdPerMillionTokens)/1e6;}
+const record={videoId:p.videoId,clipId:id,completedAt:new Date().toISOString(),exitCode:r.status,signal:r.signal,attempts:1,retries:0,knownSuccessfulCallCostUsd:cost,maximumPossiblePaidCostUsd:cost??p.conservativePerCallUpperEstimateUsd,output:fs.existsSync(out)?fileRecord(out):null,invoiceVerified:false};
+fs.writeFileSync(result,JSON.stringify(record,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(record,null,2));assert.equal(r.status,0,'Boundary transcription failed; no automatic retry');

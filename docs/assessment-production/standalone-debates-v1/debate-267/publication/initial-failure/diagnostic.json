@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-publication-initial-context-failure",
+  "status": "failed-with-no-submitted-publication",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "session": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/24/rollout-2026-09-24T14-07-32-01a0d499-ed56-7301-8536-04cf5c4393fc.jsonl",
+    "bytes": 1782679,
+    "sha256": "e076410d021ae79229e19a7b922aecc8653133390f18d6c445c1e03298717a8a"
+  },
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "initialContexts": 1,
+  "contextContinuations": 2,
+  "submittedOutputs": 0,
+  "publicationOutputExists": false,
+  "readingAuditOutputExists": false,
+  "diagnosis": [
+    "The initial unsaved generator failed parsing; a subsequent unsaved preflight exceeded the critique word limit.",
+    "The controller independently found arbitrary word padding and sentence truncation in the generator, rejected that method, and prohibited its use.",
+    "The same worker then reported insufficient remaining context to author sound literal prose; no initial publication artifact was written or accepted."
+  ],
+  "preservedUnsavedGenerator": "initial-failure/unsaved-generator-1.txt",
+  "preservationScope": "Exact visible tool-call input; full original session remains local. No nonexistent output is represented as a preserved submitted draft.",
+  "repairBasis": "Authorization repairPolicy permits one attempt per explicitly bounded unavailable publication-field packet, at most two leaf fields each. No repair packet has yet been attempted. This is not a second whole-draft attempt or a retry of an exhausted repair.",
+  "judgmentsChanged": 0,
+  "ledgerChanged": 0,
+  "scorePasses": 1,
+  "scoreReruns": 0,
+  "directIncrementalCostUsd": 0
+}
