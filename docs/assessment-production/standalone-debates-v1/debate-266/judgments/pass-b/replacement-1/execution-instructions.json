@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0-frozen-isolated-primary-instructions",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/judgment-packet.json",
+      "sha256": "c49412c5ac08d2b3d2844a79930d994b2ba6ab51f6c83295a93254e43142c608",
+      "bytes": 4984
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/inventory.json",
+      "sha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de",
+      "bytes": 139869
+    },
+    {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-indexed-transcript.txt",
+      "sha256": "b2cd4b752434d3a4a28455ef8bf2d6f62bbe398213fc9448a787dbc7cc6274ae",
+      "bytes": 95238
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/score-blind-supplement.json",
+      "sha256": "480f02b9c38e74aa7fe5ae7cc427facd6b58257fb764138a0c8aba2dd1c1f4a5",
+      "bytes": 3150
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "sourceEventCount": 1533,
+  "inventoryMoveCount": 39,
+  "requirements": [
+    "Read every allowed input literally and completely, except the validator restricted to its listed lines. Transcript chunks at most 300 lines; inventory and packet in untruncated chunks. Send a reading checkpoint and wait for authenticated controller release before rating. Hashing or scripted extraction does not substitute for reading.",
+    "Fresh isolated primary assessment. Do not read the other pass, other debates, existing assessments, totals, winners, publication prose, Git history, biographies, external research, credentials or paid APIs. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shell calls. No additional agents.",
+    "Rate each locked move exactly once in inventory order on all six dimensions. Independently author values and dimension-specific source-specific rationales of at least forty characters. Do not use a formula, repeated rationale or blanket rating template. Apply rubric band anchors to the actual inference.",
+    "The source is an explicitly approved main-conversation excerpt with moderator-led branches excluded. Only the supplied scoped transcript, locked inventory and score-blind source supplement are evidence. Do not follow provenance paths to excluded full-recording captions or use audience Q&A. Neither side receives credit or penalty for excluded material. Both agree confidence can be rational; the exact narrower motion controls their opposing burdens.",
+    "Use source qualifications and live independent replies throughout the eligible excerpt. Do not require proof that God exists from a methodological challenge, and do not equate a person being reasonable with a belief objectively warranted unless the argument itself supplies that connection. Apply the neutral frozen motion rather than a stronger or weaker substituted question.",
+    "Audio-derived corrections clarify source wording and speaker attribution without editing raw caption quotations. Never penalize recognition errors; never claim to have listened to audio. Assessment confidence is distinct from source attribution confidence.",
+    "Do not alter inventory, sections, weights, importance, burden bridges, evidence or reply links. No calculated move/section/overall scores, winner or rhetorical labels. Supply only dimension ratings and rationales plus the two independently evaluated burden-completion adjustments.",
+    "The exact nine-field eligibility object is mandatory for each burden adjustment. A nonzero value needs a distinct debate-wide consequence not captured in any selected move; double-counting forces zero. Do not use adjustments as impression bonuses or penalties.",
+    "One first submission, no automatic retries or replacements. Check the schema and full move order in memory before the first write. Never invoke a calculator. Use apply_patch only at the declared output and reading-audit paths. Do not overwrite a submitted artifact. No invented deadline; continue through context compaction if necessary.",
+    "This is the sole exceptional replacement after a prior context wrote no judgment content. Do not read the prior context, placeholder, failure record, other pass or other assessments. Author the first complete genuine judgment in the declared separate paths; never create a placeholder. No further replacement or retry is authorized."
+  ],
+  "directIncrementalCostUsd": 0,
+  "attempts": 1,
+  "retries": 0,
+  "pass": "pass-b",
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/replacement-1/output.json",
+  "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/replacement-1/reading-audit.json"
+}

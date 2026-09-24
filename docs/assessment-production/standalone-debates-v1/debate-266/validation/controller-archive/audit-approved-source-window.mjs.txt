@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,validatePrimarySpeakerScopeException} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const n=process.argv[2];assert.match(n,/^\d{3,}$/);const read=p=>JSON.parse(fs.readFileSync(p));
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(r);
+const root=r.root,a=read(root+'/authorization.json'),source=read(root+'/source/source-lock.json'),inv=read(root+'/inventory/inventory.json'),manifest=read(root+'/manifest.json');
+for(const x of Object.values(manifest.sourceLocks))assert.equal(fileRecord(x.path).sha256,x.sha256);
+assert.deepEqual(source.participants.editorApprovedMainConversation,a.identity.editorApprovedMainConversation);
+const window=a.identity.editorApprovedMainConversation.assessedWindow;
+assert.deepEqual(window,a.identity.primarySpeakerScopeException.assessedWindow);
+assert.deepEqual(inv.assessedDebateWindowMs,{start:window.startMs,end:window.endMs});
+const eligible=new Set(read(manifest.sourceLocks.scopedEvents.path).map(e=>e.eventIndex));
+const scope=validatePrimarySpeakerScopeException({authorization:a,sourceLock:source,inventory:inv});
+for(const move of inv.moves){const s=move.sourceSpan;assert(s.startMs>=window.startMs&&s.endMs<=window.endMs);for(let i=s.startEvent;i<=s.endEvent;i++)assert(eligible.has(i),move.moveId+': excluded original event '+i);assert(move.respondsToIds.every(id=>inv.moves.some(m=>m.moveId===id)));}
+console.log(JSON.stringify({status:'passed-approved-window-and-primary-speaker-exclusion',debateNumber:n,debateId:r.debateId,assessedWindow:window,scope,selectedMoves:inv.moves.length,everyMoveAndReplySourceInEligibleSet:true,originalRecordingStrictlyDyadic:false,exclusionsCreditedOrPenalized:false,inventory:fileRecord(root+'/inventory/inventory.json')},null,2));

@@ -12620,5 +12620,58 @@ export const debateSummaries = [
         "title": "Multiverse symmetry and the final deeper-physics objection"
       }
     ]
+  },
+  {
+    "id": "dillahunty-giunta-faith-rational-justification-2018",
+    "number": "266",
+    "title": "Matt Dillahunty vs Blake Giunta — Faith and Rational Justification",
+    "year": 2018,
+    "label": "Faith and rational justification",
+    "date": "2026-09-24",
+    "duration": "2 hr 28 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=QHg_NL4EUAE",
+    "motion": "Must God's possibility be demonstrated before belief in God can be rationally justified?",
+    "summary": "A closely matched exchange tests whether theism needs prior possibility evidence or may enter ordinary comparative inference, with Dillahunty prevailing by one point.",
+    "topicCategory": "logic-reason-presuppositions",
+    "sides": {
+      "pro": {
+        "name": "Prior possibility requirement",
+        "speaker": "Matt Dillahunty",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Comparative explanatory justification",
+        "speaker": "Blake Giunta",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 82,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Faith, rationality, and shared ground"
+      },
+      {
+        "title": "Truth-directed standards of justification"
+      },
+      {
+        "title": "Possibility and ordinary inference"
+      },
+      {
+        "title": "The Higgs analogy and supernatural candidates"
+      },
+      {
+        "title": "Candidate status and methodological naturalism"
+      },
+      {
+        "title": "Bayesian comparison and candidate testing"
+      },
+      {
+        "title": "Updating, convergence, and fine-tuning"
+      }
+    ]
   }
 ];

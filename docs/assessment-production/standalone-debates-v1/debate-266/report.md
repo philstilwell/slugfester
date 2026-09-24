@@ -1,0 +1,43 @@
+# Debate 266 — Matt Dillahunty vs Blake Giunta
+
+## Frozen assessment
+
+The exact question is: “Must God's possibility be demonstrated before belief in God can be rationally justified?” Dillahunty represents the prior possibility requirement; Giunta represents comparative explanatory justification. Both accept that confidence supported by evidence can be rational. The title does not imply that Dillahunty denies all rational faith. The upload is dated July 31, 2018; an exact event date is not independently established.
+
+One deterministic score calculation produced **83–82**, favoring Dillahunty. Weighted section means are 82.81 and 81.78, with no burden adjustment. Thirty-nine locked moves (21 pro, 18 con) map exactly to seven sections and 21 display rows. The Bayesian section's asymmetric fourth row was authorized and mechanically checked before judgment. Two valid independent primary assessments and fresh adjudication of seven disputes preceded scoring. Stability passed: mean distance 0.5, maximum 1, excursion 1. No score rerun, manual adjustment, or scored-move deletion occurred.
+
+## Approved source scope and audio
+
+Complete English automatic captions contain 3,731 timed events and 25,840 spoken words for the approximately 2:28:59 recording. The user approved assessing only the main conversation, approximately 05:29–1:16:07. The audience question period is excluded. Both primary speakers carry the narrower motion; substantive host advocacy is excluded under the locked primary-speaker rule, together with every directly dependent reply, including the closing branch from approximately 1:06:18.
+
+Host advocacy occupies 126.578 seconds, or 2.9852% of the 4,240.181-second approved window. Dependent primary replies occupy 465.902 seconds; overlapping intervals have a union of 589.848 seconds. Every selected move, quotation, and reply link was checked against the frozen eligible source set. Neither side receives credit or penalty for excluded material. The full disclosure is prominently rendered on the scorecard rather than confined to an audit file.
+
+Six bounded independent audio transcriptions checked scope boundaries and speaker changes. Two further clips verified every triggered move-level attribution. No direct listening or full-recording audio verification is claimed. Known and maximum possible paid cost are both **$0.3053725**, calculated from returned usage at frozen official rates; this is not a reconciled invoice. The frozen estimate was $0.33855045, below the $1 cap. Eight paid calls succeeded, with no paid retry or uncertain call. Subscription-backed assessment work adds $0 direct incremental cost.
+
+## Isolated review and recoveries
+
+Fresh isolated assessment, adjudication, publication, repair, and rhetorical-review contexts used the locked subscription-backed `gpt-5.6-sol` model at low reasoning effort, with complete literal input reads authenticated before release. The first pass-b context wrote only a placeholder, not judgment content. Under the user's explicit overnight discretion instruction, one exceptional fresh isolated replacement supplied the missing assessment while the failed bytes and valid pass-a remained intact.
+
+The first publication submission passed formal length checks but its 39 critiques were insufficiently specific. Its exact bytes were preserved. Twenty fresh field-disjoint repair contexts, each limited to two declared critique leaves, replaced that prose. One repaired sentence confused a hypothesis's prior probability with its likelihood advantage; one additional bounded, single-leaf context corrected that distinction under delegated discretion. All other fields, evidence, judgments, and scores remained unchanged. A premature pair of rhetorical readers was stopped before authorization to judge; fresh readers reviewed the accepted critique version instead.
+
+Two fresh rhetorical passes covered all 39 moves and four overall blunders. A fresh adjudicator resolved all 50 anonymous candidate labels. The controller recorded five conservative exact-definition rejections of proposed equivocation labels: incomplete analogies, underdeveloped modal claims, an explicit retraction, or disputed prior assumptions did not establish a demonstrated word-meaning switch. Five rejection rationales were clarified against their definitions without changing decisions. Raw adjudication and all before/after records remain intact.
+
+The final result is two **Appeal to authority** card labels and two corresponding Overall Commentary links. No cognitive-bias label met the exact-definition threshold. Weaknesses remain explained in the critiques without forcing a nearby label onto them. The independent 25-debate window had 14 tagged cards among 455 moves (3.1%), against 2 of 39 here (5.1%); this was a consistency comparison, not a quota. Tags never changed scores.
+
+## Publication depth and AI Contribution
+
+Descriptions average 22.9 words, with none below twenty; the independent mean-depth floor was 20.9. Critiques average 127.9 words and 966.1 characters, meeting the four labeled-sentence, 105–130-word and minimum-character requirements. Repeated six-word boilerplate coverage is zero. Metric-level source-specific explanations preserve the seven-section structure, 39 moves, concise frozen motion, and other legitimate deviations from the independent 25-debate range.
+
+Both AI Contribution sides were read together for distinct inferences, punctuation, interchangeable framing, and repeated openings. Dillahunty's additions concern predictive constraints, a non-theistic comparison baseline, and source identification; Giunta's concern nonzero priors, comparative prediction portfolios, and prior sensitivity. The section contains 744 words and 33 commas, with no severe punctuation warning and no shared normalized six-word sequence with either the independent or recent 25-debate windows. It is clearly disclosed as hypothetical, unscored AI contribution rather than transcript content.
+
+## Integration, validation, and publication boundary
+
+The work is isolated on `codex/debate-266`; the original iCloud checkout remains untouched. The current upstream Blake Giunta portrait is reused, not generated. His new neutral biography cites a public biographical source reviewed on September 24, 2026, and is excluded from judgment inputs.
+
+Direct desktop (1440×1000) and phone (390×844) inspection passed for all cards, scope disclosure, portraits, critique pointer/Enter/Space focus, the initially collapsed AI accordion, and the immediate distant-control test after opening a mobile critique. The biography appears left of the graph on desktop and above it on phone. Homepage, search, topics, sitemap, both profiles, and the rankings comparison contain the new record. Twelve screenshots and six snapshots are fingerprinted. The final console has no errors or warnings, and all final requested resources succeeded. The owned browser and preview server are closed.
+
+The production validator, complete local-source replay, transcript inventory, 756 generated-page checks, full repository checks (including historical closure, calibration, all standalone records, parity, rhetorical review, and scope fixtures), site preflight, and full browser-quality suite passed. No scoring control, test threshold, performance limit, or catalogue-review checkpoint changed.
+
+Preserved diagnostic failures are administrative, not waived assessment gates: the initial production check preceded the required adapter, so it could not yet recognize valid unpaired and fourth-row cards; it passes with the frozen adapter. The first critique browser assertion sampled the fade-in before opacity reached one; the corrected state-aware test passes without a site change. Comparison controls require speaker labels, not URL slugs. The final history-comparison helper initially exceeded its default process-output buffer before writing any file; a larger read buffer allowed the exact comparison. The prior 265 debate objects, corpus entries, and older registry records are unchanged.
+
+Thirty-nine temporary controller files were archived as inert fingerprinted text; 38 and twelve duplicate preview images were removed after verifying their durable copies. The final validation recorder alone remains until its immediately-before-commit run, after which its already archived original will be removed. Raw source evidence remains in ignored cache. The final immediate precommit check, clean-checkout replay, green required pull-request check, merge, and successful Site quality and GitHub Pages deployment are publication boundaries recorded by the final command evidence and GitHub records; this precommit report does not preclaim those future results.

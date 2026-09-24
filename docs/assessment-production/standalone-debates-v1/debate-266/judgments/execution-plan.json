@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-frozen-primary-execution-plan",
+  "status": "frozen-before-primary-execution",
+  "createdAt": "2026-09-24T05:18:14.056Z",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "inventorySha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de",
+    "isolation": "Protocol-restricted fresh built-in contexts and disjoint output paths; not an operating-system filesystem sandbox."
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/judgment-packet.json",
+      "sha256": "c49412c5ac08d2b3d2844a79930d994b2ba6ab51f6c83295a93254e43142c608",
+      "bytes": 4984
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/inventory.json",
+      "sha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de",
+      "bytes": 139869
+    },
+    {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-indexed-transcript.txt",
+      "sha256": "b2cd4b752434d3a4a28455ef8bf2d6f62bbe398213fc9448a787dbc7cc6274ae",
+      "bytes": 95238
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/score-blind-supplement.json",
+      "sha256": "480f02b9c38e74aa7fe5ae7cc427facd6b58257fb764138a0c8aba2dd1c1f4a5",
+      "bytes": 3150
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-a/execution-instructions.json",
+        "sha256": "049ad057883d3804832171d572702afddf51be14b905495458cb6c07bd1e6433",
+        "bytes": 5205
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-a/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-a/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/execution-instructions.json",
+        "sha256": "c4b342cbe2ce8a0ab0d10ba86a0d895b093d20773096f9bb527df27841bca323",
+        "bytes": 5205
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-266/judgments/pass-b/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

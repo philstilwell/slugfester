@@ -1,0 +1,62 @@
+{
+  "status": "passed-direct-desktop-and-mobile-review",
+  "publicationSha256": "e3fa41a58acf4fc2ea75a3dcfba1da76707877d41c440a53d5b03881393f8100",
+  "previewPort": 4266,
+  "viewports": [{"width":1440,"height":1000},{"width":390,"height":844}],
+  "screenshotPaths": [
+    "output/playwright/debate-266/desktop-top.png",
+    "output/playwright/debate-266/desktop-scope.png",
+    "output/playwright/debate-266/desktop-critique.png",
+    "output/playwright/debate-266/desktop-ai-closed.png",
+    "output/playwright/debate-266/desktop-ai-open.png",
+    "output/playwright/debate-266/mobile-scope.png",
+    "output/playwright/debate-266/mobile-critique.png",
+    "output/playwright/debate-266/mobile-ai-closed.png",
+    "output/playwright/debate-266/mobile-ai-open.png",
+    "output/playwright/debate-266/desktop-profile.png",
+    "output/playwright/debate-266/mobile-profile.png",
+    "output/playwright/debate-266/desktop-comparison.png"
+  ],
+  "snapshotPaths": [
+    ".playwright-cli/page-2026-09-24T06-34-48-914Z.yml",
+    ".playwright-cli/page-2026-09-24T06-35-11-693Z.yml",
+    ".playwright-cli/page-2026-09-24T06-35-30-186Z.yml",
+    ".playwright-cli/page-2026-09-24T06-36-37-106Z.yml",
+    ".playwright-cli/page-2026-09-24T06-37-41-399Z.yml",
+    ".playwright-cli/page-2026-09-24T06-38-22-782Z.yml"
+  ],
+  "consolePath": "docs/assessment-production/standalone-debates-v1/debate-266/validation/browser-debate-console.log",
+  "networkPath": "docs/assessment-production/standalone-debates-v1/debate-266/validation/browser-debate-resources.log",
+  "checks": {
+    "allLockedCardsPresent": true,
+    "correctTitleMotionSourcePositionsScoresByline": true,
+    "acceptedTagsAndOverallLinksRendered": true,
+    "aiDefaultCollapsedPointerEnterSpacePassedBothViewports": true,
+    "critiquePointerEnterSpaceFocusPassedBothViewports": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "biographyLeftDesktopAboveMobile": true,
+    "bothSpeakerPortraitsLoaded": true,
+    "homeSearchTopicsSitemapBothProfilesContainDebate": true,
+    "rankingsComparisonContainsBothSpeakers": true,
+    "approvedScopeDisclosureVisible": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "observations": [
+    "Direct review at 1440 by 1000 and 390 by 844 found readable cards and source disclosure, without horizontal overflow or clipped critique text. All 39 cards, two card-level Appeal to authority tags, and two matching overall links rendered.",
+    "Both widths passed AI Contribution default-collapse, pointer, Enter, and Space checks. Critique pointer and keyboard focus worked. A distant AI control remained clickable immediately after opening the mobile critique.",
+    "The first desktop assertion sampled critique opacity before its fade-in completed. Preserved browser-desktop failure; browser-desktop-stable waits for the computed visible, fully opaque state and passes without changing site code. Mobile passes the same test.",
+    "The exact approved main-conversation notice is visible: 05:29–1:16:07 only, not the full 2:28:59 recording or audience period. Host advocacy and dependent replies are excluded, with no score credit or penalty.",
+    "Blake Giunta biography is left of the distribution chart on desktop and above it on mobile, verified both visually and by element rectangles. Both speaker portraits loaded, and both profiles link Debate 266.",
+    "Homepage reports 266 scorecards and shows the new debate first under recently added. Search for Blake Giunta yields one of 266 debates. The logic topic, sitemap, and comparison selector include the new record; comparison displays Giunta's 82 across one scorecard.",
+    "The comparison check initially supplied URL-style slugs where the controls require speaker labels; corrected test input to the observed labels. No site defect or code change resulted.",
+    "Final debate browser console has zero errors or warnings; all 16 requested resources returned 200 or 304. Owned browser slugfester266 was closed, and the owned preview server PID 95059 was stopped; port 4266 no longer listens. User browser tabs were not touched."
+  ]
+}

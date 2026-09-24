@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-validation-command-evidence",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "command": [
+    "env",
+    "npm_config_offline=true",
+    "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+    "-s=slugfester266",
+    "run-code",
+    "async(page)=>{const b=page.getByRole(\"region\",{name:\"About Blake Giunta\",exact:true}),g=page.getByRole(\"figure\",{name:\"Bar height shows the number of published scorecards in each range.\",exact:true});await b.scrollIntoViewIfNeeded();const bb=await b.boundingBox(),gb=await g.boundingBox();if(!(bb.y+bb.height<=gb.y+1))throw Error(\"Biography must precede graph vertically\");if(!await page.getByRole(\"link\",{name:/Matt Dillahunty vs Blake Giunta/}).count())throw Error(\"Missing debate\");await page.screenshot({path:\"output/playwright/debate-266/mobile-profile.png\"});return {status:\"passed\",biography:bb,graph:gb,viewport:page.viewportSize()}}"
+  ],
+  "startedAt": "2026-09-24T06:36:03.852Z",
+  "completedAt": "2026-09-24T06:36:04.798Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "status": "passed",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/validation/browser-profile-mobile.log",
+    "bytes": 890,
+    "sha256": "bf8dc8903616f1c577517e298e1f9741cd20a770b9861d99cb0ddfa332dd7602"
+  },
+  "directIncrementalCostUsd": 0
+}

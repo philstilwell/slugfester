@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0-frozen-bounded-audio-verification-plan",
+  "status": "frozen-before-paid-verification",
+  "createdAt": "2026-09-24T05:16:34.997Z",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "videoId": "QHg_NL4EUAE",
+  "inventoryCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/pre-audio-inventory.json",
+    "sha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de",
+    "bytes": 139869
+  },
+  "sourceMedia": {
+    "path": ".assessment-cache/captions/QHg_NL4EUAE/source-recovery.m4a",
+    "bytes": 141873230,
+    "sha256": "63f74415cf6fefefe8be1ed9961538c278a361dfa585deebba8968d496d98a61",
+    "durationSeconds": 8939.148481,
+    "acquisition": "Existing yt-dlp 2026.08.19 public default client fallback after public Android stream returned HTTP 403",
+    "title": "Atheist Debates - Debate - Can Faith Be Rational? Matt Dillahunty and Blake Giunta",
+    "formatId": "140",
+    "canonicalUrl": "https://www.youtube.com/watch?v=QHg_NL4EUAE"
+  },
+  "sourceOriginalAudio": true,
+  "sourceLanguage": "en",
+  "purpose": "Resolve every material below-high source wording or attribution concern before judgments; no excluded branch becomes scoring evidence.",
+  "selectedMoveIds": [
+    "con-absence-is-not-violation",
+    "pro-fine-tuning-needs-alternative-possibility"
+  ],
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "chunkingStrategy": "auto",
+  "prompt": null,
+  "knownSpeakerReferences": [
+    {
+      "speaker": "Moderator",
+      "file": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/references/moderator.wav",
+        "bytes": 224078,
+        "sha256": "510e7baa99f388a28eee32b2a9bcd3c0ed1b46aa58356d697b613f377f19fc71"
+      },
+      "durationSeconds": 7
+    },
+    {
+      "speaker": "Blake Giunta",
+      "file": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/references/blake-giunta.wav",
+        "bytes": 224078,
+        "sha256": "0d2711bc5c512008225ea6fa09a083b17ea95fb4bc6fad2ca4da2270e61e2932"
+      },
+      "durationSeconds": 7
+    },
+    {
+      "speaker": "Matt Dillahunty",
+      "file": {
+        "path": "output/transcribe/QHg_NL4EUAE-scope/references/matt-dillahunty.wav",
+        "bytes": 224078,
+        "sha256": "523367500376b359a0127d04164794307189180a6b9382f25da31a5518f45a28"
+      },
+      "durationSeconds": 7
+    }
+  ],
+  "clips": [
+    {
+      "startMs": 3111210,
+      "endMs": 3149319,
+      "durationSeconds": 38.109,
+      "moveIds": [
+        "con-absence-is-not-violation"
+      ],
+      "clipId": "clip-01",
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/verification/clips/clip-01.wav",
+      "sha256": "dca8ecb7996afdf9ddf4b0a236e3b18f24b16aaffbc6ae5d8f97fabc3abf3e92",
+      "bytes": 1219566,
+      "reservedCallEstimateUsd": 0.03250995
+    },
+    {
+      "startMs": 3921930,
+      "endMs": 3940490,
+      "durationSeconds": 18.56,
+      "moveIds": [
+        "pro-fine-tuning-needs-alternative-possibility"
+      ],
+      "clipId": "clip-02",
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/verification/clips/clip-02.wav",
+      "sha256": "f56bba19a4508c15fb56d522cf062668b1c58d5a6442d75838ce809faa367edb",
+      "bytes": 593998,
+      "reservedCallEstimateUsd": 0.021758000000000003
+    }
+  ],
+  "pricing": {
+    "verifiedDate": "2026-09-24",
+    "modelSource": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "inputUsdPerMillionTokens": 2.5,
+    "outputUsdPerMillionTokens": 10,
+    "ordinaryTranscriptionEstimatedUsdPerMinute": 0.006,
+    "verificationAudioSeconds": 56.669,
+    "referenceAudioSeconds": 42,
+    "conservativePlanningRateUsdPerMinute": 0.033,
+    "conservativeRateReason": "Observed scope verification costs were approximately $0.022 per minute; reserve $0.033 per minute including repeated reference audio, then reconcile every response token count. This is a planning estimate, not an invoice or an absolute billing guarantee.",
+    "estimatedCompleteDebatePaidWorkUsd": 0.33855045,
+    "knownCostBeforeCallsUsd": 0.2842825,
+    "maximumPossibleCostBeforeCallsUsd": 0.2842825,
+    "standingCapUsd": 1,
+    "billingConfirmed": false
+  },
+  "attemptsPerClip": 1,
+  "retries": 0,
+  "maximumClipSeconds": 150,
+  "clipSplitOverlapSeconds": 2,
+  "timeoutSeconds": 180,
+  "executionOutputRoot": "docs/assessment-production/standalone-debates-v1/debate-266/audio/responses",
+  "transcribeSkill": "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py",
+  "directListeningPerformed": false
+}
