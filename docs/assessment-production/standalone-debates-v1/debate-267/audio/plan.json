@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0-frozen-bounded-audio-verification-plan",
+  "status": "frozen-before-paid-verification",
+  "createdAt": "2026-09-24T17:50:36.204Z",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "videoId": "g6UU9C-WmvM",
+  "inventoryCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/pre-audio-inventory.json",
+    "sha256": "ee14c7563591c90257c75c4e8b34177e883a9a3f3389def789fd4fe6cb8c136d",
+    "bytes": 79649
+  },
+  "sourceMedia": {
+    "path": ".assessment-cache/captions/g6UU9C-WmvM/source-recovery.m4a",
+    "sha256": "512ed5ac2bf893b227e2a0b9e3aaa1498b99a320487313c2a237bc59539feffb",
+    "bytes": 119030663,
+    "durationSeconds": 7360.029025
+  },
+  "sourceOriginalAudio": true,
+  "sourceLanguage": "en",
+  "purpose": "Resolve every material below-high source wording or attribution concern before judgments. Excluded content is not scoring evidence.",
+  "selectedMoveIds": [
+    "wilson-accountability-extents-question",
+    "wilson-naturalism-unmoved-by-amalekites",
+    "hitchens-victim-perspective-and-present-danger",
+    "wilson-christianity-displaced-demonism",
+    "hitchens-rival-miracles-discrimination-problem",
+    "hitchens-hume-comparative-probability",
+    "wilson-ancients-knew-ordinary-natural-course",
+    "hitchens-virgin-birth-is-recurring-religious-pattern"
+  ],
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "chunkingStrategy": "auto",
+  "prompt": null,
+  "knownSpeakerReferences": [
+    {
+      "speaker": "Douglas Wilson",
+      "file": {
+        "path": "output/transcribe/g6UU9C-WmvM-boundaries/douglas-wilson.wav",
+        "sha256": "246e574a0cd23f5212dbb4341339790f42327ed520e1d387f1e2c325e5e98aef",
+        "bytes": 256078
+      },
+      "durationSeconds": 8
+    },
+    {
+      "speaker": "Christopher Hitchens",
+      "file": {
+        "path": "output/transcribe/g6UU9C-WmvM-boundaries/christopher-hitchens.wav",
+        "sha256": "26f18b78104e4939a58df01bd2434b31f14e327b8ac5acfc9b446f8849c4cd93",
+        "bytes": 256078
+      },
+      "durationSeconds": 8
+    }
+  ],
+  "clips": [
+    {
+      "startMs": 2602640,
+      "endMs": 2700760,
+      "durationSeconds": 98.12,
+      "moveIds": [
+        "wilson-accountability-extents-question"
+      ],
+      "clipId": "clip-01",
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/verification/clips/clip-01.wav",
+      "sha256": "7ac9281724640d19a89c14c9dbd8f7e340fd07d44a51b8ec1fe4c9b1ad65f9ec",
+      "bytes": 3139918,
+      "reservedCallEstimateUsd": 0.06
+    },
+    {
+      "startMs": 2816920,
+      "endMs": 2902440,
+      "durationSeconds": 85.52,
+      "moveIds": [
+        "wilson-naturalism-unmoved-by-amalekites",
+        "hitchens-victim-perspective-and-present-danger"
+      ],
+      "clipId": "clip-02",
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/verification/clips/clip-02.wav",
+      "sha256": "00b7cbe4454af01a160c6296a574c0b22717ab1c484a5067f450db084ee74e71",
+      "bytes": 2736718,
+      "reservedCallEstimateUsd": 0.06
+    },
+    {
+      "startMs": 3110040,
+      "endMs": 3187200,
+      "durationSeconds": 77.16,
+      "moveIds": [
+        "wilson-christianity-displaced-demonism"
+      ],
+      "clipId": "clip-03",
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/verification/clips/clip-03.wav",
+      "sha256": "38647017b0ba336a078dc7aef06fefdea81f6a5b3f18be7afe5eabe8f3ed1f7f",
+      "bytes": 2469198,
+      "reservedCallEstimateUsd": 0.06
+    },
+    {
+      "startMs": 3258760,
+      "endMs": 3339880,
+      "durationSeconds": 81.12,
+      "moveIds": [
+        "hitchens-rival-miracles-discrimination-problem"
+      ],
+      "clipId": "clip-04",
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/verification/clips/clip-04.wav",
+      "sha256": "2a2ea0107b0742794c1756abb5b4d2b96889488b900cad6b0af6b99abd5c61c4",
+      "bytes": 2595918,
+      "reservedCallEstimateUsd": 0.06
+    },
+    {
+      "startMs": 4169799,
+      "endMs": 4309000,
+      "durationSeconds": 139.201,
+      "moveIds": [
+        "hitchens-hume-comparative-probability",
+        "wilson-ancients-knew-ordinary-natural-course",
+        "hitchens-virgin-birth-is-recurring-religious-pattern"
+      ],
+      "clipId": "clip-05",
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/verification/clips/clip-05.wav",
+      "sha256": "8a728468f8b3dff217b04ecbbc57ed2ee8ba2838a4a8427bbd30703a8a9d764d",
+      "bytes": 4454510,
+      "reservedCallEstimateUsd": 0.06
+    }
+  ],
+  "pricing": {
+    "verifiedDate": "2026-09-24",
+    "modelSource": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "inputUsdPerMillionTokens": 2.5,
+    "outputUsdPerMillionTokens": 10,
+    "perCallUpperEstimateUsd": 0.06,
+    "estimateBasis": "Conservatively price all 16000 documented context tokens as input plus all 2000 maximum output tokens; this double-counts output if the context limit is combined. Short clips are far below the input limit. Reconcile actual returned usage after every call; do not call this an invoice.",
+    "estimatedCompleteDebatePaidWorkUsd": 0.32047749999999997,
+    "knownCostBeforeCallsUsd": 0.020477500000000003,
+    "maximumPossibleCostBeforeCallsUsd": 0.020477500000000003,
+    "standingCapUsd": 1,
+    "billingConfirmed": false
+  },
+  "attemptsPerClip": 1,
+  "retries": 0,
+  "maximumClipSeconds": 150,
+  "clipSplitOverlapSeconds": 2,
+  "timeoutSeconds": 180,
+  "executionOutputRoot": "output/transcribe/g6UU9C-WmvM-verification",
+  "transcribeSkill": "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py",
+  "directListeningPerformed": false
+}

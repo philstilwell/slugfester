@@ -1,0 +1,732 @@
+{
+  "schemaVersion": "1.1-isolated-publication-with-unavailable-field-recovery",
+  "status": "passed-authenticated-isolated-publication",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "initialContext": {
+    "executionPlan": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/execution-plan.json",
+      "sha256": "52ed24ce82144d894c621abeb976aff681db8cebcf40db4c5b0f4405512b0a37",
+      "bytes": 2301
+    },
+    "readingRelease": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/reading-release.json",
+      "sha256": "bf3b582a2454a74d43e882c4f14ff1c944a50c3e6d1d47178ed0d5589e904e5a",
+      "bytes": 232916
+    },
+    "failure": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/initial-failure/diagnostic.json",
+      "sha256": "27cfda15667402ecf89ac77c8067dec4cf79d09620812e020868cd4270ad3010",
+      "bytes": 1743
+    },
+    "submittedOutputs": 0
+  },
+  "repairPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/plan.json",
+    "sha256": "d69e2ca19f8758d7641fa155298ee6d43a58653faaf1651beefd7ca9c2ad890a",
+    "bytes": 8710
+  },
+  "repairContexts": [
+    {
+      "groupId": "cards-1",
+      "agentPath": "/root/publication_267_cards1",
+      "model": {
+        "slug": "gpt-5.6-sol",
+        "displayLabel": "5.6 Sol",
+        "reasoningEffort": "low",
+        "authentication": "ChatGPT subscription"
+      },
+      "actualModelContexts": [
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        }
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/cards-1/execution.json",
+        "sha256": "3308faf259b7f412acbe2a473f983efba91c475e7cb10bc4352caf0142083071",
+        "bytes": 4789
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/cards-1/output.json",
+        "sha256": "1180bf86da414adf31a1e0ad5aa2a94d646916878f7c5759cfbd890521b07d2b",
+        "bytes": 11606
+      },
+      "shards": [
+        {
+          "shardId": "001",
+          "fields": [
+            "candidate.sections[0].exchanges[0].pro.words",
+            "candidate.sections[0].exchanges[0].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "002",
+          "fields": [
+            "candidate.sections[0].exchanges[0].con.words",
+            "candidate.sections[0].exchanges[0].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "003",
+          "fields": [
+            "candidate.sections[0].exchanges[1].pro.words",
+            "candidate.sections[0].exchanges[1].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "004",
+          "fields": [
+            "candidate.sections[1].exchanges[0].pro.words",
+            "candidate.sections[1].exchanges[0].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "005",
+          "fields": [
+            "candidate.sections[1].exchanges[0].con.words",
+            "candidate.sections[1].exchanges[0].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "006",
+          "fields": [
+            "candidate.sections[1].exchanges[1].pro.words",
+            "candidate.sections[1].exchanges[1].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "007",
+          "fields": [
+            "candidate.sections[1].exchanges[1].con.words",
+            "candidate.sections[1].exchanges[1].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "008",
+          "fields": [
+            "candidate.sections[1].exchanges[2].con.words",
+            "candidate.sections[1].exchanges[2].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "009",
+          "fields": [
+            "candidate.sections[0].exchanges[0].pro.role",
+            "candidate.sections[0].exchanges[0].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "010",
+          "fields": [
+            "candidate.sections[0].exchanges[1].pro.role",
+            "candidate.sections[1].exchanges[0].pro.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "011",
+          "fields": [
+            "candidate.sections[1].exchanges[0].con.role",
+            "candidate.sections[1].exchanges[1].pro.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "012",
+          "fields": [
+            "candidate.sections[1].exchanges[1].con.role",
+            "candidate.sections[1].exchanges[2].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        }
+      ]
+    },
+    {
+      "groupId": "cards-2",
+      "agentPath": "/root/publication_267_cards2",
+      "model": {
+        "slug": "gpt-5.6-sol",
+        "displayLabel": "5.6 Sol",
+        "reasoningEffort": "low",
+        "authentication": "ChatGPT subscription"
+      },
+      "actualModelContexts": [
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        }
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/cards-2/execution.json",
+        "sha256": "3bc108b52aa55db9c1fb23c6f29ab2c2f2b47028d54ed8c4ef44ad98574b9663",
+        "bytes": 4790
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/cards-2/output.json",
+        "sha256": "f810f299ae8aa6f0e8238ce3a4010e0b54cf736c02f694ced6ab885d77e9c9e4",
+        "bytes": 11778
+      },
+      "shards": [
+        {
+          "shardId": "013",
+          "fields": [
+            "candidate.sections[2].exchanges[0].pro.words",
+            "candidate.sections[2].exchanges[0].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "014",
+          "fields": [
+            "candidate.sections[2].exchanges[0].con.words",
+            "candidate.sections[2].exchanges[0].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "015",
+          "fields": [
+            "candidate.sections[2].exchanges[1].pro.words",
+            "candidate.sections[2].exchanges[1].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "016",
+          "fields": [
+            "candidate.sections[2].exchanges[1].con.words",
+            "candidate.sections[2].exchanges[1].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "017",
+          "fields": [
+            "candidate.sections[2].exchanges[2].pro.words",
+            "candidate.sections[2].exchanges[2].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "018",
+          "fields": [
+            "candidate.sections[3].exchanges[0].pro.words",
+            "candidate.sections[3].exchanges[0].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "019",
+          "fields": [
+            "candidate.sections[3].exchanges[0].con.words",
+            "candidate.sections[3].exchanges[0].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "020",
+          "fields": [
+            "candidate.sections[3].exchanges[1].pro.words",
+            "candidate.sections[3].exchanges[1].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "021",
+          "fields": [
+            "candidate.sections[2].exchanges[0].pro.role",
+            "candidate.sections[2].exchanges[0].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "022",
+          "fields": [
+            "candidate.sections[2].exchanges[1].pro.role",
+            "candidate.sections[2].exchanges[1].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "023",
+          "fields": [
+            "candidate.sections[2].exchanges[2].pro.role",
+            "candidate.sections[3].exchanges[0].pro.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "024",
+          "fields": [
+            "candidate.sections[3].exchanges[0].con.role",
+            "candidate.sections[3].exchanges[1].pro.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        }
+      ]
+    },
+    {
+      "groupId": "cards-3",
+      "agentPath": "/root/publication_267_cards3",
+      "model": {
+        "slug": "gpt-5.6-sol",
+        "displayLabel": "5.6 Sol",
+        "reasoningEffort": "low",
+        "authentication": "ChatGPT subscription"
+      },
+      "actualModelContexts": [
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        }
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/cards-3/execution.json",
+        "sha256": "e3eb5a2d092ee67827f2d16ad93fd08c4d1e1b9675027dd79df8e7d9c9a0e10a",
+        "bytes": 4790
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/cards-3/output.json",
+        "sha256": "fe6c87d2841313e9675cfe20ec4558856be5e71aa2927e2cd199ae63c6e842ca",
+        "bytes": 13271
+      },
+      "shards": [
+        {
+          "shardId": "025",
+          "fields": [
+            "candidate.sections[3].exchanges[1].con.words",
+            "candidate.sections[3].exchanges[1].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "026",
+          "fields": [
+            "candidate.sections[3].exchanges[2].pro.words",
+            "candidate.sections[3].exchanges[2].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "027",
+          "fields": [
+            "candidate.sections[3].exchanges[2].con.words",
+            "candidate.sections[3].exchanges[2].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "028",
+          "fields": [
+            "candidate.sections[3].exchanges[3].con.words",
+            "candidate.sections[3].exchanges[3].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "029",
+          "fields": [
+            "candidate.sections[4].exchanges[0].pro.words",
+            "candidate.sections[4].exchanges[0].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "030",
+          "fields": [
+            "candidate.sections[4].exchanges[0].con.words",
+            "candidate.sections[4].exchanges[0].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "031",
+          "fields": [
+            "candidate.sections[4].exchanges[1].pro.words",
+            "candidate.sections[4].exchanges[1].pro.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "032",
+          "fields": [
+            "candidate.sections[4].exchanges[1].con.words",
+            "candidate.sections[4].exchanges[1].con.critique"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "033",
+          "fields": [
+            "candidate.sections[3].exchanges[1].con.role",
+            "candidate.sections[3].exchanges[2].pro.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "034",
+          "fields": [
+            "candidate.sections[3].exchanges[2].con.role",
+            "candidate.sections[3].exchanges[3].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "035",
+          "fields": [
+            "candidate.sections[4].exchanges[0].pro.role",
+            "candidate.sections[4].exchanges[0].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "036",
+          "fields": [
+            "candidate.sections[4].exchanges[1].pro.role",
+            "candidate.sections[4].exchanges[1].con.role"
+          ],
+          "attempts": 1,
+          "retries": 0
+        }
+      ]
+    },
+    {
+      "groupId": "overview",
+      "agentPath": "/root/publication_267_overview",
+      "model": {
+        "slug": "gpt-5.6-sol",
+        "displayLabel": "5.6 Sol",
+        "reasoningEffort": "low",
+        "authentication": "ChatGPT subscription"
+      },
+      "actualModelContexts": [
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        },
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        }
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/overview/execution.json",
+        "sha256": "673f1003135e59df266c4f23afe5e511cc18e98d6b09f1678c74ccdb4f8e4a9f",
+        "bytes": 4072
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/overview/output.json",
+        "sha256": "09cb67cdd6be5bd3cad72e4bc2d4dee13b46aedc1f5615f178b3880e5fd15e93",
+        "bytes": 5799
+      },
+      "shards": [
+        {
+          "shardId": "037",
+          "fields": [
+            "candidate.summary",
+            "candidate.sourceNote"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "038",
+          "fields": [
+            "candidate.scoringNote",
+            "candidate.quotes.pro.text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "039",
+          "fields": [
+            "candidate.quotes.pro.context",
+            "candidate.overall.pro.strengths[0]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "040",
+          "fields": [
+            "candidate.overall.pro.strengths[1]",
+            "candidate.overall.pro.strengths[2]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "041",
+          "fields": [
+            "candidate.overall.pro.blunders[0].text",
+            "candidate.overall.pro.blunders[1].text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "042",
+          "fields": [
+            "candidate.quotes.con.text",
+            "candidate.quotes.con.context"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "043",
+          "fields": [
+            "candidate.overall.con.strengths[0]",
+            "candidate.overall.con.strengths[1]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "044",
+          "fields": [
+            "candidate.overall.con.strengths[2]",
+            "candidate.overall.con.blunders[0].text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "045",
+          "fields": [
+            "candidate.overall.con.blunders[1].text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        }
+      ]
+    },
+    {
+      "groupId": "ai-contribution",
+      "agentPath": "/root/publication_267_ai",
+      "model": {
+        "slug": "gpt-5.6-sol",
+        "displayLabel": "5.6 Sol",
+        "reasoningEffort": "low",
+        "authentication": "ChatGPT subscription"
+      },
+      "actualModelContexts": [
+        {
+          "model": "gpt-5.6-sol",
+          "reasoningEffort": "low"
+        }
+      ],
+      "execution": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/ai-contribution/execution.json",
+        "sha256": "c79c9b40592efbe83961ecb4bb5705837f924fd3c8e22490b4a1ff2fd1a40e0f",
+        "bytes": 5271
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/field-repair-1/ai-contribution/output.json",
+        "sha256": "2451691351195bfbcb3072b4b4394ad63f12306275f77792455982ee55fd8f8c",
+        "bytes": 9460
+      },
+      "shards": [
+        {
+          "shardId": "046",
+          "fields": [
+            "candidate.logicalExtension.pro.finalArgument.thesis",
+            "candidate.logicalExtension.pro.finalArgument.premises[0]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "047",
+          "fields": [
+            "candidate.logicalExtension.pro.finalArgument.premises[1]",
+            "candidate.logicalExtension.pro.finalArgument.premises[2]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "048",
+          "fields": [
+            "candidate.logicalExtension.pro.finalArgument.premises[3]",
+            "candidate.logicalExtension.pro.finalArgument.premises[4]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "049",
+          "fields": [
+            "candidate.logicalExtension.pro.finalArgument.conclusion",
+            "candidate.logicalExtension.pro.newArguments[0].title"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "050",
+          "fields": [
+            "candidate.logicalExtension.pro.newArguments[0].text",
+            "candidate.logicalExtension.pro.newArguments[1].title"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "051",
+          "fields": [
+            "candidate.logicalExtension.pro.newArguments[1].text",
+            "candidate.logicalExtension.pro.newArguments[2].title"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "052",
+          "fields": [
+            "candidate.logicalExtension.pro.newArguments[2].text",
+            "candidate.logicalExtension.con.finalArgument.thesis"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "053",
+          "fields": [
+            "candidate.logicalExtension.con.finalArgument.premises[0]",
+            "candidate.logicalExtension.con.finalArgument.premises[1]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "054",
+          "fields": [
+            "candidate.logicalExtension.con.finalArgument.premises[2]",
+            "candidate.logicalExtension.con.finalArgument.premises[3]"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "055",
+          "fields": [
+            "candidate.logicalExtension.con.finalArgument.premises[4]",
+            "candidate.logicalExtension.con.finalArgument.conclusion"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "056",
+          "fields": [
+            "candidate.logicalExtension.con.newArguments[0].title",
+            "candidate.logicalExtension.con.newArguments[0].text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "057",
+          "fields": [
+            "candidate.logicalExtension.con.newArguments[1].title",
+            "candidate.logicalExtension.con.newArguments[1].text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        },
+        {
+          "shardId": "058",
+          "fields": [
+            "candidate.logicalExtension.con.newArguments[2].title",
+            "candidate.logicalExtension.con.newArguments[2].text"
+          ],
+          "attempts": 1,
+          "retries": 0
+        }
+      ]
+    }
+  ],
+  "output": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/output.json",
+    "sha256": "3964515e0143835e903b2ce1e76d2e398eca58fbd9e3cd0a1263608b67322231",
+    "bytes": 56880
+  },
+  "validation": {
+    "status": "mechanically-valid-editorial-review-required",
+    "cards": 24,
+    "sections": 5,
+    "minimumCritiqueCharacters": 898,
+    "maximumCritiqueWords": 130,
+    "boilerplateMean": 0.015230815545102888,
+    "boilerplateMax": 0.048
+  },
+  "mechanicalAssembly": true,
+  "initialAttempts": 1,
+  "repairAttemptsPerShard": 1,
+  "repairShards": 58,
+  "retriesOfExhaustedRepairs": 0,
+  "scoreChanges": 0,
+  "judgmentChanges": 0,
+  "directIncrementalCostUsd": 0
+}

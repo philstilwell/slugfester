@@ -1,0 +1,48 @@
+{
+  "status": "frozen-before-model",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "createdAt": "2026-09-24T17:28:20.965Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "Fresh built-in subagent with fork_turns none; declared-input protocol isolation, not an operating-system sandbox.",
+  "attempts": 1,
+  "retries": 0,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/packet.json",
+      "sha256": "1ad69d897ad0e74d1aead477e76ba24d26b5529505deeb57fe23c49facd3cf3e",
+      "bytes": 11888
+    },
+    {
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/scoped-indexed-transcript.txt",
+      "sha256": "19eee64802632103c384a79907ec1c054e3753921d4c6c49b46e37e83d830f25",
+      "bytes": 76548
+    },
+    {
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/scoped-events.json",
+      "sha256": "f47fefcce4fe3eea1d50203fd66156335f73ae346b496017add36a86995dc4e0",
+      "bytes": 162791
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLineRanges": [
+        {
+          "start": 1,
+          "end": 461
+        }
+      ]
+    }
+  ],
+  "allowedOutputPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-267/inventory/draft-parts.json",
+    "docs/assessment-production/standalone-debates-v1/debate-267/inventory/reading-audit.json"
+  ],
+  "directIncrementalCostUsd": 0
+}

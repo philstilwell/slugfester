@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-independent-rhetorical-review-execution",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "isolation": {
+    "existingTagsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true,
+    "scoresUnavailable": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/catalog-snapshot.json",
+    "sha256": "f1156bfc6faa312a15fdbed3895cf6baaf86499213f2d923a4d824baa5d3bd95",
+    "bytes": 5059
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "27057d3cc42c6139ddcc3ada7fd517946d75e3a10865ac54f5ef15ca04292b1d",
+    "bytes": 90158
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "27057d3cc42c6139ddcc3ada7fd517946d75e3a10865ac54f5ef15ca04292b1d",
+        "bytes": 90158
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/pass-a/output.json",
+        "sha256": "3c0c5ee8cb29731eb6822992e180a1185f96fcdcc388731ce7d25cbccaa957f2",
+        "bytes": 57021
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/pass-a/execution.json",
+        "sha256": "172f5cc9e24d8e88f249d9a531e81f41d18f3ce36c1f45d313f9d7fe25136a2c",
+        "bytes": 2366
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "27057d3cc42c6139ddcc3ada7fd517946d75e3a10865ac54f5ef15ca04292b1d",
+        "bytes": 90158
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/pass-b/output.json",
+        "sha256": "5af84672e56420a9e8108871dbbc8ee6b163141db05ede871aacec1082cc07ff",
+        "bytes": 55655
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/pass-b/execution.json",
+        "sha256": "3668de86ee2ce492099ac33728f7f78544c9b787a25d3c56fb4d5431cae705fd",
+        "bytes": 2440
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/adjudication/input.json",
+        "sha256": "34b5c7d51064a75a57d76124d6b5ff0a045ac5bb517850b0d09d560f64203c89",
+        "bytes": 131605
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/adjudication/output.json",
+        "sha256": "64ea5f29ec3df7b11d8b989d3a6459fd0f866ed61fd22ac08668cb5da0971284",
+        "bytes": 26659
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/adjudication/execution.json",
+        "sha256": "b80ef567af772f4cc5bc92b973826d77067a265257eee4aa757d5215b3afd65e",
+        "bytes": 2493
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "controllerDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/rhetorical-tag-review-1/controller-definition-check.json",
+    "sha256": "1678b64f8202a26e61baf494630e4a625f4b6e153afc1365124b3e2dde39d593",
+    "bytes": 10765
+  },
+  "audit": {
+    "blindReviews": 2,
+    "anonymousAdjudicators": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "controllerOverrides": 5,
+    "rejectedReasonClarifications": 2
+  }
+}

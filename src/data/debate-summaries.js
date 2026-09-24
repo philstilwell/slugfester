@@ -12673,5 +12673,52 @@ export const debateSummaries = [
         "title": "Updating, convergence, and fine-tuning"
       }
     ]
+  },
+  {
+    "id": "hitchens-wilson-truth-goodness-beauty-2008",
+    "number": "267",
+    "title": "Christopher Hitchens vs Douglas Wilson — Truth, Goodness, and Beauty",
+    "year": 2008,
+    "label": "Truth, goodness, and beauty",
+    "date": "2026-09-24",
+    "duration": "2 hr 2 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=g6UU9C-WmvM",
+    "motion": "Are truth, goodness, and beauty better explained by Christian theism than by atheistic naturalism?",
+    "summary": "Wilson argues that theism grounds reason, value, and purposeful beauty; Hitchens answers with human responsibility, secular awe, skeptical inquiry, and stricter tests for miracles.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "Douglas Wilson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheistic naturalism",
+        "speaker": "Christopher Hitchens",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Rational grounding and inquiry"
+      },
+      {
+        "title": "Objective value and moral authority"
+      },
+      {
+        "title": "Beauty, culture, and transcendence"
+      },
+      {
+        "title": "Miracles, testimony, and rival claims"
+      },
+      {
+        "title": "Superstition and cultural effects"
+      }
+    ]
   }
 ];

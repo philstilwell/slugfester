@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains eligible beyond the locked moves; the unresolved grounding and discrimination gaps are already reflected in their ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the selected pro moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified beyond rated move performance.",
+            "alreadyCapturedBy": [
+              "wilson-material-motion-self-undermines",
+              "wilson-objective-triad-needs-ground",
+              "wilson-counterfeits-do-not-negate-genuine"
+            ],
+            "counterfactual": "Removing any proposed adjustment would not omit an independently established pro burden consequence."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains outside the selected moves; the rational, value, artistry, miracle, and cultural bridges are already represented in move ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion is independently satisfied beyond the selected pro moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No uncaptured debate-wide consequence was identified for the pro side.",
+            "alreadyCapturedBy": [
+              "wilson-preconditions-before-evidence",
+              "wilson-objective-triad-needs-ground",
+              "wilson-intention-makes-cosmos-artistry",
+              "wilson-counterfeits-do-not-negate-genuine"
+            ],
+            "counterfactual": "Removing any proposed global effect would only repeat consequences already reflected in the corresponding move dimensions."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains eligible beyond the locked moves; the secular alternatives and their limits are already captured in the ratings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the selected con moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No separate debate-wide consequence was identified beyond rated move performance.",
+            "alreadyCapturedBy": [
+              "hitchens-natural-world-sustains-awe",
+              "hitchens-divine-command-can-license-killing",
+              "hitchens-hume-comparative-probability"
+            ],
+            "counterfactual": "Removing any proposed adjustment would not omit an independently established con burden consequence."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains outside the selected moves; responsibility, cultural preservation, inquiry, superstition, and rival-claim bridges are already rated.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion is independently satisfied beyond the selected con moves.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No uncaptured debate-wide consequence was identified for the con side.",
+            "alreadyCapturedBy": [
+              "hitchens-human-responsibility-without-just-god",
+              "hitchens-separate-beauty-from-supernatural",
+              "hitchens-inquiry-opens-further-discovery",
+              "hitchens-hume-comparative-probability"
+            ],
+            "counterfactual": "Removing any proposed global effect would only repeat consequences already reflected in the corresponding move dimensions."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 24,
+    "disputesExtracted": 2,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/inventory.json",
+      "sha256": "ee14c7563591c90257c75c4e8b34177e883a9a3f3389def789fd4fe6cb8c136d"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-a/output.json",
+      "sha256": "5aa17c70b01170baf85afb2623fc492a452e11b2dbfdc9c353cbb9824ec25c2c"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-b/output.json",
+      "sha256": "699ae010a7aad8092b03e0de672f7058d6cdec27f66185d82e33c9443e38ccf5"
+    }
+  }
+}

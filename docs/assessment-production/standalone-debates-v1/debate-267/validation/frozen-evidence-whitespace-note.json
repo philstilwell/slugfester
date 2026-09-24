@@ -1,0 +1,9 @@
+{
+  "status": "reviewed-exact-frozen-evidence-exception",
+  "path": "docs/assessment-production/standalone-debates-v1/debate-267/publication/initial-failure/unsaved-generator-1.txt",
+  "finding": "git diff --cached --check reports one new blank line at EOF in the exact preserved invalid generator.",
+  "disposition": "Preserve the failed generator byte-for-byte as required by the assessment protocol. Do not trim or rewrite historical failure evidence merely to remove this whitespace notice. The complete remaining staged diff passes the unchanged whitespace check.",
+  "scope": "One inert frozen failure-evidence text file only; no source-code, publication-data or generated-page whitespace exception.",
+  "testLimitsChanged": false,
+  "frozenEvidenceChanged": false
+}

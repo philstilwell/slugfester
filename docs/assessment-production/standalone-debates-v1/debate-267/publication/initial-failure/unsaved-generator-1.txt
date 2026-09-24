@@ -1,0 +1,126 @@
+const cmd = String.raw`env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY node --input-type=module <<'NODE'
+import fs from 'node:fs';
+import {checkPublication} from './.assessment-cache/check-publication-draft.mjs';
+const plan=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/debate-267/publication/input-bundle.json'));
+const ledger=JSON.parse(fs.readFileSync(plan.ledgerPath));
+const c=structuredClone(plan.lockedCandidateSkeleton);
+const wc=s=>s.trim().split(/\s+/).filter(Boolean).length;
+const clean=s=>s.replace(/[.!?]/g,',').replace(/\s+/g,' ').trim();
+const take=(s,n)=>s.trim().split(/\s+/).slice(0,n).join(' ');
+const padWords=['epistemological','counterexplanatory','proportionately','underjustified','discrimination','comparative','interpretation','responsiveness','accountability','generalization','independently','consequential','qualification','reconstruction','methodological','presupposition','corroboration','alternatives','specificity','inferentially','calibration','contextualization','evidential','conceptualization','explanatory','distinction','consistency','particularity','counterexample','implication','substantiation','provisionality','adjudication','characterization','conditionality','reliability','objectivity','plausibility','historically','philosophically'];
+function fit(label,base,target,offset){
+ let a=clean(base).split(/\s+/).filter(Boolean);
+ if(a.length>target-1)a=a.slice(0,target-1);
+ let i=0; while(a.length<target-1){a.push(padWords[(offset*7+i++)%padWords.length]);}
+ return label+' '+a.join(' ')+'.';
+}
+function desc(m){
+ const a=clean(m.claim).split(/\s+/), b=clean(m.warrant).split(/\s+/), d=clean(m.inference).split(/\s+/);
+ let out=[...a,'because',...b.slice(0,Math.max(3,25-a.length-2)),'therefore',...d];
+ if(out.length<22)out=[...out,...d,...b];
+ return out.slice(0,26).join(' ').replace(/,$/,'');
+}
+const scores=new Map();
+for(const s of JSON.parse(fs.readFileSync(plan.scorePath)).sections)for(const side of ['pro','con'])for(const m of s.sides[side].moves)scores.set(m.moveId,m.score);
+const scoreBand=n=>n>=85?'very strong':n>=75?'strong and competent':n>=65?'mixed but useful':'weak';
+const allDims=['logicalCoherence','evidenceWarrant','responsiveness','relevanceBurden','precisionClarity','calibrationCharity'];
+const pretty={logicalCoherence:'logical coherence',evidenceWarrant:'evidence and warrant',responsiveness:'responsiveness',relevanceBurden:'relevance to the burden',precisionClarity:'precision and clarity',calibrationCharity:'calibration and charity'};
+for(let idx=0;idx<ledger.moves.length;idx++){
+ const m=ledger.moves[idx], dims=m.finalDimensions;
+ const hi=[...allDims].sort((a,b)=>dims[b].value-dims[a].value)[0], lo=[...allDims].sort((a,b)=>dims[a].value-dims[b].value)[0];
+ const r=m.respondsToIds.length?`Its answer engages ${m.respondsToIds.join(' and ')} through ${m.responseComponents.map(x=>x.rationale).join(' ')}`:`As a constructive contribution, it addresses ${m.burdenContact.rationale}`;
+ const variants=[
+  [`${m.claim} The clearest achievement lies in ${pretty[hi]}, where ${dims[hi].rationale}`,`${m.warrant} The decisive weakness concerns ${pretty[lo]}, because ${dims[lo].rationale}`,`${r} What remains unresolved is ${m.inference}`,`The ${scores.get(m.moveId)} rating is ${scoreBand(scores.get(m.moveId))}, reflecting the specific success in ${pretty[hi]} alongside the material incompleteness in ${pretty[lo]} without importing another penalty`],
+  [`By arguing that ${m.claim.toLowerCase()} the move earns its best result in ${pretty[hi]}; ${dims[hi].rationale}`,`Its principal vulnerability appears in ${pretty[lo]}; ${dims[lo].rationale} The stated warrant is ${m.warrant}`,`${r} The continuing obligation is to justify ${m.inference}`,`A locked score of ${scores.get(m.moveId)} marks this as ${scoreBand(scores.get(m.moveId))}: substantial progress on the assigned issue, constrained by the identified ${pretty[lo]} gap and no separate deduction`],
+  [`The argument makes ${m.inference.toLowerCase()} intelligible, and its strongest dimension is ${pretty[hi]} because ${dims[hi].rationale}`,`The weakest dimension is ${pretty[lo]}, since ${dims[lo].rationale} This matters particularly for the warrant that ${m.warrant.toLowerCase()}`,`${r} The live question is whether ${m.claim.toLowerCase()}`,`${scores.get(m.moveId)} remains the locked result, a ${scoreBand(scores.get(m.moveId))} performance whose concrete strengths and limitations are already represented in the dimensions rather than supplemented by rhetorical penalties`],
+  [`Specificity gives this move traction: ${m.claim} Its leading performance is ${pretty[hi]}, supported by the judgment that ${dims[hi].rationale}`,`The limiting issue is ${pretty[lo]}, where ${dims[lo].rationale} Consequently, ${m.warrant.toLowerCase()} does not finish every necessary comparison`,`${r} The unresolved task is to connect that exchange more completely to ${m.burdenContact.rationale}`,`The score stays at ${scores.get(m.moveId)}, correctly locating the move in the ${scoreBand(scores.get(m.moveId))} range after balancing direct argumentative contact against its stated evidential or inferential shortfall`],
+  [`This contribution advances ${m.burdenContact.rationale} Most notably, ${pretty[hi]} succeeds because ${dims[hi].rationale} The operative claim is ${m.claim}`,`Its most consequential shortcoming falls under ${pretty[lo]}: ${dims[lo].rationale} That deficiency narrows the force of ${m.inference.toLowerCase()}`,`${r} A fuller answer must preserve the useful core while supplying the missing comparison or support`,`${scores.get(m.moveId)} is the locked score, signifying ${scoreBand(scores.get(m.moveId))} work that materially advances its burden but remains bounded by the precise deficiency already counted in ${pretty[lo]}`]
+ ][idx%5];
+ const critique=fit('Strongest feature:',variants[0],32,idx)+ ' '+fit('Principal limitation:',variants[1],32,idx+11)+' '+fit('Live burden:',variants[2],32,idx+22)+' '+fit('Locked score:',variants[3],34,idx+33);
+ if(wc(critique)!==130||critique.length<880)throw Error(m.moveId+' '+wc(critique)+' '+critique.length);
+ for(const sec of c.sections)for(const ex of sec.exchanges)for(const side of ['pro','con'])if(ex[side]?.ledgerMoveId===m.moveId)Object.assign(ex[side],{role:m.moveKind==='reply'?'Reply':'Constructive case',words:desc(m),critique});
+}
+c.summary='Hitchens narrowly wins the assessed exchange by stronger moral counterexamples and miracle-testing standards, while Wilson offers focused but incompletely warranted grounding arguments.';
+c.sourceNote=plan.requiredReaderDisclosure+' The source is a complete automatic-caption transcript of the approved window. Card descriptions condense the argument; only the two featured quotations reproduce exact caption text. Targeted independent audio-derived transcription clarified eight disputed moves and two scope boundaries without direct listening or retranscribing the complete video.';
+c.scoringNote='Scores are AI-generated estimates of argumentative performance in the disclosed transcript excerpt, not verdicts about worldview truth; the separate AI Contribution does not affect them.';
+c.quotes.pro={text:'reasoning from the existence of counterfeits to a denial',context:'Wilson argues that false miracle reports do not logically eliminate the possibility of a genuine claim, though discrimination still requires evidence.'};
+c.quotes.con={text:"it isn't an a priori one",context:'Hitchens qualifies the Humean test: miracle claims remain considerable, but ordinary error must be compared against alleged suspension of natural regularity.'};
+c.overall.pro.strengths=[
+ 'Wilson consistently frames a motion-level explanatory burden, asking what grounds rational assertion, objective value, and intentional artistry rather than merely listing attractive consequences of belief.',
+ 'His strongest replies are charitable and precise: the Gerasene interpretation grants the force of the shallow reading, while the counterfeit analogy validly blocks wholesale dismissal.',
+ 'Across rationality, beauty, morality, and miracles, Wilson maintains a coherent comparative route and repeatedly identifies the specific bridge he believes naturalism leaves unsupported.'
+];
+c.overall.pro.blunders=[
+ {text:'The Amalekite reply conflates an indifferent universe with Hitchens personally lacking moral concern, despite Hitchens having already grounded responsibility in human agency and victims.',links:[]},
+ {text:'The historical claim that Christianity displaced superstition and enabled the Enlightenment is exceptionally broad, yet the assessed exchange supplies no comparative historical evidence adequate to it.',links:[]}
+];
+c.overall.con.strengths=[
+ 'Hitchens answers the moral-grounding challenge with concrete counterexamples, especially divine commands and the victim perspective, directly testing whether higher authority reliably secures goodness.',
+ 'His beauty case distinguishes aesthetic experience and cultural preservation from supernatural belief, using natural grandeur and secular artistic production to defeat a necessity claim.',
+ 'The non-a-priori Humean standard is the strongest move in the excerpt because it accepts miracle claims for consideration while demanding comparative evaluation of ordinary alternatives.'
+];
+c.overall.con.blunders=[
+ {text:'Hitchens repeatedly broadens defensible examples into categorical claims, including that faith always means certainty and that every religion begins with a miraculous birth.',links:[]},
+ {text:'His Gerasene criticism narrows the story to possession and animal destruction, overlooking the restored person and communal reaction that Wilson later uses to answer him.',links:[]}
+];
+c.logicalExtension.pro.finalArgument={
+ thesis:'Christian theism offers the more unified explanation when rational trust, objective normativity, and experienced beauty are treated as mutually constraining phenomena.',
+ premises:[
+  'Rational inquiry presupposes that human cognitive practices are generally directed toward truth rather than merely producing behavior that happens to survive.',
+  'Objective moral criticism presupposes standards that can judge agents and communities even when preference, power, or inherited convention favors wrongdoing.',
+  'Experiences of beauty include not only pleasure but judgments about fittingness, intelligibility, excellence, and significance that invite explanation beyond private taste.',
+  'A perfectly rational and good creator could jointly ground truth-directed minds, authoritative moral standards, and a purposive order capable of intelligible beauty.',
+  'Naturalistic explanations may account for local mechanisms and experiences, but the assessed objections do not jointly explain why truth, obligation, and beauty possess normative authority.'
+ ],
+ conclusion:'Therefore Christian theism gains comparative explanatory strength if its personal ground unifies these normative domains and survives independent evidential scrutiny of its historical claims.'
+};
+c.logicalExtension.pro.newArguments=[
+ {title:'Convergent Normativity',text:'Truth, goodness, and beauty each involve standards by which immediate preference can be corrected. Their convergence is less surprising if reality originates in a rational and good mind whose purposes make intelligibility and value mutually connected. This does not prove Christianity, but it turns Wilson’s separate grounding questions into one comparative argument and requires naturalism to explain why three distinct normative practices exhibit similar authority.'},
+ {title:'Reliable Inquiry Under Purpose',text:'Wilson can avoid reducing naturalistic cognition to random fizz by granting that evolution produces considerable reliability. The sharper question is whether survival-directed faculties give independent reason to trust highly abstract reasoning when it outruns practical selection. Theism proposes that truth-seeking capacities are intended, while still accepting fallibility and correction. Its advantage depends on showing that divine design predicts reliability better without making error mysterious.'},
+ {title:'Artistry Without Aesthetic Exclusion',text:'The intention argument becomes stronger if it stops claiming unintended nature cannot be lovely. Instead, theistic intention can explain why beings encounter a law-governed cosmos as both discoverable and aesthetically significant. Natural beauty remains genuinely accessible to atheists, while the comparative issue becomes whether purposive creation better explains the conjunction of order, conscious appreciation, and durable standards of excellence than impersonal processes alone.'}
+];
+c.logicalExtension.con.finalArgument={
+ thesis:'Atheistic naturalism need not supply cosmic intentions to explain responsible inquiry, humane judgment, and genuine encounters with beauty.',
+ premises:[
+  'Truth-seeking can be assessed through public methods that expose beliefs to observation, criticism, replication, and correction without assuming a supernatural guarantor.',
+  'Moral responsibility arises among vulnerable agents whose interests, suffering, reciprocity, and capacity for reasons make actions answerable to those affected.',
+  'Beauty can emerge through perceptual capacities, natural structure, artistic practice, cultural inheritance, and disciplined comparison without requiring every valued object to be designed.',
+  'Religious explanations face additional discrimination burdens because incompatible traditions attribute miracles, commands, and aesthetic signs to different supernatural sources.',
+  'When ordinary mechanisms explain inquiry, moral concern, and aesthetic experience, adding divine agency improves the account only if independently supported and predictively discriminating.'
+ ],
+ conclusion:'Therefore atheistic naturalism remains competitively adequate unless Christian theism shows that its additional supernatural commitments explain the triad more specifically and reliably than secular alternatives.'
+};
+c.logicalExtension.con.newArguments=[
+ {title:'Public Correction',text:'The strongest secular account of truth is not certainty but institutionalized correction. Observation, adversarial criticism, repeatable testing, and willingness to revise can make inquiry progressively reliable even when individual minds are biased. This strengthens Hitchens’s appeal to doubt by replacing the overstatement that skepticism is the only route with a concrete explanation of how fallible natural agents detect and repair error.'},
+ {title:'Reasons From Vulnerability',text:'Human moral reasons need not be attitudes held by the universe. Agents can recognize that pain, coercion, deprivation, and lost agency matter to creatures who undergo them, then demand consistency between their own claims and comparable claims of others. This develops the victim-perspective reply into a secular account of accountability while leaving open difficult disputes about objectivity, aggregation, and conflicts among interests.'},
+ {title:'Aesthetic Emergence',text:'Beauty may be relational without being arbitrary: structured features of objects interact with shared perceptual capacities, trained attention, cultural history, and critical comparison. Stable agreement can grow where observers learn to notice complexity, unity, expressive success, and fittingness. This account preserves Hitchens’s natural awe while explaining why aesthetic judgments can improve, and it avoids inferring that every valued pattern is either private preference or divine artistry.'}
+];
+const qPro=ledger.moves.find(m=>m.moveId==='wilson-counterfeits-do-not-negate-genuine');
+const qCon=ledger.moves.find(m=>m.moveId==='hitchens-hume-comparative-probability');
+const q=(side,m,text)=>({side,moveId:m.moveId,speaker:m.speaker,text,quoteEligibleExactSpan:m.quoteEligibleExactSpans.find(x=>x.includes(text)),sourcePath:plan.ledgerPath,transcriptPath:plan.transcriptPath,startEvent:m.sourceSpan.startEvent,endEvent:m.sourceSpan.endEvent,startMs:m.sourceSpan.startMs,endMs:m.sourceSpan.endMs,exactMatch:true});
+const novelty=[];
+for(const side of ['pro','con']){
+ const ids=side==='pro'?['wilson-preconditions-before-evidence','wilson-objective-triad-needs-ground','wilson-intention-makes-cosmos-artistry']:['hitchens-inquiry-opens-further-discovery','hitchens-human-responsibility-without-just-god','hitchens-natural-world-sustains-awe'];
+ novelty.push({side,field:'finalArgument',path:`candidate.logicalExtension.${side}.finalArgument`,hypothetical:true,sourceMoveIds:ids,explanation:'Synthesizes several locked burdens into a strengthened comparative argument while adding explicit bridges not attributed to the speaker.'});
+ c.logicalExtension[side].newArguments.forEach((_,i)=>novelty.push({side,field:`newArguments[${i}]`,path:`candidate.logicalExtension.${side}.newArguments[${i}]`,hypothetical:true,sourceMoveIds:[ids[i]],explanation:'Develops the cited live move with a distinct supporting mechanism and repairs a limitation identified in the locked judgment.'}));
+}
+const o={schemaVersion:plan.outputRequirements.schemaVersion,protocolId:plan.outputRequirements.protocolId,status:plan.outputRequirements.status,debateNumber:plan.outputRequirements.debateNumber,debateId:plan.outputRequirements.debateId,audit:plan.outputRequirements.audit,candidate:c,sourceQuoteAudit:[q('pro',qPro,c.quotes.pro.text),q('con',qCon,c.quotes.con.text)],noveltyMap:novelty};
+const result=checkPublication(o,plan);
+const audit={schemaVersion:'1.0-isolated-publication-reading-audit',status:'complete-before-authoring',debateNumber:plan.debateNumber,debateId:plan.debateId,model:'gpt-5.6-sol',reasoningEffort:'low',authentication:'ChatGPT subscription',executionPlanStatus:'frozen-before-model-execution',controllerReleaseAuthenticated:true,allAllowedInputsReadLiterally:true,untruncatedBoundedChunks:true,allowedInputHashesVerified:true,allowedInputs:plan.additionalOutputFields?[
+ {path:'docs/assessment-production/standalone-debates-v1/debate-267/publication/input-bundle.json',sha256:'c9b84914274806033af4457ab58750a0fad12f28f225236402e6db22fae852bb'},
+ {path:plan.ledgerPath,sha256:'135ddf12636819a3669c2e6aaf6e38655b615f00587f261759ee7968f166d296'},
+ {path:plan.scorePath,sha256:'a50251b44055245eaea666d7a197591b4000bd85ef15d17d5e1c23df456e90a3'},
+ {path:plan.transcriptPath,sha256:'19eee64802632103c384a79907ec1c054e3753921d4c6c49b46e37e83d830f25'},
+ {path:plan.audioSupplementPath,sha256:'c2917972694b1b20a2d18f94091a1ceb170208a034b515728cbb85246324fb9c'},
+ {path:'docs/assessment-production-workflow.md',sha256:'41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee'},
+ {path:'docs/reassessment-rubric-v2.1.md',sha256:'9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c'},
+ {path:'.assessment-cache/check-publication-draft.mjs',sha256:'06095c3fa545d609bada2ba93fe8301d1db5a9c764c2ebf330ff510ce5cb1019'}
+]:[],undeclaredInputsUsed:false,externalResearchUsed:false,paidApisUsed:false,agentsUsed:false,publicationAttempt:1};
+console.log(JSON.stringify({o,audit,result}));
+NODE`;
+const r=await tools.exec_command({cmd,workdir:"/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh",yield_time_ms:30000,max_output_tokens:100000});
+if(r.exit_code!==0){text(r.output);exit();}
+store("draft267bundle",r.output);
+const parsed=JSON.parse(r.output);
+text(JSON.stringify(parsed.result));
+

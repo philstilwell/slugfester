@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0-standalone-primary-reading-audit",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "pass": "pass-b",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "directIncrementalCostUsd": 0,
+  "readingReleaseAuthenticated": true,
+  "inputs": [
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/judgment-packet.json", "sha256": "814eb35f99f292acf89f56363e5a9de6fb0e0e2ec22506d6c0468e39569c64d5", "rangesRead": ["1-145"], "complete": true},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/inventory.json", "sha256": "ee14c7563591c90257c75c4e8b34177e883a9a3f3389def789fd4fe6cb8c136d", "rangesRead": ["1-200", "201-400", "401-600", "601-800", "801-1000", "1001-1200", "1201-1279"], "complete": true},
+    {"path": ".assessment-cache/captions/g6UU9C-WmvM/scoped-indexed-transcript.txt", "sha256": "19eee64802632103c384a79907ec1c054e3753921d4c6c49b46e37e83d830f25", "rangesRead": ["1-250", "251-500", "501-750", "751-1000", "1001-1241"], "complete": true},
+    {"path": "docs/assessment-production/standalone-debates-v1/debate-267/audio/score-blind-supplement.json", "sha256": "c2917972694b1b20a2d18f94091a1ceb170208a034b515728cbb85246324fb9c", "rangesRead": ["1-92"], "complete": true},
+    {"path": "docs/assessment-production-workflow.md", "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee", "rangesRead": ["1-59"], "complete": true},
+    {"path": "docs/reassessment-rubric-v2.1.md", "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c", "rangesRead": ["1-89"], "complete": true},
+    {"path": "scripts/lib/assessment-production-standalone-debate-v1.mjs", "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a", "rangesRead": ["636-795"], "complete": true, "restrictedToAllowedLines": true}
+  ],
+  "audit": {
+    "allAllowedInputsReadLiterallyAndCompletely": true,
+    "transcriptChunksAtMost300Lines": true,
+    "inventoryAndPacketChunksUntruncated": true,
+    "hashesVerified": true,
+    "forbiddenInputsAccessed": false,
+    "externalResearchUsed": false,
+    "paidApisUsed": false,
+    "additionalAgentsUsed": false,
+    "ratingBeganOnlyAfterControllerRelease": true,
+    "singleInitialSubmission": true
+  }
+}
