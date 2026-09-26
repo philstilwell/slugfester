@@ -3,10 +3,11 @@ import { readFile } from "node:fs/promises";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText, interlocutorAvatars } from "../src/data/interlocutors.js";
 
-const [app, styles, topics] = await Promise.all([
+const [app, styles, topics, processGuide] = await Promise.all([
   readFile(new URL("../src/app.js", import.meta.url), "utf8"),
   readFile(new URL("../src/styles.css", import.meta.url), "utf8"),
-  readFile(new URL("../src/data/topics.js", import.meta.url), "utf8")
+  readFile(new URL("../src/data/topics.js", import.meta.url), "utf8"),
+  readFile(new URL("../src/data/assessment-process-guide.js", import.meta.url), "utf8")
 ]);
 
 const errors = [];
@@ -190,14 +191,15 @@ requireIncludes("app scorecard report issue type", app, 'name="issue_type" requi
 requireIncludes("app scorecard report evidence", app, 'name="supporting_evidence"');
 requireIncludes("app scorecard report confirmation", app, "Report sent.");
 requireExcludes("app scorecard report email privacy", app, "philstilwell@yahoo.com");
-requireIncludes("app backend compute disclosure", app, "What ≈83 hours means.");
+requireIncludes("app backend compute disclosure", app, "not video length or time spent waiting");
 requireIncludes("app backend new debate compute", app, "Each new debate requires 1-2 hours to process and add.");
 requireExcludes("app backend published-catalogue card", app, "<span>Published catalogue</span>");
 requireExcludes("app backend dyadic-coverage card", app, "<span>Current v2 coverage</span>");
 requireIncludes("app backend compute card", app, "Reassessment compute summary");
 requireExcludes("app backend calibration distinction", app, "promoted calibration debates");
-requireIncludes("app backend technical detail", app, 'class="backend-technical"');
-requireIncludes("app backend objectivity accordion", app, '<details class="backend-objectivity-accordion">');
+requireIncludes("app backend illustrated guide", app, "${renderAssessmentProcessGuide()}");
+requireExcludes("app backend duplicate process", app, 'class="assessment-flow"');
+requireIncludes("app backend objectivity accordion", processGuide, '<details class="backend-objectivity-accordion backend-process-text"');
 requireIncludes("app backend rubric examples accordion", app, '<details class="rubric-extremes-accordion">');
 requireIncludes("app backend rubric examples columns", app, 'class="rubric-extremes-grid"');
 requireIncludes("app backend rubric examples top", app, "Highest section-side scores");
@@ -206,14 +208,14 @@ requireIncludes("app backend rubric move-score explanation", app, "Why this move
 requireIncludes("app backend rubric high-score features", app, "Score-raising features");
 requireIncludes("app backend rubric low-score features", app, "Score-lowering features");
 requireExcludes("app backend rubric examples accordion default", app, '<details class="rubric-extremes-accordion" open>');
-requireIncludes("app backend section score explanation", app, "multiplied by its previously locked importance");
-requireIncludes("app backend comprehensive score explanation", app, "The default final adjustment is zero");
-requireIncludes("app backend multi-speaker score disclosure", app, "no individual score is inferred");
-requireIncludes("app backend multi-speaker ranking policy", app, "excluded from individual rankings, profile averages, score distributions, and opponent records");
-requireIncludes("app backend fallacy and bias explanation", app, "Review fallacies and cognitive biases separately");
-requireExcludes("app backend objectivity accordion default", app, '<details class="backend-objectivity-accordion" open>');
-requireIncludes("app backend current section scoring", app, "importance-weighted mean of the selected moves");
-requireIncludes("app backend current overall scoring", app, "prelocked section-weighted mean + −5…+5 burden adjustment");
+requireIncludes("app backend section score explanation", processGuide, "multiply each move score by its previously locked importance");
+requireIncludes("app backend comprehensive score explanation", processGuide, "The default final adjustment is zero");
+requireIncludes("app backend multi-speaker score disclosure", processGuide, "no individual score is inferred");
+requireIncludes("app backend multi-speaker ranking policy", processGuide, "excluded from individual rankings, profile averages, score distributions, and opponent records");
+requireIncludes("app backend fallacy and bias explanation", processGuide, "Review fallacies and cognitive biases separately");
+requireExcludes("app backend objectivity accordion default", processGuide, 'backend-process-text" open');
+requireIncludes("app backend current section scoring", processGuide, "divide by the total importance, and round");
+requireIncludes("app backend current overall scoring", processGuide, "add the burden-completion adjustment, then round");
 requireExcludes("app backend retired section scoring", app, ".70 move mean + .10 coverage");
 requireExcludes("app backend retired overall scoring", app, ".70 centrality-weighted sections");
 requireIncludes("app backend page", app, "Account personalization and private conversation history are not inputs");

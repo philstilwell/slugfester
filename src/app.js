@@ -1,8 +1,9 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=d95a3118b8ef490d";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=d95a3118b8ef490d";
-import { debateSummaries } from "./data/debate-summaries.js?v=d95a3118b8ef490d";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=d95a3118b8ef490d";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=d95a3118b8ef490d";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=50597fcfd4d6f48f";
+import { topicCategoryDefinitions } from "./data/topics.js?v=50597fcfd4d6f48f";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=50597fcfd4d6f48f";
+import { debateSummaries } from "./data/debate-summaries.js?v=50597fcfd4d6f48f";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=50597fcfd4d6f48f";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=50597fcfd4d6f48f";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -38,7 +39,7 @@ import {
   searchSeo,
   topicsPath,
   topicsSeo
-} from "./seo.js?v=d95a3118b8ef490d";
+} from "./seo.js?v=50597fcfd4d6f48f";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -90,7 +91,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=d95a3118b8ef490d")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=50597fcfd4d6f48f")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -109,7 +110,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=d95a3118b8ef490d")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=50597fcfd4d6f48f")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -125,7 +126,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=d95a3118b8ef490d`)
+    const promise = import(`./data/debate-details/${id}.js?v=50597fcfd4d6f48f`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -140,7 +141,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=d95a3118b8ef490d`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=50597fcfd4d6f48f`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1081,7 +1082,7 @@ function renderSectionScoreDistribution(distribution) {
     .join("");
 
   return `
-    <section class="section-score-distribution backend-rubric-evidence" aria-labelledby="section-score-distribution-heading">
+    <section class="section-score-distribution backend-rubric-evidence" id="rubric-quality-check" aria-labelledby="section-score-distribution-heading">
       <div class="section-score-distribution-heading">
         <div>
           <p class="eyebrow">Rubric quality check</p>
@@ -2351,32 +2352,29 @@ function renderBackend() {
 
   app.innerHTML = renderShell(`
     <main class="assessment-page backend-page">
-      <section class="assessment-hero">
+      <section class="assessment-hero backend-process-hero">
         <div>
           <p class="eyebrow">Backend</p>
           <h1>Backend</h1>
-          <p class="assessment-lede">This is the machinery behind Slugfester: complete debate transcripts are converted into auditable argument maps, independently reviewed, scored under one published rubric, and checked before publication.</p>
+          <p class="assessment-lede">How Slugfester assesses a debate—and how you can check the result.</p>
         </div>
-        <aside class="assessment-stamp" aria-label="Backend model">
-          <span>Latest full reassessment workflow</span>
-          <strong>5.6 Sol · low</strong>
-          <p>Two fresh, isolated, score-blind judgments were made for each eligible debate. Disagreements were adjudicated separately, and repository code—not the model—calculated the published totals.</p>
-        </aside>
       </section>
+
+      ${renderAssessmentProcessGuide()}
 
       <section class="backend-summary" aria-labelledby="backend-summary-heading">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Assessment update</p>
-            <h2 id="backend-summary-heading">A careful attempt at objective scoring</h2>
+            <h2 id="backend-summary-heading">Reassessment schedule and recorded work</h2>
           </div>
           <p class="section-summary">Updated September 5, 2026</p>
         </div>
         <div class="backend-summary-panel">
           <div class="backend-summary-copy">
-            <p><strong>Objectivity here means disciplined consistency, not infallibility.</strong> Slugfester applies the same evidential and logical standards to both sides, excludes applause, reputation, charisma, and agreement with a conclusion, and treats every score as an AI-assisted estimate of the argument actually presented.</p>
-            <p>The recent campaign reviewed the complete transcript chain, hid prior scores and prose from new judgments, used two independent reviews, isolated disagreements, verified uncertain audio, calculated totals mechanically, and preserved the evidence needed to audit the result. Failed attempts were retained rather than quietly replaced.</p>
-            <p>The next site-wide reassessment is tentatively scheduled for spring 2027, when sources and quality controls permit. Future reviews may correct or refine assessments, but they should use a frozen method, preserve earlier records, and never change scores merely to produce a preferred winner.</p>
+            <p><strong>The next site-wide reassessment is tentatively scheduled for spring 2027</strong>, when sources and quality controls permit. Earlier assessment records are preserved so that revisions remain traceable.</p>
+            <p>The completed full-catalogue campaign used <strong>5.6 Sol · low</strong>. Its ≈83 hours records time inside the assessment model, including failed and recovery attempts—not video length or time spent waiting. Three brief recovery runs lacked usable timing data, so this remains a conservative minimum.</p>
+            <p>Account personalization and private conversation history are not inputs to the site's assessment data.</p>
           </div>
           <div class="backend-summary-stats" aria-label="Reassessment compute summary">
             <article class="backend-summary-stat--compute">
@@ -2421,167 +2419,12 @@ function renderBackend() {
         </div>
       </section>
 
-      <section class="backend-objectivity" aria-labelledby="backend-objectivity-heading">
-        <details class="backend-objectivity-accordion">
-          <summary>
-            <span>
-              <span class="backend-objectivity-kicker">Plain-English methodology</span>
-              <strong id="backend-objectivity-heading">How Slugfester works toward a fair assessment</strong>
-              <small>Open the complete scoring, review, and fallacy-or-bias process</small>
-            </span>
-            <i aria-hidden="true"></i>
-          </summary>
-          <div class="backend-objectivity-content">
-            <p class="backend-objectivity-intro"><strong>No procedure can remove judgment entirely.</strong> The aim is to make that judgment consistent, evidence-based, resistant to avoidable influence, and open to checking. The same sequence and standards are applied to both sides.</p>
-            <ol class="backend-objectivity-steps">
-              <li>
-                <h3>Start with the complete source</h3>
-                <p>The full available debate transcript is collected with timestamps and checked against its source. Each passage is tied to the correct speaker. If the speaker cannot be identified confidently from the transcript, the audio must be checked before that passage can affect the result.</p>
-              </li>
-              <li>
-                <h3>Define what each side must establish</h3>
-                <p>Before scoring, the central question, each side's stated position, and the burdens each side actually accepts are written down. A critic is not required to prove the opposite conclusion merely for challenging an argument, unless that critic also takes on a positive claim.</p>
-              </li>
-              <li>
-                <h3>Map the debate before seeing any scores</h3>
-                <p>The transcript is divided into topic sections and individual argumentative moves. Replies are connected to the strongest point they address. Each move receives an importance level from 1 to 3, and every section receives a percentage of the whole debate. Those choices are locked before numerical scoring, and prior scorecards, winners, and critiques are hidden.</p>
-              </li>
-              <li>
-                <h3>Review every move twice and independently</h3>
-                <p>Two separate reviews examine the same locked evidence under the same rubric without seeing each other's work. They judge the argument presented—not the speaker's reputation, confidence, wit, worldview, popularity, or audience reaction.</p>
-                <ul>
-                  <li><strong>25% logical coherence:</strong> Do the premises and conclusion fit together without contradiction or an invalid step?</li>
-                  <li><strong>20% evidence and support:</strong> Are factual claims supported, and is the bridge from evidence to conclusion defended?</li>
-                  <li><strong>20% responsiveness:</strong> Does the move answer the strongest relevant point rather than a weaker substitute?</li>
-                  <li><strong>15% relevance and burden:</strong> Does it advance the position the speaker actually undertook to defend?</li>
-                  <li><strong>10% precision and clarity:</strong> Are the important terms, limits, and level of confidence clear and stable?</li>
-                  <li><strong>10% calibration and charity:</strong> Does confidence match the evidence, and is the opposing position represented fairly?</li>
-                </ul>
-              </li>
-              <li>
-                <h3>Resolve disagreements without quietly averaging them</h3>
-                <p>Fixed comparison rules identify meaningful differences between the two reviews. A separate review then considers only the disputed evidence and anonymized alternatives. Required audio checks and disputes must be resolved before scoring can continue. Failed or invalid attempts are preserved rather than silently replaced until a preferred answer appears.</p>
-              </li>
-              <li>
-                <h3>Calculate each move and section score</h3>
-                <p>Software combines the six ratings using the fixed percentages above to produce each move score. Within a section, every move's score is multiplied by its previously locked importance. Those results are added and divided by the total importance. This lets central arguments count more than minor remarks without allowing anyone to adjust the section after seeing who is ahead.</p>
-              </li>
-              <li>
-                <h3>Calculate the comprehensive score</h3>
-                <p>Each section score is multiplied by the section's previously locked share of the debate, and those weighted results are combined. The default final adjustment is zero. A change from −5 to +5 is allowed only for a debate-wide success or failure that affects a stated burden and has not already influenced any move, section, importance value, or other score. The software calculates the final number; it is never manually nudged to select a winner.</p>
-              </li>
-              <li>
-                <h3>Treat debates with three or more speakers as team assessments</h3>
-                <p><strong>Short answer: no individual score is inferred.</strong> The current public scorecard format stores one comprehensive score for each side. When several interlocutors are grouped on a side, that number describes the combined case; it is not treated as evidence that every teammate contributed equally or personally earned the same result.</p>
-                <p>Individual argument cards remain attached to the person who actually made the move. A teammate's argument is not credited to someone else merely because they share a side, unless the other speaker explicitly adopts it. This preserves speaker ownership within the analysis even though the final number is still side-level.</p>
-                <p>Team and panel scorecards remain available as assessments of their two sides, but they are excluded from individual rankings, profile averages, score distributions, and opponent records. The newer multi-speaker method treats their results as approximate, checks speaker handoffs and selected passages against the audio, and tests whether the leading side changes when contributions are rebalanced or one teammate is removed.</p>
-              </li>
-              <li>
-                <h3>Review fallacies and cognitive biases separately</h3>
-                <p>These labels are checked apart from the numerical totals. Every locked move is reviewed against the available definitions in two blind passes, with old tags and the other review hidden. A separate reviewer considers the anonymized candidates, followed by a conservative source check.</p>
-                <ul>
-                  <li>A <strong>logical fallacy</strong> is mentioned only when a named error is genuinely present in the reasoning and helps explain why the inference is weaker.</li>
-                  <li>A <strong>cognitive bias</strong> is mentioned only when a recognizable tendency materially shapes the selection, framing, or evaluation of evidence. Holding a viewpoint or reaching a disputed conclusion is not enough.</li>
-                  <li>Merely incomplete support, a contestable premise, or a weak analogy does not automatically justify a named label. When uncertain, the label is omitted.</li>
-                  <li>An accepted label receives a transcript-specific explanation and a reference link. It never creates an extra score penalty; the underlying weakness is counted once in the ordinary rubric.</li>
-                </ul>
-              </li>
-              <li>
-                <h3>Lock, reconstruct, and audit the publication</h3>
-                <p>Only after the scores and labels are settled are the reader-facing summaries and critiques assembled. The published result must reproduce the locked calculations exactly. Quotes, speaker attribution, move coverage, links, page behavior, and the full site are checked before release. Later corrections remain possible, but they require a new traceable assessment rather than an invisible rewrite.</p>
-              </li>
-            </ol>
-            <p class="backend-objectivity-limit"><strong>What this achieves:</strong> a repeatable and inspectable estimate of how well each side argued in this particular transcript. It does not establish which worldview is ultimately true, and it does not make an AI-assisted judgment infallible.</p>
-          </div>
-        </details>
-      </section>
-
-      <section class="backend-technical" aria-labelledby="backend-technical-heading">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Technical detail</p>
-            <h2 id="backend-technical-heading">Controls behind the current assessments</h2>
-          </div>
-          <p class="section-summary">For readers who want the implementation details</p>
-        </div>
-        <p class="backend-technical-intro">The production campaign used the promoted adjudicated-consensus workflow for eligible two-person debates. The controls below reduce avoidable bias and inconsistency; they cannot turn a model judgment into ground truth.</p>
-        <div class="backend-technical-grid">
-          <article>
-            <h3>Locked source chain</h3>
-            <p>Each debate required a complete local transcript, timestamped caption events, and a source manifest. SHA-256 content hashes—a digital fingerprint used to detect any change—were checked before semantic work. Debates with more than two substantive speakers were not forced through the two-sided workflow.</p>
-          </article>
-          <article>
-            <h3>Score-blind construction</h3>
-            <p>Prior scores, critiques, winners, tags, Overall Commentary, and AI Extension prose were kept outside the judgment context. The argument inventory, source spans, section membership, response links, and importance weights were frozen before either scoring judgment began.</p>
-          </article>
-          <article>
-            <h3>Independent judgments</h3>
-            <p>Two fresh 5.6 Sol contexts at low reasoning effort reviewed the same locked packet in isolation through the ChatGPT subscription. Neither saw the other judgment. Execution records retained the actual model label, authentication method, copied-input size, output hashes, elapsed time, and validation result.</p>
-          </article>
-          <article>
-            <h3>Disagreement and audio gates</h3>
-            <p>Code extracted categorical and numerical disagreements using fixed rules. Every move below high speaker-attribution confidence required audio verification. A third isolated context saw only disputed evidence and anonymous alternatives; no unresolved required check could enter a final ledger.</p>
-          </article>
-          <article>
-            <h3>Mechanical scoring</h3>
-            <p>The two judgments and any adjudicated fields were merged into a resolved ledger. Repository code then ran one deterministic score pass using fixed dimension weights, importance-weighted section means, prelocked section weights, and a bounded −5 to +5 burden-completion adjustment. Models did not author totals, and scores were not manually tuned.</p>
-          </article>
-          <article>
-            <h3>Publication and replay</h3>
-            <p>Readable summaries and critiques were reconstructed only after scores were locked. Exact-quote rules, field-level repair limits, semantic checks, generated-page comparison, desktop and mobile rendering, keyboard operation, and repository-wide validation all had to pass before publication.</p>
-          </article>
-        </div>
-        <p class="backend-technical-note"><strong>What ≈83 hours means.</strong> This is the recorded time spent inside the assessment model across the completed campaign—including failed and recovery attempts—not the length of the videos or time spent waiting. It is a conservative minimum because three brief recovery runs did not retain usable timing data.</p>
-      </section>
-
-      <section class="assessment-principles" aria-labelledby="assessment-principles-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Inputs</p>
-          <h2 id="assessment-principles-heading">What the backend reads</h2>
-        </div>
-        <div class="principle-grid">
-          ${renderAssessmentPrinciple("Transcript ground", "The transcript is the evidential floor. The backend may condense wording for readability, but quoted material must remain traceable to what was actually said.")}
-          ${renderAssessmentPrinciple("Debate frame", "The motion, central question, speakers, roles, time ranges, and source notes are captured so every local score is judged against the live dispute.")}
-          ${renderAssessmentPrinciple("Argument units", "Claims and rebuttals are grouped by issue rather than by every interruption, allowing readers to compare like with like across the two columns.")}
-          ${renderAssessmentPrinciple("Reference layer", "Fallacy and bias labels are added only when they explain a specific weakness, then routed through local context pages before external references.")}
-        </div>
-      </section>
-
-      <section class="assessment-flow" aria-labelledby="assessment-flow-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Pipeline</p>
-          <h2 id="assessment-flow-heading">How a debate becomes a scorecard</h2>
-        </div>
-        <ol class="process-steps">
-          <li><span>01</span><strong>Lock the source.</strong><p>Complete timestamped transcripts and their content hashes are checked before analysis begins.</p></li>
-          <li><span>02</span><strong>Map without prior scores.</strong><p>The motion, burdens, argument units, replies, sections, and importance values are frozen without exposing legacy assessments.</p></li>
-          <li><span>03</span><strong>Review twice.</strong><p>Two isolated judgments apply the same six-dimension rubric to the same score-blind packet without seeing one another.</p></li>
-          <li><span>04</span><strong>Resolve disagreements.</strong><p>Code extracts disputed fields, uncertain speaker attribution triggers audio checks, and a separate judgment adjudicates only what remains disputed.</p></li>
-          <li><span>05</span><strong>Calculate once.</strong><p>A fully resolved ledger enters one deterministic score pass. The model never supplies the published move, section, or overall totals.</p></li>
-          <li><span>06</span><strong>Reconstruct and audit.</strong><p>Readable prose, exact quotations, generated pages, desktop and mobile layouts, and the complete repository are validated before publication.</p></li>
-        </ol>
-      </section>
 
       <section class="assessment-rubric" aria-labelledby="assessment-rubric-heading">
         <div class="section-heading">
           <p class="eyebrow">Rubric v2</p>
-          <h2 id="assessment-rubric-heading">How the numbers are earned</h2>
+          <h2 id="assessment-rubric-heading">What the score bands mean</h2>
         </div>
-        <p class="assessment-rubric-intro">The v2 reassessment method scores the transcript performance before calculating totals. The same definitions and burdens apply to both sides; applause, status, and agreement with a conclusion do not count.</p>
-        <div class="principle-grid rubric-dimensions">
-          ${renderAssessmentPrinciple("25% · Logical coherence", "Do the conclusion and intermediate claims follow without contradiction, equivocation, or an invalid inference?")}
-          ${renderAssessmentPrinciple("20% · Evidence and warrant", "Are factual claims supported, and are the bridges from evidence to conclusion defended?")}
-          ${renderAssessmentPrinciple("20% · Responsiveness", "Does the move engage the strongest relevant point rather than a weaker substitute or diversion?")}
-          ${renderAssessmentPrinciple("15% · Relevance and burden", "Does the move advance the side's actual burden on the motion without shifting or inflating it?")}
-          ${renderAssessmentPrinciple("10% · Precision and clarity", "Are the terms, scope, modality, and confidence sufficiently clear and stable?")}
-          ${renderAssessmentPrinciple("10% · Calibration and charity", "Does confidence match the evidence while treating live alternatives fairly?")}
-        </div>
-        <div class="rubric-formulas" aria-label="Rubric score formulas">
-          <article><strong>Move</strong><code>.25L + .20E + .20R + .15B + .10P + .10C</code></article>
-          <article><strong>Section</strong><code>importance-weighted mean of the selected moves</code></article>
-          <article><strong>Overall</strong><code>prelocked section-weighted mean + −5…+5 burden adjustment</code></article>
-        </div>
-        <h3 class="score-bands-heading">Score bands</h3>
         <div class="score-band-list">
           ${renderScoreBand("90-100", "Exceptional", "A clear, relevant, well-supported move that anticipates the strongest obvious replies and survives them.", 96)}
           ${renderScoreBand("80-89", "Strong", "A persuasive argument or rebuttal with minor gaps, compressed support, or uncertainty that does not defeat the main point.", 86)}
@@ -2594,47 +2437,6 @@ function renderBackend() {
 
       ${renderSectionScoreDistribution(sectionScores)}
 
-      <section class="assessment-examples" aria-labelledby="assessment-examples-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Examples</p>
-          <h2 id="assessment-examples-heading">What the backend notices</h2>
-        </div>
-        <div class="example-grid">
-          ${renderAssessmentExample(
-            "Quote anchoring",
-            "Example move: a speaker says a premise is 'obvious' while the transcript shows no supporting argument nearby.",
-            "The score drops because assertion is not the same as warrant. The backend privileges quotes that expose the actual inferential step, so readers can see whether the speaker gave evidence or merely named a conclusion."
-          )}
-          ${renderAssessmentExample(
-            "Rebuttal contact",
-            "Example move: an opponent answers a cosmological argument by disputing whether observed causation can be projected beyond physical contexts.",
-            "That scores better than dismissing the case as 'just faith' because it identifies the live warrant. The backend rewards replies that touch the actual hinge of the argument."
-          )}
-          ${renderAssessmentExample(
-            "Fallacy pressure",
-            "Example move: a conclusion is smuggled into a premise and then presented as independently established.",
-            "A begging-the-question tag appears only when the circularity does real work. The backend does not use fallacy labels as decorative insults; the label must explain why the reasoning weakens."
-          )}
-          ${renderAssessmentExample(
-            "Bias pressure",
-            "Example move: a speaker highlights favorable cases while ignoring nearby counterexamples that would complicate the same standard.",
-            "A confirmation-bias note appears when selective attention changes the evidence assessment. Having a worldview is not itself the problem; filtering the data through it can be."
-          )}
-        </div>
-      </section>
-
-      <section class="assessment-detail" aria-labelledby="assessment-detail-heading">
-        <div>
-          <p class="eyebrow">Limits</p>
-          <h2 id="assessment-detail-heading">What the backend does not claim</h2>
-        </div>
-        <div class="assessment-detail-copy">
-          <p>The backend does not decide which religion, philosophy, or political position is true. It scores the performance of the argument in the transcript: definitions, evidence, warrants, rebuttals, and logical discipline.</p>
-          <p>A true claim can be defended badly, and a false claim can be argued with unusual care. Scores therefore track argumentative execution, not moral worth, charisma, crowd reaction, or agreement with the conclusion.</p>
-          <p>Assessments are grounded in the debate transcript and Slugfester's published rubric. Account personalization and private conversation history are not inputs to the site's assessment data. Like any AI-assisted evaluation, the results remain open to revision and reader scrutiny.</p>
-          <p>Named fallacies and biases are routed through Slugfester reference pages first. Those pages give the basic definition, explain the debate-specific occurrence, link back to the source debate, and then point to LogFall or CogBias for deeper external treatment.</p>
-        </div>
-      </section>
 
       <section class="backend-report" aria-labelledby="backend-report-heading">
         <div class="backend-report-panel">
@@ -3916,21 +3718,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=d95a3118b8ef490d")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=50597fcfd4d6f48f")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=d95a3118b8ef490d")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=50597fcfd4d6f48f")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=d95a3118b8ef490d")
+    insightsPromise ||= import("./data/insights.js?v=50597fcfd4d6f48f")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

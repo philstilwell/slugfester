@@ -1,5 +1,6 @@
 // Build-time only. Reuse published prose and scores; never generate new assessments.
 import { publishedDebates as debates } from "../../src/data/debates.js";
+import { renderAssessmentProcessGuide } from "../../src/data/assessment-process-guide.js";
 import { avatarsForSpeakerText } from "../../src/data/interlocutors.js";
 import { topicCategoryDefinitions } from "../../src/data/topics.js";
 import { debatePath, debateTitleWithYear, interlocutorPath } from "../../src/seo.js";
@@ -42,6 +43,7 @@ function debateContent(debate) {
 }
 
 export function initialPageContent(path) {
+  if (path === "/backend/") return `${renderAssessmentProcessGuide()}<section id="rubric-quality-check"><h2>Explore the assessments</h2><p>The live distribution graph and recommendation form are available with JavaScript enabled. <a href="/insights/data-and-methods/">Read the research methods and limitations</a>, <a href="/search/">browse all debate summaries</a>, or <a href="/corrections/">report a possible scorecard issue</a>.</p></section>`;
   const debate = debates.find((item) => debatePath(item) === path);
   if (debate) return debateContent(debate);
   const profile = [...people.values()].find(({ person }) => interlocutorPath(person) === path);
