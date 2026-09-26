@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const wc=s=>s.trim().split(/\s+/).filter(Boolean).length;
+export function checkRepair(o,p){
+ for(const k of ['debateNumber','debateId','groupId'])assert.equal(o[k],p[k],k);
+ assert.equal(o.status,'complete-first-bounded-field-repair');assert.deepEqual(o.shards.map(s=>s.shardId),p.shards.map(s=>s.shardId));
+ let count=0;for(let i=0;i<p.shards.length;i++){const a=o.shards[i],b=p.shards[i];assert(b.fields.length<=2);assert.deepEqual(a.fields.map(f=>f.path),b.fields.map(f=>f.path));for(let j=0;j<b.fields.length;j++){const x=a.fields[j],r=b.fields[j];assert.equal(typeof x.text,'string');assert(x.text.trim()===x.text&&x.text.length>0);assert(wc(x.text)>=r.minimumWords&&wc(x.text)<=r.maximumWords,x.path+' words '+wc(x.text));assert(!/[\u3400-\u9fff\uac00-\ud7af\ufffd]/u.test(x.text));if(r.minimumCharacters)assert(x.text.length>=r.minimumCharacters,x.path+' chars '+x.text.length);if(r.kind==='critique'){const labels=['Strongest feature:','Principal limitation:','Live burden:','Locked score:'],parts=x.text.split(/(?=Principal limitation:|Live burden:|Locked score:)/).map(s=>s.trim());assert.equal(parts.length,4);assert(parts.every((s,i)=>s.startsWith(labels[i])&&/[.!?]$/.test(s)));assert.equal((x.text.match(/[.!?](?=\s|$)/g)||[]).length,4);assert(!p.evidence.moves.some(m=>x.text.includes(m.moveId)),'Ledger ID in prose');}if(r.kind==='ai')assert(!/AI-generated extension|AI-developed extension|possible extension|AI reconstruction|unassailable/i.test(x.text));if(r.kind==='quote')assert(p.evidence.moves.some(m=>m.side===r.side&&m.quoteEligibleExactSpans.some(q=>q.includes(x.text))),'Exact source quote');if(r.kind==='sourceNote')assert(x.text.includes(p.requiredReaderDisclosure));if(r.kind==='scoringNote')assert(x.text.includes('AI-generated'));count++;}}
+ return{status:'mechanically-valid-direct-editorial-review-required',shards:o.shards.length,fields:count};
+}
+if(process.argv[2]==='--check-stdin')console.log(JSON.stringify(checkRepair(JSON.parse(fs.readFileSync(0,'utf8')),JSON.parse(fs.readFileSync(process.argv[3])))));

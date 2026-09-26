@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "videoId": "8Ad3rVRdgbI",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/inventory.json",
+    "sha256": "00cd5a1a765fc42c00f7f568cfe48c733c347c872413e82c8839e2da5ec98acf",
+    "bytes": 89255
+  },
+  "scopeAudioEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/audio-source-verification.json",
+    "sha256": "579ac18637cdd7bf6e0a13cb46c6967a472e60ca9a92c3e35661c81c463bdf94",
+    "bytes": 3430
+  },
+  "preFreezeWordingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/wording-verification-evidence.json",
+    "sha256": "bfc3cc2692c495886201c7d56dd57e760271ff781ccc4cbe9644a252b928ebe3",
+    "bytes": 2538
+  },
+  "triggeredMoveIds": [],
+  "checks": [],
+  "preFreezeClarifications": [
+    {
+      "moveId": "sacks-charity-covers-religious-and-secular-causes",
+      "speaker": "Jonathan Sacks",
+      "sourceEventRange": [
+        755,
+        756
+      ],
+      "verification": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/wording-verification-evidence.json",
+        "sha256": "bfc3cc2692c495886201c7d56dd57e760271ff781ccc4cbe9644a252b928ebe3",
+        "bytes": 2538
+      },
+      "resolution": "Fresh clip transcription supports \"No, no. Whether religious or secular causes. Absolutely.\" It does not support the original automatic transcript ending \"absolutely exclusive\". Named speaker remains Sacks. Do not infer that religious causes or church giving were excluded from the sample. Retain only the narrow clarification warranted by the source and do not improve his answer.",
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "directListeningPerformed": false
+    }
+  ],
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.44762,
+    "maximumPossibleTotalCostUsd": 0.47762,
+    "maximumPossibleTotalCostEstimateUsd": 0.47762,
+    "directCostUsd": 0.44762,
+    "uncertainPaidAttempts": 1,
+    "successfulCalls": 16,
+    "paidCallAttempts": 17,
+    "authorizedExceptionalRetries": 1,
+    "billingDashboardConfirmed": false,
+    "basis": "Successful audio acquisition calls plus two boundary verifications and one pre-freeze wording verification; maximum additionally includes the earlier transport-uncertain five-minute call. Estimates, not reconciled invoice charges.",
+    "frozenEstimateUsd": 0.9192,
+    "capUsd": 1
+  },
+  "audit": {
+    "requiredAttributionChecks": 0,
+    "completedAttributionChecks": 0,
+    "unresolvedAttributionChecks": 0,
+    "paidCallAttempts": 17,
+    "paidRetries": 1,
+    "retryExplicitlyAuthorized": true,
+    "sourceCaptionBytesUnchanged": true,
+    "finalInventoryFrozenAfterAudio": true,
+    "directListeningPerformed": false
+  }
+}

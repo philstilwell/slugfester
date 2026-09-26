@@ -1,0 +1,48 @@
+{
+  "status": "frozen-before-model",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "createdAt": "2026-09-26T15:33:08.290Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "Fresh built-in subagent with fork_turns none; declared-input protocol isolation, not an operating-system sandbox.",
+  "attempts": 1,
+  "retries": 0,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/packet.json",
+      "sha256": "29773f9764656a082e58c6e02a25fbdd27a6079b3948525a95b2e892a5323cca",
+      "bytes": 21375
+    },
+    {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/scoped-indexed-transcript.txt",
+      "sha256": "d54a16894ae27f46020c3eeb020ab5b34e6ab6f4ebbb00055823aa7b1a89ad37",
+      "bytes": 32278
+    },
+    {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/scoped-events.json",
+      "sha256": "eecae5633a4d18c999bd9dede6984609b68c342fb95be091e7c53e4e929585ff",
+      "bytes": 129334
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLineRanges": [
+        {
+          "start": 1,
+          "end": 461
+        }
+      ]
+    }
+  ],
+  "allowedOutputPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-268/inventory/draft-parts.json",
+    "docs/assessment-production/standalone-debates-v1/debate-268/inventory/reading-audit.json"
+  ],
+  "directIncrementalCostUsd": 0
+}

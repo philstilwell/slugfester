@@ -1,0 +1,46 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import {createHash} from 'node:crypto';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];
+assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const sha=b=>createHash('sha256').update(b).digest('hex');
+const rec=p=>{const b=fs.readFileSync(p);return{path:p,sha256:sha(b),bytes:b.length};};
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const dir=r.root+'/publication',base=dir+'/initial-failure',plan=read(dir+'/execution-plan.json'),release=read(dir+'/reading-release.json');
+assert(!fs.existsSync(dir+'/output.json'));assert(!fs.existsSync(base)||fs.readdirSync(base).length===0);
+assert.equal(plan.debateNumber,n);assert.equal(plan.debateId,r.debateId);
+for(const x of plan.allowedInputs)assert.equal(rec(x.path).sha256,x.sha256);
+const prior=plan.allowedInputs.map(x=>rec(x.path));
+const session=fs.readFileSync(release.session.path,'utf8');
+const rows=session.trimEnd().split('\n').map(JSON.parse);
+const calls=rows.map((x,i)=>({row:x,line:i+1})).filter(x=>x.row.payload?.type==='custom_tool_call'&&['exec','functions.exec'].includes(x.row.payload.name)&&x.row.payload.input?.includes('const cmd = String.raw`env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY node --input-type=module'));
+assert.equal(calls.length,3,'Inspect any unexpected new attempt before preservation');
+const bundle=read(dir+'/input-bundle.json');
+const allowed=new Map([dir+'/input-bundle.json',bundle.ledgerPath,bundle.scorePath].map(p=>[p,fs.readFileSync(p,'utf8')]));
+if(!fs.existsSync(base))fs.mkdirSync(base);
+const put=(p,b)=>{fs.writeFileSync(p,b,{flag:'wx'});return rec(p);};
+const putJson=(p,o)=>put(p,JSON.stringify(o,null,2)+'\n');
+const attempts=[];
+for(const [i,item] of calls.entries()){
+ const id=item.row.payload.call_id,input=item.row.payload.input;
+ const out=rows.map((row,j)=>({row,line:j+1})).find(x=>x.row.payload?.type==='custom_tool_call_output'&&x.row.payload.call_id===id);assert(out);
+ const start=input.indexOf("<<'NODE'\n")+"<<'NODE'\n".length,end=input.indexOf('\nNODE`;');assert(start>8&&end>start);
+ const code=input.slice(start,end);
+ const cut=code.search(/const (?:result|r)=checkPublication\(o,p\)/);assert(cut>0);
+ const prefix=code.slice(0,cut).replace(/import\s+fs\s+from\s*'node:fs';/g,'').replace(/import\s*\{checkPublication\}\s*from\s*'[^']+';/g,'');
+ assert(!/\bimport\b|\bprocess\b|writeFile|exec\(|fetch\(/.test(prefix),'Unexpected capability in diagnostic reconstruction');
+ const context=vm.createContext({structuredClone,fs:Object.freeze({readFileSync:p=>{assert(allowed.has(p),'Read outside frozen three-file map');return allowed.get(p);}})},{codeGeneration:{strings:false,wasm:false}});
+ let error=null;try{vm.runInContext(prefix,context,{timeout:2000});}catch(e){error={name:e.name,message:e.message};}
+ const state=JSON.parse(vm.runInContext(error?'JSON.stringify({candidate:c})':'JSON.stringify(o)',context,{timeout:2000}));
+ const stem=base+'/attempt-'+String(i+1).padStart(2,'0');
+ const full=Object.hasOwn(state,'schemaVersion');
+ const cards=state.candidate.sections.flatMap(s=>s.exchanges.flatMap(e=>['pro','con'].flatMap(side=>e[side]?[e[side]]:[])));
+ attempts.push({attemptOrdinal:i+1,callId:id,sessionCallLine:item.line,sessionOutputLine:out.line,originalToolInput:put(stem+'-tool-input.txt',input),originalCallRecord:putJson(stem+'-call.json',item.row),originalToolOutputRecord:putJson(stem+'-tool-output.json',out.row),originalJavascript:put(stem+'-original-script.mjs.txt',code),diagnosticReconstruction:{artifact:putJson(stem+(full?'-reconstructed-rejected-output.json':'-reconstructed-partial-candidate.json'),state),method:'Inspected original construction prefix in a capability-restricted VM, supplied only exact frozen packet/ledger/score bytes; stopped before validator and before any artifact-writing code. This is a deterministic diagnostic serialization, not a file submitted by the original writer.',completeOutputConstructed:full,error,cardCount:cards.length,populatedCritiques:cards.filter(x=>x.critique).length,populatedDescriptions:cards.filter(x=>x.words).length},disposition:i===0?'failed-initial-in-memory-construction':'quarantined-in-context-revision-not-accepted'});
+}
+for(const x of prior)assert.equal(rec(x.path).sha256,x.sha256);
+assert(!fs.existsSync(dir+'/output.json'));
+const diagnostic={schemaVersion:'1.0-publication-initial-failure-preservation',status:'failed-with-no-submitted-publication',debateNumber:n,debateId:r.debateId,recordedAt:new Date().toISOString(),initialContext:{executionPlan:rec(dir+'/execution-plan.json'),readingRelease:rec(dir+'/reading-release.json'),readingAudit:rec(dir+'/reading-audit.json'),sessionSnapshot:rec(release.session.path),agentPath:release.agentPath},initialModelContexts:1,inMemoryConstructionCalls:3,submittedOutputFiles:0,attempts,findings:['Initial construction failed at the Red Sea critique: 130 words but 873 characters, below the 880-character floor. It never reached the overview or AI Contribution assignments.','The writer then made two broad in-context revisions; neither is an accepted recovery. The first complete candidate failed a 131-word critique; the next failed the critique-boilerplate gate.','All versions synthesize critiques by joining ledger rationales, stripping sentence punctuation, truncating words, and padding from move IDs or stock terms. The final version concatenates sourcegroundinginterpretivespecificity to a word to reach the character floor. This fails substantive editorial requirements regardless of numeric gates.','No publication output file was written. No bounded publication field-repair packet has been attempted. Preserve every construction and failure; do not use quarantined revisions as accepted prose.'],recoveryDisposition:'Use the existing first unavailable-field repair route, with named leaf fields in shards of at most two, one attempt per shard, fresh isolated contexts and literal authored prose; no wholesale replacement authorization is inferred and no exhausted field repair is retried.',frozenInputsUnchanged:prior,scoreRecalculation:false,siteMutation:false,directIncrementalCostUsd:0};
+putJson(base+'/diagnostic.json',diagnostic);
+console.log(JSON.stringify({status:diagnostic.status,inMemoryCalls:3,submittedOutputs:0,attempts:attempts.map(x=>({ordinal:x.attemptOrdinal,complete:x.diagnosticReconstruction.completeOutputConstructed,critiques:x.diagnosticReconstruction.populatedCritiques,error:x.diagnosticReconstruction.error})),scoresAndSourceUnchanged:true}));

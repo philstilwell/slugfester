@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0-bounded-publication-repair-execution-plan",
+  "status": "frozen-before-first-repair-attempt",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "groupId": "cards-4",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/field-repair-1/cards-4/packet.json",
+      "sha256": "bbc5a10a65921b99c4759112e24dcdad934f62349d00c31e98bdadbbf8e6fecf",
+      "bytes": 60815
+    },
+    {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/scoped-indexed-transcript.txt",
+      "sha256": "d54a16894ae27f46020c3eeb020ab5b34e6ab6f4ebbb00055823aa7b1a89ad37",
+      "bytes": 32278
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/audio/score-blind-supplement.json",
+      "sha256": "18353afa3e462a8e8f05290656be0869b6fbc01785d0eed440f35a039a514a0f",
+      "bytes": 2132
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": ".assessment-cache/debate-268-check-publication-field-repair.mjs",
+      "sha256": "f48350b871b6cba5423fb35415606e237cbe57994faf0977f53b86248fd9d44e",
+      "bytes": 2111
+    }
+  ],
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-268/publication/field-repair-1/cards-4/output.json",
+  "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-268/publication/field-repair-1/cards-4/reading-audit.json",
+  "packetPath": "docs/assessment-production/standalone-debates-v1/debate-268/publication/field-repair-1/cards-4/packet.json",
+  "shards": [
+    {
+      "shardId": "037",
+      "fields": [
+        "candidate.sections[5].exchanges[0].pro.words",
+        "candidate.sections[5].exchanges[0].pro.critique"
+      ],
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "shardId": "038",
+      "fields": [
+        "candidate.sections[5].exchanges[0].con.words",
+        "candidate.sections[5].exchanges[0].con.critique"
+      ],
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "shardId": "039",
+      "fields": [
+        "candidate.sections[5].exchanges[1].pro.words",
+        "candidate.sections[5].exchanges[1].pro.critique"
+      ],
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "shardId": "040",
+      "fields": [
+        "candidate.sections[5].exchanges[0].pro.role",
+        "candidate.sections[5].exchanges[0].con.role"
+      ],
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "shardId": "041",
+      "fields": [
+        "candidate.sections[5].exchanges[1].pro.role"
+      ],
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "attemptsPerShard": 1,
+  "retries": 0,
+  "forkTurns": "none",
+  "directIncrementalCostUsd": 0
+}

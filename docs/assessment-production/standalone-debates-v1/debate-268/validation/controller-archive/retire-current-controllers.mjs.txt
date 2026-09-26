@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const [flag,n]=process.argv.slice(2);assert.equal(flag,'--debate');assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),hash=b=>createHash('sha256').update(b).digest('hex'),rec=p=>{const b=fs.readFileSync(p);return {path:p,sha256:hash(b),bytes:b.length};};
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const planPath=r.root+'/validation/controller-retirement-plan.json',plan=read(planPath);assert.equal(process.cwd(),plan.workspace);assert.equal(plan.debateNumber,n);
+assert.deepEqual(fs.readdirSync('tmp').sort(),plan.controllers.map(x=>x.path.slice(4)).sort());
+for(const x of [...plan.controllers,...plan.browserWorkingFiles])assert.deepEqual(rec(x.path),x);
+const archive=r.root+'/validation/controller-archive',retired='.assessment-cache/debate-'+n+'-retired-controllers',browserRetired='.assessment-cache/debate-'+n+'-browser-working';
+assert(!fs.existsSync(retired)&&!fs.existsSync(browserRetired));fs.mkdirSync(retired);fs.mkdirSync(archive,{recursive:true});
+const archived=[];
+for(const x of plan.controllers){const name=x.path.slice(4),to=archive+'/'+name+'.txt';fs.copyFileSync(x.path,to,fs.constants.COPYFILE_EXCL);assert.equal(rec(to).sha256,x.sha256);fs.renameSync(x.path,retired+'/'+name);archived.push({original:x,archived:rec(to),recoverablePath:retired+'/'+name});}
+for(const x of plan.browserWorkingFiles.filter(x=>x.path.endsWith('.js'))){const to=archive+'/browser-'+x.path.split('/').at(-1)+'.txt';fs.copyFileSync(x.path,to,fs.constants.COPYFILE_EXCL);archived.push({original:x,archived:rec(to)});}
+fs.renameSync('output/playwright/debate-'+n,browserRetired);
+assert.equal(fs.readdirSync('tmp').length,0);
+fs.writeFileSync(r.root+'/validation/controller-retirement.json',JSON.stringify({status:'retired-with-exact-recoverable-copies',debateNumber:n,debateId:r.debateId,plan:rec(planPath),archived,browserWorkingFiles:plan.browserWorkingFiles,browserRecoveryPath:browserRetired,deletedFiles:0,unrelatedFilesChanged:0,directIncrementalCostUsd:0},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'retired-without-deletion',controllers:plan.controllers.length,browserWorkingFiles:plan.browserWorkingFiles.length}));

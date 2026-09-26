@@ -1,0 +1,28 @@
+async (page) => {
+ const errors=[], failures=[], responses=[];
+ const onError=e=>errors.push(String(e)), onConsole=m=>{if(m.type()==="error")errors.push(m.text());};
+ const onFail=r=>failures.push({url:r.url(),error:r.failure()?.errorText});
+ const onResponse=r=>{if(r.status()>=400)responses.push({url:r.url(),status:r.status()});};
+ page.on("pageerror",onError);page.on("console",onConsole);page.on("requestfailed",onFail);page.on("response",onResponse);
+ const routes=["/debate/sacks-dawkins-science-religion-2012/","/","/search/?q=Jonathan+Sacks","/topics/","/interlocutor/jonathan-sacks/","/interlocutor/richard-dawkins/","/rankings/?compare-a=Jonathan+Sacks&compare-b=Richard+Dawkins"], pages=[];
+ for(const width of [1440,390]){
+  await page.setViewportSize({width,height:width===1440?1000:844});
+  for(const route of routes){
+   await page.goto("http://127.0.0.1:4186"+route,{waitUntil:"networkidle"});
+   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+   if(overflow)throw Error("Overflow "+route+" "+width);
+   if(route.startsWith("/debate/")){
+    const text=await page.getByRole("complementary",{name:"Debate score summary"}).innerText();
+    if(!text.includes("77")||!text.includes("85"))throw Error("Scores");
+    if(await page.locator('a[href^="/reference/bias/confirmation-bias/?debate=sacks-dawkins-science-religion-2012"]').count()!==2)throw Error("Card and overall confirmation links");
+    const source=await page.getByRole("link",{name:"Open YouTube source",exact:true}).getAttribute("href");
+    if(source!=="https://www.youtube.com/watch?v=8Ad3rVRdgbI")throw Error("Source");
+    if(width===1440)await page.screenshot({path:"output/playwright/debate-268/desktop-header.png"});else await page.screenshot({path:"output/playwright/debate-268/mobile-header.png"});
+   }
+   pages.push({route,width,title:await page.title(),overflow});
+  }
+ }
+ page.off("pageerror",onError);page.off("console",onConsole);page.off("requestfailed",onFail);page.off("response",onResponse);
+ if(errors.length||failures.length||responses.length)throw Error(JSON.stringify({errors,failures,responses}));
+ return {status:"passed-final-browser-runtime-replay",pages,errors,failedRequests:failures,failedResponses:responses};
+}
