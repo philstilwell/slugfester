@@ -3,11 +3,13 @@ import "./validate-reader-features.mjs";
 import "./validate-interlocutor-bios.mjs";
 import "./validate-initial-content.mjs";
 import "./validate-reader-scope-disclosures.mjs";
+import "./validate-seo-contract.mjs";
 import { dirname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { interlocutorAvatars, avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { referenceDefinitions } from "../src/data/references.js";
+import { topicCategoryDefinitions } from "../src/data/topics.js";
 import {
   SITE_URL,
   backendPath,
@@ -18,7 +20,8 @@ import {
   rankingsPath,
   referencePath,
   searchPath,
-  topicsPath
+  topicsPath,
+  topicPath
 } from "../src/seo.js";
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
@@ -69,6 +72,7 @@ const expectedPaths = [
   "/",
   searchPath(),
   topicsPath(),
+  ...topicCategoryDefinitions.map(topicPath),
   rankingsPath(),
   backendPath(),
   insightsPath(),
@@ -137,7 +141,9 @@ sitemapUrls.forEach((urlString) => {
   }
   descriptionOwners.set(description, url.pathname);
 
-  const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
+  const canonicals = [...html.matchAll(/<link rel="canonical" href="([^"]+)">/g)];
+  if (canonicals.length !== 1) fail(`${url.pathname} must have exactly one canonical URL`);
+  const canonical = canonicals[0]?.[1];
   if (canonical !== url.href) {
     fail(`${url.pathname} canonical is ${canonical || "missing"}; expected ${url.href}`);
   }
@@ -248,7 +254,7 @@ sitemapUrls.forEach((urlString) => {
 
 if (browserAssetVersions.size !== 1) fail("Public pages disagree on the browser asset version");
 const browserVersion = [...browserAssetVersions][0];
-const appSource = readFileSync(join(root, "src/app.js"), "utf8");
+const appSource = ["src/app.js", "src/seo.js"].map((file) => readFileSync(join(root, file), "utf8")).join("\n");
 for (const match of appSource.matchAll(/\.\/(?:data\/[^"'`?]+|seo\.js)\?v=([^"'`]+)/g)) {
   if (match[1] !== browserVersion) fail(`Browser import has a stale data version: ${match[0]}`);
 }

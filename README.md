@@ -40,6 +40,8 @@ npm run seo
 
 This writes the lightweight browser summary module, static `index.html` files for clean debate and reference URLs, plus `sitemap.xml`, `robots.txt`, and `404.html`. Run it after adding, removing, renumbering, or renaming debates.
 
+The same build generates a dedicated page for every topic, source-backed reference examples, and profile sharing metadata. Commit `scripts/seo-page-history.json` and `src/data/page-updates.js` with the generated pages: they keep sitemap and structured-data modification dates tied to real content changes, rather than every rebuild. Do not reset the history file to make pages appear newer. `node scripts/validate-public-site.mjs` checks these SEO contracts as part of the normal site-quality checks.
+
 ## Add debates
 
 Debate pages are driven by `src/data/debates.js`. Follow the full critique standard in [`docs/debate-critique-process.md`](docs/debate-critique-process.md) and the locked YouTube assessment template in [`docs/youtube-debate-assessment-template.md`](docs/youtube-debate-assessment-template.md), then add a new object to the `debates` array with:

@@ -1,9 +1,10 @@
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=d03a82a989c13954";
-import { topicCategoryDefinitions } from "./data/topics.js?v=d03a82a989c13954";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=d03a82a989c13954";
-import { debateSummaries } from "./data/debate-summaries.js?v=d03a82a989c13954";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=d03a82a989c13954";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=d03a82a989c13954";
+import { pageUpdates } from "./data/page-updates.js?v=ac629d6e4d9568d9";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=ac629d6e4d9568d9";
+import { topicCategoryDefinitions } from "./data/topics.js?v=ac629d6e4d9568d9";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=ac629d6e4d9568d9";
+import { debateSummaries } from "./data/debate-summaries.js?v=ac629d6e4d9568d9";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=ac629d6e4d9568d9";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=ac629d6e4d9568d9";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -38,8 +39,11 @@ import {
   searchPath,
   searchSeo,
   topicsPath,
-  topicsSeo
-} from "./seo.js?v=d03a82a989c13954";
+  topicsSeo,
+  topicPath,
+  topicSeo,
+  withPageUpdate
+} from "./seo.js?v=ac629d6e4d9568d9";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -81,6 +85,7 @@ const referenceHashRoutePattern = /^#\/reference\/(fallacy|bias)\/([a-z0-9-]+)(?
 const debatePathRoutePattern = /^\/debate\/([a-z0-9-]+)\/?$/;
 const searchPathRoutePattern = /^\/search\/?$/;
 const topicsPathRoutePattern = /^\/topics\/?$/;
+const topicPathRoutePattern = /^\/topics\/([a-z0-9-]+)\/?$/;
 const rankingsPathRoutePattern = /^\/rankings\/?$/;
 const interlocutorPathRoutePattern = /^\/interlocutor\/([a-z0-9-]+)\/?$/;
 const backendPathRoutePattern = /^\/backend\/?$/;
@@ -91,7 +96,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=d03a82a989c13954")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=ac629d6e4d9568d9")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -110,7 +115,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=d03a82a989c13954")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=ac629d6e4d9568d9")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -126,7 +131,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=d03a82a989c13954`)
+    const promise = import(`./data/debate-details/${id}.js?v=ac629d6e4d9568d9`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -141,7 +146,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=d03a82a989c13954`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=ac629d6e4d9568d9`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -265,6 +270,7 @@ function setStructuredData(jsonLd) {
 }
 
 function setSeo(seo) {
+  seo = withPageUpdate(seo, pageUpdates.overrides[seo.canonicalPath] || pageUpdates.defaultDate);
   const canonicalUrl = seo.canonicalPath === null ? "" : absoluteUrl(seo.canonicalPath || "/");
   const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
   const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
@@ -347,7 +353,7 @@ function setSeo(seo) {
   } else {
     removeHeadElement('meta[property="article:modified_time"]');
   }
-  setMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
+  setMeta('meta[name="twitter:card"]', { name: "twitter:card", content: seo.twitterCard || "summary_large_image" });
   setMeta('meta[name="twitter:title"]', { name: "twitter:title", content: seo.title });
   setMeta('meta[name="twitter:description"]', { name: "twitter:description", content: seo.description });
   setMeta('meta[name="twitter:image"]', { name: "twitter:image", content: imageUrl });
@@ -377,7 +383,7 @@ function renderDebateTitle(debate) {
 function currentPrimaryNavKey() {
   const { hash, pathname } = window.location;
   if (hash.match(searchHashRoutePattern) || pathname.match(searchPathRoutePattern)) return "search";
-  if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern)) return "topics";
+  if (hash.match(topicsHashRoutePattern) || pathname.match(topicsPathRoutePattern) || pathname.match(topicPathRoutePattern)) return "topics";
   if (
     hash.match(rankingsHashRoutePattern) ||
     hash.match(interlocutorHashRoutePattern) ||
@@ -1550,6 +1556,26 @@ function renderTopics() {
   `);
 }
 
+function renderTopicPage(id) {
+  const topic = topicCategoryDefinitions.find((item) => item.id === id);
+  if (!topic) {
+    setSeo(notFoundSeo());
+    app.innerHTML = renderShell(`<main class="not-found"><h1>Topic not found</h1><p><a href="${topicsPath()}">Browse all debate topics</a></p></main>`);
+    return;
+  }
+  const matches = debates.filter((debate) => debate.topicCategory === topic.id)
+    .sort((a, b) => Number(b.number) - Number(a.number));
+  const seo = topicSeo(topic, debates);
+  setSeo(seo);
+  app.innerHTML = renderShell(`<main class="topics-page topic-detail-page">
+    <nav class="topic-breadcrumb" aria-label="Breadcrumb"><a href="/">Debates</a><span aria-hidden="true"> / </span><a href="${topicsPath()}">Topics</a><span aria-hidden="true"> / </span><span aria-current="page">${escapeHtml(topic.shortLabel)}</span></nav>
+    <section class="topics-hero"><div><p class="eyebrow">${matches.length} assessed debates</p><h1>${escapeHtml(seo.heading)}</h1><p class="topics-lede">${escapeHtml(topic.description)}</p></div></section>
+    <p class="topic-scope">These debates are grouped by their main question. Scores assess the reasoning presented—not the truth of a position. <a href="${backendPath()}">How the assessments work</a>.</p>
+    <section aria-labelledby="topic-debates-heading"><h2 id="topic-debates-heading">Explore the assessments</h2><div class="search-result-list">${matches.map(renderSearchResult).join("")}</div></section>
+    <nav class="topic-related-links" aria-label="Explore other topics"><h2>Explore other topics</h2>${topicCategoryDefinitions.filter((other) => other.id !== topic.id).map((other) => `<a href="${topicPath(other)}">${escapeHtml(other.title)}</a>`).join("")}</nav>
+  </main>`);
+}
+
 function renderRankings() {
   const state = rankingState();
   const filteredDebates = rankingDebates(state);
@@ -1567,7 +1593,7 @@ function renderRankings() {
     state.topic !== "all" ||
     state.minimum !== MIN_RANKED_DEBATE_APPEARANCES ||
     state.sort !== "average";
-  setSeo(rankingsSeo(debates, rankings.length));
+  setSeo(rankingsSeo(debates));
 
   app.innerHTML = renderShell(`
     <main class="rankings-page">
@@ -2157,7 +2183,7 @@ function renderTopicGroup(group) {
       <div class="topic-category-heading">
         <div>
           <p class="eyebrow">${group.debates.length} debates</p>
-          <h2>${escapeHtml(group.title)}</h2>
+          <h2><a href="${topicPath(group)}">${escapeHtml(group.title)}</a></h2>
         </div>
         <p>${escapeHtml(group.description)}</p>
       </div>
@@ -3002,6 +3028,7 @@ function renderAssessmentGuide(debate) {
 
 function renderRelatedDebates(debate) {
   const related = relatedDebates(debate, debateSummaries, uniqueInterlocutorsForDebate);
+  const topic = topicCategoryDefinitions.find((item) => item.id === debate.topicCategory);
   if (!related.length) return "";
   return `<section class="related-debates" aria-labelledby="related-debates-heading">
     <p class="eyebrow">Keep exploring</p>
@@ -3011,6 +3038,7 @@ function renderRelatedDebates(debate) {
       <h3>${escapeHtml(item.label)}</h3><p class="related-debate-reason">${escapeHtml(item.reason)}</p>
       ${renderRecentAssessmentCard(item.debate)}
     </div>`).join("")}</div>
+    ${topic ? `<p><a href="${topicPath(topic)}">Browse all ${escapeHtml(topic.shortLabel.toLowerCase())} debates</a></p>` : ""}
   </section>`;
 }
 
@@ -3689,6 +3717,7 @@ async function route({ focusMain = false } = {}) {
     hash.match(searchHashRoutePattern) || window.location.pathname.match(searchPathRoutePattern);
   const topicsMatch =
     hash.match(topicsHashRoutePattern) || window.location.pathname.match(topicsPathRoutePattern);
+  const topicMatch = window.location.pathname.match(topicPathRoutePattern);
   const rankingsMatch =
     hash.match(rankingsHashRoutePattern) || window.location.pathname.match(rankingsPathRoutePattern);
   const interlocutorMatch =
@@ -3718,21 +3747,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=d03a82a989c13954")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=ac629d6e4d9568d9")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=d03a82a989c13954")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=ac629d6e4d9568d9")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=d03a82a989c13954")
+    insightsPromise ||= import("./data/insights.js?v=ac629d6e4d9568d9")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
@@ -3786,6 +3815,8 @@ async function route({ focusMain = false } = {}) {
     renderSearch();
   } else if (topicsMatch) {
     renderTopics();
+  } else if (topicMatch) {
+    renderTopicPage(topicMatch[1]);
   } else if (rankingsMatch) {
     renderRankings();
   } else if (interlocutorMatch) {
@@ -3833,6 +3864,7 @@ function shouldHandleInternally(link) {
     !url.pathname.match(debatePathRoutePattern) &&
     !url.pathname.match(searchPathRoutePattern) &&
     !url.pathname.match(topicsPathRoutePattern) &&
+    !url.pathname.match(topicPathRoutePattern) &&
     !url.pathname.match(rankingsPathRoutePattern) &&
     !url.pathname.match(interlocutorPathRoutePattern) &&
     !url.pathname.match(backendPathRoutePattern) &&
@@ -3849,6 +3881,7 @@ function shouldHandleInternally(link) {
     debatePathRoutePattern.test(url.pathname) ||
     searchPathRoutePattern.test(url.pathname) ||
     topicsPathRoutePattern.test(url.pathname) ||
+    topicPathRoutePattern.test(url.pathname) ||
     rankingsPathRoutePattern.test(url.pathname) ||
     interlocutorPathRoutePattern.test(url.pathname) ||
     backendPathRoutePattern.test(url.pathname) ||

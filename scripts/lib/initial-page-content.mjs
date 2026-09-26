@@ -3,7 +3,8 @@ import { publishedDebates as debates } from "../../src/data/debates.js";
 import { renderAssessmentProcessGuide } from "../../src/data/assessment-process-guide.js";
 import { avatarsForSpeakerText } from "../../src/data/interlocutors.js";
 import { topicCategoryDefinitions } from "../../src/data/topics.js";
-import { debatePath, debateTitleWithYear, interlocutorPath } from "../../src/seo.js";
+import { referenceDefinitions, referenceFromUrl } from "../../src/data/references.js";
+import { debatePath, debateTitleWithYear, interlocutorPath, topicPath } from "../../src/seo.js";
 
 const escape = (value = "") => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const paragraph = (text) => text ? `<p>${escape(text)}</p>` : "";
@@ -43,6 +44,10 @@ function debateContent(debate) {
 }
 
 export function initialPageContent(path) {
+  const topic = topicCategoryDefinitions.find((item) => topicPath(item) === path);
+  if (topic) return `<section><h2>About this topic</h2>${paragraph(topic.description)}<p>Debates are grouped by their main question. Scores assess the reasoning presented, not the truth of a position. <a href="/backend/">Read the assessment method</a>.</p></section><section><h2>Explore the assessments</h2>${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section><nav aria-label="Explore other topics"><h2>Explore other topics</h2>${topicCategoryDefinitions.filter((item) => item.id !== topic.id).map((item) => `<p><a href="${topicPath(item)}">${escape(item.title)}</a></p>`).join("")}</nav>`;
+  const referenceMatch = path?.match(/^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/$/);
+  if (referenceMatch) return referenceContent(referenceMatch[1], referenceMatch[2]);
   if (path === "/backend/") return `${renderAssessmentProcessGuide()}<section id="rubric-quality-check"><h2>Explore the assessments</h2><p>The live distribution graph and recommendation form are available with JavaScript enabled. <a href="/insights/data-and-methods/">Read the research methods and limitations</a>, <a href="/search/">browse all debate summaries</a>, or <a href="/corrections/">report a possible scorecard issue</a>.</p></section>`;
   const debate = debates.find((item) => debatePath(item) === path);
   if (debate) return debateContent(debate);
@@ -54,11 +59,26 @@ export function initialPageContent(path) {
       ${cards(individual.map(({ debate }) => debate))}</section>${team.length ? `<section><h2>Team and other excluded appearances</h2><p>These records do not contribute to individual averages.</p>${cards(team.map(({ debate }) => debate))}</section>` : ""}`;
   }
   if (path === "/" || path === "/search/") return `<section><h2>${path === "/" ? "Newest debate additions" : "Browse all debate summaries"}</h2><p>These summaries and links work without JavaScript. Use your browser’s Find command to locate a speaker or subject; interactive filtering requires JavaScript.</p>${cards(path === "/" ? catalogue.slice(0, 12) : catalogue)}${path === "/" ? '<p><a href="/search/">Read all debate summaries</a></p>' : ""}</section>`;
-  if (path === "/topics/") return topicCategoryDefinitions.map((topic) => `<section><h2>${escape(topic.title)}</h2>${paragraph(topic.description)}${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section>`).join("");
+  if (path === "/topics/") return topicCategoryDefinitions.map((topic) => `<section><h2><a href="${topicPath(topic)}">${escape(topic.title)}</a></h2>${paragraph(topic.description)}${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section>`).join("");
   if (path === "/rankings/") {
     const rows = [...people.values()].map(({ person, records }) => ({ person, records: records.filter(({ debate }) => eligible(debate)) })).filter(({ records }) => records.length).sort((a, b) => average(b.records) - average(a.records) || b.records.length - a.records.length || a.person.name.localeCompare(b.person.name));
     return `<section><h2>One-on-one scorecard averages</h2><p>Group debate scores are excluded. These averages summarize the published sample, not a definitive ranking of ability. Small samples and different opponents limit comparisons. Interactive filters and comparisons require JavaScript.</p><table><caption>All eligible interlocutors, ordered by published average</caption><thead><tr><th scope="col">Interlocutor</th><th scope="col">Scorecards</th><th scope="col">Average /100</th></tr></thead><tbody>${rows.map(({ person, records }) => `<tr><th scope="row"><a href="${escape(interlocutorPath(person))}">${escape(person.name)}</a></th><td>${records.length}</td><td>${number(average(records))}</td></tr>`).join("")}</tbody></table></section>`;
   }
   if (path === "/backend/" || path === "/assessment/") return `<section><h2>How to read an assessment</h2><p>Slugfester assesses the reasoning presented in a debate, not the worth of its speakers or the final truth of their worldviews. Published scores are AI-generated, revisable estimates. Read the arguments, critiques, and original source alongside the numbers.</p><h3>From transcript to scorecard</h3><p>The workflow starts from a complete transcript and a defined debate question. Independent judgments assess the selected argumentative moves; disagreements are reviewed before repository code calculates the scores. Published critiques explain strengths, limitations, and the remaining argumentative burden. Logical-fallacy and cognitive-bias labels describe specific defects rather than automatically imposing additional numerical penalties.</p><h3>Selection and comparison limits</h3><p>The catalogue is curated, not random or representative. Available complete sources, topic fit, reader interest, and reliable processing influence selection. Group and panel side scores are kept separate from individual one-on-one averages. Different opponents, topics, sample sizes, and assessment processes limit direct comparisons.</p><h3>Inspect the evidence</h3><p><a href="/insights/data-and-methods/">Read the research methods, classifications, and limitations</a>, <a href="/search/">browse the debate summaries</a>, or <a href="/corrections/">report a possible scorecard issue</a>. Detailed methodological controls and interactive forms are available when JavaScript is enabled.</p></section>`;
   return "";
+}
+
+function referenceContent(type, slug) {
+  const reference = referenceDefinitions[type]?.[slug];
+  if (!reference) return "";
+  const examples = [];
+  for (const debate of catalogue) for (const section of debate.sections) for (const exchange of section.exchanges) {
+    for (const side of ["pro", "con"]) for (const tag of exchange[side]?.tags || []) {
+      const match = referenceFromUrl(tag.url);
+      if (match?.type === type && match.slug === slug) examples.push({ debate, section, argument: exchange[side], tag, side });
+    }
+  }
+  return `<section><h2>How to interpret this label</h2><p>A label identifies a specific problem in the reasoning, not a judgment about the person. It adds no separate numerical penalty. <a href="/backend/">See the assessment standards</a>.</p></section>
+    <section><h2>Examples from published debates</h2><p>${examples.length} assessed ${examples.length === 1 ? "occurrence" : "occurrences"} in the current catalogue. These excerpts preserve the published wording and link to the complete assessment.</p>
+    ${examples.slice(0, 6).map(({debate, section, argument, tag, side}) => `<article class="initial-debate-summary"><h3><a href="${debatePath(debate)}">${escape(debateTitleWithYear(debate))}</a></h3><p>${escape(argument.speaker || debate.sides[side].speaker)} · ${escape(section.title)} · ${escape(argument.time)}</p><blockquote>${escape(argument.words)}</blockquote>${paragraph(tag.context)}<p><a href="${escape(debate.youtubeUrl)}">Watch the original source</a></p></article>`).join("") || "<p>No occurrences are currently published for this definition.</p>"}</section>`;
 }
