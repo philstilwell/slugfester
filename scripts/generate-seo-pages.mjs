@@ -79,7 +79,7 @@ const appSource = await readFile(appPath, "utf8");
 const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
 const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
-  "src/styles.css", "src/seo.js", "src/data/topics.js",
+  "src/styles.css", "src/seo.js", "src/data/topics.js", "src/data/assessment-process-guide.js",
   "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
 ].map((path) => readFile(join(root, path), "utf8")));
 const assetVersion = createHash("sha256")
