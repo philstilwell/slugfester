@@ -1,0 +1,66 @@
+{
+  "status": "passed-direct-desktop-and-mobile-review",
+  "publicationSha256": "a53ccda8e6682a044db2e80afc97560fecf44d37dba8f53c089c79e9a365ed3d",
+  "previewPort": 4187,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": {
+    "allLockedCardsPresent": true,
+    "correctTitleMotionSourcePositionsScoresByline": true,
+    "acceptedTagsAndOverallLinksRendered": true,
+    "aiDefaultCollapsedPointerEnterSpacePassedBothViewports": true,
+    "critiquePointerEnterSpaceFocusPassedBothViewports": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "biographyLeftDesktopAboveMobile": true,
+    "bothSpeakerPortraitsLoaded": true,
+    "homeSearchTopicsSitemapBothProfilesContainDebate": true,
+    "rankingsComparisonContainsBothSpeakers": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "screenshotPaths": [
+    "output/playwright/debate-269/desktop-header.png",
+    "output/playwright/debate-269/mobile-header.png",
+    "output/playwright/debate-269/desktop-critique.png",
+    "output/playwright/debate-269/mobile-critique.png",
+    "output/playwright/debate-269/desktop-ai-open.png",
+    "output/playwright/debate-269/mobile-ai-open.png",
+    "output/playwright/debate-269/desktop-ai-closed.png",
+    "output/playwright/debate-269/mobile-ai-closed.png",
+    "output/playwright/debate-269/desktop-andrew-loke-profile.png",
+    "output/playwright/debate-269/mobile-andrew-loke-profile.png",
+    "output/playwright/debate-269/desktop-daniel-linford-profile.png",
+    "output/playwright/debate-269/mobile-daniel-linford-profile.png"
+  ],
+  "snapshotPaths": [
+    "output/playwright/debate-269/desktop-before-check.yml",
+    "output/playwright/debate-269/mobile-before-check.yml"
+  ],
+  "consolePath": "docs/assessment-production/standalone-debates-v1/debate-269/rendering/runtime-replay.log",
+  "networkPath": "docs/assessment-production/standalone-debates-v1/debate-269/rendering/runtime-replay.log",
+  "observations": [
+    "Directly viewed all twelve saved screenshots. Title, motion, 70/88 scores, portraits, readable critique panels, and AI open/closed states fit both viewports without clipping or unintended overlap.",
+    "All thirty-five exact publication descriptions and five card labels were checked in publication order. The overall link correctly routes through the site's internal catalog occurrence page.",
+    "Both viewport runs passed pointer, Enter, Space, retained focus, and immediate distant-control activation with an open critique. AI Contribution started collapsed.",
+    "Fourteen route/viewport visits produced no page errors, console errors, failed requests, failed responses, or horizontal overflow. Both biographies appear left of their charts on desktop and above them on mobile.",
+    "Homepage, search, topics, both profiles and rankings contain the expected debate or speakers; sitemap includes the canonical debate URL. Existing portraits are loaded; no new avatar was needed.",
+    "Four fresh-context download measurements pass unchanged limits: 476182/555000, 532871/605000, 568714/640000, and 594839/645000 bytes. No budget baseline, limit, application stylesheet, or application script was changed.",
+    "The initial temporary UI checker incorrectly expected external catalog links and then used an unavailable runtime URL constructor. Both failed checker states and logs are preserved; corrections were confined to the temporary checker. Final desktop/mobile runs completed all assertions successfully.",
+    "The temporary browser session and preview server were closed. The command named network in the installed skill was unavailable in this CLI version; the separately saved fourteen-route request/response listener replay supplies the network evidence instead."
+  ]
+}

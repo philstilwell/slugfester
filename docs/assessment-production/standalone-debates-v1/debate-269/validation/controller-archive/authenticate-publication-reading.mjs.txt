@@ -1,0 +1,72 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const [planPath, agentPath, session, outputPath, ...flags] = process.argv.slice(2);
+const hash = b => createHash('sha256').update(b).digest('hex');
+const p = JSON.parse(fs.readFileSync(planPath));
+const raw = fs.readFileSync(session), rows = raw.toString().trim().split('\n').map(JSON.parse);
+const meta = rows.find(r => r.type === 'session_meta').payload;
+assert.equal(meta.agent_path ?? meta.source?.subagent?.thread_spawn?.agent_path, agentPath);
+const contexts = rows.filter(r => r.type === 'turn_context').map(r => ({model:r.payload.model, reasoningEffort:r.payload.effort}));
+const expectedModel = typeof p.model === 'string' ? p.model : p.model.model ?? p.model.slug;
+const expectedEffort = p.reasoningEffort ?? p.model.reasoningEffort;
+assert(contexts.length && contexts.every(x => x.model === expectedModel && x.reasoningEffort === expectedEffort));
+const outputs = [];
+for (const row of rows) {
+  const payload = row.payload;
+  if (!['custom_tool_call_output','function_call_output'].includes(payload?.type)) continue;
+  const blocks = Array.isArray(payload.output) ? payload.output : [{text:payload.output}];
+  const enclosingTruncation = blocks.some(b => /Warning: truncated output|tokens truncated|output truncated/i.test(b.text || ''));
+  for (const b of blocks) {
+    let t = b.text || '';
+    try { const j = JSON.parse(t); if (typeof j.output === 'string') t = j.output; } catch {}
+    if (!t || /^Script completed\nWall time/.test(t)) continue;
+    outputs.push({ordinal:row.ordinal,callId:payload.call_id,text:t,sha256:hash(t),characters:t.length,truncated:enclosingTruncation});
+  }
+}
+const visible = outputs.filter(x => !x.truncated).map(x => ({callId:x.callId,lines:x.text.split('\n').map(s => s.replace(/^\s*\d+\t/,''))}));
+const inputs = (p.allowedInputs ?? [...Object.values(p.inputs), ...p.controls]).map(rec => {
+  const bytes = fs.readFileSync(rec.path); assert.equal(hash(bytes),rec.sha256);
+  const compactEvents = rec.path === p.inputs?.events?.path;
+  const rangesToRead = rec.allowedLines ?? rec.allowedLineRanges;
+  const fullLines = bytes.toString().split('\n');
+  const lines = compactEvents ? JSON.parse(bytes).map(e => JSON.stringify(e)) : rangesToRead ? rangesToRead.flatMap(r => fullLines.slice(r.start-1,r.end)) : fullLines;
+  const indices = new Map(), covered = new Set(), chunks = [];
+  lines.forEach((s,i) => { if (!indices.has(s)) indices.set(s,[]); indices.get(s).push(i); });
+  for (const v of visible) for (let j=0;j<v.lines.length;j++) {
+    let longest=0;
+    for (const start of indices.get(v.lines[j]) ?? []) {
+      let length=0;
+      while(start+length<lines.length && j+length<v.lines.length && lines[start+length]===v.lines[j+length]) length++;
+      if(length<2) continue;
+      for(let k=start;k<start+length;k++) covered.add(k);
+      chunks.push({callId:v.callId,startLine:start+1,endLine:start+length}); longest=Math.max(longest,length);
+    }
+    if(longest>1)j+=longest-1;
+  }
+  const missing=lines.flatMap((s,i)=>s&&!covered.has(i)?[i+1]:[]),ranges=[];
+  for(const line of missing){const last=ranges.at(-1);if(last&&last.end===line-1)last.end=line;else ranges.push({start:line,end:line});}
+  let losslessLedgerEvidence=null;
+  if(missing.length && rec.path.endsWith('/final-ledger/final-ledger.json')) {
+    const expected=JSON.parse(bytes),pieces=[];
+    const add=(text,out)=>{try{pieces.push({value:JSON.parse(text),callId:out.callId,ordinal:out.ordinal,sha256:out.sha256});}catch{}};
+    for(const out of outputs.filter(x=>!x.truncated)){add(out.text.trim(),out);for(const line of out.text.split('\n'))if(line.trim().startsWith('{'))add(line.trim(),out);}
+    const {moves,...rest}=expected;
+    assert(Array.isArray(moves)&&moves.length>0);
+    const restPiece=pieces.find(x=>JSON.stringify(x.value)===JSON.stringify(rest));
+    const movePieces=moves.map(m=>pieces.find(x=>JSON.stringify(x.value)===JSON.stringify(m)));
+    if(restPiece&&movePieces.every(Boolean)){
+      const reconstructed={...rest,moves};
+      assert.deepEqual(reconstructed,expected);
+      losslessLedgerEvidence={normalization:'Exact JSON string values, keys, arrays and numeric values preserved; whitespace outside values is immaterial. Full compact move objects plus complete non-move object reconstruct the entire frozen ledger without selecting or summarizing any field.',completeNonMoveObject:{callId:restPiece.callId,ordinal:restPiece.ordinal,visibleOutputSha256:restPiece.sha256},completeMoveObjects:movePieces.map((v,i)=>({moveId:moves[i].moveId,callId:v.callId,ordinal:v.ordinal,visibleOutputSha256:v.sha256})),reconstructedEqualsEntireFrozenDocument:true,omittedFields:0,sourceHashUnchanged:true};
+    }
+  }
+  const complete=missing.length===0||Boolean(losslessLedgerEvidence);
+  return {...rec,literalCompleteReadAuthenticated:complete,normalization:losslessLedgerEvidence?losslessLedgerEvidence.normalization:compactEvents?'Lossless compact JSON object per event, all keys and values preserved; sequence authenticated.':'Exact text lines, allowing sequential display line-number prefixes.',nonemptyLines:lines.filter(Boolean).length,missingCount:complete?0:missing.length,missingRanges:complete?[]:ranges,originalLineMatcherMissingCount:missing.length,exactChunkEvidence:chunks,...(losslessLedgerEvidence?{losslessLedgerEvidence}:{})};
+});
+const missing=inputs.filter(x=>!x.literalCompleteReadAuthenticated).map(({path,missingCount,missingRanges})=>({path,missingCount,missingRanges}));
+if(missing.length){console.log(JSON.stringify({status:'reading-incomplete',missing},null,2));process.exit(1);}
+assert((p.allowedOutputPaths ?? [p.outputPath]).every(x=>!fs.existsSync(x)),'Output exists before release');
+const audit={schemaVersion:'1.0-source-reading-release',status:'authenticated-and-released-for-first-submission',debateNumber:p.debateNumber,debateId:p.debateId,videoId:p.videoId,createdAt:new Date().toISOString(),agentPath,plan:{path:planPath,sha256:hash(fs.readFileSync(planPath))},session:{path:session,sha256:hash(raw),bytes:raw.length,kind:'pre-submission-prefix-snapshot'},actualContextModels:contexts,inputs,outputReadEvidence:outputs.map(({text,...rest})=>rest),outputExistedAtRelease:false,directIncrementalCostUsd:0};
+if(flags.includes('--freeze'))fs.writeFileSync(outputPath,JSON.stringify(audit,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:audit.status,agentPath,completeInputs:inputs.length,actualContextModels:contexts,frozen:flags.includes('--freeze')}));

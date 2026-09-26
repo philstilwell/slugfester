@@ -1,0 +1,15 @@
+"""Use the repository timestamped-transcription helper without automatic retries."""
+import importlib.util
+import json
+import sys
+from openai import OpenAI
+
+spec = importlib.util.spec_from_file_location("repository_whisper", "scripts/transcribe-whisper-timestamps.py")
+helper = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(helper)
+helper.OpenAI = lambda: OpenAI(max_retries=0, timeout=180.0)
+try:
+    helper.main()
+except Exception as error:
+    print(json.dumps({"errorType": type(error).__name__, "statusCode": getattr(error, "status_code", None), "requestId": getattr(error, "request_id", None)}), file=sys.stderr)
+    raise SystemExit(1)

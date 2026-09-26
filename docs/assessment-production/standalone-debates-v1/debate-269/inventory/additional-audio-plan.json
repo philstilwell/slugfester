@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0-additional-inventory-audio-plan",
+  "status": "frozen-before-paid-calls",
+  "createdAt": "2026-09-26T19:23:22.313Z",
+  "debateNumber": "269",
+  "videoId": "WjVHREd0mvQ",
+  "controller": {
+    "path": ".assessment-cache/verify-current-inventory-audio.mjs",
+    "sha256": "21baf58790d297d1756e89bb2fb84a3f06638ca24acf30618df91f5c6b2fef64",
+    "bytes": 5876
+  },
+  "wrapper": {
+    "path": ".assessment-cache/whisper-269-once.py",
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721",
+    "bytes": 659
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "audio": {
+    "path": ".assessment-cache/captions/WjVHREd0mvQ/source.m4a",
+    "sha256": "d27444faadb09120dfd3c6f23a49bf50fcdf32d0083ac6c9cc2b18311ecd18da",
+    "bytes": 144224004
+  },
+  "costPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/source/transcription-cost-plan.json",
+    "sha256": "cd6c2349991791017d1e2be0c57ef418c6aaa325a980828eb140be230e218f26",
+    "bytes": 1619
+  },
+  "priorVerification": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/source/audio-source-verification.json",
+    "sha256": "c1e7c161523787c6275151abdf0407d0deb58e170455915033c2e14cde914e31",
+    "bytes": 13067
+  },
+  "model": "whisper-1",
+  "rateUsdPerMinute": 0.006,
+  "attemptsPerInput": 1,
+  "automaticRetries": 0,
+  "knownSuccessfulBeforeUsd": 0.0725,
+  "maximumPossibleBeforeUsd": 0.0725,
+  "maximumAdditionalCostUsd": 0.1035,
+  "maximumCumulativeCostUsd": 0.176,
+  "clips": [
+    {
+      "id": "complete-causal-deduction",
+      "startSeconds": 1070,
+      "durationSeconds": 90,
+      "purpose": "Verify the complete causal-principle argument after the earlier source clip ended; no repeat of that input.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/complete-causal-deduction.wav",
+        "sha256": "db75d830d23bd56d2160cf59331823df05662feab9954eaa52875e840936f624",
+        "bytes": 2880078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/complete-causal-deduction",
+      "maximumAttemptCostUsd": 0.009000000000000001
+    },
+    {
+      "id": "initial-personal-agency",
+      "startSeconds": 1215,
+      "durationSeconds": 100,
+      "purpose": "Clarify corrupted first-cause and libertarian-agency terminology within the uninterrupted opening.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/initial-personal-agency.wav",
+        "sha256": "5304a947ca02a659b1398d44af9794bd17339f3d6bd6c8f60dc0c1b7aee51374",
+        "bytes": 3200078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/initial-personal-agency",
+      "maximumAttemptCostUsd": 0.01
+    },
+    {
+      "id": "stationary-physical-example",
+      "startSeconds": 1985,
+      "durationSeconds": 120,
+      "purpose": "Verify the Hamiltonian eigenstate and changeless physical example absent from the earlier grounding clip.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/stationary-physical-example.wav",
+        "sha256": "43b79f19531ff6b33ac546b61b15bc3e28a2797cabc4933205b27f9192636f94",
+        "bytes": 3840078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/stationary-physical-example",
+      "maximumAttemptCostUsd": 0.012
+    },
+    {
+      "id": "future-induction-exchange",
+      "startSeconds": 3618,
+      "durationSeconds": 145,
+      "purpose": "Resolve the selected analogy, opponent response and final qualification across the mixed speaker passage.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/future-induction-exchange.wav",
+        "sha256": "73316110c18a7bdedf9d6def7496888eda9147cf77b895ca627560cc9153c62e",
+        "bytes": 4640078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/future-induction-exchange",
+      "maximumAttemptCostUsd": 0.014499999999999999
+    },
+    {
+      "id": "nonmetric-control-exchange",
+      "startSeconds": 5755,
+      "durationSeconds": 350,
+      "purpose": "Resolve speaker-owned claims about instability, no duration, the why-not-sooner objection and modal control; preserve both sides.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/nonmetric-control-exchange.wav",
+        "sha256": "41ae148e1191423b3174fd3c95886875c13f1360a44cacd8acfddc922787f8f4",
+        "bytes": 11200078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/nonmetric-control-exchange",
+      "maximumAttemptCostUsd": 0.034999999999999996
+    },
+    {
+      "id": "material-only-transformation",
+      "startSeconds": 7860,
+      "durationSeconds": 140,
+      "purpose": "Verify the material-only hypothetical and its speaker turns, earlier than the source material-efficient clip.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/material-only-transformation.wav",
+        "sha256": "778c9225f37fa1ef69867f7d540ee0702d3ffd37d2263625aefdde5b9f3a3c64",
+        "bytes": 4480078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/material-only-transformation",
+      "maximumAttemptCostUsd": 0.014000000000000002
+    },
+    {
+      "id": "final-parity-reply",
+      "startSeconds": 8220,
+      "durationSeconds": 90,
+      "purpose": "Complete the later Linford parity response and immediate rejoinder beyond the previous source clip.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-inventory-verification/final-parity-reply.wav",
+        "sha256": "e6bc45796b26d49beb485026bf0a7cd48ecc7a5f61f18943103e29b9df04c7cf",
+        "bytes": 2880078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-inventory-verification/final-parity-reply",
+      "maximumAttemptCostUsd": 0.009000000000000001
+    }
+  ]
+}
