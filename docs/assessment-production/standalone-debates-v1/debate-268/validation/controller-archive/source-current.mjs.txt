@@ -1,0 +1,51 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {pipeline} from 'node:stream/promises';
+import {execFileSync,spawnSync} from 'node:child_process';
+
+const args=process.argv.slice(2), n=args[args.indexOf('--debate')+1], mode=args[0];
+assert(args.includes('--debate')); assert.match(n,/^\d{3,}$/);
+const root=`docs/assessment-production/standalone-debates-v1/debate-${n}`;
+const planPath=`${root}/source/acquisition-plan.json`;
+const read=p=>JSON.parse(fs.readFileSync(p));
+const put=(p,o)=>{fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'});};
+const record=p=>{const b=fs.readFileSync(p);return{path:p,bytes:b.length,sha256:createHash('sha256').update(b).digest('hex')};};
+if(mode==='prepare'){
+ const id=args[args.indexOf('--video')+1]; assert.match(id,/^[A-Za-z0-9_-]{11}$/);
+ const registry=read('docs/assessment-production/standalone-debates-v1/registry.json');
+ assert.equal(n,String(Math.max(...registry.debates.map(r=>Number(r.debateNumber)))+1));
+ assert(!registry.debates.some(r=>r.videoId===id));
+ const url=`https://www.youtube.com/watch?v=${id}`,cache=`.assessment-cache/captions/${id}`;
+ assert(!fs.existsSync(planPath));assert(!fs.existsSync(`${cache}/original-audio.m4a`));
+ const html=await(await fetch(url,{signal:AbortSignal.timeout(30000)})).text();
+ const key=html.match(/"INNERTUBE_API_KEY":"([^"]+)"/)?.[1];assert(key);
+ const response=await fetch(`https://www.youtube.com/youtubei/v1/player?key=${key}`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({context:{client:{clientName:'ANDROID',clientVersion:'20.10.38',androidSdkVersion:30,hl:'en',gl:'US'}},videoId:id}),signal:AbortSignal.timeout(30000)});
+ assert(response.ok);const player=await response.json();assert.equal(player.videoDetails?.videoId,id);
+ const duration=Number(player.videoDetails.lengthSeconds),tracks=player.captions?.playerCaptionsTracklistRenderer?.captionTracks??[];
+ assert.equal(tracks.length,0,'Public captions must be tried before paid transcription');
+ const candidates=(player.streamingData?.adaptiveFormats??[]).filter(f=>f.itag===140&&f.url&&!f.audioTrack?.isAutoDubbed&&!f.isDrc&&!f.isVb);assert.equal(candidates.length,1);
+ const chunkSeconds=300,sourceCalls=Math.ceil(duration/chunkSeconds),reserveCalls=3,callUpper=.06;
+ assert((sourceCalls+reserveCalls)*callUpper<=.96);
+ const baseline=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
+ const plan={schemaVersion:'1.0-bounded-source-acquisition',status:'frozen-before-paid-source-acquisition',createdAt:new Date().toISOString(),debateNumber:n,videoId:id,canonicalUrl:url,title:player.videoDetails.title,channel:player.videoDetails.author,durationSeconds:duration,repositoryBaseline:baseline,branch:execFileSync('git',['branch','--show-current'],{encoding:'utf8'}).trim(),scopeAuthorization:'User answered Yes to assessing the main Jonathan Sacks–Richard Dawkins conversation before audience questions, excluding substantive moderator interventions and directly dependent replies, with reader-facing scope disclosure. Exact boundaries remain to be verified.',captionDisposition:{androidTracks:tracks.length,webTracks:0,completePublicCaptionsAvailable:false,publisherTranscript:'https://rabbisacks.org/videos/rethink-festival-in-conversation-with-richard-dawkins/',publisherTranscriptTimed:false},sourceMedia:`${cache}/original-audio.m4a`,model:'gpt-4o-transcribe-diarize',responseFormat:'diarized_json',chunkSeconds,sourceCalls,reserveVerificationCalls:reserveCalls,sourceOutputRoot:`output/transcribe/${id}-source`,pricing:{source:'https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize',verifiedAt:new Date().toISOString(),inputUsdPerMillionTokens:2.5,outputUsdPerMillionTokens:10,documentedContextTokens:16000,documentedMaximumOutputTokens:2000,conservativePerCallUpperEstimateUsd:callUpper,upperEstimateBasis:'Price all 16000 documented context tokens as input plus all 2000 documented maximum output tokens. Reconcile actual usage after each call; not an invoice.',sourceUpperEstimateUsd:sourceCalls*callUpper,verificationReserveUsd:reserveCalls*callUpper,fullDebateWorkflowConservativeUpperEstimateUsd:(sourceCalls+reserveCalls)*callUpper,standingCapUsd:1,knownPaidCostUsd:0,maximumPossiblePaidCostUsdBeforeCalls:0,estimateReportedBeforePaidCalls:true},attemptsPerInput:1,automaticRetries:0,transcribeSkill:'/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py',singleAttemptWrapper:record('.assessment-cache/transcribe-current-once.py'),assessmentModel:{slug:'gpt-5.6-sol',label:'5.6 Sol',reasoningEffort:'low',authentication:'ChatGPT subscription'}};
+ put(planPath,plan);fs.mkdirSync(cache,{recursive:true});
+ const f=candidates[0],media=await fetch(f.url,{signal:AbortSignal.timeout(120000)});assert(media.ok,`Audio HTTP ${media.status}`);await pipeline(media.body,fs.createWriteStream(plan.sourceMedia,{flags:'wx'}));
+ put(`${root}/source/audio-acquisition.json`,{videoId:id,sourceUrl:url,retrievedAt:new Date().toISOString(),acquisition:'Public default original YouTube audio stream; no authentication bypass',format:{itag:f.itag,mimeType:f.mimeType,durationMs:Number(f.approxDurationMs)},media:record(plan.sourceMedia),costUsd:0});
+ fs.mkdirSync(plan.sourceOutputRoot,{recursive:true});const clips=[];
+ for(let i=0;i<sourceCalls;i++){const start=i*chunkSeconds,d=Math.min(chunkSeconds,duration-start),p=`${plan.sourceOutputRoot}/chunk-${String(i).padStart(3,'0')}.wav`;execFileSync('/opt/homebrew/bin/ffmpeg',['-nostdin','-n','-hide_banner','-loglevel','error','-ss',String(start),'-i',plan.sourceMedia,'-t',String(d),'-vn','-ac','1','-ar','16000',p]);clips.push({index:i,startSeconds:start,durationSeconds:d,input:record(p)});}
+ put(`${root}/source/transcription-inputs.json`,{videoId:id,plan:record(planPath),clips});
+ console.log(JSON.stringify({prepared:true,debateNumber:n,videoId:id,sourceCalls,maximumWorkflowEstimateUsd:plan.pricing.fullDebateWorkflowConservativeUpperEstimateUsd,paidCallsMade:0}));
+}else if(mode==='transcribe'){
+ const p=read(planPath),i=Number(args[args.indexOf('--chunk')+1]),inputs=read(`${root}/source/transcription-inputs.json`),c=inputs.clips[i];
+ assert.equal(inputs.plan.sha256,record(planPath).sha256);assert.equal(record(c.input.path).sha256,c.input.sha256);assert.equal(record(p.singleAttemptWrapper.path).sha256,p.singleAttemptWrapper.sha256);
+ const base=`${p.sourceOutputRoot}/chunk-${String(i).padStart(3,'0')}`,started=base+'.started.json',out=base+'.json',result=base+'.result.json';assert(!fs.existsSync(started)&&!fs.existsSync(out)&&!fs.existsSync(result),'One paid attempt per input');
+ const prior=fs.readdirSync(p.sourceOutputRoot).filter(x=>x.endsWith('.result.json')).map(x=>read(`${p.sourceOutputRoot}/${x}`));assert(prior.every(x=>x.exitCode===0),'Prior failure blocks automatic continuation');
+ assert(prior.reduce((s,x)=>s+x.maximumPossiblePaidCostUsd,0)+.06<=1);
+ put(started,{videoId:p.videoId,chunk:i,startedAt:new Date().toISOString(),input:c.input,plan:record(planPath),maximumPossibleAttemptCostUsd:.06});
+ const r=spawnSync('python3',[p.singleAttemptWrapper.path,c.input.path,'--model',p.model,'--response-format',p.responseFormat,'--chunking-strategy','auto','--language','en','--out',out],{encoding:'utf8',timeout:195000,maxBuffer:1000000});
+ fs.writeFileSync(base+'.stdout.log',r.stdout??'',{flag:'wx'});fs.writeFileSync(base+'.stderr.log',r.stderr??'',{flag:'wx'});
+ let cost=null,usage=null;if(r.status===0&&fs.existsSync(out)){usage=read(out).usage;assert(usage&&usage.input_tokens>=0&&usage.output_tokens>=0);cost=(usage.input_tokens*2.5+usage.output_tokens*10)/1e6;}
+ const o={videoId:p.videoId,chunk:i,completedAt:new Date().toISOString(),exitCode:r.status,signal:r.signal,attempts:1,retries:0,knownSuccessfulCallCostUsd:cost,maximumPossiblePaidCostUsd:cost??.06,usage,output:fs.existsSync(out)?record(out):null,billingConfirmed:false};put(result,o);console.log(JSON.stringify(o));assert.equal(r.status,0,'Source transcription failed; no retry');
+}else throw new Error('Unknown mode');

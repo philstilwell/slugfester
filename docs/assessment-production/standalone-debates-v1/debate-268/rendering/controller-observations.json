@@ -1,0 +1,71 @@
+{
+  "status": "passed-direct-desktop-and-mobile-review",
+  "publicationSha256": "b241b7632a6fa4a14cb3e6eb70a1097f32a3e9e7dd529848e76f445aac99f452",
+  "previewPort": 4186,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": {
+    "allLockedCardsPresent": true,
+    "correctTitleMotionSourcePositionsScoresByline": true,
+    "acceptedTagsAndOverallLinksRendered": true,
+    "aiDefaultCollapsedPointerEnterSpacePassedBothViewports": true,
+    "critiquePointerEnterSpaceFocusPassedBothViewports": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "biographyLeftDesktopAboveMobile": true,
+    "bothSpeakerPortraitsLoaded": true,
+    "homeSearchTopicsSitemapBothProfilesContainDebate": true,
+    "rankingsComparisonContainsBothSpeakers": true,
+    "approvedScopeDisclosureVisible": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "screenshotPaths": [
+    "output/playwright/debate-268/desktop-header.png",
+    "output/playwright/debate-268/mobile-header.png",
+    "output/playwright/debate-268/desktop-scope.png",
+    "output/playwright/debate-268/mobile-scope.png",
+    "output/playwright/debate-268/desktop-ai-closed.png",
+    "output/playwright/debate-268/mobile-ai-closed.png",
+    "output/playwright/debate-268/desktop-ai-open.png",
+    "output/playwright/debate-268/mobile-ai-open.png",
+    "output/playwright/debate-268/desktop-critique.png",
+    "output/playwright/debate-268/mobile-critique.png",
+    "output/playwright/debate-268/sacks-desktop-bio.png",
+    "output/playwright/debate-268/sacks-mobile-bio.png"
+  ],
+  "snapshotPaths": [
+    "output/playwright/debate-268/desktop-snapshot.yml",
+    "output/playwright/debate-268/mobile-snapshot.yml",
+    "output/playwright/debate-268/sacks-mobile-snapshot.yml",
+    "output/playwright/debate-268/dawkins-desktop-snapshot.yml",
+    "output/playwright/debate-268/search-snapshot.yml",
+    "output/playwright/debate-268/topics-snapshot.yml",
+    "output/playwright/debate-268/rankings-comparison-snapshot.yml"
+  ],
+  "consolePath": "docs/assessment-production/standalone-debates-v1/debate-268/rendering/console.json",
+  "networkPath": "docs/assessment-production/standalone-debates-v1/debate-268/rendering/network.json",
+  "observations": [
+    "Direct visual review confirmed readable scope disclosure, source link, 2012 year badge, 5.6 Sol byline, Jewish theism 77 and Scientific naturalism 85.",
+    "Both viewport replays verified twenty-seven nonempty cards, four accepted card tags, one overall confirmation-bias link, both loaded portraits, and no horizontal overflow.",
+    "AI Contribution pointer, Enter and Space actions passed; critique pointer, Enter, Space and focus passed. Activating the distant AI control immediately after opening the mobile critique succeeded.",
+    "Jonathan Sacks's new source-backed biography is left of the graph on desktop and above it on mobile. Both profiles link to Debate268; home, search, topic, sitemap and rankings comparison checks passed.",
+    "The final runtime replay visited seven correct site routes at each viewport and observed zero page errors, failed requests or failed responses.",
+    "Initial checking mistakes were corrected in the browser harness only: a plural /debates/ URL returned 404, exact getByLabel failed on a select whose combobox role worked, and an external-reference URL assertion was replaced with the actual internal reference route. The installed CLI uses requests rather than the older documented network command. No site code or test limits were changed to remedy these controller errors; the final correct-route replay passed.",
+    "The owned browser was closed and the exact preview server process on port4186 was stopped before freezing. No user-owned browser tab was touched."
+  ]
+}

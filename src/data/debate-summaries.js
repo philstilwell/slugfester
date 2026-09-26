@@ -12720,5 +12720,55 @@ export const debateSummaries = [
         "title": "Superstition and cultural effects"
       }
     ]
+  },
+  {
+    "id": "sacks-dawkins-science-religion-2012",
+    "number": "268",
+    "title": "Jonathan Sacks vs Richard Dawkins — Science and Religion",
+    "year": 2012,
+    "label": "Science and religion",
+    "date": "2026-09-26",
+    "duration": "1 hr 2 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8Ad3rVRdgbI",
+    "motion": "Can religion and science form a coherent partnership?",
+    "summary": "Sacks defends compatibility through distinct roles and disciplined interpretation, while Dawkins more successfully presses whether religious purpose and supernatural premises have independent warrant.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Jewish theism",
+        "speaker": "Jonathan Sacks",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Science and the partnership claim"
+      },
+      {
+        "title": "Cosmic purpose and explanatory warrant"
+      },
+      {
+        "title": "Literal, symbolic, and scientific interpretation"
+      },
+      {
+        "title": "Abraham, Isaac, and interpretive purpose"
+      },
+      {
+        "title": "Community and a post-religious future"
+      },
+      {
+        "title": "Common ground, supernaturalism, and dignity"
+      }
+    ]
   }
 ];

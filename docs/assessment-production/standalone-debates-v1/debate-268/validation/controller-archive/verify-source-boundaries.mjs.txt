@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),mode=args[0],n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const root=`docs/assessment-production/standalone-debates-v1/debate-${n}`,read=p=>JSON.parse(fs.readFileSync(p)),put=(p,o)=>fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+const recovery=read(root+'/source/authorized-source-recovery-1.json'),inputs=read(recovery.inputs.path),acq=read(root+'/source/audio-acquisition.json'),planPath=root+'/source/boundary-verification-plan-1.json';
+const verify=r=>assert.equal(fileRecord(r.path).sha256,r.sha256);assert.equal(acq.videoId,recovery.videoId);
+if(mode==='freeze'){
+ verify(acq.media);verify(recovery.wrapper);verify(recovery.helper);
+ const dir=recovery.sourceOutputRoot+'/boundary-verification-1';fs.mkdirSync(dir,{recursive:true});
+ const targets=[{index:2,raw:recovery.sourceOutputRoot+'/chunk-002.json',segmentId:121},{index:5,raw:recovery.recoveryOutputRoot+'/chunk-005.json',segmentId:113}];
+ const clips=targets.map(t=>{const c=inputs.clips[t.index],boundary=c.startSeconds+c.durationSeconds,start=boundary-15,duration=30,base=dir+`/boundary-${String(t.index).padStart(3,'0')}`;assert(!fs.existsSync(base+'.wav'));const r=spawnSync('ffmpeg',['-v','error','-nostdin','-n','-ss',String(start),'-i',acq.media.path,'-t',String(duration),'-ac','1','-ar','16000','-c:a','pcm_s16le',base+'.wav'],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);return{...t,rawRecord:fileRecord(t.raw),startSeconds:start,durationSeconds:duration,input:fileRecord(base+'.wav'),base,maximumAttemptCostUsd:.003};});
+ put(planPath,{schemaVersion:'1.0-targeted-source-boundary-verification',createdAt:new Date().toISOString(),debateNumber:n,videoId:recovery.videoId,purpose:'Verify the source wording and timing around two raw segment overflows; preserve every raw response, never silently clamp or repeat a full chunk.',audio:acq.media,controller:fileRecord('tmp/verify-source-boundaries.mjs'),wrapper:recovery.wrapper,helper:recovery.helper,model:'whisper-1',responseFormat:'verbose_json',attemptsPerInput:1,automaticRetries:0,usdPerMinute:.006,maximumCombinedCostUsd:.006,chargedAgainstExistingVerificationReserve:true,fullWorkflowUpperEstimateUsd:.9192,clips});console.log(JSON.stringify({frozen:true,clips:clips.map(c=>({start:c.startSeconds,duration:c.durationSeconds})),maximumCombinedCostUsd:.006}));
+}else if(mode==='run'){
+ const p=read(planPath);for(const r of [p.controller,p.wrapper,p.helper,p.audio])verify(r);const index=Number(args[args.indexOf('--chunk')+1]),c=p.clips.find(c=>c.index===index);assert(c);verify(c.input);verify(c.rawRecord);
+ for(const suffix of ['.json','.started.json','.result.json','.stdout.log','.stderr.log'])assert(!fs.existsSync(c.base+suffix));
+ put(c.base+'.started.json',{videoId:p.videoId,startedAt:new Date().toISOString(),plan:fileRecord(planPath),input:c.input,startSeconds:c.startSeconds,maximumPossibleAttemptCostUsd:c.maximumAttemptCostUsd});
+ const r=spawnSync('python3',[p.wrapper.path,c.input.path,'--language','en','--out',c.base+'.json'],{encoding:'utf8',timeout:195000,maxBuffer:1000000,env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'}});
+ fs.writeFileSync(c.base+'.stdout.log',r.stdout??'',{flag:'wx'});fs.writeFileSync(c.base+'.stderr.log',r.stderr??'',{flag:'wx'});
+ const o={videoId:p.videoId,model:p.model,completedAt:new Date().toISOString(),exitCode:r.status,signal:r.signal,attempts:1,retries:0,knownSuccessfulCallCostUsd:r.status===0?c.maximumAttemptCostUsd:null,maximumPossiblePaidCostUsd:c.maximumAttemptCostUsd,output:fs.existsSync(c.base+'.json')?fileRecord(c.base+'.json'):null,billingConfirmed:false};put(c.base+'.result.json',o);console.log(JSON.stringify(o));assert.equal(r.status,0,'Failed verification; stop without retry');
+ const j=read(c.base+'.json');console.log(JSON.stringify({segments:j.segments.map(({id,start,end,text})=>({id,start,end,text}))}));assert(j.segments.every(s=>s.start>=0&&s.end>=s.start&&s.end<=c.durationSeconds));
+}else throw new Error('Unknown mode');

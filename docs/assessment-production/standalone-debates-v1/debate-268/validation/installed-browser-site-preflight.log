@@ -1,0 +1,874 @@
+
+> slugfester@0.1.0 site:preflight
+> node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep "reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged"
+
+Validated explicit primary categories for 268 debates across 15 categories.
+
+> slugfester@0.1.0 seo
+> node scripts/generate-seo-pages.mjs --check
+
+Validated 762 SEO files.
+Validated source-grounded introductions and three related suggestions for 268 debates, plus all seven research introductions and figures.
+Validated source-backed biographies for all 182 published interlocutors.
+Validated substantive initial text for 268 debates and 182 profiles, plus catalogue, topics, rankings and method pages.
+Validated 5 explicitly registered reader-facing source and scope disclosures.
+Validated 471 public routes, 268 debate detail files, 182 generated profiles, and 182 avatar assets.
+
+
+Running 17 tests using 1 worker
+
+
+
+[1/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[3/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /interlocutor/alex-carter/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[4/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /debate/craig-oconnor-god-debate-2026/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[5/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /backend/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[7/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/data-and-methods/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[8/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /corrections/
+
+
+
+
+
+
+
+
+
+
+[9/17] tests/site-quality/site-quality.spec.mjs:67:1 › reviews the browser data baseline after ten added debates
+[10/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[11/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /rankings/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[12/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /debate/craig-oconnor-god-debate-2026/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[13/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /reference/fallacy/equivocation/
+
+
+
+
+
+
+
+
+
+
+[14/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /rankings/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[16/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /interlocutor/alex-o-connor/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[17/17] tests/site-quality/site-quality.spec.mjs:298:3 › remains usable with text enlarged to 200 percent: /corrections/
+
+
+
+
+
+
+
+
+
+
+  17 passed (12.6s)
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:27] "GET / HTTP/1.1" 200 -
+(node:48560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/slugfester-logo.jpg HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/jonathan-sacks.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/douglas-wilson.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/blake-giunta.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/miles-donahue.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/daniel-linford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 64845)
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 64844)
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 64846)
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/john-lennox.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/peter-atkins.webp HTTP/1.1" 200 -
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 64847)
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 64848)
+[WebServer] Traceback (most recent call last):
+[WebServer] Traceback (most recent call last):
+[WebServer] Traceback (most recent call last):
+[WebServer] Traceback (most recent call last):
+[WebServer] Traceback (most recent call last):
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1317, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 672, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 436, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 424, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 679, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 878, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/shutil.py", line 204, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer] ----------------------------------------
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1317, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 672, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 436, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 424, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 679, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 878, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/shutil.py", line 204, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer] ----------------------------------------
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1317, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1317, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 1317, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 672, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 672, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 436, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 424, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 679, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 878, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 436, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 424, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 679, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 878, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/shutil.py", line 204, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/shutil.py", line 204, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 672, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer] ----------------------------------------
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 436, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 424, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 679, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/server.py", line 878, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/shutil.py", line 204, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer] ----------------------------------------
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer] ----------------------------------------
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/scott-clifton.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/alex-malpass.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/joe-folley.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/joseph-schmid.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/bart-ehrman.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/sean-carroll.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:29] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /interlocutor/alex-carter/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/interlocutor-bios.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /assets/caricatures/alex-carter.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:30] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /debate/craig-oconnor-god-debate-2026/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/debate-details/craig-oconnor-god-debate-2026.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /backend/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /src/data/section-score-extremes.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:31] "GET /assets/backend-methodology-illustration.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /insights/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /assets/insights/p1-dimensions.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /assets/insights/p2-moves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /src/data/insights.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:32] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /insights/data-and-methods/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/insights-methods.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/insights.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/insights.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /corrections/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:33] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/slugfester-logo.jpg HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/douglas-wilson.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/jonathan-sacks.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/blake-giunta.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/miles-donahue.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/daniel-linford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/john-lennox.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/sye-ten-bruggencate.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/peter-atkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/david-wood.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/michael-shermer-v2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /assets/caricatures/jordan-peterson.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /rankings/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:34] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/sean-carroll.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/alex-malpass.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/joseph-schmid.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/scott-clifton.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/joe-folley.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/graham-oppy.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/lance-bush.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/bart-ehrman.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/max-baker-hytch.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/daniel-dennett.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/michael-ruse.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/michael-huemer.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/sam-harris.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/philip-goff.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/michael-licona.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/michael-shermer-v2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/stephen-woodford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/bernardo-kastrup.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /debate/craig-oconnor-god-debate-2026/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/debate-details/craig-oconnor-god-debate-2026.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:35] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /reference/fallacy/equivocation/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/reference-appearances/fallacy-equivocation.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/slugfester-logo.jpg HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/douglas-wilson.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/jonathan-sacks.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/blake-giunta.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/miles-donahue.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/daniel-linford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/john-lennox.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/sye-ten-bruggencate.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:36] "GET /assets/caricatures/peter-atkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /rankings/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/alex-malpass.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/joseph-schmid.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/scott-clifton.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/joe-folley.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/sean-carroll.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/matt-dillahunty.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/bart-ehrman.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/susan-blackmore.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/lance-bush.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/stephen-law.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/graham-oppy.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/daniel-dennett.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/michael-ruse.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/max-baker-hytch.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/richard-dawkins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/michael-huemer.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/christopher-hitchens.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/philip-goff.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/sam-harris.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/michael-licona.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/stephen-woodford.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:37] "GET /assets/caricatures/michael-shermer-v2.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /interlocutor/alex-o-connor/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/debate-analytics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /src/data/interlocutor-bios.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/debate-gloves.png HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/alex-oconnor.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/trent-horn.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/jonathan-mclatchie.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/max-baker-hytch.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/craig-biddle.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/michael-jones.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/william-lane-craig.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/francis-collins.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/alex-carter.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/cameron-bertuzzi.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/sam-harris.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/david-wood.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/glen-scrivener.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/lukas-ruegger.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/frank-turek.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/dinesh-dsouza.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/cliffe-knechtle.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/gregory-pine.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/alister-mcgrath.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/ayaan-hirsi-ali.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/ben-shapiro.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:38] "GET /assets/caricatures/ross-douthat.webp HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /corrections/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/styles.css?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/app.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/data/debate-summaries.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/data/references.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/data/interlocutors.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/data/topics.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/data/reader-guides.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /src/seo.js?v=beac17dad4d114b4 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [26/Sep/2026 13:07:39] "GET /assets/debate-gloves.png HTTP/1.1" 200 -

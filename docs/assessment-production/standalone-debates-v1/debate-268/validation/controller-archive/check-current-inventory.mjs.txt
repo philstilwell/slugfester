@@ -1,0 +1,28 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),mode=args[0],n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),put=(p,o)=>fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'}),verify=r=>assert.equal(fileRecord(r.path).sha256,r.sha256);
+const rec=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(rec);const root=rec.root,dir=root+'/inventory',draftPath=dir+'/rejected-original-draft.json',d=read(draftPath),scopedPath='.assessment-cache/captions/'+rec.videoId+'/scoped-events.json',events=read(scopedPath),map=new Map(events.map(e=>[e.eventIndex,e]));
+const planPath=dir+'/wording-verification-plan.json';
+if(mode==='diagnose'){
+ const moves=d.moves.map(m=>{const es=Array.from({length:m.endEvent-m.startEvent+1},(_,i)=>map.get(m.startEvent+i));assert(es.every(Boolean));const text=es.map(e=>e.text.replace(/\s+/g,' ').trim()).join(' '),foreign=es.filter(e=>e.attributedSpeaker!==m.speaker);return{moveId:m.moveId,side:m.side,startEvent:m.startEvent,endEvent:m.endEvent,characters:text.length,words:text.split(/\s+/).length,requiresLongSpanRationale:text.length>2200,mismatchedSpeakerEvents:foreign.map(e=>({eventIndex:e.eventIndex,speaker:e.attributedSpeaker,text:e.text})),quotes:m.quoteEligibleExactSpans.map(q=>({text:q,words:q.trim().split(/\s+/).length,exactInSource:text.includes(q),matchingEvents:es.filter(e=>e.text.includes(q)).map(e=>({eventIndex:e.eventIndex,speaker:e.attributedSpeaker}))}))};});
+ const counts={pro:d.moves.filter(m=>m.side==='pro').length,con:d.moves.filter(m=>m.side==='con').length};
+ put(dir+'/independent-original-diagnostics.json',{schemaVersion:'1.0-score-blind-inventory-source-diagnostic',createdAt:new Date().toISOString(),debateNumber:n,debateId:rec.debateId,draft:fileRecord(draftPath),source:fileRecord(scopedPath),derivedCounts:counts,reportedCounts:d.selectionBalanceAudit.totals,sections:d.sections.map(s=>({sectionId:s.sectionId,pro:d.moves.filter(m=>m.sectionId===s.sectionId&&m.side==='pro').length,con:d.moves.filter(m=>m.sectionId===s.sectionId&&m.side==='con').length})),moves});
+ console.log(JSON.stringify({counts,flags:moves.filter(m=>m.mismatchedSpeakerEvents.length||m.requiresLongSpanRationale||m.quotes.some(q=>!q.exactInSource||q.words<3||q.words>18))},null,2));
+}else if(mode==='freeze-audio'){
+ const m=d.moves.find(m=>m.attributionConfidence!=='high');assert(m);assert.equal(d.moves.filter(m=>m.attributionConfidence!=='high').length,1);
+ const target=d.moves.find(x=>m.respondsToIds.includes(x.moveId));assert(target);const start=map.get(target.startEvent).startMs/1000,end=(map.get(m.endEvent).startMs+map.get(m.endEvent).durationMs)/1000,duration=end-start;assert(duration<=25);
+ const acq=read(root+'/source/audio-acquisition.json'),prior=read(root+'/source/verified-source-continuation.json');verify(acq.media);verify(prior.wrapper);verify(prior.helper);
+ const outDir=prior.sourceOutputRoot+'/inventory-wording-verification-1';fs.mkdirSync(outDir,{recursive:true});const base=outDir+'/charity-measure';assert(!fs.existsSync(base+'.wav'));
+ const r=spawnSync('ffmpeg',['-v','error','-nostdin','-n','-ss',String(start),'-i',acq.media.path,'-t',String(duration),'-ac','1','-ar','16000','-c:a','pcm_s16le',base+'.wav'],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);
+ put(planPath,{status:'frozen-before-one-paid-call',createdAt:new Date().toISOString(),debateNumber:n,videoId:rec.videoId,targetMoveId:m.moveId,purpose:'Resolve charity measurement wording before score-blind inventory freeze; canonical source unchanged. Clip contains only eligible primary-speaker conversation.',source:acq.media,input:fileRecord(base+'.wav'),base,startSeconds:start,durationSeconds:duration,controller:fileRecord('tmp/check-current-inventory.mjs'),wrapper:prior.wrapper,helper:prior.helper,model:'whisper-1',responseFormat:'verbose_json',usdPerMinute:.006,attempts:1,retries:0,maximumAttemptCostUsd:duration/60*.006,knownSuccessfulBeforeUsd:.4452,maximumPossibleBeforeUsd:.4752,fullWorkflowUpperEstimateUsd:.9192,standingCapUsd:1});console.log(JSON.stringify({start,duration,maximumAttemptCostUsd:duration/60*.006}));
+}else if(mode==='run-audio'){
+ const p=read(planPath);for(const r of [p.source,p.input,p.controller,p.wrapper,p.helper])verify(r);
+ for(const suffix of ['.json','.started.json','.result.json','.stdout.log','.stderr.log'])assert(!fs.existsSync(p.base+suffix));
+ put(p.base+'.started.json',{startedAt:new Date().toISOString(),plan:fileRecord(planPath),input:p.input});
+ const r=spawnSync('python3',[p.wrapper.path,p.input.path,'--language','en','--out',p.base+'.json'],{encoding:'utf8',timeout:195000,maxBuffer:1000000,env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'}});
+ fs.writeFileSync(p.base+'.stdout.log',r.stdout??'',{flag:'wx'});fs.writeFileSync(p.base+'.stderr.log',r.stderr??'',{flag:'wx'});
+ const result={completedAt:new Date().toISOString(),exitCode:r.status,signal:r.signal,attempts:1,retries:0,knownSuccessfulCallCostUsd:r.status===0?p.maximumAttemptCostUsd:null,maximumPossibleCallCostUsd:p.maximumAttemptCostUsd,output:fs.existsSync(p.base+'.json')?fileRecord(p.base+'.json'):null,billingConfirmed:false};put(p.base+'.result.json',result);console.log(JSON.stringify(result));assert.equal(r.status,0,'Failure: no paid retry permitted');console.log(JSON.stringify(read(p.base+'.json').segments.map(({start,end,text})=>({start,end,text})),null,2));
+}else throw Error('Unknown mode');

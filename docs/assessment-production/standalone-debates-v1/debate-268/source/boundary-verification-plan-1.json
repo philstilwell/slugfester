@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-targeted-source-boundary-verification",
+  "createdAt": "2026-09-26T15:21:24.645Z",
+  "debateNumber": "268",
+  "videoId": "8Ad3rVRdgbI",
+  "purpose": "Verify the source wording and timing around two raw segment overflows; preserve every raw response, never silently clamp or repeat a full chunk.",
+  "audio": {
+    "path": ".assessment-cache/captions/8Ad3rVRdgbI/source-recovery.m4a",
+    "sha256": "5a498a47c2c6e1280315b91c025c8d027d2ed46d8bb8183999b7a77dfdc56ef8",
+    "bytes": 60786956
+  },
+  "controller": {
+    "path": "tmp/verify-source-boundaries.mjs",
+    "sha256": "122e07f094a9813f4794abcf7e5e6ed29b817e0ff9767b98788e951b72dc2ab4",
+    "bytes": 4245
+  },
+  "wrapper": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/controller-archive/whisper-current-once.py.txt",
+    "bytes": 659,
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721"
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "model": "whisper-1",
+  "responseFormat": "verbose_json",
+  "attemptsPerInput": 1,
+  "automaticRetries": 0,
+  "usdPerMinute": 0.006,
+  "maximumCombinedCostUsd": 0.006,
+  "chargedAgainstExistingVerificationReserve": true,
+  "fullWorkflowUpperEstimateUsd": 0.9192,
+  "clips": [
+    {
+      "index": 2,
+      "raw": "output/transcribe/8Ad3rVRdgbI-source/chunk-002.json",
+      "segmentId": 121,
+      "rawRecord": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-002.json",
+        "sha256": "4ced0fe3ed424964bcf1eb30d123cddf758fda0e27d25a3b7b3fed5e33afe8d6",
+        "bytes": 66541
+      },
+      "startSeconds": 885,
+      "durationSeconds": 30,
+      "input": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002.wav",
+        "sha256": "2008f7a80b2f4e881b7982b8d3822be63c18773839930fca1ad649933445d4e1",
+        "bytes": 960078
+      },
+      "base": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002",
+      "maximumAttemptCostUsd": 0.003
+    },
+    {
+      "index": 5,
+      "raw": "output/transcribe/8Ad3rVRdgbI-source/recovery-1/chunk-005.json",
+      "segmentId": 113,
+      "rawRecord": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/recovery-1/chunk-005.json",
+        "sha256": "a34ba319774639472c391f4620ba7e09013cb347f462497dd0488be187e94561",
+        "bytes": 61726
+      },
+      "startSeconds": 1785,
+      "durationSeconds": 30,
+      "input": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005.wav",
+        "sha256": "d36940b39d5494b463ffd393f75bcdd392d2458bcb44c2a81dfe8fc7d566230c",
+        "bytes": 960078
+      },
+      "base": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005",
+      "maximumAttemptCostUsd": 0.003
+    }
+  ]
+}

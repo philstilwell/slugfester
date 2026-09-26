@@ -1,0 +1,85 @@
+{
+  "videoId": "8Ad3rVRdgbI",
+  "verifiedAt": "2026-09-26T15:33:08.290Z",
+  "sourceAcquisition": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/audio-acquisition.json",
+    "sha256": "87fcbd1b7b906d0e305e2e92861e7fe16a0d4962638a5cb0361bcb92a034dc1c",
+    "bytes": 1363
+  },
+  "normalization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/normalization-provenance.json",
+    "sha256": "bfc5a1b2306feee0d2a6e71819d590afc9aec498f3b9ae50e116a3f2a4ea9fd0",
+    "bytes": 23962
+  },
+  "normalizedAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/normalized-source-audit.json",
+    "sha256": "d9a71db4afb03cbda5a08b2892868fa0c68f46638d29fe6e88032d823a01e82f",
+    "bytes": 1940
+  },
+  "boundaryPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/boundary-verification-plan-1.json",
+    "sha256": "69042d5e76b15db2f4e1987073424c457e9328a393d0aae82bc2009f24decce9",
+    "bytes": 2923
+  },
+  "boundaryCalls": [
+    {
+      "record": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002.result.json",
+        "sha256": "7ba46e365b4f8f38d3ce0588ce2da0e096d00c5c7b34a009d0b3467ec07233ea",
+        "bytes": 488
+      },
+      "result": {
+        "videoId": "8Ad3rVRdgbI",
+        "model": "whisper-1",
+        "completedAt": "2026-09-26T15:21:28.391Z",
+        "exitCode": 0,
+        "signal": null,
+        "attempts": 1,
+        "retries": 0,
+        "knownSuccessfulCallCostUsd": 0.003,
+        "maximumPossiblePaidCostUsd": 0.003,
+        "output": {
+          "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002.json",
+          "sha256": "4ccf95c9c782d7c90ca2803ee17ef131c9b6183d09f56e490f8adf170a18b4f0",
+          "bytes": 4512
+        },
+        "billingConfirmed": false
+      }
+    },
+    {
+      "record": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005.result.json",
+        "sha256": "d29037e3dc9a34a842a761965618f545b0c1a38be65c2b0d4f4f637e4814784a",
+        "bytes": 488
+      },
+      "result": {
+        "videoId": "8Ad3rVRdgbI",
+        "model": "whisper-1",
+        "completedAt": "2026-09-26T15:21:41.772Z",
+        "exitCode": 0,
+        "signal": null,
+        "attempts": 1,
+        "retries": 0,
+        "knownSuccessfulCallCostUsd": 0.003,
+        "maximumPossiblePaidCostUsd": 0.003,
+        "output": {
+          "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005.json",
+          "sha256": "799a43d69d33c445ccc0e1e656ff43554c39bffe147f3aee933e592c9e5ee249",
+          "bytes": 4135
+        },
+        "billingConfirmed": false
+      }
+    }
+  ],
+  "knownSuccessfulCallCostUsd": 0.4452,
+  "maximumPossiblePaidCostUsd": 0.4752,
+  "uncertainPaidAttempts": 1,
+  "directListeningClaimed": false,
+  "invoiceVerified": false,
+  "authorizedExceptionalRetry": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/authorized-source-recovery-1.json",
+    "sha256": "72e6f4953ec5cf7f2f78d54e3408ebadfef29e05f46aff1f1e6afdc89e3b4620",
+    "bytes": 4025
+  },
+  "correctionToEarlierPublisherLimitation": "The completed audio confirms that the publisher text ends where the original upload ends; it is not missing an additional recorded final answer. This source cutoff is entirely within excluded Q&A."
+}

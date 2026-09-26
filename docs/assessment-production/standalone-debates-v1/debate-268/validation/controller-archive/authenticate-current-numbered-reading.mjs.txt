@@ -1,0 +1,39 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const [planPath,agentPath,session,outputPath,...flags]=process.argv.slice(2);
+const hash=b=>createHash('sha256').update(b).digest('hex'),p=JSON.parse(fs.readFileSync(planPath));
+const raw=fs.readFileSync(session),rows=raw.toString().trim().split('\n').map(JSON.parse),meta=rows.find(r=>r.type==='session_meta').payload;
+assert.equal(meta.agent_path,agentPath);
+const model=p.model.slug||p.model.model,effort=p.model.reasoningEffort;
+const contexts=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));
+assert(contexts.length&&contexts.every(x=>x.model===model&&x.reasoningEffort===effort));
+const outputs=[];
+for(const row of rows)for(const b of ['custom_tool_call_output','function_call_output'].includes(row.payload?.type)&&Array.isArray(row.payload.output)?row.payload.output:[]){let t=b.text||'';try{const j=JSON.parse(t);if(typeof j.output==='string')t=j.output;}catch{}if(!t||/^Script completed\nWall time/.test(t))continue;outputs.push({ordinal:row.ordinal,callId:row.payload.call_id,text:t,sha256:hash(t),characters:t.length,truncated:/Warning: truncated output|tokens truncated|output truncated/i.test(t)});}
+const visible=outputs.filter(x=>!x.truncated).flatMap(x=>{
+ const lines=x.text.split('\n'),runs=[];let run=[],previous=null;
+ const flush=()=>{if(run.length)runs.push({callId:x.callId,lines:run});run=[];previous=null;};
+ for(const line of lines){const m=line.match(/^\s*(\d+)\t(.*)$/);if(!m){flush();continue;}const number=Number(m[1]);if(previous!==null&&number!==previous+1)flush();run.push(m[2]);previous=number;}flush();
+ return [{callId:x.callId,lines},...runs];
+});
+const inputs=p.allowedInputs.map(rec=>{
+ const b=fs.readFileSync(rec.path);assert.equal(hash(b),rec.sha256);
+ let expected=b.toString();const ranges=rec.allowedLines||rec.allowedLineRanges;
+ if(ranges)expected=ranges.map(x=>expected.split('\n').slice(x.start-1,x.end).join('\n')+'\n').join('');
+ const lines=expected.split('\n'),indices=new Map(),covered=new Set(),chunks=[];
+ lines.forEach((s,i)=>{if(!indices.has(s))indices.set(s,[]);indices.get(s).push(i);});
+ for(const v of visible)for(let j=0;j<v.lines.length;j++){
+  let longest=0;
+  for(const start of indices.get(v.lines[j])??[]){let length=0;while(start+length<lines.length&&j+length<v.lines.length&&lines[start+length]===v.lines[j+length])length++;if(length<2)continue;for(let k=start;k<start+length;k++)covered.add(k);chunks.push({callId:v.callId,startLine:start+1,endLine:start+length});longest=Math.max(longest,length);}
+  if(longest>1)j+=longest-1;
+ }
+ const missing=lines.flatMap((s,i)=>s&&!covered.has(i)?[i+1]:[]);
+ return{...rec,literalCompleteReadAuthenticated:missing.length===0,expectedCharacters:expected.length,authenticationMethod:'Exact contiguous visible chunks; truncated blocks excluded; declared line ranges only.',authenticatedNonemptyLines:lines.filter((s,i)=>s&&covered.has(i)).length,missingLineNumbers:missing,exactChunkEvidence:chunks};
+});
+const missing=inputs.filter(x=>!x.literalCompleteReadAuthenticated).map(x=>{const ranges=[];for(const line of x.missingLineNumbers){const last=ranges.at(-1);if(last&&last.end===line-1)last.end=line;else ranges.push({start:line,end:line});}return{path:x.path,missingCount:x.missingLineNumbers.length,missingRanges:ranges};});
+if(missing.length){console.log(JSON.stringify({status:'reading-incomplete',missing}));process.exit(1);}
+const finalOutput=p.outputPath||p.allowedOutputPaths?.find(x=>x.endsWith('/inventory.json')||x.endsWith('/draft-parts.json'));
+assert(finalOutput);assert.equal(fs.existsSync(finalOutput),false,'Final output exists before reading release');
+const audit={schemaVersion:'1.0-isolated-phase-reading-release',status:'authenticated-and-released-for-first-submission',debateNumber:p.debateNumber,debateId:p.debateId,createdAt:new Date().toISOString(),agentPath,plan:{path:planPath,sha256:hash(fs.readFileSync(planPath))},session:{path:session,sha256:hash(raw),bytes:raw.length,kind:'pre-submission-prefix-snapshot'},numberedOutputNormalization:'Sequential nl -ba prefixes may be removed; remaining literal content must match source exactly, and original visible text hashes remain preserved.',actualContextModels:contexts,inputs,outputReadEvidence:outputs.map(({text,...rest})=>rest),outputExistedAtRelease:false,directIncrementalCostUsd:0};
+if(flags.includes('--freeze'))fs.writeFileSync(outputPath,JSON.stringify(audit,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:audit.status,agentPath,completeInputs:inputs.length,actualContextModels:contexts,frozen:flags.includes('--freeze')},null,2));
