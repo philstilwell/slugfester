@@ -1,0 +1,76 @@
+{
+  "status": "quarantined-unauthorized-post-submission-revisions",
+  "debateNumber": "269",
+  "debateId": "loke-linford-physical-reality-cause-beginning-2023",
+  "agentPath": "/root/editorial_269_3",
+  "session": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/26/rollout-2026-09-26T16-16-38-01a0df5c-d7f9-7012-928a-83ba69da3428.jsonl",
+    "sha256": "d400ed40304c2fc3efef395321c00f07bfed6deac6cffc9db5d04ab27075f9ef",
+    "bytes": 2615553,
+    "kind": "prefix-snapshot-after-stop"
+  },
+  "writes": [
+    {
+      "rowIndex": 230,
+      "callId": "call_a1nWaIMhKDMoUMGrXMLRDHCC",
+      "timestamp": "2026-09-26T20:22:01.183Z",
+      "patchSha256": "20d1c7d6a337d3122355b72fcad05e67d9cae1ea8e6964b1153c73be0e155ea8",
+      "kind": "initial-submission"
+    },
+    {
+      "rowIndex": 251,
+      "callId": "call_PmiH36GytUvjZjHnqdBevCAf",
+      "timestamp": "2026-09-26T20:23:27.924Z",
+      "patchSha256": "a4e6767b7aaac82b6a457fc09b59c94cbe6a09ac99856032c1edaf0e1574e62f",
+      "kind": "unauthorized-post-submission-overwrite"
+    },
+    {
+      "rowIndex": 265,
+      "callId": "call_DDYQA5Y6CxO9MlmoCNwbueTK",
+      "timestamp": "2026-09-26T20:23:58.520Z",
+      "patchSha256": "beeac49e4777284524c6d98d109b181e6cf8e41221294b1b6a2998f56ab7b11d",
+      "kind": "unauthorized-post-submission-overwrite"
+    }
+  ],
+  "firstSubmission": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/publication/field-repair-1/failure-preservation/cards-3-first-submitted-output.json",
+    "sha256": "abd6aef5d94bf1b3429d18bab3be0db3532ca2705e31f67dceb6d7024d2d40ab",
+    "bytes": 16241
+  },
+  "postSubmissionState": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/publication/field-repair-1/cards-3/output.json",
+    "sha256": "47ec180cb257ffb271780419d40cd8e53033a889cffddd22aea3744d6a5564b3",
+    "bytes": 15341
+  },
+  "firstWritePatch": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/publication/field-repair-1/failure-preservation/cards-3-first-write.patch.txt",
+    "sha256": "20d1c7d6a337d3122355b72fcad05e67d9cae1ea8e6964b1153c73be0e155ea8",
+    "bytes": 18182
+  },
+  "changedLeafFields": [
+    "candidate.sections[4].exchanges[1].con.critique",
+    "candidate.sections[4].exchanges[2].con.critique",
+    "candidate.sections[4].exchanges[3].con.critique",
+    "candidate.sections[5].exchanges[0].pro.critique",
+    "candidate.sections[5].exchanges[0].con.critique",
+    "candidate.sections[5].exchanges[1].pro.critique",
+    "candidate.sections[6].exchanges[0].pro.critique",
+    "candidate.sections[6].exchanges[0].con.critique",
+    "candidate.sections[6].exchanges[1].pro.critique",
+    "candidate.sections[6].exchanges[2].pro.critique"
+  ],
+  "reason": "The worker wrote an initial output before checking length, then twice altered submitted output despite the one-attempt instruction. These revisions are not accepted as an authorized repair. Preserve original bytes reconstructed directly from the authenticated initial Add File patch and retain current bytes separately; no site data, scores or frozen judgments were touched.",
+  "controllerObservedOriginalWordCounts": [
+    139,
+    144,
+    144,
+    141,
+    138,
+    140,
+    142,
+    141,
+    139,
+    141
+  ],
+  "noFurtherWritesAuthorized": true
+}

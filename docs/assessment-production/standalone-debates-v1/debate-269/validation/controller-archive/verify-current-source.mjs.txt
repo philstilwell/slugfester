@@ -1,0 +1,40 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2), mode=args[0], n=args[args.indexOf('--debate')+1];
+assert(args.includes('--debate')); assert.match(n,/^\d{3,}$/);
+const root=`docs/assessment-production/standalone-debates-v1/debate-${n}`,read=p=>JSON.parse(fs.readFileSync(p));
+const put=(p,o)=>fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+const cost=read(root+'/source/transcription-cost-plan.json'), id=cost.videoId;
+assert.equal(cost.debateNumber,n);
+const source=`.assessment-cache/captions/${id}/source.m4a`,out=`output/transcribe/${id}-source-verification`,planPath=root+'/source/technical-verification-plan.json';
+const verify=r=>assert.equal(fileRecord(r.path).sha256,r.sha256);
+if(mode==='freeze'){
+ const meta=read(root+'/source/public-metadata.json');assert.equal(meta.videoId??meta.id,id);
+ const probe=spawnSync('ffprobe',['-v','error','-show_entries','format=duration,size','-of','json',source],{encoding:'utf8'});assert.equal(probe.status,0);
+ const duration=Number(JSON.parse(probe.stdout).format.duration);assert(duration>8900&&duration<8940);
+ const media=fileRecord(source),targets=[
+  {id:'causal-deduction',startSeconds:1000,durationSeconds:100,purpose:'Loke: exact causal-principle and modus-tollens wording; preserve negations and conditional structure.'},
+  {id:'timeless-grounding',startSeconds:2055,durationSeconds:100,purpose:'Linford: Hamiltonian eigenstate and timeless grounding; distinguish technical caption errors from the substantive claim.'},
+  {id:'abc-time',startSeconds:4330,durationSeconds:130,purpose:'Linford and Loke: whether timeless high-dimensional grounding includes A/B/C theories; possible caption negation and overlapping turns.'},
+  {id:'nonmetric-length',startSeconds:5570,durationSeconds:130,purpose:'Linford: whether a nonmetric segment has a length or no fact of length; possible missing caption negation.'},
+  {id:'uncaused-changes',startSeconds:7170,durationSeconds:130,purpose:'Loke and Linford: apparent claim that uncaused things do happen; distinguish cross-talk, question, negation, and conditional.'},
+  {id:'material-efficient',startSeconds:8095,durationSeconds:135,purpose:'Loke and Linford: distinguish material causation, efficient causation, and an appeal to any cause in the final exchange.'}
+ ];
+ fs.mkdirSync(out,{recursive:true});
+ const clips=targets.map(t=>{const base=out+'/'+t.id;assert(!fs.existsSync(base+'.wav'));assert(t.startSeconds+t.durationSeconds<duration);const r=spawnSync('ffmpeg',['-v','error','-nostdin','-n','-ss',String(t.startSeconds),'-i',source,'-t',String(t.durationSeconds),'-ac','1','-ar','16000','-c:a','pcm_s16le',base+'.wav'],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);return{...t,input:fileRecord(base+'.wav'),base,maximumAttemptCostUsd:t.durationSeconds/60*cost.rateUsdPerMinute};});
+ const seconds=clips.reduce((a,c)=>a+c.durationSeconds,0);assert(seconds<=cost.aggregateVerificationAudioMaximumSeconds);
+ const acquisition={schemaVersion:'1.0-public-audio-acquisition',status:'complete-and-duration-verified',debateNumber:n,videoId:id,canonicalUrl:cost.canonicalUrl,method:'Public original English YouTube audio, yt-dlp format 140, no paid service',media,durationSeconds:duration,metadata:fileRecord(`.assessment-cache/captions/${id}/source.info.json`),directCostUsd:0};put(root+'/source/audio-acquisition.json',acquisition);
+ put(planPath,{schemaVersion:'1.0-targeted-source-verification-plan',status:'frozen-before-paid-calls',debateNumber:n,videoId:id,createdAt:new Date().toISOString(),audio:media,controller:fileRecord('.assessment-cache/verify-current-source.mjs'),wrapper:fileRecord(`.assessment-cache/whisper-${n}-once.py`),helper:fileRecord('scripts/transcribe-whisper-timestamps.py'),costPlan:fileRecord(root+'/source/transcription-cost-plan.json'),model:cost.model,responseFormat:'verbose_json',attemptsPerInput:1,automaticRetries:0,rateUsdPerMinute:cost.rateUsdPerMinute,maximumCombinedCostUsd:seconds/60*cost.rateUsdPerMinute,fullWorkflowUpperEstimateUsd:cost.fullWorkflowConservativeUpperEstimateUsd,clips});
+ console.log(JSON.stringify({status:'frozen',clips:clips.length,seconds,maximumCombinedCostUsd:seconds/60*cost.rateUsdPerMinute}));
+}else if(mode==='run'){
+ const p=read(planPath);for(const r of [p.controller,p.wrapper,p.helper,p.audio,p.costPlan])verify(r);
+ const id=args[args.indexOf('--clip')+1],c=p.clips.find(c=>c.id===id);assert(c);verify(c.input);
+ for(const suffix of ['.json','.started.json','.result.json','.stdout.log','.stderr.log'])assert(!fs.existsSync(c.base+suffix));
+ put(c.base+'.started.json',{videoId:p.videoId,startedAt:new Date().toISOString(),plan:fileRecord(planPath),input:c.input,maximumPossibleAttemptCostUsd:c.maximumAttemptCostUsd});
+ const r=spawnSync('python3',[p.wrapper.path,c.input.path,'--language','en','--out',c.base+'.json'],{encoding:'utf8',timeout:195000,maxBuffer:1000000,env:{...process.env,PYTHONDONTWRITEBYTECODE:'1'}});
+ fs.writeFileSync(c.base+'.stdout.log',r.stdout??'',{flag:'wx'});fs.writeFileSync(c.base+'.stderr.log',r.stderr??'',{flag:'wx'});
+ const result={videoId:p.videoId,id:c.id,model:p.model,completedAt:new Date().toISOString(),exitCode:r.status,signal:r.signal,attempts:1,retries:0,knownSuccessfulCallCostUsd:r.status===0?c.maximumAttemptCostUsd:0,maximumPossiblePaidCostUsd:c.maximumAttemptCostUsd,output:fs.existsSync(c.base+'.json')?fileRecord(c.base+'.json'):null,billingConfirmed:false};put(c.base+'.result.json',result);console.log(JSON.stringify(result));assert.equal(r.status,0,'Failed verification; stop without retry');
+ const j=read(c.base+'.json');console.log(JSON.stringify({sourceStart:c.startSeconds,segments:j.segments.map(({id,start,end,text})=>({id,start,end,text}))}));assert(j.segments.every(s=>s.start>=0&&s.end>=s.start&&s.end<=c.durationSeconds+1));
+}else throw new Error('Unknown mode');

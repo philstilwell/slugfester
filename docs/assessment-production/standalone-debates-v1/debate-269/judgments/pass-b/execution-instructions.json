@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-frozen-isolated-primary-instructions",
+  "debateNumber": "269",
+  "debateId": "loke-linford-physical-reality-cause-beginning-2023",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/judgment-packet.json",
+      "sha256": "9a2d1cfca55d1138fec36e8e9e3084dcac9129fab8b423c0cad8f2e13549ce2d",
+      "bytes": 4963
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-269/inventory/inventory.json",
+      "sha256": "3c3638fa35e31fc9e084f72be7b86957dcf79ed8242f0e95c1d87437c279ada2",
+      "bytes": 135840
+    },
+    {
+      "path": ".assessment-cache/captions/WjVHREd0mvQ/indexed-transcript.txt",
+      "sha256": "bc489ef2928aeef324dfefae8de0750fddd931d9ac11dc275dcafe0ed31a3754",
+      "bytes": 275192
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-269/audio/score-blind-supplement.json",
+      "sha256": "8e7a768e1931db0ee80a2a3fcc368c1e05009a8df583573b3d4db5a6c415a26f",
+      "bytes": 25389
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "sourceEventCount": 3849,
+  "inventoryMoveCount": 35,
+  "requirements": [
+    "Read every allowed input literally and completely, except the validator restricted to its listed lines. Transcript chunks at most 300 lines; inventory and packet in untruncated chunks. Send a reading checkpoint and wait for authenticated controller release before rating. Hashing or scripted extraction does not substitute for reading.",
+    "Fresh isolated primary assessment. Do not read the other pass, other debates, existing assessments, totals, winners, publication prose, Git history, biographies, external research, credentials or paid APIs. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shell calls. No additional agents.",
+    "Rate each locked move exactly once in inventory order on all six dimensions. Independently author values and dimension-specific source-specific rationales of at least forty characters. Do not use a formula, repeated rationale or blanket rating template. Apply rubric band anchors to the actual inference.",
+    "This is the complete substantive dyadic debate. Review all openings, rebuttals, cross-examination and closings, including later qualifications and independently developed answers. Moderator introductions, timekeeping and outro are logistics, not argumentative evidence. Do not penalize a caption artifact or invent a substantive omission.",
+    "The original proposition is negatively phrased. Preserve the authorized display question and polarity note: the skeptical side argues epistemic non-acceptance, not proof that physical reality is beginningless or uncaused. Distinguish a challenge to an inference from an adopted burden to supply a complete alternative physics. Do not score a worldview as true or false.",
+    "Audio-derived corrections clarify source wording and speaker attribution without editing raw caption quotations. Never penalize recognition errors; never claim to have listened to audio. Assessment confidence is distinct from source attribution confidence.",
+    "Do not alter inventory, sections, weights, importance, burden bridges, evidence or reply links. No calculated move/section/overall scores, winner or rhetorical labels. Supply only dimension ratings and rationales plus the two independently evaluated burden-completion adjustments.",
+    "The exact nine-field eligibility object is mandatory for each burden adjustment. A nonzero value needs a distinct debate-wide consequence not captured in any selected move; double-counting forces zero. Do not use adjustments as impression bonuses or penalties.",
+    "One first submission, no automatic retries or replacements. Check the schema and full move order in memory before the first write. Never invoke a calculator. Use apply_patch only at the declared output and reading-audit paths. Do not overwrite a submitted artifact. No invented deadline; continue through context compaction if necessary."
+  ],
+  "directIncrementalCostUsd": 0,
+  "attempts": 1,
+  "retries": 0,
+  "pass": "pass-b",
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-b/output.json",
+  "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-b/reading-audit.json"
+}

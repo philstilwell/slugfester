@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-frozen-primary-execution-plan",
+  "status": "frozen-before-primary-execution",
+  "createdAt": "2026-09-26T19:41:39.260Z",
+  "debateNumber": "269",
+  "debateId": "loke-linford-physical-reality-cause-beginning-2023",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "inventorySha256": "3c3638fa35e31fc9e084f72be7b86957dcf79ed8242f0e95c1d87437c279ada2",
+    "isolation": "Protocol-restricted fresh built-in contexts and disjoint output paths; not an operating-system filesystem sandbox."
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/judgment-packet.json",
+      "sha256": "9a2d1cfca55d1138fec36e8e9e3084dcac9129fab8b423c0cad8f2e13549ce2d",
+      "bytes": 4963
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-269/inventory/inventory.json",
+      "sha256": "3c3638fa35e31fc9e084f72be7b86957dcf79ed8242f0e95c1d87437c279ada2",
+      "bytes": 135840
+    },
+    {
+      "path": ".assessment-cache/captions/WjVHREd0mvQ/indexed-transcript.txt",
+      "sha256": "bc489ef2928aeef324dfefae8de0750fddd931d9ac11dc275dcafe0ed31a3754",
+      "bytes": 275192
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-269/audio/score-blind-supplement.json",
+      "sha256": "8e7a768e1931db0ee80a2a3fcc368c1e05009a8df583573b3d4db5a6c415a26f",
+      "bytes": 25389
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-a/execution-instructions.json",
+        "sha256": "f674ae0555f3b283983833e33e03dc4dbf1fc3ea1a4f8461824b1ec305058946",
+        "bytes": 5078
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-a/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-a/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-b/execution-instructions.json",
+        "sha256": "c9610572d74dd6881f1f28ba4b57fb4af93925a08396d2bc4ce971e4ec668db6",
+        "bytes": 5078
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-b/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-269/judgments/pass-b/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

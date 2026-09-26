@@ -1,0 +1,46 @@
+{
+  "debateNumber": "269",
+  "debateId": "loke-linford-physical-reality-cause-beginning-2023",
+  "origin": "http://127.0.0.1:4187",
+  "publishedDebates": 269,
+  "budget": {
+    "baselineDebates": 259,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10
+  },
+  "addedDebates": 10,
+  "test": {
+    "path": "tests/site-quality/site-quality.spec.mjs",
+    "sha256": "d24edfa31cc476a4dedaf7850b04c8789a749a1b03c840bd0f4cf98561668bb3",
+    "bytes": 13748
+  },
+  "routes": [
+    {
+      "route": "/",
+      "baseDataBytes": 505000,
+      "required": "debate-summaries.js",
+      "limitBytes": 555000
+    },
+    {
+      "route": "/rankings/",
+      "baseDataBytes": 555000,
+      "required": "debate-analytics.js",
+      "limitBytes": 605000
+    },
+    {
+      "route": "/debate/craig-oconnor-god-debate-2026/",
+      "baseDataBytes": 590000,
+      "required": "debate-details/craig-oconnor-god-debate-2026.js",
+      "limitBytes": 640000
+    },
+    {
+      "route": "/reference/fallacy/equivocation/",
+      "baseDataBytes": 595000,
+      "required": "reference-appearances/fallacy-equivocation.js",
+      "limitBytes": 645000
+    }
+  ],
+  "status": "frozen-read-only-measurement-plan",
+  "baselineMutationAuthorized": false,
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0-targeted-source-verification-plan",
+  "status": "frozen-before-paid-calls",
+  "debateNumber": "269",
+  "videoId": "WjVHREd0mvQ",
+  "createdAt": "2026-09-26T18:57:58.378Z",
+  "audio": {
+    "path": ".assessment-cache/captions/WjVHREd0mvQ/source.m4a",
+    "sha256": "d27444faadb09120dfd3c6f23a49bf50fcdf32d0083ac6c9cc2b18311ecd18da",
+    "bytes": 144224004
+  },
+  "controller": {
+    "path": ".assessment-cache/verify-current-source.mjs",
+    "sha256": "3ecf89b089588bb2f93eed59495fb2e9652450d5f8505ac7947f5c26e74dcc48",
+    "bytes": 6014
+  },
+  "wrapper": {
+    "path": ".assessment-cache/whisper-269-once.py",
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721",
+    "bytes": 659
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "costPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/source/transcription-cost-plan.json",
+    "sha256": "cd6c2349991791017d1e2be0c57ef418c6aaa325a980828eb140be230e218f26",
+    "bytes": 1619
+  },
+  "model": "whisper-1",
+  "responseFormat": "verbose_json",
+  "attemptsPerInput": 1,
+  "automaticRetries": 0,
+  "rateUsdPerMinute": 0.006,
+  "maximumCombinedCostUsd": 0.07250000000000001,
+  "fullWorkflowUpperEstimateUsd": 0.6,
+  "clips": [
+    {
+      "id": "causal-deduction",
+      "startSeconds": 1000,
+      "durationSeconds": 100,
+      "purpose": "Loke: exact causal-principle and modus-tollens wording; preserve negations and conditional structure.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/causal-deduction.wav",
+        "sha256": "da38e27690e4c8d04120e5ebedd9f0ac5fbcecf55a7a719c38ff5e85590c34d3",
+        "bytes": 3200078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-source-verification/causal-deduction",
+      "maximumAttemptCostUsd": 0.01
+    },
+    {
+      "id": "timeless-grounding",
+      "startSeconds": 2055,
+      "durationSeconds": 100,
+      "purpose": "Linford: Hamiltonian eigenstate and timeless grounding; distinguish technical caption errors from the substantive claim.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/timeless-grounding.wav",
+        "sha256": "4c3f4c97e17d615e4c23f82a130c88112916bbac8129b93dd415d77d3ce79dfc",
+        "bytes": 3200078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-source-verification/timeless-grounding",
+      "maximumAttemptCostUsd": 0.01
+    },
+    {
+      "id": "abc-time",
+      "startSeconds": 4330,
+      "durationSeconds": 130,
+      "purpose": "Linford and Loke: whether timeless high-dimensional grounding includes A/B/C theories; possible caption negation and overlapping turns.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/abc-time.wav",
+        "sha256": "1dcd8a54b34fd5b4c8cf2776769b6b2088f562ddd62f7e1853f8dc26291adcfb",
+        "bytes": 4160078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-source-verification/abc-time",
+      "maximumAttemptCostUsd": 0.013
+    },
+    {
+      "id": "nonmetric-length",
+      "startSeconds": 5570,
+      "durationSeconds": 130,
+      "purpose": "Linford: whether a nonmetric segment has a length or no fact of length; possible missing caption negation.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/nonmetric-length.wav",
+        "sha256": "bcfce86c23ad2797a4c7c983c4bdff14bba6ee5169caae7d8e1c5cbdbdb13e93",
+        "bytes": 4160078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-source-verification/nonmetric-length",
+      "maximumAttemptCostUsd": 0.013
+    },
+    {
+      "id": "uncaused-changes",
+      "startSeconds": 7170,
+      "durationSeconds": 130,
+      "purpose": "Loke and Linford: apparent claim that uncaused things do happen; distinguish cross-talk, question, negation, and conditional.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/uncaused-changes.wav",
+        "sha256": "5bc6cb7cead1a78898bbb34771b124adfe70c261107ccfe5f53a546ae2591946",
+        "bytes": 4160078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-source-verification/uncaused-changes",
+      "maximumAttemptCostUsd": 0.013
+    },
+    {
+      "id": "material-efficient",
+      "startSeconds": 8095,
+      "durationSeconds": 135,
+      "purpose": "Loke and Linford: distinguish material causation, efficient causation, and an appeal to any cause in the final exchange.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/material-efficient.wav",
+        "sha256": "da8014cf454b57af7a0e704adc608054a4ae2d77836578ecb7784cec4eee3df4",
+        "bytes": 4320078
+      },
+      "base": "output/transcribe/WjVHREd0mvQ-source-verification/material-efficient",
+      "maximumAttemptCostUsd": 0.0135
+    }
+  ]
+}

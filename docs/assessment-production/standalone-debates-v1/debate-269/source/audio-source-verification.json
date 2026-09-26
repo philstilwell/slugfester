@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0-source-technical-verification",
+  "status": "complete-targeted-source-checks",
+  "debateNumber": "269",
+  "videoId": "WjVHREd0mvQ",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-269/source/technical-verification-plan.json",
+    "sha256": "1327d9a78c198641d999c1ca17f4947a29c7a4649b238b599dcd1cc426efd721",
+    "bytes": 4918
+  },
+  "checks": [
+    {
+      "clipId": "causal-deduction",
+      "startSeconds": 1000,
+      "durationSeconds": 100,
+      "purpose": "Loke: exact causal-principle and modus-tollens wording; preserve negations and conditional structure.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/causal-deduction.wav",
+        "sha256": "da38e27690e4c8d04120e5ebedd9f0ac5fbcecf55a7a719c38ff5e85590c34d3",
+        "bytes": 3200078
+      },
+      "result": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/causal-deduction.result.json",
+        "sha256": "c9b75094c704a53f7c4a4c520667d018676b6cb955436c6132180b0e3f01d068",
+        "bytes": 508
+      },
+      "rawTranscription": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/causal-deduction.json",
+        "sha256": "6d3f9cc775242ea4771e4e10903ae9d9086dde540e900937caaa7a0ab7a48d83",
+        "bytes": 22537
+      },
+      "speakers": [
+        "Andrew Loke"
+      ],
+      "finding": "Loke says incomplete contemporary physics cannot rule out a cause or beginning, then explicitly distinguishes a deductively valid argument with true premises. His opening first premise connects one uncaused beginning to other uncaused beginnings because no cause differentiates them. The clip ends during the following property subpremise and does not independently verify its continuation or the later modus-tollens label.",
+      "quote": "if an argument is deductively valid and the premises are true, the conclusion is true.",
+      "resolved": true,
+      "quoteExactIgnoringCase": true,
+      "knownSuccessfulCallCostUsd": 0.01,
+      "maximumPossiblePaidCostUsd": 0.01,
+      "attributionBasis": "Full caption turn structure and timestamped supplementary transcription; not automatic speaker diarization or a claim of direct human listening.",
+      "timestampCaution": "Raw segment end times may extend a fraction of a second past a clip edge. Original response retained; no clamping, invented continuation, or boundary fragment used as a quotation."
+    },
+    {
+      "clipId": "timeless-grounding",
+      "startSeconds": 2055,
+      "durationSeconds": 100,
+      "purpose": "Linford: Hamiltonian eigenstate and timeless grounding; distinguish technical caption errors from the substantive claim.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/timeless-grounding.wav",
+        "sha256": "4c3f4c97e17d615e4c23f82a130c88112916bbac8129b93dd415d77d3ce79dfc",
+        "bytes": 3200078
+      },
+      "result": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/timeless-grounding.result.json",
+        "sha256": "d1174375150e08290212d441719d6b6495a9c62d58de16bbf01e8974e9572965",
+        "bytes": 512
+      },
+      "rawTranscription": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/timeless-grounding.json",
+        "sha256": "ec63280188a559674762e10b856a0b4856ec2ea98eec1490bb778eec8d4c9e68",
+        "bytes": 22666
+      },
+      "speakers": [
+        "Dan Linford"
+      ],
+      "finding": "Linford describes a high-dimensional distribution without fundamental before/after relations, from which temporal relations are constructed. The clip supports the distinction between temporal grounding and an underlying entity changing. It does not cover the earlier Hamiltonian example; do not cite it as verification of that term.",
+      "quote": "The high dimensional points are not connected by before and after relations",
+      "resolved": true,
+      "quoteExactIgnoringCase": true,
+      "knownSuccessfulCallCostUsd": 0.01,
+      "maximumPossiblePaidCostUsd": 0.01,
+      "attributionBasis": "Full caption turn structure and timestamped supplementary transcription; not automatic speaker diarization or a claim of direct human listening.",
+      "timestampCaution": "Raw segment end times may extend a fraction of a second past a clip edge. Original response retained; no clamping, invented continuation, or boundary fragment used as a quotation."
+    },
+    {
+      "clipId": "abc-time",
+      "startSeconds": 4330,
+      "durationSeconds": 130,
+      "purpose": "Linford and Loke: whether timeless high-dimensional grounding includes A/B/C theories; possible caption negation and overlapping turns.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/abc-time.wav",
+        "sha256": "1dcd8a54b34fd5b4c8cf2776769b6b2088f562ddd62f7e1853f8dc26291adcfb",
+        "bytes": 4160078
+      },
+      "result": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/abc-time.result.json",
+        "sha256": "500b8f9649dc8cf236119f0d0d5298ace7e0816255e919181072a396081e706c",
+        "bytes": 494
+      },
+      "rawTranscription": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/abc-time.json",
+        "sha256": "bd6a65f85a307936f40bec49da08b4ebc18f9b3019dbc1336a917fb80af09084",
+        "bytes": 20772
+      },
+      "speakers": [
+        "Dan Linford",
+        "Cameron Bertuzzi",
+        "Andrew Loke"
+      ],
+      "finding": "Linford distinguishes emergent C/B relations and apparent A properties from the underlying space. The audio transcription explicitly says the underlying space does not include A, B, or C relations and does not undergo change. The moderator then gives a time warning, followed by Loke’s reply. A caption rendering of an affirmative inclusion must not be scored as Linford contradicting himself.",
+      "quote": "It doesn't include A, B, or C relations.",
+      "resolved": true,
+      "quoteExactIgnoringCase": true,
+      "knownSuccessfulCallCostUsd": 0.013,
+      "maximumPossiblePaidCostUsd": 0.013,
+      "attributionBasis": "Full caption turn structure and timestamped supplementary transcription; not automatic speaker diarization or a claim of direct human listening.",
+      "timestampCaution": "Raw segment end times may extend a fraction of a second past a clip edge. Original response retained; no clamping, invented continuation, or boundary fragment used as a quotation."
+    },
+    {
+      "clipId": "nonmetric-length",
+      "startSeconds": 5570,
+      "durationSeconds": 130,
+      "purpose": "Linford: whether a nonmetric segment has a length or no fact of length; possible missing caption negation.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/nonmetric-length.wav",
+        "sha256": "bcfce86c23ad2797a4c7c983c4bdff14bba6ee5169caae7d8e1c5cbdbdb13e93",
+        "bytes": 4160078
+      },
+      "result": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/nonmetric-length.result.json",
+        "sha256": "5d8794de6897afd3054c05dce4afcaa830e8dbad30f13a433cab1b7a00a479b2",
+        "bytes": 510
+      },
+      "rawTranscription": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/nonmetric-length.json",
+        "sha256": "bf2ea170a72ed771ff7465565bd841592a0cb381be7a9074742a6c4818ce0f8b",
+        "bytes": 29692
+      },
+      "speakers": [
+        "Andrew Loke",
+        "Dan Linford"
+      ],
+      "finding": "After Loke’s challenge, Linford defines metric segments as having length and nonmetric segments as lacking length, not merely unknown measurable length. The negative is explicit in the audio transcription. He then distinguishes a finite number of changes from a beginning under Loke’s cited definition.",
+      "quote": "By definition, a non-metric segment simply doesn't have a length.",
+      "resolved": true,
+      "quoteExactIgnoringCase": true,
+      "knownSuccessfulCallCostUsd": 0.013,
+      "maximumPossiblePaidCostUsd": 0.013,
+      "attributionBasis": "Full caption turn structure and timestamped supplementary transcription; not automatic speaker diarization or a claim of direct human listening.",
+      "timestampCaution": "Raw segment end times may extend a fraction of a second past a clip edge. Original response retained; no clamping, invented continuation, or boundary fragment used as a quotation."
+    },
+    {
+      "clipId": "uncaused-changes",
+      "startSeconds": 7170,
+      "durationSeconds": 130,
+      "purpose": "Loke and Linford: apparent claim that uncaused things do happen; distinguish cross-talk, question, negation, and conditional.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/uncaused-changes.wav",
+        "sha256": "5bc6cb7cead1a78898bbb34771b124adfe70c261107ccfe5f53a546ae2591946",
+        "bytes": 4160078
+      },
+      "result": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/uncaused-changes.result.json",
+        "sha256": "19bbc691c3a7000ecf10a493e774f60bd6fba60def6baaf32e92af5a4d62dc41",
+        "bytes": 510
+      },
+      "rawTranscription": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/uncaused-changes.json",
+        "sha256": "d3356c419d57ca63609ccf0450fb11b53621f43408660e9b75e1dc5e897a5a5a",
+        "bytes": 26748
+      },
+      "speakers": [
+        "Andrew Loke",
+        "Dan Linford"
+      ],
+      "finding": "Linford distinguishes a reason from an efficient cause; Loke invokes premise two and says things do not happen without a cause. The caption’s apparent affirmative wording is not a concession. Rapid interjections remain mixed in this undiarized transcript; any selected cross-talk move still needs an attribution-specific check unless the speaker is established independently.",
+      "quote": "Things do not happen without a cause.",
+      "resolved": true,
+      "quoteExactIgnoringCase": true,
+      "knownSuccessfulCallCostUsd": 0.013,
+      "maximumPossiblePaidCostUsd": 0.013,
+      "attributionBasis": "Full caption turn structure and timestamped supplementary transcription; not automatic speaker diarization or a claim of direct human listening.",
+      "timestampCaution": "Raw segment end times may extend a fraction of a second past a clip edge. Original response retained; no clamping, invented continuation, or boundary fragment used as a quotation."
+    },
+    {
+      "clipId": "material-efficient",
+      "startSeconds": 8095,
+      "durationSeconds": 135,
+      "purpose": "Loke and Linford: distinguish material causation, efficient causation, and an appeal to any cause in the final exchange.",
+      "input": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/material-efficient.wav",
+        "sha256": "da8014cf454b57af7a0e704adc608054a4ae2d77836578ecb7784cec4eee3df4",
+        "bytes": 4320078
+      },
+      "result": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/material-efficient.result.json",
+        "sha256": "0ad7be360c9b66a2522a50fb7f2d9c21b77e7c797e2aa955f6ca1dec9b2c875a",
+        "bytes": 516
+      },
+      "rawTranscription": {
+        "path": "output/transcribe/WjVHREd0mvQ-source-verification/material-efficient.json",
+        "sha256": "5bdd3a55e0db5e555f56a8966ad41c61e3682f13ec285b99125b319f006be8a2",
+        "bytes": 14510
+      },
+      "speakers": [
+        "Dan Linford",
+        "Andrew Loke"
+      ],
+      "finding": "Linford explicitly compares efficient-causal and material-causal principles. Loke replies that although he has focused on efficient causation, his argument is not limited to it and concerns no cause whatsoever; he then says an efficient cause can account for material coming to be. This is evidence of the terms each speaker uses, not an assessment of whether the argument succeeds.",
+      "quote": "my argument is not limited to efficient cause.",
+      "resolved": true,
+      "quoteExactIgnoringCase": true,
+      "knownSuccessfulCallCostUsd": 0.0135,
+      "maximumPossiblePaidCostUsd": 0.0135,
+      "attributionBasis": "Full caption turn structure and timestamped supplementary transcription; not automatic speaker diarization or a claim of direct human listening.",
+      "timestampCaution": "Raw segment end times may extend a fraction of a second past a clip edge. Original response retained; no clamping, invented continuation, or boundary fragment used as a quotation."
+    }
+  ],
+  "knownSuccessfulCallCostUsd": 0.0725,
+  "maximumPossiblePaidCostUsd": 0.0725,
+  "paidAttempts": 6,
+  "paidRetries": 0,
+  "originalCaptionBytesChanged": false,
+  "scope": "Six targeted checks only. Unselected technical names remain automatic-caption uncertainties; this is not certification of every word or the factual truth of either philosophical position.",
+  "judgmentEffect": "Reviewers must not treat verified recognition errors as speaker mistakes. Exact publication quotations still come from clean strings in the locked caption spans unless a separately authorized quote-source protocol is introduced."
+}

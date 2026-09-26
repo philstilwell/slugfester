@@ -12770,5 +12770,58 @@ export const debateSummaries = [
         "title": "Common ground, supernaturalism, and dignity"
       }
     ]
+  },
+  {
+    "id": "loke-linford-physical-reality-cause-beginning-2023",
+    "number": "269",
+    "title": "Andrew Loke vs Dan Linford — Physical Reality, Causation, and Beginnings",
+    "year": 2023,
+    "label": "Physical reality and causal origins",
+    "date": "2026-09-26",
+    "duration": "2 hr 28 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=WjVHREd0mvQ",
+    "motion": "In light of contemporary physics, should we accept that physical reality had a cause or beginning?",
+    "summary": "Linford’s carefully limited skepticism outperformed Loke’s positive case by separating first changes from total beginnings and sustaining nonmetric, timeless-grounding, and material-parity alternatives.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "First-cause theism",
+        "speaker": "Andrew Loke",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Cosmological skepticism",
+        "speaker": "Dan Linford",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 70,
+      "con": 88,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Observational reach, nonmetric time, and beginnings"
+      },
+      {
+        "title": "Timeless grounding and physical totality"
+      },
+      {
+        "title": "Causal scope, design, and motion relevance"
+      },
+      {
+        "title": "The causal principle and its proposed symmetry breaker"
+      },
+      {
+        "title": "Material parity, explanatory reasons, and causal types"
+      },
+      {
+        "title": "First-cause dependence and physical scope"
+      },
+      {
+        "title": "Agency, control, and withholding"
+      }
+    ]
   }
 ];
