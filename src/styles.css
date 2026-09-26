@@ -3481,6 +3481,14 @@ a {
   line-height: 1.15;
 }
 
+.topic-category-heading h2 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.topic-breadcrumb { margin-bottom: 24px; line-height: 1.7; }
+.topic-breadcrumb a, .topic-scope a, .topic-related-links a { color: var(--blue); text-underline-offset: 3px; }
+.topic-detail-page .topics-hero { grid-template-columns: minmax(0, 1fr); }
+.topic-scope { max-width: 900px; margin: 24px 0 32px; }
+.topic-related-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.topic-related-links h2 { width: 100%; margin: 0 0 8px; }
+
 .assessment-page {
   width: min(1180px, calc(100vw - 32px));
   max-width: calc(100vw - 32px);

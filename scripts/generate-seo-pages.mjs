@@ -3,12 +3,14 @@ import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
+import { topicCategoryDefinitions } from "../src/data/topics.js";
 import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
 import { referenceDefinitions, referenceFromUrl } from "../src/data/references.js";
 import { renderInsightsContent } from "../src/data/insights.js";
 import { biographyFor, renderBiography } from "../src/data/interlocutor-bios.js";
 import { renderInsightsMethodsContent } from "../src/data/insights-methods.js";
 import { initialPageContent } from "./lib/initial-page-content.mjs";
+import { pageHistoryEntry, compactPageDates } from "./lib/seo-page-history.mjs";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_IMAGE_ALT,
@@ -44,7 +46,10 @@ import {
   searchPath,
   searchSeo,
   topicsPath,
-  topicsSeo
+  topicsSeo,
+  topicPath,
+  topicSeo,
+  withPageUpdate
 } from "../src/seo.js";
 
 const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
@@ -76,15 +81,17 @@ for (const entry of standaloneRegistry.debates) {
 // Normalize the generated query strings before hashing to keep regeneration stable.
 const appPath = join(root, "src/app.js");
 const appSource = await readFile(appPath, "utf8");
+const seoPath = join(root, "src/seo.js");
+const seoSource = await readFile(seoPath, "utf8");
 const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
 const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
+const normalizedSeo = seoSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
-  "src/styles.css", "src/seo.js", "src/data/topics.js", "src/data/assessment-process-guide.js",
+  "src/styles.css", "src/data/topics.js", "src/data/assessment-process-guide.js",
   "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
 ].map((path) => readFile(join(root, path), "utf8")));
-const assetVersion = createHash("sha256")
-  .update(JSON.stringify([normalizedApp, browserSources, debates, [...assessmentScopeDisclosures], await readFile(fileURLToPath(import.meta.url), "utf8")]))
-  .digest("hex").slice(0, 16);
+// Render first, then hash the final generated update dates and source together.
+const assetVersion = "CONTENT_VERSION";
 const landingAssetVersion = assetVersion;
 const interlocutorAssetVersion = assetVersion;
 const rankingsAssetVersion = assetVersion;
@@ -229,7 +236,7 @@ ${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl
     <meta property="og:image:width" content="${escapeHtml(imageWidth)}">
     <meta property="og:image:height" content="${escapeHtml(imageHeight)}">
     <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
-    ${articleMetaBlock}<meta name="twitter:card" content="summary_large_image">
+    ${articleMetaBlock}<meta name="twitter:card" content="${escapeHtml(seo.twitterCard || "summary_large_image")}">
     <meta name="twitter:title" content="${escapeHtml(seo.title || DEFAULT_TITLE)}">
     <meta name="twitter:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
     <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
@@ -373,6 +380,13 @@ function manifestJson() {
 
 const pageOutputs = new Map();
 pageOutputs.set(appPath, appSource.replace(browserImportVersions, (_, prefix) => `${prefix}${assetVersion}`));
+pageOutputs.set(seoPath, normalizedSeo);
+const historyPath = join(root, "scripts/seo-page-history.json");
+let previousHistory = {};
+try { previousHistory = JSON.parse(await readFile(historyPath, "utf8")); }
+catch (error) { if (error.code !== "ENOENT") throw error; }
+const nextHistory = {};
+const today = new Date().toISOString().slice(0, 10);
 const sitemapUrls = [];
 const latest = latestDate();
 
@@ -631,6 +645,17 @@ debates.forEach((debate) => {
 });
 
 function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
+  if (seo.robots !== "noindex,follow") {
+    const debate = debates.find((item) => debatePath(item) === pathname);
+    const content = pathname === insightsPath() ? renderInsightsContent()
+      : pathname === "/insights/data-and-methods/" ? renderInsightsMethodsContent()
+      : initialPageContent(pathname);
+    const data = debate || (["/", rankingsPath(), backendPath()].includes(pathname) ? debates : null);
+    nextHistory[pathname] = pageHistoryEntry(previousHistory[pathname], { seo, noscriptText, content, data }, today);
+    seo = withPageUpdate(seo, nextHistory[pathname].modified);
+  } else {
+    seo = withPageUpdate(seo, nextHistory[seo.canonicalPath]?.modified);
+  }
   const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
   const pageAssetVersion = pathname === "/"
     ? landingAssetVersion
@@ -672,6 +697,10 @@ addPage(
   rankingsSeo(debates),
   "Compare Slugfester interlocutor scores and topic-level reasoning flags across published debate assessments."
 );
+
+for (const topic of topicCategoryDefinitions) {
+  addPage(topicPath(topic), topicSeo(topic, debates), `${topic.description} Explore the published debate assessments, arguments and original sources.`);
+}
 
 [...interlocutorProfiles.values()]
   .sort((a, b) => a.person.name.localeCompare(b.person.name))
@@ -732,6 +761,10 @@ pageOutputs.set(
   join(root, "robots.txt"),
   `User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /docs/assessment-production/
+Disallow: /docs/assessment-ledgers/
 
 Sitemap: ${absoluteUrl("/sitemap.xml")}
 `
@@ -739,6 +772,15 @@ Sitemap: ${absoluteUrl("/sitemap.xml")}
 pageOutputs.set(join(root, "sitemap.xml"), sitemapXml(sitemapUrls));
 pageOutputs.set(join(root, "feed.xml"), atomFeed(debates));
 pageOutputs.set(join(root, "site.webmanifest"), manifestJson());
+pageOutputs.set(historyPath, `${JSON.stringify(nextHistory, null, 2)}\n`);
+const updateModule = `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const pageUpdates = ${JSON.stringify(compactPageDates(nextHistory))};\n`;
+pageOutputs.set(join(root, "src/data/page-updates.js"), updateModule);
+const finalAssetVersion = createHash("sha256")
+  .update(JSON.stringify([normalizedApp, normalizedSeo, browserSources, updateModule, debates, [...assessmentScopeDisclosures], await readFile(fileURLToPath(import.meta.url), "utf8")]))
+  .digest("hex").slice(0, 16);
+for (const [path, content] of pageOutputs) {
+  pageOutputs.set(path, content.replaceAll("CONTENT_VERSION", finalAssetVersion));
+}
 
 async function ensureMatches(file, expected) {
   let actual = "";
