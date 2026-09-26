@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-frozen-primary-execution-plan",
+  "status": "frozen-before-primary-execution",
+  "createdAt": "2026-09-24T17:56:45.101Z",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "inventorySha256": "ee14c7563591c90257c75c4e8b34177e883a9a3f3389def789fd4fe6cb8c136d",
+    "isolation": "Protocol-restricted fresh built-in contexts and disjoint output paths; not an operating-system filesystem sandbox."
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/judgment-packet.json",
+      "sha256": "814eb35f99f292acf89f56363e5a9de6fb0e0e2ec22506d6c0468e39569c64d5",
+      "bytes": 4961
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/inventory/inventory.json",
+      "sha256": "ee14c7563591c90257c75c4e8b34177e883a9a3f3389def789fd4fe6cb8c136d",
+      "bytes": 79649
+    },
+    {
+      "path": ".assessment-cache/captions/g6UU9C-WmvM/scoped-indexed-transcript.txt",
+      "sha256": "19eee64802632103c384a79907ec1c054e3753921d4c6c49b46e37e83d830f25",
+      "bytes": 76548
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-267/audio/score-blind-supplement.json",
+      "sha256": "c2917972694b1b20a2d18f94091a1ceb170208a034b515728cbb85246324fb9c",
+      "bytes": 7636
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-a/execution-instructions.json",
+        "sha256": "7fff903a9adb4482b4cda377b174186ab4f9ea7650d675701d66262e2d132749",
+        "bytes": 5092
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-a/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-a/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-b/execution-instructions.json",
+        "sha256": "f8c22cb74912457f9f722ebc6127cb74a19d50ee660522f058381833070ed483",
+        "bytes": 5092
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-b/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-267/judgments/pass-b/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

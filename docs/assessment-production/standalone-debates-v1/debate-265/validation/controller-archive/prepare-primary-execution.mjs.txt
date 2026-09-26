@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const n=process.argv[2]; assert.match(n,/^\d{3}$/);
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json','utf8'));
+const r=registry.debates.find(x=>x.debateNumber===n);assert.ok(r);
+const root=r.root,read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const record=p=>{const b=fs.readFileSync(p);return {path:p,sha256:createHash('sha256').update(b).digest('hex'),bytes:b.length};};
+const a=read(root+'/authorization.json'),inv=read(root+'/inventory/inventory.json');
+assert.equal(inv.debateId,r.debateId);assert.equal(inv.motion,a.identity.motion);
+const source='.assessment-cache/captions/'+r.videoId+'/indexed-transcript.txt';
+const inputs=[record(root+'/judgments/judgment-packet.json'),record(root+'/inventory/inventory.json'),record(source),record(root+'/audio/score-blind-supplement.json'),record('docs/assessment-production-workflow.md'),record('docs/reassessment-rubric-v2.1.md'),{...record('scripts/lib/assessment-production-standalone-debate-v1.mjs'),allowedLines:[{start:620,end:804}]}];
+const common={schemaVersion:'1.0-frozen-isolated-primary-instructions',debateNumber:n,debateId:r.debateId,model:{slug:a.execution.assessmentModel,displayLabel:a.execution.recordedDisplayModel,reasoningEffort:a.execution.reasoningEffort,authentication:a.execution.authentication},allowedInputs:inputs,fullSourceEventCount:read('.assessment-cache/captions/'+r.videoId+'/events.json').length,inventoryMoveCount:inv.moves.length,requirements:[
+ 'Read every listed allowed input completely, except the validator restricted to the declared lines. Read the entire indexed transcript in chunks of at most 380 lines. Read the entire inventory in nontruncated chunks. Do not replace literal reading with keyword extraction or a script that silently reads bytes. Send a reading checkpoint to the parent and wait for authenticated release before rating.',
+ 'Fresh isolated first primary assessment. Do not access other passes, other debates, existing assessments, calculated scores, winners, publication prose, Git history, biographies, Internet research, user configuration, credentials, or paid model APIs. Use environment-cleared shell commands (env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY). No new subagents.',
+ 'Rate every locked move exactly once in inventory order across all six dimensions. Author each value and rationale independently from the source and rubric. Rationales must be dimension-specific and source-specific; do not reuse one generic reason for all six dimensions or generate scores from a formula or template.',
+ 'Assess the actual live argument, including concessions and replies elsewhere in the complete source, without importing new premises. Do not penalize automatic-caption corruption as the speaker\'s error. The frozen score-blind audio supplement resolves flagged attribution and wording; apply it to interpretation without editing the raw captions or inventing audio quotations. Do not claim to have listened to audio. The supplement contains no ratings, scores, winner or evaluative recommendations.',
+ 'The neutral motion is byte-locked. Do not convert strong comparative evidence into proof or an overall posterior above one half. A critical side need not establish a positive naturalistic model. Conversely do not excuse a failed inference solely because it is critical.',
+ 'Do not alter the inventory, source, burden map, weights, importance, links or section membership. Do not calculate or author move, section, overall totals, winning side or fallacy/bias tags. Every six-dimension object has exact keys and each rationale is at least forty characters.',
+ 'Evaluate both burden-completion adjustments independently. Use exact nine-field eligibility object in the validator. A nonzero adjustment requires a distinct debate-wide consequence not already captured in any scored move; duplicate capture requires zero. Do not use the adjustment as an overall-impression bonus or penalty.',
+ 'One first submission only, no automatic retries, replacements or substance repairs. Build the literal result carefully and self-check schema and move order before writing. Do not call the calculator while checking. Use apply_patch for local file edits. You may retain unsaved draft components across tool calls, but no filesystem output except the single declared output and reading-audit paths. Do not stop because of an invented deadline; the work can continue across context compaction.',
+ 'After first output write, report the path and stop. The controller authenticates actual model, allowed-input reads, output hash and substantive rationale coverage. No second write over a rejected output without an explicit bounded recovery packet.'
+],directIncrementalCostUsd:0,attempts:1,retries:0};
+const plans=[];
+for(const pass of ['pass-a','pass-b']){
+ const p=root+'/judgments/'+pass;fs.mkdirSync(p,{recursive:true});
+ const instructions={...common,pass,outputPath:p+'/output.json',readingAuditPath:p+'/reading-audit.json'};
+ const file=p+'/execution-instructions.json';fs.writeFileSync(file,JSON.stringify(instructions,null,2)+'\n',{flag:'wx'});
+ plans.push({pass,instructions:record(file),outputPath:instructions.outputPath,readingAuditPath:instructions.readingAuditPath,attempts:1,retries:0});
+}
+const plan={schemaVersion:'1.0-frozen-primary-execution-plan',status:'frozen-before-primary-execution',createdAt:new Date().toISOString(),debateNumber:n,debateId:r.debateId,execution:{model:a.execution.assessmentModel,displayModel:a.execution.recordedDisplayModel,reasoningEffort:a.execution.reasoningEffort,authentication:a.execution.authentication,freshContextPerPass:true,forkTurns:'none',inventorySha256:record(root+'/inventory/inventory.json').sha256,isolation:'Protocol-restricted fresh built-in contexts and disjoint paths; not an operating-system filesystem sandbox.'},allowedInputs:inputs,passes:plans,directIncrementalCostUsd:0};
+fs.writeFileSync(root+'/judgments/execution-plan.json',JSON.stringify(plan,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({debateNumber:n,moves:inv.moves.length,passes:plans},null,2));

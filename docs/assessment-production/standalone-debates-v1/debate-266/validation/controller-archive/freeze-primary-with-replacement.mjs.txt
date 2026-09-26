@@ -1,0 +1,30 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {fileRecord,sha256,validateStandalonePrimaryJudgment} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const n=process.argv[2];assert.match(n,/^\d{3,}$/);const read=p=>JSON.parse(fs.readFileSync(p)),r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const root=r.root,inv=read(root+'/inventory/inventory.json'),invHash=fileRecord(root+'/inventory/inventory.json').sha256,plan=read(root+'/judgments/execution-plan.json'),put=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+assert.equal(plan.execution.inventorySha256,invHash);const passes=[];
+for(const pass of ['pass-a','pass-b']){
+ const canonical=root+'/judgments/'+pass,replaced=pass==='pass-b',dir=replaced?canonical+'/replacement-1':canonical;
+ const instructionsPath=dir+'/execution-instructions.json',p=read(instructionsPath),release=read(dir+'/reading-release.json'),output=read(p.outputPath);
+ assert.equal(release.status,'authenticated-and-released-for-first-submission');assert.equal(release.outputExistedAtRelease,false);assert(release.inputs.every(x=>x.literalCompleteReadAuthenticated));
+ for(const input of p.allowedInputs)assert.equal(fileRecord(input.path).sha256,input.sha256);
+ const validation=validateStandalonePrimaryJudgment(output,inv,{expectedPass:pass,expectedInventorySha256:invHash});
+ const raw=fs.readFileSync(release.session.path),contexts=raw.toString().trim().split('\n').map(JSON.parse).filter(x=>x.type==='turn_context').map(x=>({model:x.payload.model,reasoningEffort:x.payload.effort}));
+ assert(contexts.length&&contexts.every(x=>x.model===plan.execution.model&&x.reasoningEffort===plan.execution.reasoningEffort));
+ const rationales=output.judgments.flatMap(j=>Object.values(j.dimensions).map(d=>d.rationale));assert.equal(rationales.length,inv.moves.length*6);assert.equal(new Set(rationales).size,rationales.length);
+ const auth={schemaVersion:'1.0-primary-execution-authentication',status:'schema-source-and-model-authenticated',debateNumber:n,debateId:r.debateId,pass,modelContexts:contexts,session:{path:release.session.path,sha256:sha256(raw),bytes:raw.length,kind:'prefix-snapshot-after-output'},readingRelease:fileRecord(dir+'/reading-release.json'),readingAudit:fileRecord(p.readingAuditPath),instructions:fileRecord(instructionsPath),output:fileRecord(p.outputPath),validation,attemptsInThisFreshContext:1,retriesInThisFreshContext:0,dimensionRationales:rationales.length,uniqueCompleteRationales:new Set(rationales).size,minimumRationaleCharacters:Math.min(...rationales.map(s=>s.length)),protocolIsolation:true,operatingSystemFilesystemIsolation:false,directIncrementalCostUsd:0};
+ put(dir+'/session-authentication.json',auth);
+ let recovery=null;
+ if(replaced){
+  const a=read(dir+'/authorization.json');assert.equal(a.replacementAttempts,1);assert.equal(a.retries,0);assert.equal(a.replacementInstructions.sha256,fileRecord(instructionsPath).sha256);
+  assert.equal(a.failedOutput.sha256,fileRecord(canonical+'/output.json').sha256);assert.equal(a.failedReadingAudit.sha256,fileRecord(canonical+'/reading-audit.json').sha256);
+  for(const rec of [a.failedOutput,a.failedReadingAudit,a.originalInstructions,a.originalReadingRelease])assert.equal(fileRecord(rec.path).sha256,rec.sha256);
+  fs.copyFileSync(p.outputPath,canonical+'/output.json');fs.copyFileSync(p.readingAuditPath,canonical+'/reading-audit.json');
+  assert.equal(fileRecord(p.outputPath).sha256,fileRecord(canonical+'/output.json').sha256);
+  put(dir+'/installation.json',{schemaVersion:'1.0-authenticated-primary-replacement-installation',status:'passed-mechanical-installation',debateNumber:n,authorization:fileRecord(dir+'/authorization.json'),preservedFailedOutput:a.failedOutput,preservedFailedReadingAudit:a.failedReadingAudit,replacementAuthentication:fileRecord(dir+'/session-authentication.json'),source:fileRecord(p.outputPath),canonicalOutput:fileRecord(canonical+'/output.json'),sourceAndInventoryChanges:0,acceptedJudgmentChanges:0,mechanicalOnly:true,originalFailedAttempts:1,replacementAttempts:1,additionalRetries:0,directIncrementalCostUsd:0});
+  recovery=fileRecord(dir+'/installation.json');
+ }
+ passes.push({pass,outputPath:canonical+'/output.json',outputSha256:fileRecord(canonical+'/output.json').sha256,judgmentCount:output.judgments.length,validationStatus:'passed',readingRelease:auth.readingRelease,sessionAuthentication:fileRecord(dir+'/session-authentication.json'),attempts:replaced?2:1,failedPlaceholderAttempts:replaced?1:0,acceptedSubstantiveAttempts:1,retries:0,exceptionalReplacement:recovery,directIncrementalCostUsd:0});
+}
+put(root+'/judgments/execution.json',{schemaVersion:'1.1-standalone-judgment-execution-with-preserved-placeholder-replacement',status:'complete-and-schema-valid',debateNumber:Number(n),debateId:r.debateId,execution:{...plan.execution,recoveryMode:'one-user-delegated-fresh-pass-b-placeholder-replacement'},executionPlan:fileRecord(root+'/judgments/execution-plan.json'),passes,directIncrementalCostUsd:0});
+console.log(JSON.stringify({status:'both-primary-assessments-authenticated',passes:passes.map(x=>({pass:x.pass,judgmentCount:x.judgmentCount,attempts:x.attempts,failedPlaceholderAttempts:x.failedPlaceholderAttempts}))},null,2));

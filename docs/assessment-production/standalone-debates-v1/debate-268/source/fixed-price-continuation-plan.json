@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-fixed-price-remaining-source-plan",
+  "status": "frozen-before-unattempted-inputs",
+  "createdAt": "2026-09-26T15:07:26.485Z",
+  "debateNumber": "268",
+  "videoId": "8Ad3rVRdgbI",
+  "initialPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/acquisition-plan.json",
+    "sha256": "51a9a7192d61086336839a9e19a275de17cdb7aa116a2ce82251474edb06498a",
+    "bytes": 2681
+  },
+  "retainedSuccessfulFirstCall": {
+    "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-000.result.json",
+    "sha256": "e7038e5c21a29731109fa297e21ce5670fc7e7dd92b9dab09418627005d510d5",
+    "bytes": 662
+  },
+  "scopeUnchanged": true,
+  "reason": "First successful diarized response reported 8077 output tokens, exceeding the model page stated 2000 maximum; the prior per-request upper assumption is not reliable for internal audio chunking. Preserve that result; do not repeat it. Use the existing fixed-price OpenAI Whisper timestamp route only for still-unattempted audio inputs.",
+  "model": "whisper-1",
+  "responseFormat": "verbose_json",
+  "speakerLabelsAutomatic": false,
+  "speakerAttributionPlan": "Match time-aligned source against the official speaker-labelled publisher transcript; below-high selected moves still require separately frozen audio verification.",
+  "sourceOutputRoot": "output/transcribe/8Ad3rVRdgbI-source",
+  "remainingInputIndices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "inputs": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/transcription-inputs.json",
+    "sha256": "df6c392f8557cb9ae59b30a23dd2bd3b9d1b8192101a7e4f1259982617ce6401",
+    "bytes": 4336
+  },
+  "wrapper": {
+    "path": "tmp/whisper-current-once.py",
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721",
+    "bytes": 659
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "attemptsPerInput": 1,
+  "automaticRetries": 0,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/models/whisper-1",
+    "verifiedAt": "2026-09-26T15:07:26.486Z",
+    "usdPerMinute": 0.006,
+    "knownSuccessfulCallCostUsd": 0.0933,
+    "remainingSourceUpperEstimateUsd": 0.3459000000000001,
+    "reserveVerificationCalls": 3,
+    "reservePerVerificationCallUsd": 0.15,
+    "verificationReserveUsd": 0.45,
+    "fullDebateWorkflowConservativeUpperEstimateUsd": 0.8892000000000001,
+    "standingCapUsd": 1,
+    "estimateReportedBeforeContinuation": true,
+    "billingConfirmed": false
+  }
+}

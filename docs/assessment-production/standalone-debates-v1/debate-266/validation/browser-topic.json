@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-validation-command-evidence",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "command": [
+    "env",
+    "npm_config_offline=true",
+    "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+    "-s=slugfester266",
+    "run-code",
+    "async(page)=>{const a=page.locator(\"a[href=\\\"/debate/dillahunty-giunta-faith-rational-justification-2018/\\\"]\");if(!await a.count())throw Error(\"Topic entry missing\");return {status:\"passed\",matchingLinks:await a.count()}}"
+  ],
+  "startedAt": "2026-09-24T06:36:53.094Z",
+  "completedAt": "2026-09-24T06:36:53.973Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "status": "passed",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/validation/browser-topic.log",
+    "bytes": 320,
+    "sha256": "a882f46f6e2e1a692feeaaf0da0db8ce66dce206715f5abbaa3958a214f2c7ea"
+  },
+  "directIncrementalCostUsd": 0
+}

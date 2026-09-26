@@ -1,0 +1,18 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);const read=p=>JSON.parse(fs.readFileSync(p)),r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const dir=r.root+'/publication',notes=read(dir+'/controller-editorial-notes.json'),current=fileRecord(dir+'/output.json');
+assert.equal(notes.status,'passed-direct-complete-publication-review');assert.equal(notes.publicationSha256,current.sha256);
+const run=args=>{const x=spawnSync(process.execPath,args,{encoding:'utf8',maxBuffer:16*1024*1024});assert.equal(x.status,0,x.stderr||x.stdout);return JSON.parse(x.stdout);};
+const parity=run(['scripts/audit-assessment-production-standalone-content-parity.mjs','--debate',n,'--candidate',dir+'/output.json','--print']);
+for(const outlier of parity.relativeOutliers){const reason=notes.outlierRationales[outlier.metric];assert(typeof reason==='string'&&reason.trim().split(/\s+/).length>=12,'Unreviewed relative outlier '+outlier.metric);outlier.rationale=reason;}
+const style=run(['.assessment-cache/measure-publication-style.mjs','--debate',n]);
+assert.equal(style.introductoryProvenancePhrases,0);assert.deepEqual(notes.reviewedPunctuationFlaggedDebates,style.punctuation.flaggedDebates);
+const overlapKeys=['independent','recent'].flatMap(window=>style[window+'SixWordOverlaps'].flatMap(row=>row.sharedSixWordSequences.map(phrase=>window+'|'+row.debateNumber+'|'+phrase)));
+assert.deepEqual(notes.overlapReviews.map(x=>x.key),overlapKeys);for(const x of notes.overlapReviews)assert(x.rationale.trim().split(/\s+/).length>=12);
+for(const key of ['allCardsRead','bothSidesReadTogether','allThesesPremisesConclusionsAndReinforcingArgumentsRead','openingAndParagraphArchitectureReviewed','sourceSpecificNoveltyMapReviewed','punctuationIntact'])assert.equal(notes.directReview[key],true);
+assert.equal(notes.directReview.swappableScaffoldsFound,false);assert.equal(notes.directReview.formulaicProseFound,false);assert(notes.directReview.notes.length>=3);
+const put=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+put(dir+'/content-parity-audit.json',parity);
+put(dir+'/ai-contribution-editorial-audit.json',{...style,status:'passed-direct-nonformulaic-prose-and-punctuation-review',publication:current,controllerNotes:fileRecord(dir+'/controller-editorial-notes.json'),directReview:notes.directReview,overlapReviews:notes.overlapReviews,audit:{judgmentChanges:0,scoreChanges:0,moveChanges:0,tagsChanged:0,directIncrementalCostUsd:0}});
+console.log(JSON.stringify({status:'direct-editorial-and-parity-audits-frozen',metrics:parity.metrics,relativeOutliers:parity.relativeOutliers.map(x=>x.metric),punctuationFlags:style.punctuation.flaggedDebates,reviewedOverlaps:overlapKeys.length},null,2));

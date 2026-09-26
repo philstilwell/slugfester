@@ -1,0 +1,18 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';
+import {validateStandaloneCandidate} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const n=process.argv[2];assert.match(n,/^\d{3}$/);const read=p=>JSON.parse(fs.readFileSync(p)),hash=b=>createHash('sha256').update(b).digest('hex'),rec=p=>{const b=fs.readFileSync(p);return{path:p,sha256:hash(b),bytes:b.length};};
+const registry=read('docs/assessment-production/standalone-debates-v1/registry.json'),r=registry.debates.find(r=>r.debateNumber===n);assert(r);
+const outputPath=r.root+'/publication/output.json',output=read(outputPath),c=output.candidate,scores=read(r.root+'/score-pass/output.json');assert.equal(c.number,n);assert.equal(c.id,r.debateId);validateStandaloneCandidate(c,scores);
+const tagAudit=read(r.rhetoricalTagReview.auditPath);assert.equal(tagAudit.status,'passed-rhetorical-tag-review');
+const sourcePath='src/data/debates.js',before=rec(sourcePath),text=fs.readFileSync(sourcePath,'utf8'),marker='\n];\n\naddMissingAiContributions(debates);';assert.equal(text.split(marker).length,2);assert(!text.includes('"id": "'+r.debateId+'"'));assert(!text.includes('watch?v='+r.videoId));
+const addition=',\n'+JSON.stringify(c,null,2).split('\n').map(line=>'  '+line).join('\n');
+// Mechanical insertion of the independently frozen object; no prose is authored here.
+fs.writeFileSync(sourcePath,text.replace(marker,addition+marker));
+const corpusPath='docs/calibration/v2.1/corpus-transcript-audit.json',corpusBefore=rec(corpusPath),corpus=read(corpusPath),m=read('.assessment-cache/captions/'+r.videoId+'/manifest.json'),events=read('.assessment-cache/captions/'+r.videoId+'/events.json');
+assert(!corpus.entries.some(e=>e.debateNumber===n||e.videoId===r.videoId||e.debateId===r.debateId));assert.equal(m.videoId,r.videoId);
+const cache='.assessment-cache/captions/'+r.videoId;
+assert.equal(rec(cache+'/transcript.txt').sha256,m.transcriptSha256);assert.equal(rec(cache+'/events.json').sha256,m.normalizedEventsSha256);
+corpus.entries.push({debateNumber:n,debateId:r.debateId,videoId:r.videoId,status:'available',transcriptStorage:cache+'/transcript.txt',eventsStorage:cache+'/events.json',track:m.track,extractionMethod:m.extractionMethod,audioSourceUrl:null,model:null,wordCount:m.wordCount,spokenWordCount:events.reduce((s,e)=>s+e.text.trim().split(/\s+/).filter(Boolean).length,0),eventCount:m.eventCount,retrievedAt:m.retrievedAt,transcriptSha256:m.transcriptSha256,normalizedEventsSha256:m.normalizedEventsSha256});
+corpus.auditAsOf=new Date().toISOString().slice(0,10);corpus.corpusDebates=corpus.entries.length;corpus.locallySavedTranscripts=corpus.entries.filter(e=>e.status==='available').length;corpus.unavailableTranscripts=corpus.entries.filter(e=>e.status==='unavailable').length;corpus.acquisitionRate=Number((corpus.locallySavedTranscripts/corpus.corpusDebates).toFixed(4));fs.writeFileSync(corpusPath,JSON.stringify(corpus,null,2)+'\n');
+fs.writeFileSync(r.root+'/publication/staging-audit.json',JSON.stringify({schemaVersion:'1.0-frozen-publication-mechanical-staging',status:'staged-for-production-validation',debateNumber:n,debateId:r.debateId,publication:rec(outputPath),sourceBefore:before,sourceAfter:rec(sourcePath),corpusBefore,corpusAfter:rec(corpusPath),existingDebateObjectsChanged:0,existingCorpusEntriesChanged:0,proseAuthoredByController:false,judgmentChanges:0,scoreChanges:0},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:'staged-frozen-publication-and-living-source-inventory',debateNumber:n,corpusDebates:corpus.corpusDebates},null,2));

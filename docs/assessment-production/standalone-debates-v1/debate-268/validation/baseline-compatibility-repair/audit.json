@@ -1,0 +1,134 @@
+{
+  "status": "passed-deterministic-baseline-metadata-repair",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "createdAt": "2026-09-26T17:07:15.948Z",
+  "controller": {
+    "path": "tmp/repair-current-baseline-metadata.mjs",
+    "sha256": "68559a3881d1eea1d23dbd7731f423f2934bb4862361922ab91c13b2153db8b7",
+    "bytes": 4695
+  },
+  "authoritativeControl": {
+    "path": "scripts/audit-assessment-production-standalone-rhetorical-tags.mjs",
+    "sha256": "97dc27932f1c0f9d2814e19218d2b24fb8db4731da4ae1cd67013a7d0e25f1c6",
+    "bytes": 13417
+  },
+  "reason": "The audit requires its independent historical 25-debate window. The initial controller supplied only a recent window. Both are now retained without changing the validator or any rhetorical decision.",
+  "before": [
+    {
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/audit.json",
+        "sha256": "9d4bd893e99345c24652cff6fab7efe61f9c956fce19eee0a02aafe127899fcf",
+        "bytes": 82257
+      },
+      "preserved": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/baseline-compatibility-repair/before/01-audit.json",
+        "sha256": "9d4bd893e99345c24652cff6fab7efe61f9c956fce19eee0a02aafe127899fcf",
+        "bytes": 82257
+      }
+    },
+    {
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/correction-rhetorical-tags.json",
+        "sha256": "229bfe1c09ddb8c462a1c0012c523b84585285b02c2837d7960089bac24172ca",
+        "bytes": 2349
+      },
+      "preserved": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/baseline-compatibility-repair/before/02-correction-rhetorical-tags.json",
+        "sha256": "229bfe1c09ddb8c462a1c0012c523b84585285b02c2837d7960089bac24172ca",
+        "bytes": 2349
+      }
+    },
+    {
+      "original": {
+        "path": "docs/assessment-ledgers/sacks-dawkins-science-religion-2012.json",
+        "sha256": "453139bb1e044856aa69b7e1431485e0dd1861dd366b90aa71552bd427083fad",
+        "bytes": 24690
+      },
+      "preserved": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/baseline-compatibility-repair/before/03-sacks-dawkins-science-religion-2012.json",
+        "sha256": "453139bb1e044856aa69b7e1431485e0dd1861dd366b90aa71552bd427083fad",
+        "bytes": 24690
+      }
+    },
+    {
+      "original": {
+        "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+        "sha256": "8976a8f34d7836d44295be5e3071f47352d0417a18c5fa6c44e144980e88e5d4",
+        "bytes": 148657
+      },
+      "preserved": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/baseline-compatibility-repair/before/04-registry.json",
+        "sha256": "8976a8f34d7836d44295be5e3071f47352d0417a18c5fa6c44e144980e88e5d4",
+        "bytes": 148657
+      }
+    }
+  ],
+  "after": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "9fb8604f33efe22ed60f93f9a5cc1163f2678e9766dd0197d67f3a877d8a01c2",
+      "bytes": 83709
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/correction-rhetorical-tags.json",
+      "sha256": "9f896bc741d7f619b7bc4e0ac94cdf5a781e23fe2dcef52986a25e8f4ea8566c",
+      "bytes": 2349
+    },
+    {
+      "path": "docs/assessment-ledgers/sacks-dawkins-science-religion-2012.json",
+      "sha256": "8f8b66d7ed8687f71a01768de0f3d5dca90328ffd603af869dc35f5ba9dba556",
+      "bytes": 24690
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/registry.json",
+      "sha256": "6704fc662132659c68d703de208217947536fb79563813c4234c9265c1e20689",
+      "bytes": 148657
+    }
+  ],
+  "invariants": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/inventory.json",
+      "sha256": "00cd5a1a765fc42c00f7f568cfe48c733c347c872413e82c8839e2da5ec98acf",
+      "bytes": 89255
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/final-ledger/final-ledger.json",
+      "sha256": "fffccc20d9e365e78556234f8f622b96939ecbf37afef2f1492854ebd055a565",
+      "bytes": 212484
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/score-pass/output.json",
+      "sha256": "db53e78e44560d165664f0ee3f8d72abf71e9d01d0109a9013fef66850d99402",
+      "bytes": 14838
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/output.json",
+      "sha256": "b241b7632a6fa4a14cb3e6eb70a1097f32a3e9e7dd529848e76f445aac99f452",
+      "bytes": 63497
+    },
+    {
+      "path": "src/data/debates.js",
+      "sha256": "d23a937fb92467cacf5340141f42ea8d1a4b78e2a514f117bc105d415775d0ac",
+      "bytes": 12337759
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "d8d77e459ae9ab6fffd1934d974e61c9d88ceeec2c2300d70218bb2b21341ad4",
+      "bytes": 4310
+    }
+  ],
+  "changedFields": [
+    "rhetorical audit baselineComparison",
+    "rhetorical audit recentBaselineComparison",
+    "dependent audit hash in rhetorical correction",
+    "dependent audit and correction hashes in production adapter",
+    "production adapter hash in registry"
+  ],
+  "judgmentChanges": 0,
+  "scoreChanges": 0,
+  "publicationChanges": 0,
+  "tagChanges": 0,
+  "testLimitChanges": 0,
+  "directIncrementalCostUsd": 0
+}

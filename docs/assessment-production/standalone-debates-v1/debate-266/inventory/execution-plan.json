@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-frozen-inventory-execution-plan",
+  "status": "frozen-before-model",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "createdAt": "2026-09-24T04:49:35.409Z",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "isolation": "Fresh built-in subagent with fork_turns none; declared-input protocol isolation, not an operating-system sandbox.",
+  "attempts": 1,
+  "retries": 0,
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/packet.json",
+      "sha256": "60758d6cf242dd286396371be3b22db8b00f619d40e346ab4de60a46557494d8",
+      "bytes": 37824
+    },
+    {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-indexed-transcript.txt",
+      "sha256": "b2cd4b752434d3a4a28455ef8bf2d6f62bbe398213fc9448a787dbc7cc6274ae",
+      "bytes": 95238
+    },
+    {
+      "path": ".assessment-cache/captions/QHg_NL4EUAE/scoped-events.json",
+      "sha256": "7fb010baeae11296fc089f87a4d5788c4bab0afbeff2a304b588e8a97de7d083",
+      "bytes": 201942
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLineRanges": [
+        {
+          "start": 1,
+          "end": 641
+        }
+      ]
+    }
+  ],
+  "allowedOutputPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-266/inventory/inventory.json",
+    "docs/assessment-production/standalone-debates-v1/debate-266/inventory/draft-parts.json",
+    "docs/assessment-production/standalone-debates-v1/debate-266/inventory/reading-audit.json"
+  ],
+  "directIncrementalCostUsd": 0
+}

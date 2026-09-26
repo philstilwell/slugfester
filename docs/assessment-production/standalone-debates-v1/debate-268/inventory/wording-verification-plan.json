@@ -1,0 +1,46 @@
+{
+  "status": "frozen-before-one-paid-call",
+  "createdAt": "2026-09-26T15:48:49.673Z",
+  "debateNumber": "268",
+  "videoId": "8Ad3rVRdgbI",
+  "targetMoveId": "sacks-charity-excludes-religious-causes",
+  "purpose": "Resolve charity measurement wording before score-blind inventory freeze; canonical source unchanged. Clip contains only eligible primary-speaker conversation.",
+  "source": {
+    "path": ".assessment-cache/captions/8Ad3rVRdgbI/source-recovery.m4a",
+    "sha256": "5a498a47c2c6e1280315b91c025c8d027d2ed46d8bb8183999b7a77dfdc56ef8",
+    "bytes": 60786956
+  },
+  "input": {
+    "path": "output/transcribe/8Ad3rVRdgbI-source/inventory-wording-verification-1/charity-measure.wav",
+    "sha256": "d928e274c141de86b0549c711c2d66865f94306e01285df2b3760c4cc9bd5636",
+    "bytes": 774478
+  },
+  "base": "output/transcribe/8Ad3rVRdgbI-source/inventory-wording-verification-1/charity-measure",
+  "startSeconds": 2209.62,
+  "durationSeconds": 24.200000000000273,
+  "controller": {
+    "path": "tmp/check-current-inventory.mjs",
+    "sha256": "7d4148bf8cd8c3a3953de9773a2d6e55a27f614c9f3e90de76283391f7132c55",
+    "bytes": 5721
+  },
+  "wrapper": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/controller-archive/whisper-current-once.py.txt",
+    "bytes": 659,
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721"
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "model": "whisper-1",
+  "responseFormat": "verbose_json",
+  "usdPerMinute": 0.006,
+  "attempts": 1,
+  "retries": 0,
+  "maximumAttemptCostUsd": 0.002420000000000027,
+  "knownSuccessfulBeforeUsd": 0.4452,
+  "maximumPossibleBeforeUsd": 0.4752,
+  "fullWorkflowUpperEstimateUsd": 0.9192,
+  "standingCapUsd": 1
+}

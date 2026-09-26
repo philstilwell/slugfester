@@ -1,0 +1,38 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord,validateStandaloneInventory,validatePrimarySpeakerScopeException} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const [n,...flags]=process.argv.slice(2);assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p));
+const record=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(record);
+const root=record.root,a=read(root+'/authorization.json'),source=read(root+'/source/source-lock.json'),packet=read(root+'/inventory/packet.json');
+const draftPath=flags.find(x=>x.startsWith('--draft='))?.slice(8)||root+'/inventory/draft-parts.json';
+const d=read(draftPath),events=read('.assessment-cache/captions/'+record.videoId+'/events.json'),eligible=new Set(read(packet.allowedInputs.find(x=>x.path.endsWith('/scoped-events.json')).path).map(e=>e.eventIndex));
+assert.equal(d.debateNumber,n);assert.equal(d.debateId,record.debateId);assert.equal(d.motion,a.identity.motion);
+const inv=structuredClone(d);Object.assign(inv,{schemaVersion:'1.2-standalone-score-blind-inventory',protocolId:a.protocolId,status:'complete-and-frozen',assessmentModel:a.execution.recordedDisplayModel});
+for(const m of inv.moves){
+ const startEvent=m.startEvent??m.sourceSpan?.startEvent,endEvent=m.endEvent??m.sourceSpan?.endEvent;
+ assert(Number.isInteger(startEvent)&&Number.isInteger(endEvent)&&endEvent>=startEvent,m.moveId+': invalid span');
+ for(let i=startEvent;i<=endEvent;i++)assert(eligible.has(i),m.moveId+': ineligible source event '+i);
+ const sourceSpan={startEvent,endEvent,startMs:events[startEvent].startMs,endMs:events[endEvent].startMs+events[endEvent].durationMs,excerpt:events.slice(startEvent,endEvent+1).map(e=>e.text.replace(/\s+/g,' ').trim()).join(' ').replace(/\s+/g,' ').trim()};
+ if(m.sourceSpan?.excerpt)assert.equal(m.sourceSpan.excerpt,sourceSpan.excerpt,m.moveId+': draft source excerpt mismatch');
+ m.sourceSpan=sourceSpan;delete m.startEvent;delete m.endEvent;
+ assert(sourceSpan.excerpt.length<=2200||String(m.sourceSpanSelectionRationale||'').length>=40,m.moveId+': long span without specific rationale');
+}
+inv.moves.sort((x,y)=>x.sourceSpan.startEvent-y.sourceSpan.startEvent);
+const counts=side=>inv.moves.filter(m=>m.side===side).length;
+const sections=inv.sections.map(s=>{const pro=inv.moves.filter(m=>m.sectionId===s.sectionId&&m.side==='pro').length,con=inv.moves.filter(m=>m.sectionId===s.sectionId&&m.side==='con').length;return{sectionId:s.sectionId,pro,con,absoluteDifference:Math.abs(pro-con)};});
+const balance={thresholds:{totalAbsoluteDifference:3,sectionAbsoluteDifference:2},totals:{pro:counts('pro'),con:counts('con'),absoluteDifference:Math.abs(counts('pro')-counts('con'))},sections,rationaleRequired:Math.abs(counts('pro')-counts('con'))>=3||sections.some(s=>s.absoluteDifference>=2),rationale:d.selectionBalanceAudit?.rationale||''};
+if(d.selectionBalanceAudit){for(const k of ['thresholds','totals','sections','rationaleRequired'])assert.deepEqual(d.selectionBalanceAudit[k],balance[k],'Worker balance discrepancy: '+k);}
+inv.selectionBalanceAudit=balance;
+const capacities=sections.map(s=>{const proposed=d.publicationCapacityAudit?.sections?.find(x=>x.sectionId===s.sectionId),fourthRowRequired=s.pro===4||s.con===4;return{sectionId:s.sectionId,pro:s.pro,con:s.con,withinCapacity:s.pro<=4&&s.con<=4,fourthRowRequired,fourthRowAuthorized:!fourthRowRequired||(proposed?.fourthRowAuthorized===true&&String(proposed?.rationale||'').length>=40),rationale:proposed?.rationale||''};});
+if(d.publicationCapacityAudit)for(const s of capacities){const proposed=d.publicationCapacityAudit.sections.find(x=>x.sectionId===s.sectionId);for(const k of ['pro','con','withinCapacity','fourthRowRequired','fourthRowAuthorized'])assert.equal(proposed?.[k],s[k],'Worker capacity discrepancy: '+s.sectionId+':'+k);}
+inv.publicationCapacityAudit={maximumSelectedMovesPerSidePerSection:4,sections:capacities,allSectionsWithinCapacity:capacities.every(x=>x.withinCapacity),allFourthRowsPreauthorized:capacities.every(x=>x.fourthRowAuthorized)};
+if(d.primarySpeakerScopeAudit)assert.deepEqual(d.primarySpeakerScopeAudit,packet.primarySpeakerScopeAudit);
+if(d.assessedDebateWindowMs)assert.deepEqual(d.assessedDebateWindowMs,packet.assessedDebateWindowMs);
+inv.primarySpeakerScopeAudit=packet.primarySpeakerScopeAudit;inv.assessedDebateWindowMs=packet.assessedDebateWindowMs;
+inv.audit={...d.audit,calculatedTotalsAbsent:true,completeTranscriptReviewed:true,allSpansSourceExact:true,originalRecordingReviewedByInventoryWorker:false,approvedScopeFullyReviewed:true};
+const validation=validateStandaloneInventory(inv,events),scopeValidation=validatePrimarySpeakerScopeException({authorization:a,sourceLock:source,inventory:inv});
+const outputPath=root+'/inventory/pre-audio-inventory.json';
+const review={schemaVersion:'1.0-current-source-inventory-assembly',status:'passed-mechanical-review-source-review-pending',createdAt:new Date().toISOString(),debateNumber:n,debateId:record.debateId,draft:fileRecord(draftPath),sourceEvents:fileRecord('.assessment-cache/captions/'+record.videoId+'/events.json'),validation,scopeValidation,assembly:'Only worker-authored selection and semantic decisions; exact source endpoints/text, chronological ordering and independently recomputed counts. No ratings or scores.',windowCheck:'Every original event in every move is present in the frozen eligible-event set, wholly inside the approved window and outside all excluded intervals.',counts:balance,capacity:inv.publicationCapacityAudit,moveSpans:inv.moves.map(m=>({moveId:m.moveId,side:m.side,sectionId:m.sectionId,startEvent:m.sourceSpan.startEvent,endEvent:m.sourceSpan.endEvent,characters:m.sourceSpan.excerpt.length,attributionConfidence:m.attributionConfidence})),directIncrementalCostUsd:0};
+if(flags.includes('--preserve'))for(const [p,v] of [[outputPath,inv],[root+'/inventory/pre-audio-mechanical-review.json',review]])fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({validation,scopeValidation,counts:balance,capacity:inv.publicationCapacityAudit,moveSpans:review.moveSpans,preserved:flags.includes('--preserve')},null,2));

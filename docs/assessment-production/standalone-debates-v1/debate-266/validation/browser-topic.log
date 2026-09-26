@@ -1,0 +1,6 @@
+### Result
+{"status":"passed","matchingLinks":1}
+### Ran Playwright code
+```js
+await (async(page)=>{const a=page.locator("a[href=\"/debate/dillahunty-giunta-faith-rational-justification-2018/\"]");if(!await a.count())throw Error("Topic entry missing");return {status:"passed",matchingLinks:await a.count()}})(page);
+```

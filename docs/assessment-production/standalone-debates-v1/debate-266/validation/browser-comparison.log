@@ -1,0 +1,9 @@
+### Result
+[{"name":"Matt Dillahunty","score":"85.82758620689656","appearances":"29"},{"name":"Blake Giunta","score":"82","appearances":"1"}]
+### Ran Playwright code
+```js
+await (async(page)=>{await page.getByRole("combobox",{name:"First interlocutor",exact:true}).selectOption({label:"Matt Dillahunty"});await page.getByRole("combobox",{name:"Second interlocutor",exact:true}).selectOption({label:"Blake Giunta"});await page.getByRole("button",{name:"Compare",exact:true}).click();const cards=page.locator(".comparison-person");await cards.first().waitFor();const result=await cards.evaluateAll(xs=>xs.map(x=>({name:x.dataset.comparisonPerson,score:x.dataset.averageScore,appearances:x.dataset.appearances})));if(result.length!==2||!result.some(x=>x.name==="Blake Giunta"&&Number(x.score)===82))throw Error("Comparison invalid");await page.screenshot({path:"output/playwright/debate-266/desktop-comparison.png"});return result})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4266/rankings/?compare-a=Matt+Dillahunty&compare-b=Blake+Giunta
+- Page Title: Debate speaker rankings & score comparison | Slugfester

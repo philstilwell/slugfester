@@ -1,0 +1,19 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const plan=JSON.parse(fs.readFileSync('.assessment-cache/qhg-scope-audio-plan.json')),root=plan.outputRoot,manifest=JSON.parse(fs.readFileSync(`${root}/manifest.json`));
+const verify=r=>assert.equal(createHash('sha256').update(fs.readFileSync(r.path)).digest('hex'),r.sha256);
+verify(manifest.plan);verify(manifest.source);manifest.references.forEach(r=>verify(r.file));
+const id=process.argv[2],clip=manifest.clips.find(c=>c.id===id);assert(clip);verify(clip.file);
+assert.equal(manifest.videoId,plan.videoId);assert.equal(manifest.model,plan.model);
+const attempt=`${root}/${id}.attempt.json`,output=`${root}/${id}.transcript.json`,result=`${root}/${id}.result.json`;
+assert(!fs.existsSync(attempt)&&!fs.existsSync(output)&&!fs.existsSync(result),'No retries or overwrite permitted');
+const estimatedCostUsd=(clip.measuredDurationSeconds+manifest.references.reduce((s,r)=>s+r.measuredDurationSeconds,0))/60*plan.rateUsdPerMinute;
+const args=['.assessment-cache/transcribe-scope-once.py',clip.file.path,'--model',plan.model,'--response-format',plan.responseFormat,'--chunking-strategy','auto','--language','en','--out',output];
+for(const r of manifest.references)args.push('--known-speaker',`${r.name}=${r.file.path}`);
+const startedAt=new Date().toISOString();fs.writeFileSync(attempt,JSON.stringify({videoId:plan.videoId,id,startedAt,model:plan.model,inputSha256:clip.file.sha256,estimatedCostUsd,maximumPossiblePaidCostUsd:estimatedCostUsd,retries:0,referenceHashes:manifest.references.map(r=>({name:r.name,sha256:r.file.sha256}))},null,2)+'\n',{flag:'wx'});
+const r=spawnSync('python3',args,{encoding:'utf8',timeout:195000});
+const entry={id,startedAt,completedAt:new Date().toISOString(),exitCode:r.status,status:r.status===0?'response-received':'failed-or-transport-uncertain',maximumPossiblePaidCostUsd:estimatedCostUsd,knownSuccessfulCallCostUsd:r.status===0?estimatedCostUsd:0,stdout:r.stdout,stderr:r.stderr};
+if(r.status===0){const b=fs.readFileSync(output);entry.output={path:output,bytes:b.length,sha256:createHash('sha256').update(b).digest('hex')};}
+fs.writeFileSync(result,JSON.stringify(entry,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({id,status:entry.status,exitCode:r.status,maximumPossiblePaidCostUsd:estimatedCostUsd,output:entry.output}));process.exit(r.status===0?0:1);

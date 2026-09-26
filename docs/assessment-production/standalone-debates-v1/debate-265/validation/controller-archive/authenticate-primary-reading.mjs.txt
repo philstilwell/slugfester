@@ -1,0 +1,28 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const [n,pass,session,...flags]=process.argv.slice(2);assert.match(n,/^\d{3}$/);assert.ok(['pass-a','pass-b'].includes(pass));
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const r=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json')).debates.find(x=>x.debateNumber===n);assert.ok(r);
+const root=r.root,p=root+'/judgments/'+pass;
+const instructions=JSON.parse(fs.readFileSync(p+'/execution-instructions.json'));
+const raw=fs.readFileSync(session),rows=raw.toString().trim().split('\n').map(JSON.parse);
+const meta=rows.find(r=>r.type==='session_meta').payload;
+assert.equal(meta.agent_path,'/root/primary_'+n+'_'+pass.at(-1));
+const contexts=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));
+assert.ok(contexts.length&&contexts.every(x=>x.model===instructions.model.slug&&x.reasoningEffort===instructions.model.reasoningEffort));
+const outputs=[];
+for(const row of rows)for(const b of row.payload?.type==='custom_tool_call_output'?row.payload.output:[]){let t=b.text||'';try{const j=JSON.parse(t);if(typeof j.output==='string')t=j.output;}catch{}
+ if(!t||/^Script completed\nWall time/.test(t))continue;
+ outputs.push({ordinal:row.ordinal,callId:row.payload.call_id,text:t,sha256:hash(t),characters:t.length,truncated:/Warning: truncated output|tokens truncated|output truncated/i.test(t)});
+}
+const combined=outputs.filter(x=>!x.truncated).map(x=>x.text).join('');
+const inputs=instructions.allowedInputs.map(rec=>{const b=fs.readFileSync(rec.path);assert.equal(hash(b),rec.sha256);let expected=b.toString();if(rec.allowedLines)expected=rec.allowedLines.map(x=>expected.split('\n').slice(x.start-1,x.end).join('\n')+'\n').join('');return {...rec,literalCompleteReadAuthenticated:combined.includes(expected),expectedCharacters:expected.length};});
+assert.ok(inputs.every(x=>x.literalCompleteReadAuthenticated),'Missing complete literal allowed-input read: '+inputs.filter(x=>!x.literalCompleteReadAuthenticated).map(x=>x.path).join(', '));
+const seen=new Set();const sourceReads=[];
+for(const out of outputs.filter(x=>!x.truncated)){const ids=[...out.text.matchAll(/^\[(\d{4})\] \d+-\d+ms /gm)].map(x=>+x[1]);if(ids.length){ids.forEach(x=>seen.add(x));sourceReads.push({ordinal:out.ordinal,callId:out.callId,firstEvent:ids[0],lastEvent:ids.at(-1),events:ids.length,sha256:out.sha256});}}
+assert.equal(seen.size,instructions.fullSourceEventCount);
+const audit={schemaVersion:'1.0-primary-pre-rating-reading-release',status:'authenticated-and-released-for-first-rating',debateNumber:n,debateId:r.debateId,pass,createdAt:new Date().toISOString(),agentPath:meta.agent_path,session:{path:session,sha256:hash(raw),bytes:raw.length,kind:'pre-rating-prefix-snapshot'},actualContextModels:contexts,inputs,sourceEventCount:seen.size,sourceReadEvidence:sourceReads,outputReadEvidence:outputs.map(({text,...rest})=>rest),mandatorySkillReads:'Skill and runbook are procedural instructions, not additional debate evidence. No prior debate scores or publication are allowed.',outputExistedAtRelease:fs.existsSync(instructions.outputPath),directIncrementalCostUsd:0};
+assert.equal(audit.outputExistedAtRelease,false);
+if(flags.includes('--freeze'))fs.writeFileSync(p+'/reading-release.json',JSON.stringify(audit,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({status:audit.status,pass,inputs:inputs.map(x=>({path:x.path,complete:x.literalCompleteReadAuthenticated})),sourceEventCount:seen.size,actualContextModels:contexts,frozen:flags.includes('--freeze')},null,2));

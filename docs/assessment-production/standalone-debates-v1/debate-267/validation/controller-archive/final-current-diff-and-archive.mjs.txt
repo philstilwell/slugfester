@@ -1,0 +1,19 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),sha=b=>createHash('sha256').update(b).digest('hex'),rec=p=>{const b=fs.readFileSync(p);return{path:p,bytes:b.length,sha256:sha(b)};};
+const registryPath='docs/assessment-production/standalone-debates-v1/registry.json',registry=read(registryPath),r=registry.debates.find(x=>x.debateNumber===n);assert(r);
+const plan=read(r.root+'/validation/controller-cleanup-plan.json');assert.equal(plan.debateNumber,n);assert.equal(plan.debateId,r.debateId);assert.equal(plan.onlyRunOwnedTemporaryFiles,true);
+const c=read(r.root+'/publication/output.json').candidate,old=p=>execFileSync('git',['show','HEAD:'+p],{encoding:'utf8',maxBuffer:64*1024*1024});
+const addition=',\n'+JSON.stringify(c,null,2).split('\n').map(x=>'  '+x).join('\n'),source=fs.readFileSync('src/data/debates.js','utf8');assert.equal(source.split(addition).length,2);assert.equal(source.replace(addition,''),old('src/data/debates.js'));
+const corpusPath='docs/calibration/v2.1/corpus-transcript-audit.json',corpus=read(corpusPath),priorCorpus=JSON.parse(old(corpusPath));assert.deepEqual(corpus.entries.filter(x=>x.debateNumber!==n),priorCorpus.entries);
+const priorRegistry=JSON.parse(old(registryPath));assert.deepEqual(registry.debates.filter(x=>x.debateNumber!==n),priorRegistry.debates);
+const normalize=s=>s.replace(/\?v=[a-f0-9]+/g,'?v=CONTENTHASH');assert.equal(normalize(fs.readFileSync('src/app.js','utf8')),normalize(old('src/app.js')));
+const archive=r.root+'/validation/controller-archive';fs.mkdirSync(archive,{recursive:true});
+const archived=plan.files.map(x=>{assert(x.path.startsWith('.assessment-cache/')||x.path.startsWith('output/playwright/debate-'+n+'/'));assert(!x.path.includes('/../'));assert.equal(rec(x.path).sha256,x.sha256);const target=archive+'/'+x.path.split('/').at(-1)+'.txt';fs.copyFileSync(x.path,target,fs.constants.COPYFILE_EXCL);assert.equal(rec(target).sha256,x.sha256);return{original:rec(x.path),archive:rec(target)};});
+const removedScreenshots=[];for(const x of read(r.root+'/rendering/rendering-audit.json').screenshots){const p='output/playwright/debate-'+n+'/'+x.path.split('/').at(-1);assert.equal(rec(p).sha256,x.sha256);fs.unlinkSync(p);removedScreenshots.push(p);}
+const retainedRecorder='.assessment-cache/run-validation-command.mjs';assert(archived.some(x=>x.original.path===retainedRecorder));for(const x of archived)if(x.original.path!==retainedRecorder)fs.unlinkSync(x.original.path);
+const report={status:'passed-focused-diff-and-recoverable-controller-cleanup',debateNumber:n,debateId:r.debateId,baselineCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),unchangedEarlierDebateObjects:priorCorpus.entries.length,unchangedEarlierCorpusEntries:priorCorpus.entries.length,unchangedEarlierRegistryEntries:priorRegistry.debates.length,appChangesOnlyGeneratedAssetVersion:true,cleanupPlan:rec(r.root+'/validation/controller-cleanup-plan.json'),archivedControllers:archived,removedControllerCount:archived.length-1,retainedRecorder:{path:retainedRecorder,purpose:'Record final immediate precommit validation; remove this identical archived copy before committing.'},removedDuplicateScreenshots:removedScreenshots,rawSourceCacheRetained:true,unrelatedPathsRemoved:0,archivedSourceFilesAreInertTextNotExecutable:true};
+fs.writeFileSync(r.root+'/validation/focused-diff-and-cleanup.json',JSON.stringify(report,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({status:report.status,earlierDebatesUnchanged:report.unchangedEarlierDebateObjects,archivedControllers:archived.length,removedControllers:report.removedControllerCount,removedDuplicateScreenshots:removedScreenshots.length}));

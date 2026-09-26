@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {validateStandaloneAdjudication} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+import {checkPublication} from './check-publication-draft.mjs';
+const [n,phase]=process.argv.slice(2);assert.match(n,/^\d{3}$/);assert(['adjudication','publication'].includes(phase));
+const read=p=>JSON.parse(fs.readFileSync(p)),hash=b=>createHash('sha256').update(b).digest('hex'),rec=p=>{const b=fs.readFileSync(p);return {path:p,sha256:hash(b),bytes:b.length};};
+const record=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(record);
+const dir=record.root+'/'+phase,plan=read(dir+'/execution-plan.json'),release=read(dir+'/reading-release.json'),output=read(plan.outputPath);
+assert.equal(release.status,'authenticated-and-released-for-first-submission');assert.equal(release.outputExistedAtRelease,false);
+assert(release.inputs.every(r=>r.literalCompleteReadAuthenticated));
+for(const r of plan.allowedInputs)assert.equal(rec(r.path).sha256,r.sha256);
+const session=fs.readFileSync(release.session.path),rows=session.toString().trim().split('\n').map(JSON.parse),contexts=rows.filter(r=>r.type==='turn_context').map(r=>({model:r.payload.model,reasoningEffort:r.payload.effort}));
+assert(contexts.length&&contexts.every(x=>x.model===plan.model.slug&&x.reasoningEffort===plan.model.reasoningEffort));
+const validation=phase==='adjudication'?validateStandaloneAdjudication(output,read(record.root+'/disagreements/disagreements.json')):checkPublication(output,read(dir+'/input-bundle.json'));
+const result={schemaVersion:'1.0-isolated-frozen-phase-execution',status:'passed-authenticated-isolated-'+phase,debateNumber:n,debateId:record.debateId,model:plan.model,actualModelContexts:contexts,agentPath:release.agentPath,session:{path:release.session.path,sha256:hash(session),bytes:session.length,kind:'prefix-snapshot-after-output'},readingRelease:rec(dir+'/reading-release.json'),readingAudit:rec(plan.readingAuditPath),executionPlan:rec(dir+'/execution-plan.json'),allowedInputs:plan.allowedInputs,output:rec(plan.outputPath),validation,attempts:1,retries:0,forkTurns:'none',protocolIsolation:true,operatingSystemFilesystemIsolation:false,directIncrementalCostUsd:0};
+fs.writeFileSync(dir+'/execution.json',JSON.stringify(result,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({status:result.status,validation},null,2));

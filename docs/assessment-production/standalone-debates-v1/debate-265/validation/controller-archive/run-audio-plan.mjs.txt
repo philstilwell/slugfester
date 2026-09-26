@@ -1,0 +1,29 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {spawnSync} from 'node:child_process';
+const root='docs/assessment-production/standalone-debates-v1/debate-265';
+const planPath=root+'/audio/plan.json',raw=fs.readFileSync(planPath),p=JSON.parse(raw);
+const hash=b=>createHash('sha256').update(b).digest('hex');
+assert.equal(p.videoId,'Ui9C6N4HFvY');assert.equal(p.attemptsPerClip,1);assert.equal(p.retries,0);assert.equal(p.pricing.knownCostBeforeCallsUsd,0);
+assert.equal(hash(fs.readFileSync(p.inventoryCandidate.path)),p.inventoryCandidate.sha256);
+const out=p.executionOutputRoot;fs.mkdirSync(out,{recursive:true});
+let known=0;
+for(const [i,c]of p.clips.entries()){
+ const attemptPath=out+'/'+c.clipId+'.attempt.json',resultPath=out+'/'+c.clipId+'.json',completePath=out+'/'+c.clipId+'.completion.json';
+ assert.equal(fs.existsSync(attemptPath),false,'This clip was already attempted; no automatic retry.');assert.equal(fs.existsSync(resultPath),false);
+ assert.equal(hash(fs.readFileSync(c.path)),c.sha256);
+ const maximumProjected=known+(p.clips.length-i)*p.pricing.uncertainAttemptReserveUsd;
+ assert.ok(maximumProjected<=p.pricing.standingCapUsd,'Conservative remaining exposure exceeds standing cap.');
+ const attempt={schemaVersion:'1.0-one-paid-clip-attempt',debateNumber:p.debateNumber,clipId:c.clipId,startedAt:new Date().toISOString(),planSha256:hash(raw),inputSha256:c.sha256,attempt:1,retries:0,knownSuccessfulCallCostBeforeUsd:known,maximumProjectedExposureBeforeUsd:maximumProjected,costEstimateReportedBeforeCall:true,model:p.model,subscriptionUsed:false};
+ fs.writeFileSync(attemptPath,JSON.stringify(attempt,null,2)+'\n',{flag:'wx'});
+ const args=['.assessment-cache/transcribe-one-clip.py',c.path,'--model',p.model,'--response-format',p.responseFormat,'--chunking-strategy',p.chunkingStrategy,'--language','en','--out',resultPath];
+ for(const r of p.knownSpeakerReferences){assert.equal(hash(fs.readFileSync(r.file.path)),r.file.sha256);args.push('--known-speaker',r.speaker+'='+r.file.path);}
+ const run=spawnSync('python3',args,{encoding:'utf8',timeout:200000,maxBuffer:1024*1024});
+ if(run.status!==0){const failure={...attempt,status:'failed-or-transport-uncertain-no-retry',completedAt:new Date().toISOString(),exitCode:run.status,error:run.error?.code||null,sanitizedError:run.stderr?.trim().slice(-1500)||'',knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostEstimateUsd:known+p.pricing.uncertainAttemptReserveUsd};fs.writeFileSync(completePath,JSON.stringify(failure,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({clipId:c.clipId,status:failure.status,knownCostUsd:known,maximumPossibleCostEstimateUsd:failure.maximumPossibleTotalCostEstimateUsd}));process.exit(1);}
+ const resultBytes=fs.readFileSync(resultPath),result=JSON.parse(resultBytes),u=result.usage;
+ assert.ok(result.text?.trim()&&Array.isArray(result.segments)&&result.segments.length,'Empty transcript; preserve and stop.');
+ if(!u||u.type!=='tokens'||!Number.isFinite(u.input_tokens)||!Number.isFinite(u.output_tokens)){fs.writeFileSync(completePath,JSON.stringify({clipId:c.clipId,status:'usable-result-cost-unresolved-stop',usage:u||null,knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostEstimateUsd:known+p.pricing.uncertainAttemptReserveUsd},null,2)+'\n',{flag:'wx'});throw new Error('Usage reconciliation unavailable; no further calls.');}
+ const cost=(u.input_tokens*p.pricing.inputUsdPerMillionTokens+u.output_tokens*p.pricing.outputUsdPerMillionTokens)/1e6;known+=cost;
+ const completion={schemaVersion:'1.0-one-paid-clip-completion',status:'succeeded-no-retry',debateNumber:p.debateNumber,clipId:c.clipId,completedAt:new Date().toISOString(),responseSha256:hash(resultBytes),responseBytes:resultBytes.length,usage:u,callCostEstimateUsd:cost,knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostEstimateUsd:known,segmentCount:result.segments.length,attempts:1,retries:0,billingDashboardConfirmed:false};
+ fs.writeFileSync(completePath,JSON.stringify(completion,null,2)+'\n',{flag:'wx'});
+ console.log(JSON.stringify({clipId:c.clipId,status:'succeeded',segments:result.segments.length,knownCostEstimateUsd:known}));
+}
+console.log(JSON.stringify({status:'all-paid-clips-complete',calls:p.clips.length,knownSuccessfulCallCostEstimateUsd:known,retries:0}));

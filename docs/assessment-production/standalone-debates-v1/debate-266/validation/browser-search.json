@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-validation-command-evidence",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "command": [
+    "env",
+    "npm_config_offline=true",
+    "/Users/philstilwell/.codex/skills/playwright/scripts/playwright_cli.sh",
+    "-s=slugfester266",
+    "run-code",
+    "async(page)=>{await page.getByRole(\"link\",{name:/Matt Dillahunty vs Blake Giunta/}).waitFor();return {status:\"passed\",text:await page.getByRole(\"status\").innerText(),url:page.url()}}"
+  ],
+  "startedAt": "2026-09-24T06:36:37.180Z",
+  "completedAt": "2026-09-24T06:36:38.056Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "status": "passed",
+  "log": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/validation/browser-search.log",
+    "bytes": 342,
+    "sha256": "abdac3175f589601c068421edf283f5de99a990d169f8d521c83b335a53b7454"
+  },
+  "directIncrementalCostUsd": 0
+}

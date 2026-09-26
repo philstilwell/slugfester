@@ -12570,5 +12570,205 @@ export const debateSummaries = [
         "title": "Religion, spirituality, and human well-being"
       }
     ]
+  },
+  {
+    "id": "donahue-linford-fine-tuning-theism-2026",
+    "number": "265",
+    "title": "Miles K. Donahue vs Dan Linford — Fine-Tuning and Theism",
+    "year": 2026,
+    "label": "Fine-tuning and theism",
+    "date": "2026-09-23",
+    "duration": "1 hr 54 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Ui9C6N4HFvY",
+    "motion": "Does cosmic fine-tuning provide strong evidence for theism over naturalism?",
+    "summary": "Linford’s measure and model-flexibility objections outperformed Donahue’s modest fine-tuning case, whose strongest distinctions remained burdened by unsupported probability assignments.",
+    "topicCategory": "cosmological-arguments",
+    "sides": {
+      "pro": {
+        "name": "Theistic fine-tuning",
+        "speaker": "Miles K. Donahue",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Fine-tuning skepticism",
+        "speaker": "Dan Linford",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 80,
+      "con": 87,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Fine-tuning, data, and the core likelihood comparison"
+      },
+      {
+        "title": "Theory replacement and deeper physics"
+      },
+      {
+        "title": "Entropy and comparative disconfirmation"
+      },
+      {
+        "title": "Divine purposes, discoverability, and intrinsic priors"
+      },
+      {
+        "title": "Embodiment and theistic prediction"
+      },
+      {
+        "title": "Multiverse symmetry and the final deeper-physics objection"
+      }
+    ]
+  },
+  {
+    "id": "dillahunty-giunta-faith-rational-justification-2018",
+    "number": "266",
+    "title": "Matt Dillahunty vs Blake Giunta — Faith and Rational Justification",
+    "year": 2018,
+    "label": "Faith and rational justification",
+    "date": "2026-09-24",
+    "duration": "2 hr 28 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=QHg_NL4EUAE",
+    "motion": "Must God's possibility be demonstrated before belief in God can be rationally justified?",
+    "summary": "A closely matched exchange tests whether theism needs prior possibility evidence or may enter ordinary comparative inference, with Dillahunty prevailing by one point.",
+    "topicCategory": "logic-reason-presuppositions",
+    "sides": {
+      "pro": {
+        "name": "Prior possibility requirement",
+        "speaker": "Matt Dillahunty",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Comparative explanatory justification",
+        "speaker": "Blake Giunta",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 83,
+      "con": 82,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Faith, rationality, and shared ground"
+      },
+      {
+        "title": "Truth-directed standards of justification"
+      },
+      {
+        "title": "Possibility and ordinary inference"
+      },
+      {
+        "title": "The Higgs analogy and supernatural candidates"
+      },
+      {
+        "title": "Candidate status and methodological naturalism"
+      },
+      {
+        "title": "Bayesian comparison and candidate testing"
+      },
+      {
+        "title": "Updating, convergence, and fine-tuning"
+      }
+    ]
+  },
+  {
+    "id": "hitchens-wilson-truth-goodness-beauty-2008",
+    "number": "267",
+    "title": "Christopher Hitchens vs Douglas Wilson — Truth, Goodness, and Beauty",
+    "year": 2008,
+    "label": "Truth, goodness, and beauty",
+    "date": "2026-09-24",
+    "duration": "2 hr 2 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=g6UU9C-WmvM",
+    "motion": "Are truth, goodness, and beauty better explained by Christian theism than by atheistic naturalism?",
+    "summary": "Wilson argues that theism grounds reason, value, and purposeful beauty; Hitchens answers with human responsibility, secular awe, skeptical inquiry, and stricter tests for miracles.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "Douglas Wilson",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheistic naturalism",
+        "speaker": "Christopher Hitchens",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 75,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Rational grounding and inquiry"
+      },
+      {
+        "title": "Objective value and moral authority"
+      },
+      {
+        "title": "Beauty, culture, and transcendence"
+      },
+      {
+        "title": "Miracles, testimony, and rival claims"
+      },
+      {
+        "title": "Superstition and cultural effects"
+      }
+    ]
+  },
+  {
+    "id": "sacks-dawkins-science-religion-2012",
+    "number": "268",
+    "title": "Jonathan Sacks vs Richard Dawkins — Science and Religion",
+    "year": 2012,
+    "label": "Science and religion",
+    "date": "2026-09-26",
+    "duration": "1 hr 2 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8Ad3rVRdgbI",
+    "motion": "Can religion and science form a coherent partnership?",
+    "summary": "Sacks defends compatibility through distinct roles and disciplined interpretation, while Dawkins more successfully presses whether religious purpose and supernatural premises have independent warrant.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Jewish theism",
+        "speaker": "Jonathan Sacks",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Scientific naturalism",
+        "speaker": "Richard Dawkins",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 85,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Science and the partnership claim"
+      },
+      {
+        "title": "Cosmic purpose and explanatory warrant"
+      },
+      {
+        "title": "Literal, symbolic, and scientific interpretation"
+      },
+      {
+        "title": "Abraham, Isaac, and interpretive purpose"
+      },
+      {
+        "title": "Community and a post-religious future"
+      },
+      {
+        "title": "Common ground, supernaturalism, and dignity"
+      }
+    ]
   }
 ];

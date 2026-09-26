@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-24T17:28:20.965Z",
+  "userAuthorization": "The user answered Yes to: Assess the openings and direct exchange, 11:46–1:13:17, excluding audience Q&A and both later closings, and verify the repeated passage before scoring.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-267",
+    "head": "bf80a6fa8ce07bca1d0a6db811d22109fc70d127",
+    "localMain": "bf80a6fa8ce07bca1d0a6db811d22109fc70d127",
+    "originMain": "bf80a6fa8ce07bca1d0a6db811d22109fc70d127",
+    "clean": true,
+    "isolationReason": "Continue the already-created clean topic branch in the non-iCloud working copy; original source work retained."
+  },
+  "identity": {
+    "debateNumber": "267",
+    "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+    "videoId": "g6UU9C-WmvM",
+    "canonicalUrl": "https://www.youtube.com/watch?v=g6UU9C-WmvM",
+    "sourceTitle": "Christopher Hitchens vs. Douglas Wilson Debate at Westminster",
+    "eventYear": 2008,
+    "title": "Christopher Hitchens vs Douglas Wilson — Truth, Goodness, and Beauty (2008)",
+    "label": "Truth, goodness, and beauty",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Are truth, goodness, and beauty better explained by Christian theism than by atheistic naturalism?",
+    "pro": {
+      "speaker": "Douglas Wilson",
+      "position": "Christian theism"
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "position": "Atheistic naturalism"
+    },
+    "moderator": "K. Scott Oliphint",
+    "dyadic": true,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "explicitly-approved-main-exchange-with-replay-deduplication",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "g6UU9C-WmvM",
+      "userApproval": "The user answered Yes to: Assess the openings and direct exchange, 11:46–1:13:17, excluding audience Q&A and both later closings, and verify the repeated passage before scoring.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers only the opening presentations and direct exchange, approximately 11:46–1:13:22, with the final complete reply included. Audience Q&A, the later closing statements, and the introduction are not assessed. A verified replay at approximately 59:26–1:09:10 is counted only once; timestamps refer to the original upload. Scores describe this limited excerpt, not the complete event.",
+      "assessedWindow": {
+        "startMs": 706519,
+        "endMs": 4402400,
+        "durationMs": 3695881
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "verified-upload-replay",
+          "startMs": 3565900,
+          "endMs": 4149900,
+          "durationMs": 584000,
+          "reason": "The upload replays the already retained miracle and testimony exchange. Twenty-nine waveform comparisons prove a 583.915125-second repeat offset with correlations above 0.99. This is duplicate media, not a new argumentative performance; preserve it as source evidence but do not score it twice.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true,
+          "kind": "duplicate-media-replay"
+        }
+      ],
+      "excludedDurationMs": 584000,
+      "excludedShareOfAssessedWindow": 0.15801374557243592,
+      "boundaryBasis": "Opening diarized audio places Wilson at 11:47.2; the enclosing caption begins 11:46.519. The final substantive response ends at 1:13:20.862; its complete enclosing caption ends 1:13:22.400. No audience question or later closing is included. The protocol identifier is the existing general editor-scope validator; the in-window exclusion here is verified duplicate media, not moderator advocacy.",
+      "outsideWindowDisposition": "Complete introduction, audience Q&A, and both later closings are unscored by explicit user approval.",
+      "captionTailPolicy": "The replay boundary is localized to quarter-second waveform windows. Whole caption events whose display tails touch the replay are excluded conservatively; no new substantive claim is lost. Original captions, audio, timestamps, and event indices remain intact."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownPaidCostEstimateUsd": 0.020477500000000003,
+    "maximumPossiblePaidCostEstimateUsd": 0.020477500000000003,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullWorkflowConservativeUpperEstimateUsd": 0.96,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-267",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/hitchens-wilson-truth-goodness-beauty-2008.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/interlocutors.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

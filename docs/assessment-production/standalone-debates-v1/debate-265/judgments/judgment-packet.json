@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0-standalone-score-blind-judgment-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-identical-evidence-packet",
+  "frozenAt": "2026-09-23T19:06:01.995Z",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "assessmentModel": "5.6 Sol",
+  "reasoningEffort": "low",
+  "authentication": "ChatGPT subscription",
+  "motion": "Does cosmic fine-tuning provide strong evidence for theism over naturalism?",
+  "sides": {
+    "pro": {
+      "speaker": "Miles K. Donahue",
+      "position": "Theistic fine-tuning"
+    },
+    "con": {
+      "speaker": "Dan Linford",
+      "position": "Fine-tuning skepticism"
+    }
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/inventory/inventory.json",
+      "sha256": "24a6e4b206ad12edd54e90d7241c088b24b3a8a0a30b9cd92e943decd53ce39f",
+      "bytes": 127349
+    },
+    "events": {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/events.json",
+      "sha256": "a8549d36bd377c1703de405253fa60c411eb3a78894f8dd87447106290fde288",
+      "bytes": 326710
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/transcript.txt",
+      "sha256": "a17440af3e3434d6c0430c0e96d51f4b6963dc85b3fd914ab1abe20b6a6818d1",
+      "bytes": 138568
+    },
+    "workflow": {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    "rubric": {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    "validator": {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735
+    }
+  },
+  "isolationBoundary": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentUnavailable": true,
+    "publicationProseUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aggregateRankingsUnavailable": true,
+    "priorScoresUnavailable": true,
+    "aiExtensionsUnavailable": true
+  },
+  "instructions": {
+    "reviewCompleteLockedInventory": true,
+    "judgeEveryMoveExactlyOnce": true,
+    "preserveInventoryStructure": true,
+    "doNotAddDropMergeOrSplitMoves": true,
+    "doNotChangeSourceSpansSpeakersSectionsWeightsImportanceOrBurdenLinks": true,
+    "scoreTranscriptPerformanceNotWorldviewTruth": true,
+    "supplyRatingsAndRationalesOnly": true,
+    "calculatedMoveSectionAndOverallScoresForbidden": true,
+    "winnerForbidden": true,
+    "publicationProseForbidden": true
+  },
+  "dimensionKeys": [
+    "logicalCoherence",
+    "evidenceWarrant",
+    "responsiveness",
+    "relevanceBurden",
+    "precisionClarity",
+    "calibrationCharity"
+  ],
+  "ratingControls": {
+    "minimum": 0,
+    "maximum": 100,
+    "integerOnly": true,
+    "rationaleMinimumCharacters": 40,
+    "bands": {
+      "95-100": "Exceptional and unusually complete",
+      "85-94": "Very strong",
+      "75-84": "Strong or competent",
+      "65-74": "Mixed",
+      "50-64": "Weak",
+      "25-49": "Very weak",
+      "0-24": "Non-performance"
+    }
+  },
+  "burdenAdjustmentControls": {
+    "minimum": -5,
+    "maximum": 5,
+    "integerOnly": true,
+    "nonzeroRequiresDistinctDebateWideConsequence": true,
+    "nonzeroRequiresBurdenCompletionEffect": true,
+    "nonzeroRequiresNotAlreadyScored": true,
+    "duplicateCaptureForcesZero": true
+  },
+  "outputContract": {
+    "schemaVersion": "1.0-standalone-primary-judgment",
+    "protocolId": "assessment-production-standalone-debate-v1",
+    "status": "complete-and-schema-valid",
+    "reviewerRole": "isolated-score-blind-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "inventorySha256": "24a6e4b206ad12edd54e90d7241c088b24b3a8a0a30b9cd92e943decd53ce39f",
+    "judgmentFields": {
+      "moveId": "exact locked move ID in inventory order",
+      "assessmentConfidence": "high, medium, or low",
+      "dimensions": "exactly the six named dimension objects, each with integer value and rationale"
+    },
+    "burdenCompletionAdjustmentFields": {
+      "value": "integer -5 through 5",
+      "rationale": "source-grounded explanation",
+      "eligibility": [
+        "distinctDebateWideConsequence",
+        "affectsBurdenCompletion",
+        "notAlreadyScored",
+        "affectedBurdenIds",
+        "completionCriterion",
+        "relatedMoveIds",
+        "distinctConsequence",
+        "alreadyCapturedBy",
+        "counterfactual"
+      ]
+    },
+    "requiredAuditBooleans": [
+      "completeLockedInventoryReviewed",
+      "allMovesJudgedOnce",
+      "ratingsOnlyNoCalculatedScores",
+      "publicationBlind",
+      "scoreBlind"
+    ]
+  }
+}

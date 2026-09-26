@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "videoId": "QHg_NL4EUAE",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/inventory/inventory.json",
+    "sha256": "5e34a7dc845c0aacf9cd86e139ea63f771f62b7429a809b6dca490346780d8de",
+    "bytes": 139869
+  },
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/plan.json",
+    "sha256": "1e97bfa4aa3d9f292a082d9bd471c4208fa76ed6a90aed1d5d0f3ca3e27bded7",
+    "bytes": 4593
+  },
+  "scopeAudioEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/source/scope-audio-evidence.json",
+    "sha256": "c517e25fe4078f290d1617fd462470a24d254f7dea68abe74b1c04dbc66dff57",
+    "bytes": 11284
+  },
+  "triggeredMoveIds": [
+    "con-absence-is-not-violation",
+    "pro-fine-tuning-needs-alternative-possibility"
+  ],
+  "checks": [
+    {
+      "moveId": "con-absence-is-not-violation",
+      "clipIds": [
+        "clip-01"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "The independent transcript assigns the background-knowledge objection and denial of violation to Blake Giunta from 3114.160 to 3130.160 seconds. Matt Dillahunty then says it absolutely does and asks what evidence supports anything other than nature at 3130.460–3135.694. Giunta replies at 3136.094–3138.844 that this does not mean it violates his understanding. Thus both retained quote candidates belong to Giunta, and Matt's intervening challenge is contextual evidence, not a proposition credited to Giunta. The caption's 'I'm amazing' is an automatic-recognition error for 'I'm a Bayesian' and must not be penalized or quoted as the intended wording. The isolated 'No' assigned to the moderator is a brief acknowledgement, not a developed third-party argument; it supplies no assessed premise. The selected claim, warrant, inference and ownership are confirmed without altering caption or inventory bytes.",
+      "verificationClips": [
+        {
+          "clipId": "clip-01",
+          "startMs": 3111210,
+          "endMs": 3149319,
+          "moveIds": [
+            "con-absence-is-not-violation"
+          ],
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/responses/clip-01.json",
+            "sha256": "c93918b56faba02561309b82e463de19ee6c45a0baa3f86f701737ea74a39f42",
+            "bytes": 3283
+          },
+          "completion": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/responses/clip-01.completion.json",
+            "sha256": "198b22eda797eb8386cb56fcb11de15727e5f25c8408f270fdf1fef2c0dd74cf",
+            "bytes": 721
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    },
+    {
+      "moveId": "pro-fine-tuning-needs-alternative-possibility",
+      "clipIds": [
+        "clip-02"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "The independent transcript identifies Giunta's physical-laws clarification through 3926.430 seconds. Dillahunty begins 'Sure, but you don't have any evidence that they could have been any other way' at 3926.830–3929.480, confirming ownership of the essential negation embedded in caption event 1624. After Giunta's fragmentary interjection, Dillahunty continues the observer's actual-universe point at 3930.630–3932.980. Giunta resumes the physicist-recognition reply at 3932.980. Both retained quote candidates express Dillahunty's words; Giunta's opening 'fine-tuned' and trailing 'you do the way you do' are context from neighboring turns, not premises attributed to Dillahunty. The comparative-possibility objection and quotation ownership are resolved without changing caption or inventory bytes.",
+      "verificationClips": [
+        {
+          "clipId": "clip-02",
+          "startMs": 3921930,
+          "endMs": 3940490,
+          "moveIds": [
+            "pro-fine-tuning-needs-alternative-possibility"
+          ],
+          "response": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/responses/clip-02.json",
+            "sha256": "5f0e73b45dacc044e0cd82e6b20f264bc28d44d001dd21bde08b2f6192bf544c",
+            "bytes": 2382
+          },
+          "completion": {
+            "path": "docs/assessment-production/standalone-debates-v1/debate-266/audio/responses/clip-02.completion.json",
+            "sha256": "e665f799d2521aab1979b48d85b5fa2dbb98f574dd9c0f170fc355fb47d31f73",
+            "bytes": 739
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    }
+  ],
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.30537250000000005,
+    "maximumPossibleTotalCostUsd": 0.30537250000000005,
+    "maximumPossibleTotalCostEstimateUsd": 0.30537250000000005,
+    "directCostUsd": 0.30537250000000005,
+    "uncertainPaidAttempts": 0,
+    "successfulCalls": 2,
+    "scopeVerificationSuccessfulCalls": 6,
+    "retries": 0,
+    "billingDashboardConfirmed": false,
+    "basis": "Returned usage at published token prices, including earlier scope-verification calls; no transport-uncertain paid calls. Estimate is not an independently reconciled billing invoice.",
+    "frozenEstimateUsd": 0.33855045,
+    "capUsd": 1
+  },
+  "audit": {
+    "requiredAttributionChecks": 2,
+    "completedAttributionChecks": 2,
+    "unresolvedAttributionChecks": 0,
+    "paidCallAttempts": 2,
+    "paidRetries": 0,
+    "sourceCaptionBytesUnchanged": true,
+    "finalInventoryFrozenAfterAudio": true,
+    "directListeningPerformed": false
+  }
+}

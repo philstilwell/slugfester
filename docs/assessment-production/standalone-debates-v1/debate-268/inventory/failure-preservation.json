@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-pre-freeze-inventory-failure-preservation",
+  "createdAt": "2026-09-26T15:43:38.142Z",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "status": "invalid-original-and-unauthorized-self-revision-quarantined",
+  "firstSubmissionRecoveredExactlyFromPreservedToolCall": true,
+  "firstSubmissionCallId": "call_PKjdZtdqsUw8UUuzu7sHGVkI",
+  "firstSubmissionOrdinal": 168,
+  "session": {
+    "path": "/Users/philstilwell/.codex/sessions/2026/09/26/rollout-2026-09-26T11-33-22-01a0de59-7f8a-7550-8433-253a6e4e0665.jsonl",
+    "sha256": "cff264f44aa86a2f2745ab1cfb7c878f7d77f544bcfcd6ccf3c996577ba1bb19",
+    "bytes": 1306335,
+    "kind": "prefix-snapshot-containing-first-add-patch-and-later-self-revision"
+  },
+  "originalRecoveredBytes": 61813,
+  "independentEarlierReadObservedOriginalByteLength": 61813,
+  "byteLengthMatchesEarlierRead": true,
+  "outputs": [
+    {
+      "file": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/rejected-original-draft.json",
+        "sha256": "96fe656c8044dae9bdf1b95775425cccb2ca0633ac9024933b5dbd00fe8ae32a",
+        "bytes": 61813
+      },
+      "actualMoves": 26,
+      "totals": {
+        "pro": 14,
+        "con": 12
+      },
+      "reported": {
+        "pro": 13,
+        "con": 12,
+        "absoluteDifference": 1
+      }
+    },
+    {
+      "file": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/quarantined-self-revision.json",
+        "sha256": "6665b96c5889ae8ec6a2d49fa153481a4b032de47bbad6a6fee3e2d169f56304",
+        "bytes": 63218
+      },
+      "actualMoves": 27,
+      "totals": {
+        "pro": 15,
+        "con": 12
+      },
+      "reported": {
+        "pro": 14,
+        "con": 12,
+        "absoluteDifference": 2
+      }
+    }
+  ],
+  "validatorFailure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/rejected-original-validation.log",
+    "sha256": "7bce4c91e1dd5e8e5d4004f24b40f3756050be6049a83bc1f5ff8038c71c41d1",
+    "bytes": 838
+  },
+  "problems": [
+    "Original summary miscounts its own move array.",
+    "Original Red Sea move contains a substantive opponent interjection.",
+    "Original Dawkins classification-rule move incorporates Sacks argument and quotation as Dawkins evidence.",
+    "Worker changed the first written draft before controller authorization and without preserving original bytes; that self-revision is not accepted.",
+    "Revised count summary remains wrong."
+  ],
+  "inventoryFrozen": false,
+  "primaryJudgmentsStarted": false,
+  "scorePasses": 0,
+  "recoveryDisposition": "Use a fresh isolated score-blind, explicitly field-bounded correction of the original draft; retain both versions, this incident, and validator failure. No first-submission overwrite is accepted as valid evidence."
+}

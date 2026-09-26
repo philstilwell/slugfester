@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const root=`docs/assessment-production/standalone-debates-v1/debate-${n}`,planPath=root+'/source/acquisition-plan.json',p=JSON.parse(fs.readFileSync(planPath)),cache=`.assessment-cache/captions/${p.videoId}`;
+const put=(f,o)=>{fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,JSON.stringify(o,null,2)+'\n',{flag:'wx'});};
+const media=`${cache}/source-recovery.m4a`,infoPath=`${cache}/source-recovery.info.json`,info=JSON.parse(fs.readFileSync(infoPath));
+assert.equal(info.id,p.videoId);assert.equal(info.title,p.title);assert.equal(info.duration,p.durationSeconds);assert.equal(info.language,'en-US');assert(/original/i.test(info.format_note));
+const probe=JSON.parse(execFileSync('/opt/homebrew/bin/ffprobe',['-v','error','-show_entries','format=duration:stream=codec_name,codec_type','-of','json',media],{encoding:'utf8'}));assert(Math.abs(Number(probe.format.duration)-p.durationSeconds)<1);assert(probe.streams.every(s=>s.codec_type==='audio'));
+put(root+'/source/audio-acquisition.json',{videoId:p.videoId,canonicalUrl:p.canonicalUrl,retrievedAt:new Date().toISOString(),method:'Existing yt-dlp, public original English audio selected from available formats; no installation or authentication bypass',formatId:info.format_id,formatNote:info.format_note,language:info.language,media:fileRecord(media),downloadMetadata:fileRecord(infoPath),probe,initialPartialDownload:{...fileRecord(p.sourceMedia),failure:'Public default Android stream timed out after 120 seconds; exact partial bytes preserved, never used as source.'},costUsd:0});
+const clips=[];fs.mkdirSync(p.sourceOutputRoot,{recursive:true});
+for(let i=0;i<p.sourceCalls;i++){const start=i*p.chunkSeconds,d=Math.min(p.chunkSeconds,p.durationSeconds-start),out=`${p.sourceOutputRoot}/chunk-${String(i).padStart(3,'0')}.wav`;execFileSync('/opt/homebrew/bin/ffmpeg',['-nostdin','-n','-hide_banner','-loglevel','error','-ss',String(start),'-i',media,'-t',String(d),'-vn','-ac','1','-ar','16000',out]);clips.push({index:i,startSeconds:start,durationSeconds:d,input:fileRecord(out)});}
+put(root+'/source/transcription-inputs.json',{videoId:p.videoId,plan:fileRecord(planPath),sourceAcquisition:fileRecord(root+'/source/audio-acquisition.json'),clips});
+const publisher=p.captionDisposition.publisherTranscript,html=await(await fetch(publisher,{signal:AbortSignal.timeout(30000)})).text();assert(html.includes(p.videoId));
+const start=html.indexOf('<p class="wp-block-paragraph"><strong>REThink - Debate'),end=html.indexOf('</div></div></div>',start);assert(start>=0&&end>start);
+const paragraphs=[...html.slice(start,end).matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/g)].map(m=>m[1].replace(/<[^>]+>/g,'').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#0?39;|&apos;/g,"'").replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).trim());
+fs.writeFileSync(cache+'/publisher-source.html',html,{flag:'wx'});fs.writeFileSync(cache+'/publisher-transcript.txt',paragraphs.join('\n\n')+'\n',{flag:'wx'});
+put(root+'/source/publisher-transcript-provenance.json',{url:publisher,retrievedAt:new Date().toISOString(),canonicalVideoIdVerified:true,html:fileRecord(cache+'/publisher-source.html'),text:fileRecord(cache+'/publisher-transcript.txt'),paragraphs:paragraphs.length,timestamped:false,limitation:'The page ends during Sacks final Q&A reply; complete audio is the canonical time source. All Q&A is excluded from assessment.'});
+console.log(JSON.stringify({videoId:p.videoId,clips:clips.length,audioDuration:Number(probe.format.duration),publisherParagraphs:paragraphs.length,paidCalls:0}));

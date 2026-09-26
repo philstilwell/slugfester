@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-authorized-single-input-recovery",
+  "createdAt": "2026-09-26T15:19:38.061Z",
+  "debateNumber": "268",
+  "videoId": "8Ad3rVRdgbI",
+  "userApproval": "Yes.",
+  "approvalInterpretation": "Exactly one additional paid attempt for failed chunk 005 (25:00–30:00), up to $0.03, with separate output paths and all prior evidence retained. Then continue only unattempted chunks 006–012. Full conservative workflow estimate $0.9192 was reported before execution.",
+  "priorPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/fixed-price-continuation-plan.json",
+    "sha256": "90dad6d2492fe6ad9e4ba6715169c065959a2ec09818af51fa07ce49b988139c",
+    "bytes": 2668
+  },
+  "preservedPauseAudit": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/paused-acquisition-audit.json",
+    "sha256": "067475c51488765bb3d9d782c161b2287036c5589ad647fc2ffc7f895753a399",
+    "bytes": 8398
+  },
+  "inputs": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/transcription-inputs.json",
+    "sha256": "df6c392f8557cb9ae59b30a23dd2bd3b9d1b8192101a7e4f1259982617ce6401",
+    "bytes": 4336
+  },
+  "controller": {
+    "path": "tmp/recover-source-once.mjs",
+    "sha256": "72c21c0fc5814397492e819263bf22be69977dbdbba57b00f4c81cf29a3f5e05",
+    "bytes": 6609
+  },
+  "wrapper": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/controller-archive/whisper-current-once.py.txt",
+    "bytes": 659,
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721"
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "model": "whisper-1",
+  "automaticRetries": 0,
+  "attemptsPerExecution": 1,
+  "exceptionalInputIndex": 5,
+  "allowedInputIndices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "sourceOutputRoot": "output/transcribe/8Ad3rVRdgbI-source",
+  "recoveryOutputRoot": "output/transcribe/8Ad3rVRdgbI-source/recovery-1",
+  "priorAttemptRecords": [
+    {
+      "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-000.result.json",
+      "bytes": 662,
+      "sha256": "e7038e5c21a29731109fa297e21ce5670fc7e7dd92b9dab09418627005d510d5"
+    },
+    {
+      "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-001.result.json",
+      "bytes": 627,
+      "sha256": "e777245a2ac78b73a6ac5d38e81049d1d903850740fd93395721b3f5d7a2aae3"
+    },
+    {
+      "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-002.result.json",
+      "bytes": 627,
+      "sha256": "b6ca4a4c40615b7744cf3669f77e488a6c62199c5448f7f69ab6aa52fa8ce9f4"
+    },
+    {
+      "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-003.result.json",
+      "bytes": 627,
+      "sha256": "6852252da6fcf484c937e1f345afb3a8ce416032c1a85db20a8913b9440f395c"
+    },
+    {
+      "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-004.result.json",
+      "bytes": 627,
+      "sha256": "165363c50723df014efa77c63255b47e25e915408ba42d959604c56202f96c7b"
+    },
+    {
+      "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-005.result.json",
+      "bytes": 442,
+      "sha256": "38424250c55f145b1b473e247907a5a3f9f0af577844edcf9ba2cc6620aaf73b"
+    }
+  ],
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/models/whisper-1",
+    "verifiedAt": "2026-09-26T15:07:26.486Z",
+    "usdPerMinute": 0.006,
+    "knownSuccessfulCallCostUsd": 0.2133,
+    "remainingSourceUpperEstimateUsd": 0.3459000000000001,
+    "reserveVerificationCalls": 3,
+    "reservePerVerificationCallUsd": 0.15,
+    "verificationReserveUsd": 0.45,
+    "fullDebateWorkflowConservativeUpperEstimateUsd": 0.9192,
+    "standingCapUsd": 1,
+    "estimateReportedBeforeContinuation": true,
+    "billingConfirmed": false,
+    "maximumPossiblePaidCostBeforeRecoveryUsd": 0.2433,
+    "exceptionalAttemptUpperEstimateUsd": 0.03
+  },
+  "scopeUnchanged": true,
+  "sourceQualityGateStillRequired": true
+}

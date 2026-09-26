@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-independent-rhetorical-review-execution",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "isolation": {
+    "existingTagsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true,
+    "scoresUnavailable": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/catalog-snapshot.json",
+    "sha256": "f1156bfc6faa312a15fdbed3895cf6baaf86499213f2d923a4d824baa5d3bd95",
+    "bytes": 5059
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "ff379d7882a59dc7a8ef955ae01b70b7e598359d6bcde1106acc22ee6b81ed9d",
+    "bytes": 95124
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "ff379d7882a59dc7a8ef955ae01b70b7e598359d6bcde1106acc22ee6b81ed9d",
+        "bytes": 95124
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/pass-a/output.json",
+        "sha256": "5b9f3939ff8fa920f97a071d7b5c24d1fa5479b61704ca6a1d4c56ef547d78ad",
+        "bytes": 42656
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/pass-a/execution.json",
+        "sha256": "b5a3ec0cfae2a6a7c12f7532a2dea2f9f8a92053b37d5095fb6c81aaccb6c42b",
+        "bytes": 2425
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "ff379d7882a59dc7a8ef955ae01b70b7e598359d6bcde1106acc22ee6b81ed9d",
+        "bytes": 95124
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/pass-b/output.json",
+        "sha256": "ea3d43970a82ccdd6631c05756123dd71e7029082b4f4616b5ef08b1095bebc7",
+        "bytes": 42679
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/pass-b/execution.json",
+        "sha256": "128d34b8d864a3e5856ed01114f7038fc00934ea3391b0e0fab7b45eec09d1c1",
+        "bytes": 2425
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/adjudication/input.json",
+        "sha256": "272cce89078193850a9cd0c3c396e2c2fca45b55898eeefa9fffcded29f18c6f",
+        "bytes": 128388
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/adjudication/output.json",
+        "sha256": "29cfcb8adf5d2eb7cbebf9d5e0816a53d562ee93b4d2eef8738a8cd1b7fa491c",
+        "bytes": 22362
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/adjudication/execution.json",
+        "sha256": "b3da5640879955de9ff142b84e258df66a3af0b43837a76b43253fab2fa110e9",
+        "bytes": 2481
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "controllerDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/controller-definition-check.json",
+    "sha256": "4b5766d020d83bb35171c6288a368f080293bb17c4c4c452b5bdb35ad4bcd1c0",
+    "bytes": 9058
+  },
+  "audit": {
+    "blindReviews": 2,
+    "anonymousAdjudicators": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "controllerOverrides": 7,
+    "rejectedReasonClarifications": 0
+  }
+}

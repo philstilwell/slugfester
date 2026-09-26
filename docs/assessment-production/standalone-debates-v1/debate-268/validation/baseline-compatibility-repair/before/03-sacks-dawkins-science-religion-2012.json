@@ -1,0 +1,689 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/openai-diarized-chunks.json",
+      "sha256": "745721202e5d04ed1bc3706f514dba1635fd728f159bf027455e06848f9e704b",
+      "bytes": 853638
+    },
+    "events": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/events.json",
+      "sha256": "9d9de124643c968c88f6d20ca03e0ab72442d85ae9677c985727aaef6811608f",
+      "bytes": 171523
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/transcript.txt",
+      "sha256": "09e83e3df87b8231f9e058633a339e107f723d9034435618775932a816b899e6",
+      "bytes": 86262
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/manifest.json",
+      "sha256": "0fa40cf9c5df8c35e48e81c714fc0c1da0dc047feba9d2922965232ca836e211",
+      "bytes": 2650
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/authorization.json",
+      "sha256": "06c937029200208dc6f4ddc439a3ab9ad0bb98b21c7876f6e4162f6f8197794f",
+      "bytes": 10768
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/source-lock.json",
+      "sha256": "19ce206b527a50f1b8cdbcd26a52d4648287c373400c4a52dcd9d0a4c0084504",
+      "bytes": 11914
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/scoped-indexed-transcript.txt",
+      "sha256": "d54a16894ae27f46020c3eeb020ab5b34e6ab6f4ebbb00055823aa7b1a89ad37",
+      "bytes": 32278
+    },
+    "scopedEvents": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/scoped-events.json",
+      "sha256": "eecae5633a4d18c999bd9dede6984609b68c342fb95be091e7c53e4e929585ff",
+      "bytes": 129334
+    },
+    "editorScope": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/editor-scope.json",
+      "sha256": "fe62666f3e64916eda36fcf96c142b83134d36650363e81b57904284be537555",
+      "bytes": 6731
+    },
+    "audioSourceVerification": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/audio-source-verification.json",
+      "sha256": "579ac18637cdd7bf6e0a13cb46c6967a472e60ca9a92c3e35661c81c463bdf94",
+      "bytes": 3430
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/authorization.json",
+      "sha256": "06c937029200208dc6f4ddc439a3ab9ad0bb98b21c7876f6e4162f6f8197794f",
+      "bytes": 10768
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/manifest.json",
+      "sha256": "65fbafda7a3ce8e6d8fc03491abae966fc40274728bbfa321060b2ea3132d0a5",
+      "bytes": 7420
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/source-lock.json",
+      "sha256": "19ce206b527a50f1b8cdbcd26a52d4648287c373400c4a52dcd9d0a4c0084504",
+      "bytes": 11914
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/inventory.json",
+      "sha256": "00cd5a1a765fc42c00f7f568cfe48c733c347c872413e82c8839e2da5ec98acf",
+      "bytes": 89255
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/judgments/judgment-packet.json",
+      "sha256": "7c295c347ea9edb492842ae59e5dc687cb3d51bb34bf336be33b488eb15d78b1",
+      "bytes": 4901
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/judgments/execution.json",
+      "sha256": "6577c89176b6ba53d276414f2b11fc4176991bd6daaedd6b06bceff44eb9e990",
+      "bytes": 2726
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/judgments/pass-a/output.json",
+      "sha256": "af22fe8ffb01f10b2b7b3ad75d70ea8563ab3e19d18a46c943a786d432c57428",
+      "bytes": 47378
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/judgments/pass-b/output.json",
+      "sha256": "5bd4604e7514a1b4f283449db0f1357d2e1fb22cd6c895f2ea13a2aac1109ee7",
+      "bytes": 41025
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/disagreements/disagreements.json",
+      "sha256": "9fae774d5f040fa6291737b881b976a63886dce89541173e727d65dcee370198",
+      "bytes": 27376
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/audio/audio-verification.json",
+      "sha256": "704f826c71b8d3eedfc23bed59c896edc848a0328fd61a805c08717df5ac8996",
+      "bytes": 3023
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/adjudication/packet.json",
+      "sha256": "aec2cce9d2d6a37856d723f2556fbfdfdd16953bfde83febb536542f9ade449d",
+      "bytes": 92052
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/adjudication/output.json",
+      "sha256": "5a207db9e28ec952f366da41e90b8fe7a78cc502f64cd2e4325d2c80144a554d",
+      "bytes": 10092
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/final-ledger/final-ledger.json",
+      "sha256": "fffccc20d9e365e78556234f8f622b96939ecbf37afef2f1492854ebd055a565",
+      "bytes": 212484
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/score-pass/input.json",
+      "sha256": "0c891620e7b7eb8ea402ccae2f222d08d195ce84066f159505e340bf13addc76",
+      "bytes": 954
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/score-pass/output.json",
+      "sha256": "db53e78e44560d165664f0ee3f8d72abf71e9d01d0109a9013fef66850d99402",
+      "bytes": 14838
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/score-pass/attestation.json",
+      "sha256": "4df7075dc8c24d7897d7802d659bb77fba2016edc5f003c1d49de62d1d470f48",
+      "bytes": 822
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/output.json",
+      "sha256": "b241b7632a6fa4a14cb3e6eb70a1097f32a3e9e7dd529848e76f445aac99f452",
+      "bytes": 63497
+    },
+    "events": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/events.json",
+      "sha256": "9d9de124643c968c88f6d20ca03e0ab72442d85ae9677c985727aaef6811608f",
+      "bytes": 171523
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/transcript.txt",
+      "sha256": "09e83e3df87b8231f9e058633a339e107f723d9034435618775932a816b899e6",
+      "bytes": 86262
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/content-parity-audit.json",
+      "sha256": "eaf2500f657db9e2bbf3d9aa75331535e8b84e791e16d74249d1c467ff210b10",
+      "bytes": 5910
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/correction-rhetorical-tags.json",
+      "sha256": "229bfe1c09ddb8c462a1c0012c523b84585285b02c2837d7960089bac24172ca",
+      "bytes": 2349
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "9d4bd893e99345c24652cff6fab7efe61f9c956fce19eee0a02aafe127899fcf",
+      "bytes": 82257
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "d8d77e459ae9ab6fffd1934d974e61c9d88ceeec2c2300d70218bb2b21341ad4",
+      "bytes": 4310
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/rendering/post-rhetorical-tag-audit-1.json",
+      "sha256": "e23223c2f256f5399d507db3da3f110b3f139b1a87e05b2c438aa921c50a9d7f",
+      "bytes": 1227
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "268",
+    "debateId": "sacks-dawkins-science-religion-2012",
+    "sections": [
+      {
+        "sectionId": "science-and-the-partnership-claim",
+        "title": "Science and the partnership claim",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "sacks-science-compatible-roles",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 76
+                },
+                "score": 80
+              },
+              {
+                "moveId": "sacks-dna-reconsideration-analogy",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 62,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 67,
+                  "relevanceBurden": 58,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 73
+                },
+                "score": 65
+              }
+            ]
+          },
+          "con": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "dawkins-purpose-questions-limited",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 72
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "cosmic-purpose-and-explanatory-warrant",
+        "title": "Cosmic purpose and explanatory warrant",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "sacks-meaning-outside-system",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 80,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 67
+                },
+                "score": 72
+              },
+              {
+                "moveId": "sacks-creation-from-love",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 48,
+                  "responsiveness": 70,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 82
+                },
+                "score": 69
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "dawkins-football-does-not-establish-cosmic-purpose",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 88
+                },
+                "score": 90
+              },
+              {
+                "moveId": "dawkins-creator-is-presupposed",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 92,
+                  "evidenceWarrant": 86,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 85
+                },
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "literal-symbolic-and-scientific-interpretation",
+        "title": "Literal, symbolic, and scientific interpretation",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "sacks-red-sea-science-and-story-purpose",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 70,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 74
+                },
+                "score": 73
+              },
+              {
+                "moveId": "sacks-adam-eve-parable-no-first-human",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 86,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 85
+                },
+                "score": 84
+              },
+              {
+                "moveId": "sacks-scientific-incompatibility-rule",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 95,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 85
+                },
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "dawkins-literalism-and-test-cases",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 82,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 61
+                },
+                "score": 77
+              },
+              {
+                "moveId": "dawkins-asks-for-classification-rule",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 94,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 89
+                },
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "abraham-isaac-and-interpretive-purpose",
+        "title": "Abraham, Isaac, and interpretive purpose",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "sacks-child-sacrifice-polemic",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 76
+                },
+                "score": 81
+              },
+              {
+                "moveId": "sacks-dramatic-reversal-made-lesson-effective",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 90,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 71
+                },
+                "score": 79
+              },
+              {
+                "moveId": "sacks-agrees-ordeal-is-abuse-under-other-reading",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 49,
+                  "responsiveness": 67,
+                  "relevanceBurden": 61,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 62
+                },
+                "score": 61
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "dawkins-ordeal-was-unnecessary",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 86
+                },
+                "score": 88
+              },
+              {
+                "moveId": "dawkins-story-remains-child-abuse",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 90,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 82
+                },
+                "score": 84
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "community-and-a-post-religious-future",
+        "title": "Community and a post-religious future",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "sacks-putnam-community-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 83,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 84
+                },
+                "score": 82
+              },
+              {
+                "moveId": "sacks-charity-covers-religious-and-secular-causes",
+                "importance": 1,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 69,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 80
+                },
+                "score": 73
+              },
+              {
+                "moveId": "sacks-religion-has-not-disappeared",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 87,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 80
+                },
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "dawkins-asks-to-inspect-charity-measure",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 91,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 91
+                },
+                "score": 86
+              },
+              {
+                "moveId": "dawkins-community-mechanism-is-plausible",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 89
+                },
+                "score": 84
+              },
+              {
+                "moveId": "dawkins-secular-community-substitute",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 79,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 80
+                },
+                "score": 75
+              },
+              {
+                "moveId": "dawkins-history-trends-secular",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 81,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 68,
+                  "calibrationCharity": 66
+                },
+                "score": 71
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "common-ground-supernaturalism-and-dignity",
+        "title": "Common ground, supernaturalism, and dignity",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "sacks-shared-integrity-and-dignity-of-science",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 92
+                },
+                "score": 84
+              },
+              {
+                "moveId": "sacks-transcendence-supports-dignity-and-hope",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 54,
+                  "responsiveness": 76,
+                  "relevanceBurden": 69,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 65
+                },
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "dawkins-moral-common-ground-with-supernatural-divide",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 91,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 91
+                },
+                "score": 86
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 76.61,
+        "burdenCompletionAdjustment": 0,
+        "score": 77
+      },
+      "con": {
+        "weightedSectionMean": 85.28,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      }
+    },
+    "winner": "con",
+    "winningMargin": 8,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.75,
+      "maximumDistance": 2,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 27,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

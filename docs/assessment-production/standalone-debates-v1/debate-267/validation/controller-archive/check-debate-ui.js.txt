@@ -1,0 +1,24 @@
+async (page) => { const expected={"number":"267","title":"Christopher Hitchens vs Douglas Wilson — Truth, Goodness, and Beauty (2008)","motion":"Are truth, goodness, and beauty better explained by Christian theism than by atheistic naturalism?","cards":24,"tags":3,"firstRole":"Constructive","url":"https://www.youtube.com/watch?v=g6UU9C-WmvM","disclosure":"This assessment covers only the opening presentations and direct exchange, approximately 11:46–1:13:22, with the final complete reply included. Audience Q&A, the later closing statements, and the introduction are not assessed. A verified replay at approximately 59:26–1:09:10 is counted only once; timestamps refer to the original upload. Scores describe this limited excerpt, not the complete event.","speakers":["Douglas Wilson","Christopher Hitchens"]}; return (async(page)=>{
+ const width=page.viewportSize().width,label=width===390?'mobile':'desktop',check=(v,m)=>{if(!v)throw Error(m);};
+ const cards=page.locator('article.argument');check(await cards.count()===expected.cards,'Locked card count');
+ check((await cards.locator(':scope > p').allTextContents()).every(t=>t.trim().length>30),'Empty argument');
+ check(await cards.locator('a.tag').count()===expected.tags,'Card tags');
+ check((await page.getByRole('heading',{level:1}).innerText()).includes(expected.title.replace(/ \(\d{4}\)$/, '')),'Title');
+ check(await page.getByRole('heading',{level:1}).locator('[aria-label="Debate year 2008"]').count()===1,'Event year');
+ const scope=page.getByRole('region',{name:'Source and assessment scope'});check((await scope.innerText()).includes(expected.disclosure),'Exact scope');
+ check(!(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)),'Horizontal overflow');
+ await scope.scrollIntoViewIfNeeded();await page.screenshot({path:`output/playwright/debate-${expected.number}/${label}-scope.png`});
+ const summary=page.locator('details.ai-extension-accordion > summary'),details=page.locator('details.ai-extension-accordion');
+ check(!await details.evaluate(el=>el.open),'Default collapsed');await summary.scrollIntoViewIfNeeded();await page.screenshot({path:`output/playwright/debate-${expected.number}/${label}-ai-closed.png`});
+ await summary.click();check(await details.evaluate(el=>el.open),'Pointer open');await summary.press('Enter');check(!await details.evaluate(el=>el.open),'Enter close');await summary.press('Space');check(await details.evaluate(el=>el.open),'Space open');
+ await page.screenshot({path:`output/playwright/debate-${expected.number}/${label}-ai-open.png`});await summary.click();
+ const button=page.getByRole('button',{name:'Critique for '+expected.firstRole,exact:true}).first();await button.scrollIntoViewIfNeeded();await button.click();
+ const tipId=await button.getAttribute('aria-describedby'),tip=page.locator(`[id="${tipId}"]`);
+ await page.waitForFunction(id=>{const s=getComputedStyle(document.getElementById(id));return s.visibility==='visible'&&Number(s.opacity)===1;},tipId);
+ const visible=()=>tip.evaluate(el=>{const s=getComputedStyle(el);return s.visibility!=='hidden'&&Number(s.opacity)>0&&s.display!=='none';});
+ check(await visible(),'Critique pointer');await page.mouse.move(0,0);await button.focus();await button.press('Enter');check(await visible(),'Critique Enter');await button.press('Space');check(await visible(),'Critique Space');check(await button.evaluate(el=>el===document.activeElement),'Focus retained');
+ await page.screenshot({path:`output/playwright/debate-${expected.number}/${label}-critique.png`});await summary.click({timeout:5000});check(await details.evaluate(el=>el.open),'Distant control intercepted');await summary.click();
+ const portraits=await page.locator('main img[src*="/assets/caricatures/"]').evaluateAll(es=>es.map(e=>({src:e.getAttribute('src'),loaded:e.complete&&e.naturalWidth>0})));check(portraits.length>=2&&portraits.every(p=>p.loaded),'Portraits loaded');
+ check(!(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)),'Final overflow');
+ console.log(JSON.stringify({status:'passed-debate-interactions',viewport:page.viewportSize(),cards:expected.cards,cardTags:expected.tags,scopeVisible:true,aiPointerEnterSpace:true,critiquePointerEnterSpaceFocus:true,distantControlUnintercepted:true,portraits,horizontalOverflow:false}));
+})(page); }

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0-frozen-dispute-only-execution-plan",
+  "status": "frozen-before-model-execution",
+  "debateNumber": "268",
+  "debateId": "sacks-dawkins-science-religion-2012",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/adjudication/packet.json",
+      "sha256": "aec2cce9d2d6a37856d723f2556fbfdfdd16953bfde83febb536542f9ade449d",
+      "bytes": 92052
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/inventory/inventory.json",
+      "sha256": "00cd5a1a765fc42c00f7f568cfe48c733c347c872413e82c8839e2da5ec98acf",
+      "bytes": 89255
+    },
+    {
+      "path": ".assessment-cache/captions/8Ad3rVRdgbI/scoped-indexed-transcript.txt",
+      "sha256": "d54a16894ae27f46020c3eeb020ab5b34e6ab6f4ebbb00055823aa7b1a89ad37",
+      "bytes": 32278
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-268/audio/score-blind-supplement.json",
+      "sha256": "18353afa3e462a8e8f05290656be0869b6fbc01785d0eed440f35a039a514a0f",
+      "bytes": 2132
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 903,
+          "end": 946
+        }
+      ]
+    }
+  ],
+  "disputeCount": 26,
+  "outputPath": "docs/assessment-production/standalone-debates-v1/debate-268/adjudication/output.json",
+  "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-268/adjudication/reading-audit.json",
+  "attempts": 1,
+  "retries": 0,
+  "forkTurns": "none",
+  "directIncrementalCostUsd": 0,
+  "requirements": [
+    "Fresh anonymous adjudicator. Read every declared input literally and completely (validator only allowed lines). Transcript chunks at most380lines; inventory/packet bounded untruncated chunks. Send reading checkpoint and wait for authenticated release before decisions.",
+    "Only anonymous dispute options are visible. Do not access either primary output or pass identity, other debates, calculated totals, winner labels, publication, biographies, external research, credentials, paidAPI or subagents. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY in shell commands. Do not call any calculator.",
+    "Resolve exactly every packet dispute once in packet order. Choose only option-a or option-b for the disputed field; never invent a new rating or change source, inventory, weights or links. Supply independently reasoned source-specific rationale at least40characters for each choice. No evaluation outside the listed disputes.",
+    "Respect the frozen audio supplement and full live replies. Never penalize caption corruption; no direct listening claimed. Only the explicitly approved self-contained main-conversation selection is evidence. Substantive moderator interventions and directly dependent replies, introductions and all audience Q&A are excluded and receive no credit, penalty, concession or missing-reply inference. Preserve the exact frozen explanatory motion and do not impose an unadopted positive burden on a critical challenge. Never import arguments from excluded provenance paths.",
+    "Use validator schema1.0-standalone-dispute-adjudication; protocol assessment-production-standalone-debate-v1; complete-and-schema-valid; reviewerRole isolated-dispute-only-adjudicator; assessmentModel5.6 Sol; reasoningEffort low; exact debateNumber/debateId. Required isolation booleans from validator. resolutions entries contain disputeId, selectedOption, rationale.",
+    "Single first submission, no automatic retry. Self-check literal draft before first output write. Use apply_patch and only declared output/reading-audit paths; do not overwrite submitted output. No arbitrary deadline."
+  ]
+}

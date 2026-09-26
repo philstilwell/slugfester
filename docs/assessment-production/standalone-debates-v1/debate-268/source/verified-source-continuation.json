@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0-verified-boundary-source-continuation",
+  "createdAt": "2026-09-26T15:23:07.783Z",
+  "debateNumber": "268",
+  "videoId": "8Ad3rVRdgbI",
+  "priorPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/authorized-source-recovery-1.json",
+    "sha256": "72e6f4953ec5cf7f2f78d54e3408ebadfef29e05f46aff1f1e6afdc89e3b4620",
+    "bytes": 4025
+  },
+  "preservedRetryResult": {
+    "path": "output/transcribe/8Ad3rVRdgbI-source/recovery-1/chunk-005.result.json",
+    "sha256": "b5350940673e37630bb7a9bc02fb28894b377bd8da9f10b50f12f3947512f062",
+    "bytes": 753
+  },
+  "boundaryPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/boundary-verification-plan-1.json",
+    "sha256": "69042d5e76b15db2f4e1987073424c457e9328a393d0aae82bc2009f24decce9",
+    "bytes": 2923
+  },
+  "controller": {
+    "path": "tmp/continue-verified-source.mjs",
+    "sha256": "312764f7e2503dfd48b75a962a90a0ff667efe9874cd6c4cf2de699566a7fba5",
+    "bytes": 6042
+  },
+  "inputs": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/source/transcription-inputs.json",
+    "sha256": "df6c392f8557cb9ae59b30a23dd2bd3b9d1b8192101a7e4f1259982617ce6401",
+    "bytes": 4336
+  },
+  "wrapper": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-268/validation/controller-archive/whisper-current-once.py.txt",
+    "bytes": 659,
+    "sha256": "21ba4f28cca9a42263427899a8532f7c88280a8cb27f3c732b74c436146fd721"
+  },
+  "helper": {
+    "path": "scripts/transcribe-whisper-timestamps.py",
+    "sha256": "6a11375604722b7e9d8a849451c93f2443e4a0e0aac8e352853561ea2463f804",
+    "bytes": 1351
+  },
+  "sourceOutputRoot": "output/transcribe/8Ad3rVRdgbI-source",
+  "model": "whisper-1",
+  "allowedInputIndices": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "attemptsPerInput": 1,
+  "automaticRetries": 0,
+  "usdPerMinute": 0.006,
+  "fullWorkflowUpperEstimateUsd": 0.9192,
+  "checks": [
+    {
+      "input": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002.wav",
+        "sha256": "2008f7a80b2f4e881b7982b8d3822be63c18773839930fca1ad649933445d4e1",
+        "bytes": 960078
+      },
+      "rawSource": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/chunk-002.json",
+        "sha256": "4ced0fe3ed424964bcf1eb30d123cddf758fda0e27d25a3b7b3fed5e33afe8d6",
+        "bytes": 66541
+      },
+      "verifiedOutput": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002.json",
+        "sha256": "4ccf95c9c782d7c90ca2803ee17ef131c9b6183d09f56e490f8adf170a18b4f0",
+        "bytes": 4512
+      },
+      "result": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-002.result.json",
+        "sha256": "7ba46e365b4f8f38d3ce0588ce2da0e096d00c5c7b34a009d0b3467ec07233ea",
+        "bytes": 488
+      },
+      "startSeconds": 885,
+      "absoluteSegments": [
+        {
+          "startMs": 885000,
+          "endMs": 891000,
+          "text": " No, I would say I have a bigger worry with literalism, and that is a big problem."
+        },
+        {
+          "startMs": 891000,
+          "endMs": 895000,
+          "text": " We don't have it so much in this country, but in America it's a very serious problem."
+        },
+        {
+          "startMs": 895000,
+          "endMs": 904000,
+          "text": " And so serious theologians like the Chief Rabbi who don't take it literally are, as it were, less of a problem."
+        },
+        {
+          "startMs": 904000,
+          "endMs": 908000,
+          "text": " But as a matter of fact, I have been quite surprised at..."
+        },
+        {
+          "startMs": 909000,
+          "endMs": 911000,
+          "text": " People have always been tackling me for saying,"
+        },
+        {
+          "startMs": 911000,
+          "endMs": 915000,
+          "text": " Why do you go for the easy target? Why do you go for the low-hanging fruit?"
+        }
+      ]
+    },
+    {
+      "input": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005.wav",
+        "sha256": "d36940b39d5494b463ffd393f75bcdd392d2458bcb44c2a81dfe8fc7d566230c",
+        "bytes": 960078
+      },
+      "rawSource": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/recovery-1/chunk-005.json",
+        "sha256": "a34ba319774639472c391f4620ba7e09013cb347f462497dd0488be187e94561",
+        "bytes": 61726
+      },
+      "verifiedOutput": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005.json",
+        "sha256": "799a43d69d33c445ccc0e1e656ff43554c39bffe147f3aee933e592c9e5ee249",
+        "bytes": 4135
+      },
+      "result": {
+        "path": "output/transcribe/8Ad3rVRdgbI-source/boundary-verification-1/boundary-005.result.json",
+        "sha256": "d29037e3dc9a34a842a761965618f545b0c1a38be65c2b0d4f4f637e4814784a",
+        "bytes": 488
+      },
+      "startSeconds": 1785,
+      "absoluteSegments": [
+        {
+          "startMs": 1785000,
+          "endMs": 1789800,
+          "text": " point. You're conceding what the whole of society does concede, which it is"
+        },
+        {
+          "startMs": 1789800,
+          "endMs": 1795160,
+          "text": " correct to label a child with the religion of its parents when the child"
+        },
+        {
+          "startMs": 1795160,
+          "endMs": 1798040,
+          "text": " is too young to have done its thinking for itself."
+        },
+        {
+          "startMs": 1798040,
+          "endMs": 1804840,
+          "text": " Yeah, that's why we don't really emphasize creed. We don't have a"
+        },
+        {
+          "startMs": 1804840,
+          "endMs": 1811640,
+          "text": " confirmation as you do in Christianity. It's very interesting if you,"
+        },
+        {
+          "startMs": 1811640,
+          "endMs": 1814840,
+          "text": " in Judaism, we are a community of practice."
+        }
+      ]
+    }
+  ],
+  "review": {
+    "finding": "Both overruns are chunk-boundary transcription artifacts. The independent 30-second clips contain coherent complete wording within physical bounds and agree with the official publisher text. Original invalid segments remain quarantined, not clamped or relabeled valid.",
+    "boundary15MinuteDisposition": "Verified segment 895–904s supplies the entire Chief Rabbi / literal reading sentence without the invented repeated tail. It will replace the affected split sentence in a derivative normalization input, preserving all raw files.",
+    "boundary30MinuteDisposition": "Verified segments 1798.04–1814.84s continue the creed/confirmation/community reply beyond the original boundary. Match the next unattempted chunk before assembling a source-exact replacement.",
+    "authorizationEffect": "Continue once through only the already authorized, unattempted audio inputs. This is not a further full-chunk retry or a passed complete-source gate.",
+    "sourceGatePassed": false,
+    "assessmentMayStart": false
+  }
+}

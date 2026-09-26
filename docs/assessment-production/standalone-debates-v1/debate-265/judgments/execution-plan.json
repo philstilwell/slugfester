@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-frozen-primary-execution-plan",
+  "status": "frozen-before-primary-execution",
+  "createdAt": "2026-09-23T19:06:02.062Z",
+  "debateNumber": "265",
+  "debateId": "donahue-linford-fine-tuning-theism-2026",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "inventorySha256": "24a6e4b206ad12edd54e90d7241c088b24b3a8a0a30b9cd92e943decd53ce39f",
+    "isolation": "Protocol-restricted fresh built-in contexts and disjoint paths; not an operating-system filesystem sandbox."
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/judgment-packet.json",
+      "sha256": "d09f3b6cc6d7e0f5ff434f900abf116092b3106cb1fa1dfcd4ce1691273a6785",
+      "bytes": 4935
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/inventory/inventory.json",
+      "sha256": "24a6e4b206ad12edd54e90d7241c088b24b3a8a0a30b9cd92e943decd53ce39f",
+      "bytes": 127349
+    },
+    {
+      "path": ".assessment-cache/captions/Ui9C6N4HFvY/indexed-transcript.txt",
+      "sha256": "b8654b07c7198cbf2dbd971998753edd0cdc318a9b17470266eddda4d013f323",
+      "bytes": 186387
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-265/audio/score-blind-supplement.json",
+      "sha256": "87ad96b1257418b84f034e9917d82c0c5de92bcd7c769065d2e0e26bc8821ad9",
+      "bytes": 10870
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 620,
+          "end": 804
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-a/execution-instructions.json",
+        "sha256": "3570662fb2b8cd8b432e359f8683f8a0bc0ef87d7ee1e5a4f9f06c498279f8fd",
+        "bytes": 5474
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-a/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-a/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-b/execution-instructions.json",
+        "sha256": "ef199526a1ba5b81823e036508a7e56d44e2be970daa20de7c048f7f37809076",
+        "bytes": 5474
+      },
+      "outputPath": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-b/output.json",
+      "readingAuditPath": "docs/assessment-production/standalone-debates-v1/debate-265/judgments/pass-b/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}

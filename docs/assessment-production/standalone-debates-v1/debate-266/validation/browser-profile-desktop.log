@@ -1,0 +1,6 @@
+### Result
+{"status":"passed","biography":{"x":130,"y":322.625,"width":561.203125,"height":292.515625},"graph":{"x":748.796875,"y":340.828125,"width":561.203125,"height":256.109375},"viewport":{"width":1440,"height":1000}}
+### Ran Playwright code
+```js
+await (async(page)=>{const b=page.getByRole("region",{name:"About Blake Giunta",exact:true}),g=page.getByRole("figure",{name:"Bar height shows the number of published scorecards in each range.",exact:true});await b.scrollIntoViewIfNeeded();const bb=await b.boundingBox(),gb=await g.boundingBox();if(!(bb.x+bb.width<=gb.x+1))throw Error("Biography must be left of graph");await page.screenshot({path:"output/playwright/debate-266/desktop-profile.png"});return {status:"passed",biography:bb,graph:gb,viewport:page.viewportSize()}})(page);
+```

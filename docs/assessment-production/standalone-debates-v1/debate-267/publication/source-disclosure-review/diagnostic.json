@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0-publication-editorial-stop",
+  "status": "requires-authorization-for-one-exhausted-leaf-repair",
+  "debateNumber": "267",
+  "debateId": "hitchens-wilson-truth-goodness-beauty-2008",
+  "field": "candidate.sourceNote",
+  "previousRepair": {
+    "group": "overview",
+    "shardId": "037",
+    "attempts": 1,
+    "retries": 0
+  },
+  "finding": "The source note correctly discloses scope, complete automatic captions and targeted audio-derived verification, but omits the required explicit distinction between condensed argument summaries and verbatim caption quotations.",
+  "requiredBy": [
+    "Installed reassess-slugfester-debates output-contract.md: sourceNote distinguishes direct quotations from condensed summaries.",
+    "Frozen publication/input-bundle.json requirements: distinguish exact caption quotations from condensed descriptions."
+  ],
+  "cause": "The bounded overview packet carried scope and audio requirements but failed to restate this source-note distinction explicitly; controller retains responsibility for detecting it before acceptance.",
+  "proposedSingleFieldAmendment": "Append: Argument cards are condensed summaries; quotations preserve the caption wording exactly.",
+  "preservedPriorOutput": "docs/assessment-production/standalone-debates-v1/debate-267/publication/source-disclosure-review/preserved-prior-output.json",
+  "scores": {
+    "pro": {
+      "speaker": "Douglas Wilson",
+      "score": 75
+    },
+    "con": {
+      "speaker": "Christopher Hitchens",
+      "score": 80
+    }
+  },
+  "state": {
+    "sourceAndInventoryFrozen": true,
+    "twoPrimaryJudgmentsAuthenticated": true,
+    "disputesAdjudicated": 2,
+    "scorePasses": 1,
+    "scoreStabilityPassed": true,
+    "publicationMechanicallyValid": true,
+    "all24CardsDirectlyRead": true,
+    "contentParityMachineGatePassed": true,
+    "aiProseDirectlyRead": true,
+    "aiCorpusPunctuationFlags": 0,
+    "aiSixWordOverlapsInBothComparisonWindows": 0,
+    "rhetoricalReviewStarted": false,
+    "productionStaged": false,
+    "renderingStarted": false,
+    "committed": false,
+    "pushed": false,
+    "pullRequestCreated": false
+  },
+  "continuation": "After explicit authorization, append only the stated sentence to the preserved sourceNote, authenticate before/after evidence and revalidate. Do not rebuild evidence, rerun judgments or recalculate scores. Then finish direct parity/style audit, two fresh blind rhetorical reviews and anonymous full-union adjudication, production adapter/staging, browser checks, full tests, protected-branch PR/green merge and deployment verification.",
+  "cost": {
+    "knownSuccessfulCallCostEstimateUsd": 0.19432,
+    "maximumPossiblePaidCostEstimateUsd": 0.19432,
+    "uncertainPaidAttempts": 0,
+    "paidRetries": 0,
+    "additionalRepairDirectCostEstimateUsd": 0,
+    "billingInvoiceReconciled": false
+  },
+  "cleanup": {
+    "ownedBrowserTabs": 0,
+    "ownedServers": 0,
+    "allCurrentFilesRetained": true
+  }
+}

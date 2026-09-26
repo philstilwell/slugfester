@@ -1,0 +1,28 @@
+
+> slugfester@0.1.0 site:preflight
+> node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep "reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged"
+
+Validated explicit primary categories for 267 debates across 15 categories.
+
+> slugfester@0.1.0 seo
+> node scripts/generate-seo-pages.mjs --check
+
+Validated 759 SEO files.
+Validated source-grounded introductions and three related suggestions for 267 debates, plus all seven research introductions and figures.
+Validated source-backed biographies for all 181 published interlocutors.
+Validated substantive initial text for 267 debates and 181 profiles, plus catalogue, topics, rankings and method pages.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: sacks-dawkins-science-religion-2012: disclosure has no published debate
+    at file:///Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/scripts/validate-reader-scope-disclosures.mjs:11:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

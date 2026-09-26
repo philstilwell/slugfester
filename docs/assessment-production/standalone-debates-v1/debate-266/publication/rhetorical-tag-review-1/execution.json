@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-independent-rhetorical-review-execution",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "266",
+  "debateId": "dillahunty-giunta-faith-rational-justification-2018",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "isolation": {
+    "existingTagsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true,
+    "scoresUnavailable": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/catalog-snapshot.json",
+    "sha256": "f1156bfc6faa312a15fdbed3895cf6baaf86499213f2d923a4d824baa5d3bd95",
+    "bytes": 5059
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "47c88e2864e267fd1f514c3b158611a0a040e461fd2fc381eb1940fdfdbdf4c2",
+    "bytes": 152770
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "47c88e2864e267fd1f514c3b158611a0a040e461fd2fc381eb1940fdfdbdf4c2",
+        "bytes": 152770
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/pass-a/output.json",
+        "sha256": "1f452bfd86cae05c93a6847fd5fa494aef5ded811f9a347a34f4d9d8e37c3874",
+        "bytes": 87694
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/pass-a/execution.json",
+        "sha256": "fa58dd17a17ecdef62bbe9630a25246c16f39faf31f6c1aea7ab53f736c99831",
+        "bytes": 2382
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "47c88e2864e267fd1f514c3b158611a0a040e461fd2fc381eb1940fdfdbdf4c2",
+        "bytes": 152770
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/pass-b/output.json",
+        "sha256": "6fc9c675364e01caa50ba77d177d6e950d97d674e3c545389804f1ddefe3df0a",
+        "bytes": 65522
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/pass-b/execution.json",
+        "sha256": "5d2c815a21d1e841f98c7766cc4e5c637ea0fb6119f3742f09e8f2c63cf4ba2e",
+        "bytes": 2382
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/adjudication/input.json",
+        "sha256": "350f469354b8119980f595dc968590185e23abae4b9ac5076d125210e7fdcf2e",
+        "bytes": 193074
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/adjudication/output.json",
+        "sha256": "a96a16c240a9358d64ac1455e63f916798e1db6e300c2aadc590d7f9ac8c02e2",
+        "bytes": 31867
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/adjudication/execution.json",
+        "sha256": "3a9ad20341a1854ae1abd1c382026bc55382747627d8c580dd3113ebb60b0cb6",
+        "bytes": 2429
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "controllerDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-266/publication/rhetorical-tag-review-1/controller-definition-check.json",
+    "sha256": "a97823c03fe35320f787bdad522ec2127f898f2361dd208a9dca2db6fe518c69",
+    "bytes": 14095
+  },
+  "audit": {
+    "blindReviews": 2,
+    "anonymousAdjudicators": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "controllerOverrides": 5,
+    "rejectedReasonClarifications": 5
+  }
+}

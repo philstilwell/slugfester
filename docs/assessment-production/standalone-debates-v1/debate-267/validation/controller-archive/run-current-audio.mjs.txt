@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args0=process.argv.slice(2),n=args0[args0.indexOf('--debate')+1];assert(args0.includes('--debate'));assert.match(n,/^\d{3,}$/);const read=p=>JSON.parse(fs.readFileSync(p));
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(r=>r.debateNumber===n);assert(r);
+const planPath=r.root+'/audio/plan.json',p=read(planPath),planRecord=fileRecord(planPath);assert.equal(p.videoId,r.videoId);assert.equal(p.attemptsPerClip,1);assert.equal(p.retries,0);assert.equal(fileRecord(p.inventoryCandidate.path).sha256,p.inventoryCandidate.sha256);
+const out=p.executionOutputRoot;fs.mkdirSync(out,{recursive:true});let known=p.pricing.knownCostBeforeCallsUsd;
+for(const [i,c]of p.clips.entries()){
+ const attemptPath=out+'/'+c.clipId+'.attempt.json',resultPath=out+'/'+c.clipId+'.json',completePath=out+'/'+c.clipId+'.completion.json';
+ assert(!fs.existsSync(attemptPath)&&!fs.existsSync(resultPath)&&!fs.existsSync(completePath),'Already attempted: no automatic retry or overwrite.');
+ assert.equal(fileRecord(c.path).sha256,c.sha256);
+ const projected=known+p.clips.slice(i).reduce((n,x)=>n+x.reservedCallEstimateUsd,0);assert(projected<=p.pricing.standingCapUsd,'Reconciled cost plus remaining reserve exceeds cap.');
+ const attempt={schemaVersion:'1.0-one-paid-clip-attempt',debateNumber:n,clipId:c.clipId,startedAt:new Date().toISOString(),planSha256:planRecord.sha256,inputSha256:c.sha256,attempt:1,retries:0,knownSuccessfulCallCostBeforeUsd:known,maximumProjectedExposureBeforeUsd:projected,costEstimateReportedBeforeCall:true,model:p.model,subscriptionUsed:false};
+ fs.writeFileSync(attemptPath,JSON.stringify(attempt,null,2)+'\n',{flag:'wx'});
+ const args=['.assessment-cache/transcribe-current-once.py',c.path,'--model',p.model,'--response-format',p.responseFormat,'--chunking-strategy',p.chunkingStrategy,'--language','en','--out',resultPath];
+ for(const ref of p.knownSpeakerReferences){assert.equal(fileRecord(ref.file.path).sha256,ref.file.sha256);args.push('--known-speaker',ref.speaker+'='+ref.file.path);}
+ const run=spawnSync('python3',args,{encoding:'utf8',timeout:195000,maxBuffer:1024*1024});
+ if(run.status!==0){const failure={...attempt,status:'failed-or-transport-uncertain-no-retry',completedAt:new Date().toISOString(),exitCode:run.status,error:run.error?.code||null,sanitizedError:run.stderr?.trim().slice(-1200)||'',knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostEstimateUsd:known+c.reservedCallEstimateUsd};fs.writeFileSync(completePath,JSON.stringify(failure,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({clipId:c.clipId,status:failure.status,knownCostUsd:known,reservedMaximumEstimateUsd:failure.maximumPossibleTotalCostEstimateUsd}));process.exit(1);}
+ const response=read(resultPath),u=response.usage;assert(response.text?.trim()&&response.segments?.length,'Empty response preserved; stop.');
+ if(!u||u.type!=='tokens'||!Number.isFinite(u.input_tokens)||!Number.isFinite(u.output_tokens)){fs.writeFileSync(completePath,JSON.stringify({clipId:c.clipId,status:'usable-result-cost-unresolved-stop',usage:u||null,knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostEstimateUsd:known+c.reservedCallEstimateUsd},null,2)+'\n',{flag:'wx'});throw new Error('Usage reconciliation unavailable; no further calls.');}
+ const cost=(u.input_tokens*p.pricing.inputUsdPerMillionTokens+u.output_tokens*p.pricing.outputUsdPerMillionTokens)/1e6;known+=cost;
+ const record=fileRecord(resultPath),completion={schemaVersion:'1.0-one-paid-clip-completion',status:'succeeded-no-retry',debateNumber:n,clipId:c.clipId,completedAt:new Date().toISOString(),responseSha256:record.sha256,responseBytes:record.bytes,usage:u,callCostEstimateUsd:cost,knownSuccessfulCallCostUsd:known,maximumPossibleTotalCostEstimateUsd:known,segmentCount:response.segments.length,attempts:1,retries:0,billingDashboardConfirmed:false};
+ fs.writeFileSync(completePath,JSON.stringify(completion,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({clipId:c.clipId,status:'succeeded',segments:response.segments.length,cumulativeKnownCostEstimateUsd:known}));assert(known<=p.pricing.standingCapUsd,'Returned cost exceeds authorized cap; stop all paid work.');
+}
+console.log(JSON.stringify({status:'all-paid-clips-complete',calls:p.clips.length,cumulativeKnownSuccessfulCostEstimateUsd:known,retries:0}));
