@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));
+const read=p=>JSON.parse(fs.readFileSync(p)),r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const root=r.root,a=read(root+'/authorization.json'),m=read(root+'/manifest.json'),s=read(root+'/source/source-lock.json');
+assert.equal(a.identity.videoId,r.videoId);assert.equal(s.participants.dyadicGatePassed,true);
+const allowedInputs=[root+'/inventory/contract.md',m.sourceLocks.indexedTranscript.path,root+'/source/source-lock.json',root+'/source/editor-scope.json',root+'/source/assessment-source-notes.md','docs/reassessment-rubric-v2.1.md'].map(p=>fileRecord(p));
+const outputPath=path.resolve(root+'/inventory/draft-parts.json');assert(!fs.existsSync(outputPath));
+const p={schemaVersion:'1.0-score-blind-inventory-packet',status:'frozen-before-first-inventory-submission',debateNumber:n,debateId:r.debateId,videoId:r.videoId,identity:a.identity,model:m.modelSettings,assessedDebateWindowMs:s.participants.assessedDebateWindowMs,editorApprovedScope:a.identity.editorApprovedScope,allowedInputs,lookupOnlyInputs:[m.sourceLocks.events],fullReadRequiredForAllAllowedInputs:true,lookupInputPolicy:'events.json is a lossless duplicate available for exact event lookup; complete indexed transcript reading is mandatory.',outputPath,allowedOutputPaths:[outputPath],attempts:1,retries:0,directIncrementalCostUsd:0,isolation:'Fresh built-in promoted-model context with fork none and protocol-restricted inputs. No filesystem sandbox is claimed. No credentials or API environment reads, outside research, other debates, scores, judgments, publication, or session logs.',instructions:'Confirm absolute output path and read every full-read input completely without truncation. Send a reading checkpoint, wait for authenticated controller release, then write the complete first submission once using apply_patch. No subagents or paid calls.'};
+fs.writeFileSync(root+'/inventory/packet.json',JSON.stringify(p,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({debateNumber:n,fullReadInputs:allowedInputs.length,outputPath}));

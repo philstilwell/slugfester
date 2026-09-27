@@ -1,0 +1,249 @@
+{
+  "status": "passed-measured-limit-preserving-review",
+  "debateNumber": "270",
+  "publishedDebates": 270,
+  "authorization": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/validation/performance-review-authorization.json",
+    "sha256": "760d74038c2b510028f027ea3c3269113d3c14b2635fd0a9cfc26bdd86c8010c",
+    "bytes": 562
+  },
+  "testBefore": {
+    "path": "tests/site-quality/site-quality.spec.mjs",
+    "sha256": "d24edfa31cc476a4dedaf7850b04c8789a749a1b03c840bd0f4cf98561668bb3",
+    "bytes": 13748,
+    "preserved": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/validation/performance-test-before.mjs.txt",
+      "sha256": "d24edfa31cc476a4dedaf7850b04c8789a749a1b03c840bd0f4cf98561668bb3",
+      "bytes": 13748
+    }
+  },
+  "testAfter": {
+    "path": "tests/site-quality/site-quality.spec.mjs",
+    "sha256": "b23d566dfc692f73711a674f08409dc7d4fbafda8e65bff3c6aeac188c0f605b",
+    "bytes": 13748
+  },
+  "finalPublication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/output.json",
+    "sha256": "066067e6a9500319da180d3e5f04fce434c77e06f059aabf17404b2b3ff6a108",
+    "bytes": 73293
+  },
+  "generatedSummaries": {
+    "path": "src/data/debate-summaries.js",
+    "sha256": "15c2f15eb04e4c8aaa12cb837308fabf333bed3591a0339c021fb85b1ea1da21",
+    "bytes": 424529
+  },
+  "measurementMethod": "fresh-isolated-browser-context-per-route",
+  "measurementLog": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/rendering/performance-measurement.log",
+    "sha256": "234a16e84e17609230565c2059b8747eb08abfcd51755dd9fd003f4171ab74ec",
+    "bytes": 6081
+  },
+  "before": {
+    "baselineDebates": 259,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "baseDataBytes": [
+      505000,
+      555000,
+      590000,
+      595000
+    ]
+  },
+  "after": {
+    "baselineDebates": 270,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "baseDataBytes": [
+      560000,
+      610000,
+      645000,
+      650000
+    ]
+  },
+  "effectiveLimitsBefore": [
+    560000,
+    610000,
+    645000,
+    650000
+  ],
+  "effectiveLimitsAfter": [
+    560000,
+    610000,
+    645000,
+    650000
+  ],
+  "proof": "For all N >= 270, old base + 5000*(N-259) equals (old base + 55000) + 5000*(N-270); every current and future effective byte ceiling is unchanged.",
+  "measurements": [
+    {
+      "route": "/",
+      "baseDataBytes": 505000,
+      "required": "debate-summaries.js",
+      "limitBytes": 560000,
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 582
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 24892
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 424529
+        }
+      ],
+      "loadedBytes": 478247,
+      "headroomBytes": 81753
+    },
+    {
+      "route": "/rankings/",
+      "baseDataBytes": 555000,
+      "required": "debate-analytics.js",
+      "limitBytes": 610000,
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 582
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 24892
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 424529
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 56887
+        }
+      ],
+      "loadedBytes": 535134,
+      "headroomBytes": 74866
+    },
+    {
+      "route": "/debate/craig-oconnor-god-debate-2026/",
+      "baseDataBytes": 590000,
+      "required": "debate-details/craig-oconnor-god-debate-2026.js",
+      "limitBytes": 645000,
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 582
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 24892
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 424529
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 56887
+        },
+        {
+          "name": "/src/data/debate-details/craig-oconnor-god-debate-2026.js",
+          "bytes": 35843
+        }
+      ],
+      "loadedBytes": 570977,
+      "headroomBytes": 74023
+    },
+    {
+      "route": "/reference/fallacy/equivocation/",
+      "baseDataBytes": 595000,
+      "required": "reference-appearances/fallacy-equivocation.js",
+      "limitBytes": 650000,
+      "resources": [
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 582
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 24892
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 424529
+        },
+        {
+          "name": "/src/data/reference-appearances/fallacy-equivocation.js",
+          "bytes": 120556
+        }
+      ],
+      "loadedBytes": 598803,
+      "headroomBytes": 51197
+    }
+  ],
+  "temporaryContextsClosed": true,
+  "scoringMechanismChanged": false,
+  "directIncrementalCostUsd": 0
+}

@@ -1,0 +1,49 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {execFileSync,spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),rec=p=>{const b=fs.readFileSync(p);return{path:path.resolve(p),sha256:createHash('sha256').update(b).digest('hex'),bytes:b.length};},write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{flag:'wx'});
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const root=r.root,a=read(root+'/authorization.json'),cache=path.resolve('.assessment-cache/captions',r.videoId),original=read(cache+'/recovery-plan.json'),prior=read(cache+'/verification-complete.json'),dir=path.join(cache,'inventory-verification'),planPath=root+'/inventory/audio-verification-plan.json';
+assert.equal(original.videoId,r.videoId);assert.equal(rec(original.source.path).sha256,original.source.sha256);
+const controller=fileURLToPath(import.meta.url),wrapper=path.resolve('.assessment-cache/verify-approved-moves-once.py');
+if(args.includes('--prepare')){
+ assert(!fs.existsSync(planPath));fs.mkdirSync(dir,{recursive:true});
+ const windows=[
+  ['metaphysical-reply',3052,3172,'Complete the reply concerning nothing, actuality, power, and necessary explanation.'],
+  ['power-counterreply',3413,3489,'Verify the later locomotive and mental-power counterreply independently.'],
+  ['prayer-test',3895,4027,'Resolve both speakers and exact quote ownership in the envelope test.'],
+  ['genocide-crosscheck',4030,4155,'Resolve question and answer ownership; reject opponent words as a Barker quotation.'],
+  ['scripture-life-authority',4198,4358,'Resolve speaker turns, epistemic alternatives and life-authority reply.'],
+  ['natural-law',4433,4487,'Resolve the question and Horn natural-law answer.'],
+  ['objective-harm-job',4484,4534,'Resolve Barker moral account and Job question versus Horn compensation reply, ending before excluded Q&A.'],
+  ['closing-group-number',6745,6765,'Check numerical recognition without silently amending canonical text.']
+ ];
+ const inputs=[];
+ for(const [id,startSeconds,endSeconds,reason] of windows){
+  assert(startSeconds>=0&&endSeconds<=original.durationSeconds);const input=path.join(dir,id+'.m4a');assert(!fs.existsSync(input));
+  execFileSync('/opt/homebrew/bin/ffmpeg',['-nostdin','-n','-hide_banner','-loglevel','error','-ss',String(startSeconds),'-i',original.source.path,'-t',String(endSeconds-startSeconds),'-vn','-ac','1','-ar','16000','-c:a','aac','-b:a','48k',input]);
+  const durationSeconds=Number(execFileSync('/opt/homebrew/bin/ffprobe',['-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',input],{encoding:'utf8'}).trim());
+  inputs.push({id,startSeconds,endSeconds,durationSeconds,reason,input:rec(input),output:path.join(dir,id+'.json'),maximumCostUsd:Number((Math.ceil(durationSeconds)*.0001).toFixed(4))});
+ }
+ const maximum=Number(inputs.reduce((s,c)=>s+c.maximumCostUsd,0).toFixed(4)),combined=Number((prior.maximumPossibleCostUsd+maximum).toFixed(4));
+ assert(maximum<=.08);assert(combined<=a.cost.fullWorkflowConservativeUpperEstimateUsd);
+ write(planPath,{schemaVersion:'1.0-score-blind-inventory-audio-plan',status:'frozen-before-paid-calls',createdAt:new Date().toISOString(),debateNumber:n,debateId:r.debateId,videoId:r.videoId,source:original.source,priorCompletion:rec(cache+'/verification-complete.json'),model:original.model,rate:original.rate,controller:rec(controller),wrapper:rec(wrapper),attemptsPerInput:1,retries:0,sequential:true,cost:{knownPriorUsd:prior.knownSuccessfulCallCostUsd,maximumPriorUsd:prior.maximumPossibleCostUsd,additionalMaximumUsd:maximum,combinedMaximumUsd:combined,frozenFullWorkflowEstimateUsd:a.cost.fullWorkflowConservativeUpperEstimateUsd,estimateReportedBeforePaidCalls:true},inputs});
+ console.log(JSON.stringify({clips:inputs.length,maximumAdditionalUsd:maximum,combinedMaximumUsd:combined}));
+}else if(args.includes('--run')){
+ const p=read(planPath);for(const f of[p.source,p.priorCompletion,p.controller,p.wrapper])assert.equal(rec(f.path).sha256,f.sha256);
+ let known=p.cost.knownPriorUsd,maximum=p.cost.maximumPriorUsd;
+ for(const c of p.inputs){
+  assert.equal(rec(c.input.path).sha256,c.input.sha256);const attempt=c.output.replace(/\.json$/,'.attempt.json'),execution=c.output.replace(/\.json$/,'.execution.json');
+  assert(!fs.existsSync(attempt)&&!fs.existsSync(c.output)&&!fs.existsSync(execution),'Existing attempt cannot be retried');
+  write(attempt,{status:'attempt-started',startedAt:new Date().toISOString(),plan:rec(planPath),input:c.input,attempt:1,retries:0,maximumPossibleCostUsd:c.maximumCostUsd});maximum=Number((maximum+c.maximumCostUsd).toFixed(4));
+  const result=spawnSync('python3',['-B',p.wrapper.path,path.resolve(planPath),c.id],{encoding:'utf8',timeout:195000,maxBuffer:4*1024*1024}),raw=fs.existsSync(c.output)?read(c.output):null,valid=Boolean(result.status===0&&Array.isArray(raw?.segments)&&raw.segments.length&&raw.text?.trim());
+  if(valid)known=Number((known+c.maximumCostUsd).toFixed(4));
+  write(execution,{status:valid?'returned-pending-review':'failed-preserved-no-retry',completedAt:new Date().toISOString(),input:c.input,output:fs.existsSync(c.output)?rec(c.output):null,exitCode:result.status,signal:result.signal,knownSuccessfulCallCostUsd:valid?c.maximumCostUsd:0,maximumPossibleCallCostUsd:c.maximumCostUsd,attempts:1,retries:0,diagnostic:valid?'':String(result.stderr||result.error||'No usable result').replace(/sk-[A-Za-z0-9_-]+/g,'[redacted]')});
+  console.log(JSON.stringify({clip:c.id,valid,knownSuccessfulCallCostUsd:known,maximumPossibleCostUsd:maximum}));if(!valid)throw new Error('Failed paid attempt preserved; no retry');
+ }
+ write(root+'/inventory/audio-verification-complete.json',{status:'all-checks-returned-pending-review',plan:rec(planPath),completedAt:new Date().toISOString(),knownSuccessfulCallCostUsd:known,maximumPossibleCostUsd:maximum,retries:0});
+}else throw new Error('Use --prepare or --run');

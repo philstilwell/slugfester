@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+export function reviewRouting(base){
+ const p=base+'/replacement-authorization.json';
+ if(!fs.existsSync(p))return {'pass-a':'pass-a','pass-b':'pass-b'};
+ const a=JSON.parse(fs.readFileSync(p));
+ assert.equal(a.status,'user-approved-before-replacement');
+ assert.equal(a.exceptionalReplacementAttempts,1);assert.equal(a.replacementRetries,0);
+ for(const r of [a.preservedFailedOutput,a.preservedValidPassB])assert.equal(createHash('sha256').update(fs.readFileSync(r.path)).digest('hex'),r.sha256);
+ assert.deepEqual(a.selectedReviewDirectories,{'pass-a':'pass-a-replacement-1','pass-b':'pass-b'});
+ return a.selectedReviewDirectories;
+}

@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate')&&/^\d{3,}$/.test(n));
+const rp='docs/assessment-production/standalone-debates-v1/registry.json',r=JSON.parse(fs.readFileSync(rp)).debates.find(x=>x.debateNumber===n);assert(r);
+const audit=JSON.parse(fs.readFileSync(r.root+'/source/crash-resume-upstream-audit.json'));
+const old=JSON.parse(execFileSync('git',['show',audit.oldHead+':'+rp],{maxBuffer:10*1024*1024}));
+assert(!old.debates.some(x=>x.debateNumber===n));
+old.debates.push({debateNumber:n,debateId:r.debateId,videoId:r.videoId,root:r.root,validationProfile:r.validationProfile,status:'authorized-in-progress',editorScopePath:r.editorScopePath,productionLedger:{path:r.productionLedger.path}});
+const b=Buffer.from(JSON.stringify(old,null,2)+'\n'),sha256=createHash('sha256').update(b).digest('hex');
+assert.equal(sha256,audit.allExistingDebateFiles.find(x=>x.path===rp).sha256);
+const destination=r.root+'/validation/repair-record-paths/reconstructed-initial-registry.json';
+fs.writeFileSync(destination,b,{flag:'wx'});
+fs.writeFileSync(r.root+'/validation/repair-record-paths/initial-registry-recovery.json',JSON.stringify({status:'byte-exact-reconstruction-verified-against-prefrozen-hash',debateNumber:n,baselineCommit:audit.oldHead,method:'Immutable pre-run registry plus the exact initial record specified by the preserved prepare-approved-debate controller; no current registry or assessment changed.',snapshot:{path:destination,sha256,bytes:b.length},currentRegistryChanged:false,assessmentChanged:false},null,2)+'\n',{flag:'wx'});
+console.log('Recovered initial registry bytes match the preexisting crash-recovery hash exactly.');

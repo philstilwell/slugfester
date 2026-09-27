@@ -1,0 +1,452 @@
+- generic [ref=f19e2]:
+  - link "Skip to main content" [ref=f19e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f19e4]:
+    - link "Slugfester home" [ref=f19e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f19e6]: Slugfester
+    - navigation "Primary" [ref=f19e7]:
+      - link "Debates" [ref=f19e8] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=f19e9] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f19e10] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f19e11] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f19e12] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=f19e13] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=f19e15] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=f19e16]: ▾
+  - main [ref=f19e17]:
+    - generic [ref=f19e19]:
+      - heading "Backend" [level=1] [ref=f19e20]
+      - paragraph [ref=f19e21]: How Slugfester assesses a debate—and how you can check the result.
+    - region [ref=f19e22]:
+      - heading "From debate to scorecard" [level=2] [ref=f19e24]
+      - paragraph [ref=f19e25]: The standard one-on-one workflow · September 2026. Earlier scorecards may use different controls. Select a panel to enlarge it.
+      - generic [ref=f19e26]:
+        - link "Download PDF (3.6 MB)" [ref=f19e27] [cursor=pointer]:
+          - /url: /assets/assessment-process/slugfester-assessment-process.pdf
+        - link "Skip to the rubric quality check" [ref=f19e28] [cursor=pointer]:
+          - /url: "#rubric-quality-check"
+      - group [ref=f19e29]:
+        - strong [ref=f19e32] [cursor=pointer]: Prefer text? Read the complete guide
+      - generic [ref=f19e34]:
+        - figure [ref=f19e35]:
+          - 'link "View part 1 at full size: Evidence before verdicts" [ref=f19e36] [cursor=pointer]':
+            - /url: /assets/assessment-process/panel-1.webp
+            - 'img "Part 1: Evidence before verdicts. Define the debate, secure the complete source, lock the argument map, and resolve two isolated reviews. Full text is available in the reading option above." [ref=f19e37]'
+          - generic [ref=f19e38]:
+            - text: Part 1 of 3 · Evidence before verdicts
+            - link "Back to guide options" [ref=f19e39] [cursor=pointer]:
+              - /url: "#assessment-process"
+        - figure [ref=f19e40]:
+          - 'link "View part 2 at full size: Judgments become scores" [ref=f19e41] [cursor=pointer]':
+            - /url: /assets/assessment-process/panel-2.webp
+            - 'img "Part 2: Judgments become scores. The six weighted dimensions, move-to-section-to-overall calculations, worked examples, and stability checks. Full text is available in the reading option above." [ref=f19e42]'
+          - generic [ref=f19e43]:
+            - text: Part 2 of 3 · Judgments become scores
+            - link "Back to guide options" [ref=f19e44] [cursor=pointer]:
+              - /url: "#assessment-process"
+        - figure [ref=f19e45]:
+          - 'link "View part 3 at full size: Explain. Challenge. Verify" [ref=f19e46] [cursor=pointer]':
+            - /url: /assets/assessment-process/panel-3.webp
+            - 'img "Part 3: Explain. Challenge. Verify. Explain the scores, review fallacies and biases separately, distinguish AI contributions, and verify publication. Full text is available in the reading option above." [ref=f19e47]'
+          - generic [ref=f19e48]:
+            - text: Part 3 of 3 · Explain. Challenge. Verify
+            - link "Back to guide options" [ref=f19e49] [cursor=pointer]:
+              - /url: "#assessment-process"
+    - region [ref=f19e50]:
+      - generic [ref=f19e51]:
+        - generic [ref=f19e52]:
+          - paragraph [ref=f19e53]: Assessment update
+          - heading "Reassessment schedule and recorded work" [level=2] [ref=f19e54]
+        - paragraph [ref=f19e55]: Updated September 5, 2026
+      - generic [ref=f19e56]:
+        - generic [ref=f19e57]:
+          - paragraph [ref=f19e58]:
+            - strong [ref=f19e59]: The next site-wide reassessment is tentatively scheduled for spring 2027
+            - text: ", when sources and quality controls permit. Earlier assessment records are preserved so that revisions remain traceable."
+          - paragraph [ref=f19e60]:
+            - text: The completed full-catalogue campaign used
+            - strong [ref=f19e61]: 5.6 Sol · low
+            - text: . Its ≈83 hours records time inside the assessment model, including failed and recovery attempts—not video length or time spent waiting. Three brief recovery runs lacked usable timing data, so this remains a conservative minimum.
+          - paragraph [ref=f19e62]: Account personalization and private conversation history are not inputs to the site's assessment data.
+        - generic "Reassessment compute summary" [ref=f19e63]:
+          - article [ref=f19e64]:
+            - generic [ref=f19e65]: Recorded model work
+            - strong [ref=f19e66]: ≈83 hr
+            - paragraph [ref=f19e67]: conservative aggregate compute estimate for the completed reassessment campaign
+            - paragraph [ref=f19e68]: Each new debate requires 1-2 hours to process and add.
+    - region [ref=f19e69]:
+      - generic [ref=f19e70]:
+        - paragraph [ref=f19e71]: Catalogue scope
+        - heading "How debates enter Slugfester" [level=2] [ref=f19e72]
+        - paragraph [ref=f19e73]:
+          - strong [ref=f19e74]: The selection process is somewhat arbitrary.
+          - text: Slugfester is a curated catalogue, not a random or representative sample of all public debates. We favor videos that clearly fit within one of the 15 topic categories listed on the site. Choices also reflect available complete sources, topics likely to interest readers, recognizable or recurring interlocutors, and whether a debate can be processed reliably with the current workflow.
+        - paragraph [ref=f19e75]: That means catalogue-wide patterns describe the debates published here; they should not be treated as a neutral sample of every topic, viewpoint, speaker, or debate format. Reader recommendations help broaden the pool considered for future additions, but a recommendation does not guarantee assessment.
+      - generic [ref=f19e76]:
+        - generic [ref=f19e77]:
+          - paragraph [ref=f19e78]: Reader recommendation
+          - heading "Recommend a debate" [level=3] [ref=f19e79]
+          - paragraph [ref=f19e80]: Send a public debate link for consideration. Both fields are required.
+        - generic [ref=f19e81]:
+          - generic [aria-hidden] [ref=f19e82]:
+            - text: Leave this field empty
+            - textbox [ref=f19e83]
+          - generic [ref=f19e84]: Debate URL
+          - textbox "Debate URL" [ref=f19e85]:
+            - /placeholder: https://www.youtube.com/watch?v=…
+          - generic [ref=f19e86]: Your email address
+          - textbox "Your email address" [ref=f19e87]:
+            - /placeholder: you@example.com
+          - button "Send recommendation" [ref=f19e88] [cursor=pointer]
+        - paragraph [ref=f19e89]: Your URL and email are delivered to the site administrator through FormSubmit. Your email will be used only if follow-up about the recommendation is needed.
+    - region [ref=f19e90]:
+      - generic [ref=f19e91]:
+        - paragraph [ref=f19e92]: Rubric v2
+        - heading "What the score bands mean" [level=2] [ref=f19e93]
+      - generic [ref=f19e94]:
+        - article [ref=f19e95]:
+          - generic [ref=f19e96]:
+            - strong [ref=f19e97]: 90-100
+            - generic [ref=f19e98]: Exceptional
+          - paragraph [ref=f19e99]: A clear, relevant, well-supported move that anticipates the strongest obvious replies and survives them.
+        - article [ref=f19e101]:
+          - generic [ref=f19e102]:
+            - strong [ref=f19e103]: 80-89
+            - generic [ref=f19e104]: Strong
+          - paragraph [ref=f19e105]: A persuasive argument or rebuttal with minor gaps, compressed support, or uncertainty that does not defeat the main point.
+        - article [ref=f19e107]:
+          - generic [ref=f19e108]:
+            - strong [ref=f19e109]: 70-79
+            - generic [ref=f19e110]: Solid
+          - paragraph [ref=f19e111]: A coherent and relevant move that helps the side's case but needs more evidence, precision, or follow-through.
+        - article [ref=f19e113]:
+          - generic [ref=f19e114]:
+            - strong [ref=f19e115]: 60-69
+            - generic [ref=f19e116]: Mixed
+          - paragraph [ref=f19e117]: A partially useful move that depends on thin warrants, speculative links, or an incomplete answer to the objection.
+        - article [ref=f19e119]:
+          - generic [ref=f19e120]:
+            - strong [ref=f19e121]: 50-59
+            - generic [ref=f19e122]: Weak
+          - paragraph [ref=f19e123]: A move with serious missing evidence, misframing, evasiveness, or poor contact with the opponent's actual claim.
+        - article [ref=f19e125]:
+          - generic [ref=f19e126]:
+            - strong [ref=f19e127]: <50
+            - generic [ref=f19e128]: Defective
+          - paragraph [ref=f19e129]: A move that is irrelevant, circular, self-undermining, or fallacious at the point where the argument needs support.
+    - region [ref=f19e131]:
+      - generic [ref=f19e132]:
+        - generic [ref=f19e133]:
+          - paragraph [ref=f19e134]: Rubric quality check
+          - heading "How section scores are distributed" [level=2] [ref=f19e135]
+          - paragraph [ref=f19e136]: This chart shows how often each section-side score occurs across the published catalogue. The range shows that assessments use different score bands, but spread alone cannot establish that the rubric is accurate or consistent across reviewers and assessment periods. Open the examples below to examine the reasoning behind high and low marks; the measurement and ranking studies further down this page examine consistency and uncertainty.
+        - generic [ref=f19e137]:
+          - generic [ref=f19e138]:
+            - term [ref=f19e139]: Section-side scores
+            - definition [ref=f19e140]: 2,952
+          - generic [ref=f19e141]:
+            - term [ref=f19e142]: Observed range
+            - definition [ref=f19e143]: 48–95
+          - generic [ref=f19e144]:
+            - term [ref=f19e145]: Bucket width
+            - definition [ref=f19e146]: 2 points
+      - 'figure "This chart includes the two side scores assigned within every published debate section—not overall debate scores or interlocutor averages. Vertical axis: number of scores. Horizontal axis: two-percentage-point score ranges. Bar colors progress through the site’s coral, gold, and teal palette as scores increase. Numbers above the bars are counts." [ref=f19e147]':
+        - generic [ref=f19e148]:
+          - generic [aria-hidden] [ref=f19e149]:
+            - generic [ref=f19e150]: "420"
+            - generic [ref=f19e151]: "210"
+            - generic [ref=f19e152]: "0"
+          - generic "Scrollable vertical bar chart of section-side score counts" [ref=f19e153]:
+            - list [ref=f19e154]:
+              - 'listitem "48–49 percent: 1 section-side score" [ref=f19e155]':
+                - generic [ref=f19e157]: "1"
+                - strong [aria-hidden] [ref=f19e159]: 48–49
+              - 'listitem "50–51 percent: 1 section-side score" [ref=f19e160]':
+                - generic [ref=f19e162]: "1"
+                - strong [aria-hidden] [ref=f19e164]: 50–51
+              - 'listitem "52–53 percent: 1 section-side score" [ref=f19e165]':
+                - generic [ref=f19e167]: "1"
+                - strong [aria-hidden] [ref=f19e169]: 52–53
+              - 'listitem "54–55 percent: 1 section-side score" [ref=f19e170]':
+                - generic [ref=f19e172]: "1"
+                - strong [aria-hidden] [ref=f19e174]: 54–55
+              - 'listitem "56–57 percent: 3 section-side scores" [ref=f19e175]':
+                - generic [ref=f19e177]: "3"
+                - strong [aria-hidden] [ref=f19e179]: 56–57
+              - 'listitem "58–59 percent: 8 section-side scores" [ref=f19e180]':
+                - generic [ref=f19e182]: "8"
+                - strong [aria-hidden] [ref=f19e184]: 58–59
+              - 'listitem "60–61 percent: 8 section-side scores" [ref=f19e185]':
+                - generic [ref=f19e187]: "8"
+                - strong [aria-hidden] [ref=f19e189]: 60–61
+              - 'listitem "62–63 percent: 13 section-side scores" [ref=f19e190]':
+                - generic [ref=f19e192]: "13"
+                - strong [aria-hidden] [ref=f19e194]: 62–63
+              - 'listitem "64–65 percent: 35 section-side scores" [ref=f19e195]':
+                - generic [ref=f19e197]: "35"
+                - strong [aria-hidden] [ref=f19e199]: 64–65
+              - 'listitem "66–67 percent: 46 section-side scores" [ref=f19e200]':
+                - generic [ref=f19e202]: "46"
+                - strong [aria-hidden] [ref=f19e204]: 66–67
+              - 'listitem "68–69 percent: 70 section-side scores" [ref=f19e205]':
+                - generic [ref=f19e207]: "70"
+                - strong [aria-hidden] [ref=f19e209]: 68–69
+              - 'listitem "70–71 percent: 115 section-side scores" [ref=f19e210]':
+                - generic [ref=f19e212]: "115"
+                - strong [aria-hidden] [ref=f19e214]: 70–71
+              - 'listitem "72–73 percent: 170 section-side scores" [ref=f19e215]':
+                - generic [ref=f19e217]: "170"
+                - strong [aria-hidden] [ref=f19e219]: 72–73
+              - 'listitem "74–75 percent: 176 section-side scores" [ref=f19e220]':
+                - generic [ref=f19e222]: "176"
+                - strong [aria-hidden] [ref=f19e224]: 74–75
+              - 'listitem "76–77 percent: 263 section-side scores" [ref=f19e225]':
+                - generic [ref=f19e227]: "263"
+                - strong [aria-hidden] [ref=f19e229]: 76–77
+              - 'listitem "78–79 percent: 309 section-side scores" [ref=f19e230]':
+                - generic [ref=f19e232]: "309"
+                - strong [aria-hidden] [ref=f19e234]: 78–79
+              - 'listitem "80–81 percent: 355 section-side scores" [ref=f19e235]':
+                - generic [ref=f19e237]: "355"
+                - strong [aria-hidden] [ref=f19e239]: 80–81
+              - 'listitem "82–83 percent: 364 section-side scores" [ref=f19e240]':
+                - generic [ref=f19e242]: "364"
+                - strong [aria-hidden] [ref=f19e244]: 82–83
+              - 'listitem "84–85 percent: 323 section-side scores" [ref=f19e245]':
+                - generic [ref=f19e247]: "323"
+                - strong [aria-hidden] [ref=f19e249]: 84–85
+              - 'listitem "86–87 percent: 273 section-side scores" [ref=f19e250]':
+                - generic [ref=f19e252]: "273"
+                - strong [aria-hidden] [ref=f19e254]: 86–87
+              - 'listitem "88–89 percent: 227 section-side scores" [ref=f19e255]':
+                - generic [ref=f19e257]: "227"
+                - strong [aria-hidden] [ref=f19e259]: 88–89
+              - 'listitem "90–91 percent: 137 section-side scores" [ref=f19e260]':
+                - generic [ref=f19e262]: "137"
+                - strong [aria-hidden] [ref=f19e264]: 90–91
+              - 'listitem "92–93 percent: 41 section-side scores" [ref=f19e265]':
+                - generic [ref=f19e267]: "41"
+                - strong [aria-hidden] [ref=f19e269]: 92–93
+              - 'listitem "94–95 percent: 12 section-side scores" [ref=f19e270]':
+                - generic [ref=f19e272]: "12"
+                - strong [aria-hidden] [ref=f19e274]: 94–95
+      - group [ref=f19e276]:
+        - generic "Standards in practice Compare the top three and bottom three sections Open six real examples from the current catalogue" [ref=f19e277] [cursor=pointer]:
+          - generic [ref=f19e278]:
+            - generic [ref=f19e279]: Standards in practice
+            - strong [ref=f19e280]: Compare the top three and bottom three sections
+            - generic [ref=f19e281]: Open six real examples from the current catalogue
+    - region [ref=f19e283]:
+      - generic [ref=f19e284]:
+        - generic [ref=f19e285]:
+          - generic [ref=f19e286]: Research library
+          - heading "Corpus-level analysis papers" [level=2] [ref=f19e287]
+          - paragraph [ref=f19e288]: Seven expanded research papers, with a shared September 4, 2026 snapshot of 253 assessments
+          - paragraph [ref=f19e289]:
+            - link "Explore the findings on Insights" [ref=f19e290] [cursor=pointer]:
+              - /url: /insights/
+        - generic [ref=f19e291]:
+          - generic [ref=f19e292]:
+            - paragraph [ref=f19e293]: Astra-era research edition · September 4, 2026 · Plain-language revision
+            - heading "Clearer explanations, fully explained graphs, and conclusions you can check" [level=3] [ref=f19e294]
+            - paragraph [ref=f19e295]:
+              - text: All seven papers now use plainer language, numbered arguments leading to clear conclusions, and a reading key for every graph. Worked examples explain the statistics without assuming prior knowledge. The papers share a frozen archive of
+              - strong [ref=f19e296]: 253 assessments
+              - text: ": 237 comparable one-on-one scoring records, including 187 religious-versus-skeptical comparisons. Each paper states which records it uses and what its findings cannot establish."
+            - paragraph [ref=f19e297]: The first group explains the 6.34-point mean non-theist advantage, maps its topic differences, and examines slogan-like reasoning. The second asks how much the formal CON role explains and why a fallacy count is not a complete measure of debate quality. The final group examines whether scores from different assessment processes are comparable and how much confidence to place in exact speaker ranks.
+            - paragraph [ref=f19e298]:
+              - strong [ref=f19e299]: New analysis is not new scoring.
+              - text: The original debate scores remain unchanged. Six papers reanalyze existing assessments; the slogan paper was replaced on September 5 with a fresh, direct reading of all 187 relevant transcripts. These papers are intended as a stable baseline until the next major GPT-model review, with genuine corrections remaining possible in the meantime. A newer model's accuracy and fairness should be tested, not assumed.
+            - paragraph [ref=f19e300]:
+              - text: The papers distinguish observed findings from proposed explanations, show counterexamples, and identify what could change their conclusions. The position studies classify the side actually argued, rather than equating
+              - emphasis [ref=f19e301]: PRO
+              - text: with theism.
+              - link "Inspect the methods, classifications, calculations, and source records." [ref=f19e302] [cursor=pointer]:
+                - /url: /insights/data-and-methods/
+          - generic "Corpus-level analysis papers" [ref=f19e303]:
+            - region [ref=f19e304]:
+              - generic [ref=f19e305]:
+                - generic [ref=f19e306]: Part one
+                - heading "Theist and non-theist performance" [level=3] [ref=f19e307]
+                - paragraph [ref=f19e308]: The central score gap, where it is largest, and one proposed rhetorical mechanism.
+              - generic [ref=f19e309]:
+                - article [ref=f19e310]:
+                  - generic [ref=f19e311]: Paper one · Score-gap diagnosis
+                  - heading "Why Do the Theist Sides Score Lower?" [level=4] [ref=f19e312]
+                  - paragraph [ref=f19e313]: Across 187 relevant debates, the non-theist side averages 6.34 points higher and leads in 160 assessments. Support for claims shows the largest gap among the six scoring areas. Support, consistent reasoning, and answers to objections together make up about three-quarters of the overall score difference.
+                  - paragraph [ref=f19e314]:
+                    - text: The paper tests the
+                    - strong [ref=f19e315]: faith-to-debate hypothesis
+                    - text: ": standards that sustain personal faith may carry into public debate without supplying enough reason for an unconvinced listener. It asks what connects possibility to probability, religious benefit to truth, or a gap in one explanation to support for another. The conclusion separates the observed weaknesses from their still-unproved cause. Theist counterexamples and checks using different selections keep the claim open to criticism."
+                  - generic [ref=f19e316]:
+                    - generic [ref=f19e317]:
+                      - term [ref=f19e318]: Coverage
+                      - definition [ref=f19e319]: 187 debates · 4,086 moves
+                    - generic [ref=f19e320]:
+                      - term [ref=f19e321]: Mean score advantage
+                      - definition [ref=f19e322]: 6.34 points out of 100
+                    - generic [ref=f19e323]:
+                      - term [ref=f19e324]: Length and figures
+                      - definition [ref=f19e325]: 14 pages · 5 figures
+                  - link "Read “Why Do the Theist Sides Score Lower?”" [ref=f19e326] [cursor=pointer]:
+                    - /url: /output/pdf/why-do-the-theist-sides-score-lower.pdf?v=20260904-astra253-r2
+                  - generic [ref=f19e327]: September 4 edition. Includes score reconstruction, evidence thresholds, new-debate comparisons, worked explanations of uncertainty, source-linked cases, rival explanations, and conditions that would weaken the hypothesis.
+                - article [ref=f19e328]:
+                  - generic [ref=f19e329]: Paper two · Topic, burden, and rubric map
+                  - heading "Where Is the Theist Disadvantage Largest?" [level=4] [ref=f19e330]
+                  - paragraph [ref=f19e331]: "Religion, culture, and meaning has the largest observed mean gap: 8.27 points across 22 debates, with the non-theist side higher in 21 and one tie. Resurrection debates are closer, averaging 3.53 points across 17 comparisons. The paper explains both the topic differences and why overlapping uncertainty makes an exact topic ranking fragile."
+                  - paragraph [ref=f19e332]: "Its most useful question is what supports the next step: from religious usefulness to truth, from a necessary foundation to a personal God, or from possible divine reasons to an explanation of the suffering we see. Fully explained graphs show the topic differences, how often each side scores higher, and why the exact order of topics is uncertain."
+                  - generic [ref=f19e333]:
+                    - generic [ref=f19e334]:
+                      - term [ref=f19e335]: Coverage
+                      - definition [ref=f19e336]: 187 debates · 8 topic groups
+                    - generic [ref=f19e337]:
+                      - term [ref=f19e338]: Largest topic mean
+                      - definition [ref=f19e339]: 8.27 points · 21 of 22 higher
+                    - generic [ref=f19e340]:
+                      - term [ref=f19e341]: Length and figures
+                      - definition [ref=f19e342]: 15 pages · 5 figures
+                  - link "Read “Where Is the Theist Disadvantage Largest?”" [ref=f19e343] [cursor=pointer]:
+                    - /url: /output/pdf/where-is-the-theist-disadvantage-largest.pdf?v=20260904-astra253-r2
+                  - generic [ref=f19e344]: September 4 edition. Includes all eight topic denominators, direction counts, uncertainty, topic-order resampling, a scoring-dimension map, close resurrection cases, and practical guidance for evaluating the inference that carries a conclusion.
+                - article [ref=f19e345]:
+                  - generic [ref=f19e346]: Paper three · Direct slogan study
+                  - heading "Are Theist Arguments More Often Slogan-Like?" [level=4] [ref=f19e347]
+                  - paragraph [ref=f19e348]: A fresh review of all 187 relevant transcripts replaces the earlier score-based warning test. It finds 77 theist and 19 non-theist uses of slogans that both replace a needed reason and shut out criticism. Allowing for speech length and giving each debate equal weight, the rates are 0.56 and 0.16 uses per 10,000 words. The broader unsupported-slogan difference is less secure, and 144 debates have no protected slogan detected on either side.
+                  - paragraph [ref=f19e349]: Four fully explained graphs show rates, how widely the uses occur, checks across different selections, and emotional wording. Close readings include Sye Ten Bruggencate, Christopher Hitchens, and John Lennox, distinguishing missing support from claims that block correction. Lennox supplies four unsupported slogans but only one confirmed protected slogan across eight debates. The paper explains the limits of one AI reader and why emotional language does not establish that emotion caused religious belief.
+                  - generic [ref=f19e350]:
+                    - generic [ref=f19e351]:
+                      - term [ref=f19e352]: Direct review coverage
+                      - definition [ref=f19e353]: 187 complete retained transcripts
+                    - generic [ref=f19e354]:
+                      - term [ref=f19e355]: Protected-slogan rate difference
+                      - definition [ref=f19e356]: +0.40 theist uses per 10,000 words
+                    - generic [ref=f19e357]:
+                      - term [ref=f19e358]: Length and figures
+                      - definition [ref=f19e359]: 17 pages · 4 figures
+                  - link "Read “Are Theist Arguments More Often Slogan-Like?”" [ref=f19e360] [cursor=pointer]:
+                    - /url: /output/pdf/are-theist-arguments-more-often-slogan-like.pdf?v=20260905-direct187-r1
+                  - generic [ref=f19e361]:
+                    - text: September 5 direct-review edition, using the September 4 archive of 253 assessments. Includes plain-language definitions, word denominators, uncertainty, concentration and borderline checks, timestamped examples, and a numbered conclusion. The original debate scores and the other six papers are unchanged.
+                    - link "Inspect the direct-study data and methods." [ref=f19e362] [cursor=pointer]:
+                      - /url: https://github.com/philstilwell/slugfester/tree/main/docs/analysis/direct-slogan-study-2026-09-04
+            - region [ref=f19e363]:
+              - generic [ref=f19e364]:
+                - generic [ref=f19e365]: Part two
+                - heading "Broader corpus findings and alternative explanations" [level=3] [ref=f19e366]
+                - paragraph [ref=f19e367]: A formal-side countercheck and the cumulative pattern behind most lower scores.
+              - generic [ref=f19e368]:
+                - article [ref=f19e369]:
+                  - generic [ref=f19e370]: Paper four · Nominal-side alternative test
+                  - heading "Does the CON Side Have an Inherent Advantage?" [level=4] [ref=f19e371]
+                  - paragraph [ref=f19e372]: CON averages 4.70 points above PRO across 237 comparable debates, but the raw contrast mixes role, position, and speaker differences. The theist occupies PRO in 164 of 187 classified comparisons; when the theist occupies CON, the nominal role contrast reverses to −3.26 points.
+                  - paragraph [ref=f19e373]: "The expanded data retain evidence for a modest residual: outside the religious comparison, CON leads by 1.54 points and its simple resampling interval is just above zero. Among 31 speakers observed in both roles, however, the weighted estimate is only 0.80 points and its interval includes zero. Worked examples explain why neither an inherent large CON bonus nor the complete absence of role effects has been established."
+                  - generic [ref=f19e374]:
+                    - generic [ref=f19e375]:
+                      - term [ref=f19e376]: Coverage
+                      - definition [ref=f19e377]: 237 debates · 31 crossover speakers
+                    - generic [ref=f19e378]:
+                      - term [ref=f19e379]: Raw CON advantage
+                      - definition [ref=f19e380]: 4.70 points · 176 of 237 higher
+                    - generic [ref=f19e381]:
+                      - term [ref=f19e382]: Length and figures
+                      - definition [ref=f19e383]: 13 pages · 4 figures
+                  - link "Read “Does the CON Side Have an Inherent Advantage?”" [ref=f19e384] [cursor=pointer]:
+                    - /url: /output/pdf/does-the-con-side-have-an-inherent-advantage.pdf?v=20260904-astra253-r2
+                  - generic [ref=f19e385]: September 4 edition. Includes position reversals, balanced orientation groups, same-person comparisons, uncertainty, a worked composition example, and separate proposed tests of label bias and argumentative burden.
+                - article [ref=f19e386]:
+                  - generic [ref=f19e387]: Paper five · Fallacy and cumulative-loss analysis
+                  - heading "Beyond the Fallacy Count" [level=4] [ref=f19e388]
+                  - paragraph [ref=f19e389]: The expanded evidence changes the old paper's framing. Overall, 150 of 243 lower-scoring sides—61.7%—have no named-fallacy tag. But that rate is 80.8% in the earlier assessment process and only 14.5% in the later one. The archive-wide majority is real, yet it is not a stable rule of debate or of the current process.
+                  - paragraph [ref=f19e390]: "The deeper conclusion survives: a missing label is not a clean bill of health. Among 147 comparable untagged losses, 74.8% trail on five or six scoring dimensions. Conversely, a higher-scoring side carries a named-fallacy tag in 51 decisive assessments. The paper explains cumulative weaknesses, the changing use of labels, and why inspecting an unmet burden is more informative than merely counting familiar errors."
+                  - generic [ref=f19e391]:
+                    - generic [ref=f19e392]:
+                      - term [ref=f19e393]: Coverage
+                      - definition [ref=f19e394]: 253 assessments · 5,492 moves
+                    - generic [ref=f19e395]:
+                      - term [ref=f19e396]: Losses without a fallacy tag
+                      - definition [ref=f19e397]: 150 of 243 · 61.7%
+                    - generic [ref=f19e398]:
+                      - term [ref=f19e399]: Length and figures
+                      - definition [ref=f19e400]: 13 pages · 4 figures
+                  - link "Read “Beyond the Fallacy Count”" [ref=f19e401] [cursor=pointer]:
+                    - /url: /output/pdf/debates-are-usually-lost-without-a-named-fallacy.pdf?v=20260904-astra253-r2
+                  - generic [ref=f19e402]: September 4 edition of “Debates Are Usually Lost Without a Named Fallacy.” Includes the process-level reversal, all four winner/loser tag patterns, cumulative dimension deficits, source-linked cases, and a worked example of a changing archive majority.
+            - region [ref=f19e403]:
+              - generic [ref=f19e404]:
+                - generic [ref=f19e405]: Part three
+                - heading "Measurement reliability" [level=3] [ref=f19e406]
+                - paragraph [ref=f19e407]: Whether assessment generations and public speaker rankings support direct comparison.
+              - generic [ref=f19e408]:
+                - article [ref=f19e409]:
+                  - generic [ref=f19e410]: Paper six · Measurement audit
+                  - heading "Are All Slugfester Assessments on the Same Scale?" [level=4] [ref=f19e411]
+                  - paragraph [ref=f19e412]: "The earlier 179 assessments average 81.32 points per side; the later 58 average 78.51, a 2.82-point difference. Among 51 people assessed in both groups, 45 score lower later. The six scoring areas also move together more closely later. A new graph shows an important clue: earlier clarity marks use just four different values, while later marks use 41."
+                  - paragraph [ref=f19e413]: "The paper explains several possible reasons for these changes without claiming to have proved their cause. It proposes a practical next-assessment plan: shared test debates, clearer examples for each scoring area, mixed review batches, hidden old scores, repeated checks, and independent review of the source passages. It also explains why adding 2.82 points to every later score would not be a justified fix."
+                  - generic [ref=f19e414]:
+                    - generic [ref=f19e415]:
+                      - term [ref=f19e416]: Coverage
+                      - definition [ref=f19e417]: 253 published · 237 comparable records
+                    - generic [ref=f19e418]:
+                      - term [ref=f19e419]: Locked move analysis
+                      - definition [ref=f19e420]: 5,282 verified scored moves
+                    - generic [ref=f19e421]:
+                      - term [ref=f19e422]: Length and figures
+                      - definition [ref=f19e423]: 17 pages · 6 figures
+                  - link "Read “Are All Slugfester Assessments on the Same Scale?”" [ref=f19e424] [cursor=pointer]:
+                    - /url: /output/pdf/are-all-slugfester-assessments-on-the-same-scale.pdf?v=20260904-astra253-r2
+                  - generic [ref=f19e425]: Plain-language September 4 edition. Includes six graphs, possible reasons why the marks move together, a check of which exact marks were used, and a detailed plan to reduce unfair early-versus-later differences in the next full assessment.
+                - article [ref=f19e426]:
+                  - generic [ref=f19e427]: Paper seven · Ranking reliability and uncertainty
+                  - heading "Do Slugfester Rankings Measure Stable Performance?" [level=4] [ref=f19e428]
+                  - paragraph [ref=f19e429]: "The broad speaker order holds up better than the exact places. Among people with at least six appearances, dividing their records into two random halves produces fairly similar rankings: their typical order-agreement score is 0.86 on a scale where +1 means the same order. A simple five-name illustration explains this measure, called Spearman rank correlation. The typical score gap between neighboring averages is only 0.17 points."
+                  - paragraph [ref=f19e430]:
+                    - strong [ref=f19e431]: Resampled ranks
+                    - text: reuse each person's recorded scores.
+                    - strong [ref=f19e432]: Model ranks
+                    - text: also allow for the score variation seen across the wider group. Their typical range widths are 12 and 19 places. The paper explains each method, shows why neither guarantees a future rank, and walks through real rows for Joseph Schmid, Sean Carroll, and Matt Dillahunty before presenting all 50 eligible speakers. It also explains why the other speakers are not in that table.
+                  - generic [ref=f19e433]:
+                    - generic [ref=f19e434]:
+                      - term [ref=f19e435]: Coverage
+                      - definition [ref=f19e436]: 237 debates · 474 appearances
+                    - generic [ref=f19e437]:
+                      - term [ref=f19e438]: Default ranked field
+                      - definition [ref=f19e439]: 50 speakers · minimum 3
+                    - generic [ref=f19e440]:
+                      - term [ref=f19e441]: Length and figures
+                      - definition [ref=f19e442]: 20 pages · 6 figures
+                  - link "Read “Do Slugfester Rankings Measure Stable Performance?”" [ref=f19e443] [cursor=pointer]:
+                    - /url: /output/pdf/do-slugfester-rankings-measure-stable-performance.pdf?v=20260904-astra253-r2
+                  - generic [ref=f19e444]: Plain-language September 4 edition. Includes six figures, an illustrated guide to rank correlation, clear definitions of every table column, three worked rows, and the complete 50-speaker table. Rank ranges describe calculations within this fixed group—not personal worth or guaranteed future performance.
+  - contentinfo [ref=f19e445]:
+    - generic [ref=f19e446]:
+      - link "Slugfester" [ref=f19e447] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f19e448]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=f19e449]:
+      - link "Search" [ref=f19e450] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f19e451] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f19e452] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f19e453] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=f19e454] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=f19e455] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=f19e456] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=f19e457] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=f19e458] [cursor=pointer]:
+        - /url: https://cogbias.site/

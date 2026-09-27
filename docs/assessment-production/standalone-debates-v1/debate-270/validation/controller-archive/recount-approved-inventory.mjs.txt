@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const root=r.root,originalPath=root+'/inventory/draft-parts.json',d=read(originalPath),out=root+'/inventory/recounted-parts.json';
+assert(!fs.existsSync(out));
+const validation=spawnSync(process.execPath,['.assessment-cache/assemble-approved-inventory.mjs','--debate',n],{encoding:'utf8'});
+assert.notEqual(validation.status,0);assert.match(validation.stderr,/Worker balance discrepancy: totals/);
+const failurePath=root+'/inventory/first-submission-validation-failure.txt';
+fs.writeFileSync(failurePath,validation.stdout+validation.stderr,{flag:'wx'});
+const original=fileRecord(originalPath),before=structuredClone(d),count=(side,section)=>d.moves.filter(m=>m.side===side&&(!section||m.sectionId===section)).length;
+d.selectionBalanceAudit.totals={pro:count('pro'),con:count('con'),absoluteDifference:Math.abs(count('pro')-count('con'))};
+for(const section of d.selectionBalanceAudit.sections){section.pro=count('pro',section.sectionId);section.con=count('con',section.sectionId);section.absoluteDifference=Math.abs(section.pro-section.con);}
+d.selectionBalanceAudit.rationaleRequired=d.selectionBalanceAudit.totals.absoluteDifference>=3||d.selectionBalanceAudit.sections.some(s=>s.absoluteDifference>=2);
+for(const section of d.publicationCapacityAudit.sections){section.pro=count('pro',section.sectionId);section.con=count('con',section.sectionId);assert.equal(section.fourthRowRequired,section.pro===4||section.con===4);assert.equal(section.withinCapacity,section.pro<=4&&section.con<=4);}
+for(const k of Object.keys(d).filter(k=>!['selectionBalanceAudit','publicationCapacityAudit'].includes(k)))assert.deepEqual(d[k],before[k]);
+fs.writeFileSync(out,JSON.stringify(d,null,2)+'\n',{flag:'wx'});
+fs.writeFileSync(root+'/inventory/count-correction.json',JSON.stringify({schemaVersion:'1.0-score-blind-mechanical-inventory-count-correction',status:'applied-once-original-preserved',debateNumber:n,debateId:r.debateId,original,validatorFailure:fileRecord(failurePath),corrected:fileRecord(out),authority:'Skill requires controller recomputation and correction of invalid pre-judgment count audits while preserving first-submission bytes.',before:{selection:before.selectionBalanceAudit,capacity:before.publicationCapacityAudit},after:{selection:d.selectionBalanceAudit,capacity:d.publicationCapacityAudit},semanticFieldsUnchanged:true,moveOrderUnchanged:true,modelAttempts:1,additionalModelAttempts:0,directIncrementalCostUsd:0},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({corrected:out,totals:d.selectionBalanceAudit.totals}));

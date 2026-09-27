@@ -1,0 +1,25 @@
+"""One frozen input, one timestamped transcription, no retries or overwrites."""
+import argparse
+import json
+import os
+from pathlib import Path
+from openai import OpenAI
+
+parser = argparse.ArgumentParser()
+parser.add_argument("plan", type=Path)
+parser.add_argument("clip_id")
+args = parser.parse_args()
+plan = json.loads(args.plan.read_text())
+clip = next(c for c in plan["inputs"] if c["id"] == args.clip_id)
+source, target = Path(clip["input"]["path"]), Path(clip["output"])
+if target.exists() or not os.environ.get("OPENAI_API_KEY"):
+    raise SystemExit("Existing output or unavailable API key; no call made")
+with source.open("rb") as audio:
+    result = OpenAI(max_retries=0, timeout=180, base_url="https://api.openai.com/v1").audio.transcriptions.create(
+        file=audio, model="whisper-1", language="en", response_format="verbose_json",
+        timestamp_granularities=["segment"], temperature=0,
+    )
+with target.open("x", encoding="utf-8") as output:
+    json.dump(result.model_dump(mode="json"), output, indent=2)
+    output.write("\n")
+print("Returned one frozen timestamped verification result")

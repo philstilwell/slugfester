@@ -925,6 +925,12 @@ export const interlocutorAvatars = [
     name: "Douglas Wilson",
     src: `${avatarBasePath}/douglas-wilson.webp`,
     aliases: ["Douglas Wilson"]
+  },
+  {
+    name: "Dan Barker",
+    src: "/assets/icon-512.png",
+    aliases: ["Dan Barker", "Daniel Barker"],
+    placeholder: true
   }
 ];
 

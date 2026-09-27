@@ -1,0 +1,1050 @@
+{
+  "status": "successful-source-recovery-with-editor-scope",
+  "videoId": "bIuDfh-6iUs",
+  "sourceReview": {
+    "path": ".assessment-cache/captions/bIuDfh-6iUs/source-review.md",
+    "sha256": "2bc6ccadf21f0118dcba12d888371872f20e7b522369ecfbde5defaf48b7a1d7",
+    "bytes": 5013
+  },
+  "sourceReviewLock": {
+    "path": ".assessment-cache/captions/bIuDfh-6iUs/source-review-lock.json",
+    "sha256": "06e8091d6b5739c32d4ecec8cabc89c1bc0653ecd2f7ec253c48d587e9204980",
+    "bytes": 46931
+  },
+  "normalizationAudit": {
+    "path": ".assessment-cache/captions/bIuDfh-6iUs/source-normalization-audit.json",
+    "sha256": "0e11961e43b74baa1b42957ad7c95caac8fd7d67870a5920b4045f17a68f4fae",
+    "bytes": 437235
+  },
+  "rawRecoveryPlan": {
+    "path": ".assessment-cache/captions/bIuDfh-6iUs/recovery-plan.json",
+    "sha256": "44aa20ab436900549c1f0987b4e30cc4c378e08975a8c2a911305cc58d7335ec",
+    "bytes": 15498
+  },
+  "verificationPlan": {
+    "path": ".assessment-cache/captions/bIuDfh-6iUs/verification-plan.json",
+    "sha256": "07e7598ee7628878c488224bbf0edd3a90e0c65704d5f8cf46656a15d72366c9",
+    "bytes": 9921
+  },
+  "completionRecords": [
+    {
+      "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/recovery-complete.json",
+      "sha256": "0b242791ae141a3949895db1ede1a2488db5471d1556bac81141ef908fb5f884",
+      "bytes": 464
+    },
+    {
+      "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification-complete.json",
+      "sha256": "a2c25bee274966c05d56f1a30213892300e6490e448bc417ef2ff4c3a0229b9b",
+      "bytes": 444
+    }
+  ],
+  "knownSuccessfulCallCostUsd": 0.8242,
+  "maximumPossibleCostUsd": 0.8242,
+  "paidRetries": 0,
+  "substitutions": [
+    {
+      "id": "opening-logistics-recovery",
+      "remove": [
+        {
+          "chunk": 3,
+          "first": 11,
+          "last": 98
+        }
+      ],
+      "clip": "opening-transition",
+      "indices": [
+        3,
+        4,
+        5
+      ],
+      "reason": "Replace the repeated thanks artifact with recovered moderator logistics; no argumentative content is removed."
+    },
+    {
+      "id": "cross-exam-transition-recovery",
+      "remove": [
+        {
+          "chunk": 13,
+          "first": 51,
+          "last": 66
+        }
+      ],
+      "clip": "cross-exam-transition",
+      "indices": [
+        8
+      ],
+      "reason": "Replace repeated You have and its partial tail with the complete recovered follow-up utterance."
+    },
+    {
+      "id": "closing-transition-recovery",
+      "remove": [
+        {
+          "chunk": 22,
+          "first": 126,
+          "last": 155
+        },
+        {
+          "chunk": 23,
+          "first": 0,
+          "last": 0
+        }
+      ],
+      "clip": "closing-transition",
+      "indices": [
+        3,
+        4
+      ],
+      "reason": "Replace applause-loop thanks and its overlapping next-chunk opening with the targeted transition; subsequent content remains source-exact."
+    },
+    {
+      "id": "ending-recovery",
+      "remove": [
+        {
+          "chunk": 23,
+          "first": 92,
+          "last": 92
+        },
+        {
+          "chunk": 24,
+          "first": 0,
+          "last": 44
+        }
+      ],
+      "clip": "recording-end",
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Retain the recovered final complete claim and eliminate generated repetition extending beyond the media end."
+    }
+  ],
+  "outputs": [
+    {
+      "id": 0,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-000.m4a",
+        "sha256": "2964b1250075117191c9a89a511327439e3851b638f6122648e3a8b6017541c3",
+        "bytes": 1778442
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-000.json",
+        "sha256": "0967e4932d28f0e2f991c2649ab2b50f0f952655df322e51d1339ebb198d9774",
+        "bytes": 48210
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-000.attempt.json",
+        "sha256": "dd8acda154a71f89cb518351702a899ac31e629a6e8b63a0b4878ce8391b0851",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-000.execution.json",
+        "sha256": "b8ef261480998a27831362499db43c450de8f0409b25869c243a4d61e266c2b2",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 1,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-001.m4a",
+        "sha256": "b751eee9a1caedbdd057217342948326b9ea43f508a164d52d28e35d8a2906bd",
+        "bytes": 1830265
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-001.json",
+        "sha256": "33884d51ea88d35a64454bbb3c7b8e1d3facca1ebaf973474ddde2d8bfa49554",
+        "bytes": 47520
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-001.attempt.json",
+        "sha256": "ada66d12db49f5499d327cca0a108a443e94cfbdf80ee2e2a95f3041575ba487",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-001.execution.json",
+        "sha256": "e64e2eedbcc59fe4535413810e3156a329d40654553b12d0570745c06bb9a3d6",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 2,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-002.m4a",
+        "sha256": "ecf215764f85c8c624b0b7e5205ad055b65f7d5b0a30f79e028ea062bef4a68d",
+        "bytes": 1854258
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-002.json",
+        "sha256": "bf78083911dd08ffde50e9f8c80698235afd180dc037dd5f99135bae91f81725",
+        "bytes": 49417
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-002.attempt.json",
+        "sha256": "67722a78de3d568bf918c73d77a125379339b0ef2ffa108694d032dcdd251cf4",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-002.execution.json",
+        "sha256": "6ba5745fe43e9cfed11bf50c066b3a343c25bc248ccbdac8b94cbfd1c1d8c306",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 3,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-003.m4a",
+        "sha256": "2f002b39eb30d5c99f4911ecf6b64402643333322cca0c157a3320dd5004c2e9",
+        "bytes": 1653601
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-003.json",
+        "sha256": "563baa4258b6955f28f676d40b31b0ffca87acb084bfc5931b8b6278fe16f205",
+        "bytes": 81270
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-003.attempt.json",
+        "sha256": "7b63433a25cb9b65ba5e9781b8aedc8dcfa67914df7e1cdd9d8884c825993159",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-003.execution.json",
+        "sha256": "53d6b115fd0aeabe82a39ee004e64ea27252574c31b75f1149a08871837351eb",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 4,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-004.m4a",
+        "sha256": "7808e1466efdc3c3b22df0ba0a9b3ee4c412e89f01367622b5a28e848557bb16",
+        "bytes": 1855171
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-004.json",
+        "sha256": "b67cfd4de73ba7ed944ac740b7cba83aaebe9f016a3939a67359c5dfd78a0bf2",
+        "bytes": 42325
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-004.attempt.json",
+        "sha256": "26e80a040380f33a632455742a59b8d0509ee0925b282f38378328fa3d8a7c12",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-004.execution.json",
+        "sha256": "f072c083fdb2802ccb6043eed670408b3de67704e09c032b5b51733a2bc705eb",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 5,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-005.m4a",
+        "sha256": "e9275bf3ee983258d7c1d7cfd387f981795188d361513bc6725f79518c4fc88f",
+        "bytes": 1846344
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-005.json",
+        "sha256": "edebada92591f383ddee8112aa117a2c046c3b58da5b8abcc83a46cd5b80b8d1",
+        "bytes": 41180
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-005.attempt.json",
+        "sha256": "6268310a0f3d5530bfc48c075b92be6a79164dadfdc42dbd0469933b986adcbb",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-005.execution.json",
+        "sha256": "096a8a4d5e238e766f44cab5791593f6e6567e70f2a9a71d5c17b2cb5c3446e9",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 6,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-006.m4a",
+        "sha256": "d2fb7f342bae991a286d079a42b8a38fc5f20fccfac595a069b6cd5cf8e253d1",
+        "bytes": 1837825
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-006.json",
+        "sha256": "ef0465944e6f77b1c563a130a86a08e40a0d22d2521bcf4d29f171d4b73b2b3e",
+        "bytes": 55436
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-006.attempt.json",
+        "sha256": "c234708ad65b02167b11358ddbac3252355a3a363edac27d5a152386bbf8ea2c",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-006.execution.json",
+        "sha256": "e1f9dd27416b5468b95dee9aa9c8900530e06a3de5d7531bf62200622d202aac",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 7,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-007.m4a",
+        "sha256": "fda31248170cc72e0bdee68f3c105b4e6c0a72a58b199a477c6c653e53d026f1",
+        "bytes": 1846808
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-007.json",
+        "sha256": "8c34eb78e87115ae013eeaf94d78605c14df62b38563e5e9a7b106eb9ad9a5c1",
+        "bytes": 69442
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-007.attempt.json",
+        "sha256": "8ed95e5a9ac3afdb500e54dc6b17c69813a76cc156a3ab9400aa150686566ded",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-007.execution.json",
+        "sha256": "668fb61b1149317e9659e45e5616ea01ee8281807c7e0da8dd055cc0abe5f0d8",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 8,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-008.m4a",
+        "sha256": "f4f972f0724293f5a92357dffc5304b97c1d80fc90323f5ed332d0052c64da0d",
+        "bytes": 1846261
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-008.json",
+        "sha256": "77e235cac20528deded7c8af7d656f3ba947738070e3090e63a346234ccd00c8",
+        "bytes": 53971
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-008.attempt.json",
+        "sha256": "3d9c4236b48937c9044334c538d58a159c50bef3ff64c1305599f8f852153b8d",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-008.execution.json",
+        "sha256": "b2586b876553dd3cff25dbd7fbaade7d6ac85128367779314c630578d0846f73",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 9,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-009.m4a",
+        "sha256": "fc5c192ad1ffcdbc36851ea6f2a6f4f7f2fec2a7c979954c365d58cff9b3cf35",
+        "bytes": 1846110
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-009.json",
+        "sha256": "84e5bdc6061cf7fbee787e3e901e8e6af32f5701ca4f6db5f5bde4253117684e",
+        "bytes": 52341
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-009.attempt.json",
+        "sha256": "0f3d28c33f7b6540f2ffcbe5882c34553f73739c4344f06a0efecee314dbe6c9",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-009.execution.json",
+        "sha256": "c16ce308a98b9d84bfa12d76cfd031a424b331fbd4b10c332fca53ab70ec4d1c",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 10,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-010.m4a",
+        "sha256": "b8756b614d17ad104cdb257da2cefa50fde2daf7dd354af24e6e3eabefdf7a0d",
+        "bytes": 1846768
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-010.json",
+        "sha256": "28a1fe4e5fd3e4cb79d65ca9bc1ef985cdee820ec4b3cddf065d716f07b38ba5",
+        "bytes": 46240
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-010.attempt.json",
+        "sha256": "35d8709cab81642f17376206c391cd5d561a3780bdac5d48fcb3903f31dccb92",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-010.execution.json",
+        "sha256": "a03d5defef613cad77616b6c8d882c30fe69a9a1981b427842ae6b6d03b77bc5",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 11,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-011.m4a",
+        "sha256": "d66c63fea603e6af2721792c8fbbccb73c8c00e2dac321132931cb2a4a648faa",
+        "bytes": 1840450
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-011.json",
+        "sha256": "93b2b32fe422a4eef58cff4cdc14d9246fd550ec2c05acfb16f522f38e11f89d",
+        "bytes": 45526
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-011.attempt.json",
+        "sha256": "798d7ac847c5e7fa823e4ec7f75c7ef3c87a54bbbab8edf548d0c76c61b2ed20",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-011.execution.json",
+        "sha256": "a0ac8a2ec2030bbbdbd02408dc7aaa46d9795ec86d58e1a10ad66f4728914d2f",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 12,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-012.m4a",
+        "sha256": "80fb98d1cd7164494ef4fe87ccbb74144c59153fc0e8b4c10d6f0ad44bdda130",
+        "bytes": 1862774
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-012.json",
+        "sha256": "e426c3b376fd5728d6149b4d02cf72f950495042b7005af26aa0ade0b290c341",
+        "bytes": 83170
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-012.attempt.json",
+        "sha256": "ac00a8741a07ba17f4a9f78feaa1ada339a4459dfa92b218ec391207d27f140c",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-012.execution.json",
+        "sha256": "aa8fef849f8e1ad76932078ed6f2a12e1a49a51c840be2ca3da55ca24f11e23e",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 13,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-013.m4a",
+        "sha256": "e97ab212a9d9f880f5eb644ec811ba5bc2e42bb541fa5a2a572cc04c890c2fbe",
+        "bytes": 1816041
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-013.json",
+        "sha256": "1086b65f2119cb5c6abcb26e2af3cfafac45bffe7190d6fab885e7b4c5e775ea",
+        "bytes": 79549
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-013.attempt.json",
+        "sha256": "6186c53f49ddf4665b0aec186ddeb1490009c3e734934242f1006aa967423c3d",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-013.execution.json",
+        "sha256": "b7eb7a04052ec32a860cd82674156863cf308f0cca867538ea1afd57d35b9672",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 14,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-014.m4a",
+        "sha256": "da71f964105de1bec9c23aed90c93785893b6c6bc215b82f511893fc8b0a37a1",
+        "bytes": 1852453
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-014.json",
+        "sha256": "94844ce9f2b9ce66d53906adc978779a777f6dbd819ce53ecef8362bed09cc78",
+        "bytes": 45924
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-014.attempt.json",
+        "sha256": "a3624a1b1483265a2530927f2e7754a64f418138e3936144e889335a7114a900",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-014.execution.json",
+        "sha256": "124c0d1ff565b84fa91507ddbbac22e6479399aea24a47d693fc98ea9a0453f4",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 15,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-015.m4a",
+        "sha256": "56b8568b377a4323e73591eceaedaa0f5fe47deab9b1f33352be36615a1e459c",
+        "bytes": 1836887
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-015.json",
+        "sha256": "1307ade89aa4afc1bdb2c2b495f5354c64270a953a09a7f6ee9e75e00725c79d",
+        "bytes": 43037
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-015.attempt.json",
+        "sha256": "b2aa350992c57950a58b6dfafa74bde22bde684816a82ec7ffa17d81eaa7499e",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-015.execution.json",
+        "sha256": "d57e1e62880202768e1668eebb4e7e92722ed8918862590c71555dc78adbdd24",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 16,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-016.m4a",
+        "sha256": "84aa54c6e940a4d1191e67317a4d7717797604d138fc6a2ee2d526ffd7d6456b",
+        "bytes": 1830295
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-016.json",
+        "sha256": "ccf68e71c06cf9385c75afa4ac24a4bd840b8fff038ed77594cc1a0ab13e9ec8",
+        "bytes": 42475
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-016.attempt.json",
+        "sha256": "a8d5d8cd25988a99fa26568601d8e0d0ea69defd31c6836183d3435e9a38ac2f",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-016.execution.json",
+        "sha256": "61026559076809049d8916bec3d5c37bbb7eaa2edb234186d927b0a4862ff6ce",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 17,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-017.m4a",
+        "sha256": "f40f44e463653ea6a90d64794080a72492694878f1a730e20ffd6621d41c5fd7",
+        "bytes": 1848623
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-017.json",
+        "sha256": "adb0ba8e8d19e0eef585d0196bc7cd15041921535e2e99823d7aafab4850281c",
+        "bytes": 44421
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-017.attempt.json",
+        "sha256": "67d7d56387ef766be265f6014d50f83d31376b43fa7a258807000a8c3cd5d993",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-017.execution.json",
+        "sha256": "b108e9443c4840be0dc141b75045234665f49ec52553e8da67ac52daf3d31448",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 18,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-018.m4a",
+        "sha256": "55ff30def8be2fc05bb8a98afaeaae0086b2dc5cfc28e8a37637c397184150aa",
+        "bytes": 1847360
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-018.json",
+        "sha256": "1707d1227d0ba9c3bd4a62f00cc2d5b934ab02f839a9c81f4fb5e8a29d02143b",
+        "bytes": 65924
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-018.attempt.json",
+        "sha256": "120f3883b105aac35f685680e0dd590ad8e95545f0862b63e6fe7bba4ab0fdb9",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-018.execution.json",
+        "sha256": "3ad4b7852241cf2a1ce5972b92b3a41fd3048c3022c8b8dea92d401dfd929ac0",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 19,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-019.m4a",
+        "sha256": "221e572266618038fd58cdb193f35dd447dd3a185bb194e6890562fabd798f08",
+        "bytes": 1838123
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-019.json",
+        "sha256": "2aa84c1c93f0173b2dfc6d2ff7da2aefa0e0b72fc8774ad3bcbae5c949bbc022",
+        "bytes": 81603
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-019.attempt.json",
+        "sha256": "91a0578fef6d4c8536f26d631deecd7da7e4343542a51a47e11577b0a31df961",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-019.execution.json",
+        "sha256": "5078345f01ad3c4d28a13e1030d9d2059e67adc3f3cd7c2691f2a2ad7e49b2aa",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 20,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-020.m4a",
+        "sha256": "924a2104002ae13a8b456e828fcf92a16efb67227ce8d0f71156b1e1c88b49d5",
+        "bytes": 1822610
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-020.json",
+        "sha256": "9b7f91b798e3a09c7d6951ee5560468a431e51c7619f37888d4748c6c02d3022",
+        "bytes": 47354
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-020.attempt.json",
+        "sha256": "20ee143a59faf0f24496529f27c11a1d657fc2774891e7d869ac6064d7691160",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-020.execution.json",
+        "sha256": "089d798b218a78848b916dc11f5d27b3e122f57bba5b47c66fe00077fe5fadfe",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 21,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-021.m4a",
+        "sha256": "0b065803b6a880553a6909f5daf6ea6ecb465697911dc717180dbe2e6651f284",
+        "bytes": 1835386
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-021.json",
+        "sha256": "7ffb68e60d019c3ccd961fef12aafd111bf552bb01e17d4a5a517b63932a8c77",
+        "bytes": 37234
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-021.attempt.json",
+        "sha256": "de5299d6bf944eafbb5c1efc313cc6cd7c0eca46bf71abc557fee51a7d0202d3",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-021.execution.json",
+        "sha256": "384076d9268465779298ea610880fa4216034069b9133631b72ec38eaf5042e3",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 22,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-022.m4a",
+        "sha256": "41bba1ad244f6df12b6fb76a819b2ca8d6cf1e18d4542f5d930916707c966931",
+        "bytes": 1855690
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-022.json",
+        "sha256": "9b6b59959ab57ea08d7f0ac4ceccc4f9469b4e13585db8e3d7f56364827090b7",
+        "bytes": 82620
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-022.attempt.json",
+        "sha256": "3f1637d6f79882fa19b7f789b2985630094de5638e744723df2ece9ee78bbdf8",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-022.execution.json",
+        "sha256": "4d813af7e50df82f2ee79246d1038a5db40a66d6146f2f03c5603322964f7d1f",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 23,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-023.m4a",
+        "sha256": "380bb12d1d1dc032bf660f473998e4088a9d6ea7559a2bb240c6692a6ad18685",
+        "bytes": 1836363
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-023.json",
+        "sha256": "78d9aba34675b31e5accac060db463d25fdb43d9d3656ab3fddfb28a6698b68b",
+        "bytes": 57456
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-023.attempt.json",
+        "sha256": "109dc487dc01fa9c2693cfa380190fb01e663797a9797d96f1ba9710a1f6a138",
+        "bytes": 632
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-023.execution.json",
+        "sha256": "5fe2ae85ba75d69a04b6ebd6f1877d31fb764b1d554c986ce1340bef26529a0a",
+        "bytes": 753
+      },
+      "knownSuccessfulCallCostUsd": 0.03,
+      "maximumPossibleCallCostUsd": 0.03
+    },
+    {
+      "id": 24,
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-024.m4a",
+        "sha256": "4ef2bdfb4046beb845b657dc97cb794265c9fec1bb05fe26f300444038ea9325",
+        "bytes": 248936
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-024.json",
+        "sha256": "e11a6280124f2b3ef595eb08c15254d0d878e323fad460a3e7d88ea7f6beb026",
+        "bytes": 18956
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-024.attempt.json",
+        "sha256": "3b55284c5132670a8349bf1e284ccde70de6516264e1e529db983c8ac5478366",
+        "bytes": 633
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/chunks/chunk-024.execution.json",
+        "sha256": "4d91a58227e1e4aa5b394ec588ced351882fa31e2a50cadb9be30a4903d3ea45",
+        "bytes": 756
+      },
+      "knownSuccessfulCallCostUsd": 0.0041,
+      "maximumPossibleCallCostUsd": 0.0041
+    },
+    {
+      "id": "introduction",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/introduction.m4a",
+        "sha256": "6b9f751154b11d05fd6e86628924d30ec09d6506ca2f5e0a62fb99f42b787969",
+        "bytes": 217969
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/introduction.json",
+        "sha256": "694c30db5eabf7901687101c799d3d14a2ae75ec46307553ffa1a31fec55cab0",
+        "bytes": 7075
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/introduction.attempt.json",
+        "sha256": "72d7c5a72e21fd98bbe0f3721903ec8e80790833b12e56e0460696ab6ac18adf",
+        "bytes": 645
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/introduction.execution.json",
+        "sha256": "7cb00f8b5a4924569c0deea8e15b20fd766ac9290d9b43766d5d1a4f0b4ae6a7",
+        "bytes": 772
+      },
+      "knownSuccessfulCallCostUsd": 0.0045,
+      "maximumPossibleCallCostUsd": 0.0045
+    },
+    {
+      "id": "opening-transition",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/opening-transition.m4a",
+        "sha256": "fc312322df2574b2a209150450f68baaf42da516e78e3e9ef614e60aac1a0498",
+        "bytes": 667751
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/opening-transition.json",
+        "sha256": "1eea47b7758b755aaa08491a7ded383c18f7fae387ee58cb2b08973902e0f176",
+        "bytes": 9260
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/opening-transition.attempt.json",
+        "sha256": "40969f233dc6651ceff6116bf34682eebe1b1f441e4a1b30cfab637fed1b6398",
+        "bytes": 651
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/opening-transition.execution.json",
+        "sha256": "68ff20eae53638b50f4773de1beb3e5bb8d04e8ee27f593c43a2b75351ba1769",
+        "bytes": 784
+      },
+      "knownSuccessfulCallCostUsd": 0.0135,
+      "maximumPossibleCallCostUsd": 0.0135
+    },
+    {
+      "id": "verse-reference",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/verse-reference.m4a",
+        "sha256": "a38e331507df2fb1570935cde9235632c0a389db52996ff16325c95fcc46ff29",
+        "bytes": 342437
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/verse-reference.json",
+        "sha256": "62282edc042b32f58980cdf6cdf993b5aa4bb808edcaddb6d6c9c7ab923558ce",
+        "bytes": 8783
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/verse-reference.attempt.json",
+        "sha256": "c2ffed8bd5fa11d4866ac1c6b7ebfaae632739961d0f5aebc816c4c0983e5fe9",
+        "bytes": 648
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/verse-reference.execution.json",
+        "sha256": "051a64484f746ca36b504c0f2d041d97c08fefb7ed7504e2bc8d48fbc9dd51fd",
+        "bytes": 778
+      },
+      "knownSuccessfulCallCostUsd": 0.0055,
+      "maximumPossibleCallCostUsd": 0.0055
+    },
+    {
+      "id": "cross-exam-transition",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/cross-exam-transition.m4a",
+        "sha256": "afb30312e8c50364d3d059ebb36e609dda18bb91006c295eddb617346616dce7",
+        "bytes": 363859
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/cross-exam-transition.json",
+        "sha256": "ad95b558390ae52d25737d82621239e2e6e5d473415d17fdb8d48ec3df4e9304",
+        "bytes": 12505
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/cross-exam-transition.attempt.json",
+        "sha256": "698334f04caf7df6c58677cb031561368b58066b72c25dfd1d0457b11a6d682d",
+        "bytes": 654
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/cross-exam-transition.execution.json",
+        "sha256": "b22523c0b4bc9265dc4e7b940c7cf214ed748cad1e7aa12a92e529c4a673c537",
+        "bytes": 791
+      },
+      "knownSuccessfulCallCostUsd": 0.0065,
+      "maximumPossibleCallCostUsd": 0.0065
+    },
+    {
+      "id": "abuse-response",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/abuse-response.m4a",
+        "sha256": "b0702c8fbc193e1b9bd5c7a76d3ef58b8f4fb7b889022516ca7d6baf63d9ab9f",
+        "bytes": 744176
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/abuse-response.json",
+        "sha256": "a556cf8064d474c2f0e187e931edbecfae4ca0f2ccbee7a4660466f81393bf23",
+        "bytes": 17815
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/abuse-response.attempt.json",
+        "sha256": "7a45b4bfff8209802d01bc51ccd9b1634eba5e89a1893c652543967445ac0533",
+        "bytes": 646
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/abuse-response.execution.json",
+        "sha256": "ab6aeed0a2209c256420ca6a97642de5b6f5d0c712e029b42a3f4f39f9cef25f",
+        "bytes": 775
+      },
+      "knownSuccessfulCallCostUsd": 0.012,
+      "maximumPossibleCallCostUsd": 0.012
+    },
+    {
+      "id": "audience-meaning",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-meaning.m4a",
+        "sha256": "1fdf771d63402075b62df19121682837030b5496d019e351ce7fb8b844e65e25",
+        "bytes": 425510
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-meaning.json",
+        "sha256": "eb653197777277ce009eb10503287c755e0db724b34f4e98a1f3da7248e9db1f",
+        "bytes": 10947
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-meaning.attempt.json",
+        "sha256": "7f2c528b85ffe5080c7ebc7b930ca439d25cac713699437e66348c2ddedad0f2",
+        "bytes": 648
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-meaning.execution.json",
+        "sha256": "d5a085fdbfe486910a74bf8270dea4ad03a6dfa2740e047d0b1bdf47080e2b5f",
+        "bytes": 779
+      },
+      "knownSuccessfulCallCostUsd": 0.007,
+      "maximumPossibleCallCostUsd": 0.007
+    },
+    {
+      "id": "love-response",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/love-response.m4a",
+        "sha256": "5c6feb41f7ca4f7ccfac153af2cfd4ee240401b235bb25114100c4a8f34e25b0",
+        "bytes": 308502
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/love-response.json",
+        "sha256": "fe411c015fd766d97ce4f89dd6e1e829cf47dfa0fb7bab0c1fba89a1312ae4b6",
+        "bytes": 7185
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/love-response.attempt.json",
+        "sha256": "eed18b5e8b071830c35292853fb13aeb829e16b18814ed0b1cd9f26757c22573",
+        "bytes": 645
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/love-response.execution.json",
+        "sha256": "b1cd20eac987217679c67b89bd840d8656866bb27a3192077f960c950df0d5d0",
+        "bytes": 772
+      },
+      "knownSuccessfulCallCostUsd": 0.005,
+      "maximumPossibleCallCostUsd": 0.005
+    },
+    {
+      "id": "violence-and-hell",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/violence-and-hell.m4a",
+        "sha256": "872d0036514a598f6855dffdbc698b3e3f3d42016e232f72d2f4d5e9193cae6c",
+        "bytes": 1157373
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/violence-and-hell.json",
+        "sha256": "8b2adb24d2197b0279d970c5622d98bbad31a0f1229c7627e89965a755474b86",
+        "bytes": 27152
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/violence-and-hell.attempt.json",
+        "sha256": "2bdf3eb33f766f39a23365c55887dad0fee07cd85549a04c5d35fd0898c71d8a",
+        "bytes": 650
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/violence-and-hell.execution.json",
+        "sha256": "408cc88a41fd1dcd9f70b7800c7087ce887f6ed11c575e725e65fa1671b2c6e7",
+        "bytes": 782
+      },
+      "knownSuccessfulCallCostUsd": 0.019,
+      "maximumPossibleCallCostUsd": 0.019
+    },
+    {
+      "id": "audience-mortality",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-mortality.m4a",
+        "sha256": "edda75db0bc85f5be65d45ef381aeb3d59c18b01590ca1bf75f3c3c472ad66cd",
+        "bytes": 628817
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-mortality.json",
+        "sha256": "869b594ea0c392fdafe920b0beeb8face00acf3cb7105cd6f6a5e171d180c601",
+        "bytes": 12688
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-mortality.attempt.json",
+        "sha256": "1aba15a93fa57f4702cf77ce57180d22a54daffdb8b49a77c6b1e5e55f39ee80",
+        "bytes": 651
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/audience-mortality.execution.json",
+        "sha256": "5604812ccb9eaf7ca5e2a30e5ff76555a2a13320a15cd84739a8bc6805af0591",
+        "bytes": 785
+      },
+      "knownSuccessfulCallCostUsd": 0.0105,
+      "maximumPossibleCallCostUsd": 0.0105
+    },
+    {
+      "id": "closing-transition",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/closing-transition.m4a",
+        "sha256": "490db0205ff4fd8bead55514edce83ac7863f04f2476d829fcd20e23ce61daa4",
+        "bytes": 341622
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/closing-transition.json",
+        "sha256": "17e21408b77ca0211406f2e7a34542781edd0954a7825658cb7ab3eae39dcc54",
+        "bytes": 7428
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/closing-transition.attempt.json",
+        "sha256": "01a14d771c2149b250688050f8dc80c40797c8a6e5921bcf6ee43ec2f54872a2",
+        "bytes": 651
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/closing-transition.execution.json",
+        "sha256": "0aa92df08eb0e7731adb58d3f48f8f9ae87d05aad36974a1ec8d000e2ab50b92",
+        "bytes": 784
+      },
+      "knownSuccessfulCallCostUsd": 0.0055,
+      "maximumPossibleCallCostUsd": 0.0055
+    },
+    {
+      "id": "resurrection-closing",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/resurrection-closing.m4a",
+        "sha256": "66bc7b54eb37b66ed6d126a0bb67da629743a5b5478869ab218866932808beef",
+        "bytes": 402940
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/resurrection-closing.json",
+        "sha256": "605b4cc2572da48edda5e5e885ccc3a316ace1d5aa69a625bb438df82e20f346",
+        "bytes": 10535
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/resurrection-closing.attempt.json",
+        "sha256": "0feafb5a61ec627902430059d0046df2a0dbf3327ae77300a8a796780574d8e8",
+        "bytes": 653
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/resurrection-closing.execution.json",
+        "sha256": "a1c5d1426c2a2b1bc808d7bd0696b92cddc521221629e6036ed9683e6a7a11f5",
+        "bytes": 789
+      },
+      "knownSuccessfulCallCostUsd": 0.0065,
+      "maximumPossibleCallCostUsd": 0.0065
+    },
+    {
+      "id": "recording-end",
+      "input": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/recording-end.m4a",
+        "sha256": "c6c53a4c989a84721922b03f6e465b1bc3bd8c91423c6a52bfdf58144c08f259",
+        "bytes": 279343
+      },
+      "output": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/recording-end.json",
+        "sha256": "f38fcd7fff9e3b50c0a8342dab8f4416a645a16dc618a6d5fb38695f9af38fa1",
+        "bytes": 3839
+      },
+      "attempt": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/recording-end.attempt.json",
+        "sha256": "a6794b11bc9e62d6e3f6da152c0122006f51304806967a04f860b7b4defce986",
+        "bytes": 646
+      },
+      "execution": {
+        "path": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/.assessment-cache/captions/bIuDfh-6iUs/verification/recording-end.execution.json",
+        "sha256": "3a967c71820095c87d783eea222e26dfd105a59d1c927da0dac96e52ca68cbbc",
+        "bytes": 774
+      },
+      "knownSuccessfulCallCostUsd": 0.0046,
+      "maximumPossibleCallCostUsd": 0.0046
+    }
+  ]
+}

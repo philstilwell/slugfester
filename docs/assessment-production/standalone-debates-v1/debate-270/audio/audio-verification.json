@@ -1,0 +1,592 @@
+{
+  "schemaVersion": "1.0-standalone-audio-verification",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete",
+  "debateNumber": "270",
+  "debateId": "horn-barker-christian-god-2018",
+  "videoId": "bIuDfh-6iUs",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/inventory.json",
+    "sha256": "028a17a7233187982b84c25b8151ff90511e7b8a73cac17f29a1d3c69746bc94",
+    "bytes": 138931
+  },
+  "sourceRecovery": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/source/source-recovery-provenance.json",
+    "sha256": "c68d01495f6ff91b277119db8c13e19f4b387cdc2630483233ae6ae02f54a6f7",
+    "bytes": 48701
+  },
+  "preFreezeSourceReview": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/source-review.json",
+    "sha256": "bd025cb520cb4ff4928dc28291885775a5dce96a5d8d585ac4266e26d0089dd2",
+    "bytes": 23066
+  },
+  "targetedPlan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/audio-verification-plan.json",
+    "sha256": "5f9a51f087d2f52bd822d233a1251f49b25f2aab684f735c4df24b288a25f6d0",
+    "bytes": 7309
+  },
+  "targetedCompletion": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/audio-verification-complete.json",
+    "sha256": "9a6d0abd8c20fa306b67b460a4bc72bc29791473bc7df64f0d363a7a8d260f6b",
+    "bytes": 472
+  },
+  "findings": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/audio-findings.json",
+    "sha256": "be97c009cbf1b80a6f4ffe8ad53a0821d704f79921346b58f6bf0caef45f3396",
+    "bytes": 7836
+  },
+  "triggeredMoveIds": [
+    "barker-prayer-envelope-test",
+    "barker-genocide-goodness-crosscheck",
+    "horn-scripture-alternatives-and-life-authority",
+    "horn-natural-law-universal-facts",
+    "barker-objective-harm-and-job-test"
+  ],
+  "checks": [
+    {
+      "moveId": "barker-prayer-envelope-test",
+      "clipIds": [
+        "prayer-test"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "Horn asks how Barker's rejection could be falsified. Barker offers the hidden-writing prayer test, cites a prayer promise, and says what would change his mind. Horn affirms omniscience but says prayer may receive no as an answer and compares the requested display to a magic trick. Barker's final objection explicitly addresses that qualification. Both retained Barker quotation candidates belong to Barker; Horn's qualifications must not be omitted or attributed to him.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "1–2,16–17,21,24–25,27,29,32,34,38–41,45,52"
+        },
+        {
+          "speaker": "Dan Barker",
+          "segments": "0,3–15,18–20,22–23,26,28,30–31,35–37,42–44,46–51"
+        }
+      ],
+      "quotationRestrictions": "Segment33 is a rapid overlapping exchange and cannot support a new word-level attribution. Segment46 crosses a pause; use the already recovered canonical transition rather than treating its duration as uninterrupted advocacy. Neither ambiguous fragment is a retained quotation.",
+      "verificationClips": [
+        {
+          "id": "prayer-test",
+          "startSeconds": 3895,
+          "endSeconds": 4027,
+          "durationSeconds": 132,
+          "reason": "Resolve both speakers and exact quote ownership in the envelope test.",
+          "input": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.m4a",
+            "sha256": "7d537a5688c748e22e4c71b13281aa74827fa1a2a75808dc9e4aee4e72228180",
+            "bytes": 810466
+          },
+          "output": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.json",
+            "sha256": "9122015ecea5440dc713f40980a4404ad3e9c58899f55dd04b94131d3597d657",
+            "bytes": 29616
+          },
+          "maximumCostUsd": 0.0132,
+          "attempt": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.attempt.json",
+            "sha256": "a02a545236940d1b4545e501023459523c4e333d0fc53b3d6b351eb3fb71ce4e",
+            "bytes": 691
+          },
+          "execution": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.execution.json",
+            "sha256": "b31663503bafdbacabcdd9afd2a24c30b55cd40f1125ce14ca21d69e8f65251d",
+            "bytes": 784
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    },
+    {
+      "moveId": "barker-genocide-goodness-crosscheck",
+      "clipIds": [
+        "genocide-crosscheck"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "Barker asks whether the stipulated total killing qualifies as genocide and whether it is good by Horn's own meaning of divine goodness. Horn gives a conditional definitional concession, requests clarification, then defines goodness through fullness of being and invokes immortal continuation. The original second quote candidate, God is good in the sense that he is the fullness of being itself, is Horn's answer and cannot be a Barker quotation. The retained Barker question is confirmed.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "0,3–5,8,13–14,16,19–20,22–23,26,30–39"
+        },
+        {
+          "speaker": "Dan Barker",
+          "segments": "1–2,6–7,9–12,15,17–18,21,24–25,27–29"
+        }
+      ],
+      "quotationRestrictions": "The etymological aside is inconsistently recognized as Geno and Scythe or genome inside; do not score that recognition artifact or quote it.",
+      "verificationClips": [
+        {
+          "id": "genocide-crosscheck",
+          "startSeconds": 4030,
+          "endSeconds": 4155,
+          "durationSeconds": 125,
+          "reason": "Resolve question and answer ownership; reject opponent words as a Barker quotation.",
+          "input": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.m4a",
+            "sha256": "335a019a13d059f37540b0144f241ec4ad1e034e8691309185fc161c796fc05b",
+            "bytes": 736185
+          },
+          "output": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.json",
+            "sha256": "0b6c8f8af98ea744b907f25304422a8d49ae01b8b8d66dc1d562c4a79cef3e2d",
+            "bytes": 23320
+          },
+          "maximumCostUsd": 0.0125,
+          "attempt": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.attempt.json",
+            "sha256": "1517df6ca0bf340cad60668e88f86f276b7453a213cb6a570b8f16033201a3fa",
+            "bytes": 699
+          },
+          "execution": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.execution.json",
+            "sha256": "74b636d5a508b6f9a45d103620e57e34bdd87f32721df14ab70f61990d753f99",
+            "bytes": 800
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    },
+    {
+      "moveId": "horn-scripture-alternatives-and-life-authority",
+      "clipIds": [
+        "scripture-life-authority"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "Horn owns the independent-evidence argument, the human-addition and nonliteral alternatives, and the gift-of-life/eternal-life defense. Barker supplies the intervening Phinehas questions and explicitly denies Horn's attribution of societal moral relativism. The denial must remain visible; Horn's attribution is contested, not an established fact about Barker. Both retained Horn quotations belong to his answers.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "1,3–11,17,19–21,29,31–38,43–53"
+        },
+        {
+          "speaker": "Dan Barker",
+          "segments": "0,2,12–16,18,22–28,30,39–42,54"
+        }
+      ],
+      "quotationRestrictions": "A mixed canonical event may include a handoff; do not attribute all words in the event to one participant. Do not quote the incomplete final question.",
+      "verificationClips": [
+        {
+          "id": "scripture-life-authority",
+          "startSeconds": 4198,
+          "endSeconds": 4358,
+          "durationSeconds": 160,
+          "reason": "Resolve speaker turns, epistemic alternatives and life-authority reply.",
+          "input": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.m4a",
+            "sha256": "3cd5831541af0d89ae50cef01ffb4c186c10c1996cb4d07d3a8f7f1e283a1dfb",
+            "bytes": 994220
+          },
+          "output": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.json",
+            "sha256": "b05ee327cda236ca472f65c38b6a870bc35d1efbaa599cc1a5f1d88d39f28aa3",
+            "bytes": 34227
+          },
+          "maximumCostUsd": 0.016,
+          "attempt": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.attempt.json",
+            "sha256": "cbbadde3a42d5511d304a013b54a63948227ef78edf655b1eb475d98c0a5b2b5",
+            "bytes": 703
+          },
+          "execution": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.execution.json",
+            "sha256": "16c679d927e658af8b8d18afe65e95107252befeb5d1d4668c6145f9bc890c77",
+            "bytes": 808
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    },
+    {
+      "moveId": "horn-natural-law-universal-facts",
+      "clipIds": [
+        "natural-law"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "Barker asks whether morality ignores actual harm and reduces to obeying orders. Horn answers with human nature, natural law, rejection of mere aggregate-harm reduction, and universally wrong torture for fun. Horn then contrasts moral fact with his characterization of an atheistic universe. This is his constructive account under questioning, not a direct response to the earlier institutional-abuse move. Both retained Horn quotations are in his uninterrupted answer.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "0,5–21"
+        },
+        {
+          "speaker": "Dan Barker",
+          "segments": "1–4"
+        }
+      ],
+      "quotationRestrictions": "The final sentence runs slightly past the short clip boundary; the following overlapping clip confirms its completion.",
+      "verificationClips": [
+        {
+          "id": "natural-law",
+          "startSeconds": 4433,
+          "endSeconds": 4487,
+          "durationSeconds": 54,
+          "reason": "Resolve the question and Horn natural-law answer.",
+          "input": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.m4a",
+            "sha256": "6ded8097713d917d27d77a17e89c4604ba333e62fe31a5350dc2838261dce2f4",
+            "bytes": 331975
+          },
+          "output": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.json",
+            "sha256": "720f7416ee4adafdf61c57544cf585987818f302efc90c305032eba6333800eb",
+            "bytes": 12554
+          },
+          "maximumCostUsd": 0.0054,
+          "attempt": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.attempt.json",
+            "sha256": "a0249a0d65ecabf7a5a2102cbf98a2a68c12eaa2c8cef12482a5d7379122c15c",
+            "bytes": 691
+          },
+          "execution": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.execution.json",
+            "sha256": "567ec6ccfe2f3128c33d8699cc194d250da0bde48c8a7deb5415421353c1585a",
+            "bytes": 784
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    },
+    {
+      "moveId": "barker-objective-harm-and-job-test",
+      "clipIds": [
+        "objective-harm-job"
+      ],
+      "materialMeaningResolved": true,
+      "retainedQuotationOwnershipResolved": true,
+      "resolution": "Barker rejects the allegation that his account is mere opinion, invokes objective reality and measurement, and asks whether Job's suffering and his children's deaths were good. Horn's closing answer appeals to infinite compensation. The selected claim and both Barker quote candidates are clear. The brief exchange about value versus fact is not needed for the selected inference and does not establish a concession by either speaker.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "0,16–17"
+        },
+        {
+          "speaker": "Dan Barker",
+          "segments": "1–5,11–15"
+        }
+      ],
+      "quotationRestrictions": "Do not assign or penalize the short overlapping value/fact exchange in segments6–10; its precise turn ownership is not independently established by this undiarized result. It supplies no selected premise or quotation. The clip ends before the excluded Q&A.",
+      "verificationClips": [
+        {
+          "id": "objective-harm-job",
+          "startSeconds": 4484,
+          "endSeconds": 4534,
+          "durationSeconds": 50,
+          "reason": "Resolve Barker moral account and Job question versus Horn compensation reply, ending before excluded Q&A.",
+          "input": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.m4a",
+            "sha256": "5bace22fe4c2e352fab36539a6a580c5510c497e7a0e64865d299595af0ba1ab",
+            "bytes": 309868
+          },
+          "output": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.json",
+            "sha256": "cea2f8ecc374b23b66c77ed87e21dbf666869391f1847728e4eb6563c80bcca4",
+            "bytes": 10533
+          },
+          "maximumCostUsd": 0.005,
+          "attempt": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.attempt.json",
+            "sha256": "466fda32b87b3d4b2538e330858b031eaa59b34542500e24664c1f15076bdca6",
+            "bytes": 697
+          },
+          "execution": {
+            "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.execution.json",
+            "sha256": "2f54a1f81d8d9b0da92f190a3e02e2a42396e84927c5e5ddbff9e6560ce2beab",
+            "bytes": 796
+          }
+        }
+      ],
+      "sourceAndInventoryUnchanged": true
+    }
+  ],
+  "additionalWordingChecks": [
+    {
+      "clipId": "metaphysical-reply",
+      "moveIds": [
+        "horn-quantum-and-actuality-clarification"
+      ],
+      "finding": "The complete Horn reply includes universal negation and active vacuum fields, the distinction between relative motion and actualization, his correction from potentiality to pure actuality, power as ability to make things happen with musical composition as an example, and the different explanatory role of a necessary cause. Ending at canonical event830 truncated the power reply. The corrected inventory must retain the continuation through event841. The clip confirms the wording; it does not establish that the philosophical premises are true.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "0–57"
+        }
+      ],
+      "quotationRestrictions": "Do not quote the final incomplete Deuteronomy boundary fragment."
+    },
+    {
+      "clipId": "power-counterreply",
+      "moveIds": [
+        "barker-locomotive-energy-and-physical-effect"
+      ],
+      "finding": "Barker replies that a locomotive still needs external energy and that musical or mental power has a physical effect, so the figurative ability sense does not establish immaterial physical causation. This is a distinct later response to Horn's examples, not part of the preceding scriptural-language move. The exact canonical source wording is retained despite minor short-clip recognition differences.",
+      "turnMap": [
+        {
+          "speaker": "Dan Barker",
+          "segments": "0–14"
+        }
+      ],
+      "quotationRestrictions": "The first segments finish the preceding biblical comparison; quotations for this move must come from the ensuing locomotive/power argument."
+    },
+    {
+      "clipId": "closing-group-number",
+      "moveIds": [
+        "horn-paul-groups-and-empty-tomb-closing"
+      ],
+      "finding": "The short clip repeats the malformed recognition 501 sitting. Do not silently amend it to a particular number or treat it as Horn's factual mistake. The unambiguous neighboring words identify Peter, James, and groups of disciples; the selected closing warrant can describe group appearances without relying on the uncertain numeral. The earlier opening independently presents the group-appearance argument.",
+      "turnMap": [
+        {
+          "speaker": "Trent Horn",
+          "segments": "0–8"
+        }
+      ],
+      "quotationRestrictions": "Neither retained quotation uses the uncertain numeral; no numerical claim is required by the move."
+    }
+  ],
+  "clips": [
+    {
+      "id": "metaphysical-reply",
+      "startSeconds": 3052,
+      "endSeconds": 3172,
+      "durationSeconds": 120,
+      "reason": "Complete the reply concerning nothing, actuality, power, and necessary explanation.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/metaphysical-reply.m4a",
+        "sha256": "2dc15a2f83f0d1d3b3b3d1af51aef940c4d3af74e95a158a1f27b64e0994c3a2",
+        "bytes": 744125
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/metaphysical-reply.json",
+        "sha256": "f8476c67b282c92befe32513cbd4353e8c6ae78e0b2026155840c5f65e30fa36",
+        "bytes": 31211
+      },
+      "maximumCostUsd": 0.012,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/metaphysical-reply.attempt.json",
+        "sha256": "8581d2b2c3ee9c46bd047025ddc78c6302ab8141d4825f87c6191b4140c1fa3e",
+        "bytes": 697
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/metaphysical-reply.execution.json",
+        "sha256": "cf1aba0b31727a46a4a21ddbfb55238b7b5ef545647fa89e973722605028ed46",
+        "bytes": 796
+      }
+    },
+    {
+      "id": "power-counterreply",
+      "startSeconds": 3413,
+      "endSeconds": 3489,
+      "durationSeconds": 76,
+      "reason": "Verify the later locomotive and mental-power counterreply independently.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/power-counterreply.m4a",
+        "sha256": "ca514ac4ed02041ef773d91624f8f574a02de75d6e6b2ac9259b3212f172411a",
+        "bytes": 472593
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/power-counterreply.json",
+        "sha256": "da034a5e0958cadaa06b9fe313d41d290e5e904a01ff20460adbc2d143ba15cc",
+        "bytes": 11788
+      },
+      "maximumCostUsd": 0.0076,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/power-counterreply.attempt.json",
+        "sha256": "241e42c0843aea0e86bb927d85ea23ab8e214e502b85558aa2763331d7b47e52",
+        "bytes": 698
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/power-counterreply.execution.json",
+        "sha256": "c2b2a1f89c7f85a5a299f6edd4adaf3e4ee685ad8a2f44409e17895cb9688340",
+        "bytes": 798
+      }
+    },
+    {
+      "id": "prayer-test",
+      "startSeconds": 3895,
+      "endSeconds": 4027,
+      "durationSeconds": 132,
+      "reason": "Resolve both speakers and exact quote ownership in the envelope test.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.m4a",
+        "sha256": "7d537a5688c748e22e4c71b13281aa74827fa1a2a75808dc9e4aee4e72228180",
+        "bytes": 810466
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.json",
+        "sha256": "9122015ecea5440dc713f40980a4404ad3e9c58899f55dd04b94131d3597d657",
+        "bytes": 29616
+      },
+      "maximumCostUsd": 0.0132,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.attempt.json",
+        "sha256": "a02a545236940d1b4545e501023459523c4e333d0fc53b3d6b351eb3fb71ce4e",
+        "bytes": 691
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/prayer-test.execution.json",
+        "sha256": "b31663503bafdbacabcdd9afd2a24c30b55cd40f1125ce14ca21d69e8f65251d",
+        "bytes": 784
+      }
+    },
+    {
+      "id": "genocide-crosscheck",
+      "startSeconds": 4030,
+      "endSeconds": 4155,
+      "durationSeconds": 125,
+      "reason": "Resolve question and answer ownership; reject opponent words as a Barker quotation.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.m4a",
+        "sha256": "335a019a13d059f37540b0144f241ec4ad1e034e8691309185fc161c796fc05b",
+        "bytes": 736185
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.json",
+        "sha256": "0b6c8f8af98ea744b907f25304422a8d49ae01b8b8d66dc1d562c4a79cef3e2d",
+        "bytes": 23320
+      },
+      "maximumCostUsd": 0.0125,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.attempt.json",
+        "sha256": "1517df6ca0bf340cad60668e88f86f276b7453a213cb6a570b8f16033201a3fa",
+        "bytes": 699
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/genocide-crosscheck.execution.json",
+        "sha256": "74b636d5a508b6f9a45d103620e57e34bdd87f32721df14ab70f61990d753f99",
+        "bytes": 800
+      }
+    },
+    {
+      "id": "scripture-life-authority",
+      "startSeconds": 4198,
+      "endSeconds": 4358,
+      "durationSeconds": 160,
+      "reason": "Resolve speaker turns, epistemic alternatives and life-authority reply.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.m4a",
+        "sha256": "3cd5831541af0d89ae50cef01ffb4c186c10c1996cb4d07d3a8f7f1e283a1dfb",
+        "bytes": 994220
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.json",
+        "sha256": "b05ee327cda236ca472f65c38b6a870bc35d1efbaa599cc1a5f1d88d39f28aa3",
+        "bytes": 34227
+      },
+      "maximumCostUsd": 0.016,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.attempt.json",
+        "sha256": "cbbadde3a42d5511d304a013b54a63948227ef78edf655b1eb475d98c0a5b2b5",
+        "bytes": 703
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/scripture-life-authority.execution.json",
+        "sha256": "16c679d927e658af8b8d18afe65e95107252befeb5d1d4668c6145f9bc890c77",
+        "bytes": 808
+      }
+    },
+    {
+      "id": "natural-law",
+      "startSeconds": 4433,
+      "endSeconds": 4487,
+      "durationSeconds": 54,
+      "reason": "Resolve the question and Horn natural-law answer.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.m4a",
+        "sha256": "6ded8097713d917d27d77a17e89c4604ba333e62fe31a5350dc2838261dce2f4",
+        "bytes": 331975
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.json",
+        "sha256": "720f7416ee4adafdf61c57544cf585987818f302efc90c305032eba6333800eb",
+        "bytes": 12554
+      },
+      "maximumCostUsd": 0.0054,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.attempt.json",
+        "sha256": "a0249a0d65ecabf7a5a2102cbf98a2a68c12eaa2c8cef12482a5d7379122c15c",
+        "bytes": 691
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/natural-law.execution.json",
+        "sha256": "567ec6ccfe2f3128c33d8699cc194d250da0bde48c8a7deb5415421353c1585a",
+        "bytes": 784
+      }
+    },
+    {
+      "id": "objective-harm-job",
+      "startSeconds": 4484,
+      "endSeconds": 4534,
+      "durationSeconds": 50,
+      "reason": "Resolve Barker moral account and Job question versus Horn compensation reply, ending before excluded Q&A.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.m4a",
+        "sha256": "5bace22fe4c2e352fab36539a6a580c5510c497e7a0e64865d299595af0ba1ab",
+        "bytes": 309868
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.json",
+        "sha256": "cea2f8ecc374b23b66c77ed87e21dbf666869391f1847728e4eb6563c80bcca4",
+        "bytes": 10533
+      },
+      "maximumCostUsd": 0.005,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.attempt.json",
+        "sha256": "466fda32b87b3d4b2538e330858b031eaa59b34542500e24664c1f15076bdca6",
+        "bytes": 697
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/objective-harm-job.execution.json",
+        "sha256": "2f54a1f81d8d9b0da92f190a3e02e2a42396e84927c5e5ddbff9e6560ce2beab",
+        "bytes": 796
+      }
+    },
+    {
+      "id": "closing-group-number",
+      "startSeconds": 6745,
+      "endSeconds": 6765,
+      "durationSeconds": 20,
+      "reason": "Check numerical recognition without silently amending canonical text.",
+      "input": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/closing-group-number.m4a",
+        "sha256": "7c23c9357a6d1d723deb11f728b661766b37d8da7d285cb94a1497b4bd19d524",
+        "bytes": 124361
+      },
+      "output": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/closing-group-number.json",
+        "sha256": "6bf3f090f324a2e64e40119581c1308fe39aab8427a0cd346a69f8cee238be1b",
+        "bytes": 4906
+      },
+      "maximumCostUsd": 0.002,
+      "attempt": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/closing-group-number.attempt.json",
+        "sha256": "2c8578e87ff1b716489a677bb96e388a383d3fdcb1c5fa68a228d2db004923ce",
+        "bytes": 699
+      },
+      "execution": {
+        "path": ".assessment-cache/captions/bIuDfh-6iUs/inventory-verification/closing-group-number.execution.json",
+        "sha256": "00ce74a976c566bca5336a0120d487377301a4ff4fcb338f82bf0efe66ceb5be",
+        "bytes": 799
+      }
+    }
+  ],
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0.8979,
+    "maximumPossibleCostUsd": 0.8979,
+    "directCostUsd": 0.8979,
+    "additionalThisPhaseUsd": 0.0737,
+    "paidRetries": 0,
+    "transportUncertainCalls": 0,
+    "frozenFullWorkflowEstimateUsd": 0.97,
+    "authorizedMaximumUsd": 1
+  },
+  "audit": {
+    "requiredAttributionChecks": 5,
+    "completedAttributionChecks": 5,
+    "unresolvedAttributionChecks": 0,
+    "sourceTextModified": false,
+    "selectedQuotationOwnershipResolved": true,
+    "excludedQaUsed": false,
+    "directListeningClaimed": false,
+    "automaticSpeakerDiarizationClaimed": false
+  }
+}
