@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {debateSummaries} from '../src/data/debate-summaries.js';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1],port=Number(args[args.indexOf('--port')+1]);
+assert(args.includes('--debate')&&args.includes('--port'));assert.match(n,/^\d{3,}$/);assert(Number.isInteger(port)&&port>1024&&port<65536);
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json')),r=registry.debates.find(x=>x.debateNumber===n);assert(r);
+assert(debateSummaries.some(d=>d.id===r.debateId));
+const testPath='tests/site-quality/site-quality.spec.mjs',text=fs.readFileSync(testPath,'utf8');
+const baseline=Number(text.match(/baselineDebates:\s*(\d+)/)?.[1]),growth=Number(text.match(/bytesPerAddedDebate:\s*([\d_]+)/)?.[1].replaceAll('_','')),reviewAfter=Number(text.match(/reviewAfterAddedDebates:\s*(\d+)/)?.[1]);
+assert(Number.isInteger(baseline)&&Number.isInteger(growth)&&Number.isInteger(reviewAfter));
+const block=text.slice(text.indexOf('const routeBudgets = ['),text.indexOf('for (const { route, baseDataBytes, required } of routeBudgets)'));
+const routes=[...block.matchAll(/route:\s*"([^"]+)"\s*,\s*baseDataBytes:\s*([\d_]+)\s*,\s*required:\s*"([^"]+)"/g)].map(m=>({route:m[1],baseDataBytes:Number(m[2].replaceAll('_','')),required:m[3]}));
+assert.equal(routes.length,4);
+const expected={debateNumber:n,origin:'http://127.0.0.1:'+port,publishedDebates:debateSummaries.length,baselineDebates:baseline,bytesPerAddedDebate:growth,reviewAfterAddedDebates:reviewAfter,routes:routes.map(x=>({...x,limitBytes:x.baseDataBytes+Math.max(0,debateSummaries.length-baseline)*growth})),test:fileRecord(testPath),summaries:fileRecord('src/data/debate-summaries.js')};
+const body=async(page)=>{
+ const browser=page.context().browser(),measurements=[];
+ if(!browser)throw Error('Browser unavailable for fresh isolated contexts');
+ for(const route of expected.routes){const context=await browser.newContext({viewport:{width:1440,height:1000},serviceWorkers:'block'});
+  try{const p=await context.newPage();await p.goto(expected.origin+route.route,{waitUntil:'networkidle'});await p.locator('main h1').first().waitFor();
+   const resources=await p.evaluate(()=>performance.getEntriesByType('resource').filter(e=>e.name.includes('/src/data/')).map(e=>({name:new URL(e.name).pathname,bytes:e.decodedBodySize})));
+   if(!resources.some(x=>x.name.endsWith(route.required))||resources.some(x=>x.name.endsWith('/src/data/debates.js'))||resources.some(x=>x.bytes<=0))throw Error('Invalid resource measurement '+route.route);
+   const loadedBytes=resources.reduce((s,x)=>s+x.bytes,0);if(loadedBytes>route.limitBytes)throw Error('Existing effective byte ceiling exceeded: '+route.route+' '+loadedBytes+' > '+route.limitBytes);
+   measurements.push({...route,resources,loadedBytes,headroomBytes:route.limitBytes-loadedBytes});
+  }finally{await context.close();}
+ }
+ return{status:'passed-measured-existing-performance-limits',...expected,measurementMethod:'fresh-isolated-browser-context-per-route',measurements,temporaryContextsClosed:true,sharedTestsChanged:false,directIncrementalCostUsd:0};
+};
+const out='output/playwright/debate-'+n;fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(out+'/performance-measurement.js','async(page)=>{const expected='+JSON.stringify(expected)+';return ('+body.toString()+')(page);}\n',{flag:'wx'});
+console.log(JSON.stringify({status:'prepared-read-only-performance-measurement',expected}));

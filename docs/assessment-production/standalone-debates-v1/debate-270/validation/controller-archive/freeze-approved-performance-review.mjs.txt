@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1],mode=args[args.indexOf('--mode')+1];
+assert(args.includes('--debate')&&args.includes('--mode'));assert.match(n,/^\d{3,}$/);assert(['before','after'].includes(mode));
+const read=p=>JSON.parse(fs.readFileSync(p)),put=(p,o)=>fs.writeFileSync(p,JSON.stringify(o,null,2)+'\n',{flag:'wx'});
+const r=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(x=>x.debateNumber===n);assert(r);
+const dir=r.root+'/validation',testPath='tests/site-quality/site-quality.spec.mjs',text=fs.readFileSync(testPath,'utf8'),prior=dir+'/performance-test-before.mjs.txt';
+const parse=t=>({baselineDebates:Number(t.match(/baselineDebates:\s*(\d+)/)[1]),bytesPerAddedDebate:Number(t.match(/bytesPerAddedDebate:\s*([\d_]+)/)[1].replaceAll('_','')),reviewAfterAddedDebates:Number(t.match(/reviewAfterAddedDebates:\s*(\d+)/)[1]),baseDataBytes:[...t.matchAll(/baseDataBytes:\s*([\d_]+)/g)].map(m=>Number(m[1].replaceAll('_','')))});
+const auth=read(dir+'/performance-review-authorization.json');assert.equal(auth.status,'user-approved-before-measurement');
+const logPath=r.root+'/rendering/performance-measurement.log',log=fs.readFileSync(logPath,'utf8');
+const result=log.match(/### Result\s*\n([\s\S]*?)(?:\n### |$)/);assert(result,'Browser result block required');
+const m=JSON.parse(result[1].trim());assert.equal(m.status,'passed-measured-existing-performance-limits');assert.equal(m.debateNumber,n);assert.equal(m.temporaryContextsClosed,true);assert.equal(m.measurements.length,4);
+for(const row of m.measurements){assert(row.loadedBytes>0&&row.loadedBytes<=row.limitBytes);assert.equal(row.resources.reduce((s,x)=>s+x.bytes,0),row.loadedBytes);}
+if(mode==='before'){
+ assert.equal(fileRecord(testPath).sha256,m.test.sha256);assert.equal(fileRecord('src/data/debate-summaries.js').sha256,m.summaries.sha256);
+ const before=parse(text);assert.equal(before.baseDataBytes.length,4);assert.equal(before.baselineDebates,m.baselineDebates);
+ fs.copyFileSync(testPath,prior,fs.constants.COPYFILE_EXCL);
+ put(dir+'/performance-measurement.json',{...m,authorization:fileRecord(dir+'/performance-review-authorization.json'),measurementLog:fileRecord(logPath),preservedTest:fileRecord(prior),before});
+}else{
+ const frozen=read(dir+'/performance-measurement.json'),old=fs.readFileSync(prior,'utf8'),before=parse(old),after=parse(text),delta=m.publishedDebates-before.baselineDebates;
+ assert.equal(fileRecord(prior).sha256,frozen.preservedTest.sha256);assert.equal(after.baselineDebates,m.publishedDebates);assert(delta>0);
+ assert.equal(after.bytesPerAddedDebate,before.bytesPerAddedDebate);assert.equal(after.reviewAfterAddedDebates,before.reviewAfterAddedDebates);
+ assert.deepEqual(after.baseDataBytes,before.baseDataBytes.map(x=>x+delta*before.bytesPerAddedDebate));
+ const neutral=t=>t.replace(/\/\/ Debate \d+ measured review:/,'// Debate N measured review:').replace(/\/\/ debate-\d+\/validation\/performance-review.json/,'// debate-N/validation/performance-review.json').replace(/baselineDebates:\s*\d+/,'baselineDebates: N').replace(/baseDataBytes:\s*[\d_]+/g,'baseDataBytes: N');
+ assert.equal(neutral(text),neutral(old),'Only baseline, paired route bases and review comment may change');
+ const effectiveLimitsBefore=before.baseDataBytes.map(x=>x+delta*before.bytesPerAddedDebate),effectiveLimitsAfter=after.baseDataBytes;
+ assert.deepEqual(effectiveLimitsBefore,effectiveLimitsAfter);assert.deepEqual(m.routes.map(x=>x.limitBytes),effectiveLimitsBefore);
+ put(dir+'/performance-review.json',{status:'passed-measured-limit-preserving-review',debateNumber:n,publishedDebates:m.publishedDebates,authorization:fileRecord(dir+'/performance-review-authorization.json'),testBefore:{...m.test,preserved:fileRecord(prior)},testAfter:fileRecord(testPath),finalPublication:fileRecord(r.root+'/publication/output.json'),generatedSummaries:fileRecord('src/data/debate-summaries.js'),measurementMethod:m.measurementMethod,measurementLog:fileRecord(logPath),before,after,effectiveLimitsBefore,effectiveLimitsAfter,proof:`For all N >= ${after.baselineDebates}, old base + ${before.bytesPerAddedDebate}*(N-${before.baselineDebates}) equals (old base + ${delta*before.bytesPerAddedDebate}) + ${after.bytesPerAddedDebate}*(N-${after.baselineDebates}); every current and future effective byte ceiling is unchanged.`,measurements:m.measurements,temporaryContextsClosed:true,scoringMechanismChanged:false,directIncrementalCostUsd:0});
+}
+console.log(JSON.stringify({status:'performance-'+mode+'-evidence-frozen',debateNumber:n}));

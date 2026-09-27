@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-frozen-dispute-only-execution-plan",
+  "status": "frozen-before-model-execution",
+  "debateNumber": "270",
+  "debateId": "horn-barker-christian-god-2018",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/recovery/source-eligibility-1/replacement-adjudication-packet.json",
+      "sha256": "aa50481c3eb0d246138733653a22f288ac054d827f720eecce3d203b7bfb5686",
+      "bytes": 11714
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/inventory.json",
+      "sha256": "028a17a7233187982b84c25b8151ff90511e7b8a73cac17f29a1d3c69746bc94",
+      "bytes": 138931
+    },
+    {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/indexed-transcript.txt",
+      "sha256": "e903cbdcafc9fee9a8bb3df724299ffd1080e77212e6226c80ae285c6bf56bd1",
+      "bytes": 112972
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/audio/score-blind-supplement.json",
+      "sha256": "de6db97444dfb08db2eaa6796d32cdd0ad891a940f3231896ca0c89791abdafc",
+      "bytes": 15362
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 903,
+          "end": 946
+        }
+      ]
+    }
+  ],
+  "disputeCount": 2,
+  "outputPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/recovery/source-eligibility-1/adjudication/output.json",
+  "readingAuditPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/recovery/source-eligibility-1/adjudication/reading-audit.json",
+  "attempts": 1,
+  "retries": 0,
+  "forkTurns": "none",
+  "directIncrementalCostUsd": 0,
+  "requirements": [
+    "Fresh anonymous adjudicator. Read every declared input literally and completely (validator only allowed lines). Transcript chunks at most250lines; inventory/packet bounded untruncated chunks. Send reading checkpoint and wait for authenticated release before decisions.",
+    "Only anonymous dispute options are visible. Do not access either primary output or pass identity, other debates, calculated totals, winner labels, publication, biographies, external research, credentials, paidAPI or subagents. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY in shell commands. Do not call any calculator.",
+    "Resolve exactly every packet dispute once in packet order. Choose only option-a or option-b for the disputed field; never invent a new rating or change source, inventory, weights or links. Supply independently reasoned source-specific rationale at least40characters for each choice. No evaluation outside the listed disputes.",
+    "Respect the frozen audio supplement and full live replies. Never penalize caption corruption; no direct listening claimed. Only the explicitly approved formal rounds and independently stated closing premises are eligible. The entire audience Q&A and all its answers are excluded; no credit, penalty, or inference of silence may use them. Preserve the exact authorized question and distinguish criticism from an adopted positive denial or alternative-theory burden. Do not impose an unadopted positive burden or treat opposing interjections as the selected speaker premises.",
+    "Use validator schema1.0-standalone-dispute-adjudication; protocol assessment-production-standalone-debate-v1; complete-and-schema-valid; reviewerRole isolated-dispute-only-adjudicator; assessmentModel5.6 Sol; reasoningEffort low; exact debateNumber/debateId. Required isolation booleans from validator. resolutions entries contain disputeId, selectedOption, rationale.",
+    "Single first submission, no automatic retry. Self-check literal draft before first output write. Use apply_patch and only declared output/reading-audit paths; do not overwrite submitted output. No arbitrary deadline.",
+    "Resolve only this replacement packet; previous decisions, primary-pass identities, and score totals are unavailable. This is not a complete-debate rejudgment."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0-frozen-isolated-primary-instructions",
+  "debateNumber": "270",
+  "debateId": "horn-barker-christian-god-2018",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/judgment-packet.json",
+      "sha256": "f033ee283a30403e134b79d1bd0a87a00a258428d6f915ee50ace5a54c67744c",
+      "bytes": 4854
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/inventory.json",
+      "sha256": "028a17a7233187982b84c25b8151ff90511e7b8a73cac17f29a1d3c69746bc94",
+      "bytes": 138931
+    },
+    {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/indexed-transcript.txt",
+      "sha256": "e903cbdcafc9fee9a8bb3df724299ffd1080e77212e6226c80ae285c6bf56bd1",
+      "bytes": 112972
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/audio/score-blind-supplement.json",
+      "sha256": "de6db97444dfb08db2eaa6796d32cdd0ad891a940f3231896ca0c89791abdafc",
+      "bytes": 15362
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "sourceEventCount": 1516,
+  "inventoryMoveCount": 35,
+  "identity": {
+    "debateNumber": "270",
+    "debateId": "horn-barker-christian-god-2018",
+    "videoId": "bIuDfh-6iUs",
+    "canonicalUrl": "https://www.youtube.com/watch?v=bIuDfh-6iUs",
+    "sourceTitle": "Does the Christian God Exist? Trent Horn vs. Dan Barker Debate",
+    "eventYear": 2018,
+    "title": "Trent Horn vs Dan Barker — Does the Christian God Exist? (2018)",
+    "label": "The Christian God",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does the Christian God exist?",
+    "pro": {
+      "speaker": "Trent Horn",
+      "position": "Christian theism"
+    },
+    "con": {
+      "speaker": "Dan Barker",
+      "position": "Atheism"
+    },
+    "dyadic": true,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "explicitly-approved-formal-rounds-and-closings-with-entire-audience-qa-excluded",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "bIuDfh-6iUs",
+      "userApproval": "User answered Yes to the explicit recommendation to assess the openings, rebuttals, cross-examination, and closing statements while excluding audience Q&A, with scoring rules unchanged.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers the formal openings, rebuttals, and cross-examination (approximately 0:23–1:15:34), plus both closing statements (1:49:54–2:00:22). The entire audience Q&A and both speakers' answers are excluded because some audience wording remains uncertain and some interventions introduce substantive arguments. Neither speaker receives credit or penalty for excluded material; these scores assess the approved formal-rounds-and-closings scope, not the complete event.",
+      "assessedWindow": {
+        "startMs": 23120,
+        "endMs": 7222420,
+        "durationMs": 7199300
+      },
+      "excludedIntervals": [
+        {
+          "intervalId": "entire-audience-qa-and-dependent-answers",
+          "startMs": 4534000,
+          "endMs": 6594000,
+          "durationMs": 2060000,
+          "reason": "Explicit user-approved exclusion of the complete audience-question segment, moderator logistics introducing it, all audience interventions, and both primary speakers' answers and dependent replies; resume at Horn's independently stated closing remarks.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true
+        }
+      ],
+      "excludedDurationMs": 2060000,
+      "excludedShareOfAssessedWindow": 0.2861389301737669,
+      "boundaryBasis": "Exact enclosing boundaries of complete timestamped source segments, with shorter-clip verification of closing transition and recording end. Absolute video timestamps are retained.",
+      "outsideWindowDisposition": "Opening moderator logistics before the first primary-speaker turn and final applause after the completed closing argument are unscored.",
+      "coherenceReview": "The formal exchange contains each primary case, both rounds of rebuttal, and both cross-examinations. Closing claims must stand on their own or on retained formal-round evidence; excluded audience premises and responses may supply neither evidence nor an alleged unanswered objection."
+    }
+  },
+  "requirements": [
+    "Read every allowed input literally and completely, except the validator restricted to its listed lines. Transcript chunks at most 300 lines; inventory and packet in untruncated chunks. Send a reading checkpoint and wait for authenticated controller release before rating. Hashing or scripted extraction does not substitute for reading.",
+    "Fresh isolated primary assessment. Do not read the other pass, other debates, existing assessments, totals, winners, publication prose, Git history, biographies, external research, credentials or paid APIs. Use env -u OPENAI_API_KEY -u ANTHROPIC_API_KEY for shell calls. No additional agents.",
+    "Rate each locked move exactly once in inventory order on all six dimensions. Independently author values and dimension-specific source-specific rationales of at least forty characters. Do not use a formula, repeated rationale or blanket rating template. Apply rubric band anchors to the actual inference.",
+    "Assess only the explicitly approved formal rounds and closing statements. The entire audience Q&A and both speakers' answers are excluded. Preserve absolute timestamps; the transcript gap is intentional. Neither side receives credit or penalty from excluded material, including alleged unanswered objections. A closing must stand on its own stated premises or retained formal-round evidence. Moderator logistics are not arguments.",
+    "The authorized question and side mapping are in identity and must remain byte-identical. Distinguish an evidential challenge from a positive denial or moral claim actually adopted. Criticizing the affirmative case does not by itself oblige the other side to prove an entire alternative worldview. Do not score a worldview as true or false.",
+    "Audio-derived clarifications preserve raw transcription quotations. Never penalize recognition errors, silently normalize disputed verse references or Greek words, or claim to have listened to audio. Treat promptly corrected slips with their corrections. Assessment confidence is distinct from source attribution confidence.",
+    "Do not alter inventory, sections, weights, importance, burden bridges, evidence or reply links. No calculated move, section or overall scores, winner or rhetorical labels. Supply only dimension ratings and rationales plus the two independently evaluated burden-completion adjustments.",
+    "The exact nine-field eligibility object is mandatory for each burden adjustment. A nonzero value needs a distinct debate-wide consequence not captured in any selected move; double-counting forces zero. Do not use adjustments as impression bonuses or penalties.",
+    "One first submission, no automatic retries or replacements. Check the schema and full move order in memory before the first write. Never invoke a calculator. Use apply_patch only at the declared absolute output and reading-audit paths. Do not overwrite a submitted artifact. No invented deadline; continue through context compaction if necessary."
+  ],
+  "directIncrementalCostUsd": 0,
+  "attempts": 1,
+  "retries": 0,
+  "pass": "pass-b",
+  "outputPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-b/output.json",
+  "readingAuditPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-b/reading-audit.json"
+}

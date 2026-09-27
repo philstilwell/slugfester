@@ -1,0 +1,989 @@
+- generic [ref=f1e2]:
+  - link "Skip to main content" [ref=f1e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f1e4]:
+    - link "Slugfester home" [ref=f1e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f1e6]: Slugfester
+    - navigation "Primary" [ref=f1e7]:
+      - link "Debates" [ref=f1e8] [cursor=pointer]:
+        - /url: /
+      - link "Search" [ref=f1e9] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f1e10] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f1e11] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f1e12] [cursor=pointer]:
+        - /url: /insights/
+      - link "Backend" [ref=f1e13] [cursor=pointer]:
+        - /url: /backend/
+      - button "External" [ref=f1e15] [cursor=pointer]:
+        - text: External
+        - generic [aria-hidden] [ref=f1e16]: ▾
+  - main [ref=f1e17]:
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]:
+        - link "Back to debates" [ref=f1e20] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=f1e21]: "Debate 270 · The Christian God · Last rendered: 2026-09-26"
+        - heading "Trent Horn vs Dan Barker — Does the Christian God Exist? Debate year 2018" [level=1] [ref=f1e22]:
+          - text: Trent Horn vs Dan Barker — Does the Christian God Exist?
+          - generic "Debate year 2018" [ref=f1e23]: "2018"
+        - paragraph [ref=f1e24]: Does the Christian God exist?
+      - figure [aria-hidden] [ref=f1e25]
+      - complementary "Debate score summary" [ref=f1e26]:
+        - generic [ref=f1e27]:
+          - generic [ref=f1e28]: Average section score
+          - strong [ref=f1e29]: "72"
+        - generic [ref=f1e30]:
+          - generic [ref=f1e31]: Christian theism
+          - strong [ref=f1e32]: "73"
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]: Atheism
+          - strong [ref=f1e36]: "71"
+        - link "Open YouTube source" [ref=f1e38] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs
+        - link "Report a possible scorecard issue" [ref=f1e39] [cursor=pointer]:
+          - /url: /corrections/?debate=horn-barker-christian-god-2018#report-scorecard-issue
+    - region [ref=f1e40]:
+      - paragraph [ref=f1e41]: The assessment in brief
+      - heading "What decided this assessment?" [level=2] [ref=f1e42]
+      - paragraph [ref=f1e43]: Horn narrowly prevailed through stronger metaphysical replies and a resilient resurrection case, while Barker excelled on institutional accountability, scriptural morality, and textual conflict.
+      - paragraph [ref=f1e44]:
+        - text: The published overall scores favor Trent Horn by 2 points.
+        - link "Read the full overall commentary" [ref=f1e45] [cursor=pointer]:
+          - /url: "#overall-heading"
+        - text: .
+      - generic [ref=f1e46]:
+        - article [ref=f1e47]:
+          - heading "Trent Horn" [level=3] [ref=f1e48]
+          - paragraph [ref=f1e49]: A highest-scoring contribution · 79/100
+          - paragraph [ref=f1e50]: Quantum vacua are active fields, change needs actualization, mental agency illustrates causal power, and a necessary first cause differs explanatorily from the dependent things it explains.
+          - link "Read the exchange and critique" [ref=f1e51] [cursor=pointer]:
+            - /url: "#assessed-section-1"
+          - text: ·
+          - link "Watch Trent Horn's contribution at 50:54" [ref=f1e52] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3054s
+            - text: 50:54
+          - paragraph [ref=f1e53]:
+            - strong [ref=f1e54]: Why this contribution scored well.
+            - text: Horn separates vacuum fields from absence, relative motion from actualization, causal ability from physical work, and a necessary explanatory cause from dependent effects, answering Barker’s principal objections sequentially.
+          - paragraph [ref=f1e55]:
+            - strong [ref=f1e56]: A key limitation in the overall assessment.
+            - text: The doctor analogy answered isolated misconduct rather than Barker’s institutional-cover-up argument, leaving the strongest revelatory-institution challenge substantially untouched.
+        - article [ref=f1e57]:
+          - heading "Dan Barker" [level=3] [ref=f1e58]
+          - paragraph [ref=f1e59]: A highest-scoring contribution · 84/100
+          - paragraph [ref=f1e60]: The doctor analogy fails because Barker alleges coordinated institutional protection rather than isolated misconduct, preserving church-wide corruption as evidence against claims of divine revelation.
+          - link "Read the exchange and critique" [ref=f1e61] [cursor=pointer]:
+            - /url: "#assessed-section-5"
+          - text: ·
+          - link "Watch Dan Barker's contribution at 53:44" [ref=f1e62] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3224s
+            - text: 53:44
+          - paragraph [ref=f1e63]:
+            - strong [ref=f1e64]: Why this contribution scored well.
+            - text: Barker identifies the analogy's structural mismatch by contrasting one abusive doctor with an organization whose authorities allegedly reassigned, protected, and shielded offenders, then supplies the parallel hypothetical of a complicit medical association.
+          - paragraph [ref=f1e65]:
+            - strong [ref=f1e66]: A key limitation in the overall assessment.
+            - text: Barker confused pure actuality with potentiality and restricted power to physical work, attacking a position Horn had not stated.
+      - paragraph [ref=f1e67]: Drawn from this scorecard’s existing summary, critiques and overall commentary—not a new judgment. The highlighted contributions illustrate strengths; they do not alone determine the overall scores. Ties between moves use the first displayed example. Shared-side assessments describe the side, not each participant individually.
+    - region "Position quotes" [ref=f1e68]:
+      - generic [ref=f1e70]:
+        - paragraph [ref=f1e71]: Representative transcript quotes
+        - heading "Positions in their words" [level=2] [ref=f1e72]
+      - generic [ref=f1e73]:
+        - article [ref=f1e74]:
+          - generic [ref=f1e75]: Christian theism · Trent Horn
+          - blockquote [ref=f1e76]: "\"Quantum vacuums aren't nothing\""
+          - paragraph [ref=f1e77]: Horn distinguishes an active quantum vacuum from absolute absence while answering Barker’s physical and metaphysical objections.
+          - generic [aria-hidden] [ref=f1e78]: "\""
+        - article [ref=f1e79]:
+          - generic [ref=f1e80]: Atheism · Dan Barker
+          - blockquote [ref=f1e81]: "\"Women were always at the tombs\""
+          - paragraph [ref=f1e82]: Barker argues that women were expected tomb visitors before identifying concrete differences among the burial narratives.
+          - generic [aria-hidden] [ref=f1e83]: "\""
+    - region "Scoring note" [ref=f1e84]:
+      - strong [ref=f1e85]: AI-generated scorecard
+      - generic [ref=f1e86]: Scores are AI-generated estimates of argumentative performance.
+      - generic [ref=f1e87]: "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+    - region "Source and assessment scope" [ref=f1e88]:
+      - strong [ref=f1e89]: Source and assessment scope
+      - generic [ref=f1e90]: This assessment covers the formal openings, rebuttals, and cross-examination (approximately 0:23–1:15:34), plus both closing statements (1:49:54–2:00:22). The entire audience Q&A and both speakers' answers are excluded because some audience wording remains uncertain and some interventions introduce substantive arguments. Neither speaker receives credit or penalty for excluded material; these scores assess the approved formal-rounds-and-closings scope, not the complete event.
+    - region "How to read critiques" [ref=f1e91]:
+      - strong [ref=f1e92]: ◉ Deeper critiques
+      - generic [ref=f1e93]: Mouse over the ◉ symbols, or focus them with the keyboard, to open a longer critique of each scored argument.
+    - region "Debate sides" [ref=f1e94]:
+      - generic [ref=f1e95]:
+        - generic [ref=f1e96]: Christian theism
+        - generic [ref=f1e97]:
+          - generic "Interlocutor profiles" [ref=f1e98]:
+            - link "Open Trent Horn's interlocutor profile" [ref=f1e99] [cursor=pointer]:
+              - /url: /interlocutor/trent-horn/
+          - strong [ref=f1e100]: Trent Horn
+      - generic [ref=f1e101]:
+        - generic [ref=f1e102]: Atheism
+        - generic [ref=f1e103]:
+          - generic "Interlocutor profiles" [ref=f1e104]:
+            - link "Open Dan Barker's interlocutor profile" [ref=f1e105] [cursor=pointer]:
+              - /url: /interlocutor/dan-barker/
+              - generic [ref=f1e107]: DB
+          - strong [ref=f1e108]: Dan Barker
+    - region "Interlocutor score profiles" [ref=f1e109]:
+      - generic [ref=f1e112]:
+        - generic [ref=f1e113]:
+          - heading [level=3] [ref=f1e114]:
+            - link "Trent Horn" [ref=f1e115] [cursor=pointer]:
+              - /url: /interlocutor/trent-horn/
+          - generic [ref=f1e116]: 7 eligible 1-on-1 scorecards
+        - figure "Published 1-on-1 overall scores in five-point ranges. Every graph on this page uses the same vertical scale." [ref=f1e117]:
+          - generic [ref=f1e118]:
+            - generic [aria-hidden] [ref=f1e119]: Scorecards
+            - list "Trent Horn published 1-on-1 overall score distribution from 50 to 100" [ref=f1e120]:
+              - 'listitem "50–54: 0 scorecards" [ref=f1e121]':
+                - generic [aria-hidden] [ref=f1e123]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=f1e124]':
+                - generic [aria-hidden] [ref=f1e126]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=f1e127]':
+                - generic [aria-hidden] [ref=f1e129]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=f1e130]':
+                - generic [aria-hidden] [ref=f1e132]: 65–69
+              - 'listitem "70–74: 3 scorecards" [ref=f1e133]':
+                - strong [aria-hidden] [ref=f1e134]: "3"
+                - generic [aria-hidden] [ref=f1e137]: 70–74
+              - 'listitem "75–79: 3 scorecards" [ref=f1e138]':
+                - strong [aria-hidden] [ref=f1e139]: "3"
+                - generic [aria-hidden] [ref=f1e142]: 75–79
+              - 'listitem "80–84: 1 scorecard" [ref=f1e143]':
+                - strong [aria-hidden] [ref=f1e144]: "1"
+                - generic [aria-hidden] [ref=f1e147]: 80–84
+              - 'listitem "85–89: 0 scorecards" [ref=f1e148]':
+                - generic [aria-hidden] [ref=f1e150]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=f1e151]':
+                - generic [aria-hidden] [ref=f1e153]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=f1e154]':
+                - generic [aria-hidden] [ref=f1e156]: 95–100
+      - generic [ref=f1e160]:
+        - generic [ref=f1e161]:
+          - heading [level=3] [ref=f1e162]:
+            - link "Dan Barker" [ref=f1e163] [cursor=pointer]:
+              - /url: /interlocutor/dan-barker/
+          - generic [ref=f1e164]: 1 eligible 1-on-1 scorecard
+        - figure "Published 1-on-1 overall scores in five-point ranges. Every graph on this page uses the same vertical scale." [ref=f1e165]:
+          - generic [ref=f1e166]:
+            - generic [aria-hidden] [ref=f1e167]: Scorecards
+            - list "Dan Barker published 1-on-1 overall score distribution from 50 to 100" [ref=f1e168]:
+              - 'listitem "50–54: 0 scorecards" [ref=f1e169]':
+                - generic [aria-hidden] [ref=f1e171]: 50–54
+              - 'listitem "55–59: 0 scorecards" [ref=f1e172]':
+                - generic [aria-hidden] [ref=f1e174]: 55–59
+              - 'listitem "60–64: 0 scorecards" [ref=f1e175]':
+                - generic [aria-hidden] [ref=f1e177]: 60–64
+              - 'listitem "65–69: 0 scorecards" [ref=f1e178]':
+                - generic [aria-hidden] [ref=f1e180]: 65–69
+              - 'listitem "70–74: 1 scorecard" [ref=f1e181]':
+                - strong [aria-hidden] [ref=f1e182]: "1"
+                - generic [aria-hidden] [ref=f1e185]: 70–74
+              - 'listitem "75–79: 0 scorecards" [ref=f1e186]':
+                - generic [aria-hidden] [ref=f1e188]: 75–79
+              - 'listitem "80–84: 0 scorecards" [ref=f1e189]':
+                - generic [aria-hidden] [ref=f1e191]: 80–84
+              - 'listitem "85–89: 0 scorecards" [ref=f1e192]':
+                - generic [aria-hidden] [ref=f1e194]: 85–89
+              - 'listitem "90–94: 0 scorecards" [ref=f1e195]':
+                - generic [aria-hidden] [ref=f1e197]: 90–94
+              - 'listitem "95–100: 0 scorecards" [ref=f1e198]':
+                - generic [aria-hidden] [ref=f1e200]: 95–100
+    - generic [ref=f1e202]:
+      - generic [ref=f1e203]:
+        - generic [ref=f1e204]:
+          - paragraph [ref=f1e205]:
+            - link "Open YouTube source at 1:25–58:08" [ref=f1e206] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=85s
+              - text: 1:25–58:08
+          - heading "Origins, Change, and Necessary Explanation" [level=2] [ref=f1e207]
+        - generic [ref=f1e208]:
+          - generic [ref=f1e209]:
+            - generic [ref=f1e210]: Christian theism
+            - strong [ref=f1e211]: "75"
+          - generic [ref=f1e212]:
+            - generic [ref=f1e213]: Atheism
+            - strong [ref=f1e214]: "56"
+      - generic [ref=f1e215]:
+        - article [ref=f1e216]:
+          - generic [ref=f1e217]:
+            - link "Open YouTube source at 1:25" [ref=f1e219] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=85s
+              - text: 1:25
+            - generic [ref=f1e220]: Constructive
+            - strong [ref=f1e221]: "73"
+          - paragraph [ref=f1e222]: Because an infinite past could never be traversed, the universe began and requires an uncaused, timeless, immaterial, powerful personal cause possessing central divine attributes.
+          - generic [ref=f1e223]:
+            - generic [ref=f1e224]:
+              - button "Critique for Constructive" [ref=f1e225] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 73/100 · Constructive
+                - generic: "Strongest feature: Horn develops an explicit progression from a finite past to a cause beyond space and time, then distinguishes a choosing mind from causally inert abstractions, making the divine conclusion auditable. Principal limitation: The traversal analogy offers intuitive support but does not independently establish that a beginningless past is impossible, while the classification of immaterial realities and transition from timeless causation to personal choice remain undefended. Live burden: This argument directly advances the affirmative burden by proposing an uncaused origin with divine attributes, although the resurrection case must still identify that generic cause with Christianity. Locked score: 73 is warranted because the causal chain is coherent, organized, and relevant, yet its decisive finite-past premise and personal-agent inference rely on controversial bridges presented more confidently than their abbreviated defense supports."
+            - generic [ref=f1e226]: No named fallacy
+        - article [ref=f1e227]:
+          - generic [ref=f1e228]:
+            - link "Open YouTube source at 43:40" [ref=f1e230] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2620s
+              - text: 43:40
+            - generic [ref=f1e231]: Reply
+            - strong [ref=f1e232]: "52"
+          - paragraph [ref=f1e233]: By defining power as physical work over time, Barker argues that an immaterial pure actuality cannot produce physical change, challenging Horn’s claim that a powerful divine actualizer exists.
+          - generic [ref=f1e234]:
+            - generic [ref=f1e235]:
+              - button "Critique for Reply" [ref=f1e236] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 52/100 · Reply
+                - generic: "Strongest feature: Barker targets a crucial attribute in Horn’s argument and states an understandable challenge: a cause changing the physical world appears to exercise power through physical interaction and measurable consequences. Principal limitation: He treats power measured as work over time as the only causal capacity, shifts among energy, interaction, work, and causation, and repeatedly reverses Horn’s pure actuality into potentiality. Live burden: Success would damage the inference from first actualizer to an immaterial powerful being, but Barker must engage Horn’s metaphysical meaning of causal ability rather than assume a competing physical definition. Locked score: 52 is warranted because the move is relevant and recoverable, yet its central contradiction depends upon equivocation and a consequential misstatement of the position it purports to refute, leaving the divine-attribute inference substantially unanswered."
+            - generic [ref=f1e237]:
+              - link "Equivocation" [ref=f1e238] [cursor=pointer]:
+                - /url: /reference/fallacy/equivocation/?debate=horn-barker-christian-god-2018#occurrence-fallacy-equivocation-horn-barker-christian-god-2018-dan-barker-origins-change-and-necessary-explanation-43-40-reply
+              - tooltip "Equivocation Logical fallacy Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is. Power is work over time. That’s the only way that you know what power is. Open the reference page for more.":
+                - strong: Equivocation
+                - emphasis: Logical fallacy
+                - generic: Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.
+                - generic: Power is work over time. That’s the only way that you know what power is.
+                - generic: Open the reference page for more.
+        - article [ref=f1e239]:
+          - generic [ref=f1e240]:
+            - link "Open YouTube source at 3:04" [ref=f1e242] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=184s
+              - text: 3:04
+            - generic [ref=f1e243]: Constructive
+            - strong [ref=f1e244]: "73"
+          - paragraph [ref=f1e245]: Because every present change requires actualization, an instrumental regress must terminate in pure actuality, implying an immaterial, timeless, necessary, powerful, knowing, and good divine actualizer.
+          - generic [ref=f1e246]:
+            - generic [ref=f1e247]:
+              - button "Critique for Constructive" [ref=f1e248] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 73/100 · Constructive
+                - generic: "Strongest feature: Horn offers an independent theistic route that requires no temporal beginning, explaining change through act and potency and illustrating dependent causal series with train cars and a paintbrush. Principal limitation: Those analogies clarify instrumental dependence but do not demonstrate that every present change belongs to one ordered series, while knowledge, unlimited power, and goodness do not transparently follow from having no unrealized potential. Live burden: The argument centrally supports a divine actualizer even under an eternal universe, though historical evidence remains necessary to connect that metaphysical terminus specifically with Christianity. Locked score: 73 is warranted because the regress structure is coherent, important, and clearly presented, but several attribute derivations contain substantial unstated premises and the illustrative analogies cannot establish the required universal causal structure."
+            - generic [ref=f1e249]: No named fallacy
+        - article [ref=f1e250]:
+          - generic [ref=f1e251]:
+            - link "Open YouTube source at 44:49" [ref=f1e253] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2689s
+              - text: 44:49
+            - generic [ref=f1e254]: Reply
+            - strong [ref=f1e255]: "60"
+          - paragraph [ref=f1e256]: If functional complexity requires explanation, God’s ordered mind also needs one, so ending the explanatory chain with God risks special pleading rather than resolving dependence.
+          - generic [ref=f1e257]:
+            - generic [ref=f1e258]:
+              - button "Critique for Reply" [ref=f1e259] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 60/100 · Reply
+                - generic: "Strongest feature: Barker plainly reverses the explanatory demand onto the proposed divine explainer and uses the apparent order within a mind to raise a question about exempting God from scrutiny. Principal limitation: The response imports a design-from-complexity premise absent from Horn’s contingency argument and never shows that a necessary being or pure actuality possesses contingent functional complexity of the relevant kind. Live burden: Barker can sustain a stopping-point challenge by showing Horn’s necessity distinction unjustified without proving God dependent; however, his complexity reversal must address the contingency argument rather than substitute a design principle. Locked score: 60 is warranted because the challenge is coherent and material, yet the move slides from explanation to design and from contingency to complexity without engaging Horn’s distinction between dependent beings and a necessary terminus."
+            - generic [ref=f1e260]: No named fallacy
+        - article [ref=f1e261]:
+          - generic [ref=f1e262]:
+            - link "Open YouTube source at 5:08" [ref=f1e264] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=308s
+              - text: 5:08
+            - generic [ref=f1e265]: Constructive
+            - strong [ref=f1e266]: "75"
+          - paragraph [ref=f1e267]: Because brute existence and endlessly dependent universes leave contingency unexplained, the universe requires a necessary being of pure actuality that explains why anything exists.
+          - generic [ref=f1e268]:
+            - generic [ref=f1e269]:
+              - button "Critique for Constructive" [ref=f1e270] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Constructive
+                - generic: "Strongest feature: Horn organizes a recognizable explanatory trilemma, rejects an endless series of dependent universes through the chandelier analogy, and connects contingent reality to a necessary being with substantial significance. Principal limitation: Ordinary explanatory practice and the analogy support the intuition, but they do not establish a universal sufficient-reason principle, exhaust every alternative, or independently prove that the universe could have failed to exist. Live burden: The move centrally advances the affirmative case by offering a nondependent explanation for contingent reality, although its divine attributes partly depend on the preceding pure-actuality argument and Christianity needs separate identification. Locked score: 75 is warranted because the structure is clear, coherent, and strongly relevant, while the trilemma’s exclusivity, cosmic contingency, and transition from local explanation to a necessary cosmic explanation remain underargued."
+            - generic [ref=f1e271]: No named fallacy
+        - article [ref=f1e272]:
+          - generic [ref=f1e273]:
+            - link "Open YouTube source at 47:19" [ref=f1e275] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2839s
+              - text: 47:19
+            - generic [ref=f1e276]: Reply
+            - strong [ref=f1e277]: "53"
+          - paragraph [ref=f1e278]: Because physical vacua yield particles without an external divine cause, the underdefined idea of something arising from nothing does not uniquely support Horn’s creation argument.
+          - generic [ref=f1e279]:
+            - generic [ref=f1e280]:
+              - button "Critique for Reply" [ref=f1e281] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 53/100 · Reply
+                - generic: "Strongest feature: Barker presses Horn to define nothing and offers concrete physical examples involving quantum potential and black-hole radiation, questioning whether every apparent beginning requires the particular divine cause proposed. Principal limitation: He recognizes that a vacuum or quantum potential is something, then describes emergence from that structured state as creation from nothing, equivocating among semantic reference, empty space, fields, potential, and absolute absence. Live burden: The response can challenge one illustrative premise, but it must show that vacuum processes address complete nonbeing or otherwise undermine the finite-past causal inference rather than describe physical transformations. Locked score: 53 is warranted because the definitional challenge is relevant and understandable, yet the evidence concerns active physical conditions and therefore does not support the stronger conclusion about emergence without any reality or cause."
+            - generic [ref=f1e282]:
+              - link "Equivocation" [ref=f1e283] [cursor=pointer]:
+                - /url: /reference/fallacy/equivocation/?debate=horn-barker-christian-god-2018#occurrence-fallacy-equivocation-horn-barker-christian-god-2018-dan-barker-origins-change-and-necessary-explanation-47-19-reply
+              - tooltip "Equivocation Logical fallacy Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is. If you define nothing as a total empty volume of space, vacuum Open the reference page for more.":
+                - strong: Equivocation
+                - emphasis: Logical fallacy
+                - generic: Shifting the meaning of a key word or phrase during the argument, making the reasoning seem stronger than it is.
+                - generic: If you define nothing as a total empty volume of space, vacuum
+                - generic: Open the reference page for more.
+        - article [ref=f1e284]:
+          - generic [ref=f1e285]:
+            - link "Open YouTube source at 50:54" [ref=f1e287] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3054s
+              - text: 50:54
+            - generic [ref=f1e288]: Reply
+            - strong [ref=f1e289]: "79"
+          - paragraph [ref=f1e290]: Quantum vacua are active fields, change needs actualization, mental agency illustrates causal power, and a necessary first cause differs explanatorily from the dependent things it explains.
+          - generic [ref=f1e291]:
+            - generic [ref=f1e292]:
+              - button "Critique for Reply" [ref=f1e293] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 79/100 · Reply
+                - generic: "Strongest feature: Horn separates vacuum fields from absence, relative motion from actualization, causal ability from physical work, and a necessary explanatory cause from dependent effects, answering Barker’s principal objections sequentially. Principal limitation: Active fields correct the nothing terminology, but embodied mental composition does not establish disembodied causation, and the locomotive illustrates explanatory roles without proving that an uncaused divine terminus is necessary. Live burden: These clarifications substantially defend the premises connecting beginnings and change to a nonpotential cause, while the positive conclusion still depends on the original arguments surviving deeper contested assumptions. Locked score: 79 is warranted because the reply is precise, responsive, and repairs several mischaracterizations, although it sometimes declares victory before completing the defense and its examples cannot independently establish the full necessity claim."
+            - generic [ref=f1e294]: No named fallacy
+        - article [ref=f1e295]:
+          - generic [ref=f1e296]:
+            - link "Open YouTube source at 56:57" [ref=f1e298] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3417s
+              - text: 56:57
+            - generic [ref=f1e299]: Reply
+            - strong [ref=f1e300]: "60"
+          - paragraph [ref=f1e301]: Because locomotives require fuel and mental composition has physical realization, Horn’s analogies do not demonstrate that an immaterial God can exercise uncaused power without external support.
+          - generic [ref=f1e302]:
+            - generic [ref=f1e303]:
+              - button "Critique for Reply" [ref=f1e304] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 60/100 · Reply
+                - generic: "Strongest feature: Barker answers Horn’s examples directly, identifying the locomotive’s continuing dependence on fuel and the physical realization and consequences of musical composition rather than leaving the analogies uncontested. Principal limitation: Horn used the locomotive to distinguish explanatory roles, not to transfer every physical property to God, while embodied effects do not establish that every originating causal capacity reduces to physical work over time. Live burden: Barker may expose limitations in Horn’s analogies without disproving every immaterial cause, but claiming all causal capacity is physical requires independent warrant beyond these examples’ material features. Locked score: 60 is warranted because the objections expose genuine limits in the analogies and remain relevant, but they insufficiently distinguish energy, causal capacity, embodiment, and downstream effects, so they do not substantially defeat Horn’s necessary cause."
+            - generic [ref=f1e305]: No named fallacy
+    - generic [ref=f1e306]:
+      - generic [ref=f1e307]:
+        - generic [ref=f1e308]:
+          - paragraph [ref=f1e309]:
+            - link "Open YouTube source at 6:56–117:42" [ref=f1e310] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=416s
+              - text: 6:56–117:42
+          - heading "Resurrection and Textual Evidence" [level=2] [ref=f1e311]
+        - generic [ref=f1e312]:
+          - generic [ref=f1e313]:
+            - generic [ref=f1e314]: Christian theism
+            - strong [ref=f1e315]: "77"
+          - generic [ref=f1e316]:
+            - generic [ref=f1e317]: Atheism
+            - strong [ref=f1e318]: "76"
+      - generic [ref=f1e319]:
+        - article [ref=f1e320]:
+          - generic [ref=f1e321]:
+            - link "Open YouTube source at 6:56" [ref=f1e323] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=416s
+              - text: 6:56
+            - generic [ref=f1e324]: Constructive
+            - strong [ref=f1e325]: "77"
+          - paragraph [ref=f1e326]: Because early testimony reports appearances and an empty tomb despite contrary expectations, Jesus’ bodily resurrection best explains the evidence and identifies the divine cause as Christian.
+          - generic [ref=f1e327]:
+            - generic [ref=f1e328]:
+              - button "Critique for Constructive" [ref=f1e329] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 77/100 · Constructive
+                - generic: "Strongest feature: Horn supplies the indispensable bridge from generic theism to Christianity through a clear abductive case involving Paul, group appearances, hostile prior disposition, Jewish expectations, Jerusalem burial, and women discovering the tomb. Principal limitation: The presentation treats historical materials as more settled and independent than demonstrated, leaves its best-explanation standard unspecified, and attributes a shared grief-hallucination proposal that Barker later distinguishes from his actual alternative. Live burden: The move directly bears the affirmative Christian burden because bodily resurrection would identify the earlier divine cause, but reported experiences and tomb tradition require comparison against natural and legendary explanations. Locked score: 77 is warranted because the evidence is specific, organized, and highly material, while the inference remains nondeductive and its source reliability, independence, and treatment of rival hypotheses receive compressed support."
+            - generic [ref=f1e330]: No named fallacy
+        - article [ref=f1e331]:
+          - generic [ref=f1e332]:
+            - link "Open YouTube source at 41:13" [ref=f1e334] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2473s
+              - text: 41:13
+            - generic [ref=f1e335]: Reply
+            - strong [ref=f1e336]: "72"
+          - paragraph [ref=f1e337]: Because resurrection accounts conflict and receive no independent historical corroboration beyond believers, their testimony is too unreliable to provide strong evidence for the Christian God.
+          - generic [ref=f1e338]:
+            - generic [ref=f1e339]:
+              - button "Critique for Reply" [ref=f1e340] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 72/100 · Reply
+                - generic: "Strongest feature: Barker attacks the reliability and independence of evidence supporting Horn’s bridge to Christianity, arguing that failed harmonization and believer-sourced corroboration materially reduce confidence in the resurrection narrative. Principal limitation: He identifies no particular contradiction within this move, relies on analyses contained in unavailable books, and treats diverse religious miracle stories too indiscriminately to establish an informative comparison. Live burden: Weakening the resurrection sources is centrally relevant and need not prove atheism, but the challenge should separately engage the Pauline witness list, hostile disposition, cultural expectations, and empty-tomb warrants Horn offered. Locked score: 72 is warranted because textual inconsistency and absent external corroboration form a coherent, consequential objection, yet differences alone do not disprove the event and the broad claims lack source analysis needed for a stronger historical defeat."
+            - generic [ref=f1e341]: No named fallacy
+        - article [ref=f1e342]:
+          - generic [ref=f1e343]:
+            - link "Open YouTube source at 50:19" [ref=f1e345] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3019s
+              - text: 50:19
+            - generic [ref=f1e346]: Reply
+            - strong [ref=f1e347]: "79"
+          - paragraph [ref=f1e348]: Because the Gospels share an empty-tomb and appearance core while resurrection belief arose early, minor variations and comparisons with later miracle legends do not eliminate the need for explanation.
+          - generic [ref=f1e349]:
+            - generic [ref=f1e350]:
+              - button "Critique for Reply" [ref=f1e351] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 79/100 · Reply
+                - generic: "Strongest feature: Horn identifies a shared narrative core of women visiting, an empty tomb, and subsequent appearances, then contrasts Christianity’s early resurrection claim with later traditions, directly addressing two reliability objections. Principal limitation: Calling the differences minor does not demonstrate their insignificance, disagreement does not establish independent testimony rather than common tradition, and the response leaves corroboration outside believing sources largely untouched. Live burden: Defending the resurrection record is essential to the Christian bridge, but preserving an explanatory demand does not establish that bodily resurrection is preferable to every historical alternative. Locked score: 79 is warranted because the answer is focused, clear, and strongly responsive with concrete common details, while dating, source independence, and the criteria separating harmless variation from credibility-damaging conflict remain compressed or asserted rather than demonstrated."
+            - generic [ref=f1e352]: No named fallacy
+        - article [ref=f1e353]:
+          - generic [ref=f1e354]:
+            - link "Open YouTube source at 42:46" [ref=f1e356] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2566s
+              - text: 42:46
+            - generic [ref=f1e357]: Reply
+            - strong [ref=f1e358]: "75"
+          - paragraph [ref=f1e359]: Because Barker proposed private grief-related inner experiences rather than a shared hallucination, Horn’s group-hallucination rebuttal misses a plausible natural alternative and does not force a miracle.
+          - generic [ref=f1e360]:
+            - generic [ref=f1e361]:
+              - button "Critique for Reply" [ref=f1e362] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Reply
+                - generic: "Strongest feature: Barker corrects Horn’s characterization, distinguishes a mass hallucination from private grief-related inner speech, and preserves a natural alternative after Horn’s rebuttal targets an account Barker denies proposing. Principal limitation: The deceased-relative analogy establishes possibility but supplies no source-specific evidence that Peter or other disciples had such experiences, and private episodes address only part of the reported group and tomb evidence. Live burden: Barker need not prove a contrary history, yet preserving mere possibility does not show that his natural account explains the retained evidence better than bodily resurrection. Locked score: 75 is warranted because the correction is accurate, responsive, and important to fair comparison, while the alternative remains speculative, incompletely covers Horn’s evidence, and substitutes possibility for the comparative probability analysis needed to decisively defeat the resurrection inference."
+            - generic [ref=f1e363]: No named fallacy
+        - article [ref=f1e364]:
+          - generic [ref=f1e365]:
+            - link "Open YouTube source at 111:38" [ref=f1e367] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=6698s
+              - text: 111:38
+            - generic [ref=f1e368]: Reply
+            - strong [ref=f1e369]: "76"
+          - paragraph [ref=f1e370]: Shared empty-tomb details and Paul's reports of appearances to named individuals and groups support resurrection, so narrative differences and a private grief experience remain incomplete alternatives.
+          - generic [ref=f1e371]:
+            - generic [ref=f1e372]:
+              - button "Critique for Reply" [ref=f1e373] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Reply
+                - generic: "Strongest feature: Horn combines the shared empty-tomb outline, the unexpected role of women as witnesses, and Paul's reports of appearances to Peter, James, and groups, directly reinforcing the resurrection bridge required for his specifically Christian conclusion. Principal limitation: He assumes the reports are sufficiently reliable and bodily without establishing their independence or interpretation, while describing the narrative differences as minor and Barker's substantial objections as essentially untreated. Live burden: This closing must show that the retained evidence is better explained by resurrection than by textual development or private grief, without relying on the transcript's uncertain large-group numeral. Locked score: 76 reflects a strong, highly relevant reply with multiple concrete supports, tempered by unresolved questions about source reliability, bodily meaning, and the comparison with Barker's alternatives."
+            - generic [ref=f1e374]: No named fallacy
+        - article [ref=f1e375]:
+          - generic [ref=f1e376]:
+            - link "Open YouTube source at 115:36" [ref=f1e378] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=6936s
+              - text: 115:36
+            - generic [ref=f1e379]: Reply
+            - strong [ref=f1e380]: "83"
+          - paragraph [ref=f1e381]: Women were expected tomb visitors, while conflicting accounts identify different visitors, times, and tomb-opening scenes, so their presence adds little authentication and the discrepancies weaken credibility.
+          - generic [ref=f1e382]:
+            - generic [ref=f1e383]:
+              - button "Critique for Reply" [ref=f1e384] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 83/100 · Reply
+                - generic: "Strongest feature: Barker directly contests both supports in Horn's closing by explaining why women would ordinarily attend tombs and by identifying concrete variations in visitors, timing, and whether the tomb was already open. Principal limitation: His social claim that women were generally listened to is asserted rather than sourced, and he does not establish every textual detail during the debate, although his open-versus-closed comparison remains specific. Live burden: The reply need only weaken the embarrassment warrant and testimonial consistency, not prove complete fabrication, and Barker appropriately allows that some differences may be small while still affecting credibility. Locked score: 83 recognizes an unusually responsive, precise challenge whose material examples substantially undermine Horn's authenticity claims, with limited deductions for compressed documentation of custom and texts."
+            - generic [ref=f1e385]: No named fallacy
+        - article [ref=f1e386]:
+          - generic [ref=f1e387]:
+            - link "Open YouTube source at 116:40" [ref=f1e389] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=7000s
+              - text: 116:40
+            - generic [ref=f1e390]: Reply
+            - strong [ref=f1e391]: "72"
+          - paragraph [ref=f1e392]: Appearance vocabulary, vanishing episodes, and Paul's later experience fit a visionary interpretation, so reports that Jesus appeared do not independently establish an ordinary bodily resurrection.
+          - generic [ref=f1e393]:
+            - generic [ref=f1e394]:
+              - button "Critique for Reply" [ref=f1e395] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 72/100 · Reply
+                - generic: "Strongest feature: Barker offers a concrete nonbodily interpretation of Horn's appearance evidence by combining repeated appearance language, reported vanishings, and Paul's later visionary experience, thereby addressing the inference to bodily resurrection rather than merely denying it. Principal limitation: The linguistic and chronological claims are largely asserted, ordinary appearance language does not exclude physical encounters, and the proposal does not comparatively explain the reported group appearances or the empty-tomb premise. Live burden: The move must establish that a visionary reading remains sufficiently plausible to weaken bodily resurrection, without pretending that vocabulary alone decides among competing interpretations. Locked score: 72 reflects a relevant and responsive alternative with identifiable textual considerations, reduced because its semantics, chronology, source separation, and coverage of the retained evidence remain materially underdeveloped."
+            - generic [ref=f1e396]: No named fallacy
+    - generic [ref=f1e397]:
+      - generic [ref=f1e398]:
+        - generic [ref=f1e399]:
+          - paragraph [ref=f1e400]:
+            - link "Open YouTube source at 10:49–72:36" [ref=f1e401] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=649s
+              - text: 10:49–72:36
+          - heading "Scriptural Morality and Interpretation" [level=2] [ref=f1e402]
+        - generic [ref=f1e403]:
+          - generic [ref=f1e404]:
+            - generic [ref=f1e405]: Christian theism
+            - strong [ref=f1e406]: "72"
+          - generic [ref=f1e407]:
+            - generic [ref=f1e408]: Atheism
+            - strong [ref=f1e409]: "77"
+      - generic [ref=f1e410]:
+        - article [ref=f1e411]:
+          - generic [ref=f1e412]:
+            - link "Open YouTube source at 10:49" [ref=f1e414] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=649s
+              - text: 10:49
+            - generic [ref=f1e415]: Constructive
+            - strong [ref=f1e416]: "75"
+          - paragraph [ref=f1e417]: Figurative accommodation, ancient conflation of causation with permission, and surviving peoples after total-destruction claims support nonliteral readings, so troubling passages need not depict immoral divine action.
+          - generic [ref=f1e418]:
+            - generic [ref=f1e419]:
+              - button "Critique for Constructive" [ref=f1e420] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 75/100 · Constructive
+                - generic: "Strongest feature: Horn supplies several intelligible interpretive mechanisms, especially the feather metaphor and comparable ancient total-destruction language about a people who survived, giving concrete reasons not to read every troubling description literally. Principal limitation: Figurative descriptions of God's attributes do not automatically render reported actions or commands nonliteral, and the asserted theological conflation of direct causation with permission receives little documentation or passage-specific defense. Live burden: This anticipatory reply must preserve the compatibility of scripture with divine goodness by showing plausible alternative readings, while still selecting and defending the appropriate mechanism for each disputed passage. Locked score: 75 reflects a coherent, relevant defense with useful comparative evidence, constrained by shifts among metaphor, hyperbole, permission, and theological development that leave decisive interpretations unresolved."
+            - generic [ref=f1e421]: No named fallacy
+        - article [ref=f1e422]:
+          - generic [ref=f1e423]:
+            - link "Open YouTube source at 23:17" [ref=f1e425] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=1397s
+              - text: 23:17
+            - generic [ref=f1e426]: Reply
+            - strong [ref=f1e427]: "74"
+          - paragraph [ref=f1e428]: Biblical commands and depictions attribute profoundly harmful conduct to a supposedly good God, so the Bible's own good-fruit standard makes that divine character internally contradictory.
+          - generic [ref=f1e429]:
+            - generic [ref=f1e430]:
+              - button "Critique for Reply" [ref=f1e431] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 74/100 · Reply
+                - generic: "Strongest feature: Barker constructs a clear internal challenge by pairing the Bible's good-fruit standard with numerous concrete categories of attributed conduct, making the alleged conflict between perfect goodness and scriptural portrayal directly relevant to existence. Principal limitation: The rapid catalogue mixes commands, narrative reports, disasters, translations, and moral conclusions, while the argument depends on disputed premises that the cited actions are accurately divine, literal where necessary, and morally evil. Live burden: Barker must sustain those attribution and interpretation premises against Horn's distinct appeals to genre, permission, hyperbole, and context rather than treating direct quotation as automatically decisive. Locked score: 74 reflects a structurally coherent and centrally relevant incompatibility argument whose extensive examples provide substance, but whose contextual differentiation, calibration, and engagement with alternative readings remain materially incomplete."
+            - generic [ref=f1e432]: No named fallacy
+        - article [ref=f1e433]:
+          - generic [ref=f1e434]:
+            - link "Open YouTube source at 37:38" [ref=f1e436] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2258s
+              - text: 37:38
+            - generic [ref=f1e437]: Reply
+            - strong [ref=f1e438]: "79"
+          - paragraph [ref=f1e439]: Because scripture contains distinct genres and later portrays Amalekites surviving supposed total destruction, conquest language need not describe literal extermination and cannot alone establish genocide.
+          - generic [ref=f1e440]:
+            - generic [ref=f1e441]:
+              - button "Critique for Reply" [ref=f1e442] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 79/100 · Reply
+                - generic: "Strongest feature: Horn clearly separates a mixed-genre library from universal fiction and adds source-internal evidence that Amalekites continue after total-destruction language, giving a concrete reason to question a literal extermination reading. Principal limitation: Continued identification of Amalekites does not by itself determine whether the explanation is hyperbole, incomplete obedience, chronology, or differently identified groups, and the reply does not address Barker's broader moral catalogue. Live burden: The move must defeat the inference from totalizing war language to literal genocide while remaining proportionate to the limited conquest passages its evidence actually covers. Locked score: 79 reflects a strong, precise, and directly responsive interpretive defense with unusually relevant internal evidence, moderated because its preferred explanation and wider scriptural reach are not fully established."
+            - generic [ref=f1e443]: No named fallacy
+        - article [ref=f1e444]:
+          - generic [ref=f1e445]:
+            - link "Open YouTube source at 55:31" [ref=f1e447] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3331s
+              - text: 55:31
+            - generic [ref=f1e448]: Reply
+            - strong [ref=f1e449]: "74"
+          - paragraph [ref=f1e450]: Changing the label from evil to disaster leaves harmful conduct unjustified, while reported Israelite child sacrifice weakens any moral contrast used to condemn Canaanites.
+          - generic [ref=f1e451]:
+            - generic [ref=f1e452]:
+              - button "Critique for Reply" [ref=f1e453] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 74/100 · Reply
+                - generic: "Strongest feature: Barker sharply observes that changing a translation from moral evil to disaster or bad events does not justify the underlying conduct, then challenges group-based moral superiority by noting comparable Israelite practices. Principal limitation: His claim that the same word retains moral force across contexts is insecure, the child-sacrifice comparison is acknowledged as uncertain, and several violent examples are asserted without precise connections to the concluding parity claim. Live burden: The reply must show that Horn's lexical and cultural distinctions fail to resolve the moral objection, while leaving textual attribution, intention, and contextual meaning available for further dispute. Locked score: 74 reflects a coherent and responsive label-independent criticism with relevant comparative support, reduced because its linguistic warrant, historical parity, and linkage between examples remain incompletely demonstrated."
+            - generic [ref=f1e454]: No named fallacy
+        - article [ref=f1e455]:
+          - generic [ref=f1e456]:
+            - link "Open YouTube source at 39:36" [ref=f1e458] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2376s
+              - text: 39:36
+            - generic [ref=f1e459]: Reply
+            - strong [ref=f1e460]: "67"
+          - paragraph [ref=f1e461]: Some biblical evil language denotes natural disaster rather than moral wrongdoing, and divine power can bring greater goods and eternal happiness from finite suffering.
+          - generic [ref=f1e462]:
+            - generic [ref=f1e463]:
+              - button "Critique for Reply" [ref=f1e464] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 67/100 · Reply
+                - generic: "Strongest feature: Horn distinguishes natural disaster from moral wrongdoing and couples that lexical answer with a recognizable greater-good defense, directly addressing Barker's use of evil language and finite suffering as evidence of divine malevolence. Principal limitation: He provides little contextual support for the disputed word sense, and promised eternal compensation neither establishes the afterlife under dispute nor shows that intentionally causing particular suffering was morally justified. Live burden: The defense must explain why the harmful means were permissible, not merely compensable afterward, while clarifying whether God causes, permits, or transforms the relevant suffering. Locked score: 67 reflects a useful and relevant two-part reply whose core distinctions are coherent, but whose evidential support, moral justification, and dependence on contested theological premises remain substantially underdeveloped."
+            - generic [ref=f1e465]: No named fallacy
+        - article [ref=f1e466]:
+          - generic [ref=f1e467]:
+            - link "Open YouTube source at 67:12" [ref=f1e469] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=4032s
+              - text: 67:12
+            - generic [ref=f1e470]: Reply
+            - strong [ref=f1e471]: "83"
+          - paragraph [ref=f1e472]: If divinely ordered total group killing literally occurred and qualifies as genocide, defining God as perfect goodness must explain the act rather than merely relabel it.
+          - generic [ref=f1e473]:
+            - generic [ref=f1e474]:
+              - button "Critique for Reply" [ref=f1e475] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 83/100 · Reply
+                - generic: "Strongest feature: Barker builds an unusually focused conditional test from Horn's own concession that stipulated total group killing could qualify as genocide, then presses whether Horn's definition of perfect goodness actually explains the victims' treatment. Principal limitation: The exchange remains conditional because the literal occurrence and divine command are not established here, so its force depends on premises Horn elsewhere contests through nonliteral interpretation. Live burden: Barker must show that neither fullness-of-being language nor immortal continuation makes the stipulated killing good, without claiming this crosscheck independently proves the historical scenario. Locked score: 83 reflects a logically strong, precise, and highly responsive examination of the central moral-coherence burden, with only bounded deductions because its strongest implication depends on securing the disputed literal premise."
+            - generic [ref=f1e476]: No named fallacy
+        - article [ref=f1e477]:
+          - generic [ref=f1e478]:
+            - link "Open YouTube source at 70:00" [ref=f1e480] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=4200s
+              - text: 70:00
+            - generic [ref=f1e481]: Reply
+            - strong [ref=f1e482]: "67"
+          - paragraph [ref=f1e483]: Independent grounds for God and resurrection permit troubling passages to be human additions, nonliteral accounts, or exercises of divine authority over mortal life before eternity.
+          - generic [ref=f1e484]:
+            - generic [ref=f1e485]:
+              - button "Critique for Reply" [ref=f1e486] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 67/100 · Reply
+                - generic: "Strongest feature: Horn combines independent support for God and resurrection with several possible textual explanations and a substantive claim that the giver of life controls its mortal duration, addressing both scripture's status and the concrete killing objection. Principal limitation: Prior certainty risks circularly forcing an alternative explanation, while human addition, nonliteral reading, natural law, and life authority receive little passage-specific evidence selecting among them, and ownership alone does not justify every taking. Live burden: The reply must explain why a particular interpretation or exercise of authority is warranted rather than merely possible, while acknowledging Barker's explicit denial of the social-relativism attribution. Locked score: 67 reflects a relevant, multifaceted defense with genuine burden contact, limited by weak selection evidence, unresolved moral justification, and heavy dependence on already contested conclusions."
+            - generic [ref=f1e487]:
+              - link "Confirmation bias" [ref=f1e488] [cursor=pointer]:
+                - /url: /reference/bias/confirmation-bias/?debate=horn-barker-christian-god-2018#occurrence-bias-confirmation-bias-horn-barker-christian-god-2018-trent-horn-scriptural-morality-and-interpretation-70-00-reply
+              - tooltip "Confirmation bias Cognitive bias Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information. I’m not going to give up a belief in a God I know exists. Open the reference page for more.":
+                - strong: Confirmation bias
+                - emphasis: Cognitive bias
+                - generic: Seeking, interpreting, or remembering evidence in ways that favor an existing view while discounting contrary information.
+                - generic: I’m not going to give up a belief in a God I know exists.
+                - generic: Open the reference page for more.
+    - generic [ref=f1e489]:
+      - generic [ref=f1e490]:
+        - generic [ref=f1e491]:
+          - paragraph [ref=f1e492]:
+            - link "Open YouTube source at 0:37–67:05" [ref=f1e493] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=37s
+              - text: 0:37–67:05
+          - heading "Evil, Hiddenness, and Public Testing" [level=2] [ref=f1e494]
+        - generic [ref=f1e495]:
+          - generic [ref=f1e496]:
+            - generic [ref=f1e497]: Christian theism
+            - strong [ref=f1e498]: "72"
+          - generic [ref=f1e499]:
+            - generic [ref=f1e500]: Atheism
+            - strong [ref=f1e501]: "73"
+      - generic [ref=f1e502]:
+        - article [ref=f1e503]:
+          - generic [ref=f1e504]:
+            - link "Open YouTube source at 0:37" [ref=f1e506] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=37s
+              - text: 0:37
+            - generic [ref=f1e507]: Constructive
+            - strong [ref=f1e508]: "76"
+          - paragraph [ref=f1e509]: Horn classifies God's existence as philosophical rather than scientific because science addresses observable phenomena, so audiences must evaluate philosophical arguments instead of expecting scientific consensus.
+          - generic [ref=f1e510]:
+            - generic [ref=f1e511]:
+              - button "Critique for Constructive" [ref=f1e512] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Constructive
+                - generic: "Strongest feature: Horn clearly distinguishes natural explanations of observable phenomena from philosophical evaluation of immaterial realities, giving the audience an intelligible method for assessing arguments where disciplinary consensus may be unavailable. Principal limitation: His examples do not establish the categorical claim that science can never bear on any version of divine existence, especially when religious claims may entail observable consequences. Live burden: This framing must justify direct philosophical assessment without excluding relevant empirical evidence or substituting methodological classification for evidence that the Christian God actually exists. Locked score: 76 reflects a clear, coherent, and appropriately burden-focused methodological point, moderated because its science-philosophy boundary is overdrawn and because the framing itself supplies no affirmative evidence for the motion's specifically Christian conclusion."
+            - generic [ref=f1e513]: No named fallacy
+        - article [ref=f1e514]:
+          - generic [ref=f1e515]:
+            - link "Open YouTube source at 18:02" [ref=f1e517] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=1082s
+              - text: 18:02
+            - generic [ref=f1e518]: Constructive
+            - strong [ref=f1e519]: "71"
+          - paragraph [ref=f1e520]: Persistent debate and reliance on human advocates are unexpected if a revelation-capable God wants belief, so divine non-obviousness provides evidence against the Christian God's existence.
+          - generic [ref=f1e521]:
+            - generic [ref=f1e522]:
+              - button "Critique for Constructive" [ref=f1e523] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 71/100 · Constructive
+                - generic: "Strongest feature: Barker turns the observable need for advocates, proofs, and continuing debate into a straightforward hiddenness challenge, asking why a revelation-capable God would not communicate directly if belief were desired. Principal limitation: He does not establish the crucial expectation that the Christian God strongly prefers unmistakable belief from him now, so disagreement alone remains weak evidence without a developed account of divine aims. Live burden: The move must compare persistent non-obviousness under Christianity and atheism while addressing possible reasons for mediated or limited revelation rather than portraying human advocacy itself as divine weakness. Locked score: 71 reflects a coherent, relevant, and exceptionally clear opening challenge whose evidential model and governing premise about divine intentions remain too compressed to carry greater weight."
+            - generic [ref=f1e524]: No named fallacy
+        - article [ref=f1e525]:
+          - generic [ref=f1e526]:
+            - link "Open YouTube source at 34:21" [ref=f1e528] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2061s
+              - text: 34:21
+            - generic [ref=f1e529]: Reply
+            - strong [ref=f1e530]: "72"
+          - paragraph [ref=f1e531]: Evil remains logically compatible with God if suffering permits greater goods such as genuine freedom, so suffering alone does not deductively disprove divine existence.
+          - generic [ref=f1e532]:
+            - generic [ref=f1e533]:
+              - button "Critique for Reply" [ref=f1e534] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 72/100 · Reply
+                - generic: "Strongest feature: Horn clearly establishes a coherent compatibility defense by identifying moral freedom as one possible greater good, thereby blocking the claim that God and every instance of suffering are contradictory. Principal limitation: This possibility does not explain natural suffering, the severity of the hospital cases Barker emphasizes, or why an omnipotent God could not secure comparable freedom with less devastation. Live burden: Horn successfully answers only a deductive incompatibility charge, while Barker's observed pattern of apparently chance-like suffering still requires a probabilistic response rather than the demand that Barker eliminate every divine justification. Locked score: 72 reflects a useful and intelligible free-will defense that protects logical consistency, but its limited evidential reach, burden inflation, and abrupt moral-grounding reversal leave the central empirical challenge materially underanswered."
+            - generic [ref=f1e535]: No named fallacy
+        - article [ref=f1e536]:
+          - generic [ref=f1e537]:
+            - link "Open YouTube source at 21:54" [ref=f1e539] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=1314s
+              - text: 21:54
+            - generic [ref=f1e540]: Constructive
+            - strong [ref=f1e541]: "69"
+          - paragraph [ref=f1e542]: Severe childhood suffering, apparently chance-like prayer outcomes, and flourishing unbelievers conflict with expected divine protection and weaken claims that belief in God is practically necessary.
+          - generic [ref=f1e543]:
+            - generic [ref=f1e544]:
+              - button "Critique for Constructive" [ref=f1e545] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 69/100 · Constructive
+                - generic: "Strongest feature: Barker offers an expected-world comparison, arguing that desperately prayed-for children die as uncaring chance would predict while unbelievers nevertheless sustain loving, purposeful, morally serious lives without practical dependence on God. Principal limitation: The hospital illustration remains anecdotal, the asserted chance-level prayer rate receives no supporting comparison, and the leap from tragic suffering to confidently knowing that no good God exists overlooks possible theistic qualifications. Live burden: The suffering and prayer observations directly challenge anticipated divine protection, whereas successful unbelieving lives chiefly question practical necessity rather than God's existence, so these distinct claims should not carry identical motion-level weight. Locked score: 69 recognizes a relevant and concrete evidential challenge, but unsupported frequency claims, compressed expectation-setting, and categorical overstatement prevent the argument from securely converting painful examples into its conclusion."
+            - generic [ref=f1e546]: No named fallacy
+        - article [ref=f1e547]:
+          - generic [ref=f1e548]:
+            - link "Open YouTube source at 35:15" [ref=f1e550] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2115s
+              - text: 35:15
+            - generic [ref=f1e551]: Reply
+            - strong [ref=f1e552]: "67"
+          - paragraph [ref=f1e553]: God may permit nonbelief because constant awareness of divine surveillance could constrain free conduct, so religious disagreement does not constitute a strict logical contradiction with divine existence.
+          - generic [ref=f1e554]:
+            - generic [ref=f1e555]:
+              - button "Critique for Reply" [ref=f1e556] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 67/100 · Reply
+                - generic: "Strongest feature: Horn directly supplies a freedom-based explanation for divine hiddenness, proposing that less obvious divine presence may permit people to form beliefs and choose conduct without continually reacting to unmistakable supernatural surveillance. Principal limitation: He does not establish that knowledge of God's existence would eliminate meaningful rejection or disobedience, nor that the actual breadth and persistence of nonbelief are proportionate to whatever behavioral freedom obscurity might preserve. Live burden: This possible rationale defeats a strict claim that any nonbelief contradicts God, but an evidential hiddenness argument asks whether widespread uncertainty is expected under loving divine availability, not whether Barker can exclude every imaginable justification. Locked score: 67 fits a clear and responsive compatibility proposal whose speculative surveillance analogy and inflated burden assignment leave the central probability comparison substantially unresolved."
+            - generic [ref=f1e557]: No named fallacy
+        - article [ref=f1e558]:
+          - generic [ref=f1e559]:
+            - link "Open YouTube source at 46:22" [ref=f1e561] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2782s
+              - text: 46:22
+            - generic [ref=f1e562]: Reply
+            - strong [ref=f1e563]: "79"
+          - paragraph [ref=f1e564]: Claims that God answers prayer and physically affects events create observable differences from a godless universe, so Barker argues God's existence is scientifically testable.
+          - generic [ref=f1e565]:
+            - generic [ref=f1e566]:
+              - button "Critique for Reply" [ref=f1e567] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 79/100 · Reply
+                - generic: "Strongest feature: Barker narrows the methodological dispute by observing that believers who attribute answered prayers and physical outcomes to God thereby posit observable differences that can, at least in principle, be compared empirically. Principal limitation: His assertion that prayer performs no better than random chance is unsupported by studies, controls, outcome definitions, or effect sizes in the retained exchange, while a godless world could still contain coincidental apparent answers. Live burden: The argument successfully rebuts a categorical exclusion of divine activity from science, yet it tests regular physical effects rather than every conception of God or every qualified theology of prayer. Locked score: 79 rewards the direct conditional reasoning, responsiveness, and concrete observational bridge, while withholding a higher rating because the claimed empirical result and universal framing remain insufficiently demonstrated."
+            - generic [ref=f1e568]: No named fallacy
+        - article [ref=f1e569]:
+          - generic [ref=f1e570]:
+            - link "Open YouTube source at 65:00" [ref=f1e572] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3900s
+              - text: 65:00
+            - generic [ref=f1e573]: Reply
+            - strong [ref=f1e574]: "72"
+          - paragraph [ref=f1e575]: Prayer that correctly reveals concealed writing would offer striking public evidence for divine knowledge, while refusal weakens claims that broad biblical prayer promises are testable.
+          - generic [ref=f1e576]:
+            - generic [ref=f1e577]:
+              - button "Critique for Reply" [ref=f1e578] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 72/100 · Reply
+                - generic: "Strongest feature: Barker answers the falsifiability challenge with a concrete hidden target, a requested disclosure, and a statement that success would alter his view, connecting the proposal to omniscience and unrestricted prayer promises. Principal limitation: Correct revelation might indicate anomalous information transfer without proving Christianity, while one failure cannot falsify a God who may decline requests, especially after Horn explicitly introduces that qualification. Live burden: Barker need not establish an alternative theology, but he must defend his absolute reading of the cited promises before Horn's refusal or an unsuccessful demonstration can meaningfully count against qualified prayer claims. Locked score: 72 recognizes a publicly assessable evidential proposal that improves on abstract demands, yet its asymmetrical test, undefended scriptural interpretation, and treatment of a divine refusal substantially limit its falsifying force."
+            - generic [ref=f1e579]: No named fallacy
+    - generic [ref=f1e580]:
+      - generic [ref=f1e581]:
+        - generic [ref=f1e582]:
+          - paragraph [ref=f1e583]:
+            - link "Open YouTube source at 14:00–75:34" [ref=f1e584] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=840s
+              - text: 14:00–75:34
+          - heading "Moral Grounding and Christian Institutions" [level=2] [ref=f1e585]
+        - generic [ref=f1e586]:
+          - generic [ref=f1e587]:
+            - generic [ref=f1e588]: Christian theism
+            - strong [ref=f1e589]: "66"
+          - generic [ref=f1e590]:
+            - generic [ref=f1e591]: Atheism
+            - strong [ref=f1e592]: "77"
+      - generic [ref=f1e593]:
+        - article [ref=f1e594]:
+          - generic [ref=f1e595]:
+            - link "Open YouTube source at 14:00" [ref=f1e597] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=840s
+              - text: 14:00
+            - generic [ref=f1e598]: Constructive
+            - strong [ref=f1e599]: "67"
+          - paragraph [ref=f1e600]: Objective moral obligations transcend social opinion and cannot arise from merely descriptive natural laws, so universal moral commands require a perfect personal source identified as God.
+          - generic [ref=f1e601]:
+            - generic [ref=f1e602]:
+              - button "Critique for Constructive" [ref=f1e603] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 67/100 · Constructive
+                - generic: "Strongest feature: Horn converts Barker's moral condemnation into a relevant grounding question, clearly distinguishing descriptions of how nature operates from prescriptions about how persons ought to behave and proposing a universal personal source. Principal limitation: Barker's rejection of social relativism supports stance-independent judgment, but Horn provides no developed reason that moral facts must be commands, that commands require a perfect commander, or that nonpersonal moral realism and naturalistic normativity are impossible. Live burden: The move offers an additional route toward theism if its grounding bridge succeeds, although further argument would still be required to identify the source specifically with the Christian God. Locked score: 67 captures an intelligible and motion-relevant is-ought challenge whose decisive transition from objective obligation to divine personhood remains asserted rather than established."
+            - generic [ref=f1e604]: No named fallacy
+        - article [ref=f1e605]:
+          - generic [ref=f1e606]:
+            - link "Open YouTube source at 29:25" [ref=f1e608] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=1765s
+              - text: 29:25
+            - generic [ref=f1e609]: Constructive
+            - strong [ref=f1e610]: "76"
+          - paragraph [ref=f1e611]: Systemic clerical abuse and institutional protection of offenders count against a church claimed as divine revelation, because such corruption is unexpected under good divine guidance.
+          - generic [ref=f1e612]:
+            - generic [ref=f1e613]:
+              - button "Critique for Constructive" [ref=f1e614] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 76/100 · Constructive
+                - generic: "Strongest feature: Barker supplies concrete allegations across multiple jurisdictions and carefully distinguishes morally decent individual Catholics from an institution accused of protecting offenders and transferring them into unsuspecting communities, making the challenge genuinely institutional. Principal limitation: The inference depends on a stronger premise that divine revelation or guidance should reliably prevent coordinated institutional corruption, yet Barker does not specify or defend that expectation and offers no in-round documentation for the reports. Live burden: These alleged patterns can count as evidence against the church's revelatory status without directly disproving the Christian God's existence, so the argument's force remains conditional on the church-to-God evidential connection. Locked score: 76 appropriately credits a substantial, specific, and clearly framed institutional challenge while recognizing that its theological prediction and ultimate motion-level consequence remain materially incomplete."
+            - generic [ref=f1e615]: No named fallacy
+        - article [ref=f1e616]:
+          - generic [ref=f1e617]:
+            - link "Open YouTube source at 40:18" [ref=f1e619] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=2418s
+              - text: 40:18
+            - generic [ref=f1e620]: Reply
+            - strong [ref=f1e621]: "59"
+          - paragraph [ref=f1e622]: A corrupt doctor's wrongdoing does not invalidate medicine, so misconduct by church members likewise need not falsify the church's spiritual claims or justify abandoning it.
+          - generic [ref=f1e623]:
+            - generic [ref=f1e624]:
+              - button "Critique for Reply" [ref=f1e625] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 59/100 · Reply
+                - generic: "Strongest feature: Horn uses a hospital analogy to establish the legitimate point that misconduct by a practitioner does not automatically invalidate an institution's beneficial teaching or the truth of its underlying claims. Principal limitation: Barker's accusation concerns coordinated leadership protection and institutional reassignment of offenders, not merely isolated members misusing spiritual medicine, while medical benefits possess independent verification that Horn never supplies for the church's asserted saving function. Live burden: The analogy can rebut a guilt-by-association inference from individual wrongdoing, but it does little to answer whether systematic cover-up is unexpected from an institution presented as divinely guided revelation. Locked score: 59 reflects narrow reasoning and topical relevance, yet the mismatched comparison, weak independent warrant, and failure to confront the stated institutional mechanism leave the principal objection substantially unanswered."
+            - generic [ref=f1e626]:
+              - link "Red herring" [ref=f1e627] [cursor=pointer]:
+                - /url: /reference/fallacy/red-herring/?debate=horn-barker-christian-god-2018#occurrence-fallacy-red-herring-horn-barker-christian-god-2018-trent-horn-moral-grounding-and-christian-institutions-40-18-reply
+              - tooltip "Red herring Logical fallacy Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered. corrupt doctors do not make me stop going to hospitals or taking medicine Open the reference page for more.":
+                - strong: Red herring
+                - emphasis: Logical fallacy
+                - generic: Diverting attention from the issue under dispute to a related but less relevant point, leaving the original challenge insufficiently answered.
+                - generic: corrupt doctors do not make me stop going to hospitals or taking medicine
+                - generic: Open the reference page for more.
+        - article [ref=f1e628]:
+          - generic [ref=f1e629]:
+            - link "Open YouTube source at 53:44" [ref=f1e631] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=3224s
+              - text: 53:44
+            - generic [ref=f1e632]: Reply
+            - strong [ref=f1e633]: "84"
+          - paragraph [ref=f1e634]: The doctor analogy fails because Barker alleges coordinated institutional protection rather than isolated misconduct, preserving church-wide corruption as evidence against claims of divine revelation.
+          - generic [ref=f1e635]:
+            - generic [ref=f1e636]:
+              - button "Critique for Reply" [ref=f1e637] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 84/100 · Reply
+                - generic: "Strongest feature: Barker identifies the analogy's structural mismatch by contrasting one abusive doctor with an organization whose authorities allegedly reassigned, protected, and shielded offenders, then supplies the parallel hypothetical of a complicit medical association. Principal limitation: The institutional allegations are clear and relevant, but their highest-level extent is not independently documented during the debate, and even established corruption bears on God's existence only through the further premise that revelatory guidance predicts institutional protection from such conduct. Live burden: The reply successfully preserves Barker's original institutional argument and need not prove that every church member is corrupt or that no religious value exists elsewhere. Locked score: 84 reflects unusually precise comparison, strong responsiveness, and charitable separation of individuals from institutional culpability, with bounded evidential and theological gaps preventing an exceptional rating."
+            - generic [ref=f1e638]: No named fallacy
+        - article [ref=f1e639]:
+          - generic [ref=f1e640]:
+            - link "Open YouTube source at 73:55" [ref=f1e642] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=4435s
+              - text: 73:55
+            - generic [ref=f1e643]: Constructive
+            - strong [ref=f1e644]: "70"
+          - paragraph [ref=f1e645]: Universal moral facts arise from natural law grounded in God's perfect nature rather than arbitrary orders or harm aggregation, whereas Horn says atheism permits only moral opinion.
+          - generic [ref=f1e646]:
+            - generic [ref=f1e647]:
+              - button "Critique for Constructive" [ref=f1e648] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 70/100 · Constructive
+                - generic: "Strongest feature: Horn responds constructively to Barker's dictator framing by connecting morality with human nature, flourishing, and universal natural-law principles, while the example of torturing a child for amusement vividly illustrates stance-independent wrongness. Principal limitation: That intuition supports moral objectivity but does not show that objective facts uniquely derive from God's perfect nature, and Horn merely asserts that an atheistic universe permits opinion alone without excluding secular realist alternatives. Live burden: The account usefully distinguishes natural law from arbitrary command and simple harm aggregation, yet its relevance to theism depends on establishing divine grounding rather than simply naming it. Locked score: 70 recognizes a coherent, clear, and responsive moral framework with a powerful universality example, but the unsupported exclusivity claim and compressed derivation leave its central evidential bridge materially incomplete."
+            - generic [ref=f1e649]: No named fallacy
+        - article [ref=f1e650]:
+          - generic [ref=f1e651]:
+            - link "Open YouTube source at 74:45" [ref=f1e653] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=bIuDfh-6iUs&t=4485s
+              - text: 74:45
+            - generic [ref=f1e654]: Reply
+            - strong [ref=f1e655]: "73"
+          - paragraph [ref=f1e656]: Real-world harm can provide objective justification for secular moral judgments, and Job's suffering tests divine goodness even if God promises eventual unlimited compensation afterward.
+          - generic [ref=f1e657]:
+            - generic [ref=f1e658]:
+              - button "Critique for Reply" [ref=f1e659] [cursor=pointer]: ◉
+              - tooltip:
+                - strong: 73/100 · Reply
+                - generic: "Strongest feature: Barker rejects Horn's opinion-only dichotomy, appeals to objective features of experienced harm, and applies that secular standard to Job's suffering and his children's deaths as a test of divine goodness. Principal limitation: He does not define how morality is measured, derive a binding obligation from observable harm, or explain how competing harms and values should be weighted, while the characterization of Job's suffering as purposeless remains interpretively disputed. Live burden: The example preserves an intelligible secular moral challenge to attributed divine action without requiring Barker to ground every possible moral truth, although Horn's infinite-compensation reply keeps the verdict contested. Locked score: 73 credits strong responsiveness and a practical application, but the undefined objective-reality standard and incomplete normative bridge prevent the alternative account from fully answering Horn's grounding challenge."
+            - generic [ref=f1e660]: No named fallacy
+    - region [ref=f1e661]:
+      - generic [ref=f1e662]:
+        - paragraph [ref=f1e663]: Final read
+        - heading "Overall commentary" [level=2] [ref=f1e664]
+      - generic [ref=f1e665]:
+        - article [ref=f1e666]:
+          - generic [ref=f1e667]:
+            - generic [ref=f1e668]: Christian theism · Trent Horn
+            - strong [ref=f1e669]: "73"
+          - heading "Landed" [level=3] [ref=f1e670]
+          - list [ref=f1e671]:
+            - listitem [ref=f1e672]: Horn gave three distinct routes to a divine cause and defended key distinctions about nothingness, change, causal power, and necessary explanation under direct attack.
+            - listitem [ref=f1e673]: His resurrection case used early testimony, named and group appearances, and an empty-tomb core to connect generic theism with Christianity.
+            - listitem [ref=f1e674]: On conquest language, Horn offered concrete genre and survival evidence, especially the continuing Amalekite presence after total-destruction wording.
+          - heading "Whiffed" [level=3] [ref=f1e675]
+          - list [ref=f1e676]:
+            - listitem [ref=f1e677]:
+              - text: The doctor analogy answered isolated misconduct rather than Barker’s institutional-cover-up argument, leaving the strongest revelatory-institution challenge substantially untouched.
+              - link "Red herring" [ref=f1e679] [cursor=pointer]:
+                - /url: /reference/fallacy/red-herring/?debate=horn-barker-christian-god-2018
+            - listitem [ref=f1e680]:
+              - text: Horn sometimes protected scriptural claims through prior certainty and multiple unselected possibilities, weakening his explanation of divinely attributed killing.
+              - link "Confirmation bias" [ref=f1e682] [cursor=pointer]:
+                - /url: /reference/bias/confirmation-bias/?debate=horn-barker-christian-god-2018
+        - article [ref=f1e683]:
+          - generic [ref=f1e684]:
+            - generic [ref=f1e685]: Atheism · Dan Barker
+            - strong [ref=f1e686]: "71"
+          - heading "Landed" [level=3] [ref=f1e687]
+          - list [ref=f1e688]:
+            - listitem [ref=f1e689]: Barker precisely distinguished one corrupt practitioner from coordinated protection by an organization presented as a vehicle of divine revelation.
+            - listitem [ref=f1e690]: "His closing resurrection critique supplied concrete pressure points: expected women at tombs, incompatible opening scenes, and a visionary reading of appearances."
+            - listitem [ref=f1e691]: The genocide crosscheck used Horn’s conditional concession and definition of goodness, forcing afterlife compensation into direct moral comparison.
+          - heading "Whiffed" [level=3] [ref=f1e692]
+          - list [ref=f1e693]:
+            - listitem [ref=f1e694]:
+              - text: Barker confused pure actuality with potentiality and restricted power to physical work, attacking a position Horn had not stated.
+              - link "Equivocation" [ref=f1e696] [cursor=pointer]:
+                - /url: /reference/fallacy/equivocation/?debate=horn-barker-christian-god-2018
+            - listitem [ref=f1e697]:
+              - text: His quantum reply shifted between absolute nothingness and structured physical fields, undercutting the claimed counterexample to creation from nothing.
+              - link "Equivocation" [ref=f1e699] [cursor=pointer]:
+                - /url: /reference/fallacy/equivocation/?debate=horn-barker-christian-god-2018
+    - region [ref=f1e700]:
+      - generic [ref=f1e701]:
+        - generic [ref=f1e702]:
+          - paragraph [ref=f1e703]: AI contribution
+          - heading "AI Contribution" [level=2] [ref=f1e704]
+        - paragraph [ref=f1e705]: An AI-generated steelman of where each case could go next.
+      - group [ref=f1e706]:
+        - generic "Explore the AI-generated arguments Strengthened final arguments and new reinforcements for both sides" [ref=f1e707] [cursor=pointer]:
+          - generic [ref=f1e708]:
+            - strong [ref=f1e709]: Explore the AI-generated arguments
+            - generic [ref=f1e710]: Strengthened final arguments and new reinforcements for both sides
+    - region [ref=f1e712]:
+      - paragraph [ref=f1e713]: Keep exploring
+      - heading "Related debates" [level=2] [ref=f1e714]
+      - paragraph [ref=f1e715]: Follow the question further, or hear a familiar interlocutor in a different exchange. Suggestions reflect topics and participants, not an endorsement of a position.
+      - generic [ref=f1e716]:
+        - generic [ref=f1e717]:
+          - heading "Explore the same topic" [level=3] [ref=f1e718]
+          - paragraph [ref=f1e719]: Shares this debate’s primary topic; selected for overlap in its question and section headings.
+          - article [ref=f1e720]:
+            - generic [ref=f1e721]:
+              - generic "Debate 200" [ref=f1e722]: "200"
+              - generic [ref=f1e723]: Published or updated Aug 29, 2026
+            - heading [level=3] [ref=f1e724]:
+              - 'link "William Lane Craig vs Victor Stenger: Does God Exist? Debate year 2010" [ref=f1e725] [cursor=pointer]':
+                - /url: /debate/craig-stenger-god-existence-2010/
+                - text: "William Lane Craig vs Victor Stenger: Does God Exist?"
+                - generic "Debate year 2010" [ref=f1e726]: "2010"
+            - paragraph [ref=f1e727]: God and scientific naturalism
+            - generic [ref=f1e728]:
+              - generic "Interlocutor profiles" [ref=f1e729]:
+                - link "Open William Lane Craig's interlocutor profile" [ref=f1e730] [cursor=pointer]:
+                  - /url: /interlocutor/william-lane-craig/
+                - link "Open Victor Stenger's interlocutor profile" [ref=f1e731] [cursor=pointer]:
+                  - /url: /interlocutor/victor-stenger/
+              - generic "Overall side scores" [ref=f1e732]:
+                - strong [ref=f1e733]: "76"
+                - generic [aria-hidden] [ref=f1e734]: /
+                - strong [ref=f1e735]: "69"
+        - generic [ref=f1e736]:
+          - heading "A different matchup" [level=3] [ref=f1e737]
+          - paragraph [ref=f1e738]: Another debate featuring Trent Horn, with a different participant lineup.
+          - article [ref=f1e739]:
+            - generic [ref=f1e740]:
+              - generic "Debate 122" [ref=f1e741]: "122"
+              - generic [ref=f1e742]: Published or updated Aug 12, 2026
+            - heading [level=3] [ref=f1e743]:
+              - 'link "Trent Horn vs Alex O''Connor: Does God Exist? Debate year 2020" [ref=f1e744] [cursor=pointer]':
+                - /url: /debate/horn-oconnor-god-existence-2020/
+                - text: "Trent Horn vs Alex O'Connor: Does God Exist?"
+                - generic "Debate year 2020" [ref=f1e745]: "2020"
+            - paragraph [ref=f1e746]: God, contingency, and evil
+            - generic [ref=f1e747]:
+              - generic "Interlocutor profiles" [ref=f1e748]:
+                - link "Open Trent Horn's interlocutor profile" [ref=f1e749] [cursor=pointer]:
+                  - /url: /interlocutor/trent-horn/
+                - link "Open Alex O'Connor's interlocutor profile" [ref=f1e750] [cursor=pointer]:
+                  - /url: /interlocutor/alex-o-connor/
+              - generic "Overall side scores" [ref=f1e751]:
+                - strong [ref=f1e752]: "77"
+                - generic [aria-hidden] [ref=f1e753]: /
+                - strong [ref=f1e754]: "83"
+        - generic [ref=f1e755]:
+          - heading "Hear other speakers" [level=3] [ref=f1e756]
+          - paragraph [ref=f1e757]: A different set of interlocutors discussing the same primary topic.
+          - article [ref=f1e758]:
+            - generic [ref=f1e759]:
+              - generic "Debate 161" [ref=f1e760]: "161"
+              - generic [ref=f1e761]: Published or updated Aug 28, 2026
+            - heading [level=3] [ref=f1e762]:
+              - 'link "William Lane Craig vs Peter Millican: Does God Exist? Debate year 2011" [ref=f1e763] [cursor=pointer]':
+                - /url: /debate/craig-millican-does-god-exist-2011/
+                - text: "William Lane Craig vs Peter Millican: Does God Exist?"
+                - generic "Debate year 2011" [ref=f1e764]: "2011"
+            - paragraph [ref=f1e765]: God and skeptical empiricism
+            - generic [ref=f1e766]:
+              - generic "Interlocutor profiles" [ref=f1e767]:
+                - link "Open William Lane Craig's interlocutor profile" [ref=f1e768] [cursor=pointer]:
+                  - /url: /interlocutor/william-lane-craig/
+                - link "Open Peter Millican's interlocutor profile" [ref=f1e769] [cursor=pointer]:
+                  - /url: /interlocutor/peter-millican/
+              - generic "Overall side scores" [ref=f1e770]:
+                - strong [ref=f1e771]: "75"
+                - generic [aria-hidden] [ref=f1e772]: /
+                - strong [ref=f1e773]: "87"
+      - paragraph [ref=f1e774]:
+        - link "Browse all god & theism debates" [ref=f1e775] [cursor=pointer]:
+          - /url: /topics/god-theism-atheism/
+  - contentinfo [ref=f1e776]:
+    - generic [ref=f1e777]:
+      - link "Slugfester" [ref=f1e778] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=f1e779]: Transcript-grounded argument scorecards. Scores evaluate the reasoning presented, not a person's worth or a worldview's final truth.
+    - navigation "Footer" [ref=f1e780]:
+      - link "Search" [ref=f1e781] [cursor=pointer]:
+        - /url: /search/
+      - link "Topics" [ref=f1e782] [cursor=pointer]:
+        - /url: /topics/
+      - link "Rankings" [ref=f1e783] [cursor=pointer]:
+        - /url: /rankings/
+      - link "Insights" [ref=f1e784] [cursor=pointer]:
+        - /url: /insights/
+      - link "Method" [ref=f1e785] [cursor=pointer]:
+        - /url: /backend/
+      - link "Corrections" [ref=f1e786] [cursor=pointer]:
+        - /url: /corrections/
+      - link "Updates feed" [ref=f1e787] [cursor=pointer]:
+        - /url: /feed.xml
+      - link "LogFall" [ref=f1e788] [cursor=pointer]:
+        - /url: https://logfall.com/
+      - link "CogBias" [ref=f1e789] [cursor=pointer]:
+        - /url: https://cogbias.site/

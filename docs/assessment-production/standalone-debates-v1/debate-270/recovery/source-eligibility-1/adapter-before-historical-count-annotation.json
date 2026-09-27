@@ -1,0 +1,786 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "270",
+  "debateId": "horn-barker-christian-god-2018",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/openai-diarized-chunks.json",
+      "sha256": "a767fdf8251e0866dbd9370bf54c67543bc5d0709f27d63341cd1049b252db94",
+      "bytes": 1723721
+    },
+    "events": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/events.json",
+      "sha256": "99904a8f986459011efd4044b7014a4f18c882b38579814e57663c393d34a274",
+      "bytes": 229513
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/transcript.txt",
+      "sha256": "d1360f74e29fd9403993d1379747335e3832a69bff9c831113f956a7dfd27cdb",
+      "bytes": 122272
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/manifest.json",
+      "sha256": "4d9e985a3c150bec3c40627f5ca6c7ca92d6a3859721c324c0f64ea840f22bdb",
+      "bytes": 4289
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/authorization.json",
+      "sha256": "ed3f6359157af0a7e2c8ac6ac050edb616dca268bbc0ab6874fdc1f07adf8208",
+      "bytes": 6023
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/source/source-lock.json",
+      "sha256": "1464f06c6958003c828afabd443784f9b6bc428744700b91a5d2380722bd94e6",
+      "bytes": 6562
+    },
+    "editorScope": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/source/editor-scope.json",
+      "sha256": "ace799f1dc5212ff8c9d9762a8e21466757eb1f3ebecbda594348ad5a53e0cf7",
+      "bytes": 2481
+    },
+    "sourceRecoveryProvenance": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/source/source-recovery-provenance.json",
+      "sha256": "c68d01495f6ff91b277119db8c13e19f4b387cdc2630483233ae6ae02f54a6f7",
+      "bytes": 48701
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/indexed-transcript.txt",
+      "sha256": "e903cbdcafc9fee9a8bb3df724299ffd1080e77212e6226c80ae285c6bf56bd1",
+      "bytes": 112972
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/authorization.json",
+      "sha256": "ed3f6359157af0a7e2c8ac6ac050edb616dca268bbc0ab6874fdc1f07adf8208",
+      "bytes": 6023
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/manifest.json",
+      "sha256": "81aded82081e829d0ad505e85913e6291b22e076487adf1caf04e98df0e80315",
+      "bytes": 6960
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/source/source-lock.json",
+      "sha256": "1464f06c6958003c828afabd443784f9b6bc428744700b91a5d2380722bd94e6",
+      "bytes": 6562
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/inventory.json",
+      "sha256": "028a17a7233187982b84c25b8151ff90511e7b8a73cac17f29a1d3c69746bc94",
+      "bytes": 138931
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/judgment-packet.json",
+      "sha256": "f033ee283a30403e134b79d1bd0a87a00a258428d6f915ee50ace5a54c67744c",
+      "bytes": 4854
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/execution.json",
+      "sha256": "5f909d8970e5b810db41edf967d60fe0c6e8a2f87501b19911894c3f08436cb3",
+      "bytes": 4803
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-a/output.json",
+      "sha256": "c898c1675e46448ea6c0da0ac4ea96f7099eafd0179eeef32b9a25b94438c0fa",
+      "bytes": 60892
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-b/output.json",
+      "sha256": "902d61dc5b885473fab2a0d6708a25d1892bd6f0bf8c9d2273a74145fa40c8e5",
+      "bytes": 71123
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/disagreements/disagreements.json",
+      "sha256": "456d60d4f59dc994863af7a87edfb093a778dba7751c5a5596d2a8b6b9118cab",
+      "bytes": 47430
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/audio/audio-verification.json",
+      "sha256": "29aed9bdf0fb43b26857c69bb5d088ceaa4e72dfbb1ec2ff9649b63233eed7ea",
+      "bytes": 27963
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/adjudication/packet.json",
+      "sha256": "c7818cc59e03196037fbf92bed55d5216ab0cb9f92361f9510c26aa61313d67a",
+      "bytes": 193196
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/adjudication/output.json",
+      "sha256": "3fdc9faa7f14b65a9ecf1dd3cfe703041a88d9b0d075c43c2f47eaf1801fe13f",
+      "bytes": 15783
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/final-ledger/final-ledger.json",
+      "sha256": "f8d7566ec92e6be00f39181cf607c11a513f2909753511b1077ed8b0298aa7af",
+      "bytes": 322585
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/score-pass/input.json",
+      "sha256": "56e418a1570487bdb0c1f6098fd6c31fa96ab523e2ed2815a09700f26e08c993",
+      "bytes": 1639
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/score-pass/output.json",
+      "sha256": "3433f864d0759c48627f5c46be48479e17c54065a106dc849a64bbeabd2ffb2a",
+      "bytes": 17841
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/score-pass/attestation.json",
+      "sha256": "eaa1cfcc4522780da797155e9bfc2e6cbe0cdca152c3cd9ec91f7511c5a90951",
+      "bytes": 1925
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/output.json",
+      "sha256": "066067e6a9500319da180d3e5f04fce434c77e06f059aabf17404b2b3ff6a108",
+      "bytes": 73293
+    },
+    "events": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/events.json",
+      "sha256": "99904a8f986459011efd4044b7014a4f18c882b38579814e57663c393d34a274",
+      "bytes": 229513
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/transcript.txt",
+      "sha256": "d1360f74e29fd9403993d1379747335e3832a69bff9c831113f956a7dfd27cdb",
+      "bytes": 122272
+    },
+    "publicationContentParityCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/correction-content-parity.json",
+      "sha256": "e329bb602f1d0e83034410f9f2bc082ba012514b28b54965154a27ce2ffccccd",
+      "bytes": 42356
+    },
+    "publicationBeforeContentParityRepair": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/field-repair-1/preserved-prior-output.json",
+      "sha256": "b328866f9f5cf9d10b9b0ff6d3cdc77057619544b64edfb7edfb0bf72c707f9a",
+      "bytes": 66764
+    },
+    "publicationContentParityAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/content-parity-audit.json",
+      "sha256": "0203a72e833e1358fc68f124cd3fb4ca76a95c00c29cd0c9bb0d975c683336ec",
+      "bytes": 5187
+    },
+    "publicationContentParityExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/field-repair-1/execution.json",
+      "sha256": "a53e6d3d103aaf72f71ce6357e48d270cca1e46f312affd97218a2b0708a77c6",
+      "bytes": 42263
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/correction-rhetorical-tags.json",
+      "sha256": "1b74c7dd9cd814810cf24f65da3b48aabc430be98d7d5627d40f7b167d1c2165",
+      "bytes": 2680
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "4cc2495d91c955aba85260697015e77c362b84207d1d2e07ada075e816778202",
+      "bytes": 99150
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "e56b4597fe8c3fcbd93a9d8e835a23bd6a941414f3fbfb0fe6d08c4352a0f7ba",
+      "bytes": 5364
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/rendering/post-rhetorical-tag-audit-1.json",
+      "sha256": "1716922ada0500b49e1b7d12cd58f8d2969d0f4a07e0b2b6e124de20ec802317",
+      "bytes": 1222
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "270",
+    "debateId": "horn-barker-christian-god-2018",
+    "sections": [
+      {
+        "sectionId": "metaphysical-explanations",
+        "title": "Origins, Change, and Necessary Explanation",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "horn-finite-past-first-cause",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 80,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 68
+                },
+                "score": 73
+              },
+              {
+                "moveId": "horn-change-pure-actuality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 81,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 66
+                },
+                "score": 73
+              },
+              {
+                "moveId": "horn-contingency-necessary-being",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 81,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 69
+                },
+                "score": 75
+              },
+              {
+                "moveId": "horn-quantum-and-actuality-clarification",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 89,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 72
+                },
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 56,
+            "moves": [
+              {
+                "moveId": "barker-power-physical-contradiction",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 48,
+                  "evidenceWarrant": 47,
+                  "responsiveness": 56,
+                  "relevanceBurden": 61,
+                  "precisionClarity": 62,
+                  "calibrationCharity": 42
+                },
+                "score": 52
+              },
+              {
+                "moveId": "barker-explanation-reversal-to-god",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 60,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 55,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 56
+                },
+                "score": 60
+              },
+              {
+                "moveId": "barker-quantum-something-from-nothing",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 48,
+                  "evidenceWarrant": 52,
+                  "responsiveness": 58,
+                  "relevanceBurden": 62,
+                  "precisionClarity": 48,
+                  "calibrationCharity": 54
+                },
+                "score": 53
+              },
+              {
+                "moveId": "barker-locomotive-energy-and-physical-effect",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 56,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 61,
+                  "relevanceBurden": 62,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 57
+                },
+                "score": 60
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "resurrection-and-textual-evidence",
+        "title": "Resurrection and Textual Evidence",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "horn-resurrection-best-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 84,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 64
+                },
+                "score": 77
+              },
+              {
+                "moveId": "horn-resurrection-core-and-early-origin",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 86,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 73
+                },
+                "score": 79
+              },
+              {
+                "moveId": "horn-paul-groups-and-empty-tomb-closing",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 83,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 65
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "barker-resurrection-textual-conflict",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 78,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 61
+                },
+                "score": 72
+              },
+              {
+                "moveId": "barker-grief-and-natural-alternative",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 87,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 74
+                },
+                "score": 75
+              },
+              {
+                "moveId": "barker-women-and-tomb-conflicts-closing",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 91,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 80
+                },
+                "score": 83
+              },
+              {
+                "moveId": "barker-appearance-as-vision-closing",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 83,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 68,
+                  "calibrationCharity": 60
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "scripture-morality-and-interpretation",
+        "title": "Scriptural Morality and Interpretation",
+        "weightPercent": 22,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "horn-nonliteral-and-conquest-language",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 81,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 68
+                },
+                "score": 75
+              },
+              {
+                "moveId": "horn-bible-genres-and-amalekite-survival",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 83,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 71
+                },
+                "score": 79
+              },
+              {
+                "moveId": "horn-evil-language-and-compensation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 75,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 76,
+                  "calibrationCharity": 58
+                },
+                "score": 67
+              },
+              {
+                "moveId": "horn-scripture-alternatives-and-life-authority",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 75,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 56
+                },
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "barker-good-god-evil-fruit",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 78,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 70,
+                  "calibrationCharity": 53
+                },
+                "score": 74
+              },
+              {
+                "moveId": "barker-ra-and-israelite-parity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 82,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 67
+                },
+                "score": 74
+              },
+              {
+                "moveId": "barker-genocide-goodness-crosscheck",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 81
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "evil-hiddenness-and-testing",
+        "title": "Evil, Hiddenness, and Public Testing",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 72,
+            "moves": [
+              {
+                "moveId": "horn-philosophical-question-framing",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 81,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 70
+                },
+                "score": 76
+              },
+              {
+                "moveId": "horn-evil-compatible-with-greater-good",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 68,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              },
+              {
+                "moveId": "horn-nonbelief-preserves-freedom",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 76,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 60
+                },
+                "score": 67
+              }
+            ]
+          },
+          "con": {
+            "score": 73,
+            "moves": [
+              {
+                "moveId": "barker-debate-as-hiddenness-evidence",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 80,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 66
+                },
+                "score": 71
+              },
+              {
+                "moveId": "barker-suffering-prayer-and-need",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 80,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 55
+                },
+                "score": 69
+              },
+              {
+                "moveId": "barker-scientific-testability-and-prayer",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 90,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 75
+                },
+                "score": 79
+              },
+              {
+                "moveId": "barker-prayer-envelope-test",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 66,
+                  "evidenceWarrant": 62,
+                  "responsiveness": 83,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 66
+                },
+                "score": 72
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-grounding-and-institutions",
+        "title": "Moral Grounding and Christian Institutions",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 66,
+            "moves": [
+              {
+                "moveId": "horn-moral-commands-require-person",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 62,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 78,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 62
+                },
+                "score": 67
+              },
+              {
+                "moveId": "horn-corrupt-doctor-church-analogy",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 61,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 49,
+                  "relevanceBurden": 60,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 58
+                },
+                "score": 59
+              },
+              {
+                "moveId": "horn-natural-law-universal-facts",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 68,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 80,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 62
+                },
+                "score": 70
+              }
+            ]
+          },
+          "con": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "barker-church-abuse-against-revelation",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 81,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 74
+                },
+                "score": 76
+              },
+              {
+                "moveId": "barker-church-analogy-inapt",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 78,
+                  "responsiveness": 93,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 81
+                },
+                "score": 84
+              },
+              {
+                "moveId": "barker-objective-harm-and-job-test",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 86,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 71,
+                  "calibrationCharity": 72
+                },
+                "score": 73
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 73.08,
+        "burdenCompletionAdjustment": 0,
+        "score": 73
+      },
+      "con": {
+        "weightedSectionMean": 71.08,
+        "burdenCompletionAdjustment": 0,
+        "score": 71
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 2,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1,
+      "maximumDistance": 3,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 35,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

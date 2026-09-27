@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0-independent-rhetorical-review-execution",
+  "status": "passed-two-blind-reviews-adjudication-and-final-definition-check",
+  "debateNumber": "270",
+  "debateId": "horn-barker-christian-god-2018",
+  "model": {
+    "slug": "gpt-5.6-sol",
+    "label": "5.6 Sol",
+    "reasoningEffort": "low"
+  },
+  "isolation": {
+    "existingTagsUnavailable": true,
+    "reviewerOutputsUnavailableToOtherReviewer": true,
+    "scoresUnavailable": true
+  },
+  "catalogSnapshot": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/catalog-snapshot.json",
+    "sha256": "f1156bfc6faa312a15fdbed3895cf6baaf86499213f2d923a4d824baa5d3bd95",
+    "bytes": 5059
+  },
+  "sourcePacket": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/packet.json",
+    "sha256": "08b14b33e9fe2b21caead0de3fcc39557f2122b75cb9f20822297db0d864e48b",
+    "bytes": 142778
+  },
+  "contexts": [
+    {
+      "role": "blind-review-a",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "08b14b33e9fe2b21caead0de3fcc39557f2122b75cb9f20822297db0d864e48b",
+        "bytes": 142778
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/pass-a-replacement-1/output.json",
+        "sha256": "bc8cf1168f2c42ee75b45b17c844d8c6eec876ca695cd7236e583af8f8081bc8",
+        "bytes": 44752
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/pass-a-replacement-1/execution.json",
+        "sha256": "20e7a9e8294dae94c49a96efa02e1c1036be5499de4268dc02b0d41355f757dd",
+        "bytes": 2487
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "blind-review-b",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/packet.json",
+        "sha256": "08b14b33e9fe2b21caead0de3fcc39557f2122b75cb9f20822297db0d864e48b",
+        "bytes": 142778
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/pass-b/output.json",
+        "sha256": "f11f3947274942c2adc4d8df7b015355e1f96270b42bbdcfe8f589f4a4c15938",
+        "bytes": 86971
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/pass-b/execution.json",
+        "sha256": "827fef8dbe227def0492a08fca8e3b949d8a3778764f6e87ff1e83748418df9e",
+        "bytes": 2405
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    },
+    {
+      "role": "anonymous-adjudication",
+      "input": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/adjudication/input.json",
+        "sha256": "d8f2bb2eef8264fa696cf8614302c7349226dfb5b37b85fe5cf0cebb0aae0eb6",
+        "bytes": 177249
+      },
+      "output": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/adjudication/output.json",
+        "sha256": "a436260a3803a0f353476be9bd25adf24c9e2dc18ef2f8998d8690ee98ec3bbe",
+        "bytes": 28215
+      },
+      "authentication": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/adjudication/execution.json",
+        "sha256": "3a08d056ed561796edabc9f8f6f2bcadbda53331196a94d5da4effc6aa719bf2",
+        "bytes": 2458
+      },
+      "attempts": 1,
+      "retries": 0,
+      "directIncrementalCostUsd": 0
+    }
+  ],
+  "controllerDefinitionCheck": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/controller-definition-check.json",
+    "sha256": "69ef7eb428ba49a281441b8a0b69807e73298d402d88761ac6894359125903cb",
+    "bytes": 12112
+  },
+  "audit": {
+    "blindReviews": 2,
+    "anonymousAdjudicators": 1,
+    "retries": 0,
+    "directIncrementalCostUsd": 0,
+    "controllerOverrides": 5,
+    "rejectedReasonClarifications": 4
+  },
+  "exceptionalReplacement": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/replacement-authorization.json",
+      "sha256": "b3b4a5de585ce0a52c6fa4a9caa20bf9e5d35668128735efe1fa7845da8ab874",
+      "bytes": 1861
+    },
+    "failedOriginalReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/pass-a/execution.json",
+      "sha256": "8a8dbf100d33727165e98b54ce751801883a894f5d73d8ce33832390716a2c9d",
+      "bytes": 2404
+    },
+    "failedOriginalQualityReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/publication/rhetorical-tag-review-1/pass-a/controller-quality-rejection.json",
+      "sha256": "e98efd5a43dbab48810899f2e1a3713d27de5c800f81d26e95fcd0f514a394b6",
+      "bytes": 8139
+    },
+    "historicalBlindReviewAttempts": 3,
+    "acceptedBlindReviews": 2,
+    "exceptionalReplacements": 1,
+    "retriesWithinContexts": 0
+  }
+}

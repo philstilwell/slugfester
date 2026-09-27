@@ -1,0 +1,12 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {fileRecord} from '../scripts/lib/assessment-production-standalone-debate-v1.mjs';
+const args=process.argv.slice(2),n=args[args.indexOf('--debate')+1];assert(args.includes('--debate'));assert.match(n,/^\d{3,}$/);
+const read=p=>JSON.parse(fs.readFileSync(p)),registry=read('docs/assessment-production/standalone-debates-v1/registry.json'),r=registry.debates.find(x=>x.debateNumber===n),dir=r.root+'/recovery/source-eligibility-1',recovery=read(r.sourceEligibilityRecovery.auditPath),p=r.productionLedger.path,adapter=read(p);
+assert.equal(recovery.status,'passed-four-field-recovery-and-single-replacement-calculation');assert.equal(adapter.debateNumber,n);assert.equal(adapter.audit.scorePasses,1);assert(!adapter.sourceEligibilityRecovery);
+const before=fileRecord(p),preserved=dir+'/adapter-before-historical-count-annotation.json';fs.copyFileSync(p,preserved,fs.constants.COPYFILE_EXCL);
+adapter.sourceEligibilityRecovery={authority:fileRecord(r.sourceEligibilityRecovery.authorityPath),audit:fileRecord(r.sourceEligibilityRecovery.auditPath),replay:fileRecord(dir+'/audit-replay.mjs')};
+adapter.audit.scorePassCountScope='The accepted editor-authorized replacement cycle only; not a count of all historical calculations.';
+adapter.audit.historicalScorePasses=2;adapter.audit.originalInvalidCalculationsPreserved=1;adapter.audit.approvedReplacementCalculations=1;adapter.audit.furtherCalculationPermitted=false;
+fs.writeFileSync(p,JSON.stringify(adapter,null,2)+'\n');
+fs.writeFileSync(dir+'/adapter-history-annotation.json',JSON.stringify({status:'mechanical-provenance-annotation-only',debateNumber:n,before,preserved:fileRecord(preserved),after:fileRecord(p),calculatedScoreBytesChanged:false,judgmentChanges:0,scoringCodeChanges:0,historicalCalculationCount:2},null,2)+'\n',{flag:'wx'});
+assert.deepEqual(adapter.calculated,read(preserved).calculated);console.log('Adapter records one accepted cycle and both historical calculations explicitly.');

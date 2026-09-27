@@ -1,0 +1,68 @@
+{
+  "status": "passed-direct-desktop-and-mobile-review",
+  "debateNumber": "270",
+  "publicationSha256": "066067e6a9500319da180d3e5f04fce434c77e06f059aabf17404b2b3ff6a108",
+  "previewPort": 4270,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": {
+    "allLockedCardsPresent": true,
+    "correctTitleMotionSourcePositionsScoresByline": true,
+    "acceptedTagsAndOverallLinksRendered": true,
+    "aiDefaultCollapsedPointerEnterSpacePassedBothViewports": true,
+    "critiquePointerEnterSpaceFocusPassedBothViewports": true,
+    "mobileCritiqueDoesNotInterceptDistantControl": true,
+    "biographyLeftDesktopAboveMobile": true,
+    "bothSpeakerPortraitsLoaded": true,
+    "homeSearchTopicsSitemapBothProfilesContainDebate": true,
+    "rankingsComparisonContainsBothSpeakers": true,
+    "visualInspectionPassed": true
+  },
+  "audit": {
+    "runtimeFailures": 0,
+    "failedResources": 0,
+    "horizontalOverflowFailures": 0,
+    "emptyArgumentCards": 0,
+    "temporaryBrowsersRemaining": 0,
+    "temporaryServersRemaining": 0
+  },
+  "screenshotPaths": [
+    "output/playwright/debate-270/desktop-header.png",
+    "output/playwright/debate-270/mobile-header.png",
+    "output/playwright/debate-270/desktop-ai-open.png",
+    "output/playwright/debate-270/mobile-ai-open.png",
+    "output/playwright/debate-270/desktop-ai-closed.png",
+    "output/playwright/debate-270/mobile-ai-closed.png",
+    "output/playwright/debate-270/desktop-critique.png",
+    "output/playwright/debate-270/mobile-critique.png",
+    "output/playwright/debate-270/desktop-dan-barker-profile.png",
+    "output/playwright/debate-270/mobile-dan-barker-profile.png",
+    "output/playwright/debate-270/desktop-trent-horn-profile.png",
+    "output/playwright/debate-270/mobile-trent-horn-profile.png",
+    "output/playwright/debate-270/backend-distribution.png"
+  ],
+  "snapshotPaths": [
+    "output/playwright/debate-270/desktop-snapshot.md",
+    "output/playwright/debate-270/mobile-snapshot.md",
+    "output/playwright/debate-270/backend-snapshot.md"
+  ],
+  "consolePath": "docs/assessment-production/standalone-debates-v1/debate-270/validation/browser-console.log",
+  "networkPath": "docs/assessment-production/standalone-debates-v1/debate-270/rendering/final-runtime.log",
+  "observations": [
+    "Direct visual inspection of all 13 screenshots found readable desktop/mobile text, no clipping, and no page-width overflow. The site's intentionally scrollable narrow navigation remains separate from page overflow.",
+    "Both viewport interaction checks found 35 exact argument descriptions, four card tags, four correct overall reference links, correct source/title/year/positions, native AI accordion pointer/Enter/Space behavior, critique pointer/Enter/Space and retained focus, and no immediate distant-control interception.",
+    "All 16 route/viewport runtime checks passed with zero console errors, request failures or failed responses. Both source snapshots contain the exact approved audience-Q&A exclusion disclosure; the sitemap includes the canonical new debate route.",
+    "Trent Horn's existing portrait loads. Dan Barker uses the authorized DB initials fallback; no new portrait was generated. Both biography blocks are left of the graph on desktop and above it on phone.",
+    "Backend derived analytics and rendered graph independently match all 270 published debates: 2952 section-side scores, range 48–95, every two-point bucket and vertical axis; the new debate contributes ten existing section scores, with no score recalculation.",
+    "Four fresh-context data-download measurements passed unchanged effective limits. The approved baseline update preserves current and future ceilings algebraically; the measured review record is frozen.",
+    "A temporary UI checker initially logged its receipt instead of returning it through the browser transport. All assertions completed without a website failure; original checker bytes/log remain preserved. Changing only the receipt return made success explicit, and both viewport runs passed. The installed CLI uses requests rather than the older documented network command; complete runtime request/response listeners provide the authoritative network evidence. No site behavior or test assertion was weakened."
+  ]
+}

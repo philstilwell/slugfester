@@ -12823,5 +12823,52 @@ export const debateSummaries = [
         "title": "Agency, control, and withholding"
       }
     ]
+  },
+  {
+    "id": "horn-barker-christian-god-2018",
+    "number": "270",
+    "title": "Trent Horn vs Dan Barker — Does the Christian God Exist?",
+    "year": 2018,
+    "label": "The Christian God",
+    "date": "2026-09-26",
+    "duration": "2 hr 0 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=bIuDfh-6iUs",
+    "motion": "Does the Christian God exist?",
+    "summary": "Horn narrowly prevailed through stronger metaphysical replies and a resilient resurrection case, while Barker excelled on institutional accountability, scriptural morality, and textual conflict.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "Trent Horn",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheism",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 71,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Origins, Change, and Necessary Explanation"
+      },
+      {
+        "title": "Resurrection and Textual Evidence"
+      },
+      {
+        "title": "Scriptural Morality and Interpretation"
+      },
+      {
+        "title": "Evil, Hiddenness, and Public Testing"
+      },
+      {
+        "title": "Moral Grounding and Christian Institutions"
+      }
+    ]
   }
 ];

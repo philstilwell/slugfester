@@ -1,0 +1,14 @@
+async(page)=>{const expected={"number":"270","origin":"http://127.0.0.1:4270","total":2952,"range":"48–95","buckets":[{"start":48,"end":49,"count":1},{"start":50,"end":51,"count":1},{"start":52,"end":53,"count":1},{"start":54,"end":55,"count":1},{"start":56,"end":57,"count":3},{"start":58,"end":59,"count":8},{"start":60,"end":61,"count":8},{"start":62,"end":63,"count":13},{"start":64,"end":65,"count":35},{"start":66,"end":67,"count":46},{"start":68,"end":69,"count":70},{"start":70,"end":71,"count":115},{"start":72,"end":73,"count":170},{"start":74,"end":75,"count":176},{"start":76,"end":77,"count":263},{"start":78,"end":79,"count":309},{"start":80,"end":81,"count":355},{"start":82,"end":83,"count":364},{"start":84,"end":85,"count":323},{"start":86,"end":87,"count":273},{"start":88,"end":89,"count":227},{"start":90,"end":91,"count":137},{"start":92,"end":93,"count":41},{"start":94,"end":95,"count":12}],"axisMaximum":420,"newDebate":{"id":"horn-barker-christian-god-2018","number":"270","scores":[75,56,77,76,72,77,72,73,66,77]}};return (async(page)=>{
+ const check=(v,m)=>{if(!v)throw Error(m);};
+ await page.goto(expected.origin+'/backend/',{waitUntil:'networkidle'});
+ const chart=page.locator('#rubric-quality-check');await chart.waitFor();
+ const summary=(await chart.locator('.section-score-distribution-summary dd').allTextContents()).map(x=>x.trim());
+ check(JSON.stringify(summary)===JSON.stringify([expected.total.toLocaleString('en-US'),expected.range,'2 points']),'Backend summary');
+ const labels=await chart.locator('.section-score-bucket').evaluateAll(es=>es.map(e=>e.getAttribute('aria-label')));
+ const required=expected.buckets.map(b=>b.start+'–'+b.end+' percent: '+b.count.toLocaleString('en-US')+' section-side score'+(b.count===1?'':'s'));
+ check(JSON.stringify(labels)===JSON.stringify(required),'Every backend bucket');
+ check((await chart.locator('.section-score-y-axis span').first().innerText())===expected.axisMaximum.toLocaleString('en-US'),'Backend vertical scale');
+ check(!(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)),'Backend overflow');
+ await chart.scrollIntoViewIfNeeded();await page.screenshot({path:'output/playwright/debate-'+expected.number+'/backend-distribution.png'});
+ return{status:'passed-rendered-backend-catalogue-reconciliation',total:expected.total,range:expected.range,buckets:expected.buckets,newDebateContribution:expected.newDebate,horizontalOverflow:false};
+})(page);}

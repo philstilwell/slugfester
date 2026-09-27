@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-frozen-primary-execution-plan",
+  "status": "frozen-before-primary-execution",
+  "createdAt": "2026-09-26T22:59:38.755Z",
+  "debateNumber": "270",
+  "debateId": "horn-barker-christian-god-2018",
+  "execution": {
+    "model": "gpt-5.6-sol",
+    "displayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "freshContextPerPass": true,
+    "forkTurns": "none",
+    "inventorySha256": "028a17a7233187982b84c25b8151ff90511e7b8a73cac17f29a1d3c69746bc94",
+    "isolation": "Protocol-restricted fresh built-in contexts and disjoint output paths; not an operating-system filesystem sandbox."
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/judgment-packet.json",
+      "sha256": "f033ee283a30403e134b79d1bd0a87a00a258428d6f915ee50ace5a54c67744c",
+      "bytes": 4854
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/inventory/inventory.json",
+      "sha256": "028a17a7233187982b84c25b8151ff90511e7b8a73cac17f29a1d3c69746bc94",
+      "bytes": 138931
+    },
+    {
+      "path": ".assessment-cache/captions/bIuDfh-6iUs/indexed-transcript.txt",
+      "sha256": "e903cbdcafc9fee9a8bb3df724299ffd1080e77212e6226c80ae285c6bf56bd1",
+      "bytes": 112972
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-270/audio/score-blind-supplement.json",
+      "sha256": "de6db97444dfb08db2eaa6796d32cdd0ad891a940f3231896ca0c89791abdafc",
+      "bytes": 15362
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 636,
+          "end": 795
+        }
+      ]
+    }
+  ],
+  "passes": [
+    {
+      "pass": "pass-a",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-a/execution-instructions.json",
+        "sha256": "1ad09e95b185977012ad0a7ab367d55cb3f9016c6b227f7efbd46ad5af9ee4fb",
+        "bytes": 8631
+      },
+      "outputPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-a/output.json",
+      "readingAuditPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-a/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    },
+    {
+      "pass": "pass-b",
+      "instructions": {
+        "path": "docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-b/execution-instructions.json",
+        "sha256": "4024e06959d10b0b0faf0a6eb1eae398ebd11d1b0c8d6e7e31e7e84397fe9e1a",
+        "bytes": 8631
+      },
+      "outputPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-b/output.json",
+      "readingAuditPath": "/Users/philstilwell/.codex/slugfester-ui9c6-a8Puxh/docs/assessment-production/standalone-debates-v1/debate-270/judgments/pass-b/reading-audit.json",
+      "attempts": 1,
+      "retries": 0
+    }
+  ],
+  "directIncrementalCostUsd": 0
+}
