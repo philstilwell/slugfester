@@ -1,0 +1,42 @@
+export function validateStandaloneAdjudication(
+  adjudication,
+  disagreements
+) {
+  assertStandalone(
+    adjudication?.schemaVersion === "1.0-standalone-dispute-adjudication" &&
+      adjudication.protocolId === STANDALONE_PROTOCOL_ID &&
+      adjudication.status === "complete-and-schema-valid" &&
+      adjudication.debateNumber === disagreements.debateNumber &&
+      adjudication.debateId === disagreements.debateId &&
+      adjudication.reviewerRole === "isolated-dispute-only-adjudicator" &&
+      adjudication.assessmentModel === "5.6 Sol" &&
+      adjudication.reasoningEffort === "low",
+    "adjudication: identity mismatch"
+  );
+  assertStandalone(
+    adjudication.isolation?.passIdentitiesUnavailable === true &&
+      adjudication.isolation?.calculatedTotalsUnavailable === true &&
+      adjudication.isolation?.winnerLabelsUnavailable === true &&
+      adjudication.isolation?.publicationProseUnavailable === true &&
+      adjudication.isolation?.otherDebatesUnavailable === true &&
+      adjudication.isolation?.contaminationDetected === false,
+    "adjudication: isolation boundary mismatch"
+  );
+  const expected = disagreements.disputes.map((dispute) => dispute.disputeId);
+  const actual = (adjudication.resolutions ?? []).map(
+    (resolution) => resolution.disputeId
+  );
+  assertStandalone(
+    canonicalJson(actual) === canonicalJson(expected),
+    "adjudication: resolution order or population differs from disputes"
+  );
+  for (const resolution of adjudication.resolutions) {
+    assertStandalone(
+      ["option-a", "option-b"].includes(resolution.selectedOption),
+      `${resolution.disputeId}: selectedOption must be option-a or option-b`
+    );
+    assertString(resolution.rationale, `${resolution.disputeId}.rationale`, 40);
+  }
+  return { status: "passed", disputes: expected.length };
+}
+

@@ -1,0 +1,476 @@
+{
+  "schemaVersion": "1.0-source-acquisition-and-recovery-provenance",
+  "videoId": "pnof3-hdMOE",
+  "status": "complete-formal-source-verified",
+  "publicCaptions": "No public captions in embedded WEB/ANDROID players or repository acquirer; paid plan frozen and reported before calls.",
+  "models": {
+    "gpt-4o-transcribe-diarize": "2 returned inputs; one interrupted unreturned request",
+    "whisper-1": "23 returned inputs including approved replacement, plus one approved 250-second gap recovery"
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownPaidCostEstimateUsd": 0.8743438,
+    "maximumPossiblePaidCostEstimateUsd": null,
+    "maximumUnknownReason": "One interrupted diarized request returned no usage receipt and may have been billed. The $0.15 reserve is a working allowance, not a verified maximum.",
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "approvedWorkingEstimateUsd": 1.0243438,
+    "workingReserveForUncertainCallUsd": 0.15,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 2,
+    "consumedRetryCount": 2,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "No automatic paid retries. Any newly required attribution checks require a frozen input set and cumulative estimate, with existing explicit cost authority respected."
+  },
+  "originalPlan": {
+    "path": ".assessment-cache/source-audio/pnof3-hdMOE/transcription-plan.json",
+    "sha256": "c27a37ecd84a4fe1498e8217cdc5a5e434aa4b868d837494664cf54fa581e399",
+    "bytes": 9754
+  },
+  "originalApprovalAndRate": {
+    "path": ".assessment-cache/source-audio/pnof3-hdMOE/pre-execution-approval-and-rate.json",
+    "sha256": "33b38e03886b38b8bd1efd0bf3aa15099f858c7f59725ec3bb50636d3b564759",
+    "bytes": 635
+  },
+  "costDiscrepancy": {
+    "path": ".assessment-cache/source-audio/pnof3-hdMOE/cost-discrepancy-and-recovery-proposal.json",
+    "sha256": "170567682b98ec273fd8f876f9b3647b0cb95563c97a8cc684a17ebc9f1eda09",
+    "bytes": 1900
+  },
+  "replacementPlan": {
+    "path": ".assessment-cache/source-audio/pnof3-hdMOE/approved-whisper-recovery-plan.json",
+    "sha256": "f1b086602910a557692a797527c9c688ac231a977404bc7075db3b1a8063a105",
+    "bytes": 9141
+  },
+  "completedCalls": {
+    "path": ".assessment-cache/source-audio/pnof3-hdMOE/completed-whisper-cost-and-quality-audit.json",
+    "sha256": "6e77c231ced10506b1d3aed5e77eba28884f231c418d4d75b72d4663692b1e03",
+    "bytes": 6335
+  },
+  "additionalRecoveryApproval": {
+    "path": "output/transcribe/pnof3-hdMOE/formal-gap-recovery/approval.json",
+    "sha256": "a41f9dc8a758029aaeff2a27e8ba4eaeeb5317eb5c20542179d85ae428697633",
+    "bytes": 455
+  },
+  "additionalRecoveryReceipt": {
+    "path": "output/transcribe/pnof3-hdMOE/formal-gap-recovery/receipt.json",
+    "sha256": "393366d9756ae9ef480cfbc85cd978db924554531155e214baf30c4d82c8b146",
+    "bytes": 307
+  },
+  "normalization": {
+    "schemaVersion": "1.0-mixed-source-normalization-provenance",
+    "videoId": "pnof3-hdMOE",
+    "createdAt": "2026-09-28T17:38:54.961821+00:00",
+    "gapRecovery": {
+      "path": "output/transcribe/pnof3-hdMOE/formal-gap-recovery/output.json",
+      "sha256": "61604d6973cde713813dcca5ee2c4217c5b49946c3f5d74422bb49734b7d35e2",
+      "bytes": 49168
+    },
+    "records": [
+      {
+        "index": 0,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/raw/chunk-000.json",
+          "sha256": "9f1ddd7a5cab28b85e1884c4846560ada4b01988afa21daf7e227af5672a863b",
+          "bytes": 17774
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-000.json",
+          "sha256": "9f1ddd7a5cab28b85e1884c4846560ada4b01988afa21daf7e227af5672a863b",
+          "bytes": 17774
+        },
+        "originalModel": "gpt-4o-transcribe-diarize",
+        "transformations": []
+      },
+      {
+        "index": 1,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/raw/chunk-001.json",
+          "sha256": "fec9d2920281bfd6df6b9f3f3382417834f50f1cd89c753130519910b36844da",
+          "bytes": 18119
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-001.json",
+          "sha256": "fec9d2920281bfd6df6b9f3f3382417834f50f1cd89c753130519910b36844da",
+          "bytes": 18119
+        },
+        "originalModel": "gpt-4o-transcribe-diarize",
+        "transformations": []
+      },
+      {
+        "index": 2,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-002.json",
+          "sha256": "9b17af4e651bf4015943acd164be4aac2f169666c1bdd926dcbc855c5e6bb991",
+          "bytes": 38316
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-002.json",
+          "sha256": "9b17af4e651bf4015943acd164be4aac2f169666c1bdd926dcbc855c5e6bb991",
+          "bytes": 38316
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 3,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-003.json",
+          "sha256": "fccefe58e1038df9015a89c0b685aadd2927d2d58412a58f128c6b7723d2322c",
+          "bytes": 35074
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-003.json",
+          "sha256": "fccefe58e1038df9015a89c0b685aadd2927d2d58412a58f128c6b7723d2322c",
+          "bytes": 35074
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 4,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-004.json",
+          "sha256": "13765e9b43c820a860c9788e6bc151bb96d285ab0dc98e5c903dbf4545ff854f",
+          "bytes": 39517
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-004.json",
+          "sha256": "13765e9b43c820a860c9788e6bc151bb96d285ab0dc98e5c903dbf4545ff854f",
+          "bytes": 39517
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 5,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-005.json",
+          "sha256": "5ec381863630720a065ca555cb2cc3720817565bc87307985df2994395a2899f",
+          "bytes": 41110
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-005.json",
+          "sha256": "5ec381863630720a065ca555cb2cc3720817565bc87307985df2994395a2899f",
+          "bytes": 41110
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 6,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-006.json",
+          "sha256": "6d82cbab995f2a323409060272285504bf4d71af4a8d065176266f618d8b44e6",
+          "bytes": 45239
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-006.json",
+          "sha256": "6d82cbab995f2a323409060272285504bf4d71af4a8d065176266f618d8b44e6",
+          "bytes": 45239
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 7,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-007.json",
+          "sha256": "c54b62fae7b6d6553ee7c552856de1731d4dc518eb2578d31de3affb7e6752d4",
+          "bytes": 35177
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-007.json",
+          "sha256": "d832b649996dd569e0102a2fb28dbd1241e32af39d24fb2175128e7410d14057",
+          "bytes": 34869
+        },
+        "originalModel": "whisper-1",
+        "transformations": [
+          "Drop empty, wordless segments [45]"
+        ]
+      },
+      {
+        "index": 8,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-008.json",
+          "sha256": "ad63e84d4a52d992bead863fe2ed1ddbeb08c445d33ef7f49f3f0e0933c41e0f",
+          "bytes": 44537
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-008.json",
+          "sha256": "ad63e84d4a52d992bead863fe2ed1ddbeb08c445d33ef7f49f3f0e0933c41e0f",
+          "bytes": 44537
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 9,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-009.json",
+          "sha256": "0d36d50af565c3fd6f2c477f3846dca62a2c7128296f197a0feae4bd6b76bc30",
+          "bytes": 106594
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-009.json",
+          "sha256": "65ea52591d97350b03636f9de861f9f738e6bd02fae5113794fe48e7c50f33c7",
+          "bytes": 60343
+        },
+        "originalModel": "whisper-1",
+        "transformations": [
+          "Keep original segments 0–24 through actual Dacey thanks; remove failed repeated segments 25–256; append approved recovery segments 5–86 with +60 second offset to this input origin."
+        ]
+      },
+      {
+        "index": 10,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-010.json",
+          "sha256": "03a4a2a1befb287e9985280b9dbbad200d13b851ba1c335a09cd1d7d02f93122",
+          "bytes": 41139
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-010.json",
+          "sha256": "674aa67d57bf2c3a133e04729a7d939ef0593e4bdb95b496192717c563326d3f",
+          "bytes": 39604
+        },
+        "originalModel": "whisper-1",
+        "transformations": [
+          "Remove original segments 0–1, completely covered by approved recovery; retain segment 2 from 3009.68 seconds, following recovery endpoint 3009.62."
+        ]
+      },
+      {
+        "index": 11,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-011.json",
+          "sha256": "a3641b9789aa4b4460155f04f93baa120d28a1938bca23e74566a2aef498dff2",
+          "bytes": 43226
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-011.json",
+          "sha256": "a3641b9789aa4b4460155f04f93baa120d28a1938bca23e74566a2aef498dff2",
+          "bytes": 43226
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 12,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-012.json",
+          "sha256": "260d28a23ff4ed83025247b6b092aeb1b17eb99946f355b4ea3cff67d1362eaa",
+          "bytes": 38692
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-012.json",
+          "sha256": "260d28a23ff4ed83025247b6b092aeb1b17eb99946f355b4ea3cff67d1362eaa",
+          "bytes": 38692
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 13,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-013.json",
+          "sha256": "e4aa27edc949af5fd5a2ac91792bdc748e8fff40df9246c87784b83dd1f13dcc",
+          "bytes": 42393
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-013.json",
+          "sha256": "e4aa27edc949af5fd5a2ac91792bdc748e8fff40df9246c87784b83dd1f13dcc",
+          "bytes": 42393
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 14,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-014.json",
+          "sha256": "8a1f2484a725914abe1cd45d89863524afb1f5e1d6c38b7ce0496e29a3c80cd5",
+          "bytes": 39063
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-014.json",
+          "sha256": "8a1f2484a725914abe1cd45d89863524afb1f5e1d6c38b7ce0496e29a3c80cd5",
+          "bytes": 39063
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 15,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-015.json",
+          "sha256": "1053841709c409c703b543016caf15987f442b428319ab45af9cae7c92a52aff",
+          "bytes": 42582
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-015.json",
+          "sha256": "1053841709c409c703b543016caf15987f442b428319ab45af9cae7c92a52aff",
+          "bytes": 42582
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 16,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-016.json",
+          "sha256": "b09f367a5e761a7ddecabe90e81ea0dbed92402012bd29f53f9ca169820f0434",
+          "bytes": 39477
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-016.json",
+          "sha256": "b09f367a5e761a7ddecabe90e81ea0dbed92402012bd29f53f9ca169820f0434",
+          "bytes": 39477
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 17,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-017.json",
+          "sha256": "baf4d7f6a554266cbbea8d42fc6f2a08edb25f337d65a304ea62e3a343a2ecc0",
+          "bytes": 46639
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-017.json",
+          "sha256": "baf4d7f6a554266cbbea8d42fc6f2a08edb25f337d65a304ea62e3a343a2ecc0",
+          "bytes": 46639
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 18,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-018.json",
+          "sha256": "a0feb6f25b2bac71fe8cbda280e2c5d92482b25dc14bc660a597b4c7a8880a84",
+          "bytes": 42018
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-018.json",
+          "sha256": "a0feb6f25b2bac71fe8cbda280e2c5d92482b25dc14bc660a597b4c7a8880a84",
+          "bytes": 42018
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 19,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-019.json",
+          "sha256": "573be088f038d8125e2a16731a66d9c4a6636e0099ed0454f94ddea9462402c3",
+          "bytes": 40141
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-019.json",
+          "sha256": "573be088f038d8125e2a16731a66d9c4a6636e0099ed0454f94ddea9462402c3",
+          "bytes": 40141
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 20,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-020.json",
+          "sha256": "73ed62ed018f1792f76b13f24c197c0d52dde83ededabc37e73af0695ba1c1e9",
+          "bytes": 46569
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-020.json",
+          "sha256": "73ed62ed018f1792f76b13f24c197c0d52dde83ededabc37e73af0695ba1c1e9",
+          "bytes": 46569
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 21,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-021.json",
+          "sha256": "3c17bceb456819425edaa40b4abc2254c97c2b381a804ea8a725b63f02686cf2",
+          "bytes": 40743
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-021.json",
+          "sha256": "3c17bceb456819425edaa40b4abc2254c97c2b381a804ea8a725b63f02686cf2",
+          "bytes": 40743
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 22,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-022.json",
+          "sha256": "4883920c7f5b67acd9cfc07d9883cb4b534c896fff964fe4ae852f38257e2613",
+          "bytes": 36783
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-022.json",
+          "sha256": "4883920c7f5b67acd9cfc07d9883cb4b534c896fff964fe4ae852f38257e2613",
+          "bytes": 36783
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 23,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-023.json",
+          "sha256": "d74ac8b86f476e3869c6aa73a78bfa9464bb81a8e2390b719d28729527df2d0c",
+          "bytes": 32115
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-023.json",
+          "sha256": "d74ac8b86f476e3869c6aa73a78bfa9464bb81a8e2390b719d28729527df2d0c",
+          "bytes": 32115
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      },
+      {
+        "index": 24,
+        "original": {
+          "path": "output/transcribe/pnof3-hdMOE/whisper/chunk-024.json",
+          "sha256": "65dd813866e2349be4cb6c7d729e3a4fe4444055f10c46a0adbdd2ab3edcd7a4",
+          "bytes": 547
+        },
+        "derived": {
+          "path": "output/transcribe/pnof3-hdMOE/normalizer-inputs/chunk-024.json",
+          "sha256": "65dd813866e2349be4cb6c7d729e3a4fe4444055f10c46a0adbdd2ab3edcd7a4",
+          "bytes": 547
+        },
+        "originalModel": "whisper-1",
+        "transformations": []
+      }
+    ],
+    "untouchedOriginalsPreserved": true,
+    "newWordsInvented": false,
+    "reviewedOverlapJoins": [
+      {
+        "leftEndMs": 2770320,
+        "rightStartMs": 2770360,
+        "basis": "Same completed Dacey Thank you before moderator handoff"
+      },
+      {
+        "leftEndMs": 3009620,
+        "rightStartMs": 3009680,
+        "basis": "Same completed natural-science question before Well I find this argument"
+      }
+    ]
+  },
+  "audio": {
+    "path": ".assessment-cache/source-audio/pnof3-hdMOE/pnof3-hdMOE.m4a",
+    "sha256": "330313fa7efe3da9390d2cd996515b4f4342490b9fa1659e6cb48b1f4d6bd5b1",
+    "bytes": 260583125,
+    "durationSeconds": 7229.888
+  },
+  "storagePolicy": "Raw media, full transcript, publisher text and source responses remain ignored; durable provenance hashes and source restrictions are committed."
+}

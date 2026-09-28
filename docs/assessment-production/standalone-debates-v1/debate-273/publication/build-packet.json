@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "273",
+  "debateId": "craig-dacey-god-existence-2004",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-273/inventory/inventory.json",
+      "sha256": "78c34344584c2325fda7572ac06a993934b7edfdb9e8e441ae16969f5793505d",
+      "bytes": 171840
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-273/score-pass/output.json",
+      "sha256": "b9f3b4d04edc9c47650e8fa0c4c8bf0623eca6e0802a16ee6f0c81ed774efda8",
+      "bytes": 21351
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-273/publication/skeleton.json",
+      "sha256": "6e27d5a43ec462b2903f155ee746931632c4ee110ce0497af1e0b020b1325c67",
+      "bytes": 15085
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-273/publication/reference-metrics.json",
+      "sha256": "f3fe6977334b25b4b76a7e4abee7dcb250620ecf78d28eba977ab919939e4c76",
+      "bytes": 27783
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

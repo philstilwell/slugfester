@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "debates",
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "corpus-transcripts",
+      "command": [
+        "node",
+        "scripts/validate-corpus-transcripts.mjs"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "generated-pages",
+      "command": [
+        "node",
+        "scripts/generate-seo-pages.mjs",
+        "--check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "standalone-full",
+      "exitCode": 0
+    },
+    {
+      "name": "standalone-repository",
+      "exitCode": 0
+    },
+    {
+      "name": "historical-closure",
+      "exitCode": 0
+    },
+    {
+      "name": "npm-check-with-existing-source-cache",
+      "exitCode": 0,
+      "includes": "All published standalone, content parity, rhetorical review, historical closure, calibration promotion and multi-speaker fixtures."
+    }
+  ],
+  "resolvedDiagnostic": "Initial npm check reached the multi-speaker cache dependency; connected existing source cache read-only through owned symlinks, then the complete npm check passed. No test or historical artifact changed."
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-28T17:42:28.215901+00:00",
+  "userAuthorization": "One new supplied YouTube debate under explicitly invoked add-slugfester-youtube-debate skill; user approved all eight formal speeches only and requested objective assessment. User separately approved one interrupted-call replacement and one $0.025 defective-source recovery, then instructed continuation without common approvals.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-273",
+    "head": "dec88f522408a2a6c4e1ace2a92ba41f8189058d",
+    "localMain": "dec88f522408a2a6c4e1ace2a92ba41f8189058d",
+    "originMain": "dec88f522408a2a6c4e1ace2a92ba41f8189058d",
+    "clean": true,
+    "isolationReason": "Reused completed clean managed checkout; fetched and synchronized clean main, verified equality, and created this branch before first new write. Resumed preparation retains all consumed source attempts."
+  },
+  "identity": {
+    "debateNumber": "273",
+    "debateId": "craig-dacey-god-existence-2004",
+    "videoId": "pnof3-hdMOE",
+    "canonicalUrl": "https://www.youtube.com/watch?v=pnof3-hdMOE",
+    "sourceTitle": "William Lane Craig vs Austin Dacey | \"Does God Exist?\"",
+    "eventYear": 2004,
+    "title": "William Lane Craig vs Austin Dacey — Does God Exist? (2004)",
+    "label": "God at Purdue",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does God exist?",
+    "pro": {
+      "speaker": "William Lane Craig",
+      "position": "Christian theism"
+    },
+    "con": {
+      "speaker": "Austin Dacey",
+      "position": "Atheism"
+    },
+    "dyadic": true,
+    "originalRecordingDyadic": false,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "explicitly-approved-eight-formal-speeches-with-entire-audience-qa-excluded",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "pnof3-hdMOE",
+      "userApproval": "I approve. Do your best to provide an objective assessment. Approval followed the proposal to assess all eight formal speeches (both openings, both rebuttal rounds and both closings) and exclude the entire audience Q&A, including all answers.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers both opening statements, both rounds of rebuttal, and both closing statements (approximately 5:00–1:40:07). The entire audience Q&A, including both speakers’ answers and dependent replies, is excluded. Neither side receives credit or penalty for excluded material; these scores assess the approved formal debate, not the complete event.",
+      "assessedWindow": {
+        "startMs": 300000,
+        "endMs": 7229888,
+        "durationMs": 6929888
+      },
+      "retainedIntervals": [
+        {
+          "startMs": 300000,
+          "endMs": 6007440,
+          "durationMs": 5707440
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "entire-audience-qa-and-final-moderator-farewell",
+          "startMs": 6007440,
+          "endMs": 7229888,
+          "durationMs": 1222448,
+          "reason": "Explicit user-approved exclusion of the complete audience Q&A after both formal closings, including substantive audience arguments, both primary speakers’ answers and all dependent replies, moderator instructions and farewell.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true
+        }
+      ],
+      "excludedDurationMs": 1222448,
+      "excludedShareOfAssessedWindow": 0.1764022737452611,
+      "boundaryBasis": "Canonical events from Craig’s first greeting through Dacey’s completed closing; full media duration from local probe. The larger envelope permits mechanical exclusion checks.",
+      "outsideWindowDisposition": "Opening introductions and logistics before Craig’s first turn are unscored.",
+      "coherenceReview": "All eight complete alternating formal speeches retained; formal moderator handoffs are logistics, not advocacy. No excluded Q&A content supplies evidence, a concession or an alleged failure to reply."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownPaidCostEstimateUsd": 0.8743438,
+    "maximumPossiblePaidCostEstimateUsd": null,
+    "maximumUnknownReason": "One interrupted diarized request returned no usage receipt and may have been billed. The $0.15 reserve is a working allowance, not a verified maximum.",
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "approvedWorkingEstimateUsd": 1.0243438,
+    "workingReserveForUncertainCallUsd": 0.15,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 2,
+    "consumedRetryCount": 2,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "No automatic paid retries. Any newly required attribution checks require a frozen input set and cumulative estimate, with existing explicit cost authority respected."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-273",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/craig-dacey-god-existence-2004.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/interlocutors.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

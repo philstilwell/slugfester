@@ -1,0 +1,13 @@
+import {readFileSync} from "node:fs";
+import {createHash} from "node:crypto";
+import {fileURLToPath} from "node:url";
+import path from "node:path";
+import {validateStandalonePrimaryJudgment} from "../../../../../scripts/lib/assessment-production-standalone-debate-v1.mjs";
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const bytes=readFileSync(path.join(dir,"../inventory/inventory.json"));
+const inventory=JSON.parse(bytes);
+const pass=process.argv[2];
+if(!["pass-a","pass-b"].includes(pass))throw Error("Expected pass-a or pass-b argument");
+const candidate=JSON.parse(readFileSync(0,"utf8"));
+const result=validateStandalonePrimaryJudgment(candidate,inventory,{expectedPass:pass,expectedInventorySha256:createHash("sha256").update(bytes).digest("hex")});
+console.log(JSON.stringify({status:"passed-unsaved-primary-judgment-mechanics",result,canonicalCandidateSha256:createHash("sha256").update(JSON.stringify(candidate)).digest("hex")},null,2));
