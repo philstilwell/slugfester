@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-pre-freeze-production-validation",
+  "status": "passed-pre-freeze-production-validator",
+  "debateNumber": "273",
+  "debateId": "craig-dacey-god-existence-2004",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-273/publication/output.json",
+    "sha256": "57de6e62e6ffc322ac695f3a7604e805ea01d0de65ede7e0b9de96ecb0d94e21",
+    "bytes": 77637
+  },
+  "method": "Disposable Git archive with current candidate and evidence overlaid; unchanged builder creates proposed adapter, export registry records status/hash, unchanged production validator validates. Main adapter remains absent.",
+  "proposedAdapterSha256": "3d986a74fb493690d215f8441504cc3c62d3da53b6193d365ede057617db8201",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--build-adapter",
+        "--debate",
+        "273"
+      ],
+      "exitCode": 0,
+      "output": "Standalone production adapter frozen: 7 sections, 42 moves.\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 0,
+      "output": "Validated 273 debates.\n"
+    }
+  ],
+  "exportRemoved": true
+}

@@ -12967,5 +12967,58 @@ export const debateSummaries = [
         "title": "Moral arena, embodiment and divine goodness"
       }
     ]
+  },
+  {
+    "id": "craig-dacey-god-existence-2004",
+    "number": "273",
+    "title": "William Lane Craig vs Austin Dacey — Does God Exist?",
+    "year": 2004,
+    "label": "God at Purdue",
+    "date": "2026-09-28",
+    "duration": "1 hr 35 min assessed",
+    "youtubeUrl": "https://www.youtube.com/watch?v=pnof3-hdMOE",
+    "motion": "Does God exist?",
+    "summary": "Dacey won by sustaining stronger comparative cases from hiddenness, suffering, embodied minds, and evolution while repeatedly undercutting Craig’s central explanatory bridges.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheism",
+        "speaker": "Austin Dacey",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Cosmic existence and origin"
+      },
+      {
+        "title": "Fine-tuning and evolutionary design"
+      },
+      {
+        "title": "Moral reality and suffering"
+      },
+      {
+        "title": "Divine hiddenness and relationship"
+      },
+      {
+        "title": "Scientific explanation and divine action"
+      },
+      {
+        "title": "Minds, brains, and personhood"
+      },
+      {
+        "title": "Resurrection and religious experience"
+      }
+    ]
   }
 ];

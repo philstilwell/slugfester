@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Austin Dacey", "Austin Dacey is a philosopher, writer, and human rights advocate whose work examines freedom of conscience and expression. He is the author of The Future of Blasphemy and created The Impossible Music Sessions, a forum for music affected by censorship.", "https://edge.org/memberbio/austin_dacey", "2026-09-28"],
   ["Massimo Pigliucci", "Massimo Pigliucci is a philosopher and evolutionary biologist whose work examines philosophy of science, pseudoscience, and practical philosophy. His books include How to Be a Stoic and Nonsense on Stilts, and he teaches at the City College of New York.", "https://massimopigliucci.net/", "2026-09-27"],
   ["Dan Barker", "Dan Barker is an author, musician, and former Christian minister associated with the Freedom From Religion Foundation. His books, public debates, and broadcasts examine religious belief, morality, and meaning from an atheist perspective.", "https://ffrf.org/about/our-staff-and-board/our-board-of-directors/dan-barker-4/", "2026-09-26"],
   ["Jonathan Sacks", "Jonathan Sacks was a rabbi, philosopher, and author who served as Chief Rabbi of the United Hebrew Congregations of the Commonwealth from 1991 to 2013. His books explore religion and science, moral responsibility, Jewish thought, and relations between religious communities.", "https://rabbisacks.org/life-of-rabbi-jonathan-sacks/biography/", "2026-09-26"],

@@ -1,0 +1,33 @@
+{
+  "status": "passed-controller-interface-fixtures",
+  "recordedAt": "2026-09-28T18:14:41.595932+00:00",
+  "debateNumber": "273",
+  "helpers": [
+    {
+      "temporaryPath": "/tmp/slugfester-prepare-judgment-plans.py",
+      "sha256": "5ce19a683ed003aff009493fae963ae7b5335dfaf9afa5bf48b37cca01178d6b",
+      "committed": false
+    },
+    {
+      "temporaryPath": "/tmp/slugfester-prepare-phases.py",
+      "sha256": "ed245f1d777da8a2e6db65982f73de92bc7b3e77011b8cc171d7c1a8e66dc582",
+      "committed": false
+    },
+    {
+      "temporaryPath": "/tmp/slugfester-read-unsaved-judgment.py",
+      "sha256": "6f84c1b7fd7f0a9da719c6285cc8499c96b096591d53280bbbe5e5a8793ee709",
+      "committed": false
+    }
+  ],
+  "checks": [
+    "Current identity and routing derive from registry and frozen authorization; no prior speaker, video, slug, count or override is executable in preparers.",
+    "Disposable judgment-plan fixture validated input hashes, portable references and disjoint absolute output destinations.",
+    "Disposable publication fixture validated timestamp conversion, copying of supplied scores without calling calculator, exact move mapping, source disclosure and path bindings.",
+    "Disposable unsaved-judgment reader fixture validated structured tool output extraction, preserved property order and compact JSON hash. Identical repeated chunks are accepted only if byte-equivalent as parsed data."
+  ],
+  "diagnostics": [
+    "The initial disposable plan-fixture assertion compared unresolved macOS /tmp with canonical /private/tmp. Resolving the fixture root fixed the test; controller code unchanged."
+  ],
+  "productionAssessmentRunsInFixtures": 0,
+  "controllerOverrides": []
+}

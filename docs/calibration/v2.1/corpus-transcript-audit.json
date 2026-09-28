@@ -2,10 +2,10 @@
   "schemaVersion": "1.0",
   "workflowVersion": "Slugfester Reassessment Workflow v2.1",
   "auditAsOf": "2026-09-28",
-  "corpusDebates": 272,
-  "locallySavedTranscripts": 272,
+  "corpusDebates": 273,
+  "locallySavedTranscripts": 273,
   "unavailableTranscripts": 0,
-  "acquisitionRate": 1,
+  "acquisitionRate": 1.0,
   "storagePolicy": "Full transcripts and timestamped events remain in ignored local cache. This committed audit retains paths, metadata, and hashes but no full transcript text.",
   "paidFallbackPolicy": "If public captions are absent or materially inadequate, estimate paid transcription cost and obtain approval before invoking an API.",
   "entries": [
@@ -6010,6 +6010,29 @@
       "status": "available",
       "transcriptStorage": ".assessment-cache/captions/-U3IyfrnavU/transcript.txt",
       "eventsStorage": ".assessment-cache/captions/-U3IyfrnavU/events.json"
+    },
+    {
+      "videoId": "pnof3-hdMOE",
+      "track": {
+        "languageCode": "en",
+        "name": "English (mixed OpenAI timestamped transcription)",
+        "kind": "api-timestamped",
+        "isTranslatable": false
+      },
+      "extractionMethod": "Complete mixed OpenAI source transcription with two separately approved recoveries; original responses preserved; source-attribution review against formal handoffs and publisher transcript",
+      "wordCount": 21913,
+      "eventCount": 1423,
+      "retrievedAt": "2026-09-28T17:38:55.030Z",
+      "transcriptSha256": "ada6ee8ef792985fb8bccbe01c2bcf8057e937267f9118bd97809ef410c6e1a7",
+      "normalizedEventsSha256": "9added325b4a05c670a570d171b77082dd7a5ec0e2c77211ff8cf1d152843a5f",
+      "audioSourceUrl": "https://www.youtube.com/watch?v=pnof3-hdMOE",
+      "model": "mixed: gpt-4o-transcribe-diarize (inputs 000–001); whisper-1 (002–024 and approved gap recovery)",
+      "spokenWordCount": 17644,
+      "debateNumber": "273",
+      "debateId": "craig-dacey-god-existence-2004",
+      "status": "available",
+      "transcriptStorage": ".assessment-cache/captions/pnof3-hdMOE/transcript.txt",
+      "eventsStorage": ".assessment-cache/captions/pnof3-hdMOE/events.json"
     }
   ]
 }
