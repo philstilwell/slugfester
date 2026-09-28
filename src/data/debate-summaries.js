@@ -12870,5 +12870,55 @@ export const debateSummaries = [
         "title": "Moral Grounding and Christian Institutions"
       }
     ]
+  },
+  {
+    "id": "craig-pigliucci-christian-god-2001",
+    "number": "271",
+    "title": "William Lane Craig vs Massimo Pigliucci — Does the Christian God Exist?",
+    "year": 2001,
+    "label": "Christian God at Georgia",
+    "date": "2026-09-27",
+    "duration": "2 hr 35 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Rr2nrj3yXq8",
+    "motion": "Does the Christian God exist?",
+    "summary": "Craig prevailed through cumulative structure, sharper historical replies, and key conceptual distinctions, while Pigliucci led on scope and pressed serious evidential alternatives.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christian theism",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Naturalist criticism",
+        "speaker": "Massimo Pigliucci",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 78,
+      "con": 72,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Christian specificity and evidential burdens"
+      },
+      {
+        "title": "Cosmic origin, causality, and a personal creator"
+      },
+      {
+        "title": "Fine-tuning, probability, and design"
+      },
+      {
+        "title": "Moral objectivity, adaptation, and divine goodness"
+      },
+      {
+        "title": "Resurrection and historical explanation"
+      },
+      {
+        "title": "Religious experience and natural defeaters"
+      }
+    ]
   }
 ];

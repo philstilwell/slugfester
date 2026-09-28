@@ -1,0 +1,827 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/openai-diarized-chunks.json",
+      "sha256": "4195e885b8f1e6273b2523b3a03a15f322ba2ffc7b0788e32eb528ad7106f5cc",
+      "bytes": 1873632
+    },
+    "events": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/events.json",
+      "sha256": "e61505c20133d1fc50abf0620ee6b1cd9598ec734e584d1d74a876e21a7f6bdc",
+      "bytes": 383170
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/transcript.txt",
+      "sha256": "9a992455323854371bc20c4ea2cbabb9eef5d3934871d61cc4697e830747ac87",
+      "bytes": 224829
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/manifest.json",
+      "sha256": "6aa8eddf53352ad3e11d51ecaebc4fc6ff5283772887b167d3c04046d4ac0a34",
+      "bytes": 2278
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/authorization.json",
+      "sha256": "5f407d68ad17cddc8fa756a8fc3809aa306464cc231e2c7610925508ce7f0d04",
+      "bytes": 6689
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/source-lock.json",
+      "sha256": "6daccbbb1c3a15f8223bb8e0ea46b275e78456c3054179f3a8330e9de830b399",
+      "bytes": 6791
+    },
+    "editorScope": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/editor-scope.json",
+      "sha256": "5ec5e08ae1095a2ba5048cbcde7d2e241baab0a78cdf910b136ddb368c9b13bc",
+      "bytes": 2590
+    },
+    "sourceRecoveryProvenance": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/source-recovery-provenance.json",
+      "sha256": "ec8458fd126223981413327c30568cd3d24ad1c28d51ba7a5f5d2445a4f31b0c",
+      "bytes": 113880
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/assessed-indexed-transcript.txt",
+      "sha256": "41a39bdb43a5a9234d0eae465a9357b5da3f822c45111ece09617003079bc174",
+      "bytes": 161837
+    },
+    "sourceNotes": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/assessment-source-notes.md",
+      "sha256": "8ffd91ac1148f2ed4aaf9e112707158d25694ef519975431f3f022480734bf9d",
+      "bytes": 3129
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/authorization.json",
+      "sha256": "5f407d68ad17cddc8fa756a8fc3809aa306464cc231e2c7610925508ce7f0d04",
+      "bytes": 6689
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/manifest.json",
+      "sha256": "e21734e1c25781f6975c4fd4725e5da882b22b5406cf866a44a12f63e51c5a70",
+      "bytes": 7225
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/source-lock.json",
+      "sha256": "6daccbbb1c3a15f8223bb8e0ea46b275e78456c3054179f3a8330e9de830b399",
+      "bytes": 6791
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/inventory/inventory.json",
+      "sha256": "554092ad06095f149fb289076cc42d6fcce1cebb6cda98336f6aec7b12211376",
+      "bytes": 174962
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/judgment-packet.json",
+      "sha256": "a4292c128e08dee459ac5922e2058b053f0dd66fab1c2c098172ace243b02e62",
+      "bytes": 4886
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/execution.json",
+      "sha256": "c58bcb2f76dd866d89748e9df1d22752664d7340de4895f1635b73ae78c3e168",
+      "bytes": 3615
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-a/output.json",
+      "sha256": "3bbfd6d24aeb88b35a3852a5f7548db72f5b088080cf734532042cb0bfced057",
+      "bytes": 65294
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-b/output.json",
+      "sha256": "9944a3eba6ba3d636877a2a7df090a357463fdc34a648c5c69e637421975eb85",
+      "bytes": 56147
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/disagreements/disagreements.json",
+      "sha256": "984b317686e51f0a7af4a615460f15936e3acf8aead24b42600eff663a866805",
+      "bytes": 7563
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/audio/audio-verification.json",
+      "sha256": "fff17e5a5f15873acbd3e777e3ed9be6deaed0c0983c069c1127637e6b6fcdcd",
+      "bytes": 1872
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/adjudication/packet.json",
+      "sha256": "e2e5cbc12a8c8dada3c993924e5adf2eabecced048760e3be302a3b147c9a1f4",
+      "bytes": 22253
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/adjudication/output.json",
+      "sha256": "6b823b19f16a62ef5860857a1a178bd69236e15038520cfda13e2ce8ed826ad6",
+      "bytes": 2783
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/final-ledger/final-ledger.json",
+      "sha256": "fc25277bbe1c9121aa7ad225637126e8bf46b7ccc27dbb5324742c15a453bc89",
+      "bytes": 343560
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/score-pass/input.json",
+      "sha256": "d3317334c15420fdf606474bd79bb2803059dbbf2f38660c3992e82dc9c7c910",
+      "bytes": 953
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/score-pass/output.json",
+      "sha256": "81638e1b4852e361268bfb613cf8299bfdef9e0680aae92de3bd7df0d68dc7c3",
+      "bytes": 19829
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/score-pass/attestation.json",
+      "sha256": "899c8e519edfbb7db2c90c8d92d6f9f6c42b4a978c584d293366c2fbde507d1f",
+      "bytes": 821
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/output.json",
+      "sha256": "7dcd0e4ffbca8ef917829980e5426e18a27be5c3ef1cc530d09bbc469693cdac",
+      "bytes": 71561
+    },
+    "events": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/events.json",
+      "sha256": "e61505c20133d1fc50abf0620ee6b1cd9598ec734e584d1d74a876e21a7f6bdc",
+      "bytes": 383170
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/transcript.txt",
+      "sha256": "9a992455323854371bc20c4ea2cbabb9eef5d3934871d61cc4697e830747ac87",
+      "bytes": 224829
+    },
+    "publicationRhetoricalTagCorrection": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/correction-rhetorical-tags.json",
+      "sha256": "12d33b24eb66ee8687b691ae391e37a41f74125b75e1a86b56a9c8bc4ff087f7",
+      "bytes": 4732
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "9d9bf679eda6aced4241f6d63ff62d7bc8720997c4bc74b032f88895c84975fc",
+      "bytes": 29715
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "cae222079d1a5b8d0705a9d26c99f22c624ded58a25f53af8fe6dc88dc48e118",
+      "bytes": 4667
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "49dffa564e3ec75d768207d0d74aba8a6680a46e41922003ce9b7a7fa757830e",
+      "bytes": 719
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "271",
+    "debateId": "craig-pigliucci-christian-god-2001",
+    "sections": [
+      {
+        "sectionId": "motion-scope-and-burdens",
+        "title": "Christian specificity and evidential burdens",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "craig-defines-cumulative-christian-hypothesis",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 84,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 69
+                },
+                "score": 80
+              },
+              {
+                "moveId": "craig-cumulative-route-and-neutrality-reply",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 78,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 42
+                },
+                "score": 69
+              },
+              {
+                "moveId": "craig-symmetric-burden-for-nonexistence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 83,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 68
+                },
+                "score": 79
+              },
+              {
+                "moveId": "craig-absence-evidence-expectation-test",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 87,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 89,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 77
+                },
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pigliucci-insists-on-christian-specificity",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 87,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 68
+                },
+                "score": 81
+              },
+              {
+                "moveId": "pigliucci-limits-falsifiability-and-positive-atheist-burden",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 77
+                },
+                "score": 83
+              },
+              {
+                "moveId": "pigliucci-rational-nonbelief-without-impossibility-proof",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 79,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 85,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 72
+                },
+                "score": 79
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "cosmic-origin-and-causality",
+        "title": "Cosmic origin, causality, and a personal creator",
+        "weightPercent": 18,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "craig-finite-past-and-causal-universe",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 68,
+                  "responsiveness": 84,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 62
+                },
+                "score": 77
+              },
+              {
+                "moveId": "craig-personal-timeless-cause",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 83,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 67
+                },
+                "score": 75
+              },
+              {
+                "moveId": "craig-quantum-vacuum-and-uncaused-god-reply",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 90,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 73
+                },
+                "score": 83
+              }
+            ]
+          },
+          "con": {
+            "score": 68,
+            "moves": [
+              {
+                "moveId": "pigliucci-natural-origin-and-nonuniqueness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 56,
+                  "responsiveness": 76,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 60
+                },
+                "score": 69
+              },
+              {
+                "moveId": "pigliucci-regress-quantum-and-ignorance-reply",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 70,
+                  "relevanceBurden": 72,
+                  "precisionClarity": 66,
+                  "calibrationCharity": 52
+                },
+                "score": 64
+              },
+              {
+                "moveId": "pigliucci-quantum-causality-remains-uncertain",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 75,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 81
+                },
+                "score": 71
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "fine-tuning-and-design",
+        "title": "Fine-tuning, probability, and design",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "craig-fine-tuning-trilemma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 63
+                },
+                "score": 77
+              },
+              {
+                "moveId": "craig-law-or-chance-still-unshown",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 70,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 78,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 71
+                },
+                "score": 72
+              }
+            ]
+          },
+          "con": {
+            "score": 61,
+            "moves": [
+              {
+                "moveId": "pigliucci-complexity-natural-and-god-neutral",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 58,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 48,
+                  "relevanceBurden": 59,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 53
+                },
+                "score": 57
+              },
+              {
+                "moveId": "pigliucci-fine-tuning-probability-and-gap",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 64,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 67,
+                  "calibrationCharity": 57
+                },
+                "score": 64
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-objectivity-and-divine-goodness",
+        "title": "Moral objectivity, adaptation, and divine goodness",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "craig-objective-values-require-god",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 86,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 89,
+                  "calibrationCharity": 71
+                },
+                "score": 79
+              },
+              {
+                "moveId": "craig-evolution-describes-not-prescribes",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 65
+                },
+                "score": 79
+              },
+              {
+                "moveId": "craig-sanctions-do-not-make-wrongness",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 83,
+                  "evidenceWarrant": 71,
+                  "responsiveness": 89,
+                  "relevanceBurden": 87,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 65
+                },
+                "score": 81
+              },
+              {
+                "moveId": "craig-divine-nature-identifies-the-good",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 90,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 78
+                },
+                "score": 80
+              }
+            ]
+          },
+          "con": {
+            "score": 71,
+            "moves": [
+              {
+                "moveId": "pigliucci-local-objective-morality",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 82,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 75,
+                  "calibrationCharity": 73
+                },
+                "score": 75
+              },
+              {
+                "moveId": "pigliucci-biblical-morality-challenge",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 59,
+                  "responsiveness": 73,
+                  "relevanceBurden": 75,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 58
+                },
+                "score": 68
+              },
+              {
+                "moveId": "pigliucci-adaptation-is-real-and-goodness-dilemma",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 78,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 70
+                },
+                "score": 73
+              },
+              {
+                "moveId": "pigliucci-adaptation-suffices-and-good-independent",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 63,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 76,
+                  "relevanceBurden": 71,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 59
+                },
+                "score": 67
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "resurrection-and-historical-evidence",
+        "title": "Resurrection and historical explanation",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "craig-three-resurrection-facts",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 77,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 88,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 63
+                },
+                "score": 80
+              },
+              {
+                "moveId": "craig-gospels-and-resurrection-not-pagan-myth",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 85,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 62
+                },
+                "score": 78
+              },
+              {
+                "moveId": "craig-reburial-hallucination-and-origin-replies",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 90,
+                  "relevanceBurden": 89,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 74
+                },
+                "score": 83
+              },
+              {
+                "moveId": "craig-scholarship-uniqueness-and-jewish-context",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 80,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 87,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 86,
+                  "calibrationCharity": 68
+                },
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "pigliucci-resurrection-source-and-natural-alternatives",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 71,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 79,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 69
+                },
+                "score": 73
+              },
+              {
+                "moveId": "pigliucci-extraordinary-evidence-and-comparative-sightings",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 70,
+                  "responsiveness": 86,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 68
+                },
+                "score": 78
+              },
+              {
+                "moveId": "pigliucci-mythology-and-gospel-question-begging",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 55,
+                  "responsiveness": 76,
+                  "relevanceBurden": 74,
+                  "precisionClarity": 72,
+                  "calibrationCharity": 58
+                },
+                "score": 68
+              },
+              {
+                "moveId": "pigliucci-miracles-violate-laws-and-face-rivals",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 61,
+                  "responsiveness": 84,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 63
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "religious-experience-and-defeaters",
+        "title": "Religious experience and natural defeaters",
+        "weightPercent": 10,
+        "sides": {
+          "pro": {
+            "score": 74,
+            "moves": [
+              {
+                "moveId": "craig-immediate-experience-as-knowledge",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 58,
+                  "responsiveness": 78,
+                  "relevanceBurden": 70,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 65
+                },
+                "score": 71
+              },
+              {
+                "moveId": "craig-induced-experience-needs-independent-defeater",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 85,
+                  "relevanceBurden": 78,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 64
+                },
+                "score": 75
+              },
+              {
+                "moveId": "craig-brain-mediation-does-not-defeat-veridicality",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 85,
+                  "relevanceBurden": 77,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 64
+                },
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pigliucci-neurological-alternative-to-religious-experience",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 66,
+                  "responsiveness": 86,
+                  "relevanceBurden": 81,
+                  "precisionClarity": 79,
+                  "calibrationCharity": 75
+                },
+                "score": 77
+              },
+              {
+                "moveId": "pigliucci-simpler-hallucination-explanation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 90,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 83
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 78.39,
+        "burdenCompletionAdjustment": 0,
+        "score": 78
+      },
+      "con": {
+        "weightedSectionMean": 72.41,
+        "burdenCompletionAdjustment": 0,
+        "score": 72
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 6,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 0.5,
+      "maximumDistance": 1,
+      "maximumExcursion": 0,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 38,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}

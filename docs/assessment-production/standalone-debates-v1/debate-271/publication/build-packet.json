@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/inventory/inventory.json",
+      "sha256": "554092ad06095f149fb289076cc42d6fcce1cebb6cda98336f6aec7b12211376",
+      "bytes": 174962
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/score-pass/output.json",
+      "sha256": "81638e1b4852e361268bfb613cf8299bfdef9e0680aae92de3bd7df0d68dc7c3",
+      "bytes": 19829
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/skeleton.json",
+      "sha256": "b3cf1ffc0a8dbfb7aad4f14e234100d30c2085ff57de58b6b86fba5e6f4ed713",
+      "bytes": 14313
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/reference-metrics.json",
+      "sha256": "38b0ee1c3f11551e3858cc7627a4339102a2426668b91cb9072e831584961f98",
+      "bytes": 20144
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

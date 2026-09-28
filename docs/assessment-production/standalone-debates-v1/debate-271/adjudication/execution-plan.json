@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-anonymous-adjudication-execution-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-execution",
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/adjudication/contract.md",
+      "sha256": "c20326e274f9061a1fcf826ae73833fc43bab38b65dffc96593d475dade69f5f",
+      "bytes": 2279
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/adjudication/packet.json",
+      "sha256": "e2e5cbc12a8c8dada3c993924e5adf2eabecced048760e3be302a3b147c9a1f4",
+      "bytes": 22253
+    },
+    {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/assessed-indexed-transcript.txt",
+      "sha256": "41a39bdb43a5a9234d0eae465a9357b5da3f822c45111ece09617003079bc174",
+      "bytes": 161837
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/assessment-source-notes.md",
+      "sha256": "8ffd91ac1148f2ed4aaf9e112707158d25694ef519975431f3f022480734bf9d",
+      "bytes": 3129
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/editor-scope.json",
+      "sha256": "5ec5e08ae1095a2ba5048cbcde7d2e241baab0a78cdf910b136ddb368c9b13bc",
+      "bytes": 2590
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/inventory/inventory.json",
+      "sha256": "554092ad06095f149fb289076cc42d6fcce1cebb6cda98336f6aec7b12211376",
+      "bytes": 174962
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/audio/audio-verification.json",
+      "sha256": "fff17e5a5f15873acbd3e777e3ed9be6deaed0c0983c069c1127637e6b6fcdcd",
+      "bytes": 1872
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 903,
+          "end": 943
+        }
+      ]
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-271/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-271/adjudication/output.json"
+  ],
+  "expectedDisputes": 5,
+  "expectedDisputeIds": [
+    "pigliucci-insists-on-christian-specificity:evidenceWarrant",
+    "pigliucci-biblical-morality-challenge:assessmentConfidence",
+    "pigliucci-neurological-alternative-to-religious-experience:assessmentConfidence",
+    "burdenCompletionAdjustment:pro",
+    "burdenCompletionAdjustment:con"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "isolation": "Fresh subscription context with fork none; anonymous options, no primary pass identity or total scores; protocol restriction only."
+}

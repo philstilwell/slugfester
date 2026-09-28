@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-pre-freeze-production-validation",
+  "status": "passed-pre-freeze-production-validator",
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/output.json",
+    "sha256": "7dcd0e4ffbca8ef917829980e5426e18a27be5c3ef1cc530d09bbc469693cdac",
+    "bytes": 71561
+  },
+  "method": "Temporary validation export of the current source, scripts, and evidence; proposed adapter built with unchanged repository builder only inside that export; exact current production validator run before main adapter freeze. No assessment or calculator pass repeated.",
+  "proposedAdapterSha256": "65412357bcda4b825bd2babf656af19c4042acab0fea4aa1ac6162e3547619cc",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--build-adapter",
+        "--debate",
+        "271"
+      ],
+      "exitCode": 0,
+      "output": "Standalone production adapter frozen: 6 sections, 38 moves.\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 0,
+      "output": "Validated 271 debates.\n"
+    }
+  ],
+  "exportRemoved": true
+}
