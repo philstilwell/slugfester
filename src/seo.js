@@ -1,4 +1,4 @@
-import { topicCategoryDefinitions } from "./data/topics.js?v=1884502a6aac6ee6";
+import { topicCategoryDefinitions } from "./data/topics.js?v=2df7977bae0fb037";
 
 export const SITE_URL = "https://slugfester.com";
 export const SITE_NAME = "Slugfester";
@@ -836,17 +836,17 @@ export function backendSeo({ legacy = false } = {}) {
 
 export function correctionsSeo() {
   const description =
-    "Report a possible Slugfester scorecard issue and review the public record of material scoring, attribution, and presentation corrections.";
-  const updatedDate = "2026-09-05";
+    "Send Slugfester feedback: report a scorecard issue, recommend an online debate, review eligibility criteria, and see the public corrections record.";
+  const updatedDate = "2026-09-28";
 
   return {
-    title: pageTitle("Corrections & scorecard revisions"),
-    heading: "Corrections & revisions",
+    title: pageTitle("Feedback, corrections & debate suggestions"),
+    heading: "Corrections & feedback",
     description,
     canonicalPath: correctionsPath(),
     lastmod: updatedDate,
     imagePath: DEFAULT_IMAGE,
-    imageAlt: "Slugfester corrections and revision record.",
+    imageAlt: "Slugfester feedback, debate recommendations, and corrections.",
     type: "website",
     jsonLd: [
       organizationJsonLd(),
@@ -854,7 +854,7 @@ export function correctionsSeo() {
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        name: "Slugfester corrections and revisions",
+        name: "Slugfester feedback and corrections",
         description,
         url: absoluteUrl(correctionsPath()),
         dateModified: seoDateTime(updatedDate),
@@ -864,7 +864,7 @@ export function correctionsSeo() {
       },
       breadcrumbJsonLd([
         { name: SITE_NAME, path: "/" },
-        { name: "Corrections", path: correctionsPath() }
+        { name: "Feedback", path: correctionsPath() }
       ])
     ]
   };
