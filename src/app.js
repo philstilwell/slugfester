@@ -1,10 +1,10 @@
-import { pageUpdates } from "./data/page-updates.js?v=baca6af5619b3b1d";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=baca6af5619b3b1d";
-import { topicCategoryDefinitions } from "./data/topics.js?v=baca6af5619b3b1d";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=baca6af5619b3b1d";
-import { debateSummaries } from "./data/debate-summaries.js?v=baca6af5619b3b1d";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=baca6af5619b3b1d";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=baca6af5619b3b1d";
+import { pageUpdates } from "./data/page-updates.js?v=7848e1662fa57d9e";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=7848e1662fa57d9e";
+import { topicCategoryDefinitions } from "./data/topics.js?v=7848e1662fa57d9e";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=7848e1662fa57d9e";
+import { debateSummaries } from "./data/debate-summaries.js?v=7848e1662fa57d9e";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=7848e1662fa57d9e";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=7848e1662fa57d9e";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -43,7 +43,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=baca6af5619b3b1d";
+} from "./seo.js?v=7848e1662fa57d9e";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -98,7 +98,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=baca6af5619b3b1d")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=7848e1662fa57d9e")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -117,7 +117,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=baca6af5619b3b1d")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=7848e1662fa57d9e")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -133,7 +133,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=baca6af5619b3b1d`)
+    const promise = import(`./data/debate-details/${id}.js?v=7848e1662fa57d9e`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -148,7 +148,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=baca6af5619b3b1d`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=7848e1662fa57d9e`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -471,7 +471,6 @@ function renderShell(content) {
         <a href="${insightsPath()}">Insights</a>
         <a href="${backendPath()}">Method</a>
         <a href="${correctionsPath()}">Feedback</a>
-        <a href="/feed.xml">Updates feed</a>
         <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer">LogFall</a>
         <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer">CogBias</a>
       </nav>
@@ -2422,23 +2421,12 @@ function renderBackend() {
         <div class="section-heading">
           <div>
             <p class="eyebrow">Assessment update</p>
-            <h2 id="backend-summary-heading">Reassessment schedule and recorded work</h2>
+            <h2 id="backend-summary-heading">Next site-wide reassessment</h2>
           </div>
-          <p class="section-summary">Updated September 5, 2026</p>
         </div>
         <div class="backend-summary-panel">
           <div class="backend-summary-copy">
-            <p><strong>The next site-wide reassessment is tentatively scheduled for spring 2027</strong>, when sources and quality controls permit. Earlier assessment records are preserved so that revisions remain traceable.</p>
-            <p>The completed full-catalogue campaign used <strong>5.6 Sol · low</strong>. Its ≈83 hours records time inside the assessment model, including failed and recovery attempts—not video length or time spent waiting. Three brief recovery runs lacked usable timing data, so this remains a conservative minimum.</p>
-            <p>Account personalization and private conversation history are not inputs to the site's assessment data.</p>
-          </div>
-          <div class="backend-summary-stats" aria-label="Reassessment compute summary">
-            <article class="backend-summary-stat--compute">
-              <span>Recorded model work</span>
-              <strong>≈83 hr</strong>
-              <p>conservative aggregate compute estimate for the completed reassessment campaign</p>
-              <p class="backend-summary-stat-note">Each new debate requires 1-2 hours to process and add.</p>
-            </article>
+            <p><strong>A rerun of all published assessments is tentatively scheduled for spring 2027</strong>, subject to stronger AI agents being available.</p>
           </div>
         </div>
       </section>
@@ -3781,28 +3769,28 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=baca6af5619b3b1d")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=7848e1662fa57d9e")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=baca6af5619b3b1d")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=7848e1662fa57d9e")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=baca6af5619b3b1d")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=7848e1662fa57d9e")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=baca6af5619b3b1d")
+    insightsPromise ||= import("./data/insights.js?v=7848e1662fa57d9e")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
