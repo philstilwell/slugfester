@@ -1,10 +1,10 @@
-import { pageUpdates } from "./data/page-updates.js?v=c796105c6a2442d7";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=c796105c6a2442d7";
-import { topicCategoryDefinitions } from "./data/topics.js?v=c796105c6a2442d7";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=c796105c6a2442d7";
-import { debateSummaries } from "./data/debate-summaries.js?v=c796105c6a2442d7";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=c796105c6a2442d7";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=c796105c6a2442d7";
+import { pageUpdates } from "./data/page-updates.js?v=1884502a6aac6ee6";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=1884502a6aac6ee6";
+import { topicCategoryDefinitions } from "./data/topics.js?v=1884502a6aac6ee6";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=1884502a6aac6ee6";
+import { debateSummaries } from "./data/debate-summaries.js?v=1884502a6aac6ee6";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=1884502a6aac6ee6";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=1884502a6aac6ee6";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -43,7 +43,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=c796105c6a2442d7";
+} from "./seo.js?v=1884502a6aac6ee6";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -96,7 +96,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=c796105c6a2442d7")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=1884502a6aac6ee6")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -115,7 +115,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=c796105c6a2442d7")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=1884502a6aac6ee6")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -131,7 +131,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=c796105c6a2442d7`)
+    const promise = import(`./data/debate-details/${id}.js?v=1884502a6aac6ee6`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -146,7 +146,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=c796105c6a2442d7`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=1884502a6aac6ee6`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -800,6 +800,9 @@ function topicGroupsForDebates() {
 
 function reasoningTagDistribution() {
   return topicGroupsForDebates().map((group) => {
+    const scores = group.debates
+      .flatMap((debate) => [debate.score?.pro, debate.score?.con])
+      .filter(Number.isFinite);
     const totals = {
       debates: group.debates.length,
       scoredMoves: 0,
@@ -820,6 +823,7 @@ function reasoningTagDistribution() {
     return {
       ...group,
       ...totals,
+      averageScore: scores.length ? scores.reduce((sum, score) => sum + score, 0) / scores.length : null,
       fallacyRate: totals.scoredMoves ? (totals.fallacies / totals.scoredMoves) * 100 : 0,
       biasRate: totals.scoredMoves ? (totals.biases / totals.scoredMoves) * 100 : 0
     };
@@ -869,7 +873,7 @@ function renderReasoningTopicRow(topic, maximumRate) {
     <li class="reasoning-topic-row">
       <div class="reasoning-topic-name">
         <strong>${escapeHtml(topic.title)}</strong>
-        <span>${topic.debates} ${topic.debates === 1 ? "scorecard" : "scorecards"} · ${topic.scoredMoves} scored moves</span>
+        <span>${topic.debates} ${topic.debates === 1 ? "scorecard" : "scorecards"} · ${topic.scoredMoves} scored moves${Number.isFinite(topic.averageScore) ? ` · <b class="reasoning-topic-average">Avg. score ${formatAverageScore(topic.averageScore)}</b>` : ""}</span>
       </div>
       <div class="reasoning-rate-bars">
         <div class="reasoning-rate-bar">
@@ -913,7 +917,7 @@ function renderReasoningDistribution(topics) {
       <ol class="reasoning-topic-chart">
         ${topics.map((topic) => renderReasoningTopicRow(topic, maximumRate)).join("")}
       </ol>
-      <p class="reasoning-distribution-note">These are counts of named assessment tags, not independent findings that every cited fallacy or bias is established across the corpus.</p>
+      <p class="reasoning-distribution-note">Category averages use both sides’ published overall scores, with each side counted once per scorecard, including shared-side scores in group debates. They are not averages of individual moves. Fallacy and bias rates count named assessment tags, not independent findings that every cited fallacy or bias is established across the corpus.</p>
     </section>
   `;
 }
@@ -3771,21 +3775,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=c796105c6a2442d7")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=1884502a6aac6ee6")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=c796105c6a2442d7")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=1884502a6aac6ee6")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=c796105c6a2442d7")
+    insightsPromise ||= import("./data/insights.js?v=1884502a6aac6ee6")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

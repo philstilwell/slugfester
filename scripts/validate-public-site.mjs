@@ -5,6 +5,7 @@ import "./validate-initial-content.mjs";
 import "./validate-reader-scope-disclosures.mjs";
 import "./validate-seo-contract.mjs";
 import "./validate-ranking-mini-charts.mjs";
+import "./validate-category-score-averages.mjs";
 import { dirname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publishedDebates as debates } from "../src/data/debates.js";
