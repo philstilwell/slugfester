@@ -1,10 +1,10 @@
-import { pageUpdates } from "./data/page-updates.js?v=e27f02c3c7a6e5a2";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=e27f02c3c7a6e5a2";
-import { topicCategoryDefinitions } from "./data/topics.js?v=e27f02c3c7a6e5a2";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=e27f02c3c7a6e5a2";
-import { debateSummaries } from "./data/debate-summaries.js?v=e27f02c3c7a6e5a2";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=e27f02c3c7a6e5a2";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=e27f02c3c7a6e5a2";
+import { pageUpdates } from "./data/page-updates.js?v=c796105c6a2442d7";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=c796105c6a2442d7";
+import { topicCategoryDefinitions } from "./data/topics.js?v=c796105c6a2442d7";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=c796105c6a2442d7";
+import { debateSummaries } from "./data/debate-summaries.js?v=c796105c6a2442d7";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=c796105c6a2442d7";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=c796105c6a2442d7";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -43,7 +43,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=e27f02c3c7a6e5a2";
+} from "./seo.js?v=c796105c6a2442d7";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -96,7 +96,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=e27f02c3c7a6e5a2")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=c796105c6a2442d7")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -115,7 +115,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=e27f02c3c7a6e5a2")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=c796105c6a2442d7")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -131,7 +131,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=e27f02c3c7a6e5a2`)
+    const promise = import(`./data/debate-details/${id}.js?v=c796105c6a2442d7`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -146,7 +146,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=e27f02c3c7a6e5a2`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=c796105c6a2442d7`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -1655,6 +1655,7 @@ function renderRankings() {
             </div>
           </form>
         </section>
+        <p class="ranking-chart-note">Mini charts show overall scores in five-point ranges from 50 to 100, for interlocutors with 3+ matching 1-on-1 debates. Bar height shows the share of that speaker’s debates (0–100%); numbers above the bars are debate counts.</p>
         ${
           rankings.length
             ? `<ol class="ranking-list">${rankings.map((person) => renderRankingCard(person, rankingTagMaximum)).join("")}</ol>`
@@ -1825,6 +1826,28 @@ function renderRankingComparison(state) {
   `;
 }
 
+function renderRankingMiniHistogram(person) {
+  if (person.appearances < 3) return "";
+  const distribution = profileScoreDistribution(person.records);
+  const summary = distribution.bands.filter((band) => band.count)
+    .map((band) => `${band.label}: ${band.count} ${band.count === 1 ? "debate" : "debates"}`).join("; ");
+  return `
+    <figure class="ranking-mini-chart" data-score-scale="share" data-score-total="${person.appearances}">
+      <figcaption aria-hidden="true">Overall scores <span>0–100% of debates</span></figcaption>
+      <span class="sr-only" id="ranking-chart-${person.rank}">${escapeHtml(person.name)}’s overall scores across ${person.appearances} matching 1-on-1 debates. ${escapeHtml(summary)}. All other five-point ranges have zero debates. Heights use a shared 0 to 100 percent scale.</span>
+      <ol class="profile-score-bars" aria-hidden="true">
+        ${distribution.bands.map((band) => {
+          const share = (band.count / person.appearances) * 100;
+          return `<li data-score-bucket="${escapeHtml(band.label)}" data-score-count="${band.count}" data-score-share="${share}" style="--bar-height: ${share.toFixed(2)}%" title="${escapeHtml(band.label)}: ${band.count} of ${person.appearances} debates (${share.toFixed(1)}%)">
+            <span class="ranking-mini-bar"></span>
+            ${band.count ? `<strong class="ranking-mini-count">${band.count}</strong>` : ""}
+          </li>`;
+        }).join("")}
+      </ol>
+      <span class="ranking-mini-axis" aria-hidden="true"><span>50</span><span>75</span><span>100</span></span>
+    </figure>`;
+}
+
 function renderRankingCard(person, maximumTagRate) {
   const profileHref = interlocutorPath(person);
   const debateLabel = `${person.appearances} ${person.appearances === 1 ? "debate" : "debates"}`;
@@ -1836,8 +1859,8 @@ function renderRankingCard(person, maximumTagRate) {
 
   return `
     <li>
-      <article class="ranking-card" data-ranking-person="${escapeHtml(person.name)}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}" data-appearances="${person.appearances}">
-        <a class="ranking-card-main" href="${escapeHtml(profileHref)}" aria-label="Open ${escapeHtml(person.name)}'s debate profile">
+      <article class="ranking-card${person.appearances >= 3 ? " has-score-profile" : ""}" data-ranking-person="${escapeHtml(person.name)}" data-average-score="${person.averageScore}" data-opponents-average="${person.averageOpponentScore}" data-appearances="${person.appearances}">
+        <a class="ranking-card-main" href="${escapeHtml(profileHref)}" aria-label="Open ${escapeHtml(person.name)}'s debate profile"${person.appearances >= 3 ? ` aria-describedby="ranking-chart-${person.rank}"` : ""}>
           <span class="ranking-place" aria-label="Rank ${person.rank}">${person.rank}</span>
 ${renderPersonPortrait(person, {named: true, })}
           <span class="ranking-person">
@@ -1857,6 +1880,7 @@ ${renderPersonPortrait(person, {named: true, })}
               </span>
             </span>
           </span>
+          ${renderRankingMiniHistogram(person)}
           <span class="ranking-score-pair">
             <span class="ranking-score ${scoreTone(Math.round(person.averageScore))}">
               <small>${escapeHtml(firstName)}'s avg.</small>
@@ -3747,21 +3771,21 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=e27f02c3c7a6e5a2")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=c796105c6a2442d7")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=e27f02c3c7a6e5a2")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=c796105c6a2442d7")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=e27f02c3c7a6e5a2")
+    insightsPromise ||= import("./data/insights.js?v=c796105c6a2442d7")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

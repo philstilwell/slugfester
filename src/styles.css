@@ -2400,6 +2400,144 @@ a {
   color: var(--coral-text);
 }
 
+.ranking-chart-note {
+  max-width: 960px;
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.ranking-card.has-score-profile .ranking-card-main {
+  grid-template-columns: 46px 52px minmax(0, 1fr) minmax(180px, 224px) 252px;
+}
+
+.ranking-mini-chart {
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2px 10px;
+}
+
+.ranking-mini-chart figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.67rem;
+  font-weight: 800;
+}
+
+.ranking-mini-chart figcaption span {
+  font-weight: 600;
+}
+
+.ranking-mini-chart .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ranking-mini-chart .profile-score-bars {
+  height: 52px;
+  margin-top: 18px;
+  gap: 3px;
+  background: linear-gradient(to top, transparent calc(50% - 1px), var(--line) 50%, transparent calc(50% + 1px));
+  border-bottom: 1px solid var(--line);
+}
+
+.ranking-mini-chart .profile-score-bars li {
+  position: relative;
+  display: block;
+}
+
+.ranking-mini-bar {
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--bar-height);
+  background: var(--profile-score-bar-color);
+  border-radius: 3px 3px 0 0;
+}
+
+.ranking-mini-count {
+  position: absolute;
+  bottom: calc(var(--bar-height) + 3px);
+  left: 0;
+  width: 100%;
+  color: #40524f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.ranking-mini-axis {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 1100px) {
+  .ranking-card.has-score-profile .ranking-card-main {
+    grid-template-columns: 46px 52px minmax(0, 1fr) 252px;
+  }
+
+  .ranking-card.has-score-profile .ranking-person {
+    grid-column: 3 / -1;
+  }
+
+  .ranking-mini-chart {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: min(100%, 280px);
+    justify-self: end;
+  }
+
+  .ranking-card.has-score-profile .ranking-score-pair {
+    grid-column: 4;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .ranking-card.has-score-profile .ranking-card-main {
+    grid-template-columns: 42px 48px minmax(0, 1fr);
+  }
+
+  .ranking-mini-chart {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 320px);
+    padding-top: 10px;
+  }
+
+  .ranking-card.has-score-profile .ranking-score-pair {
+    grid-column: 2 / -1;
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 360px) {
+  .ranking-card .ranking-tag-rate {
+    grid-template-columns: 54px minmax(20px, 1fr) 70px;
+    gap: 5px;
+  }
+}
+
+@media (forced-colors: active) {
+  .ranking-mini-bar {
+    background: CanvasText;
+  }
+}
+
 .ranking-method summary {
   display: flex;
   align-items: center;
