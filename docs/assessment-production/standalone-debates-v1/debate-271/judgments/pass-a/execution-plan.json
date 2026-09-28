@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-isolated-judgment-execution-plan",
+  "status": "frozen-before-execution",
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "pass": "pass-a",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/contract.md",
+      "sha256": "4c039d267bfd1b2034781486ffd048a661c03326be9a958100390ab08562f44d",
+      "bytes": 3742
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/judgment-packet.json",
+      "sha256": "a4292c128e08dee459ac5922e2058b053f0dd66fab1c2c098172ace243b02e62",
+      "bytes": 4886
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/inventory/inventory.json",
+      "sha256": "554092ad06095f149fb289076cc42d6fcce1cebb6cda98336f6aec7b12211376",
+      "bytes": 174962
+    },
+    {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/assessed-indexed-transcript.txt",
+      "sha256": "41a39bdb43a5a9234d0eae465a9357b5da3f822c45111ece09617003079bc174",
+      "bytes": 161837
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/assessment-source-notes.md",
+      "sha256": "8ffd91ac1148f2ed4aaf9e112707158d25694ef519975431f3f022480734bf9d",
+      "bytes": 3129
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/editor-scope.json",
+      "sha256": "5ec5e08ae1095a2ba5048cbcde7d2e241baab0a78cdf910b136ddb368c9b13bc",
+      "bytes": 2590
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "sha256": "e52fae1630ad0912ab1958705e22ced6af5d711b1cfacc37fd4575b09f27826a",
+      "bytes": 49735,
+      "allowedLines": [
+        {
+          "start": 639,
+          "end": 790
+        }
+      ]
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-a/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-a/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-a/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm output; read every permitted input fully (only declared line range for schema library); send reading checkpoint and await controller release; write one output once. Full provenance transcript/events are excluded from read permission; use the complete approved indexed transcript. Do not inspect other passes, publication, other debates, credentials, environment dumps, or session logs.",
+  "isolation": "Fresh subscription context with fork none and protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

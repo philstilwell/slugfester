@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0-isolated-publication-execution-plan",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-before-execution",
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/contract.md",
+      "sha256": "d3defb5026fca9a5abc84477618e2ad82d4881c1aaff929b387574b19f1b5e3e",
+      "bytes": 6854
+    },
+    {
+      "path": ".assessment-cache/captions/Rr2nrj3yXq8/assessed-indexed-transcript.txt",
+      "sha256": "41a39bdb43a5a9234d0eae465a9357b5da3f822c45111ece09617003079bc174",
+      "bytes": 161837
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/assessment-source-notes.md",
+      "sha256": "8ffd91ac1148f2ed4aaf9e112707158d25694ef519975431f3f022480734bf9d",
+      "bytes": 3129
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/source/editor-scope.json",
+      "sha256": "5ec5e08ae1095a2ba5048cbcde7d2e241baab0a78cdf910b136ddb368c9b13bc",
+      "bytes": 2590
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/inventory/inventory.json",
+      "sha256": "554092ad06095f149fb289076cc42d6fcce1cebb6cda98336f6aec7b12211376",
+      "bytes": 174962
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/final-ledger/final-ledger.json",
+      "sha256": "fc25277bbe1c9121aa7ad225637126e8bf46b7ccc27dbb5324742c15a453bc89",
+      "bytes": 343560
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/score-pass/output.json",
+      "sha256": "81638e1b4852e361268bfb613cf8299bfdef9e0680aae92de3bd7df0d68dc7c3",
+      "bytes": 19829
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/skeleton.json",
+      "sha256": "b3cf1ffc0a8dbfb7aad4f14e234100d30c2085ff57de58b6b86fba5e6f4ed713",
+      "bytes": 14313
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/reference-metrics.json",
+      "sha256": "38b0ee1c3f11551e3858cc7627a4339102a2426668b91cb9072e831584961f98",
+      "bytes": 20144
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/check-publication.mjs",
+      "sha256": "3c89df99d66accc12dc7e86d46d281f76389986b6624f9a41a455f00e0718559",
+      "bytes": 9073
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "bytes": 4467
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/publication/build-packet.json",
+      "sha256": "2965d4655b8da7456290d341a1772c65420272bfe50a018f565c0058c23b944e",
+      "bytes": 1552
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-271/publication/first-submission-parts.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-271/publication/first-submission-parts.json"
+  ],
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "checkerPath": "docs/assessment-production/standalone-debates-v1/debate-271/publication/check-publication.mjs",
+  "checkerUsage": "node CHECKER --packet BUILD_PACKET < parts on standard input; use --emit only after mechanical checks pass. No intermediate result files.",
+  "buildPacketPath": "docs/assessment-production/standalone-debates-v1/debate-271/publication/build-packet.json",
+  "isolation": "Fresh fork-none subscription context; only locked source, resolved judgments, scores, display contract and independent reference metrics; protocol restriction, no OS sandbox."
+}

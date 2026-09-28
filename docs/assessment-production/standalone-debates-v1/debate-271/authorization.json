@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-28T01:33:26.027456+00:00",
+  "userAuthorization": "User replied I approve. to assessing both openings, both rebuttal rounds, and both closings, approximately 6:31–1:39:05, excluding the moderator third-position interlude and all audience questions and answers; scoring rules unchanged.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-271",
+    "head": "ba036c143ae1294f745de3049dba3d3e261be65a",
+    "localMain": "ba036c143ae1294f745de3049dba3d3e261be65a",
+    "originMain": "ba036c143ae1294f745de3049dba3d3e261be65a",
+    "clean": true,
+    "isolationReason": "Source acquisition was preserved in an isolated clean managed topic checkout created from origin/main; local main reconciliation was completed before this authorization and the first tracked write. Unrelated avatar commits were fast-forwarded without changing recovered source bytes. No initial equality is retroactively claimed for the preparatory acquisition."
+  },
+  "identity": {
+    "debateNumber": "271",
+    "debateId": "craig-pigliucci-christian-god-2001",
+    "videoId": "Rr2nrj3yXq8",
+    "canonicalUrl": "https://www.youtube.com/watch?v=Rr2nrj3yXq8",
+    "sourceTitle": "\"Does the Christian God Exist?\" | William Lane Craig vs Massimo Pigliucci",
+    "eventYear": 2001,
+    "title": "William Lane Craig vs Massimo Pigliucci — Does the Christian God Exist? (2001)",
+    "label": "Christian God at Georgia",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does the Christian God exist?",
+    "pro": {
+      "speaker": "William Lane Craig",
+      "position": "Christian theism"
+    },
+    "con": {
+      "speaker": "Massimo Pigliucci",
+      "position": "Naturalist criticism"
+    },
+    "dyadic": true,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-exclusion-v1",
+      "scopeType": "explicitly-approved-formal-rounds-and-closings-with-entire-audience-qa-excluded",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "Rr2nrj3yXq8",
+      "userApproval": "User replied I approve. to assessing both openings, both rebuttal rounds, and both closings, approximately 6:31–1:39:05, excluding the moderator third-position interlude and all audience questions and answers; scoring rules unchanged.",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "readerDisclosureRequired": true,
+      "requiredReaderDisclosure": "This assessment covers both opening statements, both rounds of rebuttal, and both closing statements (approximately 6:31–1:39:05). The moderator’s subsequent third-position interlude and the entire audience Q&A, including both speakers’ answers, are excluded. Neither side receives credit or penalty for excluded material; these scores assess the approved formal debate, not the complete event.",
+      "assessedWindow": {
+        "startMs": 391060,
+        "endMs": 9302239,
+        "durationMs": 8911179
+      },
+      "retainedIntervals": [
+        {
+          "startMs": 391060,
+          "endMs": 5945480,
+          "durationMs": 5554420
+        }
+      ],
+      "excludedIntervals": [
+        {
+          "intervalId": "moderator-third-position-and-entire-audience-qa",
+          "startMs": 5945480,
+          "endMs": 9302239,
+          "durationMs": 3356759,
+          "reason": "Explicit user-approved exclusion of the moderator’s third-position interlude immediately after Pigliucci’s closing, all following audience interventions, both primary speakers’ answers and dependent replies, and final moderator farewell.",
+          "dependentRepliesReviewed": true,
+          "noCreditOrPenalty": true
+        }
+      ],
+      "excludedDurationMs": 3356759,
+      "excludedShareOfAssessedWindow": 0.37669078356522745,
+      "boundaryBasis": "Canonical event boundaries at Craig’s initial greeting and Pigliucci’s completed closing; full-media end from local probe. This envelope includes the explicitly excluded tail so the existing editor-scope validator can mechanically reject every intersection. Retained assessment duration is recorded separately.",
+      "outsideWindowDisposition": "Opening introductions and logistics before Craig’s first turn are unscored.",
+      "coherenceReview": "The retained continuous formal debate includes all eight planned primary-speaker statements. Both closings precede the excluded interlude and audience material, which supplies neither evidence nor an alleged unanswered objection."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownPaidCostEstimateUsd": 1.0661275,
+    "maximumPossiblePaidCostEstimateUsd": 1.0841275,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "userApprovedTemporaryMaximumUsd": 1.5,
+    "fullWorkflowConservativeUpperEstimateUsd": 1.5,
+    "additionalVerificationReserveUsd": 0.4158725,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 1,
+    "consumedRetryCount": 1
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-271",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/craig-pigliucci-christian-god-2001.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}

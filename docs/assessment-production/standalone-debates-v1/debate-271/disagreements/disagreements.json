@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "271",
+  "debateId": "craig-pigliucci-christian-god-2001",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "pigliucci-insists-on-christian-specificity:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "pigliucci-insists-on-christian-specificity",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 62,
+          "rationale": "The scope objection follows from the stated motion, but the stronger claim that Christianity is imaginative is announced without supporting evidence in this passage."
+        },
+        "option-b": {
+          "value": 72,
+          "rationale": "The debate title and Craig's own stated hypothesis support the constraint, though the imagination thesis is not yet defended."
+        }
+      }
+    },
+    {
+      "disputeId": "pigliucci-biblical-morality-challenge:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pigliucci-biblical-morality-challenge",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "pigliucci-neurological-alternative-to-religious-experience:assessmentConfidence",
+      "kind": "move-categorical",
+      "moveId": "pigliucci-neurological-alternative-to-religious-experience",
+      "field": "assessmentConfidence",
+      "trigger": {
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": "medium",
+        "option-b": "high"
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains outside the move-level ratings; cumulative routing, specificity, and burden allocation are already assessed in the locked moves.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is invoked because the adjustment is zero.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence remains beyond the scored dimensions.",
+            "alreadyCapturedBy": [
+              "craig-defines-cumulative-christian-hypothesis",
+              "craig-cumulative-route-and-neutrality-reply",
+              "craig-absence-evidence-expectation-test"
+            ],
+            "counterfactual": "Removing any unscored global consideration would not change burden completion independently of the move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden consequence remains uncaptured by the move-level ratings and rationales.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is invoked because all relevant consequences are already scored.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence beyond the assessed move-level reasoning was identified.",
+            "alreadyCapturedBy": [
+              "move-level dimensions"
+            ],
+            "counterfactual": "Removing any supposed global factor would not change burden completion beyond existing move ratings."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains outside the move-level ratings; critical burden, Christian specificity, and comparative standards are already assessed.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is invoked because the adjustment is zero.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence remains beyond the scored dimensions.",
+            "alreadyCapturedBy": [
+              "pigliucci-insists-on-christian-specificity",
+              "pigliucci-limits-falsifiability-and-positive-atheist-burden",
+              "pigliucci-rational-nonbelief-without-impossibility-proof"
+            ],
+            "counterfactual": "Removing any unscored global consideration would not change burden completion independently of the move ratings."
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden consequence remains uncaptured by the move-level ratings and rationales.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion is invoked because all relevant consequences are already scored.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct consequence beyond the assessed move-level reasoning was identified.",
+            "alreadyCapturedBy": [
+              "move-level dimensions"
+            ],
+            "counterfactual": "Removing any supposed global factor would not change burden completion beyond existing move ratings."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 38,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/inventory/inventory.json",
+      "sha256": "554092ad06095f149fb289076cc42d6fcce1cebb6cda98336f6aec7b12211376"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-a/output.json",
+      "sha256": "3bbfd6d24aeb88b35a3852a5f7548db72f5b088080cf734532042cb0bfced057"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-271/judgments/pass-b/output.json",
+      "sha256": "9944a3eba6ba3d636877a2a7df090a357463fdc34a648c5c69e637421975eb85"
+    }
+  }
+}
