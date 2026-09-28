@@ -1,0 +1,12 @@
+{
+  "status": "preserved-validation-export-interface-failure",
+  "debateNumber": "272",
+  "builderExitCode": 0,
+  "validatorExitCode": 1,
+  "diagnostic": "Standalone ledger validation failed: standalone adapter or registry differs from its frozen route",
+  "cause": "Proposed adapter was created only inside the disposable export, but its export-local registry record still lacked the published-and-frozen status and adapter hash required by the production validator.",
+  "resolution": "Recreate export, register only its proposed adapter inside the export, and rerun exact production validator. Main registry and main adapter remain unfrozen until actual rendering evidence is ready.",
+  "failedExportRemoved": true,
+  "assessmentChanges": 0,
+  "scorePassesRepeated": 0
+}

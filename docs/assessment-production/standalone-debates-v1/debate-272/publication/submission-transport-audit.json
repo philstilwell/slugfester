@@ -1,0 +1,32 @@
+{
+  "status": "passed-formatting-only-transport-reconciliation",
+  "debateNumber": "272",
+  "approval": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/unsaved-editorial-approval.json",
+    "sha256": "fff7bbe423c6cf570d554e5db864765883111b6171fd04b4bb290bf0b6505d38",
+    "bytes": 3103
+  },
+  "firstSubmission": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/first-submission-parts.json",
+    "sha256": "9404cff771a12daa8494031586dadd40412349164e6518f57329335852b2fa7c",
+    "bytes": 55964
+  },
+  "canonicalWithoutTerminalLfSha256": "9aaa6b1369d297bc3098d090c3ed59ea33fa4aa77843271937e076c4e133e782",
+  "approvedCanonicalWithTerminalLfSha256": "3243b0e291b2dcc71407fc0cd3dbfe67da16aa3a54095eddd1004d5f6e1617be",
+  "exactCheckerOutputSha256": "7abb276df76df33c4e6851a997452d755967b50932aff65b420f86028ff88a2f",
+  "approvedCheckerOutputWithExtraTerminalLfSha256": "0921a65f0251e07be984f8f3746c9776f7435518254b6be64f14390e6f3e81a1",
+  "exactCheckerOutputBytes": 66233,
+  "workerReportedCharacterLength": 66181,
+  "patchTransport": {
+    "invocations": 3,
+    "parserRejectionsBeforeMutation": 2,
+    "successfulFileCreations": 1,
+    "fileUpdates": 0
+  },
+  "diagnosis": "Both reported approval hashes included an extra terminal LF relative to the controller convention. Exact cryptographic reconstruction proves identical parsed content. Two malformed patch terminators were rejected before the single successful first submission. No content repair or additional model attempt occurred.",
+  "sourceEligibilityAndEditorialApprovalPreserved": true,
+  "assessmentChanges": 0,
+  "scoreChanges": 0,
+  "submittedBytesChanged": 0,
+  "directIncrementalCostUsd": 0
+}

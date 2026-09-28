@@ -1,0 +1,9 @@
+{
+  "status": "preserved-transitional-screenshot-diagnostic",
+  "beforeHelperSha256": "2a7aa525ca695db1f3a4e9d905a4177078465f8a4eceb6921e426590377f450c",
+  "afterHelperSha256": "2ec5209bde9f003665af17c24a8b3875f7e5942678bd504e33754684ff3503ea",
+  "observation": "Interaction assertions passed, but initial AI screenshots captured the preceding critique fade-out and did not position the expanded content usefully.",
+  "correction": "Wait for CSS transitions before screenshots, position the AI control at 300 pixels, and explicitly require prior critique opacity zero before capture. No interaction assertion removed.",
+  "websiteChanges": 0,
+  "assessmentChanges": 0
+}
