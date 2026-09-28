@@ -1,6 +1,7 @@
 // Build-time only. Reuse published prose and scores; never generate new assessments.
 import { publishedDebates as debates } from "../../src/data/debates.js";
 import { renderAssessmentProcessGuide } from "../../src/data/assessment-process-guide.js";
+import { renderDebateRecommendation } from "../../src/data/debate-recommendation.js";
 import { avatarsForSpeakerText } from "../../src/data/interlocutors.js";
 import { topicCategoryDefinitions } from "../../src/data/topics.js";
 import { referenceDefinitions, referenceFromUrl } from "../../src/data/references.js";
@@ -44,6 +45,7 @@ function debateContent(debate) {
 }
 
 export function initialPageContent(path) {
+  if (path === "/corrections/") return `<section id="report-scorecard-issue"><h2>Report a possible scorecard issue</h2><p>Enable JavaScript to use the Corrections form. Include the exact page, the issue, and supporting evidence. Submitting a report does not guarantee a review, an individual reply, or a change. You can recommend a debate using the form below without JavaScript.</p></section>${renderDebateRecommendation()}`;
   const topic = topicCategoryDefinitions.find((item) => topicPath(item) === path);
   if (topic) return `<section><h2>About this topic</h2>${paragraph(topic.description)}<p>Debates are grouped by their main question. Scores assess the reasoning presented, not the truth of a position. <a href="/backend/">Read the assessment method</a>.</p></section><section><h2>Explore the assessments</h2>${cards(catalogue.filter((debate) => debate.topicCategory === topic.id))}</section><nav aria-label="Explore other topics"><h2>Explore other topics</h2>${topicCategoryDefinitions.filter((item) => item.id !== topic.id).map((item) => `<p><a href="${topicPath(item)}">${escape(item.title)}</a></p>`).join("")}</nav>`;
   const referenceMatch = path?.match(/^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/$/);

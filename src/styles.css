@@ -3982,7 +3982,8 @@ a {
   text-transform: uppercase;
 }
 
-.backend-recommendation-form input:not([type="hidden"]) {
+.backend-recommendation-form input:not([type="hidden"]),
+.backend-recommendation-form textarea {
   width: 100%;
   min-height: 46px;
   padding: 11px 12px;
@@ -3993,7 +3994,8 @@ a {
   font: inherit;
 }
 
-.backend-recommendation-form input:not([type="hidden"]):focus {
+.backend-recommendation-form input:not([type="hidden"]):focus,
+.backend-recommendation-form textarea:focus {
   outline: 3px solid rgba(47, 143, 133, 0.25);
   outline-offset: 1px;
   border-color: var(--teal-text);
@@ -4004,6 +4006,36 @@ a {
   margin-top: 8px;
   border: 0;
   cursor: pointer;
+}
+
+.backend-recommendation-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.feedback-screening-list {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 0;
+  padding-left: 20px;
+  color: #30413e;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.feedback-screening-list strong {
+  color: var(--blue);
+}
+
+.feedback-team-note,
+.feedback-selection-note {
+  font-size: 0.84rem;
+}
+
+.feedback-selection-note {
+  margin: 0;
+  color: #30413e;
+  line-height: 1.55;
 }
 
 .backend-recommendation-honey {
@@ -4807,6 +4839,11 @@ a {
   color: #173f4c;
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 0.98;
+}
+
+.feedback-recommendation-section {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  scroll-margin-top: 90px;
 }
 
 .correction-report-intro > p:not(.eyebrow) {

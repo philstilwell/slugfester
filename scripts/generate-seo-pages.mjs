@@ -87,7 +87,7 @@ const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
 const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const normalizedSeo = seoSource.replace(browserImportVersions, "$1CONTENT_VERSION");
 const browserSources = await Promise.all([
-  "src/styles.css", "src/data/topics.js", "src/data/assessment-process-guide.js",
+  "src/styles.css", "src/data/topics.js", "src/data/assessment-process-guide.js", "src/data/debate-recommendation.js",
   "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
 ].map((path) => readFile(join(root, path), "utf8")));
 // Render first, then hash the final generated update dates and source together.
@@ -726,7 +726,7 @@ addPage(insightsPath(), insightsSeo(), "Explore seven research findings, figures
 addPage(
   correctionsPath(),
   correctionsSeo(),
-  "Report a possible Slugfester scorecard issue and review the public correction record."
+  "Report a possible scorecard issue, recommend a debate for assessment, and review the public correction record."
 );
 
 addPage(

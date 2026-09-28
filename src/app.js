@@ -1,10 +1,10 @@
-import { pageUpdates } from "./data/page-updates.js?v=1884502a6aac6ee6";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=1884502a6aac6ee6";
-import { topicCategoryDefinitions } from "./data/topics.js?v=1884502a6aac6ee6";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=1884502a6aac6ee6";
-import { debateSummaries } from "./data/debate-summaries.js?v=1884502a6aac6ee6";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=1884502a6aac6ee6";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=1884502a6aac6ee6";
+import { pageUpdates } from "./data/page-updates.js?v=2df7977bae0fb037";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=2df7977bae0fb037";
+import { topicCategoryDefinitions } from "./data/topics.js?v=2df7977bae0fb037";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=2df7977bae0fb037";
+import { debateSummaries } from "./data/debate-summaries.js?v=2df7977bae0fb037";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=2df7977bae0fb037";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=2df7977bae0fb037";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -43,7 +43,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=1884502a6aac6ee6";
+} from "./seo.js?v=2df7977bae0fb037";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -55,6 +55,8 @@ let insightsPromise;
 let insightsContent;
 let insightsMethodsContent;
 let insightsMethodsPromise;
+let debateRecommendationPromise;
+let renderDebateRecommendation;
 let sectionScoreExtremes = { top: [], bottom: [] };
 const debateDetailPromises = new Map();
 const referenceAppearancePromises = new Map();
@@ -96,7 +98,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=1884502a6aac6ee6")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=2df7977bae0fb037")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -115,7 +117,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=1884502a6aac6ee6")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=2df7977bae0fb037")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -131,7 +133,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=1884502a6aac6ee6`)
+    const promise = import(`./data/debate-details/${id}.js?v=2df7977bae0fb037`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -146,7 +148,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=1884502a6aac6ee6`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=2df7977bae0fb037`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -468,7 +470,7 @@ function renderShell(content) {
         <a href="${rankingsPath()}">Rankings</a>
         <a href="${insightsPath()}">Insights</a>
         <a href="${backendPath()}">Method</a>
-        <a href="${correctionsPath()}">Corrections</a>
+        <a href="${correctionsPath()}">Feedback</a>
         <a href="/feed.xml">Updates feed</a>
         <a href="https://logfall.com/" target="_blank" rel="noopener noreferrer">LogFall</a>
         <a href="https://cogbias.site/" target="_blank" rel="noopener noreferrer">CogBias</a>
@@ -2729,14 +2731,15 @@ function renderCorrections() {
       <section class="corrections-hero">
         <div>
           <p class="eyebrow">Accountability</p>
-          <h1>Corrections & revisions</h1>
-          <p class="corrections-lede">Slugfester assessments are intended to be transparent and revisable. If a score, quotation, speaker attribution, source link, or displayed calculation looks wrong, readers should have a direct way to flag it and see what changed afterward.</p>
+          <h1>Corrections & feedback</h1>
+          <p class="corrections-lede">Report a possible scorecard issue or recommend an online debate for assessment. Submissions go privately to the site administrator; the revision log records selected past corrections.</p>
         </div>
         <aside class="corrections-action-card">
           <span>Found a possible problem?</span>
           <strong>Send the exact page and evidence.</strong>
-          <p>A private report goes directly to the site administrator for checking. Material corrections are recorded publicly below.</p>
+          <p>Specific evidence helps us identify possible issues. There is no guaranteed response or review timeline.</p>
           <a class="button primary" href="#report-scorecard-issue">Report a possible correction</a>
+          <a class="button secondary" href="#recommend-a-debate">Recommend a debate</a>
         </aside>
       </section>
 
@@ -2745,10 +2748,11 @@ function renderCorrections() {
           <p class="eyebrow">Reader report</p>
           <h2 id="correction-report-heading">Report a possible scorecard issue</h2>
           <p>Identify the exact page and explain what appears incorrect. A timestamp, transcript passage, calculation, screenshot link, or other evidence will make the report easier to check.</p>
+          <p><strong>Submitting a report does not guarantee a review, an individual reply, or a change.</strong> Reports may be considered as time and resources permit.</p>
           ${selectedDebate ? `<p class="correction-report-context"><strong>Selected scorecard:</strong> Debate ${escapeHtml(selectedDebate.number)} · ${renderDebateTitle(selectedDebate)}</p>` : ""}
         </div>
         <div class="correction-report-card">
-          ${reportSent ? '<p class="correction-report-success" role="status"><strong>Report sent.</strong> Thank you—the possible issue has been delivered for review.</p>' : ""}
+          ${reportSent ? '<p class="correction-report-success" role="status"><strong>Report sent.</strong> Thank you for the feedback. This confirms submission only, not a commitment to review or respond.</p>' : ""}
           <form class="correction-report-form" action="https://formsubmit.co/44a747882839a1240511c0b4bca3bd95" method="post" accept-charset="UTF-8">
             <input type="hidden" name="_subject" value="${escapeHtml(reportSubject)}">
             <input type="hidden" name="_template" value="table">
@@ -2788,23 +2792,25 @@ function renderCorrections() {
 
             <button class="button primary" type="submit">Send issue report</button>
           </form>
-          <p class="correction-report-privacy">The report and your email are delivered privately to the site administrator through FormSubmit. Your email will be used only if clarification is needed. Any material correction will be summarized in the public revision log.</p>
+          <p class="correction-report-privacy">The report and your email are delivered privately to the site administrator through FormSubmit. Your email is used only for possible follow-up about this report. If a correction is made, it may be summarized in the public revision log.</p>
         </div>
       </section>
+
+      ${renderDebateRecommendation({ sent: params.get("recommendation") === "sent" })}
 
       <section class="corrections-process" aria-labelledby="corrections-process-heading">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Review standard</p>
-            <h2 id="corrections-process-heading">What happens after a report</h2>
+            <h2 id="corrections-process-heading">If a report is taken up</h2>
           </div>
-          <p class="section-summary">Reports do not change scores automatically.</p>
+          <p class="section-summary">These checks guide a review when one is undertaken. Reports do not change scores automatically.</p>
         </div>
         <ol class="corrections-process-list">
           <li><span>01</span><div><strong>Reproduce the issue.</strong><p>The public page, source data, and relevant transcript passage are checked independently of the proposed fix.</p></div></li>
           <li><span>02</span><div><strong>Classify the change.</strong><p>Presentation and calculation defects can be corrected directly. A substantive reassessment must follow the published assessment process rather than silently changing a judgment.</p></div></li>
           <li><span>03</span><div><strong>Validate site-wide effects.</strong><p>Any change to shared calculations is checked across profiles, rankings, comparison graphs, topic summaries, and debate pages before release.</p></div></li>
-          <li><span>04</span><div><strong>Record material revisions.</strong><p>Changes that affect interpretation, eligibility, attribution, or displayed scores are added to the public record below.</p></div></li>
+          <li><span>04</span><div><strong>Note material revisions.</strong><p>Changes that affect interpretation, eligibility, attribution, or displayed scores may be summarized in the public record below.</p></div></li>
         </ol>
       </section>
 
@@ -3774,22 +3780,29 @@ async function route({ focusMain = false } = {}) {
   );
   const loaders = [];
 
+  if (correctionsMatch && !renderDebateRecommendation) {
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=2df7977bae0fb037")
+      .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
+      .catch((error) => { debateRecommendationPromise = undefined; throw error; });
+    loaders.push(debateRecommendationPromise);
+  }
+
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=1884502a6aac6ee6")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=2df7977bae0fb037")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=1884502a6aac6ee6")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=2df7977bae0fb037")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=1884502a6aac6ee6")
+    insightsPromise ||= import("./data/insights.js?v=2df7977bae0fb037")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);
