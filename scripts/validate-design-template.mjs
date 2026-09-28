@@ -421,6 +421,7 @@ requireIncludes("landing reassessment note styling", styles, ".landing-topic-lin
 requireIncludes("backend objectivity accordion", styles, ".backend-objectivity-accordion {");
 requireIncludes("backend compact technical type", styles, "font-size: 0.86rem;");
 requireIncludes("footer", styles, ".site-footer");
+requireIncludes("header wordmark size", styles, ".brand-name {\n  font-size: 1.37rem;");
 
 requireExcludes("sticky header", styles, ".brand-gloves");
 requireExcludes("scorecard", styles, ".scoreboard-gloves");
