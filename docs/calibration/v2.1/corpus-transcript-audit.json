@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "workflowVersion": "Slugfester Reassessment Workflow v2.1",
   "auditAsOf": "2026-09-28",
-  "corpusDebates": 273,
-  "locallySavedTranscripts": 273,
+  "corpusDebates": 274,
+  "locallySavedTranscripts": 274,
   "unavailableTranscripts": 0,
   "acquisitionRate": 1.0,
   "storagePolicy": "Full transcripts and timestamped events remain in ignored local cache. This committed audit retains paths, metadata, and hashes but no full transcript text.",
@@ -6026,13 +6026,33 @@
       "transcriptSha256": "ada6ee8ef792985fb8bccbe01c2bcf8057e937267f9118bd97809ef410c6e1a7",
       "normalizedEventsSha256": "9added325b4a05c670a570d171b77082dd7a5ec0e2c77211ff8cf1d152843a5f",
       "audioSourceUrl": "https://www.youtube.com/watch?v=pnof3-hdMOE",
-      "model": "mixed: gpt-4o-transcribe-diarize (inputs 000–001); whisper-1 (002–024 and approved gap recovery)",
+      "model": "mixed: gpt-4o-transcribe-diarize (inputs 000\u2013001); whisper-1 (002\u2013024 and approved gap recovery)",
       "spokenWordCount": 17644,
       "debateNumber": "273",
       "debateId": "craig-dacey-god-existence-2004",
       "status": "available",
       "transcriptStorage": ".assessment-cache/captions/pnof3-hdMOE/transcript.txt",
       "eventsStorage": ".assessment-cache/captions/pnof3-hdMOE/events.json"
+    },
+    {
+      "videoId": "fzP-3z3RoFM",
+      "track": {
+        "languageCode": "en",
+        "name": "English (auto-generated)",
+        "kind": "asr",
+        "isTranslatable": true
+      },
+      "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally",
+      "wordCount": 26738,
+      "eventCount": 3488,
+      "retrievedAt": "2026-09-28T20:36:04.268Z",
+      "transcriptSha256": "b98c0537864f0aca4fdb83e37b84ea2294a574cb8e8ba70f173c84691ff5438c",
+      "normalizedEventsSha256": "6a4eed3247fac21ec365d7b33aaf90a3882bfb5b77c37437c8b7ba756b2b1946",
+      "debateNumber": "274",
+      "debateId": "ayala-barker-biblical-god-2026",
+      "status": "available",
+      "transcriptStorage": ".assessment-cache/captions/fzP-3z3RoFM/transcript.txt",
+      "eventsStorage": ".assessment-cache/captions/fzP-3z3RoFM/events.json"
     }
   ]
 }

@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Eli Ayala", "Eli Ayala is a Christian apologist, teacher, and founder of Revealed Apologetics. His videos, writing, and public debates explain a presuppositional approach to defending Christianity, emphasizing the relationship between Christian belief, knowledge, logic, and moral judgment.", "https://www.revealedapologetics.com/about", "2026-09-28"],
   ["Austin Dacey", "Austin Dacey is a philosopher, writer, and human rights advocate whose work examines freedom of conscience and expression. He is the author of The Future of Blasphemy and created The Impossible Music Sessions, a forum for music affected by censorship.", "https://edge.org/memberbio/austin_dacey", "2026-09-28"],
   ["Massimo Pigliucci", "Massimo Pigliucci is a philosopher and evolutionary biologist whose work examines philosophy of science, pseudoscience, and practical philosophy. His books include How to Be a Stoic and Nonsense on Stilts, and he teaches at the City College of New York.", "https://massimopigliucci.net/", "2026-09-27"],
   ["Dan Barker", "Dan Barker is an author, musician, and former Christian minister associated with the Freedom From Religion Foundation. His books, public debates, and broadcasts examine religious belief, morality, and meaning from an atheist perspective.", "https://ffrf.org/about/our-staff-and-board/our-board-of-directors/dan-barker-4/", "2026-09-26"],

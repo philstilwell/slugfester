@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "274",
+  "debateId": "ayala-barker-biblical-god-2026",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-274/inventory/inventory.json",
+      "sha256": "fd912e66c54d39b42278fe49f6dc1f118fdb3f4d2758a49262221ea4371b1e1f",
+      "bytes": 130916
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-274/score-pass/output.json",
+      "sha256": "c0badb7a1b01bafa8a9e93dd6a64b4af2c4c27d838969b4c1230fcfa3a5f06b3",
+      "bytes": 20083
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-274/publication/skeleton.json",
+      "sha256": "7ceec16b8b96847b3157066abb7ea8282832b6024d1b5b37c3c4e207d928e487",
+      "bytes": 14224
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-274/publication/reference-metrics.json",
+      "sha256": "72b2864971db79d018737afbe8e57823df6dc3c01aa71c49b869636ac816475d",
+      "bytes": 27712
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

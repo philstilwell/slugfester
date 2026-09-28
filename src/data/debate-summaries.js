@@ -13020,5 +13020,58 @@ export const debateSummaries = [
         "title": "Resurrection and religious experience"
       }
     ]
+  },
+  {
+    "id": "ayala-barker-biblical-god-2026",
+    "number": "274",
+    "title": "Eli Ayala vs Dan Barker — Does the God of the Bible Exist?",
+    "year": 2026,
+    "label": "Biblical God and Rational Foundations",
+    "date": "2026-09-28",
+    "duration": "2 hr 4 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=fzP-3z3RoFM",
+    "motion": "Does the God of the Bible exist?",
+    "summary": "Barker won by exposing the gap between transcendental theism and the biblical God, while Ayala effectively qualified prayer claims and challenged Barker's moral foundation.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Biblical theism",
+        "speaker": "Eli Ayala",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Biblical-God criticism",
+        "speaker": "Dan Barker",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 72,
+      "con": 78,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Motion Scope and Burdens"
+      },
+      {
+        "title": "Logic and Intelligibility"
+      },
+      {
+        "title": "Trinitarian Grounding and Rival Worldviews"
+      },
+      {
+        "title": "Revelation and Biblical Identity"
+      },
+      {
+        "title": "Prayer and Scriptural Coherence"
+      },
+      {
+        "title": "Competing Moral Standards"
+      },
+      {
+        "title": "Suffering and Divine Judgment"
+      }
+    ]
   }
 ];

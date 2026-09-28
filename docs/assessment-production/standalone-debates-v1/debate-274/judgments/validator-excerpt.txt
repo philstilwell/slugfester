@@ -1,0 +1,127 @@
+export function validateStandalonePrimaryJudgment(
+  judgment,
+  inventory,
+  { expectedPass, expectedInventorySha256 }
+) {
+  assertStandalone(
+    judgment?.schemaVersion === "1.0-standalone-primary-judgment" &&
+      judgment.protocolId === STANDALONE_PROTOCOL_ID &&
+      judgment.status === "complete-and-schema-valid" &&
+      judgment.pass === expectedPass &&
+      judgment.debateNumber === inventory.debateNumber &&
+      judgment.debateId === inventory.debateId &&
+      judgment.reviewerRole === "isolated-score-blind-primary-judge" &&
+      judgment.assessmentModel === "5.6 Sol" &&
+      judgment.reasoningEffort === "low" &&
+      judgment.inventorySha256 === expectedInventorySha256,
+    `${expectedPass}: judgment identity mismatch`
+  );
+  assertStandalone(
+    judgment.isolation?.legacyAssessmentsUnavailable === true &&
+      judgment.isolation?.calculatedTotalsUnavailable === true &&
+      judgment.isolation?.winnerLabelsUnavailable === true &&
+      judgment.isolation?.otherJudgmentUnavailable === true &&
+      judgment.isolation?.publicationProseUnavailable === true &&
+      judgment.isolation?.otherDebatesUnavailable === true &&
+      judgment.isolation?.contaminationDetected === false,
+    `${expectedPass}: isolation boundary mismatch`
+  );
+  assertStandalone(
+    Array.isArray(judgment.judgments) &&
+      judgment.judgments.length === inventory.moves.length,
+    `${expectedPass}: judgment count differs from inventory`
+  );
+  const expectedMoveIds = inventory.moves.map((move) => move.moveId);
+  assertStandalone(
+    canonicalJson(judgment.judgments.map((item) => item.moveId)) ===
+      canonicalJson(expectedMoveIds),
+    `${expectedPass}: judgment move order differs from inventory`
+  );
+  for (const [index, item] of judgment.judgments.entries()) {
+    assertStandalone(
+      ["high", "medium", "low"].includes(item.assessmentConfidence),
+      `${expectedPass}.judgments[${index}]: invalid assessment confidence`
+    );
+    exactKeys(item.dimensions, DIMENSION_KEYS, `${expectedPass}.${item.moveId}.dimensions`);
+    for (const dimension of DIMENSION_KEYS) {
+      exactKeys(
+        item.dimensions[dimension],
+        ["value", "rationale"],
+        `${expectedPass}.${item.moveId}.${dimension}`
+      );
+      assertStandalone(
+        Number.isInteger(item.dimensions[dimension].value) &&
+          item.dimensions[dimension].value >= 0 &&
+          item.dimensions[dimension].value <= 100,
+        `${expectedPass}.${item.moveId}.${dimension}: value outside 0..100`
+      );
+      assertString(
+        item.dimensions[dimension].rationale,
+        `${expectedPass}.${item.moveId}.${dimension}.rationale`,
+        40
+      );
+    }
+  }
+  for (const side of ["pro", "con"]) {
+    const adjustment = judgment.burdenCompletionAdjustment?.[side];
+    exactKeys(adjustment, ["value", "rationale", "eligibility"], `${expectedPass}.${side}.adjustment`);
+    assertStandalone(
+      Number.isInteger(adjustment.value) && adjustment.value >= -5 && adjustment.value <= 5,
+      `${expectedPass}.${side}.adjustment: value outside -5..5`
+    );
+    validateEligibility(adjustment.eligibility, `${expectedPass}.${side}.eligibility`, inventory);
+    const eligibility = adjustment.eligibility;
+    if (eligibility.alreadyCapturedBy.length > 0 || !eligibility.notAlreadyScored) {
+      assertStandalone(
+        adjustment.value === 0,
+        `${expectedPass}.${side}.adjustment: duplicate capture forces zero`
+      );
+    }
+    if (adjustment.value !== 0) {
+      assertStandalone(
+        eligibility.distinctDebateWideConsequence &&
+          eligibility.affectsBurdenCompletion &&
+          eligibility.notAlreadyScored &&
+          eligibility.affectedBurdenIds.length > 0 &&
+          eligibility.relatedMoveIds.length > 0 &&
+          eligibility.alreadyCapturedBy.length === 0,
+        `${expectedPass}.${side}.adjustment: nonzero value is ineligible`
+      );
+      for (const key of [
+        "completionCriterion",
+        "distinctConsequence",
+        "counterfactual"
+      ]) {
+        assertString(
+          eligibility[key],
+          `${expectedPass}.${side}.eligibility.${key}`,
+          30
+        );
+      }
+    }
+  }
+  assertStandalone(
+    judgment.audit?.completeLockedInventoryReviewed === true &&
+      judgment.audit?.allMovesJudgedOnce === true &&
+      judgment.audit?.ratingsOnlyNoCalculatedScores === true &&
+      judgment.audit?.publicationBlind === true &&
+      judgment.audit?.scoreBlind === true,
+    `${expectedPass}: required audit claims missing`
+  );
+  return { status: "passed", pass: expectedPass, moves: judgment.judgments.length };
+}
+
+function judgmentMap(pass) {
+  return new Map(pass.judgments.map((item) => [item.moveId, item]));
+}
+
+function dimensionValues(item) {
+  return Object.fromEntries(
+    DIMENSION_KEYS.map((key) => [key, item.dimensions[key].value])
+  );
+}
+
+function passMoveScore(item) {
+  return scoreDimensions(dimensionValues(item), item.moveId);
+}
+
