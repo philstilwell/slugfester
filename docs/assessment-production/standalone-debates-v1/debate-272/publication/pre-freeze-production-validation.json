@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-pre-freeze-production-validation",
+  "status": "passed-pre-freeze-production-validator",
+  "debateNumber": "272",
+  "debateId": "mclatchie-jump-god-existence-2019",
+  "publication": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/output.json",
+    "sha256": "f3450a277c8ea868a8fc382b11ad5f4974cb92f65a0b5ff072f11dc6a47c714f",
+    "bytes": 67342
+  },
+  "method": "Disposable cloned validation export: unchanged builder creates proposed adapter, export-local registry records its status/hash, then unchanged production validator runs. Main adapter remains absent. No new assessment or score pass.",
+  "proposedAdapterSha256": "2ffe5db1b32184412d650e8982225eae1f3e4145cc99f9daa583e5b5ac1faaa7",
+  "commands": [
+    {
+      "command": [
+        "node",
+        "scripts/audit-assessment-production-standalone-v1.mjs",
+        "--build-adapter",
+        "--debate",
+        "272"
+      ],
+      "exitCode": 0,
+      "output": "Standalone production adapter frozen: 5 sections, 34 moves.\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 0,
+      "output": "Validated 272 debates.\n"
+    }
+  ],
+  "exportRemoved": true
+}

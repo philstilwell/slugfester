@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0-isolated-publication-execution-plan",
+  "status": "frozen-before-execution",
+  "debateNumber": "272",
+  "debateId": "mclatchie-jump-god-existence-2019",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/contract.md",
+      "sha256": "4753c485bd3aca8c075ead95941e4cfb41878250e57538ecc5a8325377a260ea",
+      "bytes": 7008
+    },
+    {
+      "path": ".assessment-cache/captions/-U3IyfrnavU/indexed-transcript.txt",
+      "sha256": "8c6ced32784e10b819d469b4e2c851453df12e0f261adca78c9a4fd3d0c8fbd7",
+      "bytes": 191124
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/source/assessment-source-notes.md",
+      "sha256": "9925589589abcef8dfc95353c5a9fe18df33240348f3b29ed3ee3b4702d711c1",
+      "bytes": 2971
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/inventory/inventory.json",
+      "sha256": "c015dd528b32bfd34dc350eea461434ed2dd8c9abaae5bc948bb28c91e788922",
+      "bytes": 126149
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/final-ledger/final-ledger.json",
+      "sha256": "125c6b61b6f151f8516a260d66faef9b1815b9c680f439da6333423b03d6e4bd",
+      "bytes": 271616
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/score-pass/output.json",
+      "sha256": "bbe2f65aa7eab711dd50aa3d7b85291458573b285d0024bc6b392d2a957c6f90",
+      "bytes": 17361
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/skeleton.json",
+      "sha256": "9f7a1737f83c59c7a89e166cba28ec6c82d84f4bc3b685b28cdc7ec722ab69cd",
+      "bytes": 12247
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/reference-metrics.json",
+      "sha256": "1711242bea15cc6191567832546f19347d7c02825dc985955fc5bbfc2a999900",
+      "bytes": 27838
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/check-publication.mjs",
+      "sha256": "3c89df99d66accc12dc7e86d46d281f76389986b6624f9a41a455f00e0718559",
+      "bytes": 9073
+    },
+    {
+      "path": "docs/assessment-production-workflow.md",
+      "sha256": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+      "bytes": 6705
+    },
+    {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "bytes": 4467
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/build-packet.json",
+      "sha256": "94ea2e37813909f2d7debd49a6ddd527184dafb587d2ab3072f26c24dbca254e",
+      "bytes": 1551
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-272/publication/first-submission-parts.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/worktrees/craig-pigliucci-debate/SLUGFESTER.com/docs/assessment-production/standalone-debates-v1/debate-272/publication/first-submission-parts.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-272/publication/first-submission-parts.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Read all inputs completely, send checkpoint and wait for authenticated release. Author only the declared prose parts, check unsaved via stdin and --packet; after mechanical pass emit the full assembled publication with --emit for independent controller editorial review. Wait for separate submission release, then write exactly the inspected parts once. Never modify frozen assessment substance.",
+  "isolation": "Fresh subscription context with fork none and protocol-restricted inputs and output; no OS sandbox claimed."
+}

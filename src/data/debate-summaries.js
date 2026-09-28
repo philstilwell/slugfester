@@ -12920,5 +12920,52 @@ export const debateSummaries = [
         "title": "Religious experience and natural defeaters"
       }
     ]
+  },
+  {
+    "id": "mclatchie-jump-god-existence-2019",
+    "number": "272",
+    "title": "Jonathan McLatchie vs Tom Jump — Does God Exist?",
+    "year": 2019,
+    "label": "God and the Moral Arena",
+    "date": "2026-09-28",
+    "duration": "1 hr 57 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-U3IyfrnavU",
+    "motion": "Does God exist?",
+    "summary": "McLatchie’s cumulative Bayesian case narrowly prevailed, while Jump’s underdetermination challenges exposed unresolved comparisons behind its numerical confidence.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Theism",
+        "speaker": "Jonathan McLatchie",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheist criticism",
+        "speaker": "Tom Jump",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 76,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Bayesian comparison and priors"
+      },
+      {
+        "title": "Cosmic conditions and necessary origins"
+      },
+      {
+        "title": "Explanatory rivals and empirical testing"
+      },
+      {
+        "title": "Biological information and design"
+      },
+      {
+        "title": "Moral arena, embodiment and divine goodness"
+      }
+    ]
   }
 ];

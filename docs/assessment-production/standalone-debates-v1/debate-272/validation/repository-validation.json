@@ -1,0 +1,37 @@
+{
+  "status": "passed-full-repository-and-source-validation",
+  "debateNumber": "272",
+  "completedAt": "2026-09-28T05:52:18.162458+00:00",
+  "checks": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/validation/npm-check.txt",
+      "sha256": "f4a7c7204ca3c369ab2f8e8353ff142e872285c90f52a3200f09e600273ea255",
+      "bytes": 54502,
+      "exitCode": 0
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/validation/source-audit.txt",
+      "sha256": "393f77184ebcc74626e90e2ff6cf7f7b13a34f2a25942e6f4732c7415b30216a",
+      "bytes": 247,
+      "exitCode": 0
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/validation/site-preflight-initial.txt",
+      "sha256": "504ae327dc4eade51d105210b6cbdde7d59a2bbb2204dda4ff78ffa50f76f127",
+      "bytes": 41500,
+      "exitCode": 0
+    }
+  ],
+  "scope": [
+    "npm run check including historical, standalone, content-parity, rhetorical, scope and multi-speaker postcheck gates",
+    "full current-debate source replay",
+    "initial generated-site preflight: 17 browser tests passed",
+    "all 8 source and 18 assessment-control hashes unchanged",
+    "exact append-only production data and byte-identical motion in four records",
+    "new durable evidence scanned for credentials and signed media URLs: none"
+  ],
+  "priorAssessmentsChanged": 0,
+  "scorePasses": 1,
+  "scoreReruns": 0,
+  "immediatePrecommitPreflightStillRequired": true
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "272",
+  "debateId": "mclatchie-jump-god-existence-2019",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/inventory/inventory.json",
+      "sha256": "c015dd528b32bfd34dc350eea461434ed2dd8c9abaae5bc948bb28c91e788922",
+      "bytes": 126149
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/score-pass/output.json",
+      "sha256": "bbe2f65aa7eab711dd50aa3d7b85291458573b285d0024bc6b392d2a957c6f90",
+      "bytes": 17361
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/skeleton.json",
+      "sha256": "9f7a1737f83c59c7a89e166cba28ec6c82d84f4bc3b685b28cdc7ec722ab69cd",
+      "bytes": 12247
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/publication/reference-metrics.json",
+      "sha256": "1711242bea15cc6191567832546f19347d7c02825dc985955fc5bbfc2a999900",
+      "bytes": 27838
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

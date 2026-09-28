@@ -1,0 +1,16 @@
+{
+  "status": "passed-source-grounded-browser-interface-correction",
+  "beforeSha256": "4aa18bd4c9beaeef936a2284cd723de07657a53f56cf0b0a002a4aaeb82cdd19",
+  "afterSha256": "2a7aa525ca695db1f3a4e9d905a4177078465f8a4eceb6921e426590377f450c",
+  "observedBehavior": "Site tag links point to local reference pages and the specific occurrence; the publication catalog URL remains the external definition source.",
+  "correction": "Assert the exact generated local reference route, debate query and occurrence anchor derived from current card fields, while retaining exact label and context checks.",
+  "sourceInterfaces": [
+    "src/app.js:referenceHref",
+    "src/app.js:referenceOccurrenceId",
+    "src/app.js:anchorSlug",
+    "src/seo.js:referencePath"
+  ],
+  "websiteChanges": 0,
+  "assessmentChanges": 0,
+  "staleIdentityHits": []
+}

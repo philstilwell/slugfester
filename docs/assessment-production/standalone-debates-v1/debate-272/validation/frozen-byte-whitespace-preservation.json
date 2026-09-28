@@ -1,0 +1,28 @@
+{
+  "status": "preserved-authenticated-evidence-bytes",
+  "debateNumber": "272",
+  "affectedFiles": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/adjudication/validator-excerpt.txt",
+      "sha256": "ae804a37b315208da0de38306280e89fd54a6947e6896ebea0c014406c7f83be",
+      "bytes": 1824
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/inventory/draft-parts.json",
+      "sha256": "f814fd91404bc75392adf8ac939fd840c9c094ab6cf5962597b0d11ab657aba0",
+      "bytes": 81852
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-272/judgments/validator-excerpt.txt",
+      "sha256": "9854a04a5597da0e9274eb29e2370c49dc143a07f1e0a599be1d90f1f0d1a664",
+      "bytes": 5783
+    }
+  ],
+  "gitAttributeBeforeSha256": "9ae335a5e3aa0210d547379fb27a992f1d220ec8afb2edd0d8f7536cd08bdcb9",
+  "gitAttributeAfterSha256": "e46605976eb6541c9c4985453a0d28d6d3c3871dda51ad65eef2a735b19971db",
+  "reason": "Three preexisting frozen input/submission artifacts end in an authenticated extra newline. Rewriting them would invalidate input and first-submission hashes. Narrow per-file whitespace attributes permit only blank-at-end for these exact files while preserving text diffs and every other whitespace check.",
+  "evidenceFilesEdited": 0,
+  "globalWhitespacePolicyChanged": false,
+  "assessmentChanges": 0,
+  "validationRulesChanged": 0
+}

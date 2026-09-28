@@ -1,0 +1,17 @@
+import {readFileSync} from "node:fs";
+import {fileURLToPath} from "node:url";
+import path from "node:path";
+import {validateStandaloneInventory} from "../../../../../scripts/lib/assessment-production-standalone-debate-v1.mjs";
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const root=process.cwd();
+const auth=JSON.parse(readFileSync(path.join(dir,"../authorization.json"),"utf8"));
+const lock=JSON.parse(readFileSync(path.join(dir,"../source/source-lock.json"),"utf8"));
+const id=auth.identity;
+const events=JSON.parse(readFileSync(path.join(root,".assessment-cache/captions",id.videoId,"events.json"),"utf8"));
+const p=JSON.parse(readFileSync(0,"utf8"));
+if(p.motion!==id.motion)throw Error("Motion must exactly match authorization");
+const inventory={schemaVersion:"1.2-standalone-score-blind-inventory",protocolId:auth.protocolId,status:"complete-and-frozen",debateNumber:id.debateNumber,debateId:id.debateId,assessmentModel:auth.execution.recordedDisplayModel,reasoningEffort:auth.execution.reasoningEffort,assessedDebateWindowMs:lock.participants.assessedDebateWindowMs,...p,moves:p.moves.map(m=>{const {startEvent,endEvent,...rest}=m;if(!Number.isInteger(startEvent)||!Number.isInteger(endEvent)||!events[startEvent]||!events[endEvent])throw Error("Invalid span for "+m.moveId);return {...rest,sourceSpan:{startEvent,endEvent,startMs:events[startEvent].startMs,endMs:events[endEvent].startMs+events[endEvent].durationMs,excerpt:events.slice(startEvent,endEvent+1).map(e=>e.text).join(" ").replace(/\s+/g," ").trim()}}})};
+const result=validateStandaloneInventory(inventory,events);
+const sourceLong=inventory.moves.filter(m=>m.sourceSpan.excerpt.length>2200).map(m=>({moveId:m.moveId,characters:m.sourceSpan.excerpt.length,rationale:m.sourceSpanSelectionRationale}));
+const audioTriggers=inventory.moves.filter(m=>m.attributionConfidence!=="high").map(m=>({moveId:m.moveId,confidence:m.attributionConfidence,reason:m.audioVerificationReason}));
+console.log(JSON.stringify({status:"passed-unsaved-inventory-mechanics",debateNumber:id.debateNumber,result,longSourceSpans:sourceLong,audioTriggers},null,2));
