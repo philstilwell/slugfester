@@ -1,10 +1,10 @@
-import { pageUpdates } from "./data/page-updates.js?v=877c8a0f49e15d9f";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=877c8a0f49e15d9f";
-import { topicCategoryDefinitions } from "./data/topics.js?v=877c8a0f49e15d9f";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=877c8a0f49e15d9f";
-import { debateSummaries } from "./data/debate-summaries.js?v=877c8a0f49e15d9f";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=877c8a0f49e15d9f";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=877c8a0f49e15d9f";
+import { pageUpdates } from "./data/page-updates.js?v=4b9930fe951ee51a";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=4b9930fe951ee51a";
+import { topicCategoryDefinitions } from "./data/topics.js?v=4b9930fe951ee51a";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=4b9930fe951ee51a";
+import { debateSummaries } from "./data/debate-summaries.js?v=4b9930fe951ee51a";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=4b9930fe951ee51a";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=4b9930fe951ee51a";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -43,7 +43,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=877c8a0f49e15d9f";
+} from "./seo.js?v=4b9930fe951ee51a";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -98,7 +98,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=877c8a0f49e15d9f")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=4b9930fe951ee51a")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -117,7 +117,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=877c8a0f49e15d9f")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=4b9930fe951ee51a")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -133,7 +133,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=877c8a0f49e15d9f`)
+    const promise = import(`./data/debate-details/${id}.js?v=4b9930fe951ee51a`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -148,7 +148,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=877c8a0f49e15d9f`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=4b9930fe951ee51a`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -2401,8 +2401,6 @@ function renderInsights() {
 
 function renderBackend() {
   const sectionScores = sectionScoreDistribution();
-  const recommendationSent =
-    new URLSearchParams(window.location.search).get("recommendation") === "sent";
   setSeo(backendSeo());
 
   app.innerHTML = renderShell(`
@@ -2442,24 +2440,9 @@ function renderBackend() {
           <div>
             <p class="eyebrow">Reader recommendation</p>
             <h3>Recommend a debate</h3>
-            <p>Send a public debate link for consideration. Both fields are required.</p>
+            <p>See which debates qualify and send your suggestion on our Feedback page.</p>
           </div>
-          ${recommendationSent ? '<p class="backend-recommendation-success" role="status"><strong>Recommendation sent.</strong> Thank you—we’ll review the debate for possible inclusion.</p>' : ""}
-          <form class="backend-recommendation-form" action="https://formsubmit.co/44a747882839a1240511c0b4bca3bd95" method="post" accept-charset="UTF-8">
-            <input type="hidden" name="_subject" value="Slugfester debate recommendation">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://slugfester.com/backend/?recommendation=sent#recommend-a-debate">
-            <label class="backend-recommendation-honey" aria-hidden="true">
-              Leave this field empty
-              <input type="text" name="_honey" tabindex="-1" autocomplete="off">
-            </label>
-            <label for="recommended-debate-url">Debate URL</label>
-            <input id="recommended-debate-url" name="debate_url" type="url" inputmode="url" autocomplete="url" placeholder="https://www.youtube.com/watch?v=…" maxlength="500" required>
-            <label for="recommender-email">Your email address</label>
-            <input id="recommender-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
-            <button class="button primary" type="submit">Send recommendation</button>
-          </form>
-          <p class="backend-recommendation-privacy">Your URL and email are delivered to the site administrator through FormSubmit. Your email will be used only if follow-up about the recommendation is needed.</p>
+          <a class="button primary" href="${correctionsPath()}#recommend-a-debate">Go to the Feedback form</a>
         </div>
       </section>
 
@@ -3769,28 +3752,28 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=877c8a0f49e15d9f")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=4b9930fe951ee51a")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=877c8a0f49e15d9f")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=4b9930fe951ee51a")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=877c8a0f49e15d9f")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=4b9930fe951ee51a")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=877c8a0f49e15d9f")
+    insightsPromise ||= import("./data/insights.js?v=4b9930fe951ee51a")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

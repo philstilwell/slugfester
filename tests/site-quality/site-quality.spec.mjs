@@ -117,7 +117,7 @@ test("applies the generated content security policy without blocking site code",
   expect(securityErrors).toEqual([]);
 });
 
-test("clearly limits the catalogue sample and provides a valid debate recommendation form", async ({ page }) => {
+test("links the Backend selection disclosure to the working Feedback recommendation form", async ({ page }) => {
   await openRenderedPage(page, "/");
   await page.getByRole("navigation", { name: "Primary", exact: true })
     .getByRole("link", { name: "Backend" }).click();
@@ -126,7 +126,14 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
     "not a random or representative sample"
   );
 
-  const form = page.locator(".backend-recommendation-form");
+  await expect(page.locator(".backend-selection form")).toHaveCount(0);
+  const recommendationLink = page.getByRole("link", { name: "Go to the Feedback form" });
+  await expect(recommendationLink).toHaveAttribute("href", "/corrections/#recommend-a-debate");
+  await recommendationLink.click();
+  await expect(page).toHaveURL(/\/corrections\/#recommend-a-debate$/);
+  await expect(page.locator("#feedback-recommendation-heading")).toBeInViewport();
+
+  const form = page.locator(".feedback-recommendation-form");
   await expect(form).toHaveAttribute("method", "post");
   await expect(form).toHaveAttribute(
     "action",
@@ -135,10 +142,10 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
   await expect(form.locator("input[name='debate_url']")).toHaveAttribute("required", "");
   await expect(form.locator("input[name='email']")).toHaveAttribute("required", "");
 
-  const backendPolicy = await page
+  const feedbackPolicy = await page
     .locator("meta[http-equiv='Content-Security-Policy']")
     .getAttribute("content");
-  expect(backendPolicy).toContain("form-action 'self' https://formsubmit.co");
+  expect(feedbackPolicy).toContain("form-action 'self' https://formsubmit.co");
 
   let submitted;
   await page.route("https://formsubmit.co/**", async (route) => {
@@ -154,7 +161,8 @@ test("clearly limits the catalogue sample and provides a valid debate recommenda
   await expect(page.getByRole("heading", { name: "Submission intercepted" })).toBeVisible();
   expect(submitted).toMatchObject({
     debate_url: "https://www.youtube.com/watch?v=audit-only",
-    email: "audit@example.com"
+    email: "audit@example.com",
+    _next: "https://slugfester.com/corrections/?recommendation=sent#recommend-a-debate"
   });
 
   await openRenderedPage(page, "/");
