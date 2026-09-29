@@ -1,0 +1,44 @@
+{
+  "status": "passed-before-current-artifact-mutations",
+  "debateNumber": "275",
+  "checkedAt": "2026-09-29T00:25:24.726192+00:00",
+  "allFrozenSourceAndControlHashesVerified": true,
+  "controllers": [
+    {
+      "path": ".assessment-cache/controllers/lock-inventory.mjs",
+      "sha256": "a80d984ddde495a678b57ca942ff382d61fe9b38ec80dde267cdbc47c2c95b58",
+      "bytes": 4221,
+      "staleIdentityOrManualOverrideMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/prepare-publication.mjs",
+      "sha256": "afb54548dda23633b2b29d8d91b62c035fea0aa25906284bd357d6fd54946f13",
+      "bytes": 4830,
+      "staleIdentityOrManualOverrideMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/prepare-worker-plans.py",
+      "sha256": "8e2e7a774fa4ce5084a3c354220cce609062eae8b5b71da55fe31b13e3d1c6a7",
+      "bytes": 3488,
+      "staleIdentityOrManualOverrideMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/authenticate-worker.py",
+      "sha256": "89e5976248c23e473c344622869bc4dd05a9308babb283eb692c30051ada0ea4",
+      "bytes": 4986,
+      "staleIdentityOrManualOverrideMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/inspect-unsaved.py",
+      "sha256": "91ca53b3d8b40c505802a6b11dde0f5533b07a8d60c9b9f42ac0ab5babf559ec",
+      "bytes": 2673,
+      "staleIdentityOrManualOverrideMatches": []
+    }
+  ],
+  "identityRouting": "Registry entry selected by explicit --debate; source windows, move counts and model settings derive from frozen artifacts. Session input for inspection is explicit. No copied acceptance or tag override tables.",
+  "fixtureChecks": [
+    "Inventory assembly check-only mode passed on an existing saved draft, independently deriving counts without writes.",
+    "Publication structural assembler was compared to an existing approved skeleton in memory; all fields matched exactly after correcting a detected source-window key mismatch. No current-debate artifacts existed or were written by the failed fixture.",
+    "Other helper fixtures were verified at original preparation; only slice-marker compatibility changed in the inspector."
+  ]
+}

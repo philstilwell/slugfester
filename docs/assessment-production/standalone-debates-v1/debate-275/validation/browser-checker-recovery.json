@@ -1,0 +1,33 @@
+{
+  "status": "resolved-preview-checker-and-cache-issues",
+  "debateNumber": "275",
+  "assessmentChanges": 0,
+  "siteCodeRepairs": 0,
+  "issues": [
+    {
+      "attempt": 1,
+      "finding": "Helper syntax lacked a closing parenthesis; corrected before any page action."
+    },
+    {
+      "attempt": 2,
+      "finding": "Offscreen lazy images were incorrectly classified as broken; check now rejects completed failed images and separately records all failed network requests."
+    },
+    {
+      "attempt": 3,
+      "finding": "Reference page assertion ran before its asynchronous occurrence was rendered; now waits for the observed occurrence anchor."
+    },
+    {
+      "attempt": 4,
+      "finding": "Browser opened before generation retained Backend HTML and analytics at old asset version 0418c293482f17d4. Disk and independent HTTP response used new version 877c8a0f49e15d9f. Closed it and opened a fresh named preview."
+    },
+    {
+      "attempt": 5,
+      "finding": "Search form requires submission; helper now presses Enter as the actual form expects. Initial new-browser connection errors were absent in the full subsequent replay."
+    }
+  ],
+  "finalReplay": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-275/rendering/local-final-observations.json",
+    "sha256": "52574dfbc8eb848712cb820f9bc85c55b85d01725e3523ecc10926a861c31924",
+    "bytes": 11395
+  }
+}

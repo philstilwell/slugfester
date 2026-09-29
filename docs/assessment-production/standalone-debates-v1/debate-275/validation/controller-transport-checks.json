@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "debateNumber": "275",
+  "checkedAt": "2026-09-29T00:32:45.260823+00:00",
+  "controllerRecords": [
+    {
+      "path": ".assessment-cache/controllers/prepare-rhetorical.py",
+      "sha256": "5e7204b06bbb74f78a7745d73582e12eda0a37f7dcc1666276b016056ce3b594",
+      "bytes": 5871
+    },
+    {
+      "path": ".assessment-cache/controllers/prepare-publication.mjs",
+      "sha256": "afb54548dda23633b2b29d8d91b62c035fea0aa25906284bd357d6fd54946f13",
+      "bytes": 4830
+    },
+    {
+      "path": ".assessment-cache/controllers/inspect-unsaved.py",
+      "sha256": "2a587d60983dcc0b6b6bbbf259d90a096c5ab1bb715fe65c66d591e2d200510e",
+      "bytes": 2757
+    },
+    {
+      "path": ".assessment-cache/controllers/lock-inventory.mjs",
+      "sha256": "a80d984ddde495a678b57ca942ff382d61fe9b38ec80dde267cdbc47c2c95b58",
+      "bytes": 4221
+    }
+  ],
+  "readOnlyFixtureResults": [
+    "Publication skeleton extractor matched every field of an existing approved skeleton, including duration, display-row order, and locked numeric values.",
+    "Rhetorical source extractor matched an existing complete source packet exactly, removing the score explanation sentence and all tag fields.",
+    "Rhetorical union fixture derived its actual candidate count from both complete review tables; output bounds use that value rather than move count.",
+    "Inventory controller independently checked counts, chronology, exact quotes, reply-target population, and same-side burden ownership."
+  ],
+  "currentModelWorkUnaffected": true,
+  "temporaryFixtureWrites": 0,
+  "limitations": "Read-only tests establish transport and routing behavior. Current debate assessments and rhetorical decisions still require independent source review before first saved submissions."
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0-standalone-disagreement-extraction",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "complete-and-frozen",
+  "debateNumber": "275",
+  "debateId": "craig-tooley-god-real-2010",
+  "deterministic": true,
+  "thresholds": {
+    "dimensionDeltaGreaterThan": 8,
+    "moveScoreDeltaGreaterThan": 4,
+    "burdenAdjustmentDeltaGreaterThan": 2
+  },
+  "disputes": [
+    {
+      "disputeId": "knowledge-of-god-purpose-reply:responsiveness",
+      "kind": "move-dimension",
+      "moveId": "knowledge-of-god-purpose-reply",
+      "field": "responsiveness",
+      "trigger": {
+        "dimensionDelta": 10,
+        "moveScoreDelta": 4,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 78,
+          "rationale": "The reply reaches Tooley's crucial gratuitousness inference by offering a counterbalancing purpose, though it partly shifts proof onto the critic."
+        },
+        "option-b": {
+          "value": 88,
+          "rationale": "The reply directly challenges Tooley's move from unknown compensating reasons to probable gratuitous suffering."
+        }
+      }
+    },
+    {
+      "disputeId": "experience-rational-unless-defeated:calibrationCharity",
+      "kind": "move-dimension",
+      "moveId": "experience-rational-unless-defeated",
+      "field": "calibrationCharity",
+      "trigger": {
+        "dimensionDelta": 15,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 67,
+          "rationale": "Craig grants Muslims initial justification, a charitable point, but asserts asymmetrical defeaters without presenting them in this debate."
+        },
+        "option-b": {
+          "value": 82,
+          "rationale": "Craig represents Muslim experience charitably and avoids denying its prima facie force, though he invokes unspecified defeaters for Islam asymmetrically."
+        }
+      }
+    },
+    {
+      "disputeId": "haiti-salvific-purpose-example:evidenceWarrant",
+      "kind": "move-dimension",
+      "moveId": "haiti-salvific-purpose-example",
+      "field": "evidenceWarrant",
+      "trigger": {
+        "dimensionDelta": 9,
+        "moveScoreDelta": 3,
+        "dimensionThreshold": 8,
+        "moveScoreThreshold": 4
+      },
+      "options": {
+        "option-a": {
+          "value": 54,
+          "rationale": "The empirical support is a single missionary email with dramatic figures and no corroboration, independence check, or comparison to harms."
+        },
+        "option-b": {
+          "value": 45,
+          "rationale": "The sole empirical support is a missionary email reporting revival, with no verification, baseline, casualty comparison, or evidence of divine causation."
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:pro",
+      "kind": "burden-adjustment",
+      "side": "pro",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings; strengths and omissions are already captured in the six dimensions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "",
+            "relatedMoveIds": [],
+            "distinctConsequence": "",
+            "alreadyCapturedBy": [
+              "dimension ratings"
+            ],
+            "counterfactual": ""
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide pro burden consequence remains uncaptured after judging every locked move and its explicit response and burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No eligible distinct completion criterion applies beyond the locked move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence is asserted for an additional adjustment.",
+            "alreadyCapturedBy": [
+              "all locked move dimension ratings and response links"
+            ],
+            "counterfactual": "No score counterfactual is needed because the adjustment is zero."
+          }
+        }
+      }
+    },
+    {
+      "disputeId": "burdenCompletionAdjustment:con",
+      "kind": "burden-adjustment",
+      "side": "con",
+      "field": "burdenCompletionAdjustment",
+      "trigger": {
+        "valueDelta": 0,
+        "threshold": 2,
+        "categoricalDifference": true
+      },
+      "options": {
+        "option-a": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings; strengths and omissions are already captured in the six dimensions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "",
+            "relatedMoveIds": [],
+            "distinctConsequence": "",
+            "alreadyCapturedBy": [
+              "dimension ratings"
+            ],
+            "counterfactual": ""
+          }
+        },
+        "option-b": {
+          "value": 0,
+          "rationale": "No separate debate-wide con burden consequence remains uncaptured after judging every locked move and its explicit response and burden links.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No eligible distinct completion criterion applies beyond the locked move ratings.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence is asserted for an additional adjustment.",
+            "alreadyCapturedBy": [
+              "all locked move dimension ratings and response links"
+            ],
+            "counterfactual": "No score counterfactual is needed because the adjustment is zero."
+          }
+        }
+      }
+    }
+  ],
+  "audit": {
+    "movesCompared": 46,
+    "disputesExtracted": 5,
+    "passIdentitiesRemovedFromAdjudicationOptions": true,
+    "calculatedTotalsUnavailableToAdjudicator": true
+  },
+  "evidenceLocks": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/inventory.json",
+      "sha256": "1501c751927ed321f46fc26e3f7bdc81239111bb7a2064944103828e7a5eafcc"
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/judgments/pass-a/output.json",
+      "sha256": "5f46b268b1c2469e810fdd2d3a3ba94b543fb93f135769c2326c67126051b9da"
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/judgments/pass-b/output.json",
+      "sha256": "6f4933d2b2a7f16085ddbab2949d22fa42a4178cc6446a3f6f14b43efff191cc"
+    }
+  }
+}

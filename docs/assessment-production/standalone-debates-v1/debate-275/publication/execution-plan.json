@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "publication",
+  "debateNumber": "275",
+  "debateId": "craig-tooley-god-real-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/contract.md",
+      "sha256": "a5403eac2d6539dca38a867fcfd625c35ce8f93a249b76a4cfa2d19c781e4501",
+      "bytes": 7631
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/build-packet.json",
+      "sha256": "d4fe02bd44eabe8da75094f0529041c8f658a3aeebf680c963d49d3a5da629d9",
+      "bytes": 1544
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/skeleton.json",
+      "sha256": "b94bcec498b8c2b55533c24db858826717027fbda25b6e1804506215f074ac7e",
+      "bytes": 16212
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/inventory.json",
+      "sha256": "1501c751927ed321f46fc26e3f7bdc81239111bb7a2064944103828e7a5eafcc",
+      "bytes": 195756
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/final-ledger/final-ledger.json",
+      "sha256": "1fcb27b641c5d9e4fb2adf2d31161e72ea8bf128fd6bc77380eebdbc83323507",
+      "bytes": 395585
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/score-pass/output.json",
+      "sha256": "009f817662aa46b3d8f1594f1007a28b4f82229f7a2ea010ee7c938d239761db",
+      "bytes": 23322
+    },
+    {
+      "path": ".assessment-cache/captions/OBEKUBOMA_0/indexed-transcript.txt",
+      "sha256": "dfe795fba29f579e6c50f5ba67967c2edcf8755993bbde2425e251ed68d2e852",
+      "bytes": 222561
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/source/assessment-source-notes.md",
+      "sha256": "d2013919e26af2b300d4a254ae3b2b970bd45da976c451b6f73f50777b5ccc88",
+      "bytes": 3718
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/source/source-lock.json",
+      "sha256": "f05604ede6056789a27119341114ede7d952a5f403c8a38718737f16d26653a4",
+      "bytes": 5027
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/reference-metrics.json",
+      "sha256": "a248601a128b7e816a139d5e5455516f209da0e7f4ef170f8d02a3c8f5ed4294",
+      "bytes": 27918
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/check-publication.mjs",
+      "sha256": "941ea7c2b11c8d9189d6251eb767537435c86d13e76166f566dc28437cdce6e4",
+      "bytes": 9218
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-275/publication/first-submission-parts.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-275/publication/first-submission-parts.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-275/publication/first-submission-parts.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

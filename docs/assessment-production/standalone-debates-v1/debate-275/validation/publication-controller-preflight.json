@@ -1,0 +1,32 @@
+{
+  "status": "passed-controller-preflight",
+  "debateNumber": "275",
+  "controllers": [
+    {
+      "path": ".assessment-cache/controllers/integrate-publication.mjs",
+      "sha256": "5a68fc5897d663e057ffecd880fa99098858128c9a2cfde03fa2d542b00e47a5",
+      "bytes": 2618
+    },
+    {
+      "path": ".assessment-cache/controllers/apply-rhetorical.mjs",
+      "sha256": "156ec3edc9506d7f240c51a349927fadc72c3d194ac984a68e962ab6240d218c",
+      "bytes": 9238
+    },
+    {
+      "path": ".assessment-cache/controllers/reconcile-section-distribution.mjs",
+      "sha256": "dad947d915454a3447f2c724eb0e0c6fce3ef102f13177987b13c315ddcf4667",
+      "bytes": 3548
+    }
+  ],
+  "identitySource": "Explicit --debate routes through current registry and frozen artifacts; no speaker, video, motion, old path or expected result literal.",
+  "fixtureResults": [
+    "Integration matches prior published candidate read-only.",
+    "Rhetorical application reproduces prior accepted publication exactly without writes.",
+    "Distribution comparator matches every current per-debate generated list and the frozen pre-integration catalogue histogram."
+  ],
+  "initialFixtureDiagnostics": [
+    "Distribution legacy fixture lacked the newer catalogue-baseline artifact; stopped read-only, then tested the actual frozen current baseline through a dedicated pre-integration mode."
+  ],
+  "writesToFrozenFixtures": 0,
+  "baselineException": "171\u2013195 is the repository rhetorical-auditor normative independent window, not a copied target identity."
+}
