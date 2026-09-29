@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-unsubmitted-inventory-attempt-preservation",
+  "status": "exhausted-incomplete-unsubmitted-not-accepted",
+  "debateNumber": "275",
+  "debateId": "craig-tooley-god-real-2010",
+  "createdAt": "2026-09-28T23:59:05.305076+00:00",
+  "attempt": 1,
+  "retries": 0,
+  "agentPath": "/root/inventory_275",
+  "model": "gpt-5.6-sol",
+  "reasoningEffort": "low",
+  "firstSubmissionOutputAbsent": true,
+  "judgmentRuns": 0,
+  "scorePasses": 0,
+  "paidCostUsd": 0,
+  "reason": "Worker reported approximately 1600 tokens remaining and inability to complete required source-based coverage expansion and unsaved validation; declined to save incomplete candidate.",
+  "preservedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/attempt-1-exhausted/unsaved-candidate-input.json",
+    "sha256": "6991e57f03619f1af1fb30f5561a7a1af82b0662cec314d497cf62754239981d",
+    "bytes": 28894
+  },
+  "checkerCall": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/attempt-1-exhausted/checker-call.txt",
+    "sha256": "d077de4b235406922da9dd10e519203ca331d912d61efdb3ad3762c0f49738be",
+    "bytes": 31122
+  },
+  "checkerOutput": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/attempt-1-exhausted/checker-output.json",
+    "sha256": "3b0af1f2b7ff30b98d874a24f54f9d1adeb449bc3a3f99e6cf64f227804fe1c9",
+    "bytes": 1543
+  },
+  "authenticatedCallId": "call_0MKZ3qCec9OhjZshFS6lAq1R",
+  "sessionSnapshot": {
+    "externalLocalSessionPath": "/Users/philstilwell/.codex/sessions/2026/09/28/rollout-2026-09-28T19-39-29-01a0ea63-4590-7f82-9fd6-2aa67df75137.jsonl",
+    "sha256": "a0d80ad6aa603f574eac44047220e5a2966bbfa9ff6ea1d5a5477642bdfb264c",
+    "bytes": 1731071
+  },
+  "actualSelectedMoveCounts": {
+    "pro": 9,
+    "con": 7
+  },
+  "unresolvedReviewFindings": [
+    "Reported side counts differ from derived 9 pro / 7 con and revelation section counts.",
+    "Craig resurrection-identification reply omits its actual prior Tooley target.",
+    "Distinct Craig first-rebuttal arguments and later responses require selection or specific source-based omission justification.",
+    "Closing and audience-question coverage descriptions are too general to establish complete coverage.",
+    "Exact quote mismatch in experience move remains in preserved last checker input; worker proposed shortening it to an exact substring."
+  ],
+  "replacementProposal": {
+    "newFreshInventoryContext": 1,
+    "sameFrozenSourceIdentityControlsAndModel": true,
+    "noScoreOrJudgmentReuse": true,
+    "directIncrementalCostUsd": 0,
+    "method": "Build unsaved object in small persistent-memory chunks; compute counts from move array; use source-specific coverage review before a single saved submission.",
+    "authorizationRequired": "Replacing an exhausted attempt under installed skill; no replacement dispatched."
+  }
+}

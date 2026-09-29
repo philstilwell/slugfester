@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "adjudication",
+  "debateNumber": "275",
+  "debateId": "craig-tooley-god-real-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/adjudication/contract.md",
+      "sha256": "c3c6264066bae35c34425b13c2e532c1587729f4ac50d1b43dd4fd42b46b338a",
+      "bytes": 2834
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/adjudication/packet.json",
+      "sha256": "d612702c0aafa5dc31bea4bad86f9378c181285919a9ed49193d8c6c5a6d4f77",
+      "bytes": 18267
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/inventory.json",
+      "sha256": "1501c751927ed321f46fc26e3f7bdc81239111bb7a2064944103828e7a5eafcc",
+      "bytes": 195756
+    },
+    {
+      "path": ".assessment-cache/captions/OBEKUBOMA_0/indexed-transcript.txt",
+      "sha256": "dfe795fba29f579e6c50f5ba67967c2edcf8755993bbde2425e251ed68d2e852",
+      "bytes": 222561
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/source/assessment-source-notes.md",
+      "sha256": "d2013919e26af2b300d4a254ae3b2b970bd45da976c451b6f73f50777b5ccc88",
+      "bytes": 3718
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/source/source-lock.json",
+      "sha256": "f05604ede6056789a27119341114ede7d952a5f403c8a38718737f16d26653a4",
+      "bytes": 5027
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/audio/audio-verification.json",
+      "sha256": "38b0d2547bf38d76f05a4138a6906859e9ac2ab2177973107d42e38d9eea2a01",
+      "bytes": 1790
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/adjudication/validator-excerpt.txt",
+      "sha256": "ae804a37b315208da0de38306280e89fd54a6947e6896ebea0c014406c7f83be",
+      "bytes": 1824
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/adjudication/check-adjudication.mjs",
+      "sha256": "a59ada5bf2bdddb226ed09837c473e1d00a62dd5ea0a971104903f72b020a57d",
+      "bytes": 829
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-275/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-275/adjudication/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-275/adjudication/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

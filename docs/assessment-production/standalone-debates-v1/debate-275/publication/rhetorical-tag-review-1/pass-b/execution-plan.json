@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "blind-review",
+  "debateNumber": "275",
+  "debateId": "craig-tooley-god-real-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/contract.md",
+      "sha256": "ae0c8aaa310a7e2a0e8e75f80dc6edd6d43599fd5c05717090132dfd137ff78f",
+      "bytes": 4118
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/pass-b/packet.json",
+      "sha256": "3c89c66f405cd0b350f6953986cdf504a8b855d27a4b83fe175bbfe146abc776",
+      "bytes": 2672
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/source-packet.json",
+      "sha256": "b91e5f6d70f3c8f5abe854456772b3d364c8e33dc4b4e78ac64e6f0af7e50e4e",
+      "bytes": 223370
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/catalog.json",
+      "sha256": "5a52ade3230c6ae98f0fa51ddbbed80f29cbd7725e509cef0cbf3fcf19aa5bb7",
+      "bytes": 4355
+    },
+    {
+      "path": ".assessment-cache/captions/OBEKUBOMA_0/indexed-transcript.txt",
+      "sha256": "dfe795fba29f579e6c50f5ba67967c2edcf8755993bbde2425e251ed68d2e852",
+      "bytes": 222561
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/source/assessment-source-notes.md",
+      "sha256": "d2013919e26af2b300d4a254ae3b2b970bd45da976c451b6f73f50777b5ccc88",
+      "bytes": 3718
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/pass-b/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/pass-b/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-275/publication/rhetorical-tag-review-1/pass-b/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination, completely read every input in untruncated bounded chunks, and await authenticated reading release. Build actual unsaved JSON in persistent memory, validate via checker stdin, emit complete reconstructable slices and wait for source-specific submission release. Save once and stop; no other files, no peers, no paid calls.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted inputs and disjoint output; no OS sandbox claimed."
+}

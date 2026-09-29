@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "275",
+  "debateId": "craig-tooley-god-real-2010",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/inventory/inventory.json",
+      "sha256": "1501c751927ed321f46fc26e3f7bdc81239111bb7a2064944103828e7a5eafcc",
+      "bytes": 195756
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/score-pass/output.json",
+      "sha256": "009f817662aa46b3d8f1594f1007a28b4f82229f7a2ea010ee7c938d239761db",
+      "bytes": 23322
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/skeleton.json",
+      "sha256": "b94bcec498b8c2b55533c24db858826717027fbda25b6e1804506215f074ac7e",
+      "bytes": 16212
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-275/publication/reference-metrics.json",
+      "sha256": "a248601a128b7e816a139d5e5455516f209da0e7f4ef170f8d02a3c8f5ed4294",
+      "bytes": 27918
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

@@ -13073,5 +13073,58 @@ export const debateSummaries = [
         "title": "Suffering and Divine Judgment"
       }
     ]
+  },
+  {
+    "id": "craig-tooley-god-real-2010",
+    "number": "275",
+    "title": "William Lane Craig vs Michael Tooley — Is God Real?",
+    "year": 2010,
+    "label": "Divine Reality and Evidential Evil",
+    "date": "2026-09-28",
+    "duration": "2 hr 17 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=OBEKUBOMA_0",
+    "motion": "Is God real?",
+    "summary": "Craig’s cumulative theistic case confronts Tooley’s probabilistic evil argument, with moral perfection and inductive method ultimately deciding a narrowly stronger con case.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Theism",
+        "speaker": "William Lane Craig",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheism",
+        "speaker": "Michael Tooley",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 80,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Creator, Origin, and Design"
+      },
+      {
+        "title": "Inductive Probability and Property Reasoning"
+      },
+      {
+        "title": "Moral Reality and Grounding"
+      },
+      {
+        "title": "Evil, Providence, and Perfection"
+      },
+      {
+        "title": "Resurrection and Miracle Evidence"
+      },
+      {
+        "title": "Religious Experience and Revelation"
+      },
+      {
+        "title": "Divine Concept and Modal Coherence"
+      }
+    ]
   }
 ];

@@ -1,0 +1,7 @@
+{
+  "stage": "temporary-production-integration-before-adapter",
+  "command": "node scripts/validate-debates.mjs",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Debate validation failed with 9 issues:\n- debates.274.sections.0.exchanges: must contain no more than 3 items\n- debates.274.sections.0.exchanges.3.con: must be an object\n- debates.274.sections.1.exchanges: must contain no more than 3 items\n- debates.274.sections.1.exchanges.3.con: must be an object\n- debates.274.sections.2.exchanges: must contain no more than 3 items\n- debates.274.sections.2.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.274.sections.3.exchanges: must contain no more than 3 items\n- debates.274.sections.3.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.274.assessmentRubric: requires a matching JSON assessment ledger\n"
+}
