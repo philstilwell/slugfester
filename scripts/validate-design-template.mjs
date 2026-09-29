@@ -88,6 +88,10 @@ requireIncludes("app landing update cadence", app, "New debate assessments are a
 requireIncludes("app landing reassessment schedule", app, "The next site-wide reassessment is tentatively scheduled for spring 2027.");
 requireIncludes("app recent assessment wording", app, "Start with the newest debate additions.");
 requireExcludes("app recent assessment wording", app, "Start with the newest scorecard numbers.");
+const recentDebatesSelection = app.match(/const recentDebates = \[\.\.\.debates\][\s\S]*?;/)?.[0] || "";
+requireIncludes("app recent assessment count", recentDebatesSelection, ".slice(0, 8)");
+requireIncludes("app recent assessment order", recentDebatesSelection, "Number(second.number) - Number(first.number)");
+requireIncludes("recent assessment repeating accents", styles, ".recent-assessment-card:nth-child(4n + 4)");
 requireIncludes("app pagination", app, "const LANDING_PAGE_SIZE = 18");
 requireIncludes("app pagination", app, "const SEARCH_PAGE_SIZE = 24");
 requireIncludes("app pagination", app, "renderPagination");
