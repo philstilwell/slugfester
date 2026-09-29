@@ -35,6 +35,7 @@ assert.ok(!page.includes("delivered for review"));
 assert.ok(page.indexOf("renderDebateRecommendation(") > page.indexOf("</form>"), "Suggestion form belongs below Corrections form");
 assert.ok(page.indexOf("renderDebateRecommendation(") < page.indexOf('class="corrections-process"'));
 assert.ok(initialPageContent("/corrections/").includes(html), "Initial HTML must include the same guidance and working suggestion form");
+assert.ok(initialPageContent("/backend/").includes('href="/corrections/#recommend-a-debate"'), "Backend must link directly to the suggestion form without JavaScript");
 assert.equal(correctionsSeo().canonicalPath, "/corrections/", "Preserve existing report URLs");
 assert.ok(correctionsSeo().title.includes("Feedback"));
 console.log("Validated Feedback navigation, screening guidance, required fields, approved delivery, confirmation, and no-JavaScript recommendation form.");
