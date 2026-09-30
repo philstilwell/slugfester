@@ -13176,5 +13176,58 @@ export const debateSummaries = [
         "title": "Skepticism and fallibilist reasonableness"
       }
     ]
+  },
+  {
+    "id": "shermer-scrivener-good-without-god-2024",
+    "number": "277",
+    "title": "Michael Shermer vs Glen Scrivener — Can We Be Good Without God?",
+    "year": 2024,
+    "label": "Morality Without God",
+    "date": "2026-09-29",
+    "duration": "1 hr 18 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=rQ-g33KtZZ0",
+    "motion": "Can we be good without God?",
+    "summary": "Scrivener narrowly wins by pressing universal human worth and outsider scope, while Shermer offers strong fallibilist reasons but leaves equal rights incompletely grounded.",
+    "topicCategory": "morality-ethics",
+    "sides": {
+      "pro": {
+        "name": "Morality without God",
+        "speaker": "Michael Shermer",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Christian foundations of morality",
+        "speaker": "Glen Scrivener",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 79,
+      "con": 82,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Moral reality and secular reason"
+      },
+      {
+        "title": "Genealogy of rights and moral reform"
+      },
+      {
+        "title": "Rights authority and Enlightenment foundations"
+      },
+      {
+        "title": "Equal human worth and rights"
+      },
+      {
+        "title": "Scripture, Jesus, and shared humanity"
+      },
+      {
+        "title": "Evolution, cooperation, and outsiders"
+      },
+      {
+        "title": "Moral uncertainty and the future"
+      }
+    ]
   }
 ];

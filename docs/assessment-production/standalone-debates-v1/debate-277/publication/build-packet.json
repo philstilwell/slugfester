@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "277",
+  "debateId": "shermer-scrivener-good-without-god-2024",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/inventory/inventory.json",
+      "sha256": "1e69f08ed0edeeac3cbd5eec2dbda9e62ef9ee65c9d784380a5f95f0f2472312",
+      "bytes": 162860
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/score-pass/output.json",
+      "sha256": "28dfd855eb544748b6aeb54afbdbb7387da5892330a4e00af40a7e08256fc6eb",
+      "bytes": 17850
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/skeleton.json",
+      "sha256": "34763b6c2257d745e0b65a2bf9dec213520117ff4e01566cb3e76377cb9d8a26",
+      "bytes": 13519
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-277/publication/reference-metrics.json",
+      "sha256": "2fbb609680ae8e9100b4e56caaabf6787158456c195bc77d2e1ea57298f27642",
+      "bytes": 27892
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

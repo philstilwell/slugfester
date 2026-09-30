@@ -1,0 +1,44 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: .assessment-cache/captions/0-8n2SGFSL8/captions.srv3.xml: missing
+
+false !== true
+
+    at validateFrozenInputBoundary (file:///Users/philstilwell/.codex/workspaces/slugfester-debate-274/scripts/audit-assessment-production-standalone-v1.mjs:574:12)
+    at audit (file:///Users/philstilwell/.codex/workspaces/slugfester-debate-274/scripts/audit-assessment-production-standalone-v1.mjs:1111:5)
+    at file:///Users/philstilwell/.codex/workspaces/slugfester-debate-274/scripts/audit-assessment-production-standalone-v1.mjs:1755:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Debate 196: audit failed
+
+1 !== 0
+
+    at file:///Users/philstilwell/.codex/workspaces/slugfester-debate-274/scripts/audit-assessment-production-standalone-v1.mjs:1745:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
