@@ -24,6 +24,8 @@ jobs:
       - name: Install pinned browser-test tools without changing the assessment lockfile
         run: npm install --no-save --no-package-lock @playwright/test@1.62.1 @axe-core/playwright@4.13.0
       - run: npx playwright install --with-deps chromium
+      - name: Verify standalone workflow and interrupted-work recovery
+        run: npm run assessment:standalone:workflow:test
       - run: npm run site:check
       - name: Preserve browser failure evidence for review
         if: failure()
