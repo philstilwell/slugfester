@@ -2,6 +2,7 @@ import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { publishedDebates as debates } from "../src/data/debates.js";
 import { avatarsForSpeakerText, interlocutorAvatars } from "../src/data/interlocutors.js";
+import { renderCritiqueText } from "../src/data/critique-format.js";
 
 const [app, styles, topics, processGuide] = await Promise.all([
   readFile(new URL("../src/app.js", import.meta.url), "utf8"),
@@ -11,6 +12,26 @@ const [app, styles, topics, processGuide] = await Promise.all([
 ]);
 
 const errors = [];
+
+const escapeCritique = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#39;");
+const critiqueLabels = ["Strongest feature:", "Principal limitation:", "Live burden:", "Locked score:"];
+const normalizeWhitespace = (value) => value.replace(/\s+/g, " ").trim();
+for (const debate of debates) for (const section of debate.sections) for (const exchange of section.exchanges) {
+  for (const side of ["pro", "con"]) {
+    const critique = exchange[side]?.critique;
+    if (!critique) continue;
+    const rendered = renderCritiqueText(critique);
+    const plain = rendered.replace(/<span class="critique-section">|<\/span>|<strong>|<\/strong>/g, "");
+    if (normalizeWhitespace(plain) !== normalizeWhitespace(escapeCritique(critique))) {
+      errors.push(`${debate.id}: critique formatting must preserve published wording`);
+    }
+    for (const label of critiqueLabels) if (critique.includes(label)) {
+      requireIncludes(`${debate.id}: separate bold critique label`, rendered, `<span class="critique-section"><strong>${label}</strong>`);
+    }
+  }
+}
+requireIncludes("critique HTML safety", renderCritiqueText('Strongest feature: <img src=x onerror="alert(1)"> & detail'), '&lt;img src=x onerror=&quot;alert(1)&quot;&gt; &amp; detail');
+requireExcludes("free-form critique labels", renderCritiqueText("An older critique without labeled sections."), "<strong>");
 
 const avatarNames = new Set();
 for (const [index, avatar] of interlocutorAvatars.entries()) {
@@ -253,6 +274,9 @@ requireIncludes("app timestamp links", app, 'class="timestamp-link"');
 requireIncludes("app timestamp links", app, "renderTimestampLink(section.timebox");
 requireIncludes("app timestamp links", app, "renderTimestampLink(argument.time");
 requireIncludes("app guide", app, "◉ Deeper critiques");
+requireIncludes("app shared critique formatting", app, 'class="critique-text">${renderCritiqueText(argument.critique)}');
+requireIncludes("critique section layout", styles, ".critique-section {");
+requireIncludes("critique bold labels", styles, ".critique-section > strong {");
 requireIncludes("app argument columns", app, "side-${sideKey}");
 requireExcludes("app argument placeholders", app, 'class="argument empty"');
 requireExcludes("app retired Debate 14 AI color sample", app, "logical-extension-editorial-blue");

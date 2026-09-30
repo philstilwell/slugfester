@@ -2,6 +2,7 @@
 import { publishedDebates as debates } from "../../src/data/debates.js";
 import { renderAssessmentProcessGuide } from "../../src/data/assessment-process-guide.js";
 import { renderDebateRecommendation } from "../../src/data/debate-recommendation.js";
+import { renderCritiqueText } from "../../src/data/critique-format.js";
 import { avatarsForSpeakerText } from "../../src/data/interlocutors.js";
 import { topicCategoryDefinitions } from "../../src/data/topics.js";
 import { referenceDefinitions, referenceFromUrl } from "../../src/data/references.js";
@@ -40,7 +41,7 @@ function debateContent(debate) {
     ${debate.sections.map((section, index) => `<section id="assessed-section-${index + 1}"><h3>${escape(section.title)}</h3>${paragraph(section.timebox)}
       ${["pro", "con"].map((key) => {
         const move = section.exchanges.find((exchange) => exchange[key])?.[key];
-        return `<h4>${escape(debate.sides[key].speaker)} — section score ${escape(section.score[key])}/100</h4>${move ? `${paragraph(move.words)}${paragraph(move.critique)}` : paragraph("No separate assessed move is recorded for this side in this section.")}`;
+        return `<h4>${escape(debate.sides[key].speaker)} — section score ${escape(section.score[key])}/100</h4>${move ? `${paragraph(move.words)}<p class="critique-text">${renderCritiqueText(move.critique)}</p>` : paragraph("No separate assessed move is recorded for this side in this section.")}`;
       }).join("")}</section>`).join("")}</section>`;
 }
 
