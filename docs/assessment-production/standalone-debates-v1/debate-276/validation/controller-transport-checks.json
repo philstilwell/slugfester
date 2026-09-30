@@ -1,0 +1,15 @@
+{
+  "status": "resolved-before-output-freeze",
+  "debateNumber": "276",
+  "events": [
+    {
+      "operation": "Read immutable baseline catalogue for publication-reference metrics",
+      "problem": "Default child-process output buffer was smaller than the catalogue file (ENOBUFS).",
+      "effect": "Read aborted before any output file or model attempt.",
+      "repair": "Reread the same immutable Git blob with a 32 MiB output buffer; bytes exactly matched current unmodified catalogue.",
+      "assessmentSubstanceChanged": false,
+      "extraModelAttempts": 0,
+      "directCostUsd": 0
+    }
+  ]
+}

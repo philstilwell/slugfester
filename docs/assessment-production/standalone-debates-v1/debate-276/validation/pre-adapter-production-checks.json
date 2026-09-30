@@ -1,0 +1,34 @@
+{
+  "debateNumber": "276",
+  "stage": "reader-facing integration before ledger adapter",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "scripts/validate-debates.mjs"
+      ],
+      "exitCode": 1,
+      "stdout": "",
+      "stderr": "Debate validation failed with 6 issues:\n- debates.275.sections.3.exchanges: must contain no more than 3 items\n- debates.275.sections.3.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow\n- debates.275.sections.4.exchanges.1.pro: must be an object\n- debates.275.sections.4.exchanges.2.pro: must be an object\n- debates.275.sections.5.exchanges.2.con: must be an object\n- debates.275.assessmentRubric: requires a matching JSON assessment ledger\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/validate-corpus-transcripts.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"corpusDebates\": 276,\n  \"available\": 276,\n  \"unavailable\": 0,\n  \"acquisitionRate\": 1,\n  \"completeGateTranscripts\": 3,\n  \"localHashesChecked\": 26\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "scripts/generate-seo-pages.mjs",
+        "--check"
+      ],
+      "exitCode": 0,
+      "stdout": "Validated 802 SEO files.\n",
+      "stderr": ""
+    }
+  ]
+}

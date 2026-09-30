@@ -13126,5 +13126,55 @@ export const debateSummaries = [
         "title": "Divine Concept and Modal Coherence"
       }
     ]
+  },
+  {
+    "id": "rauser-aron-ra-biblical-violence-2022",
+    "number": "276",
+    "title": "Randal Rauser vs Aron Ra — Biblical Violence and Divine Revelation",
+    "year": 2022,
+    "label": "Biblical Violence and Reasonable Belief",
+    "date": "2026-09-29",
+    "duration": "1 hr 50 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=qvT2JHyxnz8",
+    "motion": "Can one reasonably believe the Bible is revealed by God despite its violent passages?",
+    "summary": "Rauser won by offering a morally constrained, genre-sensitive, fallibilist account of revelation, while Aron's strongest internal critiques exposed unresolved evidential and doctrinal costs.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Reasonable divine revelation",
+        "speaker": "Randal Rauser",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Divine revelation challenged",
+        "speaker": "Aron Ra",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 85,
+      "con": 77,
+      "winner": "pro"
+    },
+    "sections": [
+      {
+        "title": "Moral standards and biblical violence"
+      },
+      {
+        "title": "Scripture, genre, and revelatory reading"
+      },
+      {
+        "title": "Jesus's authority and historical reading"
+      },
+      {
+        "title": "Judgment, salvation, and divine character"
+      },
+      {
+        "title": "Evidential standards and error correction"
+      },
+      {
+        "title": "Skepticism and fallibilist reasonableness"
+      }
+    ]
   }
 ];

@@ -1,0 +1,11 @@
+{
+  "status": "diagnosed-local-transport-failure",
+  "cause": "Three initial JavaScript module requests to the local Python test server failed with net::ERR_CONNECTION_RESET. This prevented the app from importing its reference appearance data and left the generated fallback summary visible. The failed assertion was required-resource presence, not a byte-budget exceedance.",
+  "failedRequests": [
+    "/src/data/interlocutors.js",
+    "/src/data/references.js",
+    "/src/seo.js"
+  ],
+  "recovery": "Rerun the unchanged preflight against a fresh managed local server. No budget, test, site code, frozen assessment, or score changes.",
+  "preservedTraceSha256": "7a06bb223d43a46f280d23ef1c42a61359b438129c9a87d8fc82791917c45907"
+}

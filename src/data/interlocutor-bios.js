@@ -2,6 +2,7 @@
 // Each entry has a public biographical source checked on the recorded review date.
 export const biographyReviewDate = "2026-09-05";
 const entries = [
+  ["Randal Rauser", "Randal Rauser is a Canadian theologian and author whose work examines Christian belief and philosophical questions about faith. He studied at Trinity Western University, Regent College, and King’s College London, and has taught philosophy and theology.", "https://randalrauser.com/about/", "2026-09-29"],
   ["Michael Tooley", "Michael Tooley is a philosopher and professor emeritus at the University of Colorado Boulder. His work spans metaphysics, epistemology, ethics, and philosophy of religion, including causation, the justification of induction, and arguments concerning evil and religious belief.", "https://www.colorado.edu/philosophy/people/michael-tooley", "2026-09-28"],
   ["Eli Ayala", "Eli Ayala is a Christian apologist, teacher, and founder of Revealed Apologetics. His videos, writing, and public debates explain a presuppositional approach to defending Christianity, emphasizing the relationship between Christian belief, knowledge, logic, and moral judgment.", "https://www.revealedapologetics.com/about", "2026-09-28"],
   ["Austin Dacey", "Austin Dacey is a philosopher, writer, and human rights advocate whose work examines freedom of conscience and expression. He is the author of The Future of Blasphemy and created The Impossible Music Sessions, a forum for music affected by censorship.", "https://edge.org/memberbio/austin_dacey", "2026-09-28"],
