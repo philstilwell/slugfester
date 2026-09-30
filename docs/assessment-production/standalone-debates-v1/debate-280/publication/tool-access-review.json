@@ -1,0 +1,21 @@
+{
+  "status": "passed-controller-isolation-review",
+  "session": "/Users/philstilwell/.codex/sessions/2026/09/30/rollout-2026-09-30T14-50-24-01a0f3a7-550a-79f1-aa2d-8cf86ff97879.jsonl",
+  "customToolCallsReviewed": 31,
+  "allowedActions": [
+    "literal execution-plan reading",
+    "pinned maintained reader only"
+  ],
+  "forbiddenEvidenceAccessObserved": false,
+  "completeVisibleReading": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/reading-release.json",
+    "sha256": "5ade5c36372ee6e4815495243f6b79cfd9346488c76ed3ca968774dbfb634bc8",
+    "bytes": 18018
+  },
+  "readingRecovery": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/publication/reading-review-1.json",
+    "sha256": "26976d359a3833f857a14317682be2c73b6d1995e3b20ab24b663ef4e677faee",
+    "bytes": 634
+  },
+  "notes": "All custom tool inputs inspected; plan and own pinned reader only. The original bulk loop failed visibility, not isolation. The same context supplied missing complete reader text before release."
+}

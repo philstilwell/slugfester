@@ -1,0 +1,37 @@
+{
+  "status": "explicitly-user-authorized-two-dimension-source-repair",
+  "approvedAt": "2026-09-30T18:37:03.656087+00:00",
+  "userApproval": "I approve. Let’s avoid asking for common approvals.",
+  "approvedQuestion": "May that same reviewer reconsider only the two Nørmark clarity ratings affected by caption errors or an excerpt boundary and their explanations, using existing evidence and leaving every other judgment unchanged? No overall scores calculated; no paid cost.",
+  "sameWorker": "/root/primary280b",
+  "sameContextRequired": true,
+  "newContextAuthorized": false,
+  "priorCandidateSha256": "d27ed899e4ee639b725e19973ac7b6d52cf2acd7164dd2fc717530201036b727",
+  "savedSubmissionExists": false,
+  "scoreCalculationExists": false,
+  "shards": [
+    {
+      "moveId": "c-apocalyptic-jesus",
+      "allowedLeaves": [
+        "dimensions.precisionClarity.value",
+        "dimensions.precisionClarity.rationale"
+      ],
+      "maximumAttempts": 1,
+      "exclude": "Editorial excerpt ending mid-thought is not speaker imprecision; assess full existing source."
+    },
+    {
+      "moveId": "c-myth-history",
+      "allowedLeaves": [
+        "dimensions.precisionClarity.value",
+        "dimensions.precisionClarity.rationale"
+      ],
+      "maximumAttempts": 1,
+      "exclude": "Automatic-caption recognition corruption is not speaker imprecision."
+    }
+  ],
+  "allOtherLeavesFrozen": true,
+  "peerDisclosurePermitted": false,
+  "controllerChosenRatingsPermitted": false,
+  "directIncrementalCostUsd": 0,
+  "routineApprovals": "Proceed autonomously for ordinary authorized work; do not seek repeated common approvals."
+}

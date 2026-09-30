@@ -1,0 +1,9 @@
+{
+  "status": "resolved-before-worker-preparation",
+  "failure": "Initial read of large committed catalogue exceeded the default subprocess output buffer; subsequent skeleton preparation found no source-note file.",
+  "source": "Controller metadata preparation, not model inference or score computation",
+  "artifactsWrittenBeforeFailure": 0,
+  "correction": "Read the same immutable Git blob with a sufficient 64MiB output allowance; unchanged data and selection rules.",
+  "assessmentRetry": false,
+  "scoreRerun": false
+}

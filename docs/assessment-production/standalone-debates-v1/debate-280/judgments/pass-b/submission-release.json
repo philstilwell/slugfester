@@ -1,0 +1,50 @@
+{
+  "status": "approved-first-submission",
+  "candidateSha256": "4b87527ce8ec2e5e8cd88fd8d675b9ed665d844f4c7583c20e84156aeeefef6b",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-b/execution-plan.json",
+    "sha256": "7b2e3b2142a23838ff3d78942f6cd9b7014a178e455ae9b867eb3f80d1d18693",
+    "bytes": 7965
+  },
+  "readingEvidence": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-b/reading-release.json",
+    "sha256": "024f17ca28fd72e7cd4abbe2d8d6b09dc992cd15f44e4018137a9544ad772f71",
+    "bytes": 18370
+  },
+  "sourceEditorialReview": {
+    "status": "passed",
+    "notes": "Controller read all 32 judgments and 192 rationales in the original candidate, then all changed leaves and surrounding source in the revised candidate. Exact recursive comparison finds only the authorized c-apocalyptic-jesus precisionClarity value/rationale and c-myth-history precisionClarity value/rationale changed. The reviewer independently chose 70 and 69, respectively. The first now assesses evaluative wording and unspecified historical chronology; the second assesses unspecified parallels and adaptation routes. Neither uses editorial excerpt termination or recognition corruption as a participant defect. Every other judgment remains identical. The original violations and explicit user repair authorization are preserved. Both passes retain Nørmark’s probability, brain-origin and miracle qualifications, Turek’s moral-ontology distinction and old-universe permission, moderator-context ownership, and unequal response opportunity. The owned answers to Holm are assessed without assigning his premises to a debater. Medium-confidence ownership spans were checked against all 12 completed audio verifications, including the mixed final free-will cue and supplied noun in the humanist answer. Corrupted names, numbers and incidental words are not used as errors. All 192 ratings, criteria and two zero burden adjustments now have source-specific reasons. No peer disclosure, controller-selected rating, calculated total or winner was used."
+  },
+  "rejectedCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-b/review-1/rejected-held-candidate.json",
+    "sha256": "d27ed899e4ee639b725e19973ac7b6d52cf2acd7164dd2fc717530201036b727",
+    "bytes": 45938
+  },
+  "explicitUserRepairAuthority": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-280/judgments/pass-b/review-1/user-repair-authorization.json",
+    "sha256": "c0ec089a088b681cd38b651ec6514648e3644d2491bb8f39f2db6cea858f474f",
+    "bytes": 1636
+  },
+  "changedLeaves": [
+    {
+      "path": "judgments.19.dimensions.precisionClarity.value",
+      "before": 67,
+      "after": 70
+    },
+    {
+      "path": "judgments.19.dimensions.precisionClarity.rationale",
+      "sourceBasis": "Speaker evaluative wording and unclear later borrowing chronology; no excerpt-boundary penalty."
+    },
+    {
+      "path": "judgments.21.dimensions.precisionClarity.value",
+      "before": 65,
+      "after": 69
+    },
+    {
+      "path": "judgments.21.dimensions.precisionClarity.rationale",
+      "sourceBasis": "Speaker unspecific parallels and adaptation route; no ASR penalty."
+    }
+  ],
+  "allOtherLeavesUnchanged": true,
+  "savedSubmissionAbsentAtRelease": true
+}

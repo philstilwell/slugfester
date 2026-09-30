@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-30T17:35:08.864563+00:00",
+  "userAuthorization": "User invoked the addition skill for this video and expressly approved the recording-specific moderator-context scope. Routine isolated assessment, bounded field repairs, validation, topic commit/push, PR, green merge and checked deployment are authorized. No paid retries or altered scoring rules are authorized.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-280",
+    "head": "1c830caedd987aaf13bf0c9b9f6bdd7fd8c0c847",
+    "localMain": "1c830caedd987aaf13bf0c9b9f6bdd7fd8c0c847",
+    "originMain": "1c830caedd987aaf13bf0c9b9f6bdd7fd8c0c847",
+    "clean": true,
+    "isolationReason": "Managed separate checkout from freshly fetched origin/main preserves unrelated original-folder work. Clean existing main was fast-forwarded to the same revision before creating this topic branch. Only intake screening existed before scope approval."
+  },
+  "identity": {
+    "debateNumber": "280",
+    "debateId": "turek-normark-god-existence-2014",
+    "videoId": "t-p2eSkmyIQ",
+    "canonicalUrl": "https://www.youtube.com/watch?v=t-p2eSkmyIQ",
+    "sourceTitle": "Does God Exist?  (Frank Turek vs Dennis Nørmark)",
+    "eventYear": 2014,
+    "title": "Frank Turek vs Dennis Nørmark — Does God Exist? (2014)",
+    "label": "Does God Exist?",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does God exist?",
+    "pro": {
+      "speaker": "Frank Turek",
+      "position": "God exists"
+    },
+    "con": {
+      "speaker": "Dennis Nørmark",
+      "position": "God probably does not exist"
+    },
+    "dyadic": true,
+    "editorApprovedScope": {
+      "protocolId": "editor-approved-moderator-context-v1",
+      "explicitDebateSpecificApproval": true,
+      "videoId": "t-p2eSkmyIQ",
+      "userApproval": "The user answered “Yes—use the disclosed two-speaker assessment” to: “May I score only Frank Turek and Dennis Nørmark across the full debate, treating moderator Adam Holm’s arguments as context, evaluating the debaters’ own replies, and clearly disclosing this exception?”",
+      "originalRecordingIsStrictlyDyadic": false,
+      "automaticPrimarySpeakerExceptionClaimed": false,
+      "contextOnlyParticipants": [
+        "Adam Holm"
+      ],
+      "primaryRepliesRemainEligible": true,
+      "moderatorArgumentsAssignableToPrimarySpeakers": false,
+      "moderatorScored": false,
+      "readerDisclosureRequired": true,
+      "assessedWindow": {
+        "startMs": 730800,
+        "endMs": 8176029,
+        "durationMs": 7445229
+      },
+      "requiredReaderDisclosure": "By explicit editorial approval, this assessment scores only Frank Turek and Dennis Nørmark across the substantive debate. Moderator Adam Holm contributes independent arguments and challenges, which remain context; the debaters’ own replies remain eligible for assessment. No moderator argument is credited to either debater. Unequal questioning is considered when selecting moves and evaluating opportunities to respond. This is a recording-specific exception to the ordinary two-speaker source rule.",
+      "scopeInterpretation": "Turek argues that cosmology, fine-tuning, objective morality and resurrection evidence favor God and Christianity. Nørmark initially says he does not know with certainty and considers God improbable; he argues for natural explanations, humanism and materialism. Do not impose a universal disproof burden or reduce his adopted positive naturalistic claims to mere withholding of belief."
+    }
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostEstimateUsd": 0,
+    "maximumPossiblePaidCostEstimateUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "Freeze and report the cumulative exact-input estimate before any required transcription. One paid attempt per frozen clip, no paid retry. Standing skill maximum is $1; no paid call has yet occurred."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-280",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/turek-normark-god-existence-2014.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/turek-normark-god-existence-2014.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}
