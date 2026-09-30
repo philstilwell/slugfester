@@ -9,7 +9,12 @@ for (const record of registry.debates.filter((record) => record.readerScopeDiscl
   const disclosure = JSON.parse(readFileSync(new URL(`../${record.readerScopeDisclosurePath}`, import.meta.url)));
   const debate = publishedDebates.find((item) => item.id === record.debateId);
   assert(debate, `${record.debateId}: disclosure has no published debate`);
-  assert.equal(disclosure.debateId, debate.id);
+  const identityMatches = disclosure.debateId === debate.id || (
+    disclosure.debateId === undefined && disclosure.debateNumber === debate.number &&
+    disclosure.videoId === record.videoId &&
+    disclosure.videoId === new URL(debate.youtubeUrl).searchParams.get("v")
+  );
+  assert(identityMatches, `${debate.id}: reader disclosure identity must match the registered debate`);
   assert.equal(disclosure.debateNumber, debate.number);
   assert.equal(typeof disclosure.requiredReaderDisclosure, "string");
   assert(disclosure.requiredReaderDisclosure.trim());

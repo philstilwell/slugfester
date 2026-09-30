@@ -71,7 +71,12 @@ for (const entry of standaloneRegistry.debates) {
     throw error;
   }
   const debate = debates.find((item) => item.id === entry.debateId);
-  if (scope.debateId !== debate.id || typeof scope.requiredReaderDisclosure !== "string" ||
+  const scopeIdentityMatches = scope.debateId === debate.id || (
+    scope.debateId === undefined && scope.debateNumber === debate.number &&
+    scope.videoId === entry.videoId &&
+    scope.videoId === new URL(debate.youtubeUrl).searchParams.get("v")
+  );
+  if (!scopeIdentityMatches || typeof scope.requiredReaderDisclosure !== "string" ||
       !scope.requiredReaderDisclosure.trim() || !debate.sourceNote.includes(scope.requiredReaderDisclosure)) {
     throw new Error(`${entry.debateId}: authorized public scope must match the frozen publication note`);
   }

@@ -1,0 +1,37 @@
+
+> slugfester@0.1.0 site:preflight
+> node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep "reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged"
+
+Validated explicit primary categories for 278 debates across 15 categories.
+
+> slugfester@0.1.0 seo
+> node scripts/generate-seo-pages.mjs --check
+
+Validated 806 SEO files.
+Validated source-grounded introductions and three related suggestions for 278 debates, plus all seven research introductions and figures.
+Validated source-backed biographies for all 188 published interlocutors.
+Validated substantive initial text for 278 debates and 188 profiles, plus catalogue, topics, rankings and method pages.
+Validated SEO contracts for 502 indexed pages, 15 topic pages, reference evidence and stable update dates.
+Validated 52 ranking mini charts against eligible overall scores, plus eligibility and bucket boundaries.
+Validated 15 category averages against 278 published scorecards, plus weighting and missing-score safeguards.
+Validated Feedback navigation, screening guidance, required fields, approved delivery, confirmation, and no-JavaScript recommendation form.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ undefined
+- 'lennox-tooley-atheism-christianity-2013'
+
+    at file:///Users/philstilwell/.codex/workspaces/slugfester-debate-274/scripts/validate-reader-scope-disclosures.mjs:12:10 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: 'lennox-tooley-atheism-christianity-2013',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0

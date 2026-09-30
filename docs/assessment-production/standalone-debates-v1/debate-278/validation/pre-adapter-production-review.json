@@ -1,0 +1,28 @@
+{
+  "status": "reader-facing-rules-passed-adapter-dependent-rules-deferred",
+  "debateNumber": "278",
+  "diagnostics": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/pre-adapter-production.log",
+    "sha256": "f14031f05a8a8ff7ee26ae2090f2b5c0bb42e7cb8582452fdc88edde2de7f069",
+    "bytes": 1012
+  },
+  "remainingIssues": [
+    "- debates.277.sections.0.exchanges: must contain no more than 3 items",
+    "- debates.277.sections.0.exchanges.2.pro: must be an object",
+    "- debates.277.sections.0.exchanges.3.pro: must be an object",
+    "- debates.277.sections.1.exchanges: must contain no more than 3 items",
+    "- debates.277.sections.1.exchanges: may use a fourth row only for locked one-sided overflow or balanced standalone locked-card overflow",
+    "- debates.277.sections.2.exchanges.2.con: must be an object",
+    "- debates.277.sections.3.exchanges.1.con: must be an object",
+    "- debates.277.sections.3.exchanges.2.con: must be an object",
+    "- debates.277.sections.4.exchanges.1.pro: must be an object",
+    "- debates.277.sections.5.exchanges: must contain no more than 3 items",
+    "- debates.277.sections.5.exchanges.3.con: must be an object",
+    "- debates.277.sections.6.exchanges: must contain no more than 3 items",
+    "- debates.277.sections.6.exchanges.3.pro: must be an object",
+    "- debates.277.assessmentRubric: requires a matching JSON assessment ledger"
+  ],
+  "explanation": "All remaining issues depend on the not-yet-built site ledger adapter: frozen balanced/asymmetric fourth-row permissions, unpaired cards and matching ledger identity. Wording, quote, score note and AI rules passed. Full validation must pass after adapter creation.",
+  "assessmentChanges": 0,
+  "controllerDiagnostic": "Initial local result-classification assertion omitted the explicit balanced-fourth-row message; corrected only the diagnostic classifier after inspecting the actual errors. No production check was weakened."
+}

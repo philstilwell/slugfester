@@ -1,0 +1,16 @@
+{
+  "status": "bounded-read-only-parser-adaptation-before-use",
+  "debateNumber": "278",
+  "path": ".assessment-cache/controllers/inspect-unsaved.py",
+  "beforeSha256": "c0302e846495a4f03e4d878cbf03f6c746d7c3e3ba2ba5f5d54a8e47ede86f05",
+  "afterSha256": "8ae3eee987dbb82be328db47a35b04fdeb8582e7f182c37466a7973ab8175680",
+  "change": "Recognize byte-offset headers as well as character-offset headers when reconstructing contiguous unsaved tool-output slices. No files containing candidate data are created.",
+  "scope": "Read-only parsing; candidate hash must independently match worker report.",
+  "laterAdaptations": [
+    {
+      "beforeSha256": "8ae3eee987dbb82be328db47a35b04fdeb8582e7f182c37466a7973ab8175680",
+      "afterSha256": "7080a2a12d5824d4df31a3c5f5842d3c397851b5d3465999f68ee5c3caebfb3f",
+      "change": "Recognize offset=N headers too; same contiguous JSON transport and hash verification."
+    }
+  ]
+}
