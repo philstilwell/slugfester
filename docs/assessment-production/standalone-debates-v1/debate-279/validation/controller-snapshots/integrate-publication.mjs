@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {createHash} from 'node:crypto';
+const args=process.argv.slice(2), idx=args.indexOf('--debate');
+assert(idx>=0&&args[idx+1]);
+const root=process.cwd(),read=p=>JSON.parse(fs.readFileSync(p));
+const entry=read('docs/assessment-production/standalone-debates-v1/registry.json').debates.find(e=>e.debateNumber===args[idx+1]);assert(entry);
+const publication=read(`${entry.root}/publication/output.json`),candidate=publication.candidate;
+assert.equal(candidate.number,entry.debateNumber);assert.equal(candidate.id,entry.debateId);
+const auth=read(`${entry.root}/authorization.json`);
+if(auth.availableRecordingScope)assert(candidate.sourceNote.includes(auth.availableRecordingScope.requiredReaderDisclosure),'Approved source-scope disclosure absent');
+assert.equal(new URL(candidate.youtubeUrl).searchParams.get('v'),entry.videoId);
+const target='src/data/debates.js',before=fs.readFileSync(target,'utf8');
+const existing=(await import(pathToFileURL(path.join(root,target)).href)).debates;
+const canonical=x=>JSON.stringify(x), prior=existing.map(canonical);
+if(args.includes('--check-only')){
+ assert.equal(existing.filter(d=>d.id===entry.debateId).length,1);
+ assert.deepEqual(existing.find(d=>d.id===entry.debateId),candidate);
+ console.log(JSON.stringify({status:'passed-existing-candidate-fixture',debateNumber:entry.debateNumber,debates:existing.length}));process.exit(0);
+}
+assert(!existing.some(d=>d.id===entry.debateId||d.number===entry.debateNumber||new URL(d.youtubeUrl).searchParams.get('v')===entry.videoId),'duplicate identity');
+const marker='\n];\n\naddMissingAiContributions(debates);';
+assert.equal(before.split(marker).length,2,'array boundary must be unique');
+const prefix=before.split(marker)[0];assert(prefix.endsWith('  }'));
+const inserted=JSON.stringify(candidate,null,2).split('\n').map(l=>'  '+l).join('\n');
+const after=prefix+',\n'+inserted+marker+before.split(marker)[1];
+const fixture=path.join(root,'src/data/.standalone-integration-check.mjs');assert(!fs.existsSync(fixture));
+let checked;
+try{fs.writeFileSync(fixture,after,{flag:'wx'});checked=(await import(pathToFileURL(fixture).href)).debates;
+ assert.deepEqual(checked.slice(0,-1).map(canonical),prior,'existing debates changed');assert.deepEqual(checked.at(-1),candidate);
+}finally{if(fs.existsSync(fixture))fs.unlinkSync(fixture);}
+assert.equal(fs.readFileSync(target,'utf8'),before,'concurrent change');
+fs.writeFileSync(target,after);
+console.log(JSON.stringify({status:'integrated-one-candidate',debateNumber:entry.debateNumber,debates:checked.length,priorDebatesUnchanged:true,beforeSha256:createHash('sha256').update(before).digest('hex'),afterSha256:createHash('sha256').update(after).digest('hex')}));

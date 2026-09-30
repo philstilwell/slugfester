@@ -1,0 +1,57 @@
+{
+  "status": "passed-reader-transport-adaptation",
+  "debateNumber": "279",
+  "beforeSha256": "7080a2a12d5824d4df31a3c5f5842d3c397851b5d3465999f68ee5c3caebfb3f",
+  "afterSha256": "42b59c8f1abdf1470aebbfd347faa83cc9eb02eab94887e44a7f507b73f0cb13",
+  "beforePath": "docs/assessment-production/standalone-debates-v1/debate-279/validation/unsaved-notify-reader-adaptation/before.py",
+  "activeControllerPath": ".assessment-cache/controllers/inspect-unsaved.py",
+  "change": "Read notified string slice blocks as well as ordinary text-list slice blocks, preserving order and exact content. No candidate authoring or modification.",
+  "fixtures": [
+    {
+      "fixture": "notify-string",
+      "exitCode": 0,
+      "canonicalRecord": {
+        "canonicalSha256": "ba6852f8ba2f2efc313d35239a7bc704e4244d9441555f8cea42c45e15f9dab2",
+        "canonicalBytes": 25496,
+        "keys": [
+          "schemaVersion",
+          "protocolId",
+          "status",
+          "debateNumber",
+          "debateId",
+          "reviewerRole",
+          "assessmentModel",
+          "reasoningEffort",
+          "isolation",
+          "resolutions"
+        ]
+      }
+    },
+    {
+      "fixture": "text-block",
+      "exitCode": 0,
+      "canonicalRecord": {
+        "canonicalSha256": "b2667321050d4ef059d0f80c8731006a9e4ff8971cd5a3ac6e65d2667dbc1df9",
+        "canonicalBytes": 56176,
+        "keys": [
+          "schemaVersion",
+          "protocolId",
+          "status",
+          "pass",
+          "debateNumber",
+          "debateId",
+          "reviewerRole",
+          "assessmentModel",
+          "reasoningEffort",
+          "inventorySha256",
+          "isolation",
+          "judgments",
+          "burdenCompletionAdjustment",
+          "audit"
+        ]
+      }
+    }
+  ],
+  "assessmentChanges": 0,
+  "scoreChanges": 0
+}

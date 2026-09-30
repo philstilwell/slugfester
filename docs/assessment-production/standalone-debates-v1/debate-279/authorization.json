@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-30T12:24:27.495533+00:00",
+  "userAuthorization": "User requested this recording, approved one targeted paid transcription retry, then explicitly approved the disclosed 33.12-second source exclusion. Routine reviewers, bounded repairs, validation, commit/topic push/PR/green merge/deployment remain authorized without common approval requests.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-279",
+    "head": "6108161017c41717a5fd6bd2dd0e30e6b06f6dd6",
+    "localMain": "6108161017c41717a5fd6bd2dd0e30e6b06f6dd6",
+    "originMain": "6108161017c41717a5fd6bd2dd0e30e6b06f6dd6",
+    "clean": true,
+    "isolationReason": "Reused the free clean separate clone after the preceding completed debate. Created the topic branch at synchronized baseline 85e2762da4c8e2cb1b3edf089ce778bb88138362 before source acquisition. Before freezing assessment, fast-forwarded unchanged tracked state to current main after unrelated critique presentation PR96; assessment controls remain byte-identical."
+  },
+  "identity": {
+    "debateNumber": "279",
+    "debateId": "slick-barker-god-existence-2014",
+    "videoId": "oPi073maMRw",
+    "canonicalUrl": "https://www.youtube.com/watch?v=oPi073maMRw",
+    "sourceTitle": "Dan Barker Vs. Matt Slick Debate: \"Does God Exist?\"",
+    "eventYear": 2014,
+    "title": "Matt Slick vs Dan Barker — Does God Exist? (2014)",
+    "label": "Does God Exist?",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Does God exist?",
+    "pro": {
+      "speaker": "Matt Slick",
+      "position": "God exists"
+    },
+    "con": {
+      "speaker": "Dan Barker",
+      "position": "Atheism defended"
+    },
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownPaidCostEstimateUsd": 0.01579935,
+    "maximumPossiblePaidCostEstimateUsd": 0.01599935,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 1,
+    "consumedRetryCount": 1,
+    "currentPlanEstimateUsd": 0.01599935,
+    "audioVerificationPolicy": "Report a cumulative frozen estimate before required new move-specific audio checks; the approved source-gap retry is consumed and no further retry is authorized.",
+    "reportedFullFallbackEstimateUsd": 0.64,
+    "successfulPaidCalls": 2
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-279",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/slick-barker-god-existence-2014.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "generated site output for this addition"
+  ],
+  "creditConstraint": {
+    "useExtraCredits": false,
+    "automaticResetPermitted": false,
+    "actionIfIncludedUsageExhausted": "Stop before further model work and allow the user to trigger their available reset."
+  },
+  "availableRecordingScope": {
+    "protocolId": "editor-approved-available-recording-v1",
+    "explicitDebateSpecificApproval": true,
+    "videoId": "oPi073maMRw",
+    "approvedAt": "2026-09-30T12:24:27.495533+00:00",
+    "userApproval": "Proceed. This answers the specific request to assess and publish with 41:07.52–41:40.64 excluded and disclosed, with neither credit nor penalty and no absence-based inference from the excluded passage.",
+    "assessedWindow": {
+      "startMs": 55760,
+      "endMs": 6240960,
+      "durationMs": 6185200
+    },
+    "excludedIntervals": [
+      {
+        "startMs": 2467520,
+        "endMs": 2500640,
+        "durationMs": 33120,
+        "reason": "Unreliably transcribed beginning of Matt Slick’s rebuttal after public captions and two paid attempts."
+      }
+    ],
+    "fullSuppliedRecordingCovered": false,
+    "unabridgedEventCompletenessEstablished": false,
+    "requiredReaderDisclosure": "This assessment uses the recoverable portions of the recording. A 33-second passage at the start of Matt Slick’s rebuttal (41:07.52–41:40.64) could not be reliably transcribed and is excluded. Neither speaker receives credit or a penalty for that passage, and no claim that an argument went unanswered relies on the missing material.",
+    "restrictions": [
+      "Do not use either attempted reconstruction as evidence.",
+      "Exclude the interval from all selected moves, source excerpts, and reply links.",
+      "Do not infer failure to answer or absence of an argument from that interval.",
+      "Judge all remaining material under the unchanged rubric, independent-review workflow and sole deterministic score pass.",
+      "Show the scope limitation to readers before the scores and in source notes."
+    ],
+    "changedRubricOrScoreRules": false,
+    "newPaidRetryAuthority": false
+  }
+}

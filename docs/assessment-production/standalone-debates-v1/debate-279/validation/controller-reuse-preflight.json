@@ -1,0 +1,123 @@
+{
+  "status": "passed-before-phase-execution",
+  "debateNumber": "279",
+  "reviewedAt": "2026-09-30T12:37:53.140339+00:00",
+  "files": [
+    {
+      "path": ".assessment-cache/controllers/prepare-worker-plans.py",
+      "sha256": "fded2fd665101b09243d4fda7ecebfbc1e8985e548330cf406f01f2ba1e78c54",
+      "bytes": 3535,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/integrate-publication.mjs",
+      "sha256": "53c79aa7bed49ac537dc52601928f592fd437a918bbd9df53027e124847cea1a",
+      "bytes": 2839,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/prepare-publication.mjs",
+      "sha256": "12a87c586168392001fcd82879276bd97a9994082241b3ab6f4cdd75ec21e430",
+      "bytes": 5075,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/browser-replay-template.js",
+      "sha256": "3403b274274fea4f042f0f84357fe3344749fd540fe1e41148f946a23288198e",
+      "bytes": 11506,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/prepare-browser-replay.mjs",
+      "sha256": "f61d7e5dd31b8bde649e54e869e4fe0c8d491f18f86a37989ecfbdd63fbeb7e4",
+      "bytes": 2289,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/inspect-unsaved.py",
+      "sha256": "7080a2a12d5824d4df31a3c5f5842d3c397851b5d3465999f68ee5c3caebfb3f",
+      "bytes": 3775,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/lock-inventory.mjs",
+      "sha256": "4d5565c08f9ba4297bb8bc8e447f2c5536f7709312dcf5184a708d5b8e099cac",
+      "bytes": 5067,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/reconcile-section-distribution.mjs",
+      "sha256": "dad947d915454a3447f2c724eb0e0c6fce3ef102f13177987b13c315ddcf4667",
+      "bytes": 3548,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/prepare-rhetorical.py",
+      "sha256": "823f8125022917c0c64a22162abcc29e7a0f6624001ee12ccacf99b1fc213a4f",
+      "bytes": 6205,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/review-resolved-ledger.mjs",
+      "sha256": "94baa6f23b8c72d38860c4aea38e35e824a9a1b4b5aad101ec1602266756ce90",
+      "bytes": 4497,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/authenticate-worker.py",
+      "sha256": "fd0d857e0bc9dcfc301af66a9f2ee5672a00293a5a8bd8e57eaa1ab3bf2cfbcb",
+      "bytes": 5128,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": ".assessment-cache/controllers/apply-rhetorical.mjs",
+      "sha256": "6b84025ed6ec6d7fe30a92762edac69d72c0fbd7dbc8148ac1c684186ec3c489",
+      "bytes": 10078,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/inventory/check-inventory.mjs",
+      "sha256": "0b5fcf597761733d49def1018ff359311ca781ac3718587e60193da9b1fee360",
+      "bytes": 2933,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/judgments/check-judgment.mjs",
+      "sha256": "781e989b59317dfe72dd32bf52d4a69e8e6f248642f7e50bfb2c6155d4e4b4e3",
+      "bytes": 1116,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/adjudication/check-adjudication.mjs",
+      "sha256": "a59ada5bf2bdddb226ed09837c473e1d00a62dd5ea0a971104903f72b020a57d",
+      "bytes": 829,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/check-publication.mjs",
+      "sha256": "941ea7c2b11c8d9189d6251eb767537435c86d13e76166f566dc28437cdce6e4",
+      "bytes": 9218,
+      "staleIdentityMatches": []
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/rhetorical-tag-review-1/check-review.mjs",
+      "sha256": "e4f2013da4cfa8f8f690b324f00567584c67759b68e2c45ed8455008da8005de",
+      "bytes": 4109,
+      "staleIdentityMatches": []
+    }
+  ],
+  "routing": "Explicit --debate argument resolves registry identity, root, source and artifact paths; no previous move/section/dispute/tag counts inherited.",
+  "sourceExclusion": "Current inventory checker and lock controller independently reject intersection with authorized excludedIntervals.",
+  "rhetoricalOverrides": "Initialized empty by the generic current-run preparer; no inherited acceptance, rejection, relabeling or context override.",
+  "browserAdaptation": "Current upstream presentation separates four critique labels. Browser comparison normalizes layout whitespace and independently requires all four exact bold labels on every card. Assessment prose, scores and meaning remain exact.",
+  "genericInterfaceChecksAlreadyPassed": [
+    "Literal reading authentication against current worker session and exact packet input bytes",
+    "Current immutable catalogue baseline matches generated analytics for every debate"
+  ],
+  "pendingBeforeUse": [
+    "Inventory stdout checker and lock check-only against the actual current unsaved/saved source selection",
+    "Resolved-ledger check against reviewed current input records",
+    "Publication checker against current skeleton and inventory",
+    "Browser checks against actual generated current page"
+  ]
+}

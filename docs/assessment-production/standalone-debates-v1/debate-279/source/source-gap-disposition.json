@@ -1,0 +1,45 @@
+{
+  "videoId": "oPi073maMRw",
+  "debateNumberCandidate": 279,
+  "recordedAt": "2026-09-30T11:30:14.414069+00:00",
+  "status": "source-gap-unresolved-after-approved-retry",
+  "attemptCount": 2,
+  "remainingPaidRetries": 0,
+  "assessmentStarted": false,
+  "reason": "The public English caption track has a 33.12-second gap. The first transcription includes incoherent multilingual fragments. The approved different-model retry omits most of the gap and differs in its reconstruction of the substantive phrases. Neither output supplies a reliable complete passage. Silence detection does not establish that the omitted period is silence.",
+  "unresolvedSourceIntervalMs": [
+    2467520,
+    2500640
+  ],
+  "sourceDurationSeconds": 6248,
+  "gapShareOfFullVideoPercent": 0.5301,
+  "knownSuccessfulCallsEstimatedCostUsd": 0.01579935,
+  "maximumPossibleCostEstimateUsd": 0.01599935,
+  "outputs": [
+    {
+      "path": ".assessment-cache/debate-279-source-check/gap-transcription.json",
+      "sha256": "752ddfb0b149c4f0699ff406f596ceb1217893afb1ee435e3f04e86b2da266ab",
+      "eligibleToReplaceCaptions": false
+    },
+    {
+      "path": ".assessment-cache/debate-279-source-check/gap-retry-transcription.json",
+      "sha256": "23ed857b87106ed32485a1968cc2f486910445b10832d150daed4e7ffb1deabf",
+      "eligibleToReplaceCaptions": false
+    }
+  ],
+  "proposedScopeException": {
+    "authorized": false,
+    "excludedIntervalMs": [
+      2467520,
+      2500640
+    ],
+    "publicDisclosure": "This assessment uses the recoverable portions of the recording. A 33-second passage at the start of Matt Slick’s rebuttal (41:07.52–41:40.64) could not be reliably transcribed and is excluded. Neither speaker receives credit or a penalty for that passage, and no claim that an argument went unanswered relies on the missing material.",
+    "conditions": [
+      "Do not use either attempted reconstruction as evidence.",
+      "Exclude the interval from all selected moves, source excerpts, and reply links.",
+      "Do not infer failure to answer or absence of an argument from that interval.",
+      "Judge all remaining material under the unchanged rubric, independent-review workflow and sole deterministic score pass.",
+      "Show the scope limitation to readers before the scores and in source notes."
+    ]
+  }
+}

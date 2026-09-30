@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "279",
+  "debateId": "slick-barker-god-existence-2014",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/inventory/inventory.json",
+      "sha256": "ef52ac0b86f2e1ba6cd8ef2019eacdfa65d3fd7b6919ea074708b5f6493dc0f5",
+      "bytes": 180409
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/score-pass/output.json",
+      "sha256": "488d212c1511e5009971a5430a5f08ca55b7827578dc544bd59d0b5b715e4a85",
+      "bytes": 23204
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/skeleton.json",
+      "sha256": "f0609a315fdb32c1fe95bf0ab28cac64398eb1804f342adccf754bd617f53eb0",
+      "bytes": 16305
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-279/publication/reference-metrics.json",
+      "sha256": "16ffb290321c88d17a406a1208453f8c4cc3d25e873957b5384225729472c067",
+      "bytes": 27380
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

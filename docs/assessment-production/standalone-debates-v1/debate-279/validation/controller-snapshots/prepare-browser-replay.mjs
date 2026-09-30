@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const args=process.argv.slice(2),arg=k=>args[args.indexOf(k)+1];
+for(const k of ['--debate','--origin','--prefix','--output'])assert(args.includes(k));
+const registry=JSON.parse(fs.readFileSync('docs/assessment-production/standalone-debates-v1/registry.json'));
+const rec=registry.debates.find(r=>r.debateNumber===arg('--debate'));assert(rec);
+const read=p=>JSON.parse(fs.readFileSync(p));const b=rec.root;
+const candidate=read(b+'/publication/output.json').candidate,auth=read(b+'/authorization.json'),manifest=read(b+'/manifest.json');assert.equal(candidate.id,rec.debateId);
+const graph=read(b+'/rendering/expected-section-distribution.json');
+const tagCount=candidate.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean))).reduce((n,c)=>n+c.tags.length,0);
+const slug=name=>name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const requiredReaderDisclosure=read(rec.readerScopeDisclosurePath).requiredReaderDisclosure;assert.equal(requiredReaderDisclosure,auth.availableRecordingScope.requiredReaderDisclosure);
+const cfg={candidate,requiredReaderDisclosure,origin:arg('--origin'),prefix:arg('--prefix'),year:auth.identity.eventYear,videoId:auth.identity.videoId,modelLabel:manifest.modelSettings.displayLabel,tagCount,people:['pro','con'].map(s=>({name:candidate.sides[s].speaker,slug:slug(candidate.sides[s].speaker)})),graph:{sectionSideScores:graph.sectionSideScores,minimum:graph.minimum,maximum:graph.maximum,buckets:Object.entries(graph.buckets).map(([range,count])=>({range,count}))}};
+assert(/^https?:\/\//.test(cfg.origin));assert(/^[a-z0-9-]+$/.test(cfg.prefix));const out=arg('--output');assert(out.startsWith('.assessment-cache/controllers/'));assert(!fs.existsSync(out));
+const template=fs.readFileSync('.assessment-cache/controllers/browser-replay-template.js','utf8');assert.equal(template.split('__CONFIG__').length,2);fs.mkdirSync('output/playwright',{recursive:true});fs.writeFileSync(out,template.replace('__CONFIG__',JSON.stringify(cfg)),{flag:'wx'});console.log(JSON.stringify({output:out,debateNumber:rec.debateNumber,cards:candidate.sections.flatMap(s=>s.exchanges.flatMap(e=>[e.pro,e.con].filter(Boolean))).length,tagCount,total:graph.sectionSideScores}));
