@@ -1,0 +1,6 @@
+{
+  "status": "evidence-check-recovered-before-push",
+  "firstPublicationCommit": "6c2cf83fdde61d1b339e887b82a1f4254045e1dc",
+  "finding": "The broad secret scan matched sk- embedded in three existing supertask/risk move identifiers, not credentials. The shell proceeded to a local commit after this assertion, so the final audit record had not yet been written. Nothing was pushed.",
+  "repair": "Use a token-boundary-aware credential scan; independently verify all exact index references; add the completed audit in a follow-up commit after another immediate precommit check. Frozen assessment and publication content are unchanged."
+}
