@@ -13229,5 +13229,58 @@ export const debateSummaries = [
         "title": "Moral uncertainty and the future"
       }
     ]
+  },
+  {
+    "id": "lennox-tooley-atheism-christianity-2013",
+    "number": "278",
+    "title": "John Lennox vs Michael Tooley — Atheism and Christianity",
+    "year": 2013,
+    "label": "Atheism and Christianity",
+    "date": "2026-09-30",
+    "duration": "1 hr 38 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=s3_CCw2e__I",
+    "motion": "Is Christianity more reasonable than atheism?",
+    "summary": "Tooley wins by separating atheism from anti-Christian critique and pressing evil and prophecy; Lennox offers strong compatibility replies but leaves key positive warrants underdeveloped.",
+    "topicCategory": "god-theism-atheism",
+    "sides": {
+      "pro": {
+        "name": "Christianity defended",
+        "speaker": "John Lennox",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Atheism defended",
+        "speaker": "Michael Tooley",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 73,
+      "con": 83,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Comparative standards and worldview scope"
+      },
+      {
+        "title": "Evil, freedom and final justice"
+      },
+      {
+        "title": "Science and rational inquiry"
+      },
+      {
+        "title": "Ultimate explanation and complexity"
+      },
+      {
+        "title": "Biblical history and reliability"
+      },
+      {
+        "title": "Prophecy and supernatural evidence"
+      },
+      {
+        "title": "Morality, atonement and meaning"
+      }
+    ]
   }
 ];

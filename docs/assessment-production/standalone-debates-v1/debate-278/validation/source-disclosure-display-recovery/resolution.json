@@ -1,0 +1,27 @@
+{
+  "status": "passed-complete-browser-replay-after-scope-display-fix",
+  "completedAt": "2026-09-30T06:05:06.179257+00:00",
+  "changes": [
+    "Registered the existing frozen reader disclosure without changing its bytes.",
+    "Allowed the page generator to authenticate disclosures without a slug only when debate number and video identity match both registry and production URL.",
+    "Browser assertion reads the exact authorized disclosure.",
+    "Reopened browser after page generation to remove stale cached homepage."
+  ],
+  "identityFixtures": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/source-disclosure-display-recovery/identity-fixtures.json",
+    "sha256": "4cc6d370bf835fbc8dc92798b725760fc5aa0eb2cdc2921f7a22bc04ccc9a555",
+    "bytes": 482
+  },
+  "scopeObservations": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/rendering/source-scope-observations.json",
+    "sha256": "07ed2f20a942352c41e2f8689865cc4742c26699757a4c4e3f47ee901e7ef7bc",
+    "bytes": 1213
+  },
+  "finalBrowser": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/rendering/local-final-observations.json",
+    "sha256": "41b61278be84f932e9fd305baec9f7dca1880fa7e44987b4e1cfb9c17bb770a4",
+    "bytes": 11670
+  },
+  "frozenAssessmentChecks": 22,
+  "assessmentChanged": false
+}

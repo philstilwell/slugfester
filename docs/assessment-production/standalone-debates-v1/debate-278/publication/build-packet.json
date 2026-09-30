@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "278",
+  "debateId": "lennox-tooley-atheism-christianity-2013",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/inventory/inventory.json",
+      "sha256": "9bdd08dc378dbf7d4ccb298bead1899124990369a485b0b0fd0a2f45b2c32a8c",
+      "bytes": 154857
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/score-pass/output.json",
+      "sha256": "87961d58cf9a7d901c025bd30926115028452eff8c257e1b8e1c6b65ef471e66",
+      "bytes": 20829
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/skeleton.json",
+      "sha256": "00ddba4a469b5d8edbb3a3d5162e38fb52ba9bdb2afa4c852dc3583c393b18d1",
+      "bytes": 14964
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/reference-metrics.json",
+      "sha256": "88180e523df60290cc7f722097c93cf4310905d380f690cd945f5ec1056498d8",
+      "bytes": 27933
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

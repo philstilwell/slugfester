@@ -1,0 +1,10 @@
+{
+  "status": "verified-literal-read-prefix-transport-adaptation",
+  "debateNumber": "278",
+  "controller": ".assessment-cache/controllers/authenticate-worker.py",
+  "beforeSha256": "89e5976248c23e473c344622869bc4dd05a9308babb283eb692c30051ada0ea4",
+  "afterSha256": "fd0d857e0bc9dcfc301af66a9f2ee5672a00293a5a8bd8e57eaa1ab3bf2cfbcb",
+  "reason": "Adjudicator full reads use nl -ba line-number prefixes. Original matcher required unprefixed whole-line equality and falsely reported missing lines.",
+  "change": "Retain exact original matches; additionally remove only a leading optional-space decimal line number followed by a tab. Require the resulting entire source line to match exactly. No source, candidate, judgment or frozen plan changed.",
+  "fixture": "Line-number prefix removed while source indentation retained; unnumbered matching unchanged."
+}

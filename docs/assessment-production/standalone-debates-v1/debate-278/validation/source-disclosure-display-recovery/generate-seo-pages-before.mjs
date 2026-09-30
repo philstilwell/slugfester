@@ -1,0 +1,820 @@
+import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { publishedDebates as debates } from "../src/data/debates.js";
+import { topicCategoryDefinitions } from "../src/data/topics.js";
+import { avatarsForSpeakerText } from "../src/data/interlocutors.js";
+import { referenceDefinitions, referenceFromUrl } from "../src/data/references.js";
+import { renderInsightsContent } from "../src/data/insights.js";
+import { biographyFor, renderBiography } from "../src/data/interlocutor-bios.js";
+import { renderInsightsMethodsContent } from "../src/data/insights-methods.js";
+import { initialPageContent } from "./lib/initial-page-content.mjs";
+import { pageHistoryEntry, compactPageDates } from "./lib/seo-page-history.mjs";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_IMAGE_ALT,
+  DEFAULT_IMAGE_HEIGHT,
+  DEFAULT_IMAGE_TYPE,
+  DEFAULT_IMAGE_WIDTH,
+  DEFAULT_ROBOTS,
+  DEFAULT_TITLE,
+  SITE_LOCALE,
+  SITE_THEME_COLOR,
+  SITE_NAME,
+  absoluteUrl,
+  backendPath,
+  backendSeo,
+  insightsPath,
+  insightsSeo,
+  insightsMethodsSeo,
+  correctionsPath,
+  correctionsSeo,
+  assessmentPath,
+  assessmentSeo,
+  debatePath,
+  debateSeo,
+  debateTitleWithYear,
+  interlocutorPath,
+  interlocutorSeo,
+  landingSeo,
+  notFoundSeo,
+  referencePath,
+  referenceSeo,
+  rankingsPath,
+  rankingsSeo,
+  searchPath,
+  searchSeo,
+  topicsPath,
+  topicsSeo,
+  topicPath,
+  topicSeo,
+  withPageUpdate
+} from "../src/seo.js";
+
+const root = dirname(fileURLToPath(new URL("../package.json", import.meta.url)));
+const checkOnly = process.argv.includes("--check");
+// Publish only explicitly authorized reader-facing scope, not internal source/scoring provenance.
+const standaloneRegistry = JSON.parse(await readFile(join(root, "docs/assessment-production/standalone-debates-v1/registry.json"), "utf8"));
+const assessmentScopeDisclosures = new Map();
+for (const entry of standaloneRegistry.debates) {
+  if (!debates.some((debate) => debate.id === entry.debateId)) continue;
+  const scopePath = entry.readerScopeDisclosurePath ?? `${entry.root}/source/formal-rounds-authorization.json`;
+  if (entry.readerScopeDisclosurePath && scopePath !== `${entry.root}/source/reader-scope-disclosure.json`) {
+    throw new Error(`${entry.debateId}: public scope disclosure must stay in its own source directory`);
+  }
+  let scope;
+  try {
+    scope = JSON.parse(await readFile(join(root, scopePath), "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT" && !entry.readerScopeDisclosurePath) continue;
+    throw error;
+  }
+  const debate = debates.find((item) => item.id === entry.debateId);
+  if (scope.debateId !== debate.id || typeof scope.requiredReaderDisclosure !== "string" ||
+      !scope.requiredReaderDisclosure.trim() || !debate.sourceNote.includes(scope.requiredReaderDisclosure)) {
+    throw new Error(`${entry.debateId}: authorized public scope must match the frozen publication note`);
+  }
+  assessmentScopeDisclosures.set(debate.id, scope.requiredReaderDisclosure);
+}
+// Browser modules must change address together when their source or data changes.
+// Normalize the generated query strings before hashing to keep regeneration stable.
+const appPath = join(root, "src/app.js");
+const appSource = await readFile(appPath, "utf8");
+const seoPath = join(root, "src/seo.js");
+const seoSource = await readFile(seoPath, "utf8");
+const browserImportVersions = /(\.\/(?:data\/[^"'`?]+|seo\.js)\?v=)[^"'`]+/g;
+const normalizedApp = appSource.replace(browserImportVersions, "$1CONTENT_VERSION");
+const normalizedSeo = seoSource.replace(browserImportVersions, "$1CONTENT_VERSION");
+const browserSources = await Promise.all([
+  "src/styles.css", "src/data/topics.js", "src/data/assessment-process-guide.js", "src/data/debate-recommendation.js",
+  "src/data/interlocutors.js", "src/data/references.js", "src/data/reader-guides.js", "src/data/insights.js", "src/data/insights-methods.js", "src/data/interlocutor-bios.js"
+].map((path) => readFile(join(root, path), "utf8")));
+// Render first, then hash the final generated update dates and source together.
+const assetVersion = "CONTENT_VERSION";
+const landingAssetVersion = assetVersion;
+const interlocutorAssetVersion = assetVersion;
+const rankingsAssetVersion = assetVersion;
+const debateAssetVersion = assetVersion;
+const backendAssetVersion = assetVersion;
+
+function escapeHtml(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function jsonScript(value) {
+  if (!value) return "";
+  return JSON.stringify(value).replaceAll("<", "\\u003c");
+}
+
+function contentSecurityPolicy(structuredData = "") {
+  const structuredDataHash = structuredData
+    ? ` 'sha256-${createHash("sha256").update(structuredData).digest("base64")}'`
+    : "";
+
+  return [
+    "default-src 'self'",
+    `script-src 'self' https://static.cloudflareinsights.com${structuredDataHash}`,
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data:",
+    "font-src 'self'",
+    "connect-src 'self'",
+    "media-src 'none'",
+    "object-src 'none'",
+    "frame-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self' https://formsubmit.co",
+    "upgrade-insecure-requests"
+  ].join("; ");
+}
+
+function sentence(value = "") {
+  const text = String(value).trim();
+  return /[.!?]$/.test(text) ? text : `${text}.`;
+}
+
+function fallbackHeading(seo = {}) {
+  if (seo.heading) return seo.heading;
+  return String(seo.title || DEFAULT_TITLE).split(` | ${SITE_NAME}`)[0] || SITE_NAME;
+}
+
+function fallbackMarkup(seo, summary) {
+  const links = [
+    { href: "/", label: "Browse debates" },
+    { href: searchPath(), label: "Search scorecards" },
+    { href: topicsPath(), label: "Browse topics" },
+    { href: rankingsPath(), label: "Compare interlocutors" },
+    { href: backendPath(), label: "Read the assessment method" },
+    { href: insightsPath(), label: "Explore research insights" },
+    ...(seo.relatedLinks || [])
+  ];
+  const uniqueLinks = [
+    ...new Map(
+      links
+        .filter(({ href, label }) => href && label)
+        .map((link) => [String(link.href), link])
+    ).values()
+  ].slice(0, 25);
+
+  return `<main class="seo-fallback" id="main-content" data-initial-path="${escapeHtml(seo.canonicalPath || "")}">
+      <p class="eyebrow">${escapeHtml(SITE_NAME)}</p>
+      <h1>${escapeHtml(fallbackHeading(seo))}</h1>
+      <p>${escapeHtml(summary || seo.description || DEFAULT_DESCRIPTION)}</p>${seo.biography ? `\n      ${renderBiography({ name: seo.heading }, seo.biography, 2)}` : ""}
+      <nav aria-label="Explore Slugfester">
+        ${uniqueLinks
+          .map(({ href, label }) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
+          .join("\n        ")}
+      </nav>
+      <div class="initial-page-content">${initialPageContent(seo.canonicalPath)}</div>
+    </main>`;
+}
+
+function renderHtml(seo, noscriptText, pageAssetVersion = assetVersion) {
+  const canonicalUrl = seo.canonicalPath === null ? "" : absoluteUrl(seo.canonicalPath || "/");
+  const imageUrl = absoluteUrl(seo.imagePath || "/assets/slugfester-logo.jpg");
+  const imageAlt = seo.imageAlt || DEFAULT_IMAGE_ALT;
+  const imageWidth = seo.imageWidth || DEFAULT_IMAGE_WIDTH;
+  const imageHeight = seo.imageHeight || DEFAULT_IMAGE_HEIGHT;
+  const imageType = seo.imageType || DEFAULT_IMAGE_TYPE;
+  const robots = seo.robots || DEFAULT_ROBOTS;
+  const updatedTime = seo.updatedTime || seo.modifiedTime || seo.lastmod;
+  const structuredData = jsonScript(seo.jsonLd);
+  // Internal navigation keeps the original document policy, so every entry page
+  // must permit the approved recommendation and correction form destination.
+  const securityPolicy = contentSecurityPolicy(structuredData);
+  const articleMeta = [
+    seo.type === "article" && seo.articleSection
+      ? `<meta property="article:section" content="${escapeHtml(seo.articleSection)}">`
+      : "",
+    seo.type === "article" && seo.publishedTime
+      ? `<meta property="article:published_time" content="${escapeHtml(seo.publishedTime)}">`
+      : "",
+    seo.type === "article" && seo.modifiedTime
+      ? `<meta property="article:modified_time" content="${escapeHtml(seo.modifiedTime)}">`
+      : ""
+  ]
+    .filter(Boolean)
+    .join("\n    ");
+  const articleMetaBlock = articleMeta ? `${articleMeta}\n    ` : "";
+  const updatedMeta = updatedTime
+    ? `<meta property="og:updated_time" content="${escapeHtml(updatedTime)}">\n    `
+    : "";
+  const fallback = seo.canonicalPath === "/insights/data-and-methods/"
+    ? `<main class="insights-page" id="main-content" data-initial-path="/insights/data-and-methods/">${renderInsightsMethodsContent()}</main>`
+    : seo.canonicalPath === insightsPath()
+    ? `<main class="insights-page" id="main-content" data-initial-path="/insights/">${renderInsightsContent()}<p><a href="/">Back to debates</a> · <a href="/backend/">Assessment method</a></p></main>`
+    : fallbackMarkup(seo, noscriptText);
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="${escapeHtml(securityPolicy)}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
+    <meta name="robots" content="${escapeHtml(robots)}">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="author" content="${escapeHtml(SITE_NAME)}">
+    <meta name="application-name" content="${escapeHtml(SITE_NAME)}">
+    <meta name="apple-mobile-web-app-title" content="${escapeHtml(SITE_NAME)}">
+    <meta name="theme-color" content="${escapeHtml(SITE_THEME_COLOR)}">
+    <meta name="msapplication-TileColor" content="${escapeHtml(SITE_THEME_COLOR)}">
+    <meta name="msapplication-TileImage" content="/assets/icon-512.png">
+    <title>${escapeHtml(seo.title || DEFAULT_TITLE)}</title>
+${canonicalUrl ? `    <link rel="canonical" href="${escapeHtml(canonicalUrl)}">\n` : ""}    <meta property="og:site_name" content="${escapeHtml(SITE_NAME)}">
+    <meta property="og:locale" content="${escapeHtml(SITE_LOCALE)}">
+    <meta property="og:title" content="${escapeHtml(seo.title || DEFAULT_TITLE)}">
+    <meta property="og:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
+    <meta property="og:type" content="${escapeHtml(seo.type || "website")}">
+${canonicalUrl ? `    <meta property="og:url" content="${escapeHtml(canonicalUrl)}">\n` : ""}    ${updatedMeta}<meta property="og:image" content="${escapeHtml(imageUrl)}">
+    <meta property="og:image:secure_url" content="${escapeHtml(imageUrl)}">
+    <meta property="og:image:type" content="${escapeHtml(imageType)}">
+    <meta property="og:image:width" content="${escapeHtml(imageWidth)}">
+    <meta property="og:image:height" content="${escapeHtml(imageHeight)}">
+    <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
+    ${articleMetaBlock}<meta name="twitter:card" content="${escapeHtml(seo.twitterCard || "summary_large_image")}">
+    <meta name="twitter:title" content="${escapeHtml(seo.title || DEFAULT_TITLE)}">
+    <meta name="twitter:description" content="${escapeHtml(seo.description || DEFAULT_DESCRIPTION)}">
+    <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+    <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="128x128">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="mask-icon" href="/assets/favicon.svg" color="#d35d47">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="alternate" type="application/atom+xml" title="Slugfester new debate assessments" href="/feed.xml">
+    <link rel="stylesheet" href="/src/styles.css?v=${pageAssetVersion}">
+    ${structuredData ? `<script type="application/ld+json" id="seo-structured-data">${structuredData}</script>` : ""}
+  </head>
+  <body>
+    <div id="app">
+      ${fallback}
+    </div>
+    <noscript><p class="seo-noscript">The summaries, published assessment excerpts, and links above work without JavaScript. Interactive filtering, comparison graphs, and the complete critique controls require JavaScript.</p></noscript>
+    <script type="module" src="/src/app.js?v=${pageAssetVersion}"></script>
+  </body>
+</html>
+`;
+}
+
+function outputPathForRoute(pathname) {
+  if (pathname === "/") return join(root, "index.html");
+  return join(root, pathname.replace(/^\/|\/$/g, ""), "index.html");
+}
+
+function latestDate() {
+  return debates
+    .map((debate) => debate.date)
+    .sort()
+    .at(-1);
+}
+
+function sitemapXml(urls) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (url) => `  <url>
+    <loc>${escapeHtml(url.loc)}</loc>
+    <lastmod>${escapeHtml(url.lastmod)}</lastmod>
+  </url>`
+  )
+  .join("\n")}
+</urlset>
+`;
+}
+
+function escapeXml(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+}
+
+function atomFeed(debates) {
+  const recent = [...debates]
+    .sort((first, second) => Number(second.number) - Number(first.number))
+    .slice(0, 25);
+  const updated = `${latestDate()}T12:00:00-04:00`;
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Slugfester new debate assessments</title>
+  <subtitle>Recently published transcript-grounded debate scorecards.</subtitle>
+  <id>${escapeXml(absoluteUrl("/"))}</id>
+  <link href="${escapeXml(absoluteUrl("/feed.xml"))}" rel="self" type="application/atom+xml"/>
+  <link href="${escapeXml(absoluteUrl("/"))}" rel="alternate" type="text/html"/>
+  <updated>${escapeXml(updated)}</updated>
+${recent
+  .map((debate) => {
+    const url = absoluteUrl(debatePath(debate));
+    const entryUpdated = `${debate.date}T12:00:00-04:00`;
+    return `  <entry>
+    <title>${escapeXml(`Debate ${debate.number}: ${debateTitleWithYear(debate)}`)}</title>
+    <id>${escapeXml(url)}</id>
+    <link href="${escapeXml(url)}" rel="alternate" type="text/html"/>
+    <updated>${escapeXml(entryUpdated)}</updated>
+    <summary>${escapeXml(debate.summary)}</summary>
+  </entry>`;
+  })
+  .join("\n")}
+</feed>
+`;
+}
+
+function manifestJson() {
+  return `${JSON.stringify(
+    {
+      name: SITE_NAME,
+      short_name: SITE_NAME,
+      description: DEFAULT_DESCRIPTION,
+      start_url: "/",
+      scope: "/",
+      display: "standalone",
+      background_color: "#f4f8f7",
+      theme_color: SITE_THEME_COLOR,
+      icons: [
+        {
+          src: "/assets/favicon.png",
+          sizes: "128x128",
+          type: "image/png"
+        },
+        {
+          src: "/assets/apple-touch-icon.png",
+          sizes: "180x180",
+          type: "image/png"
+        },
+        {
+          src: "/assets/icon-192.png",
+          sizes: "192x192",
+          type: "image/png",
+          purpose: "any"
+        },
+        {
+          src: "/assets/icon-512.png",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "any"
+        }
+      ],
+      screenshots: [
+        {
+          src: "/assets/social-card.png",
+          sizes: "1200x630",
+          type: "image/png",
+          form_factor: "wide"
+        }
+      ]
+    },
+    null,
+    2
+  )}\n`;
+}
+
+const pageOutputs = new Map();
+pageOutputs.set(appPath, appSource.replace(browserImportVersions, (_, prefix) => `${prefix}${assetVersion}`));
+pageOutputs.set(seoPath, normalizedSeo);
+const historyPath = join(root, "scripts/seo-page-history.json");
+let previousHistory = {};
+try { previousHistory = JSON.parse(await readFile(historyPath, "utf8")); }
+catch (error) { if (error.code !== "ENOENT") throw error; }
+const nextHistory = {};
+const today = new Date().toISOString().slice(0, 10);
+const sitemapUrls = [];
+const latest = latestDate();
+
+function debateSummary(debate) {
+  return {
+    id: debate.id,
+    number: debate.number,
+    title: debate.title,
+    year: debate.year,
+    label: debate.label,
+    date: debate.date,
+    duration: debate.duration,
+    youtubeUrl: debate.youtubeUrl,
+    motion: debate.motion,
+    summary: debate.summary,
+    topicCategory: debate.topicCategory,
+    sides: debate.sides,
+    score: debate.score,
+    sections: debate.sections.map((section) => ({ title: section.title }))
+  };
+}
+
+function debateParticipantsBySide(debate) {
+  return {
+    pro: avatarsForSpeakerText(debate.sides.pro.speaker),
+    con: avatarsForSpeakerText(debate.sides.con.speaker)
+  };
+}
+
+function tagSummaryForSide(debate, sideKey) {
+  return debate.sections.reduce(
+    (totals, section) =>
+      section.exchanges.reduce((sectionTotals, exchange) => {
+        const move = exchange[sideKey];
+        if (!move) return sectionTotals;
+
+        sectionTotals.scoredMoves += 1;
+        (move.tags || []).forEach((tag) => {
+          if (tag.type === "fallacy") sectionTotals.fallacies += 1;
+          if (tag.type === "bias") sectionTotals.biases += 1;
+        });
+        return sectionTotals;
+      }, totals),
+    { scoredMoves: 0, fallacies: 0, biases: 0 }
+  );
+}
+
+function debateAnalytics(debate) {
+  return {
+    ...(debate.interlocutorRankingEligible === false
+      ? { interlocutorRankingEligible: false }
+      : {}),
+    sectionScores: debate.sections.flatMap((section) =>
+      [section.score?.pro, section.score?.con].filter(Number.isFinite)
+    ),
+    tagSummary: {
+      pro: tagSummaryForSide(debate, "pro"),
+      con: tagSummaryForSide(debate, "con")
+    }
+  };
+}
+
+function sectionScoreExample(record, direction) {
+  const moves = record.section.exchanges
+    .map((exchange) => exchange[record.sideKey])
+    .filter((move) => move && Number.isFinite(move.score));
+  const representativeMove = [...moves]
+    .sort((first, second) =>
+      direction === "top" ? second.score - first.score : first.score - second.score
+    )[0];
+
+  return {
+    debateId: record.debate.id,
+    debateNumber: record.debate.number,
+    debateTitle: record.debate.title,
+    debateYear: record.debate.year,
+    sectionTitle: record.section.title,
+    speaker: record.debate.sides[record.sideKey].speaker,
+    score: record.score,
+    representativeMove: representativeMove?.words || "",
+    representativeMoveScore: representativeMove?.score,
+    scoreFeatures: critiqueScoreFeatures(representativeMove?.critique)
+  };
+}
+
+function critiqueScoreFeatures(value = "") {
+  const critique = String(value).replace(/\s+/g, " ").trim();
+  if (!critique) return { strength: "", limitation: "" };
+
+  const structuredStrength = critique.match(/Strongest feature:\s*(.*?)\s*Principal limitation:/i)?.[1];
+  const structuredLimitation = critique.match(/Principal limitation:\s*(.*?)\s*Live burden:/i)?.[1];
+  if (structuredStrength && structuredLimitation) {
+    return {
+      strength: structuredStrength.trim(),
+      limitation: structuredLimitation.trim()
+    };
+  }
+
+  const sentences = critique.match(/[^.!?]+(?:[.!?]+|$)/g)?.map((sentence) => sentence.trim()) || [];
+  const contrastIndex = sentences.findIndex((sentence) =>
+    /^(?:but\b|yet\b|still\b|however\b|the problem\b|the weakness\b|some\b.*\b(?:benefit|lack|remain))/i.test(sentence)
+  );
+  const strengthEnd = contrastIndex > 0 ? Math.min(contrastIndex, 2) : Math.min(sentences.length, 2);
+  const limitationStart = contrastIndex >= 0 ? contrastIndex : Math.max(0, sentences.length - 2);
+
+  return {
+    strength: sentences.slice(0, strengthEnd).join(" "),
+    limitation: sentences.slice(limitationStart, limitationStart + 3).join(" ")
+  };
+}
+
+function sectionScoreExtremesForCorpus() {
+  const records = debates.flatMap((debate, debateIndex) =>
+    debate.sections.flatMap((section, sectionIndex) =>
+      ["pro", "con"]
+        .map((sideKey, sideIndex) => ({
+          debate,
+          debateIndex,
+          section,
+          sectionIndex,
+          sideKey,
+          sideIndex,
+          score: section.score?.[sideKey]
+        }))
+        .filter((record) => Number.isFinite(record.score))
+    )
+  );
+  const stableOrder = (first, second) =>
+    first.debateIndex - second.debateIndex ||
+    first.sectionIndex - second.sectionIndex ||
+    first.sideIndex - second.sideIndex;
+
+  return {
+    top: [...records]
+      .sort((first, second) => second.score - first.score || stableOrder(first, second))
+      .slice(0, 3)
+      .map((record) => sectionScoreExample(record, "top")),
+    bottom: [...records]
+      .sort((first, second) => first.score - second.score || stableOrder(first, second))
+      .slice(0, 3)
+      .map((record) => sectionScoreExample(record, "bottom"))
+  };
+}
+
+function referenceAppearance(debate, section, sideKey, argument, tag) {
+  return {
+    debate: {
+      id: debate.id,
+      number: debate.number,
+      title: debate.title,
+      year: debate.year,
+      label: debate.label,
+      youtubeUrl: debate.youtubeUrl,
+      sides: debate.sides
+    },
+    section: { title: section.title },
+    sideKey,
+    side: debate.sides[sideKey],
+    argument: {
+      time: argument.time,
+      role: argument.role,
+      words: argument.words,
+      ...(argument.speaker ? { speaker: argument.speaker } : {})
+    },
+    tag: {
+      type: tag.type,
+      label: tag.label,
+      url: tag.url,
+      context: tag.context
+    }
+  };
+}
+
+pageOutputs.set(
+  join(root, "src/data/debate-summaries.js"),
+  `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const debateSummaries = ${JSON.stringify(debates.map(debateSummary), null, 2)};\n`
+);
+
+pageOutputs.set(
+  join(root, "src/data/debate-analytics.js"),
+  `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const debateAnalytics = ${JSON.stringify(Object.fromEntries(debates.map((debate) => [debate.id, debateAnalytics(debate)])))};\n`
+);
+
+pageOutputs.set(
+  join(root, "src/data/section-score-extremes.js"),
+  `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const sectionScoreExtremes = ${JSON.stringify(sectionScoreExtremesForCorpus())};\n`
+);
+
+debates.forEach((debate) => {
+  const disclosure = assessmentScopeDisclosures.get(debate.id);
+  const publicDetail = disclosure ? { ...debate, assessmentScopeDisclosure: disclosure } : debate;
+  pageOutputs.set(
+    join(root, "src/data/debate-details", `${debate.id}.js`),
+    `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const debate = ${JSON.stringify(publicDetail)};\n`
+  );
+});
+
+const referenceAppearances = new Map();
+
+debates.forEach((debate) => {
+  debate.sections.forEach((section) => {
+    section.exchanges.forEach((exchange) => {
+      ["pro", "con"].forEach((sideKey) => {
+        const argument = exchange[sideKey];
+        if (!argument) return;
+
+        (argument.tags || []).forEach((tag) => {
+          const reference = referenceFromUrl(tag.url);
+          if (!reference) return;
+
+          const key = `${reference.type}/${reference.slug}`;
+          const appearances = referenceAppearances.get(key) || [];
+          appearances.push(referenceAppearance(debate, section, sideKey, argument, tag));
+          referenceAppearances.set(key, appearances);
+        });
+      });
+    });
+  });
+});
+
+Object.entries(referenceDefinitions).forEach(([type, definitions]) => {
+  Object.keys(definitions).forEach((slug) => {
+    pageOutputs.set(
+      join(root, "src/data/reference-appearances", `${type}-${slug}.js`),
+      `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const referenceAppearances = ${JSON.stringify(referenceAppearances.get(`${type}/${slug}`) || [])};\n`
+    );
+  });
+});
+
+const interlocutorProfiles = new Map();
+
+debates.forEach((debate) => {
+  const isOneOnOne = ["pro", "con"].every(
+    (sideKey) => avatarsForSpeakerText(debate.sides[sideKey].speaker).length === 1
+  );
+  ["pro", "con"].forEach((sideKey) => {
+    avatarsForSpeakerText(debate.sides[sideKey].speaker).forEach((person) => {
+      const profile = interlocutorProfiles.get(person.name) || {
+        person,
+        appearances: 0,
+        latestDate: debate.date,
+        debates: []
+      };
+      if (!profile.debates.some((profileDebate) => profileDebate.id === debate.id)) {
+        profile.debates.push(debate);
+      }
+      if (isOneOnOne && debate.interlocutorRankingEligible !== false) {
+        profile.appearances += 1;
+      }
+      if (debate.date && (!profile.latestDate || debate.date > profile.latestDate)) {
+        profile.latestDate = debate.date;
+      }
+      interlocutorProfiles.set(person.name, profile);
+    });
+  });
+});
+
+function addPage(pathname, seo, noscriptText, fallbackLastmod = latest) {
+  if (seo.robots !== "noindex,follow") {
+    const debate = debates.find((item) => debatePath(item) === pathname);
+    const content = pathname === insightsPath() ? renderInsightsContent()
+      : pathname === "/insights/data-and-methods/" ? renderInsightsMethodsContent()
+      : initialPageContent(pathname);
+    const data = debate || (["/", rankingsPath(), backendPath()].includes(pathname) ? debates : null);
+    nextHistory[pathname] = pageHistoryEntry(previousHistory[pathname], { seo, noscriptText, content, data }, today);
+    seo = withPageUpdate(seo, nextHistory[pathname].modified);
+  } else {
+    seo = withPageUpdate(seo, nextHistory[seo.canonicalPath]?.modified);
+  }
+  const lastmod = seo.lastmod || seo.modifiedTime || fallbackLastmod;
+  const pageAssetVersion = pathname === "/"
+    ? landingAssetVersion
+    : pathname.startsWith("/debate/")
+      ? debateAssetVersion
+      : pathname.startsWith("/interlocutor/")
+        ? interlocutorAssetVersion
+        : pathname === backendPath()
+          ? backendAssetVersion
+          : pathname === rankingsPath()
+            ? rankingsAssetVersion
+            : assetVersion;
+  pageOutputs.set(outputPathForRoute(pathname), renderHtml(seo, noscriptText, pageAssetVersion));
+  if (seo.robots !== "noindex,follow") {
+    sitemapUrls.push({ loc: absoluteUrl(pathname), lastmod });
+  }
+}
+
+addPage(
+  "/",
+  landingSeo(debates),
+  "Slugfester lists YouTube debate transcript scorecards with argument scores, critique popovers, and fallacy or bias references."
+);
+
+addPage(
+  searchPath(),
+  searchSeo(debates),
+  "Search Slugfester debate scorecards by interlocutor and text."
+);
+
+addPage(
+  topicsPath(),
+  topicsSeo(debates),
+  "Browse Slugfester debate scorecards by recurring topic clusters."
+);
+
+addPage(
+  rankingsPath(),
+  rankingsSeo(debates),
+  "Compare Slugfester interlocutor scores and topic-level reasoning flags across published debate assessments."
+);
+
+for (const topic of topicCategoryDefinitions) {
+  addPage(topicPath(topic), topicSeo(topic, debates), `${topic.description} Explore the published debate assessments, arguments and original sources.`);
+}
+
+[...interlocutorProfiles.values()]
+  .sort((a, b) => a.person.name.localeCompare(b.person.name))
+  .forEach(({ person, appearances, latestDate, debates: profileDebates }) => {
+    const bio = biographyFor(person);
+    if (!bio) throw new Error(`Missing biography for ${person.name}`);
+    addPage(
+      interlocutorPath(person),
+      interlocutorSeo(person, appearances, [latestDate, bio.reviewed].filter(Boolean).sort().at(-1), profileDebates, bio),
+      `${person.name}'s Slugfester profile includes score averages, opponents faced, topic performance, and linked debate scorecards.`
+    );
+  });
+
+addPage(
+  backendPath(),
+  backendSeo(),
+  "Backend explains Slugfester's full-transcript review, independent judgments, deterministic scoring, validation controls, update plans, and campaign compute estimate."
+);
+
+addPage("/insights/data-and-methods/", insightsMethodsSeo(), "Read the evidence, methods and limitations behind the seven studies.");
+addPage(insightsPath(), insightsSeo(), "Explore seven research findings, figures, limitations and links to the debates.");
+
+addPage(
+  correctionsPath(),
+  correctionsSeo(),
+  "Report a possible scorecard issue, recommend a debate for assessment, and review the public correction record."
+);
+
+addPage(
+  assessmentPath(),
+  assessmentSeo(),
+  "The old Assessment page name has been replaced by Backend."
+);
+
+debates.forEach((debate) => {
+  addPage(
+    debatePath(debate),
+    debateSeo(debate, debateParticipantsBySide(debate)),
+    `${sentence(debate.summary)} Overall side scores: ${debate.sides.pro.name} ${debate.score.pro}; ${debate.sides.con.name} ${debate.score.con}. The full scorecard maps transcript-grounded claims, rebuttals, critiques, and timestamped sources.`
+  );
+});
+
+Object.entries(referenceDefinitions).forEach(([type, definitions]) => {
+  Object.entries(definitions).forEach(([slug, reference]) => {
+    addPage(
+      referencePath(type, slug),
+      referenceSeo(type, slug, reference),
+      `${reference.label}: ${reference.definition}`
+    );
+  });
+});
+
+pageOutputs.set(
+  join(root, "404.html"),
+  renderHtml(notFoundSeo(), "This Slugfester page could not be found.")
+);
+pageOutputs.set(
+  join(root, "robots.txt"),
+  `User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /tests/
+Disallow: /docs/assessment-production/
+Disallow: /docs/assessment-ledgers/
+
+Sitemap: ${absoluteUrl("/sitemap.xml")}
+`
+);
+pageOutputs.set(join(root, "sitemap.xml"), sitemapXml(sitemapUrls));
+pageOutputs.set(join(root, "feed.xml"), atomFeed(debates));
+pageOutputs.set(join(root, "site.webmanifest"), manifestJson());
+pageOutputs.set(historyPath, `${JSON.stringify(nextHistory, null, 2)}\n`);
+const updateModule = `// Generated by scripts/generate-seo-pages.mjs. Do not edit directly.\nexport const pageUpdates = ${JSON.stringify(compactPageDates(nextHistory))};\n`;
+pageOutputs.set(join(root, "src/data/page-updates.js"), updateModule);
+const finalAssetVersion = createHash("sha256")
+  .update(JSON.stringify([normalizedApp, normalizedSeo, browserSources, updateModule, debates, [...assessmentScopeDisclosures], await readFile(fileURLToPath(import.meta.url), "utf8")]))
+  .digest("hex").slice(0, 16);
+for (const [path, content] of pageOutputs) {
+  pageOutputs.set(path, content.replaceAll("CONTENT_VERSION", finalAssetVersion));
+}
+
+async function ensureMatches(file, expected) {
+  let actual = "";
+  try {
+    actual = await readFile(file, "utf8");
+  } catch {
+    throw new Error(`${file} is missing`);
+  }
+
+  if (actual !== expected) {
+    throw new Error(`${file} is out of date; run npm run seo`);
+  }
+}
+
+if (!checkOnly) {
+  await rm(join(root, "debate"), { recursive: true, force: true });
+  await rm(join(root, "reference"), { recursive: true, force: true });
+  await rm(join(root, "topics"), { recursive: true, force: true });
+  await rm(join(root, "rankings"), { recursive: true, force: true });
+  await rm(join(root, "interlocutor"), { recursive: true, force: true });
+  await rm(join(root, "backend"), { recursive: true, force: true });
+  await rm(join(root, "corrections"), { recursive: true, force: true });
+  await rm(join(root, "assessment"), { recursive: true, force: true });
+  await rm(join(root, "src/data/debate-details"), { recursive: true, force: true });
+  await rm(join(root, "src/data/reference-appearances"), { recursive: true, force: true });
+}
+
+for (const [file, content] of pageOutputs) {
+  if (checkOnly) {
+    await ensureMatches(file, content);
+  } else {
+    await mkdir(dirname(file), { recursive: true });
+    await writeFile(file, content);
+  }
+}
+
+console.log(`${checkOnly ? "Validated" : "Generated"} ${pageOutputs.size} SEO file${pageOutputs.size === 1 ? "" : "s"}.`);

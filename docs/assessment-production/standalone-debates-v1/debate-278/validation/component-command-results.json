@@ -1,0 +1,55 @@
+[
+  {
+    "command": [
+      "node",
+      "scripts/validate-debates.mjs"
+    ],
+    "exitCode": 0,
+    "log": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/production-registered.log",
+      "sha256": "11969497f0df8cbafcb157a556b92a744dca7e8d3ce0b118d7e315471a676d54",
+      "bytes": 23
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/validate-corpus-transcripts.mjs"
+    ],
+    "exitCode": 0,
+    "log": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/corpus-final.log",
+      "sha256": "ffc6341d028820fc65847b0c65524034e04267ab08d16b1a963fcf1a3f343896",
+      "bytes": 151
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/generate-seo-pages.mjs",
+      "--check"
+    ],
+    "exitCode": 0,
+    "log": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/generated-final.log",
+      "sha256": "3e6872e88f2754422248bc2ddcc013de11f528491623ea2fd7c0c60ebfd63b51",
+      "bytes": 25
+    }
+  },
+  {
+    "command": [
+      "node",
+      "scripts/audit-assessment-production-standalone-v1.mjs",
+      "--audit",
+      "--debate",
+      "278",
+      "--repository-only"
+    ],
+    "exitCode": 0,
+    "log": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/standalone-repository.log",
+      "sha256": "f4452f3147043bd962f45304c900f67f9bfae6e9c4b250fd6e253177d935c7f1",
+      "bytes": 245
+    }
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "publication",
+  "debateNumber": "278",
+  "debateId": "lennox-tooley-atheism-christianity-2013",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/contract.md",
+      "sha256": "e2000d502c7634202dcf6ab3ab59260b5432a3ebaef9b88dfee02a2f263c3787",
+      "bytes": 8246
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/build-packet.json",
+      "sha256": "ff5ba5387a95b2805373f764164ad6cea0b62b053f0e81edbeedf69b38224937",
+      "bytes": 1557
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/skeleton.json",
+      "sha256": "00ddba4a469b5d8edbb3a3d5162e38fb52ba9bdb2afa4c852dc3583c393b18d1",
+      "bytes": 14964
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/inventory/inventory.json",
+      "sha256": "9bdd08dc378dbf7d4ccb298bead1899124990369a485b0b0fd0a2f45b2c32a8c",
+      "bytes": 154857
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/final-ledger/final-ledger.json",
+      "sha256": "9f04d799fda9d59b74ab55bd100a883ad3a98688034b8057f5e3addacb96a241",
+      "bytes": 343033
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/score-pass/output.json",
+      "sha256": "87961d58cf9a7d901c025bd30926115028452eff8c257e1b8e1c6b65ef471e66",
+      "bytes": 20829
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/inventory/procedural-skill-snapshot.md",
+      "sha256": "38c2cccaa78f6afe284f3dafed19ae29650ad6336b710be48e18a8aa14139733",
+      "bytes": 5145
+    },
+    {
+      "path": ".assessment-cache/captions/s3_CCw2e__I/indexed-transcript.txt",
+      "sha256": "72ec6d5e364c5e3932c2f05662e9f3f2a16e51e643991eb542bde211fd02649b",
+      "bytes": 160932
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/source/assessment-source-notes.md",
+      "sha256": "62f0a7901c396454800a95ce99b01af8d1ce5de2d086bb437e8b5c15a0298874",
+      "bytes": 5252
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/source/source-lock.json",
+      "sha256": "867e2219d1f34ba78a678c1d4590a1ad44094dd9f987c63628c6916b05fe1a7a",
+      "bytes": 5894
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/reference-metrics.json",
+      "sha256": "88180e523df60290cc7f722097c93cf4310905d380f690cd945f5ec1056498d8",
+      "bytes": 27933
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/check-publication.mjs",
+      "sha256": "941ea7c2b11c8d9189d6251eb767537435c86d13e76166f566dc28437cdce6e4",
+      "bytes": 9218
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-278/publication/first-submission-parts.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-278/publication/first-submission-parts.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-278/publication/first-submission-parts.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

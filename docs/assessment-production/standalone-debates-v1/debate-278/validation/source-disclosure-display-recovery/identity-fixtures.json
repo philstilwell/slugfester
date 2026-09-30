@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "positiveCases": 2,
+  "negativeCases": 6,
+  "sourceExpression": "scope.debateId === debate.id || (\n    scope.debateId === undefined && scope.debateNumber === debate.number &&\n    scope.videoId === entry.videoId &&\n    scope.videoId === new URL(debate.youtubeUrl).searchParams.get(\"v\")\n  )",
+  "policy": "Exact slug or, only when absent, matching number plus both registry and canonical video identity. Frozen disclosure wording remains unchanged."
+}

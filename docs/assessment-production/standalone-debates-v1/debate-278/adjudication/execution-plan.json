@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-isolated-worker-execution-plan",
+  "status": "frozen-before-execution",
+  "phase": "adjudication",
+  "debateNumber": "278",
+  "debateId": "lennox-tooley-atheism-christianity-2013",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "allowedInputs": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/adjudication/contract.md",
+      "sha256": "bc56e91d10a984ddb0c293fe1d8dcc6b0f1c648d99efae877a7c7215b084ba07",
+      "bytes": 2999
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/adjudication/packet.json",
+      "sha256": "8cb3f74be8c9b4bc19be29c3f848543c37c9077668d27329091f8a133f01a9e8",
+      "bytes": 97276
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/inventory/inventory.json",
+      "sha256": "9bdd08dc378dbf7d4ccb298bead1899124990369a485b0b0fd0a2f45b2c32a8c",
+      "bytes": 154857
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/inventory/procedural-skill-snapshot.md",
+      "sha256": "38c2cccaa78f6afe284f3dafed19ae29650ad6336b710be48e18a8aa14139733",
+      "bytes": 5145
+    },
+    {
+      "path": ".assessment-cache/captions/s3_CCw2e__I/indexed-transcript.txt",
+      "sha256": "72ec6d5e364c5e3932c2f05662e9f3f2a16e51e643991eb542bde211fd02649b",
+      "bytes": 160932
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/source/assessment-source-notes.md",
+      "sha256": "62f0a7901c396454800a95ce99b01af8d1ce5de2d086bb437e8b5c15a0298874",
+      "bytes": 5252
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/source/source-lock.json",
+      "sha256": "867e2219d1f34ba78a678c1d4590a1ad44094dd9f987c63628c6916b05fe1a7a",
+      "bytes": 5894
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/audio/audio-verification.json",
+      "sha256": "767a792699c697c2f014d89165681456d8d898760c96b6ef435370154f7e7f38",
+      "bytes": 2422
+    },
+    {
+      "path": "docs/reassessment-rubric-v2.1.md",
+      "sha256": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+      "bytes": 6634
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/adjudication/validator-excerpt.txt",
+      "sha256": "cf089f887a47ca233698d5063e70babdc664d249447cbde1b60fd8581f5ef9a0",
+      "bytes": 1823
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/adjudication/check-adjudication.mjs",
+      "sha256": "a59ada5bf2bdddb226ed09837c473e1d00a62dd5ea0a971104903f72b020a57d",
+      "bytes": 829
+    }
+  ],
+  "fullReadRequiredForAllAllowedInputs": true,
+  "outputPath": "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-278/adjudication/output.json",
+  "allowedOutputPaths": [
+    "/Users/philstilwell/.codex/workspaces/slugfester-debate-274/docs/assessment-production/standalone-debates-v1/debate-278/adjudication/output.json"
+  ],
+  "portableOutputPath": "docs/assessment-production/standalone-debates-v1/debate-278/adjudication/output.json",
+  "attempts": 1,
+  "retries": 0,
+  "directIncrementalCostUsd": 0,
+  "instructions": "Confirm absolute destination and fully read every allowlisted input without truncation. Send checkpoint and await authenticated reading release. Build the actual unsaved candidate in small persistent-memory chunks. Validate through the allowed stdin checker; emit the complete checked unsaved JSON for controller source/editorial review. Await separate submission release, save the approved bytes once, then stop. No candidate temporary files or other inputs.",
+  "isolation": "Fresh subscription context, fork none, protocol-restricted disjoint inputs/output; no OS sandbox claimed."
+}

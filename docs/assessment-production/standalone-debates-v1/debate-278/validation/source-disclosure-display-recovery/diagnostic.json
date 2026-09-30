@@ -1,0 +1,39 @@
+{
+  "status": "scope-identity-compatibility-fix-awaiting-replay",
+  "debateNumber": "278",
+  "problem": "The existing site renders explicitly registered scope, not full sourceNote. The already-frozen reader disclosure was unregistered and identifies its debate by number plus video ID instead of slug.",
+  "fix": "Preserve frozen reader disclosure bytes; register its path, support exact number-plus-video identity only when slug is absent, and assert the complete authorized disclosure in the browser. No assessment prose or scores changed.",
+  "preservedFailure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/source-disclosure-display-recovery/first-browser-failure.log",
+    "sha256": "1c45c665fabd705f7d14d8b8bd5fa3bf79458a5a960c53c0c59d2e429d8287b2",
+    "bytes": 50
+  },
+  "preservedControllers": [
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/source-disclosure-display-recovery/prepare-browser-replay.mjs",
+      "sha256": "2a9c1e048dd5cc67efa5469e68b9d9184f1ad1116604715dd0d64fdbd3cfd1e0",
+      "bytes": 2078
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/source-disclosure-display-recovery/browser-replay-template.js",
+      "sha256": "7e62ba66588c85b472282075de44137dd15518784c1373c110f1f1ca4a151307",
+      "bytes": 11094
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/source-disclosure-display-recovery/debate278-local-browser.js",
+      "sha256": "9ba909f50a652cc8c8a44163b59b497c1a895d509243297e4bf8f988efbcd02a",
+      "bytes": 74897
+    },
+    {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-278/validation/source-disclosure-display-recovery/generate-seo-pages-before.mjs",
+      "sha256": "0657cafc42464979bf9ddd6e4526175d9dd294864dd3a7f738373aa37f21096e",
+      "bytes": 31675
+    }
+  ],
+  "disclosure": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/source/reader-scope-disclosure.json",
+    "sha256": "75493c6589ec875557db10f6f4b9f579bb0787f027999af8944d6f4c300fe86b",
+    "bytes": 453
+  },
+  "scoreChanges": 0
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-30T04:05:26.326243+00:00",
+  "userAuthorization": "User requested this recording and explicitly approved assessment of the available published recording after disclosure of the apparently missing Lennox closing. Routine source checks, isolated reviewers, permitted repairs and checked publication remain authorized; no repeated common approvals are required.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-278",
+    "head": "051cc8f66261f97ee1a53369a391e8fdc59b0011",
+    "localMain": "051cc8f66261f97ee1a53369a391e8fdc59b0011",
+    "originMain": "051cc8f66261f97ee1a53369a391e8fdc59b0011",
+    "clean": true,
+    "isolationReason": "Reused the clean free separate clone after the prior debate was completed; fetched and verified HEAD/main/origin/main equality before creating this topic branch. Source screening and the user-approved source-scope decision precede this freeze."
+  },
+  "identity": {
+    "debateNumber": "278",
+    "debateId": "lennox-tooley-atheism-christianity-2013",
+    "videoId": "s3_CCw2e__I",
+    "canonicalUrl": "https://www.youtube.com/watch?v=s3_CCw2e__I",
+    "sourceTitle": "Michael Tooley vs. John Lennox",
+    "eventYear": 2013,
+    "title": "John Lennox vs Michael Tooley — Atheism and Christianity (2013)",
+    "label": "Atheism and Christianity",
+    "topicCategory": "god-theism-atheism",
+    "motion": "Is Christianity more reasonable than atheism?",
+    "pro": {
+      "speaker": "John Lennox",
+      "position": "Christianity defended"
+    },
+    "con": {
+      "speaker": "Michael Tooley",
+      "position": "Atheism defended"
+    },
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": true,
+    "knownPaidCostEstimateUsd": 0.0186446938,
+    "maximumPossiblePaidCostEstimateUsd": 0.0186446938,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "currentPlanEstimateUsd": 0.0186446938,
+    "audioVerificationPolicy": "Freeze and report the complete cumulative estimate before any required paid audio checks; no paid retry is authorized for this debate.",
+    "reportedFullFallbackEstimateUsd": 0.61,
+    "successfulPaidCalls": 1
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-278",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/lennox-tooley-atheism-christianity-2013.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "generated site output for this addition"
+  ],
+  "creditConstraint": {
+    "useExtraCredits": false,
+    "automaticResetPermitted": false,
+    "actionIfIncludedUsageExhausted": "Stop before further model work and allow the user to trigger their available reset."
+  },
+  "availableRecordingScope": {
+    "protocolId": "editor-approved-available-recording-v1",
+    "explicitDebateSpecificApproval": true,
+    "videoId": "s3_CCw2e__I",
+    "approvedAt": "2026-09-30T04:05:26.326243+00:00",
+    "userApproval": "Yes. Don’t ask for common approvals again. This answers the request to assess the available recording, disclose the apparently missing Lennox closing, and avoid penalizing either speaker for missing replies.",
+    "assessedWindow": {
+      "startMs": 5759,
+      "endMs": 5877080,
+      "durationMs": 5871321
+    },
+    "fullSuppliedRecordingCovered": true,
+    "unabridgedEventCompletenessEstablished": false,
+    "requiredReaderDisclosure": "The available recording ends after Michael Tooley’s closing remarks. A contemporary account also describes a closing statement by John Lennox, which is absent from the versions located. This assessment covers the available recording; neither speaker is penalized for material or replies missing from it.",
+    "restrictions": [
+      "Do not claim the unabridged event was assessed.",
+      "Do not infer concession, evasion, failure to answer or absence of an argument from the missing closing.",
+      "Do not invent or reconstruct missing closing words from the news report.",
+      "Do not reuse any earlier debate’s scope exception."
+    ],
+    "changedRubricOrScoreRules": false,
+    "newPaidRetryAuthority": false
+  }
+}

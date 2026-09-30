@@ -1,0 +1,20 @@
+{
+  "status": "passed-exact-transport-normalization",
+  "debateNumber": "278",
+  "initialSavedBytes": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/first-saved-parts-extra-newline.json",
+    "sha256": "923f76d89822b1482d56cd3e26256efe7917115850766f9fe5d396f8f3cc0778",
+    "bytes": 60616
+  },
+  "reviewedCandidateBytes": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-278/publication/first-submission-parts.json",
+    "sha256": "35b5537fbf66e31e41d9be8b85a45e50230bedf6376ade6f7156a049057eadfa",
+    "bytes": 60615
+  },
+  "scope": "The worker initial Add File patch added one unintended terminal blank newline. Worker removed exactly that byte before root authentication. Original bytes reconstructed and preserved from exact released content plus one newline; no prose or JSON value changed. Root independently verified final bytes against pre-save release. This is transport normalization, not another model attempt.",
+  "originalReconstructedFromAuthenticatedToolRecord": true,
+  "jsonEquality": true,
+  "removedByteCount": 1,
+  "assessmentChanges": 0,
+  "proseChanges": 0
+}
