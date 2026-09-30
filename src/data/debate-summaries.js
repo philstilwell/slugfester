@@ -13382,5 +13382,49 @@ export const debateSummaries = [
         "title": "Meaning, redemption, and closing cases"
       }
     ]
+  },
+  {
+    "id": "giunta-dillahunty-jesus-resurrection-2016",
+    "number": "281",
+    "title": "Blake Giunta vs Matt Dillahunty — Did Jesus Rise from the Dead?",
+    "year": 2016,
+    "label": "Resurrection and Historical Evidence",
+    "date": "2026-09-30",
+    "duration": "2 hr 33 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3R4DYhpvNzc",
+    "motion": "Did Jesus rise from the dead?",
+    "summary": "Dillahunty wins by separating early proclamation from resurrection, while Giunta offers substantial historical and Bayesian replies that leave important evidential bridges unresolved.",
+    "topicCategory": "scripture-jesus-resurrection",
+    "sides": {
+      "pro": {
+        "name": "Jesus rose from the dead",
+        "speaker": "Blake Giunta",
+        "color": "teal"
+      },
+      "con": {
+        "name": "Resurrection is unproven and probably legendary",
+        "speaker": "Matt Dillahunty",
+        "color": "coral"
+      }
+    },
+    "score": {
+      "pro": 77,
+      "con": 84,
+      "winner": "con"
+    },
+    "sections": [
+      {
+        "title": "Early testimony and historical access"
+      },
+      {
+        "title": "Sincerity, legend, and alternative explanations"
+      },
+      {
+        "title": "Probability, method, and supernatural inference"
+      },
+      {
+        "title": "Theological fit and divine hiddenness"
+      }
+    ]
   }
 ];

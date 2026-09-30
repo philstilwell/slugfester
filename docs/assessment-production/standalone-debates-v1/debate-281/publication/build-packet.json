@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-publication-assembly-packet",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "debateNumber": "281",
+  "debateId": "giunta-dillahunty-jesus-resurrection-2016",
+  "model": {
+    "model": "gpt-5.6-sol",
+    "displayLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "buildInputs": {
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/inventory/inventory.json",
+      "sha256": "90a0c527e0424389b581bc65e69b55d3e17ca5992687bb05c757c5e009f4cacb",
+      "bytes": 130553
+    },
+    "scores": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/score-pass/output.json",
+      "sha256": "50c37dc9f4cc855bc5ce1fa2ebdf01a939e6a4c41c31ac2ebeb07d04b2923bfd",
+      "bytes": 15550
+    },
+    "skeleton": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/publication/skeleton.json",
+      "sha256": "f5d547e7f7c84914b52e0390713fbf6aef933aacbb94745a59900c64896ce290",
+      "bytes": 11504
+    },
+    "referenceMetrics": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/publication/reference-metrics.json",
+      "sha256": "d753f010d221cfde14ee3008b016c5748029afc4a002230e66f7499fd7115531",
+      "bytes": 54647
+    }
+  },
+  "validatorPath": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+  "permittedAuthorFields": [
+    "summary",
+    "quotes",
+    "moves",
+    "overall",
+    "logicalExtension",
+    "noveltyMap",
+    "editorialReview"
+  ]
+}

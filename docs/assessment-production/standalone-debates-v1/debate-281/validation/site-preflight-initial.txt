@@ -1,0 +1,522 @@
+
+> slugfester@0.1.0 site:preflight
+> node scripts/validate-topic-categories.mjs && npm run seo -- --check && node scripts/validate-public-site.mjs && npx playwright test tests/site-quality/site-quality.spec.mjs --grep "reviews the browser data baseline|fits a narrow phone viewport|stays within its browser data budget|remains usable with text enlarged" && npm run site:standalone:check
+
+Validated explicit primary categories for 281 debates across 15 categories.
+
+> slugfester@0.1.0 seo
+> node scripts/generate-seo-pages.mjs --check
+
+Validated 813 SEO files.
+Validated source-grounded introductions and three related suggestions for 281 debates, plus all seven research introductions and figures.
+Validated source-backed biographies for all 189 published interlocutors.
+Validated substantive initial text for 281 debates and 189 profiles, plus catalogue, topics, rankings and method pages.
+Validated SEO contracts for 506 indexed pages, 15 topic pages, reference evidence and stable update dates.
+Validated 53 ranking mini charts against eligible overall scores, plus eligibility and bucket boundaries.
+Validated 15 category averages against 281 published scorecards, plus weighting and missing-score safeguards.
+Validated Feedback navigation, screening guidance, required fields, approved delivery, confirmation, and no-JavaScript recommendation form.
+Validated 11 explicitly registered reader-facing source and scope disclosures.
+Validated 506 public routes, 281 debate detail files, 189 generated profiles, and 189 avatar assets.
+[WebServer] 127.0.0.1 - - [30/Sep/2026 17:57:40] "GET / HTTP/1.1" 200 -
+
+
+Running 17 tests using 1 worker
+
+(node:54885) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /
+  1) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: / ───────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-phone-viewport-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-phone-viewport-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-phone-viewport-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54886) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig
+  2) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-d6520-ompare-b-William-Lane-Craig/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-d6520-ompare-b-William-Lane-Craig/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-d6520-ompare-b-William-Lane-Craig/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54887) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /interlocutor/alex-carter/
+  3) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /interlocutor/alex-carter/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-f6452-t-interlocutor-alex-carter-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-f6452-t-interlocutor-alex-carter-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-f6452-t-interlocutor-alex-carter-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54888) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[4/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /debate/craig-oconnor-god-debate-2026/
+  4) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /debate/craig-oconnor-god-debate-2026/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-fef30-ig-oconnor-god-debate-2026-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-fef30-ig-oconnor-god-debate-2026-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-fef30-ig-oconnor-god-debate-2026-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54889) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[5/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /backend/
+  5) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /backend/ ───────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-phone-viewport-backend-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-phone-viewport-backend-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-phone-viewport-backend-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54890) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[6/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/
+  6) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/ ──────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-phone-viewport-insights-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-phone-viewport-insights-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-phone-viewport-insights-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54891) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/data-and-methods/
+  7) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/data-and-methods/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-ce39a--insights-data-and-methods-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-ce39a--insights-data-and-methods-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-ce39a--insights-data-and-methods-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54892) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[8/17] tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /corrections/
+  8) tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /corrections/ ───
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-fits-a-narrow-phone-viewport-corrections-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-fits-a-narrow-phone-viewport-corrections-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-fits-a-narrow-phone-viewport-corrections-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54893) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[9/17] tests/site-quality/site-quality.spec.mjs:67:1 › reviews the browser data baseline after ten added debates
+  9) tests/site-quality/site-quality.spec.mjs:67:1 › reviews the browser data baseline after ten added debates 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 10
+    Received:    11
+
+      66 |
+      67 | test("reviews the browser data baseline after ten added debates", () => {
+    > 68 |   expect(addedDebates).toBeLessThanOrEqual(catalogueBudget.reviewAfterAddedDebates);
+         |                        ^
+      69 | });
+      70 |
+      71 | const routeBudgets = [
+        at /Users/philstilwell/.codex/worktrees/youtube-debate-intake/SLUGFESTER.com/tests/site-quality/site-quality.spec.mjs:68:24
+
+    Error Context: .playwright-results/site-quality-reviews-the-b-899cb-ine-after-ten-added-debates/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-reviews-the-b-899cb-ine-after-ten-added-debates/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-reviews-the-b-899cb-ine-after-ten-added-debates/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54894) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[10/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /
+  10) tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: / ──────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-stays-within-its-browser-data-budget-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-stays-within-its-browser-data-budget-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-stays-within-its-browser-data-budget-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54895) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[11/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /rankings/
+  11) tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /rankings/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-stays-within-its-browser-data-budget-rankings-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-stays-within-its-browser-data-budget-rankings-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-stays-within-its-browser-data-budget-rankings-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54896) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[12/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /debate/craig-oconnor-god-debate-2026/
+  12) tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /debate/craig-oconnor-god-debate-2026/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-stays-within--9dbfc-ig-oconnor-god-debate-2026-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-stays-within--9dbfc-ig-oconnor-god-debate-2026-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-stays-within--9dbfc-ig-oconnor-god-debate-2026-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54897) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[13/17] tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /reference/fallacy/equivocation/
+  13) tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /reference/fallacy/equivocation/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-stays-within--5ef29-rence-fallacy-equivocation-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-stays-within--5ef29-rence-fallacy-equivocation-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-stays-within--5ef29-rence-fallacy-equivocation-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54898) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[14/17] tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /
+  14) tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: / 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-remains-usabl-7a867-xt-enlarged-to-200-percent-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-remains-usabl-7a867-xt-enlarged-to-200-percent-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-remains-usabl-7a867-xt-enlarged-to-200-percent-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54899) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[15/17] tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /rankings/
+  15) tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /rankings/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-remains-usabl-8efc0-ed-to-200-percent-rankings-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-remains-usabl-8efc0-ed-to-200-percent-rankings-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-remains-usabl-8efc0-ed-to-200-percent-rankings-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54900) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[16/17] tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /interlocutor/alex-o-connor/
+  16) tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /interlocutor/alex-o-connor/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-remains-usabl-31341-interlocutor-alex-o-connor-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-remains-usabl-31341-interlocutor-alex-o-connor-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-remains-usabl-31341-interlocutor-alex-o-connor-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54901) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[17/17] tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /corrections/
+  17) tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /corrections/ 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/philstilwell/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: .playwright-results/site-quality-remains-usabl-570bf-to-200-percent-corrections-/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .playwright-results/site-quality-remains-usabl-570bf-to-200-percent-corrections-/trace.zip
+    Usage:
+
+        npx playwright show-trace .playwright-results/site-quality-remains-usabl-570bf-to-200-percent-corrections-/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  17 failed
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: / ────────────────
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /rankings/?compare-a=Alex+O%27Connor&compare-b=William+Lane+Craig 
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /interlocutor/alex-carter/ 
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /debate/craig-oconnor-god-debate-2026/ 
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /backend/ ────────
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/ ───────
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /insights/data-and-methods/ 
+    tests/site-quality/site-quality.spec.mjs:43:3 › fits a narrow phone viewport: /corrections/ ────
+    tests/site-quality/site-quality.spec.mjs:67:1 › reviews the browser data baseline after ten added debates 
+    tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: / ────────
+    tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /rankings/ 
+    tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /debate/craig-oconnor-god-debate-2026/ 
+    tests/site-quality/site-quality.spec.mjs:87:3 › stays within its browser data budget: /reference/fallacy/equivocation/ 
+    tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: / 
+    tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /rankings/ 
+    tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /interlocutor/alex-o-connor/ 
+    tests/site-quality/site-quality.spec.mjs:306:3 › remains usable with text enlarged to 200 percent: /corrections/ 

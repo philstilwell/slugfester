@@ -1,0 +1,234 @@
+{
+  "status": "passed-measured-limit-preserving-review",
+  "debateNumber": "281",
+  "publishedDebates": 281,
+  "measurementMethod": "fresh-isolated-browser-context-per-route",
+  "testBefore": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-281/validation/performance-test-before.mjs.txt",
+    "sha256": "4b1ffcd793b10d730d4c573d9332a7e3670b64686be2cc24aa689bf70e3fb7d1",
+    "bytes": 14288
+  },
+  "testAfter": {
+    "path": "tests/site-quality/site-quality.spec.mjs",
+    "sha256": "bb345041e4e398ed6deb0ff4b8774b08ecaff1ebfde806efbbea0a4c285eff1a",
+    "bytes": 14288
+  },
+  "before": {
+    "baselineDebates": 270,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "baseDataBytes": [
+      560000,
+      610000,
+      645000,
+      650000
+    ]
+  },
+  "after": {
+    "baselineDebates": 281,
+    "bytesPerAddedDebate": 5000,
+    "reviewAfterAddedDebates": 10,
+    "baseDataBytes": [
+      615000,
+      665000,
+      700000,
+      705000
+    ]
+  },
+  "effectiveLimitsBefore": [
+    615000,
+    665000,
+    700000,
+    705000
+  ],
+  "effectiveLimitsAfter": [
+    615000,
+    665000,
+    700000,
+    705000
+  ],
+  "proof": "For every N >= 281, old base + 5000*(N-270) equals (old base + 55000) + 5000*(N-281). Current and future effective byte ceilings are unchanged. The periodic review count is refreshed only after measuring all four routes.",
+  "measurements": [
+    {
+      "route": "/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 8784
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 25617
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 440337
+        }
+      ],
+      "loadedBytes": 503834,
+      "limitBytes": 615000,
+      "headroomBytes": 111166
+    },
+    {
+      "route": "/rankings/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 8784
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 25617
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 440337
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 59185
+        }
+      ],
+      "loadedBytes": 563019,
+      "limitBytes": 665000,
+      "headroomBytes": 101981
+    },
+    {
+      "route": "/debate/craig-oconnor-god-debate-2026/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 8784
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 25617
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 440337
+        },
+        {
+          "name": "/src/data/debate-analytics.js",
+          "bytes": 59185
+        },
+        {
+          "name": "/src/data/debate-details/craig-oconnor-god-debate-2026.js",
+          "bytes": 35843
+        }
+      ],
+      "loadedBytes": 598862,
+      "limitBytes": 700000,
+      "headroomBytes": 101138
+    },
+    {
+      "route": "/reference/fallacy/equivocation/",
+      "resources": [
+        {
+          "name": "/src/data/page-updates.js",
+          "bytes": 8784
+        },
+        {
+          "name": "/src/data/critique-format.js",
+          "bytes": 852
+        },
+        {
+          "name": "/src/data/assessment-process-guide.js",
+          "bytes": 11696
+        },
+        {
+          "name": "/src/data/topics.js",
+          "bytes": 7772
+        },
+        {
+          "name": "/src/data/reader-guides.js",
+          "bytes": 4309
+        },
+        {
+          "name": "/src/data/debate-summaries.js",
+          "bytes": 440337
+        },
+        {
+          "name": "/src/data/references.js",
+          "bytes": 4467
+        },
+        {
+          "name": "/src/data/interlocutors.js",
+          "bytes": 25617
+        },
+        {
+          "name": "/src/data/reference-appearances/fallacy-equivocation.js",
+          "bytes": 126653
+        }
+      ],
+      "loadedBytes": 630487,
+      "limitBytes": 705000,
+      "headroomBytes": 74513
+    }
+  ],
+  "temporaryContextsClosed": true,
+  "ownedBrowserClosed": true,
+  "temporaryServerStopped": true,
+  "scoringMechanismChanged": false,
+  "directIncrementalCostUsd": 0
+}

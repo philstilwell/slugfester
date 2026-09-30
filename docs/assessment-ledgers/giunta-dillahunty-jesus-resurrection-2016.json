@@ -1,0 +1,684 @@
+{
+  "schemaVersion": "1.0-assessment-production-standalone-debate-site-ledger-adapter",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "frozen-standalone-site-ledger-adapter",
+  "productionCanary": false,
+  "standalonePostCampaign": true,
+  "campaignBatch": null,
+  "debateNumber": "281",
+  "debateId": "giunta-dillahunty-jesus-resurrection-2016",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "standalone-v1-single-deterministic-score-pass",
+  "sourceLocks": {
+    "rawCaptions": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/captions.srv3.xml",
+      "sha256": "b925905e28a308378a061cd035f465f9f608b7e7627ddc496e4259011cf22335",
+      "bytes": 1078398
+    },
+    "events": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/events.json",
+      "sha256": "4591d136ab0a7f61666208284c54401fb80905ae12a1d898942e25b721ea0f66",
+      "bytes": 447003
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/transcript.txt",
+      "sha256": "69c4cbfc205e436771e37f671bdcb85343df1ad3a0bbf90223e4044f1a565027",
+      "bytes": 191233
+    },
+    "captionManifest": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/manifest.json",
+      "sha256": "da565ffb40754a0e3bf6f20af8a1dc8a7157c109eccdae32f9f6bec4ffb99339",
+      "bytes": 1008
+    },
+    "watchMetadata": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/watch-metadata.json",
+      "sha256": "c5c97f17b208504df5002cc662308c8a4fb9d5fe18926c07c1da71fedb7eb999",
+      "bytes": 837
+    },
+    "indexedTranscript": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/indexed-transcript.txt",
+      "sha256": "59be77664040f4cf07dc6ba389db0cadbad86a53219da48fa5aab4820cced9ee",
+      "bytes": 405085
+    },
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/authorization.json",
+      "sha256": "7d34c624276dacbcd6697e9a814f1a6d0e890d2f6d510270d2a3e022cb1a6796",
+      "bytes": 4027
+    },
+    "committedSourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/source/source-lock.json",
+      "sha256": "5f520993af5e6ca951f23430cb314cee93e027855ef91dcd3eed0c4da7fc5b6e",
+      "bytes": 4666
+    },
+    "sourceNotes": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/source/assessment-source-notes.md",
+      "sha256": "1465fdf161c85596edcae04bf01f7cf5ec4fd5fd91d99d97ab79081302790453",
+      "bytes": 5667
+    },
+    "controllerSourceReview": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/source/source-review-checkpoint.json",
+      "sha256": "f5829e486807816b00694ba9c8807a16190b482124ea2375dcba532b6f4bf17f",
+      "bytes": 613
+    }
+  },
+  "evidenceLocks": {
+    "authorization": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/authorization.json",
+      "sha256": "7d34c624276dacbcd6697e9a814f1a6d0e890d2f6d510270d2a3e022cb1a6796",
+      "bytes": 4027
+    },
+    "manifest": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/manifest.json",
+      "sha256": "8b62cdd47a4768661b7918f3dc50b1a733c1aa0d873571ad798235505e7f3eb1",
+      "bytes": 8039
+    },
+    "sourceLock": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/source/source-lock.json",
+      "sha256": "5f520993af5e6ca951f23430cb314cee93e027855ef91dcd3eed0c4da7fc5b6e",
+      "bytes": 4666
+    },
+    "inventory": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/inventory/inventory.json",
+      "sha256": "90a0c527e0424389b581bc65e69b55d3e17ca5992687bb05c757c5e009f4cacb",
+      "bytes": 130553
+    },
+    "judgmentPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/judgments/judgment-packet.json",
+      "sha256": "4224a8e03af71f45b993e0aefff4bf01918a01163ece86d0a916b61bbbbe6f30",
+      "bytes": 4920
+    },
+    "judgmentExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/judgments/execution.json",
+      "sha256": "dbf9f18070400de6ada6ece837e8d18ce6085f3a6ec75ce52eadd215abd5ca93",
+      "bytes": 5867
+    },
+    "passA": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/judgments/pass-a/output.json",
+      "sha256": "34985b01f9b669ebd8fec3601b3e8b6c1e437bbcf8d60b520192ddd71844ac1d",
+      "bytes": 38501
+    },
+    "passB": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/judgments/pass-b/output.json",
+      "sha256": "c7ba233cdbd61a9bbe07703cc574546d2735986884951b446817124dd22f2ebf",
+      "bytes": 27715
+    },
+    "disagreements": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/disagreements/disagreements.json",
+      "sha256": "bf7f83c99406f054414cc67701308ed2f26a0421cd0d81a7e35c61ae4a379502",
+      "bytes": 43896
+    },
+    "audio": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/audio/audio-verification.json",
+      "sha256": "047a5fddd295be2a3fd2dbcc6d9bf46c3b33b9258672a4e3053434172dba248c",
+      "bytes": 9161
+    },
+    "adjudicationPacket": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/adjudication/packet.json",
+      "sha256": "80da0da298c30b2d1d4b2f88377e54e79cb027b88020f7e0374a88acb3523916",
+      "bytes": 212976
+    },
+    "adjudication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/adjudication/output.json",
+      "sha256": "5ad8e2ca89d5ec897bb67bfbbca0fdb4a50e590e904acee97081c30378f54d6b",
+      "bytes": 20270
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/final-ledger/final-ledger.json",
+      "sha256": "725475a11197fcfd29c17393e7d5a14f4149a1eeb8d0b7902331133f077e8490",
+      "bytes": 269027
+    },
+    "scoreInput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/score-pass/input.json",
+      "sha256": "799fbc9aff1d2538f85fffdc734141fb9c41556e1628c4fbd6f2e98972198afe",
+      "bytes": 960
+    },
+    "scoreOutput": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/score-pass/output.json",
+      "sha256": "50c37dc9f4cc855bc5ce1fa2ebdf01a939e6a4c41c31ac2ebeb07d04b2923bfd",
+      "bytes": 15550
+    },
+    "scoreAttestation": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/score-pass/attestation.json",
+      "sha256": "2598f9e98a08a149b308b0abf831213a1c57bf7acfe02697a9e5fa1a338a367b",
+      "bytes": 828
+    },
+    "publication": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/publication/output.json",
+      "sha256": "525f346a9370577aa32030f2773b4b1d1df637fba720433a2f5b4cbda136209f",
+      "bytes": 60660
+    },
+    "events": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/events.json",
+      "sha256": "4591d136ab0a7f61666208284c54401fb80905ae12a1d898942e25b721ea0f66",
+      "bytes": 447003
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/3R4DYhpvNzc/transcript.txt",
+      "sha256": "69c4cbfc205e436771e37f671bdcb85343df1ad3a0bbf90223e4044f1a565027",
+      "bytes": 191233
+    },
+    "publicationRhetoricalTagAudit": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/publication/rhetorical-tag-review-1/audit.json",
+      "sha256": "bb412bfea704d35243da593d90c147cd8cae1d527539200038d4c61f8239e007",
+      "bytes": 26574
+    },
+    "publicationRhetoricalTagExecution": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/publication/rhetorical-tag-review-1/execution.json",
+      "sha256": "ade2ba4df769b492b2c4ab175c52f0857ff7bd3dff00b620246d6f00cfeaa9fa",
+      "bytes": 5773
+    },
+    "postRhetoricalTagRendering": {
+      "path": "docs/assessment-production/standalone-debates-v1/debate-281/rendering/post-rhetorical-tag-audit.json",
+      "sha256": "e2cf8018411a1f18630f5319ab666dfefbaf7f72cf62a6520eac3e65c0a16a85",
+      "bytes": 722
+    }
+  },
+  "calculated": {
+    "schemaVersion": "1.0-standalone-score-output",
+    "protocolId": "standalone-v1-single-deterministic-score-pass",
+    "status": "single-deterministic-score-pass-complete",
+    "debateNumber": "281",
+    "debateId": "giunta-dillahunty-jesus-resurrection-2016",
+    "sections": [
+      {
+        "sectionId": "early-testimony-and-source-access",
+        "title": "Early testimony and historical access",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "early-creed-and-appearance-proclamation",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 83,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 73
+                },
+                "score": 82
+              },
+              {
+                "moveId": "luke-acts-author-access-through-paul",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 80,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 69
+                },
+                "score": 78
+              },
+              {
+                "moveId": "acts-transmits-early-jerusalem-preaching",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 76,
+                  "responsiveness": 81,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 81,
+                  "calibrationCharity": 81
+                },
+                "score": 81
+              },
+              {
+                "moveId": "early-sources-do-not-require-gospel-reliability",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 91,
+                  "evidenceWarrant": 83,
+                  "responsiveness": 93,
+                  "relevanceBurden": 93,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 89
+                },
+                "score": 90
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "sources-fall-short-of-historical-ideals",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 74,
+                  "evidenceWarrant": 77,
+                  "responsiveness": 70,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 78,
+                  "calibrationCharity": 68
+                },
+                "score": 75
+              },
+              {
+                "moveId": "mundane-accuracy-does-not-transfer",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 89,
+                  "evidenceWarrant": 85,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 90,
+                  "calibrationCharity": 88
+                },
+                "score": 88
+              },
+              {
+                "moveId": "proclamation-is-not-the-event",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 87,
+                  "responsiveness": 93,
+                  "relevanceBurden": 95,
+                  "precisionClarity": 93,
+                  "calibrationCharity": 89
+                },
+                "score": 92
+              },
+              {
+                "moveId": "discrepancies-limit-not-erase-history",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 84,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 91,
+                  "calibrationCharity": 94
+                },
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "explanations-of-the-appearances",
+        "title": "Sincerity, legend, and alternative explanations",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 76,
+            "moves": [
+              {
+                "moveId": "naturalistic-rivals-face-specific-problems",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 69,
+                  "evidenceWarrant": 57,
+                  "responsiveness": 72,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 55
+                },
+                "score": 67
+              },
+              {
+                "moveId": "apostolic-conduct-supports-sincerity",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 85,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 78
+                },
+                "score": 79
+              },
+              {
+                "moveId": "plausible-rival-would-defeat-comparative-case",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 64,
+                  "responsiveness": 86,
+                  "relevanceBurden": 92,
+                  "precisionClarity": 84,
+                  "calibrationCharity": 85
+                },
+                "score": 82
+              },
+              {
+                "moveId": "appearance-cessation-distinguishes-resurrection-reports",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 78,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 81,
+                  "relevanceBurden": 80,
+                  "precisionClarity": 77,
+                  "calibrationCharity": 69
+                },
+                "score": 75
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "narrative-development-supports-legend",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 82,
+                  "responsiveness": 82,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 78
+                },
+                "score": 82
+              },
+              {
+                "moveId": "group-pressure-and-martyrdom-limit",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 75,
+                  "responsiveness": 90,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 90
+                },
+                "score": 85
+              },
+              {
+                "moveId": "multiple-natural-explanations-need-not-unify",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 86,
+                  "evidenceWarrant": 73,
+                  "responsiveness": 89,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 89
+                },
+                "score": 85
+              },
+              {
+                "moveId": "unsupported-drug-story-is-not-an-answer",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 93,
+                  "evidenceWarrant": 89,
+                  "responsiveness": 92,
+                  "relevanceBurden": 88,
+                  "precisionClarity": 93,
+                  "calibrationCharity": 96
+                },
+                "score": 92
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "probability-method-and-supernatural-inference",
+        "title": "Probability, method, and supernatural inference",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "comparative-bayesian-fit",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 85,
+                  "evidenceWarrant": 69,
+                  "responsiveness": 91,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 79
+                },
+                "score": 83
+              },
+              {
+                "moveId": "bayesian-probability-does-not-require-repeat-cases",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 90,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 91,
+                  "relevanceBurden": 86,
+                  "precisionClarity": 87,
+                  "calibrationCharity": 86
+                },
+                "score": 87
+              },
+              {
+                "moveId": "historical-and-philosophical-beliefs-remain-assessable",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 82,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 84,
+                  "relevanceBurden": 84,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 79
+                },
+                "score": 80
+              },
+              {
+                "moveId": "methodological-naturalism-as-limited-heuristic",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 76,
+                  "evidenceWarrant": 63,
+                  "responsiveness": 70,
+                  "relevanceBurden": 79,
+                  "precisionClarity": 73,
+                  "calibrationCharity": 61
+                },
+                "score": 71
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "extraordinary-claims-require-proportionate-evidence",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 88,
+                  "relevanceBurden": 91,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 91
+                },
+                "score": 87
+              },
+              {
+                "moveId": "supernatural-cause-needs-independent-demonstration",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 75,
+                  "evidenceWarrant": 72,
+                  "responsiveness": 86,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 82,
+                  "calibrationCharity": 72
+                },
+                "score": 79
+              },
+              {
+                "moveId": "qualified-legend-conclusion",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 84,
+                  "evidenceWarrant": 74,
+                  "responsiveness": 88,
+                  "relevanceBurden": 90,
+                  "precisionClarity": 88,
+                  "calibrationCharity": 91
+                },
+                "score": 85
+              },
+              {
+                "moveId": "resurrection-probability-is-not-calculable",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 72,
+                  "evidenceWarrant": 65,
+                  "responsiveness": 78,
+                  "relevanceBurden": 83,
+                  "precisionClarity": 80,
+                  "calibrationCharity": 82
+                },
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "theological-fit-and-hiddenness",
+        "title": "Theological fit and divine hiddenness",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 62,
+            "moves": [
+              {
+                "moveId": "background-probability-and-divine-purpose",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 64,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 68,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 62,
+                  "calibrationCharity": 56
+                },
+                "score": 62
+              },
+              {
+                "moveId": "jesus-character-and-divine-claim-fit",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 61,
+                  "evidenceWarrant": 51,
+                  "responsiveness": 66,
+                  "relevanceBurden": 68,
+                  "precisionClarity": 62,
+                  "calibrationCharity": 55
+                },
+                "score": 61
+              },
+              {
+                "moveId": "free-love-response-to-hiddenness",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 67,
+                  "evidenceWarrant": 53,
+                  "responsiveness": 70,
+                  "relevanceBurden": 73,
+                  "precisionClarity": 69,
+                  "calibrationCharity": 52
+                },
+                "score": 64
+              }
+            ]
+          },
+          "con": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "unconstrained-divine-accommodation-reduces-explanatory-force",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 88,
+                  "evidenceWarrant": 80,
+                  "responsiveness": 90,
+                  "relevanceBurden": 85,
+                  "precisionClarity": 85,
+                  "calibrationCharity": 77
+                },
+                "score": 85
+              },
+              {
+                "moveId": "divine-hiddenness-from-unanswered-search",
+                "importance": 2,
+                "dimensions": {
+                  "logicalCoherence": 81,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 79,
+                  "relevanceBurden": 76,
+                  "precisionClarity": 83,
+                  "calibrationCharity": 85
+                },
+                "score": 78
+              },
+              {
+                "moveId": "closing-doubt-and-theological-costs",
+                "importance": 3,
+                "dimensions": {
+                  "logicalCoherence": 73,
+                  "evidenceWarrant": 67,
+                  "responsiveness": 77,
+                  "relevanceBurden": 82,
+                  "precisionClarity": 74,
+                  "calibrationCharity": 65
+                },
+                "score": 73
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 77,
+        "burdenCompletionAdjustment": 0,
+        "score": 77
+      },
+      "con": {
+        "weightedSectionMean": 83.5,
+        "burdenCompletionAdjustment": 0,
+        "score": 84
+      }
+    },
+    "winner": "con",
+    "winningMargin": 7,
+    "audit": {
+      "calculator": "scripts/lib/assessment-production-standalone-debate-v1.mjs",
+      "dimensionCalculator": "scripts/lib/reassessment-scoring.mjs#scoreDimensions",
+      "modelAuthoredTotals": 0,
+      "manualScoreOverrides": 0,
+      "scorePassOrdinal": 1
+    },
+    "scoreStability": {
+      "status": "passed",
+      "meanAbsoluteDistance": 1.75,
+      "maximumDistance": 3,
+      "maximumExcursion": 1,
+      "directionPassed": true
+    }
+  },
+  "audit": {
+    "sections": 4,
+    "moves": 30,
+    "repositoryDerivedScores": true,
+    "modelAuthoredTotals": 0,
+    "manualScoreOverrides": 0,
+    "scorePasses": 1,
+    "batch18Selected": false,
+    "campaignEvidenceChanges": 0,
+    "calibrationEvidenceChanges": 0,
+    "closureEvidenceChanges": 0
+  }
+}
