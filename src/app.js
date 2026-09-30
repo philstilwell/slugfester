@@ -1,10 +1,11 @@
-import { pageUpdates } from "./data/page-updates.js?v=001c662975cc8b19";
-import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=001c662975cc8b19";
-import { topicCategoryDefinitions } from "./data/topics.js?v=001c662975cc8b19";
-import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=001c662975cc8b19";
-import { debateSummaries } from "./data/debate-summaries.js?v=001c662975cc8b19";
-import { avatarsForSpeakerText } from "./data/interlocutors.js?v=001c662975cc8b19";
-import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=001c662975cc8b19";
+import { pageUpdates } from "./data/page-updates.js?v=a2fb02286a08c679";
+import { renderCritiqueText } from "./data/critique-format.js?v=a2fb02286a08c679";
+import { renderAssessmentProcessGuide } from "./data/assessment-process-guide.js?v=a2fb02286a08c679";
+import { topicCategoryDefinitions } from "./data/topics.js?v=a2fb02286a08c679";
+import { assessmentGuide, debateSectionAnchor, relatedDebates } from "./data/reader-guides.js?v=a2fb02286a08c679";
+import { debateSummaries } from "./data/debate-summaries.js?v=a2fb02286a08c679";
+import { avatarsForSpeakerText } from "./data/interlocutors.js?v=a2fb02286a08c679";
+import { getReferenceDefinition, referenceFromUrl } from "./data/references.js?v=a2fb02286a08c679";
 import {
   DEFAULT_IMAGE_ALT,
   DEFAULT_IMAGE_HEIGHT,
@@ -43,7 +44,7 @@ import {
   topicPath,
   topicSeo,
   withPageUpdate
-} from "./seo.js?v=001c662975cc8b19";
+} from "./seo.js?v=a2fb02286a08c679";
 
 const app = document.querySelector("#app");
 let debates = debateSummaries;
@@ -98,7 +99,7 @@ const referencePathRoutePattern = /^\/reference\/(fallacy|bias)\/([a-z0-9-]+)\/?
 
 async function loadDebateAnalytics() {
   if (!debateAnalyticsPromise) {
-    debateAnalyticsPromise = import("./data/debate-analytics.js?v=001c662975cc8b19")
+    debateAnalyticsPromise = import("./data/debate-analytics.js?v=a2fb02286a08c679")
       .then(({ debateAnalytics }) => {
         debates = debateSummaries.map((debate) => ({
           ...debate,
@@ -117,7 +118,7 @@ async function loadDebateAnalytics() {
 
 async function loadSectionScoreExtremes() {
   if (!sectionScoreExtremesPromise) {
-    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=001c662975cc8b19")
+    sectionScoreExtremesPromise = import("./data/section-score-extremes.js?v=a2fb02286a08c679")
       .then(({ sectionScoreExtremes: loadedSectionScoreExtremes }) => {
         sectionScoreExtremes = loadedSectionScoreExtremes || sectionScoreExtremes;
         return sectionScoreExtremes;
@@ -133,7 +134,7 @@ async function loadSectionScoreExtremes() {
 
 async function loadDebateDetail(id) {
   if (!debateDetailPromises.has(id)) {
-    const promise = import(`./data/debate-details/${id}.js?v=001c662975cc8b19`)
+    const promise = import(`./data/debate-details/${id}.js?v=a2fb02286a08c679`)
       .then(({ debate }) => debate)
       .catch((error) => {
         debateDetailPromises.delete(id);
@@ -148,7 +149,7 @@ async function loadDebateDetail(id) {
 async function loadReferenceAppearances(type, slug) {
   const key = `${type}/${slug}`;
   if (!referenceAppearancePromises.has(key)) {
-    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=001c662975cc8b19`)
+    const promise = import(`./data/reference-appearances/${type}-${slug}.js?v=a2fb02286a08c679`)
       .then(({ referenceAppearances }) => {
         referenceAppearanceCache.set(key, referenceAppearances);
         return referenceAppearances;
@@ -3339,7 +3340,7 @@ function renderCritique(argument, debate, section, sideKey) {
       <button type="button" aria-label="Critique for ${escapeHtml(argument.role)}" aria-describedby="${escapeHtml(tooltipId)}">◉</button>
       <span class="critique-popover" id="${escapeHtml(tooltipId)}" role="tooltip">
         <strong>${argument.score}/100 · ${escapeHtml(argument.role)}</strong>
-        <span>${escapeHtml(argument.critique)}</span>
+        <span class="critique-text">${renderCritiqueText(argument.critique)}</span>
       </span>
     </span>
   `;
@@ -3752,28 +3753,28 @@ async function route({ focusMain = false } = {}) {
   const loaders = [];
 
   if (correctionsMatch && !renderDebateRecommendation) {
-    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=001c662975cc8b19")
+    debateRecommendationPromise ||= import("./data/debate-recommendation.js?v=a2fb02286a08c679")
       .then((module) => { renderDebateRecommendation = module.renderDebateRecommendation; })
       .catch((error) => { debateRecommendationPromise = undefined; throw error; });
     loaders.push(debateRecommendationPromise);
   }
 
   if (interlocutorMatch && !biographies) {
-    biographiesPromise ||= import("./data/interlocutor-bios.js?v=001c662975cc8b19")
+    biographiesPromise ||= import("./data/interlocutor-bios.js?v=a2fb02286a08c679")
       .then((module) => { biographies = module; })
       .catch((error) => { biographiesPromise = undefined; throw error; });
     loaders.push(biographiesPromise);
   }
 
   if (insightsMatch && window.location.pathname.includes("/data-and-methods") && !insightsMethodsContent) {
-    insightsMethodsPromise ||= import("./data/insights-methods.js?v=001c662975cc8b19")
+    insightsMethodsPromise ||= import("./data/insights-methods.js?v=a2fb02286a08c679")
       .then((module) => { insightsMethodsContent = module.renderInsightsMethodsContent; })
       .catch((error) => { insightsMethodsPromise = undefined; throw error; });
     loaders.push(insightsMethodsPromise);
   }
 
   if (insightsMatch && !insightsContent) {
-    insightsPromise ||= import("./data/insights.js?v=001c662975cc8b19")
+    insightsPromise ||= import("./data/insights.js?v=a2fb02286a08c679")
       .then((module) => { insightsContent = module.renderInsightsContent; })
       .catch((error) => { insightsPromise = undefined; throw error; });
     loaders.push(insightsPromise);

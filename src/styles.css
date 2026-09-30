@@ -5807,6 +5807,19 @@ a {
   transition: opacity 160ms ease, transform 160ms ease;
 }
 
+.critique-text {
+  display: grid;
+  gap: 8px;
+}
+
+.critique-section {
+  display: block;
+}
+
+.critique-section > strong {
+  font-weight: 850;
+}
+
 .critique:hover .critique-popover,
 .critique:focus-within .critique-popover {
   opacity: 1;
