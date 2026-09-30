@@ -1,0 +1,25 @@
+{
+  "status": "authorized-same-context-unsaved-semantic-correction",
+  "plan": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-281/inventory/execution-plan.json",
+    "sha256": "572f1258d9d8a91130260ed3f397f9d914619ff037b909411e06c1bf86ccdd20",
+    "bytes": 6960
+  },
+  "priorCandidate": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-281/inventory/unsaved-review-1/rejected-candidate.json",
+    "sha256": "89c229025b9c027e0c3bf76a22cc031b4c6e0a469885c9df7061de381f3e7e94",
+    "bytes": 54018
+  },
+  "priorRuntime": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-281/inventory/unsaved-review-1/interrupted-state.json",
+    "sha256": "4043b0c27b75c7a81fb2869add9f12caf9fbfe265eb7b31147ac2d63f10c6299",
+    "bytes": 702
+  },
+  "sameWorker": "/root/inventory281",
+  "sameModel": "gpt-5.6-sol",
+  "sameReasoningEffort": "low",
+  "submissionCount": 0,
+  "newContextCount": 0,
+  "frozenInputsUnchanged": true,
+  "reason": "Controller inspected complete held candidate before first save and found source/coverage/attribution issues. Preserve the unsaved candidate and diagnostics, retire only its runtime address, and continue the same authorized context before its sole first submission."
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0-standalone-audio-preflight",
+  "status": "frozen-before-paid-calls",
+  "debateNumber": "281",
+  "debateId": "giunta-dillahunty-jesus-resurrection-2016",
+  "videoId": "3R4DYhpvNzc",
+  "frozenAt": "2026-09-30T20:44:23.457739+00:00",
+  "inventory": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-281/inventory/inventory.json",
+    "sha256": "90a0c527e0424389b581bc65e69b55d3e17ca5992687bb05c757c5e009f4cacb",
+    "bytes": 130553
+  },
+  "sourceMedia": {
+    "path": ".assessment-cache/audio/3R4DYhpvNzc/source.m4a",
+    "sha256": "26b94cf836c4f6d1857f58b4123319ab7c3a8c4987d1cc218a80ab938faca055",
+    "bytes": 151429809
+  },
+  "sourceAcquisition": {
+    "path": ".assessment-cache/audio/3R4DYhpvNzc/acquisition.json",
+    "sha256": "2dae2075182d37a2caeeeb795f35bab040983a46cf0c5965b9c8a93298c6db94",
+    "bytes": 352
+  },
+  "transcriptionSkillCli": {
+    "path": "transcribe/scripts/transcribe_diarize.py",
+    "sha256": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "bytes": 8684,
+    "location": "installed-user-skill"
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "responseFormat": "diarized_json",
+  "language": "en",
+  "chunkingStrategy": "auto",
+  "knownSpeakerReferences": [],
+  "clientMaxRetries": 0,
+  "timeoutSeconds": 120,
+  "clips": [
+    {
+      "moveId": "apostolic-conduct-supports-sincerity",
+      "sourceIntervalMs": [
+        5232800,
+        5295719
+      ],
+      "durationSeconds": 62.919,
+      "clip": {
+        "path": ".assessment-cache/audio/3R4DYhpvNzc/clips/apostolic-conduct-supports-sincerity.wav",
+        "sha256": "4eeb5753ceb8faa23ea9a2416115a56636f5b2dc8419bc68f4b460ed36de24c7",
+        "bytes": 2013486
+      },
+      "purpose": "The selected span contains cross-talk between Giunta and Dillahunty; audio review would confirm the exact handoff around the honesty clarification.",
+      "maxAttempts": 1,
+      "retries": 0
+    },
+    {
+      "moveId": "comparative-bayesian-fit",
+      "sourceIntervalMs": [
+        5679800,
+        5760880
+      ],
+      "durationSeconds": 81.08,
+      "clip": {
+        "path": ".assessment-cache/audio/3R4DYhpvNzc/clips/comparative-bayesian-fit.wav",
+        "sha256": "ad2942c05d3d07c8a44224eea85e6c63609b763f0a6f4ab7596798cf1ff187ab",
+        "bytes": 2594638
+      },
+      "purpose": "The selected span contains rapid cross-talk; audio review would confirm the boundaries between Giunta\u2019s likelihood argument and Dillahunty\u2019s interjections.",
+      "maxAttempts": 1,
+      "retries": 0
+    },
+    {
+      "moveId": "historical-and-philosophical-beliefs-remain-assessable",
+      "sourceIntervalMs": [
+        7512639,
+        7592000
+      ],
+      "durationSeconds": 79.361,
+      "clip": {
+        "path": ".assessment-cache/audio/3R4DYhpvNzc/clips/historical-and-philosophical-beliefs-remain-assessable.wav",
+        "sha256": "60ccca0f5cbc7eaf415105c0ed6e797c481b357a915348b37f8c2461f32d5635",
+        "bytes": 2539630
+      },
+      "purpose": "Audience interruptions and Dillahunty\u2019s category-error challenge occur inside the exchange; audio review would confirm the rapid transitions while preserving Giunta\u2019s ownership of the selected assessability claim.",
+      "maxAttempts": 1,
+      "retries": 0
+    }
+  ],
+  "totalDurationSeconds": 223.36,
+  "cost": {
+    "knownSuccessfulCallCostUsd": 0,
+    "maximumPossiblePriorCostUsd": 0,
+    "estimatedTotalUsd": 0.1,
+    "conservativeTotalReserveUsd": 0.3,
+    "authorizedCumulativeCapUsd": 1.0,
+    "audioInputUsdPerMillionTokens": 2.5,
+    "outputUsdPerMillionTokens": 10,
+    "pricingSources": [
+      "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+      "https://developers.openai.com/api/docs/pricing"
+    ],
+    "pricingCheckedAt": "2026-09-30",
+    "basis": "Token pricing with conservative observed diarized-output allowance, not nominal minutes-only approximation. One sequential call per frozen clip. Stop on any failed or uncertain call; no paid retry."
+  },
+  "sourceRestriction": "Audio validates selected ownership only. Captions and frozen inventory are not replaced; local anonymous diarizer labels require alignment to explicit debate turns."
+}

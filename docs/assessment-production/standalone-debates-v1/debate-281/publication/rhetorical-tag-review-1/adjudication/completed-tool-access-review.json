@@ -1,0 +1,11 @@
+{
+  "status": "passed-completed-tool-access-review",
+  "reviewedAt": "2026-09-30T21:55:28.573Z",
+  "execution": {
+    "path": "docs/assessment-production/standalone-debates-v1/debate-281/publication/rhetorical-tag-review-1/adjudication/execution.json",
+    "sha256": "b3c10693411a2bbfee552cf2d37c1ddde7e2d0750fd05af261993863c26722a8",
+    "bytes": 15092
+  },
+  "violations": [],
+  "notes": "Controller inspected all 35 authenticated call records and their actual local session tool inputs. Reads were confined to the literal plan and bounded shared reader; authoring stayed in memory, the pinned checker received stdin, and the maintained handoff held the same candidate. The initial noninteractive hold received no candidate and produced no saved output; the interactive holder then held the reviewed hash and submitted once on controller release. Only controller-directed messages occurred. No scores, named reviewer identities, outside source, unrelated debate material or other prohibited files were read."
+}

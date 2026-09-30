@@ -50,7 +50,14 @@ export async function replayPublication(page, cfg) {
   }
   await page.setViewportSize({width:1440,height:1000});const routes=[];
   for(const path of ['/','/topics/'+d.topicCategory+'/']){await go(path);await page.locator('a[href="'+route+'"]').first().waitFor();routes.push(path);}
-  await go('/search/');const search=page.locator('input[type="search"]');await search.fill(d.sides.con.speaker);await search.press('Enter');await page.locator('a[href="'+route+'"]').first().waitFor();await shot('search');routes.push('/search/');
+  await go('/search/');const search=page.locator('input[type="search"]');await search.fill(d.sides.con.speaker);await search.press('Enter');await page.waitForLoadState('networkidle');
+  const searchedPages=new Set();
+  while(await page.locator('a[href="'+route+'"]').count()===0){
+    ok(!searchedPages.has(page.url()),'search pagination cycle');searchedPages.add(page.url());
+    const next=page.getByRole('link',{name:'Next',exact:true}).first();ok(await next.count()>0,'debate absent from search results');
+    const href=await next.getAttribute('href');ok(href?.startsWith('/search/?'),'search pagination route');await go(href);
+  }
+  await page.locator('a[href="'+route+'"]').first().waitFor();await shot('search');routes.push('/search/');
   await go('/rankings/?'+new URLSearchParams({'compare-a':d.sides.pro.speaker,'compare-b':d.sides.con.speaker}));for(const person of cfg.people)await page.locator('a[href="/interlocutor/'+person.slug+'/"]').first().waitFor();await shot('rankings');routes.push('/rankings/');
   const sitemap=await page.request.get(cfg.origin+'/sitemap.xml');same(sitemap.status(),200,'sitemap status');ok((await sitemap.text()).includes('https://slugfester.com'+route),'canonical sitemap');
   same(errors,[],'browser runtime errors');same(resources,[],'failed resources');

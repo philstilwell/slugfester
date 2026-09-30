@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0-standalone-debate-authorization",
+  "protocolId": "assessment-production-standalone-debate-v1",
+  "status": "authorized-and-frozen",
+  "authorizedAt": "2026-09-30T20:18:44.571324+00:00",
+  "userAuthorization": "User supplied this next YouTube debate under the invoked addition workflow and requested avoiding common approvals. Routine isolated assessment, bounded field repairs, validation, topic commit/push, PR, green merge and checked deployment are authorized. No prior recording-specific scope exception carries over.",
+  "repositoryBaseline": {
+    "branch": "codex/debate-281",
+    "head": "a45ea186c16a9e58842f8a976b798ccaaac54bb5",
+    "localMain": "a45ea186c16a9e58842f8a976b798ccaaac54bb5",
+    "originMain": "a45ea186c16a9e58842f8a976b798ccaaac54bb5",
+    "clean": true,
+    "isolationReason": "Reused clean managed checkout. Fetched origin/main and fast-forwarded the clean existing main checkout before creating this branch at their shared revision."
+  },
+  "identity": {
+    "debateNumber": "281",
+    "debateId": "giunta-dillahunty-jesus-resurrection-2016",
+    "videoId": "3R4DYhpvNzc",
+    "canonicalUrl": "https://www.youtube.com/watch?v=3R4DYhpvNzc",
+    "sourceTitle": "Atheist Debates - Did Jesus Rise From The Dead? Matt Dillahunty vs Blake Giunta",
+    "eventYear": 2016,
+    "title": "Blake Giunta vs Matt Dillahunty — Did Jesus Rise from the Dead? (2016)",
+    "label": "Resurrection and Historical Evidence",
+    "topicCategory": "scripture-jesus-resurrection",
+    "motion": "Did Jesus rise from the dead?",
+    "pro": {
+      "speaker": "Blake Giunta",
+      "position": "Jesus rose from the dead"
+    },
+    "con": {
+      "speaker": "Matt Dillahunty",
+      "position": "Resurrection is unproven and probably legendary"
+    },
+    "dyadic": true
+  },
+  "execution": {
+    "assessmentModel": "gpt-5.6-sol",
+    "recordedDisplayModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "primaryJudgments": 2,
+    "primaryContextsFreshAndIsolated": true,
+    "adjudicationContextFreshAndIsolated": true,
+    "publicationContextFreshAndIsolated": true,
+    "oneDeterministicScorePass": true,
+    "modelAuthoredTotalsPermitted": false,
+    "manualScoreChangesPermitted": false
+  },
+  "cost": {
+    "publicCaptionAcquisitionCostUsd": 0,
+    "localAndSubscriptionIncrementalCostUsd": 0,
+    "paidTranscriptionUsed": false,
+    "knownPaidCostEstimateUsd": 0,
+    "maximumPossiblePaidCostEstimateUsd": 0,
+    "standingPaidTranscriptionMaximumUsd": 1,
+    "fullEstimateRequiredBeforePaidCall": true,
+    "otherPaidServicesPermitted": false,
+    "approvedRetryCount": 0,
+    "consumedRetryCount": 0,
+    "currentPlanEstimateUsd": 0,
+    "audioVerificationPolicy": "Freeze and report the cumulative exact-input estimate before any required transcription. One paid attempt per frozen clip, no paid retry. Standing skill maximum is $1; no paid call has yet occurred."
+  },
+  "repairPolicy": {
+    "judgmentSubstanceMutableAfterAcceptance": false,
+    "resolvedLedgerMutableAfterScorePass": false,
+    "calculatedScoresMutable": false,
+    "publicationRepairMaximumWritableFields": 2,
+    "attemptsPerPublicationRepairPacket": 1,
+    "recursiveAutomaticRetryPermitted": false
+  },
+  "historicalBoundary": {
+    "standalonePostCampaignAddition": true,
+    "campaignBatch": null,
+    "batch18Permitted": false,
+    "frozenCampaignEvidenceWritable": false,
+    "frozenCalibrationEvidenceWritable": false,
+    "frozenClosureEvidenceWritable": false
+  },
+  "allowedTrackedPaths": [
+    "docs/assessment-production/standalone-debates-v1/debate-281",
+    "docs/assessment-production/standalone-debates-v1/registry.json",
+    "docs/assessment-ledgers/giunta-dillahunty-jesus-resurrection-2016.json",
+    "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "src/data/debates.js",
+    "src/data/debate-details/giunta-dillahunty-jesus-resurrection-2016.js",
+    "src/data/interlocutor-bios.js",
+    "generated site output for this addition"
+  ]
+}
